@@ -35,20 +35,30 @@ export function sprechtext(text) {
 // Verbindet die Schritte eines Ablaufs mit kleinen Überleitungen, so wie man es beim Erklären sagen würde:
 // „Spieler acht spielt den Seitenspieler an.“ … „Dann dreht Spieler vier auf.“ … „Zum Schluss: Abschluss ins Minitor.“
 // Der erste Schritt bleibt, wie er ist. Sätze, die schon selbst überleiten oder mit einem Ausruf beginnen, bleiben auch.
-const SCHON = /^(?:Jetzt|Dann|Danach|Und|Sofort|Weiter|Erst|Zum Schluss|Anschließend|Nun|Wieder|Schon|Dort|So|Auf|Nach|Diesmal|Zuruf|Los|Bis)\b/;
+const SCHON = /^(?:Jetzt|Dann|Danach|Und|Sofort|Weiter|Erst|Zum Schluss|Anschließend|Nun|Wieder|Schon|Dort|So|Auf|Nach|Diesmal|Zuruf|Los|Bis|Von|Hier|Da|Wenn|Sobald)\b/;
 const KEIN_VERB = /^(?:in|im|an|am|auf|aus|mit|von|vom|zu|zum|zur|für|und|oder|nach|vor|bei|über|unter|durch|gegen|ohne|um|bis|der|die|das|den|dem|des|noch|nicht|auch|als|hat|ist|beide|ein|zwei|drei|vier|fünf|sechs|sieben|acht|neun|zehn|elf)$/;
-const VORN = ["Dann", "Jetzt", "Danach", "Anschließend"], DAVOR_SATZ = ["Und dann", "Danach", "Und jetzt", "Als Nächstes"];
+// Abwechslung: Die Überleitung richtet sich nach Schritt und Länge des Ablaufs, bleibt für denselben Satz aber immer gleich
+// (sonst gälte eine fertige Aufnahme bei jedem Laden als geändert).
+const VORN = ["Dann", "Jetzt", "Danach", "Anschließend", "Nun", "Gleich danach", "Daraufhin", "Als Nächstes"];
+const DAVOR_SATZ = ["Und dann", "Und jetzt", "Danach", "Anschließend", "Nun", "Gleich danach", "Und weiter", "Als Nächstes"];
+// Wörter, die am Satzanfang nur wegen des Satzanfangs großgeschrieben sind
+const KLEIN = /^(?:Eng|Ohne|Quer|Mit|Im|In|An|Am|Aus|Durch|Zurück|Beim|Bei|Kurz|Seitlich|Direkt|Erster|Großer|Kleine|Viele|Schnell|Tief|Genau|Flach|Ruhig|Mutig|Sauber|Kontrolliert|Per|Über|Unter|Vor|Hinter|Rüber|Rein|Raus|Weit|Fester|Kleine|Offen|Frei|Eng)\b/;
+const ENDE = ["Zum Schluss", "Am Ende", "Zum Abschluss"];
+// Beginnt ein Satz so, ist er schon ein ganzer Satz mit eigenem Anfang: Er bekommt keine Überleitung davor
+const GANZ = /^(?:Der|Die|Das|Den|Dem|Ein|Eine|Einen|Kein|Keine|Es|Er|Sie|Wer|Wo|Wie|Beide|Alle|Zwei|Drei|Vier|Fünf|Sechs|Sieben|Acht|Neun|Zehn|Spieler|Team)\b/;
 const klein = (s) => s.charAt(0).toLowerCase() + s.slice(1);
 
 export function fluss(text, step, count) {
   const t = String(text || "").trim();
   if (!t || step < 1 || SCHON.test(t) || /^[^ ]+[!?]/.test(t) || /^.{0,32}[:!?]/.test(t)) return t;
-  const last = step === count - 1 && count > 3;
+  const last = step === count - 1 && count > 3, n = step - 1 + count;
   // Satz mit Subjekt und Verb vorn: Das Verb rückt hinter die Überleitung („Dann spielt Spieler acht …“)
   const m = t.match(/^(Spieler [a-zäöüß]+|(?:Der|Die|Das) [A-ZÄÖÜ][\wäöüß-]*|Team (?:Rot|Neon|Weiß)|Alle|Beide|Ich) ([a-zäöüß]+)\b(.*)$/);
   if (m && !KEIN_VERB.test(m[2])) {
     const subjekt = /^(Spieler|Team|Ich)/.test(m[1]) ? (m[1] === "Ich" ? "ich" : m[1]) : klein(m[1]);
-    return `${last ? "Zum Schluss" : VORN[(step - 1) % VORN.length]} ${m[2]} ${subjekt}${m[3]}`;
+    return `${last ? ENDE[count % ENDE.length] : VORN[n % VORN.length]} ${m[2]} ${subjekt}${m[3]}`;
   }
-  return `${last ? "Zum Schluss" : DAVOR_SATZ[(step - 1) % DAVOR_SATZ.length]}: ${t}`;
+  if (GANZ.test(t)) return t;
+  // Stichwort-Satz („Pass in den Lauf“, „Mit Tempo aufs Tor zu“): Die Überleitung geht ohne Pause in ihn über
+  return `${last ? ENDE[count % ENDE.length] : DAVOR_SATZ[n % DAVOR_SATZ.length]} ${KLEIN.test(t) ? klein(t) : t}`;
 }
