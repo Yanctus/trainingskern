@@ -2,6 +2,7 @@
 // 1. Vor jeder Spielernummer steht „Spieler“: „Die Vier spielt auf die Acht“ wird zu „Spieler vier spielt auf Spieler acht“.
 // 2. Zahlen werden ausgeschrieben. Endet ein Satz auf eine Ziffer, liest die Stimme sonst den Punkt dahinter laut mit.
 const WORT = ["null", "eins", "zwei", "drei", "vier", "fünf", "sechs", "sieben", "acht", "neun", "zehn", "elf", "zwölf", "dreizehn", "vierzehn", "fünfzehn", "sechzehn", "siebzehn", "achtzehn", "neunzehn", "zwanzig"];
+const MENGE = "ein|zwei|drei|vier|fünf|sechs|sieben|acht|neun|zehn|elf|zwölf";
 const NAME = "Eins|Zwei|Drei|Vier|Fünf|Sechs|Sieben|Acht|Neun|Zehn|Elf";
 // Steht eines dieser Wörter vor oder hinter der Zahl, ist eine Menge gemeint und kein Spieler
 const DAVOR = /(?:gegen|plus|mal|Zone|Nummer|Coaching-Punkt|Steigerung|Runde|Bahn|zählt|gibt|=)\s*$/i;
@@ -19,5 +20,10 @@ export function sprechtext(text) {
     if (!menge && n >= 1 && n <= 11) return `Spieler ${WORT[n]}`;
     return n === 1 && /^\s*[A-ZÄÖÜ]/.test(danach) ? "ein" : WORT[n];
   });
+  // 3. Ein Punkt oder Tor als Ergebnis wird als Satz gesprochen: „… angekommen: Punkt“ wird zu „… angekommen: das gibt einen Punkt“.
+  //    Sonst klingt das einzelne Wort „Punkt“ am Satzende wie ein vorgelesenes Satzzeichen.
+  const gibt = (menge, was) => `das gibt ${menge ? (/^ein$/i.test(menge) && was === "Punkt" ? "einen" : menge.toLowerCase()) : was === "Punkt" ? "einen" : "ein"} ${was}`;
+  t = t.replace(new RegExp(`([:,]) (?:(${MENGE}) )?(Punkte?|Tore?)(?= für |,|[.!]?$)`, "gi"), (_, trenner, menge, was) => `${trenner} ${gibt(menge, was)}`);
+  t = t.replace(new RegExp(`^(${MENGE}) (Punkte|Tore)(?= für |[.!]?$)`, "i"), (_, menge, was) => `Das gibt ${menge.toLowerCase()} ${was}`);
   return t;
 }
