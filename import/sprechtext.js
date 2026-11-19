@@ -27,3 +27,24 @@ export function sprechtext(text) {
   t = t.replace(new RegExp(`^(${MENGE}) (Punkte|Tore)(?= für |[.!]?$)`, "i"), (_, menge, was) => `Das gibt ${menge.toLowerCase()} ${was}`);
   return t;
 }
+
+// Verbindet die Schritte eines Ablaufs mit kleinen Überleitungen, so wie man es beim Erklären sagen würde:
+// „Spieler acht spielt den Seitenspieler an.“ … „Dann dreht Spieler vier auf.“ … „Zum Schluss: Abschluss ins Minitor.“
+// Der erste Schritt bleibt, wie er ist. Sätze, die schon selbst überleiten oder mit einem Ausruf beginnen, bleiben auch.
+const SCHON = /^(?:Jetzt|Dann|Danach|Und|Sofort|Weiter|Erst|Zum Schluss|Anschließend|Nun|Wieder|Schon|Dort|So|Auf|Nach|Diesmal|Zuruf|Los|Bis)\b/;
+const KEIN_VERB = /^(?:in|im|an|am|auf|aus|mit|von|vom|zu|zum|zur|für|und|oder|nach|vor|bei|über|unter|durch|gegen|ohne|um|bis|der|die|das|den|dem|des|noch|nicht|auch|als|hat|ist|beide|ein|zwei|drei|vier|fünf|sechs|sieben|acht|neun|zehn|elf)$/;
+const VORN = ["Dann", "Jetzt", "Danach", "Anschließend"], DAVOR_SATZ = ["Und dann", "Danach", "Und jetzt", "Als Nächstes"];
+const klein = (s) => s.charAt(0).toLowerCase() + s.slice(1);
+
+export function fluss(text, step, count) {
+  const t = String(text || "").trim();
+  if (!t || step < 1 || SCHON.test(t) || /^[^ ]+[!?]/.test(t) || /^.{0,32}[:!?]/.test(t)) return t;
+  const last = step === count - 1 && count > 3;
+  // Satz mit Subjekt und Verb vorn: Das Verb rückt hinter die Überleitung („Dann spielt Spieler acht …“)
+  const m = t.match(/^(Spieler [a-zäöüß]+|(?:Der|Die|Das) [A-ZÄÖÜ][\wäöüß-]*|Rot|Neon|Weiß|Alle|Beide|Ich) ([a-zäöüß]+)\b(.*)$/);
+  if (m && !KEIN_VERB.test(m[2])) {
+    const subjekt = /^(Spieler|Rot|Neon|Weiß|Ich)/.test(m[1]) ? (m[1] === "Ich" ? "ich" : m[1]) : klein(m[1]);
+    return `${last ? "Zum Schluss" : VORN[(step - 1) % VORN.length]} ${m[2]} ${subjekt}${m[3]}`;
+  }
+  return `${last ? "Zum Schluss" : DAVOR_SATZ[(step - 1) % DAVOR_SATZ.length]}: ${t}`;
+}
