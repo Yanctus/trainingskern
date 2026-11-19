@@ -1,5 +1,6 @@
 // Macht aus einem Text der Scroll-Story den Satz, den die Stimme spricht.
 // 1. Vor jeder Spielernummer steht „Spieler“: „Die Vier spielt auf die Acht“ wird zu „Spieler vier spielt auf Spieler acht“.
+// 1b. Mannschaften heißen „Team Neon“, „Team Rot“, „Team Weiß“.
 // 2. Zahlen werden ausgeschrieben. Endet ein Satz auf eine Ziffer, liest die Stimme sonst den Punkt dahinter laut mit.
 const WORT = ["null", "eins", "zwei", "drei", "vier", "fünf", "sechs", "sieben", "acht", "neun", "zehn", "elf", "zwölf", "dreizehn", "vierzehn", "fünfzehn", "sechzehn", "siebzehn", "achtzehn", "neunzehn", "zwanzig"];
 const MENGE = "ein|zwei|drei|vier|fünf|sechs|sieben|acht|neun|zehn|elf|zwölf";
@@ -10,6 +11,9 @@ const DANACH = /^\s*(?:gegen|plus|mal|Pässe[n]?|Pass\b|Tore?\b|Punkte?\b|Meter[
 
 export function sprechtext(text) {
   let t = String(text || "");
+  // Eine Farbe allein meint die ganze Mannschaft: „Rot läuft an“ wird zu „Team Rot läuft an“. Vor einer Nummer fällt sie weg („Neon 6“ ist Spieler sechs).
+  t = t.replace(/\b(?:Neon|Rot|Weiß) (?=\d)/g, "");
+  t = t.replace(/(?<!Team |in |im )\b(Neon|Rot|Weiß)\b(?![-\wäöüß])/g, "Team $1");
   t = t.replace(new RegExp(`\\bden Ball der (${NAME})\\b`, "g"), (_, w) => `den Ball von Spieler ${w.toLowerCase()}`);
   t = t.replace(new RegExp(`\\bzur (${NAME})\\b`, "g"), (_, w) => `zu Spieler ${w.toLowerCase()}`);
   t = t.replace(new RegExp(`\\b[Dd](?:ie|er) (${NAME})\\b(?!er\\b)`, "g"), (_, w) => `Spieler ${w.toLowerCase()}`);
@@ -41,9 +45,9 @@ export function fluss(text, step, count) {
   if (!t || step < 1 || SCHON.test(t) || /^[^ ]+[!?]/.test(t) || /^.{0,32}[:!?]/.test(t)) return t;
   const last = step === count - 1 && count > 3;
   // Satz mit Subjekt und Verb vorn: Das Verb rückt hinter die Überleitung („Dann spielt Spieler acht …“)
-  const m = t.match(/^(Spieler [a-zäöüß]+|(?:Der|Die|Das) [A-ZÄÖÜ][\wäöüß-]*|Rot|Neon|Weiß|Alle|Beide|Ich) ([a-zäöüß]+)\b(.*)$/);
+  const m = t.match(/^(Spieler [a-zäöüß]+|(?:Der|Die|Das) [A-ZÄÖÜ][\wäöüß-]*|Team (?:Rot|Neon|Weiß)|Alle|Beide|Ich) ([a-zäöüß]+)\b(.*)$/);
   if (m && !KEIN_VERB.test(m[2])) {
-    const subjekt = /^(Spieler|Rot|Neon|Weiß|Ich)/.test(m[1]) ? (m[1] === "Ich" ? "ich" : m[1]) : klein(m[1]);
+    const subjekt = /^(Spieler|Team|Ich)/.test(m[1]) ? (m[1] === "Ich" ? "ich" : m[1]) : klein(m[1]);
     return `${last ? "Zum Schluss" : VORN[(step - 1) % VORN.length]} ${m[2]} ${subjekt}${m[3]}`;
   }
   return `${last ? "Zum Schluss" : DAVOR_SATZ[(step - 1) % DAVOR_SATZ.length]}: ${t}`;
