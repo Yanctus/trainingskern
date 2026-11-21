@@ -191,8 +191,8 @@ def regeln(u):
             out.append(f"{name}: say muss mit 'Jetzt zum Coaching-Punkt', 'Der zweite Coaching-Punkt', 'Und jetzt die Steigerung' (bei der zweiten: 'Und jetzt die zweite Steigerung') oder 'Und jetzt das Umschalten' beginnen")
         for key in ("lines", "goals"):
             # Erlaubt: die Fassung ergänzt Linien (z. B. Hälften in einer Steigerung), dann muss sie alle Linien der Grundform enthalten
-            if vb.get(key) and not (key == "lines" and all(l in vb[key] for l in base.get("lines") or []) and len(vb[key]) > len(base.get("lines") or [])):
-                out.append(f"{name}: {key} leer lassen (wird geerbt) oder bei Linien alle der Grundform übernehmen und ergänzen")
+            if vb.get(key) and not (all(l in vb[key] for l in base.get(key) or []) and len(vb[key]) > len(base.get(key) or [])):
+                out.append(f"{name}: {key} leer lassen (wird geerbt) oder alle der Grundform übernehmen und ergänzen")
         if vb.get("cones") and not all(c.get("id") for c in vb["cones"]):
             out.append(f"{name}: cones leer lassen (wird geerbt)")
         if not 2 <= len(vb.get("steps") or []) <= 6:

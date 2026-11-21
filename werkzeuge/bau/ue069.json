@@ -1,0 +1,616 @@
+{
+ "title": "Nur nach vorn 4 gegen 4",
+ "code": "UE-069",
+ "kind": "Spielform",
+ "focuses": [
+  "Dribbling",
+  "1 gegen 1",
+  "Passspiel"
+ ],
+ "age_groups": [
+  "Bambini",
+  "F-Jugend"
+ ],
+ "duration_minutes": 10,
+ "players_min": 10,
+ "players_max": 10,
+ "field_size": "23 x 18 m",
+ "description": "Zwei Teams mit je vier Spielern und einem Torwart spielen auf einem Feld von 23 mal 18 Metern auf zwei Tore. Erlaubt sind Pässe nach vorn. Geht ein Pass zur Seite oder nach hinten, muss der Spieler, der ihn bekommt, nach vorn dribbeln und einen Gegner ausspielen, wenn einer im Weg steht. Jedes Tor gibt einen Punkt, und wer nach der Spielzeit die meisten Punkte hat, gewinnt.",
+ "organisation": [
+  "Feld abstecken: 23 mal 18 Meter mit vier orangen Hütchen, an beiden Enden steht ein Tor mit Torwart.",
+  "Teams einteilen: Je vier Feldspieler pro Team, Team Neon greift nach rechts an, Team Rot nach links. Ich stehe mit Bällen an der Ecke.",
+  "Regel: Pässe nach vorn sind frei. Nach einem Pass zur Seite oder nach hinten muss der Empfänger nach vorn dribbeln und einen Gegner ausspielen.",
+  "Wertung: Jedes Tor gibt einen Punkt. Bei jüngeren Kindern erinnere ich laut an die Regel, wenn ein Ball nach hinten geht."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Mutig und selbstbewusst am Ball sein",
+  "Sich so bewegen, dass Pässe nach vorn möglich sind",
+  "Laut miteinander sprechen",
+  "Den Ball eng am Fuß führen, aufs Tor zielen und nachsetzen"
+ ],
+ "materials": [
+  "2 Tore",
+  "4 orange Hütchen",
+  "Leibchen in zwei Farben",
+  "Bälle beim Trainer"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Nur nach vorn, vier gegen vier. Hier spielen die Kinder nach vorn, und nach jedem Pass zur Seite heißt es: losdribbeln und den Gegner ausspielen.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 22,
+    "y": 7.5,
+    "w": 56,
+    "h": 45
+   }
+  ],
+  "cones": [
+   {
+    "x": 22,
+    "y": 7.5,
+    "color": "orange"
+   },
+   {
+    "x": 78,
+    "y": 7.5,
+    "color": "orange"
+   },
+   {
+    "x": 22,
+    "y": 52.5,
+    "color": "orange"
+   },
+   {
+    "x": 78,
+    "y": 52.5,
+    "color": "orange"
+   }
+  ],
+  "goals": [
+   {
+    "x": 78,
+    "y": 30,
+    "side": "right"
+   },
+   {
+    "x": 22,
+    "y": 30,
+    "side": "left"
+   }
+  ],
+  "players": [
+   {
+    "id": "tw1",
+    "team": "b",
+    "x": 75.4,
+    "y": 30.4,
+    "label": "1"
+   },
+   {
+    "id": "tw13",
+    "team": "a",
+    "x": 24.4,
+    "y": 30,
+    "label": "13"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 32,
+    "y": 47,
+    "label": "4"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 34,
+    "y": 16,
+    "label": "5"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 49.5,
+    "y": 31,
+    "label": "8"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 62,
+    "y": 23,
+    "label": "9"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 41,
+    "y": 48,
+    "label": "10"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 58,
+    "y": 42,
+    "label": "6"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 70.5,
+    "y": 14,
+    "label": "3"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 70.5,
+    "y": 46.5,
+    "label": "2"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 19,
+    "y": 3.5,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 33.6,
+    "y": 46.2
+   },
+   {
+    "id": "c1",
+    "x": 22.5,
+    "y": 4.2
+   },
+   {
+    "id": "c2",
+    "x": 15.5,
+    "y": 4.2
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pass zur Seite",
+    "say": "Spieler vier spielt quer zu Spieler fünf.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       34.6,
+       17.6
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Jetzt nach vorn dribbeln",
+    "say": "Nach dem Querpass gilt die Regel: Spieler fünf dribbelt mutig nach vorn.",
+    "moves": [
+     {
+      "who": "n5",
+      "to": [
+       46,
+       18
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Steilpass nach vorn",
+    "say": "Dann spielt er den Ball nach vorn auf Spieler neun.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       60.6,
+       23.4
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r3",
+      "to": [
+       67,
+       18.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Abschluss: Punkt",
+    "say": "Spieler neun schießt aufs Tor, und das gibt einen Punkt für Team Neon.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       80,
+       27.5
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "tw1",
+      "to": [
+       75.4,
+       32
+      ],
+      "type": "lauf",
+      "delay": 0.15
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 22,
+    "y1": 58.6,
+    "x2": 78,
+    "y2": 58.6,
+    "text": "23 m"
+   },
+   {
+    "x1": 86,
+    "y1": 7.5,
+    "x2": 86,
+    "y2": 52.5,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Nach einem Rückpass sofort nach vorn dribbeln und den Gegner ausspielen.",
+   "title": "Rückpass: los nach vorn",
+   "text": "Kommt der Ball nach hinten oder zur Seite, erkennt der Empfänger das sofort. Er dribbelt mutig nach vorn, spielt seinen Gegenspieler aus und sucht danach den nächsten Weg zum Tor. So bleibt der Angriff im Schwung.",
+   "board": {
+    "players": [
+     {
+      "id": "tw1",
+      "team": "b",
+      "x": 75.4,
+      "y": 30.4,
+      "label": "1"
+     },
+     {
+      "id": "tw13",
+      "team": "a",
+      "x": 24.4,
+      "y": 30,
+      "label": "13"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 52.5,
+      "y": 48,
+      "label": "4"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 44,
+      "y": 32,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 66,
+      "y": 36,
+      "label": "9"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 57,
+      "y": 12,
+      "label": "5"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 53,
+      "y": 30,
+      "label": "6"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 66.5,
+      "y": 14,
+      "label": "3"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 66,
+      "y": 52,
+      "label": "2"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 35,
+      "y": 47,
+      "label": "10"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 19,
+      "y": 3.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 54.1,
+      "y": 47.2
+     },
+     {
+      "id": "c1",
+      "x": 22.5,
+      "y": 4.2
+     },
+     {
+      "id": "c2",
+      "x": 15.5,
+      "y": 4.2
+     }
+    ],
+    "steps": [
+     {
+      "label": "Rückpass",
+      "say": "Spieler vier spielt den Ball nach hinten zu Spieler acht.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         45.5,
+         32.8
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Losdribbeln und ausspielen",
+      "say": "Spieler acht dribbelt sofort nach vorn und spielt Spieler sechs mit einem Haken aus.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         50,
+         25
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n8",
+        "to": [
+         59,
+         25
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "r6",
+        "to": [
+         54,
+         27.5
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Abschluss: Punkt",
+      "say": "Dann schießt er aufs Tor, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         80,
+         28
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "tw1",
+        "to": [
+         75.4,
+         28.5
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Immer nach Pässen nach vorn suchen, und die Mitspieler laufen sich frei.",
+   "title": "Freilaufen für den Pass nach vorn",
+   "text": "Der Spieler am Ball schaut zuerst nach vorn. Damit ein Pass nach vorn möglich ist, laufen sich die Mitspieler in die Lücken zwischen den Gegnern frei. So öffnen sich Passwege, und das Team kommt schnell zum Tor.",
+   "board": {
+    "players": [
+     {
+      "id": "tw1",
+      "team": "b",
+      "x": 75.4,
+      "y": 30.4,
+      "label": "1"
+     },
+     {
+      "id": "tw13",
+      "team": "a",
+      "x": 24.4,
+      "y": 30,
+      "label": "13"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 37,
+      "y": 20,
+      "label": "4"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 54,
+      "y": 42,
+      "label": "9"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 30,
+      "y": 47,
+      "label": "5"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 40,
+      "y": 49,
+      "label": "8"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 45.5,
+      "y": 15,
+      "label": "10"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 45.5,
+      "y": 33,
+      "label": "6"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 62,
+      "y": 20,
+      "label": "3"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 63,
+      "y": 50,
+      "label": "2"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 19,
+      "y": 3.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 38.6,
+      "y": 20.6
+     },
+     {
+      "id": "c1",
+      "x": 22.5,
+      "y": 4.2
+     },
+     {
+      "id": "c2",
+      "x": 15.5,
+      "y": 4.2
+     }
+    ],
+    "steps": [
+     {
+      "label": "In die Lücke laufen",
+      "say": "Spieler neun läuft sich in die Lücke zwischen zwei Gegnern frei.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         62,
+         31
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Pass nach vorn",
+      "say": "Spieler vier sieht ihn und spielt den Ball nach vorn in den Lauf.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         60.6,
+         30.5
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Abschluss: Punkt",
+      "say": "Spieler neun schließt ab, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         80,
+         32
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "tw1",
+        "to": [
+         75.4,
+         28.5
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

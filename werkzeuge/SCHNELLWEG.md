@@ -26,6 +26,8 @@ README der App (Abschnitte „Übungen aus Video nachbauen“, „Laufweg-Abglei
   gleichzeitig … Wir schauen auf Spieler sechs“) und auf der Bühne auch andere Spieler parallel handeln lassen.
 - **Geteiltes Feld:** Hälften und Linien als gestrichelte `line` einzeichnen (erscheinen grau). Nur in einer Fassung: dort `lines` = alle
   Linien der Grundform plus die neuen.
+- **Fassungen dürfen Linien UND Tore ergänzen** (z. B. Minitore nur in der Steigerung): alle der Grundform mit übernehmen, die Bühne zeigt die neuen mit dem Kapitel.
+- **Bewegliche Hütchen in einer Fassung** (z. B. Farbtafel): dann müssen alle Hütchen der Fassung eine `id` haben (auch die festen).
 - **Zonen farbig:** `{"type":"zone", …}`; Zonen von Team Rot mit `"color":"orange"`, sonst neon. Keine gestrichelten Rechtecke für Zonen.
 - **Neue Einheiten gleich `access: "frei"`**, der Inhaber stellt am Ende alle auf Pro.
 - **Wenig Prüfläufe:** kostenlos und immer: `pruefen`, `blatt`, `vergleichen`. Prüfstand nur nach Änderungen am Player-Code oder wenn

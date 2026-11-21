@@ -1,0 +1,1143 @@
+{
+ "title": "Staffel mit Farbrätsel",
+ "code": "UE-068",
+ "kind": "Spielform",
+ "focuses": [
+  "Erwärmung",
+  "Dribbling",
+  "Schnelligkeit"
+ ],
+ "age_groups": [
+  "F-Jugend",
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend"
+ ],
+ "duration_minutes": 10,
+ "players_min": 6,
+ "players_max": 12,
+ "field_size": "23 x 18 m",
+ "description": "Zwei Teams spielen gleichzeitig eine Staffel mit Rätsel. Der Erste dribbelt durch die Hütchen, passt zum Trainer und läuft zu seiner Farbtafel, wo er zwei Hütchen tauscht. Dann bekommt er den Ball zurück, dribbelt zum Start und klatscht den Nächsten ab. Gewonnen hat das Team, das zuerst jede Reihe in einer Farbe hat und dessen Spieler danach als Erster zurück ist.",
+ "organisation": [
+  "Aufbauen: Zwei Bahnen nebeneinander, in jeder vier Hütchen für den Slalom und am Ende eine Farbtafel aus sechs Hütchen in zwei Reihen.",
+  "Teams einteilen: Jedes Team stellt sich mit Bällen am Start seiner Bahn auf. Ich stehe neben der einen Tafel, ein Helfer neben der anderen.",
+  "Ablauf: Slalom dribbeln, zum Trainer passen, an der Tafel genau zwei Hütchen tauschen, Ball zurück bekommen, zum Start dribbeln und abklatschen.",
+  "Wertung: Das Team, das zuerst jede Reihe in einer Farbe hat und dessen Spieler danach als Erster am Start ist, gewinnt. Alle setzen sich dann hin."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Unter Druck gut entscheiden: Welche zwei Hütchen tausche ich?",
+  "Den Ball im Slalom eng am Fuß führen",
+  "Als Team planen und sich gegenseitig anfeuern",
+  "Schnell sprinten, sobald der Tausch geschafft ist"
+ ],
+ "materials": [
+  "8 Hütchen für die Slaloms",
+  "12 Hütchen in zwei Farben für die Tafeln",
+  "1 Ball pro Spieler",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Staffel mit Farbrätsel. Hier dribbeln zwei Teams gleichzeitig und lösen an ihrer Tafel ein kleines Farbrätsel.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 20,
+    "y": 6,
+    "w": 60,
+    "h": 48
+   }
+  ],
+  "cones": [
+   {
+    "x": 33,
+    "y": 17,
+    "color": "orange",
+    "id": "s0"
+   },
+   {
+    "x": 40,
+    "y": 17,
+    "color": "orange",
+    "id": "s1"
+   },
+   {
+    "x": 47,
+    "y": 17,
+    "color": "orange",
+    "id": "s2"
+   },
+   {
+    "x": 54,
+    "y": 17,
+    "color": "orange",
+    "id": "s3"
+   },
+   {
+    "x": 33,
+    "y": 43,
+    "color": "orange",
+    "id": "s4"
+   },
+   {
+    "x": 40,
+    "y": 43,
+    "color": "orange",
+    "id": "s5"
+   },
+   {
+    "x": 47,
+    "y": 43,
+    "color": "orange",
+    "id": "s6"
+   },
+   {
+    "x": 54,
+    "y": 43,
+    "color": "orange",
+    "id": "s7"
+   },
+   {
+    "x": 71,
+    "y": 11.5,
+    "color": "orange",
+    "id": "k1"
+   },
+   {
+    "x": 74.5,
+    "y": 11.5,
+    "color": "neon",
+    "id": "k2"
+   },
+   {
+    "x": 78,
+    "y": 11.5,
+    "color": "neon",
+    "id": "k3"
+   },
+   {
+    "x": 71,
+    "y": 16.5,
+    "color": "neon",
+    "id": "k4"
+   },
+   {
+    "x": 74.5,
+    "y": 16.5,
+    "color": "orange",
+    "id": "k5"
+   },
+   {
+    "x": 78,
+    "y": 16.5,
+    "color": "orange",
+    "id": "k6"
+   },
+   {
+    "x": 71,
+    "y": 48.5,
+    "color": "orange",
+    "id": "k7"
+   },
+   {
+    "x": 74.5,
+    "y": 48.5,
+    "color": "neon",
+    "id": "k8"
+   },
+   {
+    "x": 78,
+    "y": 48.5,
+    "color": "neon",
+    "id": "k9"
+   },
+   {
+    "x": 71,
+    "y": 43.5,
+    "color": "neon",
+    "id": "k10"
+   },
+   {
+    "x": 74.5,
+    "y": 43.5,
+    "color": "orange",
+    "id": "k11"
+   },
+   {
+    "x": 78,
+    "y": 43.5,
+    "color": "orange",
+    "id": "k12"
+   }
+  ],
+  "players": [
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 24,
+    "y": 17,
+    "label": "8"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 15.5,
+    "y": 8,
+    "label": "9"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 7,
+    "y": 17,
+    "label": "10"
+   },
+   {
+    "id": "r4",
+    "team": "b",
+    "x": 24,
+    "y": 43,
+    "label": "4"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 15.5,
+    "y": 52,
+    "label": "5"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 7,
+    "y": 43,
+    "label": "6"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 58,
+    "y": 3.5,
+    "label": "T"
+   },
+   {
+    "id": "h",
+    "team": "t",
+    "x": 58,
+    "y": 55.5,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 25.6,
+    "y": 17
+   },
+   {
+    "id": "b2",
+    "x": 25.6,
+    "y": 43
+   }
+  ],
+  "steps": [
+   {
+    "label": "Beide starten: Slalom",
+    "say": "Beide Teams starten gleichzeitig. Spieler acht dribbelt im Slalom durch die Hütchen.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       33,
+       13.5
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n8",
+      "to": [
+       40,
+       20.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n8",
+      "to": [
+       47,
+       13.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n8",
+      "to": [
+       54,
+       20.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n8",
+      "to": [
+       59,
+       17
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "r4",
+      "to": [
+       33,
+       46.5
+      ],
+      "type": "dribbling",
+      "ball": "b2"
+     },
+     {
+      "who": "r4",
+      "to": [
+       40,
+       39.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "r4",
+      "to": [
+       47,
+       46.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "r4",
+      "to": [
+       54,
+       39.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "r4",
+      "to": [
+       59,
+       43
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     }
+    ]
+   },
+   {
+    "label": "Pass zum Trainer, ab zur Tafel",
+    "say": "Er passt zu mir und läuft sofort zu seiner Farbtafel.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       57.2,
+       4.9
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n8",
+      "to": [
+       67.5,
+       14
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "b2",
+      "to": [
+       57.2,
+       55.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r4",
+      "to": [
+       67.5,
+       46
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Zwei Hütchen tauschen",
+    "say": "An der Tafel tauscht er genau zwei Hütchen, damit die Farben besser sortiert sind.",
+    "moves": [
+     {
+      "who": "k2",
+      "to": [
+       74.5,
+       16.5
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "k5",
+      "to": [
+       74.5,
+       11.5
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "k8",
+      "to": [
+       74.5,
+       43.5
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "k11",
+      "to": [
+       74.5,
+       48.5
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Ball zurück, ab zum Start",
+    "say": "Ich spiele ihm den Ball zurück, und er dribbelt außen an den Hütchen vorbei zurück zum Start.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       66,
+       21
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       65.5,
+       22.4
+      ],
+      "type": "pass",
+      "delay": 0.15
+     },
+     {
+      "who": "n8",
+      "to": [
+       58,
+       24.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n8",
+      "to": [
+       29,
+       24.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "r4",
+      "to": [
+       66,
+       39
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b2",
+      "to": [
+       65.5,
+       37.6
+      ],
+      "type": "pass",
+      "delay": 0.15
+     },
+     {
+      "who": "r4",
+      "to": [
+       58,
+       35.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "r4",
+      "to": [
+       29,
+       35.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     }
+    ]
+   },
+   {
+    "label": "Abklatschen, der Nächste startet",
+    "say": "Er klatscht Spieler neun ab, und der startet mit seinem Ball in die nächste Runde.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       23.5,
+       12
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r5",
+      "to": [
+       23.5,
+       48
+      ],
+      "type": "lauf"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 20,
+    "y1": 58.6,
+    "x2": 80,
+    "y2": 58.6,
+    "text": "23 m"
+   },
+   {
+    "x1": 88,
+    "y1": 6,
+    "x2": 88,
+    "y2": 54,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Erst schauen, dann den richtigen Tausch machen.",
+   "title": "Erst schauen, dann tauschen",
+   "text": "Wer an der Tafel ankommt, schaut zuerst, welche zwei Hütchen falsch liegen. Ein überlegter Tausch bringt das Team weiter, ein schneller Fehler kostet Zeit. Hier sind nach dem zweiten Tausch alle Reihen sortiert, und Team Neon ist zuerst fertig.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 67.5,
+      "y": 14,
+      "label": "9"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 24,
+      "y": 17,
+      "label": "8"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 15.5,
+      "y": 8,
+      "label": "10"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 54,
+      "y": 39.5,
+      "label": "5"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 24,
+      "y": 43,
+      "label": "4"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 15.5,
+      "y": 52,
+      "label": "6"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 58,
+      "y": 3.5,
+      "label": "T"
+     },
+     {
+      "id": "h",
+      "team": "t",
+      "x": 58,
+      "y": 55.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 57.2,
+      "y": 4.9
+     },
+     {
+      "id": "b2",
+      "x": 55.6,
+      "y": 39.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "An der Tafel: erst schauen",
+      "say": "Spieler neun kommt an die Tafel und schaut genau: In jeder Reihe liegt noch ein Hütchen falsch.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         68,
+         14.5
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Der richtige Tausch",
+      "say": "Er tauscht die beiden letzten Hütchen, und jetzt hat jede Reihe nur noch eine Farbe.",
+      "moves": [
+       {
+        "who": "k3",
+        "to": [
+         78,
+         16.5
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "k6",
+        "to": [
+         78,
+         11.5
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Zuerst fertig: Team Neon gewinnt",
+      "say": "Ich spiele ihm den Ball zurück, er sprintet zum Start, und Team Neon hat gewonnen.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         65.5,
+         21.5
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n9",
+        "to": [
+         66,
+         20.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n9",
+        "to": [
+         58,
+         24.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "n9",
+        "to": [
+         30,
+         24.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     }
+    ],
+    "cones": [
+     {
+      "x": 33,
+      "y": 17,
+      "color": "orange",
+      "id": "s0"
+     },
+     {
+      "x": 40,
+      "y": 17,
+      "color": "orange",
+      "id": "s1"
+     },
+     {
+      "x": 47,
+      "y": 17,
+      "color": "orange",
+      "id": "s2"
+     },
+     {
+      "x": 54,
+      "y": 17,
+      "color": "orange",
+      "id": "s3"
+     },
+     {
+      "x": 33,
+      "y": 43,
+      "color": "orange",
+      "id": "s4"
+     },
+     {
+      "x": 40,
+      "y": 43,
+      "color": "orange",
+      "id": "s5"
+     },
+     {
+      "x": 47,
+      "y": 43,
+      "color": "orange",
+      "id": "s6"
+     },
+     {
+      "x": 54,
+      "y": 43,
+      "color": "orange",
+      "id": "s7"
+     },
+     {
+      "x": 71,
+      "y": 11.5,
+      "color": "orange",
+      "id": "k1"
+     },
+     {
+      "x": 74.5,
+      "y": 11.5,
+      "color": "orange",
+      "id": "k2"
+     },
+     {
+      "x": 78,
+      "y": 11.5,
+      "color": "neon",
+      "id": "k3"
+     },
+     {
+      "x": 71,
+      "y": 16.5,
+      "color": "neon",
+      "id": "k4"
+     },
+     {
+      "x": 74.5,
+      "y": 16.5,
+      "color": "neon",
+      "id": "k5"
+     },
+     {
+      "x": 78,
+      "y": 16.5,
+      "color": "orange",
+      "id": "k6"
+     },
+     {
+      "x": 71,
+      "y": 48.5,
+      "color": "orange",
+      "id": "k7"
+     },
+     {
+      "x": 74.5,
+      "y": 48.5,
+      "color": "orange",
+      "id": "k8"
+     },
+     {
+      "x": 78,
+      "y": 48.5,
+      "color": "neon",
+      "id": "k9"
+     },
+     {
+      "x": 71,
+      "y": 43.5,
+      "color": "neon",
+      "id": "k10"
+     },
+     {
+      "x": 74.5,
+      "y": 43.5,
+      "color": "neon",
+      "id": "k11"
+     },
+     {
+      "x": 78,
+      "y": 43.5,
+      "color": "orange",
+      "id": "k12"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Nach dem Rätsel sprinten und ins Minitor treffen.",
+   "title": "Sprint und Abschluss",
+   "text": "Zwei Minitore kommen dazu. Ist eine Tafel sortiert, sprintet der Spieler mit dem Ball über die Linie und schließt ins Minitor seines Teams ab. Erst danach läuft er zurück und klatscht ab. Das bringt mehr Tempo und ein klares Ziel am Ende.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 67.5,
+      "y": 14,
+      "label": "9"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 24,
+      "y": 17,
+      "label": "8"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 15.5,
+      "y": 8,
+      "label": "10"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 54,
+      "y": 39.5,
+      "label": "5"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 24,
+      "y": 43,
+      "label": "4"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 15.5,
+      "y": 52,
+      "label": "6"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 58,
+      "y": 3.5,
+      "label": "T"
+     },
+     {
+      "id": "h",
+      "team": "t",
+      "x": 58,
+      "y": 55.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 57.2,
+      "y": 4.9
+     },
+     {
+      "id": "b2",
+      "x": 55.6,
+      "y": 39.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Tafel sortiert",
+      "say": "Spieler neun macht den letzten Tausch, und die Tafel ist sortiert.",
+      "moves": [
+       {
+        "who": "k3",
+        "to": [
+         78,
+         16.5
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "k6",
+        "to": [
+         78,
+         11.5
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Ball zurück, Sprint über die Linie",
+      "say": "Er bekommt den Ball zurück und sprintet mit ihm über die Linie.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         65.5,
+         21.5
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n9",
+        "to": [
+         66,
+         21
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n9",
+        "to": [
+         74,
+         22.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Abschluss ins Minitor: Punkt",
+      "say": "Er schießt ins Minitor, das gibt einen Punkt, dann läuft er zurück und klatscht ab.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         82,
+         22.5
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n9",
+        "to": [
+         60,
+         26
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     }
+    ],
+    "cones": [
+     {
+      "x": 33,
+      "y": 17,
+      "color": "orange",
+      "id": "s0"
+     },
+     {
+      "x": 40,
+      "y": 17,
+      "color": "orange",
+      "id": "s1"
+     },
+     {
+      "x": 47,
+      "y": 17,
+      "color": "orange",
+      "id": "s2"
+     },
+     {
+      "x": 54,
+      "y": 17,
+      "color": "orange",
+      "id": "s3"
+     },
+     {
+      "x": 33,
+      "y": 43,
+      "color": "orange",
+      "id": "s4"
+     },
+     {
+      "x": 40,
+      "y": 43,
+      "color": "orange",
+      "id": "s5"
+     },
+     {
+      "x": 47,
+      "y": 43,
+      "color": "orange",
+      "id": "s6"
+     },
+     {
+      "x": 54,
+      "y": 43,
+      "color": "orange",
+      "id": "s7"
+     },
+     {
+      "x": 71,
+      "y": 11.5,
+      "color": "orange",
+      "id": "k1"
+     },
+     {
+      "x": 74.5,
+      "y": 11.5,
+      "color": "orange",
+      "id": "k2"
+     },
+     {
+      "x": 78,
+      "y": 11.5,
+      "color": "neon",
+      "id": "k3"
+     },
+     {
+      "x": 71,
+      "y": 16.5,
+      "color": "neon",
+      "id": "k4"
+     },
+     {
+      "x": 74.5,
+      "y": 16.5,
+      "color": "neon",
+      "id": "k5"
+     },
+     {
+      "x": 78,
+      "y": 16.5,
+      "color": "orange",
+      "id": "k6"
+     },
+     {
+      "x": 71,
+      "y": 48.5,
+      "color": "orange",
+      "id": "k7"
+     },
+     {
+      "x": 74.5,
+      "y": 48.5,
+      "color": "orange",
+      "id": "k8"
+     },
+     {
+      "x": 78,
+      "y": 48.5,
+      "color": "neon",
+      "id": "k9"
+     },
+     {
+      "x": 71,
+      "y": 43.5,
+      "color": "neon",
+      "id": "k10"
+     },
+     {
+      "x": 74.5,
+      "y": 43.5,
+      "color": "neon",
+      "id": "k11"
+     },
+     {
+      "x": 78,
+      "y": 43.5,
+      "color": "orange",
+      "id": "k12"
+     }
+    ],
+    "lines": [
+     {
+      "type": "rect",
+      "x": 20,
+      "y": 6,
+      "w": 60,
+      "h": 48
+     },
+     {
+      "type": "line",
+      "x1": 68,
+      "y1": 6,
+      "x2": 68,
+      "y2": 54,
+      "dashed": true
+     }
+    ],
+    "goals": [
+     {
+      "x": 80,
+      "y": 22.5,
+      "side": "right"
+     },
+     {
+      "x": 80,
+      "y": 37.5,
+      "side": "right"
+     }
+    ]
+   }
+  }
+ ]
+}
