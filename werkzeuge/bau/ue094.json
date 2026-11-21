@@ -1,0 +1,1003 @@
+{
+ "title": "Wurfstaffel im Team",
+ "code": "UE-094",
+ "kind": "Spielform",
+ "focuses": [
+  "Erwärmung",
+  "Koordination",
+  "Schnelligkeit"
+ ],
+ "age_groups": [
+  "F-Jugend",
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend"
+ ],
+ "duration_minutes": 10,
+ "players_min": 12,
+ "players_max": 18,
+ "field_size": "18 x 18 m",
+ "description": "Eine Staffel zum Aufwärmen, bei der mit den Händen geworfen wird. Jede Mannschaft sitzt paarweise in einer Reihe. Der Ball wird nach vorn geworfen, und das Paar, das gerade geworfen hat, sprintet an die Spitze der Reihe. So wandert die Mannschaft Richtung Minitor. Am Ende wirft der vorderste Spieler ins Tor, dann laufen alle zurück zum Start.",
+ "organisation": [
+  "Aufbauen: Pro Mannschaft eine Bahn von etwa 18 Metern Länge, am Ende ein Minitor.",
+  "Verteilen: Drei Mannschaften mit je drei Paaren. Alle sitzen in ihrer Bahn hintereinander auf dem Boden, die Partner nebeneinander.",
+  "Ablauf: Der hinterste Spieler wirft zum vierten Spieler, dann sprintet er mit seinem Partner nach vorn an die Spitze. Der Fänger wirft zu seinem Partner, der weiter zum nächsten Paar, und auch dieses Paar sprintet nach vorn. Am Ende bekommt der vorderste Spieler den Ball und wirft ins Minitor.",
+  "Sieger: Trifft der Werfer nicht, holen die anderen schnell den Ball für den nächsten Wurf. Die Mannschaft, die zuerst trifft und mit allen Spielern zurück am Start ist, gewinnt."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Miteinander sprechen, im Paar und in der Mannschaft",
+  "Lieber genau als hastig werfen",
+  "Nach dem Wurf mit Vollgas an die Spitze sprinten",
+  "Die eigene Mannschaft laut anfeuern"
+ ],
+ "materials": [
+  "3 Minitore",
+  "3 Bälle",
+  "Hütchen für die Bahnen"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Wurfstaffel im Team. Werfen, sprinten, wieder werfen, bis der Ball im Minitor ist.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 5,
+    "y": 10,
+    "w": 85,
+    "h": 40
+   },
+   {
+    "type": "line",
+    "x1": 5,
+    "y1": 30,
+    "x2": 90,
+    "y2": 30,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 76,
+    "y1": 10,
+    "x2": 76,
+    "y2": 50,
+    "dashed": true
+   }
+  ],
+  "cones": [
+   {
+    "x": 5,
+    "y": 10,
+    "color": "orange"
+   },
+   {
+    "x": 90,
+    "y": 10,
+    "color": "orange"
+   },
+   {
+    "x": 5,
+    "y": 50,
+    "color": "orange"
+   },
+   {
+    "x": 90,
+    "y": 50,
+    "color": "orange"
+   }
+  ],
+  "goals": [
+   {
+    "x": 90,
+    "y": 20,
+    "side": "right"
+   },
+   {
+    "x": 90,
+    "y": 40,
+    "side": "right"
+   }
+  ],
+  "players": [
+   {
+    "id": "n1",
+    "team": "a",
+    "x": 9,
+    "y": 20,
+    "label": "1"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 17.5,
+    "y": 20,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 26,
+    "y": 20,
+    "label": "3"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 34.5,
+    "y": 20,
+    "label": "4"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 43,
+    "y": 20,
+    "label": "5"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 51.5,
+    "y": 20,
+    "label": "6"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 9,
+    "y": 40,
+    "label": "7"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 17.5,
+    "y": 40,
+    "label": "8"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 26,
+    "y": 40,
+    "label": "9"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 34.5,
+    "y": 40,
+    "label": "10"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 43,
+    "y": 40,
+    "label": "11"
+   },
+   {
+    "id": "r12",
+    "team": "b",
+    "x": 51.5,
+    "y": 40,
+    "label": "12"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 60,
+    "y": 3,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 10.2,
+    "y": 21.2
+   },
+   {
+    "id": "b2",
+    "x": 10.2,
+    "y": 41.2
+   }
+  ],
+  "steps": [
+   {
+    "label": "Wurf zum Vierten",
+    "say": "Beide Mannschaften starten gleichzeitig. Der hinterste Spieler wirft zum vierten Spieler, dann sprintet er mit seinem Partner nach vorn.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       35.7,
+       21.2
+      ],
+      "type": "pass",
+      "bend": 8
+     },
+     {
+      "who": "n1",
+      "to": [
+       11,
+       27
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n1",
+      "to": [
+       58,
+       27
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n1",
+      "to": [
+       60,
+       20
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       19.5,
+       27
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n2",
+      "to": [
+       66.5,
+       27
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       68.5,
+       20
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b2",
+      "to": [
+       35.7,
+       41.2
+      ],
+      "type": "pass",
+      "bend": 8
+     },
+     {
+      "who": "r7",
+      "to": [
+       11,
+       47
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "r7",
+      "to": [
+       58,
+       47
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r7",
+      "to": [
+       60,
+       40
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r8",
+      "to": [
+       19.5,
+       47
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "r8",
+      "to": [
+       66.5,
+       47
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r8",
+      "to": [
+       68.5,
+       40
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zum Partner und weiter",
+    "say": "Gleichzeitig wirft der Fänger zu seinem Partner, und der wirft weiter nach vorn. Auch dieses Paar sprintet an die Spitze.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       27.2,
+       21.2
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       52.7,
+       21.2
+      ],
+      "type": "pass",
+      "bend": 8,
+      "after": true
+     },
+     {
+      "who": "n3",
+      "to": [
+       28,
+       27
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n3",
+      "to": [
+       75,
+       27
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n3",
+      "to": [
+       77,
+       20
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n4",
+      "to": [
+       36.5,
+       27
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n4",
+      "to": [
+       83.5,
+       27
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n4",
+      "to": [
+       85.5,
+       20
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b2",
+      "to": [
+       27.2,
+       41.2
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b2",
+      "to": [
+       52.7,
+       41.2
+      ],
+      "type": "pass",
+      "bend": 8,
+      "after": true
+     },
+     {
+      "who": "r9",
+      "to": [
+       28,
+       47
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "r9",
+      "to": [
+       75,
+       47
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r9",
+      "to": [
+       77,
+       40
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r10",
+      "to": [
+       36.5,
+       47
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "r10",
+      "to": [
+       83.5,
+       47
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r10",
+      "to": [
+       85.5,
+       40
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Wurf ins Tor: Punkt",
+    "say": "Am Ende bekommt der vorderste Spieler den Ball und wirft ins Minitor. Neon trifft zuerst, und das gibt einen Punkt für Neon.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       86.7,
+       21.2
+      ],
+      "type": "pass",
+      "bend": 8
+     },
+     {
+      "who": "b1",
+      "to": [
+       91,
+       20
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b2",
+      "to": [
+       86.7,
+       41.2
+      ],
+      "type": "pass",
+      "bend": 8
+     },
+     {
+      "who": "b2",
+      "to": [
+       91,
+       40
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 5,
+    "y1": 58.6,
+    "x2": 90,
+    "y2": 58.6,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Nach dem Wurf mit Vollgas an die Spitze sprinten.",
+   "title": "Vollgas nach vorn",
+   "text": "Wer geworfen hat, steht sofort auf und sprintet mit seinem Partner an die Spitze der Reihe. Je schneller das Paar vorne ist, desto schneller kann der nächste Wurf kommen. So bleibt das Tempo hoch.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 9,
+      "y": 20,
+      "label": "1"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 17.5,
+      "y": 20,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 26,
+      "y": 20,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 34.5,
+      "y": 20,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 43,
+      "y": 20,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 51.5,
+      "y": 20,
+      "label": "6"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 9,
+      "y": 40,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 17.5,
+      "y": 40,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 26,
+      "y": 40,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 34.5,
+      "y": 40,
+      "label": "10"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 43,
+      "y": 40,
+      "label": "11"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 51.5,
+      "y": 40,
+      "label": "12"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 60,
+      "y": 3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 10.2,
+      "y": 21.2
+     },
+     {
+      "id": "b2",
+      "x": 10.2,
+      "y": 41.2
+     }
+    ],
+    "steps": [
+     {
+      "label": "Werfen",
+      "say": "Gleichzeitig werfen die beiden hintersten Spieler zum vierten Spieler ihrer Reihe.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         35.7,
+         21.2
+        ],
+        "type": "pass",
+        "bend": 8
+       },
+       {
+        "who": "b2",
+        "to": [
+         35.7,
+         41.2
+        ],
+        "type": "pass",
+        "bend": 8
+       }
+      ]
+     },
+     {
+      "label": "Sprint an die Spitze",
+      "say": "Sofort sprinten die Werfer mit ihren Partnern nach vorn. Neon ist schneller und ist zuerst wieder bereit.",
+      "moves": [
+       {
+        "who": "n1",
+        "to": [
+         11,
+         27
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n1",
+        "to": [
+         58,
+         27
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n1",
+        "to": [
+         60,
+         20
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n2",
+        "to": [
+         19.5,
+         27
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n2",
+        "to": [
+         66.5,
+         27
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n2",
+        "to": [
+         68.5,
+         20
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r7",
+        "to": [
+         11,
+         47
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "r7",
+        "to": [
+         58,
+         47
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r7",
+        "to": [
+         60,
+         40
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r8",
+        "to": [
+         19.5,
+         47
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "r8",
+        "to": [
+         66.5,
+         47
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r8",
+        "to": [
+         68.5,
+         40
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Daneben geworfen heißt schnell holen, und am Ende zählt, wer zuerst zurück ist.",
+   "title": "Holen und zurück",
+   "text": "Trifft der Werfer nicht, holen die Mitspieler den Ball sofort für den nächsten Wurf. Hat eine Mannschaft getroffen, sprinten alle zurück zum Start. Erst wenn alle Spieler zurück sind, hat die Mannschaft gewonnen.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 26,
+      "y": 20,
+      "label": "1"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 34.5,
+      "y": 20,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 43,
+      "y": 20,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 51.5,
+      "y": 20,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 60,
+      "y": 20,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 68.5,
+      "y": 20,
+      "label": "6"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 26,
+      "y": 40,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 34.5,
+      "y": 40,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 43,
+      "y": 40,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 51.5,
+      "y": 40,
+      "label": "10"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 60,
+      "y": 40,
+      "label": "11"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 68.5,
+      "y": 40,
+      "label": "12"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 60,
+      "y": 3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 69.7,
+      "y": 21.2
+     },
+     {
+      "id": "b2",
+      "x": 69.7,
+      "y": 41.2
+     }
+    ],
+    "steps": [
+     {
+      "label": "Treffer und daneben",
+      "say": "Neon trifft ins Minitor, und das gibt einen Punkt für Neon. Der Wurf von Rot geht daneben, und Rot holt den Ball.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         91,
+         20
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b2",
+        "to": [
+         92,
+         33
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r12",
+        "to": [
+         88,
+         34
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Alle zurück zum Start",
+      "say": "Jetzt sprinten alle Neonspieler gleichzeitig zurück zum Start. Erst wenn alle dort sind, hat Neon gewonnen.",
+      "moves": [
+       {
+        "who": "n1",
+        "to": [
+         9,
+         20
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n2",
+        "to": [
+         17.5,
+         20
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n3",
+        "to": [
+         26,
+         20
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n4",
+        "to": [
+         34.5,
+         20
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n5",
+        "to": [
+         43,
+         20
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n6",
+        "to": [
+         51.5,
+         20
+        ],
+        "type": "lauf"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

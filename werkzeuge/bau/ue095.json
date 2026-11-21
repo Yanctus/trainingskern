@@ -1,0 +1,637 @@
+{
+ "title": "Abwehrspieler rückt auf",
+ "code": "UE-095",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel",
+  "Bewegung"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "duration_minutes": 15,
+ "players_min": 8,
+ "players_max": 12,
+ "field_size": "27 x 14 m",
+ "description": "Ein Innenverteidiger lernt, mit Ball aufzurücken und sich zwischen den Linien anzubieten. Der erste Innenverteidiger spielt zum Mittelfeldspieler, der zweite rückt währenddessen nach vorn und bekommt den Ball an den Dummys vorbei. Dann spielen beide zu zweit gegen einen Verteidiger auf das Minitor. Zwei gleiche Bahnen laufen gleichzeitig nebeneinander.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 27 mal 27 Metern, längs in zwei gleiche Bahnen geteilt. In jeder Bahn zwei Dummys in der Mitte und ein Minitor am Ende.",
+  "Verteilen: Pro Bahn zwei Innenverteidiger und ein Mittelfeldspieler, dahinter wartende Spieler. Ein Verteidiger hinter den Dummys. Der Trainer steht mit Bällen am Start.",
+  "Ablauf: Der Trainer spielt den ersten Innenverteidiger an, der passt zum Mittelfeldspieler. Gleichzeitig rückt der zweite Innenverteidiger auf und bekommt den Ball hinter den Dummys. Dann zwei gegen eins auf das Minitor, ein Tor gibt einen Punkt.",
+  "Ballgewinn und Wechsel: Erobert der Verteidiger den Ball, dribbelt er zwischen den Dummys hindurch und holt so einen Punkt. Nach zwei bis drei Durchgängen wechselt der Verteidiger."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Genau und mit dem richtigen Tempo durch die Linie passen",
+  "Der Innenverteidiger startet im richtigen Moment nach vorn",
+  "Die Überzahl im letzten Feld mit einem schnellen Doppelpass nutzen",
+  "Offen annehmen und den ersten Kontakt nach vorn mitnehmen"
+ ],
+ "materials": [
+  "4 Dummys",
+  "2 Minitore",
+  "Hütchen",
+  "Bälle beim Trainer"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Abwehrspieler rückt auf. Der Innenverteidiger startet nach vorn und bekommt den Ball zwischen den Linien.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 10,
+    "y": 10,
+    "w": 80,
+    "h": 40
+   }
+  ],
+  "cones": [
+   {
+    "x": 52,
+    "y": 21.7,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 52,
+    "y": 39,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 10,
+    "y": 10,
+    "color": "orange"
+   },
+   {
+    "x": 90,
+    "y": 10,
+    "color": "orange"
+   },
+   {
+    "x": 10,
+    "y": 50,
+    "color": "orange"
+   },
+   {
+    "x": 90,
+    "y": 50,
+    "color": "orange"
+   }
+  ],
+  "goals": [
+   {
+    "x": 90,
+    "y": 30,
+    "side": "right"
+   }
+  ],
+  "players": [
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 17.6,
+    "y": 21,
+    "label": "5"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 20.7,
+    "y": 42.5,
+    "label": "6"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 39,
+    "y": 32,
+    "label": "4"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 5,
+    "y": 21,
+    "label": "10"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 70,
+    "y": 30,
+    "label": "8"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 12,
+    "y": 4,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "c1",
+    "x": 14.6,
+    "y": 4.6
+   },
+   {
+    "id": "c2",
+    "x": 9.5,
+    "y": 6.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Aufbau",
+    "say": "Der Trainer spielt Spieler fünf an, der passt weiter zu Spieler vier. Gleichzeitig startet Spieler sechs nach vorn.",
+    "moves": [
+     {
+      "who": "c1",
+      "to": [
+       19.2,
+       21.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "c1",
+      "to": [
+       37.4,
+       32.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n6",
+      "to": [
+       36,
+       46
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "An den Dummys vorbei",
+    "say": "Spieler vier spielt den Ball an den Dummys vorbei in den Lauf von Spieler sechs und läuft selbst mit nach vorn.",
+    "moves": [
+     {
+      "who": "n6",
+      "to": [
+       58,
+       46
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "c1",
+      "to": [
+       59.6,
+       46.6
+      ],
+      "type": "pass",
+      "delay": 0.3
+     },
+     {
+      "who": "n4",
+      "to": [
+       50,
+       30
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n4",
+      "to": [
+       64,
+       20
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zwei gegen eins",
+    "say": "Rot acht geht auf Spieler sechs. Der spielt sofort quer zu Spieler vier, der frei ist.",
+    "moves": [
+     {
+      "who": "r8",
+      "to": [
+       64,
+       40
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "c1",
+      "to": [
+       65.6,
+       20.6
+      ],
+      "type": "pass",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Abschluss: Punkt",
+    "say": "Spieler vier schießt ins Minitor, und das gibt einen Punkt für Neon.",
+    "moves": [
+     {
+      "who": "c1",
+      "to": [
+       90,
+       28
+      ],
+      "type": "pass"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 10,
+    "y1": 58.6,
+    "x2": 90,
+    "y2": 58.6,
+    "text": "27 m"
+   },
+   {
+    "x1": 96,
+    "y1": 10,
+    "x2": 96,
+    "y2": 50,
+    "text": "14 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Erobert der Verteidiger den Ball, dribbelt er zwischen den Dummys hindurch.",
+   "title": "Ball erobert, durch die Dummys",
+   "text": "Spielt der Mittelfeldspieler ungenau, kann der Verteidiger den Ball erobern. Dann dribbelt er sofort zwischen den Dummys hindurch, wie bei einem Konter durch das Mittelfeld. Das gibt einen Punkt für seine Mannschaft.",
+   "board": {
+    "players": [
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 17.6,
+      "y": 21,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 30,
+      "y": 47,
+      "label": "6"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 39,
+      "y": 32,
+      "label": "4"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 5,
+      "y": 21,
+      "label": "10"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 62,
+      "y": 34,
+      "label": "8"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 12,
+      "y": 4,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "c1",
+      "x": 37.4,
+      "y": 32.6
+     },
+     {
+      "id": "c2",
+      "x": 9.5,
+      "y": 6.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Pass abgefangen",
+      "say": "Spieler vier spielt zu ungenau, und Rot acht fängt den Pass ab.",
+      "moves": [
+       {
+        "who": "c1",
+        "to": [
+         56,
+         37
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r8",
+        "to": [
+         57.5,
+         36
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Durch die Dummys: Punkt",
+      "say": "Rot acht dribbelt sofort zwischen den Dummys hindurch, und das gibt einen Punkt für Rot.",
+      "moves": [
+       {
+        "who": "r8",
+        "to": [
+         44,
+         30
+        ],
+        "type": "dribbling",
+        "ball": "c1"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Eine zweite Reihe Dummys kommt dazu.",
+   "title": "Zwei Reihen Dummys",
+   "text": "Eine zweite Reihe Dummys steht weiter vorn. Jetzt müssen Pass und Lauf noch besser abgestimmt sein. Die Spieler erkennen, wann sie durch eine Lücke spielen und wann um die Dummys herum.",
+   "board": {
+    "players": [
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 17.6,
+      "y": 21,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 20.7,
+      "y": 42.5,
+      "label": "6"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 39,
+      "y": 32,
+      "label": "4"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 5,
+      "y": 21,
+      "label": "10"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 84,
+      "y": 26,
+      "label": "8"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 12,
+      "y": 4,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "c1",
+      "x": 14.6,
+      "y": 4.6
+     },
+     {
+      "id": "c2",
+      "x": 9.5,
+      "y": 6.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Aufbau",
+      "say": "Wie gehabt: Trainer zu Spieler fünf, weiter zu Spieler vier, und Spieler sechs startet.",
+      "moves": [
+       {
+        "who": "c1",
+        "to": [
+         19.2,
+         21.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "c1",
+        "to": [
+         37.4,
+         32.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n6",
+        "to": [
+         36,
+         46
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Zwischen die Linien",
+      "say": "Spieler vier spielt an der ersten Reihe vorbei zu Spieler sechs, der zwischen den beiden Reihen anbietet. Spieler vier läuft mit.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         60,
+         46
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "c1",
+        "to": [
+         61.6,
+         46.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       },
+       {
+        "who": "n4",
+        "to": [
+         50,
+         30
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n4",
+        "to": [
+         60,
+         22
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Durch die zweite Reihe",
+      "say": "Spieler sechs spielt durch die Lücke der zweiten Reihe in den Lauf von Spieler vier, und der schießt ins Minitor. Das gibt einen Punkt für Neon.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         72,
+         22
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n4",
+        "to": [
+         78,
+         36
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "c1",
+        "to": [
+         79.6,
+         36.6
+        ],
+        "type": "pass",
+        "delay": 0.5
+       },
+       {
+        "who": "c1",
+        "to": [
+         90,
+         32
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "r8",
+        "to": [
+         82,
+         22
+        ],
+        "type": "lauf"
+       }
+      ]
+     }
+    ],
+    "cones": [
+     {
+      "x": 52,
+      "y": 21.7,
+      "color": "neon",
+      "shape": "stange",
+      "id": "d0"
+     },
+     {
+      "x": 52,
+      "y": 39,
+      "color": "neon",
+      "shape": "stange",
+      "id": "d1"
+     },
+     {
+      "x": 68,
+      "y": 14,
+      "color": "neon",
+      "shape": "stange",
+      "id": "d2"
+     },
+     {
+      "x": 68,
+      "y": 30,
+      "color": "neon",
+      "shape": "stange",
+      "id": "d3"
+     },
+     {
+      "x": 68,
+      "y": 46,
+      "color": "neon",
+      "shape": "stange",
+      "id": "d4"
+     },
+     {
+      "x": 10,
+      "y": 10,
+      "color": "orange",
+      "id": "e0"
+     },
+     {
+      "x": 90,
+      "y": 10,
+      "color": "orange",
+      "id": "e1"
+     },
+     {
+      "x": 10,
+      "y": 50,
+      "color": "orange",
+      "id": "e2"
+     },
+     {
+      "x": 90,
+      "y": 50,
+      "color": "orange",
+      "id": "e3"
+     }
+    ]
+   }
+  }
+ ]
+}

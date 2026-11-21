@@ -1,0 +1,736 @@
+{
+ "title": "Pressen, erobern, kontern",
+ "code": "UE-096",
+ "kind": "Spielform",
+ "focuses": [
+  "Verteidigen",
+  "Umschalten",
+  "Passspiel"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "duration_minutes": 15,
+ "players_min": 11,
+ "players_max": 11,
+ "field_size": "27 x 18 m",
+ "description": "Sechs gegen drei in einer Hälfte: Fünf Spieler und ein Springer halten den Ball, drei Gegner pressen gemeinsam. Erobern die drei den Ball, schießen sie sofort auf eines der beiden Minitore in dieser Hälfte oder spielen den Ball zu ihren zwei Mitspielern in der anderen Hälfte. Bei jedem Ballwechsel wechselt auch der Springer die Mannschaft.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 27 mal 18 Metern, in der Mitte geteilt. In allen vier Ecken ein Minitor.",
+  "Verteilen: Zwei Mannschaften mit je fünf Spielern und ein Springer. Eine Mannschaft hat alle fünf Spieler und den Springer in ihrer Hälfte. Drei Spieler der anderen Mannschaft pressen dort, zwei warten in der anderen Hälfte.",
+  "Ablauf: Die Mannschaft mit Ball nutzt ihre Überzahl und hält den Ball in der eigenen Hälfte. Erobern die Presser den Ball, schießen sie auf ein Minitor dieser Hälfte, und das gibt einen Punkt, oder sie spielen den Ball in ihre eigene Hälfte.",
+  "Umschalten: Nach einem Tor startet der Trainer in der anderen Hälfte neu. Der Springer wechselt immer zur Mannschaft am Ball, und drei Spieler der anderen Mannschaft laufen hinüber zum Pressen."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Mit Spieltempo pressen und als Einheit Passwege zustellen",
+  "Sich ohne Ball frei laufen, um im freien Raum anzunehmen",
+  "Nach Ballgewinn schnell abschließen oder schnell verlagern",
+  "Am Ball konzentriert bleiben und unnötige Ballverluste vermeiden"
+ ],
+ "materials": [
+  "4 Minitore",
+  "Hütchen",
+  "Leibchen in drei Farben",
+  "Bälle beim Trainer"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Pressen, erobern, kontern. Sechs gegen drei, und wer den Ball erobert, schießt sofort oder spielt ihn hinüber.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 14,
+    "y": 6,
+    "w": 72,
+    "h": 48
+   },
+   {
+    "type": "line",
+    "x1": 50,
+    "y1": 6,
+    "x2": 50,
+    "y2": 54,
+    "dashed": true
+   },
+   {
+    "type": "zone",
+    "x": 14,
+    "y": 6,
+    "w": 36,
+    "h": 48
+   },
+   {
+    "type": "zone",
+    "x": 50,
+    "y": 6,
+    "w": 36,
+    "h": 48,
+    "color": "orange"
+   }
+  ],
+  "cones": [
+   {
+    "x": 14,
+    "y": 6,
+    "color": "orange"
+   },
+   {
+    "x": 86,
+    "y": 6,
+    "color": "orange"
+   },
+   {
+    "x": 14,
+    "y": 54,
+    "color": "orange"
+   },
+   {
+    "x": 86,
+    "y": 54,
+    "color": "orange"
+   }
+  ],
+  "goals": [
+   {
+    "x": 14,
+    "y": 11,
+    "side": "left"
+   },
+   {
+    "x": 14,
+    "y": 49,
+    "side": "left"
+   },
+   {
+    "x": 86,
+    "y": 11,
+    "side": "right"
+   },
+   {
+    "x": 86,
+    "y": 49,
+    "side": "right"
+   }
+  ],
+  "players": [
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 19,
+    "y": 15,
+    "label": "4"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 46,
+    "y": 10,
+    "label": "8"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 47,
+    "y": 50,
+    "label": "9"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 18,
+    "y": 50,
+    "label": "10"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 30,
+    "y": 30,
+    "label": "11"
+   },
+   {
+    "id": "f",
+    "team": "t",
+    "x": 40,
+    "y": 28,
+    "label": "F"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 37,
+    "y": 46,
+    "label": "5"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 28,
+    "y": 14,
+    "label": "3"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 21,
+    "y": 32,
+    "label": "7"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 62,
+    "y": 16,
+    "label": "2"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 72,
+    "y": 40,
+    "label": "6"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 93,
+    "y": 30,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 20.6,
+    "y": 15.6
+   },
+   {
+    "id": "c1",
+    "x": 95.6,
+    "y": 30.6
+   },
+   {
+    "id": "c2",
+    "x": 95,
+    "y": 33.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Ball halten",
+    "say": "Neon vier spielt zu Neon elf. Gleichzeitig verschieben die drei Roten gemeinsam und stellen Passwege zu.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       31.6,
+       30.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r3",
+      "to": [
+       27,
+       21
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "r7",
+      "to": [
+       24,
+       36
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "r5",
+      "to": [
+       36,
+       40
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Pass abgefangen",
+    "say": "Neon elf will zu Neon zehn passen, doch Rot sieben ahnt den Pass und fängt ihn ab.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       22.4,
+       42.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r7",
+      "to": [
+       21,
+       42
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Sofort aufs Minitor",
+    "say": "Rot sieben schießt sofort auf das Minitor unten links, und das gibt einen Punkt für Rot.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       13,
+       49
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Neustart drüben",
+    "say": "Der Trainer spielt in der anderen Hälfte zu Rot sechs. Gleichzeitig wechselt der Springer hinüber, und drei Neonspieler laufen zum Pressen nach drüben.",
+    "moves": [
+     {
+      "who": "c1",
+      "to": [
+       70.4,
+       40.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "f",
+      "to": [
+       62,
+       30
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n8",
+      "to": [
+       64,
+       10
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n11",
+      "to": [
+       58,
+       22
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n9",
+      "to": [
+       60,
+       46
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 14,
+    "y1": 58.6,
+    "x2": 86,
+    "y2": 58.6,
+    "text": "27 m"
+   },
+   {
+    "x1": 5,
+    "y1": 6,
+    "x2": 5,
+    "y2": 54,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Als Einheit pressen und die Passwege zustellen.",
+   "title": "Gemeinsam pressen",
+   "text": "Die drei Presser arbeiten zusammen. Einer geht auf den Ballführenden, die anderen beiden stellen die nächsten Passwege zu. So muss der Gegner einen schwierigen Pass spielen, und die Presser können ihn abfangen. Wer nur allein hinterherläuft, wird leicht ausgespielt.",
+   "board": {
+    "players": [
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 19,
+      "y": 15,
+      "label": "4"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 46,
+      "y": 10,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 47,
+      "y": 50,
+      "label": "9"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 18,
+      "y": 50,
+      "label": "10"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 30,
+      "y": 30,
+      "label": "11"
+     },
+     {
+      "id": "f",
+      "team": "t",
+      "x": 40,
+      "y": 28,
+      "label": "F"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 37,
+      "y": 46,
+      "label": "5"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 28,
+      "y": 14,
+      "label": "3"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 21,
+      "y": 32,
+      "label": "7"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 62,
+      "y": 16,
+      "label": "2"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 72,
+      "y": 40,
+      "label": "6"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 93,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 31.6,
+      "y": 30.6
+     },
+     {
+      "id": "c1",
+      "x": 95.6,
+      "y": 30.6
+     },
+     {
+      "id": "c2",
+      "x": 95,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zusammen zustellen",
+      "say": "Rot fünf läuft auf Neon elf zu. Gleichzeitig stellen Rot drei und Rot sieben die Wege zu Neon vier und Neon zehn zu.",
+      "moves": [
+       {
+        "who": "r5",
+        "to": [
+         34,
+         38
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r3",
+        "to": [
+         25,
+         23
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r7",
+        "to": [
+         21,
+         40
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Schwieriger Pass",
+      "say": "Neon elf bleibt nur der Pass zum Springer, und Rot fünf geht dazwischen.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         38.4,
+         28.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r5",
+        "to": [
+         37,
+         30
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Nach Ballgewinn den Ball schnell in die eigene Hälfte spielen.",
+   "title": "Ball hinüberspielen",
+   "text": "Statt zu schießen, können die Presser den Ball auch zu ihren zwei Mitspielern in der anderen Hälfte spielen. Dann sprinten sie sofort hinterher und helfen, den Ball zu halten. Der Springer wechselt mit, und jetzt hat die andere Mannschaft die Überzahl.",
+   "board": {
+    "players": [
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 19,
+      "y": 15,
+      "label": "4"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 46,
+      "y": 10,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 48,
+      "y": 50,
+      "label": "9"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 18,
+      "y": 50,
+      "label": "10"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 30,
+      "y": 40,
+      "label": "11"
+     },
+     {
+      "id": "f",
+      "team": "t",
+      "x": 37.5,
+      "y": 18,
+      "label": "F"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 39,
+      "y": 34,
+      "label": "5"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 28,
+      "y": 14,
+      "label": "3"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 21,
+      "y": 32,
+      "label": "7"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 62,
+      "y": 16,
+      "label": "2"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 72,
+      "y": 40,
+      "label": "6"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 93,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 40.6,
+      "y": 34.6
+     },
+     {
+      "id": "c1",
+      "x": 95.6,
+      "y": 30.6
+     },
+     {
+      "id": "c2",
+      "x": 95,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Ball erobert und hinüber",
+      "say": "Rot fünf hat den Ball erobert und spielt sofort hinüber zu Rot zwei.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         63.6,
+         16.6
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Alle sprinten hinüber",
+      "say": "Gleichzeitig sprinten die drei Roten und der Springer in die andere Hälfte, und drei Neonspieler laufen zum Pressen mit.",
+      "moves": [
+       {
+        "who": "r5",
+        "to": [
+         62,
+         30
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r3",
+        "to": [
+         58,
+         46
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r7",
+        "to": [
+         76,
+         24
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "f",
+        "to": [
+         70,
+         8
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       },
+       {
+        "who": "n8",
+        "to": [
+         56,
+         12
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n11",
+        "to": [
+         54,
+         36
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n9",
+        "to": [
+         66,
+         50
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
