@@ -1,0 +1,604 @@
+{
+ "title": "Fangen mit Hindernissen",
+ "code": "UE-078",
+ "kind": "Spielform",
+ "focuses": [
+  "Erwärmung",
+  "Schnelligkeit",
+  "Koordination"
+ ],
+ "age_groups": [
+  "F-Jugend",
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend"
+ ],
+ "duration_minutes": 10,
+ "players_min": 6,
+ "players_max": 16,
+ "field_size": "23 x 18 m",
+ "description": "Ein Fangspiel zum Aufwärmen in einem Feld voller Hindernisse. Ein Läufer versucht fünfzehn Sekunden lang, nicht von seinem Fänger berührt zu werden. Dabei nutzt er die Hindernisse, schlägt Haken und täuscht an. Schafft er es, gewinnt er die Runde, wird er berührt, bekommt der Fänger einen Punkt.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 23 mal 18 Metern, darin verteilt Hindernisse wie Minitore, Stangen, kleine Hürden und Hütchen.",
+  "Verteilen: Zwei Gruppen. Die Läufer warten an einer Ecke, die Fänger an der gegenüberliegenden Ecke.",
+  "Ablauf: Immer ein Läufer gegen einen Fänger. Auf das Zeichen starten beide gleichzeitig. Bleibt der Läufer fünfzehn Sekunden lang unberührt, gewinnt er die Runde. Berührt ihn der Fänger, bekommt der Fänger einen Punkt.",
+  "Wechsel: Nach zwei Durchgängen pro Spieler tauschen die Gruppen die Rollen."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Schnell die Richtung wechseln und mit Finten den Fänger abschütteln",
+  "Ständig umschauen, um freien Raum zu finden",
+  "Nach dem Haken explosiv wegsprinten, vorher kontrolliert abbremsen",
+  "Den Fänger beobachten und den besten Fluchtweg wählen"
+ ],
+ "materials": [
+  "2 Minitore",
+  "3 Stangen",
+  "4 kleine Hürden oder Hütchen",
+  "2 gelbe Hütchen",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Fangen mit Hindernissen. Ein Läufer gegen einen Fänger, und fünfzehn Sekunden muss er durchhalten.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 20,
+    "y": 5,
+    "w": 60,
+    "h": 48
+   }
+  ],
+  "cones": [
+   {
+    "x": 41.7,
+    "y": 21.3,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 61.4,
+    "y": 36,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 48.6,
+    "y": 29,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 37.4,
+    "y": 8.1,
+    "color": "orange"
+   },
+   {
+    "x": 24.9,
+    "y": 21.6,
+    "color": "orange"
+   },
+   {
+    "x": 73.5,
+    "y": 36.7,
+    "color": "orange"
+   },
+   {
+    "x": 58,
+    "y": 50,
+    "color": "orange"
+   },
+   {
+    "x": 30.9,
+    "y": 14.7,
+    "color": "neon"
+   },
+   {
+    "x": 67.4,
+    "y": 41.8,
+    "color": "neon"
+   }
+  ],
+  "goals": [
+   {
+    "x": 62.3,
+    "y": 15.5,
+    "side": "top"
+   },
+   {
+    "x": 35.8,
+    "y": 40.6,
+    "side": "bottom"
+   }
+  ],
+  "players": [
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 22,
+    "y": 8,
+    "label": "2"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 78,
+    "y": 50,
+    "label": "5"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 11,
+    "y": 20,
+    "label": "3"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 11,
+    "y": 36,
+    "label": "4"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 88,
+    "y": 48,
+    "label": "6"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 88,
+    "y": 16,
+    "label": "7"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 12,
+    "y": 52,
+    "label": "T"
+   }
+  ],
+  "balls": [],
+  "steps": [
+   {
+    "label": "Beide starten gleichzeitig",
+    "say": "Auf das Zeichen des Trainers starten beide gleichzeitig: Neon zwei läuft los, Rot fünf jagt ihn. Fünfzehn Sekunden muss Neon zwei durchhalten.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       30,
+       18
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r5",
+      "to": [
+       64,
+       49
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r5",
+      "to": [
+       52,
+       38
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Um die Hindernisse",
+    "say": "Neon zwei läuft um die Stange herum und bringt sie zwischen sich und den Fänger. Rot fünf muss den Umweg mitlaufen.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       36,
+       27
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n2",
+      "to": [
+       46,
+       25
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       52,
+       12
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r5",
+      "to": [
+       44,
+       32
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r5",
+      "to": [
+       46,
+       18
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Haken am Minitor: geschafft",
+    "say": "Am Minitor schlägt Neon zwei einen Haken und sprintet weg. Die fünfzehn Sekunden sind um, Neon zwei wurde nicht berührt und gewinnt die Runde.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       58,
+       8
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n2",
+      "to": [
+       70,
+       10
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       72,
+       24
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r5",
+      "to": [
+       54,
+       10
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "r5",
+      "to": [
+       64,
+       8
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 20,
+    "y1": 58.6,
+    "x2": 80,
+    "y2": 58.6,
+    "text": "23 m"
+   },
+   {
+    "x1": 95,
+    "y1": 5,
+    "x2": 95,
+    "y2": 53,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Mit Finten und schnellen Richtungswechseln den Fänger abschütteln.",
+   "title": "Finte und Haken",
+   "text": "Wer nur geradeaus rennt, wird schnell gefangen. Besser: kurz in eine Richtung antäuschen, den Fänger dorthin locken und dann blitzschnell in die andere Richtung starten. Die Hindernisse helfen dabei, sie verschaffen dem Läufer wertvolle Zeit.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 70,
+      "y": 9,
+      "label": "2"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 56,
+      "y": 24,
+      "label": "5"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 11,
+      "y": 20,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 11,
+      "y": 36,
+      "label": "4"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 88,
+      "y": 48,
+      "label": "6"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 88,
+      "y": 16,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 12,
+      "y": 52,
+      "label": "T"
+     }
+    ],
+    "balls": [],
+    "steps": [
+     {
+      "label": "Antäuschen",
+      "say": "Neon zwei täuscht nach links an. Rot fünf fällt darauf herein und läuft mit.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         66,
+         12
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r5",
+        "to": [
+         54,
+         15
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Haken und weg",
+      "say": "Dann schlägt Neon zwei einen Haken nach rechts und sprintet am Minitor vorbei davon. Rot fünf steht auf der falschen Seite.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         72,
+         18
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n2",
+        "to": [
+         74,
+         32
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r5",
+        "to": [
+         58,
+         12
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Ein Team fängt, das andere Team weicht aus, alle gleichzeitig.",
+   "title": "Team gegen Team",
+   "text": "Jetzt spielt ein ganzes Team als Fänger gegen ein Team von Läufern, alle gleichzeitig im Feld. So kommt der Druck von mehreren Seiten, manchmal jagen zwei oder drei Fänger einen Läufer. Die Uhr läuft, bis alle Läufer berührt sind. Dann wechseln die Rollen, und das Team mit der längeren Zeit gewinnt.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 45,
+      "y": 25,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 36,
+      "y": 37,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 65,
+      "y": 25,
+      "label": "4"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 25,
+      "y": 28,
+      "label": "5"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 55,
+      "y": 42,
+      "label": "6"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 75,
+      "y": 10,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 12,
+      "y": 52,
+      "label": "T"
+     }
+    ],
+    "balls": [],
+    "steps": [
+     {
+      "label": "Alle laufen gleichzeitig",
+      "say": "Alle laufen gleichzeitig: Die Roten jagen, die Neonspieler weichen aus. Rot fünf und Rot sechs gehen beide auf Neon zwei.",
+      "moves": [
+       {
+        "who": "r5",
+        "to": [
+         36,
+         28
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r6",
+        "to": [
+         52,
+         34
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n2",
+        "to": [
+         50,
+         14
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n3",
+        "to": [
+         28,
+         46
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r7",
+        "to": [
+         70,
+         18
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n4",
+        "to": [
+         74,
+         30
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Zwei gegen einen",
+      "say": "Neon zwei entkommt mit einem Haken am Minitor. Gleichzeitig berührt Rot sieben Neon vier, und die Uhr läuft weiter, bis alle Neonspieler berührt sind.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         56,
+         8
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n2",
+        "to": [
+         70,
+         6
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r5",
+        "to": [
+         38,
+         16
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r6",
+        "to": [
+         52,
+         22
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r7",
+        "to": [
+         73,
+         26
+        ],
+        "type": "lauf"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

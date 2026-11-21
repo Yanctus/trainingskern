@@ -1,0 +1,522 @@
+{
+ "title": "Flach und genau ins Tor",
+ "code": "UE-077",
+ "kind": "Spielform",
+ "focuses": [
+  "Torschuss",
+  "Zusammenspiel",
+  "Bewegung"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "duration_minutes": 15,
+ "players_min": 6,
+ "players_max": 6,
+ "field_size": "Kreis, 27 m Durchmesser",
+ "description": "Drei gegen drei in einem Kreis mit einem Minitor auf jeder Seite, ohne Torwart. In jedem Tor stehen zwei Hütchen kurz innerhalb der Pfosten. Ein Tor zählt nur, wenn vorher jeder Spieler des Teams am Ball war und der Ball flach, also unter Hütchenhöhe, zwischen den Hütchen ins Tor geht.",
+ "organisation": [
+  "Aufbauen: Ein Kreis mit etwa 27 Metern Durchmesser, zum Beispiel der Mittelkreis. Links und rechts je ein Minitor, darin zwei Hütchen etwa einen halben Meter innerhalb der Pfosten.",
+  "Verteilen: Zwei Teams mit je drei Spielern, kein Torwart. Der Trainer steht mit vielen Bällen am Rand.",
+  "Ablauf: Jedes Team greift ein Tor an. Vor dem Abschluss muss jeder Spieler des Teams den Ball berührt haben. Ein Tor zählt nur flach zwischen den Hütchen, auch wenn der Ball dabei ein Hütchen trifft. Geht der Ball aus dem Kreis oder fällt ein Tor, spielt der Trainer sofort einen neuen Ball ein.",
+  "Runden: Drei bis vier Spiele von je vier Minuten, jedes mit einer anderen Regel. Zum Beispiel nur zwei Kontakte, Abschluss nur direkt, nach jedem Tor muss ein anderer Spieler treffen, oder nur mit dem schwächeren Fuß."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Flach und fest abschließen, genau zwischen die Hütchen",
+  "Mit schnellen Kombinationen Platz schaffen",
+  "Sich ohne Ball klug bewegen, um anspielbar zu sein",
+  "Gegner herauslocken und um sie herum spielen, dabei viel miteinander sprechen"
+ ],
+ "materials": [
+  "2 Minitore",
+  "4 orange Hütchen für die Tore",
+  "Hütchen für den Kreis, falls kein Mittelkreis da ist",
+  "Leibchen in zwei Farben",
+  "Viele Bälle beim Trainer"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Flach und genau ins Tor. Drei gegen drei im Kreis, und ein Tor zählt nur flach zwischen den Hütchen.",
+ "board": {
+  "lines": [
+   {
+    "type": "circle",
+    "x": 50,
+    "y": 30,
+    "r": 26
+   }
+  ],
+  "cones": [
+   {
+    "x": 24.8,
+    "y": 26.8,
+    "color": "orange"
+   },
+   {
+    "x": 24.8,
+    "y": 33.2,
+    "color": "orange"
+   },
+   {
+    "x": 75.2,
+    "y": 26.8,
+    "color": "orange"
+   },
+   {
+    "x": 75.2,
+    "y": 33.2,
+    "color": "orange"
+   }
+  ],
+  "goals": [
+   {
+    "x": 24,
+    "y": 30,
+    "side": "left"
+   },
+   {
+    "x": 76,
+    "y": 30,
+    "side": "right"
+   }
+  ],
+  "players": [
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 36,
+    "y": 15,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 45.3,
+    "y": 31.4,
+    "label": "3"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 36,
+    "y": 42.7,
+    "label": "4"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 63.6,
+    "y": 21,
+    "label": "5"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 54.5,
+    "y": 38,
+    "label": "6"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 63.9,
+    "y": 39.3,
+    "label": "7"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 84,
+    "y": 6,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 37.6,
+    "y": 43.3
+   },
+   {
+    "id": "c1",
+    "x": 81.5,
+    "y": 6.6
+   },
+   {
+    "id": "c2",
+    "x": 86.5,
+    "y": 7.6
+   }
+  ],
+  "steps": [
+   {
+    "label": "Kombinieren",
+    "say": "Neon vier spielt zu Neon drei, und der leitet direkt zu Neon zwei weiter.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       46.9,
+       32
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       37.6,
+       15.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Starten und anspielen",
+    "say": "Neon drei startet sofort in den freien Raum, und Neon zwei spielt ihn an. Jetzt waren alle drei am Ball.",
+    "moves": [
+     {
+      "who": "n3",
+      "to": [
+       60,
+       30
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       61.6,
+       30.6
+      ],
+      "type": "pass",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "Flach zwischen die Hütchen",
+    "say": "Neon drei schießt flach und fest zwischen die beiden Hütchen ins Tor, und das gibt einen Punkt für Neon.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       76.5,
+       30
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Neuer Ball vom Trainer",
+    "say": "Sofort spielt der Trainer einen neuen Ball ein, diesmal zu Rot fünf, und es geht weiter.",
+    "moves": [
+     {
+      "who": "c1",
+      "to": [
+       62,
+       21.6
+      ],
+      "type": "pass"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 24,
+    "y1": 58.6,
+    "x2": 76,
+    "y2": 58.6,
+    "text": "27 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Trifft der Ball ein Hütchen und geht trotzdem ins Tor, zählt er.",
+   "title": "Hütchen getroffen zählt",
+   "text": "Prallt der Schuss vom Hütchen ins Tor, ist es ein Tor. Danach stellt der Schütze das Hütchen wieder genau an seinen Platz. So bleiben alle bei der Sache und üben, den Ball flach und genau zu schießen statt einfach drauf.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 40,
+      "y": 16,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 64,
+      "y": 26,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 40,
+      "y": 44,
+      "label": "4"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 55,
+      "y": 14,
+      "label": "5"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 52,
+      "y": 38,
+      "label": "6"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 66,
+      "y": 44,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 84,
+      "y": 6,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 65.6,
+      "y": 26.6
+     },
+     {
+      "id": "c1",
+      "x": 81.5,
+      "y": 6.6
+     },
+     {
+      "id": "c2",
+      "x": 86.5,
+      "y": 7.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Vom Hütchen ins Tor",
+      "say": "Neon drei schießt, der Ball prallt vom Hütchen ins Tor. Auch das zählt, und das gibt einen Punkt für Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         74.4,
+         27
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         76.5,
+         29.5
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "k3",
+        "to": [
+         75.6,
+         24.4
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Hütchen zurückstellen",
+      "say": "Danach stellt Neon drei das Hütchen genau an seinen Platz zurück, bevor es weitergeht.",
+      "moves": [
+       {
+        "who": "n3",
+        "to": [
+         70,
+         22
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "k3",
+        "to": [
+         75.2,
+         26.8
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "cones": [
+     {
+      "x": 24.8,
+      "y": 26.8,
+      "color": "orange",
+      "id": "k1"
+     },
+     {
+      "x": 24.8,
+      "y": 33.2,
+      "color": "orange",
+      "id": "k2"
+     },
+     {
+      "x": 75.2,
+      "y": 26.8,
+      "color": "orange",
+      "id": "k3"
+     },
+     {
+      "x": 75.2,
+      "y": 33.2,
+      "color": "orange",
+      "id": "k4"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Tore zählen nur mit dem schwächeren Fuß.",
+   "title": "Nur mit dem schwachen Fuß",
+   "text": "In dieser Runde darf nur mit dem schwächeren Fuß aufs Tor geschossen werden. Das ist schwerer, verbessert aber Gleichgewicht, Technik und Selbstvertrauen. Wer gern mit rechts schießt, legt sich den Ball vorher auf links.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 50,
+      "y": 13,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 62,
+      "y": 10,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 34,
+      "y": 44,
+      "label": "4"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 40,
+      "y": 28,
+      "label": "5"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 56,
+      "y": 40,
+      "label": "6"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 66,
+      "y": 26,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 84,
+      "y": 6,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 64.4,
+      "y": 26.6
+     },
+     {
+      "id": "c1",
+      "x": 81.5,
+      "y": 6.6
+     },
+     {
+      "id": "c2",
+      "x": 86.5,
+      "y": 7.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Rot kombiniert",
+      "say": "Rot sieben spielt zu Rot sechs, und der direkt weiter zu Rot fünf. Alle drei waren am Ball.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         54.4,
+         40.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         41.6,
+         28.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Abschluss mit dem schwachen Fuß",
+      "say": "Rot fünf schießt mit seinem schwächeren Fuß flach zwischen die Hütchen, und das gibt einen Punkt für Rot.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         23.5,
+         30
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
