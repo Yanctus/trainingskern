@@ -1,0 +1,699 @@
+{
+ "title": "Zu zweit gegen die Überzahl",
+ "code": "UE-097",
+ "kind": "Spielform",
+ "focuses": [
+  "Verteidigen",
+  "Umschalten",
+  "Zusammenspiel"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "duration_minutes": 15,
+ "players_min": 12,
+ "players_max": 14,
+ "field_size": "23 x 18 m",
+ "description": "Zwei gegen zwei plus Helfer auf zwei Tore mit Torwart. Der Trainer ruft und spielt einen Ball ins Feld, je zwei Spieler beider Mannschaften rennen los. Wer den Ball erobert, greift mit seinem Helfer drei gegen zwei an. Die zwei Verteidiger stehen kompakt, lenken das Spiel nach außen und kontern sofort, wenn sie den Ball gewinnen. Der Helfer gehört immer zur Mannschaft, die zuletzt getroffen hat.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 23 mal 18 Metern mit einem Tor und Torwart an jedem Ende.",
+  "Verteilen: Zwei Mannschaften warten neben dem eigenen Tor. Jede Mannschaft hat einen Helfer. Der Trainer steht mit Bällen an der Seite.",
+  "Ablauf: Der Trainer ruft und spielt einen Ball ins Feld. Je zwei Spieler jeder Mannschaft rennen los. Wer den Ball hat, greift mit dem Helfer drei gegen zwei an. Erobern die Verteidiger den Ball, kontern sie auf das andere Tor. Jedes Tor gibt einen Punkt.",
+  "Wechsel: Nach jedem Angriff kommen neue Paare. Der Helfer der Mannschaft, die getroffen hat, ist im nächsten Durchgang im Feld."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Das Spiel vom Tor weg nach außen lenken",
+  "Nach Ballgewinn kompakt bleiben und schnell kontern",
+  "Beim Verteidigen viel miteinander sprechen und sich absprechen",
+  "Die Gefahr erkennen und immer zuerst das Tor schützen"
+ ],
+ "materials": [
+  "2 Tore",
+  "4 Hütchen",
+  "Leibchen in zwei Farben",
+  "Viele Bälle beim Trainer"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Zu zweit gegen die Überzahl. Zwei Verteidiger gegen drei Angreifer, und nach Ballgewinn geht es sofort in den Konter.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 14,
+    "y": 6,
+    "w": 72,
+    "h": 48
+   }
+  ],
+  "cones": [
+   {
+    "x": 14,
+    "y": 6,
+    "color": "orange"
+   },
+   {
+    "x": 86,
+    "y": 6,
+    "color": "orange"
+   },
+   {
+    "x": 14,
+    "y": 54,
+    "color": "orange"
+   },
+   {
+    "x": 86,
+    "y": 54,
+    "color": "orange"
+   }
+  ],
+  "goals": [
+   {
+    "x": 14,
+    "y": 30,
+    "side": "left"
+   },
+   {
+    "x": 86,
+    "y": 30,
+    "side": "right"
+   }
+  ],
+  "players": [
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 12,
+    "y": 14,
+    "label": "5"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 12,
+    "y": 46,
+    "label": "7"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 3,
+    "y": 54,
+    "label": "6"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 3,
+    "y": 6,
+    "label": "8"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 45,
+    "y": 30,
+    "label": "2"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 88,
+    "y": 14,
+    "label": "3"
+   },
+   {
+    "id": "r4",
+    "team": "b",
+    "x": 88,
+    "y": 46,
+    "label": "4"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 97,
+    "y": 6,
+    "label": "9"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 97,
+    "y": 54,
+    "label": "10"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 22,
+    "y": 2.5,
+    "label": "11"
+   },
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 17,
+    "y": 30,
+    "label": "TW"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 83,
+    "y": 30,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 32,
+    "y": 2.5,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "c1",
+    "x": 34.6,
+    "y": 3.1
+   },
+   {
+    "id": "c2",
+    "x": 37,
+    "y": 4
+   }
+  ],
+  "steps": [
+   {
+    "label": "Wettlauf zum Ball",
+    "say": "Der Trainer spielt einen Ball ins Feld. Gleichzeitig rennen je zwei Spieler beider Mannschaften los.",
+    "moves": [
+     {
+      "who": "c1",
+      "to": [
+       45.6,
+       46.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n5",
+      "to": [
+       34,
+       22
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n7",
+      "to": [
+       44,
+       46
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r3",
+      "to": [
+       62,
+       22
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r4",
+      "to": [
+       58,
+       42
+      ],
+      "type": "lauf"
+     }
+    ]
+   },
+   {
+    "label": "Drei gegen zwei",
+    "say": "Neon sieben ist zuerst am Ball und spielt zum Helfer Neon zwei. Gleichzeitig startet Neon fünf in den freien Raum.",
+    "moves": [
+     {
+      "who": "c1",
+      "to": [
+       46.6,
+       30.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n5",
+      "to": [
+       60,
+       16
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "r3",
+      "to": [
+       60,
+       28
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "r4",
+      "to": [
+       54,
+       40
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Freier Spieler: Punkt",
+    "say": "Neon zwei spielt zum freien Neon fünf, und der schießt ins Tor. Das gibt einen Punkt für Neon.",
+    "moves": [
+     {
+      "who": "c1",
+      "to": [
+       61.6,
+       16.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "c1",
+      "to": [
+       86,
+       26
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 14,
+    "y1": 58.6,
+    "x2": 86,
+    "y2": 58.6,
+    "text": "23 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Die zwei Verteidiger lenken den Ballführenden nach außen.",
+   "title": "Nach außen lenken",
+   "text": "Die beiden Verteidiger stellen sich so hin, dass der Weg durch die Mitte zu ist. Der Ballführende muss nach außen ausweichen. Dort ist es eng, und der zweite Verteidiger kann den nächsten Pass abfangen. Nach dem Ballgewinn geht es sofort in den Konter.",
+   "board": {
+    "players": [
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 52,
+      "y": 14,
+      "label": "5"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 52,
+      "y": 48,
+      "label": "7"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 3,
+      "y": 54,
+      "label": "6"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 3,
+      "y": 6,
+      "label": "8"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 48,
+      "y": 32,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 64,
+      "y": 24,
+      "label": "3"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 66,
+      "y": 40,
+      "label": "4"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 97,
+      "y": 6,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 97,
+      "y": 54,
+      "label": "10"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 22,
+      "y": 2.5,
+      "label": "11"
+     },
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 17,
+      "y": 30,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 83,
+      "y": 30,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 32,
+      "y": 2.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 49.6,
+      "y": 32.6
+     },
+     {
+      "id": "c1",
+      "x": 34.6,
+      "y": 3.1
+     },
+     {
+      "id": "c2",
+      "x": 37,
+      "y": 4
+     }
+    ],
+    "steps": [
+     {
+      "label": "Mitte zu",
+      "say": "Rot drei schiebt in die Mitte und stellt den Weg zum Tor zu. Neon zwei muss nach außen dribbeln.",
+      "moves": [
+       {
+        "who": "r3",
+        "to": [
+         58,
+         30
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n2",
+        "to": [
+         55,
+         40
+        ],
+        "type": "dribbling",
+        "delay": 0.2,
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Pass abgefangen",
+      "say": "Neon zwei will zu Neon sieben passen, doch Rot vier hat darauf gewartet und fängt den Ball ab.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         58.6,
+         44.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r4",
+        "to": [
+         58,
+         44
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Konter: Punkt",
+      "say": "Rot vier kontert sofort auf das andere Tor und schießt. Das gibt einen Punkt für Rot.",
+      "moves": [
+       {
+        "who": "r4",
+        "to": [
+         32,
+         40
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         14,
+         33
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: In der Überzahl den freien Spieler finden.",
+   "title": "Den Freien finden",
+   "text": "Drei Angreifer gegen zwei Verteidiger heißt: Einer ist immer frei. Wer am Ball ist, lockt die Verteidiger an, hebt den Kopf und spielt im richtigen Moment zum freien Mitspieler. Der schließt ruhig und genau ab.",
+   "board": {
+    "players": [
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 38,
+      "y": 22,
+      "label": "5"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 38,
+      "y": 38,
+      "label": "7"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 3,
+      "y": 54,
+      "label": "6"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 3,
+      "y": 6,
+      "label": "8"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 3,
+      "y": 30,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 60,
+      "y": 12,
+      "label": "3"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 62,
+      "y": 46,
+      "label": "4"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 97,
+      "y": 6,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 97,
+      "y": 54,
+      "label": "10"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 58,
+      "y": 30,
+      "label": "11"
+     },
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 17,
+      "y": 30,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 83,
+      "y": 30,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 32,
+      "y": 2.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 56.4,
+      "y": 30.6
+     },
+     {
+      "id": "c1",
+      "x": 34.6,
+      "y": 3.1
+     },
+     {
+      "id": "c2",
+      "x": 37,
+      "y": 4
+     }
+    ],
+    "steps": [
+     {
+      "label": "Verteidiger anlocken",
+      "say": "Rot elf dribbelt auf die beiden Verteidiger zu, und beide kommen auf ihn zu.",
+      "moves": [
+       {
+        "who": "r11",
+        "to": [
+         48,
+         30
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n5",
+        "to": [
+         40,
+         28
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n7",
+        "to": [
+         42,
+         36
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Pass zum Freien",
+      "say": "Gleichzeitig startet Rot drei in den freien Raum, und Rot elf spielt ihn an.",
+      "moves": [
+       {
+        "who": "r3",
+        "to": [
+         36,
+         12
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         37.6,
+         12.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Abschluss: Punkt",
+      "say": "Rot drei schießt ruhig ins Tor, und das gibt einen Punkt für Rot.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         14,
+         27
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

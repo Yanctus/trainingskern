@@ -1,0 +1,713 @@
+{
+ "title": "Das eigene Drittel verteidigen",
+ "code": "UE-098",
+ "kind": "Spielform",
+ "focuses": [
+  "Verteidigen",
+  "1 gegen 1",
+  "Zusammenspiel"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "duration_minutes": 15,
+ "players_min": 10,
+ "players_max": 12,
+ "field_size": "27 x 18 m",
+ "description": "Vier gegen vier mit Torwart auf zwei Tore, das Feld ist in drei Drittel geteilt. Eine Mannschaft lernt, ihr Tor zu verteidigen: kompakt stehen, in jedem Drittel mindestens ein Spieler, gemeinsam entscheiden, wann gepresst und wann nur verzögert wird. Erobert sie den Ball, greift sie selbst an.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 27 mal 18 Metern mit einem Tor und Torwart an jedem Ende. Mit Hütchen in drei Drittel teilen.",
+  "Verteilen: Zwei Mannschaften mit je vier Feldspielern. Der Trainer gibt einer Mannschaft die Aufgabe zu verteidigen, die andere soll angreifen.",
+  "Ablauf: Normales Spiel, jedes Tor gibt einen Punkt. Die verteidigende Mannschaft hat in jedem Drittel mindestens einen Spieler. Sie presst gemeinsam, wenn der Ball erobert werden kann, und verzögert, wenn sie das Tor schützen muss.",
+  "Trainer: Geht der Ball ins Aus, spielt der Trainer schnell einen neuen Ball ein."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Als Mannschaft kompakt bleiben, jeder kennt seine Aufgabe",
+  "Im Eins gegen Eins nicht leicht ausspielen lassen und bei Bedarf schnell zurücklaufen",
+  "Erkennen, wann alle gemeinsam pressen und wann verzögert wird",
+  "Viel sprechen, um den Raum hinter der Abwehr klein zu halten"
+ ],
+ "materials": [
+  "2 Tore",
+  "8 Hütchen",
+  "Leibchen in zwei Farben",
+  "Bälle beim Trainer"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Das eigene Drittel verteidigen. Kompakt stehen, gemeinsam pressen und das Tor schützen.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 14,
+    "y": 6,
+    "w": 72,
+    "h": 48
+   },
+   {
+    "type": "line",
+    "x1": 38,
+    "y1": 6,
+    "x2": 38,
+    "y2": 54,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 62,
+    "y1": 6,
+    "x2": 62,
+    "y2": 54,
+    "dashed": true
+   }
+  ],
+  "cones": [
+   {
+    "x": 14,
+    "y": 6,
+    "color": "orange"
+   },
+   {
+    "x": 86,
+    "y": 6,
+    "color": "orange"
+   },
+   {
+    "x": 14,
+    "y": 54,
+    "color": "orange"
+   },
+   {
+    "x": 86,
+    "y": 54,
+    "color": "orange"
+   }
+  ],
+  "goals": [
+   {
+    "x": 14,
+    "y": 30,
+    "side": "left"
+   },
+   {
+    "x": 86,
+    "y": 30,
+    "side": "right"
+   }
+  ],
+  "players": [
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 52,
+    "y": 26.6,
+    "label": "4"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 26,
+    "y": 40,
+    "label": "5"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 26.4,
+    "y": 21.8,
+    "label": "6"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 64,
+    "y": 32,
+    "label": "8"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 74,
+    "y": 18,
+    "label": "2"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 74,
+    "y": 46,
+    "label": "3"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 56,
+    "y": 10,
+    "label": "7"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 36,
+    "y": 30,
+    "label": "9"
+   },
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 17,
+    "y": 30,
+    "label": "TW"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 83,
+    "y": 30,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 92,
+    "y": 54,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 75.6,
+    "y": 18.6
+   },
+   {
+    "id": "c1",
+    "x": 94.6,
+    "y": 54.6
+   }
+  ],
+  "steps": [
+   {
+    "label": "Kompakt verschieben",
+    "say": "Rot zwei passt zu Rot sieben. Gleichzeitig verschiebt Neon als Einheit: Neon vier presst, die anderen rücken nach.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       57.6,
+       10.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n4",
+      "to": [
+       58,
+       16
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n8",
+      "to": [
+       62,
+       24
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n6",
+      "to": [
+       30,
+       18
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n5",
+      "to": [
+       30,
+       34
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Pass nach vorn",
+    "say": "Rot sieben spielt nach vorn zu Rot neun. Neon sechs und Neon fünf schieben sofort von beiden Seiten heran.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       37.6,
+       30.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n6",
+      "to": [
+       33,
+       26
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n5",
+      "to": [
+       33,
+       35
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Ball erobert",
+    "say": "Neon fünf spitzelt den Ball weg und spielt sofort zu Neon vier. Jetzt greift Neon an.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       53.6,
+       17.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n4",
+      "to": [
+       52,
+       17
+      ],
+      "type": "lauf"
+     }
+    ]
+   },
+   {
+    "label": "Gegenangriff: Punkt",
+    "say": "Neon vier spielt steil zu Neon acht, und der schießt ins Tor. Das gibt einen Punkt für Neon.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       72,
+       26
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       73.6,
+       26.6
+      ],
+      "type": "pass",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       86,
+       25
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 14,
+    "y1": 58.6,
+    "x2": 86,
+    "y2": 58.6,
+    "text": "27 m"
+   },
+   {
+    "x1": 5,
+    "y1": 6,
+    "x2": 5,
+    "y2": 54,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Den Gegner nach außen lenken und dort eine Falle stellen.",
+   "title": "Außen eine Falle stellen",
+   "text": "An der Seitenlinie ist wenig Platz. Der vordere Verteidiger läuft den Ballführenden so an, dass er nur nach außen kann. Die Mitspieler ahnen den nächsten Pass und warten schon darauf. So wird aus dem Flügel eine Falle.",
+   "board": {
+    "players": [
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 52,
+      "y": 26.6,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 26,
+      "y": 40,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 26.4,
+      "y": 21.8,
+      "label": "6"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 65,
+      "y": 24,
+      "label": "8"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 74,
+      "y": 10,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 74,
+      "y": 46,
+      "label": "3"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 56,
+      "y": 10,
+      "label": "7"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 36,
+      "y": 30,
+      "label": "9"
+     },
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 17,
+      "y": 30,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 83,
+      "y": 30,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 92,
+      "y": 54,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 75.6,
+      "y": 10.6
+     },
+     {
+      "id": "c1",
+      "x": 94.6,
+      "y": 54.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Nach außen drängen",
+      "say": "Neon acht läuft Rot zwei von innen an. Rot zwei kann nur an der Linie entlang dribbeln.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         70,
+         15
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r2",
+        "to": [
+         64,
+         9
+        ],
+        "type": "dribbling",
+        "delay": 0.2,
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "In die Falle",
+      "say": "Rot zwei passt zu Rot sieben, doch Neon vier hat darauf gewartet und fängt den Ball ab.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         53,
+         11
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n4",
+        "to": [
+         53,
+         12
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       }
+      ]
+     }
+    ],
+    "lines": [
+     {
+      "type": "rect",
+      "x": 14,
+      "y": 6,
+      "w": 72,
+      "h": 48
+     },
+     {
+      "type": "line",
+      "x1": 38,
+      "y1": 6,
+      "x2": 38,
+      "y2": 54,
+      "dashed": true
+     },
+     {
+      "type": "line",
+      "x1": 62,
+      "y1": 6,
+      "x2": 62,
+      "y2": 54,
+      "dashed": true
+     },
+     {
+      "type": "zone",
+      "x": 14,
+      "y": 6,
+      "w": 72,
+      "h": 9
+     },
+     {
+      "type": "zone",
+      "x": 14,
+      "y": 45,
+      "w": 72,
+      "h": 9
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Zwei Endspieler neben dem Tor helfen den Angreifern.",
+   "title": "Mit zwei Endspielern",
+   "text": "Neben dem Tor der Verteidiger stehen zwei Springer. Die Angreifer dürfen sie anspielen und mit ihnen kombinieren. Die Verteidiger müssen die Pässe nach vorn verhindern und ständig über die Schulter schauen, wer von hinten kommt.",
+   "board": {
+    "players": [
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 52,
+      "y": 26.6,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 26,
+      "y": 40,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 30,
+      "y": 13,
+      "label": "6"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 64,
+      "y": 32,
+      "label": "8"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 74,
+      "y": 18,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 74,
+      "y": 46,
+      "label": "3"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 56,
+      "y": 10,
+      "label": "7"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 36,
+      "y": 30,
+      "label": "9"
+     },
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 17,
+      "y": 30,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 83,
+      "y": 30,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 92,
+      "y": 54,
+      "label": "T"
+     },
+     {
+      "id": "f1",
+      "team": "t",
+      "x": 10,
+      "y": 12,
+      "label": "F"
+     },
+     {
+      "id": "f2",
+      "team": "t",
+      "x": 10,
+      "y": 48,
+      "label": "F"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 37.6,
+      "y": 30.6
+     },
+     {
+      "id": "c1",
+      "x": 94.6,
+      "y": 54.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Pass zum Endspieler",
+      "say": "Rot neun spielt zum Springer oben und startet sofort. Neon sechs kommt zu spät.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         11.6,
+         12.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r9",
+        "to": [
+         28,
+         22
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n6",
+        "to": [
+         26,
+         16
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       }
+      ]
+     },
+     {
+      "label": "Ablage und Abschluss",
+      "say": "Der Springer legt direkt ab, und Rot neun schießt ins Tor. Das gibt einen Punkt für Rot.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         29.6,
+         22.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         14,
+         27
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
