@@ -1,0 +1,643 @@
+{
+ "title": "Aufdrehen am Dummy",
+ "code": "UE-106",
+ "kind": "Übungsform",
+ "focuses": [
+  "Ballannahme",
+  "Passspiel",
+  "Bewegung"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "duration_minutes": 15,
+ "players_min": 6,
+ "players_max": 10,
+ "field_size": "23 x 23 m",
+ "description": "An beiden Enden eines Feldes stehen je drei Spieler, in der Mitte steht eine Reihe Dummys. Ein Spieler von der einen Seite bietet sich vor einem Dummy an, nimmt den Ball mit dem ersten Kontakt quer am Dummy vorbei und spielt zur anderen Seite durch. So lernen Mittelfeldspieler, sich frei zu laufen, offen anzunehmen und nach vorn zu spielen.",
+ "organisation": [
+  "Aufbauen: Ein Feld von etwa 23 mal 23 Metern. In der Mitte stehen drei Dummys in einer Reihe.",
+  "Verteilen: Mindestens sechs Spieler, je drei an den beiden Enden. Ein Spieler links hat den Ball.",
+  "Ablauf: Ein Spieler der rechten Seite läuft vor einen Dummy und wird angespielt. Er nimmt den Ball quer am Dummy vorbei mit und spielt zur rechten Seite durch, dann läuft er zurück. Danach geht es in die andere Richtung.",
+  "Wechsel: Wer anbietet, wechselt ständig, damit jeder oft annimmt. Mit ein oder zwei Kontakten spielen."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Guter erster Kontakt: sicher und nach vorn mitnehmen",
+  "Offen zum Ball stehen, um beide Seiten zu sehen",
+  "Pass genau, mit dem richtigen Tempo und der passenden Art",
+  "Den Lauf zum Dummy richtig timen"
+ ],
+ "materials": [
+  "3 Dummys",
+  "4 orange Hütchen",
+  "Mehrere Bälle"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Aufdrehen am Dummy. Freilaufen, offen annehmen und zur anderen Seite durchspielen.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 26,
+    "y": 6,
+    "w": 48,
+    "h": 48
+   }
+  ],
+  "cones": [
+   {
+    "x": 26,
+    "y": 6,
+    "color": "orange"
+   },
+   {
+    "x": 74,
+    "y": 6,
+    "color": "orange"
+   },
+   {
+    "x": 26,
+    "y": 54,
+    "color": "orange"
+   },
+   {
+    "x": 74,
+    "y": 54,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 26,
+    "y": 14,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 26,
+    "y": 30,
+    "label": "3"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 26,
+    "y": 46,
+    "label": "4"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 74,
+    "y": 14,
+    "label": "5"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 74,
+    "y": 30,
+    "label": "6"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 74,
+    "y": 46,
+    "label": "7"
+   },
+   {
+    "id": "d1",
+    "team": "t",
+    "x": 50,
+    "y": 12,
+    "label": "D"
+   },
+   {
+    "id": "d2",
+    "team": "t",
+    "x": 50,
+    "y": 30,
+    "label": "D"
+   },
+   {
+    "id": "d3",
+    "team": "t",
+    "x": 50,
+    "y": 48,
+    "label": "D"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 90,
+    "y": 40,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 27.6,
+    "y": 14.6
+   },
+   {
+    "id": "c1",
+    "x": 92.5,
+    "y": 40.6
+   },
+   {
+    "id": "c2",
+    "x": 89,
+    "y": 43.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Vor dem Dummy anbieten",
+    "say": "Spieler fünf läuft von rechts vor den ersten Dummy und bietet sich an. Spieler zwei spielt ihn flach an.",
+    "moves": [
+     {
+      "who": "n5",
+      "to": [
+       41,
+       16
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       42.6,
+       16.6
+      ],
+      "type": "pass",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "Quer mitnehmen und durchspielen",
+    "say": "Spieler fünf nimmt den Ball mit dem ersten Kontakt quer am Dummy vorbei und spielt zu Spieler sechs durch. Danach läuft er zurück auf seinen Platz.",
+    "moves": [
+     {
+      "who": "n5",
+      "to": [
+       59,
+       22
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       72.4,
+       30.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n5",
+      "to": [
+       74,
+       14
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Jetzt in die andere Richtung",
+    "say": "Jetzt läuft Spieler drei von links vor den mittleren Dummy, und Spieler sechs spielt ihn an.",
+    "moves": [
+     {
+      "who": "n3",
+      "to": [
+       44,
+       39
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n3",
+      "to": [
+       59,
+       34
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       57.4,
+       34.6
+      ],
+      "type": "pass",
+      "delay": 0.6
+     }
+    ]
+   },
+   {
+    "label": "Quer mitnehmen und durchspielen",
+    "say": "Spieler drei nimmt den Ball quer am Dummy vorbei mit, spielt zu Spieler vier durch und läuft zurück.",
+    "moves": [
+     {
+      "who": "n3",
+      "to": [
+       41,
+       40
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       27.6,
+       46.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n3",
+      "to": [
+       26,
+       30
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 26,
+    "y1": 58.6,
+    "x2": 74,
+    "y2": 58.6,
+    "text": "23 m"
+   },
+   {
+    "x1": 82,
+    "y1": 6,
+    "x2": 82,
+    "y2": 54,
+    "text": "23 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Der Ball wird hinter dem Dummy angenommen.",
+   "title": "Annahme hinter dem Dummy",
+   "text": "Jetzt läuft der Spieler hinter den Dummy, also auf die Seite, die vom Passgeber weg zeigt. Er nimmt den Ball kontrolliert um den Dummy herum mit und spielt durch die Lücke zwischen zwei Dummys zur Seite des Passgebers zurück. So übt er Übersicht, Ballkontrolle und schnelles Aufdrehen unter Druck.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 26,
+      "y": 14,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 26,
+      "y": 30,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 26,
+      "y": 46,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 74,
+      "y": 14,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 74,
+      "y": 30,
+      "label": "6"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 74,
+      "y": 46,
+      "label": "7"
+     },
+     {
+      "id": "d1",
+      "team": "t",
+      "x": 50,
+      "y": 12,
+      "label": "D"
+     },
+     {
+      "id": "d2",
+      "team": "t",
+      "x": 50,
+      "y": 30,
+      "label": "D"
+     },
+     {
+      "id": "d3",
+      "team": "t",
+      "x": 50,
+      "y": 48,
+      "label": "D"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 90,
+      "y": 40,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 27.6,
+      "y": 30.6
+     },
+     {
+      "id": "c1",
+      "x": 92.5,
+      "y": 40.6
+     },
+     {
+      "id": "c2",
+      "x": 89,
+      "y": 43.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Hinter dem Dummy anbieten",
+      "say": "Spieler sechs läuft von rechts hinter den mittleren Dummy, gleichzeitig spielt Spieler drei an ihm vorbei.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         59,
+         22
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         57.4,
+         22.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Herum und durch die Lücke",
+      "say": "Spieler sechs nimmt den Ball in einem Bogen um den Dummy herum mit und spielt durch die Lücke zu Spieler vier.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         61,
+         30
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n6",
+        "to": [
+         59,
+         37
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         27.6,
+         46.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Zurück auf den Platz",
+      "say": "Spieler sechs läuft zurück auf seinen Platz, und der Nächste bietet sich an.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         74,
+         30
+        ],
+        "type": "lauf"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Der Trainer ruft, zu welcher Seite der Ball geht.",
+   "title": "Trainer ruft die Seite",
+   "text": "Der Trainer ruft, zu welcher Seite der Ball nach der Annahme gespielt wird: durch zur anderen Seite oder zurück zur gleichen Seite. Die Spieler müssen zuhören und schnell reagieren. Ruft der Trainer nichts, entscheidet der Spieler selbst und sagt laut an, wohin er spielt.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 26,
+      "y": 14,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 26,
+      "y": 30,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 26,
+      "y": 46,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 74,
+      "y": 14,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 74,
+      "y": 30,
+      "label": "6"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 74,
+      "y": 46,
+      "label": "7"
+     },
+     {
+      "id": "d1",
+      "team": "t",
+      "x": 50,
+      "y": 12,
+      "label": "D"
+     },
+     {
+      "id": "d2",
+      "team": "t",
+      "x": 50,
+      "y": 30,
+      "label": "D"
+     },
+     {
+      "id": "d3",
+      "team": "t",
+      "x": 50,
+      "y": 48,
+      "label": "D"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 90,
+      "y": 40,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 72.4,
+      "y": 30.6
+     },
+     {
+      "id": "c1",
+      "x": 92.5,
+      "y": 40.6
+     },
+     {
+      "id": "c2",
+      "x": 89,
+      "y": 43.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Anbieten auf Zuruf",
+      "say": "Spieler drei läuft von links vor den mittleren Dummy, und Spieler sechs spielt ihn an. Der Trainer ruft: Rechts!",
+      "moves": [
+       {
+        "who": "n3",
+        "to": [
+         44,
+         39
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n3",
+        "to": [
+         59,
+         34
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         57.4,
+         34.6
+        ],
+        "type": "pass",
+        "delay": 0.6
+       }
+      ]
+     },
+     {
+      "label": "Zurück zur gleichen Seite",
+      "say": "Spieler drei dreht und spielt nicht durch, sondern zurück zu Spieler sieben auf der rechten Seite. Dann läuft er zurück auf seinen Platz.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         72.4,
+         46.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n3",
+        "to": [
+         44,
+         39
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n3",
+        "to": [
+         26,
+         30
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

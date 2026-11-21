@@ -1,0 +1,780 @@
+{
+ "title": "Tic-Tac-Toe ins Spiel",
+ "code": "UE-108",
+ "kind": "Spielform",
+ "focuses": [
+  "Schnelligkeit",
+  "Zusammenspiel",
+  "Erwärmung"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "duration_minutes": 15,
+ "players_min": 10,
+ "players_max": 12,
+ "field_size": "18 x 23 m",
+ "description": "Zwei Teams spielen zuerst Tic-Tac-Toe: Abwechselnd rennt ein Spieler los und legt ein Hütchen in das Raster. Wer zuerst drei in einer Reihe hat, gewinnt und darf im Spielfeld mit zwei gegen eins und Ball beginnen. Nach jedem Angriff kommt in jedem Team ein Spieler dazu, bis zum Schluss fünf gegen fünf gespielt wird.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 23 Metern. Oben ein Raster mit drei mal drei Feldern, unten das Spielfeld mit einem Minitor links und rechts und je einer Zone davor.",
+  "Verteilen: Zwei Teams mit je fünf Spielern, Team Neon links, Team Rot rechts. Jeder Spieler hat ein Hütchen in seiner Teamfarbe. Der Trainer steht mit Bällen an der Seite.",
+  "Ablauf: Abwechselnd sprintet je ein Spieler beider Teams los und legt sein Hütchen ins Raster. Das Team mit drei in einer Reihe beginnt unten mit zwei gegen eins und bekommt den Ball. Ein Tor zählt nur aus der Zone, und Verteidiger dürfen nicht in die Zone zurückweichen.",
+  "Steigern: Nach jedem Angriff kommt in jedem Team ein Spieler dazu, also drei gegen zwei, vier gegen drei, fünf gegen vier und zum Schluss fünf gegen fünf."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Schnell denken: Wo muss mein Hütchen hin, damit wir gewinnen",
+  "Kräftig beschleunigen und vor dem Raster rechtzeitig abbremsen",
+  "Die Überzahl nutzen, um die Abwehr auszuspielen",
+  "Immer wissen, wie viele Spieler im Feld sind, und danach angreifen oder verteidigen"
+ ],
+ "materials": [
+  "Raster aus Hütchen oder Stangen",
+  "Je 5 Hütchen in zwei Farben",
+  "2 Minitore",
+  "Hütchen für die Zonen",
+  "Mehrere Bälle beim Trainer",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Tic-Tac-Toe ins Spiel. Wer zuerst drei in einer Reihe hat, startet mit Überzahl und Ball.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 14,
+    "y": 6,
+    "w": 72,
+    "h": 48
+   },
+   {
+    "type": "line",
+    "x1": 14,
+    "y1": 26,
+    "x2": 86,
+    "y2": 26,
+    "dashed": true
+   },
+   {
+    "type": "rect",
+    "x": 41,
+    "y": 8,
+    "w": 18,
+    "h": 16
+   },
+   {
+    "type": "line",
+    "x1": 47,
+    "y1": 8,
+    "x2": 47,
+    "y2": 24,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 53,
+    "y1": 8,
+    "x2": 53,
+    "y2": 24,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 41,
+    "y1": 13.3,
+    "x2": 59,
+    "y2": 13.3,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 41,
+    "y1": 18.7,
+    "x2": 59,
+    "y2": 18.7,
+    "dashed": false
+   },
+   {
+    "type": "zone",
+    "x": 14,
+    "y": 26,
+    "w": 10,
+    "h": 28
+   },
+   {
+    "type": "zone",
+    "x": 76,
+    "y": 26,
+    "w": 10,
+    "h": 28
+   }
+  ],
+  "goals": [
+   {
+    "x": 14,
+    "y": 40,
+    "side": "left"
+   },
+   {
+    "x": 86,
+    "y": 40,
+    "side": "right"
+   }
+  ],
+  "cones": [
+   {
+    "x": 44,
+    "y": 10.7,
+    "color": "neon",
+    "id": "k1"
+   },
+   {
+    "x": 50,
+    "y": 16,
+    "color": "neon",
+    "id": "k2"
+   },
+   {
+    "x": 56,
+    "y": 10.7,
+    "color": "orange",
+    "id": "k3"
+   },
+   {
+    "x": 56,
+    "y": 16,
+    "color": "orange",
+    "id": "k4"
+   },
+   {
+    "x": 34,
+    "y": 17,
+    "color": "neon",
+    "id": "k5"
+   },
+   {
+    "x": 68,
+    "y": 17,
+    "color": "orange",
+    "id": "k6"
+   }
+  ],
+  "players": [
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 18,
+    "y": 12,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 27,
+    "y": 12,
+    "label": "3"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 36,
+    "y": 12,
+    "label": "4"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 64,
+    "y": 12,
+    "label": "7"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 73,
+    "y": 12,
+    "label": "8"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 82,
+    "y": 12,
+    "label": "9"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 6,
+    "y": 50,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "c1",
+    "x": 8.5,
+    "y": 50.6
+   },
+   {
+    "id": "c2",
+    "x": 5,
+    "y": 53.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Wettlauf ums Raster",
+    "say": "Gleichzeitig sprinten Neon vier und Rot sieben los. Beide brauchen das Feld unten rechts. Neon vier ist schneller, legt sein Hütchen hin und hat drei in einer Reihe.",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       49,
+       24
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r7",
+      "to": [
+       63,
+       23
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "k5",
+      "to": [
+       56,
+       21.3
+      ],
+      "type": "pass",
+      "delay": 0.6
+     }
+    ]
+   },
+   {
+    "label": "Zwei gegen eins mit Ball",
+    "say": "Team Neon hat gewonnen. Gleichzeitig laufen Neon zwei und Neon drei ins Spielfeld, Rot acht verteidigt allein. Der Trainer spielt Neon zwei den Ball zu.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       40,
+       34
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n3",
+      "to": [
+       40,
+       50
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r8",
+      "to": [
+       66,
+       40
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "c1",
+      "to": [
+       41.6,
+       34.6
+      ],
+      "type": "pass",
+      "delay": 0.6
+     }
+    ]
+   },
+   {
+    "label": "Überzahl ausspielen",
+    "say": "Neon zwei dribbelt an, Rot acht kommt heraus. Neon zwei spielt zu Neon drei, der in die Zone dribbelt und ins Minitor schießt. Das gibt einen Punkt für Team Neon.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       50,
+       34
+      ],
+      "type": "dribbling",
+      "ball": "c1"
+     },
+     {
+      "who": "n3",
+      "to": [
+       54,
+       48
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r8",
+      "to": [
+       60,
+       36
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "c1",
+      "to": [
+       55.6,
+       48.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n3",
+      "to": [
+       79,
+       46
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "c1"
+     },
+     {
+      "who": "c1",
+      "to": [
+       85.5,
+       41
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Ein Spieler mehr",
+    "say": "Jetzt kommt in jedem Team ein Spieler dazu: Gleichzeitig laufen Neon vier und Rot sieben ins Spielfeld. Der Trainer spielt den nächsten Ball zu Neon vier, und es geht drei gegen zwei weiter.",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       40,
+       44
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r7",
+      "to": [
+       70,
+       28
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "c2",
+      "to": [
+       41.6,
+       44.6
+      ],
+      "type": "pass",
+      "delay": 0.6
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 14,
+    "y1": 58.6,
+    "x2": 86,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 94,
+    "y1": 6,
+    "x2": 94,
+    "y2": 54,
+    "text": "23 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Die Überzahl richtig nutzen.",
+   "title": "Überzahl nutzen",
+   "text": "Bei zwei gegen eins dribbelt der Ballführende auf den Verteidiger zu, bis dieser herauskommt. Erst dann kommt der Pass zum freien Mitspieler. Der Mitspieler hält Abstand und Breite, damit der Verteidiger nicht beide decken kann. Weil nur aus der Zone getroffen werden darf, muss der Angriff schnell und genau sein.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 40,
+      "y": 34,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 40,
+      "y": 50,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 49,
+      "y": 24,
+      "label": "4"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 63,
+      "y": 23,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 66,
+      "y": 40,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 82,
+      "y": 12,
+      "label": "9"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 6,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "g",
+      "x": 41.6,
+      "y": 34.6
+     },
+     {
+      "id": "c1",
+      "x": 8.5,
+      "y": 50.6
+     },
+     {
+      "id": "c2",
+      "x": 5,
+      "y": 53.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Verteidiger anlocken",
+      "say": "Neon zwei dribbelt direkt auf Rot acht zu. Gleichzeitig bleibt Neon drei breit und läuft mit nach vorn.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         50,
+         34
+        ],
+        "type": "dribbling",
+        "ball": "g"
+       },
+       {
+        "who": "n3",
+        "to": [
+         54,
+         48
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r8",
+        "to": [
+         60,
+         36
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Pass in die Lücke",
+      "say": "Rot acht kommt heraus, und Neon zwei spielt sofort zu Neon drei. Der dribbelt in die Zone und schießt ins Minitor. Das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "g",
+        "to": [
+         55.6,
+         48.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n3",
+        "to": [
+         79,
+         46
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "g"
+       },
+       {
+        "who": "g",
+        "to": [
+         85.5,
+         41
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "cones": [
+     {
+      "x": 44,
+      "y": 10.7,
+      "color": "neon",
+      "id": "k1"
+     },
+     {
+      "x": 50,
+      "y": 16,
+      "color": "neon",
+      "id": "k2"
+     },
+     {
+      "x": 56,
+      "y": 10.7,
+      "color": "orange",
+      "id": "k3"
+     },
+     {
+      "x": 56,
+      "y": 16,
+      "color": "orange",
+      "id": "k4"
+     },
+     {
+      "x": 56,
+      "y": 21.3,
+      "color": "neon",
+      "id": "k5"
+     },
+     {
+      "x": 68,
+      "y": 17,
+      "color": "orange",
+      "id": "k6"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Zum Schluss spielen beide Teams fünf gegen fünf.",
+   "title": "Fünf gegen fünf zum Schluss",
+   "text": "Nach jedem Angriff kam ein Spieler pro Team dazu, jetzt sind alle im Spielfeld. Gespielt wird fünf gegen fünf, und weiterhin zählt ein Tor nur aus der Zone. Jetzt geht es um Zusammenspiel im ganzen Team, gute Entscheidungen und schnelles Umschalten zwischen Angriff und Abwehr.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 24,
+      "y": 32,
+      "label": "2"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 33,
+      "y": 32,
+      "label": "8"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 42,
+      "y": 32,
+      "label": "4"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 51,
+      "y": 32,
+      "label": "10"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 60,
+      "y": 32,
+      "label": "6"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 28,
+      "y": 48,
+      "label": "3"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 37,
+      "y": 48,
+      "label": "7"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 46,
+      "y": 48,
+      "label": "5"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 55,
+      "y": 48,
+      "label": "9"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 64,
+      "y": 48,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 6,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 61.6,
+      "y": 32.6
+     },
+     {
+      "id": "c1",
+      "x": 8.5,
+      "y": 50.6
+     },
+     {
+      "id": "c2",
+      "x": 5,
+      "y": 53.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Durchbruch auf rechts",
+      "say": "Neon sechs dribbelt mit Tempo nach rechts in die Zone. Gleichzeitig läuft Rot elf hinterher, darf aber nicht in die Zone.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         80,
+         34
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "r11",
+        "to": [
+         70,
+         42
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Abschluss aus der Zone",
+      "say": "Neon sechs schießt aus der Zone ins Minitor. Das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         85.5,
+         39
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ],
+    "cones": [
+     {
+      "x": 44,
+      "y": 10.7,
+      "color": "neon",
+      "id": "k1"
+     },
+     {
+      "x": 50,
+      "y": 16,
+      "color": "neon",
+      "id": "k2"
+     },
+     {
+      "x": 56,
+      "y": 10.7,
+      "color": "orange",
+      "id": "k3"
+     },
+     {
+      "x": 56,
+      "y": 16,
+      "color": "orange",
+      "id": "k4"
+     },
+     {
+      "x": 56,
+      "y": 21.3,
+      "color": "neon",
+      "id": "k5"
+     },
+     {
+      "x": 44,
+      "y": 21.3,
+      "color": "orange",
+      "id": "k6"
+     }
+    ]
+   }
+  }
+ ]
+}

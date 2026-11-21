@@ -1,0 +1,757 @@
+{
+ "title": "Hürden, Täuschung, Sprint",
+ "code": "UE-107",
+ "kind": "Übungsform",
+ "focuses": [
+  "Schnelligkeit",
+  "1 gegen 1",
+  "Erwärmung"
+ ],
+ "age_groups": [
+  "F-Jugend",
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend"
+ ],
+ "duration_minutes": 10,
+ "players_min": 6,
+ "players_max": 12,
+ "field_size": "14 x 18 m",
+ "description": "Ein Aufwärmspiel für schnelle Beine. Ein Angreifer von Team Neon und ein Verteidiger von Team Rot springen gleichzeitig beidbeinig über kleine Hürden und stehen sich in der Mitte gegenüber. Der Angreifer täuscht an und sprintet in eine der beiden Endzonen, der Verteidiger versucht, ihn vorher zu fangen.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 14 mal 18 Metern. In der Mitte eine Hütchenlinie, oben und unten je drei kleine Hürden in einer Reihe, links und rechts je eine Endzone.",
+  "Verteilen: Team Neon greift an und wartet unten, Team Rot verteidigt und wartet oben. Der Trainer steht mit Bällen an der Seite.",
+  "Ablauf: Gleichzeitig springen ein Angreifer und ein Verteidiger über die Hürden. In der Mitte täuscht der Angreifer an und sprintet in eine Endzone. Berührt der Verteidiger ihn vorher, hat er ihn gefangen.",
+  "Wechsel: Nach jedem Sprint tauschen die beiden die Rollen, damit jeder angreift und verteidigt."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Kraftvoll und sauber beidbeinig über die Hürden springen",
+  "Mit Finten, schnellen Bewegungen und Schulter fallen lassen täuschen",
+  "Mit Ball dieselben Bewegungen nutzen",
+  "Als Verteidiger die Lage schnell erkennen und den Angreifer fangen"
+ ],
+ "materials": [
+  "6 kleine Hürden",
+  "8 gelbe Hütchen",
+  "Bälle beim Trainer",
+  "2 Minitore für die zweite Steigerung",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Hürden, Täuschung, Sprint. Über die Hürden springen, in der Mitte täuschen und in die Endzone sprinten.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 22,
+    "y": 6,
+    "w": 56,
+    "h": 48
+   },
+   {
+    "type": "zone",
+    "x": 22,
+    "y": 24,
+    "w": 6,
+    "h": 12
+   },
+   {
+    "type": "zone",
+    "x": 72,
+    "y": 24,
+    "w": 6,
+    "h": 12
+   },
+   {
+    "type": "line",
+    "x1": 47.5,
+    "y1": 13,
+    "x2": 52.5,
+    "y2": 13,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 47.5,
+    "y1": 17,
+    "x2": 52.5,
+    "y2": 17,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 47.5,
+    "y1": 21,
+    "x2": 52.5,
+    "y2": 21,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 47.5,
+    "y1": 39,
+    "x2": 52.5,
+    "y2": 39,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 47.5,
+    "y1": 43,
+    "x2": 52.5,
+    "y2": 43,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 47.5,
+    "y1": 47,
+    "x2": 52.5,
+    "y2": 47,
+    "dashed": false
+   }
+  ],
+  "cones": [
+   {
+    "x": 28,
+    "y": 24,
+    "color": "neon"
+   },
+   {
+    "x": 28,
+    "y": 36,
+    "color": "neon"
+   },
+   {
+    "x": 72,
+    "y": 24,
+    "color": "neon"
+   },
+   {
+    "x": 72,
+    "y": 36,
+    "color": "neon"
+   },
+   {
+    "x": 40,
+    "y": 30,
+    "color": "neon"
+   },
+   {
+    "x": 45,
+    "y": 30,
+    "color": "neon"
+   },
+   {
+    "x": 55,
+    "y": 30,
+    "color": "neon"
+   },
+   {
+    "x": 60,
+    "y": 30,
+    "color": "neon"
+   }
+  ],
+  "players": [
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 50,
+    "y": 8,
+    "label": "6"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 59,
+    "y": 8,
+    "label": "7"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 68,
+    "y": 8,
+    "label": "8"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 77,
+    "y": 8,
+    "label": "9"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 23,
+    "y": 52,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 32,
+    "y": 52,
+    "label": "3"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 41,
+    "y": 52,
+    "label": "4"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 50,
+    "y": 52,
+    "label": "5"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 90,
+    "y": 44,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "c1",
+    "x": 92.5,
+    "y": 44.6
+   },
+   {
+    "id": "c2",
+    "x": 89,
+    "y": 47.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Über die Hürden",
+    "say": "Gleichzeitig springen Neon fünf und Rot sechs beidbeinig über die Hürden und stehen sich in der Mitte gegenüber.",
+    "moves": [
+     {
+      "who": "n5",
+      "to": [
+       50,
+       44
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n5",
+      "to": [
+       46,
+       36
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r6",
+      "to": [
+       50,
+       16
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r6",
+      "to": [
+       55,
+       24
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Täuschen und sprinten",
+    "say": "Neon fünf täuscht nach links an und sprintet dann nach rechts in die Endzone. Rot sechs fällt auf die Finte herein und sprintet zu spät hinterher.",
+    "moves": [
+     {
+      "who": "n5",
+      "to": [
+       42,
+       33
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n5",
+      "to": [
+       60,
+       35
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n5",
+      "to": [
+       75,
+       30
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r6",
+      "to": [
+       47,
+       26
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "r6",
+      "to": [
+       66,
+       27
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zurück, Rollen tauschen",
+    "say": "Beide gehen zurück an ihren Start. Im nächsten Durchgang tauschen sie die Rollen.",
+    "moves": [
+     {
+      "who": "n5",
+      "to": [
+       50,
+       52
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r6",
+      "to": [
+       50,
+       8
+      ],
+      "type": "lauf"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 22,
+    "y1": 58.6,
+    "x2": 78,
+    "y2": 58.6,
+    "text": "14 m"
+   },
+   {
+    "x1": 86,
+    "y1": 6,
+    "x2": 86,
+    "y2": 54,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Der Trainer spielt dem Angreifer einen Ball zu.",
+   "title": "Mit Ball täuschen",
+   "text": "Nach den Hürden spielt der Trainer dem Angreifer einen Ball zu. Mit schnellen Richtungs- und Tempowechseln, Finten und Schulter fallen lassen bringt er den Ball in eine Endzone, ohne dass der Verteidiger ihn erreicht. Gelingt das, gibt es einen Punkt.",
+   "board": {
+    "players": [
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 50,
+      "y": 8,
+      "label": "6"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 59,
+      "y": 8,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 68,
+      "y": 8,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 77,
+      "y": 8,
+      "label": "9"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 23,
+      "y": 52,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 32,
+      "y": 52,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 41,
+      "y": 52,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 50,
+      "y": 52,
+      "label": "5"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 90,
+      "y": 44,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "c1",
+      "x": 92.5,
+      "y": 44.6
+     },
+     {
+      "id": "c2",
+      "x": 89,
+      "y": 47.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Über die Hürden",
+      "say": "Gleichzeitig springen Neon fünf und Rot sechs über die Hürden.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         50,
+         44
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n5",
+        "to": [
+         46,
+         36
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r6",
+        "to": [
+         50,
+         16
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r6",
+        "to": [
+         55,
+         24
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Pass vom Trainer",
+      "say": "Der Trainer spielt Neon fünf flach an.",
+      "moves": [
+       {
+        "who": "c1",
+        "to": [
+         47.6,
+         36.6
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Finte und in die Endzone",
+      "say": "Neon fünf täuscht nach rechts an und dribbelt nach links in die Endzone. Das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         52,
+         38
+        ],
+        "type": "dribbling",
+        "ball": "c1"
+       },
+       {
+        "who": "n5",
+        "to": [
+         25,
+         30
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "c1"
+       },
+       {
+        "who": "r6",
+        "to": [
+         53,
+         27
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "r6",
+        "to": [
+         34,
+         27
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: In den Endzonen stehen Minitore.",
+   "title": "Abschluss ins Minitor",
+   "text": "Links und rechts steht hinter jeder Endzone ein Minitor. Wer mit Ball in die Endzone kommt, schließt sofort ins Minitor ab. Jeder Treffer gibt einen Punkt. Der Angreifer soll schnell entscheiden und trotz Tempo ruhig und genau schießen.",
+   "board": {
+    "players": [
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 50,
+      "y": 8,
+      "label": "6"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 59,
+      "y": 8,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 68,
+      "y": 8,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 77,
+      "y": 8,
+      "label": "9"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 23,
+      "y": 52,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 32,
+      "y": 52,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 41,
+      "y": 52,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 50,
+      "y": 52,
+      "label": "5"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 90,
+      "y": 44,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "c1",
+      "x": 92.5,
+      "y": 44.6
+     },
+     {
+      "id": "c2",
+      "x": 89,
+      "y": 47.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Hürden und Pass",
+      "say": "Gleichzeitig springen beide über die Hürden, dann spielt der Trainer Neon fünf an.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         50,
+         44
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n5",
+        "to": [
+         46,
+         36
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r6",
+        "to": [
+         50,
+         16
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r6",
+        "to": [
+         55,
+         24
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "c1",
+        "to": [
+         47.6,
+         36.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Durchbrechen und abschließen",
+      "say": "Neon fünf täuscht nach links an, dribbelt nach rechts in die Endzone und schießt ins Minitor. Das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         44,
+         34
+        ],
+        "type": "dribbling",
+        "ball": "c1"
+       },
+       {
+        "who": "n5",
+        "to": [
+         73,
+         33
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "c1"
+       },
+       {
+        "who": "c1",
+        "to": [
+         77.5,
+         30
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "r6",
+        "to": [
+         48,
+         26
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "r6",
+        "to": [
+         64,
+         27
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "goals": [
+     {
+      "x": 22,
+      "y": 30,
+      "side": "left"
+     },
+     {
+      "x": 78,
+      "y": 30,
+      "side": "right"
+     }
+    ]
+   }
+  }
+ ]
+}
