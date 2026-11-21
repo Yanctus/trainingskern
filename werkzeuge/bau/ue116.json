@@ -1,0 +1,667 @@
+{
+ "title": "Abschluss, dann sofort zurück",
+ "code": "UE-116",
+ "kind": "Übungsform",
+ "focuses": [
+  "Torschuss",
+  "Umschalten",
+  "1 gegen 1"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "duration_minutes": 15,
+ "players_min": 9,
+ "players_max": 12,
+ "field_size": "23 x 23 m",
+ "description": "In einem Sechseck mit zwei Toren und Torhütern greift ein Spieler mit Ball an und schließt ab, ein Verteidiger setzt ihn unter Druck. Sofort danach startet von der anderen Seite der nächste Angreifer mit Ball, und wer gerade abgeschlossen hat, muss zurücksprinten und verteidigen. So wechseln Angriff und Abwehr ohne Pause.",
+ "organisation": [
+  "Aufbauen: Ein Sechseck von etwa 23 mal 23 Metern mit einem Tor links und rechts, in jedem Tor ein Torhüter. In der Mitte stehen zwei Dummys.",
+  "Verteilen: Team Neon wartet mit Bällen oben links, Team Rot mit Bällen unten rechts. Der Trainer steht mit weiteren Bällen an der Seite.",
+  "Ablauf: Auf Zuruf dribbelt ein Spieler von Team Neon los und schließt aufs rechte Tor ab, ein Spieler von Team Rot verteidigt. Danach startet sofort ein Spieler von Team Rot mit Ball aufs linke Tor, und der Neon-Spieler sprintet zurück und verteidigt.",
+  "Wechsel: So geht es im Wechsel weiter. Jedes Tor gibt einen Punkt für das Team."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Schnell vom Angriff auf die Abwehr umschalten",
+  "Mit Tempo angreifen und mit voller Einstellung verteidigen",
+  "Als Verteidiger den Angreifer vom Tor weglenken",
+  "Vor dem Tor ruhig bleiben und genau abschließen"
+ ],
+ "materials": [
+  "2 Tore",
+  "2 Dummys",
+  "Hütchen für das Sechseck",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Abschluss, dann sofort zurück. Wer gerade aufs Tor geschossen hat, muss sofort zurück und verteidigen.",
+ "board": {
+  "lines": [
+   {
+    "type": "line",
+    "x1": 14,
+    "y1": 19,
+    "x2": 14,
+    "y2": 41,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 14,
+    "y1": 41,
+    "x2": 50,
+    "y2": 52,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 50,
+    "y1": 52,
+    "x2": 86,
+    "y2": 41,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 86,
+    "y1": 41,
+    "x2": 86,
+    "y2": 19,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 86,
+    "y1": 19,
+    "x2": 50,
+    "y2": 8,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 50,
+    "y1": 8,
+    "x2": 14,
+    "y2": 19,
+    "dashed": false
+   }
+  ],
+  "goals": [
+   {
+    "x": 14,
+    "y": 30,
+    "side": "left"
+   },
+   {
+    "x": 86,
+    "y": 30,
+    "side": "right"
+   }
+  ],
+  "players": [
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 26,
+    "y": 9,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 17,
+    "y": 10,
+    "label": "3"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 74,
+    "y": 51,
+    "label": "6"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 83,
+    "y": 50,
+    "label": "7"
+   },
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 16,
+    "y": 30,
+    "label": "TW"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 84,
+    "y": 30,
+    "label": "TW"
+   },
+   {
+    "id": "d1",
+    "team": "t",
+    "x": 50,
+    "y": 22,
+    "label": "D"
+   },
+   {
+    "id": "d2",
+    "team": "t",
+    "x": 50,
+    "y": 38,
+    "label": "D"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 25,
+    "y": 50,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b2",
+    "x": 27.6,
+    "y": 9.6
+   },
+   {
+    "id": "b7",
+    "x": 84.6,
+    "y": 50.6
+   },
+   {
+    "id": "c1",
+    "x": 27.5,
+    "y": 50.6
+   },
+   {
+    "id": "c2",
+    "x": 24,
+    "y": 53.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Neon greift an",
+    "say": "Neon zwei dribbelt mit Tempo los. Gleichzeitig kommt Rot sechs von der anderen Seite und setzt ihn unter Druck. Neon zwei schießt ins rechte Tor, das gibt einen Punkt für Team Neon.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       38,
+       26
+      ],
+      "type": "dribbling",
+      "ball": "b2"
+     },
+     {
+      "who": "n2",
+      "to": [
+       62,
+       34
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "r6",
+      "to": [
+       72,
+       42
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b2",
+      "to": [
+       85.5,
+       35
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Umschalten",
+    "say": "Sofort startet Rot sieben mit Ball aufs linke Tor. Gleichzeitig sprintet Neon zwei zurück und verteidigt.",
+    "moves": [
+     {
+      "who": "r7",
+      "to": [
+       66,
+       26
+      ],
+      "type": "dribbling",
+      "ball": "b7"
+     },
+     {
+      "who": "r7",
+      "to": [
+       40,
+       26
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b7"
+     },
+     {
+      "who": "n2",
+      "to": [
+       46,
+       31
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Abschluss von Rot",
+    "say": "Rot sieben schließt trotz Druck ab und trifft ins linke Tor. Das gibt einen Punkt für Team Rot.",
+    "moves": [
+     {
+      "who": "b7",
+      "to": [
+       14.5,
+       25
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n2",
+      "to": [
+       36,
+       30
+      ],
+      "type": "lauf"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 14,
+    "y1": 58.6,
+    "x2": 86,
+    "y2": 58.6,
+    "text": "23 m"
+   },
+   {
+    "x1": 94,
+    "y1": 8,
+    "x2": 94,
+    "y2": 52,
+    "text": "23 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Nach dem Schuss nicht stehen bleiben.",
+   "title": "Nicht das Tor bewundern",
+   "text": "Wer nach dem Abschluss stehen bleibt und dem Ball hinterherschaut, lässt dem nächsten Angreifer freie Bahn. Deshalb gilt: Ball weg, sofort umdrehen und zurücksprinten. So bleibt das Spiel schnell und jeder bleibt wach.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 62,
+      "y": 34,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 17,
+      "y": 10,
+      "label": "3"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 72,
+      "y": 44,
+      "label": "6"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 83,
+      "y": 50,
+      "label": "7"
+     },
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 16,
+      "y": 30,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 84,
+      "y": 30,
+      "label": "TW"
+     },
+     {
+      "id": "d1",
+      "team": "t",
+      "x": 50,
+      "y": 22,
+      "label": "D"
+     },
+     {
+      "id": "d2",
+      "team": "t",
+      "x": 50,
+      "y": 38,
+      "label": "D"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 25,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "g",
+      "x": 63.6,
+      "y": 34.6
+     },
+     {
+      "id": "b7",
+      "x": 84.6,
+      "y": 50.6
+     },
+     {
+      "id": "c1",
+      "x": 27.5,
+      "y": 50.6
+     },
+     {
+      "id": "c2",
+      "x": 24,
+      "y": 53.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Schießen und schauen",
+      "say": "Neon zwei schießt aufs Tor und bleibt stehen, um dem Ball hinterherzuschauen. Gleichzeitig startet Rot sieben schon mit Ball.",
+      "moves": [
+       {
+        "who": "g",
+        "to": [
+         85.5,
+         35
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r7",
+        "to": [
+         66,
+         26
+        ],
+        "type": "dribbling",
+        "delay": 0.3,
+        "ball": "b7"
+       }
+      ]
+     },
+     {
+      "label": "Freie Bahn",
+      "say": "Weil Neon zwei nicht zurückläuft, dribbelt Rot sieben ohne Gegner bis vors Tor und trifft. So darf es nicht laufen: Nach dem Schuss sofort zurücksprinten.",
+      "moves": [
+       {
+        "who": "r7",
+        "to": [
+         30,
+         26
+        ],
+        "type": "dribbling",
+        "ball": "b7"
+       },
+       {
+        "who": "b7",
+        "to": [
+         14.5,
+         25
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Zwei gegen eins.",
+   "title": "Zwei gegen eins",
+   "text": "Jetzt greifen zwei Spieler gegen einen Verteidiger an. Sie kombinieren schnell und nutzen die Überzahl. Nach dem Abschluss muss einer der beiden zurück. Der Verteidiger von eben greift sofort mit dem nächsten Spieler seines Teams im zwei gegen eins an.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 26,
+      "y": 9,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 17,
+      "y": 10,
+      "label": "3"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 74,
+      "y": 51,
+      "label": "6"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 83,
+      "y": 50,
+      "label": "7"
+     },
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 16,
+      "y": 30,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 84,
+      "y": 30,
+      "label": "TW"
+     },
+     {
+      "id": "d1",
+      "team": "t",
+      "x": 50,
+      "y": 22,
+      "label": "D"
+     },
+     {
+      "id": "d2",
+      "team": "t",
+      "x": 50,
+      "y": 38,
+      "label": "D"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 25,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b2",
+      "x": 27.6,
+      "y": 9.6
+     },
+     {
+      "id": "b7",
+      "x": 84.6,
+      "y": 50.6
+     },
+     {
+      "id": "c1",
+      "x": 27.5,
+      "y": 50.6
+     },
+     {
+      "id": "c2",
+      "x": 24,
+      "y": 53.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zu zweit los",
+      "say": "Gleichzeitig starten Neon zwei mit Ball und Neon drei. Rot sechs kommt von der anderen Seite und verteidigt.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         40,
+         24
+        ],
+        "type": "dribbling",
+        "ball": "b2"
+       },
+       {
+        "who": "n2",
+        "to": [
+         56,
+         30
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b2"
+       },
+       {
+        "who": "n3",
+        "to": [
+         34,
+         42
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n3",
+        "to": [
+         60,
+         46
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r6",
+        "to": [
+         64,
+         37
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Querpass und Abschluss",
+      "say": "Rot sechs greift Neon zwei an. Neon zwei spielt quer zu Neon drei, der direkt ins Tor schießt. Das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         61.6,
+         46.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b2",
+        "to": [
+         85.5,
+         34
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Zwei gegen eins zurück",
+      "say": "Sofort starten Rot sieben mit Ball und Rot sechs aufs linke Tor. Gleichzeitig sprintet Neon zwei zurück und verteidigt allein.",
+      "moves": [
+       {
+        "who": "r7",
+        "to": [
+         66,
+         22
+        ],
+        "type": "dribbling",
+        "ball": "b7"
+       },
+       {
+        "who": "r6",
+        "to": [
+         46,
+         48
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n2",
+        "to": [
+         40,
+         30
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

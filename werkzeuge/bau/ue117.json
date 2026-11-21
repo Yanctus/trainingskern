@@ -1,0 +1,690 @@
+{
+ "title": "Schnelle Füße, schnelle Reaktion",
+ "code": "UE-117",
+ "kind": "Übungsform",
+ "focuses": [
+  "Schnelligkeit",
+  "Koordination",
+  "Erwärmung"
+ ],
+ "age_groups": [
+  "F-Jugend",
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend"
+ ],
+ "duration_minutes": 10,
+ "players_min": 6,
+ "players_max": 10,
+ "field_size": "23 x 18 m",
+ "description": "Zwei Teams laufen nebeneinander durch je eine Bahn: schnelle Füße durch die Ringe, dann ruft der Trainer eine Farbe, und die Spieler sprinten um das passende Hütchen. Danach geht es im Slalom durch die Stangen und im Sprint ins Ziel. So werden Füße, Reaktion und Tempo aufgewärmt.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 23 mal 18 Metern mit zwei Bahnen. In jeder Bahn drei Ringe, daneben ein oranges und ein gelbes Hütchen, dann vier Slalomstangen.",
+  "Verteilen: Zwei Teams mit je vier Spielern, Team Rot an der oberen Bahn, Team Neon an der unteren. Der Trainer steht zwischen den Bahnen.",
+  "Ablauf: Gleichzeitig läuft aus jedem Team ein Spieler mit schnellen Füßen durch die Ringe. Danach ruft der Trainer Orange oder Gelb, und beide sprinten um das passende Hütchen, durch den Slalom und ins Ziel.",
+  "Wechsel: Wer im Ziel ist, läuft locker zurück, und der Nächste startet. Zwischen den Läufen kurz erholen."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Saubere Technik bei den schnellen Füßen",
+  "Schnelle Richtungswechsel um die Stangen",
+  "Sofort auf den Ruf des Trainers reagieren",
+  "Zwischen den Läufen kurz erholen"
+ ],
+ "materials": [
+  "6 Ringe",
+  "2 orange und 2 gelbe Hütchen",
+  "8 Stangen"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Schnelle Füße, schnelle Reaktion. Durch die Ringe, auf Zuruf um das richtige Hütchen und im Slalom ins Ziel.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 10,
+    "y": 8,
+    "w": 80,
+    "h": 44
+   },
+   {
+    "type": "circle",
+    "x": 25,
+    "y": 16,
+    "r": 2.8
+   },
+   {
+    "type": "circle",
+    "x": 31.5,
+    "y": 16,
+    "r": 2.8
+   },
+   {
+    "type": "circle",
+    "x": 38,
+    "y": 16,
+    "r": 2.8
+   },
+   {
+    "type": "circle",
+    "x": 25,
+    "y": 44,
+    "r": 2.8
+   },
+   {
+    "type": "circle",
+    "x": 31.5,
+    "y": 44,
+    "r": 2.8
+   },
+   {
+    "type": "circle",
+    "x": 38,
+    "y": 44,
+    "r": 2.8
+   }
+  ],
+  "cones": [
+   {
+    "x": 53,
+    "y": 10,
+    "color": "orange"
+   },
+   {
+    "x": 53,
+    "y": 22,
+    "color": "neon"
+   },
+   {
+    "x": 53,
+    "y": 50,
+    "color": "orange"
+   },
+   {
+    "x": 53,
+    "y": 38,
+    "color": "neon"
+   },
+   {
+    "x": 60,
+    "y": 16,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 67,
+    "y": 16,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 74,
+    "y": 16,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 81,
+    "y": 16,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 60,
+    "y": 44,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 67,
+    "y": 44,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 74,
+    "y": 44,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 81,
+    "y": 44,
+    "color": "neon",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 14,
+    "y": 16,
+    "label": "7"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 5,
+    "y": 16,
+    "label": "8"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 14,
+    "y": 44,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 5,
+    "y": 44,
+    "label": "3"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 24,
+    "y": 30,
+    "label": "T"
+   }
+  ],
+  "balls": [],
+  "steps": [
+   {
+    "label": "Schnelle Füße",
+    "say": "Gleichzeitig laufen Neon zwei und Rot sieben mit schnellen, kleinen Schritten durch die drei Ringe.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       45,
+       44
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r7",
+      "to": [
+       45,
+       16
+      ],
+      "type": "lauf"
+     }
+    ]
+   },
+   {
+    "label": "Trainer ruft Orange",
+    "say": "Der Trainer ruft Orange. Beide sprinten sofort um das orange Hütchen herum und zurück in ihre Bahn.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       49.5,
+       54
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n2",
+      "to": [
+       57,
+       52.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       55,
+       44
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r7",
+      "to": [
+       49.5,
+       6
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r7",
+      "to": [
+       57,
+       7.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r7",
+      "to": [
+       55,
+       16
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Slalom und Sprint ins Ziel",
+    "say": "Gleichzeitig laufen beide im Slalom durch die Stangen und sprinten ins Ziel. Wer zuerst ankommt, holt einen Punkt für sein Team.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       57,
+       44
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n2",
+      "to": [
+       60,
+       48
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       67,
+       40
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       74,
+       48
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       81,
+       40
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       90,
+       44
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r7",
+      "to": [
+       57,
+       16
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r7",
+      "to": [
+       60,
+       12
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r7",
+      "to": [
+       67,
+       20
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r7",
+      "to": [
+       74,
+       12
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r7",
+      "to": [
+       81,
+       20
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r7",
+      "to": [
+       90,
+       16
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 10,
+    "y1": 58.6,
+    "x2": 90,
+    "y2": 58.6,
+    "text": "23 m"
+   },
+   {
+    "x1": 96,
+    "y1": 8,
+    "x2": 96,
+    "y2": 52,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Der Trainer ruft eine Farbe, aber zuerst geht es um das andere Hütchen.",
+   "title": "Erst das Gegenteil",
+   "text": "Jetzt wird umgedreht: Ruft der Trainer Orange, laufen die Spieler zuerst um das gelbe Hütchen und erst dann um das orange. Das verlangt schnelles Denken unter Zeitdruck.",
+   "board": {
+    "players": [
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 45,
+      "y": 16,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 5,
+      "y": 16,
+      "label": "8"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 45,
+      "y": 44,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 5,
+      "y": 44,
+      "label": "3"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 24,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [],
+    "steps": [
+     {
+      "label": "Erst das andere Hütchen",
+      "say": "Der Trainer ruft Orange. Gleichzeitig sprinten beide zuerst um das gelbe Hütchen herum.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         49.5,
+         34
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n2",
+        "to": [
+         57,
+         35.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n2",
+        "to": [
+         56,
+         42
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r7",
+        "to": [
+         49.5,
+         26
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r7",
+        "to": [
+         57,
+         24.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r7",
+        "to": [
+         56,
+         18
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Dann das gerufene",
+      "say": "Jetzt laufen beide um das orange Hütchen herum, bevor es in den Slalom geht.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         57.5,
+         51
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n2",
+        "to": [
+         53,
+         54
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n2",
+        "to": [
+         49,
+         51
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n2",
+        "to": [
+         55,
+         44
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r7",
+        "to": [
+         57.5,
+         9
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r7",
+        "to": [
+         53,
+         6
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r7",
+        "to": [
+         49,
+         9
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r7",
+        "to": [
+         55,
+         16
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Zum Schluss ein diagonaler Sprint.",
+   "title": "Diagonal und abklatschen",
+   "text": "Nach dem Lauf sprinten die Spieler diagonal über das Feld zum Endhütchen der anderen Bahn und dann zurück zum eigenen Team, wo sie den Nächsten abklatschen. Das macht das Aufwärmen noch intensiver.",
+   "board": {
+    "players": [
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 14,
+      "y": 16,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 5,
+      "y": 16,
+      "label": "8"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 14,
+      "y": 44,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 5,
+      "y": 44,
+      "label": "3"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 24,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [],
+    "steps": [
+     {
+      "label": "Diagonal sprinten",
+      "say": "Neon zwei sprintet diagonal zum Ende der oberen Bahn. Kurz danach sprintet Rot sieben diagonal zum Ende der unteren Bahn.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         92,
+         16
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r7",
+        "to": [
+         92,
+         44
+        ],
+        "type": "lauf",
+        "delay": 0.5
+       }
+      ]
+     },
+     {
+      "label": "Zurück und abklatschen",
+      "say": "Beide sprinten auf demselben Weg zurück zu ihrem Team und klatschen den Nächsten ab.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         16,
+         44
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r7",
+        "to": [
+         16,
+         16
+        ],
+        "type": "lauf",
+        "delay": 0.5
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
