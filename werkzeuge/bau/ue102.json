@@ -1,0 +1,597 @@
+{
+ "title": "Überzahl vor dem Tor",
+ "code": "UE-102",
+ "kind": "Übungsform",
+ "focuses": [
+  "Torschuss",
+  "Zusammenspiel",
+  "Umschalten"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "duration_minutes": 15,
+ "players_min": 7,
+ "players_max": 13,
+ "field_size": "23 x 23 m",
+ "description": "Drei Angriffe hintereinander, jedes Mal mit einem Spieler mehr. Zuerst bekommt der Stürmer einen Steilpass und schließt eins gegen eins ab. Dann spielt ein Verteidiger einen Flügelspieler an und läuft zurück zum Verteidigen, es steht zwei gegen eins. Zum Schluss dasselbe von der anderen Seite, jetzt drei gegen zwei.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 23 mal 23 Metern mit Tor, Torwart und Strafraum. In der Mitte ein Dummy.",
+  "Verteilen: Zwei Mannschaften mit je drei Spielern an sechs Stationen: Angreifer in der Mitte und auf beiden Flügeln, Passgeber und Verteidiger gegenüber.",
+  "Ablauf: Erster Angriff: Steilpass auf den Stürmer, eins gegen eins gegen den Torwart. Zweiter Angriff: Ein Verteidiger spielt einen Flügelspieler an und läuft zurück, zwei gegen eins. Dritter Angriff: dasselbe von der anderen Seite, drei gegen zwei. Jedes Tor gibt einen Punkt.",
+  "Wechsel: Nach jeder Runde tauschen die Mannschaften die Stationen."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "In der Überzahl entschlossen und schnell angreifen",
+  "Vor dem Tor ruhig bleiben und genau abschließen",
+  "Als Verteidiger gut stehen und miteinander sprechen",
+  "Sich ohne Ball frei laufen und genau passen"
+ ],
+ "materials": [
+  "1 Tor",
+  "1 Dummy",
+  "Hütchen für Feld und Stationen",
+  "Bälle an den Stationen"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Überzahl vor dem Tor. Erst eins gegen eins, dann zwei gegen eins, dann drei gegen zwei.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 24,
+    "y": 4,
+    "w": 52,
+    "h": 52
+   },
+   {
+    "type": "rect",
+    "x": 66.6,
+    "y": 16.8,
+    "w": 9.4,
+    "h": 26.4
+   },
+   {
+    "type": "line",
+    "x1": 50,
+    "y1": 4,
+    "x2": 50,
+    "y2": 56,
+    "dashed": true
+   }
+  ],
+  "cones": [
+   {
+    "x": 24,
+    "y": 4,
+    "color": "orange"
+   },
+   {
+    "x": 76,
+    "y": 4,
+    "color": "orange"
+   },
+   {
+    "x": 24,
+    "y": 56,
+    "color": "orange"
+   },
+   {
+    "x": 76,
+    "y": 56,
+    "color": "orange"
+   },
+   {
+    "x": 45,
+    "y": 24,
+    "color": "neon",
+    "shape": "stange"
+   }
+  ],
+  "goals": [
+   {
+    "x": 76,
+    "y": 30,
+    "side": "right"
+   }
+  ],
+  "players": [
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 41.5,
+    "y": 37,
+    "label": "9"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 34,
+    "y": 14,
+    "label": "7"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 33,
+    "y": 49,
+    "label": "11"
+   },
+   {
+    "id": "r4",
+    "team": "b",
+    "x": 28.4,
+    "y": 32.5,
+    "label": "4"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 57.2,
+    "y": 9,
+    "label": "2"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 56,
+    "y": 50,
+    "label": "3"
+   },
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 73,
+    "y": 30,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 16,
+    "y": 4,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 30,
+    "y": 33.1
+   },
+   {
+    "id": "b2",
+    "x": 58.8,
+    "y": 9.6
+   },
+   {
+    "id": "b3",
+    "x": 57.6,
+    "y": 50.6
+   }
+  ],
+  "steps": [
+   {
+    "label": "Steilpass auf den Stürmer",
+    "say": "Rot vier spielt den Ball steil in den Lauf von Neon neun.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       54,
+       31
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       55.6,
+       31.6
+      ],
+      "type": "pass",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Eins gegen eins: Punkt",
+    "say": "Neon neun nimmt den Ball mit und schießt am Torwart vorbei, und das gibt einen Punkt für Neon.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       76,
+       26
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Flügel angespielt",
+    "say": "Jetzt spielt Rot zwei schräg zu Neon sieben und läuft sofort zurück, um zu verteidigen.",
+    "moves": [
+     {
+      "who": "b2",
+      "to": [
+       41.6,
+       16.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r2",
+      "to": [
+       60,
+       22
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Zwei gegen eins: Punkt",
+    "say": "Neon sieben dribbelt an und legt quer zu Neon neun, der frei ist. Neon neun schießt, und das gibt einen Punkt für Neon.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       52,
+       18
+      ],
+      "type": "dribbling",
+      "ball": "b2"
+     },
+     {
+      "who": "b2",
+      "to": [
+       55.6,
+       31.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b2",
+      "to": [
+       76,
+       35
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 24,
+    "y1": 58.6,
+    "x2": 76,
+    "y2": 58.6,
+    "text": "23 m"
+   },
+   {
+    "x1": 84,
+    "y1": 4,
+    "x2": 84,
+    "y2": 56,
+    "text": "23 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Der dritte Angriff kommt von der anderen Seite, drei gegen zwei.",
+   "title": "Drei gegen zwei",
+   "text": "Nach dem zweiten Angriff spielt Rot drei von der anderen Seite Neon elf an und läuft ebenfalls zurück. Jetzt greifen drei Angreifer gegen zwei Verteidiger an. Schnell spielen und den freien Mann finden, bevor sich die Abwehr sortiert.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 55,
+      "y": 34,
+      "label": "9"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 50,
+      "y": 14,
+      "label": "7"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 33,
+      "y": 49,
+      "label": "11"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 28.4,
+      "y": 32.5,
+      "label": "4"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 64,
+      "y": 21,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 56,
+      "y": 50,
+      "label": "3"
+     },
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 73,
+      "y": 30,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 16,
+      "y": 4,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b3",
+      "x": 57.6,
+      "y": 50.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Anspiel auf den anderen Flügel",
+      "say": "Rot drei spielt Neon elf an und läuft gleich zurück zum Verteidigen.",
+      "moves": [
+       {
+        "who": "b3",
+        "to": [
+         34.6,
+         49.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r3",
+        "to": [
+         62,
+         40
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Drei gegen zwei",
+      "say": "Neon elf dribbelt an, die beiden Roten gehen auf Neon neun und Neon elf. Neon sieben ist frei.",
+      "moves": [
+       {
+        "who": "n11",
+        "to": [
+         50,
+         44
+        ],
+        "type": "dribbling",
+        "ball": "b3"
+       },
+       {
+        "who": "r3",
+        "to": [
+         58,
+         40
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r2",
+        "to": [
+         60,
+         28
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Freier Mann: Punkt",
+      "say": "Neon elf spielt schräg zu Neon sieben, und der schießt ins Tor. Das gibt einen Punkt für Neon.",
+      "moves": [
+       {
+        "who": "b3",
+        "to": [
+         51.6,
+         14.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b3",
+        "to": [
+         76,
+         26
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Erobern die Verteidiger den Ball, schießen sie auf zwei Minitore.",
+   "title": "Minitore für Verteidiger",
+   "text": "An beiden Seiten stehen Minitore für die Verteidiger. Erobern sie den Ball, dürfen sie sofort darauf schießen. Das belohnt gutes Verteidigen und verlangt, dass sie nach dem Ballgewinn ruhig bleiben.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 55,
+      "y": 34,
+      "label": "9"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 46,
+      "y": 16,
+      "label": "7"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 33,
+      "y": 49,
+      "label": "11"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 28.4,
+      "y": 32.5,
+      "label": "4"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 56,
+      "y": 16,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 56,
+      "y": 50,
+      "label": "3"
+     },
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 73,
+      "y": 30,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 16,
+      "y": 4,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b2",
+      "x": 47.6,
+      "y": 16.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Ball erobert",
+      "say": "Neon sieben dribbelt auf Rot zwei zu, und Rot zwei spitzelt ihm den Ball weg.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         51,
+         17
+        ],
+        "type": "dribbling",
+        "ball": "b2"
+       },
+       {
+        "who": "r2",
+        "to": [
+         53,
+         17.5
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "b2",
+        "to": [
+         57,
+         13
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Aufs Minitor: Punkt",
+      "say": "Rot zwei schießt sofort aufs Minitor oben, und das gibt einen Punkt für Rot.",
+      "moves": [
+       {
+        "who": "r2",
+        "to": [
+         57,
+         12
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b2",
+        "to": [
+         70,
+         3.5
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "goals": [
+     {
+      "x": 76,
+      "y": 30,
+      "side": "right"
+     },
+     {
+      "x": 70,
+      "y": 4,
+      "side": "top"
+     },
+     {
+      "x": 70,
+      "y": 56,
+      "side": "bottom"
+     }
+    ]
+   }
+  }
+ ]
+}

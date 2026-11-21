@@ -1,0 +1,498 @@
+{
+ "title": "Slalom, Doppelpass, Abschluss",
+ "code": "UE-100",
+ "kind": "Übungsform",
+ "focuses": [
+  "Dribbling",
+  "Torschuss",
+  "Passspiel"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "duration_minutes": 15,
+ "players_min": 6,
+ "players_max": 12,
+ "field_size": "27 x 27 m",
+ "description": "Der Spieler dribbelt durch einen Hütchenslalom, spielt einen Doppelpass mit dem Trainer an der Seite, nimmt den Ball gut an und dribbelt mit Tempo auf einen Dummy zu. Kurz davor legt er sich den Ball zur Seite und schließt eins gegen eins gegen den Torwart ab. Zwei gleiche Bahnen laufen gleichzeitig in entgegengesetzte Richtungen, nach dem Abschluss stellt sich jeder auf der anderen Seite an.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 27 mal 27 Metern, längs in zwei Bahnen geteilt. In jeder Bahn drei Hütchen als Slalom, ein Dummy und am Ende ein Tor mit Torwart. Die Bahnen laufen in entgegengesetzte Richtungen.",
+  "Verteilen: An jedem Start eine Schlange mit Bällen. Neben jeder Bahn steht ein Trainer oder ein Spieler für den Doppelpass.",
+  "Ablauf: Mit kleinen Kontakten durch den Slalom dribbeln, Doppelpass mit dem Trainer, gut annehmen, mit Tempo auf den Dummy zu, den Ball zur Seite legen und abschließen. Jedes Tor gibt einen Punkt.",
+  "Wechsel: Nach dem Abschluss stellt sich der Spieler auf der anderen Seite an. Für mehr Spannung Punkte zählen und auch den schwächeren Fuß benutzen lassen."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Mit kleinen Kontakten dribbeln, Innen- und Außenseite benutzen",
+  "Genau passen und den Rückpass gut annehmen",
+  "Mit Tempo auf den Dummy zudribbeln",
+  "Sauber abschließen, am besten flach in die Ecke"
+ ],
+ "materials": [
+  "2 Tore",
+  "8 Hütchen",
+  "2 Dummys",
+  "Viele Bälle"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Slalom, Doppelpass, Abschluss. Durch die Hütchen, ein Doppelpass mit dem Trainer und dann eins gegen eins gegen den Torwart.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 10,
+    "y": 10,
+    "w": 80,
+    "h": 40
+   }
+  ],
+  "cones": [
+   {
+    "x": 15.1,
+    "y": 39.2,
+    "color": "orange"
+   },
+   {
+    "x": 21.4,
+    "y": 39.2,
+    "color": "orange"
+   },
+   {
+    "x": 27.4,
+    "y": 39.2,
+    "color": "orange"
+   },
+   {
+    "x": 47,
+    "y": 20,
+    "color": "orange"
+   },
+   {
+    "x": 60.8,
+    "y": 25.6,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 10,
+    "y": 10,
+    "color": "orange"
+   },
+   {
+    "x": 90,
+    "y": 10,
+    "color": "orange"
+   },
+   {
+    "x": 10,
+    "y": 50,
+    "color": "orange"
+   },
+   {
+    "x": 90,
+    "y": 50,
+    "color": "orange"
+   }
+  ],
+  "goals": [
+   {
+    "x": 90,
+    "y": 25,
+    "side": "right"
+   }
+  ],
+  "players": [
+   {
+    "id": "n1",
+    "team": "a",
+    "x": 6,
+    "y": 39,
+    "label": "1"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 6,
+    "y": 55,
+    "label": "2"
+   },
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 86,
+    "y": 28,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 50,
+    "y": 53.5,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 7.6,
+    "y": 39.6
+   },
+   {
+    "id": "c2",
+    "x": 52.6,
+    "y": 54.1
+   }
+  ],
+  "steps": [
+   {
+    "label": "Durch den Slalom",
+    "say": "Spieler eins dribbelt mit kleinen Kontakten durch die Hütchen.",
+    "moves": [
+     {
+      "who": "n1",
+      "to": [
+       15.1,
+       35.3
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n1",
+      "to": [
+       21.4,
+       43
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n1",
+      "to": [
+       27.4,
+       35.3
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n1",
+      "to": [
+       32,
+       42
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Doppelpass mit dem Trainer",
+    "say": "Er passt zum Trainer an der Seite, startet sofort nach vorn und bekommt den Ball zurück.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       48.4,
+       52.4
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n1",
+      "to": [
+       42,
+       25
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "b1",
+      "to": [
+       43.6,
+       25.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Auf den Dummy zu",
+    "say": "Spieler eins nimmt den Ball gut an, dribbelt mit Tempo auf den Dummy zu und legt ihn sich kurz davor zur Seite.",
+    "moves": [
+     {
+      "who": "n1",
+      "to": [
+       55,
+       26
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n1",
+      "to": [
+       59,
+       33
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n1",
+      "to": [
+       64,
+       35
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Abschluss: Punkt",
+    "say": "Spieler eins schießt flach ins Eck, und das gibt einen Punkt für Spieler eins.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       90,
+       22
+      ],
+      "type": "pass"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 10,
+    "y1": 58.6,
+    "x2": 90,
+    "y2": 58.6,
+    "text": "27 m"
+   },
+   {
+    "x1": 96,
+    "y1": 10,
+    "x2": 96,
+    "y2": 50,
+    "text": "14 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Am Dummy den Ball schnell zu beiden Seiten verlegen.",
+   "title": "Schnell zur Seite legen",
+   "text": "Kurz vor dem Dummy entscheidet eine kurze, schnelle Bewegung. Den Ball blitzschnell auf eine Seite legen, und zwar mal links, mal rechts. So entsteht Platz und ein guter Winkel zum Tor.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 50,
+      "y": 26,
+      "label": "1"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 6,
+      "y": 55,
+      "label": "2"
+     },
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 86,
+      "y": 25,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 53.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 51.6,
+      "y": 26.6
+     },
+     {
+      "id": "c2",
+      "x": 52.6,
+      "y": 54.1
+     }
+    ],
+    "steps": [
+     {
+      "label": "Auf den Dummy zu",
+      "say": "Spieler eins dribbelt mit Tempo direkt auf den Dummy zu.",
+      "moves": [
+       {
+        "who": "n1",
+        "to": [
+         55,
+         26
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Kurz und schnell zur Seite",
+      "say": "Kurz davor legt er den Ball blitzschnell auf die andere Seite und ist am Dummy vorbei.",
+      "moves": [
+       {
+        "who": "n1",
+        "to": [
+         59,
+         18
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n1",
+        "to": [
+         66,
+         17
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Abschluss: Punkt",
+      "say": "Er schießt sofort, und das gibt einen Punkt für Spieler eins.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         90,
+         21
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Vor dem Schuss den Kopf heben und auf den Torwart schauen.",
+   "title": "Kopf hoch, in die Ecke",
+   "text": "Wer vor dem Abschluss kurz den Kopf hebt, sieht, wo der Torwart steht. Dann in die Ecke schießen, die er nicht abdeckt. Genau statt hart, so fallen die meisten Tore.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 64,
+      "y": 36,
+      "label": "1"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 6,
+      "y": 55,
+      "label": "2"
+     },
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 86,
+      "y": 28,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 53.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 65.6,
+      "y": 36.6
+     },
+     {
+      "id": "c2",
+      "x": 52.6,
+      "y": 54.1
+     }
+    ],
+    "steps": [
+     {
+      "label": "Kopf hoch",
+      "say": "Spieler eins dribbelt aufs Tor zu und hebt den Kopf. Der Torwart steht zu weit in seiner Ecke.",
+      "moves": [
+       {
+        "who": "n1",
+        "to": [
+         69,
+         34
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "k1",
+        "to": [
+         86,
+         29
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Ab in die freie Ecke",
+      "say": "Spieler eins schießt flach in die freie Ecke, und das gibt einen Punkt für Spieler eins.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         90,
+         21.5
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

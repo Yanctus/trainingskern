@@ -1,0 +1,692 @@
+{
+ "title": "Verlagern und treffen",
+ "code": "UE-101",
+ "kind": "Spielform",
+ "focuses": [
+  "Passspiel",
+  "Torschuss",
+  "Zusammenspiel"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "duration_minutes": 15,
+ "players_min": 12,
+ "players_max": 12,
+ "field_size": "32 x 23 m",
+ "description": "Fünf gegen fünf mit Torhütern. Eine Mannschaft greift drei Minitore an, die andere verteidigt sie und hat selbst ein großes Tor als Ziel. Erst nach fünf Pässen darf auf eines der Minitore geschossen werden, und ein Torwart pendelt zwischen allen dreien. Wer den Gegner auf eine Seite lockt und dann schnell verlagert, findet das freie Tor.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 32 mal 23 Metern. An einem Ende ein großes Tor, am anderen Ende drei Minitore nebeneinander.",
+  "Verteilen: Zwei Mannschaften mit je fünf Spielern. Ein Torwart im großen Tor, ein zweiter Torwart pendelt zwischen den drei Minitoren.",
+  "Ablauf: Die angreifende Mannschaft beginnt mit Ball. Nach fünf Pässen darf sie auf ein beliebiges Minitor schießen, jedes Tor gibt einen Punkt.",
+  "Ballgewinn: Erobert die andere Mannschaft den Ball, kontert sie sofort auf das große Tor."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Genau passen und sich bewegen, um den Ball zu halten",
+  "Den Gegner auf eine Seite locken und dann zum freien Spieler verlagern",
+  "Immer wissen, wo die Tore stehen und welches frei ist",
+  "Mit schnellen Doppelpässen Platz schaffen"
+ ],
+ "materials": [
+  "1 großes Tor",
+  "3 Minitore",
+  "4 Hütchen",
+  "Leibchen in zwei Farben",
+  "Bälle beim Trainer"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Verlagern und treffen. Fünf Pässe, dann aufs Minitor, und am besten dorthin, wo der Torwart gerade nicht steht.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 14,
+    "y": 6,
+    "w": 72,
+    "h": 48
+   }
+  ],
+  "cones": [
+   {
+    "x": 14,
+    "y": 6,
+    "color": "orange"
+   },
+   {
+    "x": 86,
+    "y": 6,
+    "color": "orange"
+   },
+   {
+    "x": 14,
+    "y": 54,
+    "color": "orange"
+   },
+   {
+    "x": 86,
+    "y": 54,
+    "color": "orange"
+   }
+  ],
+  "goals": [
+   {
+    "x": 14,
+    "y": 30,
+    "side": "left"
+   },
+   {
+    "x": 86,
+    "y": 12,
+    "side": "right"
+   },
+   {
+    "x": 86,
+    "y": 30,
+    "side": "right"
+   },
+   {
+    "x": 86,
+    "y": 48,
+    "side": "right"
+   }
+  ],
+  "players": [
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 28.6,
+    "y": 14.9,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 28.4,
+    "y": 46.2,
+    "label": "3"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 46.4,
+    "y": 27.8,
+    "label": "4"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 58.6,
+    "y": 12.3,
+    "label": "5"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 57.8,
+    "y": 50.9,
+    "label": "6"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 37,
+    "y": 14,
+    "label": "7"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 37.5,
+    "y": 43,
+    "label": "8"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 55,
+    "y": 30,
+    "label": "9"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 68.4,
+    "y": 13.1,
+    "label": "10"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 67,
+    "y": 39.8,
+    "label": "11"
+   },
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 18,
+    "y": 30,
+    "label": "TW"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 80.8,
+    "y": 30,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 6,
+    "y": 6,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 19.6,
+    "y": 30.6
+   },
+   {
+    "id": "c1",
+    "x": 8.6,
+    "y": 6.6
+   }
+  ],
+  "steps": [
+   {
+    "label": "Aufbau",
+    "say": "Der Torwart spielt Neon zwei an, der passt weiter zu Neon vier. Das sind zwei Pässe.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       30.2,
+       15.5
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       48.0,
+       28.4
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Auf eine Seite locken",
+    "say": "Neon vier spielt zu Neon fünf, und der spielt zurück. Gleichzeitig verschiebt Rot nach oben, und der Torwart geht zum oberen Minitor.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       60.2,
+       12.9
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       48.0,
+       28.4
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r10",
+      "to": [
+       66,
+       18
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "r9",
+      "to": [
+       56,
+       21
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "k2",
+      "to": [
+       81,
+       15
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Verlagern",
+    "say": "Jetzt verlagert Neon vier schnell auf die andere Seite zu Neon sechs. Das ist der fünfte Pass.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       59.4,
+       51.5
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Abschluss: Punkt",
+    "say": "Neon sechs dribbelt kurz an und schießt ins freie Minitor unten, und das gibt einen Punkt für Neon.",
+    "moves": [
+     {
+      "who": "n6",
+      "to": [
+       70,
+       49
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       87,
+       48
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "k2",
+      "to": [
+       81,
+       30
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 14,
+    "y1": 58.6,
+    "x2": 86,
+    "y2": 58.6,
+    "text": "32 m"
+   },
+   {
+    "x1": 94,
+    "y1": 6,
+    "x2": 94,
+    "y2": 54,
+    "text": "23 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Erobert die andere Mannschaft den Ball, kontert sie sofort auf das große Tor los.",
+   "title": "Konter aufs große Tor",
+   "text": "Die verteidigende Mannschaft lauert auf Fehlpässe. Ist der Ball erobert, geht es sofort nach vorn auf das große Tor, bevor sich die Angreifer wieder ordnen. Wenige Kontakte, schnelle Pässe.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 28.6,
+      "y": 14.9,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 28.4,
+      "y": 46.2,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 46.4,
+      "y": 27.8,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 58.6,
+      "y": 12.3,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 57.8,
+      "y": 50.9,
+      "label": "6"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 37,
+      "y": 14,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 37.5,
+      "y": 43,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 55,
+      "y": 30,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 68.4,
+      "y": 13.1,
+      "label": "10"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 67,
+      "y": 39.8,
+      "label": "11"
+     },
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 18,
+      "y": 30,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 80.8,
+      "y": 30,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 6,
+      "y": 6,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 48,
+      "y": 28.4
+     },
+     {
+      "id": "c1",
+      "x": 8.6,
+      "y": 6.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Pass abgefangen",
+      "say": "Neon vier will zu Neon fünf passen, doch Rot sieben geht dazwischen.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         43,
+         19
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r7",
+        "to": [
+         42,
+         18.5
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       }
+      ]
+     },
+     {
+      "label": "Schnell nach vorn",
+      "say": "Rot sieben spielt sofort weiter zu Rot acht, der Richtung Tor startet.",
+      "moves": [
+       {
+        "who": "r8",
+        "to": [
+         30,
+         36
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         31.6,
+         36.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Konter: Punkt",
+      "say": "Rot acht schießt aufs große Tor, und das gibt einen Punkt für Rot.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         14,
+         33
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Geschossen wird nur aus der Endzone vor den Minitoren.",
+   "title": "Nur aus der Endzone",
+   "text": "Vor den Minitoren entsteht eine Endzone. Nur wer mit dem Ball in diese Zone kommt, darf schießen. Die Angreifer müssen deshalb Spieler im freien Raum finden, die in die Zone laufen. Noch schwerer wird es, wenn in der Endzone nur direkt geschossen werden darf.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 28.6,
+      "y": 14.9,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 28.4,
+      "y": 46.2,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 46.4,
+      "y": 27.8,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 60,
+      "y": 11,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 57.8,
+      "y": 50.9,
+      "label": "6"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 37,
+      "y": 14,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 37.5,
+      "y": 43,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 55,
+      "y": 28,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 68.4,
+      "y": 13.1,
+      "label": "10"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 70,
+      "y": 36,
+      "label": "11"
+     },
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 18,
+      "y": 30,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 80.8,
+      "y": 30,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 6,
+      "y": 6,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 48,
+      "y": 28.4
+     },
+     {
+      "id": "c1",
+      "x": 8.6,
+      "y": 6.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Lauf in die Endzone",
+      "say": "Neon sechs startet in die Endzone, und Neon vier spielt ihn genau in den Lauf an.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         76,
+         50
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         77.6,
+         50.6
+        ],
+        "type": "pass",
+        "delay": 0.4
+       }
+      ]
+     },
+     {
+      "label": "Direkt ins Minitor: Punkt",
+      "say": "Neon sechs schießt direkt ins Minitor unten, und das gibt einen Punkt für Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         87,
+         48
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ],
+    "lines": [
+     {
+      "type": "rect",
+      "x": 14,
+      "y": 6,
+      "w": 72,
+      "h": 48
+     },
+     {
+      "type": "zone",
+      "x": 72,
+      "y": 6,
+      "w": 14,
+      "h": 48
+     }
+    ]
+   }
+  }
+ ]
+}
