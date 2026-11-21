@@ -1,0 +1,667 @@
+{
+ "title": "Zu zweit kompakt verteidigen",
+ "code": "UE-080",
+ "kind": "Spielform",
+ "focuses": [
+  "Verteidigen",
+  "Umschalten",
+  "Passspiel"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "duration_minutes": 15,
+ "players_min": 10,
+ "players_max": 10,
+ "field_size": "27 x 14 m",
+ "description": "Ein Feld mit zwei Hälften. In der einen Hälfte spielen fünf gegen zwei: Die fünf halten den Ball, die zwei Verteidiger pressen gemeinsam als Paar. Erobern sie den Ball, spielen sie ihn sofort zu ihren drei Mitspielern in der anderen Hälfte und werden zur Passmannschaft. Dann wechseln zwei Spieler der anderen Mannschaft hinüber und pressen dort als neues Paar.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 27 mal 14 Metern, in der Mitte geteilt in zwei gleich große Hälften.",
+  "Verteilen: Zwei Mannschaften mit je fünf Spielern. Mannschaft Neon hat alle fünf in der linken Hälfte. Von Mannschaft Rot pressen zwei in der linken Hälfte, die anderen drei warten rechts.",
+  "Ablauf: Neon hält den Ball, das rote Paar presst gemeinsam. Erobert Rot den Ball, spielt es ihn sofort in die andere Hälfte. Jetzt hat Rot dort fünf Spieler, und zwei Neonspieler wechseln hinüber, um als Paar zu pressen.",
+  "Trainer: Geht der Ball ins Aus, spielt der Trainer sofort einen neuen Ball ein."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Mit dem Ball Platz schaffen: nach dem Ballgewinn schnell auseinanderlaufen",
+  "Als Paar kompakt bleiben, Abstände und Winkel ständig prüfen",
+  "Gemeinsam entscheiden, ob nach innen oder außen gelenkt wird",
+  "Auslöser zum Pressen erkennen: langsamer Pass, schlechte Annahme, ungenauer Pass"
+ ],
+ "materials": [
+  "6 orange Hütchen",
+  "Leibchen in zwei Farben",
+  "Viele Bälle beim Trainer"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Zu zweit kompakt verteidigen. Fünf gegen zwei, und das Paar presst immer gemeinsam.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 14,
+    "y": 12,
+    "w": 72,
+    "h": 36
+   },
+   {
+    "type": "line",
+    "x1": 50,
+    "y1": 12,
+    "x2": 50,
+    "y2": 48,
+    "dashed": true
+   }
+  ],
+  "cones": [
+   {
+    "x": 14,
+    "y": 12,
+    "color": "orange"
+   },
+   {
+    "x": 86,
+    "y": 12,
+    "color": "orange"
+   },
+   {
+    "x": 14,
+    "y": 48,
+    "color": "orange"
+   },
+   {
+    "x": 86,
+    "y": 48,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 12,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 48,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 20,
+    "y": 16,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 20,
+    "y": 44,
+    "label": "3"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 30,
+    "y": 38,
+    "label": "4"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 49,
+    "y": 16,
+    "label": "5"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 49,
+    "y": 44,
+    "label": "6"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 31,
+    "y": 22,
+    "label": "7"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 40,
+    "y": 30,
+    "label": "8"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 62,
+    "y": 22,
+    "label": "9"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 78,
+    "y": 30,
+    "label": "10"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 62,
+    "y": 40,
+    "label": "11"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 72,
+    "y": 55,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 21.6,
+    "y": 44.6
+   },
+   {
+    "id": "c1",
+    "x": 74.6,
+    "y": 55.4
+   },
+   {
+    "id": "c2",
+    "x": 69.6,
+    "y": 55.6
+   }
+  ],
+  "steps": [
+   {
+    "label": "Fünf gegen zwei",
+    "say": "Neon spielt sich den Ball zu, Neon drei passt zu Neon vier. Gleichzeitig verschieben Rot sieben und Rot acht gemeinsam und bleiben dicht beieinander.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       31.6,
+       38.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r7",
+      "to": [
+       30,
+       28
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "r8",
+      "to": [
+       38,
+       33
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Auslöser: langsamer Pass",
+    "say": "Neon vier spielt einen zu langsamen Pass. Das ist das Signal: Rot acht sprintet hinein und fängt ihn ab.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       42.6,
+       27.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r8",
+      "to": [
+       42,
+       26.5
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Sofort verlagern",
+    "say": "Rot acht spielt den Ball sofort hinüber zu Rot elf in die andere Hälfte. Jetzt hat Rot den Ball.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       60.4,
+       40.6
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Rollen tauschen",
+    "say": "Gleichzeitig laufen Rot sieben und Rot acht zu ihren Mitspielern, und Neon fünf und Neon sechs wechseln hinüber. Sie pressen jetzt als neues Paar.",
+    "moves": [
+     {
+      "who": "r7",
+      "to": [
+       70,
+       14
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r8",
+      "to": [
+       80,
+       44
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n5",
+      "to": [
+       58,
+       28
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n6",
+      "to": [
+       66,
+       32
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 14,
+    "y1": 58.6,
+    "x2": 86,
+    "y2": 58.6,
+    "text": "27 m"
+   },
+   {
+    "x1": 96,
+    "y1": 12,
+    "x2": 96,
+    "y2": 48,
+    "text": "14 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Die Passmannschaft tauscht ständig die Positionen, das Paar lenkt das Spiel auf eine Seite.",
+   "title": "Rotieren und lenken",
+   "text": "Die Spieler mit Ball bleiben in Bewegung und tauschen die Positionen, damit das Spiel flüssig bleibt. Das verteidigende Paar stellt den Weg in die Mitte zu und lenkt das Spiel auf eine Seite. Dort ist es eng, und ein Pass lässt sich leichter abfangen.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 20,
+      "y": 16,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 20,
+      "y": 44,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 30,
+      "y": 38,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 49,
+      "y": 16,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 49,
+      "y": 44,
+      "label": "6"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 31,
+      "y": 22,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 40,
+      "y": 30,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 62,
+      "y": 22,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 78,
+      "y": 30,
+      "label": "10"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 62,
+      "y": 40,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 72,
+      "y": 55,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 21.6,
+      "y": 44.6
+     },
+     {
+      "id": "c1",
+      "x": 74.6,
+      "y": 55.4
+     },
+     {
+      "id": "c2",
+      "x": 69.6,
+      "y": 55.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Positionen tauschen",
+      "say": "Neon drei spielt zu Neon zwei. Gleichzeitig tauschen Neon drei und Neon vier die Plätze, damit das Spiel in Bewegung bleibt.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         21.6,
+         16.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n3",
+        "to": [
+         30,
+         40
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n4",
+        "to": [
+         21,
+         44
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Auf eine Seite lenken",
+      "say": "Das rote Paar verschiebt gemeinsam nach oben und stellt den Weg in die Mitte zu. Neon zwei bleibt nur der Pass an der Seite entlang.",
+      "moves": [
+       {
+        "who": "r7",
+        "to": [
+         28,
+         21
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r8",
+        "to": [
+         36,
+         27
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Abfangen",
+      "say": "Neon zwei spielt an der Seite entlang zu Neon fünf. Rot sieben rechnet damit und fängt den Ball ab.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         35.4,
+         17.2
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r7",
+        "to": [
+         35,
+         18.5
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Ein dritter Verteidiger kommt dazu, jetzt heißt es fünf gegen drei.",
+   "title": "Mit drittem Verteidiger",
+   "text": "Ein Spieler aus der anderen Hälfte darf mitpressen, zum Beispiel nach drei Pässen der Passmannschaft oder als Belohnung, wenn das Paar das Spiel gut auf eine Seite gelenkt hat. Fünf gegen drei ist für die Passmannschaft deutlich schwerer: schneller entscheiden, genauer passen, mehr umschauen.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 20,
+      "y": 16,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 20,
+      "y": 44,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 30,
+      "y": 38,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 49,
+      "y": 16,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 49,
+      "y": 44,
+      "label": "6"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 31,
+      "y": 22,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 40,
+      "y": 30,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 62,
+      "y": 22,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 78,
+      "y": 30,
+      "label": "10"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 62,
+      "y": 40,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 72,
+      "y": 55,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 21.6,
+      "y": 44.6
+     },
+     {
+      "id": "c1",
+      "x": 74.6,
+      "y": 55.4
+     },
+     {
+      "id": "c2",
+      "x": 69.6,
+      "y": 55.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Der Dritte kommt",
+      "say": "Neon drei spielt zu Neon vier. Gleichzeitig sprintet Rot neun aus der anderen Hälfte herüber und presst mit.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         31.6,
+         38.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r9",
+        "to": [
+         46,
+         20
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       },
+       {
+        "who": "r7",
+        "to": [
+         30,
+         28
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "r8",
+        "to": [
+         38,
+         33
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Kompakt zu dritt",
+      "say": "Die drei Roten stehen jetzt eng zusammen. Neon vier findet keinen freien Mitspieler und spielt ungenau, Rot acht erobert den Ball.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         39.6,
+         33.6
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

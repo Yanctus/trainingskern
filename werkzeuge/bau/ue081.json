@@ -1,0 +1,652 @@
+{
+ "title": "Vier Felder, vier Duelle",
+ "code": "UE-081",
+ "kind": "Spielform",
+ "focuses": [
+  "1 gegen 1",
+  "Verteidigen",
+  "Umschalten"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "duration_minutes": 15,
+ "players_min": 10,
+ "players_max": 10,
+ "field_size": "27 x 18 m",
+ "description": "Vier gegen vier mit Torwart auf zwei Tore. Das Feld ist in vier Viertel geteilt, in jedem Viertel steht ein Spieler gegen einen Gegenspieler. Jeder ist für sein eigenes Duell verantwortlich: im Angriff freilaufen und sich anbieten, in der Abwehr eng dranbleiben. Gewinnt jeder sein Duell, entstehen Torchancen für die Mannschaft.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 27 mal 18 Metern mit einem Tor an jedem Ende. Mit Hütchen in vier gleich große Viertel teilen.",
+  "Verteilen: Zwei Mannschaften mit je vier Feldspielern und einem Torwart. In jedem Viertel steht ein Spieler jeder Mannschaft, also ein Eins gegen Eins.",
+  "Ablauf: Jeder Spieler bleibt in seinem Viertel. Der Ball wird vom Torwart über die eigene Hälfte nach vorn gespielt. Die Angreifer lösen sich mit Antäuschen und Anbieten von ihrem Gegenspieler und versuchen zu treffen. Jedes Tor gibt einen Punkt.",
+  "Trainer: Geht der Ball ins Aus, spielt der Trainer schnell einen neuen Ball ein."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Im eigenen Viertel freilaufen: antäuschen und anbieten",
+  "Schnell kombinieren, um den Gegenspieler abzuschütteln",
+  "Eng verteidigen und den Weg nach vorn zustellen",
+  "Nach Ballgewinn sofort an den Konter denken und eiskalt abschließen"
+ ],
+ "materials": [
+  "2 Tore",
+  "6 orange Hütchen",
+  "Leibchen in zwei Farben",
+  "Bälle beim Trainer"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Vier Felder, vier Duelle. In jedem Viertel ein Eins gegen Eins, und jeder ist für sein Duell verantwortlich.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 12,
+    "y": 5,
+    "w": 76,
+    "h": 50
+   },
+   {
+    "type": "line",
+    "x1": 50,
+    "y1": 5,
+    "x2": 50,
+    "y2": 55,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 12,
+    "y1": 30,
+    "x2": 88,
+    "y2": 30,
+    "dashed": true
+   }
+  ],
+  "cones": [
+   {
+    "x": 12,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 88,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 12,
+    "y": 55,
+    "color": "orange"
+   },
+   {
+    "x": 88,
+    "y": 55,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 55,
+    "color": "orange"
+   }
+  ],
+  "goals": [
+   {
+    "x": 12,
+    "y": 30,
+    "side": "left"
+   },
+   {
+    "x": 88,
+    "y": 30,
+    "side": "right"
+   }
+  ],
+  "players": [
+   {
+    "id": "n1",
+    "team": "a",
+    "x": 14.5,
+    "y": 30,
+    "label": "1"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 26.7,
+    "y": 16.7,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 29,
+    "y": 44,
+    "label": "3"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 63,
+    "y": 18,
+    "label": "4"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 64,
+    "y": 42,
+    "label": "5"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 85.5,
+    "y": 30,
+    "label": "6"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 35,
+    "y": 17.5,
+    "label": "7"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 37.5,
+    "y": 44,
+    "label": "8"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 71.5,
+    "y": 19.5,
+    "label": "9"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 72.5,
+    "y": 42,
+    "label": "10"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 56,
+    "y": 1.5,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 16.1,
+    "y": 30.6
+   },
+   {
+    "id": "c1",
+    "x": 58.6,
+    "y": 2
+   }
+  ],
+  "steps": [
+   {
+    "label": "Aufbau vom Torwart",
+    "say": "Torwart eins spielt Neon zwei an. Rot sieben bleibt eng an ihm dran.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       28.3,
+       17.3
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r7",
+      "to": [
+       31,
+       12
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Anbieten und nach vorn",
+    "say": "Neon fünf täuscht kurz an und kommt seinem Gegenspieler entgegen. Neon zwei spielt ihn diagonal an.",
+    "moves": [
+     {
+      "who": "n5",
+      "to": [
+       60,
+       38
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       61.6,
+       38.6
+      ],
+      "type": "pass",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Hinter die Abwehr",
+    "say": "Neon vier läuft im Bogen hinter Rot neun in den freien Raum, und Neon fünf spielt ihn an.",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       70,
+       12
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n4",
+      "to": [
+       77.7,
+       18
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       79.3,
+       18.6
+      ],
+      "type": "pass",
+      "delay": 0.5
+     }
+    ]
+   },
+   {
+    "label": "Abschluss",
+    "say": "Neon vier schießt flach ins Eck, und das gibt einen Punkt für Neon.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       88,
+       27
+      ],
+      "type": "pass"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 12,
+    "y1": 58.6,
+    "x2": 88,
+    "y2": 58.6,
+    "text": "27 m"
+   },
+   {
+    "x1": 95,
+    "y1": 5,
+    "x2": 95,
+    "y2": 55,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Nach einem Ballgewinn sofort kontern.",
+   "title": "Ball erobert, sofort Konter",
+   "text": "Wer den Ball abfängt, schaltet sofort um. Der schnelle Pass nach vorn erwischt die Gegner, bevor sie sich ordnen. Mit dem Pass nach vorn darf ein Spieler mitlaufen, dann steht es im Angriff zwei gegen eins. Schnell kombinieren und entschlossen abschließen.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 14.5,
+      "y": 30,
+      "label": "1"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 26.7,
+      "y": 16.7,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 29,
+      "y": 44,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 63,
+      "y": 18,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 64,
+      "y": 42,
+      "label": "5"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 85.5,
+      "y": 30,
+      "label": "6"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 35,
+      "y": 17.5,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 37.5,
+      "y": 44,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 71.5,
+      "y": 19.5,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 72.5,
+      "y": 42,
+      "label": "10"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 56,
+      "y": 1.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 64.6,
+      "y": 18.6
+     },
+     {
+      "id": "c1",
+      "x": 58.6,
+      "y": 2
+     }
+    ],
+    "steps": [
+     {
+      "label": "Ball erobert",
+      "say": "Neon vier will zu Neon fünf passen, aber Rot zehn liest den Pass und fängt ihn ab.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         66,
+         34
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r10",
+        "to": [
+         67,
+         35.5
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Sofort nach vorn",
+      "say": "Rot zehn spielt sofort nach vorn zu Rot acht und sprintet gleich hinterher. Jetzt steht es zwei gegen eins gegen Neon drei.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         39.1,
+         44.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r10",
+        "to": [
+         44,
+         34
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Zwei gegen eins: Punkt",
+      "say": "Rot acht legt quer zu Rot zehn, und der schießt ins Tor. Das gibt einen Punkt für Rot.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         42.4,
+         34.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         12,
+         34
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Mit dem Pass nach vorn darf ein Spieler mit in die Angriffshälfte.",
+   "title": "Einer rückt mit auf",
+   "text": "Spielt eine Mannschaft den Ball nach vorn in die Angriffshälfte, darf der Passgeber mitlaufen. So entsteht vorne ein Zwei gegen Eins. Das schult das richtige Timing für den Lauf und das Ausspielen der Überzahl.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 14.5,
+      "y": 30,
+      "label": "1"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 42,
+      "y": 18,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 29,
+      "y": 44,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 68,
+      "y": 14,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 64,
+      "y": 42,
+      "label": "5"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 85.5,
+      "y": 30,
+      "label": "6"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 33.5,
+      "y": 24,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 37.5,
+      "y": 44,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 76.5,
+      "y": 22,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 72.5,
+      "y": 42,
+      "label": "10"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 56,
+      "y": 1.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 43.6,
+      "y": 18.6
+     },
+     {
+      "id": "c1",
+      "x": 58.6,
+      "y": 2
+     }
+    ],
+    "steps": [
+     {
+      "label": "Pass nach vorn und mit",
+      "say": "Neon zwei spielt nach vorn zu Neon vier und läuft gleich mit in die Angriffshälfte. Jetzt steht es zwei gegen eins.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         66.4,
+         14.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n2",
+        "to": [
+         62,
+         26
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Überzahl ausspielen",
+      "say": "Rot neun geht auf Neon vier. Der legt sofort quer zu Neon zwei, der frei ist.",
+      "moves": [
+       {
+        "who": "r9",
+        "to": [
+         72,
+         17
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         63.6,
+         26.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Abschluss",
+      "say": "Neon zwei schießt sofort, und das gibt einen Punkt für Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         88,
+         34.5
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
