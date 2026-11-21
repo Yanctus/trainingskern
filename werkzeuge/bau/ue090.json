@@ -1,0 +1,743 @@
+{
+ "title": "Doppelpass-Stationen",
+ "code": "UE-090",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel",
+  "Erwärmung"
+ ],
+ "age_groups": [
+  "F-Jugend",
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend"
+ ],
+ "duration_minutes": 10,
+ "players_min": 9,
+ "players_max": 12,
+ "field_size": "14 x 14 m",
+ "description": "Ein Aufwärmen mit vier inneren und vier äußeren Stationen. Ein Außenspieler passt durch zum Außenspieler gegenüber. Ein Innenspieler setzt ihn halb unter Druck, ein anderer kommt ihm entgegen, und die beiden spielen einen Doppelpass um den Störer herum. Dann geht der Ball weiter zur nächsten Station, und alle rücken eine Station weiter.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 14 mal 14 Metern mit vier Hütchen in den Ecken und vier Hütchen in der Mitte.",
+  "Verteilen: An jeder Station ein Spieler, ein Außenspieler mit Ball.",
+  "Ablauf: Spieler zwei passt durch zu Spieler acht. Spieler fünf setzt Spieler acht halb unter Druck, Spieler drei kommt entgegen. Spieler acht und Spieler drei spielen einen Doppelpass um Spieler fünf, dann passt Spieler acht durch zu Spieler sieben.",
+  "Wechsel: Spieler fünf wird beim nächsten Doppelpass zum Mitspieler, Spieler drei bleibt an der Station von Spieler fünf. So wechseln alle ständig die Rollen."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Genau passen, damit der Ablauf flüssig bleibt",
+  "Im richtigen Moment zur nächsten Station laufen",
+  "Als Störer echt, aber nur halb unter Druck setzen",
+  "Abwechselnd mit beiden Füßen passen und beim Wechseln miteinander sprechen"
+ ],
+ "materials": [
+  "12 Hütchen",
+  "2 Bälle"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Doppelpass-Stationen. Pass durch, Doppelpass um den Störer und weiter zur nächsten Station.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 26,
+    "y": 6,
+    "w": 48,
+    "h": 48
+   }
+  ],
+  "cones": [
+   {
+    "x": 26,
+    "y": 6,
+    "color": "orange"
+   },
+   {
+    "x": 74,
+    "y": 6,
+    "color": "orange"
+   },
+   {
+    "x": 26,
+    "y": 54,
+    "color": "orange"
+   },
+   {
+    "x": 74,
+    "y": 54,
+    "color": "orange"
+   },
+   {
+    "x": 33.2,
+    "y": 11.5,
+    "color": "orange"
+   },
+   {
+    "x": 66.6,
+    "y": 11.5,
+    "color": "orange"
+   },
+   {
+    "x": 42.8,
+    "y": 22.6,
+    "color": "orange"
+   },
+   {
+    "x": 57.2,
+    "y": 22.6,
+    "color": "orange"
+   },
+   {
+    "x": 42.8,
+    "y": 37.4,
+    "color": "orange"
+   },
+   {
+    "x": 57.2,
+    "y": 37.4,
+    "color": "orange"
+   },
+   {
+    "x": 33.4,
+    "y": 48.5,
+    "color": "orange"
+   },
+   {
+    "x": 66.8,
+    "y": 48.5,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 30.9,
+    "y": 10.7,
+    "label": "7"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 69.1,
+    "y": 10,
+    "label": "8"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 45.6,
+    "y": 22,
+    "label": "9"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 54.7,
+    "y": 22,
+    "label": "5"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 45.3,
+    "y": 38,
+    "label": "4"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 54.4,
+    "y": 38,
+    "label": "3"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 30.9,
+    "y": 49.6,
+    "label": "11"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 69.4,
+    "y": 48.9,
+    "label": "2"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 54.4,
+    "y": 55,
+    "label": "10"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 18,
+    "y": 3,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b2",
+    "x": 71,
+    "y": 49.5
+   },
+   {
+    "id": "c1",
+    "x": 20.6,
+    "y": 3.6
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pass durch",
+    "say": "Spieler zwei passt durch zu Spieler acht. Gleichzeitig kommt Spieler drei als Mitspieler entgegen.",
+    "moves": [
+     {
+      "who": "b2",
+      "to": [
+       70.6,
+       11.2
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n3",
+      "to": [
+       62.5,
+       25
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Störer kommt",
+    "say": "Spieler fünf läuft auf Spieler acht zu und setzt ihn halb unter Druck.",
+    "moves": [
+     {
+      "who": "n5",
+      "to": [
+       62,
+       14
+      ],
+      "type": "lauf"
+     }
+    ]
+   },
+   {
+    "label": "Doppelpass um den Störer",
+    "say": "Spieler acht spielt zu Spieler drei und läuft hinter Spieler fünf vorbei. Spieler drei spielt direkt in seinen Lauf.",
+    "moves": [
+     {
+      "who": "b2",
+      "to": [
+       64.1,
+       25.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n8",
+      "to": [
+       63,
+       7
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n8",
+      "to": [
+       54,
+       9
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b2",
+      "to": [
+       55.6,
+       9.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Weiter und neue Plätze",
+    "say": "Spieler acht passt durch zu Spieler sieben. Gleichzeitig wird Spieler fünf zum nächsten Mitspieler, und Spieler drei geht an die Station von Spieler fünf.",
+    "moves": [
+     {
+      "who": "b2",
+      "to": [
+       32.5,
+       11.3
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n5",
+      "to": [
+       45,
+       14
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n3",
+      "to": [
+       55,
+       22
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 26,
+    "y1": 58.6,
+    "x2": 74,
+    "y2": 58.6,
+    "text": "14 m"
+   },
+   {
+    "x1": 82,
+    "y1": 6,
+    "x2": 82,
+    "y2": 54,
+    "text": "14 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Ein zweiter Ball kommt dazu, beide Seiten spielen gleichzeitig.",
+   "title": "Mit zweitem Ball",
+   "text": "Jetzt laufen zwei Bälle gleichzeitig: rechts wie gehabt, links startet Spieler sieben genau spiegelverkehrt. Das verlangt mehr Konzentration, schnellere Reaktionen und sofortiges Nachlaufen zur nächsten Station.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 30.9,
+      "y": 10.7,
+      "label": "7"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 69.1,
+      "y": 10,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 45.6,
+      "y": 22,
+      "label": "9"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 54.7,
+      "y": 22,
+      "label": "5"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 45.3,
+      "y": 38,
+      "label": "4"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 54.4,
+      "y": 38,
+      "label": "3"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 30.9,
+      "y": 49.6,
+      "label": "11"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 69.4,
+      "y": 48.9,
+      "label": "2"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 54.4,
+      "y": 55,
+      "label": "10"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 18,
+      "y": 3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b2",
+      "x": 71,
+      "y": 49.5
+     },
+     {
+      "id": "b7",
+      "x": 29.3,
+      "y": 10.5
+     },
+     {
+      "id": "c1",
+      "x": 20.6,
+      "y": 3.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Beide passen durch",
+      "say": "Gleichzeitig passt Spieler zwei durch zu Spieler acht und Spieler sieben durch zu Spieler elf. Spieler drei und Spieler neun kommen entgegen.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         70.6,
+         11.2
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b7",
+        "to": [
+         29.4,
+         48.8
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n3",
+        "to": [
+         62.5,
+         25
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n9",
+        "to": [
+         37.5,
+         35
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Zwei Störer",
+      "say": "Gleichzeitig setzen Spieler fünf und Spieler vier unter Druck.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         62,
+         14
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n4",
+        "to": [
+         38,
+         46
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Zwei Doppelpässe",
+      "say": "Auf beiden Seiten läuft gleichzeitig der Doppelpass um den Störer herum.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         64.1,
+         25.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n8",
+        "to": [
+         63,
+         7
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n8",
+        "to": [
+         54,
+         9
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b2",
+        "to": [
+         55.6,
+         9.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b7",
+        "to": [
+         35.9,
+         34.4
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n11",
+        "to": [
+         37,
+         53
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n11",
+        "to": [
+         46,
+         51
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b7",
+        "to": [
+         44.4,
+         50.4
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Der Störer entscheidet selbst, ob er voll presst oder sich fallen lässt.",
+   "title": "Störer wählt den Druck",
+   "text": "Der Störer wechselt ab: Mal presst er voll, mal lässt er sich fallen. Presst er voll, braucht der Ballspieler oft einen Kontakt mehr. Lässt er sich fallen, ist der direkte Doppelpass möglich. Der Ballspieler schaut vor dem Pass, was der Störer macht, und entscheidet dann.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 30.9,
+      "y": 10.7,
+      "label": "7"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 69.1,
+      "y": 10,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 45.6,
+      "y": 22,
+      "label": "9"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 54.7,
+      "y": 22,
+      "label": "5"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 45.3,
+      "y": 38,
+      "label": "4"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 54.4,
+      "y": 38,
+      "label": "3"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 30.9,
+      "y": 49.6,
+      "label": "11"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 69.4,
+      "y": 48.9,
+      "label": "2"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 54.4,
+      "y": 55,
+      "label": "10"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 18,
+      "y": 3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b2",
+      "x": 71,
+      "y": 49.5
+     },
+     {
+      "id": "c1",
+      "x": 20.6,
+      "y": 3.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Pass durch",
+      "say": "Spieler zwei passt durch zu Spieler acht, Spieler drei kommt entgegen.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         70.6,
+         11.2
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n3",
+        "to": [
+         62.5,
+         25
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Voller Druck",
+      "say": "Spieler fünf presst diesmal voll und kommt ganz nah. Spieler acht nimmt den Ball mit einem Kontakt zur Seite.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         64,
+         12
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n8",
+        "to": [
+         70,
+         17
+        ],
+        "type": "dribbling",
+        "delay": 0.2,
+        "ball": "b2"
+       }
+      ]
+     },
+     {
+      "label": "Doppelpass trotzdem",
+      "say": "Dann spielt Spieler acht zu Spieler drei, läuft los und bekommt den Ball zurück.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         64.1,
+         25.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n8",
+        "to": [
+         60,
+         18
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "b2",
+        "to": [
+         58.6,
+         17.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

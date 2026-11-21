@@ -1,0 +1,836 @@
+{
+ "title": "Dribbeln, drehen, Doppelpass",
+ "code": "UE-088",
+ "kind": "Übungsform",
+ "focuses": [
+  "Dribbling",
+  "Passspiel",
+  "Zusammenspiel"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "duration_minutes": 15,
+ "players_min": 8,
+ "players_max": 12,
+ "field_size": "27 x 23 m",
+ "description": "An jeder Ecke des Feldes stehen zwei Spieler, einer davon mit Ball. Alle vier Ballspieler dribbeln gleichzeitig zu einem Hütchen im Mittelquadrat, drehen sich mit einem Kontakt und passen zur nächsten Station gegen den Uhrzeigersinn. Mit dem Spieler dort spielen sie einen Doppelpass und dribbeln zum nächsten Hütchen in der Mitte. So läuft der Ball ständig im Kreis.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 27 mal 23 Metern, in der Mitte ein kleines Quadrat von fünf mal fünf Metern mit vier Hütchen.",
+  "Verteilen: An jeder Ecke zwei Spieler, einer mit Ball.",
+  "Ablauf: Alle vier Ballspieler dribbeln gleichzeitig zu ihrem Hütchen in der Mitte, drehen mit einem Kontakt und passen zur nächsten Station gegen den Uhrzeigersinn. Dann Doppelpass mit dem Spieler dort und weiter zum nächsten Hütchen in der Mitte.",
+  "Pausen: Nach einer festen Zeit eine kurze Pause. Klappt es mit vier Bällen noch nicht, erst mit zwei Bällen beginnen."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Den Ball beim Dribbeln eng unter Kontrolle halten",
+  "Schnelle Doppelpässe mit einem Kontakt",
+  "Kopf hoch und vor jedem Pass rufen",
+  "Genau und mit dem richtigen Tempo passen, damit alles im Fluss bleibt"
+ ],
+ "materials": [
+  "8 Hütchen",
+  "4 Bälle"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Dribbeln, drehen, Doppelpass. Vier Ballspieler arbeiten gleichzeitig, und der Ball läuft ständig im Kreis.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 21.5,
+    "y": 6.25,
+    "w": 57,
+    "h": 47.5
+   }
+  ],
+  "cones": [
+   {
+    "x": 21.5,
+    "y": 6.25,
+    "color": "orange"
+   },
+   {
+    "x": 78.5,
+    "y": 6.25,
+    "color": "orange"
+   },
+   {
+    "x": 21.5,
+    "y": 53.75,
+    "color": "orange"
+   },
+   {
+    "x": 78.5,
+    "y": 53.75,
+    "color": "orange"
+   },
+   {
+    "x": 45.25,
+    "y": 25.25,
+    "color": "orange"
+   },
+   {
+    "x": 54.75,
+    "y": 25.25,
+    "color": "orange"
+   },
+   {
+    "x": 45.25,
+    "y": 34.75,
+    "color": "orange"
+   },
+   {
+    "x": 54.75,
+    "y": 34.75,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n1",
+    "team": "a",
+    "x": 30,
+    "y": 10,
+    "label": "1"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 70,
+    "y": 10,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 70,
+    "y": 50,
+    "label": "3"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 30,
+    "y": 50,
+    "label": "4"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 21.5,
+    "y": 6.25,
+    "label": "5"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 78.5,
+    "y": 6.25,
+    "label": "6"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 78.5,
+    "y": 53.75,
+    "label": "7"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 21.5,
+    "y": 53.75,
+    "label": "8"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 88,
+    "y": 30,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 31.6,
+    "y": 10.6
+   },
+   {
+    "id": "b2",
+    "x": 71.6,
+    "y": 10.6
+   },
+   {
+    "id": "b3",
+    "x": 71.6,
+    "y": 50.6
+   },
+   {
+    "id": "b4",
+    "x": 31.6,
+    "y": 50.6
+   }
+  ],
+  "steps": [
+   {
+    "label": "Alle dribbeln zur Mitte",
+    "say": "Alle vier Ballspieler dribbeln gleichzeitig zu ihrem Hütchen im Mittelquadrat.",
+    "moves": [
+     {
+      "who": "n1",
+      "to": [
+       43.6,
+       23.6
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n2",
+      "to": [
+       56.4,
+       23.6
+      ],
+      "type": "dribbling",
+      "ball": "b2"
+     },
+     {
+      "who": "n3",
+      "to": [
+       56.4,
+       36.4
+      ],
+      "type": "dribbling",
+      "ball": "b3"
+     },
+     {
+      "who": "n4",
+      "to": [
+       43.6,
+       36.4
+      ],
+      "type": "dribbling",
+      "ball": "b4"
+     }
+    ]
+   },
+   {
+    "label": "Drehen und passen",
+    "say": "Am Hütchen drehen sich alle mit einem Kontakt und passen gleichzeitig zur nächsten Station gegen den Uhrzeigersinn.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       23,
+       52
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b2",
+      "to": [
+       23,
+       8
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b3",
+      "to": [
+       77,
+       8
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b4",
+      "to": [
+       77,
+       52
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Doppelpass",
+    "say": "Gleichzeitig laufen alle ihrem Pass hinterher, und der Spieler an der Station spielt direkt zurück.",
+    "moves": [
+     {
+      "who": "n1",
+      "to": [
+       31,
+       41
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       32.6,
+       41.6
+      ],
+      "type": "pass",
+      "delay": 0.3
+     },
+     {
+      "who": "n2",
+      "to": [
+       34,
+       15
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b2",
+      "to": [
+       35.6,
+       15.6
+      ],
+      "type": "pass",
+      "delay": 0.3
+     },
+     {
+      "who": "n3",
+      "to": [
+       69,
+       19
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b3",
+      "to": [
+       70.6,
+       19.6
+      ],
+      "type": "pass",
+      "delay": 0.3
+     },
+     {
+      "who": "n4",
+      "to": [
+       66,
+       45
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b4",
+      "to": [
+       67.6,
+       45.6
+      ],
+      "type": "pass",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Zum nächsten Hütchen",
+    "say": "Alle dribbeln zum nächsten Hütchen in der Mitte, und alles beginnt von vorn.",
+    "moves": [
+     {
+      "who": "n1",
+      "to": [
+       43.6,
+       36.4
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n2",
+      "to": [
+       43.6,
+       23.6
+      ],
+      "type": "dribbling",
+      "ball": "b2"
+     },
+     {
+      "who": "n3",
+      "to": [
+       56.4,
+       23.6
+      ],
+      "type": "dribbling",
+      "ball": "b3"
+     },
+     {
+      "who": "n4",
+      "to": [
+       56.4,
+       36.4
+      ],
+      "type": "dribbling",
+      "ball": "b4"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 21.5,
+    "y1": 58.6,
+    "x2": 78.5,
+    "y2": 58.6,
+    "text": "27 m"
+   },
+   {
+    "x1": 95,
+    "y1": 6.25,
+    "x2": 95,
+    "y2": 53.75,
+    "text": "23 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Am Hütchen schnell drehen, ohne den Ball zu verlieren.",
+   "title": "Schnell drehen am Hütchen",
+   "text": "Am Hütchen dreht sich der Spieler mit einem Kontakt in die Richtung des nächsten Passes. Der Ball bleibt dabei eng am Fuß, der Kopf geht schon vorher hoch. Je sauberer die Drehung, desto flüssiger läuft die ganze Übung.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 42,
+      "y": 21,
+      "label": "1"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 58,
+      "y": 21,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 58,
+      "y": 39,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 42,
+      "y": 39,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 21.5,
+      "y": 6.25,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 78.5,
+      "y": 6.25,
+      "label": "6"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 78.5,
+      "y": 53.75,
+      "label": "7"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 21.5,
+      "y": 53.75,
+      "label": "8"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 88,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 43.6,
+      "y": 21.6
+     },
+     {
+      "id": "b2",
+      "x": 59.6,
+      "y": 21.6
+     },
+     {
+      "id": "b3",
+      "x": 59.6,
+      "y": 39.6
+     },
+     {
+      "id": "b4",
+      "x": 43.6,
+      "y": 39.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Mit einem Kontakt drehen",
+      "say": "Alle vier drehen sich gleichzeitig mit einem Kontakt zur nächsten Station.",
+      "moves": [
+       {
+        "who": "n1",
+        "to": [
+         40.5,
+         23
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n2",
+        "to": [
+         59.5,
+         19
+        ],
+        "type": "dribbling",
+        "ball": "b2"
+       },
+       {
+        "who": "n3",
+        "to": [
+         60,
+         37.5
+        ],
+        "type": "dribbling",
+        "ball": "b3"
+       },
+       {
+        "who": "n4",
+        "to": [
+         40.5,
+         41
+        ],
+        "type": "dribbling",
+        "ball": "b4"
+       }
+      ]
+     },
+     {
+      "label": "Pass in die neue Richtung",
+      "say": "Sofort folgt der Pass zur nächsten Station.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         23,
+         52
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b2",
+        "to": [
+         23,
+         8
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b3",
+        "to": [
+         77,
+         8
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b4",
+        "to": [
+         77,
+         52
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Erst an der Linie entlang dribbeln, dann Doppelpass mit dem Eckspieler.",
+   "title": "An der Linie entlang",
+   "text": "Die Ballspieler dribbeln zuerst an der Außenlinie entlang, spielen einen Doppelpass mit dem Spieler an der nächsten Ecke und dribbeln dann zum Hütchen in der Mitte. Von dort passen sie zur nächsten Station und laufen ihrem Pass bis in die Ecke hinterher. Alle Stationen arbeiten gleichzeitig, wir schauen auf zwei davon.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 30,
+      "y": 10,
+      "label": "1"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 69,
+      "y": 17,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 70,
+      "y": 50,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 31,
+      "y": 43,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 21.5,
+      "y": 6.25,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 78.5,
+      "y": 6.25,
+      "label": "6"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 78.5,
+      "y": 53.75,
+      "label": "7"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 21.5,
+      "y": 53.75,
+      "label": "8"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 88,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 31.6,
+      "y": 10.6
+     },
+     {
+      "id": "b2",
+      "x": 70.6,
+      "y": 17.6
+     },
+     {
+      "id": "b3",
+      "x": 71.6,
+      "y": 50.6
+     },
+     {
+      "id": "b4",
+      "x": 32.6,
+      "y": 43.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "An der Linie entlang",
+      "say": "Alle dribbeln gleichzeitig an ihrer Außenlinie entlang, Spieler eins oben und Spieler drei unten.",
+      "moves": [
+       {
+        "who": "n1",
+        "to": [
+         50,
+         9.5
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n3",
+        "to": [
+         50,
+         50.5
+        ],
+        "type": "dribbling",
+        "ball": "b3"
+       },
+       {
+        "who": "n2",
+        "to": [
+         75,
+         32
+        ],
+        "type": "dribbling",
+        "ball": "b2"
+       },
+       {
+        "who": "n4",
+        "to": [
+         25,
+         28
+        ],
+        "type": "dribbling",
+        "ball": "b4"
+       }
+      ]
+     },
+     {
+      "label": "Doppelpass mit dem Eckspieler",
+      "say": "Beide spielen einen Doppelpass mit dem Spieler an der nächsten Ecke.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         77,
+         8
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n1",
+        "to": [
+         60,
+         17
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "b1",
+        "to": [
+         61.6,
+         17.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b3",
+        "to": [
+         23,
+         52
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n3",
+        "to": [
+         40,
+         43
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "b3",
+        "to": [
+         41.6,
+         43.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Zur Mitte und weiter",
+      "say": "Beide dribbeln zum Hütchen in der Mitte, passen zur nächsten Station und laufen dem Pass in die Ecke hinterher.",
+      "moves": [
+       {
+        "who": "n1",
+        "to": [
+         56.4,
+         23.6
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         77,
+         52
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n1",
+        "to": [
+         72,
+         47
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n3",
+        "to": [
+         43.6,
+         36.4
+        ],
+        "type": "dribbling",
+        "ball": "b3"
+       },
+       {
+        "who": "b3",
+        "to": [
+         23,
+         8
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n3",
+        "to": [
+         28,
+         13
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

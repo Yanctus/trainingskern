@@ -1,0 +1,690 @@
+{
+ "title": "Überzahl im letzten Drittel",
+ "code": "UE-089",
+ "kind": "Spielform",
+ "focuses": [
+  "Zusammenspiel",
+  "Torschuss",
+  "Umschalten"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "duration_minutes": 15,
+ "players_min": 12,
+ "players_max": 14,
+ "field_size": "41 x 32 m",
+ "description": "Drei Angreifer starten beim eigenen Torwart und spielen in der ersten Zone drei gegen einen. Sobald sie in die zweite Zone kommen, spielen sie drei gegen zwei und haben nur wenige Sekunden zum Abschluss. Erobern die Verteidiger den Ball, kommt ein vierter Verteidiger von der Seite dazu, und es gibt einen Konter vier gegen drei aufs andere Tor.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 41 mal 32 Metern mit einem Tor und Torwart an jedem Ende. In der Mitte geteilt in zwei Zonen.",
+  "Verteilen: Drei Angreifer starten beim Torwart. In der ersten Zone ein Verteidiger, in der zweiten Zone zwei Verteidiger. Ein vierter Verteidiger wartet an der Seitenlinie.",
+  "Ablauf: Drei gegen eins in der ersten Zone, dann drei gegen zwei in der zweiten Zone. Ab dem Eintritt in die zweite Zone haben die Angreifer etwa fünf Sekunden für den Abschluss. Jedes Tor gibt einen Punkt.",
+  "Konter und Wechsel: Gewinnen die Verteidiger den Ball, kommt der vierte Verteidiger dazu, und sie kontern vier gegen drei, jetzt mit Abseits. Nach jedem Angriff wechselt ein Verteidiger, die drei Angreifer nach zwei oder drei Angriffen."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Schauen, wo die Verteidiger stehen, und den Raum nutzen, den sie nicht abdecken",
+  "Steilpässe mit gutem Tempo und im richtigen Moment spielen",
+  "Das Tempo des Angriffs an die Abwehr anpassen und mit Positionswechseln Unruhe stiften",
+  "Nach Ballgewinn sofort und schnell kontern"
+ ],
+ "materials": [
+  "2 Tore",
+  "6 Hütchen",
+  "Leibchen in zwei Farben",
+  "Viele Bälle beim Trainer"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Überzahl im letzten Drittel. Erst drei gegen eins, dann drei gegen zwei, und bei Ballverlust kommt der Konter.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 10,
+    "y": 7,
+    "w": 80,
+    "h": 46
+   },
+   {
+    "type": "line",
+    "x1": 50,
+    "y1": 7,
+    "x2": 50,
+    "y2": 53,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 23,
+    "y1": 7,
+    "x2": 23,
+    "y2": 53,
+    "dashed": true
+   }
+  ],
+  "cones": [
+   {
+    "x": 10,
+    "y": 7,
+    "color": "orange"
+   },
+   {
+    "x": 90,
+    "y": 7,
+    "color": "orange"
+   },
+   {
+    "x": 10,
+    "y": 53,
+    "color": "orange"
+   },
+   {
+    "x": 90,
+    "y": 53,
+    "color": "orange"
+   }
+  ],
+  "goals": [
+   {
+    "x": 10,
+    "y": 30,
+    "side": "left"
+   },
+   {
+    "x": 90,
+    "y": 30,
+    "side": "right"
+   }
+  ],
+  "players": [
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 29.5,
+    "y": 20,
+    "label": "8"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 38,
+    "y": 33,
+    "label": "9"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 29.5,
+    "y": 46,
+    "label": "10"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 4,
+    "y": 40,
+    "label": "7"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 4,
+    "y": 18,
+    "label": "11"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 69.4,
+    "y": 3,
+    "label": "3"
+   },
+   {
+    "id": "r4",
+    "team": "b",
+    "x": 47,
+    "y": 30,
+    "label": "4"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 70,
+    "y": 20.8,
+    "label": "5"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 72.2,
+    "y": 40.7,
+    "label": "6"
+   },
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 13,
+    "y": 30,
+    "label": "TW"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 87,
+    "y": 30,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 20,
+    "y": 2.5,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 14.6,
+    "y": 30.6
+   },
+   {
+    "id": "c1",
+    "x": 22.6,
+    "y": 3.1
+   }
+  ],
+  "steps": [
+   {
+    "label": "Start beim Torwart",
+    "say": "Der Torwart spielt Neon zehn an. Rot vier kommt sofort heraus.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       31.1,
+       46.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r4",
+      "to": [
+       42,
+       36
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Drei gegen eins",
+    "say": "Neon zehn spielt zu Neon neun. Gleichzeitig startet Neon acht in die zweite Zone, und Neon neun spielt ihn steil an.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       39.6,
+       33.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n8",
+      "to": [
+       56,
+       22
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       57.6,
+       22.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Drei gegen zwei",
+    "say": "In der zweiten Zone kommt Rot fünf auf Neon acht zu. Neon neun läuft mit und bekommt den Querpass.",
+    "moves": [
+     {
+      "who": "r5",
+      "to": [
+       64,
+       22
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n9",
+      "to": [
+       60,
+       34
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       61.6,
+       34.6
+      ],
+      "type": "pass",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "Abschluss: Punkt",
+    "say": "Neon neun schießt schnell, bevor Rot sechs herankommt, und das gibt einen Punkt für Neon.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       90,
+       35
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r6",
+      "to": [
+       68,
+       37
+      ],
+      "type": "lauf"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 10,
+    "y1": 58.6,
+    "x2": 90,
+    "y2": 58.6,
+    "text": "41 m"
+   },
+   {
+    "x1": 96,
+    "y1": 7,
+    "x2": 96,
+    "y2": 53,
+    "text": "32 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Die Überzahl lässt viel Platz, den schnell nutzen.",
+   "title": "Den freien Raum nutzen",
+   "text": "Ein einzelner Verteidiger kann nicht alle drei Angreifer decken. Irgendwo ist immer viel Platz. Wer das früh erkennt, dribbelt schnell hinein in die zweite Zone, bevor der Verteidiger reagieren kann.",
+   "board": {
+    "players": [
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 36,
+      "y": 30,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 38,
+      "y": 14,
+      "label": "9"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 34,
+      "y": 46,
+      "label": "10"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 4,
+      "y": 40,
+      "label": "7"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 4,
+      "y": 18,
+      "label": "11"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 69.4,
+      "y": 3,
+      "label": "3"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 47,
+      "y": 25,
+      "label": "4"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 70,
+      "y": 20.8,
+      "label": "5"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 72.2,
+      "y": 40.7,
+      "label": "6"
+     },
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 13,
+      "y": 30,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 87,
+      "y": 30,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 20,
+      "y": 2.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 35.6,
+      "y": 46.6
+     },
+     {
+      "id": "c1",
+      "x": 22.6,
+      "y": 3.1
+     }
+    ],
+    "steps": [
+     {
+      "label": "Lücke erkennen",
+      "say": "Rot vier steht zwischen Neon acht und Neon neun. Unten ist viel Platz, und Neon zehn dribbelt sofort los.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         52,
+         46
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Schnell hinein",
+      "say": "Neon zehn dribbelt in die zweite Zone, und Neon acht läuft mit. Neon zehn passt zu ihm.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         64,
+         45
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n8",
+        "to": [
+         58,
+         28
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "b1",
+        "to": [
+         59.6,
+         28.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Abschluss: Punkt",
+      "say": "Neon acht schießt sofort, und das gibt einen Punkt für Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         90,
+         24
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Erobern die Verteidiger den Ball, kommt der vierte dazu, und es geht vier gegen drei.",
+   "title": "Konter vier gegen drei",
+   "text": "Gewinnen die Verteidiger den Ball, schalten sie sofort um. Der vierte Verteidiger kommt von der Seitenlinie dazu, und sie kontern zu viert gegen drei aufs andere Tor. Jetzt gilt Abseits. Schnell spielen, bevor die Angreifer zurück sind.",
+   "board": {
+    "players": [
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 66,
+      "y": 26,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 57,
+      "y": 42,
+      "label": "9"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 50,
+      "y": 9,
+      "label": "10"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 4,
+      "y": 40,
+      "label": "7"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 4,
+      "y": 18,
+      "label": "11"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 69.4,
+      "y": 3,
+      "label": "3"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 45,
+      "y": 32,
+      "label": "4"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 75,
+      "y": 22,
+      "label": "5"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 72,
+      "y": 44,
+      "label": "6"
+     },
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 13,
+      "y": 30,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 87,
+      "y": 30,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 20,
+      "y": 2.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 67.6,
+      "y": 26.6
+     },
+     {
+      "id": "c1",
+      "x": 22.6,
+      "y": 3.1
+     }
+    ],
+    "steps": [
+     {
+      "label": "Ball erobert",
+      "say": "Rot fünf geht dazwischen und erobert den Ball von Neon acht.",
+      "moves": [
+       {
+        "who": "r5",
+        "to": [
+         71,
+         29
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         72.6,
+         29.6
+        ],
+        "type": "pass",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Der Vierte kommt dazu",
+      "say": "Gleichzeitig spielt Rot fünf sofort zu Rot vier, und Rot drei startet von der Seitenlinie in den Konter.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         46.6,
+         32.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r3",
+        "to": [
+         56,
+         14
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r3",
+        "to": [
+         36,
+         18
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Konter: Punkt",
+      "say": "Rot vier spielt in den Lauf von Rot drei, und der schießt ins Tor. Das gibt einen Punkt für Rot.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         37.6,
+         18.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         10,
+         26
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
