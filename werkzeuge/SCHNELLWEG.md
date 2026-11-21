@@ -1,0 +1,44 @@
+# Schnellweg: Woche für Woche Übungen nachbauen (Stand 21.11.2026)
+
+Ziel: alle restlichen Wochen (21 bis 42) nacheinander, richtig, geprüft und mit wenig Tokens. Diese Werkzeuge liegen im GitHub-Repo
+(`werkzeuge/`) und sind in jeder neuen Sitzung sofort da, ohne sie aus der App zu kopieren. Maßgeblich für Regeln und Tafel bleibt die
+README der App (Abschnitte „Übungen aus Video nachbauen“, „Laufweg-Abgleich“, „Prüfliste“). Pro Chat 2 Wochen, dann neuen Chat starten.
+
+## Einmal pro Sitzung
+- `base44_readme` aufrufen. Werkzeuge: `cd werkzeuge` (liegt im Repo). Nichts aus der App kopieren.
+- Nächsten Code holen: `python3 werkbank.py lesen UE-0xx x.json` zum Prüfen, ob ein Code schon belegt ist (siehe README der App: „nächster Code“).
+
+## Pro Woche
+1. `python3 werkbank.py holen <Woche>` (Video, PDF, Text, Übersicht).
+2. Pro Übung ansehen (sparsam, jedes Bild kostet): `text.txt` lesen, `pdf-1.png`, `pdf-2.png`, `uebersicht.png`.
+   Dann gezielt `szene <Ordner> <von> <bis>` nur für die Abschnitte mit Laufwegen (Grundform, jede Fassung). Abschnitte aus der
+   Übersicht ablesen: Bild n (ab 0) liegt bei n × Dauer/25 Sekunden.
+3. Pro Schritt notieren: wer, von wo, über welche Zwischenpunkte, welche Seite, wann (vor/nach dem Pass), wohin der Pass.
+4. `python3 werkbank.py vorgaben "<Übungsname>"` für Altersstufen und Dauer (stehen nicht im PDF; feste Regel).
+
+## Pro Einheit (JSON nur EINMAL schreiben)
+1. `create_entities` klein: `{"code","title","kind","duration_minutes","hidden":true,"access":"abo"}` (Antwort ist klein).
+2. `update_entities` mit `{"$set": {…alle übrigen Felder…}}`. Felder mit `null` weglassen (spart Tokens). Antwort ist nur eine Zahl.
+3. `python3 werkbank.py lesen UE-0xx e.json` (kostenlos) → `pruefen e.json --fix` → bei Änderungen
+   `python3 werkbank.py lesen UE-0xx db.json` und `patch db.json e.json` → nur diesen `$set` senden.
+   Wiederholen bis „Rest: 0“ und „Regeln: 0 Hinweise“ (bis auf „hidden false“, das kommt zuletzt).
+4. `python3 werkbank.py blatt e.json` → EIN Bild mit 2D-Laufwegen und 3D aller Tafeln. Jeden Weg mit PDF/Video vergleichen.
+5. Zum Schluss `$set {"hidden": false}` (zugleich das zweite Speichern). Dann `lesen` in `e2.json` und
+   `vergleichen e.json e2.json` → „0 Abweichungen“.
+6. Prüfstand in der Sandbox (alle Tafeln, beide Browser), ein Aufruf für die ganze Woche:
+   `run_command`: `nohup sh tools/pruefstand/alle.sh UE-0xx UE-0yy UE-0zz > /tmp/alle.log 2>&1 &`
+   dann alle 3 bis 4 Minuten `grep -E "^(===|FEHLER|ALLES)" /tmp/alle.log` (sonst schläft die Sandbox ein und /tmp ist weg).
+   Jede Zeile muss „PRÜFSTAND: ok“ haben. „viele lange Bilder“ direkt nach dem Aufwachen der Sandbox einmal wiederholen.
+7. Live-Check (erlaubt vom Inhaber): `update_entities` mit Query `{"code":{"$in":[…]}}` und `$set {"access":"frei"}`,
+   dann `NODE_PATH=$(npm root -g) node live.js wochen.png <id> <id> <id>` (EIN Kontaktbild: Kopf und 9 Bilder der laufenden Story),
+   danach sofort `$set {"access":"abo"}` für dieselben Codes.
+
+## Bericht (kurz)
+Je Einheit: Link `https://trainingskern.de/einheiten/<id>`, was vom Original abweicht, was nicht geprüft ist. Keine Tonspur aufnehmen.
+
+## Was Tokens kostet (und was nicht)
+- Teuer: ganze Einheiten in Tool-Aufrufen (deshalb nur einmal schreiben, danach `patch`), Bilder (nur die nötigen), `query_entities`
+  mit ganzen Einheiten (stattdessen `werkbank.py lesen`).
+- Kostenlos: `lesen`, `pruefen`, `vergleichen`, `patch`, Prüfstand-Lauf (nur das Log lesen).
+- Nicht möglich: direkt per curl in die Datenbank schreiben (das App-Token zu holen ist in dieser Umgebung gesperrt). Schreiben nur mit
+  `create_entities` und `update_entities`.
