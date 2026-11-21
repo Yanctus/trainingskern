@@ -14,7 +14,7 @@ u = {"title": "Verteidigen zu zweit: pressen und absichern", "code": "UE-062", "
  "organisation_show": ORG,
  "coaching_points": ["Das Tor als Paar verteidigen: einer presst, einer sichert ab", "Den Gegner mit der Körperstellung vom Tor weglenken", "Gemeinsam festlegen, wann gepresst wird", "Im Angriff schnell nachrücken, damit ein 3 gegen 2 entsteht"],
  "materials": ["2 Minitore", "4 orange Hütchen", "6 gelbe Hütchen", "Leibchen in zwei Farben", "Bälle beim Trainer"],
- "access": "abo", "hidden": True,
+ "access": "frei", "hidden": True,
  "say_intro": "Verteidigen zu zweit. Hier lernen zwei Verteidiger, gemeinsam zu pressen, abzusichern und nach dem Ballgewinn sofort zu kontern.",
  "board": {"lines": lines,
   "players": [P("n2", "a", 24.2, 13.6, "2"), P("n3", "a", 29.6, 45.6, "3"), P("n9", "a", 57, 17.1, "9"), P("n7", "a", 57.4, 42.1, "7"),

@@ -364,8 +364,8 @@ def lesen(codes, ziel):
 def _patch(a, b, pfad, out):
     """kleinste $set-Liste, die a (Datenbank) in b (Datei) verwandelt"""
     if isinstance(a, dict) and isinstance(b, dict):
-        for k in set(a) | set(b):
-            if k in META or k == "audio":
+        for k in b:  # nur was in der neuen Datei steht; fehlende Felder gelten als unverändert
+            if k in META or k == "audio" or (b[k] is None and a.get(k) in (None, [], "")):
                 continue
             _patch(a.get(k), b.get(k), f"{pfad}.{k}" if pfad else k, out)
     elif isinstance(a, list) and isinstance(b, list) and len(a) == len(b) and a and isinstance(a[0], (dict, list)):

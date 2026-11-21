@@ -18,6 +18,19 @@ README der App (Abschnitte „Übungen aus Video nachbauen“, „Laufweg-Abglei
 3. Pro Schritt notieren: wer, von wo, über welche Zwischenpunkte, welche Seite, wann (vor/nach dem Pass), wohin der Pass.
 4. `python3 werkbank.py vorgaben "<Übungsname>"` für Altersstufen und Dauer (stehen nicht im PDF; feste Regel).
 
+## Feste Regeln (vom Inhaber, 21.11.2026)
+- **Titel kurz** wie bei UE-001 bis UE-030: höchstens 32 Zeichen, kein Untertitel nach dem Doppelpunkt (z. B. „Verteidigen zu zweit“).
+- **Ein Tor ist immer ein Punkt:** „…, und das gibt einen Punkt für Team Neon“ (oder für Spieler X), nie „das gibt ein Tor“. Label „…: Punkt“.
+- **Fangen, nicht abschlagen:** Kinder fangen sich (berühren), sie schlagen nicht ab.
+- **Alle gleichzeitig:** Machen alle Spieler gleichzeitig dasselbe (Fangspiele, Staffeln), das in Text und Bühne sagen („Alle laufen
+  gleichzeitig … Wir schauen auf Spieler sechs“) und auf der Bühne auch andere Spieler parallel handeln lassen.
+- **Geteiltes Feld:** Hälften und Linien als gestrichelte `line` einzeichnen (erscheinen grau). Nur in einer Fassung: dort `lines` = alle
+  Linien der Grundform plus die neuen.
+- **Zonen farbig:** `{"type":"zone", …}`; Zonen von Team Rot mit `"color":"orange"`, sonst neon. Keine gestrichelten Rechtecke für Zonen.
+- **Neue Einheiten gleich `access: "frei"`**, der Inhaber stellt am Ende alle auf Pro.
+- **Wenig Prüfläufe:** kostenlos und immer: `pruefen`, `blatt`, `vergleichen`. Prüfstand nur nach Änderungen am Player-Code oder wenn
+  das Blatt etwas Seltsames zeigt (dann nur Chromium). Live-Check einmal pro Woche mit `live.js` (Einheiten sind ja frei).
+
 ## Feste Begriffe (vom Inhaber)
 - **Springer sind immer neutrale Spieler:** `team: "t"`, Label „F“, spielen für das Team in Ballbesitz, im Text „Springer“.
 - Einheiten dürfen zum Live-Check kurz auf „frei“, danach sofort zurück auf „abo“.
@@ -27,7 +40,7 @@ README der App (Abschnitte „Übungen aus Video nachbauen“, „Laufweg-Abglei
 ## Pro Einheit (JSON nur EINMAL schreiben)
 Einheit als kleines Python-Skript in `werkzeuge/bau/ue0xx.py` bauen (Bausteine in `bau/hilfe.py`, Vorbild `bau/ue061.py` bis `ue063.py`),
 `python3 bau/ue0xx.py e.json`, dann:
-1. `create_entities` klein: `{"code","title","kind","duration_minutes","hidden":true,"access":"abo"}` (Antwort ist klein).
+1. `create_entities` klein: `{"code","title","kind","duration_minutes","hidden":true,"access":"frei"}` (Antwort ist klein).
 2. `update_entities` mit `{"$set": {…alle übrigen Felder…}}`. Felder mit `null` weglassen (spart Tokens). Antwort ist nur eine Zahl.
 3. `python3 werkbank.py lesen UE-0xx e.json` (kostenlos) → `pruefen e.json --fix` → bei Änderungen
    `python3 werkbank.py lesen UE-0xx db.json` und `patch db.json e.json` → nur diesen `$set` senden.
@@ -35,13 +48,12 @@ Einheit als kleines Python-Skript in `werkzeuge/bau/ue0xx.py` bauen (Bausteine i
 4. `python3 werkbank.py blatt e.json` → EIN Bild mit 2D-Laufwegen und 3D aller Tafeln. Jeden Weg mit PDF/Video vergleichen.
 5. Zum Schluss `$set {"hidden": false}` (zugleich das zweite Speichern). Dann `lesen` in `e2.json` und
    `vergleichen e.json e2.json` → „0 Abweichungen“.
-6. Prüfstand in der Sandbox (alle Tafeln, beide Browser), ein Aufruf für die ganze Woche:
+6. (Nur bei Bedarf, siehe „Wenig Prüfläufe“) Prüfstand in der Sandbox, ein Aufruf für die ganze Woche:
    `run_command`: `nohup sh tools/pruefstand/alle.sh UE-0xx UE-0yy UE-0zz > /tmp/alle.log 2>&1 &`
    dann alle 3 bis 4 Minuten `grep -E "^(===|FEHLER|ALLES)" /tmp/alle.log` (sonst schläft die Sandbox ein und /tmp ist weg).
    Jede Zeile muss „PRÜFSTAND: ok“ haben. „viele lange Bilder“ direkt nach dem Aufwachen der Sandbox einmal wiederholen.
-7. Live-Check (erlaubt vom Inhaber): `update_entities` mit Query `{"code":{"$in":[…]}}` und `$set {"access":"frei"}`,
-   dann `NODE_PATH=$(npm root -g) node live.js wochen.png <id> <id> <id>` (EIN Kontaktbild: Kopf und 9 Bilder der laufenden Story),
-   danach sofort `$set {"access":"abo"}` für dieselben Codes.
+7. Live-Check einmal pro Woche: `NODE_PATH=$(npm root -g) node live.js wochen.png <id> <id> <id>` (EIN Kontaktbild: Kopf und
+   9 Bilder der laufenden Story). Neue Einheiten stehen auf „frei“, daher ohne Umstellen.
 
 ## Bericht (kurz)
 Je Einheit: Link `https://trainingskern.de/einheiten/<id>`, was vom Original abweicht, was nicht geprüft ist. Keine Tonspur aufnehmen.

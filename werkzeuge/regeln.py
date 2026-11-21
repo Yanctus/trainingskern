@@ -151,6 +151,9 @@ def regeln(u):
     for w in re.findall(r"[^\s:,;.–-]+", u.get("title") or ""):
         if len(w) > 14:
             out.append(f"{code}: Wort '{w}' im Titel ist zu lang für die Überschrift am Handy (höchstens 14 Buchstaben)")
+    # Kurze Titel wie bei UE-001 bis UE-030 (meist unter 30 Zeichen): kein langer Untertitel nach dem Doppelpunkt
+    if len(u.get("title") or "") > 32:
+        out.append(f"{code}: Titel ist zu lang ({len(u['title'])} Zeichen), höchstens 32 wie bei den ersten Übungen")
     if u.get("kind") not in KINDS:
         out.append(f"{code}: kind muss Übungsform oder Spielform sein")
     if not set(u.get("focuses") or []) <= FOCUSES or not 2 <= len(u.get("focuses") or []) <= 3:
@@ -161,8 +164,8 @@ def regeln(u):
         out.append(f"{code}: duration_minutes 10-20")
     if (u.get("players_min") or 0) > (u.get("players_max") or 0):
         out.append(f"{code}: players_min größer als players_max")
-    if u.get("access") != "abo" or u.get("hidden") is not False:
-        out.append(f"{code}: access muss 'abo' und hidden false sein")
+    if u.get("access") not in ("abo", "frei") or u.get("hidden") is not False:
+        out.append(f"{code}: access muss 'abo' oder 'frei' (neue Einheiten erst frei, der Inhaber stellt sie auf Pro) und hidden false sein")
     if not 3 <= len((u.get("description") or "").split(". ")) <= 6:
         out.append(f"{code}: description soll 3-4 Sätze haben")
     org = u.get("organisation") or []
@@ -207,5 +210,11 @@ def regeln(u):
         if re.search(r"\d", t):
             out.append(f"{where}: Ziffer im Sprechtext, Zahlen ausschreiben")
         if re.search(r"\b(Punkt|Tor|Punkte)\.$", t.strip()) and "gibt" not in t:
-            out.append(f"{where}: Ergebnis als Satz sprechen ('das gibt ein Tor')")
+            out.append(f"{where}: Ergebnis als Satz sprechen ('das gibt einen Punkt für Team Neon')")
+        # Vom Inhaber: Ein Tor zählt immer als Punkt für das Team oder den Spieler. Kinder fangen (berühren), sie schlagen nicht ab.
+        if re.search(r"gibt ein Tor", t):
+            out.append(f"{where}: 'das gibt einen Punkt' statt 'das gibt ein Tor'")
+    for where, t in texts + [(f"{code} description", u.get("description") or ""), (f"{code} organisation", " ".join(u.get("organisation") or []))]:
+        if re.search(r"(?i)abschlag|abgeschlagen|abschläg|schlägt .* ab|abzuschlagen", t):
+            out.append(f"{where}: nicht 'abschlagen', sondern 'fangen' (berühren)")
     return out
