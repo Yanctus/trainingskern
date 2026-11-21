@@ -2,7 +2,7 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # WU-38: 25 x 20 Yards = x 20-80, y 5-53. Hindernisse wie im PDF verteilt: 2 Minitore, 3 Stangen, 4 Hürden (orange Hütchen), 2 Fahnen (gelbe Hütchen).
 T = P("T", "c", 12, 52, "T")
 hind = [C(41.7, 21.3, "neon", shape="stange"), C(61.4, 36, "neon", shape="stange"), C(48.6, 29, "neon", shape="stange"),
-        C(37.4, 8.1), C(24.9, 21.6), C(73.5, 36.7), C(58, 50), C(30.9, 14.7, "neon"), C(67.4, 41.8, "neon")]
+        C(37.4, 8.1, shape="huerde"), C(24.9, 21.6, shape="huerde"), C(73.5, 36.7, shape="huerde"), C(58, 50, shape="huerde"), C(30.9, 14.7, "neon"), C(67.4, 41.8, "neon")]
 goals = [{"x": 62.3, "y": 15.5, "side": "top"}, {"x": 35.8, "y": 40.6, "side": "bottom"}]
 warte = [P("n3", "a", 11, 20, "3"), P("n4", "a", 11, 36, "4"), P("r6", "b", 88, 48, "6"), P("r7", "b", 88, 16, "7")]
 u = {"title": "Fangen mit Hindernissen", "code": "UE-078", "kind": "Spielform",
@@ -14,7 +14,7 @@ u = {"title": "Fangen mit Hindernissen", "code": "UE-078", "kind": "Spielform",
   "Wechsel: Nach zwei Durchgängen pro Spieler tauschen die Gruppen die Rollen."],
  "organisation_show": ORG,
  "coaching_points": ["Schnell die Richtung wechseln und mit Finten den Fänger abschütteln", "Ständig umschauen, um freien Raum zu finden", "Nach dem Haken explosiv wegsprinten, vorher kontrolliert abbremsen", "Den Fänger beobachten und den besten Fluchtweg wählen"],
- "materials": ["2 Minitore", "3 Stangen", "4 kleine Hürden oder Hütchen", "2 gelbe Hütchen", "Leibchen in zwei Farben"],
+ "materials": ["2 Minitore", "3 Stangen", "4 Minihürden", "2 gelbe Hütchen", "Leibchen in zwei Farben"],
  "access": "frei", "hidden": True,
  "say_intro": "Fangen mit Hindernissen. Ein Läufer gegen einen Fänger, und fünfzehn Sekunden muss er durchhalten.",
  "board": {"lines": [rect(20, 5, 60, 48)], "cones": hind, "goals": goals,

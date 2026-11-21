@@ -153,6 +153,11 @@ def svg(board, titel):
     for c in board.get("cones") or []:
         x, y = c["x"] * 10, c["y"] * 10
         col = "#c6ff3d" if c.get("color") == "neon" else "#ff7a1a"
+        if str(c.get("shape", "")).startswith("huerde"):
+            rot = ' transform="rotate(90 %s %s)"' % (x, y) if c.get("shape") == "huerde" else ""
+            o.append(f'<g{rot}><rect x="{x-24}" y="{y-9}" width="9" height="18" fill="{col}"/><rect x="{x+15}" y="{y-9}" width="9" height="18" fill="{col}"/>'
+                     f'<rect x="{x-22}" y="{y-4}" width="44" height="8" fill="{col}" stroke="#000"/></g>')
+            continue
         o.append(f'<rect x="{x-5}" y="{y-26}" width="10" height="34" fill="{col}"/>' if c.get("shape") == "stange"
                  else f'<path d="M{x-12},{y+10} L{x},{y-14} L{x+12},{y+10}Z" fill="{col}"/>')
     for p in board.get("players") or []:
@@ -208,7 +213,7 @@ body{margin:0;background:#11140d}
 .tok .up{position:absolute;transform-origin:50% 100%;transform:rotateX(calc(var(--up) * -90deg))}
 .tok .up svg{display:block;width:100%;height:100%;overflow:visible}
 .tok.fig .up{left:-43px;top:-143px;width:86px;height:143px}.tok.fig.t-c .up{left:-49px;top:-163px;width:98px;height:163px}
-.tok.cone .up{left:-22px;top:-52px;width:44px;height:52px}.tok.cone.pole .up{left:-14px;top:-80px;width:28px;height:80px}
+.tok.cone .up{left:-22px;top:-52px;width:44px;height:52px}.tok.cone.pole .up{left:-14px;top:-80px;width:28px;height:80px}.tok.cone.hurdle .up{left:-30px;top:-36px;width:60px;height:36px}
 .tok.ball .up{left:-14px;top:-29px;width:28px;height:28px}
 .tok .disc{position:absolute;left:-27px;top:-15px;width:54px;height:30px;border-radius:50%;background:var(--bib);box-shadow:0 0 0 3px var(--ink)}
 .tok.t-c .disc{box-shadow:0 0 0 3px var(--neon)}.tok.ball .disc{left:-13px;top:-5px;width:26px;height:11px;background:rgba(0,0,0,.6);box-shadow:none}
@@ -226,6 +231,9 @@ FIG = ('<svg viewBox="0 0 60 100"><g class="cut"><circle cx="30" cy="15" r="10"/
        '<path class="short" d="M18,57 h24 v16 h-10 l-2,-7 l-2,7 h-10 z"/><path class="bib" d="M19,28 Q30,33 41,28 L51,40 L44,46 L42,43 V60 H18 V43 L16,46 L9,40 Z"/>'
        '<circle class="head" cx="30" cy="15" r="10"/><text x="30" y="53">%s</text></svg>')
 BALL = '<svg viewBox="0 0 24 24"><circle class="ball" cx="12" cy="12" r="10"/><path class="dot" d="M12,7.5 L16,10.5 L14.5,15.5 H9.5 L8,10.5 Z"/></svg>'
+HURDLE = ('<svg viewBox="0 0 60 36"><path class="cut" d="M4,30 H20 V35 H4 Z M40,30 H56 V35 H40 Z M9,8 H15 V31 H9 Z M45,8 H51 V31 H45 Z M5,6 Q5,3 8,3 H52 Q55,3 55,6 V11 Q55,13 52,13 H8 Q5,13 5,11 Z"/>'
+          '<path class="cone" d="M9,8 H15 V31 H9 Z M45,8 H51 V31 H45 Z M4,30 H20 V35 H4 Z M40,30 H56 V35 H40 Z"/>'
+          '<path class="cone" d="M5,6 Q5,3 8,3 H52 Q55,3 55,6 V11 Q55,13 52,13 H8 Q5,13 5,11 Z"/><path class="band" d="M18,4.5 H25 V11.5 H18 Z M35,4.5 H42 V11.5 H35 Z"/></svg>')
 CONE = ('<svg viewBox="0 0 34 40"><path class="cut" d="M4,34 H30 V39 H4 Z M10,34 L15,5 Q17,2 19,5 L24,34 Z"/><path class="cone" d="M10,34 L15,5 Q17,2 19,5 L24,34 Z"/>'
         '<path class="band" d="M12.6,19 H21.4 L22.4,25 H11.6 Z"/><path class="cone" d="M4,34 H30 V39 H4 Z"/></svg>')
 
@@ -254,8 +262,9 @@ def html3d(board, titel):
         o.append(f'<text class="lb" x="{t["x"]*K}" y="{t["y"]*K}">{html.escape(t["text"])}</text>')
     o.append("</svg>")
     for c in b.get("cones") or []:
-        cls = "tok cone" + (" neon" if c.get("color") == "neon" else "")
-        o.append(f'<div class="{cls}" style="transform:translate3d({c["x"]*K}px,{c["y"]*K}px,0)"><div class="up">{CONE}</div></div>')
+        hu = str(c.get("shape", "")).startswith("huerde")
+        cls = "tok cone" + (" neon" if c.get("color") == "neon" else "") + (" hurdle" if hu else "")
+        o.append(f'<div class="{cls}" style="transform:translate3d({c["x"]*K}px,{c["y"]*K}px,0)"><div class="up">{HURDLE if hu else CONE}</div></div>')
     for p in b.get("balls") or []:
         o.append(f'<div class="tok ball" style="transform:translate3d({p["x"]*K}px,{p["y"]*K}px,0)"><i class="disc"></i><div class="up">{BALL}</div></div>')
     for p in b.get("players") or []:

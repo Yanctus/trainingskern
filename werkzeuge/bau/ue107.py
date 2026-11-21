@@ -6,10 +6,10 @@ def sp(**k):
     d = dict(POS); d.update(k)
     return [P(i, "a" if i[0] == "n" else "b", x, y, i[1:]) for i, (x, y) in d.items()] + [T]
 CB = [B("c1", 92.5, 44.6), B("c2", 89, 47.5)]
-HUERDEN = [line(47.5, y, 52.5, y, dashed=False) for y in (13, 17, 21, 39, 43, 47)]
+HUERDEN = [C(50, y, "neon", shape="huerde_ou") for y in (12, 16.5, 21, 39, 43.5, 48)]
 MARK = [C(x, y, "neon") for x, y in ((28, 24), (28, 36), (72, 24), (72, 36), (40, 30), (45, 30), (55, 30), (60, 30))]
 EZ = [{"type": "zone", "x": 22, "y": 24, "w": 6, "h": 12}, {"type": "zone", "x": 72, "y": 24, "w": 6, "h": 12}]
-LINES = [rect(22, 6, 56, 48)] + EZ + HUERDEN
+LINES = [rect(22, 6, 56, 48)] + EZ
 def hops(): return [mv("n5", [50, 44]), mv("n5", [46, 36], after=True), mv("r6", [50, 16]), mv("r6", [55, 24], after=True)]
 u = {"title": "Hürden, Täuschung, Sprint", "code": "UE-107", "kind": "Übungsform",
  "focuses": ["Schnelligkeit", "1 gegen 1", "Erwärmung"], "age_groups": ["F-Jugend", "E-Jugend", "D-Jugend", "C-Jugend"], "duration_minutes": 10, "players_min": 6, "players_max": 12, "field_size": "14 x 18 m",
@@ -23,7 +23,7 @@ u = {"title": "Hürden, Täuschung, Sprint", "code": "UE-107", "kind": "Übungsf
  "materials": ["6 kleine Hürden", "8 gelbe Hütchen", "Bälle beim Trainer", "2 Minitore für die zweite Steigerung", "Leibchen in zwei Farben"],
  "access": "frei", "hidden": True,
  "say_intro": "Hürden, Täuschung, Sprint. Über die Hürden springen, in der Mitte täuschen und in die Endzone sprinten.",
- "board": {"lines": LINES, "cones": MARK, "players": sp(), "balls": CB,
+ "board": {"lines": LINES, "cones": HUERDEN + MARK, "players": sp(), "balls": CB,
   "steps": [
    S("Über die Hürden", "Gleichzeitig springen Neon fünf und Rot sechs beidbeinig über die Hürden und stehen sich in der Mitte gegenüber.", *hops()),
    S("Täuschen und sprinten", "Neon fünf täuscht nach links an und sprintet dann nach rechts in die Endzone. Rot sechs fällt auf die Finte herein und sprintet zu spät hinterher.",
