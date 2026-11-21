@@ -56,6 +56,11 @@ Einheit als kleines Python-Skript in `werkzeuge/bau/ue0xx.py` bauen (Bausteine i
    Jede Zeile muss „PRÜFSTAND: ok“ haben. „viele lange Bilder“ direkt nach dem Aufwachen der Sandbox einmal wiederholen.
 7. Live-Check einmal pro Woche: `NODE_PATH=$(npm root -g) node live.js wochen.png <id> <id> <id>` (EIN Kontaktbild: Kopf und
    9 Bilder der laufenden Story). Neue Einheiten stehen auf „frei“, daher ohne Umstellen.
+8. Schlusskarte „So läuft eine Runde“: In der App in `src/lib/runden.js` einen Eintrag für den neuen Code ergänzen
+   (`ablauf`, `punkte` oder `ziel`, `wechsel`; kurze Sätze, „gibt einen Punkt“). Ohne Eintrag baut die Seite die Karte
+   automatisch aus Beschreibung und Organisation, das ist aber schlechter. Prüfen: `node tools/pruefstand/schluss.mjs e.json`.
+9. Der letzte Schritt der Grundform sagt immer, wie die Runde ausgeht (wer einen Punkt bekommt, Zeitlimit, wer gewinnt)
+   und wer danach dran ist. Die Stimme liest genau die Schritt-Texte, was dort fehlt, fehlt auch in der Aufnahme.
 
 ## Bericht (kurz)
 Je Einheit: Link `https://trainingskern.de/einheiten/<id>`, was vom Original abweicht, was nicht geprüft ist. Keine Tonspur aufnehmen.
