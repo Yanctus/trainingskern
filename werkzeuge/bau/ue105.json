@@ -1,0 +1,1061 @@
+{
+ "title": "Folge dem Anführer, 2 gegen 2",
+ "code": "UE-105",
+ "kind": "Spielform",
+ "focuses": [
+  "Dribbling",
+  "Umschalten",
+  "1 gegen 1"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "duration_minutes": 15,
+ "players_min": 8,
+ "players_max": 12,
+ "field_size": "14 x 18 m",
+ "description": "Das Feld ist geteilt: unten die Technikzone, oben die Spielzone mit zwei Minitoren. In der Technikzone dribbeln Paare nach dem Prinzip Folge dem Anführer, jeder mit eigenem Ball. Auf Zuruf des Trainers sprinten zwei Paare in die Spielzone und spielen 2 gegen 2. Nach einem Treffer geht es schnell zurück zum eigenen Ball.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 14 mal 18 Metern, mit einer gestrichelten Linie in zwei Zonen geteilt. In der oberen Spielzone links und rechts je ein Minitor.",
+  "Verteilen: Die Spieler bilden Paare, zwei Paare in Neon und zwei in Rot. Jeder hat einen Ball und startet in der Technikzone.",
+  "Ablauf: Einer im Paar führt, der Partner macht jede Bewegung gleichzeitig nach. Auf Zuruf lassen ein Neon-Paar und ein Rot-Paar die Bälle liegen und spielen oben 2 gegen 2.",
+  "Wechsel: Nach einem Treffer sprinten die vier zurück zu ihren Bällen, und der Trainer ruft die nächsten zwei Paare. Die Rollen Anführer und Partner regelmäßig tauschen."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Verschiedene Teile des Fußes zum Dribbeln und Mitnehmen nutzen",
+  "Nach dem Spiel schnell zurück zum eigenen Ball",
+  "Im Kopf sofort umschalten: in der Spielzone geht es ums Gewinnen",
+  "Kopf hoch, um die Bewegungen des Partners zu sehen, und neue Tricks ausprobieren"
+ ],
+ "materials": [
+  "4 orange Hütchen",
+  "1 Ball pro Spieler",
+  "2 Minitore",
+  "Mehrere Bälle beim Trainer",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Folge dem Anführer und zwei gegen zwei. Unten Technik in Paaren, oben auf Zuruf ein schnelles Spiel.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 26,
+    "y": 6,
+    "w": 48,
+    "h": 48
+   },
+   {
+    "type": "line",
+    "x1": 26,
+    "y1": 30,
+    "x2": 74,
+    "y2": 30,
+    "dashed": true
+   }
+  ],
+  "cones": [
+   {
+    "x": 26,
+    "y": 6,
+    "color": "orange"
+   },
+   {
+    "x": 74,
+    "y": 6,
+    "color": "orange"
+   },
+   {
+    "x": 26,
+    "y": 54,
+    "color": "orange"
+   },
+   {
+    "x": 74,
+    "y": 54,
+    "color": "orange"
+   }
+  ],
+  "goals": [
+   {
+    "x": 26,
+    "y": 18,
+    "side": "left"
+   },
+   {
+    "x": 74,
+    "y": 18,
+    "side": "right"
+   }
+  ],
+  "players": [
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 31,
+    "y": 34,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 40,
+    "y": 34,
+    "label": "3"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 55,
+    "y": 34,
+    "label": "6"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 64,
+    "y": 34,
+    "label": "7"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 31,
+    "y": 50,
+    "label": "4"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 40,
+    "y": 50,
+    "label": "5"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 55,
+    "y": 50,
+    "label": "8"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 64,
+    "y": 50,
+    "label": "9"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 12,
+    "y": 28,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b2",
+    "x": 32.6,
+    "y": 34.6
+   },
+   {
+    "id": "b3",
+    "x": 41.6,
+    "y": 34.6
+   },
+   {
+    "id": "b6",
+    "x": 56.6,
+    "y": 34.6
+   },
+   {
+    "id": "b7",
+    "x": 65.6,
+    "y": 34.6
+   },
+   {
+    "id": "b4",
+    "x": 32.6,
+    "y": 50.6
+   },
+   {
+    "id": "b5",
+    "x": 41.6,
+    "y": 50.6
+   },
+   {
+    "id": "b8",
+    "x": 56.6,
+    "y": 50.6
+   },
+   {
+    "id": "b9",
+    "x": 65.6,
+    "y": 50.6
+   },
+   {
+    "id": "c1",
+    "x": 14.5,
+    "y": 28.6
+   },
+   {
+    "id": "c2",
+    "x": 11,
+    "y": 31.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Folge dem Anführer",
+    "say": "In jedem Paar führt der linke Spieler. Er dribbelt vor und dreht, und gleichzeitig macht sein Partner genau dieselbe Bewegung mit seinem Ball.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       36,
+       31
+      ],
+      "type": "dribbling",
+      "ball": "b2"
+     },
+     {
+      "who": "n2",
+      "to": [
+       31,
+       34
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "n3",
+      "to": [
+       45,
+       31
+      ],
+      "type": "dribbling",
+      "ball": "b3"
+     },
+     {
+      "who": "n3",
+      "to": [
+       40,
+       34
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b3"
+     },
+     {
+      "who": "r6",
+      "to": [
+       60,
+       31
+      ],
+      "type": "dribbling",
+      "ball": "b6"
+     },
+     {
+      "who": "r6",
+      "to": [
+       55,
+       34
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b6"
+     },
+     {
+      "who": "r7",
+      "to": [
+       69,
+       31
+      ],
+      "type": "dribbling",
+      "ball": "b7"
+     },
+     {
+      "who": "r7",
+      "to": [
+       64,
+       34
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b7"
+     },
+     {
+      "who": "n4",
+      "to": [
+       36,
+       53
+      ],
+      "type": "dribbling",
+      "ball": "b4"
+     },
+     {
+      "who": "n4",
+      "to": [
+       31,
+       50
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b4"
+     },
+     {
+      "who": "n5",
+      "to": [
+       45,
+       53
+      ],
+      "type": "dribbling",
+      "ball": "b5"
+     },
+     {
+      "who": "n5",
+      "to": [
+       40,
+       50
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b5"
+     },
+     {
+      "who": "r8",
+      "to": [
+       60,
+       53
+      ],
+      "type": "dribbling",
+      "ball": "b8"
+     },
+     {
+      "who": "r8",
+      "to": [
+       55,
+       50
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b8"
+     },
+     {
+      "who": "r9",
+      "to": [
+       69,
+       53
+      ],
+      "type": "dribbling",
+      "ball": "b9"
+     },
+     {
+      "who": "r9",
+      "to": [
+       64,
+       50
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b9"
+     }
+    ]
+   },
+   {
+    "label": "Zuruf: zwei Paare spielen",
+    "say": "Der Trainer ruft. Gleichzeitig lassen Neon zwei, Neon drei, Rot sechs und Rot sieben ihre Bälle liegen und sprinten in die Spielzone. Der Trainer spielt Spieler drei einen Ball zu.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       35,
+       10
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n3",
+      "to": [
+       44,
+       25
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r6",
+      "to": [
+       55,
+       14
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r7",
+      "to": [
+       64,
+       25
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "c1",
+      "to": [
+       45.6,
+       25.6
+      ],
+      "type": "pass",
+      "delay": 0.5
+     }
+    ]
+   },
+   {
+    "label": "2 gegen 2",
+    "say": "Spieler drei spielt zu Spieler zwei, der oben an Rot sechs vorbeidribbelt und ins rechte Minitor schießt. Das gibt einen Punkt für Team Neon. Unten dribbeln die anderen Paare weiter.",
+    "moves": [
+     {
+      "who": "c1",
+      "to": [
+       36.6,
+       10.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n2",
+      "to": [
+       48,
+       8
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "c1"
+     },
+     {
+      "who": "n2",
+      "to": [
+       62,
+       11
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "c1"
+     },
+     {
+      "who": "c1",
+      "to": [
+       73.5,
+       17.5
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r6",
+      "to": [
+       58,
+       18
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r7",
+      "to": [
+       66,
+       18
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n4",
+      "to": [
+       36,
+       53
+      ],
+      "type": "dribbling",
+      "ball": "b4"
+     },
+     {
+      "who": "n4",
+      "to": [
+       31,
+       50
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b4"
+     },
+     {
+      "who": "r8",
+      "to": [
+       60,
+       53
+      ],
+      "type": "dribbling",
+      "ball": "b8"
+     },
+     {
+      "who": "r8",
+      "to": [
+       55,
+       50
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b8"
+     }
+    ]
+   },
+   {
+    "label": "Schnell zurück zum Ball",
+    "say": "Sofort sprinten alle vier zurück zu ihrem Ball in der Technikzone. Dann ruft der Trainer die nächsten zwei Paare.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       31,
+       34
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n3",
+      "to": [
+       40,
+       34
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r6",
+      "to": [
+       55,
+       34
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r7",
+      "to": [
+       64,
+       34
+      ],
+      "type": "lauf"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 26,
+    "y1": 58.6,
+    "x2": 74,
+    "y2": 58.6,
+    "text": "14 m"
+   },
+   {
+    "x1": 82,
+    "y1": 6,
+    "x2": 82,
+    "y2": 54,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Nach dem Spiel geht es im Sprint zurück zum eigenen Ball.",
+   "title": "Schnell zurück, schnell hinein",
+   "text": "Fällt ein Tor, sprinten die vier sofort zurück zu ihrem Ball und machen ohne Pause weiter. Die nächsten vier warten auf den Zuruf und starten dann mit vollem Tempo in die Spielzone. Wer umschaltet, denkt sofort ans Gewinnen.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 65,
+      "y": 9,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 46,
+      "y": 26,
+      "label": "3"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 55,
+      "y": 12,
+      "label": "6"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 64,
+      "y": 26,
+      "label": "7"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 31,
+      "y": 50,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 40,
+      "y": 50,
+      "label": "5"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 55,
+      "y": 50,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 64,
+      "y": 50,
+      "label": "9"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 12,
+      "y": 28,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b2",
+      "x": 32.6,
+      "y": 34.6
+     },
+     {
+      "id": "b3",
+      "x": 41.6,
+      "y": 34.6
+     },
+     {
+      "id": "b6",
+      "x": 56.6,
+      "y": 34.6
+     },
+     {
+      "id": "b7",
+      "x": 65.6,
+      "y": 34.6
+     },
+     {
+      "id": "b4",
+      "x": 32.6,
+      "y": 50.6
+     },
+     {
+      "id": "b5",
+      "x": 41.6,
+      "y": 50.6
+     },
+     {
+      "id": "b8",
+      "x": 56.6,
+      "y": 50.6
+     },
+     {
+      "id": "b9",
+      "x": 65.6,
+      "y": 50.6
+     },
+     {
+      "id": "c1",
+      "x": 14.5,
+      "y": 28.6
+     },
+     {
+      "id": "c2",
+      "x": 11,
+      "y": 31.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zurück zum Ball",
+      "say": "Nach dem Tor sprinten Neon zwei, Neon drei, Rot sechs und Rot sieben gleichzeitig zurück zu ihrem Ball.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         31,
+         34
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n3",
+        "to": [
+         40,
+         34
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r6",
+        "to": [
+         55,
+         34
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r7",
+        "to": [
+         64,
+         34
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Die nächsten vier",
+      "say": "Der Trainer ruft, und gleichzeitig sprinten Neon vier, Neon fünf, Rot acht und Rot neun ohne Ball durch die Lücken in die Spielzone.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         47.5,
+         40
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n4",
+        "to": [
+         47.5,
+         28
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n4",
+        "to": [
+         35,
+         10
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n5",
+        "to": [
+         47.5,
+         42
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "n5",
+        "to": [
+         47.5,
+         28
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n5",
+        "to": [
+         44,
+         25
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r8",
+        "to": [
+         70,
+         40
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r8",
+        "to": [
+         70,
+         26
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r8",
+        "to": [
+         55,
+         14
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r9",
+        "to": [
+         70,
+         42
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "r9",
+        "to": [
+         70,
+         28
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r9",
+        "to": [
+         64,
+         25
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Unten spielen die übrigen Spieler gleichzeitig eins gegen eins.",
+   "title": "1 gegen 1 in der Technikzone",
+   "text": "Während oben 2 gegen 2 gespielt wird, spielt unten je ein Neon-Spieler gegen einen Rot-Spieler mit einem Ball. Einer schirmt den Ball mit dem Körper ab, der andere will ihn haben. Fällt oben ein Tor, zählt unten, wer gerade den Ball hat: Jeder Ballbesitz gibt einen Punkt für sein Team. Den Ball immer auf der sicheren Seite, weg vom Gegner, halten.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 35,
+      "y": 10,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 44,
+      "y": 25,
+      "label": "3"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 55,
+      "y": 14,
+      "label": "6"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 64,
+      "y": 25,
+      "label": "7"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 34,
+      "y": 44,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 56,
+      "y": 44,
+      "label": "5"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 43,
+      "y": 44,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 65,
+      "y": 44,
+      "label": "9"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 12,
+      "y": 28,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "g",
+      "x": 45.6,
+      "y": 25.6
+     },
+     {
+      "id": "b4",
+      "x": 35.6,
+      "y": 44.6
+     },
+     {
+      "id": "b5",
+      "x": 57.6,
+      "y": 44.6
+     },
+     {
+      "id": "c1",
+      "x": 14.5,
+      "y": 28.6
+     },
+     {
+      "id": "c2",
+      "x": 11,
+      "y": 31.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Oben 2 gegen 2, unten 1 gegen 1",
+      "say": "Gleichzeitig: Oben spielt Spieler drei zu Spieler zwei. Unten schirmt Neon vier den Ball gegen Rot acht ab, und Rot neun spitzelt Neon fünf den Ball weg.",
+      "moves": [
+       {
+        "who": "g",
+        "to": [
+         36.6,
+         10.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n2",
+        "to": [
+         48,
+         8
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "g"
+       },
+       {
+        "who": "n4",
+        "to": [
+         32,
+         50
+        ],
+        "type": "dribbling",
+        "ball": "b4"
+       },
+       {
+        "who": "r8",
+        "to": [
+         41,
+         48
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n5",
+        "to": [
+         50,
+         46
+        ],
+        "type": "dribbling",
+        "ball": "b5"
+       },
+       {
+        "who": "b5",
+        "to": [
+         60.6,
+         48.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "r9",
+        "to": [
+         59,
+         48
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Tor oben, Ball unten zählt",
+      "say": "Spieler zwei schießt ins rechte Minitor. In diesem Moment hat unten Neon vier den Ball und Rot neun auch: Das gibt einen Punkt für Team Neon und einen Punkt für Team Rot.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         62,
+         11
+        ],
+        "type": "dribbling",
+        "ball": "g"
+       },
+       {
+        "who": "g",
+        "to": [
+         73.5,
+         17.5
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n4",
+        "to": [
+         29,
+         46
+        ],
+        "type": "dribbling",
+        "ball": "b4"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

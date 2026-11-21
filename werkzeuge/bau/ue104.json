@@ -1,0 +1,900 @@
+{
+ "title": "Slalom und Doppelpass",
+ "code": "UE-104",
+ "kind": "Übungsform",
+ "focuses": [
+  "Dribbling",
+  "Passspiel",
+  "Koordination"
+ ],
+ "age_groups": [
+  "Bambini",
+  "F-Jugend"
+ ],
+ "duration_minutes": 10,
+ "players_min": 4,
+ "players_max": 8,
+ "field_size": "14 x 14 m",
+ "description": "In zwei gegenüberliegenden Ecken stehen je zwei Spieler, dazwischen drei Stangen. Aus beiden Ecken dribbelt gleichzeitig ein Spieler im Slalom durch die Stangen. Am Ende spielt er mit dem Partner in der Ecke einen Doppelpass und legt ihm den Ball in den Lauf. Der Partner dribbelt los, und alles beginnt von vorn.",
+ "organisation": [
+  "Aufbauen: Ein Feld von etwa 14 mal 14 Metern. Oben links und unten rechts je ein Hütchen als Ecke, dazwischen drei Stangen schräg durchs Feld.",
+  "Verteilen: An jeder Ecke stehen zwei Spieler, je einer davon mit Ball. Bei mehr Kindern stellen sich die übrigen an den Ecken an.",
+  "Ablauf: Aus beiden Ecken dribbelt gleichzeitig ein Spieler im Slalom durch die Stangen. Am Ende spielt er mit dem Partner einen Doppelpass und legt ihm den Ball in den Lauf. Der dribbelt dann zurück.",
+  "Wechsel: Wer den Ball abgegeben hat, bleibt in der Ecke und ist beim nächsten Mal der Partner. Nach einer Weile eine kurze Pause machen."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Den Ball im Slalom ganz nah am Fuß halten",
+  "Mit beiden Füßen dribbeln, innen und außen",
+  "Den Doppelpass schnell und genau spielen",
+  "Vor dem Pass hochschauen und den Partner rufen"
+ ],
+ "materials": [
+  "3 Stangen",
+  "2 orange Hütchen",
+  "Mehrere Bälle beim Trainer",
+  "2 Minitore für die Steigerung"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Slalom und Doppelpass. Aus zwei Ecken dribbeln die Kinder gleichzeitig durch die Stangen und spielen am Ende einen Doppelpass.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 26,
+    "y": 6,
+    "w": 48,
+    "h": 48
+   }
+  ],
+  "cones": [
+   {
+    "x": 42,
+    "y": 22,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 50,
+    "y": 30,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 58,
+    "y": 38,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 27.5,
+    "y": 16,
+    "color": "orange"
+   },
+   {
+    "x": 72.5,
+    "y": 44,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 30,
+    "y": 10,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 30,
+    "y": 26,
+    "label": "3"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 70,
+    "y": 50,
+    "label": "4"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 70,
+    "y": 34,
+    "label": "5"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 88,
+    "y": 30,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b2",
+    "x": 31.6,
+    "y": 10.6
+   },
+   {
+    "id": "b4",
+    "x": 71.6,
+    "y": 50.6
+   },
+   {
+    "id": "c1",
+    "x": 90.5,
+    "y": 31
+   },
+   {
+    "id": "c2",
+    "x": 87,
+    "y": 33.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Slalom aus beiden Ecken",
+    "say": "Gleichzeitig dribbeln Spieler zwei von oben links und Spieler vier von unten rechts im Slalom durch die drei Stangen.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       39.2,
+       24.8
+      ],
+      "type": "dribbling",
+      "ball": "b2"
+     },
+     {
+      "who": "n2",
+      "to": [
+       52.8,
+       27.2
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "n2",
+      "to": [
+       55.2,
+       40.8
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "n2",
+      "to": [
+       61,
+       46
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "n4",
+      "to": [
+       60.8,
+       35.2
+      ],
+      "type": "dribbling",
+      "ball": "b4"
+     },
+     {
+      "who": "n4",
+      "to": [
+       47.2,
+       32.8
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b4"
+     },
+     {
+      "who": "n4",
+      "to": [
+       44.8,
+       19.2
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b4"
+     },
+     {
+      "who": "n4",
+      "to": [
+       39,
+       14
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b4"
+     }
+    ]
+   },
+   {
+    "label": "Doppelpass mit dem Partner",
+    "say": "Am Ende spielt jeder zum Partner in der Ecke und bekommt den Ball direkt zurück. Spieler zwei spielt mit Spieler fünf, Spieler vier gleichzeitig mit Spieler drei.",
+    "moves": [
+     {
+      "who": "b2",
+      "to": [
+       71.6,
+       34.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b2",
+      "to": [
+       62.6,
+       46.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b4",
+      "to": [
+       31.6,
+       26.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b4",
+      "to": [
+       40.6,
+       14.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "In den Lauf, der Nächste dribbelt",
+    "say": "Jetzt legen beide den Ball dem Partner in den Lauf und gehen in die Ecke. Spieler fünf und Spieler drei dribbeln gleichzeitig im Slalom zurück.",
+    "moves": [
+     {
+      "who": "b2",
+      "to": [
+       67.6,
+       40.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n5",
+      "to": [
+       66,
+       40
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "b4",
+      "to": [
+       33.6,
+       20.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n3",
+      "to": [
+       32,
+       20
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n2",
+      "to": [
+       70,
+       50
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n4",
+      "to": [
+       30,
+       10
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n5",
+      "to": [
+       60.8,
+       35.2
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "n5",
+      "to": [
+       47.2,
+       32.8
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "n5",
+      "to": [
+       44.8,
+       19.2
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "n5",
+      "to": [
+       39,
+       14
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "n3",
+      "to": [
+       39.2,
+       24.8
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b4"
+     },
+     {
+      "who": "n3",
+      "to": [
+       52.8,
+       27.2
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b4"
+     },
+     {
+      "who": "n3",
+      "to": [
+       55.2,
+       40.8
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b4"
+     },
+     {
+      "who": "n3",
+      "to": [
+       61,
+       46
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b4"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 26,
+    "y1": 58.6,
+    "x2": 74,
+    "y2": 58.6,
+    "text": "14 m"
+   },
+   {
+    "x1": 80,
+    "y1": 6,
+    "x2": 80,
+    "y2": 54,
+    "text": "14 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Im Slalom bleibt der Ball ganz nah am Fuß.",
+   "title": "Ball nah am Fuß",
+   "text": "Im Slalom führen die Kinder den Ball mit vielen kleinen Kontakten, mit beiden Füßen, mal innen, mal außen. So bleibt der Ball nah am Fuß, und die Stangen werden nicht berührt. Vor dem Doppelpass schauen sie kurz hoch und rufen den Partner.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 30,
+      "y": 10,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 30,
+      "y": 26,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 70,
+      "y": 50,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 70,
+      "y": 34,
+      "label": "5"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 88,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b2",
+      "x": 31.6,
+      "y": 10.6
+     },
+     {
+      "id": "b4",
+      "x": 71.6,
+      "y": 50.6
+     },
+     {
+      "id": "c1",
+      "x": 90.5,
+      "y": 31
+     },
+     {
+      "id": "c2",
+      "x": 87,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Kleine Kontakte",
+      "say": "Spieler zwei und Spieler vier dribbeln gleichzeitig mit vielen kleinen Kontakten um die Stangen, mal mit rechts, mal mit links.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         39.2,
+         24.8
+        ],
+        "type": "dribbling",
+        "ball": "b2"
+       },
+       {
+        "who": "n2",
+        "to": [
+         52.8,
+         27.2
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b2"
+       },
+       {
+        "who": "n2",
+        "to": [
+         55.2,
+         40.8
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b2"
+       },
+       {
+        "who": "n2",
+        "to": [
+         61,
+         46
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b2"
+       },
+       {
+        "who": "n4",
+        "to": [
+         60.8,
+         35.2
+        ],
+        "type": "dribbling",
+        "ball": "b4"
+       },
+       {
+        "who": "n4",
+        "to": [
+         47.2,
+         32.8
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b4"
+       },
+       {
+        "who": "n4",
+        "to": [
+         44.8,
+         19.2
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b4"
+       },
+       {
+        "who": "n4",
+        "to": [
+         39,
+         14
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b4"
+       }
+      ]
+     },
+     {
+      "label": "Hochschauen und rufen",
+      "say": "Vor dem Pass schauen beide hoch, rufen den Partner und spielen dann genau in den Fuß.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         71.6,
+         34.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b4",
+        "to": [
+         31.6,
+         26.6
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Zwei Minitore, und nach jedem zweiten Slalom wird aufs Tor geschossen.",
+   "title": "Abschluss ins Minitor",
+   "text": "Im Feld stehen zwei Minitore. Nach jedem zweiten Slalom gibt es keinen Doppelpass, sondern einen Torschuss. Es zählt Genauigkeit statt Kraft: Ein Treffer gibt einen Punkt, ein Treffer in die Ecke gibt einen Extrapunkt. Die Kinder in den Ecken feuern ihre Mitspieler an.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 30,
+      "y": 10,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 30,
+      "y": 26,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 70,
+      "y": 50,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 70,
+      "y": 34,
+      "label": "5"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 88,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b2",
+      "x": 31.6,
+      "y": 10.6
+     },
+     {
+      "id": "b4",
+      "x": 71.6,
+      "y": 50.6
+     },
+     {
+      "id": "b3",
+      "x": 31.6,
+      "y": 26.6
+     },
+     {
+      "id": "b5",
+      "x": 71.6,
+      "y": 34.6
+     },
+     {
+      "id": "c1",
+      "x": 90.5,
+      "y": 31
+     },
+     {
+      "id": "c2",
+      "x": 87,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Slalom aus beiden Ecken",
+      "say": "Gleichzeitig dribbeln Spieler zwei und Spieler vier im Slalom durch die drei Stangen.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         39.2,
+         24.8
+        ],
+        "type": "dribbling",
+        "ball": "b2"
+       },
+       {
+        "who": "n2",
+        "to": [
+         52.8,
+         27.2
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b2"
+       },
+       {
+        "who": "n2",
+        "to": [
+         55.2,
+         40.8
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b2"
+       },
+       {
+        "who": "n2",
+        "to": [
+         61,
+         46
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b2"
+       },
+       {
+        "who": "n4",
+        "to": [
+         60.8,
+         35.2
+        ],
+        "type": "dribbling",
+        "ball": "b4"
+       },
+       {
+        "who": "n4",
+        "to": [
+         47.2,
+         32.8
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b4"
+       },
+       {
+        "who": "n4",
+        "to": [
+         44.8,
+         19.2
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b4"
+       },
+       {
+        "who": "n4",
+        "to": [
+         39,
+         14
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b4"
+       }
+      ]
+     },
+     {
+      "label": "Abschluss ins Minitor",
+      "say": "Beide schießen gleichzeitig mit Gefühl ins nächste Minitor. Jeder Treffer gibt einen Punkt, und in die Ecke gibt es einen Extrapunkt.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         44,
+         50.5
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b4",
+        "to": [
+         60,
+         10.5
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Die Nächsten starten",
+      "say": "Spieler zwei und Spieler vier gehen in die Ecke. Gleichzeitig dribbeln Spieler fünf und Spieler drei mit ihrem eigenen Ball los.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         70,
+         50
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n4",
+        "to": [
+         30,
+         10
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n5",
+        "to": [
+         60.8,
+         35.2
+        ],
+        "type": "dribbling",
+        "ball": "b5"
+       },
+       {
+        "who": "n5",
+        "to": [
+         47.2,
+         32.8
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b5"
+       },
+       {
+        "who": "n5",
+        "to": [
+         44.8,
+         19.2
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b5"
+       },
+       {
+        "who": "n5",
+        "to": [
+         39,
+         14
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b5"
+       },
+       {
+        "who": "n3",
+        "to": [
+         39.2,
+         24.8
+        ],
+        "type": "dribbling",
+        "ball": "b3"
+       },
+       {
+        "who": "n3",
+        "to": [
+         52.8,
+         27.2
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b3"
+       },
+       {
+        "who": "n3",
+        "to": [
+         55.2,
+         40.8
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b3"
+       },
+       {
+        "who": "n3",
+        "to": [
+         61,
+         46
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b3"
+       }
+      ]
+     }
+    ],
+    "goals": [
+     {
+      "x": 60,
+      "y": 10,
+      "side": "top"
+     },
+     {
+      "x": 44,
+      "y": 50,
+      "side": "bottom"
+     }
+    ]
+   }
+  }
+ ]
+}

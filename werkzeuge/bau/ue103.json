@@ -1,0 +1,712 @@
+{
+ "title": "Dribbeln auf engem Raum",
+ "code": "UE-103",
+ "kind": "Übungsform",
+ "focuses": [
+  "Dribbling",
+  "Koordination",
+  "Bewegung"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "duration_minutes": 15,
+ "players_min": 6,
+ "players_max": 12,
+ "field_size": "Kreis, 23 m Durchmesser",
+ "description": "Alle Spieler dribbeln gleichzeitig mit eigenem Ball in einem Kreis. Weil viele Spieler unterwegs sind, wird es eng: Ball nah am Fuß, Kopf hoch, Haken schlagen, in den freien Raum beschleunigen. Die Spieler sollen dabei kreativ sein und möglichst viele Tricks ausprobieren.",
+ "organisation": [
+  "Aufbauen: Ein Kreis mit etwa 23 Metern Durchmesser, zum Beispiel der Mittelkreis.",
+  "Verteilen: Sechs bis zwölf Spieler, jeder mit einem Ball.",
+  "Ablauf: Alle dribbeln gleichzeitig durcheinander, schlagen Haken, probieren Tricks und suchen ständig freien Raum, ohne zusammenzustoßen.",
+  "Steigern: Erst zwei Trickzonen, dann ein Verteidiger und ein Springer für Doppelpässe."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Den Ball auch im Gedränge eng am Fuß führen",
+  "Mit beiden Füßen dribbeln",
+  "Nach einem Haken mit Tempo in den freien Raum",
+  "Kopf hoch, um zu erkennen, wann gedreht oder ein Doppelpass gespielt wird"
+ ],
+ "materials": [
+  "Hütchen für den Kreis",
+  "1 Ball pro Spieler",
+  "1 Leibchen für den Verteidiger"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Dribbeln auf engem Raum. Alle dribbeln gleichzeitig im Kreis, und jeder probiert seine Tricks.",
+ "board": {
+  "lines": [
+   {
+    "type": "circle",
+    "x": 50,
+    "y": 30,
+    "r": 26
+   }
+  ],
+  "cones": [],
+  "players": [
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 35.3,
+    "y": 15.5,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 67.8,
+    "y": 14.3,
+    "label": "3"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 56.8,
+    "y": 29.4,
+    "label": "4"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 33.1,
+    "y": 43.5,
+    "label": "5"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 61.8,
+    "y": 47,
+    "label": "6"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 20.6,
+    "y": 41.3,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b2",
+    "x": 36.9,
+    "y": 16.1
+   },
+   {
+    "id": "b3",
+    "x": 69.4,
+    "y": 14.9
+   },
+   {
+    "id": "b4",
+    "x": 58.4,
+    "y": 30.0
+   },
+   {
+    "id": "b5",
+    "x": 34.7,
+    "y": 44.1
+   },
+   {
+    "id": "b6",
+    "x": 63.4,
+    "y": 47.6
+   },
+   {
+    "id": "c1",
+    "x": 23.2,
+    "y": 41.9
+   }
+  ],
+  "steps": [
+   {
+    "label": "Alle dribbeln gleichzeitig",
+    "say": "Alle Spieler dribbeln gleichzeitig mit ihrem Ball durch den Kreis und suchen freien Raum.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       40,
+       22
+      ],
+      "type": "dribbling",
+      "ball": "b2"
+     },
+     {
+      "who": "n2",
+      "to": [
+       44,
+       30
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "n3",
+      "to": [
+       62,
+       20
+      ],
+      "type": "dribbling",
+      "ball": "b3"
+     },
+     {
+      "who": "n4",
+      "to": [
+       52,
+       38
+      ],
+      "type": "dribbling",
+      "ball": "b4"
+     },
+     {
+      "who": "n5",
+      "to": [
+       40,
+       44
+      ],
+      "type": "dribbling",
+      "ball": "b5"
+     },
+     {
+      "who": "n6",
+      "to": [
+       68,
+       40
+      ],
+      "type": "dribbling",
+      "ball": "b6"
+     }
+    ]
+   },
+   {
+    "label": "Haken und weg",
+    "say": "Wird es eng, schlägt jeder einen Haken und beschleunigt in eine freie Lücke. Wir schauen auf Spieler zwei.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       41,
+       33
+      ],
+      "type": "dribbling",
+      "ball": "b2"
+     },
+     {
+      "who": "n2",
+      "to": [
+       33,
+       28
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "n3",
+      "to": [
+       70,
+       26
+      ],
+      "type": "dribbling",
+      "ball": "b3"
+     },
+     {
+      "who": "n4",
+      "to": [
+       60,
+       30
+      ],
+      "type": "dribbling",
+      "ball": "b4"
+     },
+     {
+      "who": "n5",
+      "to": [
+       34,
+       36
+      ],
+      "type": "dribbling",
+      "ball": "b5"
+     },
+     {
+      "who": "n6",
+      "to": [
+       56,
+       50
+      ],
+      "type": "dribbling",
+      "ball": "b6"
+     }
+    ]
+   },
+   {
+    "label": "Mit dem anderen Fuß weiter",
+    "say": "Gleichzeitig dribbeln alle weiter, jetzt bewusst mit dem anderen Fuß, und suchen den nächsten freien Raum.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       38,
+       20
+      ],
+      "type": "dribbling",
+      "ball": "b2"
+     },
+     {
+      "who": "n3",
+      "to": [
+       64,
+       36
+      ],
+      "type": "dribbling",
+      "ball": "b3"
+     },
+     {
+      "who": "n4",
+      "to": [
+       52,
+       20
+      ],
+      "type": "dribbling",
+      "ball": "b4"
+     },
+     {
+      "who": "n5",
+      "to": [
+       44,
+       48
+      ],
+      "type": "dribbling",
+      "ball": "b5"
+     },
+     {
+      "who": "n6",
+      "to": [
+       46,
+       42
+      ],
+      "type": "dribbling",
+      "ball": "b6"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 24,
+    "y1": 58.6,
+    "x2": 76,
+    "y2": 58.6,
+    "text": "23 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Zwei Trickzonen, in denen ein bestimmter Trick gezeigt wird.",
+   "title": "Zwei Trickzonen",
+   "text": "Im Kreis liegen zwei kleine Zonen. Wer hineindribbelt, zeigt dort den Trick, den der Trainer vorgibt, zum Beispiel eine Drehung oder einen Übersteiger. Weil viele Spieler in die Zonen wollen, wird es dort eng, und der Ball muss besonders nah am Fuß bleiben.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 35.3,
+      "y": 15.5,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 67.8,
+      "y": 14.3,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 56.8,
+      "y": 29.4,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 33.1,
+      "y": 43.5,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 61.8,
+      "y": 47,
+      "label": "6"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 20.6,
+      "y": 41.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b2",
+      "x": 36.9,
+      "y": 16.1
+     },
+     {
+      "id": "b3",
+      "x": 69.4,
+      "y": 14.9
+     },
+     {
+      "id": "b4",
+      "x": 58.4,
+      "y": 30.0
+     },
+     {
+      "id": "b5",
+      "x": 34.7,
+      "y": 44.1
+     },
+     {
+      "id": "b6",
+      "x": 63.4,
+      "y": 47.6
+     },
+     {
+      "id": "c1",
+      "x": 23.2,
+      "y": 41.9
+     }
+    ],
+    "steps": [
+     {
+      "label": "Hinein in die Zonen",
+      "say": "Gleichzeitig dribbeln Spieler drei und Spieler zwei in je eine Trickzone, die anderen dribbeln weiter.",
+      "moves": [
+       {
+        "who": "n3",
+        "to": [
+         62,
+         22
+        ],
+        "type": "dribbling",
+        "ball": "b3"
+       },
+       {
+        "who": "n2",
+        "to": [
+         40,
+         37
+        ],
+        "type": "dribbling",
+        "ball": "b2"
+       },
+       {
+        "who": "n4",
+        "to": [
+         54,
+         40
+        ],
+        "type": "dribbling",
+        "ball": "b4"
+       },
+       {
+        "who": "n6",
+        "to": [
+         68,
+         38
+        ],
+        "type": "dribbling",
+        "ball": "b6"
+       }
+      ]
+     },
+     {
+      "label": "Trick zeigen und raus",
+      "say": "In der Zone zeigen beide den Trick und dribbeln dann mit Tempo wieder heraus.",
+      "moves": [
+       {
+        "who": "n3",
+        "to": [
+         60,
+         24
+        ],
+        "type": "dribbling",
+        "ball": "b3"
+       },
+       {
+        "who": "n3",
+        "to": [
+         64,
+         20
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b3"
+       },
+       {
+        "who": "n3",
+        "to": [
+         70,
+         28
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b3"
+       },
+       {
+        "who": "n2",
+        "to": [
+         38,
+         35
+        ],
+        "type": "dribbling",
+        "ball": "b2"
+       },
+       {
+        "who": "n2",
+        "to": [
+         42,
+         39
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b2"
+       },
+       {
+        "who": "n2",
+        "to": [
+         46,
+         46
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b2"
+       }
+      ]
+     }
+    ],
+    "lines": [
+     {
+      "type": "circle",
+      "x": 50,
+      "y": 30,
+      "r": 26
+     },
+     {
+      "type": "zone",
+      "x": 58,
+      "y": 18,
+      "w": 8,
+      "h": 8
+     },
+     {
+      "type": "zone",
+      "x": 36,
+      "y": 33,
+      "w": 8,
+      "h": 8
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Ein Verteidiger jagt den Ball, ein Springer hilft mit Doppelpässen.",
+   "title": "Verteidiger und Springer",
+   "text": "Ein Verteidiger darf jedem Spieler den Ball wegspielen. In den zwei Zonen ist man sicher und darf dort fünf Sekunden stehen bleiben. Ein Springer hilft: Wer unter Druck gerät, spielt mit ihm einen Doppelpass und dribbelt weg.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 35.3,
+      "y": 15.5,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 67.8,
+      "y": 14.3,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 56.8,
+      "y": 29.4,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 33.1,
+      "y": 43.5,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 61.8,
+      "y": 47,
+      "label": "6"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 20.6,
+      "y": 41.3,
+      "label": "T"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 44,
+      "y": 22,
+      "label": "7"
+     },
+     {
+      "id": "f",
+      "team": "t",
+      "x": 54,
+      "y": 10,
+      "label": "F"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b2",
+      "x": 36.9,
+      "y": 16.1
+     },
+     {
+      "id": "b3",
+      "x": 69.4,
+      "y": 14.9
+     },
+     {
+      "id": "b4",
+      "x": 58.4,
+      "y": 30.0
+     },
+     {
+      "id": "b5",
+      "x": 34.7,
+      "y": 44.1
+     },
+     {
+      "id": "b6",
+      "x": 63.4,
+      "y": 47.6
+     },
+     {
+      "id": "c1",
+      "x": 23.2,
+      "y": 41.9
+     }
+    ],
+    "steps": [
+     {
+      "label": "Verteidiger kommt",
+      "say": "Rot sieben läuft auf Spieler zwei zu. Gleichzeitig spielt Spieler zwei zum Springer und startet an Rot sieben vorbei.",
+      "moves": [
+       {
+        "who": "r7",
+        "to": [
+         39,
+         18
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b2",
+        "to": [
+         55.6,
+         10.6
+        ],
+        "type": "pass",
+        "delay": 0.2
+       },
+       {
+        "who": "n2",
+        "to": [
+         44,
+         27
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Doppelpass und ab in die Zone",
+      "say": "Der Springer spielt direkt zurück, und Spieler zwei dribbelt in die sichere Zone.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         45.6,
+         27.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n2",
+        "to": [
+         40,
+         37
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b2"
+       }
+      ]
+     }
+    ],
+    "lines": [
+     {
+      "type": "circle",
+      "x": 50,
+      "y": 30,
+      "r": 26
+     },
+     {
+      "type": "zone",
+      "x": 58,
+      "y": 18,
+      "w": 8,
+      "h": 8
+     },
+     {
+      "type": "zone",
+      "x": 36,
+      "y": 33,
+      "w": 8,
+      "h": 8
+     }
+    ]
+   }
+  }
+ ]
+}
