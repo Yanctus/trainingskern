@@ -149,7 +149,8 @@ def regeln(u):
             out.append(f"{code}: Feld {key} fehlt oder ist leer")
     # Die Überschrift der Einheit steht groß und läuft am Handy nicht um: Ein Wort mit mehr als 14 Buchstaben (z. B. „Zweierkombination“) wird abgeschnitten
     for w in re.findall(r"[^\s:,;.–-]+", u.get("title") or ""):
-        if len(w) > 14:
+        # Breite Buchstaben (M, W, Ä, Ö, Ü) zählen anderthalbfach: „RÜCKWÄRTSLAUF“ (13) wurde am Handy abgeschnitten
+        if len(w) + 0.5 * sum(ch in "MWÄÖÜmwäöü" for ch in w) > 14:
             out.append(f"{code}: Wort '{w}' im Titel ist zu lang für die Überschrift am Handy (höchstens 14 Buchstaben)")
     # Kurze Titel wie bei UE-001 bis UE-030 (meist unter 30 Zeichen): kein langer Untertitel nach dem Doppelpunkt
     if len(u.get("title") or "") > 32:

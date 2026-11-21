@@ -7,7 +7,7 @@ lines = [rect(22, 9, 56, 42), zone, line(35.2, 9, 35.2, 51)]
 goals = [{"x": 78, "y": 18, "side": "right"}, {"x": 22, "y": 42, "side": "left"}]
 cones = ecken(22, 9, 56, 42) + [C(22, 30), C(78, 30)]
 warte = [P("n6", "a", 17.5, 54.5, "6"), P("n7", "a", 9, 54.5, "7"), P("r10", "b", 89, 33, "10"), P("r11", "b", 89, 48.6, "11")]
-u = {"title": "Abschluss und Rückwärtslauf", "code": "UE-070", "kind": "Spielform",
+u = {"title": "Abschluss, dann zurück", "code": "UE-070", "kind": "Spielform",
  "focuses": ["Torschuss", "Umschalten", "1 gegen 1"], "age_groups": ["E-Jugend", "D-Jugend", "C-Jugend", "B-Jugend"], "duration_minutes": 15, "players_min": 6, "players_max": 12, "field_size": "18 x 14 m",
  "description": "In der Mitte eines Feldes von 18 mal 14 Metern steht ein Spieler von Team Neon an einem Dummy, an den beiden Enden steht je ein Minitor. Ein Mitspieler spielt ihn an, er löst sich vom Dummy, nimmt den Ball mit und schließt ins rechte Minitor ab, das gibt einen Punkt. Der Pass ist zugleich das Signal für einen Angreifer von Team Rot, der von der anderen Seite aufs linke Minitor losdribbelt. Der Spieler von Team Neon sprintet sofort zurück und verteidigt im 1 gegen 1, denn Team Rot darf erst in der Abschlusszone schießen.",
  "organisation": ["Aufbauen: Feld von 18 mal 14 Metern, ein Dummy in der Mitte, ein Minitor rechts und eines links. Vor dem linken Tor liegt eine Abschlusszone von viereinhalb Metern.",
@@ -18,7 +18,7 @@ u = {"title": "Abschluss und Rückwärtslauf", "code": "UE-070", "kind": "Spielf
  "coaching_points": ["Sich vom Dummy lösen und offen zum Tor annehmen", "Den Ball mit dem ersten Kontakt vorlegen und flach ins Eck schießen", "Nach dem Abschluss sofort zurücksprinten", "Auch unter Druck ruhig abschließen"],
  "materials": ["2 Minitore", "1 Dummy", "6 orange Hütchen", "Bälle bei beiden Gruppen", "Leibchen in zwei Farben"],
  "access": "frei", "hidden": True,
- "say_intro": "Abschluss und Rückwärtslauf. Hier schließt ein Spieler ab und muss danach sofort zurück, um einen Konter zu verteidigen.",
+ "say_intro": "Abschluss, dann zurück. Hier schließt ein Spieler ab und muss danach sofort zurück, um einen Konter zu verteidigen.",
  "board": {"lines": lines, "goals": goals, "cones": cones,
   "players": [D, P("n4", "a", 43, 30, "4"), P("n8", "a", 26, 54, "8"), P("r9", "b", 80.5, 39, "9"), *warte, T],
   "balls": [B("b1", 27.6, 53.4), B("b2", 79.6, 41), *cb],
