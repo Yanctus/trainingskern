@@ -1,0 +1,686 @@
+{
+ "title": "Abschluss und Rückwärtslauf",
+ "code": "UE-070",
+ "kind": "Spielform",
+ "focuses": [
+  "Torschuss",
+  "Umschalten",
+  "1 gegen 1"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "duration_minutes": 15,
+ "players_min": 6,
+ "players_max": 12,
+ "field_size": "18 x 14 m",
+ "description": "In der Mitte eines Feldes von 18 mal 14 Metern steht ein Spieler von Team Neon an einem Dummy, an den beiden Enden steht je ein Minitor. Ein Mitspieler spielt ihn an, er löst sich vom Dummy, nimmt den Ball mit und schließt ins rechte Minitor ab, das gibt einen Punkt. Der Pass ist zugleich das Signal für einen Angreifer von Team Rot, der von der anderen Seite aufs linke Minitor losdribbelt. Der Spieler von Team Neon sprintet sofort zurück und verteidigt im 1 gegen 1, denn Team Rot darf erst in der Abschlusszone schießen.",
+ "organisation": [
+  "Aufbauen: Feld von 18 mal 14 Metern, ein Dummy in der Mitte, ein Minitor rechts und eines links. Vor dem linken Tor liegt eine Abschlusszone von viereinhalb Metern.",
+  "Aufstellen: Team Neon wartet unten links mit Bällen, ein Spieler steht am Dummy. Team Rot wartet rechts mit Bällen. Ich stehe mit Ersatzbällen an der Seite.",
+  "Ablauf: Pass auf den Spieler am Dummy, Abschluss ins rechte Tor, dann sofort zurücksprinten und gegen den Angreifer von Team Rot verteidigen.",
+  "Regeln: Team Rot darf nur aus der Abschlusszone schießen. Jedes Tor gibt einen Punkt. Nach drei Angriffen tauschen die Teams die Aufgaben."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Sich vom Dummy lösen und offen zum Tor annehmen",
+  "Den Ball mit dem ersten Kontakt vorlegen und flach ins Eck schießen",
+  "Nach dem Abschluss sofort zurücksprinten",
+  "Auch unter Druck ruhig abschließen"
+ ],
+ "materials": [
+  "2 Minitore",
+  "1 Dummy",
+  "6 orange Hütchen",
+  "Bälle bei beiden Gruppen",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Abschluss und Rückwärtslauf. Hier schließt ein Spieler ab und muss danach sofort zurück, um einen Konter zu verteidigen.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 22,
+    "y": 9,
+    "w": 56,
+    "h": 42
+   },
+   {
+    "type": "zone",
+    "x": 22,
+    "y": 9,
+    "w": 13.2,
+    "h": 42,
+    "color": "orange"
+   },
+   {
+    "type": "line",
+    "x1": 35.2,
+    "y1": 9,
+    "x2": 35.2,
+    "y2": 51,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 78,
+    "y": 18,
+    "side": "right"
+   },
+   {
+    "x": 22,
+    "y": 42,
+    "side": "left"
+   }
+  ],
+  "cones": [
+   {
+    "x": 22,
+    "y": 9,
+    "color": "orange"
+   },
+   {
+    "x": 78,
+    "y": 9,
+    "color": "orange"
+   },
+   {
+    "x": 22,
+    "y": 51,
+    "color": "orange"
+   },
+   {
+    "x": 78,
+    "y": 51,
+    "color": "orange"
+   },
+   {
+    "x": 22,
+    "y": 30,
+    "color": "orange"
+   },
+   {
+    "x": 78,
+    "y": 30,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "d",
+    "team": "t",
+    "x": 51.5,
+    "y": 30,
+    "label": "D"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 43,
+    "y": 30,
+    "label": "4"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 26,
+    "y": 54,
+    "label": "8"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 80.5,
+    "y": 39,
+    "label": "9"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 17.5,
+    "y": 54.5,
+    "label": "6"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 9,
+    "y": 54.5,
+    "label": "7"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 89,
+    "y": 33,
+    "label": "10"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 89,
+    "y": 48.6,
+    "label": "11"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 42.5,
+    "y": 4.5,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 27.6,
+    "y": 53.4
+   },
+   {
+    "id": "b2",
+    "x": 79.6,
+    "y": 41
+   },
+   {
+    "id": "c1",
+    "x": 46,
+    "y": 5
+   },
+   {
+    "id": "c2",
+    "x": 39,
+    "y": 5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Lösen und Pass auf die Vier",
+    "say": "Spieler vier löst sich vom Dummy, und Spieler acht spielt ihn an.",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       43,
+       23.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       44.6,
+       23.4
+      ],
+      "type": "pass",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Der Pass ist das Signal",
+    "say": "Der Pass ist das Signal für Spieler neun: Er dribbelt von rechts los, während Spieler vier den Ball nach vorn mitnimmt.",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       56,
+       21
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "r9",
+      "to": [
+       66,
+       40.5
+      ],
+      "type": "dribbling",
+      "delay": 0.1,
+      "ball": "b2"
+     }
+    ]
+   },
+   {
+    "label": "Abschluss ins Minitor: Punkt",
+    "say": "Spieler vier schießt flach ins rechte Minitor, und das gibt einen Punkt für Team Neon.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       80,
+       18
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r9",
+      "to": [
+       56,
+       42
+      ],
+      "type": "dribbling",
+      "ball": "b2"
+     }
+    ]
+   },
+   {
+    "label": "Sofort zurücksprinten",
+    "say": "Sofort sprintet Spieler vier zurück, um Spieler neun vor der Zone zu stoppen.",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       39,
+       37
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r9",
+      "to": [
+       46,
+       43.5
+      ],
+      "type": "dribbling",
+      "delay": 0.1,
+      "ball": "b2"
+     }
+    ]
+   },
+   {
+    "label": "1 gegen 1 vor der Zone",
+    "say": "Spieler vier ist rechtzeitig zurück und stellt sich vor die Zone, jetzt heißt es eins gegen eins.",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       37.5,
+       43
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r9",
+      "to": [
+       43,
+       44.5
+      ],
+      "type": "dribbling",
+      "delay": 0.1,
+      "ball": "b2"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 22,
+    "y1": 58.6,
+    "x2": 78,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 96,
+    "y1": 9,
+    "x2": 96,
+    "y2": 51,
+    "text": "14 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Der erste Kontakt entscheidet, wie schnell es weitergeht.",
+   "title": "Der erste Kontakt zählt",
+   "text": "Wer den Ball mit dem ersten Kontakt ungeschickt nach vorn an den Dummy legt, braucht lange zum Drehen. Dann kommt er spät zum Abschluss, hat weniger Zeit zum Zurücklaufen, und der Angreifer von Team Rot läuft ungestört aufs Tor.",
+   "board": {
+    "players": [
+     {
+      "id": "d",
+      "team": "t",
+      "x": 51.5,
+      "y": 30,
+      "label": "D"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 43,
+      "y": 25,
+      "label": "4"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 26,
+      "y": 54,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 73.5,
+      "y": 38.5,
+      "label": "9"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 17.5,
+      "y": 54.5,
+      "label": "6"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 9,
+      "y": 54.5,
+      "label": "7"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 89,
+      "y": 33,
+      "label": "10"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 89,
+      "y": 48.6,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 42.5,
+      "y": 4.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 44.4,
+      "y": 25.6
+     },
+     {
+      "id": "b2",
+      "x": 72,
+      "y": 39.5
+     },
+     {
+      "id": "c1",
+      "x": 46,
+      "y": 5
+     },
+     {
+      "id": "c2",
+      "x": 39,
+      "y": 5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Erster Kontakt zu weit nach vorn",
+      "say": "Spieler vier legt sich den Ball zu weit nach vorn an den Dummy, und Spieler neun startet schon.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         46,
+         26
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "r9",
+        "to": [
+         60,
+         39.5
+        ],
+        "type": "dribbling",
+        "delay": 0.1,
+        "ball": "b2"
+       }
+      ]
+     },
+     {
+      "label": "Das Drehen dauert",
+      "say": "Spieler vier braucht lange zum Drehen, Spieler neun ist schon fast an der Zone.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         46.5,
+         19.5
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n4",
+        "to": [
+         58,
+         18
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "r9",
+        "to": [
+         41,
+         41
+        ],
+        "type": "dribbling",
+        "ball": "b2"
+       }
+      ]
+     },
+     {
+      "label": "Freie Bahn: Punkt für Rot",
+      "say": "Spieler neun dribbelt ungestört in die Zone und trifft, und das gibt einen Punkt für Team Rot.",
+      "moves": [
+       {
+        "who": "r9",
+        "to": [
+         31,
+         42
+        ],
+        "type": "dribbling",
+        "ball": "b2"
+       },
+       {
+        "who": "b2",
+        "to": [
+         20.5,
+         42
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Im eins gegen eins mit einer schnellen Bewegung am Verteidiger vorbei.",
+   "title": "Schnell vorbei im 1 gegen 1",
+   "text": "Ist der Verteidiger zurück, braucht der Angreifer seine Technik. Mit einer schnellen Täuschung und einem Antritt schafft er sich Platz, dribbelt in die Zone und schließt ruhig ab.",
+   "board": {
+    "players": [
+     {
+      "id": "d",
+      "team": "t",
+      "x": 51.5,
+      "y": 30,
+      "label": "D"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 35,
+      "y": 37.5,
+      "label": "4"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 26,
+      "y": 54,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 43.5,
+      "y": 46,
+      "label": "9"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 17.5,
+      "y": 54.5,
+      "label": "6"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 9,
+      "y": 54.5,
+      "label": "7"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 89,
+      "y": 33,
+      "label": "10"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 89,
+      "y": 48.6,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 42.5,
+      "y": 4.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 27.6,
+      "y": 53.4
+     },
+     {
+      "id": "b2",
+      "x": 42,
+      "y": 46.6
+     },
+     {
+      "id": "c1",
+      "x": 46,
+      "y": 5
+     },
+     {
+      "id": "c2",
+      "x": 39,
+      "y": 5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Täuschung nach oben",
+      "say": "Spieler neun täuscht einen Haken nach oben an, und Spieler vier geht mit.",
+      "moves": [
+       {
+        "who": "r9",
+        "to": [
+         41,
+         40
+        ],
+        "type": "dribbling",
+        "ball": "b2"
+       },
+       {
+        "who": "n4",
+        "to": [
+         36,
+         37
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Antritt nach unten",
+      "say": "Dann zieht er blitzschnell nach unten vorbei in die Zone.",
+      "moves": [
+       {
+        "who": "r9",
+        "to": [
+         36.5,
+         45
+        ],
+        "type": "dribbling",
+        "ball": "b2"
+       },
+       {
+        "who": "r9",
+        "to": [
+         31,
+         46
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b2"
+       }
+      ]
+     },
+     {
+      "label": "In der Zone abschließen: Punkt",
+      "say": "Er schließt ruhig ins Minitor ab, und das gibt einen Punkt für Team Rot.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         20.5,
+         42.5
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

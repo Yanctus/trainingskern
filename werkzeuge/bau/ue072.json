@@ -1,0 +1,832 @@
+{
+ "title": "Dribbeln, ablegen, tauschen",
+ "code": "UE-072",
+ "kind": "Übungsform",
+ "focuses": [
+  "Dribbling",
+  "Passspiel",
+  "Koordination"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend"
+ ],
+ "duration_minutes": 12,
+ "players_min": 8,
+ "players_max": 14,
+ "field_size": "18 x 14 m",
+ "description": "Die Hälfte der Gruppe dribbelt mit Ball im Viereck in der Mitte, die andere Hälfte steht ohne Ball außen am Feldrand. Alle Spieler in der Mitte dribbeln gleichzeitig, schauen sich um und wechseln ständig die Richtung. Wer bereit ist, dribbelt nach außen und legt den Ball einem Außenspieler ab, dann tauschen beide die Rollen. Der neue Spieler dribbelt mit einem Richtungswechsel ins Viereck hinein.",
+ "organisation": [
+  "Aufbauen: Außen ein Feld von 18 mal 14 Metern, in der Mitte ein Viereck mit vier gelben Hütchen.",
+  "Verteilen: Die Hälfte der Spieler hat einen Ball und dribbelt im Viereck. Die anderen stehen ohne Ball außen am Rand, zwei an jeder langen Seite und einer an jeder kurzen.",
+  "Ablauf: Alle in der Mitte dribbeln gleichzeitig, mit vielen Richtungswechseln. Einer dribbelt raus, legt einem Außenspieler ab und übernimmt dessen Platz.",
+  "Wechsel: Der Außenspieler nimmt den Ball mit und dribbelt mit einem Richtungswechsel ins Viereck. So bleiben alle in Bewegung."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Den Ball eng führen und die eigene Technik verbessern",
+  "Oft und bewusst die Richtung wechseln",
+  "Beide Füße und alle Teile des Fußes benutzen",
+  "Genau und mit dem richtigen Tempo ablegen"
+ ],
+ "materials": [
+  "4 orange Hütchen",
+  "4 gelbe Hütchen",
+  "1 Ball für jeden Spieler in der Mitte"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Dribbeln, ablegen, tauschen. Hier dribbeln alle in der Mitte gleichzeitig und tauschen nach einer Ablage die Plätze mit den Außenspielern.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 22,
+    "y": 9,
+    "w": 56,
+    "h": 42
+   },
+   {
+    "type": "rect",
+    "x": 35,
+    "y": 19,
+    "w": 27,
+    "h": 22
+   }
+  ],
+  "cones": [
+   {
+    "x": 22,
+    "y": 9,
+    "color": "orange"
+   },
+   {
+    "x": 78,
+    "y": 9,
+    "color": "orange"
+   },
+   {
+    "x": 22,
+    "y": 51,
+    "color": "orange"
+   },
+   {
+    "x": 78,
+    "y": 51,
+    "color": "orange"
+   },
+   {
+    "x": 35,
+    "y": 19,
+    "color": "neon"
+   },
+   {
+    "x": 62,
+    "y": 19,
+    "color": "neon"
+   },
+   {
+    "x": 35,
+    "y": 41,
+    "color": "neon"
+   },
+   {
+    "x": 62,
+    "y": 41,
+    "color": "neon"
+   }
+  ],
+  "players": [
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 38,
+    "y": 21.5,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 46.5,
+    "y": 21.5,
+    "label": "3"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 55,
+    "y": 21.5,
+    "label": "4"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 42.25,
+    "y": 38,
+    "label": "5"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 50.75,
+    "y": 38,
+    "label": "6"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 59.25,
+    "y": 38,
+    "label": "7"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 20.5,
+    "y": 18,
+    "label": "8"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 20.5,
+    "y": 41.4,
+    "label": "9"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 79.5,
+    "y": 17.4,
+    "label": "10"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 79.5,
+    "y": 41.6,
+    "label": "11"
+   },
+   {
+    "id": "r12",
+    "team": "b",
+    "x": 49.7,
+    "y": 5.5,
+    "label": "12"
+   },
+   {
+    "id": "r14",
+    "team": "b",
+    "x": 49.7,
+    "y": 54,
+    "label": "14"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 68,
+    "y": 4,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b2",
+    "x": 39.6,
+    "y": 22.1
+   },
+   {
+    "id": "b3",
+    "x": 48.1,
+    "y": 22.1
+   },
+   {
+    "id": "b4",
+    "x": 56.6,
+    "y": 22.1
+   },
+   {
+    "id": "b5",
+    "x": 43.85,
+    "y": 38.6
+   },
+   {
+    "id": "b6",
+    "x": 52.35,
+    "y": 38.6
+   },
+   {
+    "id": "b7",
+    "x": 60.85,
+    "y": 38.6
+   },
+   {
+    "id": "c1",
+    "x": 71.5,
+    "y": 4.6
+   }
+  ],
+  "steps": [
+   {
+    "label": "Alle dribbeln gleichzeitig",
+    "say": "Alle Spieler in der Mitte dribbeln gleichzeitig durch das Viereck und wechseln ständig die Richtung.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       42,
+       28
+      ],
+      "type": "dribbling",
+      "ball": "b2"
+     },
+     {
+      "who": "n3",
+      "to": [
+       50,
+       27.5
+      ],
+      "type": "dribbling",
+      "ball": "b3"
+     },
+     {
+      "who": "n4",
+      "to": [
+       57,
+       29
+      ],
+      "type": "dribbling",
+      "ball": "b4"
+     },
+     {
+      "who": "n5",
+      "to": [
+       39,
+       33
+      ],
+      "type": "dribbling",
+      "ball": "b5"
+     },
+     {
+      "who": "n6",
+      "to": [
+       52,
+       33
+      ],
+      "type": "dribbling",
+      "ball": "b6"
+     },
+     {
+      "who": "n7",
+      "to": [
+       57.5,
+       34
+      ],
+      "type": "dribbling",
+      "ball": "b7"
+     }
+    ]
+   },
+   {
+    "label": "Raus zum Außenspieler",
+    "say": "Spieler zwei dribbelt nach links raus und legt Spieler acht ab, gleichzeitig legt Spieler sieben rechts für Spieler elf ab.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       30,
+       22
+      ],
+      "type": "dribbling",
+      "ball": "b2"
+     },
+     {
+      "who": "b2",
+      "to": [
+       22.1,
+       18.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       68,
+       39
+      ],
+      "type": "dribbling",
+      "ball": "b7"
+     },
+     {
+      "who": "b7",
+      "to": [
+       78,
+       41.2
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Tauschen und rein mit Richtungswechsel",
+    "say": "Jetzt tauschen sie: Spieler acht und Spieler elf dribbeln mit einem Haken ins Viereck, Spieler zwei und Spieler sieben bleiben außen.",
+    "moves": [
+     {
+      "who": "r8",
+      "to": [
+       28,
+       24.5
+      ],
+      "type": "dribbling",
+      "ball": "b2"
+     },
+     {
+      "who": "r8",
+      "to": [
+       32,
+       20.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "r8",
+      "to": [
+       40,
+       28
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "n2",
+      "to": [
+       21,
+       19.5
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "r11",
+      "to": [
+       71,
+       36
+      ],
+      "type": "dribbling",
+      "ball": "b7"
+     },
+     {
+      "who": "r11",
+      "to": [
+       66,
+       40
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b7"
+     },
+     {
+      "who": "r11",
+      "to": [
+       58.5,
+       32
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b7"
+     },
+     {
+      "who": "n7",
+      "to": [
+       79,
+       40
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 22,
+    "y1": 58.6,
+    "x2": 78,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 91,
+    "y1": 9,
+    "x2": 91,
+    "y2": 51,
+    "text": "14 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Schnelle Richtungswechsel schaffen Platz in der engen Mitte.",
+   "title": "Schnell die Richtung wechseln",
+   "text": "In der Mitte ist es eng. Wer schnell die Richtung wechselt, entkommt den anderen, findet freien Raum und hat danach mehr Möglichkeiten zum Passen, Dribbeln oder Schießen.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 38,
+      "y": 21.5,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 46.5,
+      "y": 21.5,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 55,
+      "y": 21.5,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 42.25,
+      "y": 38,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 50.75,
+      "y": 38,
+      "label": "6"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 59.25,
+      "y": 38,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 20.5,
+      "y": 18,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 20.5,
+      "y": 41.4,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 79.5,
+      "y": 17.4,
+      "label": "10"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 79.5,
+      "y": 41.6,
+      "label": "11"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 49.7,
+      "y": 5.5,
+      "label": "12"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 49.7,
+      "y": 54,
+      "label": "14"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 68,
+      "y": 4,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b2",
+      "x": 39.6,
+      "y": 22.1
+     },
+     {
+      "id": "b3",
+      "x": 48.1,
+      "y": 22.1
+     },
+     {
+      "id": "b4",
+      "x": 56.6,
+      "y": 22.1
+     },
+     {
+      "id": "b5",
+      "x": 43.85,
+      "y": 38.6
+     },
+     {
+      "id": "b6",
+      "x": 52.35,
+      "y": 38.6
+     },
+     {
+      "id": "b7",
+      "x": 60.85,
+      "y": 38.6
+     },
+     {
+      "id": "c1",
+      "x": 71.5,
+      "y": 4.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Auf engem Raum",
+      "say": "Spieler drei dribbelt auf Spieler sechs zu, und es wird eng.",
+      "moves": [
+       {
+        "who": "n3",
+        "to": [
+         48.5,
+         30
+        ],
+        "type": "dribbling",
+        "ball": "b3"
+       },
+       {
+        "who": "n6",
+        "to": [
+         51,
+         33.5
+        ],
+        "type": "dribbling",
+        "delay": 0.1,
+        "ball": "b6"
+       }
+      ]
+     },
+     {
+      "label": "Haken und weg",
+      "say": "Mit einem schnellen Haken zieht Spieler drei in die andere Richtung und hat wieder Platz.",
+      "moves": [
+       {
+        "who": "n3",
+        "to": [
+         44.5,
+         31
+        ],
+        "type": "dribbling",
+        "ball": "b3"
+       },
+       {
+        "who": "n3",
+        "to": [
+         40,
+         25.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b3"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Erst ein Doppelpass mit dem Außenspieler, dann quer durch das Viereck.",
+   "title": "Doppelpass und quer durch",
+   "text": "Vor dem Tausch spielt der Spieler aus der Mitte einen Doppelpass mit einem Außenspieler. Danach dribbelt er quer durch das Viereck, abwechselnd mit links und rechts, bis zur anderen Seite. So entstehen mehr Ballkontakte und ein flüssigeres Spiel.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 30,
+      "y": 27,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 46.5,
+      "y": 21.5,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 55,
+      "y": 21.5,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 42.25,
+      "y": 38,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 50.75,
+      "y": 38,
+      "label": "6"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 59.25,
+      "y": 38,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 20.5,
+      "y": 18,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 20.5,
+      "y": 41.4,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 79.5,
+      "y": 17.4,
+      "label": "10"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 79.5,
+      "y": 41.6,
+      "label": "11"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 49.7,
+      "y": 5.5,
+      "label": "12"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 49.7,
+      "y": 54,
+      "label": "14"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 68,
+      "y": 4,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b2",
+      "x": 31.6,
+      "y": 27.6
+     },
+     {
+      "id": "b3",
+      "x": 48.1,
+      "y": 22.1
+     },
+     {
+      "id": "b4",
+      "x": 56.6,
+      "y": 22.1
+     },
+     {
+      "id": "b5",
+      "x": 43.85,
+      "y": 38.6
+     },
+     {
+      "id": "b6",
+      "x": 52.35,
+      "y": 38.6
+     },
+     {
+      "id": "b7",
+      "x": 60.85,
+      "y": 38.6
+     },
+     {
+      "id": "c1",
+      "x": 71.5,
+      "y": 4.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Pass zum Außenspieler",
+      "say": "Spieler zwei spielt den Ball zu Spieler acht und läuft sofort weiter.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         22.1,
+         18.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n2",
+        "to": [
+         29,
+         21
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Direkt zurück",
+      "say": "Spieler acht spielt den Ball direkt zurück in den Lauf.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         30.4,
+         21.6
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Quer durch das Viereck",
+      "say": "Spieler zwei dribbelt mit links und rechts quer durch das Viereck bis zur anderen Seite.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         44,
+         29.5
+        ],
+        "type": "dribbling",
+        "ball": "b2"
+       },
+       {
+        "who": "n2",
+        "to": [
+         66,
+         30
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b2"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
