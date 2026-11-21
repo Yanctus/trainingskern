@@ -1,0 +1,783 @@
+{
+ "title": "Mit Tempo dribbeln und ablegen",
+ "code": "UE-122",
+ "kind": "Übungsform",
+ "focuses": [
+  "Dribbling",
+  "Passspiel",
+  "Erwärmung"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "duration_minutes": 15,
+ "players_min": 9,
+ "players_max": 15,
+ "field_size": "27 x 29 m",
+ "description": "Das Feld ist in Bahnen geteilt. In jeder Bahn stehen zwei Endspieler, ein Spieler in der Mitte hat den Ball. Er läuft mit Tempo zum Endspieler, legt ab, läuft um ihn herum, bekommt den Ball auf der anderen Seite zurück und dribbelt zurück. Dabei wechselt er zwischen schnellem Laufen mit Ball und engem Dribbling.",
+ "organisation": [
+  "Aufbauen: Ein Feld von etwa 27 mal 29 Metern, in drei bis vier Bahnen geteilt.",
+  "Verteilen: In jeder Bahn drei Spieler: je ein Endspieler links und rechts und ein Spieler mit Ball in der Mitte. Die Bahnen arbeiten in wechselnder Richtung.",
+  "Ablauf: Der Spieler in der Mitte läuft mit Ball zum Endspieler, legt ab, läuft um ihn herum, bekommt den Ball zurück und dribbelt zum anderen Ende. Das geht 30 bis 60 Sekunden lang.",
+  "Wechsel: Nach ein bis zwei Minuten wechseln die Rollen. Auf Zuruf des Trainers wird zwischen Laufen mit Ball und engem Dribbling gewechselt."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Nach wenigen Kontakten eng dribbeln, dann explodieren und mit Tempo laufen",
+  "Bei jedem Kontakt den Kopf heben",
+  "Schon beim Anlaufen auf den Endspieler überlegen, wie es weitergeht",
+  "Die Endspieler helfen, damit der Lauf um sie herum frei bleibt"
+ ],
+ "materials": [
+  "Hütchen für Feld und Bahnen",
+  "1 Ball pro Bahn",
+  "Bälle beim Trainer",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Mit Tempo dribbeln und ablegen. In jeder Bahn läuft ein Spieler mit Ball hin und her und spielt mit den Endspielern.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 18,
+    "y": 6,
+    "w": 64,
+    "h": 48
+   },
+   {
+    "type": "line",
+    "x1": 18,
+    "y1": 22,
+    "x2": 82,
+    "y2": 22,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 18,
+    "y1": 38,
+    "x2": 82,
+    "y2": 38,
+    "dashed": true
+   }
+  ],
+  "players": [
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 13,
+    "y": 14,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 40,
+    "y": 14,
+    "label": "3"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 87,
+    "y": 14,
+    "label": "4"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 13,
+    "y": 30,
+    "label": "5"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 60,
+    "y": 30,
+    "label": "6"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 87,
+    "y": 30,
+    "label": "7"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 13,
+    "y": 46,
+    "label": "8"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 45,
+    "y": 46,
+    "label": "9"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 87,
+    "y": 46,
+    "label": "10"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 66,
+    "y": 1.5,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b3",
+    "x": 41.6,
+    "y": 14.6
+   },
+   {
+    "id": "b6",
+    "x": 58.4,
+    "y": 30.6
+   },
+   {
+    "id": "b9",
+    "x": 46.6,
+    "y": 46.6
+   },
+   {
+    "id": "c1",
+    "x": 68.5,
+    "y": 2.1
+   }
+  ],
+  "steps": [
+   {
+    "label": "Mit Tempo zum Endspieler",
+    "say": "Gleichzeitig laufen die drei Spieler in der Mitte mit Ball los. Die mittlere Bahn läuft in die andere Richtung.",
+    "moves": [
+     {
+      "who": "n3",
+      "to": [
+       76,
+       14
+      ],
+      "type": "dribbling",
+      "ball": "b3"
+     },
+     {
+      "who": "r6",
+      "to": [
+       24,
+       30
+      ],
+      "type": "dribbling",
+      "ball": "b6"
+     },
+     {
+      "who": "n9",
+      "to": [
+       76,
+       46
+      ],
+      "type": "dribbling",
+      "ball": "b9"
+     }
+    ]
+   },
+   {
+    "label": "Ablegen und herumlaufen",
+    "say": "Jeder legt den Ball zum Endspieler ab, läuft um ihn herum und bekommt den Ball auf der anderen Seite zurück.",
+    "moves": [
+     {
+      "who": "b3",
+      "to": [
+       85.4,
+       14.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n3",
+      "to": [
+       80,
+       8
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n3",
+      "to": [
+       91,
+       9
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n3",
+      "to": [
+       91,
+       19
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n3",
+      "to": [
+       83,
+       20
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b3",
+      "to": [
+       81.4,
+       20.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b6",
+      "to": [
+       14.6,
+       30.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r6",
+      "to": [
+       20,
+       24
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "r6",
+      "to": [
+       9,
+       25
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r6",
+      "to": [
+       9,
+       35
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r6",
+      "to": [
+       17,
+       36
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b6",
+      "to": [
+       18.6,
+       36.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b9",
+      "to": [
+       85.4,
+       46.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n9",
+      "to": [
+       80,
+       40
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n9",
+      "to": [
+       91,
+       41
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n9",
+      "to": [
+       91,
+       51
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n9",
+      "to": [
+       83,
+       52
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b9",
+      "to": [
+       81.4,
+       52.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zurück mit Kopf hoch",
+    "say": "Mit dem Ball geht es zurück zum anderen Ende, mit dem Kopf oben, um den Raum vor sich zu sehen.",
+    "moves": [
+     {
+      "who": "n3",
+      "to": [
+       50,
+       17
+      ],
+      "type": "dribbling",
+      "ball": "b3"
+     },
+     {
+      "who": "r6",
+      "to": [
+       50,
+       33
+      ],
+      "type": "dribbling",
+      "ball": "b6"
+     },
+     {
+      "who": "n9",
+      "to": [
+       50,
+       49
+      ],
+      "type": "dribbling",
+      "ball": "b9"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 18,
+    "y1": 58.6,
+    "x2": 82,
+    "y2": 58.6,
+    "text": "27 m"
+   },
+   {
+    "x1": 95,
+    "y1": 6,
+    "x2": 95,
+    "y2": 54,
+    "text": "29 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Alle drei Spieler einer Bahn arbeiten, mit Übergabe am Endspieler.",
+   "title": "Übergabe am Ende",
+   "text": "Jetzt dribbelt der Spieler aus der Mitte direkt auf den Endspieler zu. Der kommt ihm entgegen, übernimmt den Ball und dribbelt selbst los. Der bisherige Dribbler wird zum Endspieler. So arbeiten alle drei, und sie müssen sich gut absprechen.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 13,
+      "y": 14,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 40,
+      "y": 14,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 87,
+      "y": 14,
+      "label": "4"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 13,
+      "y": 30,
+      "label": "5"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 60,
+      "y": 30,
+      "label": "6"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 87,
+      "y": 30,
+      "label": "7"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 13,
+      "y": 46,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 45,
+      "y": 46,
+      "label": "9"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 87,
+      "y": 46,
+      "label": "10"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 66,
+      "y": 1.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b3",
+      "x": 41.6,
+      "y": 14.6
+     },
+     {
+      "id": "b6",
+      "x": 58.4,
+      "y": 30.6
+     },
+     {
+      "id": "b9",
+      "x": 46.6,
+      "y": 46.6
+     },
+     {
+      "id": "c1",
+      "x": 68.5,
+      "y": 2.1
+     }
+    ],
+    "steps": [
+     {
+      "label": "Dribbeln zum Endspieler",
+      "say": "Neon drei dribbelt nach links auf Neon zwei zu, und Neon zwei kommt ihm entgegen.",
+      "moves": [
+       {
+        "who": "n3",
+        "to": [
+         26,
+         14
+        ],
+        "type": "dribbling",
+        "ball": "b3"
+       },
+       {
+        "who": "n2",
+        "to": [
+         20,
+         18
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Übernahme",
+      "say": "Neon zwei übernimmt den Ball und dribbelt los. Neon drei läuft weiter und wird zum neuen Endspieler.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         40,
+         18
+        ],
+        "type": "dribbling",
+        "ball": "b3"
+       },
+       {
+        "who": "n3",
+        "to": [
+         13,
+         14
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Auch die Endspieler wechseln die Bahn.",
+   "title": "Endspieler wechseln",
+   "text": "Wann immer es passt, tauschen die Endspieler außen mit dem Endspieler der Nachbarbahn. Damit niemand durcheinanderkommt, sagen sie laut an, wer wohin geht.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 13,
+      "y": 14,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 40,
+      "y": 14,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 87,
+      "y": 14,
+      "label": "4"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 13,
+      "y": 30,
+      "label": "5"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 60,
+      "y": 30,
+      "label": "6"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 87,
+      "y": 30,
+      "label": "7"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 13,
+      "y": 46,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 45,
+      "y": 46,
+      "label": "9"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 87,
+      "y": 46,
+      "label": "10"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 66,
+      "y": 1.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b3",
+      "x": 41.6,
+      "y": 14.6
+     },
+     {
+      "id": "b6",
+      "x": 58.4,
+      "y": 30.6
+     },
+     {
+      "id": "b9",
+      "x": 46.6,
+      "y": 46.6
+     },
+     {
+      "id": "c1",
+      "x": 68.5,
+      "y": 2.1
+     }
+    ],
+    "steps": [
+     {
+      "label": "Dribbeln",
+      "say": "Die Spieler in der Mitte dribbeln zu ihren Endspielern.",
+      "moves": [
+       {
+        "who": "n3",
+        "to": [
+         76,
+         14
+        ],
+        "type": "dribbling",
+        "ball": "b3"
+       },
+       {
+        "who": "r6",
+        "to": [
+         24,
+         30
+        ],
+        "type": "dribbling",
+        "ball": "b6"
+       },
+       {
+        "who": "n9",
+        "to": [
+         76,
+         46
+        ],
+        "type": "dribbling",
+        "ball": "b9"
+       }
+      ]
+     },
+     {
+      "label": "Endspieler tauschen",
+      "say": "Gleichzeitig tauschen links Neon zwei und Rot fünf die Plätze und rechts Rot sieben und Neon zehn. Alle rufen dabei laut.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         8,
+         22
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n2",
+        "to": [
+         13,
+         30
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r5",
+        "to": [
+         18,
+         22
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r5",
+        "to": [
+         13,
+         14
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r7",
+        "to": [
+         92,
+         38
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r7",
+        "to": [
+         87,
+         46
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n10",
+        "to": [
+         82,
+         38
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n10",
+        "to": [
+         87,
+         30
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

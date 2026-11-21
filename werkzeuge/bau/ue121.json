@@ -1,0 +1,637 @@
+{
+ "title": "Zwei gegen eins durch drei Zonen",
+ "code": "UE-121",
+ "kind": "Spielform",
+ "focuses": [
+  "Dribbling",
+  "Zusammenspiel",
+  "Torschuss"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "duration_minutes": 15,
+ "players_min": 9,
+ "players_max": 12,
+ "field_size": "41 x 18 m",
+ "description": "Zwei Angreifer von Team Neon spielen sich durch drei Zonen bis zum Tor. In jeder Zone wartet ein Verteidiger von Team Rot, sodass immer zwei gegen eins gespielt wird. Ein geschlagener Verteidiger darf nicht zurück. Erobert ein Verteidiger den Ball, kontert er auf eines der beiden Minitore.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 41 mal 18 Metern, in eine Startzone und drei Zonen geteilt. Rechts ein großes Tor mit Torhüter, links zwei Minitore für den Konter.",
+  "Verteilen: Die Angreifer von Team Neon starten paarweise links. In jeder der drei Zonen steht ein Verteidiger von Team Rot, weitere warten am Rand. Der Trainer hat die Bälle.",
+  "Ablauf: Das Paar dribbelt und kombiniert durch die drei Zonen. In jeder Zone wird der Verteidiger aktiv, sobald die Angreifer hineinkommen, und darf nicht in die nächste Zone folgen. In der letzten Zone schließen sie ab. Ein Tor gibt einen Punkt.",
+  "Wechsel: Erobert ein Verteidiger den Ball, darf er auf eines der Minitore kontern. Nach zwei Angriffen wechseln die drei Verteidiger."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Im zwei gegen eins entschlossen angreifen",
+  "Als Verteidiger so stehen, dass der Weg nach vorn zu ist",
+  "Im letzten Drittel kaltschnäuzig abschließen",
+  "Geduld oder Tempo: die Lage lesen und genau passen"
+ ],
+ "materials": [
+  "1 großes Tor",
+  "2 Minitore",
+  "Hütchen für Feld und Zonen",
+  "Mehrere Bälle beim Trainer",
+  "Leibchen in drei Farben"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Zwei gegen eins durch drei Zonen. Ein Angreiferpaar überspielt nacheinander drei Verteidiger und schließt ab.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 6,
+    "y": 12,
+    "w": 88,
+    "h": 36
+   },
+   {
+    "type": "line",
+    "x1": 25,
+    "y1": 12,
+    "x2": 25,
+    "y2": 48,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 49.5,
+    "y1": 12,
+    "x2": 49.5,
+    "y2": 48,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 73,
+    "y1": 12,
+    "x2": 73,
+    "y2": 48,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 94,
+    "y": 30,
+    "side": "right"
+   },
+   {
+    "x": 6,
+    "y": 17,
+    "side": "left"
+   },
+   {
+    "x": 6,
+    "y": 43,
+    "side": "left"
+   }
+  ],
+  "players": [
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 20,
+    "y": 20,
+    "label": "10"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 20,
+    "y": 40,
+    "label": "9"
+   },
+   {
+    "id": "r4",
+    "team": "b",
+    "x": 35,
+    "y": 28,
+    "label": "4"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 60,
+    "y": 32,
+    "label": "6"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 80,
+    "y": 30,
+    "label": "5"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 40,
+    "y": 5,
+    "label": "2"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 60,
+    "y": 5,
+    "label": "3"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 78,
+    "y": 5,
+    "label": "8"
+   },
+   {
+    "id": "k",
+    "team": "t",
+    "x": 90,
+    "y": 30,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 4,
+    "y": 5,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 21.6,
+    "y": 20.6
+   },
+   {
+    "id": "c1",
+    "x": 6.5,
+    "y": 5.6
+   },
+   {
+    "id": "c2",
+    "x": 2,
+    "y": 7.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Erste Zone",
+    "say": "Neon neun startet in die erste Zone, und Neon zehn spielt ihn an. Rot vier wird aktiv und greift Neon neun an.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       34,
+       41
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       35.6,
+       41.6
+      ],
+      "type": "pass",
+      "delay": 0.3
+     },
+     {
+      "who": "r4",
+      "to": [
+       37,
+       36
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     }
+    ]
+   },
+   {
+    "label": "Zweite Zone",
+    "say": "Neon neun dribbelt in die zweite Zone, Rot vier darf nicht folgen. Gleichzeitig läuft Neon zehn oben mit. Rot sechs greift Neon neun an, der zu Neon zehn spielt.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       54,
+       44
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n10",
+      "to": [
+       66,
+       20
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r6",
+      "to": [
+       52,
+       38
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       67.6,
+       20.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Letzte Zone und Abschluss",
+    "say": "Neon zehn dribbelt in die letzte Zone, Rot fünf kommt heraus. Neon zehn spielt quer zu Neon neun, der ins Tor schießt. Das gibt einen Punkt für Team Neon.",
+    "moves": [
+     {
+      "who": "n10",
+      "to": [
+       76,
+       22
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "r5",
+      "to": [
+       78,
+       26
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n9",
+      "to": [
+       80,
+       40
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       81.6,
+       40.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       93.5,
+       35
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 6,
+    "y1": 58.6,
+    "x2": 94,
+    "y2": 58.6,
+    "text": "41 m"
+   },
+   {
+    "x1": 98,
+    "y1": 12,
+    "x2": 98,
+    "y2": 48,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Läuft der Verteidiger zu früh in den Passweg, dribbelt der Angreifer selbst.",
+   "title": "Täuschen statt passen",
+   "text": "Rechnet der Verteidiger zu früh mit dem Pass und läuft in den Passweg, täuscht der Angreifer den Pass nur an. Dann dribbelt er in den frei gewordenen Raum und kommt ohne Gegner in die nächste Zone.",
+   "board": {
+    "players": [
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 24,
+      "y": 24,
+      "label": "10"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 24,
+      "y": 44,
+      "label": "9"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 35,
+      "y": 30,
+      "label": "4"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 60,
+      "y": 32,
+      "label": "6"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 80,
+      "y": 30,
+      "label": "5"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 40,
+      "y": 5,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 60,
+      "y": 5,
+      "label": "3"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 78,
+      "y": 5,
+      "label": "8"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 90,
+      "y": 30,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 4,
+      "y": 5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 25.6,
+      "y": 24.6
+     },
+     {
+      "id": "c1",
+      "x": 6.5,
+      "y": 5.6
+     },
+     {
+      "id": "c2",
+      "x": 2,
+      "y": 7.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Pass angetäuscht",
+      "say": "Neon zehn täuscht den Pass zu Neon neun an. Rot vier läuft sofort in den Passweg.",
+      "moves": [
+       {
+        "who": "r4",
+        "to": [
+         31,
+         38
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n10",
+        "to": [
+         27,
+         25
+        ],
+        "type": "dribbling",
+        "delay": 0.2,
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Rein in den Raum",
+      "say": "Jetzt ist vorn alles frei. Neon zehn dribbelt mit Tempo in die zweite Zone.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         40,
+         22
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n10",
+        "to": [
+         54,
+         20
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Der erste Verteidiger darf in die zweite Zone zurück.",
+   "title": "Zwei gegen zwei",
+   "text": "Der Verteidiger aus der ersten Zone darf jetzt in die zweite Zone nachlaufen. Dort wird zwei gegen zwei gespielt. Die Angreifer müssen das merken und schnell durchbrechen, bevor der zweite Verteidiger da ist. Die Verteidiger stehen dabei eng zusammen.",
+   "board": {
+    "players": [
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 44,
+      "y": 22,
+      "label": "10"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 42,
+      "y": 42,
+      "label": "9"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 30,
+      "y": 30,
+      "label": "4"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 60,
+      "y": 32,
+      "label": "6"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 80,
+      "y": 30,
+      "label": "5"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 40,
+      "y": 5,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 60,
+      "y": 5,
+      "label": "3"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 78,
+      "y": 5,
+      "label": "8"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 90,
+      "y": 30,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 4,
+      "y": 5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 45.6,
+      "y": 22.6
+     },
+     {
+      "id": "c1",
+      "x": 6.5,
+      "y": 5.6
+     },
+     {
+      "id": "c2",
+      "x": 2,
+      "y": 7.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Verteidiger läuft nach",
+      "say": "Gleichzeitig sprintet Rot vier in die zweite Zone zurück, und Neon zehn spielt schnell zu Neon neun.",
+      "moves": [
+       {
+        "who": "r4",
+        "to": [
+         50,
+         27
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         43.6,
+         42.6
+        ],
+        "type": "pass",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Schnell durchbrechen",
+      "say": "Neon neun dribbelt sofort an Rot sechs vorbei in die letzte Zone, bevor die beiden Verteidiger zusammenstehen.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         62,
+         45
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n9",
+        "to": [
+         75,
+         42
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "r6",
+        "to": [
+         58,
+         37
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

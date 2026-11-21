@@ -1,0 +1,738 @@
+{
+ "title": "Dribbeln in drei Bahnen",
+ "code": "UE-123",
+ "kind": "Übungsform",
+ "focuses": [
+  "Dribbling",
+  "1 gegen 1",
+  "Torschuss"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "duration_minutes": 15,
+ "players_min": 10,
+ "players_max": 14,
+ "field_size": "27 x 41 m",
+ "description": "Das Feld ist in drei Bahnen mit unterschiedlichen Aufgaben geteilt. Unten dribbelt ein Spieler ohne Gegner um zwei Dummys und schließt gegen einen Torhüter ab. In der Mitte muss er einen Verteidiger ausspielen, oben sogar zwei, bevor er auf eines von zwei Minitoren schießt. Die Spieler wechseln die Bahnen, damit jeder jede Aufgabe bekommt.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 27 mal 41 Metern, in drei Bahnen geteilt. Unten und in der Mitte ein großes Tor mit Torhüter, oben zwei Minitore. Links ein Minitor für Konter.",
+  "Verteilen: In jeder Bahn startet links ein Spieler von Team Neon mit Ball. In der Mitte wartet ein Verteidiger von Team Rot, oben zwei. Unten stehen zwei Dummys.",
+  "Ablauf: Unten dribbelt der Spieler um beide Dummys und schließt ab. In der Mitte spielt er eins gegen eins, oben eins gegen zwei. Jedes Tor gibt einen Punkt.",
+  "Wechsel: Erobert ein Verteidiger den Ball, kontert er schnell auf das Minitor links. Nach einigen Durchgängen wechseln die Spieler die Bahn."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Mutig und positiv dribbeln",
+  "Den Verteidiger erst in eine Richtung locken und dann in die andere gehen",
+  "Sauber dribbeln, mit beiden Füßen und allen Teilen des Fußes",
+  "Mit dem Kopf oben breit spielen und vor dem Tor schnell abschließen"
+ ],
+ "materials": [
+  "2 große Tore",
+  "3 Minitore",
+  "2 Dummys",
+  "Hütchen für Feld und Bahnen",
+  "Mehrere Bälle",
+  "Leibchen in drei Farben"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Dribbeln in drei Bahnen. Unten ohne Gegner, in der Mitte gegen einen und oben gegen zwei Verteidiger.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 14,
+    "y": 6,
+    "w": 72,
+    "h": 48
+   },
+   {
+    "type": "line",
+    "x1": 14,
+    "y1": 22,
+    "x2": 86,
+    "y2": 22,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 14,
+    "y1": 38,
+    "x2": 86,
+    "y2": 38,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 38,
+    "y1": 6,
+    "x2": 38,
+    "y2": 54,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 62,
+    "y1": 6,
+    "x2": 62,
+    "y2": 54,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 86,
+    "y": 10,
+    "side": "right"
+   },
+   {
+    "x": 86,
+    "y": 18,
+    "side": "right"
+   },
+   {
+    "x": 86,
+    "y": 30,
+    "side": "right"
+   },
+   {
+    "x": 86,
+    "y": 46,
+    "side": "right"
+   },
+   {
+    "x": 14,
+    "y": 22,
+    "side": "left"
+   }
+  ],
+  "players": [
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 9,
+    "y": 14,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 9,
+    "y": 30,
+    "label": "3"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 9,
+    "y": 46,
+    "label": "4"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 50,
+    "y": 13,
+    "label": "5"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 68,
+    "y": 16,
+    "label": "6"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 52,
+    "y": 30,
+    "label": "7"
+   },
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 82,
+    "y": 28,
+    "label": "TW"
+   },
+   {
+    "id": "k13",
+    "team": "t",
+    "x": 82,
+    "y": 44,
+    "label": "TW"
+   },
+   {
+    "id": "d1",
+    "team": "t",
+    "x": 46,
+    "y": 47,
+    "label": "D"
+   },
+   {
+    "id": "d2",
+    "team": "t",
+    "x": 62,
+    "y": 44,
+    "label": "D"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 40,
+    "y": 1.5,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b2",
+    "x": 10.6,
+    "y": 14.6
+   },
+   {
+    "id": "b3",
+    "x": 10.6,
+    "y": 30.6
+   },
+   {
+    "id": "b4",
+    "x": 10.6,
+    "y": 46.6
+   },
+   {
+    "id": "c1",
+    "x": 42.5,
+    "y": 2.1
+   }
+  ],
+  "steps": [
+   {
+    "label": "Unten ohne Gegner",
+    "say": "Neon vier dribbelt mit Tempo über den ersten Dummy und unter dem zweiten durch und schießt flach ins Eck. Das gibt einen Punkt für Neon vier.",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       36,
+       41
+      ],
+      "type": "dribbling",
+      "ball": "b4"
+     },
+     {
+      "who": "n4",
+      "to": [
+       46,
+       41
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b4"
+     },
+     {
+      "who": "n4",
+      "to": [
+       54,
+       51
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b4"
+     },
+     {
+      "who": "n4",
+      "to": [
+       68,
+       50
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b4"
+     },
+     {
+      "who": "b4",
+      "to": [
+       85.5,
+       49.5
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Mitte eins gegen eins",
+    "say": "Neon drei dribbelt auf Rot sieben zu und lockt ihn nach unten. Dann zieht er oben vorbei und schießt ins Tor. Das gibt einen Punkt für Neon drei.",
+    "moves": [
+     {
+      "who": "n3",
+      "to": [
+       28,
+       28
+      ],
+      "type": "dribbling",
+      "ball": "b3"
+     },
+     {
+      "who": "n3",
+      "to": [
+       42,
+       25
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b3"
+     },
+     {
+      "who": "n3",
+      "to": [
+       50,
+       22
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b3"
+     },
+     {
+      "who": "n3",
+      "to": [
+       64,
+       30
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b3"
+     },
+     {
+      "who": "r7",
+      "to": [
+       46,
+       30
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b3",
+      "to": [
+       85.5,
+       33
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Oben eins gegen zwei",
+    "say": "Neon zwei spielt Rot fünf und dann Rot sechs aus und trifft ins obere Minitor. Das gibt einen Punkt für Neon zwei.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       30,
+       10
+      ],
+      "type": "dribbling",
+      "ball": "b2"
+     },
+     {
+      "who": "n2",
+      "to": [
+       50,
+       20
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "n2",
+      "to": [
+       66,
+       9
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "r5",
+      "to": [
+       44,
+       13
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "r6",
+      "to": [
+       62,
+       18
+      ],
+      "type": "lauf",
+      "delay": 0.8
+     },
+     {
+      "who": "b2",
+      "to": [
+       85.5,
+       10
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 14,
+    "y1": 58.6,
+    "x2": 86,
+    "y2": 58.6,
+    "text": "27 m"
+   },
+   {
+    "x1": 93,
+    "y1": 6,
+    "x2": 93,
+    "y2": 54,
+    "text": "41 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Erobert ein Verteidiger den Ball, wird sofort gekontert.",
+   "title": "Ballgewinn und Konter",
+   "text": "Gewinnt ein Verteidiger den Ball, schaltet er sofort um und kontert auf das Minitor links. So lernen die Verteidiger, schnell zu entscheiden, und die Angreifer müssen nach einem Ballverlust sofort nachsetzen.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 9,
+      "y": 14,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 44,
+      "y": 30,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 9,
+      "y": 46,
+      "label": "4"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 50,
+      "y": 13,
+      "label": "5"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 68,
+      "y": 16,
+      "label": "6"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 53,
+      "y": 30,
+      "label": "7"
+     },
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 82,
+      "y": 28,
+      "label": "TW"
+     },
+     {
+      "id": "k13",
+      "team": "t",
+      "x": 82,
+      "y": 44,
+      "label": "TW"
+     },
+     {
+      "id": "d1",
+      "team": "t",
+      "x": 46,
+      "y": 47,
+      "label": "D"
+     },
+     {
+      "id": "d2",
+      "team": "t",
+      "x": 62,
+      "y": 44,
+      "label": "D"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 40,
+      "y": 1.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "g",
+      "x": 45.6,
+      "y": 30.6
+     },
+     {
+      "id": "b2",
+      "x": 10.6,
+      "y": 14.6
+     },
+     {
+      "id": "b4",
+      "x": 10.6,
+      "y": 46.6
+     },
+     {
+      "id": "c1",
+      "x": 42.5,
+      "y": 2.1
+     }
+    ],
+    "steps": [
+     {
+      "label": "Ball erobert",
+      "say": "Neon drei dribbelt auf Rot sieben zu. Rot sieben stellt sich gut und spitzelt ihm den Ball weg.",
+      "moves": [
+       {
+        "who": "r7",
+        "to": [
+         49,
+         31
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "g",
+        "to": [
+         47.4,
+         32
+        ],
+        "type": "pass",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Konter aufs Minitor",
+      "say": "Rot sieben dribbelt sofort los und schießt ins Minitor links. Das gibt einen Punkt für Team Rot.",
+      "moves": [
+       {
+        "who": "r7",
+        "to": [
+         30,
+         25
+        ],
+        "type": "dribbling",
+        "ball": "g"
+       },
+       {
+        "who": "g",
+        "to": [
+         14.5,
+         22
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n3",
+        "to": [
+         36,
+         27
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Alle drei Bahnen werden zu einem Spiel drei gegen drei.",
+   "title": "Drei gegen drei",
+   "text": "Jetzt wird über das ganze Feld drei gegen drei gespielt, die Bahnen gelten nicht mehr. Team Neon darf auf alle Tore rechts abschließen, Team Rot kontert auf das Minitor links. Wer sieht, wo der Platz ist, und schnell dorthin dribbelt oder passt, hat Erfolg.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 30,
+      "y": 14,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 30,
+      "y": 30,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 30,
+      "y": 46,
+      "label": "4"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 52,
+      "y": 12,
+      "label": "5"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 52,
+      "y": 46,
+      "label": "6"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 48,
+      "y": 30,
+      "label": "7"
+     },
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 82,
+      "y": 28,
+      "label": "TW"
+     },
+     {
+      "id": "k13",
+      "team": "t",
+      "x": 82,
+      "y": 44,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 40,
+      "y": 1.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b3",
+      "x": 31.6,
+      "y": 30.6
+     },
+     {
+      "id": "c1",
+      "x": 42.5,
+      "y": 2.1
+     }
+    ],
+    "steps": [
+     {
+      "label": "Gegner anlocken",
+      "say": "Neon drei dribbelt auf Rot sieben zu. Gleichzeitig startet Neon vier unten in die Tiefe.",
+      "moves": [
+       {
+        "who": "n3",
+        "to": [
+         40,
+         30
+        ],
+        "type": "dribbling",
+        "ball": "b3"
+       },
+       {
+        "who": "r7",
+        "to": [
+         46,
+         30
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n4",
+        "to": [
+         40,
+         52
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n4",
+        "to": [
+         62,
+         52
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Pass und Abschluss",
+      "say": "Neon drei spielt Neon vier in den Lauf, und Neon vier schießt ins untere Tor. Das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b3",
+        "to": [
+         63.6,
+         52.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b3",
+        "to": [
+         85.5,
+         49.5
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
