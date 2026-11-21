@@ -1,0 +1,922 @@
+{
+ "title": "1 gegen 1: angreifen, dann sofort verteidigen",
+ "code": "UE-061",
+ "kind": "Spielform",
+ "focuses": [
+  "1 gegen 1",
+  "Verteidigen",
+  "Umschalten"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "duration_minutes": 15,
+ "players_min": 6,
+ "players_max": 10,
+ "field_size": "18 x 18 m",
+ "description": "Zwei Gruppen stehen an zwei Seiten eines Feldes von 18 mal 18 Metern, an den beiden anderen Seiten steht je ein Minitor. Ein Spieler dribbelt auf einen einzelnen Verteidiger zu und will ihn ausspielen und ins Minitor treffen. Erobert der Verteidiger den Ball, schießt er auf das andere Minitor. Danach stellt sich der Verteidiger hinten an, und der Angreifer verteidigt sofort gegen den nächsten Spieler aus der anderen Richtung.",
+ "organisation": [
+  "Feld abstecken: 18 mal 18 Meter mit vier orangen Hütchen, ein Minitor rechts und eines unten.",
+  "Gruppen aufstellen: Team Neon wartet links mit je einem Ball und greift das rechte Tor an, Team Rot wartet oben und greift das untere Tor an.",
+  "Starten: Ein Spieler von Team Rot verteidigt in der Mitte, der erste Spieler von Team Neon dribbelt auf ihn zu. Ich stehe mit Ersatzbällen an der Ecke.",
+  "Wechseln: Nach jedem Angriff stellt sich der Verteidiger in seiner Gruppe hinten an, und der Angreifer wird sofort Verteidiger gegen die andere Gruppe."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Als Angreifer mutig andribbeln und den Verteidiger ausspielen",
+  "Ruhig und entschlossen abschließen, flach oder ins Eck",
+  "Nach dem eigenen Angriff sofort ins Verteidigen umschalten",
+  "Als Verteidiger immer zwischen Ball und Tor stehen"
+ ],
+ "materials": [
+  "2 Minitore",
+  "4 orange Hütchen",
+  "1 Ball pro Spieler",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "say_intro": "Eins gegen eins mit Rollentausch. Hier greift jeder an und muss danach sofort verteidigen.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 28,
+    "y": 9,
+    "w": 44,
+    "h": 44
+   }
+  ],
+  "players": [
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 29.5,
+    "y": 32,
+    "label": "9"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 49,
+    "y": 31,
+    "label": "5"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 19.5,
+    "y": 33,
+    "label": "10"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 19.5,
+    "y": 49,
+    "label": "11"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 11,
+    "y": 41,
+    "label": "8"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 69,
+    "y": 4,
+    "label": "3"
+   },
+   {
+    "id": "r4",
+    "team": "b",
+    "x": 60.5,
+    "y": 4,
+    "label": "4"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 52,
+    "y": 4,
+    "label": "6"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 21,
+    "y": 4,
+    "label": "T"
+   }
+  ],
+  "cones": [
+   {
+    "x": 28,
+    "y": 9,
+    "color": "orange"
+   },
+   {
+    "x": 72,
+    "y": 9,
+    "color": "orange"
+   },
+   {
+    "x": 28,
+    "y": 53,
+    "color": "orange"
+   },
+   {
+    "x": 72,
+    "y": 53,
+    "color": "orange"
+   }
+  ],
+  "goals": [
+   {
+    "x": 72,
+    "y": 31,
+    "side": "right"
+   },
+   {
+    "x": 50,
+    "y": 53,
+    "side": "bottom"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 31.1,
+    "y": 32.8
+   },
+   {
+    "id": "b6",
+    "x": 21.1,
+    "y": 34.6
+   },
+   {
+    "id": "b7",
+    "x": 21.1,
+    "y": 50.6
+   },
+   {
+    "id": "b8",
+    "x": 12.6,
+    "y": 42.6
+   },
+   {
+    "id": "b3",
+    "x": 70.6,
+    "y": 5.8
+   },
+   {
+    "id": "b4",
+    "x": 62.1,
+    "y": 5.8
+   },
+   {
+    "id": "b5",
+    "x": 53.6,
+    "y": 5.8
+   },
+   {
+    "id": "b9",
+    "x": 24.5,
+    "y": 6
+   },
+   {
+    "id": "b10",
+    "x": 17.5,
+    "y": 6
+   }
+  ],
+  "steps": [
+   {
+    "label": "Die Neun dribbelt an",
+    "say": "Spieler neun dribbelt auf Spieler fünf zu, und der kommt ihm entgegen.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       41,
+       32.5
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "r5",
+      "to": [
+       46,
+       31.5
+      ],
+      "type": "lauf",
+      "delay": 0.25
+     }
+    ]
+   },
+   {
+    "label": "Haken und oben vorbei",
+    "say": "Mit einem Haken zieht Spieler neun oben an Spieler fünf vorbei.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       45.5,
+       25
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n9",
+      "to": [
+       57,
+       25.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "r5",
+      "to": [
+       47.5,
+       28.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Abschluss ins rechte Minitor: Tor",
+    "say": "Er schließt ruhig ins rechte Minitor ab, und das gibt ein Tor.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       73.8,
+       30.5
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Rollentausch, neue Richtung",
+    "say": "Jetzt wird Spieler neun sofort Verteidiger, Spieler fünf stellt sich oben hinten an, und Spieler drei greift das untere Tor an.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       53,
+       38
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r5",
+      "to": [
+       43.5,
+       4
+      ],
+      "type": "lauf",
+      "delay": 0.1
+     },
+     {
+      "who": "r3",
+      "to": [
+       62,
+       17
+      ],
+      "type": "dribbling",
+      "delay": 0.3,
+      "ball": "b3"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 28,
+    "y1": 58.6,
+    "x2": 72,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 82,
+    "y1": 9,
+    "x2": 82,
+    "y2": 53,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Der Verteidiger stellt sich immer zwischen Ball und Tor, nicht nur vor den Ball.",
+   "title": "Zwischen Ball und Tor",
+   "text": "Ein Verteidiger, der nur zum Ball läuft, öffnet dem Angreifer den Weg zum Tor. Deshalb stellt er sich zuerst auf die Linie zwischen Ball und Tor und drängt den Angreifer dann nach außen. So kommt der Angreifer nicht zum Abschluss.",
+   "board": {
+    "players": [
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 40,
+      "y": 20,
+      "label": "6"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 35,
+      "y": 38,
+      "label": "9"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 19.5,
+      "y": 33,
+      "label": "10"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 19.5,
+      "y": 49,
+      "label": "11"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 11,
+      "y": 41,
+      "label": "8"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 69,
+      "y": 4,
+      "label": "3"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 60.5,
+      "y": 4,
+      "label": "4"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 52,
+      "y": 4,
+      "label": "5"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 21,
+      "y": 4,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 41.2,
+      "y": 21.2
+     },
+     {
+      "id": "b6",
+      "x": 21.1,
+      "y": 34.6
+     },
+     {
+      "id": "b7",
+      "x": 21.1,
+      "y": 50.6
+     },
+     {
+      "id": "b8",
+      "x": 12.6,
+      "y": 42.6
+     },
+     {
+      "id": "b3",
+      "x": 70.6,
+      "y": 5.8
+     },
+     {
+      "id": "b4",
+      "x": 62.1,
+      "y": 5.8
+     },
+     {
+      "id": "b5",
+      "x": 53.6,
+      "y": 5.8
+     },
+     {
+      "id": "b9",
+      "x": 24.5,
+      "y": 6
+     },
+     {
+      "id": "b10",
+      "x": 17.5,
+      "y": 6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Der Verteidiger steht falsch",
+      "say": "Spieler sechs dribbelt los, doch Spieler neun steht noch neben der Linie zwischen Ball und Tor, nicht darauf.",
+      "moves": [
+       {
+        "who": "r6",
+        "to": [
+         48,
+         24
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "In die Linie zum Tor",
+      "say": "Spieler neun läuft schnell in die Linie zwischen Ball und unterem Tor hinein.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         48.5,
+         36
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r6",
+        "to": [
+         50,
+         27
+        ],
+        "type": "dribbling",
+        "delay": 0.4,
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Nach außen gedrängt, kein Abschluss",
+      "say": "Spieler sechs muss nach außen ausweichen, Spieler neun bleibt dran, und der Weg zum Tor ist zu.",
+      "moves": [
+       {
+        "who": "r6",
+        "to": [
+         60,
+         31
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n9",
+        "to": [
+         56,
+         37
+        ],
+        "type": "lauf",
+        "delay": 0.15
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Das Feld wird geteilt, und der Verteidiger hält seine Hälfte.",
+   "title": "Hälften: über die Linie kommen",
+   "text": "Eine Linie teilt das Feld in eine Angriffs- und eine Abwehrhälfte. Der Angreifer muss erst über die Mittellinie kommen, bevor er abschließen darf, der Verteidiger will genau das verhindern. Erobert er den Ball, schaltet er sofort um und trifft in das Minitor an seiner Hälfte.",
+   "board": {
+    "players": [
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 51,
+      "y": 20,
+      "label": "5"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 49,
+      "y": 40.5,
+      "label": "9"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 19.5,
+      "y": 33,
+      "label": "10"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 19.5,
+      "y": 49,
+      "label": "11"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 11,
+      "y": 41,
+      "label": "8"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 69,
+      "y": 4,
+      "label": "3"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 60.5,
+      "y": 4,
+      "label": "4"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 44,
+      "y": 4,
+      "label": "6"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 21,
+      "y": 4,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 52.5,
+      "y": 21
+     },
+     {
+      "id": "b6",
+      "x": 21.1,
+      "y": 34.6
+     },
+     {
+      "id": "b7",
+      "x": 21.1,
+      "y": 50.6
+     },
+     {
+      "id": "b8",
+      "x": 12.6,
+      "y": 42.6
+     },
+     {
+      "id": "b3",
+      "x": 70.6,
+      "y": 5.8
+     },
+     {
+      "id": "b4",
+      "x": 62.1,
+      "y": 5.8
+     },
+     {
+      "id": "b5",
+      "x": 45.6,
+      "y": 5.8
+     },
+     {
+      "id": "b9",
+      "x": 24.5,
+      "y": 6
+     },
+     {
+      "id": "b10",
+      "x": 17.5,
+      "y": 6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Die Fünf will über die Linie",
+      "say": "Spieler fünf dribbelt auf die Mittellinie zu, und Spieler neun rückt bis an die Linie heran.",
+      "moves": [
+       {
+        "who": "r5",
+        "to": [
+         57.5,
+         26
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n9",
+        "to": [
+         56,
+         35
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Neun erobert den Ball",
+      "say": "Kurz vor der Linie geht Spieler neun dazwischen und erobert den Ball.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         62.5,
+         34
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Umschalten: Tor rechts",
+      "say": "Sofort schaltet er um und trifft ins rechte Minitor, und das gibt ein Tor für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         73.8,
+         31.5
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ],
+    "lines": [
+     {
+      "type": "rect",
+      "x": 28,
+      "y": 9,
+      "w": 44,
+      "h": 44
+     },
+     {
+      "type": "line",
+      "x1": 28,
+      "y1": 31,
+      "x2": 72,
+      "y2": 31,
+      "dashed": true
+     },
+     {
+      "type": "line",
+      "x1": 50,
+      "y1": 9,
+      "x2": 50,
+      "y2": 53,
+      "dashed": true
+     }
+    ],
+    "labels": [
+     {
+      "x": 38,
+      "y": 23,
+      "text": "ANGRIFF"
+     },
+     {
+      "x": 38,
+      "y": 46,
+      "text": "ABWEHR"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Eng rangehen und eng dranbleiben.",
+   "title": "Eng rangehen, eng dranbleiben",
+   "text": "Wer als Verteidiger zu weit weg steht, lässt dem Angreifer Zeit und Platz. Deshalb geht er schnell eng heran, bleibt mit kurzen Schritten dran und lässt sich nicht abschütteln. So zwingt er den Angreifer zu Fehlern.",
+   "board": {
+    "players": [
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 37,
+      "y": 20,
+      "label": "6"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 45,
+      "y": 44,
+      "label": "10"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 19.5,
+      "y": 33,
+      "label": "11"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 19.5,
+      "y": 49,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 11,
+      "y": 41,
+      "label": "9"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 69,
+      "y": 4,
+      "label": "3"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 60.5,
+      "y": 4,
+      "label": "4"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 52,
+      "y": 4,
+      "label": "5"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 21,
+      "y": 4,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 38.5,
+      "y": 21
+     },
+     {
+      "id": "b6",
+      "x": 21.1,
+      "y": 34.6
+     },
+     {
+      "id": "b7",
+      "x": 21.1,
+      "y": 50.6
+     },
+     {
+      "id": "b8",
+      "x": 12.6,
+      "y": 42.6
+     },
+     {
+      "id": "b3",
+      "x": 70.6,
+      "y": 5.8
+     },
+     {
+      "id": "b4",
+      "x": 62.1,
+      "y": 5.8
+     },
+     {
+      "id": "b5",
+      "x": 53.6,
+      "y": 5.8
+     },
+     {
+      "id": "b9",
+      "x": 24.5,
+      "y": 6
+     },
+     {
+      "id": "b10",
+      "x": 17.5,
+      "y": 6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Schnell eng heran",
+      "say": "Spieler sechs dribbelt an, und Spieler zehn geht schnell eng heran.",
+      "moves": [
+       {
+        "who": "r6",
+        "to": [
+         42,
+         27
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n10",
+        "to": [
+         44,
+         32.5
+        ],
+        "type": "lauf",
+        "delay": 0.15
+       }
+      ]
+     },
+     {
+      "label": "Eng dranbleiben",
+      "say": "Spieler sechs will nach rechts weg, doch Spieler zehn bleibt mit kurzen Schritten eng dran.",
+      "moves": [
+       {
+        "who": "r6",
+        "to": [
+         49,
+         28.5
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n10",
+        "to": [
+         50,
+         33
+        ],
+        "type": "lauf",
+        "delay": 0.15
+       }
+      ]
+     }
+    ],
+    "lines": [
+     {
+      "type": "rect",
+      "x": 28,
+      "y": 9,
+      "w": 44,
+      "h": 44
+     },
+     {
+      "type": "line",
+      "x1": 28,
+      "y1": 31,
+      "x2": 72,
+      "y2": 31,
+      "dashed": true
+     },
+     {
+      "type": "line",
+      "x1": 50,
+      "y1": 9,
+      "x2": 50,
+      "y2": 53,
+      "dashed": true
+     }
+    ]
+   }
+  }
+ ]
+}

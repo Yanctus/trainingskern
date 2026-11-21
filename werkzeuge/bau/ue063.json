@@ -1,0 +1,681 @@
+{
+ "title": "Fangen und Abschluss",
+ "code": "UE-063",
+ "kind": "Spielform",
+ "focuses": [
+  "Erwärmung",
+  "Bewegung",
+  "Torschuss"
+ ],
+ "age_groups": [
+  "F-Jugend",
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend"
+ ],
+ "duration_minutes": 10,
+ "players_min": 5,
+ "players_max": 8,
+ "field_size": "18 x 18 m",
+ "description": "Alle Spieler bewegen sich in einem Feld von 18 mal 18 Metern, an jeder Seite steht ein Minitor mit drei Bällen davor. Jeder versucht, andere abzuschlagen, ohne selbst abgeschlagen zu werden. Wer jemanden abschlägt, dreht sofort um und schießt einen Ball direkt ins nächste Tor. Wer am Ende die meisten Abschläge und Tore hat, gewinnt.",
+ "organisation": [
+  "Feld abstecken: 18 mal 18 Meter mit vier orangen Hütchen, an jeder Seite steht mittig ein Minitor.",
+  "Bälle verteilen: Vor jedem Tor liegen drei Bälle auf der Linie, ich stehe mit weiteren Bällen an der Ecke.",
+  "Fangen: Alle laufen im Feld und versuchen, andere abzuschlagen, ohne selbst erwischt zu werden.",
+  "Abschluss: Nach jedem Abschlag holt sich der Spieler den nächsten Ball und schießt ihn direkt ins Tor davor. Jeder zählt seine Abschläge und Tore."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Ständig in Bewegung bleiben, damit man nicht erwischt wird",
+  "Immer wissen, wo die anderen Spieler sind",
+  "Den richtigen Moment zum Abschlagen wählen",
+  "Beim Abschluss das Tor treffen"
+ ],
+ "materials": [
+  "4 Minitore",
+  "4 orange Hütchen",
+  "12 Bälle an den Toren",
+  "Weitere Bälle beim Trainer"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "say_intro": "Fangen und Abschluss. Hier schlagen sich die Spieler gegenseitig ab und schießen nach jedem Abschlag direkt aufs nächste Minitor.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 28,
+    "y": 8,
+    "w": 44,
+    "h": 44
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 8,
+    "side": "top"
+   },
+   {
+    "x": 50,
+    "y": 52,
+    "side": "bottom"
+   },
+   {
+    "x": 28,
+    "y": 30,
+    "side": "left"
+   },
+   {
+    "x": 72,
+    "y": 30,
+    "side": "right"
+   }
+  ],
+  "cones": [
+   {
+    "x": 28,
+    "y": 8,
+    "color": "orange"
+   },
+   {
+    "x": 72,
+    "y": 8,
+    "color": "orange"
+   },
+   {
+    "x": 28,
+    "y": 52,
+    "color": "orange"
+   },
+   {
+    "x": 72,
+    "y": 52,
+    "color": "orange"
+   }
+  ],
+  "balls": [
+   {
+    "id": "t1",
+    "x": 37,
+    "y": 9.5
+   },
+   {
+    "id": "t2",
+    "x": 50,
+    "y": 9.5
+   },
+   {
+    "id": "t3",
+    "x": 63,
+    "y": 9.5
+   },
+   {
+    "id": "u1",
+    "x": 37,
+    "y": 50.5
+   },
+   {
+    "id": "u2",
+    "x": 50,
+    "y": 50.5
+   },
+   {
+    "id": "u3",
+    "x": 63,
+    "y": 50.5
+   },
+   {
+    "id": "l1",
+    "x": 29.5,
+    "y": 17
+   },
+   {
+    "id": "l2",
+    "x": 29.5,
+    "y": 30
+   },
+   {
+    "id": "l3",
+    "x": 29.5,
+    "y": 43
+   },
+   {
+    "id": "r1",
+    "x": 70.5,
+    "y": 19.5
+   },
+   {
+    "id": "r2",
+    "x": 70.5,
+    "y": 30
+   },
+   {
+    "id": "r3",
+    "x": 70.5,
+    "y": 40.5
+   },
+   {
+    "id": "c1",
+    "x": 79,
+    "y": 5.5
+   }
+  ],
+  "players": [
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 38.3,
+    "y": 17.3,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 59.4,
+    "y": 18,
+    "label": "3"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 49.7,
+    "y": 28,
+    "label": "6"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 33,
+    "y": 34,
+    "label": "4"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 52,
+    "y": 45,
+    "label": "7"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 75.5,
+    "y": 4,
+    "label": "T"
+   }
+  ],
+  "steps": [
+   {
+    "label": "Jeder jagt jeden",
+    "say": "Alle sind in Bewegung, und Spieler sechs nimmt Spieler drei ins Visier.",
+    "moves": [
+     {
+      "who": "n6",
+      "to": [
+       56,
+       23.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n3",
+      "to": [
+       62.5,
+       23
+      ],
+      "type": "lauf",
+      "delay": 0.25
+     },
+     {
+      "who": "n2",
+      "to": [
+       43,
+       13
+      ],
+      "type": "lauf",
+      "delay": 0.1
+     },
+     {
+      "who": "n7",
+      "to": [
+       57,
+       46.5
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Abgeschlagen: umdrehen zum Ball",
+    "say": "Spieler sechs hat Spieler drei abgeschlagen, dreht sofort um und sprintet zum nächsten Ball.",
+    "moves": [
+     {
+      "who": "n6",
+      "to": [
+       68.5,
+       39.5
+      ],
+      "type": "lauf"
+     }
+    ]
+   },
+   {
+    "label": "Direkt ins Tor: Punkt",
+    "say": "Er schießt den Ball direkt ins rechte Minitor, und das gibt einen Punkt.",
+    "moves": [
+     {
+      "who": "r3",
+      "to": [
+       73.8,
+       31
+      ],
+      "type": "pass"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 28,
+    "y1": 58.6,
+    "x2": 72,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 82,
+    "y1": 8,
+    "x2": 82,
+    "y2": 52,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Erst umschauen, dann zuschlagen, dann schnell zum Ball.",
+   "title": "Umschauen, zuschlagen, abschließen",
+   "text": "Wer sich ständig umschaut, findet schnell einen Spieler, der nicht aufpasst. Ist der Abschlag geschafft, dreht man sofort um, holt den nächsten Ball und schließt entschlossen ab. Umschauen, Tempo und eine schnelle Entscheidung gehören zusammen.",
+   "board": {
+    "players": [
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 34,
+      "y": 13,
+      "label": "4"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 42.9,
+      "y": 25.5,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 61.2,
+      "y": 16.4,
+      "label": "3"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 66,
+      "y": 32,
+      "label": "6"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 34.4,
+      "y": 42,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 75.5,
+      "y": 4,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "t1",
+      "x": 37,
+      "y": 9.5
+     },
+     {
+      "id": "t2",
+      "x": 50,
+      "y": 9.5
+     },
+     {
+      "id": "t3",
+      "x": 63,
+      "y": 9.5
+     },
+     {
+      "id": "u1",
+      "x": 37,
+      "y": 50.5
+     },
+     {
+      "id": "u2",
+      "x": 50,
+      "y": 50.5
+     },
+     {
+      "id": "u3",
+      "x": 63,
+      "y": 50.5
+     },
+     {
+      "id": "l1",
+      "x": 29.5,
+      "y": 17
+     },
+     {
+      "id": "l2",
+      "x": 29.5,
+      "y": 30
+     },
+     {
+      "id": "l3",
+      "x": 29.5,
+      "y": 43
+     },
+     {
+      "id": "r1",
+      "x": 70.5,
+      "y": 19.5
+     },
+     {
+      "id": "r2",
+      "x": 70.5,
+      "y": 30
+     },
+     {
+      "id": "r3",
+      "x": 70.5,
+      "y": 40.5
+     },
+     {
+      "id": "c1",
+      "x": 79,
+      "y": 5.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Umschauen",
+      "say": "Spieler vier schaut sich um und sieht, dass Spieler zwei gerade nicht aufpasst.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         37,
+         17
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n3",
+        "to": [
+         57,
+         21
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Schnell zuschlagen",
+      "say": "Mit ein paar schnellen Schritten schlägt er Spieler zwei ab.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         41,
+         22.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n2",
+        "to": [
+         46,
+         27
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Umdrehen, Ball holen",
+      "say": "Sofort dreht Spieler vier um und holt sich den nächsten Ball links.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         32,
+         18.5
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Direkt ins linke Tor: Punkt",
+      "say": "Er schließt direkt ins linke Minitor ab, und das gibt einen Punkt.",
+      "moves": [
+       {
+        "who": "l1",
+        "to": [
+         26.3,
+         29
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Mit dem Ball durch die anderen dribbeln und in ein anderes Tor treffen.",
+   "title": "Durch den Verkehr in ein anderes Tor",
+   "text": "Jetzt darf nicht mehr ins Tor direkt vor dem Ball geschossen werden. Wer einen Ball holt, dribbelt durch die anderen Spieler hindurch und trifft in eines der anderen Tore. Das verlangt mehr Übersicht, Ballkontrolle und schnelle Entscheidungen.",
+   "board": {
+    "players": [
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 33,
+      "y": 47,
+      "label": "4"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 40,
+      "y": 30,
+      "label": "2"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 50,
+      "y": 18,
+      "label": "6"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 61,
+      "y": 23,
+      "label": "3"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 61,
+      "y": 40,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 75.5,
+      "y": 4,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "t1",
+      "x": 37,
+      "y": 9.5
+     },
+     {
+      "id": "t2",
+      "x": 50,
+      "y": 9.5
+     },
+     {
+      "id": "t3",
+      "x": 63,
+      "y": 9.5
+     },
+     {
+      "id": "u1",
+      "x": 37,
+      "y": 50.5
+     },
+     {
+      "id": "u2",
+      "x": 50,
+      "y": 50.5
+     },
+     {
+      "id": "u3",
+      "x": 63,
+      "y": 50.5
+     },
+     {
+      "id": "l1",
+      "x": 29.5,
+      "y": 17
+     },
+     {
+      "id": "l2",
+      "x": 29.5,
+      "y": 30
+     },
+     {
+      "id": "l3",
+      "x": 29.5,
+      "y": 43
+     },
+     {
+      "id": "r1",
+      "x": 70.5,
+      "y": 19.5
+     },
+     {
+      "id": "r2",
+      "x": 70.5,
+      "y": 30
+     },
+     {
+      "id": "r3",
+      "x": 70.5,
+      "y": 40.5
+     },
+     {
+      "id": "c1",
+      "x": 79,
+      "y": 5.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Abgeschlagen, Ball holen",
+      "say": "Spieler vier hat abgeschlagen und holt sich den Ball an der linken Seite.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         31.2,
+         43.6
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Dribbling durch den Verkehr",
+      "say": "Mit dem Ball dribbelt er im Bogen an Spieler zwei vorbei, der ihm in den Weg läuft.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         38,
+         44.5
+        ],
+        "type": "dribbling",
+        "ball": "l3"
+       },
+       {
+        "who": "n4",
+        "to": [
+         45,
+         43
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "l3"
+       },
+       {
+        "who": "n2",
+        "to": [
+         42,
+         38
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       }
+      ]
+     },
+     {
+      "label": "Ins untere Tor: Punkt",
+      "say": "Er schließt ins untere Minitor ab, also in ein anderes Tor, und das gibt einen Punkt.",
+      "moves": [
+       {
+        "who": "l3",
+        "to": [
+         48.5,
+         54.5
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

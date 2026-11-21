@@ -18,6 +18,7 @@
 #   python3 werkbank.py lesen UE-061 [UE-062 ...] datei.json -> Einheiten aus der Datenbank holen (kostenlos, ohne Metafelder)
 #   python3 werkbank.py patch db.json neu.json      -> {"$set": ...} nur mit den geänderten Stellen, für update_entities (Korrekturen billig)
 #   python3 werkbank.py blatt datei.json            -> datei-blatt.png: 2D mit Laufwegen + 3D-Näherung aller Tafeln in EINEM Bild
+#   python3 werkbank.py ton <Ordner> [modell]      -> <Ordner>/ton.txt: gesprochene Erklärung aus dem Video als Text mit Zeitstempeln (zuerst lesen!)
 #   python3 werkbank.py vorgaben "<Übungsname>"     -> feste Regel für age_groups und duration_minutes (stehen nicht im PDF)
 #   python3 werkbank.py dauer <Ordner>             -> Länge des Videos in Sekunden (Ordner = import/<Woche>/<Übung>)
 #   python3 werkbank.py szene <Ordner> <von> <bis> [fps] -> <Ordner>/szene-<von>-<bis>.png: 16 Bilder aus diesem Abschnitt (Standard 2 je Sekunde).
@@ -417,6 +418,22 @@ def vorgaben(name):
             return
 
 
+
+def ton(ordner, modell="small.en"):
+    """Tonspur des Videos als Text mit Zeitstempeln (Spracherkennung, läuft lokal): <Ordner>/ton.txt.
+    Der Sprecher erklärt im Video Ablauf, Laufwege und Coaching-Punkte. Zuerst ton.txt lesen, dann nur die nötigen Szenen ansehen.
+    Einmalig: pip install faster-whisper (lädt beim ersten Lauf das Modell, ca. 500 MB)."""
+    from faster_whisper import WhisperModel
+    v = os.path.join(ordner, "video.mp4")
+    m = WhisperModel(modell, device="cpu", compute_type="int8")
+    import numpy as np  # Ton mit ffmpeg auslesen (16 kHz mono), nicht über PyAV: dessen Version passt oft nicht
+    roh = subprocess.run(["ffmpeg", "-v", "error", "-i", v, "-f", "s16le", "-ac", "1", "-ar", "16000", "-"], capture_output=True).stdout
+    segs, _ = m.transcribe(np.frombuffer(roh, np.int16).astype(np.float32) / 32768.0, beam_size=1, vad_filter=True)
+    zeilen = [f"[{int(x.start)//60}:{int(x.start)%60:02d}-{int(x.end)//60}:{int(x.end)%60:02d}] {x.text.strip()}" for x in segs]
+    open(os.path.join(ordner, "ton.txt"), "w").write("\n".join(zeilen) + "\n")
+    print(f"Ton: {os.path.join(ordner, 'ton.txt')} ({len(zeilen)} Sätze)")
+
+
 if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else ""
     if cmd == "liste":
@@ -442,6 +459,8 @@ if __name__ == "__main__":
         patch(sys.argv[2], sys.argv[3])
     elif cmd == "blatt":
         blatt(sys.argv[2])
+    elif cmd == "ton":
+        ton(sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else "small.en")
     elif cmd == "vorgaben":
         vorgaben(" ".join(sys.argv[2:]))
     else:

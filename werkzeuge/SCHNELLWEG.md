@@ -10,13 +10,23 @@ README der App (Abschnitte „Übungen aus Video nachbauen“, „Laufweg-Abglei
 
 ## Pro Woche
 1. `python3 werkbank.py holen <Woche>` (Video, PDF, Text, Übersicht).
-2. Pro Übung ansehen (sparsam, jedes Bild kostet): `text.txt` lesen, `pdf-1.png`, `pdf-2.png`, `uebersicht.png`.
+2. `python3 werkbank.py ton <Ordner>` für jede Übung (Spracherkennung, ca. 10 s, einmalig `pip install faster-whisper`): Die gesprochene
+   Erklärung steht dann mit Zeitstempeln in `ton.txt`. Zuerst `text.txt` und `ton.txt` lesen (kostet fast nichts), dann ansehen
+   (sparsam, jedes Bild kostet): `pdf-1.png`, `pdf-2.png`, `uebersicht.png`.
    Dann gezielt `szene <Ordner> <von> <bis>` nur für die Abschnitte mit Laufwegen (Grundform, jede Fassung). Abschnitte aus der
    Übersicht ablesen: Bild n (ab 0) liegt bei n × Dauer/25 Sekunden.
 3. Pro Schritt notieren: wer, von wo, über welche Zwischenpunkte, welche Seite, wann (vor/nach dem Pass), wohin der Pass.
 4. `python3 werkbank.py vorgaben "<Übungsname>"` für Altersstufen und Dauer (stehen nicht im PDF; feste Regel).
 
+## Feste Begriffe (vom Inhaber)
+- **Springer sind immer neutrale Spieler:** `team: "t"`, Label „F“, spielen für das Team in Ballbesitz, im Text „Springer“.
+- Einheiten dürfen zum Live-Check kurz auf „frei“, danach sofort zurück auf „abo“.
+- Altersstufen, Dauer und Spielerzahl stehen nicht im PDF: `vorgaben` benutzen, Spielerzahl aus der Skizze.
+- Fassungen dürfen Linien ergänzen (z. B. Hälften in einer Steigerung): dann alle Linien der Grundform mit übernehmen.
+
 ## Pro Einheit (JSON nur EINMAL schreiben)
+Einheit als kleines Python-Skript in `werkzeuge/bau/ue0xx.py` bauen (Bausteine in `bau/hilfe.py`, Vorbild `bau/ue061.py` bis `ue063.py`),
+`python3 bau/ue0xx.py e.json`, dann:
 1. `create_entities` klein: `{"code","title","kind","duration_minutes","hidden":true,"access":"abo"}` (Antwort ist klein).
 2. `update_entities` mit `{"$set": {…alle übrigen Felder…}}`. Felder mit `null` weglassen (spart Tokens). Antwort ist nur eine Zahl.
 3. `python3 werkbank.py lesen UE-0xx e.json` (kostenlos) → `pruefen e.json --fix` → bei Änderungen
