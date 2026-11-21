@@ -1,0 +1,919 @@
+{
+ "title": "Knallbonbon-Rennen",
+ "code": "UE-085",
+ "kind": "Spielform",
+ "focuses": [
+  "Dribbling",
+  "1 gegen 1",
+  "Torschuss"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "duration_minutes": 15,
+ "players_min": 4,
+ "players_max": 12,
+ "field_size": "18 x 14 m",
+ "description": "Ein Wettrennen auf einer Strecke in Form eines Knallbonbons. Zwei Spieler starten an gegenüberliegenden Enden, dribbeln durch die Hütchen bis zum anderen Ende, laufen dort um ein Hütchen und rennen in das Mittelfeld. Wer zuerst drin ist, wird Angreifer, der andere verteidigt. Dann wird eins gegen eins auf die Minitore gespielt.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 14 Metern. Mit Hütchen eine Strecke in Form eines Knallbonbons stellen: ein Dreieck an jedem Ende, dazwischen das Mittelfeld mit je einer Hütchenreihe an beiden Seiten. An den inneren Enden des Mittelfelds je ein Minitor.",
+  "Verteilen: Zwei Mannschaften. Jede Mannschaft hat an beiden Enden eine Startposition, jeder Spieler mit Ball.",
+  "Ablauf: Zwei Spieler starten gleichzeitig an gegenüberliegenden Enden. Beide dribbeln durch die Strecke bis zum anderen Ende, laufen um ein Hütchen und rennen ins Mittelfeld. Der Erste dort ist Angreifer und behält seinen Ball, der Zweite wird Verteidiger.",
+  "Danach: Nach dem Eins gegen Eins holen sich beide einen neuen Ball und stellen sich wieder an, das nächste Paar startet."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Beim Dribbeln durch die Hütchen den Ball eng führen",
+  "Beide Füße benutzen, um schneller zu werden",
+  "Scharf um die Hütchen drehen",
+  "Im Eins gegen Eins mit eigener Technik vorbei und genau statt hart schießen"
+ ],
+ "materials": [
+  "20 Hütchen",
+  "2 Minitore",
+  "Bälle für alle Spieler",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Knallbonbon-Rennen. Zwei Spieler dribbeln um die Wette, und wer zuerst im Mittelfeld ist, greift an.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 21,
+    "y": 8.25,
+    "w": 58,
+    "h": 43.5
+   },
+   {
+    "type": "rect",
+    "x": 34.5,
+    "y": 22,
+    "w": 31.1,
+    "h": 16.8
+   },
+   {
+    "type": "line",
+    "x1": 22.9,
+    "y1": 21.8,
+    "x2": 22.9,
+    "y2": 38.4,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 22.9,
+    "y1": 21.8,
+    "x2": 34.5,
+    "y2": 38.9,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 22.9,
+    "y1": 38.4,
+    "x2": 34.5,
+    "y2": 22.2,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 77,
+    "y1": 22.2,
+    "x2": 77,
+    "y2": 38.7,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 77,
+    "y1": 22.2,
+    "x2": 65.6,
+    "y2": 38.6,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 77,
+    "y1": 38.7,
+    "x2": 65.6,
+    "y2": 21.8,
+    "dashed": false
+   }
+  ],
+  "cones": [
+   {
+    "x": 22.9,
+    "y": 21.8,
+    "color": "orange"
+   },
+   {
+    "x": 22.9,
+    "y": 38.4,
+    "color": "orange"
+   },
+   {
+    "x": 28.5,
+    "y": 30.5,
+    "color": "orange"
+   },
+   {
+    "x": 34.5,
+    "y": 22.2,
+    "color": "orange"
+   },
+   {
+    "x": 34.5,
+    "y": 38.9,
+    "color": "orange"
+   },
+   {
+    "x": 65.6,
+    "y": 21.8,
+    "color": "orange"
+   },
+   {
+    "x": 65.6,
+    "y": 38.6,
+    "color": "orange"
+   },
+   {
+    "x": 71.2,
+    "y": 30.7,
+    "color": "orange"
+   },
+   {
+    "x": 77,
+    "y": 22.2,
+    "color": "orange"
+   },
+   {
+    "x": 77,
+    "y": 38.7,
+    "color": "orange"
+   },
+   {
+    "x": 42.9,
+    "y": 22,
+    "color": "orange"
+   },
+   {
+    "x": 47.7,
+    "y": 22,
+    "color": "orange"
+   },
+   {
+    "x": 52.5,
+    "y": 22,
+    "color": "orange"
+   },
+   {
+    "x": 57.1,
+    "y": 22,
+    "color": "orange"
+   },
+   {
+    "x": 42.9,
+    "y": 38.9,
+    "color": "orange"
+   },
+   {
+    "x": 47.7,
+    "y": 38.9,
+    "color": "orange"
+   },
+   {
+    "x": 52.5,
+    "y": 38.9,
+    "color": "orange"
+   },
+   {
+    "x": 57.1,
+    "y": 38.9,
+    "color": "orange"
+   }
+  ],
+  "goals": [
+   {
+    "x": 33.5,
+    "y": 30.5,
+    "side": "left"
+   },
+   {
+    "x": 66.6,
+    "y": 30.5,
+    "side": "right"
+   }
+  ],
+  "players": [
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 18.5,
+    "y": 17.5,
+    "label": "10"
+   },
+   {
+    "id": "r4",
+    "team": "b",
+    "x": 18.5,
+    "y": 42.5,
+    "label": "4"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 81.5,
+    "y": 17.5,
+    "label": "8"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 81.5,
+    "y": 42.5,
+    "label": "9"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 50,
+    "y": 3,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b10",
+    "x": 20.1,
+    "y": 18.1
+   },
+   {
+    "id": "b9",
+    "x": 79.9,
+    "y": 41.9
+   },
+   {
+    "id": "c1",
+    "x": 52.5,
+    "y": 3.6
+   }
+  ],
+  "steps": [
+   {
+    "label": "Beide dribbeln los",
+    "say": "Neon zehn und Rot neun starten gleichzeitig an gegenüberliegenden Enden und dribbeln durch die Hütchen.",
+    "moves": [
+     {
+      "who": "n10",
+      "to": [
+       28,
+       20
+      ],
+      "type": "dribbling",
+      "ball": "b10"
+     },
+     {
+      "who": "n10",
+      "to": [
+       34.5,
+       26.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b10"
+     },
+     {
+      "who": "n10",
+      "to": [
+       44.1,
+       25.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b10"
+     },
+     {
+      "who": "n10",
+      "to": [
+       46.5,
+       18.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b10"
+     },
+     {
+      "who": "n10",
+      "to": [
+       48.9,
+       18.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b10"
+     },
+     {
+      "who": "r9",
+      "to": [
+       72,
+       40
+      ],
+      "type": "dribbling",
+      "ball": "b9"
+     },
+     {
+      "who": "r9",
+      "to": [
+       65.5,
+       33.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b9"
+     },
+     {
+      "who": "r9",
+      "to": [
+       55.9,
+       34.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b9"
+     },
+     {
+      "who": "r9",
+      "to": [
+       53.5,
+       41.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b9"
+     },
+     {
+      "who": "r9",
+      "to": [
+       51.1,
+       41.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b9"
+     }
+    ]
+   },
+   {
+    "label": "Um das Hütchen am Ende",
+    "say": "Beide dribbeln weiter durch die Reihe und laufen am anderen Ende um das Hütchen.",
+    "moves": [
+     {
+      "who": "n10",
+      "to": [
+       51.3,
+       25.5
+      ],
+      "type": "dribbling",
+      "ball": "b10"
+     },
+     {
+      "who": "n10",
+      "to": [
+       53.6,
+       25.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b10"
+     },
+     {
+      "who": "n10",
+      "to": [
+       56,
+       18.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b10"
+     },
+     {
+      "who": "n10",
+      "to": [
+       58.4,
+       18.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b10"
+     },
+     {
+      "who": "n10",
+      "to": [
+       61,
+       24
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b10"
+     },
+     {
+      "who": "n10",
+      "to": [
+       74,
+       26
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b10"
+     },
+     {
+      "who": "n10",
+      "to": [
+       74,
+       33
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b10"
+     },
+     {
+      "who": "r9",
+      "to": [
+       48.7,
+       34.5
+      ],
+      "type": "dribbling",
+      "ball": "b9"
+     },
+     {
+      "who": "r9",
+      "to": [
+       46.4,
+       34.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b9"
+     },
+     {
+      "who": "r9",
+      "to": [
+       44,
+       41.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b9"
+     },
+     {
+      "who": "r9",
+      "to": [
+       41.6,
+       41.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b9"
+     },
+     {
+      "who": "r9",
+      "to": [
+       39,
+       36
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b9"
+     },
+     {
+      "who": "r9",
+      "to": [
+       26,
+       34
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b9"
+     },
+     {
+      "who": "r9",
+      "to": [
+       26,
+       27
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b9"
+     }
+    ]
+   },
+   {
+    "label": "Wer ist zuerst drin",
+    "say": "Neon zehn ist zuerst im Mittelfeld und wird Angreifer. Rot neun lässt seinen Ball liegen und verteidigt.",
+    "moves": [
+     {
+      "who": "n10",
+      "to": [
+       70,
+       42
+      ],
+      "type": "dribbling",
+      "ball": "b10"
+     },
+     {
+      "who": "n10",
+      "to": [
+       61,
+       42
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b10"
+     },
+     {
+      "who": "n10",
+      "to": [
+       61,
+       34
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b10"
+     },
+     {
+      "who": "r9",
+      "to": [
+       30,
+       18
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "r9",
+      "to": [
+       39,
+       18
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r9",
+      "to": [
+       40,
+       28
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Eins gegen eins",
+    "say": "Neon zehn dribbelt mit einem Haken an Rot neun vorbei und schießt ins Minitor, und das gibt einen Punkt für Neon.",
+    "moves": [
+     {
+      "who": "n10",
+      "to": [
+       50,
+       36
+      ],
+      "type": "dribbling",
+      "ball": "b10"
+     },
+     {
+      "who": "n10",
+      "to": [
+       44,
+       31
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b10"
+     },
+     {
+      "who": "r9",
+      "to": [
+       45,
+       34.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b10",
+      "to": [
+       32.6,
+       30.5
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 21,
+    "y1": 58.6,
+    "x2": 79,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 91,
+    "y1": 8.25,
+    "x2": 91,
+    "y2": 51.75,
+    "text": "14 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Mit kurzen, schnellen Bewegungen den Verteidiger loswerden.",
+   "title": "Kurz antäuschen, dann weg",
+   "text": "Im Eins gegen Eins hilft eine kurze, schnelle Bewegung: kurz in eine Richtung antäuschen, dann mit dem Ball in den freien Raum ziehen. So hat der Angreifer Platz und kann in Ruhe genau ins Minitor schießen.",
+   "board": {
+    "players": [
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 18.5,
+      "y": 17.5,
+      "label": "10"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 43,
+      "y": 28,
+      "label": "4"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 52,
+      "y": 36,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 81.5,
+      "y": 42.5,
+      "label": "9"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b8",
+      "x": 50.4,
+      "y": 36.6
+     },
+     {
+      "id": "c1",
+      "x": 52.5,
+      "y": 3.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Antäuschen",
+      "say": "Neon acht täuscht mit dem Ball nach unten an. Rot vier geht mit.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         48,
+         38
+        ],
+        "type": "dribbling",
+        "ball": "b8"
+       },
+       {
+        "who": "r4",
+        "to": [
+         44,
+         33
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Haken und weg",
+      "say": "Mit einem kurzen Haken zieht Neon acht nach oben in den freien Raum.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         47,
+         30
+        ],
+        "type": "dribbling",
+        "ball": "b8"
+       },
+       {
+        "who": "n8",
+        "to": [
+         41,
+         25
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b8"
+       }
+      ]
+     },
+     {
+      "label": "Genau abschließen",
+      "say": "Neon acht schießt genau ins Minitor, und das gibt einen Punkt für Neon.",
+      "moves": [
+       {
+        "who": "b8",
+        "to": [
+         32.6,
+         30
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Nach einem Tor kommt ein Mitspieler dazu, dann heißt es zwei gegen eins.",
+   "title": "Nach dem Tor zwei gegen eins",
+   "text": "Trifft eine Mannschaft im Eins gegen Eins, darf sofort ein zweiter Spieler dieser Mannschaft mit Ball ins Mittelfeld. Jetzt greifen die beiden zu zweit gegen einen Verteidiger das andere Minitor an und können einen Extrapunkt holen.",
+   "board": {
+    "players": [
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 41,
+      "y": 27,
+      "label": "10"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 18.5,
+      "y": 42.5,
+      "label": "4"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 81.5,
+      "y": 17.5,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 50,
+      "y": 34,
+      "label": "9"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b10",
+      "x": 39.4,
+      "y": 27.6
+     },
+     {
+      "id": "b8",
+      "x": 79.9,
+      "y": 18.1
+     },
+     {
+      "id": "c1",
+      "x": 52.5,
+      "y": 3.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Tor im Eins gegen Eins",
+      "say": "Neon zehn schießt ins Minitor, und das gibt einen Punkt für Neon.",
+      "moves": [
+       {
+        "who": "b10",
+        "to": [
+         32.6,
+         30
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Mitspieler kommt dazu",
+      "say": "Sofort dribbelt Neon acht ins Mittelfeld, und Neon zehn läuft mit nach vorn. Jetzt steht es zwei gegen eins.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         72,
+         18
+        ],
+        "type": "dribbling",
+        "ball": "b8"
+       },
+       {
+        "who": "n8",
+        "to": [
+         61,
+         18
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b8"
+       },
+       {
+        "who": "n8",
+        "to": [
+         60,
+         25
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b8"
+       },
+       {
+        "who": "n10",
+        "to": [
+         55,
+         36
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r9",
+        "to": [
+         57,
+         28
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Extrapunkt",
+      "say": "Neon acht passt quer zu Neon zehn, und der schießt ins andere Minitor. Das gibt einen Extrapunkt für Neon.",
+      "moves": [
+       {
+        "who": "b8",
+        "to": [
+         56.6,
+         36.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b8",
+        "to": [
+         67.6,
+         31
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

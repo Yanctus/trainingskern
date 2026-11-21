@@ -1,0 +1,773 @@
+{
+ "title": "Ab ins Dreieck",
+ "code": "UE-086",
+ "kind": "Übungsform",
+ "focuses": [
+  "Dribbling",
+  "Schnelligkeit",
+  "Koordination"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend"
+ ],
+ "duration_minutes": 12,
+ "players_min": 6,
+ "players_max": 12,
+ "field_size": "23 x 18 m",
+ "description": "Ein Wettlauf zum Ball mit anschließendem Dribbling. Der Trainer spielt einen Ball ins Feld, aus jeder Mannschaft rennt ein Spieler los. Wer den Ball bekommt, dribbelt ihn in eines der Hütchendreiecke und stoppt ihn dort. Das gibt einen Punkt. Die nächsten Spieler müssen ein Dreieck in einer anderen Farbe wählen.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 23 mal 18 Metern. Darin fünf Dreiecke aus je drei Hütchen in zwei Farben verteilen.",
+  "Verteilen: Zwei Mannschaften stellen sich an einer Seite auf. Der Trainer steht mit den Bällen dazwischen.",
+  "Ablauf: Der Trainer spielt einen Ball in den freien Raum. Je ein Spieler aus jeder Mannschaft rennt los. Wer den Ball erobert, dribbelt ihn in ein Dreieck und stoppt ihn dort. Das nächste Paar muss ein Dreieck in einer anderen Farbe ansteuern.",
+  "Punkte: Jeder gestoppte Ball gibt einen Punkt. Bringt eine Mannschaft zwei Bälle in dasselbe Dreieck, gibt es einen zweiten Punkt, und der Trainer nimmt das Dreieck weg."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Unter Druck dribbeln und den Ball im Dreieck sauber stoppen",
+  "Schnell zum Ball sprinten und rechtzeitig abbremsen",
+  "Die Wartenden helfen mit Zurufen, welches Dreieck frei ist",
+  "Den Ball mit dem Körper gegen den Gegner schützen"
+ ],
+ "materials": [
+  "9 gelbe Hütchen",
+  "6 orange Hütchen",
+  "4 Hütchen für das Feld",
+  "Viele Bälle beim Trainer"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Ab ins Dreieck. Wer zuerst am Ball ist, dribbelt ihn in ein Hütchendreieck und stoppt ihn dort.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 18,
+    "y": 5,
+    "w": 64,
+    "h": 50
+   }
+  ],
+  "cones": [
+   {
+    "x": 77.6,
+    "y": 47.8,
+    "color": "neon"
+   },
+   {
+    "x": 71,
+    "y": 38.9,
+    "color": "neon"
+   },
+   {
+    "x": 66.8,
+    "y": 48.9,
+    "color": "neon"
+   },
+   {
+    "x": 63,
+    "y": 17.6,
+    "color": "orange"
+   },
+   {
+    "x": 57.1,
+    "y": 8.7,
+    "color": "orange"
+   },
+   {
+    "x": 53.1,
+    "y": 17.6,
+    "color": "orange"
+   },
+   {
+    "x": 57.8,
+    "y": 26.8,
+    "color": "neon"
+   },
+   {
+    "x": 60.4,
+    "y": 36.2,
+    "color": "neon"
+   },
+   {
+    "x": 51.2,
+    "y": 33.9,
+    "color": "neon"
+   },
+   {
+    "x": 45.8,
+    "y": 43.3,
+    "color": "orange"
+   },
+   {
+    "x": 38.2,
+    "y": 49.2,
+    "color": "orange"
+   },
+   {
+    "x": 35,
+    "y": 39.2,
+    "color": "orange"
+   },
+   {
+    "x": 39.2,
+    "y": 22.7,
+    "color": "neon"
+   },
+   {
+    "x": 32.6,
+    "y": 13.7,
+    "color": "neon"
+   },
+   {
+    "x": 28.4,
+    "y": 23.8,
+    "color": "neon"
+   },
+   {
+    "x": 18,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 82,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 18,
+    "y": 55,
+    "color": "orange"
+   },
+   {
+    "x": 82,
+    "y": 55,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n1",
+    "team": "a",
+    "x": 16,
+    "y": 44,
+    "label": "1"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 7,
+    "y": 50,
+    "label": "2"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 16,
+    "y": 16,
+    "label": "5"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 7,
+    "y": 10,
+    "label": "6"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 5,
+    "y": 30,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "c1",
+    "x": 7.6,
+    "y": 30.6
+   },
+   {
+    "id": "c2",
+    "x": 6,
+    "y": 33.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Wettlauf zum Ball",
+    "say": "Der Trainer spielt einen Ball ins Feld. Gleichzeitig rennen Neon eins und Rot fünf los.",
+    "moves": [
+     {
+      "who": "c1",
+      "to": [
+       36.2,
+       33.5
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r5",
+      "to": [
+       34.6,
+       32
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n1",
+      "to": [
+       38,
+       34
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Zum Dreieck",
+    "say": "Rot fünf ist zuerst am Ball und dribbelt zum orangen Dreieck oben, Neon eins jagt hinterher.",
+    "moves": [
+     {
+      "who": "r5",
+      "to": [
+       52,
+       24
+      ],
+      "type": "dribbling",
+      "ball": "c1"
+     },
+     {
+      "who": "r5",
+      "to": [
+       58,
+       19
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "c1"
+     },
+     {
+      "who": "n1",
+      "to": [
+       48,
+       30
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Gestoppt: Punkt",
+    "say": "Rot fünf stoppt den Ball mitten im Dreieck, und das gibt einen Punkt für Rot.",
+    "moves": [
+     {
+      "who": "r5",
+      "to": [
+       58,
+       14.6
+      ],
+      "type": "dribbling",
+      "ball": "c1"
+     },
+     {
+      "who": "n1",
+      "to": [
+       54,
+       23
+      ],
+      "type": "lauf"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 18,
+    "y1": 58.6,
+    "x2": 82,
+    "y2": 58.6,
+    "text": "23 m"
+   },
+   {
+    "x1": 91,
+    "y1": 5,
+    "x2": 91,
+    "y2": 55,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Zwei Bälle im selben Dreieck bringen einen Extrapunkt.",
+   "title": "Zweimal ins gleiche Dreieck",
+   "text": "Liegt schon ein Ball der eigenen Mannschaft in einem Dreieck, lohnt sich ein zweiter Ball genau dort. Das gibt einen Extrapunkt, und der Trainer nimmt das Dreieck weg. Deshalb vorher den Kopf heben und schauen, wo schon ein Ball liegt.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 40,
+      "y": 30,
+      "label": "1"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 7,
+      "y": 50,
+      "label": "2"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 26,
+      "y": 36,
+      "label": "5"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 7,
+      "y": 10,
+      "label": "6"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 5,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "c1",
+      "x": 41.6,
+      "y": 30.6
+     },
+     {
+      "id": "alt",
+      "x": 57.4,
+      "y": 13.6
+     },
+     {
+      "id": "c2",
+      "x": 6,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Ins gleiche Dreieck",
+      "say": "Neon eins sieht, dass im orangen Dreieck oben schon ein Ball von Neon liegt, und dribbelt genau dorthin.",
+      "moves": [
+       {
+        "who": "n1",
+        "to": [
+         52,
+         24
+        ],
+        "type": "dribbling",
+        "ball": "c1"
+       },
+       {
+        "who": "n1",
+        "to": [
+         58,
+         19
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "c1"
+       },
+       {
+        "who": "r5",
+        "to": [
+         48,
+         30
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Zwei Punkte, Dreieck weg",
+      "say": "Neon eins stoppt den Ball im selben Dreieck, und das gibt zwei Punkte für Neon. Der Trainer nimmt die Hütchen des Dreiecks weg.",
+      "moves": [
+       {
+        "who": "n1",
+        "to": [
+         59,
+         15
+        ],
+        "type": "dribbling",
+        "ball": "c1"
+       },
+       {
+        "who": "r10",
+        "to": [
+         63,
+         2.5
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "r11",
+        "to": [
+         60,
+         2.5
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "r12",
+        "to": [
+         57,
+         2.5
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "cones": [
+     {
+      "x": 77.6,
+      "y": 47.8,
+      "color": "neon",
+      "id": "g10"
+     },
+     {
+      "x": 71,
+      "y": 38.9,
+      "color": "neon",
+      "id": "g11"
+     },
+     {
+      "x": 66.8,
+      "y": 48.9,
+      "color": "neon",
+      "id": "g12"
+     },
+     {
+      "x": 63,
+      "y": 17.6,
+      "color": "orange",
+      "id": "r10"
+     },
+     {
+      "x": 57.1,
+      "y": 8.7,
+      "color": "orange",
+      "id": "r11"
+     },
+     {
+      "x": 53.1,
+      "y": 17.6,
+      "color": "orange",
+      "id": "r12"
+     },
+     {
+      "x": 57.8,
+      "y": 26.8,
+      "color": "neon",
+      "id": "b10"
+     },
+     {
+      "x": 60.4,
+      "y": 36.2,
+      "color": "neon",
+      "id": "b11"
+     },
+     {
+      "x": 51.2,
+      "y": 33.9,
+      "color": "neon",
+      "id": "b12"
+     },
+     {
+      "x": 45.8,
+      "y": 43.3,
+      "color": "orange",
+      "id": "r20"
+     },
+     {
+      "x": 38.2,
+      "y": 49.2,
+      "color": "orange",
+      "id": "r21"
+     },
+     {
+      "x": 35,
+      "y": 39.2,
+      "color": "orange",
+      "id": "r22"
+     },
+     {
+      "x": 39.2,
+      "y": 22.7,
+      "color": "neon",
+      "id": "g20"
+     },
+     {
+      "x": 32.6,
+      "y": 13.7,
+      "color": "neon",
+      "id": "g21"
+     },
+     {
+      "x": 28.4,
+      "y": 23.8,
+      "color": "neon",
+      "id": "g22"
+     },
+     {
+      "x": 18,
+      "y": 5,
+      "color": "orange",
+      "id": "e1"
+     },
+     {
+      "x": 82,
+      "y": 5,
+      "color": "orange",
+      "id": "e2"
+     },
+     {
+      "x": 18,
+      "y": 55,
+      "color": "orange",
+      "id": "e3"
+     },
+     {
+      "x": 82,
+      "y": 55,
+      "color": "orange",
+      "id": "e4"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Von beiden Enden wird gleichzeitig gespielt.",
+   "title": "Von beiden Seiten",
+   "text": "Jetzt starten an beiden Enden Spieler, und von beiden Seiten kommt gleichzeitig ein Ball ins Feld. Gewonnen hat die Mannschaft, die zuerst in jedem Dreieck drei Bälle hat. Weil von beiden Seiten gedribbelt wird, immer den Kopf oben haben. Nur für ältere Spieler.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 16,
+      "y": 44,
+      "label": "1"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 7,
+      "y": 50,
+      "label": "2"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 16,
+      "y": 16,
+      "label": "5"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 7,
+      "y": 10,
+      "label": "6"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 84,
+      "y": 44,
+      "label": "3"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 84,
+      "y": 16,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 5,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "c1",
+      "x": 7.6,
+      "y": 30.6
+     },
+     {
+      "id": "c2",
+      "x": 6,
+      "y": 33.5
+     },
+     {
+      "id": "c3",
+      "x": 88,
+      "y": 31
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zwei Bälle, vier Läufer",
+      "say": "Von beiden Enden kommt gleichzeitig ein Ball ins Feld. Alle vier rennen los.",
+      "moves": [
+       {
+        "who": "c1",
+        "to": [
+         36.2,
+         33.5
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "c3",
+        "to": [
+         64.6,
+         27
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r5",
+        "to": [
+         34.6,
+         32
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n1",
+        "to": [
+         38,
+         34
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "r7",
+        "to": [
+         65.5,
+         25
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n3",
+        "to": [
+         70,
+         34
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Beide dribbeln los",
+      "say": "Gleichzeitig dribbelt Rot fünf zum Dreieck oben und Rot sieben zum gelben Dreieck unten rechts. Kopf hoch, damit niemand zusammenstößt.",
+      "moves": [
+       {
+        "who": "r5",
+        "to": [
+         52,
+         24
+        ],
+        "type": "dribbling",
+        "ball": "c1"
+       },
+       {
+        "who": "r5",
+        "to": [
+         58,
+         19
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "c1"
+       },
+       {
+        "who": "r7",
+        "to": [
+         64,
+         40
+        ],
+        "type": "dribbling",
+        "ball": "c3"
+       },
+       {
+        "who": "r7",
+        "to": [
+         70,
+         45
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "c3"
+       }
+      ]
+     },
+     {
+      "label": "Zwei Punkte für Rot",
+      "say": "Beide stoppen ihren Ball im Dreieck, und das gibt zwei Punkte für Rot.",
+      "moves": [
+       {
+        "who": "r5",
+        "to": [
+         58,
+         14.6
+        ],
+        "type": "dribbling",
+        "ball": "c1"
+       },
+       {
+        "who": "r7",
+        "to": [
+         71.5,
+         45.5
+        ],
+        "type": "dribbling",
+        "ball": "c3"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
