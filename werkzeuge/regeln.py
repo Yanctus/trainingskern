@@ -24,7 +24,7 @@ def dist_seg(p, a, b):
 # stillschweigend, z. B. wenn der Inhaber die Stimme einspricht (UE-053: die ids der geworfenen Hütchen waren weg, nichts flog mehr).
 # Neues Feld an der Tafel? Erst im Schema anlegen, dann benutzen.
 ERLAUBT = {
-    "lines": {"type", "dashed", "x", "y", "w", "h", "x1", "y1", "x2", "y2", "r"}, "players": {"id", "team", "x", "y", "label"},
+    "lines": {"type", "dashed", "color", "x", "y", "w", "h", "x1", "y1", "x2", "y2", "r"}, "players": {"id", "team", "x", "y", "label"},
     "cones": {"x", "y", "color", "shape", "id"}, "goals": {"x", "y", "side"}, "balls": {"id", "x", "y"}, "arrows": {"from", "to", "type", "bend"},
     "labels": {"x", "y", "text"}, "steps": {"label", "say", "moves"}, "dims": {"x1", "y1", "x2", "y2", "text"},
 }

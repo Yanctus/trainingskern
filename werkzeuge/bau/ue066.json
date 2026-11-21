@@ -1,0 +1,1022 @@
+{
+ "title": "Staffel mit Direktpässen",
+ "code": "UE-066",
+ "kind": "Spielform",
+ "focuses": [
+  "Erwärmung",
+  "Passspiel",
+  "Schnelligkeit"
+ ],
+ "age_groups": [
+  "F-Jugend",
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend"
+ ],
+ "duration_minutes": 10,
+ "players_min": 8,
+ "players_max": 12,
+ "field_size": "18 x 14 m",
+ "description": "Zwei Teams treten in Paaren gegeneinander an, jedes Team hat eine eigene Bahn mit vier Stangen und einem Dummy am Ende. Beide Paare starten gleichzeitig, dribbeln los und spielen sich den Ball zwischen den Stangen mit einem Kontakt zu. Am Dummy lupft einer den Ball in die Hände des Partners, der ihn mit einem Einwurf zum nächsten Paar am Start wirft. Das Team, dessen Spieler zuerst alle durch sind, gewinnt.",
+ "organisation": [
+  "Bahnen aufbauen: Zwei Bahnen von 18 mal 7 Metern nebeneinander, in jeder vier Stangen im Zickzack und am Ende ein Dummy.",
+  "Teams einteilen: Zwei Teams, jedes stellt sich in Paaren am Starthütchen seiner Bahn auf. Das erste Paar hat einen Ball.",
+  "Ablauf: Losdribbeln, mit einem Kontakt zwischen den Stangen hin und her passen, am Dummy den Ball in die Hände des Partners lupfen, dann Einwurf zum nächsten Paar.",
+  "Wertung: Nach dem Einwurf laufen beide zurück und stellen sich hinten an. Das Team, das zuerst komplett durch ist, gewinnt."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Direktpässe zwischen den Stangen mit dem richtigen Tempo spielen",
+  "Den Ball genau in die Hände des Partners lupfen",
+  "Schnell und genau einwerfen, damit das nächste Paar sofort losdribbeln kann",
+  "Nach einem Fehler sofort weitermachen, die Wartenden feuern an"
+ ],
+ "materials": [
+  "8 Stangen",
+  "2 Dummys",
+  "2 Hütchen für den Start",
+  "2 Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Staffel mit Direktpässen. Hier spielen sich zwei Partner den Ball durch die Stangen zu, und das schnellere Team gewinnt.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 15,
+    "y": 4,
+    "w": 70,
+    "h": 52
+   },
+   {
+    "type": "line",
+    "x1": 15,
+    "y1": 31.75,
+    "x2": 85,
+    "y2": 31.75,
+    "dashed": true
+   }
+  ],
+  "cones": [
+   {
+    "x": 46,
+    "y": 14.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 54,
+    "y": 17,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 62,
+    "y": 14.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 70,
+    "y": 17,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 46,
+    "y": 49.0,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 54,
+    "y": 46.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 62,
+    "y": 49.0,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 70,
+    "y": 46.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 81,
+    "y": 15.75,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 81,
+    "y": 47.75,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 26,
+    "y": 15.75,
+    "color": "orange"
+   },
+   {
+    "x": 26,
+    "y": 47.75,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 25,
+    "y": 8,
+    "label": "6"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 25,
+    "y": 24,
+    "label": "3"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 16.5,
+    "y": 8,
+    "label": "4"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 16.5,
+    "y": 24,
+    "label": "2"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 25,
+    "y": 55.5,
+    "label": "9"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 25,
+    "y": 39.5,
+    "label": "10"
+   },
+   {
+    "id": "r14",
+    "team": "b",
+    "x": 16.5,
+    "y": 55.5,
+    "label": "14"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 16.5,
+    "y": 39.5,
+    "label": "11"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 89,
+    "y": 31.5,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 26.6,
+    "y": 8
+   },
+   {
+    "id": "b2",
+    "x": 26.6,
+    "y": 55.5
+   },
+   {
+    "id": "c1",
+    "x": 92,
+    "y": 33
+   },
+   {
+    "id": "c2",
+    "x": 92,
+    "y": 29.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Beide Paare starten gleichzeitig",
+    "say": "Auf los starten beide Teams gleichzeitig: Spieler sechs dribbelt an, Spieler drei läuft auf der anderen Seite der Stangen mit.",
+    "moves": [
+     {
+      "who": "n6",
+      "to": [
+       44.4,
+       8
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n3",
+      "to": [
+       44,
+       24
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r9",
+      "to": [
+       44.4,
+       55.5
+      ],
+      "type": "dribbling",
+      "ball": "b2"
+     },
+     {
+      "who": "r10",
+      "to": [
+       44,
+       39.5
+      ],
+      "type": "lauf"
+     }
+    ]
+   },
+   {
+    "label": "Erster Direktpass",
+    "say": "Spieler sechs spielt mit einem Kontakt durch die Stangen zu Spieler drei, beide laufen weiter.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       54,
+       22.8
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n3",
+      "to": [
+       54,
+       24
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n6",
+      "to": [
+       54,
+       8
+      ],
+      "type": "lauf",
+      "delay": 0.1
+     },
+     {
+      "who": "b2",
+      "to": [
+       54,
+       40.7
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r10",
+      "to": [
+       54,
+       39.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r9",
+      "to": [
+       54,
+       55.5
+      ],
+      "type": "lauf",
+      "delay": 0.1
+     }
+    ]
+   },
+   {
+    "label": "Hin und her durch die Stangen",
+    "say": "Spieler drei spielt direkt zurück, und Spieler sechs legt mit einem Kontakt wieder quer.",
+    "moves": [
+     {
+      "who": "n6",
+      "to": [
+       62,
+       8
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       62,
+       9.3
+      ],
+      "type": "pass",
+      "delay": 0.1
+     },
+     {
+      "who": "n3",
+      "to": [
+       70,
+       24
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       70,
+       22.8
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r9",
+      "to": [
+       62,
+       55.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b2",
+      "to": [
+       62,
+       54.2
+      ],
+      "type": "pass",
+      "delay": 0.1
+     },
+     {
+      "who": "r10",
+      "to": [
+       70,
+       39.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b2",
+      "to": [
+       70,
+       40.7
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Am Dummy hochlupfen",
+    "say": "Am Dummy lupft Spieler drei den Ball hoch, genau in die Hände von Spieler sechs.",
+    "moves": [
+     {
+      "who": "n3",
+      "to": [
+       69,
+       17.5
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n6",
+      "to": [
+       77.5,
+       12
+      ],
+      "type": "lauf",
+      "delay": 0.1
+     },
+     {
+      "who": "b1",
+      "to": [
+       77,
+       12.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r10",
+      "to": [
+       69,
+       46.0
+      ],
+      "type": "dribbling",
+      "ball": "b2"
+     },
+     {
+      "who": "r9",
+      "to": [
+       77.5,
+       51.5
+      ],
+      "type": "lauf",
+      "delay": 0.1
+     },
+     {
+      "who": "b2",
+      "to": [
+       77,
+       50.9
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Einwurf zum nächsten Paar",
+    "say": "Spieler sechs wirft den Ball mit einem Einwurf zum nächsten Paar am Start, und beide laufen zurück. Das schnellste Team gewinnt.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       18,
+       8.9
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n6",
+      "to": [
+       33,
+       9.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n3",
+      "to": [
+       30,
+       27
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b2",
+      "to": [
+       18,
+       54.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r9",
+      "to": [
+       33,
+       54.0
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "r10",
+      "to": [
+       30,
+       36.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 15,
+    "y1": 58.6,
+    "x2": 85,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 96,
+    "y1": 4,
+    "x2": 96,
+    "y2": 56,
+    "text": "14 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Den Ball genau in die Hände des Partners lupfen.",
+   "title": "Genau in die Hände lupfen",
+   "text": "Am Dummy kommt es auf einen genauen Lupfer an. Steht der Partner zu weit weg oder kommt der Ball ungenau, muss er hinterherlaufen, und das Team verliert Zeit. Nah beieinander bleiben und den Ball sanft in die Hände spielen, so bleibt das Tempo hoch.",
+   "board": {
+    "players": [
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 69,
+      "y": 17.5,
+      "label": "3"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 77.5,
+      "y": 12,
+      "label": "6"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 69,
+      "y": 49,
+      "label": "10"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 79.5,
+      "y": 55.5,
+      "label": "9"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 16.5,
+      "y": 8,
+      "label": "4"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 16.5,
+      "y": 24,
+      "label": "2"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 16.5,
+      "y": 55.5,
+      "label": "14"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 16.5,
+      "y": 39.5,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 89,
+      "y": 31.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 70.5,
+      "y": 17
+     },
+     {
+      "id": "b2",
+      "x": 70.5,
+      "y": 48.5
+     },
+     {
+      "id": "c1",
+      "x": 92,
+      "y": 33
+     },
+     {
+      "id": "c2",
+      "x": 92,
+      "y": 29.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zu weit weg vom Partner",
+      "say": "Bei Team Rot steht Spieler neun zu weit weg, der Lupfer fällt daneben, und er muss hinterherlaufen.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         74.5,
+         50.5
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r9",
+        "to": [
+         75.5,
+         52
+        ],
+        "type": "lauf",
+        "delay": 0.35
+       }
+      ]
+     },
+     {
+      "label": "Nah dran, genau in die Hände",
+      "say": "Bei Team Neon steht Spieler sechs nah dran, und Spieler drei lupft den Ball genau in seine Hände.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         77,
+         12.6
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Am Dummy kreuzen die Partner und laufen die Bahn ein zweites Mal.",
+   "title": "Kreuzen und zweite Runde",
+   "text": "Am Dummy wird nicht sofort eingeworfen. Die Partner kreuzen um den Dummy herum, tauschen so die Seiten und spielen sich auf dem Rückweg wieder mit einem Kontakt durch die Stangen zu. Das bringt mehr Pässe, mehr Bewegung und verlangt gute Absprache.",
+   "board": {
+    "players": [
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 70,
+      "y": 24,
+      "label": "3"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 70,
+      "y": 8,
+      "label": "6"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 70,
+      "y": 39.5,
+      "label": "10"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 70,
+      "y": 55.5,
+      "label": "9"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 16.5,
+      "y": 8,
+      "label": "4"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 16.5,
+      "y": 24,
+      "label": "2"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 16.5,
+      "y": 55.5,
+      "label": "14"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 16.5,
+      "y": 39.5,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 89,
+      "y": 31.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 71.6,
+      "y": 24
+     },
+     {
+      "id": "b2",
+      "x": 71.6,
+      "y": 39.5
+     },
+     {
+      "id": "c1",
+      "x": 92,
+      "y": 33
+     },
+     {
+      "id": "c2",
+      "x": 92,
+      "y": 29.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Um den Dummy kreuzen",
+      "say": "Spieler drei dribbelt im Bogen um den Dummy herum auf die andere Seite, und Spieler sechs kreuzt hinter ihm durch.",
+      "moves": [
+       {
+        "who": "n3",
+        "to": [
+         78,
+         24
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n3",
+        "to": [
+         85.5,
+         15.75
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "n3",
+        "to": [
+         78,
+         8
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "n3",
+        "to": [
+         71.5,
+         8
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "n6",
+        "to": [
+         74,
+         24
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "r10",
+        "to": [
+         78,
+         39.5
+        ],
+        "type": "dribbling",
+        "ball": "b2"
+       },
+       {
+        "who": "r10",
+        "to": [
+         85.5,
+         47.75
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b2"
+       },
+       {
+        "who": "r10",
+        "to": [
+         78,
+         55.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b2"
+       },
+       {
+        "who": "r10",
+        "to": [
+         71.5,
+         55.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b2"
+       },
+       {
+        "who": "r9",
+        "to": [
+         74,
+         39.5
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       }
+      ]
+     },
+     {
+      "label": "Zurück durch die Stangen",
+      "say": "Auf dem Rückweg spielen sie sich den Ball wieder mit einem Kontakt durch die Stangen zu.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         62,
+         22.8
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n6",
+        "to": [
+         62,
+         24
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n3",
+        "to": [
+         54,
+         8
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       },
+       {
+        "who": "b1",
+        "to": [
+         54,
+         9.3
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b2",
+        "to": [
+         62,
+         40.7
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r9",
+        "to": [
+         62,
+         39.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r10",
+        "to": [
+         54,
+         55.5
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       },
+       {
+        "who": "b2",
+        "to": [
+         54,
+         54.2
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Zweite Runde geschafft",
+      "say": "Mit einem letzten Direktpass und einem Dribbling sind sie zurück am Start, und das nächste Paar ist dran.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         46,
+         24
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         46,
+         22.8
+        ],
+        "type": "pass",
+        "delay": 0.1
+       },
+       {
+        "who": "n6",
+        "to": [
+         30,
+         24
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "n3",
+        "to": [
+         33,
+         9.5
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "r9",
+        "to": [
+         46,
+         39.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b2",
+        "to": [
+         46,
+         40.7
+        ],
+        "type": "pass",
+        "delay": 0.1
+       },
+       {
+        "who": "r9",
+        "to": [
+         30,
+         39.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b2"
+       },
+       {
+        "who": "r10",
+        "to": [
+         33,
+         54.0
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

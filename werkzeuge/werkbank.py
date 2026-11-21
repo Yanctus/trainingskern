@@ -127,7 +127,7 @@ def svg(board, titel):
         if t == "rect" and l.get("w"):
             o.append(f'<rect x="{l["x"]*10}" y="{l["y"]*10}" width="{l["w"]*10}" height="{l["h"]*10}" fill="none" stroke="#fff9" stroke-width="3"/>')
         elif t == "zone" and l.get("w"):
-            o.append(f'<rect x="{l["x"]*10}" y="{l["y"]*10}" width="{l["w"]*10}" height="{l["h"]*10}" fill="#d4ff0030"/>')
+            o.append(f'<rect x="{l["x"]*10}" y="{l["y"]*10}" width="{l["w"]*10}" height="{l["h"]*10}" fill="{"#ff550050" if l.get("color") == "orange" else "#d4ff0030"}"/>')
         elif t == "circle" and l.get("r"):
             o.append(f'<circle cx="{l["x"]*10}" cy="{l["y"]*10}" r="{l["r"]*10}" fill="none" stroke="#fff9" stroke-width="3"/>')
         elif t == "line" and l.get("x1") is not None:
@@ -240,7 +240,7 @@ def html3d(board, titel):
         if t == "rect" and l.get("w"):
             o.append(f'<rect class="l" x="{l["x"]*K}" y="{l["y"]*K}" width="{l["w"]*K}" height="{l["h"]*K}"/>')
         elif t == "zone" and l.get("w"):
-            o.append(f'<rect class="z" x="{l["x"]*K}" y="{l["y"]*K}" width="{l["w"]*K}" height="{l["h"]*K}"/>')
+            o.append(f'<rect class="z" style="{"fill:#ff5500" if l.get("color") == "orange" else ""}" x="{l["x"]*K}" y="{l["y"]*K}" width="{l["w"]*K}" height="{l["h"]*K}"/>')
         elif t == "circle" and l.get("r"):
             o.append(f'<circle class="l" cx="{l["x"]*K}" cy="{l["y"]*K}" r="{l["r"]*K}"/>')
         elif t == "line" and l.get("x1") is not None:

@@ -1,0 +1,616 @@
+{
+ "title": "1 gegen 1 gegen den Torwart",
+ "code": "UE-064",
+ "kind": "Übungsform",
+ "focuses": [
+  "Torschuss",
+  "Passspiel"
+ ],
+ "age_groups": [
+  "Bambini",
+  "F-Jugend"
+ ],
+ "duration_minutes": 10,
+ "players_min": 6,
+ "players_max": 10,
+ "field_size": "18 x 18 m",
+ "description": "Vor einem Tor mit Torwart stehen drei Hütchen: eines für den Start und je eines links und rechts für den Ableger. Der Stürmer spielt den Ball zum Ableger, bekommt ihn zurück in den Lauf und schließt allein gegen den Torwart ab, das gibt einen Punkt. Danach wird der Stürmer Ableger auf der anderen Seite, und der Ableger stellt sich wieder an. So kommt jeder abwechselnd zum Ablegen und zum Abschluss.",
+ "organisation": [
+  "Aufbauen: Ein Tor mit Torwart, davor ein Starthütchen in der Mitte und je ein Hütchen links und rechts für den Ableger.",
+  "Starten: Die Kinder warten mit je einem Ball hinter dem Starthütchen, auf einem der Seitenhütchen steht ein Ableger.",
+  "Ablauf: Pass zum Ableger, Ablage in den Lauf, Abschluss gegen den Torwart. Danach geht es von der anderen Seite.",
+  "Wechseln und einsammeln: Der Stürmer wird Ableger, der Ableger stellt sich hinten an. Nach jeder Runde sammeln alle die Bälle ein."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Genau aufs Tor zielen, nicht so fest wie möglich",
+  "Den Ball mit dem richtigen Tempo ablegen",
+  "Vor dem Abschluss den Kopf heben",
+  "Mit beiden Füßen und auf verschiedene Arten abschließen"
+ ],
+ "materials": [
+  "1 Tor",
+  "3 Hütchen",
+  "1 Ball pro Kind",
+  "Leibchen für den Torwart"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Eins gegen eins gegen den Torwart. Hier legt ein Mitspieler den Ball ab, und der Stürmer schließt allein vor dem Torwart ab.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 28,
+    "y": 8,
+    "w": 44,
+    "h": 44
+   }
+  ],
+  "goals": [
+   {
+    "x": 72,
+    "y": 30,
+    "side": "right"
+   }
+  ],
+  "cones": [
+   {
+    "x": 50,
+    "y": 19,
+    "color": "orange"
+   },
+   {
+    "x": 50.3,
+    "y": 41.7,
+    "color": "orange"
+   },
+   {
+    "x": 40.7,
+    "y": 30,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "tw",
+    "team": "b",
+    "x": 69.2,
+    "y": 30,
+    "label": "1"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 41.5,
+    "y": 33,
+    "label": "11"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 52.5,
+    "y": 44.5,
+    "label": "6"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 33,
+    "y": 16,
+    "label": "10"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 33,
+    "y": 32,
+    "label": "2"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 33,
+    "y": 48,
+    "label": "8"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 24.5,
+    "y": 24,
+    "label": "3"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 24.5,
+    "y": 40,
+    "label": "7"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 16,
+    "y": 32,
+    "label": "9"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 24,
+    "y": 4,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 43,
+    "y": 33.6
+   },
+   {
+    "id": "b2",
+    "x": 34.6,
+    "y": 32.6
+   },
+   {
+    "id": "b9",
+    "x": 27.5,
+    "y": 4.6
+   },
+   {
+    "id": "b10",
+    "x": 20.5,
+    "y": 4.6
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pass zum Ableger",
+    "say": "Spieler elf spielt den Ball zu Spieler sechs am rechten Hütchen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       51.2,
+       43.3
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Ablage in den Lauf",
+    "say": "Spieler elf startet Richtung Tor, und Spieler sechs legt ihm den Ball in den Lauf.",
+    "moves": [
+     {
+      "who": "n11",
+      "to": [
+       54.5,
+       31.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       56,
+       31.8
+      ],
+      "type": "pass",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Abschluss gegen den Torwart: Punkt",
+    "say": "Allein vor dem Torwart schiebt Spieler elf den Ball ins Eck, und das gibt einen Punkt.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       73.8,
+       27.5
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "tw",
+      "to": [
+       69.5,
+       31.5
+      ],
+      "type": "lauf",
+      "delay": 0.15
+     }
+    ]
+   },
+   {
+    "label": "Rollentausch, andere Seite",
+    "say": "Jetzt wird Spieler elf Ableger am linken Hütchen, und Spieler sechs trabt zurück zur Schlange.",
+    "moves": [
+     {
+      "who": "n11",
+      "to": [
+       53.5,
+       16.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n6",
+      "to": [
+       42,
+       40.5
+      ],
+      "type": "lauf",
+      "delay": 0.1,
+      "bend": -0.5
+     }
+    ]
+   },
+   {
+    "label": "Von der anderen Seite",
+    "say": "Spieler zwei spielt nun auf Spieler elf, und alles beginnt von der anderen Seite.",
+    "moves": [
+     {
+      "who": "b2",
+      "to": [
+       49.8,
+       17.6
+      ],
+      "type": "pass"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 28,
+    "y1": 58.6,
+    "x2": 72,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 82,
+    "y1": 8,
+    "x2": 82,
+    "y2": 52,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Genau zielen ist wichtiger als fest schießen.",
+   "title": "Genau statt fest",
+   "text": "Ohne Gegenspieler zählt nur eins: das Tor treffen. Wer mit aller Kraft schießt, schießt oft daneben. Besser ist ein flacher, genauer Schuss ins Eck. So treffen die Kinder öfter und gewinnen Vertrauen in ihren Schuss.",
+   "board": {
+    "players": [
+     {
+      "id": "tw",
+      "team": "b",
+      "x": 69.2,
+      "y": 30,
+      "label": "1"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 60.5,
+      "y": 24,
+      "label": "2"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 52.5,
+      "y": 44.5,
+      "label": "11"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 33,
+      "y": 16,
+      "label": "10"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 33,
+      "y": 32,
+      "label": "3"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 33,
+      "y": 48,
+      "label": "7"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 24.5,
+      "y": 24,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 24.5,
+      "y": 40,
+      "label": "9"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 16,
+      "y": 32,
+      "label": "6"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 24,
+      "y": 4,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 62,
+      "y": 24.6
+     },
+     {
+      "id": "b5",
+      "x": 51.2,
+      "y": 43.3
+     },
+     {
+      "id": "b9",
+      "x": 27.5,
+      "y": 4.6
+     },
+     {
+      "id": "b10",
+      "x": 20.5,
+      "y": 4.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zu fest und daneben",
+      "say": "Spieler zwei schießt mit voller Wucht, aber der Ball fliegt am Tor vorbei.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         75.5,
+         19.5
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Neuer Ball von der Elf",
+      "say": "Spieler elf legt ihm einen neuen Ball vor.",
+      "moves": [
+       {
+        "who": "b5",
+        "to": [
+         60,
+         30
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n2",
+        "to": [
+         58.5,
+         29.5
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       }
+      ]
+     },
+     {
+      "label": "Flach ins Eck: Punkt",
+      "say": "Diesmal schiebt Spieler zwei den Ball flach und genau ins Eck, und das gibt einen Punkt.",
+      "moves": [
+       {
+        "who": "b5",
+        "to": [
+         73.8,
+         33
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "tw",
+        "to": [
+         69.5,
+         27
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Die Ablage kommt vor den Stürmer, damit er im Lauf bleibt.",
+   "title": "Ablage vor den Stürmer",
+   "text": "Der Ableger spielt den Ball nicht in den Fuß, sondern ein Stück vor den Stürmer, mit dem richtigen Tempo. So nimmt der Stürmer den Ball im Laufen mit und kann ohne zu stoppen kontrolliert und genau abschließen.",
+   "board": {
+    "players": [
+     {
+      "id": "tw",
+      "team": "b",
+      "x": 69.2,
+      "y": 30,
+      "label": "1"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 46,
+      "y": 32.2,
+      "label": "9"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 55,
+      "y": 44.5,
+      "label": "8"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 50.5,
+      "y": 15,
+      "label": "7"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 33,
+      "y": 16,
+      "label": "2"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 33,
+      "y": 32,
+      "label": "10"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 33,
+      "y": 48,
+      "label": "3"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 24.5,
+      "y": 24,
+      "label": "6"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 24.5,
+      "y": 40,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 24,
+      "y": 4,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 53.6,
+      "y": 43.6
+     },
+     {
+      "id": "b9",
+      "x": 27.5,
+      "y": 4.6
+     },
+     {
+      "id": "b10",
+      "x": 20.5,
+      "y": 4.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Pass vor den Stürmer",
+      "say": "Spieler neun läuft los, und Spieler acht spielt den Ball genau vor ihn in den Lauf.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         57,
+         32
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         59.5,
+         32.2
+        ],
+        "type": "pass",
+        "delay": 0.25
+       }
+      ]
+     },
+     {
+      "label": "Im Lauf mitnehmen",
+      "say": "Spieler neun nimmt den Ball im Laufen mit, ohne zu stoppen.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         62.5,
+         31.5
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Abschluss: Punkt",
+      "say": "Dann schließt er kontrolliert ins Eck ab, und das gibt einen Punkt.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         73.8,
+         27.5
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "tw",
+        "to": [
+         69.5,
+         33.5
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe import *
+# MB-P42: 30 x 20 Yards = x 15-85, y 7-53; Endzonen 5 Yards (11,7). PDF gedreht: oben -> rechts. Neon greift rechts an, Rot links.
+T = P("T", "c", 80, 3, "T"); cb = [B("b8", 83.5, 3.5), B("b9", 76.5, 3.5)]
+zonen = [rect(15, 7, 70, 46), {"type": "zone", "x": 15, "y": 7, "w": 11.7, "h": 46, "color": "orange"}, {"type": "zone", "x": 73.3, "y": 7, "w": 11.7, "h": 46}]
+goals = [{"x": 15, "y": 30, "side": "left"}, {"x": 85, "y": 30, "side": "right"}]
+cones = ecken(15, 7, 70, 46) + [C(26.7, 7, "neon"), C(26.7, 53, "neon"), C(73.3, 7, "neon"), C(73.3, 53, "neon")]
+u = {"title": "Endzonenspiel 5 gegen 5", "code": "UE-065", "kind": "Spielform",
+ "focuses": ["Torschuss", "Bewegung", "Passspiel"], "age_groups": ["Bambini", "F-Jugend"], "duration_minutes": 10, "players_min": 10, "players_max": 10, "field_size": "27 x 18 m",
+ "description": "Zwei Teams mit je fünf Spielern spielen auf einem Feld von 27 mal 18 Metern ohne Torwart, an jedem Ende liegt eine Endzone vor einem Minitor. Ein Team kombiniert sich nach vorn und spielt den Ball in die Endzone, wo ein Mitspieler hineinläuft und ohne Gegner abschließt, das gibt einen Punkt. Verteidiger dürfen nicht in die Endzone, wenn der Angreifer den Ball bekommt, nur einen verunglückten Pass dürfen sie dort holen. Wer nach der Spielzeit die meisten Punkte hat, gewinnt.",
+ "organisation": ["Feld abstecken: 27 mal 18 Meter mit vier orangen Hütchen, gelbe Hütchen markieren an beiden Enden eine Endzone von viereinhalb Metern.",
+  "Tore stellen: In der Mitte jeder Grundlinie steht ein Minitor. Team Neon greift das rechte Tor an, Team Rot das linke.",
+  "Spielen: Fünf gegen fünf im Mittelfeld. Ein Pass in die Endzone, ein Mitspieler läuft hinein und schließt ohne Gegner ab. Ich spiele neue Bälle ein.",
+  "Regeln: Verteidiger dürfen nicht in die Endzone, solange der Angreifer den Ball annimmt. Nach einem Ballgewinn sofort schnell nach vorn spielen."],
+ "organisation_show": ORG,
+ "coaching_points": ["Ohne Ball hinter die Abwehr in den freien Raum laufen", "Steilpässe genau und mit dem richtigen Tempo spielen", "Den Lauf in die Endzone zeitlich passend starten", "Mit einem oder zwei Kontakten abschließen"],
+ "materials": ["2 Minitore", "4 orange Hütchen", "4 gelbe Hütchen", "Leibchen in zwei Farben", "Bälle beim Trainer"],
+ "access": "frei", "hidden": True,
+ "say_intro": "Endzonenspiel fünf gegen fünf. Hier spielt jedes Team den Ball in die Endzone, und ein Mitspieler schließt dort ohne Gegner ab.",
+ "board": {"lines": zonen, "goals": goals, "cones": cones,
+  "players": [P("n6", "a", 30.6, 46.5, "6"), P("n8", "a", 41.8, 31.8, "8"), P("n4", "a", 34.4, 16.2, "4"), P("n10", "a", 62.2, 30.2, "10"), P("n9", "a", 62.9, 12.9, "9"),
+              P("r5", "b", 71.5, 22, "5"), P("r3", "b", 53.5, 41, "3"), P("r11", "b", 51.5, 25, "11"), P("r7", "b", 43, 13, "7"), P("r14", "b", 39, 51, "14"), T],
+  "balls": [B("b1", 31.6, 45.4), *cb],
+  "steps": [
+   S("Doppelpass im Mittelfeld", "Spieler sechs spielt auf Spieler acht und läuft sofort weiter nach vorn.", ps("b1", [40.8, 34.2]), mv("n6", [48, 45.5], delay=0.2)),
+   S("Zurück in den Lauf", "Spieler acht spielt den Ball direkt zurück in den Lauf von Spieler sechs.", ps("b1", [49.5, 45.4])),
+   S("Steilpass in die Endzone", "Spieler zehn startet in die Endzone, und Spieler sechs spielt ihm den Ball in den Lauf. Spieler drei darf nicht hinterher.",
+     mv("n10", [74.4, 38.5]), ps("b1", [75.4, 39], delay=0.3), mv("r3", [62, 42], delay=0.3)),
+   S("Abschluss ohne Gegner: Punkt", "Spieler zehn schließt ohne Gegner ins Minitor ab, und das gibt einen Punkt für Team Neon.", ps("b1", [87, 31]))],
+  "dims": [{"x1": 15, "y1": 58.6, "x2": 85, "y2": 58.6, "text": "27 m"}, {"x1": 93, "y1": 7, "x2": 93, "y2": 53, "text": "18 m"}]},
+ "versions": [
+  V("Coaching-Punkt", "Jetzt zum Coaching-Punkt: Den freien Raum hinter der Abwehr erkennen und hineinlaufen.", "Hinter die Abwehr laufen",
+    "Wer den Ball in der Endzone bekommen will, muss den freien Raum hinter den Verteidigern erkennen. Der Lauf beginnt, sobald der Mitspieler den Kopf hebt, und führt dorthin, wo kein Gegner steht. So entsteht die Torchance fast von allein.",
+    [P("n9", "a", 65, 10, "9"), P("n8", "a", 56.5, 27.5, "8"), P("n10", "a", 63, 47.5, "10"), P("n4", "a", 44, 36, "4"), P("n6", "a", 31.5, 19.5, "6"),
+     P("r5", "b", 65.5, 26.5, "5"), P("r3", "b", 53.5, 44, "3"), P("r11", "b", 47.5, 20.5, "11"), P("r7", "b", 35.5, 36, "7"), P("r14", "b", 56, 9.5, "14"), T],
+    [B("b1", 58, 28.3), *cb],
+    [S("Lauf in den freien Raum", "Spieler zehn erkennt den freien Raum hinter der Abwehr und startet in die Endzone.", mv("n10", [75.5, 41])),
+     S("Pass in den Lauf", "Spieler acht spielt ihm den Ball genau in den Lauf, Spieler drei kommt zu spät.", ps("b1", [76.3, 40.5]), mv("r3", [66, 45], delay=0.3)),
+     S("Abschluss: Punkt", "Spieler zehn schließt ab, und das gibt einen Punkt für Team Neon.", ps("b1", [87, 32]))]),
+  V("Coaching-Punkt", "Der zweite Coaching-Punkt: Der Steilpass kommt genau und mit dem richtigen Tempo.", "Genaue Steilpässe",
+    "Der Pass in die Endzone muss genau sein und das richtige Tempo haben, damit der Mitspieler ihn im Lauf mitnehmen kann. Zu fest rollt er ins Aus, zu langsam holt ihn der Verteidiger. Ein guter Steilpass macht aus einem Lauf eine echte Torchance.",
+    [P("r7", "b", 40, 10, "7"), P("r9", "b", 30, 17, "9"), P("r5", "b", 66, 33, "5"), P("r11", "b", 48, 31, "11"), P("r3", "b", 42, 50, "3"),
+     P("n4", "a", 48.5, 15, "4"), P("n6", "a", 57, 24.5, "6"), P("n8", "a", 57, 45, "8"), P("n10", "a", 32, 34, "10"), P("n9", "a", 33, 50, "2"), T],
+    [B("b1", 38.5, 10.8), *cb],
+    [S("Steilpass in den Lauf", "Spieler neun startet in die linke Endzone, und Spieler sieben spielt den Ball mit dem richtigen Tempo vor ihn.",
+       mv("r9", [21, 14]), ps("b1", [19.8, 13.2], delay=0.25)),
+     S("Im Lauf abschließen: Punkt", "Spieler neun nimmt den Ball im Lauf mit und schießt ins Tor, und das gibt einen Punkt für Team Rot.", ps("b1", [13, 28.5]))]),
+  V("Steigerung", "Und jetzt die Steigerung: Wer direkt abschließt, bekommt für sein Tor zwei Punkte statt einem.", "Direkt verwandelt zählt doppelt",
+    "Wer den Ball in der Endzone ohne Annahme direkt verwandelt, bekommt zwei Punkte. So lohnt es sich, den Lauf genau zu timen und den Pass so zu spielen, dass der Mitspieler direkt schießen kann.",
+    [P("n6", "a", 47, 46, "6"), P("n8", "a", 40, 30, "8"), P("n4", "a", 31, 15, "4"), P("n10", "a", 62.2, 30.2, "10"), P("n9", "a", 62.9, 12.9, "9"),
+     P("r5", "b", 71.5, 22, "5"), P("r3", "b", 56, 46, "3"), P("r11", "b", 51.5, 25, "11"), P("r7", "b", 43, 13, "7"), P("r14", "b", 38, 48, "14"), T],
+    [B("b1", 48.5, 45.5), *cb],
+    [S("Steilpass in die Endzone", "Spieler zehn startet in die Endzone, und Spieler sechs spielt ihm den Ball genau in den Lauf.",
+       mv("n10", [74.4, 38.5]), ps("b1", [75.4, 39], delay=0.3)),
+     S("Direkt abgeschlossen: zwei Punkte", "Spieler zehn schießt direkt, ohne den Ball anzunehmen, und das gibt zwei Punkte für Team Neon.", ps("b1", [87, 31]))])]}
+json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)
