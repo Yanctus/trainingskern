@@ -1,0 +1,705 @@
+{
+ "title": "Alle Tore zusperren",
+ "code": "UE-092",
+ "kind": "Spielform",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel",
+  "Umschalten"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "duration_minutes": 15,
+ "players_min": 12,
+ "players_max": 12,
+ "field_size": "23 x 18 m",
+ "description": "Vier gegen vier mit vier Springern auf vier Minitore. Erst nach fünf Pässen darf eine Mannschaft auf ein Minitor schießen. Trifft sie, ist dieses Tor für sie gesperrt, und sie muss eines der anderen treffen. Wer zuerst alle vier Tore gesperrt hat, gewinnt.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 23 mal 18 Metern mit je zwei Minitoren an beiden Enden.",
+  "Verteilen: Zwei Mannschaften mit je vier Spielern und vier Springer: je einer an den beiden Enden und zwei im Feld. Die Springer spielen immer mit der Mannschaft am Ball.",
+  "Ablauf: Nach fünf Pässen darf die Mannschaft am Ball auf ein beliebiges Minitor schießen. Ein Treffer gibt einen Punkt und sperrt dieses Tor für die Mannschaft. Erobert der Gegner den Ball, braucht er selbst erst fünf Pässe.",
+  "Sieger und Wechsel: Wer zuerst alle vier Tore gesperrt hat, gewinnt. Die Verlierer tauschen mit den Springern."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Umschauen und sich ohne Ball frei laufen",
+  "Wissen, welche Tore schon gesperrt sind und welche noch offen",
+  "Als Verteidiger kompakt stehen und den Gegner zu den gesperrten Toren drängen",
+  "Nach Ballgewinn schnell umschalten und ruhig fünf Pässe spielen"
+ ],
+ "materials": [
+  "4 Minitore",
+  "4 Hütchen",
+  "Leibchen in drei Farben",
+  "Bälle beim Trainer"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Alle Tore zusperren. Fünf Pässe, dann ein Treffer, und jedes getroffene Tor ist danach gesperrt.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 22.5,
+    "y": 8,
+    "w": 55,
+    "h": 44
+   },
+   {
+    "type": "line",
+    "x1": 50,
+    "y1": 8,
+    "x2": 50,
+    "y2": 52,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 22.5,
+    "y1": 30,
+    "x2": 77.5,
+    "y2": 30,
+    "dashed": true
+   }
+  ],
+  "cones": [
+   {
+    "x": 22.5,
+    "y": 8,
+    "color": "orange"
+   },
+   {
+    "x": 77.5,
+    "y": 8,
+    "color": "orange"
+   },
+   {
+    "x": 22.5,
+    "y": 52,
+    "color": "orange"
+   },
+   {
+    "x": 77.5,
+    "y": 52,
+    "color": "orange"
+   }
+  ],
+  "goals": [
+   {
+    "x": 22.5,
+    "y": 17.5,
+    "side": "left"
+   },
+   {
+    "x": 22.5,
+    "y": 42.5,
+    "side": "left"
+   },
+   {
+    "x": 77.5,
+    "y": 17.5,
+    "side": "right"
+   },
+   {
+    "x": 77.5,
+    "y": 42.5,
+    "side": "right"
+   }
+  ],
+  "players": [
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 36,
+    "y": 14,
+    "label": "9"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 34,
+    "y": 42,
+    "label": "11"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 55,
+    "y": 50,
+    "label": "8"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 72,
+    "y": 12,
+    "label": "10"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 45,
+    "y": 26,
+    "label": "2"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 44.5,
+    "y": 42,
+    "label": "3"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 63,
+    "y": 24,
+    "label": "6"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 73,
+    "y": 46.5,
+    "label": "7"
+   },
+   {
+    "id": "fL",
+    "team": "t",
+    "x": 19.5,
+    "y": 30,
+    "label": "F"
+   },
+   {
+    "id": "fR",
+    "team": "t",
+    "x": 80.5,
+    "y": 30,
+    "label": "F"
+   },
+   {
+    "id": "f5",
+    "team": "t",
+    "x": 54,
+    "y": 32,
+    "label": "F"
+   },
+   {
+    "id": "f9",
+    "team": "t",
+    "x": 64,
+    "y": 40,
+    "label": "F"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 8,
+    "y": 52,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 37.6,
+    "y": 14.6
+   },
+   {
+    "id": "c1",
+    "x": 10.6,
+    "y": 52.6
+   },
+   {
+    "id": "c2",
+    "x": 6,
+    "y": 55
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pässe sammeln",
+    "say": "Neon spielt mit den Springern: Neon neun passt zum Springer in der Mitte, der zu Neon elf. Das sind schon zwei Pässe.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       55.6,
+       32.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       35.6,
+       42.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Fünf Pässe geschafft",
+    "say": "Weiter geht es über Neon acht und den zweiten Springer zu Neon zehn. Jetzt sind es fünf Pässe, und Neon darf schießen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       56.6,
+       50.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       65.6,
+       40.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       73.6,
+       12.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Tor und gesperrt",
+    "say": "Neon zehn trifft ins Minitor oben rechts, und das gibt einen Punkt für Neon. Ab jetzt ist dieses Tor für Neon gesperrt.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       78.5,
+       17.5
+      ],
+      "type": "pass"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 22.5,
+    "y1": 58.6,
+    "x2": 77.5,
+    "y2": 58.6,
+    "text": "23 m"
+   },
+   {
+    "x1": 90,
+    "y1": 8,
+    "x2": 90,
+    "y2": 52,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Vor dem Abschluss muss der Ball über einen Endspieler laufen.",
+   "title": "Ablage vom Endspieler",
+   "text": "Jetzt darf nur geschossen werden, wenn vorher ein Springer an einem Ende den Ball abgelegt hat. Das verlangt Timing und gute Laufwege. Die Verteidiger lernen dabei, den Pass nach vorn zu blocken und kompakt zu stehen.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 36,
+      "y": 14,
+      "label": "9"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 34,
+      "y": 42,
+      "label": "11"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 55,
+      "y": 50,
+      "label": "8"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 72,
+      "y": 12,
+      "label": "10"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 45,
+      "y": 26,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 44.5,
+      "y": 42,
+      "label": "3"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 63,
+      "y": 24,
+      "label": "6"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 73,
+      "y": 46.5,
+      "label": "7"
+     },
+     {
+      "id": "fL",
+      "team": "t",
+      "x": 19.5,
+      "y": 30,
+      "label": "F"
+     },
+     {
+      "id": "fR",
+      "team": "t",
+      "x": 80.5,
+      "y": 30,
+      "label": "F"
+     },
+     {
+      "id": "f5",
+      "team": "t",
+      "x": 54,
+      "y": 32,
+      "label": "F"
+     },
+     {
+      "id": "f9",
+      "team": "t",
+      "x": 64,
+      "y": 40,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 8,
+      "y": 52,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 73.6,
+      "y": 12.6
+     },
+     {
+      "id": "c1",
+      "x": 10.6,
+      "y": 52.6
+     },
+     {
+      "id": "c2",
+      "x": 6,
+      "y": 55
+     }
+    ],
+    "steps": [
+     {
+      "label": "Pass zum Endspieler",
+      "say": "Neon zehn passt zum Springer am rechten Ende und startet sofort.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         78.9,
+         30.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n10",
+        "to": [
+         71,
+         22
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Ablage",
+      "say": "Der Springer legt direkt ab in den Lauf von Neon zehn.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         72.6,
+         22.6
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Abschluss: Punkt",
+      "say": "Neon zehn schießt ins Minitor oben rechts, und das gibt einen Punkt für Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         78.5,
+         17.5
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Ein Tor ist erst gesperrt, wenn danach noch fünf Pässe gelingen.",
+   "title": "Erst fünf Pässe sperren",
+   "text": "Nach einem Treffer bleibt die Mannschaft am Ball, der Trainer spielt sofort einen neuen Ball ein. Erst wenn danach fünf Pässe gelingen, ist das Tor wirklich gesperrt. Die Gegner pressen deshalb besonders früh, um das zu verhindern.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 36,
+      "y": 14,
+      "label": "9"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 34,
+      "y": 42,
+      "label": "11"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 55,
+      "y": 50,
+      "label": "8"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 72,
+      "y": 12,
+      "label": "10"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 45,
+      "y": 26,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 44.5,
+      "y": 42,
+      "label": "3"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 63,
+      "y": 24,
+      "label": "6"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 73,
+      "y": 46.5,
+      "label": "7"
+     },
+     {
+      "id": "fL",
+      "team": "t",
+      "x": 19.5,
+      "y": 30,
+      "label": "F"
+     },
+     {
+      "id": "fR",
+      "team": "t",
+      "x": 80.5,
+      "y": 30,
+      "label": "F"
+     },
+     {
+      "id": "f5",
+      "team": "t",
+      "x": 54,
+      "y": 32,
+      "label": "F"
+     },
+     {
+      "id": "f9",
+      "team": "t",
+      "x": 64,
+      "y": 40,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 8,
+      "y": 52,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 73.6,
+      "y": 12.6
+     },
+     {
+      "id": "c1",
+      "x": 10.6,
+      "y": 52.6
+     },
+     {
+      "id": "c2",
+      "x": 6,
+      "y": 55
+     }
+    ],
+    "steps": [
+     {
+      "label": "Treffer",
+      "say": "Neon zehn trifft ins Minitor oben rechts, und das gibt einen Punkt für Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         78.5,
+         17.5
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Neuer Ball, Rot presst",
+      "say": "Sofort spielt der Trainer einen neuen Ball zu Neon elf. Gleichzeitig pressen die Roten früh.",
+      "moves": [
+       {
+        "who": "c1",
+        "to": [
+         35.6,
+         42.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r3",
+        "to": [
+         40,
+         40
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "r2",
+        "to": [
+         38,
+         30
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Fünf Pässe: gesperrt",
+      "say": "Neon spielt sich trotzdem fünfmal den Ball zu, und erst jetzt ist das Tor für Neon gesperrt.",
+      "moves": [
+       {
+        "who": "c1",
+        "to": [
+         56.6,
+         50.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "c1",
+        "to": [
+         65.6,
+         40.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "c1",
+        "to": [
+         55.6,
+         32.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "c1",
+        "to": [
+         37.6,
+         14.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "c1",
+        "to": [
+         73.6,
+         12.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,578 @@
+{
+ "title": "Erster Kontakt mit Richtung",
+ "code": "UE-093",
+ "kind": "Übungsform",
+ "focuses": [
+  "Ballannahme",
+  "Passspiel",
+  "Bewegung"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "duration_minutes": 15,
+ "players_min": 5,
+ "players_max": 8,
+ "field_size": "18 x 18 m",
+ "description": "Ein Spieler in der Mitte bekommt den Ball zwischen zwei Stangen und nimmt ihn mit dem ersten Kontakt halb gedreht in ein kleines Quadrat mit. Von dort dribbelt er nach vorn und passt zum Endspieler, dessen erster Kontakt durch ein Hütchentor gehen muss. Dann geht es von der anderen Seite zurück, und alle laufen ihrem Pass zur nächsten Station hinterher.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 18 Metern. In der Mitte zwei Stangen, daneben zwei kleine Quadrate von etwa vier mal vier Metern. Vor beiden Endspielern ein kleines Hütchentor.",
+  "Verteilen: An beiden Enden Spieler, einer mit Ball. Ein Spieler in der Mitte.",
+  "Ablauf: Der Endspieler passt in die Mitte. Der Mittelspieler nimmt den Ball mit dem ersten Kontakt ins Quadrat mit, dribbelt nach vorn und passt zum anderen Endspieler. Dessen erster Kontakt geht durch das Hütchentor. Dann von dort zurück.",
+  "Wechsel: Jeder läuft seinem Pass zur nächsten Station hinterher. Fehler sind kein Problem, einfach weiter üben."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Der erste Kontakt zeigt schon in die neue Richtung",
+  "Den Ball unter Kontrolle und im Quadrat halten",
+  "Den Körper vor der Annahme öffnen und über die Schulter schauen",
+  "Genau und mit gutem Tempo passen, mit beiden Füßen annehmen und viel sprechen"
+ ],
+ "materials": [
+  "2 Stangen",
+  "8 gelbe Hütchen für die Quadrate",
+  "8 orange Hütchen",
+  "Bälle"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Erster Kontakt mit Richtung. Halb gedreht annehmen und den Ball mit dem ersten Kontakt in die neue Richtung mitnehmen.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 26,
+    "y": 6,
+    "w": 48,
+    "h": 48
+   },
+   {
+    "type": "zone",
+    "x": 52,
+    "y": 39,
+    "w": 9,
+    "h": 9
+   },
+   {
+    "type": "zone",
+    "x": 39,
+    "y": 12,
+    "w": 9,
+    "h": 9
+   }
+  ],
+  "cones": [
+   {
+    "x": 26,
+    "y": 6,
+    "color": "orange"
+   },
+   {
+    "x": 74,
+    "y": 6,
+    "color": "orange"
+   },
+   {
+    "x": 26,
+    "y": 54,
+    "color": "orange"
+   },
+   {
+    "x": 74,
+    "y": 54,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 24,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 50,
+    "y": 36,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 34,
+    "y": 26,
+    "color": "orange"
+   },
+   {
+    "x": 34,
+    "y": 34,
+    "color": "orange"
+   },
+   {
+    "x": 66,
+    "y": 26,
+    "color": "orange"
+   },
+   {
+    "x": 66,
+    "y": 34,
+    "color": "orange"
+   },
+   {
+    "x": 52,
+    "y": 39,
+    "color": "neon"
+   },
+   {
+    "x": 61,
+    "y": 39,
+    "color": "neon"
+   },
+   {
+    "x": 52,
+    "y": 48,
+    "color": "neon"
+   },
+   {
+    "x": 61,
+    "y": 48,
+    "color": "neon"
+   },
+   {
+    "x": 39,
+    "y": 12,
+    "color": "neon"
+   },
+   {
+    "x": 48,
+    "y": 12,
+    "color": "neon"
+   },
+   {
+    "x": 39,
+    "y": 21,
+    "color": "neon"
+   },
+   {
+    "x": 48,
+    "y": 21,
+    "color": "neon"
+   }
+  ],
+  "players": [
+   {
+    "id": "n1",
+    "team": "a",
+    "x": 25,
+    "y": 30,
+    "label": "1"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 16.5,
+    "y": 30,
+    "label": "4"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 50,
+    "y": 30,
+    "label": "3"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 75,
+    "y": 30,
+    "label": "2"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 83.5,
+    "y": 30,
+    "label": "5"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 85,
+    "y": 50,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 26.6,
+    "y": 30.6
+   },
+   {
+    "id": "c1",
+    "x": 87.6,
+    "y": 50.6
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pass in die Mitte",
+    "say": "Spieler eins passt durch das Hütchentor zum Mittelspieler drei und läuft seinem Pass hinterher.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       48.4,
+       30.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n1",
+      "to": [
+       38,
+       30
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Erster Kontakt ins Quadrat",
+    "say": "Spieler drei hat sich halb gedreht und nimmt den Ball mit dem ersten Kontakt direkt ins Quadrat mit.",
+    "moves": [
+     {
+      "who": "n3",
+      "to": [
+       56.5,
+       42
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Nach vorn und Pass",
+    "say": "Spieler drei dribbelt kurz nach vorn und passt zu Spieler zwei. Gleichzeitig läuft Spieler eins in die Mitte.",
+    "moves": [
+     {
+      "who": "n3",
+      "to": [
+       58,
+       30
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       73.4,
+       30.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n1",
+      "to": [
+       50,
+       30
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Annahme durchs Tor",
+    "say": "Spieler zwei nimmt den Ball mit dem ersten Kontakt durch das Hütchentor mit. Spieler drei läuft zu seiner Station, und es geht von dieser Seite zurück.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       62,
+       30
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n3",
+      "to": [
+       70,
+       42
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n3",
+      "to": [
+       78,
+       40
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 26,
+    "y1": 58.6,
+    "x2": 74,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 92,
+    "y1": 6,
+    "x2": 92,
+    "y2": 54,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Den Körper öffnen, damit der erste Kontakt in die neue Richtung gehen kann.",
+   "title": "Körper öffnen",
+   "text": "Schon bevor der Ball kommt, dreht sich der Mittelspieler halb zur Seite und schaut über die Schulter. Mit offener Haltung nimmt er den Ball direkt in die neue Richtung mit, statt ihn erst zu stoppen. So ist er sofort bereit für die nächste Aktion.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 25,
+      "y": 30,
+      "label": "1"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 16.5,
+      "y": 30,
+      "label": "4"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 42,
+      "y": 30,
+      "label": "3"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 75,
+      "y": 30,
+      "label": "2"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 83.5,
+      "y": 30,
+      "label": "5"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 85,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 26.6,
+      "y": 30.6
+     },
+     {
+      "id": "c1",
+      "x": 87.6,
+      "y": 50.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Hinein zwischen die Stangen",
+      "say": "Spieler drei läuft zwischen die Stangen und öffnet dabei den Körper. Spieler eins passt.",
+      "moves": [
+       {
+        "who": "n3",
+        "to": [
+         50,
+         30
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         48.4,
+         30.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Mit dem ersten Kontakt weg",
+      "say": "Mit offenem Körper nimmt Spieler drei den Ball sofort ins Quadrat mit.",
+      "moves": [
+       {
+        "who": "n3",
+        "to": [
+         56.5,
+         42
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Am Start wird zuerst ein Doppelpass gespielt.",
+   "title": "Doppelpass am Start",
+   "text": "Am Start stehen zwei Spieler. Bevor der Ball in die Mitte geht, spielen sie einen kurzen Doppelpass. Das bringt mehr Pässe, verlangt gutes Timing und genaue, kurze Zuspiele.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 25,
+      "y": 30,
+      "label": "1"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 34,
+      "y": 44,
+      "label": "4"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 50,
+      "y": 30,
+      "label": "3"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 75,
+      "y": 30,
+      "label": "2"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 83.5,
+      "y": 30,
+      "label": "5"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 85,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 26.6,
+      "y": 30.6
+     },
+     {
+      "id": "c1",
+      "x": 87.6,
+      "y": 50.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Doppelpass am Start",
+      "say": "Spieler eins spielt zu Spieler vier, läuft durch das Hütchentor und bekommt den Ball direkt zurück.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         35.6,
+         44.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n1",
+        "to": [
+         37,
+         30
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "b1",
+        "to": [
+         38.6,
+         30.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Pass in die Mitte",
+      "say": "Dann passt Spieler eins zum Mittelspieler.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         48.4,
+         30.6
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Erster Kontakt ins Quadrat",
+      "say": "Spieler drei nimmt den Ball mit dem ersten Kontakt ins Quadrat mit.",
+      "moves": [
+       {
+        "who": "n3",
+        "to": [
+         56.5,
+         42
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
