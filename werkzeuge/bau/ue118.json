@@ -1,0 +1,670 @@
+{
+ "title": "Aufbauen mit zwei Floatern",
+ "code": "UE-118",
+ "kind": "Spielform",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel",
+  "Torschuss"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "duration_minutes": 15,
+ "players_min": 12,
+ "players_max": 14,
+ "field_size": "37 x 27 m",
+ "description": "Zwei Teams mit je sechs Spielern samt Torhüter spielen auf zwei Tore, an beiden langen Seiten steht ein Floater. Das Team am Ball muss erst fünf Pässe spielen und dabei mindestens einmal einen Floater einbinden, bevor es abschließen darf. So üben die Spieler den Aufbau von hinten, gute Passwege und den Abschluss.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 37 mal 27 Metern mit einem Tor links und rechts. An der oberen und unteren Seitenlinie steht je ein Floater.",
+  "Verteilen: Team Neon und Team Rot mit je einem Torhüter und fünf Feldspielern. Die Floater spielen immer mit dem Team am Ball.",
+  "Ablauf: Team Neon baut von hinten auf. Nach fünf Pässen, bei denen ein Floater mitgespielt hat, darf es aufs rechte Tor abschließen. Erobert Team Rot den Ball, muss es nur einmal mit einem Floater kombinieren und darf dann abschließen.",
+  "Wechsel: Nach einiger Zeit werden die Floater getauscht, damit jeder einmal außen spielt. Jedes Tor gibt einen Punkt."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Mit guten Pässen den Ball in den eigenen Reihen halten",
+  "Wenn nach vorn nichts geht, über die hinterste Reihe neu aufbauen",
+  "Die Passwege zum Floater nicht zustellen",
+  "Freien Raum erkennen und nutzen und kaltschnäuzig abschließen"
+ ],
+ "materials": [
+  "2 Tore",
+  "Hütchen für das Feld",
+  "Mehrere Bälle beim Trainer",
+  "Leibchen in drei Farben"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Aufbauen mit zwei Floatern. Fünf Pässe, einmal über den Floater, dann darf aufs Tor geschossen werden.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 8,
+    "y": 8,
+    "w": 84,
+    "h": 44
+   }
+  ],
+  "goals": [
+   {
+    "x": 8,
+    "y": 30,
+    "side": "left"
+   },
+   {
+    "x": 92,
+    "y": 30,
+    "side": "right"
+   }
+  ],
+  "players": [
+   {
+    "id": "n1",
+    "team": "a",
+    "x": 11,
+    "y": 30,
+    "label": "1"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 25,
+    "y": 31,
+    "label": "4"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 36,
+    "y": 15,
+    "label": "5"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 32,
+    "y": 49,
+    "label": "6"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 60,
+    "y": 25,
+    "label": "8"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 66,
+    "y": 41,
+    "label": "10"
+   },
+   {
+    "id": "r12",
+    "team": "b",
+    "x": 89,
+    "y": 31,
+    "label": "12"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 76,
+    "y": 31,
+    "label": "7"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 69,
+    "y": 12,
+    "label": "2"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 75,
+    "y": 48,
+    "label": "3"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 45,
+    "y": 24,
+    "label": "9"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 42,
+    "y": 42,
+    "label": "11"
+   },
+   {
+    "id": "f1",
+    "team": "t",
+    "x": 54,
+    "y": 5,
+    "label": "F"
+   },
+   {
+    "id": "f2",
+    "team": "t",
+    "x": 54,
+    "y": 55,
+    "label": "F"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 4,
+    "y": 52,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 12.6,
+    "y": 30.6
+   },
+   {
+    "id": "c1",
+    "x": 6.5,
+    "y": 52.6
+   },
+   {
+    "id": "c2",
+    "x": 3,
+    "y": 55.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Aufbau von hinten",
+    "say": "Der Torhüter Neon eins spielt zu Neon vier, und Neon vier spielt weiter zu Neon fünf. Das sind zwei Pässe.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       23.4,
+       31.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       34.4,
+       15.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Über den Floater",
+    "say": "Neon fünf spielt zum Floater oben, und der Floater spielt direkt zu Neon acht. Jetzt sind es vier Pässe, und ein Floater war dabei.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       52.4,
+       5.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       58.4,
+       25.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Pass in den Lauf",
+    "say": "Gleichzeitig startet Neon zehn in die Tiefe, und Neon acht spielt ihm den Ball in den Lauf. Das ist der fünfte Pass.",
+    "moves": [
+     {
+      "who": "n10",
+      "to": [
+       80,
+       42
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       81.6,
+       42.6
+      ],
+      "type": "pass",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "Abschluss",
+    "say": "Neon zehn schließt direkt ab und trifft ins rechte Tor. Das gibt einen Punkt für Team Neon.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       91.5,
+       36
+      ],
+      "type": "pass"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 8,
+    "y1": 58.6,
+    "x2": 92,
+    "y2": 58.6,
+    "text": "37 m"
+   },
+   {
+    "x1": 97,
+    "y1": 8,
+    "x2": 97,
+    "y2": 52,
+    "text": "27 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Der Torhüter spielt mutig durch die Lücke.",
+   "title": "Durch die Lücke",
+   "text": "Laufen die beiden vorderen Gegner den Torhüter an und lassen dabei eine Lücke zwischen sich, spielt der Torhüter mutig und genau durch diese Lücke zum Mittelfeldspieler. Der dreht auf, und Team Neon hat den ersten Druck schon überspielt.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 11,
+      "y": 30,
+      "label": "1"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 40,
+      "y": 50,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 20,
+      "y": 11,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 19,
+      "y": 49,
+      "label": "6"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 40,
+      "y": 30,
+      "label": "8"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 63,
+      "y": 38,
+      "label": "10"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 89,
+      "y": 31,
+      "label": "12"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 56,
+      "y": 22,
+      "label": "7"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 66,
+      "y": 12,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 74,
+      "y": 46,
+      "label": "3"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 29,
+      "y": 21,
+      "label": "9"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 30,
+      "y": 40,
+      "label": "11"
+     },
+     {
+      "id": "f1",
+      "team": "t",
+      "x": 54,
+      "y": 5,
+      "label": "F"
+     },
+     {
+      "id": "f2",
+      "team": "t",
+      "x": 54,
+      "y": 55,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 4,
+      "y": 52,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 12.6,
+      "y": 30.6
+     },
+     {
+      "id": "c1",
+      "x": 6.5,
+      "y": 52.6
+     },
+     {
+      "id": "c2",
+      "x": 3,
+      "y": 55.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Gegner laufen an",
+      "say": "Gleichzeitig laufen Rot neun und Rot elf den Torhüter an. Zwischen ihnen entsteht eine große Lücke.",
+      "moves": [
+       {
+        "who": "r9",
+        "to": [
+         24,
+         23
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r11",
+        "to": [
+         25,
+         37
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Durch die Lücke",
+      "say": "Der Torhüter spielt flach durch die Lücke zu Neon acht. Neon acht dreht auf und spielt weiter zu Neon zehn.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         38.4,
+         30.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         61.4,
+         38.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Schnell zum Floater spielen und nachrücken.",
+   "title": "Schnell über den Floater",
+   "text": "Wer unter Druck ist, spielt schnell zum Floater. Gleichzeitig sprinten die Mitspieler mit vollem Tempo nach vorn, damit der Floater sie sofort anspielen kann. So entsteht ein schneller Angriff, der mit einem guten Abschluss endet.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 11,
+      "y": 30,
+      "label": "1"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 25,
+      "y": 31,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 36,
+      "y": 15,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 32,
+      "y": 49,
+      "label": "6"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 60,
+      "y": 25,
+      "label": "8"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 66,
+      "y": 41,
+      "label": "10"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 89,
+      "y": 31,
+      "label": "12"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 76,
+      "y": 31,
+      "label": "7"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 69,
+      "y": 12,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 75,
+      "y": 48,
+      "label": "3"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 45,
+      "y": 24,
+      "label": "9"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 42,
+      "y": 42,
+      "label": "11"
+     },
+     {
+      "id": "f1",
+      "team": "t",
+      "x": 54,
+      "y": 5,
+      "label": "F"
+     },
+     {
+      "id": "f2",
+      "team": "t",
+      "x": 54,
+      "y": 55,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 4,
+      "y": 52,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 33.6,
+      "y": 49.6
+     },
+     {
+      "id": "c1",
+      "x": 6.5,
+      "y": 52.6
+     },
+     {
+      "id": "c2",
+      "x": 3,
+      "y": 55.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Schnell zum Floater",
+      "say": "Neon sechs spielt sofort zum Floater unten.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         52.4,
+         54.6
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Nachrücken mit Tempo",
+      "say": "Gleichzeitig sprinten Neon zehn und Neon acht nach vorn. Der Floater spielt Neon zehn in den Lauf.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         78,
+         40
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n8",
+        "to": [
+         78,
+         22
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         79.6,
+         40.6
+        ],
+        "type": "pass",
+        "delay": 0.4
+       }
+      ]
+     },
+     {
+      "label": "Abschluss",
+      "say": "Neon zehn schließt ab und trifft. Das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         91.5,
+         34
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

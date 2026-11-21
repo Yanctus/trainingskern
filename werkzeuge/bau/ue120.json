@@ -1,0 +1,628 @@
+{
+ "title": "Doppelpass, dann eins gegen eins",
+ "code": "UE-120",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Dribbling",
+  "1 gegen 1"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "duration_minutes": 15,
+ "players_min": 5,
+ "players_max": 8,
+ "field_size": "23 x 27 m",
+ "description": "Drei Dummys stehen im Dreieck, rechts stehen zwei Minitore. Nach einem Doppelpass dribbelt ein Spieler um den hinteren Dummy und spielt zum Startplatz. Von dort geht der Ball zum Angreifer, der im eins gegen eins gegen einen Verteidiger auf die Minitore spielt.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 23 mal 27 Metern mit drei Dummys im Dreieck. Rechts stehen zwei Minitore, davor eine Endzone.",
+  "Verteilen: Am Startplatz oben stehen Spieler von Team Neon mit Bällen. Ein Neon-Spieler steht am unteren Dummy, ein Verteidiger von Team Rot wartet in der Endzone.",
+  "Ablauf: Neon zwei spielt einen Doppelpass mit Neon sechs, dribbelt um den hinteren Dummy und spielt zum Startplatz. Von dort geht der Ball zu Neon sechs. Sobald Neon sechs den Ball berührt, greift Rot fünf ein, und Neon sechs muss ihn im eins gegen eins schlagen und ins Minitor treffen.",
+  "Wechsel: Nach dem Abschluss wird der Angreifer zum Verteidiger, der Verteidiger geht an den Startplatz. Nach einer ganzen Runde sprinten alle einmal um das Feld und erholen sich kurz."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Genau mit einem Kontakt passen",
+  "Den Pass so spielen, dass der Mitspieler ihn im Lauf mitnehmen kann",
+  "Den Ball eng am Fuß führen, mit beiden Füßen",
+  "Mit Tricks den Verteidiger aus dem Gleichgewicht bringen und ruhig abschließen"
+ ],
+ "materials": [
+  "3 Dummys",
+  "2 Minitore",
+  "Hütchen für Feld und Endzone",
+  "Mehrere Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Doppelpass, dann eins gegen eins. Erst sauber kombinieren, dann den Verteidiger ausspielen und abschließen.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 14,
+    "y": 8,
+    "w": 72,
+    "h": 44
+   },
+   {
+    "type": "line",
+    "x1": 75,
+    "y1": 8,
+    "x2": 75,
+    "y2": 52,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 86,
+    "y": 21,
+    "side": "right"
+   },
+   {
+    "x": 86,
+    "y": 42,
+    "side": "right"
+   }
+  ],
+  "players": [
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 53,
+    "y": 12,
+    "label": "2"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 44,
+    "y": 6,
+    "label": "4"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 35,
+    "y": 6,
+    "label": "3"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 47,
+    "y": 41,
+    "label": "6"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 70,
+    "y": 31,
+    "label": "5"
+   },
+   {
+    "id": "d1",
+    "team": "t",
+    "x": 38,
+    "y": 24,
+    "label": "D"
+   },
+   {
+    "id": "d2",
+    "team": "t",
+    "x": 38,
+    "y": 40,
+    "label": "D"
+   },
+   {
+    "id": "d3",
+    "team": "t",
+    "x": 20,
+    "y": 32,
+    "label": "D"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 62,
+    "y": 4,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 54.6,
+    "y": 12.6
+   },
+   {
+    "id": "c1",
+    "x": 64.5,
+    "y": 4.6
+   },
+   {
+    "id": "c2",
+    "x": 59,
+    "y": 5.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Doppelpass",
+    "say": "Neon zwei spielt zu Neon sechs und startet zwischen die Dummys. Neon sechs spielt den Ball direkt in seinen Lauf.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       45.4,
+       41.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n2",
+      "to": [
+       46,
+       30
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       47.6,
+       30.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Um den Dummy und zurück",
+    "say": "Neon zwei dribbelt um den hinteren Dummy herum und spielt dann zu Neon vier am Startplatz.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       28,
+       38
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n2",
+      "to": [
+       14,
+       36
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n2",
+      "to": [
+       15,
+       25
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n2",
+      "to": [
+       26,
+       20
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       42.4,
+       6.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Anspiel zum Angreifer",
+    "say": "Neon vier spielt zu Neon sechs. Sobald Neon sechs den Ball berührt, darf Rot fünf angreifen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       48.6,
+       41.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r5",
+      "to": [
+       66,
+       38
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     }
+    ]
+   },
+   {
+    "label": "Eins gegen eins",
+    "say": "Neon sechs dribbelt an Rot fünf vorbei und schießt ins untere Minitor. Das gibt einen Punkt für Neon sechs.",
+    "moves": [
+     {
+      "who": "n6",
+      "to": [
+       60,
+       46
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n6",
+      "to": [
+       76,
+       40
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       85.5,
+       42
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 14,
+    "y1": 58.6,
+    "x2": 86,
+    "y2": 58.6,
+    "text": "23 m"
+   },
+   {
+    "x1": 94,
+    "y1": 8,
+    "x2": 94,
+    "y2": 52,
+    "text": "27 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Den Verteidiger mit einer Täuschung aus dem Gleichgewicht bringen.",
+   "title": "Täuschen und vorbei",
+   "text": "Im eins gegen eins täuscht der Angreifer eine Richtung an, zum Beispiel mit einem Schulter fallen lassen oder einem Übersteiger. Verlagert der Verteidiger sein Gewicht, zieht der Angreifer in die andere Richtung in den freien Raum und schließt mit Ruhe ab.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 53,
+      "y": 12,
+      "label": "2"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 44,
+      "y": 6,
+      "label": "4"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 35,
+      "y": 6,
+      "label": "3"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 58,
+      "y": 42,
+      "label": "6"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 68,
+      "y": 34,
+      "label": "5"
+     },
+     {
+      "id": "d1",
+      "team": "t",
+      "x": 38,
+      "y": 24,
+      "label": "D"
+     },
+     {
+      "id": "d2",
+      "team": "t",
+      "x": 38,
+      "y": 40,
+      "label": "D"
+     },
+     {
+      "id": "d3",
+      "team": "t",
+      "x": 20,
+      "y": 32,
+      "label": "D"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 62,
+      "y": 4,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "g",
+      "x": 59.6,
+      "y": 42.6
+     },
+     {
+      "id": "b1",
+      "x": 54.6,
+      "y": 12.6
+     },
+     {
+      "id": "c1",
+      "x": 64.5,
+      "y": 4.6
+     },
+     {
+      "id": "c2",
+      "x": 59,
+      "y": 5.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Antäuschen",
+      "say": "Rot fünf kommt auf Neon sechs zu. Neon sechs lässt die Schulter fallen und täuscht nach unten an.",
+      "moves": [
+       {
+        "who": "r5",
+        "to": [
+         64,
+         40
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n6",
+        "to": [
+         59,
+         46
+        ],
+        "type": "dribbling",
+        "delay": 0.3,
+        "ball": "g"
+       }
+      ]
+     },
+     {
+      "label": "In die andere Richtung",
+      "say": "Rot fünf fällt darauf herein. Neon sechs zieht nach oben in den freien Raum und schießt ins obere Minitor. Das gibt einen Punkt für Neon sechs.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         60,
+         34
+        ],
+        "type": "dribbling",
+        "ball": "g"
+       },
+       {
+        "who": "n6",
+        "to": [
+         72,
+         28
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "g"
+       },
+       {
+        "who": "g",
+        "to": [
+         85.5,
+         22
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Den Pass in den Lauf spielen.",
+   "title": "Pass in den Lauf",
+   "text": "Beim Doppelpass kommt der Ball nicht in den Fuß, sondern ein Stück vor den Spieler, damit er ihn im Laufen mitnehmen kann. Dazu müssen Tempo und Richtung des Passes genau passen. So muss niemand abstoppen, und die Übung bleibt schnell.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 53,
+      "y": 12,
+      "label": "2"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 44,
+      "y": 6,
+      "label": "4"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 35,
+      "y": 6,
+      "label": "3"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 47,
+      "y": 41,
+      "label": "6"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 70,
+      "y": 31,
+      "label": "5"
+     },
+     {
+      "id": "d1",
+      "team": "t",
+      "x": 38,
+      "y": 24,
+      "label": "D"
+     },
+     {
+      "id": "d2",
+      "team": "t",
+      "x": 38,
+      "y": 40,
+      "label": "D"
+     },
+     {
+      "id": "d3",
+      "team": "t",
+      "x": 20,
+      "y": 32,
+      "label": "D"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 62,
+      "y": 4,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 54.6,
+      "y": 12.6
+     },
+     {
+      "id": "c1",
+      "x": 64.5,
+      "y": 4.6
+     },
+     {
+      "id": "c2",
+      "x": 59,
+      "y": 5.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Pass und Start",
+      "say": "Neon zwei spielt fest zu Neon sechs und startet sofort los.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         45.4,
+         41.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n2",
+        "to": [
+         48,
+         24
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "In den Lauf",
+      "say": "Neon sechs spielt den Ball direkt ein Stück vor Neon zwei. Der nimmt ihn im Laufen mit und dribbelt ohne Pause weiter.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         44,
+         32
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         42.4,
+         32.6
+        ],
+        "type": "pass",
+        "delay": 0.1
+       },
+       {
+        "who": "n2",
+        "to": [
+         30,
+         37
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

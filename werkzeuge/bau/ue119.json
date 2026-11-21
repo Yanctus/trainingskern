@@ -1,0 +1,592 @@
+{
+ "title": "Wettlauf, dann zwei gegen eins",
+ "code": "UE-119",
+ "kind": "Spielform",
+ "focuses": [
+  "Schnelligkeit",
+  "Torschuss",
+  "Umschalten"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "duration_minutes": 15,
+ "players_min": 7,
+ "players_max": 12,
+ "field_size": "27 x 27 m",
+ "description": "Zwei Spieler laufen um die Wette um Stange und Hütchen zum Ball, den der Trainer ins Feld spielt. Wer zuerst am Ball ist, greift mit dem wartenden Mitspieler in der Zone vor dem Tor zwei gegen eins an und schließt ab. Erobert der Verteidiger den Ball, kontert er auf eines der beiden Minitore.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 27 mal 27 Metern mit einem großen Tor und Torhüter rechts. Davor eine Zone von etwa 18 mal 18 Metern, oben und unten je ein Minitor.",
+  "Verteilen: Team Neon wartet oben links, Team Rot unten links, getrennt durch ein Hütchen. In der Zone stehen ein Angreifer von Team Neon und ein Verteidiger von Team Rot. Der Trainer steht mit Bällen in der Mitte.",
+  "Ablauf: Je ein Spieler beider Teams läuft um seine Stange und sein Hütchen zum Ball des Trainers. Wer ihn zuerst hat, greift mit dem Mitspieler in der Zone zwei gegen eins an. Ein Tor gibt einen Punkt. Erobert der Verteidiger den Ball, schießt er auf ein Minitor.",
+  "Wechsel: Nach jedem Durchgang wird rotiert, damit jeder jede Rolle spielt. Mit hohem Tempo arbeiten."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Mit Tempo das Rennen gewinnen, um die Überzahl zu bekommen",
+  "Den ersten Kontakt nach vorn mitnehmen und auf den Verteidiger zudribbeln",
+  "Vor dem Tor die richtige Entscheidung treffen: Pass oder Abschluss",
+  "Schnell zusammenspielen und mutig angreifen"
+ ],
+ "materials": [
+  "1 großes Tor",
+  "2 Minitore",
+  "2 Stangen",
+  "3 orange Hütchen",
+  "Mehrere Bälle beim Trainer",
+  "Leibchen in drei Farben"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Wettlauf, dann zwei gegen eins. Wer zuerst am Ball ist, bekommt vor dem Tor die Überzahl.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 14,
+    "y": 8,
+    "w": 72,
+    "h": 44
+   },
+   {
+    "type": "zone",
+    "x": 51,
+    "y": 19,
+    "w": 35,
+    "h": 23
+   }
+  ],
+  "cones": [
+   {
+    "x": 28,
+    "y": 30,
+    "color": "orange"
+   },
+   {
+    "x": 45,
+    "y": 18,
+    "color": "orange"
+   },
+   {
+    "x": 45,
+    "y": 42,
+    "color": "orange"
+   },
+   {
+    "x": 35,
+    "y": 14,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 35,
+    "y": 46,
+    "color": "neon",
+    "shape": "stange"
+   }
+  ],
+  "goals": [
+   {
+    "x": 86,
+    "y": 30,
+    "side": "right"
+   },
+   {
+    "x": 52,
+    "y": 8,
+    "side": "top"
+   },
+   {
+    "x": 52,
+    "y": 52,
+    "side": "bottom"
+   }
+  ],
+  "players": [
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 24,
+    "y": 22,
+    "label": "3"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 14,
+    "y": 15,
+    "label": "4"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 24,
+    "y": 38,
+    "label": "7"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 14,
+    "y": 45,
+    "label": "8"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 72,
+    "y": 40,
+    "label": "2"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 61,
+    "y": 34,
+    "label": "6"
+   },
+   {
+    "id": "k",
+    "team": "t",
+    "x": 82,
+    "y": 30,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 40,
+    "y": 30,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "c1",
+    "x": 42.5,
+    "y": 30.6
+   },
+   {
+    "id": "c2",
+    "x": 39,
+    "y": 33.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Wettlauf zum Ball",
+    "say": "Gleichzeitig sprinten Neon drei und Rot sieben um ihre Stange und ihr Hütchen. Der Trainer spielt den Ball ins Feld, und Neon drei ist zuerst da.",
+    "moves": [
+     {
+      "who": "n3",
+      "to": [
+       31,
+       9
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n3",
+      "to": [
+       44,
+       13
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n3",
+      "to": [
+       49,
+       19
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n3",
+      "to": [
+       50,
+       22
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r7",
+      "to": [
+       31,
+       51
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "r7",
+      "to": [
+       44,
+       47
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r7",
+      "to": [
+       49,
+       41
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "c1",
+      "to": [
+       51.6,
+       22.6
+      ],
+      "type": "pass",
+      "delay": 1.2
+     }
+    ]
+   },
+   {
+    "label": "Zwei gegen eins",
+    "say": "Neon drei dribbelt in die Zone. Rot sechs kommt heraus, und Neon drei spielt zu Neon zwei.",
+    "moves": [
+     {
+      "who": "n3",
+      "to": [
+       60,
+       22
+      ],
+      "type": "dribbling",
+      "ball": "c1"
+     },
+     {
+      "who": "r6",
+      "to": [
+       60,
+       28
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "c1",
+      "to": [
+       70.4,
+       40.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Abschluss",
+    "say": "Neon zwei schließt sofort ab und trifft ins große Tor. Das gibt einen Punkt für Team Neon.",
+    "moves": [
+     {
+      "who": "c1",
+      "to": [
+       85.5,
+       35
+      ],
+      "type": "pass"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 14,
+    "y1": 58.6,
+    "x2": 86,
+    "y2": 58.6,
+    "text": "27 m"
+   },
+   {
+    "x1": 94,
+    "y1": 8,
+    "x2": 94,
+    "y2": 52,
+    "text": "27 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Der erste Kontakt geht nach vorn.",
+   "title": "Erster Kontakt nach vorn",
+   "text": "Wer das Rennen gewinnt, nimmt den Ball mit dem ersten Kontakt nach vorn in den freien Raum mit und dribbelt direkt auf den Verteidiger zu. So muss der Verteidiger sich entscheiden, und der Mitspieler wird frei.",
+   "board": {
+    "players": [
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 50,
+      "y": 22,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 14,
+      "y": 15,
+      "label": "4"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 49,
+      "y": 41,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 14,
+      "y": 45,
+      "label": "8"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 72,
+      "y": 40,
+      "label": "2"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 61,
+      "y": 34,
+      "label": "6"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 82,
+      "y": 30,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 40,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "g",
+      "x": 51.6,
+      "y": 22.6
+     },
+     {
+      "id": "c1",
+      "x": 42.5,
+      "y": 30.6
+     },
+     {
+      "id": "c2",
+      "x": 39,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Mitnahme nach vorn",
+      "say": "Neon drei nimmt den Ball mit dem ersten Kontakt weit nach vorn mit und dribbelt auf Rot sechs zu.",
+      "moves": [
+       {
+        "who": "n3",
+        "to": [
+         60,
+         22
+        ],
+        "type": "dribbling",
+        "ball": "g"
+       },
+       {
+        "who": "r6",
+        "to": [
+         60,
+         28
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Pass zum Freien",
+      "say": "Rot sechs muss Neon drei angreifen. Jetzt ist Neon zwei frei, bekommt den Ball und schießt ins Tor. Das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "g",
+        "to": [
+         70.4,
+         40.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "g",
+        "to": [
+         85.5,
+         35
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Erobert der Verteidiger den Ball, wird sofort gekontert.",
+   "title": "Ballgewinn und Konter",
+   "text": "Fängt der Verteidiger den Ball ab, schaltet er sofort um und schießt auf eines der beiden Minitore. Das ist wie im Spiel: Nach dem Ballgewinn wird schnell nach vorn gespielt. Für die Angreifer heißt das, nach einem Ballverlust sofort nachzusetzen.",
+   "board": {
+    "players": [
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 58,
+      "y": 22,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 14,
+      "y": 15,
+      "label": "4"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 24,
+      "y": 38,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 14,
+      "y": 45,
+      "label": "8"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 72,
+      "y": 47,
+      "label": "2"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 67,
+      "y": 31,
+      "label": "6"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 82,
+      "y": 30,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 40,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "g",
+      "x": 59.6,
+      "y": 22.6
+     },
+     {
+      "id": "c1",
+      "x": 42.5,
+      "y": 30.6
+     },
+     {
+      "id": "c2",
+      "x": 39,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Ball abgefangen",
+      "say": "Neon drei spielt zu Neon zwei, aber Rot sechs läuft in den Pass und fängt den Ball ab.",
+      "moves": [
+       {
+        "who": "g",
+        "to": [
+         65,
+         38
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r6",
+        "to": [
+         64,
+         37
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Konter aufs Minitor",
+      "say": "Rot sechs dribbelt sofort los und schießt ins untere Minitor. Das gibt einen Punkt für Team Rot.",
+      "moves": [
+       {
+        "who": "r6",
+        "to": [
+         56,
+         45
+        ],
+        "type": "dribbling",
+        "ball": "g"
+       },
+       {
+        "who": "g",
+        "to": [
+         52,
+         51.5
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
