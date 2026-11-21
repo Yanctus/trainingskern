@@ -1,0 +1,654 @@
+{
+ "title": "Zwei Spiele, ein Feld",
+ "code": "UE-074",
+ "kind": "Spielform",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel",
+  "Bewegung"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "duration_minutes": 15,
+ "players_min": 12,
+ "players_max": 12,
+ "field_size": "23 x 23 m",
+ "description": "Zwei Spiele laufen gleichzeitig im selben Feld, jeweils zwei gegen zwei. Die erste Gruppe will den Ball von links nach rechts bringen, die zweite von oben nach unten. Vier Springer an den Seiten helfen immer der Mannschaft am Ball. Weil sich alle kreuzen, müssen die Spieler ständig den Kopf heben und sich umschauen.",
+ "organisation": [
+  "Aufbauen: Ein Quadrat von 23 mal 23 Metern mit vier Hütchen.",
+  "Verteilen: Vier Paare und vier Springer. Je zwei Paare bilden eine Gruppe und spielen gegeneinander. An jeder Seite steht ein Springer, er darf sich bis etwa vier Meter ins Feld hinein bewegen.",
+  "Ablauf: Beide Gruppen spielen gleichzeitig. Gruppe eins spielt von links nach rechts, Gruppe zwei von oben nach unten. Jedes Paar darf jeden Springer anspielen. Kommt der Ball von einem Springer zum Springer auf der anderen Seite, gibt das einen Punkt.",
+  "Wechsel: Nach drei bis vier Minuten ein bis zwei Minuten Pause, dann spielen neue Paare gegeneinander. Am Ende hat jedes Paar gegen jedes gespielt, die Punkte werden zusammengezählt."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Ständig umschauen, wo sich alle bewegen",
+  "Wissen, wo Partner und Springer stehen",
+  "Viel miteinander sprechen",
+  "Genau passen und sich frei laufen, um im freien Raum anzunehmen"
+ ],
+ "materials": [
+  "4 orange Hütchen",
+  "8 Leibchen in zwei Farben",
+  "4 Leibchen für die Springer",
+  "Mehrere Bälle beim Trainer"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Zwei Spiele, ein Feld. Zwei Gruppen spielen gleichzeitig, die eine von links nach rechts, die andere von oben nach unten.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   }
+  ],
+  "cones": [
+   {
+    "x": 25,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 75,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 25,
+    "y": 55,
+    "color": "orange"
+   },
+   {
+    "x": 75,
+    "y": 55,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 33.5,
+    "y": 12,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 58.25,
+    "y": 12,
+    "label": "3"
+   },
+   {
+    "id": "r4",
+    "team": "b",
+    "x": 33.5,
+    "y": 30,
+    "label": "4"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 66.5,
+    "y": 30,
+    "label": "5"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 41.75,
+    "y": 30,
+    "label": "6"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 58.25,
+    "y": 48,
+    "label": "7"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 66.5,
+    "y": 48,
+    "label": "8"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 58.25,
+    "y": 30,
+    "label": "9"
+   },
+   {
+    "id": "fL",
+    "team": "t",
+    "x": 25,
+    "y": 30,
+    "label": "F"
+   },
+   {
+    "id": "fR",
+    "team": "t",
+    "x": 75,
+    "y": 30,
+    "label": "F"
+   },
+   {
+    "id": "fT",
+    "team": "t",
+    "x": 50,
+    "y": 5,
+    "label": "F"
+   },
+   {
+    "id": "fB",
+    "team": "t",
+    "x": 50,
+    "y": 55,
+    "label": "F"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 12,
+    "y": 50,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 26.6,
+    "y": 30.6
+   },
+   {
+    "id": "b2",
+    "x": 51.6,
+    "y": 5.6
+   },
+   {
+    "id": "c1",
+    "x": 14.5,
+    "y": 51
+   },
+   {
+    "id": "c2",
+    "x": 11,
+    "y": 53.8
+   }
+  ],
+  "steps": [
+   {
+    "label": "Beide Spiele starten gleichzeitig",
+    "say": "Beide Spiele starten gleichzeitig bei einem Springer. Der linke Springer spielt zu Neon zwei, der obere Springer zu Neon sechs. Rot vier und Rot neun laufen sofort dagegen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       35.1,
+       12.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b2",
+      "to": [
+       43.35,
+       30.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r4",
+      "to": [
+       36,
+       22
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "r9",
+      "to": [
+       52,
+       31
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Weiter zum Partner",
+    "say": "Gleichzeitig spielen beide weiter: Neon zwei zu Neon drei, Neon sechs zu Neon sieben. Rot fünf und Rot acht versuchen, die nächsten Wege zuzustellen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       59.85,
+       12.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b2",
+      "to": [
+       59.85,
+       48.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r5",
+      "to": [
+       64,
+       27
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "r8",
+      "to": [
+       63,
+       41
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Auf die andere Seite: Punkt",
+    "say": "Neon drei spielt zum rechten Springer, Neon sieben zum unteren Springer. Beide Bälle sind auf der anderen Seite angekommen, und das gibt jeweils einen Punkt für Neon.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       73.4,
+       30.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b2",
+      "to": [
+       51.6,
+       54.4
+      ],
+      "type": "pass"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "23 m"
+   },
+   {
+    "x1": 83,
+    "y1": 5,
+    "x2": 83,
+    "y2": 55,
+    "text": "23 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Sind die Springer zugestellt, spielt man zum eigenen Partner.",
+   "title": "Springer zu, Partner frei",
+   "text": "Oft stellen die Gegner die Wege zu den Springern zu. Dann nicht stur weiterspielen, sondern umschauen und den eigenen Partner anspielen. Der Partner hilft, bietet sich an und sucht von dort den nächsten freien Weg. Schnell entscheiden und den freien Raum nutzen.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 50,
+      "y": 30,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 33.5,
+      "y": 14,
+      "label": "3"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 58.25,
+      "y": 14,
+      "label": "4"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 58.25,
+      "y": 46,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 41.75,
+      "y": 46,
+      "label": "6"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 66.5,
+      "y": 12,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 66.5,
+      "y": 46,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 33.5,
+      "y": 46,
+      "label": "9"
+     },
+     {
+      "id": "fL",
+      "team": "t",
+      "x": 25,
+      "y": 30,
+      "label": "F"
+     },
+     {
+      "id": "fR",
+      "team": "t",
+      "x": 75,
+      "y": 30,
+      "label": "F"
+     },
+     {
+      "id": "fT",
+      "team": "t",
+      "x": 50,
+      "y": 5,
+      "label": "F"
+     },
+     {
+      "id": "fB",
+      "team": "t",
+      "x": 50,
+      "y": 55,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 12,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 51.6,
+      "y": 30.6
+     },
+     {
+      "id": "b2",
+      "x": 51.6,
+      "y": 5.6
+     },
+     {
+      "id": "c1",
+      "x": 14.5,
+      "y": 51
+     },
+     {
+      "id": "c2",
+      "x": 11,
+      "y": 53.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Springer zugestellt",
+      "say": "Rot vier und Rot fünf stellen die Wege zum rechten Springer zu. Gleichzeitig spielt die andere Gruppe weiter, der obere Springer passt zu Neon sieben.",
+      "moves": [
+       {
+        "who": "r4",
+        "to": [
+         61,
+         22
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r5",
+        "to": [
+         61,
+         39
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b2",
+        "to": [
+         68.1,
+         12.6
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Zum freien Partner",
+      "say": "Neon zwei schaut sich um und spielt zum freien Partner Neon drei. Der hat Platz und sucht von dort den nächsten freien Weg.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         35.1,
+         14.6
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Lücken sehen und mit einem Pass durch die Gegner spielen.",
+   "title": "Durch die Lücke spielen",
+   "text": "Bei so vielen Spielern auf engem Raum entstehen immer wieder Lücken zwischen zwei Gegnern. Wer früh den Kopf hebt, sieht sie. Ein flacher Pass genau durch die Lücke überspielt gleich zwei Gegner. Der Mitspieler läuft zur richtigen Zeit in den Raum dahinter.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 33.5,
+      "y": 14,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 66.5,
+      "y": 14,
+      "label": "3"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 41.75,
+      "y": 46,
+      "label": "4"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 66.5,
+      "y": 52,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 66.5,
+      "y": 30,
+      "label": "6"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 33.5,
+      "y": 40,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 41.75,
+      "y": 24,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 58.25,
+      "y": 24,
+      "label": "9"
+     },
+     {
+      "id": "fL",
+      "team": "t",
+      "x": 25,
+      "y": 30,
+      "label": "F"
+     },
+     {
+      "id": "fR",
+      "team": "t",
+      "x": 75,
+      "y": 30,
+      "label": "F"
+     },
+     {
+      "id": "fT",
+      "team": "t",
+      "x": 50,
+      "y": 5,
+      "label": "F"
+     },
+     {
+      "id": "fB",
+      "team": "t",
+      "x": 50,
+      "y": 55,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 12,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 35.1,
+      "y": 14.6
+     },
+     {
+      "id": "b2",
+      "x": 51.6,
+      "y": 5.6
+     },
+     {
+      "id": "c1",
+      "x": 14.5,
+      "y": 51
+     },
+     {
+      "id": "c2",
+      "x": 11,
+      "y": 53.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Lücke sehen",
+      "say": "Der obere Springer hat den Ball und sieht die Lücke zwischen Rot acht und Rot neun. Neon sechs läuft genau dahinter in den freien Raum.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         50,
+         40
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Durch die Lücke",
+      "say": "Der Springer spielt flach durch die Lücke, mitten zwischen die beiden roten Spieler. Zwei Gegner sind mit einem Pass überspielt.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         51.6,
+         40.6
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Nach unten: Punkt",
+      "say": "Neon sechs spielt weiter zum unteren Springer, und das gibt einen Punkt für Neon.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         51.6,
+         54.2
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,750 @@
+{
+ "title": "Doppelpass um den Gegner",
+ "code": "UE-073",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel",
+  "Bewegung"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "duration_minutes": 15,
+ "players_min": 4,
+ "players_max": 6,
+ "field_size": "18 x 14 m",
+ "description": "Drei Spieler stehen in einem Viereck, ein vierter startet mit Ball davor. Sein Pass zum entferntesten Spieler ist das Startsignal: Ein Spieler im Viereck läuft heraus und setzt nur halb unter Druck. Die beiden anderen spielen einen Doppelpass um ihn herum und passen danach zurück zum Start. Möglichst alles mit einem Kontakt.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 14 Metern. Im hinteren Teil ein Viereck mit vier Hütchen, vorne ein Hütchen als Startpunkt.",
+  "Verteilen: Drei Spieler stehen im Viereck: einer ganz hinten, je einer an den beiden Seiten. Der vierte Spieler steht mit Ball am Start.",
+  "Ablauf: Der Start spielt zum hintersten Spieler. Sofort läuft der Spieler einer Seite heraus und setzt nur halb unter Druck. Der Angespielte und der Spieler der anderen Seite spielen einen Doppelpass um ihn herum, dann geht der Ball zurück zum Start.",
+  "Wechsel: Der hinterste Spieler und der Störer tauschen die Rollen, der Partner beim Doppelpass bleibt. Die Seite regelmäßig wechseln und alle paar Durchgänge einen neuen Startspieler bestimmen, damit jeder jede Rolle spielt."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Wo es geht mit einem Kontakt spielen, Tempo und Richtung des Passes stimmen",
+  "Schnell herauslaufen, aber nur halb unter Druck setzen",
+  "Auf den Zehen bleiben und den Rückpass zum Start fest spielen",
+  "Vor und nach jedem Pass miteinander sprechen"
+ ],
+ "materials": [
+  "5 orange Hütchen",
+  "Mehrere Bälle beim Trainer",
+  "2 Minitore für die zweite Steigerung"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Doppelpass um den Gegner. Drei Spieler im Viereck, einer am Start, und möglichst alles mit einem Kontakt.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 18,
+    "y": 6,
+    "w": 64,
+    "h": 48
+   },
+   {
+    "type": "rect",
+    "x": 52,
+    "y": 15,
+    "w": 24,
+    "h": 30
+   }
+  ],
+  "cones": [
+   {
+    "x": 52,
+    "y": 15,
+    "color": "orange"
+   },
+   {
+    "x": 76,
+    "y": 15,
+    "color": "orange"
+   },
+   {
+    "x": 52,
+    "y": 45,
+    "color": "orange"
+   },
+   {
+    "x": 76,
+    "y": 45,
+    "color": "orange"
+   },
+   {
+    "x": 28,
+    "y": 36.5,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 28,
+    "y": 31,
+    "label": "4"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 73,
+    "y": 30,
+    "label": "9"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 60,
+    "y": 45,
+    "label": "10"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 60,
+    "y": 15,
+    "label": "11"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 9,
+    "y": 50,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 29.6,
+    "y": 31.6
+   },
+   {
+    "id": "c1",
+    "x": 11.5,
+    "y": 51
+   },
+   {
+    "id": "c2",
+    "x": 8,
+    "y": 53.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pass nach hinten, Störer kommt",
+    "say": "Spieler vier spielt flach zu Spieler neun ganz hinten. Der Pass ist das Signal: Gleichzeitig läuft Spieler zehn heraus und setzt Spieler neun halb unter Druck.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       71.4,
+       30.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n10",
+      "to": [
+       64.5,
+       32
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Doppelpass um den Störer",
+    "say": "Spieler neun spielt direkt zu Spieler elf und läuft hinter Spieler zehn vorbei in den freien Raum. Spieler elf spielt direkt in seinen Lauf.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       61.5,
+       16.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n9",
+      "to": [
+       69,
+       43
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n9",
+      "to": [
+       57,
+       41
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       58.6,
+       41.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zurück zum Start, Rollen tauschen",
+    "say": "Spieler neun spielt fest zurück zu Spieler vier. Danach tauschen Spieler neun und Spieler zehn die Rollen, Spieler elf bleibt.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       29.6,
+       31.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n10",
+      "to": [
+       73,
+       30
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n9",
+      "to": [
+       60,
+       45
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 18,
+    "y1": 58.6,
+    "x2": 82,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 90,
+    "y1": 6,
+    "x2": 90,
+    "y2": 54,
+    "text": "14 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Auf den Zehen bleiben und mit einem Kontakt spielen.",
+   "title": "Ein Kontakt, dann fest zurück",
+   "text": "Wer auf den Zehen steht, ist für jeden Pass bereit. Möglichst mit einem Kontakt spielen, mit dem richtigen Tempo und genau in den Fuß oder in den Lauf. Vor dem Pass kurz ansagen, was man vorhat. Der Rückpass zum Start kommt besonders fest, damit es sofort weitergehen kann.",
+   "board": {
+    "players": [
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 28,
+      "y": 31,
+      "label": "4"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 73,
+      "y": 30,
+      "label": "9"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 64.5,
+      "y": 32,
+      "label": "10"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 60,
+      "y": 15,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 9,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 71.4,
+      "y": 30.6
+     },
+     {
+      "id": "c1",
+      "x": 11.5,
+      "y": 51
+     },
+     {
+      "id": "c2",
+      "x": 8,
+      "y": 53.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Mit einem Kontakt",
+      "say": "Spieler neun lässt den Ball nicht erst liegen, sondern spielt ihn mit einem Kontakt zu Spieler elf. Spieler elf spielt ebenfalls direkt.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         61.5,
+         16.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n9",
+        "to": [
+         69,
+         43
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n9",
+        "to": [
+         57,
+         41
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         58.6,
+         41.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Fest zurück",
+      "say": "Der Rückpass zu Spieler vier kommt flach und fest. So beginnt der nächste Durchgang ohne Pause.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         29.6,
+         31.6
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Der Startspieler läuft nach seinem Pass mit ins Viereck.",
+   "title": "Start läuft mit",
+   "text": "Am Start wartet ein fünfter Spieler. Nach seinem Pass sprintet der Startspieler an den Rand des Vierecks und ist im nächsten Durchgang dabei. Wer zum Start zurückspielt, läuft seinem Pass hinterher und stellt sich dort an. So sind alle ständig in Bewegung und müssen mehr miteinander sprechen.",
+   "board": {
+    "players": [
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 28,
+      "y": 31,
+      "label": "4"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 73,
+      "y": 30,
+      "label": "9"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 60,
+      "y": 45,
+      "label": "10"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 60,
+      "y": 15,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 9,
+      "y": 50,
+      "label": "T"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 19.5,
+      "y": 31,
+      "label": "8"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 29.6,
+      "y": 31.6
+     },
+     {
+      "id": "c1",
+      "x": 11.5,
+      "y": 51
+     },
+     {
+      "id": "c2",
+      "x": 8,
+      "y": 53.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Pass und hinterher",
+      "say": "Spieler vier spielt zu Spieler neun und sprintet sofort an den Rand des Vierecks. Gleichzeitig läuft Spieler zehn als Störer heraus.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         71.4,
+         30.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n4",
+        "to": [
+         49,
+         51
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n10",
+        "to": [
+         64.5,
+         32
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Doppelpass um den Störer",
+      "say": "Spieler neun und Spieler elf spielen den Doppelpass um Spieler zehn herum, wie in der Grundform.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         61.5,
+         16.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n9",
+        "to": [
+         69,
+         43
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n9",
+        "to": [
+         57,
+         41
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         58.6,
+         41.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Zurück und mitlaufen",
+      "say": "Spieler neun spielt zum neuen Startspieler acht und läuft seinem Pass hinterher zum Start. Gleichzeitig rücken Spieler vier und Spieler zehn auf die freien Plätze im Viereck.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         21.1,
+         31.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n9",
+        "to": [
+         29,
+         31
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n4",
+        "to": [
+         60,
+         45
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n10",
+        "to": [
+         73,
+         30
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Zwei Minitore, und der Doppelpass endet mit einem Abschluss.",
+   "title": "Abschluss ins Minitor",
+   "text": "Zwischen Start und Viereck stehen zwei Minitore schräg an den Seiten. Nach dem Doppelpass wird nicht zurückgespielt, sondern ins schräg gegenüberliegende Minitor geschossen, mit Gefühl statt mit voller Kraft. Sofort spielt der Trainer den nächsten Ball zum Start, und es geht weiter.",
+   "board": {
+    "players": [
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 28,
+      "y": 31,
+      "label": "4"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 73,
+      "y": 30,
+      "label": "9"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 60,
+      "y": 45,
+      "label": "10"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 60,
+      "y": 15,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 9,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 29.6,
+      "y": 31.6
+     },
+     {
+      "id": "c1",
+      "x": 11.5,
+      "y": 51
+     },
+     {
+      "id": "c2",
+      "x": 8,
+      "y": 53.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Pass nach hinten, Störer kommt",
+      "say": "Spieler vier spielt zu Spieler neun, gleichzeitig läuft Spieler zehn als Störer heraus.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         71.4,
+         30.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n10",
+        "to": [
+         64.5,
+         32
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Doppelpass um den Störer",
+      "say": "Spieler neun und Spieler elf spielen den Doppelpass um Spieler zehn herum.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         61.5,
+         16.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n9",
+        "to": [
+         69,
+         43
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n9",
+        "to": [
+         57,
+         41
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         58.6,
+         41.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Abschluss ins Minitor",
+      "say": "Spieler neun schießt genau ins schräg gegenüberliegende Minitor oben, und das gibt einen Punkt für Spieler neun.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         40,
+         11.5
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Trainer spielt den nächsten Ball",
+      "say": "Sofort spielt der Trainer den nächsten Ball zu Spieler vier. Gleichzeitig tauschen Spieler neun und Spieler zehn die Rollen.",
+      "moves": [
+       {
+        "who": "c1",
+        "to": [
+         29.6,
+         31.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n10",
+        "to": [
+         73,
+         30
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n9",
+        "to": [
+         60,
+         45
+        ],
+        "type": "lauf"
+       }
+      ]
+     }
+    ],
+    "goals": [
+     {
+      "x": 40,
+      "y": 12,
+      "side": "top"
+     },
+     {
+      "x": 40,
+      "y": 48,
+      "side": "bottom"
+     }
+    ]
+   }
+  }
+ ]
+}

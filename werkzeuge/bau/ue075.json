@@ -1,0 +1,646 @@
+{
+ "title": "Spiel mit zwei Bällen",
+ "code": "UE-075",
+ "kind": "Spielform",
+ "focuses": [
+  "Torschuss",
+  "Umschalten",
+  "Dribbling"
+ ],
+ "age_groups": [
+  "Bambini",
+  "F-Jugend"
+ ],
+ "duration_minutes": 10,
+ "players_min": 10,
+ "players_max": 10,
+ "field_size": "32 x 23 m",
+ "description": "Vier gegen vier mit Torwart auf zwei Tore, aber mit zwei Bällen gleichzeitig. Jedes Team startet mit einem Ball, greift also an und verteidigt zur selben Zeit. Fällt ein Tor oder geht ein Ball ins Aus, spielt der Trainer sofort einen neuen Ball ein. Ein Team darf auch beide Bälle haben.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 32 mal 23 Metern mit je einem Tor an beiden Enden.",
+  "Verteilen: Zwei Teams mit je vier Feldspielern und einem Torwart. Jedes Team bekommt zum Start einen Ball. Der Trainer steht mit weiteren Bällen an der Seite.",
+  "Ablauf: Beide Bälle sind gleichzeitig im Spiel. Jedes Team greift mit seinem Ball an und versucht zugleich, den anderen Ball zu erobern. Jedes Tor gibt einen Punkt. Fällt ein Tor oder ist ein Ball im Aus, spielt der Trainer sofort einen neuen Ball ins Feld.",
+  "Wertung: Ein Bonuspunkt für zwei Tore kurz hintereinander oder wenn ein Team beide Bälle zehn Sekunden lang behält. Die Teams überlegen sich selbst, wer angreift und wer verteidigt."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Schnell vom Angreifen aufs Verteidigen umschalten",
+  "Viel miteinander sprechen",
+  "Das Durcheinander nutzen und schnell abschließen",
+  "Immer auf den neuen Ball vom Trainer achten"
+ ],
+ "materials": [
+  "2 Tore",
+  "4 orange Hütchen",
+  "Leibchen in zwei Farben",
+  "Viele Bälle beim Trainer"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Spiel mit zwei Bällen. Beide Teams haben einen Ball, greifen an und verteidigen gleichzeitig.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 12,
+    "y": 7,
+    "w": 76,
+    "h": 46
+   }
+  ],
+  "cones": [
+   {
+    "x": 12,
+    "y": 7,
+    "color": "orange"
+   },
+   {
+    "x": 88,
+    "y": 7,
+    "color": "orange"
+   },
+   {
+    "x": 12,
+    "y": 53,
+    "color": "orange"
+   },
+   {
+    "x": 88,
+    "y": 53,
+    "color": "orange"
+   }
+  ],
+  "goals": [
+   {
+    "x": 12,
+    "y": 30,
+    "side": "left"
+   },
+   {
+    "x": 88,
+    "y": 30,
+    "side": "right"
+   }
+  ],
+  "players": [
+   {
+    "id": "n1",
+    "team": "a",
+    "x": 16,
+    "y": 30,
+    "label": "1"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 30,
+    "y": 14,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 46,
+    "y": 12,
+    "label": "3"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 40,
+    "y": 40,
+    "label": "4"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 60,
+    "y": 46,
+    "label": "5"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 84,
+    "y": 30,
+    "label": "6"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 70,
+    "y": 16,
+    "label": "7"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 55,
+    "y": 26,
+    "label": "8"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 70,
+    "y": 36,
+    "label": "9"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 30,
+    "y": 32,
+    "label": "10"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 94,
+    "y": 50,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 41.6,
+    "y": 40.6
+   },
+   {
+    "id": "b2",
+    "x": 68.4,
+    "y": 16.6
+   },
+   {
+    "id": "c1",
+    "x": 91.5,
+    "y": 51.5
+   },
+   {
+    "id": "c2",
+    "x": 96.5,
+    "y": 52.8
+   }
+  ],
+  "steps": [
+   {
+    "label": "Beide Teams starten mit Ball",
+    "say": "Jedes Team startet mit einem Ball. Gleichzeitig spielt Neon vier zu Neon fünf und Rot sieben zu Rot acht.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       61.6,
+       46.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b2",
+      "to": [
+       53.4,
+       26.6
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Angreifen und verteidigen zugleich",
+    "say": "Neon fünf dribbelt auf das rechte Tor, Rot acht auf das linke. Wer keinen Ball hat, verteidigt sofort: Rot neun läuft zu Neon fünf, Neon zwei zu Rot acht.",
+    "moves": [
+     {
+      "who": "n5",
+      "to": [
+       72,
+       47
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "r8",
+      "to": [
+       38,
+       22
+      ],
+      "type": "dribbling",
+      "ball": "b2"
+     },
+     {
+      "who": "r9",
+      "to": [
+       66,
+       42
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n2",
+      "to": [
+       33,
+       17
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Zwei Abschlüsse",
+    "say": "Beide schießen fast gleichzeitig. Das Tor von Neon fünf gibt einen Punkt für Neon, das Tor von Rot acht einen Punkt für Rot.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       87.5,
+       33.5
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b2",
+      "to": [
+       12.5,
+       26
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Der Trainer spielt den nächsten Ball",
+    "say": "Sofort spielt der Trainer einen neuen Ball ins Feld. Neon drei ist zuerst dort und startet den nächsten Angriff.",
+    "moves": [
+     {
+      "who": "c1",
+      "to": [
+       60,
+       24
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n3",
+      "to": [
+       58,
+       22
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 12,
+    "y1": 58.6,
+    "x2": 88,
+    "y2": 58.6,
+    "text": "32 m"
+   },
+   {
+    "x1": 5,
+    "y1": 7,
+    "x2": 5,
+    "y2": 53,
+    "text": "23 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Immer wissen, wo der Trainer den nächsten Ball hineinspielt.",
+   "title": "Den neuen Ball sehen",
+   "text": "Der Trainer spielt jederzeit einen neuen Ball ein. Wer sich ständig umschaut, sieht ihn früh, sprintet als Erster hin und startet sofort den nächsten Angriff. Nicht stehen bleiben und zuschauen, sondern immer bereit sein.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 16,
+      "y": 30,
+      "label": "1"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 28,
+      "y": 44,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 58,
+      "y": 22,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 36,
+      "y": 14,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 76,
+      "y": 14,
+      "label": "5"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 84,
+      "y": 30,
+      "label": "6"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 46,
+      "y": 10,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 26,
+      "y": 18,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 68,
+      "y": 30,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 44,
+      "y": 46,
+      "label": "10"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 94,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 59.6,
+      "y": 22.6
+     },
+     {
+      "id": "b2",
+      "x": 47.6,
+      "y": 10.6
+     },
+     {
+      "id": "c1",
+      "x": 91.5,
+      "y": 51.5
+     },
+     {
+      "id": "c2",
+      "x": 96.5,
+      "y": 52.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Neuer Ball kommt",
+      "say": "Der Trainer spielt einen neuen Ball ins Feld. Rot zehn hat sich umgeschaut und sieht ihn sofort.",
+      "moves": [
+       {
+        "who": "c1",
+        "to": [
+         56,
+         38
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Hin und los",
+      "say": "Rot zehn sprintet als Erster zum Ball und dribbelt sofort los nach links.",
+      "moves": [
+       {
+        "who": "r10",
+        "to": [
+         54.5,
+         38.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r10",
+        "to": [
+         33,
+         24
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "c1"
+       }
+      ]
+     },
+     {
+      "label": "Abschluss",
+      "say": "Rot zehn schießt flach ins Tor, und das gibt einen Punkt für Rot.",
+      "moves": [
+       {
+        "who": "c1",
+        "to": [
+         12.5,
+         26.5
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Herrscht hinten Durcheinander, schnell den freien Ball holen und abschließen.",
+   "title": "Das Durcheinander nutzen",
+   "text": "Mit zwei Bällen wissen die Verteidiger oft nicht, wer wohin muss. Liegt hinten ein Ball frei, schnell hinlaufen, den Ball holen und sofort abschließen, bevor sich die Abwehr sortiert hat.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 16,
+      "y": 30,
+      "label": "1"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 30,
+      "y": 14,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 46,
+      "y": 12,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 40,
+      "y": 44,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 56,
+      "y": 30,
+      "label": "5"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 84,
+      "y": 30,
+      "label": "6"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 44,
+      "y": 28,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 72,
+      "y": 20,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 72,
+      "y": 40,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 28,
+      "y": 32,
+      "label": "10"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 94,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 41.6,
+      "y": 44.6
+     },
+     {
+      "id": "b2",
+      "x": 65,
+      "y": 29
+     },
+     {
+      "id": "c1",
+      "x": 91.5,
+      "y": 51.5
+     },
+     {
+      "id": "c2",
+      "x": 96.5,
+      "y": 52.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Freier Ball hinten",
+      "say": "Hinten bei Rot liegt ein Ball frei. Rot acht und Rot neun schauen beide hin und zögern.",
+      "moves": [
+       {
+        "who": "r8",
+        "to": [
+         71,
+         22.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r9",
+        "to": [
+         71,
+         37.5
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Schneller am Ball",
+      "say": "Neon fünf ist schneller, sprintet zum Ball und nimmt ihn mit.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         63.5,
+         28.5
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Sofort abschließen",
+      "say": "Neon fünf schießt sofort, bevor sich die Abwehr sortiert, und das gibt einen Punkt für Neon.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         87.5,
+         26
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
