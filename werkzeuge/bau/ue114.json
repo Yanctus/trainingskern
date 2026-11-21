@@ -1,0 +1,528 @@
+{
+ "title": "Rondo mit Pass durchs Tor",
+ "code": "UE-114",
+ "kind": "Spielform",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel",
+  "Bewegung"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "duration_minutes": 15,
+ "players_min": 5,
+ "players_max": 6,
+ "field_size": "15 x 7 m",
+ "description": "Vier Spieler von Team Neon halten in einer Hälfte den Ball gegen einen Verteidiger von Team Rot. Auf der Mittellinie stehen zwei Tore aus Hütchen. Wenn die Lücke da ist, spielen sie fest durch ein Tor zum Mitspieler in der anderen Hälfte, und dort geht das Rondo weiter.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 15 mal 7 Metern, in zwei Hälften geteilt. Auf der Mittellinie bilden vier Hütchen zwei Tore.",
+  "Verteilen: In der linken Hälfte vier Spieler von Team Neon als Raute und ein Verteidiger von Team Rot. In der rechten Hälfte wartet ein Spieler von Team Neon.",
+  "Ablauf: Team Neon hält den Ball und spielt dann durch ein Tor zum wartenden Spieler, zum Beispiel nach acht Pässen, nach einem Doppelpass oder auf Zuruf. Drei Spieler rücken nach, einer bleibt als neuer wartender Spieler zurück, und der Verteidiger setzt nach.",
+  "Wechsel: Erobert der Verteidiger den Ball, darf er selbst zum wartenden Spieler durchspielen. Dann tauscht er mit dem Spieler, der den Ball verloren hat. Nach zwei bis drei Minuten wird ein neuer Verteidiger bestimmt, und die Punkte werden gezählt."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Kurz und genau mit der Innenseite passen",
+  "Schnell Winkel anbieten, damit der Ball in den eigenen Reihen bleibt",
+  "Erkennen, wann der feste Pass durch das Tor möglich ist",
+  "Miteinander sprechen und als Gruppe den freien Raum nutzen"
+ ],
+ "materials": [
+  "8 Hütchen",
+  "Mehrere Bälle beim Trainer",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Rondo mit Pass durchs Tor. Vier gegen eins den Ball halten und im richtigen Moment durchs Tor in die andere Hälfte spielen.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 14,
+    "y": 12,
+    "w": 72,
+    "h": 36
+   },
+   {
+    "type": "line",
+    "x1": 50,
+    "y1": 12,
+    "x2": 50,
+    "y2": 48,
+    "dashed": true
+   }
+  ],
+  "cones": [
+   {
+    "x": 50,
+    "y": 13.4,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 20,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 40,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 46.6,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 14,
+    "y": 30,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 31,
+    "y": 12,
+    "label": "3"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 31,
+    "y": 48,
+    "label": "4"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 48,
+    "y": 30,
+    "label": "5"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 32,
+    "y": 30,
+    "label": "9"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 86,
+    "y": 30,
+    "label": "6"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 6,
+    "y": 50,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 15.6,
+    "y": 30.6
+   },
+   {
+    "id": "c1",
+    "x": 8.5,
+    "y": 50.6
+   },
+   {
+    "id": "c2",
+    "x": 5,
+    "y": 53.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Ball halten",
+    "say": "Neon zwei spielt zu Neon drei. Gleichzeitig verschiebt Rot neun und greift Neon drei an.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       32.6,
+       12.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r9",
+      "to": [
+       33,
+       22
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Fest durchs Tor",
+    "say": "Neon drei sieht die Lücke und spielt fest durch das obere Tor zu Neon sechs in die andere Hälfte.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       84.4,
+       30.6
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Weiter in der anderen Hälfte",
+    "say": "Gleichzeitig rücken Neon drei, Neon vier und Neon fünf in die rechte Hälfte nach, Neon zwei bleibt als wartender Spieler zurück. Rot neun setzt sofort nach.",
+    "moves": [
+     {
+      "who": "n3",
+      "to": [
+       50,
+       27
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n3",
+      "to": [
+       69,
+       12
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n4",
+      "to": [
+       50,
+       34
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n4",
+      "to": [
+       69,
+       48
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n5",
+      "to": [
+       54,
+       30
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "r9",
+      "to": [
+       70,
+       30
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 14,
+    "y1": 58.6,
+    "x2": 86,
+    "y2": 58.6,
+    "text": "15 m"
+   },
+   {
+    "x1": 94,
+    "y1": 12,
+    "x2": 94,
+    "y2": 48,
+    "text": "7 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Im Rondo darf nur noch direkt gespielt werden.",
+   "title": "Nur ein Kontakt",
+   "text": "Team Neon spielt jetzt nur noch mit einem Kontakt. Das ist technisch schwerer und verlangt, dass jeder vorher schaut, offen steht und sofort weiß, wohin der Ball geht. Wird es zu leicht, kann das Feld auch kleiner werden.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 14,
+      "y": 30,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 31,
+      "y": 12,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 31,
+      "y": 48,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 48,
+      "y": 30,
+      "label": "5"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 32,
+      "y": 30,
+      "label": "9"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 86,
+      "y": 30,
+      "label": "6"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 6,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 15.6,
+      "y": 30.6
+     },
+     {
+      "id": "c1",
+      "x": 8.5,
+      "y": 50.6
+     },
+     {
+      "id": "c2",
+      "x": 5,
+      "y": 53.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Direkt weiter",
+      "say": "Neon zwei spielt zu Neon drei, und Neon drei spielt direkt weiter zu Neon fünf. Rot neun läuft hinterher.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         32.6,
+         12.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         46.4,
+         30.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "r9",
+        "to": [
+         36,
+         22
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Direkt durchs Tor",
+      "say": "Neon fünf legt direkt zu Neon vier, und Neon vier spielt sofort fest durch das untere Tor zu Neon sechs.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         32.6,
+         47.4
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         84.4,
+         30.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Durch das nächste Tor nur nach einem Prallpass.",
+   "title": "Prallpass vor dem Tor",
+   "text": "Durch das Tor, das am nächsten liegt, darf nicht direkt gespielt werden. Erst ein schneller Prallpass mit einem Mitspieler öffnet den Weg. Das macht es für Team Neon schwerer und verlangt gutes Zusammenspiel.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 14,
+      "y": 30,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 31,
+      "y": 12,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 31,
+      "y": 48,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 48,
+      "y": 30,
+      "label": "5"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 32,
+      "y": 30,
+      "label": "9"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 86,
+      "y": 30,
+      "label": "6"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 6,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 32.6,
+      "y": 47.4
+     },
+     {
+      "id": "c1",
+      "x": 8.5,
+      "y": 50.6
+     },
+     {
+      "id": "c2",
+      "x": 5,
+      "y": 53.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Prallpass",
+      "say": "Neon vier spielt zu Neon fünf und rückt etwas vor. Neon fünf lässt den Ball direkt zu Neon vier zurückprallen.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         46.4,
+         30.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n4",
+        "to": [
+         38,
+         47
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "b1",
+        "to": [
+         39.6,
+         47.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Jetzt durchs Tor",
+      "say": "Nach dem Prallpass darf Neon vier durch das untere Tor spielen und trifft Neon sechs in der anderen Hälfte.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         84.4,
+         30.6
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,778 @@
+{
+ "title": "Hütchen holen, dann spielen",
+ "code": "UE-112",
+ "kind": "Spielform",
+ "focuses": [
+  "Schnelligkeit",
+  "Zusammenspiel",
+  "Torschuss"
+ ],
+ "age_groups": [
+  "Bambini",
+  "F-Jugend"
+ ],
+ "duration_minutes": 10,
+ "players_min": 9,
+ "players_max": 11,
+ "field_size": "18 x 14 m",
+ "description": "Zwei Teams machen ein Wettrennen: Auf Zuruf sprintet aus jedem Team ein Kind los, holt ein Hütchen aus seiner Hälfte, bringt es zurück und klatscht das nächste Kind ab. Das Team, das zuerst alle Hütchen geholt hat, bekommt den Ball und den Floater dazu und greift mit fünf gegen vier auf die Minitore an. Danach beginnt eine neue Runde mit einem anderen Floater.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 14 Metern mit Mittellinie und zwei Minitoren an jedem Ende. In jeder Hälfte liegen vier Hütchen verteilt.",
+  "Verteilen: Zwei Teams mit je vier Kindern warten am Rand, Team Neon an der linken Hälfte, Team Rot an der rechten. Ein Floater wartet beim Trainer.",
+  "Ablauf: Auf Zuruf sprintet aus jedem Team ein Kind zu einem Hütchen seiner Hälfte, bringt es zurück und klatscht das nächste ab. Wer zuerst alle Hütchen hat, bekommt den Ball und den Floater und hat drei Angriffe oder zwei Minuten Zeit.",
+  "Wechsel: Danach werden die Hütchen neu verteilt, der Floater wechselt und die Teams werden gemischt. Die Punkte werden über alle Runden gezählt."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Schnell zu den Hütchen sprinten",
+  "Schlau laufen: Wer schnell ist, holt das weiteste Hütchen",
+  "Die Mitspieler vom Rand anfeuern",
+  "Im Spiel die Überzahl nutzen und genau statt fest schießen"
+ ],
+ "materials": [
+  "8 Hütchen in zwei Farben",
+  "4 Minitore",
+  "Mehrere Bälle beim Trainer",
+  "Leibchen in zwei Farben und eines für den Floater"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Hütchen holen, dann spielen. Erst ein Wettrennen um die Hütchen, dann spielt das schnellere Team mit Überzahl.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 14,
+    "y": 18,
+    "w": 72,
+    "h": 34
+   },
+   {
+    "type": "line",
+    "x1": 50,
+    "y1": 18,
+    "x2": 50,
+    "y2": 52,
+    "dashed": false
+   }
+  ],
+  "goals": [
+   {
+    "x": 14,
+    "y": 27,
+    "side": "left"
+   },
+   {
+    "x": 14,
+    "y": 43,
+    "side": "left"
+   },
+   {
+    "x": 86,
+    "y": 27,
+    "side": "right"
+   },
+   {
+    "x": 86,
+    "y": 43,
+    "side": "right"
+   }
+  ],
+  "cones": [
+   {
+    "x": 24,
+    "y": 40,
+    "color": "neon",
+    "id": "k1"
+   },
+   {
+    "x": 40,
+    "y": 26,
+    "color": "neon",
+    "id": "k2"
+   },
+   {
+    "x": 74,
+    "y": 42,
+    "color": "orange",
+    "id": "k5"
+   },
+   {
+    "x": 60,
+    "y": 26,
+    "color": "orange",
+    "id": "k6"
+   }
+  ],
+  "players": [
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 18,
+    "y": 9,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 27,
+    "y": 9,
+    "label": "3"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 36,
+    "y": 9,
+    "label": "4"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 45,
+    "y": 9,
+    "label": "5"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 55,
+    "y": 9,
+    "label": "6"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 64,
+    "y": 9,
+    "label": "7"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 73,
+    "y": 9,
+    "label": "8"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 82,
+    "y": 9,
+    "label": "9"
+   },
+   {
+    "id": "f",
+    "team": "t",
+    "x": 5,
+    "y": 30,
+    "label": "F"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 5,
+    "y": 46,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "c1",
+    "x": 7.5,
+    "y": 46.6
+   },
+   {
+    "id": "c2",
+    "x": 4,
+    "y": 49.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Auf Zuruf los",
+    "say": "Der Trainer ruft. Gleichzeitig sprinten Neon fünf und Rot sechs zu einem Hütchen in ihrer Hälfte und bringen es zu ihrem Team.",
+    "moves": [
+     {
+      "who": "n5",
+      "to": [
+       40,
+       23
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n5",
+      "to": [
+       45,
+       9
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k2",
+      "to": [
+       10,
+       13
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r6",
+      "to": [
+       60,
+       23
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r6",
+      "to": [
+       55,
+       9
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k6",
+      "to": [
+       90,
+       13
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Abklatschen, der Nächste",
+    "say": "Gleichzeitig laufen Neon vier und Rot sieben zum nächsten Hütchen. Neon vier ist schneller, und Team Neon hat zuerst alle Hütchen.",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       24,
+       37
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n4",
+      "to": [
+       36,
+       9
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       10,
+       16
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r7",
+      "to": [
+       74,
+       39
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "r7",
+      "to": [
+       64,
+       9
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k5",
+      "to": [
+       90,
+       16
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Neon spielt mit Floater",
+    "say": "Team Neon hat gewonnen. Alle laufen gleichzeitig ins Feld, der Floater spielt für Team Neon mit, und der Trainer spielt Neon drei den Ball zu. Jetzt greift Team Neon mit fünf gegen vier auf die rechten Minitore an.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       34,
+       26
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n3",
+      "to": [
+       44,
+       40
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n4",
+      "to": [
+       30,
+       48
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n5",
+      "to": [
+       54,
+       18
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r6",
+      "to": [
+       64,
+       26
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r7",
+      "to": [
+       74,
+       38
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r8",
+      "to": [
+       74,
+       18
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r9",
+      "to": [
+       84,
+       30
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "f",
+      "to": [
+       62,
+       46
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "c1",
+      "to": [
+       45.6,
+       40.6
+      ],
+      "type": "pass",
+      "delay": 0.6
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 14,
+    "y1": 58.6,
+    "x2": 86,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 94,
+    "y1": 18,
+    "x2": 94,
+    "y2": 52,
+    "text": "14 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Schlau laufen und anfeuern.",
+   "title": "Schlau laufen",
+   "text": "Das Team überlegt vorher, wer welches Hütchen holt: Das schnellste Kind läuft zum weitesten Hütchen. Wer zurückkommt, klatscht sofort ab, und alle am Rand feuern laut an. Das Gewinnerteam hat in allen Angriffen den Ball.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 18,
+      "y": 9,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 27,
+      "y": 9,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 36,
+      "y": 9,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 45,
+      "y": 9,
+      "label": "5"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 55,
+      "y": 9,
+      "label": "6"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 64,
+      "y": 9,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 73,
+      "y": 9,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 82,
+      "y": 9,
+      "label": "9"
+     },
+     {
+      "id": "f",
+      "team": "t",
+      "x": 5,
+      "y": 30,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 5,
+      "y": 46,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "c1",
+      "x": 7.5,
+      "y": 46.6
+     },
+     {
+      "id": "c2",
+      "x": 4,
+      "y": 49.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Das schnellste Kind läuft weit",
+      "say": "Neon zwei ist am schnellsten und sprintet zum weitesten Hütchen. Die anderen feuern laut an.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         24,
+         37
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n2",
+        "to": [
+         18,
+         9
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k1",
+        "to": [
+         10,
+         16
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Weiter zum nahen Hütchen",
+      "say": "Sofort klatscht Neon zwei Neon drei ab, und Neon drei holt das nahe Hütchen.",
+      "moves": [
+       {
+        "who": "n3",
+        "to": [
+         38,
+         23
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n3",
+        "to": [
+         27,
+         9
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k2",
+        "to": [
+         10,
+         13
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Die Überzahl nutzen und den freien Spieler finden.",
+   "title": "Den Freien finden",
+   "text": "Mit fünf gegen vier ist immer ein Spieler frei. Team Neon lockt die Gegner auf eine Seite und spielt dann schnell zum freien Spieler, der in Ruhe abschließt. Genauigkeit ist wichtiger als Kraft.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 34,
+      "y": 26,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 44,
+      "y": 40,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 30,
+      "y": 48,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 54,
+      "y": 18,
+      "label": "5"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 64,
+      "y": 26,
+      "label": "6"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 74,
+      "y": 38,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 74,
+      "y": 18,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 84,
+      "y": 30,
+      "label": "9"
+     },
+     {
+      "id": "f",
+      "team": "t",
+      "x": 62,
+      "y": 46,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 5,
+      "y": 46,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "g",
+      "x": 45.6,
+      "y": 40.6
+     },
+     {
+      "id": "c1",
+      "x": 7.5,
+      "y": 46.6
+     },
+     {
+      "id": "c2",
+      "x": 4,
+      "y": 49.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Gegner anlocken",
+      "say": "Neon drei spielt zu Neon fünf. Gleichzeitig verschieben Rot sechs, Rot sieben und Rot acht zu ihm.",
+      "moves": [
+       {
+        "who": "g",
+        "to": [
+         52.4,
+         18.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r6",
+        "to": [
+         60,
+         22
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "r8",
+        "to": [
+         66,
+         15
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "r7",
+        "to": [
+         70,
+         30
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Der Freie schließt ab",
+      "say": "Unten ist der Floater frei. Neon fünf spielt zu ihm, er nimmt den Ball mit und schießt genau ins Minitor. Das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "g",
+        "to": [
+         60.4,
+         46.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "f",
+        "to": [
+         70,
+         48
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "g"
+       },
+       {
+        "who": "g",
+        "to": [
+         85.5,
+         43
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "cones": [
+     {
+      "x": 10,
+      "y": 16,
+      "color": "neon",
+      "id": "k1"
+     },
+     {
+      "x": 10,
+      "y": 13,
+      "color": "neon",
+      "id": "k2"
+     },
+     {
+      "x": 90,
+      "y": 16,
+      "color": "orange",
+      "id": "k5"
+     },
+     {
+      "x": 90,
+      "y": 13,
+      "color": "orange",
+      "id": "k6"
+     }
+    ]
+   }
+  }
+ ]
+}

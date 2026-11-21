@@ -1,0 +1,563 @@
+{
+ "title": "Stürmer löst sich und trifft",
+ "code": "UE-113",
+ "kind": "Übungsform",
+ "focuses": [
+  "Bewegung",
+  "1 gegen 1",
+  "Torschuss"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "duration_minutes": 15,
+ "players_min": 5,
+ "players_max": 8,
+ "field_size": "27 x 18 m",
+ "description": "Ein Stürmer spielt einen Prallpass und setzt sich sofort ab, um den Ball auf dem hinteren Fuß anzunehmen. Ein Verteidiger kommt von der Seite und greift an. Im eins gegen eins muss der Stürmer seinen Körper richtig stellen, einen Winkel finden und ins Minitor abschließen.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 27 mal 18 Metern mit einem Minitor rechts. Ein Hütchen am unteren Rand zeigt, wohin sich der Stürmer absetzt.",
+  "Verteilen: Zwei Passgeber von Team Neon links, ein Stürmer von Team Neon in der Mitte, zwei Verteidiger von Team Rot warten oben. Der Trainer steht mit Bällen im Feld.",
+  "Ablauf: Prallpass vom Passgeber zum Stürmer und zurück. Der Stürmer setzt sich ab, bekommt den Ball in den Lauf und spielt eins gegen eins gegen den Verteidiger, der von oben kommt, bis zum Abschluss.",
+  "Wechsel: Die Spieler rotieren im Uhrzeigersinn, also Passgeber, Stürmer, Verteidiger. Nach einigen Durchgängen wird die Seite gewechselt, damit beide Füße drankommen."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Offen stehen, um anzunehmen und nach vorn zu gehen",
+  "Auf dem hinteren Fuß annehmen, weg vom Verteidiger in den freien Raum",
+  "Vor der Annahme umschauen und erkennen, wie der Verteidiger kommt",
+  "Je nach Laufweg des Verteidigers innen oder außen vorbei und genau abschließen"
+ ],
+ "materials": [
+  "1 Minitor",
+  "Hütchen für Feld und Linien",
+  "Mehrere Bälle beim Trainer",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Stürmer löst sich und trifft. Prallpass, absetzen, auf dem hinteren Fuß annehmen und im eins gegen eins abschließen.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 10,
+    "y": 12,
+    "w": 80,
+    "h": 40
+   },
+   {
+    "type": "line",
+    "x1": 42,
+    "y1": 12,
+    "x2": 42,
+    "y2": 52,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 58,
+    "y1": 12,
+    "x2": 58,
+    "y2": 52,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 10,
+    "y1": 32,
+    "x2": 90,
+    "y2": 32,
+    "dashed": false
+   }
+  ],
+  "cones": [
+   {
+    "x": 48,
+    "y": 52,
+    "color": "orange"
+   }
+  ],
+  "goals": [
+   {
+    "x": 90,
+    "y": 32,
+    "side": "right"
+   }
+  ],
+  "players": [
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 29,
+    "y": 32,
+    "label": "8"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 20,
+    "y": 32,
+    "label": "7"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 48,
+    "y": 32,
+    "label": "9"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 48,
+    "y": 6,
+    "label": "11"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 39,
+    "y": 6,
+    "label": "10"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 32,
+    "y": 48,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 30.6,
+    "y": 32.6
+   },
+   {
+    "id": "c1",
+    "x": 34.5,
+    "y": 48.6
+   },
+   {
+    "id": "c2",
+    "x": 31,
+    "y": 51.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Prallpass",
+    "say": "Neon acht spielt zu Neon neun, und Neon neun lässt den Ball direkt zurückprallen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       46.4,
+       32.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       30.6,
+       32.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Absetzen und anspielen",
+    "say": "Neon neun setzt sich sofort nach unten ab. Gleichzeitig startet Rot elf von oben, und Neon acht spielt Neon neun in den Lauf.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       48,
+       47
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r11",
+      "to": [
+       48,
+       24
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "b1",
+      "to": [
+       49.6,
+       47.6
+      ],
+      "type": "pass",
+      "delay": 0.5
+     }
+    ]
+   },
+   {
+    "label": "Eins gegen eins und Abschluss",
+    "say": "Neon neun nimmt den Ball auf dem hinteren Fuß an, zieht weg von Rot elf und schießt ins Minitor. Das gibt einen Punkt für Neon neun.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       64,
+       46
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n9",
+      "to": [
+       70,
+       40
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "r11",
+      "to": [
+       60,
+       34
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "b1",
+      "to": [
+       89.5,
+       32
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 10,
+    "y1": 58.6,
+    "x2": 90,
+    "y2": 58.6,
+    "text": "27 m"
+   },
+   {
+    "x1": 96,
+    "y1": 12,
+    "x2": 96,
+    "y2": 52,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Vor der Annahme umschauen und den Verteidiger lesen.",
+   "title": "Innen oder außen?",
+   "text": "Bevor der Ball kommt, schaut der Stürmer über die Schulter: Wie kommt der Verteidiger? Läuft er innen an, geht der Stürmer außen vorbei. Läuft er außen an, geht es innen vorbei. Angenommen wird immer auf dem hinteren Fuß, damit der erste Kontakt schon vom Verteidiger wegführt.",
+   "board": {
+    "players": [
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 29,
+      "y": 32,
+      "label": "8"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 20,
+      "y": 32,
+      "label": "7"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 48,
+      "y": 47,
+      "label": "9"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 48,
+      "y": 24,
+      "label": "11"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 39,
+      "y": 6,
+      "label": "10"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 32,
+      "y": 48,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 30.6,
+      "y": 32.6
+     },
+     {
+      "id": "c1",
+      "x": 34.5,
+      "y": 48.6
+     },
+     {
+      "id": "c2",
+      "x": 31,
+      "y": 51.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Umschauen",
+      "say": "Neon acht spielt in den Lauf. Gleichzeitig schaut Neon neun über die Schulter und sieht, dass Rot elf innen anläuft.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         49.6,
+         47.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r11",
+        "to": [
+         52,
+         38
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Außen vorbei",
+      "say": "Neon neun nimmt den Ball auf dem hinteren Fuß außen mit, geht an Rot elf vorbei und schießt genau ins Minitor. Das gibt einen Punkt für Neon neun.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         62,
+         50
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n9",
+        "to": [
+         74,
+         44
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         89.5,
+         33
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Der Stürmer darf einen Doppelpass mit dem Passgeber spielen.",
+   "title": "Doppelpass oder allein",
+   "text": "Jetzt entscheidet der Stürmer: Steht der Verteidiger weit weg, nimmt er an, dreht auf und geht allein. Steht der Verteidiger eng, legt er den Ball zum Passgeber ab und startet hinter den Verteidiger, um den Ball zurückzubekommen.",
+   "board": {
+    "players": [
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 29,
+      "y": 32,
+      "label": "8"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 20,
+      "y": 32,
+      "label": "7"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 48,
+      "y": 46,
+      "label": "9"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 48,
+      "y": 26,
+      "label": "11"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 39,
+      "y": 6,
+      "label": "10"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 32,
+      "y": 48,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 30.6,
+      "y": 32.6
+     },
+     {
+      "id": "c1",
+      "x": 34.5,
+      "y": 48.6
+     },
+     {
+      "id": "c2",
+      "x": 31,
+      "y": 51.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Verteidiger steht eng",
+      "say": "Neon acht spielt zu Neon neun. Gleichzeitig läuft Rot elf ganz eng heran.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         46.4,
+         46.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r11",
+        "to": [
+         48,
+         36
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Doppelpass hinter den Verteidiger",
+      "say": "Neon acht kommt entgegen, Neon neun legt direkt ab und startet hinter Rot elf. Neon acht spielt ihm den Ball sofort zurück in den Lauf.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         36,
+         40
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         37.6,
+         40.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       },
+       {
+        "who": "n9",
+        "to": [
+         60,
+         42
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         61.6,
+         42.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Abschluss",
+      "say": "Neon neun nimmt den Ball mit und schießt ins Minitor. Das gibt einen Punkt für Neon neun.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         70,
+         40
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         89.5,
+         32
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
