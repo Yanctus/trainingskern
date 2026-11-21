@@ -1,0 +1,518 @@
+{
+ "title": "Selbst gehen oder abspielen",
+ "code": "UE-124",
+ "kind": "Spielform",
+ "focuses": [
+  "1 gegen 1",
+  "Verteidigen",
+  "Torschuss"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "duration_minutes": 15,
+ "players_min": 8,
+ "players_max": 12,
+ "field_size": "18 x 14 m",
+ "description": "Ein Angreifer von Team Neon bekommt den Ball und muss sich entscheiden: Er geht selbst ins eins gegen eins und schießt aufs rechte Minitor, das gibt zwei Punkte. Oder er spielt quer zum Mitspieler in der anderen Hälfte, der auf zwei Minitore spielt, das gibt einen Punkt. Der Verteidiger von Team Rot versucht, so schnell und eng zu verteidigen, dass der Angreifer nicht selbst gehen will.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 14 Metern, in zwei Hälften geteilt. Rechts ein Minitor, links zwei Minitore.",
+  "Verteilen: Team Neon und Team Rot starten an verschiedenen Hütchen rund um das Feld, wie im Bild. Der Trainer hat die Bälle.",
+  "Ablauf: Der Pass von unten links zum Angreifer ist das Startsignal für den Verteidiger. Der Angreifer geht selbst aufs rechte Minitor oder spielt quer zum Mitspieler, der links eins gegen eins auf zwei Minitore spielt.",
+  "Wechsel: Wenn jeder einmal dran war, gewinnt das Team mit den meisten Punkten."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Den Ball verlagern, um den Verteidiger aus dem Gleichgewicht zu bringen",
+  "Den Mitspieler sehen und mit ihm zusammenspielen",
+  "Schnell Risiko und Lohn abwägen",
+  "Als Verteidiger schnell und eng Druck machen, damit der Angreifer abspielen muss oder einen Fehler macht"
+ ],
+ "materials": [
+  "3 Minitore",
+  "Hütchen für Feld und Startplätze",
+  "Mehrere Bälle beim Trainer",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Selbst gehen oder abspielen. Wer selbst trifft, holt zwei Punkte, über den Mitspieler gibt es einen.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 10,
+    "y": 8,
+    "w": 80,
+    "h": 44
+   },
+   {
+    "type": "line",
+    "x1": 50,
+    "y1": 8,
+    "x2": 50,
+    "y2": 52,
+    "dashed": true
+   }
+  ],
+  "cones": [
+   {
+    "x": 24,
+    "y": 52,
+    "color": "orange"
+   },
+   {
+    "x": 70,
+    "y": 8,
+    "color": "orange"
+   },
+   {
+    "x": 90,
+    "y": 12,
+    "color": "orange"
+   }
+  ],
+  "goals": [
+   {
+    "x": 90,
+    "y": 30,
+    "side": "right"
+   },
+   {
+    "x": 10,
+    "y": 21,
+    "side": "left"
+   },
+   {
+    "x": 10,
+    "y": 38,
+    "side": "left"
+   }
+  ],
+  "players": [
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 22,
+    "y": 55,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 68,
+    "y": 4,
+    "label": "3"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 34,
+    "y": 22,
+    "label": "4"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 93,
+    "y": 16,
+    "label": "7"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 24,
+    "y": 38,
+    "label": "8"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 40,
+    "y": 3,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 23.6,
+    "y": 55.6
+   },
+   {
+    "id": "c1",
+    "x": 42.5,
+    "y": 3.6
+   }
+  ],
+  "steps": [
+   {
+    "label": "Anspiel",
+    "say": "Neon zwei spielt diagonal zu Neon drei, der in die rechte Hälfte läuft. Der Pass ist das Signal für Rot sieben.",
+    "moves": [
+     {
+      "who": "n3",
+      "to": [
+       66,
+       12
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       67.6,
+       12.6
+      ],
+      "type": "pass",
+      "delay": 0.3
+     },
+     {
+      "who": "r7",
+      "to": [
+       78,
+       20
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     }
+    ]
+   },
+   {
+    "label": "Selbst gehen",
+    "say": "Neon drei entscheidet sich für das eins gegen eins und dribbelt auf Rot sieben zu. Rot sieben kommt heraus.",
+    "moves": [
+     {
+      "who": "n3",
+      "to": [
+       70,
+       20
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "r7",
+      "to": [
+       76,
+       23
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Vorbei und Abschluss",
+    "say": "Neon drei zieht nach unten an Rot sieben vorbei und schießt ins rechte Minitor. Das gibt zwei Punkte für Team Neon.",
+    "moves": [
+     {
+      "who": "n3",
+      "to": [
+       72,
+       34
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n3",
+      "to": [
+       78,
+       38
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       89.5,
+       31
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 10,
+    "y1": 58.6,
+    "x2": 90,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 97,
+    "y1": 8,
+    "x2": 97,
+    "y2": 52,
+    "text": "14 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Der Verteidiger macht schnell und eng Druck.",
+   "title": "Eng verteidigen",
+   "text": "Kommt der Verteidiger schnell und eng an den Angreifer heran, traut sich dieser das eins gegen eins nicht zu und spielt lieber quer. Dann gibt es höchstens noch einen Punkt. Für den Verteidiger ist das schon ein kleiner Sieg.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 22,
+      "y": 55,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 66,
+      "y": 12,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 34,
+      "y": 22,
+      "label": "4"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 76,
+      "y": 20,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 24,
+      "y": 38,
+      "label": "8"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 40,
+      "y": 3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "g",
+      "x": 67.6,
+      "y": 12.6
+     },
+     {
+      "id": "b1",
+      "x": 23.6,
+      "y": 55.6
+     },
+     {
+      "id": "c1",
+      "x": 42.5,
+      "y": 3.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Eng heran",
+      "say": "Rot sieben läuft schnell und eng an Neon drei heran.",
+      "moves": [
+       {
+        "who": "r7",
+        "to": [
+         70,
+         16
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Quer zum Mitspieler",
+      "say": "Neon drei traut sich nicht und spielt quer zu Neon vier in die andere Hälfte. Gleichzeitig kommt Rot acht heraus.",
+      "moves": [
+       {
+        "who": "g",
+        "to": [
+         35.6,
+         22.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r8",
+        "to": [
+         28,
+         30
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Eins gegen eins links",
+      "say": "Neon vier dribbelt an Rot acht vorbei und trifft ins obere Minitor. Das gibt nur einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         26,
+         16
+        ],
+        "type": "dribbling",
+        "ball": "g"
+       },
+       {
+        "who": "g",
+        "to": [
+         10.5,
+         21
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Übertreibt der Verteidiger, wird schnell gedreht.",
+   "title": "Schnell drehen",
+   "text": "Läuft der Verteidiger zu stürmisch heran, lockt der Angreifer ihn noch näher und dreht dann blitzschnell ab. So entkommt er dem Druck und schließt ins Minitor ab. Das gibt zwei Punkte.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 22,
+      "y": 55,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 60,
+      "y": 26,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 34,
+      "y": 22,
+      "label": "4"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 69,
+      "y": 30,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 24,
+      "y": 38,
+      "label": "8"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 40,
+      "y": 3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "g",
+      "x": 61.6,
+      "y": 26.6
+     },
+     {
+      "id": "b1",
+      "x": 23.6,
+      "y": 55.6
+     },
+     {
+      "id": "c1",
+      "x": 42.5,
+      "y": 3.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Verteidiger übertreibt",
+      "say": "Rot sieben stürmt auf Neon drei zu und kommt zu nah heran.",
+      "moves": [
+       {
+        "who": "r7",
+        "to": [
+         63,
+         28
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Drehen und Abschluss",
+      "say": "Neon drei dreht scharf weg, lässt Rot sieben stehen und schießt ins Minitor. Das gibt zwei Punkte für Team Neon.",
+      "moves": [
+       {
+        "who": "n3",
+        "to": [
+         58,
+         34
+        ],
+        "type": "dribbling",
+        "ball": "g"
+       },
+       {
+        "who": "n3",
+        "to": [
+         70,
+         42
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "g"
+       },
+       {
+        "who": "g",
+        "to": [
+         89.5,
+         33
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

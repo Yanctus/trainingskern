@@ -1,0 +1,523 @@
+{
+ "title": "Prallen lassen und abdrehen",
+ "code": "UE-125",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Bewegung",
+  "Ballannahme"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "duration_minutes": 15,
+ "players_min": 5,
+ "players_max": 8,
+ "field_size": "18 x 14 m",
+ "description": "In der Mitte steht ein Viereck aus Hütchen, an beiden Enden ein Starthütchen. Der erste Spieler passt zum Spieler im Viereck, der den Ball prallen lässt und aus dem Viereck abdreht. Der Spieler von der anderen Seite kommt ins Viereck, nimmt den nächsten Pass an, legt zum abgedrehten Spieler ab, und dieser spielt durch zum Endspieler. Dann geht es von der anderen Seite weiter.",
+ "organisation": [
+  "Aufbauen: Ein Feld von etwa 18 mal 14 Metern mit einem Viereck aus vier Hütchen in der Mitte und je einem Starthütchen an beiden Enden.",
+  "Verteilen: An jedem Starthütchen zwei Spieler von Team Neon, ein Spieler steht im Viereck. Der Trainer hat Bälle am Rand.",
+  "Ablauf: Pass ins Viereck, Prallpass zurück, der Spieler dreht aus dem Viereck ab. Der Spieler von der anderen Seite läuft ins Viereck, bekommt den Pass und legt zum abgedrehten Spieler ab, der durch zum Endspieler spielt.",
+  "Wechsel: Jeder folgt seinem Pass auf die nächste Position. Danach beginnt der Ablauf von der anderen Seite."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Genau und mit dem richtigen Tempo passen",
+  "Schnell ins Viereck kommen, um anzunehmen",
+  "Wo es geht mit einem Kontakt spielen, mit beiden Füßen",
+  "Im Winkel von etwa 45 Grad abdrehen und vor jedem Pass sprechen"
+ ],
+ "materials": [
+  "6 orange Hütchen",
+  "Mehrere Bälle"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Prallen lassen und abdrehen. Kurze, schnelle Kombinationen mit einem oder zwei Kontakten.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 14,
+    "y": 8,
+    "w": 72,
+    "h": 44
+   },
+   {
+    "type": "rect",
+    "x": 40,
+    "y": 22,
+    "w": 20,
+    "h": 16,
+    "dashed": true
+   }
+  ],
+  "cones": [
+   {
+    "x": 40,
+    "y": 22,
+    "color": "orange"
+   },
+   {
+    "x": 60,
+    "y": 22,
+    "color": "orange"
+   },
+   {
+    "x": 40,
+    "y": 38,
+    "color": "orange"
+   },
+   {
+    "x": 60,
+    "y": 38,
+    "color": "orange"
+   },
+   {
+    "x": 27,
+    "y": 35,
+    "color": "orange"
+   },
+   {
+    "x": 73,
+    "y": 35,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 24,
+    "y": 30,
+    "label": "10"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 15,
+    "y": 30,
+    "label": "11"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 46,
+    "y": 28,
+    "label": "8"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 76,
+    "y": 30,
+    "label": "9"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 85,
+    "y": 30,
+    "label": "4"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 88,
+    "y": 56,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 25.6,
+    "y": 30.6
+   },
+   {
+    "id": "c1",
+    "x": 90.5,
+    "y": 56.6
+   }
+  ],
+  "steps": [
+   {
+    "label": "Prallpass und abdrehen",
+    "say": "Neon zehn spielt zu Neon acht ins Viereck. Neon acht lässt den Ball direkt zurückprallen und dreht schräg aus dem Viereck ab.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       44.4,
+       28.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       25.6,
+       30.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       44,
+       16
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Ins Viereck kommen",
+    "say": "Gleichzeitig läuft Neon neun von der anderen Seite ins Viereck, und Neon zehn spielt ihn an.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       55,
+       30
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       53.4,
+       30.6
+      ],
+      "type": "pass",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "Ablegen und durchspielen",
+    "say": "Neon neun legt zu Neon acht ab. Neon acht nimmt den Ball mit und spielt durch zu Neon vier.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       45.6,
+       16.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n8",
+      "to": [
+       49,
+       12
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       83.4,
+       30.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 14,
+    "y1": 58.6,
+    "x2": 86,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 94,
+    "y1": 8,
+    "x2": 94,
+    "y2": 52,
+    "text": "14 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Die Ablage so spielen, dass direkt durchgespielt werden kann.",
+   "title": "Gute Ablage",
+   "text": "Die Ablage kommt mit dem richtigen Tempo genau in den Lauf des Mitspielers. Dann kann er den Ball direkt mit dem ersten Kontakt durchspielen. Das macht die Kombination schneller und schwerer zu verteidigen.",
+   "board": {
+    "players": [
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 24,
+      "y": 30,
+      "label": "10"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 15,
+      "y": 30,
+      "label": "11"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 44,
+      "y": 16,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 55,
+      "y": 30,
+      "label": "9"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 85,
+      "y": 30,
+      "label": "4"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 88,
+      "y": 56,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "g",
+      "x": 53.4,
+      "y": 30.6
+     },
+     {
+      "id": "b1",
+      "x": 25.6,
+      "y": 30.6
+     },
+     {
+      "id": "c1",
+      "x": 90.5,
+      "y": 56.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Ablage in den Lauf",
+      "say": "Neon acht läuft an, und Neon neun legt ihm den Ball genau in den Lauf.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         49,
+         12
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "g",
+        "to": [
+         50.6,
+         12.6
+        ],
+        "type": "pass",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Direkt durch",
+      "say": "Neon acht spielt den Ball mit dem ersten Kontakt durch zu Neon vier.",
+      "moves": [
+       {
+        "who": "g",
+        "to": [
+         83.4,
+         30.6
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Zwei Doppelpässe kommen dazu.",
+   "title": "Zwei Doppelpässe",
+   "text": "Jetzt werden zwei Doppelpässe in den Ablauf eingebaut, einer auf jeder Seite des Vierecks. So gibt es mehr Ballkontakte und mehr Pässe, und die Spieler müssen ständig in Bewegung bleiben und sich gut abstimmen.",
+   "board": {
+    "players": [
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 24,
+      "y": 30,
+      "label": "10"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 15,
+      "y": 30,
+      "label": "11"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 46,
+      "y": 14,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 55,
+      "y": 30,
+      "label": "9"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 85,
+      "y": 30,
+      "label": "4"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 88,
+      "y": 56,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 25.6,
+      "y": 30.6
+     },
+     {
+      "id": "c1",
+      "x": 90.5,
+      "y": 56.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Erster Doppelpass",
+      "say": "Neon zehn spielt zu Neon acht und startet. Neon acht spielt den Ball direkt in seinen Lauf zurück.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         44.4,
+         14.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n10",
+        "to": [
+         32,
+         20
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         33.6,
+         20.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Pass ins Viereck",
+      "say": "Neon zehn dribbelt kurz an und spielt zu Neon neun ins Viereck.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         36,
+         30
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         53.4,
+         30.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Zweiter Doppelpass",
+      "say": "Neon neun spielt zu Neon vier und startet. Neon vier spielt ihn direkt wieder an.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         83.4,
+         30.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n9",
+        "to": [
+         68,
+         24
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         69.6,
+         24.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

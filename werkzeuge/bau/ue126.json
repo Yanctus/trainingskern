@@ -1,0 +1,555 @@
+{
+ "title": "In die Zone und herausdrehen",
+ "code": "UE-126",
+ "kind": "Spielform",
+ "focuses": [
+  "Dribbling",
+  "1 gegen 1",
+  "Torschuss"
+ ],
+ "age_groups": [
+  "Bambini",
+  "F-Jugend"
+ ],
+ "duration_minutes": 10,
+ "players_min": 8,
+ "players_max": 10,
+ "field_size": "23 x 18 m",
+ "description": "Zwei Teams spielen fünf gegen fünf auf ein Feld mit einer Endzone an jedem Ende. Das Team am Ball versucht, dass ein Kind mit Ball in eine Endzone dribbelt und sich schnell wieder herausdreht, obwohl ein Gegner folgen darf. Danach greift es das andere Ende an und schießt aufs Minitor.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 23 mal 18 Metern mit einer Endzone von etwa 4,5 Metern an jedem Ende und einem Minitor links und rechts.",
+  "Verteilen: Zwei Teams mit je fünf Kindern, Team Neon und Team Rot. Der Trainer hat Bälle am Rand.",
+  "Ablauf: Team Neon will mit einem Kind in eine Endzone dribbeln und sich schnell wieder herausdrehen. In die Endzone darf nur ein Gegner folgen. Danach geht es zum anderen Ende, und dort wird aufs Minitor geschossen.",
+  "Wechsel: Für das Herausdrehen gibt es einen Punkt, für das Tor danach zwei Punkte. Dann greift Team Rot an."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "In der Endzone schnell drehen, um dem Gegner zu entkommen",
+  "Vor dem Drehen über die Schulter schauen und in die andere Richtung drehen",
+  "Mutig dribbeln und das eins gegen eins suchen",
+  "Genau aufs Tor schießen, miteinander sprechen und sich verteilen"
+ ],
+ "materials": [
+  "2 Minitore",
+  "Hütchen für Feld und Endzonen",
+  "Mehrere Bälle beim Trainer",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "In die Zone und herausdrehen. Erst in der Endzone drehen, dann am anderen Ende aufs Tor schießen.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 10,
+    "y": 8,
+    "w": 80,
+    "h": 44
+   },
+   {
+    "type": "zone",
+    "x": 10,
+    "y": 8,
+    "w": 16,
+    "h": 44
+   },
+   {
+    "type": "zone",
+    "x": 74,
+    "y": 8,
+    "w": 16,
+    "h": 44
+   }
+  ],
+  "goals": [
+   {
+    "x": 10,
+    "y": 30,
+    "side": "left"
+   },
+   {
+    "x": 90,
+    "y": 30,
+    "side": "right"
+   }
+  ],
+  "players": [
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 24,
+    "y": 26,
+    "label": "9"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 24,
+    "y": 44,
+    "label": "2"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 33,
+    "y": 35,
+    "label": "3"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 42,
+    "y": 18,
+    "label": "7"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 42,
+    "y": 46,
+    "label": "8"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 51,
+    "y": 32,
+    "label": "6"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 56,
+    "y": 16,
+    "label": "11"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 66,
+    "y": 26,
+    "label": "5"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 60,
+    "y": 46,
+    "label": "10"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 70,
+    "y": 42,
+    "label": "4"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 70,
+    "y": 2,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 71.6,
+    "y": 42.6
+   },
+   {
+    "id": "c1",
+    "x": 72.5,
+    "y": 2.6
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pass nach vorn",
+    "say": "Neon vier spielt einen langen Pass zu Neon sieben.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       43.6,
+       18.6
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "In die Endzone und raus",
+    "say": "Neon sieben dribbelt in die linke Endzone. Rot drei folgt ihm, doch Neon sieben dreht scharf und dribbelt wieder heraus. Das gibt einen Punkt für Team Neon.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       22,
+       16
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "r3",
+      "to": [
+       26,
+       22
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n7",
+      "to": [
+       30,
+       11
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Am anderen Ende abschließen",
+    "say": "Jetzt spielt Neon sieben weit zu Neon fünf, und Neon fünf schießt ins rechte Minitor. Das gibt zwei Punkte für Team Neon.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       64.4,
+       26.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       89.5,
+       31
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 10,
+    "y1": 58.6,
+    "x2": 90,
+    "y2": 58.6,
+    "text": "23 m"
+   },
+   {
+    "x1": 96,
+    "y1": 8,
+    "x2": 96,
+    "y2": 52,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Scharf drehen und den Ball abschirmen.",
+   "title": "Scharf drehen",
+   "text": "In der Endzone dreht das Kind mit Ball scharf und hält den Ball eng am Fuß. Den Körper stellt es zwischen Ball und Gegner, damit der Gegner nicht an den Ball kommt. Dann geht es schnell aus der Zone in den freien Raum.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 32,
+      "y": 42,
+      "label": "9"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 18,
+      "y": 46,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 29,
+      "y": 24,
+      "label": "3"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 20,
+      "y": 16,
+      "label": "7"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 42,
+      "y": 46,
+      "label": "8"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 51,
+      "y": 32,
+      "label": "6"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 56,
+      "y": 16,
+      "label": "11"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 66,
+      "y": 26,
+      "label": "5"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 60,
+      "y": 46,
+      "label": "10"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 70,
+      "y": 42,
+      "label": "4"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 70,
+      "y": 2,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "g",
+      "x": 21.6,
+      "y": 16.6
+     },
+     {
+      "id": "c1",
+      "x": 72.5,
+      "y": 2.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Gegner kommt",
+      "say": "Rot drei kommt in die Endzone und greift Neon sieben an. Neon sieben stellt seinen Körper dazwischen.",
+      "moves": [
+       {
+        "who": "r3",
+        "to": [
+         25,
+         20
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Drehen und raus",
+      "say": "Neon sieben dreht scharf weg und dribbelt aus der Zone in den freien Raum. Das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         17,
+         11
+        ],
+        "type": "dribbling",
+        "ball": "g"
+       },
+       {
+        "who": "n7",
+        "to": [
+         32,
+         9
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "g"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Vor dem Drehen über die Schulter schauen.",
+   "title": "Erst schauen, dann drehen",
+   "text": "Bevor das Kind in der Endzone dreht, schaut es über die Schulter. So sieht es, auf welcher Seite der Gegner kommt, und dreht in die andere Richtung. Dort ist Platz, und der Ball bleibt sicher.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 42,
+      "y": 10,
+      "label": "9"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 12,
+      "y": 48,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 21,
+      "y": 40,
+      "label": "3"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 32,
+      "y": 28,
+      "label": "7"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 42,
+      "y": 46,
+      "label": "8"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 51,
+      "y": 32,
+      "label": "6"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 56,
+      "y": 16,
+      "label": "11"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 66,
+      "y": 26,
+      "label": "5"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 60,
+      "y": 46,
+      "label": "10"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 70,
+      "y": 42,
+      "label": "4"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 70,
+      "y": 2,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "g",
+      "x": 33.6,
+      "y": 28.6
+     },
+     {
+      "id": "c1",
+      "x": 72.5,
+      "y": 2.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Schulterblick",
+      "say": "Neon sieben dribbelt in die Endzone und schaut über die Schulter. Rot drei kommt von unten.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         22,
+         28
+        ],
+        "type": "dribbling",
+        "ball": "g"
+       },
+       {
+        "who": "r3",
+        "to": [
+         21,
+         35
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "In die andere Richtung",
+      "say": "Neon sieben dreht nach oben weg, also auf die Seite ohne Gegner, und dribbelt aus der Zone. Das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         24,
+         18
+        ],
+        "type": "dribbling",
+        "ball": "g"
+       },
+       {
+        "who": "n7",
+        "to": [
+         32,
+         20
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "g"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
