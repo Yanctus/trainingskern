@@ -1,0 +1,780 @@
+{
+ "title": "Das große Autorennen",
+ "code": "UE-083",
+ "kind": "Übungsform",
+ "focuses": [
+  "Schnelligkeit",
+  "Dribbling",
+  "Torschuss"
+ ],
+ "age_groups": [
+  "Bambini",
+  "F-Jugend"
+ ],
+ "duration_minutes": 10,
+ "players_min": 4,
+ "players_max": 12,
+ "field_size": "18 x 14 m",
+ "description": "Ein Wettrennen eins gegen eins auf zwei gleichen Strecken. Die Kinder hüpfen durch Reifen, laufen um eine Stange, holen sich den Ball, dribbeln um die letzte Stange bis zum Hütchen und schießen aufs Minitor in der Mitte. Wer zuerst trifft, gewinnt das Rennen. Treffen beide nicht, holen sie schnell den Ball und schießen noch einmal.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 14 Metern mit zwei gleichen Strecken nebeneinander: je drei Reifen, eine Stange, ein Ball und eine zweite Stange. In der Mitte ein Minitor, davor ein Hütchen.",
+  "Verteilen: Zwei Mannschaften, jede stellt sich an den Start ihrer Strecke.",
+  "Ablauf: Auf das Startzeichen rennen die beiden Ersten gleichzeitig los: durch die Reifen hüpfen, um die Stange laufen, den Ball holen, um die letzte Stange dribbeln und am Hütchen aufs Minitor schießen.",
+  "Sieger: Wer zuerst trifft, holt einen Punkt für seine Mannschaft. Die Mannschaft mit den meisten Siegen gewinnt. Zusatzpunkte gibt es fürs laute Anfeuern, und Motorengeräusche sind ausdrücklich erlaubt."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Sauber und schnell durch die Reifen hüpfen",
+  "Eng um die Stange laufen, zur Not mit der Hand an der Stange",
+  "Den Ball beim Dribbeln eng am Fuß führen",
+  "Genau schießen statt hetzen, und die Mitspieler feuern laut an"
+ ],
+ "materials": [
+  "6 Reifen",
+  "4 Stangen",
+  "1 Minitor",
+  "1 Hütchen",
+  "Bälle für jede Strecke"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Das große Autorennen. Zwei Kinder rennen gleichzeitig, und wer zuerst ins Minitor trifft, gewinnt.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 14,
+    "y": 6,
+    "w": 72,
+    "h": 48
+   },
+   {
+    "type": "circle",
+    "x": 20.3,
+    "y": 13.1,
+    "r": 3
+   },
+   {
+    "type": "circle",
+    "x": 26.6,
+    "y": 11.7,
+    "r": 3
+   },
+   {
+    "type": "circle",
+    "x": 32.1,
+    "y": 15.1,
+    "r": 3
+   },
+   {
+    "type": "circle",
+    "x": 20.3,
+    "y": 46.9,
+    "r": 3
+   },
+   {
+    "type": "circle",
+    "x": 26.6,
+    "y": 48.3,
+    "r": 3
+   },
+   {
+    "type": "circle",
+    "x": 32.1,
+    "y": 44.9,
+    "r": 3
+   }
+  ],
+  "cones": [
+   {
+    "x": 47.4,
+    "y": 13.4,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 74.8,
+    "y": 13.4,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 47.4,
+    "y": 46.6,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 74.8,
+    "y": 46.6,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 79,
+    "y": 30,
+    "color": "orange"
+   }
+  ],
+  "goals": [
+   {
+    "x": 53.3,
+    "y": 30,
+    "side": "left"
+   }
+  ],
+  "players": [
+   {
+    "id": "n1",
+    "team": "a",
+    "x": 11.5,
+    "y": 12,
+    "label": "1"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 3,
+    "y": 14,
+    "label": "2"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 11.5,
+    "y": 48,
+    "label": "5"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 3,
+    "y": 46,
+    "label": "6"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 92,
+    "y": 15,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 63,
+    "y": 13.4
+   },
+   {
+    "id": "b5",
+    "x": 63,
+    "y": 46.6
+   },
+   {
+    "id": "c1",
+    "x": 94.5,
+    "y": 16
+   }
+  ],
+  "steps": [
+   {
+    "label": "Durch die Reifen",
+    "say": "Auf los rennen beide gleichzeitig los und hüpfen durch die drei Reifen.",
+    "moves": [
+     {
+      "who": "n1",
+      "to": [
+       20.3,
+       13.1
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n1",
+      "to": [
+       26.6,
+       11.7
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n1",
+      "to": [
+       32.1,
+       15.1
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r5",
+      "to": [
+       20.3,
+       46.9
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r5",
+      "to": [
+       26.6,
+       48.3
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r5",
+      "to": [
+       32.1,
+       44.9
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Um die Stange zum Ball",
+    "say": "Gleichzeitig laufen beide einmal um die Stange und holen sich ihren Ball.",
+    "moves": [
+     {
+      "who": "n1",
+      "to": [
+       44,
+       18
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n1",
+      "to": [
+       50,
+       16.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n1",
+      "to": [
+       50.5,
+       10
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n1",
+      "to": [
+       56,
+       12.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n1",
+      "to": [
+       61.4,
+       12.8
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r5",
+      "to": [
+       44,
+       42
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r5",
+      "to": [
+       50,
+       43.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r5",
+      "to": [
+       50.5,
+       50
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r5",
+      "to": [
+       56,
+       47.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r5",
+      "to": [
+       61.4,
+       47.2
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Um die letzte Stange",
+    "say": "Mit dem Ball dribbeln beide um die letzte Stange bis zum Hütchen.",
+    "moves": [
+     {
+      "who": "n1",
+      "to": [
+       70,
+       9
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n1",
+      "to": [
+       78,
+       10
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n1",
+      "to": [
+       78.5,
+       18
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n1",
+      "to": [
+       77,
+       26
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "r5",
+      "to": [
+       70,
+       51
+      ],
+      "type": "dribbling",
+      "ball": "b5"
+     },
+     {
+      "who": "r5",
+      "to": [
+       78,
+       50
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b5"
+     },
+     {
+      "who": "r5",
+      "to": [
+       78.5,
+       42
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b5"
+     },
+     {
+      "who": "r5",
+      "to": [
+       77,
+       34
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b5"
+     }
+    ]
+   },
+   {
+    "label": "Wer trifft zuerst",
+    "say": "Beide schießen aufs Minitor. Neon eins trifft zuerst, und das gibt einen Punkt für Neon.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       54.5,
+       28.5
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b5",
+      "to": [
+       56,
+       38
+      ],
+      "type": "pass",
+      "delay": 0.3
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 14,
+    "y1": 58.6,
+    "x2": 86,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 99,
+    "y1": 6,
+    "x2": 99,
+    "y2": 54,
+    "text": "14 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Ganz eng und schnell um die Stange laufen.",
+   "title": "Eng um die Stange",
+   "text": "An der Stange wird das Rennen entschieden. Wer eng und schnell herumläuft, notfalls mit einer Hand an der Stange, ist früher am Ball und hat beim Dribbeln einen Vorsprung. Wer einen weiten Bogen läuft, verliert Zeit.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 33,
+      "y": 15,
+      "label": "1"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 3,
+      "y": 14,
+      "label": "2"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 33,
+      "y": 45,
+      "label": "5"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 3,
+      "y": 46,
+      "label": "6"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 92,
+      "y": 15,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 63,
+      "y": 13.4
+     },
+     {
+      "id": "b5",
+      "x": 63,
+      "y": 46.6
+     },
+     {
+      "id": "c1",
+      "x": 94.5,
+      "y": 16
+     }
+    ],
+    "steps": [
+     {
+      "label": "Eng herum",
+      "say": "Neon eins läuft ganz eng um die Stange. Rot fünf läuft gleichzeitig einen weiten Bogen.",
+      "moves": [
+       {
+        "who": "n1",
+        "to": [
+         45,
+         17
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n1",
+        "to": [
+         49.5,
+         15.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n1",
+        "to": [
+         49.5,
+         11
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n1",
+        "to": [
+         52,
+         12.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r5",
+        "to": [
+         42,
+         43
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r5",
+        "to": [
+         50,
+         40
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r5",
+        "to": [
+         54,
+         46
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r5",
+        "to": [
+         50,
+         53.5
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Vorsprung beim Ball",
+      "say": "Neon eins ist zuerst am Ball und dribbelt schon los, Rot fünf kommt später.",
+      "moves": [
+       {
+        "who": "n1",
+        "to": [
+         61.4,
+         12.8
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n1",
+        "to": [
+         70,
+         9
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "r5",
+        "to": [
+         61.4,
+         47.2
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Treffen beide nicht, schnell den Ball holen und noch einmal schießen.",
+   "title": "Daneben, also schnell holen",
+   "text": "Geht der Schuss daneben, ist das Rennen noch nicht vorbei. Sofort hinterher, den Ball holen, zurück zum Hütchen dribbeln und noch einmal schießen. Wer schneller reagiert und dann genau schießt, gewinnt.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 71,
+      "y": 24,
+      "label": "1"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 3,
+      "y": 14,
+      "label": "2"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 80,
+      "y": 36,
+      "label": "5"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 3,
+      "y": 46,
+      "label": "6"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 92,
+      "y": 15,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 72.6,
+      "y": 24.6
+     },
+     {
+      "id": "b5",
+      "x": 78.4,
+      "y": 36.6
+     },
+     {
+      "id": "c1",
+      "x": 94.5,
+      "y": 16
+     }
+    ],
+    "steps": [
+     {
+      "label": "Beide daneben",
+      "say": "Beide schießen gleichzeitig, und beide Bälle gehen am Minitor vorbei.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         56,
+         20
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b5",
+        "to": [
+         57,
+         41
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Schnell holen",
+      "say": "Gleichzeitig rennen beide hinterher, holen ihren Ball und dribbeln zurück zum Hütchen.",
+      "moves": [
+       {
+        "who": "n1",
+        "to": [
+         58,
+         20
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n1",
+        "to": [
+         72,
+         24
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "r5",
+        "to": [
+         59,
+         42
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r5",
+        "to": [
+         72,
+         38
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b5"
+       }
+      ]
+     },
+     {
+      "label": "Wer zuerst trifft",
+      "say": "Neon eins schießt zuerst und trifft, und das gibt einen Punkt für Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         54.5,
+         28.5
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
