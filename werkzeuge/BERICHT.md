@@ -56,3 +56,4 @@ Alle neuen Einheiten: access frei, sichtbar, Regeln 0 Hinweise, Vergleich 0 Abwe
 - **Springer statt Floater:** UE-112 und UE-118.
 - **Abläufe bis zum Ende:** UE-104 (Slalom zurück jetzt eigener Schritt), UE-125 (Wechsel als letzter Schritt).
 - **Fachwörter mit Sprechblase:** Auf jeder Einheiten-Seite sind Fachwörter (Doppelpass, Endzone, Springer, Konter …) gepunktet unterstrichen. Maus drüber oder antippen zeigt eine kurze Erklärung. Das Lexikon steht in der App unter src/lib/begriffe.js.
+- **Ergebnis immer gesprochen:** In 31 Einheiten sagt der letzte Schritt jetzt, wie es ausgeht (wer einen Punkt bekommt, Zeitlimit, wer gewinnt) und wie es weitergeht (nächste Gruppe, Rollentausch): UE-005, 007, 011, 012, 021, 024, 026, 030, 035, 036, 044, 048, 051, 052, 053, 054, 056, 059, 063, 065, 069, 071, 078, 079, 082, 089, 092, 103, 108, 112, 122. Bei UE-001 bis UE-063 müssen die geänderten Sätze neu eingesprochen werden (Tonspur zeigt sie als „geändert“).
