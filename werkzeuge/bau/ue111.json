@@ -1,0 +1,521 @@
+{
+ "title": "Knack den Code",
+ "code": "UE-111",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel",
+  "Torschuss"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "duration_minutes": 15,
+ "players_min": 5,
+ "players_max": 8,
+ "field_size": "18 x 14 m",
+ "description": "Die Spieler stehen in einer Raute vor einem Minitor. Ein Spieler bekommt heimlich den Code: eine bestimmte Passfolge, die mit einem Torschuss endet. Nur er kennt sie und muss seine Mitspieler mit klaren Ansagen durch die Passfolge führen. Der Trainer hält sich zurück und hilft nur mit Fragen.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 14 Metern mit vier Hütchen als Raute. Rechts steht ein Minitor.",
+  "Verteilen: Je ein Spieler an den Hütchen oben, unten und vorn, am Start links zwei Spieler mit Bällen. Ein Spieler kennt den Code, zum Beispiel Spieler acht.",
+  "Ablauf: Der Spieler mit dem Code sagt an, wer wohin spielt. Die anderen folgen seinen Ansagen, bis die Passfolge mit einem Torschuss endet. Danach folgt jeder seinem Pass, und der nächste Ball startet.",
+  "Wechsel: Nach fünf bis acht Durchgängen bekommt ein anderer Spieler den Code. Er darf sich auch selbst eine Passfolge ausdenken."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Der Spieler mit dem Code gibt klare und ständige Ansagen",
+  "Erkennen, wann das Spiel schneller oder langsamer werden muss",
+  "Im richtigen Moment im freien Raum ankommen",
+  "Den Pass an Entfernung und Position des Mitspielers anpassen, und der Anführer lobt und verbessert"
+ ],
+ "materials": [
+  "4 orange Hütchen",
+  "1 Minitor",
+  "Mehrere Bälle"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Knack den Code. Nur ein Spieler kennt die Passfolge und führt die anderen mit Ansagen bis zum Abschluss.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 14,
+    "y": 8,
+    "w": 64,
+    "h": 44
+   }
+  ],
+  "cones": [
+   {
+    "x": 26,
+    "y": 34,
+    "color": "orange"
+   },
+   {
+    "x": 44,
+    "y": 10,
+    "color": "orange"
+   },
+   {
+    "x": 44,
+    "y": 50,
+    "color": "orange"
+   },
+   {
+    "x": 62,
+    "y": 34,
+    "color": "orange"
+   }
+  ],
+  "goals": [
+   {
+    "x": 78,
+    "y": 30,
+    "side": "right"
+   }
+  ],
+  "players": [
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 24,
+    "y": 30,
+    "label": "11"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 15,
+    "y": 30,
+    "label": "10"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 42,
+    "y": 14,
+    "label": "8"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 42,
+    "y": 46,
+    "label": "7"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 60,
+    "y": 30,
+    "label": "9"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 6,
+    "y": 50,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 25.6,
+    "y": 30.6
+   },
+   {
+    "id": "b2",
+    "x": 16.6,
+    "y": 30.6
+   },
+   {
+    "id": "c1",
+    "x": 8.5,
+    "y": 50.6
+   },
+   {
+    "id": "c2",
+    "x": 5,
+    "y": 53.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Doppelpass auf Ansage",
+    "say": "Spieler acht kennt den Code und ruft. Spieler elf spielt zu Spieler sieben und bekommt den Ball direkt zurück.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       40.4,
+       46.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       25.6,
+       30.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Langer Pass und Ablage",
+    "say": "Spieler elf spielt fest und flach zu Spieler neun vorn. Spieler neun legt den Ball zu Spieler acht ab.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       58.4,
+       30.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       43.6,
+       15.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Mitnehmen und Abschluss",
+    "say": "Spieler acht nimmt den Ball nach vorn mit und schießt ins Minitor. Das gibt einen Punkt für die Gruppe.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       54,
+       14
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       77.5,
+       29
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 14,
+    "y1": 58.6,
+    "x2": 78,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 86,
+    "y1": 8,
+    "x2": 86,
+    "y2": 52,
+    "text": "14 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Mit Fragen statt Ansagen helfen.",
+   "title": "Was war das Problem?",
+   "text": "Geht ein Pass schief, ruft der Trainer Stopp und fragt: Was war das Problem bei diesem Pass? Die Spieler finden die Antwort selbst, zum Beispiel: zu weich. Über kurze Wege reicht ein weicher Pass, über lange Wege muss er fester und genauer kommen.",
+   "board": {
+    "players": [
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 24,
+      "y": 30,
+      "label": "11"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 15,
+      "y": 30,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 42,
+      "y": 14,
+      "label": "8"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 42,
+      "y": 46,
+      "label": "7"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 60,
+      "y": 30,
+      "label": "9"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 6,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 43.6,
+      "y": 14.6
+     },
+     {
+      "id": "b2",
+      "x": 43.6,
+      "y": 46.6
+     },
+     {
+      "id": "c1",
+      "x": 8.5,
+      "y": 50.6
+     },
+     {
+      "id": "c2",
+      "x": 5,
+      "y": 53.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Ein zu weicher Pass",
+      "say": "Spieler acht spielt zu Spieler neun, aber der Pass ist zu weich. Spieler neun muss dem Ball entgegenlaufen. Der Trainer ruft Stopp und fragt, was das Problem war.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         51,
+         21
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n9",
+        "to": [
+         53,
+         25
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       }
+      ]
+     },
+     {
+      "label": "Jetzt fester",
+      "say": "Spieler neun geht zurück an sein Hütchen. Diesmal spielt Spieler sieben fest und flach, und der Ball kommt genau in den Fuß.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         60,
+         30
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b2",
+        "to": [
+         58.4,
+         30.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Ein Verteidiger kommt dazu.",
+   "title": "Mit Verteidiger",
+   "text": "Ein Verteidiger von Team Rot stört jetzt die Passfolge. Der Druck wird in drei Stufen erhöht. Bronze: Er verteidigt nur halb. Silber: Er greift richtig an, aber nur in der Zone vor dem Tor. Gold: Er greift überall an.",
+   "board": {
+    "players": [
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 24,
+      "y": 30,
+      "label": "11"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 15,
+      "y": 30,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 42,
+      "y": 14,
+      "label": "8"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 42,
+      "y": 46,
+      "label": "7"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 60,
+      "y": 30,
+      "label": "9"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 6,
+      "y": 50,
+      "label": "T"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 72,
+      "y": 42,
+      "label": "6"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 25.6,
+      "y": 30.6
+     },
+     {
+      "id": "b2",
+      "x": 16.6,
+      "y": 30.6
+     },
+     {
+      "id": "c1",
+      "x": 8.5,
+      "y": 50.6
+     },
+     {
+      "id": "c2",
+      "x": 5,
+      "y": 53.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Code unter Druck",
+      "say": "Spieler elf spielt zu Spieler neun, und Spieler neun legt zu Spieler acht ab.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         58.4,
+         30.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         43.6,
+         15.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "In die Zone und Abschluss",
+      "say": "Spieler acht dribbelt in die Zone vor dem Tor. Gleichzeitig greift Rot sechs an, doch Spieler acht schießt vorher ins Minitor. Das gibt einen Punkt für die Gruppe.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         62,
+         15
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "r6",
+        "to": [
+         70,
+         30
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "b1",
+        "to": [
+         77.5,
+         28
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "lines": [
+     {
+      "type": "rect",
+      "x": 14,
+      "y": 8,
+      "w": 64,
+      "h": 44
+     },
+     {
+      "type": "line",
+      "x1": 66,
+      "y1": 8,
+      "x2": 66,
+      "y2": 52,
+      "dashed": true
+     }
+    ]
+   }
+  }
+ ]
+}

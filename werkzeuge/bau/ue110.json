@@ -1,0 +1,609 @@
+{
+ "title": "Vier gegen drei mit Übergabe",
+ "code": "UE-110",
+ "kind": "Spielform",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel",
+  "Verteidigen"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "duration_minutes": 15,
+ "players_min": 9,
+ "players_max": 11,
+ "field_size": "29 x 15 m",
+ "description": "Ein Paar von Team Neon steht in jeder Endzone, zwei Mittelfeldspieler von Team Neon und drei Verteidiger von Team Rot stehen in der Mittelzone. Das Paar am Ball will einen Pass durch die Reihe von Team Rot zu den Mittelfeldspielern spielen. Die drehen auf und geben den Ball an das Paar auf der anderen Seite weiter, und alles beginnt in die andere Richtung. Erobert Team Rot den Ball, kontert es auf ein Minitor.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 29 mal 15 Metern. Links und rechts je eine Endzone von 7 Metern, dazwischen die Mittelzone. Hinter beiden Endzonen steht ein Minitor.",
+  "Verteilen: In jeder Endzone ein Paar von Team Neon. In der Mittelzone zwei Mittelfeldspieler von Team Neon und drei Verteidiger von Team Rot.",
+  "Ablauf: Zuerst darf niemand herauslaufen. Team Rot verschiebt in der Mittelzone und schließt die Lücken. Kommt der Pass zu einem Mittelfeldspieler durch, dreht er auf und spielt zum Paar auf der anderen Seite. Erobert Team Rot den Ball, spielt es drei gegen zwei auf ein Minitor.",
+  "Wechsel: Nach zwei Minuten tauscht ein Paar mit den Verteidigern, damit jedes Paar einmal verteidigt. Für jedes Paar werden die Punkte gezählt."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Gute Pässe und die richtige Entscheidung, wann der Pass durch die Reihe geht",
+  "Ohne Ball so bewegen, dass man anspielbar ist",
+  "Schnell passen, damit die Verteidiger verschieben müssen und Lücken entstehen",
+  "Den frei gewordenen Raum nutzen, wenn ein Verteidiger herausläuft"
+ ],
+ "materials": [
+  "2 Minitore",
+  "Hütchen für Feld und Zonen",
+  "Mehrere Bälle beim Trainer",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Vier gegen drei mit Übergabe. Den Ball durch die Reihe von Team Rot spielen und auf die andere Seite bringen.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 10,
+    "y": 10,
+    "w": 80,
+    "h": 40
+   },
+   {
+    "type": "zone",
+    "x": 30,
+    "y": 10,
+    "w": 40,
+    "h": 40
+   },
+   {
+    "type": "line",
+    "x1": 30,
+    "y1": 10,
+    "x2": 30,
+    "y2": 50,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 70,
+    "y1": 10,
+    "x2": 70,
+    "y2": 50,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 10,
+    "y": 30,
+    "side": "left"
+   },
+   {
+    "x": 90,
+    "y": 30,
+    "side": "right"
+   }
+  ],
+  "players": [
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 18,
+    "y": 16,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 18,
+    "y": 44,
+    "label": "3"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 41,
+    "y": 44,
+    "label": "6"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 59,
+    "y": 16,
+    "label": "8"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 82,
+    "y": 16,
+    "label": "4"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 82,
+    "y": 44,
+    "label": "5"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 36,
+    "y": 22,
+    "label": "7"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 50,
+    "y": 30,
+    "label": "9"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 64,
+    "y": 38,
+    "label": "10"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 4,
+    "y": 50,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 19.6,
+    "y": 16.6
+   },
+   {
+    "id": "c1",
+    "x": 6.5,
+    "y": 50.6
+   },
+   {
+    "id": "c2",
+    "x": 3,
+    "y": 53.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Ball laufen lassen",
+    "say": "Neon zwei spielt zu Neon drei. Gleichzeitig verschieben Rot sieben und Rot neun zur Ballseite.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       19.6,
+       44.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r7",
+      "to": [
+       36,
+       32
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "r9",
+      "to": [
+       52,
+       38
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Schnell zurück und durch",
+    "say": "Neon drei spielt schnell zurück zu Neon zwei. Oben ist jetzt eine Lücke, und Neon zwei spielt durch die Reihe zu Neon acht.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       19.6,
+       16.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       57.4,
+       16.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r7",
+      "to": [
+       36,
+       26
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Übergabe zur anderen Seite",
+    "say": "Neon acht dreht auf und spielt zu Neon vier auf die andere Seite. Gleichzeitig drehen die Verteidiger um und verschieben nach rechts.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       80.4,
+       16.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r7",
+      "to": [
+       46,
+       24
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r9",
+      "to": [
+       56,
+       32
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r10",
+      "to": [
+       66,
+       40
+      ],
+      "type": "lauf"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 10,
+    "y1": 58.6,
+    "x2": 90,
+    "y2": 58.6,
+    "text": "29 m"
+   },
+   {
+    "x1": 96,
+    "y1": 10,
+    "x2": 96,
+    "y2": 50,
+    "text": "15 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Ein Verteidiger darf aus der Mittelzone herauslaufen.",
+   "title": "Einer läuft heraus",
+   "text": "Jetzt darf ein Verteidiger von Team Rot herauslaufen und das Paar am Ball unter Druck setzen. Das Paar muss schneller entscheiden. Dafür entsteht in der Mittelzone eine Lücke, und ein Mittelfeldspieler bietet sich genau dort an.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 18,
+      "y": 16,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 18,
+      "y": 44,
+      "label": "3"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 41,
+      "y": 44,
+      "label": "6"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 59,
+      "y": 16,
+      "label": "8"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 82,
+      "y": 16,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 82,
+      "y": 44,
+      "label": "5"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 36,
+      "y": 22,
+      "label": "7"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 50,
+      "y": 30,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 64,
+      "y": 38,
+      "label": "10"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 4,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 19.6,
+      "y": 16.6
+     },
+     {
+      "id": "c1",
+      "x": 6.5,
+      "y": 50.6
+     },
+     {
+      "id": "c2",
+      "x": 3,
+      "y": 53.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Druck auf den Ball",
+      "say": "Rot sieben läuft heraus und greift Neon zwei an. Neon zwei spielt schnell zu Neon drei.",
+      "moves": [
+       {
+        "who": "r7",
+        "to": [
+         26,
+         22
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         19.6,
+         44.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "In die Lücke",
+      "say": "Gleichzeitig läuft Neon sechs in die Lücke, die Rot sieben hinterlassen hat, und Neon drei spielt ihn an.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         36,
+         32
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         37.6,
+         32.6
+        ],
+        "type": "pass",
+        "delay": 0.4
+       }
+      ]
+     },
+     {
+      "label": "Weiter nach vorn",
+      "say": "Neon sechs spielt zu Neon acht, und der gibt den Ball sofort an Neon vier auf der anderen Seite weiter.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         57.4,
+         16.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         80.4,
+         16.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Einer aus dem Paar gegenüber darf in die Mittelzone kommen.",
+   "title": "Pass auf die dritte Linie",
+   "text": "Ein Spieler aus dem Paar auf der anderen Seite darf jetzt in die Mittelzone kommen und hilft als zusätzliche Anspielstation. Das macht es leichter. Trotzdem sollen die Spieler den Kopf heben und schauen, ob der Ball sogar direkt bis zur dritten Linie, also bis zum Paar gegenüber, durchgeht.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 18,
+      "y": 16,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 18,
+      "y": 44,
+      "label": "3"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 36,
+      "y": 44,
+      "label": "6"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 59,
+      "y": 16,
+      "label": "8"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 82,
+      "y": 16,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 82,
+      "y": 44,
+      "label": "5"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 36,
+      "y": 22,
+      "label": "7"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 48,
+      "y": 40,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 64,
+      "y": 38,
+      "label": "10"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 4,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 19.6,
+      "y": 44.6
+     },
+     {
+      "id": "c1",
+      "x": 6.5,
+      "y": 50.6
+     },
+     {
+      "id": "c2",
+      "x": 3,
+      "y": 53.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Einer kommt entgegen",
+      "say": "Neon fünf kommt in die Mittelzone und bietet sich an. Gleichzeitig verschiebt Rot zehn zu ihm.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         68,
+         47
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r10",
+        "to": [
+         62,
+         42
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Direkt auf die dritte Linie",
+      "say": "Neon drei hebt den Kopf, sieht die Lücke und spielt direkt durch zu Neon vier auf der anderen Seite.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         80.4,
+         16.6
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

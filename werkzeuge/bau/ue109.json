@@ -1,0 +1,694 @@
+{
+ "title": "Zwei gegen eins in vier Zonen",
+ "code": "UE-109",
+ "kind": "Spielform",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel",
+  "Umschalten"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "duration_minutes": 15,
+ "players_min": 12,
+ "players_max": 12,
+ "field_size": "37 x 18 m",
+ "description": "Das Feld ist in vier Zonen geteilt, an beiden Enden steht ein Tor. In jeder Zone spielen zwei Spieler von Team Neon gegen einen Verteidiger von Team Rot. Team Neon spielt sich von Zone zu Zone nach vorn, und in jeder Zone müssen beide Angreifer den Ball berührt haben. Erobert Team Rot den Ball, kontert es auf eines der beiden Tore.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 37 mal 18 Metern, in vier gleich große Zonen geteilt. Links und rechts steht je ein Tor.",
+  "Verteilen: In jeder Zone zwei Spieler von Team Neon und ein Verteidiger von Team Rot. Alle bleiben in ihrer Zone. Der Trainer steht mit Bällen an der Seite.",
+  "Ablauf: Team Neon baut von links nach rechts auf. In jeder Zone berühren beide Angreifer den Ball, bevor er in die nächste Zone geht, und vor dem Tor braucht es mindestens sechs Pässe. Zuerst darf nur nach vorn gepasst werden.",
+  "Wechsel: Erobert Team Rot den Ball, darf ein zweiter Verteidiger in die Zone kommen und beide kontern auf ein Tor. Trifft Team Rot, tauscht es mit vier Angreifern. Jedes Tor gibt einen Punkt."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Gute Passwinkel für den Mitspieler anbieten",
+  "Schnelle Kombinationen, um nach vorn zu kommen",
+  "Mit einem Kontakt genau abschließen",
+  "Den Pass mit dem richtigen Tempo und genau spielen und die Unterstützung richtig timen"
+ ],
+ "materials": [
+  "2 Tore",
+  "Hütchen für Feld und Zonen",
+  "Mehrere Bälle beim Trainer",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "frei",
+ "hidden": true,
+ "say_intro": "Zwei gegen eins in vier Zonen. In jeder Zone die Überzahl nutzen und den Ball von links nach rechts bis ins Tor spielen.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 8,
+    "y": 8,
+    "w": 84,
+    "h": 44
+   },
+   {
+    "type": "line",
+    "x1": 29,
+    "y1": 8,
+    "x2": 29,
+    "y2": 52,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 50,
+    "y1": 8,
+    "x2": 50,
+    "y2": 52,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 71,
+    "y1": 8,
+    "x2": 71,
+    "y2": 52,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 8,
+    "y": 30,
+    "side": "left"
+   },
+   {
+    "x": 92,
+    "y": 30,
+    "side": "right"
+   }
+  ],
+  "players": [
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 14,
+    "y": 15,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 14,
+    "y": 45,
+    "label": "3"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 23,
+    "y": 30,
+    "label": "10"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 35,
+    "y": 15,
+    "label": "4"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 35,
+    "y": 45,
+    "label": "5"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 44,
+    "y": 30,
+    "label": "11"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 56,
+    "y": 15,
+    "label": "6"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 56,
+    "y": 45,
+    "label": "7"
+   },
+   {
+    "id": "r12",
+    "team": "b",
+    "x": 65,
+    "y": 30,
+    "label": "12"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 77,
+    "y": 15,
+    "label": "8"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 77,
+    "y": 45,
+    "label": "9"
+   },
+   {
+    "id": "r13",
+    "team": "b",
+    "x": 86,
+    "y": 40,
+    "label": "13"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 3,
+    "y": 50,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 15.6,
+    "y": 15.6
+   },
+   {
+    "id": "c1",
+    "x": 5.5,
+    "y": 50.6
+   },
+   {
+    "id": "c2",
+    "x": 2,
+    "y": 53.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Zone eins",
+    "say": "Neon drei läuft nach vorn, und Neon zwei spielt ihn an. Beide haben den Ball berührt, also spielt Neon drei weiter in die zweite Zone zu Neon fünf.",
+    "moves": [
+     {
+      "who": "n3",
+      "to": [
+       22,
+       47
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       23.6,
+       47.6
+      ],
+      "type": "pass",
+      "delay": 0.4
+     },
+     {
+      "who": "b1",
+      "to": [
+       33.4,
+       45.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zone zwei",
+    "say": "Neon vier löst sich nach vorn, Neon fünf spielt zu ihm. Neon vier spielt weiter in die dritte Zone zu Neon sechs.",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       40,
+       14
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       41.6,
+       14.6
+      ],
+      "type": "pass",
+      "delay": 0.4
+     },
+     {
+      "who": "b1",
+      "to": [
+       54.4,
+       15.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zone drei",
+    "say": "Neon sieben startet nach vorn und bekommt den Ball von Neon sechs. Dann spielt er in die letzte Zone zu Neon neun.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       62,
+       46
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       63.6,
+       46.6
+      ],
+      "type": "pass",
+      "delay": 0.4
+     },
+     {
+      "who": "b1",
+      "to": [
+       75.4,
+       45.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Abschluss mit einem Kontakt",
+    "say": "Rot dreizehn greift Neon neun an. Neon neun spielt zu Neon acht, der in die Mitte läuft und direkt ins Tor schießt. Das gibt einen Punkt für Team Neon.",
+    "moves": [
+     {
+      "who": "r13",
+      "to": [
+       83,
+       41
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n8",
+      "to": [
+       84,
+       21
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       85.6,
+       21.6
+      ],
+      "type": "pass",
+      "delay": 0.5
+     },
+     {
+      "who": "b1",
+      "to": [
+       91.5,
+       29
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 8,
+    "y1": 58.6,
+    "x2": 92,
+    "y2": 58.6,
+    "text": "37 m"
+   },
+   {
+    "x1": 97,
+    "y1": 8,
+    "x2": 97,
+    "y2": 52,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Unter Druck darf der Ball zurückgespielt werden.",
+   "title": "Zurückspielen erlaubt",
+   "text": "Jetzt dürfen die Angreifer unter Druck auch nach hinten in die vorige Zone spielen. Das nimmt den Druck heraus, und der Mitspieler muss sich so anbieten, dass der Ball sofort wieder nach vorn kommt. So lernen die Spieler Ruhe am Ball, Übersicht und gute Entscheidungen.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 14,
+      "y": 15,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 14,
+      "y": 45,
+      "label": "3"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 23,
+      "y": 30,
+      "label": "10"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 35,
+      "y": 15,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 35,
+      "y": 45,
+      "label": "5"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 44,
+      "y": 30,
+      "label": "11"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 56,
+      "y": 15,
+      "label": "6"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 56,
+      "y": 45,
+      "label": "7"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 65,
+      "y": 30,
+      "label": "12"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 77,
+      "y": 15,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 77,
+      "y": 45,
+      "label": "9"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 86,
+      "y": 40,
+      "label": "13"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 3,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 57.6,
+      "y": 15.6
+     },
+     {
+      "id": "c1",
+      "x": 5.5,
+      "y": 50.6
+     },
+     {
+      "id": "c2",
+      "x": 2,
+      "y": 53.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zurück unter Druck",
+      "say": "Rot zwölf greift Neon sechs an. Neon sechs spielt zurück zu Neon vier in die zweite Zone.",
+      "moves": [
+       {
+        "who": "r12",
+        "to": [
+         61,
+         21
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         36.6,
+         15.6
+        ],
+        "type": "pass",
+        "delay": 0.4
+       }
+      ]
+     },
+     {
+      "label": "Und wieder nach vorn",
+      "say": "Gleichzeitig dreht Neon sechs weg in den freien Raum, und Neon vier spielt ihm den Ball sofort wieder in den Lauf.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         66,
+         11
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         64.4,
+         11.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Zwei Verteidiger dürfen in eine Zone.",
+   "title": "Zwei Verteidiger in einer Zone",
+   "text": "Die Verteidiger dürfen jetzt zu zweit in einer Zone angreifen. So entsteht dort ein zwei gegen zwei, und die Angreifer stehen mehr unter Druck. Dafür ist hinter den Verteidigern eine Zone frei. Die Angreifer schauen deshalb nach einer Lücke und spielen schnell nach vorn.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 14,
+      "y": 15,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 14,
+      "y": 45,
+      "label": "3"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 23,
+      "y": 30,
+      "label": "10"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 35,
+      "y": 15,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 35,
+      "y": 45,
+      "label": "5"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 44,
+      "y": 30,
+      "label": "11"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 56,
+      "y": 15,
+      "label": "6"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 56,
+      "y": 45,
+      "label": "7"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 65,
+      "y": 30,
+      "label": "12"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 77,
+      "y": 15,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 77,
+      "y": 45,
+      "label": "9"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 86,
+      "y": 40,
+      "label": "13"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 3,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 36.6,
+      "y": 45.6
+     },
+     {
+      "id": "c1",
+      "x": 5.5,
+      "y": 50.6
+     },
+     {
+      "id": "c2",
+      "x": 2,
+      "y": 53.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zwei Verteidiger kommen",
+      "say": "Gleichzeitig greifen Rot elf und Rot zwölf Neon fünf an. In der dritten Zone steht jetzt kein Verteidiger mehr.",
+      "moves": [
+       {
+        "who": "r11",
+        "to": [
+         38,
+         36
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r12",
+        "to": [
+         47,
+         46
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Raum hinter den Verteidigern",
+      "say": "Neon fünf spielt an beiden vorbei zu Neon sechs, der frei in der dritten Zone steht und nach vorn dribbelt.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         54.4,
+         15.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n6",
+        "to": [
+         66,
+         20
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
