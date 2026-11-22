@@ -1,0 +1,687 @@
+{
+ "title": "Dreiecke halten und pressen",
+ "code": "UE-187",
+ "kind": "Spielform",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel",
+  "Verteidigen"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 10,
+ "players_max": 10,
+ "field_size": "18 x 18 m",
+ "description": "Ein Ballbesitzspiel drei gegen drei mit vier Springern außen. Das Feld ist durch die Diagonalen in vier Dreiecke geteilt. Wer drei Pässe in einem Dreieck schafft, bekommt einen Punkt. Das andere Team presst gemeinsam, erobert den Ball und spielt dann selbst mit den Springern.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 18 Metern. Hütchen an den Ecken und in der Mitte, die Diagonalen teilen das Feld in vier Dreiecke.",
+  "Verteilen: Team Neon und Team Rot je zu dritt im Feld. An jeder Seite steht ein Springer außen. Der Trainer steht an der Ecke mit Bällen.",
+  "Ablauf: Das Team am Ball spielt mit den Springern und versucht, drei Pässe in einem Dreieck zu schaffen. Das andere Team presst und will den Ball erobern.",
+  "Wertung und Wechsel: Drei Pässe in einem Dreieck geben einen Punkt. Wer den Ball erobert, spielt sofort mit den Springern weiter. Wer nach der Spielzeit mehr Punkte hat, gewinnt."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Gute Passwinkel schaffen und Dreiecke bilden",
+  "Einer bietet sich immer außerhalb des Dreiecks an",
+  "Schnell mit ein oder zwei Kontakten spielen",
+  "Gemeinsam pressen und laut miteinander reden"
+ ],
+ "materials": [
+  "5 Hütchen",
+  "Viele Bälle",
+  "Leibchen in drei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Dreiecke halten und pressen. Team Neon will drei Pässe in einem Dreieck schaffen, Team Rot presst gemeinsam.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 30,
+    "y": 10,
+    "w": 40,
+    "h": 40
+   },
+   {
+    "type": "line",
+    "x1": 30,
+    "y1": 10,
+    "x2": 70,
+    "y2": 50,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 70,
+    "y1": 10,
+    "x2": 30,
+    "y2": 50,
+    "dashed": true
+   }
+  ],
+  "cones": [
+   {
+    "x": 30,
+    "y": 10,
+    "color": "orange"
+   },
+   {
+    "x": 70,
+    "y": 10,
+    "color": "orange"
+   },
+   {
+    "x": 30,
+    "y": 50,
+    "color": "orange"
+   },
+   {
+    "x": 70,
+    "y": 50,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 30,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 40,
+    "y": 22,
+    "label": "11"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 36,
+    "y": 40,
+    "label": "4"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 53,
+    "y": 36,
+    "label": "5"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 44.5,
+    "y": 38,
+    "label": "7"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 52,
+    "y": 20,
+    "label": "8"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 62,
+    "y": 20,
+    "label": "9"
+   },
+   {
+    "id": "f1",
+    "team": "t",
+    "x": 26,
+    "y": 30,
+    "label": "F"
+   },
+   {
+    "id": "f2",
+    "team": "t",
+    "x": 52,
+    "y": 4,
+    "label": "F"
+   },
+   {
+    "id": "f3",
+    "team": "t",
+    "x": 74,
+    "y": 30,
+    "label": "F"
+   },
+   {
+    "id": "f4",
+    "team": "t",
+    "x": 50,
+    "y": 55,
+    "label": "F"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 20,
+    "y": 7,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 40.6,
+    "y": 22.6
+   },
+   {
+    "id": "s1",
+    "x": 16,
+    "y": 7
+   },
+   {
+    "id": "s2",
+    "x": 16,
+    "y": 10.6
+   }
+  ],
+  "steps": [
+   {
+    "label": "Ins linke Dreieck",
+    "say": "Neon elf spielt zum Springer links, und der spielt gleich weiter zu Neon vier. Rot sieben läuft Neon vier an.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       26.6,
+       30.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       36.6,
+       40.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r7",
+      "to": [
+       39.5,
+       42.5
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     }
+    ]
+   },
+   {
+    "label": "Dritter Pass: Punkt",
+    "say": "Neon fünf läuft ins Dreieck und bekommt den Ball. Das sind drei Pässe im linken Dreieck, und das gibt einen Punkt für Team Neon. Neon bleibt am Ball.",
+    "moves": [
+     {
+      "who": "n5",
+      "to": [
+       43,
+       31
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       43.6,
+       31.6
+      ],
+      "type": "pass",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "Abgefangen",
+    "say": "Neon fünf will nach oben zum Springer spielen. Aber Rot acht liest den Pass und fängt ihn ab.",
+    "moves": [
+     {
+      "who": "r8",
+      "to": [
+       50,
+       15
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       15.6
+      ],
+      "type": "pass",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Rot ist dran",
+    "say": "Rot acht spielt sofort zum Springer oben, der legt auf Rot neun ab. Jetzt ist Team Rot am Ball. Schafft Rot drei Pässe in einem Dreieck, gibt das einen Punkt für Team Rot.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       52.6,
+       4.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r9",
+      "to": [
+       58,
+       24
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       58.6,
+       24.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 30,
+    "y1": 58.6,
+    "x2": 70,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 86,
+    "y1": 10,
+    "x2": 86,
+    "y2": 50,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Gemeinsam pressen.",
+   "title": "Gemeinsam pressen",
+   "text": "Die Verteidiger pressen zusammen und lassen keine großen Lücken zwischen sich. Einer läuft den Ballführenden an, die anderen rücken nach und stellen die Passwege zu. Nach der Eroberung wird sofort schnell weitergespielt.",
+   "board": {
+    "players": [
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 40,
+      "y": 22,
+      "label": "11"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 36,
+      "y": 40,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 53,
+      "y": 36,
+      "label": "5"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 44.5,
+      "y": 38,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 52,
+      "y": 20,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 62,
+      "y": 20,
+      "label": "9"
+     },
+     {
+      "id": "f1",
+      "team": "t",
+      "x": 26,
+      "y": 30,
+      "label": "F"
+     },
+     {
+      "id": "f2",
+      "team": "t",
+      "x": 52,
+      "y": 4,
+      "label": "F"
+     },
+     {
+      "id": "f3",
+      "team": "t",
+      "x": 74,
+      "y": 30,
+      "label": "F"
+     },
+     {
+      "id": "f4",
+      "team": "t",
+      "x": 50,
+      "y": 55,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 20,
+      "y": 7,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 40.6,
+      "y": 22.6
+     },
+     {
+      "id": "s1",
+      "x": 16,
+      "y": 7
+     },
+     {
+      "id": "s2",
+      "x": 16,
+      "y": 10.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zusammen anlaufen",
+      "say": "Rot acht läuft Neon elf an. Rot sieben und Rot neun rücken nach und machen die Räume zwischen sich klein.",
+      "moves": [
+       {
+        "who": "r8",
+        "to": [
+         45,
+         21
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r7",
+        "to": [
+         41,
+         33
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "r9",
+        "to": [
+         52,
+         24
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Ball erobert",
+      "say": "Neon elf will zu Neon fünf passen. Rot neun steht schon im Passweg und fängt den Ball ab.",
+      "moves": [
+       {
+        "who": "r9",
+        "to": [
+         45.4,
+         27.8
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         46,
+         28.4
+        ],
+        "type": "pass",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Schnell weiter",
+      "say": "Rot neun spielt sofort zum Springer unten. Jetzt ist Team Rot am Ball und will drei Pässe in einem Dreieck, denn das gibt einen Punkt für Team Rot.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         55.6
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Zwei Außenspieler für jedes Team.",
+   "title": "Außenspieler rotieren",
+   "text": "Statt der Springer hat jedes Team zwei eigene Spieler außen. Bekommt ein Außenspieler den Ball, nimmt er ihn ins Feld mit, und ein Mitspieler tauscht mit ihm nach außen. Für drei Pässe in einem Dreieck gibt es einen Punkt, wer zuerst in allen vier Dreiecken drei Pässe hat, gewinnt.",
+   "board": {
+    "players": [
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 40,
+      "y": 22,
+      "label": "11"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 36,
+      "y": 40,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 53,
+      "y": 36,
+      "label": "5"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 44.5,
+      "y": 38,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 52,
+      "y": 20,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 62,
+      "y": 20,
+      "label": "9"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 26,
+      "y": 24,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 74,
+      "y": 34,
+      "label": "3"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 52,
+      "y": 4,
+      "label": "10"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 50,
+      "y": 55,
+      "label": "6"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 20,
+      "y": 7,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 40.6,
+      "y": 22.6
+     },
+     {
+      "id": "s1",
+      "x": 16,
+      "y": 7
+     },
+     {
+      "id": "s2",
+      "x": 16,
+      "y": 10.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Raum sehen",
+      "say": "Neon zwei steht außen und schaut schon vor dem Pass ins Feld. Wo ist Platz für die erste Ballmitnahme? Dann spielt Neon elf zu ihm.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         40,
+         30
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         26.6,
+         24.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Rein und raus",
+      "say": "Neon zwei nimmt den Ball mit dem ersten Kontakt ins Feld. Gleichzeitig läuft Neon vier nach außen und ist jetzt Außenspieler.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         33,
+         27
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n4",
+        "to": [
+         26,
+         42
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Drei Pässe: Punkt",
+      "say": "Neon zwei spielt zu Neon vier, und Neon vier spielt zu Neon fünf ins Dreieck. Das sind drei Pässe im linken Dreieck, und das gibt einen Punkt für Team Neon. Jetzt geht es ins nächste Dreieck.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         26.6,
+         42.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n5",
+        "to": [
+         43,
+         33
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         43.6,
+         33.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,629 @@
+{
+ "title": "Passen und Abschließen",
+ "code": "UE-196",
+ "kind": "Übungsform",
+ "focuses": [
+  "Erwärmung",
+  "Passspiel",
+  "Torschuss"
+ ],
+ "age_groups": [
+  "F-Jugend",
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 10,
+ "players_min": 5,
+ "players_max": 10,
+ "field_size": "27 x 23 m",
+ "description": "Ein Aufwärmen mit Pass und Torschuss über drei Stationen. Der erste Spieler passt zum Mitspieler am Hütchen und läuft locker hinterher, dabei macht er eine Aufwärmübung. Der Mitspieler spielt steil in den Lauf des Stürmers, und der schießt mit der Innenseite am Torwart vorbei. Danach geht jeder eine Station weiter.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 27 mal 23 Metern mit einem Jugendtor oben. Hütchen als Stationen oben links, in der Mitte links und unten in der Mitte, rechts die gleichen Stationen für die andere Seite. Neben dem Tor liegen Bälle.",
+  "Verteilen: Ein Torwart steht im Tor. Neon acht startet oben links mit Ball, Neon sieben wartet dahinter. Neon zehn steht am Hütchen links, Neon neun unten als Stürmer. Der Trainer steht unten links.",
+  "Ablauf: Neon acht passt zu Neon zehn und läuft locker hinterher, dabei macht er eine Aufwärmübung. Neon zehn spielt steil in den Lauf von Neon neun. Neon neun nimmt den Ball mit und schießt mit der Innenseite.",
+  "Wertung und Wechsel: Jeder Treffer gibt einen Punkt für den Stürmer. Danach geht jeder eine Station weiter, der Stürmer holt einen Ball und stellt sich oben an. Mit jeder Station die Aufwärmübung wechseln."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Zwischen den Stationen sauber und ruhig die Übung machen",
+  "Enger erster Kontakt, genaue Pässe und gute Abschlüsse",
+  "Auch mit mehr Tempo sauber bleiben",
+  "Den Steilpass so spielen, dass der Stürmer ihn im Lauf bekommt"
+ ],
+ "materials": [
+  "1 Jugendtor",
+  "5 Hütchen",
+  "1 Stange",
+  "Viele Bälle",
+  "Leibchen"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Passen und Abschließen. Ein Aufwärmen mit Pass, Steilpass und Torschuss, und zwischen den Stationen wird gedehnt.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 43
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "jugend"
+   }
+  ],
+  "cones": [
+   {
+    "x": 32,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 68,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 27,
+    "y": 31.5,
+    "color": "orange"
+   },
+   {
+    "x": 72,
+    "y": 31.5,
+    "color": "orange"
+   },
+   {
+    "x": 56.5,
+    "y": 39.5,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "k",
+    "team": "t",
+    "x": 50,
+    "y": 8.5,
+    "label": "TW"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 30,
+    "y": 7,
+    "label": "8"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 21,
+    "y": 5,
+    "label": "7"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 29.5,
+    "y": 35,
+    "label": "10"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 53,
+    "y": 39,
+    "label": "9"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 18,
+    "y": 49,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 30.6,
+    "y": 7.6
+   },
+   {
+    "id": "h1",
+    "x": 37,
+    "y": 2.5
+   },
+   {
+    "id": "h2",
+    "x": 39.5,
+    "y": 2.5
+   },
+   {
+    "id": "h3",
+    "x": 61,
+    "y": 2.5
+   },
+   {
+    "id": "h4",
+    "x": 63.5,
+    "y": 2.5
+   },
+   {
+    "id": "s1",
+    "x": 21.6,
+    "y": 49
+   },
+   {
+    "id": "s2",
+    "x": 18,
+    "y": 52.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pass zur Station",
+    "say": "Neon acht spielt den Ball nach unten zu Neon zehn am Hütchen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       30.1,
+       35.6
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Steilpass",
+    "say": "Neon acht läuft locker hinterher und macht dabei eine Aufwärmübung, zum Beispiel Knie hoch. Gleichzeitig startet Neon neun, und Neon zehn spielt steil in seinen Lauf.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       31,
+       27
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n9",
+      "to": [
+       51,
+       27.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       51.6,
+       28.1
+      ],
+      "type": "pass",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Abschluss: Punkt",
+    "say": "Neon neun nimmt den Ball mit einem Kontakt mit und schiebt ihn mit der Innenseite am Torwart vorbei. Das gibt einen Punkt für Neon neun. Dann geht jeder eine Station weiter: Neon acht zum Hütchen, Neon zehn nach unten, und Neon sieben startet den nächsten Durchgang.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       52,
+       21
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       54,
+       5.4
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n10",
+      "to": [
+       48,
+       42
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n8",
+      "to": [
+       29.5,
+       35
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "27 m"
+   },
+   {
+    "x1": 83,
+    "y1": 5,
+    "x2": 83,
+    "y2": 48,
+    "text": "23 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Zwischen den Stationen sauber aufwärmen.",
+   "title": "Sauber dehnen",
+   "text": "Zwischen den Stationen wird locker gelaufen und gedehnt. Jede Bewegung wird ruhig und sauber gemacht, zum Beispiel Fußspitzen antippen oder Waden dehnen. Mit jeder Station kommt eine neue Übung dran.",
+   "board": {
+    "players": [
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50,
+      "y": 8.5,
+      "label": "TW"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 30,
+      "y": 7,
+      "label": "8"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 21,
+      "y": 5,
+      "label": "7"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 29.5,
+      "y": 35,
+      "label": "10"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 53,
+      "y": 39,
+      "label": "9"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 18,
+      "y": 49,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 30.1,
+      "y": 35.6
+     },
+     {
+      "id": "h1",
+      "x": 37,
+      "y": 2.5
+     },
+     {
+      "id": "h2",
+      "x": 39.5,
+      "y": 2.5
+     },
+     {
+      "id": "h3",
+      "x": 61,
+      "y": 2.5
+     },
+     {
+      "id": "h4",
+      "x": 63.5,
+      "y": 2.5
+     },
+     {
+      "id": "s1",
+      "x": 21.6,
+      "y": 49
+     },
+     {
+      "id": "s2",
+      "x": 18,
+      "y": 52.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Locker laufen",
+      "say": "Neon acht hat den Pass gespielt und läuft locker los. Unterwegs tippt er abwechselnd mit den Fußspitzen auf.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         30.5,
+         17
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Waden dehnen",
+      "say": "Dann bleibt er kurz stehen und dehnt ruhig die Waden. Erst danach läuft er weiter zur nächsten Station. Dort wartet schon die nächste Übung.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         31,
+         27
+        ],
+        "type": "lauf",
+        "delay": 0.8
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Mehr Tempo und ein Doppelpass an der Stange.",
+   "title": "Doppelpass und Tempo",
+   "text": "Jetzt laufen alle mit Dreiviertel-Tempo zwischen den Stationen. In der Mitte steht eine Stange. Neon zehn und Neon neun spielen einen Doppelpass, dann kommt der Steilpass um die Stange herum.",
+   "board": {
+    "players": [
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50,
+      "y": 8.5,
+      "label": "TW"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 30,
+      "y": 7,
+      "label": "8"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 21,
+      "y": 5,
+      "label": "7"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 29.5,
+      "y": 35,
+      "label": "10"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 53,
+      "y": 39,
+      "label": "9"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 18,
+      "y": 49,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 30.1,
+      "y": 35.6
+     },
+     {
+      "id": "h1",
+      "x": 37,
+      "y": 2.5
+     },
+     {
+      "id": "h2",
+      "x": 39.5,
+      "y": 2.5
+     },
+     {
+      "id": "h3",
+      "x": 61,
+      "y": 2.5
+     },
+     {
+      "id": "h4",
+      "x": 63.5,
+      "y": 2.5
+     },
+     {
+      "id": "s1",
+      "x": 21.6,
+      "y": 49
+     },
+     {
+      "id": "s2",
+      "x": 18,
+      "y": 52.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zu Neon neun",
+      "say": "Neon acht läuft jetzt mit Dreiviertel-Tempo hinterher. Neon zehn spielt flach zu Neon neun.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         31,
+         27
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         53.6,
+         39.6
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Doppelpass",
+      "say": "Neon zehn läuft nach vorn, und Neon neun spielt den Ball direkt zu ihm zurück.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         44,
+         35
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         44.6,
+         35.6
+        ],
+        "type": "pass",
+        "delay": 0.4
+       }
+      ]
+     },
+     {
+      "label": "Steilpass: Punkt",
+      "say": "Neon neun läuft rechts an der Stange vorbei. Neon zehn schaut hoch und spielt steil in seinen Lauf. Neon neun schiebt den Ball mit der Innenseite ins Tor, und das gibt einen Punkt für Neon neun.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         57,
+         30
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n9",
+        "to": [
+         54,
+         21
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n10",
+        "to": [
+         55,
+         22
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         54.6,
+         21.6
+        ],
+        "type": "pass",
+        "delay": 0.5
+       },
+       {
+        "who": "b1",
+        "to": [
+         53.5,
+         5.4
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "cones": [
+     {
+      "x": 32,
+      "y": 5,
+      "color": "orange",
+      "id": "c1"
+     },
+     {
+      "x": 68,
+      "y": 5,
+      "color": "orange",
+      "id": "c2"
+     },
+     {
+      "x": 27,
+      "y": 31.5,
+      "color": "orange",
+      "id": "c3"
+     },
+     {
+      "x": 72,
+      "y": 31.5,
+      "color": "orange",
+      "id": "c4"
+     },
+     {
+      "x": 56.5,
+      "y": 39.5,
+      "color": "orange",
+      "id": "c5"
+     },
+     {
+      "x": 47,
+      "y": 27,
+      "color": "orange",
+      "shape": "stange",
+      "id": "c6"
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,1031 @@
+{
+ "title": "Dribbel-Parcours mit Pässen",
+ "code": "UE-186",
+ "kind": "Übungsform",
+ "focuses": [
+  "Erwärmung",
+  "Dribbling",
+  "Koordination"
+ ],
+ "age_groups": [
+  "F-Jugend",
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 10,
+ "players_min": 12,
+ "players_max": 12,
+ "field_size": "18 x 27 m",
+ "description": "Ein Aufwärmen mit vier Stationen, die alle gleichzeitig laufen. Oben wird durch Stangen gedribbelt, rechts auf einem Bein durch Ringe gehüpft, unten durch Hütchen gedribbelt und links mit Seitschritten gewartet. In der Mitte treffen sich die Spieler, legen Bälle ab und passen sich zu. Danach geht jeder zur nächsten Station.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 27 Metern. Oben vier Stangen, rechts fünf Ringe, unten vier Hütchen im Slalom, links zwei Hütchen.",
+  "Verteilen: An jeder Station steht eine kleine Reihe. Oben und unten haben die Spieler Bälle. Der Trainer steht rechts mit Bällen.",
+  "Ablauf: Der Stangen-Dribbler legt den Ball in der Mitte ab und bekommt einen Pass vom Hütchen-Dribbler. Der Spieler aus den Ringen holt den abgelegten Ball und passt quer nach links. Der Spieler links dribbelt zurück zum Start.",
+  "Wechsel: Jeder geht nach seiner Aufgabe zur nächsten Station. Es geht ohne Pause weiter, bis der Trainer eine kurze Pause ruft."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Den Ball beim Dribbeln eng am Fuß führen",
+  "Sauber auf einem Bein durch die Ringe hüpfen: Technik vor Tempo",
+  "Kopf hoch und den Lauf zeitlich gut abstimmen",
+  "Genau passen und laut miteinander reden"
+ ],
+ "materials": [
+  "4 Stangen",
+  "5 Koordinationsringe",
+  "8 Hütchen",
+  "Einige Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Dribbel-Parcours mit Pässen. Vier Stationen laufen gleichzeitig, und in der Mitte treffen sich die Spieler zum Passen.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 30,
+    "y": 5,
+    "w": 40,
+    "h": 50
+   },
+   {
+    "type": "circle",
+    "x": 63,
+    "y": 24,
+    "r": 1.6
+   },
+   {
+    "type": "circle",
+    "x": 66,
+    "y": 27,
+    "r": 1.6
+   },
+   {
+    "type": "circle",
+    "x": 63,
+    "y": 30,
+    "r": 1.6
+   },
+   {
+    "type": "circle",
+    "x": 66,
+    "y": 33,
+    "r": 1.6
+   },
+   {
+    "type": "circle",
+    "x": 63,
+    "y": 36,
+    "r": 1.6
+   }
+  ],
+  "cones": [
+   {
+    "x": 50,
+    "y": 9,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 50,
+    "y": 14,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 50,
+    "y": 19,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 50,
+    "y": 24,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 50,
+    "y": 50,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 46,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 42,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 38,
+    "color": "orange"
+   },
+   {
+    "x": 43,
+    "y": 36,
+    "color": "orange"
+   },
+   {
+    "x": 57,
+    "y": 36,
+    "color": "orange"
+   },
+   {
+    "x": 38.5,
+    "y": 25,
+    "color": "orange"
+   },
+   {
+    "x": 38.5,
+    "y": 35,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 50,
+    "y": 3,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 58.5,
+    "y": 3,
+    "label": "3"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 67,
+    "y": 3,
+    "label": "10"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 64,
+    "y": 19,
+    "label": "8"
+   },
+   {
+    "id": "n13",
+    "team": "a",
+    "x": 76,
+    "y": 17,
+    "label": "13"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 84.5,
+    "y": 17,
+    "label": "5"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 34,
+    "y": 30,
+    "label": "4"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 24,
+    "y": 26,
+    "label": "6"
+   },
+   {
+    "id": "n12",
+    "team": "a",
+    "x": 15.5,
+    "y": 26,
+    "label": "12"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 50,
+    "y": 54,
+    "label": "7"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 78,
+    "y": 51,
+    "label": "11"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 86.5,
+    "y": 51,
+    "label": "9"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 84,
+    "y": 34,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 50.6,
+    "y": 3.6
+   },
+   {
+    "id": "b2",
+    "x": 50.6,
+    "y": 54.6
+   },
+   {
+    "id": "b3",
+    "x": 59.1,
+    "y": 3.6
+   },
+   {
+    "id": "b4",
+    "x": 78.6,
+    "y": 51.6
+   },
+   {
+    "id": "s1",
+    "x": 88.5,
+    "y": 30.5
+   },
+   {
+    "id": "s2",
+    "x": 88.5,
+    "y": 34.1
+   }
+  ],
+  "steps": [
+   {
+    "label": "Alle gleichzeitig",
+    "say": "Alle vier Stationen starten gleichzeitig. Neon zwei dribbelt durch die Stangen, Neon acht hüpft auf einem Bein durch die Ringe, Neon sieben dribbelt durch die Hütchen, und Neon vier macht schnelle Seitschritte.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       53,
+       9
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n2",
+      "to": [
+       47,
+       14
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n2",
+      "to": [
+       53,
+       19
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n2",
+      "to": [
+       47,
+       24
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n8",
+      "to": [
+       63,
+       24
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n8",
+      "to": [
+       66,
+       27
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       63,
+       30
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       66,
+       33
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       63,
+       36
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       53,
+       50
+      ],
+      "type": "dribbling",
+      "ball": "b2"
+     },
+     {
+      "who": "n7",
+      "to": [
+       47,
+       46
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "n7",
+      "to": [
+       53,
+       42
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "n7",
+      "to": [
+       47,
+       38
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "n4",
+      "to": [
+       34,
+       26
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n4",
+      "to": [
+       34,
+       34
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n4",
+      "to": [
+       34,
+       30
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Ablegen und passen",
+    "say": "Neon zwei lässt den Ball in der Mitte liegen und läuft weiter. Neon sieben hebt den Kopf, sieht Neon zwei und passt ihm den Ball in den Lauf.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       50,
+       28
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n2",
+      "to": [
+       54,
+       33
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       61,
+       28
+      ],
+      "type": "blick",
+      "after": true
+     },
+     {
+      "who": "b2",
+      "to": [
+       54.6,
+       33.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Quer nach links",
+    "say": "Neon acht kommt genau richtig aus den Ringen, holt den abgelegten Ball und passt quer zu Neon vier. Gleichzeitig dribbelt Neon zwei nach unten, und Neon sieben läuft zu den Ringen.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       50,
+       28
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       34.6,
+       30.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       60,
+       34
+      ],
+      "type": "dribbling",
+      "ball": "b2"
+     },
+     {
+      "who": "n2",
+      "to": [
+       69,
+       55
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "n7",
+      "to": [
+       64,
+       19
+      ],
+      "type": "lauf"
+     }
+    ]
+   },
+   {
+    "label": "Zurück zum Start",
+    "say": "Neon vier nimmt den Ball mit und dribbelt zurück zum Start oben. Neon acht stellt sich links an. Geschafft! Jetzt sind Neon drei, Neon dreizehn, Neon elf und Neon sechs dran, und alles beginnt von vorn.",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       41.5,
+       3
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n8",
+      "to": [
+       40,
+       31
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n8",
+      "to": [
+       24,
+       42
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 30,
+    "y1": 58.6,
+    "x2": 70,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 97,
+    "y1": 5,
+    "x2": 97,
+    "y2": 55,
+    "text": "27 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Volleys und Kopfbälle.",
+   "title": "Volleys und Kopfbälle",
+   "text": "Nach den Hütchen nimmt der Spieler den Ball in die Hände. Er ruft laut, wie der Ball zurückkommen soll: links, rechts oder Kopf. Dann wirft er genau, und der Mitspieler spielt den Ball direkt zurück.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 56,
+      "y": 32,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 58.5,
+      "y": 3,
+      "label": "3"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 67,
+      "y": 3,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 66,
+      "y": 33,
+      "label": "8"
+     },
+     {
+      "id": "n13",
+      "team": "a",
+      "x": 76,
+      "y": 17,
+      "label": "13"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 84.5,
+      "y": 17,
+      "label": "5"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 34,
+      "y": 30,
+      "label": "4"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 24,
+      "y": 26,
+      "label": "6"
+     },
+     {
+      "id": "n12",
+      "team": "a",
+      "x": 15.5,
+      "y": 26,
+      "label": "12"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 46,
+      "y": 36,
+      "label": "7"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 78,
+      "y": 51,
+      "label": "11"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 86.5,
+      "y": 51,
+      "label": "9"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 84,
+      "y": 34,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 28.6
+     },
+     {
+      "id": "b2",
+      "x": 46.6,
+      "y": 36.6
+     },
+     {
+      "id": "b3",
+      "x": 59.1,
+      "y": 3.6
+     },
+     {
+      "id": "b4",
+      "x": 78.6,
+      "y": 51.6
+     },
+     {
+      "id": "s1",
+      "x": 88.5,
+      "y": 30.5
+     },
+     {
+      "id": "s2",
+      "x": 88.5,
+      "y": 34.1
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zuwurf",
+      "say": "Neon sieben nimmt den Ball nach den Hütchen in die Hände, ruft laut links und wirft ihn Neon zwei zu.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         56.6,
+         32.6
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Volley zurück",
+      "say": "Neon zwei spielt den Ball mit links direkt zurück. Dann ruft Neon sieben Kopf, wirft noch einmal, und Neon zwei köpft zurück.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         46.6,
+         36.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b2",
+        "to": [
+         56.6,
+         32.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b2",
+        "to": [
+         46.6,
+         36.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Weiter wie vorher",
+      "say": "Jetzt passt Neon sieben flach zu Neon zwei, der nach unten dribbelt. Neon acht holt den Ball in der Mitte und passt quer zu Neon vier. Dann sind die Nächsten dran.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         56.6,
+         32.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n2",
+        "to": [
+         60,
+         34
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b2"
+       },
+       {
+        "who": "n2",
+        "to": [
+         69,
+         55
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b2"
+       },
+       {
+        "who": "n8",
+        "to": [
+         50,
+         28
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         34.6,
+         30.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Ein Doppelpass auf der linken Seite.",
+   "title": "Doppelpass links",
+   "text": "Der Spieler links bekommt den Pass aus der Mitte und spielt ihn direkt zurück. Dann startet er nach vorn und bekommt den Ball in den Lauf. So wird aus dem Querpass ein Doppelpass.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 62,
+      "y": 48,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 58.5,
+      "y": 3,
+      "label": "3"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 67,
+      "y": 3,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 50,
+      "y": 28,
+      "label": "8"
+     },
+     {
+      "id": "n13",
+      "team": "a",
+      "x": 76,
+      "y": 17,
+      "label": "13"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 84.5,
+      "y": 17,
+      "label": "5"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 34,
+      "y": 30,
+      "label": "4"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 24,
+      "y": 26,
+      "label": "6"
+     },
+     {
+      "id": "n12",
+      "team": "a",
+      "x": 15.5,
+      "y": 26,
+      "label": "12"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 64,
+      "y": 19,
+      "label": "7"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 78,
+      "y": 51,
+      "label": "11"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 86.5,
+      "y": 51,
+      "label": "9"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 84,
+      "y": 34,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 28.6
+     },
+     {
+      "id": "b2",
+      "x": 62.6,
+      "y": 48.6
+     },
+     {
+      "id": "b3",
+      "x": 59.1,
+      "y": 3.6
+     },
+     {
+      "id": "b4",
+      "x": 78.6,
+      "y": 51.6
+     },
+     {
+      "id": "s1",
+      "x": 88.5,
+      "y": 30.5
+     },
+     {
+      "id": "s2",
+      "x": 88.5,
+      "y": 34.1
+     }
+    ],
+    "steps": [
+     {
+      "label": "Pass nach links",
+      "say": "Neon acht hat den Ball in der Mitte und passt quer zu Neon vier.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         34.6,
+         30.6
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Direkt zurück",
+      "say": "Neon vier spielt den Ball direkt zurück zu Neon acht.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         28.6
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "In den Lauf",
+      "say": "Neon vier startet nach vorn, und Neon acht spielt ihm den Ball in den Lauf.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         34,
+         17
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         34.6,
+         17.6
+        ],
+        "type": "pass",
+        "delay": 0.4
+       }
+      ]
+     },
+     {
+      "label": "Zurück zum Start",
+      "say": "Neon vier dribbelt zum Start oben, und Neon acht stellt sich links an. Jetzt sind die Nächsten an allen Stationen dran.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         41.5,
+         3
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n8",
+        "to": [
+         40,
+         31
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n8",
+        "to": [
+         24,
+         42
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

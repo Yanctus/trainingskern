@@ -57,5 +57,5 @@ u = {"title": "Passen und Abschließen", "code": "UE-196", "kind": "Übungsform"
      S("Steilpass: Punkt", "Neon neun läuft rechts an der Stange vorbei. Neon zehn schaut hoch und spielt steil in seinen Lauf. Neon neun schiebt den Ball mit der Innenseite ins Tor, und das gibt einen Punkt für Neon neun.",
        mv("n9", [57, 30]), mv("n9", [54, 21], after=True), bl("n10", [55, 22]), ps("b1", [54.6, 21.6], delay=0.5),
        ps("b1", [53.5, 5.4], after=True))],
-    cones=[dict(c, id=f"h{i + 1}") for i, c in enumerate(CONES + [C(47, 27, shape="stange")])])]}
+    cones=[dict(c, id=f"c{i + 1}") for i, c in enumerate(CONES + [C(47, 27, shape="stange")])])]}
 json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)
