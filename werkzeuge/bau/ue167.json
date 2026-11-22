@@ -1,0 +1,832 @@
+{
+ "title": "Das Hütchentor verteidigen",
+ "code": "UE-167",
+ "kind": "Übungsform",
+ "focuses": [
+  "Verteidigen",
+  "1 gegen 1",
+  "Umschalten"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 10,
+ "players_max": 14,
+ "field_size": "29 x 22 m",
+ "description": "In zwei Hälften spielen je drei Spieler den Ball hin und her, bis einer nach vorn zum Angreifer passt. Der Angreifer will durch ein Hütchentor dribbeln, ein Verteidiger des anderen Teams will das verhindern. Der Verteidiger stellt sich richtig hin, lenkt den Angreifer nach außen und fängt Pässe ab. Erobert er den Ball, dribbelt er durch das Hütchentor auf der anderen Seite und holt zwei Punkte.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 29 mal 22 Metern, in eine linke und eine rechte Hälfte geteilt. Jede Hälfte hat drei Zonen: Aufbauzone, Mittelzone und Endzone. Am Rand jeder Endzone ein Hütchentor.",
+  "Verteilen: Links spielen drei Neon-Spieler in der Aufbauzone, Neon neun ist Angreifer und Rot zehn verteidigt in der Mittelzone. Rechts ist es genau andersherum. Der Trainer steht an der Seite mit Bällen.",
+  "Ablauf: Die drei passen sich den Ball zu, bis einer nach vorn zum Angreifer spielt. Der Angreifer will durch das Hütchentor dribbeln, der Verteidiger will den Ball vorher erobern. Beide Hälften spielen gleichzeitig.",
+  "Wertung: Dribbelt der Angreifer durch das Hütchentor, gibt das einen Punkt. Blockt der Verteidiger den Ball in der Endzone, gibt das einen Punkt für sein Team. Erobert er den Ball in der Mittelzone und dribbelt durch das Hütchentor auf der anderen Seite, gibt das zwei Punkte."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Je nach Ball richtig stehen",
+  "Mit dem Körper den Angreifer nach außen lenken",
+  "Den Pass vorausahnen und dazwischengehen",
+  "Schnell schauen, wo Ball und Gegner sind"
+ ],
+ "materials": [
+  "4 Hütchen für zwei Hütchentore",
+  "Hütchen für Feld und Zonen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Das Hütchentor verteidigen. Ein Verteidiger in der Mitte will verhindern, dass der Angreifer durch das Hütchentor dribbelt.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 20,
+    "y": 7.5,
+    "w": 60,
+    "h": 45
+   },
+   {
+    "type": "line",
+    "x1": 50,
+    "y1": 7.5,
+    "x2": 50,
+    "y2": 52.5,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 20,
+    "y1": 19.2,
+    "x2": 80,
+    "y2": 19.2,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 20,
+    "y1": 39.9,
+    "x2": 80,
+    "y2": 39.9,
+    "dashed": true
+   }
+  ],
+  "cones": [
+   {
+    "x": 28.7,
+    "y": 7.5,
+    "color": "orange"
+   },
+   {
+    "x": 39.6,
+    "y": 7.5,
+    "color": "orange"
+   },
+   {
+    "x": 60.6,
+    "y": 52.5,
+    "color": "orange"
+   },
+   {
+    "x": 71.4,
+    "y": 52.5,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 25.2,
+    "y": 44,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 35.4,
+    "y": 47.9,
+    "label": "3"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 45.2,
+    "y": 43.3,
+    "label": "4"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 22.5,
+    "y": 24,
+    "label": "9"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 35,
+    "y": 30,
+    "label": "10"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 54.3,
+    "y": 16,
+    "label": "7"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 64.4,
+    "y": 11.7,
+    "label": "8"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 75,
+    "y": 15.9,
+    "label": "5"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 77.5,
+    "y": 33,
+    "label": "11"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 65,
+    "y": 30,
+    "label": "6"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 86,
+    "y": 30,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 45.8,
+    "y": 43.9
+   },
+   {
+    "id": "b2",
+    "x": 54.9,
+    "y": 16.6
+   },
+   {
+    "id": "s1",
+    "x": 89.6,
+    "y": 33.5
+   },
+   {
+    "id": "s2",
+    "x": 86,
+    "y": 33.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Ball laufen lassen",
+    "say": "Beide Hälften spielen gleichzeitig. Wir schauen nach links: Neon vier passt zu Neon drei, der weiter zu Neon zwei. Rot zehn schiebt mit und schaut, wo Neon neun steht.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       36,
+       48.5
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       25.8,
+       44.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b2",
+      "to": [
+       65,
+       12.3
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r10",
+      "to": [
+       33,
+       31
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     },
+     {
+      "who": "r10",
+      "to": [
+       22.5,
+       24
+      ],
+      "type": "blick",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Pass nach vorn",
+    "say": "Neon zwei spielt nach vorn zu Neon neun. Rot zehn sprintet sofort hin und stellt sich zwischen Neon neun und das Hütchentor.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       23.1,
+       24.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r10",
+      "to": [
+       29,
+       21
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Erobert und durch: Punkte",
+    "say": "Neon neun muss nach außen. Rot zehn erobert den Ball noch in der Mittelzone und dribbelt durch das Hütchentor auf der anderen Seite, und das gibt zwei Punkte für Team Rot. Dann spielt der Trainer einen neuen Ball zu Team Neon.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       23,
+       20.5
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "r10",
+      "to": [
+       24.5,
+       19.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r10",
+      "to": [
+       44,
+       34
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "r10",
+      "to": [
+       66,
+       54.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 20,
+    "y1": 58.6,
+    "x2": 80,
+    "y2": 58.6,
+    "text": "29 m"
+   },
+   {
+    "x1": 12,
+    "y1": 7.5,
+    "x2": 12,
+    "y2": 52.5,
+    "text": "22 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Zwei gegen eins in der Mitte.",
+   "title": "Zwei gegen eins",
+   "text": "Jetzt läuft ein zweiter Spieler aus der Aufbauzone mit nach vorn. In der Mitte steht es dann zwei gegen eins. Der Verteidiger schaut schnell über die Schulter, wo beide stehen, und lauert auf den Pass.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 25.2,
+      "y": 44,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 35.4,
+      "y": 47.9,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 45.2,
+      "y": 43.3,
+      "label": "4"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 22.5,
+      "y": 24,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 35,
+      "y": 30,
+      "label": "10"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 54.3,
+      "y": 16,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 64.4,
+      "y": 11.7,
+      "label": "8"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 75,
+      "y": 15.9,
+      "label": "5"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 77.5,
+      "y": 33,
+      "label": "11"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 65,
+      "y": 30,
+      "label": "6"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 86,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 25.8,
+      "y": 44.6
+     },
+     {
+      "id": "b2",
+      "x": 65,
+      "y": 12.3
+     },
+     {
+      "id": "s1",
+      "x": 89.6,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 86,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zwei gegen eins",
+      "say": "Neon zwei spielt nach vorn zu Neon neun, und Neon drei läuft mit in die Mitte. Rot zehn läuft Neon neun an und schaut schnell über die Schulter zu Neon drei.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         23.1,
+         24.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n3",
+        "to": [
+         44,
+         31
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "r10",
+        "to": [
+         29,
+         24
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "r10",
+        "to": [
+         44,
+         31
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Abgefangen: Punkte",
+      "say": "Neon neun will zu Neon drei passen. Rot zehn ahnt den Pass, fängt ihn ab und dribbelt durch das Hütchentor auf der anderen Seite, und das gibt zwei Punkte für Team Rot.",
+      "moves": [
+       {
+        "who": "r10",
+        "to": [
+         32.4,
+         27.2
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         33,
+         27.8
+        ],
+        "type": "pass",
+        "delay": 0.2
+       },
+       {
+        "who": "r10",
+        "to": [
+         42,
+         36
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "r10",
+        "to": [
+         64,
+         44
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "r10",
+        "to": [
+         66,
+         54.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Drei gegen zwei in der Aufbauzone.",
+   "title": "Drei gegen zwei",
+   "text": "Jetzt pressen in der Aufbauzone zwei Gegner. Die drei Spieler müssen sich den Ball sicher zupassen, bevor einer nach vorn spielt. Dann läuft einer mit, und der Verteidiger muss Angreifer und Mitspieler im Blick behalten.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 25,
+      "y": 51.6,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 35.5,
+      "y": 51.6,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 45.5,
+      "y": 51.6,
+      "label": "4"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 27.5,
+      "y": 36,
+      "label": "12"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 44.5,
+      "y": 36,
+      "label": "14"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 36,
+      "y": 27,
+      "label": "10"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 22.5,
+      "y": 20,
+      "label": "9"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 55,
+      "y": 8.5,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 65,
+      "y": 8.5,
+      "label": "8"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 75,
+      "y": 8.5,
+      "label": "5"
+     },
+     {
+      "id": "n13",
+      "team": "a",
+      "x": 57.5,
+      "y": 24.1,
+      "label": "13"
+     },
+     {
+      "id": "n15",
+      "team": "a",
+      "x": 74.5,
+      "y": 24.1,
+      "label": "15"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 66,
+      "y": 32,
+      "label": "6"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 77.5,
+      "y": 40,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 86,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 36.1,
+      "y": 52.2
+     },
+     {
+      "id": "b2",
+      "x": 65.6,
+      "y": 9.1
+     },
+     {
+      "id": "s1",
+      "x": 89.6,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 86,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Drei gegen zwei",
+      "say": "Links pressen Rot zwölf und Rot vierzehn, und Neon drei passt schnell zu Neon zwei. Rechts spielt Team Rot gleichzeitig gegen Neon dreizehn und Neon fünfzehn.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         25.6,
+         52.2
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r12",
+        "to": [
+         30,
+         45
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "r14",
+        "to": [
+         42,
+         46
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "b2",
+        "to": [
+         75.6,
+         9.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n15",
+        "to": [
+         72,
+         15
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Pass nach vorn",
+      "say": "Neon zwei spielt nach vorn zu Neon neun, und Neon drei läuft mit in die Mitte. Rot zehn schaut schnell zu beiden.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         23.1,
+         20.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n3",
+        "to": [
+         44,
+         30
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "r10",
+        "to": [
+         36,
+         44
+        ],
+        "type": "blick",
+        "delay": 0.3
+       },
+       {
+        "who": "r10",
+        "to": [
+         22.5,
+         20
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Abgefangen: Punkte",
+      "say": "Neon neun will quer zu Neon drei passen. Rot zehn ahnt den Pass, fängt ihn ab und dribbelt durch das Hütchentor auf der anderen Seite, und das gibt zwei Punkte für Team Rot.",
+      "moves": [
+       {
+        "who": "r10",
+        "to": [
+         32.4,
+         24.6
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         33,
+         25.2
+        ],
+        "type": "pass",
+        "delay": 0.2
+       },
+       {
+        "who": "r10",
+        "to": [
+         42,
+         36
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "r10",
+        "to": [
+         64,
+         44
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "r10",
+        "to": [
+         66,
+         54.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

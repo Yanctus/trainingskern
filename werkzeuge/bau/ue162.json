@@ -1,0 +1,665 @@
+{
+ "title": "Steilpass in die Endzone",
+ "code": "UE-162",
+ "kind": "Spielform",
+ "focuses": [
+  "Passspiel",
+  "Bewegung",
+  "Torschuss"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 10,
+ "players_max": 10,
+ "field_size": "23 x 32 m",
+ "description": "Fünf gegen fünf in der Mitte, an beiden Enden eine Endzone mit zwei Minitoren. Das Team am Ball muss erst acht Pässe spielen, dann darf ein Steilpass in die Endzone kommen. Ein Angreifer startet hinein, nimmt den Ball mit und schießt ins Minitor. Die Verteidiger dürfen nicht in die Endzone und müssen die Passwege gemeinsam zumachen.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 23 mal 32 Metern. An beiden Enden eine Endzone von 9 Metern, gestrichelt abgeteilt. Auf jeder Grundlinie zwei Minitore.",
+  "Verteilen: Zwei Teams zu fünft in der Mitte. Team Neon greift die oberen Minitore an, Team Rot die unteren. Der Trainer steht an der Seite mit Bällen.",
+  "Ablauf: Nach acht Pässen darf der Steilpass in die Endzone kommen. Nur Angreifer dürfen in die Endzone laufen, Verteidiger nicht. Abschluss mit ein oder zwei Kontakten.",
+  "Wertung und Wechsel: Ein Treffer ins Minitor gibt einen Punkt. Erobert das andere Team den Ball oder geht der Ball ins Aus, wechseln die Rollen."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Lücken früh sehen und den Pass nach vorn spielen",
+  "Den Steilpass genau und mit dem richtigen Tempo in den Lauf spielen",
+  "Den Lauf richtig timen und ruhig abschließen",
+  "Als Abwehr zusammen verschieben und Passwege zumachen"
+ ],
+ "materials": [
+  "4 Minitore",
+  "Hütchen für Feld und Endzonen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Steilpass in die Endzone. Fünf gegen fünf, und nach acht Pässen darf der Ball steil in die Endzone zum Abschluss.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 32.15,
+    "y": 5,
+    "w": 35.7,
+    "h": 50
+   },
+   {
+    "type": "line",
+    "x1": 32.15,
+    "y1": 19.3,
+    "x2": 67.85,
+    "y2": 19.3,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 32.15,
+    "y1": 40.7,
+    "x2": 67.85,
+    "y2": 40.7,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 37.9,
+    "y": 5,
+    "side": "top"
+   },
+   {
+    "x": 62.1,
+    "y": 5,
+    "side": "top"
+   },
+   {
+    "x": 37.9,
+    "y": 55,
+    "side": "bottom"
+   },
+   {
+    "x": 62.1,
+    "y": 55,
+    "side": "bottom"
+   }
+  ],
+  "cones": [],
+  "players": [
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 33.9,
+    "y": 39.5,
+    "label": "6"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 42.15,
+    "y": 20,
+    "label": "9"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 50.4,
+    "y": 40,
+    "label": "8"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 58.65,
+    "y": 20,
+    "label": "10"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 66.9,
+    "y": 39.5,
+    "label": "7"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 33.9,
+    "y": 23,
+    "label": "2"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 42.15,
+    "y": 36,
+    "label": "3"
+   },
+   {
+    "id": "r4",
+    "team": "b",
+    "x": 50.4,
+    "y": 24,
+    "label": "4"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 58.65,
+    "y": 36,
+    "label": "5"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 66.9,
+    "y": 23.5,
+    "label": "11"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 76,
+    "y": 30,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 34.5,
+    "y": 40.1
+   },
+   {
+    "id": "s1",
+    "x": 79.6,
+    "y": 33.5
+   },
+   {
+    "id": "s2",
+    "x": 76,
+    "y": 33.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Acht Pässe",
+    "say": "Team Neon greift nach oben an und muss erst acht Pässe spielen. Neon sechs passt zu Neon acht, der weiter zu Neon sieben. Team Rot verschiebt gemeinsam mit.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       51.0,
+       40.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       67.5,
+       40.1
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r3",
+      "to": [
+       46,
+       35
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "r5",
+      "to": [
+       61,
+       35
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     }
+    ]
+   },
+   {
+    "label": "Lücke sehen",
+    "say": "Die acht Pässe sind geschafft. Neon sieben hebt den Kopf und sieht die Lücke zwischen Rot vier und Rot elf. Er spielt nach vorn zu Neon zehn.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       60,
+       22
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b1",
+      "to": [
+       59.25,
+       20.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Steil in die Zone",
+    "say": "Neon neun startet in die Endzone, und Neon zehn spielt ihm den Ball mit einem Kontakt in den Lauf. Die Verteidiger dürfen nicht hinterher in die Zone.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       47,
+       12
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       47.6,
+       12.6
+      ],
+      "type": "pass",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "Abschluss: Punkt",
+    "say": "Neon neun nimmt den Ball mit und schießt ins linke Minitor, und das gibt einen Punkt für Team Neon. Dann wechseln die Rollen, der Trainer bringt einen neuen Ball, und Team Rot greift nach unten an.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       44.5,
+       10
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       37.9,
+       5.3
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 32.15,
+    "y1": 58.6,
+    "x2": 67.85,
+    "y2": 58.6,
+    "text": "23 m"
+   },
+   {
+    "x1": 84,
+    "y1": 5,
+    "x2": 84,
+    "y2": 55,
+    "text": "32 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Den Lauf richtig timen.",
+   "title": "Lauf richtig timen",
+   "text": "Der Läufer startet nicht zu früh, sondern genau dann, wenn der Passgeber den Kopf hebt und ihn sieht. Der Pass kommt scharf und genau in den Lauf. Der erste Kontakt geht nach vorn, dann schießt der Läufer ruhig ins Minitor.",
+   "board": {
+    "players": [
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 33.9,
+      "y": 39.5,
+      "label": "6"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 42.15,
+      "y": 20,
+      "label": "9"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 50.4,
+      "y": 40,
+      "label": "8"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 58.65,
+      "y": 20,
+      "label": "10"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 66.9,
+      "y": 39.5,
+      "label": "7"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 33.9,
+      "y": 23,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 42.15,
+      "y": 36,
+      "label": "3"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 50.4,
+      "y": 24,
+      "label": "4"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 58.65,
+      "y": 36,
+      "label": "5"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 66.9,
+      "y": 23.5,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 76,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 51.0,
+      "y": 40.6
+     },
+     {
+      "id": "s1",
+      "x": 79.6,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 76,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Kopf hoch",
+      "say": "Neon acht hat den Ball und hebt den Kopf. Er sieht Neon neun, der kurz entgegenkommt und seinen Gegner weglockt.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         44,
+         24
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "n9",
+        "to": [
+         40,
+         25
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Jetzt starten",
+      "say": "Genau jetzt startet Neon neun in die Endzone. Neon acht spielt ihm den Ball scharf in den Lauf.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         44,
+         12
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         44.6,
+         12.6
+        ],
+        "type": "pass",
+        "delay": 0.4
+       }
+      ]
+     },
+     {
+      "label": "Ruhig ins Tor: Punkt",
+      "say": "Neon neun nimmt den Ball nach vorn mit und schießt ruhig ins linke Minitor. Das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         42,
+         9
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         37.9,
+         5.3
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Ein schneller Ballgewinn gibt einen Punkt für die Verteidiger.",
+   "title": "Hoch pressen",
+   "text": "Erobert Team Rot den Ball, bevor Team Neon acht Pässe geschafft hat, gibt das einen Punkt für Team Rot. Darum pressen die Verteidiger jetzt höher. Dadurch wird aber hinten Platz frei, den die Angreifer nutzen können.",
+   "board": {
+    "players": [
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 33.9,
+      "y": 39.5,
+      "label": "6"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 42.15,
+      "y": 20,
+      "label": "9"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 50.4,
+      "y": 40,
+      "label": "8"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 58.65,
+      "y": 20,
+      "label": "10"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 66.9,
+      "y": 39.5,
+      "label": "7"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 33.9,
+      "y": 23,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 42.15,
+      "y": 36,
+      "label": "3"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 50.4,
+      "y": 24,
+      "label": "4"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 58.65,
+      "y": 36,
+      "label": "5"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 66.9,
+      "y": 23.5,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 76,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 34.5,
+      "y": 40.1
+     },
+     {
+      "id": "s1",
+      "x": 79.6,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 76,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Hoch pressen",
+      "say": "Neon sechs passt zu Neon acht. Sofort rücken Rot vier und Rot fünf heraus und pressen.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         51.0,
+         40.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r4",
+        "to": [
+         50.4,
+         32
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "r5",
+        "to": [
+         57,
+         37
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Ballgewinn: Punkt",
+      "say": "Neon acht will zu Neon sieben passen, aber Rot fünf fängt den Ball ab. Das waren keine acht Pässe, und das gibt einen Punkt für Team Rot. Jetzt greift Team Rot an.",
+      "moves": [
+       {
+        "who": "r5",
+        "to": [
+         59,
+         40
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         59.6,
+         40.6
+        ],
+        "type": "pass",
+        "delay": 0.4
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

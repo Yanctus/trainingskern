@@ -1,0 +1,939 @@
+{
+ "title": "Schnelle Füße zum Aufwärmen",
+ "code": "UE-178",
+ "kind": "Übungsform",
+ "focuses": [
+  "Erwärmung",
+  "Koordination",
+  "Passspiel"
+ ],
+ "age_groups": [
+  "F-Jugend",
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 10,
+ "players_min": 8,
+ "players_max": 8,
+ "field_size": "18 x 18 m",
+ "description": "Ein Aufwärmen mit schnellen Füßen. Zwei Spieler laufen gleichzeitig durch die Ringe, gehen seitwärts zum Hütchen und sprinten über Kreuz auf die andere Seite. Dort spielen sie einen Doppelpass und laufen zurück. Es zählt die saubere Technik, nicht das Tempo.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 18 Metern. Zwei Bahnen mit je vier Ringen, darüber links und rechts je zwei Hütchen.",
+  "Verteilen: Die Spieler stehen in zwei Reihen unter den Ringen. Links oben steht der Trainer mit Bällen, rechts oben ein Springer mit Ball.",
+  "Ablauf: Schnelle Füße durch die Ringe, seitwärts zum Hütchen, über Kreuz zum oberen Hütchen sprinten, Doppelpass, zurück zur anderen Reihe.",
+  "Wechsel: Die zwei Spieler starten gleichzeitig. Sind sie oben angekommen, starten die nächsten zwei."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Schnelle, kleine Schritte durch die Ringe",
+  "Nach dem Sprint genau passen",
+  "Ruhig zurücklaufen und durchatmen",
+  "Sauber sprinten: Arme mitnehmen, kräftige Schritte"
+ ],
+ "materials": [
+  "8 Koordinationsringe",
+  "4 Hütchen",
+  "Einige Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Schnelle Füße zum Aufwärmen. Zwei Spieler laufen gleichzeitig durch die Ringe, sprinten über Kreuz und spielen einen Doppelpass.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 30,
+    "y": 10,
+    "w": 40,
+    "h": 40
+   },
+   {
+    "type": "circle",
+    "x": 42.2,
+    "y": 30.4,
+    "r": 1.6
+   },
+   {
+    "type": "circle",
+    "x": 42.2,
+    "y": 33.9,
+    "r": 1.6
+   },
+   {
+    "type": "circle",
+    "x": 42.2,
+    "y": 37.4,
+    "r": 1.6
+   },
+   {
+    "type": "circle",
+    "x": 42.2,
+    "y": 41,
+    "r": 1.6
+   },
+   {
+    "type": "circle",
+    "x": 57.4,
+    "y": 30.4,
+    "r": 1.6
+   },
+   {
+    "type": "circle",
+    "x": 57.4,
+    "y": 33.9,
+    "r": 1.6
+   },
+   {
+    "type": "circle",
+    "x": 57.4,
+    "y": 37.4,
+    "r": 1.6
+   },
+   {
+    "type": "circle",
+    "x": 57.4,
+    "y": 41,
+    "r": 1.6
+   }
+  ],
+  "cones": [
+   {
+    "x": 39.2,
+    "y": 22.5,
+    "color": "orange"
+   },
+   {
+    "x": 60.9,
+    "y": 22.5,
+    "color": "orange"
+   },
+   {
+    "x": 39.2,
+    "y": 12.9,
+    "color": "orange"
+   },
+   {
+    "x": 60.9,
+    "y": 12.9,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 42.2,
+    "y": 44,
+    "label": "9"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 57.4,
+    "y": 44,
+    "label": "8"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 33.5,
+    "y": 53,
+    "label": "7"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 25,
+    "y": 53,
+    "label": "5"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 16.5,
+    "y": 53,
+    "label": "3"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 66,
+    "y": 53,
+    "label": "6"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 74.5,
+    "y": 53,
+    "label": "4"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 83,
+    "y": 53,
+    "label": "2"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 28.8,
+    "y": 16,
+    "label": "T"
+   },
+   {
+    "id": "f1",
+    "team": "t",
+    "x": 72,
+    "y": 16,
+    "label": "F"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 29.4,
+    "y": 16.6
+   },
+   {
+    "id": "b2",
+    "x": 72.6,
+    "y": 16.6
+   },
+   {
+    "id": "s1",
+    "x": 24.8,
+    "y": 13
+   },
+   {
+    "id": "s2",
+    "x": 24.8,
+    "y": 9.4
+   }
+  ],
+  "steps": [
+   {
+    "label": "Durch die Ringe",
+    "say": "Spieler neun und Spieler acht starten gleichzeitig. Mit schnellen, kleinen Schritten laufen beide durch die Ringe.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       42.2,
+       28
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n8",
+      "to": [
+       57.4,
+       28
+      ],
+      "type": "lauf"
+     }
+    ]
+   },
+   {
+    "label": "Seitwärts zum Hütchen",
+    "say": "Dann gehen beide seitwärts zum Hütchen: Spieler neun nach links, Spieler acht nach rechts.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       37.5,
+       26.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n8",
+      "to": [
+       62.6,
+       26.5
+      ],
+      "type": "lauf"
+     }
+    ]
+   },
+   {
+    "label": "Über Kreuz sprinten",
+    "say": "Jetzt sprinten beide über Kreuz zum oberen Hütchen auf der anderen Seite.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       63.5,
+       16
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n8",
+      "to": [
+       36.6,
+       16
+      ],
+      "type": "lauf"
+     }
+    ]
+   },
+   {
+    "label": "Doppelpass",
+    "say": "Der Trainer spielt Spieler acht den Ball zu, und Spieler acht passt direkt zurück. Gleichzeitig spielt Spieler neun einen Doppelpass mit dem Springer.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       37.2,
+       16.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       29.4,
+       16.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b2",
+      "to": [
+       64.1,
+       16.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b2",
+      "to": [
+       72.6,
+       16.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zurück und wechseln",
+    "say": "Beide laufen außen zurück und stellen sich hinten an die andere Reihe. Geschafft! Jetzt sind Spieler sieben und Spieler sechs dran.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       8,
+       53
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n9",
+      "to": [
+       92,
+       53
+      ],
+      "type": "lauf"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 30,
+    "y1": 58.6,
+    "x2": 70,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 78,
+    "y1": 10,
+    "x2": 78,
+    "y2": 50,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Seitwärts durch die Ringe, dann vor und zurück.",
+   "title": "Seitwärts und vor und zurück",
+   "text": "Die Spieler hüpfen seitwärts im Zickzack durch die Ringe. Am Hütchen sprinten sie nach vorn und laufen rückwärts zurück. Dann sprinten sie zum Hütchen auf der anderen Seite. Das schult Gleichgewicht, Antritt und Abbremsen.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 42.2,
+      "y": 44,
+      "label": "9"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 57.4,
+      "y": 44,
+      "label": "8"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 33.5,
+      "y": 53,
+      "label": "7"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 25,
+      "y": 53,
+      "label": "5"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 16.5,
+      "y": 53,
+      "label": "3"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 66,
+      "y": 53,
+      "label": "6"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 74.5,
+      "y": 53,
+      "label": "4"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 83,
+      "y": 53,
+      "label": "2"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 28.8,
+      "y": 16,
+      "label": "T"
+     },
+     {
+      "id": "f1",
+      "team": "t",
+      "x": 72,
+      "y": 16,
+      "label": "F"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 29.4,
+      "y": 16.6
+     },
+     {
+      "id": "b2",
+      "x": 72.6,
+      "y": 16.6
+     },
+     {
+      "id": "s1",
+      "x": 24.8,
+      "y": 13
+     },
+     {
+      "id": "s2",
+      "x": 24.8,
+      "y": 9.4
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zickzack durch die Ringe",
+      "say": "Spieler neun und Spieler acht laufen gleichzeitig seitwärts im Zickzack durch die Ringe.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         44.8,
+         41
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n9",
+        "to": [
+         39.6,
+         37.4
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n9",
+        "to": [
+         44.8,
+         33.9
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n9",
+        "to": [
+         39.6,
+         30.4
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n8",
+        "to": [
+         54.8,
+         41
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n8",
+        "to": [
+         60,
+         37.4
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n8",
+        "to": [
+         54.8,
+         33.9
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n8",
+        "to": [
+         60,
+         30.4
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Vor und zurück",
+      "say": "Beide gehen seitwärts zum Hütchen, sprinten nach vorn zum oberen Hütchen und laufen rückwärts wieder zurück.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         36.5,
+         25.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n9",
+        "to": [
+         36.5,
+         15.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n9",
+        "to": [
+         36.5,
+         25.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n8",
+        "to": [
+         63.6,
+         25.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n8",
+        "to": [
+         63.6,
+         15.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n8",
+        "to": [
+         63.6,
+         25.5
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Zum Hütchen gegenüber",
+      "say": "Jetzt sprinten beide über Kreuz zum mittleren Hütchen auf der anderen Seite.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         62.5,
+         27
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n8",
+        "to": [
+         37.5,
+         27
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Doppelpass und zurück",
+      "say": "Spieler neun spielt einen Doppelpass mit dem Springer, Spieler acht mit dem Trainer. Dann laufen beide außen zurück, und Spieler sieben und Spieler sechs sind dran.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         63.1,
+         27.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b2",
+        "to": [
+         72.6,
+         16.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         38.1,
+         27.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         29.4,
+         16.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n9",
+        "to": [
+         92,
+         53
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n8",
+        "to": [
+         8,
+         53
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Mit dem Ball am Fuß zurücklaufen.",
+   "title": "Mit Ball zurücklaufen",
+   "text": "Nach den Ringen und dem Hütchen sprinten die Spieler nach vorn. Dort bekommen sie einen Pass, nehmen den Ball mit und dribbeln zur eigenen Reihe zurück. Der letzte Spieler der Reihe passt den Ball zurück nach oben.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 42.2,
+      "y": 44,
+      "label": "9"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 57.4,
+      "y": 44,
+      "label": "8"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 33.5,
+      "y": 53,
+      "label": "7"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 25,
+      "y": 53,
+      "label": "5"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 16.5,
+      "y": 53,
+      "label": "3"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 66,
+      "y": 53,
+      "label": "6"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 74.5,
+      "y": 53,
+      "label": "4"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 83,
+      "y": 53,
+      "label": "2"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 28.8,
+      "y": 16,
+      "label": "T"
+     },
+     {
+      "id": "f1",
+      "team": "t",
+      "x": 72,
+      "y": 16,
+      "label": "F"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 29.4,
+      "y": 16.6
+     },
+     {
+      "id": "b2",
+      "x": 72.6,
+      "y": 16.6
+     },
+     {
+      "id": "s1",
+      "x": 24.8,
+      "y": 13
+     },
+     {
+      "id": "s2",
+      "x": 24.8,
+      "y": 9.4
+     }
+    ],
+    "steps": [
+     {
+      "label": "Ringe und Hütchen",
+      "say": "Spieler neun und Spieler acht laufen gleichzeitig durch die Ringe und gehen seitwärts zum Hütchen.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         42.2,
+         28
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n9",
+        "to": [
+         37.5,
+         26.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n8",
+        "to": [
+         57.4,
+         28
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n8",
+        "to": [
+         62.6,
+         26.5
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Pass nach dem Sprint",
+      "say": "Beide sprinten nach vorn. Der Trainer passt zu Spieler neun, der Springer zu Spieler acht.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         36.5,
+         16
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n8",
+        "to": [
+         63.6,
+         16
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         37.1,
+         16.6
+        ],
+        "type": "pass",
+        "delay": 0.6
+       },
+       {
+        "who": "b2",
+        "to": [
+         64.2,
+         16.6
+        ],
+        "type": "pass",
+        "delay": 0.6
+       }
+      ]
+     },
+     {
+      "label": "Mit Ball zurück",
+      "say": "Beide nehmen den Ball mit und dribbeln außen zurück zur eigenen Reihe. Dort passen sie zum letzten Spieler, zu Spieler drei und Spieler zwei.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         12,
+         45
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         17.1,
+         53.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n8",
+        "to": [
+         88,
+         45
+        ],
+        "type": "dribbling",
+        "ball": "b2"
+       },
+       {
+        "who": "b2",
+        "to": [
+         83.6,
+         53.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Pass nach oben",
+      "say": "Spieler drei passt zurück zum Trainer, Spieler zwei zum Springer. Jetzt sind Spieler sieben und Spieler sechs dran.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         29.4,
+         16.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b2",
+        "to": [
+         72.6,
+         16.6
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,667 @@
+{
+ "title": "Sechs Sekunden Gegenpressing",
+ "code": "UE-174",
+ "kind": "Spielform",
+ "focuses": [
+  "Umschalten",
+  "Verteidigen",
+  "Zusammenspiel"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 12,
+ "players_max": 12,
+ "field_size": "23 x 32 m",
+ "description": "Fünf gegen fünf mit Torwart auf zwei Jugendtore. Das Team am Ball braucht fünf Pässe, bevor es aufs Tor schießen darf. Verliert ein Team den Ball, hat es sechs Sekunden, um ihn zurückzuerobern. Gelingt das, gibt das einen Punkt, und das andere Team muss jetzt selbst sofort pressen.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 23 mal 32 Metern mit einem Jugendtor an jedem Ende.",
+  "Verteilen: Zwei Teams zu fünft, dazu in jedem Tor ein Torwart. Team Neon greift nach oben an, Team Rot nach unten. Der Trainer steht an der Seite mit Bällen.",
+  "Ablauf: Ein Team beginnt mit dem Ball und braucht fünf Pässe, dann darf es schießen. Bei Ballverlust pressen alle sofort gemeinsam und wollen den Ball in sechs Sekunden zurück.",
+  "Wertung: Ein Treffer gibt einen Punkt. Ball in sechs Sekunden zurückerobert gibt auch einen Punkt. Danach presst das andere Team. Nach jedem Treffer bringt der Trainer einen neuen Ball."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Gemeinsam auf die Signale reagieren: schlechter Pass, schlechte Annahme",
+  "Nach Ballverlust sofort mit vollem Tempo pressen",
+  "Als Team verteidigen, nicht allein",
+  "Mit dem Ball schnell spielen und gute Anspielwinkel anbieten"
+ ],
+ "materials": [
+  "2 Jugendtore",
+  "4 Hütchen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Sechs Sekunden Gegenpressing. Fünf gegen fünf, und wer den Ball verliert, will ihn in sechs Sekunden zurück.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 32.1,
+    "y": 5,
+    "w": 35.8,
+    "h": 50
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "jugend"
+   },
+   {
+    "x": 50,
+    "y": 55,
+    "side": "bottom",
+    "size": "jugend"
+   }
+  ],
+  "cones": [],
+  "players": [
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 50,
+    "y": 6.5,
+    "label": "TW"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 41.7,
+    "y": 12,
+    "label": "4"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 58.3,
+    "y": 7,
+    "label": "8"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 58.3,
+    "y": 23,
+    "label": "7"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 33.4,
+    "y": 27,
+    "label": "11"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 50,
+    "y": 37.9,
+    "label": "10"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 50,
+    "y": 22.3,
+    "label": "9"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 66.7,
+    "y": 30,
+    "label": "2"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 33.4,
+    "y": 43,
+    "label": "3"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 58.3,
+    "y": 43,
+    "label": "5"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 41.7,
+    "y": 47,
+    "label": "6"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 50,
+    "y": 53.5,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 78,
+    "y": 12,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 42.3,
+    "y": 12.6
+   },
+   {
+    "id": "s1",
+    "x": 79.6,
+    "y": 15.5
+   },
+   {
+    "id": "s2",
+    "x": 76,
+    "y": 15.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Fünf Pässe",
+    "say": "Team Neon hat den Ball und braucht fünf Pässe, dann darf es aufs Tor schießen. Neon vier spielt zu Neon acht, der weiter zu Neon sieben.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       58.9,
+       7.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       58.9,
+       23.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Abgefangen",
+    "say": "Neon sieben will zu Neon zehn passen, aber Rot neun fängt den Ball ab und spielt sofort zu Rot fünf.",
+    "moves": [
+     {
+      "who": "r9",
+      "to": [
+       55.8,
+       27.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       56.4,
+       28.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       58.9,
+       43.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Sechs Sekunden",
+    "say": "Ballverlust! Jetzt hat Team Neon sechs Sekunden. Neon zehn, Neon sieben und Neon elf sprinten gleichzeitig los und machen Rot fünf eng.",
+    "moves": [
+     {
+      "who": "n10",
+      "to": [
+       54,
+       45
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n7",
+      "to": [
+       63.5,
+       38
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n11",
+      "to": [
+       50,
+       47
+      ],
+      "type": "lauf"
+     }
+    ]
+   },
+   {
+    "label": "Zurückerobert: Punkt",
+    "say": "Neon zehn erobert den Ball nach vier Sekunden zurück, und das gibt einen Punkt für Team Neon. Jetzt muss Team Rot sofort pressen und hat selbst sechs Sekunden.",
+    "moves": [
+     {
+      "who": "n10",
+      "to": [
+       57.5,
+       44.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n10",
+      "to": [
+       53,
+       36
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 32.1,
+    "y1": 58.6,
+    "x2": 67.9,
+    "y2": 58.6,
+    "text": "23 m"
+   },
+   {
+    "x1": 88,
+    "y1": 5,
+    "x2": 88,
+    "y2": 55,
+    "text": "32 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Gemeinsam pressen.",
+   "title": "Gemeinsam pressen",
+   "text": "Nach dem Ballverlust pressen alle zusammen. Einer geht auf den Ball, die anderen stellen die Passwege zu. So muss der Gegner unter Druck passen, und der Ball ist schnell wieder da.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 50,
+      "y": 6.5,
+      "label": "TW"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 41.7,
+      "y": 12,
+      "label": "4"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 58.3,
+      "y": 7,
+      "label": "8"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 58.3,
+      "y": 23,
+      "label": "7"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 33.4,
+      "y": 27,
+      "label": "11"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 50,
+      "y": 37.9,
+      "label": "10"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 50,
+      "y": 22.3,
+      "label": "9"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 66.7,
+      "y": 30,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 33.4,
+      "y": 43,
+      "label": "3"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 58.3,
+      "y": 43,
+      "label": "5"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 41.7,
+      "y": 47,
+      "label": "6"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 50,
+      "y": 53.5,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 78,
+      "y": 12,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 22.9
+     },
+     {
+      "id": "s1",
+      "x": 79.6,
+      "y": 15.5
+     },
+     {
+      "id": "s2",
+      "x": 76,
+      "y": 15.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Alle zusammen",
+      "say": "Rot neun hat gerade den Ball erobert. Sofort laufen Neon zehn, Neon sieben und Neon vier gleichzeitig los. Neon sieben stellt den Pass zu Rot zwei zu.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         52.5,
+         30
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n7",
+        "to": [
+         61.5,
+         27
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n4",
+        "to": [
+         46,
+         17
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Abgefangen: Punkt",
+      "say": "Rot neun muss unter Druck schnell passen. Neon elf fängt den Pass zu Rot drei ab, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n11",
+        "to": [
+         44.3,
+         29.4
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         44.9,
+         30
+        ],
+        "type": "pass",
+        "delay": 0.3
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Ein Anspieler draußen.",
+   "title": "Anspieler draußen",
+   "text": "Rot zwei steht jetzt außerhalb des Feldes als Anspieler. Er darf den Ball zweimal berühren und muss dann zurück ins Feld passen. Team Neon muss noch schneller pressen und diesen Pass verhindern.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 50,
+      "y": 6.5,
+      "label": "TW"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 41.7,
+      "y": 12,
+      "label": "4"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 58.3,
+      "y": 7,
+      "label": "8"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 58.3,
+      "y": 23,
+      "label": "7"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 33.4,
+      "y": 27,
+      "label": "11"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 50,
+      "y": 37.9,
+      "label": "10"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 50,
+      "y": 22.3,
+      "label": "9"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 73,
+      "y": 33,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 33.4,
+      "y": 43,
+      "label": "3"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 58.3,
+      "y": 43,
+      "label": "5"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 41.7,
+      "y": 47,
+      "label": "6"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 50,
+      "y": 53.5,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 78,
+      "y": 12,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 58.9,
+      "y": 23.6
+     },
+     {
+      "id": "s1",
+      "x": 79.6,
+      "y": 15.5
+     },
+     {
+      "id": "s2",
+      "x": 76,
+      "y": 15.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Abgefangen",
+      "say": "Neon sieben will zu Neon zehn passen, aber Rot neun fängt den Ball ab.",
+      "moves": [
+       {
+        "who": "r9",
+        "to": [
+         55.8,
+         27.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         56.4,
+         28.1
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Raus zum Anspieler",
+      "say": "Rot neun spielt sofort raus zu Rot zwei. Neon zehn sprintet los und stellt den Pass zurück ins Feld zu.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         73.6,
+         33.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n10",
+        "to": [
+         62.4,
+         40.2
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Abgefangen: Punkt",
+      "say": "Rot zwei passt nach zwei Kontakten zu Rot fünf, aber Neon zehn fängt den Ball ab. Das gibt einen Punkt für Team Neon, und jetzt presst Team Rot.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         63,
+         40.8
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

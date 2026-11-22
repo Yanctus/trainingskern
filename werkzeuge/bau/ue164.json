@@ -1,0 +1,706 @@
+{
+ "title": "Steilpass in die Endzone",
+ "code": "UE-164",
+ "kind": "Spielform",
+ "focuses": [
+  "Passspiel",
+  "Torschuss",
+  "Zusammenspiel"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 10,
+ "players_max": 10,
+ "field_size": "23 x 41 m",
+ "description": "Drei gegen drei in der Mitte, und in jeder Endzone steht ein Spieler von jedem Team. Nach vier Pässen darf das Team am Ball steil in eine Endzone zum eigenen Spieler spielen. Der löst sich mit einer kurzen, schnellen Bewegung von seinem Gegenspieler und schießt auf eines der zwei Minitore. Erobert das andere Team den Ball, tauschen die Aufgaben: Jetzt sind seine Spieler in den Endzonen die Stürmer.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 23 mal 41 Metern. An jedem Ende eine Endzone von 5 Metern mit zwei Minitoren in den Ecken.",
+  "Verteilen: Drei gegen drei in der Mitte. In der oberen Endzone Neon neun und Rot fünf, in der unteren Rot elf und Neon vier. Der Trainer steht rechts mit Bällen.",
+  "Ablauf: Nach vier Pässen darf das Team am Ball steil in eine Endzone spielen. Der eigene Spieler dort ist Stürmer, der Gegenspieler verteidigt.",
+  "Wertung und Wechsel: Jedes Minitor gibt einen Punkt. Nach jedem Punkt tauscht der Stürmer mit einem Mitspieler aus der Mitte."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Sich anbieten und gute Passwinkel schaffen",
+  "Geduldig bleiben und auf die Lücke für den Steilpass warten",
+  "Stürmer: kurz und schnell vom Gegenspieler lösen",
+  "Scharf und genau in die Endzone passen"
+ ],
+ "materials": [
+  "4 Minitore",
+  "8 Hütchen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Steilpass in die Endzone. Erst vier Pässe in der Mitte, dann steil zum Stürmer, der sich von seinem Gegenspieler löst.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 36.1,
+    "y": 5,
+    "w": 27.8,
+    "h": 50
+   },
+   {
+    "type": "line",
+    "x1": 36.1,
+    "y1": 10.6,
+    "x2": 63.9,
+    "y2": 10.6,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 36.1,
+    "y1": 49.4,
+    "x2": 63.9,
+    "y2": 49.4,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 40.5,
+    "y": 5,
+    "side": "top"
+   },
+   {
+    "x": 59.5,
+    "y": 5,
+    "side": "top"
+   },
+   {
+    "x": 40.5,
+    "y": 55,
+    "side": "bottom"
+   },
+   {
+    "x": 59.5,
+    "y": 55,
+    "side": "bottom"
+   }
+  ],
+  "cones": [
+   {
+    "x": 36.1,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 63.900000000000006,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 36.1,
+    "y": 55,
+    "color": "orange"
+   },
+   {
+    "x": 63.900000000000006,
+    "y": 55,
+    "color": "orange"
+   },
+   {
+    "x": 36.1,
+    "y": 10.6,
+    "color": "orange"
+   },
+   {
+    "x": 63.9,
+    "y": 10.6,
+    "color": "orange"
+   },
+   {
+    "x": 36.1,
+    "y": 49.4,
+    "color": "orange"
+   },
+   {
+    "x": 63.9,
+    "y": 49.4,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 38.5,
+    "y": 7,
+    "label": "5"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 47,
+    "y": 7,
+    "label": "9"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 39.5,
+    "y": 22.5,
+    "label": "3"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 49,
+    "y": 22.5,
+    "label": "7"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 58.5,
+    "y": 22.5,
+    "label": "6"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 41,
+    "y": 38.5,
+    "label": "8"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 50.5,
+    "y": 38.5,
+    "label": "2"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 60,
+    "y": 38.5,
+    "label": "10"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 45,
+    "y": 54,
+    "label": "4"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 55,
+    "y": 54,
+    "label": "11"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 71,
+    "y": 14,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 60.6,
+    "y": 39.1
+   },
+   {
+    "id": "s1",
+    "x": 74.6,
+    "y": 17.5
+   },
+   {
+    "id": "s2",
+    "x": 71,
+    "y": 17.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Vier Pässe",
+    "say": "Team Neon hat den Ball und braucht vier Pässe. Neon zehn spielt zu Neon sechs, und der spielt weiter zu Neon acht.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       59.1,
+       23.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       41.6,
+       39.1
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Pass drei und vier",
+    "say": "Neon sechs läuft sich in der Mitte frei. Neon acht spielt ihn an, und Neon sechs legt ab zu Neon zehn. Das sind vier Pässe.",
+    "moves": [
+     {
+      "who": "n6",
+      "to": [
+       55,
+       30
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       55.6,
+       30.6
+      ],
+      "type": "pass",
+      "delay": 0.4
+     },
+     {
+      "who": "b1",
+      "to": [
+       60.6,
+       39.1
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Freilaufen",
+    "say": "Neon neun geht kurz auf Rot fünf zu und dreht dann blitzschnell nach rechts weg. Neon zehn spielt sofort steil in die Endzone.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       44,
+       8.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n9",
+      "to": [
+       56,
+       8.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r5",
+      "to": [
+       49,
+       9
+      ],
+      "type": "lauf",
+      "delay": 0.3,
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       56.6,
+       9.1
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Minitor: Punkt",
+    "say": "Neon neun schießt mit dem ersten Kontakt ins rechte Minitor, und das gibt einen Punkt für Team Neon. Dann tauscht Neon neun mit einem Mitspieler aus der Mitte, und der Trainer bringt einen neuen Ball.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       59.5,
+       5.3
+      ],
+      "type": "pass"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 36.1,
+    "y1": 58.6,
+    "x2": 63.9,
+    "y2": 58.6,
+    "text": "23 m"
+   },
+   {
+    "x1": 82,
+    "y1": 5,
+    "x2": 82,
+    "y2": 55,
+    "text": "41 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Kurz und schnell vom Gegenspieler lösen.",
+   "title": "Kurz und schnell lösen",
+   "text": "Der Stürmer wartet nicht ruhig auf den Ball. Er geht erst kurz auf seinen Gegenspieler zu und dreht dann blitzschnell weg. So hat er einen Schritt Vorsprung und kann frei schießen.",
+   "board": {
+    "players": [
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 38.5,
+      "y": 7,
+      "label": "5"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 47,
+      "y": 7,
+      "label": "9"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 39.5,
+      "y": 22.5,
+      "label": "3"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 49,
+      "y": 22.5,
+      "label": "7"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 58.5,
+      "y": 22.5,
+      "label": "6"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 41,
+      "y": 38.5,
+      "label": "8"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 50.5,
+      "y": 38.5,
+      "label": "2"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 60,
+      "y": 38.5,
+      "label": "10"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 45,
+      "y": 54,
+      "label": "4"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 55,
+      "y": 54,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 71,
+      "y": 14,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 51.1,
+      "y": 39.1
+     },
+     {
+      "id": "s1",
+      "x": 74.6,
+      "y": 17.5
+     },
+     {
+      "id": "s2",
+      "x": 71,
+      "y": 17.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Antäuschen",
+      "say": "Team Rot hat den Ball erobert und vier Pässe geschafft. Jetzt ist Rot elf der Stürmer. Er geht kurz auf Neon vier zu und dreht dann schnell nach rechts weg.",
+      "moves": [
+       {
+        "who": "r11",
+        "to": [
+         51,
+         52.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r11",
+        "to": [
+         58,
+         51.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n4",
+        "to": [
+         50,
+         53.5
+        ],
+        "type": "lauf",
+        "delay": 0.3,
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Frei: Punkt",
+      "say": "Rot zwei spielt sofort in den Lauf, und Rot elf trifft mit dem ersten Kontakt ins rechte Minitor. Das gibt einen Punkt für Team Rot.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         58.6,
+         52.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         59.5,
+         54.7
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Der Stürmer legt ab, und ein Mitspieler schießt direkt.",
+   "title": "Ablegen und direkt schießen",
+   "text": "Nach dem Steilpass läuft ein Mitspieler aus der Mitte sofort nach. Der Stürmer legt den Ball mit dem ersten Kontakt für ihn ab, und er schießt direkt. Kommt keiner zur Hilfe, bekommt das andere Team den Ball.",
+   "board": {
+    "players": [
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 38.5,
+      "y": 7,
+      "label": "5"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 47,
+      "y": 7,
+      "label": "9"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 39.5,
+      "y": 22.5,
+      "label": "3"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 49,
+      "y": 22.5,
+      "label": "7"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 58.5,
+      "y": 22.5,
+      "label": "6"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 41,
+      "y": 38.5,
+      "label": "8"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 50.5,
+      "y": 38.5,
+      "label": "2"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 60,
+      "y": 38.5,
+      "label": "10"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 45,
+      "y": 54,
+      "label": "4"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 55,
+      "y": 54,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 71,
+      "y": 14,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 59.1,
+      "y": 23.1
+     },
+     {
+      "id": "s1",
+      "x": 74.6,
+      "y": 17.5
+     },
+     {
+      "id": "s2",
+      "x": 71,
+      "y": 17.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Steilpass",
+      "say": "Team Neon hat vier Pässe geschafft. Neon neun löst sich nach rechts, und Neon sechs spielt steil in die Endzone.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         56,
+         8.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r5",
+        "to": [
+         49,
+         8
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         56.6,
+         9.1
+        ],
+        "type": "pass",
+        "delay": 0.4
+       }
+      ]
+     },
+     {
+      "label": "Nachrücken",
+      "say": "Neon sechs läuft sofort nach. Neon neun legt den Ball mit dem ersten Kontakt für ihn ab.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         51,
+         14
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         51.6,
+         14.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Direkt: Punkt",
+      "say": "Neon sechs schießt direkt ins linke Minitor, und das gibt einen Punkt für Team Neon. Kommt keiner zur Hilfe, bekommt Team Rot den Ball.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         40.5,
+         5.3
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

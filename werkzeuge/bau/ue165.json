@@ -1,0 +1,641 @@
+{
+ "title": "Passen und Laufen zu zweit",
+ "code": "UE-165",
+ "kind": "Übungsform",
+ "focuses": [
+  "Erwärmung",
+  "Passspiel",
+  "Bewegung"
+ ],
+ "age_groups": [
+  "F-Jugend",
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 10,
+ "players_min": 8,
+ "players_max": 12,
+ "field_size": "14 x 23 m",
+ "description": "Eine Passkombination zum Aufwärmen in einem Viereck mit vier Hütchen. Zwei Partner spielen sich den Ball zu, binden einen Endspieler ein und spielen dann schräg durch zum anderen Endspieler. Danach laufen beide durch, und die Kombination geht in die andere Richtung. Gespielt wird mit ein oder zwei Kontakten und hohem Tempo.",
+ "organisation": [
+  "Aufbauen: Ein Viereck von 14 mal 23 Metern mit vier Hütchen an den Ecken.",
+  "Verteilen: Die Spieler arbeiten zu zweit. Unten starten Neon zehn und Neon acht, oben stehen Neon vier und Neon elf als Endspieler. Die nächsten Paare warten neben den Hütchen. Der Trainer steht rechts mit Bällen.",
+  "Ablauf: Neon zehn spielt zu Neon acht, der spielt zu Neon vier. Neon vier legt zurück für Neon zehn, und der spielt schräg durch zu Neon elf. Dann laufen beide durch, und es geht in die andere Richtung.",
+  "Wechsel: Wer durchgelaufen ist, stellt sich an und wird später Endspieler. Nach ein paar Runden tauschen die Partner die Seiten."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Mit dem richtigen Tempo und genau passen",
+  "Mit einem oder zwei Kontakten spielen",
+  "In den Lauf vor den Mitspieler passen",
+  "Vor der Ballannahme umschauen und laut rufen"
+ ],
+ "materials": [
+  "4 Hütchen",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Passen und Laufen zu zweit. Eine schnelle Passkombination mit zwei Endspielern, und danach geht es in die andere Richtung.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 35,
+    "y": 5,
+    "w": 30,
+    "h": 50
+   }
+  ],
+  "cones": [
+   {
+    "x": 35,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 65,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 35,
+    "y": 55,
+    "color": "orange"
+   },
+   {
+    "x": 65,
+    "y": 55,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 38.5,
+    "y": 51,
+    "label": "10"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 61.5,
+    "y": 50,
+    "label": "8"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 38.5,
+    "y": 9,
+    "label": "4"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 61.5,
+    "y": 9,
+    "label": "11"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 29,
+    "y": 53,
+    "label": "5"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 71,
+    "y": 53,
+    "label": "6"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 29,
+    "y": 7,
+    "label": "3"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 71,
+    "y": 7,
+    "label": "2"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 80,
+    "y": 24,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 39.1,
+    "y": 51.6
+   },
+   {
+    "id": "s1",
+    "x": 83.6,
+    "y": 27.5
+   },
+   {
+    "id": "s2",
+    "x": 80,
+    "y": 27.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pass zum Partner",
+    "say": "Neon zehn spielt zu Neon acht. Neon acht kommt dabei schräg nach innen und nimmt den Ball im Laufen an.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       55,
+       37
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       55.6,
+       37.6
+      ],
+      "type": "pass",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Zum Endspieler",
+    "say": "Gleichzeitig läuft Neon zehn links nach vorn. Neon acht spielt schräg nach vorn zu Neon vier.",
+    "moves": [
+     {
+      "who": "n10",
+      "to": [
+       41.5,
+       27
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       39.1,
+       9.6
+      ],
+      "type": "pass",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Umschauen und ablegen",
+    "say": "Neon zehn schaut über die Schulter, wo Neon elf steht. Neon vier legt den Ball zurück in den Lauf von Neon zehn.",
+    "moves": [
+     {
+      "who": "n10",
+      "to": [
+       56,
+       15
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b1",
+      "to": [
+       42.1,
+       27.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Durch zu Neon elf",
+    "say": "Neon zehn spielt mit dem ersten Kontakt schräg durch zu Neon elf. Dann laufen Neon zehn und Neon acht gleichzeitig bis hinter die oberen Hütchen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       62.1,
+       9.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n10",
+      "to": [
+       44,
+       2.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       56,
+       2.5
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Andere Richtung",
+    "say": "Der Ball ist ohne Fehler bei Neon elf, die Kombination ist geschafft. Jetzt spielen Neon elf und Neon vier dieselbe Kombination nach unten, und Neon fünf und Neon sechs sind dort die Endspieler.",
+    "moves": [
+     {
+      "who": "n5",
+      "to": [
+       38.5,
+       51
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n6",
+      "to": [
+       61.5,
+       50
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n4",
+      "to": [
+       45,
+       22
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       45.6,
+       22.6
+      ],
+      "type": "pass",
+      "delay": 0.5
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 35,
+    "y1": 58.6,
+    "x2": 65,
+    "y2": 58.6,
+    "text": "14 m"
+   },
+   {
+    "x1": 86,
+    "y1": 5,
+    "x2": 86,
+    "y2": 55,
+    "text": "23 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: In den Lauf vor den Mitspieler passen.",
+   "title": "In den Lauf passen",
+   "text": "Der Pass kommt nicht in den Fuß, sondern ein Stück vor den Mitspieler. So nimmt er den Ball im Laufen mit und muss nicht abbremsen. Die Kombination bleibt schnell und flüssig.",
+   "board": {
+    "players": [
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 38.5,
+      "y": 51,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 61.5,
+      "y": 50,
+      "label": "8"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 38.5,
+      "y": 9,
+      "label": "4"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 61.5,
+      "y": 9,
+      "label": "11"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 29,
+      "y": 53,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 71,
+      "y": 53,
+      "label": "6"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 29,
+      "y": 7,
+      "label": "3"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 71,
+      "y": 7,
+      "label": "2"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 80,
+      "y": 24,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 39.1,
+      "y": 51.6
+     },
+     {
+      "id": "s1",
+      "x": 83.6,
+      "y": 27.5
+     },
+     {
+      "id": "s2",
+      "x": 80,
+      "y": 27.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Vor den Mitspieler",
+      "say": "Neon acht läuft schräg nach innen. Neon zehn spielt den Ball genau in den Raum vor ihn.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         55,
+         37
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         55.6,
+         37.6
+        ],
+        "type": "pass",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Im Laufen weiter",
+      "say": "Neon acht nimmt den Ball im Laufen mit und spielt ohne abzubremsen weiter zu Neon vier.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         39.1,
+         9.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n10",
+        "to": [
+         41.5,
+         27
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Neon zehn läuft innen hinterher und bekommt den Ball in der Mitte.",
+   "title": "Innen hinterlaufen",
+   "text": "Jetzt spielt Neon acht nach vorn zu Neon elf, und Neon zehn läuft innen in die Mitte. Neon elf legt in seinen Lauf ab, und Neon zehn spielt schräg durch zu Neon vier. Wichtig ist der richtige Moment für den Lauf.",
+   "board": {
+    "players": [
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 38.5,
+      "y": 51,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 61.5,
+      "y": 50,
+      "label": "8"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 38.5,
+      "y": 9,
+      "label": "4"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 61.5,
+      "y": 9,
+      "label": "11"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 29,
+      "y": 53,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 71,
+      "y": 53,
+      "label": "6"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 29,
+      "y": 7,
+      "label": "3"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 71,
+      "y": 7,
+      "label": "2"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 80,
+      "y": 24,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 39.1,
+      "y": 51.6
+     },
+     {
+      "id": "s1",
+      "x": 83.6,
+      "y": 27.5
+     },
+     {
+      "id": "s2",
+      "x": 80,
+      "y": 27.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Pass zum Partner",
+      "say": "Neon zehn spielt zu Neon acht, der schräg nach innen kommt.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         55,
+         37
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         55.6,
+         37.6
+        ],
+        "type": "pass",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Innen hinterlaufen",
+      "say": "Neon acht spielt nach vorn zu Neon elf. Gleichzeitig läuft Neon zehn innen in die Mitte und schaut dabei zu Neon vier.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         62.1,
+         9.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n10",
+        "to": [
+         44,
+         36
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n10",
+        "to": [
+         52,
+         24
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n10",
+        "to": [
+         40,
+         11
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Durch zu Neon vier",
+      "say": "Neon elf legt in den Lauf von Neon zehn ab, und Neon zehn spielt mit dem ersten Kontakt schräg durch zu Neon vier.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         52.6,
+         24.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         39.1,
+         9.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,713 @@
+{
+ "title": "Herausspielen von hinten",
+ "code": "UE-171",
+ "kind": "Spielform",
+ "focuses": [
+  "Zusammenspiel",
+  "Passspiel",
+  "Umschalten"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 10,
+ "players_max": 10,
+ "field_size": "22 x 27 m",
+ "description": "Sechs gegen vier: Team Neon spielt sich mit Torwart, Sechser und zwei Außenverteidigern gegen einen Stürmer von hinten heraus. In der vorderen Hälfte geht es dann vier gegen drei auf drei Minitore. Erobert Team Rot den Ball, kontert es sofort auf das große Tor. Jede Runde beginnt wieder beim Torwart.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 22 mal 27 Metern, in zwei Hälften mit einem schmalen Streifen dazwischen. Links und rechts eine Außenbahn. Unten ein Jugendtor, oben drei Minitore.",
+  "Verteilen: Team Neon mit Torwart, Sechser, zwei Außenverteidigern und zwei Mittelfeldspielern. Team Rot mit einem Stürmer hinten und drei Verteidigern vorn. Der Trainer steht an der Seite mit Bällen.",
+  "Ablauf: Der Torwart beginnt. Sechser, Torwart und Außenverteidiger spielen sich am Stürmer vorbei. In der vorderen Hälfte vier gegen drei: Die Außenverteidiger bleiben außen, die roten Außen dürfen nach innen.",
+  "Wertung: Treffer ins Minitor gibt einen Punkt für Team Neon. Erobert Team Rot den Ball und trifft ins große Tor, gibt das einen Punkt für Team Rot. Danach beginnt wieder der Torwart."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Schräg zum Gegner stehen, damit ein Passweg frei ist",
+  "Unter Druck ruhig bleiben und das Tempo kontrollieren",
+  "Die Außenverteidiger nutzen die ganze Breite und helfen dem Sechser",
+  "Nach Ballverlust sofort umschalten"
+ ],
+ "materials": [
+  "1 Jugendtor",
+  "3 Minitore",
+  "Hütchen für Feld und Bahnen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Herausspielen von hinten. Sechs gegen vier, und Team Neon spielt sich vom Torwart aus nach vorn bis zu den Minitoren.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 30,
+    "y": 5,
+    "w": 40,
+    "h": 50
+   },
+   {
+    "type": "line",
+    "x1": 35.2,
+    "y1": 5,
+    "x2": 35.2,
+    "y2": 55,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 64.8,
+    "y1": 5,
+    "x2": 64.8,
+    "y2": 55,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 30,
+    "y1": 27,
+    "x2": 70,
+    "y2": 27,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 30,
+    "y1": 32,
+    "x2": 70,
+    "y2": 32,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 55,
+    "side": "bottom",
+    "size": "jugend"
+   },
+   {
+    "x": 36.4,
+    "y": 5,
+    "side": "top"
+   },
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top"
+   },
+   {
+    "x": 63.6,
+    "y": 5,
+    "side": "top"
+   }
+  ],
+  "cones": [
+   {
+    "x": 30,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 70,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 30,
+    "y": 55,
+    "color": "orange"
+   },
+   {
+    "x": 70,
+    "y": 55,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n1",
+    "team": "a",
+    "x": 50.2,
+    "y": 52,
+    "label": "TW"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 50.2,
+    "y": 36,
+    "label": "4"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 66.8,
+    "y": 30,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 33.6,
+    "y": 30,
+    "label": "3"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 58.5,
+    "y": 14,
+    "label": "8"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 41.9,
+    "y": 14,
+    "label": "10"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 41.9,
+    "y": 34,
+    "label": "9"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 33.6,
+    "y": 14,
+    "label": "7"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 50.2,
+    "y": 14,
+    "label": "6"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 66.8,
+    "y": 14,
+    "label": "11"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 22,
+    "y": 44,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 50.8,
+    "y": 52.6
+   },
+   {
+    "id": "s1",
+    "x": 22.6,
+    "y": 47.5
+   },
+   {
+    "id": "s2",
+    "x": 19,
+    "y": 47.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Abprallen",
+    "say": "Team Neon spielt nach oben. Der Torwart passt zu Neon vier, der direkt zurücklegt. Rot neun läuft an.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.8,
+       36.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r9",
+      "to": [
+       46,
+       38
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.8,
+       52.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zum Außenverteidiger",
+    "say": "Rot neun ist weg vom Torwart. Der Torwart spielt nach rechts zu Neon zwei.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       67.4,
+       30.6
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Nach vorn",
+    "say": "Neon zwei passt weit nach vorn zu Neon zehn. Jetzt ist es vier gegen drei.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       42.5,
+       14.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n3",
+      "to": [
+       34.5,
+       20
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Steil auf Acht",
+    "say": "Neon acht startet in die Mitte, und Neon zehn spielt ihm den Ball in den Lauf.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       52,
+       8.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       52.6,
+       9.1
+      ],
+      "type": "pass",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "Minitor: Punkt",
+    "say": "Neon acht trifft ins mittlere Minitor, und das gibt einen Punkt für Team Neon. Holt Team Rot den Ball, kontert es auf das große Tor. Danach beginnt wieder der Torwart.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50,
+       5.3
+      ],
+      "type": "pass"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 30,
+    "y1": 58.6,
+    "x2": 70,
+    "y2": 58.6,
+    "text": "22 m"
+   },
+   {
+    "x1": 86,
+    "y1": 5,
+    "x2": 86,
+    "y2": 55,
+    "text": "27 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Schräg stehen und aufdrehen.",
+   "title": "Schräg stehen, aufdrehen",
+   "text": "Der Sechser steht nicht hinter dem Stürmer, sondern schräg daneben. So ist der Passweg frei, und er kann mit dem ersten Kontakt aufdrehen. Dann spielt er sofort nach vorn oder zur anderen Seite.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 50.2,
+      "y": 52,
+      "label": "TW"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 41.9,
+      "y": 40,
+      "label": "4"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 66.8,
+      "y": 33,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 33.6,
+      "y": 33,
+      "label": "3"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 58.5,
+      "y": 20,
+      "label": "8"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 41.9,
+      "y": 20,
+      "label": "10"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 50.2,
+      "y": 34.5,
+      "label": "9"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 33.6,
+      "y": 17,
+      "label": "7"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 50.2,
+      "y": 14,
+      "label": "6"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 66.8,
+      "y": 14,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 22,
+      "y": 44,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 67.4,
+      "y": 33.6
+     },
+     {
+      "id": "s1",
+      "x": 22.6,
+      "y": 47.5
+     },
+     {
+      "id": "s2",
+      "x": 19,
+      "y": 47.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Schräg anbieten",
+      "say": "Neon zwei hat den Ball. Neon vier stellt sich schräg neben Rot neun und bekommt den Pass.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         42.5,
+         40.6
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Aufdrehen",
+      "say": "Neon vier dreht mit dem ersten Kontakt auf und spielt zur anderen Seite zu Neon drei.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         40.5,
+         37.5
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         34.2,
+         33.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Minitor: Punkt",
+      "say": "Neon drei spielt nach vorn zu Neon zehn. Der trifft ins linke Minitor, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         42.5,
+         20.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         36.4,
+         5.3
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Ein Mittelfeldspieler kommt zurück.",
+   "title": "Einer kommt zurück",
+   "text": "Jetzt darf einer der beiden Mittelfeldspieler in den Mittelstreifen zurückkommen. So hat der Spieler am Ball eine Anspielstation mehr. Der Rückkehrer dreht auf und bringt den Ball nach vorn.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 50.2,
+      "y": 52,
+      "label": "TW"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 58.5,
+      "y": 40,
+      "label": "4"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 66.8,
+      "y": 30,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 33.6,
+      "y": 38,
+      "label": "3"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 58.5,
+      "y": 20,
+      "label": "8"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 41.9,
+      "y": 17,
+      "label": "10"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 50.2,
+      "y": 36,
+      "label": "9"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 41.9,
+      "y": 33,
+      "label": "7"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 50.2,
+      "y": 14,
+      "label": "6"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 66.8,
+      "y": 14,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 22,
+      "y": 44,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.8,
+      "y": 52.6
+     },
+     {
+      "id": "s1",
+      "x": 22.6,
+      "y": 47.5
+     },
+     {
+      "id": "s2",
+      "x": 19,
+      "y": 47.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zum Außenverteidiger",
+      "say": "Der Torwart spielt nach links zu Neon drei. Rot sieben läuft ihn an.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         34.2,
+         38.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r7",
+        "to": [
+         39.5,
+         40
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Zehn kommt zurück",
+      "say": "Neon zehn kommt in den Mittelstreifen zurück, und Neon drei passt zu ihm.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         40.5,
+         29
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         41.1,
+         29.6
+        ],
+        "type": "pass",
+        "delay": 0.4
+       }
+      ]
+     },
+     {
+      "label": "Minitor: Punkt",
+      "say": "Neon zehn spielt Neon acht in den Lauf. Der trifft ins rechte Minitor, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         58,
+         10
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         58.6,
+         10.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         63.6,
+         5.3
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

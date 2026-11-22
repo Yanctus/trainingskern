@@ -1,0 +1,718 @@
+{
+ "title": "Passen und Freilaufen",
+ "code": "UE-170",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Ballannahme",
+  "Dribbling"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 7,
+ "players_max": 9,
+ "field_size": "18 x 23 m",
+ "description": "Ein Passkreislauf über fünf Stationen mit Doppelpässen, Ablagen und Pässen durch die Stangen. Jeder Spieler läuft sich vor dem Pass frei und bietet sich mit einer schnellen Bewegung an. Der letzte Spieler dribbelt im Slalom durch die Stangen zurück zum Start. Sobald er an der ersten Stange vorbei ist, beginnt der nächste Durchgang.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 23 Metern mit Stangen und zwei Puppen wie auf dem Bild. Hütchen markieren die Stationen: Start, Mitte, rechts, oben rechts und oben links.",
+  "Verteilen: Sieben Spieler. Zwei am Start mit Bällen, zwei in der Mitte, je einer rechts, oben rechts und oben links. Der Trainer steht an der Seite mit Bällen.",
+  "Ablauf: Doppelpass von Start und Mitte, Pass nach rechts, Pass nach innen, Pass durch die Stangen, Ablagen und ein Steilpass nach oben links. Der letzte Spieler dribbelt im Slalom zum Start.",
+  "Wechsel: Jeder läuft nach seinem Pass zur Station, zu der er gespielt hat. Ist der Dribbler an der ersten Stange vorbei, startet der nächste Durchgang."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Genau und mit dem richtigen Tempo passen",
+  "Mit einer schnellen Bewegung freilaufen und einen guten Winkel anbieten",
+  "Beim Dribbling den Ball eng am Fuß führen",
+  "Mit einem oder zwei Kontakten spielen und dabei laut rufen"
+ ],
+ "materials": [
+  "6 Stangen oder Puppen",
+  "6 Hütchen",
+  "Viele Bälle",
+  "1 Minitor für die Steigerung"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Passen und Freilaufen. Ein Passkreislauf mit Doppelpässen, Ablagen und einem Slalom zurück zum Start.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 30,
+    "y": 5,
+    "w": 40,
+    "h": 50
+   }
+  ],
+  "cones": [
+   {
+    "x": 34.4,
+    "y": 20,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 34.4,
+    "y": 30,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 59.2,
+    "y": 22.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 64.5,
+    "y": 26,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 45.8,
+    "y": 39,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 54.7,
+    "y": 39,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 48.5,
+    "y": 54,
+    "color": "orange"
+   },
+   {
+    "x": 43.5,
+    "y": 9.8,
+    "color": "orange"
+   },
+   {
+    "x": 57.5,
+    "y": 12.5,
+    "color": "orange"
+   },
+   {
+    "x": 48.8,
+    "y": 34,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 51.8,
+    "y": 53,
+    "label": "10"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 51.6,
+    "y": 32.4,
+    "label": "8"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 68.5,
+    "y": 31,
+    "label": "2"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 61.5,
+    "y": 9.6,
+    "label": "7"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 43.7,
+    "y": 7,
+    "label": "9"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 79,
+    "y": 50,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 52.4,
+    "y": 53.6
+   },
+   {
+    "id": "s1",
+    "x": 79.6,
+    "y": 53.5
+   },
+   {
+    "id": "s2",
+    "x": 76,
+    "y": 53.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Doppelpass",
+    "say": "Neon zehn passt zu Neon acht, der dem Ball entgegenkommt. Neon acht legt direkt ab, und Neon zehn ist schon nach rechts gelaufen.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       49.6,
+       42.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.2,
+       43.1
+      ],
+      "type": "pass",
+      "delay": 0.3
+     },
+     {
+      "who": "n10",
+      "to": [
+       57.4,
+       49.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       58,
+       50.1
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Nach außen",
+    "say": "Neon zehn spielt weit nach rechts zu Neon zwei. Gleichzeitig läuft Neon acht nach rechts in die Mitte.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       69.1,
+       31.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n8",
+      "to": [
+       52,
+       37
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n8",
+      "to": [
+       57.4,
+       31.8
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Nach innen und durch",
+    "say": "Neon zwei passt nach innen zu Neon acht. Neon sieben startet, und Neon acht spielt ihm den Ball durch die Stangen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       58,
+       32.4
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n7",
+      "to": [
+       66,
+       14.9
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       66.6,
+       15.5
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Ablegen und quer",
+    "say": "Neon sieben legt ab für Neon zwei, der ein Stück hoch kommt. Neon zwei spielt weit quer zu Neon neun.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       69,
+       26.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       69.6,
+       27.1
+      ],
+      "type": "pass",
+      "delay": 0.2
+     },
+     {
+      "who": "b1",
+      "to": [
+       44.3,
+       7.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       60.4,
+       8.7
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Ablegen und steil",
+    "say": "Neon neun legt für Neon sieben ab. Der spielt sofort steil, und Neon neun nimmt den Ball im Lauf mit.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       61,
+       9.3
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n9",
+      "to": [
+       36,
+       14.1
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       36.6,
+       14.7
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Slalom zum Start",
+    "say": "Neon neun dribbelt im Slalom durch die Stangen zurück zum Start. Ist er an der ersten Stange vorbei, startet der nächste Durchgang. Jeder läuft zur Station, zu der er gepasst hat.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       31.8,
+       17
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n9",
+      "to": [
+       31.6,
+       22.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n9",
+      "to": [
+       37.4,
+       30
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n9",
+      "to": [
+       33,
+       38.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n9",
+      "to": [
+       38.3,
+       46.1
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n9",
+      "to": [
+       46,
+       53
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 30,
+    "y1": 58.6,
+    "x2": 70,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 86,
+    "y1": 5,
+    "x2": 86,
+    "y2": 55,
+    "text": "23 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Scharf freilaufen.",
+   "title": "Scharf freilaufen",
+   "text": "Wer den Ball haben will, geht erst einen Schritt weg und kommt dann schnell entgegen. So hat er Platz und einen guten Winkel. Er ruft, und der Pass kommt flach und genau.",
+   "board": {
+    "players": [
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 51.8,
+      "y": 53,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 51.6,
+      "y": 32.4,
+      "label": "8"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 68.5,
+      "y": 31,
+      "label": "2"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 61.5,
+      "y": 9.6,
+      "label": "7"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 43.7,
+      "y": 7,
+      "label": "9"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 79,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 52.4,
+      "y": 53.6
+     },
+     {
+      "id": "s1",
+      "x": 79.6,
+      "y": 53.5
+     },
+     {
+      "id": "s2",
+      "x": 76,
+      "y": 53.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Erst weg",
+      "say": "Neon acht geht erst einen Schritt weg vom Ball und ruft.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         52,
+         27.5
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Dann entgegen",
+      "say": "Dann kommt er schnell entgegen. Neon zehn passt flach, und Neon acht legt mit einem Kontakt ab.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         49.6,
+         42.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.2,
+         43.1
+        ],
+        "type": "pass",
+        "delay": 0.4
+       },
+       {
+        "who": "n10",
+        "to": [
+         57.4,
+         49.5
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "b1",
+        "to": [
+         58,
+         50.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Abschluss ins Minitor.",
+   "title": "Abschluss ins Minitor",
+   "text": "Unten links steht ein Minitor. Der Spieler oben links dribbelt an der ersten Stange vorbei und spielt einen Doppelpass mit dem Trainer. Dann schießt er ins Minitor. Danach geht es zurück zum Start.",
+   "board": {
+    "players": [
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 51.8,
+      "y": 53,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 51.6,
+      "y": 32.4,
+      "label": "8"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 68.5,
+      "y": 31,
+      "label": "2"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 61.5,
+      "y": 9.6,
+      "label": "7"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 35,
+      "y": 11,
+      "label": "9"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 43.3,
+      "y": 27,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 35.6,
+      "y": 11.6
+     },
+     {
+      "id": "s1",
+      "x": 47,
+      "y": 27.5
+     },
+     {
+      "id": "s2",
+      "x": 47,
+      "y": 24
+     }
+    ],
+    "steps": [
+     {
+      "label": "Vorbei an der Stange",
+      "say": "Neon neun dribbelt links an der ersten Stange vorbei und passt zum Trainer.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         31.6,
+         16
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n9",
+        "to": [
+         31.6,
+         24.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         43.9,
+         27.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Doppelpass",
+      "say": "Neon neun läuft weiter nach unten, und der Trainer spielt ihm den Ball zurück in den Lauf.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         31.5,
+         37
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         32.1,
+         37.6
+        ],
+        "type": "pass",
+        "delay": 0.4
+       }
+      ]
+     },
+     {
+      "label": "Minitor: Punkt",
+      "say": "Neon neun schießt ins Minitor, und das gibt einen Punkt für Neon neun. Dann startet der Nächste.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         36,
+         54.7
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ],
+    "goals": [
+     {
+      "x": 36,
+      "y": 55,
+      "side": "bottom"
+     }
+    ]
+   }
+  }
+ ]
+}

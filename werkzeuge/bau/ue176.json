@@ -1,0 +1,548 @@
+{
+ "title": "Der versteckte Rückpass",
+ "code": "UE-176",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Ballannahme",
+  "Zusammenspiel"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 3,
+ "players_max": 12,
+ "field_size": "9 x 9 m",
+ "description": "Drei Stangen stehen im Dreieck, ein Spieler arbeitet in der Mitte, zwei stehen außen. Nach Doppelpässen läuft der mittlere Spieler um eine Stange und bekommt den Ball. Er nimmt ihn nach innen mit, täuscht mit Körper und Blick einen Pass zur anderen Seite an und spielt dann versteckt zurück. Danach geht es auf der anderen Seite weiter.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 9 mal 9 Metern. Drei Stangen im Dreieck: zwei oben, eine unten in der Mitte.",
+  "Verteilen: Drei Spieler pro Feld. Neon acht arbeitet in der Mitte, Neon vier steht links, Neon zehn rechts. Bei mehr Kindern mehrere Felder. Der Trainer steht rechts unten mit Bällen.",
+  "Ablauf: Doppelpässe mit Neon zehn, um die rechte Stange laufen und annehmen, nach innen mitnehmen und versteckt zurückpassen. Wieder um die Stange, Ball zurück, in die Mitte dribbeln und das Gleiche links mit Neon vier.",
+  "Wechsel: Nach einer Minute oder einigen Runden geht ein anderer Spieler in die Mitte."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Den Rückpass mit Körper und Blick verstecken",
+  "Auf Tempo und Genauigkeit der Pässe achten",
+  "Direkt spielen: kurze, schnelle Kombinationen",
+  "Mit beiden Füßen und mit viel Tempo üben"
+ ],
+ "materials": [
+  "3 Stangen",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Der versteckte Rückpass. Drei Spieler und drei Stangen, und der Spieler in der Mitte lernt, den Gegner mit Körper und Blick zu täuschen.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   }
+  ],
+  "cones": [
+   {
+    "x": 40.3,
+    "y": 23,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 59.8,
+    "y": 23,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 51.3,
+    "y": 38,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 50.6,
+    "y": 27,
+    "label": "8"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 36.6,
+    "y": 37.5,
+    "label": "4"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 64.2,
+    "y": 38.8,
+    "label": "10"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 80,
+    "y": 48,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 51.2,
+    "y": 27.6
+   },
+   {
+    "id": "s1",
+    "x": 83.6,
+    "y": 51.5
+   },
+   {
+    "id": "s2",
+    "x": 80,
+    "y": 51.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Doppelpässe",
+    "say": "Neon acht spielt Doppelpässe mit Neon zehn: hin, zurück und wieder hin.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       64.8,
+       39.4
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       51.2,
+       27.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       64.8,
+       39.4
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Um die Stange",
+    "say": "Neon acht läuft außen um die rechte Stange. Neon zehn spielt ihm den Ball hoch in den Lauf.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       53.5,
+       18.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n8",
+      "to": [
+       59.8,
+       16.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       64,
+       20
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       64.6,
+       20.6
+      ],
+      "type": "pass",
+      "delay": 0.8
+     }
+    ]
+   },
+   {
+    "label": "Versteckter Rückpass",
+    "say": "Neon acht nimmt den Ball nach innen mit. Er tut so, als wolle er nach links spielen, und passt dann versteckt zurück zu Neon zehn.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       55.5,
+       18
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       64.8,
+       39.4
+      ],
+      "type": "pass",
+      "bend": 6,
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Wieder um die Stange",
+    "say": "Sofort läuft Neon acht wieder außen um die Stange, und Neon zehn spielt ihm den Ball zurück.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       59.8,
+       16.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n8",
+      "to": [
+       64,
+       20
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       64.6,
+       20.6
+      ],
+      "type": "pass",
+      "delay": 0.5
+     }
+    ]
+   },
+   {
+    "label": "In die Mitte",
+    "say": "Neon acht dribbelt mit Tempo zurück in die Mitte. Jetzt kommt das Gleiche links mit Neon vier, und nach einer Minute ist ein anderer Spieler in der Mitte dran.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       61,
+       28
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n8",
+      "to": [
+       50.6,
+       27
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "9 m"
+   },
+   {
+    "x1": 90,
+    "y1": 5,
+    "x2": 90,
+    "y2": 55,
+    "text": "9 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Mit Körper und Blick täuschen.",
+   "title": "Körper und Blick",
+   "text": "Der Rückpass soll überraschen. Darum dreht Neon acht den Körper zur anderen Seite und schaut auch dorthin, als ginge der Pass nach links. Erst im letzten Moment spielt er zurück nach rechts.",
+   "board": {
+    "players": [
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 64,
+      "y": 20,
+      "label": "8"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 36.6,
+      "y": 37.5,
+      "label": "4"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 64.2,
+      "y": 38.8,
+      "label": "10"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 80,
+      "y": 48,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 64.6,
+      "y": 20.6
+     },
+     {
+      "id": "s1",
+      "x": 83.6,
+      "y": 51.5
+     },
+     {
+      "id": "s2",
+      "x": 80,
+      "y": 51.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Nach links schauen",
+      "say": "Neon acht nimmt den Ball nach innen mit, dreht den Körper nach links und schaut dorthin.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         55.5,
+         18
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n8",
+        "to": [
+         44,
+         29
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Zurück nach rechts",
+      "say": "Dann spielt er den Ball überraschend zurück zu Neon zehn. Ein Gegner wäre jetzt auf die falsche Seite gelaufen.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         64.8,
+         39.4
+        ],
+        "type": "pass",
+        "bend": 6
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Mit beiden Füßen.",
+   "title": "Beide Füße",
+   "text": "Auf der linken Seite läuft alles spiegelverkehrt. Neon acht spielt jetzt mit Neon vier und benutzt den anderen Fuß. So wird jeder mit beiden Füßen sicher.",
+   "board": {
+    "players": [
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 50.6,
+      "y": 27,
+      "label": "8"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 36.6,
+      "y": 37.5,
+      "label": "4"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 64.2,
+      "y": 38.8,
+      "label": "10"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 80,
+      "y": 48,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 51.2,
+      "y": 27.6
+     },
+     {
+      "id": "s1",
+      "x": 83.6,
+      "y": 51.5
+     },
+     {
+      "id": "s2",
+      "x": 80,
+      "y": 51.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Doppelpässe links",
+      "say": "Neon acht spielt Doppelpässe mit Neon vier, läuft außen um die linke Stange und bekommt den Ball.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         37.2,
+         38.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         51.2,
+         27.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         37.2,
+         38.1
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n8",
+        "to": [
+         47,
+         18.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n8",
+        "to": [
+         40.3,
+         16.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n8",
+        "to": [
+         36.6,
+         20
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         37.2,
+         20.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Rückpass mit links",
+      "say": "Er nimmt den Ball nach innen mit und spielt mit dem anderen Fuß versteckt zurück zu Neon vier. Nach einer Minute ist ein anderer Spieler in der Mitte dran.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         45,
+         18
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         37.2,
+         38.1
+        ],
+        "type": "pass",
+        "bend": -6,
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

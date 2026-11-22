@@ -1,0 +1,600 @@
+{
+ "title": "Kombinieren mit Direktpässen",
+ "code": "UE-157",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel",
+  "Bewegung"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 4,
+ "players_max": 8,
+ "field_size": "9 x 14 m",
+ "description": "Eine feste Passfolge mit lauter Direktpässen. Ein Spieler dribbelt in die Mitte und spielt nach oben, dann läuft der Ball mit einem Kontakt über die Seite bis zum anderen Ende. Sechs Hütchen im Feld stehen für Gegenspieler. Nach jeder Runde wechseln die Spieler die Station, und die Passfolge geht über die andere Seite.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 9 mal 14 Metern. Sechs Hütchen im Feld stehen für Gegenspieler, die nur im Weg stehen.",
+  "Verteilen: Ein Spieler von Team Neon oben in der Mitte, einer unten mit Ball, zwei warten unten links und rechts. Der Trainer steht oben rechts mit Bällen.",
+  "Ablauf: Der Spieler mit Ball dribbelt in die Mitte und passt nach oben. Danach wird nur noch direkt gespielt: zurück, nach außen, zurück, in die Tiefe und zum Schluss nach unten.",
+  "Wechsel: Der Spieler aus der Mitte geht nach oben, der Spieler von oben stellt sich unten an. Jede Runde wechselt die Seite, einmal rechts, einmal links."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Vor den Mitspieler passen, damit er direkt spielen kann",
+  "Sich schnell anbieten und in Bewegung bleiben",
+  "Den Körper schon vor dem Ball richtig stellen",
+  "Nach dem Pass sofort weiter, damit das Tempo hoch bleibt"
+ ],
+ "materials": [
+  "6 Hütchen",
+  "Viele Bälle",
+  "Leibchen"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Kombinieren mit Direktpässen. Der Ball läuft mit einem Kontakt über die Seite von einem Ende zum anderen.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 33.3,
+    "y": 5,
+    "w": 33.4,
+    "h": 50
+   }
+  ],
+  "goals": [],
+  "cones": [
+   {
+    "x": 45.4,
+    "y": 15.2,
+    "color": "orange"
+   },
+   {
+    "x": 55,
+    "y": 15.2,
+    "color": "orange"
+   },
+   {
+    "x": 38.3,
+    "y": 29.3,
+    "color": "orange"
+   },
+   {
+    "x": 61.8,
+    "y": 29.3,
+    "color": "orange"
+   },
+   {
+    "x": 45.4,
+    "y": 43.1,
+    "color": "orange"
+   },
+   {
+    "x": 55,
+    "y": 43.1,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 50,
+    "y": 5,
+    "label": "10"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 50,
+    "y": 52.5,
+    "label": "6"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 40,
+    "y": 53,
+    "label": "7"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 60,
+    "y": 53,
+    "label": "11"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 72,
+    "y": 5,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 50.6,
+    "y": 53.1
+   },
+   {
+    "id": "s1",
+    "x": 75.6,
+    "y": 8.5
+   },
+   {
+    "id": "s2",
+    "x": 72,
+    "y": 8.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "In die Mitte dribbeln",
+    "say": "Neon sechs dribbelt mit dem Ball zwischen den Hütchen hindurch in die Mitte.",
+    "moves": [
+     {
+      "who": "n6",
+      "to": [
+       50,
+       34.5
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Steil und zurück",
+    "say": "Neon sechs passt nach oben zu Neon zehn. Der spielt direkt zurück, vor Neon sechs in den Lauf, und startet sofort nach rechts.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       5.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n6",
+      "to": [
+       52,
+       33
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "b1",
+      "to": [
+       52.6,
+       33.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n10",
+      "to": [
+       62.5,
+       17
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Nach außen und zurück",
+    "say": "Neon sechs spielt direkt nach außen zu Neon zehn, und der legt mit einem Kontakt zurück. Dann läuft Neon zehn außen an der Seite nach unten.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       63.1,
+       17.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       52.6,
+       33.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n10",
+      "to": [
+       65,
+       29
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n10",
+      "to": [
+       63.5,
+       41
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "In die Tiefe, dann nach unten",
+    "say": "Neon sechs spielt in die Tiefe, und Neon zehn passt direkt nach unten zu Neon elf. Die Passfolge ist geschafft. Neon sechs geht nach oben, Neon zehn stellt sich unten an, und Neon elf startet die nächste Runde über links.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       64.1,
+       41.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       60.6,
+       53.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n6",
+      "to": [
+       50,
+       6
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n10",
+      "to": [
+       50,
+       52.5
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 33.3,
+    "y1": 58.6,
+    "x2": 66.7,
+    "y2": 58.6,
+    "text": "9 m"
+   },
+   {
+    "x1": 86,
+    "y1": 5,
+    "x2": 86,
+    "y2": 55,
+    "text": "14 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Vor den Mitspieler passen.",
+   "title": "In den Lauf passen",
+   "text": "Der Pass geht nicht in die Füße, sondern ein Stück vor den Mitspieler, dorthin, wo er hinläuft. So kann er den Ball mit einem Kontakt weiterspielen. Auch das Tempo des Passes muss passen.",
+   "board": {
+    "players": [
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 44.6,
+      "y": 9.5,
+      "label": "10"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 50.2,
+      "y": 26.6,
+      "label": "6"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 40,
+      "y": 53,
+      "label": "7"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 60,
+      "y": 53,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 72,
+      "y": 5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.8,
+      "y": 27.2
+     },
+     {
+      "id": "s1",
+      "x": 75.6,
+      "y": 8.5
+     },
+     {
+      "id": "s2",
+      "x": 72,
+      "y": 8.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Pass in den Lauf",
+      "say": "Neon zehn läuft schräg nach links. Neon sechs spielt nicht in seine Füße, sondern vor ihn in den Lauf.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         38.5,
+         20
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         39.1,
+         20.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Direkt weiter",
+      "say": "Neon sechs läuft weiter nach vorn. Neon zehn spielt den Ball mit einem Kontakt zurück, genau in seinen Lauf.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         50,
+         20
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         20.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Richtungswechsel nach dem Pass in die Mitte.",
+   "title": "Aufdrehen und wenden",
+   "text": "Jetzt kommt der Ball von oben zurück, und der Spieler in der Mitte dreht auf und spielt nach unten. Vorher schaut er über die Schulter. Er nimmt den Ball offen an und spielt mit dem Spieler unten weiter, bis der Ball oben ankommt.",
+   "board": {
+    "players": [
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 50,
+      "y": 5,
+      "label": "10"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 50,
+      "y": 52.5,
+      "label": "6"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 40,
+      "y": 53,
+      "label": "7"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 60,
+      "y": 53,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 72,
+      "y": 5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 53.1
+     },
+     {
+      "id": "s1",
+      "x": 75.6,
+      "y": 8.5
+     },
+     {
+      "id": "s2",
+      "x": 72,
+      "y": 8.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Dribbeln und steil",
+      "say": "Neon sechs dribbelt in die Mitte und passt nach oben zu Neon zehn. Neon elf kommt unten ins Feld.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         50,
+         34.5
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         5.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n11",
+        "to": [
+         53,
+         50
+        ],
+        "type": "lauf",
+        "delay": 0.5
+       }
+      ]
+     },
+     {
+      "label": "Schulterblick und aufdrehen",
+      "say": "Neon sechs schaut über die Schulter zu Neon elf. Neon zehn spielt direkt zurück, Neon sechs dreht auf und passt nach unten zu Neon elf.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         54,
+         51
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         35.1
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         53.6,
+         50.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Zurück und in den Lauf",
+      "say": "Neon elf legt direkt zurück und läuft außen nach oben. Neon sechs spielt ihm den Ball in den Lauf.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         35.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n11",
+        "to": [
+         65,
+         37
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n11",
+        "to": [
+         65,
+         19
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         65.6,
+         19.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Nach oben",
+      "say": "Neon elf passt direkt nach oben zu Neon zehn. Die Passfolge ist geschafft, und die Spieler wechseln die Stationen.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         5.6
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

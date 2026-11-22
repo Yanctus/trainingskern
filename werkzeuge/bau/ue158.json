@@ -1,0 +1,624 @@
+{
+ "title": "Abschluss am Elfmeterpunkt",
+ "code": "UE-158",
+ "kind": "Übungsform",
+ "focuses": [
+  "Torschuss",
+  "Bewegung",
+  "Ballannahme"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 4,
+ "players_max": 8,
+ "field_size": "18 x 16 m",
+ "description": "Vier Stangen stehen als Raute um den Elfmeterpunkt. Der Stürmer läuft mit schnellen Schritten um die Stangen und kommt jedes Mal an einer anderen Stelle frei. Der Trainer spielt ihm den Ball zu, und er schießt direkt aufs Tor mit Torwart. Jeder Treffer gibt einen Punkt.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 16 Metern vor einem Jugendtor. Vier Stangen als Raute um den Elfmeterpunkt, unten ein Start-Hütchen.",
+  "Verteilen: Ein neutraler Torwart im Tor. Die Spieler von Team Neon stehen am Start-Hütchen. Der Trainer steht rechts neben dem Tor mit vielen Bällen.",
+  "Ablauf: Der Stürmer läuft um die Stangen, der Trainer spielt flach zu, und der Stürmer schießt direkt. Gleich danach läuft er zur nächsten Stelle und schießt noch einmal.",
+  "Wertung und Wechsel: Jeder Treffer gibt einen Punkt. Nach seinen Abschlüssen holt der Stürmer einen Ball zurück, und der Nächste ist dran."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Direkt abschließen und auf die Ecken zielen",
+  "Mit schnellen, kurzen Schritten um die Stangen",
+  "Je nach Pass ins nahe oder lange Eck schießen",
+  "Nach dem Schuss sofort zur nächsten Stelle laufen"
+ ],
+ "materials": [
+  "1 Jugendtor",
+  "4 Stangen",
+  "1 Hütchen",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Abschluss am Elfmeterpunkt. Der Stürmer läuft um vier Stangen, kommt frei und schießt direkt, und jeder Treffer gibt einen Punkt.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 22.2,
+    "y": 5,
+    "w": 55.6,
+    "h": 50
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "jugend"
+   }
+  ],
+  "cones": [
+   {
+    "x": 46,
+    "y": 56,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 42,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 42,
+    "y": 32,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 58,
+    "y": 32,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 50,
+    "y": 23,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 45,
+    "y": 52,
+    "label": "9"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 36,
+    "y": 55,
+    "label": "11"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 60.5,
+    "y": 55,
+    "label": "7"
+   },
+   {
+    "id": "k",
+    "team": "t",
+    "x": 50,
+    "y": 9,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 70,
+    "y": 7,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 70.6,
+    "y": 7.6
+   },
+   {
+    "id": "b2",
+    "x": 66.8,
+    "y": 10
+   },
+   {
+    "id": "s1",
+    "x": 74.1,
+    "y": 10.5
+   },
+   {
+    "id": "s2",
+    "x": 77.7,
+    "y": 10.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Finte, dann außen herum",
+    "say": "Neon neun läuft zuerst auf die erste Stange zu, als wollte er links vorbei. Dann dreht er ab und läuft rechts an ihr vorbei nach außen.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       47,
+       46
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n9",
+      "to": [
+       53.5,
+       45.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n9",
+      "to": [
+       63,
+       34
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Direkt geschossen: Punkt",
+    "say": "Der Trainer spielt flach in den Lauf. Neon neun schießt direkt ins nahe Eck, und das gibt einen Punkt für Neon neun.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       63.6,
+       34.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       55.5,
+       5.3
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Rückwärts um die Stange",
+    "say": "Sofort geht es weiter. Neon neun läuft mit schnellen, kleinen Schritten rückwärts um die rechte Stange, der Blick bleibt nach vorn.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       61,
+       39
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n9",
+      "to": [
+       55,
+       37.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n9",
+      "to": [
+       53.6,
+       30
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zweiter Schuss: Punkt",
+    "say": "An der vorderen Stange kommt der nächste Pass. Neon neun schießt direkt, und das gibt wieder einen Punkt für Neon neun. Dann holt er einen Ball, und Neon elf ist dran.",
+    "moves": [
+     {
+      "who": "b2",
+      "to": [
+       54.2,
+       30.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b2",
+      "to": [
+       56,
+       5.3
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 22.2,
+    "y1": 58.6,
+    "x2": 77.8,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 86,
+    "y1": 5,
+    "x2": 86,
+    "y2": 55,
+    "text": "16 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Erst zum Torwart schauen, dann schießen.",
+   "title": "Erst schauen, dann schießen",
+   "text": "Auf dem Weg zum Ball schaut der Stürmer kurz zum Torwart. Steht der Torwart am nahen Pfosten, geht der Schuss ins lange Eck. Steht er in der Mitte, zielt der Stürmer in die Ecke, die näher ist.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 52,
+      "y": 45.5,
+      "label": "9"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 36,
+      "y": 55,
+      "label": "11"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 60.5,
+      "y": 55,
+      "label": "7"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50,
+      "y": 9,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 70,
+      "y": 7,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 70.6,
+      "y": 7.6
+     },
+     {
+      "id": "b2",
+      "x": 66.8,
+      "y": 10
+     },
+     {
+      "id": "s1",
+      "x": 74.1,
+      "y": 10.5
+     },
+     {
+      "id": "s2",
+      "x": 77.7,
+      "y": 10.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Blick zum Torwart",
+      "say": "Neon neun läuft außen an der rechten Stange vorbei und schaut dabei zum Torwart. Der Torwart geht schon zum nahen Pfosten.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         63,
+         34
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n9",
+        "to": [
+         55,
+         15
+        ],
+        "type": "blick",
+        "after": true
+       },
+       {
+        "who": "k",
+        "to": [
+         54,
+         9
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       }
+      ]
+     },
+     {
+      "label": "Ins lange Eck: Punkt",
+      "say": "Der Trainer spielt zu. Neon neun schießt direkt ins lange Eck, weit weg vom Torwart, und das gibt einen Punkt für Neon neun.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         63.6,
+         34.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         44,
+         5.3
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Vier Abschlüsse hintereinander.",
+   "title": "Vier Abschlüsse am Stück",
+   "text": "Jetzt kommen zwei weitere Laufwege dazu. Nach den ersten beiden Schüssen läuft der Stürmer rückwärts um die erste Stange und schießt an der vorderen Stange. Zum Schluss läuft er links um die Raute und bekommt einen flachen Pass quer durch den Strafraum.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 55.5,
+      "y": 26,
+      "label": "9"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 36,
+      "y": 55,
+      "label": "11"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 60.5,
+      "y": 55,
+      "label": "7"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50,
+      "y": 9,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 70,
+      "y": 7,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 70.6,
+      "y": 7.6
+     },
+     {
+      "id": "b2",
+      "x": 70.5,
+      "y": 12.5
+     },
+     {
+      "id": "s1",
+      "x": 74.1,
+      "y": 10.5
+     },
+     {
+      "id": "s2",
+      "x": 77.7,
+      "y": 10.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Rückwärts um die erste Stange",
+      "say": "Neon neun läuft rückwärts nach unten und um die erste Stange herum. Dann kommt er durch die Mitte zur vorderen Stange zurück.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         55.5,
+         38
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n9",
+        "to": [
+         53.5,
+         46
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n9",
+        "to": [
+         46.5,
+         45.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n9",
+        "to": [
+         46,
+         37
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n9",
+        "to": [
+         52.4,
+         26.4
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Dritter Schuss: Punkt",
+      "say": "Der Trainer spielt zu, und Neon neun schießt direkt ins rechte Eck. Das gibt einen Punkt für Neon neun.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         53,
+         27
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         56.5,
+         5.3
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Links herum, vierter Schuss: Punkt",
+      "say": "Zum Schluss läuft Neon neun links um die äußere Stange. Der Trainer spielt flach quer durch den Strafraum, Neon neun schießt direkt, und das gibt einen Punkt für Neon neun. Dann ist Neon elf dran.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         45.5,
+         36.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n9",
+        "to": [
+         39.5,
+         36.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n9",
+        "to": [
+         37,
+         30
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n9",
+        "to": [
+         41,
+         23.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n9",
+        "to": [
+         46.7,
+         18.6
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b2",
+        "to": [
+         47.3,
+         19.2
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b2",
+        "to": [
+         45,
+         5.3
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

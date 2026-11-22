@@ -1,0 +1,626 @@
+{
+ "title": "Spielaufbau von hinten",
+ "code": "UE-161",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel",
+  "Ballannahme"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 8,
+ "players_max": 8,
+ "field_size": "27 x 27 m",
+ "description": "Eine Abwehrkette und vier Mittelfeldspieler üben den Spielaufbau ohne Gegner. Die Abwehr wechselt mit schnellen Doppelpässen die Seite und spielt dann durch eine Lücke zwischen den Stangen ins Mittelfeld. Das Mittelfeld macht dasselbe und spielt zurück in die Abwehr. So läuft der Ball ohne Pause mit ein oder zwei Kontakten.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 27 mal 27 Metern. Quer durch die Mitte vier Stangen mit Lücken von etwa 4,5 Metern. An den Seiten vier Hütchen als Markierung.",
+  "Verteilen: Unten stehen vier Abwehrspieler von Team Neon, oben vier Mittelfeldspieler. Der Trainer steht unten links mit vielen Bällen.",
+  "Ablauf: Der Trainer spielt in die Abwehr. Die Abwehr wechselt mit Doppelpässen die Seite, dann spielt ein Innenverteidiger durch die Stangen ins Mittelfeld. Das Mittelfeld wiederholt das Muster und spielt zurück.",
+  "Wechsel: Nach sechs bis sieben Pässen oder auf Zuruf geht der Pass durch die Stangen. Geht ein Ball verloren, bringt der Trainer sofort einen neuen Ball."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Genau und mit dem richtigen Tempo passen",
+  "Laut rufen und absprechen, wann die Seite gewechselt wird",
+  "Mit ein oder zwei Kontakten spielen",
+  "Durch die Stangen besonders scharf passen"
+ ],
+ "materials": [
+  "4 Stangen",
+  "4 Hütchen",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Spielaufbau von hinten. Die Abwehr wechselt mit schnellen Pässen die Seite und spielt dann durch die Stangen ins Mittelfeld.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   }
+  ],
+  "cones": [
+   {
+    "x": 37.5,
+    "y": 30,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 45.8,
+    "y": 30,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 54.2,
+    "y": 30,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 62.5,
+    "y": 30,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 27.5,
+    "y": 26,
+    "color": "orange"
+   },
+   {
+    "x": 72.5,
+    "y": 26,
+    "color": "orange"
+   },
+   {
+    "x": 27.5,
+    "y": 34,
+    "color": "orange"
+   },
+   {
+    "x": 72.5,
+    "y": 34,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 30,
+    "y": 42,
+    "label": "3"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 41.7,
+    "y": 50,
+    "label": "6"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 58.3,
+    "y": 50,
+    "label": "5"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 70,
+    "y": 42,
+    "label": "2"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 30,
+    "y": 18,
+    "label": "11"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 41.7,
+    "y": 10,
+    "label": "10"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 58.3,
+    "y": 10,
+    "label": "8"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 70,
+    "y": 18,
+    "label": "7"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 19,
+    "y": 50,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 19.6,
+    "y": 50.6
+   },
+   {
+    "id": "s1",
+    "x": 15.4,
+    "y": 53.5
+   },
+   {
+    "id": "s2",
+    "x": 19,
+    "y": 53.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Anspiel",
+    "say": "Der Trainer spielt den Ball zu Neon sechs. Neon sechs passt zu Neon drei, und der spielt direkt weiter zu Neon fünf.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       42.3,
+       50.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       30.6,
+       42.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       58.9,
+       50.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Seitenwechsel",
+    "say": "Neon fünf legt zurück zu Neon sechs. Neon sechs spielt auf die andere Seite zu Neon zwei, und der spielt zurück zu Neon fünf.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       42.3,
+       50.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       70.6,
+       42.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       58.9,
+       50.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Durch die Stangen",
+    "say": "Jetzt ruft Neon acht nach dem Ball. Neon fünf spielt einen scharfen Pass durch die Lücke zwischen den Stangen zu Neon acht.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       58.9,
+       10.6
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Mittelfeld wechselt",
+    "say": "Das Mittelfeld macht dasselbe. Neon acht spielt zu Neon sieben, der zurück zu Neon acht, und Neon acht wechselt die Seite zu Neon zehn.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       70.6,
+       18.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       58.9,
+       10.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       42.3,
+       10.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zurück: geschafft",
+    "say": "Neon zehn spielt scharf durch die Stangen zurück zu Neon sechs. Geschafft, der Ball war in beiden Reihen, und jetzt ist wieder die Abwehr dran.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       42.3,
+       50.6
+      ],
+      "type": "pass"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "27 m"
+   },
+   {
+    "x1": 83,
+    "y1": 5,
+    "x2": 83,
+    "y2": 55,
+    "text": "27 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Zwei Bälle gleichzeitig.",
+   "title": "Zwei Bälle",
+   "text": "Jetzt laufen zwei Bälle gleichzeitig, einer in der Abwehr und einer im Mittelfeld. Vor dem Pass durch die Stangen hebt der Spieler den Kopf und schaut, wo der andere Ball ist. Erst dann spielt er zum Mitspieler, der gerade frei ist. Am Anfang gibt es Chaos, aber mit lautem Rufen klappt es bald.",
+   "board": {
+    "players": [
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 30,
+      "y": 42,
+      "label": "3"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 41.7,
+      "y": 50,
+      "label": "6"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 58.3,
+      "y": 50,
+      "label": "5"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 70,
+      "y": 42,
+      "label": "2"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 30,
+      "y": 18,
+      "label": "11"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 41.7,
+      "y": 10,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 58.3,
+      "y": 10,
+      "label": "8"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 70,
+      "y": 18,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 19,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 70.6,
+      "y": 42.6
+     },
+     {
+      "id": "b2",
+      "x": 30.6,
+      "y": 18.6
+     },
+     {
+      "id": "s1",
+      "x": 15.4,
+      "y": 53.5
+     },
+     {
+      "id": "s2",
+      "x": 19,
+      "y": 53.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zwei Bälle",
+      "say": "Jetzt laufen zwei Bälle gleichzeitig. Hinten spielt Neon zwei zu Neon fünf, und vorne spielt Neon elf zu Neon acht.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         58.9,
+         50.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b2",
+        "to": [
+         58.9,
+         10.6
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Kopf hoch",
+      "say": "Neon fünf hebt den Kopf und schaut nach vorn, wo der andere Ball ist. Neon acht hat ihn, also ist Neon zehn frei.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         58.3,
+         29
+        ],
+        "type": "blick"
+       }
+      ]
+     },
+     {
+      "label": "Gleichzeitig durch",
+      "say": "Neon fünf spielt durch die Stangen zu Neon zehn. Gleichzeitig spielt Neon acht nach hinten zu Neon zwei. Die Bälle kreuzen sich, darum rufen alle laut.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         42.3,
+         10.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b2",
+        "to": [
+         70.6,
+         42.6
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Der Innenverteidiger dribbelt ins Mittelfeld.",
+   "title": "Abwehr dribbelt an",
+   "text": "Auf ein Zeichen dribbelt ein Innenverteidiger selbst durch eine Lücke zwischen den Stangen ins Mittelfeld. Dort spielt er zu einem Mittelfeldspieler. Ein Mittelfeldspieler läuft dafür nach hinten und füllt die Lücke in der Abwehr.",
+   "board": {
+    "players": [
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 30,
+      "y": 42,
+      "label": "3"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 41.7,
+      "y": 50,
+      "label": "6"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 58.3,
+      "y": 50,
+      "label": "5"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 70,
+      "y": 42,
+      "label": "2"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 30,
+      "y": 18,
+      "label": "11"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 41.7,
+      "y": 10,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 58.3,
+      "y": 10,
+      "label": "8"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 70,
+      "y": 18,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 19,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 58.9,
+      "y": 50.6
+     },
+     {
+      "id": "s1",
+      "x": 15.4,
+      "y": 53.5
+     },
+     {
+      "id": "s2",
+      "x": 19,
+      "y": 53.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Andribbeln",
+      "say": "Auf ein Zeichen dribbelt Neon fünf mit Ball durch die Lücke zwischen den Stangen ins Mittelfeld.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         58.3,
+         22
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Ins Mittelfeld",
+      "say": "Neon fünf spielt zu Neon sieben. Gleichzeitig läuft Neon acht nach hinten und füllt den Platz in der Abwehr.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         70.6,
+         18.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n8",
+        "to": [
+         66,
+         30
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n8",
+        "to": [
+         58.3,
+         48
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

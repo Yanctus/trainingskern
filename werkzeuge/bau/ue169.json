@@ -1,0 +1,680 @@
+{
+ "title": "Torwart baut das Spiel auf",
+ "code": "UE-169",
+ "kind": "Spielform",
+ "focuses": [
+  "Zusammenspiel",
+  "Passspiel",
+  "Umschalten"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 7,
+ "players_max": 7,
+ "field_size": "18 x 24 m",
+ "description": "Der Torwart, zwei Verteidiger und ein Sechser von Team Neon spielen sich gegen drei Spieler von Team Rot von hinten heraus. Der Torwart ist dabei der vierte Feldspieler: Er lockt einen Gegner an und spielt dann in die Lücke. Team Neon will durch alle Zonen in eines der beiden Minitore treffen. Erobert Team Rot den Ball, dribbelt es in die Endzone hinter dem Torwart.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 24 Metern, längs in drei gleich große Zonen geteilt. Unten eine schmale Endzone von zwei Metern, oben zwei Minitore.",
+  "Verteilen: Team Neon mit Torwart, zwei Verteidigern und einem Sechser. Team Rot mit drei Spielern: zwei Stürmer vorn, einer hinter dem Sechser. Der Trainer steht an der Seite mit Bällen.",
+  "Ablauf: Jede Runde beginnt beim Torwart. Team Neon spielt sich von hinten durch die Zonen nach oben. Team Rot presst und will den Ball erobern.",
+  "Wertung und Wechsel: Treffer ins Minitor gibt einen Punkt für Team Neon. Ein Dribbling von Team Rot in die Endzone gibt einen Punkt für Team Rot. Nach einigen Runden tauschen die Feldspieler die Rollen."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Der Torwart steht mittig, damit er beide Verteidiger anspielen kann",
+  "Die Verteidiger stehen versetzt und breit, so gibt es mehr Passwege",
+  "Schnell und genau passen, sobald ein Spieler frei ist",
+  "Der Sechser sucht sich die freie Lücke zwischen den Gegnern"
+ ],
+ "materials": [
+  "2 Minitore",
+  "Hütchen für Feld und Zonen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Torwart baut das Spiel auf. Vier gegen drei, und der Torwart hilft mit, sich von hinten herauszuspielen.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 31.25,
+    "y": 5,
+    "w": 37.5,
+    "h": 50
+   },
+   {
+    "type": "line",
+    "x1": 31.25,
+    "y1": 20.38,
+    "x2": 68.75,
+    "y2": 20.38,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 31.25,
+    "y1": 35.77,
+    "x2": 68.75,
+    "y2": 35.77,
+    "dashed": true
+   },
+   {
+    "type": "zone",
+    "x": 31.25,
+    "y": 51.15,
+    "w": 37.5,
+    "h": 3.85,
+    "color": "orange"
+   }
+  ],
+  "goals": [
+   {
+    "x": 37,
+    "y": 5,
+    "side": "top"
+   },
+   {
+    "x": 63,
+    "y": 5,
+    "side": "top"
+   }
+  ],
+  "cones": [
+   {
+    "x": 31.25,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 68.75,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 31.25,
+    "y": 55,
+    "color": "orange"
+   },
+   {
+    "x": 68.75,
+    "y": 55,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n1",
+    "team": "a",
+    "x": 50,
+    "y": 51,
+    "label": "TW"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 33.4,
+    "y": 41,
+    "label": "5"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 66.6,
+    "y": 41,
+    "label": "4"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 50,
+    "y": 22,
+    "label": "6"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 41.7,
+    "y": 16,
+    "label": "8"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 41.7,
+    "y": 36,
+    "label": "9"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 58.3,
+    "y": 35,
+    "label": "10"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 24,
+    "y": 44,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 50.6,
+    "y": 51.6
+   },
+   {
+    "id": "s1",
+    "x": 21,
+    "y": 47.5
+   },
+   {
+    "id": "s2",
+    "x": 24.6,
+    "y": 47.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Zum Verteidiger",
+    "say": "Team Neon spielt nach oben. Der Torwart passt nach rechts zu Neon vier, und Rot zehn läuft ihn sofort an.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       67.2,
+       41.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r10",
+      "to": [
+       62,
+       38.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Zurück zum Torwart",
+    "say": "Neon vier spielt zurück. Der Torwart geht ein Stück nach rechts und nimmt den Ball an.",
+    "moves": [
+     {
+      "who": "n1",
+      "to": [
+       56,
+       50
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       56.6,
+       50.6
+      ],
+      "type": "pass",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "In die Lücke",
+    "say": "Rot zehn ist jetzt weit rechts. Der Torwart spielt flach durch die Lücke zu Neon sechs.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       22.6
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Fünf startet",
+    "say": "Neon fünf startet nach vorn. Neon sechs spielt ihm den Ball in den Lauf.",
+    "moves": [
+     {
+      "who": "n5",
+      "to": [
+       36,
+       27
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       36.6,
+       27.6
+      ],
+      "type": "pass",
+      "delay": 0.4
+     },
+     {
+      "who": "r8",
+      "to": [
+       40,
+       21
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Minitor: Punkt",
+    "say": "Neon fünf dribbelt in die letzte Zone und trifft ins linke Minitor, und das gibt einen Punkt für Team Neon. Holt Team Rot den Ball und dribbelt in die Endzone, gibt das einen Punkt für Team Rot. Danach beginnt der Torwart mit einem neuen Ball vom Trainer.",
+    "moves": [
+     {
+      "who": "n5",
+      "to": [
+       35,
+       12
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       37,
+       5.3
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 31.25,
+    "y1": 58.6,
+    "x2": 68.75,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 86,
+    "y1": 5,
+    "x2": 86,
+    "y2": 55,
+    "text": "24 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Den Pass verstecken.",
+   "title": "Den Pass verstecken",
+   "text": "Der Torwart schaut zum Verteidiger und dreht die Hüfte dorthin, als ob er ihn anspielt. Der Stürmer glaubt das und läuft los. Jetzt ist in der Mitte eine Lücke, und der Torwart spielt in den Sechser.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 50,
+      "y": 51,
+      "label": "TW"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 33.4,
+      "y": 41,
+      "label": "5"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 66.6,
+      "y": 41,
+      "label": "4"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 50,
+      "y": 22,
+      "label": "6"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 41.7,
+      "y": 16,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 41.7,
+      "y": 36,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 58.3,
+      "y": 35,
+      "label": "10"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 24,
+      "y": 44,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 51.6
+     },
+     {
+      "id": "s1",
+      "x": 21,
+      "y": 47.5
+     },
+     {
+      "id": "s2",
+      "x": 24.6,
+      "y": 47.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zu Vier schauen",
+      "say": "Der Torwart schaut zu Neon vier und dreht die Hüfte dorthin. Rot zehn glaubt das und läuft zu Neon vier.",
+      "moves": [
+       {
+        "who": "n1",
+        "to": [
+         65,
+         40
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "r10",
+        "to": [
+         61.5,
+         39.5
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       }
+      ]
+     },
+     {
+      "label": "Doch in die Mitte",
+      "say": "Doch der Torwart spielt flach in die Mitte zu Neon sechs. Neon vier startet nach vorn.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         22.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n4",
+        "to": [
+         64,
+         28
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Minitor: Punkt",
+      "say": "Neon sechs spielt zu Neon vier. Der dribbelt hoch und trifft ins rechte Minitor, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         64.6,
+         28.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n4",
+        "to": [
+         63,
+         12
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         63,
+         5.3
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Beide Teams greifen an.",
+   "title": "In beide Richtungen",
+   "text": "Jetzt stehen auch unten zwei Minitore. Der Torwart spielt als Springer mit dem Team am Ball, so ist es immer vier gegen drei. Erobert Team Rot den Ball, greift es sofort die unteren Tore an. Nach jedem Punkt spielt der Trainer einen neuen Ball ein.",
+   "board": {
+    "players": [
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 33.4,
+      "y": 38,
+      "label": "5"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 66.6,
+      "y": 38,
+      "label": "4"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 50,
+      "y": 19,
+      "label": "6"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 41.7,
+      "y": 13,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 41.7,
+      "y": 30,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 58.3,
+      "y": 30,
+      "label": "10"
+     },
+     {
+      "id": "f1",
+      "team": "t",
+      "x": 50,
+      "y": 47,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 24,
+      "y": 44,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 34,
+      "y": 38.6
+     },
+     {
+      "id": "s1",
+      "x": 21,
+      "y": 47.5
+     },
+     {
+      "id": "s2",
+      "x": 24.6,
+      "y": 47.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Ball erobert",
+      "say": "Neon fünf will zu Neon sechs passen. Rot neun läuft in den Pass und erobert den Ball.",
+      "moves": [
+       {
+        "who": "r9",
+        "to": [
+         39.5,
+         33
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         40.1,
+         33.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Springer hilft Rot",
+      "say": "Jetzt greift Team Rot die unteren Tore an, und der Springer spielt mit Rot. Rot neun passt zum Springer, Rot zehn startet nach unten.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         47.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r10",
+        "to": [
+         60,
+         45
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n4",
+        "to": [
+         66,
+         46
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       }
+      ]
+     },
+     {
+      "label": "Unten: Punkt",
+      "say": "Der Springer spielt Rot zehn an, und der trifft ins rechte untere Minitor. Das gibt einen Punkt für Team Rot. Dann spielt der Trainer einen neuen Ball ein.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         60.6,
+         45.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         63,
+         54.7
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "goals": [
+     {
+      "x": 37,
+      "y": 5,
+      "side": "top"
+     },
+     {
+      "x": 63,
+      "y": 5,
+      "side": "top"
+     },
+     {
+      "x": 37,
+      "y": 55,
+      "side": "bottom"
+     },
+     {
+      "x": 63,
+      "y": 55,
+      "side": "bottom"
+     }
+    ]
+   }
+  }
+ ]
+}

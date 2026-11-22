@@ -1,0 +1,697 @@
+{
+ "title": "Zurück sprinten und abfangen",
+ "code": "UE-172",
+ "kind": "Übungsform",
+ "focuses": [
+  "Verteidigen",
+  "Umschalten",
+  "Schnelligkeit"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 10,
+ "players_max": 10,
+ "field_size": "18 x 14 m",
+ "description": "In jeder Hälfte spielen drei Angreifer gegen einen Verteidiger. Nach fünf Pässen dürfen die Angreifer in die Endzone spielen und dort aufs Minitor schießen. Der Verteidiger presst, sprintet zurück und fängt den Pass in die Tiefe ab. Erobert er den Ball und spielt ihn zum Zielspieler, gibt das einen Punkt für sein Team.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 14 Metern, längs in zwei Hälften geteilt. Oben eine Endzone von gut 4 Metern mit einem Minitor in jeder Hälfte.",
+  "Verteilen: In jeder Hälfte drei von Team Neon und ein Verteidiger von Team Rot. Unter jeder Hälfte steht ein Zielspieler von Team Rot. Der Trainer steht an der Seite mit Bällen.",
+  "Ablauf: Team Neon spielt drei gegen eins und braucht fünf Pässe. Dann darf es in die Endzone spielen, wo ein Mitspieler hinläuft und aufs Minitor schießt. Der Verteidiger presst und sprintet zurück.",
+  "Wertung und Wechsel: Treffer ins Minitor gibt einen Punkt für Team Neon, Pass zum Zielspieler einen Punkt für Team Rot. Die Hälften spielen abwechselnd, Verteidiger und Zielspieler tauschen nach jeder Runde."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Den Pass in die Tiefe zustellen und vorausahnen",
+  "Im richtigen Moment abfangen, bei schlechter Annahme oder schlechtem Pass",
+  "Den Läufer im Rücken verfolgen und nicht aufgeben",
+  "Nach dem Ballgewinn ruhig zum Zielspieler spielen"
+ ],
+ "materials": [
+  "2 Minitore",
+  "10 Hütchen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Zurück sprinten und abfangen. Drei gegen eins, und der Verteidiger sprintet zurück, um den Pass in die Tiefe abzufangen.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 10,
+    "w": 50,
+    "h": 37.5
+   },
+   {
+    "type": "line",
+    "x1": 50,
+    "y1": 10,
+    "x2": 50,
+    "y2": 47.5,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 25,
+    "y1": 22.5,
+    "x2": 75,
+    "y2": 22.5,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 37.5,
+    "y": 10,
+    "side": "top"
+   },
+   {
+    "x": 62.5,
+    "y": 10,
+    "side": "top"
+   }
+  ],
+  "cones": [],
+  "players": [
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 27,
+    "y": 27,
+    "label": "11"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 36,
+    "y": 26,
+    "label": "9"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 45.4,
+    "y": 29,
+    "label": "8"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 32,
+    "y": 44,
+    "label": "3"
+   },
+   {
+    "id": "r4",
+    "team": "b",
+    "x": 42,
+    "y": 52,
+    "label": "4"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 71,
+    "y": 28,
+    "label": "7"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 62,
+    "y": 32,
+    "label": "10"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 53.6,
+    "y": 40,
+    "label": "6"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 71.5,
+    "y": 44,
+    "label": "2"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 62,
+    "y": 52,
+    "label": "5"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 84,
+    "y": 24,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 32.6,
+    "y": 44.6
+   },
+   {
+    "id": "b2",
+    "x": 72.1,
+    "y": 44.6
+   },
+   {
+    "id": "s1",
+    "x": 85.6,
+    "y": 27.5
+   },
+   {
+    "id": "s2",
+    "x": 82,
+    "y": 27.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Drei gegen eins",
+    "say": "Links spielt Team Neon drei gegen eins und zählt die Pässe. Neon drei spielt zu Neon acht, und Rot neun läuft an.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       46,
+       29.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r9",
+      "to": [
+       40,
+       27
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Läufer in die Tiefe",
+    "say": "Fünf Pässe sind geschafft. Neon elf sprintet in die Endzone. Rot neun schaut über die Schulter, sieht den Läufer und sprintet zurück.",
+    "moves": [
+     {
+      "who": "n11",
+      "to": [
+       29,
+       16
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r9",
+      "to": [
+       29,
+       16
+      ],
+      "type": "blick",
+      "delay": 0.3
+     },
+     {
+      "who": "r9",
+      "to": [
+       33,
+       18
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Abgefangen",
+    "say": "Neon acht spielt den Ball in die Tiefe zu Neon elf. Rot neun ist rechtzeitig zurück und fängt den Ball ab.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       33.6,
+       18.6
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Zum Zielspieler: Punkt",
+    "say": "Rot neun spielt sofort zu Rot vier, und das gibt einen Punkt für Team Rot. Trifft Neon elf ins Minitor, gibt das einen Punkt für Team Neon. Danach ist die rechte Hälfte dran, und Rot neun tauscht mit Rot vier.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       42.6,
+       52.6
+      ],
+      "type": "pass"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 91,
+    "y1": 10,
+    "x2": 91,
+    "y2": 47.5,
+    "text": "14 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Im richtigen Moment abfangen.",
+   "title": "Den Moment erwischen",
+   "text": "Der Verteidiger rennt nicht blind auf den Ball. Er lauert und presst erst, wenn ein Angreifer den Ball schlecht annimmt oder schlecht passt. Dann geht er entschlossen drauf.",
+   "board": {
+    "players": [
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 27,
+      "y": 27,
+      "label": "11"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 36,
+      "y": 26,
+      "label": "9"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 45.4,
+      "y": 29,
+      "label": "8"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 32,
+      "y": 44,
+      "label": "3"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 42,
+      "y": 52,
+      "label": "4"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 71,
+      "y": 28,
+      "label": "7"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 62,
+      "y": 32,
+      "label": "10"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 53.6,
+      "y": 40,
+      "label": "6"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 71.5,
+      "y": 44,
+      "label": "2"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 62,
+      "y": 52,
+      "label": "5"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 84,
+      "y": 24,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 32.6,
+      "y": 44.6
+     },
+     {
+      "id": "b2",
+      "x": 72.1,
+      "y": 44.6
+     },
+     {
+      "id": "s1",
+      "x": 85.6,
+      "y": 27.5
+     },
+     {
+      "id": "s2",
+      "x": 82,
+      "y": 27.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Lauern",
+      "say": "Jetzt ist die rechte Hälfte dran. Neon zwei spielt zu Neon sechs. Rot zehn wartet und lauert auf einen Fehler.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         54.2,
+         40.6
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Schlechte Annahme",
+      "say": "Neon sechs nimmt den Ball schlecht an, und er springt weg. Das ist der Moment: Rot zehn presst sofort und erobert den Ball.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         57.6,
+         36.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r10",
+        "to": [
+         57,
+         36
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Zum Zielspieler: Punkt",
+      "say": "Rot zehn spielt sofort zu Rot fünf, und das gibt einen Punkt für Team Rot.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         62.6,
+         52.6
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Die Mittelzone verteidigen.",
+   "title": "Die Mittelzone",
+   "text": "Eine zweite Linie teilt das Feld in drei Zonen. Der Verteidiger startet in der Mittelzone, durch die die Angreifer hindurch müssen. Er stellt Pässe zu, verfolgt Läufer in den Rücken und fängt den Ball ab.",
+   "board": {
+    "players": [
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 27,
+      "y": 43,
+      "label": "11"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 35.5,
+      "y": 28,
+      "label": "9"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 44,
+      "y": 26,
+      "label": "8"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 45,
+      "y": 42,
+      "label": "3"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 36,
+      "y": 53,
+      "label": "4"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 71,
+      "y": 28,
+      "label": "7"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 62,
+      "y": 32,
+      "label": "10"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 53.6,
+      "y": 40,
+      "label": "6"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 71.5,
+      "y": 44,
+      "label": "2"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 62,
+      "y": 52,
+      "label": "5"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 84,
+      "y": 24,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 27.6,
+      "y": 43.6
+     },
+     {
+      "id": "b2",
+      "x": 72.1,
+      "y": 44.6
+     },
+     {
+      "id": "s1",
+      "x": 85.6,
+      "y": 27.5
+     },
+     {
+      "id": "s2",
+      "x": 82,
+      "y": 27.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Durch die Mittelzone",
+      "say": "Neon elf spielt zu Neon drei, der weiter in die Mittelzone zu Neon acht. Rot neun schiebt mit und presst.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         45.6,
+         42.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         44.6,
+         26.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "r9",
+        "to": [
+         38,
+         27
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       }
+      ]
+     },
+     {
+      "label": "Läufer im Rücken",
+      "say": "Neon elf sprintet in die Endzone. Rot neun schaut über die Schulter, sieht den Läufer und verfolgt ihn.",
+      "moves": [
+       {
+        "who": "n11",
+        "to": [
+         27.5,
+         31
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n11",
+        "to": [
+         31,
+         16
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r9",
+        "to": [
+         31,
+         16
+        ],
+        "type": "blick",
+        "delay": 0.4
+       },
+       {
+        "who": "r9",
+        "to": [
+         34,
+         18
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Abgefangen: Punkt",
+      "say": "Neon acht spielt in die Tiefe, aber Rot neun fängt den Ball ab und spielt sofort zu Rot vier. Das gibt einen Punkt für Team Rot.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         34.6,
+         18.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         36.6,
+         53.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "lines": [
+     {
+      "type": "rect",
+      "x": 25,
+      "y": 10,
+      "w": 50,
+      "h": 37.5
+     },
+     {
+      "type": "line",
+      "x1": 50,
+      "y1": 10,
+      "x2": 50,
+      "y2": 47.5,
+      "dashed": true
+     },
+     {
+      "type": "line",
+      "x1": 25,
+      "y1": 22.5,
+      "x2": 75,
+      "y2": 22.5,
+      "dashed": true
+     },
+     {
+      "type": "line",
+      "x1": 25,
+      "y1": 31.5,
+      "x2": 75,
+      "y2": 31.5,
+      "dashed": true
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,637 @@
+{
+ "title": "Vor dem Strafraum verteidigen",
+ "code": "UE-177",
+ "kind": "Spielform",
+ "focuses": [
+  "Verteidigen",
+  "Umschalten",
+  "Zusammenspiel"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 9,
+ "players_max": 13,
+ "field_size": "41 x 23 m",
+ "description": "Vier Angreifer spielen gegen eine Viererkette und einen Torwart auf das große Tor. Die Verteidiger bleiben am Strafraum eng zusammen: Einer presst, die anderen drei sichern ab. Erobern sie den Ball und spielen ihn zum Trainer, bekommen sie zwei Punkte. Nach zwei Angriffen kommt die nächste Viererkette ins Feld.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 41 mal 23 Metern mit Strafraum und einem Jugendtor oben. Der Trainer steht unten vor dem Feld mit vielen Bällen.",
+  "Verteilen: Team Neon verteidigt mit vier Spielern und einem Torwart. Team Rot greift mit vier Spielern an. Eine zweite Viererkette wartet neben dem Tor.",
+  "Ablauf: Der Trainer spielt den Ball zu Team Rot, und vier gegen vier geht es los. Team Neon hält die Kette eng und presst gemeinsam. Nach einem Ballgewinn spielt Team Neon den Ball schnell zum Trainer.",
+  "Wertung und Wechsel: Ein Treffer ins große Tor gibt einen Punkt für Team Rot. Ballgewinn und Pass zum Trainer gibt zwei Punkte für Team Neon. Nach zwei Angriffen wechselt die Viererkette."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Einer presst, die anderen drei sichern ab",
+  "Die Kette eng halten, damit keine Lücken entstehen",
+  "Erkennen, wann die Kette stehen bleibt, rausrückt oder zurückläuft",
+  "Nach dem Ballgewinn schnell nach vorn spielen"
+ ],
+ "materials": [
+  "1 Jugendtor",
+  "2 Minitore für die Steigerung",
+  "Hütchen für Feld und Strafraum",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Vor dem Strafraum verteidigen. Vier gegen vier vor dem großen Tor, und Team Neon verteidigt als enge Viererkette.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 20,
+    "y": 6,
+    "w": 60,
+    "h": 33.6
+   },
+   {
+    "type": "rect",
+    "x": 26.2,
+    "y": 6,
+    "w": 47.6,
+    "h": 14.6
+   },
+   {
+    "type": "rect",
+    "x": 37.7,
+    "y": 6,
+    "w": 24.6,
+    "h": 5.6
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 6,
+    "side": "top",
+    "size": "jugend"
+   }
+  ],
+  "cones": [],
+  "players": [
+   {
+    "id": "n1",
+    "team": "a",
+    "x": 50,
+    "y": 8.5,
+    "label": "TW"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 33,
+    "y": 24,
+    "label": "2"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 41.5,
+    "y": 22,
+    "label": "4"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 58.5,
+    "y": 22,
+    "label": "5"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 67,
+    "y": 24,
+    "label": "3"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 50,
+    "y": 25,
+    "label": "9"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 24.5,
+    "y": 31,
+    "label": "11"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 41.5,
+    "y": 38,
+    "label": "10"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 75.5,
+    "y": 31,
+    "label": "7"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 50,
+    "y": 46,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 50.6,
+    "y": 46.6
+   },
+   {
+    "id": "s1",
+    "x": 53.6,
+    "y": 49.5
+   },
+   {
+    "id": "s2",
+    "x": 50,
+    "y": 49.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Ball zu Team Rot",
+    "say": "Der Trainer spielt den Ball zu Rot zehn. Team Rot greift das große Tor an, Team Neon verteidigt am Strafraum.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       42.1,
+       38.6
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Einer presst",
+    "say": "Rot zehn dribbelt an, aber der Ball springt ihm zu weit weg. Neon vier sieht das und presst sofort. Gleichzeitig schieben Neon zwei, fünf und drei nach und sichern ab.",
+    "moves": [
+     {
+      "who": "r10",
+      "to": [
+       41.5,
+       32
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n4",
+      "to": [
+       41.5,
+       32
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "n4",
+      "to": [
+       41.5,
+       27
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n5",
+      "to": [
+       54,
+       21.5
+      ],
+      "type": "lauf",
+      "delay": 0.9
+     },
+     {
+      "who": "n3",
+      "to": [
+       62.5,
+       23
+      ],
+      "type": "lauf",
+      "delay": 0.9
+     },
+     {
+      "who": "n2",
+      "to": [
+       33,
+       26
+      ],
+      "type": "lauf",
+      "delay": 0.9
+     }
+    ]
+   },
+   {
+    "label": "Abgefangen",
+    "say": "Rot zehn will zu Rot elf passen. Neon zwei geht dazwischen und fängt den Ball ab.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       30.4,
+       31.4
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       31,
+       32
+      ],
+      "type": "pass",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Zum Trainer: zwei Punkte",
+    "say": "Neon zwei spielt den Ball sofort zum Trainer, und das gibt zwei Punkte für Team Neon. Dann spielt der Trainer den nächsten Ball zu Team Rot. Nach zwei Angriffen ist die nächste Viererkette dran.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       46.6
+      ],
+      "type": "pass"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 20,
+    "y1": 58.6,
+    "x2": 80,
+    "y2": 58.6,
+    "text": "41 m"
+   },
+   {
+    "x1": 88,
+    "y1": 6,
+    "x2": 88,
+    "y2": 39.6,
+    "text": "23 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Einer presst, die anderen sichern ab.",
+   "title": "Einer presst, drei sichern",
+   "text": "Nur ein Verteidiger läuft den Ball an. Die anderen drei bleiben nah hinter und neben ihm und machen die Passwege zu. So bleibt die Kette eng, und der Angreifer muss nach hinten spielen.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 50,
+      "y": 8.5,
+      "label": "TW"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 33,
+      "y": 24,
+      "label": "2"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 41.5,
+      "y": 22,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 58.5,
+      "y": 22,
+      "label": "5"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 67,
+      "y": 24,
+      "label": "3"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 50,
+      "y": 25,
+      "label": "9"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 24.5,
+      "y": 31,
+      "label": "11"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 41.5,
+      "y": 38,
+      "label": "10"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 75.5,
+      "y": 31,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 46,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 42.1,
+      "y": 38.6
+     },
+     {
+      "id": "s1",
+      "x": 53.6,
+      "y": 49.5
+     },
+     {
+      "id": "s2",
+      "x": 50,
+      "y": 49.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Neon vier presst",
+      "say": "Rot zehn hat den Ball. Neon vier läuft raus und presst. Gleichzeitig rücken Neon zwei, fünf und drei eng an ihn heran.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         41.5,
+         31
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n2",
+        "to": [
+         34,
+         25.5
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n5",
+        "to": [
+         55,
+         21
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n3",
+        "to": [
+         63,
+         23
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Kein Weg nach vorn",
+      "say": "Rot zehn findet keine Lücke und dreht nach hinten ab. Die Kette steht weiter eng zusammen.",
+      "moves": [
+       {
+        "who": "r10",
+        "to": [
+         36,
+         37
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Nach dem Ballgewinn kontert Team Neon auf zwei Minitore.",
+   "title": "Konter auf die Minitore",
+   "text": "Unten in den Ecken stehen zwei Minitore. Erobert Team Neon den Ball, spielt es schnell über außen und schießt in ein Minitor. Das gibt zwei Punkte für Team Neon.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 50,
+      "y": 8.5,
+      "label": "TW"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 33,
+      "y": 24,
+      "label": "2"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 41.5,
+      "y": 22,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 58.5,
+      "y": 22,
+      "label": "5"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 67,
+      "y": 24,
+      "label": "3"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 50,
+      "y": 25,
+      "label": "9"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 24.5,
+      "y": 31,
+      "label": "11"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 41.5,
+      "y": 38,
+      "label": "10"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 75.5,
+      "y": 31,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 46,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 25.6
+     },
+     {
+      "id": "s1",
+      "x": 53.6,
+      "y": 49.5
+     },
+     {
+      "id": "s2",
+      "x": 50,
+      "y": 49.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Abgefangen",
+      "say": "Rot neun will zu Rot zehn passen. Neon vier geht dazwischen und fängt den Ball ab.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         46.5,
+         30.4
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         47.1,
+         31
+        ],
+        "type": "pass",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Über außen",
+      "say": "Neon drei läuft sofort nach außen. Neon vier spielt ihm den Ball in den Lauf.",
+      "moves": [
+       {
+        "who": "n3",
+        "to": [
+         70,
+         35
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         70.6,
+         35.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Minitor: zwei Punkte",
+      "say": "Neon drei schießt ins rechte Minitor, und das gibt zwei Punkte für Team Neon. Dann spielt der Trainer den nächsten Ball zu Team Rot.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         76,
+         39.3
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ],
+    "goals": [
+     {
+      "x": 50,
+      "y": 6,
+      "side": "top",
+      "size": "jugend"
+     },
+     {
+      "x": 24,
+      "y": 39.6,
+      "side": "bottom"
+     },
+     {
+      "x": 76,
+      "y": 39.6,
+      "side": "bottom"
+     }
+    ]
+   }
+  }
+ ]
+}
