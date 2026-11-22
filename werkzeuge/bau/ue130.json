@@ -1,0 +1,887 @@
+{
+ "title": "Pass, Leiter, Abschluss",
+ "code": "UE-130",
+ "kind": "Übungsform",
+ "focuses": [
+  "Torschuss",
+  "Koordination",
+  "Schnelligkeit"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 6,
+ "players_max": 10,
+ "field_size": "46 x 41 m",
+ "description": "Zwei Teams spielen vor einem Tor gegeneinander, wer die meisten Tore schießt. Ein Spieler passt seinen Ball an die Strafraumgrenze, läuft durch die Koordinationsleiter, um einen Dummy herum und schießt den Ball direkt aufs Tor. Danach sprintet er sofort ins Tor und ist Torwart für den nächsten Schützen des anderen Teams. So wechseln sich die Teams ab, und jeder ist mal Schütze und mal Torwart.",
+ "organisation": [
+  "Aufbauen: Ein Feld von etwa 46 mal 41 Metern um den Strafraum, oben ein Jugendtor. Links und rechts liegt auf der Strafraumlinie je eine Koordinationsleiter, daneben steht je ein Dummy.",
+  "Verteilen: Zwei Teams mit je drei Spielern, Team Neon links und Team Rot rechts neben dem Tor, jeder mit einem Ball. Ein Spieler von Team Rot steht zu Beginn im Tor. Der Trainer steht links mit Ersatzbällen.",
+  "Ablauf: Der Erste passt seinen Ball an die Strafraumgrenze, läuft durch die Leiter, um den Dummy herum und schließt direkt ab. Dann sprintet er ins Tor und ist der neue Torwart. Der alte Torwart geht zurück zu seinem Team, und der Nächste vom anderen Team startet auf seiner Seite.",
+  "Wertung: Jedes Tor ist ein Punkt für das Team. Welches Team hat nach allen Durchgängen die meisten Punkte?"
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Schräg anlaufen, damit der Ball direkt geschossen werden kann",
+  "Früh zum Torwart schauen und vor dem Schuss sehen, wo er steht",
+  "Mit Tempo und sauberen Schritten durch die Leiter",
+  "Ruhig abschließen und dann blitzschnell ins Tor wechseln"
+ ],
+ "materials": [
+  "2 Koordinationsleitern (oder 6 Minihürden)",
+  "2 Dummys",
+  "1 Jugendtor",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Pass, Leiter, Abschluss. Erst passen, dann durch die Leiter und um den Dummy, dann direkt aufs Tor, und wer geschossen hat, wird danach selbst Torwart.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 10,
+    "y": 5,
+    "w": 80,
+    "h": 51
+   },
+   {
+    "type": "rect",
+    "x": 28.6,
+    "y": 5,
+    "w": 42.8,
+    "h": 18
+   },
+   {
+    "type": "rect",
+    "x": 40,
+    "y": 5,
+    "w": 20,
+    "h": 5.8
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "jugend"
+   }
+  ],
+  "cones": [
+   {
+    "x": 28.9,
+    "y": 19.5,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 28.9,
+    "y": 23,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 28.9,
+    "y": 26.5,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 71.1,
+    "y": 19.5,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 71.1,
+    "y": 23,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 71.1,
+    "y": 26.5,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 37.6,
+    "y": 27.6,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 62.4,
+    "y": 27.6,
+    "color": "neon",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 26,
+    "y": 8,
+    "label": "9"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 17,
+    "y": 8,
+    "label": "10"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 8,
+    "y": 8,
+    "label": "8"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 48.5,
+    "y": 7.5,
+    "label": "3"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 74,
+    "y": 8,
+    "label": "2"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 83,
+    "y": 8,
+    "label": "5"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 8,
+    "y": 30,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b9",
+    "x": 26.6,
+    "y": 9.2
+   },
+   {
+    "id": "b10",
+    "x": 17.6,
+    "y": 9.2
+   },
+   {
+    "id": "b8",
+    "x": 8.6,
+    "y": 9.2
+   },
+   {
+    "id": "b2",
+    "x": 74.6,
+    "y": 9.2
+   },
+   {
+    "id": "b5",
+    "x": 83.6,
+    "y": 9.2
+   },
+   {
+    "id": "s1",
+    "x": 9.6,
+    "y": 32.6
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pass an die Strafraumgrenze",
+    "say": "Neon neun passt seinen Ball an die Strafraumgrenze. Im Tor steht Rot drei.",
+    "moves": [
+     {
+      "who": "b9",
+      "to": [
+       50,
+       25.5
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Leiter und Dummy",
+    "say": "Dann läuft er durch die Leiter, um den Dummy herum und schräg auf den Ball zu.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       28.9,
+       16
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n9",
+      "to": [
+       28.9,
+       29
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n9",
+      "to": [
+       33,
+       32.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n9",
+      "to": [
+       41,
+       32
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n9",
+      "to": [
+       47.2,
+       28.2
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Torwart sehen, Abschluss: Punkt",
+    "say": "Vor dem Schuss schaut er kurz zum Torwart, sieht die freie Ecke und schießt direkt hinein, und das gibt einen Punkt für Team Neon.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       48.5,
+       7.5
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b9",
+      "to": [
+       53.2,
+       4.7
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Ab ins Tor, Rot ist dran",
+    "say": "Neon neun sprintet sofort ins Tor und ist jetzt Torwart. Rot drei geht zurück zu seinem Team, und Rot zwei ist dran: Pass an die Strafraumgrenze, dann durch die rechte Leiter.",
+    "moves": [
+     {
+      "who": "r3",
+      "to": [
+       92,
+       15
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n9",
+      "to": [
+       50,
+       8
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b2",
+      "to": [
+       50,
+       25.5
+      ],
+      "type": "pass",
+      "delay": 0.6
+     },
+     {
+      "who": "r2",
+      "to": [
+       71.1,
+       16
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r2",
+      "to": [
+       71.1,
+       29
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 10,
+    "y1": 58.6,
+    "x2": 90,
+    "y2": 58.6,
+    "text": "46 m"
+   },
+   {
+    "x1": 98,
+    "y1": 5,
+    "x2": 98,
+    "y2": 56,
+    "text": "41 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Schräg anlaufen.",
+   "title": "Schräg anlaufen",
+   "text": "Wer gerade auf den Ball zuläuft, muss ihn erst stoppen oder ausholen. Wer im leichten Bogen von der Seite anläuft, hat den Körper schon zum Tor gedreht und kann den Ball direkt mit dem ersten Kontakt nehmen.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 40,
+      "y": 32.5,
+      "label": "9"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 17,
+      "y": 8,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 8,
+      "y": 8,
+      "label": "8"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 48.5,
+      "y": 7.5,
+      "label": "3"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 74,
+      "y": 8,
+      "label": "2"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 83,
+      "y": 8,
+      "label": "5"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 8,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b9",
+      "x": 50,
+      "y": 25.5
+     },
+     {
+      "id": "b10",
+      "x": 17.6,
+      "y": 9.2
+     },
+     {
+      "id": "b8",
+      "x": 8.6,
+      "y": 9.2
+     },
+     {
+      "id": "b2",
+      "x": 74.6,
+      "y": 9.2
+     },
+     {
+      "id": "b5",
+      "x": 83.6,
+      "y": 9.2
+     },
+     {
+      "id": "s1",
+      "x": 9.6,
+      "y": 32.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Im Bogen anlaufen",
+      "say": "Neon neun kommt vom Dummy und läuft im leichten Bogen von der Seite an den Ball.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         44.5,
+         31.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n9",
+        "to": [
+         48.4,
+         27.4
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Direkt abschließen: Punkt",
+      "say": "So steht er schon zum Tor gedreht und schießt den Ball direkt ins Eck, und das gibt einen Punkt für Team Neon. Dann sprintet er ins Tor.",
+      "moves": [
+       {
+        "who": "b9",
+        "to": [
+         53.2,
+         4.7
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Früh zum Torwart schauen.",
+   "title": "Früh den Torwart sehen",
+   "text": "Schon beim Anlaufen hebt der Schütze den Kopf und schaut, wo der Torwart steht. Steht er etwas zu weit auf einer Seite, geht der Schuss ruhig in die andere Ecke. Erst schauen, dann schießen, nicht blind draufhauen.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 40,
+      "y": 32.5,
+      "label": "9"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 17,
+      "y": 8,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 8,
+      "y": 8,
+      "label": "8"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 46.5,
+      "y": 7.5,
+      "label": "3"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 74,
+      "y": 8,
+      "label": "2"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 83,
+      "y": 8,
+      "label": "5"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 8,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b9",
+      "x": 50,
+      "y": 25.5
+     },
+     {
+      "id": "b10",
+      "x": 17.6,
+      "y": 9.2
+     },
+     {
+      "id": "b8",
+      "x": 8.6,
+      "y": 9.2
+     },
+     {
+      "id": "b2",
+      "x": 74.6,
+      "y": 9.2
+     },
+     {
+      "id": "b5",
+      "x": 83.6,
+      "y": 9.2
+     },
+     {
+      "id": "s1",
+      "x": 9.6,
+      "y": 32.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Kopf hoch, Torwart sehen",
+      "say": "Beim Anlaufen hebt Neon neun den Kopf und sieht: Rot drei steht im Tor etwas zu weit links.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         44.5,
+         31.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n9",
+        "to": [
+         46.5,
+         7.5
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Ins freie Eck: Punkt",
+      "say": "Also schießt er ruhig in die freie rechte Ecke, und das gibt einen Punkt für Team Neon. Dann sprintet er ins Tor, und Team Rot ist dran.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         48.4,
+         27.4
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b9",
+        "to": [
+         53.6,
+         4.7
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Wer trifft, bleibt dran.",
+   "title": "Wer trifft, bleibt dran",
+   "text": "Trifft der Schütze, darf sein Team gleich noch einmal angreifen, und der Torwart bleibt im Tor. Schießt er daneben, muss er selbst ins Tor, und das andere Team greift an. So lohnt sich ein ruhiger, genauer Abschluss doppelt.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 40,
+      "y": 32.5,
+      "label": "9"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 17,
+      "y": 8,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 8,
+      "y": 8,
+      "label": "8"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 48.5,
+      "y": 7.5,
+      "label": "3"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 74,
+      "y": 8,
+      "label": "2"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 83,
+      "y": 8,
+      "label": "5"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 8,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b9",
+      "x": 50,
+      "y": 25.5
+     },
+     {
+      "id": "b10",
+      "x": 17.6,
+      "y": 9.2
+     },
+     {
+      "id": "b8",
+      "x": 8.6,
+      "y": 9.2
+     },
+     {
+      "id": "b2",
+      "x": 74.6,
+      "y": 9.2
+     },
+     {
+      "id": "b5",
+      "x": 83.6,
+      "y": 9.2
+     },
+     {
+      "id": "s1",
+      "x": 9.6,
+      "y": 32.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Treffer: Neon bleibt dran",
+      "say": "Neon neun trifft, und das gibt einen Punkt für Team Neon. Weil er getroffen hat, bleibt Rot drei im Tor, und Neon zehn ist sofort dran.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         44.5,
+         31.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n9",
+        "to": [
+         48.4,
+         27.4
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n9",
+        "to": [
+         48.5,
+         7.5
+        ],
+        "type": "blick",
+        "after": true
+       },
+       {
+        "who": "b9",
+        "to": [
+         53.2,
+         4.7
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b10",
+        "to": [
+         50,
+         25.5
+        ],
+        "type": "pass",
+        "delay": 0.5
+       }
+      ]
+     },
+     {
+      "label": "Neon zehn läuft",
+      "say": "Neon zehn läuft durch die Leiter und um den Dummy herum zum Ball.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         8,
+         20
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n10",
+        "to": [
+         24,
+         12
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n10",
+        "to": [
+         28.9,
+         16
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n10",
+        "to": [
+         28.9,
+         29
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n10",
+        "to": [
+         33,
+         32.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n10",
+        "to": [
+         41,
+         32
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n10",
+        "to": [
+         47.2,
+         28.2
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Daneben: Wechsel",
+      "say": "Neon zehn schießt am Tor vorbei. Jetzt muss er selbst ins Tor, Rot drei geht zurück zu seinem Team, und Team Rot greift an.",
+      "moves": [
+       {
+        "who": "b10",
+        "to": [
+         61,
+         3
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r3",
+        "to": [
+         92,
+         15
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n10",
+        "to": [
+         50,
+         8
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
