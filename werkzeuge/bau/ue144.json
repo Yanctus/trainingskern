@@ -1,0 +1,649 @@
+{
+ "title": "Sprint ins 2 gegen 2",
+ "code": "UE-144",
+ "kind": "Spielform",
+ "focuses": [
+  "Schnelligkeit",
+  "Zusammenspiel",
+  "Umschalten"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 9,
+ "players_max": 13,
+ "field_size": "23 x 23 m",
+ "description": "Zwei Angreifer stehen vorn an den Stangen, zwei Verteidiger dahinter. Auf Zuruf sprinten die Angreifer zum Ball, die Verteidiger jagen hinterher. In der Spielzone vor dem Tor wird zwei gegen zwei gespielt: Die Angreifer müssen mindestens einmal passen, bevor sie schießen dürfen. Erobern die Verteidiger den Ball, dürfen sie selbst aufs Tor schießen. Danach sprinten alle zu den Eckhütchen und laufen locker zurück.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 23 mal 23 Metern, oben ein Jugendtor mit Torwart. Die obere Hälfte ist die Spielzone. Unten stehen vier Stangen als Start, oben in den Ecken zwei Hütchen.",
+  "Verteilen: Paare aus Angreifern und Verteidigern. Die Angreifer stehen vorn an den Stangen, die Verteidiger dahinter, die anderen Paare warten unten. Der Trainer legt einen Ball in die Spielzone.",
+  "Ablauf: Auf Zuruf sprinten die Angreifer zum Ball, die Verteidiger hinterher. In der Spielzone zwei gegen zwei, mindestens ein Pass vor dem Schuss. Erobern die Verteidiger den Ball, schießen sie selbst aufs Tor.",
+  "Wechsel: Nach dem Angriff sprinten alle vier zu den Eckhütchen und laufen locker zurück, das startet die nächste Gruppe. Wer angegriffen hat, verteidigt beim nächsten Mal. Jedes Tor ist ein Punkt."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Mit vollem Tempo zum Ball sprinten oder dem Angreifer hinterher",
+  "In der Spielzone ruhig bleiben und entscheiden: schnell angreifen oder neu aufbauen",
+  "Mit schnellen Kombinationen Platz schaffen und eiskalt abschließen",
+  "Beim Zurücklaufen bewusst erholen"
+ ],
+ "materials": [
+  "4 Stangen",
+  "2 Hütchen",
+  "1 Jugendtor",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Sprint ins zwei gegen zwei. Erst ein Wettlauf zum Ball, dann ein schnelles Spiel zwei gegen zwei mit Torwart und Abschluss.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   },
+   {
+    "type": "line",
+    "x1": 25,
+    "y1": 26.4,
+    "x2": 75,
+    "y2": 26.4,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "jugend"
+   }
+  ],
+  "cones": [
+   {
+    "x": 25.5,
+    "y": 5.4,
+    "color": "orange"
+   },
+   {
+    "x": 74.7,
+    "y": 5.4,
+    "color": "orange"
+   },
+   {
+    "x": 40.6,
+    "y": 44.7,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 40.6,
+    "y": 51.9,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 59.1,
+    "y": 44.7,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 59.1,
+    "y": 51.9,
+    "color": "neon",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 42.7,
+    "y": 45.5,
+    "label": "7"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 57.6,
+    "y": 45.5,
+    "label": "9"
+   },
+   {
+    "id": "r4",
+    "team": "b",
+    "x": 34,
+    "y": 54.5,
+    "label": "4"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 66,
+    "y": 54.5,
+    "label": "5"
+   },
+   {
+    "id": "k",
+    "team": "t",
+    "x": 50,
+    "y": 7.1,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 17,
+    "y": 25,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 40.8,
+    "y": 24.3
+   },
+   {
+    "id": "s1",
+    "x": 18.6,
+    "y": 28
+   },
+   {
+    "id": "s2",
+    "x": 15,
+    "y": 28
+   }
+  ],
+  "steps": [
+   {
+    "label": "Sprint auf Zuruf",
+    "say": "Auf Zuruf sprinten Neon sieben und Neon neun nach vorn zum Ball, Rot vier und Rot fünf jagen ihnen hinterher.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       41.5,
+       25.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n9",
+      "to": [
+       56,
+       28
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r4",
+      "to": [
+       37,
+       42
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "r4",
+      "to": [
+       44.5,
+       33
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r5",
+      "to": [
+       61,
+       32
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Zwei gegen zwei",
+    "say": "In der Spielzone dribbelt Neon sieben an und passt zu Neon neun. Der Pass muss sein, bevor geschossen werden darf.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       44,
+       20
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "r4",
+      "to": [
+       47,
+       23
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n9",
+      "to": [
+       57,
+       18.6
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "b1",
+      "to": [
+       57.6,
+       19.2
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r5",
+      "to": [
+       61,
+       24
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "Abschluss: Punkt",
+    "say": "Neon neun schießt am Torwart vorbei, und das gibt einen Punkt für Team Neon.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       53.5,
+       4.7
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Zu den Ecken, zurück",
+    "say": "Dann sprinten alle vier zu den Eckhütchen und laufen außen locker zurück. Das startet die nächste Gruppe, und wer angegriffen hat, verteidigt beim nächsten Mal.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       28,
+       8.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n7",
+      "to": [
+       21,
+       40
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r4",
+      "to": [
+       28.5,
+       11.5
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "r4",
+      "to": [
+       21.5,
+       50
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n9",
+      "to": [
+       72,
+       8.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n9",
+      "to": [
+       79,
+       40
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r5",
+      "to": [
+       71.5,
+       11.5
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "r5",
+      "to": [
+       79,
+       50
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "23 m"
+   },
+   {
+    "x1": 86,
+    "y1": 5,
+    "x2": 86,
+    "y2": 55,
+    "text": "23 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Verteidiger fangen ab und kontern.",
+   "title": "Abfangen und kontern",
+   "text": "Die Verteidiger lauern auf den Pass. Wer ihn vorausahnt und abfängt, schaltet sofort um und schießt selbst aufs Tor. Aus Verteidigung wird in einer Sekunde Angriff.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 42,
+      "y": 26,
+      "label": "7"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 59,
+      "y": 21,
+      "label": "9"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 33,
+      "y": 32,
+      "label": "4"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 51,
+      "y": 37,
+      "label": "5"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50,
+      "y": 7.1,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 17,
+      "y": 25,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 42.6,
+      "y": 26.6
+     },
+     {
+      "id": "s1",
+      "x": 18.6,
+      "y": 28
+     },
+     {
+      "id": "s2",
+      "x": 15,
+      "y": 28
+     }
+    ],
+    "steps": [
+     {
+      "label": "Pass vorausahnen",
+      "say": "Neon sieben will zu Neon neun passen. Rot fünf ahnt das voraus und läuft in den Passweg.",
+      "moves": [
+       {
+        "who": "r5",
+        "to": [
+         51.5,
+         25
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         51.6,
+         24.4
+        ],
+        "type": "pass",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Konter: Punkt",
+      "say": "Rot fünf fängt den Ball ab, dribbelt los und schießt am Torwart vorbei, und das gibt einen Punkt für Team Rot. Dann sprinten alle zu den Ecken.",
+      "moves": [
+       {
+        "who": "r5",
+        "to": [
+         52,
+         15
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         54.5,
+         4.7
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Ruhig bleiben in der Spielzone.",
+   "title": "Ruhig bleiben",
+   "text": "Ist der Weg zum Tor zu, nicht blind hineindribbeln. Lieber kurz zurück oder quer spielen, neu aufbauen und dann mit Tempo in die Lücke gehen. Erst entscheiden, dann handeln.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 42,
+      "y": 24,
+      "label": "7"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 58,
+      "y": 30,
+      "label": "9"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 33,
+      "y": 14,
+      "label": "4"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 59,
+      "y": 14,
+      "label": "5"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50,
+      "y": 7.1,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 17,
+      "y": 25,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 42.6,
+      "y": 24.6
+     },
+     {
+      "id": "s1",
+      "x": 18.6,
+      "y": 28
+     },
+     {
+      "id": "s2",
+      "x": 15,
+      "y": 28
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zu, also quer",
+      "say": "Neon sieben dribbelt an, aber Rot vier macht den Weg zu. Also spielt er ruhig quer zu Neon neun.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         42,
+         19
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "r4",
+        "to": [
+         37.5,
+         18
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       },
+       {
+        "who": "b1",
+        "to": [
+         58.6,
+         30.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "In die Lücke: Punkt",
+      "say": "Neon sieben läuft sofort in die Lücke, Neon neun spielt ihn an, und Neon sieben trifft. Das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         47,
+         15
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r5",
+        "to": [
+         59,
+         20
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "b1",
+        "to": [
+         47.6,
+         15.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         45,
+         4.7
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

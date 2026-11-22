@@ -1,0 +1,768 @@
+{
+ "title": "Dribbeln, Leiter, Hürden",
+ "code": "UE-143",
+ "kind": "Übungsform",
+ "focuses": [
+  "Dribbling",
+  "Koordination",
+  "Schnelligkeit"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 8,
+ "players_max": 8,
+ "field_size": "23 x 23 m",
+ "description": "Ein Kreislauf mit zwei Gruppen an gegenüberliegenden Ecken. Je einer aus jeder Gruppe startet gleichzeitig: Er dribbelt an der Seite entlang zum Hütchen am Ende, lässt den Ball dort liegen und läuft dann durch Leiter und Hürden diagonal durchs Feld, um ein Hütchen in der Mitte herum. Am Ende holt er sich den Ball, den der andere liegen gelassen hat, und dribbelt ihn zur nächsten Ecke. Das startet die nächsten beiden.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 23 mal 23 Metern. An allen vier Ecken ein Hütchen, in der Mitte zwei Hütchen. Diagonal durchs Feld eine Leiter oben links und Minihürden unten rechts.",
+  "Verteilen: Zwei Gruppen zu viert, eine unten links, eine oben rechts, jeder mit einem Ball. Der Trainer steht am Rand mit Ersatzbällen.",
+  "Ablauf: Je einer aus beiden Gruppen dribbelt gleichzeitig los zum Hütchen am Ende seiner Seite und lässt den Ball liegen. Dann durch Leiter oder Hürden, um ein Hütchen in der Mitte und durch das andere Gerät. Am Ende holt er den Ball des anderen und dribbelt ihn zur Ecke.",
+  "Weiter: Das Ankommen startet die nächsten beiden. Später: nach dem Kreislauf noch ein Pass und ein Eins-gegen-eins, oder drei Sprints am Ende."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Den Ball beim schnellen Dribbeln eng am Fuß führen",
+  "Saubere Technik in Leiter und Hürden",
+  "Genaue Pässe, wenn später gepasst wird",
+  "Kurz und scharf um die Hütchen in der Mitte wenden"
+ ],
+ "materials": [
+  "6 Hütchen",
+  "1 Koordinationsleiter",
+  "4 Minihürden",
+  "8 Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Dribbeln, Leiter, Hürden. Zwei Spieler laufen gleichzeitig einen Kreislauf mit Ball, Leiter, Hürden und scharfen Wenden.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   }
+  ],
+  "cones": [
+   {
+    "x": 28.5,
+    "y": 10.8,
+    "color": "orange"
+   },
+   {
+    "x": 70.1,
+    "y": 10.8,
+    "color": "orange"
+   },
+   {
+    "x": 28.5,
+    "y": 48.9,
+    "color": "orange"
+   },
+   {
+    "x": 70.2,
+    "y": 48.9,
+    "color": "orange"
+   },
+   {
+    "x": 44.4,
+    "y": 34,
+    "color": "orange"
+   },
+   {
+    "x": 52.9,
+    "y": 24.4,
+    "color": "orange"
+   },
+   {
+    "x": 34.5,
+    "y": 14.5,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 37,
+    "y": 17.2,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 39.5,
+    "y": 19.9,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 42,
+    "y": 22.6,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 55.9,
+    "y": 35.7,
+    "color": "orange",
+    "shape": "huerde"
+   },
+   {
+    "x": 58.7,
+    "y": 38,
+    "color": "orange",
+    "shape": "huerde"
+   },
+   {
+    "x": 61.6,
+    "y": 40.6,
+    "color": "orange",
+    "shape": "huerde"
+   },
+   {
+    "x": 64.7,
+    "y": 43.2,
+    "color": "orange",
+    "shape": "huerde"
+   }
+  ],
+  "players": [
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 27,
+    "y": 46,
+    "label": "11"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 18.5,
+    "y": 46,
+    "label": "10"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 10,
+    "y": 46,
+    "label": "8"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 1.5,
+    "y": 46,
+    "label": "5"
+   },
+   {
+    "id": "r4",
+    "team": "b",
+    "x": 73,
+    "y": 8,
+    "label": "4"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 81.5,
+    "y": 8,
+    "label": "9"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 90,
+    "y": 8,
+    "label": "7"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 98.5,
+    "y": 8,
+    "label": "6"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 12,
+    "y": 22,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b11",
+    "x": 27.6,
+    "y": 46.6
+   },
+   {
+    "id": "b4",
+    "x": 73.6,
+    "y": 8.6
+   },
+   {
+    "id": "s1",
+    "x": 13.6,
+    "y": 25
+   },
+   {
+    "id": "s2",
+    "x": 10,
+    "y": 25
+   }
+  ],
+  "steps": [
+   {
+    "label": "Dribbeln zum Hütchen",
+    "say": "Neon elf und Rot vier starten gleichzeitig und dribbeln an ihrer Seite entlang zum Hütchen am Ende. Dort lassen sie den Ball liegen.",
+    "moves": [
+     {
+      "who": "n11",
+      "to": [
+       26.5,
+       13.5
+      ],
+      "type": "dribbling",
+      "ball": "b11"
+     },
+     {
+      "who": "r4",
+      "to": [
+       72.5,
+       46.5
+      ],
+      "type": "dribbling",
+      "delay": 0.1,
+      "ball": "b4"
+     }
+    ]
+   },
+   {
+    "label": "Leiter und Hürden",
+    "say": "Neon elf läuft durch die Leiter und um das untere Hütchen in der Mitte, Rot vier über die Hürden und um das obere Hütchen.",
+    "moves": [
+     {
+      "who": "n11",
+      "to": [
+       33,
+       13.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n11",
+      "to": [
+       43.5,
+       24
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n11",
+      "to": [
+       41.4,
+       34
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n11",
+      "to": [
+       44.4,
+       37
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n11",
+      "to": [
+       47.4,
+       34
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r4",
+      "to": [
+       66.5,
+       45.3
+      ],
+      "type": "lauf",
+      "delay": 0.1
+     },
+     {
+      "who": "r4",
+      "to": [
+       55.5,
+       35.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r4",
+      "to": [
+       55.9,
+       24.4
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r4",
+      "to": [
+       52.9,
+       21.4
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r4",
+      "to": [
+       49.9,
+       24.4
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Das andere Gerät",
+    "say": "Dann geht es weiter: Neon elf über die Hürden nach unten rechts, Rot vier durch die Leiter nach oben links.",
+    "moves": [
+     {
+      "who": "n11",
+      "to": [
+       55,
+       34.8
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n11",
+      "to": [
+       66.5,
+       45.3
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r4",
+      "to": [
+       43.5,
+       24
+      ],
+      "type": "lauf",
+      "delay": 0.1
+     },
+     {
+      "who": "r4",
+      "to": [
+       33,
+       13.5
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Ball holen, zurückdribbeln",
+    "say": "Jeder holt sich den Ball, den der andere liegen gelassen hat, und dribbelt ihn zur Ecke. Das startet die nächsten beiden: Neon zehn und Rot neun.",
+    "moves": [
+     {
+      "who": "n11",
+      "to": [
+       72.5,
+       47
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n11",
+      "to": [
+       73,
+       16
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b4"
+     },
+     {
+      "who": "r4",
+      "to": [
+       26.5,
+       14.5
+      ],
+      "type": "lauf",
+      "delay": 0.1
+     },
+     {
+      "who": "r4",
+      "to": [
+       27,
+       40
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b11"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "23 m"
+   },
+   {
+    "x1": 86,
+    "y1": 5,
+    "x2": 86,
+    "y2": 55,
+    "text": "23 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Den Ball eng führen.",
+   "title": "Eng am Fuß",
+   "text": "Beim schnellen Dribbeln an der Seite entlang bleibt der Ball eng am Fuß, mit vielen kleinen Kontakten. So kann man jederzeit abbremsen und den Ball genau am Hütchen ablegen.",
+   "board": {
+    "players": [
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 27,
+      "y": 46,
+      "label": "11"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 18.5,
+      "y": 46,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 10,
+      "y": 46,
+      "label": "8"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 1.5,
+      "y": 46,
+      "label": "5"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 73,
+      "y": 8,
+      "label": "4"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 81.5,
+      "y": 8,
+      "label": "9"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 90,
+      "y": 8,
+      "label": "7"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 98.5,
+      "y": 8,
+      "label": "6"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 12,
+      "y": 22,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b11",
+      "x": 27.6,
+      "y": 46.6
+     },
+     {
+      "id": "b4",
+      "x": 73.6,
+      "y": 8.6
+     },
+     {
+      "id": "s1",
+      "x": 13.6,
+      "y": 25
+     },
+     {
+      "id": "s2",
+      "x": 10,
+      "y": 25
+     }
+    ],
+    "steps": [
+     {
+      "label": "Kleine Kontakte",
+      "say": "Neon elf dribbelt mit vielen kleinen Kontakten an der Seite entlang nach oben, der Ball springt ihm nie weg.",
+      "moves": [
+       {
+        "who": "n11",
+        "to": [
+         26.5,
+         30
+        ],
+        "type": "dribbling",
+        "ball": "b11"
+       },
+       {
+        "who": "n11",
+        "to": [
+         26.5,
+         13.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b11"
+       }
+      ]
+     },
+     {
+      "label": "Genau ablegen",
+      "say": "Am Hütchen bremst er ab und legt den Ball genau dort ab, dann geht es sofort zur Leiter.",
+      "moves": [
+       {
+        "who": "n11",
+        "to": [
+         33,
+         13.5
+        ],
+        "type": "lauf"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Scharf um die Hütchen wenden.",
+   "title": "Scharf wenden",
+   "text": "In der Mitte geht es um ein Hütchen herum. Wer einen weiten Bogen läuft, verliert Zeit. Kurz vorher abbremsen, tief gehen und eng um das Hütchen herum, dann wieder voll beschleunigen.",
+   "board": {
+    "players": [
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 43.5,
+      "y": 24,
+      "label": "11"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 18.5,
+      "y": 46,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 10,
+      "y": 46,
+      "label": "8"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 1.5,
+      "y": 46,
+      "label": "5"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 55.5,
+      "y": 35.5,
+      "label": "4"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 81.5,
+      "y": 8,
+      "label": "9"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 90,
+      "y": 8,
+      "label": "7"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 98.5,
+      "y": 8,
+      "label": "6"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 12,
+      "y": 22,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b11",
+      "x": 27.1,
+      "y": 14.1
+     },
+     {
+      "id": "b4",
+      "x": 73.1,
+      "y": 47.1
+     },
+     {
+      "id": "s1",
+      "x": 13.6,
+      "y": 25
+     },
+     {
+      "id": "s2",
+      "x": 10,
+      "y": 25
+     }
+    ],
+    "steps": [
+     {
+      "label": "Eng herum",
+      "say": "Neon elf läuft eng um das untere Hütchen, Rot vier gleichzeitig eng um das obere.",
+      "moves": [
+       {
+        "who": "n11",
+        "to": [
+         41.4,
+         34
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n11",
+        "to": [
+         44.4,
+         37
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n11",
+        "to": [
+         47.4,
+         34
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r4",
+        "to": [
+         55.9,
+         24.4
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       },
+       {
+        "who": "r4",
+        "to": [
+         52.9,
+         21.4
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r4",
+        "to": [
+         49.9,
+         24.4
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Wieder Tempo",
+      "say": "Direkt danach beschleunigen beide wieder voll und laufen zum nächsten Gerät.",
+      "moves": [
+       {
+        "who": "n11",
+        "to": [
+         55,
+         34.8
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r4",
+        "to": [
+         43.5,
+         24
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

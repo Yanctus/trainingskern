@@ -1,0 +1,724 @@
+{
+ "title": "Sprint um den Dummy, 2 gegen 2",
+ "code": "UE-142",
+ "kind": "Spielform",
+ "focuses": [
+  "Schnelligkeit",
+  "Zusammenspiel",
+  "Torschuss"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 8,
+ "players_max": 12,
+ "field_size": "27 x 27 m",
+ "description": "Das Feld ist geteilt. Rechts stehen an vier Ecken Spieler, in der Mitte ein Dummy. Auf Pfiff sprinten vier Spieler gleichzeitig zum Dummy und weiter zum nächsten Hütchen gegen den Uhrzeigersinn, bis jeder wieder an seinem Start-Hütchen ist. Dann sprinten alle vier nach links ins Spielfeld, und es wird zwei gegen zwei auf zwei Minitore gespielt. Das Team, das zuerst komplett drin ist, bekommt den Ball.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 27 mal 27 Metern, in der Mitte geteilt. Rechts vier Hütchen an den Ecken und ein Dummy in der Mitte, links ein Minitor oben und eins unten.",
+  "Verteilen: Zwei Teams. An jeder Ecke steht ein Spieler vorn und einer wartet dahinter, von jedem Team zwei pro Seite. Der Trainer steht links mit Bällen.",
+  "Ablauf: Auf Pfiff sprinten die vier Vordersten zum Dummy und weiter zum nächsten Hütchen gegen den Uhrzeigersinn, viermal, bis jeder wieder an seinem Hütchen steht. Dann geht es ins Spielfeld. Der Trainer spielt dem Team den Ball, das zuerst mit beiden Spielern drin ist.",
+  "Wertung: Team Neon spielt aufs obere, Team Rot aufs untere Minitor. Jedes Tor ist ein Punkt. Nach einem Tor oder wenn der Ball ins Aus geht, starten die nächsten vier."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Schnelle Sprints zwischen Dummy und Hütchen",
+  "Kurz und scharf wenden",
+  "Mit Tempo ins Spielfeld kommen",
+  "Am Ball ruhig bleiben und sich ohne Ball frei laufen"
+ ],
+ "materials": [
+  "4 Hütchen",
+  "1 Dummy",
+  "2 Minitore",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Sprint um den Dummy, zwei gegen zwei. Erst ein Rundlauf mit kurzen Sprints, dann sofort ein Spiel zwei gegen zwei.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 22,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   },
+   {
+    "type": "line",
+    "x1": 46.8,
+    "y1": 5,
+    "x2": 46.8,
+    "y2": 55,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 35,
+    "y": 5,
+    "side": "top"
+   },
+   {
+    "x": 35,
+    "y": 55,
+    "side": "bottom"
+   }
+  ],
+  "cones": [
+   {
+    "x": 44.8,
+    "y": 3.2,
+    "color": "orange"
+   },
+   {
+    "x": 73.2,
+    "y": 3.2,
+    "color": "orange"
+   },
+   {
+    "x": 44.8,
+    "y": 56.8,
+    "color": "orange"
+   },
+   {
+    "x": 73.2,
+    "y": 56.8,
+    "color": "orange"
+   },
+   {
+    "x": 59.4,
+    "y": 27.3,
+    "color": "neon",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 49,
+    "y": 3,
+    "label": "5"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 40.5,
+    "y": 3,
+    "label": "9"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 69,
+    "y": 3,
+    "label": "10"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 77.5,
+    "y": 3,
+    "label": "4"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 49,
+    "y": 57,
+    "label": "11"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 40.5,
+    "y": 57,
+    "label": "6"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 69,
+    "y": 57,
+    "label": "7"
+   },
+   {
+    "id": "r12",
+    "team": "b",
+    "x": 77.5,
+    "y": 57,
+    "label": "12"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 14,
+    "y": 40,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 15.6,
+    "y": 40.6
+   },
+   {
+    "id": "s1",
+    "x": 12,
+    "y": 44
+   },
+   {
+    "id": "s2",
+    "x": 12,
+    "y": 36
+   }
+  ],
+  "steps": [
+   {
+    "label": "Sprint zum Dummy",
+    "say": "Auf Pfiff sprinten alle vier gleichzeitig zum Dummy, wenden scharf und laufen zum nächsten Hütchen gegen den Uhrzeigersinn.",
+    "moves": [
+     {
+      "who": "n5",
+      "to": [
+       57.6,
+       25.8
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n5",
+      "to": [
+       51,
+       52.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r10",
+      "to": [
+       61.2,
+       25.8
+      ],
+      "type": "lauf",
+      "delay": 0.1
+     },
+     {
+      "who": "r10",
+      "to": [
+       51,
+       7.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r11",
+      "to": [
+       57.6,
+       28.8
+      ],
+      "type": "lauf",
+      "delay": 0.1
+     },
+     {
+      "who": "r11",
+      "to": [
+       67,
+       52.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       61.2,
+       28.8
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n7",
+      "to": [
+       67,
+       7.5
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zurück zum Start",
+    "say": "So geht es weiter, viermal zum Dummy und zurück, bis jeder wieder an seinem eigenen Hütchen steht.",
+    "moves": [
+     {
+      "who": "n5",
+      "to": [
+       57.6,
+       28.8
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n5",
+      "to": [
+       51,
+       7.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r10",
+      "to": [
+       57.6,
+       25.8
+      ],
+      "type": "lauf",
+      "delay": 0.1
+     },
+     {
+      "who": "r10",
+      "to": [
+       67,
+       7.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r11",
+      "to": [
+       61.2,
+       28.8
+      ],
+      "type": "lauf",
+      "delay": 0.1
+     },
+     {
+      "who": "r11",
+      "to": [
+       51,
+       52.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       61.2,
+       25.8
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n7",
+      "to": [
+       67,
+       52.5
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Rüber ins Spielfeld",
+    "say": "Dann sprinten alle vier nach links ins Spielfeld. Team Neon ist zuerst mit beiden Spielern drin, darum spielt der Trainer Neon fünf den Ball.",
+    "moves": [
+     {
+      "who": "n5",
+      "to": [
+       38,
+       22
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n7",
+      "to": [
+       43,
+       14
+      ],
+      "type": "lauf",
+      "delay": 0.1
+     },
+     {
+      "who": "r10",
+      "to": [
+       30,
+       24
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     },
+     {
+      "who": "r11",
+      "to": [
+       34,
+       40
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     },
+     {
+      "who": "b1",
+      "to": [
+       38.6,
+       22.6
+      ],
+      "type": "pass",
+      "delay": 0.8
+     }
+    ]
+   },
+   {
+    "label": "Zwei gegen zwei: Punkt",
+    "say": "Neon fünf spielt zu Neon sieben, der ins obere Minitor trifft, und das gibt einen Punkt für Team Neon. Dann starten die nächsten vier.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       43.6,
+       14.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r10",
+      "to": [
+       36,
+       18
+      ],
+      "type": "lauf",
+      "delay": 0.1
+     },
+     {
+      "who": "b1",
+      "to": [
+       35,
+       4.7
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 86,
+    "y1": 5,
+    "x2": 86,
+    "y2": 55,
+    "text": "27 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Kurz und scharf wenden.",
+   "title": "Scharf wenden",
+   "text": "Am Dummy und am Hütchen nicht im weiten Bogen herumlaufen. Kurz vorher mit kleinen Schritten abbremsen, tief gehen und sofort in die neue Richtung abdrücken. So verliert man kaum Zeit.",
+   "board": {
+    "players": [
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 49,
+      "y": 3,
+      "label": "5"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 40.5,
+      "y": 3,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 69,
+      "y": 3,
+      "label": "10"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 77.5,
+      "y": 3,
+      "label": "4"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 49,
+      "y": 57,
+      "label": "11"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 40.5,
+      "y": 57,
+      "label": "6"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 69,
+      "y": 57,
+      "label": "7"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 77.5,
+      "y": 57,
+      "label": "12"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 14,
+      "y": 40,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 15.6,
+      "y": 40.6
+     },
+     {
+      "id": "s1",
+      "x": 12,
+      "y": 44
+     },
+     {
+      "id": "s2",
+      "x": 12,
+      "y": 36
+     }
+    ],
+    "steps": [
+     {
+      "label": "Abbremsen am Dummy",
+      "say": "Neon fünf sprintet zum Dummy, bremst mit kleinen Schritten ab und wendet scharf.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         57.6,
+         25.8
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Sofort weiter",
+      "say": "Dann drückt er sich ab und sprintet ohne Umweg zum nächsten Hütchen.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         51,
+         52.5
+        ],
+        "type": "lauf"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Wer zuerst drin ist, hat den Ball.",
+   "title": "Schneller drin",
+   "text": "Das Team, das zuerst mit beiden Spielern im Spielfeld steht, bekommt den Ball. Wer nach dem Rundlauf trödelt, verschenkt den Ballbesitz.",
+   "board": {
+    "players": [
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 51,
+      "y": 7.5,
+      "label": "5"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 40.5,
+      "y": 3,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 67,
+      "y": 7.5,
+      "label": "10"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 77.5,
+      "y": 3,
+      "label": "4"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 51,
+      "y": 52.5,
+      "label": "11"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 40.5,
+      "y": 57,
+      "label": "6"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 67,
+      "y": 52.5,
+      "label": "7"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 77.5,
+      "y": 57,
+      "label": "12"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 14,
+      "y": 40,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 15.6,
+      "y": 40.6
+     },
+     {
+      "id": "s1",
+      "x": 12,
+      "y": 44
+     },
+     {
+      "id": "s2",
+      "x": 12,
+      "y": 36
+     }
+    ],
+    "steps": [
+     {
+      "label": "Rot ist schneller drin",
+      "say": "Diesmal sind Rot zehn und Rot elf zuerst im Spielfeld, Team Neon kommt zu spät.",
+      "moves": [
+       {
+        "who": "r10",
+        "to": [
+         36,
+         30
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r11",
+        "to": [
+         30,
+         42
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n5",
+        "to": [
+         40,
+         20
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       },
+       {
+        "who": "n7",
+        "to": [
+         42,
+         38
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       }
+      ]
+     },
+     {
+      "label": "Rot hat den Ball: Punkt",
+      "say": "Darum spielt der Trainer Team Rot den Ball. Rot zehn legt zu Rot elf, der ins untere Minitor trifft, und das gibt einen Punkt für Team Rot. Dann starten die nächsten vier.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         36.6,
+         30.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         30.6,
+         42.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         34.6,
+         55.3
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
