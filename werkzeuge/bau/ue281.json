@@ -1,0 +1,455 @@
+{
+ "title": "Täuschen, vorbei und flanken",
+ "code": "UE-281",
+ "kind": "Übungsform",
+ "focuses": [
+  "Dribbling",
+  "Ballannahme",
+  "Torschuss"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Einzeltraining"
+ ],
+ "duration_minutes": 15,
+ "players_min": 1,
+ "players_max": 1,
+ "field_size": "18 x 18 m",
+ "description": "Ein Flügelspieler übt mit dem Trainer, wie er am Außenverteidiger vorbeikommt. Ein Dummy ist der Gegenspieler. Der Spieler nimmt den Pass des Trainers auf dem hinteren Fuß an, dribbelt auf den Dummy zu und täuscht innen an. Dann geht er außen vorbei und flankt in eines der zwei seitlichen Minitore.",
+ "organisation": [
+  "Aufbauen: Ein Feld von achtzehn mal achtzehn Metern. Oben in der Mitte ein Minitor, links zwei Minitore, die zur Seite offen sind. Rechts oben steht ein Dummy als Außenverteidiger, in der Mitte ein zweiter Dummy.",
+  "Verteilen: Der Spieler startet unten rechts als Flügelspieler. Der Trainer steht unten in der Mitte mit vielen Bällen.",
+  "Ablauf: Der Trainer passt auf den hinteren Fuß. Der Spieler dribbelt auf den Dummy zu, täuscht innen an und geht außen vorbei. Dann flankt er in eines der zwei Minitore links.",
+  "Wechsel: Der Spieler holt sich sofort den nächsten Ball, bis alle Bälle gespielt sind. Danach wird das Feld gespiegelt, und er übt auf dem linken Flügel mit dem linken Fuß."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Den Ball auf dem hinteren Fuß annehmen und gleich nach vorn mitnehmen",
+  "Mit Schulter, Hüfte und Füßen täuschen, damit der Verteidiger mitgeht",
+  "Nach der Finte explosiv mit dem Ball wegsprinten",
+  "Auch müde noch genau flanken und schießen"
+ ],
+ "materials": [
+  "3 Minitore",
+  "2 Dummys",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Täuschen, vorbei und flanken. Ein Flügelspieler täuscht den Dummy innen an, geht außen vorbei und flankt ins Minitor.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top"
+   },
+   {
+    "x": 27,
+    "y": 13,
+    "side": "left"
+   },
+   {
+    "x": 33,
+    "y": 30,
+    "side": "left"
+   }
+  ],
+  "cones": [
+   {
+    "x": 65.5,
+    "y": 26.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 55,
+    "y": 37,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 70,
+    "y": 42,
+    "label": "7"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 58.5,
+    "y": 49,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 59.1,
+    "y": 49.6
+   },
+   {
+    "id": "s1",
+    "x": 54,
+    "y": 51.5
+   },
+   {
+    "id": "s2",
+    "x": 51.5,
+    "y": 53
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pass auf den hinteren Fuß",
+    "say": "Der Trainer passt Spieler sieben den Ball auf den hinteren Fuß. Spieler sieben ist der Flügelspieler, der Dummy oben rechts ist sein Gegenspieler.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       70.6,
+       42.6
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Auf den Dummy zu",
+    "say": "Spieler sieben nimmt den Ball mit und dribbelt direkt auf den Dummy zu.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       67,
+       33
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Innen antäuschen, außen vorbei",
+    "say": "Er täuscht nach innen an. Dann legt er den Ball nach außen und sprintet am Dummy vorbei.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       64.5,
+       32.5
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       70.5,
+       30
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       71.5,
+       21
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Flanke ins Minitor",
+    "say": "Spieler sieben flankt den Ball mit Schwung ins linke obere Minitor. Ziel ist, jede Flanke ins Minitor zu bringen. Dann läuft er zurück und ist mit dem nächsten Ball gleich wieder dran.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       28,
+       13.5
+      ],
+      "type": "pass",
+      "bend": 8
+     },
+     {
+      "who": "n7",
+      "to": [
+       70,
+       42
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 83,
+    "y1": 5,
+    "x2": 83,
+    "y2": 55,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Täuschen und explosiv weg.",
+   "title": "Täuschen und explosiv weg",
+   "text": "Die Finte kommt aus Schulter und Hüfte, damit der Verteidiger mitgeht. Danach sofort explosiv weg, den Ball eng am Fuß. Der Spieler muss nicht ganz vorbei sein: Ein halber Meter Platz reicht für die Flanke.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 67,
+      "y": 33,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 58.5,
+      "y": 49,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 67.6,
+      "y": 33.6
+     },
+     {
+      "id": "s1",
+      "x": 54,
+      "y": 51.5
+     },
+     {
+      "id": "s2",
+      "x": 51.5,
+      "y": 53
+     }
+    ],
+    "steps": [
+     {
+      "label": "Finte mit dem Körper",
+      "say": "Spieler sieben steht vor dem Dummy. Er täuscht mit Schulter und Hüfte nach innen an.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         64.5,
+         32.5
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Explosiv nach außen",
+      "say": "Mit dem Außenrist legt er den Ball nach außen und ist mit dem nächsten Schritt weg. Ein halber Meter Platz reicht schon.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         70.5,
+         30
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         71.5,
+         18
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Rückpass ins Minitor",
+      "say": "Sofort spielt er den Ball flach und scharf zurück ins untere Minitor links. Dann holt er sich den nächsten Ball.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         33.6,
+         30.3
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Außen antäuschen, innen rein.",
+   "title": "Außen antäuschen, innen rein",
+   "text": "Jetzt täuscht der Spieler außen an und zieht nach innen. Er geht innen am Dummy vorbei und schießt mit Schnitt ins obere Minitor. So übt er enge Ballführung und einen genauen Abschluss.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 70,
+      "y": 42,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 58.5,
+      "y": 49,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 59.1,
+      "y": 49.6
+     },
+     {
+      "id": "s1",
+      "x": 54,
+      "y": 51.5
+     },
+     {
+      "id": "s2",
+      "x": 51.5,
+      "y": 53
+     }
+    ],
+    "steps": [
+     {
+      "label": "Pass und auf den Dummy",
+      "say": "Der Trainer passt auf den hinteren Fuß. Spieler sieben dribbelt sofort auf den Dummy zu.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         70.6,
+         42.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n7",
+        "to": [
+         67,
+         33
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Außen antäuschen",
+      "say": "Er zieht den Ball nach außen, als ob er außen vorbei will.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         69.5,
+         32
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Nach innen ziehen",
+      "say": "Dann zieht er den Ball scharf nach innen und geht innen am Dummy vorbei.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         60,
+         31
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         57,
+         22
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Schuss mit Schnitt",
+      "say": "Spieler sieben schießt mit Schnitt ins obere Minitor. Ziel ist, das Minitor genau zu treffen. Dann ist er mit dem nächsten Ball wieder dran.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         5.8
+        ],
+        "type": "pass",
+        "bend": -5
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

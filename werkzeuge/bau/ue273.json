@@ -1,0 +1,592 @@
+{
+ "title": "Zehner täuscht an der Puppe",
+ "code": "UE-273",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel",
+  "Ballannahme"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Einzeltraining"
+ ],
+ "duration_minutes": 15,
+ "players_min": 1,
+ "players_max": 1,
+ "field_size": "18 x 18 m",
+ "description": "Eine Übung für den Zehner mit dem Trainer. Nach einem Prallpass läuft der Spieler um eine Stange, nimmt den Pass vom Trainer offen an und dribbelt auf eine Puppe zu. Dort täuscht er mit Augen und Hüfte an und spielt den Ball gegen seine Laufrichtung ins nahe Minitor. Danach geht es zur anderen Seite.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 18 Metern. Oben in den Ecken zwei Minitore, in der Mitte eine Puppe, unten ein Stangentor aus zwei Stangen.",
+  "Verteilen: Der Spieler steht im Stangentor. Der Trainer steht unten auf einem Hütchen mit den Bällen.",
+  "Ablauf: Prallpass mit dem Trainer, um eine Stange laufen, den Pass offen annehmen, auf die Puppe zu dribbeln und gegen die Laufrichtung ins nahe Minitor passen.",
+  "Wechsel: Nach jedem Ball läuft der Spieler zurück zum Stangentor und macht dasselbe zur anderen Seite."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Mit Augen und Hüfte täuschen, dann erst passen",
+  "Den Körper öffnen und mit dem hinteren Fuß annehmen",
+  "Im richtigen Moment passen, scharf und genau",
+  "Schnell zurück und die Seite wechseln"
+ ],
+ "materials": [
+  "2 Stangen",
+  "1 Puppe",
+  "2 Minitore",
+  "2 Hütchen",
+  "1 Prallwand",
+  "Einige Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Zehner täuscht an der Puppe. Spieler sieben dribbelt auf eine Puppe zu und spielt den Ball überraschend gegen seine Laufrichtung ins Minitor.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   }
+  ],
+  "goals": [
+   {
+    "x": 32,
+    "y": 5,
+    "side": "top"
+   },
+   {
+    "x": 68,
+    "y": 5,
+    "side": "top"
+   }
+  ],
+  "cones": [
+   {
+    "x": 50,
+    "y": 23,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 44,
+    "y": 37,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 56,
+    "y": 37,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 46,
+    "y": 53.5,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 14,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 50,
+    "y": 36,
+    "label": "7"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 50,
+    "y": 52,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 50.6,
+    "y": 52.6
+   },
+   {
+    "id": "s1",
+    "x": 54,
+    "y": 53
+   },
+   {
+    "id": "s2",
+    "x": 56.5,
+    "y": 53
+   }
+  ],
+  "steps": [
+   {
+    "label": "Prallpass",
+    "say": "Der Trainer passt zu Spieler sieben im Stangentor. Spieler sieben spielt direkt zurück.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       36.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       52.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Um die Stange",
+    "say": "Jetzt läuft Spieler sieben um die rechte Stange und öffnet seinen Körper. Der Trainer passt, und er nimmt den Ball mit dem hinteren Fuß an.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       57.5,
+       32.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n7",
+      "to": [
+       65,
+       40
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       65.6,
+       40.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Auf die Puppe zu",
+    "say": "Spieler sieben dribbelt schräg nach innen direkt auf die Puppe zu.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       55,
+       29.5
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Gegen die Laufrichtung",
+    "say": "Er schaut nach links und tut so, als ob er dorthin spielt. Dann passt er nach rechts ins nahe Minitor. Ziel geschafft! Danach läuft er zurück zum Stangentor, und es geht zur anderen Seite.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       40,
+       16
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b1",
+      "to": [
+       68,
+       5.5
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 83,
+    "y1": 5,
+    "x2": 83,
+    "y2": 55,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Doppelpass mit der Prallwand.",
+   "title": "Doppelpass mit der Wand",
+   "text": "Oben in der Mitte steht jetzt eine Prallwand. An der Puppe spielt der Spieler mit dem Außenrist an die Wand und läuft an der Puppe vorbei. Er nimmt den Ball im Lauf mit und passt ins andere Minitor.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 65,
+      "y": 40,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 52,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 65.6,
+      "y": 40.6
+     },
+     {
+      "id": "s1",
+      "x": 54,
+      "y": 53
+     },
+     {
+      "id": "s2",
+      "x": 56.5,
+      "y": 53
+     }
+    ],
+    "steps": [
+     {
+      "label": "Auf die Puppe zu",
+      "say": "Spieler sieben hat den Ball vom Trainer angenommen und dribbelt auf die Puppe zu.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         59,
+         29.5
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Doppelpass mit der Wand",
+      "say": "Mit dem Außenrist spielt er an die Prallwand und läuft sofort an der Puppe vorbei. Der Ball prallt zurück in seinen Lauf.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.3,
+         12.8
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n7",
+        "to": [
+         50,
+         29.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n7",
+        "to": [
+         42,
+         27.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         42.6,
+         28.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Ins linke Minitor",
+      "say": "Spieler sieben nimmt den Ball im Lauf mit und passt genau ins linke Minitor. Dann geht es zurück zum Stangentor.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         32,
+         5.5
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ],
+    "lines": [
+     {
+      "type": "rect",
+      "x": 25,
+      "y": 5,
+      "w": 50,
+      "h": 50
+     },
+     {
+      "type": "line",
+      "x1": 47,
+      "y1": 12,
+      "x2": 53,
+      "y2": 12,
+      "dashed": false
+     }
+    ],
+    "cones": [
+     {
+      "x": 50,
+      "y": 23,
+      "color": "orange",
+      "shape": "stange",
+      "id": "h0"
+     },
+     {
+      "x": 44,
+      "y": 37,
+      "color": "orange",
+      "shape": "stange",
+      "id": "h1"
+     },
+     {
+      "x": 56,
+      "y": 37,
+      "color": "orange",
+      "shape": "stange",
+      "id": "h2"
+     },
+     {
+      "x": 46,
+      "y": 53.5,
+      "color": "orange",
+      "id": "h3"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Erst täuschen, dann an die Wand.",
+   "title": "Täuschen, dann Wand",
+   "text": "Jetzt kommt beides zusammen. Der Spieler zieht nach links, täuscht und spielt den Ball gegen die Laufrichtung an die Prallwand. Dann läuft er an der Puppe vorbei und passt ins nahe Minitor.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 65,
+      "y": 40,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 52,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 65.6,
+      "y": 40.6
+     },
+     {
+      "id": "s1",
+      "x": 54,
+      "y": 53
+     },
+     {
+      "id": "s2",
+      "x": 56.5,
+      "y": 53
+     }
+    ],
+    "steps": [
+     {
+      "label": "Nach links ziehen",
+      "say": "Spieler sieben dribbelt unter der Puppe vorbei nach links.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         58,
+         31.5
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         42,
+         28
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Täuschen, an die Wand",
+      "say": "Er schaut nach links, als ob er weiter dribbelt, und spielt dann gegen die Laufrichtung an die Prallwand. Sofort läuft er an der Puppe vorbei nach rechts.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         28,
+         18
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.3,
+         12.8
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n7",
+        "to": [
+         50,
+         30.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n7",
+        "to": [
+         58,
+         29.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         58.6,
+         30.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Ins rechte Minitor",
+      "say": "Der Ball prallt in seinen Lauf, und Spieler sieben passt direkt ins nahe rechte Minitor. Dann geht es zurück zum Stangentor.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         68,
+         5.5
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ],
+    "lines": [
+     {
+      "type": "rect",
+      "x": 25,
+      "y": 5,
+      "w": 50,
+      "h": 50
+     },
+     {
+      "type": "line",
+      "x1": 47,
+      "y1": 12,
+      "x2": 53,
+      "y2": 12,
+      "dashed": false
+     }
+    ],
+    "cones": [
+     {
+      "x": 50,
+      "y": 23,
+      "color": "orange",
+      "shape": "stange",
+      "id": "h0"
+     },
+     {
+      "x": 44,
+      "y": 37,
+      "color": "orange",
+      "shape": "stange",
+      "id": "h1"
+     },
+     {
+      "x": 56,
+      "y": 37,
+      "color": "orange",
+      "shape": "stange",
+      "id": "h2"
+     },
+     {
+      "x": 46,
+      "y": 53.5,
+      "color": "orange",
+      "id": "h3"
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -33,7 +33,7 @@ u = {"title": "Tennisbälle, Slalom, Paraden", "code": "UE-257", "kind": "Übung
  "organisation_show": ORG,
  "coaching_points": ["Tennisbälle mit weichen Händen fangen", "Schnelle, saubere Schritte durch die Hütchen", "Im richtigen Moment hechten und den Ball festhalten", "Ruhig und genau zum Trainer zurückwerfen, nicht hetzen"],
  "materials": ["1 Jugendtor", "2 Minitore", "7 Hütchen", "2 Tennisbälle", "Viele Bälle"],
- "access": "abo", "hidden": True,
+ "access": "abo", "hidden": False,
  "say_intro": "Tennisbälle, Slalom, Paraden. Der Torwart fängt, läuft durch die Hütchen und hält zwei Schüsse vor den Minitoren.",
  "board": {"lines": LINES, "goals": TORE, "cones": CONES, "players": sp(), "balls": baelle(),
   "steps": [

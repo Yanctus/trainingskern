@@ -1,0 +1,540 @@
+{
+ "title": "Flankenarten vom Flügel",
+ "code": "UE-295",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Dribbling",
+  "Ballannahme"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Einzeltraining"
+ ],
+ "duration_minutes": 15,
+ "players_min": 1,
+ "players_max": 2,
+ "field_size": "46 x 27 m",
+ "description": "Ein Flügelspieler übt verschiedene Flanken. Der Trainer passt nach außen, der Spieler zieht außen an einem Dummy vorbei und flankt in eines von zwei Minitoren im Strafraum. Vier Dummys stehen für die Verteidiger, die Minitore für die Mitspieler. Vor jeder Flanke hebt er den Kopf und wählt die passende Flanke.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 46 mal 27 Metern mit Strafraum. Vier Dummys stehen an der Strafraumlinie, zwei Minitore im Strafraum, ein Dummy außen als Außenverteidiger.",
+  "Verteilen: Spieler sieben steht rechts außen. Der Trainer steht tiefer in der Mitte mit vielen Bällen.",
+  "Ablauf: Der Trainer passt nach außen. Spieler sieben nimmt den Ball mit, zieht außen am Dummy vorbei, hebt den Kopf und flankt in eines der Minitore.",
+  "Wechsel: Nach jeder Flanke läuft der Spieler zurück an den Start, und der Trainer spielt den nächsten Ball. Sind alle Bälle gespielt, gibt es eine Pause."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Scharfe Flanke: mit Tempo und den Oberkörper über dem Ball, damit sie flach bleibt",
+  "Gelupfte Flanke: weich und hoch an den hinteren Pfosten, damit die Mitspieler hinkommen",
+  "Rückpass: erst mit dem Körper die Flanke antäuschen, dann scharf zurücklegen",
+  "Vor der Flanke den Kopf heben und die passende Flanke wählen"
+ ],
+ "materials": [
+  "5 Dummys",
+  "2 Minitore",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Flankenarten vom Flügel. Spieler sieben zieht am Außenverteidiger vorbei und flankt in die Minitore im Strafraum.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 15,
+    "y": 10,
+    "w": 70,
+    "h": 42
+   },
+   {
+    "type": "line",
+    "x1": 30,
+    "y1": 10,
+    "x2": 30,
+    "y2": 28,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 30,
+    "y1": 28,
+    "x2": 71,
+    "y2": 28,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 71,
+    "y1": 28,
+    "x2": 71,
+    "y2": 10,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 47.5,
+    "y": 14,
+    "side": "left"
+   },
+   {
+    "x": 47.5,
+    "y": 23,
+    "side": "left"
+   }
+  ],
+  "cones": [
+   {
+    "x": 38.5,
+    "y": 30,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 48,
+    "y": 30,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 57,
+    "y": 30,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 65.5,
+    "y": 30,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 72,
+    "y": 33.5,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 80.5,
+    "y": 41,
+    "label": "7"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 63,
+    "y": 47,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 63.6,
+    "y": 47.6
+   },
+   {
+    "id": "s1",
+    "x": 59.5,
+    "y": 49.5
+   },
+   {
+    "id": "s2",
+    "x": 57.5,
+    "y": 50.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pass nach außen",
+    "say": "Der Trainer steht tiefer in der Mitte und passt nach außen zu Spieler sieben.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       81.1,
+       41.6
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Außen am Dummy vorbei",
+    "say": "Spieler sieben nimmt den Ball nach vorn mit. Er dribbelt auf den Dummy zu und zieht dann außen an ihm vorbei. Der Dummy ist der gegnerische Außenverteidiger.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       76.5,
+       37.5
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       80,
+       27.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Kopf hoch",
+    "say": "Vor der Flanke hebt Spieler sieben den Kopf und schaut in den Strafraum. Wo ist Platz hinter den Verteidigern?",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       61,
+       20
+      ],
+      "type": "blick"
+     }
+    ]
+   },
+   {
+    "label": "Flanke ins Minitor: Ziel",
+    "say": "Er flankt den Ball über die Dummys ins obere Minitor. Das ist das Ziel. Dann läuft Spieler sieben zurück an den Start, und der Trainer spielt den nächsten Ball.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       48,
+       14
+      ],
+      "type": "pass",
+      "bend": 5
+     },
+     {
+      "who": "n7",
+      "to": [
+       80.5,
+       41
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 15,
+    "y1": 58.6,
+    "x2": 85,
+    "y2": 58.6,
+    "text": "46 m"
+   },
+   {
+    "x1": 91,
+    "y1": 10,
+    "x2": 91,
+    "y2": 52,
+    "text": "27 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Die scharfe, flache Flanke.",
+   "title": "Scharf und flach flanken",
+   "text": "Die scharfe Flanke geht flach vor dem Tor entlang, in den Raum hinter den Verteidigern. Dafür bleibt der Oberkörper über dem Ball. Der Ball springt vor dem Minitor auf. So kommen Torwart und Verteidiger nur schwer an den Ball.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 80,
+      "y": 24,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 63,
+      "y": 47,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 80.6,
+      "y": 24.6
+     },
+     {
+      "id": "s1",
+      "x": 59.5,
+      "y": 49.5
+     },
+     {
+      "id": "s2",
+      "x": 57.5,
+      "y": 50.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Kopf hoch",
+      "say": "Spieler sieben ist am Dummy vorbei. Er hebt den Kopf und sieht: Hinter den Verteidigern ist Platz.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         61,
+         21
+        ],
+        "type": "blick"
+       }
+      ]
+     },
+     {
+      "label": "Scharf und flach: Ziel",
+      "say": "Er bleibt mit dem Oberkörper über dem Ball und flankt scharf und flach. Der Ball springt in der Zone vor dem Tor auf und geht ins untere Minitor. Das ist das Ziel. Dann kommt der nächste Ball.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         48,
+         23
+        ],
+        "type": "pass",
+        "bend": -2
+       }
+      ]
+     }
+    ],
+    "lines": [
+     {
+      "type": "rect",
+      "x": 15,
+      "y": 10,
+      "w": 70,
+      "h": 42
+     },
+     {
+      "type": "line",
+      "x1": 30,
+      "y1": 10,
+      "x2": 30,
+      "y2": 28,
+      "dashed": true
+     },
+     {
+      "type": "line",
+      "x1": 30,
+      "y1": 28,
+      "x2": 71,
+      "y2": 28,
+      "dashed": true
+     },
+     {
+      "type": "line",
+      "x1": 71,
+      "y1": 28,
+      "x2": 71,
+      "y2": 10,
+      "dashed": true
+     },
+     {
+      "type": "zone",
+      "x": 50,
+      "y": 16,
+      "w": 16,
+      "h": 10
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Die Mitte ist zu. Lupfer an den hinteren Pfosten oder Rückpass.",
+   "title": "Lupfer oder Rückpass",
+   "text": "Jetzt stehen Dummys vor den Minitoren in der Mitte. Dazu kommen zwei Minitore: eines am hinteren Pfosten, eines am Rand des Strafraums. Spieler sieben dribbelt bis zur Grundlinie. Dann wählt er: ein weicher, hoher Lupfer an den hinteren Pfosten oder ein angetäuschter, scharfer Rückpass an den Strafraumrand.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 79,
+      "y": 38,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 63,
+      "y": 47,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 63.6,
+      "y": 47.6
+     },
+     {
+      "id": "s1",
+      "x": 59.5,
+      "y": 49.5
+     },
+     {
+      "id": "s2",
+      "x": 57.5,
+      "y": 50.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Bis zur Grundlinie",
+      "say": "Der Trainer passt nach außen. Spieler sieben zieht außen am Dummy vorbei und dribbelt bis an die Grundlinie.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         79.6,
+         38.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n7",
+        "to": [
+         79.5,
+         26
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         74.5,
+         14
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Zwei Blicke",
+      "say": "Jetzt hebt er den Kopf. Er schaut zum hinteren Pfosten und dann zum Rand des Strafraums.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         55,
+         16
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "n7",
+        "to": [
+         60,
+         27
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Antäuschen, zurücklegen: Ziel",
+      "say": "Diesmal wählt Spieler sieben den Rückpass. Er täuscht die Flanke mit dem Körper an und legt den Ball dann scharf zurück ins Minitor am Strafraumrand. Das ist das Ziel. Beim nächsten Ball probiert er den Lupfer an den hinteren Pfosten.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         52.5,
+         31.5
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ],
+    "cones": [
+     {
+      "x": 53,
+      "y": 14,
+      "color": "orange",
+      "shape": "stange",
+      "id": "d1"
+     },
+     {
+      "x": 53,
+      "y": 23,
+      "color": "orange",
+      "shape": "stange",
+      "id": "d2"
+     },
+     {
+      "x": 60,
+      "y": 18.5,
+      "color": "orange",
+      "shape": "stange",
+      "id": "d3"
+     },
+     {
+      "x": 72,
+      "y": 33.5,
+      "color": "orange",
+      "shape": "stange",
+      "id": "d4"
+     }
+    ],
+    "goals": [
+     {
+      "x": 47.5,
+      "y": 14,
+      "side": "left"
+     },
+     {
+      "x": 47.5,
+      "y": 23,
+      "side": "left"
+     },
+     {
+      "x": 35,
+      "y": 18,
+      "side": "left"
+     },
+     {
+      "x": 52.5,
+      "y": 31,
+      "side": "bottom"
+     }
+    ]
+   }
+  }
+ ]
+}

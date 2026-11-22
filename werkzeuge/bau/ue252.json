@@ -1,0 +1,545 @@
+{
+ "title": "Torhüter-Duell auf vier Tore",
+ "code": "UE-252",
+ "kind": "Übungsform",
+ "focuses": [
+  "Torschuss",
+  "Umschalten",
+  "Zusammenspiel"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Torwart"
+ ],
+ "duration_minutes": 15,
+ "players_min": 6,
+ "players_max": 6,
+ "field_size": "27 x 27 m",
+ "description": "Zwei Teams mit je zwei Torhütern verteidigen je zwei Tore auf einer Seite des Feldes. Wer den Ball hat, spielt zu einem Springer in der Mitte, bekommt ihn zurückgelegt und schießt direkt auf ein gegnerisches Tor. Hält der Torwart den Schuss, greift sein Team sofort selbst an. So üben die Torhüter, Schüsse aus vielen Winkeln und Entfernungen zu halten.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 27 mal 27 Metern. Oben und unten stehen je zwei Jugendtore.",
+  "Verteilen: Team Neon hütet die oberen Tore, Team Rot die unteren, alle vier als Torhüter in je einem Tor. Zwei Springer stehen in der Mitte. Der Trainer steht links an der Seite mit Bällen.",
+  "Ablauf: Der Trainer spielt einem Team den Ball zu. Es passt zu einem Springer, der legt ab, und dann wird direkt auf ein gegnerisches Tor geschossen. Hält der Torwart, greift sein Team sofort selbst an.",
+  "Wertung und Wechsel: Jeder Treffer gibt einen Punkt für das Team, das geschossen hat. Das Team mit dem Gegentor tauscht mit den Springern. Geht der Ball ins Aus, bringt der Trainer einen neuen Ball."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Ein paar Schritte rauskommen und den Winkel verkürzen",
+  "Auf Augen und Hüfte des Schützen schauen",
+  "Fangen, wenn es geht, sonst zur Seite abwehren",
+  "Nach dem Halten schnell abspielen und laut ansagen"
+ ],
+ "materials": [
+  "4 Jugendtore",
+  "Viele Bälle",
+  "Leibchen in drei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Torhüter-Duell auf vier Tore. Zwei Teams mit je zwei Torhütern schießen und halten im schnellen Wechsel.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   }
+  ],
+  "goals": [
+   {
+    "x": 36,
+    "y": 5,
+    "side": "top",
+    "size": "jugend"
+   },
+   {
+    "x": 64,
+    "y": 5,
+    "side": "top",
+    "size": "jugend"
+   },
+   {
+    "x": 36,
+    "y": 55,
+    "side": "bottom",
+    "size": "jugend"
+   },
+   {
+    "x": 64,
+    "y": 55,
+    "side": "bottom",
+    "size": "jugend"
+   }
+  ],
+  "cones": [],
+  "players": [
+   {
+    "id": "n1",
+    "team": "a",
+    "x": 36,
+    "y": 9,
+    "label": "1"
+   },
+   {
+    "id": "n13",
+    "team": "a",
+    "x": 64,
+    "y": 9,
+    "label": "13"
+   },
+   {
+    "id": "r12",
+    "team": "b",
+    "x": 36,
+    "y": 51,
+    "label": "12"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 64,
+    "y": 51,
+    "label": "2"
+   },
+   {
+    "id": "f1",
+    "team": "t",
+    "x": 42,
+    "y": 33,
+    "label": "F"
+   },
+   {
+    "id": "f2",
+    "team": "t",
+    "x": 68,
+    "y": 30,
+    "label": "F"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 19,
+    "y": 30,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 19.6,
+    "y": 30.6
+   },
+   {
+    "id": "s1",
+    "x": 15.5,
+    "y": 32.5
+   },
+   {
+    "id": "s2",
+    "x": 15.5,
+    "y": 27.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Anspiel",
+    "say": "Der Trainer spielt den Ball zu Spieler eins von Team Neon. Er hütet das obere linke Tor und nimmt den Ball an.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       36.6,
+       9.6
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Ablegen lassen",
+    "say": "Spieler eins passt zum Springer in der Mitte. Der Springer legt den Ball direkt ab, und Spieler dreizehn läuft ihm entgegen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       42.6,
+       33.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n13",
+      "to": [
+       58,
+       18
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "b1",
+      "to": [
+       58.6,
+       18.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Gehalten",
+    "say": "Spieler zwei hütet das Tor unten rechts und schaut auf Augen und Hüfte von Spieler dreizehn. Spieler dreizehn schießt direkt, und Spieler zwei fängt den Ball.",
+    "moves": [
+     {
+      "who": "r2",
+      "to": [
+       60.5,
+       32
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b1",
+      "to": [
+       61.6,
+       52.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r2",
+      "to": [
+       61,
+       52
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Gegenangriff: Punkt",
+    "say": "Jetzt greift Team Rot an. Spieler zwei passt zum linken Springer, der legt für Spieler zwölf ab. Spieler zwölf schießt direkt ins obere linke Tor, und das gibt einen Punkt für Team Rot. Dann bringt der Trainer einen neuen Ball, und es geht weiter.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       42.6,
+       33.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n13",
+      "to": [
+       64,
+       9
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r12",
+      "to": [
+       33,
+       41
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       33.6,
+       41.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       30.5,
+       5.4
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "27 m"
+   },
+   {
+    "x1": 82,
+    "y1": 5,
+    "x2": 82,
+    "y2": 55,
+    "text": "27 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Rauskommen und den Winkel verkürzen.",
+   "title": "Rauskommen, Winkel verkürzen",
+   "text": "Bleibt der Torwart tief im Tor, sieht der Schütze viel freie Fläche. Kommt er schnell ein paar Schritte heraus, wird das Tor für den Schützen kleiner. Dabei schaut er auf Augen und Hüfte des Schützen, denn sie verraten, wohin der Ball fliegt.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 36,
+      "y": 9,
+      "label": "1"
+     },
+     {
+      "id": "n13",
+      "team": "a",
+      "x": 58,
+      "y": 18,
+      "label": "13"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 36,
+      "y": 51,
+      "label": "12"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 64,
+      "y": 51,
+      "label": "2"
+     },
+     {
+      "id": "f1",
+      "team": "t",
+      "x": 42,
+      "y": 33,
+      "label": "F"
+     },
+     {
+      "id": "f2",
+      "team": "t",
+      "x": 68,
+      "y": 30,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 19,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 58.6,
+      "y": 18.6
+     },
+     {
+      "id": "s1",
+      "x": 15.5,
+      "y": 32.5
+     },
+     {
+      "id": "s2",
+      "x": 15.5,
+      "y": 27.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Rauskommen",
+      "say": "Spieler dreizehn hat den Ball. Spieler zwei kommt schnell ein paar Schritte heraus und macht sich groß.",
+      "moves": [
+       {
+        "who": "r2",
+        "to": [
+         62,
+         45
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Augen und Hüfte",
+      "say": "Er schaut auf Augen und Hüfte von Spieler dreizehn. Spieler dreizehn schießt, und Spieler zwei hält den Ball sicher.",
+      "moves": [
+       {
+        "who": "r2",
+        "to": [
+         59.5,
+         27.5
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         62.6,
+         45.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Die Springer schießen Abpraller nach.",
+   "title": "Abpraller nachschießen",
+   "text": "Jetzt dürfen die Springer Abpraller sofort nachschießen. Lässt der Torwart den Ball nach vorn abprallen, wird es gefährlich. Darum wehrt er Bälle, die er nicht fangen kann, zur Seite ab, weg von der Mitte. Ein Treffer nach einem Abpraller zählt für das Team, das geschossen hat.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 36,
+      "y": 9,
+      "label": "1"
+     },
+     {
+      "id": "n13",
+      "team": "a",
+      "x": 58,
+      "y": 18,
+      "label": "13"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 36,
+      "y": 51,
+      "label": "12"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 64,
+      "y": 51,
+      "label": "2"
+     },
+     {
+      "id": "f1",
+      "team": "t",
+      "x": 42,
+      "y": 33,
+      "label": "F"
+     },
+     {
+      "id": "f2",
+      "team": "t",
+      "x": 68,
+      "y": 30,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 19,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 58.6,
+      "y": 18.6
+     },
+     {
+      "id": "s1",
+      "x": 15.5,
+      "y": 32.5
+     },
+     {
+      "id": "s2",
+      "x": 15.5,
+      "y": 27.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Abpraller",
+      "say": "Spieler dreizehn schießt fest. Spieler zwei kann den Ball nicht festhalten, und er prallt nach vorn ab.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         64.6,
+         51.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         66.6,
+         40.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Nachschuss: Punkt",
+      "say": "Der Springer rechts ist sofort da und schießt den Abpraller ins Tor. Das gibt einen Punkt für Team Neon. Darum Bälle, die man nicht fangen kann, immer zur Seite abwehren. Dann bringt der Trainer einen neuen Ball.",
+      "moves": [
+       {
+        "who": "f2",
+        "to": [
+         66,
+         40
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         57.5,
+         54.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

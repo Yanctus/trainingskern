@@ -1,0 +1,495 @@
+{
+ "title": "Sechser dreht auf und legt ab",
+ "code": "UE-294",
+ "kind": "Übungsform",
+ "focuses": [
+  "Ballannahme",
+  "Passspiel",
+  "Torschuss"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Einzeltraining"
+ ],
+ "duration_minutes": 15,
+ "players_min": 1,
+ "players_max": 1,
+ "field_size": "18 x 18 m",
+ "description": "Der Sechser übt, im Spielaufbau anspielbar zu sein. Er nimmt den Pass des Trainers auf dem hinteren Fuß an, dreht auf und schießt aufs Minitor hinter sich. Dann läuft er um einen Dummy und legt den nächsten Ball direkt in eines der Minitore neben dem Trainer. Danach läuft er rückwärts zur anderen Seite, und alles beginnt mit dem anderen Fuß von vorn.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 18 Metern mit drei Minitoren: eins oben in der Mitte, zwei unten links und rechts. In der oberen Hälfte steht ein Dummy als Gegenspieler.",
+  "Verteilen: Der Spieler steht links neben dem Dummy. Der Trainer steht unten zwischen den zwei Minitoren und hat acht Bälle.",
+  "Ablauf: Der Trainer spielt zum Spieler. Er nimmt auf dem hinteren Fuß an, dreht auf und schießt aufs obere Minitor. Dann läuft er um den Dummy, bekommt vor dem Dummy den zweiten Ball und legt ihn direkt ins untere Minitor.",
+  "Wechsel: Nach dem Ablegen läuft der Spieler rückwärts zur anderen Seite, und dort geht es mit dem anderen Fuß weiter. Nach acht Bällen, also vier Durchgängen, ist Pause."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Hohes Tempo: schnell umschalten und sauber ausführen",
+  "Zum Aufdrehen offen stehen und auf dem hinteren Fuß annehmen",
+  "Zum Ablegen kompakt stehen und mit beiden Füßen genau spielen",
+  "Ständig umschauen, laut sprechen und schnell entscheiden"
+ ],
+ "materials": [
+  "3 Minitore",
+  "1 Dummy",
+  "8 Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Sechser dreht auf und legt ab. Spieler sechs nimmt an, dreht auf und schießt, dann legt er den nächsten Ball direkt ins Minitor.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   },
+   {
+    "type": "line",
+    "x1": 25,
+    "y1": 30,
+    "x2": 75,
+    "y2": 30,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top"
+   },
+   {
+    "x": 36,
+    "y": 51,
+    "side": "bottom"
+   },
+   {
+    "x": 64,
+    "y": 51,
+    "side": "bottom"
+   }
+  ],
+  "cones": [
+   {
+    "x": 50,
+    "y": 15,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 34,
+    "y": 22,
+    "label": "6"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 50,
+    "y": 47,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 50.6,
+    "y": 47.6
+   },
+   {
+    "id": "b2",
+    "x": 49,
+    "y": 49.4
+   },
+   {
+    "id": "s1",
+    "x": 54,
+    "y": 52
+   },
+   {
+    "id": "s2",
+    "x": 46,
+    "y": 52
+   }
+  ],
+  "steps": [
+   {
+    "label": "Schulterblick und Pass",
+    "say": "Spieler sechs schaut über die Schulter nach hinten. Dann spielt der Trainer ihn an.",
+    "moves": [
+     {
+      "who": "n6",
+      "to": [
+       42,
+       8
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b1",
+      "to": [
+       34.6,
+       22.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Aufdrehen und abschließen",
+    "say": "Spieler sechs steht offen und nimmt den Ball mit dem hinteren Fuß an. Er dreht auf und schießt aufs obere Minitor.",
+    "moves": [
+     {
+      "who": "n6",
+      "to": [
+       38,
+       16
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       50,
+       5.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Um den Dummy",
+    "say": "Jetzt läuft er schnell hinten um den Dummy herum und kommt vorn wieder heraus.",
+    "moves": [
+     {
+      "who": "n6",
+      "to": [
+       44,
+       9.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n6",
+      "to": [
+       56,
+       9.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n6",
+      "to": [
+       57,
+       18
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n6",
+      "to": [
+       50,
+       22
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Direkt ablegen",
+    "say": "Der Trainer spielt den zweiten Ball. Spieler sechs legt ihn direkt ins linke Minitor unten.",
+    "moves": [
+     {
+      "who": "b2",
+      "to": [
+       50.6,
+       22.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b2",
+      "to": [
+       36,
+       50.4
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Rückwärts zur Seite",
+    "say": "Sofort läuft Spieler sechs rückwärts nach rechts, den Körper offen, und schaut zum Dummy. Hier geht es mit dem anderen Fuß weiter. Nach acht Bällen ist die Runde vorbei, dann hat er Pause.",
+    "moves": [
+     {
+      "who": "n6",
+      "to": [
+       64,
+       22
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n6",
+      "to": [
+       53,
+       12
+      ],
+      "type": "blick",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 81,
+    "y1": 5,
+    "x2": 81,
+    "y2": 55,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Der Trainer ruft, wohin der Ball geht.",
+   "title": "Der Trainer ruft",
+   "text": "Das linke Minitor unten ist eins, das rechte zwei. Beim Pass ruft der Trainer die Nummer, und dorthin legt der Spieler ab. Er kommt mit gerader Hüfte an, so sieht er beide Seiten. Ist das noch zu schwer, darf er beim Ablegen zweimal den Ball berühren.",
+   "board": {
+    "players": [
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 57,
+      "y": 18,
+      "label": "6"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 47,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 47.6
+     },
+     {
+      "id": "b2",
+      "x": 49,
+      "y": 49.4
+     },
+     {
+      "id": "s1",
+      "x": 54,
+      "y": 52
+     },
+     {
+      "id": "s2",
+      "x": 46,
+      "y": 52
+     }
+    ],
+    "steps": [
+     {
+      "label": "Beide Seiten sehen",
+      "say": "Spieler sechs kommt vor den Dummy, die Hüfte gerade zum Trainer. Er schaut nach links und nach rechts.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         50,
+         22
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n6",
+        "to": [
+         40,
+         37
+        ],
+        "type": "blick",
+        "after": true
+       },
+       {
+        "who": "n6",
+        "to": [
+         60,
+         37
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Ruf: zwei",
+      "say": "Der Trainer spielt und ruft dabei zwei. Spieler sechs legt den Ball direkt ins rechte Minitor und läuft danach rückwärts nach links.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         22.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         64,
+         50.4
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n6",
+        "to": [
+         36,
+         22
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Der Spieler entscheidet selbst.",
+   "title": "Selbst entscheiden",
+   "text": "Jetzt entscheidet der Spieler: aufdrehen oder ablegen. Er schaut sich um und sagt laut, was er vorhat. Ist hinter ihm Platz, ruft er drehen, steht der Gegner im Rücken, ruft er ab.",
+   "board": {
+    "players": [
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 56,
+      "y": 21,
+      "label": "6"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 47,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 47.6
+     },
+     {
+      "id": "b2",
+      "x": 49,
+      "y": 49.4
+     },
+     {
+      "id": "s1",
+      "x": 54,
+      "y": 52
+     },
+     {
+      "id": "s2",
+      "x": 46,
+      "y": 52
+     }
+    ],
+    "steps": [
+     {
+      "label": "Schauen und rufen",
+      "say": "Spieler sechs schaut über die Schulter. Der Dummy steht direkt hinter ihm, Aufdrehen geht nicht. Also ruft er laut: Ab!",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         48,
+         8
+        ],
+        "type": "blick"
+       }
+      ]
+     },
+     {
+      "label": "Ablegen",
+      "say": "Der Trainer spielt ihn an, und Spieler sechs legt direkt ins linke Minitor ab. Danach läuft er rückwärts weg und bietet sich neu an.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         56.6,
+         21.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         36,
+         50.4
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n6",
+        "to": [
+         66,
+         21
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

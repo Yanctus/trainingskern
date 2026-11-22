@@ -1,0 +1,450 @@
+{
+ "title": "Aufdrehen, vorbei, in die Ecke",
+ "code": "UE-282",
+ "kind": "Übungsform",
+ "focuses": [
+  "Ballannahme",
+  "Dribbling",
+  "Torschuss"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Einzeltraining"
+ ],
+ "duration_minutes": 15,
+ "players_min": 1,
+ "players_max": 1,
+ "field_size": "23 x 23 m",
+ "description": "Ein Spieler läuft mit dem Trainer einen Rundlauf mit zwei Seiten. Er nimmt den Pass an, dreht mit dem ersten Kontakt auf und dribbelt schnell auf einen Dummy zu. Am Dummy legt er sich den Ball blitzschnell vorbei und schießt in die Ecke des Minitors. Danach sprintet er zur Stange auf der anderen Seite und macht dasselbe noch einmal.",
+ "organisation": [
+  "Aufbauen: Ein Feld von dreiundzwanzig mal dreiundzwanzig Metern mit zwei gleichen Rundläufen. Oben rechts und unten links steht ein Minitor, links und rechts in der Mitte je ein Dummy. Zwei Startstangen stehen unten in der Mitte und oben links.",
+  "Verteilen: Der Spieler startet unten an der Stange. Der Trainer steht in der Mitte mit vielen Bällen.",
+  "Ablauf: Der Trainer passt, der Spieler dreht mit dem ersten Kontakt auf und dribbelt zum rechten Dummy. Er legt sich den Ball vorbei und schießt ins obere Minitor. Dann sprintet er zur Stange oben links und läuft den Rundlauf von dort zum linken Dummy und unteren Minitor.",
+  "Wechsel: Nach zwei Durchgängen, also vier Abschlüssen, ruft der Trainer eine Pause aus. Danach geht es wieder von unten los."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Mit dem ersten Kontakt den Ball vom Fuß weg mitnehmen und schnell aufdrehen",
+  "Mit Tempo auf den Dummy zudribbeln",
+  "Den Ball blitzschnell am Dummy vorbeilegen",
+  "Flach und hart in die Ecken schießen, nicht in die Mitte"
+ ],
+ "materials": [
+  "2 Minitore",
+  "2 Dummys",
+  "2 Stangen",
+  "2 Hütchen",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Aufdrehen, vorbei, in die Ecke. Ein Spieler dreht mit dem ersten Kontakt auf, geht am Dummy vorbei und schießt in die Ecke.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   }
+  ],
+  "goals": [
+   {
+    "x": 65,
+    "y": 10,
+    "side": "top"
+   },
+   {
+    "x": 35,
+    "y": 50,
+    "side": "bottom"
+   }
+  ],
+  "cones": [
+   {
+    "x": 66,
+    "y": 30.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 34,
+    "y": 30.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 56.5,
+    "y": 37,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 39,
+    "y": 12,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 50.5,
+    "y": 33,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 19.5,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 54.5,
+    "y": 47,
+    "label": "7"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 46,
+    "y": 33,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 46.6,
+    "y": 33.6
+   },
+   {
+    "id": "s1",
+    "x": 44,
+    "y": 27
+   },
+   {
+    "id": "s2",
+    "x": 47.5,
+    "y": 26
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pass und aufdrehen",
+    "say": "Der Trainer passt zu Spieler sieben an der unteren Stange. Spieler sieben nimmt den Ball mit dem ersten Kontakt nach rechts mit und dreht sich schnell auf.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       55.1,
+       47.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n7",
+      "to": [
+       58.5,
+       49.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       64,
+       40
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Zum Dummy dribbeln",
+    "say": "Mit Tempo dribbelt er auf den rechten Dummy zu.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       66,
+       37
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Schnell vorbei",
+    "say": "Kurz vor dem Dummy legt er sich den Ball blitzschnell außen vorbei.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       70.5,
+       31
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       69,
+       24
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Abschluss in die Ecke",
+    "say": "Mit dem nächsten Kontakt schießt Spieler sieben flach in die linke Ecke des oberen Minitors.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       62,
+       10.5
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Sprint zur anderen Seite",
+    "say": "Dann sprintet er sofort zur Stange oben links, und der Trainer geht zum oberen Hütchen. Ziel ist, jeden Ball in eine Ecke zu schießen. Jetzt ist Spieler sieben von der anderen Seite dran, nach vier Abschlüssen gibt es eine Pause.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       56,
+       15
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n7",
+      "to": [
+       43.5,
+       12
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "T",
+      "to": [
+       54.5,
+       21
+      ],
+      "type": "lauf"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "23 m"
+   },
+   {
+    "x1": 83,
+    "y1": 5,
+    "x2": 83,
+    "y2": 55,
+    "text": "23 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: In die Ecken schießen.",
+   "title": "In die Ecken schießen",
+   "text": "Im Tor steht kein Torwart. Ein lockerer Schuss in die Mitte wäre im Spiel leicht zu halten. Deshalb schießt der Spieler flach und hart in eine Ecke und achtet auf Genauigkeit.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 31,
+      "y": 37,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 54.5,
+      "y": 21,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 31.6,
+      "y": 37.6
+     },
+     {
+      "id": "s1",
+      "x": 44,
+      "y": 27
+     },
+     {
+      "id": "s2",
+      "x": 47.5,
+      "y": 26
+     }
+    ],
+    "steps": [
+     {
+      "label": "Ball vorlegen",
+      "say": "Spieler sieben ist auf der zweiten Seite schon am linken Dummy vorbei. Er legt sich den Ball zum Schuss vor.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         33,
+         41
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Flach in die Ecke",
+      "say": "Er schießt flach und hart in die linke Ecke, nicht in die Mitte. Dann geht es zurück zur unteren Stange.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         32,
+         49.5
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Mit dem ersten Kontakt aufdrehen.",
+   "title": "Mit dem ersten Kontakt drehen",
+   "text": "Der Spieler öffnet schon vor dem Pass den Körper. Mit dem ersten Kontakt nimmt er den Ball vom Fuß weg in die neue Richtung mit und dreht schnell um die Stange. So spart er Zeit und kann sofort nach vorn spielen.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 54.5,
+      "y": 47,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 46,
+      "y": 33,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 46.6,
+      "y": 33.6
+     },
+     {
+      "id": "s1",
+      "x": 44,
+      "y": 27
+     },
+     {
+      "id": "s2",
+      "x": 47.5,
+      "y": 26
+     }
+    ],
+    "steps": [
+     {
+      "label": "Körper öffnen",
+      "say": "Spieler sieben steht offen zum Trainer. Der Trainer passt ihm den Ball zu.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         55.1,
+         47.6
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Erster Kontakt mit Richtung",
+      "say": "Mit dem ersten Kontakt nimmt er den Ball nach rechts weg und dreht sich in einer Bewegung auf. Schon ist er unterwegs zum Dummy.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         58.5,
+         49.5
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         64,
+         40
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         66,
+         37
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

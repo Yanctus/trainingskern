@@ -1,0 +1,505 @@
+{
+ "title": "Aufdrehen, Stange, drei Minitore",
+ "code": "UE-289",
+ "kind": "Übungsform",
+ "focuses": [
+  "Ballannahme",
+  "Torschuss",
+  "Schnelligkeit"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Einzeltraining"
+ ],
+ "duration_minutes": 15,
+ "players_min": 1,
+ "players_max": 2,
+ "field_size": "14 x 23 m",
+ "description": "Der Spieler kommt dem Trainer kurz entgegen, nimmt den Pass mit dem ersten Kontakt in die Drehung mit und dribbelt um eine Stange. Dann schießt er an einer Puppe vorbei in eines von drei Minitoren. Danach sprintet er zurück zum Start, und der nächste Ball kommt. Nach einer Minute zählen die Treffer, und die Zahl ist das neue Ziel.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 14 mal 23 Metern. Oben drei Minitore mit je einer Puppe davor. In der Mitte ein Starthütchen mit einer Stange links und rechts.",
+  "Verteilen: Spieler sieben steht am Starthütchen. Der Trainer steht unten mit vielen Bällen.",
+  "Ablauf: Spieler sieben kommt kurz entgegen, dreht mit dem ersten Kontakt auf, dribbelt um eine Stange und schießt an der Puppe vorbei ins Minitor. Dann sprintet er zurück zum Start.",
+  "Wertung und Wechsel: Nach einer Minute zählt der Trainer die Treffer. Diese Zahl ist das Ziel für die nächste Minute. Dazwischen gibt es eine Pause, bei zwei Spielern ist der andere dran."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Vor dem Pass über die Schulter schauen",
+  "Erster Kontakt in die Richtung der Drehung",
+  "Genau statt fest schießen, ins Eck an der Puppe vorbei",
+  "Schnell zurück zum Start und jedes Mal ein anderes Minitor"
+ ],
+ "materials": [
+  "2 Hütchen",
+  "2 Stangen",
+  "3 Puppen",
+  "3 Minitore",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Aufdrehen, Stange, drei Minitore. Spieler sieben dreht mit dem ersten Kontakt auf und trifft an der Puppe vorbei.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 35,
+    "y": 5,
+    "w": 30,
+    "h": 50
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top"
+   },
+   {
+    "x": 40,
+    "y": 13,
+    "side": "top"
+   },
+   {
+    "x": 60,
+    "y": 13,
+    "side": "top"
+   }
+  ],
+  "cones": [
+   {
+    "x": 50,
+    "y": 31,
+    "color": "orange"
+   },
+   {
+    "x": 47,
+    "y": 47,
+    "color": "orange"
+   },
+   {
+    "x": 45,
+    "y": 31,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 55,
+    "y": 31,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 50,
+    "y": 11.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 40,
+    "y": 18,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 60,
+    "y": 18,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 52,
+    "y": 30,
+    "label": "7"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 52,
+    "y": 52,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 52.6,
+    "y": 52.6
+   },
+   {
+    "id": "s1",
+    "x": 56,
+    "y": 53
+   },
+   {
+    "id": "s2",
+    "x": 58.5,
+    "y": 53
+   }
+  ],
+  "steps": [
+   {
+    "label": "Kurz entgegenkommen",
+    "say": "Spieler sieben kommt dem Trainer kurz entgegen. Dabei schaut er über die Schulter: Wo ist die Stange, wo sind die Minitore?",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       49,
+       36
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n7",
+      "to": [
+       40,
+       21
+      ],
+      "type": "blick",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Erster Kontakt in die Drehung",
+    "say": "Der Trainer spielt ihm den Ball. Spieler sieben nimmt ihn mit dem ersten Kontakt gleich zur Seite mit, in Richtung der linken Stange.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       49.6,
+       36.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n7",
+      "to": [
+       46.5,
+       38.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Um die Stange und schießen",
+    "say": "Er dribbelt unten herum um die Stange. Dann schießt er ins linke Eck des mittleren Minitors, genau an der Puppe vorbei.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       44,
+       39
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       41.5,
+       37.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       41,
+       35
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       47.8,
+       5.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zurück zum Start: Ziel",
+    "say": "Sofort sprintet Spieler sieben zurück zum Start, und der Trainer spielt den nächsten Ball. Nach einer Minute zählen die Treffer. Diese Zahl ist das Ziel für die nächste Minute, und nach einer Pause ist Spieler sieben wieder dran.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       47,
+       36.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n7",
+      "to": [
+       52,
+       30
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 35,
+    "y1": 58.6,
+    "x2": 65,
+    "y2": 58.6,
+    "text": "14 m"
+   },
+   {
+    "x1": 73,
+    "y1": 5,
+    "x2": 73,
+    "y2": 55,
+    "text": "23 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Der erste Kontakt geht in die Richtung der Drehung.",
+   "title": "Erster Kontakt in die Drehung",
+   "text": "Schon vor dem Pass steht der Spieler leicht schräg. So nimmt er den Ball mit dem ersten Kontakt direkt in die Drehung mit. Er bleibt in Bewegung und kann sofort beschleunigen.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 52,
+      "y": 30,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 52,
+      "y": 52,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 52.6,
+      "y": 52.6
+     },
+     {
+      "id": "s1",
+      "x": 56,
+      "y": 53
+     },
+     {
+      "id": "s2",
+      "x": 58.5,
+      "y": 53
+     }
+    ],
+    "steps": [
+     {
+      "label": "Schräg entgegen",
+      "say": "Spieler sieben kommt entgegen und dreht den Körper schon leicht nach rechts, zur rechten Stange.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         51,
+         36
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n7",
+        "to": [
+         60,
+         21
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Mitnehmen und beschleunigen",
+      "say": "Der Pass kommt. Mit dem ersten Kontakt legt er den Ball nach rechts vor, dribbelt unten herum um die Stange und beschleunigt.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         51.6,
+         36.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n7",
+        "to": [
+         55.5,
+         38.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         59,
+         35
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Anderes Minitor",
+      "say": "Diesmal schießt er ins rechte Eck des mittleren Minitors. Jedes Mal ein anderes Ziel, dann zurück zum Start.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         52.2,
+         5.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n7",
+        "to": [
+         54,
+         36.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n7",
+        "to": [
+         52,
+         30
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Genau ins Eck schießen, an der Puppe vorbei.",
+   "title": "Genau ins Eck",
+   "text": "Ein Schuss gerade auf das Tor bleibt an der Puppe hängen, ein schwacher Schuss kommt nicht an. Der Spieler schaut kurz auf und schießt sauber und flach ins freie Eck. Genauigkeit geht vor Härte.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 41,
+      "y": 35,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 52,
+      "y": 52,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 41.6,
+      "y": 35.6
+     },
+     {
+      "id": "s1",
+      "x": 56,
+      "y": 53
+     },
+     {
+      "id": "s2",
+      "x": 58.5,
+      "y": 53
+     }
+    ],
+    "steps": [
+     {
+      "label": "Kurz aufschauen",
+      "say": "Spieler sieben hat die Stange hinter sich und legt sich den Ball nach vorn. Er schaut kurz auf: Wo ist das freie Eck neben der Puppe?",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         42,
+         27
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         42.5,
+         13
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Flach ins Eck: Ziel",
+      "say": "Er schießt flach und genau ins rechte Eck des linken Minitors, an der Puppe vorbei. So trifft er öfter, und das ist das Ziel.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         42.6,
+         13.6
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

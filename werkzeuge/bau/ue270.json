@@ -1,0 +1,604 @@
+{
+ "title": "Leiter, Ringe, Stangenslalom",
+ "code": "UE-270",
+ "kind": "Übungsform",
+ "focuses": [
+  "Koordination",
+  "Dribbling",
+  "Passspiel"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Einzeltraining"
+ ],
+ "duration_minutes": 12,
+ "players_min": 1,
+ "players_max": 1,
+ "field_size": "18 x 18 m",
+ "description": "Ein Spieler läuft einen Parcours mit Leiter, Ringen und Stangen. Nach schnellen Füßen durch die Leiter spielt er einen Prallpass mit dem Trainer und sprintet zurück. Dann hüpft er durch die Ringe, spielt den zweiten Prallpass und dribbelt mit dem Ball durch die Stangen. Um die letzte Stange herum geht es zurück zum Start.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 18 Metern. Oben eine Leiter, links drei Ringe untereinander, in der Mitte vier Stangen schräg und unten rechts eine letzte Stange. Vor der ersten Stange liegt ein Ball.",
+  "Verteilen: Spieler sieben startet oben links am Hütchen. Der Trainer steht oben rechts mit Bällen, unten links liegt ein zweiter Ball.",
+  "Ablauf: Schnelle Füße durch die Leiter, Prallpass mit dem Trainer, Sprint zurück. Dann durch die Ringe, zweiter Prallpass, zum Ball sprinten und durch die Stangen dribbeln. Um die letzte Stange und zurück zum Start.",
+  "Wechsel: Am Start erholt sich Spieler sieben kurz. Dann beginnt die nächste Runde. Die Prallpässe abwechselnd mit rechts und links spielen."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Schnelle Füße und saubere Haltung in Leiter und Ringen",
+  "Genaue Prallpässe direkt zurück zum Trainer",
+  "Den Ball beim Dribbeln eng am Fuß führen",
+  "Mit hohem Tempo und mit beiden Füßen arbeiten"
+ ],
+ "materials": [
+  "1 Koordinationsleiter",
+  "3 Ringe",
+  "5 Stangen",
+  "3 Hütchen",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Leiter, Ringe, Stangenslalom. Spieler sieben läuft einen Parcours mit zwei Prallpässen und dribbelt am Ende durch die Stangen.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   }
+  ],
+  "cones": [
+   {
+    "x": 43,
+    "y": 13,
+    "color": "orange",
+    "shape": "leiter"
+   },
+   {
+    "x": 30,
+    "y": 19,
+    "color": "orange",
+    "shape": "ring"
+   },
+   {
+    "x": 30,
+    "y": 24.8,
+    "color": "orange",
+    "shape": "ring"
+   },
+   {
+    "x": 30,
+    "y": 30.6,
+    "color": "orange",
+    "shape": "ring"
+   },
+   {
+    "x": 41,
+    "y": 24,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 45.5,
+    "y": 28,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 50,
+    "y": 32,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 54.5,
+    "y": 36,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 64,
+    "y": 46,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 25.5,
+    "y": 9,
+    "color": "orange"
+   },
+   {
+    "x": 55,
+    "y": 9,
+    "color": "orange"
+   },
+   {
+    "x": 25.5,
+    "y": 35.5,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 29,
+    "y": 13,
+    "label": "7"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 70,
+    "y": 8,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 70.6,
+    "y": 8.6
+   },
+   {
+    "id": "b2",
+    "x": 29.1,
+    "y": 51.6
+   },
+   {
+    "id": "b3",
+    "x": 37,
+    "y": 19
+   },
+   {
+    "id": "s1",
+    "x": 66,
+    "y": 5.5
+   },
+   {
+    "id": "s2",
+    "x": 63,
+    "y": 5.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Leiter, Prallpass",
+    "say": "Spieler sieben läuft mit schnellen Füßen durch die Leiter bis zum Hütchen. Der Trainer passt zu ihm, und er spielt direkt zurück.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       54.5,
+       13
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       55.1,
+       13.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       70.6,
+       8.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zurück, durch die Ringe",
+    "say": "Spieler sieben dreht sich um und sprintet zurück zum Start. Dann hüpft er durch die Ringe. Gleichzeitig läuft der Trainer außen nach unten links.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       30,
+       15.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n7",
+      "to": [
+       30,
+       35
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "T",
+      "to": [
+       76,
+       12
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "T",
+      "to": [
+       76,
+       51
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "T",
+      "to": [
+       28.5,
+       51
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zweiter Prallpass",
+    "say": "Unten links wartet der Trainer mit dem zweiten Ball. Er passt zu Spieler sieben, und der spielt direkt zurück.",
+    "moves": [
+     {
+      "who": "b2",
+      "to": [
+       30.6,
+       35.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b2",
+      "to": [
+       29.1,
+       51.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zum Ball, Slalom",
+    "say": "Spieler sieben sprintet zum Ball in der Mitte. Dann dribbelt er eng am Fuß durch die Stangen.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       36.4,
+       18.4
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n7",
+      "to": [
+       38.5,
+       26.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b3"
+     },
+     {
+      "who": "n7",
+      "to": [
+       47.5,
+       25.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b3"
+     },
+     {
+      "who": "n7",
+      "to": [
+       47.5,
+       34.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b3"
+     },
+     {
+      "who": "n7",
+      "to": [
+       57,
+       33
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b3"
+     }
+    ]
+   },
+   {
+    "label": "Um die Stange: Ziel",
+    "say": "Spieler sieben dribbelt um die letzte Stange herum und zurück zum Start. Das Ziel: der ganze Parcours schnell und sauber, ohne den Ball zu verlieren. Am Start erholt er sich kurz, dann beginnt die nächste Runde.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       67,
+       43
+      ],
+      "type": "dribbling",
+      "ball": "b3"
+     },
+     {
+      "who": "n7",
+      "to": [
+       67.5,
+       49
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b3"
+     },
+     {
+      "who": "n7",
+      "to": [
+       60,
+       49.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b3"
+     },
+     {
+      "who": "n7",
+      "to": [
+       40,
+       45
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b3"
+     },
+     {
+      "who": "n7",
+      "to": [
+       35,
+       30
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b3"
+     },
+     {
+      "who": "n7",
+      "to": [
+       29,
+       13
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b3"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 83,
+    "y1": 5,
+    "x2": 83,
+    "y2": 55,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Prallpässe mit beiden Füßen.",
+   "title": "Prallpass mit beiden Füßen",
+   "text": "Beim Prallpass kommt es auf Genauigkeit an. Spieler sieben spielt den Ball direkt und flach zurück in die Füße des Trainers. Mal mit rechts, mal mit links, damit beide Füße sicher werden.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 30,
+      "y": 35,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 28.5,
+      "y": 51,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b2",
+      "x": 29.1,
+      "y": 51.6
+     },
+     {
+      "id": "s1",
+      "x": 32.5,
+      "y": 54.5
+     },
+     {
+      "id": "s2",
+      "x": 35.5,
+      "y": 54.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Mit rechts zurück",
+      "say": "Der Trainer passt zu Spieler sieben. Er spielt den Ball mit rechts direkt und genau zurück.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         30.6,
+         35.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b2",
+        "to": [
+         29.1,
+         51.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Mit links zurück: Ziel",
+      "say": "Beim nächsten Mal spielt Spieler sieben mit links zurück. Das Ziel: jeder Prallpass kommt genau beim Trainer an.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         30.6,
+         35.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b2",
+        "to": [
+         29.1,
+         51.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Den Ball eng am Fuß führen.",
+   "title": "Eng am Fuß durch die Stangen",
+   "text": "Durch die Stangen führt Spieler sieben den Ball mit vielen kleinen Kontakten. Er nimmt Innen- und Außenseite und beide Füße. Erst wenn die Technik sauber ist, wird er schneller.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 36.4,
+      "y": 18.4,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 28.5,
+      "y": 51,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b3",
+      "x": 37,
+      "y": 19
+     },
+     {
+      "id": "s1",
+      "x": 32.5,
+      "y": 54.5
+     },
+     {
+      "id": "s2",
+      "x": 35.5,
+      "y": 54.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Kleine Kontakte",
+      "say": "Spieler sieben dribbelt mit kleinen Kontakten an den ersten zwei Stangen vorbei. Der Ball bleibt eng am Fuß.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         38.5,
+         26.5
+        ],
+        "type": "dribbling",
+        "ball": "b3"
+       },
+       {
+        "who": "n7",
+        "to": [
+         47.5,
+         25.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b3"
+       }
+      ]
+     },
+     {
+      "label": "Schneller werden: Ziel",
+      "say": "Bei den nächsten Stangen nimmt er die andere Seite des Fußes und wird schneller. Das Ziel: an keiner Stange den Ball verlieren.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         47.5,
+         34.5
+        ],
+        "type": "dribbling",
+        "ball": "b3"
+       },
+       {
+        "who": "n7",
+        "to": [
+         57,
+         33
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b3"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

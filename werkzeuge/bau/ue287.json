@@ -1,0 +1,583 @@
+{
+ "title": "Aufdrehen, andribbeln, Minitor",
+ "code": "UE-287",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Ballannahme",
+  "Dribbling"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Einzeltraining"
+ ],
+ "duration_minutes": 15,
+ "players_min": 1,
+ "players_max": 2,
+ "field_size": "18 x 18 m",
+ "description": "Einzeltraining für Innenverteidiger mit dem Trainer. Spieler vier nimmt vor der äußeren Stange an, dreht mit dem ersten Kontakt nach innen auf und dribbelt zwischen den beiden Stangen an. Dann spielt er den Ball in das mittlere Minitor, also zum Zehner. So lernt er, mit Ball aus der Abwehr herauszurücken und die erste Pressinglinie zu überspielen.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 18 Metern. Zwei Stangen in der Mitte als Stürmer und Flügelspieler des Gegners, oben drei Minitore.",
+  "Verteilen: Spieler vier steht unten in der Mitte. Der Trainer steht links unten mit vielen Bällen.",
+  "Ablauf: Prallpass mit dem Trainer, zur Stange laufen und im Bogen zurück. Den Pass vor der äußeren Stange annehmen, nach innen aufdrehen, andribbeln und ins mittlere Minitor spielen.",
+  "Wechsel: Nach acht Durchgängen ist Pause. Sind zwei Spieler da, wechseln sie sich ab."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Den Körper öffnen und in Spielrichtung schauen",
+  "Erster Kontakt nach innen, an der Stange vorbei",
+  "Mit Ball mutig nach vorn rücken",
+  "Fest und genau ins Minitor spielen"
+ ],
+ "materials": [
+  "2 Stangen",
+  "3 Minitore",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Aufdrehen, andribbeln, Minitor. Spieler vier ist Innenverteidiger und rückt mit dem Ball an den Stangen vorbei nach vorn.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top"
+   },
+   {
+    "x": 31,
+    "y": 5,
+    "side": "top"
+   },
+   {
+    "x": 69,
+    "y": 5,
+    "side": "top"
+   }
+  ],
+  "cones": [
+   {
+    "x": 43,
+    "y": 36.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 68,
+    "y": 36.5,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 52,
+    "y": 51,
+    "label": "4"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 33,
+    "y": 48.5,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 33.6,
+    "y": 49.1
+   },
+   {
+    "id": "s1",
+    "x": 29.5,
+    "y": 51.5
+   },
+   {
+    "id": "s2",
+    "x": 27.5,
+    "y": 51.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Prallpass",
+    "say": "Der Trainer passt zu Spieler vier, und Spieler vier lässt den Ball direkt zurückprallen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       52.6,
+       51.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       33.6,
+       49.1
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Anlaufen und zurück",
+    "say": "Jetzt läuft Spieler vier Richtung äußere Stange und dreht im Bogen wieder nach hinten außen.",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       60,
+       42
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n4",
+      "to": [
+       66,
+       41
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n4",
+      "to": [
+       70,
+       46
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Nach innen aufdrehen",
+    "say": "Der Trainer spielt ihm den Ball vor der äußeren Stange zu. Spieler vier nimmt mit offenem Körper an, und der erste Kontakt geht nach innen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       70.6,
+       46.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n4",
+      "to": [
+       62,
+       41
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Andribbeln",
+    "say": "Er dribbelt zwischen den beiden Stangen durch und hebt den Kopf. Wo ist der Zehner?",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       56,
+       33
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n4",
+      "to": [
+       50,
+       14
+      ],
+      "type": "blick",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Ins mittlere Minitor",
+    "say": "Spieler vier spielt fest und genau ins mittlere Minitor, das ist das Ziel. Dann geht er zurück nach unten, und der Trainer spielt den nächsten Ball. Nach acht Durchgängen ist Pause.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50,
+       6.5
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n4",
+      "to": [
+       52,
+       51
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 81,
+    "y1": 5,
+    "x2": 81,
+    "y2": 55,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Ein zweiter Ball für den verdeckten Pass nach rechts.",
+   "title": "Zweiter Ball nach rechts",
+   "text": "Nach dem Pass ins mittlere Tor läuft Spieler vier sofort um die innere Stange und spielt einen Doppelpass mit dem Trainer. Dann öffnet er sich nach außen und bekommt den zweiten Ball. Er nimmt nach innen an, zeigt mit Hüfte und Augen zur Mitte und spielt dann mit links ins rechte Minitor.",
+   "board": {
+    "players": [
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 56,
+      "y": 33,
+      "label": "4"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 33,
+      "y": 48.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b2",
+      "x": 33.6,
+      "y": 49.1
+     },
+     {
+      "id": "s1",
+      "x": 29.5,
+      "y": 51.5
+     },
+     {
+      "id": "s2",
+      "x": 27.5,
+      "y": 51.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Um die Stange",
+      "say": "Der erste Ball ist im mittleren Tor. Spieler vier läuft sofort um die innere Stange herum nach hinten.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         46,
+         30
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n4",
+        "to": [
+         38,
+         33
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n4",
+        "to": [
+         38,
+         41
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Doppelpass",
+      "say": "Der Trainer passt zu ihm, und Spieler vier spielt direkt zurück. Dann läuft er nach außen.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         38.6,
+         41.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b2",
+        "to": [
+         33.6,
+         49.1
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n4",
+        "to": [
+         55,
+         47
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n4",
+        "to": [
+         68,
+         47
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Zur Mitte zeigen",
+      "say": "Der zweite Ball kommt. Spieler vier nimmt nach innen an, die Hüfte zeigt zur Mitte, und er schaut nach vorn.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         68.6,
+         47.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n4",
+        "to": [
+         60,
+         40
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b2"
+       },
+       {
+        "who": "n4",
+        "to": [
+         55,
+         34
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b2"
+       },
+       {
+        "who": "n4",
+        "to": [
+         46,
+         16
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Verdeckt nach rechts",
+      "say": "Doch dann spielt er mit links ins rechte Minitor zum Außenverteidiger. Das ist das Ziel. Danach ist der nächste Durchgang dran.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         69,
+         6.5
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Ein dritter Ball zum Mittelfeldspieler links.",
+   "title": "Dritter Ball nach links",
+   "text": "Nach dem Pass ins rechte Tor dreht Spieler vier schnell um und spielt wieder einen Doppelpass mit dem Trainer. Dann öffnet er sofort den Körper, nimmt den dritten Ball an und spielt ihn quer über das Feld ins linke Minitor.",
+   "board": {
+    "players": [
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 55,
+      "y": 34,
+      "label": "4"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 33,
+      "y": 48.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b3",
+      "x": 33.6,
+      "y": 49.1
+     },
+     {
+      "id": "s1",
+      "x": 29.5,
+      "y": 51.5
+     },
+     {
+      "id": "s2",
+      "x": 27.5,
+      "y": 51.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Schnell zurück",
+      "say": "Spieler vier dreht nach dem Pass ins rechte Tor sofort um und läuft nach hinten.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         52,
+         46
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Doppelpass",
+      "say": "Doppelpass mit dem Trainer. Dann macht Spieler vier zwei Schritte nach rechts.",
+      "moves": [
+       {
+        "who": "b3",
+        "to": [
+         52.6,
+         46.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b3",
+        "to": [
+         33.6,
+         49.1
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n4",
+        "to": [
+         58,
+         47
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Körper öffnen",
+      "say": "Der dritte Ball kommt. Spieler vier öffnet sofort die Hüfte, nimmt nach vorn an und schaut schon nach links hinüber.",
+      "moves": [
+       {
+        "who": "b3",
+        "to": [
+         58.6,
+         47.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n4",
+        "to": [
+         57,
+         37
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b3"
+       },
+       {
+        "who": "n4",
+        "to": [
+         36,
+         20
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Zum Gegenüber",
+      "say": "Dann spielt er fest ins linke Minitor zum Mittelfeldspieler auf der anderen Seite. Drei Bälle, drei Tore: der Durchgang ist geschafft.",
+      "moves": [
+       {
+        "who": "b3",
+        "to": [
+         31,
+         6.5
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

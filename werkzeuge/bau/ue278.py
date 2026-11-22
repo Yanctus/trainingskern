@@ -59,11 +59,11 @@ u = {"title": "Schräg um die Puppe abschließen", "code": "UE-278", "kind": "Ü
        *weg("n7", "b3", [[34, 24.5]]), ps("b3", [50, 12.3], after=True))]),
   V("Coaching-Punkt", "Der zweite Coaching-Punkt: Trifft der Ball den Pfosten, sofort nachsetzen.", "Abpraller direkt verwandeln",
     "Prallt der Ball vom Pfosten zurück ins Feld, bleibt der Spieler wach. Er reagiert schnell und schießt den Abpraller direkt mit dem ersten Kontakt ins Tor. So lernt er, auch nach einem Fehlschuss ruhig zu bleiben.",
-    sp(n7=(53, 46)), [B4, B2] + ERSATZ,
+    sp(n7=(53, 46)), [B4] + ERSATZ,
     [S("Zur rechten Puppe", "Spieler sieben nimmt den letzten Ball am mittleren Hütchen und dribbelt schräg zur rechten Puppe. Er läuft rechts an ihr vorbei.",
        *weg("n7", "b4", [[60, 39], [71, 33], [71, 27]])),
      S("An den Pfosten", "Er dreht scharf nach links und schießt aufs mittlere Minitor. Der Ball prallt vom Pfosten zurück ins Feld.",
-       *weg("n7", "b4", [[66, 24.5]]), ps("b4", [53.5, 13], after=True), ps("b4", [58.6, 20.6], after=True)),
+       *weg("n7", "b4", [[66, 24.5]]), ps("b4", [54, 12.5], after=True), ps("b4", [58.6, 20.6], after=True)),
      S("Direkt nachsetzen", "Spieler sieben reagiert sofort, läuft in den Abpraller und schießt ihn direkt ins mittlere Minitor. Treffer!",
        mv("n7", [58, 20]), ps("b4", [50, 12.3], after=True))])]}
 json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)

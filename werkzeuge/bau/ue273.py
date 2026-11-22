@@ -40,7 +40,7 @@ u = {"title": "Zehner täuscht an der Puppe", "code": "UE-273", "kind": "Übungs
  "organisation_show": ORG,
  "coaching_points": ["Mit Augen und Hüfte täuschen, dann erst passen", "Den Körper öffnen und mit dem hinteren Fuß annehmen", "Im richtigen Moment passen, scharf und genau", "Schnell zurück und die Seite wechseln"],
  "materials": ["2 Stangen", "1 Puppe", "2 Minitore", "2 Hütchen", "1 Prallwand", "Einige Bälle"],
- "access": "abo", "hidden": True,
+ "access": "abo", "hidden": False,
  "say_intro": "Zehner täuscht an der Puppe. Spieler sieben dribbelt auf eine Puppe zu und spielt den Ball überraschend gegen seine Laufrichtung ins Minitor.",
  "board": {"lines": LINES, "goals": TORE, "cones": CONES, "players": sp(), "balls": [B("b1", *TBALL)] + ERSATZ,
   "steps": [
