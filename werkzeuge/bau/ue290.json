@@ -1,0 +1,507 @@
+{
+ "title": "Zwischen den Linien annehmen",
+ "code": "UE-290",
+ "kind": "Übungsform",
+ "focuses": [
+  "Ballannahme",
+  "Passspiel"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Einzeltraining"
+ ],
+ "duration_minutes": 15,
+ "players_min": 1,
+ "players_max": 2,
+ "field_size": "18 x 18 m",
+ "description": "Eine Übung für den Zehner, der zwischen den Linien den Ball bekommt. Nach einem Prallpass mit dem Trainer läuft der Spieler rückwärts aus der Lücke und nimmt den nächsten Pass in der Drehung mit dem hinteren Fuß an. Mit dem zweiten Kontakt spielt er einen Steckpass in ein Minitor, als ob ein Stürmer losläuft. Danach geht es zur anderen Seite.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 18 Metern mit zwei Minitoren in den oberen Ecken. In der Mitte bilden vier Stangen ein Viereck, die Lücke zwischen den Linien. Darüber liegt ein Hütchen.",
+  "Verteilen: Spieler sieben steht in der Lücke. Der Trainer steht unten mit vielen Bällen.",
+  "Ablauf: Prallpass mit dem Trainer, dann rückwärts aus der Lücke. Der zweite Pass wird in der Drehung angenommen und als Steckpass ins Minitor gespielt.",
+  "Wechsel: Abwechselnd ins linke und ins rechte Minitor, bis alle Bälle gespielt sind. Dann Pause, bei zwei Spielern ist der andere dran."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Früh umschauen und den Körper öffnen",
+  "Mit dem hinteren Fuß annehmen, damit es schnell nach vorn geht",
+  "Die Bewegung so timen, dass Platz und ein guter Winkel entstehen",
+  "Der erste Kontakt geht nach vorn aus der Lücke, dann schnell und sauber passen"
+ ],
+ "materials": [
+  "2 Hütchen",
+  "4 Stangen",
+  "2 Minitore",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Zwischen den Linien annehmen. Spieler sieben ist der Zehner und bekommt den Ball in der Lücke zwischen den Stangen.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   }
+  ],
+  "goals": [
+   {
+    "x": 30,
+    "y": 5,
+    "side": "top"
+   },
+   {
+    "x": 70,
+    "y": 5,
+    "side": "top"
+   }
+  ],
+  "cones": [
+   {
+    "x": 50,
+    "y": 14,
+    "color": "orange"
+   },
+   {
+    "x": 46,
+    "y": 53,
+    "color": "orange"
+   },
+   {
+    "x": 44,
+    "y": 26,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 44,
+    "y": 38,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 56,
+    "y": 26,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 56,
+    "y": 38,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 50,
+    "y": 32,
+    "label": "7"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 50,
+    "y": 50,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 50.6,
+    "y": 50.6
+   },
+   {
+    "id": "s1",
+    "x": 55,
+    "y": 53
+   },
+   {
+    "id": "s2",
+    "x": 57.5,
+    "y": 53
+   }
+  ],
+  "steps": [
+   {
+    "label": "Prallpass",
+    "say": "Der Trainer spielt Spieler sieben in der Lücke zwischen den Stangen an. Er lässt den Ball direkt zum Trainer zurückprallen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       32.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       50.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Rückwärts aus der Lücke",
+    "say": "Jetzt läuft Spieler sieben rückwärts aus der Lücke. Dabei öffnet er den Körper und schaut schon zum linken Minitor.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       50,
+       22
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n7",
+      "to": [
+       34,
+       10
+      ],
+      "type": "blick",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Mit dem hinteren Fuß",
+    "say": "Der Trainer spielt den zweiten Pass. Spieler sieben nimmt ihn in der Drehung mit dem hinteren Fuß an und legt ihn nach vorn.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       22.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n7",
+      "to": [
+       46,
+       19
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Steckpass ins Minitor: Ziel",
+    "say": "Mit dem nächsten Kontakt spielt er einen Steckpass ins linke Minitor, als ob ein Stürmer losläuft. Das Ziel: jeder Ball mit wenigen, sauberen Kontakten ins Minitor. Dann geht er zurück in die Lücke, und der nächste Ball geht nach rechts.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       30.6,
+       5.8
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n7",
+      "to": [
+       50,
+       32
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 81,
+    "y1": 5,
+    "x2": 81,
+    "y2": 55,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Spieler sieben kommt dem Ball entgegen.",
+   "title": "Dem Ball entgegen",
+   "text": "Jetzt startet der Spieler oben am Hütchen. Nach dem Prallpass läuft er nicht rückwärts, sondern kommt dem Ball in die Lücke entgegen. So lässt sich ein Zehner im Spiel fallen, um den Ball zu bekommen. Er nimmt im Laufen an, dreht auf und spielt ins rechte Minitor.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 53,
+      "y": 15,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 50.6
+     },
+     {
+      "id": "s1",
+      "x": 55,
+      "y": 53
+     },
+     {
+      "id": "s2",
+      "x": 57.5,
+      "y": 53
+     }
+    ],
+    "steps": [
+     {
+      "label": "Prallpass von oben",
+      "say": "Spieler sieben steht oben am Hütchen. Der Trainer spielt ihn an, und er lässt den Ball zurückprallen.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         53.6,
+         15.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         50.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "In die Lücke entgegen",
+      "say": "Jetzt läuft er dem Ball entgegen in die Lücke. Dabei schaut er schon zum rechten Minitor.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         50,
+         29
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n7",
+        "to": [
+         66,
+         12
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Im Laufen aufdrehen",
+      "say": "Der Pass kommt. Spieler sieben nimmt ihn im Laufen an und dreht mit dem ersten Kontakt nach vorn aus der Lücke.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         29.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n7",
+        "to": [
+         54,
+         22
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Ins rechte Minitor: Ziel",
+      "say": "Dann spielt er den Steckpass ins rechte Minitor. Das Ziel: annehmen, aufdrehen und passen in einem Fluss.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         70.6,
+         5.8
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Beide Bewegungen hintereinander.",
+   "title": "Erst weg, dann entgegen",
+   "text": "Erst läuft der Spieler rückwärts und lässt den Ball zum Trainer prallen. Gleich danach kommt er wieder in die Lücke, bekommt den zweiten Pass im Laufen, dreht auf und spielt ins Minitor. Er lernt, wann er vom Ball weg und wann er zum Ball hin läuft.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 50,
+      "y": 28,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 50.6
+     },
+     {
+      "id": "s1",
+      "x": 55,
+      "y": 53
+     },
+     {
+      "id": "s2",
+      "x": 57.5,
+      "y": 53
+     }
+    ],
+    "steps": [
+     {
+      "label": "Rückwärts und prallen lassen",
+      "say": "Spieler sieben läuft rückwärts aus der Lücke. Der Trainer spielt ihn an, und er lässt den Ball zurückprallen.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         50,
+         19
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         19.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         50.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Sofort wieder entgegen",
+      "say": "Sofort läuft er wieder nach vorn in die Lücke und bekommt den zweiten Pass im Laufen.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         50,
+         30
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         30.6
+        ],
+        "type": "pass",
+        "delay": 0.4
+       }
+      ]
+     },
+     {
+      "label": "Aufdrehen ins Minitor: Ziel",
+      "say": "In der Lücke dreht er auf, nimmt den Ball nach vorn mit und spielt ins linke Minitor. Das Ziel: der erste Kontakt bringt ihn aus dem Viereck heraus.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         47,
+         23
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         30.6,
+         5.8
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
