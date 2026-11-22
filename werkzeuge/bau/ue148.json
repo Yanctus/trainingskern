@@ -1,0 +1,627 @@
+{
+ "title": "Hoch pressen, drei Duelle",
+ "code": "UE-148",
+ "kind": "Spielform",
+ "focuses": [
+  "Verteidigen",
+  "1 gegen 1",
+  "Umschalten"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 6,
+ "players_max": 12,
+ "field_size": "23 x 26 m",
+ "description": "Drei Eins-gegen-eins-Duelle gleichzeitig, dann drei gegen drei. Auf Zuruf dribbeln drei Spieler von Team Rot mit Ball ins Feld, drei Spieler von Team Neon pressen sofort, jeder gegen seinen Gegenspieler. Erobert Neon den Ball, schießt es in eines der beiden Minitore. Kommt Rot am Pressing vorbei, dribbelt es nach vorn und schießt aufs große Tor. Nach jeder Runde tauschen die Teams.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 23 mal 26 Metern. Unten die Pressingzone (11 Meter, gestrichelt) mit zwei Minitoren, oben ein Jugendtor.",
+  "Verteilen: Drei von Team Neon stehen in der Mitte, drei von Team Rot mit Ball unten an der Linie. Die nächsten Gruppen warten an den Seiten. Der Trainer steht links mit Bällen.",
+  "Ablauf: Auf Zuruf dribbeln die drei Roten ins Feld, die drei von Neon pressen sofort, jeder gegen einen. Neon erobert und schießt ins Minitor, Rot will vorbei und aufs große Tor.",
+  "Wertung und Wechsel: Jedes Tor ist ein Punkt. Nach jeder Runde tauschen die Teams die Rollen, dann sind die nächsten Gruppen dran."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Sofort Druck auf den Ball, mit Tempo anlaufen",
+  "Außen die Seitenlinie als zusätzlichen Verteidiger nutzen",
+  "Mit dem Körper die Richtung vorgeben",
+  "Als Einheit pressen und absichern, Läufe in die Tiefe mitgehen"
+ ],
+ "materials": [
+  "1 Jugendtor",
+  "2 Minitore",
+  "4 Hütchen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Hoch pressen, drei Duelle. Drei gegen drei, und jeder presst seinen Gegenspieler, sobald der mit Ball ins Feld kommt.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 28,
+    "y": 5,
+    "w": 44,
+    "h": 50
+   },
+   {
+    "type": "line",
+    "x1": 28,
+    "y1": 33.6,
+    "x2": 72,
+    "y2": 33.6,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "jugend"
+   },
+   {
+    "x": 36,
+    "y": 55,
+    "side": "bottom"
+   },
+   {
+    "x": 64.5,
+    "y": 55,
+    "side": "bottom"
+   }
+  ],
+  "cones": [],
+  "players": [
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 32.2,
+    "y": 27.3,
+    "label": "7"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 50,
+    "y": 27.6,
+    "label": "9"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 67.4,
+    "y": 30.2,
+    "label": "11"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 28.1,
+    "y": 52.2,
+    "label": "8"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 50.4,
+    "y": 55.1,
+    "label": "6"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 70.8,
+    "y": 50.8,
+    "label": "10"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 19,
+    "y": 38,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b8",
+    "x": 28.7,
+    "y": 52.8
+   },
+   {
+    "id": "b6",
+    "x": 51,
+    "y": 55.7
+   },
+   {
+    "id": "b10",
+    "x": 71.4,
+    "y": 51.4
+   },
+   {
+    "id": "s1",
+    "x": 20.6,
+    "y": 41.5
+   },
+   {
+    "id": "s2",
+    "x": 17,
+    "y": 41.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Auf Zuruf hinein",
+    "say": "Auf Zuruf dribbeln Rot acht, Rot sechs und Rot zehn gleichzeitig ins Feld. Sofort pressen Neon sieben, Neon neun und Neon elf, jeder gegen seinen Gegenspieler.",
+    "moves": [
+     {
+      "who": "r8",
+      "to": [
+       34,
+       45
+      ],
+      "type": "dribbling",
+      "ball": "b8"
+     },
+     {
+      "who": "r6",
+      "to": [
+       50,
+       47
+      ],
+      "type": "dribbling",
+      "ball": "b6"
+     },
+     {
+      "who": "r10",
+      "to": [
+       66,
+       46
+      ],
+      "type": "dribbling",
+      "ball": "b10"
+     },
+     {
+      "who": "n7",
+      "to": [
+       35,
+       38.5
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n9",
+      "to": [
+       50,
+       39.5
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n11",
+      "to": [
+       64,
+       38.5
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "An die Linie drängen",
+    "say": "Wir schauen auf Neon sieben. Er läuft schräg von innen an und drängt Rot acht an die Seitenlinie.",
+    "moves": [
+     {
+      "who": "r8",
+      "to": [
+       30.5,
+       40
+      ],
+      "type": "dribbling",
+      "ball": "b8"
+     },
+     {
+      "who": "n7",
+      "to": [
+       34,
+       36
+      ],
+      "type": "lauf",
+      "delay": 0.1
+     }
+    ]
+   },
+   {
+    "label": "Ball erobert: Punkt",
+    "say": "Dann greift er zu, erobert den Ball und schießt sofort ins linke Minitor. Das gibt einen Punkt für Team Neon.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       34,
+       47
+      ],
+      "type": "dribbling",
+      "ball": "b8"
+     },
+     {
+      "who": "b8",
+      "to": [
+       36,
+       54.7
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Durchgebrochen: Punkt",
+    "say": "Rechts ist Rot zehn schneller als Neon elf, dribbelt außen vorbei und trifft ins große Tor. Das gibt einen Punkt für Team Rot. Nach der Runde tauschen die Teams, und die nächsten Gruppen sind dran.",
+    "moves": [
+     {
+      "who": "r10",
+      "to": [
+       71,
+       38
+      ],
+      "type": "dribbling",
+      "ball": "b10"
+     },
+     {
+      "who": "r10",
+      "to": [
+       58,
+       18
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b10"
+     },
+     {
+      "who": "b10",
+      "to": [
+       52,
+       5.3
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 28,
+    "y1": 58.6,
+    "x2": 72,
+    "y2": 58.6,
+    "text": "23 m"
+   },
+   {
+    "x1": 82,
+    "y1": 5,
+    "x2": 82,
+    "y2": 55,
+    "text": "26 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Drei gegen drei als Einheit.",
+   "title": "Drei gegen drei",
+   "text": "Jetzt darf Team Rot auch passen. Wer den Ballführenden presst, geht bis auf einen Schritt heran. Die anderen rücken mit ein und achten auf die Passwege. Kommt der Pass, presst der Nächste, und der Erste sichert ab.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 35,
+      "y": 30,
+      "label": "7"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 50,
+      "y": 32,
+      "label": "9"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 65,
+      "y": 29,
+      "label": "11"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 34,
+      "y": 47,
+      "label": "8"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 50,
+      "y": 49,
+      "label": "6"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 66,
+      "y": 46,
+      "label": "10"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 19,
+      "y": 38,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b6",
+      "x": 50.6,
+      "y": 49.6
+     },
+     {
+      "id": "s1",
+      "x": 20.6,
+      "y": 41.5
+     },
+     {
+      "id": "s2",
+      "x": 17,
+      "y": 41.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Sofort Druck",
+      "say": "Rot sechs hat den Ball. Neon neun läuft sofort an, bis auf einen Schritt heran. Neon sieben und Neon elf rücken mit ein.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         50,
+         41.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n7",
+        "to": [
+         40,
+         36
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       },
+       {
+        "who": "n11",
+        "to": [
+         60,
+         35
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       }
+      ]
+     },
+     {
+      "label": "Pass abfangen: Punkt",
+      "say": "Rot sechs will zu Rot zehn passen. Neon elf ahnt den Pass, läuft in den Passweg und fängt ihn ab. Dann schießt er ins rechte Minitor, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n11",
+        "to": [
+         60,
+         47.8
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b6",
+        "to": [
+         60.6,
+         48.4
+        ],
+        "type": "pass",
+        "delay": 0.3
+       },
+       {
+        "who": "n11",
+        "to": [
+         63,
+         52
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b6"
+       },
+       {
+        "who": "b6",
+        "to": [
+         64.5,
+         54.7
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Die Seitenlinie hilft mit.",
+   "title": "Die Linie hilft",
+   "text": "Außen ist die Seitenlinie wie ein zusätzlicher Verteidiger. Der Verteidiger läuft schräg von innen an, damit der Gegner nicht in die Mitte kann. Dann wartet er auf den richtigen Moment, zum Beispiel einen zu weiten Kontakt, und greift zu.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 35,
+      "y": 29,
+      "label": "7"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 50,
+      "y": 31,
+      "label": "9"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 65,
+      "y": 29,
+      "label": "11"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 34,
+      "y": 45,
+      "label": "8"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 50,
+      "y": 47,
+      "label": "6"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 66,
+      "y": 46,
+      "label": "10"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 19,
+      "y": 38,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b8",
+      "x": 34.6,
+      "y": 45.6
+     },
+     {
+      "id": "s1",
+      "x": 20.6,
+      "y": 41.5
+     },
+     {
+      "id": "s2",
+      "x": 17,
+      "y": 41.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Schräg anlaufen",
+      "say": "Neon sieben läuft schräg von innen an. Rot acht kann nicht in die Mitte und dribbelt an die Seitenlinie.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         37,
+         38.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r8",
+        "to": [
+         30.5,
+         40
+        ],
+        "type": "dribbling",
+        "delay": 0.2,
+        "ball": "b8"
+       }
+      ]
+     },
+     {
+      "label": "Zugreifen: Punkt",
+      "say": "Rot acht legt sich den Ball zu weit vor. Genau jetzt greift Neon sieben zu, erobert den Ball und trifft ins linke Minitor. Das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "r8",
+        "to": [
+         30.5,
+         33
+        ],
+        "type": "dribbling",
+        "ball": "b8"
+       },
+       {
+        "who": "n7",
+        "to": [
+         35.5,
+         31
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n7",
+        "to": [
+         35,
+         47
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b8"
+       },
+       {
+        "who": "b8",
+        "to": [
+         36,
+         54.7
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

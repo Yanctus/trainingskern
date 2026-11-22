@@ -1,0 +1,495 @@
+{
+ "title": "Bahn wechseln, Pass blocken",
+ "code": "UE-149",
+ "kind": "Übungsform",
+ "focuses": [
+  "Verteidigen",
+  "Umschalten",
+  "Passspiel"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 6,
+ "players_max": 8,
+ "field_size": "18 x 27 m",
+ "description": "Zwei Bahnen nebeneinander, oben in jeder Bahn ein Minitor, quer durch die Mitte eine Passzone. Jeder greift zuerst in seiner eigenen Bahn an: Er dribbelt nach vorn und darf erst in der Passzone ins Minitor passen. Danach sprintet er sofort hinüber in die andere Bahn und versucht, dort den Pass des Gegners zu blocken. Wenn alle Bälle gespielt sind, werden sie eingesammelt, und es gibt eine kurze Pause.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 27 Metern, längs in zwei Bahnen geteilt. Quer durch die Mitte eine Passzone von 5 Metern, oben in jeder Bahn ein Minitor.",
+  "Verteilen: Team Rot links, Team Neon rechts, jeder mit einem Ball. Die Wartenden stehen neben dem Feld. Der Trainer steht unten in der Mitte mit Ersatzbällen.",
+  "Ablauf: Je einer von beiden Teams startet. Er dribbelt in seiner Bahn nach vorn und passt aus der Passzone ins Minitor. Dann sprintet er sofort in die andere Bahn und blockt dort den Pass des Gegners.",
+  "Wertung: Jeder Pass ins Minitor ist ein Punkt. Danach sind die Nächsten dran. Sind alle Bälle gespielt, sammeln alle die Bälle ein und erholen sich kurz."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Nach dem eigenen Pass sofort umschalten und auf dem kürzesten Weg hinüber",
+  "Nah an den Angreifer heran, damit der Winkel für den Pass klein wird",
+  "Auf Körper und Fuß des Angreifers achten, um den Pass vorauszuahnen",
+  "Mit dem Körper die Mitte schützen und den Gegner zur Seite drängen"
+ ],
+ "materials": [
+  "2 Minitore",
+  "8 Hütchen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Bahn wechseln, Pass blocken. Erst greift jeder in seiner Bahn an, dann sprintet er hinüber und verteidigt die andere.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 33,
+    "y": 5,
+    "w": 34,
+    "h": 51
+   },
+   {
+    "type": "line",
+    "x1": 50,
+    "y1": 5,
+    "x2": 50,
+    "y2": 56,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 33,
+    "y1": 25.5,
+    "x2": 67,
+    "y2": 25.5,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 33,
+    "y1": 36,
+    "x2": 67,
+    "y2": 36,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 41,
+    "y": 5,
+    "side": "top"
+   },
+   {
+    "x": 59,
+    "y": 5,
+    "side": "top"
+   }
+  ],
+  "cones": [],
+  "players": [
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 41,
+    "y": 40,
+    "label": "7"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 24,
+    "y": 46,
+    "label": "9"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 15.5,
+    "y": 46,
+    "label": "8"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 59,
+    "y": 40,
+    "label": "6"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 76,
+    "y": 46,
+    "label": "10"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 84.5,
+    "y": 46,
+    "label": "4"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 50,
+    "y": 50,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b7",
+    "x": 41.6,
+    "y": 40.6
+   },
+   {
+    "id": "b6",
+    "x": 59.6,
+    "y": 40.6
+   },
+   {
+    "id": "s1",
+    "x": 51.6,
+    "y": 53.5
+   },
+   {
+    "id": "s2",
+    "x": 48,
+    "y": 53.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Gleichzeitig los",
+    "say": "Rot sieben und Neon sechs starten gleichzeitig. Jeder dribbelt in seiner Bahn nach vorn, Rot sieben ist schon in der Passzone.",
+    "moves": [
+     {
+      "who": "r7",
+      "to": [
+       41,
+       31
+      ],
+      "type": "dribbling",
+      "ball": "b7"
+     },
+     {
+      "who": "n6",
+      "to": [
+       59,
+       35
+      ],
+      "type": "dribbling",
+      "delay": 0.3,
+      "ball": "b6"
+     }
+    ]
+   },
+   {
+    "label": "Pass ins Minitor: Punkt",
+    "say": "Erst in der Passzone darf er passen. Rot sieben spielt flach ins linke Minitor, und das gibt einen Punkt für Team Rot.",
+    "moves": [
+     {
+      "who": "b7",
+      "to": [
+       41,
+       5.3
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n6",
+      "to": [
+       59,
+       32
+      ],
+      "type": "dribbling",
+      "delay": 0.2,
+      "ball": "b6"
+     }
+    ]
+   },
+   {
+    "label": "Rüber und blocken",
+    "say": "Sofort sprintet Rot sieben hinüber in die rechte Bahn. Neon sechs passt, aber Rot sieben steht im Weg und blockt den Ball. Dann sind die Nächsten dran, und Neon sechs verteidigt gegen Rot neun.",
+    "moves": [
+     {
+      "who": "r7",
+      "to": [
+       58,
+       20.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b6",
+      "to": [
+       59.1,
+       25
+      ],
+      "type": "pass",
+      "delay": 0.6
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 33,
+    "y1": 58.6,
+    "x2": 67,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 92,
+    "y1": 5,
+    "x2": 92,
+    "y2": 56,
+    "text": "27 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Nah ran und den Winkel zumachen.",
+   "title": "Nah ran",
+   "text": "Wer weit weg steht, blockt nichts. Der Verteidiger sprintet auf dem kürzesten Weg hinüber, geht nah an den Angreifer heran und schaut genau auf Körper und Fuß. So ahnt er, wohin der Pass geht, und macht den Winkel zu.",
+   "board": {
+    "players": [
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 44,
+      "y": 30,
+      "label": "7"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 24,
+      "y": 46,
+      "label": "9"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 15.5,
+      "y": 46,
+      "label": "8"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 59,
+      "y": 33,
+      "label": "6"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 76,
+      "y": 46,
+      "label": "10"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 84.5,
+      "y": 46,
+      "label": "4"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b6",
+      "x": 59.6,
+      "y": 33.6
+     },
+     {
+      "id": "s1",
+      "x": 51.6,
+      "y": 53.5
+     },
+     {
+      "id": "s2",
+      "x": 48,
+      "y": 53.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Kürzester Weg",
+      "say": "Rot sieben sprintet auf dem kürzesten Weg hinüber und geht nah an Neon sechs heran. Dabei schaut er genau auf Körper und Fuß von Neon sechs.",
+      "moves": [
+       {
+        "who": "r7",
+        "to": [
+         57.5,
+         25.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r7",
+        "to": [
+         59,
+         33
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Winkel zu: geblockt",
+      "say": "Neon sechs will ins Minitor passen, aber Rot sieben steht so nah, dass er den Ball blockt. Kein Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b6",
+        "to": [
+         59.3,
+         29.8
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Der Angreifer darf täuschen.",
+   "title": "Täuschen erlaubt",
+   "text": "Jetzt darf der Angreifer auch ins andere Minitor passen. Er täuscht den Pass ins eigene Tor an, und wenn der Verteidiger darauf hereinfällt, spielt er ins andere. Der Verteidiger darf sich also nicht zu früh festlegen.",
+   "board": {
+    "players": [
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 44,
+      "y": 30,
+      "label": "7"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 24,
+      "y": 46,
+      "label": "9"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 15.5,
+      "y": 46,
+      "label": "8"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 59,
+      "y": 33,
+      "label": "6"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 76,
+      "y": 46,
+      "label": "10"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 84.5,
+      "y": 46,
+      "label": "4"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b6",
+      "x": 59.6,
+      "y": 33.6
+     },
+     {
+      "id": "s1",
+      "x": 51.6,
+      "y": 53.5
+     },
+     {
+      "id": "s2",
+      "x": 48,
+      "y": 53.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Antäuschen",
+      "say": "Rot sieben sprintet hinüber, um den Pass ins rechte Tor zu blocken. Neon sechs täuscht genau diesen Pass an und legt sich den Ball nach innen.",
+      "moves": [
+       {
+        "who": "r7",
+        "to": [
+         58,
+         21
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n6",
+        "to": [
+         56,
+         31
+        ],
+        "type": "dribbling",
+        "delay": 0.3,
+        "ball": "b6"
+       }
+      ]
+     },
+     {
+      "label": "Anderes Tor: Punkt",
+      "say": "Rot sieben ist schon zu weit drüben. Neon sechs passt ins linke Minitor, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b6",
+        "to": [
+         41.5,
+         5.3
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

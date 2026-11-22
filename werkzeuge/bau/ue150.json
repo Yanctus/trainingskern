@@ -1,0 +1,606 @@
+{
+ "title": "Umschalt-Rondo durch drei Zonen",
+ "code": "UE-150",
+ "kind": "Spielform",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel",
+  "Umschalten"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 11,
+ "players_max": 11,
+ "field_size": "37 x 14 m",
+ "description": "Ein Rondo über drei Zonen mit zwei Teams zu viert und drei Springern. In der ersten Zone spielt ein Team mit zwei Springern gegen zwei Gegner und darf nach drei Pässen in die Mitte spielen. Dort wird mit einem Springer zwei gegen zwei gespielt, bis der Ball zum Zielspieler in der dritten Zone kommt. Das ist ein Punkt, dann geht es in die andere Richtung, und wer den Ball erobert, ist selbst am Ball.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 37 mal 14 Metern in drei Zonen: 14 Meter, 9 Meter, 14 Meter.",
+  "Verteilen: Team Neon und Team Rot je zu viert, zwei in der ersten Zone und zwei in der Mitte. Zwei Springer in der ersten Zone, einer als Zielspieler in der dritten. Der Trainer steht an der Seite mit Bällen.",
+  "Ablauf: In der ersten Zone drei Pässe, dann in die Mitte. Dort kommt ein Springer dazu, die Mitte kombiniert und spielt durch zum Zielspieler.",
+  "Wertung und Wechsel: Der Pass zum Zielspieler ist ein Punkt. Dann rücken alle eine Zone weiter, und es geht in die andere Richtung. Erobert das andere Team den Ball, ist es am Ball."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Zu zweit pressen und dem Gegner die Richtung vorgeben",
+  "Kurze, scharfe Pässe, um die Überzahl zu nutzen",
+  "Erkennen, wann der Ball nach vorn kann, und schnell kombinieren",
+  "Nach Ballverlust sofort pressen und laut miteinander reden"
+ ],
+ "materials": [
+  "8 Hütchen",
+  "Viele Bälle",
+  "Leibchen in drei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Umschalt-Rondo durch drei Zonen. Team Neon spielt den Ball von der ersten Zone über die Mitte bis zum Zielspieler.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 10,
+    "y": 12,
+    "w": 80,
+    "h": 36
+   },
+   {
+    "type": "line",
+    "x1": 40,
+    "y1": 12,
+    "x2": 40,
+    "y2": 48,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 60,
+    "y1": 12,
+    "x2": 60,
+    "y2": 48,
+    "dashed": true
+   }
+  ],
+  "cones": [],
+  "players": [
+   {
+    "id": "f1",
+    "team": "t",
+    "x": 12,
+    "y": 30,
+    "label": "F"
+   },
+   {
+    "id": "f2",
+    "team": "t",
+    "x": 38,
+    "y": 30,
+    "label": "F"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 25,
+    "y": 13.5,
+    "label": "6"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 25,
+    "y": 46.5,
+    "label": "8"
+   },
+   {
+    "id": "r4",
+    "team": "b",
+    "x": 20.5,
+    "y": 30,
+    "label": "4"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 29.5,
+    "y": 30,
+    "label": "5"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 47,
+    "y": 16,
+    "label": "10"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 47,
+    "y": 33,
+    "label": "3"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 56,
+    "y": 22,
+    "label": "2"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 56,
+    "y": 44,
+    "label": "7"
+   },
+   {
+    "id": "f3",
+    "team": "t",
+    "x": 80,
+    "y": 30,
+    "label": "F"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 5,
+    "y": 8,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 12.6,
+    "y": 30.6
+   },
+   {
+    "id": "s1",
+    "x": 6.6,
+    "y": 4.5
+   },
+   {
+    "id": "s2",
+    "x": 3,
+    "y": 4.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Drei Pässe",
+    "say": "In der ersten Zone spielt Team Neon mit den zwei Springern gegen Rot vier und Rot fünf. Erst nach drei Pässen in Folge darf der Ball in die Mitte.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       25.6,
+       14.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       38.6,
+       30.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       25.6,
+       47.1
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "In die Mitte",
+    "say": "Jetzt spielt Neon acht in die Mitte zu Neon sieben. Rot zwei presst sofort, und Neon zehn läuft in die Lücke.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       56.6,
+       44.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r2",
+      "to": [
+       50,
+       40
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n10",
+      "to": [
+       55,
+       25
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Zum Zielspieler: Punkt",
+    "say": "Neon sieben spielt zu Neon zehn, und der spielt durch zum Springer in der dritten Zone. Das gibt einen Punkt für Team Neon. Dann rücken alle eine Zone weiter, und es geht in die andere Richtung.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       55.6,
+       25.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       80.6,
+       30.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 10,
+    "y1": 58.6,
+    "x2": 90,
+    "y2": 58.6,
+    "text": "37 m"
+   },
+   {
+    "x1": 96,
+    "y1": 12,
+    "x2": 96,
+    "y2": 48,
+    "text": "14 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Zu zweit pressen.",
+   "title": "Zu zweit pressen",
+   "text": "Die beiden Verteidiger arbeiten als Paar. Der erste läuft den Ballführenden so an, dass eine Seite zu ist. Damit weiß der zweite, wohin der Pass gehen muss, und kann ihn abfangen.",
+   "board": {
+    "players": [
+     {
+      "id": "f1",
+      "team": "t",
+      "x": 12,
+      "y": 30,
+      "label": "F"
+     },
+     {
+      "id": "f2",
+      "team": "t",
+      "x": 38,
+      "y": 30,
+      "label": "F"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 25,
+      "y": 13.5,
+      "label": "6"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 25,
+      "y": 46.5,
+      "label": "8"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 20.5,
+      "y": 30,
+      "label": "4"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 29.5,
+      "y": 30,
+      "label": "5"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 47,
+      "y": 16,
+      "label": "10"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 47,
+      "y": 33,
+      "label": "3"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 56,
+      "y": 22,
+      "label": "2"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 56,
+      "y": 44,
+      "label": "7"
+     },
+     {
+      "id": "f3",
+      "team": "t",
+      "x": 80,
+      "y": 30,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 5,
+      "y": 8,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 25.6,
+      "y": 14.1
+     },
+     {
+      "id": "s1",
+      "x": 6.6,
+      "y": 4.5
+     },
+     {
+      "id": "s2",
+      "x": 3,
+      "y": 4.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Richtung vorgeben",
+      "say": "Neon sechs hat den Ball. Rot vier läuft ihn so an, dass der Pass nach links zu ist. Jetzt weiß Rot fünf, wohin der Ball gehen muss.",
+      "moves": [
+       {
+        "who": "r4",
+        "to": [
+         22.5,
+         21
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Abfangen: Ballbesitz",
+      "say": "Neon sechs spielt nach rechts, aber Rot fünf steht schon im Passweg und fängt den Ball ab. Jetzt ist Team Rot am Ball und spielt mit den Springern weiter.",
+      "moves": [
+       {
+        "who": "r5",
+        "to": [
+         33,
+         24
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         33.6,
+         24.6
+        ],
+        "type": "pass",
+        "delay": 0.2
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Die Lücke sehen und hineinlaufen.",
+   "title": "In die Lücke",
+   "text": "Presst ein Gegner nach vorn, entsteht hinter ihm eine Lücke. Wer sich umschaut, sieht sie und läuft genau im richtigen Moment hinein. So bekommt er den Ball hinter dem Pressing.",
+   "board": {
+    "players": [
+     {
+      "id": "f1",
+      "team": "t",
+      "x": 12,
+      "y": 30,
+      "label": "F"
+     },
+     {
+      "id": "f2",
+      "team": "t",
+      "x": 38,
+      "y": 30,
+      "label": "F"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 25,
+      "y": 13.5,
+      "label": "6"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 25,
+      "y": 46.5,
+      "label": "8"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 20.5,
+      "y": 30,
+      "label": "4"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 29.5,
+      "y": 30,
+      "label": "5"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 47,
+      "y": 16,
+      "label": "10"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 47,
+      "y": 33,
+      "label": "3"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 56,
+      "y": 22,
+      "label": "2"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 56,
+      "y": 44,
+      "label": "7"
+     },
+     {
+      "id": "f3",
+      "team": "t",
+      "x": 80,
+      "y": 30,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 5,
+      "y": 8,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 56.6,
+      "y": 44.6
+     },
+     {
+      "id": "s1",
+      "x": 6.6,
+      "y": 4.5
+     },
+     {
+      "id": "s2",
+      "x": 3,
+      "y": 4.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Lücke sehen",
+      "say": "Rot zwei presst Neon sieben. Neon zehn schaut sich um und sieht: Hinter Rot zwei ist jetzt eine Lücke.",
+      "moves": [
+       {
+        "who": "r2",
+        "to": [
+         53,
+         38
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n10",
+        "to": [
+         60,
+         27
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Hinein: Punkt",
+      "say": "Neon zehn startet in die Lücke, Neon sieben spielt ihn an, und er spielt durch zum Springer in der dritten Zone. Das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         60,
+         26
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         60.6,
+         26.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         80.6,
+         30.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
