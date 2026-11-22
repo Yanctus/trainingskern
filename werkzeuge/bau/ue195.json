@@ -1,0 +1,597 @@
+{
+ "title": "Stürmer im Eins gegen Eins",
+ "code": "UE-195",
+ "kind": "Übungsform",
+ "focuses": [
+  "Torschuss",
+  "1 gegen 1",
+  "Ballannahme"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 6,
+ "players_max": 10,
+ "field_size": "36 x 32 m",
+ "description": "Der Stürmer löst sich von einer Stange und bekommt den Ball nach zwei Pässen aus dem Mittelfeld. Mit dem ersten Kontakt dreht er sich nach vorn und geht ins Eins gegen Eins gegen einen Verteidiger, der nur mitläuft. Dann schließt er gegen den Torwart ab. Nach jedem Abschluss wird gewechselt, und der nächste Stürmer ist dran.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 36 mal 32 Metern mit einem Jugendtor oben und einem Strafraum. Drei Stangen stehen in einer Reihe in der Mitte, drei Hütchen an der unteren Linie.",
+  "Verteilen: Ein Torwart steht im Tor, Rot vier ist der Verteidiger und läuft nur mit. Neon neun ist der Stürmer an der mittleren Stange. Neon sieben, Neon zehn und Neon elf stehen unten an den Hütchen, der Trainer links mit Bällen.",
+  "Ablauf: Der Trainer spielt zu Neon sieben, der legt nach innen zu Neon zehn ab. Neon zehn spielt nach vorn zu Neon neun. Neon neun dreht sich mit dem ersten Kontakt auf und geht ins Eins gegen Eins.",
+  "Wertung und Wechsel: Jeder Treffer gibt einen Punkt für den Stürmer. Danach geht der Stürmer auf ein Hütchen, und ein Mittelfeldspieler wird der neue Stürmer. Mal von links, mal von rechts beginnen."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Mit einer schnellen Doppelbewegung von der Stange lösen",
+  "Der erste Kontakt geht nach vorn in den freien Raum",
+  "Mutig ins Eins gegen Eins gehen",
+  "Vor dem Schuss zum Torwart schauen und ruhig abschließen"
+ ],
+ "materials": [
+  "1 Jugendtor",
+  "3 Stangen",
+  "3 Hütchen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Stürmer im Eins gegen Eins. Neon neun löst sich von der Stange, dreht auf und schließt gegen den Torwart ab.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 22.5,
+    "y": 5,
+    "w": 55,
+    "h": 46
+   },
+   {
+    "type": "rect",
+    "x": 34.5,
+    "y": 5,
+    "w": 31,
+    "h": 9
+   },
+   {
+    "type": "line",
+    "x1": 22.5,
+    "y1": 35,
+    "x2": 77.5,
+    "y2": 35,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "jugend"
+   }
+  ],
+  "cones": [
+   {
+    "x": 39.3,
+    "y": 37,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 50.3,
+    "y": 34,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 62.5,
+    "y": 37,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 34,
+    "y": 51.5,
+    "color": "neon"
+   },
+   {
+    "x": 47,
+    "y": 51.5,
+    "color": "neon"
+   },
+   {
+    "x": 60,
+    "y": 51.5,
+    "color": "neon"
+   }
+  ],
+  "players": [
+   {
+    "id": "k",
+    "team": "t",
+    "x": 50,
+    "y": 8.5,
+    "label": "TW"
+   },
+   {
+    "id": "r4",
+    "team": "b",
+    "x": 41,
+    "y": 22,
+    "label": "4"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 45.5,
+    "y": 39,
+    "label": "9"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 37,
+    "y": 55,
+    "label": "7"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 50,
+    "y": 55,
+    "label": "10"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 63,
+    "y": 55,
+    "label": "11"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 25,
+    "y": 55,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 25.6,
+    "y": 55.6
+   },
+   {
+    "id": "s1",
+    "x": 21.4,
+    "y": 55
+   },
+   {
+    "id": "s2",
+    "x": 18,
+    "y": 55
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pass nach außen",
+    "say": "Der Trainer spielt den Ball zu Neon sieben.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       37.6,
+       55.6
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Nach innen ablegen",
+    "say": "Neon sieben legt den Ball nach innen zu Neon zehn. Gleichzeitig läuft Neon neun erst zum Tor und kommt dann schnell zurück.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       55.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n9",
+      "to": [
+       44,
+       33.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n9",
+      "to": [
+       46,
+       40
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Aufdrehen",
+    "say": "Neon zehn spielt nach vorn zu Neon neun. Neon neun nimmt den Ball mit dem ersten Kontakt nach vorn mit.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       46.6,
+       40.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n9",
+      "to": [
+       58,
+       32
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Eins gegen eins: Punkt",
+    "say": "Rot vier kommt entgegen, aber Neon neun geht an ihm vorbei. Er schaut, wo der Torwart steht, und schießt ins lange Eck. Das gibt einen Punkt für Neon neun. Danach geht Neon neun auf ein Hütchen, und Neon zehn ist der neue Stürmer.",
+    "moves": [
+     {
+      "who": "r4",
+      "to": [
+       53,
+       27
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n9",
+      "to": [
+       60,
+       22
+      ],
+      "type": "dribbling",
+      "delay": 0.3,
+      "ball": "b1"
+     },
+     {
+      "who": "k",
+      "to": [
+       53,
+       9
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n9",
+      "to": [
+       50,
+       8.5
+      ],
+      "type": "blick",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       46.5,
+       5.4
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 22.5,
+    "y1": 58.6,
+    "x2": 77.5,
+    "y2": 58.6,
+    "text": "36 m"
+   },
+   {
+    "x1": 83,
+    "y1": 5,
+    "x2": 83,
+    "y2": 51,
+    "text": "32 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Mit einer schnellen Doppelbewegung lösen.",
+   "title": "Doppelbewegung",
+   "text": "Der Stürmer täuscht zuerst einen Lauf zum Tor an. Dann stoppt er und kommt blitzschnell zurück, seitlich an der Stange vorbei. Er steht halb offen und kann den Ball gleich nach vorn mitnehmen.",
+   "board": {
+    "players": [
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50,
+      "y": 8.5,
+      "label": "TW"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 41,
+      "y": 22,
+      "label": "4"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 45.5,
+      "y": 39,
+      "label": "9"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 37,
+      "y": 55,
+      "label": "7"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 50,
+      "y": 55,
+      "label": "10"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 63,
+      "y": 55,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 25,
+      "y": 55,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 55.6
+     },
+     {
+      "id": "s1",
+      "x": 21.4,
+      "y": 55
+     },
+     {
+      "id": "s2",
+      "x": 18,
+      "y": 55
+     }
+    ],
+    "steps": [
+     {
+      "label": "Erst weg",
+      "say": "Neon zehn hat den Ball. Neon neun läuft erst schnell Richtung Tor, als wollte er hinter die Stange.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         44,
+         32.5
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Dann zurück",
+      "say": "Dann stoppt er und kommt blitzschnell zurück. Jetzt ist er frei, und Neon zehn spielt ihn an.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         45.5,
+         40
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         46.1,
+         40.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Halb offen",
+      "say": "Neon neun steht halb offen. So nimmt er den Ball mit dem ersten Kontakt gleich nach vorn mit.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         58,
+         32
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Der Mittelfeldspieler läuft hinterher und bekommt den Ball zurück.",
+   "title": "Doppelpass an der Stange",
+   "text": "Jetzt spielt Neon zehn nach vorn zu Neon neun und läuft sofort weiter an der Stange vorbei. Neon neun hält den Ball und spielt ihn zurück in den Lauf. Neon zehn schließt ab.",
+   "board": {
+    "players": [
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50,
+      "y": 8.5,
+      "label": "TW"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 41,
+      "y": 22,
+      "label": "4"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 45.5,
+      "y": 39,
+      "label": "9"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 37,
+      "y": 55,
+      "label": "7"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 50,
+      "y": 55,
+      "label": "10"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 63,
+      "y": 55,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 25,
+      "y": 55,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 55.6
+     },
+     {
+      "id": "s1",
+      "x": 21.4,
+      "y": 55
+     },
+     {
+      "id": "s2",
+      "x": 18,
+      "y": 55
+     }
+    ],
+    "steps": [
+     {
+      "label": "In die Spitze",
+      "say": "Neon zehn spielt nach vorn zu Neon neun.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         46.1,
+         39.6
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Hinterherlaufen",
+      "say": "Neon zehn läuft sofort weiter nach vorn, an der Stange vorbei. Neon neun hält so lange den Ball.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         56,
+         44
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n10",
+        "to": [
+         56.5,
+         31
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Doppelpass: Punkt",
+      "say": "Neon neun spielt den Ball in den Lauf von Neon zehn. Der schießt direkt ins kurze Eck, und das gibt einen Punkt für Neon zehn.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         57.1,
+         31.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         53,
+         5.4
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

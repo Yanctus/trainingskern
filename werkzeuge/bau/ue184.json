@@ -1,0 +1,803 @@
+{
+ "title": "Kompakt zu dritt verteidigen",
+ "code": "UE-184",
+ "kind": "Spielform",
+ "focuses": [
+  "Verteidigen",
+  "Umschalten"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 9,
+ "players_max": 9,
+ "field_size": "27 x 27 m",
+ "description": "Drei Verteidiger mit Torwart verteidigen gegen drei Angreifer. Dahinter spielen zwei Sechser in einer schmalen Mittelfeldzone, und der Sechser von Team Neon bringt den Ball schnell nach vorn. Die Verteidiger stehen eng zusammen, drängen den Ball nach außen und gehen eng an die Stürmer. Erobern sie den Ball, kontern sie auf zwei Minitore.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 27 mal 27 Metern, oben ein Jugendtor. Unten zwei Streifen von je gut 4 Metern: die Mittelfeldzone und ganz unten zwei Minitore in den Ecken.",
+  "Verteilen: Team Rot mit Torwart und drei Verteidigern vor dem Tor, dazu ein Sechser in der Mittelfeldzone. Team Neon mit drei Angreifern und einem Sechser in der Mittelfeldzone. Der Trainer steht an der Seite mit Bällen.",
+  "Ablauf: Der Trainer spielt den Sechser von Team Neon an. Der kombiniert mit den drei Angreifern, die aufs Tor spielen. Der Sechser von Team Rot stört ihn, die drei Verteidiger schieben zusammen und drängen nach außen.",
+  "Wertung und Wechsel: Ein Treffer gibt einen Punkt für Team Neon. Erobert Team Rot den Ball und spielt ihn in ein Minitor, gibt das einen Punkt für Team Rot. Nach ein paar Minuten tauschen die Teams die Rollen."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Kurze Abstände zwischen den Verteidigern, zusammen zur Ballseite schieben",
+  "Schnell eng an den Stürmer, damit er sich nicht drehen kann",
+  "Bei Läufern in die Tiefe bleiben und mitlaufen",
+  "Mutig zusammen herausrücken, wenn der Ball zurückgespielt wird"
+ ],
+ "materials": [
+  "1 Jugendtor",
+  "2 Minitore",
+  "4 Hütchen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Kompakt zu dritt verteidigen. Drei Verteidiger stehen eng zusammen und drängen die Angreifer weg vom Tor nach außen.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   },
+   {
+    "type": "line",
+    "x1": 25,
+    "y1": 38.3,
+    "x2": 75,
+    "y2": 38.3,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 25,
+    "y1": 46.7,
+    "x2": 75,
+    "y2": 46.7,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "jugend"
+   },
+   {
+    "x": 31,
+    "y": 55,
+    "side": "bottom"
+   },
+   {
+    "x": 69,
+    "y": 55,
+    "side": "bottom"
+   }
+  ],
+  "cones": [
+   {
+    "x": 25,
+    "y": 38.3,
+    "color": "orange"
+   },
+   {
+    "x": 75,
+    "y": 38.3,
+    "color": "orange"
+   },
+   {
+    "x": 25,
+    "y": 46.7,
+    "color": "orange"
+   },
+   {
+    "x": 75,
+    "y": 46.7,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "r1",
+    "team": "b",
+    "x": 50,
+    "y": 8,
+    "label": "TW"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 36.5,
+    "y": 22.5,
+    "label": "3"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 45,
+    "y": 24,
+    "label": "5"
+   },
+   {
+    "id": "r4",
+    "team": "b",
+    "x": 62.5,
+    "y": 22.5,
+    "label": "4"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 28,
+    "y": 30,
+    "label": "7"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 54,
+    "y": 29.5,
+    "label": "9"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 71.5,
+    "y": 30,
+    "label": "11"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 45.5,
+    "y": 41,
+    "label": "6"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 55,
+    "y": 45.5,
+    "label": "8"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 81,
+    "y": 42.5,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 81.6,
+    "y": 43.1
+   },
+   {
+    "id": "s1",
+    "x": 82.6,
+    "y": 46
+   },
+   {
+    "id": "s2",
+    "x": 79,
+    "y": 46
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pass ins Mittelfeld",
+    "say": "Der Trainer spielt Neon acht in der Mittelfeldzone an. Rot sechs geht sofort drauf und stellt den Pass in die Mitte zu.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       55.6,
+       46.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r6",
+      "to": [
+       55,
+       40
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "Zur Ballseite schieben",
+    "say": "Neon acht spielt nach außen zu Neon sieben. Rot drei läuft ihn an. Rot fünf und Rot vier schieben gleichzeitig mit zur Ballseite und bleiben eng zusammen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       28.6,
+       30.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r3",
+      "to": [
+       31,
+       25
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "r5",
+      "to": [
+       40,
+       24
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "r4",
+      "to": [
+       52,
+       23
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Nach außen drängen",
+    "say": "Rot drei steht innen und drängt Neon sieben nach außen, weg vom Tor. Rot fünf bleibt eng an Neon neun.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       27.5,
+       17
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "r3",
+      "to": [
+       31.5,
+       16.5
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n9",
+      "to": [
+       50,
+       25
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r5",
+      "to": [
+       44,
+       20
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Ins Minitor: Punkt",
+    "say": "Rot drei erobert den Ball, dribbelt los und spielt ins Minitor. Das gibt einen Punkt für Team Rot. Ein Treffer gibt einen Punkt für Team Neon. Danach spielt der Trainer den nächsten Ball zu Neon acht.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       32.1,
+       17.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r3",
+      "to": [
+       36,
+       32
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       31,
+       54.5
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "27 m"
+   },
+   {
+    "x1": 94,
+    "y1": 5,
+    "x2": 94,
+    "y2": 55,
+    "text": "27 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Der Sechser darf mit nach vorn.",
+   "title": "Vier gegen drei",
+   "text": "Spielt der Sechser von Team Neon den Ball direkt nach vorn, darf er mit angreifen. Jetzt sind es vier gegen drei. Die Verteidiger müssen erkennen, wann sie eng rangehen, wann sie einen Läufer begleiten und wann sie einrücken.",
+   "board": {
+    "players": [
+     {
+      "id": "r1",
+      "team": "b",
+      "x": 50,
+      "y": 8,
+      "label": "TW"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 36.5,
+      "y": 22.5,
+      "label": "3"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 45,
+      "y": 24,
+      "label": "5"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 62.5,
+      "y": 22.5,
+      "label": "4"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 28,
+      "y": 30,
+      "label": "7"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 54,
+      "y": 29.5,
+      "label": "9"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 71.5,
+      "y": 30,
+      "label": "11"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 45.5,
+      "y": 41,
+      "label": "6"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 55,
+      "y": 45.5,
+      "label": "8"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 81,
+      "y": 42.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 81.6,
+      "y": 43.1
+     },
+     {
+      "id": "s1",
+      "x": 82.6,
+      "y": 46
+     },
+     {
+      "id": "s2",
+      "x": 79,
+      "y": 46
+     }
+    ],
+    "steps": [
+     {
+      "label": "Direkt nach vorn",
+      "say": "Der Trainer spielt zu Neon acht. Der spielt direkt zu Neon neun und sprintet sofort mit nach vorn. Jetzt sind es vier gegen drei.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         55.6,
+         46.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         54.6,
+         30.1
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n8",
+        "to": [
+         66,
+         35
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Eng ran und mitgehen",
+      "say": "Rot fünf geht eng an Neon neun, damit er sich nicht drehen kann. Rot vier sieht Neon acht kommen und bleibt bei ihm. Rot drei rückt ein.",
+      "moves": [
+       {
+        "who": "r5",
+        "to": [
+         51,
+         26
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r4",
+        "to": [
+         64,
+         38
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "r4",
+        "to": [
+         63,
+         29.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r3",
+        "to": [
+         42,
+         22
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Abgefangen: Punkt",
+      "say": "Neon neun legt ab zu Neon acht, aber Rot vier fängt den Pass ab. Er dribbelt los und spielt ins Minitor. Das gibt einen Punkt für Team Rot.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         63.6,
+         30.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r4",
+        "to": [
+         57,
+         36
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         69,
+         54.5
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Mutig herausrücken.",
+   "title": "Mutig herausrücken",
+   "text": "Vor der Abseitslinie liegt eine Rückpasszone. Unter Druck dürfen die Angreifer den Ball dorthin zurückspielen. Dann rücken alle drei Verteidiger gemeinsam und mutig heraus, und wer stehen bleibt, ist im Abseits.",
+   "board": {
+    "players": [
+     {
+      "id": "r1",
+      "team": "b",
+      "x": 50,
+      "y": 7,
+      "label": "TW"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 35,
+      "y": 23,
+      "label": "3"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 43.5,
+      "y": 23,
+      "label": "5"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 60.5,
+      "y": 23,
+      "label": "4"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 26.5,
+      "y": 28,
+      "label": "7"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 52,
+      "y": 28,
+      "label": "9"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 69,
+      "y": 28,
+      "label": "11"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 60.5,
+      "y": 41,
+      "label": "6"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 48,
+      "y": 44,
+      "label": "8"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 81,
+      "y": 42.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 27.1,
+      "y": 28.6
+     },
+     {
+      "id": "s1",
+      "x": 82.6,
+      "y": 46
+     },
+     {
+      "id": "s2",
+      "x": 79,
+      "y": 46
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zurück in die Zone",
+      "say": "Neon sieben hat den Ball, und Rot drei presst. Neon acht kommt in die Rückpasszone, und Neon sieben spielt zu ihm zurück.",
+      "moves": [
+       {
+        "who": "r3",
+        "to": [
+         30,
+         25.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n8",
+        "to": [
+         42,
+         34
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "b1",
+        "to": [
+         42.6,
+         34.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Gemeinsam heraus",
+      "say": "Sobald der Ball zurückgeht, rücken alle drei Verteidiger gleichzeitig heraus. Neon neun und Neon elf bleiben stehen und sind jetzt im Abseits.",
+      "moves": [
+       {
+        "who": "r3",
+        "to": [
+         33,
+         31
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r5",
+        "to": [
+         45,
+         29.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r4",
+        "to": [
+         61,
+         31
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Ins Minitor: Punkt",
+      "say": "Neon acht findet keinen freien Mitspieler. Rot sechs presst von hinten und erobert den Ball. Er spielt schnell ins Minitor, und das gibt einen Punkt für Team Rot.",
+      "moves": [
+       {
+        "who": "r6",
+        "to": [
+         45.5,
+         36.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r6",
+        "to": [
+         38,
+         46
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         31,
+         54.5
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "lines": [
+     {
+      "type": "rect",
+      "x": 25,
+      "y": 5,
+      "w": 50,
+      "h": 50
+     },
+     {
+      "type": "line",
+      "x1": 25,
+      "y1": 38.3,
+      "x2": 75,
+      "y2": 38.3,
+      "dashed": true
+     },
+     {
+      "type": "line",
+      "x1": 25,
+      "y1": 46.7,
+      "x2": 75,
+      "y2": 46.7,
+      "dashed": true
+     },
+     {
+      "type": "line",
+      "x1": 25,
+      "y1": 25.5,
+      "x2": 75,
+      "y2": 25.5,
+      "dashed": true
+     },
+     {
+      "type": "zone",
+      "x": 25,
+      "y": 30,
+      "w": 50,
+      "h": 8.3
+     }
+    ]
+   }
+  }
+ ]
+}

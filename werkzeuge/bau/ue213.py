@@ -33,7 +33,7 @@ LINES = [rect(18, 5, 64, 43)]
 CONES = [C(x, y) for x in (26, 44, 56, 74) for y in (15.5, 38.5)]
 
 u = {"title": "Vom Gegenspieler lösen", "code": "UE-213", "kind": "Übungsform",
- "focuses": ["Freilaufen", "Passen", "Ballannahme"], "age_groups": ["E-Jugend", "D-Jugend", "C-Jugend", "B-Jugend"],
+ "focuses": ["Bewegung", "Passspiel", "Ballannahme"], "age_groups": ["E-Jugend", "D-Jugend", "C-Jugend", "B-Jugend"],
  "altersbereiche": ["U12-U14"], "duration_minutes": 15, "players_min": 10, "players_max": 10, "field_size": "18 x 14 m",
  "description": "In zwei Quadraten spielen je drei Anspieler außen mit Ball. In der Mitte will sich ein Spieler von seinem Gegenspieler lösen und mit jedem Anspieler einen Doppelpass spielen. Kurze, schnelle Bewegungen und Finten bringen ihn frei. Erobert der Gegenspieler den Ball, tauschen die beiden die Rollen.",
  "organisation": ["Aufbauen: Ein Feld von 18 mal 14 Metern. Darin zwei Quadrate aus Hütchen nebeneinander.",

@@ -1,0 +1,752 @@
+{
+ "title": "Die Hütchentore verteidigen",
+ "code": "UE-198",
+ "kind": "Spielform",
+ "focuses": [
+  "Verteidigen",
+  "Umschalten",
+  "Zusammenspiel"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 10,
+ "players_max": 12,
+ "field_size": "18 x 37 m",
+ "description": "Team Rot spielt mit einem Springer in der ersten Zone fünf gegen drei und braucht fünf Pässe. Dann dribbelt ein Spieler mit einem Mitspieler in die Mittelzone. Dort verteidigt ein einzelner Spieler von Team Neon gegen zwei und verhindert, dass sie durch eines der drei Hütchentore kommen. Erobert er den Ball, spielt er ihn zurück in die erste Zone.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 37 Metern in drei Zonen: unten die erste Zone, in der Mitte eine Mittelzone von 9 Metern, oben die letzte Zone mit einem Jugendtor. Am Ende der Mittelzone bilden Hütchen drei kleine Tore.",
+  "Verteilen: In der ersten Zone vier von Team Rot, ein Springer und drei von Team Neon. Ein Verteidiger von Team Neon wartet in der Mittelzone, der Torwart von Team Neon steht im Tor. Der Trainer steht rechts mit Bällen.",
+  "Ablauf: Team Rot spielt mit dem Springer fünf gegen drei. Nach fünf Pässen dribbelt ein Spieler in die Mittelzone, ein Mitspieler läuft mit. Wer durch ein Hütchentor kommt, schießt allein auf den Torwart.",
+  "Wertung und Wechsel: Ein Treffer gibt einen Punkt für Team Rot. Erobert Neon den Ball und spielt ihn zurück in die erste Zone, gibt das einen Punkt für Team Neon. Nach einigen Minuten tauschen die Teams die Aufgaben."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Schnell anlaufen und den Abstand verkürzen",
+  "Seitlich stehen und den Angreifer weg von den Toren lenken",
+  "Den Pass zum Mitspieler mit dem Körper zustellen",
+  "Zurücksprinten und schauen, wen der Mitspieler schon deckt"
+ ],
+ "materials": [
+  "1 Jugendtor",
+  "6 Hütchen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben",
+  "1 Leibchen für den Springer"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Die Hütchentore verteidigen. Ein Verteidiger allein gegen zwei Angreifer, die durch eines von drei Hütchentoren wollen.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   },
+   {
+    "type": "line",
+    "x1": 25,
+    "y1": 23.8,
+    "x2": 75,
+    "y2": 23.8,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 25,
+    "y1": 36.2,
+    "x2": 75,
+    "y2": 36.2,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "jugend"
+   }
+  ],
+  "cones": [
+   {
+    "x": 27,
+    "y": 23.8,
+    "color": "orange"
+   },
+   {
+    "x": 36,
+    "y": 23.8,
+    "color": "orange"
+   },
+   {
+    "x": 46,
+    "y": 23.8,
+    "color": "neon"
+   },
+   {
+    "x": 54,
+    "y": 23.8,
+    "color": "neon"
+   },
+   {
+    "x": 64,
+    "y": 23.8,
+    "color": "orange"
+   },
+   {
+    "x": 73,
+    "y": 23.8,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n1",
+    "team": "a",
+    "x": 50,
+    "y": 8,
+    "label": "TW"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 50,
+    "y": 26,
+    "label": "3"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 28,
+    "y": 39,
+    "label": "5"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 37,
+    "y": 39,
+    "label": "7"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 61,
+    "y": 39,
+    "label": "8"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 70,
+    "y": 39,
+    "label": "4"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 30,
+    "y": 54.5,
+    "label": "9"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 45,
+    "y": 54.5,
+    "label": "6"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 71,
+    "y": 54.5,
+    "label": "10"
+   },
+   {
+    "id": "f1",
+    "team": "t",
+    "x": 58,
+    "y": 54.5,
+    "label": "F"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 86,
+    "y": 47,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 71.6,
+    "y": 55.1
+   },
+   {
+    "id": "s1",
+    "x": 89.6,
+    "y": 50.5
+   },
+   {
+    "id": "s2",
+    "x": 86,
+    "y": 50.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Fünf Pässe",
+    "say": "Team Rot spielt mit dem Springer fünf gegen drei und zählt die Pässe. Rot zehn passt zum Springer, und der Springer spielt zu Rot acht. Neon vier läuft an.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       58.6,
+       55.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n4",
+      "to": [
+       66,
+       46
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       61.6,
+       39.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Ab in die Mittelzone",
+    "say": "Rot acht passt zu Rot sieben. Das ist der fünfte Pass. Rot sieben dribbelt in die Mittelzone, und Rot acht läuft mit.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       37.6,
+       39.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r7",
+      "to": [
+       38,
+       31
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "r8",
+      "to": [
+       60,
+       31
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zwei gegen eins",
+    "say": "Neon drei läuft Rot sieben schnell an. Er stellt sich so, dass der Pass zu Rot acht zu ist, und lenkt Rot sieben nach außen.",
+    "moves": [
+     {
+      "who": "n3",
+      "to": [
+       42,
+       26
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r7",
+      "to": [
+       33,
+       29
+      ],
+      "type": "dribbling",
+      "delay": 0.3,
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Ballgewinn: Punkt",
+    "say": "Neon drei geht dazwischen, erobert den Ball und passt zu Neon fünf in die erste Zone. Das gibt einen Punkt für Team Neon. Kommt Rot durch ein Hütchentor und trifft, gibt das einen Punkt für Team Rot. Danach beginnt Team Rot wieder in der ersten Zone.",
+    "moves": [
+     {
+      "who": "n3",
+      "to": [
+       34.5,
+       26.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       28.6,
+       39.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 79,
+    "y1": 5,
+    "x2": 79,
+    "y2": 55,
+    "text": "37 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Ein zweiter Verteidiger sprintet zurück.",
+   "title": "Zu zweit zurück",
+   "text": "Sobald Team Rot in die Mittelzone dribbelt, sprintet ein zweiter Verteidiger hinterher. Jetzt heißt es zwei gegen zwei. Der zweite Verteidiger schaut, wen sein Mitspieler schon deckt, und übernimmt den anderen Angreifer.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 50,
+      "y": 8,
+      "label": "TW"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 50,
+      "y": 26,
+      "label": "3"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 28,
+      "y": 39,
+      "label": "5"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 37,
+      "y": 39,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 61,
+      "y": 39,
+      "label": "8"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 70,
+      "y": 39,
+      "label": "4"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 30,
+      "y": 54.5,
+      "label": "9"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 45,
+      "y": 54.5,
+      "label": "6"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 71,
+      "y": 54.5,
+      "label": "10"
+     },
+     {
+      "id": "f1",
+      "team": "t",
+      "x": 58,
+      "y": 54.5,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 86,
+      "y": 47,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 37.6,
+      "y": 39.6
+     },
+     {
+      "id": "s1",
+      "x": 89.6,
+      "y": 50.5
+     },
+     {
+      "id": "s2",
+      "x": 86,
+      "y": 50.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Hinterher sprinten",
+      "say": "Team Rot hat fünf Pässe geschafft. Rot sieben dribbelt in die Mittelzone, und Rot acht läuft mit. Gleichzeitig sprintet Neon vier hinterher.",
+      "moves": [
+       {
+        "who": "r7",
+        "to": [
+         38,
+         31
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "r8",
+        "to": [
+         61,
+         30
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n4",
+        "to": [
+         67,
+         33
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Wer ist frei?",
+      "say": "Neon drei läuft Rot sieben an. Neon vier schaut, wen Neon drei schon deckt, und stellt sich zwischen Rot sieben und Rot acht.",
+      "moves": [
+       {
+        "who": "n3",
+        "to": [
+         41,
+         25.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n4",
+        "to": [
+         44,
+         27
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "n4",
+        "to": [
+         63,
+         25.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n4",
+        "to": [
+         55,
+         28.5
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Abgefangen: Punkt",
+      "say": "Rot sieben passt zu Rot acht, aber Neon vier fängt den Ball ab. Er spielt zurück zu Neon sechs in die erste Zone, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         55.6,
+         29.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         45.6,
+         55.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Der Verteidiger darf in die letzte Zone zurück.",
+   "title": "Zurück vor das Tor",
+   "text": "Jetzt darf der Verteidiger aus der Mittelzone auch in die letzte Zone zurücklaufen. Kommt ein Angreifer durch ein Hütchentor, sprintet er zurück. Er drängt den Angreifer vom Tor weg und blockt den Schuss.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 50,
+      "y": 8,
+      "label": "TW"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 50,
+      "y": 26,
+      "label": "3"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 28,
+      "y": 39,
+      "label": "5"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 37,
+      "y": 39,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 61,
+      "y": 39,
+      "label": "8"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 70,
+      "y": 39,
+      "label": "4"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 30,
+      "y": 54.5,
+      "label": "9"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 45,
+      "y": 54.5,
+      "label": "6"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 71,
+      "y": 54.5,
+      "label": "10"
+     },
+     {
+      "id": "f1",
+      "team": "t",
+      "x": 58,
+      "y": 54.5,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 86,
+      "y": 47,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 37.6,
+      "y": 39.6
+     },
+     {
+      "id": "s1",
+      "x": 89.6,
+      "y": 50.5
+     },
+     {
+      "id": "s2",
+      "x": 86,
+      "y": 50.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Durchs Hütchentor",
+      "say": "Rot sieben dribbelt in die Mittelzone und passt quer zu Rot acht. Rot acht dribbelt durch das rechte Hütchentor.",
+      "moves": [
+       {
+        "who": "r7",
+        "to": [
+         38,
+         31
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "r8",
+        "to": [
+         64,
+         31
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         64.6,
+         31.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "r8",
+        "to": [
+         68.5,
+         17
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Zurück vor das Tor",
+      "say": "Neon drei sprintet durch das mittlere Hütchentor zurück in die letzte Zone. Er drängt Rot acht vom Tor weg nach außen.",
+      "moves": [
+       {
+        "who": "n3",
+        "to": [
+         51,
+         18
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n3",
+        "to": [
+         61,
+         13
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r8",
+        "to": [
+         70,
+         12
+        ],
+        "type": "dribbling",
+        "delay": 0.5,
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Schuss geblockt: Punkt",
+      "say": "Rot acht schießt aus spitzem Winkel. Neon drei blockt den Schuss, erobert den Ball und spielt zu Neon sechs in die erste Zone. Das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         61.6,
+         13.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         45.6,
+         55.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

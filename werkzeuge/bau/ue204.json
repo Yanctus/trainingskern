@@ -1,0 +1,721 @@
+{
+ "title": "Die Kette erobert den Ball",
+ "code": "UE-204",
+ "kind": "Spielform",
+ "focuses": [
+  "Verteidigen",
+  "Umschalten",
+  "Zusammenspiel"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 12,
+ "players_max": 12,
+ "field_size": "18 x 23 m",
+ "description": "Sechs gegen sechs mit zwei Minitoren an jedem Ende. Team Rot hat immer zuerst den Ball und will durch die Viererkette von Team Neon nach oben spielen. Die Kette bleibt eng zusammen, presst bei einer schlechten Ballannahme sofort und kontert nach dem Ballgewinn. Ein Treffer der Kette gibt zwei Punkte.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 23 Metern. Oben und unten stehen je zwei Minitore. Der Trainer steht an der Seite mit Bällen.",
+  "Verteilen: Team Neon spielt mit einer Viererkette im Mittelfeld und zwei Abwehrspielern vor den oberen Toren. Team Rot spielt mit drei hinten, einem in der Mitte und zwei vorn.",
+  "Ablauf: Team Rot startet immer mit dem Ball und greift die oberen Tore an. Team Neon verteidigt und kontert nach einem Ballgewinn auf die unteren Tore.",
+  "Wertung: Ein Treffer von Team Rot gibt einen Punkt. Erobert die Kette den Ball und trifft, gibt das zwei Punkte für Team Neon, sonst einen Punkt. Danach startet Team Rot mit einem neuen Ball vom Trainer."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Eng bleiben: gemeinsam pressen und absichern",
+  "Geduldig bleiben, die Ordnung halten und auf den Fehlpass warten",
+  "Bei einer schlechten Ballannahme sofort pressen",
+  "Nach dem Ballgewinn schnell kontern und mitlaufen"
+ ],
+ "materials": [
+  "4 Minitore",
+  "4 Hütchen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Die Kette erobert den Ball. Team Rot will durch das Mittelfeld, und die Viererkette von Team Neon bleibt eng zusammen und schlägt im richtigen Moment zu.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 30.4,
+    "y": 5,
+    "w": 39.2,
+    "h": 50
+   }
+  ],
+  "goals": [
+   {
+    "x": 39,
+    "y": 5,
+    "side": "top"
+   },
+   {
+    "x": 61,
+    "y": 5,
+    "side": "top"
+   },
+   {
+    "x": 39,
+    "y": 55,
+    "side": "bottom"
+   },
+   {
+    "x": 61,
+    "y": 55,
+    "side": "bottom"
+   }
+  ],
+  "cones": [
+   {
+    "x": 30.4,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 69.6,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 30.4,
+    "y": 55,
+    "color": "orange"
+   },
+   {
+    "x": 69.6,
+    "y": 55,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 33,
+    "y": 8,
+    "label": "5"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 66,
+    "y": 8,
+    "label": "6"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 32,
+    "y": 32,
+    "label": "7"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 41,
+    "y": 30,
+    "label": "8"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 58,
+    "y": 30,
+    "label": "4"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 67,
+    "y": 32,
+    "label": "11"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 42,
+    "y": 14,
+    "label": "10"
+   },
+   {
+    "id": "r12",
+    "team": "b",
+    "x": 57,
+    "y": 14,
+    "label": "12"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 49.5,
+    "y": 38,
+    "label": "9"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 33,
+    "y": 48,
+    "label": "3"
+   },
+   {
+    "id": "r14",
+    "team": "b",
+    "x": 49.5,
+    "y": 54,
+    "label": "14"
+   },
+   {
+    "id": "r15",
+    "team": "b",
+    "x": 66,
+    "y": 48,
+    "label": "15"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 77,
+    "y": 44,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 50.1,
+    "y": 54.6
+   },
+   {
+    "id": "s1",
+    "x": 80.6,
+    "y": 47.5
+   },
+   {
+    "id": "s2",
+    "x": 77,
+    "y": 47.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Rot baut auf",
+    "say": "Team Rot hat immer zuerst den Ball und will nach oben. Rot vierzehn passt zu Rot fünfzehn. Gleichzeitig schiebt die ganze Kette von Team Neon zum Ball.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       66.6,
+       48.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n11",
+      "to": [
+       64,
+       33
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n4",
+      "to": [
+       56,
+       31
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n8",
+      "to": [
+       45,
+       31
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n7",
+      "to": [
+       36,
+       32
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Abgefangen",
+    "say": "Rot fünfzehn will zu Rot zwölf durchspielen. Neon elf steht nah dran, geht dazwischen und fängt den Ball ab.",
+    "moves": [
+     {
+      "who": "n11",
+      "to": [
+       63.2,
+       37.3
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       63.8,
+       37.9
+      ],
+      "type": "pass",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Konter: zwei Punkte",
+    "say": "Neon elf passt sofort zu Neon vier. Neon vier dribbelt nach unten und trifft ins rechte Minitor. Die Kette hat den Ball erobert, und das gibt zwei Punkte für Team Neon. Dann startet Team Rot mit einem neuen Ball vom Trainer.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       56.6,
+       31.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n4",
+      "to": [
+       57,
+       46
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       61,
+       54.7
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 30.4,
+    "y1": 58.6,
+    "x2": 69.6,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 86,
+    "y1": 5,
+    "x2": 86,
+    "y2": 55,
+    "text": "23 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Bei einer schlechten Ballannahme sofort pressen.",
+   "title": "Das Zeichen zum Pressen",
+   "text": "Springt dem Gegner der Ball vom Fuß, ist das das Zeichen. Der nächste Spieler der Kette presst sofort, die anderen schieben eng nach. So erobert Team Neon den Ball und kann schnell kontern.",
+   "board": {
+    "players": [
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 33,
+      "y": 8,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 66,
+      "y": 8,
+      "label": "6"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 32,
+      "y": 32,
+      "label": "7"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 41,
+      "y": 30,
+      "label": "8"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 58,
+      "y": 30,
+      "label": "4"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 67,
+      "y": 32,
+      "label": "11"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 42,
+      "y": 14,
+      "label": "10"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 57,
+      "y": 14,
+      "label": "12"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 49.5,
+      "y": 38,
+      "label": "9"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 33,
+      "y": 48,
+      "label": "3"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 49.5,
+      "y": 54,
+      "label": "14"
+     },
+     {
+      "id": "r15",
+      "team": "b",
+      "x": 66,
+      "y": 48,
+      "label": "15"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 77,
+      "y": 44,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.1,
+      "y": 54.6
+     },
+     {
+      "id": "s1",
+      "x": 80.6,
+      "y": 47.5
+     },
+     {
+      "id": "s2",
+      "x": 77,
+      "y": 47.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Genau hinschauen",
+      "say": "Rot vierzehn passt zu Rot fünfzehn. Neon elf schaut genau hin: Kann Rot fünfzehn den Ball gut annehmen?",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         66.6,
+         48.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n11",
+        "to": [
+         66,
+         48
+        ],
+        "type": "blick"
+       }
+      ]
+     },
+     {
+      "label": "Sofort pressen",
+      "say": "Der Ball springt Rot fünfzehn vom Fuß. Neon elf presst sofort. Gleichzeitig schieben Neon vier und Neon acht nach.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         63.6,
+         42.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n11",
+        "to": [
+         63,
+         42
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n4",
+        "to": [
+         57,
+         34
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n8",
+        "to": [
+         47,
+         32
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Erobert: zwei Punkte",
+      "say": "Neon elf erobert den Ball, dribbelt los und trifft ins rechte Minitor. Das gibt zwei Punkte für Team Neon.",
+      "moves": [
+       {
+        "who": "n11",
+        "to": [
+         61,
+         49
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         61,
+         54.7
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Einer presst, die anderen schieben zusammen.",
+   "title": "Einer presst, alle schieben",
+   "text": "Läuft ein Spieler der Kette den Ball an, schieben die anderen drei sofort eng zu ihm. So entstehen keine Lücken, und der Gegner kommt nicht durch die Mitte.",
+   "board": {
+    "players": [
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 33,
+      "y": 8,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 66,
+      "y": 8,
+      "label": "6"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 32,
+      "y": 32,
+      "label": "7"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 41,
+      "y": 30,
+      "label": "8"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 58,
+      "y": 30,
+      "label": "4"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 67,
+      "y": 32,
+      "label": "11"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 42,
+      "y": 14,
+      "label": "10"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 57,
+      "y": 14,
+      "label": "12"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 49.5,
+      "y": 38,
+      "label": "9"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 33,
+      "y": 48,
+      "label": "3"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 49.5,
+      "y": 54,
+      "label": "14"
+     },
+     {
+      "id": "r15",
+      "team": "b",
+      "x": 66,
+      "y": 48,
+      "label": "15"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 77,
+      "y": 44,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.1,
+      "y": 38.6
+     },
+     {
+      "id": "s1",
+      "x": 80.6,
+      "y": 47.5
+     },
+     {
+      "id": "s2",
+      "x": 77,
+      "y": 47.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zusammenschieben",
+      "say": "Rot neun hat den Ball. Neon vier presst ihn. Gleichzeitig schieben Neon acht, Neon sieben und Neon elf eng zusammen.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         53,
+         33.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n8",
+        "to": [
+         44,
+         30.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n7",
+        "to": [
+         36,
+         30.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n11",
+        "to": [
+         62,
+         31
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Kein Weg durch",
+      "say": "Rot neun findet keine Lücke und spielt zurück zu Rot vierzehn. Team Rot muss neu aufbauen.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.1,
+         54.6
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
