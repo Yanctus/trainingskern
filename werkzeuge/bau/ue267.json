@@ -1,0 +1,516 @@
+{
+ "title": "Erst parieren, dann um die Puppe",
+ "code": "UE-267",
+ "kind": "Übungsform",
+ "focuses": [
+  "Schnelligkeit",
+  "Koordination"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Torwart"
+ ],
+ "duration_minutes": 15,
+ "players_min": 2,
+ "players_max": 4,
+ "field_size": "46 x 41 m",
+ "description": "Torwarttraining für schnelle Reaktionen nach der ersten Parade. Spieler sieben spielt flach von der Seite in Richtung Puppe, und der Torwart taucht ab und lenkt den Ball zur Seite weg. Dann steht er sofort auf, läuft hinter der Puppe herum und hält den Schuss des Trainers von der Strafraumkante.",
+ "organisation": [
+  "Aufbauen: Im Strafraum vor einem Jugendtor. Vor dem Torraum steht etwas links von der Mitte eine Puppe oder Stange.",
+  "Verteilen: Der Torwart steht am linken Pfosten. Spieler sieben steht links außen mit Bällen, der Trainer an der Strafraumkante mit Bällen. Der zweite Torwart wartet neben dem Tor.",
+  "Ablauf: Spieler sieben spielt flach in Richtung Puppe. Der Torwart taucht ab und lenkt den Ball zur Seite weg. Dann steht er auf, läuft hinter der Puppe herum, und der Trainer schießt sofort aufs Tor.",
+  "Wechsel: Nach jeder Runde ist der zweite Torwart dran. Die Torhüter loben sich gegenseitig für gute Paraden."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Leicht auf den Zehen stehen, Gewicht nach vorn",
+  "Hände tief halten und die Augen immer am Ball",
+  "Den ersten Ball zur Seite weg lenken, nie in die Mitte",
+  "Sofort aufstehen und schnell wieder vors Tor"
+ ],
+ "materials": [
+  "1 Jugendtor",
+  "1 Puppe oder Stange",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Erst parieren, dann um die Puppe. Der Torwart lenkt eine flache Hereingabe weg und muss gleich danach den nächsten Schuss halten.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 14,
+    "y": 5,
+    "w": 72,
+    "h": 50
+   },
+   {
+    "type": "rect",
+    "x": 24,
+    "y": 5,
+    "w": 52,
+    "h": 18.8
+   },
+   {
+    "type": "rect",
+    "x": 38,
+    "y": 5,
+    "w": 24,
+    "h": 6.3
+   }
+  ],
+  "cones": [
+   {
+    "x": 47,
+    "y": 13.5,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "jugend"
+   }
+  ],
+  "players": [
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 44,
+    "y": 7.5,
+    "label": "TW"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 17.5,
+    "y": 13.5,
+    "label": "7"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 30,
+    "y": 2.5,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 50,
+    "y": 27,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b7",
+    "x": 18.1,
+    "y": 14.1
+   },
+   {
+    "id": "b1",
+    "x": 50.6,
+    "y": 27.6
+   },
+   {
+    "id": "s1",
+    "x": 53.6,
+    "y": 30.5
+   },
+   {
+    "id": "s2",
+    "x": 46.4,
+    "y": 30.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Bereit am Pfosten",
+    "say": "Der Torwart steht am linken Pfosten, leicht auf den Zehen, das Gewicht nach vorn. Er schaut genau auf den Ball bei Spieler sieben.",
+    "moves": [
+     {
+      "who": "k1",
+      "to": [
+       20,
+       13.5
+      ],
+      "type": "blick"
+     }
+    ]
+   },
+   {
+    "label": "Flach von der Seite",
+    "say": "Spieler sieben spielt flach in Richtung Puppe. Der Torwart taucht ab und lenkt den Ball weg vom Tor zur Seite.",
+    "moves": [
+     {
+      "who": "b7",
+      "to": [
+       43.6,
+       12.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "k1",
+      "to": [
+       43,
+       11.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b7",
+      "to": [
+       30,
+       22
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Hinter der Puppe herum",
+    "say": "Sofort steht der Torwart auf und läuft hinter der Puppe herum auf die andere Seite.",
+    "moves": [
+     {
+      "who": "k1",
+      "to": [
+       47,
+       9.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "k1",
+      "to": [
+       52.5,
+       10.5
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zweiter Schuss gehalten",
+    "say": "Der Trainer schießt direkt aufs Tor, und der Torwart hält den Ball. Die Runde ist vorbei, und jetzt ist der zweite Torwart dran.",
+    "moves": [
+     {
+      "who": "k1",
+      "to": [
+       50.6,
+       26
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b1",
+      "to": [
+       53.1,
+       11.1
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 14,
+    "y1": 58.6,
+    "x2": 86,
+    "y2": 58.6,
+    "text": "46 m"
+   },
+   {
+    "x1": 93,
+    "y1": 5,
+    "x2": 93,
+    "y2": 55,
+    "text": "41 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Hände tief, Augen am Ball.",
+   "title": "Hände tief, Augen am Ball",
+   "text": "Flache, harte Schüsse kommen schnell. Der Torwart hält die Hände deshalb tief und schaut immer auf den Ball, bis er ihn in den Händen hat. So kann er schneller reagieren.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 52.5,
+      "y": 10.5,
+      "label": "TW"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 17.5,
+      "y": 13.5,
+      "label": "7"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 30,
+      "y": 2.5,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 27,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b7",
+      "x": 30,
+      "y": 22
+     },
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 27.6
+     },
+     {
+      "id": "s1",
+      "x": 53.6,
+      "y": 30.5
+     },
+     {
+      "id": "s2",
+      "x": 46.4,
+      "y": 30.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Augen am Ball",
+      "say": "Der Torwart ist hinter der Puppe herum. Er steht leicht auf den Zehen, die Hände tief, und schaut genau auf den Ball beim Trainer.",
+      "moves": [
+       {
+        "who": "k1",
+        "to": [
+         50.6,
+         26
+        ],
+        "type": "blick"
+       }
+      ]
+     },
+     {
+      "label": "Flach gehalten",
+      "say": "Der Trainer schießt flach und hart. Der Torwart geht mit tiefen Händen zum Ball und hält ihn fest.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         56.1,
+         10.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "k1",
+        "to": [
+         55.5,
+         10
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Rückpass an die Strafraumkante.",
+   "title": "Rückpass an die Kante",
+   "text": "Spieler sieben steht links, der Trainer rechts, Spieler acht an der Strafraumkante. Beide spielen dem Torwart den Ball abwechselnd in die Hände, und er schiebt schnell von einer Seite zur anderen. Bei einem Ball spielt der Trainer überraschend zurück zu Spieler acht, und der schießt sofort.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 40,
+      "y": 12.5,
+      "label": "TW"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 17.5,
+      "y": 13.5,
+      "label": "7"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 30,
+      "y": 2.5,
+      "label": "TW"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 50,
+      "y": 27,
+      "label": "8"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 77,
+      "y": 11,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b7",
+      "x": 18.1,
+      "y": 14.1
+     },
+     {
+      "id": "b1",
+      "x": 77.6,
+      "y": 11.6
+     },
+     {
+      "id": "s1",
+      "x": 80.6,
+      "y": 14.5
+     },
+     {
+      "id": "s2",
+      "x": 77,
+      "y": 15
+     }
+    ],
+    "steps": [
+     {
+      "label": "Volley von links",
+      "say": "Spieler sieben spielt dem Torwart den Ball in die Hände. Der Torwart fängt ihn und wirft ihn zurück.",
+      "moves": [
+       {
+        "who": "b7",
+        "to": [
+         40.6,
+         13.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b7",
+        "to": [
+         18.1,
+         14.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Rüber nach rechts",
+      "say": "Sofort läuft der Torwart hinter der Puppe herum auf die rechte Seite.",
+      "moves": [
+       {
+        "who": "k1",
+        "to": [
+         47,
+         9.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "k1",
+        "to": [
+         56,
+         12.5
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Rückpass",
+      "say": "Der Trainer spielt aber nicht zum Torwart, sondern zurück zu Spieler acht. Der Torwart schaut sofort zu Spieler acht.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         27.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "k1",
+        "to": [
+         50,
+         26
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Schnell vors Tor",
+      "say": "Spieler acht schießt sofort. Der Torwart schiebt schnell zurück vor das Tor und hält den Ball. Dann ist der zweite Torwart dran.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         53.6,
+         7.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "k1",
+        "to": [
+         53,
+         7
+        ],
+        "type": "lauf"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

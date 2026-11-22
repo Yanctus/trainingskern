@@ -1,0 +1,484 @@
+{
+ "title": "Kopfball und Sprint auf Zuruf",
+ "code": "UE-280",
+ "kind": "Übungsform",
+ "focuses": [
+  "Koordination",
+  "Schnelligkeit",
+  "Kondition"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Einzeltraining"
+ ],
+ "duration_minutes": 15,
+ "players_min": 1,
+ "players_max": 1,
+ "field_size": "9 x 18 m",
+ "description": "Ein Spieler trainiert allein mit dem Trainer Kopfball, Reaktion und Schnelligkeit. Der Trainer wirft den Ball hoch, und der Spieler köpft ihn genau in seine Hände zurück. Dann ruft der Trainer eine Stange, und der Spieler sprintet um diese Stange und zurück ins Quadrat. Nach acht Runden gibt es eine Pause.",
+ "organisation": [
+  "Aufbauen: Ein Feld von neun mal achtzehn Metern. In der Mitte liegt ein kleines Quadrat aus vier Hütchen, oben stehen drei Stangen: links, in der Mitte und rechts.",
+  "Verteilen: Der Spieler steht im Quadrat. Der Trainer steht unten mit einem Ball in der Hand und weiteren Bällen daneben.",
+  "Ablauf: Der Trainer wirft den Ball hoch, der Spieler köpft ihn zurück in seine Hände. Dann ruft der Trainer links, Mitte oder rechts. Der Spieler sprintet um diese Stange und zurück ins Quadrat.",
+  "Wechsel: Nach acht Runden hat der Spieler eine Pause und erholt sich. Danach beginnt die nächste Serie."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Mit der Stirn köpfen und den Ball genau in die Hände des Trainers bringen",
+  "Gut zuhören und sofort zur gerufenen Stange starten",
+  "Eng um die Stange sprinten und schnell wieder bereit sein",
+  "In der Pause ruhig durchatmen und erholen"
+ ],
+ "materials": [
+  "3 Stangen",
+  "5 Hütchen",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Kopfball und Sprint auf Zuruf. Ein Spieler köpft dem Trainer den Ball zurück und sprintet dann um die Stange, die der Trainer ruft.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 37.5,
+    "y": 5,
+    "w": 25,
+    "h": 50
+   }
+  ],
+  "cones": [
+   {
+    "x": 40.5,
+    "y": 11,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 50,
+    "y": 16,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 59.5,
+    "y": 11,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 46.5,
+    "y": 29,
+    "color": "orange"
+   },
+   {
+    "x": 54,
+    "y": 29,
+    "color": "orange"
+   },
+   {
+    "x": 46.5,
+    "y": 40,
+    "color": "orange"
+   },
+   {
+    "x": 54,
+    "y": 40,
+    "color": "orange"
+   },
+   {
+    "x": 48.5,
+    "y": 53.5,
+    "color": "neon"
+   }
+  ],
+  "players": [
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 50,
+    "y": 35,
+    "label": "7"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 52.5,
+    "y": 53.5,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 53.1,
+    "y": 54.1
+   },
+   {
+    "id": "s1",
+    "x": 44.5,
+    "y": 52
+   },
+   {
+    "id": "s2",
+    "x": 42,
+    "y": 54
+   }
+  ],
+  "steps": [
+   {
+    "label": "Ball hoch werfen",
+    "say": "Spieler sieben steht im Quadrat. Der Trainer wirft den Ball hoch zu ihm.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       35.6
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Zurück köpfen",
+    "say": "Spieler sieben springt ab und köpft den Ball mit der Stirn genau zurück in die Hände des Trainers.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       53.1,
+       54.1
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Trainer ruft: rechts",
+    "say": "Sofort ruft der Trainer: rechts! Spieler sieben dreht sich und sprintet um die rechte Stange.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       51,
+       27
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n7",
+      "to": [
+       57,
+       16
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       57,
+       8
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       61,
+       7
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       62,
+       12
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zurück ins Quadrat",
+    "say": "Dann sprintet er zurück ins Quadrat und stellt sich für den nächsten Kopfball. So geht es acht Runden. Ziel ist, jeden Ball genau in die Hände zu köpfen. Danach hat Spieler sieben Pause, und dann ist er wieder dran.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       52,
+       24
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n7",
+      "to": [
+       50,
+       34
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 37.5,
+    "y1": 58.6,
+    "x2": 62.5,
+    "y2": 58.6,
+    "text": "9 m"
+   },
+   {
+    "x1": 70.5,
+    "y1": 5,
+    "x2": 70.5,
+    "y2": 55,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Genau in die Hände köpfen.",
+   "title": "Genau in die Hände köpfen",
+   "text": "Der Trainer wirft mal kurz, mal hoch und mal zur Seite. Bei kurzen Bällen köpft der Spieler weich, bei hohen springt er ab. Jeder Kopfball soll genau in den Händen des Trainers landen, nicht zu kurz und nicht zu weit.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 50,
+      "y": 35,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 52.5,
+      "y": 53.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 53.1,
+      "y": 54.1
+     },
+     {
+      "id": "s1",
+      "x": 44.5,
+      "y": 52
+     },
+     {
+      "id": "s2",
+      "x": 42,
+      "y": 54
+     }
+    ],
+    "steps": [
+     {
+      "label": "Kurzer Ball",
+      "say": "Der Trainer wirft kurz. Spieler sieben geht nach vorn und köpft den Ball weich zurück in die Hände des Trainers.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         51.1,
+         38.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n7",
+        "to": [
+         50.5,
+         37.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         53.1,
+         54.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Hoher Ball",
+      "say": "Jetzt wirft der Trainer hoch über ihn. Spieler sieben geht zurück, springt ab und köpft den Ball fest und genau in die Hände.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         50,
+         32
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         32.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         53.1,
+         54.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Volles Tempo bis zur letzten Runde.",
+   "title": "Volles Tempo bis zum Schluss",
+   "text": "Jeder Sprint geht mit vollem Tempo, auch in der achten Runde. Eng um die Stange laufen, kurz abbremsen und wieder Gas geben. Erholt wird erst in der Pause.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 50,
+      "y": 35,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 52.5,
+      "y": 53.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 53.1,
+      "y": 54.1
+     },
+     {
+      "id": "s1",
+      "x": 44.5,
+      "y": 52
+     },
+     {
+      "id": "s2",
+      "x": 42,
+      "y": 54
+     }
+    ],
+    "steps": [
+     {
+      "label": "Trainer ruft: links",
+      "say": "Der Trainer ruft: links! Spieler sieben startet sofort und sprintet mit vollem Tempo eng um die linke Stange.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         49,
+         27
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n7",
+        "to": [
+         43,
+         16
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n7",
+        "to": [
+         43,
+         8
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n7",
+        "to": [
+         39,
+         7
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n7",
+        "to": [
+         38.5,
+         12
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Mit Tempo zurück",
+      "say": "Mit vollem Tempo zurück ins Quadrat. Nach acht Runden darf er sich ausruhen, vorher nicht.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         48,
+         24
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n7",
+        "to": [
+         50,
+         34
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

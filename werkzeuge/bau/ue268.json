@@ -1,0 +1,485 @@
+{
+ "title": "Im Stangendreieck annehmen",
+ "code": "UE-268",
+ "kind": "Übungsform",
+ "focuses": [
+  "Ballannahme",
+  "Passspiel"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Einzeltraining"
+ ],
+ "duration_minutes": 15,
+ "players_min": 2,
+ "players_max": 2,
+ "field_size": "9 x 9 m",
+ "description": "Ein Spieler übt die erste Ballberührung und den Pass im Dreieck aus drei Stangen. Er schaut vor jeder Annahme über die Schulter, nimmt den Pass vom Trainer mit dem hinteren Fuß an und spielt quer zu seinem Mitspieler. Dann läuft alles andersherum zurück zum Trainer. Nach zwei Minuten tauschen die beiden Spieler die Rollen.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 9 mal 9 Metern. Drei Stangen im Dreieck: eine oben neben dem Trainer, zwei unten links und rechts.",
+  "Verteilen: Spieler sieben übt und steht unten links an der Stange, Spieler acht hilft und steht unten rechts. Der Trainer steht oben mit vielen Bällen.",
+  "Ablauf: Spieler sieben schaut über die Schulter, nimmt den Pass vom Trainer mit dem hinteren Fuß an und spielt quer zu Spieler acht. Dann andersherum: Spieler acht passt zurück, und Spieler sieben spielt zum Trainer.",
+  "Wechsel: Nach zwei Minuten tauschen Spieler sieben und Spieler acht die Rollen. Jeder spielt zwei Durchgänge, dann kommt die Steigerung."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Vor jeder Annahme über die Schulter schauen",
+  "Mit dem hinteren Fuß annehmen, um schnell weiterzuspielen",
+  "Annahme und Pass abwechselnd mit beiden Füßen",
+  "Auch müde genau und mit dem richtigen Tempo passen"
+ ],
+ "materials": [
+  "3 Stangen",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Im Stangendreieck annehmen. Spieler sieben schaut über die Schulter, nimmt den Ball an und spielt ihn quer weiter.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   }
+  ],
+  "cones": [
+   {
+    "x": 55,
+    "y": 12,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 41,
+    "y": 35,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 62,
+    "y": 34,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 33,
+    "y": 41,
+    "label": "7"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 69,
+    "y": 41,
+    "label": "8"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 46,
+    "y": 13,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 46.6,
+    "y": 13.6
+   },
+   {
+    "id": "s1",
+    "x": 42.5,
+    "y": 8.5
+   },
+   {
+    "id": "s2",
+    "x": 39.5,
+    "y": 8.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Schulterblick, Pass",
+    "say": "Spieler sieben steht unten links an der Stange und schaut kurz über die Schulter. Dann passt der Trainer zu ihm.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       29,
+       57
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b1",
+      "to": [
+       33.6,
+       41.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Annehmen, quer passen",
+    "say": "Spieler sieben nimmt den Ball mit dem hinteren Fuß an und öffnet sich dabei. Mit dem anderen Fuß passt er quer zu Spieler acht.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       69.6,
+       41.6
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Andersherum zurück",
+    "say": "Jetzt geht es andersherum. Spieler sieben schaut wieder über die Schulter. Spieler acht passt zurück, und Spieler sieben nimmt mit dem hinteren Fuß an.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       29,
+       57
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b1",
+      "to": [
+       33.6,
+       41.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zum Trainer: Ziel",
+    "say": "Spieler sieben passt zurück zum Trainer. Das Ziel: jeder Pass kommt genau und im richtigen Tempo an. Dann geht es von vorn los. Nach zwei Minuten tauschen Spieler sieben und Spieler acht die Rollen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       46.6,
+       13.6
+      ],
+      "type": "pass"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "9 m"
+   },
+   {
+    "x1": 83,
+    "y1": 5,
+    "x2": 83,
+    "y2": 55,
+    "text": "9 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Der erste Kontakt geht vor die Stange.",
+   "title": "Erster Kontakt vor die Stange",
+   "text": "Spieler sieben nimmt den Ball nicht im Stand an. Mit dem ersten Kontakt nimmt er ihn im Bogen nach vorn vor die Stange mit. Von dort passt er quer zu Spieler acht. So übt er die gerichtete Ballmitnahme.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 33,
+      "y": 41,
+      "label": "7"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 69,
+      "y": 41,
+      "label": "8"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 46,
+      "y": 13,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 46.6,
+      "y": 13.6
+     },
+     {
+      "id": "s1",
+      "x": 42.5,
+      "y": 8.5
+     },
+     {
+      "id": "s2",
+      "x": 39.5,
+      "y": 8.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Schulterblick, Pass",
+      "say": "Spieler sieben schaut über die Schulter. Der Trainer passt zu ihm.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         29,
+         57
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         33.6,
+         41.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Vor die Stange",
+      "say": "Mit dem ersten Kontakt nimmt Spieler sieben den Ball im Bogen vor die Stange mit.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         33.5,
+         34
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         37.5,
+         30
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         44,
+         30
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Quer zu Spieler acht",
+      "say": "Von dort passt Spieler sieben quer zu Spieler acht und läuft zurück an seine Stange. Dann geht es in die andere Richtung.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         69.6,
+         41.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n7",
+        "to": [
+         45,
+         39
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n7",
+        "to": [
+         33,
+         41
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Ein Doppelpass um die Stange.",
+   "title": "Doppelpass um die Stange",
+   "text": "Spieler sieben spielt den Pass vom Trainer direkt zurück. Dann läuft er an der Stange vorbei, und der Trainer passt ihm in den Lauf. Erst dann geht der Pass quer zu Spieler acht. Mehr Pässe machen die Übung schneller.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 33,
+      "y": 41,
+      "label": "7"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 69,
+      "y": 41,
+      "label": "8"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 46,
+      "y": 13,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 46.6,
+      "y": 13.6
+     },
+     {
+      "id": "s1",
+      "x": 42.5,
+      "y": 8.5
+     },
+     {
+      "id": "s2",
+      "x": 39.5,
+      "y": 8.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Direkt zurück",
+      "say": "Spieler sieben schaut über die Schulter. Der Trainer passt zu ihm, und Spieler sieben spielt direkt zurück.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         29,
+         57
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         33.6,
+         41.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         46.6,
+         13.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Um die Stange",
+      "say": "Spieler sieben läuft unten an der Stange vorbei nach rechts. Der Trainer passt ihm in den Lauf.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         47,
+         40
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         47.6,
+         40.6
+        ],
+        "type": "pass",
+        "delay": 0.6
+       }
+      ]
+     },
+     {
+      "label": "Quer zu Spieler acht",
+      "say": "Spieler sieben nimmt an und passt quer zu Spieler acht. Dann läuft er zurück an seine Stange, und es geht in die andere Richtung.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         69.6,
+         41.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n7",
+        "to": [
+         33,
+         41
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

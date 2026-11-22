@@ -1,0 +1,478 @@
+{
+ "title": "Leiter laufen, Flanke fangen",
+ "code": "UE-251",
+ "kind": "Übungsform",
+ "focuses": [
+  "Koordination",
+  "Ballannahme"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Torwart"
+ ],
+ "duration_minutes": 15,
+ "players_min": 1,
+ "players_max": 3,
+ "field_size": "46 x 41 m",
+ "description": "Der Torwart läuft auf das Zeichen des Trainers schnell durch eine Koordinationsleiter. Dann kommt eine hohe Flanke, und er fängt den Ball am höchsten Punkt über den Puppen. Danach läuft er zurück an die Leiter und wartet auf das nächste Zeichen. So übt er schnelle Füße, das richtige Timing und sicheres Fangen.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 46 mal 41 Metern mit Strafraum und einem Jugendtor oben. Links neben dem Tor liegt eine Koordinationsleiter, vor dem Tor stehen vier Puppen oder Stangen.",
+  "Verteilen: Der Torwart steht am linken Ende der Leiter. Der Trainer steht rechts vor dem Strafraum mit vielen Bällen. Weitere Torhüter warten neben dem Tor.",
+  "Ablauf: Auf das Zeichen läuft der Torwart durch die Leiter. Der Trainer flankt hoch vor das Tor, und der Torwart fängt den Ball über den Puppen. Dann rollt er den Ball zurück und läuft wieder an die Leiter.",
+  "Wechsel: Nach sechs Flanken ist der nächste Torwart dran. Ziel ist, jede Flanke sicher am höchsten Punkt zu fangen."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Den Ball am höchsten Punkt fangen und früh abspringen",
+  "Mit kurzen, schnellen Schritten durch die Leiter",
+  "Vor und während der Flanke umschauen und den Ball beobachten",
+  "Vor dem Absprung die Schritte verkürzen"
+ ],
+ "materials": [
+  "1 Jugendtor",
+  "1 Koordinationsleiter",
+  "4 Puppen oder Stangen",
+  "3 Minitore",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Leiter laufen, Flanke fangen. Der Torwart läuft schnell durch die Leiter und fängt dann eine hohe Flanke über den Puppen.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 15,
+    "y": 5,
+    "w": 70,
+    "h": 50
+   },
+   {
+    "type": "rect",
+    "x": 22,
+    "y": 5,
+    "w": 56,
+    "h": 20
+   },
+   {
+    "type": "rect",
+    "x": 39,
+    "y": 5,
+    "w": 22,
+    "h": 7
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "jugend"
+   }
+  ],
+  "cones": [
+   {
+    "x": 31,
+    "y": 8.5,
+    "color": "orange",
+    "shape": "leiter"
+   },
+   {
+    "x": 41,
+    "y": 12,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 59,
+    "y": 12,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 46.5,
+    "y": 19.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 53.5,
+    "y": 19.5,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 20,
+    "y": 8.5,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 75,
+    "y": 31,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 75.6,
+    "y": 31.6
+   },
+   {
+    "id": "s1",
+    "x": 79,
+    "y": 33.5
+   },
+   {
+    "id": "s2",
+    "x": 79,
+    "y": 29
+   }
+  ],
+  "steps": [
+   {
+    "label": "Durch die Leiter",
+    "say": "Der Trainer ruft: Los! Der Torwart dreht sich um und läuft mit kurzen, schnellen Schritten durch die Leiter.",
+    "moves": [
+     {
+      "who": "k1",
+      "to": [
+       41,
+       7.5
+      ],
+      "type": "lauf"
+     }
+    ]
+   },
+   {
+    "label": "Umschauen",
+    "say": "Am Ende der Leiter schaut der Torwart sofort zum Trainer. Wohin kommt die Flanke?",
+    "moves": [
+     {
+      "who": "k1",
+      "to": [
+       57,
+       18
+      ],
+      "type": "blick"
+     }
+    ]
+   },
+   {
+    "label": "Am höchsten Punkt fangen",
+    "say": "Der Trainer flankt hoch vor das Tor. Der Torwart macht kurze Schritte, springt früh ab und fängt den Ball am höchsten Punkt über den Puppen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       15.6
+      ],
+      "type": "pass",
+      "bend": 6
+     },
+     {
+      "who": "k1",
+      "to": [
+       50,
+       15
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "Zurück zur Leiter",
+    "say": "Geschafft, die Flanke ist sicher gefangen. Der Torwart rollt den Ball zum Trainer zurück und läuft zurück an die Leiter. Dort wartet er auf das nächste Zeichen, und nach sechs Flanken ist der nächste Torwart dran.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       75.6,
+       31.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "k1",
+      "to": [
+       45,
+       9
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       20,
+       8.5
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 15,
+    "y1": 58.6,
+    "x2": 85,
+    "y2": 58.6,
+    "text": "46 m"
+   },
+   {
+    "x1": 92,
+    "y1": 5,
+    "x2": 92,
+    "y2": 55,
+    "text": "41 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Der Trainer ruft einen Pfosten.",
+   "title": "Erster oder zweiter Pfosten",
+   "text": "Die Leiter bleibt jetzt liegen, der Torwart startet in der Mitte des Tors. Der Trainer ruft „Erster Pfosten“ oder „Zweiter Pfosten“. Der Torwart tippt zuerst den anderen Pfosten an und fängt dann die Flanke am gerufenen Pfosten. Dafür muss er sich umschauen und schnell quer durch den Torraum laufen.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 50,
+      "y": 7.5,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 75,
+      "y": 31,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 75.6,
+      "y": 31.6
+     },
+     {
+      "id": "s1",
+      "x": 79,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 79,
+      "y": 29
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zweiter Pfosten!",
+      "say": "Der Trainer ruft: Zweiter Pfosten! Der Torwart läuft zuerst zum ersten Pfosten und tippt ihn an.",
+      "moves": [
+       {
+        "who": "k1",
+        "to": [
+         54.5,
+         6.5
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Umschauen und rüber",
+      "say": "Er schaut über die Schulter zum Trainer und sieht die Flanke kommen. Dann läuft er schnell quer zum zweiten Pfosten.",
+      "moves": [
+       {
+        "who": "k1",
+        "to": [
+         69,
+         21
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         45.6,
+         11.1
+        ],
+        "type": "pass",
+        "bend": 6,
+        "after": true
+       },
+       {
+        "who": "k1",
+        "to": [
+         45,
+         10.5
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Am zweiten Pfosten fangen",
+      "say": "Der Torwart springt ab und fängt den Ball sicher am zweiten Pfosten. Dann rollt er ihn zurück, und der Trainer ruft wieder einen Pfosten.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         75.6,
+         31.6
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Nach dem Fangen schnell abwerfen.",
+   "title": "Fangen und schnell abwerfen",
+   "text": "Unten stehen jetzt drei Minitore. Der Torwart fängt die Flanke und schaut sich sofort um. Dann wirft er den Ball schnell und genau in ein freies Minitor, wie beim Start eines Konters. Aber erst sicher fangen, dann abwerfen.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 50,
+      "y": 7.5,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 75,
+      "y": 31,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 75.6,
+      "y": 31.6
+     },
+     {
+      "id": "s1",
+      "x": 79,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 79,
+      "y": 29
+     }
+    ],
+    "steps": [
+     {
+      "label": "Flanke fangen",
+      "say": "Der Trainer flankt. Der Torwart kommt heraus und fängt den Ball sicher über den Puppen.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         15.6
+        ],
+        "type": "pass",
+        "bend": 6
+       },
+       {
+        "who": "k1",
+        "to": [
+         50,
+         15
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       }
+      ]
+     },
+     {
+      "label": "Umschauen",
+      "say": "Mit dem Ball in den Händen schaut er sich um. Das linke Minitor ist frei.",
+      "moves": [
+       {
+        "who": "k1",
+        "to": [
+         40,
+         33
+        ],
+        "type": "blick"
+       }
+      ]
+     },
+     {
+      "label": "Abwurf ins Minitor",
+      "say": "Er wirft den Ball schnell und genau ins linke Minitor. Geschafft! Dann holt der Trainer den nächsten Ball, und die nächste Flanke kommt.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         27,
+         54.5
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ],
+    "goals": [
+     {
+      "x": 50,
+      "y": 5,
+      "side": "top",
+      "size": "jugend"
+     },
+     {
+      "x": 27,
+      "y": 55,
+      "side": "bottom"
+     },
+     {
+      "x": 50,
+      "y": 55,
+      "side": "bottom"
+     },
+     {
+      "x": 73,
+      "y": 55,
+      "side": "bottom"
+     }
+    ]
+   }
+  }
+ ]
+}

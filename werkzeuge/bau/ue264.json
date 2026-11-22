@@ -1,0 +1,457 @@
+{
+ "title": "Farbe rufen, Volley fangen",
+ "code": "UE-264",
+ "kind": "Übungsform",
+ "focuses": [
+  "Schnelligkeit",
+  "Koordination",
+  "Ballannahme"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Torwart"
+ ],
+ "duration_minutes": 15,
+ "players_min": 2,
+ "players_max": 2,
+ "field_size": "14 x 9 m",
+ "description": "Der Torwart steht in der Mitte von vier Hütchen. Der Trainer ruft eine Farbe und eine Reihe, der Torwart läuft mit schnellen Seitschritten hin, tippt das Hütchen an und ist sofort zurück in der Mitte. Dort fängt er einen Volley vom Trainer und wirft den Ball zurück. Nach ein bis zwei Minuten tauschen die Torhüter.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 14 mal 9 Metern. In der Mitte stehen vier Hütchen im Quadrat, je zwei orange und zwei neon über Kreuz.",
+  "Verteilen: Ein Torwart steht in der Mitte des Quadrats, der zweite Torwart wartet neben dem Feld. Der Trainer steht unten mit Bällen.",
+  "Ablauf: Der Trainer ruft zum Beispiel „Neon hinten“. Der Torwart läuft hin, tippt das Hütchen an und läuft zurück in die Mitte. Der Trainer spielt einen Volley, der Torwart fängt und wirft zurück. Dann kommt die nächste Farbe.",
+  "Wechsel: Nach ein bis zwei Minuten tauschen die Torhüter. Wer wartet, erholt sich und schaut zu."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Schnell zuhören, denken und loslaufen",
+  "Kurze, schnelle Schritte zum Hütchen und zurück",
+  "Vor dem Volley stehen und zum Trainer schauen",
+  "Den Ball sicher fangen und genau zurückwerfen"
+ ],
+ "materials": [
+  "2 orange Hütchen",
+  "2 neon Hütchen",
+  "Mehrere Bälle beim Trainer"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Farbe rufen, Volley fangen. Der Torwart hört genau hin, tippt das gerufene Hütchen an und fängt danach den Volley.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 8,
+    "w": 50,
+    "h": 44
+   }
+  ],
+  "cones": [
+   {
+    "x": 40,
+    "y": 16,
+    "color": "orange"
+   },
+   {
+    "x": 60,
+    "y": 16,
+    "color": "neon"
+   },
+   {
+    "x": 40,
+    "y": 32,
+    "color": "neon"
+   },
+   {
+    "x": 60,
+    "y": 32,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 50,
+    "y": 24,
+    "label": "TW"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 30,
+    "y": 14,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 50,
+    "y": 46,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 50.6,
+    "y": 46.6
+   },
+   {
+    "id": "s1",
+    "x": 54,
+    "y": 48.5
+   },
+   {
+    "id": "s2",
+    "x": 46,
+    "y": 48.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Neon hinten",
+    "say": "Der Trainer ruft: Neon hinten. Der Torwart läuft mit schnellen Seitschritten zum neon Hütchen oben rechts und tippt es an.",
+    "moves": [
+     {
+      "who": "k1",
+      "to": [
+       57.5,
+       18
+      ],
+      "type": "lauf"
+     }
+    ]
+   },
+   {
+    "label": "Zurück in die Mitte",
+    "say": "Sofort läuft er zurück in die Mitte. Dort steht er bereit und schaut zum Trainer.",
+    "moves": [
+     {
+      "who": "k1",
+      "to": [
+       50,
+       24
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "k1",
+      "to": [
+       50,
+       44
+      ],
+      "type": "blick",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Volley fangen",
+    "say": "Der Trainer spielt einen Volley aus der Hand. Der Torwart fängt den Ball sicher und wirft ihn genau zurück.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       24.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       46.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Nächste Farbe, dann Wechsel",
+    "say": "Der Trainer ruft: Orange vorn. Der Torwart tippt das orange Hütchen unten rechts an, läuft zurück und fängt den nächsten Volley. So geht es ein bis zwei Minuten weiter. Dann tauschen die Torhüter, und der zweite Torwart kommt in die Mitte.",
+    "moves": [
+     {
+      "who": "k1",
+      "to": [
+       57.5,
+       30
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "k1",
+      "to": [
+       50,
+       24
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       24.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       46.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "14 m"
+   },
+   {
+    "x1": 83,
+    "y1": 8,
+    "x2": 83,
+    "y2": 52,
+    "text": "9 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Fällt der Ball herunter, sofort hinterher.",
+   "title": "Abpraller sofort sichern",
+   "text": "Der Torwart bleibt die ganze Zeit hellwach. Rutscht ihm der Ball aus den Händen, reagiert er blitzschnell, wirft sich auf den Ball und sichert ihn. Erst dann geht es weiter mit der nächsten Farbe.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 50,
+      "y": 24,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 30,
+      "y": 14,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 46,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 46.6
+     },
+     {
+      "id": "s1",
+      "x": 54,
+      "y": 48.5
+     },
+     {
+      "id": "s2",
+      "x": 46,
+      "y": 48.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Ball springt weg",
+      "say": "Der Trainer spielt einen festen Volley. Der Ball springt dem Torwart aus den Händen und rollt zur Seite.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         24.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         45.6,
+         27.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Hinterher und sichern",
+      "say": "Der Torwart reagiert sofort, wirft sich auf den Ball und hält ihn fest. Dann wirft er ihn zurück zum Trainer.",
+      "moves": [
+       {
+        "who": "k1",
+        "to": [
+         45,
+         27
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         46.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Der Trainer ruft zwei Hütchen hintereinander.",
+   "title": "Zwei Farben nacheinander",
+   "text": "Jetzt ruft der Trainer zwei oder drei Hütchen, zum Beispiel „Neon hinten, Orange vorn“. Der Torwart merkt sich die Reihenfolge, tippt die Hütchen nacheinander an und ist dann sofort zurück in der Mitte für den Volley.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 50,
+      "y": 24,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 30,
+      "y": 14,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 46,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 46.6
+     },
+     {
+      "id": "s1",
+      "x": 54,
+      "y": 48.5
+     },
+     {
+      "id": "s2",
+      "x": 46,
+      "y": 48.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Neon hinten, Orange vorn",
+      "say": "Der Trainer ruft: Neon hinten, Orange vorn. Der Torwart tippt erst das neon Hütchen oben rechts an und dann das orange Hütchen unten rechts.",
+      "moves": [
+       {
+        "who": "k1",
+        "to": [
+         57.5,
+         18
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "k1",
+        "to": [
+         57.5,
+         30
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Zurück und fangen",
+      "say": "Dann schnell zurück in die Mitte. Der Torwart schaut zum Trainer, fängt den Volley und wirft ihn zurück.",
+      "moves": [
+       {
+        "who": "k1",
+        "to": [
+         50,
+         24
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "k1",
+        "to": [
+         50,
+         44
+        ],
+        "type": "blick",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         24.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         46.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

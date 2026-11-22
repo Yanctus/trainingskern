@@ -1,0 +1,612 @@
+{
+ "title": "Hütchen-Slalom und drei Stangen",
+ "code": "UE-271",
+ "kind": "Übungsform",
+ "focuses": [
+  "Dribbling",
+  "Schnelligkeit",
+  "Koordination"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Einzeltraining"
+ ],
+ "duration_minutes": 12,
+ "players_min": 1,
+ "players_max": 1,
+ "field_size": "14 x 14 m",
+ "description": "Ein Dribbel-Parcours für einen Spieler mit dem Trainer. Der Spieler dribbelt durch vier Hütchen, mit Tempo um eine Stange und zurück, durch vier weitere Hütchen und um die zweite Stange. Danach dribbelt er zurück zum Start und macht eine kurze Pause. So bekommt er sehr viele Ballkontakte mit beiden Füßen.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 14 mal 14 Metern. Oben und unten je vier Hütchen in einer Reihe, dazwischen quer drei Stangen: links, in der Mitte und rechts.",
+  "Verteilen: Der Spieler startet oben mit Ball vor den Hütchen. Der Trainer steht rechts neben dem Feld mit Bällen.",
+  "Ablauf: Durch die oberen Hütchen, um die rechte Stange und zurück zur Mitte, durch die unteren Hütchen und zurück, um die linke Stange und zurück, dann zurück zum Start.",
+  "Wechsel: Nach jeder Runde macht der Spieler eine kurze Pause. Dann startet die nächste Runde, wenn der Trainer es sagt."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Mit beiden Füßen durch die Hütchen dribbeln",
+  "Mit Tempo zur Stange und wieder zurück",
+  "Kurze, schnelle Schritte um die Stangen",
+  "Die ganze Runde mit vollem Einsatz, dann kurz erholen"
+ ],
+ "materials": [
+  "8 Hütchen",
+  "3 Stangen",
+  "Einige Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Hütchen-Slalom und drei Stangen. Spieler sieben dribbelt allein durch einen Parcours aus Hütchen und Stangen.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   }
+  ],
+  "cones": [
+   {
+    "x": 50,
+    "y": 9,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 14.5,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 20,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 25.5,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 34.5,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 40,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 45.5,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 51,
+    "color": "orange"
+   },
+   {
+    "x": 29,
+    "y": 30,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 50,
+    "y": 30,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 71,
+    "y": 30,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 50,
+    "y": 5,
+    "label": "7"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 86,
+    "y": 30,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 50.6,
+    "y": 5.6
+   },
+   {
+    "id": "s1",
+    "x": 86.6,
+    "y": 33.6
+   },
+   {
+    "id": "s2",
+    "x": 89.6,
+    "y": 33.6
+   }
+  ],
+  "steps": [
+   {
+    "label": "Obere Hütchen",
+    "say": "Spieler sieben startet oben und dribbelt im Slalom durch die vier Hütchen. Er nimmt dabei beide Füße.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       46,
+       9
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       54,
+       14.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       46,
+       20
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       54,
+       25.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Rechte Stange",
+    "say": "Jetzt dribbelt er mit Tempo zur rechten Stange, macht kleine Schritte um die Stange und dribbelt zurück zur Mitte.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       68,
+       27
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       73.5,
+       28
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       73.5,
+       32
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       68,
+       33
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       55,
+       33
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Untere Hütchen",
+    "say": "Dann geht es im Slalom durch die vier unteren Hütchen. Danach dreht er und dribbelt zurück zur Mitte.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       54,
+       34.5
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       46,
+       40
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       54,
+       45.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       46,
+       51
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       46,
+       33
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Linke Stange",
+    "say": "Jetzt mit Tempo zur linken Stange, eng um die Stange herum und wieder zurück zur Mitte.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       32,
+       33
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       26.5,
+       32
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       26.5,
+       28
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       32,
+       27
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       46,
+       27.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Zurück zum Start: Pause",
+    "say": "Zum Schluss dribbelt Spieler sieben zurück zum Start. Die Runde ist geschafft. Er macht eine kurze Pause, dann ist er wieder dran.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       46,
+       8
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       50,
+       5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "14 m"
+   },
+   {
+    "x1": 96,
+    "y1": 5,
+    "x2": 96,
+    "y2": 55,
+    "text": "14 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Beide Füße benutzen.",
+   "title": "Mit beiden Füßen",
+   "text": "Im Slalom nimmt der Spieler den Ball abwechselnd mit dem linken und dem rechten Fuß mit. Erst sauber und langsam, dann schneller. So wird er mit beiden Füßen sicher am Ball.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 50,
+      "y": 5,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 86,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 5.6
+     },
+     {
+      "id": "s1",
+      "x": 86.6,
+      "y": 33.6
+     },
+     {
+      "id": "s2",
+      "x": 89.6,
+      "y": 33.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Links und rechts",
+      "say": "Am ersten Hütchen nimmt Spieler sieben den Ball mit dem linken Fuß mit, am zweiten mit dem rechten Fuß.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         46,
+         9
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         54,
+         14.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Erst sauber, dann schnell",
+      "say": "So geht es weiter, immer abwechselnd. Erst kommt die Technik, dann das Tempo. Am Ende ist er an der Mitte.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         46,
+         20
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         54,
+         25.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Kurze, schnelle Schritte an der Stange.",
+   "title": "Klein um die Stange",
+   "text": "Zur Stange hin darf der Spieler den Ball weiter vorlegen und Tempo machen. An der Stange macht er ganz kurze, schnelle Schritte und hält den Ball eng am Fuß. Danach wieder mit Tempo zurück.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 54,
+      "y": 25.5,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 86,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 54.6,
+      "y": 26.1
+     },
+     {
+      "id": "s1",
+      "x": 86.6,
+      "y": 33.6
+     },
+     {
+      "id": "s2",
+      "x": 89.6,
+      "y": 33.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Mit Tempo hin",
+      "say": "Spieler sieben legt sich den Ball weiter vor und dribbelt mit Tempo zur rechten Stange.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         68,
+         27
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Kurze Schritte",
+      "say": "An der Stange macht er kurze, schnelle Schritte. Der Ball bleibt ganz eng am Fuß.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         73.5,
+         28
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         73.5,
+         32
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         68,
+         33
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Mit Tempo zurück",
+      "say": "Dann legt er den Ball wieder weiter vor und dribbelt mit Tempo zurück zur Mitte.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         55,
+         33
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
