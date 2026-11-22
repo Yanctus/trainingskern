@@ -1,0 +1,490 @@
+{
+ "title": "Innen und außen hinterlaufen",
+ "code": "UE-285",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Bewegung",
+  "Zusammenspiel"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Einzeltraining"
+ ],
+ "duration_minutes": 15,
+ "players_min": 1,
+ "players_max": 1,
+ "field_size": "18 x 18 m",
+ "description": "Ein Außenverteidiger übt Läufe mit dem Trainer und die Flanke danach. Er passt zum Trainer und läuft im Bogen innen hinter den Dummy. Der Trainer spielt in den Lauf, und der Spieler flankt direkt ins obere Minitor oder spielt den Rückpass ins untere. In der Steigerung läuft er außen herum.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 18 Metern. Links zwei Minitore und ein Dummy als Verteidiger im Strafraum, rechts ein Dummy als Gegenspieler außen und unten ein Hütchen.",
+  "Verteilen: Spieler zwei startet unten am Hütchen mit Ball. Der Trainer steht rechts an der Seite mit vielen Bällen.",
+  "Ablauf: Pass zum Trainer, an die Schulter des Dummys, dann im Bogen innen hinter den Dummy laufen und den Pass direkt ins Minitor flanken.",
+  "Wechsel: Nach jeder Flanke zurück zum Hütchen und mit dem nächsten Ball weiter, bis alle Bälle gespielt sind oder die Anzahl erreicht ist."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Im richtigen Moment loslaufen und den Raum nutzen",
+  "Mit Tempo in den Ball laufen und direkt flanken",
+  "Im Bogen laufen, damit der Ball immer zu sehen ist",
+  "Zwischen Flanke und Rückpass klug entscheiden"
+ ],
+ "materials": [
+  "2 Minitore",
+  "2 Dummys",
+  "1 Hütchen",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Innen und außen hinterlaufen. Spieler zwei spielt mit dem Trainer, läuft hinter den Dummy und flankt direkt ins Minitor.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   }
+  ],
+  "goals": [
+   {
+    "x": 28,
+    "y": 14,
+    "side": "left"
+   },
+   {
+    "x": 31,
+    "y": 31,
+    "side": "left"
+   }
+  ],
+  "cones": [
+   {
+    "x": 41,
+    "y": 23,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 65,
+    "y": 38.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 65.5,
+    "y": 53,
+    "color": "neon"
+   }
+  ],
+  "players": [
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 61.5,
+    "y": 51,
+    "label": "2"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 72,
+    "y": 39,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 62.1,
+    "y": 51.6
+   },
+   {
+    "id": "s1",
+    "x": 76.5,
+    "y": 42.5
+   },
+   {
+    "id": "s2",
+    "x": 76.5,
+    "y": 45
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pass zum Trainer",
+    "say": "Spieler zwei passt zum Trainer. Dann läuft er an die Schulter des Dummys.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       72.6,
+       39.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n2",
+      "to": [
+       61,
+       43
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Innen hinterlaufen",
+    "say": "Spieler zwei startet im Bogen innen hinter den Dummy. Der Trainer spielt den Ball in den Lauf.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       59.5,
+       33
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n2",
+      "to": [
+       64,
+       24
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       64.6,
+       24.6
+      ],
+      "type": "pass",
+      "delay": 1
+     }
+    ]
+   },
+   {
+    "label": "Direkt flanken: Ziel",
+    "say": "Spieler zwei flankt direkt ins obere Minitor. Das ist das Ziel. Dann geht er zurück zum Hütchen, holt den nächsten Ball, und die nächste Runde beginnt.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       28.5,
+       14
+      ],
+      "type": "pass",
+      "bend": 6
+     },
+     {
+      "who": "n2",
+      "to": [
+       57,
+       38
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       61.5,
+       51
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 81,
+    "y1": 5,
+    "x2": 81,
+    "y2": 55,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Im Bogen laufen.",
+   "title": "Im Bogen laufen",
+   "text": "Der Spieler läuft nicht gerade, sondern im Bogen hinter den Dummy. So sieht er den Ball die ganze Zeit und kommt mit Tempo an. Ist oben kein Platz, spielt er den Rückpass ins untere Minitor.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 61,
+      "y": 43,
+      "label": "2"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 72,
+      "y": 39,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 72.6,
+      "y": 39.6
+     },
+     {
+      "id": "s1",
+      "x": 76.5,
+      "y": 42.5
+     },
+     {
+      "id": "s2",
+      "x": 76.5,
+      "y": 45
+     }
+    ],
+    "steps": [
+     {
+      "label": "Im Bogen",
+      "say": "Spieler zwei läuft im Bogen innen hinter den Dummy und sieht dabei immer den Ball. Der Trainer passt in den Lauf.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         59.5,
+         33
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n2",
+        "to": [
+         64,
+         24
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         64.6,
+         24.6
+        ],
+        "type": "pass",
+        "delay": 1
+       }
+      ]
+     },
+     {
+      "label": "Rückpass: Ziel",
+      "say": "Spieler zwei spielt den Ball direkt zurück ins untere Minitor. Das ist das Ziel. Dann geht er zurück zum Hütchen.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         31.5,
+         31
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n2",
+        "to": [
+         57,
+         38
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n2",
+        "to": [
+         61.5,
+         51
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Spieler zwei läuft außen herum.",
+   "title": "Außen hinterlaufen",
+   "text": "Jetzt nimmt der Trainer den Ball vor dem Dummy nach innen mit. Der Spieler läuft im Bogen außen herum. Er öffnet den Körper, schaut nach innen und flankt den Rückpass des Trainers direkt.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 61.5,
+      "y": 51,
+      "label": "2"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 72,
+      "y": 39,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 62.1,
+      "y": 51.6
+     },
+     {
+      "id": "s1",
+      "x": 76.5,
+      "y": 42.5
+     },
+     {
+      "id": "s2",
+      "x": 76.5,
+      "y": 45
+     }
+    ],
+    "steps": [
+     {
+      "label": "Pass zum Trainer",
+      "say": "Spieler zwei passt zum Trainer.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         72.6,
+         39.6
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Außen herum",
+      "say": "Der Trainer nimmt den Ball vor dem Dummy nach innen mit. Gleichzeitig läuft Spieler zwei im Bogen außen herum.",
+      "moves": [
+       {
+        "who": "T",
+        "to": [
+         64,
+         45
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "T",
+        "to": [
+         56,
+         40
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "n2",
+        "to": [
+         71,
+         44
+        ],
+        "type": "lauf",
+        "delay": 0.5
+       },
+       {
+        "who": "n2",
+        "to": [
+         71.5,
+         32
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n2",
+        "to": [
+         68,
+         20
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Schauen und Pass",
+      "say": "Spieler zwei öffnet den Körper und schaut nach innen zu den Minitoren. Der Trainer spielt den Ball in den Lauf.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         48,
+         19
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         68.6,
+         20.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Direkt flanken: Ziel",
+      "say": "Spieler zwei flankt direkt ins obere Minitor. Das ist das Ziel. Dann geht der Trainer zurück an die Seite, und Spieler zwei holt am Hütchen den nächsten Ball.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         28.5,
+         14
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,519 @@
+{
+ "title": "Stürmer legt auf Zeichen ab",
+ "code": "UE-283",
+ "kind": "Übungsform",
+ "focuses": [
+  "Ballannahme",
+  "Passspiel",
+  "Bewegung"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Einzeltraining"
+ ],
+ "duration_minutes": 15,
+ "players_min": 1,
+ "players_max": 1,
+ "field_size": "18 x 18 m",
+ "description": "Ein Stürmer übt das Ablegen mit dem Rücken zum Tor. Er löst sich mit einer Doppelbewegung vom Dummy und bekommt den Pass vom Trainer. Ruft der Trainer „Prallen“, spielt er direkt zurück, hebt der Trainer eine Hand, legt er den Ball ins Minitor auf dieser Seite. Danach geht er schnell zurück an den Dummy.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 18 Metern. Oben in der Mitte steht ein Dummy, unten links und rechts je ein Minitor.",
+  "Verteilen: Spieler neun steht links neben dem Dummy. Der Trainer steht unten in der Mitte mit vielen Bällen.",
+  "Ablauf: Doppelbewegung weg vom Dummy, schauen und den Pass annehmen. Bei „Prallen“ direkt zum Trainer zurück, bei gehobener Hand ins Minitor auf dieser Seite ablegen.",
+  "Wechsel: Nach jedem Ablegen schnell zurück an den Dummy. Gearbeitet wird auf Zeit mit kurzen Pausen dazwischen."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Mit einer scharfen Doppelbewegung Platz zum Dummy schaffen",
+  "Vor der Annahme schnell zum Trainer schauen und das Zeichen erkennen",
+  "Genau und mit dem richtigen Tempo ablegen",
+  "Mit beiden Füßen ablegen und schnell wieder bereit sein"
+ ],
+ "materials": [
+  "1 Dummy",
+  "2 Minitore",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Stürmer legt auf Zeichen ab. Spieler neun löst sich vom Dummy, schaut zum Trainer und legt den Ball so ab, wie der Trainer es zeigt.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   }
+  ],
+  "goals": [
+   {
+    "x": 32,
+    "y": 46,
+    "side": "bottom"
+   },
+   {
+    "x": 68,
+    "y": 46,
+    "side": "bottom"
+   }
+  ],
+  "cones": [
+   {
+    "x": 52,
+    "y": 13,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 45,
+    "y": 17,
+    "label": "9"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 52,
+    "y": 50,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 52.6,
+    "y": 50.6
+   },
+   {
+    "id": "s1",
+    "x": 46.5,
+    "y": 52
+   },
+   {
+    "id": "s2",
+    "x": 44,
+    "y": 54
+   }
+  ],
+  "steps": [
+   {
+    "label": "Doppelbewegung",
+    "say": "Spieler neun läuft zuerst ein Stück hinter den Dummy. Dann zieht er scharf nach vorn vor den Dummy und bietet sich an.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       46,
+       9
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n9",
+      "to": [
+       51.5,
+       22
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Schauen und annehmen",
+    "say": "Spieler neun schaut zum Trainer: Ruft er etwas, oder hebt er eine Hand? Der Trainer passt zu ihm.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       52,
+       41
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b1",
+      "to": [
+       52.1,
+       22.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Prallen",
+    "say": "Der Trainer ruft „Prallen“. Spieler neun spielt den Ball direkt zum Trainer zurück und geht wieder an den Dummy.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       52.6,
+       50.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n9",
+      "to": [
+       46,
+       16
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Wieder anbieten",
+    "say": "Spieler neun löst sich noch einmal vom Dummy und schaut zum Trainer. Der Trainer passt und hebt die rechte Hand.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       51.5,
+       22
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n9",
+      "to": [
+       52,
+       41
+      ],
+      "type": "blick",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       52.1,
+       22.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Ins Minitor: Ziel",
+    "say": "Spieler neun nimmt den Ball mit und legt ihn ins rechte Minitor. Das ist das Ziel. Danach geht er schnell zurück an den Dummy, und die nächste Runde beginnt.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       55,
+       25
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       67.5,
+       45
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n9",
+      "to": [
+       45,
+       17
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 81,
+    "y1": 5,
+    "x2": 81,
+    "y2": 55,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Früh schauen und mit beiden Füßen ablegen.",
+   "title": "Früh schauen, beidfüßig",
+   "text": "Der Stürmer schaut schon zum Trainer, bevor der Ball kommt. So weiß er früh, wohin er ablegen muss. Zeigt die Hand nach links, legt er mit dem linken Fuß ins linke Minitor, sonst mit dem rechten.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 51.5,
+      "y": 22,
+      "label": "9"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 52,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 52.6,
+      "y": 50.6
+     },
+     {
+      "id": "s1",
+      "x": 46.5,
+      "y": 52
+     },
+     {
+      "id": "s2",
+      "x": 44,
+      "y": 54
+     }
+    ],
+    "steps": [
+     {
+      "label": "Früh schauen",
+      "say": "Spieler neun schaut zum Trainer, bevor der Pass kommt. Der Trainer hebt die linke Hand und passt.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         52,
+         41
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         52.1,
+         22.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Links ablegen: Ziel",
+      "say": "Spieler neun legt den Ball mit dem linken Fuß ins linke Minitor. Das ist das Ziel. Dann geht er zurück an den Dummy.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         49,
+         25
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         32.5,
+         45
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n9",
+        "to": [
+         45,
+         17
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Der Trainer ruft auch „Drehen“.",
+   "title": "Zuruf Drehen",
+   "text": "Ruft der Trainer „Drehen“, spielt der Stürmer zuerst direkt zurück. Dann öffnet er sich nach außen und nimmt den Pass mit offenem Körper an. Er dribbelt über die Linie hinter dem Dummy und passt zurück zum Trainer.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 51.5,
+      "y": 22,
+      "label": "9"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 52,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 52.6,
+      "y": 50.6
+     },
+     {
+      "id": "s1",
+      "x": 46.5,
+      "y": 52
+     },
+     {
+      "id": "s2",
+      "x": 44,
+      "y": 54
+     }
+    ],
+    "steps": [
+     {
+      "label": "Prallen",
+      "say": "Der Trainer passt und ruft „Drehen“. Spieler neun spielt den Ball zuerst direkt zurück.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         52,
+         41
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         52.1,
+         22.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         52.6,
+         50.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Außen öffnen",
+      "say": "Spieler neun läuft nach links außen und öffnet den Körper nach vorn. Der Trainer passt in den Lauf.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         36,
+         25
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         36.6,
+         25.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Über die Linie: Ziel",
+      "say": "Spieler neun dribbelt schnell über die Linie hinter dem Dummy, dann nach rechts, und passt zurück zum Trainer. Das ist das Ziel. Danach geht er zurück an den Dummy.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         41,
+         7
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n9",
+        "to": [
+         60,
+         7
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         52.6,
+         50.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "lines": [
+     {
+      "type": "rect",
+      "x": 25,
+      "y": 5,
+      "w": 50,
+      "h": 50
+     },
+     {
+      "type": "line",
+      "x1": 25,
+      "y1": 9,
+      "x2": 75,
+      "y2": 9,
+      "dashed": true
+     }
+    ]
+   }
+  }
+ ]
+}

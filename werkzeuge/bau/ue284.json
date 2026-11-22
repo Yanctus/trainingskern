@@ -1,0 +1,469 @@
+{
+ "title": "Flanke, dann Rücklauf zum Dummy",
+ "code": "UE-284",
+ "kind": "Übungsform",
+ "focuses": [
+  "Dribbling",
+  "Passspiel",
+  "Schnelligkeit"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Einzeltraining"
+ ],
+ "duration_minutes": 15,
+ "players_min": 1,
+ "players_max": 1,
+ "field_size": "18 x 18 m",
+ "description": "Ein Außenverteidiger übt Flanken und den schnellen Rücklauf. Nach einem Prallpass mit dem Trainer zieht er sich zum Hütchen zurück, bekommt den Ball und dribbelt am Dummy vorbei. Dann flankt er in eines der zwei Minitore. Sofort danach sprintet er zurück vor den Dummy.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 18 Metern. Links zwei Minitore und ein Dummy als Verteidiger im Strafraum, rechts ein Dummy als Gegenspieler und unten ein Hütchen.",
+  "Verteilen: Spieler zwei steht vor dem rechten Dummy. Der Trainer steht unten in der Mitte mit vielen Bällen.",
+  "Ablauf: Prallpass mit dem Trainer, zurück zum Hütchen, Ball annehmen, am Dummy vorbeidribbeln und in ein Minitor flanken.",
+  "Wechsel: Nach jeder Flanke sofort zurück vor den Dummy sprinten, dann kommt der nächste Ball. Gearbeitet wird auf Zeit oder bis alle Bälle gespielt sind."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Hohes Tempo: schnelle, scharfe Bewegungen wie im Spiel",
+  "Vor den Ball kommen und die Läufe gut timen",
+  "Nach der Flanke sofort zurücksprinten",
+  "Die Flanke genau und mit dem richtigen Tempo spielen"
+ ],
+ "materials": [
+  "2 Minitore",
+  "2 Dummys",
+  "1 Hütchen",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Flanke, dann Rücklauf zum Dummy. Spieler zwei dribbelt am Gegenspieler vorbei, flankt ins Minitor und sprintet sofort zurück.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   }
+  ],
+  "goals": [
+   {
+    "x": 28,
+    "y": 12,
+    "side": "left"
+   },
+   {
+    "x": 30,
+    "y": 32,
+    "side": "left"
+   }
+  ],
+  "cones": [
+   {
+    "x": 41,
+    "y": 21.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 67.5,
+    "y": 29,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 67,
+    "y": 52,
+    "color": "neon"
+   }
+  ],
+  "players": [
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 61,
+    "y": 24.5,
+    "label": "2"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 54,
+    "y": 45,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 54.6,
+    "y": 45.6
+   },
+   {
+    "id": "s1",
+    "x": 48.5,
+    "y": 47
+   },
+   {
+    "id": "s2",
+    "x": 46,
+    "y": 49
+   }
+  ],
+  "steps": [
+   {
+    "label": "Prallpass",
+    "say": "Der Trainer passt zu Spieler zwei. Spieler zwei spielt den Ball direkt zurück.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       61.6,
+       25.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       54.6,
+       45.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zurück zum Hütchen",
+    "say": "Spieler zwei sprintet zurück zum Hütchen und kommt vor den Ball. Der Trainer passt ihm den Ball auf den hinteren Fuß.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       62.5,
+       47.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       63.1,
+       48.1
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Am Dummy vorbei",
+    "say": "Spieler zwei dribbelt schnell auf den Dummy zu. Mit einer Finte geht er außen vorbei und nach vorn.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       65,
+       37
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n2",
+      "to": [
+       72.5,
+       30
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n2",
+      "to": [
+       70,
+       18
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Flanke ins Minitor",
+    "say": "Spieler zwei flankt in das obere Minitor. Das ist wie eine Flanke in den Strafraum.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       28.5,
+       12
+      ],
+      "type": "pass",
+      "bend": 6
+     }
+    ]
+   },
+   {
+    "label": "Rücklauf: Ziel",
+    "say": "Sofort sprintet Spieler zwei zurück vor den Dummy. Steht er dort, ist das Ziel geschafft. Dann kommt der nächste Ball, und die nächste Runde beginnt.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       61,
+       24.5
+      ],
+      "type": "lauf"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 81,
+    "y1": 5,
+    "x2": 81,
+    "y2": 55,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Die richtige Flanke wählen.",
+   "title": "Die richtige Flanke wählen",
+   "text": "Vor der Flanke schaut der Spieler, wo mehr Platz ist. Ist der Strafraum zu, spielt er den Rückpass ins untere Minitor. Er verrät dabei nicht zu früh, wohin der Ball geht.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 70,
+      "y": 18,
+      "label": "2"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 54,
+      "y": 45,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 70.6,
+      "y": 18.6
+     },
+     {
+      "id": "s1",
+      "x": 48.5,
+      "y": 47
+     },
+     {
+      "id": "s2",
+      "x": 46,
+      "y": 49
+     }
+    ],
+    "steps": [
+     {
+      "label": "Schauen",
+      "say": "Spieler zwei ist am Dummy vorbei und schaut nach innen: Wo ist mehr Platz?",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         49,
+         21
+        ],
+        "type": "blick"
+       }
+      ]
+     },
+     {
+      "label": "Rückpass: Ziel",
+      "say": "Unten ist mehr Platz. Spieler zwei spielt den Rückpass ins untere Minitor. Das ist das Ziel. Dann sprintet er zurück vor den Dummy.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         30.5,
+         32
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n2",
+        "to": [
+         61,
+         24.5
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Spieler zwei läuft hinter den Gegner.",
+   "title": "Lauf hinter den Gegner",
+   "text": "Am Hütchen gibt es einen zweiten Prallpass. Dann läuft der Spieler im Bogen außen hinter den Dummy. Der Trainer spielt den langen Ball in den Lauf, und der Spieler flankt direkt.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 62.5,
+      "y": 47.5,
+      "label": "2"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 54,
+      "y": 45,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 54.6,
+      "y": 45.6
+     },
+     {
+      "id": "s1",
+      "x": 48.5,
+      "y": 47
+     },
+     {
+      "id": "s2",
+      "x": 46,
+      "y": 49
+     }
+    ],
+    "steps": [
+     {
+      "label": "Prallpass am Hütchen",
+      "say": "Der Trainer passt zu Spieler zwei am Hütchen. Spieler zwei spielt direkt zurück.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         63.1,
+         48.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         54.6,
+         45.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Lauf hinter den Gegner",
+      "say": "Spieler zwei startet im Bogen außen hinter den Dummy. Der Trainer spielt den langen Ball in den Lauf.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         72.5,
+         38
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n2",
+        "to": [
+         73,
+         22
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n2",
+        "to": [
+         70,
+         12
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         70.6,
+         12.6
+        ],
+        "type": "pass",
+        "delay": 1.2
+       }
+      ]
+     },
+     {
+      "label": "Direkt flanken: Ziel",
+      "say": "Spieler zwei flankt direkt ins obere Minitor. Das ist das Ziel. Danach sprintet er zurück vor den Dummy, und die nächste Runde beginnt.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         28.5,
+         12
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n2",
+        "to": [
+         61,
+         24.5
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
