@@ -1,0 +1,618 @@
+{
+ "title": "Hürde, Leiter, Farbsprint",
+ "code": "UE-207",
+ "kind": "Übungsform",
+ "focuses": [
+  "Erwärmung",
+  "Schnelligkeit",
+  "Koordination"
+ ],
+ "age_groups": [
+  "F-Jugend",
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 10,
+ "players_min": 8,
+ "players_max": 8,
+ "field_size": "18 x 18 m",
+ "description": "Ein Aufwärmen für schnelle Füße und schnelle Reaktion. Je ein Spieler aus beiden Teams läuft gleichzeitig über eine Hürde und durch die Leiter. In der Mitte stehen sich beide gegenüber und wippen auf den Zehen. Der Trainer wirft ein Leibchen auf den Boden, und beide sprinten durch das Tor in dieser Farbe.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 18 Metern. Unten und oben je eine Hürde und eine Leiter zur Mitte. Links ein Tor aus orangen Hütchen, rechts eines aus gelben.",
+  "Verteilen: Team Neon wartet unten links neben dem Feld, Team Rot oben rechts. Der Trainer steht oben links mit einem orangen und einem gelben Leibchen.",
+  "Ablauf: Auf Pfiff starten je einer aus beiden Teams gleichzeitig: schnelle Schritte über die Hürde, dann durch die Leiter. In der Mitte stehen sie sich gegenüber und wippen auf den Zehen. Der Trainer wirft ein Leibchen, und beide sprinten durch das Tor in dieser Farbe.",
+  "Wertung und Wechsel: Wer zuerst durch das Tor ist, bekommt einen Punkt für sein Team. Dann stellen sich beide hinten an, und die nächsten zwei starten."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Saubere Technik über Hürde und Leiter",
+  "Schnell reagieren und sofort lossprinten",
+  "Beim Sprint den Körper vor den Gegner schieben",
+  "Konzentriert bleiben und richtig reagieren"
+ ],
+ "materials": [
+  "4 Hütchen",
+  "2 Hürden",
+  "2 Koordinationsleitern",
+  "2 Leibchen (orange und gelb)"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Hürde, Leiter, Farbsprint. Zwei Spieler laufen gleichzeitig los und müssen in der Mitte blitzschnell auf das Leibchen reagieren.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   }
+  ],
+  "cones": [
+   {
+    "x": 30,
+    "y": 24,
+    "color": "orange"
+   },
+   {
+    "x": 30,
+    "y": 33.5,
+    "color": "orange"
+   },
+   {
+    "x": 70,
+    "y": 24,
+    "color": "neon"
+   },
+   {
+    "x": 70,
+    "y": 33.5,
+    "color": "neon"
+   },
+   {
+    "x": 47,
+    "y": 51,
+    "color": "neon",
+    "shape": "huerde"
+   },
+   {
+    "x": 53,
+    "y": 9,
+    "color": "neon",
+    "shape": "huerde"
+   },
+   {
+    "x": 50,
+    "y": 37,
+    "color": "neon",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 50,
+    "y": 40,
+    "color": "neon",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 50,
+    "y": 43,
+    "color": "neon",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 50,
+    "y": 46,
+    "color": "neon",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 50,
+    "y": 14,
+    "color": "neon",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 50,
+    "y": 17,
+    "color": "neon",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 50,
+    "y": 20,
+    "color": "neon",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 50,
+    "y": 23,
+    "color": "neon",
+    "shape": "huerde_ou"
+   }
+  ],
+  "players": [
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 41,
+    "y": 51,
+    "label": "4"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 20.5,
+    "y": 51,
+    "label": "5"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 12,
+    "y": 51,
+    "label": "6"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 3.5,
+    "y": 51,
+    "label": "8"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 59,
+    "y": 9,
+    "label": "11"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 79.5,
+    "y": 9,
+    "label": "9"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 88,
+    "y": 9,
+    "label": "7"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 96.5,
+    "y": 9,
+    "label": "10"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 36,
+    "y": 17,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "s1",
+    "x": 33,
+    "y": 21
+   },
+   {
+    "id": "s2",
+    "x": 29.5,
+    "y": 21
+   }
+  ],
+  "steps": [
+   {
+    "label": "Hürde und Leiter",
+    "say": "Auf Pfiff starten Neon vier und Rot elf gleichzeitig. Beide machen schnelle Schritte über die Hürde und laufen dann mit kleinen, schnellen Schritten durch die Leiter.",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       51,
+       51
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n4",
+      "to": [
+       50,
+       48.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n4",
+      "to": [
+       50,
+       35
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r11",
+      "to": [
+       49,
+       9
+      ],
+      "type": "lauf",
+      "delay": 0.1
+     },
+     {
+      "who": "r11",
+      "to": [
+       50,
+       11.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r11",
+      "to": [
+       50,
+       25
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "In der Mitte wippen",
+    "say": "In der Mitte stehen sich beide gegenüber. Sie wippen auf den Zehen und schauen auf den Trainer, bereit zum Sprint.",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       46,
+       31
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r11",
+      "to": [
+       54.5,
+       26.5
+      ],
+      "type": "lauf"
+     }
+    ]
+   },
+   {
+    "label": "Orange: Punkt",
+    "say": "Der Trainer wirft das orange Leibchen. Beide sprinten nach links durch das orange Tor. Neon vier ist schneller und schiebt sich vor Rot elf, und das gibt einen Punkt für Team Neon. Dann stellen sich beide hinten an, und Neon fünf und Rot neun starten.",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       14,
+       29.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r11",
+      "to": [
+       22.5,
+       26.5
+      ],
+      "type": "lauf",
+      "delay": 0.15
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 84,
+    "y1": 5,
+    "x2": 84,
+    "y2": 55,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Den Körper vor den Gegner schieben.",
+   "title": "Körper davor",
+   "text": "Beim Sprint zum Tor schiebt man sich früh mit dem Körper vor den Gegner. Dann kann er nicht mehr vorbei, auch wenn er genauso schnell ist. Wichtig: nicht schubsen, nur den Weg zumachen.",
+   "board": {
+    "players": [
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 46,
+      "y": 31,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 20.5,
+      "y": 51,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 12,
+      "y": 51,
+      "label": "6"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 3.5,
+      "y": 51,
+      "label": "8"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 54.5,
+      "y": 26.5,
+      "label": "11"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 79.5,
+      "y": 9,
+      "label": "9"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 88,
+      "y": 9,
+      "label": "7"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 96.5,
+      "y": 9,
+      "label": "10"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 36,
+      "y": 17,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "s1",
+      "x": 33,
+      "y": 21
+     },
+     {
+      "id": "s2",
+      "x": 29.5,
+      "y": 21
+     }
+    ],
+    "steps": [
+     {
+      "label": "Gelb: früh davor",
+      "say": "Der Trainer wirft das gelbe Leibchen. Rot elf steht näher am gelben Tor, sprintet los und schiebt sich sofort vor Neon vier.",
+      "moves": [
+       {
+        "who": "r11",
+        "to": [
+         64,
+         27
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n4",
+        "to": [
+         60,
+         30.5
+        ],
+        "type": "lauf",
+        "delay": 0.15
+       }
+      ]
+     },
+     {
+      "label": "Durch das Tor: Punkt",
+      "say": "Neon vier kommt nicht mehr vorbei. Rot elf ist zuerst durch das gelbe Tor, und das gibt einen Punkt für Team Rot.",
+      "moves": [
+       {
+        "who": "r11",
+        "to": [
+         86,
+         27
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n4",
+        "to": [
+         77.5,
+         30.5
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Durch das andere Tor sprinten.",
+   "title": "Das andere Tor",
+   "text": "Jetzt wird es schwerer für den Kopf: Man sprintet durch das Tor mit der anderen Farbe. Fällt das orange Leibchen, geht es durch das gelbe Tor, und umgekehrt. Wer falsch losläuft, verliert Zeit.",
+   "board": {
+    "players": [
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 46,
+      "y": 31,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 20.5,
+      "y": 51,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 12,
+      "y": 51,
+      "label": "6"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 3.5,
+      "y": 51,
+      "label": "8"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 54.5,
+      "y": 26.5,
+      "label": "11"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 79.5,
+      "y": 9,
+      "label": "9"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 88,
+      "y": 9,
+      "label": "7"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 96.5,
+      "y": 9,
+      "label": "10"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 36,
+      "y": 17,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "s1",
+      "x": 33,
+      "y": 21
+     },
+     {
+      "id": "s2",
+      "x": 29.5,
+      "y": 21
+     }
+    ],
+    "steps": [
+     {
+      "label": "Orange fällt",
+      "say": "Der Trainer wirft das orange Leibchen. Rot elf läuft zuerst nach links, falsch! Neon vier denkt mit und sprintet nach rechts.",
+      "moves": [
+       {
+        "who": "r11",
+        "to": [
+         47,
+         22
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n4",
+        "to": [
+         60,
+         30.5
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Gelbes Tor: Punkt",
+      "say": "Rot elf dreht um, ist aber zu spät. Neon vier ist zuerst durch das gelbe Tor, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         86,
+         30.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r11",
+        "to": [
+         57,
+         26
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r11",
+        "to": [
+         77.5,
+         27.5
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

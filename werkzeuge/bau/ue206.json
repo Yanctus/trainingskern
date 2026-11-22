@@ -1,0 +1,675 @@
+{
+ "title": "Viererkette schiebt zum Ball",
+ "code": "UE-206",
+ "kind": "Übungsform",
+ "focuses": [
+  "Verteidigen",
+  "Schnelligkeit",
+  "Bewegung"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 4,
+ "players_max": 4,
+ "field_size": "27 x 27 m",
+ "description": "Vier Verteidiger stehen als Viererkette in der Mitte eines Feldes. Vor ihnen liegen vier farbige Hütchen mit je einem Ball. Ruft der Trainer eine Farbe, läuft der nächste Spieler zum Ball und setzt ihn unter Druck, die anderen drei schieben mit und sichern ab. Ruft er eine Stange, sprinten alle zurück und stellen sich neu auf.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 27 mal 27 Metern. Unten vier Hütchen in vier Farben, zum Beispiel Rot, Gelb, Blau und Weiß, auf jedem ein Ball. Auf der Tafel sind Rot und Blau orange, Gelb und Weiß neon. Oben links und rechts am Rand je eine Stange.",
+  "Verteilen: Vier Spieler von Team Neon stehen als Viererkette oben in der Mitte: zwei, fünf, sechs und drei. Der Trainer steht links an der Seite mit Bällen.",
+  "Ablauf: Der Trainer ruft eine Farbe. Der Spieler, der am nächsten dran ist, sprintet zum Ball und setzt ihn unter Druck. Die anderen drei schieben mit und sichern ab. Ruft der Trainer eine Stange, sprinten alle zurück zu dieser Seite. Links und rechts gelten aus Sicht der Verteidiger.",
+  "Wechsel: Nach jedem Kommando gehen alle zurück in die Mitte, dann kommt das nächste. Später spielt die Kette sich einen Ball zu, und der Trainer ruft: Ballverlust und eine Farbe."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Die vier bewegen sich wie eine Einheit",
+  "Abstände halten und den Pressenden absichern",
+  "Viel reden und mit Zeichen zeigen",
+  "Über die Schulter schauen und schnell reagieren"
+ ],
+ "materials": [
+  "4 Hütchen in vier Farben",
+  "2 Stangen",
+  "6 Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Viererkette schiebt zum Ball. Der Trainer ruft eine Farbe, und die Kette reagiert gemeinsam wie eine Einheit.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   }
+  ],
+  "cones": [
+   {
+    "x": 27.5,
+    "y": 49,
+    "color": "neon"
+   },
+   {
+    "x": 42,
+    "y": 49,
+    "color": "orange"
+   },
+   {
+    "x": 57,
+    "y": 49,
+    "color": "neon"
+   },
+   {
+    "x": 71,
+    "y": 49,
+    "color": "orange"
+   },
+   {
+    "x": 25,
+    "y": 11,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 75,
+    "y": 11,
+    "color": "neon",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 31,
+    "y": 20,
+    "label": "2"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 43,
+    "y": 15,
+    "label": "5"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 57,
+    "y": 15,
+    "label": "6"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 69,
+    "y": 20,
+    "label": "3"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 13,
+    "y": 32,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "bw",
+    "x": 27.5,
+    "y": 47
+   },
+   {
+    "id": "bb",
+    "x": 42,
+    "y": 47
+   },
+   {
+    "id": "bg",
+    "x": 57,
+    "y": 47
+   },
+   {
+    "id": "br",
+    "x": 71,
+    "y": 47
+   },
+   {
+    "id": "s1",
+    "x": 14.6,
+    "y": 36
+   },
+   {
+    "id": "s2",
+    "x": 11,
+    "y": 36
+   }
+  ],
+  "steps": [
+   {
+    "label": "Rot: Druck auf den Ball",
+    "say": "Der Trainer ruft: Rot! Das rote Hütchen ist ganz rechts. Neon drei ist am nächsten dran und sprintet zum Ball. Gleichzeitig schieben die anderen drei nach rechts, Neon sechs sichert schräg dahinter ab. Neon zwei schaut über die Schulter nach hinten.",
+    "moves": [
+     {
+      "who": "n3",
+      "to": [
+       70,
+       42
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n6",
+      "to": [
+       62,
+       26
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n5",
+      "to": [
+       52,
+       21
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n2",
+      "to": [
+       41,
+       20
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n2",
+      "to": [
+       33,
+       6
+      ],
+      "type": "blick",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zurück in die Mitte",
+    "say": "Jetzt gehen alle vier schnell zurück in die Mitte und stehen wieder als Kette.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       31,
+       20
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n5",
+      "to": [
+       43,
+       15
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n6",
+      "to": [
+       57,
+       15
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n3",
+      "to": [
+       69,
+       20
+      ],
+      "type": "lauf"
+     }
+    ]
+   },
+   {
+    "label": "Weiß: Druck auf den Ball",
+    "say": "Der Trainer ruft: Weiß! Das weiße Hütchen ist ganz links. Jetzt ist Neon zwei am nächsten dran und sprintet los. Neon fünf sichert ab, Neon sechs und Neon drei schieben nach links.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       28.5,
+       42
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n5",
+      "to": [
+       37,
+       28
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n6",
+      "to": [
+       47,
+       21
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n3",
+      "to": [
+       58,
+       20
+      ],
+      "type": "lauf"
+     }
+    ]
+   },
+   {
+    "label": "Stange links: Zurücklaufen",
+    "say": "Der Trainer ruft: Stange links! Ein Ball fliegt über die Kette, links aus Sicht der Verteidiger. Alle vier sprinten zurück zu dieser Stange, Neon drei ganz außen, die anderen schräg daneben. Steht die Kette so, ist das Kommando geschafft. Dann gehen alle zurück in die Mitte, und der Trainer ruft das nächste Kommando.",
+    "moves": [
+     {
+      "who": "n3",
+      "to": [
+       70,
+       8
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n6",
+      "to": [
+       61,
+       11
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n5",
+      "to": [
+       52,
+       14
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n2",
+      "to": [
+       42,
+       30
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n2",
+      "to": [
+       43,
+       17
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "27 m"
+   },
+   {
+    "x1": 84,
+    "y1": 5,
+    "x2": 84,
+    "y2": 55,
+    "text": "27 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Als eine Einheit schieben.",
+   "title": "Wie eine Einheit",
+   "text": "Die vier Verteidiger bewegen sich, als wären sie mit einem Seil verbunden. Läuft einer raus, rücken die anderen nach und halten kurze Abstände. Der Nachbar sichert immer schräg dahinter ab.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 31,
+      "y": 20,
+      "label": "2"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 43,
+      "y": 15,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 57,
+      "y": 15,
+      "label": "6"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 69,
+      "y": 20,
+      "label": "3"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 13,
+      "y": 32,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "bw",
+      "x": 27.5,
+      "y": 47
+     },
+     {
+      "id": "bb",
+      "x": 42,
+      "y": 47
+     },
+     {
+      "id": "bg",
+      "x": 57,
+      "y": 47
+     },
+     {
+      "id": "br",
+      "x": 71,
+      "y": 47
+     },
+     {
+      "id": "s1",
+      "x": 14.6,
+      "y": 36
+     },
+     {
+      "id": "s2",
+      "x": 11,
+      "y": 36
+     }
+    ],
+    "steps": [
+     {
+      "label": "Blau: Absichern",
+      "say": "Der Trainer ruft: Blau! Das blaue Hütchen ist das zweite von links. Neon fünf sprintet zum Ball, Neon sechs sichert schräg dahinter ab. Neon zwei und Neon drei rücken nach innen.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         43,
+         42
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n6",
+        "to": [
+         50,
+         28
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n2",
+        "to": [
+         33,
+         26
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n3",
+        "to": [
+         61,
+         21
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Gelb: Weiterschieben",
+      "say": "Der Trainer ruft: Gelb! Neon sechs sprintet zum gelben Hütchen. Neon fünf geht zurück und sichert jetzt ihn ab. Die Abstände bleiben kurz, alle reden miteinander.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         57.5,
+         42
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n5",
+        "to": [
+         48,
+         25
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n3",
+        "to": [
+         66,
+         27
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n2",
+        "to": [
+         39,
+         20
+        ],
+        "type": "lauf"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Mit Ball und Ballverlust.",
+   "title": "Mit Ball",
+   "text": "Jetzt hat die Kette einen Ball und spielt ihn sich zu, wie beim Aufbau von hinten. Dann geht der Ball zum Trainer, und er ruft: Ballverlust und eine Farbe. Sofort presst der Nächste den Ball, und die anderen sichern ab.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 31,
+      "y": 20,
+      "label": "2"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 43,
+      "y": 15,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 57,
+      "y": 15,
+      "label": "6"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 69,
+      "y": 20,
+      "label": "3"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 13,
+      "y": 32,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b0",
+      "x": 69.6,
+      "y": 20.6
+     },
+     {
+      "id": "bw",
+      "x": 27.5,
+      "y": 47
+     },
+     {
+      "id": "bb",
+      "x": 42,
+      "y": 47
+     },
+     {
+      "id": "bg",
+      "x": 57,
+      "y": 47
+     },
+     {
+      "id": "br",
+      "x": 71,
+      "y": 47
+     },
+     {
+      "id": "s1",
+      "x": 14.6,
+      "y": 36
+     },
+     {
+      "id": "s2",
+      "x": 11,
+      "y": 36
+     }
+    ],
+    "steps": [
+     {
+      "label": "Ball laufen lassen",
+      "say": "Neon drei spielt zu Neon sechs, der zu Neon fünf und der zu Neon zwei. Der Ball läuft schnell durch die Kette.",
+      "moves": [
+       {
+        "who": "b0",
+        "to": [
+         57.6,
+         15.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b0",
+        "to": [
+         43.6,
+         15.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b0",
+        "to": [
+         31.6,
+         20.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Ballverlust: Gelb",
+      "say": "Neon zwei spielt zum Trainer. Der ruft: Ballverlust, Gelb! Neon sechs sprintet sofort zum gelben Hütchen, Neon fünf und Neon drei sichern ab, Neon zwei rückt nach innen.",
+      "moves": [
+       {
+        "who": "b0",
+        "to": [
+         13.6,
+         32.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n6",
+        "to": [
+         57.5,
+         42
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n5",
+        "to": [
+         49,
+         28
+        ],
+        "type": "lauf",
+        "delay": 1.0
+       },
+       {
+        "who": "n3",
+        "to": [
+         66,
+         28
+        ],
+        "type": "lauf",
+        "delay": 1.0
+       },
+       {
+        "who": "n2",
+        "to": [
+         38,
+         22
+        ],
+        "type": "lauf",
+        "delay": 1.0
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

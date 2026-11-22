@@ -1,0 +1,655 @@
+{
+ "title": "Fünf Pässe, dann zum Stürmer",
+ "code": "UE-211",
+ "kind": "Spielform",
+ "focuses": [
+  "Passspiel",
+  "Torschuss",
+  "Zusammenspiel"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 10,
+ "players_max": 12,
+ "field_size": "32 x 23 m",
+ "description": "In der Mitte spielen drei gegen drei, und jedes Team hat einen Stürmer in der Endzone vor dem gegnerischen Tor. Nach fünf Pässen in Folge darf das Team einen Steilpass zu seinem Stürmer spielen. Der Stürmer ist allein mit dem Torwart und muss schnell und sicher abschließen. In der Steigerung darf ein Verteidiger zurück in die Endzone laufen.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 32 mal 23 Metern mit drei Zonen: oben und unten je eine Endzone von acht Metern, dazwischen die Mitte. Oben und unten je ein Jugendtor.",
+  "Verteilen: Team Neon und Team Rot spielen mit je drei Spielern in der Mitte. Jedes Team hat einen Stürmer in der Endzone vor dem gegnerischen Tor. In beiden Toren steht ein Torwart. Der Trainer steht an der Seite mit Bällen.",
+  "Ablauf: Der Torwart spielt den Ball in die Mitte. Das Team am Ball muss fünf Pässe in Folge schaffen. Dann spielt es den Ball steil zum eigenen Stürmer, und der schießt allein gegen den Torwart.",
+  "Wertung und Wechsel: Ein Treffer gibt zwei Punkte, ein Schuss aufs Tor gibt einen Punkt. Hält der Torwart, gibt das zwei Punkte für den Torwart. Danach spielt der Trainer den nächsten Ball ein, und nach ein paar Minuten tauschen die Stürmer mit Spielern aus der Mitte."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Schnell kombinieren, um eine Chance zu bekommen",
+  "Als Stürmer in der Endzone anbieten",
+  "Allein vor dem Torwart ruhig und sicher abschließen",
+  "Keinen Pass erzwingen, lieber Gegner herauslocken"
+ ],
+ "materials": [
+  "2 Jugendtore",
+  "8 Hütchen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Fünf Pässe, dann zum Stürmer. In der Mitte spielen drei gegen drei, und nach fünf Pässen geht der Ball steil zum Stürmer in der Endzone.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 27,
+    "y": 5,
+    "w": 46,
+    "h": 50
+   },
+   {
+    "type": "line",
+    "x1": 27,
+    "y1": 17,
+    "x2": 73,
+    "y2": 17,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 27,
+    "y1": 43,
+    "x2": 73,
+    "y2": 43,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "jugend"
+   },
+   {
+    "x": 50,
+    "y": 55,
+    "side": "bottom",
+    "size": "jugend"
+   }
+  ],
+  "players": [
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 50,
+    "y": 7,
+    "label": "TW"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 50,
+    "y": 53,
+    "label": "TW"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 62,
+    "y": 10,
+    "label": "9"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 38,
+    "y": 50,
+    "label": "10"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 28,
+    "y": 30,
+    "label": "7"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 36.5,
+    "y": 34,
+    "label": "2"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 45,
+    "y": 24,
+    "label": "4"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 53.5,
+    "y": 28,
+    "label": "5"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 62,
+    "y": 32,
+    "label": "11"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 70.5,
+    "y": 27,
+    "label": "6"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 18,
+    "y": 30,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 50.6,
+    "y": 53.6
+   },
+   {
+    "id": "s1",
+    "x": 18,
+    "y": 34
+   },
+   {
+    "id": "s2",
+    "x": 14.4,
+    "y": 34
+   }
+  ],
+  "steps": [
+   {
+    "label": "Anspiel vom Torwart",
+    "say": "Der Torwart unten spielt den Ball zu Neon vier. Jetzt hat Team Neon den Ball und greift nach oben an.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       45.6,
+       24.6
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Fünf Pässe",
+    "say": "Team Neon passt sich den Ball in der Mitte zu, Team Rot presst. Neon vier spielt zu Neon sieben und bekommt den Ball zurück. So zählt Team Neon bis fünf.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       28.6,
+       30.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r2",
+      "to": [
+       31,
+       35
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       45.6,
+       24.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r5",
+      "to": [
+       47,
+       21
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       62.6,
+       32.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Steilpass zum Stürmer",
+    "say": "Nach dem fünften Pass bietet sich Neon neun in der Endzone an. Neon elf spielt den Ball steil zu ihm.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       57,
+       15
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       57.6,
+       15.6
+      ],
+      "type": "pass",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Abschluss: Punkt",
+    "say": "Neon neun ist allein mit dem Torwart und schießt sicher ins Tor. Das gibt zwei Punkte für Team Neon. Dann spielt der Trainer den nächsten Ball ins Mittelfeld, und das Team, das ihn bekommt, greift an.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       55.5,
+       5.6
+      ],
+      "type": "pass"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 27,
+    "y1": 58.6,
+    "x2": 73,
+    "y2": 58.6,
+    "text": "23 m"
+   },
+   {
+    "x1": 80,
+    "y1": 5,
+    "x2": 80,
+    "y2": 55,
+    "text": "32 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Die Lücke nutzen.",
+   "title": "Durch die Lücke",
+   "text": "Gehen zwei Verteidiger auseinander, entsteht zwischen ihnen eine Lücke. Genau dann spielt der Ballführende den Steilpass durch die Lücke. So kommt der Stürmer hinter die Abwehr.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 50,
+      "y": 7,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 50,
+      "y": 53,
+      "label": "TW"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 62,
+      "y": 10,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 38,
+      "y": 50,
+      "label": "10"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 28,
+      "y": 30,
+      "label": "7"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 36.5,
+      "y": 34,
+      "label": "2"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 45,
+      "y": 24,
+      "label": "4"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 53.5,
+      "y": 28,
+      "label": "5"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 62,
+      "y": 32,
+      "label": "11"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 70.5,
+      "y": 27,
+      "label": "6"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 18,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 62.6,
+      "y": 32.6
+     },
+     {
+      "id": "s1",
+      "x": 18,
+      "y": 34
+     },
+     {
+      "id": "s2",
+      "x": 14.4,
+      "y": 34
+     }
+    ],
+    "steps": [
+     {
+      "label": "Lücke geht auf",
+      "say": "Neon elf hat den Ball. Rot fünf läuft zu Neon vier. Rot sechs bleibt außen. Zwischen den beiden geht eine Lücke auf.",
+      "moves": [
+       {
+        "who": "r5",
+        "to": [
+         48,
+         22
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r6",
+        "to": [
+         71,
+         31
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Durch die Lücke: Punkt",
+      "say": "Neon neun startet, und Neon elf spielt den Ball genau durch die Lücke in seinen Lauf. Neon neun schießt, und das gibt zwei Punkte für Team Neon.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         60,
+         15
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         60.6,
+         15.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         55.5,
+         5.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Ein Verteidiger darf in die Endzone zurück.",
+   "title": "Ein Verteidiger hilft",
+   "text": "Sobald der Steilpass kommt, darf ein Verteidiger zurück in die Endzone laufen. Der Stürmer hat jetzt weniger Zeit und muss nach der ersten Ballannahme schnell schießen. Die Verteidiger müssen früh erkennen, wo es gefährlich wird.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 50,
+      "y": 7,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 50,
+      "y": 53,
+      "label": "TW"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 62,
+      "y": 10,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 38,
+      "y": 50,
+      "label": "10"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 28,
+      "y": 30,
+      "label": "7"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 36.5,
+      "y": 20,
+      "label": "2"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 45,
+      "y": 24,
+      "label": "4"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 53.5,
+      "y": 28,
+      "label": "5"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 62,
+      "y": 32,
+      "label": "11"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 70.5,
+      "y": 27,
+      "label": "6"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 18,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 62.6,
+      "y": 32.6
+     },
+     {
+      "id": "s1",
+      "x": 18,
+      "y": 34
+     },
+     {
+      "id": "s2",
+      "x": 14.4,
+      "y": 34
+     }
+    ],
+    "steps": [
+     {
+      "label": "Gefahr erkennen",
+      "say": "Neon elf hat den Ball. Rot zwei schaut sich um und sieht Neon neun allein in der Endzone. Das ist gefährlich.",
+      "moves": [
+       {
+        "who": "r2",
+        "to": [
+         55,
+         13
+        ],
+        "type": "blick"
+       }
+      ]
+     },
+     {
+      "label": "Zurück in die Endzone",
+      "say": "Neon elf spielt steil zu Neon neun. Rot zwei läuft sofort zurück in die Endzone.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         57,
+         15
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         57.6,
+         15.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       },
+       {
+        "who": "r2",
+        "to": [
+         48,
+         15
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Schnell schießen: Punkt",
+      "say": "Neon neun nimmt den Ball mit dem ersten Kontakt Richtung Tor mit und schießt, bevor Rot zwei bei ihm ist. Das gibt zwei Punkte für Team Neon.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         59,
+         11
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "r2",
+        "to": [
+         53,
+         13
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "b1",
+        "to": [
+         55.5,
+         5.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

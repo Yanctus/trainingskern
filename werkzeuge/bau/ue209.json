@@ -1,0 +1,925 @@
+{
+ "title": "Zwei Doppelpässe zum Abschluss",
+ "code": "UE-209",
+ "kind": "Übungsform",
+ "focuses": [
+  "Erwärmung",
+  "Passspiel",
+  "Torschuss"
+ ],
+ "age_groups": [
+  "F-Jugend",
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 10,
+ "players_min": 10,
+ "players_max": 12,
+ "field_size": "27 x 37 m",
+ "description": "Ein Aufwärmen für schnelle Füße, Doppelpässe und einen schnellen Abschluss. Ein Spieler läuft durch eine Hütchenreihe, mal seitlich, mal vorwärts, mal rückwärts. Dann spielt er einen Doppelpass mit dem Spieler in der Mitte und einen zweiten mit dem Spieler an der Seite und schießt aufs Minitor. Beide Gruppen arbeiten gleichzeitig, jede in ihrer Hälfte.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 27 mal 37 Metern, in der Mitte längs geteilt. Oben in jeder Hälfte ein Minitor, unten in jeder Hälfte eine Reihe aus fünf Hütchen.",
+  "Verteilen: Team Neon links und Team Rot rechts, je ein Spieler in der Mitte mit Ball und einer an der Seite. Die anderen warten unten neben den Hütchen. Der Trainer steht oben zwischen den Toren mit Bällen.",
+  "Ablauf: Der Läufer läuft durch die Hütchen und spielt einen Doppelpass mit dem Mittelspieler. Dann bekommt er den Ball noch einmal, spielt einen Doppelpass mit dem Seitenspieler und schießt aufs Minitor. Beide Gruppen laufen gleichzeitig.",
+  "Wertung und Wechsel: Ein Treffer gibt einen Punkt für den Läufer. Dann rücken alle eine Rolle weiter: Der Läufer wird Mittelspieler, der Mittelspieler geht an die Seite, und der Seitenspieler joggt zurück zur Gruppe."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Tief in die Knie und schnelle Füße an den Hütchen",
+  "Erst weg vom Ball, dann schnell zum Ball anbieten",
+  "Den Pass genau in den Lauf spielen",
+  "Direkt abschließen, ohne langsamer zu werden"
+ ],
+ "materials": [
+  "2 Minitore",
+  "10 Hütchen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Zwei Doppelpässe zum Abschluss. Ein Läufer kommt mit schnellen Füßen durch die Hütchen, spielt zwei Doppelpässe und schießt aufs Minitor.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 31,
+    "y": 6,
+    "w": 38,
+    "h": 48
+   },
+   {
+    "type": "line",
+    "x1": 50,
+    "y1": 6,
+    "x2": 50,
+    "y2": 54,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 37,
+    "y": 6,
+    "side": "top"
+   },
+   {
+    "x": 63,
+    "y": 6,
+    "side": "top"
+   }
+  ],
+  "cones": [
+   {
+    "x": 33,
+    "y": 51,
+    "color": "orange"
+   },
+   {
+    "x": 36,
+    "y": 51,
+    "color": "orange"
+   },
+   {
+    "x": 39,
+    "y": 51,
+    "color": "orange"
+   },
+   {
+    "x": 42,
+    "y": 51,
+    "color": "orange"
+   },
+   {
+    "x": 45,
+    "y": 51,
+    "color": "orange"
+   },
+   {
+    "x": 55,
+    "y": 51,
+    "color": "orange"
+   },
+   {
+    "x": 58,
+    "y": 51,
+    "color": "orange"
+   },
+   {
+    "x": 61,
+    "y": 51,
+    "color": "orange"
+   },
+   {
+    "x": 64,
+    "y": 51,
+    "color": "orange"
+   },
+   {
+    "x": 67,
+    "y": 51,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 29.5,
+    "y": 51,
+    "label": "2"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 21,
+    "y": 51,
+    "label": "5"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 12.5,
+    "y": 51,
+    "label": "6"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 44,
+    "y": 30,
+    "label": "3"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 31,
+    "y": 24,
+    "label": "4"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 70.5,
+    "y": 51,
+    "label": "7"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 79,
+    "y": 51,
+    "label": "10"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 87.5,
+    "y": 51,
+    "label": "11"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 56,
+    "y": 30,
+    "label": "8"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 69,
+    "y": 24,
+    "label": "9"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 50,
+    "y": 2.5,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 44.6,
+    "y": 30.6
+   },
+   {
+    "id": "b2",
+    "x": 56.6,
+    "y": 30.6
+   },
+   {
+    "id": "s1",
+    "x": 53.6,
+    "y": 3
+   },
+   {
+    "id": "s2",
+    "x": 46.4,
+    "y": 3
+   }
+  ],
+  "steps": [
+   {
+    "label": "Schnelle Füße",
+    "say": "Beide Gruppen starten gleichzeitig. Neon zwei läuft durch die Hütchen, mal seitlich, mal vorwärts, mal rückwärts. Auf der anderen Seite macht Rot sieben dasselbe.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       33,
+       48
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n2",
+      "to": [
+       36,
+       54
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       39,
+       48
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       42,
+       54
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       45,
+       48
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       46,
+       45
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r7",
+      "to": [
+       67,
+       48
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r7",
+      "to": [
+       64,
+       54
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r7",
+      "to": [
+       61,
+       48
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r7",
+      "to": [
+       58,
+       54
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r7",
+      "to": [
+       55,
+       48
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r7",
+      "to": [
+       54,
+       45
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Erster Doppelpass",
+    "say": "Nach dem letzten Hütchen spielt Neon drei aus der Mitte zu Neon zwei, und Neon zwei spielt direkt zurück. Rot acht und Rot sieben machen es genauso.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       46.6,
+       45.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       44.6,
+       30.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b2",
+      "to": [
+       54.6,
+       45.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b2",
+      "to": [
+       56.6,
+       30.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zweiter Doppelpass",
+    "say": "Neon zwei macht zwei Schritte zur Seite, und Neon drei spielt ihn noch einmal an. Neon zwei passt weiter zu Neon vier an der Seite. Rechts spielen Rot acht, Rot sieben und Rot neun gleichzeitig.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       42,
+       43
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       42.6,
+       43.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       31.6,
+       24.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r7",
+      "to": [
+       58,
+       43
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b2",
+      "to": [
+       58.6,
+       43.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b2",
+      "to": [
+       69.6,
+       24.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Abschluss: Punkt",
+    "say": "Neon zwei läuft nach vorn, Neon vier spielt ihm den Ball in den Lauf, und Neon zwei schießt direkt ins Minitor. Das gibt einen Punkt für Neon zwei, und Rot sieben trifft genauso. Dann wird Neon zwei Mittelspieler, Neon drei geht an die Seite, Neon vier joggt zurück zur Gruppe, und Neon fünf läuft als Nächster.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       39,
+       27
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       39.6,
+       27.6
+      ],
+      "type": "pass",
+      "delay": 0.4
+     },
+     {
+      "who": "b1",
+      "to": [
+       37.5,
+       7
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r7",
+      "to": [
+       61,
+       27
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b2",
+      "to": [
+       61.6,
+       27.6
+      ],
+      "type": "pass",
+      "delay": 0.4
+     },
+     {
+      "who": "b2",
+      "to": [
+       62.5,
+       7
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 31,
+    "y1": 58.6,
+    "x2": 69,
+    "y2": 58.6,
+    "text": "27 m"
+   },
+   {
+    "x1": 95,
+    "y1": 6,
+    "x2": 95,
+    "y2": 54,
+    "text": "37 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Den Pass genau in den Lauf spielen.",
+   "title": "Pass in den Lauf",
+   "text": "Der Seitenspieler spielt den Ball nicht zum Läufer, sondern vor ihn in den Lauf. So muss der Läufer nicht abbremsen. Er läuft auf den Ball und schießt direkt, ohne den Ball erst anzunehmen.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 41,
+      "y": 46,
+      "label": "2"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 21,
+      "y": 51,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 12.5,
+      "y": 51,
+      "label": "6"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 44,
+      "y": 30,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 31,
+      "y": 24,
+      "label": "4"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 59,
+      "y": 46,
+      "label": "7"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 79,
+      "y": 51,
+      "label": "10"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 87.5,
+      "y": 51,
+      "label": "11"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 56,
+      "y": 30,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 69,
+      "y": 24,
+      "label": "9"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 2.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 31.6,
+      "y": 24.6
+     },
+     {
+      "id": "b2",
+      "x": 69.6,
+      "y": 24.6
+     },
+     {
+      "id": "s1",
+      "x": 53.6,
+      "y": 3
+     },
+     {
+      "id": "s2",
+      "x": 46.4,
+      "y": 3
+     }
+    ],
+    "steps": [
+     {
+      "label": "In den Lauf",
+      "say": "Neon zwei sprintet los. Neon vier spielt den Ball nicht zu ihm, sondern ein Stück vor ihn, genau in seinen Lauf. Rechts machen es Rot neun und Rot sieben gleichzeitig.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         39,
+         27
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         39.6,
+         27.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       },
+       {
+        "who": "r7",
+        "to": [
+         61,
+         27
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b2",
+        "to": [
+         61.6,
+         27.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Direkt schießen: Punkt",
+      "say": "Neon zwei muss nicht abbremsen und schießt direkt ins Minitor. Das gibt einen Punkt für Neon zwei. Rot sieben trifft auch.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         37.5,
+         7
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b2",
+        "to": [
+         62.5,
+         7
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Erst weg vom Ball, dann schnell anbieten.",
+   "title": "Weg und wieder hin",
+   "text": "Wer den Ball haben will, läuft zuerst ein paar Schritte weg und kommt dann schnell zurück zum Ball. So schüttelt er im Spiel seinen Gegenspieler ab. Wichtig ist der richtige Moment: Der Pass kommt genau dann, wenn er sich anbietet.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 41,
+      "y": 46,
+      "label": "2"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 21,
+      "y": 51,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 12.5,
+      "y": 51,
+      "label": "6"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 44,
+      "y": 30,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 31,
+      "y": 24,
+      "label": "4"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 59,
+      "y": 46,
+      "label": "7"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 79,
+      "y": 51,
+      "label": "10"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 87.5,
+      "y": 51,
+      "label": "11"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 56,
+      "y": 30,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 69,
+      "y": 24,
+      "label": "9"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 2.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 41.6,
+      "y": 46.6
+     },
+     {
+      "id": "b2",
+      "x": 59.6,
+      "y": 46.6
+     },
+     {
+      "id": "s1",
+      "x": 53.6,
+      "y": 3
+     },
+     {
+      "id": "s2",
+      "x": 46.4,
+      "y": 3
+     }
+    ],
+    "steps": [
+     {
+      "label": "Weg vom Ball",
+      "say": "Neon vier läuft erst ein paar Schritte weg vom Ball und kommt dann schnell zurück. Rot neun macht es auf der anderen Seite genauso.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         32,
+         15
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n4",
+        "to": [
+         35,
+         25
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r9",
+        "to": [
+         68,
+         15
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r9",
+        "to": [
+         65,
+         25
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Anbieten: Punkt",
+      "say": "Genau jetzt passt Neon zwei zu ihm. Neon vier legt den Ball direkt in den Lauf von Neon zwei, und Neon zwei schießt ins Minitor. Das gibt einen Punkt für Neon zwei. Rechts spielen Rot sieben und Rot neun genauso.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         35.6,
+         25.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n2",
+        "to": [
+         39,
+         24
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         39.6,
+         24.6
+        ],
+        "type": "pass",
+        "delay": 0.2,
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         37.5,
+         7
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b2",
+        "to": [
+         65.6,
+         25.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r7",
+        "to": [
+         61,
+         24
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b2",
+        "to": [
+         61.6,
+         24.6
+        ],
+        "type": "pass",
+        "delay": 0.2,
+        "after": true
+       },
+       {
+        "who": "b2",
+        "to": [
+         62.5,
+         7
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

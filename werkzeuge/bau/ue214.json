@@ -1,0 +1,855 @@
+{
+ "title": "Hütchen sammeln mit Köpfchen",
+ "code": "UE-214",
+ "kind": "Spielform",
+ "focuses": [
+  "Erwärmung",
+  "Schnelligkeit",
+  "Koordination"
+ ],
+ "age_groups": [
+  "F-Jugend",
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 10,
+ "players_min": 2,
+ "players_max": 3,
+ "field_size": "23 x 23 m",
+ "description": "Zwei oder drei Spieler treten gegeneinander an. Jeder hat vier Hütchen in seiner Farbe, die im Feld verteilt liegen. Wer zuerst alle vier Hütchen geholt und auf seine Stange in der Mitte gesteckt hat, gewinnt. Schnell sein reicht nicht: Wer vorher schaut und kluge, gerade Wege plant, ist vorn.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 23 mal 23 Metern. In der Mitte eine Stange pro Spieler, im Feld je vier Hütchen pro Spieler in seiner Farbe.",
+  "Verteilen: Der Spieler von Team Neon sammelt die neonfarbenen Hütchen, der Spieler von Team Rot die orangen. Ein dritter Spieler bekommt Hütchen in einer dritten Farbe und eine dritte Stange.",
+  "Ablauf: Alle starten gleichzeitig unten am Feld. Jeder holt ein Hütchen nach dem anderen und steckt es auf seine Stange.",
+  "Wertung und Wechsel: Wer zuerst alle vier Hütchen auf der Stange hat, gewinnt, und das gibt einen Punkt. Dann legt der Trainer die Hütchen neu aus, und die nächsten Spieler sind dran."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Vor dem Start schauen, wo die eigenen Hütchen liegen",
+  "Einen klugen Weg planen",
+  "Gerade laufen, dann braucht es weniger Kurven",
+  "Nicht zu wild sprinten: rechtzeitig bremsen und drehen"
+ ],
+ "materials": [
+  "3 Stangen",
+  "4 Hütchen pro Spieler in einer Farbe",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Hütchen sammeln mit Köpfchen. Wer zuerst alle Hütchen seiner Farbe auf seine Stange steckt, gewinnt.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   }
+  ],
+  "cones": [
+   {
+    "x": 45,
+    "y": 30,
+    "color": "orange",
+    "shape": "stange",
+    "id": "st1"
+   },
+   {
+    "x": 55,
+    "y": 30,
+    "color": "orange",
+    "shape": "stange",
+    "id": "st2"
+   },
+   {
+    "x": 31,
+    "y": 45,
+    "color": "neon",
+    "id": "k1"
+   },
+   {
+    "x": 29,
+    "y": 19,
+    "color": "neon",
+    "id": "k2"
+   },
+   {
+    "x": 41,
+    "y": 10,
+    "color": "neon",
+    "id": "k3"
+   },
+   {
+    "x": 62,
+    "y": 49,
+    "color": "neon",
+    "id": "k4"
+   },
+   {
+    "x": 70,
+    "y": 37,
+    "color": "orange",
+    "id": "k5"
+   },
+   {
+    "x": 69,
+    "y": 16,
+    "color": "orange",
+    "id": "k6"
+   },
+   {
+    "x": 57,
+    "y": 9,
+    "color": "orange",
+    "id": "k7"
+   },
+   {
+    "x": 34,
+    "y": 53,
+    "color": "orange",
+    "id": "k8"
+   }
+  ],
+  "players": [
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 43,
+    "y": 51,
+    "label": "7"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 57,
+    "y": 51,
+    "label": "9"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 18,
+    "y": 30,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "s1",
+    "x": 21.6,
+    "y": 33.5
+   },
+   {
+    "id": "s2",
+    "x": 18,
+    "y": 33.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Erst schauen",
+    "say": "Vor dem Start schauen beide genau, wo ihre vier Hütchen liegen. Neon sieben sucht die neonfarbenen, Rot neun die orangen Hütchen.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       33,
+       37
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "n7",
+      "to": [
+       59,
+       44
+      ],
+      "type": "blick",
+      "after": true
+     },
+     {
+      "who": "r9",
+      "to": [
+       67,
+       38
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "r9",
+      "to": [
+       40,
+       49
+      ],
+      "type": "blick",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Los: erstes Hütchen",
+    "say": "Auf das Zeichen des Trainers sprinten beide gleichzeitig los. Jeder holt ein Hütchen und steckt es auf seine Stange in der Mitte.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       33.5,
+       43.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n7",
+      "to": [
+       42,
+       33
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       45,
+       30
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r9",
+      "to": [
+       67.5,
+       38.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r9",
+      "to": [
+       58,
+       33
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k5",
+      "to": [
+       55,
+       30
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zweites und drittes",
+    "say": "Weiter geht es mit Hütchen zwei und drei. Gerade Wege mit wenigen Kurven sparen Zeit.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       31.5,
+       20.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n7",
+      "to": [
+       42,
+       27
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k2",
+      "to": [
+       45,
+       30
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       41.5,
+       12.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       42,
+       27
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k3",
+      "to": [
+       45,
+       30
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r9",
+      "to": [
+       67,
+       18.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r9",
+      "to": [
+       58,
+       27
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k6",
+      "to": [
+       55,
+       30
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r9",
+      "to": [
+       57.5,
+       12
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r9",
+      "to": [
+       58,
+       27
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k7",
+      "to": [
+       55,
+       30
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Viertes Hütchen: Punkt",
+    "say": "Neon sieben steckt als Erster das vierte Hütchen auf seine Stange und gewinnt, und das gibt einen Punkt für Team Neon. Dann legt der Trainer die Hütchen neu aus, und die nächsten Spieler sind dran.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       41.5,
+       35
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n7",
+      "to": [
+       59.5,
+       47
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       42,
+       33
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k4",
+      "to": [
+       45,
+       30
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r9",
+      "to": [
+       59,
+       35
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r9",
+      "to": [
+       36.5,
+       51
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r9",
+      "to": [
+       48,
+       41
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "23 m"
+   },
+   {
+    "x1": 84,
+    "y1": 5,
+    "x2": 84,
+    "y2": 55,
+    "text": "23 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Erst schauen, dann losrennen.",
+   "title": "Erst schauen, dann los",
+   "text": "Wer vor dem Start schaut, sieht, welches Hütchen am nächsten liegt. Neon sieben schaut und holt zuerst das nahe Hütchen. Rot neun rennt ohne Schauen los zum Hütchen, das weit weg liegt.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 43,
+      "y": 51,
+      "label": "7"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 57,
+      "y": 51,
+      "label": "9"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 18,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "s1",
+      "x": 21.6,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 18,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Schauen oder rennen",
+      "say": "Neon sieben schaut nach links und nach rechts. Rot neun rennt sofort los, ganz nach oben zum weiten Hütchen.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         33,
+         37
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "n7",
+        "to": [
+         59,
+         44
+        ],
+        "type": "blick",
+        "after": true
+       },
+       {
+        "who": "r9",
+        "to": [
+         67,
+         18.5
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Der kurze Weg",
+      "say": "Neon sieben holt das nahe Hütchen und steckt es auf die Stange. Rot neun ist noch unterwegs.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         33.5,
+         43.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n7",
+        "to": [
+         42,
+         33
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k1",
+        "to": [
+         45,
+         30
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "r9",
+        "to": [
+         58,
+         27
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "k6",
+        "to": [
+         55,
+         30
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "cones": [
+     {
+      "x": 45,
+      "y": 30,
+      "color": "orange",
+      "shape": "stange",
+      "id": "st1"
+     },
+     {
+      "x": 55,
+      "y": 30,
+      "color": "orange",
+      "shape": "stange",
+      "id": "st2"
+     },
+     {
+      "x": 31,
+      "y": 45,
+      "color": "neon",
+      "id": "k1"
+     },
+     {
+      "x": 29,
+      "y": 19,
+      "color": "neon",
+      "id": "k2"
+     },
+     {
+      "x": 41,
+      "y": 10,
+      "color": "neon",
+      "id": "k3"
+     },
+     {
+      "x": 62,
+      "y": 49,
+      "color": "neon",
+      "id": "k4"
+     },
+     {
+      "x": 70,
+      "y": 37,
+      "color": "orange",
+      "id": "k5"
+     },
+     {
+      "x": 69,
+      "y": 16,
+      "color": "orange",
+      "id": "k6"
+     },
+     {
+      "x": 57,
+      "y": 9,
+      "color": "orange",
+      "id": "k7"
+     },
+     {
+      "x": 34,
+      "y": 53,
+      "color": "orange",
+      "id": "k8"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Gerade laufen und rechtzeitig bremsen.",
+   "title": "Gerade laufen, früh bremsen",
+   "text": "Wer mit voller Kraft auf ein Hütchen zu sprintet, kann nicht schnell bremsen und braucht einen großen Bogen. Besser gerade laufen, kurz vor dem Hütchen langsamer werden und mit kleinen Schritten drehen.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 43,
+      "y": 51,
+      "label": "7"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 57,
+      "y": 51,
+      "label": "9"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 18,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "s1",
+      "x": 21.6,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 18,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zu schnell",
+      "say": "Rot neun sprintet mit voller Kraft zum Hütchen. Er kann nicht bremsen, läuft vorbei und muss in einem großen Bogen zurück.",
+      "moves": [
+       {
+        "who": "r9",
+        "to": [
+         66.5,
+         37.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r9",
+        "to": [
+         69.5,
+         33
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r9",
+        "to": [
+         73.5,
+         33.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r9",
+        "to": [
+         74,
+         38.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r9",
+        "to": [
+         71.5,
+         40.5
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Gerade und kontrolliert",
+      "say": "Neon sieben läuft gerade, bremst kurz vor dem Hütchen ab und dreht mit kleinen Schritten. So ist er schneller zurück an seiner Stange.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         33.5,
+         43.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n7",
+        "to": [
+         42,
+         33
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k1",
+        "to": [
+         45,
+         30
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "r9",
+        "to": [
+         58,
+         33
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       },
+       {
+        "who": "k5",
+        "to": [
+         55,
+         30
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "cones": [
+     {
+      "x": 45,
+      "y": 30,
+      "color": "orange",
+      "shape": "stange",
+      "id": "st1"
+     },
+     {
+      "x": 55,
+      "y": 30,
+      "color": "orange",
+      "shape": "stange",
+      "id": "st2"
+     },
+     {
+      "x": 31,
+      "y": 45,
+      "color": "neon",
+      "id": "k1"
+     },
+     {
+      "x": 29,
+      "y": 19,
+      "color": "neon",
+      "id": "k2"
+     },
+     {
+      "x": 41,
+      "y": 10,
+      "color": "neon",
+      "id": "k3"
+     },
+     {
+      "x": 62,
+      "y": 49,
+      "color": "neon",
+      "id": "k4"
+     },
+     {
+      "x": 70,
+      "y": 37,
+      "color": "orange",
+      "id": "k5"
+     },
+     {
+      "x": 69,
+      "y": 16,
+      "color": "orange",
+      "id": "k6"
+     },
+     {
+      "x": 57,
+      "y": 9,
+      "color": "orange",
+      "id": "k7"
+     },
+     {
+      "x": 34,
+      "y": 53,
+      "color": "orange",
+      "id": "k8"
+     }
+    ]
+   }
+  }
+ ]
+}

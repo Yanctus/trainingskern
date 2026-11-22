@@ -1,5 +1,5 @@
 {
- "title": "Steilpass in die Endzone",
+ "title": "Steilpass zur richtigen Zeit",
  "code": "UE-162",
  "kind": "Spielform",
  "focuses": [
@@ -47,7 +47,7 @@
  ],
  "access": "abo",
  "hidden": false,
- "say_intro": "Steilpass in die Endzone. Fünf gegen fünf, und nach acht Pässen darf der Ball steil in die Endzone zum Abschluss.",
+ "say_intro": "Steilpass zur richtigen Zeit. Fünf gegen fünf, und nach acht Pässen darf der Ball steil in die Endzone zum Abschluss.",
  "board": {
   "lines": [
    {

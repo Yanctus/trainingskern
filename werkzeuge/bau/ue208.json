@@ -1,0 +1,630 @@
+{
+ "title": "Den Steilpass verhindern",
+ "code": "UE-208",
+ "kind": "Spielform",
+ "focuses": [
+  "Verteidigen",
+  "Passspiel",
+  "Zusammenspiel"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 8,
+ "players_max": 8,
+ "field_size": "23 x 37 m",
+ "description": "Zwei Viererketten stehen sich in zwei Zonen in der Mitte gegenüber. Das Team am Ball spielt sich den Ball zu und sucht eine Lücke, um flach durch die andere Kette zu passen: ins Minitor dahinter oder an eine Stange. Die verteidigende Kette schiebt eng zusammen mit, sichert ab und fängt den Pass ab. Wer den Ball erobert, greift sofort in die andere Richtung an.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 23 mal 37 Metern in vier Zonen. In den beiden Endzonen je ein Minitor und zwei Stangen.",
+  "Verteilen: Team Neon zu viert in der unteren Mittelzone, Team Rot zu viert in der oberen. Jedes Team bleibt in seiner Zone. Der Trainer steht rechts an der Seite mit Bällen.",
+  "Ablauf: Das Team am Ball passt sich den Ball zu und hat höchstens sieben Pässe, dann muss es durch die andere Kette spielen, nur flach. Die verteidigende Kette schiebt mit, einer presst, die anderen sichern ab.",
+  "Wertung und Wechsel: Ein Pass ins Minitor gibt zwei Punkte, ein Treffer an die Stange gibt einen Punkt. Wer den Ball erobert, greift in die andere Richtung an. Wer zuerst acht oder zehn Punkte hat, gewinnt."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Schnell und gemeinsam als Kette zur Seite schieben",
+  "Abstände kurz halten, damit keine Lücke entsteht",
+  "Den Pressenden immer schräg dahinter absichern",
+  "Viel reden und mit Zeichen zeigen, um eng zu bleiben"
+ ],
+ "materials": [
+  "2 Minitore",
+  "4 Stangen",
+  "12 Hütchen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Den Steilpass verhindern. Zwei Viererketten spielen gegeneinander, und die verteidigende Kette bleibt eng zusammen.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 34,
+    "y": 5,
+    "w": 32,
+    "h": 50
+   },
+   {
+    "type": "line",
+    "x1": 34,
+    "y1": 17.5,
+    "x2": 66,
+    "y2": 17.5,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 34,
+    "y1": 30,
+    "x2": 66,
+    "y2": 30,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 34,
+    "y1": 42.5,
+    "x2": 66,
+    "y2": 42.5,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top"
+   },
+   {
+    "x": 50,
+    "y": 55,
+    "side": "bottom"
+   }
+  ],
+  "cones": [
+   {
+    "x": 38.5,
+    "y": 9,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 38.5,
+    "y": 51,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 61.5,
+    "y": 9,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 61.5,
+    "y": 51,
+    "color": "neon",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 37,
+    "y": 37.5,
+    "label": "11"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 45.5,
+    "y": 40.5,
+    "label": "10"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 54.5,
+    "y": 40.5,
+    "label": "9"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 63,
+    "y": 37.5,
+    "label": "7"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 37,
+    "y": 21,
+    "label": "2"
+   },
+   {
+    "id": "r4",
+    "team": "b",
+    "x": 45.5,
+    "y": 22.5,
+    "label": "4"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 54.5,
+    "y": 22.5,
+    "label": "5"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 63,
+    "y": 21,
+    "label": "3"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 81,
+    "y": 40,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 63.6,
+    "y": 38.1
+   },
+   {
+    "id": "s1",
+    "x": 82.6,
+    "y": 44
+   },
+   {
+    "id": "s2",
+    "x": 79,
+    "y": 44
+   }
+  ],
+  "steps": [
+   {
+    "label": "Ball laufen lassen",
+    "say": "Team Neon hat den Ball. Neon sieben spielt zu Neon neun und der zu Neon zehn. Gleichzeitig schiebt Team Rot als Kette mit zur Seite.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       55.1,
+       41.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       46.1,
+       41.1
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r3",
+      "to": [
+       59,
+       21
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "r5",
+      "to": [
+       51.5,
+       23
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "r2",
+      "to": [
+       38,
+       22
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "Pressen und absichern",
+    "say": "Rot vier presst Neon zehn bis an den Rand seiner Zone. Rot fünf sichert schräg dahinter ab. Neon zehn schaut, ob es eine Lücke für einen Steilpass gibt.",
+    "moves": [
+     {
+      "who": "r4",
+      "to": [
+       45.5,
+       29
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r5",
+      "to": [
+       49.5,
+       21
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n9",
+      "to": [
+       52.5,
+       43
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n10",
+      "to": [
+       50,
+       22
+      ],
+      "type": "blick",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Pass abgefangen",
+    "say": "Neon zehn spielt den Steilpass, aber Rot fünf steht genau richtig und fängt den Ball ab.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.1,
+       21.6
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Zur Stange: Punkt",
+    "say": "Jetzt ist Team Rot am Ball. Rot fünf spielt sofort flach durch die Neon-Kette an die Stange unten rechts, und das gibt einen Punkt für Team Rot. Danach bekommt Team Neon einen neuen Ball vom Trainer.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       60.8,
+       50.2
+      ],
+      "type": "pass"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 34,
+    "y1": 58.6,
+    "x2": 66,
+    "y2": 58.6,
+    "text": "23 m"
+   },
+   {
+    "x1": 73,
+    "y1": 5,
+    "x2": 73,
+    "y2": 55,
+    "text": "37 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Eng zusammen bleiben.",
+   "title": "Eng zusammen",
+   "text": "Stehen die Verteidiger zu weit auseinander, entsteht eine Lücke. Die Angreifer sehen sie und spielen den Ball hindurch. Deshalb bleibt die Kette eng zusammen und schiebt gemeinsam.",
+   "board": {
+    "players": [
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 37,
+      "y": 37.5,
+      "label": "11"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 45.5,
+      "y": 40.5,
+      "label": "10"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 54.5,
+      "y": 40.5,
+      "label": "9"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 63,
+      "y": 37.5,
+      "label": "7"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 35.5,
+      "y": 20.5,
+      "label": "2"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 44,
+      "y": 22,
+      "label": "4"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 56,
+      "y": 21,
+      "label": "5"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 64.5,
+      "y": 22,
+      "label": "3"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 81,
+      "y": 40,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 46.1,
+      "y": 41.1
+     },
+     {
+      "id": "s1",
+      "x": 82.6,
+      "y": 44
+     },
+     {
+      "id": "s2",
+      "x": 79,
+      "y": 44
+     }
+    ],
+    "steps": [
+     {
+      "label": "Die Lücke sehen",
+      "say": "Rot vier und Rot fünf stehen zu weit auseinander. Neon zehn schaut hoch und sieht die Lücke zwischen den beiden.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         50,
+         22
+        ],
+        "type": "blick"
+       }
+      ]
+     },
+     {
+      "label": "Durch die Lücke: Punkt",
+      "say": "Neon zehn spielt flach durch die Lücke ins Minitor, und das gibt zwei Punkte für Team Neon. Darum: eng zusammen bleiben!",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50,
+         5.8
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Ein Verteidiger darf in die andere Zone.",
+   "title": "Hoch pressen",
+   "text": "Jetzt darf immer ein Verteidiger in die Zone der Angreifer laufen und pressen. Die anderen drei sichern dahinter ab. Ein Ballgewinn weit vorn bringt schnell Punkte, aber wer zu früh rausläuft, öffnet eine Lücke.",
+   "board": {
+    "players": [
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 37,
+      "y": 37.5,
+      "label": "11"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 45.5,
+      "y": 40.5,
+      "label": "10"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 54.5,
+      "y": 40.5,
+      "label": "9"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 63,
+      "y": 37.5,
+      "label": "7"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 37,
+      "y": 21,
+      "label": "2"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 45.5,
+      "y": 22.5,
+      "label": "4"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 54.5,
+      "y": 22.5,
+      "label": "5"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 63,
+      "y": 21,
+      "label": "3"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 81,
+      "y": 40,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 63.6,
+      "y": 38.1
+     },
+     {
+      "id": "s1",
+      "x": 82.6,
+      "y": 44
+     },
+     {
+      "id": "s2",
+      "x": 79,
+      "y": 44
+     }
+    ],
+    "steps": [
+     {
+      "label": "Schlechte Ballannahme",
+      "say": "Neon sieben spielt zu Neon neun. Der Ball springt ihm vom Fuß. Sofort sprintet Rot fünf in die Zone von Neon und presst, Rot vier und Rot drei schieben nach innen und sichern ab.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         55.1,
+         41.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         52.5,
+         36.5
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "r5",
+        "to": [
+         52,
+         36
+        ],
+        "type": "lauf",
+        "delay": 0.8
+       },
+       {
+        "who": "r4",
+        "to": [
+         48.5,
+         24
+        ],
+        "type": "lauf",
+        "delay": 0.8
+       },
+       {
+        "who": "r3",
+        "to": [
+         58,
+         22
+        ],
+        "type": "lauf",
+        "delay": 0.8
+       }
+      ]
+     },
+     {
+      "label": "Ball erobert: Punkt",
+      "say": "Rot fünf erobert den Ball, dribbelt an Neon neun vorbei und schießt flach ins untere Minitor, und das gibt zwei Punkte für Team Rot. Danach bekommt Team Neon einen neuen Ball vom Trainer.",
+      "moves": [
+       {
+        "who": "r5",
+        "to": [
+         49.5,
+         47
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         50,
+         54.2
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

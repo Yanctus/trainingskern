@@ -1,0 +1,770 @@
+{
+ "title": "Ball behaupten und durchsetzen",
+ "code": "UE-201",
+ "kind": "Spielform",
+ "focuses": [
+  "1 gegen 1",
+  "Dribbling",
+  "Zusammenspiel"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 12,
+ "players_max": 12,
+ "field_size": "32 x 41 m",
+ "description": "Ein Spiel in sechs Feldern mit je einem Spieler von Team Neon und einem von Team Rot. Wer den Ball bekommt, muss ihn drei Sekunden lang abschirmen, bevor er weiterpasst oder im Eins gegen Eins aufs Minitor geht. Erobert der Verteidiger den Ball, schirmt er selbst ab und spielt mit seinem Team auf die anderen Tore. So lernen die Kinder, den Ball mit dem Körper zu schützen und sich durchzusetzen.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 32 mal 41 Metern in sechs gleich großen Feldern. Oben und unten stehen je zwei Minitore.",
+  "Verteilen: In jedem Feld ein Spieler von Team Neon und einer von Team Rot. Team Neon greift nach oben an, Team Rot nach unten. Der Trainer steht links mit Bällen.",
+  "Ablauf: Team Neon beginnt mit dem Ball. Wer angespielt wird, schirmt drei Sekunden ab. Dann passt er zu einem Mitspieler oder geht im Eins gegen Eins aufs Minitor.",
+  "Wertung und Wechsel: Jeder Treffer gibt einen Punkt. Erobert Rot den Ball, schirmt Rot drei Sekunden ab und greift auf die unteren Tore an. Nach einigen Minuten wechseln alle das Feld."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Den Körper zwischen Ball und Gegner bringen und den Ball abschirmen",
+  "Kopf hoch und über die Schulter schauen: Wo sind Mitspieler und Gegner?",
+  "Mutig ins Eins gegen Eins gehen und abschließen",
+  "Ohne Ball klug laufen und den Gegner wegziehen"
+ ],
+ "materials": [
+  "4 Minitore",
+  "10 Hütchen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Ball behaupten und durchsetzen. In sechs Feldern spielt jeder gegen einen Gegner und muss den Ball erst drei Sekunden abschirmen.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 30.55,
+    "y": 5,
+    "w": 38.900000000000006,
+    "h": 50
+   },
+   {
+    "type": "line",
+    "x1": 50,
+    "y1": 5,
+    "x2": 50,
+    "y2": 55,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 30.55,
+    "y1": 21.67,
+    "x2": 69.45,
+    "y2": 21.67,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 30.55,
+    "y1": 38.33,
+    "x2": 69.45,
+    "y2": 38.33,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 40.3,
+    "y": 5,
+    "side": "top"
+   },
+   {
+    "x": 59.7,
+    "y": 5,
+    "side": "top"
+   },
+   {
+    "x": 40.3,
+    "y": 55,
+    "side": "bottom"
+   },
+   {
+    "x": 59.7,
+    "y": 55,
+    "side": "bottom"
+   }
+  ],
+  "cones": [
+   {
+    "x": 30.55,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 69.45,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 30.55,
+    "y": 55,
+    "color": "orange"
+   },
+   {
+    "x": 69.45,
+    "y": 55,
+    "color": "orange"
+   },
+   {
+    "x": 30.55,
+    "y": 21.67,
+    "color": "orange"
+   },
+   {
+    "x": 69.45,
+    "y": 21.67,
+    "color": "orange"
+   },
+   {
+    "x": 30.55,
+    "y": 38.33,
+    "color": "orange"
+   },
+   {
+    "x": 69.45,
+    "y": 38.33,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 55,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 44.8,
+    "y": 15.3,
+    "label": "10"
+   },
+   {
+    "id": "r14",
+    "team": "b",
+    "x": 35.8,
+    "y": 10.3,
+    "label": "14"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 55.2,
+    "y": 15.3,
+    "label": "9"
+   },
+   {
+    "id": "r12",
+    "team": "b",
+    "x": 64.2,
+    "y": 10.3,
+    "label": "12"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 44.8,
+    "y": 32,
+    "label": "8"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 35.8,
+    "y": 27,
+    "label": "3"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 55.2,
+    "y": 32,
+    "label": "4"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 64.2,
+    "y": 27,
+    "label": "11"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 44.8,
+    "y": 48.7,
+    "label": "5"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 35.8,
+    "y": 43.7,
+    "label": "7"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 55.2,
+    "y": 48.7,
+    "label": "6"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 64.2,
+    "y": 43.7,
+    "label": "2"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 22,
+    "y": 30,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 55.8,
+    "y": 49.3
+   },
+   {
+    "id": "s1",
+    "x": 23.6,
+    "y": 33.5
+   },
+   {
+    "id": "s2",
+    "x": 20,
+    "y": 33.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Anspiel",
+    "say": "Team Neon hat den Ball. Neon sechs passt schräg zu Neon acht. Rot drei läuft sofort hin und drückt.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       45.4,
+       32.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r3",
+      "to": [
+       40.5,
+       30
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "Drei Sekunden abschirmen",
+    "say": "Neon acht stellt den Körper zwischen Ball und Gegner und hält den Ball drei Sekunden. Dabei hebt er den Kopf und sieht, dass Neon vier frei ist.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       47,
+       35
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n8",
+      "to": [
+       62,
+       28
+      ],
+      "type": "blick",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Weiter zu Neon vier",
+    "say": "Neon acht spielt quer zu Neon vier. Rot elf drückt, aber auch Neon vier schirmt den Ball drei Sekunden ab.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       55.8,
+       32.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r11",
+      "to": [
+       60,
+       30
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "n4",
+      "to": [
+       53,
+       35
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Hoch zu Neon zehn",
+    "say": "Dann spielt Neon vier hoch zu Neon zehn. Der steht jetzt im Eins gegen Eins mit Rot vierzehn.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       45.4,
+       15.9
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r14",
+      "to": [
+       42,
+       11.5
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "Eins gegen eins: Punkt",
+    "say": "Neon zehn schirmt ab, dreht sich schnell an Rot vierzehn vorbei und schießt ins Minitor. Das gibt einen Punkt für Team Neon. Dann bekommt Team Rot einen neuen Ball vom Trainer und greift auf die unteren Tore an.",
+    "moves": [
+     {
+      "who": "n10",
+      "to": [
+       49,
+       10
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       41.5,
+       4.7
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 30.55,
+    "y1": 58.6,
+    "x2": 69.45,
+    "y2": 58.6,
+    "text": "32 m"
+   },
+   {
+    "x1": 77.5,
+    "y1": 5,
+    "x2": 77.5,
+    "y2": 55,
+    "text": "41 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Abschirmen und abdrücken.",
+   "title": "Abschirmen und abdrücken",
+   "text": "Mit Körper und Arm hält der Spieler den Gegner auf Abstand. Er bleibt tief in den Knien und hält das Gleichgewicht. Im richtigen Moment drückt er sich ab, schafft sich Platz und schließt ab.",
+   "board": {
+    "players": [
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 44.8,
+      "y": 15.3,
+      "label": "10"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 35.8,
+      "y": 10.3,
+      "label": "14"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 55.2,
+      "y": 15.3,
+      "label": "9"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 64.2,
+      "y": 10.3,
+      "label": "12"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 44.8,
+      "y": 32,
+      "label": "8"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 35.8,
+      "y": 27,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 55.2,
+      "y": 32,
+      "label": "4"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 64.2,
+      "y": 27,
+      "label": "11"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 44.8,
+      "y": 48.7,
+      "label": "5"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 35.8,
+      "y": 43.7,
+      "label": "7"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 55.2,
+      "y": 48.7,
+      "label": "6"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 64.2,
+      "y": 43.7,
+      "label": "2"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 22,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 45.4,
+      "y": 15.9
+     },
+     {
+      "id": "s1",
+      "x": 23.6,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 20,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Abschirmen",
+      "say": "Neon zehn hat den Ball, Rot vierzehn drückt von hinten. Neon zehn macht sich breit, hält den Gegner mit Körper und Arm weg und schirmt den Ball ab.",
+      "moves": [
+       {
+        "who": "r14",
+        "to": [
+         43.5,
+         11.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n10",
+        "to": [
+         47,
+         17
+        ],
+        "type": "dribbling",
+        "delay": 0.3,
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Abdrücken: Punkt",
+      "say": "Im richtigen Moment drückt sich Neon zehn ab, dreht sich weg und schießt ins Minitor. Das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         51,
+         12
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         41.5,
+         4.7
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Den Gegner wegziehen.",
+   "title": "Den Gegner wegziehen",
+   "text": "Ohne Ball klug laufen: Ein Spieler läuft weg und nimmt seinen Gegner mit. So wird der Passweg frei, und der vorderste Spieler bekommt den Ball. Vorher schaut er über die Schulter, damit er weiß, wo sein Gegner steht.",
+   "board": {
+    "players": [
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 44.8,
+      "y": 15.3,
+      "label": "10"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 35.8,
+      "y": 10.3,
+      "label": "14"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 55.2,
+      "y": 15.3,
+      "label": "9"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 64.2,
+      "y": 10.3,
+      "label": "12"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 35.8,
+      "y": 27,
+      "label": "8"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 44.8,
+      "y": 31,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 55.2,
+      "y": 32,
+      "label": "4"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 64.2,
+      "y": 27,
+      "label": "11"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 44.8,
+      "y": 48.7,
+      "label": "5"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 35.8,
+      "y": 43.7,
+      "label": "7"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 55.2,
+      "y": 48.7,
+      "label": "6"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 64.2,
+      "y": 43.7,
+      "label": "2"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 22,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 45.4,
+      "y": 49.3
+     },
+     {
+      "id": "s1",
+      "x": 23.6,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 20,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Wegziehen",
+      "say": "Neon fünf hat den Ball. Neon acht läuft schräg nach außen und zieht Rot drei mit. Jetzt ist der Weg nach oben frei. Neon zehn schaut über die Schulter, wo Rot vierzehn steht.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         33.5,
+         35
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r3",
+        "to": [
+         39,
+         34
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n10",
+        "to": [
+         37,
+         2
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Frei anspielen: Punkt",
+      "say": "Neon fünf spielt den langen Pass zu Neon zehn. Der weiß schon, wo sein Gegner steht, dreht sich weg und schießt ins Minitor. Das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         45.4,
+         15.9
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n10",
+        "to": [
+         50,
+         11
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         41.5,
+         4.7
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

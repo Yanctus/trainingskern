@@ -1,5 +1,5 @@
 {
- "title": "Vor dem Strafraum verteidigen",
+ "title": "Fünf gegen drei am Strafraum",
  "code": "UE-199",
  "kind": "Spielform",
  "focuses": [
@@ -48,7 +48,7 @@
  ],
  "access": "abo",
  "hidden": false,
- "say_intro": "Vor dem Strafraum verteidigen. Drei Verteidiger gegen fünf, und zwei weitere sprinten aus den Seitenzonen zurück.",
+ "say_intro": "Fünf gegen drei am Strafraum. Drei Verteidiger gegen fünf, und zwei weitere sprinten aus den Seitenzonen zurück.",
  "board": {
   "lines": [
    {

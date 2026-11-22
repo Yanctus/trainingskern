@@ -1,0 +1,598 @@
+{
+ "title": "Rondo mit Kopf hoch",
+ "code": "UE-200",
+ "kind": "Spielform",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel",
+  "Umschalten"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 9,
+ "players_max": 9,
+ "field_size": "14 x 18 m",
+ "description": "Ein Rondo mit drei Teams zu dritt. Team Neon spielt mit drei Springern gegen Team Rot und will den Ball vom Springer unten zum Springer oben bringen. Die Teams tragen nur farbige Kappen oder Stirnbänder, deshalb muss jeder genau hinschauen, bevor der Ball kommt. Nach zwei Minuten tauschen Neon und Rot die Aufgaben.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 14 mal 18 Metern. Statt Leibchen tragen die Teams farbige Kappen oder Stirnbänder.",
+  "Verteilen: Drei Teams zu dritt. Je ein Springer steht auf der Grundlinie oben und unten, einer im Feld. Team Neon spielt mit den Springern, Team Rot verteidigt. Der Trainer steht an der Ecke mit Bällen.",
+  "Ablauf: Team Neon und die Springer halten den Ball und spielen ihn von einem Springer an der Grundlinie zum anderen. Team Rot will den Ball erobern.",
+  "Wertung und Wechsel: Kommt der Ball von unten nach oben oder von oben nach unten, gibt das einen Punkt. Erobert Rot den Ball, spielt der Trainer neu an. Nach zwei Minuten tauschen Neon und Rot die Aufgaben."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Vor jeder Ballannahme umschauen: Wo sind Mitspieler, Platz und Gegner?",
+  "Auf der Schulter des Gegners anbieten und mit dem ersten Kontakt die Linie überspielen",
+  "Die Springer früh anspielen und die Überzahl nutzen",
+  "Die Lücke zwischen zwei Gegnern sehen und hindurchspielen"
+ ],
+ "materials": [
+  "4 Hütchen",
+  "Viele Bälle",
+  "Kappen oder Stirnbänder in drei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Rondo mit Kopf hoch. Team Neon spielt mit drei Springern gegen Team Rot, und jeder muss ständig schauen, wo die Mitspieler sind.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 31.25,
+    "y": 5,
+    "w": 37.5,
+    "h": 50
+   }
+  ],
+  "cones": [
+   {
+    "x": 31.25,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 68.75,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 31.25,
+    "y": 55,
+    "color": "orange"
+   },
+   {
+    "x": 68.75,
+    "y": 55,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "f1",
+    "team": "t",
+    "x": 50,
+    "y": 5,
+    "label": "F"
+   },
+   {
+    "id": "f2",
+    "team": "t",
+    "x": 50,
+    "y": 55,
+    "label": "F"
+   },
+   {
+    "id": "f3",
+    "team": "t",
+    "x": 60,
+    "y": 22,
+    "label": "F"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 31.5,
+    "y": 38,
+    "label": "4"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 38,
+    "y": 20,
+    "label": "5"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 68.5,
+    "y": 40,
+    "label": "7"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 47,
+    "y": 22,
+    "label": "8"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 41,
+    "y": 39,
+    "label": "6"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 58.5,
+    "y": 39,
+    "label": "2"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 23,
+    "y": 9,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 50.6,
+    "y": 55.6
+   },
+   {
+    "id": "s1",
+    "x": 24.6,
+    "y": 5.5
+   },
+   {
+    "id": "s2",
+    "x": 21,
+    "y": 5.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Kopf hoch",
+    "say": "Der Springer unten hat den Ball. Bevor der Pass kommt, schaut Neon vier sich um: Wo ist der Springer in der Mitte, wo sind die Gegner? Dann kommt der Ball.",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       50,
+       28
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b1",
+      "to": [
+       32.1,
+       38.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zum Springer in der Mitte",
+    "say": "Auch der Springer in der Mitte schaut sich um und weiß schon, wo der Springer oben steht. Neon vier spielt ihn sofort an.",
+    "moves": [
+     {
+      "who": "f3",
+      "to": [
+       52,
+       8
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b1",
+      "to": [
+       60.6,
+       22.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Nach oben: Punkt",
+    "say": "Der Springer in der Mitte spielt weiter zum Springer oben. Der Ball ist von unten nach oben gekommen, und das gibt einen Punkt für Team Neon. Jetzt spielt Team Neon wieder nach unten, und Team Rot jagt weiter den Ball.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       5.6
+      ],
+      "type": "pass"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 31.25,
+    "y1": 58.6,
+    "x2": 68.75,
+    "y2": 58.6,
+    "text": "14 m"
+   },
+   {
+    "x1": 78,
+    "y1": 5,
+    "x2": 78,
+    "y2": 55,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Die Mitte teilen.",
+   "title": "Die Mitte teilen",
+   "text": "Der Springer in der Mitte stellt sich seitlich hinter einen Gegner, auf dessen Schulter. So kann er den Ball halb gedreht annehmen. Der Passgeber schaut, sieht die Lücke zwischen zwei Gegnern und spielt flach hindurch.",
+   "board": {
+    "players": [
+     {
+      "id": "f1",
+      "team": "t",
+      "x": 50,
+      "y": 5,
+      "label": "F"
+     },
+     {
+      "id": "f2",
+      "team": "t",
+      "x": 50,
+      "y": 55,
+      "label": "F"
+     },
+     {
+      "id": "f3",
+      "team": "t",
+      "x": 60,
+      "y": 22,
+      "label": "F"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 31.5,
+      "y": 38,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 38,
+      "y": 20,
+      "label": "5"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 68.5,
+      "y": 40,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 47,
+      "y": 22,
+      "label": "8"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 41,
+      "y": 39,
+      "label": "6"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 58.5,
+      "y": 39,
+      "label": "2"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 23,
+      "y": 9,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 32.1,
+      "y": 38.6
+     },
+     {
+      "id": "s1",
+      "x": 24.6,
+      "y": 5.5
+     },
+     {
+      "id": "s2",
+      "x": 21,
+      "y": 5.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Auf die Schulter",
+      "say": "Neon vier hat den Ball. Der Springer in der Mitte stellt sich seitlich hinter Rot acht. Neon vier hebt den Kopf und sieht die Lücke zwischen Rot sechs und Rot acht.",
+      "moves": [
+       {
+        "who": "f3",
+        "to": [
+         55,
+         28
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n4",
+        "to": [
+         50,
+         31
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Durch die Lücke: Punkt",
+      "say": "Neon vier spielt flach durch die Lücke. Der Springer nimmt den Ball mit dem ersten Kontakt nach vorn mit und spielt zum Springer oben. Das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         55.6,
+         28.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "f3",
+        "to": [
+         57,
+         17
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         5.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Ball verloren, sofort verteidigen.",
+   "title": "Ball weg, umschalten",
+   "text": "Jetzt gilt: Wer den Ball verliert, verteidigt sofort. Erobert Team Rot den Ball, spielt Rot mit den Springern, und Team Neon jagt den Ball. Die Springer spielen immer mit dem Team am Ball, deshalb muss jeder ständig schauen, wer gerade angreift.",
+   "board": {
+    "players": [
+     {
+      "id": "f1",
+      "team": "t",
+      "x": 50,
+      "y": 5,
+      "label": "F"
+     },
+     {
+      "id": "f2",
+      "team": "t",
+      "x": 50,
+      "y": 55,
+      "label": "F"
+     },
+     {
+      "id": "f3",
+      "team": "t",
+      "x": 60,
+      "y": 22,
+      "label": "F"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 31.5,
+      "y": 38,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 38,
+      "y": 20,
+      "label": "5"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 68.5,
+      "y": 40,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 47,
+      "y": 22,
+      "label": "8"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 41,
+      "y": 39,
+      "label": "6"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 58.5,
+      "y": 39,
+      "label": "2"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 23,
+      "y": 9,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 38.6,
+      "y": 20.6
+     },
+     {
+      "id": "s1",
+      "x": 24.6,
+      "y": 5.5
+     },
+     {
+      "id": "s2",
+      "x": 21,
+      "y": 5.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Ball erobert",
+      "say": "Neon fünf will zum Springer oben passen, aber Rot acht fängt den Ball ab. Ab jetzt greift Team Rot an.",
+      "moves": [
+       {
+        "who": "r8",
+        "to": [
+         45,
+         12
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         45.6,
+         12.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Wer greift an?",
+      "say": "Rot acht hebt sofort den Kopf und sucht den Springer. Gleichzeitig schaltet Team Neon um: Neon fünf presst, Neon vier und Neon sieben machen die Passwege zu, und Rot zwei läuft sich frei.",
+      "moves": [
+       {
+        "who": "r8",
+        "to": [
+         60,
+         22
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "n5",
+        "to": [
+         40,
+         14
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n4",
+        "to": [
+         40,
+         33
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n7",
+        "to": [
+         63,
+         33
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r2",
+        "to": [
+         60,
+         47
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Nach unten: Punkt",
+      "say": "Rot acht spielt zum Springer in der Mitte, und der spielt weiter zum Springer unten. Das gibt einen Punkt für Team Rot. Jetzt verteidigt Team Neon, bis es den Ball zurückerobert.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         60.6,
+         22.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         55.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

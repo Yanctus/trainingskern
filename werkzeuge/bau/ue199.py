@@ -22,7 +22,7 @@ LINES = [rect(20, 5, 60, 50), {"type": "zone", "x": 20, "y": 5, "w": 12.3, "h": 
 TORE = [{"x": 50, "y": 5, "side": "top", "size": "jugend"}]
 CONES = [C(33, 18.7), C(40.5, 18.7), C(58, 18.7), C(66.5, 18.7)]
 
-u = {"title": "Vor dem Strafraum verteidigen", "code": "UE-199", "kind": "Spielform",
+u = {"title": "Fünf gegen drei am Strafraum", "code": "UE-199", "kind": "Spielform",
  "focuses": ["Verteidigen", "Umschalten", "Zusammenspiel"], "age_groups": ["E-Jugend", "D-Jugend", "C-Jugend", "B-Jugend"],
  "altersbereiche": ["U12-U14"], "duration_minutes": 15, "players_min": 11, "players_max": 13, "field_size": "37 x 32 m",
  "description": "Vor dem Strafraum spielt Team Rot mit zwei Springern fünf gegen drei. Spielt es einen Pass durch ein Hütchentor, laufen zwei Angreifer in den Strafraum. Dort sprinten zwei Verteidiger aus den Seitenzonen zurück, und es heißt zwei gegen zwei. Erobert Team Neon den Ball, spielt es zum Springer und greift selbst an.",
@@ -34,7 +34,7 @@ u = {"title": "Vor dem Strafraum verteidigen", "code": "UE-199", "kind": "Spielf
  "coaching_points": ["Schnell zurücksprinten und das Tor schützen", "Eng stehen und den Angreifern wenig Platz lassen", "Pässe durch die Mitte und nach vorn zustellen", "Nach dem Ballgewinn schnell umschalten und angreifen"],
  "materials": ["1 Jugendtor", "4 Hütchen", "Viele Bälle", "Leibchen in zwei Farben", "2 Leibchen für die Springer"],
  "access": "abo", "hidden": True,
- "say_intro": "Vor dem Strafraum verteidigen. Drei Verteidiger gegen fünf, und zwei weitere sprinten aus den Seitenzonen zurück.",
+ "say_intro": "Fünf gegen drei am Strafraum. Drei Verteidiger gegen fünf, und zwei weitere sprinten aus den Seitenzonen zurück.",
  "board": {"lines": LINES, "goals": TORE, "cones": CONES, "players": sp(), "balls": [B("b1", 91.6, 45.6)] + ERSATZ,
   "steps": [
    S("Fünf gegen drei", "Der Trainer passt zum rechten Springer. Team Rot spielt mit den zwei Springern fünf gegen drei. Der Springer passt zu Rot acht, und Rot acht spielt zum linken Springer.",

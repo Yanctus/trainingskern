@@ -17,7 +17,7 @@ ERSATZ = [B("s1", 79.6, 33.5), B("s2", 76, 33.5)]
 LINES = [rect(32.15, 5, 35.7, 50), line(32.15, 19.3, 67.85, 19.3), line(32.15, 40.7, 67.85, 40.7)]
 TORE = [{"x": x, "y": 5, "side": "top"} for x in (37.9, 62.1)] + [{"x": x, "y": 55, "side": "bottom"} for x in (37.9, 62.1)]
 
-u = {"title": "Steilpass in die Endzone", "code": "UE-162", "kind": "Spielform",
+u = {"title": "Steilpass zur richtigen Zeit", "code": "UE-162", "kind": "Spielform",
  "focuses": ["Passspiel", "Bewegung", "Torschuss"], "age_groups": ["E-Jugend", "D-Jugend", "C-Jugend", "B-Jugend"],
  "altersbereiche": ["U12-U14"], "duration_minutes": 15, "players_min": 10, "players_max": 10, "field_size": "23 x 32 m",
  "description": "Fünf gegen fünf in der Mitte, an beiden Enden eine Endzone mit zwei Minitoren. Das Team am Ball muss erst acht Pässe spielen, dann darf ein Steilpass in die Endzone kommen. Ein Angreifer startet hinein, nimmt den Ball mit und schießt ins Minitor. Die Verteidiger dürfen nicht in die Endzone und müssen die Passwege gemeinsam zumachen.",
@@ -29,7 +29,7 @@ u = {"title": "Steilpass in die Endzone", "code": "UE-162", "kind": "Spielform",
  "coaching_points": ["Lücken früh sehen und den Pass nach vorn spielen", "Den Steilpass genau und mit dem richtigen Tempo in den Lauf spielen", "Den Lauf richtig timen und ruhig abschließen", "Als Abwehr zusammen verschieben und Passwege zumachen"],
  "materials": ["4 Minitore", "Hütchen für Feld und Endzonen", "Viele Bälle", "Leibchen in zwei Farben"],
  "access": "abo", "hidden": True,
- "say_intro": "Steilpass in die Endzone. Fünf gegen fünf, und nach acht Pässen darf der Ball steil in die Endzone zum Abschluss.",
+ "say_intro": "Steilpass zur richtigen Zeit. Fünf gegen fünf, und nach acht Pässen darf der Ball steil in die Endzone zum Abschluss.",
  "board": {"lines": LINES, "goals": TORE, "cones": [], "players": sp(), "balls": [B("b1", 34.5, 40.1)] + ERSATZ,
   "steps": [
    S("Acht Pässe", "Team Neon greift nach oben an und muss erst acht Pässe spielen. Neon sechs passt zu Neon acht, der weiter zu Neon sieben. Team Rot verschiebt gemeinsam mit.",
