@@ -1,0 +1,650 @@
+{
+ "title": "Pässe in die Tiefe stoppen",
+ "code": "UE-193",
+ "kind": "Übungsform",
+ "focuses": [
+  "Verteidigen",
+  "Schnelligkeit",
+  "Umschalten"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 6,
+ "players_max": 10,
+ "field_size": "18 x 14 m",
+ "description": "Ein Spieler steht vor drei Dummys und soll Pässe abfangen, wie ein Sechser vor der Abwehr. Der Passgeber spielt den Ball fest auf einen Dummy, und der Spieler muss blitzschnell reagieren. Blockt er den Ball ins Aus, gibt das einen Punkt, erobert er ihn und dribbelt hinaus, gibt das zwei Punkte. Zwei Teams spielen gleichzeitig an beiden Enden gegeneinander.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 14 Metern in drei Zonen. Unten links drei Dummys für Team Neon, oben rechts drei Dummys für Team Rot.",
+  "Verteilen: Je ein Spieler steht vor den Dummys seines Teams, die anderen warten hinter den Dummys. Der Trainer passt oben links mit vielen Bällen, ein Springer passt unten rechts.",
+  "Ablauf: Trainer und Springer spielen gleichzeitig einen festen Pass auf einen Dummy. Der Spieler davor blockt den Ball oder erobert ihn, dribbelt aus dem Feld und passt zurück.",
+  "Wertung und Wechsel: Ball ins Aus geblockt gibt einen Punkt, erobert und zurückgepasst gibt zwei Punkte. Nach jedem Pass kommt der nächste Spieler. Welches Team hat am Ende die meisten Punkte?"
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Auf den Zehenspitzen stehen und den Pass ahnen",
+  "Auf Körper und Augen des Passgebers schauen",
+  "Schnell entscheiden: Ball blocken oder sichern",
+  "Den Ball eng führen und mit erhobenem Kopf hinausdribbeln"
+ ],
+ "materials": [
+  "6 Dummys oder Stangen",
+  "8 Hütchen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Pässe in die Tiefe stoppen. Wer vor den Dummys steht, fängt die Pässe ab wie ein Sechser vor der Abwehr.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 11.25,
+    "w": 50,
+    "h": 37.5
+   },
+   {
+    "type": "line",
+    "x1": 25,
+    "y1": 23.75,
+    "x2": 75,
+    "y2": 23.75,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 25,
+    "y1": 36.25,
+    "x2": 75,
+    "y2": 36.25,
+    "dashed": true
+   }
+  ],
+  "goals": [],
+  "cones": [
+   {
+    "x": 56.5,
+    "y": 15.3,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 63.8,
+    "y": 15.3,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 71,
+    "y": 15.3,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 30.9,
+    "y": 44.7,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 38.1,
+    "y": 44.7,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 45.3,
+    "y": 44.7,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 37.9,
+    "y": 41.2,
+    "label": "4"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 63.8,
+    "y": 20.7,
+    "label": "9"
+   },
+   {
+    "id": "f1",
+    "team": "t",
+    "x": 63.5,
+    "y": 39.1,
+    "label": "F"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 39.7,
+    "y": 20.2,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 40.3,
+    "y": 20.8
+   },
+   {
+    "id": "b2",
+    "x": 64.1,
+    "y": 39.7
+   },
+   {
+    "id": "s1",
+    "x": 36,
+    "y": 17
+   },
+   {
+    "id": "s2",
+    "x": 32.4,
+    "y": 17
+   }
+  ],
+  "steps": [
+   {
+    "label": "Auf den Zehenspitzen",
+    "say": "Neon vier und Rot neun stehen auf den Zehenspitzen vor ihren Dummys. Beide schauen genau auf den Passgeber: Wohin schaut er, wie steht sein Körper?",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       39.7,
+       20.2
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "r9",
+      "to": [
+       63.5,
+       39.1
+      ],
+      "type": "blick"
+     }
+    ]
+   },
+   {
+    "label": "Pass und blocken",
+    "say": "Gleichzeitig spielen der Trainer und der Springer einen festen Pass auf einen Dummy. Rot neun blockt den Ball ins Aus, und das gibt einen Punkt für Team Rot. Neon vier stoppt den Ball.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       33.9,
+       37.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n4",
+      "to": [
+       33.3,
+       36.5
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "b2",
+      "to": [
+       69.1,
+       22.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r9",
+      "to": [
+       68.5,
+       21.5
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "b2",
+      "to": [
+       78,
+       25
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Rausdribbeln: Punkte",
+    "say": "Neon vier hebt den Kopf, dribbelt links aus dem Feld und passt zum Trainer zurück. Das gibt zwei Punkte für Team Neon. Dann kommen die nächsten Spieler beider Teams vor die Dummys.",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       23.5,
+       33
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       40.3,
+       20.8
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 86,
+    "y1": 11.25,
+    "x2": 86,
+    "y2": 48.75,
+    "text": "14 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Durch das Tor dribbeln.",
+   "title": "Durch das Tor dribbeln",
+   "text": "Jetzt steht oben und unten ein Hütchentor. Wer den Ball erobert, dribbelt mit Tempo durch das Tor auf der anderen Seite und bekommt dafür zwei Punkte. So schaltet der Spieler nach dem Ballgewinn sofort um, wie im Spiel.",
+   "board": {
+    "players": [
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 37.9,
+      "y": 41.2,
+      "label": "4"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 63.8,
+      "y": 20.7,
+      "label": "9"
+     },
+     {
+      "id": "f1",
+      "team": "t",
+      "x": 63.5,
+      "y": 39.1,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 39.7,
+      "y": 20.2,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 40.3,
+      "y": 20.8
+     },
+     {
+      "id": "b2",
+      "x": 64.1,
+      "y": 39.7
+     },
+     {
+      "id": "s1",
+      "x": 36,
+      "y": 17
+     },
+     {
+      "id": "s2",
+      "x": 32.4,
+      "y": 17
+     }
+    ],
+    "steps": [
+     {
+      "label": "Abfangen",
+      "say": "Der Trainer und der Springer passen gleichzeitig auf die Dummys. Neon vier und Rot neun fangen beide den Ball ab.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         33.9,
+         37.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n4",
+        "to": [
+         33.3,
+         36.5
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "b2",
+        "to": [
+         69.1,
+         22.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r9",
+        "to": [
+         68.5,
+         21.5
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Durch das Tor: Punkte",
+      "say": "Neon vier hebt den Kopf, sieht das Tor oben und dribbelt mit Tempo hindurch. Das gibt zwei Punkte für Team Neon. Gleichzeitig dribbelt Rot neun unten durch sein Tor, und das gibt zwei Punkte für Team Rot.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         46,
+         20
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "n4",
+        "to": [
+         53.5,
+         8
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "r9",
+        "to": [
+         46.5,
+         51.5
+        ],
+        "type": "dribbling",
+        "delay": 0.5,
+        "ball": "b2"
+       }
+      ]
+     }
+    ],
+    "cones": [
+     {
+      "x": 56.5,
+      "y": 15.3,
+      "color": "orange",
+      "shape": "stange",
+      "id": "d1"
+     },
+     {
+      "x": 63.8,
+      "y": 15.3,
+      "color": "orange",
+      "shape": "stange",
+      "id": "d2"
+     },
+     {
+      "x": 71,
+      "y": 15.3,
+      "color": "orange",
+      "shape": "stange",
+      "id": "d3"
+     },
+     {
+      "x": 30.9,
+      "y": 44.7,
+      "color": "orange",
+      "shape": "stange",
+      "id": "d4"
+     },
+     {
+      "x": 38.1,
+      "y": 44.7,
+      "color": "orange",
+      "shape": "stange",
+      "id": "d5"
+     },
+     {
+      "x": 45.3,
+      "y": 44.7,
+      "color": "orange",
+      "shape": "stange",
+      "id": "d6"
+     },
+     {
+      "x": 50,
+      "y": 11.25,
+      "color": "neon",
+      "id": "g1"
+     },
+     {
+      "x": 57,
+      "y": 11.25,
+      "color": "neon",
+      "id": "g2"
+     },
+     {
+      "x": 43,
+      "y": 48.75,
+      "color": "neon",
+      "id": "g3"
+     },
+     {
+      "x": 50,
+      "y": 48.75,
+      "color": "neon",
+      "id": "g4"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Näher am Passgeber.",
+   "title": "Näher am Passgeber",
+   "text": "Jetzt starten die Spieler weiter vorn, näher am Passgeber. Der Weg zum Ball ist kürzer, aber der Pass kommt viel schneller. Darum noch früher auf Körper und Augen des Passgebers schauen.",
+   "board": {
+    "players": [
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 31,
+      "y": 33,
+      "label": "4"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 66,
+      "y": 28,
+      "label": "9"
+     },
+     {
+      "id": "f1",
+      "team": "t",
+      "x": 57.5,
+      "y": 39.1,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 39.7,
+      "y": 20.2,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 40.3,
+      "y": 20.8
+     },
+     {
+      "id": "b2",
+      "x": 58.1,
+      "y": 39.7
+     },
+     {
+      "id": "s1",
+      "x": 36,
+      "y": 17
+     },
+     {
+      "id": "s2",
+      "x": 32.4,
+      "y": 17
+     }
+    ],
+    "steps": [
+     {
+      "label": "Näher dran",
+      "say": "Neon vier und Rot neun stehen jetzt weiter vorn. Beide schauen genau auf den Passgeber.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         39.7,
+         20.2
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "r9",
+        "to": [
+         57.5,
+         39.1
+        ],
+        "type": "blick"
+       }
+      ]
+     },
+     {
+      "label": "Blitzschnell: Punkte",
+      "say": "Die Pässe kommen. Beide reagieren blitzschnell, erobern den Ball und dribbeln hinaus. Neon vier passt zum Trainer, Rot neun zum Springer, und das gibt zwei Punkte für jedes Team.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         39.4,
+         30.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n4",
+        "to": [
+         38.8,
+         30
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       },
+       {
+        "who": "b2",
+        "to": [
+         60.7,
+         28.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r9",
+        "to": [
+         60.1,
+         28
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       },
+       {
+        "who": "n4",
+        "to": [
+         23.5,
+         28
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         40.3,
+         20.8
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "r9",
+        "to": [
+         77,
+         24
+        ],
+        "type": "dribbling",
+        "delay": 1.4,
+        "ball": "b2"
+       },
+       {
+        "who": "b2",
+        "to": [
+         58.1,
+         39.7
+        ],
+        "type": "pass",
+        "delay": 2.6
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
