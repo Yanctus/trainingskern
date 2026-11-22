@@ -1,9 +1,10 @@
 import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe import *
 # PS-30 (U12-U14, Woche 4 Pre-Season): Speed Work & 1-2 Combinations. 20 x 20 Yards = Feld x 25-75, y 5-55 (18 x 18 m).
-# Station 1 oben (Passgeber), Station 2 unten, Station 3 rechts (Leiter + Hürden als Minihürden), Station 4 links (Stangen + Ringe).
+# Station 1 oben (Passgeber), Station 2 unten, Station 3 rechts (Leiter + vier Minihürden), Station 4 links (Stangen + Ringe).
 # Ablauf als Kreislauf gedeutet: oben passt nach unten und läuft über Leiter und Hürden nach unten, unten passt steil nach oben
 # und läuft über Stangen und Ringe nach oben. Wartende auseinandergezogen (3D-Abstand). Ein Trainer.
 # Kein Sichtkegel im Original (Text, Ton und Video geprüft).
+# Leitern als Leiter gezeichnet (22.11.2026): rechts eine Leiter, darunter vier echte Minihürden; Ringe als Ringe.
 T = P("T", "c", 80, 52, "T")
 POS = {"n4": (51, 11.5), "n2": (60, 4), "n3": (69, 1.5), "n8": (68.4, 17.5),
        "n9": (51, 47), "n11": (60, 51), "n10": (69, 53), "n7": (30.8, 39.6)}
@@ -11,13 +12,13 @@ def sp(**k):
     d = dict(POS); d.update(k)
     return [P(i, "a", x, y, i[1:]) for i, (x, y) in d.items()] + [T]
 BAELLE = [B("b1", 51.6, 12.1), B("s1", 81.6, 55), B("s2", 84, 52)]
-RINGE = [{"type": "circle", "x": x, "y": y, "r": 2} for x, y in ((30.7, 14.5), (33.7, 10.8), (38.4, 8.7))]
-LINES = [rect(25, 5, 50, 50)] + RINGE
+RINGE = [ring(x, y) for x, y in ((29.5, 15.5), (33, 10.6), (38.6, 8.2))]
+LINES = [rect(25, 5, 50, 50)]
 KEGEL = [C(48, 12.4), C(48, 48.4), C(39.6, 24.8)] \
       + [C(31, y, "neon", shape="stange") for y in (22, 28.5, 35)] + [C(45.3, 30.1, "neon", shape="stange"), C(56.9, 30.1, "neon", shape="stange")] \
-      + [C(68.4, y, shape="huerde_ou") for y in (20, 23, 26)] + [C(68.4, y, shape="huerde_ou") for y in (30.7, 34.6, 38.4, 42.4)]
-STANGEN = [[34.5, 35], [27.5, 28.5], [34.5, 22], [30.7, 14.5], [33.7, 10.8], [38.4, 8.7], [44, 6]]  # Slalom, dann durch die Ringe
-LEITER = [[68.4, 19], [68.4, 45], [66, 48.5]]  # Leiter und Hürden nach unten
+      + [leiter(68.4, 27, senkrecht=True)] + [C(68.4, y, shape="huerde_ou") for y in (38, 41.3, 44.6, 48)] + RINGE
+STANGEN = [[34.5, 35], [27.5, 28.5], [34.5, 22], [29.5, 15.5], [33, 10.6], [38.6, 8.2], [44, 6]]  # Slalom, dann durch die Ringe
+LEITER = [[68.4, 18.5], [68.4, 50], [64, 50.5]]  # Leiter und Hürden nach unten
 def weg(who, pkt, **k): return [mv(who, pkt[0], **k)] + [mv(who, p, after=True) for p in pkt[1:]]
 
 u = {"title": "Passkreis mit Leiter", "code": "UE-137", "kind": "Übungsform",
@@ -31,14 +32,14 @@ u = {"title": "Passkreis mit Leiter", "code": "UE-137", "kind": "Übungsform",
  "organisation_show": ORG,
  "coaching_points": ["Genau passen, damit der Mitspieler den Ball gut annehmen kann", "Im richtigen Moment zum Ball starten", "Mit beiden Füßen abwechselnd passen", "Mit hohem Tempo und sauberen Schritten durch Leiter, Hürden, Stangen und Ringe"],
  "materials": ["3 Hütchen", "2 Dummys", "3 Stangen", "3 Ringe", "1 Koordinationsleiter", "4 Minihürden", "Mehrere Bälle"],
- "access": "abo", "hidden": True,
+ "access": "abo", "hidden": False,
  "say_intro": "Passkreis mit Leiter. Pässe durch die Mitte, dann über Leiter, Hürden, Stangen und Ringe, und alles bleibt in Bewegung.",
  "board": {"lines": LINES, "cones": KEGEL, "players": sp(), "balls": BAELLE,
   "steps": [
    S("Pass nach unten", "Spieler vier spielt zwischen den Dummys hindurch zu Spieler neun, der dem Ball entgegenkommt. Gleichzeitig läuft Spieler acht über Leiter und Hürden nach unten und Spieler sieben durch Stangen und Ringe nach oben.",
      ps("b1", [52.6, 40.6]), mv("n9", [52, 40]), *weg("n8", LEITER), *weg("n7", STANGEN, delay=0.2)),
    S("Steil nach oben", "Spieler neun spielt steil nach oben zu Spieler zwei, der zum Hütchen kommt. Spieler vier läuft jetzt über Leiter und Hürden nach unten, Spieler neun startet zu den Stangen.",
-     mv("n2", [52, 14.5]), ps("b1", [52.6, 15.1], delay=0.2), *weg("n4", [[60, 13], [66, 17]] + LEITER, delay=0.1), *weg("n9", [[40, 43], [30.8, 40.5]], delay=0.4)),
+     mv("n2", [52, 14.5]), ps("b1", [52.6, 15.1], delay=0.2), *weg("n4", [[60, 13], [66, 16.5]] + LEITER, delay=0.1), *weg("n9", [[40, 43], [30.8, 40.5]], delay=0.4)),
    S("Immer weiter im Kreis", "Jetzt spielt Spieler zwei nach unten zu Spieler elf, und alles beginnt von vorn. So bleibt der Ball in Bewegung, bis der Trainer eine Pause ansagt.",
      mv("n11", [52.5, 40.5]), ps("b1", [53.1, 41.1], delay=0.2), mv("n2", [60, 13], after=True))],
   "dims": dims(25, 75, 5, 55, "18 m", "18 m", rx=90)},

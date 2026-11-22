@@ -1,10 +1,11 @@
 import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe import *
 # MB-P32: 15 x 20 Yards, gedreht: Feld x 14-86, y 6-54. Zwei gespiegelte Strecken (Neon oben, Rot unten, y -> 60 - y), Minitor in der Mitte (Öffnung nach rechts), Hütchen rechts.
+# Ringe gezeichnet (22.11.2026): je drei Reifen im Zickzack wie im PDF als ring() statt Kreislinien.
 T = P("T", "c", 92, 15, "T")
 def m(p): return [p[0], round(60 - p[1], 1)]
 ringe = [(20.3, 13.1), (26.6, 11.7), (32.1, 15.1)]
-lines = [rect(14, 6, 72, 48)] + [{"type": "circle", "x": x, "y": y, "r": 3} for x, y in ringe] + [{"type": "circle", "x": x, "y": 60 - y, "r": 3} for x, y in ringe]
-cones = [C(47.4, 13.4, "neon", shape="stange"), C(74.8, 13.4, "neon", shape="stange"), C(47.4, 46.6, "neon", shape="stange"), C(74.8, 46.6, "neon", shape="stange"), C(79, 30)]
+lines = [rect(14, 6, 72, 48)]
+cones = [C(47.4, 13.4, "neon", shape="stange"), C(74.8, 13.4, "neon", shape="stange"), C(47.4, 46.6, "neon", shape="stange"), C(74.8, 46.6, "neon", shape="stange"), C(79, 30)] + [ring(x, y) for x, y in ringe] + [ring(x, 60 - y) for x, y in ringe]
 goals = [{"x": 53.3, "y": 30, "side": "left"}]
 def spieler(n1=(11.5, 12), r5=(11.5, 48)):
     return [P("n1", "a", *n1, "1"), P("n2", "a", 3, 14, "2"), P("r5", "b", *r5, "5"), P("r6", "b", 3, 46, "6"), T]
@@ -27,7 +28,7 @@ u = {"title": "Das große Autorennen", "code": "UE-083", "kind": "Übungsform",
  "organisation_show": ORG,
  "coaching_points": ["Sauber und schnell durch die Reifen hüpfen", "Eng um die Stange laufen, zur Not mit der Hand an der Stange", "Den Ball beim Dribbeln eng am Fuß führen", "Genau schießen statt hetzen, und die Mitspieler feuern laut an"],
  "materials": ["6 Reifen", "4 Stangen", "1 Minitor", "1 Hütchen", "Bälle für jede Strecke"],
- "access": "frei", "hidden": True,
+ "access": "abo", "hidden": False,
  "say_intro": "Das große Autorennen. Zwei Kinder rennen gleichzeitig, und wer zuerst ins Minitor trifft, gewinnt.",
  "board": {"lines": lines, "cones": cones, "goals": goals, "players": spieler(), "balls": [B("b1", 63, 13.4), B("b5", 63, 46.6), B("c1", 94.5, 16)],
   "steps": [

@@ -33,7 +33,7 @@ u = {"title": "Dribbel-Parcours mit Pässen", "code": "UE-186", "kind": "Übungs
  "organisation_show": ORG,
  "coaching_points": ["Den Ball beim Dribbeln eng am Fuß führen", "Sauber auf einem Bein durch die Ringe hüpfen: Technik vor Tempo", "Kopf hoch und den Lauf zeitlich gut abstimmen", "Genau passen und laut miteinander reden"],
  "materials": ["4 Stangen", "5 Koordinationsringe", "8 Hütchen", "Einige Bälle"],
- "access": "abo", "hidden": True,
+ "access": "abo", "hidden": False,
  "say_intro": "Dribbel-Parcours mit Pässen. Vier Stationen laufen gleichzeitig, und in der Mitte treffen sich die Spieler zum Passen.",
  "board": {"lines": LINES, "cones": CONES, "players": sp(), "balls": BAELLE,
   "steps": [

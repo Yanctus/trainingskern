@@ -1,15 +1,16 @@
 import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe import *
 # WU-17: 25 x 20 Yards, gedreht (Lauf von links nach rechts): Feld x 10-90, y 8-52. Bahn Rot oben (y 18), Bahn Neon unten (y 42).
 # Pro Bahn: drei Ringe, je ein oranges und ein gelbes Reaktionshütchen links und rechts der Bahn, vier Slalomstangen.
+# Ringe gezeichnet (22.11.2026): drei Ringe je Bahn in einer Reihe wie im PDF als ring() statt Kreislinien.
 T = P("T", "c", 24, 30, "T")
 NL, RL = 44, 16
 POS = {"r7": (14, RL), "r8": (5, RL), "n2": (14, NL), "n3": (5, NL)}
 def sp(**k):
     d = dict(POS); d.update(k)
     return [P(i, "a" if i[0] == "n" else "b", x, y, i[1:]) for i, (x, y) in d.items()] + [T]
-RINGE = [{"type": "circle", "x": x, "y": y, "r": 2.8} for y in (RL, NL) for x in (25, 31.5, 38)]
-LINES = [rect(10, 8, 80, 44)] + RINGE
-CONES = [C(53, RL - 6), C(53, RL + 6, "neon"), C(53, NL + 6), C(53, NL - 6, "neon")] + [C(x, y, "neon", shape="stange") for y in (RL, NL) for x in (60, 67, 74, 81)]
+RINGE = [ring(x, y) for y in (RL, NL) for x in (25, 31, 37)]
+LINES = [rect(10, 8, 80, 44)]
+CONES = [C(53, RL - 6), C(53, RL + 6, "neon"), C(53, NL + 6), C(53, NL - 6, "neon")] + [C(x, y, "neon", shape="stange") for y in (RL, NL) for x in (60, 67, 74, 81)] + RINGE
 def ringe(i, y): return [mv(i, [45, y])]
 def slalom(i, y, s):
     return [mv(i, [x, y + s * d], after=True) for x, d in ((60, 4), (67, -4), (74, 4), (81, -4))] + [mv(i, [90, y], after=True)]
@@ -27,7 +28,7 @@ u = {"title": "Schnelle Füße, schnelle Reaktion", "code": "UE-117", "kind": "�
  "organisation_show": ORG,
  "coaching_points": ["Saubere Technik bei den schnellen Füßen", "Schnelle Richtungswechsel um die Stangen", "Sofort auf den Ruf des Trainers reagieren", "Zwischen den Läufen kurz erholen"],
  "materials": ["6 Ringe", "2 orange und 2 gelbe Hütchen", "8 Stangen"],
- "access": "frei", "hidden": True,
+ "access": "abo", "hidden": False,
  "say_intro": "Schnelle Füße, schnelle Reaktion. Durch die Ringe, auf Zuruf um das richtige Hütchen und im Slalom ins Ziel.",
  "board": {"lines": LINES, "cones": CONES, "players": sp(), "balls": [],
   "steps": [

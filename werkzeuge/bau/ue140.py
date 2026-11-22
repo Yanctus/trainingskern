@@ -3,6 +3,7 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # Tor oben (Jugendtor, D-Jugend dabei) mit neutralem Torwart. Ein Team (Neon), Nummern wie in der Skizze.
 # Vereinfacht: Der erste Doppelpass (8 mit 11) fehlt, dafür geht der Ball von 8 direkt quer zu 10. Wartende verschoben (3D-Abstand),
 # ein Trainer statt zwei. Sichtkegel aus dem Text ("Head up before delivery to see attackers movement"): Flankengeber schaut zum Stürmer.
+# Leitern als Leiter gezeichnet (22.11.2026): links eine Leiter, rechts außen drei echte Minihürden.
 T = P("T", "c", 93, 31, "T")
 TW = P("k", "t", 50.9, 7.3, "TW")
 POS = {"n3": (18.9, 30.8), "n8": (33.8, 33), "n7": (52.1, 43.6), "n10": (61, 56), "n6": (84, 53.7), "n2": (70, 55.5),
@@ -14,7 +15,7 @@ ERSATZ = [B("s1", 94.6, 34.5), B("s2", 96, 28)]
 LINES = [rect(12, 5, 76, 52), rect(26, 5, 48.1, 17.6), rect(39, 5, 22, 5.7)]
 KEGEL = [C(18.9, 5.3), C(14.7, 12.3), C(23.2, 12.3), C(14.7, 20.6), C(23.2, 20.6), C(18.9, 34),
          C(53, 21.3), C(44.1, 25.5), C(53, 30.5), C(44.3, 34.1), C(53, 39.9)] \
-      + [C(34.3, y, shape="huerde_ou") for y in (39.5, 43, 46.5)] + [C(84.1, y, shape="huerde_ou") for y in (35, 38.6, 43.1)]
+      + [leiter(34.3, 43, senkrecht=True)] + [C(84.1, y, shape="huerde_ou") for y in (35, 38.6, 43.1)]
 TORE = [{"x": 50, "y": 5, "side": "top", "size": "jugend"}]
 STUERMER = [[51, 40.2], [46.3, 34], [51, 30.6], [46.1, 25.5], [51, 21.6], [47, 13]]
 FLUEGEL = [[84, 47], [84, 31], [83, 25]]
@@ -31,14 +32,14 @@ u = {"title": "Kreislauf mit Flanke", "code": "UE-140", "kind": "Übungsform",
  "organisation_show": ORG,
  "coaching_points": ["Genau und mit dem richtigen Tempo passen, vor allem nach außen", "Saubere Technik in Leiter und Hürden, nichts umstoßen", "Vor der Flanke den Kopf heben und den Lauf des Stürmers sehen", "Eiskalt abschließen und mit gutem Timing in den Strafraum laufen"],
  "materials": ["12 Hütchen", "1 Koordinationsleiter", "3 Minihürden", "1 Jugendtor", "Viele Bälle"],
- "access": "abo", "hidden": True,
+ "access": "abo", "hidden": False,
  "say_intro": "Kreislauf mit Flanke. Pässe, Leiter, Hürden und ein Doppelpass, und am Ende eine Flanke zum Abschluss.",
  "board": {"lines": LINES, "goals": TORE, "cones": KEGEL, "players": sp(), "balls": [B("b1", 19.5, 31.4)] + ERSATZ,
   "steps": [
    S("Pass, dann Hütchen antippen", "Spieler drei passt nach vorn zu Spieler acht und sprintet zum Quadrat oben links, um die Hütchen anzutippen.",
      ps("b1", [34.4, 33.6]), *weg("n3", [[19.5, 22.5], [16.5, 14], [20.5, 9]], after=True)),
    S("Quer, dann durch die Leiter", "Spieler acht spielt quer in die Mitte zu Spieler zehn und läuft durch die Leiter.",
-     ps("b1", [61.6, 56.6]), *weg("n8", [[34.3, 37], [34.3, 49], [38, 52]], after=True)),
+     ps("b1", [61.6, 56.6]), *weg("n8", [[34.3, 34.2], [34.3, 51.8], [38, 54]], after=True)),
    S("Doppelpass, Stürmer läuft los", "Spieler zehn spielt einen Doppelpass mit Spieler sieben. Der tippt danach im Zickzack die Hütchen an und läuft in den Strafraum. Gleichzeitig springt Spieler sechs rechts über die Hürden.",
      ps("b1", [52.7, 44.2]), mv("n10", [66, 49.5], after=True), ps("b1", [66.6, 50.1], after=True), *weg("n7", STUERMER, after=True),
      *weg("n6", FLUEGEL, delay=0.5)),

@@ -41,7 +41,7 @@
  ],
  "materials": [
   "2 Minitore",
-  "6 Minihürden (oder 2 Koordinationsleitern)",
+  "2 Koordinationsleitern",
   "2 Stangen oder Puppen",
   "6 Hütchen",
   "Viele Bälle",
@@ -100,40 +100,16 @@
     "color": "orange"
    },
    {
-    "x": 30,
+    "x": 34,
     "y": 28,
     "color": "orange",
-    "shape": "huerde"
+    "shape": "leiter"
    },
    {
-    "x": 33.5,
+    "x": 66,
     "y": 28,
     "color": "orange",
-    "shape": "huerde"
-   },
-   {
-    "x": 37,
-    "y": 28,
-    "color": "orange",
-    "shape": "huerde"
-   },
-   {
-    "x": 70,
-    "y": 28,
-    "color": "orange",
-    "shape": "huerde"
-   },
-   {
-    "x": 66.5,
-    "y": 28,
-    "color": "orange",
-    "shape": "huerde"
-   },
-   {
-    "x": 63,
-    "y": 28,
-    "color": "orange",
-    "shape": "huerde"
+    "shape": "leiter"
    },
    {
     "x": 22,
@@ -164,7 +140,7 @@
    {
     "id": "n5",
     "team": "a",
-    "x": 26,
+    "x": 24,
     "y": 28,
     "label": "5"
    },
@@ -199,7 +175,7 @@
    {
     "id": "n6",
     "team": "a",
-    "x": 74,
+    "x": 76,
     "y": 28,
     "label": "6"
    },
@@ -279,7 +255,7 @@
      {
       "who": "n5",
       "to": [
-       40.5,
+       43.5,
        28
       ],
       "type": "lauf"
@@ -310,7 +286,7 @@
      {
       "who": "b8",
       "to": [
-       41.1,
+       44.1,
        28.6
       ],
       "type": "pass"
@@ -401,7 +377,7 @@
      {
       "id": "n5",
       "team": "a",
-      "x": 40.5,
+      "x": 43.5,
       "y": 28,
       "label": "5"
      },
@@ -436,7 +412,7 @@
      {
       "id": "n6",
       "team": "a",
-      "x": 74,
+      "x": 76,
       "y": 28,
       "label": "6"
      },
@@ -568,7 +544,7 @@
      {
       "id": "n5",
       "team": "a",
-      "x": 26,
+      "x": 24,
       "y": 28,
       "label": "5"
      },
@@ -603,7 +579,7 @@
      {
       "id": "n6",
       "team": "a",
-      "x": 74,
+      "x": 76,
       "y": 28,
       "label": "6"
      },
@@ -683,7 +659,7 @@
        {
         "who": "n5",
         "to": [
-         40.5,
+         43.5,
          28
         ],
         "type": "lauf"
@@ -691,7 +667,7 @@
        {
         "who": "n6",
         "to": [
-         59.5,
+         56.5,
          28
         ],
         "type": "lauf"
@@ -733,7 +709,7 @@
        {
         "who": "b8",
         "to": [
-         41.1,
+         44.1,
          28.6
         ],
         "type": "pass",
@@ -742,7 +718,7 @@
        {
         "who": "b10",
         "to": [
-         60.1,
+         57.1,
          28.6
         ],
         "type": "pass",
