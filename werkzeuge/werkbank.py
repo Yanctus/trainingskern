@@ -164,6 +164,14 @@ def svg(board, titel):
     for c in board.get("cones") or []:
         x, y = c["x"] * 10, c["y"] * 10
         col = "#c6ff3d" if c.get("color") == "neon" else "#ff7a1a"
+        if str(c.get("shape", "")).startswith("leiter"):
+            rot = ' transform="rotate(90 %s %s)"' % (x, y) if c.get("shape") == "leiter_ou" else ""
+            o.append(f'<g{rot}>' + "".join(f'<rect x="{x+dx-3}" y="{y-21}" width="7" height="42" fill="{col}" stroke="#000"/>' for dx in (-64, -32, 0, 32, 64))
+                     + f'<rect x="{x-80}" y="{y-27}" width="160" height="8" fill="{col}" stroke="#000"/><rect x="{x-80}" y="{y+19}" width="160" height="8" fill="{col}" stroke="#000"/></g>')
+            continue
+        if c.get("shape") == "ring":
+            o.append(f'<circle cx="{x}" cy="{y}" r="19" fill="none" stroke="{col}" stroke-width="8"/>')
+            continue
         if str(c.get("shape", "")).startswith("huerde"):
             rot = ' transform="rotate(90 %s %s)"' % (x, y) if c.get("shape") == "huerde" else ""
             o.append(f'<g{rot}><rect x="{x-24}" y="{y-9}" width="9" height="18" fill="{col}"/><rect x="{x+15}" y="{y-9}" width="9" height="18" fill="{col}"/>'
@@ -276,6 +284,17 @@ def html3d(board, titel):
     o.append("</svg>")
     for c in b.get("cones") or []:
         hu = str(c.get("shape", "")).startswith("huerde")
+        sh = c.get("shape", "")
+        if sh in ("leiter", "leiter_ou", "ring"):
+            # Leiter und Ring liegen flach auf dem Rasen (wie in der App: kein Hochklappen)
+            col = "#d4ff00" if c.get("color") == "neon" else "#ff5500"
+            w, h = (160, 54) if sh != "ring" else (48, 48)
+            rot = "rotate(90deg)" if sh == "leiter_ou" else ""
+            inner = ("".join(f'<rect x="{dx}" y="8" width="7" height="38" fill="{col}" stroke="#000" stroke-width="2"/>' for dx in (14, 46, 77, 108, 139))
+                     + f'<rect x="2" y="2" width="156" height="8" fill="{col}" stroke="#000" stroke-width="2"/><rect x="2" y="44" width="156" height="8" fill="{col}" stroke="#000" stroke-width="2"/>'
+                     if sh != "ring" else f'<circle cx="24" cy="24" r="19" fill="none" stroke="{col}" stroke-width="8"/>')
+            o.append(f'<div style="position:absolute;left:0;top:0;transform:translate3d({c["x"]*K}px,{c["y"]*K}px,1px)"><svg style="position:absolute;left:{-w/2}px;top:{-h/2}px;transform:{rot}" width="{w}" height="{h}" viewBox="0 0 {w} {h}">{inner}</svg></div>')
+            continue
         cls = "tok cone" + (" neon" if c.get("color") == "neon" else "") + (" hurdle" if hu else "")
         o.append(f'<div class="{cls}" style="transform:translate3d({c["x"]*K}px,{c["y"]*K}px,0)"><div class="up">{HURDLE if hu else CONE}</div></div>')
     for p in b.get("balls") or []:

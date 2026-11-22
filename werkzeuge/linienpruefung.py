@@ -64,8 +64,8 @@ def objects(board):
     # Hütchen ohne id stehen fest.
     cones = []
     for i, c in enumerate(board.get("cones") or []):
-        if str(c.get("shape", "")).startswith("huerde"):
-            continue  # Über Minihürden wird gesprungen: kein Hindernis für Laufwege
+        if str(c.get("shape", "")).startswith(("huerde", "leiter")) or c.get("shape") == "ring":
+            continue  # Über Minihürden wird gesprungen, durch Leitern und Ringe gelaufen: kein Hindernis für Laufwege
         kd = "stange" if c.get("shape") == "stange" else "cone"
         if c.get("id"):
             pos[c["id"]] = [c["x"], c["y"]]

@@ -27,6 +27,10 @@ def rect(x, y, w, h, dashed=False):
     return r
 def line(x1, y1, x2, y2, dashed=True): return {"type": "line", "x1": x1, "y1": y1, "x2": x2, "y2": y2, "dashed": dashed}
 def C(x, y, c="orange", **k): return {"x": x, "y": y, "color": c, **k}
+# Geräte: C(x, y, shape="stange") Stange · "huerde"/"huerde_ou" Minihürde · "leiter" Koordinationsleiter (16 x 5 Einheiten,
+# Mitte bei x/y, läuft von links nach rechts) · "leiter_ou" Leiter senkrecht (von oben nach unten) · "ring" Koordinationsring.
+def leiter(x, y, senkrecht=False, c="orange"): return C(x, y, c, shape="leiter_ou" if senkrecht else "leiter")
+def ring(x, y, c="orange"): return C(x, y, c, shape="ring")
 def ecken(x, y, w, h): return [C(x, y), C(x + w, y), C(x, y + h), C(x + w, y + h)]
 def dims(x1, x2, y1, y2, tb, tr, rx=None):
     return [{"x1": x1, "y1": 58.6, "x2": x2, "y2": 58.6, "text": tb}, {"x1": rx or x2 + 8, "y1": y1, "x2": rx or x2 + 8, "y2": y2, "text": tr}]
