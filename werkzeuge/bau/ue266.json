@@ -1,0 +1,605 @@
+{
+ "title": "Tennisbälle, dann zwei Paraden",
+ "code": "UE-266",
+ "kind": "Übungsform",
+ "focuses": [
+  "Koordination",
+  "Schnelligkeit",
+  "Ballannahme"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Torwart"
+ ],
+ "duration_minutes": 15,
+ "players_min": 3,
+ "players_max": 4,
+ "field_size": "41 x 16 m",
+ "description": "Torwarttraining für schnelle Reaktionen und schnelle Füße. Der Torwart steht in einem Quadrat aus Hütchen und fängt abwechselnd Tennisbälle und Fußbälle vom Trainer. Jeden Tennisball legt er auf ein Hütchen, jeden Fußball wirft er zurück. Liegen alle vier Tennisbälle, hält er einen Schuss am nahen Pfosten, läuft um die Stange und hält gleich den zweiten Schuss.",
+ "organisation": [
+  "Aufbauen: Im Strafraum vor einem Jugendtor. Im Torraum steht ein Quadrat aus vier Hütchen, zwischen Quadrat und Tor etwas rechts von der Mitte eine Stange.",
+  "Verteilen: Der Torwart steht im Quadrat, der Trainer davor mit vier Tennisbällen und Fußbällen. Spieler sieben steht rechts, Spieler acht links, beide mit Bällen. Der zweite Torwart wartet neben dem Tor.",
+  "Ablauf: Der Trainer wirft abwechselnd einen Tennisball und einen Fußball. Tennisbälle legt der Torwart auf ein Hütchen, Fußbälle wirft er zurück. Liegen alle vier Tennisbälle, schießt Spieler sieben an den nahen Pfosten. Der Torwart steht schnell auf, läuft um die Stange und hält den Schuss von Spieler acht.",
+  "Wechsel: Nach jeder zweiten Runde tauschen die beiden Torhüter."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Voll konzentriert bleiben: Tennisball sicher fangen und aufs Hütchen legen",
+  "Fußbälle sicher fangen und genau zum Trainer zurückwerfen",
+  "Am nahen Pfosten sauber abtauchen und mit der richtigen Hand zum Ball",
+  "Schnell aufstehen und mit schnellen Füßen quer durchs Tor"
+ ],
+ "materials": [
+  "1 Jugendtor",
+  "4 Hütchen",
+  "1 Stange",
+  "4 Tennisbälle",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Tennisbälle, dann zwei Paraden. Der Torwart fängt Tennisbälle und legt sie auf Hütchen. Danach hält er zwei Schüsse direkt hintereinander.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 14,
+    "y": 5,
+    "w": 72,
+    "h": 32
+   },
+   {
+    "type": "rect",
+    "x": 34,
+    "y": 5,
+    "w": 32,
+    "h": 10.7
+   }
+  ],
+  "cones": [
+   {
+    "x": 44.5,
+    "y": 10.5,
+    "color": "orange"
+   },
+   {
+    "x": 55.5,
+    "y": 10.5,
+    "color": "orange"
+   },
+   {
+    "x": 44.5,
+    "y": 15.5,
+    "color": "orange"
+   },
+   {
+    "x": 55.5,
+    "y": 15.5,
+    "color": "orange"
+   },
+   {
+    "x": 50.8,
+    "y": 7.5,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "jugend"
+   }
+  ],
+  "players": [
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 50,
+    "y": 13,
+    "label": "TW"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 75,
+    "y": 11,
+    "label": "7"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 25,
+    "y": 11,
+    "label": "8"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 36,
+    "y": 2.5,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 50,
+    "y": 30,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "t1",
+    "x": 50.6,
+    "y": 30.6
+   },
+   {
+    "id": "b1",
+    "x": 48.4,
+    "y": 31.6
+   },
+   {
+    "id": "b7",
+    "x": 75.6,
+    "y": 11.6
+   },
+   {
+    "id": "b8",
+    "x": 25.6,
+    "y": 11.6
+   },
+   {
+    "id": "s1",
+    "x": 53.6,
+    "y": 33.5
+   },
+   {
+    "id": "s2",
+    "x": 46.4,
+    "y": 33.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Tennisball fangen",
+    "say": "Der Torwart steht im Quadrat. Der Trainer wirft ihm einen Tennisball zu, und der Torwart fängt ihn sicher.",
+    "moves": [
+     {
+      "who": "t1",
+      "to": [
+       50.6,
+       13.6
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Aufs Hütchen legen",
+    "say": "Er geht zu einem Hütchen und legt den Tennisball darauf. Dann geht er zurück in die Mitte, stellt sich bereit und schaut zum Trainer.",
+    "moves": [
+     {
+      "who": "k1",
+      "to": [
+       47.6,
+       13.4
+      ],
+      "type": "lauf",
+      "ball": "t1"
+     },
+     {
+      "who": "t1",
+      "to": [
+       45.4,
+       11.4
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       50,
+       13
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       50,
+       28
+      ],
+      "type": "blick",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Fußball zurückwerfen",
+    "say": "Jeder zweite Wurf ist ein Fußball. Den fängt der Torwart und wirft ihn genau zum Trainer zurück. So geht es weiter, bis alle vier Tennisbälle auf den Hütchen liegen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       13.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       29.4
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Nahen Pfosten halten",
+    "say": "Jetzt schießt Spieler sieben flach an den nahen Pfosten. Der Torwart taucht schnell ab und hält den Ball.",
+    "moves": [
+     {
+      "who": "b7",
+      "to": [
+       55.1,
+       7.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "k1",
+      "to": [
+       54.5,
+       6.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Um die Stange",
+    "say": "Der Torwart steht sofort auf und läuft um die Stange herum, schnell quer durchs Tor zum anderen Pfosten.",
+    "moves": [
+     {
+      "who": "k1",
+      "to": [
+       51,
+       11
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "k1",
+      "to": [
+       45.5,
+       6.5
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zweiter Ball gehalten",
+    "say": "Spieler acht schießt auf den anderen Pfosten, und der Torwart hält auch diesen Ball. Die Runde ist vorbei. Nach jeder zweiten Runde ist der zweite Torwart dran.",
+    "moves": [
+     {
+      "who": "b8",
+      "to": [
+       46.1,
+       7.1
+      ],
+      "type": "pass"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 14,
+    "y1": 58.6,
+    "x2": 86,
+    "y2": 58.6,
+    "text": "41 m"
+   },
+   {
+    "x1": 93,
+    "y1": 5,
+    "x2": 93,
+    "y2": 37,
+    "text": "16 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Mit den Fingerspitzen in die Ecke.",
+   "title": "Fingerspitzen an den Pfosten",
+   "text": "Nach dem ersten Ball zählt jeder Schritt. Der Torwart läuft mit kleinen, schnellen Schritten um die Stange und quer durchs Tor. Kommt der zweite Schuss genau in die Ecke, streckt er sich und lenkt den Ball mit den Fingerspitzen am Pfosten vorbei.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 54.5,
+      "y": 6.5,
+      "label": "TW"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 75,
+      "y": 11,
+      "label": "7"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 25,
+      "y": 11,
+      "label": "8"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 36,
+      "y": 2.5,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "t1",
+      "x": 50.6,
+      "y": 30.6
+     },
+     {
+      "id": "b1",
+      "x": 48.4,
+      "y": 31.6
+     },
+     {
+      "id": "b7",
+      "x": 55.1,
+      "y": 7.1
+     },
+     {
+      "id": "b8",
+      "x": 25.6,
+      "y": 11.6
+     },
+     {
+      "id": "s1",
+      "x": 53.6,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 46.4,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Schnelle Füße",
+      "say": "Der Torwart hat den ersten Ball gehalten. Er steht sofort auf und läuft mit kleinen, schnellen Schritten um die Stange.",
+      "moves": [
+       {
+        "who": "k1",
+        "to": [
+         51,
+         11
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "k1",
+        "to": [
+         46.5,
+         7.5
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Fingerspitzen",
+      "say": "Spieler acht schießt genau in die linke Ecke. Der Torwart streckt sich und lenkt den Ball mit den Fingerspitzen am Pfosten vorbei.",
+      "moves": [
+       {
+        "who": "b8",
+        "to": [
+         45,
+         5.8
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "k1",
+        "to": [
+         44.5,
+         6.5
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "b8",
+        "to": [
+         41,
+         2
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Flach festhalten, sofort wieder hoch.",
+   "title": "Festhalten und sofort hoch",
+   "text": "Den flachen Schuss am nahen Pfosten hält der Torwart mit beiden Händen fest und drückt den Ball an den Körper. So springt nichts zurück. Dann steht er ohne Pause auf, denn der zweite Schuss kommt sofort.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 50,
+      "y": 13,
+      "label": "TW"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 75,
+      "y": 11,
+      "label": "7"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 25,
+      "y": 11,
+      "label": "8"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 36,
+      "y": 2.5,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "t1",
+      "x": 50.6,
+      "y": 30.6
+     },
+     {
+      "id": "b1",
+      "x": 48.4,
+      "y": 31.6
+     },
+     {
+      "id": "b7",
+      "x": 75.6,
+      "y": 11.6
+     },
+     {
+      "id": "b8",
+      "x": 25.6,
+      "y": 11.6
+     },
+     {
+      "id": "s1",
+      "x": 53.6,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 46.4,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Flach festhalten",
+      "say": "Spieler sieben schießt flach an den nahen Pfosten. Der Torwart taucht ab, hält den Ball mit beiden Händen fest und drückt ihn an den Körper.",
+      "moves": [
+       {
+        "who": "b7",
+        "to": [
+         55.1,
+         7.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "k1",
+        "to": [
+         54.5,
+         6.5
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Sofort hoch",
+      "say": "Ohne Pause steht er auf und läuft um die Stange zum anderen Pfosten. Dort hält er den Schuss von Spieler acht.",
+      "moves": [
+       {
+        "who": "k1",
+        "to": [
+         51,
+         11
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "k1",
+        "to": [
+         45.5,
+         6.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b8",
+        "to": [
+         46.1,
+         7.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,631 @@
+{
+ "title": "Parcours und zwei Paraden",
+ "code": "UE-263",
+ "kind": "Übungsform",
+ "focuses": [
+  "Koordination",
+  "Schnelligkeit",
+  "Ballannahme"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Torwart"
+ ],
+ "duration_minutes": 15,
+ "players_min": 2,
+ "players_max": 3,
+ "field_size": "41 x 16 m (Strafraum)",
+ "description": "Der Torwart läuft einen kurzen Parcours im Torraum: Prallpass mit dem Trainer, schnelle Füße durch die Hütchen und ein Sprung über die Hürde. Dann taucht er auf einen flachen Ball ab und rollt ihn zurück. Er läuft rückwärts zu den Hütchen am Tor und muss quer durchs Tor zwei Schüsse halten. Danach tauschen die beiden Torhüter.",
+ "organisation": [
+  "Aufbauen: Ein Strafraum mit Jugendtor. Im Torraum stehen zwei Hütchen nah am Tor, eine Reihe aus drei Hütchen und darunter zwei Hütchen untereinander. Unter dem Torraum liegt eine Minihürde.",
+  "Verteilen: Ein Torwart startet rechts neben den Hütchen, der zweite Torwart wartet rechts mit Bällen. Der Trainer steht unten in der Mitte, Spieler sieben unten links, beide mit Bällen.",
+  "Ablauf: Prallpass mit dem Trainer, schnelle Füße durch die Hütchen, Sprung über die Hürde. Abtauchen auf den Pass von Spieler sieben und zurückrollen. Rückwärts zu den zwei Hütchen am Tor, quer zum Schuss des Trainers, dann sofort aufstehen zum zweiten Schuss.",
+  "Wechsel: Nach jedem Durchgang tauschen die Torhüter. Der erste Torwart holt die Bälle und gibt jetzt den zweiten Schuss."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Mit schnellen, kurzen Schritten quer durchs Tor",
+  "Nach der Parade sofort aufstehen und zum Ball drehen",
+  "Beim Abtauchen den Ball sicher an den Körper ziehen",
+  "Den Parcours mit vollem Tempo laufen und genau passen"
+ ],
+ "materials": [
+  "1 Jugendtor",
+  "7 Hütchen",
+  "1 Minihürde",
+  "Viele Bälle",
+  "Leibchen"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Parcours und zwei Paraden. Der Torwart läuft einen Parcours, taucht ab und hält danach zwei Schüsse.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 10,
+    "y": 5,
+    "w": 80,
+    "h": 50
+   },
+   {
+    "type": "rect",
+    "x": 29,
+    "y": 5,
+    "w": 42,
+    "h": 18
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "jugend"
+   }
+  ],
+  "cones": [
+   {
+    "x": 39,
+    "y": 7.5,
+    "color": "orange"
+   },
+   {
+    "x": 43,
+    "y": 10.5,
+    "color": "orange"
+   },
+   {
+    "x": 48,
+    "y": 14,
+    "color": "orange"
+   },
+   {
+    "x": 53.5,
+    "y": 14,
+    "color": "orange"
+   },
+   {
+    "x": 59,
+    "y": 14,
+    "color": "orange"
+   },
+   {
+    "x": 48,
+    "y": 19.5,
+    "color": "orange"
+   },
+   {
+    "x": 48,
+    "y": 26,
+    "color": "orange"
+   },
+   {
+    "x": 48,
+    "y": 32,
+    "color": "orange",
+    "shape": "huerde_ou"
+   }
+  ],
+  "players": [
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 60,
+    "y": 19,
+    "label": "TW"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 85,
+    "y": 17,
+    "label": "TW"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 22,
+    "y": 46,
+    "label": "7"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 62,
+    "y": 48,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 62.6,
+    "y": 48.6
+   },
+   {
+    "id": "b2",
+    "x": 22.6,
+    "y": 46.6
+   },
+   {
+    "id": "b3",
+    "x": 85.6,
+    "y": 17.6
+   },
+   {
+    "id": "s1",
+    "x": 65.6,
+    "y": 50.5
+   },
+   {
+    "id": "s2",
+    "x": 58.4,
+    "y": 50.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Prallpass",
+    "say": "Der Trainer passt zum Torwart, und der Torwart spielt direkt zurück.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       60.6,
+       19.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       62.6,
+       48.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Schnelle Füße und Sprung",
+    "say": "Jetzt schnelle Füße: Der Torwart läuft im Zickzack durch die Reihe, dann links und rechts um die zwei Hütchen und springt über die Hürde.",
+    "moves": [
+     {
+      "who": "k1",
+      "to": [
+       63.5,
+       15
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "k1",
+      "to": [
+       59.5,
+       10.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       53.5,
+       17
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       48,
+       10.8
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       44.5,
+       16
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       44.5,
+       19.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       51.5,
+       26
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       48,
+       29.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       48,
+       35
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Abtauchen und zurückrollen",
+    "say": "Spieler sieben spielt flach zur Seite. Der Torwart taucht auf den Ball ab, steht schnell auf und rollt ihn zurück zu Spieler sieben.",
+    "moves": [
+     {
+      "who": "b2",
+      "to": [
+       38.6,
+       36.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "k1",
+      "to": [
+       38,
+       36
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b2",
+      "to": [
+       22.6,
+       46.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Rückwärts und quer: Parade",
+    "say": "Der Torwart läuft rückwärts und tippt die zwei Hütchen am Tor an. Dann schnell quer durchs Tor, der Trainer schießt, und der Torwart hält den Ball.",
+    "moves": [
+     {
+      "who": "k1",
+      "to": [
+       41.5,
+       12.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "k1",
+      "to": [
+       38,
+       9
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       54,
+       8.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       54.6,
+       9.1
+      ],
+      "type": "pass",
+      "delay": 1.6
+     }
+    ]
+   },
+   {
+    "label": "Zweiter Schuss, dann Wechsel",
+    "say": "Sofort steht der Torwart auf und schaut zum zweiten Torwart. Der schießt aufs Tor, und der Torwart hält auch diesen Ball. Damit ist die Runde vorbei: Jetzt tauschen die Torhüter, und der zweite Torwart läuft den Parcours.",
+    "moves": [
+     {
+      "who": "k1",
+      "to": [
+       53,
+       10
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "k1",
+      "to": [
+       70,
+       19
+      ],
+      "type": "blick",
+      "after": true
+     },
+     {
+      "who": "b3",
+      "to": [
+       53.6,
+       10.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 10,
+    "y1": 58.6,
+    "x2": 90,
+    "y2": 58.6,
+    "text": "41 m"
+   },
+   {
+    "x1": 96,
+    "y1": 5,
+    "x2": 96,
+    "y2": 55,
+    "text": "16 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Richtig abtauchen.",
+   "title": "Richtig abtauchen",
+   "text": "Beim Abtauchen fällt der Torwart seitlich auf den Ball. Die Hände sind zuerst am Ball, dann zieht er ihn fest an den Körper. Danach steht er sofort wieder auf und rollt den Ball genau zurück.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 48,
+      "y": 35,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 85,
+      "y": 17,
+      "label": "TW"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 22,
+      "y": 46,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 62,
+      "y": 48,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b2",
+      "x": 22.6,
+      "y": 46.6
+     },
+     {
+      "id": "b1",
+      "x": 62.6,
+      "y": 48.6
+     },
+     {
+      "id": "s1",
+      "x": 65.6,
+      "y": 50.5
+     },
+     {
+      "id": "s2",
+      "x": 58.4,
+      "y": 50.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Seitlich abtauchen",
+      "say": "Spieler sieben spielt flach zur Seite. Der Torwart macht einen kleinen Schritt und fällt seitlich auf den Ball, die Hände zuerst.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         38.6,
+         36.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "k1",
+        "to": [
+         38,
+         36
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Aufstehen und zurückrollen",
+      "say": "Er zieht den Ball fest an den Körper, steht sofort auf und rollt ihn genau zurück zu Spieler sieben.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         22.6,
+         46.6
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Schnell quer durchs Tor und sofort wieder bereit.",
+   "title": "Quer durchs Tor",
+   "text": "Vom Hütchen am Tor geht es mit kurzen, schnellen Schritten quer durchs Tor. Nach der ersten Parade steht der Torwart sofort auf, dreht sich zum Ball und ist für den zweiten Schuss bereit.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 38,
+      "y": 9,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 85,
+      "y": 17,
+      "label": "TW"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 22,
+      "y": 46,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 62,
+      "y": 48,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 62.6,
+      "y": 48.6
+     },
+     {
+      "id": "b3",
+      "x": 85.6,
+      "y": 17.6
+     },
+     {
+      "id": "s1",
+      "x": 65.6,
+      "y": 50.5
+     },
+     {
+      "id": "s2",
+      "x": 58.4,
+      "y": 50.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Kurze, schnelle Schritte",
+      "say": "Der Torwart läuft mit kurzen, schnellen Schritten quer durchs Tor. Der Trainer schießt, und der Torwart hält den Ball.",
+      "moves": [
+       {
+        "who": "k1",
+        "to": [
+         54,
+         8.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         54.6,
+         9.1
+        ],
+        "type": "pass",
+        "delay": 0.8
+       }
+      ]
+     },
+     {
+      "label": "Sofort wieder bereit",
+      "say": "Sofort aufstehen und zum Ball schauen. Der zweite Torwart schießt, und der Torwart hält auch diesen Ball.",
+      "moves": [
+       {
+        "who": "k1",
+        "to": [
+         53,
+         10
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "k1",
+        "to": [
+         70,
+         19
+        ],
+        "type": "blick",
+        "after": true
+       },
+       {
+        "who": "b3",
+        "to": [
+         53.6,
+         10.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

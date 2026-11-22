@@ -1,0 +1,591 @@
+{
+ "title": "Doppelpass, Hürde, Abschluss",
+ "code": "UE-247",
+ "kind": "Übungsform",
+ "focuses": [
+  "Torschuss",
+  "Passspiel",
+  "Schnelligkeit"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 7,
+ "players_max": 12,
+ "field_size": "23 x 32 m",
+ "description": "Ein Kreislauf mit drei Stationen vor einem Tor mit Torwart. Ein Spieler spielt einen Doppelpass, springt über eine Hürde und bekommt den Ball von der anderen Seite. Er legt für den Stürmer ab, der um die Puppen dribbelt und ins Eck schießt. Danach rückt jeder eine Station weiter.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 23 mal 32 Metern mit einem Jugendtor oben. Rechts die erste Station mit einer Minihürde, links die Passstation, unten die Stürmerstation, in der Mitte zwei Puppen.",
+  "Verteilen: An jeder Station stehen zwei bis drei Spieler, an der ersten und an der Passstation mit Bällen. Ein Torwart steht im Tor, ein zweiter wartet. Der Trainer steht rechts mit Bällen.",
+  "Ablauf: Doppelpass an der ersten Station, Sprung über die Hürde, Pass quer von der Passstation, Ablage für den Stürmer. Der Stürmer dribbelt um die Puppen und schließt ab.",
+  "Wertung und Wechsel: Jeder Treffer gibt einen Punkt. Der Ableger sprintet zur Passstation, der Passgeber geht zur Stürmerstation, der Stürmer zur ersten Station. Die Torhüter wechseln nach zwei bis drei Schüssen."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Flach und hart in die Ecken schießen",
+  "Den Ball beim Dribbling um die Puppen eng führen",
+  "Genau und mit dem richtigen Tempo passen",
+  "Mit vollem Tempo durch den Kreislauf, schnell über die Hürde"
+ ],
+ "materials": [
+  "1 Jugendtor",
+  "2 Stangen als Puppen",
+  "1 Minihürde",
+  "3 Hütchen",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Doppelpass, Hürde, Abschluss. Ein schneller Kreislauf mit drei Stationen, und am Ende schließt der Stürmer ab.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 32.1,
+    "y": 5,
+    "w": 35.8,
+    "h": 50
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "jugend"
+   }
+  ],
+  "cones": [
+   {
+    "x": 52.2,
+    "y": 27.9,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 47.7,
+    "y": 27.9,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 59.5,
+    "y": 20,
+    "color": "orange",
+    "shape": "huerde"
+   },
+   {
+    "x": 72,
+    "y": 25,
+    "color": "orange"
+   },
+   {
+    "x": 34.5,
+    "y": 21,
+    "color": "orange"
+   },
+   {
+    "x": 51,
+    "y": 44.5,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "k",
+    "team": "t",
+    "x": 50,
+    "y": 7.5,
+    "label": "TW"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 71.5,
+    "y": 20,
+    "label": "4"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 63,
+    "y": 20,
+    "label": "8"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 37.5,
+    "y": 17,
+    "label": "10"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 55,
+    "y": 42,
+    "label": "9"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 75,
+    "y": 46,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 72.1,
+    "y": 20.6
+   },
+   {
+    "id": "b2",
+    "x": 38.1,
+    "y": 17.6
+   },
+   {
+    "id": "s1",
+    "x": 78.6,
+    "y": 49.5
+   },
+   {
+    "id": "s2",
+    "x": 75,
+    "y": 49.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Doppelpass",
+    "say": "Spieler vier passt zu Spieler acht, und der spielt direkt zurück. Das ist der Doppelpass.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       63.6,
+       20.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       72.1,
+       20.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Hürde, Pass quer",
+    "say": "Spieler acht springt über die Hürde und sprintet weiter. Spieler zehn passt ihm den Ball quer in den Lauf.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       56,
+       19.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b2",
+      "to": [
+       56.6,
+       20.1
+      ],
+      "type": "pass",
+      "delay": 0.5
+     }
+    ]
+   },
+   {
+    "label": "Ablage zum Stürmer",
+    "say": "Spieler neun kommt entgegen, und Spieler acht legt ihm den Ball mit einem Kontakt ab.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       57,
+       33
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b2",
+      "to": [
+       57.6,
+       33.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Um die Puppe: Punkt",
+    "say": "Spieler neun dribbelt eng um die Puppe und schießt flach ins lange Eck, und das gibt einen Punkt. Dann sprintet Spieler acht zur Passstation, Spieler zehn geht zur Stürmerstation, und Spieler neun stellt sich an der ersten Station an. Der Nächste von der ersten Station ist dran.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       49,
+       33
+      ],
+      "type": "dribbling",
+      "ball": "b2"
+     },
+     {
+      "who": "n9",
+      "to": [
+       43.5,
+       29.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "n9",
+      "to": [
+       44,
+       22
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "k",
+      "to": [
+       47.5,
+       8
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b2",
+      "to": [
+       54.5,
+       5.4
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 32.1,
+    "y1": 58.6,
+    "x2": 67.9,
+    "y2": 58.6,
+    "text": "23 m"
+   },
+   {
+    "x1": 88,
+    "y1": 5,
+    "x2": 88,
+    "y2": 55,
+    "text": "32 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Eng am Ball und flach ins Eck.",
+   "title": "Eng am Ball, flach ins Eck",
+   "text": "Der Stürmer führt den Ball um die Puppe mit vielen kleinen Kontakten, so bleibt er immer nah am Fuß. Beim Schuss ist der Kopf über dem Ball. Er schießt flach und hart in die Ecke, Genauigkeit ist wichtiger als Wucht.",
+   "board": {
+    "players": [
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50,
+      "y": 7.5,
+      "label": "TW"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 71.5,
+      "y": 20,
+      "label": "4"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 37.5,
+      "y": 17,
+      "label": "10"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 57,
+      "y": 33,
+      "label": "9"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 75,
+      "y": 46,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b2",
+      "x": 57.6,
+      "y": 33.6
+     },
+     {
+      "id": "s1",
+      "x": 78.6,
+      "y": 49.5
+     },
+     {
+      "id": "s2",
+      "x": 75,
+      "y": 49.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Eng um die Puppe",
+      "say": "Spieler neun führt den Ball mit vielen kleinen Kontakten eng um die Puppe.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         49,
+         33
+        ],
+        "type": "dribbling",
+        "ball": "b2"
+       },
+       {
+        "who": "n9",
+        "to": [
+         43.5,
+         29.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b2"
+       },
+       {
+        "who": "n9",
+        "to": [
+         44,
+         22
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b2"
+       }
+      ]
+     },
+     {
+      "label": "Flach ins Eck: Punkt",
+      "say": "Der Kopf ist über dem Ball. Spieler neun schießt flach ins lange Eck, genau statt mit Wucht, und das gibt einen Punkt.",
+      "moves": [
+       {
+        "who": "k",
+        "to": [
+         47.5,
+         8
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b2",
+        "to": [
+         54.5,
+         5.4
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Der Ableger wird zum Verteidiger.",
+   "title": "Ableger wird Verteidiger",
+   "text": "Nach der Ablage dreht Spieler acht um und stellt sich dem Stürmer in den Weg. Ruft der Trainer „zwei“, verteidigt er nur passiv, ruft er „eins“, greift er richtig an. Der Stürmer muss schnell reagieren und an ihm vorbei abschließen.",
+   "board": {
+    "players": [
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50,
+      "y": 7.5,
+      "label": "TW"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 71.5,
+      "y": 20,
+      "label": "4"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 58.5,
+      "y": 23.5,
+      "label": "8"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 37.5,
+      "y": 17,
+      "label": "10"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 55,
+      "y": 42,
+      "label": "9"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 75,
+      "y": 46,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b2",
+      "x": 59.1,
+      "y": 24.1
+     },
+     {
+      "id": "s1",
+      "x": 78.6,
+      "y": 49.5
+     },
+     {
+      "id": "s2",
+      "x": 75,
+      "y": 49.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Ablage, dann verteidigen",
+      "say": "Spieler neun kommt entgegen, und Spieler acht legt ab. Dann dreht Spieler acht sofort um und stellt sich dem Stürmer in den Weg.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         57,
+         33
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b2",
+        "to": [
+         57.6,
+         33.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n8",
+        "to": [
+         48,
+         22
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Vorbei und rein: Punkt",
+      "say": "Spieler neun dribbelt rechts an der Puppe vorbei. Spieler acht verteidigt passiv und kommt nicht an den Ball. Spieler neun schießt flach ins Eck, und das gibt einen Punkt.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         57,
+         26
+        ],
+        "type": "dribbling",
+        "ball": "b2"
+       },
+       {
+        "who": "n9",
+        "to": [
+         54,
+         21
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b2"
+       },
+       {
+        "who": "n8",
+        "to": [
+         51,
+         22
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "k",
+        "to": [
+         53,
+         8
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b2",
+        "to": [
+         45,
+         5.4
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
