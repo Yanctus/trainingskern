@@ -30,7 +30,7 @@ ERLAUBT = {
 }
 ERLAUBT_MOVE = {"who", "ball", "to", "from", "type", "bend", "delay", "after", "weite", "dauer"}
 ERLAUBT_BOARD = set(ERLAUBT) | {"sketch_steps"}
-ERLAUBT_UNIT = {"title", "code", "kind", "focuses", "age_groups", "altersbereiche", "zeit", "aufrufe", "duration_minutes", "players_min", "players_max", "field_size", "description",
+ERLAUBT_UNIT = {"title", "code", "kind", "focuses", "age_groups", "altersbereiche", "tags", "zeit", "aufrufe", "duration_minutes", "players_min", "players_max", "field_size", "description",
                 "organisation", "organisation_show", "coaching_points", "progression", "materials", "access", "hidden", "board", "say_intro",
                 "versions", "audio", "id", "created_date", "updated_date", "created_by_id", "created_by", "is_sample"}
 ERLAUBT_VERSION = {"label", "say", "title", "text", "board"}
