@@ -148,28 +148,10 @@
     "shape": "huerde"
    },
    {
-    "x": 30.5,
+    "x": 34.2,
     "y": 39.6,
     "color": "orange",
-    "shape": "huerde"
-   },
-   {
-    "x": 33,
-    "y": 39.6,
-    "color": "orange",
-    "shape": "huerde"
-   },
-   {
-    "x": 35.5,
-    "y": 39.6,
-    "color": "orange",
-    "shape": "huerde"
-   },
-   {
-    "x": 38,
-    "y": 39.6,
-    "color": "orange",
-    "shape": "huerde"
+    "shape": "leiter"
    }
   ],
   "players": [
@@ -406,7 +388,7 @@
      {
       "who": "r7",
       "to": [
-       40.5,
+       44,
        39.6
       ],
       "type": "lauf",
@@ -415,7 +397,7 @@
      {
       "who": "r7",
       "to": [
-       28,
+       24.8,
        39.6
       ],
       "type": "lauf",
@@ -424,8 +406,8 @@
      {
       "who": "r7",
       "to": [
-       23.5,
-       35.5
+       22.5,
+       36
       ],
       "type": "lauf",
       "after": true
@@ -896,7 +878,7 @@
        {
         "who": "r7",
         "to": [
-         40.5,
+         44,
          39.6
         ],
         "type": "lauf",
@@ -905,7 +887,7 @@
        {
         "who": "r7",
         "to": [
-         28,
+         24.8,
          39.6
         ],
         "type": "lauf",
@@ -914,8 +896,8 @@
        {
         "who": "r7",
         "to": [
-         23.5,
-         35.5
+         22.5,
+         36
         ],
         "type": "lauf",
         "after": true

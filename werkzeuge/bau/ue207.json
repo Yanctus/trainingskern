@@ -93,51 +93,15 @@
    },
    {
     "x": 50,
-    "y": 37,
+    "y": 41,
     "color": "neon",
-    "shape": "huerde_ou"
+    "shape": "leiter_ou"
    },
    {
     "x": 50,
-    "y": 40,
+    "y": 19,
     "color": "neon",
-    "shape": "huerde_ou"
-   },
-   {
-    "x": 50,
-    "y": 43,
-    "color": "neon",
-    "shape": "huerde_ou"
-   },
-   {
-    "x": 50,
-    "y": 46,
-    "color": "neon",
-    "shape": "huerde_ou"
-   },
-   {
-    "x": 50,
-    "y": 14,
-    "color": "neon",
-    "shape": "huerde_ou"
-   },
-   {
-    "x": 50,
-    "y": 17,
-    "color": "neon",
-    "shape": "huerde_ou"
-   },
-   {
-    "x": 50,
-    "y": 20,
-    "color": "neon",
-    "shape": "huerde_ou"
-   },
-   {
-    "x": 50,
-    "y": 23,
-    "color": "neon",
-    "shape": "huerde_ou"
+    "shape": "leiter_ou"
    }
   ],
   "players": [
@@ -234,7 +198,7 @@
       "who": "n4",
       "to": [
        50,
-       48.5
+       50
       ],
       "type": "lauf",
       "after": true
@@ -243,7 +207,7 @@
       "who": "n4",
       "to": [
        50,
-       35
+       31.5
       ],
       "type": "lauf",
       "after": true
@@ -261,7 +225,7 @@
       "who": "r11",
       "to": [
        50,
-       11.5
+       10
       ],
       "type": "lauf",
       "after": true
@@ -270,7 +234,7 @@
       "who": "r11",
       "to": [
        50,
-       25
+       28
       ],
       "type": "lauf",
       "after": true

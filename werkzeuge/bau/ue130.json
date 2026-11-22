@@ -40,7 +40,7 @@
   "Ruhig abschließen und dann blitzschnell ins Tor wechseln"
  ],
  "materials": [
-  "2 Koordinationsleitern (oder 6 Minihürden)",
+  "2 Koordinationsleitern",
   "2 Dummys",
   "1 Jugendtor",
   "Viele Bälle",
@@ -84,39 +84,15 @@
   "cones": [
    {
     "x": 28.9,
-    "y": 19.5,
+    "y": 22,
     "color": "orange",
-    "shape": "huerde_ou"
-   },
-   {
-    "x": 28.9,
-    "y": 23,
-    "color": "orange",
-    "shape": "huerde_ou"
-   },
-   {
-    "x": 28.9,
-    "y": 26.5,
-    "color": "orange",
-    "shape": "huerde_ou"
+    "shape": "leiter_ou"
    },
    {
     "x": 71.1,
-    "y": 19.5,
+    "y": 22,
     "color": "orange",
-    "shape": "huerde_ou"
-   },
-   {
-    "x": 71.1,
-    "y": 23,
-    "color": "orange",
-    "shape": "huerde_ou"
-   },
-   {
-    "x": 71.1,
-    "y": 26.5,
-    "color": "orange",
-    "shape": "huerde_ou"
+    "shape": "leiter_ou"
    },
    {
     "x": 37.6,
@@ -237,7 +213,7 @@
       "who": "n9",
       "to": [
        28.9,
-       16
+       12
       ],
       "type": "lauf"
      },
@@ -245,7 +221,7 @@
       "who": "n9",
       "to": [
        28.9,
-       29
+       32
       ],
       "type": "lauf",
       "after": true
@@ -254,7 +230,7 @@
       "who": "n9",
       "to": [
        33,
-       32.5
+       33.5
       ],
       "type": "lauf",
       "after": true
@@ -263,7 +239,7 @@
       "who": "n9",
       "to": [
        41,
-       32
+       32.5
       ],
       "type": "lauf",
       "after": true
@@ -336,7 +312,7 @@
       "who": "r2",
       "to": [
        71.1,
-       16
+       12
       ],
       "type": "lauf",
       "after": true
@@ -345,7 +321,7 @@
       "who": "r2",
       "to": [
        71.1,
-       29
+       32
       ],
       "type": "lauf",
       "after": true
@@ -805,7 +781,7 @@
         "who": "n10",
         "to": [
          28.9,
-         16
+         12
         ],
         "type": "lauf",
         "after": true
@@ -814,7 +790,7 @@
         "who": "n10",
         "to": [
          28.9,
-         29
+         32
         ],
         "type": "lauf",
         "after": true
@@ -823,7 +799,7 @@
         "who": "n10",
         "to": [
          33,
-         32.5
+         33.5
         ],
         "type": "lauf",
         "after": true
@@ -832,7 +808,7 @@
         "who": "n10",
         "to": [
          41,
-         32
+         32.5
         ],
         "type": "lauf",
         "after": true

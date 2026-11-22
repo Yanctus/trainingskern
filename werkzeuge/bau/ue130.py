@@ -1,7 +1,8 @@
 import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe import *
 # PS-117 (U12-U14, Woche 2 Pre-Season): Pass, SAQ and Finish. 50 x 45 Yards am Strafraum, nach der PDF-Skizze: Feld x 10-90, y 5-56,
-# Tor oben (Jugendtor, D-Jugend dabei). Gelb -> Neon (8, 9, 10), Pink -> Rot (9 -> 2, 8 -> 3 im Tor, 5). Leitern als drei Minihürden
+# Tor oben (Jugendtor, D-Jugend dabei). Gelb -> Neon (8, 9, 10), Pink -> Rot (9 -> 2, 8 -> 3 im Tor, 5). Je eine Leiter senkrecht
 # auf der Strafraumlinie, Dummys als neongelbe Stangen. Ein Trainer links mit Ersatzbällen.
+# Leitern als Leiter gezeichnet (22.11.2026).
 # Sichtkegel im Video ("Scan to see GK position - finish in space"): vor dem Abschluss schaut der Schütze zum Torwart.
 T = P("T", "c", 8, 30, "T")
 POS = {"n9": (26, 8), "n10": (17, 8), "n8": (8, 8), "r3": (48.5, 7.5), "r2": (74, 8), "r5": (83, 8)}
@@ -13,12 +14,12 @@ def baelle(**k):
     d = {"b9": (26.6, 9.2), "b10": (17.6, 9.2), "b8": (8.6, 9.2), "b2": (74.6, 9.2), "b5": (83.6, 9.2)}; d.update(k)
     return [B(i, x, y) for i, (x, y) in d.items()] + ERSATZ
 LINES = [rect(10, 5, 80, 51), rect(28.6, 5, 42.8, 18), rect(40, 5, 20, 5.8)]
-KEGEL = [C(28.9, y, shape="huerde_ou") for y in (19.5, 23, 26.5)] + [C(71.1, y, shape="huerde_ou") for y in (19.5, 23, 26.5)] \
+KEGEL = [leiter(28.9, 22, senkrecht=True), leiter(71.1, 22, senkrecht=True)] \
       + [C(37.6, 27.6, "neon", shape="stange"), C(62.4, 27.6, "neon", shape="stange")]
 TORE = [{"x": 50, "y": 5, "side": "top", "size": "jugend"}]
 RAND = [50, 25.5]  # Ball an der Strafraumgrenze
-N_WEG = [[28.9, 16], [28.9, 29], [33, 32.5], [41, 32], [47.2, 28.2]]  # links: Leiter runter, um den Dummy, schräg zum Ball
-R_WEG = [[71.1, 16], [71.1, 29], [67, 32.5], [59, 32], [52.8, 28.2]]
+N_WEG = [[28.9, 12], [28.9, 32], [33, 33.5], [41, 32.5], [47.2, 28.2]]  # links: Leiter runter, um den Dummy, schräg zum Ball
+R_WEG = [[71.1, 12], [71.1, 32], [67, 33.5], [59, 32.5], [52.8, 28.2]]
 def weg(who, punkte, **k): return [mv(who, punkte[0], **k)] + [mv(who, p, after=True) for p in punkte[1:]]
 
 u = {"title": "Pass, Leiter, Abschluss", "code": "UE-130", "kind": "Übungsform",
@@ -31,8 +32,8 @@ u = {"title": "Pass, Leiter, Abschluss", "code": "UE-130", "kind": "Übungsform"
   "Wertung: Jedes Tor ist ein Punkt für das Team. Welches Team hat nach allen Durchgängen die meisten Punkte?"],
  "organisation_show": ORG,
  "coaching_points": ["Schräg anlaufen, damit der Ball direkt geschossen werden kann", "Früh zum Torwart schauen und vor dem Schuss sehen, wo er steht", "Mit Tempo und sauberen Schritten durch die Leiter", "Ruhig abschließen und dann blitzschnell ins Tor wechseln"],
- "materials": ["2 Koordinationsleitern (oder 6 Minihürden)", "2 Dummys", "1 Jugendtor", "Viele Bälle", "Leibchen in zwei Farben"],
- "access": "abo", "hidden": True,
+ "materials": ["2 Koordinationsleitern", "2 Dummys", "1 Jugendtor", "Viele Bälle", "Leibchen in zwei Farben"],
+ "access": "abo", "hidden": False,
  "say_intro": "Pass, Leiter, Abschluss. Erst passen, dann durch die Leiter und um den Dummy, dann direkt aufs Tor, und wer geschossen hat, wird danach selbst Torwart.",
  "board": {"lines": LINES, "goals": TORE, "cones": KEGEL, "players": sp(), "balls": baelle(),
   "steps": [

@@ -90,28 +90,10 @@
     "color": "orange"
    },
    {
-    "x": 34.5,
-    "y": 14.5,
+    "x": 39,
+    "y": 15,
     "color": "orange",
-    "shape": "huerde_ou"
-   },
-   {
-    "x": 37,
-    "y": 17.2,
-    "color": "orange",
-    "shape": "huerde_ou"
-   },
-   {
-    "x": 39.5,
-    "y": 19.9,
-    "color": "orange",
-    "shape": "huerde_ou"
-   },
-   {
-    "x": 42,
-    "y": 22.6,
-    "color": "orange",
-    "shape": "huerde_ou"
+    "shape": "leiter"
    },
    {
     "x": 55.9,
@@ -258,16 +240,16 @@
      {
       "who": "n11",
       "to": [
-       33,
-       13.5
+       29.5,
+       15
       ],
       "type": "lauf"
      },
      {
       "who": "n11",
       "to": [
-       43.5,
-       24
+       48.5,
+       15
       ],
       "type": "lauf",
       "after": true
@@ -370,8 +352,8 @@
      {
       "who": "r4",
       "to": [
-       43.5,
-       24
+       48.5,
+       15
       ],
       "type": "lauf",
       "delay": 0.1
@@ -379,8 +361,8 @@
      {
       "who": "r4",
       "to": [
-       33,
-       13.5
+       29.5,
+       15
       ],
       "type": "lauf",
       "after": true
@@ -575,8 +557,8 @@
        {
         "who": "n11",
         "to": [
-         33,
-         13.5
+         29.5,
+         15
         ],
         "type": "lauf"
        }
@@ -595,8 +577,8 @@
      {
       "id": "n11",
       "team": "a",
-      "x": 43.5,
-      "y": 24,
+      "x": 48.5,
+      "y": 15,
       "label": "11"
      },
      {
@@ -753,8 +735,8 @@
        {
         "who": "r4",
         "to": [
-         43.5,
-         24
+         48.5,
+         15
         ],
         "type": "lauf",
         "delay": 0.1

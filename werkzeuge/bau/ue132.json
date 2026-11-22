@@ -41,7 +41,7 @@
  ],
  "materials": [
   "12 Hütchen",
-  "2 Koordinationsleitern (oder 6 Minihürden)",
+  "2 Koordinationsleitern",
   "6 Minihürden",
   "Viele Bälle"
  ],
@@ -157,39 +157,15 @@
    },
    {
     "x": 63.8,
-    "y": 42,
+    "y": 44.5,
     "color": "orange",
-    "shape": "huerde_ou"
-   },
-   {
-    "x": 63.8,
-    "y": 45.3,
-    "color": "orange",
-    "shape": "huerde_ou"
-   },
-   {
-    "x": 63.8,
-    "y": 48.6,
-    "color": "orange",
-    "shape": "huerde_ou"
+    "shape": "leiter_ou"
    },
    {
     "x": 35.8,
-    "y": 12.5,
+    "y": 18,
     "color": "orange",
-    "shape": "huerde_ou"
-   },
-   {
-    "x": 35.8,
-    "y": 15.8,
-    "color": "orange",
-    "shape": "huerde_ou"
-   },
-   {
-    "x": 35.8,
-    "y": 19.1,
-    "color": "orange",
-    "shape": "huerde_ou"
+    "shape": "leiter_ou"
    }
   ],
   "players": [
@@ -320,7 +296,7 @@
       "who": "n12",
       "to": [
        63.8,
-       52
+       54
       ],
       "type": "lauf",
       "after": true
@@ -329,7 +305,7 @@
       "who": "n12",
       "to": [
        63.8,
-       39
+       35
       ],
       "type": "lauf",
       "after": true
@@ -338,7 +314,7 @@
       "who": "n12",
       "to": [
        66,
-       34
+       33
       ],
       "type": "lauf",
       "after": true
@@ -452,7 +428,7 @@
       "who": "n9",
       "to": [
        35.8,
-       10
+       9
       ],
       "type": "lauf",
       "after": true
@@ -461,7 +437,7 @@
       "who": "n9",
       "to": [
        35.8,
-       21.5
+       27.5
       ],
       "type": "lauf",
       "after": true
@@ -470,7 +446,7 @@
       "who": "n9",
       "to": [
        33.5,
-       26
+       29.5
       ],
       "type": "lauf",
       "after": true
@@ -653,7 +629,7 @@
         "who": "n12",
         "to": [
          63.8,
-         52
+         54
         ],
         "type": "lauf"
        },
@@ -661,7 +637,7 @@
         "who": "n12",
         "to": [
          63.8,
-         39
+         35
         ],
         "type": "lauf",
         "after": true
@@ -670,7 +646,7 @@
         "who": "n12",
         "to": [
          66,
-         34
+         33
         ],
         "type": "lauf",
         "after": true
@@ -1019,7 +995,7 @@
         "who": "n12",
         "to": [
          63.8,
-         52
+         54
         ],
         "type": "lauf",
         "delay": 0.2
@@ -1028,7 +1004,7 @@
         "who": "n12",
         "to": [
          63.8,
-         39
+         35
         ],
         "type": "lauf",
         "after": true
@@ -1037,7 +1013,7 @@
         "who": "n12",
         "to": [
          66,
-         34
+         33
         ],
         "type": "lauf",
         "after": true
@@ -1064,7 +1040,7 @@
         "who": "n9",
         "to": [
          35.8,
-         10
+         9
         ],
         "type": "lauf",
         "delay": 0.3
@@ -1073,7 +1049,7 @@
         "who": "n9",
         "to": [
          35.8,
-         21.5
+         27.5
         ],
         "type": "lauf",
         "after": true
@@ -1082,7 +1058,7 @@
         "who": "n9",
         "to": [
          33.5,
-         26
+         29.5
         ],
         "type": "lauf",
         "after": true

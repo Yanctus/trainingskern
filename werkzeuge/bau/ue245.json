@@ -1,0 +1,970 @@
+{
+ "title": "Drei Muster zum Abschluss",
+ "code": "UE-245",
+ "kind": "Übungsform",
+ "focuses": [
+  "Torschuss",
+  "Zusammenspiel",
+  "Passspiel"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 6,
+ "players_max": 8,
+ "field_size": "Volle Breite x 23 m",
+ "description": "Ein Stürmer schließt dreimal hintereinander ab, jedes Mal nach einem anderen Muster. Erst läuft er um eine Puppe und schießt aus der Mitte, dann legt er ab und startet hinter die Puppe zum Abschluss aus dem Winkel. Zum Schluss geht der Ball auf den Flügel, und der Stürmer verwertet die Flanke. Danach tauschen alle die Rollen.",
+ "organisation": [
+  "Aufbauen: Ein Feld über die volle Breite und 23 Meter tief, oben ein Jugendtor mit Torwart. Am Strafraum stehen fünf Puppen: eine vor dem Tor, zwei an der Strafraumlinie und je eine außen.",
+  "Verteilen: Spieler sieben ist der Stürmer, Spieler acht steht rechts im Mittelfeld, Spieler neun links mit dem Ball. Spieler elf ist der Flügelspieler rechts, Spieler zehn wartet dahinter. Der Trainer steht unten mit Bällen.",
+  "Ablauf: Phase eins Pass über Spieler acht, Lauf um die Puppe, Abschluss. Phase zwei Ablage, Pass außen an der Puppe vorbei, Abschluss aus dem Winkel. Phase drei Ablage, Pass auf den Flügel, Flanke, Abschluss.",
+  "Wertung und Wechsel: Jeder Treffer gibt einen Punkt. Nach allen drei Phasen tauschen die Spieler die Rollen, und Spieler zehn kommt als Flügelspieler dazu."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Quer zum Torwart in die Ecken schießen",
+  "Vor dem Schuss kurz zum Torwart schauen",
+  "Mit einer Doppelbewegung lösen, bevor die Flanke kommt",
+  "Genau und mit dem richtigen Tempo passen, höchstens zwei Kontakte"
+ ],
+ "materials": [
+  "1 Jugendtor",
+  "5 Stangen als Puppen",
+  "3 Hütchen",
+  "Viele Bälle",
+  "Leibchen"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Drei Muster zum Abschluss. Der Stürmer schließt dreimal hintereinander ab, jedes Mal nach einem anderen Muster.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 8,
+    "y": 5,
+    "w": 84,
+    "h": 50
+   },
+   {
+    "type": "rect",
+    "x": 23.8,
+    "y": 5,
+    "w": 52.8,
+    "h": 21.7
+   },
+   {
+    "type": "rect",
+    "x": 38,
+    "y": 5,
+    "w": 24,
+    "h": 7
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "jugend"
+   }
+  ],
+  "cones": [
+   {
+    "x": 50,
+    "y": 16,
+    "color": "orange",
+    "shape": "stange",
+    "id": "p0"
+   },
+   {
+    "x": 40.2,
+    "y": 25.3,
+    "color": "orange",
+    "shape": "stange",
+    "id": "p1"
+   },
+   {
+    "x": 61,
+    "y": 26.4,
+    "color": "orange",
+    "shape": "stange",
+    "id": "p2"
+   },
+   {
+    "x": 18.8,
+    "y": 21.4,
+    "color": "orange",
+    "shape": "stange",
+    "id": "p3"
+   },
+   {
+    "x": 82.4,
+    "y": 21.4,
+    "color": "orange",
+    "shape": "stange",
+    "id": "p4"
+   },
+   {
+    "x": 40,
+    "y": 47.5,
+    "color": "orange",
+    "id": "m0"
+   },
+   {
+    "x": 63.5,
+    "y": 42.5,
+    "color": "orange",
+    "id": "m1"
+   },
+   {
+    "x": 81.5,
+    "y": 38.5,
+    "color": "orange",
+    "id": "m2"
+   }
+  ],
+  "players": [
+   {
+    "id": "k",
+    "team": "t",
+    "x": 50,
+    "y": 9,
+    "label": "TW"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 34,
+    "y": 27,
+    "label": "7"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 66,
+    "y": 39,
+    "label": "8"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 42.5,
+    "y": 44,
+    "label": "9"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 84,
+    "y": 35,
+    "label": "11"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 76,
+    "y": 51,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 43.1,
+    "y": 44.6
+   },
+   {
+    "id": "b2",
+    "x": 76.6,
+    "y": 51.6
+   },
+   {
+    "id": "b3",
+    "x": 72.4,
+    "y": 54.5
+   },
+   {
+    "id": "s1",
+    "x": 79.6,
+    "y": 54.5
+   },
+   {
+    "id": "s2",
+    "x": 76,
+    "y": 54.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Phase eins: um die Puppe",
+    "say": "Phase eins: Spieler neun passt zu Spieler acht. Gleichzeitig läuft Spieler sieben unten um die linke Puppe herum in die Mitte.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       66.6,
+       39.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n7",
+      "to": [
+       37,
+       30.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n7",
+      "to": [
+       43,
+       30
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       44.5,
+       25
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Phase eins: Punkt",
+    "say": "Spieler acht spielt flach in die Mitte. Spieler sieben schaut kurz zum Torwart und schießt direkt in die Ecke, und das gibt einen Punkt für Team Neon.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       45.1,
+       25.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n7",
+      "to": [
+       50,
+       9
+      ],
+      "type": "blick",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       44.5,
+       5.4
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Phase zwei: Ablage",
+    "say": "Phase zwei: Der Trainer spielt Spieler neun einen neuen Ball. Spieler sieben kommt kurz entgegen, Spieler neun spielt ihn an, und Spieler sieben legt direkt ab zu Spieler acht.",
+    "moves": [
+     {
+      "who": "b2",
+      "to": [
+       43.1,
+       44.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n7",
+      "to": [
+       50,
+       31
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b2",
+      "to": [
+       50.6,
+       31.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b2",
+      "to": [
+       66.6,
+       39.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Phase zwei: Punkt",
+    "say": "Spieler acht spielt außen an der rechten Puppe vorbei in den Strafraum. Spieler sieben startet hinter die Puppe, schaut zum Torwart und schießt direkt ins lange Eck, und das gibt einen Punkt.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       56,
+       22.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n7",
+      "to": [
+       64,
+       17
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b2",
+      "to": [
+       64.6,
+       17.6
+      ],
+      "type": "pass",
+      "delay": 0.6
+     },
+     {
+      "who": "k",
+      "to": [
+       55,
+       7.5
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     },
+     {
+      "who": "n7",
+      "to": [
+       55,
+       8
+      ],
+      "type": "blick",
+      "after": true
+     },
+     {
+      "who": "b2",
+      "to": [
+       44.5,
+       5.4
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Phase drei: auf den Flügel",
+    "say": "Phase drei: Der Trainer spielt Spieler neun den dritten Ball. Wieder kommt Spieler sieben entgegen und legt ab zu Spieler acht. Spieler acht spielt hinaus auf den Flügel, und Spieler elf sprintet in den Pass.",
+    "moves": [
+     {
+      "who": "b3",
+      "to": [
+       43.1,
+       44.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n7",
+      "to": [
+       50,
+       31
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "k",
+      "to": [
+       50,
+       9
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b3",
+      "to": [
+       50.6,
+       31.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b3",
+      "to": [
+       66.6,
+       39.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n11",
+      "to": [
+       89,
+       27
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b3",
+      "to": [
+       89.6,
+       27.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Flanke: Punkt",
+    "say": "Spieler elf dribbelt zur Grundlinie und schaut, wohin Spieler sieben läuft. Der täuscht zum kurzen Pfosten an und zieht zurück. Flanke, Spieler sieben schießt direkt, und das gibt einen Punkt für Team Neon. Danach tauschen alle die Rollen, und Spieler zehn kommt als Flügelspieler dazu.",
+    "moves": [
+     {
+      "who": "n11",
+      "to": [
+       87,
+       12
+      ],
+      "type": "dribbling",
+      "ball": "b3"
+     },
+     {
+      "who": "n7",
+      "to": [
+       56,
+       22.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n7",
+      "to": [
+       61,
+       13
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       55,
+       17
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n11",
+      "to": [
+       67,
+       15
+      ],
+      "type": "blick",
+      "after": true
+     },
+     {
+      "who": "b3",
+      "to": [
+       55.6,
+       17.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "k",
+      "to": [
+       54,
+       7.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b3",
+      "to": [
+       44.5,
+       5.4
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 8,
+    "y1": 58.6,
+    "x2": 92,
+    "y2": 58.6,
+    "text": "volle Breite"
+   },
+   {
+    "x1": 96,
+    "y1": 5,
+    "x2": 96,
+    "y2": 55,
+    "text": "23 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Die Doppelbewegung vor der Flanke.",
+   "title": "Doppelbewegung vor der Flanke",
+   "text": "Der Stürmer läuft nicht einfach geradeaus. Er täuscht erst in die eine Richtung an und startet dann schnell in die andere. So löst er sich im Spiel von seinem Gegenspieler. Der Flügelspieler schaut genau hin und flankt, wenn der Stürmer startet.",
+   "board": {
+    "players": [
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50,
+      "y": 9,
+      "label": "TW"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 51,
+      "y": 29,
+      "label": "7"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 66,
+      "y": 39,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 42.5,
+      "y": 44,
+      "label": "9"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 87,
+      "y": 12,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 76,
+      "y": 51,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b3",
+      "x": 87.6,
+      "y": 12.6
+     },
+     {
+      "id": "s1",
+      "x": 79.6,
+      "y": 54.5
+     },
+     {
+      "id": "s2",
+      "x": 76,
+      "y": 54.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Antäuschen",
+      "say": "Spieler sieben täuscht erst einen Lauf nach links an. Dann dreht er schnell ab und sprintet zum kurzen Pfosten.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         46,
+         25
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n7",
+        "to": [
+         58,
+         19
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Kopf hoch, Flanke: Punkt",
+      "say": "Spieler elf schaut, wohin Spieler sieben läuft, und flankt genau dorthin. Spieler sieben schießt direkt ins lange Eck, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n11",
+        "to": [
+         67,
+         17
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b3",
+        "to": [
+         58.6,
+         19.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "k",
+        "to": [
+         54,
+         7.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b3",
+        "to": [
+         44.5,
+         5.4
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "cones": [
+     {
+      "x": 50,
+      "y": 16,
+      "color": "orange",
+      "shape": "stange",
+      "id": "p0"
+     },
+     {
+      "x": 40.2,
+      "y": 25.3,
+      "color": "orange",
+      "shape": "stange",
+      "id": "p1"
+     },
+     {
+      "x": 61,
+      "y": 26.4,
+      "color": "orange",
+      "shape": "stange",
+      "id": "p2"
+     },
+     {
+      "x": 18.8,
+      "y": 21.4,
+      "color": "orange",
+      "shape": "stange",
+      "id": "p3"
+     },
+     {
+      "x": 82.4,
+      "y": 21.4,
+      "color": "orange",
+      "shape": "stange",
+      "id": "p4"
+     },
+     {
+      "x": 40,
+      "y": 47.5,
+      "color": "orange",
+      "id": "m0"
+     },
+     {
+      "x": 63.5,
+      "y": 42.5,
+      "color": "orange",
+      "id": "m1"
+     },
+     {
+      "x": 81.5,
+      "y": 38.5,
+      "color": "orange",
+      "id": "m2"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Wir wechseln die Seite.",
+   "title": "Angriff über links",
+   "text": "Jetzt läuft alles spiegelverkehrt. Spieler acht steht links, Spieler neun rechts, und der Flügelspieler kommt von links. So übt der Stürmer die Läufe von der anderen Seite und schießt auch mit dem anderen Fuß.",
+   "board": {
+    "players": [
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50,
+      "y": 9,
+      "label": "TW"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 49,
+      "y": 30,
+      "label": "7"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 34,
+      "y": 39,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 57.5,
+      "y": 44,
+      "label": "9"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 16,
+      "y": 35,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 76,
+      "y": 51,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 58.1,
+      "y": 44.6
+     },
+     {
+      "id": "s1",
+      "x": 79.6,
+      "y": 54.5
+     },
+     {
+      "id": "s2",
+      "x": 76,
+      "y": 54.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Ablage, ab auf links",
+      "say": "Spieler neun spielt Spieler sieben an, und der legt ab zu Spieler acht. Spieler acht spielt hinaus auf den linken Flügel, und Spieler elf sprintet in den Pass.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         49.6,
+         30.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         34.6,
+         39.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n11",
+        "to": [
+         11,
+         27
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         11.6,
+         27.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Flanke von links: Punkt",
+      "say": "Spieler elf dribbelt zur Grundlinie und schaut zu Spieler sieben. Der täuscht nach rechts an und startet zum kurzen Pfosten. Flanke, Spieler sieben schießt ins lange Eck, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n11",
+        "to": [
+         13,
+         12
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         54,
+         25
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n7",
+        "to": [
+         42,
+         19
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n11",
+        "to": [
+         33,
+         17
+        ],
+        "type": "blick",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         42.6,
+         19.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "k",
+        "to": [
+         46,
+         7.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         55.5,
+         5.4
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "cones": [
+     {
+      "x": 50,
+      "y": 16,
+      "color": "orange",
+      "shape": "stange",
+      "id": "p0"
+     },
+     {
+      "x": 40.2,
+      "y": 25.3,
+      "color": "orange",
+      "shape": "stange",
+      "id": "p1"
+     },
+     {
+      "x": 61,
+      "y": 26.4,
+      "color": "orange",
+      "shape": "stange",
+      "id": "p2"
+     },
+     {
+      "x": 18.8,
+      "y": 21.4,
+      "color": "orange",
+      "shape": "stange",
+      "id": "p3"
+     },
+     {
+      "x": 82.4,
+      "y": 21.4,
+      "color": "orange",
+      "shape": "stange",
+      "id": "p4"
+     },
+     {
+      "x": 60,
+      "y": 47.5,
+      "color": "orange",
+      "id": "m0"
+     },
+     {
+      "x": 36.5,
+      "y": 42.5,
+      "color": "orange",
+      "id": "m1"
+     },
+     {
+      "x": 18.5,
+      "y": 38.5,
+      "color": "orange",
+      "id": "m2"
+     }
+    ]
+   }
+  }
+ ]
+}

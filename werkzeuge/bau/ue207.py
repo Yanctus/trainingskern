@@ -1,11 +1,12 @@
 import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe import *
 # WU-24 (U12-U14, Woche 28 Phase 5): Defensive Reaction Speed Warm Up. 20 x 20 Yards = Feld x 25-75, y 5-55 (18 m).
 # Ausrichtung wie im PDF. Pink (unten) -> Team Neon (4, 5, 6, 8), dunkel (oben) -> Team Rot (11, 9, 7, 6). Die 6 gibt es in
-# beiden Teams: Rot 6 heißt hier Spieler zehn. Unten eine Hürde und eine Leiter (als Reihe aus vier Minihürden), oben dasselbe.
+# beiden Teams: Rot 6 heißt hier Spieler zehn. Unten eine Hürde und eine Leiter (senkrecht), oben dasselbe.
 # Wartende stehen neben dem Feld (3D-Abstand). Das rote Tor links -> orange Hütchen, das gelbe Tor rechts -> neon Hütchen;
 # der Trainer hat ein oranges und ein gelbes Leibchen. Die beiden treffen sich in der Mitte leicht versetzt (3D-Abstand), der
 # Trainer steht oben links statt in der Mitte. Wertung ergänzt: Wer zuerst durch das Tor ist, bekommt einen Punkt (im Original
 # ohne Punkte). Kein Sichtkegel im Original (Text, Ton und Video geprüft).
+# Leitern als Leiter gezeichnet (22.11.2026).
 T = P("T", "c", 36, 17, "T")
 POS = {"n4": (41, 51), "n5": (20.5, 51), "n6": (12, 51), "n8": (3.5, 51),
        "r11": (59, 9), "r9": (79.5, 9), "r7": (88, 9), "r10": (96.5, 9)}
@@ -16,11 +17,10 @@ ERSATZ = [B("s1", 33, 21), B("s2", 29.5, 21)]
 LINES = [rect(25, 5, 50, 50)]
 KEGEL = [C(30, 24), C(30, 33.5), C(70, 24, "neon"), C(70, 33.5, "neon"),
          C(47, 51, "neon", shape="huerde"), C(53, 9, "neon", shape="huerde")] \
-      + [C(50, y, "neon", shape="huerde_ou") for y in (37, 40, 43, 46)] \
-      + [C(50, y, "neon", shape="huerde_ou") for y in (14, 17, 20, 23)]
+      + [leiter(50, 41, senkrecht=True, c="neon"), leiter(50, 19, senkrecht=True, c="neon")]
 def weg(who, pkt, **k): return [mv(who, pkt[0], **k)] + [mv(who, p, after=True) for p in pkt[1:]]
-UNTEN = [[51, 51], [50, 48.5], [50, 35]]
-OBEN = [[49, 9], [50, 11.5], [50, 25]]
+UNTEN = [[51, 51], [50, 50], [50, 31.5]]
+OBEN = [[49, 9], [50, 10], [50, 28]]
 MITTE_N, MITTE_R = [46, 31], [54.5, 26.5]
 
 u = {"title": "Hürde, Leiter, Farbsprint", "code": "UE-207", "kind": "Übungsform",
@@ -34,7 +34,7 @@ u = {"title": "Hürde, Leiter, Farbsprint", "code": "UE-207", "kind": "Übungsfo
  "organisation_show": ORG,
  "coaching_points": ["Saubere Technik über Hürde und Leiter", "Schnell reagieren und sofort lossprinten", "Beim Sprint den Körper vor den Gegner schieben", "Konzentriert bleiben und richtig reagieren"],
  "materials": ["4 Hütchen", "2 Hürden", "2 Koordinationsleitern", "2 Leibchen (orange und gelb)"],
- "access": "abo", "hidden": True,
+ "access": "abo", "hidden": False,
  "say_intro": "Hürde, Leiter, Farbsprint. Zwei Spieler laufen gleichzeitig los und müssen in der Mitte blitzschnell auf das Leibchen reagieren.",
  "board": {"lines": LINES, "cones": KEGEL, "players": sp(), "balls": ERSATZ,
   "steps": [

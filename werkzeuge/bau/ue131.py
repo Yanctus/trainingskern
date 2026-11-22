@@ -1,8 +1,9 @@
 import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe import *
 # PS-92 (U12-U14, Woche 2 Pre-Season): SAQ Races and Small Sided Games. 20 x 20 Yards = Feld x 22-72, y 5-55 (18 m).
-# Links der Parcours (Dummys, drei Minihürden oben, Leiter unten als vier Minihürden), rechts die Spielzone mit Minitor oben und unten.
+# Links der Parcours (Dummys, drei Minihürden oben, Leiter unten waagrecht), rechts die Spielzone mit Minitor oben und unten.
 # Dunkel -> Neon (2-6, Start oben), Pink -> Rot (7-11, Start unten). Wartende über und unter dem Feld (3D-Abstand).
 # Ein Trainer rechts mit Bällen. Kein Sichtkegel im Original (Text, Ton und Video geprüft).
+# Leitern als Leiter gezeichnet (22.11.2026).
 T = P("T", "c", 80, 30, "T")
 POS = {"n2": (14, 12), "n3": (5, 2), "n4": (23, 2), "n5": (32, 2), "n6": (41, 2),
        "r7": (14, 48), "r8": (5, 58), "r9": (23, 58), "r10": (32, 58), "r11": (41, 58)}
@@ -13,7 +14,7 @@ BAELLE = [B("b1", 81.6, 30.6), B("s1", 83, 34), B("s2", 83, 26)]
 LINES = [rect(22, 5, 50, 50), line(47, 5, 47, 55)]
 KEGEL = [C(21.8, 12.1), C(21.8, 30), C(21.8, 48.5), C(46.6, 23.3), C(46.6, 39.6), C(48.1, 28.8), C(53.6, 32.8),
          C(45.9, 12.1, "neon", shape="stange"), C(47.8, 48.3, "neon", shape="stange")] \
-      + [C(x, 23.2, shape="huerde") for x in (31.1, 34.3, 37.7)] + [C(x, 39.6, shape="huerde") for x in (30.5, 33, 35.5, 38)]
+      + [C(x, 23.2, shape="huerde") for x in (31.1, 34.3, 37.7)] + [leiter(34.2, 39.6)]
 TORE = [{"x": 59.5, "y": 5, "side": "top"}, {"x": 59.5, "y": 55, "side": "bottom"}]
 OBEN = [59.5, 4.7]
 # Neon oben: zum Dummy, um ihn herum, um das Hütchen, durch die Hürden, Hütchen links antippen, Sprint zum Mittelhütchen, in die Zone
@@ -21,7 +22,7 @@ N1 = [[21.8, 9], [49.5, 9], [49.8, 15.5], [49, 22.5], [46.6, 26]]
 N2 = [[40.5, 23.2], [28, 23.2], [23, 27], [20.5, 27.6]]
 N3 = [[24, 26.5], [45.6, 27.6], [57, 24]]
 R1 = [[21.8, 51], [51, 51], [51, 44.5], [49.5, 41.8], [46.6, 42.3]]
-R2 = [[40.5, 39.6], [28, 39.6], [23.5, 35.5], [21, 33]]
+R2 = [[44, 39.6], [24.8, 39.6], [22.5, 36], [21, 33]]
 R3 = [[24, 34.5], [51.3, 34.6], [60, 36]]
 def weg(who, pkt, **k): return [mv(who, pkt[0], **k)] + [mv(who, p, after=True) for p in pkt[1:]]
 
@@ -36,7 +37,7 @@ u = {"title": "Parcours-Wettlauf ins Spiel", "code": "UE-131", "kind": "Spielfor
  "organisation_show": ORG,
  "coaching_points": ["Durch Hürden und Leiter sauber und schnell, ohne etwas umzustoßen", "Auch müde den Ball sauber kontrollieren", "Kommt ein Mitspieler dazu, sofort zusammen spielen", "Die Mitspieler beim Laufen laut anfeuern"],
  "materials": ["7 Hütchen", "2 Dummys", "3 Minihürden", "1 Koordinationsleiter", "2 Minitore", "Viele Bälle", "Leibchen in zwei Farben"],
- "access": "abo", "hidden": True,
+ "access": "abo", "hidden": False,
  "say_intro": "Parcours-Wettlauf ins Spiel. Erst ein Wettrennen durch den Parcours, dann geht es sofort ins Spiel, und mit jedem, der ankommt, wird es größer.",
  "board": {"lines": LINES, "goals": TORE, "cones": KEGEL, "players": sp(), "balls": BAELLE,
   "steps": [
