@@ -35,7 +35,7 @@ u = {"title": "Hohen Ball annehmen und los", "code": "UE-272", "kind": "Übungsf
  "organisation_show": ORG,
  "coaching_points": ["Weich annehmen, damit der Ball im Quadrat bleibt", "Nach der Annahme schnell aufdrehen und eine Seite wählen", "Kleine Ballkontakte um die Stange, große auf dem Weg hin und zurück", "Genau zurück zum Trainer passen oder chippen"],
  "materials": ["5 Hütchen", "2 Stangen", "Einige Bälle"],
- "access": "abo", "hidden": True,
+ "access": "abo", "hidden": False,
  "say_intro": "Hohen Ball annehmen und los. Spieler sieben nimmt einen hohen Ball im Quadrat an und dribbelt mit Tempo um eine Stange.",
  "board": {"lines": LINES, "cones": CONES, "players": sp(), "balls": [B("b1", *TBALL)] + ERSATZ,
   "steps": [

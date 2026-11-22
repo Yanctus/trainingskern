@@ -1,0 +1,435 @@
+{
+ "title": "Zwei Hürden, dann Sprint",
+ "code": "UE-292",
+ "kind": "Übungsform",
+ "focuses": [
+  "Koordination",
+  "Schnelligkeit"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Einzeltraining"
+ ],
+ "duration_minutes": 15,
+ "players_min": 1,
+ "players_max": 1,
+ "field_size": "9 x 9 m",
+ "description": "Ein Spieler arbeitet allein an Schnelligkeit, Gewandtheit und schnellen Füßen. Er hüpft auf dem rechten Fuß über eine Hürde und steigt dann seitlich über eine zweite Hürde hin und zurück. Nach der Landung auf dem rechten Fuß sprintet er sofort durch zwei Hütchen. Danach trabt er locker zurück zum Start.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 9 mal 9 Metern. Unten in der Mitte liegt die erste Hürde quer, links davon die zweite Hürde längs. Oben stehen zwei Hütchen als Sprinttor.",
+  "Verteilen: Der Spieler steht unten vor der ersten Hürde. Der Trainer steht an der Seite und schaut zu.",
+  "Ablauf: Rechts über die erste Hürde hüpfen, mit dem linken Fuß seitlich über die zweite Hürde steigen, zurücksteigen und auf dem rechten Fuß landen. Dann sofort durch die Hütchen sprinten.",
+  "Wechsel: Nach dem Sprint trabt der Spieler außen zurück zum Start und beginnt den nächsten Lauf. Nach ein paar Läufen gibt es eine kurze Pause."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Groß und im Gleichgewicht bleiben, die Hürde kontrolliert nehmen",
+  "Kurze, schnelle und leichte Bodenkontakte",
+  "Landen und sofort in den Sprint explodieren, die Arme kräftig mitnehmen",
+  "Locker zurücktraben und jeden Lauf sauber neu starten"
+ ],
+ "materials": [
+  "2 Minihürden",
+  "2 Hütchen"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Zwei Hürden, dann Sprint. Spieler sieben hüpft über eine Hürde, steigt seitlich über eine zweite und sprintet dann durch zwei Hütchen.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 30,
+    "y": 10,
+    "w": 40,
+    "h": 40
+   }
+  ],
+  "cones": [
+   {
+    "x": 50,
+    "y": 46,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 38,
+    "y": 36,
+    "color": "orange",
+    "shape": "huerde"
+   },
+   {
+    "x": 45,
+    "y": 15,
+    "color": "orange"
+   },
+   {
+    "x": 55,
+    "y": 15,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 50,
+    "y": 53.5,
+    "label": "7"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 84,
+    "y": 48,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "s1",
+    "x": 84.6,
+    "y": 51.5
+   },
+   {
+    "id": "s2",
+    "x": 81,
+    "y": 51.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Hüpfer rechts",
+    "say": "Spieler sieben steht vor der ersten Hürde. Er hüpft auf dem rechten Fuß darüber.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       50,
+       41
+      ],
+      "type": "lauf"
+     }
+    ]
+   },
+   {
+    "label": "Seitlich über die Hürde",
+    "say": "Dann geht er zur zweiten Hürde links und steigt mit dem linken Fuß seitlich darüber.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       43,
+       36
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n7",
+      "to": [
+       33.5,
+       36
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zurück und landen",
+    "say": "Jetzt steigt er wieder zurück über die Hürde und landet auf dem rechten Fuß, genau in der Mitte.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       43,
+       36
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n7",
+      "to": [
+       50,
+       30
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Sprint durch die Hütchen",
+    "say": "Sofort nach der Landung sprintet Spieler sieben los, mit kräftigem Armeinsatz durch die zwei Hütchen.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       50,
+       8.5
+      ],
+      "type": "lauf"
+     }
+    ]
+   },
+   {
+    "label": "Zurücktraben",
+    "say": "Danach trabt er locker außen zurück zum Start. Dann ist Spieler sieben wieder dran, und der nächste Lauf beginnt. Nach ein paar Läufen gibt es eine kurze Pause.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       63,
+       11
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n7",
+      "to": [
+       63,
+       40
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       54,
+       51
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       50,
+       53.5
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 30,
+    "y1": 58.6,
+    "x2": 70,
+    "y2": 58.6,
+    "text": "9 m"
+   },
+   {
+    "x1": 76,
+    "y1": 10,
+    "x2": 76,
+    "y2": 50,
+    "text": "9 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Kurz und leicht über die Hürden.",
+   "title": "Kurz und leicht",
+   "text": "Über den Hürden bleibt der Spieler groß und im Gleichgewicht. Die Füße berühren den Boden nur ganz kurz und leicht. So bleibt er schnell und hat die Hürde unter Kontrolle.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 50,
+      "y": 53.5,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 84,
+      "y": 48,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "s1",
+      "x": 84.6,
+      "y": 51.5
+     },
+     {
+      "id": "s2",
+      "x": 81,
+      "y": 51.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Groß und leicht",
+      "say": "Spieler sieben hüpft über die erste Hürde und steigt seitlich über die zweite. Er bleibt groß, die Füße tippen nur kurz auf.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         50,
+         41
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n7",
+        "to": [
+         43,
+         36
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n7",
+        "to": [
+         33.5,
+         36
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Sicher landen",
+      "say": "Zurück über die Hürde landet er sicher auf dem rechten Fuß. Der Oberkörper bleibt ruhig.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         43,
+         36
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n7",
+        "to": [
+         50,
+         30
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Landen und sofort explodieren.",
+   "title": "Landen und explodieren",
+   "text": "Nach der Landung gibt es keine Pause. Der Spieler drückt sich sofort ab und sprintet los. Die Arme schwingen kräftig mit, das macht ihn schneller.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 50,
+      "y": 30,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 84,
+      "y": 48,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "s1",
+      "x": 84.6,
+      "y": 51.5
+     },
+     {
+      "id": "s2",
+      "x": 81,
+      "y": 51.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Landen und los",
+      "say": "Spieler sieben landet auf dem rechten Fuß und startet ohne Pause. Die Arme schwingen kräftig mit.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         50,
+         8.5
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Ruhig zurück",
+      "say": "Dann trabt er bewusst ruhig zurück, atmet durch und stellt sich wieder sauber an den Start.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         63,
+         11
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n7",
+        "to": [
+         63,
+         40
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n7",
+        "to": [
+         54,
+         51
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n7",
+        "to": [
+         50,
+         53.5
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

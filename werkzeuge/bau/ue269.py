@@ -36,9 +36,9 @@ u = {"title": "Drei Puppen, drei Abschlüsse", "code": "UE-269", "kind": "Übung
  "coaching_points": ["Sauber schießen und die Ecken treffen", "Mit Tempo auf die Puppe zu und den Ball schnell vorbeilegen", "Halb offen annehmen, um schnell aufs Tor zu gehen", "Quer ins lange Eck schießen und das Tempo hochhalten"],
  "materials": ["1 Jugendtor", "3 Puppen oder Stangen", "Viele Bälle"],
  "access": "abo", "hidden": True,
- "say_intro": "Drei Puppen, drei Abschlüsse. Spieler neun schießt in drei Phasen aus immer neuen Lagen aufs Tor.",
+ "say_intro": "Drei Puppen, drei Abschlüsse. Spieler neun schießt in drei Phasen aus immer neuen Lagen, und jedes Mal zielt er genau in eine Ecke.",
  "board": {"lines": LINES, "goals": TORE, "cones": puppen(), "players": sp(),
-  "balls": [B("b2", 50.6, 44.6), B("b1", *BT), B("b3", 38.5, 55.5)] + ERSATZ,
+  "balls": [B("b2", 50.6, 44.6), B("b1", *BT), B("b3", 45, 55.5)] + ERSATZ,
   "steps": [
    S("Phase eins: auf die Puppe", "Phase eins. Spieler neun dribbelt mit Tempo auf die Puppe in der Mitte zu.",
      dr("n9", "b2", [50, 34])),
@@ -57,7 +57,7 @@ u = {"title": "Drei Puppen, drei Abschlüsse", "code": "UE-269", "kind": "Übung
  "versions": [
   V("Coaching-Punkt", "Jetzt zum Coaching-Punkt: Halb offen annehmen.", "Halb offen annehmen",
     "Der Stürmer steht beim Annehmen nicht mit dem Rücken zum Tor. Er stellt sich halb offen hin, sieht Ball und Tor und nimmt den Ball mit dem ersten Kontakt nach vorn mit. So kann er sofort aufs Tor gehen und schnell abschließen.",
-    sp(n9=(72, 37)), [B("b3", *BT), B("b2", 38.5, 55.5)] + ERSATZ,
+    sp(n9=(72, 37)), [B("b3", *BT)] + ERSATZ,
     [S("Halb offen hinstellen", "Spieler neun steht außen halb offen. Er sieht den Trainer und das Tor. Der Trainer passt zu ihm.",
        ps("b3", [72.6, 37.6])),
      S("Nach vorn, Schuss: Ziel", "Mit dem ersten Kontakt nimmt Spieler neun den Ball nach vorn mit. Dann schießt er sofort quer ins lange Eck. Das ist das Ziel.",
@@ -65,9 +65,9 @@ u = {"title": "Drei Puppen, drei Abschlüsse", "code": "UE-269", "kind": "Übung
     cones=puppen()),
   V("Steigerung", "Und jetzt die Steigerung: Die Puppen stehen anders, und Spieler neun schießt mit Effet.", "Mit Effet ins rechte Eck",
     "Die beiden Puppen vor dem Tor werden umgestellt. Der Stürmer startet links unten, dribbelt auf die Puppe zu und legt sich den Ball nach rechts vorbei. Dann schießt er mit Effet ins rechte Eck. So übt er Abschlüsse aus einem neuen Winkel.",
-    sp(n9=(36, 45)), [B("b2", 36.6, 45.6), B("b1", *BT)] + ERSATZ,
+    sp(n9=(32, 44)), [B("b2", 32.6, 44.6), B("b1", *BT)] + ERSATZ,
     [S("Auf die Puppe", "Spieler neun dribbelt mit Tempo auf die linke Puppe zu.",
-       dr("n9", "b2", [35.5, 39])),
+       dr("n9", "b2", [34, 39])),
      S("Mit Effet: Ziel", "Er legt sich den Ball nach rechts vorbei und schießt mit Effet ins rechte Eck. Das ist das Ziel. Dann kommt der nächste Ball.",
        dr("n9", "b2", [41.5, 34]), ps("b2", [56, 5.4], after=True, bend=-5))],
     cones=puppen(True))]}

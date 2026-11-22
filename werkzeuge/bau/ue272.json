@@ -1,0 +1,468 @@
+{
+ "title": "Hohen Ball annehmen und los",
+ "code": "UE-272",
+ "kind": "Übungsform",
+ "focuses": [
+  "Ballannahme",
+  "Dribbling",
+  "Schnelligkeit"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Einzeltraining"
+ ],
+ "duration_minutes": 15,
+ "players_min": 1,
+ "players_max": 1,
+ "field_size": "9 x 18 m",
+ "description": "Der Trainer spielt einen hohen Ball zum Spieler, der in einem kleinen Quadrat steht. Der Spieler nimmt den Ball mit Kopf, Brust, Oberschenkel oder Fuß an und behält ihn im Quadrat. Dann dreht er auf, dribbelt mit Tempo um eine der beiden Stangen und zurück. Zum Schluss passt oder chippt er den Ball zurück zum Trainer.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 9 mal 18 Metern. In der Mitte ein kleines Quadrat aus vier Hütchen, oben zwei Stangen, unten ein Hütchen für den Trainer.",
+  "Verteilen: Der Spieler steht im Quadrat. Der Trainer steht unten auf dem Hütchen mit den Bällen.",
+  "Ablauf: Der Trainer chippt den Ball zum Spieler. Der Spieler nimmt ihn im Quadrat an, dreht auf, dribbelt um eine Stange und zurück ins Quadrat und spielt den Ball zum Trainer zurück.",
+  "Wechsel: Es geht immer weiter, Ball für Ball, bis der Trainer eine kurze Pause ruft."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Weich annehmen, damit der Ball im Quadrat bleibt",
+  "Nach der Annahme schnell aufdrehen und eine Seite wählen",
+  "Kleine Ballkontakte um die Stange, große auf dem Weg hin und zurück",
+  "Genau zurück zum Trainer passen oder chippen"
+ ],
+ "materials": [
+  "5 Hütchen",
+  "2 Stangen",
+  "Einige Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Hohen Ball annehmen und los. Spieler sieben nimmt einen hohen Ball im Quadrat an und dribbelt mit Tempo um eine Stange.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 37.5,
+    "y": 5,
+    "w": 25,
+    "h": 50
+   }
+  ],
+  "cones": [
+   {
+    "x": 45.5,
+    "y": 25,
+    "color": "orange"
+   },
+   {
+    "x": 54.5,
+    "y": 25,
+    "color": "orange"
+   },
+   {
+    "x": 45.5,
+    "y": 33,
+    "color": "orange"
+   },
+   {
+    "x": 54.5,
+    "y": 33,
+    "color": "orange"
+   },
+   {
+    "x": 47.5,
+    "y": 51.5,
+    "color": "orange"
+   },
+   {
+    "x": 41.5,
+    "y": 10,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 58.5,
+    "y": 10,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 50,
+    "y": 29,
+    "label": "7"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 52,
+    "y": 51,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 52.6,
+    "y": 51.6
+   },
+   {
+    "id": "s1",
+    "x": 56.5,
+    "y": 50.5
+   },
+   {
+    "id": "s2",
+    "x": 58.5,
+    "y": 52.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Hoher Pass",
+    "say": "Der Trainer chippt den Ball hoch zu Spieler sieben ins Quadrat.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       29.6
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Im Quadrat annehmen",
+    "say": "Spieler sieben nimmt den Ball mit Brust, Oberschenkel oder Fuß an. Der Ball bleibt im Quadrat.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       49,
+       27.5
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Aufdrehen und los",
+    "say": "Jetzt dreht er schnell auf und dribbelt mit Tempo zur linken Stange.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       44,
+       12.5
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Um die Stange",
+    "say": "Mit kleinen Schritten geht es eng um die Stange. Dann dribbelt er mit Tempo zurück ins Quadrat.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       43.5,
+       7.5
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       39.5,
+       7.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       39.5,
+       12
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       42,
+       29
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       49,
+       29
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Zurück zum Trainer",
+    "say": "Spieler sieben chippt den Ball genau zurück zum Trainer. Das war eine Runde. Dann kommt gleich der nächste hohe Ball, bis der Trainer eine Pause ruft.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       52.6,
+       51.6
+      ],
+      "type": "pass"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 37.5,
+    "y1": 58.6,
+    "x2": 62.5,
+    "y2": 58.6,
+    "text": "9 m"
+   },
+   {
+    "x1": 70,
+    "y1": 5,
+    "x2": 70,
+    "y2": 55,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Weich annehmen.",
+   "title": "Weich annehmen",
+   "text": "Der erste Kontakt entscheidet. Der Spieler nimmt den Ball weich mit dem Körperteil an, das am besten passt. Ist der Kontakt zu fest, springt der Ball aus dem Quadrat.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 50,
+      "y": 29,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 52,
+      "y": 51,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 52.6,
+      "y": 51.6
+     },
+     {
+      "id": "s1",
+      "x": 56.5,
+      "y": 50.5
+     },
+     {
+      "id": "s2",
+      "x": 58.5,
+      "y": 52.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Der hohe Ball",
+      "say": "Der Trainer chippt den Ball hoch zu Spieler sieben. Er schaut, wie der Ball kommt: Kopf, Brust, Oberschenkel oder Fuß?",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         29.6
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Weich, nicht zu fest",
+      "say": "Spieler sieben gibt mit der Brust etwas nach. So fällt der Ball direkt vor seine Füße und bleibt im Quadrat. Zu fest wäre der Ball weg.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         49.5,
+         28
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Seite wählen und Tempo machen.",
+   "title": "Seite wählen, Tempo",
+   "text": "Nach der Annahme entscheidet der Spieler schnell, um welche Stange er dribbelt. Hin und zurück nimmt er große Ballkontakte und macht Tempo. Um die Stange macht er kleine Kontakte.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 51,
+      "y": 27.5,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 52,
+      "y": 51,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 51.6,
+      "y": 28.1
+     },
+     {
+      "id": "s1",
+      "x": 56.5,
+      "y": 50.5
+     },
+     {
+      "id": "s2",
+      "x": 58.5,
+      "y": 52.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Nach rechts",
+      "say": "Diesmal dreht Spieler sieben nach rechts auf und legt sich den Ball weit vor. Mit Tempo geht es zur rechten Stange.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         56,
+         12.5
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Kleine Kontakte",
+      "say": "Um die Stange macht er ganz kleine Kontakte, der Ball bleibt eng am Fuß.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         56.5,
+         7.5
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         60.5,
+         7.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         60.5,
+         12
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Mit Tempo zurück",
+      "say": "Dann wieder große Kontakte und mit Tempo zurück ins Quadrat. Von dort spielt er den Ball zum Trainer.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         58,
+         29
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         51,
+         29
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         52.6,
+         51.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
