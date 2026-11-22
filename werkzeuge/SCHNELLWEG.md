@@ -19,9 +19,14 @@ README der App (Abschnitte „Übungen aus Video nachbauen“, „Laufweg-Abglei
    Dann gezielt `szene <Ordner> <von> <bis>` nur für die Abschnitte mit Laufwegen (Grundform, jede Fassung). Abschnitte aus der
    Übersicht ablesen: Bild n (ab 0) liegt bei n × Dauer/25 Sekunden.
 3. Pro Schritt notieren: wer, von wo, über welche Zwischenpunkte, welche Seite, wann (vor/nach dem Pass), wohin der Pass.
-   **Schulterblick suchen (Pflicht, Inhaber 22.11.2026):** `grep -iE "scan|shoulder|look|head|aware|check" text.txt ton.txt`
-   und in jeder Szene auf eingezeichnete Blickkegel achten. Gefunden = `bl(...)` einbauen (siehe Feste Regeln), sonst im Bericht
-   „kein Schulterblick im Original“ vermerken.
+   **Sichtkegel suchen (Pflicht, Inhaber 22.11.2026):** Nicht nur „Schulterblick“: jede Wahrnehmung vor der Aktion zählt,
+   z. B. scan, scanning, check your shoulder, look over the shoulder, head up, lift your head, look up, awareness, open your
+   body to see, see the picture, know where …, identify the GK's position, spot the free player, before receiving.
+   Suchen: `grep -iE "scan|shoulder|head up|look|aware|check|picture|identify|spot|see the|vision" text.txt ton.txt`.
+   Die Richtung des Kegels kommt aus dem Original-Video (Szenenbilder): dort ist der Kegel eingezeichnet, also genau dahin
+   schauen lassen (z. B. zum Torwart vor dem Abschluss, zum Gegenspieler im Rücken, zum freien Mitspieler). Steht es nur im
+   Text, die Richtung aus dem Sinn ableiten (wohin muss er schauen, um die Entscheidung zu treffen). Gefunden = `bl(...)`
+   einbauen (siehe Feste Regeln), sonst im BERICHT „kein Sichtkegel im Original“ vermerken.
 4. `python3 werkbank.py vorgaben "<Übungsname>"` für Altersstufen und Dauer (stehen nicht im PDF; feste Regel).
 
 ## Feste Regeln (vom Inhaber, 21.11.2026)
