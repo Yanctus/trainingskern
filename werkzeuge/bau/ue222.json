@@ -1,0 +1,715 @@
+{
+ "title": "Treffer mit Pässen sichern",
+ "code": "UE-222",
+ "kind": "Spielform",
+ "focuses": [
+  "Torschuss",
+  "Passspiel",
+  "Umschalten"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 10,
+ "players_max": 10,
+ "field_size": "27 x 32 m",
+ "description": "Vier gegen vier mit zwei Torhütern auf zwei Tore. Wer trifft, hat den Punkt noch nicht sicher: Der Trainer spielt dem Team sofort einen neuen Ball zu, und es muss sechs Pässe in Folge schaffen. Erst dann zählt der Treffer. Erobert der Gegner vorher den Ball, wird der Treffer gestrichen.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 27 mal 32 Metern mit einem Jugendtor an jedem Ende.",
+  "Verteilen: Team Neon und Team Rot je zu viert plus Torwart. Team Neon greift nach oben an, Team Rot nach unten. Der Trainer steht an der Seite mit Bällen.",
+  "Ablauf: Freies Spiel vier gegen vier. Nach einem Treffer spielt der Trainer dem Team, das getroffen hat, einen neuen Ball zu. Jetzt braucht es sechs Pässe in Folge, der Torwart darf mitspielen.",
+  "Wertung: Sechs Pässe geschafft, dann gibt der Treffer einen Punkt. Erobert der Gegner vorher den Ball, wird der Treffer gestrichen. Danach geht das Spiel normal weiter."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Gut zusammenspielen, um zum Abschluss zu kommen",
+  "Den Torwart beim Ballhalten mit einbeziehen",
+  "Nach dem Treffer ruhig und genau passen",
+  "Als Team hoch pressen und laut miteinander reden"
+ ],
+ "materials": [
+  "2 Jugendtore",
+  "4 Hütchen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Treffer mit Pässen sichern. Ein Treffer zählt erst, wenn das Team danach sechs Pässe in Folge schafft.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 28.6,
+    "y": 5,
+    "w": 42.8,
+    "h": 50
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "jugend"
+   },
+   {
+    "x": 50,
+    "y": 55,
+    "side": "bottom",
+    "size": "jugend"
+   }
+  ],
+  "cones": [
+   {
+    "x": 28.6,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 71.4,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 28.6,
+    "y": 55,
+    "color": "orange"
+   },
+   {
+    "x": 71.4,
+    "y": 55,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 50,
+    "y": 8,
+    "label": "TW"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 50,
+    "y": 52,
+    "label": "TW"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 40.5,
+    "y": 15,
+    "label": "2"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 59,
+    "y": 18.4,
+    "label": "6"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 49,
+    "y": 27,
+    "label": "11"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 57.5,
+    "y": 34,
+    "label": "9"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 40.5,
+    "y": 31,
+    "label": "10"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 67.5,
+    "y": 24,
+    "label": "8"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 32,
+    "y": 42,
+    "label": "5"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 66,
+    "y": 42,
+    "label": "4"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 16,
+    "y": 40,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 66.6,
+    "y": 42.6
+   },
+   {
+    "id": "s1",
+    "x": 19.6,
+    "y": 43.5
+   },
+   {
+    "id": "s2",
+    "x": 16,
+    "y": 43.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Zusammenspielen",
+    "say": "Team Neon greift nach oben an. Spieler vier spielt zu Spieler acht, und Spieler acht dribbelt nach innen. Spieler zehn läuft mit nach vorn.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       68.1,
+       24.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n8",
+      "to": [
+       63,
+       12
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n10",
+      "to": [
+       44,
+       24
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     },
+     {
+      "who": "r6",
+      "to": [
+       60,
+       20
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     }
+    ]
+   },
+   {
+    "label": "Abschluss",
+    "say": "Spieler acht schießt aufs Tor und trifft. Aber der Treffer zählt noch nicht.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       53,
+       5.3
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Ball vom Trainer",
+    "say": "Der Trainer spielt sofort einen neuen Ball zu Spieler fünf. Jetzt braucht Team Neon sechs Pässe in Folge. Pass eins zum Torwart, Pass zwei zu Spieler vier.",
+    "moves": [
+     {
+      "who": "s1",
+      "to": [
+       32.6,
+       42.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "s1",
+      "to": [
+       50.6,
+       52.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "s1",
+      "to": [
+       66.6,
+       42.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r9",
+      "to": [
+       61,
+       38
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     }
+    ]
+   },
+   {
+    "label": "Weiter passen",
+    "say": "Team Rot presst. Pass drei zu Spieler acht, Pass vier zu Spieler zehn, Pass fünf zurück zu Spieler fünf.",
+    "moves": [
+     {
+      "who": "s1",
+      "to": [
+       63.6,
+       12.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "s1",
+      "to": [
+       44.6,
+       24.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "s1",
+      "to": [
+       32.6,
+       42.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r11",
+      "to": [
+       45,
+       30
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     },
+     {
+      "who": "r2",
+      "to": [
+       36,
+       34
+      ],
+      "type": "lauf",
+      "delay": 1
+     }
+    ]
+   },
+   {
+    "label": "Sechs Pässe: Punkt",
+    "say": "Pass sechs zum Torwart. Geschafft! Jetzt ist der Treffer sicher, und das gibt einen Punkt für Team Neon. Danach geht das Spiel normal weiter, und der Torwart von Team Rot spielt den nächsten Ball ab.",
+    "moves": [
+     {
+      "who": "s1",
+      "to": [
+       50.6,
+       52.6
+      ],
+      "type": "pass"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 28.6,
+    "y1": 58.6,
+    "x2": 71.4,
+    "y2": 58.6,
+    "text": "27 m"
+   },
+   {
+    "x1": 88,
+    "y1": 5,
+    "x2": 88,
+    "y2": 55,
+    "text": "32 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Mehr Pässe zum Sichern.",
+   "title": "Acht Pässe zum Sichern",
+   "text": "Jetzt braucht das Team nach dem Treffer acht Pässe in Folge. Je nach Können dürfen es auch mehr oder weniger sein. Das verlangt Ruhe, genaue Pässe und schnelle Entscheidungen.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 50,
+      "y": 8,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 50,
+      "y": 52,
+      "label": "TW"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 40.5,
+      "y": 15,
+      "label": "2"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 59,
+      "y": 18.4,
+      "label": "6"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 49,
+      "y": 27,
+      "label": "11"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 57.5,
+      "y": 34,
+      "label": "9"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 40.5,
+      "y": 31,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 67.5,
+      "y": 24,
+      "label": "8"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 32,
+      "y": 42,
+      "label": "5"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 66,
+      "y": 42,
+      "label": "4"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 16,
+      "y": 40,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 32.6,
+      "y": 42.6
+     },
+     {
+      "id": "s1",
+      "x": 19.6,
+      "y": 43.5
+     },
+     {
+      "id": "s2",
+      "x": 16,
+      "y": 43.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Ruhig bleiben",
+      "say": "Team Neon hat getroffen und braucht jetzt acht Pässe. Spieler fünf spielt zum Torwart, der Torwart zu Spieler vier, Spieler vier zu Spieler acht.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         52.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         66.6,
+         42.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         68.1,
+         24.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "r9",
+        "to": [
+         61,
+         36
+        ],
+        "type": "lauf",
+        "delay": 0.5
+       },
+       {
+        "who": "r11",
+        "to": [
+         46,
+         37
+        ],
+        "type": "lauf",
+        "delay": 0.5
+       }
+      ]
+     },
+     {
+      "label": "Acht Pässe: Punkt",
+      "say": "So geht es weiter, bis acht Pässe geschafft sind. Spieler acht spielt zu Spieler zehn, und der weiter zu Spieler fünf. Erst nach dem achten Pass gibt das einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         41.1,
+         31.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         32.6,
+         42.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Ballgewinn wird belohnt.",
+   "title": "Ballgewinn wird belohnt",
+   "text": "Erobert das verteidigende Team den Ball, bevor die Pässe geschafft sind, bekommt es selbst einen Punkt. Dazu gibt es ein Zeitlimit für die Pässe. Das macht das Pressing wichtiger und zwingt das Team am Ball zu schnellen Entscheidungen.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 50,
+      "y": 8,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 50,
+      "y": 52,
+      "label": "TW"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 40.5,
+      "y": 15,
+      "label": "2"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 59,
+      "y": 18.4,
+      "label": "6"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 49,
+      "y": 27,
+      "label": "11"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 57.5,
+      "y": 34,
+      "label": "9"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 40.5,
+      "y": 31,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 67.5,
+      "y": 24,
+      "label": "8"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 32,
+      "y": 42,
+      "label": "5"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 66,
+      "y": 42,
+      "label": "4"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 16,
+      "y": 40,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 32.6,
+      "y": 42.6
+     },
+     {
+      "id": "s1",
+      "x": 19.6,
+      "y": 43.5
+     },
+     {
+      "id": "s2",
+      "x": 16,
+      "y": 43.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Hoch pressen",
+      "say": "Team Neon hat getroffen und muss schnell passen. Team Rot presst als Team. Spieler zwei läuft Spieler fünf an, und Spieler neun schaut, wo der freie Gegner steht.",
+      "moves": [
+       {
+        "who": "r2",
+        "to": [
+         35,
+         36
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r11",
+        "to": [
+         45,
+         34
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "r9",
+        "to": [
+         70,
+         46
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Ballgewinn: Punkt",
+      "say": "Spieler fünf spielt zu Spieler vier, aber Spieler neun läuft in den Passweg und fängt den Ball ab. Der Treffer von Team Neon ist gestrichen, und das gibt einen Punkt für Team Rot.",
+      "moves": [
+       {
+        "who": "r9",
+        "to": [
+         57.4,
+         42
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         58,
+         42.6
+        ],
+        "type": "pass",
+        "delay": 0.2
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

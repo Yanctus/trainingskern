@@ -1,0 +1,590 @@
+{
+ "title": "Den Dribbler begleiten",
+ "code": "UE-219",
+ "kind": "Übungsform",
+ "focuses": [
+  "Verteidigen",
+  "1 gegen 1",
+  "Dribbling"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 6,
+ "players_max": 9,
+ "field_size": "18 x 14 m",
+ "description": "Drei Stationen bilden ein Dreieck. Ein Spieler passt zur nächsten Station, und der Empfänger dribbelt mit Tempo zur Spitze. Ein Verteidiger von dort läuft ihm früh entgegen und begleitet ihn rückwärts bis zu seiner Station. So lernen die Kinder, schräg zu stehen und mit schnellen Füßen dranzubleiben.",
+ "organisation": [
+  "Aufbauen: Ein Dreieck aus drei Hütchen, unten 18 Meter breit und 14 Meter hoch.",
+  "Verteilen: An jeder Ecke stehen zwei bis drei Spieler. Oben Team Rot, unten links und unten rechts Team Neon. Der Trainer steht in der Mitte mit Bällen.",
+  "Ablauf: Spieler vier passt nach links zu Spieler neun und läuft hinterher. Spieler neun dribbelt zur Spitze, Spieler sieben läuft ihm entgegen und begleitet ihn rückwärts bis zu seiner Station.",
+  "Wechsel: Spieler neun passt zu Spieler sechs, und der passt nach rechts unten. Dann dribbelt der Nächste zur nächsten Ecke, und von dort kommt der neue Verteidiger. So kommt jeder einmal dran."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Schräg stehen, nie gerade vor dem Dribbler",
+  "Mit schnellen, kleinen Schritten rückwärts laufen",
+  "Die Augen auf dem Ball, nicht auf dem Körper",
+  "Als Dribbler den Ball eng am Fuß führen"
+ ],
+ "materials": [
+  "3 Hütchen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Den Dribbler begleiten. Ein Spieler dribbelt mit Tempo, und ein Verteidiger läuft ihm entgegen und begleitet ihn rückwärts.",
+ "board": {
+  "lines": [
+   {
+    "type": "line",
+    "x1": 25,
+    "y1": 50,
+    "x2": 75,
+    "y2": 50,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 25,
+    "y1": 50,
+    "x2": 50,
+    "y2": 6,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 75,
+    "y1": 50,
+    "x2": 50,
+    "y2": 6,
+    "dashed": false
+   }
+  ],
+  "cones": [
+   {
+    "x": 25,
+    "y": 50,
+    "color": "orange"
+   },
+   {
+    "x": 75,
+    "y": 50,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 6,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 44,
+    "y": 5,
+    "label": "7"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 57,
+    "y": 6,
+    "label": "6"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 22,
+    "y": 55,
+    "label": "9"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 13.5,
+    "y": 57,
+    "label": "5"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 78,
+    "y": 55,
+    "label": "4"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 86.5,
+    "y": 57,
+    "label": "8"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 50,
+    "y": 36,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 78.6,
+    "y": 55.6
+   },
+   {
+    "id": "s1",
+    "x": 53.6,
+    "y": 32.5
+   },
+   {
+    "id": "s2",
+    "x": 46.4,
+    "y": 32.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pass und hinterher",
+    "say": "Spieler vier passt nach links zu Spieler neun und läuft seinem Pass hinterher.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       22.6,
+       55.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n4",
+      "to": [
+       30,
+       58
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Dribbeln und anlaufen",
+    "say": "Spieler neun nimmt den Ball mit und dribbelt außen am Dreieck entlang zur Spitze. Gleichzeitig läuft Spieler sieben früh los und kommt ihm auf halbem Weg entgegen.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       19,
+       46
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n9",
+      "to": [
+       30,
+       33
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "r7",
+      "to": [
+       34,
+       26
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Rückwärts begleiten",
+    "say": "Spieler sieben steht schräg und läuft mit kleinen Schritten rückwärts. Er bleibt vor Spieler neun und begleitet ihn bis zu seiner Station.",
+    "moves": [
+     {
+      "who": "r7",
+      "to": [
+       41,
+       10
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n9",
+      "to": [
+       36,
+       18
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Weiter im Dreieck",
+    "say": "Spieler sieben ist nicht ausgespielt worden und hat seine Aufgabe geschafft. Spieler neun passt zu Spieler sechs, und der passt nach rechts unten zu Spieler acht. Jetzt dribbelt Spieler acht nach links, und von dort kommt der nächste Verteidiger.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       57.6,
+       6.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       87.1,
+       57.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 93,
+    "y1": 6,
+    "x2": 93,
+    "y2": 50,
+    "text": "14 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Schräg stehen und auf den Ball schauen.",
+   "title": "Ball im Blick",
+   "text": "Der Verteidiger steht nie gerade vor dem Dribbler, sondern schräg mit einem Fuß vorn. So kann er schnell nach beiden Seiten reagieren. Seine Augen bleiben auf dem Ball und nicht auf dem Körper.",
+   "board": {
+    "players": [
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 36,
+      "y": 24,
+      "label": "7"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 57,
+      "y": 6,
+      "label": "6"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 24,
+      "y": 44,
+      "label": "9"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 13.5,
+      "y": 57,
+      "label": "5"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 78,
+      "y": 55,
+      "label": "4"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 86.5,
+      "y": 57,
+      "label": "8"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 36,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 24.6,
+      "y": 44.6
+     },
+     {
+      "id": "s1",
+      "x": 53.6,
+      "y": 32.5
+     },
+     {
+      "id": "s2",
+      "x": 46.4,
+      "y": 32.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Entgegenlaufen",
+      "say": "Spieler neun dribbelt zur Spitze. Spieler sieben läuft ihm entgegen und wird kurz vorher langsamer.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         29,
+         35
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "r7",
+        "to": [
+         34,
+         27
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Ball im Blick",
+      "say": "Jetzt steht Spieler sieben schräg und schaut genau auf den Ball, nicht auf den Körper von Spieler neun.",
+      "moves": [
+       {
+        "who": "r7",
+        "to": [
+         29.6,
+         35.6
+        ],
+        "type": "blick"
+       }
+      ]
+     },
+     {
+      "label": "Rückwärts begleiten",
+      "say": "Spieler neun dribbelt weiter, Spieler sieben läuft mit schnellen, kleinen Schritten rückwärts. Spieler neun kommt nicht vorbei, und Spieler sieben hat seine Aufgabe geschafft.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         36,
+         18
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "r7",
+        "to": [
+         41,
+         10
+        ],
+        "type": "lauf"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Der Verteidiger läuft erst zum Trainer.",
+   "title": "Erst zum Trainer",
+   "text": "Der Verteidiger muss zuerst zum Trainer in der Mitte laufen. Erst dann darf er den Dribbler anlaufen. So kommt er aus einem anderen Winkel, wie im Spiel, und muss sein Timing finden.",
+   "board": {
+    "players": [
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 44,
+      "y": 5,
+      "label": "7"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 57,
+      "y": 6,
+      "label": "6"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 22,
+      "y": 55,
+      "label": "9"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 13.5,
+      "y": 57,
+      "label": "5"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 78,
+      "y": 55,
+      "label": "4"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 86.5,
+      "y": 57,
+      "label": "8"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 36,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 78.6,
+      "y": 55.6
+     },
+     {
+      "id": "s1",
+      "x": 53.6,
+      "y": 32.5
+     },
+     {
+      "id": "s2",
+      "x": 46.4,
+      "y": 32.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Erst zum Trainer",
+      "say": "Spieler vier passt zu Spieler neun und läuft hinterher. Gleichzeitig sprintet Spieler sieben zuerst zum Trainer in die Mitte.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         22.6,
+         55.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n4",
+        "to": [
+         30,
+         58
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "r7",
+        "to": [
+         45,
+         30
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Neuer Winkel",
+      "say": "Spieler neun dribbelt außen am Dreieck entlang. Spieler sieben kommt jetzt von der Seite und läuft ihn schräg an.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         19,
+         46
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n9",
+        "to": [
+         29,
+         34
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "r7",
+        "to": [
+         36,
+         29
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Rückwärts begleiten",
+      "say": "Spieler sieben bleibt vor Spieler neun und begleitet ihn rückwärts bis zur Station. Hat er das geschafft, geht es mit dem Pass zu Spieler sechs weiter.",
+      "moves": [
+       {
+        "who": "r7",
+        "to": [
+         41,
+         10
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n9",
+        "to": [
+         36,
+         18
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

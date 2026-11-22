@@ -1,0 +1,837 @@
+{
+ "title": "Kopfball-Duell der Teams",
+ "code": "UE-244",
+ "kind": "Spielform",
+ "focuses": [
+  "Erwärmung",
+  "Torschuss",
+  "Schnelligkeit"
+ ],
+ "age_groups": [
+  "F-Jugend",
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 10,
+ "players_min": 8,
+ "players_max": 12,
+ "field_size": "18 x 18 m",
+ "description": "Zwei Teams treten im Köpfen gegeneinander an. Ein Spieler sprintet um eine Puppe zum Hütchen in der Mitte, ein Mitspieler wirft ihm den Ball hoch zu, und er köpft aufs Tor. Danach geht der Kopfballspieler ins Tor, und das andere Team ist dran. Welches Team nach der Spielzeit die meisten Kopfballtreffer hat, gewinnt.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 18 Metern mit einem Jugendtor oben. Unten zwei Stangen als Puppen, in der Mitte ein Hütchen, oben links und rechts je ein Starthütchen.",
+  "Verteilen: Team Neon steht links, Team Rot rechts. Ein Spieler von Team Rot steht im Tor. Der Trainer steht unten mit Bällen.",
+  "Ablauf: Spieler elf sprintet um die linke Puppe zum Hütchen in der Mitte. Spieler zehn wirft ihm den Ball hoch zu, und Spieler elf köpft aufs Tor. Dann ist Team Rot mit der rechten Puppe dran.",
+  "Wertung und Wechsel: Jeder Kopfballtreffer gibt einen Punkt für das Team. Wer geköpft hat, geht ins Tor. Welches Team nach der Spielzeit mehr Punkte hat, gewinnt."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Den richtigen Moment zum Absprung finden",
+  "Vorher schauen, wo im Tor Platz ist",
+  "Schnell um die Puppe, am Hütchen abbremsen",
+  "Gut hoch werfen und das Team anfeuern"
+ ],
+ "materials": [
+  "1 Jugendtor",
+  "2 Stangen als Puppen",
+  "5 Hütchen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Kopfball-Duell der Teams. Sprinten, hochspringen und köpfen: Welches Team trifft öfter?",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "jugend"
+   }
+  ],
+  "cones": [
+   {
+    "x": 40,
+    "y": 38,
+    "color": "orange",
+    "shape": "stange",
+    "id": "st1"
+   },
+   {
+    "x": 60,
+    "y": 38,
+    "color": "orange",
+    "shape": "stange",
+    "id": "st2"
+   },
+   {
+    "x": 30.5,
+    "y": 15,
+    "color": "orange",
+    "id": "h1"
+   },
+   {
+    "x": 69.5,
+    "y": 15,
+    "color": "orange",
+    "id": "h2"
+   },
+   {
+    "x": 52,
+    "y": 25.5,
+    "color": "orange",
+    "id": "k2"
+   }
+  ],
+  "players": [
+   {
+    "id": "r1",
+    "team": "b",
+    "x": 50,
+    "y": 7,
+    "label": "TW"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 36,
+    "y": 10,
+    "label": "10"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 27,
+    "y": 18,
+    "label": "11"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 17,
+    "y": 12,
+    "label": "9"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 64,
+    "y": 10,
+    "label": "5"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 73,
+    "y": 18,
+    "label": "6"
+   },
+   {
+    "id": "r4",
+    "team": "b",
+    "x": 83,
+    "y": 12,
+    "label": "4"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 50,
+    "y": 50,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 36.6,
+    "y": 10.6
+   },
+   {
+    "id": "s1",
+    "x": 53.6,
+    "y": 53.5
+   },
+   {
+    "id": "s2",
+    "x": 50,
+    "y": 53.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Sprint um die Puppe",
+    "say": "Spieler elf sprintet los, nach unten und links um die Puppe herum. Dann läuft er zum Hütchen in der Mitte.",
+    "moves": [
+     {
+      "who": "n11",
+      "to": [
+       35,
+       38
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n11",
+      "to": [
+       40,
+       43.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n11",
+      "to": [
+       45,
+       39
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n11",
+      "to": [
+       48,
+       26
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Wurf in die Luft",
+    "say": "Spieler elf schaut kurz, wo der Torwart steht. Spieler zehn wirft ihm den Ball hoch zu.",
+    "moves": [
+     {
+      "who": "n11",
+      "to": [
+       50,
+       9
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b1",
+      "to": [
+       48.6,
+       26.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Kopfball: Punkt",
+    "say": "Spieler elf springt hoch und köpft in die freie Ecke, und das gibt einen Punkt für Team Neon. Dann geht Spieler elf ins Tor, der Torwart geht zurück zu Team Rot, und Team Rot ist dran.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       55.5,
+       5.4
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r1",
+      "to": [
+       57,
+       24
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r1",
+      "to": [
+       84,
+       30
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n11",
+      "to": [
+       50,
+       8
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 90,
+    "y1": 5,
+    "x2": 90,
+    "y2": 55,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Wer trifft, bleibt dran.",
+   "title": "Wer trifft, bleibt dran",
+   "text": "Trifft ein Team, bleibt es dran, und der nächste Spieler köpft. Erst wenn ein Kopfball danebengeht oder der Torwart ihn hält, ist das andere Team dran. Das macht Druck und spornt das ganze Team an.",
+   "board": {
+    "players": [
+     {
+      "id": "r1",
+      "team": "b",
+      "x": 50,
+      "y": 7,
+      "label": "TW"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 36,
+      "y": 10,
+      "label": "10"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 27,
+      "y": 18,
+      "label": "11"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 17,
+      "y": 12,
+      "label": "9"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 64,
+      "y": 10,
+      "label": "5"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 73,
+      "y": 18,
+      "label": "6"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 83,
+      "y": 12,
+      "label": "4"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 36.6,
+      "y": 10.6
+     },
+     {
+      "id": "b2",
+      "x": 17.6,
+      "y": 12.6
+     },
+     {
+      "id": "s1",
+      "x": 53.6,
+      "y": 53.5
+     },
+     {
+      "id": "s2",
+      "x": 50,
+      "y": 53.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Getroffen: Punkt",
+      "say": "Spieler elf sprintet um die Puppe, Spieler zehn wirft, und Spieler elf köpft ins Tor. Das gibt einen Punkt für Team Neon, und Team Neon bleibt dran.",
+      "moves": [
+       {
+        "who": "n11",
+        "to": [
+         35,
+         38
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n11",
+        "to": [
+         40,
+         43.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n11",
+        "to": [
+         45,
+         39
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n11",
+        "to": [
+         48,
+         26
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         48.6,
+         26.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         55.5,
+         5.4
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n11",
+        "to": [
+         27,
+         18
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Gehalten",
+      "say": "Spieler neun gibt Spieler zehn einen Ball und sprintet um die Puppe. Spieler zehn wirft, aber der Torwart fängt den Kopfball. Jetzt ist Team Rot dran.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         36.6,
+         10.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n9",
+        "to": [
+         35,
+         38
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n9",
+        "to": [
+         40,
+         43.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n9",
+        "to": [
+         45,
+         39
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n9",
+        "to": [
+         48,
+         26
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b2",
+        "to": [
+         48.6,
+         26.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b2",
+        "to": [
+         50.6,
+         7.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "cones": [
+     {
+      "x": 40,
+      "y": 38,
+      "color": "orange",
+      "shape": "stange",
+      "id": "st1"
+     },
+     {
+      "x": 60,
+      "y": 38,
+      "color": "orange",
+      "shape": "stange",
+      "id": "st2"
+     },
+     {
+      "x": 30.5,
+      "y": 15,
+      "color": "orange",
+      "id": "h1"
+     },
+     {
+      "x": 69.5,
+      "y": 15,
+      "color": "orange",
+      "id": "h2"
+     },
+     {
+      "x": 52,
+      "y": 25.5,
+      "color": "orange",
+      "id": "k2"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Drei Hütchen in drei Weiten.",
+   "title": "Drei Hütchen, drei Weiten",
+   "text": "In der Mitte stehen jetzt drei Hütchen hintereinander, nah, mittel und weit vom Tor. Wer vom ersten Hütchen trifft, läuft noch einmal um die Puppe und köpft vom nächsten. Drei Treffer hintereinander geben drei Bonuspunkte.",
+   "board": {
+    "players": [
+     {
+      "id": "r1",
+      "team": "b",
+      "x": 50,
+      "y": 7,
+      "label": "TW"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 36,
+      "y": 10,
+      "label": "10"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 27,
+      "y": 18,
+      "label": "11"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 17,
+      "y": 12,
+      "label": "9"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 64,
+      "y": 10,
+      "label": "5"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 73,
+      "y": 18,
+      "label": "6"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 83,
+      "y": 12,
+      "label": "4"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 36.6,
+      "y": 10.6
+     },
+     {
+      "id": "b2",
+      "x": 17.6,
+      "y": 12.6
+     },
+     {
+      "id": "s1",
+      "x": 53.6,
+      "y": 53.5
+     },
+     {
+      "id": "s2",
+      "x": 50,
+      "y": 53.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Erstes Hütchen: Punkt",
+      "say": "Spieler elf sprintet um die Puppe zum nahen Hütchen. Er schaut zum Torwart, Spieler zehn wirft, und Spieler elf köpft ins Tor. Das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n11",
+        "to": [
+         35,
+         38
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n11",
+        "to": [
+         40,
+         43.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n11",
+        "to": [
+         45,
+         39
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n11",
+        "to": [
+         48,
+         20
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n11",
+        "to": [
+         50,
+         9
+        ],
+        "type": "blick",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         48.6,
+         20.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         55.5,
+         5.4
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Zweites Hütchen: Punkt",
+      "say": "Spieler neun gibt Spieler zehn einen Ball. Spieler elf sprintet noch einmal um die Puppe, jetzt zum mittleren Hütchen, und köpft in die andere Ecke. Das gibt wieder einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         36.6,
+         10.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n11",
+        "to": [
+         35,
+         38
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n11",
+        "to": [
+         40,
+         43.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n11",
+        "to": [
+         45,
+         39
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n11",
+        "to": [
+         48,
+         26
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b2",
+        "to": [
+         48.6,
+         26.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b2",
+        "to": [
+         44.5,
+         5.4
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "cones": [
+     {
+      "x": 40,
+      "y": 38,
+      "color": "orange",
+      "shape": "stange",
+      "id": "st1"
+     },
+     {
+      "x": 60,
+      "y": 38,
+      "color": "orange",
+      "shape": "stange",
+      "id": "st2"
+     },
+     {
+      "x": 30.5,
+      "y": 15,
+      "color": "orange",
+      "id": "h1"
+     },
+     {
+      "x": 69.5,
+      "y": 15,
+      "color": "orange",
+      "id": "h2"
+     },
+     {
+      "x": 52,
+      "y": 25.5,
+      "color": "orange",
+      "id": "k2"
+     },
+     {
+      "x": 52.5,
+      "y": 18.5,
+      "color": "orange",
+      "id": "k1"
+     },
+     {
+      "x": 52,
+      "y": 32,
+      "color": "orange",
+      "id": "k3"
+     }
+    ]
+   }
+  }
+ ]
+}

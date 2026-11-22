@@ -1,0 +1,795 @@
+{
+ "title": "Stangensprint und Hechtkopfball",
+ "code": "UE-231",
+ "kind": "Übungsform",
+ "focuses": [
+  "Schnelligkeit",
+  "Torschuss",
+  "1 gegen 1"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 10,
+ "players_max": 10,
+ "field_size": "18 x 23 m",
+ "description": "Ein Staffel-Wettkampf zwischen zwei Teams: Aus jedem Team sprintet ein Spieler zweimal um zwei Stangen und läuft dann schräg zum Tor. Dort wirft ihm ein Mitspieler den Ball zu, und er köpft ihn im Hechtsprung aufs Tor. Danach springen beide schnell auf und sprinten zur Mitte, wo der Trainer einen Ball hineinspielt. Im Eins gegen Eins geht es um den Treffer am Torwart vorbei.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 23 Metern, oben und unten ein Jugendtor mit Torwart. Links und rechts stehen je zwei Stangen hintereinander.",
+  "Verteilen: Zwei Teams zu viert. Team Neon startet unten links, sein Werfer steht unten am Tor. Team Rot startet oben rechts, sein Werfer steht oben am Tor. Der Trainer steht links an der Seite mit Bällen.",
+  "Ablauf: Je ein Spieler aus jedem Team sprintet gleichzeitig zweimal um seine Stangen, dann schräg zum Tor und köpft den Ball vom Werfer aufs Tor. Danach spielt der Trainer in die Mitte, und es gibt ein Eins gegen Eins: Team Neon greift oben an, Team Rot unten.",
+  "Wertung und Wechsel: Jeder Treffer gibt einen Punkt für sein Team. Ist das Eins gegen Eins vorbei, starten die nächsten zwei. Der Werfer tauscht nach dem zweiten Läufer. Nach jeder Runde drei Minuten Pause."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Mit vollem Tempo um die Stangen sprinten",
+  "Kurz und scharf wenden: abbremsen und wieder beschleunigen",
+  "Beim Hechtkopfball das Tor treffen: Stirn, Augen offen",
+  "Schnell aufstehen, zum Ball sprinten und mit einer Finte vorbei"
+ ],
+ "materials": [
+  "2 Jugendtore",
+  "4 Stangen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Stangensprint und Hechtkopfball. Zwei Teams treten gegeneinander an: Sprint um die Stangen, Kopfball aufs Tor und danach ein Eins gegen Eins.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 30.4,
+    "y": 5,
+    "w": 39.2,
+    "h": 50
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "jugend"
+   },
+   {
+    "x": 50,
+    "y": 55,
+    "side": "bottom",
+    "size": "jugend"
+   }
+  ],
+  "cones": [
+   {
+    "x": 35.5,
+    "y": 17,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 35.5,
+    "y": 28,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 65,
+    "y": 29,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 65,
+    "y": 40.5,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 33,
+    "y": 50,
+    "label": "5"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 24.5,
+    "y": 52,
+    "label": "8"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 16,
+    "y": 52,
+    "label": "4"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 41.5,
+    "y": 55.5,
+    "label": "10"
+   },
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 50,
+    "y": 51,
+    "label": "TW"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 67.5,
+    "y": 19,
+    "label": "9"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 76.5,
+    "y": 12,
+    "label": "11"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 76.5,
+    "y": 28,
+    "label": "6"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 59,
+    "y": 2,
+    "label": "2"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 50,
+    "y": 9,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 24,
+    "y": 36,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 42.1,
+    "y": 56.1
+   },
+   {
+    "id": "b2",
+    "x": 59.6,
+    "y": 2.6
+   },
+   {
+    "id": "b3",
+    "x": 24.6,
+    "y": 36.6
+   },
+   {
+    "id": "s1",
+    "x": 20.4,
+    "y": 39.5
+   },
+   {
+    "id": "s2",
+    "x": 16.8,
+    "y": 39.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Um die Stangen",
+    "say": "Spieler fünf und Spieler neun sprinten gleichzeitig los, jeder um seine zwei Stangen und wieder zurück.",
+    "moves": [
+     {
+      "who": "n5",
+      "to": [
+       32.5,
+       14
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n5",
+      "to": [
+       38.5,
+       14
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n5",
+      "to": [
+       38.5,
+       31
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n5",
+      "to": [
+       33,
+       48
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r9",
+      "to": [
+       68,
+       44
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r9",
+      "to": [
+       62,
+       44
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r9",
+      "to": [
+       62,
+       26
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r9",
+      "to": [
+       67.5,
+       21
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zweite Runde, zum Tor",
+    "say": "Gleich noch einmal um die Stangen. Dann laufen beide schräg zum Tor: Spieler fünf zum unteren, Spieler neun zum oberen.",
+    "moves": [
+     {
+      "who": "n5",
+      "to": [
+       32.5,
+       14
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n5",
+      "to": [
+       38.5,
+       14
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n5",
+      "to": [
+       44,
+       44
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r9",
+      "to": [
+       68,
+       44
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r9",
+      "to": [
+       62,
+       44
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r9",
+      "to": [
+       56,
+       16
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Hechtkopfball",
+    "say": "Gleichzeitig werfen Spieler zehn und Spieler zwei den Ball hoch. Beide köpfen im Hechtsprung am Torwart vorbei, und jeder Treffer gibt einen Punkt für sein Team.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       44.6,
+       44.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       45.5,
+       54.7
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b2",
+      "to": [
+       56.6,
+       16.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b2",
+      "to": [
+       54.5,
+       5.3
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Sprint zur Mitte",
+    "say": "Beide springen sofort auf und sprinten zur Mitte. Der Trainer spielt einen Ball hinein, und Spieler fünf ist zuerst dran.",
+    "moves": [
+     {
+      "who": "b3",
+      "to": [
+       48.6,
+       33.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n5",
+      "to": [
+       48,
+       33
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "r9",
+      "to": [
+       53,
+       26
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Eins gegen eins: Punkt",
+    "say": "Spieler fünf dribbelt an Spieler neun vorbei und schießt ins obere Tor, und das gibt einen Punkt für Team Neon. Jetzt starten Spieler acht und Spieler elf.",
+    "moves": [
+     {
+      "who": "n5",
+      "to": [
+       42,
+       24
+      ],
+      "type": "dribbling",
+      "ball": "b3"
+     },
+     {
+      "who": "n5",
+      "to": [
+       44,
+       13
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b3"
+     },
+     {
+      "who": "r9",
+      "to": [
+       48,
+       18
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "b3",
+      "to": [
+       45.5,
+       5.3
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 30.4,
+    "y1": 58.6,
+    "x2": 69.6,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 88,
+    "y1": 5,
+    "x2": 88,
+    "y2": 55,
+    "text": "23 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Genau ins Ziel köpfen.",
+   "title": "Genau ins Ziel köpfen",
+   "text": "Beim Hechtkopfball zählt, dass der Ball aufs Tor geht. Den richtigen Moment zum Absprung abwarten, mit der Stirn köpfen und die Augen offen lassen. Lieber genau als hart.",
+   "board": {
+    "players": [
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 33,
+      "y": 50,
+      "label": "5"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 24.5,
+      "y": 52,
+      "label": "8"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 16,
+      "y": 52,
+      "label": "4"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 41.5,
+      "y": 55.5,
+      "label": "10"
+     },
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 50,
+      "y": 51,
+      "label": "TW"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 58.5,
+      "y": 22,
+      "label": "9"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 76.5,
+      "y": 12,
+      "label": "11"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 76.5,
+      "y": 28,
+      "label": "6"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 59,
+      "y": 2,
+      "label": "2"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 50,
+      "y": 9,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 24,
+      "y": 36,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 42.1,
+      "y": 56.1
+     },
+     {
+      "id": "b2",
+      "x": 59.6,
+      "y": 2.6
+     },
+     {
+      "id": "b3",
+      "x": 24.6,
+      "y": 36.6
+     },
+     {
+      "id": "s1",
+      "x": 20.4,
+      "y": 39.5
+     },
+     {
+      "id": "s2",
+      "x": 16.8,
+      "y": 39.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Absprung abwarten",
+      "say": "Spieler zwei wirft den Ball hoch. Spieler neun wartet auf den richtigen Moment und springt dann ab.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         59.1,
+         22.6
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Ins Ziel: Punkt",
+      "say": "Spieler neun köpft mit der Stirn genau in die Ecke, am Torwart vorbei. Das gibt einen Punkt für Team Rot.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         54.5,
+         5.3
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Mit einer Finte vorbei.",
+   "title": "Mit einer Finte vorbei",
+   "text": "Im Eins gegen Eins hilft eine Körpertäuschung oder ein Übersteiger. Der Verteidiger kommt aus dem Gleichgewicht, und mit einem schnellen Antritt geht es an ihm vorbei.",
+   "board": {
+    "players": [
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 48,
+      "y": 33,
+      "label": "5"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 24.5,
+      "y": 52,
+      "label": "8"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 16,
+      "y": 52,
+      "label": "4"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 41.5,
+      "y": 55.5,
+      "label": "10"
+     },
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 50,
+      "y": 51,
+      "label": "TW"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 57,
+      "y": 25,
+      "label": "9"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 76.5,
+      "y": 12,
+      "label": "11"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 76.5,
+      "y": 28,
+      "label": "6"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 59,
+      "y": 2,
+      "label": "2"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 50,
+      "y": 9,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 24,
+      "y": 36,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 42.1,
+      "y": 56.1
+     },
+     {
+      "id": "b2",
+      "x": 59.6,
+      "y": 2.6
+     },
+     {
+      "id": "b3",
+      "x": 48.6,
+      "y": 33.6
+     },
+     {
+      "id": "s1",
+      "x": 20.4,
+      "y": 39.5
+     },
+     {
+      "id": "s2",
+      "x": 16.8,
+      "y": 39.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Antäuschen",
+      "say": "Spieler fünf hat den Ball. Er täuscht mit dem Körper nach rechts an, und Spieler neun geht mit.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         51,
+         30
+        ],
+        "type": "dribbling",
+        "ball": "b3"
+       },
+       {
+        "who": "r9",
+        "to": [
+         54,
+         27
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Vorbei: Punkt",
+      "say": "Dann zieht Spieler fünf schnell nach links an ihm vorbei und schießt ins obere Tor. Das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         44,
+         22
+        ],
+        "type": "dribbling",
+        "ball": "b3"
+       },
+       {
+        "who": "n5",
+        "to": [
+         45,
+         13
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b3"
+       },
+       {
+        "who": "b3",
+        "to": [
+         45.5,
+         5.3
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

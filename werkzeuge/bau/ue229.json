@@ -1,0 +1,733 @@
+{
+ "title": "Kombination im Strafraum",
+ "code": "UE-229",
+ "kind": "Übungsform",
+ "focuses": [
+  "Torschuss",
+  "Passspiel",
+  "Schnelligkeit"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 7,
+ "players_max": 9,
+ "field_size": "65 x 52 m",
+ "description": "Drei Spieler kombinieren schnell mit direkten Pässen am Strafraum und schließen gegen den Torwart ab. Der Passgeber an der Strafraumecke spielt weiter und sprintet sofort um eine Stange, dann bekommt er den Ball in den Lauf zurück. Vor dem Schuss schaut er kurz zum Torwart und zielt flach in eine Ecke. Danach ist die andere Seite dran.",
+ "organisation": [
+  "Aufbauen: Ein Jugendtor mit Torwart, davor der Strafraum. Vor beiden Strafraumecken eine Stange, außen je fünf Hütchen im Zickzack.",
+  "Verteilen: Links drei Spieler von Team Neon, rechts drei von Team Rot: einer an der Grundlinie mit Bällen, einer an der Strafraumecke, einer im Strafraum. Der Trainer steht weiter hinten mit Bällen.",
+  "Ablauf: Pass von der Grundlinie zur Strafraumecke, direkt weiter in den Strafraum, Sprint um die Stange, Ablage in den Lauf und Abschluss. Der erste Passgeber sprintet danach durch die Hütchen.",
+  "Wertung und Wechsel: Jeder Treffer gibt einen Punkt. Danach rücken die drei eine Position weiter, und die andere Seite beginnt."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Möglichst mit einem Kontakt spielen",
+  "Schnell und eng um die Stange sprinten",
+  "Vor dem Schuss kurz zum Torwart schauen",
+  "Genau und flach in die Ecken schießen, nicht nur hart"
+ ],
+ "materials": [
+  "1 Jugendtor",
+  "2 Stangen",
+  "10 Hütchen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Kombination im Strafraum. Drei Spieler passen direkt, einer sprintet um die Stange und schließt gegen den Torwart ab.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 20,
+    "y": 5,
+    "w": 60,
+    "h": 48
+   },
+   {
+    "type": "rect",
+    "x": 31.3,
+    "y": 5,
+    "w": 37.4,
+    "h": 13.1
+   },
+   {
+    "type": "rect",
+    "x": 40.5,
+    "y": 5,
+    "w": 19,
+    "h": 5.7
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "jugend"
+   }
+  ],
+  "cones": [
+   {
+    "x": 35.2,
+    "y": 23.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 64.8,
+    "y": 23.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 27.5,
+    "y": 8.6,
+    "color": "orange"
+   },
+   {
+    "x": 22.8,
+    "y": 12.4,
+    "color": "orange"
+   },
+   {
+    "x": 27.5,
+    "y": 15.3,
+    "color": "orange"
+   },
+   {
+    "x": 22.9,
+    "y": 19.3,
+    "color": "orange"
+   },
+   {
+    "x": 27.5,
+    "y": 23.2,
+    "color": "orange"
+   },
+   {
+    "x": 72.5,
+    "y": 8.6,
+    "color": "orange"
+   },
+   {
+    "x": 77.2,
+    "y": 12.4,
+    "color": "orange"
+   },
+   {
+    "x": 72.5,
+    "y": 15.3,
+    "color": "orange"
+   },
+   {
+    "x": 77.1,
+    "y": 19.3,
+    "color": "orange"
+   },
+   {
+    "x": 72.5,
+    "y": 23.2,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 29.7,
+    "y": 3.5,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 32.9,
+    "y": 19.5,
+    "label": "3"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 41.5,
+    "y": 16.6,
+    "label": "4"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 70.3,
+    "y": 3.5,
+    "label": "5"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 67.1,
+    "y": 19.5,
+    "label": "6"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 58.5,
+    "y": 16.6,
+    "label": "7"
+   },
+   {
+    "id": "k",
+    "team": "t",
+    "x": 50,
+    "y": 8.5,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 50,
+    "y": 48.5,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 30.3,
+    "y": 4.1
+   },
+   {
+    "id": "s1",
+    "x": 53.6,
+    "y": 52
+   },
+   {
+    "id": "s2",
+    "x": 50,
+    "y": 52
+   },
+   {
+    "id": "s3",
+    "x": 70.9,
+    "y": 4.1
+   }
+  ],
+  "steps": [
+   {
+    "label": "Anspiel",
+    "say": "Spieler zwei spielt von der Grundlinie zu Spieler drei an der Strafraumecke.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       33.5,
+       20.1
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Direkt weiter",
+    "say": "Spieler drei spielt direkt zu Spieler vier und sprintet sofort außen um die Stange.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       42.1,
+       17.2
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n3",
+      "to": [
+       31.5,
+       25
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n3",
+      "to": [
+       37,
+       28
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n3",
+      "to": [
+       46,
+       21.5
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Ablage in den Lauf",
+    "say": "Spieler vier legt den Ball direkt in den Lauf von Spieler drei. Gleichzeitig sprintet Spieler zwei schnell durch die Hütchen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       46.6,
+       22.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n2",
+      "to": [
+       25.2,
+       6
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n2",
+      "to": [
+       24.6,
+       10.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       25.6,
+       13.9
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       24.6,
+       17.3
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       25.4,
+       21.2
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Abschluss: Punkt",
+    "say": "Spieler drei schaut kurz hoch zum Torwart und schießt direkt flach ins Eck. Das gibt einen Punkt für Team Neon. Danach rücken die drei eine Position weiter, und die rechte Seite mit Team Rot ist dran.",
+    "moves": [
+     {
+      "who": "n3",
+      "to": [
+       50.5,
+       4.5
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b1",
+      "to": [
+       55.5,
+       5.3
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 20,
+    "y1": 58.6,
+    "x2": 80,
+    "y2": 58.6,
+    "text": "65 m"
+   },
+   {
+    "x1": 86,
+    "y1": 5,
+    "x2": 86,
+    "y2": 53,
+    "text": "52 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Vor dem Schuss kurz zum Torwart schauen.",
+   "title": "Erst schauen, dann zielen",
+   "text": "Bevor der Ball kommt, schaut der Schütze kurz hoch: Wo steht der Torwart? Dann zielt er genau in die freie Ecke. Genauigkeit ist wichtiger als Kraft.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 29.7,
+      "y": 3.5,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 50,
+      "y": 26,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 41.5,
+      "y": 16.6,
+      "label": "4"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 70.3,
+      "y": 3.5,
+      "label": "5"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 67.1,
+      "y": 19.5,
+      "label": "6"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 58.5,
+      "y": 16.6,
+      "label": "7"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50,
+      "y": 8.5,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 48.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 42.1,
+      "y": 17.2
+     },
+     {
+      "id": "s1",
+      "x": 53.6,
+      "y": 52
+     },
+     {
+      "id": "s2",
+      "x": 50,
+      "y": 52
+     },
+     {
+      "id": "s3",
+      "x": 70.9,
+      "y": 4.1
+     }
+    ],
+    "steps": [
+     {
+      "label": "Ablegen und schauen",
+      "say": "Spieler vier legt den Ball in den Lauf von Spieler drei. Spieler drei schaut kurz hoch und sieht, dass der Torwart etwas nach links gegangen ist.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         48.6,
+         22.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n3",
+        "to": [
+         48,
+         22
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "k",
+        "to": [
+         47.5,
+         8.5
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n3",
+        "to": [
+         50.5,
+         5
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Ins freie Eck: Punkt",
+      "say": "Spieler drei schießt flach und genau ins rechte Eck, weg vom Torwart. Das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         55.5,
+         5.3
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Nach dem Schuss umdrehen und aufs Minitor.",
+   "title": "Umdrehen und Minitor",
+   "text": "Nach dem Abschluss dreht sich der Schütze sofort um und sprintet in die Zone vor den beiden Minitoren. Der Trainer spielt ihm einen zweiten Ball zu, und er schießt mit dem schwächeren Fuß in ein Minitor. So übt er schnelles Umdrehen und das Gleichgewicht unter Zeitdruck.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 29.7,
+      "y": 3.5,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 50,
+      "y": 24.5,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 41.5,
+      "y": 16.6,
+      "label": "4"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 70.3,
+      "y": 3.5,
+      "label": "5"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 67.1,
+      "y": 19.5,
+      "label": "6"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 58.5,
+      "y": 16.6,
+      "label": "7"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50,
+      "y": 8.5,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 48.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 42.1,
+      "y": 17.2
+     },
+     {
+      "id": "b2",
+      "x": 50.6,
+      "y": 49.1
+     },
+     {
+      "id": "s1",
+      "x": 53.6,
+      "y": 52
+     },
+     {
+      "id": "s2",
+      "x": 50,
+      "y": 52
+     },
+     {
+      "id": "s3",
+      "x": 70.9,
+      "y": 4.1
+     }
+    ],
+    "steps": [
+     {
+      "label": "Abschluss",
+      "say": "Spieler vier legt ab, und Spieler drei schießt direkt ins große Tor. Das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         25.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         55.5,
+         5.3
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Umdrehen und sprinten",
+      "say": "Sofort dreht sich Spieler drei um und sprintet in die Zone vor den Minitoren. Der Trainer spielt ihm einen zweiten Ball zu.",
+      "moves": [
+       {
+        "who": "n3",
+        "to": [
+         50,
+         33
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b2",
+        "to": [
+         50.6,
+         33.6
+        ],
+        "type": "pass",
+        "delay": 0.5
+       }
+      ]
+     },
+     {
+      "label": "Schwacher Fuß: Punkt",
+      "say": "Spieler drei schießt mit seinem schwächeren Fuß in das rechte Minitor. Das gibt noch einen Punkt für Team Neon. Danach ist Team Rot dran.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         59.5,
+         45.2
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ],
+    "lines": [
+     {
+      "type": "rect",
+      "x": 20,
+      "y": 5,
+      "w": 60,
+      "h": 48
+     },
+     {
+      "type": "rect",
+      "x": 31.3,
+      "y": 5,
+      "w": 37.4,
+      "h": 13.1
+     },
+     {
+      "type": "rect",
+      "x": 40.5,
+      "y": 5,
+      "w": 19,
+      "h": 5.7
+     },
+     {
+      "type": "rect",
+      "x": 38.3,
+      "y": 25.7,
+      "w": 23.4,
+      "h": 18.4,
+      "dashed": true
+     }
+    ],
+    "goals": [
+     {
+      "x": 50,
+      "y": 5,
+      "side": "top",
+      "size": "jugend"
+     },
+     {
+      "x": 40,
+      "y": 45.5,
+      "side": "bottom"
+     },
+     {
+      "x": 60,
+      "y": 45.5,
+      "side": "bottom"
+     }
+    ]
+   }
+  }
+ ]
+}

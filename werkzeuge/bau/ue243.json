@@ -1,0 +1,643 @@
+{
+ "title": "Pressen als Dreierkette",
+ "code": "UE-243",
+ "kind": "Spielform",
+ "focuses": [
+  "Verteidigen",
+  "Zusammenspiel",
+  "Umschalten"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 8,
+ "players_max": 12,
+ "field_size": "27 x 32 m",
+ "description": "Drei Verteidiger und ein Torwart verteidigen das große Tor gegen zwei Angreifer in der Mitte und einen Anspieler von hinten. Die Dreierkette bleibt eng zusammen: Einer presst, die anderen zwei schieben mit und sichern ab. Erobert die Kette den Ball, schießt sie auf eines der zwei Minitore. Nach zwei Angriffen wird gewechselt.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 27 mal 32 Metern in drei Zonen: oben und unten je neun Meter, in der Mitte vierzehn Meter. Oben ein Jugendtor, unten in den Ecken der Mittelzone zwei Minitore.",
+  "Verteilen: Team Neon mit Torwart und drei Verteidigern in der oberen Zone. Zwei Angreifer von Team Rot in der Mitte, ein Anspieler in der unteren Zone. Die anderen warten neben dem Feld. Der Trainer steht links unten mit Bällen.",
+  "Ablauf: Der Anspieler passt in die Mitte, und drei gegen zwei geht es los. Die Angreifer dürfen den Anspieler höchstens zweimal nutzen. Team Neon presst, schiebt und sichert ab.",
+  "Wertung und Wechsel: Ein Treffer ins große Tor gibt einen Punkt für Team Rot. Ein Treffer ins Minitor gibt einen Punkt für Team Neon. Nach zwei Angriffen wechseln ein Verteidiger und alle drei Angreifer."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Eng zusammenbleiben und die Angreifer einengen",
+  "Viel reden beim Pressen und Absichern",
+  "Schnell zur Seite schieben und Lücken schließen",
+  "Erkennen, wann man presst und wann man zurückgeht"
+ ],
+ "materials": [
+  "1 Jugendtor",
+  "2 Minitore",
+  "Hütchen für Feld und Zonen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Pressen als Dreierkette. Drei Verteidiger bleiben eng zusammen und erobern den Ball gegen die Angreifer.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 28.9,
+    "y": 5,
+    "w": 42.2,
+    "h": 50
+   },
+   {
+    "type": "line",
+    "x1": 28.9,
+    "y1": 19.3,
+    "x2": 71.1,
+    "y2": 19.3,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 28.9,
+    "y1": 40.7,
+    "x2": 71.1,
+    "y2": 40.7,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "jugend"
+   },
+   {
+    "x": 33,
+    "y": 40.7,
+    "side": "bottom"
+   },
+   {
+    "x": 67,
+    "y": 40.7,
+    "side": "bottom"
+   }
+  ],
+  "cones": [],
+  "players": [
+   {
+    "id": "n1",
+    "team": "a",
+    "x": 50,
+    "y": 6.5,
+    "label": "TW"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 38,
+    "y": 18,
+    "label": "2"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 50,
+    "y": 22,
+    "label": "6"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 62,
+    "y": 18,
+    "label": "4"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 36.5,
+    "y": 34.5,
+    "label": "8"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 63.5,
+    "y": 34.5,
+    "label": "10"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 48,
+    "y": 48,
+    "label": "9"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 20,
+    "y": 47,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 48.6,
+    "y": 48.6
+   },
+   {
+    "id": "s1",
+    "x": 23.6,
+    "y": 50.5
+   },
+   {
+    "id": "s2",
+    "x": 20,
+    "y": 50.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pass in die Mitte",
+    "say": "Spieler neun passt aus der unteren Zone zu Spieler acht. Jetzt geht es drei gegen zwei los.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       37.1,
+       35.1
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Einer presst",
+    "say": "Spieler zwei sieht den Ball bei Spieler acht und presst ihn. Gleichzeitig schieben Spieler sechs und Spieler vier eng zu ihm und sichern ab. Spieler zehn läuft zur Mitte.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       37,
+       33
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "n2",
+      "to": [
+       37,
+       28
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n6",
+      "to": [
+       46,
+       24
+      ],
+      "type": "lauf",
+      "delay": 1.0
+     },
+     {
+      "who": "n4",
+      "to": [
+       56,
+       21
+      ],
+      "type": "lauf",
+      "delay": 1.0
+     },
+     {
+      "who": "r10",
+      "to": [
+       57,
+       28.5
+      ],
+      "type": "lauf",
+      "delay": 1.0
+     }
+    ]
+   },
+   {
+    "label": "Abgefangen",
+    "say": "Spieler acht will zu Spieler zehn passen. Spieler sechs geht dazwischen und fängt den Ball ab.",
+    "moves": [
+     {
+      "who": "n6",
+      "to": [
+       48,
+       32.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       48.6,
+       33.1
+      ],
+      "type": "pass",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Minitor: Punkt",
+    "say": "Spieler vier läuft nach rechts unten, Spieler sechs passt zu ihm. Spieler vier schießt ins rechte Minitor, und das gibt einen Punkt für Team Neon. Nach zwei Angriffen wechseln ein Verteidiger und alle drei Angreifer.",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       66,
+       33
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       66.6,
+       33.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       67,
+       40.4
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 28.9,
+    "y1": 58.6,
+    "x2": 71.1,
+    "y2": 58.6,
+    "text": "27 m"
+   },
+   {
+    "x1": 80,
+    "y1": 5,
+    "x2": 80,
+    "y2": 55,
+    "text": "32 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Ball zurück heißt vorrücken, Zeit am Ball heißt zurückgehen.",
+   "title": "Vorrücken oder zurückgehen",
+   "text": "Spielen die Angreifer den Ball zurück, rücken alle drei Verteidiger zusammen nach vorn und machen das Feld eng. Hat der Spieler am Ball aber Zeit und kann hinter die Kette spielen, gehen alle drei ein paar Schritte zurück. In die obere Zone dürfen sie dabei nicht mehr.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 50,
+      "y": 6.5,
+      "label": "TW"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 38,
+      "y": 18,
+      "label": "2"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 50,
+      "y": 22,
+      "label": "6"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 62,
+      "y": 18,
+      "label": "4"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 36.5,
+      "y": 34.5,
+      "label": "8"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 63.5,
+      "y": 34.5,
+      "label": "10"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 48,
+      "y": 48,
+      "label": "9"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 20,
+      "y": 47,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 37.1,
+      "y": 35.1
+     },
+     {
+      "id": "s1",
+      "x": 23.6,
+      "y": 50.5
+     },
+     {
+      "id": "s2",
+      "x": 20,
+      "y": 50.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Ball zurück, vorrücken",
+      "say": "Spieler acht spielt den Ball zurück zu Spieler neun. Sofort rücken alle drei Verteidiger gleichzeitig nach vorn und machen das Feld eng.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         48.6,
+         48.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n2",
+        "to": [
+         39,
+         25
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n6",
+        "to": [
+         50,
+         28.5
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n4",
+        "to": [
+         61,
+         25
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Zeit am Ball, zurück",
+      "say": "Spieler neun hat viel Zeit am Ball. Spieler sechs sieht das und ruft: Zurück! Alle drei gehen gleichzeitig ein paar Schritte zurück, damit kein Ball hinter sie fliegt.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         48.5,
+         46
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "n2",
+        "to": [
+         38,
+         21
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n6",
+        "to": [
+         50,
+         23.5
+        ],
+        "type": "lauf",
+        "delay": 1.0
+       },
+       {
+        "who": "n4",
+        "to": [
+         62,
+         21
+        ],
+        "type": "lauf",
+        "delay": 1.0
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Ein dritter Angreifer kommt in die Mitte.",
+   "title": "Drei gegen drei",
+   "text": "Ein dritter Angreifer kommt in die Mittelzone, und unten hilft ein neuer Anspieler. Jetzt spielen drei gegen drei. Die Kette muss noch enger stehen, und der Torwart passt auf Bälle hinter die Kette auf.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 50,
+      "y": 6.5,
+      "label": "TW"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 38,
+      "y": 18,
+      "label": "2"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 50,
+      "y": 22,
+      "label": "6"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 62,
+      "y": 18,
+      "label": "4"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 32,
+      "y": 34.5,
+      "label": "8"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 68,
+      "y": 34.5,
+      "label": "10"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 50,
+      "y": 38,
+      "label": "9"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 41,
+      "y": 49,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 20,
+      "y": 47,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 41.6,
+      "y": 49.6
+     },
+     {
+      "id": "s1",
+      "x": 23.6,
+      "y": 50.5
+     },
+     {
+      "id": "s2",
+      "x": 20,
+      "y": 50.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Drei gegen drei",
+      "say": "Spieler sieben spielt von unten zu Spieler neun in der Mitte. Spieler sechs presst ihn. Gleichzeitig schieben Spieler zwei und Spieler vier eng zur Mitte.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         38.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n6",
+        "to": [
+         54,
+         31
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n2",
+        "to": [
+         41,
+         21
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n4",
+        "to": [
+         59,
+         21
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Torwart räumt ab",
+      "say": "Spieler neun spielt steil hinter die Kette, Spieler acht läuft hinterher. Der Torwart ist schon herausgekommen und fängt den Ball ab. Jetzt hat Team Neon den Ball.",
+      "moves": [
+       {
+        "who": "r8",
+        "to": [
+         37,
+         14
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n1",
+        "to": [
+         42,
+         11.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         42.6,
+         12.1
+        ],
+        "type": "pass",
+        "delay": 0.3
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

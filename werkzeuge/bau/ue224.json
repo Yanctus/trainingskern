@@ -1,0 +1,740 @@
+{
+ "title": "Paar-Rondo mit vier Minitoren",
+ "code": "UE-224",
+ "kind": "Spielform",
+ "focuses": [
+  "Verteidigen",
+  "Umschalten",
+  "Passspiel"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 10,
+ "players_max": 10,
+ "field_size": "14 x 23 m",
+ "description": "Ein Feld mit zwei Hälften und vier Minitoren. In einer Hälfte spielen fünf gegen zwei: Nach acht Pässen darf Team Neon in ein Minitor schießen. Die zwei Verteidiger pressen als Paar, erobern den Ball und spielen ihn sofort zu ihren drei Mitspielern in der anderen Hälfte. Dann wechseln die Rollen, und zwei von Team Neon pressen dort als neues Paar.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 14 mal 23 Metern, in der Mitte geteilt. Ein Minitor oben, eins unten, eins links an der oberen und eins rechts an der unteren Hälfte.",
+  "Verteilen: Team Neon mit fünf Spielern in der unteren Hälfte, dazu zwei von Team Rot als Paar. Die anderen drei von Team Rot warten oben. Der Trainer steht unten links mit Bällen.",
+  "Ablauf: Team Neon spielt acht Pässe und darf dann in eines der Minitore schießen. Erobert das Paar den Ball, spielt es ihn sofort in die andere Hälfte. Dann laufen zwei von Team Neon hinüber und pressen, und das Paar wird zu Angreifern.",
+  "Wertung und Wechsel: Ein Treffer nach acht Pässen gibt einen Punkt. Danach spielt der Trainer einen neuen Ball ein. Nach jedem Ballgewinn wechseln die Rollen."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Als Paar pressen, wenn der Gegner schlecht annimmt oder schlecht passt",
+  "Eng zusammenbleiben und Passwege zustellen",
+  "Schräg anlaufen, damit der Ball nur in eine Richtung kann",
+  "Nach Ballgewinn sofort umschalten und in die andere Hälfte spielen"
+ ],
+ "materials": [
+  "4 Minitore",
+  "6 Hütchen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Paar-Rondo mit vier Minitoren. Fünf gegen zwei, und die zwei Verteidiger pressen gemeinsam als Paar.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 30,
+    "y": 4,
+    "w": 40,
+    "h": 52
+   },
+   {
+    "type": "line",
+    "x1": 30,
+    "y1": 30,
+    "x2": 70,
+    "y2": 30,
+    "dashed": true
+   }
+  ],
+  "cones": [
+   {
+    "x": 30,
+    "y": 4,
+    "color": "orange"
+   },
+   {
+    "x": 70,
+    "y": 4,
+    "color": "orange"
+   },
+   {
+    "x": 30,
+    "y": 56,
+    "color": "orange"
+   },
+   {
+    "x": 70,
+    "y": 56,
+    "color": "orange"
+   },
+   {
+    "x": 30,
+    "y": 30,
+    "color": "orange"
+   },
+   {
+    "x": 70,
+    "y": 30,
+    "color": "orange"
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 4,
+    "side": "top"
+   },
+   {
+    "x": 50,
+    "y": 56,
+    "side": "bottom"
+   },
+   {
+    "x": 30,
+    "y": 17,
+    "side": "left"
+   },
+   {
+    "x": 70,
+    "y": 43,
+    "side": "right"
+   }
+  ],
+  "players": [
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 33,
+    "y": 34,
+    "label": "4"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 33,
+    "y": 51,
+    "label": "8"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 41.5,
+    "y": 20,
+    "label": "9"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 41.5,
+    "y": 42,
+    "label": "7"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 50,
+    "y": 8,
+    "label": "2"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 50,
+    "y": 38,
+    "label": "11"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 50,
+    "y": 54,
+    "label": "5"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 58.5,
+    "y": 20,
+    "label": "3"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 58.5,
+    "y": 36,
+    "label": "6"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 58.5,
+    "y": 52,
+    "label": "10"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 23,
+    "y": 50,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 33.6,
+    "y": 34.6
+   },
+   {
+    "id": "s1",
+    "x": 23.6,
+    "y": 53.5
+   },
+   {
+    "id": "s2",
+    "x": 20,
+    "y": 53.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Fünf gegen zwei",
+    "say": "Team Neon lässt den Ball in der unteren Hälfte laufen. Spieler vier spielt zu Spieler acht, der zu Spieler fünf und weiter zu Spieler zehn. Spieler sieben und Spieler elf pressen als Paar.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       33.6,
+       51.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       54.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       59.1,
+       52.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r7",
+      "to": [
+       40,
+       46
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "r11",
+      "to": [
+       52,
+       44
+      ],
+      "type": "lauf",
+      "delay": 1.2
+     }
+    ]
+   },
+   {
+    "label": "Acht Pässe: Punkt",
+    "say": "Nach acht Pässen darf Team Neon schießen. Spieler zehn trifft ins rechte Minitor, und das gibt einen Punkt für Team Neon. Der Trainer spielt sofort einen neuen Ball zu Spieler acht.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       69.5,
+       43.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "s1",
+      "to": [
+       33.6,
+       51.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Ballgewinn",
+    "say": "Spieler acht spielt zu Spieler vier, aber Spieler vier nimmt den Ball schlecht an. Spieler sieben presst sofort und erobert den Ball.",
+    "moves": [
+     {
+      "who": "s1",
+      "to": [
+       33.6,
+       34.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r7",
+      "to": [
+       37.5,
+       36.5
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "s1",
+      "to": [
+       37.1,
+       37.1
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Rollen tauschen",
+    "say": "Spieler sieben spielt sofort zu Spieler neun in die obere Hälfte. Jetzt hat Team Rot oben fünf Spieler und muss acht Pässe schaffen, dann gibt ein Treffer einen Punkt für Team Rot. Spieler vier und Spieler sechs laufen hinüber und pressen dort als neues Paar.",
+    "moves": [
+     {
+      "who": "s1",
+      "to": [
+       42.1,
+       20.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r7",
+      "to": [
+       34,
+       25
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "r11",
+      "to": [
+       64,
+       30
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "r11",
+      "to": [
+       66,
+       27
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n4",
+      "to": [
+       44,
+       27
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     },
+     {
+      "who": "n6",
+      "to": [
+       55,
+       27
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 30,
+    "y1": 58.6,
+    "x2": 70,
+    "y2": 58.6,
+    "text": "14 m"
+   },
+   {
+    "x1": 78,
+    "y1": 4,
+    "x2": 78,
+    "y2": 56,
+    "text": "23 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Den Auslöser erkennen und sofort pressen.",
+   "title": "Auslöser erkennen",
+   "text": "Das Paar wartet auf ein Signal: eine schlechte Annahme oder einen ungenauen Pass. Dann pressen beide sofort und mit vollem Tempo. Nach dem Ballgewinn geht der Ball schnell in die andere Hälfte.",
+   "board": {
+    "players": [
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 33,
+      "y": 34,
+      "label": "4"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 33,
+      "y": 51,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 41.5,
+      "y": 20,
+      "label": "9"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 41.5,
+      "y": 42,
+      "label": "7"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 50,
+      "y": 8,
+      "label": "2"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 50,
+      "y": 38,
+      "label": "11"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 50,
+      "y": 54,
+      "label": "5"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 58.5,
+      "y": 20,
+      "label": "3"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 58.5,
+      "y": 36,
+      "label": "6"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 58.5,
+      "y": 52,
+      "label": "10"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 23,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 54.6
+     },
+     {
+      "id": "s1",
+      "x": 23.6,
+      "y": 53.5
+     },
+     {
+      "id": "s2",
+      "x": 20,
+      "y": 53.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Schlechte Annahme",
+      "say": "Spieler fünf spielt zu Spieler sechs. Der Ball springt ihm vom Fuß. Spieler elf schaut genau hin und erkennt: Jetzt!",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         59.1,
+         36.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         62,
+         40
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r11",
+        "to": [
+         61.5,
+         40
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Sofort pressen",
+      "say": "Spieler elf sprintet auf den Ball und erobert ihn. Gleichzeitig stellt Spieler sieben den Pass zu Spieler fünf zu.",
+      "moves": [
+       {
+        "who": "r11",
+        "to": [
+         61.4,
+         39.4
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r7",
+        "to": [
+         46,
+         48
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Rüber: Ballbesitz",
+      "say": "Spieler elf dribbelt kurz weg und spielt sofort zu Spieler drei in die obere Hälfte. Jetzt ist Team Rot oben mit fünf am Ball.",
+      "moves": [
+       {
+        "who": "r11",
+        "to": [
+         65,
+         32
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         59.1,
+         20.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Eng zusammen und schräg anlaufen.",
+   "title": "Eng und schräg anlaufen",
+   "text": "Die zwei Verteidiger bleiben nah beieinander. Der erste läuft schräg an, so dass der Pass nur noch in eine Richtung kann. Der zweite steht genau dort und fängt den Ball ab.",
+   "board": {
+    "players": [
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 33,
+      "y": 34,
+      "label": "4"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 33,
+      "y": 51,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 41.5,
+      "y": 20,
+      "label": "9"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 41.5,
+      "y": 42,
+      "label": "7"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 50,
+      "y": 8,
+      "label": "2"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 50,
+      "y": 38,
+      "label": "11"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 50,
+      "y": 54,
+      "label": "5"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 58.5,
+      "y": 20,
+      "label": "3"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 58.5,
+      "y": 36,
+      "label": "6"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 58.5,
+      "y": 52,
+      "label": "10"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 23,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 33.6,
+      "y": 51.6
+     },
+     {
+      "id": "s1",
+      "x": 23.6,
+      "y": 53.5
+     },
+     {
+      "id": "s2",
+      "x": 20,
+      "y": 53.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Schräg anlaufen",
+      "say": "Spieler acht hat den Ball. Spieler sieben läuft schräg an und stellt den Pass zu Spieler vier zu. Spieler elf bleibt nah bei ihm.",
+      "moves": [
+       {
+        "who": "r7",
+        "to": [
+         37.5,
+         45
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r11",
+        "to": [
+         45,
+         47
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Abfangen: Ballbesitz",
+      "say": "Spieler acht muss zu Spieler fünf passen. Spieler elf geht dazwischen und fängt den Ball ab. Jetzt ist Team Rot am Ball und spielt sofort in die obere Hälfte.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         45.4,
+         52.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r11",
+        "to": [
+         44.8,
+         52
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

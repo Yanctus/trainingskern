@@ -1,0 +1,782 @@
+{
+ "title": "Acht gegen immer mehr",
+ "code": "UE-221",
+ "kind": "Spielform",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel",
+  "Verteidigen"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 16,
+ "players_max": 16,
+ "field_size": "27 x 32 m",
+ "description": "Team Neon hält zu acht den Ball, zuerst gegen nur einen Verteidiger. Auf Zuruf des Trainers kommt immer ein weiterer Spieler von Team Rot ins Feld, bis acht gegen acht gespielt wird. Erobert Team Rot den Ball, spielt es ihn zu einem Mitspieler draußen oder zum Trainer. Nach einer festen Zeit tauschen die Teams die Rollen.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 27 mal 32 Metern mit vier Hütchen.",
+  "Verteilen: Team Neon zu acht im Feld. Von Team Rot ist ein Spieler im Feld, die anderen sieben warten links und rechts daneben. Der Trainer steht an der Seite mit Bällen.",
+  "Ablauf: Team Neon spielt sich den Ball zu. Auf Zuruf des Trainers kommt ein weiterer Spieler von Team Rot dazu: acht gegen zwei, acht gegen drei, bis acht gegen acht.",
+  "Wertung und Wechsel: Erobert Team Rot den Ball und spielt ihn zu einem Mitspieler draußen oder zum Trainer, gibt das einen Punkt für Team Rot. Nach einer festen Zeit tauschen die Teams die Rollen."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Immer zwei oder drei Anspielstationen für den Ballführenden schaffen",
+  "Ohne Ball laufen und das Feld groß machen",
+  "Schnell passen und die Seite wechseln",
+  "Als Verteidiger Passwege zustellen und Pässe abfangen"
+ ],
+ "materials": [
+  "4 Hütchen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Acht gegen immer mehr. Team Neon hält den Ball, und Team Rot wird mit jedem Zuruf des Trainers stärker.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 28.6,
+    "y": 5,
+    "w": 42.8,
+    "h": 50
+   }
+  ],
+  "cones": [
+   {
+    "x": 28.6,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 71.4,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 28.6,
+    "y": 55,
+    "color": "orange"
+   },
+   {
+    "x": 71.4,
+    "y": 55,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 40.5,
+    "y": 12,
+    "label": "8"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 57.5,
+    "y": 11,
+    "label": "11"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 32,
+    "y": 26,
+    "label": "4"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 49,
+    "y": 28,
+    "label": "7"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 66,
+    "y": 24,
+    "label": "10"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 57.5,
+    "y": 41,
+    "label": "9"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 32,
+    "y": 45,
+    "label": "5"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 49,
+    "y": 50,
+    "label": "3"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 40.5,
+    "y": 34,
+    "label": "2"
+   },
+   {
+    "id": "r17",
+    "team": "b",
+    "x": 20,
+    "y": 6,
+    "label": "17"
+   },
+   {
+    "id": "r14",
+    "team": "b",
+    "x": 20,
+    "y": 22,
+    "label": "14"
+   },
+   {
+    "id": "r12",
+    "team": "b",
+    "x": 20,
+    "y": 38,
+    "label": "12"
+   },
+   {
+    "id": "r15",
+    "team": "b",
+    "x": 20,
+    "y": 54,
+    "label": "15"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 80,
+    "y": 10,
+    "label": "6"
+   },
+   {
+    "id": "r13",
+    "team": "b",
+    "x": 80,
+    "y": 28,
+    "label": "13"
+   },
+   {
+    "id": "r16",
+    "team": "b",
+    "x": 80,
+    "y": 46,
+    "label": "16"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 8,
+    "y": 32,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 32.6,
+    "y": 26.6
+   },
+   {
+    "id": "s1",
+    "x": 11.6,
+    "y": 35.5
+   },
+   {
+    "id": "s2",
+    "x": 8,
+    "y": 35.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Acht gegen eins",
+    "say": "Team Neon hält zu acht den Ball, nur Spieler zwei verteidigt. Spieler vier spielt zu Spieler sieben, der weiter zu Spieler elf.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       49.6,
+       28.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r2",
+      "to": [
+       45,
+       31
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       58.1,
+       11.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Der Nächste kommt",
+    "say": "Der Trainer ruft, und Spieler dreizehn läuft ins Feld. Jetzt heißt es acht gegen zwei. Spieler elf spielt zu Spieler zehn.",
+    "moves": [
+     {
+      "who": "r13",
+      "to": [
+       66,
+       40
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       66.6,
+       24.6
+      ],
+      "type": "pass",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Seite wechseln",
+    "say": "Spieler dreizehn läuft Spieler zehn an. Der spielt schnell zu Spieler neun, und der wechselt die Seite zu Spieler fünf.",
+    "moves": [
+     {
+      "who": "r13",
+      "to": [
+       70,
+       30
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       58.1,
+       41.6
+      ],
+      "type": "pass",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       32.6,
+       45.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Abgefangen: Punkt",
+    "say": "Spieler fünf will zu Spieler drei passen, aber Spieler zwei fängt den Ball ab und spielt zu Spieler fünfzehn nach draußen. Das gibt einen Punkt für Team Rot. Dann bringt der Trainer einen neuen Ball, und Team Neon spielt weiter, bis die Teams die Rollen tauschen.",
+    "moves": [
+     {
+      "who": "r2",
+      "to": [
+       41,
+       47.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       41.6,
+       48.1
+      ],
+      "type": "pass",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       20.6,
+       54.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 28.6,
+    "y1": 58.6,
+    "x2": 71.4,
+    "y2": 58.6,
+    "text": "27 m"
+   },
+   {
+    "x1": 88,
+    "y1": 5,
+    "x2": 88,
+    "y2": 55,
+    "text": "32 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Immer zwei oder drei Anspielstationen.",
+   "title": "Gute Passwinkel",
+   "text": "Wer den Ball hat, braucht immer zwei oder drei Mitspieler, die er anspielen kann. Dafür laufen die anderen so, dass kein Verteidiger zwischen ihnen und dem Ball steht. So bleibt der Ball sicher im Team.",
+   "board": {
+    "players": [
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 40.5,
+      "y": 12,
+      "label": "8"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 57.5,
+      "y": 11,
+      "label": "11"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 32,
+      "y": 26,
+      "label": "4"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 49,
+      "y": 28,
+      "label": "7"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 66,
+      "y": 24,
+      "label": "10"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 57.5,
+      "y": 41,
+      "label": "9"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 32,
+      "y": 45,
+      "label": "5"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 49,
+      "y": 50,
+      "label": "3"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 40.5,
+      "y": 34,
+      "label": "2"
+     },
+     {
+      "id": "r17",
+      "team": "b",
+      "x": 20,
+      "y": 6,
+      "label": "17"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 20,
+      "y": 22,
+      "label": "14"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 20,
+      "y": 38,
+      "label": "12"
+     },
+     {
+      "id": "r15",
+      "team": "b",
+      "x": 20,
+      "y": 54,
+      "label": "15"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 80,
+      "y": 10,
+      "label": "6"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 66,
+      "y": 40,
+      "label": "13"
+     },
+     {
+      "id": "r16",
+      "team": "b",
+      "x": 80,
+      "y": 46,
+      "label": "16"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 8,
+      "y": 32,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 32.6,
+      "y": 26.6
+     },
+     {
+      "id": "s1",
+      "x": 11.6,
+      "y": 35.5
+     },
+     {
+      "id": "s2",
+      "x": 8,
+      "y": 35.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Anbieten",
+      "say": "Spieler vier hat den Ball, Spieler zwei und Spieler dreizehn verteidigen. Alle bieten sich gleichzeitig an: Spieler acht, Spieler sieben und Spieler fünf laufen so, dass der Passweg frei ist.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         38,
+         15
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n7",
+        "to": [
+         47,
+         26
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n5",
+        "to": [
+         30,
+         41
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Freien Mann finden",
+      "say": "Spieler vier hat drei Anspielstationen. Er spielt zu Spieler sieben, der hat Zeit und spielt weiter zu Spieler neun.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         47.6,
+         26.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         58.1,
+         41.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Passwege zustellen.",
+   "title": "Passwege zustellen",
+   "text": "Jetzt schauen wir auf Team Rot. Die Verteidiger stellen sich in die Passwege, statt nur dem Ball hinterherzulaufen. Dann muss Team Neon schwierige Pässe spielen, und Team Rot kann sie abfangen.",
+   "board": {
+    "players": [
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 40.5,
+      "y": 12,
+      "label": "8"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 57.5,
+      "y": 11,
+      "label": "11"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 32,
+      "y": 26,
+      "label": "4"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 49,
+      "y": 28,
+      "label": "7"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 66,
+      "y": 24,
+      "label": "10"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 57.5,
+      "y": 46,
+      "label": "9"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 32,
+      "y": 45,
+      "label": "5"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 49,
+      "y": 50,
+      "label": "3"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 40.5,
+      "y": 34,
+      "label": "2"
+     },
+     {
+      "id": "r17",
+      "team": "b",
+      "x": 20,
+      "y": 6,
+      "label": "17"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 32,
+      "y": 9,
+      "label": "14"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 49,
+      "y": 9,
+      "label": "12"
+     },
+     {
+      "id": "r15",
+      "team": "b",
+      "x": 20,
+      "y": 54,
+      "label": "15"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 80,
+      "y": 10,
+      "label": "6"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 66,
+      "y": 40,
+      "label": "13"
+     },
+     {
+      "id": "r16",
+      "team": "b",
+      "x": 80,
+      "y": 36,
+      "label": "16"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 8,
+      "y": 32,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 32.6,
+      "y": 26.6
+     },
+     {
+      "id": "s1",
+      "x": 11.6,
+      "y": 35.5
+     },
+     {
+      "id": "s2",
+      "x": 8,
+      "y": 35.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Passweg sehen",
+      "say": "Spieler vier hat den Ball. Spieler zwei schaut, wo der freie Gegner steht, und stellt sich in den Passweg zu Spieler fünf. Spieler zwölf und Spieler vierzehn machen die anderen Wege zu.",
+      "moves": [
+       {
+        "who": "r2",
+        "to": [
+         30,
+         48
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "r2",
+        "to": [
+         34,
+         36
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r12",
+        "to": [
+         42,
+         25.5
+        ],
+        "type": "lauf",
+        "delay": 0.9
+       },
+       {
+        "who": "r14",
+        "to": [
+         36,
+         19
+        ],
+        "type": "lauf",
+        "delay": 0.9
+       }
+      ]
+     },
+     {
+      "label": "Abgefangen: Punkt",
+      "say": "Spieler vier muss den langen Pass zu Spieler neun spielen. Spieler dreizehn fängt ihn ab und spielt zu Spieler sechzehn nach draußen. Das gibt einen Punkt für Team Rot.",
+      "moves": [
+       {
+        "who": "r13",
+        "to": [
+         51,
+         41
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         51.6,
+         41.6
+        ],
+        "type": "pass",
+        "delay": 0.2
+       },
+       {
+        "who": "b1",
+        "to": [
+         80.6,
+         36.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

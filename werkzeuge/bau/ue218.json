@@ -1,0 +1,816 @@
+{
+ "title": "Pressen zu zweit in vier Zonen",
+ "code": "UE-218",
+ "kind": "Spielform",
+ "focuses": [
+  "Verteidigen",
+  "Passspiel",
+  "Zusammenspiel"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 16,
+ "players_max": 16,
+ "field_size": "23 x 23 m",
+ "description": "Ein Feld mit vier Zonen und einem Minitor in jeder Ecke. Team Neon hat in jeder Zone zwei Spieler und darf erst nach zwei Pässen in die nächste Zone spielen. Team Rot presst immer zu zweit, sobald der Ball in seine Zone kommt, und schießt nach einem Ballgewinn aufs Minitor. Schafft Team Neon alle vier Zonen, gibt das einen Punkt für Team Neon.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 23 mal 23 Metern in vier Zonen. In jeder Ecke ein Minitor, in der Mitte eine kleine Zone von etwa 9 mal 9 Metern.",
+  "Verteilen: Team Neon mit acht Spielern, zwei in jeder Zone. Team Rot mit acht Spielern in der Mittelzone, je zwei gehören zu einer Zone. Der Trainer steht links mit Bällen.",
+  "Ablauf: Der Trainer gibt Team Neon den Ball. Die zwei Roten dieser Zone pressen sofort. Nach zwei Pässen spielt Team Neon in die nächste Zone, dort pressen die nächsten zwei.",
+  "Wertung und Wechsel: Schafft Team Neon alle vier Zonen, gibt das einen Punkt für Team Neon. Erobert Team Rot den Ball und trifft ins Minitor, gibt das einen Punkt für Team Rot. Nach einer festen Zeit tauschen die Teams die Rollen."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Schnell zu zweit pressen, sobald der Ball in die Zone kommt",
+  "Keine Lücke zwischen den beiden Verteidigern lassen",
+  "Den nächsten Pass ahnen und früh losstarten",
+  "Mit Ball die Verteidiger anlocken und genau in die nächste Zone spielen"
+ ],
+ "materials": [
+  "4 Minitore",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Pressen zu zweit in vier Zonen. Team Neon spielt sich durch alle vier Zonen, und Team Rot presst immer zu zweit.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 20,
+    "y": 4,
+    "w": 60,
+    "h": 52
+   },
+   {
+    "type": "line",
+    "x1": 50,
+    "y1": 4,
+    "x2": 50,
+    "y2": 56,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 20,
+    "y1": 30,
+    "x2": 80,
+    "y2": 30,
+    "dashed": true
+   },
+   {
+    "type": "rect",
+    "x": 35,
+    "y": 17,
+    "w": 30,
+    "h": 26,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 20,
+    "y": 9,
+    "side": "left"
+   },
+   {
+    "x": 80,
+    "y": 9,
+    "side": "right"
+   },
+   {
+    "x": 20,
+    "y": 51,
+    "side": "left"
+   },
+   {
+    "x": 80,
+    "y": 51,
+    "side": "right"
+   }
+  ],
+  "cones": [],
+  "players": [
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 24,
+    "y": 14,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 36,
+    "y": 5,
+    "label": "3"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 64,
+    "y": 5,
+    "label": "4"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 76,
+    "y": 14,
+    "label": "5"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 76,
+    "y": 46,
+    "label": "6"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 64,
+    "y": 55,
+    "label": "7"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 36,
+    "y": 55,
+    "label": "8"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 24,
+    "y": 46,
+    "label": "9"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 37.4,
+    "y": 21,
+    "label": "10"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 45.8,
+    "y": 21,
+    "label": "11"
+   },
+   {
+    "id": "r12",
+    "team": "b",
+    "x": 54.2,
+    "y": 21,
+    "label": "12"
+   },
+   {
+    "id": "r13",
+    "team": "b",
+    "x": 62.6,
+    "y": 21,
+    "label": "13"
+   },
+   {
+    "id": "r14",
+    "team": "b",
+    "x": 62.6,
+    "y": 39,
+    "label": "14"
+   },
+   {
+    "id": "r15",
+    "team": "b",
+    "x": 54.2,
+    "y": 39,
+    "label": "15"
+   },
+   {
+    "id": "r16",
+    "team": "b",
+    "x": 45.8,
+    "y": 39,
+    "label": "16"
+   },
+   {
+    "id": "r17",
+    "team": "b",
+    "x": 37.4,
+    "y": 39,
+    "label": "17"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 9,
+    "y": 30,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 24.6,
+    "y": 14.6
+   },
+   {
+    "id": "s1",
+    "x": 10.6,
+    "y": 26.5
+   },
+   {
+    "id": "s2",
+    "x": 7,
+    "y": 26.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Zu zweit pressen",
+    "say": "Spieler zwei hat den Ball in der Zone oben links und spielt zu Spieler drei. Sofort laufen Spieler zehn und Spieler elf aus der Mitte heraus und pressen zu zweit.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       36.6,
+       5.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r11",
+      "to": [
+       40,
+       11
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "r10",
+      "to": [
+       30,
+       18
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Zweiter Pass",
+    "say": "Spieler drei spielt zurück zu Spieler zwei. Das sind zwei Pässe. Spieler siebzehn in der Mitte schaut schon zum Ball und weiß: Gleich kommt der Pass in seine Zone.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       24.6,
+       14.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r17",
+      "to": [
+       27,
+       20
+      ],
+      "type": "blick",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Ab in die nächste Zone",
+    "say": "Jetzt spielt Spieler zwei nach unten zu Spieler neun. Spieler siebzehn und Spieler sechzehn pressen sofort, wenn der Ball ankommt.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       24.6,
+       46.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r17",
+      "to": [
+       29,
+       43
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "r16",
+      "to": [
+       31,
+       50
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "Abfangen: Punkt",
+    "say": "Spieler neun will zu Spieler acht passen, aber Spieler sechzehn fängt den Ball ab und schießt ins Minitor in der Ecke. Das gibt einen Punkt für Team Rot. Schafft Team Neon alle vier Zonen, gibt das einen Punkt für Team Neon. Dann bringt der Trainer einen neuen Ball, und nach einer festen Zeit tauschen die Teams die Rollen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       31.6,
+       50.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r16",
+      "to": [
+       22,
+       51
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 20,
+    "y1": 58.6,
+    "x2": 80,
+    "y2": 58.6,
+    "text": "23 m"
+   },
+   {
+    "x1": 88,
+    "y1": 4,
+    "x2": 88,
+    "y2": 56,
+    "text": "23 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Zu zweit pressen und keine Lücke lassen.",
+   "title": "Keine Lücke lassen",
+   "text": "Die beiden Verteidiger laufen gemeinsam an. Der erste macht den Weg nach innen zu, der zweite stellt sich in den Passweg. So gibt es keine Lücke, und der Pass kann abgefangen werden.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 24,
+      "y": 14,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 36,
+      "y": 5,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 64,
+      "y": 5,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 76,
+      "y": 14,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 76,
+      "y": 46,
+      "label": "6"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 64,
+      "y": 55,
+      "label": "7"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 36,
+      "y": 55,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 24,
+      "y": 46,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 37.4,
+      "y": 21,
+      "label": "10"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 45.8,
+      "y": 21,
+      "label": "11"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 54.2,
+      "y": 21,
+      "label": "12"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 62.6,
+      "y": 21,
+      "label": "13"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 62.6,
+      "y": 39,
+      "label": "14"
+     },
+     {
+      "id": "r15",
+      "team": "b",
+      "x": 54.2,
+      "y": 39,
+      "label": "15"
+     },
+     {
+      "id": "r16",
+      "team": "b",
+      "x": 45.8,
+      "y": 39,
+      "label": "16"
+     },
+     {
+      "id": "r17",
+      "team": "b",
+      "x": 37.4,
+      "y": 39,
+      "label": "17"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 9,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 64.6,
+      "y": 5.6
+     },
+     {
+      "id": "s1",
+      "x": 10.6,
+      "y": 26.5
+     },
+     {
+      "id": "s2",
+      "x": 7,
+      "y": 26.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zusammen anlaufen",
+      "say": "Spieler vier hat den Ball in der Zone oben rechts. Spieler zwölf läuft ihn schräg an und macht den Weg nach innen zu. Spieler dreizehn bleibt nah dran und stellt sich zwischen Spieler vier und Spieler fünf.",
+      "moves": [
+       {
+        "who": "r12",
+        "to": [
+         58,
+         11
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r13",
+        "to": [
+         69,
+         12
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Abfangen: Punkt",
+      "say": "Spieler vier spielt trotzdem zu Spieler fünf. Spieler dreizehn fängt den Ball ab und schießt ins Minitor oben rechts. Das gibt einen Punkt für Team Rot.",
+      "moves": [
+       {
+        "who": "r13",
+        "to": [
+         71,
+         10
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         71.6,
+         10.6
+        ],
+        "type": "pass",
+        "delay": 0.2
+       },
+       {
+        "who": "r13",
+        "to": [
+         78.5,
+         9.6
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Nur noch ein Pass vor dem Wechsel.",
+   "title": "Nur ein Pass",
+   "text": "Team Neon darf schon nach einem Pass in die nächste Zone spielen. Die Verteidiger müssen noch schneller pressen und den nächsten Pass früh ahnen. Es wird schneller, und alle müssen schnell entscheiden.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 24,
+      "y": 14,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 36,
+      "y": 5,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 64,
+      "y": 5,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 76,
+      "y": 14,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 76,
+      "y": 46,
+      "label": "6"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 64,
+      "y": 55,
+      "label": "7"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 36,
+      "y": 55,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 24,
+      "y": 46,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 37.4,
+      "y": 21,
+      "label": "10"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 45.8,
+      "y": 21,
+      "label": "11"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 54.2,
+      "y": 21,
+      "label": "12"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 62.6,
+      "y": 21,
+      "label": "13"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 62.6,
+      "y": 39,
+      "label": "14"
+     },
+     {
+      "id": "r15",
+      "team": "b",
+      "x": 54.2,
+      "y": 39,
+      "label": "15"
+     },
+     {
+      "id": "r16",
+      "team": "b",
+      "x": 45.8,
+      "y": 39,
+      "label": "16"
+     },
+     {
+      "id": "r17",
+      "team": "b",
+      "x": 37.4,
+      "y": 39,
+      "label": "17"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 9,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 24.6,
+      "y": 14.6
+     },
+     {
+      "id": "s1",
+      "x": 10.6,
+      "y": 26.5
+     },
+     {
+      "id": "s2",
+      "x": 7,
+      "y": 26.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Ein Pass",
+      "say": "Spieler zwei spielt zu Spieler drei. Spieler zehn und Spieler elf pressen sofort.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         36.6,
+         5.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r11",
+        "to": [
+         40,
+         11
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "r10",
+        "to": [
+         30,
+         18
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Sofort weiter",
+      "say": "Nach nur einem Pass spielt Spieler drei schon in die Zone oben rechts zu Spieler vier. Spieler zwölf und Spieler dreizehn pressen, sobald der Ball ankommt.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         64.6,
+         5.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r12",
+        "to": [
+         58,
+         11
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "r13",
+        "to": [
+         71,
+         19
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       }
+      ]
+     },
+     {
+      "label": "Durch alle Zonen: Punkt",
+      "say": "Spieler vier spielt zu Spieler fünf, und der spielt gleich weiter nach unten zu Spieler sechs. Geht es so durch alle vier Zonen, gibt das einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         76.6,
+         14.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         76.6,
+         46.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

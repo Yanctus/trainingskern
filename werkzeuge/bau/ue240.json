@@ -1,0 +1,561 @@
+{
+ "title": "Ballbesitz in vier Dreiecken",
+ "code": "UE-240",
+ "kind": "Spielform",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel",
+  "Verteidigen"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 8,
+ "players_max": 8,
+ "field_size": "18 x 18 m",
+ "description": "Ein Rondo vier gegen zwei in einem Quadrat, das durch die Diagonalen in vier Dreiecke geteilt ist. In jedem Dreieck steht ein Spieler des Teams am Ball, zwei Gegner pressen zu zweit, zwei weitere warten draußen. Nach zehn Pässen in Folge darf das Team am Ball in eines der beiden Minitore schießen. Nach einem Treffer wechseln die Verteidiger mit den Wartenden, und wer den Ball erobert, ist selbst am Ball.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 18 Metern, mit Hütchen oder Linien entlang der Diagonalen in vier Dreiecke geteilt. Oben und unten steht ein Minitor.",
+  "Verteilen: Team Neon mit vier Spielern, einer in jedem Dreieck. Von Team Rot pressen zwei im Feld, zwei warten links und rechts draußen. Der Trainer steht an der Seite mit Bällen.",
+  "Ablauf: Team Neon lässt den Ball durch die Dreiecke laufen und zählt laut mit. Jeder bleibt in seinem Dreieck. Die zwei Verteidiger pressen zu zweit.",
+  "Wertung und Wechsel: Nach zehn Pässen darf Team Neon in ein Minitor schießen, das gibt einen Punkt. Dann tauschen die Verteidiger mit den Wartenden. Erobern die Verteidiger den Ball, kommen ihre zwei Mitspieler dazu, und zwei von Team Neon gehen raus."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Im eigenen Dreieck so stehen, dass ein Passweg frei ist",
+  "Laut mitzählen und ansagen, wann abgeschlossen wird",
+  "Mit einem oder zwei Kontakten spielen und die Verteidiger zum Ball locken",
+  "Als Verteidiger zu zweit pressen und die Passwege zumachen"
+ ],
+ "materials": [
+  "2 Minitore",
+  "8 Hütchen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Ballbesitz in vier Dreiecken. Team Neon spielt zehn Pässe durch die Dreiecke und darf dann aufs Minitor schießen.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   },
+   {
+    "type": "line",
+    "x1": 25,
+    "y1": 5,
+    "x2": 75,
+    "y2": 55,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 75,
+    "y1": 5,
+    "x2": 25,
+    "y2": 55,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top"
+   },
+   {
+    "x": 50,
+    "y": 55,
+    "side": "bottom"
+   }
+  ],
+  "cones": [],
+  "players": [
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 52,
+    "y": 13,
+    "label": "9"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 33,
+    "y": 30,
+    "label": "8"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 67,
+    "y": 30,
+    "label": "10"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 50,
+    "y": 47,
+    "label": "4"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 43.5,
+    "y": 27,
+    "label": "5"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 58.5,
+    "y": 36,
+    "label": "6"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 17,
+    "y": 30,
+    "label": "2"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 83,
+    "y": 30,
+    "label": "3"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 17,
+    "y": 47,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 52.6,
+    "y": 13.6
+   },
+   {
+    "id": "s1",
+    "x": 20.6,
+    "y": 50.5
+   },
+   {
+    "id": "s2",
+    "x": 17,
+    "y": 50.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pass eins",
+    "say": "Team Neon hat den Ball, und jeder bleibt in seinem Dreieck. Spieler neun spielt zu Spieler acht, und alle zählen laut mit: eins! Spieler fünf läuft sofort an.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       33.6,
+       30.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r5",
+      "to": [
+       37,
+       26
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Am Verteidiger vorbei",
+    "say": "Spieler acht spielt am Verteidiger vorbei nach unten zu Spieler vier: zwei! Jetzt läuft Spieler sechs an.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       47.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r6",
+      "to": [
+       47,
+       40
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Weiter zählen",
+    "say": "Spieler vier spielt weiter zu Spieler zehn: drei! So läuft der Ball durch alle Dreiecke, bis zehn Pässe geschafft sind.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       67.6,
+       30.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r6",
+      "to": [
+       58.5,
+       36
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Zehn, Abschluss: Punkt",
+    "say": "Zehn! Spieler zehn spielt zu Spieler neun, und der schießt ins obere Minitor. Das gibt einen Punkt für Team Neon. Dann tauschen Spieler fünf und Spieler sechs mit Spieler zwei und Spieler drei von draußen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       52.6,
+       13.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       50,
+       5.5
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 91,
+    "y1": 5,
+    "x2": 91,
+    "y2": 55,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Einen Passwinkel schaffen.",
+   "title": "Passwinkel schaffen",
+   "text": "Steht ein Verteidiger im Passweg, wartet der Mitspieler nicht, sondern bewegt sich in seinem Dreieck, bis der Weg frei ist. So hat der Spieler am Ball immer eine Anspielstation.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 52,
+      "y": 13,
+      "label": "9"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 33,
+      "y": 30,
+      "label": "8"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 67,
+      "y": 30,
+      "label": "10"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 50,
+      "y": 47,
+      "label": "4"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 43.5,
+      "y": 27,
+      "label": "5"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 58.5,
+      "y": 39,
+      "label": "6"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 17,
+      "y": 30,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 83,
+      "y": 30,
+      "label": "3"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 17,
+      "y": 47,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 47.6
+     },
+     {
+      "id": "s1",
+      "x": 20.6,
+      "y": 50.5
+     },
+     {
+      "id": "s2",
+      "x": 17,
+      "y": 50.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Passweg zu",
+      "say": "Spieler vier hat den Ball. Aber Spieler sechs steht genau im Passweg zu Spieler zehn.",
+      "moves": [
+       {
+        "who": "r5",
+        "to": [
+         45,
+         36
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Winkel frei",
+      "say": "Spieler zehn bewegt sich in seinem Dreieck ein Stück nach unten. Jetzt ist der Passweg frei, und Spieler vier spielt zu ihm.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         69,
+         41
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         69.6,
+         41.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Vier gegen drei.",
+   "title": "Vier gegen drei",
+   "text": "Jetzt pressen drei Verteidiger, nur einer wartet draußen. Dafür reichen schon sechs Pässe für den Abschluss. Erobert Team Rot den Ball, kommt der Wartende dazu, und ein Spieler von Team Neon geht raus. Dann presst Team Neon zu dritt.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 52,
+      "y": 13,
+      "label": "9"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 33,
+      "y": 30,
+      "label": "8"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 69,
+      "y": 32,
+      "label": "10"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 50,
+      "y": 47,
+      "label": "4"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 43.5,
+      "y": 27,
+      "label": "5"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 58.5,
+      "y": 36,
+      "label": "6"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 60.5,
+      "y": 20,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 83,
+      "y": 30,
+      "label": "3"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 17,
+      "y": 47,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 33.6,
+      "y": 30.6
+     },
+     {
+      "id": "s1",
+      "x": 20.6,
+      "y": 50.5
+     },
+     {
+      "id": "s2",
+      "x": 17,
+      "y": 50.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zu zweit anlaufen",
+      "say": "Jetzt pressen drei. Spieler acht spielt zu Spieler neun, und Spieler zwei und Spieler fünf laufen ihn gemeinsam an.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         52.6,
+         13.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r2",
+        "to": [
+         57,
+         16
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "r5",
+        "to": [
+         46,
+         19
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Abgefangen: Wechsel",
+      "say": "Spieler neun will nach rechts passen, aber Spieler zwei fängt den Ball ab. Jetzt ist Team Rot am Ball. Spieler drei kommt von draußen dazu, Spieler neun geht raus, und Team Neon presst zu dritt.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         57.6,
+         16.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r3",
+        "to": [
+         72,
+         44
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

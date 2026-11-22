@@ -1,0 +1,630 @@
+{
+ "title": "Steilpass durch die Mitte",
+ "code": "UE-217",
+ "kind": "Spielform",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel",
+  "Umschalten"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 9,
+ "players_max": 9,
+ "field_size": "14 x 18 m",
+ "description": "Sechs gegen drei mit einem Dreieck aus Hütchen in der Mitte. Team Neon steht zu dritt oben und zu dritt unten und will den Ball scharf durch das Dreieck auf die andere Seite spielen. Von Team Rot darf immer nur einer aus dem Dreieck heraus pressen. Erobert Team Rot den Ball, kontert es auf eines der vier Minitore.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 14 mal 18 Metern, in der Mitte ein Dreieck aus drei Hütchen. An jeder Seite steht ein Minitor.",
+  "Verteilen: Sechs von Team Neon, drei oben und drei unten am Rand. Drei von Team Rot im Dreieck. Der Trainer steht an der Seite mit Bällen.",
+  "Ablauf: Team Neon lässt den Ball laufen, bis die Verteidiger verschieben und eine Lücke aufgeht. Dann kommt der Pass durch das Dreieck. Immer nur ein Verteidiger darf heraus und pressen, die anderen zwei bleiben im Dreieck.",
+  "Wertung: Jeder Pass durch das Dreieck auf die andere Seite gibt einen Punkt für Team Neon. Erobert Team Rot den Ball, darf es auf jedes Minitor kontern, und ein Treffer gibt einen Punkt für Team Rot."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Schnell passen, damit die Verteidiger verschieben müssen",
+  "Geduldig bleiben, wenn die Passwege zu sind",
+  "Den Pass durch das Dreieck scharf spielen",
+  "Nach Ballgewinn sofort auf ein Minitor kontern"
+ ],
+ "materials": [
+  "7 Hütchen",
+  "4 Minitore",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Steilpass durch die Mitte. Team Neon lässt den Ball laufen und spielt im richtigen Moment scharf durch das Dreieck.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 30.5,
+    "y": 5,
+    "w": 39,
+    "h": 50
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top"
+   },
+   {
+    "x": 50,
+    "y": 55,
+    "side": "bottom"
+   },
+   {
+    "x": 30.5,
+    "y": 30,
+    "side": "left"
+   },
+   {
+    "x": 69.5,
+    "y": 30,
+    "side": "right"
+   }
+  ],
+  "cones": [
+   {
+    "x": 50,
+    "y": 15,
+    "color": "orange"
+   },
+   {
+    "x": 38,
+    "y": 39,
+    "color": "orange"
+   },
+   {
+    "x": 62,
+    "y": 39,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 50,
+    "y": 9,
+    "label": "9"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 37,
+    "y": 17,
+    "label": "7"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 63,
+    "y": 17,
+    "label": "11"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 37,
+    "y": 43,
+    "label": "4"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 46,
+    "y": 53,
+    "label": "6"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 64,
+    "y": 48,
+    "label": "5"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 45.5,
+    "y": 30,
+    "label": "2"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 54.5,
+    "y": 30,
+    "label": "3"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 55,
+    "y": 47,
+    "label": "8"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 80,
+    "y": 12,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 37.6,
+    "y": 43.6
+   },
+   {
+    "id": "s1",
+    "x": 83.6,
+    "y": 15.5
+   },
+   {
+    "id": "s2",
+    "x": 80,
+    "y": 15.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Ball laufen lassen",
+    "say": "Team Neon lässt den Ball unten laufen. Spieler vier spielt zu Spieler sechs, der weiter zu Spieler fünf.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       46.6,
+       53.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       64.6,
+       48.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Einer presst",
+    "say": "Spieler acht presst Spieler fünf. Spieler drei schiebt nach rechts, Spieler zwei nach links. Spieler fünf schaut hoch und sieht: In der Mitte ist eine Lücke.",
+    "moves": [
+     {
+      "who": "r8",
+      "to": [
+       59,
+       50
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r3",
+      "to": [
+       57,
+       31
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "r2",
+      "to": [
+       44,
+       33.5
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n5",
+      "to": [
+       51,
+       34
+      ],
+      "type": "blick",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Durch das Dreieck: Punkt",
+    "say": "Spieler fünf spielt scharf durch die Lücke zu Spieler sieben, und das gibt einen Punkt für Team Neon. Team Neon behält den Ball. Spieler acht geht zurück ins Dreieck, und jetzt darf ein anderer Verteidiger pressen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       37.6,
+       17.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r8",
+      "to": [
+       52,
+       41
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 30.5,
+    "y1": 58.6,
+    "x2": 69.5,
+    "y2": 58.6,
+    "text": "14 m"
+   },
+   {
+    "x1": 75,
+    "y1": 5,
+    "x2": 75,
+    "y2": 55,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Den Pass schnell spielen.",
+   "title": "Schnell durch",
+   "text": "Zögert der Spieler am Ball oder spielt zu langsam, sehen die Verteidiger den Pass kommen. Dann fangen sie ihn ab und kontern sofort auf ein Minitor. Darum muss der Pass durch das Dreieck scharf und ohne Zögern kommen.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 50,
+      "y": 9,
+      "label": "9"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 37,
+      "y": 17,
+      "label": "7"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 63,
+      "y": 17,
+      "label": "11"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 37,
+      "y": 43,
+      "label": "4"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 46,
+      "y": 53,
+      "label": "6"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 64,
+      "y": 48,
+      "label": "5"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 45.5,
+      "y": 30,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 54.5,
+      "y": 30,
+      "label": "3"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 55,
+      "y": 47,
+      "label": "8"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 80,
+      "y": 12,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 63.6,
+      "y": 17.6
+     },
+     {
+      "id": "s1",
+      "x": 83.6,
+      "y": 15.5
+     },
+     {
+      "id": "s2",
+      "x": 80,
+      "y": 15.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zu langsam",
+      "say": "Spieler elf zögert und spielt den Pass zu Spieler vier zu langsam. Spieler drei sieht ihn kommen und fängt den Ball ab.",
+      "moves": [
+       {
+        "who": "r3",
+        "to": [
+         53,
+         28
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         53.6,
+         28.6
+        ],
+        "type": "pass",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Konter: Punkt",
+      "say": "Spieler drei dribbelt sofort los und schießt ins Minitor rechts. Das gibt einen Punkt für Team Rot.",
+      "moves": [
+       {
+        "who": "r3",
+        "to": [
+         61,
+         31
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         69,
+         30
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Das Dreieck wird kleiner.",
+   "title": "Kleines Dreieck",
+   "text": "Jetzt ist das Dreieck kleiner, und der Weg hindurch ist schwerer zu finden. Team Neon lockt den pressenden Verteidiger heraus, spielt um ihn herum und sucht dann schnell die Lücke.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 50,
+      "y": 9,
+      "label": "9"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 37,
+      "y": 17,
+      "label": "7"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 63,
+      "y": 17,
+      "label": "11"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 37,
+      "y": 43,
+      "label": "4"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 46,
+      "y": 53,
+      "label": "6"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 64,
+      "y": 48,
+      "label": "5"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 45.8,
+      "y": 31,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 54.2,
+      "y": 31,
+      "label": "3"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 55,
+      "y": 47,
+      "label": "8"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 80,
+      "y": 12,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 64.6,
+      "y": 48.6
+     },
+     {
+      "id": "s1",
+      "x": 83.6,
+      "y": 15.5
+     },
+     {
+      "id": "s2",
+      "x": 80,
+      "y": 15.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Herauslocken",
+      "say": "Spieler acht presst Spieler fünf. Spieler fünf spielt an ihm vorbei nach oben zu Spieler elf.",
+      "moves": [
+       {
+        "who": "r8",
+        "to": [
+         59,
+         50
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         63.6,
+         17.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Lücke sehen",
+      "say": "Spieler drei rückt nach oben, Spieler zwei nach links. Spieler elf schaut in die Mitte und sieht die Lücke.",
+      "moves": [
+       {
+        "who": "r3",
+        "to": [
+         52,
+         24
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r2",
+        "to": [
+         44.5,
+         30
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n11",
+        "to": [
+         50,
+         31
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Schnell durch: Punkt",
+      "say": "Spieler elf spielt schnell durch das kleine Dreieck zu Spieler vier. Das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         37.6,
+         43.6
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ],
+    "cones": [
+     {
+      "x": 50,
+      "y": 19,
+      "color": "orange",
+      "id": "k1"
+     },
+     {
+      "x": 42,
+      "y": 35,
+      "color": "orange",
+      "id": "k2"
+     },
+     {
+      "x": 58,
+      "y": 35,
+      "color": "orange",
+      "id": "k3"
+     }
+    ]
+   }
+  }
+ ]
+}

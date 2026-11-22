@@ -1,0 +1,669 @@
+{
+ "title": "Locken und Seite wechseln",
+ "code": "UE-241",
+ "kind": "Spielform",
+ "focuses": [
+  "Zusammenspiel",
+  "Passspiel",
+  "Umschalten"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 9,
+ "players_max": 9,
+ "field_size": "23 x 18 m",
+ "description": "Vier gegen drei mit zwei Springern oben und unten an der Linie. Team Neon greift die zwei oberen Minitore an den Seiten an und soll das verteidigende Team auf eine Seite locken. Dann wird schnell auf die freie Seite verlagert und dort getroffen, mit oder ohne Springer. Erobert Team Rot den Ball, kontert es auf die zwei unteren Minitore.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 23 mal 18 Metern. Oben und unten stehen je zwei Minitore an den Seiten.",
+  "Verteilen: Team Neon mit vier Spielern, zwei außen und zwei in der Mitte, gegen drei von Team Rot. Ein Springer steht oben, einer unten an der Linie. Der Trainer steht an der Seite mit Bällen.",
+  "Ablauf: Team Neon lässt den Ball geduldig laufen, lockt Team Rot auf eine Seite und verlagert dann schnell auf die andere. Die Springer spielen mit dem Team am Ball.",
+  "Wertung und Wechsel: Ein Treffer in ein oberes Minitor gibt einen Punkt für Team Neon. Erobert Team Rot den Ball, kontert es auf die unteren Minitore. Nach ein paar Angriffen wechseln die Springer."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Den Gegner auf eine Seite locken, dann schnell verlagern",
+  "Geduldig bleiben und auf den richtigen Moment warten",
+  "Lücken zwischen den Verteidigern sehen und über den Springer spielen",
+  "Den Ball beim ersten Kontakt schon in Richtung der freien Seite mitnehmen"
+ ],
+ "materials": [
+  "4 Minitore",
+  "4 Hütchen",
+  "Viele Bälle",
+  "Leibchen in drei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Locken und Seite wechseln. Team Neon zieht die Verteidiger auf eine Seite und trifft dann auf der anderen.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 9,
+    "w": 50,
+    "h": 40
+   }
+  ],
+  "goals": [
+   {
+    "x": 34,
+    "y": 9,
+    "side": "top"
+   },
+   {
+    "x": 66,
+    "y": 9,
+    "side": "top"
+   },
+   {
+    "x": 34,
+    "y": 49,
+    "side": "bottom"
+   },
+   {
+    "x": 66,
+    "y": 49,
+    "side": "bottom"
+   }
+  ],
+  "cones": [],
+  "players": [
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 28,
+    "y": 31,
+    "label": "2"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 45,
+    "y": 37,
+    "label": "8"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 62,
+    "y": 36,
+    "label": "6"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 70.5,
+    "y": 28,
+    "label": "5"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 36.5,
+    "y": 24,
+    "label": "3"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 45,
+    "y": 21,
+    "label": "10"
+   },
+   {
+    "id": "r4",
+    "team": "b",
+    "x": 53.5,
+    "y": 24,
+    "label": "4"
+   },
+   {
+    "id": "f1",
+    "team": "t",
+    "x": 50,
+    "y": 5,
+    "label": "F"
+   },
+   {
+    "id": "f2",
+    "team": "t",
+    "x": 50,
+    "y": 53,
+    "label": "F"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 17,
+    "y": 44,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 28.6,
+    "y": 31.6
+   },
+   {
+    "id": "s1",
+    "x": 20.6,
+    "y": 47.5
+   },
+   {
+    "id": "s2",
+    "x": 17,
+    "y": 47.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Den Gegner locken",
+    "say": "Spieler zwei hat links den Ball, und Team Rot schiebt zu ihm hin. Spieler zwei lässt sich Zeit und spielt dann zu Spieler acht.",
+    "moves": [
+     {
+      "who": "r3",
+      "to": [
+       34,
+       25
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       45.6,
+       37.6
+      ],
+      "type": "pass",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "Seite wechseln",
+    "say": "Spieler acht schaut nach rechts und sieht: Dort ist Platz. Er spielt direkt weiter zu Spieler sechs, und der sofort zu Spieler fünf. Team Rot kommt zu spät.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       63,
+       30
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b1",
+      "to": [
+       62.6,
+       36.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       71.1,
+       28.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r4",
+      "to": [
+       60,
+       22
+      ],
+      "type": "lauf",
+      "delay": 0.8
+     },
+     {
+      "who": "r10",
+      "to": [
+       52,
+       19
+      ],
+      "type": "lauf",
+      "delay": 0.8
+     }
+    ]
+   },
+   {
+    "label": "Rechts treffen: Punkt",
+    "say": "Spieler fünf dribbelt nach oben und schießt ins rechte obere Minitor. Das gibt einen Punkt für Team Neon. Dann bringt der Trainer einen neuen Ball, und Team Neon greift wieder an.",
+    "moves": [
+     {
+      "who": "n5",
+      "to": [
+       70,
+       17
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       66.5,
+       9.4
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "23 m"
+   },
+   {
+    "x1": 83,
+    "y1": 9,
+    "x2": 83,
+    "y2": 49,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Die Lücke sehen und über den Springer spielen.",
+   "title": "Über den Springer",
+   "text": "Ahnen die Verteidiger den Seitenwechsel und ziehen auseinander, entsteht zwischen ihnen eine Lücke. Wer sich umschaut, sieht sie und spielt durch die Lücke zum Springer. Der legt weiter auf die Seite, und der Außenspieler trifft.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 28,
+      "y": 31,
+      "label": "2"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 45,
+      "y": 37,
+      "label": "8"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 55,
+      "y": 36,
+      "label": "6"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 72,
+      "y": 30,
+      "label": "5"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 36.5,
+      "y": 24,
+      "label": "3"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 45,
+      "y": 21,
+      "label": "10"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 63.5,
+      "y": 23,
+      "label": "4"
+     },
+     {
+      "id": "f1",
+      "team": "t",
+      "x": 50,
+      "y": 5,
+      "label": "F"
+     },
+     {
+      "id": "f2",
+      "team": "t",
+      "x": 50,
+      "y": 53,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 17,
+      "y": 44,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 45.6,
+      "y": 37.6
+     },
+     {
+      "id": "s1",
+      "x": 20.6,
+      "y": 47.5
+     },
+     {
+      "id": "s2",
+      "x": 17,
+      "y": 47.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Lücke sehen",
+      "say": "Spieler acht spielt zu Spieler sechs. Spieler sechs hebt den Kopf und sieht eine Lücke zwischen Spieler zehn und Spieler vier.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         55.6,
+         36.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n6",
+        "to": [
+         53,
+         18
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Über den Springer",
+      "say": "Er spielt durch die Lücke zum oberen Springer. Spieler fünf startet nach oben, und der Springer legt ihm den Ball in den Lauf.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         5.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n5",
+        "to": [
+         71,
+         16
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         71.6,
+         16.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Abschluss: Punkt",
+      "say": "Spieler fünf schießt direkt ins rechte obere Minitor, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         66.5,
+         9.4
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Punkte in den Außenzonen.",
+   "title": "Punkte in den Außenzonen",
+   "text": "Links und rechts gibt es jetzt eine Außenzone. Jede Ballannahme von Team Neon in einer Außenzone gibt einen Punkt. Aber die Punkte zählen erst, wenn der Angriff mit einem Treffer endet. So lohnt es sich, die Breite zu nutzen und mutig zu verlagern.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 28,
+      "y": 31,
+      "label": "2"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 45,
+      "y": 37,
+      "label": "8"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 62,
+      "y": 36,
+      "label": "6"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 70.5,
+      "y": 28,
+      "label": "5"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 36.5,
+      "y": 24,
+      "label": "3"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 45,
+      "y": 21,
+      "label": "10"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 53.5,
+      "y": 24,
+      "label": "4"
+     },
+     {
+      "id": "f1",
+      "team": "t",
+      "x": 50,
+      "y": 5,
+      "label": "F"
+     },
+     {
+      "id": "f2",
+      "team": "t",
+      "x": 50,
+      "y": 53,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 17,
+      "y": 44,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 45.6,
+      "y": 37.6
+     },
+     {
+      "id": "s1",
+      "x": 20.6,
+      "y": 47.5
+     },
+     {
+      "id": "s2",
+      "x": 17,
+      "y": 47.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Links: ein Punkt",
+      "say": "Spieler acht spielt nach links zu Spieler zwei in die Außenzone, und das gibt einen Punkt für Team Neon. Team Rot schiebt nach links, und Spieler zwei spielt zurück.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         28.6,
+         31.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r3",
+        "to": [
+         33.5,
+         25
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         45.6,
+         37.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Rechts: zwei Punkte",
+      "say": "Spieler acht verlagert über Spieler sechs nach rechts zu Spieler fünf in die andere Außenzone, und das gibt noch einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         62.6,
+         36.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         71.1,
+         28.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "r4",
+        "to": [
+         60,
+         22
+        ],
+        "type": "lauf",
+        "delay": 0.8
+       }
+      ]
+     },
+     {
+      "label": "Treffer: Punkte sicher",
+      "say": "Spieler fünf dribbelt nach oben und trifft ins rechte obere Minitor. Der Treffer gibt einen Punkt für Team Neon, und jetzt zählen auch die zwei Zonenpunkte. Ohne Treffer wären sie weg.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         70,
+         17
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         66.5,
+         9.4
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "lines": [
+     {
+      "type": "rect",
+      "x": 25,
+      "y": 9,
+      "w": 50,
+      "h": 40
+     },
+     {
+      "type": "zone",
+      "x": 25,
+      "y": 9,
+      "w": 8,
+      "h": 40
+     },
+     {
+      "type": "zone",
+      "x": 67,
+      "y": 9,
+      "w": 8,
+      "h": 40
+     }
+    ]
+   }
+  }
+ ]
+}

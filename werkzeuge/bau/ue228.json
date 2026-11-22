@@ -1,0 +1,765 @@
+{
+ "title": "Steilpass und direkt abschließen",
+ "code": "UE-228",
+ "kind": "Spielform",
+ "focuses": [
+  "Passspiel",
+  "Bewegung",
+  "Torschuss"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 12,
+ "players_max": 12,
+ "field_size": "23 x 37 m",
+ "description": "Fünf gegen fünf in der Mitte, an beiden Enden ein Tor mit Torwart und davor eine Endzone. Ein Treffer zählt nur, wenn ein Angreifer mit einem Steilpass in die Endzone geschickt wird und mit dem ersten Kontakt schießt. Sobald der Steilpass gespielt ist, darf kein anderer Spieler mehr in die Endzone. Die Verteidiger stehen eng in der Mitte, darum braucht es schnelle Doppelpässe und gute Läufe.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 23 mal 37 Metern mit einem Jugendtor an jedem Ende. Vor jedem Tor eine Endzone von 9 Metern, gestrichelt abgeteilt.",
+  "Verteilen: Team Neon und Team Rot mit je fünf Feldspielern in der Mitte, in jedem Tor ein Torwart. Team Neon greift das obere Tor an, Team Rot das untere. Der Trainer steht an der Seite mit Bällen.",
+  "Ablauf: Das Team am Ball kombiniert in der Mitte und spielt steil in die Endzone. Ein Angreifer läuft hinein und schießt direkt. Danach darf kein anderer Spieler mehr in die Endzone.",
+  "Wertung und Wechsel: Jeder direkte Treffer gibt einen Punkt. Erobert das andere Team den Ball, greift es sofort selbst an. Nach einem Treffer oder Aus bringt der Trainer schnell einen neuen Ball."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Mit schnellen Doppelpässen um die Verteidiger herumspielen",
+  "Den Steilpass so spielen, dass ein direkter Schuss möglich ist",
+  "Laut und mit Zeichen sagen, wann der Lauf kommt",
+  "Ist keine Lücke da, den Ball laufen lassen und neu aufbauen"
+ ],
+ "materials": [
+  "2 Jugendtore",
+  "8 Hütchen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Steilpass und direkt abschließen. Fünf gegen fünf, und ein Punkt gelingt nur nach einem Steilpass in die Endzone mit dem ersten Kontakt.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 34.4,
+    "y": 5,
+    "w": 31.2,
+    "h": 50
+   },
+   {
+    "type": "line",
+    "x1": 34.4,
+    "y1": 17.5,
+    "x2": 65.6,
+    "y2": 17.5,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 34.4,
+    "y1": 42.5,
+    "x2": 65.6,
+    "y2": 42.5,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "jugend"
+   },
+   {
+    "x": 50,
+    "y": 55,
+    "side": "bottom",
+    "size": "jugend"
+   }
+  ],
+  "cones": [],
+  "players": [
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 33.5,
+    "y": 45.5,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 41.75,
+    "y": 37.5,
+    "label": "3"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 50,
+    "y": 38,
+    "label": "5"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 58.25,
+    "y": 36.5,
+    "label": "4"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 66.5,
+    "y": 42,
+    "label": "6"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 33.5,
+    "y": 29.5,
+    "label": "7"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 41.75,
+    "y": 21.5,
+    "label": "8"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 50,
+    "y": 22.5,
+    "label": "9"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 58.25,
+    "y": 21,
+    "label": "10"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 66.5,
+    "y": 26.5,
+    "label": "11"
+   },
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 50,
+    "y": 7,
+    "label": "TW"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 50,
+    "y": 53.5,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 76,
+    "y": 48,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 34.1,
+    "y": 46.1
+   },
+   {
+    "id": "s1",
+    "x": 79.6,
+    "y": 51.5
+   },
+   {
+    "id": "s2",
+    "x": 76,
+    "y": 51.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pass",
+    "say": "Team Neon hat den Ball. Spieler zwei spielt nach vorn zu Spieler drei.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       42.35,
+       38.1
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Kombinieren",
+    "say": "Spieler drei spielt direkt zu Spieler fünf und startet sofort im Bogen um Spieler acht herum.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       38.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n3",
+      "to": [
+       37.5,
+       28
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n3",
+      "to": [
+       38.5,
+       18.5
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Steilpass in die Endzone",
+    "say": "Spieler fünf spielt den Ball durch die Lücke zwischen Spieler acht und Spieler neun in die Endzone. Spieler drei läuft genau im richtigen Moment hinein. Jetzt darf kein anderer Spieler mehr in die Endzone.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       44,
+       13.4
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n3",
+      "to": [
+       43.4,
+       12.8
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Direkt abschließen: Punkt",
+    "say": "Spieler drei schießt direkt, ohne den Ball anzunehmen, flach ins Eck. Das gibt einen Punkt für Team Neon. Danach bringt der Trainer sofort einen neuen Ball, und jetzt greift Team Rot das untere Tor an.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       44.5,
+       5.3
+      ],
+      "type": "pass"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 34.4,
+    "y1": 58.6,
+    "x2": 65.6,
+    "y2": 58.6,
+    "text": "23 m"
+   },
+   {
+    "x1": 86,
+    "y1": 5,
+    "x2": 86,
+    "y2": 55,
+    "text": "37 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Mit schnellen Doppelpässen um die Verteidiger herum.",
+   "title": "Schnelle Doppelpässe",
+   "text": "Team Rot steht eng in der Mitte und macht die Wege zum Tor zu. Darum spielen die Angreifer schnelle Doppelpässe mit einem Kontakt und starten sofort in die Lücke. So kommen sie trotzdem hinter die Abwehr.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 33.5,
+      "y": 45.5,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 41.75,
+      "y": 37.5,
+      "label": "3"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 50,
+      "y": 38,
+      "label": "5"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 58.25,
+      "y": 36.5,
+      "label": "4"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 66.5,
+      "y": 42,
+      "label": "6"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 33.5,
+      "y": 29.5,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 41.75,
+      "y": 21.5,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 50,
+      "y": 22.5,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 58.25,
+      "y": 21,
+      "label": "10"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 66.5,
+      "y": 26.5,
+      "label": "11"
+     },
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 50,
+      "y": 7,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 50,
+      "y": 53.5,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 76,
+      "y": 48,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 38.6
+     },
+     {
+      "id": "s1",
+      "x": 79.6,
+      "y": 51.5
+     },
+     {
+      "id": "s2",
+      "x": 76,
+      "y": 51.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Doppelpass",
+      "say": "Spieler neun läuft Spieler fünf an. Spieler fünf spielt direkt zu Spieler vier, läuft sofort weiter und bekommt den Ball direkt zurück.",
+      "moves": [
+       {
+        "who": "r9",
+        "to": [
+         49,
+         31
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         58.85,
+         37.1
+        ],
+        "type": "pass",
+        "delay": 0.2
+       },
+       {
+        "who": "n5",
+        "to": [
+         54.5,
+         29
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         55.1,
+         29.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Durch die Lücke: Punkt",
+      "say": "Gleichzeitig startet Spieler drei in die Endzone. Spieler fünf spielt direkt steil in seinen Lauf, und Spieler drei schießt mit dem ersten Kontakt. Das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n3",
+        "to": [
+         37,
+         27
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n3",
+        "to": [
+         40,
+         13
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         40.6,
+         13.6
+        ],
+        "type": "pass",
+        "delay": 0.6
+       },
+       {
+        "who": "b1",
+        "to": [
+         45,
+         5.3
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Ein Verteidiger darf zurück, und ein Angreifer darf helfen.",
+   "title": "Einer zurück, einer hilft",
+   "text": "Nach dem Steilpass darf jetzt ein Verteidiger mit in die Endzone und ein zusätzlicher Angreifer darf nachrücken. Der Verteidiger drängt den Schützen nach außen. Der zweite Angreifer hat das im Blick, läuft mit und bekommt den Ball quer zum direkten Abschluss.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 33.5,
+      "y": 45.5,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 41.75,
+      "y": 37.5,
+      "label": "3"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 50,
+      "y": 38,
+      "label": "5"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 58.25,
+      "y": 36.5,
+      "label": "4"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 66.5,
+      "y": 42,
+      "label": "6"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 33.5,
+      "y": 29.5,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 41.75,
+      "y": 21.5,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 50,
+      "y": 22.5,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 58.25,
+      "y": 21,
+      "label": "10"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 66.5,
+      "y": 26.5,
+      "label": "11"
+     },
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 50,
+      "y": 7,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 50,
+      "y": 53.5,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 76,
+      "y": 48,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 42.35,
+      "y": 38.1
+     },
+     {
+      "id": "s1",
+      "x": 79.6,
+      "y": 51.5
+     },
+     {
+      "id": "s2",
+      "x": 76,
+      "y": 51.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Lauf in die Tiefe",
+      "say": "Spieler drei spielt zu Spieler fünf und startet im Bogen Richtung Endzone.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         38.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n3",
+        "to": [
+         37.5,
+         28
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n3",
+        "to": [
+         38.5,
+         18.5
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Einer darf zurück",
+      "say": "Spieler fünf spielt steil in die Endzone, und Spieler drei läuft hinein. Jetzt darf ein Verteidiger mit zurück: Spieler acht läuft zurück in die Endzone.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         44,
+         13.4
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n3",
+        "to": [
+         43.4,
+         12.8
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "r8",
+        "to": [
+         46,
+         9.5
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Nach außen gedrängt",
+      "say": "Spieler acht drängt Spieler drei nach außen. Spieler fünf sieht das und startet als zusätzlicher Angreifer in die Endzone.",
+      "moves": [
+       {
+        "who": "n3",
+        "to": [
+         38.5,
+         13
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "r8",
+        "to": [
+         42.5,
+         9.5
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n5",
+        "to": [
+         42.2,
+         22.6
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "n5",
+        "to": [
+         54.5,
+         25
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n5",
+        "to": [
+         52,
+         13.5
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Querpass: Punkt",
+      "say": "Spieler drei spielt quer zu Spieler fünf, und Spieler fünf schießt direkt ins Eck. Das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         52.6,
+         14.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         55.5,
+         5.3
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

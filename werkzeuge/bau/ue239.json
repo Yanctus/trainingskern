@@ -1,0 +1,667 @@
+{
+ "title": "Passdreiecke im V",
+ "code": "UE-239",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel",
+  "Dribbling"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 7,
+ "players_max": 9,
+ "field_size": "18 x 23 m",
+ "description": "Fünf Hütchen bilden ein V, an jedem steht ein Spieler, am Start unten warten drei Spieler mit Bällen. Der Startspieler spielt einen Prallpass mit dem Spieler in der Mitte und dann einen scharfen Pass quer zur oberen Station auf der anderen Seite. Dort folgt ein Doppelpass mit dem Spieler aus der Mitte, der dafür vom Hütchen wegkommt, und dann wird zurück zum Start gedribbelt. Jeder folgt seinem Pass, und der nächste Ball startet schon mit dem Querpass, abwechselnd über rechts und über links.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 23 Metern. Fünf Hütchen als V: eins unten in der Mitte als Start, zwei in der Mitte links und rechts, zwei oben links und rechts.",
+  "Verteilen: An jedem Hütchen ein Spieler, am Start drei Spieler mit Bällen. Der Trainer steht an der Seite mit weiteren Bällen.",
+  "Ablauf: Prallpass mit dem Spieler in der Mitte, scharf quer zur oberen Station auf der anderen Seite, Doppelpass mit dem Spieler aus der Mitte, dann zurück zum Start dribbeln.",
+  "Wechsel: Jeder folgt seinem Pass zur nächsten Station. Sobald der Querpass gespielt ist, startet der nächste Ball, abwechselnd über rechts und über links."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Pässe mit dem richtigen Tempo und genau in den Fuß, damit der Ablauf flüssig bleibt",
+  "Den Querpass scharf und flach spielen, wie im Spiel",
+  "Möglichst direkt spielen, mit beiden Füßen",
+  "Beim Dribbling zurück den Ball eng am Fuß halten"
+ ],
+ "materials": [
+  "5 Hütchen",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Passdreiecke im V. Mit Prallpass, scharfem Querpass und Doppelpass kombinieren sich die Spieler durch das Mittelfeld.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 30,
+    "y": 5,
+    "w": 40,
+    "h": 50
+   }
+  ],
+  "cones": [
+   {
+    "x": 50,
+    "y": 53.5,
+    "color": "orange"
+   },
+   {
+    "x": 33.5,
+    "y": 34,
+    "color": "orange"
+   },
+   {
+    "x": 66.5,
+    "y": 34,
+    "color": "orange"
+   },
+   {
+    "x": 32.5,
+    "y": 12,
+    "color": "orange"
+   },
+   {
+    "x": 67.5,
+    "y": 12,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 50,
+    "y": 49,
+    "label": "5"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 41.5,
+    "y": 50,
+    "label": "4"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 58.5,
+    "y": 50,
+    "label": "6"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 37,
+    "y": 34,
+    "label": "10"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 63,
+    "y": 34,
+    "label": "8"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 36,
+    "y": 12,
+    "label": "11"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 64,
+    "y": 12,
+    "label": "9"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 21,
+    "y": 30,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 50.6,
+    "y": 49.6
+   },
+   {
+    "id": "b2",
+    "x": 42.1,
+    "y": 50.6
+   },
+   {
+    "id": "b3",
+    "x": 59.1,
+    "y": 50.6
+   },
+   {
+    "id": "s1",
+    "x": 24.6,
+    "y": 33.5
+   },
+   {
+    "id": "s2",
+    "x": 21,
+    "y": 33.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Prallpass rechts",
+    "say": "Spieler fünf startet. Er spielt zu Spieler acht in der Mitte rechts, geht einen Schritt nach vorn und bekommt den Ball direkt zurück.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       63.6,
+       34.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n5",
+      "to": [
+       50,
+       44
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       44.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Scharf quer",
+    "say": "Jetzt spielt Spieler fünf einen scharfen, flachen Pass quer nach oben links zu Spieler elf. Spieler acht löst sich vom Hütchen in die Mitte, und Spieler fünf folgt seinem ersten Pass auf den Platz von Spieler acht.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       36.6,
+       12.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n8",
+      "to": [
+       52,
+       24
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n5",
+      "to": [
+       63,
+       34
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     }
+    ]
+   },
+   {
+    "label": "Doppelpass",
+    "say": "Spieler elf spielt zu Spieler acht und startet sofort schräg nach innen. Spieler acht spielt den Ball direkt zurück, genau in den Lauf von Spieler elf.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       52.6,
+       24.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n11",
+      "to": [
+       40,
+       24
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "b1",
+      "to": [
+       40.6,
+       24.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zurück: geschafft",
+    "say": "Spieler elf dribbelt mit dem Ball eng am Fuß zurück zum Start, und Spieler acht folgt seinem Pass auf den Platz oben links. Die Passfolge ist geschafft. Spieler vier hat den nächsten Ball schon gestartet, diesmal über links mit Spieler zehn.",
+    "moves": [
+     {
+      "who": "n11",
+      "to": [
+       46,
+       45
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n8",
+      "to": [
+       36,
+       12
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "b2",
+      "to": [
+       37.6,
+       34.6
+      ],
+      "type": "pass",
+      "delay": 0.4
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 30,
+    "y1": 58.6,
+    "x2": 70,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 78,
+    "y1": 5,
+    "x2": 78,
+    "y2": 55,
+    "text": "23 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Den Querpass scharf spielen.",
+   "title": "Scharf quer spielen",
+   "text": "Der Pass quer ist der längste Pass im Ablauf. Er muss fest und flach kommen, so wie im Spiel, und trotzdem genau in den Fuß. Ein weicher Pass ist zu langsam, und der Ablauf stockt.",
+   "board": {
+    "players": [
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 50,
+      "y": 44,
+      "label": "5"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 41.5,
+      "y": 50,
+      "label": "4"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 58.5,
+      "y": 50,
+      "label": "6"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 37,
+      "y": 34,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 63,
+      "y": 34,
+      "label": "8"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 36,
+      "y": 12,
+      "label": "11"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 64,
+      "y": 12,
+      "label": "9"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 21,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 44.6
+     },
+     {
+      "id": "b2",
+      "x": 42.1,
+      "y": 50.6
+     },
+     {
+      "id": "b3",
+      "x": 59.1,
+      "y": 50.6
+     },
+     {
+      "id": "s1",
+      "x": 24.6,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 21,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Fest und flach",
+      "say": "Spieler fünf hat den Prallpass zurückbekommen. Er spielt den Ball fest und flach quer, genau in den Fuß von Spieler elf. Spieler acht löst sich schon in die Mitte.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         36.6,
+         12.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n8",
+        "to": [
+         52,
+         24
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Direkt weiter",
+      "say": "Weil der Ball genau kommt, kann Spieler elf direkt zu Spieler acht weiterspielen. Der legt direkt zurück in den Lauf, und es bleibt flüssig.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         52.6,
+         24.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n11",
+        "to": [
+         40,
+         24
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "b1",
+        "to": [
+         40.6,
+         24.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Direkt spielen, mit beiden Füßen.",
+   "title": "Direkt mit beiden Füßen",
+   "text": "Jetzt läuft die Runde über links. Die Spieler spielen möglichst mit einem Kontakt und benutzen beide Füße: den Fuß, der näher zum Ziel ist. So bleibt das Tempo hoch, und jeder Pass kommt mit dem richtigen Tempo.",
+   "board": {
+    "players": [
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 50,
+      "y": 49,
+      "label": "4"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 41.5,
+      "y": 50,
+      "label": "11"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 58.5,
+      "y": 50,
+      "label": "6"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 37,
+      "y": 34,
+      "label": "10"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 63,
+      "y": 34,
+      "label": "5"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 36,
+      "y": 12,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 64,
+      "y": 12,
+      "label": "9"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 21,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 49.6
+     },
+     {
+      "id": "b2",
+      "x": 59.1,
+      "y": 50.6
+     },
+     {
+      "id": "s1",
+      "x": 24.6,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 21,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Mit links",
+      "say": "Spieler vier spielt mit links zu Spieler zehn, geht einen Schritt nach vorn, und Spieler zehn spielt mit einem Kontakt zurück.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         37.6,
+         34.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n4",
+        "to": [
+         49,
+         44
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         49.6,
+         44.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Mit rechts quer",
+      "say": "Spieler vier spielt direkt mit rechts quer nach oben rechts zu Spieler neun. Spieler zehn löst sich in die Mitte, und Spieler vier folgt auf den Platz von Spieler zehn.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         64.6,
+         12.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n10",
+        "to": [
+         48,
+         24
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n4",
+        "to": [
+         37,
+         34
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       }
+      ]
+     },
+     {
+      "label": "Doppelpass direkt",
+      "say": "Spieler neun spielt direkt zu Spieler zehn und startet nach innen. Spieler zehn legt direkt zurück, und Spieler neun dribbelt zurück zum Start.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         48.6,
+         24.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n9",
+        "to": [
+         60,
+         24
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "b1",
+        "to": [
+         60.6,
+         24.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n9",
+        "to": [
+         55,
+         44
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

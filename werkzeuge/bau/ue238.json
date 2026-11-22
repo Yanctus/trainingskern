@@ -1,0 +1,777 @@
+{
+ "title": "Vorne erobern, zu dritt kontern",
+ "code": "UE-238",
+ "kind": "Spielform",
+ "focuses": [
+  "Verteidigen",
+  "Umschalten",
+  "Zusammenspiel"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 10,
+ "players_max": 10,
+ "field_size": "46 x 27 m",
+ "description": "Drei Stürmer von Team Neon pressen gemeinsam gegen vier Spieler von Team Rot, die in der linken Hälfte den Ball halten. Erobern die drei den Ball, kontern sie sofort in die rechte Hälfte, drei gegen zwei Innenverteidiger und den Torwart. Erobert Team Rot den Ball, kontert es zu viert auf die zwei Minitore. So üben die Stürmer, als Einheit Druck zu machen und nach dem Ballgewinn schnell zu sein.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 46 mal 27 Metern in zwei Hälften (gestrichelt). Rechts ein Jugendtor mit Strafraum, links zwei Minitore.",
+  "Verteilen: Team Rot hat vier Spieler in der linken Hälfte, zwei Innenverteidiger und den Torwart rechts. Team Neon hat drei Stürmer in der linken Hälfte. Der Trainer steht links mit Bällen.",
+  "Ablauf: Team Rot hält den Ball zu viert, die drei von Team Neon pressen gemeinsam. Nach dem Ballgewinn kontert Team Neon in die rechte Hälfte, drei gegen zwei.",
+  "Wertung und Wechsel: Ein Treffer ins große Tor gibt einen Punkt für Team Neon, ein Treffer ins Minitor einen Punkt für Team Rot. Nach jedem Angriff startet Team Rot wieder links mit Ball."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Zu dritt als Einheit Druck machen",
+  "Erkennen, wann der Moment zum Pressen da ist, zum Beispiel bei einem Pass zur Seite",
+  "Zusammen verschieben, eng bleiben und Passwege zumachen",
+  "Im Konter die Überzahl nutzen und den freien Spieler finden"
+ ],
+ "materials": [
+  "1 Jugendtor",
+  "2 Minitore",
+  "4 Hütchen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Vorne erobern, zu dritt kontern. Drei Stürmer pressen gemeinsam gegen vier und kontern nach dem Ballgewinn sofort nach vorn.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 10,
+    "y": 6,
+    "w": 80,
+    "h": 48
+   },
+   {
+    "type": "line",
+    "x1": 50,
+    "y1": 6,
+    "x2": 50,
+    "y2": 54,
+    "dashed": true
+   },
+   {
+    "type": "rect",
+    "x": 75,
+    "y": 15,
+    "w": 15,
+    "h": 30
+   }
+  ],
+  "goals": [
+   {
+    "x": 90,
+    "y": 30,
+    "side": "right",
+    "size": "jugend"
+   },
+   {
+    "x": 10,
+    "y": 18,
+    "side": "left"
+   },
+   {
+    "x": 10,
+    "y": 42,
+    "side": "left"
+   }
+  ],
+  "cones": [
+   {
+    "x": 10,
+    "y": 6,
+    "color": "orange"
+   },
+   {
+    "x": 90,
+    "y": 6,
+    "color": "orange"
+   },
+   {
+    "x": 10,
+    "y": 54,
+    "color": "orange"
+   },
+   {
+    "x": 90,
+    "y": 54,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 34,
+    "y": 12,
+    "label": "11"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 31,
+    "y": 30,
+    "label": "9"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 40,
+    "y": 40,
+    "label": "7"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 44,
+    "y": 12,
+    "label": "2"
+   },
+   {
+    "id": "r4",
+    "team": "b",
+    "x": 22,
+    "y": 20,
+    "label": "4"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 20,
+    "y": 40,
+    "label": "8"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 49,
+    "y": 50,
+    "label": "3"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 66,
+    "y": 22,
+    "label": "5"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 67,
+    "y": 38,
+    "label": "6"
+   },
+   {
+    "id": "r1",
+    "team": "b",
+    "x": 87,
+    "y": 30,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 4,
+    "y": 30,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 49.6,
+    "y": 50.6
+   },
+   {
+    "id": "s1",
+    "x": 5.6,
+    "y": 33.5
+   },
+   {
+    "id": "s2",
+    "x": 2,
+    "y": 33.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Vier gegen drei",
+    "say": "Team Rot hält den Ball zu viert. Spieler drei passt zu Spieler acht. Spieler sieben, neun und elf verschieben gleichzeitig mit und machen es eng.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       20.6,
+       40.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n7",
+      "to": [
+       30,
+       45
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n9",
+      "to": [
+       28,
+       29
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n11",
+      "to": [
+       30,
+       16
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Abgefangen",
+    "say": "Spieler acht will zu Spieler vier passen. Spieler neun ahnt den Pass, läuft in den Passweg und fängt den Ball ab.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       21,
+       31
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       21.6,
+       31.6
+      ],
+      "type": "pass",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Konter drei gegen zwei",
+    "say": "Sofort geht es nach vorn. Spieler neun dribbelt in die rechte Hälfte, Spieler elf und Spieler sieben laufen gleichzeitig außen mit. Jetzt sind es drei gegen zwei.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       56,
+       30
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n11",
+      "to": [
+       50,
+       19
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n7",
+      "to": [
+       68,
+       47
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n11",
+      "to": [
+       68,
+       12
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Abschluss: Punkt",
+    "say": "Spieler fünf geht auf Spieler neun, Spieler sechs bleibt bei Spieler sieben. Spieler neun schaut und sieht Spieler elf frei. Er spielt zu ihm, und Spieler elf trifft ins große Tor. Das gibt einen Punkt für Team Neon. Danach startet Team Rot wieder links mit Ball.",
+    "moves": [
+     {
+      "who": "r5",
+      "to": [
+       60,
+       31
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r6",
+      "to": [
+       68,
+       41
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n9",
+      "to": [
+       66,
+       14
+      ],
+      "type": "blick",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       68.6,
+       12.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       89.7,
+       26
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 10,
+    "y1": 58.6,
+    "x2": 90,
+    "y2": 58.6,
+    "text": "46 m"
+   },
+   {
+    "x1": 96,
+    "y1": 6,
+    "x2": 96,
+    "y2": 54,
+    "text": "27 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Zusammen verschieben und Passwege zumachen.",
+   "title": "Zusammen verschieben",
+   "text": "Die drei Stürmer bewegen sich wie eine Einheit. Geht der Ball zur Seite, presst der Nächste, und die anderen rücken ein und machen die Passwege zu. So muss Team Rot einen schwierigen Pass spielen, und Team Neon fängt ihn ab.",
+   "board": {
+    "players": [
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 34,
+      "y": 12,
+      "label": "11"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 31,
+      "y": 30,
+      "label": "9"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 40,
+      "y": 40,
+      "label": "7"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 44,
+      "y": 12,
+      "label": "2"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 22,
+      "y": 20,
+      "label": "4"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 20,
+      "y": 40,
+      "label": "8"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 49,
+      "y": 50,
+      "label": "3"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 66,
+      "y": 22,
+      "label": "5"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 67,
+      "y": 38,
+      "label": "6"
+     },
+     {
+      "id": "r1",
+      "team": "b",
+      "x": 87,
+      "y": 30,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 4,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 22.6,
+      "y": 20.6
+     },
+     {
+      "id": "s1",
+      "x": 5.6,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 2,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Pass zur Seite",
+      "say": "Spieler vier passt zur Seite zu Spieler zwei. Jetzt pressen alle drei gleichzeitig: Spieler elf läuft Spieler zwei an, Spieler neun macht den Rückpass zu, und Spieler sieben rückt ein.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         44.6,
+         12.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n11",
+        "to": [
+         39,
+         17
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n9",
+        "to": [
+         33,
+         22
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n7",
+        "to": [
+         42,
+         33
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Passweg zu",
+      "say": "Spieler zwei hat keinen kurzen Pass mehr und will lang zu Spieler drei spielen. Spieler sieben schaut auf den Passweg und läuft hinein.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         48,
+         47
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "n7",
+        "to": [
+         47,
+         35
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         47.6,
+         35.6
+        ],
+        "type": "pass",
+        "delay": 0.4
+       }
+      ]
+     },
+     {
+      "label": "Abgefangen",
+      "say": "Spieler sieben fängt den Ball ab und dribbelt sofort nach vorn. Jetzt kontert Team Neon drei gegen zwei.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         60,
+         33
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Team Rot kontert zu viert.",
+   "title": "Rot kontert",
+   "text": "Erobern die Innenverteidiger von Team Rot den Ball, kontern sie mit den Mitspielern auf die zwei Minitore. Ein Treffer gibt einen Punkt für Team Rot. Die drei Stürmer von Team Neon müssen dann sofort zurücksprinten.",
+   "board": {
+    "players": [
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 66,
+      "y": 16,
+      "label": "11"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 56,
+      "y": 30,
+      "label": "9"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 66,
+      "y": 44,
+      "label": "7"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 44,
+      "y": 12,
+      "label": "2"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 22,
+      "y": 20,
+      "label": "4"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 20,
+      "y": 40,
+      "label": "8"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 49,
+      "y": 50,
+      "label": "3"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 75,
+      "y": 22,
+      "label": "5"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 76,
+      "y": 38,
+      "label": "6"
+     },
+     {
+      "id": "r1",
+      "team": "b",
+      "x": 87,
+      "y": 30,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 4,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 66.6,
+      "y": 16.6
+     },
+     {
+      "id": "s1",
+      "x": 5.6,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 2,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Rot erobert",
+      "say": "Team Neon kontert. Spieler elf will zu Spieler neun passen, aber Spieler fünf geht dazwischen und erobert den Ball.",
+      "moves": [
+       {
+        "who": "r5",
+        "to": [
+         62,
+         23
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         62.6,
+         23.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Zu viert kontern",
+      "say": "Spieler fünf spielt sofort zu Spieler zwei. Team Rot kontert jetzt zu viert, und Spieler sieben, neun und elf sprinten gleichzeitig zurück.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         44.6,
+         12.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n9",
+        "to": [
+         38,
+         26
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n11",
+        "to": [
+         50,
+         20
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n7",
+        "to": [
+         48,
+         42
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Minitor: Punkt",
+      "say": "Spieler zwei dribbelt nach vorn und schießt ins obere Minitor. Das gibt einen Punkt für Team Rot. Danach startet Team Rot wieder links mit Ball.",
+      "moves": [
+       {
+        "who": "r2",
+        "to": [
+         28,
+         11
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         10.3,
+         17
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,695 @@
+{
+ "title": "Viererkette zwischen Springern",
+ "code": "UE-242",
+ "kind": "Spielform",
+ "focuses": [
+  "Verteidigen",
+  "Zusammenspiel",
+  "Umschalten"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 10,
+ "players_max": 10,
+ "field_size": "18 x 14 m",
+ "description": "Vier gegen vier in einem kleinen Feld, an beiden Enden steht ein Springer. Das Team am Ball will durch die Viererkette der anderen hindurch zum Springer auf der anderen Seite spielen. Die Kette bleibt eng zusammen: Einer presst, die anderen schieben mit und sichern ab. Wer den Ball erobert, greift sofort in die andere Richtung an.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 14 Metern. Oben und unten an der Linie steht je ein Springer.",
+  "Verteilen: Team Neon verteidigt mit vier Spielern als Kette in der Mitte. Team Rot greift mit vier Spielern an. Der Trainer steht unten rechts mit Bällen.",
+  "Ablauf: Der Springer unten spielt den Ball zu Team Rot. Team Rot will durch die Kette zum Springer oben spielen. Team Neon presst, drängt nach außen und schiebt als Kette mit.",
+  "Wertung und Wechsel: Kommt der Ball zum Springer oben, gibt das einen Punkt für Team Rot. Erobert Team Neon den Ball, gibt das einen Punkt für Team Neon. Danach greift das andere Team in die andere Richtung an."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Eng zusammenbleiben, damit keine Lücke entsteht",
+  "Einer presst, die anderen sichern ab",
+  "Den Gegner nach außen drängen",
+  "Bei schlechter Ballannahme sofort pressen"
+ ],
+ "materials": [
+  "Hütchen für das Feld",
+  "Viele Bälle",
+  "Leibchen in drei Farben",
+  "4 Minitore für die Steigerung"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Viererkette zwischen Springern. Vier gegen vier, und die Kette hält eng zusammen, damit niemand durchspielt.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 10.5,
+    "w": 50,
+    "h": 39
+   }
+  ],
+  "goals": [],
+  "cones": [],
+  "players": [
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 34,
+    "y": 26,
+    "label": "2"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 44,
+    "y": 25,
+    "label": "5"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 56,
+    "y": 25,
+    "label": "4"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 66,
+    "y": 26,
+    "label": "3"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 30,
+    "y": 43,
+    "label": "8"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 40,
+    "y": 42,
+    "label": "10"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 60,
+    "y": 42,
+    "label": "9"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 70,
+    "y": 43,
+    "label": "7"
+   },
+   {
+    "id": "f1",
+    "team": "t",
+    "x": 50,
+    "y": 52.5,
+    "label": "F"
+   },
+   {
+    "id": "f2",
+    "team": "t",
+    "x": 50,
+    "y": 7.5,
+    "label": "F"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 82,
+    "y": 52,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 50.6,
+    "y": 53.1
+   },
+   {
+    "id": "s1",
+    "x": 85.6,
+    "y": 55.5
+   },
+   {
+    "id": "s2",
+    "x": 82,
+    "y": 55.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Ball vom Springer",
+    "say": "Der Springer unten spielt den Ball zu Spieler zehn. Team Rot will durch die Kette zum Springer oben spielen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       40.6,
+       42.6
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Einer presst",
+    "say": "Spieler fünf sieht, dass Spieler zehn den Ball hat. Er rückt raus und presst. Gleichzeitig schieben Spieler zwei, Spieler vier und Spieler drei eng zu ihm und sichern ab.",
+    "moves": [
+     {
+      "who": "n5",
+      "to": [
+       40.5,
+       40
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "n5",
+      "to": [
+       41,
+       34
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       33,
+       25
+      ],
+      "type": "lauf",
+      "delay": 1.0
+     },
+     {
+      "who": "n4",
+      "to": [
+       50.5,
+       24
+      ],
+      "type": "lauf",
+      "delay": 1.0
+     },
+     {
+      "who": "n3",
+      "to": [
+       60,
+       25.5
+      ],
+      "type": "lauf",
+      "delay": 1.0
+     }
+    ]
+   },
+   {
+    "label": "Nach außen",
+    "say": "Spieler zehn findet keine Lücke und passt nach außen zu Spieler acht. Spieler zwei rückt raus und presst. Spieler fünf läuft zurück in die Kette.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       30.6,
+       43.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n2",
+      "to": [
+       31,
+       36
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n5",
+      "to": [
+       42,
+       26
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Abgefangen: Punkt",
+    "say": "Spieler acht will flach durch die Kette spielen. Spieler fünf ahnt den Pass und fängt ihn ab, und das gibt einen Punkt für Team Neon. Jetzt greift Team Neon nach unten an, und Team Rot verteidigt als Kette.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       42.6,
+       26.6
+      ],
+      "type": "pass"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 92,
+    "y1": 10.5,
+    "x2": 92,
+    "y2": 49.5,
+    "text": "14 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: In allen vier Ecken steht ein Minitor.",
+   "title": "Minitore für die Kette",
+   "text": "In den vier Ecken steht je ein Minitor. Erobert die Kette den Ball, kontert sie sofort und schießt in ein Minitor auf der Seite, von der die Angreifer kommen. Ein schlechter Pass oder eine schlechte Ballannahme ist das Zeichen zum Pressen.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 34,
+      "y": 26,
+      "label": "2"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 44,
+      "y": 25,
+      "label": "5"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 56,
+      "y": 25,
+      "label": "4"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 66,
+      "y": 26,
+      "label": "3"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 30,
+      "y": 43,
+      "label": "8"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 40,
+      "y": 42,
+      "label": "10"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 60,
+      "y": 42,
+      "label": "9"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 70,
+      "y": 43,
+      "label": "7"
+     },
+     {
+      "id": "f1",
+      "team": "t",
+      "x": 50,
+      "y": 52.5,
+      "label": "F"
+     },
+     {
+      "id": "f2",
+      "team": "t",
+      "x": 50,
+      "y": 7.5,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 82,
+      "y": 52,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 53.1
+     },
+     {
+      "id": "s1",
+      "x": 85.6,
+      "y": 55.5
+     },
+     {
+      "id": "s2",
+      "x": 82,
+      "y": 55.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Schlecht angenommen",
+      "say": "Der Springer unten passt zu Spieler neun. Spieler neun nimmt den Ball schlecht an, er springt weg. Spieler vier sieht das und presst sofort.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         60.6,
+         42.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         62.6,
+         36.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n4",
+        "to": [
+         61.5,
+         38
+        ],
+        "type": "blick",
+        "after": true
+       },
+       {
+        "who": "n4",
+        "to": [
+         62,
+         36
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n5",
+        "to": [
+         51,
+         25
+        ],
+        "type": "lauf",
+        "delay": 1.6
+       },
+       {
+        "who": "n3",
+        "to": [
+         69,
+         27
+        ],
+        "type": "lauf",
+        "delay": 1.6
+       }
+      ]
+     },
+     {
+      "label": "Konter: Punkt",
+      "say": "Spieler vier hat den Ball. Er dribbelt sofort nach unten und schießt ins rechte Minitor unten, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         65.5,
+         44
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         70,
+         49.2
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "goals": [
+     {
+      "x": 30,
+      "y": 10.5,
+      "side": "top"
+     },
+     {
+      "x": 70,
+      "y": 10.5,
+      "side": "top"
+     },
+     {
+      "x": 30,
+      "y": 49.5,
+      "side": "bottom"
+     },
+     {
+      "x": 70,
+      "y": 49.5,
+      "side": "bottom"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Die Springer spielen im Feld mit.",
+   "title": "Springer im Feld",
+   "text": "Die beiden Springer kommen ins Feld und spielen mit Team Rot, also sechs gegen vier. Team Rot punktet, wenn ein Spieler mit dem Ball über die obere Linie dribbelt. Die Kette muss noch enger stehen, den Ball vor sich halten und verzögern.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 34,
+      "y": 26,
+      "label": "2"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 44,
+      "y": 25,
+      "label": "5"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 56,
+      "y": 25,
+      "label": "4"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 66,
+      "y": 26,
+      "label": "3"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 30,
+      "y": 43,
+      "label": "8"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 40,
+      "y": 42,
+      "label": "10"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 60,
+      "y": 42,
+      "label": "9"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 70,
+      "y": 43,
+      "label": "7"
+     },
+     {
+      "id": "f1",
+      "team": "t",
+      "x": 50,
+      "y": 46,
+      "label": "F"
+     },
+     {
+      "id": "f2",
+      "team": "t",
+      "x": 50,
+      "y": 9.4,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 82,
+      "y": 52,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 30.6,
+      "y": 43.6
+     },
+     {
+      "id": "s1",
+      "x": 85.6,
+      "y": 55.5
+     },
+     {
+      "id": "s2",
+      "x": 82,
+      "y": 55.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Sechs gegen vier",
+      "say": "Spieler acht passt zum Springer in der Mitte. Gleichzeitig schiebt die Kette eng zusammen und bleibt vor dem Ball.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         46.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n2",
+        "to": [
+         38,
+         26
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n3",
+        "to": [
+         62,
+         26
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Verzögern",
+      "say": "Der Springer dribbelt an. Spieler fünf presst ihn und verzögert, Spieler vier sichert schräg dahinter ab.",
+      "moves": [
+       {
+        "who": "f1",
+        "to": [
+         50,
+         38
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n5",
+        "to": [
+         48,
+         31.5
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n4",
+        "to": [
+         55,
+         27
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Abgefangen",
+      "say": "Der Springer will zu Spieler neun passen. Spieler vier ahnt den Pass und fängt ihn ab. Jetzt hat Team Neon den Ball.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         57,
+         34.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         57.6,
+         35.1
+        ],
+        "type": "pass",
+        "delay": 0.3
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

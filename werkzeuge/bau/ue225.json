@@ -1,0 +1,855 @@
+{
+ "title": "Leiter, Sprint, Flanke abwehren",
+ "code": "UE-225",
+ "kind": "Übungsform",
+ "focuses": [
+  "Verteidigen",
+  "Schnelligkeit",
+  "Koordination"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 12,
+ "players_max": 12,
+ "field_size": "41 x 32 m",
+ "description": "Ein Verteidiger läuft durch die Koordinationsleiter und spielt einen Doppelpass mit dem Mittelfeldspieler. Der spielt sofort einen langen Ball nach außen zum Flügelspieler. Der Verteidiger dreht um und sprintet vor das Minitor, denn gleich kommt die flache Flanke. Blockt er sie, gibt das einen Punkt für Team Neon.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 41 mal 32 Metern, in der Mitte geteilt. In jeder Hälfte oben ein Minitor, in der Mitte eine Koordinationsleiter und außen eine Puppe oder Stange.",
+  "Verteilen: In jeder Hälfte zwei Verteidiger von Team Neon und vier Angreifer von Team Rot: zwei Mittelfeldspieler unten mit Bällen und zwei Flügelspieler an der Puppe. Der Trainer steht links mit Bällen.",
+  "Ablauf: Der Verteidiger läuft durch die Leiter und spielt einen Doppelpass. Der Flügelspieler täuscht an der Puppe an und startet nach außen. Der lange Ball kommt zu ihm, und er flankt flach aufs Minitor. Der Verteidiger sprintet zurück und blockt.",
+  "Wertung und Wechsel: Blockt der Verteidiger die Flanke, gibt das einen Punkt für Team Neon. Trifft die Flanke ins Minitor, gibt das einen Punkt für Team Rot. Danach sind der nächste Verteidiger und die nächsten Angreifer dran."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Schnell zurück vor das Minitor, um die Flanke abzuwehren",
+  "Den langen Ball genau und mit dem richtigen Tempo nach außen spielen",
+  "Schnell annehmen und sofort flanken, damit der Verteidiger kaum Zeit hat",
+  "Mit schnellen, kleinen Schritten durch die Leiter"
+ ],
+ "materials": [
+  "2 Minitore",
+  "6 Minihürden (oder 2 Koordinationsleitern)",
+  "2 Stangen oder Puppen",
+  "6 Hütchen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Leiter, Sprint, Flanke abwehren. Der Verteidiger muss nach der Leiter schnell zurück vor sein Minitor.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 14,
+    "y": 4,
+    "w": 72,
+    "h": 52
+   },
+   {
+    "type": "line",
+    "x1": 50,
+    "y1": 4,
+    "x2": 50,
+    "y2": 56,
+    "dashed": true
+   }
+  ],
+  "cones": [
+   {
+    "x": 14,
+    "y": 4,
+    "color": "orange"
+   },
+   {
+    "x": 86,
+    "y": 4,
+    "color": "orange"
+   },
+   {
+    "x": 14,
+    "y": 56,
+    "color": "orange"
+   },
+   {
+    "x": 86,
+    "y": 56,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 4,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 56,
+    "color": "orange"
+   },
+   {
+    "x": 30,
+    "y": 28,
+    "color": "orange",
+    "shape": "huerde"
+   },
+   {
+    "x": 33.5,
+    "y": 28,
+    "color": "orange",
+    "shape": "huerde"
+   },
+   {
+    "x": 37,
+    "y": 28,
+    "color": "orange",
+    "shape": "huerde"
+   },
+   {
+    "x": 70,
+    "y": 28,
+    "color": "orange",
+    "shape": "huerde"
+   },
+   {
+    "x": 66.5,
+    "y": 28,
+    "color": "orange",
+    "shape": "huerde"
+   },
+   {
+    "x": 63,
+    "y": 28,
+    "color": "orange",
+    "shape": "huerde"
+   },
+   {
+    "x": 22,
+    "y": 33,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 78,
+    "y": 33,
+    "color": "neon",
+    "shape": "stange"
+   }
+  ],
+  "goals": [
+   {
+    "x": 38,
+    "y": 4,
+    "side": "top"
+   },
+   {
+    "x": 62,
+    "y": 4,
+    "side": "top"
+   }
+  ],
+  "players": [
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 26,
+    "y": 28,
+    "label": "5"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 45.8,
+    "y": 12,
+    "label": "2"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 22,
+    "y": 45,
+    "label": "11"
+   },
+   {
+    "id": "r4",
+    "team": "b",
+    "x": 32,
+    "y": 52,
+    "label": "4"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 41,
+    "y": 52,
+    "label": "8"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 74,
+    "y": 28,
+    "label": "6"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 54.2,
+    "y": 12,
+    "label": "3"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 78,
+    "y": 45,
+    "label": "7"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 68,
+    "y": 52,
+    "label": "9"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 59,
+    "y": 52,
+    "label": "10"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 7,
+    "y": 50,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b8",
+    "x": 41.6,
+    "y": 52.6
+   },
+   {
+    "id": "b10",
+    "x": 59.6,
+    "y": 52.6
+   },
+   {
+    "id": "b4",
+    "x": 32.6,
+    "y": 52.6
+   },
+   {
+    "id": "b9",
+    "x": 68.6,
+    "y": 52.6
+   },
+   {
+    "id": "s1",
+    "x": 7.6,
+    "y": 53.5
+   },
+   {
+    "id": "s2",
+    "x": 4,
+    "y": 53.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Durch die Leiter",
+    "say": "Spieler fünf läuft mit schnellen Füßen durch die Leiter. Gleichzeitig täuscht Spieler elf an der Puppe an und startet nach außen.",
+    "moves": [
+     {
+      "who": "n5",
+      "to": [
+       40.5,
+       28
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r11",
+      "to": [
+       21,
+       38
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r11",
+      "to": [
+       15,
+       40
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Doppelpass",
+    "say": "Spieler acht spielt zu Spieler fünf, und Spieler fünf spielt den Ball direkt zurück.",
+    "moves": [
+     {
+      "who": "b8",
+      "to": [
+       41.1,
+       28.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b8",
+      "to": [
+       41.6,
+       52.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Langer Ball nach außen",
+    "say": "Jetzt spielt Spieler acht einen langen Ball nach außen. Spieler elf sprintet hin und nimmt ihn an. Spieler fünf dreht sofort um und sprintet zurück vor das Minitor.",
+    "moves": [
+     {
+      "who": "b8",
+      "to": [
+       16.6,
+       12.6
+      ],
+      "type": "pass",
+      "bend": -6
+     },
+     {
+      "who": "r11",
+      "to": [
+       16,
+       12
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n5",
+      "to": [
+       37.5,
+       9
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Flanke geblockt: Punkt",
+    "say": "Spieler elf flankt flach aufs Minitor. Spieler fünf steht schon davor und blockt den Ball, und das gibt einen Punkt für Team Neon. Trifft die Flanke, gibt das einen Punkt für Team Rot. Dann ist Spieler zwei dran.",
+    "moves": [
+     {
+      "who": "b8",
+      "to": [
+       38.1,
+       9.6
+      ],
+      "type": "pass"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 14,
+    "y1": 58.6,
+    "x2": 86,
+    "y2": 58.6,
+    "text": "41 m"
+   },
+   {
+    "x1": 93,
+    "y1": 4,
+    "x2": 93,
+    "y2": 56,
+    "text": "32 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Beim Zurücklaufen den Kopf heben.",
+   "title": "Kopf hoch beim Zurücklaufen",
+   "text": "Der Verteidiger schaut beim Zurücksprinten zum Flankengeber. So sieht er, wo der Ball herkommt und wie der Gegner steht. Dann stellt er seine Füße schnell ein und blockt die Flanke.",
+   "board": {
+    "players": [
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 40.5,
+      "y": 28,
+      "label": "5"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 45.8,
+      "y": 12,
+      "label": "2"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 16,
+      "y": 12,
+      "label": "11"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 32,
+      "y": 52,
+      "label": "4"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 41,
+      "y": 52,
+      "label": "8"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 74,
+      "y": 28,
+      "label": "6"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 54.2,
+      "y": 12,
+      "label": "3"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 78,
+      "y": 45,
+      "label": "7"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 68,
+      "y": 52,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 59,
+      "y": 52,
+      "label": "10"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 7,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b8",
+      "x": 16.6,
+      "y": 12.6
+     },
+     {
+      "id": "b10",
+      "x": 59.6,
+      "y": 52.6
+     },
+     {
+      "id": "b4",
+      "x": 32.6,
+      "y": 52.6
+     },
+     {
+      "id": "b9",
+      "x": 68.6,
+      "y": 52.6
+     },
+     {
+      "id": "s1",
+      "x": 7.6,
+      "y": 53.5
+     },
+     {
+      "id": "s2",
+      "x": 4,
+      "y": 53.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zurück und schauen",
+      "say": "Spieler elf hat den langen Ball angenommen. Spieler fünf sprintet zurück und schaut dabei zu Spieler elf.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         39,
+         17
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n5",
+        "to": [
+         17,
+         13
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Füße einstellen: Punkt",
+      "say": "Spieler fünf stellt sich schnell vor das Minitor. Spieler elf flankt flach, aber Spieler fünf blockt den Ball. Das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         37.5,
+         9
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b8",
+        "to": [
+         38.1,
+         9.6
+        ],
+        "type": "pass",
+        "delay": 0.5
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Beide Seiten gleichzeitig.",
+   "title": "Beide Seiten gleichzeitig",
+   "text": "Jetzt laufen beide Hälften gleichzeitig. Links und rechts startet je ein Verteidiger durch die Leiter. Jeder muss sein eigenes Minitor schützen, und keine Seite darf zu spät sein.",
+   "board": {
+    "players": [
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 26,
+      "y": 28,
+      "label": "5"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 45.8,
+      "y": 12,
+      "label": "2"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 22,
+      "y": 45,
+      "label": "11"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 32,
+      "y": 52,
+      "label": "4"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 41,
+      "y": 52,
+      "label": "8"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 74,
+      "y": 28,
+      "label": "6"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 54.2,
+      "y": 12,
+      "label": "3"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 78,
+      "y": 45,
+      "label": "7"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 68,
+      "y": 52,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 59,
+      "y": 52,
+      "label": "10"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 7,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b8",
+      "x": 41.6,
+      "y": 52.6
+     },
+     {
+      "id": "b10",
+      "x": 59.6,
+      "y": 52.6
+     },
+     {
+      "id": "b4",
+      "x": 32.6,
+      "y": 52.6
+     },
+     {
+      "id": "b9",
+      "x": 68.6,
+      "y": 52.6
+     },
+     {
+      "id": "s1",
+      "x": 7.6,
+      "y": 53.5
+     },
+     {
+      "id": "s2",
+      "x": 4,
+      "y": 53.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Beide in die Leiter",
+      "say": "Spieler fünf und Spieler sechs laufen gleichzeitig durch ihre Leitern. Spieler elf und Spieler sieben starten nach außen. Dann gibt es auf beiden Seiten einen Doppelpass.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         40.5,
+         28
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n6",
+        "to": [
+         59.5,
+         28
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r11",
+        "to": [
+         21,
+         38
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r7",
+        "to": [
+         79,
+         38
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r11",
+        "to": [
+         15,
+         40
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r7",
+        "to": [
+         85,
+         40
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b8",
+        "to": [
+         41.1,
+         28.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b10",
+        "to": [
+         60.1,
+         28.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b8",
+        "to": [
+         41.6,
+         52.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b10",
+        "to": [
+         59.6,
+         52.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Lange Bälle",
+      "say": "Spieler acht und Spieler zehn spielen gleichzeitig lang nach außen. Spieler fünf und Spieler sechs sprinten zurück vor ihr Minitor.",
+      "moves": [
+       {
+        "who": "b8",
+        "to": [
+         16.6,
+         12.6
+        ],
+        "type": "pass",
+        "bend": -6
+       },
+       {
+        "who": "b10",
+        "to": [
+         84.6,
+         12.6
+        ],
+        "type": "pass",
+        "bend": 6
+       },
+       {
+        "who": "r11",
+        "to": [
+         16,
+         12
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r7",
+        "to": [
+         84,
+         12
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n5",
+        "to": [
+         37.5,
+         9
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n6",
+        "to": [
+         62.5,
+         9
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Beide geblockt: Punkte",
+      "say": "Beide Flügelspieler flanken flach. Spieler fünf und Spieler sechs blocken die Flanken, und das gibt zwei Punkte für Team Neon.",
+      "moves": [
+       {
+        "who": "b8",
+        "to": [
+         38.1,
+         9.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b10",
+        "to": [
+         63.1,
+         9.6
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

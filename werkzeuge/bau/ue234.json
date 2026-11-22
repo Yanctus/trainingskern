@@ -1,0 +1,802 @@
+{
+ "title": "Aufbauen, durchbrechen, treffen",
+ "code": "UE-234",
+ "kind": "Spielform",
+ "focuses": [
+  "Zusammenspiel",
+  "Passspiel",
+  "Umschalten"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 16,
+ "players_max": 16,
+ "field_size": "Halbes Spielfeld",
+ "description": "Ein Spiel auf dem halben Feld in drei Zonen. Team Neon baut hinten mit zwei Innenverteidigern gegen einen Stürmer auf, spielt in der Mitte mit Überzahl und greift vorn drei gegen zwei auf das große Tor an. Erobert Team Rot den Ball, kontert es auf zwei Minitore. Jeder Angriff beginnt wieder bei den zwei Innenverteidigern.",
+ "organisation": [
+  "Aufbauen: Ein halbes Spielfeld mit Jugendtor oben und zwei Minitoren unten, in drei Zonen geteilt: Aufbauzone, Mittelzone und Angriffszone bis zum Strafraum.",
+  "Verteilen: Team Neon mit zwei Innenverteidigern hinten, zwei Außenverteidigern und drei Mittelfeldspielern in der Mitte und einem Stürmer vorn. Team Rot mit Torwart, zwei Verteidigern vorn, vier Spielern in der Mitte und einem Stürmer hinten. Der Trainer steht unten an der Seite mit Bällen.",
+  "Ablauf: Die Innenverteidiger spielen sich zwei gegen eins am Stürmer vorbei. Dribbelt einer in die Mittelzone, ist das Spiel offen. Team Neon spielt nach vorn und greift drei gegen zwei an.",
+  "Wertung: Ein Treffer ins große Tor gibt einen Punkt für Team Neon. Erobert Team Rot den Ball und trifft in ein Minitor, gibt das einen Punkt für Team Rot. Danach beginnen wieder die zwei Innenverteidiger."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Den Stürmer auf eine Seite locken und quer zum freien Innenverteidiger spielen",
+  "Presst ein Gegner den Innenverteidiger, den freien Mann über den Außenverteidiger finden",
+  "Bleibt der Gegner innen, den Sechser anspielen und in der Mitte Überzahl schaffen",
+  "Vorn schnell kombinieren und die Überzahl ausspielen"
+ ],
+ "materials": [
+  "1 Jugendtor",
+  "2 Minitore",
+  "4 Hütchen für die Zonen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Aufbauen, durchbrechen, treffen. Team Neon spielt sich von hinten durch drei Zonen bis vor das große Tor und schließt dort ab.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 15,
+    "y": 4,
+    "w": 70,
+    "h": 53
+   },
+   {
+    "type": "rect",
+    "x": 28,
+    "y": 4,
+    "w": 44,
+    "h": 19
+   },
+   {
+    "type": "rect",
+    "x": 40,
+    "y": 4,
+    "w": 20,
+    "h": 6
+   },
+   {
+    "type": "line",
+    "x1": 15,
+    "y1": 23,
+    "x2": 85,
+    "y2": 23,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 15,
+    "y1": 41,
+    "x2": 85,
+    "y2": 41,
+    "dashed": true
+   }
+  ],
+  "cones": [
+   {
+    "x": 15,
+    "y": 23,
+    "color": "orange"
+   },
+   {
+    "x": 85,
+    "y": 23,
+    "color": "orange"
+   },
+   {
+    "x": 15,
+    "y": 41,
+    "color": "orange"
+   },
+   {
+    "x": 85,
+    "y": 41,
+    "color": "orange"
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 4,
+    "side": "top",
+    "size": "jugend"
+   },
+   {
+    "x": 33,
+    "y": 57,
+    "side": "bottom"
+   },
+   {
+    "x": 67,
+    "y": 57,
+    "side": "bottom"
+   }
+  ],
+  "players": [
+   {
+    "id": "r1",
+    "team": "b",
+    "x": 50,
+    "y": 5,
+    "label": "TW"
+   },
+   {
+    "id": "r14",
+    "team": "b",
+    "x": 41,
+    "y": 12,
+    "label": "14"
+   },
+   {
+    "id": "r15",
+    "team": "b",
+    "x": 59,
+    "y": 12,
+    "label": "15"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 50,
+    "y": 21,
+    "label": "9"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 16.5,
+    "y": 30,
+    "label": "3"
+   },
+   {
+    "id": "r12",
+    "team": "b",
+    "x": 24.9,
+    "y": 26,
+    "label": "12"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 33.2,
+    "y": 31,
+    "label": "10"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 41.6,
+    "y": 38,
+    "label": "6"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 58.3,
+    "y": 30,
+    "label": "7"
+   },
+   {
+    "id": "r17",
+    "team": "b",
+    "x": 66.6,
+    "y": 28,
+    "label": "17"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 75,
+    "y": 30,
+    "label": "8"
+   },
+   {
+    "id": "r13",
+    "team": "b",
+    "x": 83.4,
+    "y": 24,
+    "label": "13"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 83.4,
+    "y": 40,
+    "label": "2"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 33,
+    "y": 53,
+    "label": "5"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 50,
+    "y": 47,
+    "label": "11"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 67,
+    "y": 53,
+    "label": "4"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 8,
+    "y": 50,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 33.6,
+    "y": 53.6
+   },
+   {
+    "id": "s1",
+    "x": 9.6,
+    "y": 46.5
+   },
+   {
+    "id": "s2",
+    "x": 6,
+    "y": 46.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Zwei gegen eins",
+    "say": "Spieler fünf hat den Ball, und Spieler elf läuft ihn an. Spieler fünf spielt quer zu Spieler vier, der jetzt frei ist.",
+    "moves": [
+     {
+      "who": "r11",
+      "to": [
+       41,
+       48
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       67.6,
+       53.6
+      ],
+      "type": "pass",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "In die Mitte",
+    "say": "Spieler vier dribbelt in die Mittelzone. Jetzt ist das Spiel offen, und alle dürfen mitspielen. Spieler vier spielt zu Spieler zehn.",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       67,
+       40
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       33.8,
+       31.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Drei gegen zwei",
+    "say": "Spieler zehn spielt nach vorn zum Stürmer. Gleichzeitig laufen Spieler zehn und Spieler acht mit in die Angriffszone. Jetzt sind es drei gegen zwei.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       21.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n10",
+      "to": [
+       32,
+       18
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       68,
+       17
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Abschluss: Punkt",
+    "say": "Spieler neun dreht auf und schießt zwischen den zwei Verteidigern aufs Tor, und das gibt einen Punkt für Team Neon. Dann beginnen wieder die zwei Innenverteidiger mit einem neuen Ball vom Trainer.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       46.5,
+       4.6
+      ],
+      "type": "pass"
+     }
+    ]
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Presst ein Gegner den Innenverteidiger, den freien Mann über den Außenverteidiger finden.",
+   "title": "Freier Mann über außen",
+   "text": "Kommt ein Mittelfeldspieler von Team Rot heraus und presst den Innenverteidiger, ist hinter ihm ein Spieler frei. Der Innenverteidiger spielt zum Außenverteidiger. Der schaut schon vor dem Pass nach innen und spielt sofort zum freien Mann.",
+   "board": {
+    "players": [
+     {
+      "id": "r1",
+      "team": "b",
+      "x": 50,
+      "y": 5,
+      "label": "TW"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 41,
+      "y": 12,
+      "label": "14"
+     },
+     {
+      "id": "r15",
+      "team": "b",
+      "x": 59,
+      "y": 12,
+      "label": "15"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 50,
+      "y": 21,
+      "label": "9"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 16.5,
+      "y": 30,
+      "label": "3"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 24.9,
+      "y": 26,
+      "label": "12"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 33.2,
+      "y": 31,
+      "label": "10"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 41.6,
+      "y": 38,
+      "label": "6"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 58.3,
+      "y": 30,
+      "label": "7"
+     },
+     {
+      "id": "r17",
+      "team": "b",
+      "x": 66.6,
+      "y": 28,
+      "label": "17"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 75,
+      "y": 30,
+      "label": "8"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 83.4,
+      "y": 24,
+      "label": "13"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 83.4,
+      "y": 40,
+      "label": "2"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 33,
+      "y": 53,
+      "label": "5"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 50,
+      "y": 47,
+      "label": "11"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 66.6,
+      "y": 45,
+      "label": "4"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 8,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 67.2,
+      "y": 45.6
+     },
+     {
+      "id": "s1",
+      "x": 9.6,
+      "y": 46.5
+     },
+     {
+      "id": "s2",
+      "x": 6,
+      "y": 46.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Gegner presst",
+      "say": "Spieler vier dribbelt in die Mittelzone. Spieler siebzehn kommt heraus und presst ihn. Damit ist Spieler acht hinter ihm frei.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         66.6,
+         39
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "r17",
+        "to": [
+         66.6,
+         33
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Über außen",
+      "say": "Spieler zwei schaut schon vor dem Pass nach innen und sieht Spieler acht. Spieler vier spielt zu Spieler zwei.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         73,
+         28
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         84,
+         40.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Der freie Mann",
+      "say": "Spieler zwei spielt sofort nach innen zu Spieler acht. Der dreht auf und spielt nach vorn zum Stürmer.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         75.6,
+         30.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         21.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Ein Mittelfeldspieler darf in der Aufbauzone mitpressen.",
+   "title": "Zwei gegen zwei hinten",
+   "text": "Jetzt darf ein Mittelfeldspieler von Team Rot in die Aufbauzone kommen und den zweiten Innenverteidiger pressen. Hinten ist es dann zwei gegen zwei, und der Querpass ist zu. Dafür fehlt Team Rot in der Mitte ein Spieler. Team Neon muss schneller entscheiden und sofort nach vorn spielen.",
+   "board": {
+    "players": [
+     {
+      "id": "r1",
+      "team": "b",
+      "x": 50,
+      "y": 5,
+      "label": "TW"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 41,
+      "y": 12,
+      "label": "14"
+     },
+     {
+      "id": "r15",
+      "team": "b",
+      "x": 59,
+      "y": 12,
+      "label": "15"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 50,
+      "y": 21,
+      "label": "9"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 16.5,
+      "y": 30,
+      "label": "3"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 24.9,
+      "y": 26,
+      "label": "12"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 33.2,
+      "y": 31,
+      "label": "10"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 41.6,
+      "y": 38,
+      "label": "6"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 58.3,
+      "y": 30,
+      "label": "7"
+     },
+     {
+      "id": "r17",
+      "team": "b",
+      "x": 66.6,
+      "y": 28,
+      "label": "17"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 75,
+      "y": 30,
+      "label": "8"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 83.4,
+      "y": 24,
+      "label": "13"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 83.4,
+      "y": 40,
+      "label": "2"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 33,
+      "y": 53,
+      "label": "5"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 50,
+      "y": 47,
+      "label": "11"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 67,
+      "y": 53,
+      "label": "4"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 8,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 67.6,
+      "y": 53.6
+     },
+     {
+      "id": "s1",
+      "x": 9.6,
+      "y": 46.5
+     },
+     {
+      "id": "s2",
+      "x": 6,
+      "y": 46.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zwei gegen zwei",
+      "say": "Spieler vier hat den Ball. Gleichzeitig läuft Spieler elf ihn an, und Spieler sieben kommt zurück und stellt sich vor Spieler fünf. Der Querpass ist zu.",
+      "moves": [
+       {
+        "who": "r11",
+        "to": [
+         59,
+         50
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r7",
+        "to": [
+         42,
+         48
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Schnell nach vorn",
+      "say": "Spieler acht kommt dem Ball entgegen, und Spieler vier spielt sofort zu ihm.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         75,
+         36
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         75.6,
+         36.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Überzahl in der Mitte",
+      "say": "In der Mitte fehlt jetzt ein Gegner. Spieler acht spielt zu Spieler sechs, und der spielt weiter nach vorn zum Stürmer.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         42.2,
+         38.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         21.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

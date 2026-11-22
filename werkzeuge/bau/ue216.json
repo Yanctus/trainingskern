@@ -1,0 +1,764 @@
+{
+ "title": "Aufrücken und Überzahl schaffen",
+ "code": "UE-216",
+ "kind": "Spielform",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel",
+  "Umschalten"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 10,
+ "players_max": 10,
+ "field_size": "18 x 27 m",
+ "description": "Team Neon baut von hinten auf, Team Rot verteidigt. Das Feld hat drei Zonen: hinten drei gegen einen, in der Mitte eins gegen eins, vorn eins gegen zwei. Erst wenn ein Innenverteidiger mit Ball in die Mitte aufrückt, entsteht dort Überzahl. Kommt der Ball nach vorn, darf der Mittelfeldspieler mit, und es geht auf das Tor.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 27 Metern in drei gleich große Zonen geteilt. Oben und unten steht je ein Jugendtor.",
+  "Verteilen: Team Neon mit Torwart und zwei Innenverteidigern hinten, einem in der Mitte und einem Stürmer vorn. Team Rot mit einem Stürmer hinten, einem in der Mitte und zwei Verteidigern vorn. Oben steht ein zweiter Torwart im Tor. Der Trainer steht an der Seite mit Bällen.",
+  "Ablauf: Alle bleiben in ihren Zonen. Ein Innenverteidiger verlagert, rückt mit Ball in die Mitte auf und schafft so zwei gegen einen. Kommt der Ball nach vorn, darf der Mittelfeldspieler mit, dann ist es zwei gegen zwei.",
+  "Wertung und Wechsel: Ein Treffer oben gibt einen Punkt für Team Neon. Erobert Team Rot den Ball, kontert es auf das untere Tor, und ein Treffer gibt einen Punkt für Team Rot. Danach startet der Torwart von Team Neon mit einem neuen Ball."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Erst die Seite wechseln, dann aufrücken",
+  "Mit dem hinteren Fuß annehmen und gleich Tempo aufnehmen",
+  "Mutig in die Mitte dribbeln und Überzahl schaffen",
+  "Breit stehen und nach Ballverlust sofort nachsetzen"
+ ],
+ "materials": [
+  "4 Hütchen",
+  "2 Jugendtore",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Aufrücken und Überzahl schaffen. Team Neon baut von hinten auf, und ein Innenverteidiger dribbelt mit Ball ins Mittelfeld.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 32,
+    "y": 3,
+    "w": 36,
+    "h": 54
+   },
+   {
+    "type": "line",
+    "x1": 32,
+    "y1": 21,
+    "x2": 68,
+    "y2": 21,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 32,
+    "y1": 39,
+    "x2": 68,
+    "y2": 39,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 3,
+    "side": "top",
+    "size": "jugend"
+   },
+   {
+    "x": 50,
+    "y": 57,
+    "side": "bottom",
+    "size": "jugend"
+   }
+  ],
+  "cones": [
+   {
+    "x": 32,
+    "y": 3,
+    "color": "orange"
+   },
+   {
+    "x": 68,
+    "y": 3,
+    "color": "orange"
+   },
+   {
+    "x": 32,
+    "y": 57,
+    "color": "orange"
+   },
+   {
+    "x": 68,
+    "y": 57,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n1",
+    "team": "a",
+    "x": 50,
+    "y": 55.5,
+    "label": "TW"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 40,
+    "y": 47,
+    "label": "4"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 60,
+    "y": 47,
+    "label": "5"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 59,
+    "y": 30,
+    "label": "8"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 50,
+    "y": 20.6,
+    "label": "9"
+   },
+   {
+    "id": "k",
+    "team": "t",
+    "x": 50,
+    "y": 5,
+    "label": "TW"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 41.5,
+    "y": 13,
+    "label": "2"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 58.5,
+    "y": 13,
+    "label": "3"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 41,
+    "y": 30,
+    "label": "6"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 50,
+    "y": 40,
+    "label": "11"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 80,
+    "y": 30,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 60.6,
+    "y": 47.6
+   },
+   {
+    "id": "s1",
+    "x": 83.6,
+    "y": 33.5
+   },
+   {
+    "id": "s2",
+    "x": 80,
+    "y": 33.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Drei gegen einen",
+    "say": "Spieler fünf hat den Ball. Spieler elf läuft ihn an. Alle bleiben in ihren Zonen: hinten drei gegen einen, in der Mitte eins gegen eins, vorn eins gegen zwei.",
+    "moves": [
+     {
+      "who": "r11",
+      "to": [
+       55,
+       43
+      ],
+      "type": "lauf"
+     }
+    ]
+   },
+   {
+    "label": "Seite wechseln",
+    "say": "Spieler fünf spielt quer zu Spieler vier. Spieler vier nimmt mit dem hinteren Fuß an und schaut nach vorn: Vor ihm ist Platz.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       40.6,
+       47.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n4",
+      "to": [
+       50,
+       30
+      ],
+      "type": "blick",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Aufrücken",
+    "say": "Spieler vier dribbelt mutig in die Mitte. Jetzt sind es dort zwei gegen einen. Spieler sechs geht auf ihn zu, also spielt Spieler vier zu Spieler acht.",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       40,
+       36
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "r6",
+      "to": [
+       44,
+       32
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "b1",
+      "to": [
+       59.6,
+       30.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Vorn zwei gegen zwei: Punkt",
+    "say": "Spieler acht spielt zu Spieler neun und läuft mit nach vorn. Spieler neun legt ab, und Spieler acht trifft. Das gibt einen Punkt für Team Neon. Dann startet der Torwart von Team Neon mit einem neuen Ball.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       21.2
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n8",
+      "to": [
+       63,
+       16
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "r3",
+      "to": [
+       56,
+       17
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       63.6,
+       16.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       55,
+       3.4
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 32,
+    "y1": 58.6,
+    "x2": 68,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 74,
+    "y1": 3,
+    "x2": 74,
+    "y2": 57,
+    "text": "27 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Breit stehen und über den Torwart verlagern.",
+   "title": "Über den Torwart",
+   "text": "Die Innenverteidiger stehen weit auseinander. So kann ein Stürmer nicht beide zustellen. Presst er einen, geht der Ball über den Torwart zum anderen, und der rückt sofort auf.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 50,
+      "y": 55.5,
+      "label": "TW"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 40,
+      "y": 47,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 60,
+      "y": 47,
+      "label": "5"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 59,
+      "y": 30,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 50,
+      "y": 20.6,
+      "label": "9"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50,
+      "y": 5,
+      "label": "TW"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 41.5,
+      "y": 13,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 58.5,
+      "y": 13,
+      "label": "3"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 41,
+      "y": 30,
+      "label": "6"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 50,
+      "y": 40,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 80,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 40.6,
+      "y": 47.6
+     },
+     {
+      "id": "s1",
+      "x": 83.6,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 80,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zurück zum Torwart",
+      "say": "Spieler vier hat den Ball, und Spieler elf presst ihn. Spieler vier spielt zurück zum Torwart.",
+      "moves": [
+       {
+        "who": "r11",
+        "to": [
+         45,
+         42
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         56.1
+        ],
+        "type": "pass",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Zum freien Spieler",
+      "say": "Spieler elf läuft dem Ball hinterher. Der Torwart spielt zu Spieler fünf, und der schaut sofort nach vorn ins Mittelfeld.",
+      "moves": [
+       {
+        "who": "r11",
+        "to": [
+         50,
+         49
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         60.6,
+         47.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       },
+       {
+        "who": "n5",
+        "to": [
+         60,
+         30
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Hinein in die Mitte",
+      "say": "Spieler fünf dribbelt in die Mitte. Spieler sechs kommt zu spät, und Spieler fünf spielt zu Spieler acht. Der spielt weiter nach vorn zu Spieler neun.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         61,
+         38
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "r6",
+        "to": [
+         52,
+         33
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n8",
+        "to": [
+         65,
+         27
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         65.6,
+         27.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         21.2
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Team Rot verteidigt frei.",
+   "title": "Rot verteidigt frei",
+   "text": "Jetzt darf Team Rot über alle Zonen verteidigen und sich immer wieder anders aufstellen. Team Neon bleibt in den Zonen, bis ein Innenverteidiger aufrückt oder der Ball nach vorn kommt. Die Innenverteidiger müssen erkennen, wo die Lücke ist.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 50,
+      "y": 55.5,
+      "label": "TW"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 37,
+      "y": 47,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 61,
+      "y": 47,
+      "label": "5"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 59,
+      "y": 31,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 50,
+      "y": 20.6,
+      "label": "9"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50,
+      "y": 5,
+      "label": "TW"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 41.5,
+      "y": 13,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 58.5,
+      "y": 13,
+      "label": "3"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 37,
+      "y": 31,
+      "label": "6"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 46,
+      "y": 40,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 80,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 37.6,
+      "y": 47.6
+     },
+     {
+      "id": "s1",
+      "x": 83.6,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 80,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Rot presst",
+      "say": "Spieler sechs verlässt die Mitte und presst Spieler vier, Spieler elf rückt nach. Spieler vier spielt quer zu Spieler fünf.",
+      "moves": [
+       {
+        "who": "r6",
+        "to": [
+         38,
+         40
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r11",
+        "to": [
+         46,
+         43.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         61.6,
+         47.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Hineindribbeln",
+      "say": "Spieler fünf dribbelt nach innen ins Mittelfeld. Spieler elf geht auf ihn, also ist Spieler acht frei und bekommt den Ball.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         55,
+         38
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "r11",
+        "to": [
+         50,
+         39
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n8",
+        "to": [
+         62,
+         24
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         62.6,
+         24.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Nach vorn: Punkt",
+      "say": "Spieler acht spielt zu Spieler neun, und der schießt. Das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         21.2
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         46,
+         3.4
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

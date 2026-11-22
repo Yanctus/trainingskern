@@ -1,0 +1,584 @@
+{
+ "title": "Erst treffen, dann verteidigen",
+ "code": "UE-220",
+ "kind": "Spielform",
+ "focuses": [
+  "Umschalten",
+  "Verteidigen",
+  "Torschuss"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 6,
+ "players_max": 12,
+ "field_size": "27 x 27 m",
+ "description": "Zwei Spieler von Team Rot bekommen nacheinander einen Ball und schießen allein gegen den Torwart. Danach schalten beide sofort um und verteidigen gegen zwei Spieler von Team Neon und einen Springer. Die zwei Verteidiger stehen kompakt, drängen die Angreifer nach außen und pressen bei einem schlechten Ballkontakt. Dann tauschen die Teams die Rollen.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 27 mal 27 Metern vor einem Jugendtor mit Strafraum. Eine gestrichelte Querlinie teilt das Feld.",
+  "Verteilen: Zwei Spieler von Team Rot und ein Springer stehen im Feld, zwei Spieler von Team Neon warten unten an der Linie. Ein neutraler Torwart steht im Tor. Der Trainer steht unten mit Bällen.",
+  "Ablauf: Der Trainer passt nacheinander zu den beiden Roten, und jeder schießt allein gegen den Torwart. Dann passt er zu Team Neon, und die zwei Neon-Spieler greifen mit dem Springer drei gegen zwei an. Die beiden Roten schalten sofort um und verteidigen.",
+  "Wertung und Wechsel: Jeder Treffer gibt einen Punkt für das Team des Schützen. Nach dem Angriff tauschen die Teams die Rollen: Jetzt schießt Team Neon zuerst und verteidigt danach. Das Team mit den meisten Punkten gewinnt."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Nach dem Schuss sofort umschalten und zurücklaufen",
+  "Kompakt stehen und die Angreifer nach außen drängen",
+  "Bei schlechter Annahme oder schlechtem Pass sofort pressen",
+  "Im Strafraum eng dran sein und Schüsse blocken"
+ ],
+ "materials": [
+  "1 Jugendtor",
+  "Viele Bälle",
+  "Leibchen in zwei Farben",
+  "1 Leibchen für den Springer"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Erst treffen, dann verteidigen. Zwei Spieler schießen aufs Tor und müssen danach sofort gegen drei Angreifer verteidigen.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 20,
+    "y": 4,
+    "w": 60,
+    "h": 48
+   },
+   {
+    "type": "rect",
+    "x": 33,
+    "y": 4,
+    "w": 34,
+    "h": 8.4
+   },
+   {
+    "type": "line",
+    "x1": 20,
+    "y1": 33,
+    "x2": 80,
+    "y2": 33,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 4,
+    "side": "top",
+    "size": "jugend"
+   }
+  ],
+  "cones": [],
+  "players": [
+   {
+    "id": "k",
+    "team": "t",
+    "x": 50,
+    "y": 8,
+    "label": "TW"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 32,
+    "y": 35,
+    "label": "11"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 61,
+    "y": 36.5,
+    "label": "9"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 31,
+    "y": 53.5,
+    "label": "4"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 66,
+    "y": 54,
+    "label": "8"
+   },
+   {
+    "id": "f1",
+    "team": "t",
+    "x": 48.5,
+    "y": 31,
+    "label": "F"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 50,
+    "y": 55.5,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 46.4,
+    "y": 57.1
+   },
+   {
+    "id": "b2",
+    "x": 53.8,
+    "y": 57.1
+   },
+   {
+    "id": "b3",
+    "x": 50.6,
+    "y": 56.1
+   }
+  ],
+  "steps": [
+   {
+    "label": "Erster Abschluss: Punkt",
+    "say": "Der Trainer passt zu Spieler elf. Er nimmt den Ball mit und schießt allein gegen den Torwart. Trifft er, gibt das einen Punkt für Team Rot.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       32.6,
+       35.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r11",
+      "to": [
+       40,
+       20
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       46,
+       4.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zweiter Abschluss: Punkt",
+    "say": "Gleich danach passt der Trainer zu Spieler neun. Auch er schießt allein gegen den Torwart, und ein Treffer gibt einen Punkt für Team Rot.",
+    "moves": [
+     {
+      "who": "b2",
+      "to": [
+       61.6,
+       37.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r9",
+      "to": [
+       58,
+       20
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "b2",
+      "to": [
+       54,
+       4.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Umschalten",
+    "say": "Jetzt passt der Trainer zu Spieler acht, und Team Neon greift mit dem Springer an. Spieler elf und Spieler neun sprinten sofort zurück und verteidigen. Spieler vier läuft nach vorn.",
+    "moves": [
+     {
+      "who": "b3",
+      "to": [
+       62.6,
+       46.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n8",
+      "to": [
+       62,
+       46
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r11",
+      "to": [
+       42,
+       42
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "r9",
+      "to": [
+       58,
+       36
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n4",
+      "to": [
+       32,
+       40
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Drei gegen zwei: Punkt",
+    "say": "Spieler acht spielt zum Springer, und der Springer spielt zum freien Spieler vier. Spieler vier dribbelt in den Strafraum und trifft. Das gibt einen Punkt für Team Neon. Dann tauschen die Teams die Rollen: Jetzt schießt Team Neon zuerst und verteidigt danach.",
+    "moves": [
+     {
+      "who": "b3",
+      "to": [
+       49.1,
+       31.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b3",
+      "to": [
+       32.6,
+       40.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n4",
+      "to": [
+       37,
+       20
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b3"
+     },
+     {
+      "who": "b3",
+      "to": [
+       47,
+       4.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 20,
+    "y1": 58.6,
+    "x2": 80,
+    "y2": 58.6,
+    "text": "27 m"
+   },
+   {
+    "x1": 88,
+    "y1": 4,
+    "x2": 88,
+    "y2": 52,
+    "text": "27 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Den richtigen Moment zum Pressen erkennen.",
+   "title": "Moment zum Pressen",
+   "text": "Die Verteidiger schauen genau hin: Springt dem Gegner der Ball vom Fuß oder kommt ein schlechter Pass, ist das der Moment. Dann pressen sie sofort und erobern den Ball.",
+   "board": {
+    "players": [
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50,
+      "y": 8,
+      "label": "TW"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 38,
+      "y": 37,
+      "label": "11"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 58,
+      "y": 37,
+      "label": "9"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 28,
+      "y": 46,
+      "label": "4"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 67,
+      "y": 52,
+      "label": "8"
+     },
+     {
+      "id": "f1",
+      "team": "t",
+      "x": 48,
+      "y": 24,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 55.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b3",
+      "x": 67.6,
+      "y": 52.6
+     },
+     {
+      "id": "b1",
+      "x": 46.4,
+      "y": 57.1
+     },
+     {
+      "id": "b2",
+      "x": 53.8,
+      "y": 57.1
+     }
+    ],
+    "steps": [
+     {
+      "label": "Genau hinschauen",
+      "say": "Spieler acht hat den Ball. Spieler neun schaut genau hin: Wie nimmt Spieler acht den Ball mit?",
+      "moves": [
+       {
+        "who": "r9",
+        "to": [
+         66,
+         50
+        ],
+        "type": "blick"
+       }
+      ]
+     },
+     {
+      "label": "Schlechte Annahme",
+      "say": "Spieler acht nimmt den Ball zu weit mit, er springt ihm vom Fuß.",
+      "moves": [
+       {
+        "who": "b3",
+        "to": [
+         62,
+         44
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Sofort pressen",
+      "say": "Das ist der Moment. Spieler neun presst sofort und erobert den Ball. Spieler elf rückt mit in die Mitte. Damit ist der Angriff vorbei, und die Teams tauschen die Rollen.",
+      "moves": [
+       {
+        "who": "r9",
+        "to": [
+         61.4,
+         43.4
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r11",
+        "to": [
+         46,
+         40
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Im Strafraum eng am Gegner sein.",
+   "title": "Eng dran im Strafraum",
+   "text": "Kommt ein Angreifer an den Strafraum, muss der Verteidiger schnell eng an ihn heran und den Schuss blocken. Der zweite Verteidiger stellt mit seinem Körper den Pass zum nächsten Angreifer zu.",
+   "board": {
+    "players": [
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50,
+      "y": 8,
+      "label": "TW"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 42,
+      "y": 36,
+      "label": "11"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 64,
+      "y": 40,
+      "label": "9"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 30,
+      "y": 30,
+      "label": "4"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 74,
+      "y": 44,
+      "label": "8"
+     },
+     {
+      "id": "f1",
+      "team": "t",
+      "x": 55,
+      "y": 25,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 55.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b3",
+      "x": 30.6,
+      "y": 30.6
+     },
+     {
+      "id": "b1",
+      "x": 46.4,
+      "y": 57.1
+     },
+     {
+      "id": "b2",
+      "x": 53.8,
+      "y": 57.1
+     }
+    ],
+    "steps": [
+     {
+      "label": "Eng heran",
+      "say": "Spieler vier dribbelt zum Strafraum. Spieler elf läuft schnell eng an ihn heran. Spieler neun stellt sich in den Passweg zum Springer.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         34,
+         20
+        ],
+        "type": "dribbling",
+        "ball": "b3"
+       },
+       {
+        "who": "r11",
+        "to": [
+         39,
+         15
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r9",
+        "to": [
+         46,
+         26
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Schuss geblockt",
+      "say": "Spieler vier schießt, aber Spieler elf ist eng dran und blockt den Schuss. Es gibt keinen Punkt für Team Neon, und die Teams tauschen die Rollen.",
+      "moves": [
+       {
+        "who": "b3",
+        "to": [
+         39.6,
+         15.6
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

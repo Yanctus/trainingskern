@@ -1,0 +1,643 @@
+{
+ "title": "Zu dritt pressen in der Raute",
+ "code": "UE-230",
+ "kind": "Spielform",
+ "focuses": [
+  "Verteidigen",
+  "Umschalten",
+  "Zusammenspiel"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 8,
+ "players_max": 8,
+ "field_size": "23 x 27 m",
+ "description": "Vier Spieler halten den Ball auf den Hütchen einer Raute, drei Mittelfeldspieler pressen gemeinsam. Jeder Pass quer durch die Mitte der Raute gibt einen Punkt für die Ballbesitzer. Erobern die drei den Ball, spielen sie sofort zum Stürmer, der auf zwei Minitore abschließt. Nach jedem Treffer tauschen die Teams die Aufgaben.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 23 mal 27 Metern. In der Mitte vier Hütchen als Raute, oben zwei Minitore.",
+  "Verteilen: Team Rot steht zu viert auf den Hütchen der Raute. Drei Spieler von Team Neon pressen in der Mitte, der Stürmer von Team Neon wartet vor den Minitoren. Der Trainer steht an der Seite mit Bällen.",
+  "Ablauf: Team Rot hält den Ball und darf innen und außen um die Raute passen. Team Neon presst zu dritt, erobert den Ball und spielt sofort zum Stürmer.",
+  "Wertung und Wechsel: Jeder Pass durch die Mitte gibt einen Punkt für Team Rot, jeder Treffer des Stürmers einen Punkt für Team Neon. Nach einem Treffer tauschen die Teams die Aufgaben."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Als Einheit pressen und die Passwege zustellen",
+  "Kompakt bleiben, damit kein Pass durch die Mitte geht",
+  "Laut rufen: schieben, pressen, Schulter",
+  "Nach dem Ballgewinn den Kopf heben und den Stürmer suchen"
+ ],
+ "materials": [
+  "2 Minitore",
+  "4 Hütchen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Zu dritt pressen in der Raute. Drei Mittelfeldspieler arbeiten zusammen, erobern den Ball und spielen schnell zum Stürmer.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 28.7,
+    "y": 5,
+    "w": 42.6,
+    "h": 50
+   }
+  ],
+  "goals": [
+   {
+    "x": 36.5,
+    "y": 5,
+    "side": "top"
+   },
+   {
+    "x": 63.5,
+    "y": 5,
+    "side": "top"
+   }
+  ],
+  "cones": [
+   {
+    "x": 50,
+    "y": 10.3,
+    "color": "orange"
+   },
+   {
+    "x": 30.6,
+    "y": 30,
+    "color": "orange"
+   },
+   {
+    "x": 69.4,
+    "y": 30,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 51.8,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "r4",
+    "team": "b",
+    "x": 50,
+    "y": 13,
+    "label": "4"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 33,
+    "y": 30,
+    "label": "7"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 67,
+    "y": 30,
+    "label": "11"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 50,
+    "y": 49,
+    "label": "5"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 50,
+    "y": 28.5,
+    "label": "6"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 41.5,
+    "y": 40,
+    "label": "8"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 58.5,
+    "y": 40,
+    "label": "10"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 59,
+    "y": 8,
+    "label": "9"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 79,
+    "y": 30,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 50.6,
+    "y": 13.6
+   },
+   {
+    "id": "s1",
+    "x": 82.6,
+    "y": 33.5
+   },
+   {
+    "id": "s2",
+    "x": 79,
+    "y": 33.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Ball halten",
+    "say": "Team Rot hält den Ball in der Raute, und jeder Pass quer durch die Mitte gibt einen Punkt für Team Rot. Spieler vier spielt zu Spieler elf. Team Neon schiebt gemeinsam: Spieler zehn läuft an, Spieler sechs und Spieler acht machen die Mitte eng.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       67.6,
+       30.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n10",
+      "to": [
+       64,
+       25
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n6",
+      "to": [
+       53,
+       30
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n8",
+      "to": [
+       48,
+       38
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Abgefangen",
+    "say": "Spieler elf will zu Spieler fünf passen. Aber Spieler acht ahnt den Pass, startet und fängt den Ball ab.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       57,
+       41.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       57.6,
+       42.1
+      ],
+      "type": "pass",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Kopf hoch",
+    "say": "Spieler acht hebt sofort den Kopf und sieht Spieler neun vorn bei den Minitoren. Er spielt schnell zu ihm.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       58.5,
+       23
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b1",
+      "to": [
+       59.6,
+       8.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Abschluss: Punkt",
+    "say": "Spieler neun schießt ins rechte Minitor, und das gibt einen Punkt für Team Neon. Dann tauschen die Teams die Aufgaben: Jetzt hält Team Neon den Ball in der Raute, und Team Rot presst.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       63.5,
+       5.3
+      ],
+      "type": "pass"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 28.7,
+    "y1": 58.6,
+    "x2": 71.3,
+    "y2": 58.6,
+    "text": "23 m"
+   },
+   {
+    "x1": 88,
+    "y1": 5,
+    "x2": 88,
+    "y2": 55,
+    "text": "27 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Einer presst, zwei sichern ab.",
+   "title": "Einer presst, zwei sichern",
+   "text": "Einer läuft den Ballführenden an, die beiden anderen stellen die Passwege zu. So bleibt die Form zu dritt erhalten. Der Gegner findet keinen freien Mitspieler und macht einen Fehler.",
+   "board": {
+    "players": [
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 50,
+      "y": 13,
+      "label": "4"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 33,
+      "y": 30,
+      "label": "7"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 67,
+      "y": 30,
+      "label": "11"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 50,
+      "y": 49,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 50,
+      "y": 28.5,
+      "label": "6"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 41.5,
+      "y": 40,
+      "label": "8"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 58.5,
+      "y": 40,
+      "label": "10"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 59,
+      "y": 8,
+      "label": "9"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 79,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 33.6,
+      "y": 30.6
+     },
+     {
+      "id": "s1",
+      "x": 82.6,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 79,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Passwege zu",
+      "say": "Spieler sieben hat den Ball. Spieler acht läuft ihn an und macht den Weg nach vorn zu. Spieler sechs stellt die Mitte zu, und Spieler zehn sichert den Pass nach hinten.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         37,
+         26
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n6",
+        "to": [
+         46,
+         29
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n10",
+        "to": [
+         46,
+         44
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Fehler erzwungen: Punkt",
+      "say": "Spieler sieben spielt doch zu Spieler fünf, und Spieler zehn fängt den Ball ab. Er spielt sofort zu Spieler neun, und der trifft. Das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         46.6,
+         44.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         59.6,
+         8.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         63.5,
+         5.3
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Spieler sechs deckt von hinten.",
+   "title": "Von hinten decken",
+   "text": "Spieler sechs steht jetzt hinter dem Mittelfeldspieler von Team Rot und deckt ihn ganz eng. Der muss sich vorn freilaufen und direkt spielen. Die beiden anderen Pressingspieler müssen dafür mehr Raum abdecken.",
+   "board": {
+    "players": [
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 50,
+      "y": 13,
+      "label": "4"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 33,
+      "y": 30,
+      "label": "7"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 67,
+      "y": 30,
+      "label": "11"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 47,
+      "y": 48,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 55.5,
+      "y": 53.5,
+      "label": "6"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 41.5,
+      "y": 32,
+      "label": "8"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 58.5,
+      "y": 32,
+      "label": "10"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 59,
+      "y": 8,
+      "label": "9"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 79,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 13.6
+     },
+     {
+      "id": "s1",
+      "x": 82.6,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 79,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Mehr Raum abdecken",
+      "say": "Spieler sechs steht hinter Spieler fünf. Spieler vier spielt zu Spieler sieben. Spieler acht läuft an, und Spieler zehn schiebt zur Mitte.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         33.6,
+         30.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n8",
+        "to": [
+         37.5,
+         28
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n10",
+        "to": [
+         55,
+         34
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Von hinten erobert",
+      "say": "Spieler sieben spielt zu Spieler fünf. Spieler sechs kommt von hinten, läuft vor ihn und fängt den Ball ab.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         49,
+         44
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n6",
+        "to": [
+         43.5,
+         43.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         44.1,
+         44.1
+        ],
+        "type": "pass",
+        "delay": 0.4
+       }
+      ]
+     },
+     {
+      "label": "Konter: Punkt",
+      "say": "Spieler sechs hebt den Kopf, sieht Spieler neun und spielt sofort zu ihm. Spieler neun trifft, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         51.5,
+         25.5
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         59.6,
+         8.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         63.5,
+         5.3
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

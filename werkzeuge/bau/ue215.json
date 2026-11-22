@@ -1,0 +1,695 @@
+{
+ "title": "Passfolge mit zwei Doppelpässen",
+ "code": "UE-215",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel",
+  "Ballannahme"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 6,
+ "players_max": 8,
+ "field_size": "18 x 14 m",
+ "description": "Eine feste Passfolge über vier Stationen mit sechs Spielern. Nach einem kurzen Pass kommen zwei Doppelpässe, dann dribbelt der letzte Spieler an und spielt zurück zum Start. Jeder läuft seinem Pass hinterher zur nächsten Station. Nach einer Weile läuft die Folge über die andere Seite.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 14 Metern mit sechs Hütchen: Start oben, links zwei Stationen, Ende unten und rechts zwei Stationen für die andere Seite.",
+  "Verteilen: Zwei Spieler am Start, einer mit Ball, je einer an den zwei Stationen links und zwei am Ende. Der Trainer steht oben rechts mit Bällen.",
+  "Ablauf: Pass vom Start nach links oben, Doppelpass mit links unten, Pass zum Ende, Doppelpass mit links unten. Dann dribbelt der Spieler vom Ende an und spielt zurück zum Start.",
+  "Wechsel: Jeder läuft seinem Pass hinterher zur nächsten Station. Nach ein paar Minuten läuft die Folge über die rechte Seite."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Den Körper öffnen und mit dem hinteren Fuß annehmen",
+  "Flach, genau und mit der richtigen Härte passen",
+  "Wenn möglich mit einem Kontakt spielen",
+  "Sich vom Hütchen lösen und laut den Ball fordern"
+ ],
+ "materials": [
+  "6 Hütchen",
+  "Viele Bälle",
+  "Leibchen"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Passfolge mit zwei Doppelpässen. Der Ball läuft über die linke Seite nach unten und mit einem Doppelpass zurück nach oben zum Start.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 22,
+    "y": 8,
+    "w": 56,
+    "h": 44
+   }
+  ],
+  "goals": [],
+  "cones": [
+   {
+    "x": 43,
+    "y": 11,
+    "color": "orange"
+   },
+   {
+    "x": 24,
+    "y": 17,
+    "color": "orange"
+   },
+   {
+    "x": 21,
+    "y": 40,
+    "color": "orange"
+   },
+   {
+    "x": 45,
+    "y": 50.5,
+    "color": "orange"
+   },
+   {
+    "x": 76,
+    "y": 17,
+    "color": "orange"
+   },
+   {
+    "x": 79,
+    "y": 40,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 48,
+    "y": 10.5,
+    "label": "9"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 57,
+    "y": 8,
+    "label": "8"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 29,
+    "y": 20,
+    "label": "11"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 26,
+    "y": 40,
+    "label": "4"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 50,
+    "y": 47,
+    "label": "10"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 59,
+    "y": 49,
+    "label": "7"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 88,
+    "y": 12,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 48.6,
+    "y": 11.1
+   },
+   {
+    "id": "s1",
+    "x": 91.6,
+    "y": 15.5
+   },
+   {
+    "id": "s2",
+    "x": 88,
+    "y": 15.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pass",
+    "say": "Spieler neun spielt flach zu Spieler elf. Spieler elf löst sich vom Hütchen und nimmt den Ball mit offenem Körper an.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       29.6,
+       20.6
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Doppelpass mit Spieler vier",
+    "say": "Spieler elf spielt zu Spieler vier und startet nach innen. Spieler vier legt den Ball direkt in seinen Lauf zurück.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       26.6,
+       40.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n11",
+      "to": [
+       37,
+       33
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       37.6,
+       33.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Pass zum Ende",
+    "say": "Spieler elf spielt weiter zu Spieler zehn am Ende. Spieler vier rückt gleichzeitig ein Stück nach unten.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       47.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n4",
+      "to": [
+       34,
+       45
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Ablage in den Lauf",
+    "say": "Spieler zehn spielt zu Spieler vier und läuft los. Spieler vier legt den Ball vor ihn, sodass er im Lauf annehmen kann.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       34.6,
+       45.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n10",
+      "to": [
+       51,
+       35
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       51.6,
+       35.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zurück zum Start",
+    "say": "Spieler zehn dribbelt nach oben und spielt genau zu Spieler acht am Start. Die Runde ist geschafft. Alle laufen ihrem Pass hinterher zur nächsten Station, und Spieler acht startet die nächste Runde.",
+    "moves": [
+     {
+      "who": "n10",
+      "to": [
+       51,
+       25
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       57.6,
+       8.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n9",
+      "to": [
+       46,
+       16
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n9",
+      "to": [
+       29,
+       20
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n11",
+      "to": [
+       26,
+       40
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n4",
+      "to": [
+       50,
+       47
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n10",
+      "to": [
+       66,
+       10
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 22,
+    "y1": 58.6,
+    "x2": 78,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 96,
+    "y1": 8,
+    "x2": 96,
+    "y2": 52,
+    "text": "14 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Die Folge läuft über die andere Seite.",
+   "title": "Andere Seite",
+   "text": "Jetzt läuft dieselbe Folge über die rechte Seite. So kommen die Pässe aus einem anderen Winkel, und jeder muss auch mit dem schwächeren Fuß annehmen und passen.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 48,
+      "y": 10.5,
+      "label": "9"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 57,
+      "y": 8,
+      "label": "8"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 71,
+      "y": 20,
+      "label": "11"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 74,
+      "y": 40,
+      "label": "4"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 50,
+      "y": 47,
+      "label": "10"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 59,
+      "y": 49,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 88,
+      "y": 12,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 48.6,
+      "y": 11.1
+     },
+     {
+      "id": "s1",
+      "x": 91.6,
+      "y": 15.5
+     },
+     {
+      "id": "s2",
+      "x": 88,
+      "y": 15.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Nach rechts",
+      "say": "Spieler neun spielt jetzt nach rechts zu Spieler elf. Er nimmt mit einem Fuß an und passt mit dem anderen.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         71.6,
+         20.6
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Zwei Doppelpässe",
+      "say": "Doppelpass mit Spieler vier, dann der Pass zu Spieler zehn. Spieler vier rückt nach unten und legt für Spieler zehn in den Lauf.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         74.6,
+         40.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n11",
+        "to": [
+         63,
+         33
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         63.6,
+         33.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         47.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n4",
+        "to": [
+         66,
+         42
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         66.6,
+         42.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n10",
+        "to": [
+         49,
+         35
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         49.6,
+         35.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Zurück zum Start",
+      "say": "Spieler zehn dribbelt nach oben und spielt zu Spieler acht am Start. Dann läuft jeder seinem Pass hinterher.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         49,
+         25
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         57.6,
+         8.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Ein Minitor zum Abschluss.",
+   "title": "Mit Minitor",
+   "text": "Oben links steht jetzt ein Minitor. Spieler zehn spielt am Ende einen Doppelpass mit dem Start und schließt direkt ab. Danach spielt der Trainer den nächsten Ball zum Start.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 29,
+      "y": 20,
+      "label": "9"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 48,
+      "y": 10.5,
+      "label": "8"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 26,
+      "y": 40,
+      "label": "11"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 35,
+      "y": 47,
+      "label": "4"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 51,
+      "y": 32,
+      "label": "10"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 59,
+      "y": 49,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 88,
+      "y": 12,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 51.6,
+      "y": 32.6
+     },
+     {
+      "id": "s1",
+      "x": 91.6,
+      "y": 15.5
+     },
+     {
+      "id": "s2",
+      "x": 88,
+      "y": 15.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Doppelpass mit dem Start",
+      "say": "Spieler zehn hat den Ball nach der Ablage. Er dribbelt nach oben, spielt zu Spieler acht und läuft weiter. Spieler acht legt den Ball direkt vor ihn.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         51,
+         25
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         48.6,
+         11.1
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n10",
+        "to": [
+         41,
+         19
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         41.6,
+         19.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Abschluss: Punkt",
+      "say": "Spieler zehn schießt flach und genau ins Minitor, und das gibt einen Punkt für Spieler zehn. Der Trainer spielt Spieler acht einen neuen Ball zu, und die Folge beginnt von vorn.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         35,
+         8.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "s2",
+        "to": [
+         48.6,
+         11.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "goals": [
+     {
+      "x": 35,
+      "y": 8,
+      "side": "top"
+     }
+    ]
+   }
+  }
+ ]
+}

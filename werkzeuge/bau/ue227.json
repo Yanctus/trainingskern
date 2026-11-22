@@ -1,0 +1,655 @@
+{
+ "title": "Hinterlaufen zum Abschluss",
+ "code": "UE-227",
+ "kind": "Übungsform",
+ "focuses": [
+  "Torschuss",
+  "Passspiel",
+  "Bewegung"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 7,
+ "players_max": 11,
+ "field_size": "37 x 41 m",
+ "description": "Eine Passfolge mit vier Stangen vor dem Strafraum und einem Torwart. Der Starter spielt einen Doppelpass mit dem Spieler an der unteren Stange und passt dann zur Spitze. Der erste Passgeber läuft im Bogen hinter dem Starter in die Mitte, bekommt den Ball von der Spitze vorgelegt und schließt ab. Gespielt wird abwechselnd über die linke und die rechte Seite.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 37 mal 41 Metern vor einem Jugendtor mit Torwart. Zwei Stangen stehen auf der Strafraumlinie, zwei weitere etwa 14 Meter davor.",
+  "Verteilen: An jeder Stange steht ein Spieler von Team Neon. Die anderen warten mit Bällen am Start unten in der Mitte. Der Trainer steht an der Seite mit Ersatzbällen.",
+  "Ablauf: Doppelpass mit der unteren Stange, dann Pass zur Spitze an der oberen Stange. Die Spitze legt in die Mitte ab, und der dritte Mann kommt im Bogen, nimmt den Ball in den Strafraum mit und schießt.",
+  "Wertung und Wechsel: Jeder Treffer gibt einen Punkt. Der Schütze stellt sich am Start an, der Starter rückt auf seinen Platz. Nach jeder Runde wechselt die Seite."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Den Lauf so timen, dass er den Pass im Lauf trifft",
+  "Genau und mit dem richtigen Tempo passen",
+  "Vor dem Abschluss kurz zum Torwart schauen",
+  "Flach und in die Ecken schießen"
+ ],
+ "materials": [
+  "1 Jugendtor",
+  "4 Stangen",
+  "Viele Bälle",
+  "Leibchen"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Hinterlaufen zum Abschluss. Doppelpass, Pass zur Spitze, und der dritte Mann kommt im Bogen in die Mitte und schießt.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 27.5,
+    "y": 5,
+    "w": 45,
+    "h": 50
+   },
+   {
+    "type": "rect",
+    "x": 38.6,
+    "y": 5,
+    "w": 22.8,
+    "h": 6.5
+   },
+   {
+    "type": "line",
+    "x1": 27.5,
+    "y1": 25,
+    "x2": 72.5,
+    "y2": 25,
+    "dashed": false
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "jugend"
+   }
+  ],
+  "cones": [
+   {
+    "x": 39,
+    "y": 24.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 61,
+    "y": 24.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 39,
+    "y": 40.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 61,
+    "y": 40.5,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 39,
+    "y": 26.5,
+    "label": "9"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 61,
+    "y": 26.5,
+    "label": "10"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 39,
+    "y": 42.5,
+    "label": "11"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 61,
+    "y": 42.5,
+    "label": "7"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 49,
+    "y": 55,
+    "label": "8"
+   },
+   {
+    "id": "k",
+    "team": "t",
+    "x": 50,
+    "y": 8.5,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 19,
+    "y": 30,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 49.6,
+    "y": 55.6
+   },
+   {
+    "id": "s1",
+    "x": 22.6,
+    "y": 33.5
+   },
+   {
+    "id": "s2",
+    "x": 19,
+    "y": 33.5
+   },
+   {
+    "id": "s3",
+    "x": 44.5,
+    "y": 58
+   }
+  ],
+  "steps": [
+   {
+    "label": "Doppelpass",
+    "say": "Spieler acht spielt zu Spieler elf und läuft ein paar Schritte nach vorn. Spieler elf legt den Ball direkt zurück.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       39.6,
+       43.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n8",
+      "to": [
+       47,
+       47
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       47.6,
+       47.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Pass zur Spitze",
+    "say": "Spieler acht spielt direkt zu Spieler neun an der oberen Stange. Gleichzeitig startet Spieler elf im Bogen hinter Spieler acht herum.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       39.6,
+       27.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n11",
+      "to": [
+       44,
+       50.5
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n11",
+      "to": [
+       52.5,
+       49.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n11",
+      "to": [
+       55,
+       37
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Ablage in den Lauf",
+    "say": "Spieler neun legt den Ball direkt in die Mitte, genau in den Lauf von Spieler elf. Der schaut kurz hoch zum Torwart.",
+    "moves": [
+     {
+      "who": "n11",
+      "to": [
+       52,
+       26
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       52.6,
+       26.6
+      ],
+      "type": "pass",
+      "delay": 0.2
+     },
+     {
+      "who": "n11",
+      "to": [
+       50.5,
+       8
+      ],
+      "type": "blick",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Abschluss: Punkt",
+    "say": "Spieler elf nimmt den Ball mit dem ersten Kontakt in den Strafraum mit und schießt flach ins Eck. Das gibt einen Punkt für Spieler elf. Danach stellt er sich am Start an, Spieler acht rückt auf seinen Platz, und die nächste Runde läuft über die rechte Seite.",
+    "moves": [
+     {
+      "who": "n11",
+      "to": [
+       51,
+       18
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       55.5,
+       5.3
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 27.5,
+    "y1": 58.6,
+    "x2": 72.5,
+    "y2": 58.6,
+    "text": "37 m"
+   },
+   {
+    "x1": 80,
+    "y1": 5,
+    "x2": 80,
+    "y2": 55,
+    "text": "41 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Den Ball vor den Läufer spielen.",
+   "title": "Vor den Läufer spielen",
+   "text": "Die Ablage kommt nicht in die Füße, sondern ein Stück vor den Läufer in den freien Raum. So muss er nicht abbremsen und kann den Schwung bis zum Abschluss mitnehmen. Ein Pass hinter den Läufer macht den Angriff langsam.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 39,
+      "y": 26.5,
+      "label": "9"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 61,
+      "y": 26.5,
+      "label": "10"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 50,
+      "y": 36.5,
+      "label": "11"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 61,
+      "y": 42.5,
+      "label": "7"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 49,
+      "y": 55,
+      "label": "8"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50,
+      "y": 8.5,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 19,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 39.6,
+      "y": 27.1
+     },
+     {
+      "id": "s1",
+      "x": 22.6,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 19,
+      "y": 33.5
+     },
+     {
+      "id": "s3",
+      "x": 44.5,
+      "y": 58
+     }
+    ],
+    "steps": [
+     {
+      "label": "In den Lauf",
+      "say": "Spieler neun spielt den Ball nicht in die Füße, sondern ein Stück vor Spieler elf in den freien Raum. So muss Spieler elf nicht abbremsen.",
+      "moves": [
+       {
+        "who": "n11",
+        "to": [
+         52,
+         22
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         52.6,
+         22.6
+        ],
+        "type": "pass",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Ohne Abbremsen: Punkt",
+      "say": "Spieler elf schaut kurz zum Torwart und schießt ohne abzubremsen ins lange Eck. Das gibt einen Punkt für Spieler elf.",
+      "moves": [
+       {
+        "who": "n11",
+        "to": [
+         50.5,
+         6
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         44.5,
+         5.3
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Alle vier Spieler an den Stangen sind dabei.",
+   "title": "Alle vier spielen mit",
+   "text": "Jetzt kommen alle vier Spieler an den Stangen in die Passfolge, und es wird möglichst direkt gespielt. Der Ball geht quer, zur Spitze, zum anderen Stangen-Spieler und dann zurück in den Lauf des dritten Mannes. Der schießt direkt, ohne den Ball anzunehmen.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 39,
+      "y": 26.5,
+      "label": "9"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 61,
+      "y": 26.5,
+      "label": "10"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 39,
+      "y": 42.5,
+      "label": "11"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 61,
+      "y": 42.5,
+      "label": "7"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 49,
+      "y": 55,
+      "label": "8"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50,
+      "y": 8.5,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 19,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 49.6,
+      "y": 55.6
+     },
+     {
+      "id": "s1",
+      "x": 22.6,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 19,
+      "y": 33.5
+     },
+     {
+      "id": "s3",
+      "x": 44.5,
+      "y": 58
+     }
+    ],
+    "steps": [
+     {
+      "label": "Quer spielen",
+      "say": "Spieler acht spielt zu Spieler elf, und Spieler elf spielt direkt quer zu Spieler sieben.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         39.6,
+         43.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         61.6,
+         43.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Zur Spitze",
+      "say": "Spieler sieben spielt schräg zu Spieler neun. Gleichzeitig startet Spieler elf hinten herum Richtung Mitte.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         39.6,
+         27.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n11",
+        "to": [
+         45,
+         47.5
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n11",
+        "to": [
+         50,
+         43
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Weiter und ablegen",
+      "say": "Spieler neun spielt direkt zu Spieler zehn, und Spieler zehn legt den Ball zurück in den Lauf von Spieler elf.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         61.6,
+         27.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n11",
+        "to": [
+         51,
+         24
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "b1",
+        "to": [
+         51.6,
+         24.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Direkt abschließen: Punkt",
+      "say": "Spieler elf schaut kurz zum Torwart und schießt direkt, ohne den Ball anzunehmen. Das gibt einen Punkt für Spieler elf. Danach rücken alle eine Position weiter.",
+      "moves": [
+       {
+        "who": "n11",
+        "to": [
+         50.5,
+         6.5
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         45,
+         5.3
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

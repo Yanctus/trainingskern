@@ -1,0 +1,593 @@
+{
+ "title": "Passen und pressen im Viereck",
+ "code": "UE-237",
+ "kind": "Übungsform",
+ "focuses": [
+  "Erwärmung",
+  "Passspiel",
+  "Ballannahme"
+ ],
+ "age_groups": [
+  "F-Jugend",
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 10,
+ "players_min": 4,
+ "players_max": 4,
+ "field_size": "14 x 14 m",
+ "description": "Ein Aufwärmen mit Pass und Pressing um ein kleines Viereck. Vier Spieler passen sich den Ball zu, und nach dem Pass durchs Viereck läuft der Passgeber sofort hinterher und presst. Der Annehmende nimmt den Ball nach außen mit, weg vom Druck, und spielt quer weiter. Nach einem Doppelpass in der Mitte geht es von vorn los, und jeder ist eine Station weiter.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 14 mal 14 Metern, in der Mitte ein kleines Viereck von knapp 4 mal 4 Metern aus vier Hütchen.",
+  "Verteilen: Vier Spieler: einer oben rechts mit Ball, einer oben, einer unten und einer rechts. Weitere Gruppen bekommen ein eigenes Feld. Der Trainer steht links mit Bällen.",
+  "Ablauf: Pass nach oben und hinterherlaufen. Der Spieler oben spielt direkt durchs Viereck nach unten und presst sofort. Unten den Ball nach außen mitnehmen, quer nach rechts passen, dann Doppelpass mit dem Spieler in der Mitte.",
+  "Wechsel: Jeder folgt seinem Weg auf die nächste Station. Nach dem Doppelpass startet der Spieler oben rechts die nächste Runde."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Den ersten Kontakt weg vom pressenden Spieler mitnehmen",
+  "Nach dem Pass schnell hinterher und echten Druck machen",
+  "Genau und mit dem richtigen Tempo passen",
+  "Mit links und rechts passen und dabei laut rufen"
+ ],
+ "materials": [
+  "4 Hütchen",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Passen und pressen im Viereck. Vier Spieler passen um ein kleines Viereck, und nach dem Pass wird sofort gepresst.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   }
+  ],
+  "cones": [
+   {
+    "x": 43.5,
+    "y": 23.5,
+    "color": "orange"
+   },
+   {
+    "x": 56.5,
+    "y": 23.5,
+    "color": "orange"
+   },
+   {
+    "x": 43.5,
+    "y": 36.5,
+    "color": "orange"
+   },
+   {
+    "x": 56.5,
+    "y": 36.5,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 62,
+    "y": 16,
+    "label": "10"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 50,
+    "y": 12,
+    "label": "9"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 50,
+    "y": 48,
+    "label": "8"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 72,
+    "y": 33,
+    "label": "7"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 15,
+    "y": 10,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 62.6,
+    "y": 16.6
+   },
+   {
+    "id": "s1",
+    "x": 16.6,
+    "y": 13.5
+   },
+   {
+    "id": "s2",
+    "x": 13,
+    "y": 13.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pass nach oben",
+    "say": "Spieler zehn passt zu Spieler neun nach oben und läuft hinterher.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       12.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n10",
+      "to": [
+       58,
+       8
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Durch und pressen",
+    "say": "Spieler acht schaut schon, wo der Druck herkommt. Spieler neun spielt direkt durchs Viereck zu Spieler acht und sprintet sofort hinterher, um zu pressen.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       50,
+       31
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       48.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n9",
+      "to": [
+       48,
+       40
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Weg vom Druck",
+    "say": "Spieler acht nimmt den Ball nach außen mit, weg von Spieler neun. Dann passt er quer zu Spieler sieben.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       40,
+       49
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       72.6,
+       33.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Doppelpass",
+    "say": "Spieler acht läuft in die Mitte des Vierecks. Spieler sieben spielt ihn an, und Spieler acht legt direkt zurück. Spieler sieben läuft dabei nach oben rechts.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       50,
+       30
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       30.6
+      ],
+      "type": "pass",
+      "delay": 0.4
+     },
+     {
+      "who": "n7",
+      "to": [
+       64,
+       21
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       64.6,
+       21.6
+      ],
+      "type": "pass",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Neu starten",
+    "say": "Jetzt ist jeder eine Station weiter. Spieler acht läuft nach rechts, und Spieler sieben startet die nächste Runde mit dem Pass nach oben zu Spieler zehn.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       72,
+       33
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       58.6,
+       8.6
+      ],
+      "type": "pass",
+      "delay": 0.3
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "14 m"
+   },
+   {
+    "x1": 83,
+    "y1": 5,
+    "x2": 83,
+    "y2": 55,
+    "text": "14 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Der erste Kontakt weg vom Druck.",
+   "title": "Weg vom Druck",
+   "text": "Wer den Ball bekommt, schaut vorher, woher der Druck kommt. Dann stellt er sich offen hin und nimmt den Ball mit dem ersten Kontakt zur Seite mit, weg vom pressenden Spieler. So hat er Zeit für den nächsten Pass.",
+   "board": {
+    "players": [
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 62,
+      "y": 16,
+      "label": "10"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 50,
+      "y": 12,
+      "label": "9"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 50,
+      "y": 48,
+      "label": "8"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 72,
+      "y": 33,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 15,
+      "y": 10,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 12.6
+     },
+     {
+      "id": "s1",
+      "x": 16.6,
+      "y": 13.5
+     },
+     {
+      "id": "s2",
+      "x": 13,
+      "y": 13.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Vorher schauen",
+      "say": "Spieler neun spielt durchs Viereck und presst sofort. Spieler acht schaut vorher, wo Spieler neun herkommt.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         50,
+         31
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         48.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n9",
+        "to": [
+         48,
+         38
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Zur Seite mitnehmen",
+      "say": "Spieler acht nimmt den Ball mit dem ersten Kontakt nach links mit, weg von Spieler neun. Spieler neun kommt nicht mehr an den Ball.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         40,
+         49
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n9",
+        "to": [
+         45,
+         42
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Quer weiter",
+      "say": "Jetzt hat Spieler acht Zeit und passt sauber quer zu Spieler sieben.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         72.6,
+         33.6
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Größeres Viereck, andere Richtung.",
+   "title": "Größer, andersherum",
+   "text": "Das Viereck wird größer, und es geht in die andere Richtung, also über links. Der pressende Spieler muss jetzt weiter laufen und noch schneller hinterher sein.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 35,
+      "y": 10,
+      "label": "7"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 50,
+      "y": 8,
+      "label": "10"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 50,
+      "y": 52,
+      "label": "9"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 28,
+      "y": 31,
+      "label": "8"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 15,
+      "y": 10,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 35.6,
+      "y": 10.6
+     },
+     {
+      "id": "s1",
+      "x": 16.6,
+      "y": 13.5
+     },
+     {
+      "id": "s2",
+      "x": 13,
+      "y": 13.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Pass nach oben",
+      "say": "Jetzt startet Spieler sieben oben links. Er passt zu Spieler zehn nach oben und läuft hinterher.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         8.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n7",
+        "to": [
+         43,
+         6
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Weiter pressen",
+      "say": "Spieler zehn spielt durchs große Viereck zu Spieler neun und sprintet den langen Weg hinterher.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         52.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n10",
+        "to": [
+         54,
+         40
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Nach außen und quer",
+      "say": "Spieler neun nimmt den Ball nach rechts mit, weg vom Druck, und passt quer zu Spieler acht. Dann geht es mit dem Doppelpass weiter wie vorher.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         60,
+         53
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         28.6,
+         31.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "cones": [
+     {
+      "x": 38.5,
+      "y": 18.5,
+      "color": "orange",
+      "id": "h1"
+     },
+     {
+      "x": 61.5,
+      "y": 18.5,
+      "color": "orange",
+      "id": "h2"
+     },
+     {
+      "x": 38.5,
+      "y": 41.5,
+      "color": "orange",
+      "id": "h3"
+     },
+     {
+      "x": 61.5,
+      "y": 41.5,
+      "color": "orange",
+      "id": "h4"
+     }
+    ]
+   }
+  }
+ ]
+}

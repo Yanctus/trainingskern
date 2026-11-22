@@ -1,0 +1,698 @@
+{
+ "title": "Schulterblick und losdribbeln",
+ "code": "UE-223",
+ "kind": "Übungsform",
+ "focuses": [
+  "Ballannahme",
+  "Dribbling",
+  "Erwärmung"
+ ],
+ "age_groups": [
+  "F-Jugend",
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 10,
+ "players_min": 8,
+ "players_max": 8,
+ "field_size": "14 x 18 m",
+ "description": "Ein Aufwärmspiel für den Schulterblick. Ein Angreifer läuft dem Trainer entgegen, ein Verteidiger läuft eng hinterher. Vor der Annahme schaut der Angreifer über die Schulter, nimmt den Ball weg vom Verteidiger um die andere Puppe mit und schießt in ein Minitor. Danach wird der Verteidiger zum Angreifer.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 14 mal 18 Metern. Oben drei Minitore, in der Mitte zwei Puppen oder Stangen nebeneinander, darunter ein Hütchen als Start.",
+  "Verteilen: Team Neon wartet rechts, Team Rot links neben dem Feld. Ein Angreifer und ein Verteidiger sind im Feld. Der Trainer steht unten im Feld mit Bällen.",
+  "Ablauf: Der Angreifer läuft dem Trainer entgegen, der Verteidiger bleibt eng dran, greift aber nicht an. Der Angreifer schaut über die Schulter, nimmt den Ball um die andere Puppe mit und schießt in ein Minitor.",
+  "Wertung und Wechsel: Jeder Treffer gibt einen Punkt für den Angreifer. Dann wird der Verteidiger zum Angreifer, und ein neuer Spieler aus dem anderen Team verteidigt."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Kurz über die Schulter schauen, wo der Verteidiger steht",
+  "Den Körper früh öffnen, damit du alles siehst",
+  "Mit dem ersten Kontakt um die Puppe, weg vom Gegner",
+  "Den Ball eng führen und genau ins Minitor schießen"
+ ],
+ "materials": [
+  "3 Minitore",
+  "2 Puppen oder Stangen",
+  "1 Hütchen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Schulterblick und losdribbeln. Erst schauen, wo der Verteidiger ist, dann mit dem Ball weg von ihm und ab ins Minitor.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 31.25,
+    "y": 5,
+    "w": 37.5,
+    "h": 50
+   }
+  ],
+  "goals": [
+   {
+    "x": 37,
+    "y": 5,
+    "side": "top"
+   },
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top"
+   },
+   {
+    "x": 63,
+    "y": 5,
+    "side": "top"
+   }
+  ],
+  "cones": [
+   {
+    "x": 43.75,
+    "y": 39,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 56.25,
+    "y": 39,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 50,
+    "y": 19,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 50,
+    "y": 24,
+    "label": "4"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 41.5,
+    "y": 13,
+    "label": "6"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 76,
+    "y": 30,
+    "label": "7"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 84.5,
+    "y": 30,
+    "label": "8"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 93,
+    "y": 30,
+    "label": "9"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 24,
+    "y": 30,
+    "label": "2"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 15.5,
+    "y": 30,
+    "label": "3"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 7,
+    "y": 30,
+    "label": "5"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 50,
+    "y": 51.5,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 50.6,
+    "y": 52.1
+   },
+   {
+    "id": "s1",
+    "x": 54,
+    "y": 53.5
+   },
+   {
+    "id": "s2",
+    "x": 46,
+    "y": 53.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Anbieten",
+    "say": "Spieler vier läuft dem Trainer entgegen. Spieler sechs läuft eng hinterher. Er bleibt dicht dran, greift aber nicht an.",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       50,
+       36
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r6",
+      "to": [
+       45,
+       29
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Schulterblick",
+    "say": "Bevor der Ball kommt, schaut Spieler vier über die Schulter. Er sieht: Spieler sechs kommt von links. Dann spielt ihm der Trainer den Ball.",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       40,
+       22
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       36.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Weg vom Gegner",
+    "say": "Spieler vier nimmt den Ball mit dem ersten Kontakt nach rechts mit, weg von Spieler sechs. Er dribbelt um die rechte Puppe herum.",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       55,
+       45
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n4",
+      "to": [
+       62,
+       42
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n4",
+      "to": [
+       62,
+       26
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "r6",
+      "to": [
+       53,
+       31
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     }
+    ]
+   },
+   {
+    "label": "Abschluss: Punkt",
+    "say": "Spieler vier schießt ins rechte Minitor, und das gibt einen Punkt für Spieler vier. Dann ist Spieler sechs der Angreifer, und Spieler sieben aus Team Neon wird der neue Verteidiger.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       63,
+       5.3
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r6",
+      "to": [
+       57,
+       24
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 31.25,
+    "y1": 58.6,
+    "x2": 68.75,
+    "y2": 58.6,
+    "text": "14 m"
+   },
+   {
+    "x1": 72,
+    "y1": 5,
+    "x2": 72,
+    "y2": 55,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Erst schauen, dann entscheiden.",
+   "title": "Erst schauen, dann drehen",
+   "text": "Der Verteidiger kommt nicht immer von derselben Seite. Nur wer vor der Annahme über die Schulter schaut, weiß, wohin der erste Kontakt gehen muss. Wer nicht schaut, dreht oft genau in den Gegner hinein.",
+   "board": {
+    "players": [
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 50,
+      "y": 24,
+      "label": "4"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 58.5,
+      "y": 13,
+      "label": "6"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 76,
+      "y": 30,
+      "label": "7"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 84.5,
+      "y": 30,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 93,
+      "y": 30,
+      "label": "9"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 24,
+      "y": 30,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 15.5,
+      "y": 30,
+      "label": "3"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 7,
+      "y": 30,
+      "label": "5"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 51.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 52.1
+     },
+     {
+      "id": "s1",
+      "x": 54,
+      "y": 53.5
+     },
+     {
+      "id": "s2",
+      "x": 46,
+      "y": 53.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Wo ist der Gegner?",
+      "say": "Diesmal kommt Spieler sechs von rechts. Spieler vier läuft dem Trainer entgegen, schaut über die Schulter und sieht ihn rechts hinter sich. Dann kommt der Ball.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         50,
+         36
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r6",
+        "to": [
+         55,
+         29
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n4",
+        "to": [
+         60,
+         22
+        ],
+        "type": "blick",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         36.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Links herum: Punkt",
+      "say": "Also nimmt Spieler vier den Ball nach links mit, um die linke Puppe herum, und schießt ins linke Minitor. Das gibt einen Punkt für Spieler vier.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         45,
+         45
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n4",
+        "to": [
+         38,
+         42
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "n4",
+        "to": [
+         38,
+         26
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         37,
+         5.3
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "r6",
+        "to": [
+         47,
+         31
+        ],
+        "type": "lauf",
+        "delay": 0.5
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Doppelpass mit dem Spieler am Ende.",
+   "title": "Mit Doppelpass",
+   "text": "Jetzt spielt ein Mitspieler am Ende den Ball. Der Angreifer lässt ihn zurückprallen, setzt sich ab und schaut dabei über die Schulter. Den Rückpass nimmt er mit dem ersten Kontakt weg vom Verteidiger und schießt in ein beliebiges Minitor.",
+   "board": {
+    "players": [
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 50,
+      "y": 24,
+      "label": "4"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 41.5,
+      "y": 13,
+      "label": "6"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 40,
+      "y": 51.5,
+      "label": "7"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 84.5,
+      "y": 30,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 93,
+      "y": 30,
+      "label": "9"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 24,
+      "y": 30,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 15.5,
+      "y": 30,
+      "label": "3"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 7,
+      "y": 30,
+      "label": "5"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 51.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 40.6,
+      "y": 52.1
+     },
+     {
+      "id": "s1",
+      "x": 54,
+      "y": 53.5
+     },
+     {
+      "id": "s2",
+      "x": 46,
+      "y": 53.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Doppelpass",
+      "say": "Spieler vier läuft dem Ball entgegen, Spieler sechs bleibt dicht dran. Spieler sieben spielt zu Spieler vier, und der lässt den Ball direkt zurückprallen.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         50,
+         40
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r6",
+        "to": [
+         45,
+         32
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         40.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         40.6,
+         52.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Absetzen und schauen",
+      "say": "Spieler vier setzt sich nach rechts ab und schaut über die Schulter: Spieler sechs steht links. Dann spielt Spieler sieben den Ball in den Lauf.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         54,
+         35
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n4",
+        "to": [
+         38,
+         30
+        ],
+        "type": "blick",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         54.6,
+         35.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Erster Kontakt weg: Punkt",
+      "say": "Spieler vier nimmt den Ball mit dem ersten Kontakt weg vom Gegner, dribbelt los und schießt ins rechte Minitor. Das gibt einen Punkt für Spieler vier.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         61,
+         26
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         63,
+         5.3
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "r6",
+        "to": [
+         52,
+         30
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

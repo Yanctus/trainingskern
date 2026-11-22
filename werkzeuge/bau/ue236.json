@@ -1,0 +1,688 @@
+{
+ "title": "Pressingwelle drei gegen drei",
+ "code": "UE-236",
+ "kind": "Spielform",
+ "focuses": [
+  "Verteidigen",
+  "Umschalten",
+  "Zusammenspiel"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 8,
+ "players_max": 14,
+ "field_size": "18 x 23 m",
+ "description": "Ein Wellenspiel drei gegen drei mit einem Torwart in jedem Tor. Team Rot greift mit Ball nach oben an, drei Spieler von Team Neon pressen sofort hoch in der Hälfte von Team Rot. Erobert Team Neon den Ball, kontert es sofort aufs untere Tor. Nach jeder Runde wechselt das pressende Team, und die nächste Gruppe kommt ins Feld.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 23 Metern mit Mittellinie. Oben und unten ein Jugendtor mit Torwart.",
+  "Verteilen: Vier Gruppen zu dritt, zwei von Team Neon und zwei von Team Rot. Drei von Team Rot stehen mit Ball in der unteren Hälfte, drei von Team Neon in der oberen. Die anderen Gruppen warten hinter den Toren. Der Trainer steht links mit Bällen.",
+  "Ablauf: Team Rot will nach oben durchspielen und aufs obere Tor schießen. Team Neon presst gemeinsam in die Hälfte von Team Rot, erobert den Ball und kontert aufs untere Tor.",
+  "Wertung und Wechsel: Jeder Treffer gibt einen Punkt. Nach jeder Runde geht das pressende Team raus, das angreifende Team presst jetzt, und die nächste Gruppe greift mit Ball an."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Schnell und als Einheit pressen, alle laufen zusammen los",
+  "Mit dem Körper die Richtung vorgeben, damit ein Mitspieler abfangen kann",
+  "Eng zusammenbleiben, damit niemand durch die Mitte kommt",
+  "Nach Ballgewinn sofort kontern, nach der Runde schnell wechseln"
+ ],
+ "materials": [
+  "2 Jugendtore",
+  "4 Hütchen",
+  "Viele Bälle",
+  "Leibchen in drei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Pressingwelle drei gegen drei. Team Rot greift mit Ball an, und Team Neon presst sofort hoch, um den Ball zu erobern.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 30,
+    "y": 5,
+    "w": 40,
+    "h": 50
+   },
+   {
+    "type": "line",
+    "x1": 30,
+    "y1": 30,
+    "x2": 70,
+    "y2": 30,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "jugend"
+   },
+   {
+    "x": 50,
+    "y": 55,
+    "side": "bottom",
+    "size": "jugend"
+   }
+  ],
+  "cones": [
+   {
+    "x": 30,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 70,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 30,
+    "y": 55,
+    "color": "orange"
+   },
+   {
+    "x": 70,
+    "y": 55,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 37,
+    "y": 18,
+    "label": "9"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 52,
+    "y": 24,
+    "label": "11"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 63,
+    "y": 18,
+    "label": "7"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 31,
+    "y": 46,
+    "label": "10"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 41,
+    "y": 38,
+    "label": "6"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 62,
+    "y": 43,
+    "label": "8"
+   },
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 50,
+    "y": 7,
+    "label": "TW"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 50,
+    "y": 53,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 21,
+    "y": 40,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 41.6,
+    "y": 38.6
+   },
+   {
+    "id": "s1",
+    "x": 22.6,
+    "y": 43.5
+   },
+   {
+    "id": "s2",
+    "x": 19,
+    "y": 43.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Alle pressen",
+    "say": "Spieler sechs hat den Ball. Sofort laufen Spieler neun, Spieler elf und Spieler sieben gleichzeitig in die Hälfte von Team Rot. Spieler elf läuft direkt auf Spieler sechs zu.",
+    "moves": [
+     {
+      "who": "n11",
+      "to": [
+       46,
+       31
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n9",
+      "to": [
+       36,
+       35
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n7",
+      "to": [
+       59,
+       32
+      ],
+      "type": "lauf"
+     }
+    ]
+   },
+   {
+    "label": "Richtung vorgeben",
+    "say": "Spieler elf läuft im Bogen an und macht den Pass nach links zu. Spieler sechs muss nach rechts spielen, zu Spieler acht.",
+    "moves": [
+     {
+      "who": "n11",
+      "to": [
+       42,
+       31
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n11",
+      "to": [
+       37.5,
+       34
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Abgefangen",
+    "say": "Spieler sechs spielt nach rechts, aber Spieler sieben hat den Pass geahnt. Er läuft in den Passweg und fängt den Ball ab, bevor er bei Spieler acht ankommt.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       55,
+       41.2
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       55.6,
+       41.8
+      ],
+      "type": "pass",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Konter: Punkt",
+    "say": "Spieler sieben kontert sofort und schießt ins untere Tor. Das gibt einen Punkt für Team Neon. Dann gehen Spieler sieben, neun und elf raus, Team Rot presst jetzt, und die nächste Gruppe von Team Neon greift mit Ball von oben an.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       57,
+       47
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       54,
+       54.7
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 30,
+    "y1": 58.6,
+    "x2": 70,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 80,
+    "y1": 5,
+    "x2": 80,
+    "y2": 55,
+    "text": "23 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Die Außenzonen.",
+   "title": "Außenzonen",
+   "text": "Links und rechts gibt es eine Außenzone. Erobert Team Neon den Ball in einer Außenzone, gibt das sofort einen Punkt. Darum spielt Team Rot lieber durch die Mitte, und Team Neon muss dort schnell eng zusammenrücken.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 37,
+      "y": 18,
+      "label": "9"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 52,
+      "y": 24,
+      "label": "11"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 63,
+      "y": 18,
+      "label": "7"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 31,
+      "y": 46,
+      "label": "10"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 41,
+      "y": 38,
+      "label": "6"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 62,
+      "y": 43,
+      "label": "8"
+     },
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 50,
+      "y": 7,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 50,
+      "y": 53,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 21,
+      "y": 40,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 41.6,
+      "y": 38.6
+     },
+     {
+      "id": "s1",
+      "x": 22.6,
+      "y": 43.5
+     },
+     {
+      "id": "s2",
+      "x": 19,
+      "y": 43.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Spieler sieben schaut",
+      "say": "Alle drei pressen gleichzeitig, Spieler elf läuft auf Spieler sechs zu. Spieler sieben schaut, wo Spieler acht steht: in der rechten Außenzone.",
+      "moves": [
+       {
+        "who": "n11",
+        "to": [
+         46,
+         31
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n9",
+        "to": [
+         36,
+         35
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n7",
+        "to": [
+         58,
+         30
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n7",
+        "to": [
+         62,
+         43
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Pass nach außen",
+      "say": "Spieler sechs spielt nach außen zu Spieler acht. Spieler sieben sprintet sofort hinterher.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         62.6,
+         43.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n7",
+        "to": [
+         63,
+         37
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Außen erobert: Punkt",
+      "say": "Spieler sieben erobert den Ball in der Außenzone. Das gibt sofort einen Punkt für Team Neon. Darum spielt Team Rot lieber durch die Mitte.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         64.5,
+         41.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n7",
+        "to": [
+         57,
+         40
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     }
+    ],
+    "lines": [
+     {
+      "type": "rect",
+      "x": 30,
+      "y": 5,
+      "w": 40,
+      "h": 50
+     },
+     {
+      "type": "line",
+      "x1": 30,
+      "y1": 30,
+      "x2": 70,
+      "y2": 30,
+      "dashed": true
+     },
+     {
+      "type": "line",
+      "x1": 40,
+      "y1": 5,
+      "x2": 40,
+      "y2": 55,
+      "dashed": true
+     },
+     {
+      "type": "line",
+      "x1": 60,
+      "y1": 5,
+      "x2": 60,
+      "y2": 55,
+      "dashed": true
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Sechs Sekunden.",
+   "title": "Sechs Sekunden",
+   "text": "Team Neon hat nur sechs Sekunden. Erobert es den Ball in dieser Zeit, gibt das einen Punkt, und ein Treffer danach gibt noch einen Punkt. Hält Team Rot den Ball sechs Sekunden lang, gibt das einen Punkt für Team Rot.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 37,
+      "y": 18,
+      "label": "9"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 52,
+      "y": 24,
+      "label": "11"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 63,
+      "y": 18,
+      "label": "7"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 31,
+      "y": 46,
+      "label": "10"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 41,
+      "y": 38,
+      "label": "6"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 62,
+      "y": 43,
+      "label": "8"
+     },
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 50,
+      "y": 7,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 50,
+      "y": 53,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 21,
+      "y": 40,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 41.6,
+      "y": 38.6
+     },
+     {
+      "id": "s1",
+      "x": 22.6,
+      "y": 43.5
+     },
+     {
+      "id": "s2",
+      "x": 19,
+      "y": 43.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Mit Tempo anlaufen",
+      "say": "Alle drei von Team Neon sprinten gleichzeitig los. Spieler elf geht ganz nah an Spieler sechs heran, Spieler neun und Spieler sieben machen die Passwege zu.",
+      "moves": [
+       {
+        "who": "n11",
+        "to": [
+         43,
+         32.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n9",
+        "to": [
+         35,
+         38.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n7",
+        "to": [
+         57,
+         38
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Erobert: Punkt",
+      "say": "Nach vier Sekunden erobert Spieler elf den Ball. Das gibt einen Punkt für Team Neon, und jetzt geht es noch auf das Tor.",
+      "moves": [
+       {
+        "who": "n11",
+        "to": [
+         46,
+         41
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Konter: Punkt",
+      "say": "Spieler neun startet nach vorn, Spieler elf spielt ihn an, und Spieler neun trifft ins untere Tor. Das gibt noch einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         42,
+         47
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         42.6,
+         47.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         46,
+         54.7
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
