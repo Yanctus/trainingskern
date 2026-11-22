@@ -8,3 +8,5 @@ import/
 /db.json
 /ue*-3d.js
 /ue*.html.js
+/patch_*.txt
+/patch_*.json
