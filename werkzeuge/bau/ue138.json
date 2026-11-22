@@ -1,0 +1,721 @@
+{
+ "title": "Stangen-Sprint zum Abschluss",
+ "code": "UE-138",
+ "kind": "Spielform",
+ "focuses": [
+  "Schnelligkeit",
+  "Zusammenspiel",
+  "Torschuss"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 9,
+ "players_max": 13,
+ "field_size": "14 x 23 m",
+ "description": "Zwei Angreifer gegen zwei Verteidiger auf ein Tor mit Torwart. Ein Angreifer passt seinem Partner den Ball zu, der ihn annimmt und liegen lässt. Dann sprinten beide Angreifer um ihre Stange, holen sich den Ball und spielen zusammen bis zum Abschluss. Die Verteidiger sprinten vom Start hinterher, machen Druck und wollen den Ball erobern oder den Schuss blocken. Nach jeder Runde tauschen die Teams die Rollen.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 14 mal 23 Metern, oben ein Jugendtor mit Torwart. Weiter unten stehen links und rechts zwei Stangen, oben zwei Hütchen als Start.",
+  "Verteilen: Team Neon greift an, Team Rot verteidigt. Je ein Angreifer und ein Verteidiger starten links und rechts neben dem Tor, die anderen warten dahinter. Der Trainer steht am Rand mit Bällen.",
+  "Ablauf: Der rechte Angreifer passt zum linken, der nimmt an und lässt den Ball liegen. Beide Angreifer sprinten um ihre Stange, holen den Ball und kombinieren zum Abschluss. Die Verteidiger sprinten gleichzeitig hinterher und stören.",
+  "Wertung: Jedes Tor ist ein Punkt für die Angreifer, jeder eroberte Ball ein Punkt für die Verteidiger. Nach zwei vollen Runden tauschen die Rollen. Das Verliererteam macht eine kleine Fitnessaufgabe, die die Sieger aussuchen."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Den ersten Pass so spielen, dass der Partner ihn gut annehmen kann",
+  "Kurze, schnelle Schritte um die Stange, mit hohem Tempo",
+  "Kopf hoch, den Mitspieler sehen und so passen, dass er mit ein oder zwei Kontakten abschließen kann",
+  "Eiskalt abschließen und in die Ecken zielen"
+ ],
+ "materials": [
+  "1 Jugendtor",
+  "2 Stangen",
+  "2 Hütchen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Stangen-Sprint zum Abschluss. Zwei Angreifer sprinten um ihre Stangen, holen sich den Ball und schließen ab, und zwei Verteidiger jagen hinterher.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 35,
+    "y": 6,
+    "w": 30,
+    "h": 50
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 6,
+    "side": "top",
+    "size": "jugend"
+   }
+  ],
+  "cones": [
+   {
+    "x": 38.5,
+    "y": 15.5,
+    "color": "orange"
+   },
+   {
+    "x": 61.5,
+    "y": 15.5,
+    "color": "orange"
+   },
+   {
+    "x": 42.4,
+    "y": 38.2,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 57.3,
+    "y": 37.5,
+    "color": "neon",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 41,
+    "y": 12,
+    "label": "4"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 59,
+    "y": 12,
+    "label": "5"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 32,
+    "y": 12,
+    "label": "9"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 68,
+    "y": 12,
+    "label": "8"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 22,
+    "y": 12,
+    "label": "3"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 13,
+    "y": 12,
+    "label": "11"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 78,
+    "y": 12,
+    "label": "6"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 87,
+    "y": 12,
+    "label": "7"
+   },
+   {
+    "id": "k",
+    "team": "t",
+    "x": 50,
+    "y": 9,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 74,
+    "y": 32,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b5",
+    "x": 59.6,
+    "y": 12.6
+   },
+   {
+    "id": "s1",
+    "x": 75.6,
+    "y": 35.5
+   },
+   {
+    "id": "s2",
+    "x": 77.5,
+    "y": 31
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pass löst den Angriff aus",
+    "say": "Neon fünf passt quer zu Neon vier, der dem Ball entgegenläuft, ihn annimmt und liegen lässt.",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       41,
+       28
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b5",
+      "to": [
+       41.6,
+       28.6
+      ],
+      "type": "pass",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Sprint um die Stangen",
+    "say": "Jetzt sprinten beide Angreifer gleichzeitig um ihre Stange. Rot neun und Rot acht sprinten vom Start hinterher.",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       39,
+       36
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n4",
+      "to": [
+       42.4,
+       42.3
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n4",
+      "to": [
+       46,
+       37.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n4",
+      "to": [
+       42.5,
+       30
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n5",
+      "to": [
+       58.5,
+       30
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n5",
+      "to": [
+       61,
+       35
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n5",
+      "to": [
+       57.3,
+       42
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n5",
+      "to": [
+       54,
+       37
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n5",
+      "to": [
+       53,
+       23
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r9",
+      "to": [
+       37,
+       26
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "r9",
+      "to": [
+       38.5,
+       36.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r9",
+      "to": [
+       42.4,
+       43.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r9",
+      "to": [
+       46.5,
+       38.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r8",
+      "to": [
+       63,
+       26
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "r8",
+      "to": [
+       61.5,
+       35.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r8",
+      "to": [
+       57.3,
+       43.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r8",
+      "to": [
+       53.5,
+       39
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Kopf hoch, querlegen",
+    "say": "Neon vier ist zuerst am Ball, hebt den Kopf, sieht Neon fünf frei vor dem Tor und legt ihm den Ball in den Lauf.",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       53,
+       23
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b5",
+      "to": [
+       53.6,
+       22.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Abschluss: Punkt",
+    "say": "Neon fünf schießt mit dem ersten Kontakt in die Ecke, und das gibt einen Punkt für Team Neon. Dann ist das nächste Paar dran, und nach jeder Runde tauschen die Teams die Rollen.",
+    "moves": [
+     {
+      "who": "b5",
+      "to": [
+       53,
+       5.7
+      ],
+      "type": "pass"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 35,
+    "y1": 58.6,
+    "x2": 65,
+    "y2": 58.6,
+    "text": "14 m"
+   },
+   {
+    "x1": 92,
+    "y1": 6,
+    "x2": 92,
+    "y2": 56,
+    "text": "23 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Kopf hoch, den Mitspieler sehen.",
+   "title": "Kopf hoch",
+   "text": "Wer am Ball nur nach unten schaut, sieht den freien Mitspieler nicht. Deshalb vor dem Pass kurz den Kopf heben: Wo steht mein Partner, wo die Verteidiger? Dann den Ball so vorlegen, dass er direkt abschließen kann.",
+   "board": {
+    "players": [
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 42.5,
+      "y": 30,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 54,
+      "y": 25,
+      "label": "5"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 33,
+      "y": 38,
+      "label": "9"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 63,
+      "y": 41,
+      "label": "8"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 22,
+      "y": 12,
+      "label": "3"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 13,
+      "y": 12,
+      "label": "11"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 78,
+      "y": 12,
+      "label": "6"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 87,
+      "y": 12,
+      "label": "7"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50,
+      "y": 9,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 74,
+      "y": 32,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b5",
+      "x": 41.6,
+      "y": 28.6
+     },
+     {
+      "id": "s1",
+      "x": 75.6,
+      "y": 35.5
+     },
+     {
+      "id": "s2",
+      "x": 77.5,
+      "y": 31
+     }
+    ],
+    "steps": [
+     {
+      "label": "Kopf hoch",
+      "say": "Neon vier steht am Ball und hebt den Kopf. Er sieht: Neon fünf ist frei, Rot acht ist noch hinten.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         54,
+         25
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "r9",
+        "to": [
+         38,
+         33
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "r8",
+        "to": [
+         57,
+         32
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Pass in den Lauf: Punkt",
+      "say": "Er legt den Ball genau vor Neon fünf, der direkt in die Ecke schießt, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b5",
+        "to": [
+         54.6,
+         25.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b5",
+        "to": [
+         53,
+         5.7
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Immer mit Tempo bleiben.",
+   "title": "Zu langsam",
+   "text": "Die Angreifer müssen die ganze Zeit Tempo machen. Wer um die Stange trödelt, gibt dem Verteidiger Zeit, sich zwischen Ball und Mitspieler zu stellen, und schon ist der Ball weg.",
+   "board": {
+    "players": [
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 42.5,
+      "y": 30.5,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 61,
+      "y": 40,
+      "label": "5"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 33,
+      "y": 38,
+      "label": "9"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 52,
+      "y": 25,
+      "label": "8"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 22,
+      "y": 12,
+      "label": "3"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 13,
+      "y": 12,
+      "label": "11"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 78,
+      "y": 12,
+      "label": "6"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 87,
+      "y": 12,
+      "label": "7"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50,
+      "y": 9,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 74,
+      "y": 32,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b5",
+      "x": 41.6,
+      "y": 28.6
+     },
+     {
+      "id": "s1",
+      "x": 75.6,
+      "y": 35.5
+     },
+     {
+      "id": "s2",
+      "x": 77.5,
+      "y": 31
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zu langsam",
+      "say": "Neon fünf trödelt um die Stange. Rot acht ist schon zurück und stellt sich in den Passweg.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         58,
+         33
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r8",
+        "to": [
+         50,
+         30
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Abgefangen: Punkt",
+      "say": "Neon vier spielt trotzdem zu Neon fünf, aber Rot acht fängt den Ball ab, und das gibt einen Punkt für Team Rot. Dann ist das nächste Paar dran.",
+      "moves": [
+       {
+        "who": "b5",
+        "to": [
+         50.3,
+         30.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r8",
+        "to": [
+         55,
+         21
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b5"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

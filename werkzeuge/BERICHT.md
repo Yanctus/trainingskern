@@ -58,6 +58,9 @@ Alle neuen Einheiten: access frei, sichtbar, Regeln 0 Hinweise, Vergleich 0 Abwe
 | UE-133 | Fangen nur auf den Linien | PS-105 Physical with Fun - Tag Game (U12-U14, Woche 3) | https://trainingskern.de/einheiten/6b03244ce2add5987e43f042 | Sichtkegel wie im Video: Läufer schaut zu den Fängern. Blau 6 -> Rot 3. Ein Trainer statt zwei. Steigerung mit zwölf Hütchen als sichere Inseln. |
 | UE-134 | 2 gegen 2 und Sprints | PS-53 2 v 2s and Sprinting (U12-U14, Woche 3) | https://trainingskern.de/einheiten/6b0324fa19e562a7a98c3989 | Rot neu nummeriert (8-13). Wartende seitlich. Ein Trainer statt zwei. Kein Sichtkegel im Original. |
 | UE-135 | 2 gegen 2 mit Auf- und Abstieg | PS-79 Develop Fitness with 2 v 2 Games (U12-U14, Woche 3) | https://trainingskern.de/einheiten/6b032590e8256618ac751c2e | Sechs Paare in eigenen Farben -> je Zone Neon gegen Rot. Ein Trainer statt zwei. Kein Sichtkegel im Original. |
+| UE-136 | Slalom, Abschluss, Zweikampf | PS-118 1 v 1 Dribble and Finish Battle (U12-U14, Woche 4) | https://trainingskern.de/einheiten/6b0326aa141e7b99a20ef324 | Sichtkegel wie im Video: Schulterblick zum Gegner beim zweiten Ball, Blickfinte zum linken Tor in der Steigerung. Pink 7 -> Rot 8. Stangen etwas weiter auseinander. |
+| UE-137 | Passkreis mit Leiter | PS-30 Speed Work & 1-2 Combinations (U12-U14, Woche 4) | https://trainingskern.de/einheiten/6b0327448ffb3d2bee4b829e | Ablauf als Kreislauf gedeutet (oben passt und läuft über Leiter/Hürden, unten spielt steil und läuft durch Stangen/Ringe). Wartende auseinandergezogen. Kein Sichtkegel im Original. |
+| UE-138 | Stangen-Sprint zum Abschluss | PS-58 Quick Sprints to Combine and Finish (U12-U14, Woche 4) | https://trainingskern.de/einheiten/6b0327e387382f48e9fcdd30 | Jugendtor mit neutralem Torwart. Sichtkegel aus dem Text (Head up to see teammate), im Video kein Kegel. Je Seite nur ein wartendes Paar gezeigt. Ein Trainer statt zwei. |
 
 ## Nachträge
 

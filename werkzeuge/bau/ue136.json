@@ -1,0 +1,837 @@
+{
+ "title": "Slalom, Abschluss, Zweikampf",
+ "code": "UE-136",
+ "kind": "Übungsform",
+ "focuses": [
+  "Dribbling",
+  "Torschuss",
+  "1 gegen 1"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 6,
+ "players_max": 10,
+ "field_size": "9 x 14 m",
+ "description": "Zwei Spieler starten gleichzeitig mit Ball und dribbeln im Slalom durch ihre Stangen, dann um das Hütchen unten herum und schießen ins Minitor oben in der Mitte. Sofort danach spielt der Trainer einen zweiten Ball ins Feld. Jetzt kämpfen beide darum, sich vor den Gegner zu schieben, den Ball anzunehmen und in eines der beiden Minitore unten zu treffen. Dann holen sich beide einen neuen Ball, und das nächste Paar ist dran.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 9 mal 14 Metern. Oben in der Mitte steht ein Minitor im Feld, unten zwei Minitore. Auf jeder Seite stehen vier Stangen für den Slalom, unten in der Mitte ein Hütchen.",
+  "Verteilen: Zwei Teams, Team Neon links oben, Team Rot rechts oben, jeder mit einem Ball. Der Trainer steht unten zwischen den Minitoren mit vielen Bällen.",
+  "Ablauf: Auf Pfiff dribbeln die Ersten gleichzeitig durch ihre Stangen, um das Hütchen und schießen ins Tor oben. Sofort spielt der Trainer einen zweiten Ball, und beide kämpfen darum. Wer ihn bekommt, schließt in eines der Tore unten ab.",
+  "Wertung: Jedes Tor ist ein Punkt für das Team. Danach holen beide einen neuen Ball beim Trainer oder aus dem Tor und stellen sich oben wieder an."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Im Slalom mit dem Fuß führen, der näher an der Stange ist",
+  "Den Körper zwischen Gegner und Ball schieben und abschirmen",
+  "Auch unter Druck genau abschließen",
+  "Die Mitspieler am Rand feuern laut an"
+ ],
+ "materials": [
+  "8 Stangen",
+  "1 Hütchen",
+  "3 Minitore",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Slalom, Abschluss, Zweikampf. Erst ein Wettrennen im Slalom mit Abschluss, dann sofort der Kampf um den zweiten Ball.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 33.3,
+    "y": 5,
+    "w": 33.4,
+    "h": 50
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 11,
+    "side": "top"
+   },
+   {
+    "x": 39.5,
+    "y": 55,
+    "side": "bottom"
+   },
+   {
+    "x": 60.4,
+    "y": 55,
+    "side": "bottom"
+   }
+  ],
+  "cones": [
+   {
+    "x": 38.5,
+    "y": 15,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 44.5,
+    "y": 21.5,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 38.5,
+    "y": 28,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 44.5,
+    "y": 34.5,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 61.5,
+    "y": 15,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 55.5,
+    "y": 21.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 61.5,
+    "y": 28,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 55.5,
+    "y": 34.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 50,
+    "y": 45,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 39,
+    "y": 7,
+    "label": "2"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 30,
+    "y": 2,
+    "label": "6"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 21,
+    "y": 2,
+    "label": "7"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 61,
+    "y": 7,
+    "label": "8"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 70,
+    "y": 2,
+    "label": "3"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 79,
+    "y": 2,
+    "label": "9"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 50,
+    "y": 58,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b2",
+    "x": 39.6,
+    "y": 7.6
+   },
+   {
+    "id": "b8",
+    "x": 61.6,
+    "y": 7.6
+   },
+   {
+    "id": "s1",
+    "x": 52.6,
+    "y": 58.6
+   },
+   {
+    "id": "s2",
+    "x": 47.4,
+    "y": 58.8
+   }
+  ],
+  "steps": [
+   {
+    "label": "Slalom durch die Stangen",
+    "say": "Auf Pfiff dribbeln Neon zwei und Rot acht gleichzeitig im Slalom durch ihre Stangen nach unten.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       35,
+       13
+      ],
+      "type": "dribbling",
+      "ball": "b2"
+     },
+     {
+      "who": "n2",
+      "to": [
+       35,
+       17
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "n2",
+      "to": [
+       48,
+       19.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "n2",
+      "to": [
+       48,
+       23.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "n2",
+      "to": [
+       35,
+       26
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "n2",
+      "to": [
+       35,
+       30
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "n2",
+      "to": [
+       48,
+       32.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "n2",
+      "to": [
+       48,
+       36.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "r8",
+      "to": [
+       65,
+       13
+      ],
+      "type": "dribbling",
+      "delay": 0.2,
+      "ball": "b8"
+     },
+     {
+      "who": "r8",
+      "to": [
+       65,
+       17
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b8"
+     },
+     {
+      "who": "r8",
+      "to": [
+       52,
+       19.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b8"
+     },
+     {
+      "who": "r8",
+      "to": [
+       52,
+       23.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b8"
+     },
+     {
+      "who": "r8",
+      "to": [
+       65,
+       26
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b8"
+     },
+     {
+      "who": "r8",
+      "to": [
+       65,
+       30
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b8"
+     },
+     {
+      "who": "r8",
+      "to": [
+       52,
+       32.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b8"
+     },
+     {
+      "who": "r8",
+      "to": [
+       52,
+       36.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b8"
+     }
+    ]
+   },
+   {
+    "label": "Um das Hütchen, Abschluss: Punkt",
+    "say": "Neon zwei ist zuerst um das Hütchen und schießt ins Tor oben, und das gibt einen Punkt für Team Neon. Gleich danach schießt auch Rot acht.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       47,
+       44.5
+      ],
+      "type": "dribbling",
+      "ball": "b2"
+     },
+     {
+      "who": "n2",
+      "to": [
+       50,
+       48.4
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "n2",
+      "to": [
+       53,
+       44.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "b2",
+      "to": [
+       50,
+       10.7
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r8",
+      "to": [
+       53,
+       41
+      ],
+      "type": "dribbling",
+      "delay": 0.8,
+      "ball": "b8"
+     },
+     {
+      "who": "r8",
+      "to": [
+       56,
+       44.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b8"
+     },
+     {
+      "who": "r8",
+      "to": [
+       54.5,
+       49.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b8"
+     },
+     {
+      "who": "r8",
+      "to": [
+       47,
+       46.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b8"
+     },
+     {
+      "who": "b8",
+      "to": [
+       50,
+       10.7
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zweiter Ball: Punkt",
+    "say": "Sofort spielt der Trainer einen zweiten Ball. Neon zwei schiebt sich vor Rot acht, schirmt den Ball ab und trifft ins rechte Minitor unten, und das gibt noch einen Punkt für Team Neon. Dann sind Neon sechs und Rot drei dran.",
+    "moves": [
+     {
+      "who": "s1",
+      "to": [
+       50.6,
+       50.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n2",
+      "to": [
+       50,
+       49.5
+      ],
+      "type": "lauf",
+      "delay": 0.1
+     },
+     {
+      "who": "r8",
+      "to": [
+       47.5,
+       48
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "s1",
+      "to": [
+       60.4,
+       55.3
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 86,
+    "y1": 5,
+    "x2": 86,
+    "y2": 55,
+    "text": "14 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Den Körper dazwischen schieben.",
+   "title": "Abschirmen",
+   "text": "Beim zweiten Ball gewinnt, wer zuerst den Körper zwischen Gegner und Ball bringt. Vorher kurz über die Schulter schauen, wo der Gegner ist, dann den Körper quer stellen, den Ball abschirmen und erst dann abschließen.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 54,
+      "y": 42,
+      "label": "2"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 30,
+      "y": 2,
+      "label": "6"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 21,
+      "y": 2,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 45.5,
+      "y": 42,
+      "label": "8"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 70,
+      "y": 2,
+      "label": "3"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 79,
+      "y": 2,
+      "label": "9"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 58,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b2",
+      "x": 50,
+      "y": 10.7
+     },
+     {
+      "id": "b8",
+      "x": 50.3,
+      "y": 10.7
+     },
+     {
+      "id": "s1",
+      "x": 52.6,
+      "y": 58.6
+     },
+     {
+      "id": "s2",
+      "x": 47.4,
+      "y": 58.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Über die Schulter schauen",
+      "say": "Der Trainer spielt den zweiten Ball. Neon zwei schaut kurz über die Schulter, wo Rot acht ist, und schiebt sich vor ihn.",
+      "moves": [
+       {
+        "who": "s1",
+        "to": [
+         50.6,
+         50.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n2",
+        "to": [
+         45.5,
+         42
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "n2",
+        "to": [
+         52.8,
+         48.6
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r8",
+        "to": [
+         47.5,
+         46.5
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       }
+      ]
+     },
+     {
+      "label": "Abschirmen und abschließen: Punkt",
+      "say": "Mit dem Körper zwischen Gegner und Ball nimmt er an, dreht sich weg und trifft ins rechte Minitor, und das gibt einen Punkt für Team Neon. Dann holen beide einen neuen Ball.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         51,
+         50
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "s1",
+        "to": [
+         60.4,
+         55.3
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Ein dritter Ball für ein eins gegen eins.",
+   "title": "Dritter Ball, eins gegen eins",
+   "text": "Jetzt spielt der Trainer noch einen dritten Ball, und es gibt ein eins gegen eins auf die beiden Tore unten. Der Verteidiger presst, wenn der Angreifer mit dem Rücken zum Tor steht. Der Angreifer täuscht mit dem Blick eine Seite an und geht dann auf die andere.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 40,
+      "y": 38,
+      "label": "2"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 30,
+      "y": 2,
+      "label": "6"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 21,
+      "y": 2,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 50,
+      "y": 36,
+      "label": "8"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 70,
+      "y": 2,
+      "label": "3"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 79,
+      "y": 2,
+      "label": "9"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 58,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b2",
+      "x": 50,
+      "y": 10.7
+     },
+     {
+      "id": "b8",
+      "x": 50.3,
+      "y": 10.7
+     },
+     {
+      "id": "s1",
+      "x": 52.6,
+      "y": 58.6
+     },
+     {
+      "id": "s2",
+      "x": 47.4,
+      "y": 58.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Ball kommt, Verteidiger presst",
+      "say": "Der Trainer spielt Neon zwei den dritten Ball, Rot acht läuft sofort auf ihn zu.",
+      "moves": [
+       {
+        "who": "s1",
+        "to": [
+         40.6,
+         41.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n2",
+        "to": [
+         40,
+         40.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r8",
+        "to": [
+         46,
+         42
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Blick links, Weg rechts",
+      "say": "Neon zwei schaut zum linken Tor, als wolle er dorthin. Rot acht schiebt nach links, und Neon zwei zieht nach rechts weg.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         39.5,
+         55.3
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "r8",
+        "to": [
+         44,
+         46
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n2",
+        "to": [
+         49,
+         44
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "s1"
+       },
+       {
+        "who": "n2",
+        "to": [
+         54,
+         48
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "s1"
+       }
+      ]
+     },
+     {
+      "label": "Abschluss rechts: Punkt",
+      "say": "Jetzt ist das rechte Tor frei, und Neon zwei trifft, und das gibt einen Punkt für Team Neon. Dann sind Neon sechs und Rot drei dran.",
+      "moves": [
+       {
+        "who": "s1",
+        "to": [
+         60.4,
+         55.3
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

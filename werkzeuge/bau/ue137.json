@@ -1,0 +1,832 @@
+{
+ "title": "Passkreis mit Leiter",
+ "code": "UE-137",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Koordination",
+  "Schnelligkeit"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 8,
+ "players_max": 12,
+ "field_size": "18 x 18 m",
+ "description": "Ein Kreislauf mit vier Stationen. Oben und unten in der Mitte stehen die Passstationen, zwischen ihnen zwei Dummys. Rechts liegen Leiter und Hürden, links stehen Stangen und Ringe. Der obere Spieler passt zwischen den Dummys hindurch nach unten und läuft über Leiter und Hürden zur unteren Station. Der untere Spieler nimmt an, spielt steil zum nächsten oben und läuft durch Stangen und Ringe zur oberen Station. So bleibt alles in Bewegung, bis der Trainer eine Pause ansagt.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 18 Metern. Oben und unten in der Mitte je ein Hütchen als Passstation, dazwischen zwei Dummys. Rechts eine Leiter und vier Minihürden, links drei Stangen für den Slalom und drei Ringe.",
+  "Verteilen: Auf jeder Station stehen Spieler, oben und unten zwei bis drei. Der erste Spieler oben hat den Ball. Der Trainer steht mit Ersatzbällen am Rand.",
+  "Ablauf: Oben passt zwischen den Dummys nach unten und läuft über Leiter und Hürden zur unteren Station. Unten nimmt an, spielt steil zum Nächsten oben und läuft durch Stangen und Ringe zur oberen Station.",
+  "Pausen: Gespielt wird mit hohem Tempo, bis der Trainer eine Erholungspause ansagt. Danach geht es mit dem Fuß weiter, der vorher nicht gespielt hat."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Genau passen, damit der Mitspieler den Ball gut annehmen kann",
+  "Im richtigen Moment zum Ball starten",
+  "Mit beiden Füßen abwechselnd passen",
+  "Mit hohem Tempo und sauberen Schritten durch Leiter, Hürden, Stangen und Ringe"
+ ],
+ "materials": [
+  "3 Hütchen",
+  "2 Dummys",
+  "3 Stangen",
+  "3 Ringe",
+  "1 Koordinationsleiter",
+  "4 Minihürden",
+  "Mehrere Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Passkreis mit Leiter. Pässe durch die Mitte, dann über Leiter, Hürden, Stangen und Ringe, und alles bleibt in Bewegung.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   },
+   {
+    "type": "circle",
+    "x": 30.7,
+    "y": 14.5,
+    "r": 2
+   },
+   {
+    "type": "circle",
+    "x": 33.7,
+    "y": 10.8,
+    "r": 2
+   },
+   {
+    "type": "circle",
+    "x": 38.4,
+    "y": 8.7,
+    "r": 2
+   }
+  ],
+  "cones": [
+   {
+    "x": 48,
+    "y": 12.4,
+    "color": "orange"
+   },
+   {
+    "x": 48,
+    "y": 48.4,
+    "color": "orange"
+   },
+   {
+    "x": 39.6,
+    "y": 24.8,
+    "color": "orange"
+   },
+   {
+    "x": 31,
+    "y": 22,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 31,
+    "y": 28.5,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 31,
+    "y": 35,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 45.3,
+    "y": 30.1,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 56.9,
+    "y": 30.1,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 68.4,
+    "y": 20,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 68.4,
+    "y": 23,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 68.4,
+    "y": 26,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 68.4,
+    "y": 30.7,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 68.4,
+    "y": 34.6,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 68.4,
+    "y": 38.4,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 68.4,
+    "y": 42.4,
+    "color": "orange",
+    "shape": "huerde_ou"
+   }
+  ],
+  "players": [
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 51,
+    "y": 11.5,
+    "label": "4"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 60,
+    "y": 4,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 69,
+    "y": 1.5,
+    "label": "3"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 68.4,
+    "y": 17.5,
+    "label": "8"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 51,
+    "y": 47,
+    "label": "9"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 60,
+    "y": 51,
+    "label": "11"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 69,
+    "y": 53,
+    "label": "10"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 30.8,
+    "y": 39.6,
+    "label": "7"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 80,
+    "y": 52,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 51.6,
+    "y": 12.1
+   },
+   {
+    "id": "s1",
+    "x": 81.6,
+    "y": 55
+   },
+   {
+    "id": "s2",
+    "x": 84,
+    "y": 52
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pass nach unten",
+    "say": "Neon vier spielt zwischen den Dummys hindurch zu Neon neun, der dem Ball entgegenkommt. Gleichzeitig läuft Neon acht über Leiter und Hürden nach unten und Neon sieben durch Stangen und Ringe nach oben.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       52.6,
+       40.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n9",
+      "to": [
+       52,
+       40
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n8",
+      "to": [
+       68.4,
+       19
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n8",
+      "to": [
+       68.4,
+       45
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       66,
+       48.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       34.5,
+       35
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n7",
+      "to": [
+       27.5,
+       28.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       34.5,
+       22
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       30.7,
+       14.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       33.7,
+       10.8
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       38.4,
+       8.7
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       44,
+       6
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Steil nach oben",
+    "say": "Neon neun spielt steil nach oben zu Neon zwei, der zum Hütchen kommt. Neon vier läuft jetzt über Leiter und Hürden nach unten, Neon neun startet zu den Stangen.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       52,
+       14.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       52.6,
+       15.1
+      ],
+      "type": "pass",
+      "delay": 0.2
+     },
+     {
+      "who": "n4",
+      "to": [
+       60,
+       13
+      ],
+      "type": "lauf",
+      "delay": 0.1
+     },
+     {
+      "who": "n4",
+      "to": [
+       66,
+       17
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n4",
+      "to": [
+       68.4,
+       19
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n4",
+      "to": [
+       68.4,
+       45
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n4",
+      "to": [
+       66,
+       48.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n9",
+      "to": [
+       40,
+       43
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "n9",
+      "to": [
+       30.8,
+       40.5
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Immer weiter im Kreis",
+    "say": "Jetzt spielt Neon zwei nach unten zu Neon elf, und alles beginnt von vorn. So bleibt der Ball in Bewegung, bis der Trainer eine Pause ansagt.",
+    "moves": [
+     {
+      "who": "n11",
+      "to": [
+       52.5,
+       40.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       53.1,
+       41.1
+      ],
+      "type": "pass",
+      "delay": 0.2
+     },
+     {
+      "who": "n2",
+      "to": [
+       60,
+       13
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 90,
+    "y1": 5,
+    "x2": 90,
+    "y2": 55,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Genau und mit Tempo passen.",
+   "title": "Der Pass durch die Mitte",
+   "text": "Der Pass zwischen den Dummys hindurch muss genau und fest sein. Zu lasch, und der Mitspieler muss warten, zu ungenau, und der Ball prallt an einem Dummy ab. Dabei abwechselnd mit rechts und links passen.",
+   "board": {
+    "players": [
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 51,
+      "y": 11.5,
+      "label": "4"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 60,
+      "y": 4,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 69,
+      "y": 1.5,
+      "label": "3"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 68.4,
+      "y": 17.5,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 51,
+      "y": 47,
+      "label": "9"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 60,
+      "y": 51,
+      "label": "11"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 69,
+      "y": 53,
+      "label": "10"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 30.8,
+      "y": 39.6,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 80,
+      "y": 52,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 51.6,
+      "y": 12.1
+     },
+     {
+      "id": "s1",
+      "x": 81.6,
+      "y": 55
+     },
+     {
+      "id": "s2",
+      "x": 84,
+      "y": 52
+     }
+    ],
+    "steps": [
+     {
+      "label": "Fest und genau",
+      "say": "Neon vier spielt den Ball fest und genau zwischen den Dummys hindurch, Neon neun kommt entgegen und nimmt ihn sauber an.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         52.6,
+         40.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n9",
+        "to": [
+         52,
+         40
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Mit dem anderen Fuß zurück",
+      "say": "Neon neun spielt mit dem anderen Fuß genauso fest steil nach oben zu Neon zwei. Dann laufen beide zu ihrer Station.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         52,
+         14.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         52.6,
+         15.1
+        ],
+        "type": "pass",
+        "delay": 0.2
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Tempo und saubere Schritte.",
+   "title": "Schnelle Füße",
+   "text": "Durch Leiter, Hürden, Stangen und Ringe geht es mit voller Geschwindigkeit, aber sauber: kurze, schnelle Schritte, Arme mitnehmen, auf den Fußballen bleiben. Wer schlampig läuft, verliert Zeit und kommt zu spät zur nächsten Station.",
+   "board": {
+    "players": [
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 51,
+      "y": 11.5,
+      "label": "4"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 60,
+      "y": 4,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 69,
+      "y": 1.5,
+      "label": "3"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 68.4,
+      "y": 17.5,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 51,
+      "y": 47,
+      "label": "9"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 60,
+      "y": 51,
+      "label": "11"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 69,
+      "y": 53,
+      "label": "10"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 30.8,
+      "y": 39.6,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 80,
+      "y": 52,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 51.6,
+      "y": 12.1
+     },
+     {
+      "id": "s1",
+      "x": 81.6,
+      "y": 55
+     },
+     {
+      "id": "s2",
+      "x": 84,
+      "y": 52
+     }
+    ],
+    "steps": [
+     {
+      "label": "Leiter und Hürden",
+      "say": "Neon acht läuft mit kurzen, schnellen Schritten durch die Leiter und über die Hürden nach unten.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         68.4,
+         19
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n8",
+        "to": [
+         68.4,
+         45
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n8",
+        "to": [
+         66,
+         48.5
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Stangen und Ringe",
+      "say": "Gleichzeitig läuft Neon sieben im Slalom um die Stangen und durch die Ringe nach oben. Beide kommen mit Tempo an ihrer neuen Station an.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         34.5,
+         35
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n7",
+        "to": [
+         27.5,
+         28.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n7",
+        "to": [
+         34.5,
+         22
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n7",
+        "to": [
+         30.7,
+         14.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n7",
+        "to": [
+         33.7,
+         10.8
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n7",
+        "to": [
+         38.4,
+         8.7
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n7",
+        "to": [
+         44,
+         6
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
