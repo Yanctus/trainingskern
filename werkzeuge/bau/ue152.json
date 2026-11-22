@@ -1,0 +1,577 @@
+{
+ "title": "Durch das Dreieck spielen",
+ "code": "UE-152",
+ "kind": "Spielform",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel",
+  "Umschalten"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 9,
+ "players_max": 10,
+ "field_size": "14 x 14 m",
+ "description": "Sechs gegen drei im Quadrat, in der Mitte ein Dreieck aus Hütchen. Team Neon hält den Ball und sucht die Lücke: Jeder Pass durch das Dreieck ist ein Punkt. Die Verteidiger dürfen das Dreieck nicht durchqueren. Erobern sie den Ball, brauchen sie fünf Pässe in Folge für einen Punkt.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 14 mal 14 Metern, in der Mitte ein Dreieck aus drei Hütchen.",
+  "Verteilen: Sechs von Team Neon verteilen sich am Rand, drei von Team Rot verteidigen innen. Der Trainer steht am Rand mit Bällen.",
+  "Ablauf: Team Neon hält den Ball, zieht das Feld breit und spielt durch das Dreieck, sobald die Lücke da ist. Die Verteidiger dürfen nicht durch das Dreieck laufen.",
+  "Wertung: Jeder Pass durch das Dreieck ist ein Punkt für Team Neon. Erobert Team Rot den Ball, sind fünf Pässe in Folge ein Punkt für Team Rot. Team Neon presst sofort, um den Ball zurückzuholen."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Das ganze Feld nutzen und die Verteidiger auseinanderziehen",
+  "Früh und oft den Kopf heben, um die Lücke zu sehen",
+  "Den Pass durch das Dreieck scharf spielen",
+  "Nach Ballverlust sofort pressen"
+ ],
+ "materials": [
+  "7 Hütchen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Durch das Dreieck spielen. Sechs gegen drei, und Team Neon sucht immer wieder den Pass durch die Mitte.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   },
+   {
+    "type": "line",
+    "x1": 51.1,
+    "y1": 22.1,
+    "x2": 41.6,
+    "y2": 37.8,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 41.6,
+    "y1": 37.8,
+    "x2": 59.5,
+    "y2": 37.9,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 59.5,
+    "y1": 37.9,
+    "x2": 51.1,
+    "y2": 22.1,
+    "dashed": true
+   }
+  ],
+  "cones": [
+   {
+    "x": 51.1,
+    "y": 22.1,
+    "color": "orange"
+   },
+   {
+    "x": 41.6,
+    "y": 37.8,
+    "color": "orange"
+   },
+   {
+    "x": 59.5,
+    "y": 37.9,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 38.3,
+    "y": 5,
+    "label": "8"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 61.8,
+    "y": 5.8,
+    "label": "4"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 24.8,
+    "y": 28.3,
+    "label": "3"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 74.9,
+    "y": 27.3,
+    "label": "2"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 40.7,
+    "y": 54,
+    "label": "6"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 61.8,
+    "y": 54.3,
+    "label": "5"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 47,
+    "y": 15,
+    "label": "7"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 66,
+    "y": 22,
+    "label": "9"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 52,
+    "y": 46,
+    "label": "11"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 84,
+    "y": 50,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 25.4,
+    "y": 28.9
+   },
+   {
+    "id": "s1",
+    "x": 85.6,
+    "y": 53.5
+   },
+   {
+    "id": "s2",
+    "x": 82,
+    "y": 53.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Ball laufen lassen",
+    "say": "Team Neon lässt den Ball am Rand laufen. Neon drei spielt zu Neon acht, der weiter zu Neon vier. Rot sieben läuft hinterher.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       38.9,
+       5.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       62.4,
+       6.4
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r7",
+      "to": [
+       54,
+       11
+      ],
+      "type": "lauf",
+      "delay": 0.8
+     }
+    ]
+   },
+   {
+    "label": "Kopf hoch",
+    "say": "Neon vier hebt den Kopf und sieht: Die Verteidiger stehen weit auseinander, durch das Dreieck ist der Weg zu Neon sechs frei.",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       51.5,
+       30
+      ],
+      "type": "blick"
+     }
+    ]
+   },
+   {
+    "label": "Durch das Dreieck: Punkt",
+    "say": "Neon vier spielt scharf durch das Dreieck zu Neon sechs, und das gibt einen Punkt für Team Neon. Team Neon behält den Ball und sucht gleich die nächste Lücke.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       41.3,
+       54.6
+      ],
+      "type": "pass"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "14 m"
+   },
+   {
+    "x1": 93,
+    "y1": 5,
+    "x2": 93,
+    "y2": 55,
+    "text": "14 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Ballverlust und sofort pressen.",
+   "title": "Ballgewinn",
+   "text": "Erobert Team Rot den Ball, braucht es fünf Pässe in Folge für einen Punkt. Durch das Dreieck dürfen die Verteidiger nicht spielen. Team Neon presst sofort, um den Ball schnell zurückzuholen.",
+   "board": {
+    "players": [
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 38.3,
+      "y": 5,
+      "label": "8"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 61.8,
+      "y": 5.8,
+      "label": "4"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 24.8,
+      "y": 28.3,
+      "label": "3"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 74.9,
+      "y": 27.3,
+      "label": "2"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 40.7,
+      "y": 54,
+      "label": "6"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 61.8,
+      "y": 54.3,
+      "label": "5"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 47,
+      "y": 15,
+      "label": "7"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 66,
+      "y": 22,
+      "label": "9"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 52,
+      "y": 46,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 84,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 75.5,
+      "y": 27.9
+     },
+     {
+      "id": "s1",
+      "x": 85.6,
+      "y": 53.5
+     },
+     {
+      "id": "s2",
+      "x": 82,
+      "y": 53.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Abgefangen",
+      "say": "Neon zwei will zu Neon fünf passen, aber Rot elf läuft dazwischen und fängt den Ball ab.",
+      "moves": [
+       {
+        "who": "r11",
+        "to": [
+         67,
+         44
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         67.6,
+         44.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Fünf Pässe: Punkt",
+      "say": "Rot elf spielt zu Rot neun, der weiter zu Rot sieben. Schafft Team Rot fünf Pässe in Folge, gibt das einen Punkt für Team Rot. Darum pressen Neon vier und Neon acht sofort.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         66.6,
+         22.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         47.6,
+         15.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n4",
+        "to": [
+         54,
+         9
+        ],
+        "type": "lauf",
+        "delay": 0.8
+       },
+       {
+        "who": "n8",
+        "to": [
+         40,
+         9
+        ],
+        "type": "lauf",
+        "delay": 0.8
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Ein Spieler im Dreieck.",
+   "title": "Spieler im Dreieck",
+   "text": "Jetzt steht ein Spieler von Team Neon im Dreieck. Wird er angespielt und spielt den Ball auf die andere Seite weiter, ist das ein Punkt. Dafür muss jeder am Rand früh schauen, ob der Weg in die Mitte frei ist.",
+   "board": {
+    "players": [
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 38.3,
+      "y": 5,
+      "label": "8"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 61.8,
+      "y": 5.8,
+      "label": "4"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 24.8,
+      "y": 28.3,
+      "label": "3"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 74.9,
+      "y": 27.3,
+      "label": "2"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 40.7,
+      "y": 54,
+      "label": "6"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 61.8,
+      "y": 54.3,
+      "label": "5"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 47,
+      "y": 15,
+      "label": "7"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 66,
+      "y": 22,
+      "label": "9"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 31,
+      "y": 44,
+      "label": "11"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 50.5,
+      "y": 32,
+      "label": "10"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 84,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 25.4,
+      "y": 28.9
+     },
+     {
+      "id": "s1",
+      "x": 85.6,
+      "y": 53.5
+     },
+     {
+      "id": "s2",
+      "x": 82,
+      "y": 53.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Mitte sehen",
+      "say": "Neon drei hebt den Kopf und sieht Neon zehn frei im Dreieck. Er spielt ihn an.",
+      "moves": [
+       {
+        "who": "n3",
+        "to": [
+         50.5,
+         32
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         51.1,
+         32.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Auf die andere Seite: Punkt",
+      "say": "Neon zehn spielt direkt weiter auf die andere Seite zu Neon zwei, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         75.5,
+         27.9
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

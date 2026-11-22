@@ -1,0 +1,593 @@
+{
+ "title": "Ballhalten gegen mehr Druck",
+ "code": "UE-151",
+ "kind": "Spielform",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel",
+  "Umschalten"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 10,
+ "players_max": 10,
+ "field_size": "18 x 18 m",
+ "description": "Fünf Spieler halten in einer inneren Zone den Ball gegen zuerst einen Verteidiger. Nach jeweils zwei Pässen darf ein weiterer Verteidiger aus der Ecke dazukommen, der Druck wird also immer größer. Erobern die Verteidiger den Ball, schießen sie schnell in das nächste der vier Minitore außen. Team Neon spielt mit zwei Kontakten.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 18 Metern mit einem Minitor an jeder Seite. In der Mitte eine Zone von 9 mal 9 Metern.",
+  "Verteilen: Fünf von Team Neon in der Zone, einer davon in der Mitte. Ein Verteidiger von Team Rot in der Zone, vier warten in den Ecken. Der Trainer steht an der Seite mit Bällen.",
+  "Ablauf: Team Neon hält den Ball mit zwei Kontakten. Nach jeweils zwei Pässen darf ein weiterer Verteidiger aus einer Ecke in die Zone.",
+  "Wertung: Erobert Team Rot den Ball, schießt es schnell ins nächste Minitor. Jedes Tor ist ein Punkt. Dann beginnt Team Neon mit einem neuen Ball, und die Verteidiger gehen zurück in die Ecken."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Über die Schulter schauen, ob ein Verteidiger von außen kommt",
+  "Schnelle, genaue Pässe mit zwei Kontakten",
+  "Den Spieler in der Mitte nutzen, um aus dem Druck herauszuspielen",
+  "Nach Ballgewinn schnell umschalten und gemeinsam pressen"
+ ],
+ "materials": [
+  "4 Minitore",
+  "8 Hütchen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Ballhalten gegen mehr Druck. Fünf gegen erst einen, dann immer mehr Verteidiger, und wer den Ball erobert, schießt sofort.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   },
+   {
+    "type": "rect",
+    "x": 37.5,
+    "y": 17.5,
+    "w": 25,
+    "h": 25,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top"
+   },
+   {
+    "x": 50,
+    "y": 55,
+    "side": "bottom"
+   },
+   {
+    "x": 25,
+    "y": 30,
+    "side": "left"
+   },
+   {
+    "x": 75,
+    "y": 30,
+    "side": "right"
+   }
+  ],
+  "cones": [],
+  "players": [
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 37.5,
+    "y": 30,
+    "label": "9"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 46,
+    "y": 17.5,
+    "label": "8"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 54.5,
+    "y": 25,
+    "label": "7"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 63,
+    "y": 30,
+    "label": "10"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 46,
+    "y": 42.5,
+    "label": "4"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 54.5,
+    "y": 42,
+    "label": "5"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 29,
+    "y": 9,
+    "label": "2"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 71,
+    "y": 9,
+    "label": "11"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 29,
+    "y": 51,
+    "label": "6"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 71,
+    "y": 51,
+    "label": "3"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 15,
+    "y": 22,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 38.1,
+    "y": 30.6
+   },
+   {
+    "id": "s1",
+    "x": 16.6,
+    "y": 25.5
+   },
+   {
+    "id": "s2",
+    "x": 13,
+    "y": 25.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Zwei Pässe",
+    "say": "Team Neon hält den Ball in der Zone gegen Rot fünf. Neon neun spielt zu Neon acht, der spielt weiter zu Neon sieben.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       46.6,
+       18.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       55.1,
+       25.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Der nächste kommt",
+    "say": "Zwei Pässe geschafft, also darf Rot zwei aus der Ecke in die Zone. Gleichzeitig spielt Neon sieben weiter zu Neon zehn.",
+    "moves": [
+     {
+      "who": "r2",
+      "to": [
+       40,
+       14.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       63.6,
+       30.6
+      ],
+      "type": "pass",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Ballgewinn: Punkt",
+    "say": "Neon zehn will zu Neon vier passen, aber Rot fünf fängt den Ball ab, dribbelt aus der Zone und schießt ins untere Minitor. Das gibt einen Punkt für Team Rot. Dann beginnt Team Neon mit einem neuen Ball, und die Verteidiger gehen zurück in die Ecken.",
+    "moves": [
+     {
+      "who": "r5",
+      "to": [
+       54.5,
+       37.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       55.1,
+       38.1
+      ],
+      "type": "pass",
+      "delay": 0.2
+     },
+     {
+      "who": "r5",
+      "to": [
+       52,
+       47
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       50,
+       54.7
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 86,
+    "y1": 5,
+    "x2": 86,
+    "y2": 55,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Über die Schulter schauen.",
+   "title": "Schulterblick",
+   "text": "Die Verteidiger kommen von außen, oft von hinten. Bevor der Ball kommt, schaut der Spieler über die Schulter. Sieht er einen Verteidiger kommen, spielt er direkt weiter, weg vom Druck.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 37.5,
+      "y": 30,
+      "label": "9"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 46,
+      "y": 17.5,
+      "label": "8"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 54.5,
+      "y": 25,
+      "label": "7"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 63,
+      "y": 30,
+      "label": "10"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 46,
+      "y": 42.5,
+      "label": "4"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 54.5,
+      "y": 42,
+      "label": "5"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 29,
+      "y": 9,
+      "label": "2"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 71,
+      "y": 9,
+      "label": "11"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 29,
+      "y": 51,
+      "label": "6"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 71,
+      "y": 51,
+      "label": "3"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 15,
+      "y": 22,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 38.1,
+      "y": 30.6
+     },
+     {
+      "id": "s1",
+      "x": 16.6,
+      "y": 25.5
+     },
+     {
+      "id": "s2",
+      "x": 13,
+      "y": 25.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Über die Schulter",
+      "say": "Neon neun hat den Ball. Neon acht schaut über die Schulter und sieht: Rot zwei kommt aus der Ecke auf ihn zu.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         29,
+         9
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "r2",
+        "to": [
+         40,
+         14.5
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Direkt weiter",
+      "say": "Neon neun spielt Neon acht an. Weil er Rot zwei gesehen hat, spielt Neon acht direkt weiter zu Neon sieben, weg vom Druck. Der Ball bleibt bei Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         46.6,
+         18.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         55.1,
+         25.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Nach zehn Pässen darf Team Neon schießen.",
+   "title": "Zehn Pässe",
+   "text": "Schafft Team Neon zehn Pässe in Folge, darf es selbst in ein Minitor schießen. Das belohnt Geduld und genaue Pässe, auch wenn immer mehr Verteidiger kommen.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 37.5,
+      "y": 30,
+      "label": "9"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 46,
+      "y": 17.5,
+      "label": "8"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 54.5,
+      "y": 25,
+      "label": "7"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 63,
+      "y": 30,
+      "label": "10"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 46,
+      "y": 42.5,
+      "label": "4"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 54.5,
+      "y": 42,
+      "label": "5"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 37,
+      "y": 13,
+      "label": "2"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 71,
+      "y": 9,
+      "label": "11"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 29,
+      "y": 51,
+      "label": "6"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 71,
+      "y": 51,
+      "label": "3"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 15,
+      "y": 22,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 55.1,
+      "y": 25.6
+     },
+     {
+      "id": "s1",
+      "x": 16.6,
+      "y": 25.5
+     },
+     {
+      "id": "s2",
+      "x": 13,
+      "y": 25.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Der zehnte Pass",
+      "say": "Team Neon hat neun Pässe geschafft. Neon sieben spielt den zehnten zu Neon zehn.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         63.6,
+         30.6
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Raus und rein: Punkt",
+      "say": "Jetzt darf Neon zehn schießen. Er dribbelt aus der Zone und trifft ins rechte Minitor, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         68,
+         30
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         74.7,
+         30
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

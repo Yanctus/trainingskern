@@ -1,0 +1,600 @@
+{
+ "title": "Doppelpass um die Dummys",
+ "code": "UE-153",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Torschuss",
+  "Erwärmung"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 6,
+ "players_max": 10,
+ "field_size": "18 x 23 m",
+ "description": "Ein schnelles Aufwärmen mit Pässen und Abschluss. Der Passgeber spielt den Läufer an, der sich vom Hütchen löst, und bekommt den Ball zurück. Dann folgen zwei Doppelpässe um die beiden Dummys, und der Läufer schießt direkt ins Minitor. Der Passgeber sprintet danach durch das Hütchentor und stellt sich wieder an.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 23 Metern. Rechts zwei Minitore, in der Mitte zwei Dummys übereinander, links ein Tor aus zwei Hütchen. Unten links ein Start-Hütchen für die Läufer, rechts eines für die Passgeber.",
+  "Verteilen: Die Passgeber stehen rechts mit Bällen in einer Reihe, die Läufer unten links. Der Trainer steht oben am Rand.",
+  "Ablauf: Pass auf den Läufer, der sich vom Hütchen löst. Zurück zum Passgeber, dann ein Doppelpass am unteren und einer am oberen Dummy. Der Läufer schießt direkt ins obere Minitor.",
+  "Wechsel: Der Passgeber sprintet durch das Hütchentor links und stellt sich wieder an. Der Abschluss startet die nächsten beiden. Nach fünf Minuten die Seite wechseln."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Pässe mit dem richtigen Tempo und genau in den Fuß",
+  "Scharf vom Hütchen lösen, um den ersten Pass zu bekommen",
+  "Direkt und genau abschließen, auch mit Tempo",
+  "Nach dem letzten Pass sofort losspurten, mit beiden Füßen passen"
+ ],
+ "materials": [
+  "5 Hütchen",
+  "2 Dummys",
+  "2 Minitore",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Doppelpass um die Dummys. Zwei Spieler kombinieren schnell um zwei Dummys herum, und am Ende wird direkt abgeschlossen.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 30,
+    "y": 5,
+    "w": 40,
+    "h": 50
+   }
+  ],
+  "goals": [
+   {
+    "x": 70,
+    "y": 15.2,
+    "side": "right"
+   },
+   {
+    "x": 70,
+    "y": 44.7,
+    "side": "right"
+   }
+  ],
+  "cones": [
+   {
+    "x": 70.4,
+    "y": 29,
+    "color": "orange"
+   },
+   {
+    "x": 36.4,
+    "y": 45.7,
+    "color": "orange"
+   },
+   {
+    "x": 36.4,
+    "y": 14.9,
+    "color": "orange"
+   },
+   {
+    "x": 30.2,
+    "y": 25.1,
+    "color": "orange"
+   },
+   {
+    "x": 30.2,
+    "y": 35,
+    "color": "orange"
+   },
+   {
+    "x": 47.1,
+    "y": 22.4,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 47.1,
+    "y": 38.7,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 74,
+    "y": 33.5,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 83,
+    "y": 33.5,
+    "label": "3"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 92,
+    "y": 33.5,
+    "label": "4"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 37,
+    "y": 52.5,
+    "label": "7"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 28,
+    "y": 52.5,
+    "label": "8"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 19,
+    "y": 52.5,
+    "label": "9"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 22,
+    "y": 10,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b2",
+    "x": 74.6,
+    "y": 34.1
+   },
+   {
+    "id": "s1",
+    "x": 83.6,
+    "y": 38
+   },
+   {
+    "id": "s2",
+    "x": 92.6,
+    "y": 38
+   }
+  ],
+  "steps": [
+   {
+    "label": "Vom Hütchen lösen",
+    "say": "Neon sieben löst sich scharf vom Hütchen, und Neon zwei spielt ihn an.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       46.5,
+       44.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b2",
+      "to": [
+       47.1,
+       45.1
+      ],
+      "type": "pass",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Zurück, dann herum",
+    "say": "Neon zwei kommt ins Feld, und Neon sieben legt den Ball zurück. Dann läuft Neon sieben außen um den unteren Dummy.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       60.2,
+       34.8
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b2",
+      "to": [
+       60.8,
+       35.4
+      ],
+      "type": "pass",
+      "delay": 0.3
+     },
+     {
+      "who": "n7",
+      "to": [
+       40.5,
+       39
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       45.5,
+       31
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Doppelpass unten",
+    "say": "Neon zwei spielt ihm den Ball hinter dem Dummy in den Lauf und läuft selbst weiter nach oben.",
+    "moves": [
+     {
+      "who": "b2",
+      "to": [
+       46.1,
+       31.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n2",
+      "to": [
+       55,
+       19
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Doppelpass oben",
+    "say": "Neon sieben spielt zu Neon zwei, läuft um den oberen Dummy und bekommt den Ball wieder in den Lauf.",
+    "moves": [
+     {
+      "who": "b2",
+      "to": [
+       55.6,
+       19.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n7",
+      "to": [
+       40,
+       24
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       41.5,
+       13.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b2",
+      "to": [
+       42.1,
+       14.1
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Abschluss: Punkt",
+    "say": "Neon sieben schießt direkt ins obere Minitor, und das gibt einen Punkt. Neon zwei sprintet durch das Hütchentor links und stellt sich wieder an. Der Abschluss startet die nächsten beiden: Neon drei und Neon acht.",
+    "moves": [
+     {
+      "who": "b2",
+      "to": [
+       69.7,
+       15.2
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n2",
+      "to": [
+       53,
+       30
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n2",
+      "to": [
+       24,
+       30
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 30,
+    "y1": 58.6,
+    "x2": 70,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 99,
+    "y1": 5,
+    "x2": 99,
+    "y2": 55,
+    "text": "23 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Scharf vom Hütchen lösen.",
+   "title": "Scharf lösen",
+   "text": "Der Läufer wartet nicht am Hütchen auf den Ball. Er macht erst einen kurzen Schritt weg und startet dann scharf in den freien Raum. Der Passgeber spielt genau in diesen Lauf.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 74,
+      "y": 33.5,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 83,
+      "y": 33.5,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 92,
+      "y": 33.5,
+      "label": "4"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 37,
+      "y": 52.5,
+      "label": "7"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 28,
+      "y": 52.5,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 19,
+      "y": 52.5,
+      "label": "9"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 22,
+      "y": 10,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b2",
+      "x": 74.6,
+      "y": 34.1
+     },
+     {
+      "id": "s1",
+      "x": 83.6,
+      "y": 38
+     },
+     {
+      "id": "s2",
+      "x": 92.6,
+      "y": 38
+     }
+    ],
+    "steps": [
+     {
+      "label": "Erst weg",
+      "say": "Neon sieben macht zuerst einen kurzen Schritt weg vom Ball.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         40.5,
+         53
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Dann scharf rein",
+      "say": "Dann startet er scharf in den freien Raum, und Neon zwei spielt ihm den Ball genau in den Lauf. Jetzt kann der Doppelpass beginnen.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         46.5,
+         44.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b2",
+        "to": [
+         47.1,
+         45.1
+        ],
+        "type": "pass",
+        "delay": 0.2
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Diagonal abschließen.",
+   "title": "Diagonal abschließen",
+   "text": "Jetzt wird nicht ins nahe Minitor geschossen, sondern ins untere, diagonal gegenüber. Der Läufer muss vorher schauen, ob der Weg frei ist, und den Ball mit dem ersten Kontakt in die richtige Richtung schießen.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 55,
+      "y": 19,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 83,
+      "y": 33.5,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 92,
+      "y": 33.5,
+      "label": "4"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 40,
+      "y": 24,
+      "label": "7"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 28,
+      "y": 52.5,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 19,
+      "y": 52.5,
+      "label": "9"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 22,
+      "y": 10,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b2",
+      "x": 55.6,
+      "y": 19.6
+     },
+     {
+      "id": "s1",
+      "x": 83.6,
+      "y": 38
+     },
+     {
+      "id": "s2",
+      "x": 92.6,
+      "y": 38
+     }
+    ],
+    "steps": [
+     {
+      "label": "Ball in den Lauf",
+      "say": "Neon zwei spielt Neon sieben nach dem zweiten Doppelpass in den Lauf. Neon sieben schaut dabei schon zum unteren Minitor.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         44,
+         11
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b2",
+        "to": [
+         44.6,
+         11.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       },
+       {
+        "who": "n7",
+        "to": [
+         56,
+         27
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Diagonal: Punkt",
+      "say": "Er schießt direkt und flach diagonal ins untere Minitor, und das gibt einen Punkt.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         69.7,
+         44.7
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
