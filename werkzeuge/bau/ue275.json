@@ -1,0 +1,746 @@
+{
+ "title": "Slalom, Puppen und Wendestange",
+ "code": "UE-275",
+ "kind": "Übungsform",
+ "focuses": [
+  "Dribbling",
+  "Koordination"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Einzeltraining"
+ ],
+ "duration_minutes": 15,
+ "players_min": 1,
+ "players_max": 2,
+ "field_size": "Dreieck, 14 m Seitenlänge",
+ "description": "Ein Dribbel-Parcours im Dreieck mit drei Stationen. Links dribbelt der Spieler im Slalom durch Stangen, rechts legt er sich den Ball schnell an zwei Puppen vorbei. Unten dribbelt er im Bogen um eine Stange in der Mitte zurück zum Start. Erst kommt die Technik, dann das Tempo.",
+ "organisation": [
+  "Aufbauen: Ein Dreieck mit vierzehn Metern Seitenlänge und Hütchen an den Ecken. Links vier Stangen, rechts zwei Puppen, unten zwei Stangen auf der Linie und eine Stange in der Mitte.",
+  "Verteilen: Spieler sieben startet mit Ball am Hütchen unten links. Der Trainer steht rechts außen mit Ersatzbällen.",
+  "Ablauf: Slalom durch die Stangen, um das obere Hütchen, schnell an den Puppen vorbei, um das Hütchen unten rechts und im Bogen um die Mittelstange zurück zum Start.",
+  "Wechsel: Nach jeder Runde eine kurze Pause, dann die nächste Runde. Sind zwei Spieler da, startet der zweite, sobald der erste zurück ist."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Mit beiden Füßen durch die Stationen dribbeln",
+  "Den Ball an den Puppen schnell zur Seite legen",
+  "Den Ball immer eng am Fuß führen",
+  "Erst sauber, dann schneller, und Innenseite, Außenseite und Spann abwechseln"
+ ],
+ "materials": [
+  "3 Hütchen",
+  "7 Stangen",
+  "2 Puppen",
+  "Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Slalom, Puppen und Wendestange. Spieler sieben dribbelt einen Parcours im Dreieck mit drei Stationen.",
+ "board": {
+  "lines": [
+   {
+    "type": "line",
+    "x1": 29,
+    "y1": 50,
+    "x2": 50,
+    "y2": 8,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 50,
+    "y1": 8,
+    "x2": 71,
+    "y2": 50,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 29,
+    "y1": 50,
+    "x2": 71,
+    "y2": 50,
+    "dashed": false
+   }
+  ],
+  "cones": [
+   {
+    "x": 29,
+    "y": 50,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 8,
+    "color": "orange"
+   },
+   {
+    "x": 71,
+    "y": 50,
+    "color": "orange"
+   },
+   {
+    "x": 34.9,
+    "y": 38.6,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 37.4,
+    "y": 33.4,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 39.7,
+    "y": 28.4,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 41.9,
+    "y": 23.9,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 44,
+    "y": 50,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 55,
+    "y": 50,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 50,
+    "y": 43,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 58,
+    "y": 23.6,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 63.2,
+    "y": 33.9,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 31,
+    "y": 47,
+    "label": "7"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 80,
+    "y": 44,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 31.6,
+    "y": 47.6
+   },
+   {
+    "id": "s1",
+    "x": 83.5,
+    "y": 47.5
+   },
+   {
+    "id": "s2",
+    "x": 83.5,
+    "y": 50
+   }
+  ],
+  "steps": [
+   {
+    "label": "Slalom durch die Stangen",
+    "say": "Spieler sieben startet unten links. Er dribbelt im Slalom durch die vier Stangen nach oben und nimmt dabei beide Füße.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       37.6,
+       39.9
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       34.7,
+       32.1
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       42.4,
+       29.7
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       39.2,
+       22.6
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Um das Hütchen oben",
+    "say": "Oben dribbelt er eng um das Hütchen herum und nimmt die rechte Seite des Dreiecks.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       44,
+       14
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       47,
+       7.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       50,
+       4.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       53.5,
+       8.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       56.5,
+       18
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Schnell an den Puppen vorbei",
+    "say": "Vor jeder Puppe legt er sich den Ball schnell zur Seite und dribbelt vorbei. An der ersten Puppe innen, an der zweiten außen.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       55,
+       25
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       60,
+       29.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       66,
+       32
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       68,
+       38
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Um das Hütchen unten",
+    "say": "Dann dribbelt er zum Hütchen unten rechts und eng darum herum.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       69,
+       46
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       74.5,
+       48.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       73.5,
+       53
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       71,
+       54
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Bogen zum Start: Ziel",
+    "say": "Unten dribbelt er zwischen den zwei Stangen hinein, im Bogen um die Stange in der Mitte und zurück zum Start. Das Ziel: die ganze Runde mit dem Ball eng am Fuß. Nach einer kurzen Pause startet Spieler sieben die nächste Runde.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       58,
+       53
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       53,
+       52
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       52.5,
+       46
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       52.5,
+       41.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       50,
+       39.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       47.5,
+       41.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       47,
+       48
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       45.5,
+       53
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       33,
+       52
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       31,
+       47
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 29,
+    "y1": 58.6,
+    "x2": 71,
+    "y2": 58.6,
+    "text": "14 m"
+   },
+   {
+    "x1": 94,
+    "y1": 8,
+    "x2": 94,
+    "y2": 50,
+    "text": "14 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Den Ball schnell an der Puppe vorbeilegen.",
+   "title": "Mit der Innenseite verlagern",
+   "text": "Kurz vor der Puppe legt der Spieler den Ball mit der Innenseite schnell zur Seite. So bleibt der Ball unter Kontrolle, auch bei der schnellen Richtungsänderung. Danach geht es sofort wieder nach vorn.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 56.5,
+      "y": 18,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 80,
+      "y": 44,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 57.1,
+      "y": 18.6
+     },
+     {
+      "id": "s1",
+      "x": 83.5,
+      "y": 47.5
+     },
+     {
+      "id": "s2",
+      "x": 83.5,
+      "y": 50
+     }
+    ],
+    "steps": [
+     {
+      "label": "Innenseite, zur Seite",
+      "say": "Spieler sieben kommt auf die erste Puppe zu. Kurz davor legt er den Ball mit der Innenseite schnell zur Seite und dribbelt innen vorbei.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         55,
+         25
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         60,
+         29.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Zweite Puppe außen",
+      "say": "An der zweiten Puppe legt er den Ball genauso schnell nach außen und dribbelt weiter zum Hütchen unten.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         66,
+         32
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         68,
+         38
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Den Ball eng führen, auch wenn die Beine müde werden.",
+   "title": "Eng führen, auch wenn müde",
+   "text": "Nach ein paar Runden werden die Beine schwer. Gerade dann bleibt der Spieler konzentriert und führt den Ball mit kurzen Kontakten. Springt der Ball weg, geht der Rhythmus verloren.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 71,
+      "y": 54,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 80,
+      "y": 44,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 71.6,
+      "y": 54.6
+     },
+     {
+      "id": "s1",
+      "x": 83.5,
+      "y": 47.5
+     },
+     {
+      "id": "s2",
+      "x": 83.5,
+      "y": 50
+     }
+    ],
+    "steps": [
+     {
+      "label": "Kurze Kontakte",
+      "say": "Spieler sieben ist schon müde. Trotzdem dribbelt er mit kurzen Kontakten zwischen die zwei Stangen.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         58,
+         53
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         53,
+         52
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         52.5,
+         46
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Konzentriert bis zum Start",
+      "say": "Eng um die Mittelstange und zurück zum Start. Der Ball springt nicht weg, und das ist das Ziel.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         52.5,
+         41.5
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         50,
+         39.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         47.5,
+         41.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         47,
+         48
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         45.5,
+         53
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         33,
+         52
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         31,
+         47
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

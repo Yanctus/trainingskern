@@ -1,0 +1,558 @@
+{
+ "title": "Seitenwechsel ins Minitor",
+ "code": "UE-274",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Ballannahme",
+  "Bewegung"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Einzeltraining"
+ ],
+ "duration_minutes": 15,
+ "players_min": 1,
+ "players_max": 2,
+ "field_size": "46 x 27 m",
+ "description": "Ein zentraler Mittelfeldspieler übt den Seitenwechsel. Nach zwei Prallpässen mit dem Trainer löst er sich nach außen, öffnet die Hüfte und nimmt den Ball an. Mit dem zweiten Kontakt spielt er den langen Ball ins Minitor auf der anderen Seite. Danach kommt die andere Seite dran.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 46 mal 27 Metern. Unten in der Mitte ein Dreieck aus drei Hütchen, links und rechts im oberen Drittel je ein Minitor für die Flügelspieler.",
+  "Verteilen: Spieler acht steht im Dreieck. Der Trainer steht unten in der Mitte mit vielen Bällen.",
+  "Ablauf: Prallpass mit dem Trainer, Lauf um das Hütchen und zweiter Prallpass. Dann nach außen absetzen, annehmen und mit dem zweiten Kontakt ins Minitor auf der anderen Seite wechseln.",
+  "Wechsel: Nach jedem Seitenwechsel kommt die andere Seite dran. Gearbeitet wird auf Zeit oder bis alle Bälle gespielt sind, dann Pause."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Die Hüfte früh öffnen und Ball und Minitor sehen",
+  "Abstand zum Trainer schaffen und den Ball in der Bewegung annehmen",
+  "Mit dem hinteren Fuß annehmen und nach vorn mitnehmen",
+  "Wenige Kontakte: annehmen und mit dem zweiten Kontakt wechseln"
+ ],
+ "materials": [
+  "2 Minitore",
+  "3 Hütchen",
+  "2 Prallbretter (Steigerung)",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Seitenwechsel ins Minitor. Spieler acht spielt zwei Prallpässe mit dem Trainer und wechselt dann mit einem langen Ball die Seite.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 15,
+    "y": 12,
+    "w": 70,
+    "h": 43
+   }
+  ],
+  "goals": [
+   {
+    "x": 20,
+    "y": 27,
+    "side": "left"
+   },
+   {
+    "x": 80,
+    "y": 27,
+    "side": "right"
+   }
+  ],
+  "cones": [
+   {
+    "x": 50,
+    "y": 31,
+    "color": "orange",
+    "id": "k1"
+   },
+   {
+    "x": 45,
+    "y": 40,
+    "color": "orange",
+    "id": "k2"
+   },
+   {
+    "x": 55,
+    "y": 40,
+    "color": "orange",
+    "id": "k3"
+   }
+  ],
+  "players": [
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 50,
+    "y": 36,
+    "label": "8"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 50,
+    "y": 54,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 50.6,
+    "y": 54.6
+   },
+   {
+    "id": "s1",
+    "x": 45.5,
+    "y": 55.5
+   },
+   {
+    "id": "s2",
+    "x": 43,
+    "y": 55.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Erster Prallpass",
+    "say": "Der Trainer passt zu Spieler acht ins Dreieck. Spieler acht spielt den Ball direkt zurück.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       36.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       54.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Um das Hütchen",
+    "say": "Spieler acht läuft außen um das rechte Hütchen. Der Trainer passt wieder, und Spieler acht spielt direkt zurück.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       57.5,
+       35.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n8",
+      "to": [
+       59.5,
+       42
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       60.1,
+       42.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       54.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Absetzen, Hüfte öffnen",
+    "say": "Spieler acht setzt sich nach außen ab und öffnet die Hüfte. So sieht er den Ball und das Minitor auf der anderen Seite. Der Trainer passt in den Lauf.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       65,
+       38
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n8",
+      "to": [
+       45.5,
+       33
+      ],
+      "type": "blick",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       65.6,
+       38.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Seitenwechsel: Ziel",
+    "say": "Spieler acht nimmt den Ball mit dem hinteren Fuß nach vorn mit. Mit dem zweiten Kontakt spielt er den langen Ball ins linke Minitor. Das ist das Ziel. Danach geht er zurück ins Dreieck, und es geht zur anderen Seite.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       63,
+       35
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       20.5,
+       27
+      ],
+      "type": "pass",
+      "bend": 8,
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       50,
+       36
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 15,
+    "y1": 58.6,
+    "x2": 85,
+    "y2": 58.6,
+    "text": "46 m"
+   },
+   {
+    "x1": 91,
+    "y1": 12,
+    "x2": 91,
+    "y2": 55,
+    "text": "27 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Spieler acht täuscht den Seitenwechsel nur an.",
+   "title": "Seitenwechsel antäuschen",
+   "text": "Ist der Seitenwechsel nicht frei, täuscht der Spieler ihn nur an. Er dreht zur sicheren Seite weg, schützt den Ball und spielt zurück zum Trainer. Dann löst er sich neu, nimmt den Ball wieder an und wechselt jetzt die Seite.",
+   "board": {
+    "players": [
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 65,
+      "y": 38,
+      "label": "8"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 54,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 65.6,
+      "y": 38.6
+     },
+     {
+      "id": "s1",
+      "x": 45.5,
+      "y": 55.5
+     },
+     {
+      "id": "s2",
+      "x": 43,
+      "y": 55.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Antäuschen, wegdrehen",
+      "say": "Spieler acht schaut zum Minitor und täuscht den langen Ball an. Dann dreht er zur sicheren Seite nach außen weg und spielt zurück zum Trainer.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         45.5,
+         33
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "n8",
+        "to": [
+         67,
+         44
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         54.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Neu anbieten",
+      "say": "Spieler acht löst sich wieder nach außen und öffnet die Hüfte. Der Trainer passt noch einmal.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         64,
+         37.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n8",
+        "to": [
+         44.5,
+         32.5
+        ],
+        "type": "blick",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         64.6,
+         38.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Jetzt der Wechsel: Ziel",
+      "say": "Spieler acht nimmt den Ball nach vorn mit und spielt den langen Ball ins linke Minitor. Das ist das Ziel. Danach geht es zur anderen Seite.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         62,
+         34.5
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         20.5,
+         27
+        ],
+        "type": "pass",
+        "bend": 8,
+        "after": true
+       }
+      ]
+     }
+    ],
+    "cones": [
+     {
+      "x": 50,
+      "y": 31,
+      "color": "orange",
+      "id": "k1"
+     },
+     {
+      "x": 45,
+      "y": 40,
+      "color": "orange",
+      "id": "k2"
+     },
+     {
+      "x": 55,
+      "y": 40,
+      "color": "orange",
+      "id": "k3"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Vor den Minitoren stehen Prallbretter.",
+   "title": "Hoch über das Prallbrett",
+   "text": "Vor jedem Minitor steht ein Prallbrett. Es steht für Gegenspieler, über die der Ball hinweg muss. Der Spieler lehnt sich leicht zurück und trifft den Ball unten. Ist der Ball zu flach, prallt er vom Brett ab.",
+   "board": {
+    "players": [
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 65,
+      "y": 38,
+      "label": "8"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 54,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 54.6
+     },
+     {
+      "id": "s1",
+      "x": 45.5,
+      "y": 55.5
+     },
+     {
+      "id": "s2",
+      "x": 43,
+      "y": 55.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Annehmen, Hüfte offen",
+      "say": "Spieler acht steht außen und öffnet die Hüfte. Er sieht Ball und Minitor. Der Trainer passt zu ihm.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         45.5,
+         33
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         65.6,
+         38.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Über das Brett: Ziel",
+      "say": "Spieler acht nimmt den Ball nach vorn mit. Er bleibt locker, lehnt sich leicht zurück und chippt den Ball über das Prallbrett ins Minitor. Das ist das Ziel. Danach kommt die andere Seite dran.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         63,
+         35
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         20.5,
+         27
+        ],
+        "type": "pass",
+        "bend": 8,
+        "after": true
+       }
+      ]
+     }
+    ],
+    "cones": [
+     {
+      "x": 50,
+      "y": 31,
+      "color": "orange",
+      "id": "k1"
+     },
+     {
+      "x": 45,
+      "y": 40,
+      "color": "orange",
+      "id": "k2"
+     },
+     {
+      "x": 55,
+      "y": 40,
+      "color": "orange",
+      "id": "k3"
+     },
+     {
+      "x": 27,
+      "y": 28.5,
+      "color": "orange",
+      "shape": "huerde",
+      "id": "h1"
+     },
+     {
+      "x": 73,
+      "y": 28.5,
+      "color": "orange",
+      "shape": "huerde",
+      "id": "h2"
+     }
+    ]
+   }
+  }
+ ]
+}

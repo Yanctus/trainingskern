@@ -1,0 +1,775 @@
+{
+ "title": "Dribbel-Acht, dann Sprintrunde",
+ "code": "UE-276",
+ "kind": "Übungsform",
+ "focuses": [
+  "Dribbling",
+  "Schnelligkeit",
+  "Kondition"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Einzeltraining"
+ ],
+ "duration_minutes": 15,
+ "players_min": 1,
+ "players_max": 2,
+ "field_size": "9 x 14 m",
+ "description": "Der Spieler dribbelt eine liegende Acht um vier Stangen und eine Puppe in der Mitte. An der Puppe legt er sich den Ball schnell vorbei, an den Stangen dreht er mit kleinen Kontakten. Danach legt er den Ball ab und sprintet dieselbe Runde ohne Ball. Nach zwei Runden gibt es eine Pause.",
+ "organisation": [
+  "Aufbauen: Ein Feld von neun mal vierzehn Metern. In jeder Ecke eine Stange, in der Mitte eine Puppe.",
+  "Verteilen: Spieler sieben startet mit Ball an der Stange unten rechts. Der Trainer steht rechts außen mit Ersatzbällen.",
+  "Ablauf: Zur Puppe, schnell links vorbei, um die Stange oben links, quer hinüber, um die Stange oben rechts. Dann dasselbe andersherum zurück zum Start. Ball ablegen und die ganze Runde ohne Ball sprinten.",
+  "Wechsel: Nach zwei Runden gibt es eine Pause. Sind zwei Spieler da, startet der zweite, während der erste Pause macht."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Den Ball eng führen und trotzdem schnell sein",
+  "An der Puppe den Ball schnell zur Seite legen",
+  "An den Stangen kleine, schnelle Kontakte",
+  "Ohne Ball mit vollem Tempo sprinten und nach zwei Runden gut erholen"
+ ],
+ "materials": [
+  "5 Stangen",
+  "1 Puppe",
+  "Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Dribbel-Acht, dann Sprintrunde. Spieler sieben dribbelt eine Acht um die Stangen und sprintet danach dieselbe Runde ohne Ball.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 33,
+    "y": 8,
+    "w": 34,
+    "h": 44
+   }
+  ],
+  "cones": [
+   {
+    "x": 38,
+    "y": 15,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 62,
+    "y": 15,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 38,
+    "y": 46,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 62,
+    "y": 46,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 50,
+    "y": 29,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 65.5,
+    "y": 47.5,
+    "label": "7"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 77,
+    "y": 42,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 66.1,
+    "y": 48.1
+   },
+   {
+    "id": "s1",
+    "x": 80.5,
+    "y": 45.5
+   },
+   {
+    "id": "s2",
+    "x": 80.5,
+    "y": 48
+   }
+  ],
+  "steps": [
+   {
+    "label": "Zur Puppe",
+    "say": "Spieler sieben startet unten rechts an der Stange. Er dribbelt mit Tempo zur Puppe in der Mitte.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       65,
+       43
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       58,
+       36
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       53,
+       33
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Schnell um die Puppe",
+    "say": "An der Puppe legt er sich den Ball schnell zur Seite, dribbelt links herum und weiter zur Stange oben links.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       46,
+       30
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       48,
+       24.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       42,
+       19
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Quer hinüber",
+    "say": "Mit kleinen, schnellen Kontakten dribbelt er um die Stange, quer hinüber und um die Stange oben rechts.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       35.5,
+       16.5
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       36,
+       11.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       50,
+       11
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       64,
+       11.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       65,
+       17.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Jetzt andersherum",
+    "say": "Jetzt dasselbe in die andere Richtung: wieder schnell um die Puppe, diesmal rechts herum, und weiter zur Stange unten links.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       57,
+       21
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       54,
+       25
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       54,
+       29.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       51,
+       34
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       45,
+       38
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       35.5,
+       44.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Zurück zum Start",
+    "say": "Er dribbelt um die Stange unten links und quer hinüber zurück zum Start.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       36,
+       49.5
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       50,
+       50.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       65.5,
+       47.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Ohne Ball sprinten: Ziel",
+    "say": "Am Start legt Spieler sieben den Ball ab und sprintet dieselbe Runde ohne Ball. Das Ziel: die ganze Runde mit vollem Tempo. Nach zwei solchen Runden gibt es eine Pause, dann ist er wieder dran.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       65,
+       43
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n7",
+      "to": [
+       58,
+       36
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       53,
+       33
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       46,
+       30
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       48,
+       24.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       42,
+       19
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       35.5,
+       16.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       36,
+       11.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       50,
+       11
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       64,
+       11.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       65,
+       17.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       57,
+       21
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       54,
+       25
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       54,
+       29.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       51,
+       34
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       45,
+       38
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       35.5,
+       44.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       36,
+       49.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       50,
+       50.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       65.5,
+       47.5
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 33,
+    "y1": 58.6,
+    "x2": 67,
+    "y2": 58.6,
+    "text": "9 m"
+   },
+   {
+    "x1": 88,
+    "y1": 8,
+    "x2": 88,
+    "y2": 52,
+    "text": "14 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Kleine, schnelle Kontakte an der Stange.",
+   "title": "Eng um die Stange drehen",
+   "text": "An den Stangen dreht der Spieler mit vielen kleinen, schnellen Kontakten. Der Ball bleibt dabei ganz nah am Fuß. So schafft er die Richtungsänderung schnell und ohne Ballverlust.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 47.5,
+      "y": 23.5,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 77,
+      "y": 42,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 48.1,
+      "y": 24.1
+     },
+     {
+      "id": "s1",
+      "x": 80.5,
+      "y": 45.5
+     },
+     {
+      "id": "s2",
+      "x": 80.5,
+      "y": 48
+     }
+    ],
+    "steps": [
+     {
+      "label": "Kleine Kontakte",
+      "say": "Spieler sieben kommt zur Stange oben links. Mit kleinen, schnellen Kontakten dreht er eng um die Stange.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         42,
+         19
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         35.5,
+         16.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         36,
+         11.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Eng bleiben",
+      "say": "Der Ball bleibt nah am Fuß. Dann dribbelt er quer hinüber und dreht genauso eng um die Stange oben rechts.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         50,
+         11
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         64,
+         11.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         65,
+         17.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Die Puppe schnell umspielen.",
+   "title": "Schnell an der Puppe vorbei",
+   "text": "Kurz vor der Puppe legt der Spieler den Ball mit einem schnellen Kontakt zur Seite. Dann geht es sofort weiter, ohne abzubremsen. Nach dem Ablegen geht es mit vollem Tempo weiter zur nächsten Stange.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 65,
+      "y": 43,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 77,
+      "y": 42,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 65.6,
+      "y": 43.6
+     },
+     {
+      "id": "s1",
+      "x": 80.5,
+      "y": 45.5
+     },
+     {
+      "id": "s2",
+      "x": 80.5,
+      "y": 48
+     }
+    ],
+    "steps": [
+     {
+      "label": "Auf die Puppe zu",
+      "say": "Spieler sieben dribbelt mit Tempo auf die Puppe zu.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         58,
+         36
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         53,
+         33
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Schnell zur Seite",
+      "say": "Kurz vor der Puppe legt er den Ball schnell zur Seite, dribbelt vorbei und gleich weiter zur Stange oben links.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         46,
+         30
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         48,
+         24.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         42,
+         19
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

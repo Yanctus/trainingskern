@@ -1,0 +1,605 @@
+{
+ "title": "Hütchenreihe und Volley fangen",
+ "code": "UE-254",
+ "kind": "Übungsform",
+ "focuses": [
+  "Koordination",
+  "Schnelligkeit",
+  "Ballannahme"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Torwart"
+ ],
+ "duration_minutes": 15,
+ "players_min": 2,
+ "players_max": 3,
+ "field_size": "41 x 16 m",
+ "description": "Zwei Torhüter arbeiten im Torraum abwechselnd an schnellen Füßen und sicherem Fangen. Der Torwart läuft mit kleinen, schnellen Schritten durch eine Hütchenreihe vor der Torlinie. In der Mitte stellt er sich und fängt einen Volley vom Trainer. Er wirft den Ball zurück und geht ruhig zur anderen Hütchenreihe, während der zweite Torwart startet.",
+ "organisation": [
+  "Aufbauen: Ein Jugendtor mit Torraum. Links und rechts der Mitte liegen je vier Hütchen in einer Reihe kurz vor der Torlinie, in der Mitte eine Markierung.",
+  "Verteilen: Zwei Torhüter stehen rechts neben der rechten Hütchenreihe. Der Trainer steht etwa acht Meter vor dem Tor mit vielen Bällen.",
+  "Ablauf: Der erste Torwart läuft mit schnellen Füßen durch die Hütchen bis zur Mitte, stellt sich und fängt den Volley vom Trainer. Dann wirft er den Ball zurück und geht ruhig zur linken Reihe.",
+  "Wechsel: Danach startet der zweite Torwart. Haben beide die rechte Reihe geschafft, laufen sie von links durch die andere Reihe zur Mitte."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Kleine, schnelle Schritte durch die Hütchen, ohne eins zu berühren",
+  "In der Mitte kurz stellen, auf die Zehenspitzen und den Ball fest fangen",
+  "Auf dem Weg zur nächsten Reihe ruhig gehen und gut durchatmen",
+  "Den Ball genau und flach zum Trainer zurückwerfen"
+ ],
+ "materials": [
+  "1 Jugendtor",
+  "10 Hütchen",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Hütchenreihe und Volley fangen. Zwei Torhüter laufen mit schnellen Füßen durch die Hütchen und fangen dann einen Volley vom Trainer.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 5,
+    "y": 5,
+    "w": 90,
+    "h": 37
+   },
+   {
+    "type": "rect",
+    "x": 30,
+    "y": 5,
+    "w": 40,
+    "h": 12
+   }
+  ],
+  "cones": [
+   {
+    "x": 32,
+    "y": 10,
+    "color": "orange"
+   },
+   {
+    "x": 36,
+    "y": 10,
+    "color": "orange"
+   },
+   {
+    "x": 40,
+    "y": 10,
+    "color": "orange"
+   },
+   {
+    "x": 44,
+    "y": 10,
+    "color": "orange"
+   },
+   {
+    "x": 56,
+    "y": 10,
+    "color": "orange"
+   },
+   {
+    "x": 60,
+    "y": 10,
+    "color": "orange"
+   },
+   {
+    "x": 64,
+    "y": 10,
+    "color": "orange"
+   },
+   {
+    "x": 68,
+    "y": 10,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 6,
+    "color": "neon"
+   },
+   {
+    "x": 44,
+    "y": 25,
+    "color": "orange"
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "jugend"
+   }
+  ],
+  "players": [
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 73,
+    "y": 10,
+    "label": "TW"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 83,
+    "y": 10,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 50,
+    "y": 27,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 50.6,
+    "y": 27.6
+   },
+   {
+    "id": "s1",
+    "x": 54,
+    "y": 28
+   },
+   {
+    "id": "s2",
+    "x": 54,
+    "y": 31
+   }
+  ],
+  "steps": [
+   {
+    "label": "Schnelle Füße",
+    "say": "Der erste Torwart läuft mit kleinen, schnellen Schritten durch die rechte Hütchenreihe, immer abwechselnd vor und hinter den Hütchen. So kommt er bis zur Mitte.",
+    "moves": [
+     {
+      "who": "k1",
+      "to": [
+       68,
+       13
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "k1",
+      "to": [
+       64,
+       7
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       60,
+       13
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       56,
+       7
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       50,
+       10
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Stellen und fangen",
+    "say": "In der Mitte stellt er sich, geht auf die Zehenspitzen und schaut zum Trainer. Der Trainer schießt ihm einen Volley zu, und der Torwart fängt den Ball fest mit beiden Händen.",
+    "moves": [
+     {
+      "who": "k1",
+      "to": [
+       50,
+       26
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       10.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zurückwerfen",
+    "say": "Der Torwart wirft den Ball genau zum Trainer zurück.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       27.6
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Zur nächsten Reihe",
+    "say": "Dann geht der erste Torwart ruhig vor der linken Reihe entlang nach links und atmet durch. Jetzt ist der zweite Torwart dran. Ziel ist, jeden Volley sicher zu fangen. Haben beide die rechte Reihe geschafft, geht es von links.",
+    "moves": [
+     {
+      "who": "k1",
+      "to": [
+       44,
+       15
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "k1",
+      "to": [
+       28,
+       15
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       27,
+       10
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k2",
+      "to": [
+       73,
+       10
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "k2",
+      "to": [
+       68,
+       13
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 5,
+    "y1": 58.6,
+    "x2": 95,
+    "y2": 58.6,
+    "text": "41 m"
+   },
+   {
+    "x1": 98,
+    "y1": 5,
+    "x2": 98,
+    "y2": 42,
+    "text": "16 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Sauber und schnell durch die Hütchen.",
+   "title": "Sauber und schnell",
+   "text": "Der Torwart macht kleine, schnelle Schritte und bleibt dabei leicht in den Knien. Er berührt kein Hütchen und wird zum Ende nicht langsamer. Nur wer sauber und schnell läuft, steht in der Mitte rechtzeitig bereit.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 73,
+      "y": 10,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 83,
+      "y": 10,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 27,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 27.6
+     },
+     {
+      "id": "s1",
+      "x": 54,
+      "y": 28
+     },
+     {
+      "id": "s2",
+      "x": 54,
+      "y": 31
+     }
+    ],
+    "steps": [
+     {
+      "label": "Kleine Schritte",
+      "say": "Der erste Torwart läuft durch die Hütchen. Kleine, schnelle Schritte, leicht in den Knien, und kein Hütchen wird berührt.",
+      "moves": [
+       {
+        "who": "k1",
+        "to": [
+         68,
+         13
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "k1",
+        "to": [
+         64,
+         7
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k1",
+        "to": [
+         60,
+         13
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k1",
+        "to": [
+         56,
+         7
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k1",
+        "to": [
+         50,
+         10
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Bereit: fangen",
+      "say": "In der Mitte steht er sofort bereit und schaut zum Trainer. Der Volley kommt, und er fängt ihn sicher.",
+      "moves": [
+       {
+        "who": "k1",
+        "to": [
+         50,
+         26
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         10.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Rückwärts durch die Hütchen und schnell drehen.",
+   "title": "Rückwärts und drehen",
+   "text": "Jetzt läuft der Torwart rückwärts durch die Hütchen, mit dem Rücken zur Mitte. In der Mitte dreht er sich schnell um und fängt den Volley. Wer sich schnell dreht, hat mehr Zeit für den Ball.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 73,
+      "y": 10,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 83,
+      "y": 10,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 27,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 27.6
+     },
+     {
+      "id": "s1",
+      "x": 54,
+      "y": 28
+     },
+     {
+      "id": "s2",
+      "x": 54,
+      "y": 31
+     }
+    ],
+    "steps": [
+     {
+      "label": "Rückwärts durch",
+      "say": "Der erste Torwart läuft rückwärts durch die Hütchenreihe bis zur Mitte. Er macht kleine, schnelle Schritte und schaut dabei kurz über die Schulter.",
+      "moves": [
+       {
+        "who": "k1",
+        "to": [
+         68,
+         13
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "k1",
+        "to": [
+         64,
+         7
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k1",
+        "to": [
+         60,
+         13
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k1",
+        "to": [
+         56,
+         7
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k1",
+        "to": [
+         50,
+         10
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Drehen und fangen",
+      "say": "In der Mitte dreht er sich schnell zum Trainer um und stellt sich. Sofort kommt der Volley, und er fängt ihn fest.",
+      "moves": [
+       {
+        "who": "k1",
+        "to": [
+         50,
+         26
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         10.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Zurückwerfen",
+      "say": "Er wirft den Ball genau zum Trainer zurück und geht ruhig zur linken Reihe. Dann ist der zweite Torwart dran.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         27.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "k1",
+        "to": [
+         44,
+         15
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k1",
+        "to": [
+         28,
+         15
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,844 @@
+{
+ "title": "Hechten und ins Minitor werfen",
+ "code": "UE-255",
+ "kind": "Übungsform",
+ "focuses": [
+  "Koordination",
+  "Schnelligkeit",
+  "Ballannahme"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Torwart"
+ ],
+ "duration_minutes": 15,
+ "players_min": 5,
+ "players_max": 5,
+ "field_size": "41 x 27 m",
+ "description": "Drei Torhüter arbeiten gleichzeitig auf drei Bahnen. Jeder läuft zuerst durch eine Laufstation mit Hütchen, Leiter oder Hürden und fängt dann einen Volley. Danach läuft er um eine Puppe, hechtet auf einen flachen Schuss und hält den Ball fest. Zum Schluss steht er schnell auf und wirft den Ball ins Minitor, das gibt einen Punkt.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 41 mal 27 Metern mit drei Bahnen. Unten je eine Laufstation: Hütchen-Slalom, Koordinationsleiter, Minihürden. Oben je eine Puppe, zwei Hütchen und ein Minitor.",
+  "Verteilen: Drei Torhüter stehen unten an den Laufstationen. Oben neben jedem Minitor steht ein Schütze mit Bällen: links Spieler sieben, in der Mitte der Trainer, rechts Spieler acht.",
+  "Ablauf: Alle drei laufen gleichzeitig durch ihre Station, gehen seitlich zum ersten Hütchen und fangen den Volley. Sie rollen den Ball zurück, laufen zur Puppe und weiter zum zweiten Hütchen. Dort hechten sie auf den flachen Schuss und werfen den Ball dann ins Minitor.",
+  "Wertung und Wechsel: Jeder Wurf ins Minitor gibt einen Punkt für den Torwart. Danach joggen alle locker zurück, machen eine kurze Pause und wechseln die Bahn."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Sauber und mit schnellen Füßen durch die Laufstation",
+  "Den Schuss ahnen und den Volley fest fangen",
+  "Schnell hechten und den Ball festhalten",
+  "Schnell aufstehen und genau ins Minitor werfen"
+ ],
+ "materials": [
+  "3 Minitore",
+  "3 Puppen oder Stangen",
+  "1 Koordinationsleiter",
+  "4 Minihürden",
+  "10 Hütchen",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Hechten und ins Minitor werfen. Drei Torhüter laufen gleichzeitig durch ihre Station, fangen, hechten und werfen den Ball ins Minitor.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 8,
+    "y": 4,
+    "w": 84,
+    "h": 52
+   },
+   {
+    "type": "line",
+    "x1": 8,
+    "y1": 32.5,
+    "x2": 92,
+    "y2": 32.5,
+    "dashed": true
+   }
+  ],
+  "cones": [
+   {
+    "x": 22,
+    "y": 37,
+    "color": "orange"
+   },
+   {
+    "x": 22,
+    "y": 41,
+    "color": "orange"
+   },
+   {
+    "x": 22,
+    "y": 45,
+    "color": "orange"
+   },
+   {
+    "x": 22,
+    "y": 49,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 42,
+    "color": "orange",
+    "shape": "leiter_ou"
+   },
+   {
+    "x": 78,
+    "y": 37,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 78,
+    "y": 41,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 78,
+    "y": 45,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 78,
+    "y": 49,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 29,
+    "y": 30,
+    "color": "neon"
+   },
+   {
+    "x": 15,
+    "y": 30,
+    "color": "neon"
+   },
+   {
+    "x": 57,
+    "y": 30,
+    "color": "neon"
+   },
+   {
+    "x": 43,
+    "y": 30,
+    "color": "neon"
+   },
+   {
+    "x": 85,
+    "y": 30,
+    "color": "neon"
+   },
+   {
+    "x": 71,
+    "y": 30,
+    "color": "neon"
+   },
+   {
+    "x": 22,
+    "y": 20,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 50,
+    "y": 20,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 78,
+    "y": 20,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "goals": [
+   {
+    "x": 17,
+    "y": 5,
+    "side": "top"
+   },
+   {
+    "x": 45,
+    "y": 5,
+    "side": "top"
+   },
+   {
+    "x": 73,
+    "y": 5,
+    "side": "top"
+   }
+  ],
+  "players": [
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 22,
+    "y": 53.5,
+    "label": "TW"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 50,
+    "y": 53.5,
+    "label": "TW"
+   },
+   {
+    "id": "k3",
+    "team": "t",
+    "x": 78,
+    "y": 53.5,
+    "label": "TW"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 27,
+    "y": 9,
+    "label": "7"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 83,
+    "y": 9,
+    "label": "8"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 55,
+    "y": 9,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b7",
+    "x": 27.6,
+    "y": 9.6
+   },
+   {
+    "id": "b1",
+    "x": 55.6,
+    "y": 9.6
+   },
+   {
+    "id": "b8",
+    "x": 83.6,
+    "y": 9.6
+   },
+   {
+    "id": "s1",
+    "x": 59.5,
+    "y": 7
+   },
+   {
+    "id": "s2",
+    "x": 59.5,
+    "y": 10
+   }
+  ],
+  "steps": [
+   {
+    "label": "Durch die Stationen",
+    "say": "Alle drei Torhüter starten gleichzeitig. Der linke läuft Slalom durch die Hütchen, der mittlere durch die Leiter und der rechte springt über die Hürden.",
+    "moves": [
+     {
+      "who": "k1",
+      "to": [
+       25,
+       49
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "k1",
+      "to": [
+       19,
+       45
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       25,
+       41
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       19,
+       37
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       22,
+       33
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k2",
+      "to": [
+       50,
+       33
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "k3",
+      "to": [
+       78,
+       33
+      ],
+      "type": "lauf"
+     }
+    ]
+   },
+   {
+    "label": "Volley fangen",
+    "say": "Jetzt gehen alle seitlich zum ersten Hütchen und schauen zum Schützen. Der Volley kommt, und jeder Torwart fängt ihn fest.",
+    "moves": [
+     {
+      "who": "k1",
+      "to": [
+       29,
+       28.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "k1",
+      "to": [
+       27,
+       11
+      ],
+      "type": "blick",
+      "after": true
+     },
+     {
+      "who": "b7",
+      "to": [
+       29.6,
+       29.1
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "k2",
+      "to": [
+       57,
+       28.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "k2",
+      "to": [
+       55,
+       11
+      ],
+      "type": "blick",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       57.6,
+       29.1
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "k3",
+      "to": [
+       85,
+       28.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "k3",
+      "to": [
+       83,
+       11
+      ],
+      "type": "blick",
+      "after": true
+     },
+     {
+      "who": "b8",
+      "to": [
+       85.6,
+       29.1
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zurück und zur Puppe",
+    "say": "Jeder rollt den Ball zurück zum Schützen. Dann laufen alle zur Puppe und seitlich weiter zum zweiten Hütchen.",
+    "moves": [
+     {
+      "who": "b7",
+      "to": [
+       27.6,
+       9.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "k1",
+      "to": [
+       24.5,
+       22
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       15,
+       28.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       55.6,
+       9.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "k2",
+      "to": [
+       52.5,
+       22
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k2",
+      "to": [
+       43,
+       28.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b8",
+      "to": [
+       83.6,
+       9.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "k3",
+      "to": [
+       80.5,
+       22
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k3",
+      "to": [
+       71,
+       28.5
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Hechten und halten",
+    "say": "Jetzt kommt ein flacher Schuss zur Seite. Jeder Torwart hechtet und hält den Ball fest.",
+    "moves": [
+     {
+      "who": "b7",
+      "to": [
+       11.6,
+       29.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "k1",
+      "to": [
+       11,
+       29
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       39.6,
+       29.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "k2",
+      "to": [
+       39,
+       29
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b8",
+      "to": [
+       67.6,
+       29.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "k3",
+      "to": [
+       67,
+       29
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Ins Minitor: Punkt",
+    "say": "Schnell aufstehen und den Ball ins Minitor werfen. Jeder Treffer gibt einen Punkt für den Torwart. Dann joggen alle locker zurück, und nach einer kurzen Pause wechselt jeder auf die nächste Bahn.",
+    "moves": [
+     {
+      "who": "b7",
+      "to": [
+       17,
+       5.5
+      ],
+      "type": "pass",
+      "delay": 0.4
+     },
+     {
+      "who": "b1",
+      "to": [
+       45,
+       5.5
+      ],
+      "type": "pass",
+      "delay": 0.4
+     },
+     {
+      "who": "b8",
+      "to": [
+       73,
+       5.5
+      ],
+      "type": "pass",
+      "delay": 0.4
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 8,
+    "y1": 58.6,
+    "x2": 92,
+    "y2": 58.6,
+    "text": "41 m"
+   },
+   {
+    "x1": 96,
+    "y1": 4,
+    "x2": 96,
+    "y2": 56,
+    "text": "27 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Den Schuss ahnen.",
+   "title": "Den Schuss ahnen",
+   "text": "Der Torwart schaut genau auf den Schützen. Holt der aus, steht der Torwart schon still und ist bereit. So fängt er den Volley sicher und lässt ihn nicht abprallen.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 22,
+      "y": 53.5,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 50,
+      "y": 33,
+      "label": "TW"
+     },
+     {
+      "id": "k3",
+      "team": "t",
+      "x": 78,
+      "y": 53.5,
+      "label": "TW"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 27,
+      "y": 9,
+      "label": "7"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 83,
+      "y": 9,
+      "label": "8"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 55,
+      "y": 9,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b7",
+      "x": 27.6,
+      "y": 9.6
+     },
+     {
+      "id": "b1",
+      "x": 55.6,
+      "y": 9.6
+     },
+     {
+      "id": "b8",
+      "x": 83.6,
+      "y": 9.6
+     },
+     {
+      "id": "s1",
+      "x": 59.5,
+      "y": 7
+     },
+     {
+      "id": "s2",
+      "x": 59.5,
+      "y": 10
+     }
+    ],
+    "steps": [
+     {
+      "label": "Hinschauen",
+      "say": "Der mittlere Torwart geht seitlich zum ersten Hütchen. Er schaut genau auf den Trainer: Wann holt er aus?",
+      "moves": [
+       {
+        "who": "k2",
+        "to": [
+         57,
+         28.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "k2",
+        "to": [
+         55,
+         11
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Bereit: fangen",
+      "say": "Der Trainer holt aus, und der Torwart steht schon still auf den Zehenspitzen. Er fängt den Volley fest mit beiden Händen.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         57.6,
+         29.1
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Hechten, festhalten, genau werfen.",
+   "title": "Hechten und genau werfen",
+   "text": "Beim Hechten landet der Torwart auf der Seite und drückt den Ball mit beiden Händen fest auf den Boden. Dann steht er sofort auf. Er wirft mit einer langen Armbewegung genau ins Minitor, so wie im Spiel beim Abwurf.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 22,
+      "y": 53.5,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 43,
+      "y": 28.5,
+      "label": "TW"
+     },
+     {
+      "id": "k3",
+      "team": "t",
+      "x": 78,
+      "y": 53.5,
+      "label": "TW"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 27,
+      "y": 9,
+      "label": "7"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 83,
+      "y": 9,
+      "label": "8"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 55,
+      "y": 9,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b7",
+      "x": 27.6,
+      "y": 9.6
+     },
+     {
+      "id": "b1",
+      "x": 55.6,
+      "y": 9.6
+     },
+     {
+      "id": "b8",
+      "x": 83.6,
+      "y": 9.6
+     },
+     {
+      "id": "s1",
+      "x": 59.5,
+      "y": 7
+     },
+     {
+      "id": "s2",
+      "x": 59.5,
+      "y": 10
+     }
+    ],
+    "steps": [
+     {
+      "label": "Hechten und halten",
+      "say": "Der Trainer schießt flach zur Seite. Der mittlere Torwart hechtet, landet auf der Seite und hält den Ball mit beiden Händen fest.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         39.6,
+         29.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "k2",
+        "to": [
+         39,
+         29
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Genau werfen: Punkt",
+      "say": "Er steht sofort auf und wirft mit langem Arm genau ins Minitor. Das gibt einen Punkt für den mittleren Torwart.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         45,
+         5.5
+        ],
+        "type": "pass",
+        "delay": 0.4
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -43,7 +43,7 @@ u = {"title": "Täuschen, vorbei und flanken", "code": "UE-281", "kind": "Übung
    S("Innen antäuschen, außen vorbei", "Er täuscht nach innen an. Dann legt er den Ball nach außen und sprintet am Dummy vorbei.",
      dr("n7", "b1", [64.5, 32.5]), dr("n7", "b1", [70.5, 30], after=True), dr("n7", "b1", [71.5, 21], after=True)),
    S("Flanke ins Minitor", "Spieler sieben flankt den Ball mit Schwung ins linke obere Minitor. Ziel ist, jede Flanke ins Minitor zu bringen. Dann läuft er zurück und ist mit dem nächsten Ball gleich wieder dran.",
-     ps("b1", [28, 13.5], bend=-8), mv("n7", [70, 42], after=True))],
+     ps("b1", [28, 13.5], bend=8), mv("n7", [70, 42], after=True))],
   "dims": dims(25, 75, 5, 55, "18 m", "18 m")},
  "versions": [
   V("Coaching-Punkt", "Jetzt zum Coaching-Punkt: Täuschen und explosiv weg.", "Täuschen und explosiv weg",

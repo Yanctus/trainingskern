@@ -1,0 +1,478 @@
+{
+ "title": "Offen annehmen, verdeckt passen",
+ "code": "UE-286",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Ballannahme",
+  "Bewegung"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Einzeltraining"
+ ],
+ "duration_minutes": 15,
+ "players_min": 1,
+ "players_max": 2,
+ "field_size": "18 x 18 m",
+ "description": "Einzeltraining für zentrale Mittelfeldspieler mit dem Trainer. Spieler acht lässt Pässe in der Mitte und außen prallen, nimmt dann neben dem Hütchentor offen an und spielt verdeckt durch das Tor zurück. Danach kommt die andere Seite dran, immer im Wechsel. So lernt er, offen anzunehmen, mit Hüfte und Augen zu täuschen und genug Abstand zu halten.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 18 Metern. Oben ein enges Hütchentor, darunter zwei Hütchen weiter auseinander.",
+  "Verteilen: Spieler acht steht in der Mitte zwischen den Hütchen. Der Trainer steht unten mit mehreren Bällen.",
+  "Ablauf: Prallpass in der Mitte, Prallpass außen am Hütchen, dann neben dem Hütchentor annehmen und verdeckt durch das Tor zurück zum Trainer. Danach die andere Seite.",
+  "Wechsel: Spieler acht arbeitet eine feste Zeit, dann ist Pause. Sind zwei Spieler da, wechseln sie sich ab."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Beim Annehmen die Hüfte öffnen und schon nach vorn schauen",
+  "Beim Rückpass die Hüfte schließen und mit den Augen täuschen",
+  "Beim Drehen den Ball mit dem Körper verstecken",
+  "Genug Abstand halten, notfalls schnell ein paar Schritte rückwärts"
+ ],
+ "materials": [
+  "4 Hütchen",
+  "Mehrere Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Offen annehmen, verdeckt passen. Spieler acht spielt mit dem Trainer Prallpässe und spielt dann verdeckt durch das Hütchentor zurück.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   }
+  ],
+  "cones": [
+   {
+    "x": 46.5,
+    "y": 26,
+    "color": "orange"
+   },
+   {
+    "x": 53.5,
+    "y": 26,
+    "color": "orange"
+   },
+   {
+    "x": 39,
+    "y": 36,
+    "color": "orange"
+   },
+   {
+    "x": 61,
+    "y": 36,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 50,
+    "y": 33,
+    "label": "8"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 50,
+    "y": 49,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 50.6,
+    "y": 49.6
+   },
+   {
+    "id": "s1",
+    "x": 45.5,
+    "y": 52
+   },
+   {
+    "id": "s2",
+    "x": 43,
+    "y": 52
+   }
+  ],
+  "steps": [
+   {
+    "label": "Prallpass in der Mitte",
+    "say": "Spieler acht steht in der Mitte zwischen den Hütchen. Der Trainer passt zu ihm, und Spieler acht lässt den Ball direkt zurückprallen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       33.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       49.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Prallpass außen",
+    "say": "Jetzt läuft Spieler acht nach außen neben das rechte Hütchen. Wieder kommt ein Pass vom Trainer, und wieder spielt er direkt zurück.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       64,
+       31
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n8",
+      "to": [
+       67,
+       38
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       67.6,
+       38.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       49.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Außen annehmen",
+    "say": "Spieler acht läuft hoch neben das Hütchentor. Er öffnet die Hüfte zur Mitte und nimmt den Pass vom Trainer offen an.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       60,
+       24
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       60.6,
+       24.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Verdeckt zurück",
+    "say": "Mit dem ersten Kontakt geht er vor das Hütchentor. Er schaut nach links, als wollte er dorthin spielen, und passt dann durch das Tor zurück zum Trainer.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       50,
+       21
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n8",
+      "to": [
+       33,
+       20
+      ],
+      "type": "blick",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       49.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Andere Seite",
+    "say": "Der Ball ist durch das Hütchentor beim Trainer, das ist das Ziel. Spieler acht läuft zurück in die Mitte, und jetzt ist die linke Seite dran. Nach einer festen Zeit ist Pause.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       50,
+       33
+      ],
+      "type": "lauf"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 81,
+    "y1": 5,
+    "x2": 81,
+    "y2": 55,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Offen annehmen und nach vorn schauen.",
+   "title": "Offen annehmen",
+   "text": "Wer offen annimmt, sieht das Spiel vor sich. Spieler acht dreht die Hüfte schon vor dem Pass zur Mitte und schaut zum Hütchentor. Steht er zu nah, geht er schnell ein paar Schritte rückwärts und schafft sich Platz.",
+   "board": {
+    "players": [
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 40,
+      "y": 24,
+      "label": "8"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 49,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 49.6
+     },
+     {
+      "id": "s1",
+      "x": 45.5,
+      "y": 52
+     },
+     {
+      "id": "s2",
+      "x": 43,
+      "y": 52
+     }
+    ],
+    "steps": [
+     {
+      "label": "Hüfte öffnen",
+      "say": "Spieler acht steht jetzt links neben dem Hütchentor. Bevor der Ball kommt, öffnet er die Hüfte und schaut schon zum Tor. Dann passt der Trainer.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         58,
+         21
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         40.6,
+         24.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Mitnehmen und zurück",
+      "say": "Mit dem ersten Kontakt nimmt er den Ball gleich mit vor das Hütchentor und spielt verdeckt zurück zum Trainer.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         50,
+         21
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         49.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Drehen und den Ball verstecken.",
+   "title": "Drehen mit Ball",
+   "text": "Nach der Annahme außen dribbelt Spieler acht über das Hütchentor und dreht sich auf der sicheren Seite. Sein Körper bleibt zwischen Ball und gedachtem Gegner. Erst dann spielt er zurück zum Trainer. Noch schwerer: nach der Drehung verdeckt zurückpassen.",
+   "board": {
+    "players": [
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 60,
+      "y": 24,
+      "label": "8"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 49,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 60.6,
+      "y": 24.6
+     },
+     {
+      "id": "s1",
+      "x": 45.5,
+      "y": 52
+     },
+     {
+      "id": "s2",
+      "x": 43,
+      "y": 52
+     }
+    ],
+    "steps": [
+     {
+      "label": "Nach innen dribbeln",
+      "say": "Spieler acht hat den Ball außen angenommen. Er dribbelt oberhalb vom Hütchentor nach links.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         46,
+         18
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Drehen",
+      "say": "Jetzt dreht er sich mit dem Ball weg. Sein Körper ist zwischen Ball und Gegner, so bleibt der Ball versteckt.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         46,
+         13
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n8",
+        "to": [
+         53,
+         14
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "n8",
+        "to": [
+         50.5,
+         20.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Zurück und wechseln",
+      "say": "Dann spielt er durch das Hütchentor zurück zum Trainer, läuft in die Mitte, und die andere Seite ist dran.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         49.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n8",
+        "to": [
+         50,
+         33
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

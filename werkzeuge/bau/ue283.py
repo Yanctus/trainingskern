@@ -58,7 +58,7 @@ u = {"title": "Stürmer legt auf Zeichen ab", "code": "UE-283", "kind": "Übungs
        bl("n9", [52, 41]), ps("b1", AN_B, after=True)),
      S("Links ablegen: Ziel", "Spieler neun legt den Ball mit dem linken Fuß ins linke Minitor. Das ist das Ziel. Dann geht er zurück an den Dummy.",
        dr("n9", "b1", [49, 25]), ps("b1", [32.5, 45], after=True), mv("n9", [45, 17], after=True))],
-    cones=CONES, goals=TORE),
+    ),
   V("Steigerung", "Und jetzt die Steigerung: Der Trainer ruft auch „Drehen“.", "Zuruf Drehen",
     "Ruft der Trainer „Drehen“, spielt der Stürmer zuerst direkt zurück. Dann öffnet er sich nach außen und nimmt den Pass mit offenem Körper an. Er dribbelt über die Linie hinter dem Dummy und passt zurück zum Trainer.",
     sp(n9=tuple(AN)), [B("b1", *BALL_T)] + ERSATZ,
@@ -68,5 +68,5 @@ u = {"title": "Stürmer legt auf Zeichen ab", "code": "UE-283", "kind": "Übungs
        mv("n9", [36, 25]), ps("b1", [36.6, 25.6], after=True)),
      S("Über die Linie: Ziel", "Spieler neun dribbelt schnell über die Linie hinter dem Dummy, dann nach rechts, und passt zurück zum Trainer. Das ist das Ziel. Danach geht er zurück an den Dummy.",
        dr("n9", "b1", [41, 7]), dr("n9", "b1", [60, 7], after=True), ps("b1", BALL_T, after=True))],
-    cones=CONES, goals=TORE, lines=LINES + [line(25, 9, 75, 9)])]}
+    lines=LINES + [line(25, 9, 75, 9)])]}
 json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)

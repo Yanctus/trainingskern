@@ -1,0 +1,546 @@
+{
+ "title": "Unter der Stange zum Hechtsprung",
+ "code": "UE-256",
+ "kind": "Übungsform",
+ "focuses": [
+  "Koordination",
+  "Schnelligkeit",
+  "Ballannahme"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Torwart"
+ ],
+ "duration_minutes": 15,
+ "players_min": 3,
+ "players_max": 3,
+ "field_size": "41 x 16 m",
+ "description": "Ein Torwart hält drei Bälle hintereinander: einen Volley, einen flachen Schuss und einen hohen Schuss. Zwischen den Bällen taucht er unter einer Querstange durch und stellt sich jedes Mal neu. Jeder gehaltene Ball gibt einen Punkt für den Torwart. Danach tauschen alle drei reihum die Rollen.",
+ "organisation": [
+  "Aufbauen: Ein Jugendtor mit Torraum. Am linken Torraumeck liegt eine Querstange auf zwei Stangen, so hoch, dass man sich darunter ducken muss.",
+  "Verteilen: Der Torwart steht im Torraum rechts neben der Querstange. Spieler sieben steht vorn links mit Bällen, Spieler dreizehn links neben dem Torraum, der Trainer vorn in der Mitte.",
+  "Ablauf: Spieler sieben schießt einen Volley, der Torwart fängt und rollt zurück. Dann taucht er unter der Stange durch und hechtet auf den flachen Schuss von Spieler dreizehn. Zurück unter der Stange läuft er in die Mitte des Tores und hält den hohen Schuss vom Trainer.",
+  "Wertung und Wechsel: Jeder gehaltene Ball gibt einen Punkt für den Torwart. Danach tauschen alle reihum die Rollen. Wer am Ende die wenigsten Punkte hat, holt die Bälle."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Vor jedem Schuss auf den Zehenspitzen federn und sich stellen",
+  "Den Volley fest mit beiden Händen fangen",
+  "Beim flachen Schuss seitlich hechten und den Ball auf den Boden drücken",
+  "Mit schnellen Füßen quer durchs Tor und hohes Tempo halten"
+ ],
+ "materials": [
+  "1 Jugendtor",
+  "2 Stangen mit Querstange",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Unter der Stange zum Hechtsprung. Der Torwart hält einen Volley, einen flachen und einen hohen Schuss und taucht dazwischen unter einer Querstange durch.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 5,
+    "y": 5,
+    "w": 90,
+    "h": 37
+   },
+   {
+    "type": "rect",
+    "x": 30,
+    "y": 5,
+    "w": 40,
+    "h": 12
+   },
+   {
+    "type": "line",
+    "x1": 33,
+    "y1": 13,
+    "x2": 28.5,
+    "y2": 20.5,
+    "color": "orange"
+   }
+  ],
+  "cones": [
+   {
+    "x": 33,
+    "y": 13,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 28.5,
+    "y": 20.5,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "jugend"
+   }
+  ],
+  "players": [
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 42,
+    "y": 21,
+    "label": "TW"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 28,
+    "y": 34,
+    "label": "7"
+   },
+   {
+    "id": "n13",
+    "team": "a",
+    "x": 13,
+    "y": 13,
+    "label": "13"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 54,
+    "y": 35,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b7",
+    "x": 28.6,
+    "y": 34.6
+   },
+   {
+    "id": "b13",
+    "x": 13.6,
+    "y": 13.6
+   },
+   {
+    "id": "b1",
+    "x": 54.6,
+    "y": 35.6
+   },
+   {
+    "id": "s1",
+    "x": 58,
+    "y": 36
+   },
+   {
+    "id": "s2",
+    "x": 58,
+    "y": 39
+   }
+  ],
+  "steps": [
+   {
+    "label": "Volley fangen",
+    "say": "Der Torwart stellt sich und schaut zu Spieler sieben. Spieler sieben schießt einen Volley, und der Torwart fängt ihn fest mit beiden Händen.",
+    "moves": [
+     {
+      "who": "k1",
+      "to": [
+       30,
+       32
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b7",
+      "to": [
+       42.6,
+       21.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Unter der Stange durch",
+    "say": "Er rollt den Ball zurück zu Spieler sieben. Dann duckt er sich unter der Querstange durch, stellt sich und schaut zu Spieler dreizehn.",
+    "moves": [
+     {
+      "who": "b7",
+      "to": [
+       28.6,
+       34.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "k1",
+      "to": [
+       36,
+       18
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       26,
+       15
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       14,
+       13.5
+      ],
+      "type": "blick",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Flach: hechten",
+    "say": "Spieler dreizehn schießt flach zur Seite. Der Torwart hechtet und drückt den Ball mit beiden Händen auf den Boden.",
+    "moves": [
+     {
+      "who": "b13",
+      "to": [
+       25.6,
+       9.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "k1",
+      "to": [
+       25,
+       9
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Zurück zur Mitte",
+    "say": "Er rollt den Ball zurück, steht schnell auf und duckt sich wieder unter der Stange durch. Mit schnellen Füßen läuft er in die Mitte des Tores und stellt sich.",
+    "moves": [
+     {
+      "who": "b13",
+      "to": [
+       13.6,
+       13.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "k1",
+      "to": [
+       26,
+       15
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       36,
+       18
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       50,
+       10
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       53,
+       30
+      ],
+      "type": "blick",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Hoch: Punkt",
+    "say": "Der Trainer schießt hoch in die Ecke, und der Torwart hechtet und hält den Ball. Jeder gehaltene Ball gibt einen Punkt für den Torwart. Dann tauschen alle reihum die Rollen, und der Nächste ist im Tor.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       58.6,
+       7.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "k1",
+      "to": [
+       58,
+       7
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 5,
+    "y1": 58.6,
+    "x2": 95,
+    "y2": 58.6,
+    "text": "41 m"
+   },
+   {
+    "x1": 98,
+    "y1": 5,
+    "x2": 98,
+    "y2": 42,
+    "text": "16 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Auf den Zehen federn und sich stellen.",
+   "title": "Federn und stellen",
+   "text": "Bevor der Schuss kommt, federt der Torwart auf den Zehenspitzen und steht dann still. Die Füße stehen etwa schulterbreit, die Hände sind vor dem Körper. So kann er in jede Richtung springen.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 50,
+      "y": 10,
+      "label": "TW"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 28,
+      "y": 34,
+      "label": "7"
+     },
+     {
+      "id": "n13",
+      "team": "a",
+      "x": 13,
+      "y": 13,
+      "label": "13"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 54,
+      "y": 35,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b7",
+      "x": 28.6,
+      "y": 34.6
+     },
+     {
+      "id": "b13",
+      "x": 13.6,
+      "y": 13.6
+     },
+     {
+      "id": "b1",
+      "x": 54.6,
+      "y": 35.6
+     },
+     {
+      "id": "s1",
+      "x": 58,
+      "y": 36
+     },
+     {
+      "id": "s2",
+      "x": 58,
+      "y": 39
+     }
+    ],
+    "steps": [
+     {
+      "label": "Federn",
+      "say": "Der Torwart steht in der Mitte des Tores. Er federt auf den Zehenspitzen und schaut zum Trainer.",
+      "moves": [
+       {
+        "who": "k1",
+        "to": [
+         53,
+         30
+        ],
+        "type": "blick"
+       }
+      ]
+     },
+     {
+      "label": "Stellen und halten",
+      "say": "Der Trainer holt aus, und der Torwart steht still und bereit. Der Schuss kommt hoch in die Ecke, und er hechtet und hält den Ball. Das gibt einen Punkt für den Torwart.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         58.6,
+         7.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "k1",
+        "to": [
+         58,
+         7
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Richtig hechten beim flachen Schuss.",
+   "title": "Richtig flach hechten",
+   "text": "Beim flachen Schuss macht der Torwart einen kleinen Schritt zur Seite und lässt sich seitlich fallen. Er landet auf der Seite, nicht auf dem Bauch. Eine Hand liegt hinter dem Ball, die andere oben drauf.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 26,
+      "y": 15,
+      "label": "TW"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 28,
+      "y": 34,
+      "label": "7"
+     },
+     {
+      "id": "n13",
+      "team": "a",
+      "x": 13,
+      "y": 13,
+      "label": "13"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 54,
+      "y": 35,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b7",
+      "x": 28.6,
+      "y": 34.6
+     },
+     {
+      "id": "b13",
+      "x": 13.6,
+      "y": 13.6
+     },
+     {
+      "id": "b1",
+      "x": 54.6,
+      "y": 35.6
+     },
+     {
+      "id": "s1",
+      "x": 58,
+      "y": 36
+     },
+     {
+      "id": "s2",
+      "x": 58,
+      "y": 39
+     }
+    ],
+    "steps": [
+     {
+      "label": "Stellen",
+      "say": "Der Torwart ist unter der Stange durch und stellt sich. Er schaut zu Spieler dreizehn.",
+      "moves": [
+       {
+        "who": "k1",
+        "to": [
+         14,
+         13.5
+        ],
+        "type": "blick"
+       }
+      ]
+     },
+     {
+      "label": "Seitlich hechten",
+      "say": "Spieler dreizehn schießt flach. Der Torwart macht einen kleinen Schritt, landet auf der Seite und hält den Ball mit beiden Händen fest. Das gibt einen Punkt für den Torwart.",
+      "moves": [
+       {
+        "who": "b13",
+        "to": [
+         25.6,
+         9.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "k1",
+        "to": [
+         25,
+         9
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

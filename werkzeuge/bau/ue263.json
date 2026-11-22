@@ -26,9 +26,9 @@
  "description": "Der Torwart läuft einen kurzen Parcours im Torraum: Prallpass mit dem Trainer, schnelle Füße durch die Hütchen und ein Sprung über die Hürde. Dann taucht er auf einen flachen Ball ab und rollt ihn zurück. Er läuft rückwärts zu den Hütchen am Tor und muss quer durchs Tor zwei Schüsse halten. Danach tauschen die beiden Torhüter.",
  "organisation": [
   "Aufbauen: Ein Strafraum mit Jugendtor. Im Torraum stehen zwei Hütchen nah am Tor, eine Reihe aus drei Hütchen und darunter zwei Hütchen untereinander. Unter dem Torraum liegt eine Minihürde.",
-  "Verteilen: Ein Torwart startet rechts neben den Hütchen, der zweite Torwart wartet rechts mit Bällen. Der Trainer steht unten in der Mitte, Spieler sieben unten links, beide mit Bällen.",
-  "Ablauf: Prallpass mit dem Trainer, schnelle Füße durch die Hütchen, Sprung über die Hürde. Abtauchen auf den Pass von Spieler sieben und zurückrollen. Rückwärts zu den zwei Hütchen am Tor, quer zum Schuss des Trainers, dann sofort aufstehen zum zweiten Schuss.",
-  "Wechsel: Nach jedem Durchgang tauschen die Torhüter. Der erste Torwart holt die Bälle und gibt jetzt den zweiten Schuss."
+  "Verteilen: Ein Torwart startet rechts neben den Hütchen, der zweite Torwart wartet rechts daneben. Der Trainer steht unten in der Mitte, Spieler sieben unten links, beide mit Bällen.",
+  "Ablauf: Prallpass mit dem Trainer, schnelle Füße durch die Hütchen, Sprung über die Hürde. Abtauchen auf den Pass von Spieler sieben und zurückrollen. Rückwärts zu den zwei Hütchen am Tor, quer zum Schuss des Trainers, dann sofort aufstehen zum zweiten Schuss von Spieler sieben.",
+  "Wechsel: Nach jedem Durchgang tauschen die Torhüter. Jetzt läuft der zweite Torwart den Parcours, und der erste erholt sich rechts daneben."
  ],
  "organisation_show": [
   "lines",
@@ -160,11 +160,6 @@
     "id": "b2",
     "x": 22.6,
     "y": 46.6
-   },
-   {
-    "id": "b3",
-    "x": 85.6,
-    "y": 17.6
    },
    {
     "id": "s1",
@@ -362,7 +357,7 @@
    },
    {
     "label": "Zweiter Schuss, dann Wechsel",
-    "say": "Sofort steht der Torwart auf und schaut zum zweiten Torwart. Der schießt aufs Tor, und der Torwart hält auch diesen Ball. Damit ist die Runde vorbei: Jetzt tauschen die Torhüter, und der zweite Torwart läuft den Parcours.",
+    "say": "Sofort steht der Torwart auf und schaut zu Spieler sieben. Der schießt quer an den linken Pfosten, und der Torwart hält auch diesen Ball. Damit ist die Runde vorbei: Jetzt tauschen die Torhüter, und der zweite Torwart läuft den Parcours.",
     "moves": [
      {
       "who": "k1",
@@ -375,17 +370,26 @@
      {
       "who": "k1",
       "to": [
-       70,
-       19
+       40,
+       25
       ],
       "type": "blick",
       "after": true
      },
      {
-      "who": "b3",
+      "who": "k1",
       "to": [
-       53.6,
-       10.6
+       47,
+       9.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b2",
+      "to": [
+       47.6,
+       10.1
       ],
       "type": "pass",
       "after": true
@@ -553,9 +557,9 @@
       "y": 48.6
      },
      {
-      "id": "b3",
-      "x": 85.6,
-      "y": 17.6
+      "id": "b2",
+      "x": 22.6,
+      "y": 46.6
      },
      {
       "id": "s1",
@@ -594,7 +598,7 @@
      },
      {
       "label": "Sofort wieder bereit",
-      "say": "Sofort aufstehen und zum Ball schauen. Der zweite Torwart schießt, und der Torwart hält auch diesen Ball.",
+      "say": "Sofort aufstehen und zu Spieler sieben schauen. Der schießt quer an den linken Pfosten, und der Torwart hält auch diesen Ball.",
       "moves": [
        {
         "who": "k1",
@@ -607,17 +611,26 @@
        {
         "who": "k1",
         "to": [
-         70,
-         19
+         40,
+         25
         ],
         "type": "blick",
         "after": true
        },
        {
-        "who": "b3",
+        "who": "k1",
         "to": [
-         53.6,
-         10.6
+         47,
+         9.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b2",
+        "to": [
+         47.6,
+         10.1
         ],
         "type": "pass",
         "after": true

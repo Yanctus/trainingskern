@@ -1,0 +1,535 @@
+{
+ "title": "Hütchen kippen, hechten, werfen",
+ "code": "UE-265",
+ "kind": "Übungsform",
+ "focuses": [
+  "Schnelligkeit",
+  "Koordination",
+  "Passspiel"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Torwart"
+ ],
+ "duration_minutes": 15,
+ "players_min": 2,
+ "players_max": 4,
+ "field_size": "41 x 16 m (Strafraum)",
+ "description": "Der Torwart läuft schnell zu einem Hütchen neben dem Pfosten, kippt es um und hechtet zum Schuss an den anderen Pfosten. Das wiederholt er auf der anderen Seite. Dann fängt er einen hohen Ball und wirft ihn schnell in eines der zwei Minitore. Jede Parade und jeder Treffer ins Minitor gibt einen Punkt, danach ist der nächste Torwart dran.",
+ "organisation": [
+  "Aufbauen: Ein Strafraum mit Jugendtor. Kurz vor beiden Pfosten steht je ein Hütchen. Links und rechts im Strafraum steht je ein Minitor.",
+  "Verteilen: Ein Torwart steht im Tor, zwei Torhüter warten links und rechts neben dem Tor. Spieler sieben steht unten links, der Trainer unten rechts, beide mit Bällen.",
+  "Ablauf: Hütchen links umkippen, Schuss vom Trainer an den rechten Pfosten halten. Hütchen rechts umkippen, Schuss von Spieler sieben an den linken Pfosten halten. Dann hohen Ball fangen und in ein Minitor werfen.",
+  "Wertung und Wechsel: Jede Parade und jeder Treffer ins Minitor gibt einen Punkt. Nach jedem Durchgang ist der nächste Torwart dran. Wer am Ende die wenigsten Punkte hat, macht eine kleine Strafaufgabe."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Schnelle Füße zum Hütchen und sofort umdrehen",
+  "Beim Hechten mit der richtigen Hand zum Ball",
+  "Hohen Ball mit Knie hoch am höchsten Punkt fangen und laut rufen",
+  "Schnell entscheiden und genau ins Minitor werfen"
+ ],
+ "materials": [
+  "1 Jugendtor",
+  "2 Minitore",
+  "2 Hütchen",
+  "Viele Bälle",
+  "Leibchen"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Hütchen kippen, hechten, werfen. Der Torwart kippt ein Hütchen um, hält zwei Schüsse, fängt einen hohen Ball und wirft ihn ins Minitor.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 10,
+    "y": 5,
+    "w": 80,
+    "h": 50
+   },
+   {
+    "type": "rect",
+    "x": 30,
+    "y": 5,
+    "w": 40,
+    "h": 15
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "jugend"
+   },
+   {
+    "x": 10,
+    "y": 38,
+    "side": "left"
+   },
+   {
+    "x": 90,
+    "y": 38,
+    "side": "right"
+   }
+  ],
+  "cones": [
+   {
+    "x": 40,
+    "y": 8,
+    "color": "orange"
+   },
+   {
+    "x": 60,
+    "y": 8,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 50,
+    "y": 10,
+    "label": "TW"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 36,
+    "y": 2,
+    "label": "TW"
+   },
+   {
+    "id": "k3",
+    "team": "t",
+    "x": 64,
+    "y": 2,
+    "label": "TW"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 30,
+    "y": 40,
+    "label": "7"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 62,
+    "y": 46,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 62.6,
+    "y": 46.6
+   },
+   {
+    "id": "b2",
+    "x": 30.6,
+    "y": 40.6
+   },
+   {
+    "id": "s1",
+    "x": 65.6,
+    "y": 48.5
+   },
+   {
+    "id": "s2",
+    "x": 58.4,
+    "y": 48.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Links kippen, rechts halten",
+    "say": "Der Torwart läuft schnell zum linken Hütchen und kippt es um. Sofort dreht er sich um, der Trainer schießt an den rechten Pfosten, und der Torwart hechtet hinüber und hält den Ball. Dann rollt er ihn zurück zum Trainer.",
+    "moves": [
+     {
+      "who": "k1",
+      "to": [
+       42.2,
+       10.2
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "k1",
+      "to": [
+       55,
+       9.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       55.6,
+       10.1
+      ],
+      "type": "pass",
+      "delay": 0.9
+     },
+     {
+      "who": "b1",
+      "to": [
+       62.6,
+       46.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Rechts kippen, links halten",
+    "say": "Jetzt die andere Seite: Der Torwart kippt das rechte Hütchen um. Spieler sieben schießt an den linken Pfosten, und der Torwart hechtet hinüber, hält und rollt den Ball zurück.",
+    "moves": [
+     {
+      "who": "k1",
+      "to": [
+       57.8,
+       10.2
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "k1",
+      "to": [
+       45,
+       9.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b2",
+      "to": [
+       45.6,
+       10.1
+      ],
+      "type": "pass",
+      "delay": 0.9
+     },
+     {
+      "who": "b2",
+      "to": [
+       30.6,
+       40.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Hohen Ball fangen",
+    "say": "Der Torwart kommt nach vorn. Der Trainer wirft den Ball hoch vor das Tor. Der Torwart ruft laut und fängt ihn ganz oben mit beiden Händen.",
+    "moves": [
+     {
+      "who": "k1",
+      "to": [
+       50,
+       21
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       21.6
+      ],
+      "type": "pass",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Abwurf ins Minitor: Punkt",
+    "say": "Der Torwart schaut schnell nach links und nach rechts und entscheidet sich. Er wirft den Ball genau ins rechte Minitor, und das gibt einen Punkt für ihn. Dann ist der Torwart links neben dem Tor dran.",
+    "moves": [
+     {
+      "who": "k1",
+      "to": [
+       32,
+       29
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "k1",
+      "to": [
+       68,
+       29
+      ],
+      "type": "blick",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       89.4,
+       38
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 10,
+    "y1": 58.6,
+    "x2": 90,
+    "y2": 58.6,
+    "text": "41 m"
+   },
+   {
+    "x1": 96,
+    "y1": 5,
+    "x2": 96,
+    "y2": 55,
+    "text": "16 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Genau abwerfen.",
+   "title": "Genau abwerfen",
+   "text": "Der Torwart entscheidet schnell, welches Minitor frei ist und welche Technik passt. Für weite Würfe nimmt er den Überarmwurf, auf kurze Wege rollt er den Ball, und manchmal passt auch ein Schuss. Wichtig ist, dass der Ball genau im Minitor landet.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 50,
+      "y": 21,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 36,
+      "y": 2,
+      "label": "TW"
+     },
+     {
+      "id": "k3",
+      "team": "t",
+      "x": 64,
+      "y": 2,
+      "label": "TW"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 30,
+      "y": 40,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 62,
+      "y": 46,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "g",
+      "x": 50.6,
+      "y": 21.6
+     },
+     {
+      "id": "b1",
+      "x": 62.6,
+      "y": 46.6
+     },
+     {
+      "id": "b2",
+      "x": 30.6,
+      "y": 40.6
+     },
+     {
+      "id": "s1",
+      "x": 65.6,
+      "y": 48.5
+     },
+     {
+      "id": "s2",
+      "x": 58.4,
+      "y": 48.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Schauen und entscheiden",
+      "say": "Der Torwart hat den Ball gefangen. Er schaut nach rechts und nach links und entscheidet sich für das linke Minitor.",
+      "moves": [
+       {
+        "who": "k1",
+        "to": [
+         68,
+         29
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "k1",
+        "to": [
+         32,
+         29
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Genau werfen: Punkt",
+      "say": "Mit einem schnellen Überarmwurf wirft er den Ball genau ins linke Minitor, und das gibt einen Punkt für ihn.",
+      "moves": [
+       {
+        "who": "g",
+        "to": [
+         10.6,
+         38
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Den hohen Ball sicher fangen.",
+   "title": "Hohen Ball sicher fangen",
+   "text": "Der Torwart springt vom Boden ab, zieht ein Knie hoch und fängt den Ball mit beiden Händen am höchsten Punkt. Dabei ruft er laut „Torwart“, damit alle wissen, dass er den Ball holt.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 50,
+      "y": 10,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 36,
+      "y": 2,
+      "label": "TW"
+     },
+     {
+      "id": "k3",
+      "team": "t",
+      "x": 64,
+      "y": 2,
+      "label": "TW"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 30,
+      "y": 40,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 62,
+      "y": 46,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 62.6,
+      "y": 46.6
+     },
+     {
+      "id": "b2",
+      "x": 30.6,
+      "y": 40.6
+     },
+     {
+      "id": "s1",
+      "x": 65.6,
+      "y": 48.5
+     },
+     {
+      "id": "s2",
+      "x": 58.4,
+      "y": 48.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Laut rufen",
+      "say": "Der Trainer wirft den Ball hoch vor das Tor. Der Torwart ruft laut Torwart und startet nach vorn.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         21.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "k1",
+        "to": [
+         50,
+         16
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Am höchsten Punkt fangen",
+      "say": "Er springt ab, zieht ein Knie hoch und fängt den Ball mit beiden Händen ganz oben.",
+      "moves": [
+       {
+        "who": "k1",
+        "to": [
+         50,
+         21
+        ],
+        "type": "lauf"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
