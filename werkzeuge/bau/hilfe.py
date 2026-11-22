@@ -10,6 +10,12 @@ def mv(who, to, typ="lauf", delay=None, after=None, bend=0, ball=None):
     return m
 def dr(who, ball, to, **k): return mv(who, to, "dribbling", ball=ball, **k)
 def ps(ball, to, **k): return mv(ball, to, "pass", **k)
+# Schulterblick: Kegel vom Spieler in Richtung to (Länge = Abstand). Zweimal mit after=True = links und rechts scannen.
+def bl(who, to, weite=None, dauer=None, **k):
+    m = mv(who, to, "blick", **k)
+    if weite: m["weite"] = weite
+    if dauer: m["dauer"] = dauer
+    return m
 def S(label, say, *moves): return {"label": label, "say": say, "moves": list(moves)}
 def V(label, say, title, text, players, balls, steps, **extra):
     b = {"players": players, "balls": balls, "steps": steps}

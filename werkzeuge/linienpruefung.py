@@ -111,7 +111,7 @@ def check(board, name, fix=False):
             w = m.get("who")
             f = m["from"] if m.get("from") and len(m["from"]) == 2 else pos.get(w)
             t = m.get("to")
-            if not f or not t:
+            if not f or not t or m.get("type") == "blick":  # Schulterblick: kein Weg, nichts zu prüfen
                 continue
             b = m.get("bend") or 0
             ign = (w, m.get("ball"))

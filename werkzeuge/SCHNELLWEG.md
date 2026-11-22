@@ -33,6 +33,14 @@ README der App (Abschnitte „Übungen aus Video nachbauen“, „Laufweg-Abglei
 - **Wenig Prüfläufe:** kostenlos und immer: `pruefen`, `blatt`, `vergleichen`. Prüfstand nur nach Änderungen am Player-Code oder wenn
   das Blatt etwas Seltsames zeigt (dann nur Chromium). Live-Check einmal pro Woche mit `live.js` (Einheiten sind ja frei).
 
+- **Zugang:** `offen` = ohne Konto (nur eine Schaufenster-Übung, zurzeit UE-001), `frei` = mit kostenlosem Konto (10 Übungen),
+  `abo` = Pro. Neue Einheiten weiter erst `frei`, der Inhaber stellt am Ende auf `abo`.
+- **Schulterblick (ab 22.11.2026 für alle neuen Einheiten):** Zeigt das Video, dass ein Spieler vor der Ballannahme das Feld
+  scannt (Blickwinkel eingezeichnet), dann im Schritt davor bzw. im selben Schritt `bl("n6", [x, y])` aus `bau/hilfe.py`
+  einsetzen: ein halbtransparenter Kegel vom Spieler in Richtung `to`, so lang wie der Abstand (Standard: 70° Öffnung,
+  0,9 s). Links und rechts scannen = zwei `bl(...)` nacheinander, das zweite mit `after=True`, danach der Pass mit
+  `after=True`. Ein Blick bewegt niemanden. Im Sprechtext darf es stehen („schaut über die Schulter“), muss aber nicht.
+
 ## Feste Begriffe (vom Inhaber)
 - **Springer sind immer neutrale Spieler:** `team: "t"`, Label „F“, spielen für das Team in Ballbesitz, im Text „Springer“.
 - Einheiten dürfen zum Live-Check kurz auf „frei“, danach sofort zurück auf „abo“.

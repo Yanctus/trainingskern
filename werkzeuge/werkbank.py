@@ -142,6 +142,14 @@ def svg(board, titel):
             t = m.get("to")
             if not f or not t:
                 continue
+            if m.get("type") == "blick":
+                # Schulterblick: halbtransparenter Kegel, der Spieler bleibt stehen
+                import math
+                L = math.hypot(t[0] - f[0], t[1] - f[1]) * 10; h = math.radians((m.get("weite") or 70) / 2); th = math.atan2(t[1] - f[1], t[0] - f[0])
+                p1 = (f[0] * 10 + L * math.cos(th - h), f[1] * 10 + L * math.sin(th - h)); p2 = (f[0] * 10 + L * math.cos(th + h), f[1] * 10 + L * math.sin(th + h))
+                o.append(f'<path d="M{f[0]*10},{f[1]*10} L{p1[0]:.1f},{p1[1]:.1f} A{L:.1f},{L:.1f} 0 0 1 {p2[0]:.1f},{p2[1]:.1f} Z" fill="#d4ff0040" stroke="#d4ff00" stroke-width="3"/>'
+                         f'<text x="{(f[0]+t[0])*5}" y="{(f[1]+t[1])*5-8}" fill="#fff" font-size="22" font-family="sans-serif">{si+1}</text>')
+                continue
             c = lp.ctrl(f, t, m.get("bend") or 0)
             col = {"pass": "#fff", "lauf": "#ffe14d", "dribbling": "#7df"}.get(m.get("type"), "#f0f")
             dash = ' stroke-dasharray="14 9"' if m.get("type") == "lauf" else ""
