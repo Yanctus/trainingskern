@@ -1,0 +1,525 @@
+{
+ "title": "Ansage hören, dribbeln, treffen",
+ "code": "UE-288",
+ "kind": "Übungsform",
+ "focuses": [
+  "Dribbling",
+  "Torschuss",
+  "Schnelligkeit"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Einzeltraining"
+ ],
+ "duration_minutes": 15,
+ "players_min": 2,
+ "players_max": 3,
+ "field_size": "18 x 32 m",
+ "description": "Einzeltraining für schnelles Reagieren, Dribbeln und Abschließen. Der Trainer ruft ein Hütchen und eine Tornummer, zum Beispiel: rechts, zwei. Spieler neun dribbelt um dieses Hütchen und schießt ins richtige Minitor. Ab und zu ruft der Trainer: großes Tor, dann geht es aufs große Tor gegen den Torwart.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 32 Metern. Oben ein großes Tor mit Torwart. Vier Minitore mit Nummern: eins in der Mitte, zwei links, drei rechts, vier unten. In der Mitte vier Hütchen als Raute.",
+  "Verteilen: Spieler neun steht in der Mitte der Raute. Der Trainer steht links unten mit vielen Bällen.",
+  "Ablauf: Der Trainer ruft ein Hütchen und eine Tornummer und passt. Spieler neun dribbelt um das Hütchen und schießt ins genannte Minitor. Ruft der Trainer großes Tor, dribbelt er nach vorn und schließt gegen den Torwart ab.",
+  "Wechsel: Nach jedem Schuss schnell zurück in die Mitte. Nach einer festen Zeit Pause und Bälle einsammeln. Sind zwei Spieler da, wechseln sie sich ab."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Genau hinhören und schnell reagieren",
+  "Kurze, schnelle Kontakte um das Hütchen",
+  "Genau und ruhig ins Minitor schießen",
+  "Vor dem Schuss aufs große Tor den Kopf heben"
+ ],
+ "materials": [
+  "4 Hütchen",
+  "4 Minitore",
+  "1 großes Tor",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Ansage hören, dribbeln, treffen. Spieler neun hört auf den Trainer, dribbelt um das richtige Hütchen und schießt ins genannte Tor, so schnell er kann.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 30,
+    "y": 5,
+    "w": 40,
+    "h": 50
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "jugend"
+   },
+   {
+    "x": 50,
+    "y": 22,
+    "side": "top"
+   },
+   {
+    "x": 30,
+    "y": 44,
+    "side": "left"
+   },
+   {
+    "x": 70,
+    "y": 44,
+    "side": "right"
+   },
+   {
+    "x": 50,
+    "y": 55,
+    "side": "bottom"
+   }
+  ],
+  "cones": [
+   {
+    "x": 50,
+    "y": 32,
+    "color": "orange"
+   },
+   {
+    "x": 42,
+    "y": 38,
+    "color": "orange"
+   },
+   {
+    "x": 58,
+    "y": 38,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 44,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 50,
+    "y": 38,
+    "label": "9"
+   },
+   {
+    "id": "k",
+    "team": "t",
+    "x": 50,
+    "y": 9,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 36,
+    "y": 50,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 36.6,
+    "y": 50.6
+   },
+   {
+    "id": "s1",
+    "x": 33,
+    "y": 52.5
+   },
+   {
+    "id": "s2",
+    "x": 31.5,
+    "y": 52.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Ansage",
+    "say": "Der Trainer ruft: rechts, zwei! Das heißt: um das rechte Hütchen und dann ins Tor zwei links. Dabei passt er zu Spieler neun.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       38.6
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Um das Hütchen",
+    "say": "Spieler neun dribbelt mit kurzen, schnellen Kontakten um das rechte Hütchen herum.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       55,
+       34.5
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n9",
+      "to": [
+       61.5,
+       35
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n9",
+      "to": [
+       61.5,
+       41
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n9",
+      "to": [
+       56,
+       41.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Ins Tor zwei",
+    "say": "Dann dribbelt er quer durch die Raute und schießt genau ins Tor zwei auf der linken Seite.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       50,
+       38.5
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n9",
+      "to": [
+       45,
+       41.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       30.5,
+       44.5
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zurück in die Mitte",
+    "say": "Der Ball ist im richtigen Tor, das ist das Ziel. Spieler neun läuft schnell zurück in die Mitte, und der Trainer ruft die nächste Ansage.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       50,
+       38
+      ],
+      "type": "lauf"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 30,
+    "y1": 58.6,
+    "x2": 70,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 76,
+    "y1": 5,
+    "x2": 76,
+    "y2": 55,
+    "text": "32 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Der erste Kontakt geht schon zum Hütchen.",
+   "title": "Erster Kontakt zum Hütchen",
+   "text": "Spieler neun hört die Ansage, bevor der Ball bei ihm ist. Mit dem ersten Kontakt nimmt er den Ball gleich in Richtung des genannten Hütchens mit. Auch wenn er müde wird, bleibt er konzentriert und wählt das richtige Tor.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 50,
+      "y": 38,
+      "label": "9"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50,
+      "y": 9,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 36,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 36.6,
+      "y": 50.6
+     },
+     {
+      "id": "s1",
+      "x": 33,
+      "y": 52.5
+     },
+     {
+      "id": "s2",
+      "x": 31.5,
+      "y": 52.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Hinhören",
+      "say": "Der Trainer ruft: hinten, drei! Spieler neun weiß sofort: um das hintere Hütchen und dann ins Tor drei rechts.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         38.6
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Erster Kontakt",
+      "say": "Schon der erste Kontakt geht nach hinten zum Hütchen. Dann dribbelt er eng darum herum.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         46,
+         43.5
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n9",
+        "to": [
+         47.5,
+         48.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "n9",
+        "to": [
+         53,
+         48
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Ins Tor drei",
+      "say": "Jetzt schießt er ruhig und genau ins Tor drei, das ist das Ziel. Dann zurück in die Mitte.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         69.5,
+         44.5
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n9",
+        "to": [
+         56,
+         43
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n9",
+        "to": [
+         50,
+         38
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Der Trainer ruft großes Tor, und es geht gegen den Torwart.",
+   "title": "Aufs große Tor",
+   "text": "Ab und zu ruft der Trainer: großes Tor! Dann nimmt Spieler neun den Ball nach vorn mit, dribbelt schnell am Minitor eins vorbei und hebt vor dem Schuss den Kopf. Er sieht, wo der Torwart steht, und schießt in die freie Ecke.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 50,
+      "y": 38,
+      "label": "9"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50,
+      "y": 9,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 36,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 36.6,
+      "y": 50.6
+     },
+     {
+      "id": "s1",
+      "x": 33,
+      "y": 52.5
+     },
+     {
+      "id": "s2",
+      "x": 31.5,
+      "y": 52.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Großes Tor",
+      "say": "Der Trainer ruft: großes Tor! Und er passt zu Spieler neun.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         38.6
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Schnell nach vorn",
+      "say": "Spieler neun nimmt den Ball nach vorn mit und dribbelt schnell links am Minitor eins vorbei.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         44,
+         31
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n9",
+        "to": [
+         41,
+         20
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Kopf hoch und schießen",
+      "say": "Vor dem Schuss hebt er den Kopf und schaut zum Torwart. Dann schießt er flach in die freie Ecke, das ist das Ziel. Danach läuft er zurück in die Mitte, und die nächste Ansage kommt.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         50,
+         9
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         45,
+         5.5
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

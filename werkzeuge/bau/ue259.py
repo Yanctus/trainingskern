@@ -32,7 +32,7 @@ u = {"title": "Passviereck der Torhüter", "code": "UE-259", "kind": "Übungsfor
  "organisation_show": ORG,
  "coaching_points": ["Saubere erste Ballkontrolle auf dem hinteren Fuß", "Genau passen, auf den hinteren Fuß des Mitspielers", "Vor der Annahme schauen, wohin der nächste Pass geht", "Füße zum Ball stellen, beide Füße benutzen und viel reden"],
  "materials": ["4 Puppen oder Stangen", "4 Minitore für die Steigerung", "Viele Bälle"],
- "access": "abo", "hidden": True,
+ "access": "abo", "hidden": False,
  "say_intro": "Passviereck der Torhüter. Vier Torhüter lassen den Ball zwischen vier Puppen laufen, abwechselnd mit zwei Kontakten und direkt.",
  "board": {"lines": LINES, "cones": CONES, "players": sp(), "balls": baelle(),
   "steps": [

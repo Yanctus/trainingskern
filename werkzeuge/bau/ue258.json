@@ -1,0 +1,503 @@
+{
+ "title": "Antippen, zwei Tore halten",
+ "code": "UE-258",
+ "kind": "Übungsform",
+ "focuses": [
+  "Schnelligkeit",
+  "Bewegung"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Torwart"
+ ],
+ "duration_minutes": 15,
+ "players_min": 2,
+ "players_max": 2,
+ "field_size": "41 x 16 m",
+ "description": "Ein Torwart arbeitet, der zweite schießt. Der Torwart tippt das Hütchen vor dem Tor an, sprintet zurück auf die Torlinie und hält den Schuss des Trainers. Dann sprintet er zum zweiten Hütchen, tippt es an und hält vor dem zweiten Tor den Schuss des zweiten Torwarts. Danach tauschen die beiden Torhüter.",
+ "organisation": [
+  "Aufbauen: Im Strafraum ein Jugendtor auf der Torlinie und ein zweites Jugendtor quer dazu links am Torraum. Ein Hütchen vor dem ersten Tor, ein zweites schräg vorn links.",
+  "Verteilen: Der erste Torwart steht im ersten Tor. Der zweite Torwart steht rechts neben dem Torraum mit Bällen, der Trainer vorn in der Mitte mit Bällen.",
+  "Ablauf: Hütchen antippen, zurück auf die Linie und den Schuss vom Trainer halten. Dann zum zweiten Hütchen, antippen und vor dem zweiten Tor den Schuss vom zweiten Torwart halten.",
+  "Wechsel: Nach beiden Paraden tauschen die Torhüter. Ist ein Ball nicht festzuhalten, wird er zur Seite oder über das Tor abgewehrt."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Den ersten Ball gleich sicher fangen",
+  "Kurze, schnelle Schritte und früh bereit stehen",
+  "Schnell hinüber und lang strecken, auch mit ausgestrecktem Arm",
+  "Nicht zu haltende Bälle mit festen Händen zur Seite abwehren"
+ ],
+ "materials": [
+  "2 Jugendtore",
+  "2 Hütchen",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Antippen, zwei Tore halten. Der Torwart tippt zwei Hütchen an und hält danach jedes Mal einen Schuss, erst im ersten Tor und dann im zweiten.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 16,
+    "y": 5,
+    "w": 68,
+    "h": 50
+   },
+   {
+    "type": "rect",
+    "x": 32,
+    "y": 5,
+    "w": 36,
+    "h": 18
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "jugend"
+   },
+   {
+    "x": 30,
+    "y": 16,
+    "side": "left",
+    "size": "jugend"
+   }
+  ],
+  "cones": [
+   {
+    "x": 50,
+    "y": 22,
+    "color": "orange"
+   },
+   {
+    "x": 30,
+    "y": 41,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 50,
+    "y": 8,
+    "label": "TW"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 72,
+    "y": 16,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 53,
+    "y": 44,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 53.6,
+    "y": 44.6
+   },
+   {
+    "id": "b2",
+    "x": 72.6,
+    "y": 16.6
+   },
+   {
+    "id": "s3",
+    "x": 76.5,
+    "y": 11
+   },
+   {
+    "id": "s4",
+    "x": 79,
+    "y": 14
+   },
+   {
+    "id": "s1",
+    "x": 57.2,
+    "y": 45.5
+   },
+   {
+    "id": "s2",
+    "x": 49,
+    "y": 46.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Hütchen antippen",
+    "say": "Der Torwart sprintet mit kurzen, schnellen Schritten zum Hütchen, tippt es an und läuft schnell zurück auf die Torlinie. Dort steht er bereit und schaut zum Trainer.",
+    "moves": [
+     {
+      "who": "k1",
+      "to": [
+       50,
+       20
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "k1",
+      "to": [
+       50,
+       9
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       52,
+       27
+      ],
+      "type": "blick",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Erster Schuss",
+    "say": "Der Trainer schießt aufs Tor. Der Torwart macht einen schnellen Schritt zur Seite und fängt den Ball sicher.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       55.6,
+       9.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "k1",
+      "to": [
+       55,
+       9
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Zum zweiten Hütchen",
+    "say": "Jetzt sprintet er schräg nach vorn zum zweiten Hütchen und tippt es an.",
+    "moves": [
+     {
+      "who": "k1",
+      "to": [
+       31,
+       39
+      ],
+      "type": "lauf"
+     }
+    ]
+   },
+   {
+    "label": "Zweite Parade und Wechsel",
+    "say": "Dann schnell hinüber vor das zweite Tor. Er stellt sich hin und schaut, wie der zweite Torwart zum Ball steht. Der schießt, und der Torwart hält den Ball. Damit ist die Runde vorbei, und die beiden Torhüter tauschen die Rollen.",
+    "moves": [
+     {
+      "who": "k1",
+      "to": [
+       34,
+       18
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "k1",
+      "to": [
+       52,
+       17
+      ],
+      "type": "blick",
+      "after": true
+     },
+     {
+      "who": "b2",
+      "to": [
+       34.6,
+       14.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       34,
+       14
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 16,
+    "y1": 58.6,
+    "x2": 84,
+    "y2": 58.6,
+    "text": "41 m"
+   },
+   {
+    "x1": 92,
+    "y1": 5,
+    "x2": 92,
+    "y2": 55,
+    "text": "16 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Schnell hinüber und lang strecken.",
+   "title": "Schnell hinüber, lang strecken",
+   "text": "Nach dem zweiten Hütchen zählt jeder Schritt. Der Torwart sprintet mit schnellen Schritten vor das zweite Tor und steht rechtzeitig bereit. Geht der Schuss weit weg vom Körper, streckt er sich lang und erreicht den Ball mit ausgestrecktem Arm.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 31,
+      "y": 39,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 72,
+      "y": 16,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 53,
+      "y": 44,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 55.6,
+      "y": 9.6
+     },
+     {
+      "id": "b2",
+      "x": 72.6,
+      "y": 16.6
+     },
+     {
+      "id": "s3",
+      "x": 76.5,
+      "y": 11
+     },
+     {
+      "id": "s4",
+      "x": 79,
+      "y": 14
+     },
+     {
+      "id": "s1",
+      "x": 57.2,
+      "y": 45.5
+     },
+     {
+      "id": "s2",
+      "x": 49,
+      "y": 46.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Schnell hinüber",
+      "say": "Der Torwart sprintet mit schnellen Schritten vor das zweite Tor und steht rechtzeitig bereit. Er schaut, wie der Schütze zum Ball steht.",
+      "moves": [
+       {
+        "who": "k1",
+        "to": [
+         34,
+         18
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "k1",
+        "to": [
+         52,
+         17
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Lang strecken",
+      "say": "Der Schuss geht weit weg vom Körper in die Ecke. Der Torwart stößt sich ab, streckt sich lang und erreicht den Ball mit ausgestrecktem Arm.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         34.6,
+         11.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "k1",
+        "to": [
+         34,
+         11
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Zur Seite abwehren.",
+   "title": "Zur Seite abwehren",
+   "text": "Nicht jeder Schuss lässt sich festhalten. Dann drückt der Torwart den Ball mit festen Händen zur Seite neben das Tor oder über die Latte. So kann kein Stürmer den Abpraller verwerten.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 50,
+      "y": 9,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 72,
+      "y": 16,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 53,
+      "y": 44,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 53.6,
+      "y": 44.6
+     },
+     {
+      "id": "b2",
+      "x": 72.6,
+      "y": 16.6
+     },
+     {
+      "id": "s3",
+      "x": 76.5,
+      "y": 11
+     },
+     {
+      "id": "s4",
+      "x": 79,
+      "y": 14
+     },
+     {
+      "id": "s1",
+      "x": 57.2,
+      "y": 45.5
+     },
+     {
+      "id": "s2",
+      "x": 49,
+      "y": 46.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Bereit stehen",
+      "say": "Der Torwart steht bereit auf der Torlinie und schaut, wie der Trainer zum Ball steht.",
+      "moves": [
+       {
+        "who": "k1",
+        "to": [
+         52,
+         27
+        ],
+        "type": "blick"
+       }
+      ]
+     },
+     {
+      "label": "Zur Seite abwehren",
+      "say": "Der Trainer schießt hart. Der Torwart kann den Ball nicht festhalten, also drückt er ihn mit festen Händen zur Seite neben das Tor. So bekommt kein Stürmer einen Abpraller.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         56.6,
+         9.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "k1",
+        "to": [
+         56,
+         9
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "b1",
+        "to": [
+         65,
+         2.5
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

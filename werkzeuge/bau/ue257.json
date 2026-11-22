@@ -1,0 +1,674 @@
+{
+ "title": "Tennisbälle, Slalom, Paraden",
+ "code": "UE-257",
+ "kind": "Übungsform",
+ "focuses": [
+  "Koordination",
+  "Schnelligkeit"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Torwart"
+ ],
+ "duration_minutes": 15,
+ "players_min": 2,
+ "players_max": 3,
+ "field_size": "41 x 16 m",
+ "description": "Ein Zirkel für Torhüter im Strafraum. Der Torwart fängt zuerst Tennisbälle vom Trainer, läuft dann mit schnellen Füßen durch eine Hütchenreihe und fängt einen Volley. Danach sprintet er um ein Hütchen und hält einen flachen Schuss vor dem Minitor, steht schnell auf und hält auch auf der anderen Seite. Drei Torhüter wechseln sich ab, und wer nicht im Tor ist, schießt.",
+ "organisation": [
+  "Aufbauen: Im Strafraum ein Jugendtor mit je einem Hütchen links und rechts neben dem Torwart und eine Reihe aus drei Hütchen nach vorn. Weiter vorn zwei Minitore mit der Öffnung zum Feld, außen daneben je ein Hütchen.",
+  "Verteilen: Der erste Torwart steht im Tor. Der zweite Torwart steht rechts, der dritte links, beide mit Bällen. Der Trainer steht vorn mit Tennisbällen und Bällen.",
+  "Ablauf: Tennisbälle fangen und auf die Hütchen legen, im Slalom durch die Hütchenreihe, den Volley fangen und zurückwerfen. Dann um das rechte Hütchen sprinten und den Schuss vor dem Minitor halten, aufstehen und links dasselbe.",
+  "Wechsel: Nach beiden Paraden wird neu aufgebaut. Der rechte Torwart geht ins Tor, der linke rückt nach rechts, und der erste Torwart schießt jetzt von links."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Tennisbälle mit weichen Händen fangen",
+  "Schnelle, saubere Schritte durch die Hütchen",
+  "Im richtigen Moment hechten und den Ball festhalten",
+  "Ruhig und genau zum Trainer zurückwerfen, nicht hetzen"
+ ],
+ "materials": [
+  "1 Jugendtor",
+  "2 Minitore",
+  "7 Hütchen",
+  "2 Tennisbälle",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Tennisbälle, Slalom, Paraden. Der Torwart fängt, läuft durch die Hütchen und hält zwei Schüsse vor den Minitoren.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 16,
+    "y": 5,
+    "w": 68,
+    "h": 50
+   },
+   {
+    "type": "rect",
+    "x": 28,
+    "y": 5,
+    "w": 44,
+    "h": 22
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "jugend"
+   },
+   {
+    "x": 36,
+    "y": 27,
+    "side": "top"
+   },
+   {
+    "x": 64,
+    "y": 27,
+    "side": "top"
+   }
+  ],
+  "cones": [
+   {
+    "x": 44,
+    "y": 9,
+    "color": "orange"
+   },
+   {
+    "x": 56,
+    "y": 9,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 14,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 20,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 26,
+    "color": "orange"
+   },
+   {
+    "x": 30,
+    "y": 18,
+    "color": "orange"
+   },
+   {
+    "x": 70,
+    "y": 18,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 50,
+    "y": 8,
+    "label": "TW"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 78,
+    "y": 47,
+    "label": "TW"
+   },
+   {
+    "id": "k3",
+    "team": "t",
+    "x": 22,
+    "y": 47,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 62,
+    "y": 43,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "tb1",
+    "x": 60.6,
+    "y": 40
+   },
+   {
+    "id": "tb2",
+    "x": 63.6,
+    "y": 40
+   },
+   {
+    "id": "b1",
+    "x": 62.6,
+    "y": 43.6
+   },
+   {
+    "id": "b2",
+    "x": 78.6,
+    "y": 47.6
+   },
+   {
+    "id": "b3",
+    "x": 22.6,
+    "y": 47.6
+   },
+   {
+    "id": "s1",
+    "x": 65.6,
+    "y": 46.5
+   },
+   {
+    "id": "s2",
+    "x": 58.4,
+    "y": 46.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Tennisbälle fangen",
+    "say": "Der erste Torwart steht auf der Torlinie. Der Trainer wirft ihm einen Tennisball zu. Er fängt ihn mit weichen Händen und legt ihn auf das Hütchen neben sich. Den zweiten Tennisball legt er auf das Hütchen auf der anderen Seite.",
+    "moves": [
+     {
+      "who": "tb1",
+      "to": [
+       50.6,
+       8.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "tb1",
+      "to": [
+       44,
+       9
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "tb2",
+      "to": [
+       50.6,
+       8.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "tb2",
+      "to": [
+       56,
+       9
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Schnelle Füße",
+    "say": "Jetzt läuft er mit kurzen, schnellen Schritten im Slalom durch die Hütchenreihe nach vorn.",
+    "moves": [
+     {
+      "who": "k1",
+      "to": [
+       47,
+       14
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "k1",
+      "to": [
+       53,
+       20
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       47,
+       26
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       50,
+       31
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Volley fangen",
+    "say": "Der Trainer spielt ihm einen Volley zu. Der Torwart fängt den Ball, hält ihn fest und wirft ihn genau zum Trainer zurück.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       31.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       62.6,
+       43.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Erste Parade",
+    "say": "Dann sprintet er zu seiner linken Seite um das äußere Hütchen und stellt sich vor das Minitor. Der zweite Torwart schießt flach, und der erste Torwart hechtet und hält den Ball.",
+    "moves": [
+     {
+      "who": "k1",
+      "to": [
+       58,
+       22
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "k1",
+      "to": [
+       66,
+       13
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       74,
+       15
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       75,
+       23
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       66,
+       30
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b2",
+      "to": [
+       66.6,
+       30.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zweite Parade und Wechsel",
+    "say": "Schnell wieder aufstehen! Er sprintet hinüber um das Hütchen auf der anderen Seite, und der dritte Torwart schießt aufs andere Minitor. Hält er auch diesen Ball, ist die Runde geschafft. Dann wird neu aufgebaut, und der zweite Torwart ist im Tor dran.",
+    "moves": [
+     {
+      "who": "k1",
+      "to": [
+       52,
+       32
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "k1",
+      "to": [
+       42,
+       24
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       34,
+       13
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       26,
+       15
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       25,
+       23
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       34,
+       30
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b3",
+      "to": [
+       34.6,
+       30.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 16,
+    "y1": 58.6,
+    "x2": 84,
+    "y2": 58.6,
+    "text": "41 m"
+   },
+   {
+    "x1": 92,
+    "y1": 5,
+    "x2": 92,
+    "y2": 55,
+    "text": "16 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Sauber hechten und den Ball festhalten.",
+   "title": "Sauber hechten",
+   "text": "Der Torwart kommt um das Hütchen und stellt sich vor das Minitor, die Knie leicht gebeugt. Beim Schuss stößt er sich mit dem Bein auf der Ballseite ab und fliegt seitlich zum Ball. Er fängt ihn mit beiden Händen und drückt ihn fest an sich.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 75,
+      "y": 23,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 78,
+      "y": 47,
+      "label": "TW"
+     },
+     {
+      "id": "k3",
+      "team": "t",
+      "x": 22,
+      "y": 47,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 62,
+      "y": 43,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "tb1",
+      "x": 44,
+      "y": 9
+     },
+     {
+      "id": "tb2",
+      "x": 56,
+      "y": 9
+     },
+     {
+      "id": "b1",
+      "x": 62.6,
+      "y": 43.6
+     },
+     {
+      "id": "b2",
+      "x": 78.6,
+      "y": 47.6
+     },
+     {
+      "id": "b3",
+      "x": 22.6,
+      "y": 47.6
+     },
+     {
+      "id": "s1",
+      "x": 65.6,
+      "y": 46.5
+     },
+     {
+      "id": "s2",
+      "x": 58.4,
+      "y": 46.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Vor das Minitor",
+      "say": "Der Torwart kommt um das Hütchen und stellt sich vor das Minitor. Die Knie sind leicht gebeugt, die Hände vor dem Körper.",
+      "moves": [
+       {
+        "who": "k1",
+        "to": [
+         68,
+         30
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Hechten und festhalten",
+      "say": "Der zweite Torwart schießt flach neben ihn. Der Torwart stößt sich ab, fliegt seitlich zum Ball, fängt ihn mit beiden Händen und hält ihn fest.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         63.6,
+         31.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "k1",
+        "to": [
+         63,
+         31
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Genau zurückwerfen, nicht hetzen.",
+   "title": "Genau zurückwerfen",
+   "text": "Wer schnell zur nächsten Parade will, wirft oft hastig und ungenau. Besser ist es, den Ball ruhig und genau zum Trainer zu werfen und erst dann loszusprinten. So bleibt die Technik sauber, und der Zirkel läuft flüssig weiter.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 50,
+      "y": 31,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 78,
+      "y": 47,
+      "label": "TW"
+     },
+     {
+      "id": "k3",
+      "team": "t",
+      "x": 22,
+      "y": 47,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 62,
+      "y": 43,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "tb1",
+      "x": 44,
+      "y": 9
+     },
+     {
+      "id": "tb2",
+      "x": 56,
+      "y": 9
+     },
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 31.6
+     },
+     {
+      "id": "b2",
+      "x": 78.6,
+      "y": 47.6
+     },
+     {
+      "id": "b3",
+      "x": 22.6,
+      "y": 47.6
+     },
+     {
+      "id": "s1",
+      "x": 65.6,
+      "y": 46.5
+     },
+     {
+      "id": "s2",
+      "x": 58.4,
+      "y": 46.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Ruhig werfen",
+      "say": "Der Torwart hat den Volley gefangen. Er wirft den Ball ruhig und genau in die Hände des Trainers.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         62.6,
+         43.6
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Dann lossprinten",
+      "say": "Erst danach sprintet er los zum Hütchen. Ein hastiger Wurf landet daneben, und der Trainer muss dem Ball hinterherlaufen.",
+      "moves": [
+       {
+        "who": "k1",
+        "to": [
+         58,
+         22
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "k1",
+        "to": [
+         66,
+         13
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

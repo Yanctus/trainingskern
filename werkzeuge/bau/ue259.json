@@ -1,0 +1,506 @@
+{
+ "title": "Passviereck der Torhüter",
+ "code": "UE-259",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Ballannahme"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Torwart"
+ ],
+ "duration_minutes": 15,
+ "players_min": 4,
+ "players_max": 4,
+ "field_size": "9 x 9 m",
+ "description": "Vier Torhüter stehen zwischen vier Puppen in einem kleinen Viereck und passen sich den Ball zu. Dabei wechseln sie ab: einmal mitnehmen und passen, einmal direkt spielen. Vor jeder Annahme schauen sie, wohin der nächste Pass geht, und nehmen den Ball auf dem hinteren Fuß an. Das geht so lange, bis der Trainer Pause ruft.",
+ "organisation": [
+  "Aufbauen: Ein Viereck von 9 mal 9 Metern, innen an den Ecken vier Puppen oder Stangen.",
+  "Verteilen: Auf jeder Seite steht ein Torwart zwischen zwei Puppen. Der Trainer steht außen mit Bällen.",
+  "Ablauf: Die Torhüter passen sich den Ball zu, abwechselnd mit zwei Kontakten und direkt, mal mit links, mal mit rechts. Vor der Annahme schauen, wohin der nächste Pass geht.",
+  "Wechsel: Es geht weiter, bis der Trainer Pause ruft. Geht ein Ball verloren, gibt der Trainer einen neuen ins Spiel."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Saubere erste Ballkontrolle auf dem hinteren Fuß",
+  "Genau passen, auf den hinteren Fuß des Mitspielers",
+  "Vor der Annahme schauen, wohin der nächste Pass geht",
+  "Füße zum Ball stellen, beide Füße benutzen und viel reden"
+ ],
+ "materials": [
+  "4 Puppen oder Stangen",
+  "4 Minitore für die Steigerung",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Passviereck der Torhüter. Vier Torhüter lassen den Ball zwischen vier Puppen laufen, abwechselnd mit zwei Kontakten und direkt.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 30,
+    "y": 10,
+    "w": 40,
+    "h": 40
+   }
+  ],
+  "cones": [
+   {
+    "x": 38,
+    "y": 20,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 62,
+    "y": 20,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 38,
+    "y": 40,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 62,
+    "y": 40,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 32,
+    "y": 30,
+    "label": "TW"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 50,
+    "y": 12,
+    "label": "TW"
+   },
+   {
+    "id": "k3",
+    "team": "t",
+    "x": 68,
+    "y": 30,
+    "label": "TW"
+   },
+   {
+    "id": "k4",
+    "team": "t",
+    "x": 50,
+    "y": 48,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 18,
+    "y": 42,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 32.6,
+    "y": 30.6
+   },
+   {
+    "id": "s1",
+    "x": 21.6,
+    "y": 43.5
+   },
+   {
+    "id": "s2",
+    "x": 14.4,
+    "y": 43.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pass quer",
+    "say": "Der linke Torwart passt quer durch das Viereck zum rechten Torwart.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       68.6,
+       30.6
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Mitnehmen und passen",
+    "say": "Der rechte Torwart nimmt den Ball mit dem ersten Kontakt nach innen mit. Der untere Torwart schaut schon, wo der obere steht. Dann kommt mit dem zweiten Kontakt der Pass zum unteren Torwart.",
+    "moves": [
+     {
+      "who": "k3",
+      "to": [
+       64,
+       31
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "k4",
+      "to": [
+       50,
+       30
+      ],
+      "type": "blick",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       48.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Direkt weiter",
+    "say": "Der untere Torwart spielt den Ball direkt, mit nur einem Kontakt, zum oberen Torwart.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       12.6
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Immer weiter bis zur Pause",
+    "say": "Der obere nimmt den Ball wieder mit und passt zum linken Torwart. So läuft der Ball immer weiter, abwechselnd mit zwei Kontakten und direkt, mal mit links, mal mit rechts. Ruft der Trainer Pause, ist die Runde vorbei, und danach fängt ein anderer Torwart an.",
+    "moves": [
+     {
+      "who": "k2",
+      "to": [
+       47,
+       15
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       32.6,
+       30.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 30,
+    "y1": 58.6,
+    "x2": 70,
+    "y2": 58.6,
+    "text": "9 m"
+   },
+   {
+    "x1": 79,
+    "y1": 10,
+    "x2": 79,
+    "y2": 50,
+    "text": "9 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Körper öffnen und auf dem hinteren Fuß annehmen.",
+   "title": "Auf dem hinteren Fuß",
+   "text": "Der Torwart schaut vor dem Pass, wohin er weiterspielen will, und öffnet seinen Körper dorthin. Er nimmt den Ball mit dem Fuß an, der weiter vom Passgeber weg ist. So sieht er das ganze Viereck und hält das Tempo hoch.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 32,
+      "y": 30,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 50,
+      "y": 12,
+      "label": "TW"
+     },
+     {
+      "id": "k3",
+      "team": "t",
+      "x": 68,
+      "y": 30,
+      "label": "TW"
+     },
+     {
+      "id": "k4",
+      "team": "t",
+      "x": 50,
+      "y": 48,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 18,
+      "y": 42,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 32.6,
+      "y": 30.6
+     },
+     {
+      "id": "s1",
+      "x": 21.6,
+      "y": 43.5
+     },
+     {
+      "id": "s2",
+      "x": 14.4,
+      "y": 43.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Körper öffnen",
+      "say": "Der untere Torwart schaut zum rechten Torwart und öffnet seinen Körper zu ihm. Dann passt der linke Torwart zu ihm.",
+      "moves": [
+       {
+        "who": "k4",
+        "to": [
+         64,
+         36
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         48.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Hinterer Fuß",
+      "say": "Er nimmt den Ball mit dem hinteren Fuß mit, gleich in Richtung des rechten Torwarts, und passt sofort weiter. So bleibt das Tempo hoch.",
+      "moves": [
+       {
+        "who": "k4",
+        "to": [
+         54,
+         44
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         68.6,
+         30.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Auf Zuruf ins Minitor.",
+   "title": "Auf Zuruf ins Minitor",
+   "text": "Außen an den Ecken stehen jetzt vier Minitore. Die Torhüter passen weiter wie bisher. Ruft der Trainer ein Tor, nimmt der Torwart am Ball ihn auf dem hinteren Fuß an und passt genau in dieses Minitor.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 32,
+      "y": 30,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 50,
+      "y": 12,
+      "label": "TW"
+     },
+     {
+      "id": "k3",
+      "team": "t",
+      "x": 68,
+      "y": 30,
+      "label": "TW"
+     },
+     {
+      "id": "k4",
+      "team": "t",
+      "x": 50,
+      "y": 48,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 18,
+      "y": 42,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 32.6,
+      "y": 30.6
+     },
+     {
+      "id": "s1",
+      "x": 21.6,
+      "y": 43.5
+     },
+     {
+      "id": "s2",
+      "x": 14.4,
+      "y": 43.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Weiter passen",
+      "say": "Der linke Torwart passt zum oberen, und der obere passt weiter zum rechten Torwart.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         12.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         68.6,
+         30.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Ins Minitor",
+      "say": "Der Trainer ruft: Rechts oben! Der rechte Torwart nimmt den Ball auf dem hinteren Fuß an und passt genau ins Minitor rechts oben.",
+      "moves": [
+       {
+        "who": "k3",
+        "to": [
+         68,
+         25
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         72.5,
+         7
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Neuer Ball",
+      "say": "Der Trainer spielt einen neuen Ball zum linken Torwart, und es geht weiter.",
+      "moves": [
+       {
+        "who": "s1",
+        "to": [
+         32.6,
+         30.6
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ],
+    "goals": [
+     {
+      "x": 27,
+      "y": 6,
+      "side": "top"
+     },
+     {
+      "x": 73,
+      "y": 6,
+      "side": "top"
+     },
+     {
+      "x": 27,
+      "y": 54,
+      "side": "bottom"
+     },
+     {
+      "x": 73,
+      "y": 54,
+      "side": "bottom"
+     }
+    ]
+   }
+  }
+ ]
+}

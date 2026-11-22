@@ -1,0 +1,447 @@
+{
+ "title": "Annehmen und die Linie runter",
+ "code": "UE-296",
+ "kind": "Übungsform",
+ "focuses": [
+  "Ballannahme",
+  "Dribbling",
+  "Passspiel"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Einzeltraining"
+ ],
+ "duration_minutes": 15,
+ "players_min": 1,
+ "players_max": 2,
+ "field_size": "14 x 18 m",
+ "description": "Ein Flügelspieler oder Außenverteidiger übt, an der Seitenlinie anzunehmen und mit Tempo nach vorn zu gehen. Er passt zum Trainer, täuscht nach innen an und bietet sich an der Linie an. Den Rückpass nimmt er mit dem hinteren Fuß an und dribbelt die Linie hinunter. Am Hütchen spielt er den Ball genau ins Minitor.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 14 mal 18 Metern. Oben zwei Minitore, davor auf jeder Seite ein Hütchen. In der Mitte zwei Stangen, an den Seitenlinien je ein Hütchen als Start.",
+  "Verteilen: Spieler sieben startet links an der Seitenlinie mit Ball. Der Trainer steht unten in der Mitte mit vielen Bällen.",
+  "Ablauf: Pass zum Trainer, nach innen antäuschen und an der Linie anbieten. Mit dem hinteren Fuß annehmen, bis zum Hütchen dribbeln und ins Minitor passen.",
+  "Wechsel: Nach jedem Pass ins Minitor geht es zurück an den Start. Sind alle Bälle gespielt, werden sie eingesammelt, und es geht auf der rechten Seite mit dem anderen Fuß weiter."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Mit dem hinteren Fuß annehmen, um schnell nach vorn zu kommen",
+  "Erst nach innen antäuschen, dann an der Linie anbieten",
+  "Genau ins Minitor passen, auch wenn die Beine müde werden",
+  "Auf der anderen Seite den anderen Fuß benutzen und das Tempo hoch halten"
+ ],
+ "materials": [
+  "2 Minitore",
+  "5 Hütchen",
+  "2 Stangen",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Annehmen und die Linie runter. Spieler sieben nimmt an der Seitenlinie an, dribbelt mit Tempo nach vorn und passt ins Minitor.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 31,
+    "y": 5,
+    "w": 38,
+    "h": 50
+   }
+  ],
+  "goals": [
+   {
+    "x": 40,
+    "y": 5,
+    "side": "top"
+   },
+   {
+    "x": 60,
+    "y": 5,
+    "side": "top"
+   }
+  ],
+  "cones": [
+   {
+    "x": 37,
+    "y": 24,
+    "color": "orange"
+   },
+   {
+    "x": 63,
+    "y": 24,
+    "color": "orange"
+   },
+   {
+    "x": 31,
+    "y": 36.5,
+    "color": "orange"
+   },
+   {
+    "x": 69,
+    "y": 36.5,
+    "color": "orange"
+   },
+   {
+    "x": 55,
+    "y": 51.5,
+    "color": "orange"
+   },
+   {
+    "x": 42,
+    "y": 34,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 58,
+    "y": 34,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 33.5,
+    "y": 41.5,
+    "label": "7"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 52,
+    "y": 48,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 34.1,
+    "y": 42.1
+   },
+   {
+    "id": "s1",
+    "x": 48.5,
+    "y": 50.5
+   },
+   {
+    "id": "s2",
+    "x": 46.5,
+    "y": 51.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pass zum Trainer",
+    "say": "Spieler sieben steht an der Seitenlinie und passt in die Mitte zum Trainer.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       52.6,
+       48.6
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Antäuschen, anbieten",
+    "say": "Dann täuscht er kurz nach innen an und bietet sich an der Linie an. Sein Körper ist offen zum Trainer.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       35.5,
+       35.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n7",
+      "to": [
+       33,
+       30
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Annahme mit dem hinteren Fuß",
+    "say": "Der Trainer passt zurück. Spieler sieben nimmt den Ball mit dem hinteren Fuß an und dribbelt mit Tempo die Linie hinunter.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       33.6,
+       30.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n7",
+      "to": [
+       33.5,
+       21
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Ins Minitor: Ziel",
+    "say": "Am Hütchen passt er den Ball flach ins linke Minitor. Das ist das Ziel. Dann läuft er zurück an den Start und holt den nächsten Ball. Sind alle Bälle gespielt, kommt die rechte Seite dran.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       40,
+       5.5
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n7",
+      "to": [
+       33.5,
+       41.5
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 31,
+    "y1": 58.6,
+    "x2": 69,
+    "y2": 58.6,
+    "text": "14 m"
+   },
+   {
+    "x1": 76,
+    "y1": 5,
+    "x2": 76,
+    "y2": 55,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Genau ins Minitor passen.",
+   "title": "Genau ins Minitor",
+   "text": "Der Pass ins Minitor soll bei jeder Wiederholung genau sein. Flach und mit der Innenseite spielen. Auch wenn die Beine müde werden, bleibt die Technik sauber.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 33,
+      "y": 30,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 52,
+      "y": 48,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 33.6,
+      "y": 30.6
+     },
+     {
+      "id": "s1",
+      "x": 48.5,
+      "y": 50.5
+     },
+     {
+      "id": "s2",
+      "x": 46.5,
+      "y": 51.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Bis zum Hütchen",
+      "say": "Spieler sieben hat den Ball angenommen und dribbelt mit Tempo bis zum Hütchen.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         33.5,
+         21
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Flach und genau: Ziel",
+      "say": "Er spielt den Ball flach mit der Innenseite genau ins linke Minitor. Das ist das Ziel. Auch beim zehnten Ball bleibt der Pass genau.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         40,
+         5.5
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Die Annahme mit dem hinteren Fuß, jetzt auf der rechten Seite.",
+   "title": "Mit dem hinteren Fuß",
+   "text": "Jetzt startet der Spieler rechts. Er nimmt den Ball mit dem hinteren Fuß an, hier mit dem rechten. So zeigt der erste Kontakt schon nach vorn, und er kommt schnell ins Dribbling. Den Pass ins Minitor spielt er mit dem anderen Fuß als auf der linken Seite.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 66.5,
+      "y": 41.5,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 52,
+      "y": 48,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 67.1,
+      "y": 42.1
+     },
+     {
+      "id": "s1",
+      "x": 48.5,
+      "y": 50.5
+     },
+     {
+      "id": "s2",
+      "x": 46.5,
+      "y": 51.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Pass und anbieten",
+      "say": "Spieler sieben passt zum Trainer, täuscht nach innen an und bietet sich rechts an der Linie an.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         52.6,
+         48.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n7",
+        "to": [
+         64.5,
+         35.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n7",
+        "to": [
+         67,
+         30
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Hinterer Fuß, nach vorn",
+      "say": "Der Trainer passt zurück. Spieler sieben nimmt den Ball mit dem hinteren Fuß an und nimmt ihn gleich nach vorn mit.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         67.6,
+         30.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n7",
+        "to": [
+         66.5,
+         21
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Ins Minitor: Ziel",
+      "say": "Am Hütchen passt er ins rechte Minitor. Das ist das Ziel. Danach geht es zurück an den Start.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         60,
+         5.5
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n7",
+        "to": [
+         66.5,
+         41.5
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
