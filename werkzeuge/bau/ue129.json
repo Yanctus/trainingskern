@@ -1,0 +1,1106 @@
+{
+ "title": "Ausdauerlauf ins 4 gegen 4",
+ "code": "UE-129",
+ "kind": "Spielform",
+ "focuses": [
+  "Kondition",
+  "Umschalten",
+  "Zusammenspiel"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 8,
+ "players_max": 8,
+ "field_size": "Kreis, 32 m Durchmesser",
+ "description": "Zwei Teams zu je vier Spielern starten an gegenüberliegenden Hütchen am Kreis. Der Erste jedes Teams läuft außen um den Kreis, und jedes Mal, wenn er am Start vorbeikommt, holt er einen Mitspieler ab. Sind alle vier dabei und ist die letzte Runde gelaufen, geht es sofort in den Kreis zum 4 gegen 4 auf zwei Minitore. Das Team, das zuerst komplett im Kreis steht, bekommt den Ball.",
+ "organisation": [
+  "Aufbauen: Ein Kreis mit etwa 32 Metern Durchmesser, außen vier Hütchen oben, unten, links und rechts. Links und rechts steht je ein Minitor im Kreis.",
+  "Verteilen: Zwei Teams mit je vier Spielern. Team Neon startet am oberen Hütchen, Team Rot am unteren. Der Erste steht außen am Hütchen, die anderen drei warten im Kreis dahinter. Der Trainer steht mit den Bällen am Rand.",
+  "Ablauf: Auf Pfiff laufen beide Ersten gleichzeitig im Uhrzeigersinn außen um den Kreis. Am Start holen sie den Nächsten ab und laufen zu zweit weiter, dann zu dritt und zu viert. Nach der letzten Runde mit allen vier geht es sofort in den Kreis, und der Trainer spielt dem Team den Ball, das zuerst komplett drin ist. Dann wird vier gegen vier gespielt.",
+  "Pause und Wechsel: Fällt ein Tor oder geht der Ball aus dem Kreis, haben alle drei Minuten Pause. Für den nächsten Lauf rückt jeder in der Reihenfolge eins nach vorn. Vier Läufe, dann eine längere Pause."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Die ganze Runde mit hohem Tempo laufen, nicht stehen bleiben",
+  "Am Rand die Mitspieler laut anfeuern",
+  "Nach der letzten Runde blitzschnell ins Spiel umschalten",
+  "Am Ball ruhig bleiben und sich ohne Ball frei laufen"
+ ],
+ "materials": [
+  "4 Hütchen",
+  "2 Minitore",
+  "Mehrere Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Ausdauerlauf ins vier gegen vier. Erst laufen die Teams Runden um den Kreis und sammeln ihre Mitspieler ein, dann geht es sofort ins Spiel.",
+ "board": {
+  "lines": [
+   {
+    "type": "circle",
+    "x": 50,
+    "y": 30,
+    "r": 24
+   }
+  ],
+  "goals": [
+   {
+    "x": 28.5,
+    "y": 30,
+    "side": "left"
+   },
+   {
+    "x": 71.5,
+    "y": 30,
+    "side": "right"
+   }
+  ],
+  "cones": [
+   {
+    "x": 50,
+    "y": 6,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 54,
+    "color": "orange"
+   },
+   {
+    "x": 26,
+    "y": 30,
+    "color": "orange"
+   },
+   {
+    "x": 74,
+    "y": 30,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 50,
+    "y": 1.5,
+    "label": "8"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 39,
+    "y": 11,
+    "label": "11"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 61,
+    "y": 11,
+    "label": "9"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 50,
+    "y": 20,
+    "label": "7"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 50,
+    "y": 58.5,
+    "label": "3"
+   },
+   {
+    "id": "r4",
+    "team": "b",
+    "x": 61,
+    "y": 49,
+    "label": "4"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 39,
+    "y": 49,
+    "label": "2"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 50,
+    "y": 40,
+    "label": "5"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 88,
+    "y": 40,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 89.6,
+    "y": 40.8
+   },
+   {
+    "id": "s1",
+    "x": 91,
+    "y": 44.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Die erste Runde",
+    "say": "Auf Pfiff laufen Neon acht und Rot drei gleichzeitig los, beide im Uhrzeigersinn außen um den ganzen Kreis herum bis zurück an ihr Hütchen.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       70.2,
+       9.8
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n8",
+      "to": [
+       78.5,
+       30.0
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       70.2,
+       50.2
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       50.0,
+       58.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       29.8,
+       50.2
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       21.5,
+       30.0
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       29.8,
+       9.8
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       50.0,
+       1.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r3",
+      "to": [
+       29.8,
+       50.2
+      ],
+      "type": "lauf",
+      "delay": 0.15
+     },
+     {
+      "who": "r3",
+      "to": [
+       21.5,
+       30.0
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r3",
+      "to": [
+       29.8,
+       9.8
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r3",
+      "to": [
+       50.0,
+       1.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r3",
+      "to": [
+       70.2,
+       9.8
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r3",
+      "to": [
+       78.5,
+       30.0
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r3",
+      "to": [
+       70.2,
+       50.2
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r3",
+      "to": [
+       50.0,
+       58.5
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Den Nächsten abholen",
+    "say": "Am Hütchen holen sie den Nächsten ab: Neon elf und Rot vier laufen mit, die zweite Runde zu zweit. So kommt nach jeder Runde einer dazu, bis alle vier zusammen laufen.",
+    "moves": [
+     {
+      "who": "n11",
+      "to": [
+       42.6,
+       2.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n11",
+      "to": [
+       64.2,
+       5.3
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n11",
+      "to": [
+       77.5,
+       22.6
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n11",
+      "to": [
+       74.7,
+       44.2
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n11",
+      "to": [
+       57.4,
+       57.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n11",
+      "to": [
+       35.8,
+       54.7
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n11",
+      "to": [
+       22.5,
+       37.4
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n11",
+      "to": [
+       25.3,
+       15.7
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n11",
+      "to": [
+       42.6,
+       2.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       70.2,
+       9.8
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     },
+     {
+      "who": "n8",
+      "to": [
+       78.5,
+       30.0
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       70.2,
+       50.2
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       50.0,
+       58.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       29.8,
+       50.2
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       21.5,
+       30.0
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       29.8,
+       9.8
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       50.0,
+       1.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r4",
+      "to": [
+       57.4,
+       57.5
+      ],
+      "type": "lauf",
+      "delay": 0.15
+     },
+     {
+      "who": "r4",
+      "to": [
+       35.8,
+       54.7
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r4",
+      "to": [
+       22.5,
+       37.4
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r4",
+      "to": [
+       25.3,
+       15.7
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r4",
+      "to": [
+       42.6,
+       2.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r4",
+      "to": [
+       64.2,
+       5.3
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r4",
+      "to": [
+       77.5,
+       22.6
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r4",
+      "to": [
+       74.7,
+       44.2
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r4",
+      "to": [
+       57.4,
+       57.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r3",
+      "to": [
+       29.8,
+       50.2
+      ],
+      "type": "lauf",
+      "delay": 0.65
+     },
+     {
+      "who": "r3",
+      "to": [
+       21.5,
+       30.0
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r3",
+      "to": [
+       29.8,
+       9.8
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r3",
+      "to": [
+       50.0,
+       1.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r3",
+      "to": [
+       70.2,
+       9.8
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r3",
+      "to": [
+       78.5,
+       30.0
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r3",
+      "to": [
+       70.2,
+       50.2
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r3",
+      "to": [
+       50.0,
+       58.5
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Letzte Runde, rein in den Kreis",
+    "say": "Nach der letzten Runde mit allen vier geht es sofort in den Kreis. Team Neon ist zuerst komplett drin, Team Rot kommt einen Moment später.",
+    "moves": [
+     {
+      "who": "n11",
+      "to": [
+       30,
+       22
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n8",
+      "to": [
+       40,
+       12
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n7",
+      "to": [
+       50,
+       22
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n9",
+      "to": [
+       62,
+       14
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r2",
+      "to": [
+       30,
+       40
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     },
+     {
+      "who": "r3",
+      "to": [
+       40,
+       46
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     },
+     {
+      "who": "r5",
+      "to": [
+       50,
+       38
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     },
+     {
+      "who": "r4",
+      "to": [
+       62,
+       44
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     }
+    ]
+   },
+   {
+    "label": "Vier gegen vier: Punkt",
+    "say": "Darum spielt der Trainer Team Neon den Ball. Neon neun legt zu Neon sieben, der dribbelt an und schießt ins rechte Minitor, und das gibt einen Punkt für Team Neon. Dann haben alle drei Minuten Pause, und im nächsten Lauf rückt jeder eins nach vorn.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       62.6,
+       14.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       22.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       58,
+       26
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       71.8,
+       29.8
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 10,
+    "y1": 6,
+    "x2": 10,
+    "y2": 54,
+    "text": "32 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Wer zuerst drin ist, hat den Ball.",
+   "title": "Wer zuerst drin ist",
+   "text": "Das Team, das nach der letzten Runde zuerst komplett im Kreis steht, bekommt den Ball. Wer auf der letzten Runde nachlässt, verschenkt den Ballbesitz. Darum bis zum Schluss durchziehen und sich gegenseitig anfeuern.",
+   "board": {
+    "players": [
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 74.7,
+      "y": 15.7,
+      "label": "8"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 64.2,
+      "y": 5.3,
+      "label": "11"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 50.0,
+      "y": 1.5,
+      "label": "9"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 35.8,
+      "y": 5.3,
+      "label": "7"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 25.3,
+      "y": 44.3,
+      "label": "3"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 35.8,
+      "y": 54.7,
+      "label": "4"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 50.0,
+      "y": 58.5,
+      "label": "2"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 64.2,
+      "y": 54.7,
+      "label": "5"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 88,
+      "y": 40,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 89.6,
+      "y": 40.8
+     },
+     {
+      "id": "s1",
+      "x": 91,
+      "y": 44.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Rot ist zuerst drin",
+      "say": "Diesmal zieht Team Rot auf der letzten Runde durch und steht zuerst komplett im Kreis. Team Neon kommt zu spät.",
+      "moves": [
+       {
+        "who": "r3",
+        "to": [
+         30,
+         40
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r2",
+        "to": [
+         40,
+         46
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r4",
+        "to": [
+         50,
+         38
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r5",
+        "to": [
+         62,
+         44
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n8",
+        "to": [
+         62,
+         14
+        ],
+        "type": "lauf",
+        "delay": 0.8
+       },
+       {
+        "who": "n11",
+        "to": [
+         50,
+         22
+        ],
+        "type": "lauf",
+        "delay": 0.8
+       },
+       {
+        "who": "n9",
+        "to": [
+         40,
+         12
+        ],
+        "type": "lauf",
+        "delay": 0.8
+       },
+       {
+        "who": "n7",
+        "to": [
+         30,
+         22
+        ],
+        "type": "lauf",
+        "delay": 0.8
+       }
+      ]
+     },
+     {
+      "label": "Rot hat den Ball: Punkt",
+      "say": "Darum spielt der Trainer Team Rot den Ball. Rot fünf legt zu Rot vier, der dribbelt nach links und schießt ins Minitor, und das gibt einen Punkt für Team Rot. Dann drei Minuten Pause, und im nächsten Lauf rückt jeder eins nach vorn.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         62.6,
+         44.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         38.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "r4",
+        "to": [
+         42,
+         32
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         28.2,
+         30.2
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Ohne Ball freilaufen.",
+   "title": "Freilaufen",
+   "text": "Im vier gegen vier ist wenig Platz, und alle sind müde. Wer den Ball nicht hat, bleibt trotzdem in Bewegung und läuft sich in den freien Raum, weg vom Gegenspieler. So entstehen Anspielstationen und Chancen zum Abschluss.",
+   "board": {
+    "players": [
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 30,
+      "y": 22,
+      "label": "11"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 40,
+      "y": 12,
+      "label": "8"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 50,
+      "y": 22,
+      "label": "7"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 62,
+      "y": 14,
+      "label": "9"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 30,
+      "y": 40,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 40,
+      "y": 46,
+      "label": "3"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 50,
+      "y": 38,
+      "label": "5"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 62,
+      "y": 44,
+      "label": "4"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 88,
+      "y": 40,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 30.6,
+      "y": 22.6
+     },
+     {
+      "id": "s1",
+      "x": 91,
+      "y": 44.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Rot rückt raus",
+      "say": "Neon elf spielt zu Neon sieben. Rot fünf rückt sofort heraus und stellt ihn.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50,
+         22.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r5",
+        "to": [
+         50,
+         30
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Freilaufen: Punkt",
+      "say": "Neon neun löst sich vom Gegner und läuft sich in den freien Raum frei. Neon sieben spielt ihn an, Neon neun schießt ins rechte Minitor, und das gibt einen Punkt für Team Neon. Dann drei Minuten Pause, und der nächste Lauf beginnt.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         64.5,
+         23.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         64.5,
+         24.1
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         71.8,
+         29.8
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
