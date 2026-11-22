@@ -1,0 +1,445 @@
+{
+ "title": "Hürdensprünge, seitlich zurück",
+ "code": "UE-291",
+ "kind": "Übungsform",
+ "focuses": [
+  "Koordination",
+  "Schnelligkeit"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Einzeltraining"
+ ],
+ "duration_minutes": 15,
+ "players_min": 1,
+ "players_max": 2,
+ "field_size": "ca. 2 x 2 m",
+ "description": "Eine kleine Aktivierung für Schnelligkeit, Wendigkeit und schnelle Füße. Der Spieler springt einbeinig über die erste Hürde, hüpft über die zweite und landet auf beiden Füßen. Dann geht es mit schnellen Seitschritten zurück zum Start. Nach einigen Runden gibt es eine Pause.",
+ "organisation": [
+  "Aufbauen: Zwei Minihürden, etwa einen Meter auseinander, auf einer Fläche von zwei mal zwei Metern.",
+  "Verteilen: Spieler sieben steht links vor der ersten Hürde. Der Trainer steht daneben und schaut auf die Technik.",
+  "Ablauf: Einbeinig über die erste Hürde, Hop über die zweite, beidbeinig landen. Dann mit schnellen Seitschritten im Zickzack zurück zum Start.",
+  "Wechsel: Je nach Alter einige Runden am Stück, dann eine Pause. Bei zwei Spielern ist in der Pause der andere dran."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Jede Bewegung mit sauberer Technik",
+  "Tempo und Rhythmus die ganze Zeit halten",
+  "Kurze, schnelle Seitschritte mit flinken Füßen",
+  "Nach der Landung sofort in die nächste Bewegung starten"
+ ],
+ "materials": [
+  "2 Minihürden"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Hürdensprünge, seitlich zurück. Spieler sieben springt über zwei Hürden und kommt mit schnellen Seitschritten zurück.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 30,
+    "y": 10,
+    "w": 40,
+    "h": 40
+   }
+  ],
+  "cones": [
+   {
+    "x": 44,
+    "y": 30,
+    "color": "orange",
+    "shape": "huerde"
+   },
+   {
+    "x": 55,
+    "y": 30,
+    "color": "orange",
+    "shape": "huerde"
+   }
+  ],
+  "players": [
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 37,
+    "y": 30,
+    "label": "7"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 20,
+    "y": 44,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "s1",
+    "x": 23.5,
+    "y": 48.5
+   },
+   {
+    "id": "s2",
+    "x": 23.5,
+    "y": 51
+   }
+  ],
+  "steps": [
+   {
+    "label": "Einbeinig über die Hürde",
+    "say": "Spieler sieben springt auf einem Bein über die erste Hürde.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       49.5,
+       30
+      ],
+      "type": "lauf"
+     }
+    ]
+   },
+   {
+    "label": "Hop und beidbeinig landen",
+    "say": "Gleich danach hüpft er über die zweite Hürde und landet auf beiden Füßen.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       61,
+       30
+      ],
+      "type": "lauf"
+     }
+    ]
+   },
+   {
+    "label": "Schnelle Seitschritte",
+    "say": "Jetzt geht es mit kurzen, schnellen Seitschritten im Zickzack zurück, unter den Hürden entlang.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       57,
+       39
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n7",
+      "to": [
+       53,
+       35
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       49,
+       39
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       45,
+       35
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       41,
+       39
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zurück zum Start: Ziel",
+    "say": "Am Start beginnt er sofort die nächste Runde. Das Ziel: jede Runde sauber und schnell. Nach einigen Runden gibt es eine Pause, dann ist Spieler sieben wieder dran.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       37,
+       30
+      ],
+      "type": "lauf"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 30,
+    "y1": 58.6,
+    "x2": 70,
+    "y2": 58.6,
+    "text": "2 m"
+   },
+   {
+    "x1": 76,
+    "y1": 10,
+    "x2": 76,
+    "y2": 50,
+    "text": "2 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Nach der Landung sofort weiter.",
+   "title": "Landen und sofort weiter",
+   "text": "Der Spieler landet auf beiden Füßen und bleibt nicht stehen. Ohne Pause geht er direkt in die Seitschritte. So bleibt das Tempo hoch.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 49.5,
+      "y": 30,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 20,
+      "y": 44,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "s1",
+      "x": 23.5,
+      "y": 48.5
+     },
+     {
+      "id": "s2",
+      "x": 23.5,
+      "y": 51
+     }
+    ],
+    "steps": [
+     {
+      "label": "Beidbeinig landen",
+      "say": "Spieler sieben hüpft über die zweite Hürde und landet auf beiden Füßen, die Knie leicht gebeugt.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         61,
+         30
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Sofort zur Seite",
+      "say": "Ohne anzuhalten startet er sofort in die schnellen Seitschritte. Das Ziel: keine Pause zwischen Landung und Seitschritt.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         57,
+         39
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n7",
+        "to": [
+         53,
+         35
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n7",
+        "to": [
+         49,
+         39
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Die Hürden stehen anders.",
+   "title": "Neuer Hürden-Parcours",
+   "text": "Jetzt liegt eine Hürde quer unten rechts, die andere links in der Mitte. Der Spieler hüpft über die untere Hürde, macht schnelle Füße nach oben und hüpft zur linken Hürde. Dort steigt er mit links darüber, springt beidbeinig zurück und läuft mit schnellen Füßen zum Start.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 57,
+      "y": 47,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 20,
+      "y": 44,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "s1",
+      "x": 23.5,
+      "y": 48.5
+     },
+     {
+      "id": "s2",
+      "x": 23.5,
+      "y": 51
+     }
+    ],
+    "steps": [
+     {
+      "label": "Hop über die untere Hürde",
+      "say": "Spieler sieben hüpft auf dem rechten Bein über die untere Hürde.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         57,
+         36
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Schnelle Füße und Hop",
+      "say": "Mit schnellen Füßen geht es nach oben, dann hüpft er nach links zur zweiten Hürde.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         57,
+         30
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n7",
+        "to": [
+         47,
+         30
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Darüber und zurück",
+      "say": "Er steigt mit dem linken Fuß über die Hürde und springt beidbeinig wieder zurück.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         35,
+         30
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n7",
+        "to": [
+         47,
+         30
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Schnelle Füße zum Start: Ziel",
+      "say": "Mit schnellen Füßen läuft er an der unteren Hürde vorbei zurück zum Start. Das Ziel: den neuen Ablauf ohne Fehler und im Tempo schaffen.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         62,
+         36
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n7",
+        "to": [
+         62,
+         44
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n7",
+        "to": [
+         57,
+         47
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "cones": [
+     {
+      "x": 41,
+      "y": 30,
+      "color": "orange",
+      "shape": "huerde",
+      "id": "h1"
+     },
+     {
+      "x": 57,
+      "y": 42,
+      "color": "orange",
+      "shape": "huerde_ou",
+      "id": "h2"
+     }
+    ]
+   }
+  }
+ ]
+}

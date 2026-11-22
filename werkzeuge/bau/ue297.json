@@ -1,0 +1,456 @@
+{
+ "title": "Hohe Bälle köpfen und blocken",
+ "code": "UE-297",
+ "kind": "Übungsform",
+ "focuses": [
+  "Verteidigen",
+  "Koordination",
+  "Schnelligkeit"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Einzeltraining"
+ ],
+ "duration_minutes": 15,
+ "players_min": 1,
+ "players_max": 2,
+ "field_size": "18 x 18 m",
+ "description": "Ein Innenverteidiger übt, hohe Bälle zu gewinnen. Drei Dummys stehen eng zusammen wie Gegenspieler. Der Trainer wirft den Ball hoch, der Spieler sprintet nach vorn und köpft ihn kontrolliert nach unten zurück. Danach berührt er den hinteren Dummy, dreht den Körper und ist bereit für den nächsten Ball.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 18 Metern. Oben in der Mitte ein Dummy, davor zwei Dummys eng nebeneinander. Oben links und rechts je ein Minitor für die Steigerungen.",
+  "Verteilen: Spieler vier steht beim hinteren Dummy. Der Trainer steht unten in der Mitte mit vielen Bällen.",
+  "Ablauf: Der Trainer wirft den Ball hoch. Spieler vier sprintet zwischen den Dummys nach vorn und köpft den Ball nach unten zurück zum Trainer. Dann läuft er zurück und berührt den hinteren Dummy.",
+  "Wechsel: Nach jedem Kopfball dreht der Spieler den Körper, mal über links, mal über rechts, und der nächste Ball kommt. Sind alle Bälle gespielt, gibt es eine Pause."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Den Sprung so timen, dass du den Ball am höchsten Punkt triffst",
+  "Die Augen bis zum Kopfball immer am Ball lassen",
+  "Die Arme für Gleichgewicht, Sprungkraft und Schutz nutzen",
+  "Nach dem Kopfball schnell reagieren und wieder bereit sein"
+ ],
+ "materials": [
+  "3 Dummys",
+  "2 Minitore",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Hohe Bälle köpfen und blocken. Spieler vier ist Innenverteidiger und gewinnt hohe Bälle mit dem Kopf.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   }
+  ],
+  "goals": [
+   {
+    "x": 33,
+    "y": 5,
+    "side": "top"
+   },
+   {
+    "x": 67,
+    "y": 5,
+    "side": "top"
+   }
+  ],
+  "cones": [
+   {
+    "x": 50,
+    "y": 7,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 44.5,
+    "y": 17,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 55.5,
+    "y": 17,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 53,
+    "y": 9.5,
+    "label": "4"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 50,
+    "y": 42,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 50.6,
+    "y": 42.6
+   },
+   {
+    "id": "s1",
+    "x": 46.5,
+    "y": 44.5
+   },
+   {
+    "id": "s2",
+    "x": 44.5,
+    "y": 45.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Dummy berühren, Ball im Blick",
+    "say": "Spieler vier berührt den hinteren Dummy und dreht sich zum Trainer. Er hat den Ball immer im Blick.",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       50,
+       30
+      ],
+      "type": "blick"
+     }
+    ]
+   },
+   {
+    "label": "Sprinten und springen",
+    "say": "Der Trainer wirft den Ball hoch. Spieler vier sprintet zwischen den beiden Dummys nach vorn, nimmt die Arme mit und springt zum Ball.",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       50,
+       21
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       21.6
+      ],
+      "type": "pass",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Kopfball nach unten: Ziel",
+    "say": "Er trifft den Ball am höchsten Punkt und köpft ihn nach unten genau zum Trainer. Das ist das Ziel. Dann läuft er zurück, berührt wieder den hinteren Dummy, dreht den Körper, und der nächste Ball kommt.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       42.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n4",
+      "to": [
+       53,
+       9.5
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 81,
+    "y1": 5,
+    "x2": 81,
+    "y2": 55,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Nach dem Kopfball einen Pass blocken.",
+   "title": "Köpfen, dann blocken",
+   "text": "Nach dem Kopfball spielt der Trainer sofort einen Pass zu einem der Minitore, so als hätte der Gegner den Ball gewonnen. Der Spieler landet sicher, schaut zum Trainer, drückt sich kräftig mit dem Standbein ab und blockt den Pass.",
+   "board": {
+    "players": [
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 53,
+      "y": 9.5,
+      "label": "4"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 42,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 42.6
+     },
+     {
+      "id": "s1",
+      "x": 46.5,
+      "y": 44.5
+     },
+     {
+      "id": "s2",
+      "x": 44.5,
+      "y": 45.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Kopfball",
+      "say": "Der Trainer wirft, Spieler vier sprintet nach vorn und köpft den Ball nach unten zurück zum Trainer.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         50,
+         21
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         21.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         42.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Früh schauen",
+      "say": "Er landet sicher und schaut sofort zum Trainer. Wohin geht der Pass?",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         50,
+         40
+        ],
+        "type": "blick"
+       }
+      ]
+     },
+     {
+      "label": "Pass blocken: Ziel",
+      "say": "Der Trainer passt zum rechten Minitor. Spieler vier drückt sich ab, sprintet hin und blockt den Pass. Das ist das Ziel. Dann zurück zum hinteren Dummy, und der nächste Ball kommt.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         57,
+         23
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n4",
+        "to": [
+         65,
+         16
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         65.6,
+         16.6
+        ],
+        "type": "pass",
+        "delay": 0.2
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Mit der Brust annehmen, dann blocken.",
+   "title": "Brust, Pass und blocken",
+   "text": "Jetzt nimmt der Spieler den Ball mit der Brust an. Mit dem zweiten Kontakt spielt er einen festen, genauen Pass zum Trainer. Ruhig bleiben, nur zwei Kontakte. Dann kommt der Pass zum Minitor auf der anderen Seite, und er blockt ihn.",
+   "board": {
+    "players": [
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 53,
+      "y": 9.5,
+      "label": "4"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 42,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 42.6
+     },
+     {
+      "id": "s1",
+      "x": 46.5,
+      "y": 44.5
+     },
+     {
+      "id": "s2",
+      "x": 44.5,
+      "y": 45.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Mit der Brust",
+      "say": "Der Trainer wirft den Ball hoch. Spieler vier sprintet nach vorn und nimmt den Ball ruhig mit der Brust an.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         50,
+         21
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         21.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Pass zum Trainer",
+      "say": "Mit dem zweiten Kontakt spielt er einen festen, genauen Pass zurück zum Trainer.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         42.6
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Früh schauen",
+      "say": "Sofort schaut er zum Trainer. Wohin geht der nächste Pass?",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         50,
+         40
+        ],
+        "type": "blick"
+       }
+      ]
+     },
+     {
+      "label": "Andere Seite blocken: Ziel",
+      "say": "Der Trainer passt zum linken Minitor. Spieler vier sprintet hin und blockt den Pass. Das ist das Ziel. Dann zurück zum hinteren Dummy, und es geht von vorn los.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         43,
+         23
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n4",
+        "to": [
+         35,
+         16
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         35.6,
+         16.6
+        ],
+        "type": "pass",
+        "delay": 0.2
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
