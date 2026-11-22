@@ -1,0 +1,788 @@
+{
+ "title": "Vor dem Strafraum verteidigen",
+ "code": "UE-199",
+ "kind": "Spielform",
+ "focuses": [
+  "Verteidigen",
+  "Umschalten",
+  "Zusammenspiel"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 11,
+ "players_max": 13,
+ "field_size": "37 x 32 m",
+ "description": "Vor dem Strafraum spielt Team Rot mit zwei Springern fünf gegen drei. Spielt es einen Pass durch ein Hütchentor, laufen zwei Angreifer in den Strafraum. Dort sprinten zwei Verteidiger aus den Seitenzonen zurück, und es heißt zwei gegen zwei. Erobert Team Neon den Ball, spielt es zum Springer und greift selbst an.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 37 mal 32 Metern vor einem Jugendtor, mit zwei Seitenkanälen und je einer Seitenzone am Tor. Auf der Strafraumlinie bilden vier Hütchen links und rechts ein Hütchentor.",
+  "Verteilen: Vor dem Strafraum drei von Team Rot, zwei Springer und drei von Team Neon. Zwei weitere von Team Neon warten in den Seitenzonen, ein neutraler Torwart steht im Tor. Der Trainer steht rechts mit Bällen.",
+  "Ablauf: Der Trainer passt zu einem Springer, und Team Rot spielt fünf gegen drei. Nach einem Pass durch ein Hütchentor laufen zwei Angreifer in den Strafraum. Die zwei aus den Seitenzonen sprinten zurück und verteidigen.",
+  "Wertung und Wechsel: Ein Treffer gibt einen Punkt für Team Rot. Erobert Team Neon den Ball und spielt ihn zum Springer, gibt das einen Punkt für Team Neon, und Team Neon greift an. Hält der Torwart, wechseln die Rollen ebenso."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Schnell zurücksprinten und das Tor schützen",
+  "Eng stehen und den Angreifern wenig Platz lassen",
+  "Pässe durch die Mitte und nach vorn zustellen",
+  "Nach dem Ballgewinn schnell umschalten und angreifen"
+ ],
+ "materials": [
+  "1 Jugendtor",
+  "4 Hütchen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben",
+  "2 Leibchen für die Springer"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Vor dem Strafraum verteidigen. Drei Verteidiger gegen fünf, und zwei weitere sprinten aus den Seitenzonen zurück.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 20,
+    "y": 5,
+    "w": 60,
+    "h": 50
+   },
+   {
+    "type": "zone",
+    "x": 20,
+    "y": 5,
+    "w": 12.3,
+    "h": 13.7
+   },
+   {
+    "type": "zone",
+    "x": 67.7,
+    "y": 5,
+    "w": 12.3,
+    "h": 13.7
+   },
+   {
+    "type": "line",
+    "x1": 32.3,
+    "y1": 5,
+    "x2": 32.3,
+    "y2": 55,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 67.7,
+    "y1": 5,
+    "x2": 67.7,
+    "y2": 55,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 32.3,
+    "y1": 18.7,
+    "x2": 67.7,
+    "y2": 18.7,
+    "dashed": true
+   },
+   {
+    "type": "rect",
+    "x": 40.5,
+    "y": 5,
+    "w": 17.5,
+    "h": 6
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "jugend"
+   }
+  ],
+  "cones": [
+   {
+    "x": 33,
+    "y": 18.7,
+    "color": "orange"
+   },
+   {
+    "x": 40.5,
+    "y": 18.7,
+    "color": "orange"
+   },
+   {
+    "x": 58,
+    "y": 18.7,
+    "color": "orange"
+   },
+   {
+    "x": 66.5,
+    "y": 18.7,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "k",
+    "team": "t",
+    "x": 50,
+    "y": 8,
+    "label": "TW"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 25,
+    "y": 12,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 74,
+    "y": 12,
+    "label": "3"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 33.5,
+    "y": 24,
+    "label": "5"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 43,
+    "y": 24,
+    "label": "9"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 51.5,
+    "y": 24,
+    "label": "10"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 60,
+    "y": 24,
+    "label": "6"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 47,
+    "y": 40,
+    "label": "4"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 55.5,
+    "y": 49,
+    "label": "8"
+   },
+   {
+    "id": "f1",
+    "team": "t",
+    "x": 65,
+    "y": 40,
+    "label": "F"
+   },
+   {
+    "id": "f2",
+    "team": "t",
+    "x": 36,
+    "y": 40,
+    "label": "F"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 91,
+    "y": 45,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 91.6,
+    "y": 45.6
+   },
+   {
+    "id": "s1",
+    "x": 94.6,
+    "y": 48.5
+   },
+   {
+    "id": "s2",
+    "x": 91,
+    "y": 48.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Fünf gegen drei",
+    "say": "Der Trainer passt zum rechten Springer. Team Rot spielt mit den zwei Springern fünf gegen drei. Der Springer passt zu Rot acht, und Rot acht spielt zum linken Springer.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       65.6,
+       40.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       56.1,
+       49.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       36.6,
+       40.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Durch das Hütchentor",
+    "say": "Der linke Springer spielt durch das linke Hütchentor. Rot neun startet in den Strafraum und nimmt den Ball an. Rot zehn läuft mit.",
+    "moves": [
+     {
+      "who": "r9",
+      "to": [
+       38.5,
+       21
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r9",
+      "to": [
+       37,
+       12
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       37.6,
+       12.6
+      ],
+      "type": "pass",
+      "delay": 0.6
+     },
+     {
+      "who": "r10",
+      "to": [
+       53,
+       12.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Zurücksprinten",
+    "say": "Gleichzeitig sprinten Neon zwei und Neon drei aus ihren Seitenzonen zurück. Jetzt heißt es zwei gegen zwei im Strafraum.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       31,
+       10.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n3",
+      "to": [
+       60,
+       10.5
+      ],
+      "type": "lauf"
+     }
+    ]
+   },
+   {
+    "label": "Ballgewinn: Punkt",
+    "say": "Neon zwei geht entschlossen auf Rot neun und erobert den Ball. Er passt zurück zum linken Springer, und das gibt einen Punkt für Team Neon. Ein Treffer gäbe einen Punkt für Team Rot. Danach spielt der Trainer den nächsten Ball.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       36,
+       11.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       36.6,
+       40.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 20,
+    "y1": 58.6,
+    "x2": 80,
+    "y2": 58.6,
+    "text": "37 m"
+   },
+   {
+    "x1": 84,
+    "y1": 5,
+    "x2": 84,
+    "y2": 55,
+    "text": "32 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Nach dem Ballgewinn schnell umschalten.",
+   "title": "Ball erobert, umschalten",
+   "text": "Fängt Team Neon den Ball ab, spielt es zurück zum Springer. Jetzt greift Team Neon an. Der Springer spielt den Ball schnell auf die Seite, von dort kommt die Flanke in den Strafraum.",
+   "board": {
+    "players": [
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50,
+      "y": 8,
+      "label": "TW"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 25,
+      "y": 12,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 74,
+      "y": 12,
+      "label": "3"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 33.5,
+      "y": 24,
+      "label": "5"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 43,
+      "y": 24,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 51.5,
+      "y": 24,
+      "label": "10"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 60,
+      "y": 24,
+      "label": "6"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 47,
+      "y": 40,
+      "label": "4"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 55.5,
+      "y": 49,
+      "label": "8"
+     },
+     {
+      "id": "f1",
+      "team": "t",
+      "x": 65,
+      "y": 40,
+      "label": "F"
+     },
+     {
+      "id": "f2",
+      "team": "t",
+      "x": 36,
+      "y": 40,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 91,
+      "y": 45,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 56.1,
+      "y": 49.6
+     },
+     {
+      "id": "s1",
+      "x": 94.6,
+      "y": 48.5
+     },
+     {
+      "id": "s2",
+      "x": 91,
+      "y": 48.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Abgefangen",
+      "say": "Rot acht will in die Mitte passen, aber Neon vier fängt den Ball ab. Er spielt sofort zum rechten Springer.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         49,
+         37.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         49.6,
+         38.1
+        ],
+        "type": "pass",
+        "delay": 0.2
+       },
+       {
+        "who": "b1",
+        "to": [
+         65.6,
+         40.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Auf die Seite",
+      "say": "Jetzt greift Team Neon an. Der Springer spielt den Ball weit auf die Seite zu Neon drei. Neon sechs läuft in den Strafraum.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         74.6,
+         12.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n6",
+        "to": [
+         61.5,
+         13
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Flanke: Punkt",
+      "say": "Neon drei flankt in den Strafraum, und Neon sechs schießt ins Tor. Das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         62.1,
+         13.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         55.5,
+         5.3
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Fünf Pässe zuerst, und hält der Torwart, wechseln die Rollen.",
+   "title": "Torwart hält, Wechsel",
+   "text": "Team Rot muss erst fünf Pässe schaffen, bevor es durch ein Hütchentor spielen darf. So haben die Verteidiger Zeit, sich zu ordnen. Hält der Torwart den Schuss, spielt er zu Team Neon, und die Rollen wechseln.",
+   "board": {
+    "players": [
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50,
+      "y": 8,
+      "label": "TW"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 25,
+      "y": 12,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 74,
+      "y": 12,
+      "label": "3"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 33.5,
+      "y": 24,
+      "label": "5"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 43,
+      "y": 24,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 51.5,
+      "y": 24,
+      "label": "10"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 60,
+      "y": 24,
+      "label": "6"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 47,
+      "y": 40,
+      "label": "4"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 55.5,
+      "y": 49,
+      "label": "8"
+     },
+     {
+      "id": "f1",
+      "team": "t",
+      "x": 65,
+      "y": 40,
+      "label": "F"
+     },
+     {
+      "id": "f2",
+      "team": "t",
+      "x": 36,
+      "y": 40,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 91,
+      "y": 45,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 65.6,
+      "y": 40.6
+     },
+     {
+      "id": "s1",
+      "x": 94.6,
+      "y": 48.5
+     },
+     {
+      "id": "s2",
+      "x": 91,
+      "y": 48.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Fünf Pässe",
+      "say": "Team Rot zählt die Pässe. Der rechte Springer passt zu Rot acht, Rot acht zum linken Springer. Neon vier und Neon sechs schieben eng zusammen.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         56.1,
+         49.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         36.6,
+         40.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n6",
+        "to": [
+         56,
+         26
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n4",
+        "to": [
+         43,
+         36
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Durch das Hütchentor",
+      "say": "Nach dem fünften Pass spielt der linke Springer durch das Hütchentor. Rot neun nimmt den Ball an und schießt sofort.",
+      "moves": [
+       {
+        "who": "r9",
+        "to": [
+         38.5,
+         21
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r9",
+        "to": [
+         37,
+         12
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         37.6,
+         12.6
+        ],
+        "type": "pass",
+        "delay": 0.6
+       }
+      ]
+     },
+     {
+      "label": "Torwart hält: Wechsel",
+      "say": "Der Torwart fängt den Ball. Er wirft ihn zu Neon vier, und jetzt greift Team Neon an. Team Rot muss verteidigen.",
+      "moves": [
+       {
+        "who": "k",
+        "to": [
+         43,
+         8
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         43.6,
+         8.6
+        ],
+        "type": "pass",
+        "delay": 0.2
+       },
+       {
+        "who": "b1",
+        "to": [
+         43.6,
+         36.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
