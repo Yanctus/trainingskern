@@ -41,8 +41,11 @@ README der App (Abschnitte „Übungen aus Video nachbauen“, „Laufweg-Abglei
   0,9 s). Links und rechts scannen = zwei `bl(...)` nacheinander, das zweite mit `after=True`, danach der Pass mit
   `after=True`. Ein Blick bewegt niemanden. Im Sprechtext darf es stehen („schaut über die Schulter“), muss aber nicht.
 
-- **Tore:** Minitor ist Standard (`{"x","y","side"}`), ein Jugendtor bekommt `"size": "jugend"` (breiter und tiefer). In 3D stehen
-  Tore als Aufsteller wie Hütchen und Stangen, auf der Skizze mit Netz, Tintenrahmen und orangen Pfosten.
+- **Tore:** Minitor ist Standard (`{"x","y","side"}`). Steht ein Torwart drin, ist es ein großes Tor: `"size": "jugend"`
+  (Jugendtor 5 x 2 m), sobald die Altersstufen D-Jugend oder jünger enthalten; nur C-Jugend und älter / Amateure bekommen
+  `"size": "gross"` (Großfeldtor/Erwachsenentor 7,32 x 2,44 m). In 3D stehen Tore als Aufsteller auf der Torlinie, immer
+  von vorn gezeichnet; Tore links und rechts drehen sich mit der Öffnung zum Feld. Auf der Skizze mit Netz, Tintenrahmen
+  und orangen Pfosten.
 
 ## Feste Begriffe (vom Inhaber)
 - **Springer sind immer neutrale Spieler:** `team: "t"`, Label „F“, spielen für das Team in Ballbesitz, im Text „Springer“.

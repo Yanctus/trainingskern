@@ -181,8 +181,8 @@ def svg(board, titel):
 
 
 def goal(g):
-    # Minitor (Standard) oder Jugendtor (size "jugend"), wie TOR_MASS in der App (Sketch.jsx)
-    w, d = (70, 45) if g.get("size") == "jugend" else (40, 32)
+    # Minitor (Standard), Jugendtor (size "jugend") oder Großfeldtor (size "gross"), wie TOR_MASS in der App (Sketch.jsx)
+    w, d = {"jugend": (70, 45), "gross": (100, 55)}.get(g.get("size"), (40, 32))
     x, y = g["x"] * 10, g["y"] * 10
     return {"left": f"M{x},{y-w} h{-d} v{2*w} h{d}", "right": f"M{x},{y-w} h{d} v{2*w} h{-d}",
             "top": f"M{x-w},{y} v{-d} h{2*w} v{d}"}.get(g.get("side"), f"M{x-w},{y} v{d} h{2*w} v{-d}")
