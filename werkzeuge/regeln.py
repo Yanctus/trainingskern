@@ -168,8 +168,11 @@ def regeln(u):
         out.append(f"{code}: duration_minutes 10-20")
     if (u.get("players_min") or 0) > (u.get("players_max") or 0):
         out.append(f"{code}: players_min größer als players_max")
-    if u.get("access") not in ("abo", "frei") or u.get("hidden") is not False:
-        out.append(f"{code}: access muss 'abo' oder 'frei' (neue Einheiten erst frei, der Inhaber stellt sie auf Pro) und hidden false sein")
+    # Nur 5 Übungen sind frei mit Konto, UE-001 offen; alles andere ist Pro (Inhaber, 22.11.2026)
+    FREI = {"UE-004", "UE-005", "UE-007", "UE-008", "UE-011"}
+    soll = "offen" if code == "UE-001" else "frei" if code in FREI else "abo"
+    if u.get("access") != soll or u.get("hidden") is not False:
+        out.append(f"{code}: access muss '{soll}' sein (neue Einheiten sind Pro, nur 5 sind frei) und hidden false")
     if not 3 <= len((u.get("description") or "").split(". ")) <= 6:
         out.append(f"{code}: description soll 3-4 Sätze haben")
     org = u.get("organisation") or []

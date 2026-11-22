@@ -34,12 +34,13 @@ README der App (Abschnitte „Übungen aus Video nachbauen“, „Laufweg-Abglei
 - **Fassungen dürfen Linien UND Tore ergänzen** (z. B. Minitore nur in der Steigerung): alle der Grundform mit übernehmen, die Bühne zeigt die neuen mit dem Kapitel.
 - **Bewegliche Hütchen in einer Fassung** (z. B. Farbtafel): dann müssen alle Hütchen der Fassung eine `id` haben (auch die festen).
 - **Zonen farbig:** `{"type":"zone", …}`; Zonen von Team Rot mit `"color":"orange"`, sonst neon. Keine gestrichelten Rechtecke für Zonen.
-- **Neue Einheiten gleich `access: "frei"`**, der Inhaber stellt am Ende alle auf Pro.
+- **Neue Einheiten gleich `access: "abo"` (Pro)** (Inhaber, 22.11.2026): Nur 5 Übungen sind frei mit Konto (UE-004, UE-005,
+  UE-007, UE-008, UE-011), UE-001 ist offen ohne Konto. Alles andere ist Pro.
 - **Wenig Prüfläufe:** kostenlos und immer: `pruefen`, `blatt`, `vergleichen`. Prüfstand nur nach Änderungen am Player-Code oder wenn
-  das Blatt etwas Seltsames zeigt (dann nur Chromium). Live-Check einmal pro Woche mit `live.js` (Einheiten sind ja frei).
+  das Blatt etwas Seltsames zeigt (dann nur Chromium). Live-Check einmal pro Woche mit `live.js` (dafür kurz auf „frei“, danach sofort zurück auf „abo“).
 
-- **Zugang:** `offen` = ohne Konto (nur eine Schaufenster-Übung, zurzeit UE-001), `frei` = mit kostenlosem Konto (10 Übungen),
-  `abo` = Pro. Neue Einheiten weiter erst `frei`, der Inhaber stellt am Ende auf `abo`.
+- **Zugang:** `offen` = ohne Konto (nur eine Schaufenster-Übung, zurzeit UE-001), `frei` = mit kostenlosem Konto (genau 5 Übungen),
+  `abo` = Pro. Neue Einheiten sind sofort `abo`.
 - **Schulterblick (ab 22.11.2026 für alle neuen Einheiten):** Zeigt das Video, dass ein Spieler vor der Ballannahme das Feld
   scannt (Blickwinkel eingezeichnet), dann im Schritt davor bzw. im selben Schritt `bl("n6", [x, y])` aus `bau/hilfe.py`
   einsetzen: ein halbtransparenter Kegel vom Spieler in Richtung `to`, so lang wie der Abstand (Standard: 70° Öffnung,
@@ -61,7 +62,7 @@ README der App (Abschnitte „Übungen aus Video nachbauen“, „Laufweg-Abglei
 ## Pro Einheit (JSON nur EINMAL schreiben)
 Einheit als kleines Python-Skript in `werkzeuge/bau/ue0xx.py` bauen (Bausteine in `bau/hilfe.py`, Vorbild `bau/ue061.py` bis `ue063.py`),
 `python3 bau/ue0xx.py e.json`, dann:
-1. `create_entities` klein: `{"code","title","kind","duration_minutes","hidden":true,"access":"frei"}` (Antwort ist klein).
+1. `create_entities` klein: `{"code","title","kind","duration_minutes","hidden":true,"access":"abo"}` (Antwort ist klein).
 2. `update_entities` mit `{"$set": {…alle übrigen Felder…}}`. Felder mit `null` weglassen (spart Tokens). Antwort ist nur eine Zahl.
 3. `python3 werkbank.py lesen UE-0xx e.json` (kostenlos) → `pruefen e.json --fix` → bei Änderungen
    `python3 werkbank.py lesen UE-0xx db.json` und `patch db.json e.json` → nur diesen `$set` senden.
@@ -74,7 +75,7 @@ Einheit als kleines Python-Skript in `werkzeuge/bau/ue0xx.py` bauen (Bausteine i
    dann alle 3 bis 4 Minuten `grep -E "^(===|FEHLER|ALLES)" /tmp/alle.log` (sonst schläft die Sandbox ein und /tmp ist weg).
    Jede Zeile muss „PRÜFSTAND: ok“ haben. „viele lange Bilder“ direkt nach dem Aufwachen der Sandbox einmal wiederholen.
 7. Live-Check einmal pro Woche: `NODE_PATH=$(npm root -g) node live.js wochen.png <id> <id> <id>` (EIN Kontaktbild: Kopf und
-   9 Bilder der laufenden Story). Neue Einheiten stehen auf „frei“, daher ohne Umstellen.
+   9 Bilder der laufenden Story). Neue Einheiten stehen auf „abo“: für den Live-Check kurz auf „frei“, danach sofort zurück.
 8. Schlusskarte „So läuft eine Runde“: In der App in `src/lib/runden.js` einen Eintrag für den neuen Code ergänzen
    (`ablauf`, `punkte` oder `ziel`, `wechsel`; kurze Sätze, „gibt einen Punkt“). Ohne Eintrag baut die Seite die Karte
    automatisch aus Beschreibung und Organisation, das ist aber schlechter. Prüfen: `node tools/pruefstand/schluss.mjs e.json`.
