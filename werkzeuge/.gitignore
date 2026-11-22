@@ -10,3 +10,4 @@ import/
 /ue*.html.js
 /patch_*.txt
 /patch_*.json
+/p[0-9]*.json
