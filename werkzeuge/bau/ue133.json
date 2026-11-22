@@ -1,0 +1,774 @@
+{
+ "title": "Fangen nur auf den Linien",
+ "code": "UE-133",
+ "kind": "Spielform",
+ "focuses": [
+  "Schnelligkeit",
+  "Koordination",
+  "Erwärmung"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 6,
+ "players_max": 10,
+ "field_size": "9 x 14 m",
+ "description": "Ein Fangspiel auf einem kleinen Feld mit Linien, wie bei Pac-Man: Läufer und Fänger dürfen sich nur auf den Linien bewegen, also nur waagrecht oder senkrecht. Die Fänger von Team Rot versuchen, die Läufer von Team Neon zu fangen. Wer gefangen wird, muss raus und wartet außen. Der letzte Läufer, der übrig bleibt, gewinnt. Wer ständig schaut, wo die Fänger sind, entkommt am längsten.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 9 mal 14 Metern mit gut sichtbaren Linien: außen herum, eine Linie längs durch die Mitte und zwei Querlinien. Hütchen an den Kreuzungen braucht es erst in der Steigerung.",
+  "Verteilen: Vier Läufer von Team Neon und zwei Fänger von Team Rot stehen auf den Linien verteilt. Der Trainer steht außen.",
+  "Ablauf: Auf Pfiff laufen alle gleichzeitig los, aber nur auf den Linien. Die Fänger versuchen, einen Läufer zu berühren. Wer gefangen ist, verlässt sofort das Feld und wartet außen.",
+  "Wertung: Gespielt wird, bis nur noch ein Läufer übrig ist. Der gewinnt die Runde. Dann sind zwei andere die Fänger."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Ständig umschauen und früh sehen, von wo die Fänger kommen",
+  "Mit Körpertäuschungen den Fänger in die falsche Richtung schicken",
+  "Schnell entscheiden, bevor man in einer Ecke festsitzt",
+  "Auf den Fußballen bleiben, um blitzschnell die Richtung zu wechseln"
+ ],
+ "materials": [
+  "Linien oder Hütchenreihen für das Feld",
+  "12 Hütchen für die Steigerung",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Fangen nur auf den Linien. Ein Fangspiel wie bei Pac-Man, bei dem alle nur waagrecht und senkrecht laufen dürfen.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 33.5,
+    "y": 5,
+    "w": 33,
+    "h": 50
+   },
+   {
+    "type": "line",
+    "x1": 50,
+    "y1": 5,
+    "x2": 50,
+    "y2": 55,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 33.5,
+    "y1": 21.7,
+    "x2": 66.5,
+    "y2": 21.7,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 33.5,
+    "y1": 38.3,
+    "x2": 66.5,
+    "y2": 38.3,
+    "dashed": false
+   }
+  ],
+  "players": [
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 41,
+    "y": 5,
+    "label": "7"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 59.1,
+    "y": 21.7,
+    "label": "6"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 41,
+    "y": 38.3,
+    "label": "8"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 56,
+    "y": 55,
+    "label": "9"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 50,
+    "y": 28.8,
+    "label": "3"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 66.5,
+    "y": 44.7,
+    "label": "2"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 25,
+    "y": 30,
+    "label": "T"
+   }
+  ],
+  "balls": [],
+  "steps": [
+   {
+    "label": "Nur auf den Linien",
+    "say": "Auf Pfiff laufen alle gleichzeitig los, aber nur auf den Linien. Rot drei jagt Neon acht, der läuft nach links weg.",
+    "moves": [
+     {
+      "who": "r3",
+      "to": [
+       50,
+       38.3
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r3",
+      "to": [
+       45,
+       38.3
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       33.5,
+       38.3
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n8",
+      "to": [
+       33.5,
+       31
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       33.5,
+       5
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n7",
+      "to": [
+       33.5,
+       13
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r2",
+      "to": [
+       66.5,
+       32
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n9",
+      "to": [
+       50,
+       55
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Umschauen, Druck erkennen",
+    "say": "Neon sechs schaut sich um: Rot zwei kommt von rechts unten, Rot drei steht links unten. Also läuft er auf der Querlinie zur Mitte, weg von beiden.",
+    "moves": [
+     {
+      "who": "n6",
+      "to": [
+       66.5,
+       32
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "n6",
+      "to": [
+       45,
+       38.3
+      ],
+      "type": "blick",
+      "after": true
+     },
+     {
+      "who": "n6",
+      "to": [
+       50,
+       21.7
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r2",
+      "to": [
+       66.5,
+       21.7
+      ],
+      "type": "lauf",
+      "delay": 0.8
+     }
+    ]
+   },
+   {
+    "label": "Gefangen: raus",
+    "say": "Rot drei bleibt Neon acht auf den Fersen und fängt ihn an der linken Linie. Neon acht muss raus und wartet außen.",
+    "moves": [
+     {
+      "who": "r3",
+      "to": [
+       33.5,
+       38.3
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r3",
+      "to": [
+       33.5,
+       33.3
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       24,
+       42
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Der Letzte gewinnt",
+    "say": "Die anderen laufen weiter. Gespielt wird, bis nur noch ein Läufer übrig ist. Der gewinnt die Runde, und dann sind zwei andere die Fänger.",
+    "moves": [
+     {
+      "who": "n6",
+      "to": [
+       50,
+       12
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r2",
+      "to": [
+       58,
+       21.7
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n9",
+      "to": [
+       50,
+       46
+      ],
+      "type": "lauf",
+      "delay": 0.1
+     }
+    ]
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Ständig umschauen.",
+   "title": "Ständig umschauen",
+   "text": "Wer nur nach vorn schaut, läuft einem Fänger direkt in die Arme. Jede Sekunde kurz umschauen: Wo sind die Fänger, aus welcher Richtung kommt der Druck? Dann dorthin laufen, wo keiner ist, bevor man in einer Ecke festsitzt.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 33.5,
+      "y": 10,
+      "label": "7"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 50,
+      "y": 21.7,
+      "label": "6"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 41,
+      "y": 38.3,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 56,
+      "y": 55,
+      "label": "9"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 50,
+      "y": 5,
+      "label": "3"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 66.5,
+      "y": 30,
+      "label": "2"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 25,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [],
+    "steps": [
+     {
+      "label": "Erst schauen",
+      "say": "Neon sechs steht auf der Kreuzung in der Mitte und schaut sich um: Rot drei kommt von oben, Rot zwei von rechts.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         50,
+         5
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "n6",
+        "to": [
+         66.5,
+         30
+        ],
+        "type": "blick",
+        "after": true
+       },
+       {
+        "who": "r3",
+        "to": [
+         50,
+         12
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       }
+      ]
+     },
+     {
+      "label": "Weg vom Druck",
+      "say": "Also läuft er nach links weg, dorthin, wo kein Fänger ist. Die beiden Fänger kommen zu spät, und Neon sechs ist noch im Spiel.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         33.5,
+         21.7
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n6",
+        "to": [
+         33.5,
+         29
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r3",
+        "to": [
+         50,
+         21.7
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "r2",
+        "to": [
+         66.5,
+         21.7
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Täuschen und abhauen.",
+   "title": "Täuschen und abhauen",
+   "text": "Wer immer geradeaus wegläuft, ist leicht zu fangen. Besser: kurz in die eine Richtung antäuschen, den Fänger mitziehen und dann blitzschnell in die andere Richtung abbiegen. So gewinnt man den entscheidenden Schritt.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 41,
+      "y": 5,
+      "label": "7"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 59.1,
+      "y": 21.7,
+      "label": "6"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 41,
+      "y": 55,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 50,
+      "y": 38.3,
+      "label": "9"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 33.5,
+      "y": 28,
+      "label": "3"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 66.5,
+      "y": 38.3,
+      "label": "2"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 25,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [],
+    "steps": [
+     {
+      "label": "Antäuschen",
+      "say": "Neon neun läuft ein Stück nach unten, als wolle er dorthin. Rot zwei läuft auf der Querlinie schon in diese Richtung.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         50,
+         44
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r2",
+        "to": [
+         56,
+         38.3
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       }
+      ]
+     },
+     {
+      "label": "Abbiegen, entkommen",
+      "say": "Dann dreht Neon neun blitzschnell um und läuft nach oben. Rot zwei ist auf dem falschen Fuß und kommt nicht mehr hinterher, Neon neun bleibt im Spiel.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         50,
+         30
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n9",
+        "to": [
+         50,
+         22.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r2",
+        "to": [
+         50.5,
+         38.3
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Hütchen als sichere Inseln.",
+   "title": "Sichere Inseln",
+   "text": "Auf jede Kreuzung kommt ein Hütchen. Wer auf einem Hütchen steht, darf nicht gefangen werden, aber höchstens drei Sekunden lang. Die Fänger dürfen jetzt frei durchs Feld laufen und lauern zwischen den Hütchen.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 41,
+      "y": 5,
+      "label": "7"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 59.1,
+      "y": 21.7,
+      "label": "6"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 41,
+      "y": 38.3,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 56,
+      "y": 55,
+      "label": "9"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 50,
+      "y": 28.8,
+      "label": "3"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 66.5,
+      "y": 44.7,
+      "label": "2"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 25,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [],
+    "steps": [
+     {
+      "label": "Sicher auf der Insel",
+      "say": "Neon neun rettet sich zum Hütchen auf der unteren Linie, dort ist er sicher. Rot zwei läuft jetzt quer durchs Feld auf ihn zu.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         52.1,
+         55
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r2",
+        "to": [
+         55,
+         49
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n8",
+        "to": [
+         35.6,
+         38.3
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       }
+      ]
+     },
+     {
+      "label": "Nach drei Sekunden weiter",
+      "say": "Nach drei Sekunden muss Neon neun weiter und sprintet zum nächsten Hütchen. Er ist schneller als Rot zwei und schafft es, also bleibt er im Spiel. Dann sucht sich Rot zwei einen anderen Läufer.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         50,
+         40.4
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r2",
+        "to": [
+         53,
+         44.5
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "r3",
+        "to": [
+         38,
+         35
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     }
+    ],
+    "cones": [
+     {
+      "x": 33.5,
+      "y": 5,
+      "color": "neon",
+      "id": "i0"
+     },
+     {
+      "x": 33.5,
+      "y": 21.7,
+      "color": "neon",
+      "id": "i1"
+     },
+     {
+      "x": 33.5,
+      "y": 38.3,
+      "color": "neon",
+      "id": "i2"
+     },
+     {
+      "x": 33.5,
+      "y": 55,
+      "color": "neon",
+      "id": "i3"
+     },
+     {
+      "x": 50,
+      "y": 5,
+      "color": "neon",
+      "id": "i4"
+     },
+     {
+      "x": 50,
+      "y": 21.7,
+      "color": "neon",
+      "id": "i5"
+     },
+     {
+      "x": 50,
+      "y": 38.3,
+      "color": "neon",
+      "id": "i6"
+     },
+     {
+      "x": 50,
+      "y": 55,
+      "color": "neon",
+      "id": "i7"
+     },
+     {
+      "x": 66.5,
+      "y": 5,
+      "color": "neon",
+      "id": "i8"
+     },
+     {
+      "x": 66.5,
+      "y": 21.7,
+      "color": "neon",
+      "id": "i9"
+     },
+     {
+      "x": 66.5,
+      "y": 38.3,
+      "color": "neon",
+      "id": "i10"
+     },
+     {
+      "x": 66.5,
+      "y": 55,
+      "color": "neon",
+      "id": "i11"
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,786 @@
+{
+ "title": "2 gegen 2 mit Auf- und Abstieg",
+ "code": "UE-135",
+ "kind": "Spielform",
+ "focuses": [
+  "Zusammenspiel",
+  "1 gegen 1",
+  "Kondition"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 12,
+ "players_max": 12,
+ "field_size": "18 x 27 m",
+ "description": "Drei Spiele zwei gegen zwei laufen gleichzeitig in drei Zonen übereinander, jede Zone hat ein Minitor links und rechts. Die oberste Zone ist die erste Liga, dann die zweite und die dritte. Nach drei Minuten wird abgerechnet: Das Siegerpaar steigt eine Zone auf, das Verliererpaar steigt ab. Bei Gleichstand entscheidet ein schnelles eins gegen eins. Wer nach acht bis zehn Spielen am häufigsten in der ersten Liga gewonnen hat, ist Meister.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 27 Metern, quer in drei gleiche Zonen geteilt. Jede Zone hat links und rechts ein Minitor. Oben ist die erste Liga, in der Mitte die zweite, unten die dritte.",
+  "Verteilen: Sechs Paare, in jeder Zone spielen zwei Paare gegeneinander. Der Trainer steht mit vielen Bällen am Rand und spielt sofort einen neuen Ball ein.",
+  "Ablauf: Alle drei Spiele laufen drei Minuten lang gleichzeitig. Dann gewinnt das Paar mit den meisten Toren und steigt auf, der Verlierer steigt ab. Oben bleibt der Sieger oben, unten bleibt der Verlierer unten.",
+  "Gleichstand: Ein Münzwurf entscheidet, wer anfängt, dann gibt es ein schnelles eins gegen eins. Wer trifft, bleibt. Fällt kein Tor, verliert das Paar, das schon vorher in dieser Zone war."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Mit schnellen Doppelpässen durch die Abwehr",
+  "Viel miteinander sprechen",
+  "Den Gegner im Dribbling ausspielen und so ein zwei gegen eins schaffen",
+  "Chancen eiskalt nutzen und die Angriffe abwechseln, mal schnell, mal geduldig"
+ ],
+ "materials": [
+  "6 Minitore",
+  "Hütchen für Feld und Zonen",
+  "Viele Bälle",
+  "Leibchen in mehreren Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Zwei gegen zwei mit Auf- und Abstieg. Drei Spiele laufen gleichzeitig, und nach jeder Runde steigt der Sieger auf und der Verlierer ab.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 33.3,
+    "y": 5,
+    "w": 33.4,
+    "h": 50
+   },
+   {
+    "type": "line",
+    "x1": 33.3,
+    "y1": 21.7,
+    "x2": 66.7,
+    "y2": 21.7,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 33.3,
+    "y1": 38.3,
+    "x2": 66.7,
+    "y2": 38.3,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 33.3,
+    "y": 13.3,
+    "side": "left"
+   },
+   {
+    "x": 33.3,
+    "y": 30,
+    "side": "left"
+   },
+   {
+    "x": 33.3,
+    "y": 46.7,
+    "side": "left"
+   },
+   {
+    "x": 66.7,
+    "y": 13.3,
+    "side": "right"
+   },
+   {
+    "x": 66.7,
+    "y": 30,
+    "side": "right"
+   },
+   {
+    "x": 66.7,
+    "y": 46.7,
+    "side": "right"
+   }
+  ],
+  "players": [
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 38,
+    "y": 11,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 46.5,
+    "y": 15.5,
+    "label": "3"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 55,
+    "y": 11,
+    "label": "8"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 63.5,
+    "y": 15.5,
+    "label": "9"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 38,
+    "y": 27.7,
+    "label": "4"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 46.5,
+    "y": 32.2,
+    "label": "5"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 55,
+    "y": 27.7,
+    "label": "10"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 63.5,
+    "y": 32.2,
+    "label": "11"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 38,
+    "y": 44.4,
+    "label": "6"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 46.5,
+    "y": 48.9,
+    "label": "7"
+   },
+   {
+    "id": "r12",
+    "team": "b",
+    "x": 55,
+    "y": 44.4,
+    "label": "12"
+   },
+   {
+    "id": "r13",
+    "team": "b",
+    "x": 63.5,
+    "y": 48.9,
+    "label": "13"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 24,
+    "y": 30,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 38.6,
+    "y": 11.6
+   },
+   {
+    "id": "b2",
+    "x": 55.6,
+    "y": 28.3
+   },
+   {
+    "id": "b3",
+    "x": 38.6,
+    "y": 45
+   },
+   {
+    "id": "s1",
+    "x": 25.6,
+    "y": 33.6
+   },
+   {
+    "id": "s2",
+    "x": 22,
+    "y": 34
+   }
+  ],
+  "steps": [
+   {
+    "label": "Drei Spiele zugleich",
+    "say": "In allen drei Zonen wird gleichzeitig gespielt. Team Neon spielt nach rechts, Team Rot nach links. Wir schauen auf die unterste Zone.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       45,
+       10
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "r8",
+      "to": [
+       51,
+       12
+      ],
+      "type": "lauf",
+      "delay": 0.1
+     },
+     {
+      "who": "r10",
+      "to": [
+       48,
+       28
+      ],
+      "type": "dribbling",
+      "delay": 0.1,
+      "ball": "b2"
+     },
+     {
+      "who": "n4",
+      "to": [
+       42,
+       29.5
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n6",
+      "to": [
+       44,
+       43.5
+      ],
+      "type": "dribbling",
+      "delay": 0.2,
+      "ball": "b3"
+     },
+     {
+      "who": "r12",
+      "to": [
+       51,
+       43
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Doppelpass: Punkt",
+    "say": "Unten spielt Neon sechs einen Doppelpass mit Neon sieben, läuft an Rot zwölf vorbei und trifft ins rechte Minitor, und das gibt einen Punkt für Team Neon.",
+    "moves": [
+     {
+      "who": "b3",
+      "to": [
+       47.1,
+       49.5
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n6",
+      "to": [
+       51,
+       38.8
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n6",
+      "to": [
+       58,
+       42
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b3",
+      "to": [
+       58.6,
+       42.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b3",
+      "to": [
+       67,
+       46.7
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Auf- und Abstieg",
+    "say": "Nach drei Minuten wird abgerechnet. Neon sechs und Neon sieben haben unten gewonnen und steigen eine Zone auf, das Verliererpaar aus der Mitte steigt ab. Dann beginnen sofort die nächsten Spiele.",
+    "moves": [
+     {
+      "who": "n6",
+      "to": [
+       72,
+       40
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n6",
+      "to": [
+       72,
+       33
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       56,
+       54
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n7",
+      "to": [
+       72,
+       50
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 33.3,
+    "y1": 58.6,
+    "x2": 66.7,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 80,
+    "y1": 5,
+    "x2": 80,
+    "y2": 55,
+    "text": "27 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Gleichstand, also eins gegen eins.",
+   "title": "Entscheidung im Duell",
+   "text": "Steht es nach drei Minuten unentschieden, entscheidet ein schnelles eins gegen eins. Ein Münzwurf bestimmt, wer anfängt. Wer trifft, bleibt in der Zone. Fällt kein Tor, verliert das Paar, das schon vorher in dieser Zone war.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 38,
+      "y": 11,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 28,
+      "y": 8,
+      "label": "3"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 55,
+      "y": 11,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 72,
+      "y": 8,
+      "label": "9"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 38,
+      "y": 27.7,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 46.5,
+      "y": 32.2,
+      "label": "5"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 55,
+      "y": 27.7,
+      "label": "10"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 63.5,
+      "y": 32.2,
+      "label": "11"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 38,
+      "y": 44.4,
+      "label": "6"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 46.5,
+      "y": 48.9,
+      "label": "7"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 55,
+      "y": 44.4,
+      "label": "12"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 63.5,
+      "y": 48.9,
+      "label": "13"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 24,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 38.6,
+      "y": 11.6
+     },
+     {
+      "id": "b2",
+      "x": 55.6,
+      "y": 28.3
+     },
+     {
+      "id": "b3",
+      "x": 38.6,
+      "y": 45
+     },
+     {
+      "id": "s1",
+      "x": 25.6,
+      "y": 33.6
+     },
+     {
+      "id": "s2",
+      "x": 22,
+      "y": 34
+     }
+    ],
+    "steps": [
+     {
+      "label": "Eins gegen eins",
+      "say": "Oben steht es unentschieden. Neon zwei hat den Münzwurf gewonnen und dribbelt los, Rot acht kommt ihm entgegen.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         47,
+         12
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "r8",
+        "to": [
+         51,
+         15
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       }
+      ]
+     },
+     {
+      "label": "Wer trifft, bleibt: Punkt",
+      "say": "Neon zwei geht an Rot acht vorbei und trifft, und das gibt einen Punkt für Team Neon. Damit bleibt sein Paar in der ersten Liga, und Rot acht und Rot neun steigen ab.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         56,
+         9.5
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         67,
+         13.3
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Ausspielen und Überzahl schaffen.",
+   "title": "Zwei gegen eins schaffen",
+   "text": "Wer seinen Gegenspieler im Dribbling ausspielt, macht aus dem zwei gegen zwei ein zwei gegen eins. Dann muss der zweite Verteidiger heraus, und der Mitspieler wird frei. Jetzt schnell abspielen, bevor der Erste wieder da ist.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 38,
+      "y": 11,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 46.5,
+      "y": 15.5,
+      "label": "3"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 55,
+      "y": 11,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 63.5,
+      "y": 15.5,
+      "label": "9"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 38,
+      "y": 27.7,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 46.5,
+      "y": 32.2,
+      "label": "5"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 55,
+      "y": 27.7,
+      "label": "10"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 63.5,
+      "y": 32.2,
+      "label": "11"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 38,
+      "y": 44.4,
+      "label": "6"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 46.5,
+      "y": 48.9,
+      "label": "7"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 55,
+      "y": 44.4,
+      "label": "12"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 63.5,
+      "y": 48.9,
+      "label": "13"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 24,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 38.6,
+      "y": 11.6
+     },
+     {
+      "id": "b2",
+      "x": 38.6,
+      "y": 28.3
+     },
+     {
+      "id": "b3",
+      "x": 38.6,
+      "y": 45
+     },
+     {
+      "id": "s1",
+      "x": 25.6,
+      "y": 33.6
+     },
+     {
+      "id": "s2",
+      "x": 22,
+      "y": 34
+     }
+    ],
+    "steps": [
+     {
+      "label": "Den Ersten ausspielen",
+      "say": "In der mittleren Zone dribbelt Neon vier auf Rot zehn zu, täuscht an und geht an ihm vorbei.",
+      "moves": [
+       {
+        "who": "r10",
+        "to": [
+         51,
+         28.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n4",
+        "to": [
+         47,
+         25
+        ],
+        "type": "dribbling",
+        "delay": 0.1,
+        "ball": "b2"
+       },
+       {
+        "who": "n4",
+        "to": [
+         55,
+         23.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b2"
+       }
+      ]
+     },
+     {
+      "label": "Zwei gegen eins: Punkt",
+      "say": "Jetzt muss Rot elf heraus. Neon vier spielt sofort quer zu Neon fünf, der frei ist und ins rechte Minitor trifft, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "r11",
+        "to": [
+         59,
+         26
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n5",
+        "to": [
+         56,
+         33
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       },
+       {
+        "who": "b2",
+        "to": [
+         56.6,
+         33.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b2",
+        "to": [
+         67,
+         30
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,818 @@
+{
+ "title": "2 gegen 2 und Sprints",
+ "code": "UE-134",
+ "kind": "Spielform",
+ "focuses": [
+  "Zusammenspiel",
+  "Schnelligkeit",
+  "Torschuss"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 12,
+ "players_max": 12,
+ "field_size": "27 x 36 m",
+ "description": "Das Feld ist in zwei Zonen geteilt, die gleichzeitig laufen. Links wird zwei gegen zwei auf zwei Minitore gespielt: Der Trainer spielt einem Paar den Ball zu, das kombiniert, an den Verteidigern vorbei und schließt ab. Dann sind die nächsten vier dran. Rechts sprinten zwei Spieler zu den Stangen, tippen sie an, sprinten zurück und klatschen die nächsten zwei ab. Nach sechzig Sekunden wechseln vier Spieler die Zone.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 27 mal 36 Metern, längs in zwei Zonen geteilt. In Zone eins links steht oben und unten ein Minitor, in Zone zwei rechts stehen oben außerhalb des Feldes zwei Stangen.",
+  "Verteilen: Zwölf Spieler in zwei Teams. In Zone eins warten vier Neon unten und vier Rot oben, in Zone zwei vier Sprinter unten. Der Trainer steht links mit den Bällen.",
+  "Ablauf Zone eins: Der Trainer spielt einem Paar den Ball, das greift das Tor des anderen Paars an. Ist der Angriff vorbei, gehen die vier raus, und die nächsten vier spielen. Ablauf Zone zwei: Zwei sprinten zu den Stangen und zurück und klatschen die nächsten zwei ab.",
+  "Wechsel: Nach sechzig Sekunden, je nach Alter auch etwas mehr, wechseln vier Spieler die Zone. Jedes Tor ist ein Punkt für das Team."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Im zwei gegen zwei mit Tempo angreifen, wie im Spiel",
+  "Mit schnellen Kombinationen hinter die Abwehr kommen",
+  "Genau abschließen",
+  "Beim Sprint schnell starten, nach dem Abklatschen bewusst erholen"
+ ],
+ "materials": [
+  "2 Minitore",
+  "2 Stangen",
+  "Hütchen für das Feld",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Zwei gegen zwei und Sprints. Links wird zwei gegen zwei gespielt, rechts wird gesprintet, und beide Zonen laufen gleichzeitig.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 34,
+    "y": 9,
+    "w": 32,
+    "h": 42
+   },
+   {
+    "type": "line",
+    "x1": 50,
+    "y1": 9,
+    "x2": 50,
+    "y2": 51,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 42,
+    "y": 9,
+    "side": "top"
+   },
+   {
+    "x": 42,
+    "y": 51,
+    "side": "bottom"
+   }
+  ],
+  "cones": [
+   {
+    "x": 56,
+    "y": 3,
+    "color": "neon",
+    "shape": "stange"
+   },
+   {
+    "x": 64.5,
+    "y": 3,
+    "color": "neon",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 36.5,
+    "y": 55,
+    "label": "2"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 47.5,
+    "y": 55,
+    "label": "5"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 26,
+    "y": 54,
+    "label": "4"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 26,
+    "y": 38,
+    "label": "3"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 56,
+    "y": 55,
+    "label": "6"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 64.5,
+    "y": 55,
+    "label": "7"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 36.5,
+    "y": 5,
+    "label": "8"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 47.5,
+    "y": 5,
+    "label": "11"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 26,
+    "y": 5,
+    "label": "9"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 26,
+    "y": 22,
+    "label": "10"
+   },
+   {
+    "id": "r12",
+    "team": "b",
+    "x": 73,
+    "y": 55,
+    "label": "12"
+   },
+   {
+    "id": "r13",
+    "team": "b",
+    "x": 81.5,
+    "y": 55,
+    "label": "13"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 16,
+    "y": 30,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 17.6,
+    "y": 30.6
+   },
+   {
+    "id": "s1",
+    "x": 14,
+    "y": 34
+   },
+   {
+    "id": "s2",
+    "x": 14,
+    "y": 26
+   }
+  ],
+  "steps": [
+   {
+    "label": "Ball ins Spiel, Sprinter los",
+    "say": "Der Trainer spielt Neon fünf den Ball zu, und alle vier laufen ins Feld: Neon greift oben an, Rot verteidigt. Gleichzeitig sprinten rechts Neon sechs und Neon sieben zu den Stangen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       44.6,
+       36.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n5",
+      "to": [
+       44,
+       35.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n2",
+      "to": [
+       36,
+       40
+      ],
+      "type": "lauf",
+      "delay": 0.1
+     },
+     {
+      "who": "r8",
+      "to": [
+       37,
+       22
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r11",
+      "to": [
+       46.5,
+       21
+      ],
+      "type": "lauf",
+      "delay": 0.1
+     },
+     {
+      "who": "n6",
+      "to": [
+       56,
+       6
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n7",
+      "to": [
+       64.5,
+       6
+      ],
+      "type": "lauf",
+      "delay": 0.1
+     }
+    ]
+   },
+   {
+    "label": "Kombinieren, durchstecken",
+    "say": "Neon fünf spielt zu Neon zwei und läuft sofort los, hinter die Abwehr. Neon zwei steckt den Ball durch. Rechts sprinten die beiden zurück und klatschen Rot zwölf und Rot dreizehn ab.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       36.6,
+       40.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n5",
+      "to": [
+       41.5,
+       30
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n5",
+      "to": [
+       40.5,
+       16.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       41.1,
+       17.1
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n6",
+      "to": [
+       54.5,
+       52
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n7",
+      "to": [
+       63,
+       52
+      ],
+      "type": "lauf",
+      "delay": 0.1
+     },
+     {
+      "who": "r12",
+      "to": [
+       57.5,
+       50
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r13",
+      "to": [
+       65.5,
+       50
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Abschluss: Punkt",
+    "say": "Neon fünf schließt direkt ab und trifft ins obere Minitor, und das gibt einen Punkt für Team Neon. Rechts laufen jetzt Rot zwölf und Rot dreizehn.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       42,
+       8.7
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r12",
+      "to": [
+       57.5,
+       8
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "r13",
+      "to": [
+       65.5,
+       8
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Die nächsten vier",
+    "say": "Der Angriff ist vorbei, die vier gehen raus, und Neon drei, Neon vier, Rot neun und Rot zehn sind dran. Nach sechzig Sekunden wechseln vier Spieler die Zone.",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       36,
+       49
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n3",
+      "to": [
+       30,
+       45
+      ],
+      "type": "lauf",
+      "delay": 0.1
+     },
+     {
+      "who": "r9",
+      "to": [
+       36,
+       11
+      ],
+      "type": "lauf",
+      "delay": 0.1
+     },
+     {
+      "who": "r10",
+      "to": [
+       30,
+       15
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 34,
+    "y1": 58.6,
+    "x2": 66,
+    "y2": 58.6,
+    "text": "27 m"
+   },
+   {
+    "x1": 92,
+    "y1": 9,
+    "x2": 92,
+    "y2": 51,
+    "text": "36 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Schnell hinter die Abwehr.",
+   "title": "Doppelpass in die Tiefe",
+   "text": "Im zwei gegen zwei ist ein schneller Doppelpass der kürzeste Weg zum Tor. Abspielen und sofort starten, hinter den Verteidiger. Der Rückpass kommt mit dem richtigen Tempo in den Lauf, so ist der Angreifer frei vor dem Tor.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 34.5,
+      "y": 42,
+      "label": "2"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 44,
+      "y": 38,
+      "label": "5"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 26,
+      "y": 54,
+      "label": "4"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 26,
+      "y": 38,
+      "label": "3"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 56,
+      "y": 55,
+      "label": "6"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 64.5,
+      "y": 55,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 34.5,
+      "y": 26,
+      "label": "8"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 47,
+      "y": 22,
+      "label": "11"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 26,
+      "y": 5,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 26,
+      "y": 22,
+      "label": "10"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 73,
+      "y": 55,
+      "label": "12"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 81.5,
+      "y": 55,
+      "label": "13"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 16,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 44.6,
+      "y": 38.6
+     },
+     {
+      "id": "s1",
+      "x": 14,
+      "y": 34
+     },
+     {
+      "id": "s2",
+      "x": 14,
+      "y": 26
+     }
+    ],
+    "steps": [
+     {
+      "label": "Abspielen und starten",
+      "say": "Neon fünf spielt zu Neon zwei und startet im selben Moment an Rot elf vorbei in die Tiefe.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         35.1,
+         42.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n5",
+        "to": [
+         41,
+         30
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       },
+       {
+        "who": "n5",
+        "to": [
+         40,
+         16
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Rückpass in den Lauf: Punkt",
+      "say": "Neon zwei spielt den Ball genau in den Lauf, Neon fünf ist frei und trifft ins Minitor, und das gibt einen Punkt für Team Neon. Dann sind die nächsten vier dran.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         40.6,
+         16.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         42,
+         8.7
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Schnell starten, gleichmäßig sprinten.",
+   "title": "Die Sprintzone",
+   "text": "In der Sprintzone zählt jeder Start: sofort losspurten, die Stange antippen, mit gleichem Tempo zurück. Nach dem Abklatschen bewusst durchatmen und erholen, denn der nächste Sprint kommt schnell.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 36.5,
+      "y": 55,
+      "label": "2"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 47.5,
+      "y": 55,
+      "label": "5"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 26,
+      "y": 54,
+      "label": "4"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 26,
+      "y": 38,
+      "label": "3"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 56,
+      "y": 55,
+      "label": "6"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 64.5,
+      "y": 55,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 36.5,
+      "y": 5,
+      "label": "8"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 47.5,
+      "y": 5,
+      "label": "11"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 26,
+      "y": 5,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 26,
+      "y": 22,
+      "label": "10"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 73,
+      "y": 55,
+      "label": "12"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 81.5,
+      "y": 55,
+      "label": "13"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 16,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 17.6,
+      "y": 30.6
+     },
+     {
+      "id": "s1",
+      "x": 14,
+      "y": 34
+     },
+     {
+      "id": "s2",
+      "x": 14,
+      "y": 26
+     }
+    ],
+    "steps": [
+     {
+      "label": "Hin zur Stange",
+      "say": "Neon sechs und Neon sieben spurten gleichzeitig los und tippen oben die Stangen an.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         56,
+         6
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n7",
+        "to": [
+         64.5,
+         6
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       }
+      ]
+     },
+     {
+      "label": "Zurück und abklatschen",
+      "say": "Mit dem gleichen Tempo geht es zurück. Sie klatschen Rot zwölf und Rot dreizehn ab, die sofort losspurten, und erholen sich dann kurz.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         54.5,
+         52
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n7",
+        "to": [
+         63,
+         52
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       },
+       {
+        "who": "r12",
+        "to": [
+         57.5,
+         50
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r12",
+        "to": [
+         57.5,
+         8
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r13",
+        "to": [
+         65.5,
+         50
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r13",
+        "to": [
+         65.5,
+         8
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

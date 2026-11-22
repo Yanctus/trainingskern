@@ -55,6 +55,9 @@ Alle neuen Einheiten: access frei, sichtbar, Regeln 0 Hinweise, Vergleich 0 Abwe
 | UE-130 | Pass, Leiter, Abschluss | PS-117 Pass, SAQ and Finish (U12-U14, Woche 2) | https://trainingskern.de/einheiten/6b032202887090523c3d1dc2 | Nach der PDF-Skizze, Jugendtor. Sichtkegel zum Torwart vor dem Abschluss (wie im Video). Leitern als Minihürden, Dummys als Stangen. Pink 9/8 -> Rot 2/3. Ein Trainer. |
 | UE-131 | Parcours-Wettlauf ins Spiel | PS-92 SAQ Races and Small Sided Games (U12-U14, Woche 2) | https://trainingskern.de/einheiten/6b0322a5586696cd5c33b82e | Wartende über und unter dem Feld. Neon spielt aufs obere, Rot aufs untere Minitor (im Original nicht eindeutig). Kein Sichtkegel im Original. |
 | UE-132 | Kombinieren im Parcours | PS-98 Technical Combinations & Agility Circuit (U12-U14, Woche 2) | https://trainingskern.de/einheiten/6b032353ef8452b3ba6b396a | Gezeigt wird der rechte Kreislauf bis zum Pass nach links, einige Positionen leicht verschoben (3D-Abstand). Ein Trainer statt zwei. Kein Sichtkegel im Original. |
+| UE-133 | Fangen nur auf den Linien | PS-105 Physical with Fun - Tag Game (U12-U14, Woche 3) | https://trainingskern.de/einheiten/6b03244ce2add5987e43f042 | Sichtkegel wie im Video: Läufer schaut zu den Fängern. Blau 6 -> Rot 3. Ein Trainer statt zwei. Steigerung mit zwölf Hütchen als sichere Inseln. |
+| UE-134 | 2 gegen 2 und Sprints | PS-53 2 v 2s and Sprinting (U12-U14, Woche 3) | https://trainingskern.de/einheiten/6b0324fa19e562a7a98c3989 | Rot neu nummeriert (8-13). Wartende seitlich. Ein Trainer statt zwei. Kein Sichtkegel im Original. |
+| UE-135 | 2 gegen 2 mit Auf- und Abstieg | PS-79 Develop Fitness with 2 v 2 Games (U12-U14, Woche 3) | https://trainingskern.de/einheiten/6b032590e8256618ac751c2e | Sechs Paare in eigenen Farben -> je Zone Neon gegen Rot. Ein Trainer statt zwei. Kein Sichtkegel im Original. |
 
 ## Nachträge
 
