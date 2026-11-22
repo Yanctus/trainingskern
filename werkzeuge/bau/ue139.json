@@ -1,0 +1,988 @@
+{
+ "title": "Direktpass und Koordination",
+ "code": "UE-139",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Koordination",
+  "Kondition"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 12,
+ "players_max": 12,
+ "field_size": "18 x 27 m",
+ "description": "Vier Gruppen zu dritt stehen sich oben und unten gegenüber, zwischen ihnen stehen zwei Hütchen. Die Vordersten spielen sich den Ball mit einem Kontakt zu, durch die Lücke zwischen den Hütchen und außen an den Hütchen vorbei. Dann lassen sie den Ball liegen und laufen durch Leiter oder Hürden zur nächsten Gruppe. Unten läuft das Gleiche gespiegelt. Nach einem kompletten Durchgang laufen alle eine Runde ums Feld.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 27 Metern, längs geteilt. Oben und unten stehen auf der Mittellinie je zwei Hütchen als Passtor. In der Mitte des Feldes liegen links eine Leiter und Minihürden, rechts genauso.",
+  "Verteilen: Zwölf Spieler in vier Gruppen zu dritt, je eine Gruppe oben links, oben rechts, unten links und unten rechts. Oben und unten hat ein Vorderster einen Ball. Der Trainer steht am Rand mit Ersatzbällen.",
+  "Ablauf: Die Vordersten spielen Direktpässe durch die Lücke, dann über das obere und unter dem unteren Hütchen. Danach lassen sie den Ball liegen und laufen durch Hürden oder Leiter zur Gruppe gegenüber. Alle Gruppen arbeiten gleichzeitig.",
+  "Runde und Pause: Ist jeder wieder an seiner Startposition, ruft der Trainer: Alle laufen eine Runde ums Feld und gehen zurück zu den Stationen. Nach einer kurzen Pause geht es wieder los."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Direktpässe genau spielen",
+  "Mit beiden Füßen passen, je nach Seite des Hütchens",
+  "Saubere Technik in Leiter und Hürden, schnelle Füße",
+  "Beim Warten bewusst erholen, bei der Runde ums Feld Tempo machen"
+ ],
+ "materials": [
+  "4 Hütchen",
+  "2 Koordinationsleitern",
+  "6 Minihürden",
+  "Mehrere Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Direktpass und Koordination. Erst Pässe mit einem Kontakt durch und um die Hütchen, dann durch Leiter und Hürden zur nächsten Gruppe.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 33.3,
+    "y": 5,
+    "w": 33.4,
+    "h": 50
+   },
+   {
+    "type": "line",
+    "x1": 50,
+    "y1": 5,
+    "x2": 50,
+    "y2": 55,
+    "dashed": true
+   }
+  ],
+  "cones": [
+   {
+    "x": 50.2,
+    "y": 13,
+    "color": "orange"
+   },
+   {
+    "x": 50.2,
+    "y": 18.6,
+    "color": "orange"
+   },
+   {
+    "x": 50.2,
+    "y": 43.6,
+    "color": "orange"
+   },
+   {
+    "x": 50.2,
+    "y": 48.9,
+    "color": "orange"
+   },
+   {
+    "x": 38.9,
+    "y": 27,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 38.9,
+    "y": 30,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 38.9,
+    "y": 33,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 45.1,
+    "y": 27.2,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 45.1,
+    "y": 30,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 45.1,
+    "y": 32.9,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 56.7,
+    "y": 27,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 56.7,
+    "y": 30,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 56.7,
+    "y": 33,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 61.7,
+    "y": 27.2,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 61.7,
+    "y": 30,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 61.7,
+    "y": 32.9,
+    "color": "orange",
+    "shape": "huerde_ou"
+   }
+  ],
+  "players": [
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 45.5,
+    "y": 15.7,
+    "label": "5"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 37.3,
+    "y": 15.7,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 29,
+    "y": 15.7,
+    "label": "3"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 54.5,
+    "y": 15.7,
+    "label": "9"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 62.7,
+    "y": 15.7,
+    "label": "10"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 71,
+    "y": 15.7,
+    "label": "11"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 45.5,
+    "y": 45.7,
+    "label": "6"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 37.3,
+    "y": 45.7,
+    "label": "8"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 29,
+    "y": 45.7,
+    "label": "7"
+   },
+   {
+    "id": "r12",
+    "team": "b",
+    "x": 54.5,
+    "y": 45.7,
+    "label": "12"
+   },
+   {
+    "id": "r13",
+    "team": "b",
+    "x": 62.7,
+    "y": 45.7,
+    "label": "13"
+   },
+   {
+    "id": "r14",
+    "team": "b",
+    "x": 71,
+    "y": 45.7,
+    "label": "14"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 80,
+    "y": 30,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b9",
+    "x": 55.1,
+    "y": 16.3
+   },
+   {
+    "id": "b6",
+    "x": 46.1,
+    "y": 46.3
+   },
+   {
+    "id": "s1",
+    "x": 81.6,
+    "y": 33.5
+   },
+   {
+    "id": "s2",
+    "x": 83.5,
+    "y": 28
+   }
+  ],
+  "steps": [
+   {
+    "label": "Direktpässe durch die Lücke",
+    "say": "Oben und unten spielen sich die Vordersten gleichzeitig den Ball mit einem Kontakt zu, durch die Lücke zwischen den Hütchen.",
+    "moves": [
+     {
+      "who": "b9",
+      "to": [
+       46.1,
+       16.3
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b9",
+      "to": [
+       55.1,
+       16.3
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b6",
+      "to": [
+       55.1,
+       46.3
+      ],
+      "type": "pass",
+      "delay": 0.1
+     },
+     {
+      "who": "b6",
+      "to": [
+       46.1,
+       46.3
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Außen an den Hütchen vorbei",
+    "say": "Dann gehen sie einen Schritt zur Seite und passen über das obere Hütchen und unter dem unteren Hütchen hindurch, mal mit rechts, mal mit links.",
+    "moves": [
+     {
+      "who": "n5",
+      "to": [
+       45.5,
+       9.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r9",
+      "to": [
+       54.5,
+       9.5
+      ],
+      "type": "dribbling",
+      "ball": "b9"
+     },
+     {
+      "who": "b9",
+      "to": [
+       46.1,
+       10.1
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n5",
+      "to": [
+       45.5,
+       22
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b9"
+     },
+     {
+      "who": "r9",
+      "to": [
+       54.5,
+       22
+      ],
+      "type": "lauf",
+      "delay": 0.8
+     },
+     {
+      "who": "b9",
+      "to": [
+       55.1,
+       22.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r12",
+      "to": [
+       54.5,
+       40.5
+      ],
+      "type": "lauf",
+      "delay": 0.1
+     },
+     {
+      "who": "n6",
+      "to": [
+       45.5,
+       40.5
+      ],
+      "type": "dribbling",
+      "delay": 0.1,
+      "ball": "b6"
+     },
+     {
+      "who": "b6",
+      "to": [
+       55.1,
+       41.1
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r12",
+      "to": [
+       54.5,
+       52
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b6"
+     },
+     {
+      "who": "n6",
+      "to": [
+       45.5,
+       52
+      ],
+      "type": "lauf",
+      "delay": 0.9
+     },
+     {
+      "who": "b6",
+      "to": [
+       46.1,
+       52.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Durch Hürden und Leiter",
+    "say": "Jetzt lassen alle vier den Ball liegen. Die Oberen laufen über die Hürden nach unten, die Unteren durch die Leiter nach oben, und jeder stellt sich hinten bei der Gruppe gegenüber an.",
+    "moves": [
+     {
+      "who": "n5",
+      "to": [
+       45.1,
+       25
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n5",
+      "to": [
+       45.1,
+       36
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n5",
+      "to": [
+       20.5,
+       45.7
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r9",
+      "to": [
+       61.7,
+       25
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r9",
+      "to": [
+       61.7,
+       36
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r9",
+      "to": [
+       79.5,
+       45.7
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n6",
+      "to": [
+       38.9,
+       37
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     },
+     {
+      "who": "n6",
+      "to": [
+       38.9,
+       24
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n6",
+      "to": [
+       20.5,
+       15.7
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r12",
+      "to": [
+       56.7,
+       37
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     },
+     {
+      "who": "r12",
+      "to": [
+       56.7,
+       24
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r12",
+      "to": [
+       79.5,
+       15.7
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Die Nächsten",
+    "say": "Die Nächsten rücken nach vorn und beginnen sofort. Ist jeder wieder an seiner Startposition, laufen alle eine Runde ums Feld, dann gibt es eine kurze Pause.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       45.5,
+       15.7
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r10",
+      "to": [
+       54.5,
+       15.7
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n8",
+      "to": [
+       45.5,
+       45.7
+      ],
+      "type": "lauf",
+      "delay": 0.1
+     },
+     {
+      "who": "r13",
+      "to": [
+       54.5,
+       45.7
+      ],
+      "type": "lauf",
+      "delay": 0.1
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 33.3,
+    "y1": 58.6,
+    "x2": 66.7,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 90,
+    "y1": 5,
+    "x2": 90,
+    "y2": 55,
+    "text": "27 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Mit beiden Füßen passen.",
+   "title": "Beide Füße",
+   "text": "Geht der Pass links am Hütchen vorbei, spielt man mit dem linken Fuß, geht er rechts vorbei, mit dem rechten. So muss sich niemand verrenken, der Ball kommt genau und mit einem Kontakt zurück.",
+   "board": {
+    "players": [
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 45.5,
+      "y": 15.7,
+      "label": "5"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 37.3,
+      "y": 15.7,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 29,
+      "y": 15.7,
+      "label": "3"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 54.5,
+      "y": 15.7,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 62.7,
+      "y": 15.7,
+      "label": "10"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 71,
+      "y": 15.7,
+      "label": "11"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 45.5,
+      "y": 45.7,
+      "label": "6"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 37.3,
+      "y": 45.7,
+      "label": "8"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 29,
+      "y": 45.7,
+      "label": "7"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 54.5,
+      "y": 45.7,
+      "label": "12"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 62.7,
+      "y": 45.7,
+      "label": "13"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 71,
+      "y": 45.7,
+      "label": "14"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 80,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b9",
+      "x": 55.1,
+      "y": 16.3
+     },
+     {
+      "id": "b6",
+      "x": 46.1,
+      "y": 46.3
+     },
+     {
+      "id": "s1",
+      "x": 81.6,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 83.5,
+      "y": 28
+     }
+    ],
+    "steps": [
+     {
+      "label": "Über das Hütchen",
+      "say": "Neon fünf und Rot neun gehen einen Schritt nach oben und passen über das obere Hütchen, jeder mit dem Fuß, der näher an der Linie ist.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         45.5,
+         9.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r9",
+        "to": [
+         54.5,
+         9.5
+        ],
+        "type": "dribbling",
+        "ball": "b9"
+       },
+       {
+        "who": "b9",
+        "to": [
+         46.1,
+         10.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Unter dem Hütchen",
+      "say": "Dann geht es unter dem unteren Hütchen hindurch, jetzt mit dem anderen Fuß. Danach lassen beide den Ball liegen und laufen zur Koordination.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         45.5,
+         22
+        ],
+        "type": "dribbling",
+        "ball": "b9"
+       },
+       {
+        "who": "r9",
+        "to": [
+         54.5,
+         22
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "b9",
+        "to": [
+         55.1,
+         22.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Saubere Technik, schnelle Füße.",
+   "title": "Schnelle Füße",
+   "text": "In Leiter und Hürden zählt saubere Technik vor Tempo: kurze Schritte, auf den Fußballen, Arme mitnehmen, nichts umstoßen. Erst wenn das sitzt, wird es schneller.",
+   "board": {
+    "players": [
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 45.5,
+      "y": 15.7,
+      "label": "5"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 37.3,
+      "y": 15.7,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 29,
+      "y": 15.7,
+      "label": "3"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 54.5,
+      "y": 15.7,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 62.7,
+      "y": 15.7,
+      "label": "10"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 71,
+      "y": 15.7,
+      "label": "11"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 45.5,
+      "y": 45.7,
+      "label": "6"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 37.3,
+      "y": 45.7,
+      "label": "8"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 29,
+      "y": 45.7,
+      "label": "7"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 54.5,
+      "y": 45.7,
+      "label": "12"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 62.7,
+      "y": 45.7,
+      "label": "13"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 71,
+      "y": 45.7,
+      "label": "14"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 80,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b9",
+      "x": 55.1,
+      "y": 16.3
+     },
+     {
+      "id": "b6",
+      "x": 46.1,
+      "y": 46.3
+     },
+     {
+      "id": "s1",
+      "x": 81.6,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 83.5,
+      "y": 28
+     }
+    ],
+    "steps": [
+     {
+      "label": "Über die Hürden",
+      "say": "Neon fünf läuft mit kurzen, schnellen Schritten über die Hürden nach unten und stellt sich bei der Gruppe gegenüber an.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         45.1,
+         25
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n5",
+        "to": [
+         45.1,
+         36
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n5",
+        "to": [
+         20.5,
+         45.7
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Durch die Leiter",
+      "say": "Danach läuft Neon sechs mit schnellen Füßen durch die Leiter nach oben und stellt sich oben hinten an.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         38.9,
+         37
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n6",
+        "to": [
+         38.9,
+         24
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n6",
+        "to": [
+         20.5,
+         15.7
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

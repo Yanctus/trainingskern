@@ -1,0 +1,687 @@
+{
+ "title": "Pendelsprints und Flanke",
+ "code": "UE-141",
+ "kind": "Übungsform",
+ "focuses": [
+  "Schnelligkeit",
+  "Torschuss",
+  "Zusammenspiel"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 8,
+ "players_max": 12,
+ "field_size": "Halbes Spielfeld",
+ "description": "Zwei Teams zu viert wechseln sich ab. Ein Team macht zuerst Pendelsprints an einer Reihe Hütchen. Danach sprintet ein Spieler auf den Flügel und bekommt vom Trainer den Ball, die anderen drei laufen in den Strafraum, mit Kreuzungsläufen. Der Flügelspieler schaut auf und flankt, und die drei schließen ab. Danach joggen alle zurück, und das andere Team startet.",
+ "organisation": [
+  "Aufbauen: Eine halbe Platzhälfte mit Tor und Torwart. Vor dem Strafraum stehen vier Hütchen in einer Reihe für die Pendelsprints.",
+  "Verteilen: Zwei Teams zu viert stehen unten links und rechts neben den Hütchen. Der Trainer steht links an der Seitenlinie mit Bällen.",
+  "Ablauf: Team Neon macht Pendelsprints zwischen den Hütchen. Dann sprintet einer auf den Flügel und bekommt den Ball vom Trainer, die anderen drei laufen in den Strafraum. Flanke, Abschluss.",
+  "Wechsel: Nach dem Angriff joggen alle locker zurück, das startet das andere Team. Jedes Tor ist ein Punkt. Nach einigen Runden gibt es eine Pause."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Jeden Sprint mit vollem Tempo",
+  "Vor der Flanke den Kopf heben und die Läufe im Strafraum sehen",
+  "Im Strafraum gute Läufe machen, zum Beispiel über Kreuz",
+  "Eiskalt abschließen und auf Abpraller lauern"
+ ],
+ "materials": [
+  "4 Hütchen",
+  "1 Jugendtor",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Pendelsprints und Flanke. Erst Sprints an den Hütchen, dann sofort ein Angriff mit Flanke und Abschluss.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 20,
+    "y": 5,
+    "w": 60,
+    "h": 52
+   },
+   {
+    "type": "rect",
+    "x": 26.4,
+    "y": 5,
+    "w": 47.1,
+    "h": 17.7
+   },
+   {
+    "type": "rect",
+    "x": 38.1,
+    "y": 5,
+    "w": 24.1,
+    "h": 7.3
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "jugend"
+   }
+  ],
+  "cones": [
+   {
+    "x": 49.7,
+    "y": 32.4,
+    "color": "orange"
+   },
+   {
+    "x": 49.7,
+    "y": 38.5,
+    "color": "orange"
+   },
+   {
+    "x": 49.7,
+    "y": 44.5,
+    "color": "orange"
+   },
+   {
+    "x": 49.7,
+    "y": 51.1,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 45,
+    "y": 51.3,
+    "label": "9"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 36.5,
+    "y": 51.3,
+    "label": "11"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 28,
+    "y": 51.3,
+    "label": "7"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 19.5,
+    "y": 51.3,
+    "label": "8"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 54.5,
+    "y": 51.3,
+    "label": "6"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 63,
+    "y": 51.3,
+    "label": "5"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 71.5,
+    "y": 51.3,
+    "label": "3"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 80,
+    "y": 51.3,
+    "label": "2"
+   },
+   {
+    "id": "k",
+    "team": "t",
+    "x": 51.2,
+    "y": 7.3,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 12,
+    "y": 33.8,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 13.6,
+    "y": 34.4
+   },
+   {
+    "id": "s1",
+    "x": 10,
+    "y": 37.5
+   },
+   {
+    "id": "s2",
+    "x": 8.5,
+    "y": 31
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pendelsprints",
+    "say": "Alle vier von Team Neon sprinten gleichzeitig nach vorn und wieder zurück, so schnell sie können.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       45,
+       40
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n9",
+      "to": [
+       45,
+       49
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n11",
+      "to": [
+       36.5,
+       40
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n11",
+      "to": [
+       36.5,
+       49
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       28,
+       40
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n7",
+      "to": [
+       28,
+       49
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       19.5,
+       40
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n8",
+      "to": [
+       19.5,
+       49
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Auf den Flügel, rein in den Strafraum",
+    "say": "Dann sprintet Neon acht auf den Flügel, und der Trainer spielt ihm den Ball. Die anderen drei laufen in den Strafraum, Neon neun und Neon elf kreuzen dabei.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       24.1,
+       24
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       24.7,
+       24.6
+      ],
+      "type": "pass",
+      "delay": 0.2
+     },
+     {
+      "who": "n7",
+      "to": [
+       35,
+       19.5
+      ],
+      "type": "lauf",
+      "delay": 0.1
+     },
+     {
+      "who": "n11",
+      "to": [
+       47,
+       13.5
+      ],
+      "type": "lauf",
+      "delay": 0.1
+     },
+     {
+      "who": "n9",
+      "to": [
+       42,
+       20
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Kopf hoch, Flanke",
+    "say": "Neon acht dribbelt ein Stück nach vorn, hebt den Kopf, sieht Neon elf am langen Pfosten frei und flankt.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       23.1,
+       11.9
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n8",
+      "to": [
+       47,
+       13.5
+      ],
+      "type": "blick",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       47.6,
+       14.1
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Abschluss: Punkt",
+    "say": "Neon elf schließt direkt ab und trifft, und das gibt einen Punkt für Team Neon. Dann joggen alle zurück, und Team Rot startet.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       46,
+       4.7
+      ],
+      "type": "pass"
+     }
+    ]
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Kopf hoch vor der Flanke.",
+   "title": "Erst schauen, dann flanken",
+   "text": "Wer blind flankt, trifft meistens nur den Torwart oder niemanden. Der Flügelspieler hebt vorher den Kopf und schaut, wer frei ist: kurzer Pfosten, Elfmeterpunkt oder langer Pfosten. Dann flankt er genau dorthin.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 43,
+      "y": 21,
+      "label": "9"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 60,
+      "y": 17,
+      "label": "11"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 33,
+      "y": 17,
+      "label": "7"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 23,
+      "y": 12,
+      "label": "8"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 54.5,
+      "y": 51.3,
+      "label": "6"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 63,
+      "y": 51.3,
+      "label": "5"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 71.5,
+      "y": 51.3,
+      "label": "3"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 80,
+      "y": 51.3,
+      "label": "2"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 51.2,
+      "y": 7.3,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 12,
+      "y": 33.8,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 23.6,
+      "y": 12.6
+     },
+     {
+      "id": "s1",
+      "x": 10,
+      "y": 37.5
+     },
+     {
+      "id": "s2",
+      "x": 8.5,
+      "y": 31
+     }
+    ],
+    "steps": [
+     {
+      "label": "Kopf hoch",
+      "say": "Neon acht hebt den Kopf und schaut in den Strafraum: Neon neun am Elfmeterpunkt ist gedeckt, Neon elf am langen Pfosten ist frei.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         43,
+         21
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "n8",
+        "to": [
+         60,
+         17
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Zum Freien: Punkt",
+      "say": "Also flankt er an den langen Pfosten. Neon elf trifft, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         60.6,
+         17.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         54.5,
+         4.7
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Ein Verteidiger kommt dazu.",
+   "title": "Mit Verteidiger",
+   "text": "Jetzt verteidigt ein Spieler von Team Rot im Strafraum. Er folgt den Läufen und will die Flanke abfangen. Die Angreifer müssen sich mit Kreuzungsläufen von ihm lösen.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 45,
+      "y": 40,
+      "label": "9"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 36.5,
+      "y": 40,
+      "label": "11"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 28,
+      "y": 40,
+      "label": "7"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 24.1,
+      "y": 24,
+      "label": "8"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 50,
+      "y": 24,
+      "label": "6"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 63,
+      "y": 51.3,
+      "label": "5"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 71.5,
+      "y": 51.3,
+      "label": "3"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 80,
+      "y": 51.3,
+      "label": "2"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 51.2,
+      "y": 7.3,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 12,
+      "y": 33.8,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 24.7,
+      "y": 24.6
+     },
+     {
+      "id": "s1",
+      "x": 10,
+      "y": 37.5
+     },
+     {
+      "id": "s2",
+      "x": 8.5,
+      "y": 31
+     }
+    ],
+    "steps": [
+     {
+      "label": "Läufe, Verteidiger folgt",
+      "say": "Neon neun läuft zum kurzen Pfosten, und Rot sechs geht mit. Neon elf kreuzt hinter ihm zum langen Pfosten, Neon sieben bleibt hinten am Strafraumrand.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         43,
+         16
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r6",
+        "to": [
+         40,
+         14
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n11",
+        "to": [
+         58,
+         17
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       },
+       {
+        "who": "n7",
+        "to": [
+         33,
+         28
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       }
+      ]
+     },
+     {
+      "label": "Der Freie trifft: Punkt",
+      "say": "Neon acht hebt den Kopf, sieht Neon elf frei am langen Pfosten und flankt. Neon elf trifft, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         58,
+         17
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         58.6,
+         17.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         54.5,
+         4.7
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

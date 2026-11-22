@@ -1,0 +1,850 @@
+{
+ "title": "Kreislauf mit Flanke",
+ "code": "UE-140",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Torschuss",
+  "Koordination"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 10,
+ "players_max": 14,
+ "field_size": "Halbes Spielfeld",
+ "description": "Ein Kreislauf auf der halben Platzhälfte, der mit einer Flanke und einem Abschluss endet. Der Ball wandert über mehrere Stationen nach vorn, dazwischen laufen die Spieler durch Hütchen, Leiter und Hürden. Ein Doppelpass mit dem Stürmer, ein Steilpass auf den Flügelspieler, der über die Hürden kommt, dann schaut der Flügelspieler auf, flankt, und der Stürmer schließt ab.",
+ "organisation": [
+  "Aufbauen: Eine halbe Platzhälfte mit Tor und Torwart. Links oben ein Quadrat aus Hütchen, links in der Mitte eine Leiter, in der Mitte eine Reihe Hütchen im Zickzack bis vor den Strafraum, rechts außen drei Minihürden.",
+  "Verteilen: Ein Team verteilt sich auf die Stationen, links beginnt einer mit Ball. Der Trainer steht mit Ersatzbällen am Rand.",
+  "Ablauf: Pass nach vorn, der Passgeber tippt die Hütchen im Quadrat an. Pass quer in die Mitte, der Passgeber läuft durch die Leiter. Doppelpass mit dem Stürmer, der danach die Hütchen in der Mitte antippt und in den Strafraum läuft. Steilpass auf den Flügel, Flanke, Abschluss.",
+  "Wechsel: Nach jedem Durchgang rückt jeder eine Station weiter. Jedes Tor ist ein Punkt."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Genau und mit dem richtigen Tempo passen, vor allem nach außen",
+  "Saubere Technik in Leiter und Hürden, nichts umstoßen",
+  "Vor der Flanke den Kopf heben und den Lauf des Stürmers sehen",
+  "Eiskalt abschließen und mit gutem Timing in den Strafraum laufen"
+ ],
+ "materials": [
+  "12 Hütchen",
+  "1 Koordinationsleiter",
+  "3 Minihürden",
+  "1 Jugendtor",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Kreislauf mit Flanke. Pässe, Leiter, Hürden und ein Doppelpass, und am Ende eine Flanke zum Abschluss.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 12,
+    "y": 5,
+    "w": 76,
+    "h": 52
+   },
+   {
+    "type": "rect",
+    "x": 26,
+    "y": 5,
+    "w": 48.1,
+    "h": 17.6
+   },
+   {
+    "type": "rect",
+    "x": 39,
+    "y": 5,
+    "w": 22,
+    "h": 5.7
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "jugend"
+   }
+  ],
+  "cones": [
+   {
+    "x": 18.9,
+    "y": 5.3,
+    "color": "orange"
+   },
+   {
+    "x": 14.7,
+    "y": 12.3,
+    "color": "orange"
+   },
+   {
+    "x": 23.2,
+    "y": 12.3,
+    "color": "orange"
+   },
+   {
+    "x": 14.7,
+    "y": 20.6,
+    "color": "orange"
+   },
+   {
+    "x": 23.2,
+    "y": 20.6,
+    "color": "orange"
+   },
+   {
+    "x": 18.9,
+    "y": 34,
+    "color": "orange"
+   },
+   {
+    "x": 53,
+    "y": 21.3,
+    "color": "orange"
+   },
+   {
+    "x": 44.1,
+    "y": 25.5,
+    "color": "orange"
+   },
+   {
+    "x": 53,
+    "y": 30.5,
+    "color": "orange"
+   },
+   {
+    "x": 44.3,
+    "y": 34.1,
+    "color": "orange"
+   },
+   {
+    "x": 53,
+    "y": 39.9,
+    "color": "orange"
+   },
+   {
+    "x": 34.3,
+    "y": 39.5,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 34.3,
+    "y": 43,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 34.3,
+    "y": 46.5,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 84.1,
+    "y": 35,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 84.1,
+    "y": 38.6,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 84.1,
+    "y": 43.1,
+    "color": "orange",
+    "shape": "huerde_ou"
+   }
+  ],
+  "players": [
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 18.9,
+    "y": 30.8,
+    "label": "3"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 33.8,
+    "y": 33,
+    "label": "8"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 52.1,
+    "y": 43.6,
+    "label": "7"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 61,
+    "y": 56,
+    "label": "10"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 84,
+    "y": 53.7,
+    "label": "6"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 70,
+    "y": 55.5,
+    "label": "2"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 20.4,
+    "y": 6.9,
+    "label": "5"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 30,
+    "y": 3,
+    "label": "9"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 39,
+    "y": 2,
+    "label": "4"
+   },
+   {
+    "id": "k",
+    "team": "t",
+    "x": 50.9,
+    "y": 7.3,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 93,
+    "y": 31,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 19.5,
+    "y": 31.4
+   },
+   {
+    "id": "s1",
+    "x": 94.6,
+    "y": 34.5
+   },
+   {
+    "id": "s2",
+    "x": 96,
+    "y": 28
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pass, dann Hütchen antippen",
+    "say": "Neon drei passt nach vorn zu Neon acht und sprintet zum Quadrat oben links, um die Hütchen anzutippen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       34.4,
+       33.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n3",
+      "to": [
+       19.5,
+       22.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n3",
+      "to": [
+       16.5,
+       14
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n3",
+      "to": [
+       20.5,
+       9
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Quer, dann durch die Leiter",
+    "say": "Neon acht spielt quer in die Mitte zu Neon zehn und läuft durch die Leiter.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       61.6,
+       56.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n8",
+      "to": [
+       34.3,
+       37
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       34.3,
+       49
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       38,
+       52
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Doppelpass, Stürmer läuft los",
+    "say": "Neon zehn spielt einen Doppelpass mit Neon sieben. Der tippt danach im Zickzack die Hütchen an und läuft in den Strafraum. Gleichzeitig springt Neon sechs rechts über die Hürden.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       52.7,
+       44.2
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n10",
+      "to": [
+       66,
+       49.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       66.6,
+       50.1
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       51,
+       40.2
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       46.3,
+       34
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       51,
+       30.6
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       46.1,
+       25.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       51,
+       21.6
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       47,
+       13
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n6",
+      "to": [
+       84,
+       47
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     },
+     {
+      "who": "n6",
+      "to": [
+       84,
+       31
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n6",
+      "to": [
+       83,
+       25
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Steilpass auf den Flügel",
+    "say": "Neon zehn spielt den Ball steil in den Lauf von Neon sechs.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       83.6,
+       25.6
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Kopf hoch, Flanke: Punkt",
+    "say": "Neon sechs hebt den Kopf, sieht Neon sieben im Strafraum und flankt. Neon sieben schießt direkt ins Tor, und das gibt einen Punkt. Dann rückt jeder eine Station weiter, und Neon fünf beginnt den nächsten Durchgang.",
+    "moves": [
+     {
+      "who": "n6",
+      "to": [
+       47,
+       13
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b1",
+      "to": [
+       47.6,
+       13.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       46,
+       4.7
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Der Pass auf den Flügel.",
+   "title": "Der Pass nach außen",
+   "text": "Der Steilpass auf den Flügel muss so kommen, dass der Flügelspieler ihn im Lauf mit dem ersten oder zweiten Kontakt flanken kann. Zu kurz, und er muss abbremsen, zu lang, und der Ball geht ins Aus.",
+   "board": {
+    "players": [
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 18.9,
+      "y": 30.8,
+      "label": "3"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 33.8,
+      "y": 33,
+      "label": "8"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 42,
+      "y": 23,
+      "label": "7"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 61,
+      "y": 47,
+      "label": "10"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 84,
+      "y": 40,
+      "label": "6"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 70,
+      "y": 55.5,
+      "label": "2"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 20.4,
+      "y": 6.9,
+      "label": "5"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 30,
+      "y": 3,
+      "label": "9"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 39,
+      "y": 2,
+      "label": "4"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50.9,
+      "y": 7.3,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 93,
+      "y": 31,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 61.6,
+      "y": 47.6
+     },
+     {
+      "id": "s1",
+      "x": 94.6,
+      "y": 34.5
+     },
+     {
+      "id": "s2",
+      "x": 96,
+      "y": 28
+     }
+    ],
+    "steps": [
+     {
+      "label": "In den Lauf",
+      "say": "Neon sechs startet, und Neon zehn spielt ihm den Ball genau in den Lauf.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         83,
+         25
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         83.6,
+         25.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       },
+       {
+        "who": "n7",
+        "to": [
+         47,
+         13
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Direkt flanken: Punkt",
+      "say": "So kann Neon sechs mit dem ersten Kontakt flanken. Neon sieben trifft, und das gibt einen Punkt.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         47,
+         13
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         47.6,
+         13.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         46,
+         4.7
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Die Doppelbewegung im Strafraum.",
+   "title": "Doppelbewegung",
+   "text": "Der Stürmer läuft nicht einfach geradeaus in den Strafraum. Er täuscht erst einen Lauf zum ersten Pfosten an und zieht dann scharf zurück in den freien Raum. So hat er Platz und das richtige Timing für den Abschluss.",
+   "board": {
+    "players": [
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 18.9,
+      "y": 30.8,
+      "label": "3"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 33.8,
+      "y": 33,
+      "label": "8"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 42,
+      "y": 23,
+      "label": "7"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 61,
+      "y": 56,
+      "label": "10"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 83,
+      "y": 25,
+      "label": "6"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 70,
+      "y": 55.5,
+      "label": "2"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 20.4,
+      "y": 6.9,
+      "label": "5"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 30,
+      "y": 3,
+      "label": "9"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 39,
+      "y": 2,
+      "label": "4"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50.9,
+      "y": 7.3,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 93,
+      "y": 31,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 83.6,
+      "y": 25.6
+     },
+     {
+      "id": "s1",
+      "x": 94.6,
+      "y": 34.5
+     },
+     {
+      "id": "s2",
+      "x": 96,
+      "y": 28
+     }
+    ],
+    "steps": [
+     {
+      "label": "Antäuschen zum Pfosten",
+      "say": "Neon sieben läuft zuerst Richtung erster Pfosten.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         55,
+         14
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Zurückziehen, Abschluss: Punkt",
+      "say": "Dann zieht er scharf zurück in den freien Raum. Neon sechs hebt den Kopf, sieht die Bewegung und flankt genau dorthin. Neon sieben trifft, und das gibt einen Punkt.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         45,
+         17
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n6",
+        "to": [
+         45,
+         17
+        ],
+        "type": "blick",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         45.6,
+         17.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         46.5,
+         4.7
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
