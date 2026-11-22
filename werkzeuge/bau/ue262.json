@@ -1,0 +1,856 @@
+{
+ "title": "Hütchen tippen, Leiter, Parade",
+ "code": "UE-262",
+ "kind": "Übungsform",
+ "focuses": [
+  "Schnelligkeit",
+  "Koordination",
+  "Ballannahme"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Torwart"
+ ],
+ "duration_minutes": 15,
+ "players_min": 2,
+ "players_max": 3,
+ "field_size": "41 x 16 m",
+ "description": "Zwei Torhüter stehen vor dem Tor in je einem Viereck aus vier Hütchen. Der Trainer ruft eine Farbe, und die Torhüter tippen diese Hütchen an und fangen in der Mitte einen Volley. Ruft er „Raus!“, sprinten beide durch die Leiter und um die Stangen an ihren Pfosten. Dort warten sie auf den Zehenspitzen, bis der Trainer einen von ihnen aufruft und quer durchs Tor schießt.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 41 mal 16 Metern vor einem Jugendtor mit Torraum. Zwei Vierecke aus je vier Hütchen, außen je eine Leiter, am Torraum je zwei Stangen.",
+  "Verteilen: In jedem Viereck ein Torwart. Unten stehen der Trainer links und Spieler sieben rechts mit Bällen.",
+  "Ablauf: Der Trainer ruft eine Farbe. Die Torhüter tippen die Hütchen an, fangen in der Mitte einen Volley und rollen ihn zurück. Bei „Raus!“ geht es durch Leiter und Stangen an den Pfosten. Dann ruft der Trainer „Rechts!“ oder „Links!“, und dieser Torwart hält den Schuss quer durchs Tor.",
+  "Wechsel: Danach gehen beide zurück in ihr Viereck, und es geht von vorn los. Ziel: jeden Ball festhalten."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Beim Warten auf den Zehenspitzen stehen und zum Trainer schauen",
+  "Schnell auf den Ruf reagieren",
+  "Mit sauberen, schnellen Schritten durch die Leiter und quer durchs Tor",
+  "Den Volley mit guter Technik fangen und festhalten"
+ ],
+ "materials": [
+  "8 Hütchen",
+  "2 Koordinationsleitern",
+  "4 Stangen",
+  "1 Jugendtor",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Hütchen tippen, Leiter, Parade. Zwei Torhüter reagieren auf die Rufe des Trainers und am Ende hält einer von ihnen einen Schuss auf die andere Torseite.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 8,
+    "y": 5,
+    "w": 84,
+    "h": 44
+   },
+   {
+    "type": "rect",
+    "x": 30,
+    "y": 5,
+    "w": 40,
+    "h": 13
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "jugend"
+   }
+  ],
+  "cones": [
+   {
+    "x": 32,
+    "y": 16,
+    "color": "orange"
+   },
+   {
+    "x": 44,
+    "y": 16,
+    "color": "neon"
+   },
+   {
+    "x": 32,
+    "y": 29,
+    "color": "neon"
+   },
+   {
+    "x": 44,
+    "y": 29,
+    "color": "orange"
+   },
+   {
+    "x": 56,
+    "y": 16,
+    "color": "orange"
+   },
+   {
+    "x": 68,
+    "y": 16,
+    "color": "neon"
+   },
+   {
+    "x": 56,
+    "y": 29,
+    "color": "neon"
+   },
+   {
+    "x": 68,
+    "y": 29,
+    "color": "orange"
+   },
+   {
+    "x": 20,
+    "y": 24,
+    "color": "orange",
+    "shape": "leiter_ou"
+   },
+   {
+    "x": 80,
+    "y": 24,
+    "color": "orange",
+    "shape": "leiter_ou"
+   },
+   {
+    "x": 28,
+    "y": 10,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 34,
+    "y": 10,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 66,
+    "y": 10,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 72,
+    "y": 10,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 38,
+    "y": 22.5,
+    "label": "TW"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 62,
+    "y": 22.5,
+    "label": "TW"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 63,
+    "y": 43,
+    "label": "7"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 37,
+    "y": 43,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 37.6,
+    "y": 43.6
+   },
+   {
+    "id": "b2",
+    "x": 63.6,
+    "y": 43.6
+   },
+   {
+    "id": "s1",
+    "x": 38.6,
+    "y": 46.5
+   },
+   {
+    "id": "s2",
+    "x": 35,
+    "y": 46.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Orange!",
+    "say": "Der Trainer ruft: Orange! Beide Torhüter sprinten gleichzeitig zu ihren zwei orangen Hütchen, tippen sie an und kommen zurück in die Mitte.",
+    "moves": [
+     {
+      "who": "k2",
+      "to": [
+       58,
+       18.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "k2",
+      "to": [
+       62,
+       22.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k2",
+      "to": [
+       66,
+       26.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k2",
+      "to": [
+       62,
+       22.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       34,
+       18.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "k1",
+      "to": [
+       38,
+       22.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       42,
+       26.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       38,
+       22.5
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Volley fangen",
+    "say": "Der Trainer spielt dem linken Torwart einen Volley zu, Spieler sieben dem rechten. Beide fangen den Ball und halten ihn fest.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       38.6,
+       23.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b2",
+      "to": [
+       62.6,
+       23.1
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Zurückrollen",
+    "say": "Beide rollen den Ball zurück. Dann ruft der Trainer die nächste Farbe.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       37.6,
+       43.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b2",
+      "to": [
+       63.6,
+       43.6
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Raus!",
+    "say": "Jetzt ruft der Trainer: Raus! Beide sprinten nach außen, laufen durch die Leiter und im Slalom um die zwei Stangen an ihren Pfosten.",
+    "moves": [
+     {
+      "who": "k2",
+      "to": [
+       62,
+       34
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "k2",
+      "to": [
+       80,
+       34
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k2",
+      "to": [
+       80,
+       14
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k2",
+      "to": [
+       76,
+       14
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k2",
+      "to": [
+       72,
+       14
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k2",
+      "to": [
+       69,
+       10
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k2",
+      "to": [
+       66,
+       6.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k2",
+      "to": [
+       61,
+       11
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       38,
+       34
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "k1",
+      "to": [
+       20,
+       34
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       20,
+       14
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       24,
+       14
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       28,
+       14
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       31,
+       10
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       34,
+       6.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       39,
+       11
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Auf den Zehenspitzen",
+    "say": "Dort warten beide auf den Zehenspitzen und schauen zum Trainer. Der Trainer geht mit dem Ball in die Mitte.",
+    "moves": [
+     {
+      "who": "T",
+      "to": [
+       50,
+       38
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "k1",
+      "to": [
+       46,
+       28
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "k2",
+      "to": [
+       54,
+       28
+      ],
+      "type": "blick"
+     }
+    ]
+   },
+   {
+    "label": "Rechts! Gehalten",
+    "say": "Der Trainer ruft: Rechts! und schießt quer zur anderen Seite. Der rechte Torwart reagiert sofort, läuft mit schnellen Seitschritten durchs Tor und hält den Ball. Dann gehen beide zurück in ihr Viereck, und es geht von vorn los.",
+    "moves": [
+     {
+      "who": "k2",
+      "to": [
+       48,
+       7.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       48.6,
+       8.1
+      ],
+      "type": "pass",
+      "delay": 0.3
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 8,
+    "y1": 58.6,
+    "x2": 92,
+    "y2": 58.6,
+    "text": "41 m"
+   },
+   {
+    "x1": 97,
+    "y1": 5,
+    "x2": 97,
+    "y2": 49,
+    "text": "16 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Auf den Zehenspitzen warten.",
+   "title": "Bereit an den Pfosten",
+   "text": "Wer auf den Fersen steht, ist zu spät. Beide Torhüter warten an ihren Pfosten auf den Zehenspitzen, die Hände vorn, und schauen zum Trainer. So reagieren sie sofort auf den Ruf und kommen schnell quer durchs Tor.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 39,
+      "y": 11,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 61,
+      "y": 11,
+      "label": "TW"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 63,
+      "y": 43,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 38,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 38.6
+     },
+     {
+      "id": "b2",
+      "x": 63.6,
+      "y": 43.6
+     },
+     {
+      "id": "s1",
+      "x": 51.6,
+      "y": 41.5
+     },
+     {
+      "id": "s2",
+      "x": 48,
+      "y": 41.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Bereit stehen",
+      "say": "Beide stehen auf den Zehenspitzen an ihren Pfosten und schauen zum Trainer.",
+      "moves": [
+       {
+        "who": "k1",
+        "to": [
+         46,
+         28
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "k2",
+        "to": [
+         54,
+         28
+        ],
+        "type": "blick"
+       }
+      ]
+     },
+     {
+      "label": "Links! Gehalten",
+      "say": "Der Trainer ruft: Links! und schießt auf die rechte Seite. Der linke Torwart reagiert sofort, läuft mit Seitschritten durchs Tor und hält den Ball.",
+      "moves": [
+       {
+        "who": "k1",
+        "to": [
+         52,
+         7.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         52.6,
+         8.1
+        ],
+        "type": "pass",
+        "delay": 0.3
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Alle vier Hütchen.",
+   "title": "Alle vier Hütchen",
+   "text": "Jetzt ruft der Trainer auch „Alle!“. Dann tippen die Torhüter alle vier Hütchen ihres Vierecks an, bevor der Volley kommt. So müssen sie sich gut merken, was gerufen wurde, und kommen trotzdem schnell bereit in die Mitte.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 38,
+      "y": 22.5,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 62,
+      "y": 22.5,
+      "label": "TW"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 63,
+      "y": 43,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 37,
+      "y": 43,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 37.6,
+      "y": 43.6
+     },
+     {
+      "id": "b2",
+      "x": 63.6,
+      "y": 43.6
+     },
+     {
+      "id": "s1",
+      "x": 38.6,
+      "y": 46.5
+     },
+     {
+      "id": "s2",
+      "x": 35,
+      "y": 46.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Alle!",
+      "say": "Der Trainer ruft: Alle! Beide Torhüter tippen gleichzeitig alle vier Hütchen an und kommen zurück in die Mitte.",
+      "moves": [
+       {
+        "who": "k2",
+        "to": [
+         58,
+         18.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "k2",
+        "to": [
+         66,
+         18.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k2",
+        "to": [
+         66,
+         26.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k2",
+        "to": [
+         58,
+         26.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k2",
+        "to": [
+         62,
+         22.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k1",
+        "to": [
+         34,
+         18.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "k1",
+        "to": [
+         42,
+         18.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k1",
+        "to": [
+         42,
+         26.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k1",
+        "to": [
+         34,
+         26.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k1",
+        "to": [
+         38,
+         22.5
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Volley fangen",
+      "say": "Sofort kommen die Volleys. Beide fangen den Ball, halten ihn fest und rollen ihn zurück. Dann folgt der nächste Ruf.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         38.6,
+         23.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b2",
+        "to": [
+         62.6,
+         23.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         37.6,
+         43.6
+        ],
+        "type": "pass",
+        "delay": 0.75
+       },
+       {
+        "who": "b2",
+        "to": [
+         63.6,
+         43.6
+        ],
+        "type": "pass",
+        "delay": 0.75
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

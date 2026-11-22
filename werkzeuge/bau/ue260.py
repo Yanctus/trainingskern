@@ -39,7 +39,7 @@ u = {"title": "Hütchen umlaufen, Volley fangen", "code": "UE-260", "kind": "Üb
  "organisation_show": ORG,
  "coaching_points": ["Schnelle, kleine Schritte um die Hütchen", "Vor dem Fangen kurz fest stehen und zum Trainer schauen", "Den Ball sicher fangen und festhalten", "Genau zum Trainer zurückwerfen und sich in der Pause gut erholen"],
  "materials": ["6 Hütchen", "Viele Bälle"],
- "access": "abo", "hidden": True,
+ "access": "abo", "hidden": False,
  "say_intro": "Hütchen umlaufen, Volley fangen. Der Torwart läuft mit schnellen Füßen um ein Hütchen, fängt einen Volley und wirft den Ball zurück.",
  "board": {"lines": LINES, "cones": CONES, "players": sp(), "balls": baelle(),
   "steps": [

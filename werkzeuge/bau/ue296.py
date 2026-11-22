@@ -19,7 +19,7 @@ BALL_T = [52.6, 48.6]
 LINES = [rect(31, 5, 38, 50)]
 TORE = [{"x": 40, "y": 5, "side": "top"}, {"x": 60, "y": 5, "side": "top"}]
 CONES = [C(37, 24), C(63, 24), C(31, 36.5), C(69, 36.5), C(55, 51.5),
-         C(41, 37, shape="stange"), C(59, 37, shape="stange")]
+         C(42, 34, shape="stange"), C(58, 34, shape="stange")]
 ZIEL_L, ZIEL_R = [40, 5.5], [60, 5.5]
 
 u = {"title": "Annehmen und die Linie runter", "code": "UE-296", "kind": "Übungsform",

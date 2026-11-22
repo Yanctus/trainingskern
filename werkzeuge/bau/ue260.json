@@ -1,0 +1,990 @@
+{
+ "title": "Hütchen umlaufen, Volley fangen",
+ "code": "UE-260",
+ "kind": "Übungsform",
+ "focuses": [
+  "Koordination",
+  "Schnelligkeit",
+  "Ballannahme"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Torwart"
+ ],
+ "duration_minutes": 15,
+ "players_min": 1,
+ "players_max": 2,
+ "field_size": "9 x 7 m",
+ "description": "Ein Torwart steht in der Mitte von sechs Hütchen. Auf Zuruf läuft er mit schnellen, kleinen Schritten um ein Hütchen und zurück in die Mitte. Dort fängt er einen Volley vom Trainer und wirft den Ball genau zurück. So geht es um vier Hütchen, dann ist der nächste Torwart dran.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 9 mal 7 Metern. Sechs Hütchen in drei Paaren: zwei oben, zwei links und rechts der Mitte, zwei vorne.",
+  "Verteilen: Ein Torwart steht in der Mitte, der zweite wartet neben dem Feld. Der Trainer steht unten mit Bällen.",
+  "Ablauf: Auf Zuruf läuft der Torwart mit schnellen Füßen um das rechte Hütchen und zurück in die Mitte. Er fängt den Volley vom Trainer und wirft ihn zurück. Dann das linke Hütchen und danach die zwei vorderen.",
+  "Wechsel: Nach vier Hütchen ist der zweite Torwart dran, und der erste erholt sich neben dem Feld. Ziel: jeden Ball festhalten und genau zurückwerfen."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Schnelle, kleine Schritte um die Hütchen",
+  "Vor dem Fangen kurz fest stehen und zum Trainer schauen",
+  "Den Ball sicher fangen und festhalten",
+  "Genau zum Trainer zurückwerfen und sich in der Pause gut erholen"
+ ],
+ "materials": [
+  "6 Hütchen",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Hütchen umlaufen, Volley fangen. Der Torwart läuft mit schnellen Füßen um ein Hütchen, fängt einen Volley und wirft den Ball zurück.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 28,
+    "y": 8,
+    "w": 44,
+    "h": 38
+   }
+  ],
+  "cones": [
+   {
+    "x": 43,
+    "y": 14,
+    "color": "orange"
+   },
+   {
+    "x": 57,
+    "y": 14,
+    "color": "orange"
+   },
+   {
+    "x": 42,
+    "y": 24,
+    "color": "neon"
+   },
+   {
+    "x": 58,
+    "y": 24,
+    "color": "neon"
+   },
+   {
+    "x": 42,
+    "y": 34,
+    "color": "orange"
+   },
+   {
+    "x": 58,
+    "y": 34,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 50,
+    "y": 24,
+    "label": "TW"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 18,
+    "y": 20,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 50,
+    "y": 42,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 50.6,
+    "y": 42.6
+   },
+   {
+    "id": "s1",
+    "x": 51.6,
+    "y": 45.5
+   },
+   {
+    "id": "s2",
+    "x": 48,
+    "y": 45.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Um das rechte Hütchen",
+    "say": "Der Trainer ruft. Der Torwart läuft mit schnellen, kleinen Schritten um das rechte Hütchen und zurück in die Mitte.",
+    "moves": [
+     {
+      "who": "k1",
+      "to": [
+       54,
+       20.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "k1",
+      "to": [
+       58,
+       20
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       62,
+       24
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       58,
+       28
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       54,
+       27.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       50,
+       24
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Bereit stehen",
+    "say": "In der Mitte steht er kurz fest, die Hände vor dem Körper, und schaut zum Trainer.",
+    "moves": [
+     {
+      "who": "k1",
+      "to": [
+       50,
+       41
+      ],
+      "type": "blick"
+     }
+    ]
+   },
+   {
+    "label": "Fangen und zurückwerfen",
+    "say": "Der Trainer spielt einen Volley. Der Torwart fängt den Ball, hält ihn fest und wirft ihn genau zum Trainer zurück.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       24.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       42.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Links herum",
+    "say": "Jetzt das Gleiche auf der anderen Seite: um das linke Hütchen, zurück in die Mitte, Volley fangen und zurückwerfen.",
+    "moves": [
+     {
+      "who": "k1",
+      "to": [
+       46,
+       20.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "k1",
+      "to": [
+       42,
+       20
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       38,
+       24
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       42,
+       28
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       46,
+       27.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       50,
+       24
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       24.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       42.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Die vorderen Hütchen",
+    "say": "Danach kommen die zwei vorderen Hütchen dran, wieder jedes Mal mit Volley und Wurf zurück.",
+    "moves": [
+     {
+      "who": "k1",
+      "to": [
+       54,
+       30
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "k1",
+      "to": [
+       58,
+       30
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       62,
+       34
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       58,
+       38
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       54,
+       37
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       52,
+       30
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       50,
+       24
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       24.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       42.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       46,
+       30
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       42,
+       30
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       38,
+       34
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       42,
+       38
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       46,
+       37
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       48,
+       30
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       50,
+       24
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       24.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       42.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Vier Hütchen: Wechsel",
+    "say": "Nach vier Hütchen ist die Runde geschafft. Hat er jeden Ball festgehalten, ist das Ziel erreicht. Jetzt ist der zweite Torwart dran, und der erste erholt sich neben dem Feld.",
+    "moves": [
+     {
+      "who": "k2",
+      "to": [
+       36,
+       19
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "k2",
+      "to": [
+       46,
+       19
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k2",
+      "to": [
+       50,
+       24
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       50,
+       29
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "k1",
+      "to": [
+       30,
+       29
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       18,
+       34
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 28,
+    "y1": 58.6,
+    "x2": 72,
+    "y2": 58.6,
+    "text": "9 m"
+   },
+   {
+    "x1": 80,
+    "y1": 8,
+    "x2": 80,
+    "y2": 46,
+    "text": "7 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Vor dem Fangen schnell bereit stehen.",
+   "title": "Schnell bereit stehen",
+   "text": "Nach den schnellen Füßen nicht in den Ball hineinlaufen. Der Torwart kommt in der Mitte an, stellt die Füße kurz fest und schaut zum Trainer. Die Hände sind vorn, und er fängt den Ball sicher vor dem Körper.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 62,
+      "y": 24,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 18,
+      "y": 20,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 42,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 42.6
+     },
+     {
+      "id": "s1",
+      "x": 51.6,
+      "y": 45.5
+     },
+     {
+      "id": "s2",
+      "x": 48,
+      "y": 45.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zurück in die Mitte",
+      "say": "Der Torwart kommt vom rechten Hütchen mit kleinen Schritten zurück in die Mitte.",
+      "moves": [
+       {
+        "who": "k1",
+        "to": [
+         58,
+         28
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "k1",
+        "to": [
+         54,
+         27.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k1",
+        "to": [
+         50,
+         24
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Fest stehen und schauen",
+      "say": "Er stellt die Füße fest, die Hände sind vorn, und er schaut zum Trainer.",
+      "moves": [
+       {
+        "who": "k1",
+        "to": [
+         50,
+         41
+        ],
+        "type": "blick"
+       }
+      ]
+     },
+     {
+      "label": "Sicher fangen",
+      "say": "Jetzt kommt der Volley. Er fängt den Ball vor dem Körper, hält ihn fest und wirft ihn genau zurück.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         24.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         42.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Die Laufwege ändern sich.",
+   "title": "Acht um zwei Hütchen",
+   "text": "Jetzt startet der Torwart oben an der Linie. Er läuft eine Acht um die zwei oberen Hütchen und kommt dann in die Mitte zum Fangen. Danach geht es um die nächsten zwei Hütchen. Der Trainer kann auch Seit- oder Rückwärtsschritte ansagen.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 50,
+      "y": 9,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 18,
+      "y": 20,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 42,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 42.6
+     },
+     {
+      "id": "s1",
+      "x": 51.6,
+      "y": 45.5
+     },
+     {
+      "id": "s2",
+      "x": 48,
+      "y": 45.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Acht oben",
+      "say": "Der Torwart startet oben an der Linie. Er läuft mit schnellen Füßen eine Acht um die beiden oberen Hütchen.",
+      "moves": [
+       {
+        "who": "k1",
+        "to": [
+         43,
+         9.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "k1",
+        "to": [
+         38.5,
+         14
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k1",
+        "to": [
+         43,
+         18.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k1",
+        "to": [
+         50,
+         14
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k1",
+        "to": [
+         57,
+         9.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k1",
+        "to": [
+         61.5,
+         14
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k1",
+        "to": [
+         57,
+         18.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k1",
+        "to": [
+         50,
+         19
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "In die Mitte und fangen",
+      "say": "Dann kommt er in die Mitte, steht kurz fest und fängt den Volley. Der Ball geht zurück zum Trainer.",
+      "moves": [
+       {
+        "who": "k1",
+        "to": [
+         50,
+         24
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "k1",
+        "to": [
+         50,
+         41
+        ],
+        "type": "blick",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         24.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         42.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Die nächsten zwei",
+      "say": "Danach läuft er um die zwei mittleren Hütchen, wieder mit Volley und Wurf zurück. Dann ist der zweite Torwart dran.",
+      "moves": [
+       {
+        "who": "k1",
+        "to": [
+         54,
+         20.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "k1",
+        "to": [
+         58,
+         20
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k1",
+        "to": [
+         62,
+         24
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k1",
+        "to": [
+         58,
+         28
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k1",
+        "to": [
+         54,
+         27.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k1",
+        "to": [
+         50,
+         24
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         24.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         42.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "k1",
+        "to": [
+         46,
+         20.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k1",
+        "to": [
+         42,
+         20
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k1",
+        "to": [
+         38,
+         24
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k1",
+        "to": [
+         42,
+         28
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k1",
+        "to": [
+         46,
+         27.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k1",
+        "to": [
+         50,
+         24
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         24.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         42.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -42,7 +42,7 @@ u = {"title": "Hütchen tippen, Leiter, Parade", "code": "UE-262", "kind": "Übu
  "organisation_show": ORG,
  "coaching_points": ["Beim Warten auf den Zehenspitzen stehen und zum Trainer schauen", "Schnell auf den Ruf reagieren", "Mit sauberen, schnellen Schritten durch die Leiter und quer durchs Tor", "Den Volley mit guter Technik fangen und festhalten"],
  "materials": ["8 Hütchen", "2 Koordinationsleitern", "4 Stangen", "1 Jugendtor", "Viele Bälle"],
- "access": "abo", "hidden": True,
+ "access": "abo", "hidden": False,
  "say_intro": "Hütchen tippen, Leiter, Parade. Zwei Torhüter reagieren auf die Rufe des Trainers und am Ende hält einer von ihnen einen Schuss auf die andere Torseite.",
  "board": {"lines": LINES, "goals": TORE, "cones": CONES, "players": sp(), "balls": baelle(),
   "steps": [

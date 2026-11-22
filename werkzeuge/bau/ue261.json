@@ -1,0 +1,1134 @@
+{
+ "title": "Fangen und passen im Viereck",
+ "code": "UE-261",
+ "kind": "Übungsform",
+ "focuses": [
+  "Koordination",
+  "Ballannahme",
+  "Passspiel"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Torwart"
+ ],
+ "duration_minutes": 15,
+ "players_min": 2,
+ "players_max": 5,
+ "field_size": "18 x 14 m",
+ "description": "Der Torwart steht in einem Viereck aus vier Hütchen. Er läuft mit schnellen Füßen um zwei Hütchen der gleichen Farbe und fängt in der Mitte einen Volley. Dann rollt er den Ball zurück und bekommt einen Pass auf den Fuß, den er annimmt und genau zurückspielt. Zwei Vierecke laufen gleichzeitig.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 14 Metern. Oben zwei Vierecke aus je vier Hütchen, diagonal gegenüber die gleiche Farbe.",
+  "Verteilen: In jedem Viereck ein Torwart. Unten vor dem linken Viereck stehen der Trainer und ein zweiter Torwart mit Bällen, vor dem rechten Spieler sieben und ein vierter Torwart.",
+  "Ablauf: Der Torwart läuft um die zwei orangen Hütchen und fängt in der Mitte einen Volley. Er rollt den Ball zurück, nimmt einen Pass mit dem Fuß an und spielt genau zurück. Dann das Gleiche um die neongelben Hütchen.",
+  "Wechsel: Nach einer festen Zeit tauschen die Torhüter im Viereck mit den Passgebern. Ziel: jeden Ball festhalten und jeden Pass genau spielen."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Schnelle, kleine Schritte um die Hütchen",
+  "Den Ball sicher fangen und genau zurückrollen",
+  "Den Pass nah am Fuß annehmen und flach und genau zurückspielen",
+  "Auch müde konzentriert bleiben und in der Pause gut erholen"
+ ],
+ "materials": [
+  "8 Hütchen",
+  "Viele Bälle",
+  "Leibchen"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Fangen und passen im Viereck. Der Torwart läuft um zwei Hütchen, fängt einen Volley und spielt danach mit dem Fuß.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 14,
+    "y": 4,
+    "w": 72,
+    "h": 52
+   }
+  ],
+  "cones": [
+   {
+    "x": 26.0,
+    "y": 11,
+    "color": "orange"
+   },
+   {
+    "x": 41.0,
+    "y": 11,
+    "color": "neon"
+   },
+   {
+    "x": 26.0,
+    "y": 25,
+    "color": "neon"
+   },
+   {
+    "x": 41.0,
+    "y": 25,
+    "color": "orange"
+   },
+   {
+    "x": 62.0,
+    "y": 11,
+    "color": "orange"
+   },
+   {
+    "x": 77.0,
+    "y": 11,
+    "color": "neon"
+   },
+   {
+    "x": 62.0,
+    "y": 25,
+    "color": "neon"
+   },
+   {
+    "x": 77.0,
+    "y": 25,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 33.5,
+    "y": 18,
+    "label": "TW"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 22,
+    "y": 42,
+    "label": "TW"
+   },
+   {
+    "id": "k3",
+    "team": "t",
+    "x": 69.5,
+    "y": 18,
+    "label": "TW"
+   },
+   {
+    "id": "k4",
+    "team": "t",
+    "x": 80,
+    "y": 42,
+    "label": "TW"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 62,
+    "y": 45,
+    "label": "7"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 41,
+    "y": 42,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 41.6,
+    "y": 42.6
+   },
+   {
+    "id": "b2",
+    "x": 22.6,
+    "y": 42.6
+   },
+   {
+    "id": "b3",
+    "x": 62.6,
+    "y": 45.6
+   },
+   {
+    "id": "b4",
+    "x": 80.6,
+    "y": 42.6
+   },
+   {
+    "id": "s1",
+    "x": 42.6,
+    "y": 45.5
+   },
+   {
+    "id": "s2",
+    "x": 39,
+    "y": 45.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Schnelle Füße",
+    "say": "In beiden Vierecken geht es gleichzeitig los. Wir schauen auf den linken Torwart. Er läuft mit schnellen Füßen um das orange Hütchen oben, dann um das orange Hütchen unten und zurück in die Mitte.",
+    "moves": [
+     {
+      "who": "k1",
+      "to": [
+       30,
+       8
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "k1",
+      "to": [
+       26,
+       7.2
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       22.2,
+       11
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       26,
+       14.8
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       33.5,
+       18
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       37.5,
+       28.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       41,
+       28.8
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       44.8,
+       25
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       41,
+       21.2
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       33.5,
+       18
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k3",
+      "to": [
+       66,
+       8
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "k3",
+      "to": [
+       62,
+       7.2
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k3",
+      "to": [
+       58.2,
+       11
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k3",
+      "to": [
+       62,
+       14.8
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k3",
+      "to": [
+       69.5,
+       18
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k3",
+      "to": [
+       73.5,
+       28.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k3",
+      "to": [
+       77,
+       28.8
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k3",
+      "to": [
+       80.8,
+       25
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k3",
+      "to": [
+       77,
+       21.2
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k3",
+      "to": [
+       69.5,
+       18
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Volley fangen",
+    "say": "Der Trainer spielt einen Volley, und der Torwart fängt den Ball. Rechts spielt Spieler sieben den Volley zum anderen Torwart.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       34.1,
+       18.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b3",
+      "to": [
+       70.1,
+       18.6
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Zurückrollen",
+    "say": "Der Torwart rollt den Ball genau zurück zum Trainer. Rechts genauso zu Spieler sieben.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       41.6,
+       42.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b3",
+      "to": [
+       62.6,
+       45.6
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Pass auf den Fuß",
+    "say": "Jetzt passt der zweite Torwart flach auf den Fuß. Der Torwart im Viereck nimmt den Ball an und spielt ihn genau zurück.",
+    "moves": [
+     {
+      "who": "b2",
+      "to": [
+       34.1,
+       18.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b4",
+      "to": [
+       70.1,
+       18.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b2",
+      "to": [
+       22.6,
+       42.6
+      ],
+      "type": "pass",
+      "delay": 0.75
+     },
+     {
+      "who": "b4",
+      "to": [
+       80.6,
+       42.6
+      ],
+      "type": "pass",
+      "delay": 0.75
+     }
+    ]
+   },
+   {
+    "label": "Neongelbe Hütchen: Wechsel",
+    "say": "Dann geht es um die zwei neongelben Hütchen, wieder mit Volley, Zurückrollen und Pass. Ist jeder Ball gefangen und jeder Pass genau, ist das Ziel erreicht. Nach einer festen Zeit tauscht der Torwart im Viereck mit dem Passgeber.",
+    "moves": [
+     {
+      "who": "k1",
+      "to": [
+       37,
+       8
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "k1",
+      "to": [
+       41,
+       7.2
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       44.8,
+       11
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       41,
+       14.8
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       33.5,
+       18
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       29.5,
+       28.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       26,
+       28.8
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       22.2,
+       25
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       26,
+       21.2
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       33.5,
+       18
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k3",
+      "to": [
+       73,
+       8
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "k3",
+      "to": [
+       77,
+       7.2
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k3",
+      "to": [
+       80.8,
+       11
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k3",
+      "to": [
+       77,
+       14.8
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k3",
+      "to": [
+       69.5,
+       18
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k3",
+      "to": [
+       65.5,
+       28.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k3",
+      "to": [
+       62,
+       28.8
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k3",
+      "to": [
+       58.2,
+       25
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k3",
+      "to": [
+       62,
+       21.2
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k3",
+      "to": [
+       69.5,
+       18
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 14,
+    "y1": 58.6,
+    "x2": 86,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 93,
+    "y1": 4,
+    "x2": 93,
+    "y2": 56,
+    "text": "14 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Annehmen und genau zurückpassen.",
+   "title": "Nah annehmen, genau passen",
+   "text": "Jeder Pass zählt, auch beim Torwart. Er nimmt den Ball nah am Fuß an, damit er ihn sofort weiterspielen kann. Dann spielt er flach und mit dem richtigen Tempo genau in den Fuß des Passgebers. Auch beim Zurückrollen und Werfen zielt er genau, nie über den Kopf.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 33.5,
+      "y": 18,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 22,
+      "y": 42,
+      "label": "TW"
+     },
+     {
+      "id": "k3",
+      "team": "t",
+      "x": 69.5,
+      "y": 18,
+      "label": "TW"
+     },
+     {
+      "id": "k4",
+      "team": "t",
+      "x": 80,
+      "y": 42,
+      "label": "TW"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 62,
+      "y": 45,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 41,
+      "y": 42,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 41.6,
+      "y": 42.6
+     },
+     {
+      "id": "b2",
+      "x": 22.6,
+      "y": 42.6
+     },
+     {
+      "id": "b3",
+      "x": 62.6,
+      "y": 45.6
+     },
+     {
+      "id": "b4",
+      "x": 80.6,
+      "y": 42.6
+     },
+     {
+      "id": "s1",
+      "x": 42.6,
+      "y": 45.5
+     },
+     {
+      "id": "s2",
+      "x": 39,
+      "y": 45.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Pass kommt",
+      "say": "Der zweite Torwart passt flach auf den Fuß des Torwarts im Viereck.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         34.1,
+         18.6
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Nah annehmen",
+      "say": "Der Torwart nimmt den Ball mit der Innenseite an. Der Ball bleibt ganz nah am Fuß.",
+      "moves": [
+       {
+        "who": "k1",
+        "to": [
+         32,
+         20
+        ],
+        "type": "dribbling",
+        "ball": "b2"
+       }
+      ]
+     },
+     {
+      "label": "Genau zurück",
+      "say": "Dann spielt er flach und fest genau in den Fuß des Passgebers. So geht kein Ball verloren.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         22.6,
+         42.6
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Wer ist zuerst fertig?",
+   "title": "Wer ist zuerst fertig?",
+   "text": "Jetzt ist es ein Wettkampf zwischen den zwei Torhütern in den Vierecken. Beide starten gleichzeitig. Wer zuerst die ganze Folge sauber schafft, also ohne Ball fallen lassen und mit genauem Pass, bekommt einen Punkt.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 33.5,
+      "y": 18,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 22,
+      "y": 42,
+      "label": "TW"
+     },
+     {
+      "id": "k3",
+      "team": "t",
+      "x": 69.5,
+      "y": 18,
+      "label": "TW"
+     },
+     {
+      "id": "k4",
+      "team": "t",
+      "x": 80,
+      "y": 42,
+      "label": "TW"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 62,
+      "y": 45,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 41,
+      "y": 42,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 41.6,
+      "y": 42.6
+     },
+     {
+      "id": "b2",
+      "x": 22.6,
+      "y": 42.6
+     },
+     {
+      "id": "b3",
+      "x": 62.6,
+      "y": 45.6
+     },
+     {
+      "id": "b4",
+      "x": 80.6,
+      "y": 42.6
+     },
+     {
+      "id": "s1",
+      "x": 42.6,
+      "y": 45.5
+     },
+     {
+      "id": "s2",
+      "x": 39,
+      "y": 45.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Gleichzeitig los",
+      "say": "Der Trainer ruft, und beide Torhüter starten gleichzeitig um ihre orangen Hütchen.",
+      "moves": [
+       {
+        "who": "k1",
+        "to": [
+         30,
+         8
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "k1",
+        "to": [
+         26,
+         7.2
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k1",
+        "to": [
+         22.2,
+         11
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k1",
+        "to": [
+         26,
+         14.8
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k1",
+        "to": [
+         33.5,
+         18
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k1",
+        "to": [
+         37.5,
+         28.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k1",
+        "to": [
+         41,
+         28.8
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k1",
+        "to": [
+         44.8,
+         25
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k1",
+        "to": [
+         41,
+         21.2
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k1",
+        "to": [
+         33.5,
+         18
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k3",
+        "to": [
+         66,
+         8
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "k3",
+        "to": [
+         62,
+         7.2
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k3",
+        "to": [
+         58.2,
+         11
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k3",
+        "to": [
+         62,
+         14.8
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k3",
+        "to": [
+         69.5,
+         18
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k3",
+        "to": [
+         73.5,
+         28.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k3",
+        "to": [
+         77,
+         28.8
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k3",
+        "to": [
+         80.8,
+         25
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k3",
+        "to": [
+         77,
+         21.2
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "k3",
+        "to": [
+         69.5,
+         18
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Fangen und rollen",
+      "say": "Beide fangen den Volley und rollen den Ball genau zurück.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         34.1,
+         18.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b3",
+        "to": [
+         70.1,
+         18.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         41.6,
+         42.6
+        ],
+        "type": "pass",
+        "delay": 0.75
+       },
+       {
+        "who": "b3",
+        "to": [
+         62.6,
+         45.6
+        ],
+        "type": "pass",
+        "delay": 0.75
+       }
+      ]
+     },
+     {
+      "label": "Zuerst fertig: Punkt",
+      "say": "Dann kommt der Pass auf den Fuß. Der linke Torwart nimmt an und spielt zuerst genau zurück, und das gibt einen Punkt für ihn. Dann geht es um die neongelben Hütchen.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         34.1,
+         18.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b4",
+        "to": [
+         70.1,
+         18.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       },
+       {
+        "who": "b2",
+        "to": [
+         22.6,
+         42.6
+        ],
+        "type": "pass",
+        "delay": 0.75
+       },
+       {
+        "who": "b4",
+        "to": [
+         80.6,
+         42.6
+        ],
+        "type": "pass",
+        "delay": 1.3
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

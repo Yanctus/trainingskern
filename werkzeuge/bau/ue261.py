@@ -38,7 +38,7 @@ u = {"title": "Fangen und passen im Viereck", "code": "UE-261", "kind": "Übungs
  "organisation_show": ORG,
  "coaching_points": ["Schnelle, kleine Schritte um die Hütchen", "Den Ball sicher fangen und genau zurückrollen", "Den Pass nah am Fuß annehmen und flach und genau zurückspielen", "Auch müde konzentriert bleiben und in der Pause gut erholen"],
  "materials": ["8 Hütchen", "Viele Bälle", "Leibchen"],
- "access": "abo", "hidden": True,
+ "access": "abo", "hidden": False,
  "say_intro": "Fangen und passen im Viereck. Der Torwart läuft um zwei Hütchen, fängt einen Volley und spielt danach mit dem Fuß.",
  "board": {"lines": LINES, "cones": CONES, "players": sp(), "balls": baelle(),
   "steps": [
