@@ -48,8 +48,8 @@ u = {"title": "Hütchen sammeln mit Köpfchen", "code": "UE-214", "kind": "Spiel
      mv("r9", [67, 18.5]), mv("r9", [58, 27], after=True), ps("k6", STR, after=True),
      mv("r9", [57.5, 12], after=True), mv("r9", [58, 27], after=True), ps("k7", STR, after=True)),
    S("Viertes Hütchen: Punkt", "Neon sieben steckt als Erster das vierte Hütchen auf seine Stange und gewinnt, und das gibt einen Punkt für Team Neon. Dann legt der Trainer die Hütchen neu aus, und die nächsten Spieler sind dran.",
-     mv("n7", [59.5, 47]), mv("n7", [42, 33], after=True), ps("k4", STN, after=True),
-     mv("r9", [36.5, 51]), mv("r9", [48, 41], after=True))],
+     mv("n7", [41.5, 35]), mv("n7", [59.5, 47], after=True), mv("n7", [42, 33], after=True), ps("k4", STN, after=True),
+     mv("r9", [59, 35]), mv("r9", [36.5, 51], after=True), mv("r9", [48, 41], after=True))],
   "dims": dims(25, 75, 5, 55, "23 m", "23 m", rx=84)},
  "versions": [
   V("Coaching-Punkt", "Jetzt zum Coaching-Punkt: Erst schauen, dann losrennen.", "Erst schauen, dann los",
@@ -60,14 +60,14 @@ u = {"title": "Hütchen sammeln mit Köpfchen", "code": "UE-214", "kind": "Spiel
      S("Der kurze Weg", "Neon sieben holt das nahe Hütchen und steckt es auf die Stange. Rot neun ist noch unterwegs.",
        mv("n7", [33.5, 43.5]), mv("n7", [42, 33], after=True), ps("k1", STN, after=True),
        mv("r9", [58, 27]), ps("k6", STR, after=True))],
-    lines=LINES, cones=cones()),
+    cones=cones()),
   V("Coaching-Punkt", "Der zweite Coaching-Punkt: Gerade laufen und rechtzeitig bremsen.", "Gerade laufen, früh bremsen",
     "Wer mit voller Kraft auf ein Hütchen zu sprintet, kann nicht schnell bremsen und braucht einen großen Bogen. Besser gerade laufen, kurz vor dem Hütchen langsamer werden und mit kleinen Schritten drehen.",
     sp(), ERSATZ,
     [S("Zu schnell", "Rot neun sprintet mit voller Kraft zum Hütchen. Er kann nicht bremsen, läuft vorbei und muss in einem großen Bogen zurück.",
-       mv("r9", [73, 33]), mv("r9", [76.5, 36], after=True), mv("r9", [73, 40.5], after=True), mv("r9", [70.5, 39.5], after=True)),
+       mv("r9", [66.5, 37.5]), mv("r9", [69.5, 33], after=True), mv("r9", [73.5, 33.5], after=True), mv("r9", [74, 38.5], after=True), mv("r9", [71.5, 40.5], after=True)),
      S("Gerade und kontrolliert", "Neon sieben läuft gerade, bremst kurz vor dem Hütchen ab und dreht mit kleinen Schritten. So ist er schneller zurück an seiner Stange.",
        mv("n7", [33.5, 43.5]), mv("n7", [42, 33], after=True), ps("k1", STN, after=True),
        mv("r9", [58, 33], delay=0.6), ps("k5", STR, after=True))],
-    lines=LINES, cones=cones())]}
+    cones=cones())]}
 json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)
