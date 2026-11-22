@@ -9,6 +9,9 @@ README der App (Abschnitte „Übungen aus Video nachbauen“, „Laufweg-Abglei
 - Nächsten Code holen: `python3 werkbank.py lesen UE-0xx x.json` zum Prüfen, ob ein Code schon belegt ist (siehe README der App: „nächster Code“).
 
 ## Pro Woche
+0. Drive-Ordner: `TK_PLAN=u12` (Standard, Plan U12-U14 ab 22.11.2026) oder `TK_PLAN=u9` (erster Plan). Wochen heißen
+   „Week 1 - Pre-Season“ usw. Doppelte erkennen: Original-Kennung (z. B. 94-P6) mit BERICHT.md und bau/*.py abgleichen,
+   und Titel/Beschreibung im Katalog durchsuchen (ältere Einheiten haben keine gespeicherte Kennung).
 1. `python3 werkbank.py holen <Woche>` (Video, PDF, Text, Übersicht).
 2. `python3 werkbank.py ton <Ordner>` für jede Übung (Spracherkennung, ca. 10 s, einmalig `pip install faster-whisper`): Die gesprochene
    Erklärung steht dann mit Zeitstempeln in `ton.txt`. Zuerst `text.txt` und `ton.txt` lesen (kostet fast nichts), dann ansehen

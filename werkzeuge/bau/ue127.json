@@ -1,0 +1,1111 @@
+{
+ "title": "Sprintstaffel mit Doppelpass",
+ "code": "UE-127",
+ "kind": "Übungsform",
+ "focuses": [
+  "Schnelligkeit",
+  "Dribbling",
+  "Torschuss"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 8,
+ "players_max": 12,
+ "field_size": "27 x 27 m",
+ "description": "Zwei Teams laufen eine Staffel gegeneinander, jedes Team hat seinen eigenen Parcours. Der Erste sprintet im Zickzack an allen Hütchen vorbei nach oben, holt sich dort den Ball und dribbelt in der Nebenbahn zurück. Unten spielt er einen Doppelpass mit einem Mitspieler und schließt ins Minitor ab. Dann klatscht er den Nächsten ab. Sind alle vier durch, läuft das Team die Runde noch einmal ohne Ball, und wer zuerst wieder komplett am Start steht, gewinnt.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 27 mal 27 Metern, geteilt in vier Bahnen. Jedes Team hat eine breite Bahn mit fünf Hütchen im Zickzack und daneben eine schmale Dribbelbahn mit einem Minitor unten. Oben in der Dribbelbahn liegt der Ball, beim Trainer liegen Ersatzbälle.",
+  "Verteilen: Zwei Teams mit je vier Spielern, Team Neon links, Team Rot rechts. Der Erste steht am Start-Hütchen, der Nächste wartet links neben dem Minitor als Anspieler, die anderen beiden warten neben dem Feld.",
+  "Ablauf: Auf Pfiff sprinten die Ersten im Zickzack nach oben, holen den Ball, dribbeln zurück, spielen einen Doppelpass mit dem Anspieler und schließen ins Minitor ab. Danach klatschen sie den Nächsten ab, und der Trainer legt oben einen neuen Ball hin.",
+  "Wertung: Sind alle vier durch, läuft das Team die Runde noch einmal ohne Ball. Das Team, das zuerst wieder komplett am Start steht, gewinnt die Staffel. Dann neue Reihenfolge und nächste Runde."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Zwischen den Hütchen voll sprinten",
+  "An jedem Hütchen scharf abdrehen und sofort neu antreten",
+  "Den Ball beim Dribbeln eng führen, mit beiden Füßen",
+  "Genau passen und mit einem Kontakt abschließen"
+ ],
+ "materials": [
+  "10 Hütchen",
+  "2 Minitore",
+  "Mehrere Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "say_intro": "Sprintstaffel mit Doppelpass. Zwei Teams, Zickzack-Sprint, Dribbling, Doppelpass und Abschluss, dann das Ganze noch einmal ohne Ball.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 27,
+    "y": 4,
+    "w": 46,
+    "h": 46
+   },
+   {
+    "type": "line",
+    "x1": 42.7,
+    "y1": 4,
+    "x2": 42.7,
+    "y2": 50,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 50.2,
+    "y1": 4,
+    "x2": 50.2,
+    "y2": 50,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 64.5,
+    "y1": 4,
+    "x2": 64.5,
+    "y2": 50,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 46.4,
+    "y": 50,
+    "side": "bottom"
+   },
+   {
+    "x": 68.3,
+    "y": 50,
+    "side": "bottom"
+   }
+  ],
+  "cones": [
+   {
+    "x": 30,
+    "y": 48,
+    "color": "orange"
+   },
+   {
+    "x": 40.5,
+    "y": 38,
+    "color": "orange"
+   },
+   {
+    "x": 29.5,
+    "y": 28,
+    "color": "orange"
+   },
+   {
+    "x": 40.5,
+    "y": 18,
+    "color": "orange"
+   },
+   {
+    "x": 29.5,
+    "y": 8,
+    "color": "orange"
+   },
+   {
+    "x": 52.4,
+    "y": 48,
+    "color": "orange"
+   },
+   {
+    "x": 63,
+    "y": 38,
+    "color": "orange"
+   },
+   {
+    "x": 52,
+    "y": 28,
+    "color": "orange"
+   },
+   {
+    "x": 63,
+    "y": 18,
+    "color": "orange"
+   },
+   {
+    "x": 52,
+    "y": 8,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 30,
+    "y": 52.6,
+    "label": "6"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 40.4,
+    "y": 53,
+    "label": "7"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 19.5,
+    "y": 40,
+    "label": "4"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 19.5,
+    "y": 23,
+    "label": "5"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 52.4,
+    "y": 52.6,
+    "label": "2"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 62.4,
+    "y": 53,
+    "label": "3"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 81,
+    "y": 40,
+    "label": "8"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 81,
+    "y": 23,
+    "label": "9"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 57.5,
+    "y": 2.4,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 46.5,
+    "y": 6.2
+   },
+   {
+    "id": "b2",
+    "x": 69,
+    "y": 6.2
+   },
+   {
+    "id": "s1",
+    "x": 53.2,
+    "y": 2.4
+   }
+  ],
+  "steps": [
+   {
+    "label": "Im Zickzack nach oben",
+    "say": "Auf Pfiff sprinten Neon sechs und Rot zwei gleichzeitig los und laufen im Zickzack an jedem Hütchen vorbei bis nach oben.",
+    "moves": [
+     {
+      "who": "n6",
+      "to": [
+       39.4,
+       38
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n6",
+      "to": [
+       30.6,
+       28
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n6",
+      "to": [
+       39.4,
+       18
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n6",
+      "to": [
+       30.6,
+       8.6
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r2",
+      "to": [
+       61.9,
+       38
+      ],
+      "type": "lauf",
+      "delay": 0.15
+     },
+     {
+      "who": "r2",
+      "to": [
+       53.1,
+       28
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r2",
+      "to": [
+       61.9,
+       18
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r2",
+      "to": [
+       53.1,
+       8.6
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Ball holen, zurückdribbeln",
+    "say": "Oben holen sie sich den Ball und dribbeln in ihrer Nebenbahn mit Tempo zurück nach unten.",
+    "moves": [
+     {
+      "who": "n6",
+      "to": [
+       45.6,
+       6.8
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n6",
+      "to": [
+       46.2,
+       31.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "r2",
+      "to": [
+       68.1,
+       6.8
+      ],
+      "type": "lauf",
+      "delay": 0.15
+     },
+     {
+      "who": "r2",
+      "to": [
+       68.6,
+       31.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     }
+    ]
+   },
+   {
+    "label": "Doppelpass, dann Abschluss",
+    "say": "Unten spielen sie einen Doppelpass mit ihrem Anspieler und schließen mit einem Kontakt ins Minitor ab.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       40.6,
+       52.3
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n6",
+      "to": [
+       47.4,
+       37
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       47.4,
+       37.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       46.4,
+       50.3
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b2",
+      "to": [
+       62.6,
+       52.3
+      ],
+      "type": "pass",
+      "delay": 0.15
+     },
+     {
+      "who": "r2",
+      "to": [
+       69.4,
+       37
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b2",
+      "to": [
+       69.4,
+       37.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b2",
+      "to": [
+       68.3,
+       50.3
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Abklatschen, der Nächste läuft",
+    "say": "Dann klatschen sie den Anspieler ab, und Neon sieben und Rot drei starten. Sind alle vier durch, läuft jedes Team die Runde noch einmal ohne Ball. Das Team, das zuerst wieder komplett am Start steht, gewinnt die Staffel.",
+    "moves": [
+     {
+      "who": "n6",
+      "to": [
+       42.6,
+       51.6
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n7",
+      "to": [
+       30.6,
+       50.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       39.4,
+       38
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r2",
+      "to": [
+       64.6,
+       51.6
+      ],
+      "type": "lauf",
+      "delay": 0.15
+     },
+     {
+      "who": "r3",
+      "to": [
+       53,
+       50.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r3",
+      "to": [
+       61.9,
+       38
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 27,
+    "y1": 58.6,
+    "x2": 73,
+    "y2": 58.6,
+    "text": "27 m"
+   },
+   {
+    "x1": 89,
+    "y1": 4,
+    "x2": 89,
+    "y2": 50,
+    "text": "27 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: An jedem Hütchen scharf abdrehen und mit einem Kontakt abschließen.",
+   "title": "Scharf abdrehen",
+   "text": "Wer an den Hütchen weite Bögen läuft, verliert die Staffel. Kurz vor dem Hütchen mit kleinen Schritten abbremsen, mit dem äußeren Fuß abdrücken und sofort in die neue Richtung sprinten. Unten kommt der Rückpass in den Lauf und geht direkt ins Minitor, ohne ihn vorher zu stoppen.",
+   "board": {
+    "players": [
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 30,
+      "y": 52.6,
+      "label": "6"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 40.4,
+      "y": 53,
+      "label": "7"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 19.5,
+      "y": 40,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 19.5,
+      "y": 23,
+      "label": "5"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 52.4,
+      "y": 52.6,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 62.4,
+      "y": 53,
+      "label": "3"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 81,
+      "y": 40,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 81,
+      "y": 23,
+      "label": "9"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 57.5,
+      "y": 2.4,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 46.5,
+      "y": 6.2
+     },
+     {
+      "id": "b2",
+      "x": 69,
+      "y": 6.2
+     },
+     {
+      "id": "s1",
+      "x": 53.2,
+      "y": 2.4
+     }
+    ],
+    "steps": [
+     {
+      "label": "Scharf abdrehen am Hütchen",
+      "say": "Neon sechs bremst kurz vor dem Hütchen mit kleinen Schritten ab und drückt sich sofort in die neue Richtung ab.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         39.4,
+         38
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n6",
+        "to": [
+         30.6,
+         28
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n6",
+        "to": [
+         39.4,
+         18
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Direkt abschließen",
+      "say": "Oben holt er den Ball und dribbelt zurück. Unten kommt der Rückpass in den Lauf, und Neon sechs schießt ihn mit einem Kontakt ins Minitor. Dann klatscht er Neon sieben ab, der als Nächster läuft.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         30.6,
+         8.6
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n6",
+        "to": [
+         45.6,
+         6.8
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n6",
+        "to": [
+         46.2,
+         31.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         40.6,
+         52.3
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n6",
+        "to": [
+         47.4,
+         37
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         47.4,
+         37.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         46.4,
+         50.3
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Die zweite Runde läuft ohne Ball.",
+   "title": "Die Runde ohne Ball",
+   "text": "Sind alle vier mit Ball durch, kommt sofort die zweite Runde ohne Ball. Jetzt zählt nur noch das Tempo: Zickzack nach oben, in der Dribbelbahn gerade zurück sprinten und abklatschen. Das Team, das zuerst wieder komplett am Start steht, gewinnt die Staffel.",
+   "board": {
+    "players": [
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 30,
+      "y": 52.6,
+      "label": "6"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 40.4,
+      "y": 53,
+      "label": "7"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 19.5,
+      "y": 40,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 19.5,
+      "y": 23,
+      "label": "5"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 52.4,
+      "y": 52.6,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 62.4,
+      "y": 53,
+      "label": "3"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 81,
+      "y": 40,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 81,
+      "y": 23,
+      "label": "9"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 57.5,
+      "y": 2.4,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "s1",
+      "x": 53.2,
+      "y": 2.4
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zickzack nach oben",
+      "say": "Neon sechs und Rot zwei sprinten wieder gleichzeitig im Zickzack nach oben, diesmal ohne Ball.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         39.4,
+         38
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n6",
+        "to": [
+         30.6,
+         28
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n6",
+        "to": [
+         39.4,
+         18
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n6",
+        "to": [
+         30.6,
+         8.6
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r2",
+        "to": [
+         61.9,
+         38
+        ],
+        "type": "lauf",
+        "delay": 0.15
+       },
+       {
+        "who": "r2",
+        "to": [
+         53.1,
+         28
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r2",
+        "to": [
+         61.9,
+         18
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r2",
+        "to": [
+         53.1,
+         8.6
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Gerade zurück, abklatschen",
+      "say": "Oben wechseln sie in die Nebenbahn, sprinten gerade zurück und klatschen den Nächsten ab, der sofort startet. Wer zuerst wieder komplett am Start steht, gewinnt die Staffel.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         46.2,
+         8
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n6",
+        "to": [
+         42.6,
+         51.6
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n7",
+        "to": [
+         30.6,
+         50.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n7",
+        "to": [
+         39.4,
+         38
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r2",
+        "to": [
+         68.6,
+         8
+        ],
+        "type": "lauf",
+        "delay": 0.15
+       },
+       {
+        "who": "r2",
+        "to": [
+         64.6,
+         51.6
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r3",
+        "to": [
+         53,
+         50.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r3",
+        "to": [
+         61.9,
+         38
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Daneben schießen kostet Zeit.",
+   "title": "Daneben kostet Zeit",
+   "text": "Jetzt zählt jedes Tor einen Punkt für das Team, und Daneben schießen wird bestraft: Geht der Abschluss am Minitor vorbei, muss das ganze Team zwei Sekunden warten, bevor der Nächste starten darf. So zählt Genauigkeit genauso viel wie Tempo.",
+   "board": {
+    "players": [
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 47.4,
+      "y": 37,
+      "label": "6"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 40.4,
+      "y": 53,
+      "label": "7"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 19.5,
+      "y": 40,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 19.5,
+      "y": 23,
+      "label": "5"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 69.4,
+      "y": 37,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 62.4,
+      "y": 53,
+      "label": "3"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 81,
+      "y": 40,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 81,
+      "y": 23,
+      "label": "9"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 57.5,
+      "y": 2.4,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 47.4,
+      "y": 37.6
+     },
+     {
+      "id": "b2",
+      "x": 69.4,
+      "y": 37.6
+     },
+     {
+      "id": "s1",
+      "x": 53.2,
+      "y": 2.4
+     }
+    ],
+    "steps": [
+     {
+      "label": "Rot trifft, Neon schießt daneben",
+      "say": "Rot zwei trifft ins Minitor, und das gibt einen Punkt für Team Rot. Neon sechs schießt am Minitor vorbei.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         68.3,
+         50.3
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         41.4,
+         51.2
+        ],
+        "type": "pass",
+        "delay": 0.15
+       }
+      ]
+     },
+     {
+      "label": "Rot startet, Neon wartet",
+      "say": "Rot zwei klatscht Rot drei ab, der sofort startet. Team Neon muss zwei Sekunden warten, erst dann darf Neon sieben loslaufen.",
+      "moves": [
+       {
+        "who": "r2",
+        "to": [
+         64.6,
+         51.6
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r3",
+        "to": [
+         53,
+         50.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r3",
+        "to": [
+         61.9,
+         38
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n6",
+        "to": [
+         42.6,
+         51.6
+        ],
+        "type": "lauf",
+        "delay": 0.15
+       },
+       {
+        "who": "n7",
+        "to": [
+         30.6,
+         50.5
+        ],
+        "type": "lauf",
+        "delay": 2.2
+       },
+       {
+        "who": "n7",
+        "to": [
+         39.4,
+         38
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

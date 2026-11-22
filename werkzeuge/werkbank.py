@@ -29,9 +29,12 @@
 #                                                     die nicht im Schema stehen).
 #
 # datei.json = eine Einheit (Objekt) oder eine Liste von Einheiten, genau so, wie sie in die Datenbank geht.
+
 import copy, html, json, os, re, subprocess, sys
 
-ROOT_FOLDER = "15vJlAOsoRr8vrFuaU0TvQZJMs4doaw0a"
+# Drive-Ordner der Pläne: U9-U11 (erster Plan) und U12-U14 (ab 22.11.2026). Umschalten mit TK_PLAN=u12 (Standard: u12)
+ORDNER = {"u9": "1PAVZ8RM1mk7ADyzNj-AlE-SmivHmAgYY", "u12": "1toSAscipZG3m0iyo2vHFqI68R1XH7lz8"}
+ROOT_FOLDER = ORDNER[os.environ.get("TK_PLAN", "u12")]
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 
