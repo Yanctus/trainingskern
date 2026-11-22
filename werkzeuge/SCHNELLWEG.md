@@ -19,6 +19,11 @@ README der App (Abschnitte „Übungen aus Video nachbauen“, „Laufweg-Abglei
 4. `python3 werkbank.py vorgaben "<Übungsname>"` für Altersstufen und Dauer (stehen nicht im PDF; feste Regel).
 
 ## Feste Regeln (vom Inhaber, 21.11.2026)
+- **Altersbereich = Plan, aus dem die Übung stammt** (Feld `altersbereiche`, unabhängig von `age_groups`): alle Übungen bis
+  einschließlich des ersten Plans sind `["U9-U11"]`. Jede Übung aus dem Plan U12-U14 bekommt `"U12-U14"`.
+  **Doppelte Übungen nicht neu bauen:** Gibt es die Übung schon (gleiche Organisation und Abläufe, evtl. anderer Name), die
+  bestehende Einheit benutzen und nur `"U12-U14"` ergänzen: `update_entities` mit `{"$addToSet": {"altersbereiche": "U12-U14"}}`.
+  Vorher abgleichen: `python3 werkbank.py lesen` und Titel, Beschreibung und Skizze vergleichen; im Zweifel den Inhaber fragen.
 - **Titel kurz** wie bei UE-001 bis UE-030: höchstens 32 Zeichen, kein Untertitel nach dem Doppelpunkt (z. B. „Verteidigen zu zweit“).
 - **Ein Tor ist immer ein Punkt:** „…, und das gibt einen Punkt für Team Neon“ (oder für Spieler X), nie „das gibt ein Tor“. Label „…: Punkt“.
 - **Fangen, nicht abschlagen:** Kinder fangen sich (berühren), sie schlagen nicht ab.
