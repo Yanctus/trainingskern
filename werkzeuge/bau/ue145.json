@@ -1,0 +1,499 @@
+{
+ "title": "Torwart-Rondo gegen Pressing",
+ "code": "UE-145",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel",
+  "Ballannahme"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 6,
+ "players_max": 8,
+ "field_size": "9 x 14 m",
+ "description": "Ein Rondo für den Spielaufbau mit Torwart. Der Torwart steht unten, ein Sechser oben, zwei Spieler an den Seiten. Zwei Verteidiger pressen in der Mitte. Das Team bringt den Ball von unten nach oben und wieder zurück, entweder außen herum oder durch die Lücke zwischen den Verteidigern. Der Torwart hebt dabei immer wieder den Kopf und entscheidet: außen herum oder durch die Mitte.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 9 mal 14 Metern. Der Torwart steht an der unteren Linie, ein Sechser oder zweiter Torwart an der oberen.",
+  "Verteilen: Zwei Spieler stehen links und rechts an den Seiten, zwei Verteidiger in der Mitte. Der Trainer steht am Rand mit Bällen.",
+  "Ablauf: Der Ball soll von einer Seite zur anderen. Ist die Lücke zwischen den Verteidigern zu, geht es außen herum, ist sie offen, durch die Mitte.",
+  "Wertung und Wechsel: Kommt der Ball auf der anderen Seite an, gibt das einen Punkt. Erobern die Verteidiger den Ball, tauschen sie mit den Spielern an den Seiten. Die Torhüter bleiben."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Offen stehen, nach vorn schauen und immer wieder den Kopf heben",
+  "Den Druck lesen: außen herum, wenn die Lücke zu ist, durch die Mitte, wenn sie offen ist",
+  "Feste, genaue Pässe, damit das Tempo bleibt",
+  "Mit dem hinteren Fuß annehmen und vom Gegner weg mitnehmen"
+ ],
+ "materials": [
+  "4 Hütchen",
+  "2 Dummys",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Torwart-Rondo gegen Pressing. Der Torwart spielt mit, und das Team bringt den Ball an zwei Verteidigern vorbei von unten nach oben.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 36,
+    "y": 6,
+    "w": 28,
+    "h": 42
+   }
+  ],
+  "cones": [],
+  "players": [
+   {
+    "id": "n1",
+    "team": "a",
+    "x": 50,
+    "y": 48,
+    "label": "TW"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 50,
+    "y": 6,
+    "label": "6"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 36,
+    "y": 44,
+    "label": "5"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 64,
+    "y": 44,
+    "label": "4"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 45.5,
+    "y": 27,
+    "label": "8"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 54.5,
+    "y": 27,
+    "label": "9"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 27,
+    "y": 22,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 50.6,
+    "y": 48.6
+   },
+   {
+    "id": "s1",
+    "x": 28.6,
+    "y": 25.5
+   },
+   {
+    "id": "s2",
+    "x": 25,
+    "y": 25.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Kopf hoch",
+    "say": "Der Torwart hat den Ball. Er hebt den Kopf und schaut, wie die beiden Verteidiger stehen. Die Lücke zwischen ihnen ist zu.",
+    "moves": [
+     {
+      "who": "n1",
+      "to": [
+       50,
+       27
+      ],
+      "type": "blick"
+     }
+    ]
+   },
+   {
+    "label": "Zur Seite",
+    "say": "Also spielt er nicht durch die Mitte, sondern zur Seite zu Neon fünf. Rot acht läuft sofort auf ihn zu.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       36.6,
+       44.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r8",
+      "to": [
+       43,
+       39
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Hoch zu Neon sechs: Punkt",
+    "say": "Neon fünf spielt direkt hoch zu Neon sechs. Der Ball ist auf der anderen Seite, und das gibt einen Punkt für Team Neon.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       6.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r8",
+      "to": [
+       45.5,
+       27
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Ballgewinn: Tausch",
+    "say": "Jetzt geht es zurück nach unten. Neon sechs spielt zu Neon vier, aber Rot neun fängt den Ball ab. Dann tauschen die Verteidiger mit Neon vier und Neon fünf, und es geht von vorn los.",
+    "moves": [
+     {
+      "who": "r9",
+      "to": [
+       56,
+       21
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       56.6,
+       21.6
+      ],
+      "type": "pass",
+      "delay": 0.2
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 36,
+    "y1": 58.6,
+    "x2": 64,
+    "y2": 58.6,
+    "text": "9 m"
+   },
+   {
+    "x1": 72,
+    "y1": 6,
+    "x2": 72,
+    "y2": 48,
+    "text": "14 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Durch die Mitte gibt es zwei Punkte.",
+   "title": "Durch die Lücke",
+   "text": "Außen herum gibt es einen Punkt, durch die Lücke zwischen den Verteidigern zwei. Aber nicht erzwingen: Erst wenn die Verteidiger auseinandergehen, ist die Lücke offen. Dann direkt durchspielen.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 50,
+      "y": 48,
+      "label": "TW"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 50,
+      "y": 6,
+      "label": "6"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 36,
+      "y": 44,
+      "label": "5"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 64,
+      "y": 44,
+      "label": "4"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 42,
+      "y": 27,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 58,
+      "y": 27,
+      "label": "9"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 27,
+      "y": 22,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 48.6
+     },
+     {
+      "id": "s1",
+      "x": 28.6,
+      "y": 25.5
+     },
+     {
+      "id": "s2",
+      "x": 25,
+      "y": 25.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Lücke offen",
+      "say": "Die Verteidiger stehen weit auseinander. Der Torwart hebt den Kopf und sieht: Die Lücke in der Mitte ist offen.",
+      "moves": [
+       {
+        "who": "n1",
+        "to": [
+         50,
+         27
+        ],
+        "type": "blick"
+       }
+      ]
+     },
+     {
+      "label": "Durch die Mitte: Punkte",
+      "say": "Er spielt den Ball flach durch die Lücke zu Neon sechs, und das gibt zwei Punkte für Team Neon. Dann geht es zurück nach unten.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         6.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r8",
+        "to": [
+         46,
+         24
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "r9",
+        "to": [
+         54,
+         24
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Hinter dem Dummy annehmen.",
+   "title": "Am Dummy vorbei",
+   "text": "Vor dem Torwart und vor Neon sechs steht ein Dummy. Wer den Ball gerade vor sich annimmt, spielt in den Dummy. Also mit dem hinteren Fuß annehmen und den Ball seitlich am Dummy vorbei mitnehmen. Dann ist der Passweg frei.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 50,
+      "y": 48,
+      "label": "TW"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 50,
+      "y": 6,
+      "label": "6"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 36,
+      "y": 44,
+      "label": "5"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 64,
+      "y": 44,
+      "label": "4"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 41,
+      "y": 27,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 59,
+      "y": 27,
+      "label": "9"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 27,
+      "y": 22,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 64.6,
+      "y": 44.6
+     },
+     {
+      "id": "s1",
+      "x": 28.6,
+      "y": 25.5
+     },
+     {
+      "id": "s2",
+      "x": 25,
+      "y": 25.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Annehmen, mitnehmen",
+      "say": "Neon vier spielt zum Torwart. Der nimmt den Ball mit dem hinteren Fuß an und nimmt ihn seitlich am Dummy vorbei mit.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         48.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n1",
+        "to": [
+         45,
+         48
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Passweg frei: Punkt",
+      "say": "Jetzt hebt er den Kopf, der Weg nach oben ist frei, und er spielt zu Neon sechs. Das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n1",
+        "to": [
+         49,
+         20
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         6.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "cones": [
+     {
+      "x": 51,
+      "y": 34,
+      "color": "orange",
+      "shape": "stange",
+      "id": "d1"
+     },
+     {
+      "x": 43,
+      "y": 9,
+      "color": "orange",
+      "shape": "stange",
+      "id": "d2"
+     }
+    ]
+   }
+  }
+ ]
+}

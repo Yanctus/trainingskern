@@ -1,0 +1,593 @@
+{
+ "title": "Aufbau mit dem dritten Mann",
+ "code": "UE-146",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel",
+  "Torschuss"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 5,
+ "players_max": 6,
+ "field_size": "14 x 27 m",
+ "description": "Ein festes Passmuster für den Spielaufbau mit dem Torwart. Drei Dummys stehen für zwei Stürmer und einen Mittelfeldspieler, die pressen. Der Torwart spielt nach außen, bekommt den Ball zurück und spielt steil in die Mitte. Von dort geht der Ball direkt in den Lauf des dritten Mannes, der ins Minitor schießt. Danach rücken alle eine Position weiter, die beiden Torhüter wechseln sich ab.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 14 mal 27 Metern in drei Zonen, oben zwei Minitore. Drei Dummys: zwei in der Mitte, einer oben.",
+  "Verteilen: Ein Torwart unten mit Ball, der zweite wartet daneben. Neon vier steht rechts, Neon sechs links, Neon fünf oben neben dem Dummy. Der Trainer steht links mit Bällen.",
+  "Ablauf: Pass nach außen zu Neon vier, zurück zum Torwart, steil zu Neon fünf. Der legt direkt in den Lauf von Neon sechs, und der schießt ins Minitor.",
+  "Wechsel: Nach dem Abschluss rücken alle eine Position weiter, und der zweite Torwart ist dran. Jedes Tor ist ein Punkt. Später auf der anderen Seite."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Genau passen, damit der Ablauf flüssig bleibt",
+  "Offen annehmen: so kann man aufdrehen oder zurücklegen",
+  "Mit einer Doppelbewegung vom Gegenspieler lösen",
+  "Den Ball in den Lauf des dritten Mannes spielen"
+ ],
+ "materials": [
+  "3 Dummys",
+  "2 Minitore",
+  "4 Hütchen",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Aufbau mit dem dritten Mann. Der Torwart spielt mit, und mit einem festen Passmuster kommt der Ball an drei Gegnern vorbei bis zum Abschluss.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 37,
+    "y": 5,
+    "w": 26,
+    "h": 52
+   },
+   {
+    "type": "line",
+    "x1": 37,
+    "y1": 20,
+    "x2": 63,
+    "y2": 20,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 37,
+    "y1": 42,
+    "x2": 63,
+    "y2": 42,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 42,
+    "y": 5,
+    "side": "top"
+   },
+   {
+    "x": 58.5,
+    "y": 5,
+    "side": "top"
+   }
+  ],
+  "cones": [
+   {
+    "x": 50.2,
+    "y": 12.8,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 44.7,
+    "y": 29.7,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 55.4,
+    "y": 29.7,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n1",
+    "team": "a",
+    "x": 50.5,
+    "y": 51.3,
+    "label": "TW"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 59,
+    "y": 35,
+    "label": "4"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 42,
+    "y": 35,
+    "label": "6"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 55,
+    "y": 14,
+    "label": "5"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 28,
+    "y": 46,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 51.1,
+    "y": 51.9
+   },
+   {
+    "id": "s1",
+    "x": 29.6,
+    "y": 49.5
+   },
+   {
+    "id": "s2",
+    "x": 26,
+    "y": 49.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pass nach außen",
+    "say": "Neon vier läuft nach außen, und der Torwart spielt ihn an. Dann rückt der Torwart ein Stück nach vorn.",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       61.5,
+       30.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       62.1,
+       31.1
+      ],
+      "type": "pass",
+      "delay": 0.3
+     },
+     {
+      "who": "n1",
+      "to": [
+       51,
+       40
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zurück zum Torwart",
+    "say": "Neon vier legt den Ball zurück zum Torwart. Gleichzeitig kommt Neon fünf dem Ball entgegen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       51.6,
+       40.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n5",
+      "to": [
+       51,
+       21
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Steil auf Neon fünf",
+    "say": "Der Torwart spielt steil zu Neon fünf, an den beiden Stürmern vorbei. Neon sechs startet schon nach vorn.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       51.6,
+       21.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n6",
+      "to": [
+       39.5,
+       29
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Dritter Mann: Punkt",
+    "say": "Neon fünf legt den Ball direkt in den Lauf von Neon sechs, und der schießt ins linke Minitor. Das gibt einen Punkt für Team Neon. Dann rücken alle eine Position weiter, und der zweite Torwart ist dran.",
+    "moves": [
+     {
+      "who": "n6",
+      "to": [
+       41,
+       22
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       41.6,
+       22.6
+      ],
+      "type": "pass",
+      "delay": 0.2
+     },
+     {
+      "who": "b1",
+      "to": [
+       42,
+       5.3
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 37,
+    "y1": 58.6,
+    "x2": 63,
+    "y2": 58.6,
+    "text": "14 m"
+   },
+   {
+    "x1": 70,
+    "y1": 5,
+    "x2": 70,
+    "y2": 57,
+    "text": "27 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Die Doppelbewegung.",
+   "title": "Doppelbewegung",
+   "text": "Wer einfach stehen bleibt, wird vom Gegner zugestellt. Neon fünf läuft deshalb erst vom Ball weg, als wolle er in die Tiefe, und kommt dann scharf entgegen. So löst er sich vom Gegner und ist frei.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 51,
+      "y": 40,
+      "label": "TW"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 61.5,
+      "y": 30.5,
+      "label": "4"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 42,
+      "y": 35,
+      "label": "6"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 55,
+      "y": 14,
+      "label": "5"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 28,
+      "y": 46,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 51.6,
+      "y": 40.6
+     },
+     {
+      "id": "s1",
+      "x": 29.6,
+      "y": 49.5
+     },
+     {
+      "id": "s2",
+      "x": 26,
+      "y": 49.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Erst weg vom Ball",
+      "say": "Der Torwart hat den Ball zurück. Neon fünf läuft zuerst weg, als wolle er in die Tiefe.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         58.5,
+         9
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Dann entgegen: Punkt",
+      "say": "Dann kommt er scharf entgegen und ist frei. Der Torwart spielt ihn an, er legt direkt auf Neon sechs, und der trifft ins Minitor. Das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         51,
+         21
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         51.6,
+         21.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n6",
+        "to": [
+         39.5,
+         29
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n6",
+        "to": [
+         41,
+         22
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         41.6,
+         22.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         42,
+         5.3
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Das Muster auf der anderen Seite.",
+   "title": "Andere Seite",
+   "text": "Jetzt läuft alles spiegelverkehrt: Neon sechs geht links nach außen, und Neon vier ist der dritte Mann. So übt jeder beide Seiten und beide Füße.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 50.5,
+      "y": 51.3,
+      "label": "TW"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 59,
+      "y": 35,
+      "label": "4"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 42,
+      "y": 35,
+      "label": "6"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 55,
+      "y": 14,
+      "label": "5"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 28,
+      "y": 46,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 51.1,
+      "y": 51.9
+     },
+     {
+      "id": "s1",
+      "x": 29.6,
+      "y": 49.5
+     },
+     {
+      "id": "s2",
+      "x": 26,
+      "y": 49.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Links heraus, zurück",
+      "say": "Neon sechs läuft links nach außen und bekommt den Ball vom Torwart. Der rückt nach vorn, und Neon sechs legt zurück. Neon fünf kommt entgegen.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         38.5,
+         30.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         39.1,
+         31.1
+        ],
+        "type": "pass",
+        "delay": 0.3
+       },
+       {
+        "who": "n1",
+        "to": [
+         51,
+         40
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         51.6,
+         40.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n5",
+        "to": [
+         51,
+         21
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       }
+      ]
+     },
+     {
+      "label": "Dritter Mann rechts: Punkt",
+      "say": "Der Torwart spielt steil zu Neon fünf, der legt in den Lauf von Neon vier, und Neon vier trifft ins rechte Minitor. Das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         51.6,
+         21.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n4",
+        "to": [
+         60.5,
+         28
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n4",
+        "to": [
+         59,
+         22
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         59.6,
+         22.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         58.5,
+         5.3
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
