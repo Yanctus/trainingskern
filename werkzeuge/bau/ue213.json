@@ -1,0 +1,1018 @@
+{
+ "title": "Vom Gegenspieler lösen",
+ "code": "UE-213",
+ "kind": "Übungsform",
+ "focuses": [
+  "Bewegung",
+  "Passspiel",
+  "Ballannahme"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 10,
+ "players_max": 10,
+ "field_size": "18 x 14 m",
+ "description": "In zwei Quadraten spielen je drei Anspieler außen mit Ball. In der Mitte will sich ein Spieler von seinem Gegenspieler lösen und mit jedem Anspieler einen Doppelpass spielen. Kurze, schnelle Bewegungen und Finten bringen ihn frei. Erobert der Gegenspieler den Ball, tauschen die beiden die Rollen.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 14 Metern. Darin zwei Quadrate aus Hütchen nebeneinander.",
+  "Verteilen: An jedem Quadrat drei Anspieler von Team Neon mit Ball. In der Mitte ein Spieler von Team Neon und ein Gegenspieler von Team Rot.",
+  "Ablauf: In beiden Quadraten gleichzeitig löst sich der Spieler in der Mitte und lässt den Pass direkt zum Anspieler zurückprallen. Danach bietet er sich dem nächsten Anspieler an.",
+  "Wertung und Wechsel: Ein Doppelpass mit allen drei Anspielern gibt drei Punkte, dann wechselt der Spieler mit einem Anspieler. Erobert der Gegenspieler den Ball, tauschen die beiden die Rollen."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Kurze, schnelle Bewegungen, um frei zu werden",
+  "Mit Ruf oder Handzeichen den Ball fordern",
+  "Den Ball direkt und genau zurückspielen",
+  "Erst weglaufen, dann kurz kommen: die Doppelbewegung"
+ ],
+ "materials": [
+  "8 Hütchen",
+  "6 Bälle und Ersatzbälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Vom Gegenspieler lösen. Der Spieler in der Mitte schüttelt seinen Gegenspieler ab und spielt Doppelpässe mit drei Anspielern.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 18,
+    "y": 5,
+    "w": 64,
+    "h": 43
+   }
+  ],
+  "cones": [
+   {
+    "x": 26,
+    "y": 15.5,
+    "color": "orange"
+   },
+   {
+    "x": 26,
+    "y": 38.5,
+    "color": "orange"
+   },
+   {
+    "x": 44,
+    "y": 15.5,
+    "color": "orange"
+   },
+   {
+    "x": 44,
+    "y": 38.5,
+    "color": "orange"
+   },
+   {
+    "x": 56,
+    "y": 15.5,
+    "color": "orange"
+   },
+   {
+    "x": 56,
+    "y": 38.5,
+    "color": "orange"
+   },
+   {
+    "x": 74,
+    "y": 15.5,
+    "color": "orange"
+   },
+   {
+    "x": 74,
+    "y": 38.5,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 22,
+    "y": 26,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 45,
+    "y": 9.5,
+    "label": "3"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 33,
+    "y": 44,
+    "label": "4"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 31,
+    "y": 25,
+    "label": "5"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 39.5,
+    "y": 27,
+    "label": "10"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 78,
+    "y": 26,
+    "label": "6"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 55,
+    "y": 9.5,
+    "label": "7"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 67,
+    "y": 44,
+    "label": "8"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 69,
+    "y": 25,
+    "label": "9"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 60.5,
+    "y": 27,
+    "label": "11"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 50,
+    "y": 52,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b2",
+    "x": 22.6,
+    "y": 26.6
+   },
+   {
+    "id": "b3",
+    "x": 45.6,
+    "y": 10.1
+   },
+   {
+    "id": "b4",
+    "x": 33.6,
+    "y": 44.6
+   },
+   {
+    "id": "b6",
+    "x": 78.6,
+    "y": 26.6
+   },
+   {
+    "id": "b7",
+    "x": 55.6,
+    "y": 10.1
+   },
+   {
+    "id": "b8",
+    "x": 67.6,
+    "y": 44.6
+   },
+   {
+    "id": "s1",
+    "x": 53.6,
+    "y": 55.5
+   },
+   {
+    "id": "s2",
+    "x": 50,
+    "y": 55.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Lösen",
+    "say": "In beiden Quadraten geht es gleichzeitig los. Wir schauen nach links: Neon fünf täuscht nach oben an und startet dann schnell zu Neon zwei. Rot zehn kommt zu spät. Rechts macht Neon neun das Gleiche.",
+    "moves": [
+     {
+      "who": "n5",
+      "to": [
+       34.5,
+       21
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r10",
+      "to": [
+       36.5,
+       23.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n5",
+      "to": [
+       27.5,
+       28.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r10",
+      "to": [
+       32.5,
+       28
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n9",
+      "to": [
+       65.5,
+       21
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r11",
+      "to": [
+       63.5,
+       23.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n9",
+      "to": [
+       72.5,
+       28.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r11",
+      "to": [
+       67.5,
+       28
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Doppelpass eins",
+    "say": "Neon zwei passt zu Neon fünf, und Neon fünf spielt direkt zurück. Gleichzeitig spielt rechts Neon sechs mit Neon neun.",
+    "moves": [
+     {
+      "who": "b2",
+      "to": [
+       28.1,
+       29.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b2",
+      "to": [
+       22.6,
+       26.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b6",
+      "to": [
+       73.1,
+       29.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b6",
+      "to": [
+       78.6,
+       26.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Doppelpass zwei",
+    "say": "Jetzt Neon drei oben: Neon fünf täuscht nach unten an, dreht ab und sprintet nach oben. Neon drei passt, und Neon fünf spielt direkt zurück.",
+    "moves": [
+     {
+      "who": "n5",
+      "to": [
+       26.5,
+       33
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r10",
+      "to": [
+       31,
+       31.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n5",
+      "to": [
+       27,
+       24
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n5",
+      "to": [
+       37.5,
+       19
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b3",
+      "to": [
+       38.1,
+       19.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b3",
+      "to": [
+       45.6,
+       10.1
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n9",
+      "to": [
+       73.5,
+       33
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r11",
+      "to": [
+       69,
+       31.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n9",
+      "to": [
+       73,
+       24
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n9",
+      "to": [
+       62.5,
+       19
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b7",
+      "to": [
+       63.1,
+       19.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b7",
+      "to": [
+       55.6,
+       10.1
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Drei Pässe: Punkt",
+    "say": "Zum Schluss Neon vier unten: Neon fünf löst sich, bekommt den Pass und spielt direkt zurück. Mit allen drei Anspielern geklappt, und das gibt drei Punkte für Neon fünf. Danach geht Neon vier in die Mitte, und Neon fünf wird Anspieler.",
+    "moves": [
+     {
+      "who": "r10",
+      "to": [
+       36,
+       25
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n5",
+      "to": [
+       42,
+       25.5
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n5",
+      "to": [
+       37,
+       36
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b4",
+      "to": [
+       37.6,
+       36.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b4",
+      "to": [
+       33.6,
+       44.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r11",
+      "to": [
+       64,
+       25
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n9",
+      "to": [
+       58,
+       25.5
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n9",
+      "to": [
+       63,
+       36
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b8",
+      "to": [
+       63.6,
+       36.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b8",
+      "to": [
+       67.6,
+       44.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Die Doppelbewegung.",
+   "title": "Erst weg, dann kurz",
+   "text": "Der Spieler in der Mitte läuft zuerst vom Anspieler weg und nimmt seinen Gegenspieler mit. Dann stoppt er und kommt schnell kurz zurück. So gewinnt er den Abstand, den er für den Pass braucht.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 22,
+      "y": 26,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 45,
+      "y": 9.5,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 33,
+      "y": 44,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 31,
+      "y": 25,
+      "label": "5"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 39.5,
+      "y": 27,
+      "label": "10"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 78,
+      "y": 26,
+      "label": "6"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 55,
+      "y": 9.5,
+      "label": "7"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 67,
+      "y": 44,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 69,
+      "y": 25,
+      "label": "9"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 60.5,
+      "y": 27,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 52,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b2",
+      "x": 22.6,
+      "y": 26.6
+     },
+     {
+      "id": "b3",
+      "x": 45.6,
+      "y": 10.1
+     },
+     {
+      "id": "b4",
+      "x": 33.6,
+      "y": 44.6
+     },
+     {
+      "id": "b6",
+      "x": 78.6,
+      "y": 26.6
+     },
+     {
+      "id": "b7",
+      "x": 55.6,
+      "y": 10.1
+     },
+     {
+      "id": "b8",
+      "x": 67.6,
+      "y": 44.6
+     },
+     {
+      "id": "s1",
+      "x": 53.6,
+      "y": 55.5
+     },
+     {
+      "id": "s2",
+      "x": 50,
+      "y": 55.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Erst weg",
+      "say": "In beiden Quadraten gleichzeitig: Neon fünf läuft zuerst von Neon zwei weg nach oben. Rot zehn geht mit.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         35,
+         19
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r10",
+        "to": [
+         40,
+         20
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n9",
+        "to": [
+         65,
+         19
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r11",
+        "to": [
+         60,
+         20
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Dann kurz",
+      "say": "Jetzt stoppt Neon fünf und kommt schnell kurz zu Neon zwei. Rot zehn ist zu weit weg, und Neon fünf lässt den Pass direkt zurückprallen.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         27.5,
+         28.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r10",
+        "to": [
+         33,
+         26
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "b2",
+        "to": [
+         28.1,
+         29.1
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b2",
+        "to": [
+         22.6,
+         26.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n9",
+        "to": [
+         72.5,
+         28.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r11",
+        "to": [
+         67,
+         26
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "b6",
+        "to": [
+         73.1,
+         29.1
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b6",
+        "to": [
+         78.6,
+         26.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Eng dranbleiben und abfangen.",
+   "title": "Eng dran und abfangen",
+   "text": "Auch der Gegenspieler lernt dabei. Er bleibt eng am Spieler in der Mitte und liest seine Bewegung. Erobert er den Ball, tauschen die beiden sofort die Rollen.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 22,
+      "y": 26,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 45,
+      "y": 9.5,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 33,
+      "y": 44,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 31,
+      "y": 25,
+      "label": "5"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 39.5,
+      "y": 27,
+      "label": "10"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 78,
+      "y": 26,
+      "label": "6"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 55,
+      "y": 9.5,
+      "label": "7"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 67,
+      "y": 44,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 69,
+      "y": 25,
+      "label": "9"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 60.5,
+      "y": 27,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 52,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b2",
+      "x": 22.6,
+      "y": 26.6
+     },
+     {
+      "id": "b3",
+      "x": 45.6,
+      "y": 10.1
+     },
+     {
+      "id": "b4",
+      "x": 33.6,
+      "y": 44.6
+     },
+     {
+      "id": "b6",
+      "x": 78.6,
+      "y": 26.6
+     },
+     {
+      "id": "b7",
+      "x": 55.6,
+      "y": 10.1
+     },
+     {
+      "id": "b8",
+      "x": 67.6,
+      "y": 44.6
+     },
+     {
+      "id": "s1",
+      "x": 53.6,
+      "y": 55.5
+     },
+     {
+      "id": "s2",
+      "x": 50,
+      "y": 55.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Abgefangen",
+      "say": "Wir schauen nach links: Neon fünf läuft zu spät los. Rot zehn bleibt eng dran, geht vor ihn und fängt den Pass von Neon zwei ab. Rechts klappt der Doppelpass.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         27.5,
+         28.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r10",
+        "to": [
+         29,
+         25
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       },
+       {
+        "who": "b2",
+        "to": [
+         29.6,
+         25.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       },
+       {
+        "who": "n9",
+        "to": [
+         72.5,
+         28.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b6",
+        "to": [
+         73.1,
+         29.1
+        ],
+        "type": "pass",
+        "delay": 0.3
+       },
+       {
+        "who": "b6",
+        "to": [
+         78.6,
+         26.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Rollen tauschen",
+      "say": "Jetzt ist Rot zehn der Spieler in der Mitte, und Neon fünf wird Gegenspieler. Rot zehn spielt den Ball zurück zu Neon zwei, und weiter geht es.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         22.6,
+         26.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r10",
+        "to": [
+         34,
+         22
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n5",
+        "to": [
+         37,
+         28
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

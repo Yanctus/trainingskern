@@ -3,3 +3,8 @@ import/
 *.png
 *.html
 *.js.js
+/ue*.json
+/e2*.json
+/db.json
+/ue*-3d.js
+/ue*.html.js

@@ -47,7 +47,7 @@ u = {"title": "Den zweiten Ball gewinnen", "code": "UE-188", "kind": "Spielform"
     "Bei einem freien Ball zwischen zwei Spielern gewinnt der, der entschlossener ist. Also mit vollem Tempo hin, laut rufen und den Körper zwischen Ball und Gegner bringen.",
     sp(), [B("b1", 24.6, 18.6)] + ERSATZ,
     [S("Freier Ball", "Der Trainer wirft den Ball springend zwischen Neon zwei und Rot elf. Beide sprinten los.",
-       ps("b1", [36.6, 34.6]), mv("n2", [36, 37], delay=0.2), mv("r11", [35, 29], delay=0.2)),
+       ps("b1", [36.6, 34.6]), mv("n2", [36, 34], delay=0.2), mv("r11", [35, 29], delay=0.2)),
      S("Meiner!", "Neon zwei ruft laut „Meiner!“, ist zuerst am Ball und stellt den Körper zwischen Ball und Gegner.",
        mv("r11", [34, 30])),
      S("Ball behalten", "Neon zwei behält den Ball und spielt zu Neon vier. Jetzt ist Team Neon am Ball und greift an.",
