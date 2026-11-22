@@ -1,0 +1,668 @@
+{
+ "title": "Durch die Mitte zum Abschluss",
+ "code": "UE-194",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel",
+  "Torschuss"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 8,
+ "players_max": 12,
+ "field_size": "18 x 27 m",
+ "description": "Ein Angriff wird über die Mitte aufgebaut und mit einer Flanke abgeschlossen. Der Ball läuft von hinten über die Zehn zurück zur Acht, dann in die Spitze zur Neun und nach außen zum Flügel. Der Flügel flankt, die Neun dreht sich in den Strafraum, und der andere Flügel kommt an den langen Pfosten. Danach rücken alle eine Position weiter.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 27 Metern mit einem Jugendtor oben. Drei Stangen als Gegenspieler in der Mitte und unten links, zwei Hütchen für die Flügel.",
+  "Verteilen: Ein Torwart steht im Tor. Team Neon besetzt sieben Positionen: vier und acht hinten, zehn in der Mitte, neun vorn, elf und sieben außen. Neon sechs wartet rechts mit Bällen, der Trainer steht links.",
+  "Ablauf: Neon vier spielt zu Neon zehn, der lässt zu Neon acht abprallen. Neon acht spielt in die Spitze zu Neon neun, der spielt direkt nach außen zu Neon elf. Neon elf flankt, Neon neun und Neon sieben laufen in den Strafraum.",
+  "Wertung und Wechsel: Jeder Treffer gibt einen Punkt für Team Neon. Danach rücken alle eine Position weiter, und der nächste Angriff startet. Ab und zu auf der anderen Seite beginnen."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Saubere Pässe und Ballannahme bestimmen das Tempo",
+  "Erst weglaufen, dann anbieten",
+  "Die Läufe so starten, dass der Ball im Lauf kommt",
+  "Nach dem Pass sofort in den Strafraum, gut flanken und ruhig abschließen"
+ ],
+ "materials": [
+  "1 Jugendtor",
+  "3 Stangen",
+  "2 Hütchen",
+  "Viele Bälle",
+  "Leibchen"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Durch die Mitte zum Abschluss. Team Neon spielt den Ball durch die Mitte nach vorn und schließt nach einer Flanke ab.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 33,
+    "y": 5,
+    "w": 34,
+    "h": 48
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "jugend"
+   }
+  ],
+  "cones": [
+   {
+    "x": 49,
+    "y": 19.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 52,
+    "y": 35,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 43.5,
+    "y": 45,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 39.5,
+    "y": 25.5,
+    "color": "neon"
+   },
+   {
+    "x": 60.5,
+    "y": 25.5,
+    "color": "neon"
+   }
+  ],
+  "players": [
+   {
+    "id": "k",
+    "team": "t",
+    "x": 50,
+    "y": 8.5,
+    "label": "TW"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 46,
+    "y": 25.5,
+    "label": "9"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 36,
+    "y": 25,
+    "label": "11"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 64,
+    "y": 25,
+    "label": "7"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 54,
+    "y": 41.5,
+    "label": "10"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 38,
+    "y": 50,
+    "label": "8"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 62.5,
+    "y": 50.5,
+    "label": "4"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 71.5,
+    "y": 54,
+    "label": "6"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 25,
+    "y": 38,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 63.1,
+    "y": 51.1
+   },
+   {
+    "id": "s1",
+    "x": 28.6,
+    "y": 41.5
+   },
+   {
+    "id": "s2",
+    "x": 25,
+    "y": 41.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Abprallen lassen",
+    "say": "Neon vier spielt in die Mitte zu Neon zehn. Gleichzeitig läuft Neon acht kurz weg und kommt wieder zurück. Neon zehn lässt den Ball direkt zu Neon acht abprallen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       54.6,
+       42.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n8",
+      "to": [
+       35.5,
+       44
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n8",
+      "to": [
+       38.5,
+       50
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       39.1,
+       50.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "In die Spitze",
+    "say": "Neon acht spielt den Ball nach vorn in die Spitze zu Neon neun.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       46.6,
+       26.1
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Direkt nach außen",
+    "say": "Neon elf läuft nach vorn, und Neon neun spielt den Ball direkt zu ihm nach außen.",
+    "moves": [
+     {
+      "who": "n11",
+      "to": [
+       38,
+       15.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       38.6,
+       16.1
+      ],
+      "type": "pass",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Flanke: Punkt",
+    "say": "Neon neun dreht sich um die Stange in den Strafraum, Neon sieben läuft an den langen Pfosten. Neon elf schaut hoch und flankt zu Neon sieben. Der schießt direkt ins Tor, und das gibt einen Punkt für Team Neon. Danach rücken alle eine Position weiter, und Neon sechs startet den nächsten Angriff.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       53.5,
+       21
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n9",
+      "to": [
+       51,
+       13.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n9",
+      "to": [
+       45.5,
+       11.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       57.5,
+       14.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n11",
+      "to": [
+       56,
+       14.5
+      ],
+      "type": "blick",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       58.1,
+       15.1
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       53.5,
+       5.4
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 33,
+    "y1": 58.6,
+    "x2": 67,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 78,
+    "y1": 5,
+    "x2": 78,
+    "y2": 53,
+    "text": "27 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Erst weglaufen, dann anbieten.",
+   "title": "Weg und zurück",
+   "text": "Wer sich anbietet, läuft zuerst ein Stück weg, als würde er seinen Gegenspieler mitnehmen. Dann kommt er schnell zurück und zeigt sich. So ist er frei, wenn der Pass kommt.",
+   "board": {
+    "players": [
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50,
+      "y": 8.5,
+      "label": "TW"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 46,
+      "y": 25.5,
+      "label": "9"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 36,
+      "y": 25,
+      "label": "11"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 64,
+      "y": 25,
+      "label": "7"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 54,
+      "y": 41.5,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 38,
+      "y": 50,
+      "label": "8"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 62.5,
+      "y": 50.5,
+      "label": "4"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 71.5,
+      "y": 54,
+      "label": "6"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 25,
+      "y": 38,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 38.6,
+      "y": 50.6
+     },
+     {
+      "id": "s1",
+      "x": 28.6,
+      "y": 41.5
+     },
+     {
+      "id": "s2",
+      "x": 25,
+      "y": 41.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Erst weg",
+      "say": "Neon acht hat den Ball. Neon neun läuft erst weg, hinter die Stange, als ob er seinen Gegenspieler mitnimmt.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         45,
+         17.5
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Dann zeigen",
+      "say": "Dann kommt Neon neun schnell zurück und zeigt sich. Jetzt ist er frei, und Neon acht spielt ihn an.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         47,
+         26
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         47.6,
+         26.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Direkt weiter",
+      "say": "Neon neun spielt direkt weiter zu Neon elf, und der Angriff läuft weiter wie in der Grundform.",
+      "moves": [
+       {
+        "who": "n11",
+        "to": [
+         38,
+         15.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         38.6,
+         16.1
+        ],
+        "type": "pass",
+        "delay": 0.3
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Der dritte Mann kommt aus dem Mittelfeld.",
+   "title": "Der dritte Mann",
+   "text": "Jetzt wechseln die Spieler die Abfolge. Neon acht spielt gleich in die Spitze, Neon neun legt ab, und Neon acht startet nach vorn. Der Steilpass kommt in seinen Lauf, und er schließt selbst ab.",
+   "board": {
+    "players": [
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50,
+      "y": 8.5,
+      "label": "TW"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 46,
+      "y": 25.5,
+      "label": "9"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 36,
+      "y": 25,
+      "label": "11"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 64,
+      "y": 25,
+      "label": "7"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 54,
+      "y": 41.5,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 38,
+      "y": 50,
+      "label": "8"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 62.5,
+      "y": 50.5,
+      "label": "4"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 71.5,
+      "y": 54,
+      "label": "6"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 25,
+      "y": 38,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 38.6,
+      "y": 50.6
+     },
+     {
+      "id": "s1",
+      "x": 28.6,
+      "y": 41.5
+     },
+     {
+      "id": "s2",
+      "x": 25,
+      "y": 41.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "In die Spitze",
+      "say": "Neon acht spielt gleich in die Spitze zu Neon neun.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         46.6,
+         26.1
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Ablegen",
+      "say": "Neon zehn rückt nach, und Neon neun legt den Ball zu ihm ab. Gleichzeitig startet Neon acht aus dem Mittelfeld nach vorn.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         55,
+         33
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         55.6,
+         33.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n8",
+        "to": [
+         42,
+         30
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Steilpass: Punkt",
+      "say": "Neon zehn spielt steil in den Lauf von Neon acht. Neon acht nimmt den Ball mit und schießt ins Tor, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         43,
+         16
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         43.6,
+         16.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         47,
+         5.4
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

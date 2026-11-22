@@ -1,0 +1,716 @@
+{
+ "title": "Nach dem Schuss verteidigen",
+ "code": "UE-197",
+ "kind": "Übungsform",
+ "focuses": [
+  "Verteidigen",
+  "Umschalten",
+  "1 gegen 1"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 6,
+ "players_max": 10,
+ "field_size": "14 x 14 m",
+ "description": "Ein Spieler dribbelt nach vorn und schießt ins Minitor. Sobald er an der Marke vorbei ist, startet auf der anderen Seite der Nächste. Der Schütze sprintet sofort hinüber und verteidigt das andere Minitor. So lernen die Kinder, nach dem eigenen Schuss blitzschnell umzuschalten.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 14 mal 14 Metern, längs in zwei Hälften geteilt. In jeder Hälfte oben ein Minitor, unten ein Starthütchen und gut 4 Meter vor dem Tor ein Hütchen als Marke.",
+  "Verteilen: Team Neon wartet unten links, Team Rot unten rechts, jeder Spieler mit einem Ball. Der Trainer steht links neben dem Feld mit Bällen.",
+  "Ablauf: Der Erste dribbelt nach vorn und schießt ins Minitor. Ist er an der Marke vorbei, dribbelt der Erste der anderen Seite los. Der Schütze sprintet sofort hinüber und verteidigt.",
+  "Wertung und Wechsel: Jeder Treffer gibt einen Punkt für das eigene Team. Blockt oder erobert der Verteidiger den Ball, gibt das einen Punkt für sein Team. Dann startet der Nächste, bis alle Bälle gespielt sind."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Nach dem Schuss sofort umschalten und zurück sprinten",
+  "Seitlich stehen und den Angreifer in eine Richtung lenken",
+  "Nicht hineinspringen, bei spätem Kommen den Schuss blocken",
+  "Als Angreifer den Kopf heben und den Verteidiger sehen"
+ ],
+ "materials": [
+  "2 Minitore",
+  "4 Hütchen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Nach dem Schuss verteidigen. Erst schießt ein Spieler ins Minitor, dann sprintet er sofort hinüber und verteidigt gegen den Nächsten.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 30,
+    "y": 5,
+    "w": 40,
+    "h": 40
+   },
+   {
+    "type": "line",
+    "x1": 50,
+    "y1": 5,
+    "x2": 50,
+    "y2": 45,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 40,
+    "y": 5,
+    "side": "top"
+   },
+   {
+    "x": 60,
+    "y": 5,
+    "side": "top"
+   }
+  ],
+  "cones": [
+   {
+    "x": 36,
+    "y": 40,
+    "color": "orange"
+   },
+   {
+    "x": 36,
+    "y": 18,
+    "color": "orange"
+   },
+   {
+    "x": 64,
+    "y": 40,
+    "color": "orange"
+   },
+   {
+    "x": 64,
+    "y": 18,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 41,
+    "y": 38,
+    "label": "7"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 33,
+    "y": 54,
+    "label": "4"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 42,
+    "y": 54,
+    "label": "5"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 59,
+    "y": 38,
+    "label": "10"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 58,
+    "y": 54,
+    "label": "8"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 67,
+    "y": 54,
+    "label": "9"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 20,
+    "y": 25,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 41.6,
+    "y": 38.6
+   },
+   {
+    "id": "b2",
+    "x": 59.6,
+    "y": 38.6
+   },
+   {
+    "id": "b3",
+    "x": 33.6,
+    "y": 54.6
+   },
+   {
+    "id": "b4",
+    "x": 42.6,
+    "y": 54.6
+   },
+   {
+    "id": "b5",
+    "x": 58.6,
+    "y": 54.6
+   },
+   {
+    "id": "b6",
+    "x": 67.6,
+    "y": 54.6
+   },
+   {
+    "id": "s1",
+    "x": 23.6,
+    "y": 28.5
+   },
+   {
+    "id": "s2",
+    "x": 20,
+    "y": 28.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Losdribbeln",
+    "say": "Links wartet Team Neon, rechts Team Rot, jeder mit einem Ball. Neon sieben dribbelt schnell nach vorn, am Hütchen vorbei.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       42,
+       20
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Abschluss: Punkt",
+    "say": "Neon sieben schießt ins Minitor, und das gibt einen Punkt für Team Neon. Weil er an der Marke vorbei ist, dribbelt Rot zehn auf der anderen Seite los.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       40,
+       5.3
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r10",
+      "to": [
+       58,
+       28
+      ],
+      "type": "dribbling",
+      "delay": 0.3,
+      "ball": "b2"
+     }
+    ]
+   },
+   {
+    "label": "Hinüber sprinten",
+    "say": "Gleich nach dem Schuss sprintet Neon sieben hinüber zum rechten Minitor. Rot zehn hebt den Kopf und sieht, wo der Verteidiger ist.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       53,
+       15
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r10",
+      "to": [
+       46,
+       18
+      ],
+      "type": "blick",
+      "delay": 0.2
+     },
+     {
+      "who": "r10",
+      "to": [
+       58,
+       23
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     }
+    ]
+   },
+   {
+    "label": "Schuss geblockt: Punkt",
+    "say": "Neon sieben stellt sich seitlich in den Weg und blockt den Schuss von Rot zehn. Das gibt einen Punkt für Team Neon, ein Treffer gäbe einen Punkt für Team Rot. Danach startet Neon vier, und Rot zehn sprintet hinüber und verteidigt.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       56,
+       13
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b2",
+      "to": [
+       56.6,
+       13.6
+      ],
+      "type": "pass",
+      "delay": 0.4
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 30,
+    "y1": 58.6,
+    "x2": 70,
+    "y2": 58.6,
+    "text": "14 m"
+   },
+   {
+    "x1": 76,
+    "y1": 5,
+    "x2": 76,
+    "y2": 45,
+    "text": "14 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Mit einer Finte den Verteidiger täuschen.",
+   "title": "Mit einer Finte vorbei",
+   "text": "Der Angreifer hebt den Kopf und sieht, wo der Verteidiger steht. Mit einem Übersteiger täuscht er eine Richtung an. Dann zieht er schnell in die andere Richtung und schießt ins Minitor.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 53,
+      "y": 12,
+      "label": "7"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 33,
+      "y": 54,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 42,
+      "y": 54,
+      "label": "5"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 59,
+      "y": 30,
+      "label": "10"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 58,
+      "y": 54,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 67,
+      "y": 54,
+      "label": "9"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 20,
+      "y": 25,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b2",
+      "x": 59.6,
+      "y": 30.6
+     },
+     {
+      "id": "b3",
+      "x": 33.6,
+      "y": 54.6
+     },
+     {
+      "id": "b4",
+      "x": 42.6,
+      "y": 54.6
+     },
+     {
+      "id": "b5",
+      "x": 58.6,
+      "y": 54.6
+     },
+     {
+      "id": "b6",
+      "x": 67.6,
+      "y": 54.6
+     },
+     {
+      "id": "s1",
+      "x": 23.6,
+      "y": 28.5
+     },
+     {
+      "id": "s2",
+      "x": 20,
+      "y": 28.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Kopf hoch",
+      "say": "Rot zehn dribbelt auf das Tor zu. Er hebt den Kopf und sieht, wo Neon sieben steht.",
+      "moves": [
+       {
+        "who": "r10",
+        "to": [
+         59,
+         26
+        ],
+        "type": "dribbling",
+        "ball": "b2"
+       },
+       {
+        "who": "r10",
+        "to": [
+         53,
+         12
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Übersteiger",
+      "say": "Rot zehn täuscht mit einem Übersteiger nach links an. Neon sieben fällt darauf herein und geht mit nach links.",
+      "moves": [
+       {
+        "who": "r10",
+        "to": [
+         56,
+         23
+        ],
+        "type": "dribbling",
+        "ball": "b2"
+       },
+       {
+        "who": "n7",
+        "to": [
+         49,
+         13
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Andere Richtung: Punkt",
+      "say": "Jetzt zieht Rot zehn schnell nach rechts und schießt ins Minitor. Das gibt einen Punkt für Team Rot.",
+      "moves": [
+       {
+        "who": "r10",
+        "to": [
+         60.5,
+         20
+        ],
+        "type": "dribbling",
+        "ball": "b2"
+       },
+       {
+        "who": "b2",
+        "to": [
+         60,
+         5.3
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Das Tor schräg gegenüber verteidigen.",
+   "title": "Das Tor schräg gegenüber",
+   "text": "Unten links kommt ein Minitor dazu, und Team Neon startet jetzt oben und schießt nach unten. Nach dem Schuss muss der Verteidiger schräg über das ganze Feld sprinten. Der Nächste darf erst los, wenn der Ball geschossen ist.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 42,
+      "y": 11,
+      "label": "7"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 22,
+      "y": 9,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 13,
+      "y": 9,
+      "label": "5"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 59,
+      "y": 38,
+      "label": "10"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 58,
+      "y": 54,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 67,
+      "y": 54,
+      "label": "9"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 20,
+      "y": 25,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 42.6,
+      "y": 11.6
+     },
+     {
+      "id": "b2",
+      "x": 59.6,
+      "y": 38.6
+     },
+     {
+      "id": "b3",
+      "x": 22.6,
+      "y": 9.6
+     },
+     {
+      "id": "b4",
+      "x": 13.6,
+      "y": 9.6
+     },
+     {
+      "id": "b5",
+      "x": 58.6,
+      "y": 54.6
+     },
+     {
+      "id": "b6",
+      "x": 67.6,
+      "y": 54.6
+     },
+     {
+      "id": "s1",
+      "x": 23.6,
+      "y": 28.5
+     },
+     {
+      "id": "s2",
+      "x": 20,
+      "y": 28.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Abschluss oben: Punkt",
+      "say": "Rot zehn dribbelt am Hütchen vorbei und schießt ins Minitor oben. Das gibt einen Punkt für Team Rot.",
+      "moves": [
+       {
+        "who": "r10",
+        "to": [
+         58,
+         20
+        ],
+        "type": "dribbling",
+        "ball": "b2"
+       },
+       {
+        "who": "b2",
+        "to": [
+         60,
+         5.3
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Schräg zurück",
+      "say": "Mit dem Schuss dribbelt Neon sieben oben links los. Rot zehn sprintet schräg über das Feld zum Minitor unten. Neon sieben hebt den Kopf und sieht ihn kommen.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         42,
+         22
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "r10",
+        "to": [
+         51,
+         31
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n7",
+        "to": [
+         51,
+         32
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Schuss geblockt: Punkt",
+      "say": "Rot zehn läuft zum Tor und stellt sich in den Weg. Er blockt den Schuss von Neon sieben, und das gibt einen Punkt für Team Rot. Danach startet Rot acht, und Neon sieben sprintet zurück.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         42,
+         30
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "r10",
+        "to": [
+         43,
+         39
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         43.6,
+         39.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "goals": [
+     {
+      "x": 40,
+      "y": 5,
+      "side": "top"
+     },
+     {
+      "x": 60,
+      "y": 5,
+      "side": "top"
+     },
+     {
+      "x": 40,
+      "y": 45,
+      "side": "bottom"
+     }
+    ],
+    "cones": [
+     {
+      "x": 36,
+      "y": 9,
+      "color": "orange",
+      "id": "c1"
+     },
+     {
+      "x": 36,
+      "y": 32,
+      "color": "orange",
+      "id": "c2"
+     },
+     {
+      "x": 64,
+      "y": 40,
+      "color": "orange",
+      "id": "c3"
+     },
+     {
+      "x": 64,
+      "y": 18,
+      "color": "orange",
+      "id": "c4"
+     }
+    ]
+   }
+  }
+ ]
+}

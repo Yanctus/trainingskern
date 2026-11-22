@@ -1,0 +1,798 @@
+{
+ "title": "Passen im Gedränge",
+ "code": "UE-190",
+ "kind": "Übungsform",
+ "focuses": [
+  "Ballannahme",
+  "Passspiel",
+  "Bewegung"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 9,
+ "players_max": 9,
+ "field_size": "18 x 18 m",
+ "description": "Team Neon, Team Rot und eine Gruppe Springer, je zu dritt, passen gleichzeitig durch ein kleines Quadrat in der Mitte. Von jeder Gruppe steht ein Spieler im Quadrat, bekommt den Ball von außen, dreht sich mit dem ersten Kontakt auf und passt zum anderen Mitspieler hinaus. Weil drei Spieler und drei Bälle gleichzeitig unterwegs sind, müssen alle vorher schauen und ihre Pässe gut timen. Nach zwei bis drei Minuten wechseln die Spieler in der Mitte.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 18 Metern, in der Mitte ein Quadrat von 7 mal 7 Metern mit vier Hütchen.",
+  "Verteilen: Drei Gruppen zu dritt: Team Neon, Team Rot und die Springer. Von jeder Gruppe steht ein Spieler im Quadrat, die beiden anderen stehen außen verteilt. Der Trainer steht an der Seite mit Bällen.",
+  "Ablauf: Alle drei Gruppen spielen gleichzeitig. Ein Außenspieler passt in die Mitte, der Spieler im Quadrat nimmt den Ball in Richtung Mitspieler mit und passt hinaus. Dabei weichen sich die drei in der Mitte aus.",
+  "Wechsel: Nach zwei bis drei Minuten geht ein anderer Spieler jeder Gruppe in die Mitte, bis jeder einmal dran war."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Vor der Annahme über die Schulter schauen",
+  "Mit dem ersten Kontakt zum Mitspieler drehen",
+  "Pässe gut timen, damit keine Bälle zusammenstoßen",
+  "Nach jedem Pass weiterlaufen und reden"
+ ],
+ "materials": [
+  "4 Hütchen",
+  "3 Bälle",
+  "Leibchen in drei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Passen im Gedränge. Drei Gruppen spielen gleichzeitig durch ein kleines Quadrat, und keiner darf mit den anderen zusammenstoßen.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   },
+   {
+    "type": "zone",
+    "x": 40.25,
+    "y": 20.25,
+    "w": 19.5,
+    "h": 19.5
+   }
+  ],
+  "cones": [
+   {
+    "x": 40.25,
+    "y": 20.25,
+    "color": "orange"
+   },
+   {
+    "x": 59.75,
+    "y": 20.25,
+    "color": "orange"
+   },
+   {
+    "x": 40.25,
+    "y": 39.75,
+    "color": "orange"
+   },
+   {
+    "x": 59.75,
+    "y": 39.75,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 29,
+    "y": 18,
+    "label": "10"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 42,
+    "y": 27,
+    "label": "7"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 50,
+    "y": 50,
+    "label": "8"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 50,
+    "y": 10,
+    "label": "6"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 58.5,
+    "y": 26,
+    "label": "5"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 71,
+    "y": 22,
+    "label": "9"
+   },
+   {
+    "id": "f3",
+    "team": "t",
+    "x": 71,
+    "y": 38,
+    "label": "F"
+   },
+   {
+    "id": "f1",
+    "team": "t",
+    "x": 50.2,
+    "y": 33,
+    "label": "F"
+   },
+   {
+    "id": "f2",
+    "team": "t",
+    "x": 29,
+    "y": 34,
+    "label": "F"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 16,
+    "y": 9,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 29.6,
+    "y": 18.6
+   },
+   {
+    "id": "b2",
+    "x": 50.6,
+    "y": 10.6
+   },
+   {
+    "id": "b3",
+    "x": 71.6,
+    "y": 38.6
+   },
+   {
+    "id": "s1",
+    "x": 19.6,
+    "y": 12.5
+   },
+   {
+    "id": "s2",
+    "x": 16,
+    "y": 12.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Schulterblick",
+    "say": "Die drei Spieler in der Mitte schauen gleichzeitig über die Schulter: Wo steht mein Mitspieler, und wo laufen die anderen?",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       46,
+       43.5
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "r5",
+      "to": [
+       74,
+       23
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "f1",
+      "to": [
+       34,
+       35
+      ],
+      "type": "blick"
+     }
+    ]
+   },
+   {
+    "label": "Pass hinein",
+    "say": "Alle drei Außenspieler passen gleichzeitig in die Mitte: Neon zehn zu Neon sieben, Rot sechs zu Rot fünf und der Springer rechts zum Springer in der Mitte.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       42.6,
+       27.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b2",
+      "to": [
+       59.1,
+       26.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b3",
+      "to": [
+       50.8,
+       33.6
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Aufdrehen",
+    "say": "Alle drei nehmen den Ball mit dem ersten Kontakt in Richtung Mitspieler mit und weichen sich dabei aus.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       41.5,
+       30.5
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "r5",
+      "to": [
+       60,
+       25
+      ],
+      "type": "dribbling",
+      "ball": "b2"
+     },
+     {
+      "who": "f1",
+      "to": [
+       48,
+       35.5
+      ],
+      "type": "dribbling",
+      "ball": "b3"
+     }
+    ]
+   },
+   {
+    "label": "Pass hinaus",
+    "say": "Jetzt passen alle drei gleichzeitig hinaus, und kein Ball stößt mit einem anderen zusammen. Geschafft! Die Außenspieler passen gleich wieder hinein, und nach zwei bis drei Minuten wechseln die Spieler in der Mitte.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       50.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b2",
+      "to": [
+       71.6,
+       22.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b3",
+      "to": [
+       29.6,
+       34.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n7",
+      "to": [
+       42,
+       27
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r5",
+      "to": [
+       58.5,
+       26
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     },
+     {
+      "who": "f1",
+      "to": [
+       50.2,
+       33
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 83,
+    "y1": 5,
+    "x2": 83,
+    "y2": 55,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Vor der Annahme über die Schulter schauen.",
+   "title": "Erst schauen, dann annehmen",
+   "text": "Bevor der Ball kommt, schaut der Spieler in der Mitte über beide Schultern. So weiß er, wo sein Mitspieler steht und wo die anderen laufen. Dann nimmt er den Ball gleich in die freie Richtung mit und stößt mit niemandem zusammen.",
+   "board": {
+    "players": [
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 29,
+      "y": 18,
+      "label": "10"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 42,
+      "y": 27,
+      "label": "7"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 50,
+      "y": 50,
+      "label": "8"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 50,
+      "y": 10,
+      "label": "6"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 58.5,
+      "y": 26,
+      "label": "5"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 71,
+      "y": 22,
+      "label": "9"
+     },
+     {
+      "id": "f3",
+      "team": "t",
+      "x": 71,
+      "y": 38,
+      "label": "F"
+     },
+     {
+      "id": "f1",
+      "team": "t",
+      "x": 50.2,
+      "y": 33,
+      "label": "F"
+     },
+     {
+      "id": "f2",
+      "team": "t",
+      "x": 29,
+      "y": 34,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 16,
+      "y": 9,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 29.6,
+      "y": 18.6
+     },
+     {
+      "id": "b3",
+      "x": 50.8,
+      "y": 33.6
+     },
+     {
+      "id": "s1",
+      "x": 19.6,
+      "y": 12.5
+     },
+     {
+      "id": "s2",
+      "x": 16,
+      "y": 12.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Über beide Schultern",
+      "say": "Neon zehn hat den Ball. Neon sieben schaut zuerst über die eine Schulter, dann über die andere: Wo steht Neon acht, und wo läuft der Springer?",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         46,
+         43
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "n7",
+        "to": [
+         30,
+         37
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "In den freien Raum",
+      "say": "Neon zehn passt zu Neon sieben. Der Springer dribbelt gerade durch das Quadrat, darum nimmt Neon sieben den Ball weg von ihm mit.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         42.6,
+         27.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "f1",
+        "to": [
+         46.5,
+         35
+        ],
+        "type": "dribbling",
+        "delay": 0.3,
+        "ball": "b3"
+       },
+       {
+        "who": "n7",
+        "to": [
+         40.5,
+         31
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Sicher hinaus",
+      "say": "Neon sieben passt an dem Springer vorbei zu Neon acht. Der Ball kommt sicher an, und Neon acht passt gleich wieder hinein.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         50.6
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Schnelle Wechsel und Dribbling.",
+   "title": "Wechseln und dribbeln",
+   "text": "Wer von außen in die Mitte passt, läuft gleich hinterher und ist der nächste Spieler im Quadrat. Der Spieler in der Mitte passt hinaus und läuft auf den frei gewordenen Platz außen. Der Außenspieler dribbelt ein Stück und spielt den Ball zurück in die Mitte. Alle drei Gruppen machen das gleichzeitig, die Springer genauso.",
+   "board": {
+    "players": [
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 29,
+      "y": 18,
+      "label": "10"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 42,
+      "y": 27,
+      "label": "7"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 50,
+      "y": 50,
+      "label": "8"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 50,
+      "y": 10,
+      "label": "6"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 58.5,
+      "y": 26,
+      "label": "5"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 71,
+      "y": 22,
+      "label": "9"
+     },
+     {
+      "id": "f3",
+      "team": "t",
+      "x": 71,
+      "y": 38,
+      "label": "F"
+     },
+     {
+      "id": "f1",
+      "team": "t",
+      "x": 50.2,
+      "y": 33,
+      "label": "F"
+     },
+     {
+      "id": "f2",
+      "team": "t",
+      "x": 29,
+      "y": 34,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 16,
+      "y": 9,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 29.6,
+      "y": 18.6
+     },
+     {
+      "id": "b2",
+      "x": 50.6,
+      "y": 10.6
+     },
+     {
+      "id": "s1",
+      "x": 19.6,
+      "y": 12.5
+     },
+     {
+      "id": "s2",
+      "x": 16,
+      "y": 12.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Pass und hinein",
+      "say": "Wir schauen auf Team Neon und Team Rot. Neon zehn passt zu Neon sieben, Rot sechs zu Rot fünf. Beide laufen sofort hinterher in das Quadrat.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         42.6,
+         27.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n10",
+        "to": [
+         38,
+         15
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n10",
+        "to": [
+         46,
+         21.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b2",
+        "to": [
+         59.1,
+         26.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r6",
+        "to": [
+         52,
+         24
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Pass und hinaus",
+      "say": "Neon sieben dreht auf und passt zu Neon acht, Rot fünf passt zu Rot neun. Dann laufen beide hinaus auf den frei gewordenen Platz.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         43,
+         30.5
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         50.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n7",
+        "to": [
+         29,
+         18
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r5",
+        "to": [
+         60,
+         25
+        ],
+        "type": "dribbling",
+        "ball": "b2"
+       },
+       {
+        "who": "b2",
+        "to": [
+         71.6,
+         22.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "r5",
+        "to": [
+         52,
+         18
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r5",
+        "to": [
+         50,
+         10
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Dribbeln und hinein",
+      "say": "Neon acht und Rot neun dribbeln ein Stück und spielen den Ball zurück in die Mitte, zu Neon zehn und Rot sechs. Jetzt sind die beiden in der Mitte dran, und alles beginnt von vorn.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         44,
+         49
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         46.6,
+         22.1
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "r9",
+        "to": [
+         71,
+         31
+        ],
+        "type": "dribbling",
+        "ball": "b2"
+       },
+       {
+        "who": "b2",
+        "to": [
+         52.6,
+         24.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

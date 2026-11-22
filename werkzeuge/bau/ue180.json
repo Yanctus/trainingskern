@@ -1,0 +1,556 @@
+{
+ "title": "Im Winkel anbieten",
+ "code": "UE-180",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Ballannahme",
+  "Bewegung"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 4,
+ "players_max": 12,
+ "field_size": "9 x 14 m",
+ "description": "Vier Spieler stehen in einer Linie, zwei davon an Stangen in der Mitte. Die beiden in der Mitte lösen sich gleichzeitig in entgegengesetzte Richtungen von ihrer Stange und bieten sich schräg an. So spielt der Ball über beide Mittelspieler bis zum Spieler am anderen Ende. Vor jeder Annahme schauen die Spieler über die Schulter und stellen sich halb offen hin.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 9 mal 14 Metern. In der Mitte stehen zwei Stangen hintereinander, oben und unten je ein Hütchen.",
+  "Verteilen: Vier Spieler von Team Neon, je einer an jedem Hütchen und an jeder Stange. Der Spieler unten hat den Ball. Bei mehr Spielern stehen mehrere Gruppen nebeneinander. Der Trainer steht an der Seite mit Bällen.",
+  "Ablauf: Der untere Mittelspieler löst sich schräg von seiner Stange, der obere läuft gleichzeitig in die andere Richtung. Der Ball geht von unten über beide Mittelspieler nach oben. Dann startet der obere Spieler in die andere Richtung.",
+  "Wertung und Wechsel: Kommt der Ball sauber beim Spieler am Ende an, gibt das einen Punkt für die Gruppe. Nach zwei Minuten tauschen die beiden in der Mitte mit den beiden außen."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Weg von der Stange und schräg anbieten",
+  "Gegenbewegung: der eine geht nach rechts, der andere nach links",
+  "Vor der Annahme über die Schulter schauen und halb offen stehen",
+  "Feste, genaue Pässe in den Fuß, mit Tempo"
+ ],
+ "materials": [
+  "2 Stangen",
+  "2 Hütchen",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Im Winkel anbieten. Die beiden Spieler in der Mitte laufen gleichzeitig in entgegengesetzte Richtungen und machen so den Passweg frei.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 33.3,
+    "y": 5,
+    "w": 33.4,
+    "h": 50
+   }
+  ],
+  "cones": [
+   {
+    "x": 48.5,
+    "y": 19,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 48.5,
+    "y": 36,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 46.5,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 46.5,
+    "y": 55,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 52,
+    "y": 5,
+    "label": "6"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 52.5,
+    "y": 21,
+    "label": "8"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 52,
+    "y": 38,
+    "label": "10"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 52,
+    "y": 54,
+    "label": "4"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 76,
+    "y": 30,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 52.6,
+    "y": 54.6
+   },
+   {
+    "id": "s1",
+    "x": 79.6,
+    "y": 33.5
+   },
+   {
+    "id": "s2",
+    "x": 76,
+    "y": 33.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Gegenbewegung",
+    "say": "Neon zehn löst sich schräg nach rechts von seiner Stange. Gleichzeitig läuft Neon acht in die andere Richtung, nach links. Neon zehn schaut dabei über die Schulter nach oben.",
+    "moves": [
+     {
+      "who": "n10",
+      "to": [
+       61,
+       32
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n8",
+      "to": [
+       39,
+       24
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n10",
+      "to": [
+       46,
+       22
+      ],
+      "type": "blick",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Pass in den Winkel",
+    "say": "Neon vier passt schräg zu Neon zehn. Neon zehn nimmt den Ball halb offen an.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       61.6,
+       32.6
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Pass in die Mitte",
+    "say": "Neon acht schaut kurz nach oben. Dann spielt Neon zehn den Ball quer in die Mitte zu Neon acht.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       50,
+       8
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b1",
+      "to": [
+       39.6,
+       24.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Durchspielen: Punkt",
+    "say": "Neon acht spielt durch zu Neon sechs. Der Ball ist sauber angekommen, und das gibt einen Punkt für die Gruppe. Jetzt startet Neon sechs den Ablauf in die andere Richtung, nach unten.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       52.6,
+       5.6
+      ],
+      "type": "pass"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 33.3,
+    "y1": 58.6,
+    "x2": 66.7,
+    "y2": 58.6,
+    "text": "9 m"
+   },
+   {
+    "x1": 71,
+    "y1": 5,
+    "x2": 71,
+    "y2": 55,
+    "text": "14 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Der erste Pass geht zum weiten Spieler.",
+   "title": "Pass zum weiten Spieler",
+   "text": "Neon vier passt jetzt gleich zum oberen Mittelspieler. Der legt den Ball ab zum unteren Mittelspieler, und der spielt durch zum Endspieler. Achtet auf das Timing, die Bewegung und genaue Pässe.",
+   "board": {
+    "players": [
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 52,
+      "y": 5,
+      "label": "6"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 52.5,
+      "y": 21,
+      "label": "8"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 52,
+      "y": 38,
+      "label": "10"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 52,
+      "y": 54,
+      "label": "4"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 76,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 52.6,
+      "y": 54.6
+     },
+     {
+      "id": "s1",
+      "x": 79.6,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 76,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Gegenbewegung",
+      "say": "Neon acht löst sich nach rechts, Neon zehn gleichzeitig nach links. Neon acht schaut über die Schulter zu Neon zehn.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         61,
+         25
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n10",
+        "to": [
+         45,
+         41
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n10",
+        "to": [
+         40,
+         34
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n8",
+        "to": [
+         45,
+         34
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Langer Pass",
+      "say": "Neon vier spielt den langen Pass zu Neon acht.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         61.6,
+         25.6
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Ablegen und durch: Punkt",
+      "say": "Neon acht legt direkt ab zu Neon zehn, und Neon zehn spielt durch zu Neon sechs. Das gibt einen Punkt für die Gruppe, und Neon sechs startet nach unten.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         40.6,
+         34.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         52.6,
+         5.6
+        ],
+        "type": "pass",
+        "bend": -3,
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Doppelpass mit dem ersten Passgeber.",
+   "title": "Doppelpass zum Start",
+   "text": "Zu Beginn kommt ein Doppelpass dazu. Der untere Mittelspieler legt den Ball zurück zu Neon vier, der spielt zum oberen Mittelspieler. Der legt quer zum unteren Mittelspieler, und der spielt durch zum Endspieler. So gibt es mehr Pässe, und alle bleiben wach.",
+   "board": {
+    "players": [
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 52,
+      "y": 5,
+      "label": "6"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 52.5,
+      "y": 21,
+      "label": "8"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 52,
+      "y": 38,
+      "label": "10"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 52,
+      "y": 54,
+      "label": "4"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 76,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 52.6,
+      "y": 54.6
+     },
+     {
+      "id": "s1",
+      "x": 79.6,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 76,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Anbieten",
+      "say": "Neon zehn löst sich nach rechts und schaut über die Schulter. Neon vier passt zu ihm.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         61,
+         40
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n10",
+        "to": [
+         50,
+         24
+        ],
+        "type": "blick",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         61.6,
+         40.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Doppelpass",
+      "say": "Neon vier läuft schräg nach vorn, und Neon zehn legt den Ball zurück.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         45,
+         47
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         45.6,
+         47.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Pass zur Stange",
+      "say": "Neon acht löst sich nach links und bekommt den Pass von Neon vier. Gleichzeitig läuft Neon zehn rechts nach oben.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         39,
+         24
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n10",
+        "to": [
+         60,
+         28
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         39.6,
+         24.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Quer und durch: Punkt",
+      "say": "Neon acht legt quer zu Neon zehn, und der spielt durch zu Neon sechs. Das gibt einen Punkt für die Gruppe, und Neon sechs startet nach unten.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         60.6,
+         28.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         52.6,
+         5.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

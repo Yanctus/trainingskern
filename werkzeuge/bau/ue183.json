@@ -1,0 +1,769 @@
+{
+ "title": "Eins gegen eins vor dem Tor",
+ "code": "UE-183",
+ "kind": "Übungsform",
+ "focuses": [
+  "Verteidigen",
+  "1 gegen 1",
+  "Umschalten"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 9,
+ "players_max": 9,
+ "field_size": "27 x 32 m",
+ "description": "Ein Stürmer und ein Verteidiger stehen in einer Zone vor dem Tor mit Torwart. Ein Passgeber spielt den Stürmer an, und der Verteidiger ist sofort eng dran, damit sich der Stürmer nicht drehen kann. Erobert der Verteidiger den Ball, blockt den Schuss oder drängt den Stürmer aus der Zone, gibt das einen Punkt für ihn. Danach wechseln die Rollen.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 27 mal 32 Metern mit einem Jugendtor oben. Vor dem Tor eine Zone von 14 mal 9 Metern mit vier Hütchen, unten ein Hütchen für den Passgeber.",
+  "Verteilen: Ein Torwart im Tor. Ein Stürmer und ein Verteidiger in der Zone, ein Passgeber am Hütchen. Die anderen warten unten in einer Reihe, jeder mit Ball. Der Trainer steht an der Seite mit Bällen.",
+  "Ablauf: Der Passgeber spielt den Stürmer an. Der Stürmer will sich drehen und abschließen. Der Verteidiger ist früh eng dran und lässt ihn nicht drehen.",
+  "Wertung und Wechsel: Ball erobert, Schuss geblockt oder Stürmer aus der Zone gedrängt gibt einen Punkt für den Verteidiger, ein Treffer gibt einen Punkt für den Stürmer. Dann wird der Stürmer Verteidiger, der Passgeber Stürmer, und der Verteidiger stellt sich hinten an."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Früh eng dran sein, damit sich der Stürmer nicht drehen kann",
+  "Nicht zu eng und nicht auf eine Seite lehnen, sonst dreht er sich weg",
+  "Mit dem Körper die Richtung vorgeben und den Stürmer nach außen drängen",
+  "Im richtigen Moment den Ball wegspitzeln und schnell zurücklaufen, wenn er vorbei ist"
+ ],
+ "materials": [
+  "1 Jugendtor",
+  "2 Minitore",
+  "5 Hütchen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Eins gegen eins vor dem Tor. Der Verteidiger ist sofort eng am Stürmer und lässt ihn nicht drehen.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 28.5,
+    "y": 5,
+    "w": 43,
+    "h": 50
+   },
+   {
+    "type": "rect",
+    "x": 40,
+    "y": 5,
+    "w": 20,
+    "h": 8
+   },
+   {
+    "type": "zone",
+    "x": 39.25,
+    "y": 14,
+    "w": 21.5,
+    "h": 14.3
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "jugend"
+   }
+  ],
+  "cones": [
+   {
+    "x": 39.25,
+    "y": 14,
+    "color": "orange"
+   },
+   {
+    "x": 60.75,
+    "y": 14,
+    "color": "orange"
+   },
+   {
+    "x": 39.25,
+    "y": 28.3,
+    "color": "orange"
+   },
+   {
+    "x": 60.75,
+    "y": 28.3,
+    "color": "orange"
+   },
+   {
+    "x": 54,
+    "y": 44,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 50,
+    "y": 27,
+    "label": "7"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 41.5,
+    "y": 18,
+    "label": "5"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 58.5,
+    "y": 41,
+    "label": "6"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 21.5,
+    "y": 51,
+    "label": "10"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 30,
+    "y": 51,
+    "label": "9"
+   },
+   {
+    "id": "r4",
+    "team": "b",
+    "x": 38.5,
+    "y": 51,
+    "label": "4"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 47,
+    "y": 51,
+    "label": "3"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 67.5,
+    "y": 51,
+    "label": "8"
+   },
+   {
+    "id": "k",
+    "team": "t",
+    "x": 50,
+    "y": 8,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 14,
+    "y": 30,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 59.1,
+    "y": 41.6
+   },
+   {
+    "id": "q1",
+    "x": 22.1,
+    "y": 51.6
+   },
+   {
+    "id": "q2",
+    "x": 30.6,
+    "y": 51.6
+   },
+   {
+    "id": "q3",
+    "x": 39.1,
+    "y": 51.6
+   },
+   {
+    "id": "q4",
+    "x": 47.6,
+    "y": 51.6
+   },
+   {
+    "id": "q5",
+    "x": 68.1,
+    "y": 51.6
+   },
+   {
+    "id": "s1",
+    "x": 15.6,
+    "y": 33.5
+   },
+   {
+    "id": "s2",
+    "x": 12,
+    "y": 33.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pass zum Stürmer",
+    "say": "Neon sechs spielt den Ball zu Rot sieben in die Zone. Neon fünf läuft sofort los und ist eng dran, wenn der Ball ankommt.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       27.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n5",
+      "to": [
+       48.5,
+       22
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Nicht drehen lassen",
+    "say": "Rot sieben will sich drehen. Neon fünf bleibt tief in den Knien und geht mit. So kann sich Rot sieben nicht zum Tor drehen.",
+    "moves": [
+     {
+      "who": "r7",
+      "to": [
+       55,
+       26
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n5",
+      "to": [
+       53.5,
+       21.5
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Nach außen drängen",
+    "say": "Neon fünf drängt Rot sieben nach außen, weg vom Tor. Rot sieben muss mit dem Ball aus der Zone.",
+    "moves": [
+     {
+      "who": "r7",
+      "to": [
+       64,
+       24
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n5",
+      "to": [
+       60,
+       20
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Aus der Zone: Punkt",
+    "say": "Rot sieben ist aus der Zone, und das gibt einen Punkt für Neon fünf. Ein Treffer gäbe einen Punkt für Rot sieben. Jetzt wird Rot sieben Verteidiger, Neon sechs wird Stürmer, und Neon fünf stellt sich hinten an.",
+    "moves": [
+     {
+      "who": "n5",
+      "to": [
+       76,
+       51
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n6",
+      "to": [
+       50,
+       27
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "r7",
+      "to": [
+       41.5,
+       18
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 28.5,
+    "y1": 58.6,
+    "x2": 71.5,
+    "y2": 58.6,
+    "text": "27 m"
+   },
+   {
+    "x1": 84,
+    "y1": 5,
+    "x2": 84,
+    "y2": 55,
+    "text": "32 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Eng dran, aber nicht zu eng.",
+   "title": "Eine Armlänge Abstand",
+   "text": "Der Stürmer schaut über die Schulter und spürt, wo der Verteidiger steht. Klebt der Verteidiger zu eng dran oder lehnt sich auf eine Seite, dreht sich der Stürmer an ihm vorbei. Darum bleibt er eine Armlänge weg, tief in den Knien und im Gleichgewicht.",
+   "board": {
+    "players": [
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 50,
+      "y": 27,
+      "label": "7"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 41.5,
+      "y": 18,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 58.5,
+      "y": 41,
+      "label": "6"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 21.5,
+      "y": 51,
+      "label": "10"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 30,
+      "y": 51,
+      "label": "9"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 38.5,
+      "y": 51,
+      "label": "4"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 47,
+      "y": 51,
+      "label": "3"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 67.5,
+      "y": 51,
+      "label": "8"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50,
+      "y": 8,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 14,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 59.1,
+      "y": 41.6
+     },
+     {
+      "id": "q1",
+      "x": 22.1,
+      "y": 51.6
+     },
+     {
+      "id": "q2",
+      "x": 30.6,
+      "y": 51.6
+     },
+     {
+      "id": "q3",
+      "x": 39.1,
+      "y": 51.6
+     },
+     {
+      "id": "q4",
+      "x": 47.6,
+      "y": 51.6
+     },
+     {
+      "id": "q5",
+      "x": 68.1,
+      "y": 51.6
+     },
+     {
+      "id": "s1",
+      "x": 15.6,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 12,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Schulterblick",
+      "say": "Bevor der Ball kommt, schaut Rot sieben über die Schulter und sieht, wo Neon fünf steht. Dann spielt Neon sechs ihn an, und Neon fünf läuft an.",
+      "moves": [
+       {
+        "who": "r7",
+        "to": [
+         42,
+         13
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         27.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n5",
+        "to": [
+         47.5,
+         21.5
+        ],
+        "type": "lauf",
+        "delay": 0.9
+       }
+      ]
+     },
+     {
+      "label": "Im Gleichgewicht",
+      "say": "Neon fünf bleibt eine Armlänge weg und lehnt sich nicht auf eine Seite. Rot sieben versucht sich wegzudrehen, aber Neon fünf geht mit.",
+      "moves": [
+       {
+        "who": "r7",
+        "to": [
+         45.5,
+         26
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n5",
+        "to": [
+         43.5,
+         21.5
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Ball erobert: Punkt",
+      "say": "Jetzt spitzelt Neon fünf den Ball weg und holt ihn sich. Das gibt einen Punkt für Neon fünf.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         40.6,
+         22.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n5",
+        "to": [
+         40,
+         22
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Mit Minitoren herausspielen.",
+   "title": "Schnell herausspielen",
+   "text": "An den Seiten stehen zwei Minitore. Erobert der Verteidiger den Ball oder hält der Torwart einen Schuss, spielen sie den Ball schnell in ein Minitor. Der Torwart nimmt dafür sofort den Kopf hoch, wirft oder schießt, bevor der Stürmer wieder presst.",
+   "board": {
+    "players": [
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 50,
+      "y": 27,
+      "label": "7"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 41.5,
+      "y": 18,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 58.5,
+      "y": 41,
+      "label": "6"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 21.5,
+      "y": 51,
+      "label": "10"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 30,
+      "y": 51,
+      "label": "9"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 38.5,
+      "y": 51,
+      "label": "4"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 47,
+      "y": 51,
+      "label": "3"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 67.5,
+      "y": 51,
+      "label": "8"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50,
+      "y": 8,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 14,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 59.1,
+      "y": 41.6
+     },
+     {
+      "id": "q1",
+      "x": 22.1,
+      "y": 51.6
+     },
+     {
+      "id": "q2",
+      "x": 30.6,
+      "y": 51.6
+     },
+     {
+      "id": "q3",
+      "x": 39.1,
+      "y": 51.6
+     },
+     {
+      "id": "q4",
+      "x": 47.6,
+      "y": 51.6
+     },
+     {
+      "id": "q5",
+      "x": 68.1,
+      "y": 51.6
+     },
+     {
+      "id": "s1",
+      "x": 15.6,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 12,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Pass und Druck",
+      "say": "Neon sechs spielt zu Rot sieben, und Neon fünf ist sofort eng dran.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         27.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n5",
+        "to": [
+         48.5,
+         22
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Schuss gehalten",
+      "say": "Rot sieben dreht sich doch und schießt, aber der Torwart fängt den Ball.",
+      "moves": [
+       {
+        "who": "r7",
+        "to": [
+         53,
+         24
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         8.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Kopf hoch",
+      "say": "Der Torwart nimmt sofort den Kopf hoch und sieht das freie Minitor rechts.",
+      "moves": [
+       {
+        "who": "k",
+        "to": [
+         61.5,
+         24
+        ],
+        "type": "blick"
+       }
+      ]
+     },
+     {
+      "label": "Ins Minitor: Punkt",
+      "say": "Er wirft den Ball schnell ins rechte Minitor, bevor Rot sieben presst. Das gibt einen Punkt für Neon fünf. Erobert Neon fünf selbst den Ball, spielt er genauso schnell in ein Minitor.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         70.5,
+         36
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ],
+    "goals": [
+     {
+      "x": 50,
+      "y": 5,
+      "side": "top",
+      "size": "jugend"
+     },
+     {
+      "x": 28.5,
+      "y": 36,
+      "side": "left"
+     },
+     {
+      "x": 71.5,
+      "y": 36,
+      "side": "right"
+     }
+    ]
+   }
+  }
+ ]
+}

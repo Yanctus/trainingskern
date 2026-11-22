@@ -1,0 +1,589 @@
+{
+ "title": "Um die Stange zum Abschluss",
+ "code": "UE-182",
+ "kind": "Übungsform",
+ "focuses": [
+  "1 gegen 1",
+  "Ballannahme",
+  "Torschuss"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 5,
+ "players_max": 9,
+ "field_size": "14 x 18 m",
+ "description": "Eins gegen eins auf ein Tor mit Torwart. Der Verteidiger passt zum Angreifer zwischen den Stangen und sprintet sofort zurück, um zu verteidigen. Der Angreifer nimmt den Ball mit dem ersten Kontakt außen um die Stange mit und greift mit Tempo an. Er zieht den Verteidiger auf eine Seite, wechselt dann die Richtung und schließt schnell ab.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 14 mal 18 Metern mit einem Jugendtor oben. In der Mitte zwei Stangen nebeneinander, unten ein Starthütchen.",
+  "Verteilen: Zwei Teams, ein neutraler Torwart im Tor. Ein Angreifer von Team Neon steht zwischen den Stangen. Team Rot steht unten links mit Bällen, Team Neon wartet unten rechts. Der Trainer steht an der Seite mit Bällen.",
+  "Ablauf: Der Verteidiger passt zum Angreifer und sprintet zwischen den Stangen hindurch zurück. Der Angreifer nimmt den Ball außen um eine Stange mit und greift das Tor an.",
+  "Wertung und Wechsel: Jeder Treffer gibt einen Punkt. Danach wird der Verteidiger der neue Angreifer zwischen den Stangen, und der Nächste aus dem anderen Team passt und verteidigt."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Nach dem ersten Kontakt sofort mit Tempo angreifen",
+  "Kurze, schnelle Ballkontakte um die Stange",
+  "Den Verteidiger auf eine Seite ziehen, dann Richtung und Tempo wechseln",
+  "Als Verteidiger schnell zurücklaufen und die Richtung vorgeben"
+ ],
+ "materials": [
+  "1 Jugendtor",
+  "2 Minitore (Steigerung)",
+  "2 Stangen",
+  "1 Hütchen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Um die Stange zum Abschluss. Der Angreifer nimmt den Ball um die Stange mit und greift an, während der Verteidiger zurücksprintet.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 31.25,
+    "y": 5,
+    "w": 37.5,
+    "h": 50
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "jugend"
+   }
+  ],
+  "cones": [
+   {
+    "x": 43,
+    "y": 34,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 57,
+    "y": 34,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 50,
+    "y": 53,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 50,
+    "y": 37,
+    "label": "7"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 55.5,
+    "y": 53,
+    "label": "8"
+   },
+   {
+    "id": "r4",
+    "team": "b",
+    "x": 45,
+    "y": 53,
+    "label": "4"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 36,
+    "y": 53,
+    "label": "5"
+   },
+   {
+    "id": "k",
+    "team": "t",
+    "x": 50,
+    "y": 8.5,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 79,
+    "y": 30,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 45.6,
+    "y": 53.6
+   },
+   {
+    "id": "s1",
+    "x": 82.6,
+    "y": 33.5
+   },
+   {
+    "id": "s2",
+    "x": 79,
+    "y": 33.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pass zum Angreifer",
+    "say": "Rot vier passt zu Neon sieben zwischen den Stangen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       37.6
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Um die Stange",
+    "say": "Neon sieben nimmt den Ball mit kurzen Kontakten außen um die linke Stange mit. Gleichzeitig sprintet Rot vier zwischen den Stangen hindurch zurück.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       44,
+       40
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       38,
+       36
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       40,
+       28
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "r4",
+      "to": [
+       50,
+       30
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Auf eine Seite ziehen",
+    "say": "Neon sieben greift mit Tempo an und zieht Rot vier nach links. Der Torwart geht mit.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       41,
+       20
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "r4",
+      "to": [
+       44,
+       23.5
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "k",
+      "to": [
+       46,
+       8.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Haken und Abschluss: Punkt",
+    "say": "Neon sieben macht einen Haken nach rechts und schießt sofort. Der Ball geht rechts ins Tor, und das gibt einen Punkt für Team Neon. Jetzt ist Rot vier der neue Angreifer, und Neon acht passt und verteidigt.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       53,
+       15
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       55,
+       5.3
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 31.25,
+    "y1": 58.6,
+    "x2": 68.75,
+    "y2": 58.6,
+    "text": "14 m"
+   },
+   {
+    "x1": 74,
+    "y1": 5,
+    "x2": 74,
+    "y2": 55,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Schnell zurücklaufen und die Richtung vorgeben.",
+   "title": "Schnell zurück",
+   "text": "Der Verteidiger sprintet nach dem Pass sofort zwischen den Stangen zurück. Ist er zwischen Ball und Tor, stellt er sich seitlich und lenkt den Angreifer nach außen. Von dort ist der Winkel spitz, und der Torwart hat es leichter.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 50,
+      "y": 37,
+      "label": "7"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 55.5,
+      "y": 53,
+      "label": "8"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 45,
+      "y": 53,
+      "label": "4"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 36,
+      "y": 53,
+      "label": "5"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50,
+      "y": 8.5,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 79,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 37.6
+     },
+     {
+      "id": "s1",
+      "x": 82.6,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 79,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zurücksprinten",
+      "say": "Neon sieben nimmt den Ball um die rechte Stange mit. Rot vier sprintet sofort zurück und kommt zwischen Ball und Tor an.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         56,
+         40
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         62,
+         36
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "r4",
+        "to": [
+         52,
+         25
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Nach außen lenken",
+      "say": "Rot vier stellt sich seitlich und lenkt Neon sieben nach außen. Neon sieben schießt aus spitzem Winkel, und der Torwart fängt den Ball. Jetzt ist Rot vier der neue Angreifer.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         64,
+         22
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "r4",
+        "to": [
+         57,
+         21
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "k",
+        "to": [
+         54,
+         8.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         54.6,
+         9.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Minitore für die Verteidiger.",
+   "title": "Minitore für Verteidiger",
+   "text": "Links und rechts an den Seitenlinien steht jetzt je ein Minitor. Erobert der Verteidiger den Ball, schießt er in eines der Minitore. Der Angreifer muss nach einem Ballverlust sofort pressen.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 42,
+      "y": 26,
+      "label": "7"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 55.5,
+      "y": 53,
+      "label": "8"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 53,
+      "y": 25,
+      "label": "4"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 36,
+      "y": 53,
+      "label": "5"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50,
+      "y": 8.5,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 79,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 42.6,
+      "y": 26.6
+     },
+     {
+      "id": "s1",
+      "x": 82.6,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 79,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Ball erobert",
+      "say": "Neon sieben dribbelt aufs Tor zu. Rot vier geht dazwischen und erobert den Ball.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         45,
+         19
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "r4",
+        "to": [
+         47,
+         16
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         47.6,
+         16.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Ins Minitor: Punkt",
+      "say": "Rot vier dribbelt nach rechts und schießt ins Minitor. Das gibt einen Punkt für Team Rot. Neon sieben presst sofort, kommt aber zu spät.",
+      "moves": [
+       {
+        "who": "r4",
+        "to": [
+         60,
+         20
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         55,
+         23
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         68.4,
+         22
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "goals": [
+     {
+      "x": 50,
+      "y": 5,
+      "side": "top",
+      "size": "jugend"
+     },
+     {
+      "x": 31.25,
+      "y": 22,
+      "side": "left"
+     },
+     {
+      "x": 68.75,
+      "y": 22,
+      "side": "right"
+     }
+    ]
+   }
+  }
+ ]
+}

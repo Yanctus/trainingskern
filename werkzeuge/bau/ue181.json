@@ -1,0 +1,567 @@
+{
+ "title": "Allein gegen zwei",
+ "code": "UE-181",
+ "kind": "Übungsform",
+ "focuses": [
+  "Dribbling",
+  "1 gegen 1",
+  "Umschalten"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 4,
+ "players_max": 8,
+ "field_size": "14 x 18 m",
+ "description": "Ein Angreifer spielt allein gegen zwei Verteidiger und darf in jedes der vier Minitore treffen. Der zweite Verteidiger spielt ihm den Ball zu und sprintet sofort nach. Mit Finten, Richtungswechseln und schnellen Ballkontakten bringt der Angreifer die Verteidiger aus dem Gleichgewicht. Erobern die Verteidiger den Ball, brauchen sie drei Pässe, bevor sie aufs Tor gehen dürfen.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 14 mal 18 Metern mit einem Minitor in jeder Ecke.",
+  "Verteilen: Zwei Teams. Ein Angreifer von Team Neon steht in der Mitte, ein Verteidiger von Team Rot vor ihm. Der zweite Spieler von Team Rot steht unten mit Ball. Die anderen warten hinter den Toren. Der Trainer steht an der Seite mit Bällen.",
+  "Ablauf: Team Rot passt zum Angreifer und sprintet nach, dann ist es zwei gegen eins. Der Angreifer dribbelt an beiden vorbei und schießt in ein beliebiges Minitor. Erobert Team Rot den Ball, braucht es drei Pässe vor dem Torschuss.",
+  "Wertung und Wechsel: Jeder Treffer ins Minitor gibt einen Punkt. Nach jedem Angriff tauschen die Rollen, dann greift Team Rot an und Team Neon verteidigt."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Früh umschauen: Wo stehen die Verteidiger, wo ist Platz?",
+  "Mit Finten und Täuschungen die Verteidiger aus dem Gleichgewicht bringen",
+  "Ist Platz da, entschlossen abschließen und nicht zu lange dribbeln",
+  "Nach Ballverlust sofort pressen und den Ball zurückholen"
+ ],
+ "materials": [
+  "4 Minitore",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Allein gegen zwei. Ein Angreifer spielt gegen zwei Verteidiger und darf in alle vier Minitore treffen.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 31.25,
+    "y": 5,
+    "w": 37.5,
+    "h": 50
+   }
+  ],
+  "goals": [
+   {
+    "x": 37,
+    "y": 5,
+    "side": "top"
+   },
+   {
+    "x": 63,
+    "y": 5,
+    "side": "top"
+   },
+   {
+    "x": 37,
+    "y": 55,
+    "side": "bottom"
+   },
+   {
+    "x": 63,
+    "y": 55,
+    "side": "bottom"
+   }
+  ],
+  "cones": [],
+  "players": [
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 55,
+    "y": 34,
+    "label": "7"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 50,
+    "y": 2,
+    "label": "9"
+   },
+   {
+    "id": "r4",
+    "team": "b",
+    "x": 45,
+    "y": 22,
+    "label": "4"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 50,
+    "y": 53,
+    "label": "5"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 22,
+    "y": 30,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 50.6,
+    "y": 53.6
+   },
+   {
+    "id": "s1",
+    "x": 22,
+    "y": 33.5
+   },
+   {
+    "id": "s2",
+    "x": 25.6,
+    "y": 33.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Umschauen und Anspiel",
+    "say": "Neon sieben schaut sich um: Wo steht der Verteidiger? Dann passt Rot fünf zu Neon sieben und sprintet sofort nach. Jetzt ist es zwei gegen eins.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       45,
+       24
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b1",
+      "to": [
+       55.6,
+       34.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r5",
+      "to": [
+       53,
+       44
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Finte nach rechts",
+    "say": "Neon sieben nimmt den Ball nach rechts mit. Beide Verteidiger laufen hinterher.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       61,
+       31
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "r4",
+      "to": [
+       55,
+       25
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "r5",
+      "to": [
+       58,
+       39
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Haken nach links",
+    "say": "Neon sieben macht einen schnellen Haken nach links und lässt beide Verteidiger stehen.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       44,
+       30
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "r4",
+      "to": [
+       51,
+       24
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Abschluss: Punkt",
+    "say": "Neon sieben dribbelt nach oben und schießt ins Minitor oben links. Das gibt einen Punkt für Team Neon. Jetzt tauschen die Rollen: Team Rot greift an, und Team Neon passt und verteidigt.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       40,
+       15
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "r4",
+      "to": [
+       47,
+       17
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "b1",
+      "to": [
+       37,
+       5.3
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 31.25,
+    "y1": 58.6,
+    "x2": 68.75,
+    "y2": 58.6,
+    "text": "14 m"
+   },
+   {
+    "x1": 78,
+    "y1": 5,
+    "x2": 78,
+    "y2": 55,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Nach Ballverlust sofort pressen.",
+   "title": "Sofort pressen",
+   "text": "Hat Team Rot den Ball erobert, braucht es drei Pässe, bevor es aufs Tor gehen darf. Der Angreifer gibt nicht auf, sondern presst sofort. Holt er den Ball zurück, darf er gleich wieder abschließen.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 50,
+      "y": 36,
+      "label": "7"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 50,
+      "y": 2,
+      "label": "9"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 40,
+      "y": 22,
+      "label": "4"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 62,
+      "y": 22,
+      "label": "5"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 22,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 40.6,
+      "y": 22.6
+     },
+     {
+      "id": "s1",
+      "x": 22,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 25.6,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Ball verloren",
+      "say": "Rot vier hat den Ball erobert und passt zu Rot fünf. Das ist der erste Pass. Neon sieben presst sofort.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         61.6,
+         22.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n7",
+        "to": [
+         58,
+         30
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Abgefangen",
+      "say": "Rot fünf will zurückpassen, aber Neon sieben läuft in den Passweg und fängt den Ball ab.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         53,
+         23
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         53.6,
+         23.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Schneller Abschluss: Punkt",
+      "say": "Neon sieben dribbelt sofort los und schießt ins Minitor oben rechts. Das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         58,
+         12
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         63,
+         5.3
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Anspielpartner an den Seiten.",
+   "title": "Mit Anspielpartnern",
+   "text": "Jetzt stehen außen Anspielpartner: rechts ein Mitspieler, links der Trainer. Der Angreifer kann mit ihnen doppelpassen oder allein dribbeln. Rechnen die Verteidiger mit dem Pass, täuscht er ihn nur an und dribbelt in den freien Raum.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 55,
+      "y": 34,
+      "label": "7"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 73,
+      "y": 28,
+      "label": "9"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 45,
+      "y": 22,
+      "label": "4"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 50,
+      "y": 53,
+      "label": "5"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 22,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 53.6
+     },
+     {
+      "id": "s1",
+      "x": 22,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 25.6,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Anspiel",
+      "say": "Rot fünf passt zu Neon sieben und sprintet nach.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         55.6,
+         34.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r5",
+        "to": [
+         53,
+         44
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Pass antäuschen",
+      "say": "Neon sieben schaut zu Neon neun und täuscht den Pass nach rechts an. Beide Verteidiger rechnen mit dem Pass und schieben nach rechts.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         72,
+         29
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "r4",
+        "to": [
+         59,
+         26
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r5",
+        "to": [
+         60,
+         40
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "In den freien Raum: Punkt",
+      "say": "Neon sieben dribbelt nach links in den freien Raum und schießt ins Minitor oben links. Das gibt einen Punkt für Team Neon. Dann tauschen die Rollen.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         44,
+         29
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         40,
+         15
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         37,
+         5.3
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
