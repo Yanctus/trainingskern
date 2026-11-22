@@ -1,0 +1,469 @@
+{
+ "title": "Volleys von zwei Seiten fangen",
+ "code": "UE-253",
+ "kind": "Übungsform",
+ "focuses": [
+  "Koordination",
+  "Schnelligkeit",
+  "Ballannahme"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Torwart"
+ ],
+ "duration_minutes": 15,
+ "players_min": 2,
+ "players_max": 2,
+ "field_size": "41 x 16 m",
+ "description": "Ein Torwart arbeitet einen kleinen Parcours im Torraum ab und fängt dabei drei Volleys. Den ersten spielt der zweite Torwart von der Seite, den zweiten und dritten der Trainer von vorn. Dazwischen läuft er schnell seitwärts und tippt ein Hütchen an. Nach zwei Runden tauschen die beiden Torhüter.",
+ "organisation": [
+  "Aufbauen: Ein Strafraum von 41 mal 16 Metern mit Torraum und einem Jugendtor. Ein Hütchen steht links vor dem Pfosten, eins rechts neben dem Tor und eins beim Trainer.",
+  "Verteilen: Der Torwart steht in der Mitte des Tors. Der zweite Torwart steht links neben dem Tor mit Bällen. Der Trainer steht vor dem Torraum, auch mit Bällen.",
+  "Ablauf: Der Torwart fängt einen Volley am linken Pfosten und wirft zurück. Dann fängt er in der Mitte einen Volley vom Trainer. Zum Schluss tippt er das rechte Hütchen an und fängt in der Mitte den dritten Volley.",
+  "Wechsel: Nach zwei Runden tauschen die beiden Torhüter. Ziel ist, alle drei Volleys sicher festzuhalten."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Volleys sicher fangen und festhalten",
+  "Zu harte Volleys zur Seite abwehren, weg vom Tor",
+  "Mit schnellen Füßen seitwärts zum Hütchen",
+  "Die ganze Runde konzentriert bleiben und in der Pause gut erholen"
+ ],
+ "materials": [
+  "1 Jugendtor",
+  "3 Hütchen",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Volleys von zwei Seiten fangen. Der Torwart läuft einen kleinen Parcours im Torraum und fängt drei Volleys hintereinander.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 14,
+    "y": 5,
+    "w": 72,
+    "h": 29
+   },
+   {
+    "type": "rect",
+    "x": 34,
+    "y": 5,
+    "w": 32,
+    "h": 9.6
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "jugend"
+   }
+  ],
+  "cones": [
+   {
+    "x": 39,
+    "y": 13,
+    "color": "orange"
+   },
+   {
+    "x": 62,
+    "y": 7.5,
+    "color": "orange"
+   },
+   {
+    "x": 46,
+    "y": 31.5,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 50,
+    "y": 8,
+    "label": "TW"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 31,
+    "y": 7,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 50,
+    "y": 30,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 50.6,
+    "y": 30.6
+   },
+   {
+    "id": "b2",
+    "x": 31.6,
+    "y": 7.6
+   },
+   {
+    "id": "s1",
+    "x": 54,
+    "y": 32.5
+   },
+   {
+    "id": "s2",
+    "x": 54,
+    "y": 28
+   }
+  ],
+  "steps": [
+   {
+    "label": "Erster Volley",
+    "say": "Der Torwart läuft schnell zum linken Pfosten, zwischen Hütchen und Pfosten. Der zweite Torwart spielt ihm einen Volley zu, und er fängt den Ball.",
+    "moves": [
+     {
+      "who": "k1",
+      "to": [
+       42,
+       8.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b2",
+      "to": [
+       42.6,
+       9.1
+      ],
+      "type": "pass",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Zurück und in die Mitte",
+    "say": "Er wirft den Ball mit der Hand zurück und läuft in die Mitte. Dort stellt er sich bereit und schaut zum Trainer.",
+    "moves": [
+     {
+      "who": "b2",
+      "to": [
+       31.6,
+       7.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "k1",
+      "to": [
+       50,
+       9.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       50,
+       26
+      ],
+      "type": "blick",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zweiter Volley",
+    "say": "Der Trainer spielt einen Volley. Der Torwart fängt ihn sicher und wirft ihn zum Trainer zurück.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       10.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       30.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Hütchen antippen",
+    "say": "Jetzt schnell seitwärts zum rechten Hütchen, antippen und sofort zurück in die Mitte.",
+    "moves": [
+     {
+      "who": "k1",
+      "to": [
+       60,
+       8.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "k1",
+      "to": [
+       50,
+       9.5
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Dritter Volley",
+    "say": "Der Trainer spielt den dritten Volley aufs Tor. Der Torwart fängt ihn und wirft ihn zurück, damit ist die Runde geschafft. Nach zwei Runden tauschen die beiden Torhüter.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       10.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       30.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 14,
+    "y1": 58.6,
+    "x2": 86,
+    "y2": 58.6,
+    "text": "41 m"
+   },
+   {
+    "x1": 92,
+    "y1": 5,
+    "x2": 92,
+    "y2": 34,
+    "text": "16 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Harte Volleys zur Seite abwehren.",
+   "title": "Harte Volleys abwehren",
+   "text": "Ist ein Volley zu hart zum Festhalten, wehrt der Torwart ihn ab. Aber nie nach vorn in die Mitte, sondern zur Seite, weg vom Tor. So macht er es auch im Spiel, damit kein Gegner nachschießen kann.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 42,
+      "y": 8.5,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 31,
+      "y": 7,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 30.6
+     },
+     {
+      "id": "b2",
+      "x": 31.6,
+      "y": 7.6
+     },
+     {
+      "id": "s1",
+      "x": 54,
+      "y": 32.5
+     },
+     {
+      "id": "s2",
+      "x": 54,
+      "y": 28
+     }
+    ],
+    "steps": [
+     {
+      "label": "Harter Volley",
+      "say": "Der zweite Torwart spielt einen harten Volley. Der Torwart merkt: Den kann ich nicht festhalten.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         42.6,
+         9.1
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Zur Seite abwehren",
+      "say": "Er wehrt den Ball mit beiden Händen zur Seite ab, weg vom Tor. Dann ist er sofort wieder bereit für den nächsten Ball.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         36,
+         2.5
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Konzentriert bleiben und nachfassen.",
+   "title": "Konzentriert bleiben",
+   "text": "Die ganze Runde lang konzentriert bleiben. Volleys, die genau auf den Körper kommen, sicher festhalten. Rutscht der Ball doch einmal aus den Händen, sofort nachfassen und ihn sichern.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 50,
+      "y": 9.5,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 31,
+      "y": 7,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 30.6
+     },
+     {
+      "id": "b2",
+      "x": 31.6,
+      "y": 7.6
+     },
+     {
+      "id": "s1",
+      "x": 54,
+      "y": 32.5
+     },
+     {
+      "id": "s2",
+      "x": 54,
+      "y": 28
+     }
+    ],
+    "steps": [
+     {
+      "label": "Ball rutscht weg",
+      "say": "Der Trainer spielt einen Volley genau auf den Torwart. Der Ball rutscht ihm aus den Händen und springt zur Seite.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         10.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         58.6,
+         9.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Nachfassen",
+      "say": "Der Torwart reagiert sofort, fasst nach und sichert den Ball. Dann wirft er ihn zum Trainer zurück.",
+      "moves": [
+       {
+        "who": "k1",
+        "to": [
+         58,
+         9
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         30.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

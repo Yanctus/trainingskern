@@ -3,7 +3,7 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # 20 x 20 Yards = Feld x 25-75, y 5-55 (18 x 18 m). Ausrichtung wie im PDF (Minitore links, Trainer rechts an der Seite,
 # Spieler startet unten), nicht gedreht. Das untere Minitor steht im Original schräg; hier gerade mit Öffnung nach rechts.
 # Pinker Spieler P -> Spieler zwei (Team Neon, rechter Außenverteidiger). Zwei Dummys als Stangen (Verteidiger außen,
-# Verteidiger im Strafraum). Gelbes Hütchen -> neon. Ballhaufen beim Spieler nur als zwei Ersatzbälle neben dem Trainer
+# Verteidiger im Strafraum). Gelbes Hütchen -> neon. Ballhaufen (im Original unten) nur als zwei Ersatzbälle rechts neben dem Trainer
 # (Regel: zwei Ersatzbälle beim Trainer). Trainer etwas ins Feld gerückt (Seitenlinie).
 # Ablauf nach PDF und Video (0:08-0:30): Pass zum Trainer, an die Schulter des äußeren Dummys, Bogenlauf innen hinter den
 # Dummy (Underlap), Pass in den Lauf, direkte Flanke ins obere Minitor oder Rückpass ins untere. Reine Technikübung: Ziel.
@@ -16,7 +16,7 @@ POS = {"n2": (61.5, 51)}
 def sp(**k):
     d = dict(POS); d.update(k)
     return [P(i, "a", x, y, i[1:]) for i, (x, y) in d.items()] + [T]
-ERSATZ = [B("s1", 72.5, 45.5), B("s2", 70, 47.5)]
+ERSATZ = [B("s1", 76.5, 42.5), B("s2", 76.5, 45)]
 BALL_T = [72.6, 39.6]
 LINES = [rect(25, 5, 50, 50)]
 TORE = [{"x": 28, "y": 14, "side": "left"}, {"x": 31, "y": 31, "side": "left"}]
@@ -65,7 +65,7 @@ u = {"title": "Innen und außen hinterlaufen", "code": "UE-285", "kind": "Übung
        ps("b1", BALL_T)),
      S("Außen herum", "Der Trainer nimmt den Ball vor dem Dummy nach innen mit. Gleichzeitig läuft Spieler zwei im Bogen außen herum.",
        dr("T", "b1", [64, 45]), dr("T", "b1", [56, 40], after=True),
-       mv("n2", [71, 44]), mv("n2", [71.5, 32], after=True), mv("n2", [68, 20], after=True)),
+       mv("n2", [71, 44], delay=0.5), mv("n2", [71.5, 32], after=True), mv("n2", [68, 20], after=True)),
      S("Schauen und Pass", "Spieler zwei öffnet den Körper und schaut nach innen zu den Minitoren. Der Trainer spielt den Ball in den Lauf.",
        bl("n2", [48, 19]), ps("b1", [68.6, 20.6], after=True)),
      S("Direkt flanken: Ziel", "Spieler zwei flankt direkt ins obere Minitor. Das ist das Ziel. Dann geht der Trainer zurück an die Seite, und Spieler zwei holt am Hütchen den nächsten Ball.",

@@ -1,0 +1,529 @@
+{
+ "title": "Schräg um die Puppe abschließen",
+ "code": "UE-278",
+ "kind": "Übungsform",
+ "focuses": [
+  "Torschuss",
+  "Dribbling",
+  "Schnelligkeit"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Einzeltraining"
+ ],
+ "duration_minutes": 15,
+ "players_min": 1,
+ "players_max": 1,
+ "field_size": "18 x 14 m",
+ "description": "Ein Spieler trainiert allein mit dem Trainer den Abschluss aus spitzem Winkel. Er dribbelt schräg zu einer Puppe, dreht scharf um sie herum und schießt schräg ins Minitor seiner Startbahn. Dann sprintet er zurück und holt den nächsten Ball. Erst kommt die Genauigkeit, die Härte kommt später.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 14 Metern mit drei Bahnen. Oben drei Minitore, in der Mitte drei Puppen oder Stangen, unten drei Hütchen.",
+  "Verteilen: Der Spieler startet an der rechten Bahn mit Ball. Ein Ball liegt am linken Hütchen, zwei Bälle am mittleren. Der Trainer steht rechts neben dem Feld.",
+  "Ablauf: Der Spieler dribbelt schräg zur Puppe der Nachbarbahn, dreht scharf um sie herum und schießt schräg ins Minitor seiner Startbahn. Dann sprintet er zum nächsten Ball.",
+  "Wechsel: Sind alle vier Bälle geschossen, ist die Runde vorbei. Der Spieler holt die Bälle zurück, macht kurz Pause und startet die nächste Runde."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Den Ball mit Tempo eng am Fuß führen",
+  "Scharf um die Puppe drehen und sofort abschließen",
+  "Erst genau schießen, später fester",
+  "Mal mit links, mal mit rechts schießen"
+ ],
+ "materials": [
+  "3 Minitore",
+  "3 Puppen oder Stangen",
+  "3 Hütchen",
+  "4 Bälle",
+  "2 Ersatzbälle beim Trainer"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Schräg um die Puppe abschließen. Mit Tempo zur Puppe dribbeln, scharf drehen und aus spitzem Winkel genau ins Minitor schießen.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 12,
+    "w": 50,
+    "h": 39
+   }
+  ],
+  "goals": [
+   {
+    "x": 33.5,
+    "y": 12,
+    "side": "top"
+   },
+   {
+    "x": 50,
+    "y": 12,
+    "side": "top"
+   },
+   {
+    "x": 66.5,
+    "y": 12,
+    "side": "top"
+   }
+  ],
+  "cones": [
+   {
+    "x": 33.5,
+    "y": 31,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 50,
+    "y": 31,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 66.5,
+    "y": 31,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 33.5,
+    "y": 46,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 46,
+    "color": "orange"
+   },
+   {
+    "x": 66.5,
+    "y": 46,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 64,
+    "y": 48.5,
+    "label": "7"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 84,
+    "y": 14,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 64.6,
+    "y": 49.1
+   },
+   {
+    "id": "b2",
+    "x": 36.6,
+    "y": 46.6
+   },
+   {
+    "id": "b3",
+    "x": 47,
+    "y": 46.6
+   },
+   {
+    "id": "b4",
+    "x": 53.6,
+    "y": 46.6
+   },
+   {
+    "id": "s1",
+    "x": 87,
+    "y": 17
+   },
+   {
+    "id": "s2",
+    "x": 87,
+    "y": 11
+   }
+  ],
+  "steps": [
+   {
+    "label": "Schräg zur Puppe",
+    "say": "Spieler sieben dribbelt mit Tempo schräg nach links zur mittleren Puppe. Er läuft links an ihr vorbei.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       58,
+       42
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       46,
+       37
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       44.5,
+       31
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Scharfe Drehung",
+    "say": "Hinter der Puppe dreht er scharf nach rechts. Jetzt steht er schräg vor dem rechten Minitor.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       47,
+       26
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       52,
+       24.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Abschluss",
+    "say": "Spieler sieben schießt aus dem spitzen Winkel genau ins rechte Minitor. Treffer!",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       66.5,
+       12.3
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Nächster Ball",
+    "say": "Dann sprintet er zurück und holt den nächsten Ball am mittleren Hütchen. So geht es weiter, bis alle vier Bälle geschossen sind. Dann holt Spieler sieben die Bälle zurück, macht kurz Pause und startet die nächste Runde.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       57,
+       33
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n7",
+      "to": [
+       46.4,
+       46
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 79,
+    "y1": 12,
+    "x2": 79,
+    "y2": 51,
+    "text": "14 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Erst genau, dann fest.",
+   "title": "Genau vor fest",
+   "text": "Aus spitzem Winkel ist das Tor klein. Der Spieler schießt deshalb lieber flach und genau als fest. Wer zu fest schießt, verfehlt das Minitor oft. Die Härte kommt erst, wenn die Schüsse sicher sitzen.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 46.4,
+      "y": 46,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 84,
+      "y": 14,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b3",
+      "x": 47,
+      "y": 46.6
+     },
+     {
+      "id": "b4",
+      "x": 53.6,
+      "y": 46.6
+     },
+     {
+      "id": "b2",
+      "x": 36.6,
+      "y": 46.6
+     },
+     {
+      "id": "s1",
+      "x": 87,
+      "y": 17
+     },
+     {
+      "id": "s2",
+      "x": 87,
+      "y": 11
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zur linken Puppe",
+      "say": "Spieler sieben dribbelt vom mittleren Hütchen schräg zur linken Puppe und läuft links an ihr vorbei.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         40,
+         39
+        ],
+        "type": "dribbling",
+        "ball": "b3"
+       },
+       {
+        "who": "n7",
+        "to": [
+         29,
+         33
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b3"
+       },
+       {
+        "who": "n7",
+        "to": [
+         29,
+         27
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b3"
+       }
+      ]
+     },
+     {
+      "label": "Drehen und genau schießen",
+      "say": "Er dreht scharf nach rechts und schießt flach und genau ins mittlere Minitor. Lieber genau als fest.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         34,
+         24.5
+        ],
+        "type": "dribbling",
+        "ball": "b3"
+       },
+       {
+        "who": "b3",
+        "to": [
+         50,
+         12.3
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Trifft der Ball den Pfosten, sofort nachsetzen.",
+   "title": "Abpraller direkt verwandeln",
+   "text": "Prallt der Ball vom Pfosten zurück ins Feld, bleibt der Spieler wach. Er reagiert schnell und schießt den Abpraller direkt mit dem ersten Kontakt ins Tor. So lernt er, auch nach einem Fehlschuss ruhig zu bleiben.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 53,
+      "y": 46,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 84,
+      "y": 14,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b4",
+      "x": 53.6,
+      "y": 46.6
+     },
+     {
+      "id": "s1",
+      "x": 87,
+      "y": 17
+     },
+     {
+      "id": "s2",
+      "x": 87,
+      "y": 11
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zur rechten Puppe",
+      "say": "Spieler sieben nimmt den letzten Ball am mittleren Hütchen und dribbelt schräg zur rechten Puppe. Er läuft rechts an ihr vorbei.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         60,
+         39
+        ],
+        "type": "dribbling",
+        "ball": "b4"
+       },
+       {
+        "who": "n7",
+        "to": [
+         71,
+         33
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b4"
+       },
+       {
+        "who": "n7",
+        "to": [
+         71,
+         27
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b4"
+       }
+      ]
+     },
+     {
+      "label": "An den Pfosten",
+      "say": "Er dreht scharf nach links und schießt aufs mittlere Minitor. Der Ball prallt vom Pfosten zurück ins Feld.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         66,
+         24.5
+        ],
+        "type": "dribbling",
+        "ball": "b4"
+       },
+       {
+        "who": "b4",
+        "to": [
+         54,
+         12.5
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b4",
+        "to": [
+         58.6,
+         20.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Direkt nachsetzen",
+      "say": "Spieler sieben reagiert sofort, läuft in den Abpraller und schießt ihn direkt ins mittlere Minitor. Treffer!",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         58,
+         20
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b4",
+        "to": [
+         50,
+         12.3
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

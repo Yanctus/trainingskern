@@ -1,0 +1,491 @@
+{
+ "title": "Hütchen andribbeln und passen",
+ "code": "UE-279",
+ "kind": "Übungsform",
+ "focuses": [
+  "Dribbling",
+  "Passspiel",
+  "Kondition"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Einzeltraining"
+ ],
+ "duration_minutes": 15,
+ "players_min": 1,
+ "players_max": 1,
+ "field_size": "Kreis, 14 m Durchmesser",
+ "description": "Ein Spieler trainiert allein mit dem Trainer Dribbling mit Tempo, genaue Pässe und Ausdauer. Er dribbelt von der Stange in der Mitte zu einem Hütchen, dreht schnell und dribbelt zurück. Dann lässt er seinen Ball an der Stange liegen und spielt mit dem Trainer je einen Pass mit links und mit rechts. Der Trainer wechselt danach den Platz, und der Spieler muss sich neu orientieren.",
+ "organisation": [
+  "Aufbauen: Ein Kreis mit etwa 14 Metern Durchmesser. Acht Hütchen gleichmäßig am Rand, in der Mitte eine Stange.",
+  "Verteilen: Der Spieler startet mit Ball an der Stange. Der Trainer steht mit einem Ball außen an einem Hütchen.",
+  "Ablauf: Der Spieler dribbelt zu einem Hütchen, dreht schnell und dribbelt zurück zur Stange. Dort lässt er den Ball liegen, läuft zum Trainer und passt einmal mit links und einmal mit rechts zurück. Dann sprintet er zurück zu seinem Ball.",
+  "Wechsel: Nach jeder Passstation geht der Trainer an ein anderes Hütchen. Hat der Spieler alle acht Hütchen angedribbelt, ist die Runde vorbei. Nach einer kurzen Pause beginnt die nächste Runde."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Den Ball beim Dribbling eng am Fuß führen und Tempo machen",
+  "Mit kurzen, schnellen Kontakten drehen",
+  "Genau passen, mit links und mit rechts",
+  "Den Ball an der Stange stoppen und schauen, wo der Trainer steht"
+ ],
+ "materials": [
+  "8 Hütchen",
+  "1 Stange",
+  "2 Bälle",
+  "2 Ersatzbälle beim Trainer"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Hütchen andribbeln und passen. Mit Tempo zum Hütchen und zurück, dann zwei genaue Pässe mit dem Trainer, und das acht Mal hintereinander.",
+ "board": {
+  "lines": [
+   {
+    "type": "circle",
+    "x": 50,
+    "y": 30,
+    "r": 24
+   }
+  ],
+  "cones": [
+   {
+    "x": 50,
+    "y": 6,
+    "color": "orange"
+   },
+   {
+    "x": 66.97,
+    "y": 13.03,
+    "color": "orange"
+   },
+   {
+    "x": 74,
+    "y": 30,
+    "color": "orange"
+   },
+   {
+    "x": 66.97,
+    "y": 46.97,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 54,
+    "color": "orange"
+   },
+   {
+    "x": 33.03,
+    "y": 46.97,
+    "color": "orange"
+   },
+   {
+    "x": 26,
+    "y": 30,
+    "color": "orange"
+   },
+   {
+    "x": 33.03,
+    "y": 13.03,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 30,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 46,
+    "y": 30,
+    "label": "7"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 79,
+    "y": 34,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 46.6,
+    "y": 30.6
+   },
+   {
+    "id": "b2",
+    "x": 79.6,
+    "y": 34.6
+   },
+   {
+    "id": "s1",
+    "x": 82.5,
+    "y": 37.5
+   },
+   {
+    "id": "s2",
+    "x": 82.5,
+    "y": 30.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Zum Hütchen",
+    "say": "Spieler sieben dribbelt mit Tempo von der Stange zum Hütchen unten.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       48,
+       49.5
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Drehen und zurück",
+    "say": "Kurz vor dem Hütchen dreht er mit kurzen, schnellen Kontakten. Dann dribbelt er zurück und stoppt den Ball neben der Stange.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       52,
+       48
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       54,
+       34
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Schauen, wo der Trainer ist",
+    "say": "Spieler sieben lässt den Ball liegen und schaut, wo der Trainer steht. Dann läuft er zu ihm.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       79,
+       34
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "n7",
+      "to": [
+       69,
+       34
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Links und rechts passen",
+    "say": "Der Trainer spielt ihm den Ball zu, und Spieler sieben passt mit links zurück. Dann noch einmal, jetzt passt er mit rechts zurück.",
+    "moves": [
+     {
+      "who": "b2",
+      "to": [
+       69.6,
+       34.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b2",
+      "to": [
+       79.6,
+       34.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b2",
+      "to": [
+       69.6,
+       34.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b2",
+      "to": [
+       79.6,
+       34.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zurück zum Ball",
+    "say": "Spieler sieben sprintet zurück zu seinem Ball an der Stange. Gleichzeitig geht der Trainer an ein anderes Hütchen. Dann geht es zum nächsten Hütchen. Hat Spieler sieben alle acht Hütchen angedribbelt, ist die Runde vorbei, und nach einer kurzen Pause beginnt die nächste.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       54,
+       34
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "T",
+      "to": [
+       72,
+       8
+      ],
+      "type": "dribbling",
+      "ball": "b2"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 26,
+    "y1": 58.6,
+    "x2": 74,
+    "y2": 58.6,
+    "text": "14 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Eng am Ball und mit Tempo, die ganze Runde lang.",
+   "title": "Eng am Ball, hohes Tempo",
+   "text": "Der Spieler führt den Ball beim Dribbling mit vielen kleinen Kontakten ganz nah am Fuß. Er bleibt die ganze Runde konzentriert und schnell, auch wenn er müde wird. Am Hütchen dreht er mit kurzen, schnellen Kontakten.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 54,
+      "y": 34,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 72,
+      "y": 8,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 54.6,
+      "y": 34.6
+     },
+     {
+      "id": "b2",
+      "x": 72.6,
+      "y": 8.6
+     },
+     {
+      "id": "s1",
+      "x": 76,
+      "y": 5.5
+     },
+     {
+      "id": "s2",
+      "x": 76.5,
+      "y": 10.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Mit Tempo nach links",
+      "say": "Spieler sieben dribbelt mit vielen kleinen Kontakten zum Hütchen links. Der Ball bleibt ganz nah am Fuß.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         46,
+         35
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         30,
+         31
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Kurz drehen, zurück",
+      "say": "Am Hütchen dreht er mit kurzen, schnellen Kontakten und dribbelt mit Tempo zurück zur Stange.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         31,
+         27
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         45,
+         26.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Genau passen, auch mit dem schwächeren Fuß.",
+   "title": "Genau mit beiden Füßen",
+   "text": "Der Spieler passt mit beiden Füßen genau zum Trainer. Gerade mit dem schwächeren Fuß geht ein Pass schnell daneben. Dann zeigt der Trainer kurz, wie es besser geht: Standbein neben den Ball, mit der Innenseite passen.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 52,
+      "y": 21,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 62,
+      "y": 4,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 45.6,
+      "y": 27.1
+     },
+     {
+      "id": "b2",
+      "x": 62.6,
+      "y": 4.6
+     },
+     {
+      "id": "s1",
+      "x": 58.5,
+      "y": 2
+     },
+     {
+      "id": "s2",
+      "x": 65.5,
+      "y": 1.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Pass daneben",
+      "say": "Der Trainer steht jetzt oben. Er spielt Spieler sieben den Ball zu. Spieler sieben passt mit dem schwächeren linken Fuß zurück, aber der Pass geht daneben.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         62,
+         4
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b2",
+        "to": [
+         52.6,
+         21.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b2",
+        "to": [
+         72,
+         2
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Besser machen",
+      "say": "Der Trainer spielt einen Ersatzball. Spieler sieben stellt das Standbein neben den Ball und passt mit der Innenseite genau zurück.",
+      "moves": [
+       {
+        "who": "s1",
+        "to": [
+         52.6,
+         21.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "s1",
+        "to": [
+         62.6,
+         4.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

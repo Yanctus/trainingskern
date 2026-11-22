@@ -1,0 +1,613 @@
+{
+ "title": "Bälle umlegen um die Puppe",
+ "code": "UE-277",
+ "kind": "Übungsform",
+ "focuses": [
+  "Dribbling",
+  "Schnelligkeit",
+  "Koordination"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "tags": [
+  "Einzeltraining"
+ ],
+ "duration_minutes": 15,
+ "players_min": 1,
+ "players_max": 1,
+ "field_size": "Kreis, 14 m Durchmesser",
+ "description": "Ein Spieler trainiert allein mit dem Trainer Dribbling mit Tempo und Merkfähigkeit. Er dribbelt mit dem Ball scharf um die Puppe in der Mitte und legt ihn an einem freien Hütchen ab. Dann sprintet er zum nächsten Ball, der in dieser Runde noch nicht bewegt wurde. Die Runde ist vorbei, wenn alle vier Bälle an einem neuen Hütchen liegen.",
+ "organisation": [
+  "Aufbauen: Ein Kreis mit etwa 14 Metern Durchmesser. Acht Hütchen gleichmäßig am Rand, in der Mitte eine Puppe oder Stange.",
+  "Verteilen: Drei Bälle liegen an den Hütchen links, rechts und unten. Der Spieler startet oben mit dem vierten Ball. Der Trainer steht außen.",
+  "Ablauf: Der Spieler dribbelt scharf um die Puppe und legt den Ball an einem freien Hütchen ab. Dann sprintet er zum nächsten Ball, der noch nicht bewegt wurde, und macht weiter.",
+  "Wechsel: Liegen alle vier Bälle an einem neuen Hütchen, ist die Runde vorbei. Kein Ball darf zweimal bewegt werden. Nach einer kurzen Pause startet die nächste Runde."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Den Ball eng am Fuß führen und dabei Tempo machen",
+  "Scharf und eng um die Puppe drehen",
+  "Merken, welche Bälle schon bewegt wurden",
+  "Schnell zum nächsten Ball sprinten und beide Füße benutzen"
+ ],
+ "materials": [
+  "8 Hütchen",
+  "1 Puppe oder Stange",
+  "4 Bälle",
+  "2 Ersatzbälle beim Trainer"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Bälle umlegen um die Puppe. Mit Tempo um die Puppe dribbeln, den Ball an einem freien Hütchen ablegen und dir merken, welche Bälle du schon bewegt hast.",
+ "board": {
+  "lines": [
+   {
+    "type": "circle",
+    "x": 50,
+    "y": 30,
+    "r": 24
+   }
+  ],
+  "cones": [
+   {
+    "x": 50,
+    "y": 6,
+    "color": "orange"
+   },
+   {
+    "x": 66.97,
+    "y": 13.03,
+    "color": "orange"
+   },
+   {
+    "x": 74,
+    "y": 30,
+    "color": "orange"
+   },
+   {
+    "x": 66.97,
+    "y": 46.97,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 54,
+    "color": "orange"
+   },
+   {
+    "x": 33.03,
+    "y": 46.97,
+    "color": "orange"
+   },
+   {
+    "x": 26,
+    "y": 30,
+    "color": "orange"
+   },
+   {
+    "x": 33.03,
+    "y": 13.03,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 30,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 50,
+    "y": 9.5,
+    "label": "7"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 82,
+    "y": 12,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 50.6,
+    "y": 10.1
+   },
+   {
+    "id": "b2",
+    "x": 28.6,
+    "y": 30.6
+   },
+   {
+    "id": "b3",
+    "x": 71.6,
+    "y": 30.6
+   },
+   {
+    "id": "b4",
+    "x": 50.6,
+    "y": 50.6
+   },
+   {
+    "id": "s1",
+    "x": 86,
+    "y": 15
+   },
+   {
+    "id": "s2",
+    "x": 86,
+    "y": 9
+   }
+  ],
+  "steps": [
+   {
+    "label": "Um die Puppe",
+    "say": "Spieler sieben dribbelt mit Tempo zur Puppe in der Mitte und dreht scharf um sie herum.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       54,
+       22
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       56,
+       30
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       51,
+       36
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       44,
+       34
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Ball ablegen",
+    "say": "Dann dribbelt er zu einem freien Hütchen unten links und legt den Ball dort ab.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       35,
+       44
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Schauen und sprinten",
+    "say": "Spieler sieben schaut, welcher Ball noch nicht bewegt wurde. Er sieht den Ball links und sprintet hin.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       28,
+       30
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "n7",
+      "to": [
+       28,
+       30
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zweiter Ball",
+    "say": "Mit dem zweiten Ball dribbelt er wieder scharf um die Puppe und legt ihn am freien Hütchen oben links ab.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       44,
+       24
+      ],
+      "type": "dribbling",
+      "ball": "b2"
+     },
+     {
+      "who": "n7",
+      "to": [
+       54,
+       25
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "n7",
+      "to": [
+       55,
+       33
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "n7",
+      "to": [
+       47,
+       36
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "n7",
+      "to": [
+       42,
+       27
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "n7",
+      "to": [
+       36,
+       16
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     }
+    ]
+   },
+   {
+    "label": "Runde vorbei",
+    "say": "So geht es weiter mit dem Ball rechts und dem Ball unten. Liegen alle vier Bälle an einem neuen Hütchen, ist die Runde vorbei. Nach einer kurzen Pause startet Spieler sieben die nächste Runde.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       46,
+       18
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n7",
+      "to": [
+       71,
+       30
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 26,
+    "y1": 58.6,
+    "x2": 74,
+    "y2": 58.6,
+    "text": "14 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Scharf und eng um die Puppe drehen.",
+   "title": "Scharf um die Puppe",
+   "text": "Die Drehung um die Puppe ist wie ein Haken gegen einen Gegenspieler. Der Ball bleibt mit kleinen Kontakten ganz nah am Fuß, und nach der Drehung geht es sofort mit Tempo weiter. Dabei mal mit links, mal mit rechts drehen.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 71,
+      "y": 30,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 82,
+      "y": 12,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 35.6,
+      "y": 44.6
+     },
+     {
+      "id": "b2",
+      "x": 36.6,
+      "y": 16.6
+     },
+     {
+      "id": "b3",
+      "x": 71.6,
+      "y": 30.6
+     },
+     {
+      "id": "b4",
+      "x": 50.6,
+      "y": 50.6
+     },
+     {
+      "id": "s1",
+      "x": 86,
+      "y": 15
+     },
+     {
+      "id": "s2",
+      "x": 86,
+      "y": 9
+     }
+    ],
+    "steps": [
+     {
+      "label": "Kleine Kontakte",
+      "say": "Spieler sieben dribbelt mit dem Ball von rechts zur Puppe. Kurz davor macht er kleine Kontakte.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         56,
+         27
+        ],
+        "type": "dribbling",
+        "ball": "b3"
+       }
+      ]
+     },
+     {
+      "label": "Eng drehen",
+      "say": "Er dreht ganz eng um die Puppe, der Ball bleibt nah am Fuß. Dann geht es mit Tempo zum freien Hütchen oben rechts.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         50,
+         24.5
+        ],
+        "type": "dribbling",
+        "ball": "b3"
+       },
+       {
+        "who": "n7",
+        "to": [
+         44.5,
+         30
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b3"
+       },
+       {
+        "who": "n7",
+        "to": [
+         50,
+         35.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b3"
+       },
+       {
+        "who": "n7",
+        "to": [
+         55.5,
+         31
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b3"
+       },
+       {
+        "who": "n7",
+        "to": [
+         64,
+         17
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b3"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Merk dir, welche Bälle du schon bewegt hast.",
+   "title": "Merken, was schon bewegt ist",
+   "text": "Ein Ball darf in einer Runde nur einmal bewegt werden. Der Spieler muss sich merken, welche Bälle er schon abgelegt hat. Er schaut sich kurz um und sprintet sofort zum nächsten freien Ball.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 35,
+      "y": 44,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 82,
+      "y": 12,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 35.6,
+      "y": 44.6
+     },
+     {
+      "id": "b2",
+      "x": 36.6,
+      "y": 16.6
+     },
+     {
+      "id": "b3",
+      "x": 64.6,
+      "y": 17.6
+     },
+     {
+      "id": "b4",
+      "x": 50.6,
+      "y": 50.6
+     },
+     {
+      "id": "s1",
+      "x": 86,
+      "y": 15
+     },
+     {
+      "id": "s2",
+      "x": 86,
+      "y": 9
+     }
+    ],
+    "steps": [
+     {
+      "label": "Schon bewegt",
+      "say": "Spieler sieben steht unten links. Dieser Ball wurde in dieser Runde schon abgelegt. Er schaut, welcher Ball noch frei ist.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         50,
+         50
+        ],
+        "type": "blick"
+       }
+      ]
+     },
+     {
+      "label": "Zum freien Ball",
+      "say": "Er sprintet zum Ball unten. Den hat er noch nicht bewegt.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         50,
+         50
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Weiter um die Puppe",
+      "say": "Mit diesem Ball dribbelt er scharf um die Puppe und legt ihn am freien Hütchen rechts unten ab. Jetzt liegen alle vier Bälle an einem neuen Hütchen.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         46,
+         37
+        ],
+        "type": "dribbling",
+        "ball": "b4"
+       },
+       {
+        "who": "n7",
+        "to": [
+         44,
+         29
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b4"
+       },
+       {
+        "who": "n7",
+        "to": [
+         50,
+         24.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b4"
+       },
+       {
+        "who": "n7",
+        "to": [
+         56,
+         30
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b4"
+       },
+       {
+        "who": "n7",
+        "to": [
+         64,
+         44
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b4"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
