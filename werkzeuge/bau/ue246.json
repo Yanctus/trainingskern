@@ -1,0 +1,740 @@
+{
+ "title": "Dritter Mann ins Zwei gegen Zwei",
+ "code": "UE-246",
+ "kind": "Übungsform",
+ "focuses": [
+  "Zusammenspiel",
+  "Torschuss",
+  "Verteidigen"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 9,
+ "players_max": 12,
+ "field_size": "27 x 27 m",
+ "description": "Drei Angreifer kombinieren um drei Puppen: Pass quer, Pass zum Stürmer, Ablage und Steilpass für den dritten Mann. Gleichzeitig laufen zwei Verteidiger außen durch die Leitern, tippen ein Hütchen an und verteidigen dann im Strafraum. Dort wird zwei gegen zwei aufs Tor gespielt. Danach ist die nächste Gruppe dran.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 27 mal 27 Metern mit Strafraum und Jugendtor oben. Drei Puppen im Dreieck, links und rechts außerhalb je eine Leiter und oben ein Hütchen.",
+  "Verteilen: Team Neon greift an, drei Spieler pro Gruppe, die anderen warten unten. Team Rot verteidigt, je ein Spieler startet unter jeder Leiter. Ein Spieler von Team Rot steht im Tor. Der Trainer steht rechts mit Bällen.",
+  "Ablauf: Pass quer, Pass zum Stürmer, Ablage, Steilpass für den dritten Mann. Gleichzeitig laufen die Verteidiger durch die Leitern, tippen das Hütchen an und verteidigen. Dann zwei gegen zwei aufs Tor.",
+  "Wertung und Wechsel: Jeder Treffer gibt einen Punkt für Team Neon. Ist der Angriff vorbei, startet die nächste Gruppe, und zwei neue Verteidiger laufen los."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Vor der Ballannahme kurz antäuschen und dann entgegenkommen",
+  "Genau und mit dem richtigen Tempo passen",
+  "Schnell angreifen, bevor die Verteidiger da sind",
+  "Mit Läufen Platz für den Mitspieler schaffen und genau abschließen"
+ ],
+ "materials": [
+  "1 Jugendtor",
+  "3 Stangen als Puppen",
+  "2 Koordinationsleitern",
+  "2 Hütchen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Dritter Mann ins Zwei gegen Zwei. Drei Angreifer kombinieren, während zwei Verteidiger durch die Leitern sprinten.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   },
+   {
+    "type": "line",
+    "x1": 25,
+    "y1": 29.5,
+    "x2": 75,
+    "y2": 29.5,
+    "dashed": false
+   },
+   {
+    "type": "rect",
+    "x": 37.6,
+    "y": 5,
+    "w": 26.4,
+    "h": 7.1
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "jugend"
+   }
+  ],
+  "cones": [
+   {
+    "x": 50.6,
+    "y": 28.7,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 39,
+    "y": 42.6,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 61.1,
+    "y": 42,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 20.5,
+    "y": 24,
+    "color": "orange",
+    "shape": "leiter_ou"
+   },
+   {
+    "x": 79.5,
+    "y": 24,
+    "color": "orange",
+    "shape": "leiter_ou"
+   },
+   {
+    "x": 20.5,
+    "y": 9,
+    "color": "orange"
+   },
+   {
+    "x": 79.5,
+    "y": 9,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "r1",
+    "team": "b",
+    "x": 50,
+    "y": 7.5,
+    "label": "TW"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 49,
+    "y": 33.5,
+    "label": "9"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 40,
+    "y": 49,
+    "label": "11"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 60,
+    "y": 47.5,
+    "label": "7"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 20.5,
+    "y": 40,
+    "label": "5"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 79.5,
+    "y": 40,
+    "label": "6"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 88,
+    "y": 54,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 60.6,
+    "y": 48.1
+   },
+   {
+    "id": "s1",
+    "x": 91.6,
+    "y": 57.5
+   },
+   {
+    "id": "s2",
+    "x": 88,
+    "y": 57.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pass quer, Leitern",
+    "say": "Spieler sieben passt quer zu Spieler elf. Spieler neun täuscht kurz nach vorn an und kommt entgegen. Gleichzeitig laufen Spieler fünf und Spieler sechs durch die Leitern und tippen oben das Hütchen an.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       40.6,
+       49.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n9",
+      "to": [
+       45,
+       29
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n9",
+      "to": [
+       46,
+       35.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r5",
+      "to": [
+       20.5,
+       11
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r6",
+      "to": [
+       79.5,
+       11
+      ],
+      "type": "lauf"
+     }
+    ]
+   },
+   {
+    "label": "Zum Stürmer, Ablage",
+    "say": "Spieler elf spielt den Stürmer an. Spieler sieben kommt in die Mitte, und Spieler neun legt ihm direkt ab. Dann dreht Spieler neun ab und startet hinter die Puppe. Die Verteidiger laufen ins Feld.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       46.6,
+       36.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n7",
+      "to": [
+       57,
+       44
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n7",
+      "to": [
+       54,
+       38
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       54.6,
+       38.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n9",
+      "to": [
+       55,
+       31
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n9",
+      "to": [
+       57,
+       21
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r5",
+      "to": [
+       34,
+       17
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r6",
+      "to": [
+       66,
+       17
+      ],
+      "type": "lauf"
+     }
+    ]
+   },
+   {
+    "label": "Steil auf den dritten Mann",
+    "say": "Spieler elf startet links nach vorn. Spieler sieben spielt ihm den Ball steil in den Lauf. Spieler elf ist der dritte Mann.",
+    "moves": [
+     {
+      "who": "n11",
+      "to": [
+       33.5,
+       44.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n11",
+      "to": [
+       35,
+       26
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       35.6,
+       26.6
+      ],
+      "type": "pass",
+      "delay": 0.8
+     }
+    ]
+   },
+   {
+    "label": "Zwei gegen zwei: Punkt",
+    "say": "Jetzt heißt es zwei gegen zwei. Spieler elf dribbelt auf Spieler fünf zu und passt zu Spieler neun. Spieler neun schießt direkt ins lange Eck, und das gibt einen Punkt für Team Neon. Dann greift die nächste Gruppe an, und zwei neue Verteidiger laufen durch die Leitern.",
+    "moves": [
+     {
+      "who": "n11",
+      "to": [
+       38,
+       19
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "r5",
+      "to": [
+       37,
+       14
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n9",
+      "to": [
+       57,
+       14
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r6",
+      "to": [
+       61,
+       16
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       57.6,
+       14.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r1",
+      "to": [
+       53,
+       7
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       44.5,
+       5.4
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "27 m"
+   },
+   {
+    "x1": 95,
+    "y1": 5,
+    "x2": 95,
+    "y2": 55,
+    "text": "27 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Den Verteidiger weglocken.",
+   "title": "Den Verteidiger weglocken",
+   "text": "Der Angreifer ohne Ball läuft klug nach außen und nimmt seinen Verteidiger mit. In der Mitte wird eine Lücke frei. Der Mitspieler mit Ball sieht die Lücke, dribbelt hinein und schließt entschlossen ab.",
+   "board": {
+    "players": [
+     {
+      "id": "r1",
+      "team": "b",
+      "x": 50,
+      "y": 7.5,
+      "label": "TW"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 58,
+      "y": 26,
+      "label": "9"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 40,
+      "y": 30,
+      "label": "11"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 50,
+      "y": 45,
+      "label": "7"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 31,
+      "y": 22,
+      "label": "5"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 67,
+      "y": 17,
+      "label": "6"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 88,
+      "y": 54,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 40.6,
+      "y": 30.6
+     },
+     {
+      "id": "s1",
+      "x": 91.6,
+      "y": 57.5
+     },
+     {
+      "id": "s2",
+      "x": 88,
+      "y": 57.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Weglocken",
+      "say": "Spieler neun läuft nach außen weg, und Spieler sechs geht mit. In der Mitte wird eine Lücke frei.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         75,
+         22
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r6",
+        "to": [
+         73,
+         16
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "In die Lücke: Punkt",
+      "say": "Spieler elf sieht die Lücke, dribbelt mit Tempo hinein und schießt ins Eck. Spieler fünf kommt zu spät, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n11",
+        "to": [
+         50,
+         14
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "n11",
+        "to": [
+         48,
+         18
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "r5",
+        "to": [
+         40,
+         21
+        ],
+        "type": "lauf",
+        "delay": 0.5
+       },
+       {
+        "who": "b1",
+        "to": [
+         55.5,
+         5.4
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Minitore für die Verteidiger.",
+   "title": "Minitore für die Verteidiger",
+   "text": "Links und rechts stehen jetzt zwei Minitore. Erobern die Verteidiger den Ball, spielen sie schnell nach vorn hinaus und schießen auf ein Minitor. Ein Treffer dort gibt einen Punkt für Team Rot.",
+   "board": {
+    "players": [
+     {
+      "id": "r1",
+      "team": "b",
+      "x": 50,
+      "y": 7.5,
+      "label": "TW"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 40,
+      "y": 22,
+      "label": "9"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 60,
+      "y": 24,
+      "label": "11"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 51,
+      "y": 40,
+      "label": "7"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 40,
+      "y": 6,
+      "label": "5"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 60,
+      "y": 8,
+      "label": "6"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 88,
+      "y": 54,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 60.6,
+      "y": 24.6
+     },
+     {
+      "id": "s1",
+      "x": 91.6,
+      "y": 57.5
+     },
+     {
+      "id": "s2",
+      "x": 88,
+      "y": 57.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Ball erobert",
+      "say": "Spieler elf dribbelt auf Spieler sechs zu. Spieler sechs stellt ihn und erobert den Ball.",
+      "moves": [
+       {
+        "who": "n11",
+        "to": [
+         57,
+         18
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "r6",
+        "to": [
+         59,
+         12.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         59.6,
+         13.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Aufs Minitor: Punkt",
+      "say": "Spieler sechs schaut kurz hoch und sieht das Minitor. Er dribbelt mit Tempo hinaus und schießt ins Minitor, und das gibt einen Punkt für Team Rot. Danach greift die nächste Gruppe an.",
+      "moves": [
+       {
+        "who": "r6",
+        "to": [
+         66,
+         28
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "r6",
+        "to": [
+         67,
+         26
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         69,
+         32.4
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "goals": [
+     {
+      "x": 50,
+      "y": 5,
+      "side": "top",
+      "size": "jugend"
+     },
+     {
+      "x": 31,
+      "y": 33,
+      "side": "bottom"
+     },
+     {
+      "x": 69,
+      "y": 33,
+      "side": "bottom"
+     }
+    ]
+   }
+  }
+ ]
+}

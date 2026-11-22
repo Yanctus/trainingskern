@@ -59,24 +59,6 @@
     "y": 5,
     "w": 50,
     "h": 50
-   },
-   {
-    "type": "circle",
-    "x": 30.7,
-    "y": 14.5,
-    "r": 2
-   },
-   {
-    "type": "circle",
-    "x": 33.7,
-    "y": 10.8,
-    "r": 2
-   },
-   {
-    "type": "circle",
-    "x": 38.4,
-    "y": 8.7,
-    "r": 2
    }
   ],
   "cones": [
@@ -127,45 +109,51 @@
    },
    {
     "x": 68.4,
-    "y": 20,
+    "y": 27,
+    "color": "orange",
+    "shape": "leiter_ou"
+   },
+   {
+    "x": 68.4,
+    "y": 38,
     "color": "orange",
     "shape": "huerde_ou"
    },
    {
     "x": 68.4,
-    "y": 23,
+    "y": 41.3,
     "color": "orange",
     "shape": "huerde_ou"
    },
    {
     "x": 68.4,
-    "y": 26,
+    "y": 44.6,
     "color": "orange",
     "shape": "huerde_ou"
    },
    {
     "x": 68.4,
-    "y": 30.7,
+    "y": 48,
     "color": "orange",
     "shape": "huerde_ou"
    },
    {
-    "x": 68.4,
-    "y": 34.6,
+    "x": 29.5,
+    "y": 15.5,
     "color": "orange",
-    "shape": "huerde_ou"
+    "shape": "ring"
    },
    {
-    "x": 68.4,
-    "y": 38.4,
+    "x": 33,
+    "y": 10.6,
     "color": "orange",
-    "shape": "huerde_ou"
+    "shape": "ring"
    },
    {
-    "x": 68.4,
-    "y": 42.4,
+    "x": 38.6,
+    "y": 8.2,
     "color": "orange",
-    "shape": "huerde_ou"
+    "shape": "ring"
    }
   ],
   "players": [
@@ -275,7 +263,7 @@
       "who": "n8",
       "to": [
        68.4,
-       19
+       18.5
       ],
       "type": "lauf"
      },
@@ -283,7 +271,7 @@
       "who": "n8",
       "to": [
        68.4,
-       45
+       50
       ],
       "type": "lauf",
       "after": true
@@ -291,8 +279,8 @@
      {
       "who": "n8",
       "to": [
-       66,
-       48.5
+       64,
+       50.5
       ],
       "type": "lauf",
       "after": true
@@ -327,8 +315,8 @@
      {
       "who": "n7",
       "to": [
-       30.7,
-       14.5
+       29.5,
+       15.5
       ],
       "type": "lauf",
       "after": true
@@ -336,8 +324,8 @@
      {
       "who": "n7",
       "to": [
-       33.7,
-       10.8
+       33,
+       10.6
       ],
       "type": "lauf",
       "after": true
@@ -345,8 +333,8 @@
      {
       "who": "n7",
       "to": [
-       38.4,
-       8.7
+       38.6,
+       8.2
       ],
       "type": "lauf",
       "after": true
@@ -396,7 +384,7 @@
       "who": "n4",
       "to": [
        66,
-       17
+       16.5
       ],
       "type": "lauf",
       "after": true
@@ -405,7 +393,7 @@
       "who": "n4",
       "to": [
        68.4,
-       19
+       18.5
       ],
       "type": "lauf",
       "after": true
@@ -414,7 +402,7 @@
       "who": "n4",
       "to": [
        68.4,
-       45
+       50
       ],
       "type": "lauf",
       "after": true
@@ -422,8 +410,8 @@
      {
       "who": "n4",
       "to": [
-       66,
-       48.5
+       64,
+       50.5
       ],
       "type": "lauf",
       "after": true
@@ -733,7 +721,7 @@
         "who": "n8",
         "to": [
          68.4,
-         19
+         18.5
         ],
         "type": "lauf"
        },
@@ -741,7 +729,7 @@
         "who": "n8",
         "to": [
          68.4,
-         45
+         50
         ],
         "type": "lauf",
         "after": true
@@ -749,8 +737,8 @@
        {
         "who": "n8",
         "to": [
-         66,
-         48.5
+         64,
+         50.5
         ],
         "type": "lauf",
         "after": true
@@ -790,8 +778,8 @@
        {
         "who": "n7",
         "to": [
-         30.7,
-         14.5
+         29.5,
+         15.5
         ],
         "type": "lauf",
         "after": true
@@ -799,8 +787,8 @@
        {
         "who": "n7",
         "to": [
-         33.7,
-         10.8
+         33,
+         10.6
         ],
         "type": "lauf",
         "after": true
@@ -808,8 +796,8 @@
        {
         "who": "n7",
         "to": [
-         38.4,
-         8.7
+         38.6,
+         8.2
         ],
         "type": "lauf",
         "after": true

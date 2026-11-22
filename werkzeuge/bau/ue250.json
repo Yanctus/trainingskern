@@ -1,0 +1,802 @@
+{
+ "title": "Viererkette mit Torwart kontert",
+ "code": "UE-250",
+ "kind": "Spielform",
+ "focuses": [
+  "Verteidigen",
+  "Umschalten",
+  "Zusammenspiel"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 13,
+ "players_max": 13,
+ "field_size": "46 x 30 m",
+ "description": "Eine Viererkette mit Torwart verteidigt das große Tor gegen vier Angreifer. Der Trainer ruft einen Springer auf, und der spielt den Ball zu den Angreifern. Die Kette bleibt eng zusammen: Einer presst, die anderen sichern ab. Erobert die Kette den Ball, schaltet sie schnell um und spielt auf drei Minitore.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 46 mal 30 Metern mit Strafraum und einem Jugendtor oben. Unten stehen drei Minitore: links, in der Mitte und rechts.",
+  "Verteilen: Team Neon verteidigt mit vier Spielern und einem Torwart. Team Rot greift mit vier Spielern an. Vier Springer stehen mit Bällen an den Seiten. Der Trainer steht unten.",
+  "Ablauf: Der Trainer ruft einen Springer auf. Der spielt den Ball sofort zu Team Rot, und vier gegen vier geht los. Team Neon presst, sichert ab und hält die Kette eng. Erobert Team Neon den Ball, spielt es auf die Minitore.",
+  "Wertung und Wechsel: Ein Treffer ins große Tor gibt einen Punkt für Team Rot, ein Treffer ins Minitor einen Punkt für Team Neon. Dann ruft der Trainer den nächsten Springer auf. Nach ein paar Runden wechselt das angreifende Team mit den Springern."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Einer presst, die anderen sichern ab und schließen die Lücke",
+  "Eng zusammenbleiben, damit kein Pass durch die Kette kommt",
+  "Nach dem Ballgewinn schnell umschalten, sonst den Ball über Kette und Torwart laufen lassen",
+  "Laut reden und schnell auf die Plätze, wenn ein neuer Springer aufgerufen wird"
+ ],
+ "materials": [
+  "1 Jugendtor",
+  "3 Minitore",
+  "Viele Bälle",
+  "Leibchen in drei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Viererkette mit Torwart kontert. Die Kette verteidigt das große Tor und kontert nach dem Ballgewinn auf drei Minitore.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 10,
+    "y": 4,
+    "w": 80,
+    "h": 52
+   },
+   {
+    "type": "rect",
+    "x": 25.2,
+    "y": 4,
+    "w": 49.6,
+    "h": 17.6
+   },
+   {
+    "type": "rect",
+    "x": 37.4,
+    "y": 4,
+    "w": 25.2,
+    "h": 7.3
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 4,
+    "side": "top",
+    "size": "jugend"
+   },
+   {
+    "x": 16,
+    "y": 42,
+    "side": "bottom"
+   },
+   {
+    "x": 50,
+    "y": 46,
+    "side": "bottom"
+   },
+   {
+    "x": 84,
+    "y": 42,
+    "side": "bottom"
+   }
+  ],
+  "cones": [],
+  "players": [
+   {
+    "id": "n1",
+    "team": "a",
+    "x": 50,
+    "y": 8.5,
+    "label": "TW"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 28,
+    "y": 22,
+    "label": "3"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 41,
+    "y": 19,
+    "label": "5"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 59,
+    "y": 19,
+    "label": "4"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 71,
+    "y": 21,
+    "label": "2"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 24,
+    "y": 38,
+    "label": "7"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 50,
+    "y": 24.5,
+    "label": "9"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 58,
+    "y": 40.5,
+    "label": "10"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 76,
+    "y": 37,
+    "label": "11"
+   },
+   {
+    "id": "f1",
+    "team": "t",
+    "x": 13,
+    "y": 10,
+    "label": "F"
+   },
+   {
+    "id": "f2",
+    "team": "t",
+    "x": 33,
+    "y": 41,
+    "label": "F"
+   },
+   {
+    "id": "f3",
+    "team": "t",
+    "x": 67,
+    "y": 41,
+    "label": "F"
+   },
+   {
+    "id": "f4",
+    "team": "t",
+    "x": 87,
+    "y": 9,
+    "label": "F"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 46,
+    "y": 54,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 33.6,
+    "y": 41.6
+   },
+   {
+    "id": "b2",
+    "x": 13.6,
+    "y": 10.6
+   },
+   {
+    "id": "b3",
+    "x": 67.6,
+    "y": 41.6
+   },
+   {
+    "id": "b4",
+    "x": 87.6,
+    "y": 9.6
+   },
+   {
+    "id": "s1",
+    "x": 49.6,
+    "y": 57.5
+   },
+   {
+    "id": "s2",
+    "x": 42.4,
+    "y": 57.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Zuruf und Zuspiel",
+    "say": "Der Trainer ruft einen Springer auf, hier den Springer links unten. Er spielt den Ball sofort zu Spieler zehn, und vier gegen vier geht los.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       58.6,
+       41.1
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Einer presst",
+    "say": "Spieler zehn spielt zu Spieler neun. Spieler vier presst ihn sofort. Spieler fünf, Spieler drei und Spieler zwei schieben ein und sichern ab.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       25.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n4",
+      "to": [
+       54,
+       21
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n5",
+      "to": [
+       45,
+       16
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n3",
+      "to": [
+       34,
+       19
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n2",
+      "to": [
+       65,
+       18
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Abgefangen",
+    "say": "Spieler neun will nach rechts zu Spieler elf passen. Spieler zwei liest den Pass und fängt ihn ab.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       66,
+       30
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       66.6,
+       30.6
+      ],
+      "type": "pass",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Konter: Punkt",
+    "say": "Team Neon schaltet sofort um. Spieler vier startet, Spieler zwei spielt ihn an, und Spieler vier trifft ins mittlere Minitor. Das gibt einen Punkt für Team Neon. Dann ruft der Trainer den nächsten Springer auf.",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       53,
+       36
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       53.6,
+       36.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       50,
+       46.4
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 10,
+    "y1": 58.6,
+    "x2": 90,
+    "y2": 58.6,
+    "text": "46 m"
+   },
+   {
+    "x1": 95,
+    "y1": 4,
+    "x2": 95,
+    "y2": 56,
+    "text": "30 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Den Ball laufen lassen.",
+   "title": "Ball laufen lassen",
+   "text": "Nach dem Ballgewinn geht es schnell nach vorn. Ist vorn alles zu, spielt die Kette den Ball ruhig über den Torwart auf die andere Seite. Dort ist meist Platz, und dann geht es zum Minitor.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 50,
+      "y": 8.5,
+      "label": "TW"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 28,
+      "y": 22,
+      "label": "3"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 41,
+      "y": 19,
+      "label": "5"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 59,
+      "y": 19,
+      "label": "4"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 71,
+      "y": 21,
+      "label": "2"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 24,
+      "y": 38,
+      "label": "7"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 50,
+      "y": 24.5,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 58,
+      "y": 40.5,
+      "label": "10"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 76,
+      "y": 37,
+      "label": "11"
+     },
+     {
+      "id": "f1",
+      "team": "t",
+      "x": 13,
+      "y": 10,
+      "label": "F"
+     },
+     {
+      "id": "f2",
+      "team": "t",
+      "x": 33,
+      "y": 41,
+      "label": "F"
+     },
+     {
+      "id": "f3",
+      "team": "t",
+      "x": 67,
+      "y": 41,
+      "label": "F"
+     },
+     {
+      "id": "f4",
+      "team": "t",
+      "x": 87,
+      "y": 9,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 46,
+      "y": 54,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 41.6,
+      "y": 19.6
+     },
+     {
+      "id": "b2",
+      "x": 13.6,
+      "y": 10.6
+     },
+     {
+      "id": "b3",
+      "x": 67.6,
+      "y": 41.6
+     },
+     {
+      "id": "b4",
+      "x": 87.6,
+      "y": 9.6
+     },
+     {
+      "id": "s1",
+      "x": 49.6,
+      "y": 57.5
+     },
+     {
+      "id": "s2",
+      "x": 42.4,
+      "y": 57.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zurück zum Torwart",
+      "say": "Spieler fünf hat den Ball erobert. Spieler neun presst sofort, und vorn ist alles zu. Spieler fünf spielt ruhig zurück zum Torwart.",
+      "moves": [
+       {
+        "who": "r9",
+        "to": [
+         46,
+         22
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         9.1
+        ],
+        "type": "pass",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Auf die andere Seite",
+      "say": "Der Torwart spielt weiter zu Spieler vier, und Spieler vier spielt zu Spieler zwei. Spieler zwei hat Platz und dribbelt nach vorn.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         59.6,
+         19.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         71.6,
+         21.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n2",
+        "to": [
+         80,
+         30
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Ins Minitor: Punkt",
+      "say": "Spieler zwei schießt ins rechte Minitor. Das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         84,
+         42.4
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Die Springer spielen mit.",
+   "title": "Springer spielen mit",
+   "text": "Jetzt spielen die Springer für das Team, das gerade den Ball hat. Fängt der Torwart den Ball, schaut er sofort, wo ein Springer frei ist, und spielt schnell zu ihm. So kommt Team Neon schnell nach vorn.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 50,
+      "y": 8.5,
+      "label": "TW"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 28,
+      "y": 22,
+      "label": "3"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 41,
+      "y": 19,
+      "label": "5"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 59,
+      "y": 19,
+      "label": "4"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 71,
+      "y": 21,
+      "label": "2"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 24,
+      "y": 38,
+      "label": "7"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 50,
+      "y": 24.5,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 58,
+      "y": 40.5,
+      "label": "10"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 76,
+      "y": 37,
+      "label": "11"
+     },
+     {
+      "id": "f1",
+      "team": "t",
+      "x": 13,
+      "y": 10,
+      "label": "F"
+     },
+     {
+      "id": "f2",
+      "team": "t",
+      "x": 33,
+      "y": 41,
+      "label": "F"
+     },
+     {
+      "id": "f3",
+      "team": "t",
+      "x": 67,
+      "y": 41,
+      "label": "F"
+     },
+     {
+      "id": "f4",
+      "team": "t",
+      "x": 87,
+      "y": 9,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 46,
+      "y": 54,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 58.6,
+      "y": 41.1
+     },
+     {
+      "id": "b2",
+      "x": 13.6,
+      "y": 10.6
+     },
+     {
+      "id": "b3",
+      "x": 67.6,
+      "y": 41.6
+     },
+     {
+      "id": "b4",
+      "x": 87.6,
+      "y": 9.6
+     },
+     {
+      "id": "s1",
+      "x": 49.6,
+      "y": 57.5
+     },
+     {
+      "id": "s2",
+      "x": 42.4,
+      "y": 57.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Torwart fängt",
+      "say": "Spieler zehn schießt aufs Tor, aber der Torwart fängt den Ball. Spieler sieben läuft nach innen.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         9.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r7",
+        "to": [
+         30,
+         28
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Umschauen",
+      "say": "Der Torwart schaut sofort, wo ein Springer frei ist. Der Springer links ist frei, und Spieler drei startet nach außen.",
+      "moves": [
+       {
+        "who": "n1",
+        "to": [
+         39.8,
+         28
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "n3",
+        "to": [
+         22,
+         32
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Über den Springer: Punkt",
+      "say": "Der Torwart spielt schnell zum Springer. Der Springer spielt jetzt für Team Neon und legt in den Lauf von Spieler drei. Spieler drei trifft ins linke Minitor, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         33.6,
+         41.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         22.6,
+         32.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         16,
+         42.4
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

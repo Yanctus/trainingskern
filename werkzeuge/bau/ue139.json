@@ -90,21 +90,9 @@
    },
    {
     "x": 38.9,
-    "y": 27,
-    "color": "orange",
-    "shape": "huerde_ou"
-   },
-   {
-    "x": 38.9,
     "y": 30,
     "color": "orange",
-    "shape": "huerde_ou"
-   },
-   {
-    "x": 38.9,
-    "y": 33,
-    "color": "orange",
-    "shape": "huerde_ou"
+    "shape": "leiter_ou"
    },
    {
     "x": 45.1,
@@ -125,37 +113,25 @@
     "shape": "huerde_ou"
    },
    {
-    "x": 56.7,
-    "y": 27,
-    "color": "orange",
-    "shape": "huerde_ou"
-   },
-   {
-    "x": 56.7,
+    "x": 57,
     "y": 30,
     "color": "orange",
-    "shape": "huerde_ou"
+    "shape": "leiter_ou"
    },
    {
-    "x": 56.7,
-    "y": 33,
-    "color": "orange",
-    "shape": "huerde_ou"
-   },
-   {
-    "x": 61.7,
+    "x": 63.2,
     "y": 27.2,
     "color": "orange",
     "shape": "huerde_ou"
    },
    {
-    "x": 61.7,
+    "x": 63.2,
     "y": 30,
     "color": "orange",
     "shape": "huerde_ou"
    },
    {
-    "x": 61.7,
+    "x": 63.2,
     "y": 32.9,
     "color": "orange",
     "shape": "huerde_ou"
@@ -467,7 +443,7 @@
      {
       "who": "r9",
       "to": [
-       61.7,
+       63.2,
        25
       ],
       "type": "lauf"
@@ -475,7 +451,7 @@
      {
       "who": "r9",
       "to": [
-       61.7,
+       63.2,
        36
       ],
       "type": "lauf",
@@ -494,7 +470,7 @@
       "who": "n6",
       "to": [
        38.9,
-       37
+       39.5
       ],
       "type": "lauf",
       "delay": 0.6
@@ -503,7 +479,16 @@
       "who": "n6",
       "to": [
        38.9,
-       24
+       20.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n6",
+      "to": [
+       30,
+       22
       ],
       "type": "lauf",
       "after": true
@@ -520,8 +505,8 @@
      {
       "who": "r12",
       "to": [
-       56.7,
-       37
+       57,
+       39.5
       ],
       "type": "lauf",
       "delay": 0.6
@@ -529,8 +514,17 @@
      {
       "who": "r12",
       "to": [
-       56.7,
-       24
+       57,
+       20.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r12",
+      "to": [
+       70,
+       22
       ],
       "type": "lauf",
       "after": true
@@ -957,7 +951,7 @@
         "who": "n6",
         "to": [
          38.9,
-         37
+         39.5
         ],
         "type": "lauf"
        },
@@ -965,7 +959,16 @@
         "who": "n6",
         "to": [
          38.9,
-         24
+         20.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n6",
+        "to": [
+         30,
+         22
         ],
         "type": "lauf",
         "after": true

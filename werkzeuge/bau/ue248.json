@@ -1,0 +1,635 @@
+{
+ "title": "Zu zweit Flanken klären",
+ "code": "UE-248",
+ "kind": "Übungsform",
+ "focuses": [
+  "Verteidigen",
+  "Schnelligkeit"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 7,
+ "players_max": 9,
+ "field_size": "41 x 32 m",
+ "description": "Zwei Verteidiger stehen vor dem Tor und wehren Flanken von beiden Seiten ab. Nach der ersten Flanke sprinten sie raus zu den Puppen und gleich wieder zurück in den Strafraum, denn die zweite Flanke kommt von der anderen Seite. Danach sprinten beide zwischen den Puppen nach vorn, und der Trainer wirft einem den Ball zum Kopfball. Trifft der Kopfball ins Minitor, gibt das einen Punkt.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 41 mal 32 Metern mit Strafraum und einem Jugendtor oben. Vor dem Strafraum stehen zwei Puppen oder Stangen, unten zwei Minitore.",
+  "Verteilen: Ein Torwart und zwei Verteidiger von Team Neon stehen am Tor, zwei weitere warten oben neben dem Tor. Zwei Flankengeber von Team Rot stehen links und rechts mit Bällen. Der Trainer steht unten mit Bällen.",
+  "Ablauf: Die erste Flanke kommt von links, die Verteidiger klären sie nach außen. Dann sprinten sie zu den Puppen und zurück, und die zweite Flanke kommt von rechts. Zum Schluss sprinten beide nach vorn, und der Trainer wirft den Ball zum Kopfball.",
+  "Wertung und Wechsel: Trifft der Kopfball ins Minitor, gibt das einen Punkt für Team Neon. Danach sind die zwei Wartenden dran. Nach ein paar Runden tauschen Verteidiger und Flankengeber."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Die Flanke angreifen und laut rufen, wer zum Ball geht",
+  "Den Ball weit nach außen klären, nie in die Mitte",
+  "Schnell raus zu den Puppen und schnell zurück in den Strafraum",
+  "Hat man Zeit, den Ball ruhig mit Kopf oder Brust zum Torwart spielen"
+ ],
+ "materials": [
+  "1 Jugendtor",
+  "2 Minitore",
+  "2 Puppen oder Stangen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Zu zweit Flanken klären. Zwei Verteidiger wehren Flanken von beiden Seiten ab und müssen dazwischen schnell sprinten.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 18,
+    "y": 5,
+    "w": 64,
+    "h": 50
+   },
+   {
+    "type": "rect",
+    "x": 24.8,
+    "y": 5,
+    "w": 50.4,
+    "h": 17.8
+   },
+   {
+    "type": "rect",
+    "x": 37.3,
+    "y": 5,
+    "w": 25.4,
+    "h": 6.6
+   }
+  ],
+  "cones": [
+   {
+    "x": 41.4,
+    "y": 27.8,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 57.5,
+    "y": 27.8,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "jugend"
+   },
+   {
+    "x": 31,
+    "y": 44,
+    "side": "bottom"
+   },
+   {
+    "x": 67,
+    "y": 44,
+    "side": "bottom"
+   }
+  ],
+  "players": [
+   {
+    "id": "n1",
+    "team": "a",
+    "x": 50,
+    "y": 8,
+    "label": "TW"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 41.5,
+    "y": 15,
+    "label": "5"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 58.5,
+    "y": 15,
+    "label": "6"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 21,
+    "y": 12,
+    "label": "8"
+   },
+   {
+    "id": "r4",
+    "team": "b",
+    "x": 79,
+    "y": 16,
+    "label": "4"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 30,
+    "y": 2.5,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 70,
+    "y": 2.5,
+    "label": "3"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 50,
+    "y": 49,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b8",
+    "x": 21.6,
+    "y": 12.6
+   },
+   {
+    "id": "b4",
+    "x": 79.6,
+    "y": 16.6
+   },
+   {
+    "id": "b1",
+    "x": 50.6,
+    "y": 49.6
+   },
+   {
+    "id": "s1",
+    "x": 53.6,
+    "y": 52.5
+   },
+   {
+    "id": "s2",
+    "x": 46.4,
+    "y": 52.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Erste Flanke",
+    "say": "Spieler acht flankt von links in den Strafraum. Spieler sechs greift den Ball an, ruft laut „Meiner!“ und köpft ihn weit nach außen. Spieler fünf sichert ab.",
+    "moves": [
+     {
+      "who": "b8",
+      "to": [
+       57.6,
+       13.6
+      ],
+      "type": "pass",
+      "bend": 8
+     },
+     {
+      "who": "n6",
+      "to": [
+       57,
+       13
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n5",
+      "to": [
+       44,
+       17
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b8",
+      "to": [
+       88,
+       32
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Raus zu den Puppen",
+    "say": "Jetzt sprinten beide gleichzeitig raus zu den Puppen und tippen sie an. Sofort laufen sie zurück in den Strafraum.",
+    "moves": [
+     {
+      "who": "n5",
+      "to": [
+       41.5,
+       24.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n6",
+      "to": [
+       57.5,
+       24.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n5",
+      "to": [
+       45,
+       15
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n6",
+      "to": [
+       56,
+       15
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zweite Flanke",
+    "say": "Jetzt flankt Spieler vier von rechts. Spieler fünf greift den Ball an und köpft ihn weg vom Tor, weit nach außen.",
+    "moves": [
+     {
+      "who": "b4",
+      "to": [
+       45.6,
+       15.6
+      ],
+      "type": "pass",
+      "bend": -8
+     },
+     {
+      "who": "b4",
+      "to": [
+       10,
+       28
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Nach vorn sprinten",
+    "say": "Beide sprinten zwischen den Puppen nach vorn, so als wollten sie die Stürmer ins Abseits stellen. Der Trainer wirft Spieler fünf den Ball zu.",
+    "moves": [
+     {
+      "who": "n5",
+      "to": [
+       46,
+       35
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n6",
+      "to": [
+       55,
+       32
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       46.6,
+       35.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Kopfball ins Minitor: Punkt",
+    "say": "Spieler fünf köpft den Ball ins linke Minitor, und das gibt einen Punkt für Team Neon. Dann sind Spieler zwei und Spieler drei dran.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       31,
+       44.4
+      ],
+      "type": "pass"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 18,
+    "y1": 58.6,
+    "x2": 82,
+    "y2": 58.6,
+    "text": "41 m"
+   },
+   {
+    "x1": 90,
+    "y1": 5,
+    "x2": 90,
+    "y2": 55,
+    "text": "32 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Gut stehen und sicher klären.",
+   "title": "Gut stehen, sicher klären",
+   "text": "Die Verteidiger stehen offen und auf den Zehenspitzen. So sehen sie den Ball und sind schnell bei kurzen und langen Flanken. Wer zum Ball geht, ruft laut. Geklärt wird hoch und weit nach außen, nie in die Mitte vor das Tor.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 50,
+      "y": 8,
+      "label": "TW"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 41.5,
+      "y": 15,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 58.5,
+      "y": 15,
+      "label": "6"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 21,
+      "y": 12,
+      "label": "8"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 79,
+      "y": 16,
+      "label": "4"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 30,
+      "y": 2.5,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 70,
+      "y": 2.5,
+      "label": "3"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 49,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b8",
+      "x": 21.6,
+      "y": 12.6
+     },
+     {
+      "id": "b4",
+      "x": 79.6,
+      "y": 16.6
+     },
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 49.6
+     },
+     {
+      "id": "s1",
+      "x": 53.6,
+      "y": 52.5
+     },
+     {
+      "id": "s2",
+      "x": 46.4,
+      "y": 52.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Offen stehen",
+      "say": "Spieler acht flankt. Spieler fünf und Spieler sechs stehen offen und auf den Zehenspitzen. Spieler sechs ruft „Meiner!“ und geht dem Ball entgegen.",
+      "moves": [
+       {
+        "who": "b8",
+        "to": [
+         57.6,
+         13.6
+        ],
+        "type": "pass",
+        "bend": 8
+       },
+       {
+        "who": "n6",
+        "to": [
+         57,
+         13
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n5",
+        "to": [
+         44,
+         17
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Nach außen klären",
+      "say": "Spieler sechs köpft den Ball hoch und weit nach außen. In der Mitte vor dem Tor wäre er gefährlich.",
+      "moves": [
+       {
+        "who": "b8",
+        "to": [
+         88,
+         32
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Umschauen und ruhig zum Torwart spielen.",
+   "title": "Ruhig zum Torwart",
+   "text": "Vor der Flanke schaut sich der Verteidiger schnell um. Kommt kein Gegner, hat er Zeit. Dann nimmt er den Ball mit der Brust oder dem Kopf und spielt ihn ruhig zurück zum Torwart. So bleibt der Ball beim eigenen Team.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 50,
+      "y": 8,
+      "label": "TW"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 41.5,
+      "y": 15,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 58.5,
+      "y": 15,
+      "label": "6"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 21,
+      "y": 12,
+      "label": "8"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 79,
+      "y": 16,
+      "label": "4"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 30,
+      "y": 2.5,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 70,
+      "y": 2.5,
+      "label": "3"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 49,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b8",
+      "x": 21.6,
+      "y": 12.6
+     },
+     {
+      "id": "b4",
+      "x": 79.6,
+      "y": 16.6
+     },
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 49.6
+     },
+     {
+      "id": "s1",
+      "x": 53.6,
+      "y": 52.5
+     },
+     {
+      "id": "s2",
+      "x": 46.4,
+      "y": 52.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Umschauen",
+      "say": "Spieler vier will flanken. Spieler fünf schaut sich vorher schnell um: Kommt ein Gegner? Nein, er hat Zeit.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         44,
+         33
+        ],
+        "type": "blick"
+       }
+      ]
+     },
+     {
+      "label": "Brust zum Torwart",
+      "say": "Spieler vier flankt. Spieler fünf nimmt den Ball mit der Brust und spielt ihn ruhig zurück zum Torwart. Der Torwart fängt ihn.",
+      "moves": [
+       {
+        "who": "b4",
+        "to": [
+         42.1,
+         15.6
+        ],
+        "type": "pass",
+        "bend": -8
+       },
+       {
+        "who": "b4",
+        "to": [
+         50.6,
+         8.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,630 @@
+{
+ "title": "Welle gegen schnelle Angreifer",
+ "code": "UE-249",
+ "kind": "Spielform",
+ "focuses": [
+  "Verteidigen",
+  "Umschalten",
+  "Torschuss"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 10,
+ "players_max": 10,
+ "field_size": "27 x 27 m",
+ "description": "Drei Angreifer spielen mit viel Tempo gegen drei Verteidiger auf das große Tor. Die Verteidiger bleiben kompakt, drängen die Angreifer nach außen und fangen Pässe ab. Treffen die Angreifer, werden sie zu Verteidigern, und das nächste Dreierteam greift an. Erobern die Verteidiger den Ball, kontern sie auf zwei Minitore und bleiben im Feld.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 27 mal 27 Metern mit Strafraum und einem Jugendtor oben. Eine gestrichelte Linie quer durchs Feld, unten in den Ecken zwei Minitore.",
+  "Verteilen: Drei Verteidiger von Team Neon stehen vor dem Tor, drei Angreifer von Team Rot unten. Ein neutraler Torwart steht im Tor. Das nächste Dreierteam wartet unten neben dem Feld beim Trainer mit Bällen.",
+  "Ablauf: Spieler neun startet mit dem Ball, und Team Rot greift mit viel Tempo an. Team Neon bleibt eng zusammen und drängt nach außen. Erobert Team Neon den Ball, kontert es auf die Minitore.",
+  "Wertung und Wechsel: Ein Treffer ins große Tor gibt einen Punkt für Team Rot, dann wird Team Rot zum Verteidiger, und das nächste Team greift an. Ein Ballgewinn gibt einen Punkt für Team Neon, ein Treffer ins Minitor noch einen, und Team Neon bleibt im Feld."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Kompakt bleiben und die Angreifer nach außen drängen",
+  "Immer zwischen Gegner und Tor stehen",
+  "Den Pass genau im richtigen Moment abfangen",
+  "Mit viel Tempo angreifen, damit die Verteidiger gefordert sind"
+ ],
+ "materials": [
+  "1 Jugendtor",
+  "2 Minitore",
+  "Viele Bälle",
+  "Leibchen in drei Farben"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Welle gegen schnelle Angreifer. Drei Verteidiger müssen gegen drei schnelle Angreifer kompakt bleiben.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 24,
+    "y": 5,
+    "w": 52,
+    "h": 50
+   },
+   {
+    "type": "rect",
+    "x": 35,
+    "y": 5,
+    "w": 30,
+    "h": 8.6
+   },
+   {
+    "type": "line",
+    "x1": 24,
+    "y1": 35,
+    "x2": 76,
+    "y2": 35,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "jugend"
+   },
+   {
+    "x": 30,
+    "y": 55,
+    "side": "bottom"
+   },
+   {
+    "x": 70,
+    "y": 55,
+    "side": "bottom"
+   }
+  ],
+  "cones": [],
+  "players": [
+   {
+    "id": "k",
+    "team": "t",
+    "x": 50,
+    "y": 8,
+    "label": "TW"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 36,
+    "y": 27,
+    "label": "2"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 50,
+    "y": 24.5,
+    "label": "6"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 64,
+    "y": 27,
+    "label": "5"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 26,
+    "y": 42,
+    "label": "11"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 50,
+    "y": 53,
+    "label": "9"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 74,
+    "y": 42,
+    "label": "7"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 14,
+    "y": 50,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 50.6,
+    "y": 53.6
+   },
+   {
+    "id": "s1",
+    "x": 14.6,
+    "y": 53.5
+   },
+   {
+    "id": "s2",
+    "x": 11,
+    "y": 53.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pass nach außen",
+    "say": "Spieler neun startet mit dem Ball und spielt schnell nach links zu Spieler elf. Spieler zwei läuft Spieler elf an.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       26.6,
+       42.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n2",
+      "to": [
+       31,
+       33
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Steilpass in den Lauf",
+    "say": "Spieler sieben startet von rechts quer in die Mitte. Spieler elf spielt den Ball genau in seinen Lauf. Spieler sechs ist zu weit weg.",
+    "moves": [
+     {
+      "who": "r7",
+      "to": [
+       50,
+       31
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       31.6
+      ],
+      "type": "pass",
+      "delay": 0.4
+     },
+     {
+      "who": "n6",
+      "to": [
+       54,
+       21
+      ],
+      "type": "lauf"
+     }
+    ]
+   },
+   {
+    "label": "Abschluss: Punkt",
+    "say": "Spieler sieben schießt sofort und trifft. Das gibt einen Punkt für Team Rot. Jetzt verteidigt Team Rot, Team Neon geht raus, und das nächste Dreierteam greift an.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       45,
+       5.6
+      ],
+      "type": "pass"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 24,
+    "y1": 58.6,
+    "x2": 76,
+    "y2": 58.6,
+    "text": "27 m"
+   },
+   {
+    "x1": 84,
+    "y1": 5,
+    "x2": 84,
+    "y2": 55,
+    "text": "27 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Kompakt bleiben und nach außen drängen.",
+   "title": "Kompakt und nach außen",
+   "text": "Läuft der mittlere Verteidiger zu weit heraus, entsteht in der Mitte eine Lücke. Darum bleiben die drei eng zusammen. Wer den Ballführenden anläuft, drängt ihn nach außen. Die anderen schauen, wohin die Angreifer laufen, und fangen den Pass ab.",
+   "board": {
+    "players": [
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50,
+      "y": 8,
+      "label": "TW"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 36,
+      "y": 27,
+      "label": "2"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 50,
+      "y": 24.5,
+      "label": "6"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 64,
+      "y": 27,
+      "label": "5"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 26,
+      "y": 42,
+      "label": "11"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 50,
+      "y": 53,
+      "label": "9"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 74,
+      "y": 42,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 14,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 53.6
+     },
+     {
+      "id": "s1",
+      "x": 14.6,
+      "y": 53.5
+     },
+     {
+      "id": "s2",
+      "x": 11,
+      "y": 53.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Nach außen drängen",
+      "say": "Spieler neun spielt zu Spieler elf. Spieler zwei läuft ihn von innen an und drängt ihn nach außen. Spieler sechs und Spieler fünf schieben mit und bleiben eng zusammen.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         26.6,
+         42.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n2",
+        "to": [
+         31,
+         35
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n6",
+        "to": [
+         44,
+         27
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n5",
+        "to": [
+         56,
+         27
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Umschauen",
+      "say": "Spieler sieben startet in die Mitte. Spieler sechs schaut zu ihm und weiß jetzt, wohin der Pass gehen soll.",
+      "moves": [
+       {
+        "who": "r7",
+        "to": [
+         58,
+         37
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n6",
+        "to": [
+         58,
+         37
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Abgefangen: Punkt",
+      "say": "Spieler elf spielt steil, aber Spieler sechs geht dazwischen und fängt den Ball ab. Das gibt einen Punkt für Team Neon. Trifft er danach ins Minitor, gibt das noch einen Punkt.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         48,
+         34
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         48.6,
+         34.6
+        ],
+        "type": "pass",
+        "delay": 0.2
+       },
+       {
+        "who": "n6",
+        "to": [
+         66,
+         49
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         70,
+         54.4
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Einer geht raus, dann drei gegen zwei.",
+   "title": "Drei gegen zwei",
+   "text": "Nach jeder erfolgreichen Abwehr geht ein Verteidiger raus. Dann verteidigen nur noch zwei gegen drei, danach einer gegen drei. Wird der Ball nach außen gedrängt, laufen die Verteidiger zwischen Gegner und Tor und fangen den Querpass ab. Schaffen sie alle drei Abwehren, gibt es drei Extrapunkte.",
+   "board": {
+    "players": [
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50,
+      "y": 8,
+      "label": "TW"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 36,
+      "y": 27,
+      "label": "2"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 50,
+      "y": 24.5,
+      "label": "6"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 64,
+      "y": 27,
+      "label": "5"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 26,
+      "y": 42,
+      "label": "11"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 50,
+      "y": 53,
+      "label": "9"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 74,
+      "y": 42,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 14,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 53.6
+     },
+     {
+      "id": "s1",
+      "x": 14.6,
+      "y": 53.5
+     },
+     {
+      "id": "s2",
+      "x": 11,
+      "y": 53.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Einer geht raus",
+      "say": "Team Neon hat gerade abgewehrt. Jetzt geht Spieler fünf raus, und die nächsten drei greifen an. Spieler zwei und Spieler sechs verteidigen allein.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         86,
+         22
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n2",
+        "to": [
+         40,
+         27
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n6",
+        "to": [
+         58,
+         25
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Nach außen gedrängt",
+      "say": "Spieler neun spielt nach rechts zu Spieler sieben. Spieler sechs läuft ihn an und drängt ihn an die Seite. Spieler elf läuft in den Strafraum.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         74.6,
+         42.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r7",
+        "to": [
+         72,
+         22
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "n6",
+        "to": [
+         64,
+         24
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r11",
+        "to": [
+         38,
+         14
+        ],
+        "type": "lauf",
+        "delay": 0.5
+       }
+      ]
+     },
+     {
+      "label": "Querpass abgefangen: Punkt",
+      "say": "Spieler sieben spielt quer vor das Tor. Aber Spieler zwei ist schnell zurück, steht zwischen Spieler elf und dem Ball und fängt ihn ab. Das gibt einen Punkt für Team Neon. Als Nächstes heißt es drei gegen eins.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         46,
+         13
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         46.6,
+         13.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

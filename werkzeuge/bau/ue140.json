@@ -139,21 +139,9 @@
    },
    {
     "x": 34.3,
-    "y": 39.5,
-    "color": "orange",
-    "shape": "huerde_ou"
-   },
-   {
-    "x": 34.3,
     "y": 43,
     "color": "orange",
-    "shape": "huerde_ou"
-   },
-   {
-    "x": 34.3,
-    "y": 46.5,
-    "color": "orange",
-    "shape": "huerde_ou"
+    "shape": "leiter_ou"
    },
    {
     "x": 84.1,
@@ -328,7 +316,7 @@
       "who": "n8",
       "to": [
        34.3,
-       37
+       34.2
       ],
       "type": "lauf",
       "after": true
@@ -337,7 +325,7 @@
       "who": "n8",
       "to": [
        34.3,
-       49
+       51.8
       ],
       "type": "lauf",
       "after": true
@@ -346,7 +334,7 @@
       "who": "n8",
       "to": [
        38,
-       52
+       54
       ],
       "type": "lauf",
       "after": true
