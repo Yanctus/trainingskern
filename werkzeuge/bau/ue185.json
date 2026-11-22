@@ -1,0 +1,639 @@
+{
+ "title": "Köpfen, sprinten, blocken",
+ "code": "UE-185",
+ "kind": "Übungsform",
+ "focuses": [
+  "Verteidigen",
+  "Schnelligkeit"
+ ],
+ "age_groups": [
+  "E-Jugend",
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14"
+ ],
+ "duration_minutes": 15,
+ "players_min": 6,
+ "players_max": 6,
+ "field_size": "23 x 18 m",
+ "description": "Ein Verteidiger sprintet zu einer Puppe und köpft den Ball zurück zum Trainer. Dann läuft er um die Puppe und sprintet vor das erste Minitor, um einen Schuss zu blocken. Sofort geht es weiter zum zweiten Minitor und zum nächsten Block. So üben die Kinder schnelles Zurücklaufen, Köpfen und Blocken.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 23 mal 18 Metern. Oben zwei Minitore nebeneinander, links daneben eine Puppe oder Stange. Unten zwei Hütchen für die Passgeber, oben ein Hütchen als Start.",
+  "Verteilen: Die Verteidiger warten oben am Start. Zwei Passgeber stehen unten mit Bällen, jeder vor einem Minitor. Der Trainer steht links neben der Puppe mit Bällen.",
+  "Ablauf: Der Verteidiger sprintet zur Puppe und köpft den Ball zurück zum Trainer. Dann läuft er um die Puppe, blockt den Schuss aufs erste Minitor und sprintet weiter zum zweiten.",
+  "Wertung und Wechsel: Jeder geblockte Ball gibt einen Punkt für den Verteidiger. Nach dem zweiten Block startet der Nächste. Wer zweimal dran war, tauscht mit einem Passgeber. Nach jeder Runde zwei Minuten Pause."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Mit vollem Tempo zum Ball und vor das Minitor sprinten",
+  "Genau zurück zum Trainer köpfen, auch im Laufen",
+  "Nach dem ersten Block nicht dem Ball nachschauen, sofort zum zweiten Minitor",
+  "Die Passgeber spielen erst, wenn der Verteidiger eine faire Chance hat"
+ ],
+ "materials": [
+  "2 Minitore",
+  "1 Puppe oder Stange",
+  "3 Hütchen",
+  "Viele Bälle",
+  "Leibchen"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Köpfen, sprinten, blocken. Ein Verteidiger köpft zurück, sprintet vor zwei Minitore und blockt beide Schüsse.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 22.5,
+    "y": 8,
+    "w": 55,
+    "h": 44
+   }
+  ],
+  "goals": [
+   {
+    "x": 48.2,
+    "y": 18.8,
+    "side": "top"
+   },
+   {
+    "x": 69.1,
+    "y": 18.8,
+    "side": "top"
+   }
+  ],
+  "cones": [
+   {
+    "x": 32.2,
+    "y": 16.6,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 40,
+    "y": 14.5,
+    "color": "orange"
+   },
+   {
+    "x": 48.7,
+    "y": 49.8,
+    "color": "orange"
+   },
+   {
+    "x": 68.5,
+    "y": 49.8,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 40,
+    "y": 11,
+    "label": "5"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 50,
+    "y": 4,
+    "label": "4"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 58.5,
+    "y": 4,
+    "label": "6"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 67,
+    "y": 4,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 48.7,
+    "y": 46.3,
+    "label": "3"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 68.5,
+    "y": 46,
+    "label": "7"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 15,
+    "y": 17,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 15.6,
+    "y": 17.6
+   },
+   {
+    "id": "b3",
+    "x": 49.3,
+    "y": 46.9
+   },
+   {
+    "id": "b7",
+    "x": 69.1,
+    "y": 46.6
+   },
+   {
+    "id": "s1",
+    "x": 16.6,
+    "y": 20.6
+   },
+   {
+    "id": "s2",
+    "x": 13,
+    "y": 20.6
+   }
+  ],
+  "steps": [
+   {
+    "label": "Sprint zur Puppe",
+    "say": "Neon fünf sprintet los zur Puppe. Der Trainer wirft ihm den Ball zu.",
+    "moves": [
+     {
+      "who": "n5",
+      "to": [
+       29,
+       12
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       29.6,
+       12.6
+      ],
+      "type": "pass",
+      "delay": 0.6
+     }
+    ]
+   },
+   {
+    "label": "Köpft zurück",
+    "say": "Neon fünf köpft den Ball genau zurück zum Trainer.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       15.6,
+       17.6
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Erster Block",
+    "say": "Neon fünf läuft um die Puppe herum und sprintet vor das erste Minitor. Neon drei spielt aufs Minitor, und Neon fünf blockt den Ball.",
+    "moves": [
+     {
+      "who": "n5",
+      "to": [
+       27,
+       17
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n5",
+      "to": [
+       31,
+       22
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n5",
+      "to": [
+       46.5,
+       23
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b3",
+      "to": [
+       47.1,
+       23.6
+      ],
+      "type": "pass",
+      "delay": 1.2
+     }
+    ]
+   },
+   {
+    "label": "Nicht nachschauen",
+    "say": "Neon fünf schaut nicht dem Ball nach. Er schaut sofort zum zweiten Minitor und sprintet hin.",
+    "moves": [
+     {
+      "who": "n5",
+      "to": [
+       66,
+       26
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "n5",
+      "to": [
+       67.5,
+       23
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zweiter Block: Punkt",
+    "say": "Neon sieben spielt aufs zweite Minitor, und Neon fünf blockt auch diesen Ball. Jeder Block gibt einen Punkt für Neon fünf. Jetzt startet Neon vier, und Neon fünf stellt sich hinten an.",
+    "moves": [
+     {
+      "who": "b7",
+      "to": [
+       68.1,
+       23.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n4",
+      "to": [
+       40,
+       11
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 22.5,
+    "y1": 58.6,
+    "x2": 77.5,
+    "y2": 58.6,
+    "text": "23 m"
+   },
+   {
+    "x1": 86,
+    "y1": 8,
+    "x2": 86,
+    "y2": 52,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Genau zurückköpfen.",
+   "title": "Genau zurückköpfen",
+   "text": "Der Kopfball geht genau zum Trainer zurück, auch im vollen Lauf. Mit der Stirn köpfen und die Augen offen lassen. Der Trainer wechselt ab: mal hoch, mal flach, mal mit der Brust annehmen und volley zurückspielen.",
+   "board": {
+    "players": [
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 40,
+      "y": 11,
+      "label": "5"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 50,
+      "y": 4,
+      "label": "4"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 58.5,
+      "y": 4,
+      "label": "6"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 67,
+      "y": 4,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 48.7,
+      "y": 46.3,
+      "label": "3"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 68.5,
+      "y": 46,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 15,
+      "y": 17,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 15.6,
+      "y": 17.6
+     },
+     {
+      "id": "b3",
+      "x": 49.3,
+      "y": 46.9
+     },
+     {
+      "id": "b7",
+      "x": 69.1,
+      "y": 46.6
+     },
+     {
+      "id": "s1",
+      "x": 16.6,
+      "y": 20.6
+     },
+     {
+      "id": "s2",
+      "x": 13,
+      "y": 20.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Hoch geworfen",
+      "say": "Neon fünf sprintet zur Puppe, und der Trainer wirft den Ball hoch.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         29,
+         12
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         29.6,
+         12.6
+        ],
+        "type": "pass",
+        "delay": 0.6
+       }
+      ]
+     },
+     {
+      "label": "Mit der Stirn",
+      "say": "Neon fünf köpft mit der Stirn genau zurück zum Trainer. Die Augen bleiben offen.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         15.6,
+         17.6
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Brust und Volley",
+      "say": "Jetzt wirft der Trainer den Ball auf die Brust. Neon fünf nimmt ihn mit der Brust an und spielt ihn volley zurück. Dann geht es weiter zu den Minitoren.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         29.6,
+         12.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         15.6,
+         17.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Erst raus zum Hütchen.",
+   "title": "Raus zum Hütchen",
+   "text": "Zwischen den beiden Blocks liegt ein Hütchen weiter unten im Feld. Nach dem ersten Block sprintet der Verteidiger erst zum Hütchen und dann zurück vor das zweite Minitor. So muss er noch schneller wieder aufstehen und zurücklaufen.",
+   "board": {
+    "players": [
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 46.5,
+      "y": 23,
+      "label": "5"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 50,
+      "y": 4,
+      "label": "4"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 58.5,
+      "y": 4,
+      "label": "6"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 67,
+      "y": 4,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 48.7,
+      "y": 46.3,
+      "label": "3"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 68.5,
+      "y": 46,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 15,
+      "y": 17,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 15.6,
+      "y": 17.6
+     },
+     {
+      "id": "b3",
+      "x": 47.1,
+      "y": 23.6
+     },
+     {
+      "id": "b7",
+      "x": 69.1,
+      "y": 46.6
+     },
+     {
+      "id": "s1",
+      "x": 16.6,
+      "y": 20.6
+     },
+     {
+      "id": "s2",
+      "x": 13,
+      "y": 20.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zum Hütchen",
+      "say": "Neon fünf hat den ersten Ball geblockt. Er schaut sofort zum Hütchen und sprintet hin.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         57,
+         40
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "n5",
+        "to": [
+         57,
+         37.5
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Zurück vors Minitor",
+      "say": "Am Hütchen dreht er und sprintet zurück vor das zweite Minitor.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         67.5,
+         23
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Zweiter Block: Punkt",
+      "say": "Neon sieben spielt aufs Minitor, und Neon fünf blockt den Ball. Das gibt einen Punkt für Neon fünf.",
+      "moves": [
+       {
+        "who": "b7",
+        "to": [
+         68.1,
+         23.6
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ],
+    "cones": [
+     {
+      "x": 32.2,
+      "y": 16.6,
+      "color": "orange",
+      "shape": "stange",
+      "id": "k1"
+     },
+     {
+      "x": 40,
+      "y": 14.5,
+      "color": "orange",
+      "id": "k2"
+     },
+     {
+      "x": 48.7,
+      "y": 49.8,
+      "color": "orange",
+      "id": "k3"
+     },
+     {
+      "x": 68.5,
+      "y": 49.8,
+      "color": "orange",
+      "id": "k4"
+     },
+     {
+      "x": 57,
+      "y": 40,
+      "color": "orange",
+      "id": "k5"
+     }
+    ]
+   }
+  }
+ ]
+}

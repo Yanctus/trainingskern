@@ -59,7 +59,7 @@ u = {"title": "Vor dem Strafraum verteidigen", "code": "UE-199", "kind": "Spielf
   V("Coaching-Punkt", "Der zweite Coaching-Punkt: Fünf Pässe zuerst, und hält der Torwart, wechseln die Rollen.", "Torwart hält, Wechsel",
     "Team Rot muss erst fünf Pässe schaffen, bevor es durch ein Hütchentor spielen darf. So haben die Verteidiger Zeit, sich zu ordnen. Hält der Torwart den Schuss, spielt er zu Team Neon, und die Rollen wechseln.",
     sp(), [B("b1", 65.6, 40.6)] + ERSATZ,
-    [S("Fünf Pässe", "Team Rot zählt die Pässe. Der rechte Springer passt zu Rot acht, Rot acht zum linken Springer. Neon vier, fünf und sechs schieben eng zusammen.",
+    [S("Fünf Pässe", "Team Rot zählt die Pässe. Der rechte Springer passt zu Rot acht, Rot acht zum linken Springer. Neon vier und Neon sechs schieben eng zusammen.",
        ps("b1", [56.1, 49.6]), ps("b1", [36.6, 40.6], after=True), mv("n6", [56, 26], delay=0.3), mv("n4", [43, 36], delay=0.3)),
      S("Durch das Hütchentor", "Nach dem fünften Pass spielt der linke Springer durch das Hütchentor. Rot neun nimmt den Ball an und schießt sofort.",
        mv("r9", [38.5, 21]), mv("r9", [37, 12], after=True), ps("b1", [37.6, 12.6], delay=0.6)),
