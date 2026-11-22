@@ -208,7 +208,7 @@
   "steps": [
    {
     "label": "Aufbau",
-    "say": "Der Torwart spielt Neon zwei an, der passt weiter zu Neon vier. Das sind zwei Pässe.",
+    "say": "Der Torwart spielt Spieler zwei an, der passt weiter zu Spieler vier. Das sind zwei Pässe.",
     "moves": [
      {
       "who": "b1",
@@ -231,7 +231,7 @@
    },
    {
     "label": "Auf eine Seite locken",
-    "say": "Neon vier spielt zu Neon fünf, und der spielt zurück. Gleichzeitig verschiebt Rot nach oben, und der Torwart geht zum oberen Minitor.",
+    "say": "Spieler vier spielt zu Spieler fünf, und der spielt zurück. Gleichzeitig verschiebt Rot nach oben, und der Torwart geht zum oberen Minitor.",
     "moves": [
      {
       "who": "b1",
@@ -281,7 +281,7 @@
    },
    {
     "label": "Verlagern",
-    "say": "Jetzt verlagert Neon vier schnell auf die andere Seite zu Neon sechs. Das ist der fünfte Pass.",
+    "say": "Jetzt verlagert Spieler vier schnell auf die andere Seite zu Spieler sechs. Das ist der fünfte Pass.",
     "moves": [
      {
       "who": "b1",
@@ -295,7 +295,7 @@
    },
    {
     "label": "Abschluss: Punkt",
-    "say": "Neon sechs dribbelt kurz an und schießt ins freie Minitor unten, und das gibt einen Punkt für Neon.",
+    "say": "Spieler sechs dribbelt kurz an und schießt ins freie Minitor unten, und das gibt einen Punkt für Neon.",
     "moves": [
      {
       "who": "n6",
@@ -459,7 +459,7 @@
     "steps": [
      {
       "label": "Pass abgefangen",
-      "say": "Neon vier will zu Neon fünf passen, doch Rot sieben geht dazwischen.",
+      "say": "Spieler vier will zu Spieler fünf passen, doch Spieler sieben geht dazwischen.",
       "moves": [
        {
         "who": "b1",
@@ -482,7 +482,7 @@
      },
      {
       "label": "Schnell nach vorn",
-      "say": "Rot sieben spielt sofort weiter zu Rot acht, der Richtung Tor startet.",
+      "say": "Spieler sieben spielt sofort weiter zu Spieler acht, der Richtung Tor startet.",
       "moves": [
        {
         "who": "r8",
@@ -505,7 +505,7 @@
      },
      {
       "label": "Konter: Punkt",
-      "say": "Rot acht schießt aufs große Tor, und das gibt einen Punkt für Rot.",
+      "say": "Spieler acht schießt aufs große Tor, und das gibt einen Punkt für Rot.",
       "moves": [
        {
         "who": "b1",
@@ -634,7 +634,7 @@
     "steps": [
      {
       "label": "Lauf in die Endzone",
-      "say": "Neon sechs startet in die Endzone, und Neon vier spielt ihn genau in den Lauf an.",
+      "say": "Spieler sechs startet in die Endzone, und Spieler vier spielt ihn genau in den Lauf an.",
       "moves": [
        {
         "who": "n6",
@@ -657,7 +657,7 @@
      },
      {
       "label": "Direkt ins Minitor: Punkt",
-      "say": "Neon sechs schießt direkt ins Minitor unten, und das gibt einen Punkt für Neon.",
+      "say": "Spieler sechs schießt direkt ins Minitor unten, und das gibt einen Punkt für Neon.",
       "moves": [
        {
         "who": "b1",

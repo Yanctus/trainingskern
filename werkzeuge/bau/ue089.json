@@ -206,7 +206,7 @@
   "steps": [
    {
     "label": "Start beim Torwart",
-    "say": "Der Torwart spielt Neon zehn an. Rot vier kommt sofort heraus.",
+    "say": "Der Torwart spielt Spieler zehn an. Spieler vier kommt sofort heraus.",
     "moves": [
      {
       "who": "b1",
@@ -229,7 +229,7 @@
    },
    {
     "label": "Drei gegen eins",
-    "say": "Neon zehn spielt zu Neon neun. Gleichzeitig startet Neon acht in die zweite Zone, und Neon neun spielt ihn steil an.",
+    "say": "Spieler zehn spielt zu Spieler neun. Gleichzeitig startet Spieler acht in die zweite Zone, und Spieler neun spielt ihn steil an.",
     "moves": [
      {
       "who": "b1",
@@ -261,7 +261,7 @@
    },
    {
     "label": "Drei gegen zwei",
-    "say": "In der zweiten Zone kommt Rot fünf auf Neon acht zu. Neon neun läuft mit und bekommt den Querpass.",
+    "say": "In der zweiten Zone kommt Spieler fünf auf Spieler acht zu. Spieler neun läuft mit und bekommt den Querpass.",
     "moves": [
      {
       "who": "r5",
@@ -292,7 +292,7 @@
    },
    {
     "label": "Abschluss: Punkt",
-    "say": "Neon neun schießt schnell, bevor Rot sechs herankommt, und das gibt einen Punkt für Neon.",
+    "say": "Spieler neun schießt schnell, bevor Spieler sechs herankommt, und das gibt einen Punkt für Neon.",
     "moves": [
      {
       "who": "b1",
@@ -438,7 +438,7 @@
     "steps": [
      {
       "label": "Lücke erkennen",
-      "say": "Rot vier steht zwischen Neon acht und Neon neun. Unten ist viel Platz, und Neon zehn dribbelt sofort los.",
+      "say": "Spieler vier steht zwischen Spieler acht und Spieler neun. Unten ist viel Platz, und Spieler zehn dribbelt sofort los.",
       "moves": [
        {
         "who": "n10",
@@ -453,7 +453,7 @@
      },
      {
       "label": "Schnell hinein",
-      "say": "Neon zehn dribbelt in die zweite Zone, und Neon acht läuft mit. Neon zehn passt zu ihm.",
+      "say": "Spieler zehn dribbelt in die zweite Zone, und Spieler acht läuft mit. Spieler zehn passt zu ihm.",
       "moves": [
        {
         "who": "n10",
@@ -486,7 +486,7 @@
      },
      {
       "label": "Abschluss: Punkt",
-      "say": "Neon acht schießt sofort, und das gibt einen Punkt für Neon.",
+      "say": "Spieler acht schießt sofort, und das gibt einen Punkt für Neon.",
       "moves": [
        {
         "who": "b1",
@@ -608,7 +608,7 @@
     "steps": [
      {
       "label": "Ball erobert",
-      "say": "Rot fünf geht dazwischen und erobert den Ball von Neon acht.",
+      "say": "Spieler fünf geht dazwischen und erobert den Ball von Spieler acht.",
       "moves": [
        {
         "who": "r5",
@@ -631,7 +631,7 @@
      },
      {
       "label": "Der Vierte kommt dazu",
-      "say": "Gleichzeitig spielt Rot fünf sofort zu Rot vier, und Rot drei startet von der Seitenlinie in den Konter.",
+      "say": "Gleichzeitig spielt Spieler fünf sofort zu Spieler vier, und Spieler drei startet von der Seitenlinie in den Konter.",
       "moves": [
        {
         "who": "b1",
@@ -662,7 +662,7 @@
      },
      {
       "label": "Konter: Punkt",
-      "say": "Rot vier spielt in den Lauf von Rot drei, und der schießt ins Tor. Das gibt einen Punkt für Rot.",
+      "say": "Spieler vier spielt in den Lauf von Spieler drei, und der schießt ins Tor. Das gibt einen Punkt für Rot.",
       "moves": [
        {
         "who": "b1",

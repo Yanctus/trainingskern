@@ -1,7 +1,7 @@
 import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe import *
 # WU-16 (U12-U14, Woche 30 Phase 6): Using Speed and Brains Warm Up. 25 x 25 Yards = Feld x 25-75, y 5-55 (23 x 23 m), in der
 # Mitte die Stangen. Im Original laufen drei Spieler mit drei Hütchenfarben (gelb, blau, rot) und drei Stangen; die Tafel kennt nur
-# orange und neon, darum zeigt sie zwei Spieler: Neon sieben sammelt die neonfarbenen, Rot neun die orangen Hütchen. Der dritte
+# orange und neon, darum zeigt sie zwei Spieler: Spieler sieben sammelt die neonfarbenen, Spieler neun die orangen Hütchen. Der dritte
 # Spieler mit einer dritten Farbe und einer dritten Stange steht nur im Text. Ein Trainer statt zwei (im PDF zwei Ecken), er steht
 # links neben dem Feld. Hütchen-Lagen frei nach dem PDF verteilt (je vier pro Farbe), Startplatz unten wie im PDF.
 # Getragene Hütchen wandern wie in UE-112 nach der Rückkehr des Spielers auf die Stange (ps mit after).
@@ -37,7 +37,7 @@ u = {"title": "Hütchen sammeln mit Köpfchen", "code": "UE-214", "kind": "Spiel
  "say_intro": "Hütchen sammeln mit Köpfchen. Wer zuerst alle Hütchen seiner Farbe auf seine Stange steckt, gewinnt.",
  "board": {"lines": LINES, "cones": cones(), "players": sp(), "balls": ERSATZ,
   "steps": [
-   S("Erst schauen", "Vor dem Start schauen beide genau, wo ihre vier Hütchen liegen. Neon sieben sucht die neonfarbenen, Rot neun die orangen Hütchen.",
+   S("Erst schauen", "Vor dem Start schauen beide genau, wo ihre vier Hütchen liegen. Spieler sieben sucht die neonfarbenen, Spieler neun die orangen Hütchen.",
      bl("n7", [33, 37]), bl("n7", [59, 44], after=True), bl("r9", [67, 38]), bl("r9", [40, 49], after=True)),
    S("Los: erstes Hütchen", "Auf das Zeichen des Trainers sprinten beide gleichzeitig los. Jeder holt ein Hütchen und steckt es auf seine Stange in der Mitte.",
      mv("n7", [33.5, 43.5]), mv("n7", [42, 33], after=True), ps("k1", STN, after=True),
@@ -47,26 +47,26 @@ u = {"title": "Hütchen sammeln mit Köpfchen", "code": "UE-214", "kind": "Spiel
      mv("n7", [41.5, 12.5], after=True), mv("n7", [42, 27], after=True), ps("k3", STN, after=True),
      mv("r9", [67, 18.5]), mv("r9", [58, 27], after=True), ps("k6", STR, after=True),
      mv("r9", [57.5, 12], after=True), mv("r9", [58, 27], after=True), ps("k7", STR, after=True)),
-   S("Viertes Hütchen: Punkt", "Neon sieben steckt als Erster das vierte Hütchen auf seine Stange und gewinnt, und das gibt einen Punkt für Team Neon. Dann legt der Trainer die Hütchen neu aus, und die nächsten Spieler sind dran.",
+   S("Viertes Hütchen: Punkt", "Spieler sieben steckt als Erster das vierte Hütchen auf seine Stange und gewinnt, und das gibt einen Punkt für Team Neon. Dann legt der Trainer die Hütchen neu aus, und die nächsten Spieler sind dran.",
      mv("n7", [41.5, 35]), mv("n7", [59.5, 47], after=True), mv("n7", [42, 33], after=True), ps("k4", STN, after=True),
      mv("r9", [59, 35]), mv("r9", [36.5, 51], after=True), mv("r9", [48, 41], after=True))],
   "dims": dims(25, 75, 5, 55, "23 m", "23 m", rx=84)},
  "versions": [
   V("Coaching-Punkt", "Jetzt zum Coaching-Punkt: Erst schauen, dann losrennen.", "Erst schauen, dann los",
-    "Wer vor dem Start schaut, sieht, welches Hütchen am nächsten liegt. Neon sieben schaut und holt zuerst das nahe Hütchen. Rot neun rennt ohne Schauen los zum Hütchen, das weit weg liegt.",
+    "Wer vor dem Start schaut, sieht, welches Hütchen am nächsten liegt. Spieler sieben schaut und holt zuerst das nahe Hütchen. Spieler neun rennt ohne Schauen los zum Hütchen, das weit weg liegt.",
     sp(), ERSATZ,
-    [S("Schauen oder rennen", "Neon sieben schaut nach links und nach rechts. Rot neun rennt sofort los, ganz nach oben zum weiten Hütchen.",
+    [S("Schauen oder rennen", "Spieler sieben schaut nach links und nach rechts. Spieler neun rennt sofort los, ganz nach oben zum weiten Hütchen.",
        bl("n7", [33, 37]), bl("n7", [59, 44], after=True), mv("r9", [67, 18.5])),
-     S("Der kurze Weg", "Neon sieben holt das nahe Hütchen und steckt es auf die Stange. Rot neun ist noch unterwegs.",
+     S("Der kurze Weg", "Spieler sieben holt das nahe Hütchen und steckt es auf die Stange. Spieler neun ist noch unterwegs.",
        mv("n7", [33.5, 43.5]), mv("n7", [42, 33], after=True), ps("k1", STN, after=True),
        mv("r9", [58, 27]), ps("k6", STR, after=True))],
     cones=cones()),
   V("Coaching-Punkt", "Der zweite Coaching-Punkt: Gerade laufen und rechtzeitig bremsen.", "Gerade laufen, früh bremsen",
     "Wer mit voller Kraft auf ein Hütchen zu sprintet, kann nicht schnell bremsen und braucht einen großen Bogen. Besser gerade laufen, kurz vor dem Hütchen langsamer werden und mit kleinen Schritten drehen.",
     sp(), ERSATZ,
-    [S("Zu schnell", "Rot neun sprintet mit voller Kraft zum Hütchen. Er kann nicht bremsen, läuft vorbei und muss in einem großen Bogen zurück.",
+    [S("Zu schnell", "Spieler neun sprintet mit voller Kraft zum Hütchen. Er kann nicht bremsen, läuft vorbei und muss in einem großen Bogen zurück.",
        mv("r9", [66.5, 37.5]), mv("r9", [69.5, 33], after=True), mv("r9", [73.5, 33.5], after=True), mv("r9", [74, 38.5], after=True), mv("r9", [71.5, 40.5], after=True)),
-     S("Gerade und kontrolliert", "Neon sieben läuft gerade, bremst kurz vor dem Hütchen ab und dreht mit kleinen Schritten. So ist er schneller zurück an seiner Stange.",
+     S("Gerade und kontrolliert", "Spieler sieben läuft gerade, bremst kurz vor dem Hütchen ab und dreht mit kleinen Schritten. So ist er schneller zurück an seiner Stange.",
        mv("n7", [33.5, 43.5]), mv("n7", [42, 33], after=True), ps("k1", STN, after=True),
        mv("r9", [58, 33], delay=0.6), ps("k5", STR, after=True))],
     cones=cones())]}

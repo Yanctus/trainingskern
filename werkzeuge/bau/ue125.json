@@ -152,7 +152,7 @@
   "steps": [
    {
     "label": "Prallpass und abdrehen",
-    "say": "Neon zehn spielt zu Neon acht ins Viereck. Neon acht lässt den Ball direkt zurückprallen und dreht schräg aus dem Viereck ab.",
+    "say": "Spieler zehn spielt zu Spieler acht ins Viereck. Spieler acht lässt den Ball direkt zurückprallen und dreht schräg aus dem Viereck ab.",
     "moves": [
      {
       "who": "b1",
@@ -184,7 +184,7 @@
    },
    {
     "label": "Ins Viereck kommen",
-    "say": "Gleichzeitig läuft Neon neun von der anderen Seite ins Viereck, und Neon zehn spielt ihn an.",
+    "say": "Gleichzeitig läuft Spieler neun von der anderen Seite ins Viereck, und Spieler zehn spielt ihn an.",
     "moves": [
      {
       "who": "n9",
@@ -207,7 +207,7 @@
    },
    {
     "label": "Ablegen und durchspielen",
-    "say": "Neon neun legt zu Neon acht ab. Neon acht nimmt den Ball mit und spielt durch zu Neon vier.",
+    "say": "Spieler neun legt zu Spieler acht ab. Spieler acht nimmt den Ball mit und spielt durch zu Spieler vier.",
     "moves": [
      {
       "who": "b1",
@@ -327,7 +327,7 @@
     "steps": [
      {
       "label": "Ablage in den Lauf",
-      "say": "Neon acht läuft an, und Neon neun legt ihm den Ball genau in den Lauf.",
+      "say": "Spieler acht läuft an, und Spieler neun legt ihm den Ball genau in den Lauf.",
       "moves": [
        {
         "who": "n8",
@@ -350,7 +350,7 @@
      },
      {
       "label": "Direkt durch",
-      "say": "Neon acht spielt den Ball mit dem ersten Kontakt durch zu Neon vier.",
+      "say": "Spieler acht spielt den Ball mit dem ersten Kontakt durch zu Spieler vier.",
       "moves": [
        {
         "who": "g",
@@ -430,7 +430,7 @@
     "steps": [
      {
       "label": "Erster Doppelpass",
-      "say": "Neon zehn spielt zu Neon acht und startet. Neon acht spielt den Ball direkt in seinen Lauf zurück.",
+      "say": "Spieler zehn spielt zu Spieler acht und startet. Spieler acht spielt den Ball direkt in seinen Lauf zurück.",
       "moves": [
        {
         "who": "b1",
@@ -462,7 +462,7 @@
      },
      {
       "label": "Pass ins Viereck",
-      "say": "Neon zehn dribbelt kurz an und spielt zu Neon neun ins Viereck.",
+      "say": "Spieler zehn dribbelt kurz an und spielt zu Spieler neun ins Viereck.",
       "moves": [
        {
         "who": "n10",
@@ -486,7 +486,7 @@
      },
      {
       "label": "Zweiter Doppelpass",
-      "say": "Neon neun spielt zu Neon vier und startet. Neon vier spielt ihn direkt wieder an.",
+      "say": "Spieler neun spielt zu Spieler vier und startet. Spieler vier spielt ihn direkt wieder an.",
       "moves": [
        {
         "who": "b1",

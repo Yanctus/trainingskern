@@ -629,7 +629,7 @@
     "steps": [
      {
       "label": "Verteidiger kommt",
-      "say": "Rot sieben läuft auf Spieler zwei zu. Gleichzeitig spielt Spieler zwei zum Springer und startet an Rot sieben vorbei.",
+      "say": "Spieler sieben läuft auf Spieler zwei zu. Gleichzeitig spielt Spieler zwei zum Springer und startet an Spieler sieben vorbei.",
       "moves": [
        {
         "who": "r7",

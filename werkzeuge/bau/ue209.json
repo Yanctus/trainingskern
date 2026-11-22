@@ -234,7 +234,7 @@
   "steps": [
    {
     "label": "Schnelle Füße",
-    "say": "Beide Gruppen starten gleichzeitig. Neon zwei läuft durch die Hütchen, mal seitlich, mal vorwärts, mal rückwärts. Auf der anderen Seite macht Rot sieben dasselbe.",
+    "say": "Beide Gruppen starten gleichzeitig. Spieler zwei läuft durch die Hütchen, mal seitlich, mal vorwärts, mal rückwärts. Auf der anderen Seite macht Spieler sieben dasselbe.",
     "moves": [
      {
       "who": "n2",
@@ -346,7 +346,7 @@
    },
    {
     "label": "Erster Doppelpass",
-    "say": "Nach dem letzten Hütchen spielt Neon drei aus der Mitte zu Neon zwei, und Neon zwei spielt direkt zurück. Rot acht und Rot sieben machen es genauso.",
+    "say": "Nach dem letzten Hütchen spielt Spieler drei aus der Mitte zu Spieler zwei, und Spieler zwei spielt direkt zurück. Spieler acht und Spieler sieben machen es genauso.",
     "moves": [
      {
       "who": "b1",
@@ -386,7 +386,7 @@
    },
    {
     "label": "Zweiter Doppelpass",
-    "say": "Neon zwei macht zwei Schritte zur Seite, und Neon drei spielt ihn noch einmal an. Neon zwei passt weiter zu Neon vier an der Seite. Rechts spielen Rot acht, Rot sieben und Rot neun gleichzeitig.",
+    "say": "Spieler zwei macht zwei Schritte zur Seite, und Spieler drei spielt ihn noch einmal an. Spieler zwei passt weiter zu Spieler vier an der Seite. Rechts spielen Spieler acht, Spieler sieben und Spieler neun gleichzeitig.",
     "moves": [
      {
       "who": "n2",
@@ -444,7 +444,7 @@
    },
    {
     "label": "Abschluss: Punkt",
-    "say": "Neon zwei läuft nach vorn, Neon vier spielt ihm den Ball in den Lauf, und Neon zwei schießt direkt ins Minitor. Das gibt einen Punkt für Neon zwei, und Rot sieben trifft genauso. Dann wird Neon zwei Mittelspieler, Neon drei geht an die Seite, Neon vier joggt zurück zur Gruppe, und Neon fünf läuft als Nächster.",
+    "say": "Spieler zwei läuft nach vorn, Spieler vier spielt ihm den Ball in den Lauf, und Spieler zwei schießt direkt ins Minitor. Das gibt einen Punkt für Spieler zwei, und Spieler sieben trifft genauso. Dann wird Spieler zwei Mittelspieler, Spieler drei geht an die Seite, Spieler vier joggt zurück zur Gruppe, und Spieler fünf läuft als Nächster.",
     "moves": [
      {
       "who": "n2",
@@ -629,7 +629,7 @@
     "steps": [
      {
       "label": "In den Lauf",
-      "say": "Neon zwei sprintet los. Neon vier spielt den Ball nicht zu ihm, sondern ein Stück vor ihn, genau in seinen Lauf. Rechts machen es Rot neun und Rot sieben gleichzeitig.",
+      "say": "Spieler zwei sprintet los. Spieler vier spielt den Ball nicht zu ihm, sondern ein Stück vor ihn, genau in seinen Lauf. Rechts machen es Spieler neun und Spieler sieben gleichzeitig.",
       "moves": [
        {
         "who": "n2",
@@ -669,7 +669,7 @@
      },
      {
       "label": "Direkt schießen: Punkt",
-      "say": "Neon zwei muss nicht abbremsen und schießt direkt ins Minitor. Das gibt einen Punkt für Neon zwei. Rot sieben trifft auch.",
+      "say": "Spieler zwei muss nicht abbremsen und schießt direkt ins Minitor. Das gibt einen Punkt für Spieler zwei. Spieler sieben trifft auch.",
       "moves": [
        {
         "who": "b1",
@@ -802,7 +802,7 @@
     "steps": [
      {
       "label": "Weg vom Ball",
-      "say": "Neon vier läuft erst ein paar Schritte weg vom Ball und kommt dann schnell zurück. Rot neun macht es auf der anderen Seite genauso.",
+      "say": "Spieler vier läuft erst ein paar Schritte weg vom Ball und kommt dann schnell zurück. Spieler neun macht es auf der anderen Seite genauso.",
       "moves": [
        {
         "who": "n4",
@@ -842,7 +842,7 @@
      },
      {
       "label": "Anbieten: Punkt",
-      "say": "Genau jetzt passt Neon zwei zu ihm. Neon vier legt den Ball direkt in den Lauf von Neon zwei, und Neon zwei schießt ins Minitor. Das gibt einen Punkt für Neon zwei. Rechts spielen Rot sieben und Rot neun genauso.",
+      "say": "Genau jetzt passt Spieler zwei zu ihm. Spieler vier legt den Ball direkt in den Lauf von Spieler zwei, und Spieler zwei schießt ins Minitor. Das gibt einen Punkt für Spieler zwei. Rechts spielen Spieler sieben und Spieler neun genauso.",
       "moves": [
        {
         "who": "b1",

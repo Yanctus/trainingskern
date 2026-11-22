@@ -182,7 +182,7 @@
   "steps": [
    {
     "label": "Ball laufen lassen",
-    "say": "Neon zwei spielt zu Neon drei. Gleichzeitig verschieben Rot sieben und Rot neun zur Ballseite.",
+    "say": "Spieler zwei spielt zu Spieler drei. Gleichzeitig verschieben Spieler sieben und Spieler neun zur Ballseite.",
     "moves": [
      {
       "who": "b1",
@@ -214,7 +214,7 @@
    },
    {
     "label": "Schnell zurück und durch",
-    "say": "Neon drei spielt schnell zurück zu Neon zwei. Oben ist jetzt eine Lücke, und Neon zwei spielt durch die Reihe zu Neon acht.",
+    "say": "Spieler drei spielt schnell zurück zu Spieler zwei. Oben ist jetzt eine Lücke, und Spieler zwei spielt durch die Reihe zu Spieler acht.",
     "moves": [
      {
       "who": "b1",
@@ -246,7 +246,7 @@
    },
    {
     "label": "Übergabe zur anderen Seite",
-    "say": "Neon acht dreht auf und spielt zu Neon vier auf die andere Seite. Gleichzeitig drehen die Verteidiger um und verschieben nach rechts.",
+    "say": "Spieler acht dreht auf und spielt zu Spieler vier auf die andere Seite. Gleichzeitig drehen die Verteidiger um und verschieben nach rechts.",
     "moves": [
      {
       "who": "b1",
@@ -399,7 +399,7 @@
     "steps": [
      {
       "label": "Druck auf den Ball",
-      "say": "Rot sieben läuft heraus und greift Neon zwei an. Neon zwei spielt schnell zu Neon drei.",
+      "say": "Spieler sieben läuft heraus und greift Spieler zwei an. Spieler zwei spielt schnell zu Spieler drei.",
       "moves": [
        {
         "who": "r7",
@@ -422,7 +422,7 @@
      },
      {
       "label": "In die Lücke",
-      "say": "Gleichzeitig läuft Neon sechs in die Lücke, die Rot sieben hinterlassen hat, und Neon drei spielt ihn an.",
+      "say": "Gleichzeitig läuft Spieler sechs in die Lücke, die Spieler sieben hinterlassen hat, und Spieler drei spielt ihn an.",
       "moves": [
        {
         "who": "n6",
@@ -445,7 +445,7 @@
      },
      {
       "label": "Weiter nach vorn",
-      "say": "Neon sechs spielt zu Neon acht, und der gibt den Ball sofort an Neon vier auf der anderen Seite weiter.",
+      "say": "Spieler sechs spielt zu Spieler acht, und der gibt den Ball sofort an Spieler vier auf der anderen Seite weiter.",
       "moves": [
        {
         "who": "b1",
@@ -567,7 +567,7 @@
     "steps": [
      {
       "label": "Einer kommt entgegen",
-      "say": "Neon fünf kommt in die Mittelzone und bietet sich an. Gleichzeitig verschiebt Rot zehn zu ihm.",
+      "say": "Spieler fünf kommt in die Mittelzone und bietet sich an. Gleichzeitig verschiebt Spieler zehn zu ihm.",
       "moves": [
        {
         "who": "n5",
@@ -590,7 +590,7 @@
      },
      {
       "label": "Direkt auf die dritte Linie",
-      "say": "Neon drei hebt den Kopf, sieht die Lücke und spielt direkt durch zu Neon vier auf der anderen Seite.",
+      "say": "Spieler drei hebt den Kopf, sieht die Lücke und spielt direkt durch zu Spieler vier auf der anderen Seite.",
       "moves": [
        {
         "who": "b1",

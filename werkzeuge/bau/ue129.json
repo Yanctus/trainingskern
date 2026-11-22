@@ -171,7 +171,7 @@
   "steps": [
    {
     "label": "Die erste Runde",
-    "say": "Auf Pfiff laufen Neon acht und Rot drei gleichzeitig los, beide im Uhrzeigersinn außen um den ganzen Kreis herum bis zurück an ihr Hütchen.",
+    "say": "Auf Pfiff laufen Spieler acht und Spieler drei gleichzeitig los, beide im Uhrzeigersinn außen um den ganzen Kreis herum bis zurück an ihr Hütchen.",
     "moves": [
      {
       "who": "n8",
@@ -320,7 +320,7 @@
    },
    {
     "label": "Den Nächsten abholen",
-    "say": "Am Hütchen holen sie den Nächsten ab: Neon elf und Rot vier laufen mit, die zweite Runde zu zweit. So kommt nach jeder Runde einer dazu, bis alle vier zusammen laufen.",
+    "say": "Am Hütchen holen sie den Nächsten ab: Spieler elf und Spieler vier laufen mit, die zweite Runde zu zweit. So kommt nach jeder Runde einer dazu, bis alle vier zusammen laufen.",
     "moves": [
      {
       "who": "n11",
@@ -705,7 +705,7 @@
    },
    {
     "label": "Vier gegen vier: Punkt",
-    "say": "Darum spielt der Trainer Team Neon den Ball. Neon neun legt zu Neon sieben, der dribbelt an und schießt ins rechte Minitor, und das gibt einen Punkt für Team Neon. Dann haben alle drei Minuten Pause, und im nächsten Lauf rückt jeder eins nach vorn.",
+    "say": "Darum spielt der Trainer Team Neon den Ball. Spieler neun legt zu Spieler sieben, der dribbelt an und schießt ins rechte Minitor, und das gibt einen Punkt für Team Neon. Dann haben alle drei Minuten Pause, und im nächsten Lauf rückt jeder eins nach vorn.",
     "moves": [
      {
       "who": "b1",
@@ -917,7 +917,7 @@
      },
      {
       "label": "Rot hat den Ball: Punkt",
-      "say": "Darum spielt der Trainer Team Rot den Ball. Rot fünf legt zu Rot vier, der dribbelt nach links und schießt ins Minitor, und das gibt einen Punkt für Team Rot. Dann drei Minuten Pause, und im nächsten Lauf rückt jeder eins nach vorn.",
+      "say": "Darum spielt der Trainer Team Rot den Ball. Spieler fünf legt zu Spieler vier, der dribbelt nach links und schießt ins Minitor, und das gibt einen Punkt für Team Rot. Dann drei Minuten Pause, und im nächsten Lauf rückt jeder eins nach vorn.",
       "moves": [
        {
         "who": "b1",
@@ -1046,7 +1046,7 @@
     "steps": [
      {
       "label": "Rot rückt raus",
-      "say": "Neon elf spielt zu Neon sieben. Rot fünf rückt sofort heraus und stellt ihn.",
+      "say": "Spieler elf spielt zu Spieler sieben. Spieler fünf rückt sofort heraus und stellt ihn.",
       "moves": [
        {
         "who": "b1",
@@ -1069,7 +1069,7 @@
      },
      {
       "label": "Freilaufen: Punkt",
-      "say": "Neon neun löst sich vom Gegner und läuft sich in den freien Raum frei. Neon sieben spielt ihn an, Neon neun schießt ins rechte Minitor, und das gibt einen Punkt für Team Neon. Dann drei Minuten Pause, und der nächste Lauf beginnt.",
+      "say": "Spieler neun löst sich vom Gegner und läuft sich in den freien Raum frei. Spieler sieben spielt ihn an, Spieler neun schießt ins rechte Minitor, und das gibt einen Punkt für Team Neon. Dann drei Minuten Pause, und der nächste Lauf beginnt.",
       "moves": [
        {
         "who": "n9",

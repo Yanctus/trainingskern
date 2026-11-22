@@ -174,7 +174,7 @@
   "steps": [
    {
     "label": "Ball zu Team Rot",
-    "say": "Der Trainer spielt den Ball zu Rot zehn. Team Rot greift das große Tor an, Team Neon verteidigt am Strafraum.",
+    "say": "Der Trainer spielt den Ball zu Spieler zehn. Team Rot greift das große Tor an, Team Neon verteidigt am Strafraum.",
     "moves": [
      {
       "who": "b1",
@@ -188,7 +188,7 @@
    },
    {
     "label": "Einer presst",
-    "say": "Rot zehn dribbelt an, aber der Ball springt ihm zu weit weg. Neon vier sieht das und presst sofort. Gleichzeitig schieben Neon zwei, fünf und drei nach und sichern ab.",
+    "say": "Spieler zehn dribbelt an, aber der Ball springt ihm zu weit weg. Spieler vier sieht das und presst sofort. Gleichzeitig schieben Spieler zwei, fünf und drei nach und sichern ab.",
     "moves": [
      {
       "who": "r10",
@@ -247,7 +247,7 @@
    },
    {
     "label": "Abgefangen",
-    "say": "Rot zehn will zu Rot elf passen. Neon zwei geht dazwischen und fängt den Ball ab.",
+    "say": "Spieler zehn will zu Spieler elf passen. Spieler zwei geht dazwischen und fängt den Ball ab.",
     "moves": [
      {
       "who": "n2",
@@ -270,7 +270,7 @@
    },
    {
     "label": "Zum Trainer: zwei Punkte",
-    "say": "Neon zwei spielt den Ball sofort zum Trainer, und das gibt zwei Punkte für Team Neon. Dann spielt der Trainer den nächsten Ball zu Team Rot. Nach zwei Angriffen ist die nächste Viererkette dran.",
+    "say": "Spieler zwei spielt den Ball sofort zum Trainer, und das gibt zwei Punkte für Team Neon. Dann spielt der Trainer den nächsten Ball zu Team Rot. Nach zwei Angriffen ist die nächste Viererkette dran.",
     "moves": [
      {
       "who": "b1",
@@ -398,8 +398,8 @@
     ],
     "steps": [
      {
-      "label": "Neon vier presst",
-      "say": "Rot zehn hat den Ball. Neon vier läuft raus und presst. Gleichzeitig rücken Neon zwei, fünf und drei eng an ihn heran.",
+      "label": "Spieler vier presst",
+      "say": "Spieler zehn hat den Ball. Spieler vier läuft raus und presst. Gleichzeitig rücken Spieler zwei, fünf und drei eng an ihn heran.",
       "moves": [
        {
         "who": "n4",
@@ -440,7 +440,7 @@
      },
      {
       "label": "Kein Weg nach vorn",
-      "say": "Rot zehn findet keine Lücke und dreht nach hinten ab. Die Kette steht weiter eng zusammen.",
+      "say": "Spieler zehn findet keine Lücke und dreht nach hinten ab. Die Kette steht weiter eng zusammen.",
       "moves": [
        {
         "who": "r10",
@@ -554,7 +554,7 @@
     "steps": [
      {
       "label": "Abgefangen",
-      "say": "Rot neun will zu Rot zehn passen. Neon vier geht dazwischen und fängt den Ball ab.",
+      "say": "Spieler neun will zu Spieler zehn passen. Spieler vier geht dazwischen und fängt den Ball ab.",
       "moves": [
        {
         "who": "n4",
@@ -577,7 +577,7 @@
      },
      {
       "label": "Über außen",
-      "say": "Neon drei läuft sofort nach außen. Neon vier spielt ihm den Ball in den Lauf.",
+      "say": "Spieler drei läuft sofort nach außen. Spieler vier spielt ihm den Ball in den Lauf.",
       "moves": [
        {
         "who": "n3",
@@ -600,7 +600,7 @@
      },
      {
       "label": "Minitor: zwei Punkte",
-      "say": "Neon drei schießt ins rechte Minitor, und das gibt zwei Punkte für Team Neon. Dann spielt der Trainer den nächsten Ball zu Team Rot.",
+      "say": "Spieler drei schießt ins rechte Minitor, und das gibt zwei Punkte für Team Neon. Dann spielt der Trainer den nächsten Ball zu Team Rot.",
       "moves": [
        {
         "who": "b1",

@@ -37,9 +37,9 @@ u = {"title": "Antäuschen und anbieten", "code": "UE-076", "kind": "Übungsform
   V("Steigerung", "Und jetzt die Steigerung: Ein Verteidiger darf angreifen, sobald der Pass gespielt ist.", "Mit Verteidiger",
     "Ein Verteidiger wartet an der Seite. Sobald der Pass zum Mittelspieler unterwegs ist, darf er angreifen und versucht, ihn zu berühren, bevor er in die Endzone kommt. Erst in der Endzone darf der Mittelspieler zum Endspieler passen. Den Ball eng führen und ruhig bleiben, auch unter Druck.",
     sp(extra=[P("r4", "b", 40, 12, "4")]), ba(),
-    [S("Antäuschen und anbieten", "Spieler zwei täuscht nach vorn an und kommt seitlich zurück. Der Verteidiger Rot vier wartet noch.", geh, zeig),
-     S("Pass, jetzt darf er los", "Spieler eins passt, und genau jetzt darf Rot vier angreifen.", ps("b1", [37.6, 43.6]), mv("r4", [47, 34], delay=0.3)),
-     S("Vorbei in die Endzone", "Spieler zwei dribbelt eng und schnell an Rot vier vorbei in die Endzone, ohne berührt zu werden.",
+    [S("Antäuschen und anbieten", "Spieler zwei täuscht nach vorn an und kommt seitlich zurück. Der Verteidiger Spieler vier wartet noch.", geh, zeig),
+     S("Pass, jetzt darf er los", "Spieler eins passt, und genau jetzt darf Spieler vier angreifen.", ps("b1", [37.6, 43.6]), mv("r4", [47, 34], delay=0.3)),
+     S("Vorbei in die Endzone", "Spieler zwei dribbelt eng und schnell an Spieler vier vorbei in die Endzone, ohne berührt zu werden.",
        dr("n2", "b1", [54, 47]), dr("n2", "b1", [72, 44], after=True), mv("r4", [58, 38], delay=0.2)),
      S("Pass zum Ende", "In der Endzone passt Spieler zwei zu Spieler drei. Geschafft.", ps("b1", [81.4, 30.6]))],
     lines=lines + [line(68, 8, 68, 52)])]}

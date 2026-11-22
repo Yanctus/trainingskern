@@ -23,8 +23,8 @@
  "description": "Ein festes Passmuster für den Spielaufbau mit dem Torwart. Drei Dummys stehen für zwei Stürmer und einen Mittelfeldspieler, die pressen. Der Torwart spielt nach außen, bekommt den Ball zurück und spielt steil in die Mitte. Von dort geht der Ball direkt in den Lauf des dritten Mannes, der ins Minitor schießt. Danach rücken alle eine Position weiter, die beiden Torhüter wechseln sich ab.",
  "organisation": [
   "Aufbauen: Ein Feld von 14 mal 27 Metern in drei Zonen, oben zwei Minitore. Drei Dummys: zwei in der Mitte, einer oben.",
-  "Verteilen: Ein Torwart unten mit Ball, der zweite wartet daneben. Neon vier steht rechts, Neon sechs links, Neon fünf oben neben dem Dummy. Der Trainer steht links mit Bällen.",
-  "Ablauf: Pass nach außen zu Neon vier, zurück zum Torwart, steil zu Neon fünf. Der legt direkt in den Lauf von Neon sechs, und der schießt ins Minitor.",
+  "Verteilen: Ein Torwart unten mit Ball, der zweite wartet daneben. Spieler vier steht rechts, Spieler sechs links, Spieler fünf oben neben dem Dummy. Der Trainer steht links mit Bällen.",
+  "Ablauf: Pass nach außen zu Spieler vier, zurück zum Torwart, steil zu Spieler fünf. Der legt direkt in den Lauf von Spieler sechs, und der schießt ins Minitor.",
   "Wechsel: Nach dem Abschluss rücken alle eine Position weiter, und der zweite Torwart ist dran. Jedes Tor ist ein Punkt. Später auf der anderen Seite."
  ],
  "organisation_show": [
@@ -163,7 +163,7 @@
   "steps": [
    {
     "label": "Pass nach außen",
-    "say": "Neon vier läuft nach außen, und der Torwart spielt ihn an. Dann rückt der Torwart ein Stück nach vorn.",
+    "say": "Spieler vier läuft nach außen, und der Torwart spielt ihn an. Dann rückt der Torwart ein Stück nach vorn.",
     "moves": [
      {
       "who": "n4",
@@ -195,7 +195,7 @@
    },
    {
     "label": "Zurück zum Torwart",
-    "say": "Neon vier legt den Ball zurück zum Torwart. Gleichzeitig kommt Neon fünf dem Ball entgegen.",
+    "say": "Spieler vier legt den Ball zurück zum Torwart. Gleichzeitig kommt Spieler fünf dem Ball entgegen.",
     "moves": [
      {
       "who": "b1",
@@ -217,8 +217,8 @@
     ]
    },
    {
-    "label": "Steil auf Neon fünf",
-    "say": "Der Torwart spielt steil zu Neon fünf, an den beiden Stürmern vorbei. Neon sechs startet schon nach vorn.",
+    "label": "Steil auf Spieler fünf",
+    "say": "Der Torwart spielt steil zu Spieler fünf, an den beiden Stürmern vorbei. Spieler sechs startet schon nach vorn.",
     "moves": [
      {
       "who": "b1",
@@ -241,7 +241,7 @@
    },
    {
     "label": "Dritter Mann: Punkt",
-    "say": "Neon fünf legt den Ball direkt in den Lauf von Neon sechs, und der schießt ins linke Minitor. Das gibt einen Punkt für Team Neon. Dann rücken alle eine Position weiter, und der zweite Torwart ist dran.",
+    "say": "Spieler fünf legt den Ball direkt in den Lauf von Spieler sechs, und der schießt ins linke Minitor. Das gibt einen Punkt für Team Neon. Dann rücken alle eine Position weiter, und der zweite Torwart ist dran.",
     "moves": [
      {
       "who": "n6",
@@ -294,7 +294,7 @@
    "label": "Coaching-Punkt",
    "say": "Jetzt zum Coaching-Punkt: Die Doppelbewegung.",
    "title": "Doppelbewegung",
-   "text": "Wer einfach stehen bleibt, wird vom Gegner zugestellt. Neon fünf läuft deshalb erst vom Ball weg, als wolle er in die Tiefe, und kommt dann scharf entgegen. So löst er sich vom Gegner und ist frei.",
+   "text": "Wer einfach stehen bleibt, wird vom Gegner zugestellt. Spieler fünf läuft deshalb erst vom Ball weg, als wolle er in die Tiefe, und kommt dann scharf entgegen. So löst er sich vom Gegner und ist frei.",
    "board": {
     "players": [
      {
@@ -353,7 +353,7 @@
     "steps": [
      {
       "label": "Erst weg vom Ball",
-      "say": "Der Torwart hat den Ball zurück. Neon fünf läuft zuerst weg, als wolle er in die Tiefe.",
+      "say": "Der Torwart hat den Ball zurück. Spieler fünf läuft zuerst weg, als wolle er in die Tiefe.",
       "moves": [
        {
         "who": "n5",
@@ -367,7 +367,7 @@
      },
      {
       "label": "Dann entgegen: Punkt",
-      "say": "Dann kommt er scharf entgegen und ist frei. Der Torwart spielt ihn an, er legt direkt auf Neon sechs, und der trifft ins Minitor. Das gibt einen Punkt für Team Neon.",
+      "say": "Dann kommt er scharf entgegen und ist frei. Der Torwart spielt ihn an, er legt direkt auf Spieler sechs, und der trifft ins Minitor. Das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "n5",
@@ -430,7 +430,7 @@
    "label": "Steigerung",
    "say": "Und jetzt die Steigerung: Das Muster auf der anderen Seite.",
    "title": "Andere Seite",
-   "text": "Jetzt läuft alles spiegelverkehrt: Neon sechs geht links nach außen, und Neon vier ist der dritte Mann. So übt jeder beide Seiten und beide Füße.",
+   "text": "Jetzt läuft alles spiegelverkehrt: Spieler sechs geht links nach außen, und Spieler vier ist der dritte Mann. So übt jeder beide Seiten und beide Füße.",
    "board": {
     "players": [
      {
@@ -489,7 +489,7 @@
     "steps": [
      {
       "label": "Links heraus, zurück",
-      "say": "Neon sechs läuft links nach außen und bekommt den Ball vom Torwart. Der rückt nach vorn, und Neon sechs legt zurück. Neon fünf kommt entgegen.",
+      "say": "Spieler sechs läuft links nach außen und bekommt den Ball vom Torwart. Der rückt nach vorn, und Spieler sechs legt zurück. Spieler fünf kommt entgegen.",
       "moves": [
        {
         "who": "n6",
@@ -539,7 +539,7 @@
      },
      {
       "label": "Dritter Mann rechts: Punkt",
-      "say": "Der Torwart spielt steil zu Neon fünf, der legt in den Lauf von Neon vier, und Neon vier trifft ins rechte Minitor. Das gibt einen Punkt für Team Neon.",
+      "say": "Der Torwart spielt steil zu Spieler fünf, der legt in den Lauf von Spieler vier, und Spieler vier trifft ins rechte Minitor. Das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "b1",

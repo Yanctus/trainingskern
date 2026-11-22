@@ -225,7 +225,7 @@
   "steps": [
    {
     "label": "Pass zum Stürmer",
-    "say": "Neon sechs spielt den Ball zu Rot sieben in die Zone. Neon fünf läuft sofort los und ist eng dran, wenn der Ball ankommt.",
+    "say": "Spieler sechs spielt den Ball zu Spieler sieben in die Zone. Spieler fünf läuft sofort los und ist eng dran, wenn der Ball ankommt.",
     "moves": [
      {
       "who": "b1",
@@ -248,7 +248,7 @@
    },
    {
     "label": "Nicht drehen lassen",
-    "say": "Rot sieben will sich drehen. Neon fünf bleibt tief in den Knien und geht mit. So kann sich Rot sieben nicht zum Tor drehen.",
+    "say": "Spieler sieben will sich drehen. Spieler fünf bleibt tief in den Knien und geht mit. So kann sich Spieler sieben nicht zum Tor drehen.",
     "moves": [
      {
       "who": "r7",
@@ -272,7 +272,7 @@
    },
    {
     "label": "Nach außen drängen",
-    "say": "Neon fünf drängt Rot sieben nach außen, weg vom Tor. Rot sieben muss mit dem Ball aus der Zone.",
+    "say": "Spieler fünf drängt Spieler sieben nach außen, weg vom Tor. Spieler sieben muss mit dem Ball aus der Zone.",
     "moves": [
      {
       "who": "r7",
@@ -296,7 +296,7 @@
    },
    {
     "label": "Aus der Zone: Punkt",
-    "say": "Rot sieben ist aus der Zone, und das gibt einen Punkt für Neon fünf. Ein Treffer gäbe einen Punkt für Rot sieben. Jetzt wird Rot sieben Verteidiger, Neon sechs wird Stürmer, und Neon fünf stellt sich hinten an.",
+    "say": "Spieler sieben ist aus der Zone, und das gibt einen Punkt für Spieler fünf. Ein Treffer gäbe einen Punkt für Spieler sieben. Jetzt wird Spieler sieben Verteidiger, Spieler sechs wird Stürmer, und Spieler fünf stellt sich hinten an.",
     "moves": [
      {
       "who": "n5",
@@ -468,7 +468,7 @@
     "steps": [
      {
       "label": "Schulterblick",
-      "say": "Bevor der Ball kommt, schaut Rot sieben über die Schulter und sieht, wo Neon fünf steht. Dann spielt Neon sechs ihn an, und Neon fünf läuft an.",
+      "say": "Bevor der Ball kommt, schaut Spieler sieben über die Schulter und sieht, wo Spieler fünf steht. Dann spielt Spieler sechs ihn an, und Spieler fünf läuft an.",
       "moves": [
        {
         "who": "r7",
@@ -500,7 +500,7 @@
      },
      {
       "label": "Im Gleichgewicht",
-      "say": "Neon fünf bleibt eine Armlänge weg und lehnt sich nicht auf eine Seite. Rot sieben versucht sich wegzudrehen, aber Neon fünf geht mit.",
+      "say": "Spieler fünf bleibt eine Armlänge weg und lehnt sich nicht auf eine Seite. Spieler sieben versucht sich wegzudrehen, aber Spieler fünf geht mit.",
       "moves": [
        {
         "who": "r7",
@@ -524,7 +524,7 @@
      },
      {
       "label": "Ball erobert: Punkt",
-      "say": "Jetzt spitzelt Neon fünf den Ball weg und holt ihn sich. Das gibt einen Punkt für Neon fünf.",
+      "say": "Jetzt spitzelt Spieler fünf den Ball weg und holt ihn sich. Das gibt einen Punkt für Spieler fünf.",
       "moves": [
        {
         "who": "b1",
@@ -671,7 +671,7 @@
     "steps": [
      {
       "label": "Pass und Druck",
-      "say": "Neon sechs spielt zu Rot sieben, und Neon fünf ist sofort eng dran.",
+      "say": "Spieler sechs spielt zu Spieler sieben, und Spieler fünf ist sofort eng dran.",
       "moves": [
        {
         "who": "b1",
@@ -694,7 +694,7 @@
      },
      {
       "label": "Schuss gehalten",
-      "say": "Rot sieben dreht sich doch und schießt, aber der Torwart fängt den Ball.",
+      "say": "Spieler sieben dreht sich doch und schießt, aber der Torwart fängt den Ball.",
       "moves": [
        {
         "who": "r7",
@@ -732,7 +732,7 @@
      },
      {
       "label": "Ins Minitor: Punkt",
-      "say": "Er wirft den Ball schnell ins rechte Minitor, bevor Rot sieben presst. Das gibt einen Punkt für Neon fünf. Erobert Neon fünf selbst den Ball, spielt er genauso schnell in ein Minitor.",
+      "say": "Er wirft den Ball schnell ins rechte Minitor, bevor Spieler sieben presst. Das gibt einen Punkt für Spieler fünf. Erobert Spieler fünf selbst den Ball, spielt er genauso schnell in ein Minitor.",
       "moves": [
        {
         "who": "b1",

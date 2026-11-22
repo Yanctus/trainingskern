@@ -224,4 +224,10 @@ def regeln(u):
     for where, t in texts + [(f"{code} description", u.get("description") or ""), (f"{code} organisation", " ".join(u.get("organisation") or []))]:
         if re.search(r"(?i)abschlag|abgeschlagen|abschläg|schlägt .* ab|abzuschlagen", t):
             out.append(f"{where}: nicht 'abschlagen', sondern 'fangen' (berühren)")
+        # Inhaber 22.11.2026: Einzelne Spieler heißen immer „Spieler sieben“, nie „Neon sieben“ oder „Rot vier“
+        # (die Nummern sind über beide Teams eindeutig). „Team Neon“/„Team Rot“ bleibt für das Team.
+        m = re.search(r"(?<!Team )\b(Neon|Rot|Orange) (eins|zwei|drei|vier|fünf|sechs|sieben|acht|neun|zehn|elf|zwölf|"
+                      r"dreizehn|vierzehn|fünfzehn|sechzehn|siebzehn)\b(?! (Pässe|Pass|Punkte?|Minuten?|Sekunden?|Tore?|Meter|Kontakte?|mal)\b)", t)
+        if m:
+            out.append(f"{where}: '{m.group(0)}' -> 'Spieler {m.group(2)}' (Spieler nie mit Teamfarbe ansprechen)")
     return out

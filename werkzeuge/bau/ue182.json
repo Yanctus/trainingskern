@@ -151,7 +151,7 @@
   "steps": [
    {
     "label": "Pass zum Angreifer",
-    "say": "Rot vier passt zu Neon sieben zwischen den Stangen.",
+    "say": "Spieler vier passt zu Spieler sieben zwischen den Stangen.",
     "moves": [
      {
       "who": "b1",
@@ -165,7 +165,7 @@
    },
    {
     "label": "Um die Stange",
-    "say": "Neon sieben nimmt den Ball mit kurzen Kontakten außen um die linke Stange mit. Gleichzeitig sprintet Rot vier zwischen den Stangen hindurch zurück.",
+    "say": "Spieler sieben nimmt den Ball mit kurzen Kontakten außen um die linke Stange mit. Gleichzeitig sprintet Spieler vier zwischen den Stangen hindurch zurück.",
     "moves": [
      {
       "who": "n7",
@@ -209,7 +209,7 @@
    },
    {
     "label": "Auf eine Seite ziehen",
-    "say": "Neon sieben greift mit Tempo an und zieht Rot vier nach links. Der Torwart geht mit.",
+    "say": "Spieler sieben greift mit Tempo an und zieht Spieler vier nach links. Der Torwart geht mit.",
     "moves": [
      {
       "who": "n7",
@@ -242,7 +242,7 @@
    },
    {
     "label": "Haken und Abschluss: Punkt",
-    "say": "Neon sieben macht einen Haken nach rechts und schießt sofort. Der Ball geht rechts ins Tor, und das gibt einen Punkt für Team Neon. Jetzt ist Rot vier der neue Angreifer, und Neon acht passt und verteidigt.",
+    "say": "Spieler sieben macht einen Haken nach rechts und schießt sofort. Der Ball geht rechts ins Tor, und das gibt einen Punkt für Team Neon. Jetzt ist Spieler vier der neue Angreifer, und Spieler acht passt und verteidigt.",
     "moves": [
      {
       "who": "n7",
@@ -353,7 +353,7 @@
     "steps": [
      {
       "label": "Zurücksprinten",
-      "say": "Neon sieben nimmt den Ball um die rechte Stange mit. Rot vier sprintet sofort zurück und kommt zwischen Ball und Tor an.",
+      "say": "Spieler sieben nimmt den Ball um die rechte Stange mit. Spieler vier sprintet sofort zurück und kommt zwischen Ball und Tor an.",
       "moves": [
        {
         "who": "n7",
@@ -387,7 +387,7 @@
      },
      {
       "label": "Nach außen lenken",
-      "say": "Rot vier stellt sich seitlich und lenkt Neon sieben nach außen. Neon sieben schießt aus spitzem Winkel, und der Torwart fängt den Ball. Jetzt ist Rot vier der neue Angreifer.",
+      "say": "Spieler vier stellt sich seitlich und lenkt Spieler sieben nach außen. Spieler sieben schießt aus spitzem Winkel, und der Torwart fängt den Ball. Jetzt ist Spieler vier der neue Angreifer.",
       "moves": [
        {
         "who": "n7",
@@ -500,7 +500,7 @@
     "steps": [
      {
       "label": "Ball erobert",
-      "say": "Neon sieben dribbelt aufs Tor zu. Rot vier geht dazwischen und erobert den Ball.",
+      "say": "Spieler sieben dribbelt aufs Tor zu. Spieler vier geht dazwischen und erobert den Ball.",
       "moves": [
        {
         "who": "n7",
@@ -533,7 +533,7 @@
      },
      {
       "label": "Ins Minitor: Punkt",
-      "say": "Rot vier dribbelt nach rechts und schießt ins Minitor. Das gibt einen Punkt für Team Rot. Neon sieben presst sofort, kommt aber zu spät.",
+      "say": "Spieler vier dribbelt nach rechts und schießt ins Minitor. Das gibt einen Punkt für Team Rot. Spieler sieben presst sofort, kommt aber zu spät.",
       "moves": [
        {
         "who": "r4",

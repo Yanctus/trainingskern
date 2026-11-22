@@ -180,7 +180,7 @@
   "steps": [
    {
     "label": "Vom Hütchen lösen",
-    "say": "Neon sieben löst sich scharf vom Hütchen, und Neon zwei spielt ihn an.",
+    "say": "Spieler sieben löst sich scharf vom Hütchen, und Spieler zwei spielt ihn an.",
     "moves": [
      {
       "who": "n7",
@@ -203,7 +203,7 @@
    },
    {
     "label": "Zurück, dann herum",
-    "say": "Neon zwei kommt ins Feld, und Neon sieben legt den Ball zurück. Dann läuft Neon sieben außen um den unteren Dummy.",
+    "say": "Spieler zwei kommt ins Feld, und Spieler sieben legt den Ball zurück. Dann läuft Spieler sieben außen um den unteren Dummy.",
     "moves": [
      {
       "who": "n2",
@@ -244,7 +244,7 @@
    },
    {
     "label": "Doppelpass unten",
-    "say": "Neon zwei spielt ihm den Ball hinter dem Dummy in den Lauf und läuft selbst weiter nach oben.",
+    "say": "Spieler zwei spielt ihm den Ball hinter dem Dummy in den Lauf und läuft selbst weiter nach oben.",
     "moves": [
      {
       "who": "b2",
@@ -267,7 +267,7 @@
    },
    {
     "label": "Doppelpass oben",
-    "say": "Neon sieben spielt zu Neon zwei, läuft um den oberen Dummy und bekommt den Ball wieder in den Lauf.",
+    "say": "Spieler sieben spielt zu Spieler zwei, läuft um den oberen Dummy und bekommt den Ball wieder in den Lauf.",
     "moves": [
      {
       "who": "b2",
@@ -308,7 +308,7 @@
    },
    {
     "label": "Abschluss: Punkt",
-    "say": "Neon sieben schießt direkt ins obere Minitor, und das gibt einen Punkt. Neon zwei sprintet durch das Hütchentor links und stellt sich wieder an. Der Abschluss startet die nächsten beiden: Neon drei und Neon acht.",
+    "say": "Spieler sieben schießt direkt ins obere Minitor, und das gibt einen Punkt. Spieler zwei sprintet durch das Hütchentor links und stellt sich wieder an. Der Abschluss startet die nächsten beiden: Spieler drei und Spieler acht.",
     "moves": [
      {
       "who": "b2",
@@ -434,7 +434,7 @@
     "steps": [
      {
       "label": "Erst weg",
-      "say": "Neon sieben macht zuerst einen kurzen Schritt weg vom Ball.",
+      "say": "Spieler sieben macht zuerst einen kurzen Schritt weg vom Ball.",
       "moves": [
        {
         "who": "n7",
@@ -448,7 +448,7 @@
      },
      {
       "label": "Dann scharf rein",
-      "say": "Dann startet er scharf in den freien Raum, und Neon zwei spielt ihm den Ball genau in den Lauf. Jetzt kann der Doppelpass beginnen.",
+      "say": "Dann startet er scharf in den freien Raum, und Spieler zwei spielt ihm den Ball genau in den Lauf. Jetzt kann der Doppelpass beginnen.",
       "moves": [
        {
         "who": "n7",
@@ -549,7 +549,7 @@
     "steps": [
      {
       "label": "Ball in den Lauf",
-      "say": "Neon zwei spielt Neon sieben nach dem zweiten Doppelpass in den Lauf. Neon sieben schaut dabei schon zum unteren Minitor.",
+      "say": "Spieler zwei spielt Spieler sieben nach dem zweiten Doppelpass in den Lauf. Spieler sieben schaut dabei schon zum unteren Minitor.",
       "moves": [
        {
         "who": "n7",

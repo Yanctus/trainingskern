@@ -155,7 +155,7 @@
   "steps": [
    {
     "label": "Ball halten",
-    "say": "Neon zwei spielt zu Neon drei. Gleichzeitig verschiebt Rot neun und greift Neon drei an.",
+    "say": "Spieler zwei spielt zu Spieler drei. Gleichzeitig verschiebt Spieler neun und greift Spieler drei an.",
     "moves": [
      {
       "who": "b1",
@@ -178,7 +178,7 @@
    },
    {
     "label": "Fest durchs Tor",
-    "say": "Neon drei sieht die Lücke und spielt fest durch das obere Tor zu Neon sechs in die andere Hälfte.",
+    "say": "Spieler drei sieht die Lücke und spielt fest durch das obere Tor zu Spieler sechs in die andere Hälfte.",
     "moves": [
      {
       "who": "b1",
@@ -192,7 +192,7 @@
    },
    {
     "label": "Weiter in der anderen Hälfte",
-    "say": "Gleichzeitig rücken Neon drei, Neon vier und Neon fünf in die rechte Hälfte nach, Neon zwei bleibt als wartender Spieler zurück. Rot neun setzt sofort nach.",
+    "say": "Gleichzeitig rücken Spieler drei, Spieler vier und Spieler fünf in die rechte Hälfte nach, Spieler zwei bleibt als wartender Spieler zurück. Spieler neun setzt sofort nach.",
     "moves": [
      {
       "who": "n3",
@@ -344,7 +344,7 @@
     "steps": [
      {
       "label": "Direkt weiter",
-      "say": "Neon zwei spielt zu Neon drei, und Neon drei spielt direkt weiter zu Neon fünf. Rot neun läuft hinterher.",
+      "say": "Spieler zwei spielt zu Spieler drei, und Spieler drei spielt direkt weiter zu Spieler fünf. Spieler neun läuft hinterher.",
       "moves": [
        {
         "who": "b1",
@@ -376,7 +376,7 @@
      },
      {
       "label": "Direkt durchs Tor",
-      "say": "Neon fünf legt direkt zu Neon vier, und Neon vier spielt sofort fest durch das untere Tor zu Neon sechs.",
+      "say": "Spieler fünf legt direkt zu Spieler vier, und Spieler vier spielt sofort fest durch das untere Tor zu Spieler sechs.",
       "moves": [
        {
         "who": "b1",
@@ -477,7 +477,7 @@
     "steps": [
      {
       "label": "Prallpass",
-      "say": "Neon vier spielt zu Neon fünf und rückt etwas vor. Neon fünf lässt den Ball direkt zu Neon vier zurückprallen.",
+      "say": "Spieler vier spielt zu Spieler fünf und rückt etwas vor. Spieler fünf lässt den Ball direkt zu Spieler vier zurückprallen.",
       "moves": [
        {
         "who": "b1",
@@ -509,7 +509,7 @@
      },
      {
       "label": "Jetzt durchs Tor",
-      "say": "Nach dem Prallpass darf Neon vier durch das untere Tor spielen und trifft Neon sechs in der anderen Hälfte.",
+      "say": "Nach dem Prallpass darf Spieler vier durch das untere Tor spielen und trifft Spieler sechs in der anderen Hälfte.",
       "moves": [
        {
         "who": "b1",

@@ -273,7 +273,7 @@
   "steps": [
    {
     "label": "Pass, dann Hütchen antippen",
-    "say": "Neon drei passt nach vorn zu Neon acht und sprintet zum Quadrat oben links, um die Hütchen anzutippen.",
+    "say": "Spieler drei passt nach vorn zu Spieler acht und sprintet zum Quadrat oben links, um die Hütchen anzutippen.",
     "moves": [
      {
       "who": "b1",
@@ -314,7 +314,7 @@
    },
    {
     "label": "Quer, dann durch die Leiter",
-    "say": "Neon acht spielt quer in die Mitte zu Neon zehn und läuft durch die Leiter.",
+    "say": "Spieler acht spielt quer in die Mitte zu Spieler zehn und läuft durch die Leiter.",
     "moves": [
      {
       "who": "b1",
@@ -355,7 +355,7 @@
    },
    {
     "label": "Doppelpass, Stürmer läuft los",
-    "say": "Neon zehn spielt einen Doppelpass mit Neon sieben. Der tippt danach im Zickzack die Hütchen an und läuft in den Strafraum. Gleichzeitig springt Neon sechs rechts über die Hürden.",
+    "say": "Spieler zehn spielt einen Doppelpass mit Spieler sieben. Der tippt danach im Zickzack die Hütchen an und läuft in den Strafraum. Gleichzeitig springt Spieler sechs rechts über die Hürden.",
     "moves": [
      {
       "who": "b1",
@@ -468,7 +468,7 @@
    },
    {
     "label": "Steilpass auf den Flügel",
-    "say": "Neon zehn spielt den Ball steil in den Lauf von Neon sechs.",
+    "say": "Spieler zehn spielt den Ball steil in den Lauf von Spieler sechs.",
     "moves": [
      {
       "who": "b1",
@@ -482,7 +482,7 @@
    },
    {
     "label": "Kopf hoch, Flanke: Punkt",
-    "say": "Neon sechs hebt den Kopf, sieht Neon sieben im Strafraum und flankt. Neon sieben schießt direkt ins Tor, und das gibt einen Punkt. Dann rückt jeder eine Station weiter, und Neon fünf beginnt den nächsten Durchgang.",
+    "say": "Spieler sechs hebt den Kopf, sieht Spieler sieben im Strafraum und flankt. Spieler sieben schießt direkt ins Tor, und das gibt einen Punkt. Dann rückt jeder eine Station weiter, und Spieler fünf beginnt den nächsten Durchgang.",
     "moves": [
      {
       "who": "n6",
@@ -620,7 +620,7 @@
     "steps": [
      {
       "label": "In den Lauf",
-      "say": "Neon sechs startet, und Neon zehn spielt ihm den Ball genau in den Lauf.",
+      "say": "Spieler sechs startet, und Spieler zehn spielt ihm den Ball genau in den Lauf.",
       "moves": [
        {
         "who": "n6",
@@ -652,7 +652,7 @@
      },
      {
       "label": "Direkt flanken: Punkt",
-      "say": "So kann Neon sechs mit dem ersten Kontakt flanken. Neon sieben trifft, und das gibt einen Punkt.",
+      "say": "So kann Spieler sechs mit dem ersten Kontakt flanken. Spieler sieben trifft, und das gibt einen Punkt.",
       "moves": [
        {
         "who": "n6",
@@ -790,7 +790,7 @@
     "steps": [
      {
       "label": "Antäuschen zum Pfosten",
-      "say": "Neon sieben läuft zuerst Richtung erster Pfosten.",
+      "say": "Spieler sieben läuft zuerst Richtung erster Pfosten.",
       "moves": [
        {
         "who": "n7",
@@ -804,7 +804,7 @@
      },
      {
       "label": "Zurückziehen, Abschluss: Punkt",
-      "say": "Dann zieht er scharf zurück in den freien Raum. Neon sechs hebt den Kopf, sieht die Bewegung und flankt genau dorthin. Neon sieben trifft, und das gibt einen Punkt.",
+      "say": "Dann zieht er scharf zurück in den freien Raum. Spieler sechs hebt den Kopf, sieht die Bewegung und flankt genau dorthin. Spieler sieben trifft, und das gibt einen Punkt.",
       "moves": [
        {
         "who": "n7",

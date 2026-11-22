@@ -147,7 +147,7 @@
   "steps": [
    {
     "label": "In die Mitte dribbeln",
-    "say": "Neon sechs dribbelt mit dem Ball zwischen den Hütchen hindurch in die Mitte.",
+    "say": "Spieler sechs dribbelt mit dem Ball zwischen den Hütchen hindurch in die Mitte.",
     "moves": [
      {
       "who": "n6",
@@ -162,7 +162,7 @@
    },
    {
     "label": "Steil und zurück",
-    "say": "Neon sechs passt nach oben zu Neon zehn. Der spielt direkt zurück, vor Neon sechs in den Lauf, und startet sofort nach rechts.",
+    "say": "Spieler sechs passt nach oben zu Spieler zehn. Der spielt direkt zurück, vor Spieler sechs in den Lauf, und startet sofort nach rechts.",
     "moves": [
      {
       "who": "b1",
@@ -203,7 +203,7 @@
    },
    {
     "label": "Nach außen und zurück",
-    "say": "Neon sechs spielt direkt nach außen zu Neon zehn, und der legt mit einem Kontakt zurück. Dann läuft Neon zehn außen an der Seite nach unten.",
+    "say": "Spieler sechs spielt direkt nach außen zu Spieler zehn, und der legt mit einem Kontakt zurück. Dann läuft Spieler zehn außen an der Seite nach unten.",
     "moves": [
      {
       "who": "b1",
@@ -244,7 +244,7 @@
    },
    {
     "label": "In die Tiefe, dann nach unten",
-    "say": "Neon sechs spielt in die Tiefe, und Neon zehn passt direkt nach unten zu Neon elf. Die Passfolge ist geschafft. Neon sechs geht nach oben, Neon zehn stellt sich unten an, und Neon elf startet die nächste Runde über links.",
+    "say": "Spieler sechs spielt in die Tiefe, und Spieler zehn passt direkt nach unten zu Spieler elf. Die Passfolge ist geschafft. Spieler sechs geht nach oben, Spieler zehn stellt sich unten an, und Spieler elf startet die nächste Runde über links.",
     "moves": [
      {
       "who": "b1",
@@ -365,7 +365,7 @@
     "steps": [
      {
       "label": "Pass in den Lauf",
-      "say": "Neon zehn läuft schräg nach links. Neon sechs spielt nicht in seine Füße, sondern vor ihn in den Lauf.",
+      "say": "Spieler zehn läuft schräg nach links. Spieler sechs spielt nicht in seine Füße, sondern vor ihn in den Lauf.",
       "moves": [
        {
         "who": "n10",
@@ -388,7 +388,7 @@
      },
      {
       "label": "Direkt weiter",
-      "say": "Neon sechs läuft weiter nach vorn. Neon zehn spielt den Ball mit einem Kontakt zurück, genau in seinen Lauf.",
+      "say": "Spieler sechs läuft weiter nach vorn. Spieler zehn spielt den Ball mit einem Kontakt zurück, genau in seinen Lauf.",
       "moves": [
        {
         "who": "n6",
@@ -475,7 +475,7 @@
     "steps": [
      {
       "label": "Dribbeln und steil",
-      "say": "Neon sechs dribbelt in die Mitte und passt nach oben zu Neon zehn. Neon elf kommt unten ins Feld.",
+      "say": "Spieler sechs dribbelt in die Mitte und passt nach oben zu Spieler zehn. Spieler elf kommt unten ins Feld.",
       "moves": [
        {
         "who": "n6",
@@ -508,7 +508,7 @@
      },
      {
       "label": "Schulterblick und aufdrehen",
-      "say": "Neon sechs schaut über die Schulter zu Neon elf. Neon zehn spielt direkt zurück, Neon sechs dreht auf und passt nach unten zu Neon elf.",
+      "say": "Spieler sechs schaut über die Schulter zu Spieler elf. Spieler zehn spielt direkt zurück, Spieler sechs dreht auf und passt nach unten zu Spieler elf.",
       "moves": [
        {
         "who": "n6",
@@ -540,7 +540,7 @@
      },
      {
       "label": "Zurück und in den Lauf",
-      "say": "Neon elf legt direkt zurück und läuft außen nach oben. Neon sechs spielt ihm den Ball in den Lauf.",
+      "say": "Spieler elf legt direkt zurück und läuft außen nach oben. Spieler sechs spielt ihm den Ball in den Lauf.",
       "moves": [
        {
         "who": "b1",
@@ -581,7 +581,7 @@
      },
      {
       "label": "Nach oben",
-      "say": "Neon elf passt direkt nach oben zu Neon zehn. Die Passfolge ist geschafft, und die Spieler wechseln die Stationen.",
+      "say": "Spieler elf passt direkt nach oben zu Spieler zehn. Die Passfolge ist geschafft, und die Spieler wechseln die Stationen.",
       "moves": [
        {
         "who": "b1",

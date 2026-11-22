@@ -7,7 +7,7 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # neon, daher Rot und Blau orange, Gelb und Weiß neon; welche Farbe gemeint ist, steht im Text. Ein Trainer statt zwei, er
 # steht links an der Seite (nimmt in der Steigerung den Ball an). Die Steigerung "Possession won" (Ball wieder in der Kette)
 # steht nur im Text. Sichtkegel: Text "Check shoulders throughout to check for runners", Ton "check their shoulders ... be
-# aware of ... attacking players looking to make runs" -> in der Grundform schaut Neon zwei über die Schulter nach hinten
+# aware of ... attacking players looking to make runs" -> in der Grundform schaut Spieler zwei über die Schulter nach hinten
 # (zum Raum hinter der Kette), Richtung aus dem Sinn (im Video kein Kegel eingezeichnet).
 T = P("T", "c", 13, 32, "T")
 POS = {"n2": (31, 20), "n5": (43, 15), "n6": (57, 15), "n3": (69, 20)}
@@ -35,27 +35,27 @@ u = {"title": "Viererkette schiebt zum Ball", "code": "UE-206", "kind": "Übungs
  "say_intro": "Viererkette schiebt zum Ball. Der Trainer ruft eine Farbe, und die Kette reagiert gemeinsam wie eine Einheit.",
  "board": {"lines": LINES, "cones": KEGEL, "players": sp(), "balls": HB + ERSATZ,
   "steps": [
-   S("Rot: Druck auf den Ball", "Der Trainer ruft: Rot! Das rote Hütchen ist ganz rechts. Neon drei ist am nächsten dran und sprintet zum Ball. Gleichzeitig schieben die anderen drei nach rechts, Neon sechs sichert schräg dahinter ab. Neon zwei schaut über die Schulter nach hinten.",
+   S("Rot: Druck auf den Ball", "Der Trainer ruft: Rot! Das rote Hütchen ist ganz rechts. Spieler drei ist am nächsten dran und sprintet zum Ball. Gleichzeitig schieben die anderen drei nach rechts, Spieler sechs sichert schräg dahinter ab. Spieler zwei schaut über die Schulter nach hinten.",
      mv("n3", [70, 42]), mv("n6", [62, 26]), mv("n5", [52, 21]), mv("n2", [41, 20]), bl("n2", [33, 6], after=True)),
    S("Zurück in die Mitte", "Jetzt gehen alle vier schnell zurück in die Mitte und stehen wieder als Kette.", *ZURUECK),
-   S("Weiß: Druck auf den Ball", "Der Trainer ruft: Weiß! Das weiße Hütchen ist ganz links. Jetzt ist Neon zwei am nächsten dran und sprintet los. Neon fünf sichert ab, Neon sechs und Neon drei schieben nach links.",
+   S("Weiß: Druck auf den Ball", "Der Trainer ruft: Weiß! Das weiße Hütchen ist ganz links. Jetzt ist Spieler zwei am nächsten dran und sprintet los. Spieler fünf sichert ab, Spieler sechs und Spieler drei schieben nach links.",
      mv("n2", [28.5, 42]), mv("n5", [37, 28]), mv("n6", [47, 21]), mv("n3", [58, 20])),
-   S("Stange links: Zurücklaufen", "Der Trainer ruft: Stange links! Ein Ball fliegt über die Kette, links aus Sicht der Verteidiger. Alle vier sprinten zurück zu dieser Stange, Neon drei ganz außen, die anderen schräg daneben. Steht die Kette so, ist das Kommando geschafft. Dann gehen alle zurück in die Mitte, und der Trainer ruft das nächste Kommando.",
+   S("Stange links: Zurücklaufen", "Der Trainer ruft: Stange links! Ein Ball fliegt über die Kette, links aus Sicht der Verteidiger. Alle vier sprinten zurück zu dieser Stange, Spieler drei ganz außen, die anderen schräg daneben. Steht die Kette so, ist das Kommando geschafft. Dann gehen alle zurück in die Mitte, und der Trainer ruft das nächste Kommando.",
      mv("n3", [70, 8]), mv("n6", [61, 11]), mv("n5", [52, 14]), mv("n2", [42, 30]), mv("n2", [43, 17], after=True))],
   "dims": dims(25, 75, 5, 55, "27 m", "27 m", rx=84)},
  "versions": [
   V("Coaching-Punkt", "Jetzt zum Coaching-Punkt: Als eine Einheit schieben.", "Wie eine Einheit",
     "Die vier Verteidiger bewegen sich, als wären sie mit einem Seil verbunden. Läuft einer raus, rücken die anderen nach und halten kurze Abstände. Der Nachbar sichert immer schräg dahinter ab.",
     sp(), HB + ERSATZ,
-    [S("Blau: Absichern", "Der Trainer ruft: Blau! Das blaue Hütchen ist das zweite von links. Neon fünf sprintet zum Ball, Neon sechs sichert schräg dahinter ab. Neon zwei und Neon drei rücken nach innen.",
+    [S("Blau: Absichern", "Der Trainer ruft: Blau! Das blaue Hütchen ist das zweite von links. Spieler fünf sprintet zum Ball, Spieler sechs sichert schräg dahinter ab. Spieler zwei und Spieler drei rücken nach innen.",
        mv("n5", [43, 42]), mv("n6", [50, 28]), mv("n2", [33, 26]), mv("n3", [61, 21])),
-     S("Gelb: Weiterschieben", "Der Trainer ruft: Gelb! Neon sechs sprintet zum gelben Hütchen. Neon fünf geht zurück und sichert jetzt ihn ab. Die Abstände bleiben kurz, alle reden miteinander.",
+     S("Gelb: Weiterschieben", "Der Trainer ruft: Gelb! Spieler sechs sprintet zum gelben Hütchen. Spieler fünf geht zurück und sichert jetzt ihn ab. Die Abstände bleiben kurz, alle reden miteinander.",
        mv("n6", [57.5, 42]), mv("n5", [48, 25]), mv("n3", [66, 27]), mv("n2", [39, 20]))]),
   V("Steigerung", "Und jetzt die Steigerung: Mit Ball und Ballverlust.", "Mit Ball",
     "Jetzt hat die Kette einen Ball und spielt ihn sich zu, wie beim Aufbau von hinten. Dann geht der Ball zum Trainer, und er ruft: Ballverlust und eine Farbe. Sofort presst der Nächste den Ball, und die anderen sichern ab.",
     sp(), [B("b0", 69.6, 20.6)] + HB + ERSATZ,
-    [S("Ball laufen lassen", "Neon drei spielt zu Neon sechs, der zu Neon fünf und der zu Neon zwei. Der Ball läuft schnell durch die Kette.",
+    [S("Ball laufen lassen", "Spieler drei spielt zu Spieler sechs, der zu Spieler fünf und der zu Spieler zwei. Der Ball läuft schnell durch die Kette.",
        ps("b0", [57.6, 15.6]), ps("b0", [43.6, 15.6], after=True), ps("b0", [31.6, 20.6], after=True)),
-     S("Ballverlust: Gelb", "Neon zwei spielt zum Trainer. Der ruft: Ballverlust, Gelb! Neon sechs sprintet sofort zum gelben Hütchen, Neon fünf und Neon drei sichern ab, Neon zwei rückt nach innen.",
+     S("Ballverlust: Gelb", "Spieler zwei spielt zum Trainer. Der ruft: Ballverlust, Gelb! Spieler sechs sprintet sofort zum gelben Hütchen, Spieler fünf und Spieler drei sichern ab, Spieler zwei rückt nach innen.",
        ps("b0", [13.6, 32.6]), mv("n6", [57.5, 42], after=True), mv("n5", [49, 28], delay=1.0), mv("n3", [66, 28], delay=1.0), mv("n2", [38, 22], delay=1.0))])]}
 json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)

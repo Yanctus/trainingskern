@@ -4,8 +4,8 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # Rollen wechseln jede Runde, die Farben stehen nur für einzelne Spieler. Blau -> Neon 9, 3, 6 (Passgeber), 5 (Verteidiger);
 # Pink -> Rot 4, 10, dazu Pink 9 (Stürmer) -> Rot 7 und Pink 6 -> Rot 8 (Nummern im PDF doppelt). Grüner Torwart -> neutraler TW.
 # Wartende in einer Reihe unten (einer rechts außerhalb des Feldes), Verteidiger seitlich versetzt (3D-Abstand), im Original
-# direkt hinter dem Stürmer. Rot neun -> Rot sieben. Steigerung: Minitore an den Seitenlinien (im Original schräg in den Ecken).
-# Sichtkegel: Coaching-Punkt im PDF "Attackers must constantly check their shoulders" -> Rot sieben schaut vor der Annahme
+# direkt hinter dem Stürmer. Spieler neun -> Spieler sieben. Steigerung: Minitore an den Seitenlinien (im Original schräg in den Ecken).
+# Sichtkegel: Coaching-Punkt im PDF "Attackers must constantly check their shoulders" -> Spieler sieben schaut vor der Annahme
 # über die Schulter zum Verteidiger. Im Video "Head up release early - GK distribution" mit eingezeichneter Linie zum rechten
 # Minitor -> in der Steigerung schaut der Torwart hoch zum Minitor.
 T = P("T", "c", 14, 30, "T")
@@ -39,35 +39,35 @@ u = {"title": "Eins gegen eins vor dem Tor", "code": "UE-183", "kind": "Übungsf
  "say_intro": "Eins gegen eins vor dem Tor. Der Verteidiger ist sofort eng am Stürmer und lässt ihn nicht drehen.",
  "board": {"lines": LINES, "goals": TOR, "cones": KEGEL, "players": sp(), "balls": BAELLE,
   "steps": [
-   S("Pass zum Stürmer", "Neon sechs spielt den Ball zu Rot sieben in die Zone. Neon fünf läuft sofort los und ist eng dran, wenn der Ball ankommt.",
+   S("Pass zum Stürmer", "Spieler sechs spielt den Ball zu Spieler sieben in die Zone. Spieler fünf läuft sofort los und ist eng dran, wenn der Ball ankommt.",
      ps("b1", [50.6, 27.6]), mv("n5", [48.5, 22], delay=0.2)),
-   S("Nicht drehen lassen", "Rot sieben will sich drehen. Neon fünf bleibt tief in den Knien und geht mit. So kann sich Rot sieben nicht zum Tor drehen.",
+   S("Nicht drehen lassen", "Spieler sieben will sich drehen. Spieler fünf bleibt tief in den Knien und geht mit. So kann sich Spieler sieben nicht zum Tor drehen.",
      dr("r7", "b1", [55, 26]), mv("n5", [53.5, 21.5], delay=0.2)),
-   S("Nach außen drängen", "Neon fünf drängt Rot sieben nach außen, weg vom Tor. Rot sieben muss mit dem Ball aus der Zone.",
+   S("Nach außen drängen", "Spieler fünf drängt Spieler sieben nach außen, weg vom Tor. Spieler sieben muss mit dem Ball aus der Zone.",
      dr("r7", "b1", [64, 24]), mv("n5", [60, 20], delay=0.2)),
-   S("Aus der Zone: Punkt", "Rot sieben ist aus der Zone, und das gibt einen Punkt für Neon fünf. Ein Treffer gäbe einen Punkt für Rot sieben. Jetzt wird Rot sieben Verteidiger, Neon sechs wird Stürmer, und Neon fünf stellt sich hinten an.",
+   S("Aus der Zone: Punkt", "Spieler sieben ist aus der Zone, und das gibt einen Punkt für Spieler fünf. Ein Treffer gäbe einen Punkt für Spieler sieben. Jetzt wird Spieler sieben Verteidiger, Spieler sechs wird Stürmer, und Spieler fünf stellt sich hinten an.",
      mv("n5", [76, 51]), mv("n6", [50, 27], delay=0.3), mv("r7", [41.5, 18], after=True))],
   "dims": dims(28.5, 71.5, 5, 55, "27 m", "32 m", rx=84)},
  "versions": [
   V("Coaching-Punkt", "Jetzt zum Coaching-Punkt: Eng dran, aber nicht zu eng.", "Eine Armlänge Abstand",
     "Der Stürmer schaut über die Schulter und spürt, wo der Verteidiger steht. Klebt der Verteidiger zu eng dran oder lehnt sich auf eine Seite, dreht sich der Stürmer an ihm vorbei. Darum bleibt er eine Armlänge weg, tief in den Knien und im Gleichgewicht.",
     sp(), BAELLE,
-    [S("Schulterblick", "Bevor der Ball kommt, schaut Rot sieben über die Schulter und sieht, wo Neon fünf steht. Dann spielt Neon sechs ihn an, und Neon fünf läuft an.",
+    [S("Schulterblick", "Bevor der Ball kommt, schaut Spieler sieben über die Schulter und sieht, wo Spieler fünf steht. Dann spielt Spieler sechs ihn an, und Spieler fünf läuft an.",
        bl("r7", [42, 13]), ps("b1", [50.6, 27.6], after=True), mv("n5", [47.5, 21.5], delay=0.9)),
-     S("Im Gleichgewicht", "Neon fünf bleibt eine Armlänge weg und lehnt sich nicht auf eine Seite. Rot sieben versucht sich wegzudrehen, aber Neon fünf geht mit.",
+     S("Im Gleichgewicht", "Spieler fünf bleibt eine Armlänge weg und lehnt sich nicht auf eine Seite. Spieler sieben versucht sich wegzudrehen, aber Spieler fünf geht mit.",
        dr("r7", "b1", [45.5, 26]), mv("n5", [43.5, 21.5], delay=0.2)),
-     S("Ball erobert: Punkt", "Jetzt spitzelt Neon fünf den Ball weg und holt ihn sich. Das gibt einen Punkt für Neon fünf.",
+     S("Ball erobert: Punkt", "Jetzt spitzelt Spieler fünf den Ball weg und holt ihn sich. Das gibt einen Punkt für Spieler fünf.",
        ps("b1", [40.6, 22.6]), mv("n5", [40, 22], after=True))]),
   V("Steigerung", "Und jetzt die Steigerung: Mit Minitoren herausspielen.", "Schnell herausspielen",
     "An den Seiten stehen zwei Minitore. Erobert der Verteidiger den Ball oder hält der Torwart einen Schuss, spielen sie den Ball schnell in ein Minitor. Der Torwart nimmt dafür sofort den Kopf hoch, wirft oder schießt, bevor der Stürmer wieder presst.",
     sp(), BAELLE,
-    [S("Pass und Druck", "Neon sechs spielt zu Rot sieben, und Neon fünf ist sofort eng dran.",
+    [S("Pass und Druck", "Spieler sechs spielt zu Spieler sieben, und Spieler fünf ist sofort eng dran.",
        ps("b1", [50.6, 27.6]), mv("n5", [48.5, 22], delay=0.2)),
-     S("Schuss gehalten", "Rot sieben dreht sich doch und schießt, aber der Torwart fängt den Ball.",
+     S("Schuss gehalten", "Spieler sieben dreht sich doch und schießt, aber der Torwart fängt den Ball.",
        dr("r7", "b1", [53, 24]), ps("b1", [50.6, 8.6], after=True)),
      S("Kopf hoch", "Der Torwart nimmt sofort den Kopf hoch und sieht das freie Minitor rechts.",
        bl("k", [61.5, 24])),
-     S("Ins Minitor: Punkt", "Er wirft den Ball schnell ins rechte Minitor, bevor Rot sieben presst. Das gibt einen Punkt für Neon fünf. Erobert Neon fünf selbst den Ball, spielt er genauso schnell in ein Minitor.",
+     S("Ins Minitor: Punkt", "Er wirft den Ball schnell ins rechte Minitor, bevor Spieler sieben presst. Das gibt einen Punkt für Spieler fünf. Erobert Spieler fünf selbst den Ball, spielt er genauso schnell in ein Minitor.",
        ps("b1", [70.5, 36]))],
     goals=TOR + MINI)]}
 json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)

@@ -217,7 +217,7 @@
   "steps": [
    {
     "label": "Pass an die Strafraumgrenze",
-    "say": "Neon neun passt seinen Ball an die Strafraumgrenze. Im Tor steht Rot drei.",
+    "say": "Spieler neun passt seinen Ball an die Strafraumgrenze. Im Tor steht Spieler drei.",
     "moves": [
      {
       "who": "b9",
@@ -304,7 +304,7 @@
    },
    {
     "label": "Ab ins Tor, Rot ist dran",
-    "say": "Neon neun sprintet sofort ins Tor und ist jetzt Torwart. Rot drei geht zurück zu seinem Team, und Rot zwei ist dran: Pass an die Strafraumgrenze, dann durch die rechte Leiter.",
+    "say": "Spieler neun sprintet sofort ins Tor und ist jetzt Torwart. Spieler drei geht zurück zu seinem Team, und Spieler zwei ist dran: Pass an die Strafraumgrenze, dann durch die rechte Leiter.",
     "moves": [
      {
       "who": "r3",
@@ -463,7 +463,7 @@
     "steps": [
      {
       "label": "Im Bogen anlaufen",
-      "say": "Neon neun kommt vom Dummy und läuft im leichten Bogen von der Seite an den Ball.",
+      "say": "Spieler neun kommt vom Dummy und läuft im leichten Bogen von der Seite an den Ball.",
       "moves": [
        {
         "who": "n9",
@@ -593,7 +593,7 @@
     "steps": [
      {
       "label": "Kopf hoch, Torwart sehen",
-      "say": "Beim Anlaufen hebt Neon neun den Kopf und sieht: Rot drei steht im Tor etwas zu weit links.",
+      "say": "Beim Anlaufen hebt Spieler neun den Kopf und sieht: Spieler drei steht im Tor etwas zu weit links.",
       "moves": [
        {
         "who": "n9",
@@ -732,7 +732,7 @@
     "steps": [
      {
       "label": "Treffer: Neon bleibt dran",
-      "say": "Neon neun trifft, und das gibt einen Punkt für Team Neon. Weil er getroffen hat, bleibt Rot drei im Tor, und Neon zehn ist sofort dran.",
+      "say": "Spieler neun trifft, und das gibt einen Punkt für Team Neon. Weil er getroffen hat, bleibt Spieler drei im Tor, und Spieler zehn ist sofort dran.",
       "moves": [
        {
         "who": "n9",
@@ -781,8 +781,8 @@
       ]
      },
      {
-      "label": "Neon zehn läuft",
-      "say": "Neon zehn läuft durch die Leiter und um den Dummy herum zum Ball.",
+      "label": "Spieler zehn läuft",
+      "say": "Spieler zehn läuft durch die Leiter und um den Dummy herum zum Ball.",
       "moves": [
        {
         "who": "n9",
@@ -850,7 +850,7 @@
      },
      {
       "label": "Daneben: Wechsel",
-      "say": "Neon zehn schießt am Tor vorbei. Jetzt muss er selbst ins Tor, Rot drei geht zurück zu seinem Team, und Team Rot greift an.",
+      "say": "Spieler zehn schießt am Tor vorbei. Jetzt muss er selbst ins Tor, Spieler drei geht zurück zu seinem Team, und Team Rot greift an.",
       "moves": [
        {
         "who": "b10",

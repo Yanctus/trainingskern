@@ -253,7 +253,7 @@
   "steps": [
    {
     "label": "Pass nach unten",
-    "say": "Neon vier spielt zwischen den Dummys hindurch zu Neon neun, der dem Ball entgegenkommt. Gleichzeitig läuft Neon acht über Leiter und Hürden nach unten und Neon sieben durch Stangen und Ringe nach oben.",
+    "say": "Spieler vier spielt zwischen den Dummys hindurch zu Spieler neun, der dem Ball entgegenkommt. Gleichzeitig läuft Spieler acht über Leiter und Hürden nach unten und Spieler sieben durch Stangen und Ringe nach oben.",
     "moves": [
      {
       "who": "b1",
@@ -364,7 +364,7 @@
    },
    {
     "label": "Steil nach oben",
-    "say": "Neon neun spielt steil nach oben zu Neon zwei, der zum Hütchen kommt. Neon vier läuft jetzt über Leiter und Hürden nach unten, Neon neun startet zu den Stangen.",
+    "say": "Spieler neun spielt steil nach oben zu Spieler zwei, der zum Hütchen kommt. Spieler vier läuft jetzt über Leiter und Hürden nach unten, Spieler neun startet zu den Stangen.",
     "moves": [
      {
       "who": "n2",
@@ -450,7 +450,7 @@
    },
    {
     "label": "Immer weiter im Kreis",
-    "say": "Jetzt spielt Neon zwei nach unten zu Neon elf, und alles beginnt von vorn. So bleibt der Ball in Bewegung, bis der Trainer eine Pause ansagt.",
+    "say": "Jetzt spielt Spieler zwei nach unten zu Spieler elf, und alles beginnt von vorn. So bleibt der Ball in Bewegung, bis der Trainer eine Pause ansagt.",
     "moves": [
      {
       "who": "n11",
@@ -590,7 +590,7 @@
     "steps": [
      {
       "label": "Fest und genau",
-      "say": "Neon vier spielt den Ball fest und genau zwischen den Dummys hindurch, Neon neun kommt entgegen und nimmt ihn sauber an.",
+      "say": "Spieler vier spielt den Ball fest und genau zwischen den Dummys hindurch, Spieler neun kommt entgegen und nimmt ihn sauber an.",
       "moves": [
        {
         "who": "b1",
@@ -612,7 +612,7 @@
      },
      {
       "label": "Mit dem anderen Fuß zurück",
-      "say": "Neon neun spielt mit dem anderen Fuß genauso fest steil nach oben zu Neon zwei. Dann laufen beide zu ihrer Station.",
+      "say": "Spieler neun spielt mit dem anderen Fuß genauso fest steil nach oben zu Spieler zwei. Dann laufen beide zu ihrer Station.",
       "moves": [
        {
         "who": "n2",
@@ -727,7 +727,7 @@
     "steps": [
      {
       "label": "Leiter und Hürden",
-      "say": "Neon acht läuft mit kurzen, schnellen Schritten durch die Leiter und über die Hürden nach unten.",
+      "say": "Spieler acht läuft mit kurzen, schnellen Schritten durch die Leiter und über die Hürden nach unten.",
       "moves": [
        {
         "who": "n8",
@@ -759,7 +759,7 @@
      },
      {
       "label": "Stangen und Ringe",
-      "say": "Gleichzeitig läuft Neon sieben im Slalom um die Stangen und durch die Ringe nach oben. Beide kommen mit Tempo an ihrer neuen Station an.",
+      "say": "Gleichzeitig läuft Spieler sieben im Slalom um die Stangen und durch die Ringe nach oben. Beide kommen mit Tempo an ihrer neuen Station an.",
       "moves": [
        {
         "who": "n7",

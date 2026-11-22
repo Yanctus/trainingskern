@@ -191,7 +191,7 @@
   "steps": [
    {
     "label": "Drei gegen eins",
-    "say": "Links spielt Team Neon drei gegen eins und zählt die Pässe. Neon drei spielt zu Neon acht, und Rot neun läuft an.",
+    "say": "Links spielt Team Neon drei gegen eins und zählt die Pässe. Spieler drei spielt zu Spieler acht, und Spieler neun läuft an.",
     "moves": [
      {
       "who": "b1",
@@ -214,7 +214,7 @@
    },
    {
     "label": "Läufer in die Tiefe",
-    "say": "Fünf Pässe sind geschafft. Neon elf sprintet in die Endzone. Rot neun schaut über die Schulter, sieht den Läufer und sprintet zurück.",
+    "say": "Fünf Pässe sind geschafft. Spieler elf sprintet in die Endzone. Spieler neun schaut über die Schulter, sieht den Läufer und sprintet zurück.",
     "moves": [
      {
       "who": "n11",
@@ -246,7 +246,7 @@
    },
    {
     "label": "Abgefangen",
-    "say": "Neon acht spielt den Ball in die Tiefe zu Neon elf. Rot neun ist rechtzeitig zurück und fängt den Ball ab.",
+    "say": "Spieler acht spielt den Ball in die Tiefe zu Spieler elf. Spieler neun ist rechtzeitig zurück und fängt den Ball ab.",
     "moves": [
      {
       "who": "b1",
@@ -260,7 +260,7 @@
    },
    {
     "label": "Zum Zielspieler: Punkt",
-    "say": "Rot neun spielt sofort zu Rot vier, und das gibt einen Punkt für Team Rot. Trifft Neon elf ins Minitor, gibt das einen Punkt für Team Neon. Danach ist die rechte Hälfte dran, und Rot neun tauscht mit Rot vier.",
+    "say": "Spieler neun spielt sofort zu Spieler vier, und das gibt einen Punkt für Team Rot. Trifft Spieler elf ins Minitor, gibt das einen Punkt für Team Neon. Danach ist die rechte Hälfte dran, und Spieler neun tauscht mit Spieler vier.",
     "moves": [
      {
       "who": "b1",
@@ -401,7 +401,7 @@
     "steps": [
      {
       "label": "Lauern",
-      "say": "Jetzt ist die rechte Hälfte dran. Neon zwei spielt zu Neon sechs. Rot zehn wartet und lauert auf einen Fehler.",
+      "say": "Jetzt ist die rechte Hälfte dran. Spieler zwei spielt zu Spieler sechs. Spieler zehn wartet und lauert auf einen Fehler.",
       "moves": [
        {
         "who": "b2",
@@ -415,7 +415,7 @@
      },
      {
       "label": "Schlechte Annahme",
-      "say": "Neon sechs nimmt den Ball schlecht an, und er springt weg. Das ist der Moment: Rot zehn presst sofort und erobert den Ball.",
+      "say": "Spieler sechs nimmt den Ball schlecht an, und er springt weg. Das ist der Moment: Spieler zehn presst sofort und erobert den Ball.",
       "moves": [
        {
         "who": "b2",
@@ -438,7 +438,7 @@
      },
      {
       "label": "Zum Zielspieler: Punkt",
-      "say": "Rot zehn spielt sofort zu Rot fünf, und das gibt einen Punkt für Team Rot.",
+      "say": "Spieler zehn spielt sofort zu Spieler fünf, und das gibt einen Punkt für Team Rot.",
       "moves": [
        {
         "who": "b2",
@@ -563,7 +563,7 @@
     "steps": [
      {
       "label": "Durch die Mittelzone",
-      "say": "Neon elf spielt zu Neon drei, der weiter in die Mittelzone zu Neon acht. Rot neun schiebt mit und presst.",
+      "say": "Spieler elf spielt zu Spieler drei, der weiter in die Mittelzone zu Spieler acht. Spieler neun schiebt mit und presst.",
       "moves": [
        {
         "who": "b1",
@@ -595,7 +595,7 @@
      },
      {
       "label": "Läufer im Rücken",
-      "say": "Neon elf sprintet in die Endzone. Rot neun schaut über die Schulter, sieht den Läufer und verfolgt ihn.",
+      "say": "Spieler elf sprintet in die Endzone. Spieler neun schaut über die Schulter, sieht den Läufer und verfolgt ihn.",
       "moves": [
        {
         "who": "n11",
@@ -636,7 +636,7 @@
      },
      {
       "label": "Abgefangen: Punkt",
-      "say": "Neon acht spielt in die Tiefe, aber Rot neun fängt den Ball ab und spielt sofort zu Rot vier. Das gibt einen Punkt für Team Rot.",
+      "say": "Spieler acht spielt in die Tiefe, aber Spieler neun fängt den Ball ab und spielt sofort zu Spieler vier. Das gibt einen Punkt für Team Rot.",
       "moves": [
        {
         "who": "b1",

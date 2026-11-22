@@ -189,7 +189,7 @@
   "steps": [
    {
     "label": "Erste Zone",
-    "say": "Neon neun startet in die erste Zone, und Neon zehn spielt ihn an. Rot vier wird aktiv und greift Neon neun an.",
+    "say": "Spieler neun startet in die erste Zone, und Spieler zehn spielt ihn an. Spieler vier wird aktiv und greift Spieler neun an.",
     "moves": [
      {
       "who": "n9",
@@ -221,7 +221,7 @@
    },
    {
     "label": "Zweite Zone",
-    "say": "Neon neun dribbelt in die zweite Zone, Rot vier darf nicht folgen. Gleichzeitig läuft Neon zehn oben mit. Rot sechs greift Neon neun an, der zu Neon zehn spielt.",
+    "say": "Spieler neun dribbelt in die zweite Zone, Spieler vier darf nicht folgen. Gleichzeitig läuft Spieler zehn oben mit. Spieler sechs greift Spieler neun an, der zu Spieler zehn spielt.",
     "moves": [
      {
       "who": "n9",
@@ -262,7 +262,7 @@
    },
    {
     "label": "Letzte Zone und Abschluss",
-    "say": "Neon zehn dribbelt in die letzte Zone, Rot fünf kommt heraus. Neon zehn spielt quer zu Neon neun, der ins Tor schießt. Das gibt einen Punkt für Team Neon.",
+    "say": "Spieler zehn dribbelt in die letzte Zone, Spieler fünf kommt heraus. Spieler zehn spielt quer zu Spieler neun, der ins Tor schießt. Das gibt einen Punkt für Team Neon.",
     "moves": [
      {
       "who": "n10",
@@ -427,7 +427,7 @@
     "steps": [
      {
       "label": "Pass angetäuscht",
-      "say": "Neon zehn täuscht den Pass zu Neon neun an. Rot vier läuft sofort in den Passweg.",
+      "say": "Spieler zehn täuscht den Pass zu Spieler neun an. Spieler vier läuft sofort in den Passweg.",
       "moves": [
        {
         "who": "r4",
@@ -451,7 +451,7 @@
      },
      {
       "label": "Rein in den Raum",
-      "say": "Jetzt ist vorn alles frei. Neon zehn dribbelt mit Tempo in die zweite Zone.",
+      "say": "Jetzt ist vorn alles frei. Spieler zehn dribbelt mit Tempo in die zweite Zone.",
       "moves": [
        {
         "who": "n10",
@@ -575,7 +575,7 @@
     "steps": [
      {
       "label": "Verteidiger läuft nach",
-      "say": "Gleichzeitig sprintet Rot vier in die zweite Zone zurück, und Neon zehn spielt schnell zu Neon neun.",
+      "say": "Gleichzeitig sprintet Spieler vier in die zweite Zone zurück, und Spieler zehn spielt schnell zu Spieler neun.",
       "moves": [
        {
         "who": "r4",
@@ -598,7 +598,7 @@
      },
      {
       "label": "Schnell durchbrechen",
-      "say": "Neon neun dribbelt sofort an Rot sechs vorbei in die letzte Zone, bevor die beiden Verteidiger zusammenstehen.",
+      "say": "Spieler neun dribbelt sofort an Spieler sechs vorbei in die letzte Zone, bevor die beiden Verteidiger zusammenstehen.",
       "moves": [
        {
         "who": "n9",

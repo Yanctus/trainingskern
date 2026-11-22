@@ -22,8 +22,8 @@
  "description": "Drei Spieler stehen an drei Hütchen in einem kleinen Feld. Der Spieler in der Ecke bekommt jeden Ball, nimmt ihn mit dem hinteren Fuß an und spielt zum nächsten Spieler weiter. Danach läuft der Ball in die andere Richtung zurück. Vor jeder Annahme schaut er kurz, wohin der nächste Pass geht.",
  "organisation": [
   "Aufbauen: Ein Feld von 9 mal 9 Metern mit drei Hütchen: oben links, unten links in der Ecke und unten rechts.",
-  "Verteilen: Drei Spieler pro Feld. Neon vier steht oben mit Ball, Neon sechs in der Ecke, Neon acht rechts. Bei mehr Kindern mehrere Felder. Der Trainer steht an der Seite mit Bällen.",
-  "Ablauf: Neon vier passt zu Neon sechs, der mit dem hinteren Fuß annimmt und zu Neon acht spielt. Neon acht spielt zurück, und Neon sechs spielt wieder hoch zu Neon vier.",
+  "Verteilen: Drei Spieler pro Feld. Spieler vier steht oben mit Ball, Spieler sechs in der Ecke, Spieler acht rechts. Bei mehr Kindern mehrere Felder. Der Trainer steht an der Seite mit Bällen.",
+  "Ablauf: Spieler vier passt zu Spieler sechs, der mit dem hinteren Fuß annimmt und zu Spieler acht spielt. Spieler acht spielt zurück, und Spieler sechs spielt wieder hoch zu Spieler vier.",
   "Wechsel: Nach einer Minute geht ein anderer Spieler in die Ecke, bis jeder einmal dran war."
  ],
  "organisation_show": [
@@ -122,7 +122,7 @@
   "steps": [
    {
     "label": "Schauen, dann Pass",
-    "say": "Neon sechs schaut kurz nach rechts zu Neon acht. Dann passt Neon vier fest zu Neon sechs.",
+    "say": "Spieler sechs schaut kurz nach rechts zu Spieler acht. Dann passt Spieler vier fest zu Spieler sechs.",
     "moves": [
      {
       "who": "n6",
@@ -145,7 +145,7 @@
    },
    {
     "label": "Hinterer Fuß, weiter",
-    "say": "Neon sechs nimmt den Ball mit dem hinteren Fuß an, also mit dem Fuß, der weiter weg ist. So steht er offen und spielt gleich weiter zu Neon acht.",
+    "say": "Spieler sechs nimmt den Ball mit dem hinteren Fuß an, also mit dem Fuß, der weiter weg ist. So steht er offen und spielt gleich weiter zu Spieler acht.",
     "moves": [
      {
       "who": "b1",
@@ -159,7 +159,7 @@
    },
    {
     "label": "Zurück in die Ecke",
-    "say": "Jetzt läuft der Ball in die andere Richtung. Neon sechs schaut kurz nach oben zu Neon vier, und Neon acht spielt zurück.",
+    "say": "Jetzt läuft der Ball in die andere Richtung. Spieler sechs schaut kurz nach oben zu Spieler vier, und Spieler acht spielt zurück.",
     "moves": [
      {
       "who": "n6",
@@ -181,8 +181,8 @@
     ]
    },
    {
-    "label": "Hoch zu Neon vier",
-    "say": "Neon sechs nimmt wieder mit dem hinteren Fuß an und spielt hoch zu Neon vier. Dann geht alles von vorn los, und nach einer Minute ist ein anderer Spieler in der Ecke dran.",
+    "label": "Hoch zu Spieler vier",
+    "say": "Spieler sechs nimmt wieder mit dem hinteren Fuß an und spielt hoch zu Spieler vier. Dann geht alles von vorn los, und nach einer Minute ist ein anderer Spieler in der Ecke dran.",
     "moves": [
      {
       "who": "b1",
@@ -269,7 +269,7 @@
     "steps": [
      {
       "label": "Offen stehen",
-      "say": "Neon sechs steht offen und schaut zu Neon acht. Neon vier passt, und der Ball rollt vor dem Körper vorbei.",
+      "say": "Spieler sechs steht offen und schaut zu Spieler acht. Spieler vier passt, und der Ball rollt vor dem Körper vorbei.",
       "moves": [
        {
         "who": "n6",
@@ -292,7 +292,7 @@
      },
      {
       "label": "Annahme und Pass",
-      "say": "Neon sechs nimmt ihn mit dem hinteren Fuß nach vorn mit und spielt sofort zu Neon acht.",
+      "say": "Spieler sechs nimmt ihn mit dem hinteren Fuß nach vorn mit und spielt sofort zu Spieler acht.",
       "moves": [
        {
         "who": "n6",
@@ -373,7 +373,7 @@
     "steps": [
      {
       "label": "Doppelpass",
-      "say": "Neon vier passt zu Neon sechs, und Neon sechs spielt direkt zurück.",
+      "say": "Spieler vier passt zu Spieler sechs, und Spieler sechs spielt direkt zurück.",
       "moves": [
        {
         "who": "b1",
@@ -396,7 +396,7 @@
      },
      {
       "label": "Am Hütchen vorbei",
-      "say": "Neon vier passt noch einmal. Neon sechs nimmt den Ball mit dem ersten Kontakt am Hütchen vorbei mit und spielt ihn zurück zu Neon vier.",
+      "say": "Spieler vier passt noch einmal. Spieler sechs nimmt den Ball mit dem ersten Kontakt am Hütchen vorbei mit und spielt ihn zurück zu Spieler vier.",
       "moves": [
        {
         "who": "b1",
@@ -429,7 +429,7 @@
      },
      {
       "label": "Andere Seite",
-      "say": "Neon sechs geht zurück in die Ecke. Jetzt kommt der Ball zu Neon acht, und auf dieser Seite geht es genauso. Nach einer Minute ist ein anderer Spieler in der Ecke dran.",
+      "say": "Spieler sechs geht zurück in die Ecke. Jetzt kommt der Ball zu Spieler acht, und auf dieser Seite geht es genauso. Nach einer Minute ist ein anderer Spieler in der Ecke dran.",
       "moves": [
        {
         "who": "n6",

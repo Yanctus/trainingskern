@@ -1,7 +1,7 @@
 import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe import *
 # WU-24 (U12-U14, Woche 28 Phase 5): Defensive Reaction Speed Warm Up. 20 x 20 Yards = Feld x 25-75, y 5-55 (18 m).
 # Ausrichtung wie im PDF. Pink (unten) -> Team Neon (4, 5, 6, 8), dunkel (oben) -> Team Rot (11, 9, 7, 6). Die 6 gibt es in
-# beiden Teams: Rot 6 heißt hier Rot zehn. Unten eine Hürde und eine Leiter (als Reihe aus vier Minihürden), oben dasselbe.
+# beiden Teams: Rot 6 heißt hier Spieler zehn. Unten eine Hürde und eine Leiter (als Reihe aus vier Minihürden), oben dasselbe.
 # Wartende stehen neben dem Feld (3D-Abstand). Das rote Tor links -> orange Hütchen, das gelbe Tor rechts -> neon Hütchen;
 # der Trainer hat ein oranges und ein gelbes Leibchen. Die beiden treffen sich in der Mitte leicht versetzt (3D-Abstand), der
 # Trainer steht oben links statt in der Mitte. Wertung ergänzt: Wer zuerst durch das Tor ist, bekommt einen Punkt (im Original
@@ -38,26 +38,26 @@ u = {"title": "Hürde, Leiter, Farbsprint", "code": "UE-207", "kind": "Übungsfo
  "say_intro": "Hürde, Leiter, Farbsprint. Zwei Spieler laufen gleichzeitig los und müssen in der Mitte blitzschnell auf das Leibchen reagieren.",
  "board": {"lines": LINES, "cones": KEGEL, "players": sp(), "balls": ERSATZ,
   "steps": [
-   S("Hürde und Leiter", "Auf Pfiff starten Neon vier und Rot elf gleichzeitig. Beide machen schnelle Schritte über die Hürde und laufen dann mit kleinen, schnellen Schritten durch die Leiter.",
+   S("Hürde und Leiter", "Auf Pfiff starten Spieler vier und Spieler elf gleichzeitig. Beide machen schnelle Schritte über die Hürde und laufen dann mit kleinen, schnellen Schritten durch die Leiter.",
      *weg("n4", UNTEN), *weg("r11", OBEN, delay=0.1)),
    S("In der Mitte wippen", "In der Mitte stehen sich beide gegenüber. Sie wippen auf den Zehen und schauen auf den Trainer, bereit zum Sprint.",
      mv("n4", MITTE_N), mv("r11", MITTE_R)),
-   S("Orange: Punkt", "Der Trainer wirft das orange Leibchen. Beide sprinten nach links durch das orange Tor. Neon vier ist schneller und schiebt sich vor Rot elf, und das gibt einen Punkt für Team Neon. Dann stellen sich beide hinten an, und Neon fünf und Rot neun starten.",
+   S("Orange: Punkt", "Der Trainer wirft das orange Leibchen. Beide sprinten nach links durch das orange Tor. Spieler vier ist schneller und schiebt sich vor Spieler elf, und das gibt einen Punkt für Team Neon. Dann stellen sich beide hinten an, und Spieler fünf und Spieler neun starten.",
      mv("n4", [14, 29.5]), mv("r11", [22.5, 26.5], delay=0.15))],
   "dims": dims(25, 75, 5, 55, "18 m", "18 m", rx=84)},
  "versions": [
   V("Coaching-Punkt", "Jetzt zum Coaching-Punkt: Den Körper vor den Gegner schieben.", "Körper davor",
     "Beim Sprint zum Tor schiebt man sich früh mit dem Körper vor den Gegner. Dann kann er nicht mehr vorbei, auch wenn er genauso schnell ist. Wichtig: nicht schubsen, nur den Weg zumachen.",
     sp(n4=tuple(MITTE_N), r11=tuple(MITTE_R)), ERSATZ,
-    [S("Gelb: früh davor", "Der Trainer wirft das gelbe Leibchen. Rot elf steht näher am gelben Tor, sprintet los und schiebt sich sofort vor Neon vier.",
+    [S("Gelb: früh davor", "Der Trainer wirft das gelbe Leibchen. Spieler elf steht näher am gelben Tor, sprintet los und schiebt sich sofort vor Spieler vier.",
        mv("r11", [64, 27]), mv("n4", [60, 30.5], delay=0.15)),
-     S("Durch das Tor: Punkt", "Neon vier kommt nicht mehr vorbei. Rot elf ist zuerst durch das gelbe Tor, und das gibt einen Punkt für Team Rot.",
+     S("Durch das Tor: Punkt", "Spieler vier kommt nicht mehr vorbei. Spieler elf ist zuerst durch das gelbe Tor, und das gibt einen Punkt für Team Rot.",
        mv("r11", [86, 27]), mv("n4", [77.5, 30.5], delay=0.1))]),
   V("Steigerung", "Und jetzt die Steigerung: Durch das andere Tor sprinten.", "Das andere Tor",
     "Jetzt wird es schwerer für den Kopf: Man sprintet durch das Tor mit der anderen Farbe. Fällt das orange Leibchen, geht es durch das gelbe Tor, und umgekehrt. Wer falsch losläuft, verliert Zeit.",
     sp(n4=tuple(MITTE_N), r11=tuple(MITTE_R)), ERSATZ,
-    [S("Orange fällt", "Der Trainer wirft das orange Leibchen. Rot elf läuft zuerst nach links, falsch! Neon vier denkt mit und sprintet nach rechts.",
+    [S("Orange fällt", "Der Trainer wirft das orange Leibchen. Spieler elf läuft zuerst nach links, falsch! Spieler vier denkt mit und sprintet nach rechts.",
        mv("r11", [47, 22]), mv("n4", [60, 30.5])),
-     S("Gelbes Tor: Punkt", "Rot elf dreht um, ist aber zu spät. Neon vier ist zuerst durch das gelbe Tor, und das gibt einen Punkt für Team Neon.",
+     S("Gelbes Tor: Punkt", "Spieler elf dreht um, ist aber zu spät. Spieler vier ist zuerst durch das gelbe Tor, und das gibt einen Punkt für Team Neon.",
        mv("n4", [86, 30.5]), mv("r11", [57, 26]), mv("r11", [77.5, 27.5], after=True))])]}
 json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)

@@ -344,7 +344,7 @@
    },
    {
     "label": "Rüber ins Spielfeld",
-    "say": "Dann sprinten alle vier nach links ins Spielfeld. Team Neon ist zuerst mit beiden Spielern drin, darum spielt der Trainer Neon fünf den Ball.",
+    "say": "Dann sprinten alle vier nach links ins Spielfeld. Team Neon ist zuerst mit beiden Spielern drin, darum spielt der Trainer Spieler fünf den Ball.",
     "moves": [
      {
       "who": "n5",
@@ -394,7 +394,7 @@
    },
    {
     "label": "Zwei gegen zwei: Punkt",
-    "say": "Neon fünf spielt zu Neon sieben, der ins obere Minitor trifft, und das gibt einen Punkt für Team Neon. Dann starten die nächsten vier.",
+    "say": "Spieler fünf spielt zu Spieler sieben, der ins obere Minitor trifft, und das gibt einen Punkt für Team Neon. Dann starten die nächsten vier.",
     "moves": [
      {
       "who": "b1",
@@ -527,7 +527,7 @@
     "steps": [
      {
       "label": "Abbremsen am Dummy",
-      "say": "Neon fünf sprintet zum Dummy, bremst mit kleinen Schritten ab und wendet scharf.",
+      "say": "Spieler fünf sprintet zum Dummy, bremst mit kleinen Schritten ab und wendet scharf.",
       "moves": [
        {
         "who": "n5",
@@ -647,7 +647,7 @@
     "steps": [
      {
       "label": "Rot ist schneller drin",
-      "say": "Diesmal sind Rot zehn und Rot elf zuerst im Spielfeld, Team Neon kommt zu spät.",
+      "say": "Diesmal sind Spieler zehn und Spieler elf zuerst im Spielfeld, Team Neon kommt zu spät.",
       "moves": [
        {
         "who": "r10",
@@ -687,7 +687,7 @@
      },
      {
       "label": "Rot hat den Ball: Punkt",
-      "say": "Darum spielt der Trainer Team Rot den Ball. Rot zehn legt zu Rot elf, der ins untere Minitor trifft, und das gibt einen Punkt für Team Rot. Dann starten die nächsten vier.",
+      "say": "Darum spielt der Trainer Team Rot den Ball. Spieler zehn legt zu Spieler elf, der ins untere Minitor trifft, und das gibt einen Punkt für Team Rot. Dann starten die nächsten vier.",
       "moves": [
        {
         "who": "b1",

@@ -30,11 +30,11 @@ u = {"title": "Torwart-Rondo gegen Pressing", "code": "UE-145", "kind": "Übungs
   "steps": [
    S("Kopf hoch", "Der Torwart hat den Ball. Er hebt den Kopf und schaut, wie die beiden Verteidiger stehen. Die Lücke zwischen ihnen ist zu.",
      bl("n1", [50, 27])),
-   S("Zur Seite", "Also spielt er nicht durch die Mitte, sondern zur Seite zu Neon fünf. Rot acht läuft sofort auf ihn zu.",
+   S("Zur Seite", "Also spielt er nicht durch die Mitte, sondern zur Seite zu Spieler fünf. Spieler acht läuft sofort auf ihn zu.",
      ps("b1", [36.6, 44.6]), mv("r8", [43, 39], delay=0.3)),
-   S("Hoch zu Neon sechs: Punkt", "Neon fünf spielt direkt hoch zu Neon sechs. Der Ball ist auf der anderen Seite, und das gibt einen Punkt für Team Neon.",
+   S("Hoch zu Spieler sechs: Punkt", "Spieler fünf spielt direkt hoch zu Spieler sechs. Der Ball ist auf der anderen Seite, und das gibt einen Punkt für Team Neon.",
      ps("b1", [50.6, 6.6]), mv("r8", [45.5, 27], delay=0.3)),
-   S("Ballgewinn: Tausch", "Jetzt geht es zurück nach unten. Neon sechs spielt zu Neon vier, aber Rot neun fängt den Ball ab. Dann tauschen die Verteidiger mit Neon vier und Neon fünf, und es geht von vorn los.",
+   S("Ballgewinn: Tausch", "Jetzt geht es zurück nach unten. Spieler sechs spielt zu Spieler vier, aber Spieler neun fängt den Ball ab. Dann tauschen die Verteidiger mit Spieler vier und Spieler fünf, und es geht von vorn los.",
      mv("r9", [56, 21]), ps("b1", [56.6, 21.6], delay=0.2))],
   "dims": dims(36, 64, 6, 48, "9 m", "14 m", rx=72)},
  "versions": [
@@ -43,14 +43,14 @@ u = {"title": "Torwart-Rondo gegen Pressing", "code": "UE-145", "kind": "Übungs
     sp(r8=(42, 27), r9=(58, 27)), [B("b1", 50.6, 48.6)] + ERSATZ,
     [S("Lücke offen", "Die Verteidiger stehen weit auseinander. Der Torwart hebt den Kopf und sieht: Die Lücke in der Mitte ist offen.",
        bl("n1", [50, 27])),
-     S("Durch die Mitte: Punkte", "Er spielt den Ball flach durch die Lücke zu Neon sechs, und das gibt zwei Punkte für Team Neon. Dann geht es zurück nach unten.",
+     S("Durch die Mitte: Punkte", "Er spielt den Ball flach durch die Lücke zu Spieler sechs, und das gibt zwei Punkte für Team Neon. Dann geht es zurück nach unten.",
        ps("b1", [50.6, 6.6]), mv("r8", [46, 24], delay=0.2), mv("r9", [54, 24], delay=0.2))]),
   V("Steigerung", "Und jetzt die zweite Steigerung: Hinter dem Dummy annehmen.", "Am Dummy vorbei",
-    "Vor dem Torwart und vor Neon sechs steht ein Dummy. Wer den Ball gerade vor sich annimmt, spielt in den Dummy. Also mit dem hinteren Fuß annehmen und den Ball seitlich am Dummy vorbei mitnehmen. Dann ist der Passweg frei.",
+    "Vor dem Torwart und vor Spieler sechs steht ein Dummy. Wer den Ball gerade vor sich annimmt, spielt in den Dummy. Also mit dem hinteren Fuß annehmen und den Ball seitlich am Dummy vorbei mitnehmen. Dann ist der Passweg frei.",
     sp(r8=(41, 27), r9=(59, 27)), [B("b1", 64.6, 44.6)] + ERSATZ,
-    [S("Annehmen, mitnehmen", "Neon vier spielt zum Torwart. Der nimmt den Ball mit dem hinteren Fuß an und nimmt ihn seitlich am Dummy vorbei mit.",
+    [S("Annehmen, mitnehmen", "Spieler vier spielt zum Torwart. Der nimmt den Ball mit dem hinteren Fuß an und nimmt ihn seitlich am Dummy vorbei mit.",
        ps("b1", [50.6, 48.6]), dr("n1", "b1", [45, 48], after=True)),
-     S("Passweg frei: Punkt", "Jetzt hebt er den Kopf, der Weg nach oben ist frei, und er spielt zu Neon sechs. Das gibt einen Punkt für Team Neon.",
+     S("Passweg frei: Punkt", "Jetzt hebt er den Kopf, der Weg nach oben ist frei, und er spielt zu Spieler sechs. Das gibt einen Punkt für Team Neon.",
        bl("n1", [49, 20]), ps("b1", [50.6, 6.6], after=True))],
     cones=DUMMYS)]}
 json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)

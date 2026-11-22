@@ -2,7 +2,7 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # WU-40 (U12-U14, Woche 22 Phase 5): Protect Your Bib Warm Up. 25 x 20 Yards = Feld x 25-75, y 6-45 (23 x 18 m).
 # Im PDF drei Vierergruppen (dunkel) mit je einem Fänger (pink): hier zwei Gruppen auf der Tafel (Neon 2-5 und 6-9), die
 # Fänger sind Team Rot (10, 11); die dritte Gruppe nur im Text. Die Vierer stehen als enges Rechteck statt im Kreis
-# (3D-Abstand), sie halten sich an den Händen und drehen sich gemeinsam. Leibchen: Neon zwei und Neon sieben (nur im Text).
+# (3D-Abstand), sie halten sich an den Händen und drehen sich gemeinsam. Leibchen: Spieler zwei und Spieler sieben (nur im Text).
 # Fangen statt "grab": Wer das Leibchen aus der Hose zieht, hat gefangen. Ein Trainer an der Seite.
 # Sichtkegel: Ton/Text "constant scanning", "players facing forward should take the lead" und im Video der Ruf "LEFT!" -> der
 # Spieler, der dem Fänger gegenüber steht, schaut zu ihm und sagt die Richtung an (im Video kein Kegel eingezeichnet, die
@@ -38,29 +38,29 @@ u = {"title": "Schütze das Leibchen", "code": "UE-192", "kind": "Übungsform",
  "say_intro": "Schütze das Leibchen. Ein Fangspiel zum Aufwärmen, bei dem die ganze Gruppe zusammen das Leibchen schützt.",
  "board": {"lines": LINES, "goals": [], "cones": ecken(25, 6, 50, 39), "players": sp(), "balls": ERSATZ,
   "steps": [
-   S("Auf das Zeichen", "Auf das Zeichen des Trainers geht es los, und alle Gruppen spielen gleichzeitig. Rot zehn will das Leibchen von Neon zwei und läuft oben herum. Die Gruppe hält sich an den Händen und dreht sich, damit Neon zwei weit weg bleibt. Rot elf jagt das Leibchen von Neon sieben.",
+   S("Auf das Zeichen", "Auf das Zeichen des Trainers geht es los, und alle Gruppen spielen gleichzeitig. Spieler zehn will das Leibchen von Spieler zwei und läuft oben herum. Die Gruppe hält sich an den Händen und dreht sich, damit Spieler zwei weit weg bleibt. Spieler elf jagt das Leibchen von Spieler sieben.",
      mv("r10", [48, 8]), mv("r10", [37, 8], after=True), *dreh(EA, ["n2", "n3", "n5", "n4"], -1, delay=0.4),
      mv("r11", [50.5, 33]), mv("r11", [56, 19], after=True), mv("r11", [64, 18.5], after=True), *dreh(EB, ["n6", "n7", "n9", "n8"], 1, delay=0.6)),
-   S("Ansagen und drehen", "Rot zehn dreht um und läuft links herunter. Neon vier steht ihm gegenüber, schaut genau hin und ruft: Rechts herum! Die Gruppe dreht sich, und Neon zwei ist wieder weit weg.",
+   S("Ansagen und drehen", "Spieler zehn dreht um und läuft links herunter. Spieler vier steht ihm gegenüber, schaut genau hin und ruft: Rechts herum! Die Gruppe dreht sich, und Spieler zwei ist wieder weit weg.",
      mv("r10", [27.5, 12]), bl("n4", [28, 16], after=True), mv("r10", [27, 24], after=True), *dreh(EA, ["n3", "n5", "n4", "n2"], -1, delay=1.2),
      mv("r11", [73, 26]), mv("r11", [72.5, 34], after=True), *dreh(EB, ["n8", "n6", "n7", "n9"], 1, delay=0.6)),
-   S("Gefangen", "Bei der anderen Gruppe ist Rot elf schneller. Er läuft unten herum und zieht Neon sieben das Leibchen aus der Hose. Gefangen! Jetzt ist Neon sieben der neue Fänger, und Rot elf geht mit in die Gruppe.",
+   S("Gefangen", "Bei der anderen Gruppe ist Spieler elf schneller. Er läuft unten herum und zieht Spieler sieben das Leibchen aus der Hose. Gefangen! Jetzt ist Spieler sieben der neue Fänger, und Spieler elf geht mit in die Gruppe.",
      mv("r11", [70.5, 44]), mv("r11", [61.5, 44.5], after=True))]},
  "versions": [
   V("Coaching-Punkt", "Jetzt zum Coaching-Punkt: Schauen und ansagen.", "Schauen und ansagen",
     "Wer dem Fänger gegenübersteht, sieht ihn am besten. Dieser Spieler schaut immer auf den Fänger und sagt laut an, wohin sich die Gruppe drehen muss. Alle drehen sofort zusammen, und der Fänger bleibt auf der anderen Seite.",
     sp(dict(A, r10=(50.6, 24))), ERSATZ,
-    [S("Schauen", "Rot zehn läuft unten herum zum Leibchen von Neon zwei. Neon drei schaut genau auf ihn.",
+    [S("Schauen", "Spieler zehn läuft unten herum zum Leibchen von Spieler zwei. Spieler drei schaut genau auf ihn.",
        mv("r10", [51, 33]), mv("r10", [47.5, 37], after=True), bl("n3", [46, 32], after=True)),
-     S("Ansagen und drehen", "Neon drei ruft: Links herum! Alle drehen sich sofort zusammen, und Neon zwei bleibt auf der anderen Seite.",
+     S("Ansagen und drehen", "Spieler drei ruft: Links herum! Alle drehen sich sofort zusammen, und Spieler zwei bleibt auf der anderen Seite.",
        mv("r10", [42, 38.5]), mv("r10", [36, 37], after=True), *dreh(EA, ["n2", "n3", "n5", "n4"], 1, delay=0.3))]),
   V("Steigerung", "Und jetzt die Steigerung: Spielen zu zweit.", "Blocker zu zweit",
     "Jetzt gibt es Paare. Ein Paar hält sich an den Händen und hat das Leibchen, das andere Paar steht davor und blockt. Die Blocker bleiben immer zwischen Fänger und Leibchen, wie Verteidiger im Spiel. Alle Gruppen spielen gleichzeitig.",
     sp({"r10": (45.9, 8), "n4": (41.6, 24), "n5": (50, 24), "n3": (41.6, 40), "n2": (50, 40),
         "r11": (64.1, 8), "n6": (60, 24), "n7": (68.4, 24), "n8": (60, 40), "n9": (68.4, 40)}), ERSATZ,
-    [S("Blocken", "Rot zehn will links vorbei zum Leibchen von Neon zwei. Neon vier und Neon fünf schieben gemeinsam mit und stehen im Weg. Das Paar mit dem Leibchen weicht nach rechts aus. Bei der anderen Gruppe passiert gleichzeitig das Gleiche.",
+    [S("Blocken", "Spieler zehn will links vorbei zum Leibchen von Spieler zwei. Spieler vier und Spieler fünf schieben gemeinsam mit und stehen im Weg. Das Paar mit dem Leibchen weicht nach rechts aus. Bei der anderen Gruppe passiert gleichzeitig das Gleiche.",
        mv("r10", [36.5, 17]), mv("n4", [37, 23], delay=0.2), mv("n5", [45.2, 23], delay=0.2), mv("n3", [46.5, 41], delay=0.3), mv("n2", [54.7, 41], delay=0.3),
        mv("r11", [55, 17]), mv("n6", [55.5, 23], delay=0.2), mv("n7", [63.7, 23], delay=0.2), mv("n8", [64.5, 41], delay=0.3), mv("n9", [72.7, 41], delay=0.3)),
-     S("Kein Durchkommen", "Rot zehn macht einen Haken nach rechts, aber die Blocker schieben sofort mit, und das Paar mit dem Leibchen weicht nach links aus. Nach einer Minute wechseln Blocker und Leibchen-Paar die Rollen.",
+     S("Kein Durchkommen", "Spieler zehn macht einen Haken nach rechts, aber die Blocker schieben sofort mit, und das Paar mit dem Leibchen weicht nach links aus. Nach einer Minute wechseln Blocker und Leibchen-Paar die Rollen.",
        mv("r10", [50, 15]), mv("n4", [45, 23], delay=0.2), mv("n5", [53.2, 23], delay=0.2), mv("n3", [38, 41], delay=0.3), mv("n2", [46.2, 41], delay=0.3))])]}
 json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)

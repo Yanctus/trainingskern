@@ -180,7 +180,7 @@
   "steps": [
    {
     "label": "Doppelpass",
-    "say": "Neon zehn passt zu Neon acht, der dem Ball entgegenkommt. Neon acht legt direkt ab, und Neon zehn ist schon nach rechts gelaufen.",
+    "say": "Spieler zehn passt zu Spieler acht, der dem Ball entgegenkommt. Spieler acht legt direkt ab, und Spieler zehn ist schon nach rechts gelaufen.",
     "moves": [
      {
       "who": "n8",
@@ -221,7 +221,7 @@
    },
    {
     "label": "Nach außen",
-    "say": "Neon zehn spielt weit nach rechts zu Neon zwei. Gleichzeitig läuft Neon acht nach rechts in die Mitte.",
+    "say": "Spieler zehn spielt weit nach rechts zu Spieler zwei. Gleichzeitig läuft Spieler acht nach rechts in die Mitte.",
     "moves": [
      {
       "who": "b1",
@@ -252,7 +252,7 @@
    },
    {
     "label": "Nach innen und durch",
-    "say": "Neon zwei passt nach innen zu Neon acht. Neon sieben startet, und Neon acht spielt ihm den Ball durch die Stangen.",
+    "say": "Spieler zwei passt nach innen zu Spieler acht. Spieler sieben startet, und Spieler acht spielt ihm den Ball durch die Stangen.",
     "moves": [
      {
       "who": "b1",
@@ -284,7 +284,7 @@
    },
    {
     "label": "Ablegen und quer",
-    "say": "Neon sieben legt ab für Neon zwei, der ein Stück hoch kommt. Neon zwei spielt weit quer zu Neon neun.",
+    "say": "Spieler sieben legt ab für Spieler zwei, der ein Stück hoch kommt. Spieler zwei spielt weit quer zu Spieler neun.",
     "moves": [
      {
       "who": "n2",
@@ -325,7 +325,7 @@
    },
    {
     "label": "Ablegen und steil",
-    "say": "Neon neun legt für Neon sieben ab. Der spielt sofort steil, und Neon neun nimmt den Ball im Lauf mit.",
+    "say": "Spieler neun legt für Spieler sieben ab. Der spielt sofort steil, und Spieler neun nimmt den Ball im Lauf mit.",
     "moves": [
      {
       "who": "b1",
@@ -357,7 +357,7 @@
    },
    {
     "label": "Slalom zum Start",
-    "say": "Neon neun dribbelt im Slalom durch die Stangen zurück zum Start. Ist er an der ersten Stange vorbei, startet der nächste Durchgang. Jeder läuft zur Station, zu der er gepasst hat.",
+    "say": "Spieler neun dribbelt im Slalom durch die Stangen zurück zum Start. Ist er an der ersten Stange vorbei, startet der nächste Durchgang. Jeder läuft zur Station, zu der er gepasst hat.",
     "moves": [
      {
       "who": "n9",
@@ -509,7 +509,7 @@
     "steps": [
      {
       "label": "Erst weg",
-      "say": "Neon acht geht erst einen Schritt weg vom Ball und ruft.",
+      "say": "Spieler acht geht erst einen Schritt weg vom Ball und ruft.",
       "moves": [
        {
         "who": "n8",
@@ -523,7 +523,7 @@
      },
      {
       "label": "Dann entgegen",
-      "say": "Dann kommt er schnell entgegen. Neon zehn passt flach, und Neon acht legt mit einem Kontakt ab.",
+      "say": "Dann kommt er schnell entgegen. Spieler zehn passt flach, und Spieler acht legt mit einem Kontakt ab.",
       "moves": [
        {
         "who": "n8",
@@ -635,7 +635,7 @@
     "steps": [
      {
       "label": "Vorbei an der Stange",
-      "say": "Neon neun dribbelt links an der ersten Stange vorbei und passt zum Trainer.",
+      "say": "Spieler neun dribbelt links an der ersten Stange vorbei und passt zum Trainer.",
       "moves": [
        {
         "who": "n9",
@@ -669,7 +669,7 @@
      },
      {
       "label": "Doppelpass",
-      "say": "Neon neun läuft weiter nach unten, und der Trainer spielt ihm den Ball zurück in den Lauf.",
+      "say": "Spieler neun läuft weiter nach unten, und der Trainer spielt ihm den Ball zurück in den Lauf.",
       "moves": [
        {
         "who": "n9",
@@ -692,7 +692,7 @@
      },
      {
       "label": "Minitor: Punkt",
-      "say": "Neon neun schießt ins Minitor, und das gibt einen Punkt für Neon neun. Dann startet der Nächste.",
+      "say": "Spieler neun schießt ins Minitor, und das gibt einen Punkt für Spieler neun. Dann startet der Nächste.",
       "moves": [
        {
         "who": "b1",

@@ -42,7 +42,7 @@ u = {"title": "Knack den Code", "code": "UE-111", "kind": "Übungsform",
     sp([P("r6", "b", 72, 42, "6")]), [B("b1", 25.6, 30.6), B("b2", 16.6, 30.6)] + CB,
     [S("Code unter Druck", "Spieler elf spielt zu Spieler neun, und Spieler neun legt zu Spieler acht ab.",
        ps("b1", [58.4, 30.6]), ps("b1", [43.6, 15.6], after=True)),
-     S("In die Zone und Abschluss", "Spieler acht dribbelt in die Zone vor dem Tor. Gleichzeitig greift Rot sechs an, doch Spieler acht schießt vorher ins Minitor. Das gibt einen Punkt für die Gruppe.",
+     S("In die Zone und Abschluss", "Spieler acht dribbelt in die Zone vor dem Tor. Gleichzeitig greift Spieler sechs an, doch Spieler acht schießt vorher ins Minitor. Das gibt einen Punkt für die Gruppe.",
        dr("n8", "b1", [62, 15]), mv("r6", [70, 30], delay=0.2), ps("b1", [77.5, 28], after=True))],
     lines=[rect(14, 8, 64, 44), line(66, 8, 66, 52)])]}
 json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)

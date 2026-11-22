@@ -5,7 +5,7 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # Regeln aus dem Video: 10 Pässe = Punkt, Springer mit ein oder zwei Kontakten, kein direkter Pass von Ecke zu Ecke,
 # nach 10 Pässen tauscht das andere Team mit den Springern. Positionen auf ein Spaltenraster gesetzt (3D-Abstand).
 # Sichtkegel: Im Video kein Kegel eingezeichnet, aber Schlussfolie "Quick scan to see defender and space to play into":
-# im Coaching-Punkt bl() von Neon elf zu Rot zwei vor der Annahme (Richtung aus dem Sinn).
+# im Coaching-Punkt bl() von Spieler elf zu Spieler zwei vor der Annahme (Richtung aus dem Sinn).
 T = P("T", "c", 81, 30, "T")
 POS = {"n4": (50, 12), "n11": (33.4, 30), "n9": (66.6, 30), "n8": (50, 48),
        "r2": (41.7, 28), "r5": (58.3, 28), "r7": (41.7, 44), "r10": (58.3, 44),
@@ -32,13 +32,13 @@ u = {"title": "Vier Ecken, zehn Pässe", "code": "UE-160", "kind": "Spielform",
  "say_intro": "Vier Ecken, zehn Pässe. Vier gegen vier in der Mitte, und in jeder Ecke hilft ein Springer dem Team am Ball.",
  "board": {"lines": LINES, "cones": [], "players": sp(), "balls": [B("b1", 50.6, 48.6)] + ERSATZ,
   "steps": [
-   S("Pässe sammeln", "Team Neon hat den Ball und will zehn Pässe in Folge schaffen. Neon acht spielt zum Springer unten links. Gleichzeitig rücken Rot sieben und Rot zwei gemeinsam heraus.",
+   S("Pässe sammeln", "Team Neon hat den Ball und will zehn Pässe in Folge schaffen. Spieler acht spielt zum Springer unten links. Gleichzeitig rücken Spieler sieben und Spieler zwei gemeinsam heraus.",
      ps("b1", [30.6, 50.6]), mv("r7", [38, 45.5], delay=0.2), mv("r2", [39, 35], delay=0.2)),
-   S("Zurück in die Mitte", "Der Springer spielt mit einem Kontakt zu Neon elf. Neon elf spielt gleich weiter zum Springer oben links.",
+   S("Zurück in die Mitte", "Der Springer spielt mit einem Kontakt zu Spieler elf. Spieler elf spielt gleich weiter zum Springer oben links.",
      ps("b1", [34.0, 30.6]), ps("b1", [30.6, 10.6], after=True)),
-   S("Nicht von Ecke zu Ecke", "Der Springer darf nicht direkt in eine andere Ecke spielen. Er spielt zu Neon vier, und Neon vier passt weiter zum Springer oben rechts. Rot fünf läuft an.",
+   S("Nicht von Ecke zu Ecke", "Der Springer darf nicht direkt in eine andere Ecke spielen. Er spielt zu Spieler vier, und Spieler vier passt weiter zum Springer oben rechts. Spieler fünf läuft an.",
      ps("b1", [50.6, 12.6]), ps("b1", [70.6, 10.6], after=True), mv("r5", [62, 18], after=True)),
-   S("Zehn Pässe: Punkt", "Der Springer spielt zurück zu Neon neun, und so geht es weiter bis zum zehnten Pass. Das gibt einen Punkt für Team Neon. Dann tauscht Team Rot mit den Springern, alle laufen gleichzeitig, und das Spiel geht sofort weiter.",
+   S("Zehn Pässe: Punkt", "Der Springer spielt zurück zu Spieler neun, und so geht es weiter bis zum zehnten Pass. Das gibt einen Punkt für Team Neon. Dann tauscht Team Rot mit den Springern, alle laufen gleichzeitig, und das Spiel geht sofort weiter.",
      ps("b1", [67.2, 30.6]),
      mv("r2", [30, 10], after=True, bend=5), mv("f1", [41.7, 28]), mv("r7", [30, 50], bend=4), mv("f3", [41.7, 44]),
      mv("r5", [70, 10], bend=-4), mv("f2", [58.3, 28]), mv("r10", [70, 50], bend=-4), mv("f4", [58.3, 44]))],
@@ -47,15 +47,15 @@ u = {"title": "Vier Ecken, zehn Pässe", "code": "UE-160", "kind": "Spielform",
   V("Coaching-Punkt", "Jetzt zum Coaching-Punkt: Vor der Annahme kurz umschauen.", "Erst umschauen",
     "Bevor der Ball kommt, schaut der Spieler kurz über die Schulter. So sieht er, wo der Gegner steht und wo Platz ist. Dann nimmt er den Ball gleich in den freien Raum mit und hat Zeit für den nächsten Pass.",
     sp(), [B("b1", 30.6, 50.6)] + ERSATZ,
-    [S("Umschauen", "Der Springer unten links hat den Ball. Bevor der Pass kommt, schaut Neon elf kurz über die Schulter und sieht Rot zwei, der anläuft.",
+    [S("Umschauen", "Der Springer unten links hat den Ball. Bevor der Pass kommt, schaut Spieler elf kurz über die Schulter und sieht Spieler zwei, der anläuft.",
        bl("n11", [50, 26]), mv("r2", [38, 24], delay=0.4)),
-     S("Offen mitnehmen", "Der Springer spielt zu Neon elf. Neon elf nimmt den Ball weg von Rot zwei in den freien Raum mit und spielt quer zu Neon neun.",
+     S("Offen mitnehmen", "Der Springer spielt zu Spieler elf. Spieler elf nimmt den Ball weg von Spieler zwei in den freien Raum mit und spielt quer zu Spieler neun.",
        ps("b1", [34.0, 30.6]), dr("n11", "b1", [38, 37], after=True), ps("b1", [67.2, 30.6], after=True))]),
   V("Steigerung", "Und jetzt die Steigerung: Erst drei Pässe in der Mitte, dann zu den Springern.", "Erst drei Pässe",
     "Das Team am Ball muss jetzt erst drei Pässe in der Mitte spielen, bevor es einen Springer anspielen darf. Der einfache Pass in die Ecke fällt weg. Darum müssen sich alle schneller anbieten und gute Winkel schaffen.",
     sp(r10=(58.3, 46)), [B("b1", 34.0, 30.6)] + ERSATZ,
-    [S("Drei Pässe in der Mitte", "Neon elf spielt zu Neon vier, der weiter zu Neon neun und der zu Neon acht. Das sind drei Pässe in der Mitte.",
+    [S("Drei Pässe in der Mitte", "Spieler elf spielt zu Spieler vier, der weiter zu Spieler neun und der zu Spieler acht. Das sind drei Pässe in der Mitte.",
        ps("b1", [50.6, 12.6]), ps("b1", [67.2, 30.6], after=True), ps("b1", [50.6, 48.6], after=True)),
-     S("Jetzt zum Springer", "Erst jetzt darf Neon acht einen Springer anspielen. Er passt zum Springer unten rechts, und der spielt zurück zu Neon neun.",
+     S("Jetzt zum Springer", "Erst jetzt darf Spieler acht einen Springer anspielen. Er passt zum Springer unten rechts, und der spielt zurück zu Spieler neun.",
        ps("b1", [70.6, 50.6]), ps("b1", [67.2, 30.6], after=True))])]}
 json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)

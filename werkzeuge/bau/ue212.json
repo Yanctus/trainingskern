@@ -195,7 +195,7 @@
   "steps": [
    {
     "label": "Ball zu Team Rot",
-    "say": "Der Trainer spielt den Ball zu Rot neun. Rot neun passt weiter nach links zu Rot sieben.",
+    "say": "Der Trainer spielt den Ball zu Spieler neun. Spieler neun passt weiter nach links zu Spieler sieben.",
     "moves": [
      {
       "who": "b1",
@@ -218,7 +218,7 @@
    },
    {
     "label": "Einer presst",
-    "say": "Rot sieben dribbelt an. Neon drei läuft raus und presst. Neon fünf schaut zu ihm und sichert hinter ihm ab. Gleichzeitig schieben Neon vier und Neon zwei mit nach links.",
+    "say": "Spieler sieben dribbelt an. Spieler drei läuft raus und presst. Spieler fünf schaut zu ihm und sichert hinter ihm ab. Gleichzeitig schieben Spieler vier und Spieler zwei mit nach links.",
     "moves": [
      {
       "who": "r7",
@@ -287,7 +287,7 @@
    },
    {
     "label": "Abgefangen",
-    "say": "Rot sieben will zu Rot neun passen. Neon fünf hat gut abgesichert, geht dazwischen und fängt den Ball ab.",
+    "say": "Spieler sieben will zu Spieler neun passen. Spieler fünf hat gut abgesichert, geht dazwischen und fängt den Ball ab.",
     "moves": [
      {
       "who": "b1",
@@ -310,7 +310,7 @@
    },
    {
     "label": "Konter: Punkt",
-    "say": "Neon fünf dribbelt schnell nach unten und schießt ins linke Minitor in der Ecke. Der Treffer zählt doppelt, und das gibt zwei Punkte für Team Neon. Dann spielt der Trainer den nächsten Ball zu Team Rot.",
+    "say": "Spieler fünf dribbelt schnell nach unten und schießt ins linke Minitor in der Ecke. Der Treffer zählt doppelt, und das gibt zwei Punkte für Team Neon. Dann spielt der Trainer den nächsten Ball zu Team Rot.",
     "moves": [
      {
       "who": "n5",
@@ -441,8 +441,8 @@
     ],
     "steps": [
      {
-      "label": "Neon vier presst",
-      "say": "Rot zehn dribbelt in die Mitte. Neon vier rückt raus und presst. Gleichzeitig schieben Neon fünf, Neon drei und Neon zwei zusammen und sichern ab.",
+      "label": "Spieler vier presst",
+      "say": "Spieler zehn dribbelt in die Mitte. Spieler vier rückt raus und presst. Gleichzeitig schieben Spieler fünf, Spieler drei und Spieler zwei zusammen und sichern ab.",
       "moves": [
        {
         "who": "r10",
@@ -493,7 +493,7 @@
      },
      {
       "label": "Außen abgefangen",
-      "say": "Rot zehn findet keine Lücke und passt nach außen zu Rot elf. Neon zwei hat mitgeschoben und fängt den Ball ab.",
+      "say": "Spieler zehn findet keine Lücke und passt nach außen zu Spieler elf. Spieler zwei hat mitgeschoben und fängt den Ball ab.",
       "moves": [
        {
         "who": "b1",
@@ -608,7 +608,7 @@
     "steps": [
      {
       "label": "Durch die Lücke",
-      "say": "Rot neun spielt in die Lücke zwischen Neon drei und Neon fünf. Rot sieben läuft hinter die Kette und nimmt den Ball mit.",
+      "say": "Spieler neun spielt in die Lücke zwischen Spieler drei und Spieler fünf. Spieler sieben läuft hinter die Kette und nimmt den Ball mit.",
       "moves": [
        {
         "who": "b1",
@@ -639,7 +639,7 @@
      },
      {
       "label": "Zurück und blocken",
-      "say": "Neon drei dreht sofort um und sprintet zurück vor das linke Minitor. Rot sieben schießt, aber Neon drei blockt den Schuss. Team Rot bekommt keinen Punkt, und Team Neon hat den Ball.",
+      "say": "Spieler drei dreht sofort um und sprintet zurück vor das linke Minitor. Spieler sieben schießt, aber Spieler drei blockt den Schuss. Team Rot bekommt keinen Punkt, und Team Neon hat den Ball.",
       "moves": [
        {
         "who": "n3",

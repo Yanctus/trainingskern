@@ -157,7 +157,7 @@
   "steps": [
    {
     "label": "Prallpass",
-    "say": "Neon acht spielt zu Neon neun, und Neon neun lässt den Ball direkt zurückprallen.",
+    "say": "Spieler acht spielt zu Spieler neun, und Spieler neun lässt den Ball direkt zurückprallen.",
     "moves": [
      {
       "who": "b1",
@@ -180,7 +180,7 @@
    },
    {
     "label": "Absetzen und anspielen",
-    "say": "Neon neun setzt sich sofort nach unten ab. Gleichzeitig startet Rot elf von oben, und Neon acht spielt Neon neun in den Lauf.",
+    "say": "Spieler neun setzt sich sofort nach unten ab. Gleichzeitig startet Spieler elf von oben, und Spieler acht spielt Spieler neun in den Lauf.",
     "moves": [
      {
       "who": "n9",
@@ -212,7 +212,7 @@
    },
    {
     "label": "Eins gegen eins und Abschluss",
-    "say": "Neon neun nimmt den Ball auf dem hinteren Fuß an, zieht weg von Rot elf und schießt ins Minitor. Das gibt einen Punkt für Neon neun.",
+    "say": "Spieler neun nimmt den Ball auf dem hinteren Fuß an, zieht weg von Spieler elf und schießt ins Minitor. Das gibt einen Punkt für Spieler neun.",
     "moves": [
      {
       "who": "n9",
@@ -342,7 +342,7 @@
     "steps": [
      {
       "label": "Umschauen",
-      "say": "Neon acht spielt in den Lauf. Gleichzeitig schaut Neon neun über die Schulter und sieht, dass Rot elf innen anläuft.",
+      "say": "Spieler acht spielt in den Lauf. Gleichzeitig schaut Spieler neun über die Schulter und sieht, dass Spieler elf innen anläuft.",
       "moves": [
        {
         "who": "b1",
@@ -365,7 +365,7 @@
      },
      {
       "label": "Außen vorbei",
-      "say": "Neon neun nimmt den Ball auf dem hinteren Fuß außen mit, geht an Rot elf vorbei und schießt genau ins Minitor. Das gibt einen Punkt für Neon neun.",
+      "say": "Spieler neun nimmt den Ball auf dem hinteren Fuß außen mit, geht an Spieler elf vorbei und schießt genau ins Minitor. Das gibt einen Punkt für Spieler neun.",
       "moves": [
        {
         "who": "n9",
@@ -470,7 +470,7 @@
     "steps": [
      {
       "label": "Verteidiger steht eng",
-      "say": "Neon acht spielt zu Neon neun. Gleichzeitig läuft Rot elf ganz eng heran.",
+      "say": "Spieler acht spielt zu Spieler neun. Gleichzeitig läuft Spieler elf ganz eng heran.",
       "moves": [
        {
         "who": "b1",
@@ -493,7 +493,7 @@
      },
      {
       "label": "Doppelpass hinter den Verteidiger",
-      "say": "Neon acht kommt entgegen, Neon neun legt direkt ab und startet hinter Rot elf. Neon acht spielt ihm den Ball sofort zurück in den Lauf.",
+      "say": "Spieler acht kommt entgegen, Spieler neun legt direkt ab und startet hinter Spieler elf. Spieler acht spielt ihm den Ball sofort zurück in den Lauf.",
       "moves": [
        {
         "who": "n8",
@@ -534,7 +534,7 @@
      },
      {
       "label": "Abschluss",
-      "say": "Neon neun nimmt den Ball mit und schießt ins Minitor. Das gibt einen Punkt für Neon neun.",
+      "say": "Spieler neun nimmt den Ball mit und schießt ins Minitor. Das gibt einen Punkt für Spieler neun.",
       "moves": [
        {
         "who": "n9",

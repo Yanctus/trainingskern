@@ -201,7 +201,7 @@
   "steps": [
    {
     "label": "Schnelle Füße",
-    "say": "Gleichzeitig laufen Neon zwei und Rot sieben mit schnellen, kleinen Schritten durch die drei Ringe.",
+    "say": "Gleichzeitig laufen Spieler zwei und Spieler sieben mit schnellen, kleinen Schritten durch die drei Ringe.",
     "moves": [
      {
       "who": "n2",
@@ -639,7 +639,7 @@
     "steps": [
      {
       "label": "Diagonal sprinten",
-      "say": "Neon zwei sprintet diagonal zum Ende der oberen Bahn. Kurz danach sprintet Rot sieben diagonal zum Ende der unteren Bahn.",
+      "say": "Spieler zwei sprintet diagonal zum Ende der oberen Bahn. Kurz danach sprintet Spieler sieben diagonal zum Ende der unteren Bahn.",
       "moves": [
        {
         "who": "n2",

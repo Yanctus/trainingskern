@@ -298,7 +298,7 @@
   "steps": [
    {
     "label": "Pass zum Hütchen, ab in die Leiter",
-    "say": "Neon zwölf passt zum Hütchen an der Seite, und Neon vier kommt im selben Moment entgegen. Neon zwölf läuft durch die Leiter nach oben.",
+    "say": "Spieler zwölf passt zum Hütchen an der Seite, und Spieler vier kommt im selben Moment entgegen. Spieler zwölf läuft durch die Leiter nach oben.",
     "moves": [
      {
       "who": "b1",
@@ -347,7 +347,7 @@
    },
    {
     "label": "Aufdrehen, Pass nach vorn",
-    "say": "Neon vier dreht mit dem ersten Kontakt auf und spielt nach vorn. Neon sieben kommt zum Hütchen oben und nimmt an.",
+    "say": "Spieler vier dreht mit dem ersten Kontakt auf und spielt nach vorn. Spieler sieben kommt zum Hütchen oben und nimmt an.",
     "moves": [
      {
       "who": "n7",
@@ -370,7 +370,7 @@
    },
    {
     "label": "Quer und steil über die Hürden",
-    "say": "Neon sieben spielt quer zu Neon drei. Der spielt sofort steil, und Neon zwei springt über die Hürden und nimmt den Ball im Lauf an.",
+    "say": "Spieler sieben spielt quer zu Spieler drei. Der spielt sofort steil, und Spieler zwei springt über die Hürden und nimmt den Ball im Lauf an.",
     "moves": [
      {
       "who": "b1",
@@ -420,7 +420,7 @@
    },
    {
     "label": "Pass zur Leiter, andere Seite",
-    "say": "Neon zwei spielt den letzten Pass zu Neon neun an der Leiter links oben. Der beginnt den Ablauf sofort in die andere Richtung: Pass zum Hütchen, Neon acht kommt entgegen, und Neon neun läuft durch die Leiter.",
+    "say": "Spieler zwei spielt den letzten Pass zu Spieler neun an der Leiter links oben. Der beginnt den Ablauf sofort in die andere Richtung: Pass zum Hütchen, Spieler acht kommt entgegen, und Spieler neun läuft durch die Leiter.",
     "moves": [
      {
       "who": "b1",
@@ -608,7 +608,7 @@
     "steps": [
      {
       "label": "Pass und Start zugleich",
-      "say": "Neon zwölf spielt, und genau in diesem Moment startet Neon vier zum Hütchen. Beide kommen gleichzeitig dort an.",
+      "say": "Spieler zwölf spielt, und genau in diesem Moment startet Spieler vier zum Hütchen. Beide kommen gleichzeitig dort an.",
       "moves": [
        {
         "who": "b1",
@@ -630,7 +630,7 @@
      },
      {
       "label": "Mit Tempo weiter",
-      "say": "So kann Neon vier ohne Pause aufdrehen und weiterspielen, und Neon zwölf läuft schon durch die Leiter. Dann ist Neon sieben dran.",
+      "say": "So kann Spieler vier ohne Pause aufdrehen und weiterspielen, und Spieler zwölf läuft schon durch die Leiter. Dann ist Spieler sieben dran.",
       "moves": [
        {
         "who": "b1",
@@ -792,7 +792,7 @@
     "steps": [
      {
       "label": "Erster Kontakt nach vorn",
-      "say": "Neon vier nimmt den Ball mit dem hinteren Fuß an und dreht sich mit dem ersten Kontakt nach vorn.",
+      "say": "Spieler vier nimmt den Ball mit dem hinteren Fuß an und dreht sich mit dem ersten Kontakt nach vorn.",
       "moves": [
        {
         "who": "n4",
@@ -807,7 +807,7 @@
      },
      {
       "label": "Sofort weiter",
-      "say": "Mit dem zweiten Kontakt spielt er schon zu Neon sieben, der zum Hütchen oben kommt. Danach geht es quer zu Neon drei.",
+      "say": "Mit dem zweiten Kontakt spielt er schon zu Spieler sieben, der zum Hütchen oben kommt. Danach geht es quer zu Spieler drei.",
       "moves": [
        {
         "who": "n7",
@@ -957,7 +957,7 @@
     "steps": [
      {
       "label": "Beide Seiten zugleich",
-      "say": "Neon zwölf unten rechts und Neon neun oben links passen gleichzeitig zu ihren Hütchen. Neon vier und Neon acht kommen entgegen.",
+      "say": "Spieler zwölf unten rechts und Spieler neun oben links passen gleichzeitig zu ihren Hütchen. Spieler vier und Spieler acht kommen entgegen.",
       "moves": [
        {
         "who": "b1",
@@ -997,7 +997,7 @@
      },
      {
       "label": "Zwei Abläufe laufen",
-      "say": "Beide drehen auf und spielen nach vorn zu Neon sieben und Neon fünf, die Passgeber laufen durch ihre Leitern. Jetzt laufen zwei Bälle zugleich durch den Parcours, und es geht immer weiter.",
+      "say": "Beide drehen auf und spielen nach vorn zu Spieler sieben und Spieler fünf, die Passgeber laufen durch ihre Leitern. Jetzt laufen zwei Bälle zugleich durch den Parcours, und es geht immer weiter.",
       "moves": [
        {
         "who": "b1",

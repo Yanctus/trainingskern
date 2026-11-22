@@ -199,7 +199,7 @@
   "steps": [
    {
     "label": "Ins linke Dreieck",
-    "say": "Neon elf spielt zum Springer links, und der spielt gleich weiter zu Neon vier. Rot sieben läuft Neon vier an.",
+    "say": "Spieler elf spielt zum Springer links, und der spielt gleich weiter zu Spieler vier. Spieler sieben läuft Spieler vier an.",
     "moves": [
      {
       "who": "b1",
@@ -231,7 +231,7 @@
    },
    {
     "label": "Dritter Pass: Punkt",
-    "say": "Neon fünf läuft ins Dreieck und bekommt den Ball. Das sind drei Pässe im linken Dreieck, und das gibt einen Punkt für Team Neon. Neon bleibt am Ball.",
+    "say": "Spieler fünf läuft ins Dreieck und bekommt den Ball. Das sind drei Pässe im linken Dreieck, und das gibt einen Punkt für Team Neon. Neon bleibt am Ball.",
     "moves": [
      {
       "who": "n5",
@@ -254,7 +254,7 @@
    },
    {
     "label": "Abgefangen",
-    "say": "Neon fünf will nach oben zum Springer spielen. Aber Rot acht liest den Pass und fängt ihn ab.",
+    "say": "Spieler fünf will nach oben zum Springer spielen. Aber Spieler acht liest den Pass und fängt ihn ab.",
     "moves": [
      {
       "who": "r8",
@@ -277,7 +277,7 @@
    },
    {
     "label": "Rot ist dran",
-    "say": "Rot acht spielt sofort zum Springer oben, der legt auf Rot neun ab. Jetzt ist Team Rot am Ball. Schafft Rot drei Pässe in einem Dreieck, gibt das einen Punkt für Team Rot.",
+    "say": "Spieler acht spielt sofort zum Springer oben, der legt auf Spieler neun ab. Jetzt ist Team Rot am Ball. Schafft Rot drei Pässe in einem Dreieck, gibt das einen Punkt für Team Rot.",
     "moves": [
      {
       "who": "b1",
@@ -430,7 +430,7 @@
     "steps": [
      {
       "label": "Zusammen anlaufen",
-      "say": "Rot acht läuft Neon elf an. Rot sieben und Rot neun rücken nach und machen die Räume zwischen sich klein.",
+      "say": "Spieler acht läuft Spieler elf an. Spieler sieben und Spieler neun rücken nach und machen die Räume zwischen sich klein.",
       "moves": [
        {
         "who": "r8",
@@ -462,7 +462,7 @@
      },
      {
       "label": "Ball erobert",
-      "say": "Neon elf will zu Neon fünf passen. Rot neun steht schon im Passweg und fängt den Ball ab.",
+      "say": "Spieler elf will zu Spieler fünf passen. Spieler neun steht schon im Passweg und fängt den Ball ab.",
       "moves": [
        {
         "who": "r9",
@@ -485,7 +485,7 @@
      },
      {
       "label": "Schnell weiter",
-      "say": "Rot neun spielt sofort zum Springer unten. Jetzt ist Team Rot am Ball und will drei Pässe in einem Dreieck, denn das gibt einen Punkt für Team Rot.",
+      "say": "Spieler neun spielt sofort zum Springer unten. Jetzt ist Team Rot am Ball und will drei Pässe in einem Dreieck, denn das gibt einen Punkt für Team Rot.",
       "moves": [
        {
         "who": "b1",
@@ -605,7 +605,7 @@
     "steps": [
      {
       "label": "Raum sehen",
-      "say": "Neon zwei steht außen und schaut schon vor dem Pass ins Feld. Wo ist Platz für die erste Ballmitnahme? Dann spielt Neon elf zu ihm.",
+      "say": "Spieler zwei steht außen und schaut schon vor dem Pass ins Feld. Wo ist Platz für die erste Ballmitnahme? Dann spielt Spieler elf zu ihm.",
       "moves": [
        {
         "who": "n2",
@@ -628,7 +628,7 @@
      },
      {
       "label": "Rein und raus",
-      "say": "Neon zwei nimmt den Ball mit dem ersten Kontakt ins Feld. Gleichzeitig läuft Neon vier nach außen und ist jetzt Außenspieler.",
+      "say": "Spieler zwei nimmt den Ball mit dem ersten Kontakt ins Feld. Gleichzeitig läuft Spieler vier nach außen und ist jetzt Außenspieler.",
       "moves": [
        {
         "who": "n2",
@@ -651,7 +651,7 @@
      },
      {
       "label": "Drei Pässe: Punkt",
-      "say": "Neon zwei spielt zu Neon vier, und Neon vier spielt zu Neon fünf ins Dreieck. Das sind drei Pässe im linken Dreieck, und das gibt einen Punkt für Team Neon. Jetzt geht es ins nächste Dreieck.",
+      "say": "Spieler zwei spielt zu Spieler vier, und Spieler vier spielt zu Spieler fünf ins Dreieck. Das sind drei Pässe im linken Dreieck, und das gibt einen Punkt für Team Neon. Jetzt geht es ins nächste Dreieck.",
       "moves": [
        {
         "who": "b1",

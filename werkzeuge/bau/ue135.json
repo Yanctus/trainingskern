@@ -291,7 +291,7 @@
    },
    {
     "label": "Doppelpass: Punkt",
-    "say": "Unten spielt Neon sechs einen Doppelpass mit Neon sieben, läuft an Rot zwölf vorbei und trifft ins rechte Minitor, und das gibt einen Punkt für Team Neon.",
+    "say": "Unten spielt Spieler sechs einen Doppelpass mit Spieler sieben, läuft an Spieler zwölf vorbei und trifft ins rechte Minitor, und das gibt einen Punkt für Team Neon.",
     "moves": [
      {
       "who": "b3",
@@ -341,7 +341,7 @@
    },
    {
     "label": "Auf- und Abstieg",
-    "say": "Nach drei Minuten wird abgerechnet. Neon sechs und Neon sieben haben unten gewonnen und steigen eine Zone auf, das Verliererpaar aus der Mitte steigt ab. Dann beginnen sofort die nächsten Spiele.",
+    "say": "Nach drei Minuten wird abgerechnet. Spieler sechs und Spieler sieben haben unten gewonnen und steigen eine Zone auf, das Verliererpaar aus der Mitte steigt ab. Dann beginnen sofort die nächsten Spiele.",
     "moves": [
      {
       "who": "n6",
@@ -528,7 +528,7 @@
     "steps": [
      {
       "label": "Eins gegen eins",
-      "say": "Oben steht es unentschieden. Neon zwei hat den Münzwurf gewonnen und dribbelt los, Rot acht kommt ihm entgegen.",
+      "say": "Oben steht es unentschieden. Spieler zwei hat den Münzwurf gewonnen und dribbelt los, Spieler acht kommt ihm entgegen.",
       "moves": [
        {
         "who": "n2",
@@ -552,7 +552,7 @@
      },
      {
       "label": "Wer trifft, bleibt: Punkt",
-      "say": "Neon zwei geht an Rot acht vorbei und trifft, und das gibt einen Punkt für Team Neon. Damit bleibt sein Paar in der ersten Liga, und Rot acht und Rot neun steigen ab.",
+      "say": "Spieler zwei geht an Spieler acht vorbei und trifft, und das gibt einen Punkt für Team Neon. Damit bleibt sein Paar in der ersten Liga, und Spieler acht und Spieler neun steigen ab.",
       "moves": [
        {
         "who": "n2",
@@ -706,7 +706,7 @@
     "steps": [
      {
       "label": "Den Ersten ausspielen",
-      "say": "In der mittleren Zone dribbelt Neon vier auf Rot zehn zu, täuscht an und geht an ihm vorbei.",
+      "say": "In der mittleren Zone dribbelt Spieler vier auf Spieler zehn zu, täuscht an und geht an ihm vorbei.",
       "moves": [
        {
         "who": "r10",
@@ -740,7 +740,7 @@
      },
      {
       "label": "Zwei gegen eins: Punkt",
-      "say": "Jetzt muss Rot elf heraus. Neon vier spielt sofort quer zu Neon fünf, der frei ist und ins rechte Minitor trifft, und das gibt einen Punkt für Team Neon.",
+      "say": "Jetzt muss Spieler elf heraus. Spieler vier spielt sofort quer zu Spieler fünf, der frei ist und ins rechte Minitor trifft, und das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "r11",

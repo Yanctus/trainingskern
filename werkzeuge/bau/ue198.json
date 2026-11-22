@@ -214,7 +214,7 @@
   "steps": [
    {
     "label": "Fünf Pässe",
-    "say": "Team Rot spielt mit dem Springer fünf gegen drei und zählt die Pässe. Rot zehn passt zum Springer, und der Springer spielt zu Rot acht. Neon vier läuft an.",
+    "say": "Team Rot spielt mit dem Springer fünf gegen drei und zählt die Pässe. Spieler zehn passt zum Springer, und der Springer spielt zu Spieler acht. Spieler vier läuft an.",
     "moves": [
      {
       "who": "b1",
@@ -246,7 +246,7 @@
    },
    {
     "label": "Ab in die Mittelzone",
-    "say": "Rot acht passt zu Rot sieben. Das ist der fünfte Pass. Rot sieben dribbelt in die Mittelzone, und Rot acht läuft mit.",
+    "say": "Spieler acht passt zu Spieler sieben. Das ist der fünfte Pass. Spieler sieben dribbelt in die Mittelzone, und Spieler acht läuft mit.",
     "moves": [
      {
       "who": "b1",
@@ -279,7 +279,7 @@
    },
    {
     "label": "Zwei gegen eins",
-    "say": "Neon drei läuft Rot sieben schnell an. Er stellt sich so, dass der Pass zu Rot acht zu ist, und lenkt Rot sieben nach außen.",
+    "say": "Spieler drei läuft Spieler sieben schnell an. Er stellt sich so, dass der Pass zu Spieler acht zu ist, und lenkt Spieler sieben nach außen.",
     "moves": [
      {
       "who": "n3",
@@ -303,7 +303,7 @@
    },
    {
     "label": "Ballgewinn: Punkt",
-    "say": "Neon drei geht dazwischen, erobert den Ball und passt zu Neon fünf in die erste Zone. Das gibt einen Punkt für Team Neon. Kommt Rot durch ein Hütchentor und trifft, gibt das einen Punkt für Team Rot. Danach beginnt Team Rot wieder in der ersten Zone.",
+    "say": "Spieler drei geht dazwischen, erobert den Ball und passt zu Spieler fünf in die erste Zone. Das gibt einen Punkt für Team Neon. Kommt Rot durch ein Hütchentor und trifft, gibt das einen Punkt für Team Rot. Danach beginnt Team Rot wieder in der ersten Zone.",
     "moves": [
      {
       "who": "n3",
@@ -448,7 +448,7 @@
     "steps": [
      {
       "label": "Hinterher sprinten",
-      "say": "Team Rot hat fünf Pässe geschafft. Rot sieben dribbelt in die Mittelzone, und Rot acht läuft mit. Gleichzeitig sprintet Neon vier hinterher.",
+      "say": "Team Rot hat fünf Pässe geschafft. Spieler sieben dribbelt in die Mittelzone, und Spieler acht läuft mit. Gleichzeitig sprintet Spieler vier hinterher.",
       "moves": [
        {
         "who": "r7",
@@ -480,7 +480,7 @@
      },
      {
       "label": "Wer ist frei?",
-      "say": "Neon drei läuft Rot sieben an. Neon vier schaut, wen Neon drei schon deckt, und stellt sich zwischen Rot sieben und Rot acht.",
+      "say": "Spieler drei läuft Spieler sieben an. Spieler vier schaut, wen Spieler drei schon deckt, und stellt sich zwischen Spieler sieben und Spieler acht.",
       "moves": [
        {
         "who": "n3",
@@ -520,7 +520,7 @@
      },
      {
       "label": "Abgefangen: Punkt",
-      "say": "Rot sieben passt zu Rot acht, aber Neon vier fängt den Ball ab. Er spielt zurück zu Neon sechs in die erste Zone, und das gibt einen Punkt für Team Neon.",
+      "say": "Spieler sieben passt zu Spieler acht, aber Spieler vier fängt den Ball ab. Er spielt zurück zu Spieler sechs in die erste Zone, und das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "b1",
@@ -649,7 +649,7 @@
     "steps": [
      {
       "label": "Durchs Hütchentor",
-      "say": "Rot sieben dribbelt in die Mittelzone und passt quer zu Rot acht. Rot acht dribbelt durch das rechte Hütchentor.",
+      "say": "Spieler sieben dribbelt in die Mittelzone und passt quer zu Spieler acht. Spieler acht dribbelt durch das rechte Hütchentor.",
       "moves": [
        {
         "who": "r7",
@@ -691,7 +691,7 @@
      },
      {
       "label": "Zurück vor das Tor",
-      "say": "Neon drei sprintet durch das mittlere Hütchentor zurück in die letzte Zone. Er drängt Rot acht vom Tor weg nach außen.",
+      "say": "Spieler drei sprintet durch das mittlere Hütchentor zurück in die letzte Zone. Er drängt Spieler acht vom Tor weg nach außen.",
       "moves": [
        {
         "who": "n3",
@@ -724,7 +724,7 @@
      },
      {
       "label": "Schuss geblockt: Punkt",
-      "say": "Rot acht schießt aus spitzem Winkel. Neon drei blockt den Schuss, erobert den Ball und spielt zu Neon sechs in die erste Zone. Das gibt einen Punkt für Team Neon.",
+      "say": "Spieler acht schießt aus spitzem Winkel. Spieler drei blockt den Schuss, erobert den Ball und spielt zu Spieler sechs in die erste Zone. Das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "b1",

@@ -1,7 +1,7 @@
 import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe import *
 # 77-P3 (U12-U14, Woche 25 Phase 1): Heads Up Rondo. 15 x 20 Yards = Feld x 31.25-68.75, y 5-55 (14 x 18 m), Ausrichtung wie im PDF.
 # Drei Teams zu dritt: Gelb (4, 5, 7) -> Neon, Pink (6, 7, 8) -> Rot, Blau (Überzahl-Team: oben 4, unten 9, innen 6) -> neutrale
-# Springer F. Doppelte Nummer 7: Pink 7 heißt hier Rot zwei. Positionen leicht verschoben (3D-Abstand). Ein Trainer statt zwei.
+# Springer F. Doppelte Nummer 7: Pink 7 heißt hier Spieler zwei. Positionen leicht verschoben (3D-Abstand). Ein Trainer statt zwei.
 # Grundform nach PDF/Video (0:10-0:20): Springer unten -> Neon 4 -> Springer innen -> Springer oben. Punkt-Regel ergänzt (im Original
 # ohne Zählweise): Ball von einem Springer an der Grundlinie zum anderen = Punkt. Fassungen: "Split opposition midfield / play on
 # shoulder" (Video 0:20-0:45) und Progression 1 (Ballverlust = verteidigen). Progression 2 (acht Pässe in Folge) nur im Bericht.
@@ -33,9 +33,9 @@ u = {"title": "Rondo mit Kopf hoch", "code": "UE-200", "kind": "Spielform",
  "say_intro": "Rondo mit Kopf hoch. Team Neon spielt mit drei Springern gegen Team Rot, und jeder muss ständig schauen, wo die Mitspieler sind.",
  "board": {"lines": LINES, "cones": CONES, "players": sp(), "balls": [B("b1", 50.6, 55.6)] + ERSATZ,
   "steps": [
-   S("Kopf hoch", "Der Springer unten hat den Ball. Bevor der Pass kommt, schaut Neon vier sich um: Wo ist der Springer in der Mitte, wo sind die Gegner? Dann kommt der Ball.",
+   S("Kopf hoch", "Der Springer unten hat den Ball. Bevor der Pass kommt, schaut Spieler vier sich um: Wo ist der Springer in der Mitte, wo sind die Gegner? Dann kommt der Ball.",
      bl("n4", [50, 28]), ps("b1", [32.1, 38.6], after=True)),
-   S("Zum Springer in der Mitte", "Auch der Springer in der Mitte schaut sich um und weiß schon, wo der Springer oben steht. Neon vier spielt ihn sofort an.",
+   S("Zum Springer in der Mitte", "Auch der Springer in der Mitte schaut sich um und weiß schon, wo der Springer oben steht. Spieler vier spielt ihn sofort an.",
      bl("f3", [52, 8]), ps("b1", [60.6, 22.6], after=True)),
    S("Nach oben: Punkt", "Der Springer in der Mitte spielt weiter zum Springer oben. Der Ball ist von unten nach oben gekommen, und das gibt einen Punkt für Team Neon. Jetzt spielt Team Neon wieder nach unten, und Team Rot jagt weiter den Ball.",
      ps("b1", [50.6, 5.6]))]},
@@ -43,18 +43,18 @@ u = {"title": "Rondo mit Kopf hoch", "code": "UE-200", "kind": "Spielform",
   V("Coaching-Punkt", "Jetzt zum Coaching-Punkt: Die Mitte teilen.", "Die Mitte teilen",
     "Der Springer in der Mitte stellt sich seitlich hinter einen Gegner, auf dessen Schulter. So kann er den Ball halb gedreht annehmen. Der Passgeber schaut, sieht die Lücke zwischen zwei Gegnern und spielt flach hindurch.",
     sp(), [B("b1", 32.1, 38.6)] + ERSATZ,
-    [S("Auf die Schulter", "Neon vier hat den Ball. Der Springer in der Mitte stellt sich seitlich hinter Rot acht. Neon vier hebt den Kopf und sieht die Lücke zwischen Rot sechs und Rot acht.",
+    [S("Auf die Schulter", "Spieler vier hat den Ball. Der Springer in der Mitte stellt sich seitlich hinter Spieler acht. Spieler vier hebt den Kopf und sieht die Lücke zwischen Spieler sechs und Spieler acht.",
        mv("f3", [55, 28]), bl("n4", [50, 31], after=True)),
-     S("Durch die Lücke: Punkt", "Neon vier spielt flach durch die Lücke. Der Springer nimmt den Ball mit dem ersten Kontakt nach vorn mit und spielt zum Springer oben. Das gibt einen Punkt für Team Neon.",
+     S("Durch die Lücke: Punkt", "Spieler vier spielt flach durch die Lücke. Der Springer nimmt den Ball mit dem ersten Kontakt nach vorn mit und spielt zum Springer oben. Das gibt einen Punkt für Team Neon.",
        ps("b1", [55.6, 28.6]), dr("f3", "b1", [57, 17], after=True), ps("b1", [50.6, 5.6], after=True))]),
   V("Steigerung", "Und jetzt die Steigerung: Ball verloren, sofort verteidigen.", "Ball weg, umschalten",
     "Jetzt gilt: Wer den Ball verliert, verteidigt sofort. Erobert Team Rot den Ball, spielt Rot mit den Springern, und Team Neon jagt den Ball. Die Springer spielen immer mit dem Team am Ball, deshalb muss jeder ständig schauen, wer gerade angreift.",
     sp(), [B("b1", 38.6, 20.6)] + ERSATZ,
-    [S("Ball erobert", "Neon fünf will zum Springer oben passen, aber Rot acht fängt den Ball ab. Ab jetzt greift Team Rot an.",
+    [S("Ball erobert", "Spieler fünf will zum Springer oben passen, aber Spieler acht fängt den Ball ab. Ab jetzt greift Team Rot an.",
        mv("r8", [45, 12]), ps("b1", [45.6, 12.6], delay=0.3)),
-     S("Wer greift an?", "Rot acht hebt sofort den Kopf und sucht den Springer. Gleichzeitig schaltet Team Neon um: Neon fünf presst, Neon vier und Neon sieben machen die Passwege zu, und Rot zwei läuft sich frei.",
+     S("Wer greift an?", "Spieler acht hebt sofort den Kopf und sucht den Springer. Gleichzeitig schaltet Team Neon um: Spieler fünf presst, Spieler vier und Spieler sieben machen die Passwege zu, und Spieler zwei läuft sich frei.",
        bl("r8", [60, 22]), mv("n5", [40, 14]), mv("n4", [40, 33]), mv("n7", [63, 33]), mv("r2", [60, 47])),
-     S("Nach unten: Punkt", "Rot acht spielt zum Springer in der Mitte, und der spielt weiter zum Springer unten. Das gibt einen Punkt für Team Rot. Jetzt verteidigt Team Neon, bis es den Ball zurückerobert.",
+     S("Nach unten: Punkt", "Spieler acht spielt zum Springer in der Mitte, und der spielt weiter zum Springer unten. Das gibt einen Punkt für Team Rot. Jetzt verteidigt Team Neon, bis es den Ball zurückerobert.",
        ps("b1", [60.6, 22.6]), ps("b1", [50.6, 55.6], after=True))])]}
 u["board"]["dims"] = dims(31.25, 68.75, 5, 55, "14 m", "18 m", rx=78)
 json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)

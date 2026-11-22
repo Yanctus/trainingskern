@@ -183,7 +183,7 @@
   "steps": [
    {
     "label": "Steilpass auf den Stürmer",
-    "say": "Rot vier spielt den Ball steil in den Lauf von Neon neun.",
+    "say": "Spieler vier spielt den Ball steil in den Lauf von Spieler neun.",
     "moves": [
      {
       "who": "n9",
@@ -206,7 +206,7 @@
    },
    {
     "label": "Eins gegen eins: Punkt",
-    "say": "Neon neun nimmt den Ball mit und schießt am Torwart vorbei, und das gibt einen Punkt für Neon.",
+    "say": "Spieler neun nimmt den Ball mit und schießt am Torwart vorbei, und das gibt einen Punkt für Neon.",
     "moves": [
      {
       "who": "b1",
@@ -220,7 +220,7 @@
    },
    {
     "label": "Flügel angespielt",
-    "say": "Jetzt spielt Rot zwei schräg zu Neon sieben und läuft sofort zurück, um zu verteidigen.",
+    "say": "Jetzt spielt Spieler zwei schräg zu Spieler sieben und läuft sofort zurück, um zu verteidigen.",
     "moves": [
      {
       "who": "b2",
@@ -243,7 +243,7 @@
    },
    {
     "label": "Zwei gegen eins: Punkt",
-    "say": "Neon sieben dribbelt an und legt quer zu Neon neun, der frei ist. Neon neun schießt, und das gibt einen Punkt für Neon.",
+    "say": "Spieler sieben dribbelt an und legt quer zu Spieler neun, der frei ist. Spieler neun schießt, und das gibt einen Punkt für Neon.",
     "moves": [
      {
       "who": "n7",
@@ -297,7 +297,7 @@
    "label": "Steigerung",
    "say": "Und jetzt die Steigerung: Der dritte Angriff kommt von der anderen Seite, drei gegen zwei.",
    "title": "Drei gegen zwei",
-   "text": "Nach dem zweiten Angriff spielt Rot drei von der anderen Seite Neon elf an und läuft ebenfalls zurück. Jetzt greifen drei Angreifer gegen zwei Verteidiger an. Schnell spielen und den freien Mann finden, bevor sich die Abwehr sortiert.",
+   "text": "Nach dem zweiten Angriff spielt Spieler drei von der anderen Seite Spieler elf an und läuft ebenfalls zurück. Jetzt greifen drei Angreifer gegen zwei Verteidiger an. Schnell spielen und den freien Mann finden, bevor sich die Abwehr sortiert.",
    "board": {
     "players": [
      {
@@ -367,7 +367,7 @@
     "steps": [
      {
       "label": "Anspiel auf den anderen Flügel",
-      "say": "Rot drei spielt Neon elf an und läuft gleich zurück zum Verteidigen.",
+      "say": "Spieler drei spielt Spieler elf an und läuft gleich zurück zum Verteidigen.",
       "moves": [
        {
         "who": "b3",
@@ -390,7 +390,7 @@
      },
      {
       "label": "Drei gegen zwei",
-      "say": "Neon elf dribbelt an, die beiden Roten gehen auf Neon neun und Neon elf. Neon sieben ist frei.",
+      "say": "Spieler elf dribbelt an, die beiden Roten gehen auf Spieler neun und Spieler elf. Spieler sieben ist frei.",
       "moves": [
        {
         "who": "n11",
@@ -421,7 +421,7 @@
      },
      {
       "label": "Freier Mann: Punkt",
-      "say": "Neon elf spielt schräg zu Neon sieben, und der schießt ins Tor. Das gibt einen Punkt für Neon.",
+      "say": "Spieler elf spielt schräg zu Spieler sieben, und der schießt ins Tor. Das gibt einen Punkt für Neon.",
       "moves": [
        {
         "who": "b3",
@@ -519,7 +519,7 @@
     "steps": [
      {
       "label": "Ball erobert",
-      "say": "Neon sieben dribbelt auf Rot zwei zu, und Rot zwei spitzelt ihm den Ball weg.",
+      "say": "Spieler sieben dribbelt auf Spieler zwei zu, und Spieler zwei spitzelt ihm den Ball weg.",
       "moves": [
        {
         "who": "n7",
@@ -552,7 +552,7 @@
      },
      {
       "label": "Aufs Minitor: Punkt",
-      "say": "Rot zwei schießt sofort aufs Minitor oben, und das gibt einen Punkt für Rot.",
+      "say": "Spieler zwei schießt sofort aufs Minitor oben, und das gibt einen Punkt für Rot.",
       "moves": [
        {
         "who": "r2",

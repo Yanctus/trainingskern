@@ -176,7 +176,7 @@
   "steps": [
    {
     "label": "Ruhig eröffnen",
-    "say": "Der Torwart bleibt ruhig, hebt den Kopf und sieht Neon vier frei in der Mitte. Er spielt ihn an, und Rot acht presst sofort von hinten.",
+    "say": "Der Torwart bleibt ruhig, hebt den Kopf und sieht Spieler vier frei in der Mitte. Er spielt ihn an, und Spieler acht presst sofort von hinten.",
     "moves": [
      {
       "who": "n1",
@@ -208,7 +208,7 @@
    },
    {
     "label": "Direkt in den Lauf",
-    "say": "Neon fünf startet hinter Rot zehn nach vorn. Neon vier spielt ihm den Ball direkt in den Lauf, ohne ihn erst anzunehmen.",
+    "say": "Spieler fünf startet hinter Spieler zehn nach vorn. Spieler vier spielt ihm den Ball direkt in den Lauf, ohne ihn erst anzunehmen.",
     "moves": [
      {
       "who": "n5",
@@ -231,7 +231,7 @@
    },
    {
     "label": "Abschluss: Punkt",
-    "say": "Neon fünf schießt ins mittlere Minitor, und das gibt einen Punkt für Team Neon. Dann beginnt der Torwart mit einem neuen Ball.",
+    "say": "Spieler fünf schießt ins mittlere Minitor, und das gibt einen Punkt für Team Neon. Dann beginnt der Torwart mit einem neuen Ball.",
     "moves": [
      {
       "who": "b1",
@@ -346,7 +346,7 @@
     "steps": [
      {
       "label": "Schulterblick",
-      "say": "Bevor der Ball kommt, schaut Neon vier über die Schulter. Er sieht: Rot acht kommt von hinten auf ihn zu.",
+      "say": "Bevor der Ball kommt, schaut Spieler vier über die Schulter. Er sieht: Spieler acht kommt von hinten auf ihn zu.",
       "moves": [
        {
         "who": "n4",
@@ -369,7 +369,7 @@
      },
      {
       "label": "Direkt weiter: Punkt",
-      "say": "Der Torwart spielt Neon vier an. Der spielt direkt weiter in den Lauf von Neon sechs, und Neon sechs trifft ins linke Minitor. Das gibt einen Punkt für Team Neon.",
+      "say": "Der Torwart spielt Spieler vier an. Der spielt direkt weiter in den Lauf von Spieler sechs, und Spieler sechs trifft ins linke Minitor. Das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "n6",
@@ -494,7 +494,7 @@
     "steps": [
      {
       "label": "Locken",
-      "say": "Neon sechs und Neon fünf kommen tief zum Torwart. Rot neun und Rot zehn laufen mit und pressen.",
+      "say": "Spieler sechs und Spieler fünf kommen tief zum Torwart. Spieler neun und Spieler zehn laufen mit und pressen.",
       "moves": [
        {
         "who": "n6",
@@ -534,7 +534,7 @@
      },
      {
       "label": "Durch die Linie: Punkt",
-      "say": "Jetzt ist die Mitte frei. Der Torwart sieht Neon vier und spielt flach durch die Linie. Neon vier dreht auf und trifft ins rechte Minitor, und das gibt einen Punkt für Team Neon.",
+      "say": "Jetzt ist die Mitte frei. Der Torwart sieht Spieler vier und spielt flach durch die Linie. Spieler vier dreht auf und trifft ins rechte Minitor, und das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "n1",

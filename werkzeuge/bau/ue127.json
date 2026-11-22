@@ -231,7 +231,7 @@
   "steps": [
    {
     "label": "Im Zickzack nach oben",
-    "say": "Auf Pfiff sprinten Neon sechs und Rot zwei gleichzeitig los und laufen im Zickzack an jedem Hütchen vorbei bis nach oben.",
+    "say": "Auf Pfiff sprinten Spieler sechs und Spieler zwei gleichzeitig los und laufen im Zickzack an jedem Hütchen vorbei bis nach oben.",
     "moves": [
      {
       "who": "n6",
@@ -428,7 +428,7 @@
    },
    {
     "label": "Abklatschen, der Nächste läuft",
-    "say": "Dann klatschen sie den Anspieler ab, und Neon sieben und Rot drei starten. Sind alle vier durch, läuft jedes Team die Runde noch einmal ohne Ball. Das Team, das zuerst wieder komplett am Start steht, gewinnt die Staffel.",
+    "say": "Dann klatschen sie den Anspieler ab, und Spieler sieben und Spieler drei starten. Sind alle vier durch, läuft jedes Team die Runde noch einmal ohne Ball. Das Team, das zuerst wieder komplett am Start steht, gewinnt die Staffel.",
     "moves": [
      {
       "who": "n6",
@@ -595,7 +595,7 @@
     "steps": [
      {
       "label": "Scharf abdrehen am Hütchen",
-      "say": "Neon sechs bremst kurz vor dem Hütchen mit kleinen Schritten ab und drückt sich sofort in die neue Richtung ab.",
+      "say": "Spieler sechs bremst kurz vor dem Hütchen mit kleinen Schritten ab und drückt sich sofort in die neue Richtung ab.",
       "moves": [
        {
         "who": "n6",
@@ -627,7 +627,7 @@
      },
      {
       "label": "Direkt abschließen",
-      "say": "Oben holt er den Ball und dribbelt zurück. Unten kommt der Rückpass in den Lauf, und Neon sechs schießt ihn mit einem Kontakt ins Minitor. Dann klatscht er Neon sieben ab, der als Nächster läuft.",
+      "say": "Oben holt er den Ball und dribbelt zurück. Unten kommt der Rückpass in den Lauf, und Spieler sechs schießt ihn mit einem Kontakt ins Minitor. Dann klatscht er Spieler sieben ab, der als Nächster läuft.",
       "moves": [
        {
         "who": "n6",
@@ -778,7 +778,7 @@
     "steps": [
      {
       "label": "Zickzack nach oben",
-      "say": "Neon sechs und Rot zwei sprinten wieder gleichzeitig im Zickzack nach oben, diesmal ohne Ball.",
+      "say": "Spieler sechs und Spieler zwei sprinten wieder gleichzeitig im Zickzack nach oben, diesmal ohne Ball.",
       "moves": [
        {
         "who": "n6",
@@ -1024,7 +1024,7 @@
     "steps": [
      {
       "label": "Rot trifft, Neon schießt daneben",
-      "say": "Rot zwei trifft ins Minitor, und das gibt einen Punkt für Team Rot. Neon sechs schießt am Minitor vorbei.",
+      "say": "Spieler zwei trifft ins Minitor, und das gibt einen Punkt für Team Rot. Spieler sechs schießt am Minitor vorbei.",
       "moves": [
        {
         "who": "b2",
@@ -1047,7 +1047,7 @@
      },
      {
       "label": "Rot startet, Neon wartet",
-      "say": "Rot zwei klatscht Rot drei ab, der sofort startet. Team Neon muss zwei Sekunden warten, erst dann darf Neon sieben loslaufen.",
+      "say": "Spieler zwei klatscht Spieler drei ab, der sofort startet. Team Neon muss zwei Sekunden warten, erst dann darf Spieler sieben loslaufen.",
       "moves": [
        {
         "who": "r2",

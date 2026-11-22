@@ -466,7 +466,7 @@
      },
      {
       "label": "In die Zone und Abschluss",
-      "say": "Spieler acht dribbelt in die Zone vor dem Tor. Gleichzeitig greift Rot sechs an, doch Spieler acht schießt vorher ins Minitor. Das gibt einen Punkt für die Gruppe.",
+      "say": "Spieler acht dribbelt in die Zone vor dem Tor. Gleichzeitig greift Spieler sechs an, doch Spieler acht schießt vorher ins Minitor. Das gibt einen Punkt für die Gruppe.",
       "moves": [
        {
         "who": "n8",

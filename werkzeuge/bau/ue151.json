@@ -188,7 +188,7 @@
   "steps": [
    {
     "label": "Zwei Pässe",
-    "say": "Team Neon hält den Ball in der Zone gegen Rot fünf. Neon neun spielt zu Neon acht, der spielt weiter zu Neon sieben.",
+    "say": "Team Neon hält den Ball in der Zone gegen Spieler fünf. Spieler neun spielt zu Spieler acht, der spielt weiter zu Spieler sieben.",
     "moves": [
      {
       "who": "b1",
@@ -211,7 +211,7 @@
    },
    {
     "label": "Der nächste kommt",
-    "say": "Zwei Pässe geschafft, also darf Rot zwei aus der Ecke in die Zone. Gleichzeitig spielt Neon sieben weiter zu Neon zehn.",
+    "say": "Zwei Pässe geschafft, also darf Spieler zwei aus der Ecke in die Zone. Gleichzeitig spielt Spieler sieben weiter zu Spieler zehn.",
     "moves": [
      {
       "who": "r2",
@@ -234,7 +234,7 @@
    },
    {
     "label": "Ballgewinn: Punkt",
-    "say": "Neon zehn will zu Neon vier passen, aber Rot fünf fängt den Ball ab, dribbelt aus der Zone und schießt ins untere Minitor. Das gibt einen Punkt für Team Rot. Dann beginnt Team Neon mit einem neuen Ball, und die Verteidiger gehen zurück in die Ecken.",
+    "say": "Spieler zehn will zu Spieler vier passen, aber Spieler fünf fängt den Ball ab, dribbelt aus der Zone und schießt ins untere Minitor. Das gibt einen Punkt für Team Rot. Dann beginnt Team Neon mit einem neuen Ball, und die Verteidiger gehen zurück in die Ecken.",
     "moves": [
      {
       "who": "r5",
@@ -398,7 +398,7 @@
     "steps": [
      {
       "label": "Über die Schulter",
-      "say": "Neon neun hat den Ball. Neon acht schaut über die Schulter und sieht: Rot zwei kommt aus der Ecke auf ihn zu.",
+      "say": "Spieler neun hat den Ball. Spieler acht schaut über die Schulter und sieht: Spieler zwei kommt aus der Ecke auf ihn zu.",
       "moves": [
        {
         "who": "n8",
@@ -421,7 +421,7 @@
      },
      {
       "label": "Direkt weiter",
-      "say": "Neon neun spielt Neon acht an. Weil er Rot zwei gesehen hat, spielt Neon acht direkt weiter zu Neon sieben, weg vom Druck. Der Ball bleibt bei Team Neon.",
+      "say": "Spieler neun spielt Spieler acht an. Weil er Spieler zwei gesehen hat, spielt Spieler acht direkt weiter zu Spieler sieben, weg vom Druck. Der Ball bleibt bei Team Neon.",
       "moves": [
        {
         "who": "b1",
@@ -550,7 +550,7 @@
     "steps": [
      {
       "label": "Der zehnte Pass",
-      "say": "Team Neon hat neun Pässe geschafft. Neon sieben spielt den zehnten zu Neon zehn.",
+      "say": "Team Neon hat neun Pässe geschafft. Spieler sieben spielt den zehnten zu Spieler zehn.",
       "moves": [
        {
         "who": "b1",
@@ -564,7 +564,7 @@
      },
      {
       "label": "Raus und rein: Punkt",
-      "say": "Jetzt darf Neon zehn schießen. Er dribbelt aus der Zone und trifft ins rechte Minitor, und das gibt einen Punkt für Team Neon.",
+      "say": "Jetzt darf Spieler zehn schießen. Er dribbelt aus der Zone und trifft ins rechte Minitor, und das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "n10",

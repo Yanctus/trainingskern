@@ -196,7 +196,7 @@
   "steps": [
    {
     "label": "Auf Zuruf los",
-    "say": "Der Trainer ruft. Gleichzeitig sprinten Neon fünf und Rot sechs zu einem Hütchen in ihrer Hälfte und bringen es zu ihrem Team.",
+    "say": "Der Trainer ruft. Gleichzeitig sprinten Spieler fünf und Spieler sechs zu einem Hütchen in ihrer Hälfte und bringen es zu ihrem Team.",
     "moves": [
      {
       "who": "n5",
@@ -254,7 +254,7 @@
    },
    {
     "label": "Abklatschen, der Nächste",
-    "say": "Gleichzeitig laufen Neon vier und Rot sieben zum nächsten Hütchen. Neon vier ist schneller, und Team Neon hat zuerst alle Hütchen.",
+    "say": "Gleichzeitig laufen Spieler vier und Spieler sieben zum nächsten Hütchen. Spieler vier ist schneller, und Team Neon hat zuerst alle Hütchen.",
     "moves": [
      {
       "who": "n4",
@@ -313,7 +313,7 @@
    },
    {
     "label": "Neon spielt mit Floater",
-    "say": "Team Neon hat gewonnen. Alle laufen gleichzeitig ins Feld, der Floater spielt für Team Neon mit, und der Trainer spielt Neon drei den Ball zu. Jetzt greift Team Neon mit fünf gegen vier auf die rechten Minitore an.",
+    "say": "Team Neon hat gewonnen. Alle laufen gleichzeitig ins Feld, der Floater spielt für Team Neon mit, und der Trainer spielt Spieler drei den Ball zu. Jetzt greift Team Neon mit fünf gegen vier auf die rechten Minitore an.",
     "moves": [
      {
       "who": "n2",
@@ -510,7 +510,7 @@
     "steps": [
      {
       "label": "Das schnellste Kind läuft weit",
-      "say": "Neon zwei ist am schnellsten und sprintet zum weitesten Hütchen. Die anderen feuern laut an.",
+      "say": "Spieler zwei ist am schnellsten und sprintet zum weitesten Hütchen. Die anderen feuern laut an.",
       "moves": [
        {
         "who": "n2",
@@ -542,7 +542,7 @@
      },
      {
       "label": "Weiter zum nahen Hütchen",
-      "say": "Sofort klatscht Neon zwei Neon drei ab, und Neon drei holt das nahe Hütchen.",
+      "say": "Sofort klatscht Spieler zwei Spieler drei ab, und Spieler drei holt das nahe Hütchen.",
       "moves": [
        {
         "who": "n3",
@@ -673,7 +673,7 @@
     "steps": [
      {
       "label": "Gegner anlocken",
-      "say": "Neon drei spielt zu Neon fünf. Gleichzeitig verschieben Rot sechs, Rot sieben und Rot acht zu ihm.",
+      "say": "Spieler drei spielt zu Spieler fünf. Gleichzeitig verschieben Spieler sechs, Spieler sieben und Spieler acht zu ihm.",
       "moves": [
        {
         "who": "g",
@@ -714,7 +714,7 @@
      },
      {
       "label": "Der Freie schließt ab",
-      "say": "Unten ist der Floater frei. Neon fünf spielt zu ihm, er nimmt den Ball mit und schießt genau ins Minitor. Das gibt einen Punkt für Team Neon.",
+      "say": "Unten ist der Floater frei. Spieler fünf spielt zu ihm, er nimmt den Ball mit und schießt genau ins Minitor. Das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "g",

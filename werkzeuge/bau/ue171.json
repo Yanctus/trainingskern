@@ -235,7 +235,7 @@
   "steps": [
    {
     "label": "Abprallen",
-    "say": "Team Neon spielt nach oben. Der Torwart passt zu Neon vier, der direkt zurücklegt. Rot neun läuft an.",
+    "say": "Team Neon spielt nach oben. Der Torwart passt zu Spieler vier, der direkt zurücklegt. Spieler neun läuft an.",
     "moves": [
      {
       "who": "b1",
@@ -267,7 +267,7 @@
    },
    {
     "label": "Zum Außenverteidiger",
-    "say": "Rot neun ist weg vom Torwart. Der Torwart spielt nach rechts zu Neon zwei.",
+    "say": "Spieler neun ist weg vom Torwart. Der Torwart spielt nach rechts zu Spieler zwei.",
     "moves": [
      {
       "who": "b1",
@@ -281,7 +281,7 @@
    },
    {
     "label": "Nach vorn",
-    "say": "Neon zwei passt weit nach vorn zu Neon zehn. Jetzt ist es vier gegen drei.",
+    "say": "Spieler zwei passt weit nach vorn zu Spieler zehn. Jetzt ist es vier gegen drei.",
     "moves": [
      {
       "who": "b1",
@@ -304,7 +304,7 @@
    },
    {
     "label": "Steil auf Acht",
-    "say": "Neon acht startet in die Mitte, und Neon zehn spielt ihm den Ball in den Lauf.",
+    "say": "Spieler acht startet in die Mitte, und Spieler zehn spielt ihm den Ball in den Lauf.",
     "moves": [
      {
       "who": "n8",
@@ -327,7 +327,7 @@
    },
    {
     "label": "Minitor: Punkt",
-    "say": "Neon acht trifft ins mittlere Minitor, und das gibt einen Punkt für Team Neon. Holt Team Rot den Ball, kontert es auf das große Tor. Danach beginnt wieder der Torwart.",
+    "say": "Spieler acht trifft ins mittlere Minitor, und das gibt einen Punkt für Team Neon. Holt Team Rot den Ball, kontert es auf das große Tor. Danach beginnt wieder der Torwart.",
     "moves": [
      {
       "who": "b1",
@@ -463,7 +463,7 @@
     "steps": [
      {
       "label": "Schräg anbieten",
-      "say": "Neon zwei hat den Ball. Neon vier stellt sich schräg neben Rot neun und bekommt den Pass.",
+      "say": "Spieler zwei hat den Ball. Spieler vier stellt sich schräg neben Spieler neun und bekommt den Pass.",
       "moves": [
        {
         "who": "b1",
@@ -477,7 +477,7 @@
      },
      {
       "label": "Aufdrehen",
-      "say": "Neon vier dreht mit dem ersten Kontakt auf und spielt zur anderen Seite zu Neon drei.",
+      "say": "Spieler vier dreht mit dem ersten Kontakt auf und spielt zur anderen Seite zu Spieler drei.",
       "moves": [
        {
         "who": "n4",
@@ -501,7 +501,7 @@
      },
      {
       "label": "Minitor: Punkt",
-      "say": "Neon drei spielt nach vorn zu Neon zehn. Der trifft ins linke Minitor, und das gibt einen Punkt für Team Neon.",
+      "say": "Spieler drei spielt nach vorn zu Spieler zehn. Der trifft ins linke Minitor, und das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "b1",
@@ -630,7 +630,7 @@
     "steps": [
      {
       "label": "Zum Außenverteidiger",
-      "say": "Der Torwart spielt nach links zu Neon drei. Rot sieben läuft ihn an.",
+      "say": "Der Torwart spielt nach links zu Spieler drei. Spieler sieben läuft ihn an.",
       "moves": [
        {
         "who": "b1",
@@ -653,7 +653,7 @@
      },
      {
       "label": "Zehn kommt zurück",
-      "say": "Neon zehn kommt in den Mittelstreifen zurück, und Neon drei passt zu ihm.",
+      "say": "Spieler zehn kommt in den Mittelstreifen zurück, und Spieler drei passt zu ihm.",
       "moves": [
        {
         "who": "n10",
@@ -676,7 +676,7 @@
      },
      {
       "label": "Minitor: Punkt",
-      "say": "Neon zehn spielt Neon acht in den Lauf. Der trifft ins rechte Minitor, und das gibt einen Punkt für Team Neon.",
+      "say": "Spieler zehn spielt Spieler acht in den Lauf. Der trifft ins rechte Minitor, und das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "n8",

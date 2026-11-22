@@ -23,7 +23,7 @@
  "description": "Drei gegen drei in der Mitte, und in jeder Endzone steht ein Spieler von jedem Team. Nach vier Pässen darf das Team am Ball steil in eine Endzone zum eigenen Spieler spielen. Der löst sich mit einer kurzen, schnellen Bewegung von seinem Gegenspieler und schießt auf eines der zwei Minitore. Erobert das andere Team den Ball, tauschen die Aufgaben: Jetzt sind seine Spieler in den Endzonen die Stürmer.",
  "organisation": [
   "Aufbauen: Ein Feld von 23 mal 41 Metern. An jedem Ende eine Endzone von 5 Metern mit zwei Minitoren in den Ecken.",
-  "Verteilen: Drei gegen drei in der Mitte. In der oberen Endzone Neon neun und Rot fünf, in der unteren Rot elf und Neon vier. Der Trainer steht rechts mit Bällen.",
+  "Verteilen: Drei gegen drei in der Mitte. In der oberen Endzone Spieler neun und Spieler fünf, in der unteren Spieler elf und Spieler vier. Der Trainer steht rechts mit Bällen.",
   "Ablauf: Nach vier Pässen darf das Team am Ball steil in eine Endzone spielen. Der eigene Spieler dort ist Stürmer, der Gegenspieler verteidigt.",
   "Wertung und Wechsel: Jedes Minitor gibt einen Punkt. Nach jedem Punkt tauscht der Stürmer mit einem Mitspieler aus der Mitte."
  ],
@@ -237,7 +237,7 @@
   "steps": [
    {
     "label": "Vier Pässe",
-    "say": "Team Neon hat den Ball und braucht vier Pässe. Neon zehn spielt zu Neon sechs, und der spielt weiter zu Neon acht.",
+    "say": "Team Neon hat den Ball und braucht vier Pässe. Spieler zehn spielt zu Spieler sechs, und der spielt weiter zu Spieler acht.",
     "moves": [
      {
       "who": "b1",
@@ -260,7 +260,7 @@
    },
    {
     "label": "Pass drei und vier",
-    "say": "Neon sechs läuft sich in der Mitte frei. Neon acht spielt ihn an, und Neon sechs legt ab zu Neon zehn. Das sind vier Pässe.",
+    "say": "Spieler sechs läuft sich in der Mitte frei. Spieler acht spielt ihn an, und Spieler sechs legt ab zu Spieler zehn. Das sind vier Pässe.",
     "moves": [
      {
       "who": "n6",
@@ -292,7 +292,7 @@
    },
    {
     "label": "Freilaufen",
-    "say": "Neon neun geht kurz auf Rot fünf zu und dreht dann blitzschnell nach rechts weg. Neon zehn spielt sofort steil in die Endzone.",
+    "say": "Spieler neun geht kurz auf Spieler fünf zu und dreht dann blitzschnell nach rechts weg. Spieler zehn spielt sofort steil in die Endzone.",
     "moves": [
      {
       "who": "n9",
@@ -334,7 +334,7 @@
    },
    {
     "label": "Minitor: Punkt",
-    "say": "Neon neun schießt mit dem ersten Kontakt ins rechte Minitor, und das gibt einen Punkt für Team Neon. Dann tauscht Neon neun mit einem Mitspieler aus der Mitte, und der Trainer bringt einen neuen Ball.",
+    "say": "Spieler neun schießt mit dem ersten Kontakt ins rechte Minitor, und das gibt einen Punkt für Team Neon. Dann tauscht Spieler neun mit einem Mitspieler aus der Mitte, und der Trainer bringt einen neuen Ball.",
     "moves": [
      {
       "who": "b1",
@@ -470,7 +470,7 @@
     "steps": [
      {
       "label": "Antäuschen",
-      "say": "Team Rot hat den Ball erobert und vier Pässe geschafft. Jetzt ist Rot elf der Stürmer. Er geht kurz auf Neon vier zu und dreht dann schnell nach rechts weg.",
+      "say": "Team Rot hat den Ball erobert und vier Pässe geschafft. Jetzt ist Spieler elf der Stürmer. Er geht kurz auf Spieler vier zu und dreht dann schnell nach rechts weg.",
       "moves": [
        {
         "who": "r11",
@@ -503,7 +503,7 @@
      },
      {
       "label": "Frei: Punkt",
-      "say": "Rot zwei spielt sofort in den Lauf, und Rot elf trifft mit dem ersten Kontakt ins rechte Minitor. Das gibt einen Punkt für Team Rot.",
+      "say": "Spieler zwei spielt sofort in den Lauf, und Spieler elf trifft mit dem ersten Kontakt ins rechte Minitor. Das gibt einen Punkt für Team Rot.",
       "moves": [
        {
         "who": "b1",
@@ -632,7 +632,7 @@
     "steps": [
      {
       "label": "Steilpass",
-      "say": "Team Neon hat vier Pässe geschafft. Neon neun löst sich nach rechts, und Neon sechs spielt steil in die Endzone.",
+      "say": "Team Neon hat vier Pässe geschafft. Spieler neun löst sich nach rechts, und Spieler sechs spielt steil in die Endzone.",
       "moves": [
        {
         "who": "n9",
@@ -664,7 +664,7 @@
      },
      {
       "label": "Nachrücken",
-      "say": "Neon sechs läuft sofort nach. Neon neun legt den Ball mit dem ersten Kontakt für ihn ab.",
+      "say": "Spieler sechs läuft sofort nach. Spieler neun legt den Ball mit dem ersten Kontakt für ihn ab.",
       "moves": [
        {
         "who": "n6",
@@ -687,7 +687,7 @@
      },
      {
       "label": "Direkt: Punkt",
-      "say": "Neon sechs schießt direkt ins linke Minitor, und das gibt einen Punkt für Team Neon. Kommt keiner zur Hilfe, bekommt Team Rot den Ball.",
+      "say": "Spieler sechs schießt direkt ins linke Minitor, und das gibt einen Punkt für Team Neon. Kommt keiner zur Hilfe, bekommt Team Rot den Ball.",
       "moves": [
        {
         "who": "b1",

@@ -376,7 +376,7 @@
    },
    {
     "label": "Zuruf: zwei Paare spielen",
-    "say": "Der Trainer ruft. Gleichzeitig lassen Neon zwei, Neon drei, Rot sechs und Rot sieben ihre Bälle liegen und sprinten in die Spielzone. Der Trainer spielt Spieler drei einen Ball zu.",
+    "say": "Der Trainer ruft. Gleichzeitig lassen Spieler zwei, Spieler drei, Spieler sechs und Spieler sieben ihre Bälle liegen und sprinten in die Spielzone. Der Trainer spielt Spieler drei einen Ball zu.",
     "moves": [
      {
       "who": "n2",
@@ -423,7 +423,7 @@
    },
    {
     "label": "2 gegen 2",
-    "say": "Spieler drei spielt zu Spieler zwei, der oben an Rot sechs vorbeidribbelt und ins rechte Minitor schießt. Das gibt einen Punkt für Team Neon. Unten dribbeln die anderen Paare weiter.",
+    "say": "Spieler drei spielt zu Spieler zwei, der oben an Spieler sechs vorbeidribbelt und ins rechte Minitor schießt. Das gibt einen Punkt für Team Neon. Unten dribbeln die anderen Paare weiter.",
     "moves": [
      {
       "who": "c1",
@@ -702,7 +702,7 @@
     "steps": [
      {
       "label": "Zurück zum Ball",
-      "say": "Nach dem Tor sprinten Neon zwei, Neon drei, Rot sechs und Rot sieben gleichzeitig zurück zu ihrem Ball.",
+      "say": "Nach dem Tor sprinten Spieler zwei, Spieler drei, Spieler sechs und Spieler sieben gleichzeitig zurück zu ihrem Ball.",
       "moves": [
        {
         "who": "n2",
@@ -740,7 +740,7 @@
      },
      {
       "label": "Die nächsten vier",
-      "say": "Der Trainer ruft, und gleichzeitig sprinten Neon vier, Neon fünf, Rot acht und Rot neun ohne Ball durch die Lücken in die Spielzone.",
+      "say": "Der Trainer ruft, und gleichzeitig sprinten Spieler vier, Spieler fünf, Spieler acht und Spieler neun ohne Ball durch die Lücken in die Spielzone.",
       "moves": [
        {
         "who": "n4",
@@ -954,7 +954,7 @@
     "steps": [
      {
       "label": "Oben 2 gegen 2, unten 1 gegen 1",
-      "say": "Gleichzeitig: Oben spielt Spieler drei zu Spieler zwei. Unten schirmt Neon vier den Ball gegen Rot acht ab, und Rot neun spitzelt Neon fünf den Ball weg.",
+      "say": "Gleichzeitig: Oben spielt Spieler drei zu Spieler zwei. Unten schirmt Spieler vier den Ball gegen Spieler acht ab, und Spieler neun spitzelt Spieler fünf den Ball weg.",
       "moves": [
        {
         "who": "g",
@@ -1023,7 +1023,7 @@
      },
      {
       "label": "Tor oben, Ball unten zählt",
-      "say": "Spieler zwei schießt ins rechte Minitor. In diesem Moment hat unten Neon vier den Ball und Rot neun auch: Das gibt einen Punkt für Team Neon und einen Punkt für Team Rot.",
+      "say": "Spieler zwei schießt ins rechte Minitor. In diesem Moment hat unten Spieler vier den Ball und Spieler neun auch: Das gibt einen Punkt für Team Neon und einen Punkt für Team Rot.",
       "moves": [
        {
         "who": "n2",

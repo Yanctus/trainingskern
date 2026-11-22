@@ -196,7 +196,7 @@
   "steps": [
    {
     "label": "Doppelte Bewegung",
-    "say": "Neon zwei geht erst ein paar Schritte in die eine Richtung, dann blitzschnell in die andere. Rot drei geht auf die Finte ein.",
+    "say": "Spieler zwei geht erst ein paar Schritte in die eine Richtung, dann blitzschnell in die andere. Spieler drei geht auf die Finte ein.",
     "moves": [
      {
       "who": "n2",
@@ -228,7 +228,7 @@
    },
    {
     "label": "Pass von außen",
-    "say": "Der Außenspieler oben rechts passt in den freien Raum zu Neon zwei.",
+    "say": "Der Außenspieler oben rechts passt in den freien Raum zu Spieler zwei.",
     "moves": [
      {
       "who": "b1",
@@ -242,7 +242,7 @@
    },
    {
     "label": "Abschluss: Punkt",
-    "say": "Neon zwei nimmt den Ball mit und schießt flach ins Eck, und das gibt einen Punkt für Neon.",
+    "say": "Spieler zwei nimmt den Ball mit und schießt flach ins Eck, und das gibt einen Punkt für Neon.",
     "moves": [
      {
       "who": "b1",
@@ -369,7 +369,7 @@
     "steps": [
      {
       "label": "Zweikampf",
-      "say": "Neon zwei dribbelt los, Rot drei geht dazwischen.",
+      "say": "Spieler zwei dribbelt los, Spieler drei geht dazwischen.",
       "moves": [
        {
         "who": "n2",
@@ -392,7 +392,7 @@
      },
      {
       "label": "Ball erobert",
-      "say": "Rot drei spitzelt den Ball weg und hat ihn jetzt selbst.",
+      "say": "Spieler drei spitzelt den Ball weg und hat ihn jetzt selbst.",
       "moves": [
        {
         "who": "b1",
@@ -415,7 +415,7 @@
      },
      {
       "label": "Zum anderen Tor",
-      "say": "Rot drei dreht sofort um, dribbelt auf das andere Tor zu und schießt. Das gibt einen Punkt für Rot.",
+      "say": "Spieler drei dreht sofort um, dribbelt auf das andere Tor zu und schießt. Das gibt einen Punkt für Rot.",
       "moves": [
        {
         "who": "r3",
@@ -536,7 +536,7 @@
     "steps": [
      {
       "label": "Hinein in die Torzone",
-      "say": "Neon zwei dribbelt in die Torzone. Gleichzeitig startet der Außenspieler oben rechts und presst.",
+      "say": "Spieler zwei dribbelt in die Torzone. Gleichzeitig startet der Außenspieler oben rechts und presst.",
       "moves": [
        {
         "who": "n2",
@@ -560,7 +560,7 @@
      },
      {
       "label": "Ball erobert",
-      "say": "Der Außenspieler erobert den Ball und passt sofort zu Rot drei.",
+      "say": "Der Außenspieler erobert den Ball und passt sofort zu Spieler drei.",
       "moves": [
        {
         "who": "f2",
@@ -583,7 +583,7 @@
      },
      {
       "label": "Gegenangriff",
-      "say": "Rot drei dribbelt aufs andere Tor zu und schießt. Das gibt einen Punkt für Rot.",
+      "say": "Spieler drei dribbelt aufs andere Tor zu und schießt. Das gibt einen Punkt für Rot.",
       "moves": [
        {
         "who": "r3",

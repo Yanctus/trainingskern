@@ -206,7 +206,7 @@
   "steps": [
    {
     "label": "Ball laufen lassen",
-    "say": "Team Neon hat den Ball. Neon sieben spielt zu Neon neun und der zu Neon zehn. Gleichzeitig schiebt Team Rot als Kette mit zur Seite.",
+    "say": "Team Neon hat den Ball. Spieler sieben spielt zu Spieler neun und der zu Spieler zehn. Gleichzeitig schiebt Team Rot als Kette mit zur Seite.",
     "moves": [
      {
       "who": "b1",
@@ -256,7 +256,7 @@
    },
    {
     "label": "Pressen und absichern",
-    "say": "Rot vier presst Neon zehn bis an den Rand seiner Zone. Rot fünf sichert schräg dahinter ab. Neon zehn schaut, ob es eine Lücke für einen Steilpass gibt.",
+    "say": "Spieler vier presst Spieler zehn bis an den Rand seiner Zone. Spieler fünf sichert schräg dahinter ab. Spieler zehn schaut, ob es eine Lücke für einen Steilpass gibt.",
     "moves": [
      {
       "who": "r4",
@@ -295,7 +295,7 @@
    },
    {
     "label": "Pass abgefangen",
-    "say": "Neon zehn spielt den Steilpass, aber Rot fünf steht genau richtig und fängt den Ball ab.",
+    "say": "Spieler zehn spielt den Steilpass, aber Spieler fünf steht genau richtig und fängt den Ball ab.",
     "moves": [
      {
       "who": "b1",
@@ -309,7 +309,7 @@
    },
    {
     "label": "Zur Stange: Punkt",
-    "say": "Jetzt ist Team Rot am Ball. Rot fünf spielt sofort flach durch die Neon-Kette an die Stange unten rechts, und das gibt einen Punkt für Team Rot. Danach bekommt Team Neon einen neuen Ball vom Trainer.",
+    "say": "Jetzt ist Team Rot am Ball. Spieler fünf spielt sofort flach durch die Neon-Kette an die Stange unten rechts, und das gibt einen Punkt für Team Rot. Danach bekommt Team Neon einen neuen Ball vom Trainer.",
     "moves": [
      {
       "who": "b1",
@@ -431,7 +431,7 @@
     "steps": [
      {
       "label": "Die Lücke sehen",
-      "say": "Rot vier und Rot fünf stehen zu weit auseinander. Neon zehn schaut hoch und sieht die Lücke zwischen den beiden.",
+      "say": "Spieler vier und Spieler fünf stehen zu weit auseinander. Spieler zehn schaut hoch und sieht die Lücke zwischen den beiden.",
       "moves": [
        {
         "who": "n10",
@@ -445,7 +445,7 @@
      },
      {
       "label": "Durch die Lücke: Punkt",
-      "say": "Neon zehn spielt flach durch die Lücke ins Minitor, und das gibt zwei Punkte für Team Neon. Darum: eng zusammen bleiben!",
+      "say": "Spieler zehn spielt flach durch die Lücke ins Minitor, und das gibt zwei Punkte für Team Neon. Darum: eng zusammen bleiben!",
       "moves": [
        {
         "who": "b1",
@@ -551,7 +551,7 @@
     "steps": [
      {
       "label": "Schlechte Ballannahme",
-      "say": "Neon sieben spielt zu Neon neun. Der Ball springt ihm vom Fuß. Sofort sprintet Rot fünf in die Zone von Neon und presst, Rot vier und Rot drei schieben nach innen und sichern ab.",
+      "say": "Spieler sieben spielt zu Spieler neun. Der Ball springt ihm vom Fuß. Sofort sprintet Spieler fünf in die Zone von Neon und presst, Spieler vier und Spieler drei schieben nach innen und sichern ab.",
       "moves": [
        {
         "who": "b1",
@@ -601,7 +601,7 @@
      },
      {
       "label": "Ball erobert: Punkt",
-      "say": "Rot fünf erobert den Ball, dribbelt an Neon neun vorbei und schießt flach ins untere Minitor, und das gibt zwei Punkte für Team Rot. Danach bekommt Team Neon einen neuen Ball vom Trainer.",
+      "say": "Spieler fünf erobert den Ball, dribbelt an Spieler neun vorbei und schießt flach ins untere Minitor, und das gibt zwei Punkte für Team Rot. Danach bekommt Team Neon einen neuen Ball vom Trainer.",
       "moves": [
        {
         "who": "r5",

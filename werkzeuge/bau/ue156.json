@@ -234,7 +234,7 @@
   "steps": [
    {
     "label": "Ball laufen lassen",
-    "say": "Team Rot greift nach oben an. Rot sieben spielt zu Rot vierzehn, der weiter zu Rot elf. Neon zehn läuft sofort an.",
+    "say": "Team Rot greift nach oben an. Spieler sieben spielt zu Spieler vierzehn, der weiter zu Spieler elf. Spieler zehn läuft sofort an.",
     "moves": [
      {
       "who": "b1",
@@ -266,7 +266,7 @@
    },
    {
     "label": "Die Mitte ist zu",
-    "say": "Neon zwei und Neon vier schieben zusammen und machen die Mitte zu. Rot elf kommt nicht durch und spielt nach außen zu Rot zwölf.",
+    "say": "Spieler zwei und Spieler vier schieben zusammen und machen die Mitte zu. Spieler elf kommt nicht durch und spielt nach außen zu Spieler zwölf.",
     "moves": [
      {
       "who": "n2",
@@ -307,7 +307,7 @@
    },
    {
     "label": "Außen: nur ein Punkt",
-    "say": "Rot zwölf dribbelt außen hoch und trifft ins rechte Minitor. Das gibt einen Punkt für Team Rot, das mittlere Tor bleibt zu. Dann bringt der Trainer einen neuen Ball.",
+    "say": "Spieler zwölf dribbelt außen hoch und trifft ins rechte Minitor. Das gibt einen Punkt für Team Rot, das mittlere Tor bleibt zu. Dann bringt der Trainer einen neuen Ball.",
     "moves": [
      {
       "who": "r12",
@@ -481,7 +481,7 @@
     "steps": [
      {
       "label": "Von innen anlaufen",
-      "say": "Rot elf hat den Ball. Neon vier läuft von innen an, und Rot elf muss nach außen dribbeln.",
+      "say": "Spieler elf hat den Ball. Spieler vier läuft von innen an, und Spieler elf muss nach außen dribbeln.",
       "moves": [
        {
         "who": "n4",
@@ -505,7 +505,7 @@
      },
      {
       "label": "Außen erobert",
-      "say": "Dort wartet Neon drei, erobert den Ball und dribbelt los. Jetzt greift Team Neon nach unten an.",
+      "say": "Dort wartet Spieler drei, erobert den Ball und dribbelt los. Jetzt greift Team Neon nach unten an.",
       "moves": [
        {
         "who": "n3",
@@ -663,7 +663,7 @@
     "steps": [
      {
       "label": "Gemeinsam raus",
-      "say": "Team Rot hat schon acht Pässe gespielt. Rot neun spielt zu Rot dreizehn, und Neon acht und Neon zwei rücken gemeinsam heraus.",
+      "say": "Team Rot hat schon acht Pässe gespielt. Spieler neun spielt zu Spieler dreizehn, und Spieler acht und Spieler zwei rücken gemeinsam heraus.",
       "moves": [
        {
         "who": "b1",
@@ -695,7 +695,7 @@
      },
      {
       "label": "Abgefangen",
-      "say": "Rot dreizehn will zu Rot vierzehn passen, aber Neon zwei fängt den Ball ab. Keine zehn Pässe für Team Rot, und jetzt greift Team Neon an.",
+      "say": "Spieler dreizehn will zu Spieler vierzehn passen, aber Spieler zwei fängt den Ball ab. Keine zehn Pässe für Team Rot, und jetzt greift Team Neon an.",
       "moves": [
        {
         "who": "n2",

@@ -234,7 +234,7 @@
   "steps": [
    {
     "label": "Wettlauf ums Raster",
-    "say": "Gleichzeitig sprinten Neon vier und Rot sieben los. Beide brauchen das Feld unten rechts. Neon vier ist schneller, legt sein Hütchen hin und hat drei in einer Reihe.",
+    "say": "Gleichzeitig sprinten Spieler vier und Spieler sieben los. Beide brauchen das Feld unten rechts. Spieler vier ist schneller, legt sein Hütchen hin und hat drei in einer Reihe.",
     "moves": [
      {
       "who": "n4",
@@ -266,7 +266,7 @@
    },
    {
     "label": "Zwei gegen eins mit Ball",
-    "say": "Team Neon hat gewonnen. Gleichzeitig laufen Neon zwei und Neon drei ins Spielfeld, Rot acht verteidigt allein. Der Trainer spielt Neon zwei den Ball zu.",
+    "say": "Team Neon hat gewonnen. Gleichzeitig laufen Spieler zwei und Spieler drei ins Spielfeld, Spieler acht verteidigt allein. Der Trainer spielt Spieler zwei den Ball zu.",
     "moves": [
      {
       "who": "n2",
@@ -305,7 +305,7 @@
    },
    {
     "label": "Überzahl ausspielen",
-    "say": "Neon zwei dribbelt an, Rot acht kommt heraus. Neon zwei spielt zu Neon drei, der in die Zone dribbelt und ins Minitor schießt. Das gibt einen Punkt für Team Neon.",
+    "say": "Spieler zwei dribbelt an, Spieler acht kommt heraus. Spieler zwei spielt zu Spieler drei, der in die Zone dribbelt und ins Minitor schießt. Das gibt einen Punkt für Team Neon.",
     "moves": [
      {
       "who": "n2",
@@ -365,7 +365,7 @@
    },
    {
     "label": "Ein Spieler mehr",
-    "say": "Jetzt kommt in jedem Team ein Spieler dazu: Gleichzeitig laufen Neon vier und Rot sieben ins Spielfeld. Der Trainer spielt den nächsten Ball zu Neon vier, und es geht drei gegen zwei weiter.",
+    "say": "Jetzt kommt in jedem Team ein Spieler dazu: Gleichzeitig laufen Spieler vier und Spieler sieben ins Spielfeld. Der Trainer spielt den nächsten Ball zu Spieler vier, und es geht drei gegen zwei weiter.",
     "moves": [
      {
       "who": "n4",
@@ -490,7 +490,7 @@
     "steps": [
      {
       "label": "Verteidiger anlocken",
-      "say": "Neon zwei dribbelt direkt auf Rot acht zu. Gleichzeitig bleibt Neon drei breit und läuft mit nach vorn.",
+      "say": "Spieler zwei dribbelt direkt auf Spieler acht zu. Gleichzeitig bleibt Spieler drei breit und läuft mit nach vorn.",
       "moves": [
        {
         "who": "n2",
@@ -522,7 +522,7 @@
      },
      {
       "label": "Pass in die Lücke",
-      "say": "Rot acht kommt heraus, und Neon zwei spielt sofort zu Neon drei. Der dribbelt in die Zone und schießt ins Minitor. Das gibt einen Punkt für Team Neon.",
+      "say": "Spieler acht kommt heraus, und Spieler zwei spielt sofort zu Spieler drei. Der dribbelt in die Zone und schießt ins Minitor. Das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "g",
@@ -699,7 +699,7 @@
     "steps": [
      {
       "label": "Durchbruch auf rechts",
-      "say": "Neon sechs dribbelt mit Tempo nach rechts in die Zone. Gleichzeitig läuft Rot elf hinterher, darf aber nicht in die Zone.",
+      "say": "Spieler sechs dribbelt mit Tempo nach rechts in die Zone. Gleichzeitig läuft Spieler elf hinterher, darf aber nicht in die Zone.",
       "moves": [
        {
         "who": "n6",
@@ -723,7 +723,7 @@
      },
      {
       "label": "Abschluss aus der Zone",
-      "say": "Neon sechs schießt aus der Zone ins Minitor. Das gibt einen Punkt für Team Neon.",
+      "say": "Spieler sechs schießt aus der Zone ins Minitor. Das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "b1",

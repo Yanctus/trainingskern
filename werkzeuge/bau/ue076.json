@@ -398,7 +398,7 @@
     "steps": [
      {
       "label": "Antäuschen und anbieten",
-      "say": "Spieler zwei täuscht nach vorn an und kommt seitlich zurück. Der Verteidiger Rot vier wartet noch.",
+      "say": "Spieler zwei täuscht nach vorn an und kommt seitlich zurück. Der Verteidiger Spieler vier wartet noch.",
       "moves": [
        {
         "who": "n2",
@@ -421,7 +421,7 @@
      },
      {
       "label": "Pass, jetzt darf er los",
-      "say": "Spieler eins passt, und genau jetzt darf Rot vier angreifen.",
+      "say": "Spieler eins passt, und genau jetzt darf Spieler vier angreifen.",
       "moves": [
        {
         "who": "b1",
@@ -444,7 +444,7 @@
      },
      {
       "label": "Vorbei in die Endzone",
-      "say": "Spieler zwei dribbelt eng und schnell an Rot vier vorbei in die Endzone, ohne berührt zu werden.",
+      "say": "Spieler zwei dribbelt eng und schnell an Spieler vier vorbei in die Endzone, ohne berührt zu werden.",
       "moves": [
        {
         "who": "n2",

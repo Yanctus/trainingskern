@@ -194,7 +194,7 @@
   "steps": [
    {
     "label": "Pass",
-    "say": "Team Neon greift nach oben an. Neon fünf passt zu Neon vier, und der spielt steil zu Neon sieben.",
+    "say": "Team Neon greift nach oben an. Spieler fünf passt zu Spieler vier, und der spielt steil zu Spieler sieben.",
     "moves": [
      {
       "who": "b1",
@@ -217,7 +217,7 @@
    },
    {
     "label": "Alle in die obere Hälfte",
-    "say": "Erst wenn alle fünf in der oberen Hälfte sind, darf Team Neon schießen. Darum laufen Neon vier, fünf und sechs gleichzeitig nach vorn.",
+    "say": "Erst wenn alle fünf in der oberen Hälfte sind, darf Team Neon schießen. Darum laufen Spieler vier, fünf und sechs gleichzeitig nach vorn.",
     "moves": [
      {
       "who": "n4",
@@ -247,7 +247,7 @@
    },
    {
     "label": "Kombinieren",
-    "say": "Neon elf startet in die Lücke, und Neon sieben spielt ihm den Ball quer in den Lauf.",
+    "say": "Spieler elf startet in die Lücke, und Spieler sieben spielt ihm den Ball quer in den Lauf.",
     "moves": [
      {
       "who": "n11",
@@ -270,7 +270,7 @@
    },
    {
     "label": "Abschluss: Punkt",
-    "say": "Neon elf schießt flach ins kurze Eck, und das gibt einen Punkt für Team Neon. Danach spielt der obere Torwart zu Team Rot, und Team Rot greift nach unten an.",
+    "say": "Spieler elf schießt flach ins kurze Eck, und das gibt einen Punkt für Team Neon. Danach spielt der obere Torwart zu Team Rot, und Team Rot greift nach unten an.",
     "moves": [
      {
       "who": "b1",
@@ -420,7 +420,7 @@
     "steps": [
      {
       "label": "Abgefangen",
-      "say": "Team Neon greift oben an. Neon sieben passt zu Neon fünf, aber Rot zwei geht dazwischen und fängt den Ball ab.",
+      "say": "Team Neon greift oben an. Spieler sieben passt zu Spieler fünf, aber Spieler zwei geht dazwischen und fängt den Ball ab.",
       "moves": [
        {
         "who": "r2",
@@ -443,7 +443,7 @@
      },
      {
       "label": "Kopf hoch",
-      "say": "Rot zwei hebt sofort den Kopf und sieht den freien Raum hinter Team Neon. Rot neun läuft schon los.",
+      "say": "Spieler zwei hebt sofort den Kopf und sieht den freien Raum hinter Team Neon. Spieler neun läuft schon los.",
       "moves": [
        {
         "who": "r2",
@@ -466,7 +466,7 @@
      },
      {
       "label": "Steil und alle mit",
-      "say": "Rot zwei spielt sofort steil zu Rot neun. Gleichzeitig laufen Rot zwei und Rot drei in die untere Hälfte, denn das ganze Team muss mit.",
+      "say": "Spieler zwei spielt sofort steil zu Spieler neun. Gleichzeitig laufen Spieler zwei und Spieler drei in die untere Hälfte, denn das ganze Team muss mit.",
       "moves": [
        {
         "who": "b1",
@@ -507,7 +507,7 @@
      },
      {
       "label": "Konter: Punkt",
-      "say": "Rot neun schießt ins kurze Eck, und das gibt einen Punkt für Team Rot.",
+      "say": "Spieler neun schießt ins kurze Eck, und das gibt einen Punkt für Team Rot.",
       "moves": [
        {
         "who": "b1",
@@ -641,7 +641,7 @@
     "steps": [
      {
       "label": "Ball verloren",
-      "say": "Team Neon hat den Ball an Rot zehn verloren. Sofort rufen alle: Zurück! Alle fünf sprinten gleichzeitig hinter den Ball.",
+      "say": "Team Neon hat den Ball an Spieler zehn verloren. Sofort rufen alle: Zurück! Alle fünf sprinten gleichzeitig hinter den Ball.",
       "moves": [
        {
         "who": "n4",
@@ -715,7 +715,7 @@
      },
      {
       "label": "Konter gestoppt",
-      "say": "Team Neon steht wieder eng vor dem eigenen Tor. Rot zehn findet keine Lücke, und Neon elf erobert den Ball zurück.",
+      "say": "Team Neon steht wieder eng vor dem eigenen Tor. Spieler zehn findet keine Lücke, und Spieler elf erobert den Ball zurück.",
       "moves": [
        {
         "who": "n11",

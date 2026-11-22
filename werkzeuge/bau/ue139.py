@@ -49,15 +49,15 @@ u = {"title": "Direktpass und Koordination", "code": "UE-139", "kind": "Übungsf
   V("Coaching-Punkt", "Jetzt zum Coaching-Punkt: Mit beiden Füßen passen.", "Beide Füße",
     "Geht der Pass links am Hütchen vorbei, spielt man mit dem linken Fuß, geht er rechts vorbei, mit dem rechten. So muss sich niemand verrenken, der Ball kommt genau und mit einem Kontakt zurück.",
     sp(), BAELLE,
-    [S("Über das Hütchen", "Neon fünf und Rot neun gehen einen Schritt nach oben und passen über das obere Hütchen, jeder mit dem Fuß, der näher an der Linie ist.",
+    [S("Über das Hütchen", "Spieler fünf und Spieler neun gehen einen Schritt nach oben und passen über das obere Hütchen, jeder mit dem Fuß, der näher an der Linie ist.",
        mv("n5", [45.5, 9.5]), dr("r9", "b9", [54.5, 9.5]), ps("b9", [46.1, 10.1], after=True)),
      S("Unter dem Hütchen", "Dann geht es unter dem unteren Hütchen hindurch, jetzt mit dem anderen Fuß. Danach lassen beide den Ball liegen und laufen zur Koordination.",
        dr("n5", "b9", [45.5, 22]), mv("r9", [54.5, 22], delay=0.2), ps("b9", [55.1, 22.6], after=True))]),
   V("Coaching-Punkt", "Der zweite Coaching-Punkt: Saubere Technik, schnelle Füße.", "Schnelle Füße",
     "In Leiter und Hürden zählt saubere Technik vor Tempo: kurze Schritte, auf den Fußballen, Arme mitnehmen, nichts umstoßen. Erst wenn das sitzt, wird es schneller.",
     sp(), BAELLE,
-    [S("Über die Hürden", "Neon fünf läuft mit kurzen, schnellen Schritten über die Hürden nach unten und stellt sich bei der Gruppe gegenüber an.",
+    [S("Über die Hürden", "Spieler fünf läuft mit kurzen, schnellen Schritten über die Hürden nach unten und stellt sich bei der Gruppe gegenüber an.",
        *weg("n5", [[45.1, 25], [45.1, 36], [20.5, 45.7]])),
-     S("Durch die Leiter", "Danach läuft Neon sechs mit schnellen Füßen durch die Leiter nach oben und stellt sich oben hinten an.",
+     S("Durch die Leiter", "Danach läuft Spieler sechs mit schnellen Füßen durch die Leiter nach oben und stellt sich oben hinten an.",
        *weg("n6", [[38.9, 37], [38.9, 24], [20.5, 15.7]]))])]}
 json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)

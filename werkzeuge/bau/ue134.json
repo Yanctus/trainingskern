@@ -206,7 +206,7 @@
   "steps": [
    {
     "label": "Ball ins Spiel, Sprinter los",
-    "say": "Der Trainer spielt Neon fünf den Ball zu, und alle vier laufen ins Feld: Neon greift oben an, Rot verteidigt. Gleichzeitig sprinten rechts Neon sechs und Neon sieben zu den Stangen.",
+    "say": "Der Trainer spielt Spieler fünf den Ball zu, und alle vier laufen ins Feld: Neon greift oben an, Rot verteidigt. Gleichzeitig sprinten rechts Spieler sechs und Spieler sieben zu den Stangen.",
     "moves": [
      {
       "who": "b1",
@@ -271,7 +271,7 @@
    },
    {
     "label": "Kombinieren, durchstecken",
-    "say": "Neon fünf spielt zu Neon zwei und läuft sofort los, hinter die Abwehr. Neon zwei steckt den Ball durch. Rechts sprinten die beiden zurück und klatschen Rot zwölf und Rot dreizehn ab.",
+    "say": "Spieler fünf spielt zu Spieler zwei und läuft sofort los, hinter die Abwehr. Spieler zwei steckt den Ball durch. Rechts sprinten die beiden zurück und klatschen Spieler zwölf und Spieler dreizehn ab.",
     "moves": [
      {
       "who": "b1",
@@ -347,7 +347,7 @@
    },
    {
     "label": "Abschluss: Punkt",
-    "say": "Neon fünf schließt direkt ab und trifft ins obere Minitor, und das gibt einen Punkt für Team Neon. Rechts laufen jetzt Rot zwölf und Rot dreizehn.",
+    "say": "Spieler fünf schließt direkt ab und trifft ins obere Minitor, und das gibt einen Punkt für Team Neon. Rechts laufen jetzt Spieler zwölf und Spieler dreizehn.",
     "moves": [
      {
       "who": "b1",
@@ -379,7 +379,7 @@
    },
    {
     "label": "Die nächsten vier",
-    "say": "Der Angriff ist vorbei, die vier gehen raus, und Neon drei, Neon vier, Rot neun und Rot zehn sind dran. Nach sechzig Sekunden wechseln vier Spieler die Zone.",
+    "say": "Der Angriff ist vorbei, die vier gehen raus, und Spieler drei, Spieler vier, Spieler neun und Spieler zehn sind dran. Nach sechzig Sekunden wechseln vier Spieler die Zone.",
     "moves": [
      {
       "who": "n4",
@@ -556,7 +556,7 @@
     "steps": [
      {
       "label": "Abspielen und starten",
-      "say": "Neon fünf spielt zu Neon zwei und startet im selben Moment an Rot elf vorbei in die Tiefe.",
+      "say": "Spieler fünf spielt zu Spieler zwei und startet im selben Moment an Spieler elf vorbei in die Tiefe.",
       "moves": [
        {
         "who": "b1",
@@ -588,7 +588,7 @@
      },
      {
       "label": "Rückpass in den Lauf: Punkt",
-      "say": "Neon zwei spielt den Ball genau in den Lauf, Neon fünf ist frei und trifft ins Minitor, und das gibt einen Punkt für Team Neon. Dann sind die nächsten vier dran.",
+      "say": "Spieler zwei spielt den Ball genau in den Lauf, Spieler fünf ist frei und trifft ins Minitor, und das gibt einen Punkt für Team Neon. Dann sind die nächsten vier dran.",
       "moves": [
        {
         "who": "b1",
@@ -731,7 +731,7 @@
     "steps": [
      {
       "label": "Hin zur Stange",
-      "say": "Neon sechs und Neon sieben spurten gleichzeitig los und tippen oben die Stangen an.",
+      "say": "Spieler sechs und Spieler sieben spurten gleichzeitig los und tippen oben die Stangen an.",
       "moves": [
        {
         "who": "n6",
@@ -754,7 +754,7 @@
      },
      {
       "label": "Zurück und abklatschen",
-      "say": "Mit dem gleichen Tempo geht es zurück. Sie klatschen Rot zwölf und Rot dreizehn ab, die sofort losspurten, und erholen sich dann kurz.",
+      "say": "Mit dem gleichen Tempo geht es zurück. Sie klatschen Spieler zwölf und Spieler dreizehn ab, die sofort losspurten, und erholen sich dann kurz.",
       "moves": [
        {
         "who": "n6",

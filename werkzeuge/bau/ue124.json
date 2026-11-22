@@ -156,7 +156,7 @@
   "steps": [
    {
     "label": "Anspiel",
-    "say": "Neon zwei spielt diagonal zu Neon drei, der in die rechte Hälfte läuft. Der Pass ist das Signal für Rot sieben.",
+    "say": "Spieler zwei spielt diagonal zu Spieler drei, der in die rechte Hälfte läuft. Der Pass ist das Signal für Spieler sieben.",
     "moves": [
      {
       "who": "n3",
@@ -188,7 +188,7 @@
    },
    {
     "label": "Selbst gehen",
-    "say": "Neon drei entscheidet sich für das eins gegen eins und dribbelt auf Rot sieben zu. Rot sieben kommt heraus.",
+    "say": "Spieler drei entscheidet sich für das eins gegen eins und dribbelt auf Spieler sieben zu. Spieler sieben kommt heraus.",
     "moves": [
      {
       "who": "n3",
@@ -212,7 +212,7 @@
    },
    {
     "label": "Vorbei und Abschluss",
-    "say": "Neon drei zieht nach unten an Rot sieben vorbei und schießt ins rechte Minitor. Das gibt zwei Punkte für Team Neon.",
+    "say": "Spieler drei zieht nach unten an Spieler sieben vorbei und schießt ins rechte Minitor. Das gibt zwei Punkte für Team Neon.",
     "moves": [
      {
       "who": "n3",
@@ -333,7 +333,7 @@
     "steps": [
      {
       "label": "Eng heran",
-      "say": "Rot sieben läuft schnell und eng an Neon drei heran.",
+      "say": "Spieler sieben läuft schnell und eng an Spieler drei heran.",
       "moves": [
        {
         "who": "r7",
@@ -347,7 +347,7 @@
      },
      {
       "label": "Quer zum Mitspieler",
-      "say": "Neon drei traut sich nicht und spielt quer zu Neon vier in die andere Hälfte. Gleichzeitig kommt Rot acht heraus.",
+      "say": "Spieler drei traut sich nicht und spielt quer zu Spieler vier in die andere Hälfte. Gleichzeitig kommt Spieler acht heraus.",
       "moves": [
        {
         "who": "g",
@@ -370,7 +370,7 @@
      },
      {
       "label": "Eins gegen eins links",
-      "say": "Neon vier dribbelt an Rot acht vorbei und trifft ins obere Minitor. Das gibt nur einen Punkt für Team Neon.",
+      "say": "Spieler vier dribbelt an Spieler acht vorbei und trifft ins obere Minitor. Das gibt nur einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "n4",
@@ -465,7 +465,7 @@
     "steps": [
      {
       "label": "Verteidiger übertreibt",
-      "say": "Rot sieben stürmt auf Neon drei zu und kommt zu nah heran.",
+      "say": "Spieler sieben stürmt auf Spieler drei zu und kommt zu nah heran.",
       "moves": [
        {
         "who": "r7",
@@ -479,7 +479,7 @@
      },
      {
       "label": "Drehen und Abschluss",
-      "say": "Neon drei dreht scharf weg, lässt Rot sieben stehen und schießt ins Minitor. Das gibt zwei Punkte für Team Neon.",
+      "say": "Spieler drei dreht scharf weg, lässt Spieler sieben stehen und schießt ins Minitor. Das gibt zwei Punkte für Team Neon.",
       "moves": [
        {
         "who": "n3",

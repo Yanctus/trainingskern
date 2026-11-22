@@ -203,7 +203,7 @@
   "steps": [
    {
     "label": "Wettlauf zum Ball",
-    "say": "Der Trainer spielt einen Ball ins Feld. Gleichzeitig rennen Neon eins und Rot fünf los.",
+    "say": "Der Trainer spielt einen Ball ins Feld. Gleichzeitig rennen Spieler eins und Spieler fünf los.",
     "moves": [
      {
       "who": "c1",
@@ -235,7 +235,7 @@
    },
    {
     "label": "Zum Dreieck",
-    "say": "Rot fünf ist zuerst am Ball und dribbelt zum orangen Dreieck oben, Neon eins jagt hinterher.",
+    "say": "Spieler fünf ist zuerst am Ball und dribbelt zum orangen Dreieck oben, Spieler eins jagt hinterher.",
     "moves": [
      {
       "who": "r5",
@@ -269,7 +269,7 @@
    },
    {
     "label": "Gestoppt: Punkt",
-    "say": "Rot fünf stoppt den Ball mitten im Dreieck, und das gibt einen Punkt für Rot.",
+    "say": "Spieler fünf stoppt den Ball mitten im Dreieck, und das gibt einen Punkt für Rot.",
     "moves": [
      {
       "who": "r5",
@@ -372,7 +372,7 @@
     "steps": [
      {
       "label": "Ins gleiche Dreieck",
-      "say": "Neon eins sieht, dass im orangen Dreieck oben schon ein Ball von Neon liegt, und dribbelt genau dorthin.",
+      "say": "Spieler eins sieht, dass im orangen Dreieck oben schon ein Ball von Neon liegt, und dribbelt genau dorthin.",
       "moves": [
        {
         "who": "n1",
@@ -406,7 +406,7 @@
      },
      {
       "label": "Zwei Punkte, Dreieck weg",
-      "say": "Neon eins stoppt den Ball im selben Dreieck, und das gibt zwei Punkte für Neon. Der Trainer nimmt die Hütchen des Dreiecks weg.",
+      "say": "Spieler eins stoppt den Ball im selben Dreieck, und das gibt zwei Punkte für Neon. Der Trainer nimmt die Hütchen des Dreiecks weg.",
       "moves": [
        {
         "who": "n1",
@@ -700,7 +700,7 @@
      },
      {
       "label": "Beide dribbeln los",
-      "say": "Gleichzeitig dribbelt Rot fünf zum Dreieck oben und Rot sieben zum gelben Dreieck unten rechts. Kopf hoch, damit niemand zusammenstößt.",
+      "say": "Gleichzeitig dribbelt Spieler fünf zum Dreieck oben und Spieler sieben zum gelben Dreieck unten rechts. Kopf hoch, damit niemand zusammenstößt.",
       "moves": [
        {
         "who": "r5",

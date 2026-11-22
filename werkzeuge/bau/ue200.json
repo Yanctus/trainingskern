@@ -171,7 +171,7 @@
   "steps": [
    {
     "label": "Kopf hoch",
-    "say": "Der Springer unten hat den Ball. Bevor der Pass kommt, schaut Neon vier sich um: Wo ist der Springer in der Mitte, wo sind die Gegner? Dann kommt der Ball.",
+    "say": "Der Springer unten hat den Ball. Bevor der Pass kommt, schaut Spieler vier sich um: Wo ist der Springer in der Mitte, wo sind die Gegner? Dann kommt der Ball.",
     "moves": [
      {
       "who": "n4",
@@ -194,7 +194,7 @@
    },
    {
     "label": "Zum Springer in der Mitte",
-    "say": "Auch der Springer in der Mitte schaut sich um und weiß schon, wo der Springer oben steht. Neon vier spielt ihn sofort an.",
+    "say": "Auch der Springer in der Mitte schaut sich um und weiß schon, wo der Springer oben steht. Spieler vier spielt ihn sofort an.",
     "moves": [
      {
       "who": "f3",
@@ -346,7 +346,7 @@
     "steps": [
      {
       "label": "Auf die Schulter",
-      "say": "Neon vier hat den Ball. Der Springer in der Mitte stellt sich seitlich hinter Rot acht. Neon vier hebt den Kopf und sieht die Lücke zwischen Rot sechs und Rot acht.",
+      "say": "Spieler vier hat den Ball. Der Springer in der Mitte stellt sich seitlich hinter Spieler acht. Spieler vier hebt den Kopf und sieht die Lücke zwischen Spieler sechs und Spieler acht.",
       "moves": [
        {
         "who": "f3",
@@ -369,7 +369,7 @@
      },
      {
       "label": "Durch die Lücke: Punkt",
-      "say": "Neon vier spielt flach durch die Lücke. Der Springer nimmt den Ball mit dem ersten Kontakt nach vorn mit und spielt zum Springer oben. Das gibt einen Punkt für Team Neon.",
+      "say": "Spieler vier spielt flach durch die Lücke. Der Springer nimmt den Ball mit dem ersten Kontakt nach vorn mit und spielt zum Springer oben. Das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "b1",
@@ -501,7 +501,7 @@
     "steps": [
      {
       "label": "Ball erobert",
-      "say": "Neon fünf will zum Springer oben passen, aber Rot acht fängt den Ball ab. Ab jetzt greift Team Rot an.",
+      "say": "Spieler fünf will zum Springer oben passen, aber Spieler acht fängt den Ball ab. Ab jetzt greift Team Rot an.",
       "moves": [
        {
         "who": "r8",
@@ -524,7 +524,7 @@
      },
      {
       "label": "Wer greift an?",
-      "say": "Rot acht hebt sofort den Kopf und sucht den Springer. Gleichzeitig schaltet Team Neon um: Neon fünf presst, Neon vier und Neon sieben machen die Passwege zu, und Rot zwei läuft sich frei.",
+      "say": "Spieler acht hebt sofort den Kopf und sucht den Springer. Gleichzeitig schaltet Team Neon um: Spieler fünf presst, Spieler vier und Spieler sieben machen die Passwege zu, und Spieler zwei läuft sich frei.",
       "moves": [
        {
         "who": "r8",
@@ -570,7 +570,7 @@
      },
      {
       "label": "Nach unten: Punkt",
-      "say": "Rot acht spielt zum Springer in der Mitte, und der spielt weiter zum Springer unten. Das gibt einen Punkt für Team Rot. Jetzt verteidigt Team Neon, bis es den Ball zurückerobert.",
+      "say": "Spieler acht spielt zum Springer in der Mitte, und der spielt weiter zum Springer unten. Das gibt einen Punkt für Team Rot. Jetzt verteidigt Team Neon, bis es den Ball zurückerobert.",
       "moves": [
        {
         "who": "b1",

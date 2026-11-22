@@ -38,6 +38,8 @@ README der App (Abschnitte „Übungen aus Video nachbauen“, „Laufweg-Abglei
 - **Titel kurz** wie bei UE-001 bis UE-030: höchstens 32 Zeichen, kein Untertitel nach dem Doppelpunkt (z. B. „Verteidigen zu zweit“).
 - **Ein Tor ist immer ein Punkt:** „…, und das gibt einen Punkt für Team Neon“ (oder für Spieler X), nie „das gibt ein Tor“. Label „…: Punkt“.
 - **Fangen, nicht abschlagen:** Kinder fangen sich (berühren), sie schlagen nicht ab.
+- **Spieler heißen „Spieler sieben“, nie „Neon sieben“ oder „Rot vier“** (Inhaber, 22.11.2026): in Sprechtexten, Labels
+  und Texten. Die Rückennummern sind über beide Teams eindeutig. „Team Neon“/„Team Rot“ bleibt für das ganze Team. `pruefen` meldet es.
 - **Alle gleichzeitig:** Machen alle Spieler gleichzeitig dasselbe (Fangspiele, Staffeln), das in Text und Bühne sagen („Alle laufen
   gleichzeitig … Wir schauen auf Spieler sechs“) und auf der Bühne auch andere Spieler parallel handeln lassen.
 - **Geteiltes Feld:** Hälften und Linien als gestrichelte `line` einzeichnen (erscheinen grau). Nur in einer Fassung: dort `lines` = alle

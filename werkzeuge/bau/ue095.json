@@ -227,7 +227,7 @@
    },
    {
     "label": "Zwei gegen eins",
-    "say": "Rot acht geht auf Spieler sechs. Der spielt sofort quer zu Spieler vier, der frei ist.",
+    "say": "Spieler acht geht auf Spieler sechs. Der spielt sofort quer zu Spieler vier, der frei ist.",
     "moves": [
      {
       "who": "r8",
@@ -346,7 +346,7 @@
     "steps": [
      {
       "label": "Pass abgefangen",
-      "say": "Spieler vier spielt zu ungenau, und Rot acht fängt den Pass ab.",
+      "say": "Spieler vier spielt zu ungenau, und Spieler acht fängt den Pass ab.",
       "moves": [
        {
         "who": "c1",
@@ -369,7 +369,7 @@
      },
      {
       "label": "Durch die Dummys: Punkt",
-      "say": "Rot acht dribbelt sofort zwischen den Dummys hindurch, und das gibt einen Punkt für Rot.",
+      "say": "Spieler acht dribbelt sofort zwischen den Dummys hindurch, und das gibt einen Punkt für Rot.",
       "moves": [
        {
         "who": "r8",

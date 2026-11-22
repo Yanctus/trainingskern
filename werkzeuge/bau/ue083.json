@@ -421,7 +421,7 @@
    },
    {
     "label": "Wer trifft zuerst",
-    "say": "Beide schießen aufs Minitor. Neon eins trifft zuerst, und das gibt einen Punkt für Neon.",
+    "say": "Beide schießen aufs Minitor. Spieler eins trifft zuerst, und das gibt einen Punkt für Neon.",
     "moves": [
      {
       "who": "b1",
@@ -524,7 +524,7 @@
     "steps": [
      {
       "label": "Eng herum",
-      "say": "Neon eins läuft ganz eng um die Stange. Rot fünf läuft gleichzeitig einen weiten Bogen.",
+      "say": "Spieler eins läuft ganz eng um die Stange. Spieler fünf läuft gleichzeitig einen weiten Bogen.",
       "moves": [
        {
         "who": "n1",
@@ -600,7 +600,7 @@
      },
      {
       "label": "Vorsprung beim Ball",
-      "say": "Neon eins ist zuerst am Ball und dribbelt schon los, Rot fünf kommt später.",
+      "say": "Spieler eins ist zuerst am Ball und dribbelt schon los, Spieler fünf kommt später.",
       "moves": [
        {
         "who": "n1",
@@ -761,7 +761,7 @@
      },
      {
       "label": "Wer zuerst trifft",
-      "say": "Neon eins schießt zuerst und trifft, und das gibt einen Punkt für Neon.",
+      "say": "Spieler eins schießt zuerst und trifft, und das gibt einen Punkt für Neon.",
       "moves": [
        {
         "who": "b1",

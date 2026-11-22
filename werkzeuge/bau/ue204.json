@@ -215,7 +215,7 @@
   "steps": [
    {
     "label": "Rot baut auf",
-    "say": "Team Rot hat immer zuerst den Ball und will nach oben. Rot vierzehn passt zu Rot fünfzehn. Gleichzeitig schiebt die ganze Kette von Team Neon zum Ball.",
+    "say": "Team Rot hat immer zuerst den Ball und will nach oben. Spieler vierzehn passt zu Spieler fünfzehn. Gleichzeitig schiebt die ganze Kette von Team Neon zum Ball.",
     "moves": [
      {
       "who": "b1",
@@ -265,7 +265,7 @@
    },
    {
     "label": "Abgefangen",
-    "say": "Rot fünfzehn will zu Rot zwölf durchspielen. Neon elf steht nah dran, geht dazwischen und fängt den Ball ab.",
+    "say": "Spieler fünfzehn will zu Spieler zwölf durchspielen. Spieler elf steht nah dran, geht dazwischen und fängt den Ball ab.",
     "moves": [
      {
       "who": "n11",
@@ -288,7 +288,7 @@
    },
    {
     "label": "Konter: zwei Punkte",
-    "say": "Neon elf passt sofort zu Neon vier. Neon vier dribbelt nach unten und trifft ins rechte Minitor. Die Kette hat den Ball erobert, und das gibt zwei Punkte für Team Neon. Dann startet Team Rot mit einem neuen Ball vom Trainer.",
+    "say": "Spieler elf passt sofort zu Spieler vier. Spieler vier dribbelt nach unten und trifft ins rechte Minitor. Die Kette hat den Ball erobert, und das gibt zwei Punkte für Team Neon. Dann startet Team Rot mit einem neuen Ball vom Trainer.",
     "moves": [
      {
       "who": "b1",
@@ -457,7 +457,7 @@
     "steps": [
      {
       "label": "Genau hinschauen",
-      "say": "Rot vierzehn passt zu Rot fünfzehn. Neon elf schaut genau hin: Kann Rot fünfzehn den Ball gut annehmen?",
+      "say": "Spieler vierzehn passt zu Spieler fünfzehn. Spieler elf schaut genau hin: Kann Spieler fünfzehn den Ball gut annehmen?",
       "moves": [
        {
         "who": "b1",
@@ -479,7 +479,7 @@
      },
      {
       "label": "Sofort pressen",
-      "say": "Der Ball springt Rot fünfzehn vom Fuß. Neon elf presst sofort. Gleichzeitig schieben Neon vier und Neon acht nach.",
+      "say": "Der Ball springt Spieler fünfzehn vom Fuß. Spieler elf presst sofort. Gleichzeitig schieben Spieler vier und Spieler acht nach.",
       "moves": [
        {
         "who": "b1",
@@ -520,7 +520,7 @@
      },
      {
       "label": "Erobert: zwei Punkte",
-      "say": "Neon elf erobert den Ball, dribbelt los und trifft ins rechte Minitor. Das gibt zwei Punkte für Team Neon.",
+      "say": "Spieler elf erobert den Ball, dribbelt los und trifft ins rechte Minitor. Das gibt zwei Punkte für Team Neon.",
       "moves": [
        {
         "who": "n11",
@@ -664,7 +664,7 @@
     "steps": [
      {
       "label": "Zusammenschieben",
-      "say": "Rot neun hat den Ball. Neon vier presst ihn. Gleichzeitig schieben Neon acht, Neon sieben und Neon elf eng zusammen.",
+      "say": "Spieler neun hat den Ball. Spieler vier presst ihn. Gleichzeitig schieben Spieler acht, Spieler sieben und Spieler elf eng zusammen.",
       "moves": [
        {
         "who": "n4",
@@ -702,7 +702,7 @@
      },
      {
       "label": "Kein Weg durch",
-      "say": "Rot neun findet keine Lücke und spielt zurück zu Rot vierzehn. Team Rot muss neu aufbauen.",
+      "say": "Spieler neun findet keine Lücke und spielt zurück zu Spieler vierzehn. Team Rot muss neu aufbauen.",
       "moves": [
        {
         "who": "b1",

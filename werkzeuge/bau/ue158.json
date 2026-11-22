@@ -159,7 +159,7 @@
   "steps": [
    {
     "label": "Finte, dann außen herum",
-    "say": "Neon neun läuft zuerst auf die erste Stange zu, als wollte er links vorbei. Dann dreht er ab und läuft rechts an ihr vorbei nach außen.",
+    "say": "Spieler neun läuft zuerst auf die erste Stange zu, als wollte er links vorbei. Dann dreht er ab und läuft rechts an ihr vorbei nach außen.",
     "moves": [
      {
       "who": "n9",
@@ -191,7 +191,7 @@
    },
    {
     "label": "Direkt geschossen: Punkt",
-    "say": "Der Trainer spielt flach in den Lauf. Neon neun schießt direkt ins nahe Eck, und das gibt einen Punkt für Neon neun.",
+    "say": "Der Trainer spielt flach in den Lauf. Spieler neun schießt direkt ins nahe Eck, und das gibt einen Punkt für Spieler neun.",
     "moves": [
      {
       "who": "b1",
@@ -214,7 +214,7 @@
    },
    {
     "label": "Rückwärts um die Stange",
-    "say": "Sofort geht es weiter. Neon neun läuft mit schnellen, kleinen Schritten rückwärts um die rechte Stange, der Blick bleibt nach vorn.",
+    "say": "Sofort geht es weiter. Spieler neun läuft mit schnellen, kleinen Schritten rückwärts um die rechte Stange, der Blick bleibt nach vorn.",
     "moves": [
      {
       "who": "n9",
@@ -246,7 +246,7 @@
    },
    {
     "label": "Zweiter Schuss: Punkt",
-    "say": "An der vorderen Stange kommt der nächste Pass. Neon neun schießt direkt, und das gibt wieder einen Punkt für Neon neun. Dann holt er einen Ball, und Neon elf ist dran.",
+    "say": "An der vorderen Stange kommt der nächste Pass. Spieler neun schießt direkt, und das gibt wieder einen Punkt für Spieler neun. Dann holt er einen Ball, und Spieler elf ist dran.",
     "moves": [
      {
       "who": "b2",
@@ -354,7 +354,7 @@
     "steps": [
      {
       "label": "Blick zum Torwart",
-      "say": "Neon neun läuft außen an der rechten Stange vorbei und schaut dabei zum Torwart. Der Torwart geht schon zum nahen Pfosten.",
+      "say": "Spieler neun läuft außen an der rechten Stange vorbei und schaut dabei zum Torwart. Der Torwart geht schon zum nahen Pfosten.",
       "moves": [
        {
         "who": "n9",
@@ -386,7 +386,7 @@
      },
      {
       "label": "Ins lange Eck: Punkt",
-      "say": "Der Trainer spielt zu. Neon neun schießt direkt ins lange Eck, weit weg vom Torwart, und das gibt einen Punkt für Neon neun.",
+      "say": "Der Trainer spielt zu. Spieler neun schießt direkt ins lange Eck, weit weg vom Torwart, und das gibt einen Punkt für Spieler neun.",
       "moves": [
        {
         "who": "b1",
@@ -478,7 +478,7 @@
     "steps": [
      {
       "label": "Rückwärts um die erste Stange",
-      "say": "Neon neun läuft rückwärts nach unten und um die erste Stange herum. Dann kommt er durch die Mitte zur vorderen Stange zurück.",
+      "say": "Spieler neun läuft rückwärts nach unten und um die erste Stange herum. Dann kommt er durch die Mitte zur vorderen Stange zurück.",
       "moves": [
        {
         "who": "n9",
@@ -528,7 +528,7 @@
      },
      {
       "label": "Dritter Schuss: Punkt",
-      "say": "Der Trainer spielt zu, und Neon neun schießt direkt ins rechte Eck. Das gibt einen Punkt für Neon neun.",
+      "say": "Der Trainer spielt zu, und Spieler neun schießt direkt ins rechte Eck. Das gibt einen Punkt für Spieler neun.",
       "moves": [
        {
         "who": "b1",
@@ -551,7 +551,7 @@
      },
      {
       "label": "Links herum, vierter Schuss: Punkt",
-      "say": "Zum Schluss läuft Neon neun links um die äußere Stange. Der Trainer spielt flach quer durch den Strafraum, Neon neun schießt direkt, und das gibt einen Punkt für Neon neun. Dann ist Neon elf dran.",
+      "say": "Zum Schluss läuft Spieler neun links um die äußere Stange. Der Trainer spielt flach quer durch den Strafraum, Spieler neun schießt direkt, und das gibt einen Punkt für Spieler neun. Dann ist Spieler elf dran.",
       "moves": [
        {
         "who": "n9",

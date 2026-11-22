@@ -263,7 +263,7 @@
   "steps": [
    {
     "label": "Um die Stange",
-    "say": "Alle vier Stationen starten gleichzeitig. Wir schauen auf Neon elf: Er dribbelt mit kleinen Kontakten um seine Stange herum.",
+    "say": "Alle vier Stationen starten gleichzeitig. Wir schauen auf Spieler elf: Er dribbelt mit kleinen Kontakten um seine Stange herum.",
     "moves": [
      {
       "who": "n11",
@@ -385,7 +385,7 @@
    },
    {
     "label": "Zurückpassen",
-    "say": "Jetzt passen alle vier den Ball zurück zu ihrem Partner an der Station. Neon elf passt zu Neon zwei.",
+    "say": "Jetzt passen alle vier den Ball zurück zu ihrem Partner an der Station. Spieler elf passt zu Spieler zwei.",
     "moves": [
      {
       "who": "b1",
@@ -423,7 +423,7 @@
    },
    {
     "label": "Schnelle Füße",
-    "say": "Ohne Ball geht es zu den Hütchen. Neon elf läuft mit schnellen, kleinen Schritten im Zickzack durch die Reihe, und die anderen drei machen es genauso.",
+    "say": "Ohne Ball geht es zu den Hütchen. Spieler elf läuft mit schnellen, kleinen Schritten im Zickzack durch die Reihe, und die anderen drei machen es genauso.",
     "moves": [
      {
       "who": "n11",
@@ -641,7 +641,7 @@
    },
    {
     "label": "Zur nächsten Station",
-    "say": "Danach läuft jeder zur nächsten Station. Neon elf stellt sich an der Station rechts an. Geschafft! Jetzt dribbeln Neon zwei, Neon vier, Neon acht und Neon neun, und alles beginnt von vorn.",
+    "say": "Danach läuft jeder zur nächsten Station. Spieler elf stellt sich an der Station rechts an. Geschafft! Jetzt dribbeln Spieler zwei, Spieler vier, Spieler acht und Spieler neun, und alles beginnt von vorn.",
     "moves": [
      {
       "who": "n11",
@@ -802,7 +802,7 @@
     "steps": [
      {
       "label": "Kleine Kontakte",
-      "say": "Wieder starten alle gleichzeitig. Wir schauen auf Neon elf: Er führt den Ball mit vielen kleinen Kontakten um die Stange herum, der Ball bleibt immer nah am Fuß.",
+      "say": "Wieder starten alle gleichzeitig. Wir schauen auf Spieler elf: Er führt den Ball mit vielen kleinen Kontakten um die Stange herum, der Ball bleibt immer nah am Fuß.",
       "moves": [
        {
         "who": "n11",
@@ -924,7 +924,7 @@
      },
      {
       "label": "Abwechselnd die Füße",
-      "say": "Neon elf passt zurück zu Neon zwei. In den Hütchen setzt er die Füße schnell und abwechselnd: links, rechts, links, rechts. Dann geht es zur nächsten Station.",
+      "say": "Spieler elf passt zurück zu Spieler zwei. In den Hütchen setzt er die Füße schnell und abwechselnd: links, rechts, links, rechts. Dann geht es zur nächsten Station.",
       "moves": [
        {
         "who": "b1",
@@ -1099,7 +1099,7 @@
     "steps": [
      {
       "label": "Um die Stange",
-      "say": "Wieder starten alle gleichzeitig um die Stange. Wir schauen auf Neon elf.",
+      "say": "Wieder starten alle gleichzeitig um die Stange. Wir schauen auf Spieler elf.",
       "moves": [
        {
         "who": "n11",
@@ -1221,7 +1221,7 @@
      },
      {
       "label": "Erster Doppelpass",
-      "say": "Neon elf passt zu Neon zwei und läuft weiter. Neon zwei hebt den Kopf, sieht ihn und spielt den Ball direkt zurück in den Lauf.",
+      "say": "Spieler elf passt zu Spieler zwei und läuft weiter. Spieler zwei hebt den Kopf, sieht ihn und spielt den Ball direkt zurück in den Lauf.",
       "moves": [
        {
         "who": "b1",
@@ -1262,7 +1262,7 @@
      },
      {
       "label": "Mit Ball durch die Hütchen",
-      "say": "Jetzt nimmt Neon elf den Ball mit durch die Hütchen, mit kleinen Kontakten im Zickzack. Am Ende hebt er den Kopf und sucht Neon vier an der nächsten Station.",
+      "say": "Jetzt nimmt Spieler elf den Ball mit durch die Hütchen, mit kleinen Kontakten im Zickzack. Am Ende hebt er den Kopf und sucht Spieler vier an der nächsten Station.",
       "moves": [
        {
         "who": "n11",
@@ -1326,7 +1326,7 @@
      },
      {
       "label": "Zweiter Doppelpass",
-      "say": "Neon elf passt zu Neon vier und läuft hoch. Neon vier spielt direkt zurück. Neon elf nimmt den Ball mit und startet hier die nächste Runde um die Stange, und Neon vier ist jetzt sein Partner.",
+      "say": "Spieler elf passt zu Spieler vier und läuft hoch. Spieler vier spielt direkt zurück. Spieler elf nimmt den Ball mit und startet hier die nächste Runde um die Stange, und Spieler vier ist jetzt sein Partner.",
       "moves": [
        {
         "who": "b1",

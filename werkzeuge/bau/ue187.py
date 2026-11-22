@@ -6,7 +6,7 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # Wertung nach PDF: drei Pässe in einem Dreieck = Punkt (im Ton "ein Pass in jedem Dreieck"). Steigerung: Springer werden
 # Außenspieler je Team (Video: Rot 9 und 8 -> Neon 2 und 3, Blau 6 und 5 -> Rot 6 und 10).
 # Sichtkegel aus dem Ton der Steigerung ("ask outside players to see the space where they can take their first touch into"):
-# Neon zwei schaut vor der Annahme in den Raum im Feld. Im Video kein Kegel eingezeichnet.
+# Spieler zwei schaut vor der Annahme in den Raum im Feld. Im Video kein Kegel eingezeichnet.
 T = P("T", "c", 20, 7, "T")
 POS = {"n11": (40, 22), "n4": (36, 40), "n5": (53, 36), "r7": (44.5, 38), "r8": (52, 20), "r9": (62, 20),
        "f1": (26, 30), "f2": (52, 4), "f3": (74, 30), "f4": (50, 55)}
@@ -33,33 +33,33 @@ u = {"title": "Dreiecke halten und pressen", "code": "UE-187", "kind": "Spielfor
  "say_intro": "Dreiecke halten und pressen. Team Neon will drei Pässe in einem Dreieck schaffen, Team Rot presst gemeinsam.",
  "board": {"lines": LINES, "cones": CONES, "players": sp(), "balls": [B("b1", 40.6, 22.6)] + ERSATZ,
   "steps": [
-   S("Ins linke Dreieck", "Neon elf spielt zum Springer links, und der spielt gleich weiter zu Neon vier. Rot sieben läuft Neon vier an.",
+   S("Ins linke Dreieck", "Spieler elf spielt zum Springer links, und der spielt gleich weiter zu Spieler vier. Spieler sieben läuft Spieler vier an.",
      ps("b1", [26.6, 30.6]), ps("b1", [36.6, 40.6], after=True), mv("r7", [39.5, 42.5], delay=0.6)),
-   S("Dritter Pass: Punkt", "Neon fünf läuft ins Dreieck und bekommt den Ball. Das sind drei Pässe im linken Dreieck, und das gibt einen Punkt für Team Neon. Neon bleibt am Ball.",
+   S("Dritter Pass: Punkt", "Spieler fünf läuft ins Dreieck und bekommt den Ball. Das sind drei Pässe im linken Dreieck, und das gibt einen Punkt für Team Neon. Neon bleibt am Ball.",
      mv("n5", [43, 31]), ps("b1", [43.6, 31.6], delay=0.4)),
-   S("Abgefangen", "Neon fünf will nach oben zum Springer spielen. Aber Rot acht liest den Pass und fängt ihn ab.",
+   S("Abgefangen", "Spieler fünf will nach oben zum Springer spielen. Aber Spieler acht liest den Pass und fängt ihn ab.",
      mv("r8", [50, 15]), ps("b1", [50.6, 15.6], delay=0.2)),
-   S("Rot ist dran", "Rot acht spielt sofort zum Springer oben, der legt auf Rot neun ab. Jetzt ist Team Rot am Ball. Schafft Rot drei Pässe in einem Dreieck, gibt das einen Punkt für Team Rot.",
+   S("Rot ist dran", "Spieler acht spielt sofort zum Springer oben, der legt auf Spieler neun ab. Jetzt ist Team Rot am Ball. Schafft Rot drei Pässe in einem Dreieck, gibt das einen Punkt für Team Rot.",
      ps("b1", [52.6, 4.6]), mv("r9", [58, 24]), ps("b1", [58.6, 24.6], after=True))],
   "dims": dims(30, 70, 10, 50, "18 m", "18 m", rx=86)},
  "versions": [
   V("Coaching-Punkt", "Jetzt zum Coaching-Punkt: Gemeinsam pressen.", "Gemeinsam pressen",
     "Die Verteidiger pressen zusammen und lassen keine großen Lücken zwischen sich. Einer läuft den Ballführenden an, die anderen rücken nach und stellen die Passwege zu. Nach der Eroberung wird sofort schnell weitergespielt.",
     sp(), [B("b1", 40.6, 22.6)] + ERSATZ,
-    [S("Zusammen anlaufen", "Rot acht läuft Neon elf an. Rot sieben und Rot neun rücken nach und machen die Räume zwischen sich klein.",
+    [S("Zusammen anlaufen", "Spieler acht läuft Spieler elf an. Spieler sieben und Spieler neun rücken nach und machen die Räume zwischen sich klein.",
        mv("r8", [45, 21]), mv("r7", [41, 33], delay=0.2), mv("r9", [52, 24], delay=0.2)),
-     S("Ball erobert", "Neon elf will zu Neon fünf passen. Rot neun steht schon im Passweg und fängt den Ball ab.",
+     S("Ball erobert", "Spieler elf will zu Spieler fünf passen. Spieler neun steht schon im Passweg und fängt den Ball ab.",
        mv("r9", [45.4, 27.8]), ps("b1", [46, 28.4], delay=0.2)),
-     S("Schnell weiter", "Rot neun spielt sofort zum Springer unten. Jetzt ist Team Rot am Ball und will drei Pässe in einem Dreieck, denn das gibt einen Punkt für Team Rot.",
+     S("Schnell weiter", "Spieler neun spielt sofort zum Springer unten. Jetzt ist Team Rot am Ball und will drei Pässe in einem Dreieck, denn das gibt einen Punkt für Team Rot.",
        ps("b1", [50.6, 55.6]))]),
   V("Steigerung", "Und jetzt die Steigerung: Zwei Außenspieler für jedes Team.", "Außenspieler rotieren",
     "Statt der Springer hat jedes Team zwei eigene Spieler außen. Bekommt ein Außenspieler den Ball, nimmt er ihn ins Feld mit, und ein Mitspieler tauscht mit ihm nach außen. Für drei Pässe in einem Dreieck gibt es einen Punkt, wer zuerst in allen vier Dreiecken drei Pässe hat, gewinnt.",
     AUSSEN,
     [B("b1", 40.6, 22.6)] + ERSATZ,
-    [S("Raum sehen", "Neon zwei steht außen und schaut schon vor dem Pass ins Feld. Wo ist Platz für die erste Ballmitnahme? Dann spielt Neon elf zu ihm.",
+    [S("Raum sehen", "Spieler zwei steht außen und schaut schon vor dem Pass ins Feld. Wo ist Platz für die erste Ballmitnahme? Dann spielt Spieler elf zu ihm.",
        bl("n2", [40, 30]), ps("b1", [26.6, 24.6], after=True)),
-     S("Rein und raus", "Neon zwei nimmt den Ball mit dem ersten Kontakt ins Feld. Gleichzeitig läuft Neon vier nach außen und ist jetzt Außenspieler.",
+     S("Rein und raus", "Spieler zwei nimmt den Ball mit dem ersten Kontakt ins Feld. Gleichzeitig läuft Spieler vier nach außen und ist jetzt Außenspieler.",
        dr("n2", "b1", [33, 27]), mv("n4", [26, 42])),
-     S("Drei Pässe: Punkt", "Neon zwei spielt zu Neon vier, und Neon vier spielt zu Neon fünf ins Dreieck. Das sind drei Pässe im linken Dreieck, und das gibt einen Punkt für Team Neon. Jetzt geht es ins nächste Dreieck.",
+     S("Drei Pässe: Punkt", "Spieler zwei spielt zu Spieler vier, und Spieler vier spielt zu Spieler fünf ins Dreieck. Das sind drei Pässe im linken Dreieck, und das gibt einen Punkt für Team Neon. Jetzt geht es ins nächste Dreieck.",
        ps("b1", [26.6, 42.6]), mv("n5", [43, 33]), ps("b1", [43.6, 33.6], after=True))])]}
 json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)

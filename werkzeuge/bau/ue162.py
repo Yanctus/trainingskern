@@ -6,7 +6,7 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # wie im PDF (acht Pässe, dann Steilpass in die Endzone, Abschluss ins Minitor). Ein Trainer (rechts) statt zwei.
 # Steigerung = Progression aus PDF/Ton (Ballgewinn vor acht Pässen gibt den Verteidigern einen Punkt).
 # Sichtkegel: Text "See gaps early to play forward passes" / "awareness of runners", im Video kein Kegel eingezeichnet:
-# Grundform bl() von Neon sieben zur Lücke vor dem Steilpass, Coaching-Punkt bl() von Neon acht zum Läufer (Richtung aus dem Sinn).
+# Grundform bl() von Spieler sieben zur Lücke vor dem Steilpass, Coaching-Punkt bl() von Spieler acht zum Läufer (Richtung aus dem Sinn).
 T = P("T", "c", 76, 30, "T")
 POS = {"n6": (33.9, 39.5), "n9": (42.15, 20), "n8": (50.4, 40), "n10": (58.65, 20), "n7": (66.9, 39.5),
        "r2": (33.9, 23), "r3": (42.15, 36), "r4": (50.4, 24), "r5": (58.65, 36), "r11": (66.9, 23.5)}
@@ -32,30 +32,30 @@ u = {"title": "Steilpass zur richtigen Zeit", "code": "UE-162", "kind": "Spielfo
  "say_intro": "Steilpass zur richtigen Zeit. Fünf gegen fünf, und nach acht Pässen darf der Ball steil in die Endzone zum Abschluss.",
  "board": {"lines": LINES, "goals": TORE, "cones": [], "players": sp(), "balls": [B("b1", 34.5, 40.1)] + ERSATZ,
   "steps": [
-   S("Acht Pässe", "Team Neon greift nach oben an und muss erst acht Pässe spielen. Neon sechs passt zu Neon acht, der weiter zu Neon sieben. Team Rot verschiebt gemeinsam mit.",
+   S("Acht Pässe", "Team Neon greift nach oben an und muss erst acht Pässe spielen. Spieler sechs passt zu Spieler acht, der weiter zu Spieler sieben. Team Rot verschiebt gemeinsam mit.",
      ps("b1", [51.0, 40.6]), ps("b1", [67.5, 40.1], after=True), mv("r3", [46, 35], delay=0.3), mv("r5", [61, 35], delay=0.6)),
-   S("Lücke sehen", "Die acht Pässe sind geschafft. Neon sieben hebt den Kopf und sieht die Lücke zwischen Rot vier und Rot elf. Er spielt nach vorn zu Neon zehn.",
+   S("Lücke sehen", "Die acht Pässe sind geschafft. Spieler sieben hebt den Kopf und sieht die Lücke zwischen Spieler vier und Spieler elf. Er spielt nach vorn zu Spieler zehn.",
      bl("n7", [60, 22]), ps("b1", [59.25, 20.6], after=True)),
-   S("Steil in die Zone", "Neon neun startet in die Endzone, und Neon zehn spielt ihm den Ball mit einem Kontakt in den Lauf. Die Verteidiger dürfen nicht hinterher in die Zone.",
+   S("Steil in die Zone", "Spieler neun startet in die Endzone, und Spieler zehn spielt ihm den Ball mit einem Kontakt in den Lauf. Die Verteidiger dürfen nicht hinterher in die Zone.",
      mv("n9", [47, 12]), ps("b1", [47.6, 12.6], delay=0.4)),
-   S("Abschluss: Punkt", "Neon neun nimmt den Ball mit und schießt ins linke Minitor, und das gibt einen Punkt für Team Neon. Dann wechseln die Rollen, der Trainer bringt einen neuen Ball, und Team Rot greift nach unten an.",
+   S("Abschluss: Punkt", "Spieler neun nimmt den Ball mit und schießt ins linke Minitor, und das gibt einen Punkt für Team Neon. Dann wechseln die Rollen, der Trainer bringt einen neuen Ball, und Team Rot greift nach unten an.",
      dr("n9", "b1", [44.5, 10]), ps("b1", [37.9, 5.3], after=True))],
   "dims": dims(32.15, 67.85, 5, 55, "23 m", "32 m", rx=84)},
  "versions": [
   V("Coaching-Punkt", "Jetzt zum Coaching-Punkt: Den Lauf richtig timen.", "Lauf richtig timen",
     "Der Läufer startet nicht zu früh, sondern genau dann, wenn der Passgeber den Kopf hebt und ihn sieht. Der Pass kommt scharf und genau in den Lauf. Der erste Kontakt geht nach vorn, dann schießt der Läufer ruhig ins Minitor.",
     sp(), [B("b1", 51.0, 40.6)] + ERSATZ,
-    [S("Kopf hoch", "Neon acht hat den Ball und hebt den Kopf. Er sieht Neon neun, der kurz entgegenkommt und seinen Gegner weglockt.",
+    [S("Kopf hoch", "Spieler acht hat den Ball und hebt den Kopf. Er sieht Spieler neun, der kurz entgegenkommt und seinen Gegner weglockt.",
        bl("n8", [44, 24]), mv("n9", [40, 25], delay=0.2)),
-     S("Jetzt starten", "Genau jetzt startet Neon neun in die Endzone. Neon acht spielt ihm den Ball scharf in den Lauf.",
+     S("Jetzt starten", "Genau jetzt startet Spieler neun in die Endzone. Spieler acht spielt ihm den Ball scharf in den Lauf.",
        mv("n9", [44, 12]), ps("b1", [44.6, 12.6], delay=0.4)),
-     S("Ruhig ins Tor: Punkt", "Neon neun nimmt den Ball nach vorn mit und schießt ruhig ins linke Minitor. Das gibt einen Punkt für Team Neon.",
+     S("Ruhig ins Tor: Punkt", "Spieler neun nimmt den Ball nach vorn mit und schießt ruhig ins linke Minitor. Das gibt einen Punkt für Team Neon.",
        dr("n9", "b1", [42, 9]), ps("b1", [37.9, 5.3], after=True))]),
   V("Steigerung", "Und jetzt die Steigerung: Ein schneller Ballgewinn gibt einen Punkt für die Verteidiger.", "Hoch pressen",
     "Erobert Team Rot den Ball, bevor Team Neon acht Pässe geschafft hat, gibt das einen Punkt für Team Rot. Darum pressen die Verteidiger jetzt höher. Dadurch wird aber hinten Platz frei, den die Angreifer nutzen können.",
     sp(), [B("b1", 34.5, 40.1)] + ERSATZ,
-    [S("Hoch pressen", "Neon sechs passt zu Neon acht. Sofort rücken Rot vier und Rot fünf heraus und pressen.",
+    [S("Hoch pressen", "Spieler sechs passt zu Spieler acht. Sofort rücken Spieler vier und Spieler fünf heraus und pressen.",
        ps("b1", [51.0, 40.6]), mv("r4", [50.4, 32], delay=0.3), mv("r5", [57, 37], delay=0.3)),
-     S("Ballgewinn: Punkt", "Neon acht will zu Neon sieben passen, aber Rot fünf fängt den Ball ab. Das waren keine acht Pässe, und das gibt einen Punkt für Team Rot. Jetzt greift Team Rot an.",
+     S("Ballgewinn: Punkt", "Spieler acht will zu Spieler sieben passen, aber Spieler fünf fängt den Ball ab. Das waren keine acht Pässe, und das gibt einen Punkt für Team Rot. Jetzt greift Team Rot an.",
        mv("r5", [59, 40]), ps("b1", [59.6, 40.6], delay=0.4))])]}
 json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)

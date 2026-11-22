@@ -202,7 +202,7 @@
   "steps": [
    {
     "label": "Sechs gegen zwei",
-    "say": "Neon spielt sich den Ball zu, Neon drei passt zu Neon vier. Gleichzeitig verschieben Rot neun und Rot sieben gemeinsam.",
+    "say": "Neon spielt sich den Ball zu, Spieler drei passt zu Spieler vier. Gleichzeitig verschieben Spieler neun und Spieler sieben gemeinsam.",
     "moves": [
      {
       "who": "b1",
@@ -234,7 +234,7 @@
    },
    {
     "label": "Ball abgefangen",
-    "say": "Neon vier spielt zu Neon fünf, der will weiter zu Neon sechs. Rot neun ahnt den Pass und fängt ihn ab.",
+    "say": "Spieler vier spielt zu Spieler fünf, der will weiter zu Spieler sechs. Spieler neun ahnt den Pass und fängt ihn ab.",
     "moves": [
      {
       "who": "b1",
@@ -266,7 +266,7 @@
    },
    {
     "label": "Sofort hinüber",
-    "say": "Rot neun spielt den Ball sofort hinüber in die eigene Hälfte zu Rot zehn. Neon versucht noch, den Ball zurückzuerobern.",
+    "say": "Spieler neun spielt den Ball sofort hinüber in die eigene Hälfte zu Spieler zehn. Neon versucht noch, den Ball zurückzuerobern.",
     "moves": [
      {
       "who": "b1",
@@ -289,7 +289,7 @@
    },
    {
     "label": "Neue Rollen",
-    "say": "Jetzt spielen die Roten sechs gegen zwei. Gleichzeitig laufen Rot neun und Rot sieben hinüber, und Neon sechs und Neon acht pressen als neues Paar.",
+    "say": "Jetzt spielen die Roten sechs gegen zwei. Gleichzeitig laufen Spieler neun und Spieler sieben hinüber, und Spieler sechs und Spieler acht pressen als neues Paar.",
     "moves": [
      {
       "who": "r9",
@@ -460,7 +460,7 @@
     "steps": [
      {
       "label": "Presser gehen drauf",
-      "say": "Neon drei passt zu Neon vier. Rot neun läuft auf ihn zu, Rot sieben bleibt weiter hinten, und zwischen den beiden geht eine Lücke auf.",
+      "say": "Spieler drei passt zu Spieler vier. Spieler neun läuft auf ihn zu, Spieler sieben bleibt weiter hinten, und zwischen den beiden geht eine Lücke auf.",
       "moves": [
        {
         "who": "b1",
@@ -483,7 +483,7 @@
      },
      {
       "label": "Durch die Lücke: Punkt",
-      "say": "Neon vier spielt genau zwischen den beiden Roten hindurch zu Neon acht, und das gibt einen Punkt für Neon.",
+      "say": "Spieler vier spielt genau zwischen den beiden Roten hindurch zu Spieler acht, und das gibt einen Punkt für Neon.",
       "moves": [
        {
         "who": "b1",
@@ -612,7 +612,7 @@
     "steps": [
      {
       "label": "Der Dritte kommt",
-      "say": "Neon drei spielt zu Neon vier. Gleichzeitig sprintet Rot zehn aus der eigenen Hälfte herüber und presst mit.",
+      "say": "Spieler drei spielt zu Spieler vier. Gleichzeitig sprintet Spieler zehn aus der eigenen Hälfte herüber und presst mit.",
       "moves": [
        {
         "who": "b1",
@@ -644,7 +644,7 @@
      },
      {
       "label": "Zu dritt erobert",
-      "say": "Neon vier findet keinen freien Mitspieler, spielt ungenau zu Neon acht, und Rot sieben erobert den Ball.",
+      "say": "Spieler vier findet keinen freien Mitspieler, spielt ungenau zu Spieler acht, und Spieler sieben erobert den Ball.",
       "moves": [
        {
         "who": "b1",

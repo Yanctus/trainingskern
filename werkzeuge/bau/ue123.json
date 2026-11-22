@@ -220,7 +220,7 @@
   "steps": [
    {
     "label": "Unten ohne Gegner",
-    "say": "Neon vier dribbelt mit Tempo über den ersten Dummy und unter dem zweiten durch und schießt flach ins Eck. Das gibt einen Punkt für Neon vier.",
+    "say": "Spieler vier dribbelt mit Tempo über den ersten Dummy und unter dem zweiten durch und schießt flach ins Eck. Das gibt einen Punkt für Spieler vier.",
     "moves": [
      {
       "who": "n4",
@@ -274,7 +274,7 @@
    },
    {
     "label": "Mitte eins gegen eins",
-    "say": "Neon drei dribbelt auf Rot sieben zu und lockt ihn nach unten. Dann zieht er oben vorbei und schießt ins Tor. Das gibt einen Punkt für Neon drei.",
+    "say": "Spieler drei dribbelt auf Spieler sieben zu und lockt ihn nach unten. Dann zieht er oben vorbei und schießt ins Tor. Das gibt einen Punkt für Spieler drei.",
     "moves": [
      {
       "who": "n3",
@@ -337,7 +337,7 @@
    },
    {
     "label": "Oben eins gegen zwei",
-    "say": "Neon zwei spielt Rot fünf und dann Rot sechs aus und trifft ins obere Minitor. Das gibt einen Punkt für Neon zwei.",
+    "say": "Spieler zwei spielt Spieler fünf und dann Spieler sechs aus und trifft ins obere Minitor. Das gibt einen Punkt für Spieler zwei.",
     "moves": [
      {
       "who": "n2",
@@ -526,7 +526,7 @@
     "steps": [
      {
       "label": "Ball erobert",
-      "say": "Neon drei dribbelt auf Rot sieben zu. Rot sieben stellt sich gut und spitzelt ihm den Ball weg.",
+      "say": "Spieler drei dribbelt auf Spieler sieben zu. Spieler sieben stellt sich gut und spitzelt ihm den Ball weg.",
       "moves": [
        {
         "who": "r7",
@@ -549,7 +549,7 @@
      },
      {
       "label": "Konter aufs Minitor",
-      "say": "Rot sieben dribbelt sofort los und schießt ins Minitor links. Das gibt einen Punkt für Team Rot.",
+      "say": "Spieler sieben dribbelt sofort los und schießt ins Minitor links. Das gibt einen Punkt für Team Rot.",
       "moves": [
        {
         "who": "r7",
@@ -669,7 +669,7 @@
     "steps": [
      {
       "label": "Gegner anlocken",
-      "say": "Neon drei dribbelt auf Rot sieben zu. Gleichzeitig startet Neon vier unten in die Tiefe.",
+      "say": "Spieler drei dribbelt auf Spieler sieben zu. Gleichzeitig startet Spieler vier unten in die Tiefe.",
       "moves": [
        {
         "who": "n3",
@@ -710,7 +710,7 @@
      },
      {
       "label": "Pass und Abschluss",
-      "say": "Neon drei spielt Neon vier in den Lauf, und Neon vier schießt ins untere Tor. Das gibt einen Punkt für Team Neon.",
+      "say": "Spieler drei spielt Spieler vier in den Lauf, und Spieler vier schießt ins untere Tor. Das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "b3",

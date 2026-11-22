@@ -196,7 +196,7 @@
   "steps": [
    {
     "label": "Losdribbeln",
-    "say": "Links wartet Team Neon, rechts Team Rot, jeder mit einem Ball. Neon sieben dribbelt schnell nach vorn, am Hütchen vorbei.",
+    "say": "Links wartet Team Neon, rechts Team Rot, jeder mit einem Ball. Spieler sieben dribbelt schnell nach vorn, am Hütchen vorbei.",
     "moves": [
      {
       "who": "n7",
@@ -211,7 +211,7 @@
    },
    {
     "label": "Abschluss: Punkt",
-    "say": "Neon sieben schießt ins Minitor, und das gibt einen Punkt für Team Neon. Weil er an der Marke vorbei ist, dribbelt Rot zehn auf der anderen Seite los.",
+    "say": "Spieler sieben schießt ins Minitor, und das gibt einen Punkt für Team Neon. Weil er an der Marke vorbei ist, dribbelt Spieler zehn auf der anderen Seite los.",
     "moves": [
      {
       "who": "b1",
@@ -235,7 +235,7 @@
    },
    {
     "label": "Hinüber sprinten",
-    "say": "Gleich nach dem Schuss sprintet Neon sieben hinüber zum rechten Minitor. Rot zehn hebt den Kopf und sieht, wo der Verteidiger ist.",
+    "say": "Gleich nach dem Schuss sprintet Spieler sieben hinüber zum rechten Minitor. Spieler zehn hebt den Kopf und sieht, wo der Verteidiger ist.",
     "moves": [
      {
       "who": "n7",
@@ -268,7 +268,7 @@
    },
    {
     "label": "Schuss geblockt: Punkt",
-    "say": "Neon sieben stellt sich seitlich in den Weg und blockt den Schuss von Rot zehn. Das gibt einen Punkt für Team Neon, ein Treffer gäbe einen Punkt für Team Rot. Danach startet Neon vier, und Rot zehn sprintet hinüber und verteidigt.",
+    "say": "Spieler sieben stellt sich seitlich in den Weg und blockt den Schuss von Spieler zehn. Das gibt einen Punkt für Team Neon, ein Treffer gäbe einen Punkt für Team Rot. Danach startet Spieler vier, und Spieler zehn sprintet hinüber und verteidigt.",
     "moves": [
      {
       "who": "n7",
@@ -405,7 +405,7 @@
     "steps": [
      {
       "label": "Kopf hoch",
-      "say": "Rot zehn dribbelt auf das Tor zu. Er hebt den Kopf und sieht, wo Neon sieben steht.",
+      "say": "Spieler zehn dribbelt auf das Tor zu. Er hebt den Kopf und sieht, wo Spieler sieben steht.",
       "moves": [
        {
         "who": "r10",
@@ -429,7 +429,7 @@
      },
      {
       "label": "Übersteiger",
-      "say": "Rot zehn täuscht mit einem Übersteiger nach links an. Neon sieben fällt darauf herein und geht mit nach links.",
+      "say": "Spieler zehn täuscht mit einem Übersteiger nach links an. Spieler sieben fällt darauf herein und geht mit nach links.",
       "moves": [
        {
         "who": "r10",
@@ -453,7 +453,7 @@
      },
      {
       "label": "Andere Richtung: Punkt",
-      "say": "Jetzt zieht Rot zehn schnell nach rechts und schießt ins Minitor. Das gibt einen Punkt für Team Rot.",
+      "say": "Jetzt zieht Spieler zehn schnell nach rechts und schießt ins Minitor. Das gibt einen Punkt für Team Rot.",
       "moves": [
        {
         "who": "r10",
@@ -580,7 +580,7 @@
     "steps": [
      {
       "label": "Abschluss oben: Punkt",
-      "say": "Rot zehn dribbelt am Hütchen vorbei und schießt ins Minitor oben. Das gibt einen Punkt für Team Rot.",
+      "say": "Spieler zehn dribbelt am Hütchen vorbei und schießt ins Minitor oben. Das gibt einen Punkt für Team Rot.",
       "moves": [
        {
         "who": "r10",
@@ -604,7 +604,7 @@
      },
      {
       "label": "Schräg zurück",
-      "say": "Mit dem Schuss dribbelt Neon sieben oben links los. Rot zehn sprintet schräg über das Feld zum Minitor unten. Neon sieben hebt den Kopf und sieht ihn kommen.",
+      "say": "Mit dem Schuss dribbelt Spieler sieben oben links los. Spieler zehn sprintet schräg über das Feld zum Minitor unten. Spieler sieben hebt den Kopf und sieht ihn kommen.",
       "moves": [
        {
         "who": "n7",
@@ -636,7 +636,7 @@
      },
      {
       "label": "Schuss geblockt: Punkt",
-      "say": "Rot zehn läuft zum Tor und stellt sich in den Weg. Er blockt den Schuss von Neon sieben, und das gibt einen Punkt für Team Rot. Danach startet Rot acht, und Neon sieben sprintet zurück.",
+      "say": "Spieler zehn läuft zum Tor und stellt sich in den Weg. Er blockt den Schuss von Spieler sieben, und das gibt einen Punkt für Team Rot. Danach startet Spieler acht, und Spieler sieben sprintet zurück.",
       "moves": [
        {
         "who": "n7",

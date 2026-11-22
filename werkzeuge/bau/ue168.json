@@ -24,7 +24,7 @@
  "organisation": [
   "Aufbauen: Ein Feld von 27 mal 32 Metern. Oben links und rechts je ein Hütchen-Slalom, darunter eine gestrichelte Linie mit zwei Minitoren. Im Feld drei Dummys für die Doppelpässe.",
   "Verteilen: Team Neon greift an: ein Spieler oben mit Bällen, die anderen im Feld an den Dummys, weitere warten oben. Team Rot verteidigt und wartet links und rechts neben den Hütchen. Der Trainer steht an der Seite mit Bällen.",
-  "Ablauf: Neon neun passt zu Neon sieben, dann folgen zwei Doppelpässe. Gleichzeitig läuft ein Verteidiger rückwärts durch den Slalom und kommt ins Feld. Dann heißt es eins gegen eins auf das Minitor.",
+  "Ablauf: Spieler neun passt zu Spieler sieben, dann folgen zwei Doppelpässe. Gleichzeitig läuft ein Verteidiger rückwärts durch den Slalom und kommt ins Feld. Dann heißt es eins gegen eins auf das Minitor.",
   "Wertung und Wechsel: Trifft der Angreifer, gibt das einen Punkt für ihn. Erobert der Verteidiger den Ball, gibt das einen Punkt für ihn. Danach ist die andere Seite dran, und nach einigen Runden tauschen Angreifer und Verteidiger."
  ],
  "organisation_show": [
@@ -252,7 +252,7 @@
   "steps": [
    {
     "label": "Anspiel",
-    "say": "Neon neun passt kurz zu Neon sieben, der sich aufdreht. Gleichzeitig läuft Rot zwölf rückwärts durch den Slalom und tippt jedes Hütchen an.",
+    "say": "Spieler neun passt kurz zu Spieler sieben, der sich aufdreht. Gleichzeitig läuft Spieler zwölf rückwärts durch den Slalom und tippt jedes Hütchen an.",
     "moves": [
      {
       "who": "b1",
@@ -292,7 +292,7 @@
    },
    {
     "label": "Erster Doppelpass",
-    "say": "Neon sieben spielt zu Neon acht und läuft schräg nach vorn. Neon acht legt ihm den Ball direkt zurück. Rot zwölf läuft weiter durch den Slalom.",
+    "say": "Spieler sieben spielt zu Spieler acht und läuft schräg nach vorn. Spieler acht legt ihm den Ball direkt zurück. Spieler zwölf läuft weiter durch den Slalom.",
     "moves": [
      {
       "who": "r12",
@@ -350,7 +350,7 @@
    },
    {
     "label": "Zweiter Doppelpass",
-    "say": "Neon sieben passt zu Neon zehn. Neon zehn spielt zu Neon acht und startet nach vorn, und Neon acht legt ihm den Ball in den Lauf. Rot zwölf kommt ins Feld.",
+    "say": "Spieler sieben passt zu Spieler zehn. Spieler zehn spielt zu Spieler acht und startet nach vorn, und Spieler acht legt ihm den Ball in den Lauf. Spieler zwölf kommt ins Feld.",
     "moves": [
      {
       "who": "b1",
@@ -400,7 +400,7 @@
    },
    {
     "label": "Eins gegen eins: Punkt",
-    "say": "Neon zehn täuscht nach rechts an, Rot zwölf geht mit. Dann zieht Neon zehn links vorbei und schießt ins Minitor, und das gibt einen Punkt für Neon zehn. Danach ist die rechte Seite dran.",
+    "say": "Spieler zehn täuscht nach rechts an, Spieler zwölf geht mit. Dann zieht Spieler zehn links vorbei und schießt ins Minitor, und das gibt einen Punkt für Spieler zehn. Danach ist die rechte Seite dran.",
     "moves": [
      {
       "who": "n10",
@@ -558,7 +558,7 @@
     "steps": [
      {
       "label": "Übersteiger",
-      "say": "Neon zehn dribbelt auf Rot zwölf zu und macht einen Übersteiger nach rechts. Rot zwölf fällt darauf herein und geht mit.",
+      "say": "Spieler zehn dribbelt auf Spieler zwölf zu und macht einen Übersteiger nach rechts. Spieler zwölf fällt darauf herein und geht mit.",
       "moves": [
        {
         "who": "n10",
@@ -582,7 +582,7 @@
      },
      {
       "label": "Vorbei: Punkt",
-      "say": "Dann zieht Neon zehn schnell links vorbei und schießt ins Minitor, und das gibt einen Punkt für Neon zehn.",
+      "say": "Dann zieht Spieler zehn schnell links vorbei und schießt ins Minitor, und das gibt einen Punkt für Spieler zehn.",
       "moves": [
        {
         "who": "n10",
@@ -705,7 +705,7 @@
     "steps": [
      {
       "label": "Ball erobert",
-      "say": "Neon zehn dribbelt an. Rot zwölf kommt schnell heran, bleibt tief und springt nicht hinein. Dann spitzelt er Neon zehn den Ball weg.",
+      "say": "Spieler zehn dribbelt an. Spieler zwölf kommt schnell heran, bleibt tief und springt nicht hinein. Dann spitzelt er Spieler zehn den Ball weg.",
       "moves": [
        {
         "who": "n10",
@@ -729,7 +729,7 @@
      },
      {
       "label": "In die Endzone: Punkt",
-      "say": "Sofort dribbelt Rot zwölf in die Endzone, und das gibt einen Punkt für Rot zwölf. Danach ist die rechte Seite dran.",
+      "say": "Sofort dribbelt Spieler zwölf in die Endzone, und das gibt einen Punkt für Spieler zwölf. Danach ist die rechte Seite dran.",
       "moves": [
        {
         "who": "r12",

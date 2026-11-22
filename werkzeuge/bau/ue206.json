@@ -163,7 +163,7 @@
   "steps": [
    {
     "label": "Rot: Druck auf den Ball",
-    "say": "Der Trainer ruft: Rot! Das rote Hütchen ist ganz rechts. Neon drei ist am nächsten dran und sprintet zum Ball. Gleichzeitig schieben die anderen drei nach rechts, Neon sechs sichert schräg dahinter ab. Neon zwei schaut über die Schulter nach hinten.",
+    "say": "Der Trainer ruft: Rot! Das rote Hütchen ist ganz rechts. Spieler drei ist am nächsten dran und sprintet zum Ball. Gleichzeitig schieben die anderen drei nach rechts, Spieler sechs sichert schräg dahinter ab. Spieler zwei schaut über die Schulter nach hinten.",
     "moves": [
      {
       "who": "n3",
@@ -248,7 +248,7 @@
    },
    {
     "label": "Weiß: Druck auf den Ball",
-    "say": "Der Trainer ruft: Weiß! Das weiße Hütchen ist ganz links. Jetzt ist Neon zwei am nächsten dran und sprintet los. Neon fünf sichert ab, Neon sechs und Neon drei schieben nach links.",
+    "say": "Der Trainer ruft: Weiß! Das weiße Hütchen ist ganz links. Jetzt ist Spieler zwei am nächsten dran und sprintet los. Spieler fünf sichert ab, Spieler sechs und Spieler drei schieben nach links.",
     "moves": [
      {
       "who": "n2",
@@ -286,7 +286,7 @@
    },
    {
     "label": "Stange links: Zurücklaufen",
-    "say": "Der Trainer ruft: Stange links! Ein Ball fliegt über die Kette, links aus Sicht der Verteidiger. Alle vier sprinten zurück zu dieser Stange, Neon drei ganz außen, die anderen schräg daneben. Steht die Kette so, ist das Kommando geschafft. Dann gehen alle zurück in die Mitte, und der Trainer ruft das nächste Kommando.",
+    "say": "Der Trainer ruft: Stange links! Ein Ball fliegt über die Kette, links aus Sicht der Verteidiger. Alle vier sprinten zurück zu dieser Stange, Spieler drei ganz außen, die anderen schräg daneben. Steht die Kette so, ist das Kommando geschafft. Dann gehen alle zurück in die Mitte, und der Trainer ruft das nächste Kommando.",
     "moves": [
      {
       "who": "n3",
@@ -428,7 +428,7 @@
     "steps": [
      {
       "label": "Blau: Absichern",
-      "say": "Der Trainer ruft: Blau! Das blaue Hütchen ist das zweite von links. Neon fünf sprintet zum Ball, Neon sechs sichert schräg dahinter ab. Neon zwei und Neon drei rücken nach innen.",
+      "say": "Der Trainer ruft: Blau! Das blaue Hütchen ist das zweite von links. Spieler fünf sprintet zum Ball, Spieler sechs sichert schräg dahinter ab. Spieler zwei und Spieler drei rücken nach innen.",
       "moves": [
        {
         "who": "n5",
@@ -466,7 +466,7 @@
      },
      {
       "label": "Gelb: Weiterschieben",
-      "say": "Der Trainer ruft: Gelb! Neon sechs sprintet zum gelben Hütchen. Neon fünf geht zurück und sichert jetzt ihn ab. Die Abstände bleiben kurz, alle reden miteinander.",
+      "say": "Der Trainer ruft: Gelb! Spieler sechs sprintet zum gelben Hütchen. Spieler fünf geht zurück und sichert jetzt ihn ab. Die Abstände bleiben kurz, alle reden miteinander.",
       "moves": [
        {
         "who": "n6",
@@ -588,7 +588,7 @@
     "steps": [
      {
       "label": "Ball laufen lassen",
-      "say": "Neon drei spielt zu Neon sechs, der zu Neon fünf und der zu Neon zwei. Der Ball läuft schnell durch die Kette.",
+      "say": "Spieler drei spielt zu Spieler sechs, der zu Spieler fünf und der zu Spieler zwei. Der Ball läuft schnell durch die Kette.",
       "moves": [
        {
         "who": "b0",
@@ -620,7 +620,7 @@
      },
      {
       "label": "Ballverlust: Gelb",
-      "say": "Neon zwei spielt zum Trainer. Der ruft: Ballverlust, Gelb! Neon sechs sprintet sofort zum gelben Hütchen, Neon fünf und Neon drei sichern ab, Neon zwei rückt nach innen.",
+      "say": "Spieler zwei spielt zum Trainer. Der ruft: Ballverlust, Gelb! Spieler sechs sprintet sofort zum gelben Hütchen, Spieler fünf und Spieler drei sichern ab, Spieler zwei rückt nach innen.",
       "moves": [
        {
         "who": "b0",

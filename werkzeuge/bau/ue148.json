@@ -167,7 +167,7 @@
   "steps": [
    {
     "label": "Auf Zuruf hinein",
-    "say": "Auf Zuruf dribbeln Rot acht, Rot sechs und Rot zehn gleichzeitig ins Feld. Sofort pressen Neon sieben, Neon neun und Neon elf, jeder gegen seinen Gegenspieler.",
+    "say": "Auf Zuruf dribbeln Spieler acht, Spieler sechs und Spieler zehn gleichzeitig ins Feld. Sofort pressen Spieler sieben, Spieler neun und Spieler elf, jeder gegen seinen Gegenspieler.",
     "moves": [
      {
       "who": "r8",
@@ -227,7 +227,7 @@
    },
    {
     "label": "An die Linie drängen",
-    "say": "Wir schauen auf Neon sieben. Er läuft schräg von innen an und drängt Rot acht an die Seitenlinie.",
+    "say": "Wir schauen auf Spieler sieben. Er läuft schräg von innen an und drängt Spieler acht an die Seitenlinie.",
     "moves": [
      {
       "who": "r8",
@@ -275,7 +275,7 @@
    },
    {
     "label": "Durchgebrochen: Punkt",
-    "say": "Rechts ist Rot zehn schneller als Neon elf, dribbelt außen vorbei und trifft ins große Tor. Das gibt einen Punkt für Team Rot. Nach der Runde tauschen die Teams, und die nächsten Gruppen sind dran.",
+    "say": "Rechts ist Spieler zehn schneller als Spieler elf, dribbelt außen vorbei und trifft ins große Tor. Das gibt einen Punkt für Team Rot. Nach der Runde tauschen die Teams, und die nächsten Gruppen sind dran.",
     "moves": [
      {
       "who": "r10",
@@ -403,7 +403,7 @@
     "steps": [
      {
       "label": "Sofort Druck",
-      "say": "Rot sechs hat den Ball. Neon neun läuft sofort an, bis auf einen Schritt heran. Neon sieben und Neon elf rücken mit ein.",
+      "say": "Spieler sechs hat den Ball. Spieler neun läuft sofort an, bis auf einen Schritt heran. Spieler sieben und Spieler elf rücken mit ein.",
       "moves": [
        {
         "who": "n9",
@@ -435,7 +435,7 @@
      },
      {
       "label": "Pass abfangen: Punkt",
-      "say": "Rot sechs will zu Rot zehn passen. Neon elf ahnt den Pass, läuft in den Passweg und fängt ihn ab. Dann schießt er ins rechte Minitor, und das gibt einen Punkt für Team Neon.",
+      "say": "Spieler sechs will zu Spieler zehn passen. Spieler elf ahnt den Pass, läuft in den Passweg und fängt ihn ab. Dann schießt er ins rechte Minitor, und das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "n11",
@@ -555,7 +555,7 @@
     "steps": [
      {
       "label": "Schräg anlaufen",
-      "say": "Neon sieben läuft schräg von innen an. Rot acht kann nicht in die Mitte und dribbelt an die Seitenlinie.",
+      "say": "Spieler sieben läuft schräg von innen an. Spieler acht kann nicht in die Mitte und dribbelt an die Seitenlinie.",
       "moves": [
        {
         "who": "n7",
@@ -579,7 +579,7 @@
      },
      {
       "label": "Zugreifen: Punkt",
-      "say": "Rot acht legt sich den Ball zu weit vor. Genau jetzt greift Neon sieben zu, erobert den Ball und trifft ins linke Minitor. Das gibt einen Punkt für Team Neon.",
+      "say": "Spieler acht legt sich den Ball zu weit vor. Genau jetzt greift Spieler sieben zu, erobert den Ball und trifft ins linke Minitor. Das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "r8",

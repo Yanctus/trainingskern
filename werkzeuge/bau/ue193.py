@@ -1,11 +1,11 @@
 import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe import *
 # 89-P2 (U12-U14, Woche 22 Phase 5): Stopping Penetration (CDM) Skill. 20 x 15 Yards = Feld x 25-75, y 11.25-48.75 (18 x 14 m),
-# drei Zonen zu 5 Yards (gestrichelt). Ausrichtung wie im PDF: unten links drei Dummys (Stangen) von Team Neon (pink, Neon vier
-# davor), oben rechts drei Dummys von Team Rot (dunkel, Rot neun davor). Wartende Spieler nur im Text. Im PDF zwei Trainer als
+# drei Zonen zu 5 Yards (gestrichelt). Ausrichtung wie im PDF: unten links drei Dummys (Stangen) von Team Neon (pink, Spieler vier
+# davor), oben rechts drei Dummys von Team Rot (dunkel, Spieler neun davor). Wartende Spieler nur im Text. Im PDF zwei Trainer als
 # Passgeber; hier ein Trainer (oben links, passt auf die Neon-Dummys) und ein Springer (F, unten rechts, passt auf die Rot-Dummys),
 # der Ton erlaubt "the coach or a player". Steigerung eins: je ein Hütchentor oben und unten (im Video gelb, hier neon).
-# Sichtkegel: Text "Awareness of coaches body shape and eyes to anticipate pass direction" -> Neon vier schaut zum Trainer,
-# Rot neun zum Springer, bevor der Pass kommt; Ton "get their head up to drive out" -> in Steigerung eins schaut Neon vier nach dem
+# Sichtkegel: Text "Awareness of coaches body shape and eyes to anticipate pass direction" -> Spieler vier schaut zum Trainer,
+# Spieler neun zum Springer, bevor der Pass kommt; Ton "get their head up to drive out" -> in Steigerung eins schaut Spieler vier nach dem
 # Abfangen zum Tor oben (im Video kein Kegel eingezeichnet, Richtung aus dem Sinn).
 T = P("T", "c", 39.7, 20.2, "T")
 F = P("f1", "t", 63.5, 39.1, "F")
@@ -34,29 +34,29 @@ u = {"title": "Pässe in die Tiefe stoppen", "code": "UE-193", "kind": "Übungsf
  "say_intro": "Pässe in die Tiefe stoppen. Wer vor den Dummys steht, fängt die Pässe ab wie ein Sechser vor der Abwehr.",
  "board": {"lines": LINES, "goals": [], "cones": DUMMYS, "players": sp(), "balls": [B("b1", 40.3, 20.8), B("b2", 64.1, 39.7)] + ERSATZ,
   "steps": [
-   S("Auf den Zehenspitzen", "Neon vier und Rot neun stehen auf den Zehenspitzen vor ihren Dummys. Beide schauen genau auf den Passgeber: Wohin schaut er, wie steht sein Körper?",
+   S("Auf den Zehenspitzen", "Spieler vier und Spieler neun stehen auf den Zehenspitzen vor ihren Dummys. Beide schauen genau auf den Passgeber: Wohin schaut er, wie steht sein Körper?",
      bl("n4", [39.7, 20.2]), bl("r9", [63.5, 39.1])),
-   S("Pass und blocken", "Gleichzeitig spielen der Trainer und der Springer einen festen Pass auf einen Dummy. Rot neun blockt den Ball ins Aus, und das gibt einen Punkt für Team Rot. Neon vier stoppt den Ball.",
+   S("Pass und blocken", "Gleichzeitig spielen der Trainer und der Springer einen festen Pass auf einen Dummy. Spieler neun blockt den Ball ins Aus, und das gibt einen Punkt für Team Rot. Spieler vier stoppt den Ball.",
      ps("b1", [33.9, 37.1]), mv("n4", [33.3, 36.5], delay=0.2), ps("b2", [69.1, 22.1]), mv("r9", [68.5, 21.5], delay=0.2),
      ps("b2", [78, 25], after=True)),
-   S("Rausdribbeln: Punkte", "Neon vier hebt den Kopf, dribbelt links aus dem Feld und passt zum Trainer zurück. Das gibt zwei Punkte für Team Neon. Dann kommen die nächsten Spieler beider Teams vor die Dummys.",
+   S("Rausdribbeln: Punkte", "Spieler vier hebt den Kopf, dribbelt links aus dem Feld und passt zum Trainer zurück. Das gibt zwei Punkte für Team Neon. Dann kommen die nächsten Spieler beider Teams vor die Dummys.",
      dr("n4", "b1", [23.5, 33]), ps("b1", [40.3, 20.8], after=True))],
   "dims": dims(25, 75, 11.25, 48.75, "18 m", "14 m", rx=86)},
  "versions": [
   V("Steigerung", "Und jetzt die Steigerung: Durch das Tor dribbeln.", "Durch das Tor dribbeln",
     "Jetzt steht oben und unten ein Hütchentor. Wer den Ball erobert, dribbelt mit Tempo durch das Tor auf der anderen Seite und bekommt dafür zwei Punkte. So schaltet der Spieler nach dem Ballgewinn sofort um, wie im Spiel.",
     sp(), [B("b1", 40.3, 20.8), B("b2", 64.1, 39.7)] + ERSATZ,
-    [S("Abfangen", "Der Trainer und der Springer passen gleichzeitig auf die Dummys. Neon vier und Rot neun fangen beide den Ball ab.",
+    [S("Abfangen", "Der Trainer und der Springer passen gleichzeitig auf die Dummys. Spieler vier und Spieler neun fangen beide den Ball ab.",
        ps("b1", [33.9, 37.1]), mv("n4", [33.3, 36.5], delay=0.2), ps("b2", [69.1, 22.1]), mv("r9", [68.5, 21.5], delay=0.2)),
-     S("Durch das Tor: Punkte", "Neon vier hebt den Kopf, sieht das Tor oben und dribbelt mit Tempo hindurch. Das gibt zwei Punkte für Team Neon. Gleichzeitig dribbelt Rot neun unten durch sein Tor, und das gibt zwei Punkte für Team Rot.",
+     S("Durch das Tor: Punkte", "Spieler vier hebt den Kopf, sieht das Tor oben und dribbelt mit Tempo hindurch. Das gibt zwei Punkte für Team Neon. Gleichzeitig dribbelt Spieler neun unten durch sein Tor, und das gibt zwei Punkte für Team Rot.",
        bl("n4", [46, 20]), dr("n4", "b1", [53.5, 8], after=True), dr("r9", "b2", [46.5, 51.5], delay=0.5))],
     cones=DUMMYS_ID + TORE),
   V("Steigerung", "Und jetzt die zweite Steigerung: Näher am Passgeber.", "Näher am Passgeber",
     "Jetzt starten die Spieler weiter vorn, näher am Passgeber. Der Weg zum Ball ist kürzer, aber der Pass kommt viel schneller. Darum noch früher auf Körper und Augen des Passgebers schauen.",
     sp(F=P("f1", "t", 57.5, 39.1, "F"), n4=(31, 33), r9=(66, 28)), [B("b1", 40.3, 20.8), B("b2", 58.1, 39.7)] + ERSATZ,
-    [S("Näher dran", "Neon vier und Rot neun stehen jetzt weiter vorn. Beide schauen genau auf den Passgeber.",
+    [S("Näher dran", "Spieler vier und Spieler neun stehen jetzt weiter vorn. Beide schauen genau auf den Passgeber.",
        bl("n4", [39.7, 20.2]), bl("r9", [57.5, 39.1])),
-     S("Blitzschnell: Punkte", "Die Pässe kommen. Beide reagieren blitzschnell, erobern den Ball und dribbeln hinaus. Neon vier passt zum Trainer, Rot neun zum Springer, und das gibt zwei Punkte für jedes Team.",
+     S("Blitzschnell: Punkte", "Die Pässe kommen. Beide reagieren blitzschnell, erobern den Ball und dribbeln hinaus. Spieler vier passt zum Trainer, Spieler neun zum Springer, und das gibt zwei Punkte für jedes Team.",
        ps("b1", [39.4, 30.6]), mv("n4", [38.8, 30], delay=0.1), ps("b2", [60.7, 28.6]), mv("r9", [60.1, 28], delay=0.1),
        dr("n4", "b1", [23.5, 28], after=True), ps("b1", [40.3, 20.8], after=True),
        dr("r9", "b2", [77, 24], delay=1.4), ps("b2", [58.1, 39.7], delay=2.6))])]}

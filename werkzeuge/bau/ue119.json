@@ -183,7 +183,7 @@
   "steps": [
    {
     "label": "Wettlauf zum Ball",
-    "say": "Gleichzeitig sprinten Neon drei und Rot sieben um ihre Stange und ihr Hütchen. Der Trainer spielt den Ball ins Feld, und Neon drei ist zuerst da.",
+    "say": "Gleichzeitig sprinten Spieler drei und Spieler sieben um ihre Stange und ihr Hütchen. Der Trainer spielt den Ball ins Feld, und Spieler drei ist zuerst da.",
     "moves": [
      {
       "who": "n3",
@@ -260,7 +260,7 @@
    },
    {
     "label": "Zwei gegen eins",
-    "say": "Neon drei dribbelt in die Zone. Rot sechs kommt heraus, und Neon drei spielt zu Neon zwei.",
+    "say": "Spieler drei dribbelt in die Zone. Spieler sechs kommt heraus, und Spieler drei spielt zu Spieler zwei.",
     "moves": [
      {
       "who": "n3",
@@ -293,7 +293,7 @@
    },
    {
     "label": "Abschluss",
-    "say": "Neon zwei schließt sofort ab und trifft ins große Tor. Das gibt einen Punkt für Team Neon.",
+    "say": "Spieler zwei schließt sofort ab und trifft ins große Tor. Das gibt einen Punkt für Team Neon.",
     "moves": [
      {
       "who": "c1",
@@ -408,7 +408,7 @@
     "steps": [
      {
       "label": "Mitnahme nach vorn",
-      "say": "Neon drei nimmt den Ball mit dem ersten Kontakt weit nach vorn mit und dribbelt auf Rot sechs zu.",
+      "say": "Spieler drei nimmt den Ball mit dem ersten Kontakt weit nach vorn mit und dribbelt auf Spieler sechs zu.",
       "moves": [
        {
         "who": "n3",
@@ -432,7 +432,7 @@
      },
      {
       "label": "Pass zum Freien",
-      "say": "Rot sechs muss Neon drei angreifen. Jetzt ist Neon zwei frei, bekommt den Ball und schießt ins Tor. Das gibt einen Punkt für Team Neon.",
+      "say": "Spieler sechs muss Spieler drei angreifen. Jetzt ist Spieler zwei frei, bekommt den Ball und schießt ins Tor. Das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "g",
@@ -540,7 +540,7 @@
     "steps": [
      {
       "label": "Ball abgefangen",
-      "say": "Neon drei spielt zu Neon zwei, aber Rot sechs läuft in den Pass und fängt den Ball ab.",
+      "say": "Spieler drei spielt zu Spieler zwei, aber Spieler sechs läuft in den Pass und fängt den Ball ab.",
       "moves": [
        {
         "who": "g",
@@ -563,7 +563,7 @@
      },
      {
       "label": "Konter aufs Minitor",
-      "say": "Rot sechs dribbelt sofort los und schießt ins untere Minitor. Das gibt einen Punkt für Team Rot.",
+      "say": "Spieler sechs dribbelt sofort los und schießt ins untere Minitor. Das gibt einen Punkt für Team Rot.",
       "moves": [
        {
         "who": "r6",

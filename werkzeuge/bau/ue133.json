@@ -136,7 +136,7 @@
   "steps": [
    {
     "label": "Nur auf den Linien",
-    "say": "Auf Pfiff laufen alle gleichzeitig los, aber nur auf den Linien. Rot drei jagt Neon acht, der läuft nach links weg.",
+    "say": "Auf Pfiff laufen alle gleichzeitig los, aber nur auf den Linien. Spieler drei jagt Spieler acht, der läuft nach links weg.",
     "moves": [
      {
       "who": "r3",
@@ -212,7 +212,7 @@
    },
    {
     "label": "Umschauen, Druck erkennen",
-    "say": "Neon sechs schaut sich um: Rot zwei kommt von rechts unten, Rot drei steht links unten. Also läuft er auf der Querlinie zur Mitte, weg von beiden.",
+    "say": "Spieler sechs schaut sich um: Spieler zwei kommt von rechts unten, Spieler drei steht links unten. Also läuft er auf der Querlinie zur Mitte, weg von beiden.",
     "moves": [
      {
       "who": "n6",
@@ -253,7 +253,7 @@
    },
    {
     "label": "Gefangen: raus",
-    "say": "Rot drei bleibt Neon acht auf den Fersen und fängt ihn an der linken Linie. Neon acht muss raus und wartet außen.",
+    "say": "Spieler drei bleibt Spieler acht auf den Fersen und fängt ihn an der linken Linie. Spieler acht muss raus und wartet außen.",
     "moves": [
      {
       "who": "r3",
@@ -379,7 +379,7 @@
     "steps": [
      {
       "label": "Erst schauen",
-      "say": "Neon sechs steht auf der Kreuzung in der Mitte und schaut sich um: Rot drei kommt von oben, Rot zwei von rechts.",
+      "say": "Spieler sechs steht auf der Kreuzung in der Mitte und schaut sich um: Spieler drei kommt von oben, Spieler zwei von rechts.",
       "moves": [
        {
         "who": "n6",
@@ -411,7 +411,7 @@
      },
      {
       "label": "Weg vom Druck",
-      "say": "Also läuft er nach links weg, dorthin, wo kein Fänger ist. Die beiden Fänger kommen zu spät, und Neon sechs ist noch im Spiel.",
+      "say": "Also läuft er nach links weg, dorthin, wo kein Fänger ist. Die beiden Fänger kommen zu spät, und Spieler sechs ist noch im Spiel.",
       "moves": [
        {
         "who": "n6",
@@ -514,7 +514,7 @@
     "steps": [
      {
       "label": "Antäuschen",
-      "say": "Neon neun läuft ein Stück nach unten, als wolle er dorthin. Rot zwei läuft auf der Querlinie schon in diese Richtung.",
+      "say": "Spieler neun läuft ein Stück nach unten, als wolle er dorthin. Spieler zwei läuft auf der Querlinie schon in diese Richtung.",
       "moves": [
        {
         "who": "n9",
@@ -537,7 +537,7 @@
      },
      {
       "label": "Abbiegen, entkommen",
-      "say": "Dann dreht Neon neun blitzschnell um und läuft nach oben. Rot zwei ist auf dem falschen Fuß und kommt nicht mehr hinterher, Neon neun bleibt im Spiel.",
+      "say": "Dann dreht Spieler neun blitzschnell um und läuft nach oben. Spieler zwei ist auf dem falschen Fuß und kommt nicht mehr hinterher, Spieler neun bleibt im Spiel.",
       "moves": [
        {
         "who": "n9",
@@ -631,7 +631,7 @@
     "steps": [
      {
       "label": "Sicher auf der Insel",
-      "say": "Neon neun rettet sich zum Hütchen auf der unteren Linie, dort ist er sicher. Rot zwei läuft jetzt quer durchs Feld auf ihn zu.",
+      "say": "Spieler neun rettet sich zum Hütchen auf der unteren Linie, dort ist er sicher. Spieler zwei läuft jetzt quer durchs Feld auf ihn zu.",
       "moves": [
        {
         "who": "n9",
@@ -663,7 +663,7 @@
      },
      {
       "label": "Nach drei Sekunden weiter",
-      "say": "Nach drei Sekunden muss Neon neun weiter und sprintet zum nächsten Hütchen. Er ist schneller als Rot zwei und schafft es, also bleibt er im Spiel. Dann sucht sich Rot zwei einen anderen Läufer.",
+      "say": "Nach drei Sekunden muss Spieler neun weiter und sprintet zum nächsten Hütchen. Er ist schneller als Spieler zwei und schafft es, also bleibt er im Spiel. Dann sucht sich Spieler zwei einen anderen Läufer.",
       "moves": [
        {
         "who": "n9",

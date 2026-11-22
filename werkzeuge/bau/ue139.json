@@ -729,7 +729,7 @@
     "steps": [
      {
       "label": "Über das Hütchen",
-      "say": "Neon fünf und Rot neun gehen einen Schritt nach oben und passen über das obere Hütchen, jeder mit dem Fuß, der näher an der Linie ist.",
+      "say": "Spieler fünf und Spieler neun gehen einen Schritt nach oben und passen über das obere Hütchen, jeder mit dem Fuß, der näher an der Linie ist.",
       "moves": [
        {
         "who": "n5",
@@ -919,7 +919,7 @@
     "steps": [
      {
       "label": "Über die Hürden",
-      "say": "Neon fünf läuft mit kurzen, schnellen Schritten über die Hürden nach unten und stellt sich bei der Gruppe gegenüber an.",
+      "say": "Spieler fünf läuft mit kurzen, schnellen Schritten über die Hürden nach unten und stellt sich bei der Gruppe gegenüber an.",
       "moves": [
        {
         "who": "n5",
@@ -951,7 +951,7 @@
      },
      {
       "label": "Durch die Leiter",
-      "say": "Danach läuft Neon sechs mit schnellen Füßen durch die Leiter nach oben und stellt sich oben hinten an.",
+      "say": "Danach läuft Spieler sechs mit schnellen Füßen durch die Leiter nach oben und stellt sich oben hinten an.",
       "moves": [
        {
         "who": "n6",

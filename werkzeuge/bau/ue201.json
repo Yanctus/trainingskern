@@ -269,7 +269,7 @@
   "steps": [
    {
     "label": "Anspiel",
-    "say": "Team Neon hat den Ball. Neon sechs passt schräg zu Neon acht. Rot drei läuft sofort hin und drückt.",
+    "say": "Team Neon hat den Ball. Spieler sechs passt schräg zu Spieler acht. Spieler drei läuft sofort hin und drückt.",
     "moves": [
      {
       "who": "b1",
@@ -292,7 +292,7 @@
    },
    {
     "label": "Drei Sekunden abschirmen",
-    "say": "Neon acht stellt den Körper zwischen Ball und Gegner und hält den Ball drei Sekunden. Dabei hebt er den Kopf und sieht, dass Neon vier frei ist.",
+    "say": "Spieler acht stellt den Körper zwischen Ball und Gegner und hält den Ball drei Sekunden. Dabei hebt er den Kopf und sieht, dass Spieler vier frei ist.",
     "moves": [
      {
       "who": "n8",
@@ -315,8 +315,8 @@
     ]
    },
    {
-    "label": "Weiter zu Neon vier",
-    "say": "Neon acht spielt quer zu Neon vier. Rot elf drückt, aber auch Neon vier schirmt den Ball drei Sekunden ab.",
+    "label": "Weiter zu Spieler vier",
+    "say": "Spieler acht spielt quer zu Spieler vier. Spieler elf drückt, aber auch Spieler vier schirmt den Ball drei Sekunden ab.",
     "moves": [
      {
       "who": "b1",
@@ -348,8 +348,8 @@
     ]
    },
    {
-    "label": "Hoch zu Neon zehn",
-    "say": "Dann spielt Neon vier hoch zu Neon zehn. Der steht jetzt im Eins gegen Eins mit Rot vierzehn.",
+    "label": "Hoch zu Spieler zehn",
+    "say": "Dann spielt Spieler vier hoch zu Spieler zehn. Der steht jetzt im Eins gegen Eins mit Spieler vierzehn.",
     "moves": [
      {
       "who": "b1",
@@ -372,7 +372,7 @@
    },
    {
     "label": "Eins gegen eins: Punkt",
-    "say": "Neon zehn schirmt ab, dreht sich schnell an Rot vierzehn vorbei und schießt ins Minitor. Das gibt einen Punkt für Team Neon. Dann bekommt Team Rot einen neuen Ball vom Trainer und greift auf die unteren Tore an.",
+    "say": "Spieler zehn schirmt ab, dreht sich schnell an Spieler vierzehn vorbei und schießt ins Minitor. Das gibt einen Punkt für Team Neon. Dann bekommt Team Rot einen neuen Ball vom Trainer und greift auf die unteren Tore an.",
     "moves": [
      {
       "who": "n10",
@@ -532,7 +532,7 @@
     "steps": [
      {
       "label": "Abschirmen",
-      "say": "Neon zehn hat den Ball, Rot vierzehn drückt von hinten. Neon zehn macht sich breit, hält den Gegner mit Körper und Arm weg und schirmt den Ball ab.",
+      "say": "Spieler zehn hat den Ball, Spieler vierzehn drückt von hinten. Spieler zehn macht sich breit, hält den Gegner mit Körper und Arm weg und schirmt den Ball ab.",
       "moves": [
        {
         "who": "r14",
@@ -556,7 +556,7 @@
      },
      {
       "label": "Abdrücken: Punkt",
-      "say": "Im richtigen Moment drückt sich Neon zehn ab, dreht sich weg und schießt ins Minitor. Das gibt einen Punkt für Team Neon.",
+      "say": "Im richtigen Moment drückt sich Spieler zehn ab, dreht sich weg und schießt ins Minitor. Das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "n10",
@@ -700,7 +700,7 @@
     "steps": [
      {
       "label": "Wegziehen",
-      "say": "Neon fünf hat den Ball. Neon acht läuft schräg nach außen und zieht Rot drei mit. Jetzt ist der Weg nach oben frei. Neon zehn schaut über die Schulter, wo Rot vierzehn steht.",
+      "say": "Spieler fünf hat den Ball. Spieler acht läuft schräg nach außen und zieht Spieler drei mit. Jetzt ist der Weg nach oben frei. Spieler zehn schaut über die Schulter, wo Spieler vierzehn steht.",
       "moves": [
        {
         "who": "n8",
@@ -732,7 +732,7 @@
      },
      {
       "label": "Frei anspielen: Punkt",
-      "say": "Neon fünf spielt den langen Pass zu Neon zehn. Der weiß schon, wo sein Gegner steht, dreht sich weg und schießt ins Minitor. Das gibt einen Punkt für Team Neon.",
+      "say": "Spieler fünf spielt den langen Pass zu Spieler zehn. Der weiß schon, wo sein Gegner steht, dreht sich weg und schießt ins Minitor. Das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "b1",

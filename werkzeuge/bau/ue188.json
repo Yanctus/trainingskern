@@ -207,7 +207,7 @@
   "steps": [
    {
     "label": "Ball in die Luft",
-    "say": "Alle schauen zum Trainer, auch Neon vier. Der Trainer schießt den Ball hoch in die Mitte. Neon acht und Rot sechs gehen beide zum Ball.",
+    "say": "Alle schauen zum Trainer, auch Spieler vier. Der Trainer schießt den Ball hoch in die Mitte. Spieler acht und Spieler sechs gehen beide zum Ball.",
     "moves": [
      {
       "who": "n4",
@@ -248,7 +248,7 @@
    },
    {
     "label": "Zweiter Ball",
-    "say": "Rot sechs köpft den Ball weg, aber er springt frei. Neon vier reagiert am schnellsten und holt sich den zweiten Ball.",
+    "say": "Spieler sechs köpft den Ball weg, aber er springt frei. Spieler vier reagiert am schnellsten und holt sich den zweiten Ball.",
     "moves": [
      {
       "who": "b1",
@@ -271,7 +271,7 @@
    },
    {
     "label": "Schnell nach vorn",
-    "say": "Neon vier spielt sofort zu Neon neun, bevor Team Rot sich ordnen kann.",
+    "say": "Spieler vier spielt sofort zu Spieler neun, bevor Team Rot sich ordnen kann.",
     "moves": [
      {
       "who": "b1",
@@ -285,7 +285,7 @@
    },
    {
     "label": "Abschluss: Punkte",
-    "say": "Neon neun schießt flach ins Eck, vorbei am Torwart. Das gibt drei Punkte für Team Neon. Sofort spielt der Trainer einen neuen Ball ins Feld, und alle kämpfen wieder um den zweiten Ball.",
+    "say": "Spieler neun schießt flach ins Eck, vorbei am Torwart. Das gibt drei Punkte für Team Neon. Sofort spielt der Trainer einen neuen Ball ins Feld, und alle kämpfen wieder um den zweiten Ball.",
     "moves": [
      {
       "who": "b1",
@@ -435,7 +435,7 @@
     "steps": [
      {
       "label": "Freier Ball",
-      "say": "Der Trainer wirft den Ball springend zwischen Neon zwei und Rot elf. Beide sprinten los.",
+      "say": "Der Trainer wirft den Ball springend zwischen Spieler zwei und Spieler elf. Beide sprinten los.",
       "moves": [
        {
         "who": "b1",
@@ -467,7 +467,7 @@
      },
      {
       "label": "Meiner!",
-      "say": "Neon zwei ruft laut „Meiner!“, ist zuerst am Ball und stellt den Körper zwischen Ball und Gegner.",
+      "say": "Spieler zwei ruft laut „Meiner!“, ist zuerst am Ball und stellt den Körper zwischen Ball und Gegner.",
       "moves": [
        {
         "who": "r11",
@@ -481,7 +481,7 @@
      },
      {
       "label": "Ball behalten",
-      "say": "Neon zwei behält den Ball und spielt zu Neon vier. Jetzt ist Team Neon am Ball und greift an.",
+      "say": "Spieler zwei behält den Ball und spielt zu Spieler vier. Jetzt ist Team Neon am Ball und greift an.",
       "moves": [
        {
         "who": "b1",
@@ -615,7 +615,7 @@
     "steps": [
      {
       "label": "Hoher Ball",
-      "say": "Der Trainer schießt den Ball hoch zu Neon acht. Rot sechs läuft von hinten an.",
+      "say": "Der Trainer schießt den Ball hoch zu Spieler acht. Spieler sechs läuft von hinten an.",
       "moves": [
        {
         "who": "b1",
@@ -638,7 +638,7 @@
      },
      {
       "label": "Saubere Annahme: Punkt",
-      "say": "Neon acht nimmt den Ball mit der Brust sauber an und schirmt ihn ab. Das gibt einen Punkt für Team Neon.",
+      "say": "Spieler acht nimmt den Ball mit der Brust sauber an und schirmt ihn ab. Das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "n8",
@@ -653,7 +653,7 @@
      },
      {
       "label": "Weiterspielen",
-      "say": "Mit dem ersten Kontakt ist er weg vom Gegner und spielt gleich zu Neon neun nach vorn.",
+      "say": "Mit dem ersten Kontakt ist er weg vom Gegner und spielt gleich zu Spieler neun nach vorn.",
       "moves": [
        {
         "who": "b1",

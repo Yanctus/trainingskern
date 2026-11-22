@@ -204,7 +204,7 @@
   "steps": [
    {
     "label": "Zone eins",
-    "say": "Neon drei läuft nach vorn, und Neon zwei spielt ihn an. Beide haben den Ball berührt, also spielt Neon drei weiter in die zweite Zone zu Neon fünf.",
+    "say": "Spieler drei läuft nach vorn, und Spieler zwei spielt ihn an. Beide haben den Ball berührt, also spielt Spieler drei weiter in die zweite Zone zu Spieler fünf.",
     "moves": [
      {
       "who": "n3",
@@ -236,7 +236,7 @@
    },
    {
     "label": "Zone zwei",
-    "say": "Neon vier löst sich nach vorn, Neon fünf spielt zu ihm. Neon vier spielt weiter in die dritte Zone zu Neon sechs.",
+    "say": "Spieler vier löst sich nach vorn, Spieler fünf spielt zu ihm. Spieler vier spielt weiter in die dritte Zone zu Spieler sechs.",
     "moves": [
      {
       "who": "n4",
@@ -268,7 +268,7 @@
    },
    {
     "label": "Zone drei",
-    "say": "Neon sieben startet nach vorn und bekommt den Ball von Neon sechs. Dann spielt er in die letzte Zone zu Neon neun.",
+    "say": "Spieler sieben startet nach vorn und bekommt den Ball von Spieler sechs. Dann spielt er in die letzte Zone zu Spieler neun.",
     "moves": [
      {
       "who": "n7",
@@ -300,7 +300,7 @@
    },
    {
     "label": "Abschluss mit einem Kontakt",
-    "say": "Rot dreizehn greift Neon neun an. Neon neun spielt zu Neon acht, der in die Mitte läuft und direkt ins Tor schießt. Das gibt einen Punkt für Team Neon.",
+    "say": "Spieler dreizehn greift Spieler neun an. Spieler neun spielt zu Spieler acht, der in die Mitte läuft und direkt ins Tor schießt. Das gibt einen Punkt für Team Neon.",
     "moves": [
      {
       "who": "r13",
@@ -476,7 +476,7 @@
     "steps": [
      {
       "label": "Zurück unter Druck",
-      "say": "Rot zwölf greift Neon sechs an. Neon sechs spielt zurück zu Neon vier in die zweite Zone.",
+      "say": "Spieler zwölf greift Spieler sechs an. Spieler sechs spielt zurück zu Spieler vier in die zweite Zone.",
       "moves": [
        {
         "who": "r12",
@@ -499,7 +499,7 @@
      },
      {
       "label": "Und wieder nach vorn",
-      "say": "Gleichzeitig dreht Neon sechs weg in den freien Raum, und Neon vier spielt ihm den Ball sofort wieder in den Lauf.",
+      "say": "Gleichzeitig dreht Spieler sechs weg in den freien Raum, und Spieler vier spielt ihm den Ball sofort wieder in den Lauf.",
       "moves": [
        {
         "who": "n6",
@@ -642,7 +642,7 @@
     "steps": [
      {
       "label": "Zwei Verteidiger kommen",
-      "say": "Gleichzeitig greifen Rot elf und Rot zwölf Neon fünf an. In der dritten Zone steht jetzt kein Verteidiger mehr.",
+      "say": "Gleichzeitig greifen Spieler elf und Spieler zwölf Spieler fünf an. In der dritten Zone steht jetzt kein Verteidiger mehr.",
       "moves": [
        {
         "who": "r11",
@@ -665,7 +665,7 @@
      },
      {
       "label": "Raum hinter den Verteidigern",
-      "say": "Neon fünf spielt an beiden vorbei zu Neon sechs, der frei in der dritten Zone steht und nach vorn dribbelt.",
+      "say": "Spieler fünf spielt an beiden vorbei zu Spieler sechs, der frei in der dritten Zone steht und nach vorn dribbelt.",
       "moves": [
        {
         "who": "b1",

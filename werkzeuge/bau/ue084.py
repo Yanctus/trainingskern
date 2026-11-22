@@ -23,24 +23,24 @@ u = {"title": "Abschütteln und abschließen", "code": "UE-084", "kind": "Übung
  "say_intro": "Abschütteln und abschließen. Mit einer doppelten Bewegung den Verteidiger loswerden und dann aufs Tor schießen.",
  "board": {"lines": lines, "cones": cones, "goals": goals, "players": sp(), "balls": fb,
   "steps": [
-   S("Doppelte Bewegung", "Neon zwei geht erst ein paar Schritte in die eine Richtung, dann blitzschnell in die andere. Rot drei geht auf die Finte ein.",
+   S("Doppelte Bewegung", "Spieler zwei geht erst ein paar Schritte in die eine Richtung, dann blitzschnell in die andere. Spieler drei geht auf die Finte ein.",
      mv("n2", [55, 39]), mv("n2", [55, 26], after=True), mv("r3", [47, 34], delay=0.2)),
-   S("Pass von außen", "Der Außenspieler oben rechts passt in den freien Raum zu Neon zwei.", ps("b1", [56.6, 26.6])),
-   S("Abschluss: Punkt", "Neon zwei nimmt den Ball mit und schießt flach ins Eck, und das gibt einen Punkt für Neon.", ps("b1", [73, 25.5]))],
+   S("Pass von außen", "Der Außenspieler oben rechts passt in den freien Raum zu Spieler zwei.", ps("b1", [56.6, 26.6])),
+   S("Abschluss: Punkt", "Spieler zwei nimmt den Ball mit und schießt flach ins Eck, und das gibt einen Punkt für Neon.", ps("b1", [73, 25.5]))],
   "dims": [{"x1": 27, "y1": 58.6, "x2": 73, "y2": 58.6, "text": "27 m"}, {"x1": 82, "y1": 8, "x2": 82, "y2": 52, "text": "27 m"}]},
  "versions": [
   V("Coaching-Punkt", "Jetzt zum Coaching-Punkt: Wer den Ball erobert, dreht sofort um und greift das andere Tor an.", "Ball erobert, umdrehen",
     "Erobert der Verteidiger den Ball, wird er sofort zum Angreifer. Schnell umdrehen und den Platz nutzen, den der Angreifer hinter sich gelassen hat. Wer zögert, verschenkt die Chance.",
     sp((55, 30), (46, 25)), [B("b1", 56.6, 30.6)] + fb[1:],
-    [S("Zweikampf", "Neon zwei dribbelt los, Rot drei geht dazwischen.", dr("n2", "b1", [58, 32]), mv("r3", [54, 30])),
-     S("Ball erobert", "Rot drei spitzelt den Ball weg und hat ihn jetzt selbst.", ps("b1", [51, 33]), mv("r3", [50, 32.5], delay=0.2)),
-     S("Zum anderen Tor", "Rot drei dreht sofort um, dribbelt auf das andere Tor zu und schießt. Das gibt einen Punkt für Rot.",
+    [S("Zweikampf", "Spieler zwei dribbelt los, Spieler drei geht dazwischen.", dr("n2", "b1", [58, 32]), mv("r3", [54, 30])),
+     S("Ball erobert", "Spieler drei spitzelt den Ball weg und hat ihn jetzt selbst.", ps("b1", [51, 33]), mv("r3", [50, 32.5], delay=0.2)),
+     S("Zum anderen Tor", "Spieler drei dreht sofort um, dribbelt auf das andere Tor zu und schießt. Das gibt einen Punkt für Rot.",
        dr("r3", "b1", [42, 34]), ps("b1", [27, 35], after=True))]),
   V("Steigerung", "Und jetzt die Steigerung: Der Angreifer darf in die Torzone, dann presst ein Außenspieler mit.", "Außenspieler presst mit",
     "Jetzt darf der Angreifer in die Torzone dribbeln. Sobald er sie betritt, darf ein Außenspieler hereinkommen und ihn unter Druck setzen. Erobert dieser den Ball, passt er zum ursprünglichen Verteidiger, und der greift sofort das andere Tor an.",
     sp((56, 27), (47, 33)), [B("b1", 57.6, 27.6)] + fb[1:],
-    [S("Hinein in die Torzone", "Neon zwei dribbelt in die Torzone. Gleichzeitig startet der Außenspieler oben rechts und presst.",
+    [S("Hinein in die Torzone", "Spieler zwei dribbelt in die Torzone. Gleichzeitig startet der Außenspieler oben rechts und presst.",
        dr("n2", "b1", [64, 27]), mv("f2", [65, 18], delay=0.2)),
-     S("Ball erobert", "Der Außenspieler erobert den Ball und passt sofort zu Rot drei.", mv("f2", [64, 24]), ps("b1", [48.6, 33.6], after=True)),
-     S("Gegenangriff", "Rot drei dribbelt aufs andere Tor zu und schießt. Das gibt einen Punkt für Rot.", dr("r3", "b1", [42, 34]), ps("b1", [27, 35], after=True))])]}
+     S("Ball erobert", "Der Außenspieler erobert den Ball und passt sofort zu Spieler drei.", mv("f2", [64, 24]), ps("b1", [48.6, 33.6], after=True)),
+     S("Gegenangriff", "Spieler drei dribbelt aufs andere Tor zu und schießt. Das gibt einen Punkt für Rot.", dr("r3", "b1", [42, 34]), ps("b1", [27, 35], after=True))])]}
 json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)

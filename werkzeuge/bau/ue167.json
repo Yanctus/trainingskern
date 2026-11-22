@@ -23,7 +23,7 @@
  "description": "In zwei Hälften spielen je drei Spieler den Ball hin und her, bis einer nach vorn zum Angreifer passt. Der Angreifer will durch ein Hütchentor dribbeln, ein Verteidiger des anderen Teams will das verhindern. Der Verteidiger stellt sich richtig hin, lenkt den Angreifer nach außen und fängt Pässe ab. Erobert er den Ball, dribbelt er durch das Hütchentor auf der anderen Seite und holt zwei Punkte.",
  "organisation": [
   "Aufbauen: Ein Feld von 29 mal 22 Metern, in eine linke und eine rechte Hälfte geteilt. Jede Hälfte hat drei Zonen: Aufbauzone, Mittelzone und Endzone. Am Rand jeder Endzone ein Hütchentor.",
-  "Verteilen: Links spielen drei Neon-Spieler in der Aufbauzone, Neon neun ist Angreifer und Rot zehn verteidigt in der Mittelzone. Rechts ist es genau andersherum. Der Trainer steht an der Seite mit Bällen.",
+  "Verteilen: Links spielen drei Neon-Spieler in der Aufbauzone, Spieler neun ist Angreifer und Spieler zehn verteidigt in der Mittelzone. Rechts ist es genau andersherum. Der Trainer steht an der Seite mit Bällen.",
   "Ablauf: Die drei passen sich den Ball zu, bis einer nach vorn zum Angreifer spielt. Der Angreifer will durch das Hütchentor dribbeln, der Verteidiger will den Ball vorher erobern. Beide Hälften spielen gleichzeitig.",
   "Wertung: Dribbelt der Angreifer durch das Hütchentor, gibt das einen Punkt. Blockt der Verteidiger den Ball in der Endzone, gibt das einen Punkt für sein Team. Erobert er den Ball in der Mittelzone und dribbelt durch das Hütchentor auf der anderen Seite, gibt das zwei Punkte."
  ],
@@ -208,7 +208,7 @@
   "steps": [
    {
     "label": "Ball laufen lassen",
-    "say": "Beide Hälften spielen gleichzeitig. Wir schauen nach links: Neon vier passt zu Neon drei, der weiter zu Neon zwei. Rot zehn schiebt mit und schaut, wo Neon neun steht.",
+    "say": "Beide Hälften spielen gleichzeitig. Wir schauen nach links: Spieler vier passt zu Spieler drei, der weiter zu Spieler zwei. Spieler zehn schiebt mit und schaut, wo Spieler neun steht.",
     "moves": [
      {
       "who": "b1",
@@ -257,7 +257,7 @@
    },
    {
     "label": "Pass nach vorn",
-    "say": "Neon zwei spielt nach vorn zu Neon neun. Rot zehn sprintet sofort hin und stellt sich zwischen Neon neun und das Hütchentor.",
+    "say": "Spieler zwei spielt nach vorn zu Spieler neun. Spieler zehn sprintet sofort hin und stellt sich zwischen Spieler neun und das Hütchentor.",
     "moves": [
      {
       "who": "b1",
@@ -280,7 +280,7 @@
    },
    {
     "label": "Erobert und durch: Punkte",
-    "say": "Neon neun muss nach außen. Rot zehn erobert den Ball noch in der Mittelzone und dribbelt durch das Hütchentor auf der anderen Seite, und das gibt zwei Punkte für Team Rot. Dann spielt der Trainer einen neuen Ball zu Team Neon.",
+    "say": "Spieler neun muss nach außen. Spieler zehn erobert den Ball noch in der Mittelzone und dribbelt durch das Hütchentor auf der anderen Seite, und das gibt zwei Punkte für Team Rot. Dann spielt der Trainer einen neuen Ball zu Team Neon.",
     "moves": [
      {
       "who": "n9",
@@ -451,7 +451,7 @@
     "steps": [
      {
       "label": "Zwei gegen eins",
-      "say": "Neon zwei spielt nach vorn zu Neon neun, und Neon drei läuft mit in die Mitte. Rot zehn läuft Neon neun an und schaut schnell über die Schulter zu Neon drei.",
+      "say": "Spieler zwei spielt nach vorn zu Spieler neun, und Spieler drei läuft mit in die Mitte. Spieler zehn läuft Spieler neun an und schaut schnell über die Schulter zu Spieler drei.",
       "moves": [
        {
         "who": "b1",
@@ -492,7 +492,7 @@
      },
      {
       "label": "Abgefangen: Punkte",
-      "say": "Neon neun will zu Neon drei passen. Rot zehn ahnt den Pass, fängt ihn ab und dribbelt durch das Hütchentor auf der anderen Seite, und das gibt zwei Punkte für Team Rot.",
+      "say": "Spieler neun will zu Spieler drei passen. Spieler zehn ahnt den Pass, fängt ihn ab und dribbelt durch das Hütchentor auf der anderen Seite, und das gibt zwei Punkte für Team Rot.",
       "moves": [
        {
         "who": "r10",
@@ -684,7 +684,7 @@
     "steps": [
      {
       "label": "Drei gegen zwei",
-      "say": "Links pressen Rot zwölf und Rot vierzehn, und Neon drei passt schnell zu Neon zwei. Rechts spielt Team Rot gleichzeitig gegen Neon dreizehn und Neon fünfzehn.",
+      "say": "Links pressen Spieler zwölf und Spieler vierzehn, und Spieler drei passt schnell zu Spieler zwei. Rechts spielt Team Rot gleichzeitig gegen Spieler dreizehn und Spieler fünfzehn.",
       "moves": [
        {
         "who": "b1",
@@ -733,7 +733,7 @@
      },
      {
       "label": "Pass nach vorn",
-      "say": "Neon zwei spielt nach vorn zu Neon neun, und Neon drei läuft mit in die Mitte. Rot zehn schaut schnell zu beiden.",
+      "say": "Spieler zwei spielt nach vorn zu Spieler neun, und Spieler drei läuft mit in die Mitte. Spieler zehn schaut schnell zu beiden.",
       "moves": [
        {
         "who": "b1",
@@ -774,7 +774,7 @@
      },
      {
       "label": "Abgefangen: Punkte",
-      "say": "Neon neun will quer zu Neon drei passen. Rot zehn ahnt den Pass, fängt ihn ab und dribbelt durch das Hütchentor auf der anderen Seite, und das gibt zwei Punkte für Team Rot.",
+      "say": "Spieler neun will quer zu Spieler drei passen. Spieler zehn ahnt den Pass, fängt ihn ab und dribbelt durch das Hütchentor auf der anderen Seite, und das gibt zwei Punkte für Team Rot.",
       "moves": [
        {
         "who": "r10",

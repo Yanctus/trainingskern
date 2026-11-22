@@ -23,8 +23,8 @@
  "description": "Ein Angriff wird über die Mitte aufgebaut und mit einer Flanke abgeschlossen. Der Ball läuft von hinten über die Zehn zurück zur Acht, dann in die Spitze zur Neun und nach außen zum Flügel. Der Flügel flankt, die Neun dreht sich in den Strafraum, und der andere Flügel kommt an den langen Pfosten. Danach rücken alle eine Position weiter.",
  "organisation": [
   "Aufbauen: Ein Feld von 18 mal 27 Metern mit einem Jugendtor oben. Drei Stangen als Gegenspieler in der Mitte und unten links, zwei Hütchen für die Flügel.",
-  "Verteilen: Ein Torwart steht im Tor. Team Neon besetzt sieben Positionen: vier und acht hinten, zehn in der Mitte, neun vorn, elf und sieben außen. Neon sechs wartet rechts mit Bällen, der Trainer steht links.",
-  "Ablauf: Neon vier spielt zu Neon zehn, der lässt zu Neon acht abprallen. Neon acht spielt in die Spitze zu Neon neun, der spielt direkt nach außen zu Neon elf. Neon elf flankt, Neon neun und Neon sieben laufen in den Strafraum.",
+  "Verteilen: Ein Torwart steht im Tor. Team Neon besetzt sieben Positionen: vier und acht hinten, zehn in der Mitte, neun vorn, elf und sieben außen. Spieler sechs wartet rechts mit Bällen, der Trainer steht links.",
+  "Ablauf: Spieler vier spielt zu Spieler zehn, der lässt zu Spieler acht abprallen. Spieler acht spielt in die Spitze zu Spieler neun, der spielt direkt nach außen zu Spieler elf. Spieler elf flankt, Spieler neun und Spieler sieben laufen in den Strafraum.",
   "Wertung und Wechsel: Jeder Treffer gibt einen Punkt für Team Neon. Danach rücken alle eine Position weiter, und der nächste Angriff startet. Ab und zu auf der anderen Seite beginnen."
  ],
  "organisation_show": [
@@ -182,7 +182,7 @@
   "steps": [
    {
     "label": "Abprallen lassen",
-    "say": "Neon vier spielt in die Mitte zu Neon zehn. Gleichzeitig läuft Neon acht kurz weg und kommt wieder zurück. Neon zehn lässt den Ball direkt zu Neon acht abprallen.",
+    "say": "Spieler vier spielt in die Mitte zu Spieler zehn. Gleichzeitig läuft Spieler acht kurz weg und kommt wieder zurück. Spieler zehn lässt den Ball direkt zu Spieler acht abprallen.",
     "moves": [
      {
       "who": "b1",
@@ -222,7 +222,7 @@
    },
    {
     "label": "In die Spitze",
-    "say": "Neon acht spielt den Ball nach vorn in die Spitze zu Neon neun.",
+    "say": "Spieler acht spielt den Ball nach vorn in die Spitze zu Spieler neun.",
     "moves": [
      {
       "who": "b1",
@@ -236,7 +236,7 @@
    },
    {
     "label": "Direkt nach außen",
-    "say": "Neon elf läuft nach vorn, und Neon neun spielt den Ball direkt zu ihm nach außen.",
+    "say": "Spieler elf läuft nach vorn, und Spieler neun spielt den Ball direkt zu ihm nach außen.",
     "moves": [
      {
       "who": "n11",
@@ -259,7 +259,7 @@
    },
    {
     "label": "Flanke: Punkt",
-    "say": "Neon neun dreht sich um die Stange in den Strafraum, Neon sieben läuft an den langen Pfosten. Neon elf schaut hoch und flankt zu Neon sieben. Der schießt direkt ins Tor, und das gibt einen Punkt für Team Neon. Danach rücken alle eine Position weiter, und Neon sechs startet den nächsten Angriff.",
+    "say": "Spieler neun dreht sich um die Stange in den Strafraum, Spieler sieben läuft an den langen Pfosten. Spieler elf schaut hoch und flankt zu Spieler sieben. Der schießt direkt ins Tor, und das gibt einen Punkt für Team Neon. Danach rücken alle eine Position weiter, und Spieler sechs startet den nächsten Angriff.",
     "moves": [
      {
       "who": "n9",
@@ -434,7 +434,7 @@
     "steps": [
      {
       "label": "Erst weg",
-      "say": "Neon acht hat den Ball. Neon neun läuft erst weg, hinter die Stange, als ob er seinen Gegenspieler mitnimmt.",
+      "say": "Spieler acht hat den Ball. Spieler neun läuft erst weg, hinter die Stange, als ob er seinen Gegenspieler mitnimmt.",
       "moves": [
        {
         "who": "n9",
@@ -448,7 +448,7 @@
      },
      {
       "label": "Dann zeigen",
-      "say": "Dann kommt Neon neun schnell zurück und zeigt sich. Jetzt ist er frei, und Neon acht spielt ihn an.",
+      "say": "Dann kommt Spieler neun schnell zurück und zeigt sich. Jetzt ist er frei, und Spieler acht spielt ihn an.",
       "moves": [
        {
         "who": "n9",
@@ -471,7 +471,7 @@
      },
      {
       "label": "Direkt weiter",
-      "say": "Neon neun spielt direkt weiter zu Neon elf, und der Angriff läuft weiter wie in der Grundform.",
+      "say": "Spieler neun spielt direkt weiter zu Spieler elf, und der Angriff läuft weiter wie in der Grundform.",
       "moves": [
        {
         "who": "n11",
@@ -499,7 +499,7 @@
    "label": "Steigerung",
    "say": "Und jetzt die Steigerung: Der dritte Mann kommt aus dem Mittelfeld.",
    "title": "Der dritte Mann",
-   "text": "Jetzt wechseln die Spieler die Abfolge. Neon acht spielt gleich in die Spitze, Neon neun legt ab, und Neon acht startet nach vorn. Der Steilpass kommt in seinen Lauf, und er schließt selbst ab.",
+   "text": "Jetzt wechseln die Spieler die Abfolge. Spieler acht spielt gleich in die Spitze, Spieler neun legt ab, und Spieler acht startet nach vorn. Der Steilpass kommt in seinen Lauf, und er schließt selbst ab.",
    "board": {
     "players": [
      {
@@ -586,7 +586,7 @@
     "steps": [
      {
       "label": "In die Spitze",
-      "say": "Neon acht spielt gleich in die Spitze zu Neon neun.",
+      "say": "Spieler acht spielt gleich in die Spitze zu Spieler neun.",
       "moves": [
        {
         "who": "b1",
@@ -600,7 +600,7 @@
      },
      {
       "label": "Ablegen",
-      "say": "Neon zehn rückt nach, und Neon neun legt den Ball zu ihm ab. Gleichzeitig startet Neon acht aus dem Mittelfeld nach vorn.",
+      "say": "Spieler zehn rückt nach, und Spieler neun legt den Ball zu ihm ab. Gleichzeitig startet Spieler acht aus dem Mittelfeld nach vorn.",
       "moves": [
        {
         "who": "n10",
@@ -631,7 +631,7 @@
      },
      {
       "label": "Steilpass: Punkt",
-      "say": "Neon zehn spielt steil in den Lauf von Neon acht. Neon acht nimmt den Ball mit und schießt ins Tor, und das gibt einen Punkt für Team Neon.",
+      "say": "Spieler zehn spielt steil in den Lauf von Spieler acht. Spieler acht nimmt den Ball mit und schießt ins Tor, und das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "n8",

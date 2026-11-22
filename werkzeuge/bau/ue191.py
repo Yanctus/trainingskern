@@ -4,7 +4,7 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # -> Team Neon greift nach oben an (4, 5, 6, 7, 11); dunkel -> Team Rot verteidigt oben (2, 3, 8, 9, 10). Die beiden Torhüter
 # (im PDF grün 1 und 13) als neutrale Torhüter k1 oben, k2 unten (zwei Team-Torhüter gäben doppelte Nummer "TW"). Nummern wie im PDF. Positionen auf ein Spaltenraster gesetzt (3D-Abstand), Spielidee wie im PDF
 # (Pass, Kombinieren, alle in der Angriffshälfte, Abschluss). Ein Trainer statt zwei.
-# Sichtkegel: Text "vision" (Coaching-Punkt eins) und "Awareness when to step up" -> im Coaching-Punkt eins schaut Rot zwei nach
+# Sichtkegel: Text "vision" (Coaching-Punkt eins) und "Awareness when to step up" -> im Coaching-Punkt eins schaut Spieler zwei nach
 # dem Abfangen in den freien Raum hinter Team Neon, bevor er steil spielt (im Video kein Kegel eingezeichnet, Richtung aus dem Sinn).
 T = P("T", "c", 76, 30, "T")
 POS = {"k1": (50, 7.5), "r3": (33.5, 13), "r2": (66.5, 13), "n11": (41.7, 20), "n7": (58.3, 20), "r8": (66.5, 29),
@@ -33,33 +33,33 @@ u = {"title": "Kontern aus der Tiefe", "code": "UE-191", "kind": "Spielform",
  "say_intro": "Kontern aus der Tiefe. Fünf gegen fünf, und geschossen wird erst, wenn das ganze Team in der gegnerischen Hälfte ist.",
  "board": {"lines": LINES, "goals": TORE, "cones": [], "players": sp(), "balls": [B("b1", 67.1, 45.6)] + ERSATZ,
   "steps": [
-   S("Pass", "Team Neon greift nach oben an. Neon fünf passt zu Neon vier, und der spielt steil zu Neon sieben.",
+   S("Pass", "Team Neon greift nach oben an. Spieler fünf passt zu Spieler vier, und der spielt steil zu Spieler sieben.",
      ps("b1", [50.6, 36.6]), ps("b1", [58.9, 20.6], after=True)),
-   S("Alle in die obere Hälfte", "Erst wenn alle fünf in der oberen Hälfte sind, darf Team Neon schießen. Darum laufen Neon vier, fünf und sechs gleichzeitig nach vorn.",
+   S("Alle in die obere Hälfte", "Erst wenn alle fünf in der oberen Hälfte sind, darf Team Neon schießen. Darum laufen Spieler vier, fünf und sechs gleichzeitig nach vorn.",
      mv("n4", [50, 26]), mv("n5", [62, 27]), mv("n6", [37, 27])),
-   S("Kombinieren", "Neon elf startet in die Lücke, und Neon sieben spielt ihm den Ball quer in den Lauf.",
+   S("Kombinieren", "Spieler elf startet in die Lücke, und Spieler sieben spielt ihm den Ball quer in den Lauf.",
      mv("n11", [43, 13]), ps("b1", [43.6, 13.6], delay=0.3)),
-   S("Abschluss: Punkt", "Neon elf schießt flach ins kurze Eck, und das gibt einen Punkt für Team Neon. Danach spielt der obere Torwart zu Team Rot, und Team Rot greift nach unten an.",
+   S("Abschluss: Punkt", "Spieler elf schießt flach ins kurze Eck, und das gibt einen Punkt für Team Neon. Danach spielt der obere Torwart zu Team Rot, und Team Rot greift nach unten an.",
      ps("b1", [46.6, 4.8]))],
   "dims": dims(32, 68, 5, 55, "23 m", "32 m", rx=86)},
  "versions": [
   V("Coaching-Punkt", "Jetzt zum Coaching-Punkt: Nach dem Ballgewinn sofort nach vorn.", "Schneller Konter",
     "Team Neon greift mit allen fünf Spielern oben an. Hinter ihnen ist viel Platz. Erobert Team Rot den Ball, hebt der Spieler sofort den Kopf und spielt steil in diesen freien Raum. Alle anderen laufen mit, denn auch beim Konter muss das ganze Team in der gegnerischen Hälfte sein.",
     sp(HOCH), [B("b1", 58.9, 17.6)] + ERSATZ,
-    [S("Abgefangen", "Team Neon greift oben an. Neon sieben passt zu Neon fünf, aber Rot zwei geht dazwischen und fängt den Ball ab.",
+    [S("Abgefangen", "Team Neon greift oben an. Spieler sieben passt zu Spieler fünf, aber Spieler zwei geht dazwischen und fängt den Ball ab.",
        mv("r2", [62.6, 21.6]), ps("b1", [63.2, 22.2], delay=0.3)),
-     S("Kopf hoch", "Rot zwei hebt sofort den Kopf und sieht den freien Raum hinter Team Neon. Rot neun läuft schon los.",
+     S("Kopf hoch", "Spieler zwei hebt sofort den Kopf und sieht den freien Raum hinter Team Neon. Spieler neun läuft schon los.",
        bl("r2", [60, 40]), mv("r9", [60, 44], after=True)),
-     S("Steil und alle mit", "Rot zwei spielt sofort steil zu Rot neun. Gleichzeitig laufen Rot zwei und Rot drei in die untere Hälfte, denn das ganze Team muss mit.",
+     S("Steil und alle mit", "Spieler zwei spielt sofort steil zu Spieler neun. Gleichzeitig laufen Spieler zwei und Spieler drei in die untere Hälfte, denn das ganze Team muss mit.",
        ps("b1", [60.6, 44.6]), mv("r2", [64, 34], delay=0.2), mv("r3", [38, 22], delay=0.2), mv("r3", [38, 34], after=True)),
-     S("Konter: Punkt", "Rot neun schießt ins kurze Eck, und das gibt einen Punkt für Team Rot.",
+     S("Konter: Punkt", "Spieler neun schießt ins kurze Eck, und das gibt einen Punkt für Team Rot.",
        ps("b1", [53.5, 55.2]))]),
   V("Coaching-Punkt", "Der zweite Coaching-Punkt: Nach dem Ballverlust sofort zurück.", "Schnell zurück",
     "Verliert ein Team den Ball, laufen alle sofort gemeinsam zurück hinter den Ball. Dabei bleiben sie eng zusammen und reden miteinander. So findet der Gegner keine Lücke für den Konter.",
     sp(HOCH), [B("b1", 42.3, 33.6)] + ERSATZ,
-    [S("Ball verloren", "Team Neon hat den Ball an Rot zehn verloren. Sofort rufen alle: Zurück! Alle fünf sprinten gleichzeitig hinter den Ball.",
+    [S("Ball verloren", "Team Neon hat den Ball an Spieler zehn verloren. Sofort rufen alle: Zurück! Alle fünf sprinten gleichzeitig hinter den Ball.",
        mv("n4", [50, 42]), mv("n11", [46, 30]), mv("n11", [45.5, 44], after=True), mv("n6", [38, 47]),
        mv("n7", [54, 30]), mv("n7", [55, 42], after=True), mv("n5", [62, 44]), dr("r10", "b1", [42, 38], delay=0.4)),
-     S("Konter gestoppt", "Team Neon steht wieder eng vor dem eigenen Tor. Rot zehn findet keine Lücke, und Neon elf erobert den Ball zurück.",
+     S("Konter gestoppt", "Team Neon steht wieder eng vor dem eigenen Tor. Spieler zehn findet keine Lücke, und Spieler elf erobert den Ball zurück.",
        mv("n11", [42.6, 40.5]), dr("n11", "b1", [46, 35], after=True))])]}
 json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)

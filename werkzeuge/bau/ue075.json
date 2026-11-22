@@ -191,7 +191,7 @@
   "steps": [
    {
     "label": "Beide Teams starten mit Ball",
-    "say": "Jedes Team startet mit einem Ball. Gleichzeitig spielt Neon vier zu Neon fünf und Rot sieben zu Rot acht.",
+    "say": "Jedes Team startet mit einem Ball. Gleichzeitig spielt Spieler vier zu Spieler fünf und Spieler sieben zu Spieler acht.",
     "moves": [
      {
       "who": "b1",
@@ -213,7 +213,7 @@
    },
    {
     "label": "Angreifen und verteidigen zugleich",
-    "say": "Neon fünf dribbelt auf das rechte Tor, Rot acht auf das linke. Wer keinen Ball hat, verteidigt sofort: Rot neun läuft zu Neon fünf, Neon zwei zu Rot acht.",
+    "say": "Spieler fünf dribbelt auf das rechte Tor, Spieler acht auf das linke. Wer keinen Ball hat, verteidigt sofort: Spieler neun läuft zu Spieler fünf, Spieler zwei zu Spieler acht.",
     "moves": [
      {
       "who": "n5",
@@ -255,7 +255,7 @@
    },
    {
     "label": "Zwei Abschlüsse",
-    "say": "Beide schießen fast gleichzeitig. Das Tor von Neon fünf gibt einen Punkt für Neon, das Tor von Rot acht einen Punkt für Rot.",
+    "say": "Beide schießen fast gleichzeitig. Das Tor von Spieler fünf gibt einen Punkt für Neon, das Tor von Spieler acht einen Punkt für Rot.",
     "moves": [
      {
       "who": "b1",
@@ -277,7 +277,7 @@
    },
    {
     "label": "Der Trainer spielt den nächsten Ball",
-    "say": "Sofort spielt der Trainer einen neuen Ball ins Feld. Neon drei ist zuerst dort und startet den nächsten Angriff.",
+    "say": "Sofort spielt der Trainer einen neuen Ball ins Feld. Spieler drei ist zuerst dort und startet den nächsten Angriff.",
     "moves": [
      {
       "who": "c1",
@@ -427,7 +427,7 @@
     "steps": [
      {
       "label": "Neuer Ball kommt",
-      "say": "Der Trainer spielt einen neuen Ball ins Feld. Rot zehn hat sich umgeschaut und sieht ihn sofort.",
+      "say": "Der Trainer spielt einen neuen Ball ins Feld. Spieler zehn hat sich umgeschaut und sieht ihn sofort.",
       "moves": [
        {
         "who": "c1",
@@ -441,7 +441,7 @@
      },
      {
       "label": "Hin und los",
-      "say": "Rot zehn sprintet als Erster zum Ball und dribbelt sofort los nach links.",
+      "say": "Spieler zehn sprintet als Erster zum Ball und dribbelt sofort los nach links.",
       "moves": [
        {
         "who": "r10",
@@ -465,7 +465,7 @@
      },
      {
       "label": "Abschluss",
-      "say": "Rot zehn schießt flach ins Tor, und das gibt einen Punkt für Rot.",
+      "say": "Spieler zehn schießt flach ins Tor, und das gibt einen Punkt für Rot.",
       "moves": [
        {
         "who": "c1",
@@ -590,7 +590,7 @@
     "steps": [
      {
       "label": "Freier Ball hinten",
-      "say": "Hinten bei Rot liegt ein Ball frei. Rot acht und Rot neun schauen beide hin und zögern.",
+      "say": "Hinten bei Rot liegt ein Ball frei. Spieler acht und Spieler neun schauen beide hin und zögern.",
       "moves": [
        {
         "who": "r8",
@@ -613,7 +613,7 @@
      },
      {
       "label": "Schneller am Ball",
-      "say": "Neon fünf ist schneller, sprintet zum Ball und nimmt ihn mit.",
+      "say": "Spieler fünf ist schneller, sprintet zum Ball und nimmt ihn mit.",
       "moves": [
        {
         "who": "n5",
@@ -627,7 +627,7 @@
      },
      {
       "label": "Sofort abschließen",
-      "say": "Neon fünf schießt sofort, bevor sich die Abwehr sortiert, und das gibt einen Punkt für Neon.",
+      "say": "Spieler fünf schießt sofort, bevor sich die Abwehr sortiert, und das gibt einen Punkt für Neon.",
       "moves": [
        {
         "who": "b2",

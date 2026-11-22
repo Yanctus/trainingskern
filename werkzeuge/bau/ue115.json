@@ -167,7 +167,7 @@
   "steps": [
    {
     "label": "Anspiel und Prallpass",
-    "say": "Der linke Anspieler spielt zu Neon zwei. Neon zwei spielt sofort weiter zum rechten Anspieler.",
+    "say": "Der linke Anspieler spielt zu Spieler zwei. Spieler zwei spielt sofort weiter zum rechten Anspieler.",
     "moves": [
      {
       "who": "b1",
@@ -190,7 +190,7 @@
    },
    {
     "label": "Lauf in die Tiefe",
-    "say": "Gleichzeitig startet Neon drei nach vorn, und der Anspieler legt ihm den Ball in den Lauf. Rot sieben läuft hinterher.",
+    "say": "Gleichzeitig startet Spieler drei nach vorn, und der Anspieler legt ihm den Ball in den Lauf. Spieler sieben läuft hinterher.",
     "moves": [
      {
       "who": "n3",
@@ -222,7 +222,7 @@
    },
    {
     "label": "Durch das Tor",
-    "say": "Neon drei dribbelt mit Ball durch das rechte Tor. Das gibt einen Punkt für Team Neon.",
+    "say": "Spieler drei dribbelt mit Ball durch das rechte Tor. Das gibt einen Punkt für Team Neon.",
     "moves": [
      {
       "who": "n3",
@@ -340,7 +340,7 @@
     "steps": [
      {
       "label": "In den Passweg",
-      "say": "Der linke Anspieler spielt zu Neon zwei. Gleichzeitig schiebt Rot sechs in den Passweg zum rechten Anspieler.",
+      "say": "Der linke Anspieler spielt zu Spieler zwei. Gleichzeitig schiebt Spieler sechs in den Passweg zum rechten Anspieler.",
       "moves": [
        {
         "who": "b1",
@@ -363,7 +363,7 @@
      },
      {
       "label": "Nur nach hinten",
-      "say": "Der Weg nach vorn ist zu. Neon zwei muss zurück zum linken Anspieler spielen.",
+      "say": "Der Weg nach vorn ist zu. Spieler zwei muss zurück zum linken Anspieler spielen.",
       "moves": [
        {
         "who": "b1",
@@ -455,7 +455,7 @@
     "steps": [
      {
       "label": "Nach außen lenken",
-      "say": "Gleichzeitig greift Rot sechs Neon zwei von innen an, und Rot sieben schiebt in die Mitte. Neon zwei dribbelt in die obere Ecke.",
+      "say": "Gleichzeitig greift Spieler sechs Spieler zwei von innen an, und Spieler sieben schiebt in die Mitte. Spieler zwei dribbelt in die obere Ecke.",
       "moves": [
        {
         "who": "r6",
@@ -488,7 +488,7 @@
      },
      {
       "label": "Abfangen und nach vorn",
-      "say": "Neon zwei versucht den Pass zu Neon drei. Rot sieben fängt ihn ab und spielt sofort zum linken Anspieler. Das gibt einen Punkt für Team Rot.",
+      "say": "Spieler zwei versucht den Pass zu Spieler drei. Spieler sieben fängt ihn ab und spielt sofort zum linken Anspieler. Das gibt einen Punkt für Team Rot.",
       "moves": [
        {
         "who": "b1",

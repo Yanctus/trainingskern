@@ -23,8 +23,8 @@
  "description": "Drei Stangen stehen im Dreieck, ein Spieler arbeitet in der Mitte, zwei stehen außen. Nach Doppelpässen läuft der mittlere Spieler um eine Stange und bekommt den Ball. Er nimmt ihn nach innen mit, täuscht mit Körper und Blick einen Pass zur anderen Seite an und spielt dann versteckt zurück. Danach geht es auf der anderen Seite weiter.",
  "organisation": [
   "Aufbauen: Ein Feld von 9 mal 9 Metern. Drei Stangen im Dreieck: zwei oben, eine unten in der Mitte.",
-  "Verteilen: Drei Spieler pro Feld. Neon acht arbeitet in der Mitte, Neon vier steht links, Neon zehn rechts. Bei mehr Kindern mehrere Felder. Der Trainer steht rechts unten mit Bällen.",
-  "Ablauf: Doppelpässe mit Neon zehn, um die rechte Stange laufen und annehmen, nach innen mitnehmen und versteckt zurückpassen. Wieder um die Stange, Ball zurück, in die Mitte dribbeln und das Gleiche links mit Neon vier.",
+  "Verteilen: Drei Spieler pro Feld. Spieler acht arbeitet in der Mitte, Spieler vier steht links, Spieler zehn rechts. Bei mehr Kindern mehrere Felder. Der Trainer steht rechts unten mit Bällen.",
+  "Ablauf: Doppelpässe mit Spieler zehn, um die rechte Stange laufen und annehmen, nach innen mitnehmen und versteckt zurückpassen. Wieder um die Stange, Ball zurück, in die Mitte dribbeln und das Gleiche links mit Spieler vier.",
   "Wechsel: Nach einer Minute oder einigen Runden geht ein anderer Spieler in die Mitte."
  ],
  "organisation_show": [
@@ -126,7 +126,7 @@
   "steps": [
    {
     "label": "Doppelpässe",
-    "say": "Neon acht spielt Doppelpässe mit Neon zehn: hin, zurück und wieder hin.",
+    "say": "Spieler acht spielt Doppelpässe mit Spieler zehn: hin, zurück und wieder hin.",
     "moves": [
      {
       "who": "b1",
@@ -158,7 +158,7 @@
    },
    {
     "label": "Um die Stange",
-    "say": "Neon acht läuft außen um die rechte Stange. Neon zehn spielt ihm den Ball hoch in den Lauf.",
+    "say": "Spieler acht läuft außen um die rechte Stange. Spieler zehn spielt ihm den Ball hoch in den Lauf.",
     "moves": [
      {
       "who": "n8",
@@ -199,7 +199,7 @@
    },
    {
     "label": "Versteckter Rückpass",
-    "say": "Neon acht nimmt den Ball nach innen mit. Er tut so, als wolle er nach links spielen, und passt dann versteckt zurück zu Neon zehn.",
+    "say": "Spieler acht nimmt den Ball nach innen mit. Er tut so, als wolle er nach links spielen, und passt dann versteckt zurück zu Spieler zehn.",
     "moves": [
      {
       "who": "n8",
@@ -224,7 +224,7 @@
    },
    {
     "label": "Wieder um die Stange",
-    "say": "Sofort läuft Neon acht wieder außen um die Stange, und Neon zehn spielt ihm den Ball zurück.",
+    "say": "Sofort läuft Spieler acht wieder außen um die Stange, und Spieler zehn spielt ihm den Ball zurück.",
     "moves": [
      {
       "who": "n8",
@@ -256,7 +256,7 @@
    },
    {
     "label": "In die Mitte",
-    "say": "Neon acht dribbelt mit Tempo zurück in die Mitte. Jetzt kommt das Gleiche links mit Neon vier, und nach einer Minute ist ein anderer Spieler in der Mitte dran.",
+    "say": "Spieler acht dribbelt mit Tempo zurück in die Mitte. Jetzt kommt das Gleiche links mit Spieler vier, und nach einer Minute ist ein anderer Spieler in der Mitte dran.",
     "moves": [
      {
       "who": "n8",
@@ -302,7 +302,7 @@
    "label": "Coaching-Punkt",
    "say": "Jetzt zum Coaching-Punkt: Mit Körper und Blick täuschen.",
    "title": "Körper und Blick",
-   "text": "Der Rückpass soll überraschen. Darum dreht Neon acht den Körper zur anderen Seite und schaut auch dorthin, als ginge der Pass nach links. Erst im letzten Moment spielt er zurück nach rechts.",
+   "text": "Der Rückpass soll überraschen. Darum dreht Spieler acht den Körper zur anderen Seite und schaut auch dorthin, als ginge der Pass nach links. Erst im letzten Moment spielt er zurück nach rechts.",
    "board": {
     "players": [
      {
@@ -354,7 +354,7 @@
     "steps": [
      {
       "label": "Nach links schauen",
-      "say": "Neon acht nimmt den Ball nach innen mit, dreht den Körper nach links und schaut dorthin.",
+      "say": "Spieler acht nimmt den Ball nach innen mit, dreht den Körper nach links und schaut dorthin.",
       "moves": [
        {
         "who": "n8",
@@ -378,7 +378,7 @@
      },
      {
       "label": "Zurück nach rechts",
-      "say": "Dann spielt er den Ball überraschend zurück zu Neon zehn. Ein Gegner wäre jetzt auf die falsche Seite gelaufen.",
+      "say": "Dann spielt er den Ball überraschend zurück zu Spieler zehn. Ein Gegner wäre jetzt auf die falsche Seite gelaufen.",
       "moves": [
        {
         "who": "b1",
@@ -398,7 +398,7 @@
    "label": "Coaching-Punkt",
    "say": "Der zweite Coaching-Punkt: Mit beiden Füßen.",
    "title": "Beide Füße",
-   "text": "Auf der linken Seite läuft alles spiegelverkehrt. Neon acht spielt jetzt mit Neon vier und benutzt den anderen Fuß. So wird jeder mit beiden Füßen sicher.",
+   "text": "Auf der linken Seite läuft alles spiegelverkehrt. Spieler acht spielt jetzt mit Spieler vier und benutzt den anderen Fuß. So wird jeder mit beiden Füßen sicher.",
    "board": {
     "players": [
      {
@@ -450,7 +450,7 @@
     "steps": [
      {
       "label": "Doppelpässe links",
-      "say": "Neon acht spielt Doppelpässe mit Neon vier, läuft außen um die linke Stange und bekommt den Ball.",
+      "say": "Spieler acht spielt Doppelpässe mit Spieler vier, läuft außen um die linke Stange und bekommt den Ball.",
       "moves": [
        {
         "who": "b1",
@@ -518,7 +518,7 @@
      },
      {
       "label": "Rückpass mit links",
-      "say": "Er nimmt den Ball nach innen mit und spielt mit dem anderen Fuß versteckt zurück zu Neon vier. Nach einer Minute ist ein anderer Spieler in der Mitte dran.",
+      "say": "Er nimmt den Ball nach innen mit und spielt mit dem anderen Fuß versteckt zurück zu Spieler vier. Nach einer Minute ist ein anderer Spieler in der Mitte dran.",
       "moves": [
        {
         "who": "n8",

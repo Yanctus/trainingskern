@@ -230,7 +230,7 @@
   "steps": [
    {
     "label": "Vier gegen zwei",
-    "say": "Team Neon spielt in der Mitte vier gegen zwei. Neon vier spielt zu Neon acht, und der spielt schräg weiter zu Neon zehn. Rot drei läuft an.",
+    "say": "Team Neon spielt in der Mitte vier gegen zwei. Spieler vier spielt zu Spieler acht, und der spielt schräg weiter zu Spieler zehn. Spieler drei läuft an.",
     "moves": [
      {
       "who": "b1",
@@ -262,7 +262,7 @@
    },
    {
     "label": "Abgefangen",
-    "say": "Neon zehn will zu Neon sechs passen. Aber Rot zwei läuft dazwischen und fängt den Ball ab.",
+    "say": "Spieler zehn will zu Spieler sechs passen. Aber Spieler zwei läuft dazwischen und fängt den Ball ab.",
     "moves": [
      {
       "who": "r2",
@@ -285,7 +285,7 @@
    },
    {
     "label": "Sechs gegen vier",
-    "say": "Jetzt spielt Team Rot sechs gegen vier im ganzen Feld. Rot zwei spielt raus zu Rot sieben, und alle Außenspieler laufen sich gleichzeitig frei. Rot sieben spielt weiter zu Rot fünf.",
+    "say": "Jetzt spielt Team Rot sechs gegen vier im ganzen Feld. Spieler zwei spielt raus zu Spieler sieben, und alle Außenspieler laufen sich gleichzeitig frei. Spieler sieben spielt weiter zu Spieler fünf.",
     "moves": [
      {
       "who": "b1",
@@ -332,7 +332,7 @@
    },
    {
     "label": "Zurückerobert",
-    "say": "Neon sechs presst sofort und erobert den Ball. Er dribbelt zurück in die Mitte, und die Außenspieler von Team Rot gehen wieder an ihre Seiten.",
+    "say": "Spieler sechs presst sofort und erobert den Ball. Er dribbelt zurück in die Mitte, und die Außenspieler von Team Rot gehen wieder an ihre Seiten.",
     "moves": [
      {
       "who": "n6",
@@ -528,7 +528,7 @@
     "steps": [
      {
       "label": "Fünfter Pass",
-      "say": "Neon zehn spielt zu Neon sechs. Das ist der fünfte Pass, jetzt wird getauscht.",
+      "say": "Spieler zehn spielt zu Spieler sechs. Das ist der fünfte Pass, jetzt wird getauscht.",
       "moves": [
        {
         "who": "b1",
@@ -542,7 +542,7 @@
      },
      {
       "label": "Plätze tauschen",
-      "say": "Neon vier und Neon zehn laufen gleichzeitig los und tauschen die Plätze. Neon vier läuft oben an Rot zwei vorbei, Neon zehn unten.",
+      "say": "Spieler vier und Spieler zehn laufen gleichzeitig los und tauschen die Plätze. Spieler vier läuft oben an Spieler zwei vorbei, Spieler zehn unten.",
       "moves": [
        {
         "who": "n4",
@@ -582,7 +582,7 @@
      },
      {
       "label": "Neuer Platz",
-      "say": "Neon sechs spielt zu Neon vier auf seiner neuen Position. Nach fünf weiteren Pässen wird wieder getauscht.",
+      "say": "Spieler sechs spielt zu Spieler vier auf seiner neuen Position. Nach fünf weiteren Pässen wird wieder getauscht.",
       "moves": [
        {
         "who": "b1",
@@ -702,7 +702,7 @@
     "steps": [
      {
       "label": "Raus nach zehn Pässen",
-      "say": "Team Neon hat zehn Pässe geschafft. Neon sechs läuft aus der Mitte nach rechts, und Neon zehn spielt ihn an.",
+      "say": "Team Neon hat zehn Pässe geschafft. Spieler sechs läuft aus der Mitte nach rechts, und Spieler zehn spielt ihn an.",
       "moves": [
        {
         "who": "n6",
@@ -725,7 +725,7 @@
      },
      {
       "label": "Minitor: Punkt",
-      "say": "Neon sechs dribbelt zum rechten Minitor und trifft. Das gibt einen Punkt für Team Neon, und dieses Tor ist jetzt gesperrt.",
+      "say": "Spieler sechs dribbelt zum rechten Minitor und trifft. Das gibt einen Punkt für Team Neon, und dieses Tor ist jetzt gesperrt.",
       "moves": [
        {
         "who": "n6",
@@ -749,7 +749,7 @@
      },
      {
       "label": "Neuer Ball",
-      "say": "Der Trainer spielt Neon sechs einen neuen Ball, und er dribbelt zurück in die Mitte. Nach zehn Pässen darf Team Neon jetzt nur noch auf die anderen drei Tore spielen.",
+      "say": "Der Trainer spielt Spieler sechs einen neuen Ball, und er dribbelt zurück in die Mitte. Nach zehn Pässen darf Team Neon jetzt nur noch auf die anderen drei Tore spielen.",
       "moves": [
        {
         "who": "s2",

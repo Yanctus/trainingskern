@@ -181,7 +181,7 @@
   "steps": [
    {
     "label": "Anspiel",
-    "say": "Der Trainer spielt Rot neun in der Mitte an. Neon vier presst sofort, Neon fünf sichert die Mitte ab.",
+    "say": "Der Trainer spielt Spieler neun in der Mitte an. Spieler vier presst sofort, Spieler fünf sichert die Mitte ab.",
     "moves": [
      {
       "who": "b1",
@@ -213,7 +213,7 @@
    },
    {
     "label": "Nach außen drängen",
-    "say": "Rot neun kommt nicht durch die Mitte und spielt nach rechts zu Rot elf. Neon fünf schiebt von innen hinüber, Neon vier sichert jetzt die Mitte.",
+    "say": "Spieler neun kommt nicht durch die Mitte und spielt nach rechts zu Spieler elf. Spieler fünf schiebt von innen hinüber, Spieler vier sichert jetzt die Mitte.",
     "moves": [
      {
       "who": "b1",
@@ -245,7 +245,7 @@
    },
    {
     "label": "Außen: nur ein Punkt",
-    "say": "Rot elf kommt nur noch außen durch und spielt durch das rechte Hütchentor. Das gibt einen Punkt für Team Rot, das Minitor in der Mitte bleibt zu. Dann kommen drei neue Angreifer.",
+    "say": "Spieler elf kommt nur noch außen durch und spielt durch das rechte Hütchentor. Das gibt einen Punkt für Team Rot, das Minitor in der Mitte bleibt zu. Dann kommen drei neue Angreifer.",
     "moves": [
      {
       "who": "r11",
@@ -370,7 +370,7 @@
     "steps": [
      {
       "label": "Pressen und sichern",
-      "say": "Rot neun hat den Ball. Neon vier presst ihn direkt, Neon fünf steht schräg dahinter und sichert ab.",
+      "say": "Spieler neun hat den Ball. Spieler vier presst ihn direkt, Spieler fünf steht schräg dahinter und sichert ab.",
       "moves": [
        {
         "who": "n4",
@@ -393,7 +393,7 @@
      },
      {
       "label": "Abfangen: Punkte",
-      "say": "Rot neun will zu Rot elf passen, aber Neon fünf ahnt es und fängt den Ball ab. Das gibt zwei Punkte für Team Neon.",
+      "say": "Spieler neun will zu Spieler elf passen, aber Spieler fünf ahnt es und fängt den Ball ab. Das gibt zwei Punkte für Team Neon.",
       "moves": [
        {
         "who": "n5",
@@ -501,7 +501,7 @@
     "steps": [
      {
       "label": "Ballgewinn",
-      "say": "Rot sieben dribbelt links nach vorn. Neon vier presst, drängt ihn an die Linie und erobert den Ball.",
+      "say": "Spieler sieben dribbelt links nach vorn. Spieler vier presst, drängt ihn an die Linie und erobert den Ball.",
       "moves": [
        {
         "who": "r7",
@@ -534,8 +534,8 @@
       ]
      },
      {
-      "label": "Raus zu Neon zwei: Punkte",
-      "say": "Sofort spielt Neon vier den Ball hinaus zu Neon zwei. Der Konter ist geglückt, und das gibt zwei Punkte für Team Neon.",
+      "label": "Raus zu Spieler zwei: Punkte",
+      "say": "Sofort spielt Spieler vier den Ball hinaus zu Spieler zwei. Der Konter ist geglückt, und das gibt zwei Punkte für Team Neon.",
       "moves": [
        {
         "who": "b1",

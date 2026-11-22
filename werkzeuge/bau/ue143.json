@@ -228,7 +228,7 @@
   "steps": [
    {
     "label": "Dribbeln zum Hütchen",
-    "say": "Neon elf und Rot vier starten gleichzeitig und dribbeln an ihrer Seite entlang zum Hütchen am Ende. Dort lassen sie den Ball liegen.",
+    "say": "Spieler elf und Spieler vier starten gleichzeitig und dribbeln an ihrer Seite entlang zum Hütchen am Ende. Dort lassen sie den Ball liegen.",
     "moves": [
      {
       "who": "n11",
@@ -253,7 +253,7 @@
    },
    {
     "label": "Leiter und Hürden",
-    "say": "Neon elf läuft durch die Leiter und um das untere Hütchen in der Mitte, Rot vier über die Hürden und um das obere Hütchen.",
+    "say": "Spieler elf läuft durch die Leiter und um das untere Hütchen in der Mitte, Spieler vier über die Hürden und um das obere Hütchen.",
     "moves": [
      {
       "who": "n11",
@@ -348,7 +348,7 @@
    },
    {
     "label": "Das andere Gerät",
-    "say": "Dann geht es weiter: Neon elf über die Hürden nach unten rechts, Rot vier durch die Leiter nach oben links.",
+    "say": "Dann geht es weiter: Spieler elf über die Hürden nach unten rechts, Spieler vier durch die Leiter nach oben links.",
     "moves": [
      {
       "who": "n11",
@@ -389,7 +389,7 @@
    },
    {
     "label": "Ball holen, zurückdribbeln",
-    "say": "Jeder holt sich den Ball, den der andere liegen gelassen hat, und dribbelt ihn zur Ecke. Das startet die nächsten beiden: Neon zehn und Rot neun.",
+    "say": "Jeder holt sich den Ball, den der andere liegen gelassen hat, und dribbelt ihn zur Ecke. Das startet die nächsten beiden: Spieler zehn und Spieler neun.",
     "moves": [
      {
       "who": "n11",
@@ -545,7 +545,7 @@
     "steps": [
      {
       "label": "Kleine Kontakte",
-      "say": "Neon elf dribbelt mit vielen kleinen Kontakten an der Seite entlang nach oben, der Ball springt ihm nie weg.",
+      "say": "Spieler elf dribbelt mit vielen kleinen Kontakten an der Seite entlang nach oben, der Ball springt ihm nie weg.",
       "moves": [
        {
         "who": "n11",
@@ -681,7 +681,7 @@
     "steps": [
      {
       "label": "Eng herum",
-      "say": "Neon elf läuft eng um das untere Hütchen, Rot vier gleichzeitig eng um das obere.",
+      "say": "Spieler elf läuft eng um das untere Hütchen, Spieler vier gleichzeitig eng um das obere.",
       "moves": [
        {
         "who": "n11",

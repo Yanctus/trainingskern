@@ -228,7 +228,7 @@
   "steps": [
    {
     "label": "Pässe sammeln",
-    "say": "Neon spielt mit den Springern: Neon neun passt zum Springer in der Mitte, der zu Neon elf. Das sind schon zwei Pässe.",
+    "say": "Neon spielt mit den Springern: Spieler neun passt zum Springer in der Mitte, der zu Spieler elf. Das sind schon zwei Pässe.",
     "moves": [
      {
       "who": "b1",
@@ -251,7 +251,7 @@
    },
    {
     "label": "Fünf Pässe geschafft",
-    "say": "Weiter geht es über Neon acht und den zweiten Springer zu Neon zehn. Jetzt sind es fünf Pässe, und Neon darf schießen.",
+    "say": "Weiter geht es über Spieler acht und den zweiten Springer zu Spieler zehn. Jetzt sind es fünf Pässe, und Neon darf schießen.",
     "moves": [
      {
       "who": "b1",
@@ -283,7 +283,7 @@
    },
    {
     "label": "Tor und gesperrt",
-    "say": "Neon zehn trifft ins Minitor oben rechts, und das gibt einen Punkt für Neon. Ab jetzt ist dieses Tor für Neon gesperrt.",
+    "say": "Spieler zehn trifft ins Minitor oben rechts, und das gibt einen Punkt für Neon. Ab jetzt ist dieses Tor für Neon gesperrt.",
     "moves": [
      {
       "who": "b1",
@@ -433,7 +433,7 @@
     "steps": [
      {
       "label": "Pass zum Endspieler",
-      "say": "Neon zehn passt zum Springer am rechten Ende und startet sofort.",
+      "say": "Spieler zehn passt zum Springer am rechten Ende und startet sofort.",
       "moves": [
        {
         "who": "b1",
@@ -456,7 +456,7 @@
      },
      {
       "label": "Ablage",
-      "say": "Der Springer legt direkt ab in den Lauf von Neon zehn.",
+      "say": "Der Springer legt direkt ab in den Lauf von Spieler zehn.",
       "moves": [
        {
         "who": "b1",
@@ -470,7 +470,7 @@
      },
      {
       "label": "Abschluss: Punkt",
-      "say": "Neon zehn schießt ins Minitor oben rechts, und das gibt einen Punkt für Neon.",
+      "say": "Spieler zehn schießt ins Minitor oben rechts, und das gibt einen Punkt für Neon.",
       "moves": [
        {
         "who": "b1",
@@ -604,7 +604,7 @@
     "steps": [
      {
       "label": "Treffer",
-      "say": "Neon zehn trifft ins Minitor oben rechts, und das gibt einen Punkt für Neon.",
+      "say": "Spieler zehn trifft ins Minitor oben rechts, und das gibt einen Punkt für Neon.",
       "moves": [
        {
         "who": "b1",
@@ -618,7 +618,7 @@
      },
      {
       "label": "Neuer Ball, Rot presst",
-      "say": "Sofort spielt der Trainer einen neuen Ball zu Neon elf. Gleichzeitig pressen die Roten früh.",
+      "say": "Sofort spielt der Trainer einen neuen Ball zu Spieler elf. Gleichzeitig pressen die Roten früh.",
       "moves": [
        {
         "who": "c1",

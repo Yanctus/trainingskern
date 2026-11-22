@@ -268,7 +268,7 @@
    },
    {
     "label": "Auf den Flügel, rein in den Strafraum",
-    "say": "Dann sprintet Neon acht auf den Flügel, und der Trainer spielt ihm den Ball. Die anderen drei laufen in den Strafraum, Neon neun und Neon elf kreuzen dabei.",
+    "say": "Dann sprintet Spieler acht auf den Flügel, und der Trainer spielt ihm den Ball. Die anderen drei laufen in den Strafraum, Spieler neun und Spieler elf kreuzen dabei.",
     "moves": [
      {
       "who": "n8",
@@ -318,7 +318,7 @@
    },
    {
     "label": "Kopf hoch, Flanke",
-    "say": "Neon acht dribbelt ein Stück nach vorn, hebt den Kopf, sieht Neon elf am langen Pfosten frei und flankt.",
+    "say": "Spieler acht dribbelt ein Stück nach vorn, hebt den Kopf, sieht Spieler elf am langen Pfosten frei und flankt.",
     "moves": [
      {
       "who": "n8",
@@ -351,7 +351,7 @@
    },
    {
     "label": "Abschluss: Punkt",
-    "say": "Neon elf schließt direkt ab und trifft, und das gibt einen Punkt für Team Neon. Dann joggen alle zurück, und Team Rot startet.",
+    "say": "Spieler elf schließt direkt ab und trifft, und das gibt einen Punkt für Team Neon. Dann joggen alle zurück, und Team Rot startet.",
     "moves": [
      {
       "who": "b1",
@@ -464,7 +464,7 @@
     "steps": [
      {
       "label": "Kopf hoch",
-      "say": "Neon acht hebt den Kopf und schaut in den Strafraum: Neon neun am Elfmeterpunkt ist gedeckt, Neon elf am langen Pfosten ist frei.",
+      "say": "Spieler acht hebt den Kopf und schaut in den Strafraum: Spieler neun am Elfmeterpunkt ist gedeckt, Spieler elf am langen Pfosten ist frei.",
       "moves": [
        {
         "who": "n8",
@@ -487,7 +487,7 @@
      },
      {
       "label": "Zum Freien: Punkt",
-      "say": "Also flankt er an den langen Pfosten. Neon elf trifft, und das gibt einen Punkt für Team Neon.",
+      "say": "Also flankt er an den langen Pfosten. Spieler elf trifft, und das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "b1",
@@ -609,7 +609,7 @@
     "steps": [
      {
       "label": "Läufe, Verteidiger folgt",
-      "say": "Neon neun läuft zum kurzen Pfosten, und Rot sechs geht mit. Neon elf kreuzt hinter ihm zum langen Pfosten, Neon sieben bleibt hinten am Strafraumrand.",
+      "say": "Spieler neun läuft zum kurzen Pfosten, und Spieler sechs geht mit. Spieler elf kreuzt hinter ihm zum langen Pfosten, Spieler sieben bleibt hinten am Strafraumrand.",
       "moves": [
        {
         "who": "n9",
@@ -650,7 +650,7 @@
      },
      {
       "label": "Der Freie trifft: Punkt",
-      "say": "Neon acht hebt den Kopf, sieht Neon elf frei am langen Pfosten und flankt. Neon elf trifft, und das gibt einen Punkt für Team Neon.",
+      "say": "Spieler acht hebt den Kopf, sieht Spieler elf frei am langen Pfosten und flankt. Spieler elf trifft, und das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "n8",

@@ -195,7 +195,7 @@
   "steps": [
    {
     "label": "Pass quer, Druck",
-    "say": "Rot zehn passt quer zu Rot sieben. Gleichzeitig presst Neon vier, und Neon fünf sichert am Dummy ab.",
+    "say": "Spieler zehn passt quer zu Spieler sieben. Gleichzeitig presst Spieler vier, und Spieler fünf sichert am Dummy ab.",
     "moves": [
      {
       "who": "b1",
@@ -227,7 +227,7 @@
    },
    {
     "label": "An der Seite weiter",
-    "say": "Rot sieben spielt an der Seite weiter zu Rot elf. Neon vier bleibt dran, Neon fünf rückt zum nächsten Dummy.",
+    "say": "Spieler sieben spielt an der Seite weiter zu Spieler elf. Spieler vier bleibt dran, Spieler fünf rückt zum nächsten Dummy.",
     "moves": [
      {
       "who": "b1",
@@ -259,7 +259,7 @@
    },
    {
     "label": "Ball quer: Rollen tauschen",
-    "say": "Rot elf spielt quer zu Rot acht. Jetzt presst Neon fünf, und Neon vier sichert ab.",
+    "say": "Spieler elf spielt quer zu Spieler acht. Jetzt presst Spieler fünf, und Spieler vier sichert ab.",
     "moves": [
      {
       "who": "b1",
@@ -408,7 +408,7 @@
     "steps": [
      {
       "label": "Rückwärts und pressen",
-      "say": "Rot drei spielt zurück zu Rot neun. Neon fünf sprintet heraus und presst, Neon vier wechselt in die Absicherung.",
+      "say": "Spieler drei spielt zurück zu Spieler neun. Spieler fünf sprintet heraus und presst, Spieler vier wechselt in die Absicherung.",
       "moves": [
        {
         "who": "b1",
@@ -440,7 +440,7 @@
      },
      {
       "label": "Langer Weg",
-      "say": "Rot neun spielt quer zu Rot sechs. Jetzt muss Neon vier den langen Weg gehen und pressen, Neon fünf sichert ab.",
+      "say": "Spieler neun spielt quer zu Spieler sechs. Jetzt muss Spieler vier den langen Weg gehen und pressen, Spieler fünf sichert ab.",
       "moves": [
        {
         "who": "b1",
@@ -573,7 +573,7 @@
     "steps": [
      {
       "label": "Schräger Pass",
-      "say": "Rot zehn spielt schräg zu Rot elf. Neon fünf presst sofort, Neon vier sichert ab.",
+      "say": "Spieler zehn spielt schräg zu Spieler elf. Spieler fünf presst sofort, Spieler vier sichert ab.",
       "moves": [
        {
         "who": "b1",
@@ -605,7 +605,7 @@
      },
      {
       "label": "Wieder schräg",
-      "say": "Rot elf spielt schräg zu Rot sechs. Neon vier muss weit hinaus und pressen, Neon fünf sichert ab.",
+      "say": "Spieler elf spielt schräg zu Spieler sechs. Spieler vier muss weit hinaus und pressen, Spieler fünf sichert ab.",
       "moves": [
        {
         "who": "b1",

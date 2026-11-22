@@ -1,6 +1,6 @@
 import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe import *
 # 19-P4: 15 x 30 Yards, gedreht: Feld x 10-90, y 10-50. Rote Passspieler an beiden langen Seiten, vier Dummys in der Mitte (y 30).
-# Neon vier und Neon fünf verteidigen als Paar: einer presst, der andere sichert am Dummy ab.
+# Spieler vier und Spieler fünf verteidigen als Paar: einer presst, der andere sichert am Dummy ab.
 T = P("T", "c", 94, 44, "T")
 OBEN = dict(r10=(23.6, 12.3), r8=(47.8, 11.4), r6=(59.9, 12.4), r2=(80.4, 12.3))
 UNTEN = dict(r7=(24.8, 46.4), r11=(41.4, 48.4), r9=(60.9, 46.6), r3=(80.6, 46.4))
@@ -24,26 +24,26 @@ u = {"title": "Pressen und absichern", "code": "UE-099", "kind": "Übungsform",
  "say_intro": "Pressen und absichern. Einer presst den Ballführenden, der andere sichert dahinter ab.",
  "board": {"lines": [rect(10, 10, 80, 40)], "cones": cones, "players": sp(), "balls": [B("b1", *bp("r10"))] + cb,
   "steps": [
-   S("Pass quer, Druck", "Rot zehn passt quer zu Rot sieben. Gleichzeitig presst Neon vier, und Neon fünf sichert am Dummy ab.",
+   S("Pass quer, Druck", "Spieler zehn passt quer zu Spieler sieben. Gleichzeitig presst Spieler vier, und Spieler fünf sichert am Dummy ab.",
      ps("b1", bp("r7")), mv("n4", [24, 39], delay=0.2), mv("n5", [22, 26], delay=0.2)),
-   S("An der Seite weiter", "Rot sieben spielt an der Seite weiter zu Rot elf. Neon vier bleibt dran, Neon fünf rückt zum nächsten Dummy.",
+   S("An der Seite weiter", "Spieler sieben spielt an der Seite weiter zu Spieler elf. Spieler vier bleibt dran, Spieler fünf rückt zum nächsten Dummy.",
      ps("b1", bp("r11")), mv("n4", [41, 41], delay=0.2), mv("n5", [37, 27], delay=0.2)),
-   S("Ball quer: Rollen tauschen", "Rot elf spielt quer zu Rot acht. Jetzt presst Neon fünf, und Neon vier sichert ab.",
+   S("Ball quer: Rollen tauschen", "Spieler elf spielt quer zu Spieler acht. Jetzt presst Spieler fünf, und Spieler vier sichert ab.",
      ps("b1", bp("r8")), mv("n5", [47, 19], delay=0.2), mv("n4", [40, 33], delay=0.3))],
   "dims": [{"x1": 10, "y1": 58.6, "x2": 90, "y2": 58.6, "text": "27 m"}, {"x1": 4, "y1": 10, "x2": 4, "y2": 50, "text": "14 m"}]},
  "versions": [
   V("Coaching-Punkt", "Jetzt zum Coaching-Punkt: Auf dem Rückweg wechselt der Presser, und die Wege werden länger.", "Wechseln auf dem Rückweg",
     "Ist der Ball am Ende des Feldes, geht es zurück. Jetzt wird jeder Pass von einem anderen Verteidiger angelaufen, und die Wege werden länger. Wer sichert, ruft, wer presst. Kurz vor dem Gegenspieler abbremsen, tief gehen und seitlich stehen, um ihn in eine Richtung zu lenken.",
     sp(n4=(72, 40), n5=(63, 28)), [B("b1", *bp("r3"))] + cb,
-    [S("Rückwärts und pressen", "Rot drei spielt zurück zu Rot neun. Neon fünf sprintet heraus und presst, Neon vier wechselt in die Absicherung.",
+    [S("Rückwärts und pressen", "Spieler drei spielt zurück zu Spieler neun. Spieler fünf sprintet heraus und presst, Spieler vier wechselt in die Absicherung.",
        ps("b1", bp("r9")), mv("n5", [66, 42], delay=0.2), mv("n4", [70, 33], delay=0.2)),
-     S("Langer Weg", "Rot neun spielt quer zu Rot sechs. Jetzt muss Neon vier den langen Weg gehen und pressen, Neon fünf sichert ab.",
+     S("Langer Weg", "Spieler neun spielt quer zu Spieler sechs. Jetzt muss Spieler vier den langen Weg gehen und pressen, Spieler fünf sichert ab.",
        ps("b1", bp("r6")), mv("n4", [60, 19], delay=0.2), mv("n5", [52, 33], delay=0.3))]),
   V("Steigerung", "Und jetzt die Steigerung: Auch Pässe schräg und an der Seite entlang sind erlaubt.", "Auch schräg passen",
     "Die Passspieler dürfen jetzt auch schräg über das Feld spielen. Die Pässe kommen unberechenbarer und die Wege werden länger. Das Paar muss noch schneller reagieren und sich ständig absprechen.",
     sp(n4=(33, 20), n5=(33, 36)), [B("b1", *bp("r10"))] + cb,
-    [S("Schräger Pass", "Rot zehn spielt schräg zu Rot elf. Neon fünf presst sofort, Neon vier sichert ab.",
+    [S("Schräger Pass", "Spieler zehn spielt schräg zu Spieler elf. Spieler fünf presst sofort, Spieler vier sichert ab.",
        ps("b1", bp("r11")), mv("n5", [41, 42], delay=0.2), mv("n4", [40, 30], delay=0.2)),
-     S("Wieder schräg", "Rot elf spielt schräg zu Rot sechs. Neon vier muss weit hinaus und pressen, Neon fünf sichert ab.",
+     S("Wieder schräg", "Spieler elf spielt schräg zu Spieler sechs. Spieler vier muss weit hinaus und pressen, Spieler fünf sichert ab.",
        ps("b1", bp("r6")), mv("n4", [59, 19], delay=0.2), mv("n5", [50, 34], delay=0.3))])]}
 json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)

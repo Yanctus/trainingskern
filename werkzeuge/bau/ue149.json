@@ -171,7 +171,7 @@
   "steps": [
    {
     "label": "Gleichzeitig los",
-    "say": "Rot sieben und Neon sechs starten gleichzeitig. Jeder dribbelt in seiner Bahn nach vorn, Rot sieben ist schon in der Passzone.",
+    "say": "Spieler sieben und Spieler sechs starten gleichzeitig. Jeder dribbelt in seiner Bahn nach vorn, Spieler sieben ist schon in der Passzone.",
     "moves": [
      {
       "who": "r7",
@@ -196,7 +196,7 @@
    },
    {
     "label": "Pass ins Minitor: Punkt",
-    "say": "Erst in der Passzone darf er passen. Rot sieben spielt flach ins linke Minitor, und das gibt einen Punkt für Team Rot.",
+    "say": "Erst in der Passzone darf er passen. Spieler sieben spielt flach ins linke Minitor, und das gibt einen Punkt für Team Rot.",
     "moves": [
      {
       "who": "b7",
@@ -220,7 +220,7 @@
    },
    {
     "label": "Rüber und blocken",
-    "say": "Sofort sprintet Rot sieben hinüber in die rechte Bahn. Neon sechs passt, aber Rot sieben steht im Weg und blockt den Ball. Dann sind die Nächsten dran, und Neon sechs verteidigt gegen Rot neun.",
+    "say": "Sofort sprintet Spieler sieben hinüber in die rechte Bahn. Spieler sechs passt, aber Spieler sieben steht im Weg und blockt den Ball. Dann sind die Nächsten dran, und Spieler sechs verteidigt gegen Spieler neun.",
     "moves": [
      {
       "who": "r7",
@@ -337,7 +337,7 @@
     "steps": [
      {
       "label": "Kürzester Weg",
-      "say": "Rot sieben sprintet auf dem kürzesten Weg hinüber und geht nah an Neon sechs heran. Dabei schaut er genau auf Körper und Fuß von Neon sechs.",
+      "say": "Spieler sieben sprintet auf dem kürzesten Weg hinüber und geht nah an Spieler sechs heran. Dabei schaut er genau auf Körper und Fuß von Spieler sechs.",
       "moves": [
        {
         "who": "r7",
@@ -360,7 +360,7 @@
      },
      {
       "label": "Winkel zu: geblockt",
-      "say": "Neon sechs will ins Minitor passen, aber Rot sieben steht so nah, dass er den Ball blockt. Kein Punkt für Team Neon.",
+      "say": "Spieler sechs will ins Minitor passen, aber Spieler sieben steht so nah, dass er den Ball blockt. Kein Punkt für Team Neon.",
       "moves": [
        {
         "who": "b6",
@@ -452,7 +452,7 @@
     "steps": [
      {
       "label": "Antäuschen",
-      "say": "Rot sieben sprintet hinüber, um den Pass ins rechte Tor zu blocken. Neon sechs täuscht genau diesen Pass an und legt sich den Ball nach innen.",
+      "say": "Spieler sieben sprintet hinüber, um den Pass ins rechte Tor zu blocken. Spieler sechs täuscht genau diesen Pass an und legt sich den Ball nach innen.",
       "moves": [
        {
         "who": "r7",
@@ -476,7 +476,7 @@
      },
      {
       "label": "Anderes Tor: Punkt",
-      "say": "Rot sieben ist schon zu weit drüben. Neon sechs passt ins linke Minitor, und das gibt einen Punkt für Team Neon.",
+      "say": "Spieler sieben ist schon zu weit drüben. Spieler sechs passt ins linke Minitor, und das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "b6",

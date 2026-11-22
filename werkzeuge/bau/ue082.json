@@ -174,7 +174,7 @@
   "steps": [
    {
     "label": "Zusammenspielen",
-    "say": "Neon zwei spielt zu Neon drei. Gleichzeitig startet Neon vier vor dem Tor in den freien Raum.",
+    "say": "Spieler zwei spielt zu Spieler drei. Gleichzeitig startet Spieler vier vor dem Tor in den freien Raum.",
     "moves": [
      {
       "who": "b1",
@@ -197,7 +197,7 @@
    },
    {
     "label": "Pass in den Lauf",
-    "say": "Neon drei spielt den Ball genau in den Lauf von Neon vier.",
+    "say": "Spieler drei spielt den Ball genau in den Lauf von Spieler vier.",
     "moves": [
      {
       "who": "b1",
@@ -211,7 +211,7 @@
    },
    {
     "label": "Abschluss: zwei Punkte",
-    "say": "Neon vier hat schon einmal getroffen und ist nur noch zwei Punkte wert. Sein Tor gibt zwei Punkte für Neon, danach ist er nur noch einen Punkt wert.",
+    "say": "Spieler vier hat schon einmal getroffen und ist nur noch zwei Punkte wert. Sein Tor gibt zwei Punkte für Neon, danach ist er nur noch einen Punkt wert.",
     "moves": [
      {
       "who": "b1",
@@ -333,7 +333,7 @@
     "steps": [
      {
       "label": "Frei vor dem Tor",
-      "say": "Neon vier ist nur noch einen Punkt wert, steht aber frei. Neon drei spielt ihn an.",
+      "say": "Spieler vier ist nur noch einen Punkt wert, steht aber frei. Spieler drei spielt ihn an.",
       "moves": [
        {
         "who": "n4",
@@ -356,7 +356,7 @@
      },
      {
       "label": "Trotzdem abschließen",
-      "say": "Neon vier schießt sofort, und das gibt einen Punkt für Neon.",
+      "say": "Spieler vier schießt sofort, und das gibt einen Punkt für Neon.",
       "moves": [
        {
         "who": "b1",
@@ -462,7 +462,7 @@
     "steps": [
      {
       "label": "Kopf hoch",
-      "say": "Rot sieben kommt auf Neon drei zu. Neon drei hebt den Kopf: Neon zwei ist einen Punkt wert, Neon vier ist noch drei Punkte wert.",
+      "say": "Spieler sieben kommt auf Spieler drei zu. Spieler drei hebt den Kopf: Spieler zwei ist einen Punkt wert, Spieler vier ist noch drei Punkte wert.",
       "moves": [
        {
         "who": "r7",
@@ -476,7 +476,7 @@
      },
      {
       "label": "Zum wertvollsten Spieler",
-      "say": "Neon drei spielt zu Neon vier, dem Spieler mit drei Punkten.",
+      "say": "Spieler drei spielt zu Spieler vier, dem Spieler mit drei Punkten.",
       "moves": [
        {
         "who": "b1",
@@ -490,7 +490,7 @@
      },
      {
       "label": "Abschluss: drei Punkte",
-      "say": "Neon vier trifft, und das gibt drei Punkte für Neon.",
+      "say": "Spieler vier trifft, und das gibt drei Punkte für Neon.",
       "moves": [
        {
         "who": "b1",

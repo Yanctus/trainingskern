@@ -137,7 +137,7 @@
   "steps": [
    {
     "label": "Umschauen und Anspiel",
-    "say": "Neon sieben schaut sich um: Wo steht der Verteidiger? Dann passt Rot fünf zu Neon sieben und sprintet sofort nach. Jetzt ist es zwei gegen eins.",
+    "say": "Spieler sieben schaut sich um: Wo steht der Verteidiger? Dann passt Spieler fünf zu Spieler sieben und sprintet sofort nach. Jetzt ist es zwei gegen eins.",
     "moves": [
      {
       "who": "n7",
@@ -169,7 +169,7 @@
    },
    {
     "label": "Finte nach rechts",
-    "say": "Neon sieben nimmt den Ball nach rechts mit. Beide Verteidiger laufen hinterher.",
+    "say": "Spieler sieben nimmt den Ball nach rechts mit. Beide Verteidiger laufen hinterher.",
     "moves": [
      {
       "who": "n7",
@@ -202,7 +202,7 @@
    },
    {
     "label": "Haken nach links",
-    "say": "Neon sieben macht einen schnellen Haken nach links und lässt beide Verteidiger stehen.",
+    "say": "Spieler sieben macht einen schnellen Haken nach links und lässt beide Verteidiger stehen.",
     "moves": [
      {
       "who": "n7",
@@ -226,7 +226,7 @@
    },
    {
     "label": "Abschluss: Punkt",
-    "say": "Neon sieben dribbelt nach oben und schießt ins Minitor oben links. Das gibt einen Punkt für Team Neon. Jetzt tauschen die Rollen: Team Rot greift an, und Team Neon passt und verteidigt.",
+    "say": "Spieler sieben dribbelt nach oben und schießt ins Minitor oben links. Das gibt einen Punkt für Team Neon. Jetzt tauschen die Rollen: Team Rot greift an, und Team Neon passt und verteidigt.",
     "moves": [
      {
       "who": "n7",
@@ -339,7 +339,7 @@
     "steps": [
      {
       "label": "Ball verloren",
-      "say": "Rot vier hat den Ball erobert und passt zu Rot fünf. Das ist der erste Pass. Neon sieben presst sofort.",
+      "say": "Spieler vier hat den Ball erobert und passt zu Spieler fünf. Das ist der erste Pass. Spieler sieben presst sofort.",
       "moves": [
        {
         "who": "b1",
@@ -362,7 +362,7 @@
      },
      {
       "label": "Abgefangen",
-      "say": "Rot fünf will zurückpassen, aber Neon sieben läuft in den Passweg und fängt den Ball ab.",
+      "say": "Spieler fünf will zurückpassen, aber Spieler sieben läuft in den Passweg und fängt den Ball ab.",
       "moves": [
        {
         "who": "n7",
@@ -385,7 +385,7 @@
      },
      {
       "label": "Schneller Abschluss: Punkt",
-      "say": "Neon sieben dribbelt sofort los und schießt ins Minitor oben rechts. Das gibt einen Punkt für Team Neon.",
+      "say": "Spieler sieben dribbelt sofort los und schießt ins Minitor oben rechts. Das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "n7",
@@ -473,7 +473,7 @@
     "steps": [
      {
       "label": "Anspiel",
-      "say": "Rot fünf passt zu Neon sieben und sprintet nach.",
+      "say": "Spieler fünf passt zu Spieler sieben und sprintet nach.",
       "moves": [
        {
         "who": "b1",
@@ -496,7 +496,7 @@
      },
      {
       "label": "Pass antäuschen",
-      "say": "Neon sieben schaut zu Neon neun und täuscht den Pass nach rechts an. Beide Verteidiger rechnen mit dem Pass und schieben nach rechts.",
+      "say": "Spieler sieben schaut zu Spieler neun und täuscht den Pass nach rechts an. Beide Verteidiger rechnen mit dem Pass und schieben nach rechts.",
       "moves": [
        {
         "who": "n7",
@@ -528,7 +528,7 @@
      },
      {
       "label": "In den freien Raum: Punkt",
-      "say": "Neon sieben dribbelt nach links in den freien Raum und schießt ins Minitor oben links. Das gibt einen Punkt für Team Neon. Dann tauschen die Rollen.",
+      "say": "Spieler sieben dribbelt nach links in den freien Raum und schießt ins Minitor oben links. Das gibt einen Punkt für Team Neon. Dann tauschen die Rollen.",
       "moves": [
        {
         "who": "n7",

@@ -186,7 +186,7 @@
   "steps": [
    {
     "label": "Schulterblick",
-    "say": "Der Springer unten hat den Ball. Neon zwei schaut vorher nach oben: Ist Neon sechs frei? Dann spielt der Springer zu Neon zwei.",
+    "say": "Der Springer unten hat den Ball. Spieler zwei schaut vorher nach oben: Ist Spieler sechs frei? Dann spielt der Springer zu Spieler zwei.",
     "moves": [
      {
       "who": "n2",
@@ -209,7 +209,7 @@
    },
    {
     "label": "Pass durch die Mitte",
-    "say": "Neon zwei steht offen und spielt den Ball flach und scharf schräg durch die Mitte zu Neon sechs.",
+    "say": "Spieler zwei steht offen und spielt den Ball flach und scharf schräg durch die Mitte zu Spieler sechs.",
     "moves": [
      {
       "who": "b1",
@@ -223,7 +223,7 @@
    },
    {
     "label": "Ausbruchpass",
-    "say": "Neon sechs spielt den Ausbruchpass zum Springer oben. Gleichzeitig startet Neon acht in die obere Endzone.",
+    "say": "Spieler sechs spielt den Ausbruchpass zum Springer oben. Gleichzeitig startet Spieler acht in die obere Endzone.",
     "moves": [
      {
       "who": "b1",
@@ -246,7 +246,7 @@
    },
    {
     "label": "Ablage: Punkt",
-    "say": "Der Springer legt direkt ab, und Neon acht schießt flach ins Eck. Das gibt einen Punkt für Team Neon. Dann spielt der Trainer einen neuen Ball zum Springer unten, und es geht weiter.",
+    "say": "Der Springer legt direkt ab, und Spieler acht schießt flach ins Eck. Das gibt einen Punkt für Team Neon. Dann spielt der Trainer einen neuen Ball zum Springer unten, und es geht weiter.",
     "moves": [
      {
       "who": "b1",
@@ -391,7 +391,7 @@
     "steps": [
      {
       "label": "Ball erobert",
-      "say": "Neon acht hat den Ball. Rot drei läuft ihn an und erobert den Ball. Jetzt ist Team Rot am Ball, und Team Neon verteidigt.",
+      "say": "Spieler acht hat den Ball. Spieler drei läuft ihn an und erobert den Ball. Jetzt ist Team Rot am Ball, und Team Neon verteidigt.",
       "moves": [
        {
         "who": "r3",
@@ -414,7 +414,7 @@
      },
      {
       "label": "Ball sichern",
-      "say": "Rot drei spielt sicher zu Rot sieben. Neon zwei läuft sofort an, um den Ball zurückzuerobern.",
+      "say": "Spieler drei spielt sicher zu Spieler sieben. Spieler zwei läuft sofort an, um den Ball zurückzuerobern.",
       "moves": [
        {
         "who": "b1",
@@ -437,7 +437,7 @@
      },
      {
       "label": "Ausbruch: Punkt",
-      "say": "Rot sieben spielt den Ausbruchpass zum Springer unten, und Rot vier startet in die Endzone. Der Springer legt ab, und Rot vier schießt ins Eck. Das gibt einen Punkt für Team Rot.",
+      "say": "Spieler sieben spielt den Ausbruchpass zum Springer unten, und Spieler vier startet in die Endzone. Der Springer legt ab, und Spieler vier schießt ins Eck. Das gibt einen Punkt für Team Rot.",
       "moves": [
        {
         "who": "b1",
@@ -584,7 +584,7 @@
     "steps": [
      {
       "label": "Platz tauschen",
-      "say": "Neon fünf spielt zum Springer unten und läuft sofort in die Endzone. Gleichzeitig dribbelt der Springer in die Mitte.",
+      "say": "Spieler fünf spielt zum Springer unten und läuft sofort in die Endzone. Gleichzeitig dribbelt der Springer in die Mitte.",
       "moves": [
        {
         "who": "n5",
@@ -617,7 +617,7 @@
      },
      {
       "label": "Neuer Springer",
-      "say": "Jetzt ist Neon fünf unten der Springer. Der alte Springer spielt in der Mitte zu ihm, und Neon zwei startet in die Endzone.",
+      "say": "Jetzt ist Spieler fünf unten der Springer. Der alte Springer spielt in der Mitte zu ihm, und Spieler zwei startet in die Endzone.",
       "moves": [
        {
         "who": "b1",
@@ -640,7 +640,7 @@
      },
      {
       "label": "Ablage: Punkt",
-      "say": "Neon fünf legt quer ab, und Neon zwei schießt flach ins Eck. Das gibt einen Punkt für Team Neon.",
+      "say": "Spieler fünf legt quer ab, und Spieler zwei schießt flach ins Eck. Das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "b1",

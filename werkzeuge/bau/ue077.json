@@ -160,7 +160,7 @@
   "steps": [
    {
     "label": "Kombinieren",
-    "say": "Neon vier spielt zu Neon drei, und der leitet direkt zu Neon zwei weiter.",
+    "say": "Spieler vier spielt zu Spieler drei, und der leitet direkt zu Spieler zwei weiter.",
     "moves": [
      {
       "who": "b1",
@@ -183,7 +183,7 @@
    },
    {
     "label": "Starten und anspielen",
-    "say": "Neon drei startet sofort in den freien Raum, und Neon zwei spielt ihn an. Jetzt waren alle drei am Ball.",
+    "say": "Spieler drei startet sofort in den freien Raum, und Spieler zwei spielt ihn an. Jetzt waren alle drei am Ball.",
     "moves": [
      {
       "who": "n3",
@@ -206,7 +206,7 @@
    },
    {
     "label": "Flach zwischen die Hütchen",
-    "say": "Neon drei schießt flach und fest zwischen die beiden Hütchen ins Tor, und das gibt einen Punkt für Neon.",
+    "say": "Spieler drei schießt flach und fest zwischen die beiden Hütchen ins Tor, und das gibt einen Punkt für Neon.",
     "moves": [
      {
       "who": "b1",
@@ -220,7 +220,7 @@
    },
    {
     "label": "Neuer Ball vom Trainer",
-    "say": "Sofort spielt der Trainer einen neuen Ball ein, diesmal zu Rot fünf, und es geht weiter.",
+    "say": "Sofort spielt der Trainer einen neuen Ball ein, diesmal zu Spieler fünf, und es geht weiter.",
     "moves": [
      {
       "who": "c1",
@@ -321,7 +321,7 @@
     "steps": [
      {
       "label": "Vom Hütchen ins Tor",
-      "say": "Neon drei schießt, der Ball prallt vom Hütchen ins Tor. Auch das zählt, und das gibt einen Punkt für Neon.",
+      "say": "Spieler drei schießt, der Ball prallt vom Hütchen ins Tor. Auch das zählt, und das gibt einen Punkt für Neon.",
       "moves": [
        {
         "who": "b1",
@@ -353,7 +353,7 @@
      },
      {
       "label": "Hütchen zurückstellen",
-      "say": "Danach stellt Neon drei das Hütchen genau an seinen Platz zurück, bevor es weitergeht.",
+      "say": "Danach stellt Spieler drei das Hütchen genau an seinen Platz zurück, bevor es weitergeht.",
       "moves": [
        {
         "who": "n3",
@@ -480,7 +480,7 @@
     "steps": [
      {
       "label": "Rot kombiniert",
-      "say": "Rot sieben spielt zu Rot sechs, und der direkt weiter zu Rot fünf. Alle drei waren am Ball.",
+      "say": "Spieler sieben spielt zu Spieler sechs, und der direkt weiter zu Spieler fünf. Alle drei waren am Ball.",
       "moves": [
        {
         "who": "b1",
@@ -503,7 +503,7 @@
      },
      {
       "label": "Abschluss mit dem schwachen Fuß",
-      "say": "Rot fünf schießt mit seinem schwächeren Fuß flach zwischen die Hütchen, und das gibt einen Punkt für Rot.",
+      "say": "Spieler fünf schießt mit seinem schwächeren Fuß flach zwischen die Hütchen, und das gibt einen Punkt für Rot.",
       "moves": [
        {
         "who": "b1",

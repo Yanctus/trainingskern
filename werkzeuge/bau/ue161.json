@@ -188,7 +188,7 @@
   "steps": [
    {
     "label": "Anspiel",
-    "say": "Der Trainer spielt den Ball zu Neon sechs. Neon sechs passt zu Neon drei, und der spielt direkt weiter zu Neon fünf.",
+    "say": "Der Trainer spielt den Ball zu Spieler sechs. Spieler sechs passt zu Spieler drei, und der spielt direkt weiter zu Spieler fünf.",
     "moves": [
      {
       "who": "b1",
@@ -220,7 +220,7 @@
    },
    {
     "label": "Seitenwechsel",
-    "say": "Neon fünf legt zurück zu Neon sechs. Neon sechs spielt auf die andere Seite zu Neon zwei, und der spielt zurück zu Neon fünf.",
+    "say": "Spieler fünf legt zurück zu Spieler sechs. Spieler sechs spielt auf die andere Seite zu Spieler zwei, und der spielt zurück zu Spieler fünf.",
     "moves": [
      {
       "who": "b1",
@@ -252,7 +252,7 @@
    },
    {
     "label": "Durch die Stangen",
-    "say": "Jetzt ruft Neon acht nach dem Ball. Neon fünf spielt einen scharfen Pass durch die Lücke zwischen den Stangen zu Neon acht.",
+    "say": "Jetzt ruft Spieler acht nach dem Ball. Spieler fünf spielt einen scharfen Pass durch die Lücke zwischen den Stangen zu Spieler acht.",
     "moves": [
      {
       "who": "b1",
@@ -266,7 +266,7 @@
    },
    {
     "label": "Mittelfeld wechselt",
-    "say": "Das Mittelfeld macht dasselbe. Neon acht spielt zu Neon sieben, der zurück zu Neon acht, und Neon acht wechselt die Seite zu Neon zehn.",
+    "say": "Das Mittelfeld macht dasselbe. Spieler acht spielt zu Spieler sieben, der zurück zu Spieler acht, und Spieler acht wechselt die Seite zu Spieler zehn.",
     "moves": [
      {
       "who": "b1",
@@ -298,7 +298,7 @@
    },
    {
     "label": "Zurück: geschafft",
-    "say": "Neon zehn spielt scharf durch die Stangen zurück zu Neon sechs. Geschafft, der Ball war in beiden Reihen, und jetzt ist wieder die Abwehr dran.",
+    "say": "Spieler zehn spielt scharf durch die Stangen zurück zu Spieler sechs. Geschafft, der Ball war in beiden Reihen, und jetzt ist wieder die Abwehr dran.",
     "moves": [
      {
       "who": "b1",
@@ -425,7 +425,7 @@
     "steps": [
      {
       "label": "Zwei Bälle",
-      "say": "Jetzt laufen zwei Bälle gleichzeitig. Hinten spielt Neon zwei zu Neon fünf, und vorne spielt Neon elf zu Neon acht.",
+      "say": "Jetzt laufen zwei Bälle gleichzeitig. Hinten spielt Spieler zwei zu Spieler fünf, und vorne spielt Spieler elf zu Spieler acht.",
       "moves": [
        {
         "who": "b1",
@@ -447,7 +447,7 @@
      },
      {
       "label": "Kopf hoch",
-      "say": "Neon fünf hebt den Kopf und schaut nach vorn, wo der andere Ball ist. Neon acht hat ihn, also ist Neon zehn frei.",
+      "say": "Spieler fünf hebt den Kopf und schaut nach vorn, wo der andere Ball ist. Spieler acht hat ihn, also ist Spieler zehn frei.",
       "moves": [
        {
         "who": "n5",
@@ -461,7 +461,7 @@
      },
      {
       "label": "Gleichzeitig durch",
-      "say": "Neon fünf spielt durch die Stangen zu Neon zehn. Gleichzeitig spielt Neon acht nach hinten zu Neon zwei. Die Bälle kreuzen sich, darum rufen alle laut.",
+      "say": "Spieler fünf spielt durch die Stangen zu Spieler zehn. Gleichzeitig spielt Spieler acht nach hinten zu Spieler zwei. Die Bälle kreuzen sich, darum rufen alle laut.",
       "moves": [
        {
         "who": "b1",
@@ -575,7 +575,7 @@
     "steps": [
      {
       "label": "Andribbeln",
-      "say": "Auf ein Zeichen dribbelt Neon fünf mit Ball durch die Lücke zwischen den Stangen ins Mittelfeld.",
+      "say": "Auf ein Zeichen dribbelt Spieler fünf mit Ball durch die Lücke zwischen den Stangen ins Mittelfeld.",
       "moves": [
        {
         "who": "n5",
@@ -590,7 +590,7 @@
      },
      {
       "label": "Ins Mittelfeld",
-      "say": "Neon fünf spielt zu Neon sieben. Gleichzeitig läuft Neon acht nach hinten und füllt den Platz in der Abwehr.",
+      "say": "Spieler fünf spielt zu Spieler sieben. Gleichzeitig läuft Spieler acht nach hinten und füllt den Platz in der Abwehr.",
       "moves": [
        {
         "who": "b1",

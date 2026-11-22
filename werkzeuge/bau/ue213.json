@@ -223,7 +223,7 @@
   "steps": [
    {
     "label": "Lösen",
-    "say": "In beiden Quadraten geht es gleichzeitig los. Wir schauen nach links: Neon fünf täuscht nach oben an und startet dann schnell zu Neon zwei. Rot zehn kommt zu spät. Rechts macht Neon neun das Gleiche.",
+    "say": "In beiden Quadraten geht es gleichzeitig los. Wir schauen nach links: Spieler fünf täuscht nach oben an und startet dann schnell zu Spieler zwei. Spieler zehn kommt zu spät. Rechts macht Spieler neun das Gleiche.",
     "moves": [
      {
       "who": "n5",
@@ -299,7 +299,7 @@
    },
    {
     "label": "Doppelpass eins",
-    "say": "Neon zwei passt zu Neon fünf, und Neon fünf spielt direkt zurück. Gleichzeitig spielt rechts Neon sechs mit Neon neun.",
+    "say": "Spieler zwei passt zu Spieler fünf, und Spieler fünf spielt direkt zurück. Gleichzeitig spielt rechts Spieler sechs mit Spieler neun.",
     "moves": [
      {
       "who": "b2",
@@ -339,7 +339,7 @@
    },
    {
     "label": "Doppelpass zwei",
-    "say": "Jetzt Neon drei oben: Neon fünf täuscht nach unten an, dreht ab und sprintet nach oben. Neon drei passt, und Neon fünf spielt direkt zurück.",
+    "say": "Jetzt Spieler drei oben: Spieler fünf täuscht nach unten an, dreht ab und sprintet nach oben. Spieler drei passt, und Spieler fünf spielt direkt zurück.",
     "moves": [
      {
       "who": "n5",
@@ -451,7 +451,7 @@
    },
    {
     "label": "Drei Pässe: Punkt",
-    "say": "Zum Schluss Neon vier unten: Neon fünf löst sich, bekommt den Pass und spielt direkt zurück. Mit allen drei Anspielern geklappt, und das gibt drei Punkte für Neon fünf. Danach geht Neon vier in die Mitte, und Neon fünf wird Anspieler.",
+    "say": "Zum Schluss Spieler vier unten: Spieler fünf löst sich, bekommt den Pass und spielt direkt zurück. Mit allen drei Anspielern geklappt, und das gibt drei Punkte für Spieler fünf. Danach geht Spieler vier in die Mitte, und Spieler fünf wird Anspieler.",
     "moves": [
      {
       "who": "r10",
@@ -676,7 +676,7 @@
     "steps": [
      {
       "label": "Erst weg",
-      "say": "In beiden Quadraten gleichzeitig: Neon fünf läuft zuerst von Neon zwei weg nach oben. Rot zehn geht mit.",
+      "say": "In beiden Quadraten gleichzeitig: Spieler fünf läuft zuerst von Spieler zwei weg nach oben. Spieler zehn geht mit.",
       "moves": [
        {
         "who": "n5",
@@ -716,7 +716,7 @@
      },
      {
       "label": "Dann kurz",
-      "say": "Jetzt stoppt Neon fünf und kommt schnell kurz zu Neon zwei. Rot zehn ist zu weit weg, und Neon fünf lässt den Pass direkt zurückprallen.",
+      "say": "Jetzt stoppt Spieler fünf und kommt schnell kurz zu Spieler zwei. Spieler zehn ist zu weit weg, und Spieler fünf lässt den Pass direkt zurückprallen.",
       "moves": [
        {
         "who": "n5",
@@ -923,7 +923,7 @@
     "steps": [
      {
       "label": "Abgefangen",
-      "say": "Wir schauen nach links: Neon fünf läuft zu spät los. Rot zehn bleibt eng dran, geht vor ihn und fängt den Pass von Neon zwei ab. Rechts klappt der Doppelpass.",
+      "say": "Wir schauen nach links: Spieler fünf läuft zu spät los. Spieler zehn bleibt eng dran, geht vor ihn und fängt den Pass von Spieler zwei ab. Rechts klappt der Doppelpass.",
       "moves": [
        {
         "who": "n5",
@@ -981,7 +981,7 @@
      },
      {
       "label": "Rollen tauschen",
-      "say": "Jetzt ist Rot zehn der Spieler in der Mitte, und Neon fünf wird Gegenspieler. Rot zehn spielt den Ball zurück zu Neon zwei, und weiter geht es.",
+      "say": "Jetzt ist Spieler zehn der Spieler in der Mitte, und Spieler fünf wird Gegenspieler. Spieler zehn spielt den Ball zurück zu Spieler zwei, und weiter geht es.",
       "moves": [
        {
         "who": "b2",

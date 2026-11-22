@@ -218,7 +218,7 @@
    },
    {
     "label": "Pass hinein",
-    "say": "Alle drei Außenspieler passen gleichzeitig in die Mitte: Neon zehn zu Neon sieben, Rot sechs zu Rot fünf und der Springer rechts zum Springer in der Mitte.",
+    "say": "Alle drei Außenspieler passen gleichzeitig in die Mitte: Spieler zehn zu Spieler sieben, Spieler sechs zu Spieler fünf und der Springer rechts zum Springer in der Mitte.",
     "moves": [
      {
       "who": "b1",
@@ -458,7 +458,7 @@
     "steps": [
      {
       "label": "Über beide Schultern",
-      "say": "Neon zehn hat den Ball. Neon sieben schaut zuerst über die eine Schulter, dann über die andere: Wo steht Neon acht, und wo läuft der Springer?",
+      "say": "Spieler zehn hat den Ball. Spieler sieben schaut zuerst über die eine Schulter, dann über die andere: Wo steht Spieler acht, und wo läuft der Springer?",
       "moves": [
        {
         "who": "n7",
@@ -481,7 +481,7 @@
      },
      {
       "label": "In den freien Raum",
-      "say": "Neon zehn passt zu Neon sieben. Der Springer dribbelt gerade durch das Quadrat, darum nimmt Neon sieben den Ball weg von ihm mit.",
+      "say": "Spieler zehn passt zu Spieler sieben. Der Springer dribbelt gerade durch das Quadrat, darum nimmt Spieler sieben den Ball weg von ihm mit.",
       "moves": [
        {
         "who": "b1",
@@ -515,7 +515,7 @@
      },
      {
       "label": "Sicher hinaus",
-      "say": "Neon sieben passt an dem Springer vorbei zu Neon acht. Der Ball kommt sicher an, und Neon acht passt gleich wieder hinein.",
+      "say": "Spieler sieben passt an dem Springer vorbei zu Spieler acht. Der Ball kommt sicher an, und Spieler acht passt gleich wieder hinein.",
       "moves": [
        {
         "who": "b1",
@@ -633,7 +633,7 @@
     "steps": [
      {
       "label": "Pass und hinein",
-      "say": "Wir schauen auf Team Neon und Team Rot. Neon zehn passt zu Neon sieben, Rot sechs zu Rot fünf. Beide laufen sofort hinterher in das Quadrat.",
+      "say": "Wir schauen auf Team Neon und Team Rot. Spieler zehn passt zu Spieler sieben, Spieler sechs zu Spieler fünf. Beide laufen sofort hinterher in das Quadrat.",
       "moves": [
        {
         "who": "b1",
@@ -682,7 +682,7 @@
      },
      {
       "label": "Pass und hinaus",
-      "say": "Neon sieben dreht auf und passt zu Neon acht, Rot fünf passt zu Rot neun. Dann laufen beide hinaus auf den frei gewordenen Platz.",
+      "say": "Spieler sieben dreht auf und passt zu Spieler acht, Spieler fünf passt zu Spieler neun. Dann laufen beide hinaus auf den frei gewordenen Platz.",
       "moves": [
        {
         "who": "n7",
@@ -751,7 +751,7 @@
      },
      {
       "label": "Dribbeln und hinein",
-      "say": "Neon acht und Rot neun dribbeln ein Stück und spielen den Ball zurück in die Mitte, zu Neon zehn und Rot sechs. Jetzt sind die beiden in der Mitte dran, und alles beginnt von vorn.",
+      "say": "Spieler acht und Spieler neun dribbeln ein Stück und spielen den Ball zurück in die Mitte, zu Spieler zehn und Spieler sechs. Jetzt sind die beiden in der Mitte dran, und alles beginnt von vorn.",
       "moves": [
        {
         "who": "n8",

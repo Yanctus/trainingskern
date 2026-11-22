@@ -204,7 +204,7 @@
   "steps": [
    {
     "label": "Weg und wieder hin",
-    "say": "Neon acht ruft Neon neun. Neon neun läuft erst kurz weg und kommt dann schnell zum Ball. Rot vier spielt noch nicht mit.",
+    "say": "Spieler acht ruft Spieler neun. Spieler neun läuft erst kurz weg und kommt dann schnell zum Ball. Spieler vier spielt noch nicht mit.",
     "moves": [
      {
       "who": "n9",
@@ -227,7 +227,7 @@
    },
    {
     "label": "Ohne Gegner: Punkt",
-    "say": "Neon acht spielt Neon neun an. Der nimmt den Ball mit Richtung Tor und schießt am Torwart vorbei. Das gibt einen Punkt für Neon neun. Das macht er dreimal, jedes Mal mit einem anderen Außenspieler.",
+    "say": "Spieler acht spielt Spieler neun an. Der nimmt den Ball mit Richtung Tor und schießt am Torwart vorbei. Das gibt einen Punkt für Spieler neun. Das macht er dreimal, jedes Mal mit einem anderen Außenspieler.",
     "moves": [
      {
       "who": "b8",
@@ -260,7 +260,7 @@
    },
    {
     "label": "Jetzt mit Gegner",
-    "say": "Beim vierten Mal ruft Neon neun Neon zehn und bekommt den Ball. Jetzt spielt Rot vier mit und läuft sofort auf ihn zu.",
+    "say": "Beim vierten Mal ruft Spieler neun Spieler zehn und bekommt den Ball. Jetzt spielt Spieler vier mit und läuft sofort auf ihn zu.",
     "moves": [
      {
       "who": "n9",
@@ -292,7 +292,7 @@
    },
    {
     "label": "Eins gegen eins: Punkt",
-    "say": "Neon neun täuscht nach links an und zieht dann nach rechts an Rot vier vorbei. Er schießt schnell, und das gibt einen Punkt für Neon neun. Nach drei Duellen tauschen Neon neun und Rot vier mit Neon zehn und Rot sechs von außen.",
+    "say": "Spieler neun täuscht nach links an und zieht dann nach rechts an Spieler vier vorbei. Er schießt schnell, und das gibt einen Punkt für Spieler neun. Nach drei Duellen tauschen Spieler neun und Spieler vier mit Spieler zehn und Spieler sechs von außen.",
     "moves": [
      {
       "who": "n9",
@@ -482,7 +482,7 @@
     "steps": [
      {
       "label": "Antäuschen",
-      "say": "Neon neun dribbelt ein kurzes Stück nach links. Rot vier glaubt ihm und schiebt mit.",
+      "say": "Spieler neun dribbelt ein kurzes Stück nach links. Spieler vier glaubt ihm und schiebt mit.",
       "moves": [
        {
         "who": "n9",
@@ -506,7 +506,7 @@
      },
      {
       "label": "Gegenrichtung: Punkt",
-      "say": "Jetzt zieht Neon neun schnell nach rechts, ist an Rot vier vorbei und schießt sofort. Das gibt einen Punkt für Neon neun.",
+      "say": "Jetzt zieht Spieler neun schnell nach rechts, ist an Spieler vier vorbei und schießt sofort. Das gibt einen Punkt für Spieler neun.",
       "moves": [
        {
         "who": "n9",
@@ -670,7 +670,7 @@
     "steps": [
      {
       "label": "Weg und wieder hin",
-      "say": "Neon neun läuft erst weg vom Ball und kommt dann schnell zu Neon elf. Rot vier läuft hinterher.",
+      "say": "Spieler neun läuft erst weg vom Ball und kommt dann schnell zu Spieler elf. Spieler vier läuft hinterher.",
       "moves": [
        {
         "who": "n9",
@@ -702,7 +702,7 @@
      },
      {
       "label": "Mitnehmen: Punkt",
-      "say": "Neon elf spielt ihn an. Neon neun nimmt den Ball quer vor dem Körper mit, weg von Rot vier, und schießt sofort. Das gibt einen Punkt für Neon neun.",
+      "say": "Spieler elf spielt ihn an. Spieler neun nimmt den Ball quer vor dem Körper mit, weg von Spieler vier, und schießt sofort. Das gibt einen Punkt für Spieler neun.",
       "moves": [
        {
         "who": "b11",

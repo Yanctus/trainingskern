@@ -152,7 +152,7 @@
   "steps": [
    {
     "label": "Ball laufen lassen",
-    "say": "Neon drei spielt zu Neon vier. Rot neun und Rot elf schieben mit.",
+    "say": "Spieler drei spielt zu Spieler vier. Spieler neun und Spieler elf schieben mit.",
     "moves": [
      {
       "who": "b1",
@@ -184,7 +184,7 @@
    },
    {
     "label": "Pressen, Lücke",
-    "say": "Rot neun presst Neon vier, aber Rot elf schiebt zu spät mit. Im Kanal ist eine Lücke.",
+    "say": "Spieler neun presst Spieler vier, aber Spieler elf schiebt zu spät mit. Im Kanal ist eine Lücke.",
     "moves": [
      {
       "who": "r9",
@@ -207,7 +207,7 @@
    },
    {
     "label": "Durch den Kanal: Punkte",
-    "say": "Neon vier sieht die Lücke und spielt quer durch den Kanal zu Neon sechs. Das gibt zwei Punkte für Team Neon. Team Neon behält den Ball und spielt weiter, die Verteidiger werden regelmäßig gewechselt.",
+    "say": "Spieler vier sieht die Lücke und spielt quer durch den Kanal zu Spieler sechs. Das gibt zwei Punkte für Team Neon. Team Neon behält den Ball und spielt weiter, die Verteidiger werden regelmäßig gewechselt.",
     "moves": [
      {
       "who": "b1",
@@ -322,7 +322,7 @@
     "steps": [
      {
       "label": "Einer presst, einer sichert",
-      "say": "Rot neun presst Neon drei. Rot elf stellt sich so, dass der Weg durch den Kanal zu ist.",
+      "say": "Spieler neun presst Spieler drei. Spieler elf stellt sich so, dass der Weg durch den Kanal zu ist.",
       "moves": [
        {
         "who": "r9",
@@ -345,7 +345,7 @@
      },
      {
       "label": "In der Ecke: Ballgewinn",
-      "say": "Neon drei spielt zu Neon vier, und Rot neun drängt ihn sofort in die Ecke. Neon vier will durch den Kanal passen, aber Rot elf fängt den Ball ab. Das gibt zwei Punkte für Team Rot.",
+      "say": "Spieler drei spielt zu Spieler vier, und Spieler neun drängt ihn sofort in die Ecke. Spieler vier will durch den Kanal passen, aber Spieler elf fängt den Ball ab. Das gibt zwei Punkte für Team Rot.",
       "moves": [
        {
         "who": "b1",
@@ -471,7 +471,7 @@
     "steps": [
      {
       "label": "Pressen und zustellen",
-      "say": "Neon sieben hat den Ball. Rot elf presst ihn, und Rot neun stellt den Passweg zu Neon acht zu.",
+      "say": "Spieler sieben hat den Ball. Spieler elf presst ihn, und Spieler neun stellt den Passweg zu Spieler acht zu.",
       "moves": [
        {
         "who": "r11",
@@ -494,7 +494,7 @@
      },
      {
       "label": "Abfangen, Minitor: Punkt",
-      "say": "Neon sieben spielt trotzdem zu Neon acht, aber Rot neun fängt den Ball ab und schießt sofort ins obere Minitor. Das gibt einen Punkt für Team Rot.",
+      "say": "Spieler sieben spielt trotzdem zu Spieler acht, aber Spieler neun fängt den Ball ab und schießt sofort ins obere Minitor. Das gibt einen Punkt für Team Rot.",
       "moves": [
        {
         "who": "b1",

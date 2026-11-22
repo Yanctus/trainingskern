@@ -144,7 +144,7 @@
    },
    {
     "label": "Zur Seite",
-    "say": "Also spielt er nicht durch die Mitte, sondern zur Seite zu Neon fünf. Rot acht läuft sofort auf ihn zu.",
+    "say": "Also spielt er nicht durch die Mitte, sondern zur Seite zu Spieler fünf. Spieler acht läuft sofort auf ihn zu.",
     "moves": [
      {
       "who": "b1",
@@ -166,8 +166,8 @@
     ]
    },
    {
-    "label": "Hoch zu Neon sechs: Punkt",
-    "say": "Neon fünf spielt direkt hoch zu Neon sechs. Der Ball ist auf der anderen Seite, und das gibt einen Punkt für Team Neon.",
+    "label": "Hoch zu Spieler sechs: Punkt",
+    "say": "Spieler fünf spielt direkt hoch zu Spieler sechs. Der Ball ist auf der anderen Seite, und das gibt einen Punkt für Team Neon.",
     "moves": [
      {
       "who": "b1",
@@ -190,7 +190,7 @@
    },
    {
     "label": "Ballgewinn: Tausch",
-    "say": "Jetzt geht es zurück nach unten. Neon sechs spielt zu Neon vier, aber Rot neun fängt den Ball ab. Dann tauschen die Verteidiger mit Neon vier und Neon fünf, und es geht von vorn los.",
+    "say": "Jetzt geht es zurück nach unten. Spieler sechs spielt zu Spieler vier, aber Spieler neun fängt den Ball ab. Dann tauschen die Verteidiger mit Spieler vier und Spieler fünf, und es geht von vorn los.",
     "moves": [
      {
       "who": "r9",
@@ -321,7 +321,7 @@
      },
      {
       "label": "Durch die Mitte: Punkte",
-      "say": "Er spielt den Ball flach durch die Lücke zu Neon sechs, und das gibt zwei Punkte für Team Neon. Dann geht es zurück nach unten.",
+      "say": "Er spielt den Ball flach durch die Lücke zu Spieler sechs, und das gibt zwei Punkte für Team Neon. Dann geht es zurück nach unten.",
       "moves": [
        {
         "who": "b1",
@@ -358,7 +358,7 @@
    "label": "Steigerung",
    "say": "Und jetzt die zweite Steigerung: Hinter dem Dummy annehmen.",
    "title": "Am Dummy vorbei",
-   "text": "Vor dem Torwart und vor Neon sechs steht ein Dummy. Wer den Ball gerade vor sich annimmt, spielt in den Dummy. Also mit dem hinteren Fuß annehmen und den Ball seitlich am Dummy vorbei mitnehmen. Dann ist der Passweg frei.",
+   "text": "Vor dem Torwart und vor Spieler sechs steht ein Dummy. Wer den Ball gerade vor sich annimmt, spielt in den Dummy. Also mit dem hinteren Fuß annehmen und den Ball seitlich am Dummy vorbei mitnehmen. Dann ist der Passweg frei.",
    "board": {
     "players": [
      {
@@ -431,7 +431,7 @@
     "steps": [
      {
       "label": "Annehmen, mitnehmen",
-      "say": "Neon vier spielt zum Torwart. Der nimmt den Ball mit dem hinteren Fuß an und nimmt ihn seitlich am Dummy vorbei mit.",
+      "say": "Spieler vier spielt zum Torwart. Der nimmt den Ball mit dem hinteren Fuß an und nimmt ihn seitlich am Dummy vorbei mit.",
       "moves": [
        {
         "who": "b1",
@@ -455,7 +455,7 @@
      },
      {
       "label": "Passweg frei: Punkt",
-      "say": "Jetzt hebt er den Kopf, der Weg nach oben ist frei, und er spielt zu Neon sechs. Das gibt einen Punkt für Team Neon.",
+      "say": "Jetzt hebt er den Kopf, der Weg nach oben ist frei, und er spielt zu Spieler sechs. Das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "n1",

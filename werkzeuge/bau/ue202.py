@@ -6,8 +6,8 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # (3D-Abstand), im PDF auf der Linie. Weg wie im PDF-Bild: unten -> Hütchen rechts unten -> Station rechts (das Bild zeigt damit
 # gegen den Uhrzeigersinn, der Text sagt "clockwise"; im Text hier nur "nächste Station"). Ein Trainer statt zwei.
 # Steigerung aus Ton/Video (0:37-0:50): zwei Doppelpässe (Station, nächste Station), Ball durch die Hütchen. Sichtkegel: im Video
-# "Impact: ... head up" (kein Kegel eingezeichnet). Richtung aus dem Sinn: Neon zwei schaut vor dem Rückpass zu Neon elf, Neon elf
-# schaut nach den Hütchen zu Neon vier an der nächsten Station.
+# "Impact: ... head up" (kein Kegel eingezeichnet). Richtung aus dem Sinn: Spieler zwei schaut vor dem Rückpass zu Spieler elf, Spieler elf
+# schaut nach den Hütchen zu Spieler vier an der nächsten Station.
 T = P("T", "c", 84, 8, "T")
 CX, CY = 50, 30
 def rot(p, k):
@@ -58,32 +58,32 @@ u = {"title": "Stationen mit schnellen Füßen", "code": "UE-202", "kind": "Übu
  "say_intro": "Stationen mit schnellen Füßen. Vier Stationen laufen gleichzeitig: um die Stange dribbeln, zurückpassen und schnell durch die Hütchen.",
  "board": {"lines": LINES, "cones": CONES, "players": sp(), "balls": BAELLE,
   "steps": [
-   S("Um die Stange", "Alle vier Stationen starten gleichzeitig. Wir schauen auf Neon elf: Er dribbelt mit kleinen Kontakten um seine Stange herum.",
+   S("Um die Stange", "Alle vier Stationen starten gleichzeitig. Wir schauen auf Spieler elf: Er dribbelt mit kleinen Kontakten um seine Stange herum.",
      *um_alle()),
-   S("Zurückpassen", "Jetzt passen alle vier den Ball zurück zu ihrem Partner an der Station. Neon elf passt zu Neon zwei.",
+   S("Zurückpassen", "Jetzt passen alle vier den Ball zurück zu ihrem Partner an der Station. Spieler elf passt zu Spieler zwei.",
      *zurueck_alle()),
-   S("Schnelle Füße", "Ohne Ball geht es zu den Hütchen. Neon elf läuft mit schnellen, kleinen Schritten im Zickzack durch die Reihe, und die anderen drei machen es genauso.",
+   S("Schnelle Füße", "Ohne Ball geht es zu den Hütchen. Spieler elf läuft mit schnellen, kleinen Schritten im Zickzack durch die Reihe, und die anderen drei machen es genauso.",
      *[m for k, d in enumerate(DRIB) for m in slalom(d, k)]),
-   S("Zur nächsten Station", "Danach läuft jeder zur nächsten Station. Neon elf stellt sich an der Station rechts an. Geschafft! Jetzt dribbeln Neon zwei, Neon vier, Neon acht und Neon neun, und alles beginnt von vorn.",
+   S("Zur nächsten Station", "Danach läuft jeder zur nächsten Station. Spieler elf stellt sich an der Station rechts an. Geschafft! Jetzt dribbeln Spieler zwei, Spieler vier, Spieler acht und Spieler neun, und alles beginnt von vorn.",
      *[mv(d, rot(WEITER, k)) for k, d in enumerate(DRIB)])],
   "dims": dims(25, 75, 5, 55, "18 m", "18 m", rx=92)},
  "versions": [
   V("Coaching-Punkt", "Jetzt zum Coaching-Punkt: Eng am Ball, schnelle Füße.", "Eng am Ball",
     "Um die Stange wird der Ball mit vielen kurzen, kleinen Kontakten geführt und bleibt immer nah am Fuß. In den Hütchen setzt der Spieler die Füße schnell und abwechselnd. So werden Gewandtheit und Koordination besser.",
     sp(), BAELLE,
-    [S("Kleine Kontakte", "Wieder starten alle gleichzeitig. Wir schauen auf Neon elf: Er führt den Ball mit vielen kleinen Kontakten um die Stange herum, der Ball bleibt immer nah am Fuß.",
+    [S("Kleine Kontakte", "Wieder starten alle gleichzeitig. Wir schauen auf Spieler elf: Er führt den Ball mit vielen kleinen Kontakten um die Stange herum, der Ball bleibt immer nah am Fuß.",
        *um_alle()),
-     S("Abwechselnd die Füße", "Neon elf passt zurück zu Neon zwei. In den Hütchen setzt er die Füße schnell und abwechselnd: links, rechts, links, rechts. Dann geht es zur nächsten Station.",
+     S("Abwechselnd die Füße", "Spieler elf passt zurück zu Spieler zwei. In den Hütchen setzt er die Füße schnell und abwechselnd: links, rechts, links, rechts. Dann geht es zur nächsten Station.",
        ps("b1", [55.1, 52.6]), *[dict(m, after=True) for m in slalom("n11", 0)])]),
   V("Steigerung", "Und jetzt die Steigerung: Zwei Doppelpässe.", "Zwei Doppelpässe",
     "Nach der Stange spielt der Spieler einen Doppelpass mit seinem Partner und nimmt den Ball mit durch die Hütchen. An der nächsten Station spielt er einen zweiten Doppelpass und startet dort neu. Kopf hoch und laut rufen, damit die Pässe genau ankommen.",
     sp(), BAELLE,
-    [S("Um die Stange", "Wieder starten alle gleichzeitig um die Stange. Wir schauen auf Neon elf.",
+    [S("Um die Stange", "Wieder starten alle gleichzeitig um die Stange. Wir schauen auf Spieler elf.",
        *um_alle()),
-     S("Erster Doppelpass", "Neon elf passt zu Neon zwei und läuft weiter. Neon zwei hebt den Kopf, sieht ihn und spielt den Ball direkt zurück in den Lauf.",
+     S("Erster Doppelpass", "Spieler elf passt zu Spieler zwei und läuft weiter. Spieler zwei hebt den Kopf, sieht ihn und spielt den Ball direkt zurück in den Lauf.",
        ps("b1", [55.1, 52.6]), mv("n11", [58, 37.5], delay=0.3), bl("n2", [60, 36], after=True), ps("b1", [58.6, 38.1], after=True)),
-     S("Mit Ball durch die Hütchen", "Jetzt nimmt Neon elf den Ball mit durch die Hütchen, mit kleinen Kontakten im Zickzack. Am Ende hebt er den Kopf und sucht Neon vier an der nächsten Station.",
+     S("Mit Ball durch die Hütchen", "Jetzt nimmt Spieler elf den Ball mit durch die Hütchen, mit kleinen Kontakten im Zickzack. Am Ende hebt er den Kopf und sucht Spieler vier an der nächsten Station.",
        *[dr("n11", "b1", rot(p, 0), after=(i > 0)) for i, p in enumerate(SLALOM[1:])], bl("n11", [81, 34.5], after=True)),
-     S("Zweiter Doppelpass", "Neon elf passt zu Neon vier und läuft hoch. Neon vier spielt direkt zurück. Neon elf nimmt den Ball mit und startet hier die nächste Runde um die Stange, und Neon vier ist jetzt sein Partner.",
+     S("Zweiter Doppelpass", "Spieler elf passt zu Spieler vier und läuft hoch. Spieler vier spielt direkt zurück. Spieler elf nimmt den Ball mit und startet hier die nächste Runde um die Stange, und Spieler vier ist jetzt sein Partner.",
        ps("b1", [81.6, 35.1]), mv("n11", [70, 37], delay=0.3), ps("b1", [70.6, 37.6], after=True), dr("n11", "b1", [64, 34], after=True))])]}
 json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)

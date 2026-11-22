@@ -196,7 +196,7 @@
   "steps": [
    {
     "label": "Kombinieren",
-    "say": "Team Neon greift nach oben an. Neon sechs passt nach links zu Neon acht, und der spielt direkt weiter zu Neon sieben.",
+    "say": "Team Neon greift nach oben an. Spieler sechs passt nach links zu Spieler acht, und der spielt direkt weiter zu Spieler sieben.",
     "moves": [
      {
       "who": "b1",
@@ -228,7 +228,7 @@
    },
    {
     "label": "In die Zone",
-    "say": "Neon neun startet in die Abschlusszone. Neon sieben spielt ihm den Ball in den Lauf.",
+    "say": "Spieler neun startet in die Abschlusszone. Spieler sieben spielt ihm den Ball in den Lauf.",
     "moves": [
      {
       "who": "n9",
@@ -260,7 +260,7 @@
    },
    {
     "label": "Ins Eck: Punkte",
-    "say": "Neon neun nimmt den Ball mit und schießt genau ins linke Eck, und das gibt drei Punkte für Team Neon. Dann bringt der Trainer einen neuen Ball, und Team Rot greift an.",
+    "say": "Spieler neun nimmt den Ball mit und schießt genau ins linke Eck, und das gibt drei Punkte für Team Neon. Dann bringt der Trainer einen neuen Ball, und Team Rot greift an.",
     "moves": [
      {
       "who": "n9",
@@ -392,7 +392,7 @@
     "steps": [
      {
       "label": "Kopf hoch",
-      "say": "Neon neun steht ganz außen, der Winkel ist schwer. Er hebt den Kopf und sieht Neon sieben, der sich in der Mitte frei läuft.",
+      "say": "Spieler neun steht ganz außen, der Winkel ist schwer. Er hebt den Kopf und sieht Spieler sieben, der sich in der Mitte frei läuft.",
       "moves": [
        {
         "who": "n9",
@@ -415,7 +415,7 @@
      },
      {
       "label": "Quer und ins Eck: Punkte",
-      "say": "Neon neun passt quer zu Neon sieben. Der schießt direkt ins linke Eck, und das gibt drei Punkte für Team Neon.",
+      "say": "Spieler neun passt quer zu Spieler sieben. Der schießt direkt ins linke Eck, und das gibt drei Punkte für Team Neon.",
       "moves": [
        {
         "who": "b1",
@@ -530,7 +530,7 @@
     "steps": [
      {
       "label": "In den Lauf",
-      "say": "Neon sieben hat den Ball. Neon neun startet in die Abschlusszone, und Neon sieben spielt ihm den Ball in den Lauf.",
+      "say": "Spieler sieben hat den Ball. Spieler neun startet in die Abschlusszone, und Spieler sieben spielt ihm den Ball in den Lauf.",
       "moves": [
        {
         "who": "n9",
@@ -553,7 +553,7 @@
      },
      {
       "label": "Direkt ins Eck: Punkte",
-      "say": "Neon neun schießt direkt, ohne Annahme, ins rechte Eck. Der Treffer zählt doppelt, und das gibt sechs Punkte für Team Neon.",
+      "say": "Spieler neun schießt direkt, ohne Annahme, ins rechte Eck. Der Treffer zählt doppelt, und das gibt sechs Punkte für Team Neon.",
       "moves": [
        {
         "who": "b1",

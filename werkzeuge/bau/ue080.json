@@ -193,7 +193,7 @@
   "steps": [
    {
     "label": "Fünf gegen zwei",
-    "say": "Neon spielt sich den Ball zu, Neon drei passt zu Neon vier. Gleichzeitig verschieben Rot sieben und Rot acht gemeinsam und bleiben dicht beieinander.",
+    "say": "Neon spielt sich den Ball zu, Spieler drei passt zu Spieler vier. Gleichzeitig verschieben Spieler sieben und Spieler acht gemeinsam und bleiben dicht beieinander.",
     "moves": [
      {
       "who": "b1",
@@ -225,7 +225,7 @@
    },
    {
     "label": "Auslöser: langsamer Pass",
-    "say": "Neon vier spielt einen zu langsamen Pass. Das ist das Signal: Rot acht sprintet hinein und fängt ihn ab.",
+    "say": "Spieler vier spielt einen zu langsamen Pass. Das ist das Signal: Spieler acht sprintet hinein und fängt ihn ab.",
     "moves": [
      {
       "who": "b1",
@@ -248,7 +248,7 @@
    },
    {
     "label": "Sofort verlagern",
-    "say": "Rot acht spielt den Ball sofort hinüber zu Rot elf in die andere Hälfte. Jetzt hat Rot den Ball.",
+    "say": "Spieler acht spielt den Ball sofort hinüber zu Spieler elf in die andere Hälfte. Jetzt hat Rot den Ball.",
     "moves": [
      {
       "who": "b1",
@@ -262,7 +262,7 @@
    },
    {
     "label": "Rollen tauschen",
-    "say": "Gleichzeitig laufen Rot sieben und Rot acht zu ihren Mitspielern, und Neon fünf und Neon sechs wechseln hinüber. Sie pressen jetzt als neues Paar.",
+    "say": "Gleichzeitig laufen Spieler sieben und Spieler acht zu ihren Mitspielern, und Spieler fünf und Spieler sechs wechseln hinüber. Sie pressen jetzt als neues Paar.",
     "moves": [
      {
       "who": "r7",
@@ -424,7 +424,7 @@
     "steps": [
      {
       "label": "Positionen tauschen",
-      "say": "Neon drei spielt zu Neon zwei. Gleichzeitig tauschen Neon drei und Neon vier die Plätze, damit das Spiel in Bewegung bleibt.",
+      "say": "Spieler drei spielt zu Spieler zwei. Gleichzeitig tauschen Spieler drei und Spieler vier die Plätze, damit das Spiel in Bewegung bleibt.",
       "moves": [
        {
         "who": "b1",
@@ -456,7 +456,7 @@
      },
      {
       "label": "Auf eine Seite lenken",
-      "say": "Das rote Paar verschiebt gemeinsam nach oben und stellt den Weg in die Mitte zu. Neon zwei bleibt nur der Pass an der Seite entlang.",
+      "say": "Das rote Paar verschiebt gemeinsam nach oben und stellt den Weg in die Mitte zu. Spieler zwei bleibt nur der Pass an der Seite entlang.",
       "moves": [
        {
         "who": "r7",
@@ -478,7 +478,7 @@
      },
      {
       "label": "Abfangen",
-      "say": "Neon zwei spielt an der Seite entlang zu Neon fünf. Rot sieben rechnet damit und fängt den Ball ab.",
+      "say": "Spieler zwei spielt an der Seite entlang zu Spieler fünf. Spieler sieben rechnet damit und fängt den Ball ab.",
       "moves": [
        {
         "who": "b1",
@@ -607,7 +607,7 @@
     "steps": [
      {
       "label": "Der Dritte kommt",
-      "say": "Neon drei spielt zu Neon vier. Gleichzeitig sprintet Rot neun aus der anderen Hälfte herüber und presst mit.",
+      "say": "Spieler drei spielt zu Spieler vier. Gleichzeitig sprintet Spieler neun aus der anderen Hälfte herüber und presst mit.",
       "moves": [
        {
         "who": "b1",
@@ -648,7 +648,7 @@
      },
      {
       "label": "Kompakt zu dritt",
-      "say": "Die drei Roten stehen jetzt eng zusammen. Neon vier findet keinen freien Mitspieler und spielt ungenau, Rot acht erobert den Ball.",
+      "say": "Die drei Roten stehen jetzt eng zusammen. Spieler vier findet keinen freien Mitspieler und spielt ungenau, Spieler acht erobert den Ball.",
       "moves": [
        {
         "who": "b1",

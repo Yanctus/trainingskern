@@ -7,7 +7,7 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # Mittelfeld wiederholt und spielt zurück. Steigerung 1 = Progression 1 (zwei Bälle), Steigerung 2 = Progression 2
 # (Innenverteidiger dribbelt ins Mittelfeld). Progression 3 (Minitore, Prallpass) weggelassen (nur zwei Fassungen).
 # Sichtkegel: Ton "lift their heads, locate the ball on the opposite side", Text "Head up to see where other ball is":
-# in Steigerung 1 bl() von Neon fünf nach vorn zum anderen Ball (Richtung aus dem Sinn, im Video kein Kegel eingezeichnet).
+# in Steigerung 1 bl() von Spieler fünf nach vorn zum anderen Ball (Richtung aus dem Sinn, im Video kein Kegel eingezeichnet).
 T = P("T", "c", 19, 50, "T")
 POS = {"n3": (30, 42), "n6": (41.7, 50), "n5": (58.3, 50), "n2": (70, 42),
        "n11": (30, 18), "n10": (41.7, 10), "n8": (58.3, 10), "n7": (70, 18)}
@@ -33,32 +33,32 @@ u = {"title": "Spielaufbau von hinten", "code": "UE-161", "kind": "Übungsform",
  "say_intro": "Spielaufbau von hinten. Die Abwehr wechselt mit schnellen Pässen die Seite und spielt dann durch die Stangen ins Mittelfeld.",
  "board": {"lines": LINES, "cones": KEGEL, "players": sp(), "balls": [B("b1", 19.6, 50.6)] + ERSATZ,
   "steps": [
-   S("Anspiel", "Der Trainer spielt den Ball zu Neon sechs. Neon sechs passt zu Neon drei, und der spielt direkt weiter zu Neon fünf.",
+   S("Anspiel", "Der Trainer spielt den Ball zu Spieler sechs. Spieler sechs passt zu Spieler drei, und der spielt direkt weiter zu Spieler fünf.",
      ps("b1", [42.3, 50.6]), ps("b1", [30.6, 42.6], after=True), ps("b1", [58.9, 50.6], after=True)),
-   S("Seitenwechsel", "Neon fünf legt zurück zu Neon sechs. Neon sechs spielt auf die andere Seite zu Neon zwei, und der spielt zurück zu Neon fünf.",
+   S("Seitenwechsel", "Spieler fünf legt zurück zu Spieler sechs. Spieler sechs spielt auf die andere Seite zu Spieler zwei, und der spielt zurück zu Spieler fünf.",
      ps("b1", [42.3, 50.6]), ps("b1", [70.6, 42.6], after=True), ps("b1", [58.9, 50.6], after=True)),
-   S("Durch die Stangen", "Jetzt ruft Neon acht nach dem Ball. Neon fünf spielt einen scharfen Pass durch die Lücke zwischen den Stangen zu Neon acht.",
+   S("Durch die Stangen", "Jetzt ruft Spieler acht nach dem Ball. Spieler fünf spielt einen scharfen Pass durch die Lücke zwischen den Stangen zu Spieler acht.",
      ps("b1", [58.9, 10.6])),
-   S("Mittelfeld wechselt", "Das Mittelfeld macht dasselbe. Neon acht spielt zu Neon sieben, der zurück zu Neon acht, und Neon acht wechselt die Seite zu Neon zehn.",
+   S("Mittelfeld wechselt", "Das Mittelfeld macht dasselbe. Spieler acht spielt zu Spieler sieben, der zurück zu Spieler acht, und Spieler acht wechselt die Seite zu Spieler zehn.",
      ps("b1", [70.6, 18.6]), ps("b1", [58.9, 10.6], after=True), ps("b1", [42.3, 10.6], after=True)),
-   S("Zurück: geschafft", "Neon zehn spielt scharf durch die Stangen zurück zu Neon sechs. Geschafft, der Ball war in beiden Reihen, und jetzt ist wieder die Abwehr dran.",
+   S("Zurück: geschafft", "Spieler zehn spielt scharf durch die Stangen zurück zu Spieler sechs. Geschafft, der Ball war in beiden Reihen, und jetzt ist wieder die Abwehr dran.",
      ps("b1", [42.3, 50.6]))],
   "dims": dims(25, 75, 5, 55, "27 m", "27 m", rx=83)},
  "versions": [
   V("Steigerung", "Und jetzt die Steigerung: Zwei Bälle gleichzeitig.", "Zwei Bälle",
     "Jetzt laufen zwei Bälle gleichzeitig, einer in der Abwehr und einer im Mittelfeld. Vor dem Pass durch die Stangen hebt der Spieler den Kopf und schaut, wo der andere Ball ist. Erst dann spielt er zum Mitspieler, der gerade frei ist. Am Anfang gibt es Chaos, aber mit lautem Rufen klappt es bald.",
     sp(), [B("b1", 70.6, 42.6), B("b2", 30.6, 18.6)] + ERSATZ,
-    [S("Zwei Bälle", "Jetzt laufen zwei Bälle gleichzeitig. Hinten spielt Neon zwei zu Neon fünf, und vorne spielt Neon elf zu Neon acht.",
+    [S("Zwei Bälle", "Jetzt laufen zwei Bälle gleichzeitig. Hinten spielt Spieler zwei zu Spieler fünf, und vorne spielt Spieler elf zu Spieler acht.",
        ps("b1", [58.9, 50.6]), ps("b2", [58.9, 10.6])),
-     S("Kopf hoch", "Neon fünf hebt den Kopf und schaut nach vorn, wo der andere Ball ist. Neon acht hat ihn, also ist Neon zehn frei.",
+     S("Kopf hoch", "Spieler fünf hebt den Kopf und schaut nach vorn, wo der andere Ball ist. Spieler acht hat ihn, also ist Spieler zehn frei.",
        bl("n5", [58.3, 29])),
-     S("Gleichzeitig durch", "Neon fünf spielt durch die Stangen zu Neon zehn. Gleichzeitig spielt Neon acht nach hinten zu Neon zwei. Die Bälle kreuzen sich, darum rufen alle laut.",
+     S("Gleichzeitig durch", "Spieler fünf spielt durch die Stangen zu Spieler zehn. Gleichzeitig spielt Spieler acht nach hinten zu Spieler zwei. Die Bälle kreuzen sich, darum rufen alle laut.",
        ps("b1", [42.3, 10.6]), ps("b2", [70.6, 42.6]))]),
   V("Steigerung", "Und jetzt die zweite Steigerung: Der Innenverteidiger dribbelt ins Mittelfeld.", "Abwehr dribbelt an",
     "Auf ein Zeichen dribbelt ein Innenverteidiger selbst durch eine Lücke zwischen den Stangen ins Mittelfeld. Dort spielt er zu einem Mittelfeldspieler. Ein Mittelfeldspieler läuft dafür nach hinten und füllt die Lücke in der Abwehr.",
     sp(), [B("b1", 58.9, 50.6)] + ERSATZ,
-    [S("Andribbeln", "Auf ein Zeichen dribbelt Neon fünf mit Ball durch die Lücke zwischen den Stangen ins Mittelfeld.",
+    [S("Andribbeln", "Auf ein Zeichen dribbelt Spieler fünf mit Ball durch die Lücke zwischen den Stangen ins Mittelfeld.",
        dr("n5", "b1", [58.3, 22])),
-     S("Ins Mittelfeld", "Neon fünf spielt zu Neon sieben. Gleichzeitig läuft Neon acht nach hinten und füllt den Platz in der Abwehr.",
+     S("Ins Mittelfeld", "Spieler fünf spielt zu Spieler sieben. Gleichzeitig läuft Spieler acht nach hinten und füllt den Platz in der Abwehr.",
        ps("b1", [70.6, 18.6]), mv("n8", [66, 30]), mv("n8", [58.3, 48], after=True))])]}
 json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)

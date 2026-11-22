@@ -175,7 +175,7 @@
   "steps": [
    {
     "label": "Sprint auf Zuruf",
-    "say": "Auf Zuruf sprinten Neon sieben und Neon neun nach vorn zum Ball, Rot vier und Rot fünf jagen ihnen hinterher.",
+    "say": "Auf Zuruf sprinten Spieler sieben und Spieler neun nach vorn zum Ball, Spieler vier und Spieler fünf jagen ihnen hinterher.",
     "moves": [
      {
       "who": "n7",
@@ -224,7 +224,7 @@
    },
    {
     "label": "Zwei gegen zwei",
-    "say": "In der Spielzone dribbelt Neon sieben an und passt zu Neon neun. Der Pass muss sein, bevor geschossen werden darf.",
+    "say": "In der Spielzone dribbelt Spieler sieben an und passt zu Spieler neun. Der Pass muss sein, bevor geschossen werden darf.",
     "moves": [
      {
       "who": "n7",
@@ -275,7 +275,7 @@
    },
    {
     "label": "Abschluss: Punkt",
-    "say": "Neon neun schießt am Torwart vorbei, und das gibt einen Punkt für Team Neon.",
+    "say": "Spieler neun schießt am Torwart vorbei, und das gibt einen Punkt für Team Neon.",
     "moves": [
      {
       "who": "b1",
@@ -452,7 +452,7 @@
     "steps": [
      {
       "label": "Pass vorausahnen",
-      "say": "Neon sieben will zu Neon neun passen. Rot fünf ahnt das voraus und läuft in den Passweg.",
+      "say": "Spieler sieben will zu Spieler neun passen. Spieler fünf ahnt das voraus und läuft in den Passweg.",
       "moves": [
        {
         "who": "r5",
@@ -475,7 +475,7 @@
      },
      {
       "label": "Konter: Punkt",
-      "say": "Rot fünf fängt den Ball ab, dribbelt los und schießt am Torwart vorbei, und das gibt einen Punkt für Team Rot. Dann sprinten alle zu den Ecken.",
+      "say": "Spieler fünf fängt den Ball ab, dribbelt los und schießt am Torwart vorbei, und das gibt einen Punkt für Team Rot. Dann sprinten alle zu den Ecken.",
       "moves": [
        {
         "who": "r5",
@@ -570,7 +570,7 @@
     "steps": [
      {
       "label": "Zu, also quer",
-      "say": "Neon sieben dribbelt an, aber Rot vier macht den Weg zu. Also spielt er ruhig quer zu Neon neun.",
+      "say": "Spieler sieben dribbelt an, aber Spieler vier macht den Weg zu. Also spielt er ruhig quer zu Spieler neun.",
       "moves": [
        {
         "who": "n7",
@@ -603,7 +603,7 @@
      },
      {
       "label": "In die Lücke: Punkt",
-      "say": "Neon sieben läuft sofort in die Lücke, Neon neun spielt ihn an, und Neon sieben trifft. Das gibt einen Punkt für Team Neon.",
+      "say": "Spieler sieben läuft sofort in die Lücke, Spieler neun spielt ihn an, und Spieler sieben trifft. Das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "n7",

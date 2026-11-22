@@ -209,7 +209,7 @@
   "steps": [
    {
     "label": "Rückwärts an den Hütchen",
-    "say": "Neon sechs läuft seitlich und rückwärts an den Hütchen entlang, mit kleinen Schritten und gebeugten Knien. Gleichzeitig passen sich Rot zehn, Rot sieben und Rot elf den Ball im Dreieck zu.",
+    "say": "Spieler sechs läuft seitlich und rückwärts an den Hütchen entlang, mit kleinen Schritten und gebeugten Knien. Gleichzeitig passen sich Spieler zehn, Spieler sieben und Spieler elf den Ball im Dreieck zu.",
     "moves": [
      {
       "who": "n6",
@@ -267,7 +267,7 @@
    },
    {
     "label": "Hütchen und Mittellinie",
-    "say": "Neon sechs berührt das Hütchen an der Ecke und läuft schnell zur Mittellinie.",
+    "say": "Spieler sechs berührt das Hütchen an der Ecke und läuft schnell zur Mittellinie.",
     "moves": [
      {
       "who": "n6",
@@ -290,7 +290,7 @@
    },
    {
     "label": "Zwei gegen eins",
-    "say": "Neon sechs läuft in die untere Hälfte. Das ist das Startsignal: Rot elf dribbelt los, und Rot sieben läuft mit nach vorn.",
+    "say": "Spieler sechs läuft in die untere Hälfte. Das ist das Startsignal: Spieler elf dribbelt los, und Spieler sieben läuft mit nach vorn.",
     "moves": [
      {
       "who": "n6",
@@ -323,7 +323,7 @@
    },
    {
     "label": "Nach außen lenken",
-    "say": "Neon sechs stellt sich seitlich und lenkt Rot elf nach außen. Rot elf schießt aus spitzem Winkel, und der Torwart fängt den Ball. Das gibt einen Punkt für Team Neon. Jetzt startet Neon vier auf der anderen Seite.",
+    "say": "Spieler sechs stellt sich seitlich und lenkt Spieler elf nach außen. Spieler elf schießt aus spitzem Winkel, und der Torwart fängt den Ball. Das gibt einen Punkt für Team Neon. Jetzt startet Spieler vier auf der anderen Seite.",
     "moves": [
      {
       "who": "n6",
@@ -473,7 +473,7 @@
     "steps": [
      {
       "label": "Seitlich stellen",
-      "say": "Rot elf dribbelt auf Neon sechs zu. Neon sechs steht seitlich und macht den Weg zur Mitte zu. Rot elf muss nach außen, auf seinen schwachen Fuß.",
+      "say": "Spieler elf dribbelt auf Spieler sechs zu. Spieler sechs steht seitlich und macht den Weg zur Mitte zu. Spieler elf muss nach außen, auf seinen schwachen Fuß.",
       "moves": [
        {
         "who": "r11",
@@ -497,7 +497,7 @@
      },
      {
       "label": "Ball erobert",
-      "say": "Mit dem schwachen Fuß legt sich Rot elf den Ball zu weit vor. Neon sechs geht dazwischen und erobert den Ball, und das gibt einen Punkt für Team Neon.",
+      "say": "Mit dem schwachen Fuß legt sich Spieler elf den Ball zu weit vor. Spieler sechs geht dazwischen und erobert den Ball, und das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "n6",
@@ -612,7 +612,7 @@
     "steps": [
      {
       "label": "Passweg zu",
-      "say": "Rot zehn hat den Ball. Neon sechs rückt heraus und stellt sich so, dass der Pass zu Rot sieben nicht geht. Neon vier schiebt mit.",
+      "say": "Spieler zehn hat den Ball. Spieler sechs rückt heraus und stellt sich so, dass der Pass zu Spieler sieben nicht geht. Spieler vier schiebt mit.",
       "moves": [
        {
         "who": "n6",
@@ -635,7 +635,7 @@
      },
      {
       "label": "Abgefangen",
-      "say": "Rot zehn muss zu Rot elf passen. Neon vier hat das geahnt, geht dazwischen und fängt den Ball ab. Das gibt einen Punkt für Team Neon.",
+      "say": "Spieler zehn muss zu Spieler elf passen. Spieler vier hat das geahnt, geht dazwischen und fängt den Ball ab. Das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "n4",

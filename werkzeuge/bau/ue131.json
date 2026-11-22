@@ -271,7 +271,7 @@
   "steps": [
    {
     "label": "Um Dummy und Hütchen",
-    "say": "Auf Pfiff laufen Neon zwei und Rot sieben gleichzeitig los: am Rand entlang, um den Dummy herum und um das Hütchen.",
+    "say": "Auf Pfiff laufen Spieler zwei und Spieler sieben gleichzeitig los: am Rand entlang, um den Dummy herum und um das Hütchen.",
     "moves": [
      {
       "who": "n2",
@@ -366,7 +366,7 @@
    },
    {
     "label": "Hürden und Leiter",
-    "say": "Dann geht es zurück nach links, Neon zwei über die Hürden, Rot sieben durch die Leiter, und beide tippen das Hütchen links an.",
+    "say": "Dann geht es zurück nach links, Spieler zwei über die Hürden, Spieler sieben durch die Leiter, und beide tippen das Hütchen links an.",
     "moves": [
      {
       "who": "n2",
@@ -443,7 +443,7 @@
    },
    {
     "label": "Sprint in die Spielzone",
-    "say": "Jetzt sprinten beide zu den Hütchen in der Mitte und tippen sie an. Das schickt Neon drei und Rot acht los. Neon zwei ist zuerst in der Spielzone.",
+    "say": "Jetzt sprinten beide zu den Hütchen in der Mitte und tippen sie an. Das schickt Spieler drei und Spieler acht los. Spieler zwei ist zuerst in der Spielzone.",
     "moves": [
      {
       "who": "n2",
@@ -520,7 +520,7 @@
    },
    {
     "label": "Eins gegen eins: Punkt",
-    "say": "Darum spielt der Trainer Neon zwei den Ball. Er dribbelt aufs obere Minitor und trifft, und das gibt einen Punkt für Team Neon. Inzwischen laufen schon Neon drei und Rot acht: Kommen sie an, bevor ein Tor fällt, wird zwei gegen zwei gespielt.",
+    "say": "Darum spielt der Trainer Spieler zwei den Ball. Er dribbelt aufs obere Minitor und trifft, und das gibt einen Punkt für Team Neon. Inzwischen laufen schon Spieler drei und Spieler acht: Kommen sie an, bevor ein Tor fällt, wird zwei gegen zwei gespielt.",
     "moves": [
      {
       "who": "b1",
@@ -677,7 +677,7 @@
     "steps": [
      {
       "label": "Die Nächsten kommen dazu",
-      "say": "Noch ist kein Tor gefallen. Neon drei und Rot acht kommen in die Spielzone, jetzt heißt es zwei gegen zwei.",
+      "say": "Noch ist kein Tor gefallen. Spieler drei und Spieler acht kommen in die Spielzone, jetzt heißt es zwei gegen zwei.",
       "moves": [
        {
         "who": "n3",
@@ -709,7 +709,7 @@
      },
      {
       "label": "Zu zweit zum Abschluss: Punkt",
-      "say": "Neon zwei spielt zu Neon drei, der ist frei und schießt ins obere Minitor, und das gibt einen Punkt für Team Neon. Danach kommen die Nächsten, bis fünf gegen fünf gespielt wird.",
+      "say": "Spieler zwei spielt zu Spieler drei, der ist frei und schießt ins obere Minitor, und das gibt einen Punkt für Team Neon. Danach kommen die Nächsten, bis fünf gegen fünf gespielt wird.",
       "moves": [
        {
         "who": "b1",
@@ -838,7 +838,7 @@
     "steps": [
      {
       "label": "Kurze, saubere Schritte",
-      "say": "Neon zwei läuft mit kurzen, schnellen Schritten über die Hürden, Rot sieben genauso durch die Leiter. Keiner tritt auf ein Gerät.",
+      "say": "Spieler zwei läuft mit kurzen, schnellen Schritten über die Hürden, Spieler sieben genauso durch die Leiter. Keiner tritt auf ein Gerät.",
       "moves": [
        {
         "who": "n2",
@@ -933,7 +933,7 @@
      },
      {
       "label": "Antippen und Sprint",
-      "say": "Danach tippen beide an und sprinten zum Mittelhütchen. Neon zwei war sauberer und ist zuerst in der Spielzone, darum bekommt er den Ball.",
+      "say": "Danach tippen beide an und sprinten zum Mittelhütchen. Spieler zwei war sauberer und ist zuerst in der Spielzone, darum bekommt er den Ball.",
       "moves": [
        {
         "who": "n2",

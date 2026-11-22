@@ -243,7 +243,7 @@
    },
    {
     "label": "Drei gegen zwei",
-    "say": "Neon sieben ist zuerst am Ball und spielt zum Helfer Neon zwei. Gleichzeitig startet Neon fünf in den freien Raum.",
+    "say": "Spieler sieben ist zuerst am Ball und spielt zum Helfer Spieler zwei. Gleichzeitig startet Spieler fünf in den freien Raum.",
     "moves": [
      {
       "who": "c1",
@@ -284,7 +284,7 @@
    },
    {
     "label": "Freier Spieler: Punkt",
-    "say": "Neon zwei spielt zum freien Neon fünf, und der schießt ins Tor. Das gibt einen Punkt für Neon.",
+    "say": "Spieler zwei spielt zum freien Spieler fünf, und der schießt ins Tor. Das gibt einen Punkt für Neon.",
     "moves": [
      {
       "who": "c1",
@@ -436,7 +436,7 @@
     "steps": [
      {
       "label": "Mitte zu",
-      "say": "Rot drei schiebt in die Mitte und stellt den Weg zum Tor zu. Neon zwei muss nach außen dribbeln.",
+      "say": "Spieler drei schiebt in die Mitte und stellt den Weg zum Tor zu. Spieler zwei muss nach außen dribbeln.",
       "moves": [
        {
         "who": "r3",
@@ -460,7 +460,7 @@
      },
      {
       "label": "Pass abgefangen",
-      "say": "Neon zwei will zu Neon sieben passen, doch Rot vier hat darauf gewartet und fängt den Ball ab.",
+      "say": "Spieler zwei will zu Spieler sieben passen, doch Spieler vier hat darauf gewartet und fängt den Ball ab.",
       "moves": [
        {
         "who": "b1",
@@ -482,7 +482,7 @@
      },
      {
       "label": "Konter: Punkt",
-      "say": "Rot vier kontert sofort auf das andere Tor und schießt. Das gibt einen Punkt für Rot.",
+      "say": "Spieler vier kontert sofort auf das andere Tor und schießt. Das gibt einen Punkt für Rot.",
       "moves": [
        {
         "who": "r4",
@@ -626,7 +626,7 @@
     "steps": [
      {
       "label": "Verteidiger anlocken",
-      "say": "Rot elf dribbelt auf die beiden Verteidiger zu, und beide kommen auf ihn zu.",
+      "say": "Spieler elf dribbelt auf die beiden Verteidiger zu, und beide kommen auf ihn zu.",
       "moves": [
        {
         "who": "r11",
@@ -657,7 +657,7 @@
      },
      {
       "label": "Pass zum Freien",
-      "say": "Gleichzeitig startet Rot drei in den freien Raum, und Rot elf spielt ihn an.",
+      "say": "Gleichzeitig startet Spieler drei in den freien Raum, und Spieler elf spielt ihn an.",
       "moves": [
        {
         "who": "r3",
@@ -680,7 +680,7 @@
      },
      {
       "label": "Abschluss: Punkt",
-      "say": "Rot drei schießt ruhig ins Tor, und das gibt einen Punkt für Rot.",
+      "say": "Spieler drei schießt ruhig ins Tor, und das gibt einen Punkt für Rot.",
       "moves": [
        {
         "who": "b1",

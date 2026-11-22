@@ -194,7 +194,7 @@
   "steps": [
    {
     "label": "Aufbau von hinten",
-    "say": "Der Torhüter Neon eins spielt zu Neon vier, und Neon vier spielt weiter zu Neon fünf. Das sind zwei Pässe.",
+    "say": "Der Torhüter Spieler eins spielt zu Spieler vier, und Spieler vier spielt weiter zu Spieler fünf. Das sind zwei Pässe.",
     "moves": [
      {
       "who": "b1",
@@ -217,7 +217,7 @@
    },
    {
     "label": "Über den Floater",
-    "say": "Neon fünf spielt zum Floater oben, und der Floater spielt direkt zu Neon acht. Jetzt sind es vier Pässe, und ein Floater war dabei.",
+    "say": "Spieler fünf spielt zum Floater oben, und der Floater spielt direkt zu Spieler acht. Jetzt sind es vier Pässe, und ein Floater war dabei.",
     "moves": [
      {
       "who": "b1",
@@ -240,7 +240,7 @@
    },
    {
     "label": "Pass in den Lauf",
-    "say": "Gleichzeitig startet Neon zehn in die Tiefe, und Neon acht spielt ihm den Ball in den Lauf. Das ist der fünfte Pass.",
+    "say": "Gleichzeitig startet Spieler zehn in die Tiefe, und Spieler acht spielt ihm den Ball in den Lauf. Das ist der fünfte Pass.",
     "moves": [
      {
       "who": "n10",
@@ -263,7 +263,7 @@
    },
    {
     "label": "Abschluss",
-    "say": "Neon zehn schließt direkt ab und trifft ins rechte Tor. Das gibt einen Punkt für Team Neon.",
+    "say": "Spieler zehn schließt direkt ab und trifft ins rechte Tor. Das gibt einen Punkt für Team Neon.",
     "moves": [
      {
       "who": "b1",
@@ -427,7 +427,7 @@
     "steps": [
      {
       "label": "Gegner laufen an",
-      "say": "Gleichzeitig laufen Rot neun und Rot elf den Torhüter an. Zwischen ihnen entsteht eine große Lücke.",
+      "say": "Gleichzeitig laufen Spieler neun und Spieler elf den Torhüter an. Zwischen ihnen entsteht eine große Lücke.",
       "moves": [
        {
         "who": "r9",
@@ -449,7 +449,7 @@
      },
      {
       "label": "Durch die Lücke",
-      "say": "Der Torhüter spielt flach durch die Lücke zu Neon acht. Neon acht dreht auf und spielt weiter zu Neon zehn.",
+      "say": "Der Torhüter spielt flach durch die Lücke zu Spieler acht. Spieler acht dreht auf und spielt weiter zu Spieler zehn.",
       "moves": [
        {
         "who": "b1",
@@ -606,7 +606,7 @@
     "steps": [
      {
       "label": "Schnell zum Floater",
-      "say": "Neon sechs spielt sofort zum Floater unten.",
+      "say": "Spieler sechs spielt sofort zum Floater unten.",
       "moves": [
        {
         "who": "b1",
@@ -620,7 +620,7 @@
      },
      {
       "label": "Nachrücken mit Tempo",
-      "say": "Gleichzeitig sprinten Neon zehn und Neon acht nach vorn. Der Floater spielt Neon zehn in den Lauf.",
+      "say": "Gleichzeitig sprinten Spieler zehn und Spieler acht nach vorn. Der Floater spielt Spieler zehn in den Lauf.",
       "moves": [
        {
         "who": "n10",
@@ -651,7 +651,7 @@
      },
      {
       "label": "Abschluss",
-      "say": "Neon zehn schließt ab und trifft. Das gibt einen Punkt für Team Neon.",
+      "say": "Spieler zehn schließt ab und trifft. Das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "b1",

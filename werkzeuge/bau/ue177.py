@@ -5,7 +5,7 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # (n1 TW, 2, 3, 4, 5), dunkel (Angreifer) -> Team Rot (7, 9, 10, 11), Nummern wie im PDF. Die zweite Viererkette (gelb, wartet
 # neben dem Tor) steht nur im Text. Positionen auf Abstand gesetzt (3D), Spielidee wie im PDF und Video.
 # Sichtkegel: Ton "Players should also recognise pressing triggers, such as a poor pass or a heavy touch" -> in der Grundform
-# bl() von Neon vier zum ballführenden Rot zehn (zu weiter Kontakt), bevor er presst (im Video kein Kegel eingezeichnet,
+# bl() von Spieler vier zum ballführenden Spieler zehn (zu weiter Kontakt), bevor er presst (im Video kein Kegel eingezeichnet,
 # Richtung aus dem Sinn).
 T = P("T", "c", 50, 46, "T")
 POS = {"n1": (50, 8.5), "n2": (33, 24), "n4": (41.5, 22), "n5": (58.5, 22), "n3": (67, 24),
@@ -33,32 +33,32 @@ u = {"title": "Vor dem Strafraum verteidigen", "code": "UE-177", "kind": "Spielf
  "say_intro": "Vor dem Strafraum verteidigen. Vier gegen vier vor dem großen Tor, und Team Neon verteidigt als enge Viererkette.",
  "board": {"lines": LINES, "goals": TORE, "cones": [], "players": sp(), "balls": [B("b1", 50.6, 46.6)] + ERSATZ,
   "steps": [
-   S("Ball zu Team Rot", "Der Trainer spielt den Ball zu Rot zehn. Team Rot greift das große Tor an, Team Neon verteidigt am Strafraum.",
+   S("Ball zu Team Rot", "Der Trainer spielt den Ball zu Spieler zehn. Team Rot greift das große Tor an, Team Neon verteidigt am Strafraum.",
      ps("b1", [42.1, 38.6])),
-   S("Einer presst", "Rot zehn dribbelt an, aber der Ball springt ihm zu weit weg. Neon vier sieht das und presst sofort. Gleichzeitig schieben Neon zwei, fünf und drei nach und sichern ab.",
+   S("Einer presst", "Spieler zehn dribbelt an, aber der Ball springt ihm zu weit weg. Spieler vier sieht das und presst sofort. Gleichzeitig schieben Spieler zwei, fünf und drei nach und sichern ab.",
      dr("r10", "b1", [41.5, 32]), bl("n4", [41.5, 32]), mv("n4", [41.5, 27], after=True),
      mv("n5", [54, 21.5], delay=0.9), mv("n3", [62.5, 23], delay=0.9), mv("n2", [33, 26], delay=0.9)),
-   S("Abgefangen", "Rot zehn will zu Rot elf passen. Neon zwei geht dazwischen und fängt den Ball ab.",
+   S("Abgefangen", "Spieler zehn will zu Spieler elf passen. Spieler zwei geht dazwischen und fängt den Ball ab.",
      mv("n2", [30.4, 31.4]), ps("b1", [31, 32], delay=0.3)),
-   S("Zum Trainer: zwei Punkte", "Neon zwei spielt den Ball sofort zum Trainer, und das gibt zwei Punkte für Team Neon. Dann spielt der Trainer den nächsten Ball zu Team Rot. Nach zwei Angriffen ist die nächste Viererkette dran.",
+   S("Zum Trainer: zwei Punkte", "Spieler zwei spielt den Ball sofort zum Trainer, und das gibt zwei Punkte für Team Neon. Dann spielt der Trainer den nächsten Ball zu Team Rot. Nach zwei Angriffen ist die nächste Viererkette dran.",
      ps("b1", [50.6, 46.6]))],
   "dims": dims(20, 80, 6, 39.6, "41 m", "23 m", rx=88)},
  "versions": [
   V("Coaching-Punkt", "Jetzt zum Coaching-Punkt: Einer presst, die anderen sichern ab.", "Einer presst, drei sichern",
     "Nur ein Verteidiger läuft den Ball an. Die anderen drei bleiben nah hinter und neben ihm und machen die Passwege zu. So bleibt die Kette eng, und der Angreifer muss nach hinten spielen.",
     sp(), [B("b1", 42.1, 38.6)] + ERSATZ,
-    [S("Neon vier presst", "Rot zehn hat den Ball. Neon vier läuft raus und presst. Gleichzeitig rücken Neon zwei, fünf und drei eng an ihn heran.",
+    [S("Spieler vier presst", "Spieler zehn hat den Ball. Spieler vier läuft raus und presst. Gleichzeitig rücken Spieler zwei, fünf und drei eng an ihn heran.",
        mv("n4", [41.5, 31]), mv("n2", [34, 25.5], delay=0.2), mv("n5", [55, 21], delay=0.2), mv("n3", [63, 23], delay=0.2)),
-     S("Kein Weg nach vorn", "Rot zehn findet keine Lücke und dreht nach hinten ab. Die Kette steht weiter eng zusammen.",
+     S("Kein Weg nach vorn", "Spieler zehn findet keine Lücke und dreht nach hinten ab. Die Kette steht weiter eng zusammen.",
        dr("r10", "b1", [36, 37]))]),
   V("Steigerung", "Und jetzt die Steigerung: Nach dem Ballgewinn kontert Team Neon auf zwei Minitore.", "Konter auf die Minitore",
     "Unten in den Ecken stehen zwei Minitore. Erobert Team Neon den Ball, spielt es schnell über außen und schießt in ein Minitor. Das gibt zwei Punkte für Team Neon.",
     sp(), [B("b1", 50.6, 25.6)] + ERSATZ,
-    [S("Abgefangen", "Rot neun will zu Rot zehn passen. Neon vier geht dazwischen und fängt den Ball ab.",
+    [S("Abgefangen", "Spieler neun will zu Spieler zehn passen. Spieler vier geht dazwischen und fängt den Ball ab.",
        mv("n4", [46.5, 30.4]), ps("b1", [47.1, 31], delay=0.3)),
-     S("Über außen", "Neon drei läuft sofort nach außen. Neon vier spielt ihm den Ball in den Lauf.",
+     S("Über außen", "Spieler drei läuft sofort nach außen. Spieler vier spielt ihm den Ball in den Lauf.",
        mv("n3", [70, 35]), ps("b1", [70.6, 35.6], delay=0.3)),
-     S("Minitor: zwei Punkte", "Neon drei schießt ins rechte Minitor, und das gibt zwei Punkte für Team Neon. Dann spielt der Trainer den nächsten Ball zu Team Rot.",
+     S("Minitor: zwei Punkte", "Spieler drei schießt ins rechte Minitor, und das gibt zwei Punkte für Team Neon. Dann spielt der Trainer den nächsten Ball zu Team Rot.",
        ps("b1", [76, 39.3]))],
     goals=TORE + MINI)]}
 json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)

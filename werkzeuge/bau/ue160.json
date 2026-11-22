@@ -235,7 +235,7 @@
   "steps": [
    {
     "label": "Pässe sammeln",
-    "say": "Team Neon hat den Ball und will zehn Pässe in Folge schaffen. Neon acht spielt zum Springer unten links. Gleichzeitig rücken Rot sieben und Rot zwei gemeinsam heraus.",
+    "say": "Team Neon hat den Ball und will zehn Pässe in Folge schaffen. Spieler acht spielt zum Springer unten links. Gleichzeitig rücken Spieler sieben und Spieler zwei gemeinsam heraus.",
     "moves": [
      {
       "who": "b1",
@@ -267,7 +267,7 @@
    },
    {
     "label": "Zurück in die Mitte",
-    "say": "Der Springer spielt mit einem Kontakt zu Neon elf. Neon elf spielt gleich weiter zum Springer oben links.",
+    "say": "Der Springer spielt mit einem Kontakt zu Spieler elf. Spieler elf spielt gleich weiter zum Springer oben links.",
     "moves": [
      {
       "who": "b1",
@@ -290,7 +290,7 @@
    },
    {
     "label": "Nicht von Ecke zu Ecke",
-    "say": "Der Springer darf nicht direkt in eine andere Ecke spielen. Er spielt zu Neon vier, und Neon vier passt weiter zum Springer oben rechts. Rot fünf läuft an.",
+    "say": "Der Springer darf nicht direkt in eine andere Ecke spielen. Er spielt zu Spieler vier, und Spieler vier passt weiter zum Springer oben rechts. Spieler fünf läuft an.",
     "moves": [
      {
       "who": "b1",
@@ -322,7 +322,7 @@
    },
    {
     "label": "Zehn Pässe: Punkt",
-    "say": "Der Springer spielt zurück zu Neon neun, und so geht es weiter bis zum zehnten Pass. Das gibt einen Punkt für Team Neon. Dann tauscht Team Rot mit den Springern, alle laufen gleichzeitig, und das Spiel geht sofort weiter.",
+    "say": "Der Springer spielt zurück zu Spieler neun, und so geht es weiter bis zum zehnten Pass. Das gibt einen Punkt für Team Neon. Dann tauscht Team Rot mit den Springern, alle laufen gleichzeitig, und das Spiel geht sofort weiter.",
     "moves": [
      {
       "who": "b1",
@@ -541,7 +541,7 @@
     "steps": [
      {
       "label": "Umschauen",
-      "say": "Der Springer unten links hat den Ball. Bevor der Pass kommt, schaut Neon elf kurz über die Schulter und sieht Rot zwei, der anläuft.",
+      "say": "Der Springer unten links hat den Ball. Bevor der Pass kommt, schaut Spieler elf kurz über die Schulter und sieht Spieler zwei, der anläuft.",
       "moves": [
        {
         "who": "n11",
@@ -564,7 +564,7 @@
      },
      {
       "label": "Offen mitnehmen",
-      "say": "Der Springer spielt zu Neon elf. Neon elf nimmt den Ball weg von Rot zwei in den freien Raum mit und spielt quer zu Neon neun.",
+      "say": "Der Springer spielt zu Spieler elf. Spieler elf nimmt den Ball weg von Spieler zwei in den freien Raum mit und spielt quer zu Spieler neun.",
       "moves": [
        {
         "who": "b1",
@@ -717,7 +717,7 @@
     "steps": [
      {
       "label": "Drei Pässe in der Mitte",
-      "say": "Neon elf spielt zu Neon vier, der weiter zu Neon neun und der zu Neon acht. Das sind drei Pässe in der Mitte.",
+      "say": "Spieler elf spielt zu Spieler vier, der weiter zu Spieler neun und der zu Spieler acht. Das sind drei Pässe in der Mitte.",
       "moves": [
        {
         "who": "b1",
@@ -749,7 +749,7 @@
      },
      {
       "label": "Jetzt zum Springer",
-      "say": "Erst jetzt darf Neon acht einen Springer anspielen. Er passt zum Springer unten rechts, und der spielt zurück zu Neon neun.",
+      "say": "Erst jetzt darf Spieler acht einen Springer anspielen. Er passt zum Springer unten rechts, und der spielt zurück zu Spieler neun.",
       "moves": [
        {
         "who": "b1",

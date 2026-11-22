@@ -138,7 +138,7 @@
   "steps": [
    {
     "label": "Gegenbewegung",
-    "say": "Neon zehn löst sich schräg nach rechts von seiner Stange. Gleichzeitig läuft Neon acht in die andere Richtung, nach links. Neon zehn schaut dabei über die Schulter nach oben.",
+    "say": "Spieler zehn löst sich schräg nach rechts von seiner Stange. Gleichzeitig läuft Spieler acht in die andere Richtung, nach links. Spieler zehn schaut dabei über die Schulter nach oben.",
     "moves": [
      {
       "who": "n10",
@@ -169,7 +169,7 @@
    },
    {
     "label": "Pass in den Winkel",
-    "say": "Neon vier passt schräg zu Neon zehn. Neon zehn nimmt den Ball halb offen an.",
+    "say": "Spieler vier passt schräg zu Spieler zehn. Spieler zehn nimmt den Ball halb offen an.",
     "moves": [
      {
       "who": "b1",
@@ -183,7 +183,7 @@
    },
    {
     "label": "Pass in die Mitte",
-    "say": "Neon acht schaut kurz nach oben. Dann spielt Neon zehn den Ball quer in die Mitte zu Neon acht.",
+    "say": "Spieler acht schaut kurz nach oben. Dann spielt Spieler zehn den Ball quer in die Mitte zu Spieler acht.",
     "moves": [
      {
       "who": "n8",
@@ -206,7 +206,7 @@
    },
    {
     "label": "Durchspielen: Punkt",
-    "say": "Neon acht spielt durch zu Neon sechs. Der Ball ist sauber angekommen, und das gibt einen Punkt für die Gruppe. Jetzt startet Neon sechs den Ablauf in die andere Richtung, nach unten.",
+    "say": "Spieler acht spielt durch zu Spieler sechs. Der Ball ist sauber angekommen, und das gibt einen Punkt für die Gruppe. Jetzt startet Spieler sechs den Ablauf in die andere Richtung, nach unten.",
     "moves": [
      {
       "who": "b1",
@@ -241,7 +241,7 @@
    "label": "Steigerung",
    "say": "Und jetzt die Steigerung: Der erste Pass geht zum weiten Spieler.",
    "title": "Pass zum weiten Spieler",
-   "text": "Neon vier passt jetzt gleich zum oberen Mittelspieler. Der legt den Ball ab zum unteren Mittelspieler, und der spielt durch zum Endspieler. Achtet auf das Timing, die Bewegung und genaue Pässe.",
+   "text": "Spieler vier passt jetzt gleich zum oberen Mittelspieler. Der legt den Ball ab zum unteren Mittelspieler, und der spielt durch zum Endspieler. Achtet auf das Timing, die Bewegung und genaue Pässe.",
    "board": {
     "players": [
      {
@@ -300,7 +300,7 @@
     "steps": [
      {
       "label": "Gegenbewegung",
-      "say": "Neon acht löst sich nach rechts, Neon zehn gleichzeitig nach links. Neon acht schaut über die Schulter zu Neon zehn.",
+      "say": "Spieler acht löst sich nach rechts, Spieler zehn gleichzeitig nach links. Spieler acht schaut über die Schulter zu Spieler zehn.",
       "moves": [
        {
         "who": "n8",
@@ -340,7 +340,7 @@
      },
      {
       "label": "Langer Pass",
-      "say": "Neon vier spielt den langen Pass zu Neon acht.",
+      "say": "Spieler vier spielt den langen Pass zu Spieler acht.",
       "moves": [
        {
         "who": "b1",
@@ -354,7 +354,7 @@
      },
      {
       "label": "Ablegen und durch: Punkt",
-      "say": "Neon acht legt direkt ab zu Neon zehn, und Neon zehn spielt durch zu Neon sechs. Das gibt einen Punkt für die Gruppe, und Neon sechs startet nach unten.",
+      "say": "Spieler acht legt direkt ab zu Spieler zehn, und Spieler zehn spielt durch zu Spieler sechs. Das gibt einen Punkt für die Gruppe, und Spieler sechs startet nach unten.",
       "moves": [
        {
         "who": "b1",
@@ -383,7 +383,7 @@
    "label": "Steigerung",
    "say": "Und jetzt die zweite Steigerung: Doppelpass mit dem ersten Passgeber.",
    "title": "Doppelpass zum Start",
-   "text": "Zu Beginn kommt ein Doppelpass dazu. Der untere Mittelspieler legt den Ball zurück zu Neon vier, der spielt zum oberen Mittelspieler. Der legt quer zum unteren Mittelspieler, und der spielt durch zum Endspieler. So gibt es mehr Pässe, und alle bleiben wach.",
+   "text": "Zu Beginn kommt ein Doppelpass dazu. Der untere Mittelspieler legt den Ball zurück zu Spieler vier, der spielt zum oberen Mittelspieler. Der legt quer zum unteren Mittelspieler, und der spielt durch zum Endspieler. So gibt es mehr Pässe, und alle bleiben wach.",
    "board": {
     "players": [
      {
@@ -442,7 +442,7 @@
     "steps": [
      {
       "label": "Anbieten",
-      "say": "Neon zehn löst sich nach rechts und schaut über die Schulter. Neon vier passt zu ihm.",
+      "say": "Spieler zehn löst sich nach rechts und schaut über die Schulter. Spieler vier passt zu ihm.",
       "moves": [
        {
         "who": "n10",
@@ -474,7 +474,7 @@
      },
      {
       "label": "Doppelpass",
-      "say": "Neon vier läuft schräg nach vorn, und Neon zehn legt den Ball zurück.",
+      "say": "Spieler vier läuft schräg nach vorn, und Spieler zehn legt den Ball zurück.",
       "moves": [
        {
         "who": "n4",
@@ -497,7 +497,7 @@
      },
      {
       "label": "Pass zur Stange",
-      "say": "Neon acht löst sich nach links und bekommt den Pass von Neon vier. Gleichzeitig läuft Neon zehn rechts nach oben.",
+      "say": "Spieler acht löst sich nach links und bekommt den Pass von Spieler vier. Gleichzeitig läuft Spieler zehn rechts nach oben.",
       "moves": [
        {
         "who": "n8",
@@ -528,7 +528,7 @@
      },
      {
       "label": "Quer und durch: Punkt",
-      "say": "Neon acht legt quer zu Neon zehn, und der spielt durch zu Neon sechs. Das gibt einen Punkt für die Gruppe, und Neon sechs startet nach unten.",
+      "say": "Spieler acht legt quer zu Spieler zehn, und der spielt durch zu Spieler sechs. Das gibt einen Punkt für die Gruppe, und Spieler sechs startet nach unten.",
       "moves": [
        {
         "who": "b1",

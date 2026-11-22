@@ -5,8 +5,8 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # Ausrichtung wie im PDF (Tor oben). Pink (Verteidiger + Torwart) -> Team Neon (n1 TW, 2, 3, 4, 5), dunkel (Angreifer) -> Team Rot
 # (7, 9, 10, 11), Nummern wie im PDF. Positionen auf Abstand gesetzt (3D), Spielidee wie im PDF. Trainer spielt die Bälle ein;
 # im Coaching-Punkt zwei steht er als Linienrichter an der Seite (wie im PDF).
-# Sichtkegel: Text "identify the right opportunities to make tackles or interceptions" -> in der Grundform bl() von Neon vier
-# zum ballführenden Rot zehn, bevor er rausläuft und presst (im Video kein Kegel eingezeichnet, Richtung aus dem Sinn).
+# Sichtkegel: Text "identify the right opportunities to make tackles or interceptions" -> in der Grundform bl() von Spieler vier
+# zum ballführenden Spieler zehn, bevor er rausläuft und presst (im Video kein Kegel eingezeichnet, Richtung aus dem Sinn).
 T = P("T", "c", 51.5, 50.5, "T")
 POS = {"n1": (50, 7.5), "n2": (33, 21), "n4": (41.5, 18), "n5": (58.5, 18), "n3": (67, 21),
        "r9": (50, 24), "r11": (30, 37), "r7": (70, 37), "r10": (42, 40)}
@@ -32,29 +32,29 @@ u = {"title": "Als Viererkette verteidigen", "code": "UE-166", "kind": "Spielfor
  "say_intro": "Als Viererkette verteidigen. Vier gegen vier vor dem großen Tor, und Team Neon verteidigt eng zusammen als Kette.",
  "board": {"lines": LINES, "goals": TORE, "cones": [], "players": sp(), "balls": [B("b1", 52.1, 51.1)] + ERSATZ,
   "steps": [
-   S("Ball zu Team Rot", "Der Trainer spielt den Ball zu Rot zehn. Team Rot greift das große Tor an.",
+   S("Ball zu Team Rot", "Der Trainer spielt den Ball zu Spieler zehn. Team Rot greift das große Tor an.",
      ps("b1", [42.6, 40.6])),
-   S("Einer presst", "Rot zehn dribbelt an. Neon vier sieht das, läuft raus und presst. Gleichzeitig schieben Neon zwei, fünf und drei nach und sichern ab. Rot neun läuft sich frei.",
+   S("Einer presst", "Spieler zehn dribbelt an. Spieler vier sieht das, läuft raus und presst. Gleichzeitig schieben Spieler zwei, fünf und drei nach und sichern ab. Spieler neun läuft sich frei.",
      dr("r10", "b1", [44, 32]), bl("n4", [44, 32]), mv("n4", [43.5, 26], after=True),
      mv("n2", [36, 20], delay=0.9), mv("n5", [52.5, 20], delay=0.9), mv("n3", [61, 20], delay=0.9), mv("r9", [55, 28], delay=0.9)),
-   S("Abgefangen", "Rot zehn will zu Rot neun passen. Neon fünf hat mitgeschoben, geht dazwischen und fängt den Ball ab.",
+   S("Abgefangen", "Spieler zehn will zu Spieler neun passen. Spieler fünf hat mitgeschoben, geht dazwischen und fängt den Ball ab.",
      ps("b1", [50.6, 30.1]), mv("n5", [50, 29.5], delay=0.1)),
-   S("Konter: Punkt", "Neon fünf dribbelt schnell nach unten und schießt ins rechte Minitor, und das gibt einen Punkt für Team Neon. Dann spielt der Trainer den nächsten Ball zu Team Rot.",
+   S("Konter: Punkt", "Spieler fünf dribbelt schnell nach unten und schießt ins rechte Minitor, und das gibt einen Punkt für Team Neon. Dann spielt der Trainer den nächsten Ball zu Team Rot.",
      dr("n5", "b1", [60, 40]), ps("b1", [66.4, 46.7], after=True))],
   "dims": dims(27.8, 72.2, 5, 55, "37 m", "41 m", rx=86)},
  "versions": [
   V("Coaching-Punkt", "Jetzt zum Coaching-Punkt: Einer presst, alle anderen schieben.", "Einer presst, alle schieben",
     "Geht ein Verteidiger raus und presst, schieben die anderen drei gleichzeitig zur Ballseite. So bleibt die Kette eng, und die Lücken für Pässe werden klein. Der Angreifer findet keinen Weg zum Tor.",
     sp(), [B("b1", 30.6, 37.6)] + ERSATZ,
-    [S("Neon zwei presst", "Rot elf hat den Ball außen. Neon zwei läuft raus und presst. Gleichzeitig schieben Neon vier, fünf und drei zur Ballseite.",
+    [S("Spieler zwei presst", "Spieler elf hat den Ball außen. Spieler zwei läuft raus und presst. Gleichzeitig schieben Spieler vier, fünf und drei zur Ballseite.",
        mv("n2", [31.5, 31]), mv("n4", [38, 21], delay=0.2), mv("n5", [46, 20], delay=0.2), mv("n3", [57, 21], delay=0.2)),
-     S("Kein Weg nach innen", "Rot elf findet keine Lücke und spielt zurück zu Rot zehn. Die Kette steht weiter eng zusammen.",
+     S("Kein Weg nach innen", "Spieler elf findet keine Lücke und spielt zurück zu Spieler zehn. Die Kette steht weiter eng zusammen.",
        ps("b1", [42.6, 40.6]))]),
   V("Coaching-Punkt", "Der zweite Coaching-Punkt: Gemeinsam herausrücken.", "Gemeinsam herausrücken",
     "Der Trainer steht an der Seite wie ein Linienrichter. Die Verteidiger reden miteinander und rücken alle zusammen heraus. Wer dann hinter der Linie steht, ist im Abseits.",
     sp(T=P("T", "c", 75.5, 19, "T")), [B("b1", 42.6, 40.6), B("s1", 79.1, 22.5), B("s2", 75.5, 22.5)],
-    [S("Alle raus", "Rot zehn hat den Ball. Neon vier ruft: Raus! Alle vier Verteidiger rücken gleichzeitig heraus, Rot neun bleibt hinten stehen.",
+    [S("Alle raus", "Spieler zehn hat den Ball. Spieler vier ruft: Raus! Alle vier Verteidiger rücken gleichzeitig heraus, Spieler neun bleibt hinten stehen.",
        mv("n2", [33, 27]), mv("n4", [41.5, 27]), mv("n5", [58.5, 27]), mv("n3", [67, 27])),
-     S("Abseits", "Rot zehn passt zu Rot neun. Der Trainer an der Seite hebt die Hand: Abseits! Jetzt hat Team Neon den Ball.",
+     S("Abseits", "Spieler zehn passt zu Spieler neun. Der Trainer an der Seite hebt die Hand: Abseits! Jetzt hat Team Neon den Ball.",
        ps("b1", [50.6, 24.6]))])]}
 json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)

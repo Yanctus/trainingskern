@@ -207,7 +207,7 @@
   "steps": [
    {
     "label": "Slalom durch die Stangen",
-    "say": "Auf Pfiff dribbeln Neon zwei und Rot acht gleichzeitig im Slalom durch ihre Stangen nach unten.",
+    "say": "Auf Pfiff dribbeln Spieler zwei und Spieler acht gleichzeitig im Slalom durch ihre Stangen nach unten.",
     "moves": [
      {
       "who": "n2",
@@ -372,7 +372,7 @@
    },
    {
     "label": "Um das Hütchen, Abschluss: Punkt",
-    "say": "Neon zwei ist zuerst um das Hütchen und schießt ins Tor oben, und das gibt einen Punkt für Team Neon. Gleich danach schießt auch Rot acht.",
+    "say": "Spieler zwei ist zuerst um das Hütchen und schießt ins Tor oben, und das gibt einen Punkt für Team Neon. Gleich danach schießt auch Spieler acht.",
     "moves": [
      {
       "who": "n2",
@@ -465,7 +465,7 @@
    },
    {
     "label": "Zweiter Ball: Punkt",
-    "say": "Sofort spielt der Trainer einen zweiten Ball. Neon zwei schiebt sich vor Rot acht, schirmt den Ball ab und trifft ins rechte Minitor unten, und das gibt noch einen Punkt für Team Neon. Dann sind Neon sechs und Rot drei dran.",
+    "say": "Sofort spielt der Trainer einen zweiten Ball. Spieler zwei schiebt sich vor Spieler acht, schirmt den Ball ab und trifft ins rechte Minitor unten, und das gibt noch einen Punkt für Team Neon. Dann sind Spieler sechs und Spieler drei dran.",
     "moves": [
      {
       "who": "s1",
@@ -598,7 +598,7 @@
     "steps": [
      {
       "label": "Über die Schulter schauen",
-      "say": "Der Trainer spielt den zweiten Ball. Neon zwei schaut kurz über die Schulter, wo Rot acht ist, und schiebt sich vor ihn.",
+      "say": "Der Trainer spielt den zweiten Ball. Spieler zwei schaut kurz über die Schulter, wo Spieler acht ist, und schiebt sich vor ihn.",
       "moves": [
        {
         "who": "s1",
@@ -744,7 +744,7 @@
     "steps": [
      {
       "label": "Ball kommt, Verteidiger presst",
-      "say": "Der Trainer spielt Neon zwei den dritten Ball, Rot acht läuft sofort auf ihn zu.",
+      "say": "Der Trainer spielt Spieler zwei den dritten Ball, Spieler acht läuft sofort auf ihn zu.",
       "moves": [
        {
         "who": "s1",
@@ -775,7 +775,7 @@
      },
      {
       "label": "Blick links, Weg rechts",
-      "say": "Neon zwei schaut zum linken Tor, als wolle er dorthin. Rot acht schiebt nach links, und Neon zwei zieht nach rechts weg.",
+      "say": "Spieler zwei schaut zum linken Tor, als wolle er dorthin. Spieler acht schiebt nach links, und Spieler zwei zieht nach rechts weg.",
       "moves": [
        {
         "who": "n2",
@@ -818,7 +818,7 @@
      },
      {
       "label": "Abschluss rechts: Punkt",
-      "say": "Jetzt ist das rechte Tor frei, und Neon zwei trifft, und das gibt einen Punkt für Team Neon. Dann sind Neon sechs und Rot drei dran.",
+      "say": "Jetzt ist das rechte Tor frei, und Spieler zwei trifft, und das gibt einen Punkt für Team Neon. Dann sind Spieler sechs und Spieler drei dran.",
       "moves": [
        {
         "who": "s1",

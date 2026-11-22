@@ -6,7 +6,7 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # Tor und greift nach Ballgewinn das untere an. Ein Trainer, er steht rechts (im PDF links) mit Bällen. Wertung wie im PDF:
 # Minitor zwei Punkte, Stange ein Punkt. Positionen auf Abstand gesetzt (3D).
 # Sichtkegel: Text "Recognise opportunities to play through", "Awareness of defensive angles and distances", Ton "positional
-# awareness" -> Neon zehn schaut vor dem Pass in die Lücke der Viererkette (Grundform und erster Coaching-Punkt), Richtung aus
+# awareness" -> Spieler zehn schaut vor dem Pass in die Lücke der Viererkette (Grundform und erster Coaching-Punkt), Richtung aus
 # dem Sinn (im Video kein Kegel eingezeichnet).
 T = P("T", "c", 81, 40, "T")
 POS = {"n11": (37, 37.5), "n10": (45.5, 40.5), "n9": (54.5, 40.5), "n7": (63, 37.5),
@@ -34,28 +34,28 @@ u = {"title": "Den Steilpass verhindern", "code": "UE-208", "kind": "Spielform",
  "say_intro": "Den Steilpass verhindern. Zwei Viererketten spielen gegeneinander, und die verteidigende Kette bleibt eng zusammen.",
  "board": {"lines": LINES, "goals": TORE, "cones": KEGEL, "players": sp(), "balls": [B("b1", 63.6, 38.1)] + ERSATZ,
   "steps": [
-   S("Ball laufen lassen", "Team Neon hat den Ball. Neon sieben spielt zu Neon neun und der zu Neon zehn. Gleichzeitig schiebt Team Rot als Kette mit zur Seite.",
+   S("Ball laufen lassen", "Team Neon hat den Ball. Spieler sieben spielt zu Spieler neun und der zu Spieler zehn. Gleichzeitig schiebt Team Rot als Kette mit zur Seite.",
      ps("b1", [55.1, 41.1]), ps("b1", [46.1, 41.1], after=True), mv("r3", [59, 21], delay=0.4), mv("r5", [51.5, 23], delay=0.4), mv("r2", [38, 22], delay=0.4)),
-   S("Pressen und absichern", "Rot vier presst Neon zehn bis an den Rand seiner Zone. Rot fünf sichert schräg dahinter ab. Neon zehn schaut, ob es eine Lücke für einen Steilpass gibt.",
+   S("Pressen und absichern", "Spieler vier presst Spieler zehn bis an den Rand seiner Zone. Spieler fünf sichert schräg dahinter ab. Spieler zehn schaut, ob es eine Lücke für einen Steilpass gibt.",
      mv("r4", [45.5, 29]), mv("r5", [49.5, 21]), mv("n9", [52.5, 43]), bl("n10", [50, 22], after=True)),
-   S("Pass abgefangen", "Neon zehn spielt den Steilpass, aber Rot fünf steht genau richtig und fängt den Ball ab.",
+   S("Pass abgefangen", "Spieler zehn spielt den Steilpass, aber Spieler fünf steht genau richtig und fängt den Ball ab.",
      ps("b1", [50.1, 21.6])),
-   S("Zur Stange: Punkt", "Jetzt ist Team Rot am Ball. Rot fünf spielt sofort flach durch die Neon-Kette an die Stange unten rechts, und das gibt einen Punkt für Team Rot. Danach bekommt Team Neon einen neuen Ball vom Trainer.",
+   S("Zur Stange: Punkt", "Jetzt ist Team Rot am Ball. Spieler fünf spielt sofort flach durch die Neon-Kette an die Stange unten rechts, und das gibt einen Punkt für Team Rot. Danach bekommt Team Neon einen neuen Ball vom Trainer.",
      ps("b1", [60.8, 50.2]))],
   "dims": dims(34, 66, 5, 55, "23 m", "37 m", rx=73)},
  "versions": [
   V("Coaching-Punkt", "Jetzt zum Coaching-Punkt: Eng zusammen bleiben.", "Eng zusammen",
     "Stehen die Verteidiger zu weit auseinander, entsteht eine Lücke. Die Angreifer sehen sie und spielen den Ball hindurch. Deshalb bleibt die Kette eng zusammen und schiebt gemeinsam.",
     sp(r2=(35.5, 20.5), r4=(44, 22), r5=(56, 21), r3=(64.5, 22), n10=(45.5, 40.5)), [B("b1", 46.1, 41.1)] + ERSATZ,
-    [S("Die Lücke sehen", "Rot vier und Rot fünf stehen zu weit auseinander. Neon zehn schaut hoch und sieht die Lücke zwischen den beiden.",
+    [S("Die Lücke sehen", "Spieler vier und Spieler fünf stehen zu weit auseinander. Spieler zehn schaut hoch und sieht die Lücke zwischen den beiden.",
        bl("n10", [50, 22])),
-     S("Durch die Lücke: Punkt", "Neon zehn spielt flach durch die Lücke ins Minitor, und das gibt zwei Punkte für Team Neon. Darum: eng zusammen bleiben!",
+     S("Durch die Lücke: Punkt", "Spieler zehn spielt flach durch die Lücke ins Minitor, und das gibt zwei Punkte für Team Neon. Darum: eng zusammen bleiben!",
        ps("b1", [50, 5.8]))]),
   V("Steigerung", "Und jetzt die Steigerung: Ein Verteidiger darf in die andere Zone.", "Hoch pressen",
     "Jetzt darf immer ein Verteidiger in die Zone der Angreifer laufen und pressen. Die anderen drei sichern dahinter ab. Ein Ballgewinn weit vorn bringt schnell Punkte, aber wer zu früh rausläuft, öffnet eine Lücke.",
     sp(), [B("b1", 63.6, 38.1)] + ERSATZ,
-    [S("Schlechte Ballannahme", "Neon sieben spielt zu Neon neun. Der Ball springt ihm vom Fuß. Sofort sprintet Rot fünf in die Zone von Neon und presst, Rot vier und Rot drei schieben nach innen und sichern ab.",
+    [S("Schlechte Ballannahme", "Spieler sieben spielt zu Spieler neun. Der Ball springt ihm vom Fuß. Sofort sprintet Spieler fünf in die Zone von Neon und presst, Spieler vier und Spieler drei schieben nach innen und sichern ab.",
        ps("b1", [55.1, 41.1]), ps("b1", [52.5, 36.5], after=True), mv("r5", [52, 36], delay=0.8), mv("r4", [48.5, 24], delay=0.8), mv("r3", [58, 22], delay=0.8)),
-     S("Ball erobert: Punkt", "Rot fünf erobert den Ball, dribbelt an Neon neun vorbei und schießt flach ins untere Minitor, und das gibt zwei Punkte für Team Rot. Danach bekommt Team Neon einen neuen Ball vom Trainer.",
+     S("Ball erobert: Punkt", "Spieler fünf erobert den Ball, dribbelt an Spieler neun vorbei und schießt flach ins untere Minitor, und das gibt zwei Punkte für Team Rot. Danach bekommt Team Neon einen neuen Ball vom Trainer.",
        dr("r5", "b1", [49.5, 47]), ps("b1", [50, 54.2], after=True))])]}
 json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)

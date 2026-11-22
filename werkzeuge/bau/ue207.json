@@ -220,7 +220,7 @@
   "steps": [
    {
     "label": "Hürde und Leiter",
-    "say": "Auf Pfiff starten Neon vier und Rot elf gleichzeitig. Beide machen schnelle Schritte über die Hürde und laufen dann mit kleinen, schnellen Schritten durch die Leiter.",
+    "say": "Auf Pfiff starten Spieler vier und Spieler elf gleichzeitig. Beide machen schnelle Schritte über die Hürde und laufen dann mit kleinen, schnellen Schritten durch die Leiter.",
     "moves": [
      {
       "who": "n4",
@@ -301,7 +301,7 @@
    },
    {
     "label": "Orange: Punkt",
-    "say": "Der Trainer wirft das orange Leibchen. Beide sprinten nach links durch das orange Tor. Neon vier ist schneller und schiebt sich vor Rot elf, und das gibt einen Punkt für Team Neon. Dann stellen sich beide hinten an, und Neon fünf und Rot neun starten.",
+    "say": "Der Trainer wirft das orange Leibchen. Beide sprinten nach links durch das orange Tor. Spieler vier ist schneller und schiebt sich vor Spieler elf, und das gibt einen Punkt für Team Neon. Dann stellen sich beide hinten an, und Spieler fünf und Spieler neun starten.",
     "moves": [
      {
       "who": "n4",
@@ -427,7 +427,7 @@
     "steps": [
      {
       "label": "Gelb: früh davor",
-      "say": "Der Trainer wirft das gelbe Leibchen. Rot elf steht näher am gelben Tor, sprintet los und schiebt sich sofort vor Neon vier.",
+      "say": "Der Trainer wirft das gelbe Leibchen. Spieler elf steht näher am gelben Tor, sprintet los und schiebt sich sofort vor Spieler vier.",
       "moves": [
        {
         "who": "r11",
@@ -450,7 +450,7 @@
      },
      {
       "label": "Durch das Tor: Punkt",
-      "say": "Neon vier kommt nicht mehr vorbei. Rot elf ist zuerst durch das gelbe Tor, und das gibt einen Punkt für Team Rot.",
+      "say": "Spieler vier kommt nicht mehr vorbei. Spieler elf ist zuerst durch das gelbe Tor, und das gibt einen Punkt für Team Rot.",
       "moves": [
        {
         "who": "r11",
@@ -560,7 +560,7 @@
     "steps": [
      {
       "label": "Orange fällt",
-      "say": "Der Trainer wirft das orange Leibchen. Rot elf läuft zuerst nach links, falsch! Neon vier denkt mit und sprintet nach rechts.",
+      "say": "Der Trainer wirft das orange Leibchen. Spieler elf läuft zuerst nach links, falsch! Spieler vier denkt mit und sprintet nach rechts.",
       "moves": [
        {
         "who": "r11",
@@ -582,7 +582,7 @@
      },
      {
       "label": "Gelbes Tor: Punkt",
-      "say": "Rot elf dreht um, ist aber zu spät. Neon vier ist zuerst durch das gelbe Tor, und das gibt einen Punkt für Team Neon.",
+      "say": "Spieler elf dreht um, ist aber zu spät. Spieler vier ist zuerst durch das gelbe Tor, und das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "n4",

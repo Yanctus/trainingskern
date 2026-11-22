@@ -202,7 +202,7 @@
   "steps": [
    {
     "label": "Vier Pässe",
-    "say": "Unten spielt Team Rot mit dem Springer fünf gegen vier. Der Springer kommt nach unten. Rot drei passt zu Rot fünf, Rot fünf zum Springer, der Springer zu Rot sechs. Gleichzeitig schiebt Team Neon eng mit zum Ball.",
+    "say": "Unten spielt Team Rot mit dem Springer fünf gegen vier. Der Springer kommt nach unten. Spieler drei passt zu Spieler fünf, Spieler fünf zum Springer, der Springer zu Spieler sechs. Gleichzeitig schiebt Team Neon eng mit zum Ball.",
     "moves": [
      {
       "who": "f",
@@ -269,7 +269,7 @@
    },
    {
     "label": "Der lange Ball",
-    "say": "Rot sechs passt zu Rot zwei, das ist der vierte Pass. Neon sieben kommt zu spät. Rot zwei spielt den Ball weit nach oben zu Rot zehn.",
+    "say": "Spieler sechs passt zu Spieler zwei, das ist der vierte Pass. Spieler sieben kommt zu spät. Spieler zwei spielt den Ball weit nach oben zu Spieler zehn.",
     "moves": [
      {
       "who": "b1",
@@ -301,7 +301,7 @@
    },
    {
     "label": "Seitenwechsel: Punkt",
-    "say": "Der Ball ist oben angekommen, und das gibt einen Punkt für Team Rot. Jetzt laufen der Springer und Rot sechs nach oben. Auch Team Neon rückt schnell nach oben und verteidigt dort, wieder fünf gegen vier.",
+    "say": "Der Ball ist oben angekommen, und das gibt einen Punkt für Team Rot. Jetzt laufen der Springer und Spieler sechs nach oben. Auch Team Neon rückt schnell nach oben und verteidigt dort, wieder fünf gegen vier.",
     "moves": [
      {
       "who": "f",
@@ -492,7 +492,7 @@
     "steps": [
      {
       "label": "Genau hinschauen",
-      "say": "Rot fünf passt zu Rot sechs. Neon acht schaut genau hin: Kann Rot sechs den Ball gut annehmen?",
+      "say": "Spieler fünf passt zu Spieler sechs. Spieler acht schaut genau hin: Kann Spieler sechs den Ball gut annehmen?",
       "moves": [
        {
         "who": "b1",
@@ -514,7 +514,7 @@
      },
      {
       "label": "Pressen",
-      "say": "Der Ball springt Rot sechs vom Fuß. Das ist das Zeichen: Neon acht presst sofort. Gleichzeitig schieben Neon vier und Neon sieben nach und sichern ab.",
+      "say": "Der Ball springt Spieler sechs vom Fuß. Das ist das Zeichen: Spieler acht presst sofort. Gleichzeitig schieben Spieler vier und Spieler sieben nach und sichern ab.",
       "moves": [
        {
         "who": "b1",
@@ -555,7 +555,7 @@
      },
      {
       "label": "Ball erobert",
-      "say": "Neon acht erobert den Ball und spielt sofort zum Springer. Jetzt braucht Team Neon fünf Pässe in Folge, und das gibt einen Punkt für Team Neon.",
+      "say": "Spieler acht erobert den Ball und spielt sofort zum Springer. Jetzt braucht Team Neon fünf Pässe in Folge, und das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "b1",
@@ -689,7 +689,7 @@
     "steps": [
      {
       "label": "Abgefangen",
-      "say": "Rot fünf will zum Springer passen. Neon vier geht dazwischen und fängt den Ball ab.",
+      "say": "Spieler fünf will zum Springer passen. Spieler vier geht dazwischen und fängt den Ball ab.",
       "moves": [
        {
         "who": "n4",
@@ -712,7 +712,7 @@
      },
      {
       "label": "Minitor: Punkt",
-      "say": "Neon vier dribbelt sofort los und schießt ins untere Minitor. Das gibt einen Punkt für Team Neon. Dann bringt der Trainer einen neuen Ball zu Team Rot.",
+      "say": "Spieler vier dribbelt sofort los und schießt ins untere Minitor. Das gibt einen Punkt für Team Neon. Dann bringt der Trainer einen neuen Ball zu Team Rot.",
       "moves": [
        {
         "who": "n4",

@@ -174,7 +174,7 @@
   "steps": [
    {
     "label": "Auf das Zeichen",
-    "say": "Auf das Zeichen des Trainers geht es los, und alle Gruppen spielen gleichzeitig. Rot zehn will das Leibchen von Neon zwei und läuft oben herum. Die Gruppe hält sich an den Händen und dreht sich, damit Neon zwei weit weg bleibt. Rot elf jagt das Leibchen von Neon sieben.",
+    "say": "Auf das Zeichen des Trainers geht es los, und alle Gruppen spielen gleichzeitig. Spieler zehn will das Leibchen von Spieler zwei und läuft oben herum. Die Gruppe hält sich an den Händen und dreht sich, damit Spieler zwei weit weg bleibt. Spieler elf jagt das Leibchen von Spieler sieben.",
     "moves": [
      {
       "who": "r10",
@@ -295,7 +295,7 @@
    },
    {
     "label": "Ansagen und drehen",
-    "say": "Rot zehn dreht um und läuft links herunter. Neon vier steht ihm gegenüber, schaut genau hin und ruft: Rechts herum! Die Gruppe dreht sich, und Neon zwei ist wieder weit weg.",
+    "say": "Spieler zehn dreht um und läuft links herunter. Spieler vier steht ihm gegenüber, schaut genau hin und ruft: Rechts herum! Die Gruppe dreht sich, und Spieler zwei ist wieder weit weg.",
     "moves": [
      {
       "who": "r10",
@@ -416,7 +416,7 @@
    },
    {
     "label": "Gefangen",
-    "say": "Bei der anderen Gruppe ist Rot elf schneller. Er läuft unten herum und zieht Neon sieben das Leibchen aus der Hose. Gefangen! Jetzt ist Neon sieben der neue Fänger, und Rot elf geht mit in die Gruppe.",
+    "say": "Bei der anderen Gruppe ist Spieler elf schneller. Er läuft unten herum und zieht Spieler sieben das Leibchen aus der Hose. Gefangen! Jetzt ist Spieler sieben der neue Fänger, und Spieler elf geht mit in die Gruppe.",
     "moves": [
      {
       "who": "r11",
@@ -505,7 +505,7 @@
     "steps": [
      {
       "label": "Schauen",
-      "say": "Rot zehn läuft unten herum zum Leibchen von Neon zwei. Neon drei schaut genau auf ihn.",
+      "say": "Spieler zehn läuft unten herum zum Leibchen von Spieler zwei. Spieler drei schaut genau auf ihn.",
       "moves": [
        {
         "who": "r10",
@@ -537,7 +537,7 @@
      },
      {
       "label": "Ansagen und drehen",
-      "say": "Neon drei ruft: Links herum! Alle drehen sich sofort zusammen, und Neon zwei bleibt auf der anderen Seite.",
+      "say": "Spieler drei ruft: Links herum! Alle drehen sich sofort zusammen, und Spieler zwei bleibt auf der anderen Seite.",
       "moves": [
        {
         "who": "r10",
@@ -697,7 +697,7 @@
     "steps": [
      {
       "label": "Blocken",
-      "say": "Rot zehn will links vorbei zum Leibchen von Neon zwei. Neon vier und Neon fünf schieben gemeinsam mit und stehen im Weg. Das Paar mit dem Leibchen weicht nach rechts aus. Bei der anderen Gruppe passiert gleichzeitig das Gleiche.",
+      "say": "Spieler zehn will links vorbei zum Leibchen von Spieler zwei. Spieler vier und Spieler fünf schieben gemeinsam mit und stehen im Weg. Das Paar mit dem Leibchen weicht nach rechts aus. Bei der anderen Gruppe passiert gleichzeitig das Gleiche.",
       "moves": [
        {
         "who": "r10",
@@ -791,7 +791,7 @@
      },
      {
       "label": "Kein Durchkommen",
-      "say": "Rot zehn macht einen Haken nach rechts, aber die Blocker schieben sofort mit, und das Paar mit dem Leibchen weicht nach links aus. Nach einer Minute wechseln Blocker und Leibchen-Paar die Rollen.",
+      "say": "Spieler zehn macht einen Haken nach rechts, aber die Blocker schieben sofort mit, und das Paar mit dem Leibchen weicht nach links aus. Nach einer Minute wechseln Blocker und Leibchen-Paar die Rollen.",
       "moves": [
        {
         "who": "r10",

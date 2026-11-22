@@ -271,7 +271,7 @@
   "steps": [
    {
     "label": "Beide dribbeln los",
-    "say": "Neon zehn und Rot neun starten gleichzeitig an gegenüberliegenden Enden und dribbeln durch die Hütchen.",
+    "say": "Spieler zehn und Spieler neun starten gleichzeitig an gegenüberliegenden Enden und dribbeln durch die Hütchen.",
     "moves": [
      {
       "who": "n10",
@@ -519,7 +519,7 @@
    },
    {
     "label": "Wer ist zuerst drin",
-    "say": "Neon zehn ist zuerst im Mittelfeld und wird Angreifer. Rot neun lässt seinen Ball liegen und verteidigt.",
+    "say": "Spieler zehn ist zuerst im Mittelfeld und wird Angreifer. Spieler neun lässt seinen Ball liegen und verteidigt.",
     "moves": [
      {
       "who": "n10",
@@ -581,7 +581,7 @@
    },
    {
     "label": "Eins gegen eins",
-    "say": "Neon zehn dribbelt mit einem Haken an Rot neun vorbei und schießt ins Minitor, und das gibt einen Punkt für Neon.",
+    "say": "Spieler zehn dribbelt mit einem Haken an Spieler neun vorbei und schießt ins Minitor, und das gibt einen Punkt für Neon.",
     "moves": [
      {
       "who": "n10",
@@ -698,7 +698,7 @@
     "steps": [
      {
       "label": "Antäuschen",
-      "say": "Neon acht täuscht mit dem Ball nach unten an. Rot vier geht mit.",
+      "say": "Spieler acht täuscht mit dem Ball nach unten an. Spieler vier geht mit.",
       "moves": [
        {
         "who": "n8",
@@ -722,7 +722,7 @@
      },
      {
       "label": "Haken und weg",
-      "say": "Mit einem kurzen Haken zieht Neon acht nach oben in den freien Raum.",
+      "say": "Mit einem kurzen Haken zieht Spieler acht nach oben in den freien Raum.",
       "moves": [
        {
         "who": "n8",
@@ -747,7 +747,7 @@
      },
      {
       "label": "Genau abschließen",
-      "say": "Neon acht schießt genau ins Minitor, und das gibt einen Punkt für Neon.",
+      "say": "Spieler acht schießt genau ins Minitor, und das gibt einen Punkt für Neon.",
       "moves": [
        {
         "who": "b8",
@@ -825,7 +825,7 @@
     "steps": [
      {
       "label": "Tor im Eins gegen Eins",
-      "say": "Neon zehn schießt ins Minitor, und das gibt einen Punkt für Neon.",
+      "say": "Spieler zehn schießt ins Minitor, und das gibt einen Punkt für Neon.",
       "moves": [
        {
         "who": "b10",
@@ -839,7 +839,7 @@
      },
      {
       "label": "Mitspieler kommt dazu",
-      "say": "Sofort dribbelt Neon acht ins Mittelfeld, und Neon zehn läuft mit nach vorn. Jetzt steht es zwei gegen eins.",
+      "say": "Sofort dribbelt Spieler acht ins Mittelfeld, und Spieler zehn läuft mit nach vorn. Jetzt steht es zwei gegen eins.",
       "moves": [
        {
         "who": "n8",
@@ -891,7 +891,7 @@
      },
      {
       "label": "Extrapunkt",
-      "say": "Neon acht passt quer zu Neon zehn, und der schießt ins andere Minitor. Das gibt einen Extrapunkt für Neon.",
+      "say": "Spieler acht passt quer zu Spieler zehn, und der schießt ins andere Minitor. Das gibt einen Extrapunkt für Neon.",
       "moves": [
        {
         "who": "b8",

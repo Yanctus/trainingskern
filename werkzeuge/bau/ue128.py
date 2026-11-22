@@ -22,9 +22,9 @@ def kette(f, who, wege, first=None, **k):
     return [f(who, wege[0], **(first or {}))] + [f(who, w, after=True) for w in wege[1:]]
 def lauf(who, wege, **k): return kette(lambda w, t, **a: mv(w, t, **a), who, wege, **k)
 def drib(who, ball, wege, **k): return kette(lambda w, t, **a: dr(w, ball, t, **a), who, wege, **k)
-# Neon vier: unten an der Stange vorbei, über die Minihürden nach oben, um die obere Stange herum
+# Spieler vier: unten an der Stange vorbei, über die Minihürden nach oben, um die obere Stange herum
 N_HOCH = [[21.5, 42], [21.5, 16], [24, 8.5], [28.5, 11]]
-# Rot zwei: im Slalom um die drei Dummys nach unten
+# Spieler zwei: im Slalom um die drei Dummys nach unten
 R_RUNTER = [[81, 14], [81.5, 22], [72, 25.5], [64, 27.5], [64, 32.5], [72, 34], [82, 37], [80, 43]]
 
 u = {"title": "Parcours, dann 1 gegen 1", "code": "UE-128", "kind": "Übungsform",
@@ -42,38 +42,38 @@ u = {"title": "Parcours, dann 1 gegen 1", "code": "UE-128", "kind": "Übungsform
  "say_intro": "Parcours, dann eins gegen eins. Erst Tempo und Koordination im Parcours, dann geht es in der Mitte direkt ins Duell.",
  "board": {"lines": LINES, "goals": TORE, "cones": KEGEL, "players": sp(), "balls": BAELLE,
   "steps": [
-   S("Beide durch den Parcours", "Auf Pfiff starten Neon vier und Rot zwei gleichzeitig. Neon vier läuft über die Minihürden nach oben und um die Stange herum, Rot zwei dribbelt im Slalom um die Dummys nach unten.",
+   S("Beide durch den Parcours", "Auf Pfiff starten Spieler vier und Spieler zwei gleichzeitig. Spieler vier läuft über die Minihürden nach oben und um die Stange herum, Spieler zwei dribbelt im Slalom um die Dummys nach unten.",
      *lauf("n4", N_HOCH), *drib("r2", "b2", R_RUNTER, first={"delay": 0.15})),
-   S("Rein ins Duell", "Dann geht es in die Mitte: Rot zwei dribbelt aufs obere Minitor zu, Neon vier sprintet ihm entgegen und stellt sich ihm vor dem Minitor in den Weg.",
+   S("Rein ins Duell", "Dann geht es in die Mitte: Spieler zwei dribbelt aufs obere Minitor zu, Spieler vier sprintet ihm entgegen und stellt sich ihm vor dem Minitor in den Weg.",
      *lauf("n4", [[46, 24], [51, 21]]), *drib("r2", "b2", [[70, 42.5], [62, 40], [59, 28]], first={"delay": 0.15})),
-   S("Abschluss: Punkt", "Rot zwei zieht am Verteidiger vorbei und schießt ins Minitor, und das gibt einen Punkt für Team Rot. Hätte Neon vier den Ball erobert, dürfte er aufs untere Minitor kontern.",
+   S("Abschluss: Punkt", "Spieler zwei zieht am Verteidiger vorbei und schießt ins Minitor, und das gibt einen Punkt für Team Rot. Hätte Spieler vier den Ball erobert, dürfte er aufs untere Minitor kontern.",
      dr("r2", "b2", [56, 18]), ps("b2", OBEN, after=True)),
-   S("Das nächste Paar", "Jetzt starten Neon sechs und Rot neun aus den anderen beiden Ecken: Neon sechs läuft den Parcours nach unten, Rot neun dribbelt nach oben. Ihr Duell geht ums untere Minitor, danach sind Neon fünf und Rot drei dran.",
+   S("Das nächste Paar", "Jetzt starten Spieler sechs und Spieler neun aus den anderen beiden Ecken: Spieler sechs läuft den Parcours nach unten, Spieler neun dribbelt nach oben. Ihr Duell geht ums untere Minitor, danach sind Spieler fünf und Spieler drei dran.",
      *lauf("n6", [[21.5, 17], [21.5, 40]]), *drib("r9", "b9", [[81, 46], [81.5, 38]], first={"delay": 0.15}))],
   "dims": dims(12, 84, 6, 54, "27 m", "18 m", rx=97)},
  "versions": [
   V("Coaching-Punkt", "Jetzt zum Coaching-Punkt: Im Duell zentral andribbeln.", "Zentral andribbeln",
     "Wer an der Seite andribbelt, wird vom Verteidiger leicht nach außen gedrängt. Zieht der Angreifer zur Mitte, bleiben ihm beide Seiten offen, und der Verteidiger muss sich festlegen. Dann mit einer Finte oder einem schnellen Richtungswechsel auf die andere Seite gehen.",
     sp(n4=(46, 24), r2=(62, 40)), [B("b2", 62.6, 40.6), B("b9", 75.4, 53.2)] + ERSATZ,
-    [S("Zur Mitte ziehen", "Rot zwei dribbelt nicht an der Seite entlang, sondern zieht in die Mitte. Neon vier muss sich festlegen und schiebt nach rechts.",
+    [S("Zur Mitte ziehen", "Spieler zwei dribbelt nicht an der Seite entlang, sondern zieht in die Mitte. Spieler vier muss sich festlegen und schiebt nach rechts.",
        dr("r2", "b2", [54, 32]), mv("n4", [54, 27], after=True)),
-     S("Andere Seite, Punkt", "Rot zwei geht mit einem schnellen Richtungswechsel links vorbei und schießt ins Minitor, und das gibt einen Punkt für Team Rot. Dann startet das nächste Paar.",
+     S("Andere Seite, Punkt", "Spieler zwei geht mit einem schnellen Richtungswechsel links vorbei und schießt ins Minitor, und das gibt einen Punkt für Team Rot. Dann startet das nächste Paar.",
        dr("r2", "b2", [47, 28]), dr("r2", "b2", [46, 18], after=True), ps("b2", OBEN, after=True))]),
   V("Coaching-Punkt", "Der zweite Coaching-Punkt: Geduldig verteidigen und nach außen drängen.", "Geduldig verteidigen",
     "Der Verteidiger springt nicht blind in den Zweikampf. Er steht tief und seitlich, lenkt den Angreifer an die Seite weg vom Tor und wartet auf einen zu weiten Ballkontakt. Dann erobert er den Ball und kontert sofort aufs andere Minitor.",
     sp(n4=(46, 24), r2=(62, 40)), [B("b2", 62.6, 40.6), B("b9", 75.4, 53.2)] + ERSATZ,
-    [S("Nach außen drängen", "Neon vier stellt sich tief und seitlich vor Rot zwei und drängt ihn an die Seite. Rot zwei dribbelt an der Linie entlang nach oben.",
+    [S("Nach außen drängen", "Spieler vier stellt sich tief und seitlich vor Spieler zwei und drängt ihn an die Seite. Spieler zwei dribbelt an der Linie entlang nach oben.",
        mv("n4", [54, 26]), dr("r2", "b2", [59, 30], delay=0.15), dr("r2", "b2", [59.5, 23], after=True)),
-     S("Ball erobern, Konter: Punkt", "Rot zwei legt sich den Ball zu weit vor. Neon vier erobert ihn, kontert sofort und schießt ins untere Minitor, und das gibt einen Punkt für Team Neon. Dann startet das nächste Paar.",
+     S("Ball erobern, Konter: Punkt", "Spieler zwei legt sich den Ball zu weit vor. Spieler vier erobert ihn, kontert sofort und schießt ins untere Minitor, und das gibt einen Punkt für Team Neon. Dann startet das nächste Paar.",
        ps("b2", [58.6, 15.6]), mv("n4", [58, 15.4], after=True), dr("n4", "b2", [50, 26], after=True), dr("n4", "b2", [48, 40], after=True), ps("b2", UNTEN, after=True))]),
   V("Steigerung", "Und jetzt die Steigerung: Zwei Duelle gleichzeitig.", "Zwei Duelle gleichzeitig",
     "Jetzt starten alle vier zugleich, jeder läuft nur die halbe Strecke durch seinen Parcours. In der Mitte laufen zwei Duelle auf einmal, eins aufs obere und eins aufs untere Minitor. Es gibt weniger Platz und weniger Pause, und die Verteidiger müssen sofort den Raum zumachen.",
     sp(n4=(15, 24), n6=(15, 40), r2=(82, 38), r9=(82, 22)), [B("b2", 82.6, 38.6), B("b9", 82.6, 22.6)] + ERSATZ,
-    [S("Alle vier starten", "Alle vier starten gleichzeitig. Neon vier läuft nach oben, Neon sechs nach unten, Rot zwei dribbelt unten um den Dummy, Rot neun oben.",
+    [S("Alle vier starten", "Alle vier starten gleichzeitig. Spieler vier läuft nach oben, Spieler sechs nach unten, Spieler zwei dribbelt unten um den Dummy, Spieler neun oben.",
        *lauf("n4", [[21.5, 17], [24, 8.5], [28.5, 11], [44, 24]]), *lauf("n6", [[21.5, 42], [23, 50.5], [28.5, 48.5], [46, 36]]),
        *drib("r2", "b2", [[81, 44], [70, 42.5], [62, 40]], first={"delay": 0.15}), *drib("r9", "b9", [[80, 16], [62, 20]], first={"delay": 0.15})),
-     S("Zwei Duelle auf einmal", "Rot zwei greift das obere Minitor an, Rot neun das untere. Neon vier und Neon sechs machen sofort den Raum vor ihrem Tor zu.",
+     S("Zwei Duelle auf einmal", "Spieler zwei greift das obere Minitor an, Spieler neun das untere. Spieler vier und Spieler sechs machen sofort den Raum vor ihrem Tor zu.",
        mv("n4", [51, 21]), mv("n6", [47, 40]), dr("r2", "b2", [59, 28], delay=0.15), dr("r9", "b9", [53, 26], delay=0.15), dr("r9", "b9", [52, 38], after=True)),
-     S("Zwei Abschlüsse: Punkte", "Beide Roten setzen sich durch und treffen, und das gibt zwei Punkte für Team Rot. Dann starten Neon fünf, Neon acht, Rot drei und Rot sieben.",
+     S("Zwei Abschlüsse: Punkte", "Beide Roten setzen sich durch und treffen, und das gibt zwei Punkte für Team Rot. Dann starten Spieler fünf, Spieler acht, Spieler drei und Spieler sieben.",
        dr("r2", "b2", [56, 18]), ps("b2", OBEN, after=True), dr("r9", "b9", [55, 45], delay=0.15), ps("b9", UNTEN, after=True))])]}
 json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)

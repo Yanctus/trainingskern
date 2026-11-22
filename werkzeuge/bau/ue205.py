@@ -3,9 +3,9 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # eine Zone von 5 Yards (y 25-35, gestrichelt). Pink (vier Verteidiger) -> Team Neon (11, 4, 8, 7 wie im PDF), dunkel (sieben
 # Spieler am Ball) -> Team Rot, neu nummeriert (im PDF doppelt mit Pink): Rot 11 -> 12, Rot 7 -> 10, sonst wie im PDF (2, 3, 5,
 # 6, 9). Ausrichtung wie im PDF: vier Rote unten, drei oben, Trainer rechts. Positionen auf Abstand gesetzt (3D), Passfolge der
-# Grundform vereinfacht (drei Pässe unten, Neon sieben drückt, Chip nach oben), Spielidee wie im PDF und Video.
+# Grundform vereinfacht (drei Pässe unten, Spieler sieben drückt, Chip nach oben), Spielidee wie im PDF und Video.
 # Kein Punktespiel im Original (Technikübung): Der letzte Schritt sagt das Ziel und wie es weitergeht.
-# Sichtkegel: PDF "Stay on the half turn to see the ball & the space behind" -> in der Grundform bl() von Neon acht nach oben
+# Sichtkegel: PDF "Stay on the half turn to see the ball & the space behind" -> in der Grundform bl() von Spieler acht nach oben
 # in den Raum hinter der Kette, bevor der Wechsel kommt (im Video kein Kegel eingezeichnet, Richtung aus dem Sinn).
 T = P("T", "c", 82, 40, "T")
 POS = {"n11": (30, 30), "n4": (41.5, 30), "n8": (58.5, 30), "n7": (70, 30),
@@ -32,27 +32,27 @@ u = {"title": "Vier in der Mittelzone", "code": "UE-205", "kind": "Übungsform",
  "board": {"lines": LINES, "goals": [], "cones": ecken(25, 5, 50, 50) + [C(25, 25), C(75, 25), C(25, 35), C(75, 35)], "players": sp(),
   "balls": [B("b1", 27.6, 46.6)] + ERSATZ,
   "steps": [
-   S("Drei Pässe", "Team Rot lässt den Ball unten laufen: Rot drei passt zu Rot fünf, Rot fünf zu Rot sechs, Rot sechs zu Rot zwei. Gleichzeitig schiebt die ganze Kette von Team Neon mit zum Ball.",
+   S("Drei Pässe", "Team Rot lässt den Ball unten laufen: Spieler drei passt zu Spieler fünf, Spieler fünf zu Spieler sechs, Spieler sechs zu Spieler zwei. Gleichzeitig schiebt die ganze Kette von Team Neon mit zum Ball.",
      ps("b1", [41.6, 52.6]), ps("b1", [58.6, 53.6], after=True), ps("b1", [73.6, 47.6], after=True),
      mv("n11", [37, 30], delay=0.5), mv("n4", [47, 30], delay=0.5), mv("n8", [57, 30], delay=0.5), mv("n7", [66, 31], delay=0.5)),
-   S("Einer drückt", "Nach drei Pässen drückt Neon sieben langsam auf Rot zwei. Neon acht, vier und elf schieben nach. Neon acht steht halb offen und schaut auch in den Raum hinter sich.",
+   S("Einer drückt", "Nach drei Pässen drückt Spieler sieben langsam auf Spieler zwei. Spieler acht, vier und elf schieben nach. Spieler acht steht halb offen und schaut auch in den Raum hinter sich.",
      mv("n7", [67, 41]), mv("n8", [60, 31], delay=0.2), mv("n4", [50, 30], delay=0.2), mv("n11", [40, 30], delay=0.2), bl("n8", [63, 14], after=True)),
-   S("Wechsel", "Der Trainer ruft: Wechsel! Rot zwei chippt den Ball hoch zu Rot zehn. Die Kette dreht sich schnell um und steht wieder eng. Geschafft, jetzt kreist der Ball oben, und nach drei Pässen drückt wieder einer.",
+   S("Wechsel", "Der Trainer ruft: Wechsel! Spieler zwei chippt den Ball hoch zu Spieler zehn. Die Kette dreht sich schnell um und steht wieder eng. Geschafft, jetzt kreist der Ball oben, und nach drei Pässen drückt wieder einer.",
      ps("b1", [70.6, 12.6]), mv("n7", [68, 28], delay=0.4), mv("n8", [59, 28], delay=0.4), mv("n4", [49, 28], delay=0.4), mv("n11", [39, 28], delay=0.4))],
   "dims": dims(25, 75, 5, 55, "23 m", "23 m", rx=91)},
  "versions": [
   V("Coaching-Punkt", "Jetzt zum Coaching-Punkt: Wechsel und pressen.", "Wechsel und pressen",
     "Ruft der Trainer „Wechsel und pressen“, läuft der nächste Verteidiger den Annehmenden sofort an. Die anderen drei drehen sich um, laufen zurück in die Zone und sichern hinter ihm ab.",
     sp(), [B("b1", 41.6, 52.6)] + ERSATZ,
-    [S("Wechsel und pressen", "Der Trainer ruft: Wechsel und pressen! Rot fünf chippt den Ball hoch zu Rot zwölf.",
+    [S("Wechsel und pressen", "Der Trainer ruft: Wechsel und pressen! Spieler fünf chippt den Ball hoch zu Spieler zwölf.",
        ps("b1", [30.6, 12.6])),
-     S("Sofort pressen", "Neon elf ist am nächsten, dreht sich um und presst Rot zwölf sofort. Gleichzeitig drehen sich Neon vier, acht und sieben um und schieben nach links.",
+     S("Sofort pressen", "Spieler elf ist am nächsten, dreht sich um und presst Spieler zwölf sofort. Gleichzeitig drehen sich Spieler vier, acht und sieben um und schieben nach links.",
        mv("n11", [31, 20]), mv("n4", [39, 28], delay=0.2), mv("n8", [49, 28], delay=0.2), mv("n7", [59, 28], delay=0.2))]),
   V("Coaching-Punkt", "Der zweite Coaching-Punkt: Die Kette schiebt hinter dem Pressing mit.", "Die Kette schiebt mit",
     "Drückt ein Verteidiger auf den Ball, schieben die anderen drei gemeinsam zur Seite. Sie bleiben eng hinter ihm, machen die Lücken zu, und der Ball kommt nicht durch die Zone.",
     sp(), [B("b1", 58.6, 53.6)] + ERSATZ,
-    [S("Einer drückt", "Rot sechs hat den Ball. Neon acht drückt auf ihn. Gleichzeitig schieben Neon vier, sieben und elf eng hinter ihm zusammen.",
+    [S("Einer drückt", "Spieler sechs hat den Ball. Spieler acht drückt auf ihn. Gleichzeitig schieben Spieler vier, sieben und elf eng hinter ihm zusammen.",
        mv("n8", [58, 43]), mv("n4", [49, 33], delay=0.2), mv("n7", [67, 33], delay=0.2), mv("n11", [39, 31], delay=0.2)),
-     S("Kein Weg durch", "Rot sechs findet keine Lücke nach oben und spielt zurück zu Rot fünf.",
+     S("Kein Weg durch", "Spieler sechs findet keine Lücke nach oben und spielt zurück zu Spieler fünf.",
        ps("b1", [41.6, 52.6]))])]}
 json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)

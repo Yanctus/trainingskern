@@ -3,7 +3,7 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # an jedem Ende ein Jugendtor mit Torwart. Pink (im PDF ohne Nummern, im Video 4, 8, 7, 11, 10) -> Neon mit den Video-Nummern,
 # greift nach oben an. Blau (im Video türkis 4, 2, 3, 5, 6) -> Rot; Blau 4 -> Rot 9 (im Video doppelt). Torhüter im PDF grün
 # (neutral) -> k1 oben, k2 unten (team t, TW) wie bei UE-101. Positionen auf ein Spaltenraster gesetzt (3D-Abstand), Spielidee wie im PDF. Ein Trainer statt zwei.
-# Steigerung: Rot zwei steht als Anspieler außerhalb des Feldes (rechts), zwei Kontakte, dann Pass zurück ins Feld.
+# Steigerung: Spieler zwei steht als Anspieler außerhalb des Feldes (rechts), zwei Kontakte, dann Pass zurück ins Feld.
 # Kein Sichtkegel im Original (Text, Ton und Video geprüft).
 T = P("T", "c", 78, 12, "T")
 POS = {"n4": (41.7, 12), "n8": (58.3, 7), "n7": (58.3, 23), "n11": (33.4, 27), "n10": (50, 37.9),
@@ -30,30 +30,30 @@ u = {"title": "Sechs Sekunden Gegenpressing", "code": "UE-174", "kind": "Spielfo
  "say_intro": "Sechs Sekunden Gegenpressing. Fünf gegen fünf, und wer den Ball verliert, will ihn in sechs Sekunden zurück.",
  "board": {"lines": LINES, "goals": TORE, "cones": [], "players": sp(), "balls": [B("b1", 42.3, 12.6)] + ERSATZ,
   "steps": [
-   S("Fünf Pässe", "Team Neon hat den Ball und braucht fünf Pässe, dann darf es aufs Tor schießen. Neon vier spielt zu Neon acht, der weiter zu Neon sieben.",
+   S("Fünf Pässe", "Team Neon hat den Ball und braucht fünf Pässe, dann darf es aufs Tor schießen. Spieler vier spielt zu Spieler acht, der weiter zu Spieler sieben.",
      ps("b1", [58.9, 7.6]), ps("b1", [58.9, 23.6], after=True)),
-   S("Abgefangen", "Neon sieben will zu Neon zehn passen, aber Rot neun fängt den Ball ab und spielt sofort zu Rot fünf.",
+   S("Abgefangen", "Spieler sieben will zu Spieler zehn passen, aber Spieler neun fängt den Ball ab und spielt sofort zu Spieler fünf.",
      mv("r9", [55.8, 27.5]), ps("b1", [56.4, 28.1]), ps("b1", [58.9, 43.6], after=True)),
-   S("Sechs Sekunden", "Ballverlust! Jetzt hat Team Neon sechs Sekunden. Neon zehn, Neon sieben und Neon elf sprinten gleichzeitig los und machen Rot fünf eng.",
+   S("Sechs Sekunden", "Ballverlust! Jetzt hat Team Neon sechs Sekunden. Spieler zehn, Spieler sieben und Spieler elf sprinten gleichzeitig los und machen Spieler fünf eng.",
      mv("n10", [54, 45]), mv("n7", [63.5, 38]), mv("n11", [50, 47])),
-   S("Zurückerobert: Punkt", "Neon zehn erobert den Ball nach vier Sekunden zurück, und das gibt einen Punkt für Team Neon. Jetzt muss Team Rot sofort pressen und hat selbst sechs Sekunden.",
+   S("Zurückerobert: Punkt", "Spieler zehn erobert den Ball nach vier Sekunden zurück, und das gibt einen Punkt für Team Neon. Jetzt muss Team Rot sofort pressen und hat selbst sechs Sekunden.",
      mv("n10", [57.5, 44.5]), dr("n10", "b1", [53, 36], after=True))],
   "dims": dims(32.1, 67.9, 5, 55, "23 m", "32 m", rx=88)},
  "versions": [
   V("Coaching-Punkt", "Jetzt zum Coaching-Punkt: Gemeinsam pressen.", "Gemeinsam pressen",
     "Nach dem Ballverlust pressen alle zusammen. Einer geht auf den Ball, die anderen stellen die Passwege zu. So muss der Gegner unter Druck passen, und der Ball ist schnell wieder da.",
     sp(), [B("b1", 50.6, 22.9)] + ERSATZ,
-    [S("Alle zusammen", "Rot neun hat gerade den Ball erobert. Sofort laufen Neon zehn, Neon sieben und Neon vier gleichzeitig los. Neon sieben stellt den Pass zu Rot zwei zu.",
+    [S("Alle zusammen", "Spieler neun hat gerade den Ball erobert. Sofort laufen Spieler zehn, Spieler sieben und Spieler vier gleichzeitig los. Spieler sieben stellt den Pass zu Spieler zwei zu.",
        mv("n10", [52.5, 30]), mv("n7", [61.5, 27]), mv("n4", [46, 17])),
-     S("Abgefangen: Punkt", "Rot neun muss unter Druck schnell passen. Neon elf fängt den Pass zu Rot drei ab, und das gibt einen Punkt für Team Neon.",
+     S("Abgefangen: Punkt", "Spieler neun muss unter Druck schnell passen. Spieler elf fängt den Pass zu Spieler drei ab, und das gibt einen Punkt für Team Neon.",
        mv("n11", [44.3, 29.4]), ps("b1", [44.9, 30], delay=0.3))]),
   V("Steigerung", "Und jetzt die Steigerung: Ein Anspieler draußen.", "Anspieler draußen",
-    "Rot zwei steht jetzt außerhalb des Feldes als Anspieler. Er darf den Ball zweimal berühren und muss dann zurück ins Feld passen. Team Neon muss noch schneller pressen und diesen Pass verhindern.",
+    "Spieler zwei steht jetzt außerhalb des Feldes als Anspieler. Er darf den Ball zweimal berühren und muss dann zurück ins Feld passen. Team Neon muss noch schneller pressen und diesen Pass verhindern.",
     sp(r2=(73, 33)), [B("b1", 58.9, 23.6)] + ERSATZ,
-    [S("Abgefangen", "Neon sieben will zu Neon zehn passen, aber Rot neun fängt den Ball ab.",
+    [S("Abgefangen", "Spieler sieben will zu Spieler zehn passen, aber Spieler neun fängt den Ball ab.",
        mv("r9", [55.8, 27.5]), ps("b1", [56.4, 28.1])),
-     S("Raus zum Anspieler", "Rot neun spielt sofort raus zu Rot zwei. Neon zehn sprintet los und stellt den Pass zurück ins Feld zu.",
+     S("Raus zum Anspieler", "Spieler neun spielt sofort raus zu Spieler zwei. Spieler zehn sprintet los und stellt den Pass zurück ins Feld zu.",
        ps("b1", [73.6, 33.6]), mv("n10", [62.4, 40.2], delay=0.2)),
-     S("Abgefangen: Punkt", "Rot zwei passt nach zwei Kontakten zu Rot fünf, aber Neon zehn fängt den Ball ab. Das gibt einen Punkt für Team Neon, und jetzt presst Team Rot.",
+     S("Abgefangen: Punkt", "Spieler zwei passt nach zwei Kontakten zu Spieler fünf, aber Spieler zehn fängt den Ball ab. Das gibt einen Punkt für Team Neon, und jetzt presst Team Rot.",
        ps("b1", [63, 40.8]))])]}
 json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)

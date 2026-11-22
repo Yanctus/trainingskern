@@ -194,7 +194,7 @@
   "steps": [
    {
     "label": "Zum Verteidiger",
-    "say": "Team Neon spielt nach oben. Der Torwart passt nach rechts zu Neon vier, und Rot zehn läuft ihn sofort an.",
+    "say": "Team Neon spielt nach oben. Der Torwart passt nach rechts zu Spieler vier, und Spieler zehn läuft ihn sofort an.",
     "moves": [
      {
       "who": "b1",
@@ -217,7 +217,7 @@
    },
    {
     "label": "Zurück zum Torwart",
-    "say": "Neon vier spielt zurück. Der Torwart geht ein Stück nach rechts und nimmt den Ball an.",
+    "say": "Spieler vier spielt zurück. Der Torwart geht ein Stück nach rechts und nimmt den Ball an.",
     "moves": [
      {
       "who": "n1",
@@ -240,7 +240,7 @@
    },
    {
     "label": "In die Lücke",
-    "say": "Rot zehn ist jetzt weit rechts. Der Torwart spielt flach durch die Lücke zu Neon sechs.",
+    "say": "Spieler zehn ist jetzt weit rechts. Der Torwart spielt flach durch die Lücke zu Spieler sechs.",
     "moves": [
      {
       "who": "b1",
@@ -254,7 +254,7 @@
    },
    {
     "label": "Fünf startet",
-    "say": "Neon fünf startet nach vorn. Neon sechs spielt ihm den Ball in den Lauf.",
+    "say": "Spieler fünf startet nach vorn. Spieler sechs spielt ihm den Ball in den Lauf.",
     "moves": [
      {
       "who": "n5",
@@ -286,7 +286,7 @@
    },
    {
     "label": "Minitor: Punkt",
-    "say": "Neon fünf dribbelt in die letzte Zone und trifft ins linke Minitor, und das gibt einen Punkt für Team Neon. Holt Team Rot den Ball und dribbelt in die Endzone, gibt das einen Punkt für Team Rot. Danach beginnt der Torwart mit einem neuen Ball vom Trainer.",
+    "say": "Spieler fünf dribbelt in die letzte Zone und trifft ins linke Minitor, und das gibt einen Punkt für Team Neon. Holt Team Rot den Ball und dribbelt in die Endzone, gibt das einen Punkt für Team Rot. Danach beginnt der Torwart mit einem neuen Ball vom Trainer.",
     "moves": [
      {
       "who": "n5",
@@ -411,7 +411,7 @@
     "steps": [
      {
       "label": "Zu Vier schauen",
-      "say": "Der Torwart schaut zu Neon vier und dreht die Hüfte dorthin. Rot zehn glaubt das und läuft zu Neon vier.",
+      "say": "Der Torwart schaut zu Spieler vier und dreht die Hüfte dorthin. Spieler zehn glaubt das und läuft zu Spieler vier.",
       "moves": [
        {
         "who": "n1",
@@ -434,7 +434,7 @@
      },
      {
       "label": "Doch in die Mitte",
-      "say": "Doch der Torwart spielt flach in die Mitte zu Neon sechs. Neon vier startet nach vorn.",
+      "say": "Doch der Torwart spielt flach in die Mitte zu Spieler sechs. Spieler vier startet nach vorn.",
       "moves": [
        {
         "who": "b1",
@@ -457,7 +457,7 @@
      },
      {
       "label": "Minitor: Punkt",
-      "say": "Neon sechs spielt zu Neon vier. Der dribbelt hoch und trifft ins rechte Minitor, und das gibt einen Punkt für Team Neon.",
+      "say": "Spieler sechs spielt zu Spieler vier. Der dribbelt hoch und trifft ins rechte Minitor, und das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "b1",
@@ -575,7 +575,7 @@
     "steps": [
      {
       "label": "Ball erobert",
-      "say": "Neon fünf will zu Neon sechs passen. Rot neun läuft in den Pass und erobert den Ball.",
+      "say": "Spieler fünf will zu Spieler sechs passen. Spieler neun läuft in den Pass und erobert den Ball.",
       "moves": [
        {
         "who": "r9",
@@ -598,7 +598,7 @@
      },
      {
       "label": "Springer hilft Rot",
-      "say": "Jetzt greift Team Rot die unteren Tore an, und der Springer spielt mit Rot. Rot neun passt zum Springer, Rot zehn startet nach unten.",
+      "say": "Jetzt greift Team Rot die unteren Tore an, und der Springer spielt mit Rot. Spieler neun passt zum Springer, Spieler zehn startet nach unten.",
       "moves": [
        {
         "who": "b1",
@@ -630,7 +630,7 @@
      },
      {
       "label": "Unten: Punkt",
-      "say": "Der Springer spielt Rot zehn an, und der trifft ins rechte untere Minitor. Das gibt einen Punkt für Team Rot. Dann spielt der Trainer einen neuen Ball ein.",
+      "say": "Der Springer spielt Spieler zehn an, und der trifft ins rechte untere Minitor. Das gibt einen Punkt für Team Rot. Dann spielt der Trainer einen neuen Ball ein.",
       "moves": [
        {
         "who": "b1",

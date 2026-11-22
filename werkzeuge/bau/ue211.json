@@ -187,7 +187,7 @@
   "steps": [
    {
     "label": "Anspiel vom Torwart",
-    "say": "Der Torwart unten spielt den Ball zu Neon vier. Jetzt hat Team Neon den Ball und greift nach oben an.",
+    "say": "Der Torwart unten spielt den Ball zu Spieler vier. Jetzt hat Team Neon den Ball und greift nach oben an.",
     "moves": [
      {
       "who": "b1",
@@ -201,7 +201,7 @@
    },
    {
     "label": "Fünf Pässe",
-    "say": "Team Neon passt sich den Ball in der Mitte zu, Team Rot presst. Neon vier spielt zu Neon sieben und bekommt den Ball zurück. So zählt Team Neon bis fünf.",
+    "say": "Team Neon passt sich den Ball in der Mitte zu, Team Rot presst. Spieler vier spielt zu Spieler sieben und bekommt den Ball zurück. So zählt Team Neon bis fünf.",
     "moves": [
      {
       "who": "b1",
@@ -251,7 +251,7 @@
    },
    {
     "label": "Steilpass zum Stürmer",
-    "say": "Nach dem fünften Pass bietet sich Neon neun in der Endzone an. Neon elf spielt den Ball steil zu ihm.",
+    "say": "Nach dem fünften Pass bietet sich Spieler neun in der Endzone an. Spieler elf spielt den Ball steil zu ihm.",
     "moves": [
      {
       "who": "n9",
@@ -274,7 +274,7 @@
    },
    {
     "label": "Abschluss: Punkt",
-    "say": "Neon neun ist allein mit dem Torwart und schießt sicher ins Tor. Das gibt zwei Punkte für Team Neon. Dann spielt der Trainer den nächsten Ball ins Mittelfeld, und das Team, das ihn bekommt, greift an.",
+    "say": "Spieler neun ist allein mit dem Torwart und schießt sicher ins Tor. Das gibt zwei Punkte für Team Neon. Dann spielt der Trainer den nächsten Ball ins Mittelfeld, und das Team, das ihn bekommt, greift an.",
     "moves": [
      {
       "who": "b1",
@@ -410,7 +410,7 @@
     "steps": [
      {
       "label": "Lücke geht auf",
-      "say": "Neon elf hat den Ball. Rot fünf läuft zu Neon vier. Rot sechs bleibt außen. Zwischen den beiden geht eine Lücke auf.",
+      "say": "Spieler elf hat den Ball. Spieler fünf läuft zu Spieler vier. Spieler sechs bleibt außen. Zwischen den beiden geht eine Lücke auf.",
       "moves": [
        {
         "who": "r5",
@@ -433,7 +433,7 @@
      },
      {
       "label": "Durch die Lücke: Punkt",
-      "say": "Neon neun startet, und Neon elf spielt den Ball genau durch die Lücke in seinen Lauf. Neon neun schießt, und das gibt zwei Punkte für Team Neon.",
+      "say": "Spieler neun startet, und Spieler elf spielt den Ball genau durch die Lücke in seinen Lauf. Spieler neun schießt, und das gibt zwei Punkte für Team Neon.",
       "moves": [
        {
         "who": "n9",
@@ -571,7 +571,7 @@
     "steps": [
      {
       "label": "Gefahr erkennen",
-      "say": "Neon elf hat den Ball. Rot zwei schaut sich um und sieht Neon neun allein in der Endzone. Das ist gefährlich.",
+      "say": "Spieler elf hat den Ball. Spieler zwei schaut sich um und sieht Spieler neun allein in der Endzone. Das ist gefährlich.",
       "moves": [
        {
         "who": "r2",
@@ -585,7 +585,7 @@
      },
      {
       "label": "Zurück in die Endzone",
-      "say": "Neon elf spielt steil zu Neon neun. Rot zwei läuft sofort zurück in die Endzone.",
+      "say": "Spieler elf spielt steil zu Spieler neun. Spieler zwei läuft sofort zurück in die Endzone.",
       "moves": [
        {
         "who": "n9",
@@ -617,7 +617,7 @@
      },
      {
       "label": "Schnell schießen: Punkt",
-      "say": "Neon neun nimmt den Ball mit dem ersten Kontakt Richtung Tor mit und schießt, bevor Rot zwei bei ihm ist. Das gibt zwei Punkte für Team Neon.",
+      "say": "Spieler neun nimmt den Ball mit dem ersten Kontakt Richtung Tor mit und schießt, bevor Spieler zwei bei ihm ist. Das gibt zwei Punkte für Team Neon.",
       "moves": [
        {
         "who": "n9",

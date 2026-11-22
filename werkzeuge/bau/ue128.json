@@ -247,7 +247,7 @@
   "steps": [
    {
     "label": "Beide durch den Parcours",
-    "say": "Auf Pfiff starten Neon vier und Rot zwei gleichzeitig. Neon vier läuft über die Minihürden nach oben und um die Stange herum, Rot zwei dribbelt im Slalom um die Dummys nach unten.",
+    "say": "Auf Pfiff starten Spieler vier und Spieler zwei gleichzeitig. Spieler vier läuft über die Minihürden nach oben und um die Stange herum, Spieler zwei dribbelt im Slalom um die Dummys nach unten.",
     "moves": [
      {
       "who": "n4",
@@ -368,7 +368,7 @@
    },
    {
     "label": "Rein ins Duell",
-    "say": "Dann geht es in die Mitte: Rot zwei dribbelt aufs obere Minitor zu, Neon vier sprintet ihm entgegen und stellt sich ihm vor dem Minitor in den Weg.",
+    "say": "Dann geht es in die Mitte: Spieler zwei dribbelt aufs obere Minitor zu, Spieler vier sprintet ihm entgegen und stellt sich ihm vor dem Minitor in den Weg.",
     "moves": [
      {
       "who": "n4",
@@ -421,7 +421,7 @@
    },
    {
     "label": "Abschluss: Punkt",
-    "say": "Rot zwei zieht am Verteidiger vorbei und schießt ins Minitor, und das gibt einen Punkt für Team Rot. Hätte Neon vier den Ball erobert, dürfte er aufs untere Minitor kontern.",
+    "say": "Spieler zwei zieht am Verteidiger vorbei und schießt ins Minitor, und das gibt einen Punkt für Team Rot. Hätte Spieler vier den Ball erobert, dürfte er aufs untere Minitor kontern.",
     "moves": [
      {
       "who": "r2",
@@ -445,7 +445,7 @@
    },
    {
     "label": "Das nächste Paar",
-    "say": "Jetzt starten Neon sechs und Rot neun aus den anderen beiden Ecken: Neon sechs läuft den Parcours nach unten, Rot neun dribbelt nach oben. Ihr Duell geht ums untere Minitor, danach sind Neon fünf und Rot drei dran.",
+    "say": "Jetzt starten Spieler sechs und Spieler neun aus den anderen beiden Ecken: Spieler sechs läuft den Parcours nach unten, Spieler neun dribbelt nach oben. Ihr Duell geht ums untere Minitor, danach sind Spieler fünf und Spieler drei dran.",
     "moves": [
      {
       "who": "n6",
@@ -596,7 +596,7 @@
     "steps": [
      {
       "label": "Zur Mitte ziehen",
-      "say": "Rot zwei dribbelt nicht an der Seite entlang, sondern zieht in die Mitte. Neon vier muss sich festlegen und schiebt nach rechts.",
+      "say": "Spieler zwei dribbelt nicht an der Seite entlang, sondern zieht in die Mitte. Spieler vier muss sich festlegen und schiebt nach rechts.",
       "moves": [
        {
         "who": "r2",
@@ -620,7 +620,7 @@
      },
      {
       "label": "Andere Seite, Punkt",
-      "say": "Rot zwei geht mit einem schnellen Richtungswechsel links vorbei und schießt ins Minitor, und das gibt einen Punkt für Team Rot. Dann startet das nächste Paar.",
+      "say": "Spieler zwei geht mit einem schnellen Richtungswechsel links vorbei und schießt ins Minitor, und das gibt einen Punkt für Team Rot. Dann startet das nächste Paar.",
       "moves": [
        {
         "who": "r2",
@@ -746,7 +746,7 @@
     "steps": [
      {
       "label": "Nach außen drängen",
-      "say": "Neon vier stellt sich tief und seitlich vor Rot zwei und drängt ihn an die Seite. Rot zwei dribbelt an der Linie entlang nach oben.",
+      "say": "Spieler vier stellt sich tief und seitlich vor Spieler zwei und drängt ihn an die Seite. Spieler zwei dribbelt an der Linie entlang nach oben.",
       "moves": [
        {
         "who": "n4",
@@ -780,7 +780,7 @@
      },
      {
       "label": "Ball erobern, Konter: Punkt",
-      "say": "Rot zwei legt sich den Ball zu weit vor. Neon vier erobert ihn, kontert sofort und schießt ins untere Minitor, und das gibt einen Punkt für Team Neon. Dann startet das nächste Paar.",
+      "say": "Spieler zwei legt sich den Ball zu weit vor. Spieler vier erobert ihn, kontert sofort und schießt ins untere Minitor, und das gibt einen Punkt für Team Neon. Dann startet das nächste Paar.",
       "moves": [
        {
         "who": "b2",
@@ -924,7 +924,7 @@
     "steps": [
      {
       "label": "Alle vier starten",
-      "say": "Alle vier starten gleichzeitig. Neon vier läuft nach oben, Neon sechs nach unten, Rot zwei dribbelt unten um den Dummy, Rot neun oben.",
+      "say": "Alle vier starten gleichzeitig. Spieler vier läuft nach oben, Spieler sechs nach unten, Spieler zwei dribbelt unten um den Dummy, Spieler neun oben.",
       "moves": [
        {
         "who": "n4",
@@ -1050,7 +1050,7 @@
      },
      {
       "label": "Zwei Duelle auf einmal",
-      "say": "Rot zwei greift das obere Minitor an, Rot neun das untere. Neon vier und Neon sechs machen sofort den Raum vor ihrem Tor zu.",
+      "say": "Spieler zwei greift das obere Minitor an, Spieler neun das untere. Spieler vier und Spieler sechs machen sofort den Raum vor ihrem Tor zu.",
       "moves": [
        {
         "who": "n4",
@@ -1102,7 +1102,7 @@
      },
      {
       "label": "Zwei Abschlüsse: Punkte",
-      "say": "Beide Roten setzen sich durch und treffen, und das gibt zwei Punkte für Team Rot. Dann starten Neon fünf, Neon acht, Rot drei und Rot sieben.",
+      "say": "Beide Roten setzen sich durch und treffen, und das gibt zwei Punkte für Team Rot. Dann starten Spieler fünf, Spieler acht, Spieler drei und Spieler sieben.",
       "moves": [
        {
         "who": "r2",

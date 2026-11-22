@@ -23,8 +23,8 @@
  "description": "Der Stürmer löst sich von einer Stange und bekommt den Ball nach zwei Pässen aus dem Mittelfeld. Mit dem ersten Kontakt dreht er sich nach vorn und geht ins Eins gegen Eins gegen einen Verteidiger, der nur mitläuft. Dann schließt er gegen den Torwart ab. Nach jedem Abschluss wird gewechselt, und der nächste Stürmer ist dran.",
  "organisation": [
   "Aufbauen: Ein Feld von 36 mal 32 Metern mit einem Jugendtor oben und einem Strafraum. Drei Stangen stehen in einer Reihe in der Mitte, drei Hütchen an der unteren Linie.",
-  "Verteilen: Ein Torwart steht im Tor, Rot vier ist der Verteidiger und läuft nur mit. Neon neun ist der Stürmer an der mittleren Stange. Neon sieben, Neon zehn und Neon elf stehen unten an den Hütchen, der Trainer links mit Bällen.",
-  "Ablauf: Der Trainer spielt zu Neon sieben, der legt nach innen zu Neon zehn ab. Neon zehn spielt nach vorn zu Neon neun. Neon neun dreht sich mit dem ersten Kontakt auf und geht ins Eins gegen Eins.",
+  "Verteilen: Ein Torwart steht im Tor, Spieler vier ist der Verteidiger und läuft nur mit. Spieler neun ist der Stürmer an der mittleren Stange. Spieler sieben, Spieler zehn und Spieler elf stehen unten an den Hütchen, der Trainer links mit Bällen.",
+  "Ablauf: Der Trainer spielt zu Spieler sieben, der legt nach innen zu Spieler zehn ab. Spieler zehn spielt nach vorn zu Spieler neun. Spieler neun dreht sich mit dem ersten Kontakt auf und geht ins Eins gegen Eins.",
   "Wertung und Wechsel: Jeder Treffer gibt einen Punkt für den Stürmer. Danach geht der Stürmer auf ein Hütchen, und ein Mittelfeldspieler wird der neue Stürmer. Mal von links, mal von rechts beginnen."
  ],
  "organisation_show": [
@@ -48,7 +48,7 @@
  ],
  "access": "abo",
  "hidden": false,
- "say_intro": "Stürmer im Eins gegen Eins. Neon neun löst sich von der Stange, dreht auf und schließt gegen den Torwart ab.",
+ "say_intro": "Stürmer im Eins gegen Eins. Spieler neun löst sich von der Stange, dreht auf und schließt gegen den Torwart ab.",
  "board": {
   "lines": [
    {
@@ -188,7 +188,7 @@
   "steps": [
    {
     "label": "Pass nach außen",
-    "say": "Der Trainer spielt den Ball zu Neon sieben.",
+    "say": "Der Trainer spielt den Ball zu Spieler sieben.",
     "moves": [
      {
       "who": "b1",
@@ -202,7 +202,7 @@
    },
    {
     "label": "Nach innen ablegen",
-    "say": "Neon sieben legt den Ball nach innen zu Neon zehn. Gleichzeitig läuft Neon neun erst zum Tor und kommt dann schnell zurück.",
+    "say": "Spieler sieben legt den Ball nach innen zu Spieler zehn. Gleichzeitig läuft Spieler neun erst zum Tor und kommt dann schnell zurück.",
     "moves": [
      {
       "who": "b1",
@@ -233,7 +233,7 @@
    },
    {
     "label": "Aufdrehen",
-    "say": "Neon zehn spielt nach vorn zu Neon neun. Neon neun nimmt den Ball mit dem ersten Kontakt nach vorn mit.",
+    "say": "Spieler zehn spielt nach vorn zu Spieler neun. Spieler neun nimmt den Ball mit dem ersten Kontakt nach vorn mit.",
     "moves": [
      {
       "who": "b1",
@@ -257,7 +257,7 @@
    },
    {
     "label": "Eins gegen eins: Punkt",
-    "say": "Rot vier kommt entgegen, aber Neon neun geht an ihm vorbei. Er schaut, wo der Torwart steht, und schießt ins lange Eck. Das gibt einen Punkt für Neon neun. Danach geht Neon neun auf ein Hütchen, und Neon zehn ist der neue Stürmer.",
+    "say": "Spieler vier kommt entgegen, aber Spieler neun geht an ihm vorbei. Er schaut, wo der Torwart steht, und schießt ins lange Eck. Das gibt einen Punkt für Spieler neun. Danach geht Spieler neun auf ein Hütchen, und Spieler zehn ist der neue Stürmer.",
     "moves": [
      {
       "who": "r4",
@@ -402,7 +402,7 @@
     "steps": [
      {
       "label": "Erst weg",
-      "say": "Neon zehn hat den Ball. Neon neun läuft erst schnell Richtung Tor, als wollte er hinter die Stange.",
+      "say": "Spieler zehn hat den Ball. Spieler neun läuft erst schnell Richtung Tor, als wollte er hinter die Stange.",
       "moves": [
        {
         "who": "n9",
@@ -416,7 +416,7 @@
      },
      {
       "label": "Dann zurück",
-      "say": "Dann stoppt er und kommt blitzschnell zurück. Jetzt ist er frei, und Neon zehn spielt ihn an.",
+      "say": "Dann stoppt er und kommt blitzschnell zurück. Jetzt ist er frei, und Spieler zehn spielt ihn an.",
       "moves": [
        {
         "who": "n9",
@@ -439,7 +439,7 @@
      },
      {
       "label": "Halb offen",
-      "say": "Neon neun steht halb offen. So nimmt er den Ball mit dem ersten Kontakt gleich nach vorn mit.",
+      "say": "Spieler neun steht halb offen. So nimmt er den Ball mit dem ersten Kontakt gleich nach vorn mit.",
       "moves": [
        {
         "who": "n9",
@@ -459,7 +459,7 @@
    "label": "Steigerung",
    "say": "Und jetzt die Steigerung: Der Mittelfeldspieler läuft hinterher und bekommt den Ball zurück.",
    "title": "Doppelpass an der Stange",
-   "text": "Jetzt spielt Neon zehn nach vorn zu Neon neun und läuft sofort weiter an der Stange vorbei. Neon neun hält den Ball und spielt ihn zurück in den Lauf. Neon zehn schließt ab.",
+   "text": "Jetzt spielt Spieler zehn nach vorn zu Spieler neun und läuft sofort weiter an der Stange vorbei. Spieler neun hält den Ball und spielt ihn zurück in den Lauf. Spieler zehn schließt ab.",
    "board": {
     "players": [
      {
@@ -532,7 +532,7 @@
     "steps": [
      {
       "label": "In die Spitze",
-      "say": "Neon zehn spielt nach vorn zu Neon neun.",
+      "say": "Spieler zehn spielt nach vorn zu Spieler neun.",
       "moves": [
        {
         "who": "b1",
@@ -546,7 +546,7 @@
      },
      {
       "label": "Hinterherlaufen",
-      "say": "Neon zehn läuft sofort weiter nach vorn, an der Stange vorbei. Neon neun hält so lange den Ball.",
+      "say": "Spieler zehn läuft sofort weiter nach vorn, an der Stange vorbei. Spieler neun hält so lange den Ball.",
       "moves": [
        {
         "who": "n10",
@@ -569,7 +569,7 @@
      },
      {
       "label": "Doppelpass: Punkt",
-      "say": "Neon neun spielt den Ball in den Lauf von Neon zehn. Der schießt direkt ins kurze Eck, und das gibt einen Punkt für Neon zehn.",
+      "say": "Spieler neun spielt den Ball in den Lauf von Spieler zehn. Der schießt direkt ins kurze Eck, und das gibt einen Punkt für Spieler zehn.",
       "moves": [
        {
         "who": "b1",

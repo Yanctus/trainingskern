@@ -222,7 +222,7 @@
   "steps": [
    {
     "label": "Drei Pässe",
-    "say": "Team Rot lässt den Ball unten laufen: Rot drei passt zu Rot fünf, Rot fünf zu Rot sechs, Rot sechs zu Rot zwei. Gleichzeitig schiebt die ganze Kette von Team Neon mit zum Ball.",
+    "say": "Team Rot lässt den Ball unten laufen: Spieler drei passt zu Spieler fünf, Spieler fünf zu Spieler sechs, Spieler sechs zu Spieler zwei. Gleichzeitig schiebt die ganze Kette von Team Neon mit zum Ball.",
     "moves": [
      {
       "who": "b1",
@@ -290,7 +290,7 @@
    },
    {
     "label": "Einer drückt",
-    "say": "Nach drei Pässen drückt Neon sieben langsam auf Rot zwei. Neon acht, vier und elf schieben nach. Neon acht steht halb offen und schaut auch in den Raum hinter sich.",
+    "say": "Nach drei Pässen drückt Spieler sieben langsam auf Spieler zwei. Spieler acht, vier und elf schieben nach. Spieler acht steht halb offen und schaut auch in den Raum hinter sich.",
     "moves": [
      {
       "who": "n7",
@@ -340,7 +340,7 @@
    },
    {
     "label": "Wechsel",
-    "say": "Der Trainer ruft: Wechsel! Rot zwei chippt den Ball hoch zu Rot zehn. Die Kette dreht sich schnell um und steht wieder eng. Geschafft, jetzt kreist der Ball oben, und nach drei Pässen drückt wieder einer.",
+    "say": "Der Trainer ruft: Wechsel! Spieler zwei chippt den Ball hoch zu Spieler zehn. Die Kette dreht sich schnell um und steht wieder eng. Geschafft, jetzt kreist der Ball oben, und nach drei Pässen drückt wieder einer.",
     "moves": [
      {
       "who": "b1",
@@ -519,7 +519,7 @@
     "steps": [
      {
       "label": "Wechsel und pressen",
-      "say": "Der Trainer ruft: Wechsel und pressen! Rot fünf chippt den Ball hoch zu Rot zwölf.",
+      "say": "Der Trainer ruft: Wechsel und pressen! Spieler fünf chippt den Ball hoch zu Spieler zwölf.",
       "moves": [
        {
         "who": "b1",
@@ -533,7 +533,7 @@
      },
      {
       "label": "Sofort pressen",
-      "say": "Neon elf ist am nächsten, dreht sich um und presst Rot zwölf sofort. Gleichzeitig drehen sich Neon vier, acht und sieben um und schieben nach links.",
+      "say": "Spieler elf ist am nächsten, dreht sich um und presst Spieler zwölf sofort. Gleichzeitig drehen sich Spieler vier, acht und sieben um und schieben nach links.",
       "moves": [
        {
         "who": "n11",
@@ -687,7 +687,7 @@
     "steps": [
      {
       "label": "Einer drückt",
-      "say": "Rot sechs hat den Ball. Neon acht drückt auf ihn. Gleichzeitig schieben Neon vier, sieben und elf eng hinter ihm zusammen.",
+      "say": "Spieler sechs hat den Ball. Spieler acht drückt auf ihn. Gleichzeitig schieben Spieler vier, sieben und elf eng hinter ihm zusammen.",
       "moves": [
        {
         "who": "n8",
@@ -728,7 +728,7 @@
      },
      {
       "label": "Kein Weg durch",
-      "say": "Rot sechs findet keine Lücke nach oben und spielt zurück zu Rot fünf.",
+      "say": "Spieler sechs findet keine Lücke nach oben und spielt zurück zu Spieler fünf.",
       "moves": [
        {
         "who": "b1",

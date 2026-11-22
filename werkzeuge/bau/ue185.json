@@ -174,7 +174,7 @@
   "steps": [
    {
     "label": "Sprint zur Puppe",
-    "say": "Neon fünf sprintet los zur Puppe. Der Trainer wirft ihm den Ball zu.",
+    "say": "Spieler fünf sprintet los zur Puppe. Der Trainer wirft ihm den Ball zu.",
     "moves": [
      {
       "who": "n5",
@@ -197,7 +197,7 @@
    },
    {
     "label": "Köpft zurück",
-    "say": "Neon fünf köpft den Ball genau zurück zum Trainer.",
+    "say": "Spieler fünf köpft den Ball genau zurück zum Trainer.",
     "moves": [
      {
       "who": "b1",
@@ -211,7 +211,7 @@
    },
    {
     "label": "Erster Block",
-    "say": "Neon fünf läuft um die Puppe herum und sprintet vor das erste Minitor. Neon drei spielt aufs Minitor, und Neon fünf blockt den Ball.",
+    "say": "Spieler fünf läuft um die Puppe herum und sprintet vor das erste Minitor. Spieler drei spielt aufs Minitor, und Spieler fünf blockt den Ball.",
     "moves": [
      {
       "who": "n5",
@@ -252,7 +252,7 @@
    },
    {
     "label": "Nicht nachschauen",
-    "say": "Neon fünf schaut nicht dem Ball nach. Er schaut sofort zum zweiten Minitor und sprintet hin.",
+    "say": "Spieler fünf schaut nicht dem Ball nach. Er schaut sofort zum zweiten Minitor und sprintet hin.",
     "moves": [
      {
       "who": "n5",
@@ -275,7 +275,7 @@
    },
    {
     "label": "Zweiter Block: Punkt",
-    "say": "Neon sieben spielt aufs zweite Minitor, und Neon fünf blockt auch diesen Ball. Jeder Block gibt einen Punkt für Neon fünf. Jetzt startet Neon vier, und Neon fünf stellt sich hinten an.",
+    "say": "Spieler sieben spielt aufs zweite Minitor, und Spieler fünf blockt auch diesen Ball. Jeder Block gibt einen Punkt für Spieler fünf. Jetzt startet Spieler vier, und Spieler fünf stellt sich hinten an.",
     "moves": [
      {
       "who": "b7",
@@ -402,7 +402,7 @@
     "steps": [
      {
       "label": "Hoch geworfen",
-      "say": "Neon fünf sprintet zur Puppe, und der Trainer wirft den Ball hoch.",
+      "say": "Spieler fünf sprintet zur Puppe, und der Trainer wirft den Ball hoch.",
       "moves": [
        {
         "who": "n5",
@@ -425,7 +425,7 @@
      },
      {
       "label": "Mit der Stirn",
-      "say": "Neon fünf köpft mit der Stirn genau zurück zum Trainer. Die Augen bleiben offen.",
+      "say": "Spieler fünf köpft mit der Stirn genau zurück zum Trainer. Die Augen bleiben offen.",
       "moves": [
        {
         "who": "b1",
@@ -439,7 +439,7 @@
      },
      {
       "label": "Brust und Volley",
-      "say": "Jetzt wirft der Trainer den Ball auf die Brust. Neon fünf nimmt ihn mit der Brust an und spielt ihn volley zurück. Dann geht es weiter zu den Minitoren.",
+      "say": "Jetzt wirft der Trainer den Ball auf die Brust. Spieler fünf nimmt ihn mit der Brust an und spielt ihn volley zurück. Dann geht es weiter zu den Minitoren.",
       "moves": [
        {
         "who": "b1",
@@ -550,7 +550,7 @@
     "steps": [
      {
       "label": "Zum Hütchen",
-      "say": "Neon fünf hat den ersten Ball geblockt. Er schaut sofort zum Hütchen und sprintet hin.",
+      "say": "Spieler fünf hat den ersten Ball geblockt. Er schaut sofort zum Hütchen und sprintet hin.",
       "moves": [
        {
         "who": "n5",
@@ -587,7 +587,7 @@
      },
      {
       "label": "Zweiter Block: Punkt",
-      "say": "Neon sieben spielt aufs Minitor, und Neon fünf blockt den Ball. Das gibt einen Punkt für Neon fünf.",
+      "say": "Spieler sieben spielt aufs Minitor, und Spieler fünf blockt den Ball. Das gibt einen Punkt für Spieler fünf.",
       "moves": [
        {
         "who": "b7",

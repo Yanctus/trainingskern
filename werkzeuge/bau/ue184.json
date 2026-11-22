@@ -206,7 +206,7 @@
   "steps": [
    {
     "label": "Pass ins Mittelfeld",
-    "say": "Der Trainer spielt Neon acht in der Mittelfeldzone an. Rot sechs geht sofort drauf und stellt den Pass in die Mitte zu.",
+    "say": "Der Trainer spielt Spieler acht in der Mittelfeldzone an. Spieler sechs geht sofort drauf und stellt den Pass in die Mitte zu.",
     "moves": [
      {
       "who": "b1",
@@ -229,7 +229,7 @@
    },
    {
     "label": "Zur Ballseite schieben",
-    "say": "Neon acht spielt nach außen zu Neon sieben. Rot drei läuft ihn an. Rot fünf und Rot vier schieben gleichzeitig mit zur Ballseite und bleiben eng zusammen.",
+    "say": "Spieler acht spielt nach außen zu Spieler sieben. Spieler drei läuft ihn an. Spieler fünf und Spieler vier schieben gleichzeitig mit zur Ballseite und bleiben eng zusammen.",
     "moves": [
      {
       "who": "b1",
@@ -270,7 +270,7 @@
    },
    {
     "label": "Nach außen drängen",
-    "say": "Rot drei steht innen und drängt Neon sieben nach außen, weg vom Tor. Rot fünf bleibt eng an Neon neun.",
+    "say": "Spieler drei steht innen und drängt Spieler sieben nach außen, weg vom Tor. Spieler fünf bleibt eng an Spieler neun.",
     "moves": [
      {
       "who": "n7",
@@ -311,7 +311,7 @@
    },
    {
     "label": "Ins Minitor: Punkt",
-    "say": "Rot drei erobert den Ball, dribbelt los und spielt ins Minitor. Das gibt einen Punkt für Team Rot. Ein Treffer gibt einen Punkt für Team Neon. Danach spielt der Trainer den nächsten Ball zu Neon acht.",
+    "say": "Spieler drei erobert den Ball, dribbelt los und spielt ins Minitor. Das gibt einen Punkt für Team Rot. Ein Treffer gibt einen Punkt für Team Neon. Danach spielt der Trainer den nächsten Ball zu Spieler acht.",
     "moves": [
      {
       "who": "b1",
@@ -459,7 +459,7 @@
     "steps": [
      {
       "label": "Direkt nach vorn",
-      "say": "Der Trainer spielt zu Neon acht. Der spielt direkt zu Neon neun und sprintet sofort mit nach vorn. Jetzt sind es vier gegen drei.",
+      "say": "Der Trainer spielt zu Spieler acht. Der spielt direkt zu Spieler neun und sprintet sofort mit nach vorn. Jetzt sind es vier gegen drei.",
       "moves": [
        {
         "who": "b1",
@@ -491,7 +491,7 @@
      },
      {
       "label": "Eng ran und mitgehen",
-      "say": "Rot fünf geht eng an Neon neun, damit er sich nicht drehen kann. Rot vier sieht Neon acht kommen und bleibt bei ihm. Rot drei rückt ein.",
+      "say": "Spieler fünf geht eng an Spieler neun, damit er sich nicht drehen kann. Spieler vier sieht Spieler acht kommen und bleibt bei ihm. Spieler drei rückt ein.",
       "moves": [
        {
         "who": "r5",
@@ -531,7 +531,7 @@
      },
      {
       "label": "Abgefangen: Punkt",
-      "say": "Neon neun legt ab zu Neon acht, aber Rot vier fängt den Pass ab. Er dribbelt los und spielt ins Minitor. Das gibt einen Punkt für Team Rot.",
+      "say": "Spieler neun legt ab zu Spieler acht, aber Spieler vier fängt den Pass ab. Er dribbelt los und spielt ins Minitor. Das gibt einen Punkt für Team Rot.",
       "moves": [
        {
         "who": "b1",
@@ -663,7 +663,7 @@
     "steps": [
      {
       "label": "Zurück in die Zone",
-      "say": "Neon sieben hat den Ball, und Rot drei presst. Neon acht kommt in die Rückpasszone, und Neon sieben spielt zu ihm zurück.",
+      "say": "Spieler sieben hat den Ball, und Spieler drei presst. Spieler acht kommt in die Rückpasszone, und Spieler sieben spielt zu ihm zurück.",
       "moves": [
        {
         "who": "r3",
@@ -695,7 +695,7 @@
      },
      {
       "label": "Gemeinsam heraus",
-      "say": "Sobald der Ball zurückgeht, rücken alle drei Verteidiger gleichzeitig heraus. Neon neun und Neon elf bleiben stehen und sind jetzt im Abseits.",
+      "say": "Sobald der Ball zurückgeht, rücken alle drei Verteidiger gleichzeitig heraus. Spieler neun und Spieler elf bleiben stehen und sind jetzt im Abseits.",
       "moves": [
        {
         "who": "r3",
@@ -725,7 +725,7 @@
      },
      {
       "label": "Ins Minitor: Punkt",
-      "say": "Neon acht findet keinen freien Mitspieler. Rot sechs presst von hinten und erobert den Ball. Er spielt schnell ins Minitor, und das gibt einen Punkt für Team Rot.",
+      "say": "Spieler acht findet keinen freien Mitspieler. Spieler sechs presst von hinten und erobert den Ball. Er spielt schnell ins Minitor, und das gibt einen Punkt für Team Rot.",
       "moves": [
        {
         "who": "r6",

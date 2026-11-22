@@ -240,7 +240,7 @@
   "steps": [
    {
     "label": "Über die Hürden",
-    "say": "Gleichzeitig springen Neon fünf und Rot sechs beidbeinig über die Hürden und stehen sich in der Mitte gegenüber.",
+    "say": "Gleichzeitig springen Spieler fünf und Spieler sechs beidbeinig über die Hürden und stehen sich in der Mitte gegenüber.",
     "moves": [
      {
       "who": "n5",
@@ -280,7 +280,7 @@
    },
    {
     "label": "Täuschen und sprinten",
-    "say": "Neon fünf täuscht nach links an und sprintet dann nach rechts in die Endzone. Rot sechs fällt auf die Finte herein und sprintet zu spät hinterher.",
+    "say": "Spieler fünf täuscht nach links an und sprintet dann nach rechts in die Endzone. Spieler sechs fällt auf die Finte herein und sprintet zu spät hinterher.",
     "moves": [
      {
       "who": "n5",
@@ -455,7 +455,7 @@
     "steps": [
      {
       "label": "Über die Hürden",
-      "say": "Gleichzeitig springen Neon fünf und Rot sechs über die Hürden.",
+      "say": "Gleichzeitig springen Spieler fünf und Spieler sechs über die Hürden.",
       "moves": [
        {
         "who": "n5",
@@ -495,7 +495,7 @@
      },
      {
       "label": "Pass vom Trainer",
-      "say": "Der Trainer spielt Neon fünf flach an.",
+      "say": "Der Trainer spielt Spieler fünf flach an.",
       "moves": [
        {
         "who": "c1",
@@ -509,7 +509,7 @@
      },
      {
       "label": "Finte und in die Endzone",
-      "say": "Neon fünf täuscht nach rechts an und dribbelt nach links in die Endzone. Das gibt einen Punkt für Team Neon.",
+      "say": "Spieler fünf täuscht nach rechts an und dribbelt nach links in die Endzone. Das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "n5",
@@ -639,7 +639,7 @@
     "steps": [
      {
       "label": "Hürden und Pass",
-      "say": "Gleichzeitig springen beide über die Hürden, dann spielt der Trainer Neon fünf an.",
+      "say": "Gleichzeitig springen beide über die Hürden, dann spielt der Trainer Spieler fünf an.",
       "moves": [
        {
         "who": "n5",
@@ -688,7 +688,7 @@
      },
      {
       "label": "Durchbrechen und abschließen",
-      "say": "Neon fünf täuscht nach links an, dribbelt nach rechts in die Endzone und schießt ins Minitor. Das gibt einen Punkt für Team Neon.",
+      "say": "Spieler fünf täuscht nach links an, dribbelt nach rechts in die Endzone und schießt ins Minitor. Das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "n5",

@@ -41,15 +41,15 @@ u = {"title": "Mit Tempo dribbeln und ablegen", "code": "UE-122", "kind": "Übun
   V("Steigerung", "Und jetzt die Steigerung: Alle drei Spieler einer Bahn arbeiten, mit Übergabe am Endspieler.", "Übergabe am Ende",
     "Jetzt dribbelt der Spieler aus der Mitte direkt auf den Endspieler zu. Der kommt ihm entgegen, übernimmt den Ball und dribbelt selbst los. Der bisherige Dribbler wird zum Endspieler. So arbeiten alle drei, und sie müssen sich gut absprechen.",
     sp(), BALLS,
-    [S("Dribbeln zum Endspieler", "Neon drei dribbelt nach links auf Neon zwei zu, und Neon zwei kommt ihm entgegen.",
+    [S("Dribbeln zum Endspieler", "Spieler drei dribbelt nach links auf Spieler zwei zu, und Spieler zwei kommt ihm entgegen.",
        dr("n3", "b3", [26, 14]), mv("n2", [20, 18], delay=0.3)),
-     S("Übernahme", "Neon zwei übernimmt den Ball und dribbelt los. Neon drei läuft weiter und wird zum neuen Endspieler.",
+     S("Übernahme", "Spieler zwei übernimmt den Ball und dribbelt los. Spieler drei läuft weiter und wird zum neuen Endspieler.",
        dr("n2", "b3", [40, 18]), mv("n3", [13, 14], delay=0.1))]),
   V("Steigerung", "Und jetzt die zweite Steigerung: Auch die Endspieler wechseln die Bahn.", "Endspieler wechseln",
     "Wann immer es passt, tauschen die Endspieler außen mit dem Endspieler der Nachbarbahn. Damit niemand durcheinanderkommt, sagen sie laut an, wer wohin geht.",
     sp(), BALLS,
     [S("Dribbeln", "Die Spieler in der Mitte dribbeln zu ihren Endspielern.", *hin()),
-     S("Endspieler tauschen", "Gleichzeitig tauschen links Neon zwei und Rot fünf die Plätze und rechts Rot sieben und Neon zehn. Alle rufen dabei laut.",
+     S("Endspieler tauschen", "Gleichzeitig tauschen links Spieler zwei und Spieler fünf die Plätze und rechts Spieler sieben und Spieler zehn. Alle rufen dabei laut.",
        mv("n2", [8, 22]), mv("n2", [13, 30], after=True), mv("r5", [18, 22]), mv("r5", [13, 14], after=True),
        mv("r7", [92, 38]), mv("r7", [87, 46], after=True), mv("n10", [82, 38]), mv("n10", [87, 30], after=True))])]}
 json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)

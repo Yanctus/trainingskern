@@ -173,7 +173,7 @@
   "steps": [
    {
     "label": "Pass nach vorn",
-    "say": "Neon vier spielt einen langen Pass zu Neon sieben.",
+    "say": "Spieler vier spielt einen langen Pass zu Spieler sieben.",
     "moves": [
      {
       "who": "b1",
@@ -187,7 +187,7 @@
    },
    {
     "label": "In die Endzone und raus",
-    "say": "Neon sieben dribbelt in die linke Endzone. Rot drei folgt ihm, doch Neon sieben dreht scharf und dribbelt wieder heraus. Das gibt einen Punkt für Team Neon.",
+    "say": "Spieler sieben dribbelt in die linke Endzone. Spieler drei folgt ihm, doch Spieler sieben dreht scharf und dribbelt wieder heraus. Das gibt einen Punkt für Team Neon.",
     "moves": [
      {
       "who": "n7",
@@ -221,7 +221,7 @@
    },
    {
     "label": "Am anderen Ende abschließen",
-    "say": "Jetzt spielt Neon sieben weit zu Neon fünf, und Neon fünf schießt ins rechte Minitor. Das gibt zwei Punkte für Team Neon.",
+    "say": "Jetzt spielt Spieler sieben weit zu Spieler fünf, und Spieler fünf schießt ins rechte Minitor. Das gibt zwei Punkte für Team Neon.",
     "moves": [
      {
       "who": "b1",
@@ -361,7 +361,7 @@
     "steps": [
      {
       "label": "Gegner kommt",
-      "say": "Rot drei kommt in die Endzone und greift Neon sieben an. Neon sieben stellt seinen Körper dazwischen.",
+      "say": "Spieler drei kommt in die Endzone und greift Spieler sieben an. Spieler sieben stellt seinen Körper dazwischen.",
       "moves": [
        {
         "who": "r3",
@@ -375,7 +375,7 @@
      },
      {
       "label": "Drehen und raus",
-      "say": "Neon sieben dreht scharf weg und dribbelt aus der Zone in den freien Raum. Das gibt einen Punkt für Team Neon.",
+      "say": "Spieler sieben dreht scharf weg und dribbelt aus der Zone in den freien Raum. Das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "n7",
@@ -501,7 +501,7 @@
     "steps": [
      {
       "label": "Schulterblick",
-      "say": "Neon sieben dribbelt in die Endzone und schaut über die Schulter. Rot drei kommt von unten.",
+      "say": "Spieler sieben dribbelt in die Endzone und schaut über die Schulter. Spieler drei kommt von unten.",
       "moves": [
        {
         "who": "n7",
@@ -525,7 +525,7 @@
      },
      {
       "label": "In die andere Richtung",
-      "say": "Neon sieben dreht nach oben weg, also auf die Seite ohne Gegner, und dribbelt aus der Zone. Das gibt einen Punkt für Team Neon.",
+      "say": "Spieler sieben dreht nach oben weg, also auf die Seite ohne Gegner, und dribbelt aus der Zone. Das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "n7",

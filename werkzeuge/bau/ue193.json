@@ -168,7 +168,7 @@
   "steps": [
    {
     "label": "Auf den Zehenspitzen",
-    "say": "Neon vier und Rot neun stehen auf den Zehenspitzen vor ihren Dummys. Beide schauen genau auf den Passgeber: Wohin schaut er, wie steht sein Körper?",
+    "say": "Spieler vier und Spieler neun stehen auf den Zehenspitzen vor ihren Dummys. Beide schauen genau auf den Passgeber: Wohin schaut er, wie steht sein Körper?",
     "moves": [
      {
       "who": "n4",
@@ -190,7 +190,7 @@
    },
    {
     "label": "Pass und blocken",
-    "say": "Gleichzeitig spielen der Trainer und der Springer einen festen Pass auf einen Dummy. Rot neun blockt den Ball ins Aus, und das gibt einen Punkt für Team Rot. Neon vier stoppt den Ball.",
+    "say": "Gleichzeitig spielen der Trainer und der Springer einen festen Pass auf einen Dummy. Spieler neun blockt den Ball ins Aus, und das gibt einen Punkt für Team Rot. Spieler vier stoppt den Ball.",
     "moves": [
      {
       "who": "b1",
@@ -239,7 +239,7 @@
    },
    {
     "label": "Rausdribbeln: Punkte",
-    "say": "Neon vier hebt den Kopf, dribbelt links aus dem Feld und passt zum Trainer zurück. Das gibt zwei Punkte für Team Neon. Dann kommen die nächsten Spieler beider Teams vor die Dummys.",
+    "say": "Spieler vier hebt den Kopf, dribbelt links aus dem Feld und passt zum Trainer zurück. Das gibt zwei Punkte für Team Neon. Dann kommen die nächsten Spieler beider Teams vor die Dummys.",
     "moves": [
      {
       "who": "n4",
@@ -341,7 +341,7 @@
     "steps": [
      {
       "label": "Abfangen",
-      "say": "Der Trainer und der Springer passen gleichzeitig auf die Dummys. Neon vier und Rot neun fangen beide den Ball ab.",
+      "say": "Der Trainer und der Springer passen gleichzeitig auf die Dummys. Spieler vier und Spieler neun fangen beide den Ball ab.",
       "moves": [
        {
         "who": "b1",
@@ -381,7 +381,7 @@
      },
      {
       "label": "Durch das Tor: Punkte",
-      "say": "Neon vier hebt den Kopf, sieht das Tor oben und dribbelt mit Tempo hindurch. Das gibt zwei Punkte für Team Neon. Gleichzeitig dribbelt Rot neun unten durch sein Tor, und das gibt zwei Punkte für Team Rot.",
+      "say": "Spieler vier hebt den Kopf, sieht das Tor oben und dribbelt mit Tempo hindurch. Das gibt zwei Punkte für Team Neon. Gleichzeitig dribbelt Spieler neun unten durch sein Tor, und das gibt zwei Punkte für Team Rot.",
       "moves": [
        {
         "who": "n4",
@@ -545,7 +545,7 @@
     "steps": [
      {
       "label": "Näher dran",
-      "say": "Neon vier und Rot neun stehen jetzt weiter vorn. Beide schauen genau auf den Passgeber.",
+      "say": "Spieler vier und Spieler neun stehen jetzt weiter vorn. Beide schauen genau auf den Passgeber.",
       "moves": [
        {
         "who": "n4",
@@ -567,7 +567,7 @@
      },
      {
       "label": "Blitzschnell: Punkte",
-      "say": "Die Pässe kommen. Beide reagieren blitzschnell, erobern den Ball und dribbeln hinaus. Neon vier passt zum Trainer, Rot neun zum Springer, und das gibt zwei Punkte für jedes Team.",
+      "say": "Die Pässe kommen. Beide reagieren blitzschnell, erobern den Ball und dribbeln hinaus. Spieler vier passt zum Trainer, Spieler neun zum Springer, und das gibt zwei Punkte für jedes Team.",
       "moves": [
        {
         "who": "b1",

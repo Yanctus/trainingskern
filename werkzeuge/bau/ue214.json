@@ -159,7 +159,7 @@
   "steps": [
    {
     "label": "Erst schauen",
-    "say": "Vor dem Start schauen beide genau, wo ihre vier Hütchen liegen. Neon sieben sucht die neonfarbenen, Rot neun die orangen Hütchen.",
+    "say": "Vor dem Start schauen beide genau, wo ihre vier Hütchen liegen. Spieler sieben sucht die neonfarbenen, Spieler neun die orangen Hütchen.",
     "moves": [
      {
       "who": "n7",
@@ -369,7 +369,7 @@
    },
    {
     "label": "Viertes Hütchen: Punkt",
-    "say": "Neon sieben steckt als Erster das vierte Hütchen auf seine Stange und gewinnt, und das gibt einen Punkt für Team Neon. Dann legt der Trainer die Hütchen neu aus, und die nächsten Spieler sind dran.",
+    "say": "Spieler sieben steckt als Erster das vierte Hütchen auf seine Stange und gewinnt, und das gibt einen Punkt für Team Neon. Dann legt der Trainer die Hütchen neu aus, und die nächsten Spieler sind dran.",
     "moves": [
      {
       "who": "n7",
@@ -457,7 +457,7 @@
    "label": "Coaching-Punkt",
    "say": "Jetzt zum Coaching-Punkt: Erst schauen, dann losrennen.",
    "title": "Erst schauen, dann los",
-   "text": "Wer vor dem Start schaut, sieht, welches Hütchen am nächsten liegt. Neon sieben schaut und holt zuerst das nahe Hütchen. Rot neun rennt ohne Schauen los zum Hütchen, das weit weg liegt.",
+   "text": "Wer vor dem Start schaut, sieht, welches Hütchen am nächsten liegt. Spieler sieben schaut und holt zuerst das nahe Hütchen. Spieler neun rennt ohne Schauen los zum Hütchen, das weit weg liegt.",
    "board": {
     "players": [
      {
@@ -497,7 +497,7 @@
     "steps": [
      {
       "label": "Schauen oder rennen",
-      "say": "Neon sieben schaut nach links und nach rechts. Rot neun rennt sofort los, ganz nach oben zum weiten Hütchen.",
+      "say": "Spieler sieben schaut nach links und nach rechts. Spieler neun rennt sofort los, ganz nach oben zum weiten Hütchen.",
       "moves": [
        {
         "who": "n7",
@@ -528,7 +528,7 @@
      },
      {
       "label": "Der kurze Weg",
-      "say": "Neon sieben holt das nahe Hütchen und steckt es auf die Stange. Rot neun ist noch unterwegs.",
+      "say": "Spieler sieben holt das nahe Hütchen und steckt es auf die Stange. Spieler neun ist noch unterwegs.",
       "moves": [
        {
         "who": "n7",
@@ -686,7 +686,7 @@
     "steps": [
      {
       "label": "Zu schnell",
-      "say": "Rot neun sprintet mit voller Kraft zum Hütchen. Er kann nicht bremsen, läuft vorbei und muss in einem großen Bogen zurück.",
+      "say": "Spieler neun sprintet mit voller Kraft zum Hütchen. Er kann nicht bremsen, läuft vorbei und muss in einem großen Bogen zurück.",
       "moves": [
        {
         "who": "r9",
@@ -736,7 +736,7 @@
      },
      {
       "label": "Gerade und kontrolliert",
-      "say": "Neon sieben läuft gerade, bremst kurz vor dem Hütchen ab und dreht mit kleinen Schritten. So ist er schneller zurück an seiner Stange.",
+      "say": "Spieler sieben läuft gerade, bremst kurz vor dem Hütchen ab und dreht mit kleinen Schritten. So ist er schneller zurück an seiner Stange.",
       "moves": [
        {
         "who": "n7",

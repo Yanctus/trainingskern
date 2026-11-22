@@ -173,7 +173,7 @@
   "steps": [
    {
     "label": "Beide starten gleichzeitig",
-    "say": "Auf das Zeichen des Trainers starten beide gleichzeitig: Neon zwei läuft los, Rot fünf jagt ihn. Fünfzehn Sekunden muss Neon zwei durchhalten.",
+    "say": "Auf das Zeichen des Trainers starten beide gleichzeitig: Spieler zwei läuft los, Spieler fünf jagt ihn. Fünfzehn Sekunden muss Spieler zwei durchhalten.",
     "moves": [
      {
       "who": "n2",
@@ -204,7 +204,7 @@
    },
    {
     "label": "Um die Hindernisse",
-    "say": "Neon zwei läuft um die Stange herum und bringt sie zwischen sich und den Fänger. Rot fünf muss den Umweg mitlaufen.",
+    "say": "Spieler zwei läuft um die Stange herum und bringt sie zwischen sich und den Fänger. Spieler fünf muss den Umweg mitlaufen.",
     "moves": [
      {
       "who": "n2",
@@ -253,7 +253,7 @@
    },
    {
     "label": "Haken am Minitor: geschafft",
-    "say": "Am Minitor schlägt Neon zwei einen Haken und sprintet weg. Die fünfzehn Sekunden sind um, Neon zwei wurde nicht berührt und gewinnt die Runde.",
+    "say": "Am Minitor schlägt Spieler zwei einen Haken und sprintet weg. Die fünfzehn Sekunden sind um, Spieler zwei wurde nicht berührt und gewinnt die Runde.",
     "moves": [
      {
       "who": "n2",
@@ -381,7 +381,7 @@
     "steps": [
      {
       "label": "Antäuschen",
-      "say": "Neon zwei täuscht nach links an. Rot fünf fällt darauf herein und läuft mit.",
+      "say": "Spieler zwei täuscht nach links an. Spieler fünf fällt darauf herein und läuft mit.",
       "moves": [
        {
         "who": "n2",
@@ -404,7 +404,7 @@
      },
      {
       "label": "Haken und weg",
-      "say": "Dann schlägt Neon zwei einen Haken nach rechts und sprintet am Minitor vorbei davon. Rot fünf steht auf der falschen Seite.",
+      "say": "Dann schlägt Spieler zwei einen Haken nach rechts und sprintet am Minitor vorbei davon. Spieler fünf steht auf der falschen Seite.",
       "moves": [
        {
         "who": "n2",
@@ -498,7 +498,7 @@
     "steps": [
      {
       "label": "Alle laufen gleichzeitig",
-      "say": "Alle laufen gleichzeitig: Die Roten jagen, die Neonspieler weichen aus. Rot fünf und Rot sechs gehen beide auf Neon zwei.",
+      "say": "Alle laufen gleichzeitig: Die Roten jagen, die Neonspieler weichen aus. Spieler fünf und Spieler sechs gehen beide auf Spieler zwei.",
       "moves": [
        {
         "who": "r5",
@@ -552,7 +552,7 @@
      },
      {
       "label": "Zwei gegen einen",
-      "say": "Neon zwei entkommt mit einem Haken am Minitor. Gleichzeitig berührt Rot sieben Neon vier, und die Uhr läuft weiter, bis alle Neonspieler berührt sind.",
+      "say": "Spieler zwei entkommt mit einem Haken am Minitor. Gleichzeitig berührt Spieler sieben Spieler vier, und die Uhr läuft weiter, bis alle Neonspieler berührt sind.",
       "moves": [
        {
         "who": "n2",

@@ -23,8 +23,8 @@
  "description": "Eine Passkombination zum Aufwärmen in einem Viereck mit vier Hütchen. Zwei Partner spielen sich den Ball zu, binden einen Endspieler ein und spielen dann schräg durch zum anderen Endspieler. Danach laufen beide durch, und die Kombination geht in die andere Richtung. Gespielt wird mit ein oder zwei Kontakten und hohem Tempo.",
  "organisation": [
   "Aufbauen: Ein Viereck von 14 mal 23 Metern mit vier Hütchen an den Ecken.",
-  "Verteilen: Die Spieler arbeiten zu zweit. Unten starten Neon zehn und Neon acht, oben stehen Neon vier und Neon elf als Endspieler. Die nächsten Paare warten neben den Hütchen. Der Trainer steht rechts mit Bällen.",
-  "Ablauf: Neon zehn spielt zu Neon acht, der spielt zu Neon vier. Neon vier legt zurück für Neon zehn, und der spielt schräg durch zu Neon elf. Dann laufen beide durch, und es geht in die andere Richtung.",
+  "Verteilen: Die Spieler arbeiten zu zweit. Unten starten Spieler zehn und Spieler acht, oben stehen Spieler vier und Spieler elf als Endspieler. Die nächsten Paare warten neben den Hütchen. Der Trainer steht rechts mit Bällen.",
+  "Ablauf: Spieler zehn spielt zu Spieler acht, der spielt zu Spieler vier. Spieler vier legt zurück für Spieler zehn, und der spielt schräg durch zu Spieler elf. Dann laufen beide durch, und es geht in die andere Richtung.",
   "Wechsel: Wer durchgelaufen ist, stellt sich an und wird später Endspieler. Nach ein paar Runden tauschen die Partner die Seiten."
  ],
  "organisation_show": [
@@ -163,7 +163,7 @@
   "steps": [
    {
     "label": "Pass zum Partner",
-    "say": "Neon zehn spielt zu Neon acht. Neon acht kommt dabei schräg nach innen und nimmt den Ball im Laufen an.",
+    "say": "Spieler zehn spielt zu Spieler acht. Spieler acht kommt dabei schräg nach innen und nimmt den Ball im Laufen an.",
     "moves": [
      {
       "who": "n8",
@@ -186,7 +186,7 @@
    },
    {
     "label": "Zum Endspieler",
-    "say": "Gleichzeitig läuft Neon zehn links nach vorn. Neon acht spielt schräg nach vorn zu Neon vier.",
+    "say": "Gleichzeitig läuft Spieler zehn links nach vorn. Spieler acht spielt schräg nach vorn zu Spieler vier.",
     "moves": [
      {
       "who": "n10",
@@ -209,7 +209,7 @@
    },
    {
     "label": "Umschauen und ablegen",
-    "say": "Neon zehn schaut über die Schulter, wo Neon elf steht. Neon vier legt den Ball zurück in den Lauf von Neon zehn.",
+    "say": "Spieler zehn schaut über die Schulter, wo Spieler elf steht. Spieler vier legt den Ball zurück in den Lauf von Spieler zehn.",
     "moves": [
      {
       "who": "n10",
@@ -231,8 +231,8 @@
     ]
    },
    {
-    "label": "Durch zu Neon elf",
-    "say": "Neon zehn spielt mit dem ersten Kontakt schräg durch zu Neon elf. Dann laufen Neon zehn und Neon acht gleichzeitig bis hinter die oberen Hütchen.",
+    "label": "Durch zu Spieler elf",
+    "say": "Spieler zehn spielt mit dem ersten Kontakt schräg durch zu Spieler elf. Dann laufen Spieler zehn und Spieler acht gleichzeitig bis hinter die oberen Hütchen.",
     "moves": [
      {
       "who": "b1",
@@ -264,7 +264,7 @@
    },
    {
     "label": "Andere Richtung",
-    "say": "Der Ball ist ohne Fehler bei Neon elf, die Kombination ist geschafft. Jetzt spielen Neon elf und Neon vier dieselbe Kombination nach unten, und Neon fünf und Neon sechs sind dort die Endspieler.",
+    "say": "Der Ball ist ohne Fehler bei Spieler elf, die Kombination ist geschafft. Jetzt spielen Spieler elf und Spieler vier dieselbe Kombination nach unten, und Spieler fünf und Spieler sechs sind dort die Endspieler.",
     "moves": [
      {
       "who": "n5",
@@ -412,7 +412,7 @@
     "steps": [
      {
       "label": "Vor den Mitspieler",
-      "say": "Neon acht läuft schräg nach innen. Neon zehn spielt den Ball genau in den Raum vor ihn.",
+      "say": "Spieler acht läuft schräg nach innen. Spieler zehn spielt den Ball genau in den Raum vor ihn.",
       "moves": [
        {
         "who": "n8",
@@ -435,7 +435,7 @@
      },
      {
       "label": "Im Laufen weiter",
-      "say": "Neon acht nimmt den Ball im Laufen mit und spielt ohne abzubremsen weiter zu Neon vier.",
+      "say": "Spieler acht nimmt den Ball im Laufen mit und spielt ohne abzubremsen weiter zu Spieler vier.",
       "moves": [
        {
         "who": "b1",
@@ -461,9 +461,9 @@
   },
   {
    "label": "Steigerung",
-   "say": "Und jetzt die Steigerung: Neon zehn läuft innen hinterher und bekommt den Ball in der Mitte.",
+   "say": "Und jetzt die Steigerung: Spieler zehn läuft innen hinterher und bekommt den Ball in der Mitte.",
    "title": "Innen hinterlaufen",
-   "text": "Jetzt spielt Neon acht nach vorn zu Neon elf, und Neon zehn läuft innen in die Mitte. Neon elf legt in seinen Lauf ab, und Neon zehn spielt schräg durch zu Neon vier. Wichtig ist der richtige Moment für den Lauf.",
+   "text": "Jetzt spielt Spieler acht nach vorn zu Spieler elf, und Spieler zehn läuft innen in die Mitte. Spieler elf legt in seinen Lauf ab, und Spieler zehn spielt schräg durch zu Spieler vier. Wichtig ist der richtige Moment für den Lauf.",
    "board": {
     "players": [
      {
@@ -550,7 +550,7 @@
     "steps": [
      {
       "label": "Pass zum Partner",
-      "say": "Neon zehn spielt zu Neon acht, der schräg nach innen kommt.",
+      "say": "Spieler zehn spielt zu Spieler acht, der schräg nach innen kommt.",
       "moves": [
        {
         "who": "n8",
@@ -573,7 +573,7 @@
      },
      {
       "label": "Innen hinterlaufen",
-      "say": "Neon acht spielt nach vorn zu Neon elf. Gleichzeitig läuft Neon zehn innen in die Mitte und schaut dabei zu Neon vier.",
+      "say": "Spieler acht spielt nach vorn zu Spieler elf. Gleichzeitig läuft Spieler zehn innen in die Mitte und schaut dabei zu Spieler vier.",
       "moves": [
        {
         "who": "b1",
@@ -612,8 +612,8 @@
       ]
      },
      {
-      "label": "Durch zu Neon vier",
-      "say": "Neon elf legt in den Lauf von Neon zehn ab, und Neon zehn spielt mit dem ersten Kontakt schräg durch zu Neon vier.",
+      "label": "Durch zu Spieler vier",
+      "say": "Spieler elf legt in den Lauf von Spieler zehn ab, und Spieler zehn spielt mit dem ersten Kontakt schräg durch zu Spieler vier.",
       "moves": [
        {
         "who": "b1",

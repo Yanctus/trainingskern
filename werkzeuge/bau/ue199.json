@@ -240,7 +240,7 @@
   "steps": [
    {
     "label": "Fünf gegen drei",
-    "say": "Der Trainer passt zum rechten Springer. Team Rot spielt mit den zwei Springern fünf gegen drei. Der Springer passt zu Rot acht, und Rot acht spielt zum linken Springer.",
+    "say": "Der Trainer passt zum rechten Springer. Team Rot spielt mit den zwei Springern fünf gegen drei. Der Springer passt zu Spieler acht, und Spieler acht spielt zum linken Springer.",
     "moves": [
      {
       "who": "b1",
@@ -272,7 +272,7 @@
    },
    {
     "label": "Durch das Hütchentor",
-    "say": "Der linke Springer spielt durch das linke Hütchentor. Rot neun startet in den Strafraum und nimmt den Ball an. Rot zehn läuft mit.",
+    "say": "Der linke Springer spielt durch das linke Hütchentor. Spieler neun startet in den Strafraum und nimmt den Ball an. Spieler zehn läuft mit.",
     "moves": [
      {
       "who": "r9",
@@ -313,7 +313,7 @@
    },
    {
     "label": "Zurücksprinten",
-    "say": "Gleichzeitig sprinten Neon zwei und Neon drei aus ihren Seitenzonen zurück. Jetzt heißt es zwei gegen zwei im Strafraum.",
+    "say": "Gleichzeitig sprinten Spieler zwei und Spieler drei aus ihren Seitenzonen zurück. Jetzt heißt es zwei gegen zwei im Strafraum.",
     "moves": [
      {
       "who": "n2",
@@ -335,7 +335,7 @@
    },
    {
     "label": "Ballgewinn: Punkt",
-    "say": "Neon zwei geht entschlossen auf Rot neun und erobert den Ball. Er passt zurück zum linken Springer, und das gibt einen Punkt für Team Neon. Ein Treffer gäbe einen Punkt für Team Rot. Danach spielt der Trainer den nächsten Ball.",
+    "say": "Spieler zwei geht entschlossen auf Spieler neun und erobert den Ball. Er passt zurück zum linken Springer, und das gibt einen Punkt für Team Neon. Ein Treffer gäbe einen Punkt für Team Rot. Danach spielt der Trainer den nächsten Ball.",
     "moves": [
      {
       "who": "n2",
@@ -487,7 +487,7 @@
     "steps": [
      {
       "label": "Abgefangen",
-      "say": "Rot acht will in die Mitte passen, aber Neon vier fängt den Ball ab. Er spielt sofort zum rechten Springer.",
+      "say": "Spieler acht will in die Mitte passen, aber Spieler vier fängt den Ball ab. Er spielt sofort zum rechten Springer.",
       "moves": [
        {
         "who": "n4",
@@ -519,7 +519,7 @@
      },
      {
       "label": "Auf die Seite",
-      "say": "Jetzt greift Team Neon an. Der Springer spielt den Ball weit auf die Seite zu Neon drei. Neon sechs läuft in den Strafraum.",
+      "say": "Jetzt greift Team Neon an. Der Springer spielt den Ball weit auf die Seite zu Spieler drei. Spieler sechs läuft in den Strafraum.",
       "moves": [
        {
         "who": "b1",
@@ -542,7 +542,7 @@
      },
      {
       "label": "Flanke: Punkt",
-      "say": "Neon drei flankt in den Strafraum, und Neon sechs schießt ins Tor. Das gibt einen Punkt für Team Neon.",
+      "say": "Spieler drei flankt in den Strafraum, und Spieler sechs schießt ins Tor. Das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "b1",
@@ -678,7 +678,7 @@
     "steps": [
      {
       "label": "Fünf Pässe",
-      "say": "Team Rot zählt die Pässe. Der rechte Springer passt zu Rot acht, Rot acht zum linken Springer. Neon vier und Neon sechs schieben eng zusammen.",
+      "say": "Team Rot zählt die Pässe. Der rechte Springer passt zu Spieler acht, Spieler acht zum linken Springer. Spieler vier und Spieler sechs schieben eng zusammen.",
       "moves": [
        {
         "who": "b1",
@@ -719,7 +719,7 @@
      },
      {
       "label": "Durch das Hütchentor",
-      "say": "Nach dem fünften Pass spielt der linke Springer durch das Hütchentor. Rot neun nimmt den Ball an und schießt sofort.",
+      "say": "Nach dem fünften Pass spielt der linke Springer durch das Hütchentor. Spieler neun nimmt den Ball an und schießt sofort.",
       "moves": [
        {
         "who": "r9",
@@ -751,7 +751,7 @@
      },
      {
       "label": "Torwart hält: Wechsel",
-      "say": "Der Torwart fängt den Ball. Er wirft ihn zu Neon vier, und jetzt greift Team Neon an. Team Rot muss verteidigen.",
+      "say": "Der Torwart fängt den Ball. Er wirft ihn zu Spieler vier, und jetzt greift Team Neon an. Team Rot muss verteidigen.",
       "moves": [
        {
         "who": "k",

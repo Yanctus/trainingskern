@@ -196,7 +196,7 @@
   "steps": [
    {
     "label": "Acht Pässe",
-    "say": "Team Neon greift nach oben an und muss erst acht Pässe spielen. Neon sechs passt zu Neon acht, der weiter zu Neon sieben. Team Rot verschiebt gemeinsam mit.",
+    "say": "Team Neon greift nach oben an und muss erst acht Pässe spielen. Spieler sechs passt zu Spieler acht, der weiter zu Spieler sieben. Team Rot verschiebt gemeinsam mit.",
     "moves": [
      {
       "who": "b1",
@@ -237,7 +237,7 @@
    },
    {
     "label": "Lücke sehen",
-    "say": "Die acht Pässe sind geschafft. Neon sieben hebt den Kopf und sieht die Lücke zwischen Rot vier und Rot elf. Er spielt nach vorn zu Neon zehn.",
+    "say": "Die acht Pässe sind geschafft. Spieler sieben hebt den Kopf und sieht die Lücke zwischen Spieler vier und Spieler elf. Er spielt nach vorn zu Spieler zehn.",
     "moves": [
      {
       "who": "n7",
@@ -260,7 +260,7 @@
    },
    {
     "label": "Steil in die Zone",
-    "say": "Neon neun startet in die Endzone, und Neon zehn spielt ihm den Ball mit einem Kontakt in den Lauf. Die Verteidiger dürfen nicht hinterher in die Zone.",
+    "say": "Spieler neun startet in die Endzone, und Spieler zehn spielt ihm den Ball mit einem Kontakt in den Lauf. Die Verteidiger dürfen nicht hinterher in die Zone.",
     "moves": [
      {
       "who": "n9",
@@ -283,7 +283,7 @@
    },
    {
     "label": "Abschluss: Punkt",
-    "say": "Neon neun nimmt den Ball mit und schießt ins linke Minitor, und das gibt einen Punkt für Team Neon. Dann wechseln die Rollen, der Trainer bringt einen neuen Ball, und Team Rot greift nach unten an.",
+    "say": "Spieler neun nimmt den Ball mit und schießt ins linke Minitor, und das gibt einen Punkt für Team Neon. Dann wechseln die Rollen, der Trainer bringt einen neuen Ball, und Team Rot greift nach unten an.",
     "moves": [
      {
       "who": "n9",
@@ -429,7 +429,7 @@
     "steps": [
      {
       "label": "Kopf hoch",
-      "say": "Neon acht hat den Ball und hebt den Kopf. Er sieht Neon neun, der kurz entgegenkommt und seinen Gegner weglockt.",
+      "say": "Spieler acht hat den Ball und hebt den Kopf. Er sieht Spieler neun, der kurz entgegenkommt und seinen Gegner weglockt.",
       "moves": [
        {
         "who": "n8",
@@ -452,7 +452,7 @@
      },
      {
       "label": "Jetzt starten",
-      "say": "Genau jetzt startet Neon neun in die Endzone. Neon acht spielt ihm den Ball scharf in den Lauf.",
+      "say": "Genau jetzt startet Spieler neun in die Endzone. Spieler acht spielt ihm den Ball scharf in den Lauf.",
       "moves": [
        {
         "who": "n9",
@@ -475,7 +475,7 @@
      },
      {
       "label": "Ruhig ins Tor: Punkt",
-      "say": "Neon neun nimmt den Ball nach vorn mit und schießt ruhig ins linke Minitor. Das gibt einen Punkt für Team Neon.",
+      "say": "Spieler neun nimmt den Ball nach vorn mit und schießt ruhig ins linke Minitor. Das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "n9",
@@ -605,7 +605,7 @@
     "steps": [
      {
       "label": "Hoch pressen",
-      "say": "Neon sechs passt zu Neon acht. Sofort rücken Rot vier und Rot fünf heraus und pressen.",
+      "say": "Spieler sechs passt zu Spieler acht. Sofort rücken Spieler vier und Spieler fünf heraus und pressen.",
       "moves": [
        {
         "who": "b1",
@@ -637,7 +637,7 @@
      },
      {
       "label": "Ballgewinn: Punkt",
-      "say": "Neon acht will zu Neon sieben passen, aber Rot fünf fängt den Ball ab. Das waren keine acht Pässe, und das gibt einen Punkt für Team Rot. Jetzt greift Team Rot an.",
+      "say": "Spieler acht will zu Spieler sieben passen, aber Spieler fünf fängt den Ball ab. Das waren keine acht Pässe, und das gibt einen Punkt für Team Rot. Jetzt greift Team Rot an.",
       "moves": [
        {
         "who": "r5",

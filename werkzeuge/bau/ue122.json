@@ -519,7 +519,7 @@
     "steps": [
      {
       "label": "Dribbeln zum Endspieler",
-      "say": "Neon drei dribbelt nach links auf Neon zwei zu, und Neon zwei kommt ihm entgegen.",
+      "say": "Spieler drei dribbelt nach links auf Spieler zwei zu, und Spieler zwei kommt ihm entgegen.",
       "moves": [
        {
         "who": "n3",
@@ -543,7 +543,7 @@
      },
      {
       "label": "Übernahme",
-      "say": "Neon zwei übernimmt den Ball und dribbelt los. Neon drei läuft weiter und wird zum neuen Endspieler.",
+      "say": "Spieler zwei übernimmt den Ball und dribbelt los. Spieler drei läuft weiter und wird zum neuen Endspieler.",
       "moves": [
        {
         "who": "n2",
@@ -704,7 +704,7 @@
      },
      {
       "label": "Endspieler tauschen",
-      "say": "Gleichzeitig tauschen links Neon zwei und Rot fünf die Plätze und rechts Rot sieben und Neon zehn. Alle rufen dabei laut.",
+      "say": "Gleichzeitig tauschen links Spieler zwei und Spieler fünf die Plätze und rechts Spieler sieben und Spieler zehn. Alle rufen dabei laut.",
       "moves": [
        {
         "who": "n2",

@@ -152,7 +152,7 @@
   "steps": [
    {
     "label": "Pass quer",
-    "say": "Neon zwei spielt quer zu Neon drei, und zwar vor seinen Fuß.",
+    "say": "Spieler zwei spielt quer zu Spieler drei, und zwar vor seinen Fuß.",
     "moves": [
      {
       "who": "b1",
@@ -166,7 +166,7 @@
    },
    {
     "label": "Annehmen und losdribbeln",
-    "say": "Neon drei nimmt mit dem hinteren Fuß nach vorn an und dribbelt mit Tempo los. Gleichzeitig läuft Rot fünf heraus und setzt ihn unter Druck.",
+    "say": "Spieler drei nimmt mit dem hinteren Fuß nach vorn an und dribbelt mit Tempo los. Gleichzeitig läuft Spieler fünf heraus und setzt ihn unter Druck.",
     "moves": [
      {
       "who": "n3",
@@ -209,7 +209,7 @@
    },
    {
     "label": "Pass zum anderen Ende",
-    "say": "In der anderen Hälfte passt Neon drei zum roten Paar am anderen Ende.",
+    "say": "In der anderen Hälfte passt Spieler drei zum roten Paar am anderen Ende.",
     "moves": [
      {
       "who": "b1",
@@ -223,7 +223,7 @@
    },
    {
     "label": "In die andere Richtung",
-    "say": "Rot sieben spielt quer zu Rot sechs. Gleichzeitig wird Neon drei zum Verteidiger und läuft Rot sechs entgegen. Jetzt geht es in die andere Richtung.",
+    "say": "Spieler sieben spielt quer zu Spieler sechs. Gleichzeitig wird Spieler drei zum Verteidiger und läuft Spieler sechs entgegen. Jetzt geht es in die andere Richtung.",
     "moves": [
      {
       "who": "b1",
@@ -328,7 +328,7 @@
     "steps": [
      {
       "label": "Verteidiger läuft zu früh",
-      "say": "Neon zwei spielt quer. Rot fünf ahnt den Pass und läuft schon früh auf Neon drei zu.",
+      "say": "Spieler zwei spielt quer. Spieler fünf ahnt den Pass und läuft schon früh auf Spieler drei zu.",
       "moves": [
        {
         "who": "b1",
@@ -351,7 +351,7 @@
      },
      {
       "label": "Mit dem ersten Kontakt vorbei",
-      "say": "Neon drei täuscht mit der Hüfte an und nimmt den Ball mit dem ersten Kontakt an Rot fünf vorbei nach außen mit.",
+      "say": "Spieler drei täuscht mit der Hüfte an und nimmt den Ball mit dem ersten Kontakt an Spieler fünf vorbei nach außen mit.",
       "moves": [
        {
         "who": "n3",
@@ -376,7 +376,7 @@
      },
      {
       "label": "Weiter und Pass",
-      "say": "Neon drei dribbelt durch die Mitte und passt zum Paar am anderen Ende.",
+      "say": "Spieler drei dribbelt durch die Mitte und passt zum Paar am anderen Ende.",
       "moves": [
        {
         "who": "n3",
@@ -466,7 +466,7 @@
     "steps": [
      {
       "label": "Über die Linie",
-      "say": "Neon zwei dribbelt schräg auf die Mittellinie zu, Rot fünf verfolgt ihn.",
+      "say": "Spieler zwei dribbelt schräg auf die Mittellinie zu, Spieler fünf verfolgt ihn.",
       "moves": [
        {
         "who": "n2",
@@ -490,7 +490,7 @@
      },
      {
       "label": "Ball abschirmen",
-      "say": "Neon zwei bringt den Körper zwischen Ball und Rot fünf und zieht mit Tempo davon.",
+      "say": "Spieler zwei bringt den Körper zwischen Ball und Spieler fünf und zieht mit Tempo davon.",
       "moves": [
        {
         "who": "n2",
@@ -514,7 +514,7 @@
      },
      {
       "label": "Pass zum anderen Ende",
-      "say": "Neon zwei passt zum roten Paar am anderen Ende und wird sofort zum Verteidiger.",
+      "say": "Spieler zwei passt zum roten Paar am anderen Ende und wird sofort zum Verteidiger.",
       "moves": [
        {
         "who": "b1",

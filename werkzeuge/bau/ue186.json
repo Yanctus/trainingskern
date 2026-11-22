@@ -282,7 +282,7 @@
   "steps": [
    {
     "label": "Alle gleichzeitig",
-    "say": "Alle vier Stationen starten gleichzeitig. Neon zwei dribbelt durch die Stangen, Neon acht hüpft auf einem Bein durch die Ringe, Neon sieben dribbelt durch die Hütchen, und Neon vier macht schnelle Seitschritte.",
+    "say": "Alle vier Stationen starten gleichzeitig. Spieler zwei dribbelt durch die Stangen, Spieler acht hüpft auf einem Bein durch die Ringe, Spieler sieben dribbelt durch die Hütchen, und Spieler vier macht schnelle Seitschritte.",
     "moves": [
      {
       "who": "n2",
@@ -436,7 +436,7 @@
    },
    {
     "label": "Ablegen und passen",
-    "say": "Neon zwei lässt den Ball in der Mitte liegen und läuft weiter. Neon sieben hebt den Kopf, sieht Neon zwei und passt ihm den Ball in den Lauf.",
+    "say": "Spieler zwei lässt den Ball in der Mitte liegen und läuft weiter. Spieler sieben hebt den Kopf, sieht Spieler zwei und passt ihm den Ball in den Lauf.",
     "moves": [
      {
       "who": "n2",
@@ -478,7 +478,7 @@
    },
    {
     "label": "Quer nach links",
-    "say": "Neon acht kommt genau richtig aus den Ringen, holt den abgelegten Ball und passt quer zu Neon vier. Gleichzeitig dribbelt Neon zwei nach unten, und Neon sieben läuft zu den Ringen.",
+    "say": "Spieler acht kommt genau richtig aus den Ringen, holt den abgelegten Ball und passt quer zu Spieler vier. Gleichzeitig dribbelt Spieler zwei nach unten, und Spieler sieben läuft zu den Ringen.",
     "moves": [
      {
       "who": "n8",
@@ -528,7 +528,7 @@
    },
    {
     "label": "Zurück zum Start",
-    "say": "Neon vier nimmt den Ball mit und dribbelt zurück zum Start oben. Neon acht stellt sich links an. Geschafft! Jetzt sind Neon drei, Neon dreizehn, Neon elf und Neon sechs dran, und alles beginnt von vorn.",
+    "say": "Spieler vier nimmt den Ball mit und dribbelt zurück zum Start oben. Spieler acht stellt sich links an. Geschafft! Jetzt sind Spieler drei, Spieler dreizehn, Spieler elf und Spieler sechs dran, und alles beginnt von vorn.",
     "moves": [
      {
       "who": "n4",
@@ -711,7 +711,7 @@
     "steps": [
      {
       "label": "Zuwurf",
-      "say": "Neon sieben nimmt den Ball nach den Hütchen in die Hände, ruft laut links und wirft ihn Neon zwei zu.",
+      "say": "Spieler sieben nimmt den Ball nach den Hütchen in die Hände, ruft laut links und wirft ihn Spieler zwei zu.",
       "moves": [
        {
         "who": "b2",
@@ -725,7 +725,7 @@
      },
      {
       "label": "Volley zurück",
-      "say": "Neon zwei spielt den Ball mit links direkt zurück. Dann ruft Neon sieben Kopf, wirft noch einmal, und Neon zwei köpft zurück.",
+      "say": "Spieler zwei spielt den Ball mit links direkt zurück. Dann ruft Spieler sieben Kopf, wirft noch einmal, und Spieler zwei köpft zurück.",
       "moves": [
        {
         "who": "b2",
@@ -757,7 +757,7 @@
      },
      {
       "label": "Weiter wie vorher",
-      "say": "Jetzt passt Neon sieben flach zu Neon zwei, der nach unten dribbelt. Neon acht holt den Ball in der Mitte und passt quer zu Neon vier. Dann sind die Nächsten dran.",
+      "say": "Jetzt passt Spieler sieben flach zu Spieler zwei, der nach unten dribbelt. Spieler acht holt den Ball in der Mitte und passt quer zu Spieler vier. Dann sind die Nächsten dran.",
       "moves": [
        {
         "who": "b2",
@@ -943,7 +943,7 @@
     "steps": [
      {
       "label": "Pass nach links",
-      "say": "Neon acht hat den Ball in der Mitte und passt quer zu Neon vier.",
+      "say": "Spieler acht hat den Ball in der Mitte und passt quer zu Spieler vier.",
       "moves": [
        {
         "who": "b1",
@@ -957,7 +957,7 @@
      },
      {
       "label": "Direkt zurück",
-      "say": "Neon vier spielt den Ball direkt zurück zu Neon acht.",
+      "say": "Spieler vier spielt den Ball direkt zurück zu Spieler acht.",
       "moves": [
        {
         "who": "b1",
@@ -971,7 +971,7 @@
      },
      {
       "label": "In den Lauf",
-      "say": "Neon vier startet nach vorn, und Neon acht spielt ihm den Ball in den Lauf.",
+      "say": "Spieler vier startet nach vorn, und Spieler acht spielt ihm den Ball in den Lauf.",
       "moves": [
        {
         "who": "n4",
@@ -994,7 +994,7 @@
      },
      {
       "label": "Zurück zum Start",
-      "say": "Neon vier dribbelt zum Start oben, und Neon acht stellt sich links an. Jetzt sind die Nächsten an allen Stationen dran.",
+      "say": "Spieler vier dribbelt zum Start oben, und Spieler acht stellt sich links an. Jetzt sind die Nächsten an allen Stationen dran.",
       "moves": [
        {
         "who": "n4",

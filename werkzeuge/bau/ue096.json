@@ -228,7 +228,7 @@
   "steps": [
    {
     "label": "Ball halten",
-    "say": "Neon vier spielt zu Neon elf. Gleichzeitig verschieben die drei Roten gemeinsam und stellen Passwege zu.",
+    "say": "Spieler vier spielt zu Spieler elf. Gleichzeitig verschieben die drei Roten gemeinsam und stellen Passwege zu.",
     "moves": [
      {
       "who": "b1",
@@ -269,7 +269,7 @@
    },
    {
     "label": "Pass abgefangen",
-    "say": "Neon elf will zu Neon zehn passen, doch Rot sieben ahnt den Pass und fängt ihn ab.",
+    "say": "Spieler elf will zu Spieler zehn passen, doch Spieler sieben ahnt den Pass und fängt ihn ab.",
     "moves": [
      {
       "who": "b1",
@@ -292,7 +292,7 @@
    },
    {
     "label": "Sofort aufs Minitor",
-    "say": "Rot sieben schießt sofort auf das Minitor unten links, und das gibt einen Punkt für Rot.",
+    "say": "Spieler sieben schießt sofort auf das Minitor unten links, und das gibt einen Punkt für Rot.",
     "moves": [
      {
       "who": "b1",
@@ -306,7 +306,7 @@
    },
    {
     "label": "Neustart drüben",
-    "say": "Der Trainer spielt in der anderen Hälfte zu Rot sechs. Gleichzeitig wechselt der Springer hinüber, und drei Neonspieler laufen zum Pressen nach drüben.",
+    "say": "Der Trainer spielt in der anderen Hälfte zu Spieler sechs. Gleichzeitig wechselt der Springer hinüber, und drei Neonspieler laufen zum Pressen nach drüben.",
     "moves": [
      {
       "who": "c1",
@@ -485,7 +485,7 @@
     "steps": [
      {
       "label": "Zusammen zustellen",
-      "say": "Rot fünf läuft auf Neon elf zu. Gleichzeitig stellen Rot drei und Rot sieben die Wege zu Neon vier und Neon zehn zu.",
+      "say": "Spieler fünf läuft auf Spieler elf zu. Gleichzeitig stellen Spieler drei und Spieler sieben die Wege zu Spieler vier und Spieler zehn zu.",
       "moves": [
        {
         "who": "r5",
@@ -515,7 +515,7 @@
      },
      {
       "label": "Schwieriger Pass",
-      "say": "Neon elf bleibt nur der Pass zum Springer, und Rot fünf geht dazwischen.",
+      "say": "Spieler elf bleibt nur der Pass zum Springer, und Spieler fünf geht dazwischen.",
       "moves": [
        {
         "who": "b1",
@@ -651,7 +651,7 @@
     "steps": [
      {
       "label": "Ball erobert und hinüber",
-      "say": "Rot fünf hat den Ball erobert und spielt sofort hinüber zu Rot zwei.",
+      "say": "Spieler fünf hat den Ball erobert und spielt sofort hinüber zu Spieler zwei.",
       "moves": [
        {
         "who": "b1",

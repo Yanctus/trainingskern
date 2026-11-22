@@ -31,7 +31,7 @@ u = {"title": "Schnelle Füße, schnelle Reaktion", "code": "UE-117", "kind": "�
  "say_intro": "Schnelle Füße, schnelle Reaktion. Durch die Ringe, auf Zuruf um das richtige Hütchen und im Slalom ins Ziel.",
  "board": {"lines": LINES, "cones": CONES, "players": sp(), "balls": [],
   "steps": [
-   S("Schnelle Füße", "Gleichzeitig laufen Neon zwei und Rot sieben mit schnellen, kleinen Schritten durch die drei Ringe.",
+   S("Schnelle Füße", "Gleichzeitig laufen Spieler zwei und Spieler sieben mit schnellen, kleinen Schritten durch die drei Ringe.",
      *ringe("n2", NL), *ringe("r7", RL)),
    S("Trainer ruft Orange", "Der Trainer ruft Orange. Beide sprinten sofort um das orange Hütchen herum und zurück in ihre Bahn.",
      *chain("n2", aussen(NL, 1)), *chain("r7", aussen(RL, -1))),
@@ -49,7 +49,7 @@ u = {"title": "Schnelle Füße, schnelle Reaktion", "code": "UE-117", "kind": "�
   V("Steigerung", "Und jetzt die zweite Steigerung: Zum Schluss ein diagonaler Sprint.", "Diagonal und abklatschen",
     "Nach dem Lauf sprinten die Spieler diagonal über das Feld zum Endhütchen der anderen Bahn und dann zurück zum eigenen Team, wo sie den Nächsten abklatschen. Das macht das Aufwärmen noch intensiver.",
     sp(), [],
-    [S("Diagonal sprinten", "Neon zwei sprintet diagonal zum Ende der oberen Bahn. Kurz danach sprintet Rot sieben diagonal zum Ende der unteren Bahn.",
+    [S("Diagonal sprinten", "Spieler zwei sprintet diagonal zum Ende der oberen Bahn. Kurz danach sprintet Spieler sieben diagonal zum Ende der unteren Bahn.",
        mv("n2", [92, RL]), mv("r7", [92, NL], delay=0.5)),
      S("Zurück und abklatschen", "Beide sprinten auf demselben Weg zurück zu ihrem Team und klatschen den Nächsten ab.",
        mv("n2", [16, NL]), mv("r7", [16, RL], delay=0.5))])]}

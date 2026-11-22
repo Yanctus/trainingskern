@@ -195,7 +195,7 @@
   "steps": [
    {
     "label": "Beide Spiele starten gleichzeitig",
-    "say": "Beide Spiele starten gleichzeitig bei einem Springer. Der linke Springer spielt zu Neon zwei, der obere Springer zu Neon sechs. Rot vier und Rot neun laufen sofort dagegen.",
+    "say": "Beide Spiele starten gleichzeitig bei einem Springer. Der linke Springer spielt zu Spieler zwei, der obere Springer zu Spieler sechs. Spieler vier und Spieler neun laufen sofort dagegen.",
     "moves": [
      {
       "who": "b1",
@@ -235,7 +235,7 @@
    },
    {
     "label": "Weiter zum Partner",
-    "say": "Gleichzeitig spielen beide weiter: Neon zwei zu Neon drei, Neon sechs zu Neon sieben. Rot fünf und Rot acht versuchen, die nächsten Wege zuzustellen.",
+    "say": "Gleichzeitig spielen beide weiter: Spieler zwei zu Spieler drei, Spieler sechs zu Spieler sieben. Spieler fünf und Spieler acht versuchen, die nächsten Wege zuzustellen.",
     "moves": [
      {
       "who": "b1",
@@ -275,7 +275,7 @@
    },
    {
     "label": "Auf die andere Seite: Punkt",
-    "say": "Neon drei spielt zum rechten Springer, Neon sieben zum unteren Springer. Beide Bälle sind auf der anderen Seite angekommen, und das gibt jeweils einen Punkt für Neon.",
+    "say": "Spieler drei spielt zum rechten Springer, Spieler sieben zum unteren Springer. Beide Bälle sind auf der anderen Seite angekommen, und das gibt jeweils einen Punkt für Neon.",
     "moves": [
      {
       "who": "b1",
@@ -438,7 +438,7 @@
     "steps": [
      {
       "label": "Springer zugestellt",
-      "say": "Rot vier und Rot fünf stellen die Wege zum rechten Springer zu. Gleichzeitig spielt die andere Gruppe weiter, der obere Springer passt zu Neon sieben.",
+      "say": "Spieler vier und Spieler fünf stellen die Wege zum rechten Springer zu. Gleichzeitig spielt die andere Gruppe weiter, der obere Springer passt zu Spieler sieben.",
       "moves": [
        {
         "who": "r4",
@@ -468,7 +468,7 @@
      },
      {
       "label": "Zum freien Partner",
-      "say": "Neon zwei schaut sich um und spielt zum freien Partner Neon drei. Der hat Platz und sucht von dort den nächsten freien Weg.",
+      "say": "Spieler zwei schaut sich um und spielt zum freien Partner Spieler drei. Der hat Platz und sucht von dort den nächsten freien Weg.",
       "moves": [
        {
         "who": "b1",
@@ -607,7 +607,7 @@
     "steps": [
      {
       "label": "Lücke sehen",
-      "say": "Der obere Springer hat den Ball und sieht die Lücke zwischen Rot acht und Rot neun. Neon sechs läuft genau dahinter in den freien Raum.",
+      "say": "Der obere Springer hat den Ball und sieht die Lücke zwischen Spieler acht und Spieler neun. Spieler sechs läuft genau dahinter in den freien Raum.",
       "moves": [
        {
         "who": "n6",
@@ -635,7 +635,7 @@
      },
      {
       "label": "Nach unten: Punkt",
-      "say": "Neon sechs spielt weiter zum unteren Springer, und das gibt einen Punkt für Neon.",
+      "say": "Spieler sechs spielt weiter zum unteren Springer, und das gibt einen Punkt für Neon.",
       "moves": [
        {
         "who": "b2",

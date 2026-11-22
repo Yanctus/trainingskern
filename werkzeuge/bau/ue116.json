@@ -199,7 +199,7 @@
   "steps": [
    {
     "label": "Neon greift an",
-    "say": "Neon zwei dribbelt mit Tempo los. Gleichzeitig kommt Rot sechs von der anderen Seite und setzt ihn unter Druck. Neon zwei schießt ins rechte Tor, das gibt einen Punkt für Team Neon.",
+    "say": "Spieler zwei dribbelt mit Tempo los. Gleichzeitig kommt Spieler sechs von der anderen Seite und setzt ihn unter Druck. Spieler zwei schießt ins rechte Tor, das gibt einen Punkt für Team Neon.",
     "moves": [
      {
       "who": "n2",
@@ -242,7 +242,7 @@
    },
    {
     "label": "Umschalten",
-    "say": "Sofort startet Rot sieben mit Ball aufs linke Tor. Gleichzeitig sprintet Neon zwei zurück und verteidigt.",
+    "say": "Sofort startet Spieler sieben mit Ball aufs linke Tor. Gleichzeitig sprintet Spieler zwei zurück und verteidigt.",
     "moves": [
      {
       "who": "r7",
@@ -276,7 +276,7 @@
    },
    {
     "label": "Abschluss von Rot",
-    "say": "Rot sieben schließt trotz Druck ab und trifft ins linke Tor. Das gibt einen Punkt für Team Rot.",
+    "say": "Spieler sieben schließt trotz Druck ab und trifft ins linke Tor. Das gibt einen Punkt für Team Rot.",
     "moves": [
      {
       "who": "b7",
@@ -411,7 +411,7 @@
     "steps": [
      {
       "label": "Schießen und schauen",
-      "say": "Neon zwei schießt aufs Tor und bleibt stehen, um dem Ball hinterherzuschauen. Gleichzeitig startet Rot sieben schon mit Ball.",
+      "say": "Spieler zwei schießt aufs Tor und bleibt stehen, um dem Ball hinterherzuschauen. Gleichzeitig startet Spieler sieben schon mit Ball.",
       "moves": [
        {
         "who": "g",
@@ -435,7 +435,7 @@
      },
      {
       "label": "Freie Bahn",
-      "say": "Weil Neon zwei nicht zurückläuft, dribbelt Rot sieben ohne Gegner bis vors Tor und trifft. So darf es nicht laufen: Nach dem Schuss sofort zurücksprinten.",
+      "say": "Weil Spieler zwei nicht zurückläuft, dribbelt Spieler sieben ohne Gegner bis vors Tor und trifft. So darf es nicht laufen: Nach dem Schuss sofort zurücksprinten.",
       "moves": [
        {
         "who": "r7",
@@ -556,7 +556,7 @@
     "steps": [
      {
       "label": "Zu zweit los",
-      "say": "Gleichzeitig starten Neon zwei mit Ball und Neon drei. Rot sechs kommt von der anderen Seite und verteidigt.",
+      "say": "Gleichzeitig starten Spieler zwei mit Ball und Spieler drei. Spieler sechs kommt von der anderen Seite und verteidigt.",
       "moves": [
        {
         "who": "n2",
@@ -607,7 +607,7 @@
      },
      {
       "label": "Querpass und Abschluss",
-      "say": "Rot sechs greift Neon zwei an. Neon zwei spielt quer zu Neon drei, der direkt ins Tor schießt. Das gibt einen Punkt für Team Neon.",
+      "say": "Spieler sechs greift Spieler zwei an. Spieler zwei spielt quer zu Spieler drei, der direkt ins Tor schießt. Das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "b2",
@@ -630,7 +630,7 @@
      },
      {
       "label": "Zwei gegen eins zurück",
-      "say": "Sofort starten Rot sieben mit Ball und Rot sechs aufs linke Tor. Gleichzeitig sprintet Neon zwei zurück und verteidigt allein.",
+      "say": "Sofort starten Spieler sieben mit Ball und Spieler sechs aufs linke Tor. Gleichzeitig sprintet Spieler zwei zurück und verteidigt allein.",
       "moves": [
        {
         "who": "r7",

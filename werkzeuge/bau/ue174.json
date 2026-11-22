@@ -186,7 +186,7 @@
   "steps": [
    {
     "label": "Fünf Pässe",
-    "say": "Team Neon hat den Ball und braucht fünf Pässe, dann darf es aufs Tor schießen. Neon vier spielt zu Neon acht, der weiter zu Neon sieben.",
+    "say": "Team Neon hat den Ball und braucht fünf Pässe, dann darf es aufs Tor schießen. Spieler vier spielt zu Spieler acht, der weiter zu Spieler sieben.",
     "moves": [
      {
       "who": "b1",
@@ -209,7 +209,7 @@
    },
    {
     "label": "Abgefangen",
-    "say": "Neon sieben will zu Neon zehn passen, aber Rot neun fängt den Ball ab und spielt sofort zu Rot fünf.",
+    "say": "Spieler sieben will zu Spieler zehn passen, aber Spieler neun fängt den Ball ab und spielt sofort zu Spieler fünf.",
     "moves": [
      {
       "who": "r9",
@@ -240,7 +240,7 @@
    },
    {
     "label": "Sechs Sekunden",
-    "say": "Ballverlust! Jetzt hat Team Neon sechs Sekunden. Neon zehn, Neon sieben und Neon elf sprinten gleichzeitig los und machen Rot fünf eng.",
+    "say": "Ballverlust! Jetzt hat Team Neon sechs Sekunden. Spieler zehn, Spieler sieben und Spieler elf sprinten gleichzeitig los und machen Spieler fünf eng.",
     "moves": [
      {
       "who": "n10",
@@ -270,7 +270,7 @@
    },
    {
     "label": "Zurückerobert: Punkt",
-    "say": "Neon zehn erobert den Ball nach vier Sekunden zurück, und das gibt einen Punkt für Team Neon. Jetzt muss Team Rot sofort pressen und hat selbst sechs Sekunden.",
+    "say": "Spieler zehn erobert den Ball nach vier Sekunden zurück, und das gibt einen Punkt für Team Neon. Jetzt muss Team Rot sofort pressen und hat selbst sechs Sekunden.",
     "moves": [
      {
       "who": "n10",
@@ -430,7 +430,7 @@
     "steps": [
      {
       "label": "Alle zusammen",
-      "say": "Rot neun hat gerade den Ball erobert. Sofort laufen Neon zehn, Neon sieben und Neon vier gleichzeitig los. Neon sieben stellt den Pass zu Rot zwei zu.",
+      "say": "Spieler neun hat gerade den Ball erobert. Sofort laufen Spieler zehn, Spieler sieben und Spieler vier gleichzeitig los. Spieler sieben stellt den Pass zu Spieler zwei zu.",
       "moves": [
        {
         "who": "n10",
@@ -460,7 +460,7 @@
      },
      {
       "label": "Abgefangen: Punkt",
-      "say": "Rot neun muss unter Druck schnell passen. Neon elf fängt den Pass zu Rot drei ab, und das gibt einen Punkt für Team Neon.",
+      "say": "Spieler neun muss unter Druck schnell passen. Spieler elf fängt den Pass zu Spieler drei ab, und das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "n11",
@@ -488,7 +488,7 @@
    "label": "Steigerung",
    "say": "Und jetzt die Steigerung: Ein Anspieler draußen.",
    "title": "Anspieler draußen",
-   "text": "Rot zwei steht jetzt außerhalb des Feldes als Anspieler. Er darf den Ball zweimal berühren und muss dann zurück ins Feld passen. Team Neon muss noch schneller pressen und diesen Pass verhindern.",
+   "text": "Spieler zwei steht jetzt außerhalb des Feldes als Anspieler. Er darf den Ball zweimal berühren und muss dann zurück ins Feld passen. Team Neon muss noch schneller pressen und diesen Pass verhindern.",
    "board": {
     "players": [
      {
@@ -603,7 +603,7 @@
     "steps": [
      {
       "label": "Abgefangen",
-      "say": "Neon sieben will zu Neon zehn passen, aber Rot neun fängt den Ball ab.",
+      "say": "Spieler sieben will zu Spieler zehn passen, aber Spieler neun fängt den Ball ab.",
       "moves": [
        {
         "who": "r9",
@@ -625,7 +625,7 @@
      },
      {
       "label": "Raus zum Anspieler",
-      "say": "Rot neun spielt sofort raus zu Rot zwei. Neon zehn sprintet los und stellt den Pass zurück ins Feld zu.",
+      "say": "Spieler neun spielt sofort raus zu Spieler zwei. Spieler zehn sprintet los und stellt den Pass zurück ins Feld zu.",
       "moves": [
        {
         "who": "b1",
@@ -648,7 +648,7 @@
      },
      {
       "label": "Abgefangen: Punkt",
-      "say": "Rot zwei passt nach zwei Kontakten zu Rot fünf, aber Neon zehn fängt den Ball ab. Das gibt einen Punkt für Team Neon, und jetzt presst Team Rot.",
+      "say": "Spieler zwei passt nach zwei Kontakten zu Spieler fünf, aber Spieler zehn fängt den Ball ab. Das gibt einen Punkt für Team Neon, und jetzt presst Team Rot.",
       "moves": [
        {
         "who": "b1",

@@ -23,7 +23,7 @@
  "description": "Zwei kleine Rondos spielen gleichzeitig vier gegen eins. Der Verteidiger in der Mitte will den Ball erobern: Fängt er ihn ab und behält ihn, gibt das zwei Punkte für sein Team. Spitzelt er ihn nur ins Aus, gibt das einen Punkt. Nach jedem Ballgewinn tauschen der Verteidiger und der Gegenspieler die Rollen.",
  "organisation": [
   "Aufbauen: Ein Feld von 9 mal 15 Metern, quer in der Mitte geteilt. So entstehen zwei kleine Felder.",
-  "Verteilen: In jedem Feld drei Springer am Rand, ein Spieler am Ball und ein Verteidiger in der Mitte. Oben verteidigt Rot fünf gegen Neon sechs, unten Neon vier gegen Rot sieben. Der Trainer steht an der Seite mit Bällen.",
+  "Verteilen: In jedem Feld drei Springer am Rand, ein Spieler am Ball und ein Verteidiger in der Mitte. Oben verteidigt Spieler fünf gegen Spieler sechs, unten Spieler vier gegen Spieler sieben. Der Trainer steht an der Seite mit Bällen.",
   "Ablauf: Beide Rondos spielen gleichzeitig vier gegen eins. Die Springer spielen immer mit dem Team am Ball. Der Verteidiger lauert und presst bei einem schlechten Pass oder einer schlechten Annahme.",
   "Wertung und Wechsel: Abgefangen und behalten gibt zwei Punkte, ins Aus gespitzelt einen Punkt. Nach jedem Ballgewinn tauschen die beiden die Rollen. Das Team mit mehr Punkten nach der Spielzeit gewinnt."
  ],
@@ -170,7 +170,7 @@
   "steps": [
    {
     "label": "Vier gegen eins",
-    "say": "Beide Rondos spielen gleichzeitig. Wir schauen nach oben: Neon sechs spielt zum Springer, und Rot fünf schiebt nach. Unten spielt Rot sieben zum Springer, und Neon vier schiebt genauso nach.",
+    "say": "Beide Rondos spielen gleichzeitig. Wir schauen nach oben: Spieler sechs spielt zum Springer, und Spieler fünf schiebt nach. Unten spielt Spieler sieben zum Springer, und Spieler vier schiebt genauso nach.",
     "moves": [
      {
       "who": "b1",
@@ -210,7 +210,7 @@
    },
    {
     "label": "Abgefangen",
-    "say": "Rot fünf liest die Körperhaltung des Springers. Der spielt einen ungenauen Pass nach links, und Rot fünf fängt den Ball ab.",
+    "say": "Spieler fünf liest die Körperhaltung des Springers. Der spielt einen ungenauen Pass nach links, und Spieler fünf fängt den Ball ab.",
     "moves": [
      {
       "who": "r5",
@@ -242,7 +242,7 @@
    },
    {
     "label": "Ball behalten: Punkte",
-    "say": "Rot fünf behält den Ball und spielt sauber zum Springer, und das gibt zwei Punkte für Team Rot. Jetzt tauschen die beiden: Neon sechs verteidigt in der Mitte, Rot fünf spielt außen.",
+    "say": "Spieler fünf behält den Ball und spielt sauber zum Springer, und das gibt zwei Punkte für Team Rot. Jetzt tauschen die beiden: Spieler sechs verteidigt in der Mitte, Spieler fünf spielt außen.",
     "moves": [
      {
       "who": "b1",
@@ -401,7 +401,7 @@
     "steps": [
      {
       "label": "Lauern",
-      "say": "Wir schauen nach unten. Neon vier beobachtet den Springer rechts. Der spielt zum Springer unten, und Neon vier schiebt nach.",
+      "say": "Wir schauen nach unten. Spieler vier beobachtet den Springer rechts. Der spielt zum Springer unten, und Spieler vier schiebt nach.",
       "moves": [
        {
         "who": "n4",
@@ -434,7 +434,7 @@
      },
      {
       "label": "Ins Aus: Punkt",
-      "say": "Der Springer nimmt den Ball schlecht an. Neon vier presst sofort und spitzelt den Ball ins Aus, und das gibt einen Punkt für Team Neon. Hätte er den Ball abgefangen und behalten, gäbe es zwei Punkte.",
+      "say": "Der Springer nimmt den Ball schlecht an. Spieler vier presst sofort und spitzelt den Ball ins Aus, und das gibt einen Punkt für Team Neon. Hätte er den Ball abgefangen und behalten, gäbe es zwei Punkte.",
       "moves": [
        {
         "who": "n4",
@@ -568,7 +568,7 @@
     "steps": [
      {
       "label": "Vier gegen eins",
-      "say": "Beide Rondos spielen gleichzeitig. Oben spielt Neon sechs zu Neon zwei, und Rot fünf schiebt nach. Unten spielt Rot sieben zu Rot neun.",
+      "say": "Beide Rondos spielen gleichzeitig. Oben spielt Spieler sechs zu Spieler zwei, und Spieler fünf schiebt nach. Unten spielt Spieler sieben zu Spieler neun.",
       "moves": [
        {
         "who": "b1",
@@ -608,7 +608,7 @@
      },
      {
       "label": "Abgefangen",
-      "say": "Neon zwei will zu Neon acht passen, aber Rot fünf fängt den Ball ab und behält ihn.",
+      "say": "Spieler zwei will zu Spieler acht passen, aber Spieler fünf fängt den Ball ab und behält ihn.",
       "moves": [
        {
         "who": "b1",
@@ -630,7 +630,7 @@
      },
      {
       "label": "Tauschen: Punkte",
-      "say": "Das gibt zwei Punkte für Team Rot. Jetzt tauscht Rot fünf mit Neon zwei: Neon zwei läuft in die Mitte und verteidigt, und Rot fünf geht mit dem Ball nach außen.",
+      "say": "Das gibt zwei Punkte für Team Rot. Jetzt tauscht Spieler fünf mit Spieler zwei: Spieler zwei läuft in die Mitte und verteidigt, und Spieler fünf geht mit dem Ball nach außen.",
       "moves": [
        {
         "who": "n2",

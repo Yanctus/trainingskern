@@ -44,7 +44,7 @@ u = {"title": "Dribbeln auf engem Raum", "code": "UE-103", "kind": "Übungsform"
   V("Steigerung", "Und jetzt die zweite Steigerung: Ein Verteidiger jagt den Ball, ein Springer hilft mit Doppelpässen.", "Verteidiger und Springer",
     "Ein Verteidiger darf jedem Spieler den Ball wegspielen. In den zwei Zonen ist man sicher und darf dort fünf Sekunden stehen bleiben. Ein Springer hilft: Wer unter Druck gerät, spielt mit ihm einen Doppelpass und dribbelt weg.",
     sp([P("r7", "b", 44, 22, "7"), P("f", "t", 54, 10, "F")]), bl(),
-    [S("Verteidiger kommt", "Rot sieben läuft auf Spieler zwei zu. Gleichzeitig spielt Spieler zwei zum Springer und startet an Rot sieben vorbei.",
+    [S("Verteidiger kommt", "Spieler sieben läuft auf Spieler zwei zu. Gleichzeitig spielt Spieler zwei zum Springer und startet an Spieler sieben vorbei.",
        mv("r7", [39, 18]), ps("b2", [55.6, 10.6], delay=0.2), mv("n2", [44, 27], delay=0.3)),
      S("Doppelpass und ab in die Zone", "Der Springer spielt direkt zurück, und Spieler zwei dribbelt in die sichere Zone.",
        ps("b2", [45.6, 27.6]), dr("n2", "b2", [40, 37], after=True))],

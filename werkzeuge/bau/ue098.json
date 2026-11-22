@@ -199,7 +199,7 @@
   "steps": [
    {
     "label": "Kompakt verschieben",
-    "say": "Rot zwei passt zu Rot sieben. Gleichzeitig verschiebt Neon als Einheit: Neon vier presst, die anderen rücken nach.",
+    "say": "Spieler zwei passt zu Spieler sieben. Gleichzeitig verschiebt Neon als Einheit: Spieler vier presst, die anderen rücken nach.",
     "moves": [
      {
       "who": "b1",
@@ -249,7 +249,7 @@
    },
    {
     "label": "Pass nach vorn",
-    "say": "Rot sieben spielt nach vorn zu Rot neun. Neon sechs und Neon fünf schieben sofort von beiden Seiten heran.",
+    "say": "Spieler sieben spielt nach vorn zu Spieler neun. Spieler sechs und Spieler fünf schieben sofort von beiden Seiten heran.",
     "moves": [
      {
       "who": "b1",
@@ -281,7 +281,7 @@
    },
    {
     "label": "Ball erobert",
-    "say": "Neon fünf spitzelt den Ball weg und spielt sofort zu Neon vier. Jetzt greift Neon an.",
+    "say": "Spieler fünf spitzelt den Ball weg und spielt sofort zu Spieler vier. Jetzt greift Neon an.",
     "moves": [
      {
       "who": "b1",
@@ -303,7 +303,7 @@
    },
    {
     "label": "Gegenangriff: Punkt",
-    "say": "Neon vier spielt steil zu Neon acht, und der schießt ins Tor. Das gibt einen Punkt für Neon.",
+    "say": "Spieler vier spielt steil zu Spieler acht, und der schießt ins Tor. Das gibt einen Punkt für Neon.",
     "moves": [
      {
       "who": "n8",
@@ -452,7 +452,7 @@
     "steps": [
      {
       "label": "Nach außen drängen",
-      "say": "Neon acht läuft Rot zwei von innen an. Rot zwei kann nur an der Linie entlang dribbeln.",
+      "say": "Spieler acht läuft Spieler zwei von innen an. Spieler zwei kann nur an der Linie entlang dribbeln.",
       "moves": [
        {
         "who": "n8",
@@ -476,7 +476,7 @@
      },
      {
       "label": "In die Falle",
-      "say": "Rot zwei passt zu Rot sieben, doch Neon vier hat darauf gewartet und fängt den Ball ab.",
+      "say": "Spieler zwei passt zu Spieler sieben, doch Spieler vier hat darauf gewartet und fängt den Ball ab.",
       "moves": [
        {
         "who": "b1",
@@ -653,7 +653,7 @@
     "steps": [
      {
       "label": "Pass zum Endspieler",
-      "say": "Rot neun spielt zum Springer oben und startet sofort. Neon sechs kommt zu spät.",
+      "say": "Spieler neun spielt zum Springer oben und startet sofort. Spieler sechs kommt zu spät.",
       "moves": [
        {
         "who": "b1",
@@ -685,7 +685,7 @@
      },
      {
       "label": "Ablage und Abschluss",
-      "say": "Der Springer legt direkt ab, und Rot neun schießt ins Tor. Das gibt einen Punkt für Rot.",
+      "say": "Der Springer legt direkt ab, und Spieler neun schießt ins Tor. Das gibt einen Punkt für Rot.",
       "moves": [
        {
         "who": "b1",

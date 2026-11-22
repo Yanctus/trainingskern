@@ -190,7 +190,7 @@
   "steps": [
    {
     "label": "Ball laufen lassen",
-    "say": "Team Neon lässt den Ball am Rand laufen. Neon drei spielt zu Neon acht, der weiter zu Neon vier. Rot sieben läuft hinterher.",
+    "say": "Team Neon lässt den Ball am Rand laufen. Spieler drei spielt zu Spieler acht, der weiter zu Spieler vier. Spieler sieben läuft hinterher.",
     "moves": [
      {
       "who": "b1",
@@ -222,7 +222,7 @@
    },
    {
     "label": "Kopf hoch",
-    "say": "Neon vier hebt den Kopf und sieht: Die Verteidiger stehen weit auseinander, durch das Dreieck ist der Weg zu Neon sechs frei.",
+    "say": "Spieler vier hebt den Kopf und sieht: Die Verteidiger stehen weit auseinander, durch das Dreieck ist der Weg zu Spieler sechs frei.",
     "moves": [
      {
       "who": "n4",
@@ -236,7 +236,7 @@
    },
    {
     "label": "Durch das Dreieck: Punkt",
-    "say": "Neon vier spielt scharf durch das Dreieck zu Neon sechs, und das gibt einen Punkt für Team Neon. Team Neon behält den Ball und sucht gleich die nächste Lücke.",
+    "say": "Spieler vier spielt scharf durch das Dreieck zu Spieler sechs, und das gibt einen Punkt für Team Neon. Team Neon behält den Ball und sucht gleich die nächste Lücke.",
     "moves": [
      {
       "who": "b1",
@@ -365,7 +365,7 @@
     "steps": [
      {
       "label": "Abgefangen",
-      "say": "Neon zwei will zu Neon fünf passen, aber Rot elf läuft dazwischen und fängt den Ball ab.",
+      "say": "Spieler zwei will zu Spieler fünf passen, aber Spieler elf läuft dazwischen und fängt den Ball ab.",
       "moves": [
        {
         "who": "r11",
@@ -388,7 +388,7 @@
      },
      {
       "label": "Fünf Pässe: Punkt",
-      "say": "Rot elf spielt zu Rot neun, der weiter zu Rot sieben. Schafft Team Rot fünf Pässe in Folge, gibt das einen Punkt für Team Rot. Darum pressen Neon vier und Neon acht sofort.",
+      "say": "Spieler elf spielt zu Spieler neun, der weiter zu Spieler sieben. Schafft Team Rot fünf Pässe in Folge, gibt das einen Punkt für Team Rot. Darum pressen Spieler vier und Spieler acht sofort.",
       "moves": [
        {
         "who": "b1",
@@ -535,7 +535,7 @@
     "steps": [
      {
       "label": "Mitte sehen",
-      "say": "Neon drei hebt den Kopf und sieht Neon zehn frei im Dreieck. Er spielt ihn an.",
+      "say": "Spieler drei hebt den Kopf und sieht Spieler zehn frei im Dreieck. Er spielt ihn an.",
       "moves": [
        {
         "who": "n3",
@@ -558,7 +558,7 @@
      },
      {
       "label": "Auf die andere Seite: Punkt",
-      "say": "Neon zehn spielt direkt weiter auf die andere Seite zu Neon zwei, und das gibt einen Punkt für Team Neon.",
+      "say": "Spieler zehn spielt direkt weiter auf die andere Seite zu Spieler zwei, und das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "b1",
