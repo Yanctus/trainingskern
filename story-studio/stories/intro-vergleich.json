@@ -1,0 +1,15 @@
+{
+  "titel": "Intros im Vergleich",
+  "intro": false,
+  "uebergang": "blitz",
+  "szenen": [
+    { "typ": "intro", "film": "intro-papier" },
+    { "typ": "hook", "ton": "papier", "zeilen": ["Intro 1", "*Papierfiguren*"], "dauer": 1.4 },
+    { "typ": "intro", "film": "intro-skizze" },
+    { "typ": "hook", "ton": "papier", "zeilen": ["Intro 2", "*Skizze*"], "dauer": 1.4 },
+    { "typ": "intro", "film": "intro-magnete" },
+    { "typ": "hook", "ton": "papier", "zeilen": ["Intro 3", "*Taktiktafel*"], "dauer": 1.4 },
+    { "typ": "intro", "film": "intro-collage" },
+    { "typ": "hook", "ton": "papier", "zeilen": ["Intro 4", "*Collage*"], "dauer": 1.4 }
+  ]
+}

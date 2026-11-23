@@ -14,8 +14,9 @@ Das Video liegt danach in `out/ue-001.mp4`, daneben ein Titelbild `out/ue-001.jp
 
 - **Intro:** ohne Angabe der Preloader der App im Hochformat (knapp 2 Sekunden): Mittelkreis, das K setzt sich zusammen,
   TRAININGSKERN steigt auf, der Ball rollt über die Seitenlinie. Dann zieht der Vorhang an der Mittellinie auf.
-  Mit `"intro": { "film": "intro-flutlicht" }` läuft stattdessen ein Film, der genau auf dem K endet (Flutlicht geht an,
-  Kamera rast über die Mittellinie). `"intro": false` lässt das Intro weg, zum Beispiel wenn die Story mit einer Frage beginnt.
+  Mit `"intro": { "film": "intro-papier" }` läuft stattdessen ein Film, der genau auf dem K endet, danach steigt
+  TRAININGSKERN auf (zusammen gut 3 Sekunden). Im Stil der App gibt es `intro-papier`, `intro-skizze`, `intro-magnete`
+  und `intro-collage`, als Realfilm `intro-flutlicht` und `intro-anstoss`. `"intro": false` lässt das Intro weg, zum Beispiel wenn die Story mit einer Frage beginnt.
 - **Marke oben links** und die **Spielminute unten**: Der Ball rollt über die ganze Story von 0′ bis 90′.
 - **Übergänge** zwischen den Szenen: `anstoss` (zwei schwarze Hälften schließen an der Mittellinie, Lichtblitz, K),
   `streifen` (schräges Band in Orange, Neon, Schwarz), `blitz` (harter Schnitt mit Neon-Blitz),
@@ -69,10 +70,16 @@ für `hook`-Szenen, als Intro und als Wischer:
 | `ballnetz` | Ballnetz fällt auf den Rasen, Bälle rollen zur Kamera | Trainingsbeginn |
 | `pfeife-regen` | Pfeife hängt am Pfosten im Regen | ruhige Bilder, Zitate |
 | `platz-daemmerung` | leerer Platz mit Hütchenreihe in der Dämmerung | allgemeiner Hintergrund |
-| `intro-flutlicht`, `intro-anstoss` | enden auf dem K | Intro |
+| `intro-papier` | Papierfiguren auf dem dunklen Platz, eine schießt den Ball zur Kamera, Neon-Blitz, K | Intro im Stil der App |
+| `intro-skizze` | Marker zeichnet Feld, Pfeile und Hütchen auf Papier, das Blatt reißt weg, K | Intro im Stil der App |
+| `intro-magnete` | Taktiktafel von oben, Magnete und Pfeile laufen zur Mitte, Neon-Blitz, K | Intro im Stil der App |
+| `intro-collage` | Papierfetzen, Klebeband, Ball und Hütchen schnappen zusammen, K | Intro im Stil der App |
+| `intro-flutlicht`, `intro-anstoss` | Realfilm, enden auf dem K | Intro |
 | `wischer-marker`, `wischer-staub` | Stift auf Weiß, Kreidestaub auf Schwarz | Übergänge `marker`, `staub` |
 
-`filme/filme.json` hält die Angaben je Film (Ausschnitt, Tempo, wo das K im letzten Bild sitzt, Maske für Wischer).
+`filme/filme.json` hält die Angaben je Film (Ausschnitt, Tempo, Maske für Wischer). Bei Intro-Filmen (Name beginnt mit `intro-`)
+misst der Renderer selbst aus, wo das K im letzten Bild sitzt und ab wann es steht; Angaben in `filme.json` gehen vor.
+`stories/intro-vergleich.json` zeigt alle Intros im Stil der App hintereinander.
 `intro-anstoss` wird erst ab der Staubwolke genutzt: Davor ist ein Stutzen mit einem Markenlogo zu sehen, das nicht in die Werbung soll.
 In `ton/` liegen die Geräusche der gebauten Übergänge (`wusch`, `rumms`, `klick`), geschnitten aus dem Ton der Filme.
 Ein neuer Film: Datei nach `filme/` legen (Name in Kleinbuchstaben mit Bindestrich) und in der Szene mit `"film": "name"` angeben.

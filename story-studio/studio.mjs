@@ -75,6 +75,19 @@ async function zerlegeFilm(name) {
   const anzahl = readdirSync(ordner).filter((f) => f.endsWith(".jpg")).length;
   const { stdout } = await run("ffprobe", ["-v", "error", "-show_entries", "stream=codec_type", "-of", "csv=p=0", quelle]);
   const info = { anzahl, fps: 30, dauer: anzahl / 30, ton: stdout.includes("audio"), marke };
+  // Intro-Filme enden auf dem K: Wo es im letzten Bild sitzt und ab wann es still steht, wird hier ausgemessen
+  // (helle Fläche des Zeichens). So braucht ein neues Intro keine Angaben von Hand.
+  if (name.startsWith("intro-")) {
+    const mess = await run("ffmpeg", ["-hide_banner", "-i", quelle, "-vf", "fps=30,scale=720:1280,bbox=min_val=175", "-f", "null", "-"]).catch((e) => e);
+    const boxen = [...String(mess.stderr || "").matchAll(/pts_time:([\d.]+) x1:(\d+) x2:(\d+) y1:(\d+) y2:(\d+) w:(\d+) h:(\d+)/g)].map((m) => m.slice(1).map(Number));
+    const ende = boxen[boxen.length - 1];
+    if (ende && ende[5] < 400 && Math.abs(ende[5] - ende[6]) < 30) { // nur wenn am Ende wirklich ein kleines, etwa quadratisches Zeichen steht
+      const gleich = (b) => [1, 2, 3, 4].every((i) => Math.abs(b[i] - ende[i]) <= 4);
+      let i = boxen.length - 1;
+      while (i > 0 && gleich(boxen[i - 1])) i--;
+      info.auto = { k: [ende[1], ende[3], ende[5]], bis: Math.min(info.dauer, boxen[i][0] + 0.35) };
+    }
+  }
   writeFileSync(infoPfad, JSON.stringify(info));
   return info;
 }

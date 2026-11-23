@@ -75,14 +75,17 @@ function introSzene(s, daten) {
   frame.append(node);
   const $ = (x) => node.querySelector(x);
   // Angaben zum Film aus filme/filme.json: ab/bis = genutzter Ausschnitt, tempo, k = wo das K im letzten Bild sitzt [x, y, Breite] bei 720 px Bildbreite
-  const fi = (film && daten.filmInfo[s.film]) || {};
-  const tempo = s.tempo || fi.tempo || (film ? 1.6 : 1), ab = s.ab ?? fi.ab ?? 0, bis = Math.min(s.bis ?? fi.bis ?? 99, film ? film.dauer : 99);
+  // Ohne Angaben misst der Renderer selbst aus, wo das K sitzt und ab wann es steht (film.auto). Der Filmteil dauert höchstens gut zwei Sekunden.
+  const fi = film ? { ...(film.auto || {}), ...(daten.filmInfo[s.film] || {}) } : {};
+  const ab = s.ab ?? fi.ab ?? 0, bis = Math.min(s.bis ?? fi.bis ?? 99, film ? film.dauer : 99);
+  const tempo = s.tempo || fi.tempo || (film ? Math.max(1, (bis - ab) / 2.2) : 1);
   const filmDauer = film ? (bis - ab) / tempo : 0;
   if (fi.k) {
     // Das gezeichnete K genau auf das K des Films legen, das Wort rückt mit
     const [x, y, b] = fi.k.map((v) => v * 1.5), mitte = node.querySelector(".mitte"), k = node.querySelector(".k");
     mitte.style.translate = `${(x + b / 2 - 540).toFixed(1)}px ${(y + b / 2 - 825).toFixed(1)}px`;
     k.style.scale = (b / 310).toFixed(4);
+    node.querySelector(".wort").style.translate = `0 ${Math.max(0, (b - 310) / 2 + (b > 330 ? 14 : 0)).toFixed(1)}px`; // ein größeres K schiebt das Wort nach unten
   }
   const dauer = film ? filmDauer + 0.95 : 1.85 / tempo;
   return { el: node, ton: "dunkel", dauer, intro: true, ohneMarke: true, ohneUhr: true, start(T) {
