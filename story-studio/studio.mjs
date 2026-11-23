@@ -11,7 +11,7 @@ import { createServer } from "node:http";
 import { createRequire } from "node:module";
 import { execFile, spawn } from "node:child_process";
 import { promisify } from "node:util";
-import { existsSync, mkdirSync, readFileSync, rmSync, statSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, statSync, writeFileSync } from "node:fs";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import os from "node:os";
@@ -53,7 +53,32 @@ async function ladeKatalog() {
   katalog = JSON.parse(readFileSync(ziel, "utf8"));
   return katalog;
 }
-const sichtbar = (e) => !e.hidden;
+
+/* ---------- Filme (filme/*.mp4): einmal in Einzelbilder zerlegen, damit jedes Bild genau getroffen wird ---------- */
+// filme/filme.json: Angaben je Film, z. B. { "wischer-marker": { "maske": true, "zu": 3.9 } }
+const filmInfo = () => { try { return JSON.parse(readFileSync(path.join(HIER, "filme", "filme.json"), "utf8")); } catch { return {}; } };
+async function zerlegeFilm(name) {
+  if (!/^[a-z0-9-]+$/.test(name)) throw new Error("Filmname: nur Kleinbuchstaben, Ziffern, Bindestrich");
+  const quelle = path.join(HIER, "filme", name + ".mp4"), ordner = path.join(CACHE, "film-" + name), angaben = filmInfo()[name] || {};
+  if (!existsSync(quelle)) throw new Error("Film fehlt: filme/" + name + ".mp4");
+  const st = statSync(quelle), marke = `${st.size}-${Math.round(st.mtimeMs)}-${JSON.stringify(angaben)}`;
+  const infoPfad = path.join(ordner, "info.json");
+  if (existsSync(infoPfad)) { const alt = JSON.parse(readFileSync(infoPfad, "utf8")); if (alt.marke === marke) return alt; }
+  rmSync(ordner, { recursive: true, force: true });
+  mkdirSync(ordner, { recursive: true });
+  // maske: Wischer in reinem Schwarz und Weiß (wird über das Bild multipliziert) · schwarz: Schwarz wirklich schwarz (für "screen")
+  const filter = ["fps=30", "scale=720:1280:force_original_aspect_ratio=increase", "crop=720:1280",
+    ...(angaben.maske ? ["format=gray", "lutyuv=y='clip((val-70)*255/110,0,255)'"] : []),
+    ...(angaben.schwarz ? ["lutyuv=y='clip((val-28)*255/227,0,255)'"] : []),
+    ...(angaben.lime ? ["colorchannelmixer=rr=0.84"] : [])].join(","); // lime: Gelb etwas grüner, Richtung Neon der Marke
+  await run("ffmpeg", ["-y", "-loglevel", "error", "-i", quelle, "-vf", filter, "-q:v", "3", "-start_number", "0", path.join(ordner, "%04d.jpg")]);
+  const anzahl = readdirSync(ordner).filter((f) => f.endsWith(".jpg")).length;
+  const { stdout } = await run("ffprobe", ["-v", "error", "-show_entries", "stream=codec_type", "-of", "csv=p=0", quelle]);
+  const info = { anzahl, fps: 30, dauer: anzahl / 30, ton: stdout.includes("audio"), marke };
+  writeFileSync(infoPfad, JSON.stringify(info));
+  return info;
+}
+const klaenge = () => { try { return Object.fromEntries(readdirSync(path.join(HIER, "ton")).filter((f) => f.endsWith(".mp3")).map((f) => [f.slice(0, -4), true])); } catch { return {}; } };
 
 /* ---------- kleiner Server: Studio, Story-Dateien, Daten, Aufnahmen ---------- */
 const TYP = { ".html": "text/html; charset=utf-8", ".js": "text/javascript; charset=utf-8", ".css": "text/css; charset=utf-8", ".json": "application/json; charset=utf-8", ".woff2": "font/woff2", ".jpg": "image/jpeg", ".png": "image/png", ".svg": "image/svg+xml" };
@@ -65,8 +90,13 @@ function starteServer(port = 0) {
       if (u.pathname === "/api/daten") {
         const alle = await ladeKatalog(), codes = (u.searchParams.get("codes") || "").split(",").filter(Boolean);
         const einheiten = Object.fromEntries(codes.map((c) => [c, alle.find((e) => e.code === c)]).filter(([, e]) => e));
+        const filme = {};
+        // Fehlt ein Film, läuft die Story ohne ihn weiter (Hook ohne Hintergrund, Übergang "anstoss")
+        for (const name of (u.searchParams.get("filme") || "").split(",").filter(Boolean)) {
+          try { filme[name] = await zerlegeFilm(name); } catch (err) { console.warn("Hinweis:", err.message); }
+        }
         res.writeHead(200, { "content-type": TYP[".json"] });
-        return res.end(JSON.stringify({ anzahl: alle.filter(sichtbar).length, einheiten }));
+        return res.end(JSON.stringify({ einheiten, filme, filmInfo: filmInfo(), klaenge: klaenge() }));
       }
       const frei = [["/studio/", path.join(HIER, "studio")], ["/stories/", path.join(HIER, "stories")], ["/cache/", CACHE]].find(([p]) => u.pathname.startsWith(p));
       if (!frei) { res.writeHead(404); return res.end("nicht gefunden"); }
@@ -129,10 +159,28 @@ async function render(chromium, url) {
   };
   const foto = (page, t, pfad) => page.evaluate((zeit) => window.__story.seek(zeit), t).then(() => page.screenshot({ path: pfad, type: "jpeg", quality: 96 }));
 
+  // Tonspur: jedes Geräusch an seine Stelle, alles zusammengemischt. Ohne Geräusche bleibt die Spur still.
+  async function tonspur(ton, dauer) {
+    const ein = ["-f", "lavfi", "-t", String(dauer), "-i", "anullsrc=r=44100:cl=stereo"], teile = [];
+    for (const k of ton) {
+      const pfad = path.join(HIER, k.datei);
+      if (!existsSync(pfad)) continue;
+      const { stdout } = await run("ffprobe", ["-v", "error", "-select_streams", "a:0", "-show_entries", "stream=duration", "-of", "csv=p=0", pfad]);
+      const ganz = parseFloat(stdout);
+      if (!(ganz > 0)) continue; // Datei ohne Ton
+      const stueck = Math.max(0.05, Math.min(k.dauer || ganz, ganz - k.von)), laenge = stueck / k.tempo, n = teile.length + 1;
+      ein.push("-i", pfad);
+      teile.push(`[${n}:a]atrim=start=${k.von}:duration=${stueck},asetpts=PTS-STARTPTS,aresample=44100,aformat=channel_layouts=stereo${k.tempo !== 1 ? `,atempo=${k.tempo}` : ""},volume=${k.laut}`
+        + `,afade=t=in:d=${Math.min(k.ein, laenge / 2)},afade=t=out:st=${Math.max(0, laenge - k.aus)}:d=${Math.min(k.aus, laenge)},adelay=${Math.round(k.start * 1000)}:all=1[t${n}]`);
+    }
+    const mix = teile.length ? `${teile.join(";")};[0:a]${teile.map((_, i) => `[t${i + 1}]`).join("")}amix=inputs=${teile.length + 1}:normalize=0:duration=first,alimiter=limit=0.9[aus]` : "[0:a]anull[aus]";
+    return { ein, mix, anzahl: teile.length };
+  }
+
   const bilder = wert("bild");
   if (bilder) {
     const { browser, page, info } = await oeffne();
-    console.log(`Dauer ${info.dauer.toFixed(2)} s · Szenen: ${info.szenen.map((s) => `${s.typ} ${s.t0.toFixed(2)}–${s.t1.toFixed(2)}`).join(" | ")}`);
+    console.log(`Dauer ${info.dauer.toFixed(2)} s · ${info.ton.length} Geräusche · Szenen: ${info.szenen.map((s) => `${s.typ} ${s.t0.toFixed(2)}–${s.t1.toFixed(2)}`).join(" | ")}`);
     for (const t of bilder.split(",").map(Number)) {
       const pfad = path.join(OUT, `${kennung}-${t.toFixed(2)}.jpg`);
       await foto(page, t, pfad);
@@ -157,20 +205,22 @@ async function render(chromium, url) {
   }));
   await Promise.all(seiten.map((s) => s.browser.close()));
 
-  // H.264 mit stiller Tonspur: so nimmt Instagram die Datei ohne Umwege, Musik kommt in der Instagram-App dazu
-  const mp4 = path.join(OUT, kennung + ".mp4");
+  // H.264 mit Tonspur (Geräusche und Filmton; ohne beides still): so nimmt Instagram die Datei ohne Umwege
+  const mp4 = path.join(OUT, kennung + ".mp4"), spur = await tonspur(seiten[0].info.ton || [], dauer);
   await new Promise((ok, nein) => {
-    const ff = spawn("ffmpeg", ["-y", "-loglevel", "error", "-framerate", String(fps), "-i", path.join(ordner, "%05d.jpg"), "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo",
-      "-vf", "scale=in_color_matrix=bt601:in_range=full:out_color_matrix=bt709:out_range=tv,format=yuv420p", "-c:v", "libx264", "-preset", "slow", "-crf", "17", "-profile:v", "high",
-      "-colorspace", "bt709", "-color_primaries", "bt709", "-color_trc", "bt709", "-r", String(fps), "-c:a", "aac", "-b:a", "96k", "-shortest", "-movflags", "+faststart", mp4], { stdio: "inherit" });
+    const ff = spawn("ffmpeg", ["-y", "-loglevel", "error", "-framerate", String(fps), "-i", path.join(ordner, "%05d.jpg"), ...spur.ein,
+      "-filter_complex", `[0:v]scale=in_color_matrix=bt601:in_range=full:out_color_matrix=bt709:out_range=tv,format=yuv420p[bild];${spur.mix.replace(/\[(\d+):a\]/g, (_, n) => `[${Number(n) + 1}:a]`)}`,
+      "-map", "[bild]", "-map", "[aus]", "-c:v", "libx264", "-preset", "slow", "-crf", "18", "-profile:v", "high",
+      "-colorspace", "bt709", "-color_primaries", "bt709", "-color_trc", "bt709", "-r", String(fps), "-c:a", "aac", "-b:a", "128k", "-t", dauer.toFixed(3), "-movflags", "+faststart", mp4], { stdio: "inherit" });
     ff.on("exit", (c) => (c === 0 ? ok() : nein(new Error("ffmpeg ist mit Fehler " + c + " ausgestiegen"))));
   });
   // Titelbild für die Übersicht: ein Bild aus der ersten Szene
   const titel = path.join(OUT, kennung + ".jpg");
-  const n = Math.min(anzahl - 1, Math.round((seiten[0].info.szenen[0].t0 + 2.6) * fps));
+  const erste = seiten[0].info.szenen.find((x) => x.typ !== "intro") || seiten[0].info.szenen[0];
+  const n = Math.min(anzahl - 1, Math.round((erste.t0 + 2.4) * fps));
   writeFileSync(titel, readFileSync(path.join(ordner, String(n).padStart(5, "0") + ".jpg")));
   if (!flag("bilder-behalten")) rmSync(ordner, { recursive: true, force: true });
-  console.log(`Fertig: ${mp4} (${(statSync(mp4).size / 1e6).toFixed(1)} MB) · Titelbild: ${titel}`);
+  console.log(`Fertig: ${mp4} (${(statSync(mp4).size / 1e6).toFixed(1)} MB, ${spur.anzahl} Geräusche) · Titelbild: ${titel}`);
 }
 
 const { chromium } = createRequire(import.meta.url)("playwright");

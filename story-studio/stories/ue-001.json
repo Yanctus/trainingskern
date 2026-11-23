@@ -1,5 +1,8 @@
 {
   "titel": "Dribbel-Dreieck mit Ablage",
+  "intro": {
+    "film": "intro-flutlicht"
+  },
   "uebergang": "anstoss",
   "szenen": [
     {
@@ -12,7 +15,7 @@
       "code": "UE-001",
       "schritte": 6,
       "tempo": 1.7,
-      "uebergang": "streifen"
+      "uebergang": "staub"
     },
     {
       "typ": "punkte",
@@ -27,7 +30,7 @@
         3300
       ],
       "zettel": "Skizze, Platz, Ton: alles drin",
-      "uebergang": "streifen"
+      "uebergang": "marker"
     },
     {
       "typ": "abpfiff"

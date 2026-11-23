@@ -1,0 +1,69 @@
+{
+  "titel": "Deine Spieler kennen jede Übung im Schlaf",
+  "intro": false,
+  "uebergang": "marker",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "huetchen-dribbling",
+      "zeilen": [
+        "Deine Spieler",
+        "kennen jede Übung",
+        "*im Schlaf?*"
+      ],
+      "lage": "oben",
+      "dauer": 3.4
+    },
+    {
+      "typ": "punkte",
+      "ton": "papier",
+      "streichen": true,
+      "titel": [
+        "Schon",
+        "wieder …"
+      ],
+      "punkte": [
+        "Rondo",
+        "Torschuss-Schlange",
+        "Abschlussspiel"
+      ],
+      "uebergang": "blitz"
+    },
+    {
+      "typ": "hook",
+      "ton": "neon",
+      "zeilen": [
+        "Zeit für",
+        "*Abwechslung.*"
+      ],
+      "dauer": 2.2
+    },
+    {
+      "typ": "app",
+      "seite": "/einheiten",
+      "dauer": 5,
+      "scroll": [
+        560,
+        2500
+      ],
+      "notiz": "Stöbern statt wiederholen ↓",
+      "stempel": "Katalog",
+      "uebergang": "streifen"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-007",
+      "tempo": 1.6,
+      "dach": "Mal was anderes",
+      "uebergang": "staub"
+    },
+    {
+      "typ": "abpfiff",
+      "zeilen": [
+        "Frische Übungen.",
+        "*Animiert erklärt.*"
+      ],
+      "uebergang": "anstoss"
+    }
+  ]
+}
