@@ -1,0 +1,49 @@
+{
+  "titel": "Vorlage für Kampagnen-Videos",
+  "intro": false,
+  "uebergang": "marker",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "hook-zettel",
+      "dach": "Kennst du das?",
+      "text": "Heute Training. Und keine Ahnung, *was du aufbaust?*"
+    },
+    {
+      "typ": "hook",
+      "ton": "neon",
+      "zeilen": [
+        "Altersklasse.",
+        "Dauer.",
+        "Schwerpunkt.",
+        "*Fertig.*"
+      ],
+      "dauer": 2.8,
+      "takt": 0.3
+    },
+    {
+      "typ": "app",
+      "seite": "/",
+      "dauer": 4.6,
+      "scroll": [
+        0,
+        430
+      ],
+      "notiz": "Drei Angaben, fertig ↓",
+      "zettel": "E-Jugend · 60 Min. · Dribbling",
+      "uebergang": "streifen"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-004",
+      "schritte": 4,
+      "tempo": 1.7,
+      "dach": "Fertig erklärt",
+      "uebergang": "staub"
+    },
+    {
+      "typ": "outro",
+      "uebergang": "anstoss"
+    }
+  ]
+}

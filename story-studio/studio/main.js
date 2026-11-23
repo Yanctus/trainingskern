@@ -70,7 +70,7 @@ function introSzene(s, daten) {
   const wort = [..."TRAININGSKERN"].map((c) => `<span>${c}</span>`).join("");
   const node = el(`<section class="sz intro">${film ? `<canvas class="in-film"></canvas>` : ""}
 <svg class="feld" viewBox="0 0 ${W} ${H}"><line x1="0" y1="900" x2="${W}" y2="900" pathLength="1"/><circle cx="540" cy="900" r="340" pathLength="1" transform="rotate(-90 540 900)"/><circle class="punkt" cx="540" cy="900" r="9"/></svg>
-<div class="mitte">${kBox("k")}<div class="wort">${wort}<i></i></div></div>
+<div class="mitte">${kBox("k")}<div class="wort">${wort}<i></i></div>${s.outro ? `<p class="in-adresse">${esc(s.adresse || "trainingskern.de")}</p>` : ""}</div>
 <div class="seitenlinie"><span class="hinweis">Anstoß</span><span class="min">0′</span><span class="ball">${ballSvg()}</span></div></section>`);
   frame.append(node);
   const $ = (x) => node.querySelector(x);
@@ -87,8 +87,8 @@ function introSzene(s, daten) {
     k.style.scale = (b / 310).toFixed(4);
     node.querySelector(".wort").style.translate = `0 ${Math.max(0, (b - 310) / 2 + (b > 330 ? 14 : 0)).toFixed(1)}px`; // ein größeres K schiebt das Wort nach unten
   }
-  const dauer = film ? filmDauer + 0.95 : 1.85 / tempo;
-  return { el: node, ton: "dunkel", dauer, intro: true, ohneMarke: true, ohneUhr: true, start(T) {
+  const dauer = s.dauer || (s.outro ? (film ? filmDauer : 1.2) + 2.2 : film ? filmDauer + 0.95 : 1.85 / tempo);
+  return { el: node, ton: "dunkel", dauer, intro: !s.outro, ohneMarke: true, ohneUhr: true, start(T) {
     const z = (x) => T + x / (film ? 1 : tempo), d = (x) => x / (film ? 1 : tempo); // Zeiten des Preloaders, gestaucht um tempo
     const w0 = film ? filmDauer - 0.05 : 0.48;
     if (film) {
@@ -116,6 +116,12 @@ function introSzene(s, daten) {
     }
     node.querySelectorAll(".wort span").forEach((b, i) => an(b, [{ transform: "translateY(110%)" }, { transform: "none" }], z(w0) + i * 0.026, 0.4, "cubic-bezier(.2,1.2,.3,1)"));
     an($(".wort i"), [{ transform: "scale(0)" }, { transform: "none" }], z(w0) + 0.42, 0.34, E.stark);
+    if (s.outro) { // Schluss: Logo und Adresse bleiben stehen
+      const a = $(".in-adresse");
+      a.style.translate = node.querySelector(".wort").style.translate || "0 0";
+      blende(a, z(w0) + 0.75, 0.3);
+      return;
+    }
     // Abgang: Logo wird einen Hauch größer und verschwindet, dann zieht der Vorhang an der Mittellinie auf
     an($(".mitte"), [{ opacity: 1, scale: "1" }, { opacity: 0, scale: "1.05" }], T + dauer - 0.3, 0.22, E.gerade, "forwards");
     an($(".seitenlinie"), [{ opacity: 1 }, { opacity: 0 }], T + dauer - 0.3, 0.2, E.gerade, "forwards");
@@ -204,6 +210,10 @@ function umbrechenAuf(text, n, max = 12) {
   while (z.length > n && max < 60) z = umbrechen(text, ++max);
   return z;
 }
+// Ein Satz als Zeilen: "*so*" markiert die Stelle mit der Neon-Fläche, max = Zeichen je Zeile
+function zeilenAus(text, max) {
+  return String(text).split("*").flatMap((t, i) => umbrechen(t.trim(), max).filter(Boolean).map((z) => (i % 2 ? `*${z}*` : z)));
+}
 // Schrift so weit verkleinern, bis das Breiteste von "teile" in maxB passt
 function passeAn(node, teile, maxB, min = 60) {
   let px = parseFloat(getComputedStyle(node).fontSize);
@@ -233,34 +243,67 @@ function filmHaken(node, s, daten, T, dauer) {
 
 const SZENEN = {
   intro: introSzene,
+  // Outro: derselbe Film wie das Intro im Stil der App (ohne Angabe die Papierfiguren mit dem Schuss zur Kamera),
+  // endet auf dem K, TRAININGSKERN steigt auf, darunter die Adresse. Steht am Ende statt oder nach dem Abpfiff.
+  outro: (s, daten) => introSzene({ ...s, outro: true }, daten),
 
   // Hook: eine große Frage oder Behauptung, auf Wunsch über einem Film ("film": Name aus filme/).
   // zeilen: "*so*" = Neon-Fläche. lage: oben | mitte | unten. ton (ohne Film): dunkel | papier | neon
   hook(s, daten) {
     const mitFilm = !!(s.film && daten.filme[s.film]), tonart = mitFilm ? "dunkel" : s.ton || "dunkel";
-    const node = el(`<section class="sz ${tonart} hook${mitFilm ? " mit-film" : ""}">
-${mitFilm ? `<canvas class="hg-film"></canvas><i class="hg-schleier"></i><i class="hg-korn"></i>` : `<div class="raster" style="left:0;bottom:340px;width:520px;height:520px;${tonart === "dunkel" ? "--hc:#f8f4e9;opacity:.14" : ""}"></div>`}
+    // Zettel-Filme (filme.json: "zettel": [x, y, breite, höhe], "dreh", "landet") enden auf einem leeren Blatt Papier.
+    // Der Text steht dann auf dem Blatt und erscheint in dem Moment, in dem es aufklatscht.
+    const fi = (mitFilm && daten.filmInfo[s.film]) || {}, zettel = fi.zettel;
+    if (zettel && !s.filmTempo) s = { ...s, filmTempo: Math.max(1, (fi.landet || 1) / 0.8) };
+    const landung = zettel ? ((fi.landet || 1) - (s.filmAb || 0)) / s.filmTempo + 0.1 : 0;
+    const node = el(`<section class="sz ${tonart} hook${mitFilm ? " mit-film" : ""}${zettel ? " auf-zettel" : ""}">
+${mitFilm ? `<canvas class="hg-film"></canvas>${zettel ? "" : `<i class="hg-schleier"></i><i class="hg-korn"></i>`}` : `<div class="raster" style="left:0;bottom:340px;width:520px;height:520px;${tonart === "dunkel" ? "--hc:#f8f4e9;opacity:.14" : ""}"></div>`}
 <div class="hk-block">${s.dach ? `<div class="am-dach hk-dach"><i></i><span>${esc(s.dach)}</span></div>` : ""}
 <h1 class="am-titel hk-titel">${titelZeilen(s.zeilen || ["Trainingskern"], tonart === "papier")}</h1>
 ${s.notiz ? `<p class="hk-notiz hand">${esc(s.notiz)}</p>` : ""}</div></section>`);
     frame.append(node);
     const titel = node.querySelector(".hk-titel"), block = node.querySelector(".hk-block");
-    passeAn(titel, titel.querySelectorAll("b"), 890, 70);
-    const hoehe = block.offsetHeight, lage = s.lage || "mitte";
-    block.style.top = (lage === "oben" ? 400 : lage === "unten" ? GRENZE - hoehe : Math.max(380, 390 + (GRENZE - 390 - hoehe) / 2)) + "px";
-    const dauer = s.dauer || 3.2;
+    // Einpassen in die Fläche (Blatt oder sichere Zone): erst in die Breite, dann so weit verkleinern, bis auch die Höhe reicht
+    const rand = 56, [zx, zy, zb, zh] = zettel || [72, 390, 936, GRENZE - 390];
+    const breit = zettel ? zb - 2 * rand - 26 : 890, hoch = zettel ? zh - 2 * rand : zh;
+    const passe = () => {
+      titel.style.fontSize = "";
+      passeAn(titel, titel.querySelectorAll("b"), breit, 60);
+      let px = parseFloat(getComputedStyle(titel).fontSize);
+      while (block.offsetHeight > hoch && px > 60) { px -= 4; titel.style.fontSize = px + "px"; }
+      return px;
+    };
+    if (zettel) { block.style.left = zx + rand + "px"; block.style.right = "auto"; block.style.width = zb - 2 * rand + "px"; block.style.rotate = (fi.dreh || 0) + "deg"; }
+    if (s.text) {
+      // "text" statt "zeilen": Das Studio bricht den Satz selbst so um, dass die Schrift so groß wie möglich wird
+      let beste = null;
+      for (let max = 7; max <= 22; max++) {
+        const zeilen = zeilenAus(s.text, max);
+        titel.innerHTML = titelZeilen(zeilen, tonart === "papier");
+        const px = passe();
+        if (!beste || px > beste.px) beste = { px, zeilen };
+      }
+      titel.innerHTML = titelZeilen(beste.zeilen, tonart === "papier");
+    }
+    passe();
+    if (zettel) block.style.top = zy + (zh - block.offsetHeight) / 2 + "px";
+    else {
+      const hoehe = block.offsetHeight, lage = s.lage || "mitte";
+      block.style.top = (lage === "oben" ? 400 : lage === "unten" ? GRENZE - hoehe : Math.max(380, 390 + (GRENZE - 390 - hoehe) / 2)) + "px";
+    }
+    const dauer = s.dauer || (zettel ? 3 : 3.2);
     return { el: node, ton: tonart, dauer, start(T) {
       if (mitFilm) filmHaken(node, s, daten, T, dauer);
       const dach = node.querySelector(".hk-dach");
-      if (dach) schieb(dach, T + 0.25, 0.35, -40);
+      if (dach) schieb(dach, T + landung + 0.25, 0.35, -40);
       const zs = [...node.querySelectorAll(".hk-titel .z")];
       zs.forEach((z, i) => {
-        const t = T + 0.3 + i * (s.takt || 0.22);
+        const t = T + landung + (zettel ? 0.08 : 0.3) + i * (s.takt || (zettel ? 0.1 : 0.22));
         if (z.querySelector(".fl")) an(z.querySelector(".fl"), [{ scale: "0 1" }, { scale: "1 1" }], t - 0.08, 0.3, E.rein);
         steig(z.querySelector("b"), t, 0.42);
       });
       const n = node.querySelector(".hk-notiz");
-      if (n) schieb(n, T + 0.55 + zs.length * (s.takt || 0.22), 0.4, -30, 10);
+      if (n) schieb(n, T + landung + 0.55 + zs.length * (s.takt || 0.22), 0.4, -30, 10);
     } };
   },
 
@@ -458,7 +501,8 @@ async function baue() {
   const story = await lade("/" + datei);
   const kennung = datei.split("/").pop().replace(/\.json$/, "");
   // Das Intro steht von selbst vorn. "intro": false lässt es weg, "intro": { "film": "..." } nimmt einen Film.
-  const plan = [...(story.intro === false ? [] : [{ typ: "intro", ...(typeof story.intro === "object" ? story.intro : {}) }]), ...story.szenen.map((s, i) => ({ ...s, nr: i }))];
+  const plan = [...(story.intro === false ? [] : [{ typ: "intro", ...(typeof story.intro === "object" ? story.intro : {}) }]), ...story.szenen.map((s, i) => ({ ...s, nr: i }))]
+    .map((s) => (s.typ === "outro" && !s.film ? { ...s, film: "intro-papier" } : s));
   const artVon = (s) => s.uebergang || story.uebergang || "anstoss";
   const codes = [...new Set(plan.map((s) => s.code).filter(Boolean))];
   const filmNamen = [...new Set([...plan.map((s) => s.film), ...plan.map((s) => ({ marker: "wischer-marker", staub: "wischer-staub" }[artVon(s)]))].filter(Boolean))];

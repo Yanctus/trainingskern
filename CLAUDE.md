@@ -10,6 +10,12 @@ Die App selbst liegt bei Base44 (App „Trainingskern“), dieses Repo enthält 
 - Intros und Grafik im Stil der App (Papier, Tafel, Neon und Orange auf Schwarz), nicht als Realfilm.
 - Keine generierten Kindergesichter, keine fremden Markenlogos in Clips.
 
+## Kampagnen-Videos
+
+- Jedes Video beginnt mit demselben Intro: `hook` mit `"film": "hook-zettel"` (leeres Blatt klatscht vor die Papierfiguren), nur der Text wechselt.
+- Jedes Video endet mit demselben Outro: `{ "typ": "outro" }` (Papierfigur schießt den Ball zur Kamera, K, TRAININGSKERN, trainingskern.de).
+- Vorlage: `story-studio/stories/vorlage-kampagne.json`.
+
 ## Story-Studio
 
 `story-studio/` rendert Instagram-Storys (1080 × 1920) aus Story-Dateien. Bedienung und Szenen: `story-studio/README.md`.

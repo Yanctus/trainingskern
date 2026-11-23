@@ -1,6 +1,55 @@
 {
-  "intro-flutlicht": { "ab": 0.1, "bis": 3.95, "tempo": 1.6, "k": [255, 533, 199] },
-  "intro-anstoss": { "ab": 2.0, "bis": 4.35, "tempo": 1.3, "k": [249, 439, 200] },
-  "wischer-marker": { "maske": true, "zu": 3.95, "tonAb": 0.4 },
-  "wischer-staub": { "schwarz": true, "lime": true, "ab": 0.3, "mitte": 0.6, "bis": 3.2, "tonAb": 0.25 }
+  "intro-flutlicht": {
+    "ab": 0.1,
+    "bis": 3.95,
+    "tempo": 1.6,
+    "k": [
+      255,
+      533,
+      199
+    ]
+  },
+  "intro-anstoss": {
+    "ab": 2.0,
+    "bis": 4.35,
+    "tempo": 1.3,
+    "k": [
+      249,
+      439,
+      200
+    ]
+  },
+  "wischer-marker": {
+    "maske": true,
+    "zu": 3.95,
+    "tonAb": 0.4
+  },
+  "wischer-staub": {
+    "schwarz": true,
+    "lime": true,
+    "ab": 0.3,
+    "mitte": 0.6,
+    "bis": 3.2,
+    "tonAb": 0.25
+  },
+  "hook-zettel": {
+    "zettel": [
+      92,
+      420,
+      896,
+      890
+    ],
+    "dreh": -1.5,
+    "landet": 0.8
+  },
+  "hook-zettel-flutlicht": {
+    "zettel": [
+      92,
+      420,
+      896,
+      890
+    ],
+    "dreh": -1.5,
+    "landet": 1.97
+  }
 }

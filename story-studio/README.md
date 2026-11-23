@@ -25,6 +25,19 @@ Das Video liegt danach in `out/ue-001.mp4`, daneben ein Titelbild `out/ue-001.jp
 - **Sichere Zone:** Oben 250 px und unten 340 px bleiben ohne Text, dort liegen bei Instagram Profilzeile und Antwortfeld.
 - **Tonspur:** Geräusche der Übergänge und der leise Ton der Filme. Musik kommt in der Instagram-App dazu (dort ist sie lizenziert).
 
+## Das feste Intro und Outro für Kampagnen
+
+Jedes Kampagnen-Video beginnt und endet gleich, nur der Text wechselt (Vorlage: `stories/vorlage-kampagne.json`):
+
+- **Intro (3 Sekunden):** `{ "typ": "hook", "film": "hook-zettel", "text": "Heute Training. Und keine Ahnung, *was du aufbaust?*" }`
+  Eine Papierfigur schießt den Ball auf die Kamera, ein leeres Blatt klatscht davor, Klebestreifen folgen. Der Text erscheint
+  auf dem Blatt in dem Moment, in dem es aufklatscht. `text` ist ein Satz, `*so*` bekommt die Neon-Fläche; das Studio bricht
+  ihn selbst so um, dass die Schrift so groß wie möglich wird. `dach` setzt eine kleine Zeile darüber.
+  Mit `"intro": false` oben in der Story, damit nichts davor läuft.
+- **Outro:** `{ "typ": "outro" }` Papierfigur schießt den Ball zur Kamera, Neon-Blitz, das K, TRAININGSKERN, darunter trainingskern.de.
+
+`stories/intro-blanko.json` ist das Intro ohne Text, `stories/intro-beispiel.json` mit Beispieltext.
+
 ## Eine Story schreiben
 
 Eine Datei in `stories/`, zum Beispiel `stories/ue-001.json`:
@@ -47,12 +60,13 @@ Eine Datei in `stories/`, zum Beispiel `stories/ue-001.json`:
 
 | Szene | Was sie zeigt | Angaben |
 | --- | --- | --- |
-| `hook` | Große Frage oder Behauptung, auf Wunsch über einem Film | `zeilen` (`*so*` = Neon-Fläche), `film`, `dach`, `notiz`, `lage` (oben, mitte, unten), `ton` (dunkel, papier, neon), `takt` |
+| `hook` | Große Frage oder Behauptung, auf Wunsch über einem Film | `text` (ein Satz, wird selbst umbrochen) oder `zeilen` (`*so*` = Neon-Fläche), `film`, `dach`, `notiz`, `lage` (oben, mitte, unten), `ton` (dunkel, papier, neon), `takt` |
 | `aufmacher` | Schlagzeile auf Papier, mit `code` dazu Minuten, Spieler und Altersklasse als Karten | `code`, `zeilen` (eigene Schlagzeile, `*so*` = schräg), `dach`, `notiz`, `stempel`, `karten: false` |
 | `uebung` | Die Übung läuft auf dem Platz, Schritt für Schritt mit Beschriftung | `code`, `schritte` (nur die ersten N), `tempo`, `fassung` (1 = Coaching-Punkt, 2 = Steigerung …), `titel`, `zoom` |
 | `punkte` | Zwei bis vier kurze Sätze als Karten, ohne `punkte` die Coaching-Punkte der Übung | `code` oder `punkte`, `titel`, `max`, `streichen: true` (durchgestrichen), `ton` |
 | `app` | Die echte App im Handy, wird gescrollt | `seite` (`{id:UE-001}` wird zur Adresse der Übung), `scroll` [von, bis] in Pixeln, `dauer`, `notiz`, `stempel`, `zettel` |
 | `abpfiff` | Logo, Schlusssatz, Aufruf, Adresse | `zeilen` (`*so*` = Neon), `knopf`, `adresse`, `notiz`, `zahl` (nur auf Wunsch) |
+| `outro` | Film mit dem K als Schluss, darunter die Adresse | `film` (ohne Angabe `intro-papier`), `adresse` |
 | `intro` | Das Intro als Szene an beliebiger Stelle (mit `"intro": false` oben) | `film`, `tempo` |
 
 Jede Szene nimmt außerdem `dauer` (Sekunden). Bei `uebung` ergibt sich die Dauer aus dem Ablauf und dem Tempo.
@@ -70,6 +84,8 @@ für `hook`-Szenen, als Intro und als Wischer:
 | `ballnetz` | Ballnetz fällt auf den Rasen, Bälle rollen zur Kamera | Trainingsbeginn |
 | `pfeife-regen` | Pfeife hängt am Pfosten im Regen | ruhige Bilder, Zitate |
 | `platz-daemmerung` | leerer Platz mit Hütchenreihe in der Dämmerung | allgemeiner Hintergrund |
+| `hook-zettel` | Papierfigur schießt den Ball zur Kamera, ein leeres Blatt klatscht davor | das feste Intro mit wechselndem Text |
+| `hook-zettel-flutlicht` | Flutlicht geht an, Figuren drehen sich, Blatt klatscht davor (später als bei `hook-zettel`) | Ersatz |
 | `intro-papier` | Papierfiguren auf dem dunklen Platz, eine schießt den Ball zur Kamera, Neon-Blitz, K | Intro im Stil der App |
 | `intro-skizze` | Marker zeichnet Feld, Pfeile und Hütchen auf Papier, das Blatt reißt weg, K | Intro im Stil der App |
 | `intro-magnete` | Taktiktafel von oben, Magnete und Pfeile laufen zur Mitte, Neon-Blitz, K | Intro im Stil der App |

@@ -1,0 +1,12 @@
+{
+  "titel": "Intro-Vorlage: das Blatt mit Text",
+  "intro": false,
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "hook-zettel",
+      "dach": "Kennst du das?",
+      "text": "Heute Training. Und keine Ahnung, *was du aufbaust?*"
+    }
+  ]
+}

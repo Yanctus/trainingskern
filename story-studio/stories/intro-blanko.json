@@ -1,0 +1,11 @@
+{
+  "titel": "Intro-Vorlage: leer",
+  "intro": false,
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "hook-zettel",
+      "zeilen": []
+    }
+  ]
+}
