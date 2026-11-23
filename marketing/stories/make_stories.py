@@ -166,7 +166,25 @@ def story_mittag(label, text, sub, logo, out):
     im.save(out, quality=92)
 
 
+def find_cut(video, lo=8.0, hi=12.5):
+    """Leiseste Stelle (Sprechpause) zwischen lo und hi Sekunden."""
+    import numpy as np
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", str(video), "-t", str(hi + 1), "-ac", "1",
+                          "-ar", "8000", "-f", "s16le", "-"], capture_output=True, check=True).stdout
+    a = np.frombuffer(raw, np.int16).astype(float)
+    w = 800  # 0,1 s
+    rms = np.array([np.sqrt(np.mean(a[i:i + w] ** 2)) + 1 for i in range(0, len(a) - w, w)])
+    seg = 20 * np.log10(rms[int(lo * 10):int(hi * 10)] / 32768)
+    sm = np.convolve(seg, np.ones(3) / 3, "valid")
+    return lo + (int(np.argmin(sm)) + 1) * 0.1
+
+
+OUTRO_SEC = 3.0   # Logo-Abschluss vom Ende des Reels
+MAX_BYTES = 3_000_000  # Upload-Grenze Drive-Connector
+
+
 def story_abend(typ, video, out, tmp):
+    """Teaser bis zur Sprechpause, weich ausgeblendet, dann Logo-Abschluss des Reels."""
     ov = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(ov)
     d.rectangle((0, 1440, W, 1720), fill=(13, 13, 10, 235))
@@ -174,11 +192,29 @@ def story_abend(typ, video, out, tmp):
     banner(d, 1468, "JETZT NEU", sub)
     png = tmp / "abend_ov.png"
     ov.save(png)
-    subprocess.run([
-        "ffmpeg", "-v", "error", "-y", "-i", str(video), "-i", str(png), "-t", "14",
-        "-filter_complex", "[0:v][1:v]overlay=0:0,format=yuv420p[v]", "-map", "[v]", "-map", "0:a?",
-        "-c:v", "libx264", "-profile:v", "high", "-preset", "medium", "-crf", "20", "-r", "30",
-        "-c:a", "aac", "-b:a", "128k", "-ar", "44100", "-movflags", "+faststart", str(out)], check=True)
+    cut = find_cut(video)
+    fo = 0.6
+    fc = (
+        f"[0:v]trim=0:{cut:.2f},setpts=PTS-STARTPTS[t];"
+        f"[t][2:v]overlay=0:0,fade=t=out:st={cut - fo:.2f}:d={fo},format=yuv420p[tv];"
+        f"[1:v]setpts=PTS-STARTPTS,fade=t=in:st=0:d=0.5,format=yuv420p[ov];"
+        f"[0:a]atrim=0:{cut:.2f},asetpts=PTS-STARTPTS,afade=t=out:st={cut - fo:.2f}:d={fo}[ta];"
+        f"[1:a]asetpts=PTS-STARTPTS,afade=t=in:st=0:d=0.5[oa];"
+        f"[tv][ta][ov][oa]concat=n=2:v=1:a=1[v][a]"
+    )
+    base = ["ffmpeg", "-v", "error", "-y", "-i", str(video), "-sseof", f"-{OUTRO_SEC}", "-i", str(video),
+            "-i", str(png), "-filter_complex", fc, "-map", "[v]", "-map", "[a]", "-r", "30"]
+    plog = str(tmp / "pass")
+    for vb in (1600, 1300, 1000):  # 2-Pass, Bitrate senken bis die Datei unter die Grenze passt
+        subprocess.run(base + ["-c:v", "libx264", "-b:v", f"{vb}k", "-pass", "1", "-passlogfile", plog,
+                               "-an", "-f", "mp4", "/dev/null"], check=True)
+        subprocess.run(base + ["-c:v", "libx264", "-profile:v", "high", "-b:v", f"{vb}k",
+                               "-maxrate", f"{int(vb * 1.6)}k", "-bufsize", f"{vb * 2}k",
+                               "-pass", "2", "-passlogfile", plog, "-c:a", "aac", "-b:a", "96k",
+                               "-ar", "44100", "-movflags", "+faststart", str(out)], check=True)
+        if out.stat().st_size <= MAX_BYTES:
+            break
+    return cut
 
 
 def main(videos_dir, out_dir):
