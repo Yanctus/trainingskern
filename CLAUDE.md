@@ -26,10 +26,14 @@ Die App selbst liegt bei Base44 (App „Trainingskern“), dieses Repo enthält 
 - **Entschieden (23.11.2026): Die Videos laufen im Comic-Stil** (`comic-*`, Outro `"film": "outro-comic"`, Übergänge `knall`, `pinsel`,
   `raster`, `panel`, Musik `"zufall"` aus den Elektro-Titeln). Der Zeichentrick-Stil (`cartoon-*`) bleibt im Repo, wird aber vorerst nicht genutzt.
 - Fertige Muster in `story-studio/stories/`: `kampagne-01-kein-plan-comic.json` (Frage und Antwort), `kampagne-02-aufbau-rondo.json`
-  (nur der Aufbau einer Übung, Szene `aufbau`), `kampagne-03` bis `-06` (Übung erklärt mit den Aufnahmen der Seite, `"stimme": true`),
+  (nur der Aufbau einer Übung, Szene `aufbau`), `kampagne-03` bis `-06` (Übung erklärt, nur Grundform), `kampagne-09` bis `-11`
+  (Übung komplett: Grundform, Coaching-Punkt, Steigerung),
   `kampagne-07-woanders.json` und `kampagne-08-was-neues.json` (Marketing: was Trainingskern bietet, wo es woanders hakt).
-- **Je Übung ein Video, und zwar das Erklärvideo** (Format `kampagne-03-uebung-rondo.json`): eines der Comic-Intros mit einem Satz,
-  der hängen bleibt, Übergang, Szene `uebung` mit `"stimme": true`, dann `blende` ins Outro. Ein Aufbau-Video ist nur auf Wunsch dabei.
+- **Je Übung ein Video, und zwar das Erklärvideo mit Coaching-Punkt und Steigerung** (Format `kampagne-11-komplett-pressing-rondo.json`,
+  gilt für alle künftigen Übungs-Videos): eines der Comic-Intros mit einem Satz, der hängen bleibt, dann drei Szenen `uebung` mit
+  `"stimme": true`: die Grundform, `"fassung": 1` (Coaching-Punkt) und `"fassung": 2` (Steigerung), dann `blende` ins Outro.
+  Die Seite hat für alle drei Teile Aufnahmen. Bei sehr langen Grundformen reichen die ersten Schritte (`"schritte": 3`).
+  Ein Aufbau-Video ist nur auf Wunsch dabei. Die kurzen Fassungen ohne Coaching-Punkt (`kampagne-03` bis `-06`) sind der alte Stand.
 - Für erklärte Übungen die vorhandenen Aufnahmen der Seite nehmen (kosten kein ElevenLabs-Kontingent). Der Aufbau hat auf der Seite keine
   Aufnahmen und wird neu eingesprochen.
 - **Die Länge entscheidet Claude** (Stand 23.11.2026): so lang, wie der Inhalt braucht, auch über 30 Sekunden. Nicht künstlich strecken.
@@ -44,8 +48,10 @@ Die App selbst liegt bei Base44 (App „Trainingskern“), dieses Repo enthält 
   Der Schlüssel ist in der Cloud-Umgebung für api.elevenlabs.io hinterlegt, nie ins Repo schreiben. Aufnahmen liegen in `ton/sprecher/` und kosten nur einmal.
   Das Zeichen-Kontingent ist knapp (Stand 23.11.2026 rund 15.000 Zeichen frei): Sätze kurz halten, nichts unnötig neu einsprechen.
 - Musik läuft leise mit: leichter Elektro, generiert, ohne Gesang. Drei Titel liegen bereit (`ton/musik-elektro.mp3` 32 s,
-  `ton/musik-elektro-2.mp3` und `-3.mp3` je 75 s). `"musik": "zufall"` wählt einen davon (je Story immer denselben); ein Video,
-  das länger als 30 Sekunden läuft, braucht einen der langen Titel. Kein Funk-Beat, kein Swing.
+  `ton/musik-elektro-2.mp3` 61 s, `ton/musik-elektro-3.mp3` 66 s). `"musik": "zufall"` wählt einen, der bis zum Ende reicht
+  (je Story immer denselben). Ist das Video länger als der Titel, setzt die Musik an einem Szenenwechsel neu an. Für die kompletten
+  Übungs-Videos (65 bis 75 s) wäre ein Titel von rund zwei Minuten besser; der kostet Higgsfield-Credits und ist noch nicht bestellt.
+  Kein Funk-Beat, kein Swing.
 - Im Sprechertext sagt die Stimme „von mir auf Deutsch erklärt“, damit klar ist, dass es Ton zur Übung gibt.
 - Keine Spielminute, kein Fortschrittsbalken im Bild. Der Bildschirm der Seite zeigt nur Titel und Tafel (`"verstecke"` blendet den Rest aus).
 - Vorlage: `story-studio/stories/vorlage-kampagne.json`.

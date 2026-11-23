@@ -29,7 +29,8 @@ Das Video liegt danach in `out/ue-001.mp4`, daneben ein Titelbild `out/ue-001.jp
 - **Tonspur:** Geräusche der Übergänge und der leise Ton der Filme. Dazu auf Wunsch Sprecher und Musik:
   `"sprecher": "Satz"` an einer Szene lässt ihn mit der Stimme aus `stimme.json` einsprechen (ElevenLabs; die Szene dauert mindestens so lange
   wie der Satz, `"sprecherAb"` verschiebt den Einsatz). `"musik": "zufall"` oben in der Story legt einen der Elektro-Titel leise darunter
-  (`ton/musik-elektro*.mp3`; gewählt wird unter denen, die lang genug sind, und je Story immer derselbe). Ein fester Titel geht auch:
+  (`ton/musik-elektro*.mp3`; gewählt wird unter denen, die lang genug sind, und je Story immer derselbe; ist das Video länger
+  als der Titel, setzt die Musik an einem Szenenwechsel neu an). Ein fester Titel geht auch:
   `"musik": "ton/musik-elektro-2.mp3"`. `"musikLaut"` (ohne Angabe 0.16) regelt die Lautstärke, `"geraeusche": 0.6` nimmt Geräusche und Filmton zurück.
 - **Textprüfung:** Vor jedem Rendern sieht das Studio jede Szene an und warnt, wenn ein Text über den Bildrand ragt, abgeschnitten wird
   oder nicht in die freie Fläche eines Intros passt. Ob ein Text über den Rand einer gezeichneten Fläche ragt (zum Beispiel die Zacken
@@ -80,7 +81,7 @@ Eine Datei in `stories/`, zum Beispiel `stories/ue-001.json`:
 | --- | --- | --- |
 | `hook` | Große Frage oder Behauptung, auf Wunsch über einem Film | `text` (ein Satz, wird selbst umbrochen) oder `zeilen` (`*so*` = Neon-Fläche), `film`, `dach`, `notiz`, `lage` (oben, mitte, unten), `ton` (dunkel, papier, neon), `takt` |
 | `aufmacher` | Schlagzeile auf Papier, mit `code` dazu Minuten, Spieler und Altersklasse als Karten | `code`, `zeilen` (eigene Schlagzeile, `*so*` = schräg), `dach`, `notiz`, `stempel`, `karten: false` |
-| `uebung` | Die Übung läuft auf dem Platz, Schritt für Schritt mit Beschriftung. Mit `"stimme": true` sprechen die Aufnahmen der Seite mit (Name der Übung, Grundform, jeder Schritt) | `code`, `stimme`, `schritte` (nur die ersten N), `tempo`, `fassung` (1 = Coaching-Punkt, 2 = Steigerung …), `titel`, `zoom` |
+| `uebung` | Die Übung läuft auf dem Platz, Schritt für Schritt mit Beschriftung. Mit `"stimme": true` sprechen die Aufnahmen der Seite mit (Name der Übung, Grundform, jeder Schritt) | `code`, `stimme`, `schritte` (nur die ersten N), `tempo`, `fassung` (1 = Coaching-Punkt, 2 = Steigerung; mit `stimme` sprechen auch dafür die Aufnahmen der Seite), `titel`, `zoom` |
 | `aufbau` | Die Tafel baut sich Schritt für Schritt auf wie auf der Seite (Feld, Hütchen, Spieler, Ball und Wege), die Stimme erklärt jeden Schritt | `code`, `sprich` (kürzere Sprechfassung einzelner Schritte, steht dann auch im Bild), `ansage`, `luft`, `nachlauf` |
 | `punkte` | Zwei bis vier kurze Sätze als Karten, ohne `punkte` die Coaching-Punkte der Übung | `code` oder `punkte`, `titel`, `max`, `streichen: true` (durchgestrichen), `ton` |
 | `app` | Die echte Seite im Handy, wird gescrollt (Stempel ohne Angabe „Deutsches Audio“; `verstecke`: CSS-Selektoren von Blöcken, die ausgeblendet werden) | `seite` (`{id:UE-001}` wird zur Adresse der Übung), `scroll` [von, bis] in Pixeln, `dauer`, `notiz`, `stempel`, `zettel` |
@@ -140,8 +141,10 @@ node studio.mjs render stories/ue-001.json --bild 3.5,8,20
 
 ## Formate, die sich bewährt haben
 
-- **Übung erklärt** (27 bis 37 Sekunden, je Übung ein Video): Comic-Intro mit einem Satz, `uebung` mit `"stimme": true`, Outro.
-  Siehe `stories/kampagne-03-uebung-rondo.json` bis `kampagne-06-uebung-pyramiden-staffel.json`.
+- **Übung komplett** (65 bis 75 Sekunden, je Übung ein Video, das Format für alle Übungs-Videos): Comic-Intro mit einem Satz, dann dreimal
+  `uebung` mit `"stimme": true`: Grundform, `"fassung": 1` (Coaching-Punkt), `"fassung": 2` (Steigerung), Outro.
+  Siehe `stories/kampagne-09-komplett-dritter-mann.json` bis `kampagne-11-komplett-pressing-rondo.json`.
+- **Übung erklärt, kurz** (27 bis 37 Sekunden, nur die Grundform): `stories/kampagne-03-uebung-rondo.json` bis `kampagne-06-uebung-pyramiden-staffel.json`.
 - **Marketing** (rund 30 Sekunden): Comic-Intro mit einer Frage, `punkte` mit `streichen` (so läuft es woanders) oder ohne (das steckt drin),
   `app`, kurze `uebung`, Outro. Siehe `stories/kampagne-07-woanders.json` und `stories/kampagne-08-was-neues.json`.
 - **Selling-Video** (rund 23 Sekunden, ohne Intro): `hook` mit Film und einer Frage, die der Trainer kennt, dann die Antwort

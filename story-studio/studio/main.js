@@ -689,14 +689,27 @@ async function baue() {
   // Musik läuft leise über das ganze Video
   // "musik": "zufall" nimmt einen der Titel ton/musik-elektro*.mp3, der lang genug ist; die Wahl hängt am Dateinamen der Story, bleibt also bei jedem Rendern gleich
   let musik = story.musik;
+  const laengeVon = (pfad) => daten.klaenge[String(pfad).replace(/^ton\//, "").replace(/\.mp3$/, "")] || 0;
   if (musik === "zufall" || musik === true) {
-    const alle = Object.keys(daten.klaenge).filter((n) => n.startsWith("musik-elektro")).sort(), lang = alle.filter((n) => daten.klaenge[n] >= dauer - 0.5);
-    const wahl = lang.length ? lang : alle; // nur Titel, die bis zum Ende reichen
+    const alle = Object.keys(daten.klaenge).filter((n) => n.startsWith("musik-elektro")).sort(), lang = alle.filter((n) => daten.klaenge[n] >= dauer - 1.5);
+    const wahl = lang.length ? lang : alle.filter((n) => daten.klaenge[n] >= 45); // am liebsten ein Titel, der bis zum Ende reicht
     let h = 7;
     for (const c of kennung) h = (h * 31 + c.charCodeAt(0)) >>> 0;
-    musik = wahl.length ? `ton/${wahl[h % wahl.length]}.mp3` : null;
+    musik = wahl.length ? `ton/${wahl[h % wahl.length]}.mp3` : alle.length ? `ton/${alle[0]}.mp3` : null;
   }
-  if (musik) klang(musik, 0, { dauer, laut: story.musikLaut ?? 0.16, fest: true, ein: 0.3, aus: 1.4 });
+  if (musik) {
+    // Ist das Video länger als der Titel, setzt die Musik an einem Szenenwechsel neu an (dort liegt ohnehin das Geräusch des Übergangs).
+    const L = laengeVon(musik), laut = story.musikLaut ?? 0.16, schnitteZeit = szenen.slice(1).map((x) => x.t0);
+    let ab = 0;
+    for (let runde = 0; runde < 8; runde++) {
+      if (!L || dauer - ab <= L + 1.5) { klang(musik, Math.max(0, ab - 0.15), { dauer: dauer - ab + 0.15, laut, fest: true, ein: ab ? 0.5 : 0.3, aus: 1.4 }); break; }
+      // der späteste Szenenwechsel, den dieser Durchlauf noch erreicht; am liebsten so, dass der Rest in einen Durchlauf passt
+      const erreichbar = schnitteZeit.filter((c) => c > ab + 8 && c <= ab + L - 1), passend = erreichbar.filter((c) => dauer - c <= L + 1.5);
+      const naechster = (passend.length ? passend : erreichbar).pop() ?? ab + L - 1;
+      klang(musik, Math.max(0, ab - 0.15), { dauer: naechster - ab + 0.75, laut, fest: true, ein: ab ? 0.5 : 0.3, aus: 0.7 });
+      ab = naechster;
+    }
+  }
 
   // Feste Teile: Marke oben links, Spielminute unten (der Ball rollt über alle Szenen außer dem Intro von 0′ bis 90′)
   const marke = el(`<div class="marke">${kBox("", true)}<span>Trainingskern<i></i></span></div>`);

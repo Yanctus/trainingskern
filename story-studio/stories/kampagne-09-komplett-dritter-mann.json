@@ -1,0 +1,47 @@
+{
+  "titel": "Übung komplett: Dritter Mann zum Abschluss",
+  "intro": false,
+  "musik": "ton/musik-elektro-2.mp3",
+  "musikLaut": 0.14,
+  "geraeusche": 0.6,
+  "uebergang": "pinsel",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "comic-sprechblase",
+      "text": "Der dritte Mann *macht das Tor!*",
+      "dauer": 3.5,
+      "sprecher": "Der dritte Mann macht das Tor!",
+      "sprecherAb": 0.7,
+      "dach": "Kennst du das?"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-005",
+      "stimme": true,
+      "dach": "So läuft’s"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-005",
+      "stimme": true,
+      "fassung": 1,
+      "uebergang": "raster"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-005",
+      "stimme": true,
+      "fassung": 2,
+      "uebergang": "knall"
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "blende",
+      "sprecher": "Trainingskern. Jetzt ausprobieren auf trainingskern Punkt D E.",
+      "sprecherAb": 0.4,
+      "dauer": 4.2
+    }
+  ]
+}

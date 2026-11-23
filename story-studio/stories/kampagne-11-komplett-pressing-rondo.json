@@ -1,0 +1,47 @@
+{
+  "titel": "Übung komplett: Pressing-Rondo 4 gegen 2",
+  "intro": false,
+  "musik": "zufall",
+  "musikLaut": 0.14,
+  "geraeusche": 0.6,
+  "uebergang": "pinsel",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "comic-panels",
+      "text": "Pressen? *Nur zu zweit!*",
+      "dauer": 3.5,
+      "sprecher": "Pressen? Nur zu zweit!",
+      "sprecherAb": 1.2,
+      "dach": "Merk dir das"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-008",
+      "stimme": true,
+      "dach": "So läuft’s"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-008",
+      "stimme": true,
+      "fassung": 1,
+      "uebergang": "raster"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-008",
+      "stimme": true,
+      "fassung": 2,
+      "uebergang": "knall"
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "blende",
+      "sprecher": "Trainingskern. Jetzt ausprobieren auf trainingskern Punkt D E.",
+      "sprecherAb": 0.4,
+      "dauer": 4.2
+    }
+  ]
+}

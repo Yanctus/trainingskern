@@ -1,0 +1,48 @@
+{
+  "titel": "Übung komplett: Dribbel-Dreieck mit Ablage",
+  "intro": false,
+  "musik": "zufall",
+  "musikLaut": 0.14,
+  "geraeusche": 0.6,
+  "uebergang": "panel",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "comic-karte",
+      "text": "Kopf hoch *beim Dribbeln!*",
+      "dauer": 3.5,
+      "sprecher": "Kopf hoch beim Dribbeln!",
+      "sprecherAb": 1.1,
+      "dach": "Für dein Training"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-001",
+      "stimme": true,
+      "dach": "So läuft’s",
+      "schritte": 3
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-001",
+      "stimme": true,
+      "fassung": 1,
+      "uebergang": "raster"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-001",
+      "stimme": true,
+      "fassung": 2,
+      "uebergang": "knall"
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "blende",
+      "sprecher": "Trainingskern. Jetzt ausprobieren auf trainingskern Punkt D E.",
+      "sprecherAb": 0.4,
+      "dauer": 4.2
+    }
+  ]
+}

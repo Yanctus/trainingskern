@@ -162,9 +162,11 @@ async function erklaertVon(storyDatei) {
     for (const [nr, sz] of st.szenen.entries()) {
       const e = alle.find((x) => x.code === sz.code);
       if (!e || !(sz.typ === "aufbau" || (sz.typ === "uebung" && sz.stimme))) continue;
-      const titel = sz.ohneName ? null : await nurName(await holeTon(e.audio?.intro).catch(() => null)).catch(() => null);
+      // "fassung": 1 = Coaching-Punkt, 2 = Steigerung: Die Seite hat dafür eigene Aufnahmen (Kapitel 1 und 2), die Ansage nennt die Fassung selbst
+      const fassung = sz.typ === "uebung" ? sz.fassung || 0 : 0;
+      const titel = sz.ohneName || fassung ? null : await nurName(await holeTon(e.audio?.intro).catch(() => null)).catch(() => null);
       if (sz.typ === "uebung") {
-        const k = e.audio?.chapters?.[0] || {}, zahl = sz.schritte || (k.steps || []).length;
+        const k = e.audio?.chapters?.[fassung] || {}, zahl = sz.schritte || (k.steps || []).length;
         out[nr] = { titel, ansage: await holeTon(k.intro).catch(() => null), schritte: await Promise.all((k.steps || []).slice(0, zahl).map((u) => holeTon(u).catch(() => null))) };
       } else if (mitStimme) {
         // Aufbau: Die Seite hat dafür keine Aufnahmen. "sprich" in der Szene ersetzt einzelne Sätze durch kürzere Sprechfassungen.
