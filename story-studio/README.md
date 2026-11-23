@@ -76,7 +76,8 @@ Eine Datei in `stories/`, zum Beispiel `stories/ue-001.json`:
 | --- | --- | --- |
 | `hook` | Große Frage oder Behauptung, auf Wunsch über einem Film | `text` (ein Satz, wird selbst umbrochen) oder `zeilen` (`*so*` = Neon-Fläche), `film`, `dach`, `notiz`, `lage` (oben, mitte, unten), `ton` (dunkel, papier, neon), `takt` |
 | `aufmacher` | Schlagzeile auf Papier, mit `code` dazu Minuten, Spieler und Altersklasse als Karten | `code`, `zeilen` (eigene Schlagzeile, `*so*` = schräg), `dach`, `notiz`, `stempel`, `karten: false` |
-| `uebung` | Die Übung läuft auf dem Platz, Schritt für Schritt mit Beschriftung | `code`, `schritte` (nur die ersten N), `tempo`, `fassung` (1 = Coaching-Punkt, 2 = Steigerung …), `titel`, `zoom` |
+| `uebung` | Die Übung läuft auf dem Platz, Schritt für Schritt mit Beschriftung. Mit `"stimme": true` sprechen die Aufnahmen der Seite mit (Name der Übung, Grundform, jeder Schritt) | `code`, `stimme`, `schritte` (nur die ersten N), `tempo`, `fassung` (1 = Coaching-Punkt, 2 = Steigerung …), `titel`, `zoom` |
+| `aufbau` | Die Tafel baut sich Schritt für Schritt auf wie auf der Seite (Feld, Hütchen, Spieler, Ball und Wege), die Stimme erklärt jeden Schritt | `code`, `sprich` (kürzere Sprechfassung einzelner Schritte, steht dann auch im Bild), `ansage`, `luft`, `nachlauf` |
 | `punkte` | Zwei bis vier kurze Sätze als Karten, ohne `punkte` die Coaching-Punkte der Übung | `code` oder `punkte`, `titel`, `max`, `streichen: true` (durchgestrichen), `ton` |
 | `app` | Die echte Seite im Handy, wird gescrollt (Stempel ohne Angabe „Deutsches Audio“; `verstecke`: CSS-Selektoren von Blöcken, die ausgeblendet werden) | `seite` (`{id:UE-001}` wird zur Adresse der Übung), `scroll` [von, bis] in Pixeln, `dauer`, `notiz`, `stempel`, `zettel` |
 | `abpfiff` | Logo, Schlusssatz, Aufruf, Adresse | `zeilen` (`*so*` = Neon), `knopf`, `adresse`, `notiz`, `zahl` (nur auf Wunsch) |

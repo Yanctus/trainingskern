@@ -89,15 +89,15 @@ export function bauePlatz(ziel, board, { schritte = 0, zoom = 1 } = {}) {
   ziel.innerHTML = `<div class="scene"><div class="plane">
 <svg class="plane-turf" viewBox="0 0 1000 600">
 <g class="plane-rand"><rect class="r" x="-30" y="-30" width="1060" height="700"/>${[1, 3, 5].map((i) => `<rect class="s" x="${(i * 1000) / 6}" y="-30" width="${1000 / 6}" height="700"/>`).join("")}</g>
-${(b.lines || []).map(linie).join("")}${(b.goals || []).map(tor).join("")}${(b.dims || []).map(mass).join("")}
-${play.arrows.map((a) => `<g data-ar class="ar ${a.type}${a.join ? " join" : ""}" style="visibility:hidden"><path class="d" pathLength="1" d="${a.d}"/><path class="ah" transform="translate(${a.head.x.toFixed(1)} ${a.head.y.toFixed(1)}) rotate(${a.head.angle.toFixed(1)})" d="${ARROW_HEAD}"/></g>`).join("")}
+<g data-eb="lines">${(b.lines || []).map(linie).join("")}${(b.goals || []).map(tor).join("")}${(b.dims || []).map(mass).join("")}</g>
+${play.arrows.map((a) => `<g data-ar data-eb="arrows" class="ar ${a.type}${a.join ? " join" : ""}" style="visibility:hidden"><path class="d" pathLength="1" d="${a.d}"/><path class="ah" transform="translate(${a.head.x.toFixed(1)} ${a.head.y.toFixed(1)}) rotate(${a.head.angle.toFixed(1)})" d="${ARROW_HEAD}"/></g>`).join("")}
 </svg><div class="plane-lights"></div>
-${(b.goals || []).map((g) => { const t = { x: g.x, y: g.y, shape: "tor", side: g.side, size: g.size }; return `<div data-cone class="${markenKlasse(t)}" style="transform:translate3d(${k(g.x)}px,${k(g.y)}px,0)"><div class="up">${marke(t)}</div></div>`; }).join("")}
+${(b.goals || []).map((g) => { const t = { x: g.x, y: g.y, shape: "tor", side: g.side, size: g.size }; return `<div data-cone data-eb="lines" class="${markenKlasse(t)}" style="transform:translate3d(${k(g.x)}px,${k(g.y)}px,0)"><div class="up">${marke(t)}</div></div>`; }).join("")}
 ${(b.cones || []).map((c, i) => (play.ids.cones[i]
-    ? `<div data-tk="${esc(play.ids.cones[i])}" class="${markenKlasse(c)}"><div class="up">${marke(c)}</div></div>`
-    : `<div data-cone class="${markenKlasse(c)}" style="transform:translate3d(${k(c.x)}px,${k(c.y)}px,0)"><div class="up">${marke(c)}</div></div>`)).join("")}
-${(b.balls || []).map((_, i) => `<div data-tk="${esc(play.ids.balls[i])}" class="tok ball"><i class="disc"></i><div class="up">${BALL}</div></div>`).join("")}
-${(b.players || []).map((p, i) => `<div data-tk="${esc(play.ids.players[i])}" class="tok fig t-${p.team || "t"}"><i class="disc"></i><div class="up">${figur(p.label)}</div></div>`).join("")}
+    ? `<div data-tk="${esc(play.ids.cones[i])}" data-eb="cones" class="${markenKlasse(c)}"><div class="up">${marke(c)}</div></div>`
+    : `<div data-cone data-eb="cones" class="${markenKlasse(c)}" style="transform:translate3d(${k(c.x)}px,${k(c.y)}px,0)"><div class="up">${marke(c)}</div></div>`)).join("")}
+${(b.balls || []).map((_, i) => `<div data-tk="${esc(play.ids.balls[i])}" data-eb="balls" class="tok ball"><i class="disc"></i><div class="up">${BALL}</div></div>`).join("")}
+${(b.players || []).map((p, i) => `<div data-tk="${esc(play.ids.players[i])}" data-eb="players:${p.team || "t"}" class="tok fig t-${p.team || "t"}"><i class="disc"></i><div class="up">${figur(p.label)}</div></div>`).join("")}
 </div></div>`;
   const box = ziel.querySelector(".scene"), plane = ziel.querySelector(".plane");
   box.style.setProperty("--night", "1");
@@ -139,5 +139,22 @@ ${(b.players || []).map((p, i) => `<div data-tk="${esc(play.ids.players[i])}" cl
     });
     return cur;
   }
-  return { play, dauer: play.total, zeichne };
+  // Aufbau: Die Tafel steht auf Anfang, sichtbar ist nur, was "werte" freigibt (0..1 je Ebene:
+  // lines, cones, balls, arrows, players:<Team>). Figuren und Material klappen hoch, Pfeile zeichnen sich ein.
+  const mitEbene = [...ziel.querySelectorAll("[data-eb]")];
+  function zeichneAufbau(werte, fahrt = 0) {
+    zeichne(0, 1, fahrt);
+    mitEbene.forEach((node) => {
+      const a = clamp01(werte[node.dataset.eb] ?? 0);
+      if (node.dataset.ar != null) {
+        node.style.visibility = a > 0 ? "visible" : "hidden";
+        node.style.opacity = 0.9;
+        node.firstChild.style.strokeDashoffset = 1 - a;
+        node.lastChild.style.opacity = a >= 1 ? 1 : 0;
+      } else if (node.tagName.toLowerCase() === "g") node.style.opacity = a;
+      else { node.style.setProperty("--up", smooth(a).toFixed(3)); node.style.opacity = a > 0.01 ? 1 : 0; }
+    });
+  }
+  const teams = [...new Set((b.players || []).map((p) => p.team || "t"))];
+  return { play, dauer: play.total, zeichne, zeichneAufbau, teams };
 }

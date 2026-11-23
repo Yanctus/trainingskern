@@ -127,6 +127,57 @@ async function sprecherVon(storyDatei) {
   }
   return out;
 }
+
+/* ---------- Erklärte Szenen: Übung (Aufnahmen der Seite) und Aufbau (neu eingesprochen) ---------- */
+const laenge = async (pfad) => parseFloat((await run("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", pfad])).stdout);
+// Eine Aufnahme der Seite holen (einmal je Adresse), als Pfad im Zwischenspeicher
+async function holeTon(adresse) {
+  if (!adresse) return null;
+  const url = adresse.startsWith("http") ? adresse : SEITE + adresse;
+  const name = createHash("sha1").update(url).digest("hex").slice(0, 16), ziel = path.join(CACHE, "ton", name + ".mp3");
+  mkdirSync(path.dirname(ziel), { recursive: true });
+  if (!existsSync(ziel)) { await run("curl", ["-sS", "--fail", "-L", "-m", "90", "-o", ziel + ".neu", url]); writeFileSync(ziel, readFileSync(ziel + ".neu")); rmSync(ziel + ".neu"); }
+  return { datei: path.relative(HIER, ziel).split(path.sep).join("/"), dauer: await laenge(ziel) };
+}
+// Die Begrüßung der Seite nennt erst den Namen der Übung und beschreibt sie dann. Für Videos reicht der Name:
+// abschneiden an der ersten Sprechpause.
+async function nurName(ton) {
+  if (!ton) return null;
+  const quelle = path.join(HIER, ton.datei), ziel = quelle.replace(/\.mp3$/, "-name.mp3");
+  if (!existsSync(ziel)) {
+    const mess = await run("ffmpeg", ["-hide_banner", "-i", quelle, "-af", "silencedetect=noise=-32dB:d=0.22", "-f", "null", "-"]).catch((e) => e);
+    const pausen = [...String(mess.stderr || "").matchAll(/silence_start: ([\d.]+)/g)].map((m) => Number(m[1])).filter((x) => x > 0.9 && x < ton.dauer - 0.5);
+    const ende = (pausen[0] || ton.dauer) + 0.12;
+    await run("ffmpeg", ["-y", "-loglevel", "error", "-i", quelle, "-t", String(ende), "-af", `afade=t=out:st=${Math.max(0, ende - 0.1)}:d=0.1`, "-b:a", "128k", ziel]);
+  }
+  return { datei: path.relative(HIER, ziel).split(path.sep).join("/"), dauer: await laenge(ziel) };
+}
+const nacheinander = (text) => { if (!gesprochen.has(text)) gesprochen.set(text, (reihe = reihe.then(() => sprich(text)))); return gesprochen.get(text); };
+const erklaertCache = new Map();
+async function erklaertVon(storyDatei) {
+  if (!storyDatei) return {};
+  if (!erklaertCache.has(storyDatei)) erklaertCache.set(storyDatei, (async () => {
+    const st = JSON.parse(readFileSync(path.join(HIER, storyDatei), "utf8")), alle = await ladeKatalog(), out = {};
+    const mitStimme = existsSync(path.join(HIER, "stimme.json"));
+    for (const [nr, sz] of st.szenen.entries()) {
+      const e = alle.find((x) => x.code === sz.code);
+      if (!e || !(sz.typ === "aufbau" || (sz.typ === "uebung" && sz.stimme))) continue;
+      const titel = sz.ohneName ? null : await nurName(await holeTon(e.audio?.intro).catch(() => null)).catch(() => null);
+      if (sz.typ === "uebung") {
+        const k = e.audio?.chapters?.[0] || {}, zahl = sz.schritte || (k.steps || []).length;
+        out[nr] = { titel, ansage: await holeTon(k.intro).catch(() => null), schritte: await Promise.all((k.steps || []).slice(0, zahl).map((u) => holeTon(u).catch(() => null))) };
+      } else if (mitStimme) {
+        // Aufbau: Die Seite hat dafür keine Aufnahmen. "sprich" in der Szene ersetzt einzelne Sätze durch kürzere Sprechfassungen.
+        const { sprechtext } = await import("./studio/app/sprechtext.js");
+        const texte = (e.organisation || []).slice(0, sz.schritte || 99).map((t, i) => sz.sprich?.[i] || sprechtext(t));
+        out[nr] = { titel, ansage: sz.ansage === false ? null : await nacheinander(sz.ansage || "So baust du auf."), schritte: [] };
+        for (const t of texte) out[nr].schritte.push(await nacheinander(t));
+      }
+    }
+    return out;
+  })());
+  return erklaertCache.get(storyDatei);
+}
 const klaenge = () => { try { return Object.fromEntries(readdirSync(path.join(HIER, "ton")).filter((f) => f.endsWith(".mp3")).map((f) => [f.slice(0, -4), true])); } catch { return {}; } };
 
 /* ---------- kleiner Server: Studio, Story-Dateien, Daten, Aufnahmen ---------- */
@@ -147,7 +198,8 @@ function starteServer(port = 0) {
         res.writeHead(200, { "content-type": TYP[".json"] });
         const storyDatei = (u.searchParams.get("story") || "").replace(/[^a-zA-Z0-9_\-/.]/g, "");
         const sprecher = /^stories\/[^/]+\.json$/.test(storyDatei) ? await sprecherVon(storyDatei) : {};
-        return res.end(JSON.stringify({ einheiten, filme, filmInfo: filmInfo(), klaenge: klaenge(), sprecher }));
+        const erklaert = /^stories\/[^/]+\.json$/.test(storyDatei) ? await erklaertVon(storyDatei) : {};
+        return res.end(JSON.stringify({ einheiten, filme, filmInfo: filmInfo(), klaenge: klaenge(), sprecher, erklaert }));
       }
       const frei = [["/studio/", path.join(HIER, "studio")], ["/stories/", path.join(HIER, "stories")], ["/cache/", CACHE]].find(([p]) => u.pathname.startsWith(p));
       if (!frei) { res.writeHead(404); return res.end("nicht gefunden"); }

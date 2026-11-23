@@ -1,0 +1,33 @@
+{
+  "titel": "Übung erklärt: Pressing-Rondo 4 gegen 2",
+  "intro": false,
+  "musik": "ton/musik-elektro.mp3",
+  "musikLaut": 0.14,
+  "geraeusche": 0.6,
+  "uebergang": "pinsel",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "comic-karte",
+      "dach": "Kennst du das?",
+      "text": "Rondo? *Aber mit Pressing!*",
+      "dauer": 3.0,
+      "sprecher": "Rondo? Aber mit Pressing!",
+      "sprecherAb": 1.1
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-008",
+      "stimme": true,
+      "dach": "So läuft’s"
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "blende",
+      "sprecher": "Trainingskern. Jetzt ausprobieren auf trainingskern Punkt D E.",
+      "sprecherAb": 0.4,
+      "dauer": 4.2
+    }
+  ]
+}

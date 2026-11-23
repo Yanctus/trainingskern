@@ -135,6 +135,9 @@ html,body{margin:0;background:#1b1b18;overflow:hidden}
 #frame .ub-schritt{position:absolute;left:0;right:0;top:0;display:none;grid-template-columns:auto 1fr;gap:26px;align-items:start}
 #frame .ub-schritt .nr{display:grid;place-items:center;width:96px;height:96px;background:var(--neon);color:var(--ink);box-shadow:8px 8px 0 var(--cone);font-family:var(--f-display);font-weight:900;font-size:60px;line-height:1}
 #frame .ub-schritt .tx{padding-top:6px;font-family:var(--f-display);font-weight:800;font-stretch:108%;font-size:46px;line-height:1.08;letter-spacing:.035em;text-transform:uppercase;color:var(--fiber)}
+#frame .ab-schritt .tx{text-transform:none;letter-spacing:0;font-stretch:100%}
+#frame .ab-schritt .kopf{display:block;font-family:var(--f-display);font-weight:900;font-stretch:108%;font-size:52px;line-height:1.05;letter-spacing:.035em;text-transform:uppercase;color:var(--neon)}
+#frame .ab-schritt .rest{display:block;margin-top:10px;font-family:var(--f-text);font-weight:600;font-size:45px;line-height:1.16;letter-spacing:-.005em;color:var(--fiber)}
 #frame .ub-punkte{position:absolute;left:72px;top:1438px;display:flex;gap:10px}
 #frame .ub-punkte i{display:block;width:34px;height:8px;background:rgba(248,244,233,.22)}
 #frame .ub-punkte i.an{background:var(--neon)}

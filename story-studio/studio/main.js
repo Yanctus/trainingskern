@@ -418,7 +418,7 @@ ${e?.kind || s.stempel ? `<div class="stempel am-stempel" style="right:58px;top:
   },
 
   // Übung: der Platz aus der App, der Ablauf läuft Schritt für Schritt, darunter steht der aktuelle Schritt
-  uebung(s, daten) {
+  uebung(s, daten, nr) {
     const e = daten.einheiten[s.code];
     if (!e) throw new Error("Übung " + s.code + " nicht gefunden");
     const tempo = s.tempo || 1.4, EIN = 0.95, AUS = s.nachlauf ?? 0.8;
@@ -439,21 +439,107 @@ ${e?.kind || s.stempel ? `<div class="stempel am-stempel" style="right:58px;top:
     punkte.innerHTML = steps.map(() => "<i></i>").join("");
     const t = node.querySelector(".ub-titel");
     passeAn(t, t.querySelectorAll("b"), 930, 56);
-    const dauer = EIN + platz.dauer / tempo + AUS;
+    // "stimme": true: Die Aufnahmen der Seite sprechen mit (Name der Übung, Ansage der Grundform, jeder Schritt).
+    // Dann läuft jeder Schritt, während sein Satz gesprochen wird, und wartet, bis der Satz zu Ende ist.
+    const tonAuf = s.stimme ? daten.erklaert?.[nr] : null, tv = s.tempo || 1.15;
+    const seg = [];
+    if (tonAuf) {
+      let z = Math.max(EIN, 0.3 + (tonAuf.titel?.dauer || 0) + 0.15 + (tonAuf.ansage?.dauer || 0) + 0.25);
+      steps.forEach((st, i) => { const a = (st.t1 - st.t0) / tv, e = z + Math.max(a, tonAuf.schritte[i]?.dauer || 0) + 0.3; seg.push({ s: z, a, e }); z = e; });
+    }
+    const start = (i) => (tonAuf ? seg[i].s : EIN + steps[i].t0 / tempo);
+    const spielzeit = (tl) => {
+      if (!tonAuf) return (tl - EIN) * tempo;
+      let i = -1;
+      seg.forEach((x, n) => { if (tl >= x.s) i = n; });
+      return i < 0 ? 0 : steps[i].t0 + Math.min((tl - seg[i].s) * tv, steps[i].t1 - steps[i].t0);
+    };
+    const dauer = tonAuf ? seg[seg.length - 1].e + (s.nachlauf ?? 0.4) : EIN + platz.dauer / tempo + AUS;
     return { el: node, ton: "dunkel", dauer, start(T) {
+      if (tonAuf) {
+        if (tonAuf.titel) klang(tonAuf.titel.datei, T + 0.3, { fest: true, ein: 0.01, aus: 0.08 });
+        if (tonAuf.ansage) klang(tonAuf.ansage.datei, T + 0.3 + (tonAuf.titel?.dauer || 0) + 0.15, { fest: true, ein: 0.01, aus: 0.05 });
+        tonAuf.schritte.forEach((x, i) => { if (x && seg[i]) klang(x.datei, T + seg[i].s, { fest: true, ein: 0.01, aus: 0.05 }); });
+      }
       schieb(node.querySelector(".ub-zeile"), T + 0.3, 0.4, -40);
       t.querySelectorAll("b").forEach((b, i) => steig(b, T + 0.4 + i * 0.1, 0.5));
       blende(node.querySelector(".ub-platz"), T + 0.2, 0.5);
-      karten.forEach((c, i) => an(c, [{ translate: "0 26px", opacity: 0 }, { translate: "0 0", opacity: 1 }], i === 0 ? T + 0.55 : T + EIN + steps[i - 1].t0 / tempo, 0.28));
+      karten.forEach((c, i) => an(c, [{ translate: "0 26px", opacity: 0 }, { translate: "0 0", opacity: 1 }], i === 0 ? T + 0.55 : T + start(i - 1), 0.28));
       let gezeigt = -9;
       haken.push((zeit) => {
         const tl = zeit - T;
         if (tl < -0.5 || tl > dauer + 0.6) return;
         const auf = smooth(clamp01((tl - 0.35) / 0.6));
-        const cur = platz.zeichne((tl - EIN) * tempo, auf, clamp01(tl / dauer));
+        const cur = tonAuf && tl < seg[0].s ? (platz.zeichne(0, auf, clamp01(tl / dauer)), -1) : platz.zeichne(spielzeit(tl), auf, clamp01(tl / dauer));
         if (cur !== gezeigt) {
           gezeigt = cur;
           karten.forEach((c, i) => { c.style.display = i === cur + 1 ? "grid" : "none"; });
+          [...punkte.children].forEach((p, i) => p.classList.toggle("an", i <= cur));
+        }
+      });
+    } };
+  },
+
+  // Aufbau: Die Tafel baut sich Schritt für Schritt auf wie auf der Seite (Feld, Hütchen, Spieler, Ball und Wege),
+  // darunter steht der Schritt, die Stimme erklärt ihn. Texte und Ebenen kommen aus der Übung (organisation, organisation_show).
+  aufbau(s, daten, nr) {
+    const e = daten.einheiten[s.code];
+    if (!e) throw new Error("Übung " + s.code + " nicht gefunden");
+    // Steht in "sprich" eine kürzere Sprechfassung, zeigt die Karte denselben Text (damit Bild und Stimme zusammenpassen)
+    const texte = (s.schritte ? (e.organisation || []).slice(0, s.schritte) : e.organisation || []).map((x, i) => s.sprich?.[i] || x), n = texte.length;
+    const tonAuf = daten.erklaert?.[nr] || null;
+    const titel = umbrechenAuf(s.titel || e.title, 2, 15);
+    const node = el(`<section class="sz dunkel">
+<div class="ub-kopf"><div class="ub-zeile"><span class="ub-code">${esc(e.code || "")}</span><span>${esc(s.dach || "Der Aufbau")}</span></div>
+<h2 class="ub-titel">${titel.map((z) => `<span><b>${esc(z)}</b></span>`).join("")}</h2></div>
+<div class="ub-platz"></div><div class="ub-schritte"></div><div class="ub-punkte"></div></section>`);
+    frame.append(node);
+    const platz = bauePlatz(node.querySelector(".ub-platz"), tafelVon(e, 0), { zoom: s.zoom || 1 });
+    const liste = node.querySelector(".ub-schritte"), punkte = node.querySelector(".ub-punkte");
+    const karten = texte.map((text, i) => {
+      const cut = text.indexOf(":"), kopf = cut > 0 && cut < 44 ? text.slice(0, cut) : `Schritt ${i + 1}`, rest = cut > 0 && cut < 44 ? text.slice(cut + 1).trim() : text;
+      const c = el(`<div class="ub-schritt ab-schritt"><span class="nr">${i + 1}</span><span class="tx"><b class="kopf">${esc(kopf)}</b><span class="rest">${esc(rest)}</span></span></div>`);
+      liste.append(c);
+      return c;
+    });
+    const t = node.querySelector(".ub-titel");
+    passeAn(t, t.querySelectorAll("b"), 930, 56);
+    // Welche Ebenen mit welchem Schritt dazukommen. Steht "players" mehrfach da, kommt je Schritt eine Mannschaft.
+    const zeigen = e.organisation_show || [], STANDARD = [["lines"], ["cones"], ["players"], ["balls", "arrows"]];
+    const dazu = texte.map((_, i) => (zeigen[i] ? zeigen[i].split(",").map((x) => x.trim()).filter(Boolean) : STANDARD[Math.min(i, 3)]));
+    const mal = dazu.flat().filter((x) => x === "players").length, ab = {}; // ab[Ebene] = Schritt, ab dem sie zu sehen ist
+    let team = 0;
+    dazu.forEach((ebenen, i) => ebenen.forEach((x) => {
+      if (x !== "players") { ab[x] ??= i; return; }
+      const letzte = ++team >= mal;
+      platz.teams.forEach((tm, k) => { if (k === team - 1 || (letzte && k >= team - 1)) ab["players:" + tm] ??= i; });
+    }));
+    ab.cones ??= 0; // Hütchen, die nirgends genannt sind, stehen mit dem Feld
+    ["lines", "balls", "arrows", ...platz.teams.map((x) => "players:" + x)].forEach((x) => { ab[x] ??= n - 1; });
+    // Zeiten: Name der Übung, Ansage, dann jeder Schritt so lange wie sein Satz
+    let z = Math.max(0.9, 0.3 + (tonAuf?.titel?.dauer || 0) + 0.15 + (tonAuf?.ansage?.dauer || 0) + 0.25);
+    const seg = texte.map((_, i) => { const s0 = z; z += Math.max(1.6, tonAuf?.schritte?.[i]?.dauer || s.takt || 3) + (s.luft ?? 0.3); return s0; });
+    const dauer = z + (s.nachlauf ?? 0.4);
+    return { el: node, ton: "dunkel", dauer, start(T) {
+      if (tonAuf?.titel) klang(tonAuf.titel.datei, T + 0.3, { fest: true, ein: 0.01, aus: 0.08 });
+      if (tonAuf?.ansage) klang(tonAuf.ansage.datei, T + 0.3 + (tonAuf.titel?.dauer || 0) + 0.15, { fest: true, ein: 0.01, aus: 0.05 });
+      (tonAuf?.schritte || []).forEach((x, i) => { if (x && seg[i] != null) klang(x.datei, T + seg[i], { fest: true, ein: 0.01, aus: 0.05 }); });
+      schieb(node.querySelector(".ub-zeile"), T + 0.3, 0.4, -40);
+      t.querySelectorAll("b").forEach((b, i) => steig(b, T + 0.4 + i * 0.1, 0.5));
+      blende(node.querySelector(".ub-platz"), T + 0.2, 0.5);
+      karten.forEach((c, i) => an(c, [{ translate: "0 26px", opacity: 0 }, { translate: "0 0", opacity: 1 }], T + seg[i], 0.28));
+      let gezeigt = -9;
+      haken.push((zeit) => {
+        const tl = zeit - T;
+        if (tl < -0.5 || tl > dauer + 0.6) return;
+        let cur = -1;
+        seg.forEach((s0, i) => { if (tl >= s0) cur = i; });
+        const werte = {};
+        Object.entries(ab).forEach(([ebene, i]) => { werte[ebene] = clamp01((tl - seg[i] - (ebene === "arrows" ? 0.35 : 0)) / 0.6); });
+        platz.zeichneAufbau(werte, clamp01(tl / dauer));
+        if (cur !== gezeigt) {
+          gezeigt = cur;
+          karten.forEach((c, i) => { c.style.display = i === cur ? "grid" : "none"; });
           [...punkte.children].forEach((p, i) => p.classList.toggle("an", i <= cur));
         }
       });

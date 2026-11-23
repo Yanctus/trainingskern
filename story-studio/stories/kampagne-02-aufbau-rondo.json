@@ -1,0 +1,40 @@
+{
+  "titel": "Aufbau: Pressing-Rondo 4 gegen 2",
+  "intro": false,
+  "musik": "ton/musik-elektro.mp3",
+  "musikLaut": 0.14,
+  "geraeusche": 0.6,
+  "uebergang": "knall",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "comic-tafel",
+      "dach": "So baust du auf",
+      "text": "Aufbau in *20 Sekunden.*",
+      "dauer": 3.0,
+      "sprecher": "Aufbau in zwanzig Sekunden.",
+      "sprecherAb": 0.7
+    },
+    {
+      "typ": "aufbau",
+      "code": "UE-008",
+      "sprich": [
+        null,
+        null,
+        null,
+        "Regeln ansagen: Zwei Kontakte. Acht Pässe geben einen Punkt für außen, ein Ballgewinn zwei für die Mitte."
+      ],
+      "ansage": false,
+      "luft": 0.2,
+      "nachlauf": 0.2
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "blende",
+      "sprecher": "Trainingskern. Jetzt ausprobieren auf trainingskern Punkt D E.",
+      "sprecherAb": 0.4,
+      "dauer": 4.2
+    }
+  ]
+}
