@@ -211,3 +211,17 @@ Teil 1 und 2 findest du auf dem Profil 👆
 📌 Speichern · 👉 Link in Bio
 
 #rondo #pressing #fußballtraining #jugendtrainer #fußballübungen
+
+---
+
+# Stories (3 pro Tag)
+
+Dateien im Drive-Ordner „instagram Trainingskern/Storys“, erzeugt mit `marketing/stories/make_stories.py`.
+
+| Zeit | Datei | Inhalt |
+|---|---|---|
+| 09:00 | `tagXX_1_morgen_0900.jpg` | Teaser mit Bild aus dem Reel + „HEUTE 18:30“ |
+| 12:30 | `tagXX_2_mittag_1230.jpg` | Frage an die Community / Coaching-Punkt / Serien-Hinweis (Antwort per DM) |
+| 18:45 | `tagXX_3_abend_1845.mp4` | 14-Sekunden-Ausschnitt aus dem Reel + „JETZT NEU“ |
+
+Hinweis: Umfrage-, Quiz- und Link-Sticker gehen über die API nicht. Fragen laufen über die DM-Antwortfunktion, Links über die Bio.
