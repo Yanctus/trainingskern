@@ -25,8 +25,8 @@
         "Regeln ansagen: Zwei Kontakte. Acht Pässe geben einen Punkt für außen, ein Ballgewinn zwei für die Mitte."
       ],
       "ansage": false,
-      "luft": 0.2,
-      "nachlauf": 0.2
+      "luft": 0.1,
+      "nachlauf": 0.1
     },
     {
       "typ": "outro",
