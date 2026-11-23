@@ -85,6 +85,11 @@ function introSzene(s, daten) {
     const [x, y, b] = fi.k.map((v) => v * 1.5), mitte = node.querySelector(".mitte"), k = node.querySelector(".k");
     mitte.style.translate = `${(x + b / 2 - 540).toFixed(1)}px ${(y + b / 2 - 825).toFixed(1)}px`;
     k.style.scale = (b / 310).toFixed(4);
+    if (fi.wort) { // kleineres Wort, wenn die dunkle Fläche des Films schmal ist
+      node.querySelector(".wort").style.fontSize = (92 * fi.wort).toFixed(1) + "px";
+      const ad = node.querySelector(".in-adresse");
+      if (ad) ad.style.fontSize = (58 * Math.max(fi.wort, 0.78)).toFixed(1) + "px";
+    }
     node.querySelector(".wort").style.translate = `0 ${((b - 310) / 2 + (b > 330 ? 14 : 0)).toFixed(1)}px`; // das Wort rückt an ein größeres oder kleineres K heran
   }
   const dauer = s.dauer || (s.outro ? (film ? filmDauer : 1.2) + 2.2 : film ? filmDauer + 0.95 : 1.85 / tempo);
@@ -259,7 +264,7 @@ function filmHaken(node, s, daten, T, dauer) {
 
 const SZENEN = {
   intro: introSzene,
-  // Outro: ein Film, der auf dem K endet (ohne Angabe das Comic-Outro: Schuss zur Kamera, Explosion, K),
+  // Outro: ein Film, der auf dem K endet (ohne Angabe das Zeichentrick-Outro: Trainer schießt den Ball zur Kamera, Explosion, K),
   // dann steigt TRAININGSKERN auf, darunter die Adresse. Steht am Ende statt oder nach dem Abpfiff.
   outro: (s, daten) => introSzene({ ...s, outro: true }, daten),
 
@@ -521,7 +526,7 @@ async function baue() {
   const kennung = datei.split("/").pop().replace(/\.json$/, "");
   // Das Intro steht von selbst vorn. "intro": false lässt es weg, "intro": { "film": "..." } nimmt einen Film.
   const plan = [...(story.intro === false ? [] : [{ typ: "intro", ...(typeof story.intro === "object" ? story.intro : {}) }]), ...story.szenen.map((s, i) => ({ ...s, nr: i }))]
-    .map((s) => (s.typ === "outro" && !s.film ? { ...s, film: "outro-comic" } : s));
+    .map((s) => (s.typ === "outro" && !s.film ? { ...s, film: "outro-cartoon" } : s));
   const artVon = (s) => s.uebergang || story.uebergang || "anstoss";
   const codes = [...new Set(plan.map((s) => s.code).filter(Boolean))];
   const filmNamen = [...new Set([...plan.map((s) => s.film), ...plan.map((s) => WISCHER[artVon(s)])].filter(Boolean))];

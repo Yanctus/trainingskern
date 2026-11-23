@@ -1,9 +1,10 @@
 {
-  "titel": "Outro",
+  "titel": "Outro im Zeichentrick-Stil",
   "intro": false,
   "szenen": [
     {
-      "typ": "outro"
+      "typ": "outro",
+      "film": "outro-cartoon"
     }
   ]
 }

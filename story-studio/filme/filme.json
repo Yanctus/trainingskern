@@ -322,26 +322,16 @@
   },
   "outro-cartoon": {
     "ab": 0,
-    "bis": 3.95,
-    "tempo": 1.6,
+    "bis": 2.3,
+    "tempo": 1.25,
     "k": [
-      280,
+      256.7,
       446.7,
-      160
+      206.7
     ],
     "bleibt": 1,
-    "marke": true,
-    "ton": false,
-    "klang": [
-      [
-        "floete",
-        -1.6
-      ],
-      [
-        "rumms",
-        -0.9
-      ]
-    ]
+    "wort": 0.64,
+    "marke": true
   },
   "wischer-tinte": {
     "maske": true,
