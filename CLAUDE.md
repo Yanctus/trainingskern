@@ -20,7 +20,8 @@ Die App selbst liegt bei Base44 (App „Trainingskern“), dieses Repo enthält 
 - Bilder für neue Intros: Nano Banana, Animation über Start- und Endbild (beides über OpenRouter). Keine Drei-Streifen-Kleidung, keine Logos.
 - Gestartet wird im Zeichentrick-Stil der 30er (`cartoon-*`), der Comic-Stil (`comic-*`) bleibt als zweite Schiene erhalten.
 - Jedes Video endet mit demselben Outro: `{ "typ": "outro" }` (Zeichentrick: Trainer schießt den Ball zur Kamera, Explosion, das K, TRAININGSKERN,
-  trainingskern.de). Für den Comic-Stil: `"film": "outro-comic"`. Übergänge im Zeichentrick-Stil: `iris` und `tinte`.
+  trainingskern.de). Für den Comic-Stil: `"film": "outro-comic"`. Übergänge im Zeichentrick-Stil: `iris` und `tinte`,
+  im Comic-Stil: `knall`, `pinsel`, `raster`, `panel`.
 - Erstes Kampagnen-Video als Muster: `story-studio/stories/kampagne-01-kein-plan.json`.
 - Generierte Clips bekommen die Farben der App über `"marke": true` in `filme/filme.json` (Rasen fast schwarz, kein Blau, genaues Neon und Orange).
 - Intros dürfen keine Stimme im Ton haben (kein Schreien, kein Rufen): Den Text spricht später die eigene ElevenLabs-Stimme.

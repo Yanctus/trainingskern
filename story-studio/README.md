@@ -21,7 +21,9 @@ Das Video liegt danach in `out/ue-001.mp4`, daneben ein Titelbild `out/ue-001.jp
 - **Übergänge** zwischen den Szenen: `anstoss` (zwei schwarze Hälften schließen an der Mittellinie, Lichtblitz, K),
   `streifen` (schräges Band in Orange, Neon, Schwarz), `blitz` (harter Schnitt mit Neon-Blitz),
   `marker` (ein dicker Stift kritzelt das Bild zu und gibt das nächste frei), `staub` (eine Wolke Neon-Kreide fegt über den Schnitt),
-  im Zeichentrick-Stil `iris` (die Kreisblende der alten Trickfilme) und `tinte` (ein Tintenklecks läuft über das Bild).
+  im Zeichentrick-Stil `iris` (die Kreisblende der alten Trickfilme) und `tinte` (ein Tintenklecks läuft über das Bild),
+  im Comic-Stil `knall` (ein Aufprall-Stern knallt das Bild zu), `pinsel` (Tuschepinsel-Hiebe), `raster` (Rasterpunkte wie im Comicdruck)
+  und `panel` (drei schräge Panel-Balken schlagen zu).
   Jeder Übergang bringt sein Geräusch mit.
 - **Sichere Zone:** Oben 250 px und unten 340 px bleiben ohne Text, dort liegen bei Instagram Profilzeile und Antwortfeld.
 - **Tonspur:** Geräusche der Übergänge und der leise Ton der Filme. Musik kommt in der Instagram-App dazu (dort ist sie lizenziert).
@@ -98,6 +100,7 @@ für `hook`-Szenen, als Intro und als Wischer:
 | `outro-cartoon` | Zeichentrick: Der Trainer schießt den Ball zur Kamera, Explosion, darin das K; der Ball sitzt benommen am Boden, die Hütchen jubeln | Standard-Outro: `{ "typ": "outro" }` |
 | `outro-comic` | dasselbe im Comic-Stil | `{ "typ": "outro", "film": "outro-comic" }` |
 | `wischer-tinte` | Tintenklecks läuft über Weiß | Übergang `tinte` |
+| `wischer-knall`, `wischer-pinsel` | Aufprall-Stern und Pinselhiebe in Schwarz auf Weiß | Übergänge `knall`, `pinsel` (Comic) |
 | `hook-zettel` | Papierfigur schießt den Ball zur Kamera, ein leeres Blatt klatscht davor | das feste Intro mit wechselndem Text |
 | `hook-zettel-flutlicht` | Flutlicht geht an, Figuren drehen sich, Blatt klatscht davor (später als bei `hook-zettel`) | Ersatz |
 | `intro-papier` | Papierfiguren auf dem dunklen Platz, eine schießt den Ball zur Kamera, Neon-Blitz, K | Intro im Stil der App |

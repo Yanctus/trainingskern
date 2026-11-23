@@ -136,7 +136,7 @@ function introSzene(s, daten) {
 }
 
 /* ---------- Übergänge: Schnitt bei T ---------- */
-const WISCHER = { marker: "wischer-marker", staub: "wischer-staub", tinte: "wischer-tinte" }; // Übergänge aus generierten Filmen
+const WISCHER = { marker: "wischer-marker", staub: "wischer-staub", tinte: "wischer-tinte", knall: "wischer-knall", pinsel: "wischer-pinsel" }; // Übergänge aus generierten Filmen
 // anstoss: zwei schwarze Hälften schließen an der Mittellinie, Lichtblitz, das K blitzt auf, die Hälften ziehen auf
 // streifen: ein schräges Band (Orange, Neon, Schwarz) wischt über das Bild
 // blitz: harter Schnitt mit kurzem Neon-Blitz
@@ -144,6 +144,8 @@ const WISCHER = { marker: "wischer-marker", staub: "wischer-staub", tinte: "wisc
 // staub: eine Wolke aus Neon-Kreide fegt über den Schnitt (generierter Wischer)
 // tinte: ein Tintenklecks im Zeichentrick-Stil läuft über das Bild und gibt das nächste frei (generierter Wischer)
 // iris: die Kreisblende der alten Trickfilme: ein schwarzer Kreis zieht sich zu und geht auf dem nächsten Bild wieder auf
+// Comic: knall (ein Aufprall-Stern knallt das Bild zu), pinsel (Tuschepinsel-Hiebe), beide generiert;
+//        raster (Rasterpunkte wie im Comicdruck wachsen zu), panel (drei schräge Panel-Balken schlagen zu), beide gebaut
 // nachIntro: der Vorhang ist schon zu (das Intro steht auf Schwarz), er zieht nur noch auf
 function baueUebergang(art, T, nachIntro, daten) {
   const u = el(`<div class="ue"></div>`);
@@ -155,12 +157,13 @@ function baueUebergang(art, T, nachIntro, daten) {
     u.innerHTML = `<canvas class="wisch${art === "staub" ? " gross" : ""}"></canvas>`;
     u.style.mixBlendMode = art === "staub" ? "screen" : "multiply"; // an der Hülle, sonst mischt die Leinwand nur mit sich selbst
     const zeig = bildfolge(u.firstChild, "film-" + film, f.anzahl);
-    if (art === "marker" || art === "tinte") {
+    if (art !== "staub") {
       // Vorwärts bis alles schwarz ist (Schnitt), dann rückwärts wieder frei
-      const zu = m.zu ?? f.dauer, hin = 0.5, weg = 0.45; // zu = Stelle im Film, an der das Bild ganz schwarz ist
+      const zu = m.zu ?? f.dauer, hin = m.hin ?? 0.5, weg = m.weg ?? 0.45; // zu = Stelle im Film, an der das Bild ganz schwarz ist
       von = T - hin; bis = T + weg;
       haken.push((z) => (z < von - 0.1 || z > bis + 0.1 ? null : zeig((z <= T ? zu * clamp01((z - von) / hin) ** 1.6 : zu * clamp01(1 - (z - T) / weg) ** 1.6) * f.fps)));
-      klang(`filme/${film}.mp4`, von, { von: m.tonAb || 0.3, dauer: hin + weg, laut: 0.8 });
+      if (m.ton === false) (m.klang || []).forEach(([name, versatz]) => { if (daten.klaenge[name]) klang(`ton/${name}.mp3`, T + versatz, { laut: 0.8 }); });
+      else klang(`filme/${film}.mp4`, von, { von: m.tonAb || 0.3, dauer: hin + weg, laut: 0.8 });
     } else {
       const a = m.ab ?? 0, e = m.bis ?? f.dauer, mitte = m.mitte ?? (a + e) / 2, hin = 0.4, weg = 0.55; // mitte = dichteste Stelle
       von = T - hin; bis = T + weg;
@@ -169,6 +172,31 @@ function baueUebergang(art, T, nachIntro, daten) {
       an(u.lastChild, [{ opacity: 0 }, { opacity: 0.9, offset: 0.45 }, { opacity: 0 }], T - 0.1, 0.3, E.gerade);
       klang(`filme/${film}.mp4`, von, { von: m.tonAb || 0, dauer: hin + weg + 0.3, laut: 0.8 });
     }
+  } else if (art === "raster" && !nachIntro) {
+    // Rasterpunkte: erst Neon, dann Schwarz wachsen, bis das Bild zu ist; nach dem Schnitt schrumpfen sie wieder
+    u.innerHTML = `<i class="rp n"></i><i class="rp t"></i><i class="rp t v"></i>`;
+    const zu = 0.42, auf = 0.46, R = 62; // R: Radius, bei dem die Punkte das Bild decken
+    von = T - zu; bis = T + auf;
+    const [n, a, b] = u.children;
+    haken.push((z) => {
+      if (z < von - 0.1 || z > bis + 0.1) return null;
+      const p = z <= T ? clamp01((z - von) / zu) : 1 - clamp01((z - T - 0.03) / auf);
+      n.style.setProperty("--r", (R * 1.5 * clamp01(p * 1.5)).toFixed(1) + "px");
+      const r = (R * clamp01((p - 0.22) / 0.78) ** 0.9).toFixed(1) + "px";
+      a.style.setProperty("--r", r); b.style.setProperty("--r", r);
+      return null;
+    });
+    if (daten.klaenge.wusch) klang("ton/wusch.mp3", T - 0.35, { laut: 0.6 });
+  } else if (art === "panel" && !nachIntro) {
+    // Drei schräge Panel-Balken schlagen von links, rechts, links zu und fahren nach dem Schnitt wieder auseinander
+    u.innerHTML = `<div class="pb"><i></i><i></i><i></i></div>`;
+    von = T - 0.42; bis = T + 0.46;
+    [...u.firstChild.children].forEach((bar, i) => {
+      const seite = i % 2 ? 1 : -1;
+      an(bar, [{ translate: `${seite * 110}% 0` }, { translate: "0 0" }], von + i * 0.07, 0.24, "cubic-bezier(.7,0,.3,1)");
+      an(bar, [{ translate: "0 0" }, { translate: `${-seite * 110}% 0` }], T + 0.08 + i * 0.07, 0.26, "cubic-bezier(.7,0,.3,1)", "forwards");
+    });
+    if (daten.klaenge.rumms) klang("ton/rumms.mp3", T - 0.2, { laut: 0.75 });
   } else if (art === "iris" && !nachIntro) {
     u.innerHTML = `<i class="iris"></i>`;
     const zu = 0.4, auf = 0.46, R = 1150; // R: Radius, bei dem der Kreis das ganze Bild freigibt

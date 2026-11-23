@@ -337,5 +337,35 @@
     "maske": true,
     "zu": 3.75,
     "tonAb": 0.1
+  },
+  "wischer-knall": {
+    "maske": true,
+    "zu": 3.4,
+    "hin": 0.45,
+    "weg": 0.4,
+    "ton": false,
+    "klang": [
+      [
+        "rumms",
+        -0.3
+      ]
+    ]
+  },
+  "wischer-pinsel": {
+    "maske": true,
+    "zu": 3.5,
+    "hin": 0.5,
+    "weg": 0.45,
+    "ton": false,
+    "klang": [
+      [
+        "wusch",
+        -0.45
+      ],
+      [
+        "wusch",
+        -0.15
+      ]
+    ]
   }
 }

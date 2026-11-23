@@ -1,7 +1,6 @@
 {
-  "titel": "Comic-Intros im Vergleich",
+  "titel": "Comic-Intros, Übergänge und Outro",
   "intro": false,
-  "uebergang": "blitz",
   "szenen": [
     {
       "typ": "hook",
@@ -15,42 +14,53 @@
       "film": "comic-tafel",
       "dach": "Variante 2 · Taktiktafel",
       "text": "Schon wieder *Rondo?*",
-      "dauer": 3.4
+      "dauer": 3.4,
+      "uebergang": "knall"
     },
     {
       "typ": "hook",
       "film": "comic-banner",
       "dach": "Variante 3 · Banner",
       "text": "Deine Spieler kennen jede Übung *im Schlaf?*",
-      "dauer": 3.4
+      "dauer": 3.4,
+      "uebergang": "raster"
     },
     {
       "typ": "hook",
       "film": "comic-megafon",
       "dach": "Variante 4 · Megafon",
       "text": "Zeit für *Abwechslung!*",
-      "dauer": 3.4
+      "dauer": 3.4,
+      "uebergang": "pinsel"
     },
     {
       "typ": "hook",
       "film": "comic-panels",
       "dach": "Variante 5 · Comic-Seite",
       "text": "Am Wochenende wieder *kein Spielsystem?*",
-      "dauer": 3.4
+      "dauer": 3.4,
+      "uebergang": "panel"
     },
     {
       "typ": "hook",
       "film": "comic-fallrueckzieher",
       "dach": "Variante 6 · Fallrückzieher",
       "text": "Training, das *hängen bleibt.*",
-      "dauer": 3.4
+      "dauer": 3.4,
+      "uebergang": "knall"
     },
     {
       "typ": "hook",
       "film": "comic-karte",
       "dach": "Variante 7 · Karte",
       "text": "Schluss mit *Standard-training.*",
-      "dauer": 3.4
+      "dauer": 3.4,
+      "uebergang": "raster"
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "panel"
     }
   ]
 }
