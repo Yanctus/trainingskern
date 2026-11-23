@@ -1,7 +1,7 @@
 {
   "titel": "Marketing: Woanders suchst du, hier läuft die Übung",
   "intro": false,
-  "musik": "zufall",
+  "musik": "ton/musik-elektro.mp3",
   "musikLaut": 0.15,
   "geraeusche": 0.6,
   "uebergang": "pinsel",

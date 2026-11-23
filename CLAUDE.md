@@ -34,6 +34,9 @@ Die App selbst liegt bei Base44 (App „Trainingskern“), dieses Repo enthält 
   `"stimme": true`: die Grundform, `"fassung": 1` (Coaching-Punkt) und `"fassung": 2` (Steigerung), dann `blende` ins Outro.
   Die Seite hat für alle drei Teile Aufnahmen. Bei sehr langen Grundformen reichen die ersten Schritte (`"schritte": 3`).
   Ein Aufbau-Video ist nur auf Wunsch dabei. Die kurzen Fassungen ohne Coaching-Punkt (`kampagne-03` bis `-06`) sind der alte Stand.
+- **Jedes Übungs-Video zeigt eine andere Übung** (Vorgabe vom 23.11.2026): nie eine, die schon ein Video hat, und quer durch den Katalog
+  gemischt (Athletik, Koordination, Torhüter, Technik, Spielformen, verschiedene Altersklassen). Es geht darum, die Vielfalt zu zeigen.
+  Schon verfilmt: UE-001, UE-004, UE-005, UE-007, UE-008, UE-011.
 - Für erklärte Übungen die vorhandenen Aufnahmen der Seite nehmen (kosten kein ElevenLabs-Kontingent). Der Aufbau hat auf der Seite keine
   Aufnahmen und wird neu eingesprochen.
 - **Die Länge entscheidet Claude** (Stand 23.11.2026): so lang, wie der Inhalt braucht, auch über 30 Sekunden. Nicht künstlich strecken.
@@ -47,11 +50,10 @@ Die App selbst liegt bei Base44 (App „Trainingskern“), dieses Repo enthält 
 - Vertonung: je Szene ein Satz in `"sprecher"`, gesprochen mit der Stimme aus `story-studio/stimme.json` (dieselbe wie in der App, „Jarvis deutsch“).
   Der Schlüssel ist in der Cloud-Umgebung für api.elevenlabs.io hinterlegt, nie ins Repo schreiben. Aufnahmen liegen in `ton/sprecher/` und kosten nur einmal.
   Das Zeichen-Kontingent ist knapp (Stand 23.11.2026 rund 15.000 Zeichen frei): Sätze kurz halten, nichts unnötig neu einsprechen.
-- Musik läuft leise mit: leichter Elektro, generiert, ohne Gesang. Drei Titel liegen bereit (`ton/musik-elektro.mp3` 32 s,
-  `ton/musik-elektro-2.mp3` 61 s, `ton/musik-elektro-3.mp3` 66 s). `"musik": "zufall"` wählt einen, der bis zum Ende reicht
-  (je Story immer denselben). Ist das Video länger als der Titel, setzt die Musik an einem Szenenwechsel neu an. Für die kompletten
-  Übungs-Videos (65 bis 75 s) wäre ein Titel von rund zwei Minuten besser; der kostet Higgsfield-Credits und ist noch nicht bestellt.
-  Kein Funk-Beat, kein Swing.
+- Musik läuft leise mit: leichter Elektro, generiert, ohne Gesang. Vier Titel liegen bereit (`ton/musik-elektro.mp3` 32 s,
+  `ton/musik-elektro-2.mp3` 61 s, `ton/musik-elektro-3.mp3` 66 s, `ton/musik-elektro-4.mp3` 110 s). `"musik": "zufall"` wählt einen,
+  der bis zum Ende reicht (je Story immer denselben). Ist ein Video länger als jeder Titel, setzt die Musik an einem Szenenwechsel
+  neu an. Fertige Storys nennen ihren Titel fest, damit ein neues Rendern gleich klingt. Kein Funk-Beat, kein Swing.
 - Im Sprechertext sagt die Stimme „von mir auf Deutsch erklärt“, damit klar ist, dass es Ton zur Übung gibt.
 - Keine Spielminute, kein Fortschrittsbalken im Bild. Der Bildschirm der Seite zeigt nur Titel und Tafel (`"verstecke"` blendet den Rest aus).
 - Vorlage: `story-studio/stories/vorlage-kampagne.json`.

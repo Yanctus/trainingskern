@@ -1,7 +1,7 @@
 {
   "titel": "Übung erklärt: Fangduell im Diamanten",
   "intro": false,
-  "musik": "zufall",
+  "musik": "ton/musik-elektro-2.mp3",
   "musikLaut": 0.14,
   "geraeusche": 0.6,
   "uebergang": "raster",

@@ -1,7 +1,7 @@
 {
   "titel": "Übung komplett: Dribbel-Dreieck mit Ablage",
   "intro": false,
-  "musik": "zufall",
+  "musik": "ton/musik-elektro-3.mp3",
   "musikLaut": 0.14,
   "geraeusche": 0.6,
   "uebergang": "panel",
