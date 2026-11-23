@@ -65,7 +65,7 @@ Dateinamen im Ordner `Storys/`: `tagXX_N_zeit.jpg/mp4`, zum Beispiel `tag01_1_mo
 
 `tag01` gehört zum Reel von Tag 1, `tag02` zu Tag 2 und so weiter (siehe Plan in Abschnitt 6).
 
-**Status:** Die Morgen- und Mittags-Stories für Tag 1–11 liegen im Drive (22 Dateien). **Die 11 Abend-Videos (`tagXX_3_abend_1845.mp4`) fehlen noch im Drive.** Bis sie da sind: Abends einfach das Reel des Tages in der Story teilen (in der App: Reel → Papierflieger → „Zu deiner Story hinzufügen“), mit dem Text „JETZT NEU“.
+**Status:** Alle 33 Stories für Tag 1–11 liegen im Ordner `Storys/` (11 Morgen-Bilder, 11 Mittags-Bilder, 11 Abend-Videos).
 
 Wenn du in der App postest: Gern eine **Umfrage**, eine **Frage** oder einen **Link-Sticker** (trainingskern.de/einheiten?frei=1) auf die Stories setzen. Das bringt Interaktion.
 
