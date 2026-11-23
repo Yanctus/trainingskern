@@ -97,7 +97,7 @@ function introSzene(s, daten) {
       haken.push((zeit) => (zeit < T - 0.2 || zeit > T + dauer + 0.2 ? null : zeig((ab + (zeit - T) * tempo) * film.fps)));
       $(".feld").style.display = "none"; $(".seitenlinie").style.display = "none";
       blende($(".k"), T + filmDauer - 0.12, 0.12);
-      an($(".in-film"), [{ opacity: 1 }, { opacity: 0 }], T + filmDauer, 0.2, E.gerade, "forwards");
+      an($(".in-film"), [{ opacity: 1 }, { opacity: fi.bleibt || 0 }], T + filmDauer, fi.bleibt ? 0.5 : 0.2, E.gerade, "forwards");
       if (s.filmTon !== false) klang(`filme/${s.film}.mp4`, T, { von: ab, dauer: Math.min(film.dauer, bis + 0.9) - ab, tempo, laut: s.laut ?? 1, aus: 0.5 });
     } else {
       an($(".feld circle"), [{ strokeDashoffset: 1 }, { strokeDashoffset: 0 }], z(0.05), d(1.0), "cubic-bezier(.7,0,.2,1)");
@@ -243,8 +243,8 @@ function filmHaken(node, s, daten, T, dauer) {
 
 const SZENEN = {
   intro: introSzene,
-  // Outro: derselbe Film wie das Intro im Stil der App (ohne Angabe die Papierfiguren mit dem Schuss zur Kamera),
-  // endet auf dem K, TRAININGSKERN steigt auf, darunter die Adresse. Steht am Ende statt oder nach dem Abpfiff.
+  // Outro: ein Film, der auf dem K endet (ohne Angabe das Comic-Outro: Schuss zur Kamera, Explosion, K),
+  // dann steigt TRAININGSKERN auf, darunter die Adresse. Steht am Ende statt oder nach dem Abpfiff.
   outro: (s, daten) => introSzene({ ...s, outro: true }, daten),
 
   // Hook: eine große Frage oder Behauptung, auf Wunsch über einem Film ("film": Name aus filme/).
@@ -257,7 +257,7 @@ const SZENEN = {
     if (zettel && !s.filmTempo) s = { ...s, filmTempo: Math.max(1, (fi.landet || 1) / 0.8) };
     const landung = zettel ? ((fi.landet || 1) - (s.filmAb || 0)) / s.filmTempo + 0.1 : 0;
     const node = el(`<section class="sz ${tonart} hook${mitFilm ? " mit-film" : ""}${zettel ? " auf-zettel" : ""}${fi.flaeche ? " fl-" + fi.flaeche : ""}">
-${mitFilm ? `<canvas class="hg-film"></canvas>${zettel ? "" : `<i class="hg-schleier"></i><i class="hg-korn"></i>`}` : `<div class="raster" style="left:0;bottom:340px;width:520px;height:520px;${tonart === "dunkel" ? "--hc:#f8f4e9;opacity:.14" : ""}"></div>`}
+${mitFilm ? `<canvas class="hg-film"></canvas>${zettel ? `<i class="hg-druck"></i>` : `<i class="hg-schleier"></i><i class="hg-korn"></i>`}` : `<div class="raster" style="left:0;bottom:340px;width:520px;height:520px;${tonart === "dunkel" ? "--hc:#f8f4e9;opacity:.14" : ""}"></div>`}
 <div class="hk-block">${s.dach ? `<div class="am-dach hk-dach"><i></i><span>${esc(s.dach)}</span></div>` : ""}
 <h1 class="am-titel hk-titel">${titelZeilen(s.zeilen || ["Trainingskern"], tonart === "papier")}</h1>
 ${s.notiz ? `<p class="hk-notiz hand">${esc(s.notiz)}</p>` : ""}</div></section>`);
@@ -293,8 +293,10 @@ ${s.notiz ? `<p class="hk-notiz hand">${esc(s.notiz)}</p>` : ""}</div></section>
     }
     const dauer = s.dauer || (zettel ? 3 : 3.2);
     if (fi.laut && s.laut == null) s = { ...s, laut: fi.laut };
+    if (fi.ton === false) s = { ...s, filmTon: false }; // Ton des Films enthält eine Stimme: stattdessen Geräusche aus ton/ (fi.klang)
     return { el: node, ton: tonart, dauer, ohneMarke: !!fi.ohneMarke, ohneUhr: !!fi.ohneMarke, start(T) {
       if (mitFilm) filmHaken(node, s, daten, T, dauer);
+      (fi.klang || []).forEach(([name, versatz]) => { if (daten.klaenge[name]) klang(`ton/${name}.mp3`, T + landung + versatz, { laut: 0.85 }); });
       const dach = node.querySelector(".hk-dach");
       if (dach) schieb(dach, T + landung + 0.25, 0.35, -40);
       const zs = [...node.querySelectorAll(".hk-titel .z")];
@@ -503,7 +505,7 @@ async function baue() {
   const kennung = datei.split("/").pop().replace(/\.json$/, "");
   // Das Intro steht von selbst vorn. "intro": false lässt es weg, "intro": { "film": "..." } nimmt einen Film.
   const plan = [...(story.intro === false ? [] : [{ typ: "intro", ...(typeof story.intro === "object" ? story.intro : {}) }]), ...story.szenen.map((s, i) => ({ ...s, nr: i }))]
-    .map((s) => (s.typ === "outro" && !s.film ? { ...s, film: "intro-papier" } : s));
+    .map((s) => (s.typ === "outro" && !s.film ? { ...s, film: "outro-comic" } : s));
   const artVon = (s) => s.uebergang || story.uebergang || "anstoss";
   const codes = [...new Set(plan.map((s) => s.code).filter(Boolean))];
   const filmNamen = [...new Set([...plan.map((s) => s.film), ...plan.map((s) => ({ marker: "wischer-marker", staub: "wischer-staub" }[artVon(s)]))].filter(Boolean))];

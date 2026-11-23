@@ -34,7 +34,11 @@ Jedes Kampagnen-Video beginnt und endet gleich, nur der Text wechselt (Vorlage: 
   auf dem Blatt in dem Moment, in dem es aufklatscht. `text` ist ein Satz, `*so*` bekommt die Neon-Fläche; das Studio bricht
   ihn selbst so um, dass die Schrift so groß wie möglich wird. `dach` setzt eine kleine Zeile darüber.
   Mit `"intro": false` oben in der Story, damit nichts davor läuft.
-- **Outro:** `{ "typ": "outro" }` Papierfigur schießt den Ball zur Kamera, Neon-Blitz, das K, TRAININGSKERN, darunter trainingskern.de.
+- **Outro:** `{ "typ": "outro" }` Comic: Der Stürmer schießt zur Kamera, der Ball explodiert am Bildschirm, in der Explosion sitzt das K,
+  dann TRAININGSKERN und trainingskern.de. (`"film": "intro-papier"` nimmt stattdessen die Papierfiguren.)
+- **Farben:** `"marke": true` in `filme/filme.json` legt die Farbtabelle `filme/marke.cube` über einen Clip: Rasen fast schwarz wie in der App,
+  kein Blau, Neon und Orange auf die genauen Markentöne. `"ton": false` schaltet den Ton eines Clips ab (wenn darin eine Stimme ist),
+  `"klang"` setzt dafür Geräusche aus `ton/`.
 
 Bei Filmen mit freier Fläche steht in `filme/filme.json`, wo sie liegt (`zettel`: x, y, Breite, Höhe im 1080er Bild), wie sie gedreht ist (`dreh`),
 wann sie steht (`landet`) und welche Farbe sie hat (`flaeche`: ohne Angabe hell, sonst `neon` oder `dunkel`).

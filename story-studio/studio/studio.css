@@ -76,6 +76,7 @@ html,body{margin:0;background:#1b1b18;overflow:hidden}
 #frame .hg-film{position:absolute;inset:0;width:100%;height:100%;display:block;background:#0d0d0b}
 #frame .hg-schleier{position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,13,11,.72) 0%,rgba(13,13,11,.38) 34%,rgba(13,13,11,.3) 62%,rgba(13,13,11,.78) 100%)}
 #frame .hg-korn{position:absolute;inset:0;background:var(--grain-l);opacity:.55;mix-blend-mode:screen}
+#frame .hg-druck{position:absolute;inset:0;background:var(--grain-d);opacity:.5;mix-blend-mode:multiply}
 #frame .hk-block{position:absolute;left:72px;right:72px}
 #frame .hk-block .am-dach,#frame .hk-block .am-titel{position:relative;left:0;top:0}
 #frame .hk-block .am-dach{margin-bottom:34px}

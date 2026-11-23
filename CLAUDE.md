@@ -16,7 +16,9 @@ Die App selbst liegt bei Base44 (App „Trainingskern“), dieses Repo enthält 
   `hook` mit `"film": "comic-..."`. Welche Variante das feste Intro wird, ist noch offen (Auswahl: `story-studio/stories/comic-vergleich.json`).
   Das Intro muss sich klar vom Outro unterscheiden; `hook-zettel` ist deshalb verworfen.
 - Bilder für neue Intros: Nano Banana, Animation über Start- und Endbild (beides über OpenRouter). Keine Drei-Streifen-Kleidung, keine Logos.
-- Jedes Video endet mit demselben Outro: `{ "typ": "outro" }` (Papierfigur schießt den Ball zur Kamera, K, TRAININGSKERN, trainingskern.de).
+- Jedes Video endet mit demselben Outro: `{ "typ": "outro" }` (Comic: Stürmer schießt zur Kamera, Explosion, das K, TRAININGSKERN, trainingskern.de).
+- Generierte Clips bekommen die Farben der App über `"marke": true` in `filme/filme.json` (Rasen fast schwarz, kein Blau, genaues Neon und Orange).
+- Intros dürfen keine Stimme im Ton haben (kein Schreien, kein Rufen): Den Text spricht später die eigene ElevenLabs-Stimme.
 - Vorlage: `story-studio/stories/vorlage-kampagne.json`.
 
 ## Story-Studio

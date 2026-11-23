@@ -62,7 +62,8 @@
     "landet": 0.8,
     "rand": 10,
     "ohneMarke": true,
-    "laut": 0.9
+    "laut": 0.9,
+    "marke": true
   },
   "comic-tafel": {
     "zettel": [
@@ -75,7 +76,8 @@
     "landet": 1.6,
     "rand": 10,
     "ohneMarke": true,
-    "laut": 0.9
+    "laut": 0.9,
+    "marke": true
   },
   "comic-banner": {
     "zettel": [
@@ -87,7 +89,19 @@
     "landet": 2.2,
     "rand": 10,
     "ohneMarke": true,
-    "laut": 0.9
+    "laut": 0.9,
+    "marke": true,
+    "ton": false,
+    "klang": [
+      [
+        "wusch",
+        -0.35
+      ],
+      [
+        "rumms",
+        -0.05
+      ]
+    ]
   },
   "comic-megafon": {
     "zettel": [
@@ -96,11 +110,12 @@
       640,
       400
     ],
-    "landet": 0.8,
+    "landet": 1.0,
     "flaeche": "neon",
     "rand": 10,
     "ohneMarke": true,
-    "laut": 0.9
+    "laut": 0.9,
+    "marke": true
   },
   "comic-panels": {
     "zettel": [
@@ -113,7 +128,8 @@
     "landet": 1.2,
     "rand": 10,
     "ohneMarke": true,
-    "laut": 0.9
+    "laut": 0.9,
+    "marke": true
   },
   "comic-fallrueckzieher": {
     "zettel": [
@@ -126,7 +142,19 @@
     "flaeche": "dunkel",
     "rand": 10,
     "ohneMarke": true,
-    "laut": 0.9
+    "laut": 0.9,
+    "marke": true,
+    "ton": false,
+    "klang": [
+      [
+        "wusch",
+        -0.5
+      ],
+      [
+        "rumms",
+        -0.1
+      ]
+    ]
   },
   "comic-karte": {
     "zettel": [
@@ -140,6 +168,30 @@
     "flaeche": "neon",
     "rand": 10,
     "ohneMarke": true,
-    "laut": 0.9
+    "laut": 0.9,
+    "marke": true,
+    "ton": false,
+    "klang": [
+      [
+        "wusch",
+        -0.3
+      ],
+      [
+        "rumms",
+        -0.05
+      ]
+    ]
+  },
+  "outro-comic": {
+    "ab": 0,
+    "bis": 3.95,
+    "tempo": 1.6,
+    "k": [
+      256.7,
+      446.7,
+      206.7
+    ],
+    "bleibt": 0.22,
+    "marke": true
   }
 }

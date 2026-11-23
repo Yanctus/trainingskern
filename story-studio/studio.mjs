@@ -70,7 +70,8 @@ async function zerlegeFilm(name) {
   const filter = ["fps=30", "scale=720:1280:force_original_aspect_ratio=increase", "crop=720:1280",
     ...(angaben.maske ? ["format=gray", "lutyuv=y='clip((val-70)*255/110,0,255)'"] : []),
     ...(angaben.schwarz ? ["lutyuv=y='clip((val-28)*255/227,0,255)'"] : []),
-    ...(angaben.lime ? ["colorchannelmixer=rr=0.84"] : [])].join(","); // lime: Gelb etwas grüner, Richtung Neon der Marke
+    ...(angaben.lime ? ["colorchannelmixer=rr=0.84"] : []),
+    ...(angaben.marke ? ["lut3d=file=" + path.join(HIER, "filme", "marke.cube")] : [])].join(","); // marke: Farben der App (Rasen fast schwarz, kein Blau, genaues Neon und Orange) // lime: Gelb etwas grüner
   await run("ffmpeg", ["-y", "-loglevel", "error", "-i", quelle, "-vf", filter, "-q:v", "3", "-start_number", "0", path.join(ordner, "%04d.jpg")]);
   const anzahl = readdirSync(ordner).filter((f) => f.endsWith(".jpg")).length;
   const { stdout } = await run("ffprobe", ["-v", "error", "-show_entries", "stream=codec_type", "-of", "csv=p=0", quelle]);

@@ -2,6 +2,8 @@
   "titel": "Outro",
   "intro": false,
   "szenen": [
-    { "typ": "outro" }
+    {
+      "typ": "outro"
+    }
   ]
 }
