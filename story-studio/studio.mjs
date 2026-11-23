@@ -22,7 +22,7 @@ const HIER = path.dirname(fileURLToPath(import.meta.url));
 const OUT = path.join(HIER, "out"), CACHE = path.join(OUT, "cache");
 const APP = "6afec076c6c4a55a7cb4995e";                       // Trainingskern bei Base44
 const KATALOG = `https://app.base44.com/api/apps/${APP}/entities/Einheit?limit=1000`; // öffentliche Leseschnittstelle
-const SEITE = "https://trainingskern.base44.app";             // die veröffentlichte App (für Aufnahmen im Handy)
+const SEITE = "https://trainingskern.de";                      // die veröffentlichte App (für Aufnahmen im Handy)
 const HANDY = { width: 390, height: 772 };                     // passt zum Bildschirm des Handys in der Szene "app"
 
 const [befehl, datei, ...rest] = process.argv.slice(2);

@@ -422,7 +422,7 @@ ${kBox("ab-k")}
 ${zahl ? `<p class="ab-zahl">${esc(zahl)}</p>` : ""}
 <p class="ab-zeilen${zahl ? "" : " gross"}">${zeilen.map((z) => `<span${/^\*.*\*$/.test(z) ? ` class="stark"` : ""}><b>${esc(z.replace(/^\*|\*$/g, ""))}</b></span>`).join("")}</p>
 <div class="ab-knopf"><span>${esc(s.knopf || "Kostenlos ansehen")}</span><i>→</i></div>
-<p class="ab-adresse">${esc(s.adresse || "trainingskern.base44.app")}</p>
+<p class="ab-adresse">${esc(s.adresse || "trainingskern.de")}</p>
 ${s.notiz !== false ? `<p class="ab-notiz hand">${esc(s.notiz || "Link in der Bio")}</p>` : ""}</section>`);
     frame.append(node);
     const z = node.querySelector(".ab-zahl"), zl = node.querySelector(".ab-zeilen"), kn = node.querySelector(".ab-knopf"), ad = node.querySelector(".ab-adresse"), no = node.querySelector(".ab-notiz");
