@@ -93,6 +93,7 @@ für `hook`-Szenen, als Intro und als Wischer:
 | `pfeife-regen` | Pfeife hängt am Pfosten im Regen | ruhige Bilder, Zitate |
 | `platz-daemmerung` | leerer Platz mit Hütchenreihe in der Dämmerung | allgemeiner Hintergrund |
 | `comic-sprechblase`, `comic-tafel`, `comic-banner`, `comic-megafon`, `comic-panels`, `comic-fallrueckzieher`, `comic-karte` | gezeichnete Comic-Intros, enden auf einer leeren Fläche (Sprechblase, Tafel, Banner, Schrei-Blase, Textkasten, Feuerring, Karte) | Intro mit wechselndem Text: `{ "typ": "hook", "film": "comic-tafel", "text": "…" }` |
+| `cartoon-trainer`, `cartoon-vorhang`, `cartoon-titelkarte` | Zeichentrick im Stil der 30er (Gummischlauch-Arme, Kulleraugen, dicke Tuschelinien) in den Farben der App, enden auf Schild, Leinwand oder Titelkarte | Intro mit wechselndem Text, Vergleich: `stories/cartoon-vergleich.json` |
 | `hook-zettel` | Papierfigur schießt den Ball zur Kamera, ein leeres Blatt klatscht davor | das feste Intro mit wechselndem Text |
 | `hook-zettel-flutlicht` | Flutlicht geht an, Figuren drehen sich, Blatt klatscht davor (später als bei `hook-zettel`) | Ersatz |
 | `intro-papier` | Papierfiguren auf dem dunklen Platz, eine schießt den Ball zur Kamera, Neon-Blitz, K | Intro im Stil der App |

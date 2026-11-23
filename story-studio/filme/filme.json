@@ -193,5 +193,56 @@
     ],
     "bleibt": 0.22,
     "marke": true
+  },
+  "cartoon-trainer": {
+    "zettel": [
+      130,
+      410,
+      820,
+      500
+    ],
+    "dreh": -3,
+    "landet": 0.9,
+    "rand": 10,
+    "ohneMarke": true,
+    "laut": 0.9,
+    "marke": true
+  },
+  "cartoon-vorhang": {
+    "zettel": [
+      250,
+      470,
+      580,
+      720
+    ],
+    "landet": 1.2,
+    "rand": 10,
+    "ohneMarke": true,
+    "laut": 0.9,
+    "marke": true,
+    "ton": false,
+    "klang": [
+      [
+        "wusch",
+        -0.5
+      ],
+      [
+        "klick",
+        -0.1
+      ]
+    ]
+  },
+  "cartoon-titelkarte": {
+    "zettel": [
+      200,
+      680,
+      570,
+      690
+    ],
+    "landet": 0.9,
+    "rand": 10,
+    "ohneMarke": true,
+    "laut": 0.9,
+    "marke": true
   }
 }

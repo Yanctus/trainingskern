@@ -1,0 +1,28 @@
+{
+  "titel": "Zeichentrick-Intros im Vergleich",
+  "intro": false,
+  "uebergang": "blitz",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "cartoon-trainer",
+      "dach": "Variante 8 · Trainer mit Schild",
+      "text": "Heute Training. Und *kein Plan?*",
+      "dauer": 3.4
+    },
+    {
+      "typ": "hook",
+      "film": "cartoon-vorhang",
+      "dach": "Variante 9 · Vorhang auf",
+      "text": "Zeit für *Abwechslung!*",
+      "dauer": 3.4
+    },
+    {
+      "typ": "hook",
+      "film": "cartoon-titelkarte",
+      "dach": "Variante 10 · Titelkarte",
+      "text": "Schon wieder *Rondo?*",
+      "dauer": 3.4
+    }
+  ]
+}
