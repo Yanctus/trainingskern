@@ -63,7 +63,18 @@
     "rand": 10,
     "ohneMarke": true,
     "laut": 0.9,
-    "marke": true
+    "marke": true,
+    "ton": false,
+    "klang": [
+      [
+        "wusch",
+        -0.5
+      ],
+      [
+        "klick",
+        -0.08
+      ]
+    ]
   },
   "comic-tafel": {
     "zettel": [

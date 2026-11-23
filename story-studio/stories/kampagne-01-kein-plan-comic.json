@@ -2,7 +2,7 @@
   "titel": "Kampagne 01 im Comic-Stil: Heute Training und kein Plan",
   "intro": false,
   "uebergang": "raster",
-  "musik": "ton/musik-beat.mp3",
+  "musik": "ton/musik-elektro.mp3",
   "musikLaut": 0.16,
   "geraeusche": 0.6,
   "szenen": [
@@ -20,12 +20,12 @@
       "ton": "neon",
       "zeilen": [
         "Passende Übung.",
-        "*In Sekunden.*"
+        "*Sofort.*"
       ],
       "dauer": 2.6,
       "takt": 0.3,
       "uebergang": "raster",
-      "sprecher": "Mit Trainingskern hast du in Sekunden die passende Übung."
+      "sprecher": "Mit Trainingskern findest du sofort die passende Übung."
     },
     {
       "typ": "app",
@@ -48,7 +48,7 @@
       "tempo": 1.7,
       "dach": "Fertig erklärt",
       "uebergang": "pinsel",
-      "sprecher": "Jede Übung ist animiert und wird dir auf Deutsch erklärt.",
+      "sprecher": "Jede Übung ist animiert und wird dir von mir auf Deutsch erklärt.",
       "sprecherAb": 1.0
     },
     {

@@ -19,7 +19,7 @@ Das Video liegt danach in `out/ue-001.mp4`, daneben ein Titelbild `out/ue-001.jp
   und `intro-collage`, als Realfilm `intro-flutlicht` und `intro-anstoss`. `"intro": false` lässt das Intro weg, zum Beispiel wenn die Story mit einer Frage beginnt.
 - **Marke oben links.** Die Spielminute unten (Ball rollt von 0′ bis 90′) läuft nur noch mit `"uhr": true` in der Story.
 - **Übergänge** zwischen den Szenen: `anstoss` (zwei schwarze Hälften schließen an der Mittellinie, Lichtblitz, K),
-  `streifen` (schräges Band in Orange, Neon, Schwarz), `blitz` (harter Schnitt mit Neon-Blitz),
+  `streifen` (schräges Band in Orange, Neon, Schwarz), `blitz` (harter Schnitt mit Neon-Blitz), `blende` (ruhig ins Schwarz und wieder auf),
   `marker` (ein dicker Stift kritzelt das Bild zu und gibt das nächste frei), `staub` (eine Wolke Neon-Kreide fegt über den Schnitt),
   im Zeichentrick-Stil `iris` (die Kreisblende der alten Trickfilme) und `tinte` (ein Tintenklecks läuft über das Bild),
   im Comic-Stil `knall` (ein Aufprall-Stern knallt das Bild zu), `pinsel` (Tuschepinsel-Hiebe), `raster` (Rasterpunkte wie im Comicdruck)

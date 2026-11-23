@@ -20,7 +20,11 @@ Die App selbst liegt bei Base44 (App „Trainingskern“), dieses Repo enthält 
 - Zwei Stilrichtungen stehen zur Wahl: Comic (`comic-*`, Outro `outro-comic`) und Zeichentrick der 30er (`cartoon-*`, Outro `outro-cartoon`,
   Übergänge `iris` und `tinte`). Figuren sind immer eigene; nie bestehende Figuren oder Namen fremder Marken in Bildaufträgen oder Werbetexten.
 - Bilder für neue Intros: Nano Banana, Animation über Start- und Endbild (beides über OpenRouter). Keine Drei-Streifen-Kleidung, keine Logos.
-- Gestartet wird im Zeichentrick-Stil der 30er (`cartoon-*`), der Comic-Stil (`comic-*`) bleibt als zweite Schiene erhalten.
+- **Entschieden (23.11.2026): Die Videos laufen im Comic-Stil** (`comic-*`, Outro `"film": "outro-comic"`, Übergänge `knall`, `pinsel`,
+  `raster`, `panel`, Musik `ton/musik-elektro.mp3`). Der Zeichentrick-Stil (`cartoon-*`) bleibt im Repo, wird aber vorerst nicht genutzt.
+- Fertiges Muster: `story-studio/stories/kampagne-01-kein-plan-comic.json`.
+- Format der weiteren Videos: eines der sieben Comic-Intros mit Frage, Übergang, dann eine Übung, die erklärt wird (Szene `uebung` mit
+  `sprecher`), höchstens 30 Sekunden, dann `blende` ins Outro.
 - Jedes Video endet mit demselben Outro: `{ "typ": "outro" }` (Zeichentrick: Trainer schießt den Ball zur Kamera, Explosion, das K, TRAININGSKERN,
   trainingskern.de). Für den Comic-Stil: `"film": "outro-comic"`. Übergänge im Zeichentrick-Stil: `iris` und `tinte`,
   im Comic-Stil: `knall`, `pinsel`, `raster`, `panel`.
@@ -30,7 +34,8 @@ Die App selbst liegt bei Base44 (App „Trainingskern“), dieses Repo enthält 
 - Vertonung: je Szene ein Satz in `"sprecher"`, gesprochen mit der Stimme aus `story-studio/stimme.json` (dieselbe wie in der App, „Jarvis deutsch“).
   Der Schlüssel ist in der Cloud-Umgebung für api.elevenlabs.io hinterlegt, nie ins Repo schreiben. Aufnahmen liegen in `ton/sprecher/` und kosten nur einmal.
   Das Zeichen-Kontingent ist knapp (Stand 23.11.2026 rund 15.000 Zeichen frei): Sätze kurz halten, nichts unnötig neu einsprechen.
-- Musik läuft leise mit (`"musik"`): `ton/musik-swing.mp3` für den Zeichentrick-Stil, `ton/musik-beat.mp3` für den Comic-Stil (generiert, ohne Gesang).
+- Musik läuft leise mit (`"musik"`): leichter Elektro, `ton/musik-elektro.mp3` (generiert, ohne Gesang). Kein Funk-Beat, kein Swing.
+- Im Sprechertext sagt die Stimme „von mir auf Deutsch erklärt“, damit klar ist, dass es Ton zur Übung gibt.
 - Keine Spielminute, kein Fortschrittsbalken im Bild. Der Bildschirm der Seite zeigt nur Titel und Tafel (`"verstecke"` blendet den Rest aus).
 - Vorlage: `story-studio/stories/vorlage-kampagne.json`.
 

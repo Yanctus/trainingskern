@@ -141,6 +141,7 @@ const WISCHER = { marker: "wischer-marker", staub: "wischer-staub", tinte: "wisc
 // anstoss: zwei schwarze Hälften schließen an der Mittellinie, Lichtblitz, das K blitzt auf, die Hälften ziehen auf
 // streifen: ein schräges Band (Orange, Neon, Schwarz) wischt über das Bild
 // blitz: harter Schnitt mit kurzem Neon-Blitz
+// blende: das Bild blendet ruhig ins Schwarz aus, das nächste blendet auf
 // marker: ein dicker Stift kritzelt das Bild schwarz zu und gibt das nächste wieder frei (generierter Wischer)
 // staub: eine Wolke aus Neon-Kreide fegt über den Schnitt (generierter Wischer)
 // tinte: ein Tintenklecks im Zeichentrick-Stil läuft über das Bild und gibt das nächste frei (generierter Wischer)
@@ -173,6 +174,11 @@ function baueUebergang(art, T, nachIntro, daten) {
       an(u.lastChild, [{ opacity: 0 }, { opacity: 0.9, offset: 0.45 }, { opacity: 0 }], T - 0.1, 0.3, E.gerade);
       klang(`filme/${film}.mp4`, von, { von: m.tonAb || 0, dauer: hin + weg + 0.3, laut: 0.8 });
     }
+  } else if (art === "blende" && !nachIntro) {
+    // Ruhiges Ausblenden ins Schwarz und wieder auf (z. B. vor dem Outro)
+    u.innerHTML = `<i class="dunkel"></i>`;
+    von = T - 0.45; bis = T + 0.4;
+    an(u.firstChild, [{ opacity: 0 }, { opacity: 1, offset: 0.53 }, { opacity: 0 }], von, bis - von, E.gerade);
   } else if (art === "raster" && !nachIntro) {
     // Rasterpunkte: erst Neon, dann Schwarz wachsen, bis das Bild zu ist; nach dem Schnitt schrumpfen sie wieder
     u.innerHTML = `<i class="rp n"></i><i class="rp t"></i><i class="rp t v"></i>`;

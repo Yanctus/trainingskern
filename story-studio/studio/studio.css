@@ -44,6 +44,7 @@ html,body{margin:0;background:#1b1b18;overflow:hidden}
 #frame .ue .band .o{width:70px;background:var(--cone)}
 #frame .ue .band .n{width:90px;background:var(--neon)}
 #frame .ue .band .t{flex:1;background:var(--grain-l),var(--ink)}
+#frame .ue .dunkel{position:absolute;inset:0;background:var(--ink);opacity:0}
 #frame .ue .weiss{position:absolute;inset:0;background:var(--neon);opacity:0}
 
 /* ---------- Feste Teile über allen Szenen: Marke oben, Spielminute unten ---------- */
