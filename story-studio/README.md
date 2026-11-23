@@ -20,7 +20,8 @@ Das Video liegt danach in `out/ue-001.mp4`, daneben ein Titelbild `out/ue-001.jp
 - **Marke oben links** und die **Spielminute unten**: Der Ball rollt über die ganze Story von 0′ bis 90′.
 - **Übergänge** zwischen den Szenen: `anstoss` (zwei schwarze Hälften schließen an der Mittellinie, Lichtblitz, K),
   `streifen` (schräges Band in Orange, Neon, Schwarz), `blitz` (harter Schnitt mit Neon-Blitz),
-  `marker` (ein dicker Stift kritzelt das Bild zu und gibt das nächste frei), `staub` (eine Wolke Neon-Kreide fegt über den Schnitt).
+  `marker` (ein dicker Stift kritzelt das Bild zu und gibt das nächste frei), `staub` (eine Wolke Neon-Kreide fegt über den Schnitt),
+  im Zeichentrick-Stil `iris` (die Kreisblende der alten Trickfilme) und `tinte` (ein Tintenklecks läuft über das Bild).
   Jeder Übergang bringt sein Geräusch mit.
 - **Sichere Zone:** Oben 250 px und unten 340 px bleiben ohne Text, dort liegen bei Instagram Profilzeile und Antwortfeld.
 - **Tonspur:** Geräusche der Übergänge und der leise Ton der Filme. Musik kommt in der Instagram-App dazu (dort ist sie lizenziert).
@@ -93,7 +94,9 @@ für `hook`-Szenen, als Intro und als Wischer:
 | `pfeife-regen` | Pfeife hängt am Pfosten im Regen | ruhige Bilder, Zitate |
 | `platz-daemmerung` | leerer Platz mit Hütchenreihe in der Dämmerung | allgemeiner Hintergrund |
 | `comic-sprechblase`, `comic-tafel`, `comic-banner`, `comic-megafon`, `comic-panels`, `comic-fallrueckzieher`, `comic-karte` | gezeichnete Comic-Intros, enden auf einer leeren Fläche (Sprechblase, Tafel, Banner, Schrei-Blase, Textkasten, Feuerring, Karte) | Intro mit wechselndem Text: `{ "typ": "hook", "film": "comic-tafel", "text": "…" }` |
-| `cartoon-trainer`, `cartoon-vorhang`, `cartoon-titelkarte` | Zeichentrick im Stil der 30er (Gummischlauch-Arme, Kulleraugen, dicke Tuschelinien) in den Farben der App, enden auf Schild, Leinwand oder Titelkarte | Intro mit wechselndem Text, Vergleich: `stories/cartoon-vergleich.json` |
+| `cartoon-trainer`, `cartoon-titelkarte`, `cartoon-finger`, `cartoon-tafel`, `cartoon-stern`, `cartoon-pfeife`, `cartoon-plakat` | Zeichentrick im Stil der 30er (Gummischlauch-Arme, Kulleraugen, dicke Tuschelinien) in den Farben der App, enden auf Schild, Titelkarte, Sprechblase, Klemmbrett, Stern, Wolke oder Plakat | Intro mit wechselndem Text, Vergleich: `stories/cartoon-vergleich.json` |
+| `outro-cartoon` | Zeichentrick: Schlusskarte fällt ins Bild, das K wird aufgestempelt, die Figuren verbeugen sich | Outro: `{ "typ": "outro", "film": "outro-cartoon" }` |
+| `wischer-tinte` | Tintenklecks läuft über Weiß | Übergang `tinte` |
 | `hook-zettel` | Papierfigur schießt den Ball zur Kamera, ein leeres Blatt klatscht davor | das feste Intro mit wechselndem Text |
 | `hook-zettel-flutlicht` | Flutlicht geht an, Figuren drehen sich, Blatt klatscht davor (später als bei `hook-zettel`) | Ersatz |
 | `intro-papier` | Papierfiguren auf dem dunklen Platz, eine schießt den Ball zur Kamera, Neon-Blitz, K | Intro im Stil der App |

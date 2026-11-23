@@ -208,30 +208,6 @@
     "laut": 0.9,
     "marke": true
   },
-  "cartoon-vorhang": {
-    "zettel": [
-      250,
-      470,
-      580,
-      720
-    ],
-    "landet": 1.2,
-    "rand": 10,
-    "ohneMarke": true,
-    "laut": 0.9,
-    "marke": true,
-    "ton": false,
-    "klang": [
-      [
-        "wusch",
-        -0.5
-      ],
-      [
-        "klick",
-        -0.1
-      ]
-    ]
-  },
   "cartoon-titelkarte": {
     "zettel": [
       200,
@@ -244,5 +220,132 @@
     "ohneMarke": true,
     "laut": 0.9,
     "marke": true
+  },
+  "cartoon-plakat": {
+    "zettel": [
+      200,
+      270,
+      680,
+      840
+    ],
+    "landet": 1.7,
+    "rand": 10,
+    "ohneMarke": true,
+    "laut": 0.9,
+    "marke": true,
+    "ton": false,
+    "klang": [
+      [
+        "floete",
+        -0.85
+      ],
+      [
+        "klick",
+        -0.08
+      ]
+    ]
+  },
+  "cartoon-finger": {
+    "zettel": [
+      210,
+      370,
+      660,
+      440
+    ],
+    "landet": 0.8,
+    "rand": 10,
+    "ohneMarke": true,
+    "laut": 0.9,
+    "marke": true
+  },
+  "cartoon-tafel": {
+    "zettel": [
+      335,
+      600,
+      430,
+      520
+    ],
+    "dreh": -5,
+    "landet": 1.0,
+    "rand": 10,
+    "ohneMarke": true,
+    "laut": 0.9,
+    "marke": true
+  },
+  "cartoon-stern": {
+    "zettel": [
+      300,
+      560,
+      540,
+      500
+    ],
+    "landet": 0.8,
+    "rand": 10,
+    "ohneMarke": true,
+    "laut": 0.9,
+    "marke": true,
+    "ton": false,
+    "klang": [
+      [
+        "floete",
+        -0.85
+      ],
+      [
+        "klick",
+        -0.08
+      ]
+    ]
+  },
+  "cartoon-pfeife": {
+    "zettel": [
+      190,
+      460,
+      690,
+      560
+    ],
+    "landet": 1.1,
+    "rand": 10,
+    "ohneMarke": true,
+    "laut": 0.9,
+    "marke": true,
+    "ton": false,
+    "klang": [
+      [
+        "floete",
+        -0.85
+      ],
+      [
+        "klick",
+        -0.08
+      ]
+    ]
+  },
+  "outro-cartoon": {
+    "ab": 0,
+    "bis": 3.95,
+    "tempo": 1.6,
+    "k": [
+      280,
+      446.7,
+      160
+    ],
+    "bleibt": 1,
+    "marke": true,
+    "ton": false,
+    "klang": [
+      [
+        "floete",
+        -1.6
+      ],
+      [
+        "rumms",
+        -0.9
+      ]
+    ]
+  },
+  "wischer-tinte": {
+    "maske": true,
+    "zu": 3.75,
+    "tonAb": 0.1
   }
 }

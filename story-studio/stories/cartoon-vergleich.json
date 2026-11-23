@@ -1,28 +1,66 @@
 {
-  "titel": "Zeichentrick-Intros im Vergleich",
+  "titel": "Zeichentrick-Intros, Übergänge und Outro",
   "intro": false,
-  "uebergang": "blitz",
   "szenen": [
     {
       "typ": "hook",
       "film": "cartoon-trainer",
-      "dach": "Variante 8 · Trainer mit Schild",
+      "dach": "Trick 1 · Trainer mit Schild",
       "text": "Heute Training. Und *kein Plan?*",
       "dauer": 3.4
     },
     {
       "typ": "hook",
-      "film": "cartoon-vorhang",
-      "dach": "Variante 9 · Vorhang auf",
-      "text": "Zeit für *Abwechslung!*",
-      "dauer": 3.4
+      "film": "cartoon-titelkarte",
+      "dach": "Trick 2 · Titelkarte",
+      "text": "Schon wieder *Rondo?*",
+      "dauer": 3.4,
+      "uebergang": "iris"
     },
     {
       "typ": "hook",
-      "film": "cartoon-titelkarte",
-      "dach": "Variante 10 · Titelkarte",
-      "text": "Schon wieder *Rondo?*",
-      "dauer": 3.4
+      "film": "cartoon-finger",
+      "dach": "Trick 3 · Zeigefinger",
+      "text": "Kennst du *jede Übung* deiner Spieler?",
+      "dauer": 3.4,
+      "uebergang": "tinte"
+    },
+    {
+      "typ": "hook",
+      "film": "cartoon-tafel",
+      "dach": "Trick 4 · Taktiktafel",
+      "text": "Wieder *kein Plan?*",
+      "dauer": 3.4,
+      "uebergang": "iris"
+    },
+    {
+      "typ": "hook",
+      "film": "cartoon-stern",
+      "dach": "Trick 5 · Aufprall",
+      "text": "Schluss mit *Standard-training!*",
+      "dauer": 3.4,
+      "uebergang": "tinte"
+    },
+    {
+      "typ": "hook",
+      "film": "cartoon-pfeife",
+      "dach": "Trick 6 · Pfeife",
+      "text": "Zeit für *Abwechslung!*",
+      "dauer": 3.4,
+      "uebergang": "iris"
+    },
+    {
+      "typ": "hook",
+      "film": "cartoon-plakat",
+      "dach": "Trick 7 · Plakat",
+      "text": "Am Wochenende *kein Spielsystem?*",
+      "dauer": 3.4,
+      "uebergang": "tinte"
+    },
+    {
+      "typ": "outro",
+      "film": "outro-cartoon",
+      "uebergang": "iris"
     }
   ]
 }

@@ -15,6 +15,8 @@ Die App selbst liegt bei Base44 (App „Trainingskern“), dieses Repo enthält 
 - Jedes Video beginnt mit demselben Intro, nur der Text wechselt: ein gezeichnetes Comic-Intro (Cel-Shading, dicke Konturen) mit freier Fläche,
   `hook` mit `"film": "comic-..."`. Welche Variante das feste Intro wird, ist noch offen (Auswahl: `story-studio/stories/comic-vergleich.json`).
   Das Intro muss sich klar vom Outro unterscheiden; `hook-zettel` ist deshalb verworfen.
+- Zwei Stilrichtungen stehen zur Wahl: Comic (`comic-*`, Outro `outro-comic`) und Zeichentrick der 30er (`cartoon-*`, Outro `outro-cartoon`,
+  Übergänge `iris` und `tinte`). Figuren sind immer eigene; nie bestehende Figuren oder Namen fremder Marken in Bildaufträgen oder Werbetexten.
 - Bilder für neue Intros: Nano Banana, Animation über Start- und Endbild (beides über OpenRouter). Keine Drei-Streifen-Kleidung, keine Logos.
 - Jedes Video endet mit demselben Outro: `{ "typ": "outro" }` (Comic: Stürmer schießt zur Kamera, Explosion, das K, TRAININGSKERN, trainingskern.de).
 - Generierte Clips bekommen die Farben der App über `"marke": true` in `filme/filme.json` (Rasen fast schwarz, kein Blau, genaues Neon und Orange).

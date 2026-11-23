@@ -85,7 +85,7 @@ function introSzene(s, daten) {
     const [x, y, b] = fi.k.map((v) => v * 1.5), mitte = node.querySelector(".mitte"), k = node.querySelector(".k");
     mitte.style.translate = `${(x + b / 2 - 540).toFixed(1)}px ${(y + b / 2 - 825).toFixed(1)}px`;
     k.style.scale = (b / 310).toFixed(4);
-    node.querySelector(".wort").style.translate = `0 ${Math.max(0, (b - 310) / 2 + (b > 330 ? 14 : 0)).toFixed(1)}px`; // ein größeres K schiebt das Wort nach unten
+    node.querySelector(".wort").style.translate = `0 ${((b - 310) / 2 + (b > 330 ? 14 : 0)).toFixed(1)}px`; // das Wort rückt an ein größeres oder kleineres K heran
   }
   const dauer = s.dauer || (s.outro ? (film ? filmDauer : 1.2) + 2.2 : film ? filmDauer + 0.95 : 1.85 / tempo);
   return { el: node, ton: "dunkel", dauer, intro: !s.outro, ohneMarke: true, ohneUhr: true, start(T) {
@@ -98,7 +98,8 @@ function introSzene(s, daten) {
       $(".feld").style.display = "none"; $(".seitenlinie").style.display = "none";
       blende($(".k"), T + filmDauer - 0.12, 0.12);
       an($(".in-film"), [{ opacity: 1 }, { opacity: fi.bleibt || 0 }], T + filmDauer, fi.bleibt ? 0.5 : 0.2, E.gerade, "forwards");
-      if (s.filmTon !== false) klang(`filme/${s.film}.mp4`, T, { von: ab, dauer: Math.min(film.dauer, bis + 0.9) - ab, tempo, laut: s.laut ?? 1, aus: 0.5 });
+      if (s.filmTon !== false && fi.ton !== false) klang(`filme/${s.film}.mp4`, T, { von: ab, dauer: Math.min(film.dauer, bis + 0.9) - ab, tempo, laut: s.laut ?? 1, aus: 0.5 });
+      (fi.klang || []).forEach(([name, versatz]) => { if (daten.klaenge[name]) klang(`ton/${name}.mp3`, T + filmDauer + versatz, { laut: 0.85 }); });
     } else {
       an($(".feld circle"), [{ strokeDashoffset: 1 }, { strokeDashoffset: 0 }], z(0.05), d(1.0), "cubic-bezier(.7,0,.2,1)");
       an($(".feld line"), [{ strokeDashoffset: 1 }, { strokeDashoffset: 0 }], z(0.15), d(0.9), "cubic-bezier(.7,0,.2,1)");
@@ -130,23 +131,26 @@ function introSzene(s, daten) {
 }
 
 /* ---------- Übergänge: Schnitt bei T ---------- */
+const WISCHER = { marker: "wischer-marker", staub: "wischer-staub", tinte: "wischer-tinte" }; // Übergänge aus generierten Filmen
 // anstoss: zwei schwarze Hälften schließen an der Mittellinie, Lichtblitz, das K blitzt auf, die Hälften ziehen auf
 // streifen: ein schräges Band (Orange, Neon, Schwarz) wischt über das Bild
 // blitz: harter Schnitt mit kurzem Neon-Blitz
 // marker: ein dicker Stift kritzelt das Bild schwarz zu und gibt das nächste wieder frei (generierter Wischer)
 // staub: eine Wolke aus Neon-Kreide fegt über den Schnitt (generierter Wischer)
+// tinte: ein Tintenklecks im Zeichentrick-Stil läuft über das Bild und gibt das nächste frei (generierter Wischer)
+// iris: die Kreisblende der alten Trickfilme: ein schwarzer Kreis zieht sich zu und geht auf dem nächsten Bild wieder auf
 // nachIntro: der Vorhang ist schon zu (das Intro steht auf Schwarz), er zieht nur noch auf
 function baueUebergang(art, T, nachIntro, daten) {
   const u = el(`<div class="ue"></div>`);
   frame.append(u);
   let von = T - 0.34, bis = T + 0.5;
-  const film = { marker: "wischer-marker", staub: "wischer-staub" }[art], f = film && daten.filme[film];
+  const film = WISCHER[art], f = film && daten.filme[film];
   if (f && !nachIntro) {
     const m = daten.filmInfo[film] || {};
     u.innerHTML = `<canvas class="wisch${art === "staub" ? " gross" : ""}"></canvas>`;
-    u.style.mixBlendMode = art === "marker" ? "multiply" : "screen"; // an der Hülle, sonst mischt die Leinwand nur mit sich selbst
+    u.style.mixBlendMode = art === "staub" ? "screen" : "multiply"; // an der Hülle, sonst mischt die Leinwand nur mit sich selbst
     const zeig = bildfolge(u.firstChild, "film-" + film, f.anzahl);
-    if (art === "marker") {
+    if (art === "marker" || art === "tinte") {
       // Vorwärts bis alles schwarz ist (Schnitt), dann rückwärts wieder frei
       const zu = m.zu ?? f.dauer, hin = 0.5, weg = 0.45; // zu = Stelle im Film, an der das Bild ganz schwarz ist
       von = T - hin; bis = T + weg;
@@ -160,6 +164,18 @@ function baueUebergang(art, T, nachIntro, daten) {
       an(u.lastChild, [{ opacity: 0 }, { opacity: 0.9, offset: 0.45 }, { opacity: 0 }], T - 0.1, 0.3, E.gerade);
       klang(`filme/${film}.mp4`, von, { von: m.tonAb || 0, dauer: hin + weg + 0.3, laut: 0.8 });
     }
+  } else if (art === "iris" && !nachIntro) {
+    u.innerHTML = `<i class="iris"></i>`;
+    const zu = 0.4, auf = 0.46, R = 1150; // R: Radius, bei dem der Kreis das ganze Bild freigibt
+    von = T - zu - 0.04; bis = T + auf + 0.04;
+    const kreis = u.firstChild;
+    haken.push((z) => {
+      if (z < von - 0.1 || z > bis + 0.1) return null;
+      const r = z <= T ? R * (1 - clamp01((z - von) / zu)) ** 2.2 : R * clamp01((z - T - 0.04) / auf) ** 2.2;
+      kreis.style.setProperty("--r", r.toFixed(1) + "px");
+      return null;
+    });
+    if (daten.klaenge.wusch) klang("ton/wusch.mp3", T - 0.35, { laut: 0.6 });
   } else if (art === "streifen" && !nachIntro) {
     u.innerHTML = `<div class="band"><i class="o"></i><i class="n"></i><i class="t"></i><i class="n"></i><i class="o"></i></div>`;
     von = T - 0.42; bis = T + 0.42;
@@ -508,7 +524,7 @@ async function baue() {
     .map((s) => (s.typ === "outro" && !s.film ? { ...s, film: "outro-comic" } : s));
   const artVon = (s) => s.uebergang || story.uebergang || "anstoss";
   const codes = [...new Set(plan.map((s) => s.code).filter(Boolean))];
-  const filmNamen = [...new Set([...plan.map((s) => s.film), ...plan.map((s) => ({ marker: "wischer-marker", staub: "wischer-staub" }[artVon(s)]))].filter(Boolean))];
+  const filmNamen = [...new Set([...plan.map((s) => s.film), ...plan.map((s) => WISCHER[artVon(s)])].filter(Boolean))];
   const daten = await lade(`/api/daten?codes=${encodeURIComponent(codes.join(","))}&filme=${encodeURIComponent(filmNamen.join(","))}`);
   daten.aufnahmen = {};
   await Promise.all(plan.map(async (s) => {
