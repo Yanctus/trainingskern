@@ -92,6 +92,41 @@ async function zerlegeFilm(name) {
   writeFileSync(infoPfad, JSON.stringify(info));
   return info;
 }
+
+/* ---------- Sprecher: Sätze der Szenen ("sprecher") mit der eigenen ElevenLabs-Stimme ---------- */
+// stimme.json: { "voice_id": "...", "model_id": "...", "voice_settings": {...} }. Der Schlüssel liegt nicht im Repo:
+// Er ist in der Cloud-Umgebung für api.elevenlabs.io hinterlegt (oder steht in ELEVENLABS_API_KEY).
+// Jede Aufnahme wird in ton/sprecher/ abgelegt und nie doppelt bezahlt.
+import { createHash } from "node:crypto";
+async function sprich(text) {
+  const stimme = JSON.parse(readFileSync(path.join(HIER, "stimme.json"), "utf8"));
+  const name = createHash("sha1").update(stimme.voice_id + "|" + (stimme.model_id || "") + "|" + text).digest("hex").slice(0, 16);
+  const ordner = path.join(HIER, "ton", "sprecher"), ziel = path.join(ordner, name + ".mp3");
+  mkdirSync(ordner, { recursive: true });
+  if (!existsSync(ziel)) {
+    const body = path.join(CACHE, "sprich.json");
+    writeFileSync(body, JSON.stringify({ text, model_id: stimme.model_id || "eleven_multilingual_v2", voice_settings: stimme.voice_settings || { stability: 0.5, similarity_boost: 0.8 } }));
+    await run("curl", ["-sS", "--fail-with-body", "-m", "120", "-o", ziel + ".neu", "-H", "xi-api-key: " + (process.env.ELEVENLABS_API_KEY || "platzhalter"), "-H", "content-type: application/json",
+      "--data-binary", "@" + body, `https://api.elevenlabs.io/v1/text-to-speech/${encodeURIComponent(stimme.voice_id)}?output_format=mp3_44100_128`]).catch((e) => { throw new Error("ElevenLabs: " + (existsSync(ziel + ".neu") ? readFileSync(ziel + ".neu", "utf8").slice(0, 300) : e.message)); });
+    writeFileSync(ziel, readFileSync(ziel + ".neu")); rmSync(ziel + ".neu");
+  }
+  const { stdout } = await run("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", ziel]);
+  return { datei: "ton/sprecher/" + name + ".mp3", dauer: parseFloat(stdout) };
+}
+const gesprochen = new Map();
+let reihe = Promise.resolve();
+async function sprecherVon(storyDatei) {
+  const out = {};
+  if (!storyDatei || !existsSync(path.join(HIER, "stimme.json"))) return out;
+  const st = JSON.parse(readFileSync(path.join(HIER, storyDatei), "utf8"));
+  // Mehrere Browser fragen gleichzeitig: jeden Satz nur einmal und alle nacheinander einsprechen
+  for (const [nr, sz] of st.szenen.entries()) {
+    if (!sz.sprecher) continue;
+    if (!gesprochen.has(sz.sprecher)) gesprochen.set(sz.sprecher, (reihe = reihe.then(() => sprich(sz.sprecher))));
+    out[nr] = await gesprochen.get(sz.sprecher);
+  }
+  return out;
+}
 const klaenge = () => { try { return Object.fromEntries(readdirSync(path.join(HIER, "ton")).filter((f) => f.endsWith(".mp3")).map((f) => [f.slice(0, -4), true])); } catch { return {}; } };
 
 /* ---------- kleiner Server: Studio, Story-Dateien, Daten, Aufnahmen ---------- */
@@ -110,7 +145,9 @@ function starteServer(port = 0) {
           try { filme[name] = await zerlegeFilm(name); } catch (err) { console.warn("Hinweis:", err.message); }
         }
         res.writeHead(200, { "content-type": TYP[".json"] });
-        return res.end(JSON.stringify({ einheiten, filme, filmInfo: filmInfo(), klaenge: klaenge() }));
+        const storyDatei = (u.searchParams.get("story") || "").replace(/[^a-zA-Z0-9_\-/.]/g, "");
+        const sprecher = /^stories\/[^/]+\.json$/.test(storyDatei) ? await sprecherVon(storyDatei) : {};
+        return res.end(JSON.stringify({ einheiten, filme, filmInfo: filmInfo(), klaenge: klaenge(), sprecher }));
       }
       const frei = [["/studio/", path.join(HIER, "studio")], ["/stories/", path.join(HIER, "stories")], ["/cache/", CACHE]].find(([p]) => u.pathname.startsWith(p));
       if (!frei) { res.writeHead(404); return res.end("nicht gefunden"); }
@@ -135,7 +172,7 @@ async function nimmAppAuf(chromium) {
     const ordner = path.join(CACHE, `${kennung}-${i}`), dauer = s.dauer || 5, anzahl = Math.round(dauer * fps);
     const seite = (s.seite || "/").replace(/\{id:([^}]+)\}/g, (_, code) => alle.find((e) => e.code === code)?.id || "");
     const [von, bis] = s.scroll || [0, 2400], halt = s.halt ?? 1.1;
-    const info = { anzahl, fps, seite, von, bis, halt, dauer };
+    const info = { anzahl, fps, seite, von, bis, halt, dauer, verstecke: s.verstecke || "" };
     if (!flag("neu") && existsSync(path.join(ordner, "info.json")) && readFileSync(path.join(ordner, "info.json"), "utf8") === JSON.stringify(info)) continue;
     rmSync(ordner, { recursive: true, force: true });
     mkdirSync(ordner, { recursive: true });
@@ -146,6 +183,8 @@ async function nimmAppAuf(chromium) {
     // Warten, bis der Preloader der App weg ist und die Seite steht
     await page.waitForFunction(() => { const p = document.getElementById("tk-pre"); return !p || getComputedStyle(p).display === "none"; }, null, { timeout: 30000 }).catch(() => {});
     await page.waitForTimeout(1200);
+    // verstecke: CSS-Selektoren von Blöcken, die in dieser Aufnahme nicht zu sehen sein sollen (aufgeräumter Bildschirm)
+    if (s.verstecke) { await page.addStyleTag({ content: `${s.verstecke}{display:none!important}` }); await page.waitForTimeout(500); }
     for (let n = 0; n < anzahl; n++) {
       const y = von + (bis - von) * smooth(clamp01((n / fps - halt) / Math.max(0.1, dauer - halt - 0.5)));
       await page.evaluate((top) => new Promise((ok) => { window.scrollTo({ top, behavior: "instant" }); requestAnimationFrame(() => requestAnimationFrame(ok)); }), Math.round(y));

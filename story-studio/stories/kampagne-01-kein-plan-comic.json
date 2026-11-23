@@ -2,37 +2,44 @@
   "titel": "Kampagne 01 im Comic-Stil: Heute Training und kein Plan",
   "intro": false,
   "uebergang": "raster",
+  "musik": "ton/musik-beat.mp3",
+  "musikLaut": 0.16,
+  "geraeusche": 0.6,
   "szenen": [
     {
       "typ": "hook",
       "film": "comic-sprechblase",
       "dach": "Kennst du das?",
       "text": "Heute Training. Und *kein Plan?*",
-      "dauer": 3.2
+      "dauer": 3.2,
+      "sprecher": "Heute Training – und kein Plan?",
+      "sprecherAb": 0.7
     },
     {
       "typ": "hook",
       "ton": "neon",
       "zeilen": [
-        "Altersklasse.",
-        "Dauer.",
-        "Schwerpunkt.",
-        "*Fertig.*"
+        "Passende Übung.",
+        "*In Sekunden.*"
       ],
-      "dauer": 2.8,
-      "takt": 0.3
+      "dauer": 2.6,
+      "takt": 0.3,
+      "uebergang": "raster",
+      "sprecher": "Mit Trainingskern hast du in Sekunden die passende Übung."
     },
     {
       "typ": "app",
       "seite": "/",
-      "dauer": 4.6,
+      "dauer": 4.8,
       "scroll": [
         0,
-        430
+        800
       ],
-      "notiz": "Drei Angaben, fertig ↓",
-      "zettel": "E-Jugend · 60 Min. · Dribbling",
-      "uebergang": "knall"
+      "halt": 1.3,
+      "verstecke": ".aw-hero-copy,.aw-hero-foot",
+      "notiz": "Erst die Tafel, dann der Platz ↓",
+      "uebergang": "knall",
+      "sprecher": "Erst siehst du die Tafel, dann läuft die Übung auf dem Platz."
     },
     {
       "typ": "uebung",
@@ -40,12 +47,16 @@
       "schritte": 4,
       "tempo": 1.7,
       "dach": "Fertig erklärt",
-      "uebergang": "pinsel"
+      "uebergang": "pinsel",
+      "sprecher": "Jede Übung ist animiert und wird dir auf Deutsch erklärt.",
+      "sprecherAb": 1.0
     },
     {
       "typ": "outro",
       "film": "outro-comic",
-      "uebergang": "panel"
+      "uebergang": "panel",
+      "sprecher": "Trainingskern. Jetzt ausprobieren auf trainingskern Punkt D E.",
+      "sprecherAb": 1.6
     }
   ]
 }

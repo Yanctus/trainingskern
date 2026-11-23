@@ -17,7 +17,7 @@ Das Video liegt danach in `out/ue-001.mp4`, daneben ein Titelbild `out/ue-001.jp
   Mit `"intro": { "film": "intro-papier" }` läuft stattdessen ein Film, der genau auf dem K endet, danach steigt
   TRAININGSKERN auf (zusammen gut 3 Sekunden). Im Stil der App gibt es `intro-papier`, `intro-skizze`, `intro-magnete`
   und `intro-collage`, als Realfilm `intro-flutlicht` und `intro-anstoss`. `"intro": false` lässt das Intro weg, zum Beispiel wenn die Story mit einer Frage beginnt.
-- **Marke oben links** und die **Spielminute unten**: Der Ball rollt über die ganze Story von 0′ bis 90′.
+- **Marke oben links.** Die Spielminute unten (Ball rollt von 0′ bis 90′) läuft nur noch mit `"uhr": true` in der Story.
 - **Übergänge** zwischen den Szenen: `anstoss` (zwei schwarze Hälften schließen an der Mittellinie, Lichtblitz, K),
   `streifen` (schräges Band in Orange, Neon, Schwarz), `blitz` (harter Schnitt mit Neon-Blitz),
   `marker` (ein dicker Stift kritzelt das Bild zu und gibt das nächste frei), `staub` (eine Wolke Neon-Kreide fegt über den Schnitt),
@@ -26,7 +26,10 @@ Das Video liegt danach in `out/ue-001.mp4`, daneben ein Titelbild `out/ue-001.jp
   und `panel` (drei schräge Panel-Balken schlagen zu).
   Jeder Übergang bringt sein Geräusch mit.
 - **Sichere Zone:** Oben 250 px und unten 340 px bleiben ohne Text, dort liegen bei Instagram Profilzeile und Antwortfeld.
-- **Tonspur:** Geräusche der Übergänge und der leise Ton der Filme. Musik kommt in der Instagram-App dazu (dort ist sie lizenziert).
+- **Tonspur:** Geräusche der Übergänge und der leise Ton der Filme. Dazu auf Wunsch Sprecher und Musik:
+  `"sprecher": "Satz"` an einer Szene lässt ihn mit der Stimme aus `stimme.json` einsprechen (ElevenLabs; die Szene dauert mindestens so lange
+  wie der Satz, `"sprecherAb"` verschiebt den Einsatz). `"musik": "ton/musik-swing.mp3"` oben in der Story legt Musik leise darunter
+  (`"musikLaut"`, ohne Angabe 0.16), `"geraeusche": 0.6` nimmt Geräusche und Filmton zurück.
 
 ## Das feste Intro und Outro für Kampagnen
 
@@ -75,7 +78,7 @@ Eine Datei in `stories/`, zum Beispiel `stories/ue-001.json`:
 | `aufmacher` | Schlagzeile auf Papier, mit `code` dazu Minuten, Spieler und Altersklasse als Karten | `code`, `zeilen` (eigene Schlagzeile, `*so*` = schräg), `dach`, `notiz`, `stempel`, `karten: false` |
 | `uebung` | Die Übung läuft auf dem Platz, Schritt für Schritt mit Beschriftung | `code`, `schritte` (nur die ersten N), `tempo`, `fassung` (1 = Coaching-Punkt, 2 = Steigerung …), `titel`, `zoom` |
 | `punkte` | Zwei bis vier kurze Sätze als Karten, ohne `punkte` die Coaching-Punkte der Übung | `code` oder `punkte`, `titel`, `max`, `streichen: true` (durchgestrichen), `ton` |
-| `app` | Die echte Seite im Handy, wird gescrollt (Stempel ohne Angabe „Ohne Download“) | `seite` (`{id:UE-001}` wird zur Adresse der Übung), `scroll` [von, bis] in Pixeln, `dauer`, `notiz`, `stempel`, `zettel` |
+| `app` | Die echte Seite im Handy, wird gescrollt (Stempel ohne Angabe „Deutsches Audio“; `verstecke`: CSS-Selektoren von Blöcken, die ausgeblendet werden) | `seite` (`{id:UE-001}` wird zur Adresse der Übung), `scroll` [von, bis] in Pixeln, `dauer`, `notiz`, `stempel`, `zettel` |
 | `abpfiff` | Logo, Schlusssatz, Aufruf, Adresse | `zeilen` (`*so*` = Neon), `knopf`, `adresse`, `notiz`, `zahl` (nur auf Wunsch) |
 | `outro` | Film mit dem K als Schluss, darunter die Adresse | `film` (ohne Angabe `intro-papier`), `adresse` |
 | `intro` | Das Intro als Szene an beliebiger Stelle (mit `"intro": false` oben) | `film`, `tempo` |

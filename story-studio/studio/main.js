@@ -21,7 +21,8 @@ const el = (html) => { const t = document.createElement("template"); t.innerHTML
 const anims = [], haken = [], ton = [];
 // Ein Geräusch oder die Tonspur eines Films: datei (unter filme/ oder ton/), start = Zeit in der Story,
 // von = Stelle in der Datei, dauer, laut (0..1), tempo. Der Renderer mischt daraus die Tonspur.
-const klang = (datei, start, o = {}) => ton.push({ datei, start: Math.max(0, start), von: o.von || 0, dauer: o.dauer || 0, laut: o.laut ?? 1, tempo: o.tempo || 1, ein: o.ein ?? 0.04, aus: o.aus ?? 0.25 });
+let geraeusche = 1; // "geraeusche" in der Story: Lautstärke aller Geräusche und Filmtöne (nicht Sprecher und Musik)
+const klang = (datei, start, o = {}) => ton.push({ datei, start: Math.max(0, start), von: o.von || 0, dauer: o.dauer || 0, laut: (o.laut ?? 1) * (o.fest ? 1 : geraeusche), tempo: o.tempo || 1, ein: o.ein ?? 0.04, aus: o.aus ?? 0.25 });
 const bild = (src) => new Promise((ok, nein) => { const b = new Image(); b.onload = () => b.decode().then(() => ok(b), () => ok(b)); b.onerror = () => nein(new Error("Bild fehlt: " + src)); b.src = src; });
 // Eine Bildfolge (Film oder App-Aufnahme) auf einer Leinwand: zeig(n) lädt Bild n nach und malt es.
 // Gibt ein Versprechen zurück, auf das seek() wartet. So ist beim Fotografieren immer das richtige Bild da.
@@ -488,7 +489,7 @@ ${e?.kind || s.stempel ? `<div class="stempel am-stempel" style="right:58px;top:
 <div class="raster" style="left:0;bottom:340px;width:480px;height:480px"></div>
 <p class="app-notiz hand">${esc(s.notiz || "So sieht’s aus ↓")}</p>
 <div class="app-handy"><i class="schatten"></i><div class="rahmen"><canvas></canvas></div></div>
-${s.stempel !== false ? `<div class="stempel app-stempel" style="rotate:7deg">${esc(s.stempel || "Ohne Download")}</div>` : ""}
+${s.stempel !== false ? `<div class="stempel app-stempel" style="rotate:7deg">${esc(s.stempel || "Deutsches Audio")}</div>` : ""}
 ${s.zettel ? `<div class="app-seite">${esc(s.zettel)}</div>` : ""}</section>`);
     frame.append(node);
     const cv = node.querySelector("canvas"), handy = node.querySelector(".app-handy");
@@ -552,13 +553,14 @@ async function baue() {
   const datei = q.get("story") || "stories/ue-001.json";
   const story = await lade("/" + datei);
   const kennung = datei.split("/").pop().replace(/\.json$/, "");
+  geraeusche = story.geraeusche ?? 1;
   // Das Intro steht von selbst vorn. "intro": false lässt es weg, "intro": { "film": "..." } nimmt einen Film.
   const plan = [...(story.intro === false ? [] : [{ typ: "intro", ...(typeof story.intro === "object" ? story.intro : {}) }]), ...story.szenen.map((s, i) => ({ ...s, nr: i }))]
     .map((s) => (s.typ === "outro" && !s.film ? { ...s, film: "outro-cartoon" } : s));
   const artVon = (s) => s.uebergang || story.uebergang || "anstoss";
   const codes = [...new Set(plan.map((s) => s.code).filter(Boolean))];
   const filmNamen = [...new Set([...plan.map((s) => s.film), ...plan.map((s) => WISCHER[artVon(s)])].filter(Boolean))];
-  const daten = await lade(`/api/daten?codes=${encodeURIComponent(codes.join(","))}&filme=${encodeURIComponent(filmNamen.join(","))}`);
+  const daten = await lade(`/api/daten?codes=${encodeURIComponent(codes.join(","))}&filme=${encodeURIComponent(filmNamen.join(","))}&story=${encodeURIComponent(datei)}`);
   daten.aufnahmen = {};
   await Promise.all(plan.map(async (s) => {
     if (s.typ !== "app") return;
@@ -575,6 +577,9 @@ async function baue() {
     if (!bauer) throw new Error("Unbekannte Szene: " + s.typ);
     const sz = bauer(s, daten, s.nr); // hängt die Szene selbst an; solange #frame "misst" trägt, ist sie zum Messen sichtbar
     sz.roh = s;
+    // Sprecher: Die Szene dauert mindestens so lange, wie ihr Satz gesprochen wird
+    sz.sprecher = s.nr != null ? daten.sprecher?.[s.nr] : null;
+    if (sz.sprecher) sz.dauer = Math.max(sz.dauer, (s.sprecherAb ?? 0.25) + sz.sprecher.dauer + 0.55);
     return sz;
   });
   let t = 0;
@@ -583,8 +588,11 @@ async function baue() {
     sz.t0 = t; sz.t1 = t + sz.dauer; t = sz.t1;
     if (i > 0) schnitte.push(baueUebergang(artVon(sz.roh), sz.t0, !!szenen[i - 1].intro, daten));
     sz.start(sz.t0);
+    if (sz.sprecher) klang(sz.sprecher.datei, sz.t0 + (sz.roh.sprecherAb ?? 0.25), { fest: true, ein: 0.01, aus: 0.05 });
   });
   const dauer = t;
+  // Musik läuft leise über das ganze Video
+  if (story.musik) klang(story.musik, 0, { dauer, laut: story.musikLaut ?? 0.16, fest: true, ein: 0.3, aus: 1.4 });
 
   // Feste Teile: Marke oben links, Spielminute unten (der Ball rollt über alle Szenen außer dem Intro von 0′ bis 90′)
   const marke = el(`<div class="marke">${kBox("", true)}<span>Trainingskern<i></i></span></div>`);
@@ -602,7 +610,7 @@ async function baue() {
     const dunkel = sz.ton === "dunkel";
     marke.style.display = sz.ohneMarke ? "none" : "flex";
     marke.classList.toggle("dunkel", dunkel);
-    uhr.style.display = sz.ohneUhr ? "none" : "block";
+    uhr.style.display = story.uhr && !sz.ohneUhr ? "block" : "none"; // die Spielminute läuft nur mit "uhr": true in der Story
     uhr.classList.toggle("dunkel", dunkel);
     const p = clamp01(spiel.reduce((a, x) => a + Math.max(0, Math.min(x.dauer, z - x.t0)), 0) / Math.max(0.1, spielzeit - 0.6));
     weg.style.width = (p * 100).toFixed(2) + "%";

@@ -6,7 +6,7 @@ Die App selbst liegt bei Base44 (App „Trainingskern“), dieses Repo enthält 
 
 - Die Adresse ist immer **trainingskern.de** (nie die base44.app-Adresse), in Videos, Texten und Aufrufen.
 - Trainingskern gibt es (noch) nicht im App-Store, nur online unter trainingskern.de. Nichts schreiben, das nach Store-App klingt
-  („Echte App“, „Jetzt laden“); passend sind „Ohne Download“, „Online“, „im Browser“.
+  („Echte App“, „Jetzt laden“). Der Stempel auf dem Bildschirm heißt „Deutsches Audio“.
 - Keine Zahl der Übungen nennen. Geworben wird mit dem Nutzen: jede Übung animiert und eingesprochen, fertige Trainingspläne.
 - Instagram-Konto: @trainingskern. Nichts veröffentlichen ohne ausdrückliches Okay.
 - Intros und Grafik im Stil der App (Papier, Tafel, Neon und Orange auf Schwarz), nicht als Realfilm.
@@ -26,7 +26,12 @@ Die App selbst liegt bei Base44 (App „Trainingskern“), dieses Repo enthält 
   im Comic-Stil: `knall`, `pinsel`, `raster`, `panel`.
 - Erstes Kampagnen-Video als Muster: `story-studio/stories/kampagne-01-kein-plan.json`.
 - Generierte Clips bekommen die Farben der App über `"marke": true` in `filme/filme.json` (Rasen fast schwarz, kein Blau, genaues Neon und Orange).
-- Intros dürfen keine Stimme im Ton haben (kein Schreien, kein Rufen): Den Text spricht später die eigene ElevenLabs-Stimme.
+- Intros dürfen keine Stimme im Ton haben (kein Schreien, kein Rufen): Den Text spricht die eigene ElevenLabs-Stimme.
+- Vertonung: je Szene ein Satz in `"sprecher"`, gesprochen mit der Stimme aus `story-studio/stimme.json` (dieselbe wie in der App, „Jarvis deutsch“).
+  Der Schlüssel ist in der Cloud-Umgebung für api.elevenlabs.io hinterlegt, nie ins Repo schreiben. Aufnahmen liegen in `ton/sprecher/` und kosten nur einmal.
+  Das Zeichen-Kontingent ist knapp (Stand 23.11.2026 rund 15.000 Zeichen frei): Sätze kurz halten, nichts unnötig neu einsprechen.
+- Musik läuft leise mit (`"musik"`): `ton/musik-swing.mp3` für den Zeichentrick-Stil, `ton/musik-beat.mp3` für den Comic-Stil (generiert, ohne Gesang).
+- Keine Spielminute, kein Fortschrittsbalken im Bild. Der Bildschirm der Seite zeigt nur Titel und Tafel (`"verstecke"` blendet den Rest aus).
 - Vorlage: `story-studio/stories/vorlage-kampagne.json`.
 
 ## Story-Studio
