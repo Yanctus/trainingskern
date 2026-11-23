@@ -1,0 +1,25 @@
+{
+  "account": "trainings.kern",
+  "timezone": "Europe/Berlin",
+  "post_time": "18:30",
+  "rhythm": ["V", "U", "U", "U"],
+  "drive_folders": {
+    "root": "1kgJvEBkFK7TOQKSHF-CZqkVThPoBqMN4",
+    "vermarktung": "1Qvr8n36wUqcJo-mie32PV-U43YgVz37Y",
+    "uebungen": "1adLAJwAyhhvE9BT5b6Uj2wfLqGVvbrHA"
+  },
+  "media_url_pattern": "https://drive.usercontent.google.com/download?id={FILE_ID}&export=download&confirm=t",
+  "posts": [
+    {"day": 1,  "date": "2026-11-24", "type": "V", "file": "kampagne-01-kein-plan-comic.mp4",          "drive_id": "1gDPw4hficxZVMB7dkXtUqUzskkvjT6yA", "status": "planned"},
+    {"day": 2,  "date": "2026-11-25", "type": "U", "file": "kampagne-05-uebung-fangduell.mp4",         "drive_id": "1b2IpN2jrLqEhr3EhhnI3F6nIiwt2e2gA", "status": "planned"},
+    {"day": 3,  "date": "2026-11-26", "type": "U", "file": "kampagne-03-uebung-rondo.mp4",             "drive_id": "1F9fXdcnZOyMlevgr6SRe50Y1zSY9mozV", "status": "planned"},
+    {"day": 4,  "date": "2026-11-27", "type": "U", "file": "kampagne-04-uebung-3-gegen-2.mp4",         "drive_id": "1Wr4PcIEWSJ3qD9y8sl0DGiy8k76uMJP7", "status": "planned"},
+    {"day": 5,  "date": "2026-11-28", "type": "V", "file": "kampagne-07-woanders.mp4",                 "drive_id": "1D9Z7BJKZOXpmumNKIXxT3OCqn-o_r6NJ", "status": "planned"},
+    {"day": 6,  "date": "2026-11-29", "type": "U", "file": "kampagne-06-uebung-pyramiden-staffel.mp4", "drive_id": "1DpT9ovjYwhmpeWoBNAs-ug9MY-O5_UhD", "status": "planned"},
+    {"day": 7,  "date": "2026-11-30", "type": "U", "file": "kampagne-09-komplett-dritter-mann.mp4",    "drive_id": "1aQ-H_JOwfgad_co6jaH33m7VqAQyxtX-", "status": "planned"},
+    {"day": 8,  "date": "2026-12-01", "type": "U", "file": "kampagne-02-aufbau-rondo.mp4",             "drive_id": "1-8gFsVEeMkXS_R8ehaNaX8rUCl15635a", "status": "planned"},
+    {"day": 9,  "date": "2026-12-02", "type": "V", "file": "kampagne-08-was-neues.mp4",                "drive_id": "1hls2b_BDN-NxFtvm2lM7XlFiypPb6fK_", "status": "planned"},
+    {"day": 10, "date": "2026-12-03", "type": "U", "file": "kampagne-10-komplett-dribbel-dreieck.mp4", "drive_id": "1O_hGuIvszHz-f1mrLNL35SOrcNXe8n8z", "status": "planned"},
+    {"day": 11, "date": "2026-12-04", "type": "U", "file": "kampagne-11-komplett-pressing-rondo.mp4",  "drive_id": "1KgadZOi6xovzkc04_dcJI3Sfc8FD1Iqv", "status": "planned"}
+  ]
+}
