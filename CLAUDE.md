@@ -58,6 +58,16 @@ Die App selbst liegt bei Base44 (App „Trainingskern“), dieses Repo enthält 
 - Keine Spielminute, kein Fortschrittsbalken im Bild. Der Bildschirm der Seite zeigt nur Titel und Tafel (`"verstecke"` blendet den Rest aus).
 - Vorlage: `story-studio/stories/vorlage-kampagne.json`.
 
+## Ablage der fertigen Videos (Vorgabe vom 23.11.2026)
+
+Fertige Videos kommen in Google Drive, Ordner „Trainingskern Videos“ (`1kgJvEBkFK7TOQKSHF-CZqkVThPoBqMN4`):
+
+- **Vermarktung** (`1Qvr8n36wUqcJo-mie32PV-U43YgVz37Y`): alles, was Trainingskern allgemein bewirbt (bisher kampagne-01, -07, -08).
+- **Übungen** (`1adLAJwAyhhvE9BT5b6Uj2wfLqGVvbrHA`): alles, was eine Übung erklärt (bisher kampagne-02 bis -06, -09 bis -11).
+
+Stand 23.11.2026: Der Drive-Zugang der Sitzung kann Ordner lesen und kleine Textdateien anlegen, aber keine Videodateien hochladen
+(der Inhalt müsste als Text durch die Unterhaltung, Videos haben 16 bis 35 MB). Bis es einen anderen Weg gibt, lädt der Nutzer die Videos selbst hoch.
+
 ## Story-Studio
 
 `story-studio/` rendert Instagram-Storys (1080 × 1920) aus Story-Dateien. Bedienung und Szenen: `story-studio/README.md`.
