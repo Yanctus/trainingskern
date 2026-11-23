@@ -486,9 +486,9 @@ ${e?.kind || s.stempel ? `<div class="stempel am-stempel" style="right:58px;top:
     const aufnahme = daten.aufnahmen[i];
     const node = el(`<section class="sz papier">
 <div class="raster" style="left:0;bottom:340px;width:480px;height:480px"></div>
-<p class="app-notiz hand">${esc(s.notiz || "So sieht’s in der App aus ↓")}</p>
+<p class="app-notiz hand">${esc(s.notiz || "So sieht’s aus ↓")}</p>
 <div class="app-handy"><i class="schatten"></i><div class="rahmen"><canvas></canvas></div></div>
-${s.stempel !== false ? `<div class="stempel app-stempel" style="rotate:7deg">${esc(s.stempel || "Echte App")}</div>` : ""}
+${s.stempel !== false ? `<div class="stempel app-stempel" style="rotate:7deg">${esc(s.stempel || "Ohne Download")}</div>` : ""}
 ${s.zettel ? `<div class="app-seite">${esc(s.zettel)}</div>` : ""}</section>`);
     frame.append(node);
     const cv = node.querySelector("canvas"), handy = node.querySelector(".app-handy");

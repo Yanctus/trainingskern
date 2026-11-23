@@ -1,0 +1,51 @@
+{
+  "titel": "Kampagne 01 im Comic-Stil: Heute Training und kein Plan",
+  "intro": false,
+  "uebergang": "raster",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "comic-sprechblase",
+      "dach": "Kennst du das?",
+      "text": "Heute Training. Und *kein Plan?*",
+      "dauer": 3.2
+    },
+    {
+      "typ": "hook",
+      "ton": "neon",
+      "zeilen": [
+        "Altersklasse.",
+        "Dauer.",
+        "Schwerpunkt.",
+        "*Fertig.*"
+      ],
+      "dauer": 2.8,
+      "takt": 0.3
+    },
+    {
+      "typ": "app",
+      "seite": "/",
+      "dauer": 4.6,
+      "scroll": [
+        0,
+        430
+      ],
+      "notiz": "Drei Angaben, fertig ↓",
+      "zettel": "E-Jugend · 60 Min. · Dribbling",
+      "uebergang": "knall"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-004",
+      "schritte": 4,
+      "tempo": 1.7,
+      "dach": "Fertig erklärt",
+      "uebergang": "pinsel"
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "panel"
+    }
+  ]
+}

@@ -5,6 +5,8 @@ Die App selbst liegt bei Base44 (App „Trainingskern“), dieses Repo enthält 
 ## Feste Vorgaben für alles, was nach außen geht
 
 - Die Adresse ist immer **trainingskern.de** (nie die base44.app-Adresse), in Videos, Texten und Aufrufen.
+- Trainingskern gibt es (noch) nicht im App-Store, nur online unter trainingskern.de. Nichts schreiben, das nach Store-App klingt
+  („Echte App“, „Jetzt laden“); passend sind „Ohne Download“, „Online“, „im Browser“.
 - Keine Zahl der Übungen nennen. Geworben wird mit dem Nutzen: jede Übung animiert und eingesprochen, fertige Trainingspläne.
 - Instagram-Konto: @trainingskern. Nichts veröffentlichen ohne ausdrückliches Okay.
 - Intros und Grafik im Stil der App (Papier, Tafel, Neon und Orange auf Schwarz), nicht als Realfilm.

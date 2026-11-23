@@ -75,7 +75,7 @@ Eine Datei in `stories/`, zum Beispiel `stories/ue-001.json`:
 | `aufmacher` | Schlagzeile auf Papier, mit `code` dazu Minuten, Spieler und Altersklasse als Karten | `code`, `zeilen` (eigene Schlagzeile, `*so*` = schräg), `dach`, `notiz`, `stempel`, `karten: false` |
 | `uebung` | Die Übung läuft auf dem Platz, Schritt für Schritt mit Beschriftung | `code`, `schritte` (nur die ersten N), `tempo`, `fassung` (1 = Coaching-Punkt, 2 = Steigerung …), `titel`, `zoom` |
 | `punkte` | Zwei bis vier kurze Sätze als Karten, ohne `punkte` die Coaching-Punkte der Übung | `code` oder `punkte`, `titel`, `max`, `streichen: true` (durchgestrichen), `ton` |
-| `app` | Die echte App im Handy, wird gescrollt | `seite` (`{id:UE-001}` wird zur Adresse der Übung), `scroll` [von, bis] in Pixeln, `dauer`, `notiz`, `stempel`, `zettel` |
+| `app` | Die echte Seite im Handy, wird gescrollt (Stempel ohne Angabe „Ohne Download“) | `seite` (`{id:UE-001}` wird zur Adresse der Übung), `scroll` [von, bis] in Pixeln, `dauer`, `notiz`, `stempel`, `zettel` |
 | `abpfiff` | Logo, Schlusssatz, Aufruf, Adresse | `zeilen` (`*so*` = Neon), `knopf`, `adresse`, `notiz`, `zahl` (nur auf Wunsch) |
 | `outro` | Film mit dem K als Schluss, darunter die Adresse | `film` (ohne Angabe `intro-papier`), `adresse` |
 | `intro` | Das Intro als Szene an beliebiger Stelle (mit `"intro": false` oben) | `film`, `tempo` |
