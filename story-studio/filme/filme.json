@@ -51,5 +51,95 @@
     ],
     "dreh": -1.5,
     "landet": 1.97
+  },
+  "comic-sprechblase": {
+    "zettel": [
+      170,
+      262,
+      720,
+      500
+    ],
+    "landet": 0.8,
+    "rand": 10,
+    "ohneMarke": true,
+    "laut": 0.9
+  },
+  "comic-tafel": {
+    "zettel": [
+      262,
+      640,
+      600,
+      760
+    ],
+    "dreh": -5,
+    "landet": 1.6,
+    "rand": 10,
+    "ohneMarke": true,
+    "laut": 0.9
+  },
+  "comic-banner": {
+    "zettel": [
+      140,
+      720,
+      800,
+      470
+    ],
+    "landet": 2.2,
+    "rand": 10,
+    "ohneMarke": true,
+    "laut": 0.9
+  },
+  "comic-megafon": {
+    "zettel": [
+      230,
+      270,
+      640,
+      400
+    ],
+    "landet": 0.8,
+    "flaeche": "neon",
+    "rand": 10,
+    "ohneMarke": true,
+    "laut": 0.9
+  },
+  "comic-panels": {
+    "zettel": [
+      130,
+      640,
+      820,
+      470
+    ],
+    "dreh": -10.5,
+    "landet": 1.2,
+    "rand": 10,
+    "ohneMarke": true,
+    "laut": 0.9
+  },
+  "comic-fallrueckzieher": {
+    "zettel": [
+      270,
+      420,
+      600,
+      520
+    ],
+    "landet": 0.8,
+    "flaeche": "dunkel",
+    "rand": 10,
+    "ohneMarke": true,
+    "laut": 0.9
+  },
+  "comic-karte": {
+    "zettel": [
+      270,
+      380,
+      500,
+      720
+    ],
+    "dreh": 2,
+    "landet": 1.2,
+    "flaeche": "neon",
+    "rand": 10,
+    "ohneMarke": true,
+    "laut": 0.9
   }
 }

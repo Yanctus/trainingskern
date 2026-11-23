@@ -256,7 +256,7 @@ const SZENEN = {
     const fi = (mitFilm && daten.filmInfo[s.film]) || {}, zettel = fi.zettel;
     if (zettel && !s.filmTempo) s = { ...s, filmTempo: Math.max(1, (fi.landet || 1) / 0.8) };
     const landung = zettel ? ((fi.landet || 1) - (s.filmAb || 0)) / s.filmTempo + 0.1 : 0;
-    const node = el(`<section class="sz ${tonart} hook${mitFilm ? " mit-film" : ""}${zettel ? " auf-zettel" : ""}">
+    const node = el(`<section class="sz ${tonart} hook${mitFilm ? " mit-film" : ""}${zettel ? " auf-zettel" : ""}${fi.flaeche ? " fl-" + fi.flaeche : ""}">
 ${mitFilm ? `<canvas class="hg-film"></canvas>${zettel ? "" : `<i class="hg-schleier"></i><i class="hg-korn"></i>`}` : `<div class="raster" style="left:0;bottom:340px;width:520px;height:520px;${tonart === "dunkel" ? "--hc:#f8f4e9;opacity:.14" : ""}"></div>`}
 <div class="hk-block">${s.dach ? `<div class="am-dach hk-dach"><i></i><span>${esc(s.dach)}</span></div>` : ""}
 <h1 class="am-titel hk-titel">${titelZeilen(s.zeilen || ["Trainingskern"], tonart === "papier")}</h1>
@@ -264,7 +264,7 @@ ${s.notiz ? `<p class="hk-notiz hand">${esc(s.notiz)}</p>` : ""}</div></section>
     frame.append(node);
     const titel = node.querySelector(".hk-titel"), block = node.querySelector(".hk-block");
     // Einpassen in die Fläche (Blatt oder sichere Zone): erst in die Breite, dann so weit verkleinern, bis auch die Höhe reicht
-    const rand = 56, [zx, zy, zb, zh] = zettel || [72, 390, 936, GRENZE - 390];
+    const rand = fi.rand ?? 56, [zx, zy, zb, zh] = zettel || [72, 390, 936, GRENZE - 390];
     const breit = zettel ? zb - 2 * rand - 26 : 890, hoch = zettel ? zh - 2 * rand : zh;
     const passe = () => {
       titel.style.fontSize = "";
@@ -292,7 +292,8 @@ ${s.notiz ? `<p class="hk-notiz hand">${esc(s.notiz)}</p>` : ""}</div></section>
       block.style.top = (lage === "oben" ? 400 : lage === "unten" ? GRENZE - hoehe : Math.max(380, 390 + (GRENZE - 390 - hoehe) / 2)) + "px";
     }
     const dauer = s.dauer || (zettel ? 3 : 3.2);
-    return { el: node, ton: tonart, dauer, start(T) {
+    if (fi.laut && s.laut == null) s = { ...s, laut: fi.laut };
+    return { el: node, ton: tonart, dauer, ohneMarke: !!fi.ohneMarke, ohneUhr: !!fi.ohneMarke, start(T) {
       if (mitFilm) filmHaken(node, s, daten, T, dauer);
       const dach = node.querySelector(".hk-dach");
       if (dach) schieb(dach, T + landung + 0.25, 0.35, -40);

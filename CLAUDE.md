@@ -12,7 +12,10 @@ Die App selbst liegt bei Base44 (App „Trainingskern“), dieses Repo enthält 
 
 ## Kampagnen-Videos
 
-- Jedes Video beginnt mit demselben Intro: `hook` mit `"film": "hook-zettel"` (leeres Blatt klatscht vor die Papierfiguren), nur der Text wechselt.
+- Jedes Video beginnt mit demselben Intro, nur der Text wechselt: ein gezeichnetes Comic-Intro (Cel-Shading, dicke Konturen) mit freier Fläche,
+  `hook` mit `"film": "comic-..."`. Welche Variante das feste Intro wird, ist noch offen (Auswahl: `story-studio/stories/comic-vergleich.json`).
+  Das Intro muss sich klar vom Outro unterscheiden; `hook-zettel` ist deshalb verworfen.
+- Bilder für neue Intros: Nano Banana, Animation über Start- und Endbild (beides über OpenRouter). Keine Drei-Streifen-Kleidung, keine Logos.
 - Jedes Video endet mit demselben Outro: `{ "typ": "outro" }` (Papierfigur schießt den Ball zur Kamera, K, TRAININGSKERN, trainingskern.de).
 - Vorlage: `story-studio/stories/vorlage-kampagne.json`.
 

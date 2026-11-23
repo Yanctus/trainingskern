@@ -36,6 +36,10 @@ Jedes Kampagnen-Video beginnt und endet gleich, nur der Text wechselt (Vorlage: 
   Mit `"intro": false` oben in der Story, damit nichts davor läuft.
 - **Outro:** `{ "typ": "outro" }` Papierfigur schießt den Ball zur Kamera, Neon-Blitz, das K, TRAININGSKERN, darunter trainingskern.de.
 
+Bei Filmen mit freier Fläche steht in `filme/filme.json`, wo sie liegt (`zettel`: x, y, Breite, Höhe im 1080er Bild), wie sie gedreht ist (`dreh`),
+wann sie steht (`landet`) und welche Farbe sie hat (`flaeche`: ohne Angabe hell, sonst `neon` oder `dunkel`).
+`stories/comic-vergleich.json` zeigt alle Comic-Intros mit Beispieltext.
+
 `stories/intro-blanko.json` ist das Intro ohne Text, `stories/intro-beispiel.json` mit Beispieltext.
 
 ## Eine Story schreiben
@@ -84,6 +88,7 @@ für `hook`-Szenen, als Intro und als Wischer:
 | `ballnetz` | Ballnetz fällt auf den Rasen, Bälle rollen zur Kamera | Trainingsbeginn |
 | `pfeife-regen` | Pfeife hängt am Pfosten im Regen | ruhige Bilder, Zitate |
 | `platz-daemmerung` | leerer Platz mit Hütchenreihe in der Dämmerung | allgemeiner Hintergrund |
+| `comic-sprechblase`, `comic-tafel`, `comic-banner`, `comic-megafon`, `comic-panels`, `comic-fallrueckzieher`, `comic-karte` | gezeichnete Comic-Intros, enden auf einer leeren Fläche (Sprechblase, Tafel, Banner, Schrei-Blase, Textkasten, Feuerring, Karte) | Intro mit wechselndem Text: `{ "typ": "hook", "film": "comic-tafel", "text": "…" }` |
 | `hook-zettel` | Papierfigur schießt den Ball zur Kamera, ein leeres Blatt klatscht davor | das feste Intro mit wechselndem Text |
 | `hook-zettel-flutlicht` | Flutlicht geht an, Figuren drehen sich, Blatt klatscht davor (später als bei `hook-zettel`) | Ersatz |
 | `intro-papier` | Papierfiguren auf dem dunklen Platz, eine schießt den Ball zur Kamera, Neon-Blitz, K | Intro im Stil der App |
