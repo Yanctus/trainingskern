@@ -1,0 +1,33 @@
+{
+  "titel": "Übung erklärt: 3 gegen 2 zum Abschluss",
+  "intro": false,
+  "musik": "zufall",
+  "musikLaut": 0.14,
+  "geraeusche": 0.6,
+  "uebergang": "knall",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "comic-fallrueckzieher",
+      "dach": "Kennst du das?",
+      "text": "Überzahl? *Dann mach das Tor!*",
+      "dauer": 3.5,
+      "sprecher": "Überzahl? Dann mach das Tor!",
+      "sprecherAb": 0.9
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-011",
+      "stimme": true,
+      "dach": "So läuft’s"
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "blende",
+      "sprecher": "Trainingskern. Jetzt ausprobieren auf trainingskern Punkt D E.",
+      "sprecherAb": 0.4,
+      "dauer": 4.2
+    }
+  ]
+}

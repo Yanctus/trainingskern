@@ -9,7 +9,7 @@
 // Braucht: Node 20+, Playwright mit Chromium (npm i playwright), ffmpeg und curl.
 import { createServer } from "node:http";
 import { createRequire } from "node:module";
-import { execFile, spawn } from "node:child_process";
+import { execFile, execFileSync, spawn } from "node:child_process";
 import { promisify } from "node:util";
 import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, statSync, writeFileSync } from "node:fs";
 import { readFile } from "node:fs/promises";
@@ -178,7 +178,12 @@ async function erklaertVon(storyDatei) {
   })());
   return erklaertCache.get(storyDatei);
 }
-const klaenge = () => { try { return Object.fromEntries(readdirSync(path.join(HIER, "ton")).filter((f) => f.endsWith(".mp3")).map((f) => [f.slice(0, -4), true])); } catch { return {}; } };
+// Geräusche und Musik in ton/: Name -> Länge in Sekunden (die Länge braucht die Zufallswahl der Musik)
+const klangLaenge = new Map();
+const klaenge = () => { try { return Object.fromEntries(readdirSync(path.join(HIER, "ton")).filter((f) => f.endsWith(".mp3")).map((f) => {
+  if (!klangLaenge.has(f)) klangLaenge.set(f, parseFloat(execFileSync("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", path.join(HIER, "ton", f)]).toString()) || 1);
+  return [f.slice(0, -4), klangLaenge.get(f)];
+})); } catch { return {}; } };
 
 /* ---------- kleiner Server: Studio, Story-Dateien, Daten, Aufnahmen ---------- */
 const TYP = { ".html": "text/html; charset=utf-8", ".js": "text/javascript; charset=utf-8", ".css": "text/css; charset=utf-8", ".json": "application/json; charset=utf-8", ".woff2": "font/woff2", ".jpg": "image/jpeg", ".png": "image/png", ".svg": "image/svg+xml" };
@@ -282,9 +287,17 @@ async function render(chromium, url) {
     return { ein, mix, anzahl: teile.length };
   }
 
+  // Prüfung vor jedem Rendern: Texte, die überstehen oder abgeschnitten werden, stehen als Warnung in der Ausgabe
+  const pruefe = async (page) => {
+    const funde = await page.evaluate(() => window.__story.pruefe());
+    if (funde.length) console.warn("ACHTUNG, Text steht nicht sauber im Bild:\n  " + funde.join("\n  "));
+    else console.log("Textprüfung: alle Texte stehen im Bild.");
+    return funde;
+  };
   const bilder = wert("bild");
   if (bilder) {
     const { browser, page, info } = await oeffne();
+    await pruefe(page);
     console.log(`Dauer ${info.dauer.toFixed(2)} s · ${info.ton.length} Geräusche · Szenen: ${info.szenen.map((s) => `${s.typ} ${s.t0.toFixed(2)}–${s.t1.toFixed(2)}`).join(" | ")}`);
     for (const t of bilder.split(",").map(Number)) {
       const pfad = path.join(OUT, `${kennung}-${t.toFixed(2)}.jpg`);
@@ -298,6 +311,7 @@ async function render(chromium, url) {
   rmSync(ordner, { recursive: true, force: true });
   mkdirSync(ordner, { recursive: true });
   const seiten = await Promise.all(Array.from({ length: jobs }, oeffne));
+  await pruefe(seiten[0].page);
   const { dauer } = seiten[0].info, anzahl = Math.round(dauer * fps);
   console.log(`${kennung}: ${dauer.toFixed(2)} s, ${anzahl} Bilder, ${jobs} Browser`);
   let naechstes = 0, fertig = 0;

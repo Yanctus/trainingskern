@@ -1,0 +1,82 @@
+{
+  "titel": "Marketing: Woanders suchst du, hier läuft die Übung",
+  "intro": false,
+  "musik": "zufall",
+  "musikLaut": 0.15,
+  "geraeusche": 0.6,
+  "uebergang": "pinsel",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "comic-panels",
+      "dach": "Kennst du das?",
+      "text": "Tausend Übungen. *Und keine passt?*",
+      "dauer": 3.0,
+      "sprecher": "Tausend Übungen – und keine passt?",
+      "sprecherAb": 1.2
+    },
+    {
+      "typ": "punkte",
+      "ton": "dunkel",
+      "streichen": true,
+      "titel": [
+        "So läuft’s",
+        "woanders"
+      ],
+      "punkte": [
+        "Ewig suchen",
+        "Skizzen zum Rätseln",
+        "Erklären musst du selbst"
+      ],
+      "uebergang": "pinsel",
+      "sprecher": "Woanders heißt das: ewig suchen, Skizzen enträtseln, und erklären musst du selbst.",
+      "sprecherAb": 0.5
+    },
+    {
+      "typ": "hook",
+      "ton": "neon",
+      "zeilen": [
+        "Hier läuft",
+        "*die Übung.*"
+      ],
+      "dauer": 2.4,
+      "takt": 0.3,
+      "uebergang": "knall",
+      "sprecher": "Bei Trainingskern läuft die Übung einfach vor dir ab."
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-005",
+      "schritte": 4,
+      "tempo": 1.6,
+      "dach": "Animiert und erklärt",
+      "uebergang": "raster",
+      "sprecher": "Jede Übung ist animiert und wird dir von mir auf Deutsch erklärt.",
+      "sprecherAb": 1.0
+    },
+    {
+      "typ": "app",
+      "seite": "/trainingsplaene",
+      "dauer": 5.2,
+      "scroll": [
+        0,
+        800
+      ],
+      "halt": 1.4,
+      "verstecke": ".aw-trikot small",
+      "notiz": "Der Plan steht schon ↓",
+      "stempel": "Fertig geplant",
+      "uebergang": "panel",
+      "sprecher": "Und fertige Trainingspläne gibt’s gleich dazu, passend für deine Jugend.",
+      "sprecherAb": 0.5
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "blende",
+      "sprecher": "Trainingskern. Jetzt ausprobieren auf trainingskern Punkt D E.",
+      "sprecherAb": 0.4,
+      "dauer": 4.2
+    }
+  ]
+}

@@ -28,8 +28,12 @@ Das Video liegt danach in `out/ue-001.mp4`, daneben ein Titelbild `out/ue-001.jp
 - **Sichere Zone:** Oben 250 px und unten 340 px bleiben ohne Text, dort liegen bei Instagram Profilzeile und Antwortfeld.
 - **Tonspur:** Geräusche der Übergänge und der leise Ton der Filme. Dazu auf Wunsch Sprecher und Musik:
   `"sprecher": "Satz"` an einer Szene lässt ihn mit der Stimme aus `stimme.json` einsprechen (ElevenLabs; die Szene dauert mindestens so lange
-  wie der Satz, `"sprecherAb"` verschiebt den Einsatz). `"musik": "ton/musik-swing.mp3"` oben in der Story legt Musik leise darunter
-  (`"musikLaut"`, ohne Angabe 0.16), `"geraeusche": 0.6` nimmt Geräusche und Filmton zurück.
+  wie der Satz, `"sprecherAb"` verschiebt den Einsatz). `"musik": "zufall"` oben in der Story legt einen der Elektro-Titel leise darunter
+  (`ton/musik-elektro*.mp3`; gewählt wird unter denen, die lang genug sind, und je Story immer derselbe). Ein fester Titel geht auch:
+  `"musik": "ton/musik-elektro-2.mp3"`. `"musikLaut"` (ohne Angabe 0.16) regelt die Lautstärke, `"geraeusche": 0.6` nimmt Geräusche und Filmton zurück.
+- **Textprüfung:** Vor jedem Rendern sieht das Studio jede Szene an und warnt, wenn ein Text über den Bildrand ragt, abgeschnitten wird
+  oder nicht in die freie Fläche eines Intros passt. Ob ein Text über den Rand einer gezeichneten Fläche ragt (zum Beispiel die Zacken
+  der Blase in `comic-megafon`), sieht die Prüfung nicht: dafür Standbilder ansehen (`--bild`).
 
 ## Das feste Intro und Outro für Kampagnen
 
@@ -136,6 +140,10 @@ node studio.mjs render stories/ue-001.json --bild 3.5,8,20
 
 ## Formate, die sich bewährt haben
 
+- **Übung erklärt** (27 bis 37 Sekunden, je Übung ein Video): Comic-Intro mit einem Satz, `uebung` mit `"stimme": true`, Outro.
+  Siehe `stories/kampagne-03-uebung-rondo.json` bis `kampagne-06-uebung-pyramiden-staffel.json`.
+- **Marketing** (rund 30 Sekunden): Comic-Intro mit einer Frage, `punkte` mit `streichen` (so läuft es woanders) oder ohne (das steckt drin),
+  `app`, kurze `uebung`, Outro. Siehe `stories/kampagne-07-woanders.json` und `stories/kampagne-08-was-neues.json`.
 - **Selling-Video** (rund 23 Sekunden, ohne Intro): `hook` mit Film und einer Frage, die der Trainer kennt, dann die Antwort
   (`hook` in Neon oder `punkte` mit `streichen`), `app`, `uebung`, `abpfiff`. Siehe `stories/heute-training.json` und `stories/abwechslung.json`.
 - **Übung der Woche** (rund 30 Sekunden): `aufmacher`, `uebung`, `punkte`, `app`, `abpfiff`. Siehe `stories/ue-001.json`.

@@ -1,0 +1,33 @@
+{
+  "titel": "Übung erklärt: Pyramiden-Staffel",
+  "intro": false,
+  "musik": "ton/musik-elektro-2.mp3",
+  "musikLaut": 0.14,
+  "geraeusche": 0.6,
+  "uebergang": "panel",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "comic-banner",
+      "dach": "Schon probiert?",
+      "text": "Die Staffel, *die jeder will!*",
+      "dauer": 3.8,
+      "sprecher": "Die Staffel, die jeder will!",
+      "sprecherAb": 1.6
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-004",
+      "stimme": true,
+      "dach": "So läuft’s"
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "blende",
+      "sprecher": "Trainingskern. Jetzt ausprobieren auf trainingskern Punkt D E.",
+      "sprecherAb": 0.4,
+      "dauer": 4.2
+    }
+  ]
+}

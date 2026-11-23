@@ -1,0 +1,33 @@
+{
+  "titel": "Übung erklärt: Fangduell im Diamanten",
+  "intro": false,
+  "musik": "zufall",
+  "musikLaut": 0.14,
+  "geraeusche": 0.6,
+  "uebergang": "raster",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "comic-megafon",
+      "text": "Aufwärmen *ohne Gähnen!*",
+      "dauer": 3.5,
+      "sprecher": "Aufwärmen ohne Gähnen!",
+      "sprecherAb": 1.1,
+      "laut": 0.3
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-007",
+      "stimme": true,
+      "dach": "So läuft’s"
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "blende",
+      "sprecher": "Trainingskern. Jetzt ausprobieren auf trainingskern Punkt D E.",
+      "sprecherAb": 0.4,
+      "dauer": 4.2
+    }
+  ]
+}

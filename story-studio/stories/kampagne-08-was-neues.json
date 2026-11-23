@@ -1,0 +1,93 @@
+{
+  "titel": "Marketing: Dein Team kennt jede Übung auswendig",
+  "intro": false,
+  "musik": "zufall",
+  "musikLaut": 0.15,
+  "geraeusche": 0.6,
+  "uebergang": "raster",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "comic-tafel",
+      "dach": "Mal ehrlich",
+      "text": "Dein Team kennt *jede Übung?*",
+      "dauer": 3.0,
+      "sprecher": "Dein Team kennt jede Übung auswendig?",
+      "sprecherAb": 1.4
+    },
+    {
+      "typ": "hook",
+      "ton": "neon",
+      "zeilen": [
+        "Zeit für",
+        "*was Neues.*"
+      ],
+      "dauer": 2.2,
+      "takt": 0.3,
+      "uebergang": "raster",
+      "sprecher": "Dann wird’s Zeit für was Neues."
+    },
+    {
+      "typ": "app",
+      "seite": "/",
+      "dauer": 5.4,
+      "scroll": [
+        0,
+        800
+      ],
+      "halt": 2.2,
+      "verstecke": ".aw-go,.aw-alt,.aw-hero-foot",
+      "notiz": "Jugend, Dauer, Schwerpunkt ↓",
+      "stempel": "Drei Angaben",
+      "uebergang": "knall",
+      "sprecher": "Bei Trainingskern wählst du Jugend, Dauer und Schwerpunkt.",
+      "sprecherAb": 0.5
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-001",
+      "schritte": 3,
+      "tempo": 1.6,
+      "dach": "Animiert und erklärt",
+      "uebergang": "pinsel",
+      "sprecher": "Jede Übung läuft als Animation und wird dir von mir auf Deutsch erklärt.",
+      "sprecherAb": 1.0
+    },
+    {
+      "typ": "punkte",
+      "ton": "neon",
+      "titel": [
+        "Das steckt",
+        "drin"
+      ],
+      "punkte": [
+        "Jede Übung animiert",
+        "Auf Deutsch eingesprochen",
+        "Fertige Trainingspläne"
+      ],
+      "uebergang": "panel",
+      "sprecher": "Animiert, eingesprochen, und fertige Trainingspläne gibt’s auch.",
+      "sprecherAb": 0.6
+    },
+    {
+      "typ": "hook",
+      "ton": "dunkel",
+      "zeilen": [
+        "Reinschauen",
+        "*kostet nichts.*"
+      ],
+      "dauer": 2.2,
+      "takt": 0.3,
+      "uebergang": "knall",
+      "sprecher": "Reinschauen kostet nichts."
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "blende",
+      "sprecher": "Trainingskern. Jetzt ausprobieren auf trainingskern Punkt D E.",
+      "sprecherAb": 0.4,
+      "dauer": 4.2
+    }
+  ]
+}

@@ -22,6 +22,7 @@ const anims = [], haken = [], ton = [];
 // Ein Geräusch oder die Tonspur eines Films: datei (unter filme/ oder ton/), start = Zeit in der Story,
 // von = Stelle in der Datei, dauer, laut (0..1), tempo. Der Renderer mischt daraus die Tonspur.
 let geraeusche = 1; // "geraeusche" in der Story: Lautstärke aller Geräusche und Filmtöne (nicht Sprecher und Musik)
+const hinweise = []; // Texte, die nicht in ihre Fläche passen (siehe pruefe)
 const klang = (datei, start, o = {}) => ton.push({ datei, start: Math.max(0, start), von: o.von || 0, dauer: o.dauer || 0, laut: (o.laut ?? 1) * (o.fest ? 1 : geraeusche), tempo: o.tempo || 1, ein: o.ein ?? 0.04, aus: o.aus ?? 0.25 });
 const bild = (src) => new Promise((ok, nein) => { const b = new Image(); b.onload = () => b.decode().then(() => ok(b), () => ok(b)); b.onerror = () => nein(new Error("Bild fehlt: " + src)); b.src = src; });
 // Eine Bildfolge (Film oder App-Aufnahme) auf einer Leinwand: zeig(n) lädt Bild n nach und malt es.
@@ -342,6 +343,8 @@ ${s.notiz ? `<p class="hk-notiz hand">${esc(s.notiz)}</p>` : ""}</div></section>
       titel.innerHTML = titelZeilen(beste.zeilen, tonart === "papier");
     }
     passe();
+    const breiteste = Math.max(...[...titel.querySelectorAll("b")].map((x) => x.offsetWidth));
+    if (block.offsetHeight > hoch + 2 || breiteste > breit + 2) hinweise.push(`Hook „${s.text || (s.zeilen || []).join(" ")}“: Text passt nicht in die Fläche (${breiteste} × ${block.offsetHeight} px, Platz ${Math.round(breit)} × ${Math.round(hoch)} px). Kürzer schreiben.`);
     if (zettel) block.style.top = zy + (zh - block.offsetHeight) / 2 + "px";
     else {
       const hoehe = block.offsetHeight, lage = s.lage || "mitte";
@@ -684,7 +687,16 @@ async function baue() {
   });
   const dauer = t;
   // Musik läuft leise über das ganze Video
-  if (story.musik) klang(story.musik, 0, { dauer, laut: story.musikLaut ?? 0.16, fest: true, ein: 0.3, aus: 1.4 });
+  // "musik": "zufall" nimmt einen der Titel ton/musik-elektro*.mp3, der lang genug ist; die Wahl hängt am Dateinamen der Story, bleibt also bei jedem Rendern gleich
+  let musik = story.musik;
+  if (musik === "zufall" || musik === true) {
+    const alle = Object.keys(daten.klaenge).filter((n) => n.startsWith("musik-elektro")).sort(), lang = alle.filter((n) => daten.klaenge[n] >= dauer - 0.5);
+    const wahl = lang.length ? lang : alle; // nur Titel, die bis zum Ende reichen
+    let h = 7;
+    for (const c of kennung) h = (h * 31 + c.charCodeAt(0)) >>> 0;
+    musik = wahl.length ? `ton/${wahl[h % wahl.length]}.mp3` : null;
+  }
+  if (musik) klang(musik, 0, { dauer, laut: story.musikLaut ?? 0.16, fest: true, ein: 0.3, aus: 1.4 });
 
   // Feste Teile: Marke oben links, Spielminute unten (der Ball rollt über alle Szenen außer dem Intro von 0′ bis 90′)
   const marke = el(`<div class="marke">${kBox("", true)}<span>Trainingskern<i></i></span></div>`);
@@ -715,8 +727,40 @@ async function baue() {
     return Promise.all(haken.map((h) => h(z)).filter(Boolean)).then(() => undefined);
   }
   frame.classList.remove("misst");
+  // Prüfung: Steht jeder Text im Bild? Sieht sich jede Szene kurz vor ihrem Ende an (alles ist eingeflogen) und meldet Texte,
+  // die über den Bildrand ragen oder von ihrem Kasten abgeschnitten werden.
+  async function pruefe() {
+    const funde = [...hinweise], fr = frame.getBoundingClientRect(), m = 1080 / fr.width;
+    for (const sz of szenen) {
+      await seek(Math.max(sz.t0, sz.t1 - 0.2));
+      const laeufer = document.createTreeWalker(sz.el, NodeFilter.SHOW_TEXT);
+      const gesehen = new Set();
+      for (let n = laeufer.nextNode(); n; n = laeufer.nextNode()) {
+        const e = n.parentElement, text = n.textContent.trim();
+        if (!text || gesehen.has(e)) continue;
+        gesehen.add(e);
+        const cs = getComputedStyle(e);
+        if (cs.visibility === "hidden" || !e.offsetParent) continue;
+        let sichtbar = 1;
+        for (let x = e; x && x !== sz.el; x = x.parentElement) sichtbar *= parseFloat(getComputedStyle(x).opacity);
+        if (sichtbar < 0.3) continue;
+        const r = e.getBoundingClientRect(), x0 = (r.left - fr.left) * m, x1 = (r.right - fr.left) * m, y0 = (r.top - fr.top) * m, y1 = (r.bottom - fr.top) * m;
+        if (r.width < 2 || r.height < 2) continue;
+        const kurz = text.length > 40 ? text.slice(0, 40) + "…" : text, wo = `${sz.roh.typ} ${sz.t0.toFixed(1)}–${sz.t1.toFixed(1)} s`;
+        if (x0 < -3 || x1 > 1083 || y0 < -3 || y1 > 1923) { funde.push(`${wo}: „${kurz}“ ragt über den Bildrand (${Math.round(x0)}…${Math.round(x1)} × ${Math.round(y0)}…${Math.round(y1)})`); continue; }
+        for (let x = e.parentElement; x && x !== sz.el; x = x.parentElement) {
+          const o = getComputedStyle(x);
+          if (!/hidden|clip/.test(o.overflowX + o.overflowY) || /^(H1|H2)$/.test(x.parentElement?.tagName || "") && Math.abs(parseFloat(cs.rotate) || 0) > 0) continue;
+          const k = x.getBoundingClientRect();
+          if (r.left < k.left - 6 || r.right > k.right + 6 || r.top < k.top - 6 || r.bottom > k.bottom + 6) { funde.push(`${wo}: „${kurz}“ wird abgeschnitten`); break; }
+        }
+      }
+    }
+    await seek(0);
+    return funde;
+  }
   await seek(0);
-  return { dauer, fps: story.fps || 30, titel: story.titel || kennung, kennung, seek, ton, szenen: szenen.map((s) => ({ typ: s.roh.typ, t0: s.t0, t1: s.t1 })) };
+  return { pruefe, dauer, fps: story.fps || 30, titel: story.titel || kennung, kennung, seek, ton, szenen: szenen.map((s) => ({ typ: s.roh.typ, t0: s.t0, t1: s.t1 })) };
 }
 
 /* ---------- Vorschau: Pult mit Regler ---------- */
