@@ -1,0 +1,9 @@
+{
+  "titel": "3 gegen 2 zum Abschluss (kurz)",
+  "uebergang": "streifen",
+  "szenen": [
+    { "typ": "aufmacher", "code": "UE-011", "dach": "Spielform der Woche", "notiz": "Überzahl ausspielen, schnell abschließen" },
+    { "typ": "uebung", "code": "UE-011", "tempo": 1.5 },
+    { "typ": "abpfiff", "zeilen": ["Übungen.", "Jede animiert."], "uebergang": "anstoss" }
+  ]
+}

@@ -1,0 +1,142 @@
+/* Story-Studio: Bild 1080 x 1920 (Instagram-Story). Farben, Schriften und Körnung kommen aus app/zine.css (.zine).
+   Sichere Zone: oben 250 px und unten 340 px bleiben frei von Text (dort liegen Profilzeile und Antwortfeld von Instagram). */
+html,body{margin:0;background:#1b1b18;overflow:hidden}
+#buehne{position:absolute;left:0;top:0;width:1080px;height:1920px;transform-origin:0 0}
+#frame{position:relative;width:1080px;height:1920px;min-height:0;overflow:hidden;background:var(--ink);font-size:16px;contain:strict}
+#frame *{box-sizing:border-box}
+#frame .ar{transition:none}
+#frame .sz{position:absolute;inset:0;overflow:hidden;display:none}
+#frame.misst .sz{display:block}
+#frame .sz.papier{background:var(--grain-d),var(--paper);color:var(--ink)}
+#frame .sz.dunkel{background:var(--grain-l),var(--ink);color:var(--paper)}
+#frame .sz.neon{background:var(--grain-d),var(--neon);color:var(--ink)}
+#frame .disp{font-family:var(--f-display);font-weight:900;text-transform:uppercase;line-height:.92;letter-spacing:-.01em}
+#frame .hand{font-family:var(--f-hand);font-weight:400;color:var(--cone);line-height:1.05}
+#frame .raster{position:absolute;pointer-events:none;background-image:radial-gradient(circle,var(--hc,#0d0d0b) 34%,transparent 37%);background-size:18px 18px;
+  -webkit-mask-image:radial-gradient(circle at var(--hx,0%) var(--hy,100%),#000,transparent 72%);mask-image:radial-gradient(circle at var(--hx,0%) var(--hy,100%),#000,transparent 72%);opacity:.5}
+
+/* ---------- Intro: der Preloader der App im Hochformat ---------- */
+#frame .intro{background:var(--grain-l),var(--ink);color:var(--fiber);font-family:var(--f-display)}
+#frame .intro .feld{position:absolute;inset:0;width:100%;height:100%}
+#frame .intro .feld circle,#frame .intro .feld line{fill:none;stroke:rgba(248,244,233,.14);stroke-width:3;stroke-dasharray:1;stroke-dashoffset:1}
+#frame .intro .feld .punkt{fill:rgba(248,244,233,.2);stroke:none}
+#frame .intro .mitte{position:absolute;left:0;right:0;top:900px;transform:translateY(-50%);display:grid;justify-items:center;gap:54px}
+#frame .intro .k{width:310px;height:310px;overflow:visible;filter:drop-shadow(18px 18px 0 #ff5500)}
+#frame .intro .k path{transform-box:fill-box;transform-origin:50% 50%}
+#frame .intro .wort{display:flex;align-items:flex-end;overflow:hidden;font-weight:900;font-size:92px;line-height:1;letter-spacing:.01em;padding-bottom:4px}
+#frame .intro .wort span{display:inline-block}
+#frame .intro .wort i{width:.28em;height:.28em;margin:0 0 .04em .06em;background:var(--cone)}
+#frame .intro .seitenlinie{position:absolute;left:90px;right:90px;top:1470px;height:3px;background:rgba(248,244,233,.22)}
+#frame .intro .hinweis{position:absolute;left:0;top:-56px;font-size:26px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:rgba(248,244,233,.6)}
+#frame .intro .min{position:absolute;right:0;top:-66px;padding:9px 12px 7px;background:var(--fiber);color:var(--ink);font-weight:900;font-size:28px;line-height:1}
+#frame .intro .ball{position:absolute;left:0;top:50%;width:48px;height:48px;margin:-24px 0 0 -24px}
+#frame .intro .ball svg{display:block;width:100%;height:100%}
+
+/* ---------- Übergänge ---------- */
+#frame .ue{position:absolute;inset:0;z-index:40;pointer-events:none;display:none;overflow:hidden}
+#frame .ue .halb{position:absolute;left:0;right:0;height:50.2%;background:var(--grain-l),var(--ink)}
+#frame .ue .oben{top:0}
+#frame .ue .unten{bottom:0}
+#frame .ue .blitz{position:absolute;left:0;right:0;top:50%;height:10px;margin-top:-5px;background:var(--neon);box-shadow:0 0 44px var(--neon);transform:scaleX(0);opacity:0}
+#frame .ue .siegel{position:absolute;left:50%;top:50%;width:170px;height:170px;margin:-85px 0 0 -85px;filter:drop-shadow(10px 10px 0 #ff5500);opacity:0}
+#frame .ue .band{position:absolute;top:-10%;left:0;height:120%;width:1900px;display:flex;transform:skewX(-12deg)}
+#frame .ue .band i{display:block;height:100%}
+#frame .ue .band .o{width:70px;background:var(--cone)}
+#frame .ue .band .n{width:90px;background:var(--neon)}
+#frame .ue .band .t{flex:1;background:var(--grain-l),var(--ink)}
+#frame .ue .weiss{position:absolute;inset:0;background:var(--neon);opacity:0}
+
+/* ---------- Feste Teile über allen Szenen: Marke oben, Spielminute unten ---------- */
+#frame .marke{position:absolute;z-index:30;left:64px;top:262px;display:none;align-items:center;gap:14px;padding:12px 20px 12px 12px;background:var(--ink);color:var(--fiber);
+  box-shadow:9px 9px 0 var(--cone);font-family:var(--f-display);font-weight:900;font-size:31px;line-height:1;letter-spacing:.02em;text-transform:uppercase}
+#frame .marke svg{width:50px;height:50px;display:block}
+#frame .marke i{display:inline-block;width:.26em;height:.26em;margin-left:.05em;background:var(--cone)}
+#frame .marke.dunkel{outline:2px solid rgba(248,244,233,.3)}
+#frame .uhr{position:absolute;z-index:30;left:64px;right:64px;top:1536px;height:3px;display:none;background:rgba(13,13,11,.28);--f:var(--ink);--b:var(--fiber)}
+#frame .uhr.dunkel{background:rgba(248,244,233,.26);--f:var(--fiber);--b:var(--ink)}
+#frame .uhr .weg{position:absolute;left:0;top:0;height:100%;background:var(--f)}
+#frame .uhr .ball{position:absolute;top:50%;width:46px;height:46px;margin:-23px 0 0 -23px}
+#frame .uhr .ball svg{display:block;width:100%;height:100%}
+#frame .uhr .min{position:absolute;top:-62px;transform:translateX(-50%);padding:8px 11px 6px;background:var(--f);color:var(--b);font-family:var(--f-display);font-weight:900;font-size:26px;line-height:1;white-space:nowrap}
+
+/* ---------- Szene: Aufmacher ---------- */
+#frame .am-nr{position:absolute;right:-40px;top:300px;font-family:var(--f-display);font-weight:900;font-size:520px;line-height:.8;color:transparent;-webkit-text-stroke:3px rgba(13,13,11,.13);letter-spacing:-.03em}
+#frame .am-dach{position:absolute;left:72px;top:420px;display:flex;align-items:center;gap:20px;font-family:var(--f-display);font-weight:800;font-stretch:118%;font-size:32px;letter-spacing:.18em;text-transform:uppercase;line-height:1}
+#frame .am-dach i{display:block;width:56px;height:20px;background:var(--cone);transform:skewX(-24deg)}
+#frame .am-titel{position:absolute;left:72px;top:500px;margin:0;display:grid;justify-items:start;gap:14px;font-family:var(--f-display);font-weight:900;font-stretch:92%;text-transform:uppercase;line-height:.9;letter-spacing:-.015em;font-size:170px}
+#frame .am-titel .z{position:relative;display:block;padding:.05em .14em .0em;margin-left:-.1em}
+#frame .am-titel .z .fl{position:absolute;inset:0;background:var(--neon);transform-origin:0 50%}
+#frame .am-titel .z:nth-child(odd) .fl{transform:skewX(-6deg) rotate(-1deg)}
+#frame .am-titel .z:nth-child(even) .fl{transform:skewX(-4deg) rotate(.8deg)}
+#frame .am-titel .z .cl{position:relative;display:block;overflow:hidden;padding:.06em .02em .04em}
+#frame .am-titel .z b{display:block;font-weight:900;white-space:nowrap}
+#frame .am-titel .z.schraeg b{font-style:italic;transform-origin:0 100%}
+#frame .am-karten{position:absolute;left:72px;right:72px;display:flex;flex-wrap:wrap;gap:30px 34px}
+#frame .am-karte{padding:22px 30px 20px;background:var(--ink);color:var(--neon);box-shadow:11px 11px 0 var(--cone);font-family:var(--f-display);line-height:1}
+#frame .am-karte b{display:block;font-weight:900;font-size:98px;letter-spacing:-.01em;white-space:nowrap}
+#frame .am-karte span{display:block;margin-top:10px;font-weight:800;font-stretch:118%;font-size:25px;letter-spacing:.2em;text-transform:uppercase;color:var(--fiber)}
+#frame .am-karte.n{background:var(--neon);color:var(--ink);box-shadow:11px 11px 0 var(--ink)}
+#frame .am-karte.n span{color:var(--ink)}
+#frame .am-karte.o{background:var(--cone);color:var(--ink);box-shadow:11px 11px 0 var(--ink)}
+#frame .am-karte.o span{color:var(--ink)}
+#frame .am-karte.klein b{font-size:60px;padding:19px 0}
+#frame .am-notiz{position:absolute;left:76px;right:72px;margin:0;font-size:54px;transform:rotate(-2.5deg);transform-origin:0 50%}
+#frame .stempel{position:absolute;padding:14px 26px 11px;background:var(--neon);color:var(--ink);border:5px solid var(--ink);box-shadow:8px 8px 0 var(--ink);
+  font-family:var(--f-display);font-weight:900;font-stretch:112%;font-size:38px;letter-spacing:.12em;text-transform:uppercase;line-height:1;white-space:nowrap}
+
+/* ---------- Szene: Übung auf dem Platz ---------- */
+#frame .ub-kopf{position:absolute;left:72px;right:72px;top:372px}
+#frame .ub-zeile{display:flex;align-items:center;gap:18px;font-family:var(--f-display);font-weight:800;font-stretch:118%;font-size:28px;letter-spacing:.2em;text-transform:uppercase;line-height:1}
+#frame .ub-code{padding:11px 16px 9px;background:var(--neon);color:var(--ink);font-weight:900;letter-spacing:.12em}
+#frame .ub-titel{margin:18px 0 0;font-family:var(--f-display);font-weight:900;font-stretch:92%;font-size:104px;line-height:.9;letter-spacing:-.01em;text-transform:uppercase;color:var(--fiber);overflow:hidden}
+#frame .ub-titel span{display:block;overflow:hidden;padding:.05em 0 .02em}
+#frame .ub-titel b{display:inline-block;font-weight:900;white-space:nowrap}
+#frame .ub-platz{position:absolute;left:0;right:0;top:600px;height:650px}
+#frame .ub-schritte{position:absolute;left:72px;right:72px;top:1268px;height:160px}
+#frame .ub-schritt{position:absolute;left:0;right:0;top:0;display:none;grid-template-columns:auto 1fr;gap:26px;align-items:start}
+#frame .ub-schritt .nr{display:grid;place-items:center;width:96px;height:96px;background:var(--neon);color:var(--ink);box-shadow:8px 8px 0 var(--cone);font-family:var(--f-display);font-weight:900;font-size:60px;line-height:1}
+#frame .ub-schritt .tx{padding-top:6px;font-family:var(--f-display);font-weight:800;font-stretch:108%;font-size:46px;line-height:1.08;letter-spacing:.035em;text-transform:uppercase;color:var(--fiber)}
+#frame .ub-punkte{position:absolute;left:72px;top:1438px;display:flex;gap:10px}
+#frame .ub-punkte i{display:block;width:34px;height:8px;background:rgba(248,244,233,.22)}
+#frame .ub-punkte i.an{background:var(--neon)}
+
+/* ---------- Szene: Coaching-Punkte ---------- */
+#frame .pk-titel{position:absolute;left:72px;right:72px;top:400px;margin:0;font-family:var(--f-display);font-weight:900;font-stretch:90%;font-size:128px;line-height:.9;letter-spacing:-.015em;text-transform:uppercase}
+#frame .pk-titel span{display:block;overflow:hidden;padding:.05em 0 .03em}
+#frame .pk-titel b{display:inline-block;font-weight:900;white-space:nowrap}
+#frame .pk-strich{position:absolute;left:72px;height:22px;background:var(--cone);transform-origin:0 50%}
+#frame .pk-liste{position:absolute;left:72px;right:86px;display:grid;gap:44px}
+#frame .pk-karte{display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center;padding:30px 34px;background:var(--ink);color:var(--fiber);box-shadow:12px 12px 0 var(--cone)}
+#frame .pk-karte .nr{display:grid;place-items:center;width:88px;height:88px;background:var(--neon);color:var(--ink);font-family:var(--f-display);font-weight:900;font-size:56px;line-height:1}
+#frame .pk-karte .tx{font-family:var(--f-text);font-weight:600;font-size:52px;line-height:1.14;letter-spacing:-.01em}
+
+/* ---------- Szene: die echte App im Handy ---------- */
+#frame .app-notiz{position:absolute;left:84px;right:70px;top:372px;margin:0;font-size:58px;transform:rotate(-2deg);transform-origin:0 50%}
+#frame .app-handy{position:absolute;left:50%;top:474px;width:520px;height:1000px;margin-left:-260px;transform-origin:50% 60%}
+#frame .app-handy .schatten{position:absolute;inset:0;border-radius:62px;background:var(--cone);transform:translate(20px,20px)}
+#frame .app-handy .rahmen{position:absolute;inset:0;border-radius:62px;background:var(--ink);padding:15px;box-shadow:inset 0 0 0 3px #2b2b26}
+#frame .app-handy canvas{display:block;width:100%;height:100%;border-radius:48px;background:#11140d}
+#frame .app-handy .insel{position:absolute;left:50%;top:30px;width:128px;height:32px;margin-left:-64px;border-radius:20px;background:#000}
+#frame .app-stempel{right:54px;top:560px}
+#frame .app-seite{position:absolute;left:54px;top:1290px;padding:12px 18px 10px;background:var(--ink);color:var(--fiber);box-shadow:7px 7px 0 var(--neon);font-family:var(--f-type);font-size:27px;line-height:1.1;transform:rotate(-3deg)}
+
+/* ---------- Szene: Abpfiff (Abschluss mit Aufruf) ---------- */
+#frame .ab-k{position:absolute;left:72px;top:400px;width:210px;height:210px;filter:drop-shadow(14px 14px 0 #ff5500)}
+#frame .ab-zahl{position:absolute;left:66px;top:650px;margin:0;font-family:var(--f-display);font-weight:900;font-style:italic;font-stretch:96%;font-size:330px;line-height:.82;letter-spacing:-.03em;color:var(--neon);text-shadow:12px 12px 0 var(--cone);white-space:nowrap}
+#frame .ab-zeilen{position:absolute;left:72px;right:72px;margin:0;font-family:var(--f-display);font-weight:900;font-stretch:90%;font-size:118px;line-height:.92;letter-spacing:-.01em;text-transform:uppercase;color:var(--fiber)}
+#frame .ab-zeilen span{display:block;overflow:hidden;padding:.05em 0 .03em}
+#frame .ab-zeilen b{display:inline-block;font-weight:900;white-space:nowrap}
+#frame .ab-knopf{position:absolute;left:72px;display:flex;align-items:stretch;box-shadow:12px 12px 0 var(--cone);font-family:var(--f-display);font-weight:900;font-stretch:108%;font-size:44px;letter-spacing:.06em;text-transform:uppercase;line-height:1;transform-origin:0 50%}
+#frame .ab-knopf span{padding:32px 34px 28px;background:var(--neon);color:var(--ink);white-space:nowrap}
+#frame .ab-knopf i{display:grid;place-items:center;width:104px;background:var(--fiber);color:var(--ink);font-style:normal;font-size:58px}
+#frame .ab-adresse{position:absolute;left:74px;margin:0;font-family:var(--f-type);font-size:36px;color:rgba(248,244,233,.78)}
+#frame .ab-notiz{position:absolute;left:76px;margin:0;font-size:52px;transform:rotate(-2deg);transform-origin:0 50%}
+
+/* ---------- Pult der Vorschau (nicht im Video) ---------- */
+#pult{position:fixed;left:0;right:0;bottom:0;height:64px;display:flex;align-items:center;gap:14px;padding:0 18px;background:#0d0d0b;color:#f8f4e9;font:600 14px/1 system-ui,sans-serif;z-index:99}
+#pult button{height:36px;padding:0 16px;border:0;background:#d4ff00;color:#0d0d0b;font:800 14px/1 system-ui,sans-serif;cursor:pointer}
+#pult input{flex:1;accent-color:#d4ff00}
+#pult label{display:flex;align-items:center;gap:6px;white-space:nowrap}
+#frame .zone{position:absolute;left:0;right:0;z-index:50;background:rgba(255,0,80,.16);display:none;pointer-events:none}
+#frame.zonen .zone{display:block}
+body.render #pult{display:none}

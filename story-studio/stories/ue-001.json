@@ -1,0 +1,36 @@
+{
+  "titel": "Dribbel-Dreieck mit Ablage",
+  "uebergang": "anstoss",
+  "szenen": [
+    {
+      "typ": "aufmacher",
+      "code": "UE-001",
+      "dach": "Übung der Woche"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-001",
+      "schritte": 6,
+      "tempo": 1.7,
+      "uebergang": "streifen"
+    },
+    {
+      "typ": "punkte",
+      "code": "UE-001"
+    },
+    {
+      "typ": "app",
+      "seite": "/einheiten/{id:UE-001}",
+      "dauer": 5,
+      "scroll": [
+        0,
+        3300
+      ],
+      "zettel": "Skizze, Platz, Ton: alles drin",
+      "uebergang": "streifen"
+    },
+    {
+      "typ": "abpfiff"
+    }
+  ]
+}

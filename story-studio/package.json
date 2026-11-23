@@ -1,0 +1,11 @@
+{
+  "name": "trainingskern-story-studio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Instagram-Storys im Aussehen der Trainingskern-App: Story-Datei rein, fertiges Video raus.",
+  "type": "module",
+  "scripts": {
+    "render": "node studio.mjs render",
+    "vorschau": "node studio.mjs vorschau"
+  }
+}
