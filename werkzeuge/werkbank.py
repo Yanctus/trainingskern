@@ -249,7 +249,7 @@ body{margin:0;background:#11140d}
 .tok.t-c .disc{box-shadow:0 0 0 3px var(--neon)}.tok.ball .disc{left:-13px;top:-5px;width:26px;height:11px;background:rgba(0,0,0,.6);box-shadow:none}
 .tok.cone .disc{display:none}
 .plane.gross .tok.fig .up{left:-31px;top:-103px;width:62px;height:103px}.plane.gross .tok.fig.t-c .up{left:-35px;top:-117px;width:70px;height:117px}
-.plane.gross .tok .disc{left:-19px;top:-11px;width:38px;height:22px}.plane.gross .tok.cone .up{left:-16px;top:-37px;width:32px;height:37px}
+.plane.gross .tok .disc{left:-19px;top:-11px;width:38px;height:22px}.plane.gross .tok.cone:not(.goal):not(.flat):not(.pole):not(.hurdle) .up{left:-16px;top:-37px;width:32px;height:37px}
 .plane.gross .tok.ball .up{left:-10px;top:-21px;width:20px;height:20px}.plane.gross .tok.ball .disc{left:-9px;top:-4px;width:19px;height:8px}
 .tok .cut{fill:var(--fiber);stroke:var(--fiber);stroke-width:8;stroke-linejoin:round}
 .tok .leg{fill:var(--paper);stroke:var(--ink);stroke-width:2.2}.tok .shoe,.tok .short,.tok .dot{fill:var(--ink)}
