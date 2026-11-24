@@ -1,0 +1,47 @@
+{
+  "titel": "Übung komplett: Torhüter-Duell auf vier Tore",
+  "intro": false,
+  "musik": "ton/musik-elektro-4.mp3",
+  "musikLaut": 0.14,
+  "geraeusche": 0.6,
+  "uebergang": "knall",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "comic-panels",
+      "text": "Vier Tore. *Kaum Zeit zum Denken!*",
+      "dauer": 3.5,
+      "sprecher": "Vier Tore – und kaum Zeit zum Denken!",
+      "sprecherAb": 1.2,
+      "dach": "Für deine Torhüter"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-252",
+      "stimme": true,
+      "dach": "So läuft’s"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-252",
+      "stimme": true,
+      "fassung": 1,
+      "uebergang": "panel"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-252",
+      "stimme": true,
+      "fassung": 2,
+      "uebergang": "pinsel"
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "blende",
+      "sprecher": "Trainingskern. Jetzt ausprobieren auf trainingskern Punkt D E.",
+      "sprecherAb": 0.4,
+      "dauer": 4.2
+    }
+  ]
+}

@@ -146,8 +146,11 @@ async function nurName(ton) {
   const quelle = path.join(HIER, ton.datei), ziel = quelle.replace(/\.mp3$/, "-name.mp3");
   if (!existsSync(ziel)) {
     const mess = await run("ffmpeg", ["-hide_banner", "-i", quelle, "-af", "silencedetect=noise=-32dB:d=0.22", "-f", "null", "-"]).catch((e) => e);
-    const pausen = [...String(mess.stderr || "").matchAll(/silence_start: ([\d.]+)/g)].map((m) => Number(m[1])).filter((x) => x > 0.9 && x < ton.dauer - 0.5);
-    const ende = (pausen[0] || ton.dauer) + 0.12;
+    // Namen mit Kommas ("Hürde, Leiter, Farbsprint") haben kurze Pausen mittendrin: Das Satzende ist die erste deutlich längere Pause
+    const text = String(mess.stderr || ""), starts = [...text.matchAll(/silence_start: ([\d.]+)/g)].map((m) => Number(m[1])), laengen = [...text.matchAll(/silence_duration: ([\d.]+)/g)].map((m) => Number(m[1]));
+    const pausen = starts.map((x, i) => ({ x, d: laengen[i] ?? 9 })).filter((q) => q.x > 0.9 && q.x < ton.dauer - 0.5);
+    const satzende = pausen.find((q) => q.d >= 0.42) || pausen[0];
+    const ende = (satzende ? satzende.x : ton.dauer) + 0.12;
     await run("ffmpeg", ["-y", "-loglevel", "error", "-i", quelle, "-t", String(ende), "-af", `afade=t=out:st=${Math.max(0, ende - 0.1)}:d=0.1`, "-b:a", "128k", ziel]);
   }
   return { datei: path.relative(HIER, ziel).split(path.sep).join("/"), dauer: await laenge(ziel) };

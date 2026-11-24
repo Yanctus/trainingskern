@@ -115,12 +115,7 @@
     ]
   },
   "comic-megafon": {
-    "zettel": [
-      230,
-      270,
-      640,
-      400
-    ],
+    "zettel": [275, 270, 570, 400],
     "landet": 1.0,
     "flaeche": "neon",
     "rand": 10,

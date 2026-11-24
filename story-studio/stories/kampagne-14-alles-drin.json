@@ -1,0 +1,85 @@
+{
+  "titel": "Marketing: Torwart, Athletik, Spielform – alles drin",
+  "intro": false,
+  "musik": "ton/musik-elektro-2.mp3",
+  "musikLaut": 0.15,
+  "geraeusche": 0.6,
+  "uebergang": "panel",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "comic-banner",
+      "dach": "Ein Werkzeug für alles",
+      "text": "Torwart, Athletik, Taktik? *Alles drin.*",
+      "dauer": 3.8,
+      "sprecher": "Torwart, Athletik, Taktik? Alles drin.",
+      "sprecherAb": 1.6
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-265",
+      "schritte": 2,
+      "tempo": 2.0,
+      "dach": "Torwart",
+      "uebergang": "panel",
+      "sprecher": "Vom Torwarttraining …",
+      "sprecherAb": 0.8
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-292",
+      "schritte": 4,
+      "tempo": 2.0,
+      "dach": "Athletik",
+      "uebergang": "knall",
+      "sprecher": "… über Athletik …",
+      "sprecherAb": 0.8
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-129",
+      "schritte": 2,
+      "tempo": 3.4,
+      "dach": "Spielform",
+      "uebergang": "pinsel",
+      "sprecher": "… bis zur Spielform mit Ausdauer.",
+      "sprecherAb": 0.8
+    },
+    {
+      "typ": "punkte",
+      "ton": "neon",
+      "titel": [
+        "In jeder",
+        "Übung"
+      ],
+      "punkte": [
+        "Ablauf als Animation",
+        "Coaching-Punkte",
+        "Steigerungen"
+      ],
+      "uebergang": "raster",
+      "sprecher": "Jede Übung läuft animiert, mit Coaching-Punkten und Steigerungen, von mir auf Deutsch erklärt.",
+      "sprecherAb": 0.5
+    },
+    {
+      "typ": "hook",
+      "ton": "dunkel",
+      "zeilen": [
+        "Dein Training.",
+        "*Fertig erklärt.*"
+      ],
+      "dauer": 2.2,
+      "takt": 0.3,
+      "uebergang": "knall",
+      "sprecher": "Dein Training, fertig erklärt."
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "blende",
+      "sprecher": "Trainingskern. Jetzt ausprobieren auf trainingskern Punkt D E.",
+      "sprecherAb": 0.4,
+      "dauer": 4.2
+    }
+  ]
+}

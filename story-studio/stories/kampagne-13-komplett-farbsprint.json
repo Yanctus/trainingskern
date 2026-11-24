@@ -1,0 +1,49 @@
+{
+  "titel": "Übung komplett: Hürde, Leiter, Farbsprint",
+  "intro": false,
+  "musik": "ton/musik-elektro-4.mp3",
+  "musikLaut": 0.14,
+  "geraeusche": 0.6,
+  "uebergang": "raster",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "comic-megafon",
+      "dauer": 3.5,
+      "sprecher": "Kopf an, Beine los!",
+      "sprecherAb": 1.1,
+      "zeilen": [
+        "Kopf an,",
+        "*Beine los!*"
+      ]
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-207",
+      "stimme": true,
+      "dach": "So läuft’s"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-207",
+      "stimme": true,
+      "fassung": 1,
+      "uebergang": "pinsel"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-207",
+      "stimme": true,
+      "fassung": 2,
+      "uebergang": "knall"
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "blende",
+      "sprecher": "Trainingskern. Jetzt ausprobieren auf trainingskern Punkt D E.",
+      "sprecherAb": 0.4,
+      "dauer": 4.2
+    }
+  ]
+}
