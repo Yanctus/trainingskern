@@ -1,0 +1,892 @@
+{
+ "title": "Sechser schützt die Abwehr",
+ "code": "UE-412",
+ "kind": "Spielform",
+ "focuses": [
+  "Verteidigen",
+  "Umschalten",
+  "Passspiel"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 13,
+ "players_max": 13,
+ "field_size": "25 x 45 m",
+ "description": "Ein Rondo vier gegen drei mit Ausbruch nach vorn. Team Rot hält im Rondo den Ball, der Torwart spielt mit, und sucht den Pass auf eine der drei Spitzen in der anderen Hälfte. Der Sechser von Team Neon steht auf der Mittellinie und macht die Passwege nach vorn zu. Erobert Team Neon den Ball im Rondo, dribbelt es hinaus und bekommt einen Punkt.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 25 mal 45 Metern mit Mittellinie und einem großen Tor auf jeder Seite. In der eigenen Hälfte liegt an der Mittellinie ein Rondo-Feld von 14 mal 14 Metern. Von seinen vorderen Ecken laufen zwei Linien schräg zur Seitenlinie.",
+  "Verteilen: Im Rondo spielen drei Spieler von Team Rot mit ihrem Torwart gegen zwei von Team Neon. Der Sechser von Team Neon steht auf der Mittellinie. In der anderen Hälfte stehen drei Spitzen von Team Rot gegen zwei Verteidiger und einen Torwart. Der Trainer steht mit Bällen an der Mittellinie.",
+  "Ablauf: Team Rot lässt den Ball im Rondo laufen und sucht den Pass auf eine Spitze. Kommt er durch, greifen die Spitzen drei gegen zwei aufs Tor an. Der Sechser bleibt auf der Mittellinie und fängt die Pässe nach vorn ab.",
+  "Wertung: Ein Treffer gibt einen Punkt für Team Rot. Erobert Team Neon den Ball im Rondo und dribbelt hinaus, gibt das einen Punkt für Team Neon. Gewinnen die Verteidiger hinten den Ball, spielen sie ihn ins Rondo, und dort wird hinausgedribbelt. Danach spielt der Trainer einen neuen Ball ins Rondo."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Kopf hoch, wo stehen die Spitzen?",
+  "Zwischen zwei Passwegen stehen",
+  "Den Pass lesen und früh dazwischen",
+  "Ball gewonnen? Sofort raus aus dem Rondo"
+ ],
+ "materials": [
+  "2 große Tore",
+  "6 Hütchen",
+  "Leibchen in zwei Farben",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Sechser schützt die Abwehr. Ein Rondo vier gegen drei, und vorn warten drei Spitzen. Unser Sechser steht auf der Mittellinie und macht die Passwege nach vorn zu.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 9,
+    "y": 4,
+    "w": 80,
+    "h": 47
+   },
+   {
+    "type": "line",
+    "x1": 49,
+    "y1": 4,
+    "x2": 49,
+    "y2": 51,
+    "dashed": false
+   },
+   {
+    "type": "rect",
+    "x": 9,
+    "y": 11,
+    "w": 14,
+    "h": 33
+   },
+   {
+    "type": "rect",
+    "x": 75,
+    "y": 11,
+    "w": 14,
+    "h": 33
+   },
+   {
+    "type": "zone",
+    "x": 25,
+    "y": 15.75,
+    "w": 24,
+    "h": 23.5,
+    "color": "orange"
+   },
+   {
+    "type": "line",
+    "x1": 49,
+    "y1": 15.75,
+    "x2": 60.2,
+    "y2": 4,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 49,
+    "y1": 39.25,
+    "x2": 60.2,
+    "y2": 51,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 9,
+    "y": 27.5,
+    "side": "left",
+    "size": "gross"
+   },
+   {
+    "x": 89,
+    "y": 27.5,
+    "side": "right",
+    "size": "gross"
+   }
+  ],
+  "cones": [
+   {
+    "x": 25,
+    "y": 15.75,
+    "color": "orange"
+   },
+   {
+    "x": 25,
+    "y": 39.25,
+    "color": "orange"
+   },
+   {
+    "x": 49,
+    "y": 15.75,
+    "color": "orange"
+   },
+   {
+    "x": 49,
+    "y": 39.25,
+    "color": "orange"
+   },
+   {
+    "x": 60.2,
+    "y": 4,
+    "color": "orange"
+   },
+   {
+    "x": 60.2,
+    "y": 51,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 83,
+    "y": 27.5,
+    "label": "TW"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 73,
+    "y": 27.5,
+    "label": "9"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 64.5,
+    "y": 19,
+    "label": "4"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 64.5,
+    "y": 36,
+    "label": "5"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 56,
+    "y": 8,
+    "label": "11"
+   },
+   {
+    "id": "r17",
+    "team": "b",
+    "x": 56,
+    "y": 46.5,
+    "label": "17"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 50,
+    "y": 27.5,
+    "label": "6"
+   },
+   {
+    "id": "r16",
+    "team": "b",
+    "x": 41.7,
+    "y": 19,
+    "label": "16"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 41.7,
+    "y": 35.5,
+    "label": "7"
+   },
+   {
+    "id": "r18",
+    "team": "b",
+    "x": 33.4,
+    "y": 16.5,
+    "label": "18"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 33.4,
+    "y": 32.5,
+    "label": "8"
+   },
+   {
+    "id": "r1",
+    "team": "b",
+    "x": 24.5,
+    "y": 22,
+    "label": "TW"
+   },
+   {
+    "id": "r14",
+    "team": "b",
+    "x": 25,
+    "y": 38.5,
+    "label": "14"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 46,
+    "y": 55.3,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 25.1,
+    "y": 22.6
+   },
+   {
+    "id": "s1",
+    "x": 42.5,
+    "y": 55.8
+   },
+   {
+    "id": "s2",
+    "x": 49.5,
+    "y": 55.8
+   }
+  ],
+  "dims": [
+   {
+    "x1": 9,
+    "y1": 58.6,
+    "x2": 89,
+    "y2": 58.6,
+    "text": "45 m"
+   }
+  ],
+  "steps": [
+   {
+    "label": "Im Rondo läuft der Ball",
+    "say": "Im Rondo hat Team Rot den Ball, vier gegen drei, der Torwart spielt mit. Er spielt zu Spieler achtzehn, und Spieler acht läuft sofort an. Spieler sechs bleibt auf der Mittellinie und schiebt mit zur Ballseite.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       34.0,
+       17.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n8",
+      "to": [
+       30.5,
+       24.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n6",
+      "to": [
+       50,
+       22
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Aufdrehen und steil nach vorn",
+    "say": "Spieler achtzehn legt kurz zu Spieler sechzehn. Der dreht auf und spielt sofort steil auf Spieler siebzehn. Spieler sechs stand zu weit auf der Ballseite, der Weg war frei.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       42.3,
+       19.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r16",
+      "to": [
+       56,
+       46.5
+      ],
+      "type": "dreh",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       56.6,
+       47.1
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Drei gegen zwei: Punkt",
+    "say": "Jetzt geht es drei gegen zwei aufs Tor. Spieler siebzehn zieht los und legt quer auf Spieler neun. Der schießt, und das gibt einen Punkt für Team Rot.",
+    "moves": [
+     {
+      "who": "r17",
+      "to": [
+       68,
+       47
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n5",
+      "to": [
+       66,
+       42.5
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n4",
+      "to": [
+       70,
+       24
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       73.6,
+       28.1
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       84,
+       31
+      ],
+      "type": "lauf",
+      "delay": 1.2
+     },
+     {
+      "who": "b1",
+      "to": [
+       88.5,
+       23.5
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Ball erobert, rausgedribbelt: Punkt",
+    "say": "Der Trainer spielt den nächsten Ball zu Spieler vierzehn. Der will steil spielen, aber Spieler acht liest den Pass und geht dazwischen. Er dribbelt aus dem Rondo, und das gibt einen Punkt für Team Neon. Danach kommt der nächste Ball vom Trainer, wieder zu Team Rot.",
+    "moves": [
+     {
+      "who": "s1",
+      "to": [
+       25.6,
+       39.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n8",
+      "to": [
+       33.3,
+       28.8
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "s1",
+      "to": [
+       33.9,
+       29.4
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       31,
+       44
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "s1"
+     }
+    ]
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Zwei Passwege auf einmal zustellen.",
+   "title": "Zwei Passwege zustellen",
+   "text": "Spieler sechs schaut immer wieder über die Schulter, wo die Spitzen stehen. Dann stellt er sich auf der Mittellinie so hin, dass er zwei Passwege auf einmal zumacht. Wer trotzdem spielt, spielt ihm den Ball in die Füße. Den Ball gibt er sofort ins Rondo, und dort wird hinausgedribbelt.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 83,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 73,
+      "y": 27.5,
+      "label": "9"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 64.5,
+      "y": 19,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 64.5,
+      "y": 36,
+      "label": "5"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 56,
+      "y": 8,
+      "label": "11"
+     },
+     {
+      "id": "r17",
+      "team": "b",
+      "x": 56,
+      "y": 46.5,
+      "label": "17"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 50,
+      "y": 27.5,
+      "label": "6"
+     },
+     {
+      "id": "r16",
+      "team": "b",
+      "x": 41.7,
+      "y": 19,
+      "label": "16"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 41.7,
+      "y": 35.5,
+      "label": "7"
+     },
+     {
+      "id": "r18",
+      "team": "b",
+      "x": 33.4,
+      "y": 16.5,
+      "label": "18"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 33.4,
+      "y": 32.5,
+      "label": "8"
+     },
+     {
+      "id": "r1",
+      "team": "b",
+      "x": 24.5,
+      "y": 22,
+      "label": "TW"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 25,
+      "y": 38.5,
+      "label": "14"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 46,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 42.3,
+      "y": 19.6
+     },
+     {
+      "id": "s1",
+      "x": 42.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 49.5,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Kopf hoch, wo stehen die Spitzen?",
+      "say": "Spieler sechzehn hat den Ball vorn im Rondo. Bevor er spielt, schaut Spieler sechs über die Schulter. Wo steht Spieler elf, wo Spieler neun?",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         73,
+         27.5
+        ],
+        "type": "blick",
+        "von": [
+         56,
+         8
+        ],
+        "dauer": 1.3
+       }
+      ]
+     },
+     {
+      "label": "Zwischen zwei Passwegen stehen",
+      "say": "Spieler sechzehn hat zwei Möglichkeiten nach vorn. Spieler sechs schiebt auf der Mittellinie rüber und stellt sich genau dazwischen. Jetzt sind beide Wege zu.",
+      "moves": [
+       {
+        "who": "r16",
+        "to": [
+         56,
+         8
+        ],
+        "type": "option"
+       },
+       {
+        "who": "r16",
+        "to": [
+         73,
+         27.5
+        ],
+        "type": "option"
+       },
+       {
+        "who": "n6",
+        "to": [
+         51,
+         17.5
+        ],
+        "type": "lauf",
+        "delay": 0.8
+       }
+      ]
+     },
+     {
+      "label": "Abgefangen, ab ins Rondo",
+      "say": "Spieler sechzehn spielt trotzdem auf Spieler neun. Spieler sechs macht einen Schritt und hat den Ball. Er spielt sofort ins Rondo zu Spieler sieben. Der dribbelt hinaus, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         51,
+         20.8
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         51.6,
+         21.4
+        ],
+        "type": "pass",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         42.3,
+         36.1
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n7",
+        "to": [
+         40,
+         44
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 9,
+      "y1": 58.6,
+      "x2": 89,
+      "y2": 58.6,
+      "text": "45 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Der Sechser läuft mit zurück.",
+   "title": "Sechser läuft mit zurück",
+   "text": "Kommt der Pass auf eine Spitze durch, darf Spieler sechs die Mittellinie verlassen und hinterher sprinten. Vorn heißt es dann drei gegen drei. Erobert Team Neon dort den Ball, geht er zurück zum Trainer, und das Rondo beginnt neu.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 83,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 73,
+      "y": 27.5,
+      "label": "9"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 64.5,
+      "y": 19,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 64.5,
+      "y": 36,
+      "label": "5"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 56,
+      "y": 8,
+      "label": "11"
+     },
+     {
+      "id": "r17",
+      "team": "b",
+      "x": 56,
+      "y": 46.5,
+      "label": "17"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 50,
+      "y": 27.5,
+      "label": "6"
+     },
+     {
+      "id": "r16",
+      "team": "b",
+      "x": 41.7,
+      "y": 19,
+      "label": "16"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 41.7,
+      "y": 35.5,
+      "label": "7"
+     },
+     {
+      "id": "r18",
+      "team": "b",
+      "x": 33.4,
+      "y": 16.5,
+      "label": "18"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 33.4,
+      "y": 32.5,
+      "label": "8"
+     },
+     {
+      "id": "r1",
+      "team": "b",
+      "x": 24.5,
+      "y": 22,
+      "label": "TW"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 25,
+      "y": 38.5,
+      "label": "14"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 46,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 25.6,
+      "y": 39.1
+     },
+     {
+      "id": "s1",
+      "x": 42.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 49.5,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Der Pass kommt durch",
+      "say": "Diesmal kommt der Pass durch. Spieler vierzehn spielt an der Seite lang auf Spieler siebzehn.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         56.6,
+         47.1
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Spieler sechs sprintet mit zurück",
+      "say": "Jetzt darf Spieler sechs mit. Er sprintet sofort hinter den Ball zurück, und vorn heißt es drei gegen drei. Spieler fünf stellt Spieler siebzehn.",
+      "moves": [
+       {
+        "who": "r17",
+        "to": [
+         65,
+         46.5
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n6",
+        "to": [
+         61,
+         37
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n5",
+        "to": [
+         69.5,
+         47.5
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Abgefangen, zurück zum Trainer",
+      "say": "Spieler siebzehn will nach innen auf Spieler neun spielen. Spieler sechs ist schon da und fängt den Ball ab. Er spielt ihn zurück zum Trainer, und das Rondo beginnt von vorn.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         70,
+         35.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         70.6,
+         36.1
+        ],
+        "type": "pass",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         46.6,
+         55.9
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 9,
+      "y1": 58.6,
+      "x2": 89,
+      "y2": 58.6,
+      "text": "45 m"
+     }
+    ]
+   }
+  }
+ ]
+}

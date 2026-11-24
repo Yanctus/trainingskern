@@ -1,0 +1,870 @@
+{
+ "title": "Viererkette in drei Dritteln",
+ "code": "UE-411",
+ "kind": "Spielform",
+ "focuses": [
+  "Verteidigen",
+  "Umschalten",
+  "Zusammenspiel"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 14,
+ "players_max": 14,
+ "field_size": "35 x 55 m",
+ "description": "Sieben gegen sieben auf einem Feld mit zwei großen Toren. Team Rot baut vom Torwart aus im 2-3-1 auf, Team Neon verteidigt mit einer Viererkette. Zwei gestrichelte Linien teilen das Feld der Länge nach in drei Drittel, daran richtet sich die Kette aus. Sie schiebt gemeinsam zum Ball, lässt das weite Drittel frei, erobert den Ball und kontert aufs andere Tor.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 35 mal 55 Metern mit Mittellinie, zwei Strafräumen und zwei großen Toren. Zwei gestrichelte Linien von Strafraum zu Strafraum teilen das Feld in drei Drittel.",
+  "Verteilen: Team Rot spielt im 2-3-1, Team Neon mit einer Viererkette, einem Mittelfeldspieler und einer Spitze. In jedem Tor steht ein Torwart. Der Trainer steht mit Bällen an der Seitenlinie.",
+  "Ablauf: Der Torwart eröffnet für Team Rot, Team Rot baut auf und greift an. Die Kette schiebt gemeinsam zum Ball und besetzt zwei Drittel, das weite Drittel bleibt frei. Erobert Team Neon den Ball, kontert es sofort aufs andere Tor.",
+  "Wertung: Jeder Treffer gibt einen Punkt für das Team, das trifft. Nach jedem Angriff bringt der Trainer den nächsten Ball zum Torwart von Team Rot."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Das weite Drittel frei lassen, die Mitte bleibt zu",
+  "Rückt ein Innenverteidiger vor, kommt die Spitze zurück",
+  "Innen stehen, kein Pass durch die Mitte",
+  "Nach außen lenken und zu zweit drauf"
+ ],
+ "materials": [
+  "2 große Tore",
+  "Linien oder Hütchen für die Drittel",
+  "Leibchen in zwei Farben",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Viererkette in drei Dritteln. Sieben gegen sieben mit zwei Toren. Team Rot baut von hinten auf, unsere Viererkette schiebt gemeinsam, bleibt eng und kontert nach dem Ballgewinn.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 9,
+    "y": 4,
+    "w": 80,
+    "h": 47
+   },
+   {
+    "type": "line",
+    "x1": 49.0,
+    "y1": 4,
+    "x2": 49.0,
+    "y2": 51,
+    "dashed": false
+   },
+   {
+    "type": "rect",
+    "x": 9,
+    "y": 15.3,
+    "w": 13.899999999999999,
+    "h": 24.400000000000002
+   },
+   {
+    "type": "rect",
+    "x": 75.1,
+    "y": 15.3,
+    "w": 13.900000000000006,
+    "h": 24.400000000000002
+   },
+   {
+    "type": "line",
+    "x1": 22.9,
+    "y1": 15.3,
+    "x2": 75.1,
+    "y2": 15.3,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 22.9,
+    "y1": 39.7,
+    "x2": 75.1,
+    "y2": 39.7,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 9,
+    "y": 27.5,
+    "side": "left",
+    "size": "gross"
+   },
+   {
+    "x": 89,
+    "y": 27.5,
+    "side": "right",
+    "size": "gross"
+   }
+  ],
+  "cones": [],
+  "players": [
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 84.2,
+    "y": 27.5,
+    "label": "TW"
+   },
+   {
+    "id": "r15",
+    "team": "b",
+    "x": 58.6,
+    "y": 19.0,
+    "label": "15"
+   },
+   {
+    "id": "r14",
+    "team": "b",
+    "x": 58.6,
+    "y": 36.0,
+    "label": "14"
+   },
+   {
+    "id": "r18",
+    "team": "b",
+    "x": 49.8,
+    "y": 36.9,
+    "label": "18"
+   },
+   {
+    "id": "r12",
+    "team": "b",
+    "x": 41.0,
+    "y": 7.8,
+    "label": "12"
+   },
+   {
+    "id": "r13",
+    "team": "b",
+    "x": 41.0,
+    "y": 47.2,
+    "label": "13"
+   },
+   {
+    "id": "r19",
+    "team": "b",
+    "x": 29.8,
+    "y": 27.5,
+    "label": "19"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 49.8,
+    "y": 20.0,
+    "label": "9"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 41.0,
+    "y": 25.6,
+    "label": "8"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 29.8,
+    "y": 10.6,
+    "label": "3"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 29.8,
+    "y": 44.4,
+    "label": "2"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 21.0,
+    "y": 19.5,
+    "label": "4"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 21.0,
+    "y": 35.5,
+    "label": "5"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 11.4,
+    "y": 27.5,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 60,
+    "y": 55.3,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 84.8,
+    "y": 28.1
+   },
+   {
+    "id": "s1",
+    "x": 63.5,
+    "y": 55.8
+   },
+   {
+    "id": "s2",
+    "x": 66,
+    "y": 55.8
+   }
+  ],
+  "dims": [
+   {
+    "x1": 9,
+    "y1": 58.6,
+    "x2": 89,
+    "y2": 58.6,
+    "text": "55 m"
+   }
+  ],
+  "steps": [
+   {
+    "label": "Der Torwart eröffnet",
+    "say": "Team Rot baut vom Torwart aus auf. Er spielt flach zu Spieler vierzehn. Vorn läuft Spieler neun ein Stück an, der Rest von Team Neon steht kompakt.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       59.2,
+       36.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n9",
+      "to": [
+       53.0,
+       27.5
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "Raus auf den Flügel, die Kette schiebt",
+    "say": "Spieler vierzehn spielt raus zu Spieler dreizehn. Sofort schiebt die ganze Kette zur Ballseite. Spieler zwei geht drauf, die anderen rücken eng nach, und Spieler acht kommt mit.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       41.6,
+       47.8
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n2",
+      "to": [
+       33.8,
+       46.3
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n5",
+      "to": [
+       23.4,
+       38.8
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "n4",
+      "to": [
+       21.0,
+       28.4
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "n3",
+      "to": [
+       25.8,
+       19.0
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "n8",
+      "to": [
+       37.8,
+       35.0
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "Nach außen lenken, zu zweit drauf",
+    "say": "Spieler zwei lässt ihn nicht nach innen. Spieler dreizehn muss an der Linie entlang, und da wartet schon Spieler acht. Zu zweit holen sie den Ball.",
+    "moves": [
+     {
+      "who": "r13",
+      "to": [
+       32.2,
+       49.1
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n2",
+      "to": [
+       28.2,
+       46.3
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n8",
+      "to": [
+       34.6,
+       43.0
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       35.2,
+       43.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Schnell nach vorn: Punkt",
+    "say": "Jetzt schnell nach vorn. Spieler neun startet in den Raum hinter Spieler vierzehn, und Spieler acht spielt ihn sofort an. Er schießt flach ins Eck, und das gibt einen Punkt für Team Neon. Danach bringt der Trainer den nächsten Ball zum Torwart von Team Rot.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       74.6,
+       40.7
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       75.2,
+       41.3
+      ],
+      "type": "pass",
+      "delay": 0.6
+     },
+     {
+      "who": "b1",
+      "to": [
+       88.5,
+       31.3
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Das weite Drittel bleibt frei.",
+   "title": "Das weite Drittel frei",
+   "text": "Ist der Ball außen, schiebt die Kette so weit rüber, dass sie zwei Drittel besetzt. Das dritte Drittel bleibt leer, und der Flügelspieler dort ist frei. Das ist gewollt, so bleibt die Mitte zu. Der Außenverteidiger auf der anderen Seite schaut immer wieder nach ihm.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 84.2,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "r15",
+      "team": "b",
+      "x": 58.6,
+      "y": 19.0,
+      "label": "15"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 58.6,
+      "y": 36.0,
+      "label": "14"
+     },
+     {
+      "id": "r18",
+      "team": "b",
+      "x": 49.8,
+      "y": 36.9,
+      "label": "18"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 41.0,
+      "y": 7.8,
+      "label": "12"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 41.0,
+      "y": 47.2,
+      "label": "13"
+     },
+     {
+      "id": "r19",
+      "team": "b",
+      "x": 29.8,
+      "y": 27.5,
+      "label": "19"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 49.8,
+      "y": 20.0,
+      "label": "9"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 41.0,
+      "y": 25.6,
+      "label": "8"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 29.8,
+      "y": 10.6,
+      "label": "3"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 29.8,
+      "y": 44.4,
+      "label": "2"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 21.0,
+      "y": 19.5,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 21.0,
+      "y": 35.5,
+      "label": "5"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 11.4,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 60,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 59.2,
+      "y": 19.6
+     },
+     {
+      "id": "s1",
+      "x": 63.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 66,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Ball auf den Flügel, Kette schiebt",
+      "say": "Der Ball geht raus zu Spieler zwölf. Die ganze Kette schiebt mit. Spieler drei geht drauf, und Spieler zwei rückt bis ins mittlere Drittel ein.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         41.6,
+         8.4
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n3",
+        "to": [
+         33.8,
+         9.2
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n4",
+        "to": [
+         23.4,
+         17.2
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "n5",
+        "to": [
+         21.8,
+         26.6
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "n2",
+        "to": [
+         25.8,
+         35.0
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "n8",
+        "to": [
+         37.8,
+         16.2
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Das weite Drittel bleibt frei",
+      "say": "Ganz drüben steht Spieler dreizehn jetzt frei. Das lassen wir zu. Spieler zwei bleibt eng bei der Kette und schaut über die Schulter, wo Spieler dreizehn steht.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         41.0,
+         47.2
+        ],
+        "type": "blick"
+       }
+      ]
+     },
+     {
+      "label": "Zu zweit drauf, Ball erobert",
+      "say": "Spieler zwölf will an der Linie vorbei. Spieler drei lässt ihn nicht nach innen, und Spieler acht kommt dazu. Zu zweit holen sie den Ball, bevor der lange Ball rüber kommt.",
+      "moves": [
+       {
+        "who": "r12",
+        "to": [
+         36.2,
+         5.9
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n8",
+        "to": [
+         37.0,
+         11.5
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "b1",
+        "to": [
+         34.4,
+         9.8
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 9,
+      "y1": 58.6,
+      "x2": 89,
+      "y2": 58.6,
+      "text": "55 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Rückt ein Innenverteidiger vor, kommt die Spitze zurück.",
+   "title": "Spitze lässt sich fallen",
+   "text": "Dribbelt ein Innenverteidiger von Team Rot ins Mittelfeld, hat Team Rot dort einen Spieler mehr. Dann lässt sich Spieler neun fallen und stellt sich neben Spieler acht. Hinten stehen vier, davor zwei. Die beiden stehen innen und machen den Pass durch die Mitte zu.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 84.2,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "r15",
+      "team": "b",
+      "x": 58.6,
+      "y": 19.0,
+      "label": "15"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 58.6,
+      "y": 36.0,
+      "label": "14"
+     },
+     {
+      "id": "r18",
+      "team": "b",
+      "x": 49.8,
+      "y": 36.9,
+      "label": "18"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 41.0,
+      "y": 7.8,
+      "label": "12"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 41.0,
+      "y": 47.2,
+      "label": "13"
+     },
+     {
+      "id": "r19",
+      "team": "b",
+      "x": 29.8,
+      "y": 27.5,
+      "label": "19"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 49.8,
+      "y": 20.0,
+      "label": "9"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 41.0,
+      "y": 25.6,
+      "label": "8"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 29.8,
+      "y": 10.6,
+      "label": "3"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 29.8,
+      "y": 44.4,
+      "label": "2"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 21.0,
+      "y": 19.5,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 21.0,
+      "y": 35.5,
+      "label": "5"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 11.4,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 60,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 59.2,
+      "y": 36.6
+     },
+     {
+      "id": "s1",
+      "x": 63.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 66,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Innenverteidiger rückt ins Mittelfeld",
+      "say": "Jetzt ändert Team Rot den Aufbau. Spieler vierzehn dribbelt aus der Abwehr ins Mittelfeld, Spieler achtzehn macht ihm Platz. Im Mittelfeld hat Team Rot jetzt einen Spieler mehr.",
+      "moves": [
+       {
+        "who": "r18",
+        "to": [
+         49.0,
+         43.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r14",
+        "to": [
+         47.4,
+         33.1
+        ],
+        "type": "dribbling",
+        "delay": 0.3,
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Spieler neun lässt sich fallen",
+      "say": "Spieler neun sieht das und lässt sich fallen. Er stellt sich neben Spieler acht. Jetzt stehen vier hinten und zwei davor, und der Ball bleibt vor uns.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         37.8,
+         32.2
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n8",
+        "to": [
+         37.8,
+         22.8
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Innen stehen, Pass abgefangen",
+      "say": "Spieler vierzehn will durch die Mitte auf Spieler neunzehn spielen. Spieler neun steht innen, macht einen Schritt in den Passweg und fängt den Ball ab.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         38.6,
+         30.3
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "b1",
+        "to": [
+         39.2,
+         30.9
+        ],
+        "type": "pass",
+        "delay": 0.3
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 9,
+      "y1": 58.6,
+      "x2": 89,
+      "y2": 58.6,
+      "text": "55 m"
+     }
+    ]
+   }
+  }
+ ]
+}
