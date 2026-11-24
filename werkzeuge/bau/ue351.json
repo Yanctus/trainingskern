@@ -1,0 +1,929 @@
+{
+ "title": "Aufbau gegen zwei Spitzen",
+ "code": "UE-351",
+ "kind": "Spielform",
+ "focuses": [
+  "Zusammenspiel",
+  "Passspiel",
+  "Umschalten"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 14,
+ "players_max": 16,
+ "field_size": "25 x 45 m",
+ "description": "Team Neon baut mit Torwart und Viererkette gegen zwei Stürmer von Team Rot auf. Ziel ist der Springer in der Mitte, der in eine der beiden Außenzonen verlagert. Dort greifen Außenverteidiger und Flügelspieler zu zweit gegen zwei Verteidiger an und schließen auf ein Minitor ab. Pro Angriff gibt es nur eine Verlagerung.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 25 mal 45 Metern. An einem Ende steht ein großes Tor mit Strafraum, am anderen Ende zwei Minitore. Davor sind außen zwei Zonen abgesteckt, eine gestrichelte Linie markiert ihren Anfang.",
+  "Verteilen: Team Neon mit Torwart, Viererkette und zwei Flügelspielern, in der Mitte ein Springer. Team Rot presst mit zwei Stürmern, in jeder Außenzone verteidigen zwei Spieler. Der Trainer steht mit Bällen an der Seitenlinie.",
+  "Ablauf: Der Torwart eröffnet, Team Neon spielt sich gegen die zwei Stürmer frei und findet den Springer. Der verlagert in eine Außenzone, und ein Außenverteidiger kommt zum Flügelspieler. Erobert Team Rot den Ball, spielt es mit dem Springer und kontert aufs große Tor.",
+  "Wertung: Ein Treffer ins Minitor gibt einen Punkt für Team Neon, ein Treffer ins große Tor gibt einen Punkt für Team Rot. Jeder Angriff beginnt wieder beim Torwart."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Breit machen und gute Passwinkel anbieten",
+  "Stehen die Spitzen weit auseinander, flach durch zum Springer",
+  "Außen zu zweit schnell kombinieren",
+  "Nichts frei? Zurückspielen und neu aufbauen"
+ ],
+ "materials": [
+  "1 großes Tor",
+  "2 Minitore",
+  "Hütchen für die Zonen",
+  "Leibchen in drei Farben",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Aufbau gegen zwei Spitzen. Team Neon spielt sich vom Torwart aus gegen zwei Stürmer frei, verlagert über den Springer und greift außen zu zweit an.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 9,
+    "y": 4,
+    "w": 80,
+    "h": 47
+   },
+   {
+    "type": "line",
+    "x1": 60.3,
+    "y1": 4,
+    "x2": 60.3,
+    "y2": 51,
+    "dashed": false
+   },
+   {
+    "type": "circle",
+    "x": 60.3,
+    "y": 27.5,
+    "r": 7.3
+   },
+   {
+    "type": "rect",
+    "x": 9,
+    "y": 12.5,
+    "w": 16,
+    "h": 29.5
+   },
+   {
+    "type": "rect",
+    "x": 9,
+    "y": 20,
+    "w": 5.7,
+    "h": 15
+   },
+   {
+    "type": "line",
+    "x1": 43.4,
+    "y1": 4,
+    "x2": 43.4,
+    "y2": 51,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 43.4,
+    "y1": 16.2,
+    "x2": 81,
+    "y2": 16.2,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 43.4,
+    "y1": 38.3,
+    "x2": 81,
+    "y2": 38.3,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 81,
+    "y1": 4,
+    "x2": 81,
+    "y2": 16.2,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 81,
+    "y1": 38.3,
+    "x2": 81,
+    "y2": 51,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 9,
+    "y": 27.5,
+    "side": "left",
+    "size": "gross"
+   },
+   {
+    "x": 81,
+    "y": 10,
+    "side": "right"
+   },
+   {
+    "x": 81,
+    "y": 44.6,
+    "side": "right"
+   }
+  ],
+  "cones": [],
+  "players": [
+   {
+    "id": "n1",
+    "team": "a",
+    "x": 12,
+    "y": 27.5,
+    "label": "TW"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 21,
+    "y": 22.5,
+    "label": "6"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 21,
+    "y": 38.5,
+    "label": "5"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 22,
+    "y": 6.5,
+    "label": "3"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 40,
+    "y": 48,
+    "label": "2"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 57,
+    "y": 12,
+    "label": "11"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 54,
+    "y": 48.2,
+    "label": "7"
+   },
+   {
+    "id": "f",
+    "team": "t",
+    "x": 50,
+    "y": 31,
+    "label": "F"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 31,
+    "y": 19.5,
+    "label": "10"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 31,
+    "y": 36,
+    "label": "9"
+   },
+   {
+    "id": "r14",
+    "team": "b",
+    "x": 66,
+    "y": 6,
+    "label": "14"
+   },
+   {
+    "id": "r12",
+    "team": "b",
+    "x": 76,
+    "y": 15,
+    "label": "12"
+   },
+   {
+    "id": "r13",
+    "team": "b",
+    "x": 74.6,
+    "y": 41.6,
+    "label": "13"
+   },
+   {
+    "id": "r15",
+    "team": "b",
+    "x": 63.6,
+    "y": 48,
+    "label": "15"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 30,
+    "y": 55.3,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 12.6,
+    "y": 28.1
+   },
+   {
+    "id": "s1",
+    "x": 33.5,
+    "y": 55.8
+   },
+   {
+    "id": "s2",
+    "x": 36,
+    "y": 55.8
+   }
+  ],
+  "steps": [
+   {
+    "label": "Torwart eröffnet",
+    "say": "Der Torwart beginnt. Er spielt flach zu Spieler fünf. Spieler neun läuft sofort an.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       21.6,
+       39.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r9",
+      "to": [
+       27,
+       34
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     }
+    ]
+   },
+   {
+    "label": "Raus auf Spieler zwei",
+    "say": "Spieler fünf spielt weiter nach außen auf Spieler zwei. Auf der anderen Seite schiebt Spieler drei schon nach vorn.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       40.6,
+       48.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n3",
+      "to": [
+       44,
+       10
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Der Springer zeigt sich",
+    "say": "Der Springer kommt dem Ball entgegen und schaut zu Spieler zwei. Der spielt ihn flach an.",
+    "moves": [
+     {
+      "who": "f",
+      "to": [
+       40,
+       48
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       31.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Verlagern auf die andere Seite",
+    "say": "Jetzt geht der Blick rüber. Der Springer dreht auf und verlagert auf Spieler drei, der an der Außenzone ankommt.",
+    "moves": [
+     {
+      "who": "f",
+      "to": [
+       44.2,
+       10.8
+      ],
+      "type": "blick",
+      "von": [
+       39.4,
+       49.1
+      ],
+      "dauer": 1.3
+     },
+     {
+      "who": "f",
+      "to": [
+       44,
+       10
+      ],
+      "type": "dreh",
+      "delay": 0.4
+     },
+     {
+      "who": "b1",
+      "to": [
+       44.6,
+       10.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Doppelpass in der Außenzone",
+    "say": "Zwei gegen zwei in der Außenzone. Spieler drei spielt auf Spieler elf und startet an Spieler vierzehn vorbei. Spieler elf legt in den Lauf.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       57.6,
+       12.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r14",
+      "to": [
+       61,
+       13
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n3",
+      "to": [
+       55,
+       5
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n3",
+      "to": [
+       68,
+       6
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       68.6,
+       6.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Abschluss: Punkt",
+    "say": "Spieler drei schiebt ins Minitor, und das gibt einen Punkt für Team Neon. Danach beginnt der Torwart mit dem nächsten Ball.",
+    "moves": [
+     {
+      "who": "r12",
+      "to": [
+       76,
+       12
+      ],
+      "type": "lauf",
+      "delay": 0.1
+     },
+     {
+      "who": "b1",
+      "to": [
+       80.4,
+       9.4
+      ],
+      "type": "pass"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 9,
+    "y1": 58.6,
+    "x2": 89,
+    "y2": 58.6,
+    "text": "45 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Außen zu zweit schnell kombinieren.",
+   "title": "Zu zweit über außen",
+   "text": "In der Außenzone heißt es zwei gegen zwei. Wer lange dribbelt, verliert den Ball. Schneller geht es mit einem Doppelpass und einem Lauf hinter den Mitspieler. Das Timing muss stimmen: Der Pass kommt, wenn der Läufer schon unterwegs ist.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 12,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 21,
+      "y": 22.5,
+      "label": "6"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 21,
+      "y": 38.5,
+      "label": "5"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 22,
+      "y": 6.5,
+      "label": "3"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 50,
+      "y": 46,
+      "label": "2"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 57,
+      "y": 12,
+      "label": "11"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 69,
+      "y": 40,
+      "label": "7"
+     },
+     {
+      "id": "f",
+      "team": "t",
+      "x": 48,
+      "y": 29,
+      "label": "F"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 31,
+      "y": 19.5,
+      "label": "10"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 31,
+      "y": 36,
+      "label": "9"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 66,
+      "y": 6,
+      "label": "14"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 76,
+      "y": 15,
+      "label": "12"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 79,
+      "y": 44,
+      "label": "13"
+     },
+     {
+      "id": "r15",
+      "team": "b",
+      "x": 59,
+      "y": 37,
+      "label": "15"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 30,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 46.6
+     },
+     {
+      "id": "s1",
+      "x": 33.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 36,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Pass auf Spieler sieben",
+      "say": "Spieler zwei hat den Ball am Anfang der Außenzone. Er spielt auf Spieler sieben und läuft sofort außen hinter ihm vorbei.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         69.6,
+         40.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r13",
+        "to": [
+         75,
+         42
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n2",
+        "to": [
+         64,
+         49.5
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n2",
+        "to": [
+         76,
+         49.5
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Kopf hoch, in den Lauf",
+      "say": "Spieler sieben schaut hoch und sieht Spieler zwei kommen. Er spielt ihm den Ball in den Lauf, an Spieler dreizehn vorbei.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         76,
+         49.5
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         76.6,
+         50.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Abschluss: Punkt",
+      "say": "Spieler zwei nimmt mit und schiebt ins Minitor, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         80.4,
+         45.2
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 9,
+      "y1": 58.6,
+      "x2": 89,
+      "y2": 58.6,
+      "text": "45 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Stehen die Spitzen weit auseinander, geht der Ball durch die Lücke.",
+   "title": "Durch die Lücke zum Springer",
+   "text": "Laufen die beiden Stürmer die Innenverteidiger an, wird es zwischen ihnen frei. Dann spielt der Torwart flach durch die Lücke auf den Springer. Der dreht auf und bringt den Ball sofort nach außen, bevor Team Rot sich ordnet.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 12,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 14,
+      "y": 8,
+      "label": "6"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 14,
+      "y": 47,
+      "label": "5"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 34,
+      "y": 6,
+      "label": "3"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 40,
+      "y": 49,
+      "label": "2"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 57,
+      "y": 12,
+      "label": "11"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 54,
+      "y": 48.2,
+      "label": "7"
+     },
+     {
+      "id": "f",
+      "team": "t",
+      "x": 46,
+      "y": 27.5,
+      "label": "F"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 24,
+      "y": 17,
+      "label": "10"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 24,
+      "y": 38,
+      "label": "9"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 66,
+      "y": 6,
+      "label": "14"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 76,
+      "y": 15,
+      "label": "12"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 74.6,
+      "y": 41.6,
+      "label": "13"
+     },
+     {
+      "id": "r15",
+      "team": "b",
+      "x": 63.6,
+      "y": 48,
+      "label": "15"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 30,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 12.6,
+      "y": 28.1
+     },
+     {
+      "id": "s1",
+      "x": 33.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 36,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Die Spitzen gehen weit raus",
+      "say": "Spieler zehn und Spieler neun laufen die Innenverteidiger an. Zwischen ihnen wird es weit. Der Torwart sieht die Lücke.",
+      "moves": [
+       {
+        "who": "r10",
+        "to": [
+         21,
+         12
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r9",
+        "to": [
+         21,
+         43
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n1",
+        "to": [
+         33.0,
+         27.5
+        ],
+        "type": "blick",
+        "delay": 0.6
+       }
+      ]
+     },
+     {
+      "label": "Flach durch die Lücke",
+      "say": "Der Springer schaut zum Torwart, und der spielt flach und scharf durch die Lücke.",
+      "moves": [
+       {
+        "who": "f",
+        "to": [
+         25.0,
+         27.5
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         46.6,
+         28.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Aufdrehen und nach außen",
+      "say": "Der Springer dreht auf und spielt sofort nach außen zu Spieler elf. Die zwei Stürmer sind überspielt, und vorn geht es zwei gegen zwei.",
+      "moves": [
+       {
+        "who": "f",
+        "to": [
+         58.2,
+         10.4
+        ],
+        "type": "blick",
+        "von": [
+         25.0,
+         27.5
+        ],
+        "dauer": 1.3
+       },
+       {
+        "who": "f",
+        "to": [
+         57,
+         12
+        ],
+        "type": "dreh",
+        "delay": 0.4
+       },
+       {
+        "who": "b1",
+        "to": [
+         57.6,
+         12.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n3",
+        "to": [
+         48,
+         5
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 9,
+      "y1": 58.6,
+      "x2": 89,
+      "y2": 58.6,
+      "text": "45 m"
+     }
+    ]
+   }
+  }
+ ]
+}
