@@ -26,7 +26,7 @@ ZY0, ZY1 = 31.8, 39.6
 LINES = [rect(23, 4, 54, 48), rect(32.5, 4, 35, 13), rect(41.2, 4, 17.6, 5.2), line(23, ZY0, 77, ZY0), line(23, ZY1, 77, ZY1)]
 BAHNEN = [line(41, 4, 41, 52), line(59, 4, 59, 52)]
 TORE = [{"x": 50, "y": 4, "side": "top", "size": "gross"}, {"x": 30, "y": 52, "side": "bottom"}, {"x": 70, "y": 52, "side": "bottom"}]
-CONES = [C(23, ZY0), C(77, ZY0), C(23, ZY1), C(77, ZY1)]
+CONES = [C(21.5, ZY0), C(78.5, ZY0), C(21.5, ZY1), C(78.5, ZY1)]
 DIMS = dims(23, 77, 4, 52, "45 m", "40 m", rx=92)
 BT = [50.6, 56.1]
 F = P("f", "t", 75.5, 13, "F")
@@ -36,7 +36,7 @@ u = {"title": "Flügel und Spitze im 3 gegen 3", "code": "UE-383", "kind": "Spie
  "altersbereiche": ["U15-U17"], "duration_minutes": 15, "players_min": 7, "players_max": 12,
  "field_size": "45 x 40 m",
  "description": "Drei Angreifer spielen gegen drei Verteidiger auf ein großes Tor mit Torwart. Der Trainer spielt einen Flügelspieler in einer Zone an, der sofort auf die Abwehr zudribbelt. Mit Läufen der Spitze und Kombinationen über den Flügel spielen sich die Angreifer zum Abschluss. Erobert Team Rot den Ball, kontert es auf zwei Minitore.",
- "organisation": ["Aufbauen: Ein Feld von 45 mal 40 Metern mit einem großen Tor und Torwart. An der Linie gegenüber stehen zwei Minitore in den Ecken. Etwas unterhalb der Mitte markieren vier Hütchen quer durchs Feld eine Zone von 7 Metern Tiefe.",
+ "organisation": ["Aufbauen: Ein Feld von 45 mal 40 Metern mit einem großen Tor und Torwart. An der Linie gegenüber stehen zwei Minitore in den Ecken. Etwas unterhalb der Mitte markieren gestrichelte Linien und vier Hütchen quer durchs Feld eine Zone von 7 Metern Tiefe.",
   "Verteilen: Team Neon mit drei Angreifern, zwei außen und einer in der Mitte, gegen drei Verteidiger von Team Rot. Weitere Flügelspieler warten außen neben der Zone. Der Trainer steht mit den Bällen in der Mitte zwischen den Minitoren.",
   "Ablauf: Der Trainer spielt einen Flügelspieler in der Zone an. Der dribbelt auf die Abwehr zu, und die drei Angreifer spielen sich bis zum Abschluss durch. Erobert Team Rot den Ball, kontert es sofort auf eines der beiden Minitore.",
   "Wertung und Wechsel: Jeder Treffer gibt einen Punkt, für Team Neon im großen Tor, für Team Rot in einem Minitor. Nach jedem Angriff kommen neue Flügelspieler rein, und der Trainer spielt abwechselnd auf beide Seiten an."],
@@ -49,7 +49,7 @@ u = {"title": "Flügel und Spitze im 3 gegen 3", "code": "UE-383", "kind": "Spie
   "steps": [
    S("Trainer spielt in die Zone", "Der Trainer spielt den Ball zu Spieler sieben in die Zone auf dem Flügel. Ab jetzt läuft das drei gegen drei.",
      ps("b1", [76.1, 36.1])),
-   S("Andribbeln nach innen", "Spieler sieben dribbelt sofort nach innen auf die Abwehr zu. Spieler dreizehn muss raus. Genau jetzt startet Spieler neun schräg hinter ihn, und auf der anderen Seite geht Spieler elf Richtung Tor.",
+   S("Andribbeln nach innen", "Spieler sieben dribbelt sofort nach innen auf die Abwehr zu. Spieler dreizehn muss raus. Genau jetzt startet Spieler neun schräg hinter ihn, und auf der anderen Seite geht Spieler elf mit nach vorn.",
      dr("n7", "b1", [65, 28.5]), mv("r13", [69, 25.5], delay=0.3), mv("n9", [60, 13], delay=0.4), mv("n11", [29, 14], delay=0.4)),
    S("Kopf hoch, Pass in den Lauf", "Spieler sieben nimmt den Kopf hoch, sieht den Lauf und spielt flach in den Raum hinter Spieler dreizehn.",
      bl("n7", [60, 13]), ps("b1", [60.6, 13.6], after=True)),
