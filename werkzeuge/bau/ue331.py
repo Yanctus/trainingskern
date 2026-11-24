@@ -14,7 +14,7 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # derselbe Kegel zu Spieler 6 (bl mit von) und er dreht mit dem Drehpfeil auf. Im Video kein Kegel eingezeichnet.
 T = P("T", "c", 11, 40, "T")
 ERSATZ = [B("s1", 8.5, 45), B("s2", 13.5, 45.5)]
-POS = {"n3": (29, 6), "n11": (13, 6), "n7": (13, 22), "n8": (31, 51), "n9": (40, 12), "n2": (49, 28), "n6": (65, 48.5), "n5": (87, 50)}
+POS = {"n3": (29, 6), "n11": (13, 6), "n7": (13, 22), "n8": (31, 51), "n9": (40, 12), "n2": (49, 28), "n6": (64, 46), "n5": (87, 50)}
 def sp(**k):
     d = dict(POS); d.update(k)
     return [P(i, "a", x, y, i[1:]) for i, (x, y) in d.items()] + [T]
@@ -23,7 +23,7 @@ STANGEN = [(31.5, 11), (31.5, 18), (31.5, 25), (31.5, 32)]
 D_UNTEN, D_OBEN, D_MITTE = (37.2, 42.6), (50.2, 6.1), (61, 36.7)
 HUERDEN = [(46, 49.5), (49, 49.5), (52, 49.5), (55, 49.5)]
 CONES = [C(x, y, shape="stange") for x, y in STANGEN + [D_UNTEN, D_OBEN, D_MITTE]] + [C(x, y, shape="huerde") for x, y in HUERDEN] \
-    + [leiter(68.3, 37, senkrecht=True), C(26, 6, "neon"), C(34.5, 52.5, "neon"), C(71.5, 49.5, "neon"), C(45.5, 30, "neon")]
+    + [leiter(68.3, 37, senkrecht=True), C(26, 6, "neon"), C(34.5, 52.5, "neon"), C(70.5, 49, "neon"), C(45.5, 30, "neon")]
 LINES = [rect(21, 4, 58, 51)]
 TOR = [{"x": 65.9, "y": 4, "side": "top"}]
 DIMS = dims(21, 79, 4, 55, "45 m", "40 m", rx=94)
@@ -71,14 +71,14 @@ u = {"title": "Passzirkel mit Hürden und Leiter", "code": "UE-331", "kind": "Ü
   V("Coaching-Punkt", "Jetzt zum Coaching-Punkt: Offen stehen und mit dem hinteren Fuß annehmen.", "Offen stehen, hinterer Fuß",
     "Spieler zwei steht nicht frontal zum Passgeber, sondern seitlich. So sieht er den Ball und schon das nächste Ziel. Er nimmt mit dem Fuß an, der weiter weg ist, und hat den Ball damit gleich in der neuen Richtung.",
     sp(n3=NACH["n3"], n8=UM_DUMMY[1]), [B("b1", *f(UM_DUMMY[1])), B("b11", *f(POS["n11"])), B("b7", *f(POS["n7"]))] + ERSATZ,
-    [S("Seitlich stehen, zum Ball schauen", "Spieler zwei dreht sich halb auf, Gesicht zum Ball, Schulter Richtung Spieler sechs. Spieler acht spielt flach zu ihm.",
+    [S("Seitlich stehen, zum Ball schauen", "Spieler zwei steht halb offen. Er schaut zum Ball, die Schulter zeigt schon zu Spieler sechs. Spieler acht spielt flach zu ihm.",
        bl("n2", f(UM_DUMMY[1])), ps("b1", f(POS["n2"]), after=True)),
      S("Hinterer Fuß, gleich weiter", "Er nimmt mit dem hinteren Fuß an, der Ball läuft gleich in die neue Richtung. Ein Kontakt zum Aufdrehen, der zweite ist schon der Pass zu Spieler sechs.",
        bl("n2", f(POS["n6"]), von=f(UM_DUMMY[1]), dauer=1.3), drehen("n2", f(POS["n6"]), delay=0.4), ps("b1", f(POS["n6"]), after=True))]),
   V("Coaching-Punkt", "Der zweite Coaching-Punkt: In den Lauf passen.", "In den Lauf passen",
     "Ein Pass in die Füße bremst den Mitspieler. Der Ball kommt dahin, wo er in zwei, drei Schritten sein wird. Dann kann er mit Tempo weiterlaufen oder direkt abschließen.",
     sp(**{**NACH, "n8": (55.5, 52)}), [B("b1", *f(NACH["n2"])), B("b11", *f(POS["n11"])), B("b7", *f(POS["n7"]))] + ERSATZ,
-    [S("Durch die Leiter, Blick zum Ball", "Spieler sechs kommt aus der Leiter. Spieler zwei hat den Ball und wartet nicht, bis er stehen bleibt.",
+    [S("Durch die Leiter", "Spieler sechs kommt aus der Leiter. Spieler zwei hat den Ball und wartet nicht, bis er stehen bleibt.",
        *weg("n6", LEITERWEG[:2])),
      S("Ball in den Lauf: Punkt", "Der Pass geht vor Spieler sechs in den Raum. Er läuft in den Ball und schließt direkt ab, und das gibt einen Punkt für Spieler sechs.",
        mv("n6", list(LEITERWEG[2])), ps("b1", f(LEITERWEG[2])), ps("b1", [65.9, 4.4], after=True))])]}

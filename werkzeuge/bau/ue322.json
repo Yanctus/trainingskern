@@ -1,0 +1,890 @@
+{
+ "title": "Slalom, Pass in den Fuß, Schuss",
+ "code": "UE-322",
+ "kind": "Übungsform",
+ "focuses": [
+  "Torschuss",
+  "Dribbling",
+  "Passspiel"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "tags": [
+  "Vorbereitung"
+ ],
+ "duration_minutes": 15,
+ "players_min": 8,
+ "players_max": 12,
+ "field_size": "25 x 40 m",
+ "description": "Abschluss mit Tempo für die Vorbereitung. Ein Spieler dribbelt durch den Stangenslalom, dreht am Hütchen scharf auf und spielt flach in den Fuß des Mitspielers in der Mitte. Der nimmt den Ball mit einem Kontakt mit, schaut zum Torwart und schließt ab. Die beiden Seiten wechseln sich ab, so läuft die Übung ohne Pause.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 25 mal 40 Metern im letzten Drittel mit Strafraum und Tor. Auf beiden Seiten stehen drei Stangen versetzt für den Slalom, am Ende jeder Bahn ein Hütchen neben dem Strafraum.",
+  "Verteilen: Zwei Teams, je drei Spieler mit Ball an ihrer Slalombahn und einer in der Mitte. Ein neutraler Torwart im Tor. Der Trainer steht mit Ersatzbällen an der Seitenlinie.",
+  "Ablauf: Slalom mit Ball, am Hütchen aufdrehen, flacher Pass in die Mitte. Der Mittelspieler legt sich den Ball vor und schießt. Dann startet die andere Seite.",
+  "Wertung und Wechsel: Jeder Treffer gibt einen Punkt für das Team. Der Schütze holt sich einen neuen Ball und stellt sich an seiner Bahn hinten an, der Passgeber geht in die Mitte."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Enge Kontakte durch die Stangen",
+  "Am Hütchen scharf aufdrehen",
+  "Flach und scharf in den Fuß passen",
+  "Vor dem Schuss zum Torwart schauen"
+ ],
+ "materials": [
+  "1 Tor",
+  "6 Stangen",
+  "2 Hütchen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Slalom, Pass in den Fuß, Schuss. Erst mit Ball durch die Stangen, dann flach in die Mitte, und der Mitspieler schließt ab. Immer im Wechsel, von beiden Seiten.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 9,
+    "y": 4,
+    "w": 80,
+    "h": 47
+   },
+   {
+    "type": "rect",
+    "x": 60.7,
+    "y": 8.9,
+    "w": 28.3,
+    "h": 37.4
+   },
+   {
+    "type": "rect",
+    "x": 79.7,
+    "y": 19,
+    "w": 9.3,
+    "h": 17
+   }
+  ],
+  "goals": [
+   {
+    "x": 89,
+    "y": 27.5,
+    "side": "right",
+    "size": "gross"
+   }
+  ],
+  "cones": [
+   {
+    "x": 30.6,
+    "y": 48.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 38.6,
+    "y": 41,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 46.6,
+    "y": 48.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 30.6,
+    "y": 6.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 38.6,
+    "y": 14,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 46.6,
+    "y": 6.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 68.2,
+    "y": 45.8,
+    "color": "orange"
+   },
+   {
+    "x": 68.2,
+    "y": 8.9,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 19.1,
+    "y": 46.3,
+    "label": "9"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 6,
+    "y": 49,
+    "label": "5"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 20.2,
+    "y": 27.5,
+    "label": "6"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 17,
+    "y": 9.7,
+    "label": "10"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 3,
+    "y": 9,
+    "label": "11"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 11.5,
+    "y": 26.4,
+    "label": "7"
+   },
+   {
+    "id": "k",
+    "team": "t",
+    "x": 85,
+    "y": 27.5,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 30,
+    "y": 55.3,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 19.7,
+    "y": 46.9
+   },
+   {
+    "id": "b5",
+    "x": 6.6,
+    "y": 49.6
+   },
+   {
+    "id": "b10",
+    "x": 17.6,
+    "y": 10.3
+   },
+   {
+    "id": "b11",
+    "x": 3.6,
+    "y": 9.6
+   },
+   {
+    "id": "s1",
+    "x": 33.5,
+    "y": 55.8
+   },
+   {
+    "id": "s2",
+    "x": 36,
+    "y": 55.8
+   }
+  ],
+  "steps": [
+   {
+    "label": "Slalom durch die Stangen",
+    "say": "Spieler neun startet mit Ball. Enge Kontakte, links und rechts an den Stangen vorbei, und mit Tempo raus bis zum Hütchen.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       30.6,
+       44.2
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n9",
+      "to": [
+       38.6,
+       45.3
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n9",
+      "to": [
+       46.6,
+       44.2
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n9",
+      "to": [
+       64.5,
+       44
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Aufdrehen und Pass in die Mitte",
+    "say": "Am Hütchen dreht er scharf auf. Spieler sechs kommt ihm ein paar Schritte entgegen und schaut zum Ball. Flach und scharf in den Fuß.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       36,
+       27.5
+      ],
+      "type": "dreh",
+      "bend": -1
+     },
+     {
+      "who": "n6",
+      "to": [
+       36,
+       27.5
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n6",
+      "to": [
+       53.3,
+       37.5
+      ],
+      "type": "blick",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       36.6,
+       28.1
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Blick zum Torwart, Abschluss",
+    "say": "Spieler sechs legt sich den Ball mit dem ersten Kontakt vor. Kopf hoch, wo steht der Torwart? Dann schießt er flach ins lange Eck.",
+    "moves": [
+     {
+      "who": "n6",
+      "to": [
+       56,
+       26
+      ],
+      "type": "blick",
+      "von": [
+       53.3,
+       37.5
+      ],
+      "dauer": 1.3
+     },
+     {
+      "who": "n6",
+      "to": [
+       50,
+       24
+      ],
+      "type": "dribbling",
+      "delay": 0.4,
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       88.7,
+       33
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Punkt, dann die andere Seite",
+    "say": "Drin, und das gibt einen Punkt für Team Neon. Spieler sechs holt sich einen neuen Ball und stellt sich hinter Spieler fünf an, Spieler neun geht in die Mitte. Und schon startet auf der anderen Seite Spieler zehn.",
+    "moves": [
+     {
+      "who": "n6",
+      "to": [
+       30,
+       34
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n6",
+      "to": [
+       4,
+       42
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n9",
+      "to": [
+       40,
+       36
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n9",
+      "to": [
+       20.2,
+       27.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r10",
+      "to": [
+       30.6,
+       10.8
+      ],
+      "type": "dribbling",
+      "delay": 0.6,
+      "ball": "b10"
+     },
+     {
+      "who": "r10",
+      "to": [
+       38.6,
+       9.7
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b10"
+     },
+     {
+      "who": "r10",
+      "to": [
+       46.6,
+       10.8
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b10"
+     },
+     {
+      "who": "r10",
+      "to": [
+       64.5,
+       11
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b10"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 9,
+    "y1": 58.6,
+    "x2": 89,
+    "y2": 58.6,
+    "text": "40 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Zwei gegen eins mit Hinterlaufen.",
+   "title": "Zwei gegen eins, hinterlaufen",
+   "text": "Ein Verteidiger von Team Rot wartet vor dem Strafraum. Nach seinem Pass in die Mitte hinterläuft der Passgeber den Mitspieler und kommt auf der anderen Seite mit. Der Ballführer dribbelt nach innen, nicht nach außen, dann hat er beide Seiten offen.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 64.5,
+      "y": 44,
+      "label": "9"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 6,
+      "y": 49,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 20.2,
+      "y": 27.5,
+      "label": "6"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 17,
+      "y": 9.7,
+      "label": "10"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 3,
+      "y": 9,
+      "label": "11"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 11.5,
+      "y": 26.4,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 59.7,
+      "y": 23.1,
+      "label": "8"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 85,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 30,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 65.1,
+      "y": 44.6
+     },
+     {
+      "id": "b5",
+      "x": 6.6,
+      "y": 49.6
+     },
+     {
+      "id": "b10",
+      "x": 17.6,
+      "y": 10.3
+     },
+     {
+      "id": "b11",
+      "x": 3.6,
+      "y": 9.6
+     },
+     {
+      "id": "s1",
+      "x": 33.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 36,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Pass in die Mitte, hinterlaufen",
+      "say": "Spieler neun hat aufgedreht und spielt in die Mitte zu Spieler sechs. Sofort hinterläuft er ihn, hinten herum auf die andere Seite.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         34,
+         28
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         34.6,
+         28.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n9",
+        "to": [
+         48,
+         37
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       },
+       {
+        "who": "n9",
+        "to": [
+         32,
+         35
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n9",
+        "to": [
+         25,
+         27
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n9",
+        "to": [
+         30,
+         17
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Nach innen andribbeln",
+      "say": "Spieler sechs dribbelt nach innen, genau auf Spieler acht zu. Der muss raus und kann nicht beide decken. Außen kommt Spieler neun mit.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         47,
+         26
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "r8",
+        "to": [
+         54,
+         25
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n9",
+        "to": [
+         42,
+         18
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n9",
+        "to": [
+         52,
+         13
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Querpass: Punkt",
+      "say": "Jetzt der Pass zu Spieler neun. Der ist frei und schießt direkt, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         52.6,
+         13.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         88.7,
+         24.5
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 9,
+      "y1": 58.6,
+      "x2": 89,
+      "y2": 58.6,
+      "text": "40 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Zwei gegen zwei.",
+   "title": "Zwei gegen zwei",
+   "text": "Jetzt verteidigen zwei Spieler von Team Rot. Der Slalom fällt weg, es geht los mit Pass und Hinterlaufen. Der Ballführer dribbelt in die Lücke zwischen beide Verteidiger und zieht sie zu sich, dann spielt er ab. Nach höchstens drei Kontakten soll der Abschluss kommen.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 23.4,
+      "y": 23.6,
+      "label": "9"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 6,
+      "y": 49,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 36.7,
+      "y": 30.9,
+      "label": "6"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 14,
+      "y": 6.5,
+      "label": "10"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 11.5,
+      "y": 26.4,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 61.5,
+      "y": 16.1,
+      "label": "8"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 65.6,
+      "y": 35.1,
+      "label": "11"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 85,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 30,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 24,
+      "y": 24.2
+     },
+     {
+      "id": "b5",
+      "x": 6.6,
+      "y": 49.6
+     },
+     {
+      "id": "b10",
+      "x": 14.6,
+      "y": 7.1
+     },
+     {
+      "id": "s1",
+      "x": 33.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 36,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Pass und hinterlaufen",
+      "say": "Spieler neun spielt zu Spieler sechs und hinterläuft ihn sofort außen.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         37.3,
+         31.5
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n9",
+        "to": [
+         30,
+         37
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n9",
+        "to": [
+         44,
+         37.5
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "In die Lücke dribbeln",
+      "say": "Spieler sechs zieht in die Lücke zwischen beide Verteidiger. Spieler acht und Spieler elf gehen beide auf ihn. Außen ist jetzt Platz für Spieler neun.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         52,
+         26
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "r8",
+        "to": [
+         56,
+         21
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "r11",
+        "to": [
+         58,
+         31
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n9",
+        "to": [
+         56,
+         43
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Abspielen und abschließen: Punkt",
+      "say": "Jetzt der Pass nach außen. Spieler neun schießt sofort, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         56.6,
+         43.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         88.7,
+         31
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 9,
+      "y1": 58.6,
+      "x2": 89,
+      "y2": 58.6,
+      "text": "40 m"
+     }
+    ]
+   }
+  }
+ ]
+}

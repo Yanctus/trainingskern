@@ -1,0 +1,1367 @@
+{
+ "title": "Farbe hören, schneller greifen",
+ "code": "UE-321",
+ "kind": "Übungsform",
+ "focuses": [
+  "Schnelligkeit",
+  "Koordination",
+  "Erwärmung"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "tags": [
+  "Vorbereitung"
+ ],
+ "duration_minutes": 15,
+ "players_min": 8,
+ "players_max": 16,
+ "field_size": "Kreis, 18 m Durchmesser",
+ "description": "Ein Reaktionsspiel für die Vorbereitung. Je zwei Spieler stehen sich im Kreis gegenüber, dazwischen eine Stange mit einem orangen und einem gelben Hütchen und einem Leibchen obendrauf. Auf Zuruf gehen alle seitlich zur nächsten Station, dann ruft der Trainer eine Farbe. Wer das richtige Teil zuerst greift, holt einen Punkt für sein Team.",
+ "organisation": [
+  "Aufbauen: Ein Kreis mit 18 Metern Durchmesser. Darin stehen sechs Stangen im Kreis verteilt, an jeder ein oranges und ein gelbes Hütchen und oben auf der Stange ein Leibchen.",
+  "Verteilen: Zwei Teams zu sechst. An jeder Stange ein Paar, Team Neon steht außen, Team Rot innen, beide schauen zur Stange. Der Trainer steht in der Mitte.",
+  "Ablauf: Alle stehen tief und mittig. Ruft der Trainer links oder rechts, gehen alle seitlich zur nächsten Stange, mal langsam, mal schnell. Außen und innen laufen dabei gegeneinander, so wechselt der Gegner. Ruft er orange, gelb oder Leibchen, greift jeder sofort zu.",
+  "Wertung und Wechsel: Wer das richtige Teil zuerst hat, holt einen Punkt für sein Team. Dann alles zurück an die Stange und die nächste Ansage. Nach einigen Runden tauschen außen und innen."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Tief stehen, Gewicht auf den Fußballen",
+  "Kopf hoch, Augen nach vorn",
+  "Seitlich gehen, Füße nicht kreuzen",
+  "Der erste Schritt ist explosiv"
+ ],
+ "materials": [
+  "6 Stangen",
+  "6 orange Hütchen",
+  "6 gelbe Hütchen",
+  "6 Leibchen",
+  "Hütchen für den Kreis"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Farbe hören, schneller greifen. Ein Reaktionsspiel zu zweit. Der Trainer ruft eine Farbe, und wer zuerst das richtige Teil an der Stange hat, gewinnt das Duell.",
+ "board": {
+  "lines": [
+   {
+    "type": "circle",
+    "x": 50,
+    "y": 30,
+    "r": 26
+   }
+  ],
+  "goals": [],
+  "cones": [
+   {
+    "x": 71.2,
+    "y": 30.0,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 63.1,
+    "y": 16.9,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 36.9,
+    "y": 16.9,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 28.8,
+    "y": 30.0,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 36.9,
+    "y": 43.1,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 63.1,
+    "y": 43.1,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 71.2,
+    "y": 33.3,
+    "color": "orange"
+   },
+   {
+    "x": 65.4,
+    "y": 19.2,
+    "color": "orange"
+   },
+   {
+    "x": 39.2,
+    "y": 14.6,
+    "color": "orange"
+   },
+   {
+    "x": 28.8,
+    "y": 26.7,
+    "color": "orange"
+   },
+   {
+    "x": 34.6,
+    "y": 40.8,
+    "color": "orange"
+   },
+   {
+    "x": 60.8,
+    "y": 45.4,
+    "color": "orange"
+   },
+   {
+    "x": 71.2,
+    "y": 26.7,
+    "color": "neon"
+   },
+   {
+    "x": 60.8,
+    "y": 14.6,
+    "color": "neon"
+   },
+   {
+    "x": 34.6,
+    "y": 19.2,
+    "color": "neon"
+   },
+   {
+    "x": 28.8,
+    "y": 33.3,
+    "color": "neon"
+   },
+   {
+    "x": 39.2,
+    "y": 45.4,
+    "color": "neon"
+   },
+   {
+    "x": 65.4,
+    "y": 40.8,
+    "color": "neon"
+   }
+  ],
+  "players": [
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 75.5,
+    "y": 30.0,
+    "label": "8"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 67.7,
+    "y": 12.3,
+    "label": "10"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 32.3,
+    "y": 12.3,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 24.5,
+    "y": 30.0,
+    "label": "3"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 32.3,
+    "y": 47.7,
+    "label": "6"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 67.7,
+    "y": 47.7,
+    "label": "5"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 67.0,
+    "y": 30.0,
+    "label": "11"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 58.5,
+    "y": 21.5,
+    "label": "9"
+   },
+   {
+    "id": "r4",
+    "team": "b",
+    "x": 41.5,
+    "y": 21.5,
+    "label": "4"
+   },
+   {
+    "id": "r13",
+    "team": "b",
+    "x": 33.0,
+    "y": 30.0,
+    "label": "13"
+   },
+   {
+    "id": "r12",
+    "team": "b",
+    "x": 41.5,
+    "y": 38.5,
+    "label": "12"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 58.5,
+    "y": 38.5,
+    "label": "7"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 50,
+    "y": 30,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "s1",
+    "x": 52.6,
+    "y": 33.5
+   },
+   {
+    "id": "s2",
+    "x": 47.4,
+    "y": 33.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Tief stehen, Augen nach vorn",
+    "say": "Je zwei Spieler stehen sich gegenüber, dazwischen die Stange. Team Neon außen, Team Rot innen. Alle stehen tief, die Knie gebeugt, und schauen nach vorn zur Stange.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       58,
+       30
+      ],
+      "type": "blick"
+     }
+    ]
+   },
+   {
+    "label": "Ruf links: eine Station weiter",
+    "say": "Der Trainer ruft links. Alle gehen seitlich zur nächsten Stange, ohne die Füße zu kreuzen. Außen und innen laufen gegeneinander, und jeder hat einen neuen Gegner.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       73.3,
+       39.7
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n8",
+      "to": [
+       67.7,
+       47.7
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r11",
+      "to": [
+       63.4,
+       24.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r11",
+      "to": [
+       58.5,
+       21.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n10",
+      "to": [
+       73.3,
+       20.3
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n10",
+      "to": [
+       75.5,
+       30.0
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r9",
+      "to": [
+       53.1,
+       18.4
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r9",
+      "to": [
+       46.9,
+       18.4
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r9",
+      "to": [
+       41.5,
+       21.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       43.5,
+       5.9
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n2",
+      "to": [
+       56.5,
+       5.9
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       67.7,
+       12.3
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r4",
+      "to": [
+       36.6,
+       24.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r4",
+      "to": [
+       33.0,
+       30.0
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n3",
+      "to": [
+       26.7,
+       20.3
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n3",
+      "to": [
+       32.3,
+       12.3
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r13",
+      "to": [
+       36.6,
+       35.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r13",
+      "to": [
+       41.5,
+       38.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n6",
+      "to": [
+       26.7,
+       39.7
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n6",
+      "to": [
+       24.5,
+       30.0
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r12",
+      "to": [
+       46.9,
+       41.6
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r12",
+      "to": [
+       53.1,
+       41.6
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r12",
+      "to": [
+       58.5,
+       38.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n5",
+      "to": [
+       56.5,
+       54.1
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n5",
+      "to": [
+       43.5,
+       54.1
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n5",
+      "to": [
+       32.3,
+       47.7
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r7",
+      "to": [
+       63.4,
+       35.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r7",
+      "to": [
+       67.0,
+       30.0
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Ruf orange: alle greifen zu",
+    "say": "Jetzt ruft er orange. Sofort sprinten alle los zum orangen Hütchen an ihrer Stange. Schauen wir auf Spieler zehn und Spieler sieben.",
+    "moves": [
+     {
+      "who": "n10",
+      "to": [
+       72.5,
+       32.3
+      ],
+      "type": "lauf",
+      "delay": 0.1
+     },
+     {
+      "who": "r7",
+      "to": [
+       68.4,
+       31.1
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n2",
+      "to": [
+       66.5,
+       15.8
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "r11",
+      "to": [
+       63.9,
+       19.7
+      ],
+      "type": "lauf",
+      "delay": 0.1
+     },
+     {
+      "who": "n3",
+      "to": [
+       37.7,
+       14.1
+      ],
+      "type": "lauf",
+      "delay": 0.1
+     },
+     {
+      "who": "r9",
+      "to": [
+       40.3,
+       18.0
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n6",
+      "to": [
+       25.9,
+       28.9
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "r4",
+      "to": [
+       30.1,
+       27.7
+      ],
+      "type": "lauf",
+      "delay": 0.1
+     },
+     {
+      "who": "n5",
+      "to": [
+       34.1,
+       42.3
+      ],
+      "type": "lauf",
+      "delay": 0.1
+     },
+     {
+      "who": "r13",
+      "to": [
+       38.0,
+       39.7
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n8",
+      "to": [
+       64.2,
+       46.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "r12",
+      "to": [
+       60.3,
+       43.9
+      ],
+      "type": "lauf",
+      "delay": 0.1
+     }
+    ]
+   },
+   {
+    "label": "Wer zuerst greift: Punkt",
+    "say": "Spieler zehn hat das Hütchen zuerst, und das gibt einen Punkt für Team Neon. Alle stellen das Hütchen zurück und gehen wieder an ihre Stange. Dann kommt die nächste Ansage.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       67.7,
+       47.7
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n10",
+      "to": [
+       75.5,
+       30.0
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n2",
+      "to": [
+       67.7,
+       12.3
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n3",
+      "to": [
+       32.3,
+       12.3
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n6",
+      "to": [
+       24.5,
+       30.0
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n5",
+      "to": [
+       32.3,
+       47.7
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r11",
+      "to": [
+       58.5,
+       21.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r9",
+      "to": [
+       41.5,
+       21.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r4",
+      "to": [
+       33.0,
+       30.0
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r13",
+      "to": [
+       41.5,
+       38.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r12",
+      "to": [
+       58.5,
+       38.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r7",
+      "to": [
+       67.0,
+       30.0
+      ],
+      "type": "lauf"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 24,
+    "y1": 58.6,
+    "x2": 76,
+    "y2": 58.6,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Tief und mittig stehen.",
+   "title": "Tief und mittig stehen",
+   "text": "Wer aufrecht steht, verliert den ersten Schritt. Die Knie sind gebeugt, das Gewicht liegt auf den Fußballen, der Körper steht mittig zwischen beiden Hütchen. Der Blick geht nach vorn, nicht zum Trainer.",
+   "board": {
+    "players": [
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 75.5,
+      "y": 30.0,
+      "label": "8"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 67.7,
+      "y": 12.3,
+      "label": "10"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 32.3,
+      "y": 12.3,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 24.5,
+      "y": 30.0,
+      "label": "3"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 32.3,
+      "y": 47.7,
+      "label": "6"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 67.7,
+      "y": 47.7,
+      "label": "5"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 67.0,
+      "y": 30.0,
+      "label": "11"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 58.5,
+      "y": 21.5,
+      "label": "9"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 41.5,
+      "y": 21.5,
+      "label": "4"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 33.0,
+      "y": 30.0,
+      "label": "13"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 41.5,
+      "y": 38.5,
+      "label": "12"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 58.5,
+      "y": 38.5,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "s1",
+      "x": 52.6,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 47.4,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Tief, mittig, Blick nach vorn",
+      "say": "Spieler acht steht tief und genau mittig vor seiner Stange. Er schaut nach vorn, nicht zum Trainer. Gegenüber steht Spieler elf noch zu aufrecht.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         58,
+         30
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "r11",
+        "to": [
+         80,
+         30
+        ],
+        "type": "blick"
+       }
+      ]
+     },
+     {
+      "label": "Ruf gelb: Punkt",
+      "say": "Der Trainer ruft gelb. Spieler acht ist mit dem ersten Schritt sofort weg und greift das gelbe Hütchen vor Spieler elf, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         72.5,
+         27.7
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       },
+       {
+        "who": "r11",
+        "to": [
+         68.4,
+         28.9
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n10",
+        "to": [
+         64.2,
+         13.5
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "r9",
+        "to": [
+         60.3,
+         16.1
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       },
+       {
+        "who": "n2",
+        "to": [
+         34.1,
+         17.7
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       },
+       {
+        "who": "r4",
+        "to": [
+         38.0,
+         20.3
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n3",
+        "to": [
+         25.9,
+         31.1
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "r13",
+        "to": [
+         30.1,
+         32.3
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       },
+       {
+        "who": "n6",
+        "to": [
+         37.7,
+         45.9
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       },
+       {
+        "who": "r12",
+        "to": [
+         40.3,
+         42.0
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n5",
+        "to": [
+         66.5,
+         44.2
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "r7",
+        "to": [
+         63.9,
+         40.3
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Mit dem Rücken zur Stange.",
+   "title": "Mit dem Rücken zur Stange",
+   "text": "Jetzt stehen alle mit dem Rücken zur Stange, Team Neon schaut nach außen, Team Rot zum Trainer. Auf den Ruf drehen sie sich um, finden ihre Stange und greifen zu. Ruft der Trainer Leibchen, geht es nach oben zum Leibchen auf der Stange.",
+   "board": {
+    "players": [
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 75.5,
+      "y": 30.0,
+      "label": "8"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 67.7,
+      "y": 12.3,
+      "label": "10"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 32.3,
+      "y": 12.3,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 24.5,
+      "y": 30.0,
+      "label": "3"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 32.3,
+      "y": 47.7,
+      "label": "6"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 67.7,
+      "y": 47.7,
+      "label": "5"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 67.0,
+      "y": 30.0,
+      "label": "11"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 58.5,
+      "y": 21.5,
+      "label": "9"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 41.5,
+      "y": 21.5,
+      "label": "4"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 33.0,
+      "y": 30.0,
+      "label": "13"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 41.5,
+      "y": 38.5,
+      "label": "12"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 58.5,
+      "y": 38.5,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "s1",
+      "x": 52.6,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 47.4,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Rücken zur Stange",
+      "say": "Alle drehen der Stange den Rücken zu. Spieler acht schaut nach außen, Spieler elf schaut in die Mitte. Sehen können sie die Stange jetzt nicht mehr.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         90,
+         30
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "r11",
+        "to": [
+         50,
+         30
+        ],
+        "type": "blick"
+       }
+      ]
+     },
+     {
+      "label": "Ruf Leibchen: umdrehen",
+      "say": "Der Trainer ruft Leibchen. Alle drehen sich blitzschnell um und suchen ihre Stange.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         71.2,
+         30.0
+        ],
+        "type": "dreh"
+       },
+       {
+        "who": "n10",
+        "to": [
+         63.1,
+         16.9
+        ],
+        "type": "dreh"
+       },
+       {
+        "who": "n2",
+        "to": [
+         36.9,
+         16.9
+        ],
+        "type": "dreh"
+       },
+       {
+        "who": "n3",
+        "to": [
+         28.8,
+         30.0
+        ],
+        "type": "dreh"
+       },
+       {
+        "who": "n6",
+        "to": [
+         36.9,
+         43.1
+        ],
+        "type": "dreh"
+       },
+       {
+        "who": "n5",
+        "to": [
+         63.1,
+         43.1
+        ],
+        "type": "dreh"
+       },
+       {
+        "who": "r11",
+        "to": [
+         71.2,
+         30.0
+        ],
+        "type": "dreh",
+        "bend": -1
+       },
+       {
+        "who": "r9",
+        "to": [
+         63.1,
+         16.9
+        ],
+        "type": "dreh",
+        "bend": -1
+       },
+       {
+        "who": "r4",
+        "to": [
+         36.9,
+         16.9
+        ],
+        "type": "dreh",
+        "bend": -1
+       },
+       {
+        "who": "r13",
+        "to": [
+         28.8,
+         30.0
+        ],
+        "type": "dreh",
+        "bend": -1
+       },
+       {
+        "who": "r12",
+        "to": [
+         36.9,
+         43.1
+        ],
+        "type": "dreh",
+        "bend": -1
+       },
+       {
+        "who": "r7",
+        "to": [
+         63.1,
+         43.1
+        ],
+        "type": "dreh",
+        "bend": -1
+       }
+      ]
+     },
+     {
+      "label": "Wer das Leibchen hat: Punkt",
+      "say": "Dann hoch zum Leibchen. Spieler elf reißt es vor Spieler acht von der Stange, und das gibt einen Punkt für Team Rot.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         74.8,
+         30.0
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "r11",
+        "to": [
+         69.6,
+         30.0
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       },
+       {
+        "who": "n10",
+        "to": [
+         64.2,
+         15.8
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       },
+       {
+        "who": "r9",
+        "to": [
+         60.6,
+         19.4
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n2",
+        "to": [
+         34.4,
+         14.4
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "r4",
+        "to": [
+         38.0,
+         18.0
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       },
+       {
+        "who": "n3",
+        "to": [
+         27.2,
+         30.0
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       },
+       {
+        "who": "r13",
+        "to": [
+         32.4,
+         30.0
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n6",
+        "to": [
+         34.4,
+         45.6
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "r12",
+        "to": [
+         38.0,
+         42.0
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       },
+       {
+        "who": "n5",
+        "to": [
+         64.2,
+         44.2
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       },
+       {
+        "who": "r7",
+        "to": [
+         60.6,
+         40.6
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
