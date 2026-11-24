@@ -28,8 +28,11 @@ GROSS = {"k1": (10.5, 27.5), "n5": (19, 13.5), "n4": (19, 41.5), "n3": (40, 5), 
 ROT = {"k2": (88, 27.5), "r12": (80, 46), "r15": (80, 34), "r14": (80, 21), "r13": (80, 9),
        "r21": (54, 47), "r18": (54, 34), "r17": (54, 21), "r16": (54, 8), "r19": (27, 15), "r20": (27, 40)}
 ROT3 = {"k2": (88, 27.5), "r12": (80, 49), "r15": (80, 37), "r14": (80, 25.5), "r13": (83, 14),
-        "r21": (49, 50.5), "r18": (54, 39), "r17": (56, 27), "r16": (60, 15), "r19": (26, 39.5), "r20": (33, 44)}
+        "r21": (49, 50.5), "r18": (54, 39), "r17": (56, 27), "r16": (60, 15), "r19": (36, 32.5), "r20": (33, 44)}
 NEON3 = dict(GROSS, n9=(72, 31))
+
+
+FREI, WARN = 7.0, []  # Mindestabstand des Passempfängers zum nächsten Gegner (Einheiten, etwa 8 m)
 
 
 class Lage:
@@ -48,6 +51,13 @@ class Lage:
     def opts(s, *ziele, delay=0.0):
         return [opt(s.ball, list(s.p[z]), **({"after": True} if i else ({"delay": delay} if delay else {}))) for i, z in enumerate(ziele)]
     def pas(s, an, **k):
+        # Regel (Inhaber, 24.11.2026): Wer angespielt wird, hat sich vorher vom Gegenspieler gelöst. Nie in einen Spieler passen,
+        # der direkt am Gegner steht. Geprüft wird der Abstand zum nächsten Gegner im Moment des Passes (mindestens FREI).
+        gegner = [(k2, v) for k2, v in s.p.items() if k2[0] == "r"]
+        if an[0] in "nk" and gegner:
+            d, wer = min((((v[0] - s.p[an][0]) ** 2 + (v[1] - s.p[an][1]) ** 2) ** 0.5, k2) for k2, v in gegner)
+            if d < FREI:
+                WARN.append(f"Pass zu {an}: nur {d:.1f} vom Gegner {wer} entfernt (mindestens {FREI})")
         s.ball = an
         return ps("b1", f(s.p[an]), **k)
     def dribbel(s, wer, ziel, **k):
@@ -105,7 +115,7 @@ k2.append(S("Der freie Mann", "Der Sechser sieht beide Innenverteidiger und den 
 d2 = [L2.dribbel("n5", (30, 10))]
 d2 += L2.schieb({"r16": (36, 12)}, delay=0.6)
 d2 += L2.opts("n3", "n10", "n9", delay=1.6)
-d2 += L2.schieb({"n9": (62, 21), "r14": (62, 20), "n11": (82, 10)}, delay=2.4)
+d2 += L2.schieb({"n9": (62, 21), "r14": (70, 22), "n11": (82, 10)}, delay=2.4)
 k2.append(S("Andribbeln und locken", "Der Innenverteidiger hat Platz und dribbelt an, bis ein Gegner kommt. Kommt einer, wird ein anderer frei: außen der Außenverteidiger, innen der Achter, vorn der Stürmer. Der Stürmer kommt entgegen, und der Flügel geht hinter die Kette. Einer kommt, einer geht.", *d2))
 e2 = [L2.pas("n9")]
 e2 += L2.schieb({"n10": (62, 12)}, delay=0.2)
@@ -121,7 +131,7 @@ k2.append(S("Hinter die Kette", "Jetzt geht alles nach vorn. Der Achter hat den 
 # ---------- Kapitel 3: verschieben und Seitenwechsel über den Torwart ----------
 L3 = Lage(NEON3, ROT3, ball="n2")
 k3 = []
-a = L3.schieb({"r21": (44, 50.5), "r18": (50, 41), "r20": (25, 43), "r17": (52, 31), "r12": (74, 50), "r16": (58, 20)})
+a = L3.schieb({"r21": (44, 50.5), "r18": (50, 41), "r20": (28, 38), "r17": (52, 31), "r12": (74, 50), "r16": (58, 20)})
 a += L3.schieb({"n7": (62, 47), "n8": (48, 43), "n4": (22, 44), "n6": (30, 34), "n10": (46, 26)}, delay=0.3)
 a += L3.opts("n7", "n8", "n4", delay=1.8)
 k3.append(S("Der Gegner schiebt zum Ball", "Unser rechter Außenverteidiger hat den Ball, und der Gegner schiebt mit allen auf diese Seite. Wir bieten uns kurz an, aber der Flügel und der Achter sind zugestellt. Frei ist nur der Weg zurück. Auf der anderen Seite bleiben unser Außenverteidiger und der Flügelspieler breit.", *a))
@@ -130,23 +140,54 @@ b3 += L3.schieb({"r20": (22, 38), "r19": (20, 32), "r21": (40, 46), "n6": (26, 2
 k3.append(S("Zurück über den Torwart", "Also kein Pass in die enge Seite. Der Ball geht zurück zum Innenverteidiger und weiter zum Torwart. Die zwei Stürmer laufen hinterher, und unser Sechser stellt sich mittig hin. Das ist kein Rückschritt, so verlagern wir das Spiel.", *b3))
 c3 = L3.opts("n5", "n6")
 c3 += [L3.pas("n5", after=True), L3.pas("n3", after=True)]
-c3 += L3.schieb({"r16": (54, 9), "r17": (54, 20), "r18": (54, 32), "r21": (54, 44), "r13": (78, 10), "r14": (78, 21),
+c3 += L3.schieb({"r16": (56, 7), "r17": (54, 20), "r18": (54, 32), "r21": (54, 44), "r13": (78, 10), "r14": (78, 21),
                  "r15": (78, 32), "r12": (78, 44), "r19": (24, 22), "r20": (28, 36)}, delay=2.4)
 c3 += L3.schieb({"n10": (50, 14), "n11": (70, 6), "n9": (72, 24), "n8": (50, 34), "n7": (68, 46)}, delay=2.6)
 k3.append(S("Seitenwechsel", "Der Torwart spielt zum linken Innenverteidiger, und der sofort weiter auf den Außenverteidiger. Der Gegner muss quer über das ganze Feld schieben und kommt zu spät. Unser Außenverteidiger hat Zeit und Platz.", *c3))
 d3 = L3.opts("n11", "n10", "n9")
 d3.append(L3.pas("n10", after=True))
-d3 += L3.schieb({"n11": (80, 8), "n9": (78, 22), "n3": (54, 6), "n8": (58, 38), "n6": (40, 24), "n2": (52, 46), "n4": (28, 40)}, delay=1.9)
+d3 += L3.schieb({"n11": (85, 6), "n9": (78, 22), "n3": (54, 6), "n8": (58, 38), "n6": (40, 24), "n2": (52, 46), "n4": (28, 40)}, delay=1.9)
 k3.append(S("Auf der freien Seite", "Der Außenverteidiger hat drei Wege: die Linie entlang, innen den Achter oder den Stürmer. Er spielt den Achter an, der zum Ball kommt. Einer kommt, einer geht: Dafür startet der Flügelspieler in die Tiefe, und die ganze Mannschaft schiebt auf die neue Seite.", *d3))
 e3 = [L3.pas("n11")]
-e3 += L3.schieb({"r13": (84, 12), "r14": (80, 18)}, delay=0.6)
+e3 += L3.schieb({"r13": (86, 9), "r14": (80, 18)}, delay=0.6)
 k3.append(S("Angriff, wo der Gegner nicht ist", "Der Achter steckt durch auf den Flügel. So greifen wir dort an, wo der Gegner gerade nicht ist.", *e3))
+
+# ---------- Kapitel 4: Muster: innen-außen, eine Reihe überspielen, klatschen lassen, verlagern ----------
+# Gegner im 4-4-2-Mittelfeldpressing (Stürmer an der Mittellinie unserer Hälfte, Mittelfeldreihe, Abwehrreihe)
+NEON4 = {"k1": (10.5, 27.5), "n5": (22, 15), "n4": (22, 40), "n6": (32, 27.5), "n3": (44, 5), "n2": (44, 50),
+         "n10": (64, 15), "n8": (64, 40), "n11": (80, 6), "n7": (80, 49), "n9": (80, 27.5)}
+ROT4 = {"k2": (88, 27.5), "r13": (74, 10), "r14": (74, 22), "r15": (74, 34), "r12": (74, 46),
+        "r16": (54, 9), "r17": (54, 21), "r18": (54, 33), "r21": (54, 46), "r19": (38, 20), "r20": (38, 35)}
+L4 = Lage(NEON4, ROT4, ball="n4")
+k4 = []
+a = L4.opts("n2", "n6", "n8")
+a.append(L4.pas("n6", after=True))
+a += L4.schieb({"r20": (37, 30), "r19": (36, 18), "r18": (48, 31), "r21": (50, 40), "r17": (50, 22)}, delay=2.0)
+k4.append(S("Erst innen", "Der Innenverteidiger hat drei Möglichkeiten. Er spielt zuerst innen auf den Sechser. Der Gegner will ihn stellen und zieht sich zur Mitte zusammen.", *a))
+b4 = L4.opts("n2", "n4", "n8")
+b4.append(L4.pas("n2", after=True))
+b4 += L4.schieb({"r21": (50, 51), "r12": (70, 48), "n7": (84, 49)}, delay=1.9)
+k4.append(S("Dann außen", "Genau dadurch wird es außen frei. Der Sechser spielt sofort raus auf den Außenverteidiger. Innen, dann außen: Der Ball ist schneller als der Gegner.", *b4))
+c4 = L4.schieb({"n9": (66, 31), "n8": (66, 42)})
+c4 += L4.opts("n7", "n9", "n6", delay=1.2)
+c4.append(L4.pas("n9", after=True))
+c4 += L4.schieb({"r15": (70, 33), "r18": (54, 31)}, delay=2.8)
+k4.append(S("Eine Reihe überspielen", "Der Gegner läuft raus zum Außenverteidiger. Jetzt außen, dann innen: Der Stürmer kommt entgegen, und der Ball geht flach durch die Mittelfeldreihe in seinen Fuß. Eine ganze Reihe ist überspielt.", *c4))
+d4 = L4.schieb({"n10": (61, 25)})
+d4.append(L4.pas("n10", delay=0.6))
+d4 += L4.schieb({"r17": (56, 24), "r18": (56, 30), "r14": (70, 25), "r13": (72, 15), "r16": (52, 14)}, delay=1.3)
+d4 += L4.schieb({"n11": (84, 8), "n3": (58, 4)}, delay=1.3)
+k4.append(S("Klatschen lassen", "Der Stürmer lässt den Ball direkt klatschen auf den Achter, der sich daneben freigelaufen hat. Der steht mit Blick nach vorn. Der Gegner zieht sich jetzt ganz zur Mitte zusammen.", *d4))
+e4 = L4.opts("n11", "n3", "n9")
+e4.append(L4.pas("n11", after=True))
+e4 += L4.schieb({"n9": (82, 22), "n7": (82, 40), "n8": (74, 44), "r13": (82, 10), "r14": (80, 22)}, delay=1.9)
+k4.append(S("Und verlagern", "Auf der anderen Seite ist alles frei. Der Achter verlagert sofort auf den Flügel, der schon in die Tiefe startet. Überspielen, klatschen lassen, verlagern: So kommen wir dorthin, wo der Gegner nicht ist.", *e4))
 
 u = {"title": "Aufbau im 4-3-3 über den Torwart", "code": "TA-001", "kind": "Taktik",
  "focuses": ["Passspiel", "Zusammenspiel"], "age_groups": ["D-Jugend", "C-Jugend", "B-Jugend"],
  "altersbereiche": ["U12-U14", "U15-U17"], "duration_minutes": 5, "players_min": 22, "players_max": 22,
  "field_size": "65 x 100 m",
- "description": "Wie baut eine Mannschaft im 4-3-3 von hinten auf? Zuerst siehst du, wer wo steht, wie die Mannschaft das Feld groß macht und mit jedem Pass verschiebt. Bei jedem Ballbesitz gibt es mehrere Anspielstationen, und du siehst, warum welche gewählt wird. Dann presst ein Gegner, und zum Schluss geht es um den Seitenwechsel über den Torwart.",
+ "description": "Wie baut eine Mannschaft im 4-3-3 von hinten auf? Zuerst siehst du, wer wo steht, wie die Mannschaft das Feld groß macht und mit jedem Pass verschiebt. Bei jedem Ballbesitz gibt es mehrere Anspielstationen, und du siehst, warum welche gewählt wird. Dann presst ein Gegner, danach geht es um den Seitenwechsel über den Torwart. Zum Schluss zwei Muster: innen-außen und eine Reihe überspielen, klatschen lassen, verlagern.",
  "organisation": ["Grundordnung: Torwart, Viererkette, ein Sechser, zwei Achter, vorn ein Stürmer und zwei Flügelspieler.",
   "Hinten: Beim Aufbau gehen die Innenverteidiger breit bis an die Ecken vom Strafraum, die Außenverteidiger schieben hoch, der Torwart spielt mit.",
   "Mittelfeld: Der Sechser bietet sich zentral an oder lässt sich zwischen die Innenverteidiger fallen, die Achter stehen in den Halbräumen und zwischen den Linien.",
@@ -164,5 +205,9 @@ u = {"title": "Aufbau im 4-3-3 über den Torwart", "code": "TA-001", "kind": "Ta
     Lage(GROSS, ROT).spieler(), [B("b1", 11.1, 28.1)] + ERSATZ, k2),
   V("Kapitel 3", "Kapitel drei: Verschieben und Seitenwechsel.", "Verlagern über den Torwart",
     "Der Gegner schiebt mit allen auf unsere Ballseite. Dort ist es eng, auf der anderen Seite ist Platz. Wir spielen zurück über den Innenverteidiger zum Torwart und verlagern auf die freie Seite. Danach schiebt die ganze Mannschaft mit.",
-    Lage(NEON3, ROT3).spieler(), [B("b1", 40.6, 50.6)] + ERSATZ, k3)]}
+    Lage(NEON3, ROT3).spieler(), [B("b1", 40.6, 50.6)] + ERSATZ, k3),
+  V("Kapitel 4", "Kapitel vier: Muster zum Herausspielen.", "Innen, außen, verlagern",
+    "Zwei Muster, die immer wieder funktionieren. Erst innen, dann außen: Der Pass nach innen zieht den Gegner zusammen, dann ist außen Platz. Und: eine Reihe überspielen, klatschen lassen, verlagern. Dabei hat sich jeder, der angespielt wird, vorher vom Gegenspieler gelöst.",
+    Lage(NEON4, ROT4).spieler(), [B("b1", 22.6, 40.6)] + ERSATZ, k4)]}
+for w in WARN: print("FREI:", w)
 json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)
