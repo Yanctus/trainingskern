@@ -45,6 +45,10 @@ Die App selbst liegt bei Base44 (App „Trainingskern“), dieses Repo enthält 
   UE-019, UE-088, UE-084, UE-016, UE-036, UE-072.
   Nur kurz angerissen in `kampagne-14-alles-drin.json`: UE-129, UE-265, UE-292 und in `kampagne-17-plan-steht.json` UE-015 (dürfen noch ein eigenes Video bekommen).
   Für das komplette Format Übungen wählen, die Coaching-Punkt und Steigerung haben (manche haben stattdessen zwei Coaching-Punkte).
+- **Vor dem Auswählen `python3 tonpruefung.py <Codes>` laufen lassen** (Ordner `story-studio`, Katalog vorher frisch holen): Viele Übungen
+  haben alte Aufnahmen („Neon vier“, „Rot acht“), die nicht mehr zum Text passen und auf der Seite neu eingesprochen werden müssen.
+  Solche Übungen nicht verfilmen. Stand 24.11.2026 betrifft das auch schon fertige Videos: kampagne-19, -23, -25, -26, -28, -29, -31, -32, -37
+  (alte Namen im Ton) und -34, -35 („Rot sechs/acht“). Nach dem Neueinsprechen auf der Seite nur diese Videos neu rendern (kostet kein ElevenLabs).
 - Für erklärte Übungen die vorhandenen Aufnahmen der Seite nehmen (kosten kein ElevenLabs-Kontingent). Der Aufbau hat auf der Seite keine
   Aufnahmen und wird neu eingesprochen.
 - **Die Länge entscheidet Claude** (Stand 23.11.2026): so lang, wie der Inhalt braucht, auch über 30 Sekunden. Nicht künstlich strecken.
@@ -75,6 +79,17 @@ Die App selbst liegt bei Base44 (App „Trainingskern“), dieses Repo enthält 
   „Das ganze System: kostenlos auf trainingskern.de“, gesprochen ebenso. Nie „ohne Anmeldung“ versprechen.
   In die Beitragsbeschreibung kommt offen: „Kostenlos anmelden und alle Spielsysteme ansehen“.
 - Posten: jeden Abend eines, zusätzlich zum Reel um 18:30 (Vorschlag 20:30 bis 21:00, der Nutzer dachte an 22 Uhr). Keine eigenen Storys dazu.
+
+## Geplante Runde (24.11.2026, wartet auf das Go des Nutzers)
+
+- Spielsysteme (Reihe, Videos liefert der Nutzer; auf der Seite: TA-002 „Aufbau im 4-2-3-1“, TA-001 „Aufbau im 4-3-3 über den Torwart“,
+  beide stehen noch auf `abo`, sollen frei nach Registrierung werden; TA-002 hat 4 Aufnahmen, die nicht zum Text passen):
+  4-2-3-1 Intro „4-2-3-1 / Wer macht was?“, 4-3-3 Intro „4-3-3 / Aufbau über den Torwart“, je Ausschnitt 20–40 s, dann Hinweis, Outro.
+- Acht Übungs-Videos fürs Profil (alle mit Coaching-Punkt und Steigerung, Ton geprüft, kein „Springer“):
+  UE-267 Erst parieren, dann um die Puppe (Torwart) · UE-206 Viererkette schiebt zum Ball (Taktik/Verteidigen) ·
+  UE-025 Balljäger: Einer gegen alle (Kleine, frei) · UE-034 Aufdrehen und verlagern (Passspiel, frei) ·
+  UE-104 Slalom und Doppelpass (Bambini) · UE-269 Drei Puppen, drei Abschlüsse (Einzeltraining, Torschuss) ·
+  UE-006 4 gegen 4 mit Strafrunde (Kondition, bis Amateure) · UE-043 Verteidiger-Aktivierung: Farbe, Stellen, Sprint (Athletik).
 
 ## Sprache
 
