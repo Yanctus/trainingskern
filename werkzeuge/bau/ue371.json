@@ -1,0 +1,681 @@
+{
+ "title": "Passfolge um vier Dummys",
+ "code": "UE-371",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel",
+  "Ballannahme"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 6,
+ "players_max": 6,
+ "field_size": "25 x 25 m",
+ "description": "Sechs Spieler stehen wie im Spielaufbau, vier hinten und zwei im Mittelfeld. Vier Dummys stehen als Gegenspieler im Feld. Der Ball läuft in einer festen Folge von hinten ins Mittelfeld, über rechts zurück in die Abwehr und durch die Mitte wieder zum Start. Jeder Pass kommt genau und mit Tempo, am besten mit ein oder zwei Kontakten.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 25 mal 25 Metern. Vier Dummys stehen verteilt im Feld und machen die Passwege eng.",
+  "Verteilen: Hinten die Innenverteidiger sechs und fünf, außen links Spieler drei und rechts Spieler zwei. Davor im Mittelfeld Spieler zehn und Spieler acht. Spieler sechs hat den Ball, der Trainer steht mit Ersatzbällen am Rand.",
+  "Ablauf: Sechs eröffnet zu drei, der spielt diagonal zu acht. Zehn kommt entgegen und spielt tief auf zwei. Zwei nimmt den Ball nach innen mit und spielt rüber zu fünf. Acht lässt sich in die Mitte fallen, bekommt den Ball und spielt zurück zu sechs.",
+  "Wechsel: Ist der Ball wieder bei Spieler sechs, gehen alle auf ihre Plätze und die nächste Runde beginnt. Nach einigen Runden tauschen die Spieler die Positionen."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Pass mit Tempo, genau in den richtigen Fuß",
+  "Ein oder zwei Kontakte, dann ist der Ball weg",
+  "Vor dem Pass zeigen, wo du ihn haben willst",
+  "Der erste Kontakt geht schon in die neue Richtung"
+ ],
+ "materials": [
+  "4 Dummys",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Passfolge um vier Dummys. Sechs Spieler, ein Ball und eine feste Folge, so wie wir hinten herausspielen. Die Dummys stehen für die Gegner.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   }
+  ],
+  "goals": [],
+  "cones": [
+   {
+    "x": 35,
+    "y": 29,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 46,
+    "y": 34.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 48.5,
+    "y": 15.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 64,
+    "y": 26.5,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 29,
+    "y": 27.3,
+    "label": "3"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 38,
+    "y": 47.5,
+    "label": "6"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 61,
+    "y": 47.5,
+    "label": "5"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 71,
+    "y": 27,
+    "label": "2"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 39,
+    "y": 18,
+    "label": "10"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 57,
+    "y": 16.5,
+    "label": "8"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 17,
+    "y": 38,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 38.6,
+    "y": 48.1
+   },
+   {
+    "id": "s1",
+    "x": 20,
+    "y": 41.5
+   },
+   {
+    "id": "s2",
+    "x": 16.5,
+    "y": 42.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Spieler sechs eröffnet",
+    "say": "Spieler sechs hat den Ball und eröffnet nach links zu Spieler drei. Flach und mit Tempo, auf den Fuß, der weg vom Dummy ist.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       29.6,
+       27.9
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Diagonal ins Mittelfeld",
+    "say": "Von Spieler drei geht der Ball diagonal hoch zu Spieler acht. Spieler zehn sieht das und kommt schon ein paar Schritte entgegen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       57.6,
+       17.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n10",
+      "to": [
+       43,
+       25
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     }
+    ]
+   },
+   {
+    "label": "Klatschen und tief auf zwei",
+    "say": "Spieler acht spielt mit einem Kontakt zu Spieler zehn. Rechts startet Spieler zwei nach vorn, und Spieler zehn schickt ihn tief.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       43.6,
+       25.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n2",
+      "to": [
+       70,
+       19
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     },
+     {
+      "who": "b1",
+      "to": [
+       70.6,
+       19.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Nach innen und rüber zu fünf",
+    "say": "Spieler zwei nimmt den Ball mit nach innen und spielt runter zu Spieler fünf. Gleichzeitig lässt sich Spieler acht in die Mitte fallen.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       69,
+       30
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       61.6,
+       48.1
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       57,
+       30
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "Über acht zurück: Runde geschafft",
+    "say": "Spieler fünf spielt zu Spieler acht, und der legt zurück auf Spieler sechs. Der Ball ist wieder am Start, die Runde ist geschafft. Alle gehen zurück auf ihre Plätze, und Spieler sechs eröffnet die nächste Runde.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       57.6,
+       30.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       38.6,
+       48.1
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n10",
+      "to": [
+       39,
+       18
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       71,
+       27
+      ],
+      "type": "lauf",
+      "delay": 1.6
+     },
+     {
+      "who": "n8",
+      "to": [
+       57,
+       16.5
+      ],
+      "type": "lauf",
+      "delay": 1.6
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "25 m"
+   },
+   {
+    "x1": 83,
+    "y1": 5,
+    "x2": 83,
+    "y2": 55,
+    "text": "25 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Ein zweiter Ball kommt dazu.",
+   "title": "Mit zweitem Ball",
+   "text": "Jetzt laufen zwei Bälle gleichzeitig durch die Folge. Der zweite startet bei Spieler zehn. Jeder muss immer wissen, wo beide Bälle sind, sonst kommen zwei auf einmal. Wer nicht hinschaut, steht im Weg.",
+   "board": {
+    "players": [
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 29,
+      "y": 27.3,
+      "label": "3"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 38,
+      "y": 47.5,
+      "label": "6"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 61,
+      "y": 47.5,
+      "label": "5"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 71,
+      "y": 27,
+      "label": "2"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 39,
+      "y": 18,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 57,
+      "y": 16.5,
+      "label": "8"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 17,
+      "y": 38,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 38.6,
+      "y": 48.1
+     },
+     {
+      "id": "b2",
+      "x": 39.6,
+      "y": 18.6
+     },
+     {
+      "id": "s1",
+      "x": 20,
+      "y": 41.5
+     },
+     {
+      "id": "s2",
+      "x": 16.5,
+      "y": 42.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zwei Bälle laufen los",
+      "say": "Spieler sechs eröffnet zu Spieler drei. Im selben Moment schickt Spieler zehn den zweiten Ball tief auf Spieler zwei, der dafür nach vorn startet.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         29.6,
+         27.9
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n2",
+        "to": [
+         70,
+         19
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "b2",
+        "to": [
+         70.6,
+         19.6
+        ],
+        "type": "pass",
+        "bend": 3,
+        "delay": 0.6
+       }
+      ]
+     },
+     {
+      "label": "Kopf hoch: Wo ist Ball zwei?",
+      "say": "Bevor der Ball von Spieler drei kommt, schaut Spieler acht rüber zu Spieler zwei. Er muss wissen, wo der zweite Ball gerade ist. Dann kommt der Pass zu ihm.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         70,
+         19
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         57.6,
+         17.1
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n2",
+        "to": [
+         69,
+         30
+        ],
+        "type": "dribbling",
+        "delay": 0.4,
+        "ball": "b2"
+       }
+      ]
+     },
+     {
+      "label": "Beide Bälle laufen weiter",
+      "say": "Spieler zehn kommt entgegen und bekommt den Ball von Spieler acht. Gleichzeitig geht Ball zwei rüber zu Spieler fünf. Spieler acht läuft sofort in die Mitte, denn gleich will Spieler fünf zu ihm spielen.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         43,
+         25
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         43.6,
+         25.6
+        ],
+        "type": "pass",
+        "delay": 0.4
+       },
+       {
+        "who": "b2",
+        "to": [
+         61.6,
+         48.1
+        ],
+        "type": "pass",
+        "delay": 0.4
+       },
+       {
+        "who": "n8",
+        "to": [
+         57,
+         30
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Die Spieler kombinieren frei.",
+   "title": "Frei und kreativ kombinieren",
+   "text": "Die feste Folge ist aufgehoben. Die Spieler lassen den Ball klatschen, spielen Doppelpässe und Pässe um die Ecke. Wer den Ball hat, entscheidet selbst. Die anderen bieten sich so an, dass immer zwei Lösungen da sind.",
+   "board": {
+    "players": [
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 29,
+      "y": 27.3,
+      "label": "3"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 38,
+      "y": 47.5,
+      "label": "6"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 61,
+      "y": 47.5,
+      "label": "5"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 71,
+      "y": 27,
+      "label": "2"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 39,
+      "y": 18,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 57,
+      "y": 16.5,
+      "label": "8"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 17,
+      "y": 38,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 29.6,
+      "y": 27.9
+     },
+     {
+      "id": "s1",
+      "x": 20,
+      "y": 41.5
+     },
+     {
+      "id": "s2",
+      "x": 16.5,
+      "y": 42.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Klatschen lassen",
+      "say": "Spieler drei spielt zu Spieler zehn. Der lässt den Ball direkt klatschen, rüber zu Spieler acht.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         39.6,
+         18.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         57.6,
+         17.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Doppelpass und tief",
+      "say": "Spieler zehn dreht sich sofort weg in den Raum zwischen die Dummys. Spieler acht spielt ihm den Ball zurück, und Spieler zehn schickt Spieler zwei tief.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         49,
+         24
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         49.6,
+         24.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n2",
+        "to": [
+         70,
+         19
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       },
+       {
+        "who": "b1",
+        "to": [
+         70.6,
+         19.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Um die Ecke, dann weit rüber",
+      "say": "Spieler zwei legt quer auf Spieler acht. Der spielt den Ball um die Ecke und weit rüber zu Spieler fünf. Beim nächsten Mal sieht die Folge schon wieder anders aus.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         57.6,
+         17.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         61.6,
+         48.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

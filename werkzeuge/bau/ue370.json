@@ -1,0 +1,800 @@
+{
+ "title": "Erst aufbauen, dann verteidigen",
+ "code": "UE-370",
+ "kind": "Spielform",
+ "focuses": [
+  "Verteidigen",
+  "Umschalten",
+  "Passspiel"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 13,
+ "players_max": 13,
+ "field_size": "55 x 35 m",
+ "description": "Ein Wellenspiel für die Viererkette. Sie baut mit dem Torwart ohne Gegner auf und spielt in ein Minitor an der Mittellinie. Sofort kommen vier Angreifer und kontern vier gegen vier aufs große Tor, die Kette muss schnell umschalten und eng zusammenrücken. Zwei Gruppen Angreifer wechseln sich ab, Welle um Welle.",
+ "organisation": [
+  "Aufbauen: Eine Spielfeldhälfte, etwa 55 mal 35 Meter, mit großem Tor. An der Mittellinie stehen außen zwei Minitore und dazwischen vier Dummys.",
+  "Verteilen: Team Neon mit Torwart und Viererkette steht im Feld. Zwei Gruppen von Team Rot mit je vier Angreifern warten an den Dummys. Der Trainer steht mit vielen Bällen an der Mittellinie.",
+  "Ablauf: Der Trainer spielt zum Torwart. Die Viererkette baut ohne Gegner breit auf und spielt in ein Minitor. Dann kommen die ersten vier Angreifer, bekommen einen neuen Ball vom Trainer und spielen vier gegen vier aufs große Tor. Erobert Team Neon den Ball, kontert es auf die Minitore.",
+  "Wertung und Wechsel: Jeder Treffer gibt einen Punkt. Ist der Angriff vorbei, bekommt der Torwart den nächsten Ball, und die zweite Gruppe Angreifer ist dran."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Mit Ball das Feld breit machen",
+  "Nach dem Abschluss sofort umschalten und eng werden",
+  "Einer presst, die anderen sichern ab",
+  "Kopf hoch: Wo stehen die Angreifer?"
+ ],
+ "materials": [
+  "1 Großfeldtor",
+  "2 Minitore",
+  "4 Dummys",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Erst aufbauen, dann verteidigen. Die Viererkette spielt sich ohne Gegner heraus, und gleich danach kommt der Konter von vier Angreifern.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 9,
+    "y": 4,
+    "w": 80,
+    "h": 51
+   },
+   {
+    "type": "rect",
+    "x": 24,
+    "y": 4,
+    "w": 50,
+    "h": 15
+   },
+   {
+    "type": "rect",
+    "x": 36.5,
+    "y": 4,
+    "w": 25,
+    "h": 6
+   },
+   {
+    "type": "line",
+    "x1": 9,
+    "y1": 47,
+    "x2": 89,
+    "y2": 47,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 49,
+    "y": 4,
+    "side": "top",
+    "size": "gross"
+   },
+   {
+    "x": 15.6,
+    "y": 47,
+    "side": "bottom"
+   },
+   {
+    "x": 82.4,
+    "y": 47,
+    "side": "bottom"
+   }
+  ],
+  "cones": [
+   {
+    "x": 28.4,
+    "y": 49.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 42,
+    "y": 49.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 56.3,
+    "y": 49.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 69.4,
+    "y": 49.5,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n1",
+    "team": "a",
+    "x": 49,
+    "y": 9.5,
+    "label": "TW"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 15,
+    "y": 27,
+    "label": "2"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 36,
+    "y": 21,
+    "label": "4"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 61,
+    "y": 21,
+    "label": "5"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 83,
+    "y": 27,
+    "label": "3"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 24,
+    "y": 47,
+    "label": "11"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 36,
+    "y": 47,
+    "label": "10"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 62,
+    "y": 47,
+    "label": "9"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 74,
+    "y": 47,
+    "label": "7"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 48.5,
+    "y": 51,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 49.1,
+    "y": 51.6
+   },
+   {
+    "id": "s1",
+    "x": 52.5,
+    "y": 52.5
+   },
+   {
+    "id": "s2",
+    "x": 45,
+    "y": 52.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Trainer spielt zum Torwart",
+    "say": "Der Trainer spielt den Ball zum Torwart. Sofort macht die Viererkette das Feld breit. Die Außenverteidiger gehen ganz raus an die Linie.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       49.6,
+       10.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n2",
+      "to": [
+       12,
+       30
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "n4",
+      "to": [
+       34,
+       16
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "n5",
+      "to": [
+       63,
+       16
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "n3",
+      "to": [
+       86,
+       30
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "Aufbau ohne Gegner",
+    "say": "Noch stört keiner. Der Torwart spielt kurz zu Spieler vier, der spielt quer zu Spieler fünf, und weiter geht es raus zu Spieler drei.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       34.6,
+       16.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       63.6,
+       16.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       86.6,
+       30.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Ins Minitor, jetzt kommen sie",
+    "say": "Spieler drei dribbelt an und schiebt ins Minitor. Das gibt einen Punkt für Team Neon. Genau das ist das Zeichen für die vier Angreifer.",
+    "moves": [
+     {
+      "who": "n3",
+      "to": [
+       84,
+       39
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       82.4,
+       46.7
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Umschalten, eng zusammen",
+    "say": "Die Angreifer laufen los, und der Trainer spielt Spieler neun einen neuen Ball zu. Spieler vier schaut sofort, wo die Angreifer sind. Die ganze Kette sprintet zurück und rückt eng zusammen.",
+    "moves": [
+     {
+      "who": "r10",
+      "to": [
+       36,
+       37
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r9",
+      "to": [
+       51,
+       34
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r7",
+      "to": [
+       66,
+       38
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r11",
+      "to": [
+       26,
+       40
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "s1",
+      "to": [
+       51.6,
+       34.6
+      ],
+      "type": "pass",
+      "delay": 0.8
+     },
+     {
+      "who": "n4",
+      "to": [
+       51,
+       34
+      ],
+      "type": "blick",
+      "delay": 0.3
+     },
+     {
+      "who": "n2",
+      "to": [
+       22,
+       25
+      ],
+      "type": "lauf",
+      "delay": 0.7
+     },
+     {
+      "who": "n4",
+      "to": [
+       38,
+       22
+      ],
+      "type": "lauf",
+      "delay": 0.7
+     },
+     {
+      "who": "n5",
+      "to": [
+       58,
+       22
+      ],
+      "type": "lauf",
+      "delay": 0.7
+     },
+     {
+      "who": "n3",
+      "to": [
+       72,
+       25
+      ],
+      "type": "lauf",
+      "delay": 0.7
+     }
+    ]
+   },
+   {
+    "label": "Durch die Lücke: Punkt für Rot",
+    "say": "Zwischen Spieler vier und Spieler fünf ist noch eine Lücke. Spieler neun nimmt den Ball mit und zieht sofort ab. Das gibt einen Punkt für Team Rot. Danach bekommt der Torwart den nächsten Ball, und die zweite Gruppe Angreifer ist dran.",
+    "moves": [
+     {
+      "who": "s1",
+      "to": [
+       54,
+       4.3
+      ],
+      "type": "pass"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 9,
+    "y1": 58.6,
+    "x2": 89,
+    "y2": 58.6,
+    "text": "55 m"
+   },
+   {
+    "x1": 95,
+    "y1": 4,
+    "x2": 95,
+    "y2": 47,
+    "text": "35 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Einer presst, die anderen sichern ab.",
+   "title": "Einer presst, drei sichern",
+   "text": "Geht ein Innenverteidiger raus und presst, rücken die anderen drei sofort ein. Der Nebenmann sichert hinter ihm ab, die Außenverteidiger schieben zur Mitte. So bleibt die Kette eng, der Pass durch die Mitte ist zu, und der Angreifer muss nach außen spielen.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 49,
+      "y": 8,
+      "label": "TW"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 25,
+      "y": 24,
+      "label": "2"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 38,
+      "y": 21,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 60,
+      "y": 22,
+      "label": "5"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 76,
+      "y": 23,
+      "label": "3"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 14,
+      "y": 36,
+      "label": "11"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 47,
+      "y": 35,
+      "label": "10"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 60,
+      "y": 38,
+      "label": "9"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 85,
+      "y": 36,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 48.5,
+      "y": 51,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 60.6,
+      "y": 38.6
+     },
+     {
+      "id": "s1",
+      "x": 52.5,
+      "y": 52.5
+     },
+     {
+      "id": "s2",
+      "x": 45,
+      "y": 52.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Spieler fünf presst",
+      "say": "Spieler neun kommt mit Ball. Spieler fünf geht raus und presst. Spieler vier rückt ein, sichert hinter ihm ab und schaut, wo Spieler zehn steht. Die Außenverteidiger schieben mit zur Mitte.",
+      "moves": [
+       {
+        "who": "r9",
+        "to": [
+         59,
+         33
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n5",
+        "to": [
+         60,
+         28.5
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n4",
+        "to": [
+         47,
+         21
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n3",
+        "to": [
+         69,
+         21
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n2",
+        "to": [
+         32,
+         22
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n4",
+        "to": [
+         47,
+         35
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Mitte zu, nach außen gelenkt",
+      "say": "Der Pass auf Spieler zehn ist zu, da steht Spieler vier. Spieler neun bleibt nur der Ball nach außen zu Spieler sieben. Genau dahin will die Kette ihn haben.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         85.6,
+         36.6
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Ball gewonnen, sofort kontern.",
+   "title": "Ball gewonnen, sofort kontern",
+   "text": "Hält der Torwart den Ball oder fängt die Kette einen Pass ab, geht es sofort nach vorn. Die Angreifer sind dann weit aufgerückt und kommen nicht schnell genug zurück. Ein Außenverteidiger startet hoch und breit, der Torwart spielt ihn direkt an, und der Konter geht auf ein Minitor.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 49,
+      "y": 8,
+      "label": "TW"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 26,
+      "y": 20,
+      "label": "2"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 38,
+      "y": 10,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 60,
+      "y": 10,
+      "label": "5"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 72,
+      "y": 20,
+      "label": "3"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 30,
+      "y": 36,
+      "label": "11"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 55,
+      "y": 26,
+      "label": "10"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 44,
+      "y": 26,
+      "label": "9"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 82,
+      "y": 30,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 48.5,
+      "y": 51,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 55.6,
+      "y": 26.6
+     },
+     {
+      "id": "s1",
+      "x": 52.5,
+      "y": 52.5
+     },
+     {
+      "id": "s2",
+      "x": 45,
+      "y": 52.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Der Torwart hält",
+      "say": "Spieler zehn schießt aus der Drehung, aber der Torwart hält den Ball fest. Spieler zwei startet schon nach außen.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         49.6,
+         8.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n2",
+        "to": [
+         20,
+         33
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       }
+      ]
+     },
+     {
+      "label": "Kopf hoch, schnell raus",
+      "say": "Der Torwart schaut sofort nach vorn und sieht Spieler zwei frei an der Linie. Er spielt ihn direkt an.",
+      "moves": [
+       {
+        "who": "n1",
+        "to": [
+         32,
+         22.5
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         20.6,
+         33.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Konter ins Minitor: Punkt",
+      "say": "Spieler zwei nimmt den Ball mit, ist schneller als Spieler elf und schiebt ins Minitor. Das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         17,
+         41
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "r11",
+        "to": [
+         24,
+         40
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         15.6,
+         46.7
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

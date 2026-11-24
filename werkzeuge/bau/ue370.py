@@ -18,8 +18,8 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # Keine Dublette: UE-166 (03-P3, vier gegen vier mit Konter auf zwei Minitore, ohne Aufbauphase), UE-177 (78-P3), UE-212 (78-P6),
 # UE-242 (78-P7), UE-250 (78-P12, Springer spielen ein, drei Minitore) und UE-320 (78-P4) haben keine Aufbauphase ohne Gegner
 # und keine Wellen.
-T = P("T", "c", 49.5, 51, "T")
-ERSATZ = [B("s1", 53, 52.5), B("s2", 46, 52.5)]
+T = P("T", "c", 48.5, 51, "T")
+ERSATZ = [B("s1", 52.5, 52.5), B("s2", 45, 52.5)]
 POS = {"n1": (49, 9.5), "n2": (15, 27), "n4": (36, 21), "n5": (61, 21), "n3": (83, 27),
        "r11": (24, 47), "r10": (36, 47), "r9": (62, 47), "r7": (74, 47)}
 def sp(**k):
@@ -31,7 +31,7 @@ TORE = [{"x": 49, "y": 4, "side": "top", "size": "gross"}, {"x": 15.6, "y": 47, 
 CONES = [C(x, 49.5, shape="stange") for x in (28.4, 42, 56.3, 69.4)]
 DIMS = dims(9, 89, 4, 47, "55 m", "35 m", rx=95)
 BREIT = {"n2": [12, 30], "n4": [34, 16], "n5": [63, 16], "n3": [86, 30]}
-ANGRIFF = {"r10": [36, 37], "r9": [49, 34], "r7": [66, 38], "r11": [26, 40]}
+ANGRIFF = {"r10": [36, 37], "r9": [51, 34], "r7": [66, 38], "r11": [26, 40]}
 ZURUECK = {"n2": [22, 25], "n4": [38, 22], "n5": [58, 22], "n3": [72, 25]}
 
 u = {"title": "Erst aufbauen, dann verteidigen", "code": "UE-370", "kind": "Spielform",
@@ -48,7 +48,7 @@ u = {"title": "Erst aufbauen, dann verteidigen", "code": "UE-370", "kind": "Spie
  "materials": ["1 Großfeldtor", "2 Minitore", "4 Dummys", "Viele Bälle", "Leibchen in zwei Farben"],
  "access": "abo", "hidden": True, "wartet_auf_ton": True,
  "say_intro": "Erst aufbauen, dann verteidigen. Die Viererkette spielt sich ohne Gegner heraus, und gleich danach kommt der Konter von vier Angreifern.",
- "board": {"lines": LINES, "goals": TORE, "cones": CONES, "players": sp(), "balls": [B("b1", 50.1, 51.6)] + ERSATZ,
+ "board": {"lines": LINES, "goals": TORE, "cones": CONES, "players": sp(), "balls": [B("b1", 49.1, 51.6)] + ERSATZ,
   "steps": [
    S("Trainer spielt zum Torwart", "Der Trainer spielt den Ball zum Torwart. Sofort macht die Viererkette das Feld breit. Die Außenverteidiger gehen ganz raus an die Linie.",
      ps("b1", fu(POS["n1"])), *[mv(i, p, delay=0.4) for i, p in BREIT.items()]),
@@ -56,11 +56,11 @@ u = {"title": "Erst aufbauen, dann verteidigen", "code": "UE-370", "kind": "Spie
      ps("b1", fu(BREIT["n4"])), ps("b1", fu(BREIT["n5"]), after=True), ps("b1", fu(BREIT["n3"]), after=True)),
    S("Ins Minitor, jetzt kommen sie", "Spieler drei dribbelt an und schiebt ins Minitor. Das gibt einen Punkt für Team Neon. Genau das ist das Zeichen für die vier Angreifer.",
      dr("n3", "b1", [84, 39]), ps("b1", [82.4, 46.7], after=True)),
-   S("Umschalten, eng zusammen", "Die Angreifer laufen los, und der Trainer spielt Spieler zehn einen neuen Ball zu. Spieler vier schaut sofort, wo die Angreifer sind. Die ganze Kette sprintet zurück und rückt eng zusammen.",
-     *[mv(i, p) for i, p in ANGRIFF.items()], ps("s1", fu(ANGRIFF["r10"]), delay=0.8), bl("n4", ANGRIFF["r9"], delay=0.3),
+   S("Umschalten, eng zusammen", "Die Angreifer laufen los, und der Trainer spielt Spieler neun einen neuen Ball zu. Spieler vier schaut sofort, wo die Angreifer sind. Die ganze Kette sprintet zurück und rückt eng zusammen.",
+     *[mv(i, p) for i, p in ANGRIFF.items()], ps("s1", fu(ANGRIFF["r9"]), delay=0.8), bl("n4", ANGRIFF["r9"], delay=0.3),
      *[mv(i, p, delay=0.7) for i, p in ZURUECK.items()]),
-   S("Durch die Mitte: Punkt für Rot", "Zwischen Spieler vier und Spieler fünf ist eine Lücke. Spieler zehn spielt durch auf Spieler neun, und der zieht sofort ab. Das gibt einen Punkt für Team Rot. Danach bekommt der Torwart den nächsten Ball, und die zweite Gruppe Angreifer ist dran.",
-     ps("s1", fu(ANGRIFF["r9"])), ps("s1", [44, 4.3], after=True))],
+   S("Durch die Lücke: Punkt für Rot", "Zwischen Spieler vier und Spieler fünf ist noch eine Lücke. Spieler neun nimmt den Ball mit und zieht sofort ab. Das gibt einen Punkt für Team Rot. Danach bekommt der Torwart den nächsten Ball, und die zweite Gruppe Angreifer ist dran.",
+     ps("s1", [54, 4.3]))],
   "dims": DIMS},
  "versions": [
   V("Coaching-Punkt", "Jetzt zum Coaching-Punkt: Einer presst, die anderen sichern ab.", "Einer presst, drei sichern",
@@ -73,13 +73,13 @@ u = {"title": "Erst aufbauen, dann verteidigen", "code": "UE-370", "kind": "Spie
      S("Mitte zu, nach außen gelenkt", "Der Pass auf Spieler zehn ist zu, da steht Spieler vier. Spieler neun bleibt nur der Ball nach außen zu Spieler sieben. Genau dahin will die Kette ihn haben.",
        ps("b1", [85.6, 36.6]))]),
   V("Coaching-Punkt", "Der zweite Coaching-Punkt: Ball gewonnen, sofort kontern.", "Ball gewonnen, sofort kontern",
-    "Hält der Torwart den Ball oder fängt die Kette einen Pass ab, geht es sofort nach vorn. Die Angreifer stehen dann tief im eigenen Angriff und sind weit weg. Ein Außenverteidiger startet hoch und breit, der Torwart spielt ihn direkt an, und der Konter geht auf ein Minitor.",
+    "Hält der Torwart den Ball oder fängt die Kette einen Pass ab, geht es sofort nach vorn. Die Angreifer sind dann weit aufgerückt und kommen nicht schnell genug zurück. Ein Außenverteidiger startet hoch und breit, der Torwart spielt ihn direkt an, und der Konter geht auf ein Minitor.",
     sp(n1=(49, 8), n4=(38, 10), n5=(60, 10), n2=(26, 20), n3=(72, 20), r9=(44, 26), r10=(55, 26), r11=(30, 36), r7=(82, 30)),
     [B("b1", 55.6, 26.6)] + ERSATZ,
     [S("Der Torwart hält", "Spieler zehn schießt aus der Drehung, aber der Torwart hält den Ball fest. Spieler zwei startet schon nach außen.",
        ps("b1", [49.6, 8.6]), mv("n2", [20, 33], delay=0.6)),
      S("Kopf hoch, schnell raus", "Der Torwart schaut sofort nach vorn und sieht Spieler zwei frei an der Linie. Er spielt ihn direkt an.",
-       bl("n1", [20, 33]), ps("b1", [20.6, 33.6], after=True)),
+       bl("n1", [32, 22.5]), ps("b1", [20.6, 33.6], after=True)),
      S("Konter ins Minitor: Punkt", "Spieler zwei nimmt den Ball mit, ist schneller als Spieler elf und schiebt ins Minitor. Das gibt einen Punkt für Team Neon.",
        dr("n2", "b1", [17, 41]), mv("r11", [24, 40], delay=0.3), ps("b1", [15.6, 46.7], after=True))])]}
 json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)

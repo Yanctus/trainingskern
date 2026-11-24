@@ -1,0 +1,994 @@
+{
+ "title": "Zehn Pässe, dann verlagern",
+ "code": "UE-369",
+ "kind": "Spielform",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel",
+  "Umschalten"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 19,
+ "players_max": 19,
+ "field_size": "40 x 25 m",
+ "description": "Ein Rondo in zwei Hälften, so wie Team Neon im Vier-Drei-Drei aufbaut. In der einen Hälfte spielen fünf Spieler mit drei Springern gegen vier, in der anderen warten die drei Stürmer gegen vier Verteidiger. Nach zehn Pässen in Folge geht der Ball über einen Springer außen auf die andere Seite, und zwei Mittelfeldspieler schieben mit. Erobert Team Rot den Ball, sucht es sofort einen Springer außen.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 40 mal 25 Metern, in der Mitte in zwei gleich große Hälften geteilt.",
+  "Verteilen: In der Aufbauhälfte stehen fünf Spieler von Team Neon gegen vier von Team Rot, in der anderen Hälfte die drei Stürmer von Team Neon gegen vier Verteidiger. Ein Springer steht in der Mitte der Aufbauhälfte, je einer außen an der Mittellinie. Der Trainer steht mit Bällen an der Seitenlinie.",
+  "Ablauf: Team Neon spielt mit den Springern zehn Pässe in Folge. Dann geht der Ball über einen Springer außen in die andere Hälfte. Zwei Mittelfeldspieler und der Springer aus der Mitte schieben mit, und drüben geht es wieder fünf gegen vier plus drei. Erobert Team Rot den Ball, spielt es schnell zu einem Springer außen.",
+  "Wertung und Wechsel: Jeder gelungene Seitenwechsel gibt einen Punkt für Team Neon. Ein Ballgewinn mit Pass zum Springer außen gibt einen Punkt für Team Rot. Der Trainer zählt mit und tauscht nach einigen Minuten Angreifer und Verteidiger."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Breit stehen, das Feld groß machen",
+  "Schnell und genau passen, ein oder zwei Kontakte",
+  "Kopf hoch: Wo steht der Springer außen?",
+  "Ball erobert? Sofort den Springer suchen"
+ ],
+ "materials": [
+  "6 Hütchen",
+  "Viele Bälle",
+  "Leibchen in drei Farben"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Zehn Pässe, dann verlagern. Ein Rondo in zwei Hälften. Team Neon hält den Ball, und nach zehn Pässen geht er über einen Springer auf die andere Seite.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 9,
+    "y": 4,
+    "w": 78,
+    "h": 47
+   },
+   {
+    "type": "line",
+    "x1": 48,
+    "y1": 4,
+    "x2": 48,
+    "y2": 51,
+    "dashed": true
+   }
+  ],
+  "goals": [],
+  "cones": [
+   {
+    "x": 9,
+    "y": 4,
+    "color": "orange"
+   },
+   {
+    "x": 48,
+    "y": 4,
+    "color": "orange"
+   },
+   {
+    "x": 87,
+    "y": 4,
+    "color": "orange"
+   },
+   {
+    "x": 9,
+    "y": 51,
+    "color": "orange"
+   },
+   {
+    "x": 48,
+    "y": 51,
+    "color": "orange"
+   },
+   {
+    "x": 87,
+    "y": 51,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 10.5,
+    "y": 27.5,
+    "label": "4"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 19,
+    "y": 8,
+    "label": "3"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 19,
+    "y": 47,
+    "label": "2"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 40,
+    "y": 11.5,
+    "label": "10"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 40,
+    "y": 44.5,
+    "label": "8"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 77.5,
+    "y": 9,
+    "label": "7"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 85,
+    "y": 27.5,
+    "label": "9"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 77.5,
+    "y": 46,
+    "label": "11"
+   },
+   {
+    "id": "r14",
+    "team": "b",
+    "x": 19,
+    "y": 27.5,
+    "label": "14"
+   },
+   {
+    "id": "r15",
+    "team": "b",
+    "x": 31.5,
+    "y": 11,
+    "label": "15"
+   },
+   {
+    "id": "r16",
+    "team": "b",
+    "x": 31.5,
+    "y": 44,
+    "label": "16"
+   },
+   {
+    "id": "r17",
+    "team": "b",
+    "x": 40,
+    "y": 28,
+    "label": "17"
+   },
+   {
+    "id": "r13",
+    "team": "b",
+    "x": 57,
+    "y": 27.5,
+    "label": "13"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 65.5,
+    "y": 14,
+    "label": "5"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 66,
+    "y": 40,
+    "label": "6"
+   },
+   {
+    "id": "r12",
+    "team": "b",
+    "x": 74.5,
+    "y": 27.5,
+    "label": "12"
+   },
+   {
+    "id": "fm",
+    "team": "t",
+    "x": 31.5,
+    "y": 27.5,
+    "label": "F"
+   },
+   {
+    "id": "fo",
+    "team": "t",
+    "x": 48.5,
+    "y": 4.5,
+    "label": "F"
+   },
+   {
+    "id": "fu",
+    "team": "t",
+    "x": 48.5,
+    "y": 50.5,
+    "label": "F"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 57.5,
+    "y": 55.3,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 11.1,
+    "y": 28.1
+   },
+   {
+    "id": "s1",
+    "x": 61,
+    "y": 55.8
+   },
+   {
+    "id": "s2",
+    "x": 63.5,
+    "y": 55.8
+   }
+  ],
+  "steps": [
+   {
+    "label": "Fünf gegen vier plus drei",
+    "say": "Team Neon hat in der Aufbauhälfte den Ball. Fünf Spieler und drei Springer gegen vier von Team Rot. Spieler vier spielt raus zu Spieler zwei, und der legt auf den Springer in der Mitte.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       19.6,
+       47.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       32.1,
+       28.1
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zehn Pässe, dann zu zehn",
+    "say": "So läuft der Ball, bis zehn Pässe in Folge geschafft sind. Jetzt spielt der Springer zu Spieler zehn. Der schaut zum Ball, bis er ihn hat.",
+    "moves": [
+     {
+      "who": "n10",
+      "to": [
+       31.5,
+       27.5
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b1",
+      "to": [
+       40.6,
+       12.1
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Aufdrehen, raus zum Springer",
+    "say": "Mit dem ersten Kontakt dreht Spieler zehn auf. Sein Blick geht sofort zum Springer außen an der Mittellinie, und da spielt er hin.",
+    "moves": [
+     {
+      "who": "n10",
+      "to": [
+       48.5,
+       4.5
+      ],
+      "type": "blick",
+      "von": [
+       31.5,
+       27.5
+      ],
+      "dauer": 1.3
+     },
+     {
+      "who": "n10",
+      "to": [
+       48.5,
+       4.5
+      ],
+      "type": "dreh",
+      "delay": 0.4
+     },
+     {
+      "who": "b1",
+      "to": [
+       49.1,
+       5.1
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Seitenwechsel: Punkt",
+    "say": "Der Springer spielt den langen Ball rüber zu Spieler sieben. Der Seitenwechsel gibt einen Punkt für Team Neon. Spieler zehn, Spieler acht und der Springer aus der Mitte schieben mit rüber, und drüben geht es wieder mit zehn Pässen weiter.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       78.1,
+       9.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n10",
+      "to": [
+       56.5,
+       12
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n8",
+      "to": [
+       56.5,
+       44.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "fm",
+      "to": [
+       35,
+       36
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "fm",
+      "to": [
+       45,
+       36
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "fm",
+      "to": [
+       52,
+       32
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 9,
+    "y1": 58.6,
+    "x2": 87,
+    "y2": 58.6,
+    "text": "40 m"
+   },
+   {
+    "x1": 93,
+    "y1": 4,
+    "x2": 93,
+    "y2": 51,
+    "text": "25 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Das Feld ist in Zonen geteilt.",
+   "title": "Ein Spieler pro Zone",
+   "text": "Jede Hälfte ist in sechs Zonen geteilt. In jeder Zone darf nur ein Spieler von Team Neon stehen, die Springer und Team Rot dürfen überall hin. Stehen zwei von Team Neon in einer Zone, gibt das einen Punkt für Team Rot. Der Trainer unterbricht nicht, die Spieler regeln das selbst.",
+   "board": {
+    "players": [
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 10.5,
+      "y": 27.5,
+      "label": "4"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 19,
+      "y": 8,
+      "label": "3"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 19,
+      "y": 47,
+      "label": "2"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 40,
+      "y": 11.5,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 40,
+      "y": 44.5,
+      "label": "8"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 77.5,
+      "y": 9,
+      "label": "7"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 85,
+      "y": 27.5,
+      "label": "9"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 77.5,
+      "y": 46,
+      "label": "11"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 19,
+      "y": 27.5,
+      "label": "14"
+     },
+     {
+      "id": "r15",
+      "team": "b",
+      "x": 31.5,
+      "y": 11,
+      "label": "15"
+     },
+     {
+      "id": "r16",
+      "team": "b",
+      "x": 31.5,
+      "y": 44,
+      "label": "16"
+     },
+     {
+      "id": "r17",
+      "team": "b",
+      "x": 40,
+      "y": 28,
+      "label": "17"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 57,
+      "y": 27.5,
+      "label": "13"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 65.5,
+      "y": 14,
+      "label": "5"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 66,
+      "y": 40,
+      "label": "6"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 74.5,
+      "y": 27.5,
+      "label": "12"
+     },
+     {
+      "id": "fm",
+      "team": "t",
+      "x": 31.5,
+      "y": 27.5,
+      "label": "F"
+     },
+     {
+      "id": "fo",
+      "team": "t",
+      "x": 48.5,
+      "y": 4.5,
+      "label": "F"
+     },
+     {
+      "id": "fu",
+      "team": "t",
+      "x": 48.5,
+      "y": 50.5,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 57.5,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 19.6,
+      "y": 47.6
+     },
+     {
+      "id": "s1",
+      "x": 61,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 63.5,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Breit in den Zonen",
+      "say": "Spieler zwei spielt zum Springer in der Mitte. Spieler zehn und Spieler acht gehen in ihren Zonen ganz nach außen und machen das Feld breit.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         32.1,
+         28.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n10",
+        "to": [
+         43,
+         8
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n8",
+        "to": [
+         43,
+         47
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Zwei in einer Zone: Punkt für Rot",
+      "say": "Spieler drei kommt nach innen und will sich anbieten. Aber in dieser Zone steht schon Spieler vier. Zwei in einer Zone, das gibt einen Punkt für Team Rot.",
+      "moves": [
+       {
+        "who": "n3",
+        "to": [
+         22,
+         22
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Besser: in der eigenen Zone",
+      "say": "Besser so. Spieler drei bleibt außen in seiner Zone. Dort hat er Platz und bekommt den Ball vom Springer.",
+      "moves": [
+       {
+        "who": "n3",
+        "to": [
+         19,
+         8
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         19.6,
+         8.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "lines": [
+     {
+      "type": "rect",
+      "x": 9,
+      "y": 4,
+      "w": 78,
+      "h": 47
+     },
+     {
+      "type": "line",
+      "x1": 48,
+      "y1": 4,
+      "x2": 48,
+      "y2": 51,
+      "dashed": true
+     },
+     {
+      "type": "line",
+      "x1": 28.5,
+      "y1": 4,
+      "x2": 28.5,
+      "y2": 51,
+      "dashed": true
+     },
+     {
+      "type": "line",
+      "x1": 67.5,
+      "y1": 4,
+      "x2": 67.5,
+      "y2": 51,
+      "dashed": true
+     },
+     {
+      "type": "line",
+      "x1": 9,
+      "y1": 19.7,
+      "x2": 87,
+      "y2": 19.7,
+      "dashed": true
+     },
+     {
+      "type": "line",
+      "x1": 9,
+      "y1": 35.3,
+      "x2": 87,
+      "y2": 35.3,
+      "dashed": true
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Ein Verteidiger mehr presst.",
+   "title": "Ein Verteidiger mehr",
+   "text": "Ein Verteidiger von der anderen Seite darf jetzt mit rüber und pressen. Team Neon hat weniger Zeit. Die Spieler müssen sich schneller anbieten oder mit einem längeren Pass den freien Springer suchen. Erobert Team Rot den Ball, behält es ihn und verlagert selbst über einen Springer.",
+   "board": {
+    "players": [
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 10.5,
+      "y": 27.5,
+      "label": "4"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 19,
+      "y": 8,
+      "label": "3"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 19,
+      "y": 47,
+      "label": "2"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 40,
+      "y": 11.5,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 40,
+      "y": 44.5,
+      "label": "8"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 77.5,
+      "y": 9,
+      "label": "7"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 85,
+      "y": 27.5,
+      "label": "9"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 77.5,
+      "y": 46,
+      "label": "11"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 19,
+      "y": 27.5,
+      "label": "14"
+     },
+     {
+      "id": "r15",
+      "team": "b",
+      "x": 31.5,
+      "y": 11,
+      "label": "15"
+     },
+     {
+      "id": "r16",
+      "team": "b",
+      "x": 31.5,
+      "y": 44,
+      "label": "16"
+     },
+     {
+      "id": "r17",
+      "team": "b",
+      "x": 40,
+      "y": 28,
+      "label": "17"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 57,
+      "y": 27.5,
+      "label": "13"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 65.5,
+      "y": 14,
+      "label": "5"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 66,
+      "y": 40,
+      "label": "6"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 74.5,
+      "y": 27.5,
+      "label": "12"
+     },
+     {
+      "id": "fm",
+      "team": "t",
+      "x": 31.5,
+      "y": 27.5,
+      "label": "F"
+     },
+     {
+      "id": "fo",
+      "team": "t",
+      "x": 48.5,
+      "y": 4.5,
+      "label": "F"
+     },
+     {
+      "id": "fu",
+      "team": "t",
+      "x": 48.5,
+      "y": 50.5,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 57.5,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 19.6,
+      "y": 47.6
+     },
+     {
+      "id": "s1",
+      "x": 61,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 63.5,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Spieler dreizehn kommt rüber",
+      "say": "Spieler zwei spielt zum Springer in der Mitte. Sofort kommt Spieler dreizehn von der anderen Seite rüber und presst mit.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         32.1,
+         28.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r13",
+        "to": [
+         47,
+         18
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Ball erobert",
+      "say": "Der Springer spielt zu Spieler zehn. Spieler dreizehn ist schon da, geht dazwischen und erobert den Ball.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         40.6,
+         12.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r13",
+        "to": [
+         41.5,
+         14.5
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "r13",
+        "to": [
+         44,
+         19
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Ablegen auf siebzehn",
+      "say": "Spieler dreizehn legt sofort ab auf Spieler siebzehn. Der schaut zum Ball, bis er ihn hat.",
+      "moves": [
+       {
+        "who": "r17",
+        "to": [
+         44,
+         19
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         40.6,
+         28.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Schnell zum Springer: Punkt",
+      "say": "Spieler siebzehn dreht auf, sieht den Springer außen und spielt hin. Das gibt einen Punkt für Team Rot. Jetzt hat Team Rot den Ball und verlagert selbst.",
+      "moves": [
+       {
+        "who": "r17",
+        "to": [
+         48.5,
+         50.5
+        ],
+        "type": "blick",
+        "von": [
+         44,
+         19
+        ],
+        "dauer": 1.3
+       },
+       {
+        "who": "r17",
+        "to": [
+         48.5,
+         50.5
+        ],
+        "type": "dreh",
+        "delay": 0.4
+       },
+       {
+        "who": "b1",
+        "to": [
+         49.1,
+         51.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
