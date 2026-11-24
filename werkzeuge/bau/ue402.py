@@ -15,7 +15,7 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # Sichtkegel: Text/Ton "Recognise whether to advance", "spatial awareness", "fully aware of team mates' positioning"; im Video
 # nicht eingezeichnet. Richtung aus dem Sinn: Spieler acht schaut zum Passgeber, nimmt an und schwenkt den Blick beim Aufdrehen
 # nach außen (bl mit von + drehen, Vorbild ue300); Spieler neun genauso vor dem Abschluss; in den Steigerungen schaut Spieler vier
-# vor dem Andribbeln bzw. vor dem Nachrücken nach vorn.
+# (Kegel auf etwa 20 Einheiten gekürzt) vor dem Andribbeln bzw. vor dem Nachrücken nach vorn.
 # Kein Dublette: UE-234 (43-P11) ist auch ein halbes Feld mit drei Zonen und Konter auf Minitore, aber 8 gegen 8 mit 2 gegen 1
 # hinten und anderer Regel (Dribbling in die Mitte öffnet das Spiel); hier 3 gegen 3, 3 gegen 2, Anspiel in jeder Zone Pflicht.
 T = P("T", "c", 8, 50, "T")
@@ -50,14 +50,14 @@ u = {"title": "Sieben gegen sieben in Dritteln", "code": "UE-402", "kind": "Spie
    S("Hinten drei gegen drei", "Spieler sechs eröffnet hinten. Über Spieler vier geht der Ball weiter zu Spieler drei. Hier hinten hat jeder einen Gegenspieler, also schnell spielen.",
      ps("b1", fuss("n4")), mv("r14", [55, 48], delay=0.3), ps("b1", fuss("n3"), after=True)),
    S("Steil in die Mittelzone", "Spieler acht zeigt sich in der Mitte und schaut zum Ball. Spieler drei spielt flach und steil zu ihm. Wer in seiner Zone angespielt wird, darf weiter nach vorn.",
-     bl("n8", POS["n3"]), ps("b1", fuss("n8"), after=True)),
+     bl("n8", [33.3, 45.4]), ps("b1", fuss("n8"), after=True)),
    S("Aufdrehen, raus nach außen", "Erst jetzt dreht Spieler acht auf, und der Blick geht nach außen. Spieler dreizehn kommt zu spät. Der Ball geht raus zu Spieler elf.",
-     bl("n8", POS["n11"], von=POS["n3"], dauer=1.3), drehen("n8", POS["n11"], delay=0.4), mv("r13", [45, 33], delay=0.6), ps("b1", fuss("n11"), after=True)),
+     bl("n8", [31.2, 33.1], von=[33.3, 45.4], dauer=1.3), drehen("n8", POS["n11"], delay=0.4), mv("r13", [45, 33], delay=0.6), ps("b1", fuss("n11"), after=True)),
    S("Pass in die Endzone", "Spieler neun kommt kurz und schaut zum Ball. Spieler elf spielt ihn in der Endzone an und läuft sofort hinterher. Auf der anderen Seite startet Spieler sieben. Die beiden Verteidiger gehen mit.",
-     mv("n9", [52, 17]), bl("n9", POS["n11"], delay=0.5), ps("b1", [52.6, 17.6], after=True),
+     mv("n9", [52, 17]), bl("n9", [33.4, 24.4], delay=0.5), ps("b1", [52.6, 17.6], after=True),
      mv("n11", [29, 11], after=True), mv("r2", [34, 12], after=True), mv("n7", [78, 12], delay=1.2), mv("r5", [72, 11], delay=1.5)),
    S("Aufdrehen, Abschluss: Punkt", "Spieler neun dreht auf und hat freie Bahn. Er schießt flach ins Eck, und das gibt einen Punkt für Team Neon. Danach spielt der Trainer den nächsten Ball zu den drei Spielern hinten.",
-     bl("n9", SCHUSS, von=POS["n11"], dauer=1.3), drehen("n9", SCHUSS, delay=0.4), ps("b1", SCHUSS, after=True))]},
+     bl("n9", SCHUSS, von=[33.4, 24.4], dauer=1.3), drehen("n9", SCHUSS, delay=0.4), ps("b1", SCHUSS, after=True))]},
  "versions": [
   V("Steigerung", "Und jetzt die Steigerung: Ein Spieler von hinten darf mit Ball in die Mittelzone dribbeln.", "Vier gegen zwei in der Mitte",
     "Jetzt darf ein Spieler von hinten mit Ball in die Mittelzone dribbeln. Dann stehen dort vier gegen zwei. Team Rot zieht sich zurück und stellt den Raum zu, statt sofort zu pressen. Team Neon hat so mehr Zeit am Ball.",
