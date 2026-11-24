@@ -1,0 +1,60 @@
+{
+  "titel": "Übung komplett: 4 gegen 4 mit Strafrunde",
+  "intro": false,
+  "musik": "zufall",
+  "musikLaut": 0.14,
+  "geraeusche": 0.6,
+  "uebergang": "panel",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "comic-sprechblase",
+      "dauer": 3.6,
+      "sprecher": "Gegentor? Strafrunde!",
+      "sprecherAb": 0.7,
+      "text": "Gegentor? *Strafrunde!*",
+      "dach": "Kondition"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-006",
+      "stimme": true,
+      "dach": "So läuft’s"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-006",
+      "stimme": true,
+      "fassung": 1,
+      "uebergang": "knall"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-006",
+      "stimme": true,
+      "fassung": 2,
+      "uebergang": "pinsel"
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "blende",
+      "sprecher": "Trainingskern. Jetzt ausprobieren auf trainingskern Punkt D E.",
+      "sprecherAb": 0.4,
+      "dauer": 4.2
+    }
+  ],
+  "storys": {
+    "name": "4 gegen 4 mit Strafrunde",
+    "zeit": "18:30",
+    "bilder": [
+      10,
+      40
+    ],
+    "frage": [
+      "Laufen ohne Ball:",
+      "Muss das sein?"
+    ],
+    "antwort": "Oder lieber Kondition im Spiel? Antworte per Nachricht."
+  }
+}

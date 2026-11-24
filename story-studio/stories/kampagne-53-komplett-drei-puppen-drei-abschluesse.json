@@ -1,0 +1,62 @@
+{
+  "titel": "Übung komplett: Drei Puppen, drei Abschlüsse",
+  "intro": false,
+  "musik": "zufall",
+  "musikLaut": 0.14,
+  "geraeusche": 0.6,
+  "uebergang": "pinsel",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "comic-megafon",
+      "dauer": 3.6,
+      "sprecher": "Drei Puppen. Drei Tore!",
+      "sprecherAb": 1.1,
+      "zeilen": [
+        "Drei Puppen.",
+        "*Drei Tore!*"
+      ]
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-269",
+      "stimme": true,
+      "dach": "So läuft’s"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-269",
+      "stimme": true,
+      "fassung": 1,
+      "uebergang": "raster"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-269",
+      "stimme": true,
+      "fassung": 2,
+      "uebergang": "panel"
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "blende",
+      "sprecher": "Trainingskern. Jetzt ausprobieren auf trainingskern Punkt D E.",
+      "sprecherAb": 0.4,
+      "dauer": 4.2
+    }
+  ],
+  "storys": {
+    "name": "Drei Puppen, drei Abschlüsse",
+    "zeit": "18:30",
+    "bilder": [
+      10,
+      40
+    ],
+    "frage": [
+      "Abschluss:",
+      "Wie oft pro Training?"
+    ],
+    "antwort": "Jedes Mal oder nur ab und zu? Antworte per Nachricht."
+  }
+}

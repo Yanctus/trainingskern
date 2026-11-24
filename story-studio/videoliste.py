@@ -18,20 +18,20 @@ altlaenge = {}
 if os.path.exists("VIDEOS.md"):
     for n, l in re.findall(r"\| `(kampagne-[^`]+)` \|[^\n]*?\| (\d+ s) \|", open("VIDEOS.md").read()): altlaenge[n] = l
 zeilen, eigen, kurz = [], {}, {}
-for p in sorted(glob.glob("stories/kampagne-*.json")):
+for p in sorted(glob.glob("stories/kampagne-*.json")) + sorted(glob.glob("stories/spielsystem-*.json")):
     n = os.path.basename(p)[:-5]
     if n == "kampagne-01-kein-plan": continue  # alte Zeichentrick-Fassung, ersetzt durch -comic
-    s = json.load(open(p)); nr = int(n.split("-")[1])
+    s = json.load(open(p)); nr = int(n.split("-")[1]) + (100 if n.startswith("spielsystem") else 0)
     sz = s["szenen"]; hook = next((z for z in sz if z["typ"] == "hook" and z.get("film")), {})
     text = " / ".join(z.replace("*", "") for z in hook.get("zeilen", [])) or hook.get("text", "").replace("*", "")
     codes = list(dict.fromkeys(z["code"] for z in sz if z.get("code")))
     # Marketing: Story-Block mit "art": "marketing"; die alten Videos ohne Story-Bilder fest
     uebung = not (s.get("storys", {}).get("art") == "marketing" or nr in (1, 7, 8))
-    art = "Übung" if uebung else "Marketing"
-    for c in codes: (eigen if uebung else kurz).setdefault(c, []).append(f"{nr:02d}")
+    art = "Spielsystem" if nr > 100 else ("Übung" if uebung else "Marketing")
+    for c in codes: (eigen if uebung or nr > 100 else kurz).setdefault(c, []).append(('S' + str(nr - 100).zfill(2)) if nr > 100 else f"{nr:02d}")
     st = s.get("storys", {}); frage = " ".join(st.get("frage", []))
     if st.get("art") == "marketing": frage = " ".join(st.get("problem", [])) + " → " + frage
-    zeilen.append(f"| {nr:02d} | `{n}` | {art} | {', '.join(f'{c} {name(c)}'.strip() for c in codes)} | {hook.get('film','')} | {text} | {laenge(n) or altlaenge.get(n,'')} | {frage} |")
+    zeilen.append(f"| {('S' + str(nr - 100).zfill(2)) if nr > 100 else f'{nr:02d}'} | `{n}` | {art} | {', '.join(f'{c} {name(c)}'.strip() for c in codes)} | {hook.get('film','')} | {text} | {laenge(n) or altlaenge.get(n,'')} | {frage} |")
 out = ["# Alle Kampagnen-Videos", "",
  "Automatisch erzeugt mit `python3 videoliste.py` (im Ordner `story-studio`). Nach jeder neuen Runde neu erzeugen.",
  "Zweck: Keine Übung doppelt verfilmen, Intros und Story-Fragen abwechseln.", "",

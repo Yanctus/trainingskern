@@ -1,0 +1,60 @@
+{
+  "titel": "Übung komplett: Aufdrehen und verlagern",
+  "intro": false,
+  "musik": "zufall",
+  "musikLaut": 0.14,
+  "geraeusche": 0.6,
+  "uebergang": "raster",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "comic-banner",
+      "dauer": 3.6,
+      "sprecher": "Aufdrehen statt zurückspielen!",
+      "sprecherAb": 1.6,
+      "text": "Aufdrehen *statt zurückspielen!*",
+      "dach": "Passspiel"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-034",
+      "stimme": true,
+      "dach": "So läuft’s"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-034",
+      "stimme": true,
+      "fassung": 1,
+      "uebergang": "panel"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-034",
+      "stimme": true,
+      "fassung": 2,
+      "uebergang": "knall"
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "blende",
+      "sprecher": "Trainingskern. Jetzt ausprobieren auf trainingskern Punkt D E.",
+      "sprecherAb": 0.4,
+      "dauer": 4.2
+    }
+  ],
+  "storys": {
+    "name": "Aufdrehen und verlagern",
+    "zeit": "18:30",
+    "bilder": [
+      10,
+      40
+    ],
+    "frage": [
+      "Aufdrehen:",
+      "Traut sich dein Team?"
+    ],
+    "antwort": "Oder geht der Ball immer zurück? Antworte per Nachricht."
+  }
+}

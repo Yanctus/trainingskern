@@ -1,0 +1,49 @@
+{
+  "titel": "Spielsystem: Aufbau im 4-2-3-1",
+  "intro": false,
+  "musik": "zufall",
+  "musikLaut": 0.12,
+  "geraeusche": 0.6,
+  "uebergang": "raster",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "comic-tafel",
+      "dauer": 3.8,
+      "sprecher": "Vier-zwei-drei-eins. Wer macht was?",
+      "sprecherAb": 1.4,
+      "zeilen": [
+        "4-2-3-1",
+        "*Wer macht*",
+        "*was?*"
+      ],
+      "dach": "Spielsystem"
+    },
+    {
+      "typ": "uebung",
+      "code": "TA-002",
+      "stimme": true,
+      "schritte": 2,
+      "dach": "Spielsystem"
+    },
+    {
+      "typ": "hook",
+      "ton": "neon",
+      "zeilen": [
+        "Das ganze System:",
+        "*kostenlos auf*",
+        "*trainingskern.de*"
+      ],
+      "dauer": 3.4,
+      "takt": 0.3,
+      "uebergang": "knall",
+      "sprecher": "Das ganze System siehst du kostenlos auf trainingskern Punkt D E, von mir auf Deutsch erklärt."
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "blende",
+      "dauer": 4.2
+    }
+  ]
+}
