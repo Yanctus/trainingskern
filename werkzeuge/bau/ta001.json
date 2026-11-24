@@ -46,7 +46,7 @@
  "access": "abo",
  "hidden": true,
  "wartet_auf_ton": true,
- "say_intro": "Aufbau im Vier-drei-drei über den Torwart. Diesmal keine Übung, sondern das System. Wer steht wo, wie bewegen sich alle mit dem Ball, und welche Wege gibt es nach vorn?",
+ "say_intro": "Aufbau im Vier-drei-drei über den Torwart. Heute mal keine Übung, sondern das System dahinter. Wer steht wo? Wie bewegen sich alle mit dem Ball? Und welche Wege gibt's nach vorn? Schauen wir's uns an.",
  "board": {
   "massstab": "gross",
   "lines": [
@@ -230,7 +230,7 @@
   "steps": [
    {
     "label": "Wer steht wo im 4-3-3",
-    "say": "Der Trainer spielt dem Torwart den Ball. Wir stehen im Vier-drei-drei. Hinten die Viererkette, also zwei Innenverteidiger und außen die zwei Außenverteidiger. Davor der Sechser, daneben die zwei Achter. Vorn der Stürmer mit den beiden Flügelspielern.",
+    "say": "Der Trainer spielt den Ball zum Torwart. Wir stehen im Vier-drei-drei. Hinten die Viererkette, also zwei Innenverteidiger und außen die beiden Außenverteidiger. Davor der Sechser, neben ihm die zwei Achter. Und ganz vorn der Stürmer mit seinen zwei Flügelspielern.",
     "moves": [
      {
       "who": "b1",
@@ -244,7 +244,7 @@
    },
    {
     "label": "Das Feld groß machen",
-    "say": "Hat der Torwart den Ball, machen wir das Feld groß. Die Innenverteidiger gehen breit bis an die Ecken vom Strafraum. Die Außenverteidiger schieben hoch an die Seitenlinie. Vorn bleiben die Flügel ganz breit, und der Stürmer drückt die Abwehr nach hinten.",
+    "say": "Sobald der Torwart den Ball hat, machen wir das Feld groß. Die Innenverteidiger gehen raus, bis an die Ecken vom Strafraum. Die Außenverteidiger schieben hoch an die Linie. Vorn bleiben die Flügel schön breit, und der Stürmer drückt die Abwehr nach hinten. So hat der Gegner richtig viel Platz zu verteidigen.",
     "moves": [
      {
       "who": "n5",
@@ -330,7 +330,7 @@
    },
    {
     "label": "Drei Möglichkeiten für den Torwart",
-    "say": "Der Torwart hat drei Möglichkeiten: beide Innenverteidiger und den Sechser. Er spielt nach rechts. Und mit dem Ball schiebt die ganze Mannschaft ein Stück auf diese Seite, auch die Spieler weit weg vom Ball.",
+    "say": "Jetzt schau auf den Torwart. Er hat drei Möglichkeiten: die beiden Innenverteidiger oder den Sechser in der Mitte. Er spielt nach rechts. Und mit dem Ball schiebt die ganze Mannschaft ein Stück rüber. Auch die, die weit weg sind.",
     "moves": [
      {
       "who": "k1",
@@ -443,7 +443,7 @@
    },
    {
     "label": "Der Innenverteidiger wählt außen",
-    "say": "Auch der Innenverteidiger hat mehrere Anspielstationen: außen, schräg innen den Achter oder den Sechser. Er wählt außen, da ist am meisten Platz. Jetzt gilt: Einer kommt, einer geht. Der Achter kommt schräg vor den Ball, dafür geht der Flügelspieler nach vorn in die Tiefe. Der Sechser sichert dahinter ab.",
+    "say": "Auch der Innenverteidiger hat wieder Optionen. Außen, schräg innen den Achter, oder den Sechser. Außen ist am meisten Platz, also geht der Ball dahin. Und jetzt pass auf: Einer kommt, einer geht. Der Achter kommt schräg vor den Ball. Dafür geht der Flügelspieler in die Tiefe. Der Sechser sichert hinten ab.",
     "moves": [
      {
       "who": "n4",
@@ -565,7 +565,7 @@
    },
    {
     "label": "Vier Wege vom Außenverteidiger",
-    "say": "Jetzt hat der Außenverteidiger vier Wege. Die Linie entlang zum Flügel, schräg in den Achter, zurück zum Sechser oder zum Innenverteidiger. Der Achter steht offen und schaut zum Ball, also bekommt er ihn. Der Flügelspieler ist schon unterwegs in die Tiefe.",
+    "say": "Der Außenverteidiger hat jetzt vier Wege. Die Linie runter, schräg in den Achter, oder zurück zum Sechser oder zum Innenverteidiger. Der Achter steht offen und schaut zum Ball. Also kriegt er ihn. Und der Flügel? Der ist schon unterwegs.",
     "moves": [
      {
       "who": "n2",
@@ -669,7 +669,7 @@
    },
    {
     "label": "Aufdrehen, dann entscheiden",
-    "say": "Erst nach der Annahme dreht der Achter auf. Vor ihm hat er wieder drei Möglichkeiten: den Flügel in der Tiefe, den Stürmer oder den zweiten Achter. Der Flügel ist frei, also geht der Ball in seinen Lauf. Die anderen rücken nach und laufen in den Strafraum.",
+    "say": "Erst nach der Annahme dreht der Achter auf. Vor ihm wieder drei Möglichkeiten: der Flügel in der Tiefe, der Stürmer oder der zweite Achter. Der Flügel ist frei, also ab in seinen Lauf. Und die anderen? Die rücken nach und gehen in den Strafraum.",
     "moves": [
      {
       "who": "n8",
@@ -968,7 +968,7 @@
     "steps": [
      {
       "label": "Zwei Stürmer laufen an",
-      "say": "Jetzt laufen zwei Stürmer an, und der Gegner rückt mit allen hoch. Unser Sechser lässt sich zwischen die Innenverteidiger fallen, die gehen noch breiter. Hinten sind wir drei plus Torwart gegen zwei. Einer kommt, einer geht: Der Sechser kommt nach hinten, dafür rückt ein Achter in seinen Raum. Der andere Achter sucht die Lücke zwischen den Linien.",
+      "say": "Jetzt wird's ernst. Zwei Stürmer laufen an, und der Gegner rückt mit allen hoch. Unser Sechser lässt sich zwischen die Innenverteidiger fallen, und die gehen noch breiter. Hinten sind wir jetzt zu dritt plus Torwart, gegen zwei. Und auch hier: Einer kommt, einer geht. Der Sechser kommt nach hinten, also rückt ein Achter in seinen Raum. Der andere Achter sucht sich die Lücke zwischen den Linien.",
       "moves": [
        {
         "who": "r19",
@@ -1144,7 +1144,7 @@
      },
      {
       "label": "Wer ist frei?",
-      "say": "Der Torwart hat drei Anspielstationen. Er spielt den Sechser an, und sofort laufen die zwei Stürmer auf ihn zu. Das ist gut für uns, denn jetzt ist außen einer frei.",
+      "say": "Der Torwart hat drei Anspielstationen. Er spielt den Sechser an. Und sofort laufen die Stürmer auf ihn zu. Genau das wollen wir, denn jetzt ist außen einer frei.",
       "moves": [
        {
         "who": "k1",
@@ -1194,7 +1194,7 @@
      },
      {
       "label": "Der freie Mann",
-      "say": "Der Sechser sieht beide Innenverteidiger. Den Achter verdeckt der anlaufende Stürmer. Links ist am meisten Platz, also geht der Ball dorthin. Jetzt verschiebt der Gegner auf diese Seite, und wir schieben mit: Der Außenverteidiger bleibt breit, der Achter steht in der Lücke.",
+      "say": "Der Sechser schaut kurz hoch. Beide Innenverteidiger sind frei, den Achter verdeckt der Stürmer, der ihn anläuft. Links ist am meisten Platz, also geht der Ball dahin. Der Gegner verschiebt, und wir schieben mit. Der Außenverteidiger bleibt breit, der Achter steht in der Lücke.",
       "moves": [
        {
         "who": "n6",
@@ -1370,7 +1370,7 @@
      },
      {
       "label": "Andribbeln und locken",
-      "say": "Der Innenverteidiger hat Platz und dribbelt an, bis ein Gegner kommt. Der Gegner kommt von außen und stellt den Weg zum Außenverteidiger zu. Dafür ist innen frei: der Achter und der Stürmer. Der Stürmer kommt entgegen, und der Flügel geht an die letzte Linie, bereit für den Lauf in die Tiefe. Einer kommt, einer geht.",
+      "say": "Der Innenverteidiger hat Platz. Also dribbelt er an, so lange, bis einer kommt. Der Gegner kommt von außen und macht den Weg zum Außenverteidiger zu. Dafür ist innen jetzt was frei: der Achter und der Stürmer. Der Stürmer kommt entgegen, und der Flügel geht an die letzte Linie. Bereit für den Lauf in die Tiefe.",
       "moves": [
        {
         "who": "n5",
@@ -1448,7 +1448,7 @@
      },
      {
       "label": "Der dritte Mann",
-      "say": "Er wählt den Stürmer. Der lässt den Ball direkt prallen auf den Achter, der in seinem Rücken mitläuft. Das ist der dritte Mann: Er bekommt den Ball schon mit Blick nach vorn.",
+      "say": "Er nimmt den Stürmer. Der lässt den Ball direkt prallen, auf den Achter, der in seinem Rücken mitläuft. Das nennt man den dritten Mann. Er kriegt den Ball und hat den Blick schon nach vorn.",
       "moves": [
        {
         "who": "b1",
@@ -1498,7 +1498,7 @@
      },
      {
       "label": "Hinter die Kette",
-      "say": "Jetzt geht alles nach vorn. Der Achter hat den Flügel in der Tiefe, den Außenverteidiger außen und den Stürmer. Der Flügel startet erst mit dem Pass, so steht er nicht im Abseits, und bekommt den Ball in den Lauf. Mit wenigen Pässen ist das Pressing überspielt.",
+      "say": "Jetzt geht alles nach vorn. Der Achter hat den Flügel, den Außenverteidiger und den Stürmer. Der Flügel startet genau mit dem Pass, so steht er nicht im Abseits. Und der Ball kommt genau in seinen Lauf. Ein paar Pässe, und das Pressing ist überspielt.",
       "moves": [
        {
         "who": "n10",
@@ -1792,7 +1792,7 @@
     "steps": [
      {
       "label": "Der Gegner schiebt zum Ball",
-      "say": "Unser rechter Außenverteidiger hat den Ball, und der Gegner schiebt mit allen auf diese Seite. Wir bieten uns kurz an, aber der Flügel und der Achter sind zugestellt. Frei ist nur der Weg zurück. Auf der anderen Seite bleiben unser Außenverteidiger und der Flügelspieler breit.",
+      "say": "Neue Situation. Unser rechter Außenverteidiger hat den Ball, und der Gegner schiebt mit allen rüber. Wir bieten uns kurz an, aber Flügel und Achter sind zugestellt. Frei ist nur der Weg zurück. Auf der anderen Seite bleiben unser Außenverteidiger und der Flügel trotzdem breit. Da ist jetzt der Platz.",
       "moves": [
        {
         "who": "r21",
@@ -1918,7 +1918,7 @@
      },
      {
       "label": "Zurück über den Torwart",
-      "say": "Also kein Pass in die enge Seite. Der Ball geht zurück zum Innenverteidiger und weiter zum Torwart. Die zwei Stürmer laufen hinterher, und unser Sechser stellt sich mittig hin. Das ist kein Rückschritt, so verlagern wir das Spiel.",
+      "say": "Also kein Pass in die enge Seite. Der Ball geht zurück zum Innenverteidiger, und weiter zum Torwart. Die Stürmer laufen hinterher, und unser Sechser stellt sich mittig hin. Das ist kein Rückschritt. So verlagern wir das Spiel.",
       "moves": [
        {
         "who": "b1",
@@ -1995,7 +1995,7 @@
      },
      {
       "label": "Seitenwechsel",
-      "say": "Der Torwart spielt zum linken Innenverteidiger, und der sofort weiter auf den Außenverteidiger. Der Gegner muss quer über das ganze Feld schieben und kommt zu spät. Unser Außenverteidiger hat Zeit und Platz.",
+      "say": "Der Torwart spielt auf den linken Innenverteidiger, und der direkt weiter auf den Außenverteidiger. Jetzt muss der Gegner quer übers ganze Feld schieben. Und er kommt zu spät. Unser Außenverteidiger hat Zeit und Platz.",
       "moves": [
        {
         "who": "k1",
@@ -2171,7 +2171,7 @@
      },
      {
       "label": "Auf der freien Seite",
-      "say": "Die Linie entlang ist zu, aber innen ist der Achter frei, und der Stürmer bietet sich an. Der Außenverteidiger spielt den Achter an, der zum Ball kommt. Einer kommt, einer geht: Dafür geht der Flügelspieler an die letzte Linie, und die ganze Mannschaft schiebt auf die neue Seite.",
+      "say": "Die Linie runter ist zu. Aber innen ist der Achter frei, und der Stürmer bietet sich an. Er spielt den Achter an, der ihm entgegenkommt. Einer kommt, einer geht: Dafür geht der Flügel an die letzte Linie. Und die ganze Mannschaft schiebt auf die neue Seite.",
       "moves": [
        {
         "who": "n3",
@@ -2275,7 +2275,7 @@
      },
      {
       "label": "Angriff, wo der Gegner nicht ist",
-      "say": "Mit dem Pass startet der Flügel, er steht nicht im Abseits. Der Achter steckt durch in die Lücke zwischen zwei Verteidigern, genau in seinen Lauf. So greifen wir dort an, wo der Gegner gerade nicht ist.",
+      "say": "Mit dem Pass startet der Flügel, also kein Abseits. Der Achter steckt durch, genau in die Lücke zwischen zwei Verteidigern. Und so greifen wir dort an, wo der Gegner gerade nicht ist.",
       "moves": [
        {
         "who": "n11",
@@ -2505,7 +2505,7 @@
     "steps": [
      {
       "label": "Erst innen",
-      "say": "Der Innenverteidiger hat drei Möglichkeiten. Er spielt zuerst innen auf den Sechser. Der Gegner will ihn stellen und zieht sich zur Mitte zusammen.",
+      "say": "Zum Schluss zwei Muster, die du immer wieder siehst. Der Innenverteidiger hat drei Möglichkeiten. Er spielt zuerst innen, auf den Sechser. Und der Gegner? Der will ihn stellen und zieht sich zur Mitte zusammen.",
       "moves": [
        {
         "who": "n4",
@@ -2591,7 +2591,7 @@
      },
      {
       "label": "Dann außen",
-      "say": "Genau dadurch wird es außen frei, innen ist jetzt zu. Der Sechser spielt sofort raus auf den Außenverteidiger. Innen, dann außen: Der Ball ist schneller als der Gegner.",
+      "say": "Genau dadurch wird's außen frei. Innen ist jetzt zu. Also spielt der Sechser sofort raus auf den Außenverteidiger. Erst innen, dann außen. Der Ball ist einfach schneller als der Gegner.",
       "moves": [
        {
         "who": "n6",
@@ -2659,7 +2659,7 @@
      },
      {
       "label": "Eine Reihe überspielen",
-      "say": "Der Gegner läuft raus zum Außenverteidiger und stellt die Linie zu. Jetzt außen, dann innen: Der Stürmer kommt entgegen, und der Ball geht flach durch die Mittelfeldreihe in seinen Fuß. Eine ganze Reihe ist überspielt.",
+      "say": "Jetzt läuft der Gegner raus zum Außenverteidiger und macht die Linie zu. Also umgekehrt: außen, dann innen. Der Stürmer kommt entgegen, und der Ball geht flach durch die Mittelfeldreihe, direkt in seinen Fuß. Eine ganze Reihe überspielt.",
       "moves": [
        {
         "who": "n9",
@@ -2735,7 +2735,7 @@
      },
      {
       "label": "Klatschen lassen",
-      "say": "Der Stürmer lässt den Ball direkt klatschen auf den Achter, der sich daneben freigelaufen hat. Der steht mit Blick nach vorn. Der Gegner zieht sich jetzt ganz zur Mitte zusammen.",
+      "say": "Der Stürmer lässt klatschen, direkt auf den Achter, der sich daneben freigelaufen hat. Der steht mit Blick nach vorn. Und der Gegner zieht sich jetzt komplett in die Mitte.",
       "moves": [
        {
         "who": "n10",
@@ -2821,7 +2821,7 @@
      },
      {
       "label": "Und verlagern",
-      "say": "Auf der anderen Seite ist alles frei. Der Achter verlagert sofort auf den Flügel, der außen frei steht. Der nimmt den Ball mit und geht sofort in die Tiefe. Überspielen, klatschen lassen, verlagern: So kommen wir dorthin, wo der Gegner nicht ist.",
+      "say": "Auf der anderen Seite ist alles frei. Der Achter verlagert sofort auf den Flügel. Der nimmt den Ball mit und geht direkt in die Tiefe. Überspielen, klatschen lassen, verlagern. So kommen wir dahin, wo der Gegner nicht ist.",
       "moves": [
        {
         "who": "n10",
