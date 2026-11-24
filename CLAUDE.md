@@ -38,6 +38,9 @@ Die App selbst liegt bei Base44 (App „Trainingskern“), dieses Repo enthält 
 - **Jedes Übungs-Video zeigt eine andere Übung** (Vorgabe vom 23.11.2026): nie eine, die schon ein Video hat, und quer durch den Katalog
   gemischt (Athletik, Koordination, Torhüter, Technik, Spielformen, verschiedene Altersklassen). Es geht darum, die Vielfalt zu zeigen.
   Schon verfilmt: UE-001, UE-004, UE-005, UE-007, UE-008, UE-011, UE-207 (Athletik), UE-264 (Torwart), UE-009 (Umschalten), UE-031 (Dribbeln für die Kleinen).
+  Dazu aus kampagne-18 bis -47: UE-147, UE-291, UE-217, UE-182, UE-155, UE-153, UE-151, UE-141, UE-125, UE-113, UE-111, UE-095, UE-085, UE-068,
+  UE-044, UE-026, UE-024, UE-020, UE-010, UE-002. In den Marketing-Videos dort kurz angerissen: UE-285, UE-293, UE-121, UE-077, UE-017, UE-032,
+  UE-019, UE-088, UE-084, UE-016, UE-036, UE-072.
   Nur kurz angerissen in `kampagne-14-alles-drin.json`: UE-129, UE-265, UE-292 und in `kampagne-17-plan-steht.json` UE-015 (dürfen noch ein eigenes Video bekommen).
   Für das komplette Format Übungen wählen, die Coaching-Punkt und Steigerung haben (manche haben stattdessen zwei Coaching-Punkte).
 - Für erklärte Übungen die vorhandenen Aufnahmen der Seite nehmen (kosten kein ElevenLabs-Kontingent). Der Aufbau hat auf der Seite keine
@@ -124,7 +127,8 @@ Hochladen: über die Drive-Schnittstelle (`POST https://www.googleapis.com/uploa
 Der Drive-Zugang der Sitzung selbst kann keine Videodateien hochladen. Der Nutzer holt dafür einen Zugangsschlüssel im Google OAuth Playground
 (Scope `https://www.googleapis.com/auth/drive`, gilt eine Stunde) und hinterlegt ihn über das sichere Formular für `www.googleapis.com`;
 nie in den Chat oder ins Repo. Für jede Runde braucht es einen neuen Schlüssel (der Drive-Zugang der Sitzung nimmt nur Dateien bis 10 MB).
-Stand 24.11.2026 liegen kampagne-01 (Comic) bis -14 im Drive (Vermarktung: 01, 07, 08, 14; Übungen: alle anderen).
+Stand 24.11.2026 liegen kampagne-01 (Comic) bis -47 im Drive, die Story-Bilder ab kampagne-12 im Ordner „Storys“.
+Marketing-Videos (Vermarktung): 01, 07, 08, 14, 17 und ab 18 jedes dritte (18, 21, 24 … 45); alle anderen sind Übungs-Videos.
 
 ## Story-Studio
 
