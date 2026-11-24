@@ -37,7 +37,7 @@ Die App selbst liegt bei Base44 (App „Trainingskern“), dieses Repo enthält 
   Ein Aufbau-Video ist nur auf Wunsch dabei. Die kurzen Fassungen ohne Coaching-Punkt (`kampagne-03` bis `-06`) sind der alte Stand.
 - **Jedes Übungs-Video zeigt eine andere Übung** (Vorgabe vom 23.11.2026): nie eine, die schon ein Video hat, und quer durch den Katalog
   gemischt (Athletik, Koordination, Torhüter, Technik, Spielformen, verschiedene Altersklassen). Es geht darum, die Vielfalt zu zeigen.
-  Schon verfilmt: UE-001, UE-004, UE-005, UE-007, UE-008, UE-011, UE-207 (Athletik), UE-252 (Torwart).
+  Schon verfilmt: UE-001, UE-004, UE-005, UE-007, UE-008, UE-011, UE-207 (Athletik), UE-264 (Torwart).
   Nur kurz angerissen in `kampagne-14-alles-drin.json`: UE-129, UE-265, UE-292 (dürfen noch ein eigenes Video bekommen).
   Für das komplette Format Übungen wählen, die Coaching-Punkt und Steigerung haben (manche haben stattdessen zwei Coaching-Punkte).
 - Für erklärte Übungen die vorhandenen Aufnahmen der Seite nehmen (kosten kein ElevenLabs-Kontingent). Der Aufbau hat auf der Seite keine
@@ -60,6 +60,41 @@ Die App selbst liegt bei Base44 (App „Trainingskern“), dieses Repo enthält 
 - Im Sprechertext sagt die Stimme „von mir auf Deutsch erklärt“, damit klar ist, dass es Ton zur Übung gibt.
 - Keine Spielminute, kein Fortschrittsbalken im Bild. Der Bildschirm der Seite zeigt nur Titel und Tafel (`"verstecke"` blendet den Rest aus).
 - Vorlage: `story-studio/stories/vorlage-kampagne.json`.
+
+## Sprache
+
+- **„Neutrale Spieler“, nie „Springer“** (Vorgabe vom 24.11.2026): gilt für alle eigenen Texte, Sprechersätze und Beschriftungen.
+  Die Aufnahmen und Texte mancher Übungen auf der Seite sagen noch „Springer“; solche Übungen erst verfilmen, wenn sie dort geändert sind,
+  oder dem Nutzer vorher Bescheid geben.
+
+## Prüfliste vor dem Abgeben (Vorgabe vom 24.11.2026: keine Fehler, aber sparsam arbeiten)
+
+Erst prüfen, dann rendern. Ein Fehler, der erst im fertigen Video auffällt, kostet ein zweites Rendern und eine zweite Runde.
+
+1. `node studio.mjs render stories/<name>.json --bild <zeiten>` vor dem Rendern: Die Ausgabe darf kein „ACHTUNG“ zeigen. Sie prüft,
+   ob Text übersteht oder abgeschnitten wird und ob Stimme und Bewegung zusammenpassen.
+2. **Ein** Übersichtsbild je Video ansehen (Standbilder nebeneinander, klein skaliert), nicht jedes Bild einzeln: das Intro, je ein Bild
+   aus jeder Szene, das Outro. Beim Intro darauf achten, dass der Text mittig auf der freien Fläche sitzt, sie gut ausfüllt und nicht
+   an ihren gezeichneten Rand stößt.
+3. Der Text im Intro steht mittig (macht das Studio von selbst) und ist höchstens vier kurze Zeilen lang. Bild und Sprecher sagen dasselbe.
+4. Stimme und Bewegung: Die Bewegung eines Schritts läuft, solange die Stimme sie beschreibt (macht das Studio von selbst). Übungen mit
+   sehr langen Sätzen je Schritt meldet die Ausgabe; dann Standbilder aus diesem Schritt ansehen.
+5. Der gesprochene Name der Übung muss vollständig sein (Namen mit Kommas wurden früher abgeschnitten).
+6. Erst wenn 1 bis 5 stimmen, rendern. Danach den Ton einmal mitschreiben lassen und mit dem Text vergleichen. Selbst hören kann Claude nicht:
+   das dem Nutzer jedes Mal sagen.
+7. Nur neu rendern, was sich geändert hat. Keine neuen Clips, Songs oder Sprechersätze erzeugen, wenn vorhandene reichen.
+
+## Storys zum Reel des Tages (Vorgabe vom 24.11.2026)
+
+Zu jedem Video, das abends als Reel erscheint, gehören drei Story-Bilder (1080 × 1920, Standbilder, kein Video), die den Tag über darauf
+hinführen. Muster des Nutzers:
+
+1. **Ankündigung:** Bild aus der Übung (Titel, Platz, ein Schritt), darunter Neon-Fläche „HEUTE 18:30“ und „Neues Reel: <Name der Übung>“.
+2. **Frage an die Zuschauer:** dunkler Grund, kleine Neon-Marke „FRAGE AN DICH“, große Frage zum Thema (zweite Zeile in Neon), darunter ein
+   Satz zum Antworten, unten „trainingskern.de · Link in Bio“.
+3. **Jetzt neu:** Bild aus der Übung (späterer Schritt), darunter Neon-Fläche „JETZT NEU“ und „Ganzes Reel auf dem Profil.“
+
+Die Bilder entstehen zusammen mit dem Video und kommen mit in den passenden Drive-Ordner.
 
 ## Ablage der fertigen Videos (Vorgabe vom 23.11.2026)
 

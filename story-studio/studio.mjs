@@ -170,7 +170,7 @@ async function erklaertVon(storyDatei) {
       const titel = sz.ohneName || fassung ? null : await nurName(await holeTon(e.audio?.intro).catch(() => null)).catch(() => null);
       if (sz.typ === "uebung") {
         const k = e.audio?.chapters?.[fassung] || {}, zahl = sz.schritte || (k.steps || []).length;
-        out[nr] = { titel, ansage: await holeTon(k.intro).catch(() => null), schritte: await Promise.all((k.steps || []).slice(0, zahl).map((u) => holeTon(u).catch(() => null))) };
+        out[nr] = { titel, ansage: await holeTon(k.intro).catch(() => null), schritte: await Promise.all((k.steps || []).slice(0, zahl).map((u) => holeTon(u).catch(() => null))), texte: (k.steps_text || []).slice(0, zahl) };
       } else if (mitStimme) {
         // Aufbau: Die Seite hat dafür keine Aufnahmen. "sprich" in der Szene ersetzt einzelne Sätze durch kürzere Sprechfassungen.
         const { sprechtext } = await import("./studio/app/sprechtext.js");
@@ -295,7 +295,7 @@ async function render(chromium, url) {
   // Prüfung vor jedem Rendern: Texte, die überstehen oder abgeschnitten werden, stehen als Warnung in der Ausgabe
   const pruefe = async (page) => {
     const funde = await page.evaluate(() => window.__story.pruefe());
-    if (funde.length) console.warn("ACHTUNG, Text steht nicht sauber im Bild:\n  " + funde.join("\n  "));
+    if (funde.length) console.warn("ACHTUNG, bitte ansehen:\n  " + funde.join("\n  "));
     else console.log("Textprüfung: alle Texte stehen im Bild.");
     return funde;
   };

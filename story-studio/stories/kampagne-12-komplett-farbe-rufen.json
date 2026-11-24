@@ -1,5 +1,5 @@
 {
-  "titel": "Übung komplett: Torhüter-Duell auf vier Tore",
+  "titel": "Übung komplett: Farbe rufen, Volley fangen",
   "intro": false,
   "musik": "ton/musik-elektro-4.mp3",
   "musikLaut": 0.14,
@@ -9,28 +9,28 @@
     {
       "typ": "hook",
       "film": "comic-panels",
-      "text": "Vier Tore. *Kaum Zeit zum Denken!*",
+      "text": "Farbe gerufen. *Ball gefangen!*",
       "dauer": 3.5,
-      "sprecher": "Vier Tore – und kaum Zeit zum Denken!",
+      "sprecher": "Farbe gerufen – Ball gefangen!",
       "sprecherAb": 1.2,
       "dach": "Für deine Torhüter"
     },
     {
       "typ": "uebung",
-      "code": "UE-252",
+      "code": "UE-264",
       "stimme": true,
       "dach": "So läuft’s"
     },
     {
       "typ": "uebung",
-      "code": "UE-252",
+      "code": "UE-264",
       "stimme": true,
       "fassung": 1,
       "uebergang": "panel"
     },
     {
       "typ": "uebung",
-      "code": "UE-252",
+      "code": "UE-264",
       "stimme": true,
       "fassung": 2,
       "uebergang": "pinsel"

@@ -313,7 +313,7 @@ const SZENEN = {
     const fi = (mitFilm && daten.filmInfo[s.film]) || {}, zettel = fi.zettel;
     if (zettel && !s.filmTempo) s = { ...s, filmTempo: Math.max(1, (fi.landet || 1) / 0.8) };
     const landung = zettel ? ((fi.landet || 1) - (s.filmAb || 0)) / s.filmTempo + 0.1 : 0;
-    const node = el(`<section class="sz ${tonart} hook${mitFilm ? " mit-film" : ""}${zettel ? " auf-zettel" : ""}${fi.flaeche ? " fl-" + fi.flaeche : ""}">
+    const node = el(`<section class="sz ${tonart} hook${mitFilm ? " mit-film" : ""}${zettel ? " auf-zettel" + (fi.links ? "" : " mittig") : ""}${fi.flaeche ? " fl-" + fi.flaeche : ""}">
 ${mitFilm ? `<canvas class="hg-film"></canvas>${zettel ? `<i class="hg-druck"></i>` : `<i class="hg-schleier"></i><i class="hg-korn"></i>`}` : `<div class="raster" style="left:0;bottom:340px;width:520px;height:520px;${tonart === "dunkel" ? "--hc:#f8f4e9;opacity:.14" : ""}"></div>`}
 <div class="hk-block">${s.dach ? `<div class="am-dach hk-dach"><i></i><span>${esc(s.dach)}</span></div>` : ""}
 <h1 class="am-titel hk-titel">${titelZeilen(s.zeilen || ["Trainingskern"], tonart === "papier")}</h1>
@@ -333,13 +333,16 @@ ${s.notiz ? `<p class="hk-notiz hand">${esc(s.notiz)}</p>` : ""}</div></section>
     if (zettel) { block.style.left = zx + rand + "px"; block.style.right = "auto"; block.style.width = zb - 2 * rand + "px"; block.style.rotate = (fi.dreh || 0) + "deg"; }
     if (s.text) {
       // "text" statt "zeilen": Das Studio bricht den Satz selbst so um, dass die Schrift so groß wie möglich wird
-      let beste = null;
+      // Unter den Umbrüchen mit (fast) der größten Schrift gewinnt der mit den wenigsten Zeilen: So füllt der Text die Fläche in der Breite,
+      // statt als schmale Spalte in der Mitte zu stehen.
+      const alle = [];
       for (let max = 7; max <= 22; max++) {
         const zeilen = zeilenAus(s.text, max);
         titel.innerHTML = titelZeilen(zeilen, tonart === "papier");
-        const px = passe();
-        if (!beste || px > beste.px) beste = { px, zeilen };
+        alle.push({ px: passe(), zeilen });
       }
+      const groesste = Math.max(...alle.map((x) => x.px));
+      const beste = alle.filter((x) => x.px >= groesste * 0.8).sort((x, y) => x.zeilen.length - y.zeilen.length || y.px - x.px)[0];
       titel.innerHTML = titelZeilen(beste.zeilen, tonart === "papier");
     }
     passe();
@@ -448,14 +451,31 @@ ${e?.kind || s.stempel ? `<div class="stempel am-stempel" style="right:58px;top:
     const seg = [];
     if (tonAuf) {
       let z = Math.max(EIN, 0.3 + (tonAuf.titel?.dauer || 0) + 0.15 + (tonAuf.ansage?.dauer || 0) + 0.25);
-      steps.forEach((st, i) => { const a = (st.t1 - st.t0) / tv, e = z + Math.max(a, tonAuf.schritte[i]?.dauer || 0) + 0.3; seg.push({ s: z, a, e }); z = e; });
+      // Die Bewegung läuft so lange, wie von ihr die Rede ist: Sie beginnt kurz nach dem ersten Wort und ist kurz vor dem Ende da.
+      // Schlusssätze, die nur den Wechsel beschreiben ("Dann stellen sich beide hinten an"), zählen nicht mit; ihr Anteil wird
+      // nach der Textlänge geschätzt. Höchstens viermal so langsam wie normal, sonst wirkt es wie Zeitlupe.
+      const kern = (text) => {
+        const saetze = String(text || "").match(/[^.!?]+[.!?]+/g) || [];
+        let n = saetze.length;
+        while (n > 1 && /^\s*(Dann|Danach|Anschließend|Nach jedem|Nach ein paar|Zum Schluss|Darum|Deshalb|Das gibt)\b/.test(saetze[n - 1])) n--;
+        const alle = saetze.join("").length;
+        return alle ? saetze.slice(0, n).join("").length / alle : 1;
+      };
+      steps.forEach((st, i) => {
+        const roh = st.t1 - st.t0, rede = tonAuf.schritte[i]?.dauer || 0, davon = rede * kern(tonAuf.texte?.[i]);
+        const a = Math.max(roh / tv, Math.min(davon * 0.95 - 0.35, roh * 4));
+        // Ist die Bewegung kürzer als ihre Beschreibung, liegt sie an deren Ende: Der Satz beginnt meist mit dem Auslöser ("Der Trainer ruft …")
+        const vor = rede ? Math.max(0.35, davon * 0.95 - a) : 0, e = z + Math.max(vor + a, rede) + 0.3;
+        if (davon > a + 6) hinweise.push(`Übung ${s.code}${s.fassung ? " Fassung " + s.fassung : ""}, Schritt ${i + 1}: Die Stimme beschreibt die Bewegung ${davon.toFixed(1)} s lang, sie selbst dauert ${a.toFixed(1)} s. Standbild ansehen, ob das zusammenpasst.`);
+        seg.push({ s: z, vor, a, e }); z = e;
+      });
     }
     const start = (i) => (tonAuf ? seg[i].s : EIN + steps[i].t0 / tempo);
     const spielzeit = (tl) => {
       if (!tonAuf) return (tl - EIN) * tempo;
       let i = -1;
       seg.forEach((x, n) => { if (tl >= x.s) i = n; });
-      return i < 0 ? 0 : steps[i].t0 + Math.min((tl - seg[i].s) * tv, steps[i].t1 - steps[i].t0);
+      return i < 0 ? 0 : steps[i].t0 + clamp01((tl - seg[i].s - seg[i].vor) / seg[i].a) * (steps[i].t1 - steps[i].t0);
     };
     const dauer = tonAuf ? seg[seg.length - 1].e + (s.nachlauf ?? 0.4) : EIN + platz.dauer / tempo + AUS;
     return { el: node, ton: "dunkel", dauer, start(T) {
