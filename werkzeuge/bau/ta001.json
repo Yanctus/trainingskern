@@ -1184,17 +1184,8 @@
        {
         "who": "r19",
         "to": [
-         22,
-         24
-        ],
-        "type": "lauf",
-        "delay": 2.0
-       },
-       {
-        "who": "r20",
-        "to": [
-         22,
-         36
+         24,
+         30
         ],
         "type": "lauf",
         "delay": 2.0
@@ -1203,7 +1194,7 @@
      },
      {
       "label": "Der freie Mann",
-      "say": "Der Sechser sieht beide Innenverteidiger und den Achter. Links ist frei, also geht der Ball dorthin. Jetzt verschiebt der Gegner auf diese Seite, und wir schieben mit: Der Außenverteidiger bleibt breit, der Achter steht in der Lücke.",
+      "say": "Der Sechser sieht beide Innenverteidiger. Den Achter verdeckt der anlaufende Stürmer. Links ist am meisten Platz, also geht der Ball dorthin. Jetzt verschiebt der Gegner auf diese Seite, und wir schieben mit: Der Außenverteidiger bleibt breit, der Achter steht in der Lücke.",
       "moves": [
        {
         "who": "n6",
@@ -1225,8 +1216,8 @@
        {
         "who": "n6",
         "to": [
-         56,
-         14
+         34,
+         32
         ],
         "type": "option",
         "after": true
@@ -1243,8 +1234,8 @@
        {
         "who": "r16",
         "to": [
-         40,
-         11
+         42,
+         8
         ],
         "type": "lauf",
         "delay": 2.0
@@ -1252,8 +1243,8 @@
        {
         "who": "r17",
         "to": [
-         42,
-         18
+         44,
+         24
         ],
         "type": "lauf",
         "delay": 2.0
@@ -1261,8 +1252,8 @@
        {
         "who": "r18",
         "to": [
-         44,
-         30
+         46,
+         34
         ],
         "type": "lauf",
         "delay": 2.0
@@ -1271,7 +1262,7 @@
         "who": "r21",
         "to": [
          48,
-         40
+         42
         ],
         "type": "lauf",
         "delay": 2.0
@@ -1280,7 +1271,7 @@
         "who": "r13",
         "to": [
          68,
-         8
+         4
         ],
         "type": "lauf",
         "delay": 2.0
@@ -1379,7 +1370,7 @@
      },
      {
       "label": "Andribbeln und locken",
-      "say": "Der Innenverteidiger hat Platz und dribbelt an, bis ein Gegner kommt. Kommt einer, wird ein anderer frei: außen der Außenverteidiger, innen der Achter, vorn der Stürmer. Der Stürmer kommt entgegen, und der Flügel geht an die letzte Linie, bereit für den Lauf in die Tiefe. Einer kommt, einer geht.",
+      "say": "Der Innenverteidiger hat Platz und dribbelt an, bis ein Gegner kommt. Der Gegner kommt von außen und stellt den Weg zum Außenverteidiger zu. Dafür ist innen frei: der Achter und der Stürmer. Der Stürmer kommt entgegen, und der Flügel geht an die letzte Linie, bereit für den Lauf in die Tiefe. Einer kommt, einer geht.",
       "moves": [
        {
         "who": "n5",
@@ -1394,7 +1385,7 @@
         "who": "r16",
         "to": [
          36,
-         12
+         6
         ],
         "type": "lauf",
         "delay": 0.6
@@ -1507,7 +1498,7 @@
      },
      {
       "label": "Hinter die Kette",
-      "say": "Jetzt geht alles nach vorn. Der Achter hat den Flügel in der Tiefe, den Außenverteidiger außen und den anderen Achter. Der Flügel startet erst mit dem Pass, so steht er nicht im Abseits, und bekommt den Ball in den Lauf. Mit wenigen Pässen ist das Pressing überspielt.",
+      "say": "Jetzt geht alles nach vorn. Der Achter hat den Flügel in der Tiefe, den Außenverteidiger außen und den Stürmer. Der Flügel startet erst mit dem Pass, so steht er nicht im Abseits, und bekommt den Ball in den Lauf. Mit wenigen Pässen ist das Pressing überspielt.",
       "moves": [
        {
         "who": "n10",
@@ -1529,8 +1520,8 @@
        {
         "who": "n10",
         "to": [
-         40,
-         33
+         62,
+         21
         ],
         "type": "option",
         "after": true
@@ -1558,15 +1549,6 @@
         "to": [
          64,
          4
-        ],
-        "type": "lauf",
-        "delay": 1.6
-       },
-       {
-        "who": "n8",
-        "to": [
-         70,
-         38
         ],
         "type": "lauf",
         "delay": 1.6
@@ -2189,7 +2171,7 @@
      },
      {
       "label": "Auf der freien Seite",
-      "say": "Der Außenverteidiger hat drei Wege: die Linie entlang, innen den Achter oder den Stürmer. Er spielt den Achter an, der zum Ball kommt. Einer kommt, einer geht: Dafür geht der Flügelspieler an die letzte Linie, und die ganze Mannschaft schiebt auf die neue Seite.",
+      "say": "Die Linie entlang ist zu, aber innen ist der Achter frei, und der Stürmer bietet sich an. Der Außenverteidiger spielt den Achter an, der zum Ball kommt. Einer kommt, einer geht: Dafür geht der Flügelspieler an die letzte Linie, und die ganze Mannschaft schiebt auf die neue Seite.",
       "moves": [
        {
         "who": "n3",
@@ -2293,29 +2275,29 @@
      },
      {
       "label": "Angriff, wo der Gegner nicht ist",
-      "say": "Mit dem Pass startet der Flügel, er steht nicht im Abseits. Der Achter steckt durch in seinen Lauf. So greifen wir dort an, wo der Gegner gerade nicht ist.",
+      "say": "Mit dem Pass startet der Flügel, er steht nicht im Abseits. Der Achter steckt durch in die Lücke zwischen zwei Verteidigern, genau in seinen Lauf. So greifen wir dort an, wo der Gegner gerade nicht ist.",
       "moves": [
        {
         "who": "n11",
         "to": [
-         86,
-         8
+         88,
+         16
         ],
         "type": "lauf"
        },
        {
         "who": "b1",
         "to": [
-         86.6,
-         8.6
+         88.6,
+         16.6
         ],
         "type": "pass"
        },
        {
         "who": "r13",
         "to": [
-         86,
-         9
+         84,
+         12
         ],
         "type": "lauf",
         "delay": 0.6
@@ -2323,8 +2305,8 @@
        {
         "who": "r14",
         "to": [
-         80,
-         18
+         82,
+         20
         ],
         "type": "lauf",
         "delay": 0.6
@@ -2563,8 +2545,8 @@
        {
         "who": "r20",
         "to": [
-         37,
-         30
+         36,
+         23
         ],
         "type": "lauf",
         "delay": 2.0
@@ -2572,8 +2554,8 @@
        {
         "who": "r19",
         "to": [
-         36,
-         18
+         34,
+         14
         ],
         "type": "lauf",
         "delay": 2.0
@@ -2582,7 +2564,7 @@
         "who": "r18",
         "to": [
          48,
-         31
+         30
         ],
         "type": "lauf",
         "delay": 2.0
@@ -2600,7 +2582,7 @@
         "who": "r17",
         "to": [
          50,
-         22
+         21
         ],
         "type": "lauf",
         "delay": 2.0
@@ -2609,7 +2591,7 @@
      },
      {
       "label": "Dann außen",
-      "say": "Genau dadurch wird es außen frei. Der Sechser spielt sofort raus auf den Außenverteidiger. Innen, dann außen: Der Ball ist schneller als der Gegner.",
+      "say": "Genau dadurch wird es außen frei, innen ist jetzt zu. Der Sechser spielt sofort raus auf den Außenverteidiger. Innen, dann außen: Der Ball ist schneller als der Gegner.",
       "moves": [
        {
         "who": "n6",
@@ -2677,7 +2659,7 @@
      },
      {
       "label": "Eine Reihe überspielen",
-      "say": "Der Gegner läuft raus zum Außenverteidiger. Jetzt außen, dann innen: Der Stürmer kommt entgegen, und der Ball geht flach durch die Mittelfeldreihe in seinen Fuß. Eine ganze Reihe ist überspielt.",
+      "say": "Der Gegner läuft raus zum Außenverteidiger und stellt die Linie zu. Jetzt außen, dann innen: Der Stürmer kommt entgegen, und der Ball geht flach durch die Mittelfeldreihe in seinen Fuß. Eine ganze Reihe ist überspielt.",
       "moves": [
        {
         "who": "n9",
@@ -2821,7 +2803,7 @@
         "who": "n11",
         "to": [
          71,
-         8
+         5
         ],
         "type": "lauf",
         "delay": 1.3
@@ -2839,13 +2821,13 @@
      },
      {
       "label": "Und verlagern",
-      "say": "Auf der anderen Seite ist alles frei. Der Achter verlagert sofort auf den Flügel, der genau mit dem Pass in die Tiefe startet, also nicht im Abseits steht. Überspielen, klatschen lassen, verlagern: So kommen wir dorthin, wo der Gegner nicht ist.",
+      "say": "Auf der anderen Seite ist alles frei. Der Achter verlagert sofort auf den Flügel, der außen frei steht. Der nimmt den Ball mit und geht sofort in die Tiefe. Überspielen, klatschen lassen, verlagern: So kommen wir dorthin, wo der Gegner nicht ist.",
       "moves": [
        {
         "who": "n10",
         "to": [
          71,
-         8
+         5
         ],
         "type": "option"
        },
@@ -2868,22 +2850,23 @@
         "after": true
        },
        {
+        "who": "b1",
+        "to": [
+         71.6,
+         5.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
         "who": "n11",
         "to": [
          84,
-         9
+         8
         ],
-        "type": "lauf",
-        "delay": 1.6
-       },
-       {
-        "who": "b1",
-        "to": [
-         84.6,
-         9.6
-        ],
-        "type": "pass",
-        "delay": 1.6
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
        },
        {
         "who": "n9",
