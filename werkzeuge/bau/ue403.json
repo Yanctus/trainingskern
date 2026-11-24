@@ -1,0 +1,782 @@
+{
+ "title": "Über den Springer nach vorn",
+ "code": "UE-403",
+ "kind": "Spielform",
+ "focuses": [
+  "Zusammenspiel",
+  "Passspiel",
+  "Torschuss"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 13,
+ "players_max": 13,
+ "field_size": "25 x 30 m",
+ "description": "Sechs gegen sechs mit Torhütern und einem Springer auf einem Feld mit drei Zonen. Jedes Team steht mit zwei Verteidigern, zwei Mittelfeldspielern und einem Stürmer. Ein Verteidiger darf in die Mitte nachrücken, dann ist es dort mit dem Springer vier gegen zwei. Erst über den Springer geht es in die Angriffszone, wo ein Mittelfeldspieler mitläuft und vorn zwei gegen zwei spielt.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 25 mal 30 Metern mit einem großen Tor auf jeder Grundlinie. Zwei gestrichelte Linien teilen es in drei gleich große Zonen.",
+  "Verteilen: Je Team ein Torwart, zwei Verteidiger in der eigenen Zone, zwei Mittelfeldspieler in der Mitte und ein Stürmer in der Angriffszone. Der Springer spielt in der Mittelzone immer mit dem Team am Ball. Der Trainer steht mit Bällen an der Seitenlinie.",
+  "Ablauf: Der Torwart eröffnet. Ein Verteidiger spielt nach vorn in die Mitte und darf selbst nachrücken. Bevor es in die Angriffszone geht, muss der Ball einmal über den Springer laufen. Dann darf ein Mittelfeldspieler mit nach vorn und hilft dem Stürmer.",
+  "Wertung und Wechsel: Jeder Treffer gibt einen Punkt. Erobert das andere Team den Ball, baut es mit denselben Regeln auf. Nach einem Treffer eröffnet der Torwart auf der anderen Seite."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Anspielbar stehen, nicht hinter dem Gegner",
+  "Überzahl in der Mitte nutzen, dann schnell nach vorn",
+  "Stehen sie eng, außen vorbei",
+  "Ohne Ball weglaufen und Platz machen"
+ ],
+ "materials": [
+  "2 große Tore",
+  "4 Hütchen",
+  "Leibchen in drei Farben",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Über den Springer nach vorn. Sechs gegen sechs mit Torhütern und einem Springer. Der Ball läuft Zone für Zone nach vorn, und in der Mitte führt der Weg immer über den Springer.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 9,
+    "y": 4,
+    "w": 80,
+    "h": 47
+   },
+   {
+    "type": "line",
+    "x1": 35.4,
+    "y1": 4,
+    "x2": 35.4,
+    "y2": 51,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 62.6,
+    "y1": 4,
+    "x2": 62.6,
+    "y2": 51,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 9,
+    "y": 27.5,
+    "side": "left",
+    "size": "gross"
+   },
+   {
+    "x": 89,
+    "y": 27.5,
+    "side": "right",
+    "size": "gross"
+   }
+  ],
+  "cones": [
+   {
+    "x": 35.4,
+    "y": 4,
+    "color": "orange"
+   },
+   {
+    "x": 35.4,
+    "y": 51,
+    "color": "orange"
+   },
+   {
+    "x": 62.6,
+    "y": 4,
+    "color": "orange"
+   },
+   {
+    "x": 62.6,
+    "y": 51,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 12.2,
+    "y": 27.5,
+    "label": "TW"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 21.0,
+    "y": 44.4,
+    "label": "5"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 30.6,
+    "y": 10.6,
+    "label": "4"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 21.8,
+    "y": 27.5,
+    "label": "11"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 47.4,
+    "y": 10.6,
+    "label": "10"
+   },
+   {
+    "id": "f",
+    "team": "t",
+    "x": 45.8,
+    "y": 27.5,
+    "label": "F"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 37.0,
+    "y": 43.5,
+    "label": "8"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 57.0,
+    "y": 14.3,
+    "label": "6"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 57.8,
+    "y": 37.8,
+    "label": "7"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 66.6,
+    "y": 27.5,
+    "label": "9"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 76.2,
+    "y": 11.5,
+    "label": "2"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 76.2,
+    "y": 43.5,
+    "label": "3"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 86.6,
+    "y": 27.5,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 67.5,
+    "y": 55.3,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 12.8,
+    "y": 28.1
+   },
+   {
+    "id": "s1",
+    "x": 71,
+    "y": 55.8
+   },
+   {
+    "id": "s2",
+    "x": 73.5,
+    "y": 55.8
+   }
+  ],
+  "dims": [
+   {
+    "x1": 9,
+    "y1": 58.6,
+    "x2": 89,
+    "y2": 58.6,
+    "text": "30 m"
+   }
+  ],
+  "steps": [
+   {
+    "label": "Der Torwart eröffnet",
+    "say": "Der Torwart links hat den Ball. Er spielt flach zu Spieler vier. Spieler elf läuft gleich an.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       31.2,
+       11.2
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r11",
+      "to": [
+       25.0,
+       20.0
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "In die Mitte, Spieler vier rückt nach",
+    "say": "Spieler vier spielt nach vorn zu Spieler zehn und geht sofort hinterher. Jetzt ist es in der Mitte vier gegen zwei.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       48.0,
+       11.2
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n4",
+      "to": [
+       37.0,
+       18.1
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "Erst über den Springer",
+    "say": "Ohne den Springer geht es nicht weiter. Er schaut zum Ball, und Spieler zehn spielt ihn flach an.",
+    "moves": [
+     {
+      "who": "f",
+      "to": [
+       46.6,
+       16.2
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b1",
+      "to": [
+       46.4,
+       28.1
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Aufdrehen, in die Spitze",
+    "say": "Der Springer nimmt an, dreht auf und spielt in die Angriffszone auf Spieler neun. Spieler zehn läuft sofort mit nach vorn. Vorn sind es jetzt zwei gegen zwei.",
+    "moves": [
+     {
+      "who": "f",
+      "to": [
+       63.4,
+       27.5
+      ],
+      "type": "blick",
+      "von": [
+       46.6,
+       16.2
+      ],
+      "dauer": 1.3
+     },
+     {
+      "who": "f",
+      "to": [
+       63.4,
+       27.5
+      ],
+      "type": "dreh",
+      "delay": 0.4
+     },
+     {
+      "who": "b1",
+      "to": [
+       67.2,
+       28.1
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n10",
+      "to": [
+       58.6,
+       7.8
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n10",
+      "to": [
+       70.6,
+       15.3
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Ablage und Abschluss: Punkt",
+    "say": "Spieler neun legt ab auf Spieler zehn. Der schießt direkt ins Eck, und das gibt einen Punkt für Team Neon. Danach eröffnet der Torwart rechts, und Team Rot baut genauso auf.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       71.2,
+       15.9
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r2",
+      "to": [
+       74.6,
+       13.4
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "b1",
+      "to": [
+       88.7,
+       23.7
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Stehen sie eng, außen vorbei.",
+   "title": "Stehen sie eng, außen vorbei",
+   "text": "Stehen die beiden Mittelfeldspieler von Team Rot eng in der Mitte, ist durch die Mitte kein Durchkommen. Dann ist außen Platz. Der Springer spielt schnell raus, und von dort geht der Ball die Linie entlang nach vorn.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 12.2,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 21.0,
+      "y": 44.4,
+      "label": "5"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 26.6,
+      "y": 10.6,
+      "label": "4"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 21.8,
+      "y": 27.5,
+      "label": "11"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 39.4,
+      "y": 6.8,
+      "label": "10"
+     },
+     {
+      "id": "f",
+      "team": "t",
+      "x": 41.0,
+      "y": 23.7,
+      "label": "F"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 49.0,
+      "y": 48.2,
+      "label": "8"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 52.2,
+      "y": 20.0,
+      "label": "6"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 61.0,
+      "y": 35.0,
+      "label": "7"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 72.2,
+      "y": 29.4,
+      "label": "9"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 76.2,
+      "y": 11.5,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 77.8,
+      "y": 46.3,
+      "label": "3"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 86.6,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 67.5,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 41.6,
+      "y": 24.3
+     },
+     {
+      "id": "s1",
+      "x": 71,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 73.5,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Die Mitte ist zu",
+      "say": "Der Springer hat den Ball. Spieler sechs und Spieler sieben stehen eng zusammen, durch die Mitte geht nichts. Also spielt er raus zu Spieler acht.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         49.6,
+         48.8
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Außen die Linie entlang",
+      "say": "Spieler acht schaut die Linie entlang. Spieler neun startet nach außen in den freien Raum, und der Ball kommt genau in seinen Lauf.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         68.2,
+         44.4
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "n9",
+        "to": [
+         68.2,
+         44.4
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         68.8,
+         45.0
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Ohne Ball weglaufen und Platz machen.",
+   "title": "Weglaufen, Platz machen",
+   "text": "Ein Laufweg ohne Ball zieht den Gegenspieler mit. Läuft der Springer weg und sein Gegner geht mit, ist die Lücke zur Spitze offen. Der Verteidiger in der Mitte sieht das und spielt sofort durch.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 12.2,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 39.4,
+      "y": 25.6,
+      "label": "5"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 30.6,
+      "y": 10.6,
+      "label": "4"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 21.8,
+      "y": 27.5,
+      "label": "11"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 39.4,
+      "y": 4.9,
+      "label": "10"
+     },
+     {
+      "id": "f",
+      "team": "t",
+      "x": 49.0,
+      "y": 18.1,
+      "label": "F"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 47.4,
+      "y": 50.1,
+      "label": "8"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 57.8,
+      "y": 29.4,
+      "label": "6"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 57.0,
+      "y": 45.4,
+      "label": "7"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 67.4,
+      "y": 31.3,
+      "label": "9"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 76.2,
+      "y": 11.5,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 76.2,
+      "y": 43.5,
+      "label": "3"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 86.6,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 67.5,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 40.0,
+      "y": 26.2
+     },
+     {
+      "id": "s1",
+      "x": 71,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 73.5,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Der Springer zieht weg",
+      "say": "Spieler fünf ist mit Ball in die Mitte nachgerückt. Der Springer läuft zur Seite weg, und Spieler sechs geht mit ihm mit. Jetzt ist die Lücke zur Spitze offen.",
+      "moves": [
+       {
+        "who": "f",
+        "to": [
+         57.0,
+         9.6
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r6",
+        "to": [
+         60.2,
+         18.1
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Durch die Lücke",
+      "say": "Spieler neun zeigt sich und schaut zum Ball. Spieler fünf spielt flach durch die Lücke zu ihm.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         47.7,
+         27.3
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         68.0,
+         31.9
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Aufdrehen und Abschluss: Punkt",
+      "say": "Spieler neun dreht auf und schießt sofort, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         88.7,
+         33.1
+        ],
+        "type": "blick",
+        "von": [
+         47.7,
+         27.3
+        ],
+        "dauer": 1.3
+       },
+       {
+        "who": "n9",
+        "to": [
+         88.7,
+         33.1
+        ],
+        "type": "dreh",
+        "delay": 0.4
+       },
+       {
+        "who": "b1",
+        "to": [
+         88.7,
+         33.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

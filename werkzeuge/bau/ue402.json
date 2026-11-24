@@ -1,0 +1,901 @@
+{
+ "title": "Sieben gegen sieben in Dritteln",
+ "code": "UE-402",
+ "kind": "Spielform",
+ "focuses": [
+  "Zusammenspiel",
+  "Passspiel",
+  "Umschalten"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 15,
+ "players_max": 15,
+ "field_size": "Halbes Spielfeld",
+ "description": "Sieben gegen sieben plus Torwart auf einer ganzen Platzhälfte, geteilt in drei Zonen. Team Neon spielt sich von hinten Zone für Zone nach vorn und greift das große Tor an. In die nächste Zone darf der Ball nur, wenn ein Mitspieler in seiner Zone angespielt wurde. Erobert Team Rot den Ball, kontert es auf zwei Minitore an der Mittellinie.",
+ "organisation": [
+  "Aufbauen: Eine Platzhälfte in voller Breite mit großem Tor und Torwart. Zwei gestrichelte Linien teilen sie in drei Zonen: hinten, Mitte und die Endzone vor dem Tor. An der Mittellinie stehen zwei Minitore.",
+  "Verteilen: Team Neon mit drei Spielern hinten, drei in der Mitte und einem Stürmer vorn. Team Rot mit Torwart, zwei Verteidigern vorn, zwei Spielern in der Mitte und drei Spielern hinten. Hinten ist es drei gegen drei, in der Mitte drei gegen zwei, vorn einer gegen zwei. Der Trainer steht mit Bällen an der Ecke.",
+  "Ablauf: Team Neon baut hinten auf. Der Ball geht erst in die nächste Zone, wenn dort ein Mitspieler angespielt wurde. Wer angespielt ist, darf nach vorn nachrücken. Vorn laufen die Mittelfeldspieler mit in die Endzone und helfen dem Stürmer.",
+  "Wertung: Ein Treffer ins große Tor gibt einen Punkt für Team Neon. Erobert Team Rot den Ball und trifft in ein Minitor, gibt das einen Punkt für Team Rot. Danach spielt der Trainer einen neuen Ball zu den drei Spielern hinten."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Passen oder andribbeln? Erst schauen, dann entscheiden",
+  "Ist vor dir Platz, nimm den Ball mit",
+  "Geht einer nach vorn, sichert ein anderer ab",
+  "Ball weg? Sofort umschalten"
+ ],
+ "materials": [
+  "1 großes Tor",
+  "2 Minitore",
+  "4 Hütchen für die Zonen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Sieben gegen sieben in Dritteln. Team Neon spielt sich auf einer Platzhälfte von hinten durch drei Zonen bis vor das große Tor. Team Rot verteidigt und kontert auf zwei Minitore.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 15,
+    "y": 4,
+    "w": 70,
+    "h": 53
+   },
+   {
+    "type": "rect",
+    "x": 29.5,
+    "y": 4,
+    "w": 41,
+    "h": 16.5
+   },
+   {
+    "type": "rect",
+    "x": 40.6,
+    "y": 4,
+    "w": 18.8,
+    "h": 5.6
+   },
+   {
+    "type": "line",
+    "x1": 15,
+    "y1": 22,
+    "x2": 85,
+    "y2": 22,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 15,
+    "y1": 40.5,
+    "x2": 85,
+    "y2": 40.5,
+    "dashed": true
+   }
+  ],
+  "cones": [
+   {
+    "x": 15,
+    "y": 22,
+    "color": "orange"
+   },
+   {
+    "x": 85,
+    "y": 22,
+    "color": "orange"
+   },
+   {
+    "x": 15,
+    "y": 40.5,
+    "color": "orange"
+   },
+   {
+    "x": 85,
+    "y": 40.5,
+    "color": "orange"
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 4,
+    "side": "top",
+    "size": "gross"
+   },
+   {
+    "x": 28,
+    "y": 57,
+    "side": "bottom"
+   },
+   {
+    "x": 72,
+    "y": 57,
+    "side": "bottom"
+   }
+  ],
+  "players": [
+   {
+    "id": "r1",
+    "team": "b",
+    "x": 48,
+    "y": 6,
+    "label": "TW"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 39.5,
+    "y": 14,
+    "label": "2"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 68,
+    "y": 13,
+    "label": "5"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 59.5,
+    "y": 16,
+    "label": "9"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 17,
+    "y": 31,
+    "label": "11"
+   },
+   {
+    "id": "r13",
+    "team": "b",
+    "x": 42.5,
+    "y": 30,
+    "label": "13"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 51,
+    "y": 36,
+    "label": "8"
+   },
+   {
+    "id": "r12",
+    "team": "b",
+    "x": 68,
+    "y": 29,
+    "label": "12"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 77,
+    "y": 30,
+    "label": "7"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 25.5,
+    "y": 45,
+    "label": "10"
+   },
+   {
+    "id": "r14",
+    "team": "b",
+    "x": 59.5,
+    "y": 45,
+    "label": "14"
+   },
+   {
+    "id": "r15",
+    "team": "b",
+    "x": 77,
+    "y": 46,
+    "label": "15"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 17,
+    "y": 54,
+    "label": "3"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 51,
+    "y": 52,
+    "label": "4"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 68,
+    "y": 53,
+    "label": "6"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 8,
+    "y": 50,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 68.6,
+    "y": 53.6
+   },
+   {
+    "id": "s1",
+    "x": 9.6,
+    "y": 46.5
+   },
+   {
+    "id": "s2",
+    "x": 6,
+    "y": 46.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Hinten drei gegen drei",
+    "say": "Spieler sechs eröffnet hinten. Über Spieler vier geht der Ball weiter zu Spieler drei. Hier hinten hat jeder einen Gegenspieler, also schnell spielen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       51.6,
+       52.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r14",
+      "to": [
+       55,
+       48
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       17.6,
+       54.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Steil in die Mittelzone",
+    "say": "Spieler acht zeigt sich in der Mitte und schaut zum Ball. Spieler drei spielt flach und steil zu ihm. Wer in seiner Zone angespielt wird, darf weiter nach vorn.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       33.3,
+       45.4
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b1",
+      "to": [
+       51.6,
+       36.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Aufdrehen, raus nach außen",
+    "say": "Erst jetzt dreht Spieler acht auf, und der Blick geht nach außen. Spieler dreizehn kommt zu spät. Der Ball geht raus zu Spieler elf.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       31.2,
+       33.1
+      ],
+      "type": "blick",
+      "von": [
+       33.3,
+       45.4
+      ],
+      "dauer": 1.3
+     },
+     {
+      "who": "n8",
+      "to": [
+       17,
+       31
+      ],
+      "type": "dreh",
+      "delay": 0.4
+     },
+     {
+      "who": "r13",
+      "to": [
+       45,
+       33
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     },
+     {
+      "who": "b1",
+      "to": [
+       17.6,
+       31.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Pass in die Endzone",
+    "say": "Spieler neun kommt kurz und schaut zum Ball. Spieler elf spielt ihn in der Endzone an und läuft sofort hinterher. Auf der anderen Seite startet Spieler sieben. Die beiden Verteidiger gehen mit.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       52,
+       17
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n9",
+      "to": [
+       33.4,
+       24.4
+      ],
+      "type": "blick",
+      "delay": 0.5
+     },
+     {
+      "who": "b1",
+      "to": [
+       52.6,
+       17.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n11",
+      "to": [
+       29,
+       11
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r2",
+      "to": [
+       34,
+       12
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       78,
+       12
+      ],
+      "type": "lauf",
+      "delay": 1.2
+     },
+     {
+      "who": "r5",
+      "to": [
+       72,
+       11
+      ],
+      "type": "lauf",
+      "delay": 1.5
+     }
+    ]
+   },
+   {
+    "label": "Aufdrehen, Abschluss: Punkt",
+    "say": "Spieler neun dreht auf und hat freie Bahn. Er schießt flach ins Eck, und das gibt einen Punkt für Team Neon. Danach spielt der Trainer den nächsten Ball zu den drei Spielern hinten.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       52.5,
+       4.3
+      ],
+      "type": "blick",
+      "von": [
+       33.4,
+       24.4
+      ],
+      "dauer": 1.3
+     },
+     {
+      "who": "n9",
+      "to": [
+       52.5,
+       4.3
+      ],
+      "type": "dreh",
+      "delay": 0.4
+     },
+     {
+      "who": "b1",
+      "to": [
+       52.5,
+       4.3
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Ein Spieler von hinten darf mit Ball in die Mittelzone dribbeln.",
+   "title": "Vier gegen zwei in der Mitte",
+   "text": "Jetzt darf ein Spieler von hinten mit Ball in die Mittelzone dribbeln. Dann stehen dort vier gegen zwei. Team Rot zieht sich zurück und stellt den Raum zu, statt sofort zu pressen. Team Neon hat so mehr Zeit am Ball.",
+   "board": {
+    "players": [
+     {
+      "id": "r1",
+      "team": "b",
+      "x": 48,
+      "y": 6,
+      "label": "TW"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 39.5,
+      "y": 14,
+      "label": "2"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 68,
+      "y": 13,
+      "label": "5"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 59.5,
+      "y": 16,
+      "label": "9"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 17,
+      "y": 31,
+      "label": "11"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 42.5,
+      "y": 30,
+      "label": "13"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 51,
+      "y": 36,
+      "label": "8"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 68,
+      "y": 29,
+      "label": "12"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 77,
+      "y": 30,
+      "label": "7"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 25.5,
+      "y": 45,
+      "label": "10"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 59.5,
+      "y": 45,
+      "label": "14"
+     },
+     {
+      "id": "r15",
+      "team": "b",
+      "x": 77,
+      "y": 46,
+      "label": "15"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 17,
+      "y": 54,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 51,
+      "y": 52,
+      "label": "4"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 68,
+      "y": 53,
+      "label": "6"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 8,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 51.6,
+      "y": 52.6
+     },
+     {
+      "id": "s1",
+      "x": 9.6,
+      "y": 46.5
+     },
+     {
+      "id": "s2",
+      "x": 6,
+      "y": 46.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Kopf hoch, Platz sehen",
+      "say": "Spieler vier hat den Ball. Vor ihm ist frei, Spieler vierzehn steht zu weit weg. Er schaut kurz hoch und dribbelt los in die Mittelzone.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         46,
+         38
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "n4",
+        "to": [
+         44,
+         39
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "n8",
+        "to": [
+         58,
+         33
+        ],
+        "type": "lauf",
+        "delay": 0.8
+       }
+      ]
+     },
+     {
+      "label": "Vier gegen zwei ausspielen",
+      "say": "Jetzt sind es in der Mitte vier gegen zwei. Spieler dreizehn und Spieler zwölf ziehen sich zurück. Spieler vier spielt zu Spieler acht, und der spielt sofort in die Endzone auf Spieler neun.",
+      "moves": [
+       {
+        "who": "r13",
+        "to": [
+         42.5,
+         25
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r12",
+        "to": [
+         66,
+         24
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         58.6,
+         33.6
+        ],
+        "type": "pass",
+        "delay": 0.6
+       },
+       {
+        "who": "b1",
+        "to": [
+         60.1,
+         16.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: In jeder Zone stehen immer mindestens zwei Spieler von jedem Team.",
+   "title": "Zwei Spieler in jeder Zone",
+   "text": "Jedes Team hat in jeder Zone immer mindestens zwei Spieler. Geht einer nach vorn, rückt ein anderer nach. So muss jeder wissen, wo seine Mitspieler stehen. Die Abstände bleiben gut, und hinten ist immer einer zum Absichern da.",
+   "board": {
+    "players": [
+     {
+      "id": "r1",
+      "team": "b",
+      "x": 48,
+      "y": 6,
+      "label": "TW"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 39.5,
+      "y": 14,
+      "label": "2"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 68,
+      "y": 13,
+      "label": "5"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 59.5,
+      "y": 16,
+      "label": "9"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 17,
+      "y": 31,
+      "label": "11"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 42.5,
+      "y": 30,
+      "label": "13"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 51,
+      "y": 36,
+      "label": "8"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 68,
+      "y": 29,
+      "label": "12"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 77,
+      "y": 17,
+      "label": "7"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 25.5,
+      "y": 45,
+      "label": "10"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 59.5,
+      "y": 45,
+      "label": "14"
+     },
+     {
+      "id": "r15",
+      "team": "b",
+      "x": 77,
+      "y": 46,
+      "label": "15"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 17,
+      "y": 54,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 51,
+      "y": 52,
+      "label": "4"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 68,
+      "y": 53,
+      "label": "6"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 8,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 17.6,
+      "y": 54.6
+     },
+     {
+      "id": "s1",
+      "x": 9.6,
+      "y": 46.5
+     },
+     {
+      "id": "s2",
+      "x": 6,
+      "y": 46.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Einer geht vor, einer rückt nach",
+      "say": "Spieler drei spielt hoch zu Spieler elf. Gleichzeitig startet Spieler acht in die Endzone. Jetzt fehlt in der Mitte einer. Spieler vier schaut nach vorn, sieht das und rückt sofort nach.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         17.6,
+         31.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n8",
+        "to": [
+         50,
+         19
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n4",
+        "to": [
+         50,
+         36
+        ],
+        "type": "blick",
+        "delay": 0.8
+       },
+       {
+        "who": "n4",
+        "to": [
+         44,
+         39
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "In die Endzone: Punkt",
+      "say": "Spieler elf spielt in die Endzone auf Spieler acht. Der legt quer zu Spieler neun, und Spieler neun schießt. Das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         19.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         60.1,
+         16.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         52.5,
+         4.3
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
