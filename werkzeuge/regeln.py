@@ -28,7 +28,7 @@ ERLAUBT = {
     "cones": {"x", "y", "color", "shape", "id"}, "goals": {"x", "y", "side", "size"}, "balls": {"id", "x", "y"}, "arrows": {"from", "to", "type", "bend"},
     "labels": {"x", "y", "text"}, "steps": {"label", "say", "moves"}, "dims": {"x1", "y1", "x2", "y2", "text"},
 }
-ERLAUBT_MOVE = {"who", "ball", "to", "from", "type", "bend", "delay", "after", "weite", "dauer"}
+ERLAUBT_MOVE = {"who", "ball", "to", "from", "type", "bend", "delay", "after", "weite", "dauer", "von"}
 ERLAUBT_BOARD = set(ERLAUBT) | {"sketch_steps"}
 ERLAUBT_UNIT = {"title", "code", "kind", "focuses", "age_groups", "altersbereiche", "tags", "zeit", "aufrufe", "duration_minutes", "players_min", "players_max", "field_size", "description",
                 "organisation", "organisation_show", "coaching_points", "progression", "materials", "access", "hidden", "board", "say_intro",

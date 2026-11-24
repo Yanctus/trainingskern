@@ -57,8 +57,12 @@ Du baust die Übungen EINER Woche als neue Einheiten (Entity `Einheit`) und läd
 - Orientierung: möglichst nach oben spielen (Tor oben); gedreht/gespiegelt im Kommentar und Bericht vermerken.
 - Aufdrehen/Drehung (Inhaber, 24.11.2026): Dreht ein Spieler auf (turn, open up, half-turn), dafür NIE den Blickkegel nehmen,
   sondern den Drehpfeil `drehen(who, to)` (Bogen um den Spieler, endet in Richtung to; `gegen=True` = gegen den Uhrzeigersinn).
-  Der Blickkegel `bl()` ist nur fürs Schauen. Typische Folge: erst scannen, woher der Ball kommt (`bl` zum Passgeber), dann wohin
-  es weitergeht (`bl(..., after=True)`), dann Pass; im nächsten Schritt `drehen(...)` und danach der Pass (`after=True`).
+  Der Blickkegel `bl()` ist nur fürs Schauen.
+- Schaut ein Spieler erst hier, dann dort (z. B. erst zum Passgeber, dann dorthin, wohin er weiterspielt): EIN Kegel, der
+  mitschwenkt, nie zwei Kegel: `bl(who, to=<wohin er als Nächstes spielt>, von=<worauf er zuerst schaut>)`. Der Kegel steht
+  kurz auf `von`, dreht hinüber und bleibt genau mittig auf `to` stehen (`to` = Ziel des nächsten Passes).
+  Typische Folge: `bl(..., von=...)`, dann der Pass zu ihm (`after=True`); im nächsten Schritt `drehen(who, to)` und danach
+  sein Pass (`after=True`).
 - Meterangaben (Inhaber, 24.11.2026): Unter 20 m genau lassen, ab 20 m auf Fünferschritte runden (27 -> 25, 36 -> 35, 41 -> 40).
   Das gilt für `field_size`, die Maßlinien (`dims`) und alle Texte (organisation, description, say). Die App rundet die Anzeige
   von field_size und dims zusätzlich selbst; Texte muss man gleich gerundet schreiben.

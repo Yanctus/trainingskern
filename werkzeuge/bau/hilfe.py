@@ -16,9 +16,13 @@ def drehen(who, to, gegen=False, **k):
     m = mv(who, to, "dreh", **k)
     if gegen: m["bend"] = -1
     return m
-# Schulterblick: Kegel vom Spieler in Richtung to (Länge = Abstand). Zweimal mit after=True = links und rechts scannen.
-def bl(who, to, weite=None, dauer=None, **k):
+# Blickkegel: Kegel vom Spieler in Richtung to (Länge = Abstand).
+# von=[x, y]: Der Spieler schaut ZUERST dorthin (z. B. zum Passgeber), dann schwenkt derselbe Kegel hinüber nach to
+# (dorthin, wohin er als Nächstes spielt) und bleibt dort mittig stehen. Für "erst hier schauen, dann dort" IMMER
+# einen Kegel mit von nehmen, nie zwei Kegel hintereinander (Inhaber, 24.11.2026).
+def bl(who, to, weite=None, dauer=None, von=None, **k):
     m = mv(who, to, "blick", **k)
+    if von: m["von"] = list(von)
     if weite: m["weite"] = weite
     if dauer: m["dauer"] = dauer
     return m
