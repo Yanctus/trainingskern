@@ -50,3 +50,7 @@ Leitern `leiter(...)`, Ringe `ring(...)`, nie Hürden als Ersatz. Klassen/Formen
 
 ## Meterangaben
 Unter 20 m genau, ab 20 m auf Fünferschritte runden (27 -> 25, 36 -> 35), in field_size, dims und allen Texten.
+
+## Großfeld quer (Inhaber, 24.11.2026, mit UE-319 abgenommen)
+Ganzer Platz oder Dreiviertelfeld: Feld quer wie im Fernsehbild, Tore links/rechts, echte Platzlinien, `"massstab": "gross"` im
+Haupt-board, nur die Längen-Maßlinie. Einzelheiten in AUFTRAG.md („Großfeld QUER“), Vorbild bau/ue319.py.

@@ -49,6 +49,15 @@ Du baust die Übungen EINER Woche als neue Einheiten (Entity `Einheit`) und läd
   wird von links nach rechts durchlaufen) oder `leiter(x, y, senkrecht=True)` (von oben nach unten). Längere Leiter = zwei Leitern
   hintereinander. Ringe/Reifen IMMER zeichnen: `ring(x, y)` (Durchmesser ca. 4,6 Einheiten, Abstand Mitte zu Mitte ca. 6).
   Leitern und Ringe sind für Laufwege kein Hindernis (man läuft hindurch). Echte Minihürden bleiben "huerde"/"huerde_ou".
+- Großfeld QUER (Inhaber, 24.11.2026, mit UE-319 abgenommen; Vorbild: bau/ue319.py): Spielt die Übung auf dem ganzen Platz oder
+  einem Dreiviertelfeld (ab etwa 60 m Länge, viele Spieler, z. B. 8 gegen 8 bis 11 gegen 11), liegt das Feld QUER wie im Fernsehbild:
+  Tore links und rechts (`"side": "left"` / `"right"`, `"size": "gross"`), echte Platzlinien (Außenlinie, Mittellinie, Mittelkreis
+  `{"type": "circle", ...}`, Strafräume, Torräume; Drittel-Linien gestrichelt, wenn das Original sie hat), Feld etwa x 7-91, y 3-52.
+  Dazu im Haupt-board `"massstab": "gross"` (die 3D-Bühne zeigt Figuren, Bälle und Hütchen dann kleiner; der 3D-Abstand wird in
+  `pruefen` entsprechend kleiner gerechnet). Nur die Längen-Maßlinie unten (rechts neben dem Tor ist kein Platz), die Breite steht
+  in field_size. Trainer an der Seitenlinie unten, nahe der Stelle, wo er einspielt (kein Pass quer über den ganzen Platz).
+  Spieler einer Kette stehen quer hintereinander: weit genug auseinander (pruefen meldet es sonst). Bequem: im Hochformat planen
+  und mit einer Umrechnung R() quer legen wie in ue319.py. Halbes Feld und kleiner bleibt wie bisher.
 - 3D-Abstand: zwei Figuren (Spieler, Trainer) in derselben Tafel brauchen |dx| ≥ 8.2 ODER |dy| ≥ 15.5 (Board 0-100 × 0-60,
   Feld meist x 25-75, y 5-55). Wartende Spieler lieber neben das Feld oder nur im Text erwähnen.
 - Bälle am Fuß: Spieler (x,y) → Ball (x+0.6, y+0.6). Pässe zu einem Spieler enden ebenso bei (x+0.6, y+0.6).
