@@ -24,7 +24,7 @@
   "Grundordnung: Torwart, Viererkette, ein Sechser, zwei Achter, vorn ein Stürmer und zwei Flügelspieler.",
   "Hinten: Beim Aufbau gehen die Innenverteidiger breit bis an die Ecken vom Strafraum, die Außenverteidiger schieben hoch, der Torwart spielt mit.",
   "Mittelfeld: Der Sechser bietet sich zentral an oder lässt sich zwischen die Innenverteidiger fallen, die Achter stehen in den Halbräumen und zwischen den Linien.",
-  "Bewegung: Mit jedem Pass schiebt die ganze Mannschaft zum Ball, wer weit weg ist, bleibt breit. Jeder am Ball hat mindestens zwei Anspielstationen."
+  "Bewegung: Mit jedem Pass schiebt die ganze Mannschaft zum Ball. Einer kommt, einer geht: Kommt ein Spieler zum Ball, läuft ein anderer in die Tiefe."
  ],
  "organisation_show": [
   "lines",
@@ -34,7 +34,7 @@
  ],
  "coaching_points": [
   "Feld groß machen: breit und tief stehen",
-  "Mit jedem Pass verschieben alle",
+  "Einer kommt, einer geht",
   "Immer zwei Anspielstationen anbieten",
   "Eine Seite zu? Über den Torwart verlagern"
  ],
@@ -443,7 +443,7 @@
    },
    {
     "label": "Der Innenverteidiger wählt außen",
-    "say": "Auch der Innenverteidiger hat mehrere Anspielstationen: außen, schräg innen den Achter oder den Sechser. Er wählt außen, da ist am meisten Platz. Sofort bewegen sich alle mit. Der Achter bietet sich schräg vor dem Ball an, der Sechser sichert dahinter ab.",
+    "say": "Auch der Innenverteidiger hat mehrere Anspielstationen: außen, schräg innen den Achter oder den Sechser. Er wählt außen, da ist am meisten Platz. Jetzt gilt: Einer kommt, einer geht. Der Achter kommt schräg vor den Ball, dafür geht der Flügelspieler nach vorn in die Tiefe. Der Sechser sichert dahinter ab.",
     "moves": [
      {
       "who": "n4",
@@ -485,6 +485,15 @@
       "to": [
        52,
        42
+      ],
+      "type": "lauf",
+      "delay": 2.0
+     },
+     {
+      "who": "n7",
+      "to": [
+       76,
+       50
       ],
       "type": "lauf",
       "delay": 2.0
@@ -556,12 +565,12 @@
    },
    {
     "label": "Vier Wege vom Außenverteidiger",
-    "say": "Jetzt hat der Außenverteidiger vier Wege. Die Linie entlang zum Flügel, schräg in den Achter, zurück zum Sechser oder zum Innenverteidiger. Der Achter steht offen und schaut zum Ball, also bekommt er ihn. Im gleichen Moment startet der Flügelspieler in die Tiefe.",
+    "say": "Jetzt hat der Außenverteidiger vier Wege. Die Linie entlang zum Flügel, schräg in den Achter, zurück zum Sechser oder zum Innenverteidiger. Der Achter steht offen und schaut zum Ball, also bekommt er ihn. Der Flügelspieler ist schon unterwegs in die Tiefe.",
     "moves": [
      {
       "who": "n2",
       "to": [
-       68,
+       76,
        50
       ],
       "type": "option"
@@ -614,8 +623,8 @@
      {
       "who": "n7",
       "to": [
-       80,
-       49
+       82,
+       48
       ],
       "type": "lauf",
       "delay": 3.0
@@ -665,8 +674,8 @@
      {
       "who": "n8",
       "to": [
-       80,
-       49
+       82,
+       48
       ],
       "type": "blick",
       "von": [
@@ -678,8 +687,8 @@
      {
       "who": "n8",
       "to": [
-       80,
-       49
+       82,
+       48
       ],
       "type": "dreh",
       "delay": 0.4
@@ -687,8 +696,8 @@
      {
       "who": "n8",
       "to": [
-       80,
-       49
+       82,
+       48
       ],
       "type": "option",
       "delay": 1.5
@@ -714,8 +723,8 @@
      {
       "who": "b1",
       "to": [
-       80.6,
-       49.6
+       82.6,
+       48.6
       ],
       "type": "pass",
       "after": true
@@ -959,7 +968,7 @@
     "steps": [
      {
       "label": "Zwei Stürmer laufen an",
-      "say": "Jetzt laufen zwei Stürmer an, und der Gegner rückt mit allen hoch. Unser Sechser lässt sich zwischen die Innenverteidiger fallen, die gehen noch breiter. Hinten sind wir drei plus Torwart gegen zwei. Die Achter suchen sich die Lücken zwischen den Linien.",
+      "say": "Jetzt laufen zwei Stürmer an, und der Gegner rückt mit allen hoch. Unser Sechser lässt sich zwischen die Innenverteidiger fallen, die gehen noch breiter. Hinten sind wir drei plus Torwart gegen zwei. Einer kommt, einer geht: Der Sechser kommt nach hinten, dafür rückt ein Achter in seinen Raum. Der andere Achter sucht die Lücke zwischen den Linien.",
       "moves": [
        {
         "who": "r19",
@@ -1098,8 +1107,8 @@
        {
         "who": "n8",
         "to": [
-         56,
-         41
+         34,
+         32
         ],
         "type": "lauf",
         "delay": 0.3
@@ -1342,8 +1351,8 @@
        {
         "who": "n8",
         "to": [
-         56,
-         34
+         40,
+         33
         ],
         "type": "lauf",
         "delay": 2.0
@@ -1370,7 +1379,7 @@
      },
      {
       "label": "Andribbeln und locken",
-      "say": "Der Innenverteidiger hat Platz und dribbelt an, bis ein Gegner kommt. Kommt einer, wird ein anderer frei: außen der Außenverteidiger, innen der Achter, vorn der Stürmer, der entgegenkommt.",
+      "say": "Der Innenverteidiger hat Platz und dribbelt an, bis ein Gegner kommt. Kommt einer, wird ein anderer frei: außen der Außenverteidiger, innen der Achter, vorn der Stürmer. Der Stürmer kommt entgegen, und der Flügel geht hinter die Kette. Einer kommt, einer geht.",
       "moves": [
        {
         "who": "n5",
@@ -1434,6 +1443,15 @@
         ],
         "type": "lauf",
         "delay": 2.4
+       },
+       {
+        "who": "n11",
+        "to": [
+         82,
+         10
+        ],
+        "type": "lauf",
+        "delay": 2.4
        }
       ]
      },
@@ -1494,8 +1512,8 @@
        {
         "who": "n10",
         "to": [
-         76,
-         7
+         82,
+         10
         ],
         "type": "option"
        },
@@ -1511,8 +1529,8 @@
        {
         "who": "n10",
         "to": [
-         56,
-         34
+         40,
+         33
         ],
         "type": "option",
         "after": true
@@ -1520,8 +1538,8 @@
        {
         "who": "n11",
         "to": [
-         84,
-         9
+         86,
+         12
         ],
         "type": "lauf",
         "delay": 0.1
@@ -1565,8 +1583,8 @@
        {
         "who": "b1",
         "to": [
-         84.6,
-         9.6
+         86.6,
+         12.6
         ],
         "type": "pass",
         "after": true
@@ -2171,7 +2189,7 @@
      },
      {
       "label": "Auf der freien Seite",
-      "say": "Der Außenverteidiger hat drei Wege: die Linie entlang, innen den Achter oder den Stürmer. Er spielt den Achter an. Jetzt schiebt die ganze Mannschaft auf die neue Seite, und der Flügelspieler startet in die Tiefe.",
+      "say": "Der Außenverteidiger hat drei Wege: die Linie entlang, innen den Achter oder den Stürmer. Er spielt den Achter an, der zum Ball kommt. Einer kommt, einer geht: Dafür startet der Flügelspieler in die Tiefe, und die ganze Mannschaft schiebt auf die neue Seite.",
       "moves": [
        {
         "who": "n3",

@@ -5,6 +5,8 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # LEBENDIG (Inhaber, 24.11.2026, zweite Fassung): Bei jedem Ballweg verschieben alle mit, Neon und Rot. Vor jedem Pass zeigt
 # opt() zwei bis vier Anspielstationen (dünne Pfeile), dann kommt die Wahl mit Begründung. Muster: Dreieck auf der Seite,
 # Sechser kippt ab, freier Mann, andribbeln und locken, dritter Mann, Seitenwechsel über den Torwart.
+# EINER KOMMT, EINER GEHT (Inhaber, 24.11.2026): Kommt ein Spieler zum Ball (Achter, Sechser, Stürmer), geht im selben Moment
+# ein anderer weg (Flügel in die Tiefe, Achter in den Sechserraum). In jedem Kapitel mindestens einmal gezeigt und gesagt.
 # Großfeld quer wie UE-319 (massstab "gross"): Team Neon baut links auf und spielt nach rechts. Von Team Neon aus gesehen ist
 # oben die linke Seite (Linksverteidiger 3, Linksaußen 11), unten die rechte (Rechtsverteidiger 2, Rechtsaußen 7).
 # Nummern wie im klassischen 4-3-3: 2 RV, 3 LV, 4 und 5 Innenverteidiger, 6 Sechser, 8 und 10 Achter, 7 RA, 9 Stürmer, 11 LA.
@@ -69,12 +71,12 @@ s3 += L.schieb({"n5": (22, 19), "n6": (29, 32), "n2": (45, 50), "n8": (42, 40), 
 k1.append(S("Drei Möglichkeiten für den Torwart", "Der Torwart hat drei Möglichkeiten: beide Innenverteidiger und den Sechser. Er spielt nach rechts. Und mit dem Ball schiebt die ganze Mannschaft ein Stück auf diese Seite, auch die Spieler weit weg vom Ball.", *s3))
 s4 = L.opts("n2", "n8", "n6")
 s4.append(L.pas("n2", after=True))
-s4 += L.schieb({"n8": (52, 42), "n6": (34, 38), "n4": (26, 46), "n5": (24, 25), "n10": (50, 29), "n9": (74, 36), "n3": (42, 13), "n11": (66, 15)}, delay=2.0)
-k1.append(S("Der Innenverteidiger wählt außen", "Auch der Innenverteidiger hat mehrere Anspielstationen: außen, schräg innen den Achter oder den Sechser. Er wählt außen, da ist am meisten Platz. Sofort bewegen sich alle mit. Der Achter bietet sich schräg vor dem Ball an, der Sechser sichert dahinter ab.", *s4))
+s4 += L.schieb({"n8": (52, 42), "n7": (76, 50), "n6": (34, 38), "n4": (26, 46), "n5": (24, 25), "n10": (50, 29), "n9": (74, 36), "n3": (42, 13), "n11": (66, 15)}, delay=2.0)
+k1.append(S("Der Innenverteidiger wählt außen", "Auch der Innenverteidiger hat mehrere Anspielstationen: außen, schräg innen den Achter oder den Sechser. Er wählt außen, da ist am meisten Platz. Jetzt gilt: Einer kommt, einer geht. Der Achter kommt schräg vor den Ball, dafür geht der Flügelspieler nach vorn in die Tiefe. Der Sechser sichert dahinter ab.", *s4))
 s5 = L.opts("n7", "n8", "n6", "n4")
 s5 += [bl("n8", f(L.p["n2"]), after=True), L.pas("n8", after=True)]
-s5 += L.schieb({"n7": (80, 49), "n9": (78, 34), "n10": (57, 30), "n11": (70, 17), "n6": (40, 38)}, delay=3.0)
-k1.append(S("Vier Wege vom Außenverteidiger", "Jetzt hat der Außenverteidiger vier Wege. Die Linie entlang zum Flügel, schräg in den Achter, zurück zum Sechser oder zum Innenverteidiger. Der Achter steht offen und schaut zum Ball, also bekommt er ihn. Im gleichen Moment startet der Flügelspieler in die Tiefe.", *s5))
+s5 += L.schieb({"n7": (82, 48), "n9": (78, 34), "n10": (57, 30), "n11": (70, 17), "n6": (40, 38)}, delay=3.0)
+k1.append(S("Vier Wege vom Außenverteidiger", "Jetzt hat der Außenverteidiger vier Wege. Die Linie entlang zum Flügel, schräg in den Achter, zurück zum Sechser oder zum Innenverteidiger. Der Achter steht offen und schaut zum Ball, also bekommt er ihn. Der Flügelspieler ist schon unterwegs in die Tiefe.", *s5))
 von = f(L.p["n2"])
 s6 = [bl("n8", list(L.p["n7"]), von=von, dauer=1.3), drehen("n8", list(L.p["n7"]), delay=0.4)]
 s6 += L.opts("n7", "n9", "n10", delay=1.5)
@@ -88,8 +90,8 @@ k2 = []
 a = L2.schieb({"r19": (25, 17), "r20": (25, 38), "r16": (46, 9), "r17": (44, 21), "r18": (44, 34), "r21": (46, 46),
                "r13": (70, 9), "r14": (66, 21), "r15": (66, 34), "r12": (70, 46)})
 a += L2.schieb({"n6": (19, 27.5), "n5": (16, 9), "n4": (16, 46), "n3": (48, 5), "n2": (48, 50), "n10": (56, 14),
-                "n8": (56, 41), "n9": (76, 27.5), "n11": (74, 5), "n7": (74, 50)}, delay=0.3)
-k2.append(S("Zwei Stürmer laufen an", "Jetzt laufen zwei Stürmer an, und der Gegner rückt mit allen hoch. Unser Sechser lässt sich zwischen die Innenverteidiger fallen, die gehen noch breiter. Hinten sind wir drei plus Torwart gegen zwei. Die Achter suchen sich die Lücken zwischen den Linien.", *a))
+                "n8": (34, 32), "n9": (76, 27.5), "n11": (74, 5), "n7": (74, 50)}, delay=0.3)
+k2.append(S("Zwei Stürmer laufen an", "Jetzt laufen zwei Stürmer an, und der Gegner rückt mit allen hoch. Unser Sechser lässt sich zwischen die Innenverteidiger fallen, die gehen noch breiter. Hinten sind wir drei plus Torwart gegen zwei. Einer kommt, einer geht: Der Sechser kommt nach hinten, dafür rückt ein Achter in seinen Raum. Der andere Achter sucht die Lücke zwischen den Linien.", *a))
 b2 = L2.opts("n5", "n6", "n4")
 b2.append(L2.pas("n6", after=True))
 b2 += L2.schieb({"r19": (22, 24), "r20": (22, 36)}, delay=2.0)
@@ -98,20 +100,20 @@ c2 = L2.opts("n5", "n4", "n10")
 c2.append(L2.pas("n5", after=True))
 c2 += L2.schieb({"r16": (40, 11), "r17": (42, 18), "r18": (44, 30), "r21": (48, 40), "r13": (68, 8), "r14": (64, 18),
                  "r15": (64, 30), "r12": (68, 42), "n3": (52, 4), "n10": (54, 17), "n9": (72, 24), "n11": (76, 7),
-                 "n8": (56, 34), "n2": (52, 47), "n6": (22, 26)}, delay=2.0)
+                 "n8": (40, 33), "n2": (52, 47), "n6": (22, 26)}, delay=2.0)
 k2.append(S("Der freie Mann", "Der Sechser sieht beide Innenverteidiger und den Achter. Links ist frei, also geht der Ball dorthin. Jetzt verschiebt der Gegner auf diese Seite, und wir schieben mit: Der Außenverteidiger bleibt breit, der Achter steht in der Lücke.", *c2))
 d2 = [L2.dribbel("n5", (30, 10))]
 d2 += L2.schieb({"r16": (36, 12)}, delay=0.6)
 d2 += L2.opts("n3", "n10", "n9", delay=1.6)
-d2 += L2.schieb({"n9": (62, 21), "r14": (62, 20)}, delay=2.4)
-k2.append(S("Andribbeln und locken", "Der Innenverteidiger hat Platz und dribbelt an, bis ein Gegner kommt. Kommt einer, wird ein anderer frei: außen der Außenverteidiger, innen der Achter, vorn der Stürmer, der entgegenkommt.", *d2))
+d2 += L2.schieb({"n9": (62, 21), "r14": (62, 20), "n11": (82, 10)}, delay=2.4)
+k2.append(S("Andribbeln und locken", "Der Innenverteidiger hat Platz und dribbelt an, bis ein Gegner kommt. Kommt einer, wird ein anderer frei: außen der Außenverteidiger, innen der Achter, vorn der Stürmer. Der Stürmer kommt entgegen, und der Flügel geht hinter die Kette. Einer kommt, einer geht.", *d2))
 e2 = [L2.pas("n9")]
 e2 += L2.schieb({"n10": (62, 12)}, delay=0.2)
 e2.append(L2.pas("n10", after=True))
 e2 += L2.schieb({"r17": (52, 18), "r16": (46, 10)}, delay=1.4)
 k2.append(S("Der dritte Mann", "Er wählt den Stürmer. Der lässt den Ball direkt prallen auf den Achter, der in seinem Rücken mitläuft. Das ist der dritte Mann: Er bekommt den Ball schon mit Blick nach vorn.", *e2))
 g2 = L2.opts("n11", "n3", "n8")
-g2 += L2.schieb({"n11": (84, 9), "n3": (64, 4), "n8": (70, 38), "n9": (78, 24), "n7": (80, 46)}, delay=0.1)
+g2 += L2.schieb({"n11": (86, 12), "n3": (64, 4), "n8": (70, 38), "n9": (78, 24), "n7": (80, 46)}, delay=0.1)
 g2.append(L2.pas("n11", after=True))
 g2 += L2.schieb({"r13": (82, 12), "r14": (76, 20), "r15": (74, 32)}, delay=1.8)
 k2.append(S("Hinter die Kette", "Jetzt geht alles nach vorn. Der Achter hat den Flügel in der Tiefe, den Außenverteidiger außen und den anderen Achter. Der Flügel ist am schnellsten, also bekommt er den Ball. Mit wenigen Pässen ist das Pressing überspielt.", *g2))
@@ -135,7 +137,7 @@ k3.append(S("Seitenwechsel", "Der Torwart spielt zum linken Innenverteidiger, un
 d3 = L3.opts("n11", "n10", "n9")
 d3.append(L3.pas("n10", after=True))
 d3 += L3.schieb({"n11": (80, 8), "n9": (78, 22), "n3": (54, 6), "n8": (58, 38), "n6": (40, 24), "n2": (52, 46), "n4": (28, 40)}, delay=1.9)
-k3.append(S("Auf der freien Seite", "Der Außenverteidiger hat drei Wege: die Linie entlang, innen den Achter oder den Stürmer. Er spielt den Achter an. Jetzt schiebt die ganze Mannschaft auf die neue Seite, und der Flügelspieler startet in die Tiefe.", *d3))
+k3.append(S("Auf der freien Seite", "Der Außenverteidiger hat drei Wege: die Linie entlang, innen den Achter oder den Stürmer. Er spielt den Achter an, der zum Ball kommt. Einer kommt, einer geht: Dafür startet der Flügelspieler in die Tiefe, und die ganze Mannschaft schiebt auf die neue Seite.", *d3))
 e3 = [L3.pas("n11")]
 e3 += L3.schieb({"r13": (84, 12), "r14": (80, 18)}, delay=0.6)
 k3.append(S("Angriff, wo der Gegner nicht ist", "Der Achter steckt durch auf den Flügel. So greifen wir dort an, wo der Gegner gerade nicht ist.", *e3))
@@ -148,9 +150,9 @@ u = {"title": "Aufbau im 4-3-3 über den Torwart", "code": "TA-001", "kind": "Ta
  "organisation": ["Grundordnung: Torwart, Viererkette, ein Sechser, zwei Achter, vorn ein Stürmer und zwei Flügelspieler.",
   "Hinten: Beim Aufbau gehen die Innenverteidiger breit bis an die Ecken vom Strafraum, die Außenverteidiger schieben hoch, der Torwart spielt mit.",
   "Mittelfeld: Der Sechser bietet sich zentral an oder lässt sich zwischen die Innenverteidiger fallen, die Achter stehen in den Halbräumen und zwischen den Linien.",
-  "Bewegung: Mit jedem Pass schiebt die ganze Mannschaft zum Ball, wer weit weg ist, bleibt breit. Jeder am Ball hat mindestens zwei Anspielstationen."],
+  "Bewegung: Mit jedem Pass schiebt die ganze Mannschaft zum Ball. Einer kommt, einer geht: Kommt ein Spieler zum Ball, läuft ein anderer in die Tiefe."],
  "organisation_show": ORG,
- "coaching_points": ["Feld groß machen: breit und tief stehen", "Mit jedem Pass verschieben alle", "Immer zwei Anspielstationen anbieten", "Eine Seite zu? Über den Torwart verlagern"],
+ "coaching_points": ["Feld groß machen: breit und tief stehen", "Einer kommt, einer geht", "Immer zwei Anspielstationen anbieten", "Eine Seite zu? Über den Torwart verlagern"],
  "materials": ["Großfeld mit zwei Toren", "Leibchen in zwei Farben", "Bälle"],
  "access": "abo", "hidden": True, "wartet_auf_ton": True,
  "say_intro": "Aufbau im Vier-drei-drei über den Torwart. Diesmal keine Übung, sondern das System. Wer steht wo, wie bewegen sich alle mit dem Ball, und welche Wege gibt es nach vorn?",
