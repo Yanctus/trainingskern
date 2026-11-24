@@ -82,7 +82,7 @@ g += L2.opts("n8", "n5", delay=1.0)
 g += L2.steil("n7", (78, 49), delay=2.2)
 g += L2.schieb({"n9": (74, 32), "n10": (58, 26), "n11": (66, 10)}, delay=2.2)
 g += L2.schieb({"r15": (76, 42), "r14": (72, 30), "r12": (70, 48)}, delay=2.6)
-k2.append(S("Einer kommt, einer geht", "Einer kommt, einer geht. Der Achter kommt zur Schiene, und der Stürmer geht in die Tiefe, genau in den Raum hinter dem Außenverteidiger. Die Schiene könnte kurz spielen, aber vorn ist der Lauf. Der Stürmer startet mit dem Pass, also kein Abseits. Und das Pressing ist überspielt.", *g))
+k2.append(S("Achter kommt, Stürmer geht", "Der Achter kommt zur Schiene, und der Stürmer geht in die Tiefe, genau in den Raum hinter dem Außenverteidiger. Die Schiene könnte kurz spielen, aber vorn ist der Lauf. Der Stürmer startet mit dem Pass, also kein Abseits. Und das Pressing ist überspielt.", *g))
 
 # ---------- Kapitel 3: zwei Stürmer im Wechselspiel ----------
 # Gegner im 4-4-2-Mittelfeldpressing, wir haben den Ball beim linken Halbverteidiger.
@@ -149,7 +149,7 @@ e = L4.opts("n9", "n7", "n8")
 e += L4.steil("n9", (84, 37), delay=1.6)
 e += L4.schieb({"n7": (86, 20), "n8": (73, 31), "n10": (72, 22)}, delay=1.6)
 e += L4.schieb({"r15": (83, 34), "r14": (82, 26), "r13": (80, 18), "r12": (78, 48)}, delay=2.0)
-k4.append(S("Kurzer und langer Pfosten", "Und jetzt pass auf: Einer kommt, einer geht. Der eine Stürmer kommt an den kurzen Pfosten, zum Ball hin. Der andere geht weg an den langen. Die zwei laufen über Kreuz, und der Achter wartet im Rückraum. Beide Stürmer starten erst mit der Flanke, also kein Abseits. Am kurzen Pfosten ist der Weg frei, also kommt der Ball flach dahin. Die Abwehr muss drei Räume auf einmal verteidigen.", *e))
+k4.append(S("Kurzer und langer Pfosten", "Und jetzt pass auf: Der eine Stürmer kommt an den kurzen Pfosten, zum Ball hin. Der andere geht weg an den langen. Die zwei laufen über Kreuz, und der Achter wartet im Rückraum. Beide Stürmer starten erst mit der Flanke, also kein Abseits. Am kurzen Pfosten ist der Weg frei, also kommt der Ball flach dahin. Die Abwehr muss drei Räume auf einmal verteidigen.", *e))
 f = L4.schieb({"n5": (52, 46), "n4": (42, 32), "n3": (46, 18), "n11": (72, 8)})
 f += L4.schieb({"r21": (66, 44), "r20": (56, 30), "r19": (54, 22)}, delay=0.4)
 k4.append(S("Hinten absichern", "Und hinten? Wenn beide Schienen so hoch stehen, ist hinter ihnen viel Platz. Darum schiebt die Dreierkette mit. Der Halbverteidiger rückt nach außen, hinter die Schiene. Der Innenverteidiger bleibt in der Mitte. Verlieren wir den Ball, ist schon einer da.", *f))

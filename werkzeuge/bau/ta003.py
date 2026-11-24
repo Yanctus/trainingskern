@@ -59,7 +59,7 @@ a = L2.schieb({"r20": (22, 17), "r19": (25, 29), "r21": (25, 39), "r17": (40, 20
                "r13": (64, 8), "r14": (64, 20), "r15": (64, 33), "r12": (64, 45)})
 a += L2.schieb({"n3": (16, 7), "n5": (18, 22), "n6": (34, 26), "n8": (40, 38), "n2": (46, 50), "n11": (52, 5),
                 "n7": (58, 46), "n9": (62, 20), "n10": (58, 32)}, delay=0.3)
-k2.append(S("Drei Stürmer laufen an", "Jetzt wird's ernst. Der Gegner spielt Vier-drei-drei und läuft mit drei Stürmern an. Gegen unsere zwei Innenverteidiger wär das Überzahl für ihn. Also bleibt unser Linksverteidiger hinten, und die Innenverteidiger rücken rüber. Jetzt sind wir hinten zu dritt, plus Torwart. Vier gegen drei. Und auch hier: Einer kommt, einer geht. Der Linksverteidiger kommt nach hinten, dafür geht der Rechtsverteidiger ganz hoch.", *a))
+k2.append(S("Drei Stürmer laufen an", "Jetzt wird's ernst. Der Gegner spielt Vier-drei-drei und läuft mit drei Stürmern an. Gegen unsere zwei Innenverteidiger wär das Überzahl für ihn. Also bleibt unser Linksverteidiger hinten, und die Innenverteidiger rücken rüber. Jetzt sind wir hinten zu dritt, plus Torwart. Vier gegen drei. Der Linksverteidiger kommt nach hinten, dafür geht der Rechtsverteidiger ganz hoch.", *a))
 b2 = L2.opts("n3", "n5", "n4", zu=("n5", "n4"))
 b2.append(L2.pas("n3", after=True))
 b2 += L2.schieb({"r20": (21, 13), "r19": (22, 24), "r17": (36, 16), "r16": (40, 24), "r18": (44, 38)}, delay=2.0)
@@ -70,7 +70,7 @@ c2 += L2.opts("n11", "n6", "n5", delay=1.4, zu=("n6", "n5"))
 c2.append(L2.pas("n11", after=True))
 c2 += L2.schieb({"r13": (46, 13), "r17": (38, 12), "r16": (40, 22), "r14": (64, 18), "r20": (24, 12),
                  "n10": (60, 26), "n8": (46, 34), "n2": (50, 50), "n7": (60, 44)}, delay=2.4)
-k2.append(S("Flügel kommt, Stürmer geht", "Einer kommt, einer geht. Der linke Flügel kommt dem Ball entgegen, und sein Gegenspieler läuft mit. Genau in dem Moment geht der Stürmer los, in den Raum hinter dem Verteidiger. Innen ist alles zu. Aber der Flügel ist frei, also kriegt er den Ball.", *c2))
+k2.append(S("Flügel kommt, Stürmer geht", "Der linke Flügel kommt dem Ball entgegen, und sein Gegenspieler läuft mit. Genau in dem Moment geht der Stürmer los, in den Raum hinter dem Verteidiger. Innen ist alles zu. Aber der Flügel ist frei, also kriegt er den Ball.", *c2))
 d2 = L2.opts("n9", "n6", "n3", zu=("n6",))
 d2 += L2.steil("n9", (74, 8), delay=1.6)
 d2 += L2.schieb({"r14": (70, 12), "r15": (68, 26), "r13": (52, 10), "n10": (66, 26), "n7": (64, 38), "n8": (52, 34),
@@ -109,7 +109,7 @@ d3 = L3.opts("n9", "n10", "n11", zu=("n11",))
 d3 += L3.steil("n9", (84, 32), delay=1.6)
 d3 += L3.schieb({"r14": (80, 28), "r12": (80, 40), "r15": (70, 32), "n10": (72, 30), "n11": (74, 14), "n7": (72, 44),
                  "n8": (60, 36)}, delay=1.8)
-k3.append(S("Der andere geht", "Und der andere Stürmer? Der ist schon unterwegs. Er startet genau mit dem Pass, also kein Abseits. Der Ball kommt in die Lücke, die sein Partner aufgemacht hat. Einer kommt, einer geht. So funktioniert das Stürmerpaar im Vier-vier-zwei.", *d3))
+k3.append(S("Der andere geht", "Und der andere Stürmer? Der ist schon unterwegs. Er startet genau mit dem Pass, also kein Abseits. Der Ball kommt in die Lücke, die sein Partner aufgemacht hat. So funktioniert das Stürmerpaar im Vier-vier-zwei.", *d3))
 
 # ---------- Kapitel 4: Seitenwechsel über die Mitte und Hinterlaufen ----------
 NEON4 = {"k1": (10.5, 27.5), "n5": (26, 16), "n4": (26, 38), "n3": (42, 7), "n2": (40, 49), "n6": (40, 24), "n8": (52, 42),
@@ -125,7 +125,7 @@ a += L4.schieb({"n6": (36, 18), "n8": (50, 38), "n11": (60, 6), "n9": (66, 16), 
 a += L4.opts("n11", "n6", "n5", delay=1.8, zu=("n11",))
 a.append(L4.pas("n6", after=True))
 a += L4.schieb({"r19": (32, 24), "r16": (46, 20), "r21": (40, 42)}, delay=3.0)
-k4.append(S("Eng auf der Ballseite", "Neue Situation. Der Ball ist links beim Außenverteidiger, und der Gegner schiebt mit allen rüber. Den Flügel hat sein Verteidiger. Einer kommt, einer geht: Der linke Mittelfeldspieler kommt zum Ball, der rechte geht weg auf die freie Seite. Der Außenverteidiger spielt den, der kommt.", *a))
+k4.append(S("Eng auf der Ballseite", "Neue Situation. Der Ball ist links beim Außenverteidiger, und der Gegner schiebt mit allen rüber. Den Flügel hat sein Verteidiger. Also kommt der linke Mittelfeldspieler zum Ball, der rechte geht weg auf die freie Seite. Der Außenverteidiger spielt den, der kommt.", *a))
 b4 = L4.opts("n8", "n5", "n3")
 b4.append(L4.pas("n8", after=True))
 b4 += L4.schieb({"r18": (58, 34), "r21": (46, 44), "r12": (72, 44), "r16": (50, 26), "r15": (72, 32)}, delay=2.0)
@@ -142,7 +142,7 @@ L4.p["n2"] = (70, 50)
 d4 += L4.opts("n2", "n10", "n8", delay=2.2, zu=("n8",))
 d4 += L4.steil("n2", (82, 49), delay=3.4)
 d4 += L4.schieb({"r12": (85, 43), "n10": (76, 27), "n9": (78, 22), "n8": (66, 38)}, delay=3.2)
-k4.append(S("Hinterlaufen", "Jetzt pass auf. Der Flügel zieht nach innen, und der Verteidiger geht mit. Einer kommt, einer geht: Gleichzeitig läuft der Außenverteidiger außen um ihn herum, die Linie runter. Innen ist zu, aber die Linie ist frei. Also kommt der Ball genau in seinen Lauf.", *d4))
+k4.append(S("Hinterlaufen", "Jetzt pass auf. Der Flügel zieht nach innen, und der Verteidiger geht mit. Gleichzeitig läuft der Außenverteidiger außen um ihn herum, die Linie runter. Innen ist zu, aber die Linie ist frei. Also kommt der Ball genau in seinen Lauf.", *d4))
 e4 = L4.schieb({"r14": (80, 22), "r15": (80, 32), "r16": (60, 30), "r18": (66, 44)})
 e4 += L4.schieb({"n10": (82, 30), "n9": (82, 20), "n8": (70, 36), "n7": (72, 42), "n6": (54, 24)}, delay=0.2)
 e4 += L4.opts("n10", "n9", "n8", delay=1.6, zu=("n10", "n9"))

@@ -8,7 +8,7 @@ welche Muster gibt es). Sie kommt nie in Trainingspläne. Im Katalog unter „Sp
 Gemeinsame Bauhilfe: `werkzeuge/bau/taktik.py` (Großfeld quer, Klasse `Lage` mit allen Prüfungen, `fertig()`).
 Weitere Regeln, die immer gelten: `werkzeuge/anleitung/AUFTRAG.md` (Schema, Sprechstil, Schreiben in die Datenbank).
 
-## Die zehn Regeln (Inhaber, 24.11.2026)
+## Die elf Regeln (Inhaber, 24.11.2026)
 1. **Ganzer Platz quer** (Großfeld wie TA-001: Tore links/rechts, echte Linien, `"massstab": "gross"`, nur die Maßlinie „100 m“).
    Vier Kapitel: Grundform = Kapitel 1, dazu genau drei Fassungen mit `label` „Kapitel 2“, „Kapitel 3“, „Kapitel 4“ und `say`
    „Kapitel zwei: …“, „Kapitel drei: …“, „Kapitel vier: …“. Grundform 3-7 Schritte, jede Fassung 2-6 Schritte.
@@ -19,7 +19,10 @@ Weitere Regeln, die immer gelten: `werkzeuge/anleitung/AUFTRAG.md` (Schema, Spre
 4. **Wer angespielt wird, hat sich freigelaufen:** mindestens `FREI` (7 Einheiten, etwa 8 m) zum nächsten Gegner beim Abspiel.
    Gegner laufen den Empfänger erst an, wenn der Ball unterwegs ist (Verschieben mit `delay` nach dem Pass).
 5. **Einer kommt, einer geht:** Kommt einer zum Ball, geht im selben Moment ein anderer weg (in die Tiefe, in den frei gewordenen
-   Raum). In jedem Kapitel mindestens einmal zeigen und sagen.
+   Raum). In jedem Kapitel mindestens einmal **zeigen**, aber die Formel „Einer kommt, einer geht“ im ganzen Video **höchstens
+   zweimal sagen** (Inhaber, 24.11.2026: „man sieht das ja selbst anhand der Bewegung“). Sonst nur beschreiben, wer kommt und wer
+   geht („Der Flügel kommt nach innen. Dafür geht der Außenverteidiger die Linie hoch.“). Ein Kapiteltitel mit der Formel zählt mit.
+   In geschriebenen Feldern (organisation, coaching_points, Kapiteltitel ohne say) darf sie stehen.
 6. **Muster** (passend zum System auswählen): innen-außen und außen-innen; eine Reihe überspielen, klatschen lassen, verlagern;
    dritter Mann; freier Mann durch Andribbeln und Locken; Seitenwechsel über den Torwart; Überzahl in der ersten Aufbaulinie.
 7. **Gegner realistisch:** presst, schiebt zum Ball, stellt mit Deckungsschatten zu, kommt beim Verlagern zu spät. Er steht nie
@@ -29,6 +32,12 @@ Weitere Regeln, die immer gelten: `werkzeuge/anleitung/AUFTRAG.md` (Schema, Spre
    mit dem Pass (`Lage.steil`: Läufer steht beim Abspiel auf Höhe, Lauf und Ball starten zusammen).
 10. **Jeder Pass geht durch eine Lücke:** Kein Gegner näher als `GASSE` (4,5 Einheiten) an der Passbahn (`Lage.gasse` bei `pas`,
     `steil` und `opts`). Absichtlich zugestellte Anspielstationen tragen `zu=("n7",)` und der Text sagt, dass sie zu sind.
+11. **Text und Bild passen zusammen (Timing):** Der `say` eines Schritts beschreibt nur, was in genau diesem Schritt auf dem Feld
+    passiert, in der Reihenfolge, in der es passiert. Nichts ankündigen, was erst im nächsten Schritt kommt, nichts nacherzählen,
+    was schon vorbei ist. Wird ein Lauf erwähnt, läuft er in diesem Schritt. So läuft es ab: Die Bewegungen starten mit dem Schritt,
+    die Stimme spricht dazu, und am Ende des Schritts wartet das Bild, bis der Satz fertig ist. Grob: etwa 17 Zeichen pro Sekunde
+    Sprechzeit. Ist der Text viel länger als die Bewegungen, steht das Feld lange still, während noch erzählt wird: dann den
+    Schritt teilen oder die Bewegungen mit `delay` später starten lassen, damit sie zum gesprochenen Satz passen.
 
 ## Technik
 - Kopf des Skripts: `import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe import *; from taktik import *`

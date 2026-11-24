@@ -69,7 +69,7 @@ c2 = L2.opts("n3", "n6", "k1", zu=("n3", "n6"))
 c2.append(L2.pas("k1", after=True))
 c2 += L2.schieb({"n8": (32, 24), "n6": (40, 21)}, delay=1.8)
 c2 += L2.schieb({"r19": (20, 20), "r17": (46, 19)}, delay=2.0)
-k2.append(S("Einer kommt, einer geht", "Innen steht der Stürmer im Weg, außen lauert schon der Gegner auf unseren Außenverteidiger. Frei ist nur der Weg zurück zum Torwart. Und jetzt pass auf: Einer kommt, einer geht. Der rechte Sechser kommt zwischen die beiden Stürmer. Der linke geht im selben Moment nach vorn und nimmt seinen Gegenspieler mit.", *c2))
+k2.append(S("Die Doppelsechs tauscht", "Innen steht der Stürmer im Weg, außen lauert schon der Gegner auf unseren Außenverteidiger. Frei ist nur der Weg zurück zum Torwart. Und jetzt pass auf: Der rechte Sechser kommt zwischen die beiden Stürmer. Der linke geht im selben Moment nach vorn und nimmt seinen Gegenspieler mit.", *c2))
 d2 = L2.opts("n8", "n4")
 d2.append(L2.pas("n8", after=True))
 d2 += L2.schieb({"r18": (42, 28), "r20": (25, 31), "n4": (30, 44)}, delay=1.6)
@@ -91,7 +91,7 @@ g2 += L2.schieb({"r18": (48, 35), "r21": (43, 50)}, delay=1.2)
 g2 += L2.opts("n2", "n4", delay=1.6)
 g2 += L2.steil("n2", (64, 50), delay=2.4)
 g2 += L2.schieb({"n7": (66, 38), "n9": (70, 30), "r12": (68, 46), "n4": (30, 42), "n3": (46, 12), "n11": (68, 12), "n6": (42, 28)}, delay=2.4)
-k2.append(S("Klatschen und raus", "Der Flügel lässt direkt klatschen, auf den Sechser, der sich offen hingestellt hat. Das ist der dritte Mann. Einer kommt, einer geht: Der Flügel ist nach innen gekommen, also geht der Außenverteidiger die Linie hoch. Und genau da hin spielt der Sechser. Das Pressing ist überspielt.", *g2))
+k2.append(S("Klatschen und raus", "Der Flügel lässt direkt klatschen, auf den Sechser, der sich offen hingestellt hat. Das ist der dritte Mann. Weil der Flügel jetzt innen ist, geht der Außenverteidiger die Linie hoch. Und genau da hin spielt der Sechser. Das Pressing ist überspielt.", *g2))
 
 # ---------- Kapitel 3: verlagern über die Doppelsechs ----------
 NEON3 = {"k1": (10.5, 27.5), "n5": (20, 14), "n4": (20, 40), "n3": (40, 5), "n2": (40, 50), "n6": (32, 20), "n8": (32, 33),
@@ -111,7 +111,7 @@ b3 += L3.schieb({"r17": (42, 17), "r19": (31, 14)}, delay=0.9)
 b3 += L3.schieb({"n8": (30, 26), "n10": (60, 32), "n7": (68, 48)}, delay=0.9)
 b3 += L3.opts("n8", "n5", delay=1.8, zu=("n5",))
 b3.append(L3.pas("n8", after=True))
-k3.append(S("Zwei Sechser, zwei Stationen", "Er kriegt den Ball, aber mit dem Rücken zum Spiel, und der Gegner ist sofort da. Aufdrehen geht nicht. Brauchst du auch nicht, denn es gibt ja zwei Sechser. Einer kommt, einer geht: Der zweite Sechser kommt schräg hinter ihn, und der Zehner geht weg aus der Mitte, rüber auf die freie Seite. Also kurz zurück auf den zweiten Sechser.", *b3))
+k3.append(S("Zwei Sechser, zwei Stationen", "Er kriegt den Ball, aber mit dem Rücken zum Spiel, und der Gegner ist sofort da. Aufdrehen geht nicht. Brauchst du auch nicht, denn es gibt ja zwei Sechser. Der zweite Sechser kommt schräg hinter ihn, und der Zehner geht weg aus der Mitte, rüber auf die freie Seite. Also kurz zurück auf den zweiten Sechser.", *b3))
 c3 = L3.schieb({"r20": (34, 24), "r18": (44, 24)}, delay=0.3)
 c3.append(bl("n8", list(L3.p["n2"]), von=f(L3.p["n6"]), dauer=1.2, delay=0.3))
 c3 += L3.opts("n4", "n2", delay=1.6)
@@ -158,7 +158,7 @@ c4 += L4.steil("n2", (82, 50), delay=0.9)
 c4 += L4.schieb({"n9": (80, 30), "n10": (72, 28), "n11": (74, 12), "n7": (70, 38)}, delay=1.0)
 c4 += L4.schieb({"r12": (78, 46), "r15": (80, 34), "r14": (80, 24), "r13": (80, 14)}, delay=1.6)
 c4 += L4.schieb({"n8": (52, 36), "n6": (48, 26), "n5": (34, 18), "n4": (38, 38), "k1": (16, 27.5), "r19": (46, 22), "r20": (46, 33)}, delay=1.6)
-k4.append(S("Außenverteidiger überläuft", "Einer kommt, einer geht: Der Flügel ist nach innen gekommen, also geht der Außenverteidiger außen vorbei. Er startet mit dem Pass, also kein Abseits. Hinten bleibt trotzdem keiner allein. Die Doppelsechs sichert ab, deshalb darf der Außenverteidiger mit nach vorn.", *c4))
+k4.append(S("Außenverteidiger überläuft", "Der Flügel ist nach innen gekommen, also geht der Außenverteidiger außen vorbei. Er startet mit dem Pass, also kein Abseits. Hinten bleibt trotzdem keiner allein. Die Doppelsechs sichert ab, deshalb darf der Außenverteidiger mit nach vorn.", *c4))
 d4 = [L4.dribbel("n2", (84, 46))]
 d4 += L4.schieb({"r12": (85, 40), "r15": (83, 33), "r14": (83, 24), "n10": (72, 34), "n9": (82, 30), "n7": (74, 42)}, delay=0.4)
 d4 += L4.opts("n9", "n10", "n7", delay=1.6, zu=("n9",))
@@ -178,7 +178,7 @@ u = {"title": "Aufbau im 4-2-3-1", "code": "TA-002", "kind": "Taktik",
  "organisation_show": ORG,
  "coaching_points": ["Sechser versetzt, nie auf einer Linie", "Zehner, such die Lücke zwischen den Linien", "Einer kommt, einer geht", "Eine Seite zu? Über die Doppelsechs verlagern"],
  "materials": ["Großfeld mit zwei Toren", "Leibchen in zwei Farben", "Bälle"],
- "access": "abo", "hidden": True, "wartet_auf_ton": True,
+ "access": "abo", "hidden": False, "wartet_auf_ton": False,  # eingesprochen (24.11.2026), sichtbar
  "say_intro": "Aufbau im Vier-zwei-drei-eins. Heute schauen wir uns das System an. Was macht die Doppelsechs? Wo steht der Zehner? Und wie kommen wir gegen ein Pressing nach vorn? Schauen wir's uns an.",
  "board": {"massstab": "gross", "lines": LINES, "goals": TORE, "cones": [], "players": Lage(GRUND2).spieler(),
   "balls": [B("b1", 16.6, 55.9)] + ERSATZ, "dims": DIMS, "steps": k1},
