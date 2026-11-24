@@ -64,6 +64,16 @@ Die App selbst liegt bei Base44 (App „Trainingskern“), dieses Repo enthält 
 - Keine Spielminute, kein Fortschrittsbalken im Bild. Der Bildschirm der Seite zeigt nur Titel und Tafel (`"verstecke"` blendet den Rest aus).
 - Vorlage: `story-studio/stories/vorlage-kampagne.json`.
 
+## Reihe Spielsysteme (Plan vom 24.11.2026, Videos liefert der Nutzer noch)
+
+- Taktikvideos zu Spielsystemen als eigene Reihe: Comic-Intro mit dem System als Text (z. B. „4-3-3 / So greift es an“),
+  ein Ausschnitt von etwa 20 bis 40 Sekunden (anreißen, nicht fertig erklären), dann Hinweis und `outro-comic`.
+  Vorschlag: für die ganze Reihe immer dasselbe Intro (`comic-tafel`), damit man sie im Profil erkennt; noch nicht bestätigt.
+- Die Spielsysteme sind auf der Seite kostenlos, aber erst nach der (kostenlosen) Registrierung. Im Video steht:
+  „Das ganze System: kostenlos auf trainingskern.de“, gesprochen ebenso. Nie „ohne Anmeldung“ versprechen.
+  In die Beitragsbeschreibung kommt offen: „Kostenlos anmelden und alle Spielsysteme ansehen“.
+- Posten: jeden Abend eines, zusätzlich zum Reel um 18:30 (Vorschlag 20:30 bis 21:00, der Nutzer dachte an 22 Uhr). Keine eigenen Storys dazu.
+
 ## Sprache
 
 - **„Neutrale Spieler“, nie „Springer“** (Vorgabe vom 24.11.2026): gilt für alle eigenen Texte, Sprechersätze und Beschriftungen.
