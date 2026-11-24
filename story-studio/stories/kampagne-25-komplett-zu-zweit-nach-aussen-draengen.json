@@ -10,11 +10,11 @@
       "typ": "hook",
       "film": "comic-megafon",
       "dauer": 3.6,
-      "sprecher": "Verteidigen? Ab nach außen!",
+      "sprecher": "Verteidigen? Nach außen!",
       "sprecherAb": 1.1,
       "zeilen": [
         "Verteidigen?",
-        "*Ab nach außen!*"
+        "*Nach außen!*"
       ]
     },
     {

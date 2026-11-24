@@ -12,8 +12,12 @@
       "dauer": 3.6,
       "sprecher": "Sprungkraft ohne Kraftraum!",
       "sprecherAb": 0.9,
-      "text": "Sprungkraft *ohne Kraftraum!*",
-      "dach": "Athletik"
+      "dach": "Athletik",
+      "zeilen": [
+        "Sprungkraft",
+        "ohne",
+        "*Kraftraum!*"
+      ]
     },
     {
       "typ": "uebung",
