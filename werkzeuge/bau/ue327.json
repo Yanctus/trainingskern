@@ -1,0 +1,911 @@
+{
+ "title": "Acht Pässe, dann verlagern",
+ "code": "UE-327",
+ "kind": "Spielform",
+ "focuses": [
+  "Passspiel",
+  "Verteidigen",
+  "Kondition"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "tags": [
+  "Vorbereitung"
+ ],
+ "duration_minutes": 15,
+ "players_min": 12,
+ "players_max": 12,
+ "field_size": "25 x 18 m",
+ "description": "Drei Teams zu viert spielen ein Rondo auf zwei Hälften. Team Neon hat den Ball in der einen Hälfte, die Springer warten in der anderen. Zwei Spieler von Team Rot pressen, die anderen zwei springen seitlich über ihre Hürde. Nach acht Pässen darf verlagert werden, und die Verteidiger tauschen ihre Rollen.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 25 mal 18 Metern, in der Mitte geteilt. An beiden schmalen Seiten ein Streifen von etwa vier Metern, darin liegt auf der Mittellinie je eine Minihürde.",
+  "Verteilen: Drei Teams zu viert. Team Neon steht in der einen Hälfte, die Springer in der anderen, von jedem Team einer an der Mittellinie. Von Team Rot pressen zwei, die anderen zwei stehen an den Hürden. Der Trainer steht mit Bällen am Rand.",
+  "Ablauf: Vier gegen zwei in einer Hälfte. Nach acht Pässen darf der Ball in die andere Hälfte. Dann pressen dort die zwei von den Hürden, und die anderen zwei gehen an die Hürden. Erobert Team Rot den Ball, spielt es ihn sofort zum am weitesten entfernten freien Spieler.",
+  "Wechsel: Jede Runde dauert fünf Minuten, dann wird ein anderes Team Verteidiger. Ziel ist, so oft wie möglich acht Pässe zu schaffen und zu verlagern."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Lücke zwischen den Verteidigern sehen und durchspielen",
+  "Anbieten und freilaufen, damit immer einer frei ist",
+  "Von der Hürde sofort explosiv ins Pressing",
+  "Schlechte Annahme beim Gegner: sofort drauf"
+ ],
+ "materials": [
+  "2 Minihürden",
+  "4 Hütchen",
+  "Viele Bälle",
+  "Leibchen in drei Farben"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Acht Pässe, dann verlagern. Ein Rondo auf zwei Hälften für die Vorbereitung. Zwei Verteidiger pressen, zwei springen an der Hürde, und nach acht Pässen geht der Ball rüber.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 9,
+    "y": 5,
+    "w": 78,
+    "h": 46
+   },
+   {
+    "type": "line",
+    "x1": 9,
+    "y1": 28,
+    "x2": 87,
+    "y2": 28,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 20.6,
+    "y1": 5,
+    "x2": 20.6,
+    "y2": 51,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 75.4,
+    "y1": 5,
+    "x2": 75.4,
+    "y2": 51,
+    "dashed": true
+   }
+  ],
+  "goals": [],
+  "cones": [
+   {
+    "x": 9,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 87,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 9,
+    "y": 51,
+    "color": "orange"
+   },
+   {
+    "x": 87,
+    "y": 51,
+    "color": "orange"
+   },
+   {
+    "x": 14.5,
+    "y": 28,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 81,
+    "y": 28,
+    "color": "orange",
+    "shape": "huerde_ou"
+   }
+  ],
+  "players": [
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 48,
+    "y": 48.5,
+    "label": "4"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 23.5,
+    "y": 40,
+    "label": "10"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 75,
+    "y": 44,
+    "label": "6"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 56,
+    "y": 27.5,
+    "label": "8"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 36,
+    "y": 37.2,
+    "label": "7"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 65,
+    "y": 41,
+    "label": "9"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 14.5,
+    "y": 31.5,
+    "label": "2"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 81,
+    "y": 24.5,
+    "label": "5"
+   },
+   {
+    "id": "f1",
+    "team": "t",
+    "x": 49.8,
+    "y": 6.5,
+    "label": "F"
+   },
+   {
+    "id": "f2",
+    "team": "t",
+    "x": 20.8,
+    "y": 15.3,
+    "label": "F"
+   },
+   {
+    "id": "f3",
+    "team": "t",
+    "x": 67,
+    "y": 14,
+    "label": "F"
+   },
+   {
+    "id": "f4",
+    "team": "t",
+    "x": 44.5,
+    "y": 27,
+    "label": "F"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 31,
+    "y": 55.5,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 48.6,
+    "y": 49.1
+   },
+   {
+    "id": "s1",
+    "x": 34.5,
+    "y": 56
+   },
+   {
+    "id": "s2",
+    "x": 37,
+    "y": 56
+   }
+  ],
+  "steps": [
+   {
+    "label": "Vier gegen zwei in einer Hälfte",
+    "say": "Team Neon hat den Ball in seiner Hälfte, die Springer warten drüben. Spieler sieben und Spieler neun von Team Rot pressen. Die anderen zwei von Team Rot springen gleichzeitig seitlich über ihre Hürde.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       24.1,
+       40.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r7",
+      "to": [
+       29,
+       44
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "r9",
+      "to": [
+       62,
+       38
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "r2",
+      "to": [
+       14.5,
+       24.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r2",
+      "to": [
+       14.5,
+       31.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r5",
+      "to": [
+       81,
+       31.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r5",
+      "to": [
+       81,
+       24.5
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Acht Pässe zählen",
+    "say": "Flach und schnell weiter. Spieler zehn spielt zu Spieler acht an der Mittellinie, der gleich weiter zu Spieler sechs. Jeder Pass zählt, Team Neon braucht acht.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       56.6,
+       28.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       75.6,
+       44.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r9",
+      "to": [
+       79,
+       38
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     },
+     {
+      "who": "r2",
+      "to": [
+       14.5,
+       24.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r2",
+      "to": [
+       14.5,
+       31.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r5",
+      "to": [
+       81,
+       31.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r5",
+      "to": [
+       81,
+       24.5
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Acht Pässe: verlagern",
+    "say": "Acht Pässe sind geschafft. Jetzt darf Team Neon verlagern. Spieler sechs spielt den langen Ball rüber zu den Springern.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.4,
+       7.1
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Die Hürdenspieler pressen",
+    "say": "Sofort tauschen die Rollen. Spieler zwei und Spieler fünf kommen von den Hürden und pressen die Springer. Spieler sieben und Spieler neun gehen an die Hürden. Drüben läuft der Ball schon weiter.",
+    "moves": [
+     {
+      "who": "r2",
+      "to": [
+       31,
+       17
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r5",
+      "to": [
+       58,
+       18
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r7",
+      "to": [
+       19,
+       48
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r7",
+      "to": [
+       14.5,
+       35
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r9",
+      "to": [
+       81,
+       31.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       21.4,
+       15.9
+      ],
+      "type": "pass",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "Ball erobert, weit spielen",
+    "say": "Spieler zwei erobert den Ball. Er schaut sofort, wer am weitesten weg und frei ist, das ist Spieler vier, und spielt ihn an. Jetzt pressen Spieler sieben und Spieler neun wieder in der Hälfte von Team Neon. Nach fünf Minuten wird ein anderes Team Verteidiger.",
+    "moves": [
+     {
+      "who": "r2",
+      "to": [
+       22.8,
+       17.2
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r2",
+      "to": [
+       32,
+       33
+      ],
+      "type": "blick",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       48.6,
+       49.1
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r7",
+      "to": [
+       38,
+       40
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r9",
+      "to": [
+       62,
+       42
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 9,
+    "y1": 58.6,
+    "x2": 87,
+    "y2": 58.6,
+    "text": "25 m"
+   },
+   {
+    "x1": 95,
+    "y1": 5,
+    "x2": 95,
+    "y2": 51,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Durch die Lücke spielen.",
+   "title": "Durch die Lücke spielen",
+   "text": "Stellt ein Verteidiger den Pass nach außen zu, steht er oft weit weg von seinem Partner. Dann ist in der Mitte eine Lücke. Wer sie sieht, spielt durch und überspielt beide auf einmal.",
+   "board": {
+    "players": [
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 48,
+      "y": 48.5,
+      "label": "4"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 23.5,
+      "y": 40,
+      "label": "10"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 75,
+      "y": 44,
+      "label": "6"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 56,
+      "y": 27.5,
+      "label": "8"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 35,
+      "y": 39.5,
+      "label": "7"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 57,
+      "y": 46,
+      "label": "9"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 14.5,
+      "y": 31.5,
+      "label": "2"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 81,
+      "y": 24.5,
+      "label": "5"
+     },
+     {
+      "id": "f1",
+      "team": "t",
+      "x": 49.8,
+      "y": 6.5,
+      "label": "F"
+     },
+     {
+      "id": "f2",
+      "team": "t",
+      "x": 20.8,
+      "y": 15.3,
+      "label": "F"
+     },
+     {
+      "id": "f3",
+      "team": "t",
+      "x": 67,
+      "y": 14,
+      "label": "F"
+     },
+     {
+      "id": "f4",
+      "team": "t",
+      "x": 44.5,
+      "y": 27,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 31,
+      "y": 55.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 48.6,
+      "y": 49.1
+     },
+     {
+      "id": "s1",
+      "x": 34.5,
+      "y": 56
+     },
+     {
+      "id": "s2",
+      "x": 37,
+      "y": 56
+     }
+    ],
+    "steps": [
+     {
+      "label": "Der Pass nach außen ist zu",
+      "say": "Spieler vier hat den Ball. Spieler neun stellt den Pass zu Spieler sechs zu. Spieler sieben steht aber weit weg, in der Mitte ist eine Lücke.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         75,
+         44
+        ],
+        "type": "option"
+       },
+       {
+        "who": "r9",
+        "to": [
+         61,
+         45
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Durch die Lücke zum Springer",
+      "say": "Spieler vier sieht die Lücke und spielt flach durch zum Springer an der Mittellinie. Der legt direkt auf Spieler acht ab. Beide Verteidiger sind überspielt.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         45,
+         28
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         45.1,
+         27.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         56.6,
+         28.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Wer den Ball verliert, verteidigt.",
+   "title": "Wer verliert, verteidigt",
+   "text": "Erobert Team Rot den Ball und bringt ihn rüber zu den Springern, wird Team Neon zum Verteidiger. Zwei pressen sofort, zwei gehen an die Hürden. Das Signal zum Pressen ist ein schlechter Pass oder eine schlechte Annahme.",
+   "board": {
+    "players": [
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 48,
+      "y": 48.5,
+      "label": "4"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 23.5,
+      "y": 40,
+      "label": "10"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 75,
+      "y": 44,
+      "label": "6"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 56,
+      "y": 27.5,
+      "label": "8"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 32.5,
+      "y": 40,
+      "label": "7"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 65,
+      "y": 41,
+      "label": "9"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 14.5,
+      "y": 31.5,
+      "label": "2"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 81,
+      "y": 24.5,
+      "label": "5"
+     },
+     {
+      "id": "f1",
+      "team": "t",
+      "x": 49.8,
+      "y": 6.5,
+      "label": "F"
+     },
+     {
+      "id": "f2",
+      "team": "t",
+      "x": 20.8,
+      "y": 15.3,
+      "label": "F"
+     },
+     {
+      "id": "f3",
+      "team": "t",
+      "x": 67,
+      "y": 14,
+      "label": "F"
+     },
+     {
+      "id": "f4",
+      "team": "t",
+      "x": 44.5,
+      "y": 27,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 31,
+      "y": 55.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 24.1,
+      "y": 40.6
+     },
+     {
+      "id": "s1",
+      "x": 34.5,
+      "y": 56
+     },
+     {
+      "id": "s2",
+      "x": 37,
+      "y": 56
+     }
+    ],
+    "steps": [
+     {
+      "label": "Schlechte Annahme: Rot presst",
+      "say": "Spieler zehn springt der Ball zu weit vom Fuß. Das ist das Signal. Spieler sieben ist sofort da und erobert den Ball.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         29.5,
+         44
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n10",
+        "to": [
+         26,
+         42
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "r7",
+        "to": [
+         28.9,
+         43.4
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Weit rüber zu den Springern",
+      "say": "Spieler sieben schaut hoch und spielt den Ball weit rüber zu den Springern.",
+      "moves": [
+       {
+        "who": "r7",
+        "to": [
+         38.8,
+         26
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.4,
+         7.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Team Neon wird Verteidiger",
+      "say": "Jetzt verteidigt Team Neon. Spieler acht und Spieler vier pressen bei den Springern, Spieler zehn und Spieler sechs gehen an die Hürden. Team Rot kommt in die Hälfte und spielt mit den Springern zusammen.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         44,
+         13
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n4",
+        "to": [
+         57,
+         20
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n10",
+        "to": [
+         14.5,
+         33
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n6",
+        "to": [
+         81,
+         31.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r2",
+        "to": [
+         21,
+         45
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "r5",
+        "to": [
+         70,
+         46
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

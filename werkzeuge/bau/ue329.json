@@ -1,0 +1,845 @@
+{
+ "title": "Tempoläufe ins 3 gegen 3",
+ "code": "UE-329",
+ "kind": "Spielform",
+ "focuses": [
+  "Kondition",
+  "Zusammenspiel",
+  "Torschuss"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "tags": [
+  "Vorbereitung"
+ ],
+ "duration_minutes": 15,
+ "players_min": 14,
+ "players_max": 20,
+ "field_size": "35 x 25 m",
+ "description": "Zwei Teams laufen in Gruppen zu dritt um das Feld, an den langen Seiten mit fünfundachtzig Prozent und quer über die Diagonale mit halbem Tempo. Die Gruppe, die zuerst an der Ecke gegenüber ankommt, bekommt vom Trainer den Ball. Dann wird sofort drei gegen drei auf zwei Tore mit Torwart gespielt. Nach einem Treffer oder wenn der Ball ins Aus geht, erholen sich die sechs, und die nächsten Gruppen laufen los.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 35 mal 25 Metern mit Hütchen an den vier Ecken. An jeder schmalen Seite steht ein Tor mit Torwart.",
+  "Verteilen: Zwei Teams, jedes in Gruppen zu dritt aufgeteilt. Eine Gruppe von Team Neon startet an einer Ecke, eine Gruppe von Team Rot an der Ecke gegenüber. Die anderen Gruppen warten neben dem Feld, der Trainer steht mit Bällen neben einem Tor.",
+  "Ablauf: Auf Pfiff laufen beide Gruppen an der langen Seite mit fünfundachtzig Prozent, quer über die Diagonale mit halbem Tempo und an der anderen langen Seite wieder mit fünfundachtzig Prozent. Wer zuerst an der Ecke ankommt, bekommt den Ball, dann wird drei gegen drei gespielt.",
+  "Wertung und Wechsel: Jeder Treffer gibt einen Punkt. Nach einem Treffer oder wenn der Ball ins Aus geht, gehen die sechs raus und erholen sich. Das ist der Startschuss für die nächsten zwei Gruppen."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Der Vorderste macht das Tempo, die anderen bleiben dran",
+  "Außen Tempo halten, quer locker laufen",
+  "Sofort vom Laufen ins Spiel umschalten",
+  "Schneller Doppelpass, dann hinter die Abwehr"
+ ],
+ "materials": [
+  "2 Tore",
+  "4 Hütchen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Tempoläufe ins drei gegen drei. Erst laufen zwei Dreiergruppen einmal quer über das Feld, dann geht es sofort ins Spiel auf zwei Tore.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 10,
+    "y": 5,
+    "w": 78,
+    "h": 46
+   }
+  ],
+  "goals": [
+   {
+    "x": 10,
+    "y": 28,
+    "side": "left",
+    "size": "gross"
+   },
+   {
+    "x": 88,
+    "y": 28,
+    "side": "right",
+    "size": "gross"
+   }
+  ],
+  "cones": [
+   {
+    "x": 10,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 88,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 10,
+    "y": 51,
+    "color": "orange"
+   },
+   {
+    "x": 88,
+    "y": 51,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 27,
+    "y": 55,
+    "label": "8"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 18.6,
+    "y": 55,
+    "label": "10"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 10.2,
+    "y": 55,
+    "label": "11"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 71.2,
+    "y": 1.5,
+    "label": "7"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 79.6,
+    "y": 1.5,
+    "label": "3"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 88,
+    "y": 1.5,
+    "label": "2"
+   },
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 13.5,
+    "y": 28,
+    "label": "TW"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 84.5,
+    "y": 28,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 94,
+    "y": 44,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b0",
+    "x": 94.6,
+    "y": 44.6
+   },
+   {
+    "id": "s1",
+    "x": 96.5,
+    "y": 48.5
+   },
+   {
+    "id": "s2",
+    "x": 96.5,
+    "y": 51.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Außen mit fünfundachtzig Prozent",
+    "say": "Pfiff, und beide Gruppen laufen gleichzeitig los. Team Neon an der einen langen Seite, Team Rot an der anderen. Fünfundachtzig Prozent, Spieler acht und Spieler sieben laufen vorn.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       86,
+       55
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n10",
+      "to": [
+       77.6,
+       55
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n11",
+      "to": [
+       69.2,
+       55
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r7",
+      "to": [
+       12,
+       1.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r3",
+      "to": [
+       20.4,
+       1.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r2",
+      "to": [
+       28.8,
+       1.5
+      ],
+      "type": "lauf"
+     }
+    ]
+   },
+   {
+    "label": "Quer mit halbem Tempo",
+    "say": "An der Ecke geht es quer über die Diagonale. Hier nur halbes Tempo, die Beine erholen sich kurz. Die beiden Gruppen laufen aneinander vorbei.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       12,
+       2
+      ],
+      "type": "lauf",
+      "bend": 4
+     },
+     {
+      "who": "n10",
+      "to": [
+       20.5,
+       6.5
+      ],
+      "type": "lauf",
+      "bend": 4
+     },
+     {
+      "who": "n11",
+      "to": [
+       29,
+       11
+      ],
+      "type": "lauf",
+      "bend": 4
+     },
+     {
+      "who": "r7",
+      "to": [
+       85.5,
+       54
+      ],
+      "type": "lauf",
+      "bend": 4
+     },
+     {
+      "who": "r3",
+      "to": [
+       77,
+       49.5
+      ],
+      "type": "lauf",
+      "bend": 4
+     },
+     {
+      "who": "r2",
+      "to": [
+       68.5,
+       45
+      ],
+      "type": "lauf",
+      "bend": 4
+     }
+    ]
+   },
+   {
+    "label": "Wieder Tempo bis zur Ecke",
+    "say": "An der anderen langen Seite wieder fünfundachtzig Prozent bis zur Ecke. Team Neon ist zuerst da.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       86.5,
+       1.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n10",
+      "to": [
+       78.1,
+       1.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n11",
+      "to": [
+       69.7,
+       1.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r7",
+      "to": [
+       12,
+       55
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     },
+     {
+      "who": "r3",
+      "to": [
+       20.4,
+       55
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     },
+     {
+      "who": "r2",
+      "to": [
+       28.8,
+       55
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     }
+    ]
+   },
+   {
+    "label": "Ball zum schnelleren Team",
+    "say": "Der Trainer spielt Spieler acht den Ball zu, und Team Neon greift sofort das Tor gegenüber an. Team Rot kommt von der anderen Ecke und verteidigt.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       66,
+       16
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n10",
+      "to": [
+       70,
+       38
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n11",
+      "to": [
+       54,
+       10
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b0",
+      "to": [
+       66.6,
+       16.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r7",
+      "to": [
+       73,
+       17
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "r3",
+      "to": [
+       50,
+       40
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "r2",
+      "to": [
+       44,
+       26
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Doppelpass und Abschluss: Punkt",
+    "say": "Spieler acht spielt zu Spieler zehn und startet sofort an Spieler sieben vorbei. Der Ball kommt direkt zurück, Spieler acht trifft ins kurze Eck, und das gibt einen Punkt für Team Neon. Jetzt gehen die sechs raus und erholen sich, und die nächsten zwei Gruppen laufen los.",
+    "moves": [
+     {
+      "who": "b0",
+      "to": [
+       70.6,
+       38.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n8",
+      "to": [
+       74,
+       25
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n8",
+      "to": [
+       80,
+       24
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b0",
+      "to": [
+       80.6,
+       24.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b0",
+      "to": [
+       87.7,
+       20.5
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 10,
+    "y1": 58.6,
+    "x2": 88,
+    "y2": 58.6,
+    "text": "35 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Der Erste macht das Tempo.",
+   "title": "Der Erste macht das Tempo",
+   "text": "Nach dem Querlauf zieht der Vorderste das Tempo wieder auf fünfundachtzig Prozent an. Die anderen beiden bleiben dicht hinter ihm. So kommt die Gruppe zusammen an und kann sofort spielen.",
+   "board": {
+    "players": [
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 12,
+      "y": 2,
+      "label": "8"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 20.5,
+      "y": 6.5,
+      "label": "10"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 29,
+      "y": 11,
+      "label": "11"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 85.5,
+      "y": 54,
+      "label": "7"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 77,
+      "y": 49.5,
+      "label": "3"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 68.5,
+      "y": 45,
+      "label": "2"
+     },
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 13.5,
+      "y": 28,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 84.5,
+      "y": 28,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 94,
+      "y": 44,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b0",
+      "x": 94.6,
+      "y": 44.6
+     },
+     {
+      "id": "s1",
+      "x": 96.5,
+      "y": 48.5
+     },
+     {
+      "id": "s2",
+      "x": 96.5,
+      "y": 51.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Spieler acht zieht an",
+      "say": "Spieler acht ist als Erster aus der Diagonale raus und zieht sofort an. Spieler zehn und Spieler elf bleiben dicht hinter ihm. Bei Team Rot macht Spieler sieben das Tempo.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         86.5,
+         1.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n10",
+        "to": [
+         78.1,
+         1.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n11",
+        "to": [
+         69.7,
+         1.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r7",
+        "to": [
+         12,
+         55
+        ],
+        "type": "lauf",
+        "delay": 0.5
+       },
+       {
+        "who": "r3",
+        "to": [
+         20.4,
+         55
+        ],
+        "type": "lauf",
+        "delay": 0.5
+       },
+       {
+        "who": "r2",
+        "to": [
+         28.8,
+         55
+        ],
+        "type": "lauf",
+        "delay": 0.5
+       }
+      ]
+     },
+     {
+      "label": "Zusammen rein ins Spiel",
+      "say": "Alle drei sind gleichzeitig an der Ecke. Ohne Pause geht es ins Feld, und der Trainer spielt Spieler acht den Ball.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         66,
+         16
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n10",
+        "to": [
+         70,
+         38
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n11",
+        "to": [
+         54,
+         10
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b0",
+        "to": [
+         66.6,
+         16.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 10,
+      "y1": 58.6,
+      "x2": 88,
+      "y2": 58.6,
+      "text": "35 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Kurz antäuschen, dann lang gehen.",
+   "title": "Kurz antäuschen, lang gehen",
+   "text": "Team Rot greift an, Spieler zwei hat den Ball außen. Spieler drei täuscht einen Lauf an den kurzen Pfosten an und zieht dann scharf an den langen. So hängt er seinen Gegenspieler ab.",
+   "board": {
+    "players": [
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 65,
+      "y": 16,
+      "label": "7"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 55.5,
+      "y": 24.4,
+      "label": "10"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 44,
+      "y": 28,
+      "label": "3"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 35,
+      "y": 24,
+      "label": "11"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 53,
+      "y": 40,
+      "label": "8"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 42,
+      "y": 46,
+      "label": "2"
+     },
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 13.5,
+      "y": 28,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 84.5,
+      "y": 28,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 94,
+      "y": 44,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b0",
+      "x": 42.6,
+      "y": 46.6
+     },
+     {
+      "id": "s1",
+      "x": 96.5,
+      "y": 48.5
+     },
+     {
+      "id": "s2",
+      "x": 96.5,
+      "y": 51.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Antäuschen zum kurzen Pfosten",
+      "say": "Spieler zwei dribbelt außen Richtung Tor. Spieler drei läuft zum kurzen Pfosten, und Spieler elf geht mit.",
+      "moves": [
+       {
+        "who": "r2",
+        "to": [
+         32,
+         47
+        ],
+        "type": "dribbling",
+        "ball": "b0"
+       },
+       {
+        "who": "r3",
+        "to": [
+         34,
+         37
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n11",
+        "to": [
+         37,
+         32
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       }
+      ]
+     },
+     {
+      "label": "Scharf an den langen Pfosten: Punkt",
+      "say": "Jetzt zieht Spieler drei scharf an den langen Pfosten. Spieler elf ist zu spät. Spieler zwei spielt den Ball genau dorthin, Spieler drei trifft, und das gibt einen Punkt für Team Rot.",
+      "moves": [
+       {
+        "who": "r3",
+        "to": [
+         25,
+         22
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b0",
+        "to": [
+         25.6,
+         22.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       },
+       {
+        "who": "b0",
+        "to": [
+         10.3,
+         25
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 10,
+      "y1": 58.6,
+      "x2": 88,
+      "y2": 58.6,
+      "text": "35 m"
+     }
+    ]
+   }
+  }
+ ]
+}

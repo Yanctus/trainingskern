@@ -1,0 +1,1098 @@
+{
+ "title": "Passgenau durch die Stangen",
+ "code": "UE-328",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Bewegung",
+  "Kondition"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "tags": [
+  "Vorbereitung"
+ ],
+ "duration_minutes": 15,
+ "players_min": 10,
+ "players_max": 12,
+ "field_size": "18 x 25 m",
+ "description": "Zwei Gruppen zu fünft spielen gleichzeitig auf zwei gleichen Rundläufen, die am Ende ineinander übergehen. Kurze und lange Pässe wechseln sich ab, dazu kommen scharfe Bewegungen zum Ball, ein Abdrehen und ein Hinterlaufen. Am Ende dribbelt ein Spieler mit Ball zum Start auf der anderen Seite. Fünf Minuten mit hohem Tempo, dann eine Pause.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 25 mal 18 Metern mit zwei gleichen Rundläufen, um die Mitte gedreht. Jeder Rundlauf hat ein Tor aus zwei Stangen, drei Stangen in der Mitte und eine Puppe außen.",
+  "Verteilen: Zwei Gruppen zu fünft, Team Neon und Team Rot, jede auf ihrer Seite. Drei Spieler stehen am Start, der Erste mit Ball. Einer steht an der Puppe, einer in der Mitte der Seitenlinie. Der Trainer steht mit Ersatzbällen am Rand.",
+  "Ablauf: Pass zur Puppe, der Spieler dort kommt scharf entgegen und spielt durch das Stangentor zurück in den Lauf. Langer Ball an die Seite, Pass in den Fuß. Der Starter dreht ab und bekommt den Ball zwischen den Stangen, dann legt er in den Lauf des Hinterlaufenden. Der dribbelt mit Ball zum Start auf der anderen Seite.",
+  "Wechsel: Beide Gruppen laufen gleichzeitig. Jeder rückt eine Station weiter, wer mit dem Ball ankommt, stellt sich am anderen Start an. Fünf Minuten Belastung, dann Pause."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Kurz und scharf zum Ball, nicht im Stehen warten",
+  "Ball flach in den Lauf, nicht in den Rücken",
+  "Genau passen, auch wenn die Beine müde werden",
+  "Reden: Ball fordern, Namen rufen"
+ ],
+ "materials": [
+  "10 Stangen",
+  "2 Puppen",
+  "4 Hütchen",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Passgenau durch die Stangen. Zwei Gruppen spielen gleichzeitig einen Rundlauf mit kurzen und langen Pässen. Wer den letzten Ball bekommt, dribbelt rüber auf die andere Seite.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 9,
+    "y": 5,
+    "w": 76,
+    "h": 46
+   }
+  ],
+  "goals": [],
+  "cones": [
+   {
+    "x": 70,
+    "y": 38,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 24,
+    "y": 18,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 70,
+    "y": 44.2,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 24,
+    "y": 11.8,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 49,
+    "y": 18.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 45,
+    "y": 37.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 63.5,
+    "y": 15.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 30.5,
+    "y": 40.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 57,
+    "y": 24.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 37,
+    "y": 31.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 79,
+    "y": 30,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 15,
+    "y": 26,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 84,
+    "y": 49.5,
+    "color": "orange"
+   },
+   {
+    "x": 10,
+    "y": 6.5,
+    "color": "orange"
+   },
+   {
+    "x": 47,
+    "y": 6.5,
+    "color": "orange"
+   },
+   {
+    "x": 47,
+    "y": 49.5,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 81,
+    "y": 46.5,
+    "label": "4"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 92.5,
+    "y": 46.5,
+    "label": "9"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 92.5,
+    "y": 30,
+    "label": "10"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 79,
+    "y": 24,
+    "label": "8"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 50,
+    "y": 8,
+    "label": "7"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 13,
+    "y": 9.5,
+    "label": "2"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 1.5,
+    "y": 9.5,
+    "label": "3"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 1.5,
+    "y": 26,
+    "label": "5"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 15,
+    "y": 32,
+    "label": "11"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 44,
+    "y": 48,
+    "label": "6"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 27,
+    "y": 55.5,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 81.6,
+    "y": 47.1
+   },
+   {
+    "id": "b2",
+    "x": 13.6,
+    "y": 10.1
+   },
+   {
+    "id": "s1",
+    "x": 30.5,
+    "y": 56
+   },
+   {
+    "id": "s2",
+    "x": 33,
+    "y": 56
+   }
+  ],
+  "steps": [
+   {
+    "label": "Scharf zum Ball an der Puppe",
+    "say": "Beide Gruppen starten gleichzeitig, wir schauen auf Team Neon. Spieler acht geht erst hinter die Puppe und kommt dann scharf zum Ball. Spieler vier spielt ihn flach an.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       74,
+       30
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n8",
+      "to": [
+       80.5,
+       36
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       81.1,
+       36.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r11",
+      "to": [
+       20,
+       26
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r11",
+      "to": [
+       13.5,
+       20
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b2",
+      "to": [
+       14.1,
+       20.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Durch das Stangentor zurück",
+    "say": "Spieler vier startet sofort und läuft unter dem Stangentor durch. Spieler acht spielt ihm den Ball durch die Stangen in den Lauf.",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       70,
+       48.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n4",
+      "to": [
+       63,
+       43
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       63.6,
+       43.6
+      ],
+      "type": "pass",
+      "delay": 0.6
+     },
+     {
+      "who": "r2",
+      "to": [
+       24,
+       7.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r2",
+      "to": [
+       31,
+       13
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b2",
+      "to": [
+       31.6,
+       13.6
+      ],
+      "type": "pass",
+      "delay": 0.6
+     }
+    ]
+   },
+   {
+    "label": "Langer Ball an die Seite",
+    "say": "Spieler acht dreht ab und sprintet an der Seitenlinie nach vorn. Spieler vier spielt den langen Ball genau dorthin.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       83.5,
+       26
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n8",
+      "to": [
+       79,
+       12
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       79.6,
+       12.6
+      ],
+      "type": "pass",
+      "delay": 0.5
+     },
+     {
+      "who": "r11",
+      "to": [
+       10.5,
+       30
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r11",
+      "to": [
+       15,
+       44
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b2",
+      "to": [
+       15.6,
+       44.6
+      ],
+      "type": "pass",
+      "delay": 0.5
+     }
+    ]
+   },
+   {
+    "label": "Pass in den Fuß, abdrehen",
+    "say": "Spieler sieben kommt kurz entgegen und will den Ball in den Fuß. Spieler acht spielt ihn genau so. Gleichzeitig dreht Spieler vier ab und läuft im Bogen zwischen die Stangen.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       63,
+       9
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       63.6,
+       9.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n4",
+      "to": [
+       55,
+       38
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n4",
+      "to": [
+       51,
+       28
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n4",
+      "to": [
+       56,
+       18
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r6",
+      "to": [
+       31,
+       47
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b2",
+      "to": [
+       31.6,
+       47.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r2",
+      "to": [
+       39,
+       18
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "r2",
+      "to": [
+       43,
+       28
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r2",
+      "to": [
+       38,
+       38
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Ablegen und hinterlaufen",
+    "say": "Spieler sieben legt zwischen die Stangen auf Spieler vier und läuft sofort hinter ihm vorbei. Spieler vier spielt den Ball direkt in seinen Lauf.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       56.6,
+       18.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n7",
+      "to": [
+       44,
+       9
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       44.6,
+       9.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b2",
+      "to": [
+       38.6,
+       38.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r6",
+      "to": [
+       50,
+       47
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b2",
+      "to": [
+       50.6,
+       47.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Mit Ball auf die andere Seite",
+    "say": "Spieler sieben dribbelt mit Tempo zum Start auf der anderen Seite und stellt sich dort an. Jeder rückt eine Station weiter, Spieler vier an die Puppe, Spieler acht an die Seitenlinie. Jetzt startet Spieler neun mit dem Ball, der von drüben kommt.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       18,
+       8
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n4",
+      "to": [
+       79,
+       24
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "n8",
+      "to": [
+       50,
+       8
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "n9",
+      "to": [
+       81,
+       46.5
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "r6",
+      "to": [
+       76,
+       48
+      ],
+      "type": "dribbling",
+      "ball": "b2"
+     },
+     {
+      "who": "r2",
+      "to": [
+       15,
+       32
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "r11",
+      "to": [
+       44,
+       48
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "r3",
+      "to": [
+       13,
+       9.5
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 9,
+    "y1": 58.6,
+    "x2": 85,
+    "y2": 58.6,
+    "text": "25 m"
+   },
+   {
+    "x1": 97.5,
+    "y1": 5,
+    "x2": 97.5,
+    "y2": 51,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Kurz und scharf anbieten.",
+   "title": "Kurz und scharf anbieten",
+   "text": "Wer an der Puppe steht, wartet nicht auf den Ball. Er macht erst ein paar Schritte weg, so als stünde dort ein Gegenspieler. Dann kommt er scharf und im Winkel entgegen. So hat er Platz für die Annahme.",
+   "board": {
+    "players": [
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 81,
+      "y": 46.5,
+      "label": "4"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 92.5,
+      "y": 46.5,
+      "label": "9"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 92.5,
+      "y": 30,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 79,
+      "y": 24,
+      "label": "8"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 50,
+      "y": 8,
+      "label": "7"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 13,
+      "y": 9.5,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 1.5,
+      "y": 9.5,
+      "label": "3"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 1.5,
+      "y": 26,
+      "label": "5"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 15,
+      "y": 32,
+      "label": "11"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 44,
+      "y": 48,
+      "label": "6"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 27,
+      "y": 55.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 81.6,
+      "y": 47.1
+     },
+     {
+      "id": "b2",
+      "x": 13.6,
+      "y": 10.1
+     },
+     {
+      "id": "s1",
+      "x": 30.5,
+      "y": 56
+     },
+     {
+      "id": "s2",
+      "x": 33,
+      "y": 56
+     }
+    ],
+    "steps": [
+     {
+      "label": "Erst weg vom Ball",
+      "say": "Spieler acht macht zwei, drei Schritte weg und geht hinter die Puppe. Spieler vier wartet mit dem Pass.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         74,
+         30
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r11",
+        "to": [
+         20,
+         26
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Dann scharf entgegen",
+      "say": "Jetzt kommt Spieler acht scharf und schräg entgegen. Genau in dem Moment spielt Spieler vier, und der Ball kommt in den Lauf.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         80.5,
+         36
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         81.1,
+         36.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       },
+       {
+        "who": "r11",
+        "to": [
+         13.5,
+         20
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b2",
+        "to": [
+         14.1,
+         20.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 9,
+      "y1": 58.6,
+      "x2": 85,
+      "y2": 58.6,
+      "text": "25 m"
+     },
+     {
+      "x1": 97.5,
+      "y1": 5,
+      "x2": 97.5,
+      "y2": 51,
+      "text": "18 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Den Ball in den Lauf spielen.",
+   "title": "Den Ball in den Lauf spielen",
+   "text": "Der Ball geht nicht auf den Mann, sondern in den Raum vor ihm. Dann nimmt der Läufer ihn im vollen Lauf mit. Ist der Pass gut, kann er gleich mit einem Kontakt weiterspielen.",
+   "board": {
+    "players": [
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 63,
+      "y": 43,
+      "label": "4"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 92.5,
+      "y": 46.5,
+      "label": "9"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 92.5,
+      "y": 30,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 80.5,
+      "y": 36,
+      "label": "8"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 50,
+      "y": 8,
+      "label": "7"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 31,
+      "y": 13,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 1.5,
+      "y": 9.5,
+      "label": "3"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 1.5,
+      "y": 26,
+      "label": "5"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 13.5,
+      "y": 20,
+      "label": "11"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 44,
+      "y": 48,
+      "label": "6"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 27,
+      "y": 55.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 63.6,
+      "y": 43.6
+     },
+     {
+      "id": "b2",
+      "x": 31.6,
+      "y": 13.6
+     },
+     {
+      "id": "s1",
+      "x": 30.5,
+      "y": 56
+     },
+     {
+      "id": "s2",
+      "x": 33,
+      "y": 56
+     }
+    ],
+    "steps": [
+     {
+      "label": "Der Ball läuft vor dem Läufer",
+      "say": "Spieler acht sprintet an der Seitenlinie nach vorn. Spieler vier spielt nicht zu ihm, sondern in den Raum vor ihm. Ball und Läufer kommen gleichzeitig an.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         83.5,
+         26
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n8",
+        "to": [
+         79,
+         12
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         79.6,
+         12.6
+        ],
+        "type": "pass",
+        "delay": 0.5
+       },
+       {
+        "who": "r11",
+        "to": [
+         10.5,
+         30
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r11",
+        "to": [
+         15,
+         44
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b2",
+        "to": [
+         15.6,
+         44.6
+        ],
+        "type": "pass",
+        "delay": 0.5
+       }
+      ]
+     },
+     {
+      "label": "Mit einem Kontakt weiter",
+      "say": "Weil der Pass passt, spielt Spieler acht direkt weiter in den Fuß von Spieler sieben. Kein Stoppen, kein Zwischenschritt.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         63,
+         9
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         63.6,
+         9.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       },
+       {
+        "who": "r6",
+        "to": [
+         31,
+         47
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b2",
+        "to": [
+         31.6,
+         47.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 9,
+      "y1": 58.6,
+      "x2": 85,
+      "y2": 58.6,
+      "text": "25 m"
+     },
+     {
+      "x1": 97.5,
+      "y1": 5,
+      "x2": 97.5,
+      "y2": 51,
+      "text": "18 m"
+     }
+    ]
+   }
+  }
+ ]
+}
