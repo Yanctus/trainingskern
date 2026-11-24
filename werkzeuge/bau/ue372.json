@@ -1,0 +1,725 @@
+{
+ "title": "Umschalten mit zwei Springern",
+ "code": "UE-372",
+ "kind": "Spielform",
+ "focuses": [
+  "Umschalten",
+  "Zusammenspiel",
+  "Torschuss"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 10,
+ "players_max": 10,
+ "field_size": "20 x 35 m",
+ "description": "Drei gegen drei mit zwei Springern und zwei Torhütern. Die Springer laufen außen in schmalen Zonen und spielen immer mit dem Team am Ball. Wer den Ball erobert, greift sofort an, und das andere Team muss genauso schnell verteidigen. Nach einem Treffer bekommt das Team, das getroffen hat, den nächsten Ball.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 20 mal 35 Metern mit einem Großfeldtor oben und unten. Links und rechts liegt außen je eine Zone, knapp vier Meter breit, mit Hütchen markiert.",
+  "Verteilen: Drei von Team Neon gegen drei von Team Rot im Feld. In jeder Außenzone steht ein Springer, in jedem Tor ein Torwart. Der Trainer steht mit vielen Bällen unten an der Seitenlinie.",
+  "Ablauf: Der Trainer spielt ein. Das Team am Ball greift an und spielt die Springer außen an. Team Neon spielt aufs obere Tor, Team Rot aufs untere. Wer den Ball erobert, kontert sofort.",
+  "Wertung: Jeder Treffer gibt einen Punkt. Das Team, das getroffen hat, bekommt vom Trainer den nächsten Ball. Die Springer werden nach einigen Angriffen getauscht."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Ball erobert? Sofort nach vorn",
+  "Den Springer außen nutzen, dann ist man zu zweit",
+  "Kurz und schnell kombinieren",
+  "Raus aus dem Passweg zum Springer"
+ ],
+ "materials": [
+  "2 Großfeldtore",
+  "4 Hütchen",
+  "Viele Bälle",
+  "Leibchen in drei Farben"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Umschalten mit zwei Springern. Drei gegen drei auf zwei Tore, außen hilft je ein Springer. Wer den Ball holt, geht sofort mit Tempo nach vorn.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 9,
+    "y": 4,
+    "w": 80,
+    "h": 47
+   },
+   {
+    "type": "line",
+    "x1": 17.9,
+    "y1": 4,
+    "x2": 17.9,
+    "y2": 51,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 80.1,
+    "y1": 4,
+    "x2": 80.1,
+    "y2": 51,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 49,
+    "y": 4,
+    "side": "top",
+    "size": "gross"
+   },
+   {
+    "x": 49,
+    "y": 51,
+    "side": "bottom",
+    "size": "gross"
+   }
+  ],
+  "cones": [
+   {
+    "x": 17.9,
+    "y": 4,
+    "color": "orange"
+   },
+   {
+    "x": 17.9,
+    "y": 51,
+    "color": "orange"
+   },
+   {
+    "x": 80.1,
+    "y": 4,
+    "color": "orange"
+   },
+   {
+    "x": 80.1,
+    "y": 51,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 49,
+    "y": 6.5,
+    "label": "TW"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 49,
+    "y": 48.5,
+    "label": "TW"
+   },
+   {
+    "id": "f1",
+    "team": "t",
+    "x": 13.5,
+    "y": 27.5,
+    "label": "F"
+   },
+   {
+    "id": "f2",
+    "team": "t",
+    "x": 84.5,
+    "y": 27.5,
+    "label": "F"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 24,
+    "y": 38,
+    "label": "7"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 52,
+    "y": 26,
+    "label": "8"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 68,
+    "y": 10,
+    "label": "9"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 30,
+    "y": 15,
+    "label": "3"
+   },
+   {
+    "id": "r4",
+    "team": "b",
+    "x": 40,
+    "y": 31,
+    "label": "4"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 62,
+    "y": 38,
+    "label": "5"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 74,
+    "y": 55.3,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 74.6,
+    "y": 55.9
+   },
+   {
+    "id": "s1",
+    "x": 77.5,
+    "y": 55.8
+   },
+   {
+    "id": "s2",
+    "x": 80,
+    "y": 55.8
+   }
+  ],
+  "steps": [
+   {
+    "label": "Trainer spielt Team Rot an",
+    "say": "Der Trainer spielt den Ball zu Spieler vier. Team Rot greift jetzt aufs untere Tor an. Team Neon verteidigt.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       40.6,
+       31.6
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Ballgewinn in der Mitte",
+    "say": "Spieler vier will zu Spieler fünf spielen. Spieler acht liest den Pass, geht dazwischen und hat den Ball. Ab jetzt greift Team Neon an.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       52.1,
+       35.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n8",
+      "to": [
+       51.5,
+       35
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Kopf hoch, raus zum Springer",
+    "say": "Spieler acht schaut sofort zum Springer außen. Der steht frei, und der Ball geht direkt raus. Spieler neun startet schon.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       84.5,
+       27.5
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b1",
+      "to": [
+       85.1,
+       28.1
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n9",
+      "to": [
+       62,
+       9
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     }
+    ]
+   },
+   {
+    "label": "Springer legt in den Lauf",
+    "say": "Der Springer spielt mit einem Kontakt in den Lauf von Spieler neun. Team Rot ist noch auf dem Weg nach vorn und kommt zu spät zurück.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       57,
+       13
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       57.6,
+       13.6
+      ],
+      "type": "pass",
+      "delay": 0.3
+     },
+     {
+      "who": "r3",
+      "to": [
+       42,
+       14
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "r4",
+      "to": [
+       46,
+       22
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Abschluss: Punkt",
+    "say": "Spieler neun schießt direkt, am Torwart vorbei, und das gibt einen Punkt für Team Neon. Als Belohnung bekommt Team Neon den nächsten Ball vom Trainer.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       54.5,
+       4.3
+      ],
+      "type": "pass"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 9,
+    "y1": 58.6,
+    "x2": 89,
+    "y2": 58.6,
+    "text": "35 m"
+   },
+   {
+    "x1": 96,
+    "y1": 4,
+    "x2": 96,
+    "y2": 51,
+    "text": "20 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Raus aus dem Passweg zum Springer.",
+   "title": "Passweg zum Springer frei",
+   "text": "Wer zwischen dem Ball und dem Springer steht, versperrt den Pass. Also weg da und in den freien Raum. Dann geht der Ball zum Springer, und der kann gleich in den Lauf spielen. So entstehen mehrere Anspielstationen.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 49,
+      "y": 6.5,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 49,
+      "y": 48.5,
+      "label": "TW"
+     },
+     {
+      "id": "f1",
+      "team": "t",
+      "x": 13.5,
+      "y": 27.5,
+      "label": "F"
+     },
+     {
+      "id": "f2",
+      "team": "t",
+      "x": 84.5,
+      "y": 27.5,
+      "label": "F"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 24,
+      "y": 38,
+      "label": "7"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 48,
+      "y": 28,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 68,
+      "y": 29,
+      "label": "9"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 30,
+      "y": 15,
+      "label": "3"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 36,
+      "y": 32,
+      "label": "4"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 58,
+      "y": 42,
+      "label": "5"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 74,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 48.6,
+      "y": 28.6
+     },
+     {
+      "id": "s1",
+      "x": 77.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 80,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Im Passweg, also weg da",
+      "say": "Spieler acht hat den Ball und schaut zum Springer. Spieler neun steht genau dazwischen. Er geht weg, Richtung Tor in den freien Raum.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         84.5,
+         27.5
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "n9",
+        "to": [
+         70,
+         14
+        ],
+        "type": "lauf",
+        "delay": 0.5
+       }
+      ]
+     },
+     {
+      "label": "Über den Springer zum Punkt",
+      "say": "Jetzt ist der Weg frei. Der Ball geht raus zum Springer, und der spielt direkt zu Spieler neun. Der schließt sofort ab, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         85.1,
+         28.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         70.6,
+         14.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         55.5,
+         4.3
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 9,
+      "y1": 58.6,
+      "x2": 89,
+      "y2": 58.6,
+      "text": "35 m"
+     },
+     {
+      "x1": 96,
+      "y1": 4,
+      "x2": 96,
+      "y2": 51,
+      "text": "20 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Nach dem Treffer drei Sekunden überstehen.",
+   "title": "Drei Sekunden nach dem Punkt",
+   "text": "Nach einem Treffer spielt der Trainer sofort den nächsten Ball zu dem Team, das getroffen hat. Das andere Team presst sofort. Erobert es den Ball innerhalb von drei Sekunden, zählt der Punkt nicht. Hält das Team den Ball drei Sekunden, bleibt der Punkt stehen.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 49,
+      "y": 6.5,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 49,
+      "y": 48.5,
+      "label": "TW"
+     },
+     {
+      "id": "f1",
+      "team": "t",
+      "x": 13.5,
+      "y": 27.5,
+      "label": "F"
+     },
+     {
+      "id": "f2",
+      "team": "t",
+      "x": 84.5,
+      "y": 27.5,
+      "label": "F"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 24,
+      "y": 38,
+      "label": "7"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 52,
+      "y": 26,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 61,
+      "y": 11,
+      "label": "9"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 30,
+      "y": 15,
+      "label": "3"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 40,
+      "y": 31,
+      "label": "4"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 65,
+      "y": 39,
+      "label": "5"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 74,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 74.6,
+      "y": 55.9
+     },
+     {
+      "id": "s1",
+      "x": 77.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 80,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Treffer, sofort der nächste Ball",
+      "say": "Spieler neun hat gerade getroffen. Der Trainer spielt sofort den nächsten Ball zu Spieler acht. Team Rot läuft auf der Stelle an.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         52.6,
+         26.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r4",
+        "to": [
+         47.5,
+         22.5
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "r5",
+        "to": [
+         58,
+         32
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "r3",
+        "to": [
+         28,
+         30
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       }
+      ]
+     },
+     {
+      "label": "Drei Sekunden halten: Punkt zählt",
+      "say": "Spieler acht spielt schnell zu Spieler sieben, und der gleich weiter zum Springer. Drei Sekunden sind um, der Ball ist noch bei Team Neon. Der Punkt zählt. Hätte Team Rot den Ball vorher erobert, wäre er weg.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         24.6,
+         38.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         14.1,
+         28.1
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "r3",
+        "to": [
+         22,
+         33
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 9,
+      "y1": 58.6,
+      "x2": 89,
+      "y2": 58.6,
+      "text": "35 m"
+     },
+     {
+      "x1": 96,
+      "y1": 4,
+      "x2": 96,
+      "y2": 51,
+      "text": "20 m"
+     }
+    ]
+   }
+  }
+ ]
+}

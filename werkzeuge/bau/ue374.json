@@ -1,0 +1,703 @@
+{
+ "title": "Aus der Raute ins 6 gegen 4",
+ "code": "UE-374",
+ "kind": "Spielform",
+ "focuses": [
+  "Umschalten",
+  "Passspiel",
+  "Verteidigen"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 10,
+ "players_max": 10,
+ "field_size": "18 x 18 m",
+ "description": "Ein Rondo vier gegen zwei in einer Raute mitten im Feld. Erobern die zwei Jäger den Ball, spielen sie sofort raus zu ihren vier Mitspielern außen, und im ganzen Feld wird sechs gegen vier gespielt. Holt sich Team Rot den Ball zurück, muss er sofort wieder in die Raute. Wer zehn Pässe schafft, bekommt einen Punkt.",
+ "organisation": [
+  "Aufbauen: Ein Quadrat von 18 mal 18 Metern. In der Mitte eine Raute mit neun Metern Seitenlänge, mit Hütchen abgesteckt.",
+  "Verteilen: Team Rot steht zu viert an den Spitzen der Raute, zwei von Team Neon jagen drinnen den Ball. Die anderen vier von Team Neon verteilen sich außen an den Seiten. Der Trainer steht mit Bällen neben dem Feld.",
+  "Ablauf: Team Rot hält in der Raute den Ball. Erobert Team Neon ihn, geht er sofort raus, und alle spielen im ganzen Feld sechs gegen vier. Erobert Team Rot den Ball zurück, spielt es ihn sofort in die Raute, und das Vier gegen zwei beginnt neu.",
+  "Wertung: Zehn Pässe am Stück geben einen Punkt, in der Raute für Team Rot, im ganzen Feld für Team Neon. Die Jäger in der Raute werden regelmäßig getauscht."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Sauber und flach passen, dann bleibt der Ball",
+  "Ohne Ball bewegen, immer einen Passweg anbieten",
+  "Ball verloren? Sofort umschalten",
+  "Im Sechs gegen vier breit machen und die Seite wechseln"
+ ],
+ "materials": [
+  "Hütchen für Feld und Raute",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Aus der Raute ins Sechs gegen Vier. Ein Rondo vier gegen zwei, und sobald der Ball erobert ist, geht das Spiel aufs ganze Feld.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   },
+   {
+    "type": "line",
+    "x1": 50,
+    "y1": 12,
+    "x2": 32,
+    "y2": 30,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 32,
+    "y1": 30,
+    "x2": 50,
+    "y2": 48,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 50,
+    "y1": 48,
+    "x2": 68,
+    "y2": 30,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 68,
+    "y1": 30,
+    "x2": 50,
+    "y2": 12,
+    "dashed": true
+   }
+  ],
+  "goals": [],
+  "cones": [],
+  "players": [
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 33,
+    "y": 30,
+    "label": "3"
+   },
+   {
+    "id": "r4",
+    "team": "b",
+    "x": 50,
+    "y": 14,
+    "label": "4"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 67,
+    "y": 30,
+    "label": "5"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 50,
+    "y": 46,
+    "label": "10"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 41.5,
+    "y": 30,
+    "label": "6"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 58.5,
+    "y": 30,
+    "label": "8"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 62,
+    "y": 5,
+    "label": "7"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 75,
+    "y": 13,
+    "label": "11"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 38,
+    "y": 55,
+    "label": "9"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 25,
+    "y": 47,
+    "label": "2"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 82,
+    "y": 50,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 33.6,
+    "y": 30.6
+   },
+   {
+    "id": "s1",
+    "x": 85.5,
+    "y": 50.6
+   },
+   {
+    "id": "s2",
+    "x": 82.6,
+    "y": 53.6
+   }
+  ],
+  "steps": [
+   {
+    "label": "Vier gegen zwei in der Raute",
+    "say": "In der Raute hält Team Rot den Ball. Spieler drei spielt zu Spieler vier. Die zwei Jäger von Team Neon schieben mit.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       14.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n6",
+      "to": [
+       41.5,
+       25
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Abgefangen",
+    "say": "Spieler vier will weiter zu Spieler fünf. Spieler acht ahnt den Pass, springt dazwischen und hat den Ball.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       58.5,
+       22
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       59.1,
+       22.6
+      ],
+      "type": "pass",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Sofort raus, alle gehen breit",
+    "say": "Jetzt schnell. Spieler acht spielt sofort raus zu Spieler elf. Beide Jäger verlassen die Raute und suchen sich Platz.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       75.6,
+       13.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n6",
+      "to": [
+       35,
+       14
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n8",
+      "to": [
+       62,
+       46
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Sechs gegen vier im ganzen Feld",
+    "say": "Jetzt spielt Team Neon sechs gegen vier, im ganzen Feld. Der Ball läuft über Spieler sieben zu Spieler sechs. Team Rot muss jetzt viel laufen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       62.6,
+       5.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r4",
+      "to": [
+       55,
+       18
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "r5",
+      "to": [
+       69,
+       20
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "r3",
+      "to": [
+       42,
+       22
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     },
+     {
+      "who": "b1",
+      "to": [
+       35.6,
+       14.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zehn Pässe: Punkt",
+    "say": "Weiter auf die andere Seite zu Spieler zwei und zu Spieler neun. Schafft Team Neon zehn Pässe am Stück, gibt das einen Punkt für Team Neon. Holt sich Team Rot den Ball, geht er sofort zurück in die Raute, und zwei von Team Neon jagen dort wieder.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       25.6,
+       47.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       38.6,
+       55.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 91,
+    "y1": 5,
+    "x2": 91,
+    "y2": 55,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Im Sechs gegen vier breit machen.",
+   "title": "Breit machen, Seite wechseln",
+   "text": "Im Sechs gegen vier läuft keiner zum Ball. Die Spieler bleiben weit auseinander, bis an die Linien. Schiebt Team Rot auf eine Seite, geht der Ball schnell auf die andere.",
+   "board": {
+    "players": [
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 33,
+      "y": 30,
+      "label": "3"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 50,
+      "y": 14,
+      "label": "4"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 67,
+      "y": 30,
+      "label": "5"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 50,
+      "y": 46,
+      "label": "10"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 35,
+      "y": 14,
+      "label": "6"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 62,
+      "y": 46,
+      "label": "8"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 62,
+      "y": 5,
+      "label": "7"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 75,
+      "y": 13,
+      "label": "11"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 38,
+      "y": 55,
+      "label": "9"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 25,
+      "y": 47,
+      "label": "2"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 82,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 75.6,
+      "y": 13.6
+     },
+     {
+      "id": "s1",
+      "x": 85.5,
+      "y": 50.6
+     },
+     {
+      "id": "s2",
+      "x": 82.6,
+      "y": 53.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Team Rot schiebt zum Ball",
+      "say": "Spieler elf hat den Ball. Team Rot schiebt zu viert auf diese Seite. Auf der anderen Seite wird es frei.",
+      "moves": [
+       {
+        "who": "r3",
+        "to": [
+         44,
+         26
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r4",
+        "to": [
+         52,
+         10
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r5",
+        "to": [
+         66,
+         21
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r10",
+        "to": [
+         53,
+         34
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Weg vom Druck, auf die freie Seite",
+      "say": "Spieler elf spielt nicht in den Druck. Der Ball geht zu Spieler acht, über Spieler neun und rüber zu Spieler zwei. Der hat jetzt richtig Platz.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         62.6,
+         46.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         38.6,
+         55.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         25.6,
+         47.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Vier Minitore rund ums Feld.",
+   "title": "Vier Minitore",
+   "text": "An jeder Seite steht ein Minitor. Schafft Team Rot in der Raute zehn Pässe, darf es ausbrechen und auf jedes Minitor schießen. Im Sechs gegen vier darf Team Neon nach acht Pässen auf jedes Minitor abschließen.",
+   "board": {
+    "players": [
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 33,
+      "y": 30,
+      "label": "3"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 50,
+      "y": 14,
+      "label": "4"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 67,
+      "y": 30,
+      "label": "5"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 50,
+      "y": 46,
+      "label": "10"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 41.5,
+      "y": 30,
+      "label": "6"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 58.5,
+      "y": 30,
+      "label": "8"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 62,
+      "y": 5,
+      "label": "7"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 75,
+      "y": 13,
+      "label": "11"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 38,
+      "y": 55,
+      "label": "9"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 25,
+      "y": 47,
+      "label": "2"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 82,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 14.6
+     },
+     {
+      "id": "s1",
+      "x": 85.5,
+      "y": 50.6
+     },
+     {
+      "id": "s2",
+      "x": 82.6,
+      "y": 53.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zehn Pässe in der Raute",
+      "say": "Team Rot zählt laut mit. Spieler vier spielt den zehnten Pass zu Spieler fünf.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         67.6,
+         30.6
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Ausbrechen und abschließen: Punkt",
+      "say": "Jetzt darf Team Rot raus. Spieler fünf dribbelt aus der Raute und schießt ins Minitor, und das gibt einen Punkt für Team Rot.",
+      "moves": [
+       {
+        "who": "r5",
+        "to": [
+         71,
+         30
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         75,
+         30.3
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "goals": [
+     {
+      "x": 50,
+      "y": 5,
+      "side": "top"
+     },
+     {
+      "x": 75,
+      "y": 30,
+      "side": "right"
+     },
+     {
+      "x": 50,
+      "y": 55,
+      "side": "bottom"
+     },
+     {
+      "x": 25,
+      "y": 30,
+      "side": "left"
+     }
+    ]
+   }
+  }
+ ]
+}

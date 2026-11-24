@@ -1,0 +1,656 @@
+{
+ "title": "Passrunde über die Hürde",
+ "code": "UE-373",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Erwärmung",
+  "Ballannahme"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 10,
+ "players_min": 5,
+ "players_max": 8,
+ "field_size": "25 x 25 m",
+ "description": "Ein Aufwärmen mit Pässen und Laufwegen in einem Quadrat mit zwei Dummys, einer Hürde und einer kleinen Zone in der Mitte. Der Ball läuft vom Start nach außen, nach vorn, in die Zone und mit einem Steilpass auf die andere Seite. Wer passt, läuft sofort weiter, der Starter springt über die Hürde in die Zone. Nach jeder Runde rücken alle eine Station weiter.",
+ "organisation": [
+  "Aufbauen: Ein Quadrat von 25 mal 25 Metern. Links und rechts steht je ein Dummy, in der Mitte eine kleine Zone aus vier Hütchen, davor eine Minihürde. Je ein Hütchen am Start und oben.",
+  "Verteilen: Fünf Spieler: zwei am Start, je einer an den beiden Dummys und einer oben. Der Trainer steht mit Ersatzbällen links unten neben dem Feld.",
+  "Ablauf: Pass nach außen, der nimmt um den Dummy mit und spielt nach vorn. Der Starter springt über die Hürde in die Zone und legt den Pass von oben nach außen ab. Dann kommt der Steilpass auf den Spieler am anderen Dummy, und der spielt zurück zum Start.",
+  "Wechsel: Nach seinem Pass rückt jeder eine Station weiter, im Uhrzeigersinn. Der Nächste am Start beginnt die neue Runde."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Pass mit dem richtigen Tempo, genau in den Fuß",
+  "Offen stehen, mit dem hinteren Fuß annehmen und aufdrehen",
+  "Schnell über die Hürde und rein in die Zone",
+  "Erst weg vom Dummy, dann kurz und scharf entgegen"
+ ],
+ "materials": [
+  "6 Hütchen",
+  "2 Dummys",
+  "1 Minihürde",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Passrunde über die Hürde. Ein Aufwärmen mit Ball. Jeder Pass, dann sofort laufen, einmal über die Hürde, und am Ende geht der Ball zurück zum Start.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   }
+  ],
+  "goals": [],
+  "cones": [
+   {
+    "x": 49.7,
+    "y": 8.2,
+    "color": "orange"
+   },
+   {
+    "x": 49.6,
+    "y": 52.2,
+    "color": "orange"
+   },
+   {
+    "x": 45.5,
+    "y": 25.5,
+    "color": "orange"
+   },
+   {
+    "x": 54.5,
+    "y": 25.5,
+    "color": "orange"
+   },
+   {
+    "x": 45.5,
+    "y": 34.5,
+    "color": "orange"
+   },
+   {
+    "x": 54.5,
+    "y": 34.5,
+    "color": "orange"
+   },
+   {
+    "x": 33.6,
+    "y": 29.2,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 67.8,
+    "y": 29.2,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 50,
+    "y": 41,
+    "color": "orange",
+    "shape": "huerde_ou"
+   }
+  ],
+  "players": [
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 47,
+    "y": 51.6,
+    "label": "6"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 56,
+    "y": 53,
+    "label": "2"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 29.3,
+    "y": 31.7,
+    "label": "7"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 44.5,
+    "y": 7,
+    "label": "9"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 72.8,
+    "y": 31.7,
+    "label": "11"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 17,
+    "y": 47,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 47.6,
+    "y": 52.2
+   },
+   {
+    "id": "s1",
+    "x": 20.6,
+    "y": 50.5
+   },
+   {
+    "id": "s2",
+    "x": 17,
+    "y": 51.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pass nach außen",
+    "say": "Spieler sechs beginnt am Start. Flacher Pass nach außen zu Spieler sieben am Dummy. Der steht offen und schaut zum Ball.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       47,
+       51.6
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b1",
+      "to": [
+       29.9,
+       32.3
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Aufdrehen um den Dummy, Pass nach oben",
+    "say": "Spieler sieben nimmt mit dem hinteren Fuß an und dreht auf. Mit dem Ball geht er um den Dummy herum und spielt nach oben zu Spieler neun. Spieler sechs sprintet los und springt über die Hürde in die Zone.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       44.5,
+       7
+      ],
+      "type": "blick",
+      "von": [
+       47,
+       51.6
+      ],
+      "dauer": 1.3
+     },
+     {
+      "who": "n7",
+      "to": [
+       44.5,
+       7
+      ],
+      "type": "dreh",
+      "delay": 0.4,
+      "bend": -1
+     },
+     {
+      "who": "n7",
+      "to": [
+       32.5,
+       34.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       37,
+       33
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       45.1,
+       7.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n6",
+      "to": [
+       50,
+       45
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     },
+     {
+      "who": "n6",
+      "to": [
+       50,
+       30
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "In die Zone, Ablage nach außen",
+    "say": "Spieler neun spielt in die Zone zu Spieler sechs und läuft gleich schräg nach außen. Spieler sechs legt mit einem Kontakt in seinen Lauf.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       30.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n9",
+      "to": [
+       63,
+       27
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       63.6,
+       27.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Doppelte Bewegung, Steilpass",
+    "say": "Drüben geht Spieler elf erst weg vom Dummy, dann kommt er dahinter hervor. Genau da hinein spielt Spieler neun den Steilpass.",
+    "moves": [
+     {
+      "who": "n11",
+      "to": [
+       72.8,
+       21
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n11",
+      "to": [
+       71.5,
+       32
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n11",
+      "to": [
+       67,
+       43.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       67.6,
+       44.1
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zurück zum Start, alle rücken weiter",
+    "say": "Spieler elf spielt zurück zum Start, zu Spieler zwei. Dann rückt jeder eine Station weiter, im Uhrzeigersinn. Spieler zwei beginnt die nächste Runde.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       56.6,
+       53.6
+      ],
+      "type": "pass"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "25 m"
+   },
+   {
+    "x1": 83,
+    "y1": 5,
+    "x2": 83,
+    "y2": 55,
+    "text": "25 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Ein Doppelpass gleich am Start.",
+   "title": "Doppelpass am Start",
+   "text": "Spieler sieben kommt vom Dummy nach innen und legt den Ball in den Lauf des Starters. Der spielt direkt nach oben und muss danach noch schneller über die Hürde in die Zone. Mehr Pässe, mehr Tempo, beide Füße benutzen.",
+   "board": {
+    "players": [
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 47,
+      "y": 51.6,
+      "label": "6"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 56,
+      "y": 53,
+      "label": "2"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 29.3,
+      "y": 31.7,
+      "label": "7"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 44.5,
+      "y": 7,
+      "label": "9"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 72.8,
+      "y": 31.7,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 17,
+      "y": 47,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 47.6,
+      "y": 52.2
+     },
+     {
+      "id": "s1",
+      "x": 20.6,
+      "y": 50.5
+     },
+     {
+      "id": "s2",
+      "x": 17,
+      "y": 51.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Doppelpass mit Spieler sieben",
+      "say": "Spieler sechs spielt zu Spieler sieben und läuft gleich schräg nach vorn. Spieler sieben legt mit einem Kontakt in seinen Lauf.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         47,
+         51.6
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         29.9,
+         32.3
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n6",
+        "to": [
+         37,
+         43
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         37.6,
+         43.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Direkt nach oben, dann über die Hürde",
+      "say": "Spieler sechs spielt direkt nach oben zu Spieler neun. Dann Vollgas über die Hürde und rein in die Zone. Ab hier läuft die Runde weiter wie bisher.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         45.1,
+         7.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n6",
+        "to": [
+         47.5,
+         46
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n6",
+        "to": [
+         50,
+         45
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n6",
+        "to": [
+         50,
+         30
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Am Ende kommt der Abschluss aufs Minitor.",
+   "title": "Abschluss aufs Minitor",
+   "text": "Unten rechts steht ein Minitor. Nach dem Steilpass spielt der Spieler am Dummy zum Start, bekommt den Ball zurück in den Lauf und schließt direkt ab. Der Trainer bringt sofort den nächsten Ball zum Start.",
+   "board": {
+    "players": [
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 50,
+      "y": 30,
+      "label": "6"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 56,
+      "y": 53,
+      "label": "2"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 29.3,
+      "y": 31.7,
+      "label": "7"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 63,
+      "y": 27,
+      "label": "9"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 67,
+      "y": 43.5,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 17,
+      "y": 47,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 67.6,
+      "y": 44.1
+     },
+     {
+      "id": "s1",
+      "x": 20.6,
+      "y": 50.5
+     },
+     {
+      "id": "s2",
+      "x": 17,
+      "y": 51.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Doppelpass vor dem Tor",
+      "say": "Spieler elf hat den Steilpass. Er spielt zum Start zu Spieler zwei und läuft weiter Richtung Tor. Spieler zwei legt direkt in seinen Lauf.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         56.6,
+         53.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n11",
+        "to": [
+         69.5,
+         47.5
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         70.1,
+         48.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Direkt abschließen: Punkt",
+      "say": "Spieler elf schießt mit dem ersten Kontakt ins Minitor, und das gibt einen Punkt für Spieler elf. Der Trainer spielt sofort den nächsten Ball zum Start.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         69,
+         54.6
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ],
+    "goals": [
+     {
+      "x": 69,
+      "y": 55,
+      "side": "bottom"
+     }
+    ]
+   }
+  }
+ ]
+}
