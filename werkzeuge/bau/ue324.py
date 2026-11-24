@@ -1,6 +1,6 @@
 import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe import *
 # PS-11 (U15-U17, Woche 3 Pre-Season): Developing 1st Touch, Acceleration & Speed. 20 x 30 Yards = 18 x 27 m (gerundet 18 x 25 m).
-# Langes Feld QUER wie im PDF (Vorbild ue317.py): Feld x 9-89, y 4-51, kein Tor, nur die Längen-Maßlinie (rechts warten Spieler).
+# Langes Feld QUER wie im PDF, Maße Breite x Länge (Vorbild ue317.py): Feld x 9-89, y 4-51, kein Tor, nur die Längen-Maßlinie (rechts warten Spieler).
 # Ausrichtung wie im PDF. Drei Puppen als Stangen. Zwei Runden laufen gleichzeitig und spiegelbildlich: oben Team Neon (8 rechts
 # oben spielt zu 10 in der Mitte unten, 10 diagonal zu 7 links oben, 7 dribbelt oben zurück), unten Team Rot (4 -> 9 -> 11,
 # 11 dribbelt unten zurück). Im Original haben alle eine Farbe; zwei Teams nur, damit man die beiden Runden auseinanderhält.
@@ -31,9 +31,9 @@ def weg(who, pkt, **k): return [mv(who, pkt[0], **k)] + [mv(who, p, after=True) 
 u = {"title": "Erster Kontakt und Antritt", "code": "UE-324", "kind": "Übungsform",
  "focuses": ["Ballannahme", "Passspiel", "Schnelligkeit"], "age_groups": ["C-Jugend", "B-Jugend"],
  "altersbereiche": ["U15-U17"], "tags": ["Vorbereitung"], "duration_minutes": 15, "players_min": 8, "players_max": 12,
- "field_size": "25 x 18 m",
+ "field_size": "18 x 25 m",
  "description": "Zwei Runden laufen gleichzeitig und spiegelbildlich. Von außen geht der Ball in die Mitte, der Mittelspieler nimmt ihn mit dem ersten Kontakt nach innen mit und spielt diagonal in die andere Ecke. Dann zieht er scharf um die Puppe und sprintet zum Hütchen. Wer den Pass bekommen hat, dribbelt mit Tempo zurück zur ersten Station.",
- "organisation": ["Aufbauen: Ein Feld von 25 mal 18 Metern. In jeder Ecke ein Hütchen, in der Mitte drei Puppen.",
+ "organisation": ["Aufbauen: Ein Feld von 18 mal 25 Metern. In jeder Ecke ein Hütchen, in der Mitte drei Puppen.",
   "Verteilen: Mindestens acht Spieler. In beiden Ecken links steht einer, rechts warten die anderen mit Ball. Zwei Mittelspieler stehen neben den Puppen. Der Trainer steht mit Ersatzbällen am Rand.",
   "Ablauf: Beide Runden starten gleichzeitig. Pass von außen in die Mitte und hinterherlaufen. Der Mittelspieler nimmt nach innen mit und spielt diagonal in die Ecke links. Danach zieht er scharf um die Puppe und sprintet zum Hütchen. Der Spieler aus der Ecke dribbelt mit Ball zurück nach rechts.",
   "Wechsel: Jeder rückt nach seiner Aktion eine Station weiter. Wer reinspielt, wird Mittelspieler, der Mittelspieler geht in die Ecke, der aus der Ecke stellt sich mit Ball rechts an."],
