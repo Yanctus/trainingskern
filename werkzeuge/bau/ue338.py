@@ -36,7 +36,7 @@ def in_den_lauf():
 def kreuzen(blick=False):
     m = []
     if blick:
-        m += [bl("n9", [26, 6], von=[47, 15], dauer=1.3), bl("n10", [74, 6], von=[53, 12], dauer=1.3)]
+        m += [bl("n9", [31.5, 7.2], von=[47, 15], dauer=1.3)]
     return m + [dr("n9", "b8", [36, 9], after=blick or None), dr("n10", "b6", [64, 9], delay=0.4)]
 def ecke():
     return [ps("b8", [26.6, 6.6]), ps("b8", [36.6, 9.6], after=True), mv("n2", [23, 14], after=True), ps("b8", [23.6, 14.6], after=True),
@@ -47,7 +47,7 @@ def puppe():
     return [ps("b8", fuss("n12")), mv("n2", [37, 40], delay=0.2), mv("n2", [37, 47], after=True), ps("b8", [37.6, 47.6], after=True),
             ps("b6", fuss("n14"), delay=0.3), mv("n3", [63, 40], delay=0.5), mv("n3", [63, 47], after=True), ps("b6", [63.6, 47.6], after=True)]
 
-u = {"title": "Doppelpässe und Tempodribbling", "code": "UE-338", "kind": "Übungsform",
+u = {"title": "Doppelpässe, kreuzen, dribbeln", "code": "UE-338", "kind": "Übungsform",
  "focuses": ["Passspiel", "Zusammenspiel", "Dribbling"], "age_groups": ["C-Jugend", "B-Jugend"],
  "altersbereiche": ["U15-U17"], "duration_minutes": 15, "players_min": 12, "players_max": 16,
  "field_size": "25 x 25 m",
@@ -60,7 +60,7 @@ u = {"title": "Doppelpässe und Tempodribbling", "code": "UE-338", "kind": "Übu
  "coaching_points": ["Pass in den Lauf, nicht in die Füße", "Kopf hoch beim Kreuzen", "Mal links, mal rechts passen", "Erst lösen, wenn der Ball kommt"],
  "materials": ["8 Hütchen", "2 Puppen", "Viele Bälle"],
  "access": "abo", "hidden": True, "wartet_auf_ton": True,
- "say_intro": "Doppelpässe und Tempodribbling. Zwei Bälle laufen gleichzeitig durchs Feld, mit Doppelpässen, Pässen in den Lauf und Tempo die Linie hinunter.",
+ "say_intro": "Doppelpässe, kreuzen, dribbeln. Zwei Bälle laufen gleichzeitig durchs Feld, mit Doppelpässen, Pässen in den Lauf und Tempo die Linie hinunter.",
  "board": {"lines": LINES, "goals": [], "cones": CONES, "players": sp(), "balls": BAELLE,
   "steps": [
    S("Doppelpass am Start", "Beide Starter spielen gleichzeitig. Wir schauen auf Spieler acht. Spieler elf löst sich nach außen vom Hütchen, bekommt den Ball und spielt direkt zurück. Auf der anderen Seite machen Spieler sechs und Spieler sieben dasselbe.",
