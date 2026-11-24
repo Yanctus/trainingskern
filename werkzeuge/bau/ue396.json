@@ -1,0 +1,1017 @@
+{
+ "title": "Dritter Mann in die Tiefe",
+ "code": "UE-396",
+ "kind": "Übungsform",
+ "focuses": [
+  "Zusammenspiel",
+  "Passspiel",
+  "1 gegen 1"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 18,
+ "players_max": 22,
+ "field_size": "45 x 75 m",
+ "description": "Angriffswellen auf einem großen Feld, immer abwechselnd in beide Richtungen. Der Torwart eröffnet, der Ball geht über den Mittelfeldspieler auf die Spitze und wird zum zweiten Mittelfeldspieler abgelegt. Der spielt steil in den Lauf des Flügelspielers, der hinter die Dummys startet. Danach geht es ins Eins gegen Eins und zum Abschluss.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 45 mal 75 Metern mit zwei großen Toren und Strafräumen. Vier Dummys stehen als Raute um den Mittelkreis.",
+  "Verteilen: Zwei Teams und zwei Torhüter. Jedes Team hat zwei Mittelfeldspieler vor dem eigenen Strafraum, eine Spitze in der Mitte und zwei Flügelspieler an den Dummys. Die Verteidiger warten an den Seitenlinien. Der Trainer steht mit Bällen am Rand.",
+  "Ablauf: Der Torwart spielt den Mittelfeldspieler an, der spielt auf die Spitze. Die Spitze legt ab für den zweiten Mittelfeldspieler, und der schickt den Flügelspieler in die Tiefe. Ein Verteidiger kommt von der Seitenlinie, es gibt ein Eins gegen Eins mit Abschluss.",
+  "Wertung und Wechsel: Jeder Treffer gibt einen Punkt. Danach greift sofort das andere Team in die Gegenrichtung an. Gewinnt der Verteidiger den Ball, spielt er zu seinem Torwart, und sein Team kontert sofort."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Scharf und genau passen, durch die Linien",
+  "Den Lauf nicht zu früh starten",
+  "Im Eins gegen Eins mutig sein und abschließen",
+  "Schnell spielen, mit Spieltempo"
+ ],
+ "materials": [
+  "2 große Tore",
+  "4 Dummys",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Dritter Mann in die Tiefe. Angriffswellen über den ganzen Platz. Über die Spitze und eine Ablage kommt der Steilpass, und der Flügelspieler startet hinter die Dummys.",
+ "board": {
+  "massstab": "gross",
+  "lines": [
+   {
+    "type": "rect",
+    "x": 7,
+    "y": 3,
+    "w": 84,
+    "h": 49
+   },
+   {
+    "type": "line",
+    "x1": 49,
+    "y1": 3,
+    "x2": 49,
+    "y2": 52,
+    "dashed": false
+   },
+   {
+    "type": "circle",
+    "x": 49,
+    "y": 27.5,
+    "r": 7
+   },
+   {
+    "type": "rect",
+    "x": 7,
+    "y": 12.5,
+    "w": 17.5,
+    "h": 30
+   },
+   {
+    "type": "rect",
+    "x": 73.5,
+    "y": 12.5,
+    "w": 17.5,
+    "h": 30
+   },
+   {
+    "type": "rect",
+    "x": 7,
+    "y": 20,
+    "w": 6.5,
+    "h": 15
+   },
+   {
+    "type": "rect",
+    "x": 84.5,
+    "y": 20,
+    "w": 6.5,
+    "h": 15
+   },
+   {
+    "type": "line",
+    "x1": 35.5,
+    "y1": 3,
+    "x2": 35.5,
+    "y2": 52,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 62.5,
+    "y1": 3,
+    "x2": 62.5,
+    "y2": 52,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 7,
+    "y": 27.5,
+    "side": "left",
+    "size": "gross"
+   },
+   {
+    "x": 91,
+    "y": 27.5,
+    "side": "right",
+    "size": "gross"
+   }
+  ],
+  "cones": [
+   {
+    "x": 57.8,
+    "y": 27.8,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 41.5,
+    "y": 27.8,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 49.9,
+    "y": 12.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 49.7,
+    "y": 43,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 10.7,
+    "y": 27.5,
+    "label": "TW"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 87.3,
+    "y": 27.5,
+    "label": "TW"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 29.2,
+    "y": 12.8,
+    "label": "4"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 27.3,
+    "y": 43.2,
+    "label": "8"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 52.9,
+    "y": 27.8,
+    "label": "9"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 61.8,
+    "y": 27.8,
+    "label": "10"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 44.4,
+    "y": 12.3,
+    "label": "11"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 46.4,
+    "y": 48,
+    "label": "7"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 21.5,
+    "y": 1.5,
+    "label": "5"
+   },
+   {
+    "id": "r14",
+    "team": "b",
+    "x": 70.7,
+    "y": 11.8,
+    "label": "14"
+   },
+   {
+    "id": "r15",
+    "team": "b",
+    "x": 68.5,
+    "y": 35.5,
+    "label": "15"
+   },
+   {
+    "id": "r17",
+    "team": "b",
+    "x": 54.1,
+    "y": 12.3,
+    "label": "17"
+   },
+   {
+    "id": "r21",
+    "team": "b",
+    "x": 54.5,
+    "y": 45,
+    "label": "21"
+   },
+   {
+    "id": "r20",
+    "team": "b",
+    "x": 44.6,
+    "y": 27.8,
+    "label": "20"
+   },
+   {
+    "id": "r19",
+    "team": "b",
+    "x": 36.5,
+    "y": 27.8,
+    "label": "19"
+   },
+   {
+    "id": "r16",
+    "team": "b",
+    "x": 76.5,
+    "y": 53.5,
+    "label": "16"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 20,
+    "y": 55.3,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 11.3,
+    "y": 28.1
+   },
+   {
+    "id": "s1",
+    "x": 23.5,
+    "y": 55.8
+   },
+   {
+    "id": "s2",
+    "x": 26,
+    "y": 55.8
+   }
+  ],
+  "steps": [
+   {
+    "label": "Torwart eröffnet, Pass auf die Spitze",
+    "say": "Der Torwart spielt flach zu Spieler vier. Spieler neun kommt aus der Mitte entgegen, und Spieler vier spielt ihn sofort an.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       29.8,
+       13.4
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n9",
+      "to": [
+       51,
+       23.5
+      ],
+      "type": "lauf",
+      "delay": 0.8
+     },
+     {
+      "who": "b1",
+      "to": [
+       51.6,
+       24.1
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       39.5,
+       38.5
+      ],
+      "type": "lauf",
+      "delay": 1.2
+     }
+    ]
+   },
+   {
+    "label": "Ablage auf Spieler acht",
+    "say": "Spieler acht ist schon nach vorn gerückt. Spieler neun legt mit einem Kontakt ab, genau in seinen Lauf.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       40.1,
+       39.1
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Steil in den Lauf von Spieler sieben",
+    "say": "Jetzt startet Spieler sieben, außen an Spieler einundzwanzig vorbei. Spieler acht spielt den Ball steil in den freien Raum. Von der Seitenlinie kommt Spieler sechzehn.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       57,
+       49.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n7",
+      "to": [
+       63,
+       40.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       63.6,
+       41.1
+      ],
+      "type": "pass",
+      "delay": 1.0
+     },
+     {
+      "who": "r16",
+      "to": [
+       74,
+       41
+      ],
+      "type": "lauf",
+      "delay": 0.8
+     }
+    ]
+   },
+   {
+    "label": "Eins gegen Eins: Punkt",
+    "say": "Spieler sieben geht mit Tempo auf Spieler sechzehn zu und außen vorbei. Er schließt ab, und das gibt einen Punkt für Team Neon. Sofort geht es in die andere Richtung: Der andere Torwart eröffnet für Team Rot.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       72.5,
+       46.5
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       79,
+       45
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n7",
+      "to": [
+       83,
+       37
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "r16",
+      "to": [
+       75,
+       44
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       90.7,
+       30.5
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 7,
+    "y1": 58.6,
+    "x2": 91,
+    "y2": 58.6,
+    "text": "75 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Den Lauf nicht zu früh starten.",
+   "title": "Nicht zu früh starten",
+   "text": "Der Flügelspieler wartet auf einer Höhe mit seinem Gegenspieler. Er startet erst, wenn der Ball zum Ablegen unterwegs ist. So steht er nicht im Abseits und bekommt den Ball im vollen Lauf. Der Pass kommt in den Raum vor ihm, nicht in die Füße.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 10.7,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 87.3,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 29.2,
+      "y": 12.8,
+      "label": "4"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 27.3,
+      "y": 43.2,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 51,
+      "y": 23.5,
+      "label": "9"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 61.8,
+      "y": 27.8,
+      "label": "10"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 44.4,
+      "y": 12.3,
+      "label": "11"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 46.4,
+      "y": 48,
+      "label": "7"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 21.5,
+      "y": 1.5,
+      "label": "5"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 70.7,
+      "y": 11.8,
+      "label": "14"
+     },
+     {
+      "id": "r15",
+      "team": "b",
+      "x": 68.5,
+      "y": 35.5,
+      "label": "15"
+     },
+     {
+      "id": "r17",
+      "team": "b",
+      "x": 54.1,
+      "y": 12.3,
+      "label": "17"
+     },
+     {
+      "id": "r21",
+      "team": "b",
+      "x": 54.5,
+      "y": 45,
+      "label": "21"
+     },
+     {
+      "id": "r20",
+      "team": "b",
+      "x": 44.6,
+      "y": 27.8,
+      "label": "20"
+     },
+     {
+      "id": "r19",
+      "team": "b",
+      "x": 36.5,
+      "y": 27.8,
+      "label": "19"
+     },
+     {
+      "id": "r16",
+      "team": "b",
+      "x": 76.5,
+      "y": 53.5,
+      "label": "16"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 20,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 51.6,
+      "y": 24.1
+     },
+     {
+      "id": "s1",
+      "x": 23.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 26,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Warten auf einer Höhe",
+      "say": "Spieler neun hat den Ball. Spieler sieben läuft noch nicht. Er geht nur mit bis auf die Höhe von Spieler einundzwanzig.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         39.5,
+         38.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n7",
+        "to": [
+         51.5,
+         49
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       }
+      ]
+     },
+     {
+      "label": "Mit der Ablage starten",
+      "say": "Erst wenn Spieler neun ablegt, zieht Spieler sieben an. Spieler acht spielt direkt in den Raum vor ihm.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         40.1,
+         39.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n7",
+        "to": [
+         57,
+         49.5
+        ],
+        "type": "lauf",
+        "delay": 0.5
+       },
+       {
+        "who": "n7",
+        "to": [
+         63,
+         40.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         63.6,
+         41.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Im vollen Lauf zum Abschluss: Punkt",
+      "say": "Spieler sieben nimmt den Ball im Lauf mit und zieht in Richtung Tor. Er trifft, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         80,
+         37
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         90.7,
+         30.5
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 7,
+      "y1": 58.6,
+      "x2": 91,
+      "y2": 58.6,
+      "text": "75 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Der Mittelfeldspieler läuft als dritter Mann in die Tiefe.",
+   "title": "Mittelfeld läuft mit",
+   "text": "Jetzt startet ein Mittelfeldspieler hinter die Dummys. Spieler vier eröffnet und läuft nach seinem Pass sofort weiter nach vorn. Die Spitze legt ab, und der Steilpass kommt in seinen Lauf. Von der Seitenlinie verteidigt Spieler dreizehn.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 10.7,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 87.3,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 29.2,
+      "y": 12.8,
+      "label": "4"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 27.3,
+      "y": 43.2,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 52.9,
+      "y": 27.8,
+      "label": "9"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 61.8,
+      "y": 27.8,
+      "label": "10"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 44.4,
+      "y": 12.3,
+      "label": "11"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 46.4,
+      "y": 48,
+      "label": "7"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 21.5,
+      "y": 1.5,
+      "label": "5"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 70.7,
+      "y": 11.8,
+      "label": "14"
+     },
+     {
+      "id": "r15",
+      "team": "b",
+      "x": 68.5,
+      "y": 35.5,
+      "label": "15"
+     },
+     {
+      "id": "r17",
+      "team": "b",
+      "x": 54.1,
+      "y": 12.3,
+      "label": "17"
+     },
+     {
+      "id": "r21",
+      "team": "b",
+      "x": 54.5,
+      "y": 45,
+      "label": "21"
+     },
+     {
+      "id": "r20",
+      "team": "b",
+      "x": 44.6,
+      "y": 27.8,
+      "label": "20"
+     },
+     {
+      "id": "r19",
+      "team": "b",
+      "x": 36.5,
+      "y": 27.8,
+      "label": "19"
+     },
+     {
+      "id": "r16",
+      "team": "b",
+      "x": 76.5,
+      "y": 53.5,
+      "label": "16"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 80,
+      "y": 1.5,
+      "label": "13"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 20,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 11.3,
+      "y": 28.1
+     },
+     {
+      "id": "s1",
+      "x": 23.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 26,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Eröffnen und anspielen",
+      "say": "Wie gehabt spielt der Torwart zu Spieler vier, und Spieler vier spielt die Spitze an.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         29.8,
+         13.4
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n9",
+        "to": [
+         51,
+         23.5
+        ],
+        "type": "lauf",
+        "delay": 0.8
+       },
+       {
+        "who": "b1",
+        "to": [
+         51.6,
+         24.1
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n8",
+        "to": [
+         39.5,
+         38.5
+        ],
+        "type": "lauf",
+        "delay": 1.2
+       }
+      ]
+     },
+     {
+      "label": "Ablage, Spieler vier läuft weiter",
+      "say": "Spieler neun legt ab auf Spieler acht. Spieler vier bleibt nicht stehen. Er läuft weiter, an Spieler elf und den Dummys vorbei.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         40.1,
+         39.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n4",
+        "to": [
+         40,
+         19.5
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n4",
+        "to": [
+         56,
+         19.5
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Steilpass für den dritten Mann",
+      "say": "Spieler acht spielt steil in den Lauf von Spieler vier. Spieler dreizehn kommt von der Seitenlinie und stellt sich ihm.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         65,
+         17
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         65.6,
+         17.6
+        ],
+        "type": "pass",
+        "delay": 0.5
+       },
+       {
+        "who": "r13",
+        "to": [
+         74,
+         13
+        ],
+        "type": "lauf",
+        "delay": 0.5
+       }
+      ]
+     },
+     {
+      "label": "Eins gegen Eins: Punkt",
+      "say": "Spieler vier geht innen an Spieler dreizehn vorbei und schließt ab, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         72,
+         22
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n4",
+        "to": [
+         80,
+         23
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "r13",
+        "to": [
+         76,
+         17
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         90.7,
+         25
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 7,
+      "y1": 58.6,
+      "x2": 91,
+      "y2": 58.6,
+      "text": "75 m"
+     }
+    ]
+   }
+  }
+ ]
+}

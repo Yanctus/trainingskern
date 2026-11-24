@@ -74,7 +74,7 @@ u = {"title": "Kombinieren zum Seitenwechsel", "code": "UE-405", "kind": "Übung
     "Die Puppe ist der Gegenspieler. Wer an ihr klebt, bekommt im Spiel keinen Ball. Erst ein paar Schritte weg, dann schnell zurück in den freien Raum. Losgehen, wenn der Passgeber den Ball schon hat, nicht früher.",
     sp(n2=(29, 50), n3=POS["n2"], n10=(59, 31)), [B("b1", *fu(POS["n8"])), B("b2", *fu(POS["n12"]))] + ERSATZ,
     [S("Erst weg, dann kommen", "Spieler acht hat den Ball. Spieler zehn zieht seinen Gegenspieler erst ein paar Schritte mit nach hinten. Dann kommt er schnell zurück in den freien Raum.",
-       mv("n10", [65, 22]), mv("n10", [55, 31], after=True)),
+       mv("n10", [66, 33.5]), mv("n10", [55, 31], after=True)),
      S("Jetzt kommt der Pass", "Genau in dem Moment schaut er zum Ball, und Spieler acht spielt ihn an.",
        bl("n10", richt((55, 31), POS["n8"])), ps("b1", fu((55, 31)), after=True)),
      S("Spieler vier im richtigen Moment", "Spieler vier wartet, bis der Ball unterwegs ist. Dann löst er sich von seiner Puppe, bekommt die Ablage und spielt quer zu Spieler elf.",

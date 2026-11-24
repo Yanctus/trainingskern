@@ -1,0 +1,817 @@
+{
+ "title": "Abschlussspiel mit Anspielern",
+ "code": "UE-397",
+ "kind": "Spielform",
+ "focuses": [
+  "Torschuss",
+  "Zusammenspiel",
+  "Umschalten"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 14,
+ "players_max": 14,
+ "field_size": "25 x 35 m",
+ "description": "Drei Teams zu viert und zwei Torhüter. Vier Angreifer spielen gegen vier Verteidiger auf zwei Tore, das dritte Team steht außen und spielt die Bälle ein. Der Trainer ruft einen Anspieler auf, und der bringt seinen Ball zu den Angreifern, die schnell abschließen wollen. Erobern die Verteidiger den Ball, suchen sie den Pass zu einem Anspieler und holen sich so den Punkt.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 25 mal 35 Metern mit zwei großen Toren, in drei gleich große Zonen geteilt.",
+  "Verteilen: Drei Teams zu viert. Team Neon greift an, Team Rot verteidigt, das dritte Team steht mit je einem Ball außen am Feld. In jedem Tor steht ein Torwart. Der Trainer steht mit Ersatzbällen am Rand.",
+  "Ablauf: Der Trainer ruft die Nummer eines Anspielers. Der spielt seinen Ball zu einem Angreifer. Team Neon kombiniert schnell und schließt auf eines der beiden Tore ab. Erobert Team Rot den Ball, spielt es ihn zu einem Anspieler außen.",
+  "Wertung und Wechsel: Jeder Treffer gibt einen Punkt für Team Neon, jeder Pass zu einem Anspieler nach Ballgewinn gibt einen Punkt für Team Rot. Nach vier Bällen geht das Team mit weniger Punkten nach außen, und die Anspieler kommen ins Feld."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Mit wenigen Kontakten abschließen",
+  "Immer wieder schauen, wo Platz ist",
+  "Erst entgegen, dann in den Raum",
+  "Schnell reagieren, wenn der Trainer ruft"
+ ],
+ "materials": [
+  "2 große Tore",
+  "8 Hütchen",
+  "Viele Bälle",
+  "Leibchen in drei Farben"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Abschlussspiel mit Anspielern. Vier gegen vier auf zwei Tore, und außen stehen vier Anspieler mit Ball. Wer aufgerufen wird, spielt ein, und dann muss es schnell gehen.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   },
+   {
+    "type": "line",
+    "x1": 25,
+    "y1": 21.7,
+    "x2": 75,
+    "y2": 21.7,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 25,
+    "y1": 38.3,
+    "x2": 75,
+    "y2": 38.3,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "gross"
+   },
+   {
+    "x": 50,
+    "y": 55,
+    "side": "bottom",
+    "size": "gross"
+   }
+  ],
+  "cones": [],
+  "players": [
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 50,
+    "y": 7.5,
+    "label": "TW"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 50,
+    "y": 52.5,
+    "label": "TW"
+   },
+   {
+    "id": "t5",
+    "team": "t",
+    "x": 30,
+    "y": 2.5,
+    "label": "5"
+   },
+   {
+    "id": "t6",
+    "team": "t",
+    "x": 21.5,
+    "y": 30,
+    "label": "6"
+   },
+   {
+    "id": "t12",
+    "team": "t",
+    "x": 78.5,
+    "y": 32,
+    "label": "12"
+   },
+   {
+    "id": "t13",
+    "team": "t",
+    "x": 77,
+    "y": 54,
+    "label": "13"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 31,
+    "y": 28,
+    "label": "11"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 59,
+    "y": 19,
+    "label": "9"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 68.5,
+    "y": 41.5,
+    "label": "7"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 58.5,
+    "y": 45,
+    "label": "10"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 40,
+    "y": 14,
+    "label": "3"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 40,
+    "y": 31,
+    "label": "8"
+   },
+   {
+    "id": "r4",
+    "team": "b",
+    "x": 67.5,
+    "y": 25.5,
+    "label": "4"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 49,
+    "y": 36.8,
+    "label": "2"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 17,
+    "y": 53,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b5",
+    "x": 30.6,
+    "y": 3.1
+   },
+   {
+    "id": "b6",
+    "x": 22.1,
+    "y": 30.6
+   },
+   {
+    "id": "b12",
+    "x": 79.1,
+    "y": 32.6
+   },
+   {
+    "id": "b13",
+    "x": 77.6,
+    "y": 54.6
+   },
+   {
+    "id": "s1",
+    "x": 20.5,
+    "y": 54.5
+   },
+   {
+    "id": "s2",
+    "x": 18,
+    "y": 56.8
+   }
+  ],
+  "steps": [
+   {
+    "label": "Trainer ruft, Spieler fünf spielt ein",
+    "say": "Der Trainer ruft fünf. Spieler fünf steht oben außen und spielt seinen Ball sofort ins Feld. Spieler elf kommt ihm entgegen und nimmt an.",
+    "moves": [
+     {
+      "who": "n11",
+      "to": [
+       33.5,
+       21
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b5",
+      "to": [
+       34.1,
+       21.6
+      ],
+      "type": "pass",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "Schauen, dann Pass in den Lauf",
+    "say": "Spieler neun schaut über die Schulter, wo vor dem Tor Platz ist. Dann startet er genau dorthin, und Spieler elf spielt ihm den Ball in den Lauf.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       46,
+       8
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "n9",
+      "to": [
+       56,
+       13
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b5",
+      "to": [
+       56.6,
+       13.6
+      ],
+      "type": "pass",
+      "delay": 1.3
+     }
+    ]
+   },
+   {
+    "label": "Direkt abgeschlossen: Punkt",
+    "say": "Spieler neun schießt mit dem ersten Kontakt, und das gibt einen Punkt für Team Neon.",
+    "moves": [
+     {
+      "who": "b5",
+      "to": [
+       54,
+       5.3
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Trainer ruft zwölf, Rot fängt ab",
+    "say": "Jetzt ruft der Trainer zwölf. Spieler zwölf spielt in Richtung Spieler sieben. Aber Spieler vier läuft dazwischen und fängt den Ball ab.",
+    "moves": [
+     {
+      "who": "r4",
+      "to": [
+       73,
+       36
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b12",
+      "to": [
+       73.6,
+       36.6
+      ],
+      "type": "pass",
+      "delay": 0.5
+     }
+    ]
+   },
+   {
+    "label": "Pass nach außen: Punkt für Rot",
+    "say": "Spieler vier spielt quer zu Spieler drei. Der findet Spieler fünf außen, und das gibt einen Punkt für Team Rot. Dann ruft der Trainer den nächsten Anspieler. Nach vier Bällen tauschen die Teams, wer weniger Punkte hat, geht nach außen.",
+    "moves": [
+     {
+      "who": "b12",
+      "to": [
+       40.6,
+       14.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b12",
+      "to": [
+       30.6,
+       3.1
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "25 m"
+   },
+   {
+    "x1": 86,
+    "y1": 5,
+    "x2": 86,
+    "y2": 55,
+    "text": "35 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Schauen und den Raum finden.",
+   "title": "Schauen, dann in den Raum",
+   "text": "Wer auf den Ball wartet, schaut immer wieder, wo Platz ist. Die Stürmer laufen nicht sofort weg. Erst ein paar Schritte zum Ball, dann scharf in den freien Raum. So hängen sie den Verteidiger ab und schließen mit wenigen Kontakten ab.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 50,
+      "y": 7.5,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 50,
+      "y": 52.5,
+      "label": "TW"
+     },
+     {
+      "id": "t5",
+      "team": "t",
+      "x": 30,
+      "y": 2.5,
+      "label": "5"
+     },
+     {
+      "id": "t6",
+      "team": "t",
+      "x": 21.5,
+      "y": 30,
+      "label": "6"
+     },
+     {
+      "id": "t12",
+      "team": "t",
+      "x": 78.5,
+      "y": 32,
+      "label": "12"
+     },
+     {
+      "id": "t13",
+      "team": "t",
+      "x": 77,
+      "y": 54,
+      "label": "13"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 31,
+      "y": 28,
+      "label": "11"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 59,
+      "y": 19,
+      "label": "9"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 68.5,
+      "y": 41.5,
+      "label": "7"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 58.5,
+      "y": 45,
+      "label": "10"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 40,
+      "y": 14,
+      "label": "3"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 40,
+      "y": 31,
+      "label": "8"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 67.5,
+      "y": 25.5,
+      "label": "4"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 49,
+      "y": 36.8,
+      "label": "2"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 17,
+      "y": 53,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b5",
+      "x": 30.6,
+      "y": 3.1
+     },
+     {
+      "id": "b6",
+      "x": 22.1,
+      "y": 30.6
+     },
+     {
+      "id": "b12",
+      "x": 79.1,
+      "y": 32.6
+     },
+     {
+      "id": "b13",
+      "x": 77.6,
+      "y": 54.6
+     },
+     {
+      "id": "s1",
+      "x": 20.5,
+      "y": 54.5
+     },
+     {
+      "id": "s2",
+      "x": 18,
+      "y": 56.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Anspiel von außen",
+      "say": "Der Trainer ruft sechs. Spieler sechs spielt flach zu Spieler elf. Spieler neun schaut schon, wo Platz ist.",
+      "moves": [
+       {
+        "who": "b6",
+        "to": [
+         31.6,
+         28.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n9",
+        "to": [
+         62,
+         8
+        ],
+        "type": "blick",
+        "delay": 0.4
+       }
+      ]
+     },
+     {
+      "label": "Erst entgegen, dann in den Raum",
+      "say": "Spieler neun kommt zwei Schritte entgegen. Dann zieht er an und sprintet in den Raum vor dem Tor. Genau dahin spielt Spieler elf.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         54,
+         24
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n9",
+        "to": [
+         61,
+         12.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b6",
+        "to": [
+         61.6,
+         13.1
+        ],
+        "type": "pass",
+        "delay": 1.2
+       }
+      ]
+     },
+     {
+      "label": "Mit einem Kontakt: Punkt",
+      "say": "Spieler neun nimmt den Ball direkt und trifft, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b6",
+        "to": [
+         55,
+         5.3
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 25,
+      "y1": 58.6,
+      "x2": 75,
+      "y2": 58.6,
+      "text": "25 m"
+     },
+     {
+      "x1": 86,
+      "y1": 5,
+      "x2": 86,
+      "y2": 55,
+      "text": "35 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Wer den Ball erobert, greift sofort selbst an.",
+   "title": "Ballgewinn, dann aufs Tor",
+   "text": "Erobert Team Rot den Ball, spielt es nicht mehr nach außen, sondern greift sofort ein Tor an. Trifft Team Rot, bekommt es beim nächsten Ball das Anspiel. Gespielt wird mit sechs Bällen. Wer danach die meisten Punkte hat, gewinnt.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 50,
+      "y": 7.5,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 50,
+      "y": 52.5,
+      "label": "TW"
+     },
+     {
+      "id": "t5",
+      "team": "t",
+      "x": 30,
+      "y": 2.5,
+      "label": "5"
+     },
+     {
+      "id": "t6",
+      "team": "t",
+      "x": 21.5,
+      "y": 30,
+      "label": "6"
+     },
+     {
+      "id": "t12",
+      "team": "t",
+      "x": 78.5,
+      "y": 32,
+      "label": "12"
+     },
+     {
+      "id": "t13",
+      "team": "t",
+      "x": 77,
+      "y": 54,
+      "label": "13"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 31,
+      "y": 28,
+      "label": "11"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 59,
+      "y": 19,
+      "label": "9"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 68.5,
+      "y": 41.5,
+      "label": "7"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 58.5,
+      "y": 45,
+      "label": "10"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 40,
+      "y": 14,
+      "label": "3"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 40,
+      "y": 31,
+      "label": "8"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 67.5,
+      "y": 25.5,
+      "label": "4"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 49,
+      "y": 36.8,
+      "label": "2"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 17,
+      "y": 53,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b5",
+      "x": 30.6,
+      "y": 3.1
+     },
+     {
+      "id": "b6",
+      "x": 22.1,
+      "y": 30.6
+     },
+     {
+      "id": "b12",
+      "x": 79.1,
+      "y": 32.6
+     },
+     {
+      "id": "b13",
+      "x": 77.6,
+      "y": 54.6
+     },
+     {
+      "id": "s1",
+      "x": 20.5,
+      "y": 54.5
+     },
+     {
+      "id": "s2",
+      "x": 18,
+      "y": 56.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Anspiel auf Spieler zehn",
+      "say": "Der Trainer ruft dreizehn. Spieler dreizehn spielt zu Spieler zehn.",
+      "moves": [
+       {
+        "who": "b13",
+        "to": [
+         59.1,
+         45.6
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Spieler zwei erobert den Ball",
+      "say": "Spieler zwei ist sofort da und spitzelt ihm den Ball weg. Jetzt ist Team Rot am Ball.",
+      "moves": [
+       {
+        "who": "r2",
+        "to": [
+         56.5,
+         42
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r2",
+        "to": [
+         53,
+         47
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b13"
+       }
+      ]
+     },
+     {
+      "label": "Sofort aufs Tor: Punkt für Rot",
+      "say": "Spieler zwei zieht sofort ab und trifft, und das gibt einen Punkt für Team Rot. Beim nächsten Ball greift Team Rot an.",
+      "moves": [
+       {
+        "who": "b13",
+        "to": [
+         55.5,
+         54.7
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 25,
+      "y1": 58.6,
+      "x2": 75,
+      "y2": 58.6,
+      "text": "25 m"
+     },
+     {
+      "x1": 86,
+      "y1": 5,
+      "x2": 86,
+      "y2": 55,
+      "text": "35 m"
+     }
+    ]
+   }
+  }
+ ]
+}

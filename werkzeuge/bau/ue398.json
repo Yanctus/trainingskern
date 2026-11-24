@@ -1,0 +1,745 @@
+{
+ "title": "Aufbaumuster über den Sechser",
+ "code": "UE-398",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Ballannahme",
+  "Zusammenspiel"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 7,
+ "players_max": 9,
+ "field_size": "18 x 25 m",
+ "description": "Ein festes Passmuster zwischen sechs Dummys. Der Sechser löst sich von seiner Stange, nimmt offen an, dreht auf und spielt durch zum Achter. Der legt ab für den Außenverteidiger, der von seiner Stange kommt und auf die andere Seite durchspielt. Von dort läuft das Muster sofort in die Gegenrichtung.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 25 Metern mit sechs Dummys, wie im Bild verteilt.",
+  "Verteilen: Sieben Spieler. Sechs stehen an ihren Dummys, einer startet mit Ball außen. Der Trainer steht mit Ersatzbällen auf der anderen Seite am Rand.",
+  "Ablauf: Pass nach innen zum Sechser, der dreht auf und spielt durch zum Achter. Der Achter legt ab für den Außenverteidiger, der von seiner Stange kommt. Der spielt durch auf die andere Seite.",
+  "Wechsel: Wer den Ball dort bekommt, startet sofort in die Gegenrichtung. Der Außenverteidiger läuft nach seinem Pass zum Start. Nach ein paar Runden tauschen alle die Positionen."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Scharf passen, in den richtigen Fuß",
+  "Erst weg von der Stange, dann zeigen",
+  "Offen annehmen und mit dem ersten Kontakt aufdrehen",
+  "Wenn es geht, direkt spielen"
+ ],
+ "materials": [
+  "6 Dummys",
+  "2 Minitore",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Aufbaumuster über den Sechser. Sechs Dummys, sieben Spieler, und der Ball läuft vom Sechser über den Achter zum Außenverteidiger. Danach geht es sofort in die andere Richtung.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 16,
+    "y": 5,
+    "w": 64,
+    "h": 50
+   }
+  ],
+  "goals": [],
+  "cones": [
+   {
+    "x": 56.3,
+    "y": 17.3,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 32.7,
+    "y": 25.7,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 73.5,
+    "y": 24.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 56.3,
+    "y": 39.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 21.7,
+    "y": 36,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 32.7,
+    "y": 46,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 59.2,
+    "y": 17,
+    "label": "8"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 35.3,
+    "y": 24.9,
+    "label": "7"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 78,
+    "y": 24,
+    "label": "6"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 77,
+    "y": 41,
+    "label": "9"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 59.6,
+    "y": 38,
+    "label": "11"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 18.9,
+    "y": 36,
+    "label": "5"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 29.4,
+    "y": 46.1,
+    "label": "10"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 8,
+    "y": 42,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 77.6,
+    "y": 41.6
+   },
+   {
+    "id": "s1",
+    "x": 8.6,
+    "y": 45.8
+   },
+   {
+    "id": "s2",
+    "x": 6,
+    "y": 46.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pass nach innen zum Sechser",
+    "say": "Spieler neun startet außen mit Ball. Spieler elf ist unser Sechser. Er kommt ein Stück von seiner Stange weg und schaut zum Ball. Dann kommt der flache Pass nach innen.",
+    "moves": [
+     {
+      "who": "n11",
+      "to": [
+       62.5,
+       39.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n11",
+      "to": [
+       77,
+       41
+      ],
+      "type": "blick",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       63.1,
+       40.1
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Aufdrehen und durch zum Achter",
+    "say": "Spieler elf dreht mit dem ersten Kontakt auf und spielt durch zu Spieler sieben. Oben löst sich Spieler acht schon von seiner Stange.",
+    "moves": [
+     {
+      "who": "n11",
+      "to": [
+       35.3,
+       24.9
+      ],
+      "type": "blick",
+      "von": [
+       77,
+       41
+      ],
+      "dauer": 1.3
+     },
+     {
+      "who": "n11",
+      "to": [
+       35.3,
+       24.9
+      ],
+      "type": "dreh",
+      "delay": 0.4,
+      "bend": -1
+     },
+     {
+      "who": "b1",
+      "to": [
+       35.9,
+       25.5
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       67,
+       15.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n8",
+      "to": [
+       56,
+       11.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       46.3,
+       15.6
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Ablage für den Außenverteidiger",
+    "say": "Spieler sieben ist der Achter. Er legt mit einem Kontakt ab, genau in den Lauf von Spieler acht. Gleichzeitig kommt Spieler fünf ein paar Schritte nach vorn.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       46.9,
+       16.2
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n5",
+      "to": [
+       19.5,
+       25
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "Durch auf die andere Seite",
+    "say": "Spieler acht spielt direkt durch zu Spieler fünf und läuft hinterher zum Start. Die Runde ist durch. Jetzt startet Spieler fünf mit diesem Ball sofort in die Gegenrichtung.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       20.1,
+       25.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n8",
+      "to": [
+       10.5,
+       20
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 16,
+    "y1": 58.6,
+    "x2": 80,
+    "y2": 58.6,
+    "text": "25 m"
+   },
+   {
+    "x1": 90,
+    "y1": 5,
+    "x2": 90,
+    "y2": 55,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Erst weg, dann zeigen.",
+   "title": "Erst weg, dann zeigen",
+   "text": "Wer an der Stange wartet, steht nicht still. Erst ein paar Schritte weg vom Ball, dann kurz und scharf heraus. So schüttelt man im Spiel den Gegenspieler ab. Der Sechser steht dabei offen und nimmt den Ball mit dem hinteren Fuß an.",
+   "board": {
+    "players": [
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 59.2,
+      "y": 17,
+      "label": "8"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 35.3,
+      "y": 24.9,
+      "label": "7"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 78,
+      "y": 24,
+      "label": "6"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 77,
+      "y": 41,
+      "label": "9"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 59.6,
+      "y": 38,
+      "label": "11"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 18.9,
+      "y": 36,
+      "label": "5"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 29.4,
+      "y": 46.1,
+      "label": "10"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 8,
+      "y": 42,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 77.6,
+      "y": 41.6
+     },
+     {
+      "id": "s1",
+      "x": 8.6,
+      "y": 45.8
+     },
+     {
+      "id": "s2",
+      "x": 6,
+      "y": 46.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Erst weg, dann scharf heraus",
+      "say": "Spieler elf geht erst ein paar Schritte weg vom Ball. Dann kommt er scharf heraus und zeigt sich. Jetzt erst spielt Spieler neun.",
+      "moves": [
+       {
+        "who": "n11",
+        "to": [
+         57,
+         44.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n11",
+        "to": [
+         62.5,
+         39.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n11",
+        "to": [
+         77,
+         41
+        ],
+        "type": "blick",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         63.1,
+         40.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Hinterer Fuß, erster Kontakt nach vorn",
+      "say": "Er steht offen und nimmt mit dem hinteren Fuß an. Der erste Kontakt geht schon nach vorn, mit dem zweiten spielt er durch zu Spieler sieben.",
+      "moves": [
+       {
+        "who": "n11",
+        "to": [
+         35.3,
+         24.9
+        ],
+        "type": "blick",
+        "von": [
+         77,
+         41
+        ],
+        "dauer": 1.3
+       },
+       {
+        "who": "n11",
+        "to": [
+         35.3,
+         24.9
+        ],
+        "type": "dreh",
+        "delay": 0.4,
+        "bend": -1
+       },
+       {
+        "who": "b1",
+        "to": [
+         35.9,
+         25.5
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Auch Spieler acht täuscht an",
+      "say": "Spieler acht macht es genauso. Erst weg von Spieler sieben, dann im Bogen zurück in den freien Raum. Da kommt die Ablage hin.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         67,
+         15.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n8",
+        "to": [
+         56,
+         11.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n8",
+        "to": [
+         46.3,
+         15.6
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         46.9,
+         16.2
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 16,
+      "y1": 58.6,
+      "x2": 80,
+      "y2": 58.6,
+      "text": "25 m"
+     },
+     {
+      "x1": 90,
+      "y1": 5,
+      "x2": 90,
+      "y2": 55,
+      "text": "18 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Zwei Minitore zum Abschluss.",
+   "title": "Mit Abschluss ins Minitor",
+   "text": "In zwei Ecken steht jetzt ein Minitor. Der Außenverteidiger spielt durch, bekommt den Ball von Spieler fünf prallen gelassen und schließt direkt ab. Sofort spielt der Trainer den nächsten Ball ein, und es geht auf das andere Minitor.",
+   "board": {
+    "players": [
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 46.3,
+      "y": 15.6,
+      "label": "8"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 35.3,
+      "y": 24.9,
+      "label": "7"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 78,
+      "y": 24,
+      "label": "6"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 77,
+      "y": 41,
+      "label": "9"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 62.5,
+      "y": 39.5,
+      "label": "11"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 18.9,
+      "y": 36,
+      "label": "5"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 29.4,
+      "y": 46.1,
+      "label": "10"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 8,
+      "y": 42,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 46.9,
+      "y": 16.2
+     },
+     {
+      "id": "b2",
+      "x": 8.6,
+      "y": 42.6
+     },
+     {
+      "id": "s1",
+      "x": 8.6,
+      "y": 45.8
+     },
+     {
+      "id": "s2",
+      "x": 6,
+      "y": 46.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Durchspielen und weiterlaufen",
+      "say": "Spieler acht hat die Ablage bekommen. Er spielt durch zu Spieler fünf und läuft sofort weiter Richtung Minitor.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         19.5,
+         25
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         20.1,
+         25.6
+        ],
+        "type": "pass",
+        "delay": 0.4
+       },
+       {
+        "who": "n8",
+        "to": [
+         29,
+         9
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Prallpass in den Lauf",
+      "say": "Spieler fünf lässt den Ball mit einem Kontakt prallen, genau in den Lauf von Spieler acht.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         29.6,
+         9.6
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Abschluss: Punkt",
+      "say": "Spieler acht schießt direkt ins Minitor, und das gibt einen Punkt für Spieler acht. Sofort spielt der Trainer den nächsten Ball zu Spieler fünf. Jetzt geht es auf das andere Minitor.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         16.4,
+         12.5
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b2",
+        "to": [
+         20.1,
+         25.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "goals": [
+     {
+      "x": 16,
+      "y": 13,
+      "side": "left"
+     },
+     {
+      "x": 80,
+      "y": 48.5,
+      "side": "right"
+     }
+    ],
+    "dims": [
+     {
+      "x1": 16,
+      "y1": 58.6,
+      "x2": 80,
+      "y2": 58.6,
+      "text": "25 m"
+     },
+     {
+      "x1": 90,
+      "y1": 5,
+      "x2": 90,
+      "y2": 55,
+      "text": "18 m"
+     }
+    ]
+   }
+  }
+ ]
+}
