@@ -1116,7 +1116,7 @@
        {
         "who": "n9",
         "to": [
-         76,
+         68,
          27.5
         ],
         "type": "lauf",
@@ -1125,7 +1125,7 @@
        {
         "who": "n11",
         "to": [
-         74,
+         67,
          5
         ],
         "type": "lauf",
@@ -1134,7 +1134,7 @@
        {
         "who": "n7",
         "to": [
-         74,
+         67,
          50
         ],
         "type": "lauf",
@@ -1333,7 +1333,7 @@
        {
         "who": "n9",
         "to": [
-         72,
+         66,
          24
         ],
         "type": "lauf",
@@ -1342,7 +1342,7 @@
        {
         "who": "n11",
         "to": [
-         76,
+         67,
          7
         ],
         "type": "lauf",
@@ -1379,7 +1379,7 @@
      },
      {
       "label": "Andribbeln und locken",
-      "say": "Der Innenverteidiger hat Platz und dribbelt an, bis ein Gegner kommt. Kommt einer, wird ein anderer frei: außen der Außenverteidiger, innen der Achter, vorn der Stürmer. Der Stürmer kommt entgegen, und der Flügel geht hinter die Kette. Einer kommt, einer geht.",
+      "say": "Der Innenverteidiger hat Platz und dribbelt an, bis ein Gegner kommt. Kommt einer, wird ein anderer frei: außen der Außenverteidiger, innen der Achter, vorn der Stürmer. Der Stürmer kommt entgegen, und der Flügel geht an die letzte Linie, bereit für den Lauf in die Tiefe. Einer kommt, einer geht.",
       "moves": [
        {
         "who": "n5",
@@ -1420,7 +1420,7 @@
        {
         "who": "n5",
         "to": [
-         72,
+         66,
          24
         ],
         "type": "option",
@@ -1438,8 +1438,8 @@
        {
         "who": "r14",
         "to": [
-         70,
-         22
+         69,
+         24
         ],
         "type": "lauf",
         "delay": 2.4
@@ -1447,8 +1447,8 @@
        {
         "who": "n11",
         "to": [
-         82,
-         10
+         67,
+         11
         ],
         "type": "lauf",
         "delay": 2.4
@@ -1507,13 +1507,13 @@
      },
      {
       "label": "Hinter die Kette",
-      "say": "Jetzt geht alles nach vorn. Der Achter hat den Flügel in der Tiefe, den Außenverteidiger außen und den anderen Achter. Der Flügel ist am schnellsten, also bekommt er den Ball. Mit wenigen Pässen ist das Pressing überspielt.",
+      "say": "Jetzt geht alles nach vorn. Der Achter hat den Flügel in der Tiefe, den Außenverteidiger außen und den anderen Achter. Der Flügel startet erst mit dem Pass, so steht er nicht im Abseits, und bekommt den Ball in den Lauf. Mit wenigen Pässen ist das Pressing überspielt.",
       "moves": [
        {
         "who": "n10",
         "to": [
-         82,
-         10
+         67,
+         11
         ],
         "type": "option"
        },
@@ -1538,11 +1538,20 @@
        {
         "who": "n11",
         "to": [
-         86,
+         84,
          12
         ],
         "type": "lauf",
-        "delay": 0.1
+        "delay": 1.6
+       },
+       {
+        "who": "b1",
+        "to": [
+         84.6,
+         12.6
+        ],
+        "type": "pass",
+        "delay": 1.6
        },
        {
         "who": "n3",
@@ -1551,7 +1560,7 @@
          4
         ],
         "type": "lauf",
-        "delay": 0.1
+        "delay": 1.6
        },
        {
         "who": "n8",
@@ -1560,7 +1569,7 @@
          38
         ],
         "type": "lauf",
-        "delay": 0.1
+        "delay": 1.6
        },
        {
         "who": "n9",
@@ -1569,7 +1578,7 @@
          24
         ],
         "type": "lauf",
-        "delay": 0.1
+        "delay": 1.6
        },
        {
         "who": "n7",
@@ -1578,16 +1587,7 @@
          46
         ],
         "type": "lauf",
-        "delay": 0.1
-       },
-       {
-        "who": "b1",
-        "to": [
-         86.6,
-         12.6
-        ],
-        "type": "pass",
-        "after": true
+        "delay": 1.6
        },
        {
         "who": "r13",
@@ -2189,7 +2189,7 @@
      },
      {
       "label": "Auf der freien Seite",
-      "say": "Der Außenverteidiger hat drei Wege: die Linie entlang, innen den Achter oder den Stürmer. Er spielt den Achter an, der zum Ball kommt. Einer kommt, einer geht: Dafür startet der Flügelspieler in die Tiefe, und die ganze Mannschaft schiebt auf die neue Seite.",
+      "say": "Der Außenverteidiger hat drei Wege: die Linie entlang, innen den Achter oder den Stürmer. Er spielt den Achter an, der zum Ball kommt. Einer kommt, einer geht: Dafür geht der Flügelspieler an die letzte Linie, und die ganze Mannschaft schiebt auf die neue Seite.",
       "moves": [
        {
         "who": "n3",
@@ -2229,7 +2229,7 @@
        {
         "who": "n11",
         "to": [
-         85,
+         77,
          6
         ],
         "type": "lauf",
@@ -2238,7 +2238,7 @@
        {
         "who": "n9",
         "to": [
-         78,
+         77,
          22
         ],
         "type": "lauf",
@@ -2293,13 +2293,21 @@
      },
      {
       "label": "Angriff, wo der Gegner nicht ist",
-      "say": "Der Achter steckt durch auf den Flügel. So greifen wir dort an, wo der Gegner gerade nicht ist.",
+      "say": "Mit dem Pass startet der Flügel, er steht nicht im Abseits. Der Achter steckt durch in seinen Lauf. So greifen wir dort an, wo der Gegner gerade nicht ist.",
       "moves": [
+       {
+        "who": "n11",
+        "to": [
+         86,
+         8
+        ],
+        "type": "lauf"
+       },
        {
         "who": "b1",
         "to": [
-         85.6,
-         6.6
+         86.6,
+         8.6
         ],
         "type": "pass"
        },
@@ -2378,35 +2386,35 @@
      {
       "id": "n10",
       "team": "a",
-      "x": 64,
-      "y": 15,
+      "x": 62,
+      "y": 17,
       "label": "10"
      },
      {
       "id": "n8",
       "team": "a",
-      "x": 64,
+      "x": 62,
       "y": 40,
       "label": "8"
      },
      {
       "id": "n11",
       "team": "a",
-      "x": 80,
+      "x": 68,
       "y": 6,
       "label": "11"
      },
      {
       "id": "n7",
       "team": "a",
-      "x": 80,
+      "x": 68,
       "y": 49,
       "label": "7"
      },
      {
       "id": "n9",
       "team": "a",
-      "x": 80,
+      "x": 68,
       "y": 27.5,
       "label": "9"
      },
@@ -2537,7 +2545,7 @@
        {
         "who": "n4",
         "to": [
-         64,
+         62,
          40
         ],
         "type": "option",
@@ -2623,7 +2631,7 @@
        {
         "who": "n6",
         "to": [
-         64,
+         62,
          40
         ],
         "type": "option",
@@ -2659,8 +2667,8 @@
        {
         "who": "n7",
         "to": [
-         84,
-         49
+         72,
+         50
         ],
         "type": "lauf",
         "delay": 1.9
@@ -2690,8 +2698,8 @@
        {
         "who": "n2",
         "to": [
-         84,
-         49
+         72,
+         50
         ],
         "type": "option",
         "delay": 1.2
@@ -2812,7 +2820,7 @@
        {
         "who": "n11",
         "to": [
-         84,
+         71,
          8
         ],
         "type": "lauf",
@@ -2831,12 +2839,12 @@
      },
      {
       "label": "Und verlagern",
-      "say": "Auf der anderen Seite ist alles frei. Der Achter verlagert sofort auf den Flügel, der schon in die Tiefe startet. Überspielen, klatschen lassen, verlagern: So kommen wir dorthin, wo der Gegner nicht ist.",
+      "say": "Auf der anderen Seite ist alles frei. Der Achter verlagert sofort auf den Flügel, der genau mit dem Pass in die Tiefe startet, also nicht im Abseits steht. Überspielen, klatschen lassen, verlagern: So kommen wir dorthin, wo der Gegner nicht ist.",
       "moves": [
        {
         "who": "n10",
         "to": [
-         84,
+         71,
          8
         ],
         "type": "option"
@@ -2860,13 +2868,22 @@
         "after": true
        },
        {
+        "who": "n11",
+        "to": [
+         84,
+         9
+        ],
+        "type": "lauf",
+        "delay": 1.6
+       },
+       {
         "who": "b1",
         "to": [
          84.6,
-         8.6
+         9.6
         ],
         "type": "pass",
-        "after": true
+        "delay": 1.6
        },
        {
         "who": "n9",
@@ -2875,7 +2892,7 @@
          22
         ],
         "type": "lauf",
-        "delay": 1.9
+        "delay": 1.6
        },
        {
         "who": "n7",
@@ -2884,7 +2901,7 @@
          40
         ],
         "type": "lauf",
-        "delay": 1.9
+        "delay": 1.6
        },
        {
         "who": "n8",
@@ -2893,16 +2910,16 @@
          44
         ],
         "type": "lauf",
-        "delay": 1.9
+        "delay": 1.6
        },
        {
         "who": "r13",
         "to": [
          82,
-         10
+         12
         ],
         "type": "lauf",
-        "delay": 1.9
+        "delay": 2.2
        },
        {
         "who": "r14",
@@ -2911,7 +2928,7 @@
          22
         ],
         "type": "lauf",
-        "delay": 1.9
+        "delay": 2.2
        }
       ]
      }
