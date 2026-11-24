@@ -1,0 +1,877 @@
+{
+ "title": "Doppel-Rondo mit Übergabe",
+ "code": "UE-375",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel",
+  "Umschalten"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 11,
+ "players_max": 11,
+ "field_size": "18 x 14 m",
+ "description": "Links und rechts läuft je ein Rondo drei gegen eins, in der Mitte wartet Team Rot. Nach fünf Pässen spielt das Team mit Ball über einen Springer ins andere Feld, und dort presst sofort ein neuer Verteidiger. Erobert Team Rot den Ball, tauscht es mit den drei Spielern, die ihn verloren haben.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 14 Metern, in drei mal drei Zonen geteilt. Gespielt wird in der mittleren Reihe. Oben und unten in der Mitte steht je ein Springer.",
+  "Verteilen: Drei Teams zu dritt. Links und rechts stehen je drei Spieler von Team Neon, links ist der Ball. Team Rot wartet in der Mitte. Der Trainer steht mit Ersatzbällen am Rand.",
+  "Ablauf: Ein Spieler von Team Rot presst im Feld mit Ball, dort heißt es drei gegen eins. Nach fünf Pässen geht der Ball über einen Springer ins andere Feld. Ist er drüben, geht dort ein neuer Verteidiger rein, und der erste läuft zurück in die Mitte.",
+  "Wechsel: Erobert Team Rot den Ball, tauscht es mit den drei Spielern, die ihn verloren haben. Die Springer werden alle paar Minuten getauscht, damit jeder die Rolle einmal spielt."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Breit stehen und die ganze Zone nutzen",
+  "Kurz und scharf passen",
+  "Springer nimmt mit dem hinteren Fuß an und spielt gleich weiter",
+  "Ball weg? Sofort umschalten"
+ ],
+ "materials": [
+  "Hütchen für neun Zonen",
+  "2 Minitore für die Steigerung",
+  "Leibchen in drei Farben",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Doppel-Rondo mit Übergabe. Zwei Rondos drei gegen eins, und nach fünf Pässen wandert der Ball über einen Springer ins andere Feld.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 9,
+    "y": 4,
+    "w": 80,
+    "h": 47
+   },
+   {
+    "type": "line",
+    "x1": 35.67,
+    "y1": 4,
+    "x2": 35.67,
+    "y2": 51,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 62.33,
+    "y1": 4,
+    "x2": 62.33,
+    "y2": 51,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 9,
+    "y1": 19.67,
+    "x2": 89,
+    "y2": 19.67,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 9,
+    "y1": 35.33,
+    "x2": 89,
+    "y2": 35.33,
+    "dashed": true
+   }
+  ],
+  "goals": [],
+  "cones": [],
+  "players": [
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 12.5,
+    "y": 27,
+    "label": "7"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 21.5,
+    "y": 32.5,
+    "label": "6"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 31,
+    "y": 23,
+    "label": "10"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 67,
+    "y": 23,
+    "label": "8"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 76,
+    "y": 32,
+    "label": "4"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 85,
+    "y": 26,
+    "label": "11"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 40,
+    "y": 30,
+    "label": "3"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 49,
+    "y": 24,
+    "label": "9"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 58,
+    "y": 31,
+    "label": "5"
+   },
+   {
+    "id": "f1",
+    "team": "t",
+    "x": 49,
+    "y": 7.5,
+    "label": "F"
+   },
+   {
+    "id": "f2",
+    "team": "t",
+    "x": 49,
+    "y": 44,
+    "label": "F"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 80,
+    "y": 55.3,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 13.1,
+    "y": 27.6
+   },
+   {
+    "id": "s1",
+    "x": 83.5,
+    "y": 55.8
+   },
+   {
+    "id": "s2",
+    "x": 86,
+    "y": 55.8
+   }
+  ],
+  "steps": [
+   {
+    "label": "Drei gegen eins im linken Feld",
+    "say": "Links haben Spieler sieben, sechs und zehn den Ball. Aus der Mitte geht Spieler drei rein und presst allein. Fünf Pässe muss das Team in seinem Feld schaffen.",
+    "moves": [
+     {
+      "who": "r3",
+      "to": [
+       20,
+       26
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       22.1,
+       33.1
+      ],
+      "type": "pass",
+      "delay": 0.4
+     },
+     {
+      "who": "b1",
+      "to": [
+       31.6,
+       23.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Fünf Pässe, dann über den Springer",
+    "say": "Der fünfte Pass ist da. Spieler zehn spielt hoch zum Springer. Der nimmt mit dem hinteren Fuß an und spielt gleich weiter ins rechte Feld zu Spieler acht. Jetzt geht Spieler fünf dort rein, und Spieler drei läuft zurück in die Mitte.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       49.6,
+       8.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       67.6,
+       23.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r5",
+      "to": [
+       71,
+       30
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r3",
+      "to": [
+       40,
+       30
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     }
+    ]
+   },
+   {
+    "label": "Rechts das Gleiche",
+    "say": "Rechts lassen Spieler acht, vier und elf den Ball laufen. Spieler fünf jagt ihn.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       85.6,
+       26.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r5",
+      "to": [
+       81,
+       22.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       76.6,
+       32.6
+      ],
+      "type": "pass",
+      "delay": 1.2
+     }
+    ]
+   },
+   {
+    "label": "Ballgewinn: Rollen tauschen",
+    "say": "Spieler vier will zurück zu Spieler acht. Spieler fünf läuft in den Pass und hat den Ball. Jetzt wird getauscht. Spieler neun und Spieler drei kommen dazu, Team Rot spielt rechts weiter. Spieler acht, vier und elf gehen in die Mitte und sind die neuen Verteidiger.",
+    "moves": [
+     {
+      "who": "r5",
+      "to": [
+       72.4,
+       28.4
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       73,
+       29
+      ],
+      "type": "pass",
+      "delay": 0.2
+     },
+     {
+      "who": "n8",
+      "to": [
+       58,
+       22
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n4",
+      "to": [
+       49,
+       33
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n11",
+      "to": [
+       64,
+       34
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r9",
+      "to": [
+       67,
+       16
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r9",
+      "to": [
+       84,
+       22
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r3",
+      "to": [
+       56,
+       40
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r3",
+      "to": [
+       80,
+       36
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 9,
+    "y1": 58.6,
+    "x2": 89,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 94,
+    "y1": 4,
+    "x2": 94,
+    "y2": 51,
+    "text": "14 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Die ganze Zone nutzen.",
+   "title": "Die ganze Zone nutzen",
+   "text": "Stehen die drei eng zusammen, hat es der Verteidiger leicht. Darum gehen sie auseinander, bis an die Linien ihrer Zone. Dann muss er weite Wege gehen, und es gibt immer einen freien Passweg.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 12.5,
+      "y": 27,
+      "label": "7"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 21.5,
+      "y": 32.5,
+      "label": "6"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 31,
+      "y": 23,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 67,
+      "y": 23,
+      "label": "8"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 76,
+      "y": 32,
+      "label": "4"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 85,
+      "y": 26,
+      "label": "11"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 40,
+      "y": 30,
+      "label": "3"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 49,
+      "y": 24,
+      "label": "9"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 58,
+      "y": 31,
+      "label": "5"
+     },
+     {
+      "id": "f1",
+      "team": "t",
+      "x": 49,
+      "y": 7.5,
+      "label": "F"
+     },
+     {
+      "id": "f2",
+      "team": "t",
+      "x": 49,
+      "y": 44,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 80,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 13.1,
+      "y": 27.6
+     },
+     {
+      "id": "s1",
+      "x": 83.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 86,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Weit auseinander",
+      "say": "Spieler drei kommt ins Feld. Sofort gehen Spieler sieben, sechs und zehn auseinander, bis an die Linien ihrer Zone.",
+      "moves": [
+       {
+        "who": "r3",
+        "to": [
+         23,
+         27.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n7",
+        "to": [
+         12,
+         21.8
+        ],
+        "type": "dribbling",
+        "delay": 0.2,
+        "ball": "b1"
+       },
+       {
+        "who": "n6",
+        "to": [
+         23,
+         34
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n10",
+        "to": [
+         33.5,
+         21.8
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Am Verteidiger vorbei",
+      "say": "Spieler drei läuft Spieler sieben an und macht den Weg zu Spieler zehn zu. Also geht der Ball runter zu Spieler sechs und von dort hoch zu Spieler zehn. Der Verteidiger läuft nur hinterher.",
+      "moves": [
+       {
+        "who": "r3",
+        "to": [
+         17.5,
+         21.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         23.6,
+         34.6
+        ],
+        "type": "pass",
+        "delay": 0.5
+       },
+       {
+        "who": "b1",
+        "to": [
+         34.1,
+         22.4
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "r3",
+        "to": [
+         27,
+         25
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 9,
+      "y1": 58.6,
+      "x2": 89,
+      "y2": 58.6,
+      "text": "18 m"
+     },
+     {
+      "x1": 94,
+      "y1": 4,
+      "x2": 94,
+      "y2": 51,
+      "text": "14 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Minitore und drei gegen drei.",
+   "title": "Minitore, drei gegen drei",
+   "text": "Oben und unten in der Mitte steht je ein Minitor. Erobert Team Rot den Ball, kontert es sofort zu dritt. Ein Spieler aus jedem Passteam und ein Springer verteidigen das Minitor. Trifft Team Rot, tauscht es mit dem Team, das den Ball verloren hat. Holen die drei Verteidiger den Ball zurück, bleibt Team Rot in der Mitte.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 12.5,
+      "y": 27,
+      "label": "7"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 21.5,
+      "y": 32.5,
+      "label": "6"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 31,
+      "y": 23,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 67,
+      "y": 23,
+      "label": "8"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 76,
+      "y": 32,
+      "label": "4"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 85,
+      "y": 26,
+      "label": "11"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 40,
+      "y": 30,
+      "label": "3"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 49,
+      "y": 24,
+      "label": "9"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 58,
+      "y": 31,
+      "label": "5"
+     },
+     {
+      "id": "f1",
+      "team": "t",
+      "x": 49,
+      "y": 7.5,
+      "label": "F"
+     },
+     {
+      "id": "f2",
+      "team": "t",
+      "x": 49,
+      "y": 44,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 80,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 13.1,
+      "y": 27.6
+     },
+     {
+      "id": "s1",
+      "x": 83.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 86,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Ballgewinn im linken Feld",
+      "say": "Spieler drei presst links. Spieler sieben will zu Spieler zehn, aber Spieler drei geht dazwischen und hat den Ball.",
+      "moves": [
+       {
+        "who": "r3",
+        "to": [
+         22,
+         25.1
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         22.6,
+         25.7
+        ],
+        "type": "pass",
+        "delay": 0.6
+       }
+      ]
+     },
+     {
+      "label": "Drei gegen drei aufs Minitor",
+      "say": "Jetzt geht es schnell. Spieler drei dribbelt los, Spieler neun und Spieler fünf starten Richtung Minitor unten. Spieler sechs, Spieler vier und der Springer laufen zurück und verteidigen.",
+      "moves": [
+       {
+        "who": "r3",
+        "to": [
+         30,
+         36
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "r9",
+        "to": [
+         44,
+         38
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "r5",
+        "to": [
+         58,
+         41
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n6",
+        "to": [
+         36,
+         44
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n4",
+        "to": [
+         65,
+         45
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "f2",
+        "to": [
+         44,
+         47.5
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Abschluss: Punkt",
+      "say": "Spieler drei spielt zu Spieler neun, und der legt quer auf Spieler fünf. Spieler fünf schiebt ins Minitor, und das gibt einen Punkt für Team Rot. Danach tauscht Team Rot mit dem Team, das den Ball verloren hat.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         44.6,
+         38.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         58.6,
+         41.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         51,
+         50.7
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "goals": [
+     {
+      "x": 49,
+      "y": 4,
+      "side": "top"
+     },
+     {
+      "x": 49,
+      "y": 51,
+      "side": "bottom"
+     }
+    ],
+    "dims": [
+     {
+      "x1": 9,
+      "y1": 58.6,
+      "x2": 89,
+      "y2": 58.6,
+      "text": "18 m"
+     },
+     {
+      "x1": 94,
+      "y1": 4,
+      "x2": 94,
+      "y2": 51,
+      "text": "14 m"
+     }
+    ]
+   }
+  }
+ ]
+}

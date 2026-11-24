@@ -1,0 +1,633 @@
+{
+ "title": "Puppe antippen, Flanke klären",
+ "code": "UE-386",
+ "kind": "Übungsform",
+ "focuses": [
+  "Verteidigen",
+  "Schnelligkeit",
+  "Zusammenspiel"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 8,
+ "players_max": 12,
+ "field_size": "25 x 35 m",
+ "description": "Ein Verteidiger von Team Neon sprintet vom Tor weg zur Puppe und tippt sie an. Das ist das Zeichen für den Trainer, der durch zwei Stangen auf den Flügel spielt. Der Flügelspieler von Team Rot nimmt den Ball im Lauf mit und flankt, der Verteidiger sprintet zurück und klärt zusammen mit dem Torwart. Weit geklärt gibt einen Punkt für Team Neon.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 25 mal 35 Metern mit einem großen Tor an der langen Seite. Bei den Verteidigern steht eine Puppe, auf dem Weg zum Flügel zwei Stangen, durch die der Trainer passt.",
+  "Verteilen: Ein Verteidiger von Team Neon steht vor dem Tor, die anderen warten an der Puppe. Die Flügelspieler von Team Rot warten außen. Ein Torwart steht im Tor, ein zweiter wartet daneben. Der Trainer steht mit vielen Bällen an der Seitenlinie.",
+  "Ablauf: Der Verteidiger sprintet zur Puppe und tippt sie an. Der Trainer spielt durch die Stangen in den Lauf des Flügelspielers, der einmal mitnimmt und flankt. Der Verteidiger sprintet zurück vors Tor und klärt zusammen mit dem Torwart.",
+  "Wertung und Wechsel: Weit geklärt gibt einen Punkt für Team Neon. Kommt die Flanke ungeklärt vors Tor, gibt das einen Punkt für Team Rot. Danach sind der nächste Verteidiger und der nächste Flügelspieler dran, die Torhüter wechseln nach drei Flanken."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Puppe antippen, dann Vollgas zurück vors Tor",
+  "Torwart und Verteidiger sprechen: Wer geht?",
+  "Hoch und weit klären, im Zweifel ins Aus",
+  "Eng an den Stürmer, Körper rein"
+ ],
+ "materials": [
+  "1 Großfeldtor",
+  "1 Puppe",
+  "2 Stangen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Puppe antippen, Flanke klären. Ein Verteidiger sprintet raus zur Puppe und sofort zurück vors Tor, denn vom Flügel kommt die Flanke. Die klärt er zusammen mit dem Torwart.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 9,
+    "y": 4,
+    "w": 78,
+    "h": 47
+   }
+  ],
+  "goals": [
+   {
+    "x": 27.5,
+    "y": 4,
+    "side": "top",
+    "size": "gross"
+   }
+  ],
+  "cones": [
+   {
+    "x": 29,
+    "y": 40.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 65.6,
+    "y": 33.1,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 73.6,
+    "y": 37.4,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n1",
+    "team": "a",
+    "x": 27.5,
+    "y": 8.5,
+    "label": "TW"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 38,
+    "y": 24,
+    "label": "6"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 12,
+    "y": 44,
+    "label": "4"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 21,
+    "y": 47,
+    "label": "5"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 82,
+    "y": 30,
+    "label": "7"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 84,
+    "y": 47,
+    "label": "11"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 58,
+    "y": 55.3,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 58.6,
+    "y": 55.9
+   },
+   {
+    "id": "s1",
+    "x": 62,
+    "y": 55.8
+   },
+   {
+    "id": "s2",
+    "x": 64.5,
+    "y": 55.8
+   }
+  ],
+  "steps": [
+   {
+    "label": "Sprint zur Puppe",
+    "say": "Spieler sechs steht vor dem Tor und sprintet raus zur Puppe. Er tippt sie an. Das ist das Zeichen für den Trainer.",
+    "moves": [
+     {
+      "who": "n6",
+      "to": [
+       31.5,
+       38
+      ],
+      "type": "lauf"
+     }
+    ]
+   },
+   {
+    "label": "Pass durch die Stangen",
+    "say": "Jetzt spielt der Trainer flach durch die zwei Stangen, und Spieler sieben läuft in den Ball. Spieler sechs dreht sofort um. Er sprintet zurück vors Tor, an den kurzen Pfosten.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       80.6,
+       14.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r7",
+      "to": [
+       80,
+       14
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n6",
+      "to": [
+       34,
+       15
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Mitnehmen und flanken",
+    "say": "Spieler sieben nimmt den Ball einmal mit. Spieler sechs schaut zu ihm und liest die Flanke früh. Der Torwart deckt den kurzen Pfosten und ruft laut, wer geht. Dann kommt die Flanke.",
+    "moves": [
+     {
+      "who": "r7",
+      "to": [
+       77,
+       10.5
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n6",
+      "to": [
+       56,
+       12.5
+      ],
+      "type": "blick",
+      "delay": 0.6
+     },
+     {
+      "who": "b1",
+      "to": [
+       34.6,
+       15.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Weit geklärt: Punkt",
+    "say": "Spieler sechs geht entschlossen hin und köpft den Ball weit raus ins Aus, und das gibt einen Punkt für Team Neon. Kommt die Flanke ungeklärt vors Tor, gibt das einen Punkt für Team Rot. Danach sprintet Spieler vier zur Puppe, und Spieler elf bekommt den nächsten Pass.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       44,
+       54
+      ],
+      "type": "pass"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 9,
+    "y1": 58.6,
+    "x2": 87,
+    "y2": 58.6,
+    "text": "35 m"
+   },
+   {
+    "x1": 93,
+    "y1": 4,
+    "x2": 93,
+    "y2": 51,
+    "text": "25 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Ein Stürmer wartet vor dem Tor auf die Flanke.",
+   "title": "Mit Stürmer vor dem Tor",
+   "text": "Ohne Sprint zur Puppe, dafür steht ein Stürmer von Team Rot vor dem Tor und will die Flanke verwerten. Der Verteidiger schaut, wo der Stürmer hinläuft, und geht eng an ihn heran. Mit dem Körper nimmt er ihm den Schwung und ist vor ihm am Ball.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 27.5,
+      "y": 8.5,
+      "label": "TW"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 38,
+      "y": 24,
+      "label": "6"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 12,
+      "y": 44,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 21,
+      "y": 47,
+      "label": "5"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 82,
+      "y": 30,
+      "label": "7"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 84,
+      "y": 47,
+      "label": "11"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 24,
+      "y": 30,
+      "label": "9"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 58,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 58.6,
+      "y": 55.9
+     },
+     {
+      "id": "s1",
+      "x": 62,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 64.5,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Erst der Stürmer, dann der Flügel",
+      "say": "Der Trainer spielt durch die Stangen auf Spieler sieben. Spieler sechs schaut zuerst, wo Spieler neun steht, dann rüber zum Flügel.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         80.6,
+         14.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r7",
+        "to": [
+         80,
+         14
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n6",
+        "to": [
+         59.5,
+         19
+        ],
+        "type": "blick",
+        "delay": 0.3,
+        "von": [
+         24,
+         30
+        ],
+        "dauer": 1.3
+       }
+      ]
+     },
+     {
+      "label": "Eng ran an den Stürmer",
+      "say": "Spieler neun startet zum kurzen Pfosten. Spieler sechs geht sofort mit und bleibt eng an ihm dran, zwischen Stürmer und Tor. Außen nimmt Spieler sieben den Ball mit.",
+      "moves": [
+       {
+        "who": "r7",
+        "to": [
+         77,
+         10.5
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "r9",
+        "to": [
+         30,
+         17
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n6",
+        "to": [
+         33.5,
+         13
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Vorn am Ball: Punkt",
+      "say": "Die Flanke kommt an den kurzen Pfosten. Spieler sechs ist vor Spieler neun am Ball und köpft weit raus, und das gibt einen Punkt für Team Neon. Trifft Spieler neun, gibt das einen Punkt für Team Rot. Danach ist Spieler vier mit dem nächsten Stürmer dran.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         34.1,
+         13.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         46,
+         54
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Zwei Stürmer gegen einen Verteidiger.",
+   "title": "Zwei gegen einen vor dem Tor",
+   "text": "Zwei Stürmer von Team Rot gegen einen Verteidiger, dazu der Torwart. Einer läuft zum kurzen, einer zum langen Pfosten. Der Flügelspieler flankt mal kurz, mal lang. Verteidiger und Torwart sprechen ab, wer welchen Ball nimmt. Nach jedem Angriff wechselt ein Stürmer raus.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 27.5,
+      "y": 8.5,
+      "label": "TW"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 38,
+      "y": 24,
+      "label": "6"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 12,
+      "y": 44,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 21,
+      "y": 47,
+      "label": "5"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 82,
+      "y": 30,
+      "label": "7"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 84,
+      "y": 47,
+      "label": "11"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 29,
+      "y": 31,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 16,
+      "y": 26,
+      "label": "10"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 58,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 58.6,
+      "y": 55.9
+     },
+     {
+      "id": "s1",
+      "x": 62,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 64.5,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Kurz und lang",
+      "say": "Der Trainer spielt auf Spieler sieben. Vorn laufen beide Stürmer los, Spieler neun zum kurzen Pfosten, Spieler zehn zum langen. Spieler sechs bleibt am kurzen Pfosten und schaut, wo Spieler zehn hinläuft.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         80.6,
+         14.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r7",
+        "to": [
+         80,
+         14
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "r9",
+        "to": [
+         32,
+         19
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "r10",
+        "to": [
+         18,
+         15
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "n6",
+        "to": [
+         36,
+         18
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "n6",
+        "to": [
+         18,
+         15
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Torwart fängt: Punkt",
+      "say": "Spieler sieben nimmt mit und flankt lang an den zweiten Pfosten. Der Torwart ruft laut, kommt raus und fängt den Ball vor Spieler zehn. Das gibt einen Punkt für Team Neon. Trifft ein Stürmer, gibt das einen Punkt für Team Rot. Danach wechselt ein Stürmer raus, und Spieler elf bekommt den nächsten Pass.",
+      "moves": [
+       {
+        "who": "r7",
+        "to": [
+         77,
+         10.5
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n1",
+        "to": [
+         21,
+         12
+        ],
+        "type": "lauf",
+        "delay": 0.9
+       },
+       {
+        "who": "b1",
+        "to": [
+         21.6,
+         12.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
