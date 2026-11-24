@@ -1,0 +1,646 @@
+{
+ "title": "Anlaufen an vier Puppen",
+ "code": "UE-355",
+ "kind": "Übungsform",
+ "focuses": [
+  "Verteidigen",
+  "Passspiel",
+  "Schnelligkeit"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 8,
+ "players_max": 12,
+ "field_size": "9 x 9 m",
+ "description": "Eine kurze Technikübung, die das Anlaufen aktiviert. Vier Puppen stehen als Raute, an jeder warten zwei oder drei Spieler. Der Ball läuft von Puppe zu Puppe, und bei jedem Pass sprintet der Spieler von der Puppe gegenüber los und läuft den Annehmenden an. Wer gepasst hat, läuft zur Puppe rechts von sich.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 9 mal 9 Metern. Vier Puppen stehen als Raute, je eine links, oben, rechts und unten.",
+  "Verteilen: An jeder Puppe stehen drei Spieler, der Erste vor der Puppe. Der Trainer steht mit Bällen außen an einer Ecke.",
+  "Ablauf: Der Trainer spielt den Ersten an der Puppe links an. Sofort läuft der Erste von der Puppe gegenüber an. Der Annehmende spielt mit dem zweiten Kontakt zur Puppe links von sich und läuft zur Puppe rechts von sich. Jeder Pass löst den Nächsten gegenüber aus.",
+  "Wechsel: Der Anläufer stellt sich danach an der Puppe an, an der er angelaufen hat. Gezählt wird nicht, der Ball läuft ohne Pause im Kreis. Nach ein paar Minuten wird die Passrichtung gewechselt."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Die ersten Meter mit Vollgas anlaufen",
+  "Kurz vor ihm abbremsen, Knie beugen, seitlich stellen",
+  "Erster Kontakt zur Seite, zweiter Kontakt ist der Pass",
+  "Auf den Zehen bleiben und auf den Ball schauen"
+ ],
+ "materials": [
+  "4 Puppen",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Anlaufen an vier Puppen. Der Ball läuft im Kreis von Puppe zu Puppe. Bei jedem Pass sprintet einer von gegenüber los und setzt den Annehmenden unter Druck.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   }
+  ],
+  "goals": [],
+  "cones": [
+   {
+    "x": 32,
+    "y": 30,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 50,
+    "y": 12,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 68,
+    "y": 30,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 50,
+    "y": 48,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 37.5,
+    "y": 33,
+    "label": "4"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 26.5,
+    "y": 37,
+    "label": "3"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 53,
+    "y": 17.5,
+    "label": "11"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 62,
+    "y": 7,
+    "label": "9"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 63,
+    "y": 27,
+    "label": "5"
+   },
+   {
+    "id": "n14",
+    "team": "a",
+    "x": 75,
+    "y": 36,
+    "label": "14"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 54.5,
+    "y": 44.5,
+    "label": "10"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 44,
+    "y": 54.5,
+    "label": "8"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 80,
+    "y": 12,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 80.6,
+    "y": 12.6
+   },
+   {
+    "id": "s1",
+    "x": 83.5,
+    "y": 12.6
+   },
+   {
+    "id": "s2",
+    "x": 86,
+    "y": 12.6
+   }
+  ],
+  "steps": [
+   {
+    "label": "Trainer spielt an, gegenüber läuft an",
+    "say": "Der Trainer spielt Spieler vier an der Puppe links an. Im selben Moment sprintet Spieler fünf von der Puppe gegenüber los. Die ersten Meter mit Vollgas, kurz vor Spieler vier bremst er ab.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       38.1,
+       33.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n5",
+      "to": [
+       45.5,
+       32
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Ein Kontakt zur Seite, Pass nach links",
+    "say": "Spieler vier nimmt den Ball zur Seite mit und spielt zur Puppe links von sich, zu Spieler elf. Danach läuft er zur Puppe rechts von sich und stellt sich dort an.",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       39,
+       29.5
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       53.6,
+       18.1
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n4",
+      "to": [
+       41,
+       50
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Der Pass löst den Nächsten aus",
+    "say": "Jetzt hat Spieler elf den Ball, also läuft Spieler zehn von unten an. Spieler elf legt sich den Ball vor und spielt weiter zu Spieler vierzehn, der vor seine Puppe kommt. Spieler fünf stellt sich hinten links an.",
+    "moves": [
+     {
+      "who": "n10",
+      "to": [
+       52,
+       25.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n5",
+      "to": [
+       27,
+       20
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "n14",
+      "to": [
+       64.5,
+       35.5
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "n11",
+      "to": [
+       58,
+       19
+      ],
+      "type": "dribbling",
+      "delay": 0.3,
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       65.1,
+       36.1
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Weiter im Kreis, keine Pause",
+    "say": "Spieler drei sprintet zu Spieler vierzehn, und Spieler elf läuft zur Puppe rechts von sich. Punkte gibt es hier keine. Der Ball läuft einfach weiter im Kreis, und als Nächster spielt Spieler vierzehn nach links.",
+    "moves": [
+     {
+      "who": "n3",
+      "to": [
+       57,
+       35
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n11",
+      "to": [
+       36,
+       19
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n11",
+      "to": [
+       24.5,
+       27.5
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "9 m"
+   },
+   {
+    "x1": 91,
+    "y1": 5,
+    "x2": 91,
+    "y2": 55,
+    "text": "9 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Wach bleiben, auf den Zehen und den Ball im Blick.",
+   "title": "Auf den Zehen, Ball im Blick",
+   "text": "Wer an der Puppe wartet, steht nicht einfach herum. Er bleibt auf den Zehen und schaut auf den Ball. So sieht er früh, wohin der Pass geht, und ist sofort weg. Kurz vor dem Gegner bremst er ab, beugt die Knie und stellt sich seitlich.",
+   "board": {
+    "players": [
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 37.5,
+      "y": 33,
+      "label": "4"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 26.5,
+      "y": 37,
+      "label": "3"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 53,
+      "y": 17.5,
+      "label": "11"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 62,
+      "y": 7,
+      "label": "9"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 63,
+      "y": 27,
+      "label": "5"
+     },
+     {
+      "id": "n14",
+      "team": "a",
+      "x": 75,
+      "y": 36,
+      "label": "14"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 54.5,
+      "y": 44.5,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 44,
+      "y": 54.5,
+      "label": "8"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 80,
+      "y": 12,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 38.1,
+      "y": 33.6
+     },
+     {
+      "id": "s1",
+      "x": 83.5,
+      "y": 12.6
+     },
+     {
+      "id": "s2",
+      "x": 86,
+      "y": 12.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Auf den Zehen, Blick zum Ball",
+      "say": "Spieler zehn wartet unten. Er steht auf den Zehen und schaut auf Spieler vier mit dem Ball. Der spielt nach oben zu Spieler elf, und Spieler zehn ist sofort weg.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         37.5,
+         33
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         53.6,
+         18.1
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n10",
+        "to": [
+         53.5,
+         27.5
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Abbremsen und seitlich stellen",
+      "say": "Die letzten Schritte werden kurz. Spieler zehn beugt die Knie und stellt sich seitlich. Spieler elf nimmt den Ball zur Seite mit, und Spieler zehn geht den Schritt mit.",
+      "moves": [
+       {
+        "who": "n11",
+        "to": [
+         58,
+         19
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n10",
+        "to": [
+         55.5,
+         25.5
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Der Annehmende sucht sich die Passseite selbst aus.",
+   "title": "Passseite selbst wählen",
+   "text": "Wer den Ball hat, entscheidet selbst, ob er nach links oder nach rechts spielt. Danach läuft er immer in die andere Richtung. Die Wartenden wissen also nicht mehr, wer als Nächstes dran ist. Sie müssen den Ball beobachten und schnell reagieren.",
+   "board": {
+    "players": [
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 37.5,
+      "y": 33,
+      "label": "4"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 26.5,
+      "y": 37,
+      "label": "3"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 53,
+      "y": 17.5,
+      "label": "11"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 62,
+      "y": 7,
+      "label": "9"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 63,
+      "y": 27,
+      "label": "5"
+     },
+     {
+      "id": "n14",
+      "team": "a",
+      "x": 75,
+      "y": 36,
+      "label": "14"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 54.5,
+      "y": 44.5,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 44,
+      "y": 54.5,
+      "label": "8"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 80,
+      "y": 12,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 80.6,
+      "y": 12.6
+     },
+     {
+      "id": "s1",
+      "x": 83.5,
+      "y": 12.6
+     },
+     {
+      "id": "s2",
+      "x": 86,
+      "y": 12.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Trainer spielt an, Spieler fünf läuft an",
+      "say": "Wie vorher spielt der Trainer zu Spieler vier, und Spieler fünf läuft von gegenüber an.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         38.1,
+         33.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n5",
+        "to": [
+         45.5,
+         32
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Andere Seite, andere Richtung",
+      "say": "Spieler vier spielt diesmal nach unten zu Spieler zehn. Danach läuft er in die andere Richtung, zur Puppe oben. Spieler elf schaut genau hin, denn jetzt ist er gefragt.",
+      "moves": [
+       {
+        "who": "n11",
+        "to": [
+         38,
+         34
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "n4",
+        "to": [
+         40,
+         36
+        ],
+        "type": "dribbling",
+        "delay": 0.3,
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         55.1,
+         45.1
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n4",
+        "to": [
+         40,
+         12
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Spieler elf reagiert",
+      "say": "Der Ball ist unten, also sprintet Spieler elf von oben los und läuft Spieler zehn an. Wer zu spät schaut, kommt zu spät.",
+      "moves": [
+       {
+        "who": "n11",
+        "to": [
+         54,
+         37
+        ],
+        "type": "lauf"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,1101 @@
+{
+ "title": "Drei Zonen, als Block pressen",
+ "code": "UE-356",
+ "kind": "Spielform",
+ "focuses": [
+  "Verteidigen",
+  "Umschalten",
+  "Zusammenspiel"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 22,
+ "players_max": 22,
+ "field_size": "65 x 100 m",
+ "description": "Elf gegen elf auf dem ganzen Platz, eingeteilt in drei Zonen. Vorn spielen die drei Spitzen von Team Neon drei gegen drei gegen die Abwehr von Team Rot. Erobert Team Rot den Ball, baut es im Mittelfeld sieben gegen sieben auf, und Team Neon presst als ganzer Block. Nach dem Ballgewinn kontert Team Neon sofort, ein Mittelfeldspieler darf mit nach vorn.",
+ "organisation": [
+  "Aufbauen: Das ganze Großfeld mit zwei Toren, in drei Zonen geteilt. Vorn und hinten je etwa ein Viertel, in der Mitte die halbe Länge. Der Trainer steht mit vielen Bällen an der Seitenlinie bei Team Rot.",
+  "Verteilen: Team Neon im 4-3-3, Team Rot im 3-4-3. Vorn drei Spitzen gegen drei Verteidiger mit Torwart. In der Mitte sieben gegen sieben, die Viererkette von Team Neon steht hoch.",
+  "Ablauf: Der Trainer spielt auf die Spitzen von Team Neon. Erobert Team Rot den Ball, spielt es ins Mittelfeld und baut auf. Team Neon presst gemeinsam, die Außenverteidiger rücken hoch. Nach dem Ballgewinn geht es sofort nach vorn, ein Mittelfeldspieler darf mit, also vier gegen drei.",
+  "Wertung: Jeder Treffer gibt einen Punkt. Nach jedem Angriff spielt der Trainer neu ein, entweder auf die Spitzen oder ins Mittelfeld zu Team Rot."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Seite zumachen und in Überzahl zum Ball",
+  "Alle machen mit: einer presst, die anderen sichern",
+  "Schulterblick: Wer steht hinter mir?",
+  "Torwart coacht laut: rüber, zusammen, zurück"
+ ],
+ "materials": [
+  "2 Großfeldtore",
+  "Viele Bälle",
+  "Leibchen in zwei Farben",
+  "Hütchen für die Zonen"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Drei Zonen, als Block pressen. Elf gegen elf auf dem ganzen Platz. Team Neon presst gemeinsam im Mittelfeld und kontert nach dem Ballgewinn sofort.",
+ "board": {
+  "massstab": "gross",
+  "lines": [
+   {
+    "type": "rect",
+    "x": 7,
+    "y": 3,
+    "w": 84,
+    "h": 49
+   },
+   {
+    "type": "line",
+    "x1": 49.0,
+    "y1": 3,
+    "x2": 49.0,
+    "y2": 52,
+    "dashed": false
+   },
+   {
+    "type": "circle",
+    "x": 49.0,
+    "y": 27.5,
+    "r": 6.5
+   },
+   {
+    "type": "rect",
+    "x": 7,
+    "y": 12.0,
+    "w": 14,
+    "h": 31
+   },
+   {
+    "type": "rect",
+    "x": 77,
+    "y": 12.0,
+    "w": 14,
+    "h": 31
+   },
+   {
+    "type": "rect",
+    "x": 7,
+    "y": 20.5,
+    "w": 4.6,
+    "h": 14
+   },
+   {
+    "type": "rect",
+    "x": 86.4,
+    "y": 20.5,
+    "w": 4.6,
+    "h": 14
+   },
+   {
+    "type": "line",
+    "x1": 29.5,
+    "y1": 3,
+    "x2": 29.5,
+    "y2": 52,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 68.5,
+    "y1": 3,
+    "x2": 68.5,
+    "y2": 52,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 7,
+    "y": 27.5,
+    "side": "left",
+    "size": "gross"
+   },
+   {
+    "x": 91,
+    "y": 27.5,
+    "side": "right",
+    "size": "gross"
+   }
+  ],
+  "cones": [],
+  "players": [
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 9.7,
+    "y": 27.5,
+    "label": "TW"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 30.4,
+    "y": 37.8,
+    "label": "4"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 30.4,
+    "y": 17.2,
+    "label": "5"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 36.9,
+    "y": 50.7,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 36.9,
+    "y": 4.3,
+    "label": "3"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 43.3,
+    "y": 27.5,
+    "label": "6"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 50.6,
+    "y": 36.5,
+    "label": "10"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 50.6,
+    "y": 19.8,
+    "label": "8"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 70.3,
+    "y": 38.5,
+    "label": "7"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 70.3,
+    "y": 16.5,
+    "label": "11"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 76.5,
+    "y": 27.5,
+    "label": "9"
+   },
+   {
+    "id": "r19",
+    "team": "b",
+    "x": 36.9,
+    "y": 27.5,
+    "label": "19"
+   },
+   {
+    "id": "r21",
+    "team": "b",
+    "x": 43.3,
+    "y": 39.8,
+    "label": "21"
+   },
+   {
+    "id": "r17",
+    "team": "b",
+    "x": 43.3,
+    "y": 15.2,
+    "label": "17"
+   },
+   {
+    "id": "r13",
+    "team": "b",
+    "x": 57.1,
+    "y": 48.8,
+    "label": "13"
+   },
+   {
+    "id": "r18",
+    "team": "b",
+    "x": 57.1,
+    "y": 33.9,
+    "label": "18"
+   },
+   {
+    "id": "r20",
+    "team": "b",
+    "x": 57.1,
+    "y": 21.7,
+    "label": "20"
+   },
+   {
+    "id": "r12",
+    "team": "b",
+    "x": 57.1,
+    "y": 5.6,
+    "label": "12"
+   },
+   {
+    "id": "r15",
+    "team": "b",
+    "x": 82.6,
+    "y": 39.8,
+    "label": "15"
+   },
+   {
+    "id": "r14",
+    "team": "b",
+    "x": 82.6,
+    "y": 27.5,
+    "label": "14"
+   },
+   {
+    "id": "r16",
+    "team": "b",
+    "x": 82.6,
+    "y": 15.2,
+    "label": "16"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 88.7,
+    "y": 27.5,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 80,
+    "y": 55.3,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 80.6,
+    "y": 55.9
+   },
+   {
+    "id": "s1",
+    "x": 83.5,
+    "y": 55.8
+   },
+   {
+    "id": "s2",
+    "x": 86,
+    "y": 55.8
+   }
+  ],
+  "steps": [
+   {
+    "label": "Trainer spielt die Spitzen an",
+    "say": "Der Trainer spielt auf Spieler sieben. Vorn heißt es drei gegen drei, unsere drei Spitzen gegen die Dreierkette von Team Rot mit Torwart. Spieler neun und Spieler elf bieten sich an.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       70.9,
+       39.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r15",
+      "to": [
+       78.6,
+       38.5
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     },
+     {
+      "who": "n9",
+      "to": [
+       78.9,
+       24.3
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "n11",
+      "to": [
+       77.3,
+       18.5
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "Abgefangen, Rot spielt raus",
+    "say": "Spieler sieben will zu Spieler elf. Spieler sechzehn geht dazwischen und hat den Ball. Sofort spielt er raus ins Mittelfeld zu Spieler zwölf.",
+    "moves": [
+     {
+      "who": "r16",
+      "to": [
+       75.7,
+       21.4
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "b1",
+      "to": [
+       76.3,
+       22.0
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       57.7,
+       6.2
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Außenverteidiger presst hoch",
+    "say": "Jetzt pressen wir als Block. Spieler drei rückt hoch und läuft Spieler zwölf an. Der spielt nach innen zu Spieler siebzehn, und genau da machen Spieler fünf und Spieler acht zu.",
+    "moves": [
+     {
+      "who": "n3",
+      "to": [
+       50.6,
+       5.3
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       43.9,
+       15.8
+      ],
+      "type": "pass",
+      "delay": 0.8
+     },
+     {
+      "who": "n5",
+      "to": [
+       36.9,
+       14.0
+      ],
+      "type": "lauf",
+      "delay": 1.3
+     },
+     {
+      "who": "n8",
+      "to": [
+       49.8,
+       16.2
+      ],
+      "type": "lauf",
+      "delay": 1.3
+     },
+     {
+      "who": "n6",
+      "to": [
+       42.5,
+       23.0
+      ],
+      "type": "lauf",
+      "delay": 1.3
+     }
+    ]
+   },
+   {
+    "label": "Pass nach innen abgefangen",
+    "say": "Spieler siebzehn ist eingeklemmt und spielt quer nach innen. Spieler zehn hat das kommen sehen. Er geht dazwischen, und der Konter läuft.",
+    "moves": [
+     {
+      "who": "n10",
+      "to": [
+       51.4,
+       31.4
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       52.0,
+       32.0
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Vier gegen drei: Punkt",
+    "say": "Spieler zehn treibt den Ball in die vordere Zone, er ist der vierte Mann. Spieler vierzehn muss raus, und Spieler neun ist frei. Er schießt ins lange Eck, und das gibt einen Punkt für Team Neon. Danach spielt der Trainer neu ein, auf die Spitzen oder ins Mittelfeld zu Team Rot.",
+    "moves": [
+     {
+      "who": "n10",
+      "to": [
+       69.2,
+       29.4
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "r14",
+      "to": [
+       74.8,
+       29.1
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       79.5,
+       24.9
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "k2",
+      "to": [
+       88.7,
+       25.2
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       91.0,
+       29.8
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 7,
+    "y1": 58.6,
+    "x2": 91,
+    "y2": 58.6,
+    "text": "100 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Schulterblick im Mittelfeld.",
+   "title": "Schulterblick im Mittelfeld",
+   "text": "Der Flügelspieler von Team Rot zieht nach innen, genau in den Rücken unseres Mittelfelds. Schaut dort keiner über die Schulter, kommt der Pass durch die Mitte, und unser Innenverteidiger muss raus. Dann ist hinten ein Loch. Wer früh schaut, stellt den Passweg zu, und Team Rot muss quer spielen.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 9.7,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 30.4,
+      "y": 37.8,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 30.4,
+      "y": 17.2,
+      "label": "5"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 36.9,
+      "y": 50.7,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 36.9,
+      "y": 4.3,
+      "label": "3"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 43.3,
+      "y": 27.5,
+      "label": "6"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 50.6,
+      "y": 36.5,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 50.6,
+      "y": 19.8,
+      "label": "8"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 70.3,
+      "y": 38.5,
+      "label": "7"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 70.3,
+      "y": 16.5,
+      "label": "11"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 76.5,
+      "y": 27.5,
+      "label": "9"
+     },
+     {
+      "id": "r19",
+      "team": "b",
+      "x": 36.9,
+      "y": 27.5,
+      "label": "19"
+     },
+     {
+      "id": "r21",
+      "team": "b",
+      "x": 46.6,
+      "y": 48.1,
+      "label": "21"
+     },
+     {
+      "id": "r17",
+      "team": "b",
+      "x": 43.3,
+      "y": 15.2,
+      "label": "17"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 57.1,
+      "y": 48.8,
+      "label": "13"
+     },
+     {
+      "id": "r18",
+      "team": "b",
+      "x": 57.1,
+      "y": 33.9,
+      "label": "18"
+     },
+     {
+      "id": "r20",
+      "team": "b",
+      "x": 57.1,
+      "y": 21.7,
+      "label": "20"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 57.1,
+      "y": 5.6,
+      "label": "12"
+     },
+     {
+      "id": "r15",
+      "team": "b",
+      "x": 82.6,
+      "y": 39.8,
+      "label": "15"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 82.6,
+      "y": 27.5,
+      "label": "14"
+     },
+     {
+      "id": "r16",
+      "team": "b",
+      "x": 82.6,
+      "y": 15.2,
+      "label": "16"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 88.7,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 80,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 57.7,
+      "y": 22.3
+     },
+     {
+      "id": "s1",
+      "x": 83.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 86,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Flügel rückt ein, Schulterblick",
+      "say": "Spieler einundzwanzig zieht von außen nach innen, in den Rücken von Spieler zehn. Spieler zehn schaut über die Schulter und sieht ihn. Sofort schiebt er sich in den Passweg.",
+      "moves": [
+       {
+        "who": "r21",
+        "to": [
+         45.8,
+         32.7
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n10",
+        "to": [
+         34.5,
+         31.4
+        ],
+        "type": "blick",
+        "delay": 0.4
+       },
+       {
+        "who": "n10",
+        "to": [
+         49.8,
+         29.1
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Der Ball muss quer",
+      "say": "Durch die Mitte geht nichts mehr. Spieler zwanzig spielt quer zu Spieler zwölf. Der Torwart ruft rüber, und der ganze Block schiebt mit. Spieler drei läuft an.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         57.7,
+         6.2
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n3",
+        "to": [
+         50.6,
+         5.3
+        ],
+        "type": "lauf",
+        "delay": 0.5
+       },
+       {
+        "who": "n8",
+        "to": [
+         49.8,
+         15.9
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       },
+       {
+        "who": "n6",
+        "to": [
+         43.3,
+         23.0
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       },
+       {
+        "who": "n5",
+        "to": [
+         34.5,
+         14.6
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 7,
+      "y1": 58.6,
+      "x2": 91,
+      "y2": 58.6,
+      "text": "100 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Den Konter gemeinsam tragen.",
+   "title": "Den Konter gemeinsam tragen",
+   "text": "Nach dem Ballgewinn schalten Mittelfeld und Spitzen zusammen um. Der erste Pass geht nach vorn, die Spitze legt ab, und von hinten kommt einer im Sprint. Kurze, scharfe Pässe, und immer ist einer anspielbar. So wird aus vier gegen drei ein Treffer.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 9.7,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 30.4,
+      "y": 37.8,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 30.4,
+      "y": 17.2,
+      "label": "5"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 36.9,
+      "y": 50.7,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 36.9,
+      "y": 4.3,
+      "label": "3"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 43.3,
+      "y": 27.5,
+      "label": "6"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 50.6,
+      "y": 36.5,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 50.6,
+      "y": 19.8,
+      "label": "8"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 70.3,
+      "y": 38.5,
+      "label": "7"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 70.3,
+      "y": 16.5,
+      "label": "11"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 76.5,
+      "y": 27.5,
+      "label": "9"
+     },
+     {
+      "id": "r19",
+      "team": "b",
+      "x": 36.9,
+      "y": 27.5,
+      "label": "19"
+     },
+     {
+      "id": "r21",
+      "team": "b",
+      "x": 43.3,
+      "y": 39.8,
+      "label": "21"
+     },
+     {
+      "id": "r17",
+      "team": "b",
+      "x": 43.3,
+      "y": 15.2,
+      "label": "17"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 57.1,
+      "y": 48.8,
+      "label": "13"
+     },
+     {
+      "id": "r18",
+      "team": "b",
+      "x": 57.1,
+      "y": 33.9,
+      "label": "18"
+     },
+     {
+      "id": "r20",
+      "team": "b",
+      "x": 57.1,
+      "y": 21.7,
+      "label": "20"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 57.1,
+      "y": 5.6,
+      "label": "12"
+     },
+     {
+      "id": "r15",
+      "team": "b",
+      "x": 82.6,
+      "y": 39.8,
+      "label": "15"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 82.6,
+      "y": 27.5,
+      "label": "14"
+     },
+     {
+      "id": "r16",
+      "team": "b",
+      "x": 82.6,
+      "y": 15.2,
+      "label": "16"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 88.7,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 80,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 43.9,
+      "y": 28.1
+     },
+     {
+      "id": "s1",
+      "x": 83.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 86,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Ball erobert, sofort steil",
+      "say": "Spieler sechs hat den Ball erobert. Er nimmt den Kopf hoch und spielt sofort steil auf Spieler neun. Spieler acht sprintet gleich mit nach vorn.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         61.9,
+         27.5
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         77.1,
+         28.1
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n8",
+        "to": [
+         60.3,
+         17.2
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n8",
+        "to": [
+         70.0,
+         22.3
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Ablage auf den Nachrückenden",
+      "say": "Spieler neun legt ab auf Spieler acht. Gleichzeitig startet Spieler elf hinter Spieler sechzehn in die Tiefe.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         70.6,
+         22.9
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n11",
+        "to": [
+         83.7,
+         20.4
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Steckpass in den Lauf: Punkt",
+      "say": "Spieler acht steckt durch in den Lauf von Spieler elf. Der schießt flach am Torwart vorbei, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         84.3,
+         21.0
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "k2",
+        "to": [
+         87.8,
+         24.3
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         91.0,
+         29.4
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 7,
+      "y1": 58.6,
+      "x2": 91,
+      "y2": 58.6,
+      "text": "100 m"
+     }
+    ]
+   }
+  }
+ ]
+}
