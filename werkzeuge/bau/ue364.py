@@ -26,8 +26,12 @@ ENDEN = [(39, 4), (39, 51), (59, 4), (59, 51)]
 CONES = [C(x, y) for x, y in ENDEN]
 DIMS = dims(9, 89, 4, 51, "35 m", "25 m")[:1]  # Tore links und rechts: nur die Längen-Maßlinie
 BALL = [B("b1", 50.6, 55.9)] + ERSATZ
-def zurueck(x=36, d=0.3):
-    return [mv("r6", [x, 12], delay=d), mv("r8", [x, 33], delay=d), mv("r10", [x, 46], delay=d)]
+def zurueck(x=36, d=0.3, ziele=None):
+    z = ziele or {"r6": (x, 12), "r8": (x, 33), "r10": (x, 46)}
+    return [mv(i, list(p), delay=d) for i, p in z.items()]
+# Zweiter Sprint so, dass kein Verteidiger auf Spieler neun endet
+WEITER = {"r6": (46, 12), "r8": (45, 36), "r10": (46, 46)}
+WEITER3 = {"r6": (42, 15), "r8": (42, 30), "r10": (44, 46)}
 # Steigerung 1: Team Rot steht schon geordnet vor dem Tor, Team Neon hat den zweiten Ball in der Mitte
 POS2 = {"n11": (52, 11), "n9": (54, 28), "n7": (60, 43.5), "r6": (72, 14), "r8": (70, 30.5), "r10": (72, 47)}
 # Steigerung 2: zwei Dummys in der mittleren Zone (alle Hütchen mit id, weil die Fassung eigene Hütchen hat)
@@ -53,7 +57,7 @@ u = {"title": "Falsche Neun in der Welle", "code": "UE-364", "kind": "Spielform"
      mv("n9", [51, 29]), bl("n9", [50.3, 48], von=[33, 30], after=True), ps("b1", [51.6, 29.6], after=True), *zurueck()),
    S("Halb aufgedreht, steil auf Spieler sieben", "Spieler neun nimmt halb aufgedreht an und spielt sofort nach vorn. Spieler sieben ist außen hinter die Abwehr gestartet und bekommt den Ball in den Lauf. Spieler elf geht mit in die Mitte.",
      bl("n9", [72, 37.5], von=[50.3, 48], dauer=1.3), drehen("n9", [72, 37.5], gegen=True, delay=0.4), mv("n7", [77, 40], delay=0.4),
-     ps("b1", [77.6, 40.6], after=True), mv("n11", [76, 20], delay=0.6), *zurueck(50, 0.2)),
+     ps("b1", [77.6, 40.6], after=True), mv("n11", [76, 20], delay=0.6), *zurueck(d=0.2, ziele=WEITER)),
    S("Früh abschließen: Punkt", "Spieler sieben wartet nicht, bis Team Rot zurück ist. Er schießt sofort, und das gibt einen Punkt für Team Neon. Jetzt geht es in die andere Richtung weiter. Der Trainer spielt das nächste Dreierteam an, das auf das andere Tor angreift, und Team Neon sprintet zurück und verteidigt.",
      ps("b1", [88.5, 31.5]), mv("n9", [40, 27], delay=1.0), mv("n11", [56, 9], delay=1.0), mv("n7", [60, 44], delay=1.0))]},
  "versions": [
@@ -73,7 +77,7 @@ u = {"title": "Falsche Neun in der Welle", "code": "UE-364", "kind": "Spielform"
        mv("n9", [52, 11.5]), bl("n9", [51.4, 31.5], after=True), ps("b1", [52.6, 12.1], after=True), *zurueck()),
      S("Aufdrehen, steil auf Spieler elf", "Spieler neun dreht auf und spielt steil. Spieler elf startet außen hinter die Abwehr und nimmt den Ball mit.",
        bl("n9", [72, 13.5], von=[51.4, 31.5], dauer=1.3), drehen("n9", [72, 13.5], gegen=True, delay=0.4), mv("n11", [77, 14], delay=0.4),
-       ps("b1", [77.6, 14.6], after=True), *zurueck(50, 0.2)),
+       ps("b1", [77.6, 14.6], after=True), *zurueck(d=0.2, ziele=WEITER3)),
      S("Abschluss: Punkt", "Spieler elf zieht sofort ab, und das gibt einen Punkt für Team Neon. Beim nächsten Angriff ruft der Trainer eine andere Seite.",
        ps("b1", [88.5, 25]))], cones=CONES3)]}
 json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)

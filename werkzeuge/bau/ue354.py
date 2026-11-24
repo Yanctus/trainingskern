@@ -41,7 +41,7 @@ u = {"title": "Hohes Pressing im Zonenrondo", "code": "UE-354", "kind": "Spielfo
  "altersbereiche": ["U15-U17"], "duration_minutes": 15, "players_min": 14, "players_max": 20,
  "field_size": "25 x 40 m",
  "description": "Drei Teams zu sechst und zwei Torhüter. In jeder Zone hält ein Team den Ball, drei Verteidiger pressen dagegen, also sechs gegen drei. Nach zehn Pässen darf das Team aufs Tor schießen. Erobern die Verteidiger den Ball, spielen sie ihn sofort in die andere Zone, und das Team, das ihn verloren hat, muss jetzt selbst pressen.",
- "organisation": ["Aufbauen: Ein Feld von 25 mal 40 Metern mit zwei Zonen und einer schmalen Mittelzone von 5 Metern. In der Mittelzone stehen zwei große Tore Rücken an Rücken, in jedem ein Torwart.",
+ "organisation": ["Aufbauen: Ein Feld von 25 mal 40 Metern mit zwei Zonen und einer schmalen Mittelzone von 4,5 Metern. In der Mittelzone stehen zwei große Tore Rücken an Rücken, in jedem ein Torwart.",
   "Verteilen: Team Rot steht in der einen Zone, das dritte Team in der anderen. Die sechs Verteidiger von Team Neon warten in der Mittelzone. Der Trainer steht mit Bällen an der Ecke.",
   "Ablauf: Der Trainer spielt in eine Zone, und drei Verteidiger laufen sofort rein. Nach zehn Pässen in Folge darf das Team im Ballbesitz aufs Tor schießen. Danach bringt der Trainer einen Ball in die andere Zone, und die anderen drei Verteidiger pressen dort.",
   "Wertung und Wechsel: Jeder Treffer gibt einen Punkt. Erobern die Verteidiger den Ball, spielen sie ihn sofort in die andere Zone und haben jetzt selbst den Ball. Das Team mit dem Ballverlust wird zu Verteidigern: Drei sprinten zum Pressen hinüber, drei gehen in die Mittelzone."],

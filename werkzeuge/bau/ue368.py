@@ -50,7 +50,7 @@ u = {"title": "Viererkette köpft und klärt", "code": "UE-368", "kind": "Übung
   "Wertung und Wechsel: Wer die Flanke Richtung Minitor klärt und trifft, holt einen Punkt für Team Neon. Danach rückt die nächste Viererkette nach vorn."],
  "organisation_show": ORG,
  "coaching_points": ["Einer presst, die anderen drei sichern schräg dahinter", "Mit der Stirn köpfen und sofort zurück in die Kette", "Bei „Flanke!“ Vollgas zurück vor das Tor", "Nicht einfach weghauen, Richtung Minitor klären"],
- "materials": ["1 großes Tor", "2 Minitore", "16 Hütchen", "Viele Bälle"],
+ "materials": ["1 großes Tor", "2 Minitore", "14 Hütchen", "Viele Bälle"],
  "access": "abo", "hidden": True, "wartet_auf_ton": True,
  "say_intro": "Viererkette köpft und klärt. Die Kette hört auf den Trainer. Einer köpft vorn, die anderen sichern ab. Und beim Ruf „Flanke!“ sprinten alle zurück und klären.",
  "board": {"lines": LINES, "goals": TORE, "cones": CONES, "players": sp(), "balls": BALLE,
