@@ -29,7 +29,7 @@ ERLAUBT = {
     "labels": {"x", "y", "text"}, "steps": {"label", "say", "moves"}, "dims": {"x1", "y1", "x2", "y2", "text"},
 }
 ERLAUBT_MOVE = {"who", "ball", "to", "from", "type", "bend", "delay", "after", "weite", "dauer", "von"}
-ERLAUBT_BOARD = set(ERLAUBT) | {"sketch_steps"}
+ERLAUBT_BOARD = set(ERLAUBT) | {"sketch_steps", "massstab"}  # massstab "gross": Großfeld quer, Figuren 0,72-mal so groß
 ERLAUBT_UNIT = {"title", "code", "kind", "focuses", "age_groups", "altersbereiche", "tags", "wartet_auf_ton", "zeit", "aufrufe", "duration_minutes", "players_min", "players_max", "field_size", "description",
                 "organisation", "organisation_show", "coaching_points", "progression", "materials", "access", "hidden", "board", "say_intro",
                 "versions", "audio", "id", "created_date", "updated_date", "created_by_id", "created_by", "is_sample"}
@@ -87,10 +87,14 @@ def board_regeln(b, name, fassung):
             if not (1 <= it["x"] <= 99 and 1 <= it["y"] <= 59):
                 out.append(f"{name}: {kind} {it.get('id') or it.get('label') or ''} liegt am Rand der Tafel ({it['x']}, {it['y']})")
     # 3D-Ansicht: Figuren stehen aufrecht, sind ca. 8,6 breit und erscheinen ca. 15 Einheiten tief; stehen zwei dicht beieinander, verdecken sie sich
+    # Großfeld (massstab "gross"): Figuren 0,72-mal so groß, also auch die Abstände
+    f = 0.72 if b.get("massstab") == "gross" else 1
+    if b.get("massstab") not in (None, "normal", "gross"):
+        out.append(f"{name}: massstab nur 'normal' oder 'gross'")
     figs = [p for p in pl]
     for i, a in enumerate(figs):
         for c in figs[i + 1:]:
-            if abs(a["x"] - c["x"]) < 8.2 and abs(a["y"] - c["y"]) < 15.5:
+            if abs(a["x"] - c["x"]) < 8.2 * f and abs(a["y"] - c["y"]) < 15.5 * f:
                 out.append(f"{name}: {a.get('label')} und {c.get('label')} stehen zu dicht ({a['x']},{a['y']} / {c['x']},{c['y']}): in der 3D-Ansicht verdecken sie sich")
     # Maßlinien dürfen keine Figur berühren
     for d in b.get("dims") or []:

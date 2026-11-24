@@ -1,30 +1,41 @@
 import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe import *
+import hilfe as h
 # 08-P14 (U15-U17, Woche 16): Direct Counter From Deep (Low Block), 11 gegen 11 auf dem Großfeld (65 x 100 m).
-# Um 180 Grad gedreht: Das trainierte Team (Pink, 4-4-2) ist Team Neon, verteidigt unten und kontert nach oben.
-# Blau (4-3-3) ist Team Rot und baut von oben auf. Rot neu nummeriert, weil alle Nummern doppelt wären: Blau 2-11 ->
-# Rot 12-21 (jeweils plus zehn). Beide Torhüter wie bei UE-191 als neutrale Torhüter k1 oben und k2 unten
-# (zwei Team-Torhüter gäben doppelt "TW"). Ein Trainer statt zwei, links an der Mittellinie.
-# Feld x 12-88, y 4-56 (in der Breite gestreckt). Reihen für den 3D-Abstand auseinandergezogen: Viererkette am eigenen
-# Strafraum, Mittelfeldkette knapp unter der Mittellinie, die zwei Spitzen hoch bei den Innenverteidigern von Team Rot.
-# Mittelkreis und Strafraumbögen weggelassen, Drittel-Linien gestrichelt wie im PDF.
-# Fassungen: PDF Key Coaching Point 1 (nach Ballgewinn sofort steil auf die Spitze) und Key Coaching Point 2
-# (kompakt stehen, nach außen lenken, abfangen).
-# Sichtkegel: im Video keiner eingezeichnet. Aus dem Ton ("quickly look for that direct ball into strikers",
-# "looking for space to receive") und PDF ("must look for the two strikers"): Der Balleroberer schaut zur Spitze.
+# Das trainierte Team (Pink, 4-4-2) ist Team Neon, Blau (4-3-3) ist Team Rot, neu nummeriert 12-21 (Nummern doppelt).
+# Beide Torhüter neutral (k1, k2). Ein Trainer statt zwei.
+# GROSSFELD QUER (Inhaber, 24.11.2026): Ein ganzer Platz liegt quer wie im Fernsehbild, Tore links und rechts, mit
+# Mittellinie, Mittelkreis, Strafräumen und Torräumen. Team Neon verteidigt links und kontert nach rechts.
+# Die Aufstellung ist im Hochformat geplant (x 12-88 Breite, y 4-56 Länge, Team Rot oben); R() legt jede Koordinate
+# quer: oben -> rechts, unten -> links, links -> oben, rechts -> unten. Feld quer: x 7-91 (100 m), y 3-52 (65 m).
+# Drittel-Linien gestrichelt wie im PDF. Trainer unten an der Seitenlinie in der Hälfte von Team Rot.
+# Fassungen: PDF Key Coaching Point 1 (nach Ballgewinn sofort steil auf die Spitze) und 2 (kompakt, nach außen lenken).
+# Sichtkegel: aus Ton und PDF ("quickly look for that direct ball into strikers"): Der Balleroberer schaut zur Spitze.
 # Im ersten Coaching-Punkt nimmt Spieler neun an und dreht auf: Blick mit von und Drehpfeil.
-T = P("T", "c", 5, 30, "T")
-ERSATZ = [B("s1", 8.6, 33.5), B("s2", 5, 33.5)]
-NEON = {"k2": (50, 54.5), "n3": (26, 48.5), "n4": (41.5, 48.5), "n5": (58.5, 48.5), "n2": (74, 48.5),
+FX0, FX1, FY0, FY1 = 7, 91, 3, 52
+def R(x, y): return [round(FX0 + (56 - y) / 52 * (FX1 - FX0), 1), round(FY0 + (x - 12) / 76 * (FY1 - FY0), 1)]
+def P(i, t, x, y, l): return h.P(i, t, *R(x, y), l)
+def B(i, x, y): return h.B(i, *R(x, y))
+def mv(who, to, *a, **k): return h.mv(who, R(*to), *a, **k)
+def dr(who, ball, to, **k): return h.dr(who, ball, R(*to), **k)
+def ps(ball, to, **k): return h.ps(ball, R(*to), **k)
+def drehen(who, to, **k): return h.drehen(who, R(*to), **k)
+def bl(who, to, von=None, **k): return h.bl(who, R(*to), von=R(*von) if von else None, **k)
+T = h.P("T", "c", 76, 55.3, "T")  # unten an der Seitenlinie in der Hälfte von Team Rot (quer gesetzt)
+ERSATZ = [h.B("s1", 79.5, 55.8), h.B("s2", 82, 55.8)]
+NEON = {"k2": (50, 54.5), "n3": (23.5, 48), "n4": (41, 48.5), "n5": (59, 48.5), "n2": (76.5, 48),
         "n7": (23.5, 33), "n6": (41, 33), "n8": (59, 33), "n11": (76.5, 33), "n9": (41, 17.5), "n10": (59, 17.5)}
 ROT = {"k1": (50, 7), "r13": (15, 19), "r14": (32.5, 11), "r15": (67.5, 11), "r12": (85, 19),
        "r18": (32, 27), "r16": (50, 23), "r20": (68, 27), "r21": (15, 42), "r19": (50, 39), "r17": (85, 42)}
 def sp(**k):
     d = dict(NEON); d.update(ROT); d.update(k)
     return [P(i, "t", x, y, "TW") if i[0] == "k" else P(i, "a" if i[0] == "n" else "b", x, y, i[1:]) for i, (x, y) in d.items()] + [T]
-LINES = [rect(12, 4, 76, 52), line(12, 30, 88, 30, dashed=False), rect(26.5, 4, 47, 8.6), rect(26.5, 47.4, 47, 8.6),
-         line(12, 21, 88, 21), line(12, 39, 88, 39)]
-TORE = [{"x": 50, "y": 4, "side": "top", "size": "gross"}, {"x": 50, "y": 56, "side": "bottom", "size": "gross"}]
-DIMS = dims(12, 88, 4, 56, "65 m", "100 m", rx=97.5)
+MX, MY = (FX0 + FX1) / 2, (FY0 + FY1) / 2
+LINES = [rect(FX0, FY0, FX1 - FX0, FY1 - FY0), line(MX, FY0, MX, FY1, dashed=False), {"type": "circle", "x": MX, "y": MY, "r": 6.5},
+         rect(FX0, MY - 15.5, 14, 31), rect(FX1 - 14, MY - 15.5, 14, 31), rect(FX0, MY - 7, 4.6, 14), rect(FX1 - 4.6, MY - 7, 4.6, 14),
+         line(FX0 + 28, FY0, FX0 + 28, FY1), line(FX1 - 28, FY0, FX1 - 28, FY1)]
+TORE = [{"x": FX0, "y": MY, "side": "left", "size": "gross"}, {"x": FX1, "y": MY, "side": "right", "size": "gross"}]
+# Nur die Länge als Maßlinie: Rechts neben dem Tor ist kein Platz, die Breite steht in field_size
+DIMS = dims(FX0, FX1, FY0, FY1, "100 m", "65 m")[:1]
 def schieben(dx, wer, **k): return [mv(i, [NEON[i][0] + dx, NEON[i][1]], **k) for i in wer]
 MITTE, KETTE = ["n7", "n6", "n8", "n11"], ["n3", "n4", "n5", "n2"]
 
@@ -33,7 +44,7 @@ u = {"title": "Tiefer Block, steiler Konter", "code": "UE-319", "kind": "Spielfo
  "altersbereiche": ["U15-U17"], "duration_minutes": 15, "players_min": 22, "players_max": 22,
  "field_size": "65 x 100 m",
  "description": "Elf gegen elf auf dem ganzen Platz. Team Neon steht im 4-4-2 tief und eng vor dem eigenen Strafraum und lässt nur die beiden Spitzen vorn. Team Rot baut im 4-3-3 von hinten auf und greift an. Erobert Team Neon den Ball, geht er sofort steil auf eine Spitze, und das Mittelfeld rückt im Sprint nach.",
- "organisation": ["Aufbauen: Das ganze Großfeld mit zwei Toren. Der Trainer steht mit vielen Bällen an der Mittellinie.",
+ "organisation": ["Aufbauen: Das ganze Großfeld mit zwei Toren. Der Trainer steht mit vielen Bällen an der Seitenlinie in der Hälfte von Team Rot.",
   "Verteilen: Team Neon im 4-4-2 mit zwei engen Viererketten in der eigenen Hälfte und zwei Spitzen vorn. Team Rot im 4-3-3, die Außenverteidiger schieben beim Angriff hoch.",
   "Ablauf: Der Trainer spielt den Ball zu einem Verteidiger von Team Rot. Team Rot baut gegen die zwei Spitzen auf und greift an. Team Neon lenkt nach außen und fängt den Pass in die Mitte ab. Dann geht der Ball direkt auf eine Spitze, und der Konter läuft.",
   "Wertung: Jeder Treffer gibt einen Punkt. Nach jedem Angriff bringt der Trainer den nächsten Ball wieder zu Team Rot."],
@@ -42,10 +53,10 @@ u = {"title": "Tiefer Block, steiler Konter", "code": "UE-319", "kind": "Spielfo
  "materials": ["2 Großfeldtore", "Viele Bälle", "Leibchen in zwei Farben"],
  "access": "abo", "hidden": True, "wartet_auf_ton": True,
  "say_intro": "Tiefer Block, steiler Konter. Elf gegen elf auf dem ganzen Platz. Team Neon steht tief und kontert nach dem Ballgewinn direkt über die beiden Spitzen.",
- "board": {"lines": LINES, "goals": TORE, "cones": [], "players": sp(), "balls": [B("b1", 5.6, 30.6)] + ERSATZ,
+ "board": {"massstab": "gross", "lines": LINES, "goals": TORE, "cones": [], "players": sp(), "balls": [h.B("b1", 76.6, 55.9)] + ERSATZ,
   "steps": [
-   S("Trainer spielt ein, Rot baut auf", "Der Trainer spielt den Ball zu Spieler vierzehn. Team Rot baut hinten zu viert gegen unsere zwei Spitzen auf. Der Ball läuft quer zu Spieler fünfzehn, die Spitzen schieben mit.",
-     ps("b1", [33.1, 11.6]), ps("b1", [68.1, 11.6], after=True), mv("n10", [62, 16], delay=1.0), mv("n9", [47, 18], delay=1.0)),
+   S("Trainer spielt ein, Rot baut auf", "Der Trainer spielt den Ball zu Spieler fünfzehn. Team Rot baut hinten zu viert gegen unsere zwei Spitzen auf. Die beiden Spitzen schieben mit zum Ball.",
+     ps("b1", [68.1, 11.6]), mv("n10", [62, 16], delay=0.5), mv("n9", [47, 18], delay=0.5)),
    S("Nach außen lenken, Block schiebt", "Weiter geht es nach außen zu Spieler zwölf, der hoch aufgerückt ist. Genau da wollen wir den Ball haben. Beide Viererketten schieben eng zusammen auf die Ballseite.",
      ps("b1", [85.6, 19.6]), *schieben(4, MITTE, delay=0.3), *schieben(4, KETTE, delay=0.3), mv("r20", [60, 26], delay=0.4), mv("n10", [66, 20], delay=0.3)),
    S("Pass in die Mitte abgefangen", "Spieler zwölf will flach in die Mitte auf Spieler neunzehn spielen. Spieler acht steht richtig, geht in den Passweg und hat den Ball.",

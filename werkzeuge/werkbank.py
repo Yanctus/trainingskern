@@ -248,6 +248,9 @@ body{margin:0;background:#11140d}
 .tok .disc{position:absolute;left:-27px;top:-15px;width:54px;height:30px;border-radius:50%;background:var(--bib);box-shadow:0 0 0 3px var(--ink)}
 .tok.t-c .disc{box-shadow:0 0 0 3px var(--neon)}.tok.ball .disc{left:-13px;top:-5px;width:26px;height:11px;background:rgba(0,0,0,.6);box-shadow:none}
 .tok.cone .disc{display:none}
+.plane.gross .tok.fig .up{left:-31px;top:-103px;width:62px;height:103px}.plane.gross .tok.fig.t-c .up{left:-35px;top:-117px;width:70px;height:117px}
+.plane.gross .tok .disc{left:-19px;top:-11px;width:38px;height:22px}.plane.gross .tok.cone .up{left:-16px;top:-37px;width:32px;height:37px}
+.plane.gross .tok.ball .up{left:-10px;top:-21px;width:20px;height:20px}.plane.gross .tok.ball .disc{left:-9px;top:-4px;width:19px;height:8px}
 .tok .cut{fill:var(--fiber);stroke:var(--fiber);stroke-width:8;stroke-linejoin:round}
 .tok .leg{fill:var(--paper);stroke:var(--ink);stroke-width:2.2}.tok .shoe,.tok .short,.tok .dot{fill:var(--ink)}
 .tok .bib{fill:var(--bib);stroke:var(--ink);stroke-width:2.6}.tok .head{fill:var(--paper);stroke:var(--ink);stroke-width:2.6}
@@ -313,7 +316,7 @@ def html3d(board, titel):
     W, H = 1000, 560
     sc = min(W * 0.88 / 1000, H * 0.84 / (600 * math.cos(math.radians(52)) + 190))
     return (f'<html><head><meta charset="utf-8"><style>{CSS3D}</style></head><body><div class="pin"><h3>{html.escape(titel)}</h3><div class="scene">'
-            f'<div class="plane" style="transform:translate(-50%,-50%) translateY(7%) scale({sc:.4f}) rotateX(52deg)">{"".join(o)}</div></div></div></body></html>')
+            f'<div class="plane{" gross" if b.get("massstab") == "gross" else ""}" style="transform:translate(-50%,-50%) translateY(7%) scale({sc:.4f}) rotateX(52deg)">{"".join(o)}</div></div></div></body></html>')
 
 
 def bild3d(pfad):
