@@ -166,55 +166,30 @@ def story_mittag(label, text, sub, logo, out):
     im.save(out, quality=92)
 
 
-def find_cut(video, lo=8.0, hi=12.5):
-    """Leiseste Stelle (Sprechpause) zwischen lo und hi Sekunden."""
-    import numpy as np
-    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", str(video), "-t", str(hi + 1), "-ac", "1",
-                          "-ar", "8000", "-f", "s16le", "-"], capture_output=True, check=True).stdout
-    a = np.frombuffer(raw, np.int16).astype(float)
-    w = 800  # 0,1 s
-    rms = np.array([np.sqrt(np.mean(a[i:i + w] ** 2)) + 1 for i in range(0, len(a) - w, w)])
-    seg = 20 * np.log10(rms[int(lo * 10):int(hi * 10)] / 32768)
-    sm = np.convolve(seg, np.ones(3) / 3, "valid")
-    return lo + (int(np.argmin(sm)) + 1) * 0.1
+# Zeitpunkte (Sekunden) für das Abend-Bild der Vermarktungs-Videos: Produkt-Szene statt Hook
+EVENING_V_T = {"01": 10.3, "07": 21.2, "08": 21.0}
 
 
-OUTRO_SEC = 3.0   # Logo-Abschluss vom Ende des Reels
-MAX_BYTES = 3_000_000  # Upload-Grenze Drive-Connector
+def story_abend(typ, vid, video, out, tmp):
+    """Abend-Story als Bild: andere Szene aus dem Reel als morgens + JETZT NEU.
 
-
-def story_abend(typ, video, out, tmp):
-    """Teaser bis zur Sprechpause, weich ausgeblendet, dann Logo-Abschluss des Reels."""
+    (Video-Ausschnitte wurden verworfen: die Sprache läuft im Reel durch, jeder Schnitt klingt falsch.)
+    """
+    dur = ffprobe_duration(video)
+    if typ == "V":
+        t = EVENING_V_T[vid]
+    elif vid in ("09", "10", "11"):
+        t = dur * 0.60   # Komplett-Videos: Coaching-Punkt / Steigerung
+    else:
+        t = dur * 0.72   # späterer Schritt als morgens (45 %)
+    im = grab(video, t, tmp / "a.png")
     ov = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    d = ImageDraw.Draw(ov)
-    d.rectangle((0, 1440, W, 1720), fill=(13, 13, 10, 235))
-    sub = "Jetzt auf dem Profil. Link in Bio." if typ == "V" else "Ganzes Reel jetzt auf dem Profil."
+    ImageDraw.Draw(ov).rectangle((0, 1440, W, 1720), fill=(13, 13, 10, 235))
+    im = Image.alpha_composite(im.convert("RGBA"), ov).convert("RGB")
+    d = ImageDraw.Draw(im)
+    sub = "Jetzt auf dem Profil. Link in Bio." if typ == "V" else "Ganzes Reel auf dem Profil."
     banner(d, 1468, "JETZT NEU", sub)
-    png = tmp / "abend_ov.png"
-    ov.save(png)
-    cut = find_cut(video)
-    fo = 0.6
-    fc = (
-        f"[0:v]trim=0:{cut:.2f},setpts=PTS-STARTPTS[t];"
-        f"[t][2:v]overlay=0:0,fade=t=out:st={cut - fo:.2f}:d={fo},format=yuv420p[tv];"
-        f"[1:v]setpts=PTS-STARTPTS,fade=t=in:st=0:d=0.5,format=yuv420p[ov];"
-        f"[0:a]atrim=0:{cut:.2f},asetpts=PTS-STARTPTS,afade=t=out:st={cut - fo:.2f}:d={fo}[ta];"
-        f"[1:a]asetpts=PTS-STARTPTS,afade=t=in:st=0:d=0.5[oa];"
-        f"[tv][ta][ov][oa]concat=n=2:v=1:a=1[v][a]"
-    )
-    base = ["ffmpeg", "-v", "error", "-y", "-i", str(video), "-sseof", f"-{OUTRO_SEC}", "-i", str(video),
-            "-i", str(png), "-filter_complex", fc, "-map", "[v]", "-map", "[a]", "-r", "30"]
-    plog = str(tmp / "pass")
-    for vb in (1600, 1300, 1000):  # 2-Pass, Bitrate senken bis die Datei unter die Grenze passt
-        subprocess.run(base + ["-c:v", "libx264", "-b:v", f"{vb}k", "-pass", "1", "-passlogfile", plog,
-                               "-an", "-f", "mp4", "/dev/null"], check=True)
-        subprocess.run(base + ["-c:v", "libx264", "-profile:v", "high", "-b:v", f"{vb}k",
-                               "-maxrate", f"{int(vb * 1.6)}k", "-bufsize", f"{vb * 2}k",
-                               "-pass", "2", "-passlogfile", plog, "-c:a", "aac", "-b:a", "96k",
-                               "-ar", "44100", "-movflags", "+faststart", str(out)], check=True)
-        if out.stat().st_size <= MAX_BYTES:
-            break
-    return cut
+    im.save(out, quality=92)
 
 
 def main(videos_dir, out_dir):
@@ -228,7 +203,7 @@ def main(videos_dir, out_dir):
         p = f"tag{day:02d}"
         story_morgen(day, vid, typ, title, v, out_dir / f"{p}_1_morgen_0900.jpg", tmp)
         story_mittag(label, text, sub, logo, out_dir / f"{p}_2_mittag_1230.jpg")
-        story_abend(typ, v, out_dir / f"{p}_3_abend_1845.mp4", tmp)
+        story_abend(typ, vid, v, out_dir / f"{p}_3_abend_1845.jpg", tmp)
         print("fertig", p)
 
 

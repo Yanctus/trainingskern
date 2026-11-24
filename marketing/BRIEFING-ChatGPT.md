@@ -55,17 +55,21 @@ Die Story-Dateien sind noch **nicht** öffentlich freigegeben. Bei Bedarf freige
 
 ## 4. Stories: was jeden Tag kommt
 
-Dateinamen im Ordner `Storys/`: `tagXX_N_zeit.jpg/mp4`, zum Beispiel `tag01_1_morgen_0900.jpg`.
+Alle Stories sind **Bilder** (JPG, 1080×1920). Dateinamen im Ordner `Storys/`: `tagXX_N_zeit.jpg`, zum Beispiel `tag01_1_morgen_0900.jpg`.
 
 | Zeit | Datei | Inhalt |
 |---|---|---|
 | 09:00 | `tagXX_1_morgen_0900.jpg` | Teaser: Bild aus dem Reel des Tages mit „HEUTE 18:30“ |
 | 12:30 | `tagXX_2_mittag_1230.jpg` | Frage an die Trainer oder Coaching-Punkt (Antwort per DM) |
-| 18:45 | `tagXX_3_abend_1845.mp4` | 14-Sekunden-Ausschnitt aus dem Reel mit „JETZT NEU“ |
+| 18:45 | `tagXX_3_abend_1845.jpg` | Andere Szene aus dem Reel als morgens, mit „JETZT NEU · Ganzes Reel auf dem Profil“ |
 
 `tag01` gehört zum Reel von Tag 1, `tag02` zu Tag 2 und so weiter (siehe Plan in Abschnitt 6).
 
-**Status:** Alle 33 Stories für Tag 1–11 liegen im Ordner `Storys/` (11 Morgen-Bilder, 11 Mittags-Bilder, 11 Abend-Videos).
+**Status:** Alle 33 Stories für Tag 1–11 liegen im Ordner `Storys/` (11 Morgen-Bilder, 11 Mittags-Bilder, 11 Abend-Bilder).
+
+**Keine Video-Ausschnitte aus den Reels als Story verwenden.** In den Reels läuft die Sprache durchgehend. Jeder Schnitt trennt mitten im Satz und klingt falsch. Das wurde getestet und verworfen. Stattdessen immer ein Standbild aus dem Reel nehmen.
+
+**Zusätzlich (empfohlen, nur in der App möglich):** Abends nach dem Reel das Reel selbst in die Story teilen: Reel öffnen → Papierflieger → „Zur Story hinzufügen“. Dann läuft es mit Originalton, und ein Tipp darauf führt direkt zum Reel.
 
 Wenn du in der App postest: Gern eine **Umfrage**, eine **Frage** oder einen **Link-Sticker** (trainingskern.de/einheiten?frei=1) auf die Stories setzen. Das bringt Interaktion.
 
@@ -322,7 +326,7 @@ Teil 1 und 2 findest du auf dem Profil 👆
 - [ ] 18:45 Abend-Story posten → verschieben
 - [ ] Kommentare und DMs beantworten (Du-Ansprache, kurz, hilfsbereit; bei Interesse auf den Link in der Bio verweisen)
 
-**Wenn der Plan aufgebraucht ist:** In `Vermarktung/` und `Übungen/` nach neuen Videos schauen. Nächstes Video nach Rhythmus wählen (Abschnitt 3). Video anschauen, Caption nach Vorlage schreiben (Abschnitt 5), 3 Stories dazu im selben Stil erstellen. Liegt nichts Neues da → warten.
+**Wenn der Plan aufgebraucht ist:** In `Vermarktung/` und `Übungen/` nach neuen Videos schauen. Nächstes Video nach Rhythmus wählen (Abschnitt 3). Video anschauen, Caption nach Vorlage schreiben (Abschnitt 5), 3 Story-Bilder dazu im selben Stil erstellen: morgens ein Standbild aus dem Reel mit „HEUTE 18:30“, mittags eine Frage oder ein Coaching-Punkt als Textbild, abends ein anderes Standbild mit „JETZT NEU“. Keine Video-Ausschnitte (siehe Abschnitt 4). Liegt nichts Neues da → warten.
 
 **Jeden Sonntag:** Kurz auswerten: welches Reel hatte die meisten Aufrufe, Speicherungen und Profilbesuche? Nach 2–3 Wochen Uhrzeit und Rhythmus anpassen, je nachdem, wann die Follower online sind (Instagram-Insights).
 

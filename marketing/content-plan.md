@@ -222,6 +222,6 @@ Dateien im Drive-Ordner „instagram Trainingskern/Storys“, erzeugt mit `marke
 |---|---|---|
 | 09:00 | `tagXX_1_morgen_0900.jpg` | Teaser mit Bild aus dem Reel + „HEUTE 18:30“ |
 | 12:30 | `tagXX_2_mittag_1230.jpg` | Frage an die Community / Coaching-Punkt / Serien-Hinweis (Antwort per DM) |
-| 18:45 | `tagXX_3_abend_1845.mp4` | 14-Sekunden-Ausschnitt aus dem Reel + „JETZT NEU“ |
+| 18:45 | `tagXX_3_abend_1845.jpg` | Andere Szene aus dem Reel als morgens + „JETZT NEU“ (keine Video-Ausschnitte: die Sprache läuft durch, Schnitte klingen falsch) |
 
 Hinweis: Umfrage-, Quiz- und Link-Sticker gehen über die API nicht. Fragen laufen über die DM-Antwortfunktion, Links über die Bio.
