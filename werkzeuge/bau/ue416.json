@@ -1,0 +1,950 @@
+{
+ "title": "Doppelpässe über die Rautenmitte",
+ "code": "UE-416",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 8,
+ "players_max": 12,
+ "field_size": "25 x 18 m",
+ "description": "Eine Passform für kurze Kombinationen vor dem Strafraum. Vier Stationen stehen als Raute, in der Mitte liegt ein Hütchen. Der Ball läuft über Doppelpässe einmal rundherum, und jeder holt sich die Ablage in der Mitte ab, statt außen herumzulaufen. Danach folgt jeder seinem Pass zur nächsten Station.",
+ "organisation": [
+  "Aufbauen: Direkt vor dem Strafraum ein Feld von 25 mal 18 Metern. Vier Hütchen bilden eine Raute, die Spitze liegt im Strafraum. Ein Hütchen kommt in die Mitte.",
+  "Verteilen: Zehn Spieler, an jeder Station zwei bis drei. Die Bälle liegen am Start unten. Der Trainer steht mit Ersatzbällen am Rand.",
+  "Ablauf: Der Spieler am Start spielt zur rechten Station und läuft in die Mitte. Er bekommt die Ablage und spielt in den Lauf seines Partners. Der macht mit der Spitze genauso weiter, dann geht es über links zurück zum Start.",
+  "Wechsel: Jeder folgt seinem Pass zur nächsten Station. Ist der Ball zurück am Start, beginnt der Nächste mit einem neuen Ball."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Nach dem Pass in die Mitte, nicht außen herum",
+  "Flach und scharf passen, die Ablage mit einem Kontakt",
+  "In den Lauf spielen, nicht in den Fuß",
+  "Sofort dem Pass folgen und den Rhythmus halten"
+ ],
+ "materials": [
+  "5 Hütchen",
+  "1 Tor",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Doppelpässe über die Rautenmitte. Eine Passform vor dem Strafraum, und der Ball läuft über vier Doppelpässe einmal um die Raute.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 4,
+    "w": 50,
+    "h": 50
+   },
+   {
+    "type": "line",
+    "x1": 25,
+    "y1": 20,
+    "x2": 75,
+    "y2": 20,
+    "dashed": false
+   },
+   {
+    "type": "rect",
+    "x": 40,
+    "y": 4,
+    "w": 20,
+    "h": 6
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 4,
+    "side": "top",
+    "size": "gross"
+   }
+  ],
+  "cones": [
+   {
+    "x": 50,
+    "y": 53.5,
+    "color": "orange"
+   },
+   {
+    "x": 72,
+    "y": 35,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 11.5,
+    "color": "orange"
+   },
+   {
+    "x": 28,
+    "y": 35,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 35,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 50,
+    "y": 50,
+    "label": "4"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 59,
+    "y": 52,
+    "label": "5"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 41,
+    "y": 52,
+    "label": "10"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 69,
+    "y": 35,
+    "label": "7"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 78,
+    "y": 35,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 31,
+    "y": 35,
+    "label": "3"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 22,
+    "y": 35,
+    "label": "11"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 50,
+    "y": 14.5,
+    "label": "9"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 41,
+    "y": 12,
+    "label": "8"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 59,
+    "y": 12,
+    "label": "6"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 14,
+    "y": 52,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 50.6,
+    "y": 50.6
+   },
+   {
+    "id": "s1",
+    "x": 10.5,
+    "y": 55
+   },
+   {
+    "id": "s2",
+    "x": 13.5,
+    "y": 56.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pass raus, rein in die Mitte",
+    "say": "Spieler vier startet unten. Er spielt flach zu Spieler sieben auf der rechten Station und läuft sofort in die Mitte ans Hütchen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       69.6,
+       35.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n4",
+      "to": [
+       53,
+       38
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Ablage, dann in den Lauf",
+    "say": "Spieler sieben legt direkt in die Mitte ab und startet Richtung Strafraum. Spieler vier spielt ihm den Ball in den Lauf und folgt seinem Pass auf die rechte Station.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       53.6,
+       38.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n7",
+      "to": [
+       63,
+       24
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       63.6,
+       24.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n4",
+      "to": [
+       69,
+       35
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Doppelpass mit der Spitze",
+    "say": "Jetzt das Gleiche mit der Spitze. Spieler sieben spielt zu Spieler neun und holt sich die Ablage in der Mitte. Spieler neun startet nach links, bekommt den Ball in den Lauf, und Spieler sieben geht hoch auf die Spitze.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       15.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n7",
+      "to": [
+       53,
+       31
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       53.6,
+       31.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n9",
+      "to": [
+       37,
+       24
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       37.6,
+       24.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       50,
+       14.5
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Doppelpass auf der linken Seite",
+    "say": "Spieler neun spielt zu Spieler drei und läuft wieder in die Mitte, nicht an der Raute entlang. Die Ablage kommt direkt, Spieler drei startet nach unten.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       31.6,
+       35.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n9",
+      "to": [
+       47,
+       32
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       47.6,
+       32.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n3",
+      "to": [
+       38,
+       45
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zurück zum Start",
+    "say": "Spieler neun spielt in den Lauf und geht auf die linke Station. Spieler drei dribbelt zurück zum Start, und die Runde ist durch. Jetzt startet Spieler fünf mit dem nächsten Ball.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       38.6,
+       45.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n9",
+      "to": [
+       31,
+       35
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n3",
+      "to": [
+       46,
+       49
+      ],
+      "type": "dribbling",
+      "delay": 0.6,
+      "ball": "b1"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "25 m"
+   },
+   {
+    "x1": 94,
+    "y1": 20,
+    "x2": 94,
+    "y2": 54,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Zwei Bälle gleichzeitig.",
+   "title": "Zwei Bälle gleichzeitig",
+   "text": "Ist der erste Ball an der Spitze, startet unten schon der zweite. Jetzt laufen zwei Bälle in der Raute. Die Spieler müssen genau schauen, wann die Mitte frei ist, und den Rhythmus halten.",
+   "board": {
+    "players": [
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 50,
+      "y": 50,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 59,
+      "y": 52,
+      "label": "5"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 41,
+      "y": 52,
+      "label": "10"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 69,
+      "y": 35,
+      "label": "7"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 78,
+      "y": 35,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 31,
+      "y": 35,
+      "label": "3"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 22,
+      "y": 35,
+      "label": "11"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 50,
+      "y": 14.5,
+      "label": "9"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 41,
+      "y": 12,
+      "label": "8"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 59,
+      "y": 12,
+      "label": "6"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 14,
+      "y": 52,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 50.6
+     },
+     {
+      "id": "b2",
+      "x": 59.6,
+      "y": 52.6
+     },
+     {
+      "id": "s1",
+      "x": 10.5,
+      "y": 55
+     },
+     {
+      "id": "s2",
+      "x": 13.5,
+      "y": 56.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Der erste Ball läuft",
+      "say": "Spieler vier spielt den Doppelpass mit Spieler sieben über die Mitte und spielt ihn steil Richtung Strafraum. Spieler fünf geht mit dem zweiten Ball an den Start.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         69.6,
+         35.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n4",
+        "to": [
+         53,
+         38
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         53.6,
+         38.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n7",
+        "to": [
+         63,
+         24
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         63.6,
+         24.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n4",
+        "to": [
+         69,
+         35
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n5",
+        "to": [
+         50,
+         50
+        ],
+        "type": "dribbling",
+        "delay": 1.5,
+        "ball": "b2"
+       }
+      ]
+     },
+     {
+      "label": "An der Spitze, der Zweite startet",
+      "say": "Spieler sieben spielt den Doppelpass mit der Spitze, und Spieler neun startet mit dem Ball nach links. In dem Moment spielt Spieler fünf unten schon zu Spieler vier.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         15.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n7",
+        "to": [
+         53,
+         31
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         53.6,
+         31.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n9",
+        "to": [
+         37,
+         24
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         37.6,
+         24.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n7",
+        "to": [
+         50,
+         14.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b2",
+        "to": [
+         69.6,
+         35.6
+        ],
+        "type": "pass",
+        "delay": 2.0
+       },
+       {
+        "who": "n5",
+        "to": [
+         53,
+         38
+        ],
+        "type": "lauf",
+        "delay": 2.3
+       }
+      ]
+     },
+     {
+      "label": "Zwei Bälle, eine Mitte",
+      "say": "Jetzt laufen zwei Bälle. Links holt sich Spieler neun die Ablage von Spieler drei, rechts bekommt Spieler fünf die Ablage von Spieler vier. Jeder spielt weiter in den Lauf und folgt seinem Pass.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         31.6,
+         35.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n9",
+        "to": [
+         47,
+         32
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         47.6,
+         32.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b2",
+        "to": [
+         53.6,
+         38.6
+        ],
+        "type": "pass",
+        "delay": 0.6
+       },
+       {
+        "who": "n4",
+        "to": [
+         63,
+         24
+        ],
+        "type": "lauf",
+        "delay": 1.2
+       },
+       {
+        "who": "b2",
+        "to": [
+         63.6,
+         24.6
+        ],
+        "type": "pass",
+        "delay": 1.6
+       },
+       {
+        "who": "n3",
+        "to": [
+         38,
+         45
+        ],
+        "type": "lauf",
+        "delay": 1.6
+       },
+       {
+        "who": "b1",
+        "to": [
+         38.6,
+         45.6
+        ],
+        "type": "pass",
+        "delay": 2.0
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Steil in den Strafraum und abschließen.",
+   "title": "Steilpass und Abschluss",
+   "text": "Nach dem Doppelpass spielt der Spieler in der Mitte steil in den Strafraum. Sein Partner nimmt den Ball mit dem ersten Kontakt mit und schließt ab. Der Trainer steht seitlich am Strafraum und spielt sofort den nächsten Ball zur Spitze, damit es ohne Pause weitergeht.",
+   "board": {
+    "players": [
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 50,
+      "y": 50,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 59,
+      "y": 52,
+      "label": "5"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 41,
+      "y": 52,
+      "label": "10"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 69,
+      "y": 35,
+      "label": "7"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 78,
+      "y": 35,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 31,
+      "y": 35,
+      "label": "3"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 22,
+      "y": 35,
+      "label": "11"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 50,
+      "y": 14.5,
+      "label": "9"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 40,
+      "y": 17.5,
+      "label": "8"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 31,
+      "y": 17.5,
+      "label": "6"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 22,
+      "y": 9,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 50.6
+     },
+     {
+      "id": "s1",
+      "x": 22.6,
+      "y": 9.6
+     },
+     {
+      "id": "s2",
+      "x": 20,
+      "y": 12
+     }
+    ],
+    "steps": [
+     {
+      "label": "Doppelpass über die Mitte",
+      "say": "Spieler vier spielt zu Spieler sieben und läuft in die Mitte. Die Ablage kommt direkt zurück.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         69.6,
+         35.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n4",
+        "to": [
+         53,
+         38
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         53.6,
+         38.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Steil in den Strafraum",
+      "say": "Spieler sieben startet in den Strafraum, an der Spitze vorbei. Spieler vier spielt den Ball steil in seinen Lauf, nicht zu kurz und nicht zu lang.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         62,
+         21
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         62.6,
+         21.6
+        ],
+        "type": "pass",
+        "delay": 0.5
+       }
+      ]
+     },
+     {
+      "label": "Mitnehmen, abschließen: Punkt",
+      "say": "Spieler sieben nimmt den Ball mit dem ersten Kontakt mit und schießt mit dem zweiten, und das gibt einen Punkt für Spieler sieben. Sofort spielt der Trainer den nächsten Ball zu Spieler neun, und es geht über links weiter.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         57,
+         13
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         53.5,
+         4.4
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "s1",
+        "to": [
+         50.6,
+         15.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
