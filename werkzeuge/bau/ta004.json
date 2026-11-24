@@ -2264,7 +2264,7 @@
    "label": "Kapitel 4",
    "say": "Kapitel vier: Verlagern auf die freie Schiene.",
    "title": "Auf die freie Schiene",
-   "text": "Der Gegner schiebt mit allen auf unsere Ballseite. Über den Halbverteidiger und den Sechser verlagern wir mit einem langen Ball auf die Schiene der anderen Seite. Dort greifen wir an, und die Dreierkette schiebt mit und sichert den Raum hinter den Schienen ab.",
+   "text": "Der Gegner schiebt mit allen auf unsere Ballseite. Über den Halbverteidiger und den Sechser verlagern wir mit einem langen Ball auf die Schiene der anderen Seite. Die Schiene läuft an, die zwei Stürmer gehen über Kreuz an den kurzen und den langen Pfosten, der Achter in den Rückraum, und die Flanke kommt flach. Hinten schiebt die Dreierkette mit und sichert den Raum hinter den Schienen ab.",
    "board": {
     "players": [
      {
@@ -2766,99 +2766,226 @@
       ]
      },
      {
-      "label": "Einer kommt",
-      "say": "Der Außenverteidiger kommt raus, von innen. So ist der Weg zum Stürmer zu. Aber jetzt kommt der Achter zur Schiene. Der ist frei, also kriegt er ihn.",
+      "label": "Die Schiene läuft an",
+      "say": "Die Schiene hat Platz, also läuft sie an, die Linie runter. Ihr Gegenspieler kommt nicht mehr hinterher. Die Abwehr läuft zurück in den Strafraum. Vorn warten die zwei Stürmer, beide noch auf Höhe vom letzten Verteidiger. Und der Achter rückt nach.",
       "moves": [
        {
-        "who": "n8",
-        "to": [
-         62,
-         40
-        ],
-        "type": "lauf"
-       },
-       {
         "who": "n2",
         "to": [
-         62,
-         40
+         80,
+         49
         ],
-        "type": "option",
-        "delay": 1.0
+        "type": "dribbling",
+        "ball": "b1"
        },
        {
-        "who": "n2",
+        "who": "r12",
         "to": [
-         70,
-         36
+         73,
+         50.5
         ],
-        "type": "option",
-        "after": true
-       },
-       {
-        "who": "b1",
-        "to": [
-         62.6,
-         40.6
-        ],
-        "type": "pass",
-        "after": true
+        "type": "lauf",
+        "delay": 0.3
        },
        {
         "who": "r21",
         "to": [
-         56,
-         42
+         64,
+         46
         ],
         "type": "lauf",
-        "delay": 2.6
+        "delay": 0.3
+       },
+       {
+        "who": "r15",
+        "to": [
+         81,
+         31
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "r14",
+        "to": [
+         79,
+         24
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "r13",
+        "to": [
+         76,
+         14
+        ],
+        "type": "lauf",
+        "delay": 0.3
        },
        {
         "who": "r18",
         "to": [
-         58,
+         64,
          34
         ],
         "type": "lauf",
-        "delay": 2.6
-       }
-      ]
-     },
-     {
-      "label": "Einer geht",
-      "say": "Einer kommt, einer geht. Denn im selben Moment geht der Stürmer in die Tiefe, hinter den Außenverteidiger. Der Achter spielt ihn in den Lauf. Er startet mit dem Pass, also kein Abseits. So greifen wir dort an, wo der Gegner gerade nicht ist.",
-      "moves": [
+        "delay": 0.3
+       },
        {
-        "who": "n8",
+        "who": "r17",
         "to": [
-         70,
+         62,
+         20
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "r16",
+        "to": [
+         60,
+         12
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "r20",
+        "to": [
+         52,
+         30
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "r19",
+        "to": [
+         48,
+         20
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n9",
+        "to": [
+         74,
+         26
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       },
+       {
+        "who": "n7",
+        "to": [
+         75,
          36
         ],
-        "type": "option"
+        "type": "lauf",
+        "delay": 0.6
        },
        {
         "who": "n8",
         "to": [
          68,
-         24
+         36
         ],
-        "type": "option",
-        "after": true
+        "type": "lauf",
+        "delay": 0.6
        },
        {
-        "who": "n8",
+        "who": "n10",
         "to": [
          64,
-         50
+         22
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       },
+       {
+        "who": "n11",
+        "to": [
+         70,
+         10
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       },
+       {
+        "who": "n6",
+        "to": [
+         48,
+         34
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       },
+       {
+        "who": "n5",
+        "to": [
+         44,
+         44
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       },
+       {
+        "who": "n4",
+        "to": [
+         34,
+         32
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       },
+       {
+        "who": "n3",
+        "to": [
+         38,
+         18
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       }
+      ]
+     },
+     {
+      "label": "Kurzer und langer Pfosten",
+      "say": "Und jetzt pass auf: Einer kommt, einer geht. Der eine Stürmer kommt an den kurzen Pfosten, zum Ball hin. Der andere geht weg an den langen. Die zwei laufen über Kreuz, und der Achter wartet im Rückraum. Beide Stürmer starten erst mit der Flanke, also kein Abseits. Am kurzen Pfosten ist der Weg frei, also kommt der Ball flach dahin. Die Abwehr muss drei Räume auf einmal verteidigen.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         74,
+         26
+        ],
+        "type": "option"
+       },
+       {
+        "who": "n2",
+        "to": [
+         75,
+         36
         ],
         "type": "option",
         "after": true
        },
        {
-        "who": "n7",
+        "who": "n2",
         "to": [
-         80,
-         44
+         68,
+         36
+        ],
+        "type": "option",
+        "after": true
+       },
+       {
+        "who": "n9",
+        "to": [
+         84,
+         37
         ],
         "type": "lauf",
         "delay": 1.6
@@ -2866,17 +2993,26 @@
        {
         "who": "b1",
         "to": [
-         80.6,
-         44.6
+         84.6,
+         37.6
         ],
         "type": "pass",
         "delay": 1.6
        },
        {
-        "who": "n9",
+        "who": "n7",
         "to": [
-         78,
-         30
+         86,
+         20
+        ],
+        "type": "lauf",
+        "delay": 1.6
+       },
+       {
+        "who": "n8",
+        "to": [
+         73,
+         31
         ],
         "type": "lauf",
         "delay": 1.6
@@ -2884,26 +3020,8 @@
        {
         "who": "n10",
         "to": [
-         66,
-         24
-        ],
-        "type": "lauf",
-        "delay": 1.6
-       },
-       {
-        "who": "n2",
-        "to": [
-         70,
-         50
-        ],
-        "type": "lauf",
-        "delay": 1.6
-       },
-       {
-        "who": "n6",
-        "to": [
-         46,
-         32
+         72,
+         22
         ],
         "type": "lauf",
         "delay": 1.6
@@ -2911,8 +3029,8 @@
        {
         "who": "r15",
         "to": [
-         78,
-         38
+         83,
+         34
         ],
         "type": "lauf",
         "delay": 2.0
@@ -2920,8 +3038,17 @@
        {
         "who": "r14",
         "to": [
-         76,
-         28
+         82,
+         26
+        ],
+        "type": "lauf",
+        "delay": 2.0
+       },
+       {
+        "who": "r13",
+        "to": [
+         80,
+         18
         ],
         "type": "lauf",
         "delay": 2.0
@@ -2929,8 +3056,8 @@
        {
         "who": "r12",
         "to": [
-         74,
-         46
+         78,
+         48
         ],
         "type": "lauf",
         "delay": 2.0
@@ -2944,7 +3071,7 @@
        {
         "who": "n5",
         "to": [
-         44,
+         52,
          46
         ],
         "type": "lauf"
@@ -2952,15 +3079,15 @@
        {
         "who": "n4",
         "to": [
-         36,
-         34
+         42,
+         32
         ],
         "type": "lauf"
        },
        {
         "who": "n3",
         "to": [
-         40,
+         46,
          18
         ],
         "type": "lauf"
@@ -2968,34 +3095,16 @@
        {
         "who": "n11",
         "to": [
-         68,
-         9
+         72,
+         8
         ],
         "type": "lauf"
        },
        {
-        "who": "r13",
-        "to": [
-         80,
-         14
-        ],
-        "type": "lauf",
-        "delay": 0.4
-       },
-       {
         "who": "r21",
         "to": [
-         62,
-         46
-        ],
-        "type": "lauf",
-        "delay": 0.4
-       },
-       {
-        "who": "r18",
-        "to": [
-         64,
-         34
+         66,
+         44
         ],
         "type": "lauf",
         "delay": 0.4
@@ -3003,7 +3112,7 @@
        {
         "who": "r20",
         "to": [
-         52,
+         56,
          30
         ],
         "type": "lauf",
@@ -3012,8 +3121,8 @@
        {
         "who": "r19",
         "to": [
-         50,
-         18
+         54,
+         22
         ],
         "type": "lauf",
         "delay": 0.4
