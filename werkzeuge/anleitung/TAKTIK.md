@@ -74,3 +74,8 @@ true, wartet_auf_ton true), dann `update_entities` mit `{"$set": {...alle übrig
 Danach `python3 werkbank.py lesen TA-00N <datei>` und `python3 werkbank.py vergleichen <deine datei> <gelesene datei>`
 (0 Abweichungen). Nichts veröffentlichen, nichts committen, keine anderen Einheiten anfassen, runden.js/BERICHT.md nicht anfassen.
 Bauskript als `werkzeuge/bau/taNNN.py` ablegen, Kontrollbild `werkzeuge/taNNN-blatt.png` liegen lassen, Rest aufräumen.
+
+## Nach dem Einsprechen (Inhaber, 24.11.2026)
+`python3 tonpruefung.py TA-00N` sucht Fehlerlaute von ElevenLabs am Satzende (Pause, dann noch ein kurzer Laut; so bei TA-002
+Kapitel 1 Schritt 1 nach „Stürmer“). Verdacht mit faster-whisper gegenhören: Ist der Laut das letzte Wort, ist alles gut. Sonst
+`audio.chapters.<k>.steps_text.<s>` per $set auf einen Hinweistext setzen, dann nimmt „Geänderte neu einsprechen“ den Satz neu auf.
