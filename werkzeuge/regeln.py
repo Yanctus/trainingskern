@@ -30,7 +30,7 @@ ERLAUBT = {
 }
 ERLAUBT_MOVE = {"who", "ball", "to", "from", "type", "bend", "delay", "after", "weite", "dauer", "von"}
 ERLAUBT_BOARD = set(ERLAUBT) | {"sketch_steps"}
-ERLAUBT_UNIT = {"title", "code", "kind", "focuses", "age_groups", "altersbereiche", "tags", "zeit", "aufrufe", "duration_minutes", "players_min", "players_max", "field_size", "description",
+ERLAUBT_UNIT = {"title", "code", "kind", "focuses", "age_groups", "altersbereiche", "tags", "wartet_auf_ton", "zeit", "aufrufe", "duration_minutes", "players_min", "players_max", "field_size", "description",
                 "organisation", "organisation_show", "coaching_points", "progression", "materials", "access", "hidden", "board", "say_intro",
                 "versions", "audio", "id", "created_date", "updated_date", "created_by_id", "created_by", "is_sample"}
 ERLAUBT_VERSION = {"label", "say", "title", "text", "board"}
@@ -171,7 +171,8 @@ def regeln(u):
     # Nur 5 Übungen sind frei mit Konto, UE-001 offen; alles andere ist Pro (Inhaber, 22.11.2026)
     FREI = {"UE-004", "UE-005", "UE-007", "UE-008", "UE-011"}
     soll = "offen" if code == "UE-001" else "frei" if code in FREI else "abo"
-    if u.get("access") != soll or u.get("hidden") is not False:
+    # Neue Einheiten bleiben ausgeblendet, bis sie eingesprochen sind: hidden true ist nur zusammen mit wartet_auf_ton true erlaubt
+    if u.get("access") != soll or not (u.get("hidden") is False or (u.get("hidden") is True and u.get("wartet_auf_ton") is True)):
         out.append(f"{code}: access muss '{soll}' sein (neue Einheiten sind Pro, nur 5 sind frei) und hidden false")
     if not 3 <= len((u.get("description") or "").split(". ")) <= 6:
         out.append(f"{code}: description soll 3-4 Sätze haben")

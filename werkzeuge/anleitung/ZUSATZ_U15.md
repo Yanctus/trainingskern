@@ -33,3 +33,20 @@ U15-U17 ist älter als bisher: Sprache nicht kindlich („die Kinder“ vermeide
 
 ## Geräte
 Leitern `leiter(...)`, Ringe `ring(...)`, nie Hürden als Ersatz. Klassen/Formen nicht neu erfinden.
+
+## Neue Einheiten bleiben ausgeblendet, bis sie eingesprochen sind (Inhaber, 24.11.2026)
+- Schritt 5c aus AUFTRAG.md ENTFÄLLT: Die Einheit wird NICHT sichtbar geschaltet. Endzustand in der Datenbank und im
+  Bauskript: `"hidden": True, "wartet_auf_ton": True` (beides schon im $set bzw. beim Anlegen mitgeben).
+  Die App blendet die Einheit von selbst ein, sobald der Inhaber alle Sätze eingesprochen hat.
+- `pruefen` akzeptiert hidden true nur zusammen mit wartet_auf_ton true. `vergleichen` wie gehabt (0 Abweichungen).
+- Der Link im Bericht bleibt gleich (https://trainingskern.de/einheiten/<id>), er funktioniert erst nach dem Einsprechen.
+
+## Annehmen und Aufdrehen (Inhaber, 24.11.2026, mit UE-300 abgenommen; Vorbild: bau/ue300.py)
+- Schritt A: Der Spieler schaut zum Passgeber: `bl(who, <Passgeber>)`, dann der Pass zu ihm (`ps(..., after=True)`).
+- Schritt B (erst NACH der Annahme): `bl(who, <Passziel>, von=<Passgeber>, dauer=1.3)` (derselbe Kegel schwenkt zum Passziel und
+  bleibt dort mittig stehen), dazu `drehen(who, <Passziel>, delay=0.4)` (Drehpfeil, er dreht auf der Stelle; `gegen=True` =
+  gegen den Uhrzeigersinn), danach sein Pass (`ps(..., after=True)`).
+- Nie zwei Kegel hintereinander für denselben Spieler, nie den Kegel fürs Aufdrehen.
+
+## Meterangaben
+Unter 20 m genau, ab 20 m auf Fünferschritte runden (27 -> 25, 36 -> 35), in field_size, dims und allen Texten.
