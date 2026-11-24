@@ -1,0 +1,820 @@
+{
+ "title": "Aus dem Rondo in die Torzone",
+ "code": "UE-342",
+ "kind": "Spielform",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel",
+  "Torschuss"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 9,
+ "players_max": 9,
+ "field_size": "18 x 25 m",
+ "description": "Vier gegen drei plus Springer in einer Zone, in der anderen Zone wartet ein einzelner Verteidiger vor zwei Minitoren. Das Team am Ball lässt den Ball laufen, bis sich eine Lücke auftut. Dann bricht ein Spieler in die andere Zone aus und schließt ab. Erobert das verteidigende Team den Ball, bekommt es selbst einen Punkt.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 25 Metern, in der Mitte geteilt in zwei Zonen. An beiden Enden eine Sperrzone von 2 Metern, dahinter je zwei Minitore.",
+  "Verteilen: In der ersten Zone spielen vier Spieler von Team Neon mit dem Springer gegen drei von Team Rot. In der anderen Zone steht Spieler vier von Team Rot allein vor den Minitoren. Der Trainer steht mit Bällen an der Seite.",
+  "Ablauf: Team Neon lässt den Ball laufen und wartet auf den richtigen Moment. Dann geht der Pass in die andere Zone, ein Spieler bricht aus und schließt auf ein Minitor ab. Die Sperrzone darf niemand betreten.",
+  "Wertung und Wechsel: Jeder Treffer gibt einen Punkt. Erobert Team Rot in einer der Zonen den Ball, gibt das einen Punkt für Team Rot. Nach jedem Treffer geht es in der anderen Zone weiter, und die Teams tauschen die Rollen."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Ball schnell laufen lassen, bis die Lücke da ist",
+  "Kopf hoch, wann ist der Moment zum Ausbrechen?",
+  "Der Pass nach vorn muss sitzen",
+  "Den freien Mann finden, wir sind in Überzahl"
+ ],
+ "materials": [
+  "4 Minitore",
+  "10 Hütchen",
+  "Leibchen in drei Farben",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Aus dem Rondo in die Torzone. Vier gegen drei plus Springer in einer Zone, drüben wartet ein einzelner Verteidiger vor zwei Minitoren. Team Neon hält den Ball und bricht im richtigen Moment aus.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 9,
+    "y": 4,
+    "w": 80,
+    "h": 47
+   },
+   {
+    "type": "line",
+    "x1": 14.3,
+    "y1": 4,
+    "x2": 14.3,
+    "y2": 51,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 83.7,
+    "y1": 4,
+    "x2": 83.7,
+    "y2": 51,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 49,
+    "y1": 4,
+    "x2": 49,
+    "y2": 51,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 9,
+    "y": 12.5,
+    "side": "left"
+   },
+   {
+    "x": 9,
+    "y": 41.6,
+    "side": "left"
+   },
+   {
+    "x": 89,
+    "y": 12.5,
+    "side": "right"
+   },
+   {
+    "x": 89,
+    "y": 41.6,
+    "side": "right"
+   }
+  ],
+  "cones": [
+   {
+    "x": 9,
+    "y": 4,
+    "color": "orange"
+   },
+   {
+    "x": 9,
+    "y": 51,
+    "color": "orange"
+   },
+   {
+    "x": 14.3,
+    "y": 4,
+    "color": "orange"
+   },
+   {
+    "x": 14.3,
+    "y": 51,
+    "color": "orange"
+   },
+   {
+    "x": 49,
+    "y": 4,
+    "color": "orange"
+   },
+   {
+    "x": 49,
+    "y": 51,
+    "color": "orange"
+   },
+   {
+    "x": 83.7,
+    "y": 4,
+    "color": "orange"
+   },
+   {
+    "x": 83.7,
+    "y": 51,
+    "color": "orange"
+   },
+   {
+    "x": 89,
+    "y": 4,
+    "color": "orange"
+   },
+   {
+    "x": 89,
+    "y": 51,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 16,
+    "y": 28,
+    "label": "2"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 24.5,
+    "y": 8,
+    "label": "8"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 24.5,
+    "y": 46,
+    "label": "10"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 47.5,
+    "y": 22,
+    "label": "6"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 24.5,
+    "y": 25,
+    "label": "3"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 33,
+    "y": 12,
+    "label": "5"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 41.5,
+    "y": 46,
+    "label": "7"
+   },
+   {
+    "id": "r4",
+    "team": "b",
+    "x": 68,
+    "y": 27,
+    "label": "4"
+   },
+   {
+    "id": "f9",
+    "team": "t",
+    "x": 33,
+    "y": 33,
+    "label": "F"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 62,
+    "y": 55.3,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 16.6,
+    "y": 28.6
+   },
+   {
+    "id": "s1",
+    "x": 65.5,
+    "y": 55.8
+   },
+   {
+    "id": "s2",
+    "x": 68,
+    "y": 55.8
+   }
+  ],
+  "dims": [
+   {
+    "x1": 9,
+    "y1": 58.6,
+    "x2": 89,
+    "y2": 58.6,
+    "text": "25 m"
+   }
+  ],
+  "steps": [
+   {
+    "label": "Ball laufen lassen",
+    "say": "Spieler zwei spielt nach außen zu Spieler zehn. Sofort läuft Spieler drei an. Der Springer steht in der Mitte und zeigt sich.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       25.1,
+       46.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r3",
+      "to": [
+       20,
+       37
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "Springer bekommt den Ball",
+    "say": "Der Springer schaut zum Ball. Spieler zehn spielt flach in die Mitte, bevor Spieler drei da ist.",
+    "moves": [
+     {
+      "who": "f9",
+      "to": [
+       24.5,
+       46
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b1",
+      "to": [
+       33.6,
+       33.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r5",
+      "to": [
+       33,
+       20
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Aufdrehen, Pass in die andere Zone",
+    "say": "Jetzt ist die Lücke da. Der Springer dreht auf und sieht Spieler sechs, der in die andere Zone startet. Genau in seinen Lauf kommt der Pass.",
+    "moves": [
+     {
+      "who": "f9",
+      "to": [
+       60,
+       28
+      ],
+      "type": "blick",
+      "von": [
+       24.5,
+       46
+      ],
+      "dauer": 1.3
+     },
+     {
+      "who": "f9",
+      "to": [
+       60,
+       28
+      ],
+      "type": "dreh",
+      "delay": 0.4,
+      "bend": -1
+     },
+     {
+      "who": "n6",
+      "to": [
+       60,
+       28
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       60.6,
+       28.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Ausgebrochen: Punkt",
+    "say": "Spieler vier kommt raus und macht das nähere Tor zu. Spieler sechs zieht zur anderen Seite vorbei und schießt ins freie Minitor, und das gibt einen Punkt für Team Neon. Danach geht es in dieser Zone weiter, mit Team Rot am Ball. Spieler zwei bleibt allein in der ersten Zone und verteidigt dort.",
+    "moves": [
+     {
+      "who": "r4",
+      "to": [
+       71,
+       36
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n6",
+      "to": [
+       72,
+       18
+      ],
+      "type": "dribbling",
+      "delay": 0.4,
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       88.4,
+       12.8
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Als Einheit verteidigen.",
+   "title": "Als Einheit verteidigen",
+   "text": "Die drei Verteidiger im Rondo schieben gemeinsam zum Ball und machen die Passwege zu. Auch der einzelne Verteidiger in der anderen Zone schiebt mit. So bleibt Team Neon nur der Rückpass, und irgendwann kommt der Ball in einen Fuß von Team Rot.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 16,
+      "y": 28,
+      "label": "2"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 24.5,
+      "y": 8,
+      "label": "8"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 24.5,
+      "y": 46,
+      "label": "10"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 47.5,
+      "y": 22,
+      "label": "6"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 24.5,
+      "y": 25,
+      "label": "3"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 33,
+      "y": 12,
+      "label": "5"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 41.5,
+      "y": 46,
+      "label": "7"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 68,
+      "y": 27,
+      "label": "4"
+     },
+     {
+      "id": "f9",
+      "team": "t",
+      "x": 33,
+      "y": 33,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 62,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 16.6,
+      "y": 28.6
+     },
+     {
+      "id": "s1",
+      "x": 65.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 68,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Alle schieben zum Ball",
+      "say": "Spieler zwei spielt zu Spieler zehn. Jetzt schiebt Team Rot gemeinsam. Spieler drei läuft an, Spieler fünf geht in den Weg zum Springer. Drüben schiebt auch Spieler vier mit.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         25.1,
+         46.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r3",
+        "to": [
+         20,
+         37
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "r5",
+        "to": [
+         29,
+         30
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "r7",
+        "to": [
+         38,
+         38
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "r4",
+        "to": [
+         64,
+         33
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Nur der Rückpass bleibt",
+      "say": "Nach vorn ist alles zu. Spieler zehn muss zurück zu Spieler zwei spielen. Spieler fünf rückt schon in die nächste Lücke.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         16.6,
+         28.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r3",
+        "to": [
+         21,
+         36.5
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "r5",
+        "to": [
+         27,
+         23
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       }
+      ]
+     },
+     {
+      "label": "Abgefangen: Punkt für Team Rot",
+      "say": "Spieler zwei will zu Spieler sechs. Spieler fünf steht schon im Passweg und fängt den Ball ab, und das gibt einen Punkt für Team Rot.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         27.6,
+         26.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r5",
+        "to": [
+         27,
+         26
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Der einzelne Verteidiger kommt mit in den Rondo.",
+   "title": "Fünf gegen vier im Rondo",
+   "text": "Spieler vier verlässt die andere Zone und hilft im Rondo. Jetzt spielt Team Neon mit dem Springer fünf gegen vier. Der Ball muss noch schneller laufen, mit einem oder zwei Kontakten. Dafür ist drüben vor den Minitoren der Platz frei.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 16,
+      "y": 28,
+      "label": "2"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 24.5,
+      "y": 8,
+      "label": "8"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 24.5,
+      "y": 46,
+      "label": "10"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 47.5,
+      "y": 22,
+      "label": "6"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 24.5,
+      "y": 25,
+      "label": "3"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 33,
+      "y": 12,
+      "label": "5"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 41.5,
+      "y": 46,
+      "label": "7"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 68,
+      "y": 27,
+      "label": "4"
+     },
+     {
+      "id": "f9",
+      "team": "t",
+      "x": 33,
+      "y": 33,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 62,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 16.6,
+      "y": 28.6
+     },
+     {
+      "id": "s1",
+      "x": 65.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 68,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Der Vierte kommt dazu",
+      "say": "Spieler vier sprintet aus der anderen Zone zurück in den Rondo. Spieler zwei spielt zu Spieler zehn, und der Druck ist gleich höher.",
+      "moves": [
+       {
+        "who": "r4",
+        "to": [
+         42,
+         36
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         25.1,
+         46.6
+        ],
+        "type": "pass",
+        "delay": 0.6
+       },
+       {
+        "who": "r3",
+        "to": [
+         20,
+         37
+        ],
+        "type": "lauf",
+        "delay": 0.8
+       }
+      ]
+     },
+     {
+      "label": "Direkt weiter",
+      "say": "Spieler zehn spielt direkt in die Mitte zum Springer. Spieler sechs schaut zum Ball, und der Springer legt mit einem Kontakt zu ihm.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         33.6,
+         33.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n6",
+        "to": [
+         33,
+         33
+        ],
+        "type": "blick",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         48.1,
+         22.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Aufdrehen und ausbrechen: Punkt",
+      "say": "Spieler sechs dreht auf und nimmt den Ball mit in die andere Zone. Spieler vier läuft hinterher, ist aber zu spät. Spieler sechs schießt ins Minitor, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         70,
+         20
+        ],
+        "type": "blick",
+        "von": [
+         33,
+         33
+        ],
+        "dauer": 1.3
+       },
+       {
+        "who": "n6",
+        "to": [
+         70,
+         20
+        ],
+        "type": "dreh",
+        "delay": 0.4,
+        "bend": -1
+       },
+       {
+        "who": "n6",
+        "to": [
+         70,
+         20
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "r4",
+        "to": [
+         58,
+         31
+        ],
+        "type": "lauf",
+        "delay": 0.8
+       },
+       {
+        "who": "b1",
+        "to": [
+         88.4,
+         13
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

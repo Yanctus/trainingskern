@@ -59,7 +59,8 @@
 | UE-289 | Aufdrehen, Stange, drei Minitore | 14 x 23 m | 6 |
 | UE-296 | Annehmen und die Linie runter | 14 x 18 m | 5 |
 ## 2. Plan U15-U17
-- Offen: Wochen 2 bis 9 und 17 bis 42, aus Woche 16 noch „The Compact Midfield 4 35-P9“ (alle Dateien liegen im Drive).
+- Fertig (25.11.2026): Wochen 2 bis 8 = UE-321 bis UE-341, „The Compact Midfield 4 35-P9“ = UE-333, PS-108 = UE-006 (Dublette).
+- In Arbeit: Woche 9 (UE-342 bis 344), Wochen 17 bis 21 (UE-345 bis 359). Offen: Wochen 22 bis 42 (alle Dateien im Drive).
 - Nächster Code: siehe README (Status).
 
 ## 3. Ideen und offene Fragen

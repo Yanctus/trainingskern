@@ -16,7 +16,7 @@ T = P("T", "c", 49, 2.5, "T")
 ERSATZ = [B("s1", 52.5, 2.2), B("s2", 45.8, 2.2)]
 TW = [P("k1", "t", 35.3, 6.5, "TW"), P("k2", "t", 60.5, 52.5, "TW")]
 POS = {"n9": (29, 38.5), "n11": (41.5, 38.5), "n8": (30, 54), "n10": (41, 54),
-       "r5": (36, 22.5), "r2": (59, 7), "r3": (72.5, 7)}
+       "r5": (35, 22.5), "r2": (59, 7), "r3": (72.5, 7)}
 def sp(**k):
     d = dict(POS); d.update(k)
     return [P(i, "a" if i[0] == "n" else "b", x, y, i[1:]) for i, (x, y) in d.items()] + TW + [T]
@@ -45,7 +45,7 @@ u = {"title": "Zwei gegen eins, dann zurück", "code": "UE-347", "kind": "Spielf
      ps("b1", [29.6, 39.1]), dr("n9", "b1", [30, 29], after=True), mv("n11", [41.5, 24], delay=0.6)),
    S("Querpass, Spieler elf trifft: Punkt", "Spieler fünf geht auf Spieler neun. Der spielt quer auf Spieler elf, und Spieler elf schließt direkt ab. Das gibt einen Punkt für Team Neon.",
      mv("r5", [32.5, 26]), ps("b1", [42.1, 24.6], after=True), ps("b1", [38.5, 5.3], after=True)),
-   S("Neuer Ball, sofort zurück", "Sofort spielt der Trainer einen neuen Ball rüber zu Spieler zwei. Spieler drei kommt außen mit, Spieler fünf läuft mit nach vorn. Spieler neun und Spieler elf sprinten zurück Richtung unteres Tor.",
+   S("Neuer Ball, sofort zurück", "Sofort spielt der Trainer einen neuen Ball rüber zu Spieler zwei. Spieler drei kommt außen mit, Spieler fünf läuft mit nach vorn. Spieler neun und Spieler elf drehen um und sprinten zurück, so schnell es geht.",
      mv("r2", [59.5, 12.5]), ps("s1", [60.1, 13.1], delay=0.3), mv("r3", [73, 22], delay=0.3), mv("r5", [50, 26], delay=0.3),
      mv("n11", [53, 34], delay=0.2), mv("n9", [61, 39], delay=0.2)),
    S("Verzögern, nach außen lenken", "Spieler elf läuft Spieler zwei von innen an und bremst ihn. Durch die Mitte geht nichts, also spielt Spieler zwei raus auf Spieler drei. Spieler neun schiebt mit nach außen.",
@@ -60,12 +60,12 @@ u = {"title": "Zwei gegen eins, dann zurück", "code": "UE-347", "kind": "Spielf
     [S("Querpass abgefangen", "Der Trainer spielt auf Spieler neun, der dribbelt an. Spieler elf startet, und Spieler neun will quer spielen. Spieler fünf ahnt das und geht dazwischen.",
        ps("b1", [29.6, 39.1]), dr("n9", "b1", [30, 29], after=True), mv("n11", [42, 21], delay=0.6), mv("r5", [36, 25.5], delay=1.6),
        ps("b1", [36.6, 26.1], after=True)),
-     S("Sofort rüber, Neon sprintet zurück", "Spieler drei kommt rein, und Spieler fünf spielt ihn sofort an. Spieler zwei und Spieler fünf laufen mit, drei gegen zwei. Spieler neun und Spieler elf sprinten zurück zum unteren Tor.",
+     S("Sofort rüber, Neon sprintet zurück", "Spieler drei kommt rein, und Spieler fünf spielt ihn sofort an. Spieler zwei und Spieler fünf laufen mit, drei gegen zwei. Spieler neun und Spieler elf drehen um und sprinten zurück, bevor es zu spät ist.",
        mv("r3", [70, 20]), ps("b1", [70.6, 20.6], delay=0.3), mv("r2", [60, 18], delay=0.3), mv("r5", [50, 26], after=True),
        mv("n11", [55, 33], delay=0.3), mv("n9", [62, 39], delay=0.3))], dims=DIMS),
   V("Coaching-Punkt", "Der zweite Coaching-Punkt: Zu zweit verzögern und nach außen lenken.", "Zu zweit nach außen lenken",
     "Die zwei Verteidiger arbeiten zusammen. Einer geht drauf und steht innen, der andere sichert dahinter. So bleibt der Gegner außen, und der Pass nach innen wird schwer. Wer ihn erwartet, fängt ihn ab.",
-    sp(r2=(55, 18), r3=(73, 22), r5=(46, 22), n11=(56, 34), n9=(64.5, 38)), [B("b1", 55.6, 18.6)] + ERSATZ,
+    sp(r2=(55, 18), r3=(73, 22), r5=(46, 22), n11=(56, 34), n9=(64.5, 36.5)), [B("b1", 55.6, 18.6)] + ERSATZ,
     [S("Einer geht drauf, einer sichert", "Spieler zwei dribbelt aufs Tor zu. Spieler elf geht drauf und steht innen, nur der Weg nach außen ist frei. Spieler neun sichert hinter ihm.",
        dr("r2", "b1", [56, 25]), mv("n11", [56.5, 30], delay=0.3), mv("n9", [62, 37], delay=0.3)),
      S("Nach außen gelenkt", "Spieler zwei muss raus auf Spieler drei. Jetzt schieben beide mit. Spieler neun geht nach außen, Spieler elf lässt sich in die Mitte fallen.",

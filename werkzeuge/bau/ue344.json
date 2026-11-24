@@ -1,0 +1,1052 @@
+{
+ "title": "Passrunde mit zwei Doppelpässen",
+ "code": "UE-344",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Ballannahme",
+  "Erwärmung"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 10,
+ "players_min": 10,
+ "players_max": 12,
+ "field_size": "18 x 25 m",
+ "description": "Ein Aufwärmen mit Ball in zwei gespiegelten Runden aus Stangen und Hütchen. Am Start gibt es einen kurzen Doppelpass, dann geht der Ball durch die Stangen zum Spieler in der Mitte. Der dreht auf, spielt den zweiten Doppelpass durch ein Hütchentor, und der Endspieler bringt den Ball durch die Mitte zurück zum Start. Jeder läuft seinem Pass hinterher.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 25 Metern mit zwei gleichen Runden nebeneinander. In jeder Runde stehen drei Stangen in der Mitte und zwei Hütchen als Tor vor dem Ende.",
+  "Verteilen: Pro Runde fünf Spieler, zwei am Start, einer zwischen den Stangen und zwei am Ende. Team Neon arbeitet in der einen Runde, Team Rot in der anderen. Der Trainer steht mit Bällen an der Seite.",
+  "Ablauf: Doppelpass am Start, dann der Pass durch die Stangen. Der Spieler in der Mitte dreht auf und spielt den Doppelpass durch das Hütchentor mit dem Endspieler. Der treibt den Ball durch die Mitte und spielt zurück zum Start. Sobald der Spieler in der Mitte den Ball hat, startet die andere Runde.",
+  "Wechsel: Jeder läuft seinem Pass hinterher zur nächsten Station. Nach ein paar Minuten tauschen die Gruppen die Seiten, damit jeder beide Richtungen spielt."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Seitlich zwischen den Stangen stehen und schnell aufdrehen",
+  "Passschärfe und Genauigkeit, jeder Ball sitzt",
+  "Erst zeigen, wenn der Pass kommen kann",
+  "Nach dem Ablegen sofort rückwärts zwischen die Stangen"
+ ],
+ "materials": [
+  "6 Stangen",
+  "6 Hütchen",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Passrunde mit zwei Doppelpässen. Zwei gespiegelte Runden mit Stangen und einem Hütchentor. Der Ball läuft vom Start durch die Stangen, durch das Tor und durch die Mitte zurück, und jeder läuft seinem Pass hinterher.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 9,
+    "y": 4,
+    "w": 80,
+    "h": 47
+   },
+   {
+    "type": "line",
+    "x1": 9,
+    "y1": 27.5,
+    "x2": 89,
+    "y2": 27.5,
+    "dashed": true
+   }
+  ],
+  "cones": [
+   {
+    "x": 16,
+    "y": 27.5,
+    "color": "orange"
+   },
+   {
+    "x": 83,
+    "y": 27.5,
+    "color": "orange"
+   },
+   {
+    "x": 40,
+    "y": 37,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 40,
+    "y": 46,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 50,
+    "y": 37.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 63,
+    "y": 38,
+    "color": "orange"
+   },
+   {
+    "x": 72,
+    "y": 38,
+    "color": "orange"
+   },
+   {
+    "x": 40,
+    "y": 18,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 40,
+    "y": 9,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 50,
+    "y": 17.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 63,
+    "y": 17,
+    "color": "orange"
+   },
+   {
+    "x": 72,
+    "y": 17,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 12,
+    "y": 37,
+    "label": "6"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 3.5,
+    "y": 37,
+    "label": "2"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 45,
+    "y": 41.5,
+    "label": "8"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 86,
+    "y": 36,
+    "label": "10"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 94.5,
+    "y": 36,
+    "label": "4"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 12,
+    "y": 18,
+    "label": "7"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 3.5,
+    "y": 18,
+    "label": "3"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 45,
+    "y": 13.5,
+    "label": "9"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 86,
+    "y": 19,
+    "label": "11"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 94.5,
+    "y": 19,
+    "label": "5"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 62,
+    "y": 55.3,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 12.6,
+    "y": 37.6
+   },
+   {
+    "id": "b2",
+    "x": 12.6,
+    "y": 18.6
+   },
+   {
+    "id": "s1",
+    "x": 65.5,
+    "y": 55.8
+   },
+   {
+    "id": "s2",
+    "x": 68,
+    "y": 55.8
+   }
+  ],
+  "dims": [
+   {
+    "x1": 9,
+    "y1": 58.6,
+    "x2": 89,
+    "y2": 58.6,
+    "text": "25 m"
+   }
+  ],
+  "steps": [
+   {
+    "label": "Doppelpass am Start",
+    "say": "Spieler sechs treibt den Ball an. Spieler acht kommt ihm aus den Stangen entgegen und legt direkt zurück.",
+    "moves": [
+     {
+      "who": "n6",
+      "to": [
+       24,
+       42
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n8",
+      "to": [
+       34,
+       41.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       34.6,
+       42.1
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       24.6,
+       42.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Rückwärts zurück, Pass durch die Stangen",
+    "say": "Sofort läuft Spieler acht rückwärts zwischen die Stangen und schaut zum Ball. Spieler sechs spielt flach durch die Stangen zu ihm. Am Start rückt Spieler zwei nach.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       45,
+       41.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n8",
+      "to": [
+       24,
+       42
+      ],
+      "type": "blick",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       45.6,
+       42.1
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       12,
+       37
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     }
+    ]
+   },
+   {
+    "label": "Aufdrehen, Team Rot startet",
+    "say": "Spieler acht dreht mit dem ersten Kontakt auf und treibt den Ball nach vorn. Genau jetzt startet Team Rot drüben mit dem Doppelpass.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       64,
+       41
+      ],
+      "type": "blick",
+      "von": [
+       24,
+       42
+      ],
+      "dauer": 1.3
+     },
+     {
+      "who": "n8",
+      "to": [
+       64,
+       41
+      ],
+      "type": "dreh",
+      "delay": 0.4
+     },
+     {
+      "who": "n8",
+      "to": [
+       60,
+       45
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "r7",
+      "to": [
+       24,
+       13
+      ],
+      "type": "dribbling",
+      "delay": 0.5,
+      "ball": "b2"
+     },
+     {
+      "who": "r9",
+      "to": [
+       34,
+       13.5
+      ],
+      "type": "lauf",
+      "delay": 0.8
+     },
+     {
+      "who": "b2",
+      "to": [
+       34.6,
+       14.1
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b2",
+      "to": [
+       24.6,
+       13.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Doppelpass durch das Hütchentor",
+    "say": "Spieler acht spielt zu Spieler zehn und bekommt den Ball zurück. Spieler zehn kommt nach innen, und der dritte Pass geht durch das Hütchentor. Spieler sechs läuft seinem Pass hinterher zwischen die Stangen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       86.6,
+       36.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n8",
+      "to": [
+       66,
+       44
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "b1",
+      "to": [
+       66.6,
+       44.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n10",
+      "to": [
+       69,
+       30
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       69.6,
+       30.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n6",
+      "to": [
+       45,
+       41.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Durch die Mitte zurück zum Start",
+    "say": "Spieler zehn treibt den Ball durch die Mitte und spielt lang zurück zu Spieler zwei. Spieler acht geht ans Ende, Spieler zehn stellt sich am Start an. Jetzt startet Spieler zwei, und drüben läuft bei Team Rot dieselbe Runde.",
+    "moves": [
+     {
+      "who": "n10",
+      "to": [
+       56,
+       31
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       12.6,
+       37.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       86,
+       36
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n10",
+      "to": [
+       4,
+       30
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Rückwärts zwischen die Stangen und offen annehmen.",
+   "title": "Rückwärts, schauen, aufdrehen",
+   "text": "Nach dem Ablegen läuft der Spieler in der Mitte rückwärts zwischen die Stangen, so sieht er den Ball die ganze Zeit. Er schaut früh, was nach der Annahme kommt. Er steht seitlich, nimmt mit dem hinteren Fuß an und dreht mit dem ersten Kontakt auf.",
+   "board": {
+    "players": [
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 24,
+      "y": 42,
+      "label": "6"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 3.5,
+      "y": 37,
+      "label": "2"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 34,
+      "y": 41.5,
+      "label": "8"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 86,
+      "y": 36,
+      "label": "10"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 94.5,
+      "y": 36,
+      "label": "4"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 12,
+      "y": 18,
+      "label": "7"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 3.5,
+      "y": 18,
+      "label": "3"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 45,
+      "y": 13.5,
+      "label": "9"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 86,
+      "y": 19,
+      "label": "11"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 94.5,
+      "y": 19,
+      "label": "5"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 62,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 34.6,
+      "y": 42.1
+     },
+     {
+      "id": "b2",
+      "x": 12.6,
+      "y": 18.6
+     },
+     {
+      "id": "s1",
+      "x": 65.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 68,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Ablegen, sofort rückwärts",
+      "say": "Spieler acht legt ab und läuft sofort rückwärts zwischen die Stangen. Rückwärts, damit er den Ball nie aus den Augen verliert.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         24.6,
+         42.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n8",
+        "to": [
+         45,
+         41.5
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Früh schauen, seitlich stehen",
+      "say": "Er steht seitlich und schaut zum Ball. Spieler sechs spielt flach durch die Stangen.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         24,
+         42
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         45.6,
+         42.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Erster Kontakt dreht auf",
+      "say": "Nach der Annahme geht der Blick sofort nach vorn. Mit dem ersten Kontakt dreht Spieler acht auf und treibt den Ball Richtung Hütchentor.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         64,
+         41
+        ],
+        "type": "blick",
+        "von": [
+         24,
+         42
+        ],
+        "dauer": 1.3
+       },
+       {
+        "who": "n8",
+        "to": [
+         64,
+         41
+        ],
+        "type": "dreh",
+        "delay": 0.4
+       },
+       {
+        "who": "n8",
+        "to": [
+         60,
+         45
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Die Stangen und das Hütchentor stehen enger.",
+   "title": "Engere Stangen, engeres Tor",
+   "text": "Die Stangen rücken zusammen, und das Hütchentor wird schmaler. Jetzt muss jeder Pass noch genauer kommen, und die Ballkontrolle muss sitzen. Das Tempo bleibt trotzdem hoch.",
+   "board": {
+    "players": [
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 12,
+      "y": 37,
+      "label": "6"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 3.5,
+      "y": 37,
+      "label": "2"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 44.5,
+      "y": 41.5,
+      "label": "8"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 86,
+      "y": 36,
+      "label": "10"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 94.5,
+      "y": 36,
+      "label": "4"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 12,
+      "y": 18,
+      "label": "7"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 3.5,
+      "y": 18,
+      "label": "3"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 45,
+      "y": 13.5,
+      "label": "9"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 86,
+      "y": 19,
+      "label": "11"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 94.5,
+      "y": 19,
+      "label": "5"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 62,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 12.6,
+      "y": 37.6
+     },
+     {
+      "id": "b2",
+      "x": 12.6,
+      "y": 18.6
+     },
+     {
+      "id": "s1",
+      "x": 65.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 68,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Doppelpass am Start",
+      "say": "Wieder der kurze Doppelpass am Start. Spieler acht kommt durch die enge Lücke heraus und legt zurück.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         24,
+         42
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n8",
+        "to": [
+         34,
+         41.5
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         34.6,
+         42.1
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         24.6,
+         42.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Durch die engen Stangen",
+      "say": "Spieler acht läuft rückwärts zurück und schaut zum Ball. Jetzt muss der Pass durch die schmale Lücke genau passen.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         44.5,
+         41.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n8",
+        "to": [
+         24,
+         42
+        ],
+        "type": "blick",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         45.1,
+         42.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Durch das enge Hütchentor",
+      "say": "Spieler acht dreht auf, treibt den Ball und spielt den Doppelpass mit Spieler zehn. Der letzte Pass geht durch das schmale Tor, und Spieler zehn bringt den Ball zurück zum Start.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         64,
+         41
+        ],
+        "type": "blick",
+        "von": [
+         24,
+         42
+        ],
+        "dauer": 1.3
+       },
+       {
+        "who": "n8",
+        "to": [
+         64,
+         41
+        ],
+        "type": "dreh",
+        "delay": 0.4
+       },
+       {
+        "who": "n8",
+        "to": [
+         60,
+         45
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         86.6,
+         36.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n8",
+        "to": [
+         66,
+         44
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         66.6,
+         44.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n10",
+        "to": [
+         68,
+         30
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         68.6,
+         30.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "cones": [
+     {
+      "x": 16,
+      "y": 27.5,
+      "color": "orange",
+      "id": "h1"
+     },
+     {
+      "x": 83,
+      "y": 27.5,
+      "color": "orange",
+      "id": "h2"
+     },
+     {
+      "x": 40,
+      "y": 38.5,
+      "color": "orange",
+      "shape": "stange",
+      "id": "h3"
+     },
+     {
+      "x": 40,
+      "y": 44.5,
+      "color": "orange",
+      "shape": "stange",
+      "id": "h4"
+     },
+     {
+      "x": 49,
+      "y": 38.5,
+      "color": "orange",
+      "shape": "stange",
+      "id": "h5"
+     },
+     {
+      "x": 64.5,
+      "y": 38,
+      "color": "orange",
+      "id": "h6"
+     },
+     {
+      "x": 70.5,
+      "y": 38,
+      "color": "orange",
+      "id": "h7"
+     },
+     {
+      "x": 40,
+      "y": 16.5,
+      "color": "orange",
+      "shape": "stange",
+      "id": "h8"
+     },
+     {
+      "x": 40,
+      "y": 10.5,
+      "color": "orange",
+      "shape": "stange",
+      "id": "h9"
+     },
+     {
+      "x": 49,
+      "y": 16.5,
+      "color": "orange",
+      "shape": "stange",
+      "id": "h10"
+     },
+     {
+      "x": 64.5,
+      "y": 17,
+      "color": "orange",
+      "id": "h11"
+     },
+     {
+      "x": 70.5,
+      "y": 17,
+      "color": "orange",
+      "id": "h12"
+     }
+    ]
+   }
+  }
+ ]
+}
