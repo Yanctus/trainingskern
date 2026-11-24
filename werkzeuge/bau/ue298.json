@@ -1,0 +1,970 @@
+{
+ "title": "Laufen, kombinieren, flanken",
+ "code": "UE-298",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Torschuss",
+  "Koordination"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "tags": [
+  "Vorbereitung"
+ ],
+ "duration_minutes": 15,
+ "players_min": 8,
+ "players_max": 12,
+ "field_size": "27 x 23 m",
+ "description": "Jeder Spieler beginnt mit einer kurzen, schnellen Laufaufgabe an Leiter, Stangen oder Hürden. Danach läuft der Ball über drei Pässe nach vorn, steil, abgelegt und tief auf den Flügel. Der Flügelspieler flankt, drei Angreifer laufen in den Strafraum und schließen ab. Jeder Treffer gibt einen Punkt, das hält das Tempo hoch.",
+ "organisation": [
+  "Aufbauen: Ein Feld von etwa 27 mal 23 Metern mit Tor und Torwart. Links oben eine Leiter und dahinter eine Stange, links unten eine Stange, in der Mitte drei Minihürden, rechts außen drei Stangen für den Slalom. An jeder Station ein Hütchen als Startpunkt.",
+  "Verteilen: Mindestens acht Spieler, zwei an jeder Station. Die Bälle liegen an der Station links. Der Trainer steht mit Ersatzbällen am Rand.",
+  "Ablauf: Pass nach unten in die Mitte, dann läuft jeder seine Aufgabe. Der Ball geht steil nach vorn, wird abgelegt und tief auf den Flügel gespielt. Flanke, drei Angreifer im Strafraum, Abschluss.",
+  "Wechsel: Nach jedem Angriff rückt jeder eine Station weiter. Jeder Treffer gibt einen Punkt."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Volles Tempo an Leiter, Stangen und Hürden",
+  "Flanke in den Lauf, nicht in den Rücken",
+  "Einer kurz, einer lang",
+  "Kopf hoch vor der Flanke"
+ ],
+ "materials": [
+  "1 Tor",
+  "1 Koordinationsleiter",
+  "5 Stangen",
+  "3 Minihürden",
+  "4 Hütchen",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Laufen, kombinieren, flanken. Erst kommt die schnelle Laufaufgabe, dann drei Pässe und die Flanke in den Strafraum.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 20,
+    "y": 5,
+    "w": 60,
+    "h": 50
+   },
+   {
+    "type": "rect",
+    "x": 31,
+    "y": 5,
+    "w": 39,
+    "h": 13.6
+   },
+   {
+    "type": "rect",
+    "x": 40.5,
+    "y": 5,
+    "w": 19.5,
+    "h": 5.5
+   },
+   {
+    "type": "line",
+    "x1": 69.7,
+    "y1": 18.6,
+    "x2": 69.7,
+    "y2": 55,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "gross"
+   }
+  ],
+  "cones": [
+   {
+    "x": 39.5,
+    "y": 21,
+    "color": "orange",
+    "shape": "leiter"
+   },
+   {
+    "x": 52,
+    "y": 20.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 31,
+    "y": 44,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 56.5,
+    "y": 45,
+    "color": "orange",
+    "shape": "huerde"
+   },
+   {
+    "x": 59.5,
+    "y": 42.5,
+    "color": "orange",
+    "shape": "huerde"
+   },
+   {
+    "x": 62.5,
+    "y": 40,
+    "color": "orange",
+    "shape": "huerde"
+   },
+   {
+    "x": 75,
+    "y": 42.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 75,
+    "y": 36,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 75,
+    "y": 29.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 23,
+    "y": 24.5,
+    "color": "neon"
+   },
+   {
+    "x": 23,
+    "y": 40.5,
+    "color": "neon"
+   },
+   {
+    "x": 46,
+    "y": 50.5,
+    "color": "neon"
+   },
+   {
+    "x": 79,
+    "y": 53,
+    "color": "neon"
+   }
+  ],
+  "players": [
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 27,
+    "y": 21,
+    "label": "9"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 27,
+    "y": 37,
+    "label": "8"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 50.3,
+    "y": 48.5,
+    "label": "6"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 74.5,
+    "y": 48.5,
+    "label": "11"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 18,
+    "y": 21,
+    "label": "10"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 18,
+    "y": 37,
+    "label": "7"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 60,
+    "y": 53.5,
+    "label": "4"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 84,
+    "y": 51,
+    "label": "3"
+   },
+   {
+    "id": "k",
+    "team": "t",
+    "x": 50.9,
+    "y": 7.3,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 7,
+    "y": 12,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 27.6,
+    "y": 37.6
+   },
+   {
+    "id": "b2",
+    "x": 18.6,
+    "y": 37.6
+   },
+   {
+    "id": "s1",
+    "x": 8.6,
+    "y": 15.5
+   },
+   {
+    "id": "s2",
+    "x": 10,
+    "y": 9
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pass, dann um die Stange",
+    "say": "Spieler acht spielt flach zu Spieler sechs und sprintet sofort um die Stange. Gleichzeitig läuft Spieler neun durch die Leiter.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.9,
+       49.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n8",
+      "to": [
+       27.5,
+       43
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n8",
+      "to": [
+       30,
+       47.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       34,
+       46
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       43.5,
+       37.6
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n9",
+      "to": [
+       47.5,
+       21.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n9",
+      "to": [
+       49,
+       26
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n9",
+      "to": [
+       52,
+       29.5
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Steil und ablegen",
+    "say": "Jetzt geht der Ball nach vorn auf Spieler neun. Der legt mit einem Kontakt ab auf Spieler acht. Spieler sechs geht über die Hürden, und außen läuft Spieler elf im Slalom durch die Stangen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       52.6,
+       30.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       44.1,
+       38.2
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n6",
+      "to": [
+       56.5,
+       45
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     },
+     {
+      "who": "n6",
+      "to": [
+       59.5,
+       42.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n6",
+      "to": [
+       62.5,
+       40
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n6",
+      "to": [
+       65.5,
+       37.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n11",
+      "to": [
+       78,
+       43.5
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n11",
+      "to": [
+       75,
+       39.3
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n11",
+      "to": [
+       72,
+       36
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n11",
+      "to": [
+       75,
+       32.8
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n11",
+      "to": [
+       78,
+       29.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n11",
+      "to": [
+       78,
+       25
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Tiefer Pass auf den Flügel",
+    "say": "Spieler acht spielt den Ball tief in den Lauf von Spieler elf. Die drei anderen starten in den Strafraum.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       76.6,
+       19.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n11",
+      "to": [
+       76,
+       19
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n9",
+      "to": [
+       58,
+       12
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n8",
+      "to": [
+       44.6,
+       17
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n6",
+      "to": [
+       60,
+       24
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Kopf hoch, dann flanken",
+    "say": "Kopf hoch. Spieler elf sieht Spieler neun am kurzen Pfosten und flankt.",
+    "moves": [
+     {
+      "who": "n11",
+      "to": [
+       58,
+       12
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b1",
+      "to": [
+       58.6,
+       12.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Abschluss: Punkt",
+    "say": "Spieler neun nimmt die Flanke direkt und trifft, und das gibt einen Punkt für Team Neon. Danach rückt jeder eine Station weiter, und Spieler sieben startet mit dem nächsten Ball.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       56,
+       5.3
+      ],
+      "type": "pass"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 20,
+    "y1": 58.6,
+    "x2": 80,
+    "y2": 58.6,
+    "text": "27 m"
+   },
+   {
+    "x1": 92,
+    "y1": 5,
+    "x2": 92,
+    "y2": 55,
+    "text": "23 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Gegenläufig in den Strafraum.",
+   "title": "Gegenläufig in den Strafraum",
+   "text": "Laufen beide Angreifer in dieselbe Richtung, hat es jeder Verteidiger leicht. Darum geht einer kurz und einer lang. Und sie starten erst, wenn der Flügelspieler den Ball hat. Wer zu früh im Strafraum ist, steht und wartet.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 52,
+      "y": 29.5,
+      "label": "9"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 43.5,
+      "y": 37.6,
+      "label": "8"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 65.5,
+      "y": 37.5,
+      "label": "6"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 78,
+      "y": 25,
+      "label": "11"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 18,
+      "y": 21,
+      "label": "10"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 18,
+      "y": 37,
+      "label": "7"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 60,
+      "y": 53.5,
+      "label": "4"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 84,
+      "y": 51,
+      "label": "3"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50.9,
+      "y": 7.3,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 7,
+      "y": 12,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 44.1,
+      "y": 38.2
+     },
+     {
+      "id": "b2",
+      "x": 18.6,
+      "y": 37.6
+     },
+     {
+      "id": "s1",
+      "x": 8.6,
+      "y": 15.5
+     },
+     {
+      "id": "s2",
+      "x": 10,
+      "y": 9
+     }
+    ],
+    "steps": [
+     {
+      "label": "Erst der Pass, dann der Lauf",
+      "say": "Der Ball geht tief auf Spieler elf. Erst jetzt starten die Angreifer. Spieler neun zieht zum langen Pfosten, Spieler acht kreuzt hinter ihm zum kurzen.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         76.6,
+         19.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n11",
+        "to": [
+         76,
+         19
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n9",
+        "to": [
+         47,
+         22
+        ],
+        "type": "lauf",
+        "delay": 0.5
+       },
+       {
+        "who": "n9",
+        "to": [
+         43,
+         14
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n8",
+        "to": [
+         47,
+         27
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       },
+       {
+        "who": "n8",
+        "to": [
+         48.5,
+         18
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n8",
+        "to": [
+         58,
+         12
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n6",
+        "to": [
+         60,
+         24
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       }
+      ]
+     },
+     {
+      "label": "Flanke kurz: Punkt",
+      "say": "Spieler elf flankt flach vor den kurzen Pfosten. Spieler acht kommt in vollem Lauf und schiebt ein, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         58.6,
+         12.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         54,
+         5.3
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Ein Verteidiger steht im Strafraum.",
+   "title": "Mit Verteidiger im Strafraum",
+   "text": "Ein Verteidiger von Team Rot wartet im Strafraum und verteidigt die Flanke. Die Angreifer lösen sich mit ihren Läufen von ihm. Der Flügelspieler schaut früh, wo der Verteidiger steht, und flankt in den Raum weg von ihm.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 52,
+      "y": 29.5,
+      "label": "9"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 43.5,
+      "y": 37.6,
+      "label": "8"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 65.5,
+      "y": 37.5,
+      "label": "6"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 78,
+      "y": 25,
+      "label": "11"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 18,
+      "y": 21,
+      "label": "10"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 18,
+      "y": 37,
+      "label": "7"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 60,
+      "y": 53.5,
+      "label": "4"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 84,
+      "y": 51,
+      "label": "3"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 60.5,
+      "y": 14,
+      "label": "5"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50.9,
+      "y": 7.3,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 7,
+      "y": 12,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 44.1,
+      "y": 38.2
+     },
+     {
+      "id": "b2",
+      "x": 18.6,
+      "y": 37.6
+     },
+     {
+      "id": "s1",
+      "x": 8.6,
+      "y": 15.5
+     },
+     {
+      "id": "s2",
+      "x": 10,
+      "y": 9
+     }
+    ],
+    "steps": [
+     {
+      "label": "Pass auf den Flügel, Blick zur Mitte",
+      "say": "Spieler acht spielt wieder tief auf Spieler elf. Noch vor der Flanke schaut Spieler elf in die Mitte. Wo steht Spieler fünf?",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         76.6,
+         19.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n11",
+        "to": [
+         76,
+         19
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n11",
+        "to": [
+         60.5,
+         14
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Der kurze Pfosten ist zu",
+      "say": "Spieler neun läuft kurz, und Spieler fünf macht den kurzen Pfosten zu. Hinten am langen Pfosten wird Spieler acht frei.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         64.5,
+         14
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r5",
+        "to": [
+         60.5,
+         10
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n8",
+        "to": [
+         43,
+         15
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n6",
+        "to": [
+         58,
+         25
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Flanke weg vom Verteidiger: Punkt",
+      "say": "Spieler elf flankt über beide hinweg an den langen Pfosten. Spieler acht trifft, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         43.6,
+         15.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         46.5,
+         5.3
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
