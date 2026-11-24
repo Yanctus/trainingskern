@@ -22,7 +22,7 @@
  "organisation": [
   "Aufbauen: Ein Feld von 25 mal 40 Metern mit Mittellinie. Auf jeder Grundlinie steht ein großes Tor.",
   "Verteilen: Team Neon und Team Rot spielen mit je fünf Feldspielern, in jedem Tor steht ein Torwart. Alle Feldspieler stehen zu Beginn in der Hälfte von Team Neon. Der Trainer steht mit Bällen am Rand.",
-  "Ablauf: Der Torwart unten eröffnet für Team Neon. Team Neon spielt sich durch das Anlaufen und sucht den Pass in die Tiefe. Dann geht es ohne Pause zum Abschluss aufs andere Tor. Erobert Team Rot den Ball, greift es sofort selbst an.",
+  "Ablauf: Der Torwart links eröffnet für Team Neon. Team Neon spielt sich durch das Anlaufen und sucht den Pass in die Tiefe. Dann geht es ohne Pause zum Abschluss aufs andere Tor. Erobert Team Rot den Ball, greift es sofort selbst an.",
   "Wertung und Wechsel: Jeder Treffer gibt einen Punkt. Nach einem Treffer oder wenn der Torwart den Ball hält, eröffnet der Torwart auf der anderen Seite, und das andere Team baut auf."
  ],
  "organisation_show": [
@@ -51,63 +51,63 @@
   "lines": [
    {
     "type": "rect",
-    "x": 25,
-    "y": 5,
-    "w": 50,
-    "h": 50
+    "x": 9,
+    "y": 4,
+    "w": 80,
+    "h": 47
    },
    {
     "type": "line",
-    "x1": 25,
-    "y1": 30,
-    "x2": 75,
-    "y2": 30,
+    "x1": 49.0,
+    "y1": 4,
+    "x2": 49.0,
+    "y2": 51,
     "dashed": true
    }
   ],
   "goals": [
    {
-    "x": 50,
-    "y": 5,
-    "side": "top",
+    "x": 9,
+    "y": 27.5,
+    "side": "left",
     "size": "gross"
    },
    {
-    "x": 50,
-    "y": 55,
-    "side": "bottom",
+    "x": 89,
+    "y": 27.5,
+    "side": "right",
     "size": "gross"
    }
   ],
   "cones": [
    {
-    "x": 25,
-    "y": 5,
+    "x": 9,
+    "y": 4,
     "color": "orange"
    },
    {
-    "x": 75,
-    "y": 5,
+    "x": 89,
+    "y": 4,
     "color": "orange"
    },
    {
-    "x": 25,
-    "y": 55,
+    "x": 9,
+    "y": 51,
     "color": "orange"
    },
    {
-    "x": 75,
-    "y": 55,
+    "x": 89,
+    "y": 51,
     "color": "orange"
    },
    {
-    "x": 25,
-    "y": 30,
+    "x": 49.0,
+    "y": 4,
     "color": "orange"
    },
    {
-    "x": 75,
-    "y": 30,
+    "x": 49.0,
+    "y": 51,
     "color": "orange"
    }
   ],
@@ -115,146 +115,139 @@
    {
     "id": "k1",
     "team": "t",
-    "x": 50,
-    "y": 53.5,
+    "x": 11.4,
+    "y": 27.5,
     "label": "TW"
    },
    {
     "id": "n5",
     "team": "a",
-    "x": 29,
-    "y": 46.5,
+    "x": 20.2,
+    "y": 7.8,
     "label": "5"
    },
    {
     "id": "n4",
     "team": "a",
-    "x": 59,
-    "y": 49,
+    "x": 20.2,
+    "y": 36.0,
     "label": "4"
    },
    {
     "id": "n6",
     "team": "a",
-    "x": 46.5,
-    "y": 36.5,
+    "x": 37.8,
+    "y": 24.2,
     "label": "6"
    },
    {
     "id": "n10",
     "team": "a",
-    "x": 29,
-    "y": 31,
+    "x": 46.1,
+    "y": 7.8,
     "label": "10"
    },
    {
     "id": "n8",
     "team": "a",
-    "x": 73,
-    "y": 27,
+    "x": 49.3,
+    "y": 49.1,
     "label": "8"
    },
    {
     "id": "k2",
     "team": "t",
-    "x": 50,
-    "y": 7.5,
+    "x": 85.0,
+    "y": 27.5,
     "label": "TW"
    },
    {
     "id": "r2",
     "team": "b",
-    "x": 37.5,
-    "y": 27,
+    "x": 55.1,
+    "y": 15.8,
     "label": "2"
    },
    {
     "id": "r3",
     "team": "b",
-    "x": 55,
-    "y": 33,
+    "x": 46.6,
+    "y": 32.2,
     "label": "3"
    },
    {
     "id": "r7",
     "team": "b",
-    "x": 64.5,
-    "y": 27,
+    "x": 58.3,
+    "y": 41.1,
     "label": "7"
    },
    {
     "id": "r9",
     "team": "b",
-    "x": 38,
-    "y": 43,
+    "x": 29.0,
+    "y": 16.2,
     "label": "9"
    },
    {
     "id": "r11",
     "team": "b",
-    "x": 67.5,
-    "y": 43,
+    "x": 29.0,
+    "y": 43.9,
     "label": "11"
    },
    {
     "id": "T",
     "team": "c",
-    "x": 12,
-    "y": 46,
+    "x": 40,
+    "y": 55.3,
     "label": "T"
    }
   ],
   "balls": [
    {
     "id": "b1",
-    "x": 50.6,
-    "y": 54.1
+    "x": 10.4,
+    "y": 28.1
    },
    {
     "id": "s1",
-    "x": 15.6,
-    "y": 49.5
+    "x": 43.5,
+    "y": 55.8
    },
    {
     "id": "s2",
-    "x": 12,
-    "y": 49.5
+    "x": 46,
+    "y": 55.8
    }
   ],
   "dims": [
    {
-    "x1": 25,
+    "x1": 9,
     "y1": 58.6,
-    "x2": 75,
+    "x2": 89,
     "y2": 58.6,
-    "text": "25 m"
-   },
-   {
-    "x1": 88,
-    "y1": 5,
-    "x2": 88,
-    "y2": 55,
     "text": "40 m"
    }
   ],
   "steps": [
    {
     "label": "Der Torwart eröffnet",
-    "say": "Der Torwart unten hat den Ball, Team Neon baut auf. Er spielt flach nach links zu Spieler fünf. Spieler neun läuft sofort an.",
+    "say": "Der Torwart links hat den Ball, Team Neon baut auf. Er spielt flach zu Spieler fünf an die Seite. Spieler neun läuft sofort an.",
     "moves": [
      {
       "who": "b1",
       "to": [
-       29.6,
-       47.1
+       19.2,
+       8.3
       ],
       "type": "pass"
      },
      {
       "who": "r9",
       "to": [
-       36,
-       43.5
+       25.8,
+       14.3
       ],
       "type": "lauf",
       "delay": 0.3
@@ -263,21 +256,21 @@
    },
    {
     "label": "Quer auf die freie Seite",
-    "say": "Links wird es eng. Also geht der Ball quer zu Spieler vier, der rechts Zeit hat. Spieler elf kommt zu spät.",
+    "say": "Auf dieser Seite wird es eng. Also geht der Ball quer zu Spieler vier, der auf der anderen Seite Zeit hat. Spieler elf kommt zu spät.",
     "moves": [
      {
       "who": "b1",
       "to": [
-       59.6,
-       49.6
+       19.2,
+       36.5
       ],
       "type": "pass"
      },
      {
       "who": "r11",
       "to": [
-       66,
-       45.5
+       24.2,
+       42.5
       ],
       "type": "lauf",
       "delay": 0.4
@@ -285,8 +278,8 @@
      {
       "who": "r9",
       "to": [
-       40,
-       45
+       25.0,
+       18.1
       ],
       "type": "lauf",
       "delay": 0.4
@@ -300,16 +293,16 @@
      {
       "who": "n4",
       "to": [
-       51,
-       31
+       47.4,
+       28.4
       ],
       "type": "blick"
      },
      {
       "who": "n10",
       "to": [
-       31,
-       24
+       58.6,
+       9.6
       ],
       "type": "lauf",
       "delay": 0.3
@@ -317,8 +310,8 @@
      {
       "who": "n10",
       "to": [
-       44,
-       21
+       63.4,
+       21.9
       ],
       "type": "lauf",
       "after": true
@@ -326,8 +319,8 @@
      {
       "who": "b1",
       "to": [
-       44.6,
-       21.6
+       62.4,
+       22.4
       ],
       "type": "pass",
       "delay": 1.0
@@ -336,13 +329,13 @@
    },
    {
     "label": "Abschluss: Punkt",
-    "say": "Spieler zehn nimmt den Ball mit und schießt flach ins linke Eck. Das gibt einen Punkt für Team Neon. Danach eröffnet der Torwart oben, und Team Rot baut auf.",
+    "say": "Spieler zehn nimmt den Ball mit und schießt flach ins Eck. Das gibt einen Punkt für Team Neon. Danach eröffnet der Torwart rechts, und Team Rot baut auf.",
     "moves": [
      {
       "who": "n10",
       "to": [
-       45,
-       14
+       74.6,
+       22.8
       ],
       "type": "dribbling",
       "ball": "b1"
@@ -350,8 +343,8 @@
      {
       "who": "b1",
       "to": [
-       45,
-       4.7
+       89.5,
+       22.8
       ],
       "type": "pass",
       "after": true
@@ -359,8 +352,8 @@
      {
       "who": "r2",
       "to": [
-       40,
-       19
+       66.6,
+       18.1
       ],
       "type": "lauf",
       "delay": 0.2
@@ -368,8 +361,8 @@
      {
       "who": "r3",
       "to": [
-       53,
-       22
+       61.8,
+       30.3
       ],
       "type": "lauf",
       "delay": 0.2
@@ -377,8 +370,8 @@
      {
       "who": "n8",
       "to": [
-       66,
-       16
+       71.4,
+       42.5
       ],
       "type": "lauf",
       "delay": 0.2
@@ -386,8 +379,8 @@
      {
       "who": "r7",
       "to": [
-       61,
-       20
+       65.0,
+       37.8
       ],
       "type": "lauf",
       "delay": 0.4
@@ -407,130 +400,130 @@
      {
       "id": "k1",
       "team": "t",
-      "x": 50,
-      "y": 53.5,
+      "x": 11.4,
+      "y": 27.5,
       "label": "TW"
      },
      {
       "id": "n5",
       "team": "a",
-      "x": 29,
-      "y": 46.5,
+      "x": 20.2,
+      "y": 7.8,
       "label": "5"
      },
      {
       "id": "n4",
       "team": "a",
-      "x": 59,
-      "y": 49,
+      "x": 20.2,
+      "y": 36.0,
       "label": "4"
      },
      {
       "id": "n6",
       "team": "a",
-      "x": 46.5,
-      "y": 36.5,
+      "x": 37.8,
+      "y": 24.2,
       "label": "6"
      },
      {
       "id": "n10",
       "team": "a",
-      "x": 29,
-      "y": 31,
+      "x": 46.1,
+      "y": 7.8,
       "label": "10"
      },
      {
       "id": "n8",
       "team": "a",
-      "x": 73,
-      "y": 27,
+      "x": 49.3,
+      "y": 49.1,
       "label": "8"
      },
      {
       "id": "k2",
       "team": "t",
-      "x": 50,
-      "y": 7.5,
+      "x": 85.0,
+      "y": 27.5,
       "label": "TW"
      },
      {
       "id": "r2",
       "team": "b",
-      "x": 37.5,
-      "y": 27,
+      "x": 55.1,
+      "y": 15.8,
       "label": "2"
      },
      {
       "id": "r3",
       "team": "b",
-      "x": 55,
-      "y": 33,
+      "x": 46.6,
+      "y": 32.2,
       "label": "3"
      },
      {
       "id": "r7",
       "team": "b",
-      "x": 64.5,
-      "y": 27,
+      "x": 58.3,
+      "y": 41.1,
       "label": "7"
      },
      {
       "id": "r9",
       "team": "b",
-      "x": 38,
-      "y": 43,
+      "x": 29.0,
+      "y": 16.2,
       "label": "9"
      },
      {
       "id": "r11",
       "team": "b",
-      "x": 67.5,
-      "y": 43,
+      "x": 29.0,
+      "y": 43.9,
       "label": "11"
      },
      {
       "id": "T",
       "team": "c",
-      "x": 12,
-      "y": 46,
+      "x": 40,
+      "y": 55.3,
       "label": "T"
      }
     ],
     "balls": [
      {
       "id": "b1",
-      "x": 50.6,
-      "y": 54.1
+      "x": 10.4,
+      "y": 28.1
      },
      {
       "id": "s1",
-      "x": 15.6,
-      "y": 49.5
+      "x": 43.5,
+      "y": 55.8
      },
      {
       "id": "s2",
-      "x": 12,
-      "y": 49.5
+      "x": 46,
+      "y": 55.8
      }
     ],
     "steps": [
      {
       "label": "Breit gehen, wegziehen",
-      "say": "Spieler fünf geht ganz nach außen, und der Torwart spielt ihn an. Gleichzeitig läuft Spieler zehn nach links weg. Spieler zwei geht mit, in der Mitte ist jetzt Platz.",
+      "say": "Spieler fünf geht ganz nach außen, und der Torwart spielt ihn an. Gleichzeitig läuft Spieler zehn zur Seite weg. Spieler zwei geht mit, in der Mitte ist jetzt Platz.",
       "moves": [
        {
         "who": "n5",
         "to": [
-         27,
-         50
+         17.0,
+         5.9
         ],
         "type": "lauf"
        },
        {
         "who": "b1",
         "to": [
-         27.6,
-         50.6
+         16.0,
+         6.4
         ],
         "type": "pass",
         "delay": 0.4
@@ -538,8 +531,8 @@
        {
         "who": "n10",
         "to": [
-         27,
-         25
+         57.0,
+         5.9
         ],
         "type": "lauf",
         "delay": 0.3
@@ -547,8 +540,8 @@
        {
         "who": "r2",
         "to": [
-         35.5,
-         22.5
+         61.0,
+         13.9
         ],
         "type": "lauf",
         "delay": 0.6
@@ -556,8 +549,8 @@
        {
         "who": "r9",
         "to": [
-         41,
-         46
+         23.4,
+         19.0
         ],
         "type": "lauf",
         "delay": 0.5
@@ -571,16 +564,16 @@
        {
         "who": "n6",
         "to": [
-         42,
-         33
+         44.2,
+         20.0
         ],
         "type": "lauf"
        },
        {
         "who": "n6",
         "to": [
-         27,
-         50
+         17.0,
+         5.9
         ],
         "type": "blick",
         "delay": 0.7
@@ -588,8 +581,8 @@
        {
         "who": "b1",
         "to": [
-         42.6,
-         33.6
+         43.2,
+         20.5
         ],
         "type": "pass",
         "after": true
@@ -598,26 +591,26 @@
      },
      {
       "label": "Aufdrehen und nach vorn",
-      "say": "Jetzt erst dreht er auf, der Blick geht nach vorn. Rechts startet Spieler acht hinter die Kette, und der Ball kommt in seinen Lauf.",
+      "say": "Jetzt erst dreht er auf, der Blick geht nach vorn. Auf der anderen Seite startet Spieler acht hinter die Kette, und der Ball kommt in seinen Lauf.",
       "moves": [
        {
         "who": "n6",
         "to": [
-         66.6,
-         19.6
+         65.6,
+         43.1
         ],
         "type": "blick",
         "von": [
-         27,
-         50
+         17.0,
+         5.9
         ],
         "dauer": 1.3
        },
        {
         "who": "n6",
         "to": [
-         66.6,
-         19.6
+         65.6,
+         43.1
         ],
         "type": "dreh",
         "delay": 0.4
@@ -625,8 +618,8 @@
        {
         "who": "n8",
         "to": [
-         66,
-         19
+         66.6,
+         42.5
         ],
         "type": "lauf",
         "delay": 0.8
@@ -634,8 +627,8 @@
        {
         "who": "b1",
         "to": [
-         66.6,
-         19.6
+         65.6,
+         43.1
         ],
         "type": "pass",
         "after": true
@@ -655,130 +648,130 @@
      {
       "id": "k1",
       "team": "t",
-      "x": 50,
-      "y": 53,
+      "x": 12.2,
+      "y": 27.5,
       "label": "TW"
      },
      {
       "id": "n5",
       "team": "a",
-      "x": 29,
-      "y": 47,
+      "x": 21.5,
+      "y": 7.8,
       "label": "5"
      },
      {
       "id": "n4",
       "team": "a",
-      "x": 71,
-      "y": 46.5,
+      "x": 18.3,
+      "y": 47.2,
       "label": "4"
      },
      {
       "id": "n6",
       "team": "a",
-      "x": 50,
-      "y": 31,
+      "x": 41.0,
+      "y": 27.5,
       "label": "6"
      },
      {
       "id": "n8",
       "team": "a",
-      "x": 67,
-      "y": 26,
+      "x": 58.9,
+      "y": 43.5,
       "label": "8"
      },
      {
       "id": "n10",
       "team": "a",
-      "x": 33,
-      "y": 24,
+      "x": 57.3,
+      "y": 11.5,
       "label": "10"
      },
      {
       "id": "k2",
       "team": "t",
-      "x": 50,
-      "y": 7.5,
+      "x": 85.0,
+      "y": 27.5,
       "label": "TW"
      },
      {
       "id": "r2",
       "team": "b",
-      "x": 41.5,
-      "y": 20,
+      "x": 66.3,
+      "y": 19.5,
       "label": "2"
      },
      {
       "id": "r3",
       "team": "b",
-      "x": 58.5,
-      "y": 31,
+      "x": 50.3,
+      "y": 35.5,
       "label": "3"
      },
      {
       "id": "r7",
       "team": "b",
-      "x": 58.5,
-      "y": 15,
+      "x": 73.0,
+      "y": 35.5,
       "label": "7"
      },
      {
       "id": "r9",
       "team": "b",
-      "x": 40,
-      "y": 42,
+      "x": 30.1,
+      "y": 18.1,
       "label": "9"
      },
      {
       "id": "r11",
       "team": "b",
-      "x": 62.5,
-      "y": 46.5,
+      "x": 26.9,
+      "y": 39.2,
       "label": "11"
      },
      {
       "id": "T",
       "team": "c",
-      "x": 12,
-      "y": 46,
+      "x": 40,
+      "y": 55.3,
       "label": "T"
      }
     ],
     "balls": [
      {
       "id": "b1",
-      "x": 71.6,
-      "y": 47.1
+      "x": 17.3,
+      "y": 47.8
      },
      {
       "id": "s1",
-      "x": 15.6,
-      "y": 49.5
+      "x": 43.5,
+      "y": 55.8
      },
      {
       "id": "s2",
-      "x": 12,
-      "y": 49.5
+      "x": 46,
+      "y": 55.8
      }
     ],
     "steps": [
      {
       "label": "Außen annehmen, steil spielen",
-      "say": "Spieler vier hat rechts außen Platz und den Ball. Er spielt steil zu Spieler acht und läuft sofort hinterher.",
+      "say": "Spieler vier hat außen Platz und den Ball. Er spielt steil zu Spieler acht und läuft sofort hinterher.",
       "moves": [
        {
         "who": "b1",
         "to": [
-         67.6,
-         26.6
+         58.0,
+         44.0
         ],
         "type": "pass"
        },
        {
         "who": "n4",
         "to": [
-         73,
-         33
+         44.2,
+         49.1
         ],
         "type": "lauf",
         "delay": 0.3
@@ -792,24 +785,24 @@
        {
         "who": "r7",
         "to": [
-         64,
-         21
+         63.4,
+         40.7
         ],
         "type": "lauf"
        },
        {
         "who": "n4",
         "to": [
-         73,
-         15
+         73.0,
+         49.1
         ],
         "type": "lauf"
        },
        {
         "who": "b1",
         "to": [
-         73.6,
-         15.6
+         72.0,
+         49.7
         ],
         "type": "pass",
         "delay": 0.5
@@ -817,8 +810,8 @@
        {
         "who": "n10",
         "to": [
-         44,
-         12
+         77.8,
+         21.9
         ],
         "type": "lauf",
         "delay": 0.6
@@ -826,8 +819,8 @@
        {
         "who": "n6",
         "to": [
-         54,
-         20
+         65.0,
+         31.3
         ],
         "type": "lauf",
         "delay": 0.6
@@ -841,16 +834,16 @@
        {
         "who": "n4",
         "to": [
-         56,
-         14
+         74.6,
+         33.1
         ],
         "type": "blick"
        },
        {
         "who": "b1",
         "to": [
-         44.6,
-         12.6
+         76.8,
+         22.4
         ],
         "type": "pass",
         "after": true
@@ -858,8 +851,8 @@
        {
         "who": "b1",
         "to": [
-         45,
-         4.7
+         89.5,
+         22.8
         ],
         "type": "pass",
         "after": true
