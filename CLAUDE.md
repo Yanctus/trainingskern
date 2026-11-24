@@ -35,6 +35,8 @@ Die App selbst liegt bei Base44 (App „Trainingskern“), dieses Repo enthält 
   `"stimme": true`: die Grundform, `"fassung": 1` (Coaching-Punkt) und `"fassung": 2` (Steigerung), dann `blende` ins Outro.
   Die Seite hat für alle drei Teile Aufnahmen. Bei sehr langen Grundformen reichen die ersten Schritte (`"schritte": 3`).
   Ein Aufbau-Video ist nur auf Wunsch dabei. Die kurzen Fassungen ohne Coaching-Punkt (`kampagne-03` bis `-06`) sind der alte Stand.
+- **Übersicht aller Videos: `story-studio/VIDEOS.md`** (Übungen mit eigenem Video, nur angerissene, Intro, Text, Story-Frage je Video).
+  Vor jeder neuen Runde lesen, nach dem Rendern mit `python3 videoliste.py` (im Ordner `story-studio`) neu erzeugen und einchecken.
 - **Jedes Übungs-Video zeigt eine andere Übung** (Vorgabe vom 23.11.2026): nie eine, die schon ein Video hat, und quer durch den Katalog
   gemischt (Athletik, Koordination, Torhüter, Technik, Spielformen, verschiedene Altersklassen). Es geht darum, die Vielfalt zu zeigen.
   Schon verfilmt: UE-001, UE-004, UE-005, UE-007, UE-008, UE-011, UE-207 (Athletik), UE-264 (Torwart), UE-009 (Umschalten), UE-031 (Dribbeln für die Kleinen).
