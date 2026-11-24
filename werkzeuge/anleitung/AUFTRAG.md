@@ -58,6 +58,13 @@ Du baust die Übungen EINER Woche als neue Einheiten (Entity `Einheit`) und läd
   in field_size. Trainer an der Seitenlinie unten, nahe der Stelle, wo er einspielt (kein Pass quer über den ganzen Platz).
   Spieler einer Kette stehen quer hintereinander: weit genug auseinander (pruefen meldet es sonst). Bequem: im Hochformat planen
   und mit einer Umrechnung R() quer legen wie in ue319.py. Halbes Feld und kleiner bleibt wie bisher.
+- Langes Feld QUER (Inhaber, 24.11.2026, mit UE-317 abgenommen; Vorbild: bau/ue317.py): Ist das Feld deutlich länger als breit
+  (Verhältnis ab etwa 1,3, z. B. 25 x 40 m), liegt die lange Seite waagrecht und das Feld füllt die Tafel (etwa x 9-89, y 4-51;
+  in beiden Richtungen möglichst derselbe Maßstab, so groß wie möglich). Nie mehr ein schmales Hochkant-Feld in der Mitte der Tafel.
+  Tore an den kurzen Seiten dann links/rechts. Figuren normal groß (massstab "gross" nur beim Großfeld). Steht rechts ein Tor, nur die
+  Längen-Maßlinie unten (rechts ist kein Platz). Trainer unten an der Seitenlinie. Wer im Hochformat nebeneinander stand, steht quer
+  in der Tiefe hintereinander: in der Länge leicht versetzen, bis pruefen keinen 3D-Abstand mehr meldet. Bequem: im Hochformat planen
+  und mit R() quer legen. Texte ohne oben/unten/links/rechts, wo es geht („auf der anderen Seite“, „außen“, „Richtung Tor“).
 - 3D-Abstand: zwei Figuren (Spieler, Trainer) in derselben Tafel brauchen |dx| ≥ 8.2 ODER |dy| ≥ 15.5 (Board 0-100 × 0-60,
   Feld meist x 25-75, y 5-55). Wartende Spieler lieber neben das Feld oder nur im Text erwähnen.
 - Bälle am Fuß: Spieler (x,y) → Ball (x+0.6, y+0.6). Pässe zu einem Spieler enden ebenso bei (x+0.6, y+0.6).
