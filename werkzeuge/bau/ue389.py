@@ -21,7 +21,7 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 T = P("T", "c", 84, 46, "T")
 ERSATZ = [B("s1", 87.5, 46.6), B("s2", 87.5, 50)]
 POS = {"n9": (40, 3.5), "n10": (40, 23), "n8": (57, 24), "n3": (23, 40), "n2": (74, 39), "n6": (31.5, 48), "n5": (57, 48),
-       "r4": (48.5, 15.5), "r7": (31.5, 32.3), "r11": (65.5, 32.5), "r12": (48.5, 38.5), "r13": (40, 56)}
+       "r4": (48.5, 15.5), "r7": (31.5, 32.3), "r11": (65.5, 32.5), "r12": (48.5, 38.5), "r13": (40, 54.8)}
 def sp(**k):
     d = dict(POS); d.update(k)
     return [P(i, "a" if i[0] == "n" else "b", x, y, i[1:]) for i, (x, y) in d.items()] + [T]
@@ -31,7 +31,7 @@ BAELLE = [B("b1", 57.6, 48.6)] + ERSATZ
 DIMS = dims(20, 77, 6, 52, "20 m", "25 m", rx=93)
 AUSSEN10 = [28, 23.5]   # Spieler zehn geht nach außen
 def kreisen():
-    return [ps("b1", fuss(POS["n2"])), mv("r11", [70, 35], delay=0.3), ps("b1", fuss(POS["n6"]), after=True), mv("r12", [42, 42], delay=1.0)]
+    return [ps("b1", fuss(POS["n2"])), mv("r11", [70, 35], delay=0.3), ps("b1", fuss(POS["n6"]), after=True), mv("r12", [46, 41.5], delay=1.0)]
 
 u = {"title": "Aufbau mit Ablage der Spitze", "code": "UE-389", "kind": "Spielform",
  "focuses": ["Passspiel", "Zusammenspiel", "Umschalten"], "age_groups": ["C-Jugend", "B-Jugend"],
@@ -60,7 +60,7 @@ u = {"title": "Aufbau mit Ablage der Spitze", "code": "UE-389", "kind": "Spielfo
      dr("n8", "b1", [55, 3.5]))],
   "dims": DIMS},
  "versions": [
-  V("Steigerung", "Und jetzt die Steigerung: Ein Steilpass durch die Mitte zählt schon als Punkt.", "Steilpass zählt als Punkt",
+  V("Steigerung", "Und jetzt die Steigerung: Ein Steilpass durch die Mitte gibt schon einen Punkt.", "Steilpass zählt als Punkt",
     "Geht ein flacher Pass durch die Linie der drei Angreifer auf einen Mittelfeldspieler, gibt das sofort einen Punkt. Schafft Team Rot es zweimal hintereinander, dass kein Pass durchgeht, gibt das einen Punkt für Team Rot. Die Angreifer machen die Mitte zu, also geht der Ball öfter über außen.",
     sp(), BAELLE,
     [S("Ball laufen lassen", "Spieler fünf spielt raus zu Spieler zwei. Der spielt zurück auf Spieler sechs, und Team Rot schiebt hinterher.",
@@ -71,7 +71,7 @@ u = {"title": "Aufbau mit Ablage der Spitze", "code": "UE-389", "kind": "Spielfo
     "Jetzt darf Spieler vier schon im Aufbau mitpressen, unten ist es vier gegen vier. Dafür ist hinter ihm Platz. Wer den Raum sieht und schnell spielt, kommt durch. Wird Team Rot überspielt, dürfen zwei Spieler zurücklaufen.",
     sp(), BAELLE,
     [S("Spieler vier presst mit", "Spieler fünf spielt quer zu Spieler sechs. Sofort kommt Spieler vier aus seiner Zone und läuft ihn an.",
-       ps("b1", fuss(POS["n6"])), mv("r4", [38, 37], delay=0.3), mv("r12", [44, 42], delay=0.4)),
+       ps("b1", fuss(POS["n6"])), mv("r4", [47, 30], delay=0.3), mv("r4", [31, 40.5], after=True), mv("r12", [44, 42], delay=0.4)),
      S("Raum hinter vier erkennen", "Hinter Spieler vier ist jetzt alles frei. Spieler acht geht in den Raum, und Spieler sechs sieht ihn. Der Ball geht flach durch die Mitte.",
        mv("n8", [50, 21]), bl("n6", [44, 33], delay=0.3), ps("b1", [50.6, 21.6], after=True)),
      S("Zurücklaufen hilft nicht: Punkt", "Spieler vier und Spieler zwölf laufen zurück, aber zu spät. Spieler acht spielt auf Spieler neun und bekommt die Ablage in den Lauf. Er dribbelt über die Grundlinie, und das gibt einen Punkt für Team Neon.",
