@@ -31,20 +31,25 @@ const css = `@import url("${pathToFileURL(path.join(HIER, "studio/app/fonts.css"
 .tag{position:absolute;left:72px;top:470px;background:#d4ff00;color:#0d0d0b;font-weight:700;font-size:40px;padding:10px 20px;text-transform:uppercase}
 h1{position:absolute;left:72px;top:590px;font-family:Archivo,sans-serif;font-weight:900;font-stretch:92%;font-size:140px;line-height:.98;letter-spacing:-.015em;text-transform:uppercase;white-space:nowrap}h1 span{display:block}h1 span:last-child{color:#d4ff00}
 .strich{position:absolute;left:72px;width:150px;height:12px;background:#ff5500}.sub{position:absolute;left:72px;right:72px;font-weight:500;font-size:46px;line-height:1.35}
-.fuss{position:absolute;left:72px;top:1562px;font-weight:600;font-size:40px;color:#8d8a80}`;
-const seite = (inhalt) => `<!doctype html><meta charset="utf-8"><style>${css}</style><body>${inhalt}</body>`;
+.fuss{position:absolute;left:72px;top:1562px;font-weight:600;font-size:40px;color:#8d8a80}
+.hand{position:absolute;left:84px;font-family:"Permanent Marker",cursive;font-size:64px;line-height:1.1;color:#ff5500;rotate:-4deg;transform-origin:0 50%;white-space:nowrap}
+/* Das mittlere Bild (Frage) steht auf Neon, damit sich die drei Bilder klar unterscheiden */
+body.neon{background:#d4ff00;color:#0d0d0b}body.neon .tag{background:#0d0d0b;color:#d4ff00}body.neon h1 span:last-child{color:#0d0d0b;background:#0d0d0b;color:#d4ff00;display:inline-block;padding:.04em .12em 0;margin-left:-.12em;margin-top:.08em}
+body.neon .fuss{color:rgba(13,13,11,.62)}body.neon .hand{color:#0d0d0b}body.neon .strich{background:#0d0d0b}`;
+const seite = (inhalt, klasse = "") => `<!doctype html><meta charset="utf-8"><style>${css}</style><body class="${klasse}">${inhalt}</body>`;
 const mitBild = (url, box, zeile) => seite(`<div class="bg" style="background-image:url('${url}')"></div><div class="band"></div><div class="box">${esc(box)}</div><p class="zeile">${esc(zeile)}</p>`);
-const textSeite = (tag, zeilen, sub, unten) => seite(`<div class="marke" style="background-image:url('${b1}')"></div><div class="tag">${esc(tag)}</div><h1>${zeilen.map((z) => `<span>${esc(z)}</span>`).join("")}</h1><i class="strich"></i><p class="sub">${esc(sub)}</p>${unten}`);
+// notiz: kurze Zeile in der Handschrift der Seite (orange, leicht schräg) unter dem Text
+const textSeite = (tag, zeilen, sub, unten, notiz = "", klasse = "") => seite(`<div class="marke" style="background-image:url('${b1}')"></div><div class="tag">${esc(tag)}</div><h1>${zeilen.map((z) => `<span>${esc(z)}</span>`).join("")}</h1><i class="strich"></i><p class="sub">${esc(sub)}</p>${notiz ? `<p class="hand">${esc(notiz)}</p>` : ""}${unten}`, klasse);
 const fuss = `<p class="fuss">trainingskern.de &nbsp;·&nbsp; Link in Bio</p>`;
 // "art": "marketing" (Videos, die Trainingskern selbst bewerben): erst das Problem, dann die Frage, dann die Lösung für den Abend.
 // Sonst (Übungs-Videos): Ankündigung mit Bild aus der Übung, Frage, "Jetzt neu".
 const seiten = st.art === "marketing" ? [
-  textSeite("Kennst du das?", st.problem, st.problemSatz, fuss),
-  textSeite("Frage an dich", st.frage, st.antwort, fuss),
-  textSeite("Die Lösung", st.loesung, st.loesungSatz, `<div class="box">Heute ${esc(st.zeit || "18:30")}</div><p class="zeile">So geht’s: neues Reel auf dem Profil.</p>`),
+  textSeite("Kennst du das?", st.problem, st.problemSatz, fuss, st.problemNotiz || "Kommt dir bekannt vor?"),
+  textSeite("Frage an dich", st.frage, st.antwort, fuss, st.frageNotiz || "Schreib uns ↓", "neon"),
+  textSeite("Die Lösung", st.loesung, st.loesungSatz, `<div class="box">Heute ${esc(st.zeit || "18:30")}</div><p class="zeile">So geht’s: neues Reel auf dem Profil.</p>`, st.loesungNotiz || "Heute Abend zeigen wir’s."),
 ] : [
   mitBild(b1, `Heute ${st.zeit || "18:30"}`, `Neues Reel: ${st.name}`),
-  textSeite("Frage an dich", st.frage, st.antwort, fuss),
+  textSeite("Frage an dich", st.frage, st.antwort, fuss, st.frageNotiz || "Schreib uns ↓", "neon"),
   mitBild(b3, "Jetzt neu", "Ganzes Reel auf dem Profil."),
 ];
 const browser = await chromium.launch(), page = await (await browser.newContext({ viewport: { width: 1080, height: 1920 }, deviceScaleFactor: 1 })).newPage();
@@ -58,8 +63,8 @@ for (const [i, html] of seiten.entries()) {
     const passe = (el, max) => { if (!el) return; let px = parseFloat(getComputedStyle(el).fontSize); while (el.scrollWidth > max && px > 40) { px -= 4; el.style.fontSize = px + "px"; } };
     passe(document.querySelector(".box"), 880); passe(document.querySelector("h1"), 936);
     const h = document.querySelector("h1"), s = document.querySelector(".strich"), sub = document.querySelector(".sub");
-    if (h) { s.style.top = h.offsetTop + h.offsetHeight + 40 + "px"; sub.style.top = h.offsetTop + h.offsetHeight + 96 + "px"; }
-    return [...document.querySelectorAll(".box,h1,.zeile,.sub,.tag")].filter((e) => e.getBoundingClientRect().right > 1010 || e.scrollWidth > e.clientWidth + 2).map((e) => e.textContent.slice(0, 40));
+    if (h) { s.style.top = h.offsetTop + h.offsetHeight + 40 + "px"; sub.style.top = h.offsetTop + h.offsetHeight + 96 + "px"; const n = document.querySelector(".hand"); if (n) n.style.top = sub.offsetTop + sub.offsetHeight + 90 + "px"; }
+    return [...document.querySelectorAll(".box,h1,.zeile,.sub,.tag,.hand")].filter((e) => e.getBoundingClientRect().right > 1010 || e.scrollWidth > e.clientWidth + 2).map((e) => e.textContent.slice(0, 40));
   });
   if (zuBreit.length) console.warn("ACHTUNG, Text zu lang in Bild " + (i + 1) + ": " + zuBreit.join(" | "));
   const ziel = path.join(OUT, `${kennung}-story-${i + 1}.jpg`);

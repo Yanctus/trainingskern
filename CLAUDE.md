@@ -98,6 +98,9 @@ hinführen. Muster des Nutzers:
 1. „KENNST DU DAS?“ mit dem Problem, 2. „FRAGE AN DICH“, 3. „DIE LÖSUNG“ mit „HEUTE 18:30 · So geht’s: neues Reel auf dem Profil.“
 Die Storys machen auf das Problem aufmerksam, das Reel am Abend zeigt die Lösung.
 
+Damit die drei Bilder nicht gleich aussehen (Wunsch vom 24.11.2026): Das mittlere Bild (Frage) steht auf Neon, und unter dem Text steht
+eine kurze Notiz in der orangen Handschrift der Seite (`problemNotiz`, `frageNotiz`, `loesungNotiz`; ohne Angabe Standardtexte).
+
 **Gehört zu jedem Video dazu, ohne dass der Nutzer danach fragt:** In die Story-Datei kommt der Block `"storys"` (Name, Uhrzeit, zwei
 Zeitpunkte im Video, Frage in zwei Zeilen, ein Satz zum Antworten), nach dem Rendern läuft `node storys.mjs stories/<name>.json`.
 Das erzeugt `out/<name>-story-1.jpg` bis `-3.jpg`. Ein Übersichtsbild der drei ansehen, dann mit dem Video in denselben Drive-Ordner laden.
