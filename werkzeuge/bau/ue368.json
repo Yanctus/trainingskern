@@ -1,0 +1,887 @@
+{
+ "title": "Viererkette köpft und klärt",
+ "code": "UE-368",
+ "kind": "Übungsform",
+ "focuses": [
+  "Verteidigen",
+  "Schnelligkeit",
+  "Zusammenspiel"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 7,
+ "players_max": 10,
+ "field_size": "40 x 40 m",
+ "description": "Eine Viererkette steht vor dem großen Tor und hört auf die Rufe des Trainers. Ruft er eine Nummer, sprintet dieser Verteidiger zum Hütchen und köpft den Ball zurück, die anderen drei rücken auf und sichern ab. Ruft er „Flanke!“, sprinten alle zurück vor das Tor und klären die Flanke Richtung Minitor. Danach ist die nächste Viererkette dran.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 40 mal 40 Metern mit großem Tor und Torwart oben und zwei Minitoren unten. Davor drei Reihen Hütchen: vier Starthütchen, drei Paare zum Absichern in der Mitte und vier Kopfballhütchen, nummeriert von eins bis vier.",
+  "Verteilen: Vier Verteidiger stehen an den Starthütchen, die nächste Viererkette wartet neben dem Feld. Der Trainer steht unten mit Bällen, links oben steht ein Flankengeber mit Bällen.",
+  "Ablauf: Der Trainer ruft eine Nummer von eins bis vier. Dieser Verteidiger sprintet zu seinem Kopfballhütchen und köpft den zugeworfenen Ball zurück, die anderen drei rücken zu den Hütchen in der Mitte auf. Danach ruft der Trainer die nächste Nummer oder „Zurück“. Ruft er „Flanke!“, sprinten alle vor das Tor und wehren die Flanke ab.",
+  "Wertung und Wechsel: Wer die Flanke Richtung Minitor klärt und trifft, holt einen Punkt für Team Neon. Danach rückt die nächste Viererkette nach vorn."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Einer presst, die anderen drei sichern schräg dahinter",
+  "Mit der Stirn köpfen und sofort zurück in die Kette",
+  "Bei „Flanke!“ Vollgas zurück vor das Tor",
+  "Nicht einfach weghauen, Richtung Minitor klären"
+ ],
+ "materials": [
+  "1 großes Tor",
+  "2 Minitore",
+  "14 Hütchen",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Viererkette köpft und klärt. Die Kette hört auf den Trainer. Einer köpft vorn, die anderen sichern ab. Und beim Ruf „Flanke!“ sprinten alle zurück und klären.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "gross"
+   },
+   {
+    "x": 30,
+    "y": 55,
+    "side": "bottom"
+   },
+   {
+    "x": 70,
+    "y": 55,
+    "side": "bottom"
+   }
+  ],
+  "cones": [
+   {
+    "x": 27.5,
+    "y": 23,
+    "color": "orange"
+   },
+   {
+    "x": 40.0,
+    "y": 23,
+    "color": "orange"
+   },
+   {
+    "x": 53.0,
+    "y": 23,
+    "color": "orange"
+   },
+   {
+    "x": 65.5,
+    "y": 23,
+    "color": "orange"
+   },
+   {
+    "x": 35.5,
+    "y": 36,
+    "color": "orange"
+   },
+   {
+    "x": 39,
+    "y": 36,
+    "color": "orange"
+   },
+   {
+    "x": 48.3,
+    "y": 36,
+    "color": "orange"
+   },
+   {
+    "x": 51.7,
+    "y": 36,
+    "color": "orange"
+   },
+   {
+    "x": 61,
+    "y": 36,
+    "color": "orange"
+   },
+   {
+    "x": 64.5,
+    "y": 36,
+    "color": "orange"
+   },
+   {
+    "x": 31,
+    "y": 47,
+    "color": "neon"
+   },
+   {
+    "x": 43.5,
+    "y": 47,
+    "color": "neon"
+   },
+   {
+    "x": 56.5,
+    "y": 47,
+    "color": "neon"
+   },
+   {
+    "x": 69,
+    "y": 47,
+    "color": "neon"
+   }
+  ],
+  "players": [
+   {
+    "id": "k",
+    "team": "t",
+    "x": 50,
+    "y": 7,
+    "label": "TW"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 31,
+    "y": 23,
+    "label": "2"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 43.5,
+    "y": 23,
+    "label": "6"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 56.5,
+    "y": 23,
+    "label": "5"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 69,
+    "y": 23,
+    "label": "3"
+   },
+   {
+    "id": "f",
+    "team": "t",
+    "x": 17,
+    "y": 13,
+    "label": "F"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 50,
+    "y": 52.5,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 50.6,
+    "y": 53.1
+   },
+   {
+    "id": "b2",
+    "x": 17.6,
+    "y": 13.6
+   },
+   {
+    "id": "s1",
+    "x": 53.5,
+    "y": 53.4
+   },
+   {
+    "id": "s2",
+    "x": 56,
+    "y": 53.4
+   }
+  ],
+  "steps": [
+   {
+    "label": "Trainer ruft die Drei",
+    "say": "Der Trainer ruft drei. Das ist Spieler fünf, und der sprintet sofort vor zum dritten Kopfballhütchen. Gleichzeitig rücken die anderen drei zu den Hütchen in der Mitte auf, schräg hinter ihn.",
+    "moves": [
+     {
+      "who": "n5",
+      "to": [
+       56.5,
+       44
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n2",
+      "to": [
+       39,
+       33.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n6",
+      "to": [
+       48.3,
+       33.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n3",
+      "to": [
+       61,
+       33.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Kopfball zurück zum Trainer",
+    "say": "Der Trainer wirft den Ball. Spieler fünf köpft ihn mit der Stirn genau zurück.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       57.1,
+       44.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       53.1
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zurück zum Start",
+    "say": "Jetzt ruft der Trainer zurück. Alle vier laufen rückwärts in ihre Startposition, die Kette steht wieder auf einer Linie.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       31,
+       23
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n6",
+      "to": [
+       43.5,
+       23
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n5",
+      "to": [
+       56.5,
+       23
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n3",
+      "to": [
+       69,
+       23
+      ],
+      "type": "lauf"
+     }
+    ]
+   },
+   {
+    "label": "Die Eins, dann Kopfball",
+    "say": "Nächste Nummer, die Eins. Jetzt sprintet Spieler zwei ganz außen vor. Die anderen drei schieben schräg zu ihm rüber. Kopfball zurück zum Trainer.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       31,
+       44
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n6",
+      "to": [
+       35.5,
+       33.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n5",
+      "to": [
+       48.3,
+       33.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n3",
+      "to": [
+       61,
+       33.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       31.6,
+       44.6
+      ],
+      "type": "pass",
+      "delay": 0.4,
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       53.1
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Flanke! Alle vor das Tor",
+    "say": "Der Trainer ruft Flanke. Alle vier drehen um und sprinten zurück vor das Tor. Von links oben kommt die Flanke.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       38,
+       14
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n3",
+      "to": [
+       62,
+       14
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n5",
+      "to": [
+       57,
+       26
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n5",
+      "to": [
+       54.5,
+       12.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n6",
+      "to": [
+       43,
+       26
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n6",
+      "to": [
+       45.5,
+       12.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b2",
+      "to": [
+       46.1,
+       13.1
+      ],
+      "type": "pass",
+      "delay": 0.3,
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Geklärt ins Minitor: Punkt",
+    "say": "Spieler sechs ist zuerst am Ball und köpft ihn weit raus, Richtung Minitor. Er landet drin, und das gibt einen Punkt für Team Neon. Dann rückt die nächste Viererkette vor.",
+    "moves": [
+     {
+      "who": "b2",
+      "to": [
+       30,
+       54.5
+      ],
+      "type": "pass",
+      "bend": -8
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "40 m"
+   },
+   {
+    "x1": 83,
+    "y1": 5,
+    "x2": 83,
+    "y2": 55,
+    "text": "40 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Die anderen drei sichern ab.",
+   "title": "Die anderen drei sichern",
+   "text": "Presst einer vorn, bleibt keiner stehen. Der Nächste rückt schräg hinter ihn, die anderen schieben mit zur Seite. So bleiben die Abstände klein, und durch die Mitte kommt kein Ball.",
+   "board": {
+    "players": [
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50,
+      "y": 7,
+      "label": "TW"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 31,
+      "y": 23,
+      "label": "2"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 43.5,
+      "y": 23,
+      "label": "6"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 56.5,
+      "y": 23,
+      "label": "5"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 69,
+      "y": 23,
+      "label": "3"
+     },
+     {
+      "id": "f",
+      "team": "t",
+      "x": 17,
+      "y": 13,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 52.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 53.1
+     },
+     {
+      "id": "b2",
+      "x": 17.6,
+      "y": 13.6
+     },
+     {
+      "id": "s1",
+      "x": 53.5,
+      "y": 53.4
+     },
+     {
+      "id": "s2",
+      "x": 56,
+      "y": 53.4
+     }
+    ],
+    "steps": [
+     {
+      "label": "Die Vier: alle schieben rüber",
+      "say": "Der Trainer ruft vier, Spieler drei sprintet ganz rechts vor. Spieler fünf geht schräg hinter ihn, Spieler sechs und Spieler zwei schieben mit nach rechts.",
+      "moves": [
+       {
+        "who": "n3",
+        "to": [
+         69,
+         44
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n2",
+        "to": [
+         39,
+         33.5
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n6",
+        "to": [
+         51.7,
+         33.5
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n5",
+        "to": [
+         64.5,
+         33.5
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Kopfball und sofort zurück",
+      "say": "Kopfball zurück zum Trainer. Danach geht keiner spazieren. Alle vier laufen sofort zurück in die Kette.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         69.6,
+         44.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         53.1
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n2",
+        "to": [
+         31,
+         23
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "n6",
+        "to": [
+         43.5,
+         23
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "n5",
+        "to": [
+         56.5,
+         23
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "n3",
+        "to": [
+         69,
+         23
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 25,
+      "y1": 58.6,
+      "x2": 75,
+      "y2": 58.6,
+      "text": "40 m"
+     },
+     {
+      "x1": 83,
+      "y1": 5,
+      "x2": 83,
+      "y2": 55,
+      "text": "40 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Mit Ziel klären.",
+   "title": "Mit Ziel klären",
+   "text": "Wer die Flanke abwehrt, haut den Ball nicht irgendwohin. Er köpft ihn hoch und weit zur Seite, Richtung Minitor. Dort würde im Spiel der eigene Flügelspieler stehen. Danach rückt die Kette sofort wieder raus.",
+   "board": {
+    "players": [
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50,
+      "y": 7,
+      "label": "TW"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 31,
+      "y": 23,
+      "label": "2"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 43.5,
+      "y": 23,
+      "label": "6"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 56.5,
+      "y": 23,
+      "label": "5"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 69,
+      "y": 23,
+      "label": "3"
+     },
+     {
+      "id": "f",
+      "team": "t",
+      "x": 17,
+      "y": 13,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 52.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 53.1
+     },
+     {
+      "id": "b2",
+      "x": 17.6,
+      "y": 13.6
+     },
+     {
+      "id": "s1",
+      "x": 53.5,
+      "y": 53.4
+     },
+     {
+      "id": "s2",
+      "x": 56,
+      "y": 53.4
+     }
+    ],
+    "steps": [
+     {
+      "label": "Flanke, alle vor das Tor",
+      "say": "Flanke! Die Kette sprintet zurück vor das Tor. Diesmal kommt der Ball zu Spieler fünf.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         38,
+         14
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n6",
+        "to": [
+         45.5,
+         12.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n5",
+        "to": [
+         54.5,
+         12.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n3",
+        "to": [
+         62,
+         14
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b2",
+        "to": [
+         55.1,
+         13.1
+        ],
+        "type": "pass",
+        "delay": 1.0
+       }
+      ]
+     },
+     {
+      "label": "Zur Seite köpfen: Punkt",
+      "say": "Spieler fünf köpft den Ball hoch und weit nach außen, genau Richtung Minitor. Er landet drin, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         70,
+         54.5
+        ],
+        "type": "pass",
+        "bend": 8
+       }
+      ]
+     },
+     {
+      "label": "Kette rückt raus",
+      "say": "Sofort schiebt die ganze Kette gemeinsam raus bis zu den Starthütchen. Dann ruft der Trainer die nächste Nummer.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         31,
+         23
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n6",
+        "to": [
+         43.5,
+         23
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n5",
+        "to": [
+         56.5,
+         23
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n3",
+        "to": [
+         69,
+         23
+        ],
+        "type": "lauf"
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 25,
+      "y1": 58.6,
+      "x2": 75,
+      "y2": 58.6,
+      "text": "40 m"
+     },
+     {
+      "x1": 83,
+      "y1": 5,
+      "x2": 83,
+      "y2": 55,
+      "text": "40 m"
+     }
+    ]
+   }
+  }
+ ]
+}

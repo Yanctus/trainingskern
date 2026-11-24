@@ -54,7 +54,7 @@ u = {"title": "Hohes Pressing im Zonenrondo", "code": "UE-354", "kind": "Spielfo
   "steps": [
    S("Trainer spielt ein, drei laufen rein", "Der Trainer spielt in die Zone von Team Rot, zu Spieler vierzehn. Sofort laufen drei Verteidiger von Team Neon aus der Mittelzone rein. Jetzt heißt es sechs gegen drei.",
      ps("b1", fu(86, 38)), mv("n2", [66, 9.5], delay=0.3), mv("n10", [70, 26], delay=0.3), mv("n5", [70, 38], delay=0.3)),
-   S("Zusammen pressen, Seite zu", "Team Rot zählt laut mit. Spieler vierzehn spielt hoch zu Spieler dreizehn. Die drei schieben zusammen rüber, Spieler zwei läuft so an, dass der Weg zurück zu ist.",
+   S("Zusammen pressen, Seite zu", "Team Rot zählt laut mit. Spieler vierzehn spielt zu Spieler dreizehn. Die drei schieben zusammen rüber, Spieler zwei läuft so an, dass der Weg zurück zu ist.",
      ps("b1", fu(86, 15)), mv("n2", [79, 12], delay=0.3), mv("n10", [75, 21], delay=0.3), mv("n5", [74, 32], delay=0.3)),
    S("Ballgewinn, ab in die andere Zone", "Spieler dreizehn bleibt nur der Pass zu Spieler zwölf. Den fängt Spieler zehn ab und spielt sofort lang in die andere Zone. Team Rot hat den Ball verloren, also sprinten drei von Team Rot hinüber und pressen dort.",
      ps("b1", [80, 10.5]), mv("n10", [79.4, 9.9], delay=0.1), ps("b1", fu(31, 6), after=True),
@@ -74,7 +74,7 @@ u = {"title": "Hohes Pressing im Zonenrondo", "code": "UE-354", "kind": "Spielfo
   V("Steigerung", "Und jetzt die Steigerung: Zwei Springer pro Zone, geschossen wird nur direkt nach ihrer Ablage.", "Springer legen auf",
     "In jede Zone kommen zwei Springer, die immer für das Team mit dem Ball spielen. Wenig Spieler? Dann vier je Team, mit mehr Spielern sechs plus zwei Springer. Nach zehn Pässen darf nur direkt nach einer Ablage vom Springer geschossen werden. Die Verteidiger müssen pressen und gleichzeitig den Pass zum Springer zustellen.",
     sp(POS2), [B("b1", *fu(86, 15))] + ERSATZ,
-    [S("Springer spielen mit", "Vier von Team Rot und zwei Springer gegen drei. Spieler dreizehn spielt hoch zu Spieler zwölf, und Spieler zehn läuft ihn an. Der Springer bietet sich an der Seite an.",
+    [S("Springer spielen mit", "Vier von Team Rot und zwei Springer gegen drei. Spieler dreizehn spielt zu Spieler zwölf, und Spieler zehn läuft ihn an. Der Springer bietet sich an der Seite an.",
        ps("b1", fu(74, 6)), mv("n10", [76, 12.5], delay=0.3), mv("n2", [64, 24], delay=0.4)),
      S("Ablage, direkt geschossen: Punkt", "Die zehn Pässe sind voll. Spieler zwölf spielt zum Springer und startet sofort. Die Ablage kommt in den Lauf, und Spieler zwölf schießt direkt ins Tor. Das gibt einen Punkt für Team Rot.",
        ps("b1", fu(60, 10)), mv("r12", [68, 17], delay=0.4), ps("b1", fu(68, 17), after=True), ps("b1", [53.4, 22.5], after=True))])]}

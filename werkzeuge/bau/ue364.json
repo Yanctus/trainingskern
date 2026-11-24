@@ -1,0 +1,845 @@
+{
+ "title": "Falsche Neun in der Welle",
+ "code": "UE-364",
+ "kind": "Spielform",
+ "focuses": [
+  "Zusammenspiel",
+  "Umschalten",
+  "Torschuss"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 11,
+ "players_max": 14,
+ "field_size": "25 x 35 m",
+ "description": "Angriffswellen mit drei Spielern auf zwei Tore, immer hin und her. Der Trainer spielt die falsche Neun an, die sich in die mittlere Zone fallen lässt, aufdreht und die Flügelstürmer hinter die Abwehr schickt. Das Team der letzten Welle sprintet von hinten zurück und verteidigt. Nach jedem Abschluss startet sofort die nächste Welle auf das andere Tor.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 25 mal 35 Metern mit zwei großen Toren und Torhütern. Zwei gestrichelte Linien teilen es in drei Zonen, 14 Meter, in der Mitte 9 Meter, und wieder 14 Meter.",
+  "Verteilen: Vier Dreierteams, jedes mit einer falschen Neun und zwei Flügelstürmern. Ein Team greift an, das Team der letzten Welle steht hinten, die beiden anderen warten an den Seiten. Der Trainer steht mit vielen Bällen an der Seitenlinie auf Höhe der Mitte.",
+  "Ablauf: Der Trainer spielt die Neun an, die in die mittlere Zone kommt. Sie dreht auf und spielt die Flügelstürmer hinter der Abwehr an. Das Team der letzten Welle sprintet zurück und verteidigt.",
+  "Wertung und Wechsel: Jeder Treffer gibt einen Punkt. Danach greift das nächste Dreierteam sofort auf das andere Tor an, und die Angreifer von eben sprinten zurück und verteidigen."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Über die Schulter schauen, halb aufgedreht annehmen",
+  "Flügelstürmer starten im richtigen Moment hinter die Kette",
+  "Ist Platz da, früh abschließen",
+  "Nach dem Angriff sofort zurücksprinten"
+ ],
+ "materials": [
+  "2 große Tore",
+  "4 Hütchen",
+  "2 Dummys",
+  "Leibchen in vier Farben",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Falsche Neun in der Welle. Drei gegen drei auf zwei Tore, immer hin und her. Die Spitze holt sich den Ball in der Mitte, und die Flügelstürmer laufen hinter die Abwehr.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 9,
+    "y": 4,
+    "w": 80,
+    "h": 47
+   },
+   {
+    "type": "line",
+    "x1": 39,
+    "y1": 4,
+    "x2": 39,
+    "y2": 51,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 59,
+    "y1": 4,
+    "x2": 59,
+    "y2": 51,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 9,
+    "y": 27.5,
+    "side": "left",
+    "size": "gross"
+   },
+   {
+    "x": 89,
+    "y": 27.5,
+    "side": "right",
+    "size": "gross"
+   }
+  ],
+  "cones": [
+   {
+    "x": 39,
+    "y": 4,
+    "color": "orange"
+   },
+   {
+    "x": 39,
+    "y": 51,
+    "color": "orange"
+   },
+   {
+    "x": 59,
+    "y": 4,
+    "color": "orange"
+   },
+   {
+    "x": 59,
+    "y": 51,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 62,
+    "y": 10.5,
+    "label": "11"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 64,
+    "y": 27.5,
+    "label": "9"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 62,
+    "y": 44.5,
+    "label": "7"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 24,
+    "y": 11,
+    "label": "6"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 26,
+    "y": 28.5,
+    "label": "8"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 24,
+    "y": 45.5,
+    "label": "10"
+   },
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 13,
+    "y": 27.5,
+    "label": "TW"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 85,
+    "y": 27.5,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 50,
+    "y": 55.3,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 50.6,
+    "y": 55.9
+   },
+   {
+    "id": "s1",
+    "x": 53.5,
+    "y": 55.8
+   },
+   {
+    "id": "s2",
+    "x": 56,
+    "y": 55.8
+   }
+  ],
+  "dims": [
+   {
+    "x1": 9,
+    "y1": 58.6,
+    "x2": 89,
+    "y2": 58.6,
+    "text": "35 m"
+   }
+  ],
+  "steps": [
+   {
+    "label": "Spieler neun kommt in die Mitte",
+    "say": "Team Neon greift zuerst an. Spieler neun lässt sich aus der Spitze in die mittlere Zone fallen. Er schaut kurz über die Schulter, wo Team Rot ist, dann zum Ball. Der Trainer spielt ihn an, und hinten sprintet Team Rot schon zurück.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       51,
+       29
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n9",
+      "to": [
+       50.3,
+       48
+      ],
+      "type": "blick",
+      "after": true,
+      "von": [
+       33,
+       30
+      ]
+     },
+     {
+      "who": "b1",
+      "to": [
+       51.6,
+       29.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r6",
+      "to": [
+       36,
+       12
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "r8",
+      "to": [
+       36,
+       33
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "r10",
+      "to": [
+       36,
+       46
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Halb aufgedreht, steil auf Spieler sieben",
+    "say": "Spieler neun nimmt halb aufgedreht an und spielt sofort nach vorn. Spieler sieben ist außen hinter die Abwehr gestartet und bekommt den Ball in den Lauf. Spieler elf geht mit in die Mitte.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       72,
+       37.5
+      ],
+      "type": "blick",
+      "von": [
+       50.3,
+       48
+      ],
+      "dauer": 1.3
+     },
+     {
+      "who": "n9",
+      "to": [
+       72,
+       37.5
+      ],
+      "type": "dreh",
+      "delay": 0.4,
+      "bend": -1
+     },
+     {
+      "who": "n7",
+      "to": [
+       77,
+       40
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "b1",
+      "to": [
+       77.6,
+       40.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n11",
+      "to": [
+       76,
+       20
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     },
+     {
+      "who": "r6",
+      "to": [
+       46,
+       12
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "r8",
+      "to": [
+       45,
+       36
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "r10",
+      "to": [
+       46,
+       46
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Früh abschließen: Punkt",
+    "say": "Spieler sieben wartet nicht, bis Team Rot zurück ist. Er schießt sofort, und das gibt einen Punkt für Team Neon. Jetzt geht es in die andere Richtung weiter. Der Trainer spielt das nächste Dreierteam an, das auf das andere Tor angreift, und Team Neon sprintet zurück und verteidigt.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       88.5,
+       31.5
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n9",
+      "to": [
+       40,
+       27
+      ],
+      "type": "lauf",
+      "delay": 1.0
+     },
+     {
+      "who": "n11",
+      "to": [
+       56,
+       9
+      ],
+      "type": "lauf",
+      "delay": 1.0
+     },
+     {
+      "who": "n7",
+      "to": [
+       60,
+       44
+      ],
+      "type": "lauf",
+      "delay": 1.0
+     }
+    ]
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Wer mit dem ersten Angriff trifft, bekommt sofort einen zweiten Ball.",
+   "title": "Treffer gibt zweiten Ball",
+   "text": "Trifft das Dreierteam mit dem ersten Angriff, spielt der Trainer sofort einen zweiten Ball ein. Jetzt steht Team Rot schon geordnet vor dem Tor. Die Angreifer müssen sich gegen eine fertige Abwehr durchspielen und brauchen dafür mehr als einen Pass.",
+   "board": {
+    "players": [
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 52,
+      "y": 11,
+      "label": "11"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 54,
+      "y": 28,
+      "label": "9"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 60,
+      "y": 43.5,
+      "label": "7"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 72,
+      "y": 14,
+      "label": "6"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 70,
+      "y": 30.5,
+      "label": "8"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 72,
+      "y": 47,
+      "label": "10"
+     },
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 13,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 85,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 55.9
+     },
+     {
+      "id": "s1",
+      "x": 53.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 56,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zweiter Ball vom Trainer",
+      "say": "Der erste Angriff war drin. Sofort kommt der zweite Ball vom Trainer auf Spieler neun. Team Rot steht jetzt zu dritt geordnet vor dem Tor und wartet.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         54.6,
+         28.6
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Breit auf Spieler elf, die Neun startet",
+      "say": "Spieler neun spielt nach außen zu Spieler elf und läuft sofort in die Lücke zwischen Spieler sechs und Spieler acht. Spieler sechs geht raus zum Ball.",
+      "moves": [
+       {
+        "who": "n11",
+        "to": [
+         60,
+         12
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         60.6,
+         12.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "r6",
+        "to": [
+         68,
+         11
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       },
+       {
+        "who": "n9",
+        "to": [
+         74,
+         22
+        ],
+        "type": "lauf",
+        "delay": 0.8
+       }
+      ]
+     },
+     {
+      "label": "Pass in den Lauf: Punkt",
+      "say": "Spieler elf spielt flach in den Lauf von Spieler neun. Der schließt mit dem ersten Kontakt ab, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         74.6,
+         22.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         88.5,
+         24.5
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Zwei Dummys stehen in der Mitte, und der Trainer ruft, wo sich Spieler neun anbietet.",
+   "title": "Dummys und Zuruf vom Trainer",
+   "text": "In der mittleren Zone stehen zwei Dummys. Kurz vor dem Pass ruft der Trainer links, rechts oder Mitte. Die Neun lässt sich genau in diese Lücke fallen, nimmt dort an und dreht auf. Links und rechts gelten aus Sicht der Angreifer.",
+   "board": {
+    "players": [
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 62,
+      "y": 10.5,
+      "label": "11"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 64,
+      "y": 27.5,
+      "label": "9"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 62,
+      "y": 44.5,
+      "label": "7"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 24,
+      "y": 11,
+      "label": "6"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 26,
+      "y": 28.5,
+      "label": "8"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 24,
+      "y": 45.5,
+      "label": "10"
+     },
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 13,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 85,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 55.9
+     },
+     {
+      "id": "s1",
+      "x": 53.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 56,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Der Trainer ruft: Links!",
+      "say": "Der Trainer ruft links. Spieler neun lässt sich in die Lücke links neben dem Dummy fallen und schaut zum Ball. Dort bekommt er ihn vom Trainer. Team Rot sprintet hinten zurück.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         52,
+         11.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n9",
+        "to": [
+         51.4,
+         31.5
+        ],
+        "type": "blick",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         52.6,
+         12.1
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "r6",
+        "to": [
+         36,
+         12
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "r8",
+        "to": [
+         36,
+         33
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "r10",
+        "to": [
+         36,
+         46
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Aufdrehen, steil auf Spieler elf",
+      "say": "Spieler neun dreht auf und spielt steil. Spieler elf startet außen hinter die Abwehr und nimmt den Ball mit.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         72,
+         13.5
+        ],
+        "type": "blick",
+        "von": [
+         51.4,
+         31.5
+        ],
+        "dauer": 1.3
+       },
+       {
+        "who": "n9",
+        "to": [
+         72,
+         13.5
+        ],
+        "type": "dreh",
+        "delay": 0.4,
+        "bend": -1
+       },
+       {
+        "who": "n11",
+        "to": [
+         77,
+         14
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "b1",
+        "to": [
+         77.6,
+         14.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "r6",
+        "to": [
+         42,
+         15
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "r8",
+        "to": [
+         42,
+         30
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "r10",
+        "to": [
+         44,
+         46
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Abschluss: Punkt",
+      "say": "Spieler elf zieht sofort ab, und das gibt einen Punkt für Team Neon. Beim nächsten Angriff ruft der Trainer eine andere Seite.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         88.5,
+         25
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ],
+    "cones": [
+     {
+      "x": 39,
+      "y": 4,
+      "color": "orange",
+      "id": "h1"
+     },
+     {
+      "x": 39,
+      "y": 51,
+      "color": "orange",
+      "id": "h2"
+     },
+     {
+      "x": 59,
+      "y": 4,
+      "color": "orange",
+      "id": "h3"
+     },
+     {
+      "x": 59,
+      "y": 51,
+      "color": "orange",
+      "id": "h4"
+     },
+     {
+      "x": 47,
+      "y": 19,
+      "color": "orange",
+      "shape": "stange",
+      "id": "d1"
+     },
+     {
+      "x": 47,
+      "y": 36,
+      "color": "orange",
+      "shape": "stange",
+      "id": "d2"
+     }
+    ]
+   }
+  }
+ ]
+}

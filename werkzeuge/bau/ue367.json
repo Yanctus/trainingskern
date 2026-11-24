@@ -1,0 +1,714 @@
+{
+ "title": "Direkt, dann zwei Kontakte",
+ "code": "UE-367",
+ "kind": "Spielform",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel",
+  "Ballannahme"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 10,
+ "players_max": 10,
+ "field_size": "25 x 30 m",
+ "description": "Fünf gegen fünf auf Ballbesitz in einem Feld von 25 mal 30 Metern. Das Team am Ball muss eine feste Reihenfolge spielen: ein Pass direkt, der nächste mit zwei Kontakten, dann wieder direkt. Wer einen Kontakt zu viel nimmt oder den Ball verliert, gibt ihn sofort ab. Dann spielt das andere Team in derselben Reihenfolge.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 25 mal 30 Metern mit vier Hütchen an den Ecken.",
+  "Verteilen: Zwei Teams mit je fünf Spielern, alle im Feld verteilt. Team Neon beginnt mit Ball. Der Trainer steht mit Bällen am Rand.",
+  "Ablauf: Der erste Pass startet das Spiel. Danach gilt die Reihenfolge: direkt, zwei Kontakte, direkt, zwei Kontakte. Team Rot versucht, den Ball zu erobern.",
+  "Wechsel: Ein Kontakt zu viel oder ein Ballverlust, und der Ball gehört dem anderen Team. Das spielt sofort in derselben Reihenfolge weiter. Geht der Ball ins Aus, spielt der Trainer einen neuen Ball ein."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Vor dem Pass schauen, wo der Nächste steht",
+  "Schräg anbieten, nicht hinter dem Gegner verstecken",
+  "Mitzählen: Wer muss jetzt direkt spielen?",
+  "Ball weg? Sofort nachsetzen"
+ ],
+ "materials": [
+  "4 Hütchen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Direkt, dann zwei Kontakte. Fünf gegen fünf auf Ballbesitz. Das Team am Ball spielt eine feste Reihenfolge, und wer sich verzählt, gibt den Ball ab.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 26,
+    "y": 5,
+    "w": 48,
+    "h": 50
+   }
+  ],
+  "cones": [
+   {
+    "x": 26,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 74,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 26,
+    "y": 55,
+    "color": "orange"
+   },
+   {
+    "x": 74,
+    "y": 55,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 33,
+    "y": 12,
+    "label": "9"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 49,
+    "y": 7,
+    "label": "10"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 59.5,
+    "y": 12,
+    "label": "2"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 69,
+    "y": 12,
+    "label": "3"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 40,
+    "y": 28,
+    "label": "6"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 62,
+    "y": 28,
+    "label": "5"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 32,
+    "y": 44,
+    "label": "4"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 42,
+    "y": 50,
+    "label": "7"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 52,
+    "y": 44,
+    "label": "8"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 63,
+    "y": 44.5,
+    "label": "11"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 16,
+    "y": 20,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 60.1,
+    "y": 12.6
+   },
+   {
+    "id": "s1",
+    "x": 16.6,
+    "y": 23.6
+   },
+   {
+    "id": "s2",
+    "x": 19.1,
+    "y": 23.6
+   }
+  ],
+  "steps": [
+   {
+    "label": "Eröffnung, Spieler neun direkt",
+    "say": "Spieler zwei eröffnet zu Spieler neun. Der muss direkt spielen, also schaut er schon vorher, wo Spieler vier steht. Der Ball geht sofort weiter.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       32.5,
+       32
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b1",
+      "to": [
+       33.6,
+       12.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r10",
+      "to": [
+       42,
+       13
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       32.6,
+       44.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Spieler vier hat zwei Kontakte",
+    "say": "Jetzt darf Spieler vier annehmen. Erster Kontakt zur Seite, mit dem zweiten spielt er zu Spieler acht. Spieler sieben läuft ihn an, kommt aber zu spät.",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       35,
+       44
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "r7",
+      "to": [
+       36,
+       48.5
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "b1",
+      "to": [
+       52.6,
+       44.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Ein Kontakt zu viel: Ballwechsel",
+    "say": "Spieler acht müsste direkt spielen. Er stoppt den Ball aber erst. Ein Kontakt zu viel, also gehört der Ball jetzt Team Rot. Spieler elf geht dazwischen und nimmt ihn mit. Ab jetzt spielt Team Rot in derselben Reihenfolge.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       53.5,
+       42.5
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "r11",
+      "to": [
+       54.5,
+       41.5
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     },
+     {
+      "who": "r11",
+      "to": [
+       58,
+       37
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 26,
+    "y1": 58.6,
+    "x2": 74,
+    "y2": 58.6,
+    "text": "25 m"
+   },
+   {
+    "x1": 82,
+    "y1": 5,
+    "x2": 82,
+    "y2": 55,
+    "text": "30 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Anbieten, und zwar schräg.",
+   "title": "Schräg anbieten",
+   "text": "Der Ballführer braucht immer zwei, drei Anspielstationen. Wer hinter einem Gegner steht, ist nicht anspielbar. Also in die Lücke laufen, schräg zum Ball und mit Abstand zum Mitspieler. Der Ballführer hebt den Kopf und sucht den freien Mann.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 33,
+      "y": 12,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 49,
+      "y": 7,
+      "label": "10"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 59.5,
+      "y": 12,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 69,
+      "y": 12,
+      "label": "3"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 40,
+      "y": 28,
+      "label": "6"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 62,
+      "y": 28,
+      "label": "5"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 32,
+      "y": 44,
+      "label": "4"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 42,
+      "y": 50,
+      "label": "7"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 52,
+      "y": 44,
+      "label": "8"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 63,
+      "y": 44.5,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 16,
+      "y": 20,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 40.6,
+      "y": 28.6
+     },
+     {
+      "id": "s1",
+      "x": 16.6,
+      "y": 23.6
+     },
+     {
+      "id": "s2",
+      "x": 19.1,
+      "y": 23.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Drei laufen sich frei",
+      "say": "Team Rot hat den Ball, Spieler sechs führt ihn. Sofort laufen sich drei Mitspieler in die Lücken zwischen den Gegnern. So hat er drei Möglichkeiten.",
+      "moves": [
+       {
+        "who": "r10",
+        "to": [
+         46,
+         16
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r11",
+        "to": [
+         57,
+         38
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r7",
+        "to": [
+         33.5,
+         36
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "r6",
+        "to": [
+         46.6,
+         16.6
+        ],
+        "type": "option",
+        "after": true
+       },
+       {
+        "who": "r6",
+        "to": [
+         57.6,
+         38.6
+        ],
+        "type": "option"
+       },
+       {
+        "who": "r6",
+        "to": [
+         34.1,
+         36.6
+        ],
+        "type": "option"
+       }
+      ]
+     },
+     {
+      "label": "Pass in den freien Winkel",
+      "say": "Spieler sechs hebt den Kopf und sieht Spieler elf frei. Er hat zwei Kontakte und spielt zu ihm. Spieler elf muss direkt spielen, und Spieler sieben steht schon bereit.",
+      "moves": [
+       {
+        "who": "r6",
+        "to": [
+         57,
+         38
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         57.6,
+         38.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         34.1,
+         36.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 26,
+      "y1": 58.6,
+      "x2": 74,
+      "y2": 58.6,
+      "text": "25 m"
+     },
+     {
+      "x1": 82,
+      "y1": 5,
+      "x2": 82,
+      "y2": 55,
+      "text": "30 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Eine neue Reihenfolge.",
+   "title": "Zwei, zwei, dann direkt",
+   "text": "Der Trainer ändert die Reihenfolge. Jetzt heißt es zwei Kontakte, zwei Kontakte, ein Kontakt, und dann wieder von vorn. Alle müssen mitzählen, auch die Spieler ohne Ball.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 33,
+      "y": 12,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 49,
+      "y": 7,
+      "label": "10"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 59.5,
+      "y": 12,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 69,
+      "y": 12,
+      "label": "3"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 40,
+      "y": 28,
+      "label": "6"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 62,
+      "y": 28,
+      "label": "5"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 32,
+      "y": 44,
+      "label": "4"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 42,
+      "y": 50,
+      "label": "7"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 52,
+      "y": 44,
+      "label": "8"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 63,
+      "y": 44.5,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 16,
+      "y": 20,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 60.1,
+      "y": 12.6
+     },
+     {
+      "id": "s1",
+      "x": 16.6,
+      "y": 23.6
+     },
+     {
+      "id": "s2",
+      "x": 19.1,
+      "y": 23.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zweimal zwei Kontakte",
+      "say": "Spieler zwei nimmt den Ball mit und spielt zu Spieler fünf. Auch der hat zwei Kontakte. Annehmen, weiter zu Spieler acht.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         60.5,
+         16
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         62.6,
+         28.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n5",
+        "to": [
+         60,
+         31.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         52.6,
+         44.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Dann direkt, und von vorn",
+      "say": "Spieler acht ist der Dritte und spielt direkt zu Spieler vier. Danach beginnt die Reihe von vorn, Spieler vier hat also wieder zwei Kontakte.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         32.6,
+         44.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r7",
+        "to": [
+         38,
+         47
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n4",
+        "to": [
+         33,
+         40
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 26,
+      "y1": 58.6,
+      "x2": 74,
+      "y2": 58.6,
+      "text": "25 m"
+     },
+     {
+      "x1": 82,
+      "y1": 5,
+      "x2": 82,
+      "y2": 55,
+      "text": "30 m"
+     }
+    ]
+   }
+  }
+ ]
+}

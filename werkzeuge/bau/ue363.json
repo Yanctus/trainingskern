@@ -1,0 +1,791 @@
+{
+ "title": "Falsche Neun spielt Doppelpass",
+ "code": "UE-363",
+ "kind": "Übungsform",
+ "focuses": [
+  "Zusammenspiel",
+  "Passspiel",
+  "Torschuss"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 6,
+ "players_max": 10,
+ "field_size": "18 x 25 m",
+ "description": "Ein festes Passmuster für die falsche Neun vor dem Tor. Die Spitze löst sich von der Stange, nimmt den Pass aus dem Mittelfeld halb aufgedreht an und spielt auf den Flügel. Mit einem Doppelpass schickt sie den Flügelspieler hinter den Dummy, und der schließt gegen den Torwart ab. Nach jedem Angriff wechseln die Rollen und die Seite.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 25 Metern mit einem großen Tor und Torwart. In der Mitte steht eine Stange als Gegenspieler, weiter vorn auf beiden Seiten je ein Dummy. Am Start liegt ein Hütchen.",
+  "Verteilen: Eine Spitze an der Stange, zwei Flügelspieler außen neben den Dummys. Die übrigen Spieler warten mit Ball am Start. Der Trainer steht mit Ersatzbällen am Rand.",
+  "Ablauf: Pass vom Start auf die Spitze, die sich von der Stange löst. Sie dreht auf und spielt auf den Flügel, bekommt den Ball zurück und spielt den Flügelspieler hinter dem Dummy frei. Der schließt ab.",
+  "Wechsel: Wer am Start gepasst hat, geht an die Stange, die Spitze geht auf den Flügel, der Schütze stellt sich am Start an. Nach jedem Angriff ist die andere Seite dran. Jeder Treffer gibt einen Punkt."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Erst weg, dann an die Stange kommen",
+  "Vor dem Ball über die Schulter schauen",
+  "Halb aufgedreht mit dem hinteren Fuß annehmen",
+  "Genau passen, wenig Kontakte"
+ ],
+ "materials": [
+  "1 großes Tor",
+  "1 Stange",
+  "2 Dummys",
+  "1 Hütchen",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Falsche Neun spielt Doppelpass. Die Spitze kommt von der Stange weg, dreht auf und schickt den Flügelspieler mit einem Doppelpass hinter den Dummy.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 9,
+    "y": 4,
+    "w": 80,
+    "h": 47
+   }
+  ],
+  "goals": [
+   {
+    "x": 89,
+    "y": 27.5,
+    "side": "right",
+    "size": "gross"
+   }
+  ],
+  "cones": [
+   {
+    "x": 62.5,
+    "y": 15.2,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 62.5,
+    "y": 38.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 45.5,
+    "y": 27.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 12.5,
+    "y": 27.5,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 17,
+    "y": 27.5,
+    "label": "8"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 39,
+    "y": 31,
+    "label": "9"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 57.5,
+    "y": 10.8,
+    "label": "10"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 57.5,
+    "y": 44,
+    "label": "7"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 7.5,
+    "y": 11.5,
+    "label": "6"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 7.5,
+    "y": 43.5,
+    "label": "4"
+   },
+   {
+    "id": "k",
+    "team": "t",
+    "x": 85,
+    "y": 27.5,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 30,
+    "y": 55.3,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 17.6,
+    "y": 28.1
+   },
+   {
+    "id": "b6",
+    "x": 8.1,
+    "y": 12.1
+   },
+   {
+    "id": "b4",
+    "x": 8.1,
+    "y": 44.1
+   },
+   {
+    "id": "s1",
+    "x": 33.5,
+    "y": 55.8
+   },
+   {
+    "id": "s2",
+    "x": 36,
+    "y": 55.8
+   }
+  ],
+  "dims": [
+   {
+    "x1": 9,
+    "y1": 58.6,
+    "x2": 89,
+    "y2": 58.6,
+    "text": "25 m"
+   }
+  ],
+  "steps": [
+   {
+    "label": "Weg von der Stange, dann entgegen",
+    "say": "Spieler acht hat am Start den Ball. Spieler neun geht erst zwei Schritte Richtung Tor. Dann kommt er schnell neben die Stange zurück und schaut zum Ball. Jetzt kommt der Pass, flach in den Fuß.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       43.5,
+       34.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n9",
+      "to": [
+       43,
+       19.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n9",
+      "to": [
+       24,
+       25.4
+      ],
+      "type": "blick",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       43.6,
+       20.1
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Halb aufgedreht raus auf den Flügel",
+    "say": "Spieler neun nimmt mit dem hinteren Fuß an und ist schon halb aufgedreht. Auf der anderen Seite kommt Spieler sieben ein paar Schritte nach innen. Da geht der Ball hin.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       55,
+       36.5
+      ],
+      "type": "blick",
+      "von": [
+       24,
+       25.4
+      ],
+      "dauer": 1.3
+     },
+     {
+      "who": "n9",
+      "to": [
+       55,
+       36.5
+      ],
+      "type": "dreh",
+      "delay": 0.4,
+      "bend": -1
+     },
+     {
+      "who": "n7",
+      "to": [
+       55,
+       36.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       55.6,
+       37.1
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Doppelpass hinter den Dummy",
+    "say": "Spieler neun läuft in die Mitte nach. Spieler sieben legt zurück und startet sofort außen um den Dummy. Spieler neun spielt ihm den Ball direkt in den Lauf.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       54,
+       26
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       54.6,
+       26.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       62,
+       46.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       70.5,
+       37
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       71.1,
+       37.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Abschluss: Punkt",
+    "say": "Spieler sieben schießt flach am Torwart vorbei, und das gibt einen Punkt für Spieler sieben. Dann wird gewechselt. Spieler acht geht an die Stange, Spieler neun auf den Flügel, Spieler sieben stellt sich am Start an. Der nächste Angriff läuft über die andere Seite.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       88.5,
+       31
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n8",
+      "to": [
+       39,
+       31
+      ],
+      "type": "lauf",
+      "delay": 1.0
+     },
+     {
+      "who": "n9",
+      "to": [
+       57.5,
+       44
+      ],
+      "type": "lauf",
+      "delay": 1.0
+     },
+     {
+      "who": "n7",
+      "to": [
+       66,
+       33
+      ],
+      "type": "lauf",
+      "delay": 1.2
+     },
+     {
+      "who": "n7",
+      "to": [
+       16,
+       45
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Erst über die Schulter schauen, dann zweimal bewegen.",
+   "title": "Schauen, weg und entgegen",
+   "text": "Bevor der Ball kommt, schaut die Spitze über die Schulter. Wo steht der Gegenspieler, wo ist Platz? Dann geht sie erst weg und kommt mit Tempo zurück an die Stange. Angenommen wird halb aufgedreht mit dem hinteren Fuß, damit der nächste Pass sofort nach vorn geht.",
+   "board": {
+    "players": [
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 17,
+      "y": 27.5,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 39,
+      "y": 31,
+      "label": "9"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 57.5,
+      "y": 10.8,
+      "label": "10"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 57.5,
+      "y": 44,
+      "label": "7"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 7.5,
+      "y": 11.5,
+      "label": "6"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 7.5,
+      "y": 43.5,
+      "label": "4"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 85,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 30,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 17.6,
+      "y": 28.1
+     },
+     {
+      "id": "b6",
+      "x": 8.1,
+      "y": 12.1
+     },
+     {
+      "id": "b4",
+      "x": 8.1,
+      "y": 44.1
+     },
+     {
+      "id": "s1",
+      "x": 33.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 36,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Schulterblick, weg und zurück",
+      "say": "Spieler neun schaut zuerst über die Schulter Richtung Tor, dann zum Ball. Erst zwei Schritte weg, dann mit Tempo zurück neben die Stange. Genau in diesem Moment spielt Spieler acht.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         24,
+         25.4
+        ],
+        "type": "blick",
+        "von": [
+         58,
+         23
+        ]
+       },
+       {
+        "who": "n9",
+        "to": [
+         43.5,
+         34.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n9",
+        "to": [
+         43,
+         19.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         43.6,
+         20.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Hinterer Fuß, sofort nach vorn",
+      "say": "Spieler neun nimmt mit dem hinteren Fuß an, der Körper ist schon halb offen. Ein Kontakt zum Drehen, dann geht der Pass sofort raus zu Spieler sieben.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         55,
+         36.5
+        ],
+        "type": "blick",
+        "von": [
+         24,
+         25.4
+        ],
+        "dauer": 1.3
+       },
+       {
+        "who": "n9",
+        "to": [
+         55,
+         36.5
+        ],
+        "type": "dreh",
+        "delay": 0.4,
+        "bend": -1
+       },
+       {
+        "who": "n7",
+        "to": [
+         55,
+         36.5
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         55.6,
+         37.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Der Ball geht zum Flügelspieler auf der anderen Seite.",
+   "title": "Steil auf den anderen Flügel",
+   "text": "Jetzt spielt Spieler acht zuerst einen Doppelpass mit dem einen Flügelspieler. Danach geht der Ball in die Spitze. Die Spitze legt ihn sich vor und spielt steil auf die andere Seite, wo der zweite Flügelspieler hinter den Dummy startet. Der Steilpass kommt überraschend, die Spitze verrät vorher nicht, wohin sie spielt.",
+   "board": {
+    "players": [
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 17,
+      "y": 27.5,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 39,
+      "y": 31,
+      "label": "9"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 57.5,
+      "y": 10.8,
+      "label": "10"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 57.5,
+      "y": 44,
+      "label": "7"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 7.5,
+      "y": 11.5,
+      "label": "6"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 7.5,
+      "y": 43.5,
+      "label": "4"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 85,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 30,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 17.6,
+      "y": 28.1
+     },
+     {
+      "id": "b6",
+      "x": 8.1,
+      "y": 12.1
+     },
+     {
+      "id": "b4",
+      "x": 8.1,
+      "y": 44.1
+     },
+     {
+      "id": "s1",
+      "x": 33.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 36,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Doppelpass mit Spieler sieben",
+      "say": "Spieler sieben kommt vom Flügel entgegen und bekommt den Ball von Spieler acht. Spieler acht geht ein paar Schritte nach vorn und kriegt ihn gleich wieder.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         49,
+         42
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         49.6,
+         42.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n8",
+        "to": [
+         30,
+         35
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       },
+       {
+        "who": "b1",
+        "to": [
+         30.6,
+         35.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Pass in die Spitze",
+      "say": "Jetzt spielt Spieler acht in die Spitze. Spieler neun kommt von der Stange weg und schaut zum Ball.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         44,
+         33.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n9",
+        "to": [
+         30,
+         35
+        ],
+        "type": "blick",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         44.6,
+         34.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Steil auf Spieler zehn: Punkt",
+      "say": "Spieler neun legt sich den Ball vor, dreht auf und spielt steil auf die andere Seite. Spieler zehn startet hinter dem Dummy, nimmt mit und trifft, und das gibt einen Punkt für Spieler zehn. Dann wird gewechselt, und es geht über die andere Seite.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         61.8,
+         20.6
+        ],
+        "type": "blick",
+        "von": [
+         30,
+         35
+        ],
+        "dauer": 1.3
+       },
+       {
+        "who": "n9",
+        "to": [
+         61.8,
+         20.6
+        ],
+        "type": "dreh",
+        "delay": 0.4
+       },
+       {
+        "who": "n10",
+        "to": [
+         71,
+         14
+        ],
+        "type": "lauf",
+        "delay": 0.5
+       },
+       {
+        "who": "b1",
+        "to": [
+         71.6,
+         14.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         88.5,
+         24
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

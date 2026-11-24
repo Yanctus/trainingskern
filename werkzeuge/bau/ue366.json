@@ -1,0 +1,965 @@
+{
+ "title": "Überzahl wächst mit jedem Pfiff",
+ "code": "UE-366",
+ "kind": "Spielform",
+ "focuses": [
+  "Verteidigen",
+  "Zusammenspiel",
+  "Umschalten"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 15,
+ "players_max": 15,
+ "field_size": "Halbes Spielfeld",
+ "description": "Auf einer Spielfeldhälfte greift Team Rot immer in Überzahl auf das große Tor an. Es beginnt mit zwei gegen eins, und mit jedem Pfiff kommen Angreifer und Verteidiger dazu, bis acht gegen sechs gespielt wird. Team Neon verteidigt das Tor, verschiebt als Einheit und lenkt die Angreifer nach außen. Erobert Team Neon den Ball, spielt es schnell in eines der beiden Minitore an der Mittellinie.",
+ "organisation": [
+  "Aufbauen: Eine Spielfeldhälfte in voller Breite mit dem großen Tor. An der Mittellinie stehen links und rechts zwei Minitore.",
+  "Verteilen: Team Neon mit Torwart und sechs Verteidigern, einer steht schon vor dem Strafraum, die anderen warten auf der Torlinie. Team Rot mit acht Angreifern an der Mittellinie, zwei davon mit Ball. Der Trainer steht mit einer Pfeife und Bällen an der Seitenlinie.",
+  "Ablauf: Zwei Angreifer starten gegen einen Verteidiger. Auf Pfiff kommen zwei Angreifer und ein Verteidiger dazu, also vier gegen zwei. Beim nächsten Pfiff kommen je zwei dazu, sechs gegen vier, und beim letzten Pfiff acht gegen sechs.",
+  "Wertung: Ein Treffer ins große Tor gibt einen Punkt für Team Rot. Erobert Team Neon den Ball und trifft ein Minitor, gibt das einen Punkt für Team Neon. Danach gehen alle zurück, und die nächsten zwei Angreifer starten."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Im zwei gegen eins verzögern, nicht reingrätschen",
+  "Einer drückt, der Nächste sichert schräg dahinter",
+  "Als Kette zum Ball schieben, die Mitte bleibt eng",
+  "Ball erobert? Schnell raus aufs Minitor"
+ ],
+ "materials": [
+  "1 großes Tor",
+  "2 Minitore",
+  "Leibchen in zwei Farben",
+  "Viele Bälle",
+  "1 Pfeife"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Überzahl wächst mit jedem Pfiff. Team Rot greift immer mit mehr Spielern an, als Team Neon hinten hat. Mit jedem Pfiff kommen welche dazu, bis acht gegen sechs gespielt wird.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 9,
+    "y": 4,
+    "w": 80,
+    "h": 47
+   },
+   {
+    "type": "rect",
+    "x": 24.2,
+    "y": 4,
+    "w": 49.6,
+    "h": 15.5
+   },
+   {
+    "type": "rect",
+    "x": 37.8,
+    "y": 4,
+    "w": 22.5,
+    "h": 5.2
+   }
+  ],
+  "goals": [
+   {
+    "x": 49,
+    "y": 4,
+    "side": "top",
+    "size": "gross"
+   },
+   {
+    "x": 17,
+    "y": 51,
+    "side": "bottom"
+   },
+   {
+    "x": 81,
+    "y": 51,
+    "side": "bottom"
+   }
+  ],
+  "cones": [],
+  "players": [
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 16,
+    "y": 4,
+    "label": "8"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 25,
+    "y": 4,
+    "label": "3"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 34,
+    "y": 4,
+    "label": "4"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 64,
+    "y": 4,
+    "label": "6"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 73,
+    "y": 4,
+    "label": "2"
+   },
+   {
+    "id": "r14",
+    "team": "b",
+    "x": 25,
+    "y": 55.5,
+    "label": "14"
+   },
+   {
+    "id": "r12",
+    "team": "b",
+    "x": 33.5,
+    "y": 55.5,
+    "label": "12"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 42,
+    "y": 55.5,
+    "label": "7"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 56,
+    "y": 55.5,
+    "label": "11"
+   },
+   {
+    "id": "r15",
+    "team": "b",
+    "x": 64.5,
+    "y": 55.5,
+    "label": "15"
+   },
+   {
+    "id": "r13",
+    "team": "b",
+    "x": 73,
+    "y": 55.5,
+    "label": "13"
+   },
+   {
+    "id": "n1",
+    "team": "a",
+    "x": 49,
+    "y": 8.5,
+    "label": "TW"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 49,
+    "y": 24.5,
+    "label": "5"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 40,
+    "y": 37,
+    "label": "10"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 58,
+    "y": 37,
+    "label": "9"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 94.5,
+    "y": 28,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 40.6,
+    "y": 37.6
+   },
+   {
+    "id": "s1",
+    "x": 95.1,
+    "y": 31.6
+   },
+   {
+    "id": "s2",
+    "x": 97.6,
+    "y": 31.6
+   }
+  ],
+  "steps": [
+   {
+    "label": "Zwei gegen eins, Spieler fünf wartet",
+    "say": "Spieler zehn und Spieler neun laufen mit Ball auf Spieler fünf zu. Der geht nicht rein. Er bleibt zwischen den beiden, macht kleine Schritte zurück und wartet, bis er den Ballführer zur Seite drücken kann.",
+    "moves": [
+     {
+      "who": "r10",
+      "to": [
+       43,
+       30
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "r9",
+      "to": [
+       60,
+       28
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n5",
+      "to": [
+       47.5,
+       18
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "Pfiff: vier gegen zwei",
+    "say": "Pfiff vom Trainer. Von der Mittellinie kommen Spieler sieben und Spieler elf dazu, von der Torlinie sprintet Spieler vier ins Feld. Spieler fünf schaut sofort, wer da kommt.",
+    "moves": [
+     {
+      "who": "r7",
+      "to": [
+       28,
+       34
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r11",
+      "to": [
+       72,
+       33
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n4",
+      "to": [
+       37,
+       19
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n5",
+      "to": [
+       30,
+       30
+      ],
+      "type": "blick",
+      "delay": 0.5
+     }
+    ]
+   },
+   {
+    "label": "Einer drückt, einer sichert",
+    "say": "Spieler zehn spielt raus zu Spieler sieben. Spieler vier läuft ihn an und stellt den Weg nach innen zu. Spieler fünf rückt schräg dahinter und sichert ab.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       28.6,
+       34.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n4",
+      "to": [
+       31,
+       28
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n5",
+      "to": [
+       40,
+       22
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "Abgefangen, ins Minitor: Punkt",
+    "say": "Spieler sieben will zurück in die Mitte spielen. Darauf hat Spieler fünf gewartet. Er geht dazwischen und spielt den Ball sofort ins Minitor, und das gibt einen Punkt für Team Neon. Dann starten die nächsten zwei Angreifer.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       36.6,
+       32.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n5",
+      "to": [
+       36,
+       32
+      ],
+      "type": "lauf",
+      "delay": 0.1
+     },
+     {
+      "who": "b1",
+      "to": [
+       17,
+       50.5
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Sechs gegen vier.",
+   "title": "Sechs gegen vier",
+   "text": "Beim zweiten Pfiff kommen zwei Angreifer und zwei Verteidiger dazu. Hinten steht jetzt eine Viererkette. Die schiebt immer gemeinsam zum Ball, einer läuft an, die anderen rücken eng zusammen. Verlagert Team Rot, schiebt die ganze Kette mit rüber.",
+   "board": {
+    "players": [
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 16,
+      "y": 4,
+      "label": "8"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 25,
+      "y": 4,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 37,
+      "y": 20,
+      "label": "4"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 64,
+      "y": 4,
+      "label": "6"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 73,
+      "y": 4,
+      "label": "2"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 25,
+      "y": 55.5,
+      "label": "14"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 33.5,
+      "y": 55.5,
+      "label": "12"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 22,
+      "y": 36,
+      "label": "7"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 76,
+      "y": 36,
+      "label": "11"
+     },
+     {
+      "id": "r15",
+      "team": "b",
+      "x": 64.5,
+      "y": 55.5,
+      "label": "15"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 73,
+      "y": 55.5,
+      "label": "13"
+     },
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 49,
+      "y": 8.5,
+      "label": "TW"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 58,
+      "y": 20,
+      "label": "5"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 40,
+      "y": 36,
+      "label": "10"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 56,
+      "y": 41,
+      "label": "9"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 94.5,
+      "y": 28,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 40.6,
+      "y": 36.6
+     },
+     {
+      "id": "s1",
+      "x": 95.1,
+      "y": 31.6
+     },
+     {
+      "id": "s2",
+      "x": 97.6,
+      "y": 31.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Pfiff: sechs gegen vier",
+      "say": "Wieder ein Pfiff. Spieler zwölf und Spieler fünfzehn kommen von der Mittellinie. Hinten sprinten Spieler drei und Spieler sechs rein, jetzt steht eine Viererkette.",
+      "moves": [
+       {
+        "who": "r12",
+        "to": [
+         31,
+         45
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r15",
+        "to": [
+         67,
+         45
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n3",
+        "to": [
+         24,
+         18
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n6",
+        "to": [
+         70,
+         18
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n4",
+        "to": [
+         42,
+         19
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "n5",
+        "to": [
+         55,
+         19
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       }
+      ]
+     },
+     {
+      "label": "Ball nach außen, Kette schiebt",
+      "say": "Spieler zehn spielt raus zu Spieler sieben. Die ganze Kette schiebt mit. Spieler drei läuft an, die anderen rücken zusammen und machen die Mitte eng.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         22.6,
+         36.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n3",
+        "to": [
+         21,
+         28
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n4",
+        "to": [
+         32,
+         21
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n5",
+        "to": [
+         43,
+         20
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n6",
+        "to": [
+         55,
+         19
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Verlagerung, Kette schiebt rüber",
+      "say": "Team Rot spielt über Spieler zehn auf die andere Seite zu Spieler elf. Jetzt schiebt die Kette genauso schnell rüber. Spieler sechs läuft an, und die Abstände bleiben klein.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         40.6,
+         36.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         76.6,
+         36.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n6",
+        "to": [
+         73,
+         28
+        ],
+        "type": "lauf",
+        "delay": 0.8
+       },
+       {
+        "who": "n5",
+        "to": [
+         62,
+         20
+        ],
+        "type": "lauf",
+        "delay": 0.8
+       },
+       {
+        "who": "n4",
+        "to": [
+         51,
+         20
+        ],
+        "type": "lauf",
+        "delay": 0.8
+       },
+       {
+        "who": "n3",
+        "to": [
+         40,
+         21
+        ],
+        "type": "lauf",
+        "delay": 0.8
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Acht gegen sechs.",
+   "title": "Acht gegen sechs",
+   "text": "Beim letzten Pfiff spielen alle mit. Zwei Verteidiger sichern jetzt vor der Kette. Team Rot sucht außen die Überzahl und läuft hinterher. Team Neon bleibt eng, übergibt die Läufer und wartet auf den Pass nach innen. Nach dem Ballgewinn geht es mit wenigen Kontakten ins Minitor.",
+   "board": {
+    "players": [
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 16,
+      "y": 4,
+      "label": "8"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 24,
+      "y": 20,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 40,
+      "y": 20,
+      "label": "4"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 74,
+      "y": 20,
+      "label": "6"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 73,
+      "y": 4,
+      "label": "2"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 25,
+      "y": 55.5,
+      "label": "14"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 30,
+      "y": 36,
+      "label": "12"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 14,
+      "y": 36,
+      "label": "7"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 84,
+      "y": 36,
+      "label": "11"
+     },
+     {
+      "id": "r15",
+      "team": "b",
+      "x": 70,
+      "y": 36,
+      "label": "15"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 73,
+      "y": 55.5,
+      "label": "13"
+     },
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 49,
+      "y": 8.5,
+      "label": "TW"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 58,
+      "y": 20,
+      "label": "5"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 44,
+      "y": 36,
+      "label": "10"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 57,
+      "y": 36,
+      "label": "9"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 94.5,
+      "y": 28,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 70.6,
+      "y": 36.6
+     },
+     {
+      "id": "s1",
+      "x": 95.1,
+      "y": 31.6
+     },
+     {
+      "id": "s2",
+      "x": 97.6,
+      "y": 31.6
+     }
+    ],
+    "steps": [
+     {
+      "label": "Letzter Pfiff: acht gegen sechs",
+      "say": "Letzter Pfiff, jetzt sind alle drin. Spieler vierzehn und Spieler dreizehn kommen nach vorn. Von der Torlinie sprinten Spieler acht und Spieler zwei rein und sichern vor der Kette.",
+      "moves": [
+       {
+        "who": "r14",
+        "to": [
+         36,
+         46
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r13",
+        "to": [
+         63,
+         46
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n8",
+        "to": [
+         38,
+         29
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n2",
+        "to": [
+         60,
+         29
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Außen überlaufen",
+      "say": "Spieler fünfzehn spielt raus zu Spieler elf und läuft außen hinterher. Spieler sechs übernimmt den Läufer. Spieler zwei kommt aus der Mitte und läuft Spieler elf an, die Kette schiebt nach.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         84.6,
+         36.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r15",
+        "to": [
+         80,
+         31
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "r15",
+        "to": [
+         87,
+         25
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n6",
+        "to": [
+         82,
+         23
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n2",
+        "to": [
+         78,
+         32
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n5",
+        "to": [
+         67,
+         21
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "n4",
+        "to": [
+         55,
+         21
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "n3",
+        "to": [
+         42,
+         21
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       }
+      ]
+     },
+     {
+      "label": "Ballgewinn, ins Minitor: Punkt",
+      "say": "Spieler elf will nach innen zu Spieler neun spielen. Spieler zwei ist schneller, fängt den Pass ab und spielt sofort ins Minitor. Das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         72,
+         36
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         72.6,
+         36.6
+        ],
+        "type": "pass",
+        "delay": 0.2
+       },
+       {
+        "who": "b1",
+        "to": [
+         81,
+         50.5
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

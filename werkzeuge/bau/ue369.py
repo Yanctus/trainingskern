@@ -20,7 +20,7 @@ FX0, FX1, FY0, FY1, MX = 9, 87, 4, 51, 48
 T = P("T", "c", 57.5, 55.3, "T")
 ERSATZ = [B("s1", 61, 55.8), B("s2", 63.5, 55.8)]
 NEON = {"n4": (10.5, 27.5), "n3": (19, 8), "n2": (19, 47), "n10": (40, 11.5), "n8": (40, 44.5), "n7": (77.5, 9), "n9": (85, 27.5), "n11": (77.5, 46)}
-ROT = {"r14": (19, 27.5), "r15": (31.5, 11), "r16": (31.5, 44), "r17": (40, 28), "r13": (57, 27.5), "r5": (65.5, 14), "r6": (66, 40), "r12": (74, 27.5)}
+ROT = {"r14": (19, 27.5), "r15": (31.5, 11), "r16": (31.5, 44), "r17": (40, 28), "r13": (57, 27.5), "r5": (65.5, 14), "r6": (66, 40), "r12": (74.5, 27.5)}
 FS = {"fm": (31.5, 27.5), "fo": (48.5, 4.5), "fu": (48.5, 50.5)}
 POS = {**NEON, **ROT, **FS}
 def sp(**k):
@@ -51,7 +51,7 @@ u = {"title": "Zehn Pässe, dann verlagern", "code": "UE-369", "kind": "Spielfor
  "say_intro": "Zehn Pässe, dann verlagern. Ein Rondo in zwei Hälften. Team Neon hält den Ball, und nach zehn Pässen geht er über einen Springer auf die andere Seite.",
  "board": {"lines": LINES, "goals": [], "cones": CONES, "players": sp(), "balls": [B("b1", *f("n4"))] + ERSATZ,
   "steps": [
-   S("Fünf gegen vier plus drei", "Team Neon hat in der linken Hälfte den Ball. Fünf Spieler und drei Springer gegen vier von Team Rot. Spieler vier spielt raus zu Spieler zwei, und der legt auf den Springer in der Mitte.",
+   S("Fünf gegen vier plus drei", "Team Neon hat in der Aufbauhälfte den Ball. Fünf Spieler und drei Springer gegen vier von Team Rot. Spieler vier spielt raus zu Spieler zwei, und der legt auf den Springer in der Mitte.",
      ps("b1", f("n2")), ps("b1", f("fm"), after=True)),
    S("Zehn Pässe, dann zu zehn", "So läuft der Ball, bis zehn Pässe in Folge geschafft sind. Jetzt spielt der Springer zu Spieler zehn. Der schaut zum Ball, bis er ihn hat.",
      bl("n10", POS["fm"]), ps("b1", f("n10"), after=True)),
@@ -64,21 +64,22 @@ u = {"title": "Zehn Pässe, dann verlagern", "code": "UE-369", "kind": "Spielfor
  "versions": [
   V("Steigerung", "Und jetzt die Steigerung: Das Feld ist in Zonen geteilt.", "Ein Spieler pro Zone",
     "Jede Hälfte ist in sechs Zonen geteilt. In jeder Zone darf nur ein Spieler von Team Neon stehen, die Springer und Team Rot dürfen überall hin. Stehen zwei von Team Neon in einer Zone, gibt das einen Punkt für Team Rot. Der Trainer unterbricht nicht, die Spieler regeln das selbst.",
-    sp(), [B("b1", *f("n4"))] + ERSATZ,
-    [S("Breit in den Zonen", "Spieler vier spielt zum Springer in der Mitte. Spieler zehn und Spieler acht gehen in ihren Zonen ganz nach außen und machen das Feld breit.",
+    sp(), [B("b1", *f("n2"))] + ERSATZ,
+    [S("Breit in den Zonen", "Spieler zwei spielt zum Springer in der Mitte. Spieler zehn und Spieler acht gehen in ihren Zonen ganz nach außen und machen das Feld breit.",
        ps("b1", f("fm")), mv("n10", [43, 8], delay=0.2), mv("n8", [43, 47], delay=0.2)),
      S("Zwei in einer Zone: Punkt für Rot", "Spieler drei kommt nach innen und will sich anbieten. Aber in dieser Zone steht schon Spieler vier. Zwei in einer Zone, das gibt einen Punkt für Team Rot.",
        mv("n3", [22, 22])),
      S("Besser: in der eigenen Zone", "Besser so. Spieler drei bleibt außen in seiner Zone. Dort hat er Platz und bekommt den Ball vom Springer.",
        mv("n3", list(POS["n3"])), ps("b1", f("n3"), after=True))], lines=ZONEN),
   V("Steigerung", "Und jetzt die zweite Steigerung: Ein Verteidiger mehr presst.", "Ein Verteidiger mehr",
-    "Ein Verteidiger von der anderen Seite darf jetzt mit rüber und pressen. Team Neon hat weniger Zeit und muss sich schneller bewegen, auch mal ein längerer Pass zum freien Springer. Erobert Team Rot den Ball, behält es ihn und verlagert selbst über einen Springer.",
-    sp(), [B("b1", *f("n4"))] + ERSATZ,
-    [S("Spieler dreizehn kommt rüber", "Spieler vier spielt zum Springer in der Mitte. Sofort kommt Spieler dreizehn von der anderen Seite rüber und presst mit.",
+    "Ein Verteidiger von der anderen Seite darf jetzt mit rüber und pressen. Team Neon hat weniger Zeit. Die Spieler müssen sich schneller anbieten oder mit einem längeren Pass den freien Springer suchen. Erobert Team Rot den Ball, behält es ihn und verlagert selbst über einen Springer.",
+    sp(), [B("b1", *f("n2"))] + ERSATZ,
+    [S("Spieler dreizehn kommt rüber", "Spieler zwei spielt zum Springer in der Mitte. Sofort kommt Spieler dreizehn von der anderen Seite rüber und presst mit.",
        ps("b1", f("fm")), mv("r13", [47, 18], delay=0.2)),
      S("Ball erobert", "Der Springer spielt zu Spieler zehn. Spieler dreizehn ist schon da, geht dazwischen und erobert den Ball.",
        ps("b1", f("n10")), mv("r13", [41.5, 14.5], delay=0.4), dr("r13", "b1", [44, 19], after=True)),
-     S("Schnell zum Springer: Punkt", "Spieler dreizehn legt ab auf Spieler siebzehn. Der dreht auf, sieht den Springer außen und spielt hin. Das gibt einen Punkt für Team Rot. Jetzt hat Team Rot den Ball und verlagert selbst.",
-       ps("b1", f("r17")), bl("r17", POS["fu"], von=[44, 19], dauer=1.3, after=True), drehen("r17", POS["fu"], delay=0.4),
-       ps("b1", f("fu"), after=True))])]}
+     S("Ablegen auf siebzehn", "Spieler dreizehn legt sofort ab auf Spieler siebzehn. Der schaut zum Ball, bis er ihn hat.",
+       bl("r17", [44, 19]), ps("b1", f("r17"), after=True)),
+     S("Schnell zum Springer: Punkt", "Spieler siebzehn dreht auf, sieht den Springer außen und spielt hin. Das gibt einen Punkt für Team Rot. Jetzt hat Team Rot den Ball und verlagert selbst.",
+       bl("r17", POS["fu"], von=[44, 19], dauer=1.3), drehen("r17", POS["fu"], delay=0.4), ps("b1", f("fu"), after=True))])]}
 json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)

@@ -1,0 +1,896 @@
+{
+ "title": "Falsche Neun im Mittelkanal",
+ "code": "UE-365",
+ "kind": "Spielform",
+ "focuses": [
+  "Zusammenspiel",
+  "Ballannahme",
+  "Torschuss"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 14,
+ "players_max": 14,
+ "field_size": "35 x 45 m",
+ "description": "Sieben gegen sieben mit Torhütern auf zwei große Tore. Quer durch die Mitte läuft ein schmaler Kanal. Die Spitze lässt sich in diesen Kanal fallen, nimmt halb aufgedreht an und bringt den Angriff ins letzte Drittel, zusammen mit den Flügelstürmern und nachrückenden Mitspielern. Erobert die andere Mannschaft den Ball, greift sie mit denselben Regeln an.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 35 mal 45 Metern mit zwei großen Toren. In der Mitte markieren Hütchen einen Kanal von 9 Metern Breite über die ganze Feldbreite.",
+  "Verteilen: Team Neon und Team Rot mit je sechs Feldspielern und einem Torwart. Jede Spitze steht vorn vor der gegnerischen Abwehr. Der Trainer steht mit vielen Bällen an der Seitenlinie neben dem Kanal.",
+  "Ablauf: Freies Spiel. Die Spitze lässt sich in den Kanal fallen, nimmt an, dreht auf und spielt mit den Flügelstürmern zum Abschluss. Wer den Ball erobert, greift genauso an. Gewinnt ein Team den Ball schon in der Abwehrhälfte des Gegners, darf es sofort frei angreifen.",
+  "Wertung und Wechsel: Jeder Treffer gibt einen Punkt. Ist der Ball aus dem Spiel, spielt der Trainer die Spitze im Kanal an oder gibt den Ball dem Torwart zum Aufbau."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Im richtigen Moment in den Kanal kommen",
+  "Vorher über die Schulter schauen, halb aufgedreht annehmen",
+  "Schnell mit den Flügelstürmern kombinieren",
+  "Hinter die Spitze nachstoßen, Platz nutzen"
+ ],
+ "materials": [
+  "2 große Tore",
+  "8 Hütchen",
+  "Leibchen in zwei Farben",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Falsche Neun im Mittelkanal. Sieben gegen sieben auf zwei Tore. Die Spitze holt sich den Ball im Kanal in der Mitte, dreht auf und bringt den Angriff nach vorn.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 9,
+    "y": 4,
+    "w": 80,
+    "h": 47
+   },
+   {
+    "type": "line",
+    "x1": 40,
+    "y1": 4,
+    "x2": 40,
+    "y2": 51,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 56,
+    "y1": 4,
+    "x2": 56,
+    "y2": 51,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 9,
+    "y": 27.5,
+    "side": "left",
+    "size": "gross"
+   },
+   {
+    "x": 89,
+    "y": 27.5,
+    "side": "right",
+    "size": "gross"
+   }
+  ],
+  "cones": [
+   {
+    "x": 40,
+    "y": 4,
+    "color": "orange"
+   },
+   {
+    "x": 40,
+    "y": 19,
+    "color": "orange"
+   },
+   {
+    "x": 40,
+    "y": 36,
+    "color": "orange"
+   },
+   {
+    "x": 40,
+    "y": 51,
+    "color": "orange"
+   },
+   {
+    "x": 56,
+    "y": 4,
+    "color": "orange"
+   },
+   {
+    "x": 56,
+    "y": 19,
+    "color": "orange"
+   },
+   {
+    "x": 56,
+    "y": 36,
+    "color": "orange"
+   },
+   {
+    "x": 56,
+    "y": 51,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 13,
+    "y": 28.5,
+    "label": "TW"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 25.5,
+    "y": 28.5,
+    "label": "4"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 38.5,
+    "y": 14,
+    "label": "10"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 44.5,
+    "y": 44,
+    "label": "8"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 59,
+    "y": 28,
+    "label": "9"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 69.5,
+    "y": 11,
+    "label": "11"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 69.5,
+    "y": 44,
+    "label": "7"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 86.5,
+    "y": 27.5,
+    "label": "TW"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 78,
+    "y": 11,
+    "label": "5"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 78,
+    "y": 44,
+    "label": "6"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 67.5,
+    "y": 27.5,
+    "label": "2"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 47.5,
+    "y": 7,
+    "label": "3"
+   },
+   {
+    "id": "r12",
+    "team": "b",
+    "x": 35,
+    "y": 30,
+    "label": "12"
+   },
+   {
+    "id": "r13",
+    "team": "b",
+    "x": 54,
+    "y": 47,
+    "label": "13"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 31,
+    "y": 55.3,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 31.6,
+    "y": 55.9
+   },
+   {
+    "id": "s1",
+    "x": 34.5,
+    "y": 55.8
+   },
+   {
+    "id": "s2",
+    "x": 37,
+    "y": 55.8
+   }
+  ],
+  "dims": [
+   {
+    "x1": 9,
+    "y1": 58.6,
+    "x2": 89,
+    "y2": 58.6,
+    "text": "45 m"
+   }
+  ],
+  "steps": [
+   {
+    "label": "Spieler neun kommt in den Kanal",
+    "say": "Der Trainer bringt den Ball. Spieler neun lässt sich aus der Spitze in den Kanal fallen. Vorher schaut er über die Schulter, wie dicht Spieler zwei an ihm dran ist. Dann kommt der Pass vom Trainer.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       50.5,
+       27
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n9",
+      "to": [
+       41.5,
+       44
+      ],
+      "type": "blick",
+      "after": true,
+      "von": [
+       67.5,
+       27.5
+      ]
+     },
+     {
+      "who": "b1",
+      "to": [
+       51.1,
+       27.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Aufdrehen und raus auf Spieler sieben",
+    "say": "Spieler zwei ist nicht mitgegangen. Also dreht Spieler neun mit dem ersten Kontakt auf. Spieler sieben kommt außen ein Stück entgegen und bekommt den Ball.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       67.5,
+       40.5
+      ],
+      "type": "blick",
+      "von": [
+       41.5,
+       44
+      ],
+      "dauer": 1.3
+     },
+     {
+      "who": "n9",
+      "to": [
+       67.5,
+       40.5
+      ],
+      "type": "dreh",
+      "delay": 0.4,
+      "bend": -1
+     },
+     {
+      "who": "n7",
+      "to": [
+       67.5,
+       40.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       68.1,
+       41.1
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       52,
+       40
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     }
+    ]
+   },
+   {
+    "label": "Querpass in die Mitte: Punkt",
+    "say": "Spieler elf startet hinter Spieler fünf in die Mitte. Spieler sieben spielt flach quer, und Spieler elf schiebt mit dem ersten Kontakt ein. Das gibt einen Punkt für Team Neon. Danach bringt der Trainer den nächsten Ball, und erobert Team Rot den Ball, greift es nach denselben Regeln an.",
+    "moves": [
+     {
+      "who": "n11",
+      "to": [
+       78.5,
+       19
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       79.1,
+       19.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       88.5,
+       24
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Ein Prallpass aus dem Kanal gibt schon einen Punkt.",
+   "title": "Prallpass gibt einen Punkt",
+   "text": "Lässt sich die Spitze in den Kanal fallen und spielt einen Prallpass mit einem Kontakt zurück zu einem Mitspieler, gibt das einen Punkt. Der Gegenspieler muss mit in den Kanal, sonst gibt es den Punkt umsonst. Geht er mit, ist hinter ihm Platz, und genau da startet die Spitze sofort hinein.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 13,
+      "y": 28.5,
+      "label": "TW"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 25.5,
+      "y": 28.5,
+      "label": "4"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 38.5,
+      "y": 14,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 44.5,
+      "y": 44,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 59,
+      "y": 28,
+      "label": "9"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 69.5,
+      "y": 11,
+      "label": "11"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 69.5,
+      "y": 44,
+      "label": "7"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 86.5,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 78,
+      "y": 11,
+      "label": "5"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 78,
+      "y": 44,
+      "label": "6"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 67.5,
+      "y": 27.5,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 47.5,
+      "y": 7,
+      "label": "3"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 35,
+      "y": 30,
+      "label": "12"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 54,
+      "y": 47,
+      "label": "13"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 31,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 39.1,
+      "y": 14.6
+     },
+     {
+      "id": "s1",
+      "x": 34.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 37,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Spieler zehn spielt in den Kanal",
+      "say": "Spieler neun kommt in den Kanal und schaut zum Ball. Spieler zehn spielt ihn flach an. Spieler zwei geht diesmal mit.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         51.5,
+         22.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r2",
+        "to": [
+         58,
+         24
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n9",
+        "to": [
+         38.5,
+         14
+        ],
+        "type": "blick",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         52.1,
+         23.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Prallpass: Punkt",
+      "say": "Mit einem Kontakt lässt Spieler neun den Ball zu Spieler acht prallen, und das gibt einen Punkt für Team Neon. Dann dreht er sich weg und läuft in den Raum, den Spieler zwei frei gemacht hat.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         47,
+         40
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         47.6,
+         40.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n9",
+        "to": [
+         66,
+         18
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Steil in den Lauf: Punkt",
+      "say": "Spieler acht spielt sofort steil in den Lauf von Spieler neun. Der nimmt mit und trifft, und das gibt noch einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         66.6,
+         18.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         88.5,
+         22.5
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Ein Verteidiger muss in der Zone in der Mitte des Kanals bleiben.",
+   "title": "Verteidiger bleibt in Zone",
+   "text": "In der Mitte des Kanals liegt jetzt eine Zone. Ein Verteidiger von Team Rot muss dort bleiben und schirmt sie ab. Für die Spitze wird es eng. Sie sucht sich den Platz neben ihm, an seiner Schulter, und braucht gutes Timing beim Fallenlassen.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 13,
+      "y": 28.5,
+      "label": "TW"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 25.5,
+      "y": 28.5,
+      "label": "4"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 38.5,
+      "y": 14,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 44.5,
+      "y": 44,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 59,
+      "y": 28,
+      "label": "9"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 69.5,
+      "y": 11,
+      "label": "11"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 69.5,
+      "y": 44,
+      "label": "7"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 86.5,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 78,
+      "y": 11,
+      "label": "5"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 78,
+      "y": 44,
+      "label": "6"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 48,
+      "y": 27.5,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 47.5,
+      "y": 7,
+      "label": "3"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 35,
+      "y": 30,
+      "label": "12"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 54,
+      "y": 47,
+      "label": "13"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 31,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 39.1,
+      "y": 14.6
+     },
+     {
+      "id": "s1",
+      "x": 34.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 37,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Platz an der Schulter suchen",
+      "say": "Spieler zwei steht in der Zone und darf nicht raus. Spieler neun kommt neben ihn in den Kanal, an seine Schulter. Er schaut kurz, wo Spieler zwei steht, dann zum Ball. Spieler zehn spielt ihn an.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         58.5,
+         17
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n9",
+        "to": [
+         52,
+         13.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n9",
+        "to": [
+         38.5,
+         14
+        ],
+        "type": "blick",
+        "after": true,
+        "von": [
+         48,
+         27.5
+        ]
+       },
+       {
+        "who": "b1",
+        "to": [
+         52.6,
+         14.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Aufdrehen, steil auf Spieler elf",
+      "say": "Spieler neun dreht weg von Spieler zwei auf und spielt sofort steil. Spieler elf ist außen hinter Spieler fünf gestartet.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         72,
+         16
+        ],
+        "type": "blick",
+        "von": [
+         38.5,
+         14
+        ],
+        "dauer": 1.3
+       },
+       {
+        "who": "n9",
+        "to": [
+         72,
+         16
+        ],
+        "type": "dreh",
+        "delay": 0.4
+       },
+       {
+        "who": "n11",
+        "to": [
+         79,
+         17
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "b1",
+        "to": [
+         79.6,
+         17.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Abschluss: Punkt",
+      "say": "Spieler elf zieht ab und trifft, und das gibt einen Punkt für Team Neon. Danach geht es mit dem nächsten Ball vom Trainer weiter.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         88.5,
+         24
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ],
+    "lines": [
+     {
+      "type": "rect",
+      "x": 9,
+      "y": 4,
+      "w": 80,
+      "h": 47
+     },
+     {
+      "type": "line",
+      "x1": 40,
+      "y1": 4,
+      "x2": 40,
+      "y2": 51,
+      "dashed": true
+     },
+     {
+      "type": "line",
+      "x1": 56,
+      "y1": 4,
+      "x2": 56,
+      "y2": 51,
+      "dashed": true
+     },
+     {
+      "type": "zone",
+      "x": 40,
+      "y": 19,
+      "w": 16,
+      "h": 17,
+      "color": "orange"
+     }
+    ]
+   }
+  }
+ ]
+}
