@@ -65,3 +65,9 @@
 ## 3. Ideen und offene Fragen
 - Kamerafahrt in der 3D-Bühne bei großen Feldern (Kamera zoomt auf die Stelle, wo gerade etwas passiert).
 - Torgröße bei U15-U17: „gross“ (jetzt) oder „jugend“?
+
+## 4. Hinweise zum Quer-Umbau (24.11.2026)
+- Bei UE-067, 138, 174, 188, 194, 216 und 235 (schon eingesprochen) ist die Datenbank maßgeblich. Die Drehskripte liegen in
+  `bau/ueNNN_quer.py`. Die alten `bau/ueNNN.py` beschreiben noch das Hochformat und dürfen NICHT mehr hochgeladen werden.
+- UE-067: Das Tor steht schon im Original an der langen Seite, darum steht es quer oben in der Mitte.
+- UE-174: In materials stehen „4 Hütchen“, auf der Tafel sind keine (schon vorher so).
