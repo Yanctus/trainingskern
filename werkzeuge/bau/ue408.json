@@ -1,0 +1,1008 @@
+{
+ "title": "Rauten-Rondo über zwei Hälften",
+ "code": "UE-408",
+ "kind": "Spielform",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel",
+  "Umschalten"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 13,
+ "players_max": 13,
+ "field_size": "18 x 25 m",
+ "description": "Ein Rondo in zwei Hälften mit je einem Tor und Torwart. Unten spielen vier gegen zwei in einer Raute, der Torwart spielt mit. Nach sechs Pässen am Stück darf der Ball in die andere Hälfte, die Spitze der Raute wechselt mit, und zwei neue Verteidiger kommen von der Seite. Erobern die Verteidiger den Ball, schließen sie sofort aufs Tor ab.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 25 Metern, in der Mitte geteilt. Oben und unten ein Tor mit Torwart.",
+  "Verteilen: Unten bilden der Torwart, Spieler vier, Spieler sechs und Spieler elf eine Raute, Spieler elf steht an der Mittellinie. Oben warten der Torwart, Spieler acht und Spieler zwei. Zwei Verteidiger von Team Rot jagen unten den Ball, vier weitere warten an den Seiten. Der Trainer steht mit Bällen am Rand.",
+  "Ablauf: Vier gegen zwei unten. Nach sechs Pässen am Stück darf der Ball nach oben. Spieler elf wechselt mit in die obere Hälfte, zwei Verteidiger von der Seite kommen rein, die zwei von unten gehen raus. Oben geht es wieder mit sechs Pässen los, dann zurück nach unten.",
+  "Wertung und Wechsel: Erobern die Verteidiger den Ball, spielen sie schnell zusammen und schließen auf das Tor ihrer Hälfte ab. Jeder Treffer gibt einen Punkt für Team Rot. Nach jedem Treffer oder nach ein paar Minuten tauschen Team Neon und Team Rot die Rollen."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Schnell und genau passen, durch die Lücke zwischen zwei Verteidigern",
+  "Breit stehen, damit die Raute Passwinkel hat",
+  "Kopf hoch, früh die Lücke nach oben sehen",
+  "Verteidiger laufen zusammen an und machen die Winkel zu"
+ ],
+ "materials": [
+  "2 Großfeldtore",
+  "6 Hütchen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Rauten-Rondo über zwei Hälften. Vier gegen zwei in einer Raute, nach sechs Pässen geht der Ball in die andere Hälfte. Erobern die Verteidiger den Ball, schießen sie sofort aufs Tor, und ein Treffer gibt einen Punkt für Team Rot.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 30,
+    "y": 5,
+    "w": 40,
+    "h": 50
+   },
+   {
+    "type": "line",
+    "x1": 30,
+    "y1": 30,
+    "x2": 70,
+    "y2": 30,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "gross"
+   },
+   {
+    "x": 50,
+    "y": 55,
+    "side": "bottom",
+    "size": "gross"
+   }
+  ],
+  "cones": [
+   {
+    "x": 30,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 70,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 30,
+    "y": 55,
+    "color": "orange"
+   },
+   {
+    "x": 70,
+    "y": 55,
+    "color": "orange"
+   },
+   {
+    "x": 30,
+    "y": 30,
+    "color": "orange"
+   },
+   {
+    "x": 70,
+    "y": 30,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 33,
+    "y": 42,
+    "label": "4"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 67,
+    "y": 42,
+    "label": "6"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 50,
+    "y": 32.5,
+    "label": "11"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 33,
+    "y": 17,
+    "label": "8"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 67,
+    "y": 17,
+    "label": "2"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 41.5,
+    "y": 41,
+    "label": "10"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 58.5,
+    "y": 41,
+    "label": "9"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 24,
+    "y": 21,
+    "label": "5"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 24,
+    "y": 39,
+    "label": "7"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 76,
+    "y": 21,
+    "label": "3"
+   },
+   {
+    "id": "r12",
+    "team": "b",
+    "x": 76,
+    "y": 39,
+    "label": "12"
+   },
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 50,
+    "y": 7.5,
+    "label": "TW"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 50,
+    "y": 52.5,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 24,
+    "y": 55.5,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 50.6,
+    "y": 53.1
+   },
+   {
+    "id": "s1",
+    "x": 20,
+    "y": 54.5
+   },
+   {
+    "id": "s2",
+    "x": 20.5,
+    "y": 58
+   }
+  ],
+  "steps": [
+   {
+    "label": "Vier gegen zwei unten",
+    "say": "Unten steht die Raute. Der Torwart, Spieler vier, Spieler sechs und vorn an der Mittellinie Spieler elf. Der Torwart spielt zu Spieler vier, Spieler zehn läuft an. Weiter geht es über Spieler elf zu Spieler sechs.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       33.6,
+       42.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r10",
+      "to": [
+       36,
+       47
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       33.1
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       67.6,
+       42.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Sechs Pässe am Stück",
+    "say": "Spieler neun rückt raus, der Ball geht zurück zum Torwart und gleich wieder zu Spieler vier. Spieler elf schaut zum Ball, und schon kommt der Pass zu ihm. Das ist der sechste Pass.",
+    "moves": [
+     {
+      "who": "r9",
+      "to": [
+       61,
+       46.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       53.1
+      ],
+      "type": "pass",
+      "delay": 0.3
+     },
+     {
+      "who": "r10",
+      "to": [
+       41.5,
+       44
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "b1",
+      "to": [
+       33.6,
+       42.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n11",
+      "to": [
+       33,
+       42
+      ],
+      "type": "blick",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       33.1
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Aufdrehen, Pass nach oben",
+    "say": "Sechs Pässe, der Ball darf nach oben. Spieler elf dreht auf und spielt zu Spieler zwei. Dann wechselt er selbst in die obere Hälfte. Spieler fünf und Spieler drei kommen von der Seite rein, Spieler zehn und Spieler neun gehen raus.",
+    "moves": [
+     {
+      "who": "n11",
+      "to": [
+       67,
+       17
+      ],
+      "type": "blick",
+      "von": [
+       33,
+       42
+      ],
+      "dauer": 1.3
+     },
+     {
+      "who": "n11",
+      "to": [
+       67,
+       17
+      ],
+      "type": "dreh",
+      "delay": 0.4
+     },
+     {
+      "who": "b1",
+      "to": [
+       67.6,
+       17.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n11",
+      "to": [
+       50,
+       26
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r5",
+      "to": [
+       41.5,
+       21
+      ],
+      "type": "lauf",
+      "delay": 1.6
+     },
+     {
+      "who": "r3",
+      "to": [
+       58.5,
+       21
+      ],
+      "type": "lauf",
+      "delay": 1.6
+     },
+     {
+      "who": "r10",
+      "to": [
+       21,
+       48
+      ],
+      "type": "lauf",
+      "delay": 1.8
+     },
+     {
+      "who": "r9",
+      "to": [
+       72,
+       50
+      ],
+      "type": "lauf",
+      "delay": 1.8
+     },
+     {
+      "who": "r9",
+      "to": [
+       79,
+       49
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Oben vier gegen zwei",
+    "say": "Oben läuft jetzt das Gleiche. Spieler zwei spielt zum Torwart, der zu Spieler acht. Spieler acht will flach in die Mitte zu Spieler elf. Spieler fünf steht im Passweg und fängt den Ball ab.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       8.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       33.6,
+       17.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r5",
+      "to": [
+       41.5,
+       23.5
+      ],
+      "type": "lauf",
+      "delay": 1.2
+     },
+     {
+      "who": "b1",
+      "to": [
+       42.1,
+       24.1
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Ballgewinn, Abschluss: Punkt",
+    "say": "Spieler fünf zieht sofort Richtung Tor und schießt flach ins Eck, und das gibt einen Punkt für Team Rot. Danach tauschen Team Neon und Team Rot die Rollen, und der Torwart unten startet mit dem nächsten Ball.",
+    "moves": [
+     {
+      "who": "r5",
+      "to": [
+       44,
+       14
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       45.5,
+       5.3
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 30,
+    "y1": 58.6,
+    "x2": 70,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 90,
+    "y1": 5,
+    "x2": 90,
+    "y2": 55,
+    "text": "25 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Lücke sehen und steil durchspielen.",
+   "title": "Lücke sehen, steil spielen",
+   "text": "Laufen die zwei Verteidiger nicht zusammen, entsteht zwischen ihnen eine Lücke. Wer sie früh sieht, spielt den Ball senkrecht durch. Ein Pass, und beide Verteidiger sind aus dem Spiel.",
+   "board": {
+    "players": [
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 33,
+      "y": 42,
+      "label": "4"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 67,
+      "y": 42,
+      "label": "6"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 50,
+      "y": 32.5,
+      "label": "11"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 33,
+      "y": 17,
+      "label": "8"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 67,
+      "y": 17,
+      "label": "2"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 41.5,
+      "y": 41,
+      "label": "10"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 58.5,
+      "y": 41,
+      "label": "9"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 24,
+      "y": 21,
+      "label": "5"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 24,
+      "y": 39,
+      "label": "7"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 76,
+      "y": 21,
+      "label": "3"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 76,
+      "y": 39,
+      "label": "12"
+     },
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 50,
+      "y": 7.5,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 50,
+      "y": 52.5,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 24,
+      "y": 55.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 53.1
+     },
+     {
+      "id": "s1",
+      "x": 20,
+      "y": 54.5
+     },
+     {
+      "id": "s2",
+      "x": 20.5,
+      "y": 58
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zu weit auseinander",
+      "say": "Spieler zehn läuft Spieler vier an, Spieler neun geht zu Spieler sechs. Jeder läuft für sich. In der Mitte ist die Lücke riesig.",
+      "moves": [
+       {
+        "who": "r10",
+        "to": [
+         37.5,
+         46.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r9",
+        "to": [
+         62.5,
+         46.5
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       }
+      ]
+     },
+     {
+      "label": "Steil durch die Lücke",
+      "say": "Der Torwart sieht Spieler elf frei an der Mittellinie. Flach und scharf spielt er durch die Lücke. Beide Verteidiger sind mit einem Pass raus.",
+      "moves": [
+       {
+        "who": "k2",
+        "to": [
+         50,
+         32.5
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         33.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Aufdrehen und nach oben",
+      "say": "Spieler elf dreht auf. Die sechs Pässe sind voll, also geht der Ball sofort nach oben zu Spieler acht. Danach wechselt Spieler elf in die obere Hälfte.",
+      "moves": [
+       {
+        "who": "n11",
+        "to": [
+         33,
+         17
+        ],
+        "type": "blick",
+        "von": [
+         50,
+         52.5
+        ],
+        "dauer": 1.3
+       },
+       {
+        "who": "n11",
+        "to": [
+         33,
+         17
+        ],
+        "type": "dreh",
+        "delay": 0.4,
+        "bend": -1
+       },
+       {
+        "who": "b1",
+        "to": [
+         33.6,
+         17.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n11",
+        "to": [
+         50,
+         26
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 30,
+      "y1": 58.6,
+      "x2": 70,
+      "y2": 58.6,
+      "text": "18 m"
+     },
+     {
+      "x1": 90,
+      "y1": 5,
+      "x2": 90,
+      "y2": 55,
+      "text": "25 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Die Raute gibt Passwinkel.",
+   "title": "Die Raute gibt Passwinkel",
+   "text": "Die Raute steht breit und tief. So hat der Ballführer immer mehrere Anspielstationen, nach vorn, zur Seite oder zurück. Kommt Druck, läuft der Ball einfach um den Verteidiger herum.",
+   "board": {
+    "players": [
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 33,
+      "y": 42,
+      "label": "4"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 67,
+      "y": 42,
+      "label": "6"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 50,
+      "y": 32.5,
+      "label": "11"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 33,
+      "y": 17,
+      "label": "8"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 67,
+      "y": 17,
+      "label": "2"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 41.5,
+      "y": 41,
+      "label": "10"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 58.5,
+      "y": 41,
+      "label": "9"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 24,
+      "y": 21,
+      "label": "5"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 24,
+      "y": 39,
+      "label": "7"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 76,
+      "y": 21,
+      "label": "3"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 76,
+      "y": 39,
+      "label": "12"
+     },
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 50,
+      "y": 7.5,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 50,
+      "y": 52.5,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 24,
+      "y": 55.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 53.1
+     },
+     {
+      "id": "s1",
+      "x": 20,
+      "y": 54.5
+     },
+     {
+      "id": "s2",
+      "x": 20.5,
+      "y": 58
+     }
+    ],
+    "steps": [
+     {
+      "label": "Druck auf den Torwart",
+      "say": "Spieler zehn läuft den Torwart an. Der hat trotzdem zwei freie Anspielstationen, links und rechts. Die Raute steht breit genug.",
+      "moves": [
+       {
+        "who": "r10",
+        "to": [
+         43.5,
+         47.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "k2",
+        "to": [
+         33.6,
+         42.6
+        ],
+        "type": "option",
+        "delay": 0.5
+       },
+       {
+        "who": "k2",
+        "to": [
+         67.6,
+         42.6
+        ],
+        "type": "option",
+        "delay": 0.5
+       }
+      ]
+     },
+     {
+      "label": "Am Druck vorbei",
+      "say": "Der Torwart spielt zu Spieler sechs. Spieler neun kommt, aber vorn wartet Spieler elf. Ein Kontakt, und der Ball ist an Spieler neun vorbei.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         67.6,
+         42.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r9",
+        "to": [
+         62,
+         45
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n6",
+        "to": [
+         50.6,
+         33.1
+        ],
+        "type": "option",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         33.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Nach vorn, zur Seite, zurück",
+      "say": "Spieler elf hat wieder drei Möglichkeiten. Er legt quer auf Spieler vier, Spieler zehn kommt zu spät. So läuft der Ball, bis die sechs Pässe voll sind.",
+      "moves": [
+       {
+        "who": "n11",
+        "to": [
+         33.6,
+         42.6
+        ],
+        "type": "option"
+       },
+       {
+        "who": "n11",
+        "to": [
+         67.6,
+         42.6
+        ],
+        "type": "option"
+       },
+       {
+        "who": "n11",
+        "to": [
+         50.6,
+         53.1
+        ],
+        "type": "option"
+       },
+       {
+        "who": "b1",
+        "to": [
+         33.6,
+         42.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "r10",
+        "to": [
+         38,
+         44
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 30,
+      "y1": 58.6,
+      "x2": 70,
+      "y2": 58.6,
+      "text": "18 m"
+     },
+     {
+      "x1": 90,
+      "y1": 5,
+      "x2": 90,
+      "y2": 55,
+      "text": "25 m"
+     }
+    ]
+   }
+  }
+ ]
+}

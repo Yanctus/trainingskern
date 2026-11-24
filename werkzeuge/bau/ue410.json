@@ -1,0 +1,820 @@
+{
+ "title": "Raute kombiniert mit Springern",
+ "code": "UE-410",
+ "kind": "Spielform",
+ "focuses": [
+  "Zusammenspiel",
+  "Passspiel",
+  "Torschuss"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 12,
+ "players_max": 12,
+ "field_size": "25 x 25 m",
+ "description": "Vier Mittelfeldspieler stehen als Raute im Feld, vier Verteidiger von Team Rot stehen dazwischen, und außen warten vier Springer. An jeder Seite steht ein Minitor. Team Neon kombiniert kurz mit einem Springer und schließt mit dem ersten Kontakt ab. Erobert Team Rot den Ball, darf es nach fünf Pässen am Stück auf jedes Minitor schießen.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 25 mal 25 Metern, in vier Viertel geteilt. An jeder Seite steht ein Minitor, jedes in einer anderen Hälfte.",
+  "Verteilen: Team Neon steht mit vier Spielern als Raute im Feld, Team Rot mit vier Verteidigern, einer in jedem Viertel. Vier Springer stehen außen, einer an jeder Seite. Der Trainer steht mit Bällen am Rand.",
+  "Ablauf: Ein Springer spielt den Ball rein. Team Neon kombiniert kurz, spielt einen Springer an und schließt nach seiner Ablage mit dem ersten Kontakt auf ein Minitor ab. Team Rot verteidigt gemeinsam und schützt die Tore.",
+  "Wertung und Wechsel: Jeder Treffer gibt einen Punkt für Team Neon. Erobert Team Rot den Ball, braucht es fünf Pässe am Stück, dann darf es auf jedes Minitor schießen, und das gibt einen Punkt für Team Rot. Nach ein paar Minuten tauschen die Teams die Rollen."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Kopf hoch, wo stehen die Springer?",
+  "Kurz kombinieren und direkt abschließen",
+  "In der Raute die Plätze tauschen",
+  "Ohne Ball weglaufen und Platz schaffen"
+ ],
+ "materials": [
+  "4 Minitore",
+  "4 Hütchen",
+  "Viele Bälle",
+  "Leibchen in drei Farben"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Raute kombiniert mit Springern. Team Neon spielt als Raute gegen vier Verteidiger, außen helfen vier Springer. Nach der Ablage vom Springer geht der Ball direkt ins Minitor, und das gibt einen Punkt für Team Neon.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 28,
+    "y": 6,
+    "w": 44,
+    "h": 44
+   },
+   {
+    "type": "line",
+    "x1": 50,
+    "y1": 6,
+    "x2": 50,
+    "y2": 50,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 28,
+    "y1": 28,
+    "x2": 72,
+    "y2": 28,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 36,
+    "y": 6,
+    "side": "top"
+   },
+   {
+    "x": 72,
+    "y": 17,
+    "side": "right"
+   },
+   {
+    "x": 28,
+    "y": 39,
+    "side": "left"
+   },
+   {
+    "x": 61,
+    "y": 50,
+    "side": "bottom"
+   }
+  ],
+  "cones": [
+   {
+    "x": 28,
+    "y": 6,
+    "color": "orange"
+   },
+   {
+    "x": 72,
+    "y": 6,
+    "color": "orange"
+   },
+   {
+    "x": 28,
+    "y": 50,
+    "color": "orange"
+   },
+   {
+    "x": 72,
+    "y": 50,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 52.5,
+    "y": 12,
+    "label": "10"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 31,
+    "y": 26,
+    "label": "8"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 69.5,
+    "y": 31,
+    "label": "6"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 50,
+    "y": 44,
+    "label": "4"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 40,
+    "y": 21,
+    "label": "2"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 61,
+    "y": 19,
+    "label": "3"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 39.5,
+    "y": 37.5,
+    "label": "5"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 58.5,
+    "y": 37,
+    "label": "7"
+   },
+   {
+    "id": "f1",
+    "team": "t",
+    "x": 44,
+    "y": 2.5,
+    "label": "F"
+   },
+   {
+    "id": "f2",
+    "team": "t",
+    "x": 22.5,
+    "y": 26,
+    "label": "F"
+   },
+   {
+    "id": "f3",
+    "team": "t",
+    "x": 78,
+    "y": 31,
+    "label": "F"
+   },
+   {
+    "id": "f4",
+    "team": "t",
+    "x": 41,
+    "y": 53.5,
+    "label": "F"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 79,
+    "y": 50,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 41.6,
+    "y": 54.1
+   },
+   {
+    "id": "s1",
+    "x": 82.5,
+    "y": 52.5
+   },
+   {
+    "id": "s2",
+    "x": 82.5,
+    "y": 47
+   }
+  ],
+  "steps": [
+   {
+    "label": "Der Springer spielt rein",
+    "say": "Der Springer unten hat den Ball. Spieler vier zeigt sich einen Schritt zur Seite und bekommt den Pass.",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       54,
+       45
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       54.6,
+       45.6
+      ],
+      "type": "pass",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "Kurz über rechts nach oben",
+    "say": "Sofort weiter nach rechts zu Spieler sechs. Oben löst sich Spieler zehn von Spieler drei, und Spieler sechs spielt ihn an. Der schaut dabei schon zum Ball.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       70.1,
+       31.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n10",
+      "to": [
+       47,
+       13
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n10",
+      "to": [
+       69.5,
+       31
+      ],
+      "type": "blick",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       47.6,
+       13.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Raus zum Springer",
+    "say": "Spieler zehn schaut nach links, wo der Springer steht, und spielt ihn an. Gleichzeitig startet Spieler acht Richtung Minitor unten links.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       34,
+       40
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n10",
+      "to": [
+       22.5,
+       26
+      ],
+      "type": "blick",
+      "von": [
+       69.5,
+       31
+      ],
+      "dauer": 1.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       23.1,
+       26.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Ablage, direkt: Punkt",
+    "say": "Der Springer legt direkt ab, und Spieler acht schießt mit dem ersten Kontakt ins Minitor. Das gibt einen Punkt für Team Neon. Danach spielt der Trainer den nächsten Ball zu einem Springer, und es geht sofort weiter.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       34.6,
+       40.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       28.4,
+       39
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r5",
+      "to": [
+       37,
+       40
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 28,
+    "y1": 58.6,
+    "x2": 72,
+    "y2": 58.6,
+    "text": "25 m"
+   },
+   {
+    "x1": 89,
+    "y1": 6,
+    "x2": 89,
+    "y2": 50,
+    "text": "25 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Ohne Ball weglaufen und Platz schaffen.",
+   "title": "Weglaufen, Platz schaffen",
+   "text": "Ein Lauf ohne Ball zieht einen Verteidiger mit. Dort, wo er vorher stand, ist jetzt Platz. Genau in diesen Raum startet ein Mitspieler.",
+   "board": {
+    "players": [
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 52.5,
+      "y": 12,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 31,
+      "y": 26,
+      "label": "8"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 69.5,
+      "y": 31,
+      "label": "6"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 50,
+      "y": 44,
+      "label": "4"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 40,
+      "y": 21,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 61,
+      "y": 19,
+      "label": "3"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 39.5,
+      "y": 37.5,
+      "label": "5"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 58.5,
+      "y": 37,
+      "label": "7"
+     },
+     {
+      "id": "f1",
+      "team": "t",
+      "x": 44,
+      "y": 2.5,
+      "label": "F"
+     },
+     {
+      "id": "f2",
+      "team": "t",
+      "x": 22.5,
+      "y": 26,
+      "label": "F"
+     },
+     {
+      "id": "f3",
+      "team": "t",
+      "x": 78,
+      "y": 31,
+      "label": "F"
+     },
+     {
+      "id": "f4",
+      "team": "t",
+      "x": 41,
+      "y": 53.5,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 79,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 44.6
+     },
+     {
+      "id": "s1",
+      "x": 82.5,
+      "y": 52.5
+     },
+     {
+      "id": "s2",
+      "x": 82.5,
+      "y": 47
+     }
+    ],
+    "steps": [
+     {
+      "label": "Weglaufen, Gegner zieht mit",
+      "say": "Spieler vier hat den Ball. Spieler sechs sprintet nach oben weg, und Spieler sieben läuft mit. Rechts unten ist plötzlich Platz.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         68,
+         20
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r7",
+        "to": [
+         63,
+         27
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Zum Springer, rein in die Lücke",
+      "say": "Spieler vier spielt zum Springer rechts und startet sofort in den freien Raum.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         78.6,
+         31.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n4",
+        "to": [
+         64,
+         41
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Ablage, direkt: Punkt",
+      "say": "Der Springer legt in den Lauf, und Spieler vier schießt direkt ins Minitor unten. Das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         64.6,
+         41.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         61,
+         49.7
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 28,
+      "y1": 58.6,
+      "x2": 72,
+      "y2": 58.6,
+      "text": "25 m"
+     },
+     {
+      "x1": 89,
+      "y1": 6,
+      "x2": 89,
+      "y2": 50,
+      "text": "25 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Ständig neue Winkel schaffen.",
+   "title": "Ständig neue Winkel schaffen",
+   "text": "Wer ohne Ball stehen bleibt, steht bald im Deckungsschatten. Darum bewegen sich alle ständig mit dem Ball mit. Dann hat der Ballführer immer eine Anspielstation nach vorn oder zur Seite.",
+   "board": {
+    "players": [
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 52.5,
+      "y": 12,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 31,
+      "y": 26,
+      "label": "8"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 69.5,
+      "y": 31,
+      "label": "6"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 50,
+      "y": 44,
+      "label": "4"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 40,
+      "y": 21,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 61,
+      "y": 19,
+      "label": "3"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 39.5,
+      "y": 37.5,
+      "label": "5"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 58.5,
+      "y": 37,
+      "label": "7"
+     },
+     {
+      "id": "f1",
+      "team": "t",
+      "x": 44,
+      "y": 2.5,
+      "label": "F"
+     },
+     {
+      "id": "f2",
+      "team": "t",
+      "x": 22.5,
+      "y": 26,
+      "label": "F"
+     },
+     {
+      "id": "f3",
+      "team": "t",
+      "x": 78,
+      "y": 31,
+      "label": "F"
+     },
+     {
+      "id": "f4",
+      "team": "t",
+      "x": 41,
+      "y": 53.5,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 79,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 44.6
+     },
+     {
+      "id": "s1",
+      "x": 82.5,
+      "y": 52.5
+     },
+     {
+      "id": "s2",
+      "x": 82.5,
+      "y": 47
+     }
+    ],
+    "steps": [
+     {
+      "label": "Die Wege nach vorn sind zu",
+      "say": "Spieler vier hat den Ball. Spieler fünf und Spieler sieben rücken zusammen und machen die Wege nach vorn zu.",
+      "moves": [
+       {
+        "who": "r5",
+        "to": [
+         43,
+         38
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r7",
+        "to": [
+         57,
+         38
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       }
+      ]
+     },
+     {
+      "label": "Neue Winkel, drei Stationen",
+      "say": "Jetzt bewegen sich die anderen. Spieler zehn kommt in die Lücke zwischen beide, Spieler sechs lässt sich fallen, der Springer unten geht mit. Spieler vier hat auf einmal drei Anspielstationen.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         50,
+         23
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n6",
+        "to": [
+         68,
+         41
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       },
+       {
+        "who": "f4",
+        "to": [
+         55,
+         53.5
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n4",
+        "to": [
+         50.6,
+         23.6
+        ],
+        "type": "option",
+        "after": true
+       },
+       {
+        "who": "n4",
+        "to": [
+         68.6,
+         41.6
+        ],
+        "type": "option",
+        "after": true
+       },
+       {
+        "who": "n4",
+        "to": [
+         55.6,
+         54.1
+        ],
+        "type": "option",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Steil in die Lücke",
+      "say": "Spieler vier spielt durch die Lücke auf Spieler zehn. Zwei Verteidiger sind mit einem Pass raus, und Team Neon greift oben an.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         23.6
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 28,
+      "y1": 58.6,
+      "x2": 72,
+      "y2": 58.6,
+      "text": "25 m"
+     },
+     {
+      "x1": 89,
+      "y1": 6,
+      "x2": 89,
+      "y2": 50,
+      "text": "25 m"
+     }
+    ]
+   }
+  }
+ ]
+}

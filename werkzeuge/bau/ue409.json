@@ -1,0 +1,656 @@
+{
+ "title": "Passmuster in der Raute",
+ "code": "UE-409",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel",
+  "Bewegung"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 6,
+ "players_max": 8,
+ "field_size": "14 x 14 m",
+ "description": "Eine Passfolge ohne Gegner, vier Stationen stehen als Raute wie im Mittelfeld. Der Ball geht vom Start nach rechts, kommt zurück, wird steil nach oben gespielt, abgelegt und quer auf die andere Seite gespielt. Von dort geht er zurück zum Start, und der Nächste beginnt. Jeder läuft seinem Pass hinterher zur nächsten Station, möglichst mit einem Kontakt.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 14 mal 14 Metern. Vier Hütchen als Raute, unten der Start, rechts, oben und links je eine Station.",
+  "Verteilen: Je ein Spieler steht rechts, oben und links. Alle anderen warten am Start unten, der Erste hat den Ball. Der Trainer steht mit Ersatzbällen am Rand.",
+  "Ablauf: Pass nach rechts, Prallpass zurück, steil nach oben. Oben wird abgelegt für den Spieler von rechts, der quer nach links spielt. Von links geht der Ball zurück zum Start.",
+  "Wechsel: Jeder läuft seinem Pass hinterher zur nächsten Station, der Spieler links geht ans Ende der Schlange. Am Start ist Zeit zum Durchatmen. Ist der Ball zurück, beginnt der Nächste."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Mit einem Kontakt spielen, wo es geht",
+  "Passe so, dass der Mitspieler direkt weiterspielen kann",
+  "Schon vorher wissen, wohin der nächste Pass geht",
+  "Mal links, mal rechts passen und laut ansagen"
+ ],
+ "materials": [
+  "4 Hütchen",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Passmuster in der Raute. Vier Stationen wie im Mittelfeld, der Ball läuft einmal durch die Raute und zurück zum Start. Jeder folgt seinem Pass.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   }
+  ],
+  "goals": [],
+  "cones": [
+   {
+    "x": 56,
+    "y": 54,
+    "color": "orange"
+   },
+   {
+    "x": 74.5,
+    "y": 34,
+    "color": "orange"
+   },
+   {
+    "x": 45,
+    "y": 6.5,
+    "color": "orange"
+   },
+   {
+    "x": 25.5,
+    "y": 34,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 52,
+    "y": 51,
+    "label": "4"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 43.5,
+    "y": 52,
+    "label": "7"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 35,
+    "y": 52.5,
+    "label": "6"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 71,
+    "y": 30,
+    "label": "8"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 50,
+    "y": 9,
+    "label": "10"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 29,
+    "y": 30,
+    "label": "11"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 81,
+    "y": 9,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 52.6,
+    "y": 51.6
+   },
+   {
+    "id": "s1",
+    "x": 84.5,
+    "y": 6.5
+   },
+   {
+    "id": "s2",
+    "x": 84.5,
+    "y": 12
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pass nach rechts, Prallpass",
+    "say": "Spieler vier spielt flach nach rechts zu Spieler acht und startet sofort hinterher Richtung Mitte. Der Ball kommt direkt zurück in seinen Lauf.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       71.6,
+       30.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n4",
+      "to": [
+       57,
+       38
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       57.6,
+       38.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Steil nach oben",
+    "say": "Spieler vier hebt den Kopf und spielt steil nach oben zu Spieler zehn. Spieler acht kommt schon nach innen.",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       50,
+       9
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       9.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       63,
+       20
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "Ablegen und quer",
+    "say": "Spieler zehn legt mit einem Kontakt ab auf Spieler acht. Der schaut zum Ball, nimmt ihn mit und spielt sofort quer zu Spieler elf.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       50,
+       9
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b1",
+      "to": [
+       63.6,
+       20.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       29,
+       30
+      ],
+      "type": "blick",
+      "after": true,
+      "von": [
+       50,
+       9
+      ],
+      "dauer": 1.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       29.6,
+       30.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zurück zum Start, alle rücken weiter",
+    "say": "Spieler sieben geht an den Start, und Spieler elf spielt ihm den Ball. Jeder läuft seinem Pass hinterher. Spieler vier geht nach rechts, Spieler acht nach oben, Spieler zehn nach links, Spieler elf ans Ende. Gezählt wird nichts, und jetzt startet Spieler sieben.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       52,
+       51
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       52.6,
+       51.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n4",
+      "to": [
+       71,
+       30
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n8",
+      "to": [
+       50,
+       9
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n10",
+      "to": [
+       29,
+       30
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n11",
+      "to": [
+       42,
+       44
+      ],
+      "type": "lauf",
+      "delay": 1.2
+     },
+     {
+      "who": "n11",
+      "to": [
+       43.5,
+       52
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "14 m"
+   },
+   {
+    "x1": 91,
+    "y1": 5,
+    "x2": 91,
+    "y2": 55,
+    "text": "14 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Erst täuschen, dann antreten.",
+   "title": "Erst täuschen, dann antreten",
+   "text": "Oben wartet der Spieler nicht einfach auf den Ball. Er geht erst ein paar Schritte weg, als wolle er den Pass dort haben. Dann tritt er im richtigen Moment an und nimmt den Ball im freien Raum an.",
+   "board": {
+    "players": [
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 57,
+      "y": 38,
+      "label": "4"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 43.5,
+      "y": 52,
+      "label": "7"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 35,
+      "y": 52.5,
+      "label": "6"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 63,
+      "y": 20,
+      "label": "8"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 50,
+      "y": 9,
+      "label": "10"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 29,
+      "y": 30,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 81,
+      "y": 9,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 57.6,
+      "y": 38.6
+     },
+     {
+      "id": "s1",
+      "x": 84.5,
+      "y": 6.5
+     },
+     {
+      "id": "s2",
+      "x": 84.5,
+      "y": 12
+     }
+    ],
+    "steps": [
+     {
+      "label": "Erst weg vom Ball",
+      "say": "Spieler vier hat den Prallpass bekommen. Spieler zehn geht oben ein paar Schritte nach links, als wolle er den Ball dort.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         40,
+         11
+        ],
+        "type": "lauf"
+       }
+      ]
+     },
+     {
+      "label": "Antreten in den freien Raum",
+      "say": "Jetzt tritt er an, mit vollem Tempo zurück zur Mitte. Genau in diesem Moment kommt der Pass von Spieler vier in seinen Lauf.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         50,
+         10
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         10.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Ablage für Spieler acht",
+      "say": "Spieler zehn legt direkt ab auf Spieler acht, und der Ball läuft weiter wie gewohnt.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         63.6,
+         20.6
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Ein neues Passmuster.",
+   "title": "Neues Passmuster",
+   "text": "Das Muster ändert sich. Spieler acht dreht nach dem Prallpass ab und bekommt den Ball im Lauf nach vorn. Spieler zehn täuscht kurz an und nimmt den Ball im freien Raum an. Von dort geht es auf die andere Seite zu Spieler elf.",
+   "board": {
+    "players": [
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 52,
+      "y": 51,
+      "label": "4"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 43.5,
+      "y": 52,
+      "label": "7"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 35,
+      "y": 52.5,
+      "label": "6"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 71,
+      "y": 30,
+      "label": "8"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 50,
+      "y": 9,
+      "label": "10"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 29,
+      "y": 30,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 81,
+      "y": 9,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 52.6,
+      "y": 51.6
+     },
+     {
+      "id": "s1",
+      "x": 84.5,
+      "y": 6.5
+     },
+     {
+      "id": "s2",
+      "x": 84.5,
+      "y": 12
+     }
+    ],
+    "steps": [
+     {
+      "label": "Pass und Prallpass",
+      "say": "Wie gehabt, Spieler vier spielt zu Spieler acht und bekommt den Ball direkt zurück.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         71.6,
+         30.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n4",
+        "to": [
+         57,
+         38
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         57.6,
+         38.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Abdrehen, Ball im Lauf",
+      "say": "Spieler acht dreht sofort ab und sprintet nach vorn. Spieler vier spielt ihm den Ball in den Lauf. Oben täuscht Spieler zehn kurz zum Ball hin an.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         66,
+         17
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         66.6,
+         17.6
+        ],
+        "type": "pass",
+        "delay": 0.5
+       },
+       {
+        "who": "n10",
+        "to": [
+         56,
+         10
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Im freien Raum annehmen",
+      "say": "Jetzt geht Spieler zehn weg in den freien Raum nach links. Spieler acht spielt ihn dort an.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         40,
+         12
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         40.6,
+         12.6
+        ],
+        "type": "pass",
+        "delay": 0.4
+       }
+      ]
+     },
+     {
+      "label": "Auf die andere Seite",
+      "say": "Spieler zehn spielt weiter zu Spieler elf. Von dort startet die nächste Runde, jetzt über die andere Seite.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         29.6,
+         30.6
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
