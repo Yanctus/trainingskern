@@ -1,0 +1,823 @@
+{
+ "title": "Rondo 7 gegen 4 zum Abschluss",
+ "code": "UE-305",
+ "kind": "Spielform",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel",
+  "Torschuss"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 13,
+ "players_max": 13,
+ "field_size": "18 x 18 m",
+ "description": "Sieben Spieler halten den Ball gegen vier Verteidiger. Einer der sieben steht in einer kleinen Zone in der Mitte. Erst wenn er angespielt wurde, darf das Team auf eines der beiden Tore abschließen. Erobern die Verteidiger den Ball, bekommen sie sofort einen Punkt und dürfen selbst aufs Tor gehen.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 18 Metern. Links und rechts steht je ein großes Tor mit Torwart. In der Mitte ist eine Zone von etwa viereinhalb mal viereinhalb Metern markiert.",
+  "Verteilen: Team Neon spielt mit sieben Spielern, sechs außen herum und einer in der Mittelzone. Team Rot verteidigt mit vier Spielern. Der Trainer steht mit Bällen am Rand.",
+  "Ablauf: Team Neon lässt den Ball laufen und sucht den Pass in die Mittelzone. Kommt der Ball von dort wieder heraus, darf Team Neon auf eines der beiden Tore schießen. Ist der Weg in die Mitte zu, läuft der Ball weiter außen herum.",
+  "Wertung und Wechsel: Jeder Treffer gibt einen Punkt. Erobert Team Rot den Ball, gibt das sofort einen Punkt, und Team Rot darf zusätzlich auf eines der Tore abschließen. Mittelspieler, Angreifer und Verteidiger regelmäßig tauschen."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Kopf hoch, wo ist die Lücke in die Mitte",
+  "Ohne Ball bewegen und anspielbar sein",
+  "Ist die Mitte zu, ruhig bleiben und verlagern",
+  "Kommt der Ball aus der Mitte, sofort aufs Tor"
+ ],
+ "materials": [
+  "2 große Tore",
+  "4 Hütchen für die Mittelzone",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Rondo sieben gegen vier zum Abschluss. Team Neon hält den Ball und sucht den Mann in der Mitte. Erst nach dem Pass in die Mittelzone darf das Team abschließen.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 22,
+    "y": 8,
+    "w": 56,
+    "h": 44
+   },
+   {
+    "type": "zone",
+    "x": 44,
+    "y": 24.5,
+    "w": 12,
+    "h": 11
+   }
+  ],
+  "goals": [
+   {
+    "x": 22,
+    "y": 30,
+    "side": "left",
+    "size": "gross"
+   },
+   {
+    "x": 78,
+    "y": 30,
+    "side": "right",
+    "size": "gross"
+   }
+  ],
+  "cones": [],
+  "players": [
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 33,
+    "y": 31,
+    "label": "6"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 33,
+    "y": 47,
+    "label": "5"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 50,
+    "y": 13.5,
+    "label": "2"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 50,
+    "y": 30,
+    "label": "10"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 67,
+    "y": 24,
+    "label": "8"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 67,
+    "y": 40,
+    "label": "9"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 58.5,
+    "y": 48,
+    "label": "4"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 41.5,
+    "y": 27,
+    "label": "3"
+   },
+   {
+    "id": "r13",
+    "team": "b",
+    "x": 41.5,
+    "y": 43,
+    "label": "13"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 58.5,
+    "y": 31.5,
+    "label": "7"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 50,
+    "y": 46,
+    "label": "11"
+   },
+   {
+    "id": "k",
+    "team": "t",
+    "x": 24.5,
+    "y": 30,
+    "label": "TW"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 75.5,
+    "y": 30,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 10,
+    "y": 12,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 59.1,
+    "y": 48.6
+   },
+   {
+    "id": "s1",
+    "x": 13.6,
+    "y": 15.5
+   },
+   {
+    "id": "s2",
+    "x": 10,
+    "y": 15.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Der Ball läuft außen entlang",
+    "say": "Team Neon ist zu siebt, Team Rot verteidigt zu viert. Spieler vier beginnt unten und spielt nach rechts zu Spieler neun. Team Rot schiebt zum Ball.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       67.6,
+       40.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r7",
+      "to": [
+       61.5,
+       36
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "r11",
+      "to": [
+       53,
+       44
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Weiter zu Spieler acht",
+    "say": "Der Ball geht weiter nach oben. Spieler acht schaut zum Ball, bis er ihn hat.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       67,
+       40
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b1",
+      "to": [
+       67.6,
+       24.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r7",
+      "to": [
+       61.5,
+       33
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     }
+    ]
+   },
+   {
+    "label": "Kopf hoch, Pass in die Mitte",
+    "say": "Jetzt hebt Spieler acht den Kopf. Die Lücke ist offen. Er dreht auf und spielt flach in die Mittelzone zu Spieler zehn.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       50,
+       30
+      ],
+      "type": "blick",
+      "von": [
+       67,
+       40
+      ],
+      "dauer": 1.3
+     },
+     {
+      "who": "n8",
+      "to": [
+       50,
+       30
+      ],
+      "type": "dreh",
+      "delay": 0.4
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       30.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Raus aus der Zone: Punkt",
+    "say": "Der Ball war in der Mitte, jetzt darf Team Neon abschließen. Spieler zehn legt nach oben ab, Spieler zwei schießt direkt aufs linke Tor und trifft, und das gibt einen Punkt für Team Neon. Der Trainer spielt sofort den nächsten Ball zu Spieler fünf.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       14.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       22.3,
+       26
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 22,
+    "y1": 58.6,
+    "x2": 78,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 91,
+    "y1": 8,
+    "x2": 91,
+    "y2": 52,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Ist die Mitte zu, Geduld haben.",
+   "title": "Mitte zu? Geduld",
+   "text": "Steht ein Verteidiger im Passweg, wird der Ball nicht in die Mitte gezwungen. Dann läuft er außen weiter, bis sich von einer anderen Seite eine Lücke auftut. Der Mittelspieler bewegt sich in seiner Zone mit und zeigt sich neu.",
+   "board": {
+    "players": [
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 33,
+      "y": 31,
+      "label": "6"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 33,
+      "y": 47,
+      "label": "5"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 50,
+      "y": 13.5,
+      "label": "2"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 50,
+      "y": 30,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 67,
+      "y": 24,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 67,
+      "y": 40,
+      "label": "9"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 58.5,
+      "y": 48,
+      "label": "4"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 41.5,
+      "y": 27,
+      "label": "3"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 41.5,
+      "y": 43,
+      "label": "13"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 58.5,
+      "y": 28,
+      "label": "7"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 50,
+      "y": 46,
+      "label": "11"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 24.5,
+      "y": 30,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 75.5,
+      "y": 30,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 10,
+      "y": 12,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 67.6,
+      "y": 24.6
+     },
+     {
+      "id": "s1",
+      "x": 13.6,
+      "y": 15.5
+     },
+     {
+      "id": "s2",
+      "x": 10,
+      "y": 15.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Die Mitte ist zu",
+      "say": "Spieler acht schaut in die Mitte. Spieler sieben steht genau im Passweg. Also kein Risiko, der Ball geht zurück zu Spieler neun.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         50,
+         30
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         67.6,
+         40.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n10",
+        "to": [
+         51.5,
+         32.5
+        ],
+        "type": "lauf",
+        "delay": 0.8
+       }
+      ]
+     },
+     {
+      "label": "Neuer Winkel, Lücke auf: Punkt",
+      "say": "Von hier ist der Weg frei. Spieler neun spielt in die Mittelzone und läuft ein paar Schritte nach. Spieler zehn lässt prallen, Spieler neun schießt aufs rechte Tor, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         52.1,
+         33.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n9",
+        "to": [
+         69,
+         36
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "b1",
+        "to": [
+         69.6,
+         36.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         77.7,
+         36.5
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 22,
+      "y1": 58.6,
+      "x2": 78,
+      "y2": 58.6,
+      "text": "18 m"
+     },
+     {
+      "x1": 91,
+      "y1": 8,
+      "x2": 91,
+      "y2": 52,
+      "text": "18 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Erst zehn Pässe, dann der Abschluss.",
+   "title": "Erst zehn Pässe",
+   "text": "Team Neon muss zehn Pässe spielen, bevor es abschließen darf. Der Pass in die Mittelzone bleibt trotzdem Pflicht. Alle zählen laut mit und wissen, wann der Moment für den Pass in die Mitte da ist.",
+   "board": {
+    "players": [
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 33,
+      "y": 31,
+      "label": "6"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 33,
+      "y": 47,
+      "label": "5"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 50,
+      "y": 13.5,
+      "label": "2"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 50,
+      "y": 30,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 67,
+      "y": 24,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 67,
+      "y": 40,
+      "label": "9"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 58.5,
+      "y": 48,
+      "label": "4"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 41.5,
+      "y": 27,
+      "label": "3"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 41.5,
+      "y": 43,
+      "label": "13"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 58.5,
+      "y": 31.5,
+      "label": "7"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 50,
+      "y": 46,
+      "label": "11"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 24.5,
+      "y": 30,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 75.5,
+      "y": 30,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 10,
+      "y": 12,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 59.1,
+      "y": 48.6
+     },
+     {
+      "id": "s1",
+      "x": 13.6,
+      "y": 15.5
+     },
+     {
+      "id": "s2",
+      "x": 10,
+      "y": 15.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Laut mitzählen",
+      "say": "Der Ball läuft über rechts nach oben, und alle zählen laut mit. Acht, neun, zehn. Team Rot läuft hinterher.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         67.6,
+         40.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         67.6,
+         24.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         14.1
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "r7",
+        "to": [
+         61.5,
+         31
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "r3",
+        "to": [
+         44,
+         20
+        ],
+        "type": "lauf",
+        "delay": 0.8
+       }
+      ]
+     },
+     {
+      "label": "Zehn voll, Ball in die Mitte",
+      "say": "Zehn Pässe sind voll. Spieler zwei spielt in die Mittelzone. Spieler zehn schaut zum Ball, bis er ihn hat.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         50,
+         13.5
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         30.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Aufdrehen, Abschluss: Punkt",
+      "say": "Spieler zehn dreht nach links auf und legt raus zu Spieler sechs. Der schießt direkt aufs linke Tor, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         33,
+         31
+        ],
+        "type": "blick",
+        "von": [
+         50,
+         13.5
+        ],
+        "dauer": 1.3
+       },
+       {
+        "who": "n10",
+        "to": [
+         33,
+         31
+        ],
+        "type": "dreh",
+        "delay": 0.4,
+        "bend": -1
+       },
+       {
+        "who": "b1",
+        "to": [
+         33.6,
+         31.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         22.3,
+         36.5
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 22,
+      "y1": 58.6,
+      "x2": 78,
+      "y2": 58.6,
+      "text": "18 m"
+     },
+     {
+      "x1": 91,
+      "y1": 8,
+      "x2": 91,
+      "y2": 52,
+      "text": "18 m"
+     }
+    ]
+   }
+  }
+ ]
+}

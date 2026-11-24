@@ -1,0 +1,853 @@
+{
+ "title": "Aufbauwelle drei gegen drei",
+ "code": "UE-310",
+ "kind": "Spielform",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel",
+  "Umschalten"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 12,
+ "players_max": 16,
+ "field_size": "25 x 25 m",
+ "description": "Drei Aufbauspieler lassen den Ball laufen und suchen den flachen Pass durch drei Verteidiger hindurch. Kommt der Pass bei der Gruppe an der Linie dahinter an, gibt das einen Punkt. Sofort greift diese Gruppe in die andere Richtung an, und die Passgeber verteidigen. Vier Dreiergruppen wechseln so Welle um Welle durch.",
+ "organisation": [
+  "Aufbauen: Ein Feld von etwa 25 mal 25 Metern. Zwei Linien teilen es, jede liegt 9 Meter vom Rand entfernt. Hütchen markieren die Ecken und die Linien.",
+  "Verteilen: Vier Gruppen zu je drei Spielern. Eine Gruppe baut auf, eine verteidigt in der Mitte, je eine wartet an den beiden Linien. Der Trainer steht mit Bällen am Rand.",
+  "Ablauf: Die Aufbauer spielen sich den Ball zu, bis eine Lücke aufgeht. Dann kommt der flache Pass durch die Verteidiger zur Gruppe an der Linie. Diese Gruppe greift sofort in die andere Richtung an, die Passgeber verteidigen, die alten Verteidiger gehen an die Linie.",
+  "Wertung: Jeder Pass durch die Verteidiger zur Linie gibt einen Punkt. Gewinnen die Verteidiger den Ball, tauschen die Angreifer mit der Gruppe an der nächsten Linie."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Breit und tief stehen, das Feld groß machen",
+  "Flach und scharf passen",
+  "Kopf hoch, wo geht die Lücke auf?",
+  "Nach dem Pass sofort umschalten"
+ ],
+ "materials": [
+  "8 Hütchen",
+  "Viele Bälle",
+  "Leibchen in vier Farben"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Aufbauwelle drei gegen drei. Drei bauen auf, drei verteidigen, und hinter den Verteidigern wartet schon die nächste Gruppe auf den Pass.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 19,
+    "y": 4,
+    "w": 61.4,
+    "h": 52
+   },
+   {
+    "type": "line",
+    "x1": 39.5,
+    "y1": 4,
+    "x2": 39.5,
+    "y2": 56,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 60,
+    "y1": 4,
+    "x2": 60,
+    "y2": 56,
+    "dashed": true
+   }
+  ],
+  "goals": [],
+  "cones": [
+   {
+    "x": 39.5,
+    "y": 4,
+    "color": "orange"
+   },
+   {
+    "x": 39.5,
+    "y": 56,
+    "color": "orange"
+   },
+   {
+    "x": 60,
+    "y": 4,
+    "color": "orange"
+   },
+   {
+    "x": 60,
+    "y": 56,
+    "color": "orange"
+   },
+   {
+    "x": 19,
+    "y": 4,
+    "color": "orange"
+   },
+   {
+    "x": 80.4,
+    "y": 4,
+    "color": "orange"
+   },
+   {
+    "x": 19,
+    "y": 56,
+    "color": "orange"
+   },
+   {
+    "x": 80.4,
+    "y": 56,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 41.5,
+    "y": 30,
+    "label": "4"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 45,
+    "y": 12,
+    "label": "5"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 42.5,
+    "y": 52,
+    "label": "6"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 53.5,
+    "y": 14,
+    "label": "2"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 53,
+    "y": 30,
+    "label": "3"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 51,
+    "y": 47,
+    "label": "7"
+   },
+   {
+    "id": "g9",
+    "team": "t",
+    "x": 62,
+    "y": 10,
+    "label": "9"
+   },
+   {
+    "id": "g10",
+    "team": "t",
+    "x": 62,
+    "y": 30,
+    "label": "10"
+   },
+   {
+    "id": "g11",
+    "team": "t",
+    "x": 62,
+    "y": 50,
+    "label": "11"
+   },
+   {
+    "id": "h12",
+    "team": "t",
+    "x": 30,
+    "y": 12,
+    "label": "12"
+   },
+   {
+    "id": "h13",
+    "team": "t",
+    "x": 30,
+    "y": 30,
+    "label": "13"
+   },
+   {
+    "id": "h14",
+    "team": "t",
+    "x": 30,
+    "y": 48,
+    "label": "14"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 8,
+    "y": 30,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 42.1,
+    "y": 30.6
+   },
+   {
+    "id": "s1",
+    "x": 11.6,
+    "y": 33.5
+   },
+   {
+    "id": "s2",
+    "x": 8,
+    "y": 33.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Aufbau über die Seite",
+    "say": "Team Neon baut auf. Spieler vier spielt nach außen zu Spieler sechs. Team Rot schiebt geschlossen zum Ball, Spieler sieben läuft an.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       43.1,
+       52.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r7",
+      "to": [
+       47.5,
+       50
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "r3",
+      "to": [
+       50,
+       36
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "r2",
+      "to": [
+       52,
+       22
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Schnell auf die andere Seite",
+    "say": "Zurück in die Mitte und gleich weiter zu Spieler fünf. Jetzt muss Team Rot den ganzen Weg rüber. Spieler zwei sprintet weit raus, die anderen kommen nicht hinterher.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       42.1,
+       30.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       45.6,
+       12.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r2",
+      "to": [
+       49.5,
+       9.5
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     },
+     {
+      "who": "r3",
+      "to": [
+       50,
+       31
+      ],
+      "type": "lauf",
+      "delay": 0.7
+     },
+     {
+      "who": "r7",
+      "to": [
+       50,
+       44
+      ],
+      "type": "lauf",
+      "delay": 0.7
+     }
+    ]
+   },
+   {
+    "label": "Kopf hoch, wo ist die Lücke?",
+    "say": "Spieler fünf nimmt den Kopf hoch. Zwischen Spieler zwei und Spieler drei ist Platz, und genau dort bietet sich Spieler zehn an.",
+    "moves": [
+     {
+      "who": "g10",
+      "to": [
+       62,
+       24
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n5",
+      "to": [
+       62,
+       24
+      ],
+      "type": "blick",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Pass durch die Lücke: Punkt",
+    "say": "Flach durch die Lücke zu Spieler zehn, und das gibt einen Punkt für Team Neon. Sofort drehen sich die Rollen. Die drei von der Linie greifen in die andere Richtung an, Team Neon verteidigt, und Team Rot geht an die Linie.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       62.6,
+       24.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "g10",
+      "to": [
+       56.5,
+       25
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "g9",
+      "to": [
+       56,
+       12
+      ],
+      "type": "lauf",
+      "delay": 0.9
+     },
+     {
+      "who": "g11",
+      "to": [
+       56,
+       48
+      ],
+      "type": "lauf",
+      "delay": 0.9
+     },
+     {
+      "who": "n5",
+      "to": [
+       40,
+       14
+      ],
+      "type": "lauf",
+      "delay": 0.9
+     },
+     {
+      "who": "n4",
+      "to": [
+       37,
+       30
+      ],
+      "type": "lauf",
+      "delay": 0.9
+     },
+     {
+      "who": "n6",
+      "to": [
+       40,
+       50
+      ],
+      "type": "lauf",
+      "delay": 0.9
+     },
+     {
+      "who": "r2",
+      "to": [
+       66,
+       4.5
+      ],
+      "type": "lauf",
+      "delay": 1.1
+     },
+     {
+      "who": "r3",
+      "to": [
+       67,
+       38
+      ],
+      "type": "lauf",
+      "delay": 1.1
+     },
+     {
+      "who": "r7",
+      "to": [
+       68,
+       43
+      ],
+      "type": "lauf",
+      "delay": 1.1
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 19,
+    "y1": 58.6,
+    "x2": 80.4,
+    "y2": 58.6,
+    "text": "25 m"
+   },
+   {
+    "x1": 90,
+    "y1": 4,
+    "x2": 90,
+    "y2": 56,
+    "text": "25 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Die Lücke sehen und sofort nutzen.",
+   "title": "Die Lücke sofort nutzen",
+   "text": "Rückt ein Verteidiger zu weit heraus, fehlt er in der Kette. Diese Lücke ist nur kurz offen. Wer den Ball hat, schaut vor dem Pass hoch und spielt flach hindurch, bevor die Verteidiger wieder zusammenrücken.",
+   "board": {
+    "players": [
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 41.5,
+      "y": 30,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 45,
+      "y": 12,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 42.5,
+      "y": 52,
+      "label": "6"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 53.5,
+      "y": 14,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 53,
+      "y": 30,
+      "label": "3"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 51,
+      "y": 47,
+      "label": "7"
+     },
+     {
+      "id": "g9",
+      "team": "t",
+      "x": 62,
+      "y": 10,
+      "label": "9"
+     },
+     {
+      "id": "g10",
+      "team": "t",
+      "x": 62,
+      "y": 30,
+      "label": "10"
+     },
+     {
+      "id": "g11",
+      "team": "t",
+      "x": 62,
+      "y": 50,
+      "label": "11"
+     },
+     {
+      "id": "h12",
+      "team": "t",
+      "x": 30,
+      "y": 12,
+      "label": "12"
+     },
+     {
+      "id": "h13",
+      "team": "t",
+      "x": 30,
+      "y": 30,
+      "label": "13"
+     },
+     {
+      "id": "h14",
+      "team": "t",
+      "x": 30,
+      "y": 48,
+      "label": "14"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 8,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 42.1,
+      "y": 30.6
+     },
+     {
+      "id": "s1",
+      "x": 11.6,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 8,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Spieler drei rückt zu weit raus",
+      "say": "Spieler drei will den Ball haben und läuft Spieler vier weit entgegen. Der bleibt ruhig und spielt nach außen zu Spieler sechs.",
+      "moves": [
+       {
+        "who": "r3",
+        "to": [
+         46.5,
+         31.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         43.1,
+         52.6
+        ],
+        "type": "pass",
+        "delay": 0.5
+       },
+       {
+        "who": "r7",
+        "to": [
+         49,
+         53.5
+        ],
+        "type": "lauf",
+        "delay": 0.7
+       }
+      ]
+     },
+     {
+      "label": "Blick in die Mitte",
+      "say": "Kopf hoch. Wo eben noch Spieler drei stand, ist jetzt alles offen.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         57.5,
+         35
+        ],
+        "type": "blick"
+       }
+      ]
+     },
+     {
+      "label": "Durch die Mitte: Punkt",
+      "say": "Spieler sechs spielt sofort flach durch die Mitte zu Spieler zehn, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         62.6,
+         30.6
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Wer den Ball gewinnt, baut selbst auf.",
+   "title": "Ballgewinn tauscht die Teams",
+   "text": "Gewinnen die Verteidiger den Ball, ist die Welle für die Angreifer vorbei. Sie tauschen sofort mit der Gruppe an der nächsten Linie. Die Balleroberer bauen jetzt selbst auf. Dauert ein Angriff zu lange, gibt der Trainer eine Zeit vor.",
+   "board": {
+    "players": [
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 41.5,
+      "y": 30,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 45,
+      "y": 12,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 42.5,
+      "y": 52,
+      "label": "6"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 53.5,
+      "y": 14,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 53,
+      "y": 30,
+      "label": "3"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 51,
+      "y": 47,
+      "label": "7"
+     },
+     {
+      "id": "g9",
+      "team": "t",
+      "x": 62,
+      "y": 10,
+      "label": "9"
+     },
+     {
+      "id": "g10",
+      "team": "t",
+      "x": 62,
+      "y": 30,
+      "label": "10"
+     },
+     {
+      "id": "g11",
+      "team": "t",
+      "x": 62,
+      "y": 50,
+      "label": "11"
+     },
+     {
+      "id": "h12",
+      "team": "t",
+      "x": 30,
+      "y": 12,
+      "label": "12"
+     },
+     {
+      "id": "h13",
+      "team": "t",
+      "x": 30,
+      "y": 30,
+      "label": "13"
+     },
+     {
+      "id": "h14",
+      "team": "t",
+      "x": 30,
+      "y": 48,
+      "label": "14"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 8,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 42.1,
+      "y": 30.6
+     },
+     {
+      "id": "s1",
+      "x": 11.6,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 8,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Spieler drei fängt den Pass ab",
+      "say": "Spieler vier will zu Spieler fünf spielen. Spieler drei ahnt das, geht dazwischen und hat den Ball.",
+      "moves": [
+       {
+        "who": "r3",
+        "to": [
+         46,
+         22
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         46.6,
+         22.6
+        ],
+        "type": "pass",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Team Neon raus, die Nächsten rein",
+      "say": "Damit ist Team Neon raus und läuft zurück an die Linie. Von dort kommen die nächsten drei ins Feld und verteidigen.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         36,
+         6
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n4",
+        "to": [
+         35.5,
+         37
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n6",
+        "to": [
+         35,
+         55
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "h12",
+        "to": [
+         40,
+         10
+        ],
+        "type": "lauf",
+        "delay": 0.5
+       },
+       {
+        "who": "h13",
+        "to": [
+         40,
+         24
+        ],
+        "type": "lauf",
+        "delay": 0.5
+       },
+       {
+        "who": "h14",
+        "to": [
+         40,
+         44
+        ],
+        "type": "lauf",
+        "delay": 0.5
+       }
+      ]
+     },
+     {
+      "label": "Team Rot baut jetzt auf",
+      "say": "Team Rot hat den Ball erobert und baut jetzt selbst auf. Spieler drei spielt raus zu Spieler zwei, und die nächste Welle läuft.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         54.1,
+         14.6
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

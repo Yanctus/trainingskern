@@ -1,0 +1,857 @@
+{
+ "title": "Passzirkel um drei Stangen",
+ "code": "UE-318",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Erwärmung",
+  "Ballannahme"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 10,
+ "players_min": 6,
+ "players_max": 8,
+ "field_size": "14 x 18 m",
+ "description": "Ein Passzirkel zum Aufwärmen mit einem Dummy in der Mitte und drei Stangen. Der Ball läuft vom Start über den Dummy nach links, mit zwei Doppelpässen um die Stangen nach oben und rechts außen wieder raus. Der Letzte dribbelt mit Tempo zurück zum Start. Nach jeder Aktion rückt jeder eine Station weiter.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 14 mal 18 Metern. In der Mitte steht ein Dummy, links, oben und rechts je eine Stange. Unten markiert ein Hütchen den Start.",
+  "Verteilen: Je ein Spieler steht am Dummy und an den drei Stangen. Die anderen stehen mit Ball am Start. Der Trainer steht mit Ersatzbällen am Rand.",
+  "Ablauf: Doppelpass mit dem Spieler am Dummy, dann raus nach links. Ablage nach innen und Doppelpass um die linke Stange. Weiter nach oben, Doppelpass um die mittlere Stange, Pass nach rechts außen. Der Spieler rechts dribbelt außen an der Stange vorbei zurück zum Start.",
+  "Wechsel: Jeder rückt nach seiner Aktion eine Station weiter, vom Start zum Dummy, dann nach links, nach oben und nach rechts. Dribbelt der Letzte zurück, startet der Nächste."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Flach und mit Druck passen",
+  "Außen offen stehen und mit Tempo rausgehen",
+  "Doppelpass mit einem Kontakt, genau in den Lauf",
+  "Nach dem Pass sofort nachrücken"
+ ],
+ "materials": [
+  "1 Dummy",
+  "3 Stangen",
+  "3 Hütchen",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Passzirkel um drei Stangen. Zum Aufwärmen läuft der Ball einmal durch alle Stationen, mit zwei Doppelpässen um die Stangen. Der Letzte dribbelt zurück, und jeder rückt eine Station weiter.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 28,
+    "y": 5,
+    "w": 44,
+    "h": 50
+   }
+  ],
+  "goals": [],
+  "cones": [
+   {
+    "x": 49.5,
+    "y": 30,
+    "color": "orange",
+    "shape": "stange",
+    "id": "d"
+   },
+   {
+    "x": 36,
+    "y": 19,
+    "color": "orange",
+    "shape": "stange",
+    "id": "p1"
+   },
+   {
+    "x": 49.5,
+    "y": 11,
+    "color": "orange",
+    "shape": "stange",
+    "id": "p2"
+   },
+   {
+    "x": 64,
+    "y": 21,
+    "color": "orange",
+    "shape": "stange",
+    "id": "p3"
+   },
+   {
+    "x": 51,
+    "y": 49.5,
+    "color": "orange",
+    "id": "h0"
+   }
+  ],
+  "players": [
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 46,
+    "y": 48,
+    "label": "6"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 57.5,
+    "y": 51,
+    "label": "7"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 53.5,
+    "y": 31,
+    "label": "10"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 31.5,
+    "y": 22,
+    "label": "8"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 46,
+    "y": 8.5,
+    "label": "9"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 69,
+    "y": 21,
+    "label": "11"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 12,
+    "y": 12,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 46.6,
+    "y": 48.6
+   },
+   {
+    "id": "b2",
+    "x": 58.1,
+    "y": 51.6
+   },
+   {
+    "id": "s1",
+    "x": 15.6,
+    "y": 15.5
+   },
+   {
+    "id": "s2",
+    "x": 12,
+    "y": 15.5
+   }
+  ],
+  "dims": [
+   {
+    "x1": 28,
+    "y1": 58.6,
+    "x2": 72,
+    "y2": 58.6,
+    "text": "14 m"
+   },
+   {
+    "x1": 85,
+    "y1": 5,
+    "x2": 85,
+    "y2": 55,
+    "text": "18 m"
+   }
+  ],
+  "steps": [
+   {
+    "label": "Doppelpass am Dummy",
+    "say": "Spieler sechs startet unten. Er spielt flach zu Spieler zehn am Dummy, und der lässt den Ball direkt zurückprallen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       54.1,
+       31.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       46.6,
+       48.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Raus nach links",
+    "say": "Jetzt geht der Ball nach links außen zu Spieler acht. Spieler zehn löst sich schon vom Dummy und kommt ihm entgegen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       32.1,
+       22.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n10",
+      "to": [
+       53,
+       26
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n10",
+      "to": [
+       46,
+       23
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Doppelpass um die linke Stange",
+    "say": "Spieler acht legt nach innen ab und läuft außen an der Stange vorbei. Spieler zehn spielt ihm den Ball mit einem Kontakt in den Lauf. Unten rückt Spieler sechs zum Dummy nach.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       46.6,
+       23.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n8",
+      "to": [
+       31.5,
+       16
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n8",
+      "to": [
+       33.5,
+       13
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       34.1,
+       13.6
+      ],
+      "type": "pass",
+      "delay": 0.9
+     },
+     {
+      "who": "n6",
+      "to": [
+       53.5,
+       31
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "Doppelpass um die mittlere Stange",
+    "say": "Weiter nach oben zu Spieler neun. Der legt kurz zurück und dreht um die Stange nach rechts. Spieler acht ist nachgelaufen und spielt ihm den Ball wieder in den Lauf.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       46.6,
+       9.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n8",
+      "to": [
+       44,
+       16
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "b1",
+      "to": [
+       44.6,
+       16.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n9",
+      "to": [
+       52,
+       6.5
+      ],
+      "type": "lauf",
+      "delay": 0.9
+     },
+     {
+      "who": "n9",
+      "to": [
+       57,
+       12.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       57.6,
+       13.1
+      ],
+      "type": "pass",
+      "delay": 1.7
+     },
+     {
+      "who": "n10",
+      "to": [
+       31.5,
+       22
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     }
+    ]
+   },
+   {
+    "label": "Rechts raus, mit Ball zurück",
+    "say": "Spieler neun spielt nach rechts außen. Spieler elf nimmt den Ball außen an der Stange mit und dribbelt mit Tempo zurück zum Start.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       69.6,
+       21.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n11",
+      "to": [
+       70.5,
+       28
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n11",
+      "to": [
+       47,
+       47.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     }
+    ]
+   },
+   {
+    "label": "Weiterrücken, der Nächste startet",
+    "say": "Der Ball ist wieder am Start, die Runde ist durch. Spieler acht rückt nach oben, Spieler neun nach rechts. Und Spieler sieben ist schon dran. Er startet, sobald Spieler elf losdribbelt.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       46,
+       8.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n9",
+      "to": [
+       66,
+       15
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n9",
+      "to": [
+       69,
+       21
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b2",
+      "to": [
+       54.1,
+       31.6
+      ],
+      "type": "pass",
+      "delay": 0.3
+     },
+     {
+      "who": "b2",
+      "to": [
+       58.1,
+       51.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Außen offen annehmen und mit Tempo raus.",
+   "title": "Offen annehmen, Tempo raus",
+   "text": "Der Spieler rechts außen steht seitlich und schaut zum Ball. Er nimmt den Pass mit dem hinteren Fuß an. So dreht er in einer Bewegung auf und geht mit dem ersten Kontakt Richtung Start.",
+   "board": {
+    "players": [
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 53.5,
+      "y": 31,
+      "label": "6"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 57.5,
+      "y": 51,
+      "label": "7"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 31.5,
+      "y": 22,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 44,
+      "y": 16,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 57,
+      "y": 12.5,
+      "label": "9"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 69,
+      "y": 21,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 12,
+      "y": 12,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 57.6,
+      "y": 13.1
+     },
+     {
+      "id": "b2",
+      "x": 58.1,
+      "y": 51.6
+     },
+     {
+      "id": "s1",
+      "x": 15.6,
+      "y": 15.5
+     },
+     {
+      "id": "s2",
+      "x": 12,
+      "y": 15.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Seitlich stehen, Blick zum Ball",
+      "say": "Spieler elf steht seitlich an der Stange und schaut zu Spieler neun. Der Pass kommt flach auf seinen hinteren Fuß.",
+      "moves": [
+       {
+        "who": "n11",
+        "to": [
+         57,
+         12.5
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         69.6,
+         21.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Aufdrehen und los",
+      "say": "Erst jetzt dreht er auf, der Blick geht Richtung Start. Der erste Kontakt führt außen an der Stange vorbei, dann zieht er das Tempo an bis zum Starthütchen.",
+      "moves": [
+       {
+        "who": "n11",
+        "to": [
+         62,
+         37
+        ],
+        "type": "blick",
+        "von": [
+         57,
+         12.5
+        ],
+        "dauer": 1.3
+       },
+       {
+        "who": "n11",
+        "to": [
+         62,
+         37
+        ],
+        "type": "dreh",
+        "delay": 0.4,
+        "bend": -1
+       },
+       {
+        "who": "n11",
+        "to": [
+         70.5,
+         28
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "n11",
+        "to": [
+         47,
+         47.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Eine neue Passfolge, und am Ende geht der Ball steil durch die Gasse.",
+   "title": "Steilpass durch die Gasse",
+   "text": "Der Ball geht vom Start direkt nach links außen. Der Spieler am Dummy täuscht kurz an, löst sich und bekommt die Ablage in der Mitte. Er spielt hoch zur Spitze, und von dort kommt der Steilpass durch die Hütchengasse. Der Spieler rechts läuft in den Ball und dribbelt zum Start.",
+   "board": {
+    "players": [
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 46,
+      "y": 48,
+      "label": "6"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 57.5,
+      "y": 51,
+      "label": "7"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 53.5,
+      "y": 31,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 31.5,
+      "y": 22,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 46,
+      "y": 8.5,
+      "label": "9"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 69,
+      "y": 21,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 12,
+      "y": 12,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 46.6,
+      "y": 48.6
+     },
+     {
+      "id": "b2",
+      "x": 58.1,
+      "y": 51.6
+     },
+     {
+      "id": "s1",
+      "x": 15.6,
+      "y": 15.5
+     },
+     {
+      "id": "s2",
+      "x": 12,
+      "y": 15.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Nach außen, antäuschen, Ablage",
+      "say": "Spieler sechs spielt direkt nach links außen. Spieler zehn täuscht einen Schritt zum Ball an, geht dann weg vom Dummy nach vorn und bekommt die Ablage von Spieler acht.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         32.1,
+         22.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n10",
+        "to": [
+         53.5,
+         36
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n10",
+        "to": [
+         55,
+         28
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n10",
+        "to": [
+         50,
+         22.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         23.1
+        ],
+        "type": "pass",
+        "delay": 1.9
+       }
+      ]
+     },
+     {
+      "label": "Hoch zur Spitze",
+      "say": "Oben kommt Spieler neun um die Stange herum und zeigt sich. Spieler zehn spielt ihn flach an.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         52,
+         6.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n9",
+        "to": [
+         56.5,
+         12.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         57.1,
+         13.1
+        ],
+        "type": "pass",
+        "delay": 0.9
+       }
+      ]
+     },
+     {
+      "label": "Steil durch die Gasse",
+      "say": "Jetzt kommt der Steilpass genau zwischen den beiden Hütchen durch. Spieler elf startet rechts außen, läuft in den Ball und dribbelt zurück zum Start. Dann beginnt Spieler sieben.",
+      "moves": [
+       {
+        "who": "n11",
+        "to": [
+         71,
+         29
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n11",
+        "to": [
+         66.5,
+         39.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         67.1,
+         40.1
+        ],
+        "type": "pass",
+        "delay": 0.4
+       },
+       {
+        "who": "n11",
+        "to": [
+         47,
+         47.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     }
+    ],
+    "cones": [
+     {
+      "x": 49.5,
+      "y": 30,
+      "color": "orange",
+      "shape": "stange",
+      "id": "d"
+     },
+     {
+      "x": 36,
+      "y": 19,
+      "color": "orange",
+      "shape": "stange",
+      "id": "p1"
+     },
+     {
+      "x": 49.5,
+      "y": 11,
+      "color": "orange",
+      "shape": "stange",
+      "id": "p2"
+     },
+     {
+      "x": 64,
+      "y": 21,
+      "color": "orange",
+      "shape": "stange",
+      "id": "p3"
+     },
+     {
+      "x": 51,
+      "y": 49.5,
+      "color": "orange",
+      "id": "h0"
+     },
+     {
+      "x": 58.5,
+      "y": 29,
+      "color": "neon",
+      "id": "g1"
+     },
+     {
+      "x": 67,
+      "y": 28,
+      "color": "neon",
+      "id": "g2"
+     }
+    ]
+   }
+  }
+ ]
+}

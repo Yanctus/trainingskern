@@ -1,0 +1,873 @@
+{
+ "title": "Durch den Druck nach vorn",
+ "code": "UE-317",
+ "kind": "Spielform",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel",
+  "Torschuss"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 12,
+ "players_max": 12,
+ "field_size": "25 x 40 m",
+ "description": "Fünf gegen fünf plus Torhüter auf einem schmalen, langen Feld. Team Neon baut vom Torwart aus auf, Team Rot läuft früh an. Hinter der Kette von Team Rot ist viel Platz, zur Seite kaum. Wer den Druck überspielt und einen Mitspieler in der Tiefe findet, kommt zum Abschluss.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 25 mal 40 Metern mit Mittellinie. Auf jeder Grundlinie steht ein großes Tor.",
+  "Verteilen: Team Neon und Team Rot spielen mit je fünf Feldspielern, in jedem Tor steht ein Torwart. Alle Feldspieler stehen zu Beginn in der Hälfte von Team Neon. Der Trainer steht mit Bällen am Rand.",
+  "Ablauf: Der Torwart unten eröffnet für Team Neon. Team Neon spielt sich durch das Anlaufen und sucht den Pass in die Tiefe. Dann geht es ohne Pause zum Abschluss aufs andere Tor. Erobert Team Rot den Ball, greift es sofort selbst an.",
+  "Wertung und Wechsel: Jeder Treffer gibt einen Punkt. Nach einem Treffer oder wenn der Torwart den Ball hält, eröffnet der Torwart auf der anderen Seite, und das andere Team baut auf."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Kopf hoch, wo ist der Platz hinter der Kette?",
+  "Nach vorn spielen, wenig Kontakte",
+  "Ruhig bleiben, wenn der Gegner anläuft",
+  "Den freien Mann finden und anspielen"
+ ],
+ "materials": [
+  "2 große Tore",
+  "6 Hütchen",
+  "Leibchen in zwei Farben",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Durch den Druck nach vorn. Fünf gegen fünf plus Torhüter auf einem schmalen, langen Feld. Team Neon baut hinten auf, Team Rot läuft an, und hinter der Kette wartet der Platz für den Angriff.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   },
+   {
+    "type": "line",
+    "x1": 25,
+    "y1": 30,
+    "x2": 75,
+    "y2": 30,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "gross"
+   },
+   {
+    "x": 50,
+    "y": 55,
+    "side": "bottom",
+    "size": "gross"
+   }
+  ],
+  "cones": [
+   {
+    "x": 25,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 75,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 25,
+    "y": 55,
+    "color": "orange"
+   },
+   {
+    "x": 75,
+    "y": 55,
+    "color": "orange"
+   },
+   {
+    "x": 25,
+    "y": 30,
+    "color": "orange"
+   },
+   {
+    "x": 75,
+    "y": 30,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 50,
+    "y": 53.5,
+    "label": "TW"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 29,
+    "y": 46.5,
+    "label": "5"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 59,
+    "y": 49,
+    "label": "4"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 46.5,
+    "y": 36.5,
+    "label": "6"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 29,
+    "y": 31,
+    "label": "10"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 73,
+    "y": 27,
+    "label": "8"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 50,
+    "y": 7.5,
+    "label": "TW"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 37.5,
+    "y": 27,
+    "label": "2"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 55,
+    "y": 33,
+    "label": "3"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 64.5,
+    "y": 27,
+    "label": "7"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 38,
+    "y": 43,
+    "label": "9"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 67.5,
+    "y": 43,
+    "label": "11"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 12,
+    "y": 46,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 50.6,
+    "y": 54.1
+   },
+   {
+    "id": "s1",
+    "x": 15.6,
+    "y": 49.5
+   },
+   {
+    "id": "s2",
+    "x": 12,
+    "y": 49.5
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "25 m"
+   },
+   {
+    "x1": 88,
+    "y1": 5,
+    "x2": 88,
+    "y2": 55,
+    "text": "40 m"
+   }
+  ],
+  "steps": [
+   {
+    "label": "Der Torwart eröffnet",
+    "say": "Der Torwart unten hat den Ball, Team Neon baut auf. Er spielt flach nach links zu Spieler fünf. Spieler neun läuft sofort an.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       29.6,
+       47.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r9",
+      "to": [
+       36,
+       43.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Quer auf die freie Seite",
+    "say": "Links wird es eng. Also geht der Ball quer zu Spieler vier, der rechts Zeit hat. Spieler elf kommt zu spät.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       59.6,
+       49.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r11",
+      "to": [
+       66,
+       45.5
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "r9",
+      "to": [
+       40,
+       45
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "Kopf hoch, steil in die Tiefe",
+    "say": "Spieler vier hebt den Kopf und sieht den Platz hinter der Kette. Vorn löst sich Spieler zehn im Rücken von Spieler zwei. Der Pass kommt flach durch die Mitte, genau in seinen Lauf.",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       51,
+       31
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "n10",
+      "to": [
+       31,
+       24
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n10",
+      "to": [
+       44,
+       21
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       44.6,
+       21.6
+      ],
+      "type": "pass",
+      "delay": 1.0
+     }
+    ]
+   },
+   {
+    "label": "Abschluss: Punkt",
+    "say": "Spieler zehn nimmt den Ball mit und schießt flach ins linke Eck. Das gibt einen Punkt für Team Neon. Danach eröffnet der Torwart oben, und Team Rot baut auf.",
+    "moves": [
+     {
+      "who": "n10",
+      "to": [
+       45,
+       14
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       45,
+       4.7
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r2",
+      "to": [
+       40,
+       19
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "r3",
+      "to": [
+       53,
+       22
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n8",
+      "to": [
+       66,
+       16
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "r7",
+      "to": [
+       61,
+       20
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     }
+    ]
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Platz schaffen für den Mitspieler.",
+   "title": "Platz schaffen in der Mitte",
+   "text": "Spieler fünf geht breit und bekommt den Ball vom Torwart. Spieler zehn läuft nach außen und zieht seinen Gegner mit. In die Lücke kommt Spieler sechs, dreht auf und spielt sofort nach vorn.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 50,
+      "y": 53.5,
+      "label": "TW"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 29,
+      "y": 46.5,
+      "label": "5"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 59,
+      "y": 49,
+      "label": "4"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 46.5,
+      "y": 36.5,
+      "label": "6"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 29,
+      "y": 31,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 73,
+      "y": 27,
+      "label": "8"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 50,
+      "y": 7.5,
+      "label": "TW"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 37.5,
+      "y": 27,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 55,
+      "y": 33,
+      "label": "3"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 64.5,
+      "y": 27,
+      "label": "7"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 38,
+      "y": 43,
+      "label": "9"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 67.5,
+      "y": 43,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 12,
+      "y": 46,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 54.1
+     },
+     {
+      "id": "s1",
+      "x": 15.6,
+      "y": 49.5
+     },
+     {
+      "id": "s2",
+      "x": 12,
+      "y": 49.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Breit gehen, wegziehen",
+      "say": "Spieler fünf geht ganz nach außen, und der Torwart spielt ihn an. Gleichzeitig läuft Spieler zehn nach links weg. Spieler zwei geht mit, in der Mitte ist jetzt Platz.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         27,
+         50
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         27.6,
+         50.6
+        ],
+        "type": "pass",
+        "delay": 0.4
+       },
+       {
+        "who": "n10",
+        "to": [
+         27,
+         25
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "r2",
+        "to": [
+         35.5,
+         22.5
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       },
+       {
+        "who": "r9",
+        "to": [
+         41,
+         46
+        ],
+        "type": "lauf",
+        "delay": 0.5
+       }
+      ]
+     },
+     {
+      "label": "Spieler sechs kommt in die Lücke",
+      "say": "Spieler sechs sieht das und läuft in den freien Raum. Er schaut zum Ball, und Spieler fünf spielt ihn flach an.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         42,
+         33
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n6",
+        "to": [
+         27,
+         50
+        ],
+        "type": "blick",
+        "delay": 0.7
+       },
+       {
+        "who": "b1",
+        "to": [
+         42.6,
+         33.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Aufdrehen und nach vorn",
+      "say": "Jetzt erst dreht er auf, der Blick geht nach vorn. Rechts startet Spieler acht hinter die Kette, und der Ball kommt in seinen Lauf.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         66.6,
+         19.6
+        ],
+        "type": "blick",
+        "von": [
+         27,
+         50
+        ],
+        "dauer": 1.3
+       },
+       {
+        "who": "n6",
+        "to": [
+         66.6,
+         19.6
+        ],
+        "type": "dreh",
+        "delay": 0.4
+       },
+       {
+        "who": "n8",
+        "to": [
+         66,
+         19
+        ],
+        "type": "lauf",
+        "delay": 0.8
+       },
+       {
+        "who": "b1",
+        "to": [
+         66.6,
+         19.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Außen annehmen, abspielen und hinterlaufen.",
+   "title": "Außen frei, hinterlaufen",
+   "text": "Ist außen Platz, bietet sich Spieler vier dort an. Nach seinem Pass bleibt er nicht stehen, er läuft außen an Spieler acht vorbei. So bekommt er den Ball an der Grundlinie wieder und kann flach in die Mitte flanken.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 50,
+      "y": 53,
+      "label": "TW"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 29,
+      "y": 47,
+      "label": "5"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 71,
+      "y": 46.5,
+      "label": "4"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 50,
+      "y": 31,
+      "label": "6"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 67,
+      "y": 26,
+      "label": "8"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 33,
+      "y": 24,
+      "label": "10"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 50,
+      "y": 7.5,
+      "label": "TW"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 41.5,
+      "y": 20,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 58.5,
+      "y": 31,
+      "label": "3"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 58.5,
+      "y": 15,
+      "label": "7"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 40,
+      "y": 42,
+      "label": "9"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 62.5,
+      "y": 46.5,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 12,
+      "y": 46,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 71.6,
+      "y": 47.1
+     },
+     {
+      "id": "s1",
+      "x": 15.6,
+      "y": 49.5
+     },
+     {
+      "id": "s2",
+      "x": 12,
+      "y": 49.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Außen annehmen, steil spielen",
+      "say": "Spieler vier hat rechts außen Platz und den Ball. Er spielt steil zu Spieler acht und läuft sofort hinterher.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         67.6,
+         26.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n4",
+        "to": [
+         73,
+         33
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Außen vorbei",
+      "say": "Spieler sieben rückt auf Spieler acht. Dahinter ist die Bahn frei. Spieler vier läuft außen vorbei und bekommt den Ball in den Lauf. In der Mitte starten Spieler zehn und Spieler sechs.",
+      "moves": [
+       {
+        "who": "r7",
+        "to": [
+         64,
+         21
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n4",
+        "to": [
+         73,
+         15
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         73.6,
+         15.6
+        ],
+        "type": "pass",
+        "delay": 0.5
+       },
+       {
+        "who": "n10",
+        "to": [
+         44,
+         12
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       },
+       {
+        "who": "n6",
+        "to": [
+         54,
+         20
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       }
+      ]
+     },
+     {
+      "label": "Flanke und Abschluss: Punkt",
+      "say": "Kurz hochschauen, wer ist frei? Die Flanke kommt flach vor das Tor, Spieler zehn hält den Fuß hin, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         56,
+         14
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         44.6,
+         12.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         45,
+         4.7
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

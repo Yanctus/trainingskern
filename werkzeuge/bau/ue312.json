@@ -1,0 +1,879 @@
+{
+ "title": "Aktivierung ums Viereck",
+ "code": "UE-312",
+ "kind": "Übungsform",
+ "focuses": [
+  "Dribbling",
+  "Passspiel",
+  "Erwärmung"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 10,
+ "players_min": 8,
+ "players_max": 12,
+ "field_size": "18 x 18 m",
+ "description": "Ein Aufwärmen mit vielen Ballkontakten. Vier Spieler dribbeln gleichzeitig von außen zum Viereck in der Mitte und legen ihren Ball dort an einem Hütchen ab. Ohne Ball laufen sie zum nächsten Hütchen, nehmen den Ball des Nachbarn und passen ihn zur Station nach außen. So wandern Bälle und Spieler im Kreis, und keiner steht lange.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 18 Metern. In der Mitte bilden vier Hütchen ein Viereck von 4,5 Metern. In der Mitte jeder Seitenlinie liegt ein Starthütchen.",
+  "Verteilen: Dreiergruppen, an jedem Starthütchen eine. Der Erste jeder Gruppe hat einen Ball. Der Trainer steht am Rand.",
+  "Ablauf: Alle vier Ersten dribbeln gleichzeitig zum Hütchen rechts vor ihnen und legen den Ball dort still ab. Dann laufen sie gegen den Uhrzeigersinn zum nächsten Hütchen und passen den Ball, der dort liegt, zur Station nach außen.",
+  "Wechsel: Nach dem Pass läuft jeder eine Station weiter und stellt sich dort hinten an. Der Angespielte dribbelt sofort los."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Viele kleine Kontakte, der Ball bleibt am Fuß",
+  "Ball still hinlegen, erst dann weiter",
+  "Antreten, abbremsen, wieder antreten",
+  "Flach und genau zur Station passen"
+ ],
+ "materials": [
+  "8 Hütchen",
+  "4 Bälle"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Aktivierung ums Viereck. Zum Aufwärmen bekommt jeder viele Ballkontakte. Den eigenen Ball lässt man in der Mitte liegen und holt sich den nächsten.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   }
+  ],
+  "goals": [],
+  "cones": [
+   {
+    "x": 44,
+    "y": 24,
+    "color": "orange"
+   },
+   {
+    "x": 56,
+    "y": 24,
+    "color": "orange"
+   },
+   {
+    "x": 44,
+    "y": 36,
+    "color": "orange"
+   },
+   {
+    "x": 56,
+    "y": 36,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 4.5,
+    "color": "neon"
+   },
+   {
+    "x": 30,
+    "y": 35.5,
+    "color": "neon"
+   },
+   {
+    "x": 50,
+    "y": 56,
+    "color": "neon"
+   },
+   {
+    "x": 69.5,
+    "y": 25,
+    "color": "neon"
+   }
+  ],
+  "players": [
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 45,
+    "y": 9,
+    "label": "11"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 55.5,
+    "y": 7,
+    "label": "5"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 35,
+    "y": 34,
+    "label": "2"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 26.5,
+    "y": 40,
+    "label": "4"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 55,
+    "y": 51,
+    "label": "10"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 44.5,
+    "y": 53,
+    "label": "3"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 65,
+    "y": 26,
+    "label": "6"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 73.5,
+    "y": 20,
+    "label": "7"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 91,
+    "y": 40,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 45.6,
+    "y": 9.6
+   },
+   {
+    "id": "b2",
+    "x": 35.6,
+    "y": 34.6
+   },
+   {
+    "id": "b3",
+    "x": 55.6,
+    "y": 51.6
+   },
+   {
+    "id": "b4",
+    "x": 65.6,
+    "y": 26.6
+   },
+   {
+    "id": "s1",
+    "x": 94.6,
+    "y": 43.5
+   },
+   {
+    "id": "s2",
+    "x": 91,
+    "y": 43.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Alle vier dribbeln zum Viereck",
+    "say": "Alle vier starten gleichzeitig. Wir schauen auf Spieler elf. Er dribbelt zum Hütchen rechts vor ihm und legt den Ball dort still ab.",
+    "moves": [
+     {
+      "who": "n11",
+      "to": [
+       42.4,
+       22.4
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n2",
+      "to": [
+       42.2,
+       37
+      ],
+      "type": "dribbling",
+      "ball": "b2"
+     },
+     {
+      "who": "n10",
+      "to": [
+       57.6,
+       37.6
+      ],
+      "type": "dribbling",
+      "ball": "b3"
+     },
+     {
+      "who": "n6",
+      "to": [
+       57.6,
+       22.4
+      ],
+      "type": "dribbling",
+      "ball": "b4"
+     }
+    ]
+   },
+   {
+    "label": "Ohne Ball zum nächsten Hütchen",
+    "say": "Jetzt ohne Ball weiter, gegen den Uhrzeigersinn zum nächsten Hütchen. Dort liegt schon der Ball von Spieler zwei.",
+    "moves": [
+     {
+      "who": "n11",
+      "to": [
+       42.2,
+       37
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n2",
+      "to": [
+       57.6,
+       37.6
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n10",
+      "to": [
+       57.6,
+       22.4
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n6",
+      "to": [
+       42.4,
+       22.4
+      ],
+      "type": "lauf"
+     }
+    ]
+   },
+   {
+    "label": "Pass nach außen, weiter zur Station",
+    "say": "Spieler elf passt diesen Ball nach außen zu Spieler vier. Er selbst läuft eine Station weiter und stellt sich dort hinten an. Die Runde ist vorbei, wenn alle vier gepasst haben. Dann dribbeln die vier Angespielten los.",
+    "moves": [
+     {
+      "who": "b2",
+      "to": [
+       27.1,
+       40.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b3",
+      "to": [
+       45.1,
+       53.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b4",
+      "to": [
+       74.1,
+       20.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       56.1,
+       7.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n11",
+      "to": [
+       37,
+       51
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     },
+     {
+      "who": "n2",
+      "to": [
+       66,
+       41
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     },
+     {
+      "who": "n10",
+      "to": [
+       63,
+       10
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     },
+     {
+      "who": "n6",
+      "to": [
+       34,
+       21
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 83,
+    "y1": 5,
+    "x2": 83,
+    "y2": 55,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Enge Kontakte, und der Ball liegt still.",
+   "title": "Enge Kontakte, Ball still",
+   "text": "Auf dem kurzen Weg zum Hütchen hat der Spieler viele kleine Kontakte. Am Hütchen stoppt er den Ball, bis er wirklich still liegt. Erst dann tritt er an. Am nächsten Ball bremst er rechtzeitig ab, sonst läuft er daran vorbei.",
+   "board": {
+    "players": [
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 45,
+      "y": 9,
+      "label": "11"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 55.5,
+      "y": 7,
+      "label": "5"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 35,
+      "y": 34,
+      "label": "2"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 26.5,
+      "y": 40,
+      "label": "4"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 55,
+      "y": 51,
+      "label": "10"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 44.5,
+      "y": 53,
+      "label": "3"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 65,
+      "y": 26,
+      "label": "6"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 73.5,
+      "y": 20,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 91,
+      "y": 40,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 45.6,
+      "y": 9.6
+     },
+     {
+      "id": "b2",
+      "x": 35.6,
+      "y": 34.6
+     },
+     {
+      "id": "b3",
+      "x": 55.6,
+      "y": 51.6
+     },
+     {
+      "id": "b4",
+      "x": 65.6,
+      "y": 26.6
+     },
+     {
+      "id": "s1",
+      "x": 94.6,
+      "y": 43.5
+     },
+     {
+      "id": "s2",
+      "x": 91,
+      "y": 43.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Kleine Kontakte, Sohle drauf",
+      "say": "Spieler elf dribbelt mit vielen kleinen Kontakten. Am Hütchen geht die Sohle auf den Ball. Er liegt still.",
+      "moves": [
+       {
+        "who": "n11",
+        "to": [
+         42.4,
+         22.4
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n2",
+        "to": [
+         42.2,
+         37
+        ],
+        "type": "dribbling",
+        "ball": "b2"
+       },
+       {
+        "who": "n10",
+        "to": [
+         57.6,
+         37.6
+        ],
+        "type": "dribbling",
+        "ball": "b3"
+       },
+       {
+        "who": "n6",
+        "to": [
+         57.6,
+         22.4
+        ],
+        "type": "dribbling",
+        "ball": "b4"
+       }
+      ]
+     },
+     {
+      "label": "Antreten und rechtzeitig abbremsen",
+      "say": "Dann der Antritt zum nächsten Hütchen. Kurz davor bremst er mit kleinen Schritten ab und steht sauber hinter dem Ball.",
+      "moves": [
+       {
+        "who": "n11",
+        "to": [
+         42.2,
+         37
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n2",
+        "to": [
+         57.6,
+         37.6
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n10",
+        "to": [
+         57.6,
+         22.4
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n6",
+        "to": [
+         42.4,
+         22.4
+        ],
+        "type": "lauf"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Doppelpass mit dem Eckspieler.",
+   "title": "Doppelpass mit der Ecke",
+   "text": "In jeder Ecke des Feldes steht jetzt ein Spieler. Wer am Viereck den neuen Ball hat, spielt erst den Doppelpass mit dem Eckspieler und passt dann zur Station. Der Eckspieler steht offen und spielt mit einem Kontakt zurück.",
+   "board": {
+    "players": [
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 41,
+      "y": 21.3,
+      "label": "6"
+     },
+     {
+      "id": "n12",
+      "team": "a",
+      "x": 30,
+      "y": 10,
+      "label": "12"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 27,
+      "y": 30,
+      "label": "4"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 41.3,
+      "y": 39,
+      "label": "11"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 30,
+      "y": 50,
+      "label": "9"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 50,
+      "y": 50,
+      "label": "3"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 59,
+      "y": 38.7,
+      "label": "2"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 70,
+      "y": 50,
+      "label": "8"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 73,
+      "y": 30,
+      "label": "7"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 58.7,
+      "y": 21,
+      "label": "10"
+     },
+     {
+      "id": "n14",
+      "team": "a",
+      "x": 70,
+      "y": 10,
+      "label": "14"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 50,
+      "y": 10,
+      "label": "5"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 91,
+      "y": 40,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 41.6,
+      "y": 21.9
+     },
+     {
+      "id": "b2",
+      "x": 41.9,
+      "y": 39.6
+     },
+     {
+      "id": "b3",
+      "x": 59.6,
+      "y": 39.3
+     },
+     {
+      "id": "b4",
+      "x": 59.3,
+      "y": 21.6
+     },
+     {
+      "id": "s1",
+      "x": 94.6,
+      "y": 43.5
+     },
+     {
+      "id": "s2",
+      "x": 91,
+      "y": 43.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Doppelpass mit der Ecke",
+      "say": "Wieder alle vier gleichzeitig. Spieler sechs schaut zum Eckspieler, spielt Spieler zwölf an und läuft sofort los. Der Ball kommt mit einem Kontakt in seinen Lauf zurück.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         30,
+         10
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         30.6,
+         10.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n6",
+        "to": [
+         33,
+         22
+        ],
+        "type": "lauf",
+        "delay": 1.0
+       },
+       {
+        "who": "b1",
+        "to": [
+         33.6,
+         22.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n11",
+        "to": [
+         30,
+         50
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b2",
+        "to": [
+         30.6,
+         50.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n11",
+        "to": [
+         42,
+         47
+        ],
+        "type": "lauf",
+        "delay": 1.0
+       },
+       {
+        "who": "b2",
+        "to": [
+         42.6,
+         47.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n2",
+        "to": [
+         70,
+         50
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b3",
+        "to": [
+         70.6,
+         50.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n2",
+        "to": [
+         67,
+         38
+        ],
+        "type": "lauf",
+        "delay": 1.0
+       },
+       {
+        "who": "b3",
+        "to": [
+         67.6,
+         38.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n10",
+        "to": [
+         70,
+         10
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b4",
+        "to": [
+         70.6,
+         10.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n10",
+        "to": [
+         58,
+         13
+        ],
+        "type": "lauf",
+        "delay": 1.0
+       },
+       {
+        "who": "b4",
+        "to": [
+         58.6,
+         13.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Pass zur Station",
+      "say": "Aus dem Lauf passt Spieler sechs weiter zu Spieler vier an der Station. Der nimmt den Ball nach vorn mit und dribbelt zum Viereck.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         27.6,
+         30.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b2",
+        "to": [
+         50.6,
+         50.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b3",
+        "to": [
+         73.6,
+         30.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b4",
+        "to": [
+         50.6,
+         10.6
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

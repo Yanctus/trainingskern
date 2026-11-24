@@ -1,0 +1,1046 @@
+{
+ "title": "Zu dritt den Steilpass zustellen",
+ "code": "UE-307",
+ "kind": "Spielform",
+ "focuses": [
+  "Verteidigen",
+  "Umschalten",
+  "Zusammenspiel"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 14,
+ "players_max": 14,
+ "field_size": "15 x 30 m",
+ "description": "Ein Rondo vier gegen drei in zwei Hälften gleichzeitig. Außen lassen drei Spieler mit einem Springer den Ball laufen und suchen den Pass in eins der zwei Minitore hinter der Dreierkette. Die drei in der Mitte bleiben eng zusammen, schieben mit dem Ball und stellen die Passwege zu. Fangen sie den Ball ab, dribbeln sie aus dem Feld, und das gibt einen Punkt.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 15 mal 30 Metern mit einer Mittelzone von fünf Metern. In der Mittelzone stehen vier Minitore, zwei zeigen nach unten und zwei nach oben. Zwei Hütchen markieren die Zone.",
+  "Verteilen: Zwei Teams zu sechst und zwei Springer. In jeder Hälfte stehen drei Spieler eines Teams außen, drei vom anderen Team verteidigen innen vor den Minitoren. Je ein Springer hilft den Außenspielern. Der Trainer steht mit Bällen am Rand.",
+  "Ablauf: Die Außenspieler passen sich mit dem Springer den Ball zu und suchen die Lücke zum Minitor. Die Dreierkette schiebt mit, einer greift an, die anderen sichern. Bei Ballgewinn dribbelt die Kette sofort über eine Außenlinie aus dem Feld. Beide Hälften spielen gleichzeitig.",
+  "Wertung und Wechsel: Ein Pass ins Minitor gibt einen Punkt für die Außenspieler. Dribbelt die Dreierkette nach Ballgewinn aus dem Feld, gibt das einen Punkt für ihr Team. Nach jeder Runde werden die Punkte gezählt, dann tauschen innen und außen."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Einer greift an, zwei sichern dahinter",
+  "Eng bleiben und laut reden",
+  "Schlechter erster Kontakt? Sofort drauf!",
+  "Ball gewonnen, dann mit Tempo raus aus dem Feld"
+ ],
+ "materials": [
+  "4 Minitore",
+  "2 Hütchen",
+  "Viele Bälle",
+  "Leibchen in drei Farben"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Zu dritt den Steilpass zustellen. Ein Rondo vier gegen drei, in beiden Hälften gleichzeitig. Drei Mittelfeldspieler bleiben eng zusammen und lassen keinen Pass nach vorn durch.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 20,
+    "y": 5,
+    "w": 60,
+    "h": 50
+   },
+   {
+    "type": "line",
+    "x1": 20,
+    "y1": 26,
+    "x2": 80,
+    "y2": 26,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 20,
+    "y1": 34,
+    "x2": 80,
+    "y2": 34,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 31,
+    "y": 34,
+    "side": "top"
+   },
+   {
+    "x": 69,
+    "y": 34,
+    "side": "top"
+   },
+   {
+    "x": 31,
+    "y": 26,
+    "side": "bottom"
+   },
+   {
+    "x": 69,
+    "y": 26,
+    "side": "bottom"
+   }
+  ],
+  "cones": [
+   {
+    "x": 20,
+    "y": 30,
+    "color": "orange"
+   },
+   {
+    "x": 80,
+    "y": 30,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 20,
+    "y": 46,
+    "label": "5"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 80,
+    "y": 46,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 56,
+    "y": 54.5,
+    "label": "3"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 37.5,
+    "y": 39,
+    "label": "11"
+   },
+   {
+    "id": "r12",
+    "team": "b",
+    "x": 54.5,
+    "y": 38.5,
+    "label": "12"
+   },
+   {
+    "id": "r13",
+    "team": "b",
+    "x": 71,
+    "y": 39.5,
+    "label": "13"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 20,
+    "y": 14,
+    "label": "7"
+   },
+   {
+    "id": "r4",
+    "team": "b",
+    "x": 80,
+    "y": 14,
+    "label": "4"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 44,
+    "y": 5.5,
+    "label": "9"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 30,
+    "y": 21.5,
+    "label": "6"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 47,
+    "y": 22,
+    "label": "10"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 64,
+    "y": 21.5,
+    "label": "8"
+   },
+   {
+    "id": "f1",
+    "team": "t",
+    "x": 46,
+    "y": 49,
+    "label": "F"
+   },
+   {
+    "id": "f2",
+    "team": "t",
+    "x": 55.5,
+    "y": 12.5,
+    "label": "F"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 8,
+    "y": 50,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 56.6,
+    "y": 55.1
+   },
+   {
+    "id": "b2",
+    "x": 44.6,
+    "y": 6.1
+   },
+   {
+    "id": "s1",
+    "x": 11.6,
+    "y": 53.5
+   },
+   {
+    "id": "s2",
+    "x": 8,
+    "y": 53.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Ball nach außen, die Kette schiebt",
+    "say": "Unten spielt Spieler drei nach links zu Spieler fünf. Die drei von Team Rot schieben sofort mit rüber. Oben läuft das Gleiche, dort verteidigt Team Neon.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       20.6,
+       46.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r11",
+      "to": [
+       29,
+       42
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "r12",
+      "to": [
+       37.5,
+       39
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "r13",
+      "to": [
+       55,
+       38.5
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "b2",
+      "to": [
+       20.6,
+       14.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n6",
+      "to": [
+       28.5,
+       18
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n10",
+      "to": [
+       40,
+       21
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n8",
+      "to": [
+       55,
+       21.5
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Der Springer kommt entgegen",
+    "say": "Spieler fünf findet außen keinen Weg nach vorn und spielt zum Springer. Spieler zwölf rückt raus auf den Ball. Spieler elf lässt sich fallen und steht jetzt genau vor dem linken Minitor.",
+    "moves": [
+     {
+      "who": "f1",
+      "to": [
+       41,
+       47.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       41.6,
+       48.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r12",
+      "to": [
+       42,
+       42
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "r11",
+      "to": [
+       34,
+       39.5
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "r13",
+      "to": [
+       53,
+       40
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "b2",
+      "to": [
+       44.6,
+       6.1
+      ],
+      "type": "pass",
+      "delay": 0.3
+     },
+     {
+      "who": "n6",
+      "to": [
+       33,
+       21.5
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     },
+     {
+      "who": "n10",
+      "to": [
+       45,
+       19
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     },
+     {
+      "who": "n8",
+      "to": [
+       60,
+       21.5
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     }
+    ]
+   },
+   {
+    "label": "Der Weg nach vorn ist zu",
+    "say": "Der Springer versucht es trotzdem flach aufs linke Minitor. Spieler elf steht im Passweg und fängt den Ball ab.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       34.6,
+       40.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b2",
+      "to": [
+       56.1,
+       13.1
+      ],
+      "type": "pass",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Raus aus dem Feld: Punkt",
+    "say": "Jetzt geht es schnell. Spieler elf dribbelt links über die Außenlinie aus dem Feld, und das gibt einen Punkt für Team Rot. Der Trainer spielt den nächsten Ball zu Spieler drei, und Team Neon greift wieder an.",
+    "moves": [
+     {
+      "who": "r11",
+      "to": [
+       15,
+       39.5
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n5",
+      "to": [
+       22,
+       42
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "f1",
+      "to": [
+       36,
+       46
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b2",
+      "to": [
+       80.6,
+       14.6
+      ],
+      "type": "pass",
+      "delay": 0.2
+     },
+     {
+      "who": "n8",
+      "to": [
+       70,
+       19
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "n10",
+      "to": [
+       57,
+       21
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "n6",
+      "to": [
+       42,
+       21.5
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 20,
+    "y1": 58.6,
+    "x2": 80,
+    "y2": 58.6,
+    "text": "15 m"
+   },
+   {
+    "x1": 92,
+    "y1": 5,
+    "x2": 92,
+    "y2": 55,
+    "text": "30 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Wer den Ball verliert, setzt sofort nach.",
+   "title": "Nach Ballverlust nachsetzen",
+   "text": "Die Dreierkette darf nach dem Ballgewinn jetzt auch in ein Minitor ihrer Hälfte treffen. Die Außenspieler laufen sofort nach innen und stellen den Weg zum Minitor zu. Holen sie den Ball zurück, greifen sie weiter an. Trifft die Kette, gibt das einen Punkt, und innen und außen tauschen.",
+   "board": {
+    "players": [
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 20,
+      "y": 46,
+      "label": "5"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 80,
+      "y": 46,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 56,
+      "y": 54.5,
+      "label": "3"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 29,
+      "y": 42,
+      "label": "11"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 37.5,
+      "y": 39,
+      "label": "12"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 55,
+      "y": 38.5,
+      "label": "13"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 20,
+      "y": 14,
+      "label": "7"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 80,
+      "y": 14,
+      "label": "4"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 44,
+      "y": 5.5,
+      "label": "9"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 30,
+      "y": 21.5,
+      "label": "6"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 47,
+      "y": 22,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 64,
+      "y": 21.5,
+      "label": "8"
+     },
+     {
+      "id": "f1",
+      "team": "t",
+      "x": 46,
+      "y": 49,
+      "label": "F"
+     },
+     {
+      "id": "f2",
+      "team": "t",
+      "x": 55.5,
+      "y": 12.5,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 8,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 20.6,
+      "y": 46.6
+     },
+     {
+      "id": "b2",
+      "x": 44.6,
+      "y": 6.1
+     },
+     {
+      "id": "s1",
+      "x": 11.6,
+      "y": 53.5
+     },
+     {
+      "id": "s2",
+      "x": 8,
+      "y": 53.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Ball weg, Blick zum Minitor",
+      "say": "Spieler fünf will zum Springer spielen, aber Spieler zwölf geht dazwischen und hat den Ball. Sofort schaut Spieler fünf zum linken Minitor. Dorthin will Spieler zwölf jetzt.",
+      "moves": [
+       {
+        "who": "r12",
+        "to": [
+         39.5,
+         44.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         40.1,
+         45.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n5",
+        "to": [
+         31,
+         35
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Weg zum Minitor zustellen",
+      "say": "Spieler fünf sprintet nach innen und stellt sich vor das Minitor. Von hinten kommt Spieler drei dazu und nimmt Spieler zwölf den Ball wieder ab. Team Neon bleibt außen und greift weiter an.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         26,
+         40.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n5",
+        "to": [
+         33,
+         38.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r12",
+        "to": [
+         38.5,
+         42
+        ],
+        "type": "dribbling",
+        "delay": 0.3,
+        "ball": "b1"
+       },
+       {
+        "who": "n3",
+        "to": [
+         52,
+         46.5
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "n3",
+        "to": [
+         43.5,
+         43.5
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 20,
+      "y1": 58.6,
+      "x2": 80,
+      "y2": 58.6,
+      "text": "15 m"
+     },
+     {
+      "x1": 92,
+      "y1": 5,
+      "x2": 92,
+      "y2": 55,
+      "text": "30 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Die Minitore zählen nicht mehr, dafür wird verlagert.",
+   "title": "Verlagern über die Mitte",
+   "text": "Die Minitore zählen nicht mehr, am besten räumt man sie weg. Ein Springer steht jetzt in der Mittelzone. Bekommt er den Ball, dreht er auf und spielt in die andere Hälfte, dort geht es weiter. Die Dreierkette will genau diesen Pass durch die Mitte verhindern.",
+   "board": {
+    "players": [
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 20,
+      "y": 46,
+      "label": "5"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 80,
+      "y": 46,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 56,
+      "y": 54.5,
+      "label": "3"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 37.5,
+      "y": 39,
+      "label": "11"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 54.5,
+      "y": 38.5,
+      "label": "12"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 71,
+      "y": 39.5,
+      "label": "13"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 20,
+      "y": 14,
+      "label": "7"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 80,
+      "y": 14,
+      "label": "4"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 44,
+      "y": 5.5,
+      "label": "9"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 37.5,
+      "y": 21,
+      "label": "6"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 54.5,
+      "y": 21.5,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 71.5,
+      "y": 21.5,
+      "label": "8"
+     },
+     {
+      "id": "f1",
+      "team": "t",
+      "x": 46,
+      "y": 49,
+      "label": "F"
+     },
+     {
+      "id": "f2",
+      "team": "t",
+      "x": 46,
+      "y": 30,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 8,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 56.6,
+      "y": 55.1
+     },
+     {
+      "id": "s1",
+      "x": 11.6,
+      "y": 53.5
+     },
+     {
+      "id": "s2",
+      "x": 8,
+      "y": 53.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Erst nach außen locken",
+      "say": "Team Neon spielt wieder nach links zu Spieler fünf, und die Kette von Team Rot schiebt mit. Der Springer unten bietet sich an und bekommt den Ball.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         20.6,
+         46.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r11",
+        "to": [
+         29,
+         42
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "r12",
+        "to": [
+         37.5,
+         39
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "r13",
+        "to": [
+         55,
+         38.5
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "f1",
+        "to": [
+         43,
+         46.5
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       },
+       {
+        "who": "b1",
+        "to": [
+         43.6,
+         47.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Durch die Lücke in die Mitte",
+      "say": "Zwischen Spieler zwölf und Spieler dreizehn ist die Lücke zu groß. Der Springer in der Mittelzone schaut zum Ball, und der Pass kommt flach durch.",
+      "moves": [
+       {
+        "who": "f2",
+        "to": [
+         43,
+         46.5
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         46.6,
+         30.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Aufdrehen und verlagern",
+      "say": "Der Springer dreht auf und spielt nach oben links zu Spieler sieben. Jetzt läuft das Spiel in der anderen Hälfte, und Team Neon muss dort verschieben.",
+      "moves": [
+       {
+        "who": "f2",
+        "to": [
+         20,
+         14
+        ],
+        "type": "blick",
+        "von": [
+         43,
+         46.5
+        ],
+        "dauer": 1.3
+       },
+       {
+        "who": "f2",
+        "to": [
+         20,
+         14
+        ],
+        "type": "dreh",
+        "delay": 0.4
+       },
+       {
+        "who": "b1",
+        "to": [
+         20.6,
+         14.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n6",
+        "to": [
+         29,
+         18
+        ],
+        "type": "lauf",
+        "delay": 1.6
+       },
+       {
+        "who": "n10",
+        "to": [
+         40,
+         21
+        ],
+        "type": "lauf",
+        "delay": 1.6
+       },
+       {
+        "who": "n8",
+        "to": [
+         56,
+         21.5
+        ],
+        "type": "lauf",
+        "delay": 1.6
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 20,
+      "y1": 58.6,
+      "x2": 80,
+      "y2": 58.6,
+      "text": "15 m"
+     },
+     {
+      "x1": 92,
+      "y1": 5,
+      "x2": 92,
+      "y2": 55,
+      "text": "30 m"
+     }
+    ]
+   }
+  }
+ ]
+}

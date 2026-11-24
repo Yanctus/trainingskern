@@ -1,0 +1,883 @@
+{
+ "title": "Vom 1 gegen 1 zum 4 gegen 4",
+ "code": "UE-306",
+ "kind": "Spielform",
+ "focuses": [
+  "1 gegen 1",
+  "Zusammenspiel",
+  "Umschalten"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 8,
+ "players_max": 16,
+ "field_size": "14 x 14 m",
+ "description": "Drei Phasen gehen ohne Pause ineinander über. Es beginnt mit zwei Duellen eins gegen eins. Dann dribbeln zwei Eckspieler mit je einem Ball ein, und es läuft drei gegen drei mit zwei Bällen. Zum Schluss spielt der Trainer einen Ball ein, zwei weitere Spieler kommen dazu, und es wird vier gegen vier auf vier Minitore gespielt.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 14 mal 14 Metern. Oben und unten stehen je zwei Minitore.",
+  "Verteilen: Zwei Teams, aufgeteilt in zwei Gruppen zu je acht Spielern, vier von jedem Team. Links startet von jedem Team ein Spieler mit Ball. Oben und unten wartet je ein Verteidiger, in zwei Ecken ein Spieler mit Ball, rechts von jedem Team ein Außenspieler. Der Trainer steht rechts mit Bällen. Die zweite Gruppe wartet neben dem Feld.",
+  "Ablauf: Phase eins, zur Mitte dribbeln, Ball liegen lassen, den Verteidiger antippen, Ball holen und eins gegen eins abschließen. Phase zwei, die Eckspieler dribbeln mit zwei Bällen ein, drei gegen drei. Phase drei, der Trainer spielt einen Ball ein, die Außenspieler kommen dazu, vier gegen vier.",
+  "Wertung und Wechsel: Team Neon greift die oberen Minitore an, Team Rot die unteren. Jeder Treffer gibt einen Punkt. Nach Phase drei kommt die zweite Achtergruppe und beginnt wieder mit Phase eins."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Im eins gegen eins antäuschen und dann Tempo",
+  "Außen wach sein, die nächste Phase startet sofort",
+  "Schnell angreifen, bevor der Gegner steht",
+  "Auch ohne Ball sofort nach hinten arbeiten"
+ ],
+ "materials": [
+  "4 Minitore",
+  "4 Hütchen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Vom eins gegen eins zum vier gegen vier. Drei Phasen ohne Pause, und in jeder kommen neue Spieler und neue Bälle dazu.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 22,
+    "y": 8,
+    "w": 48,
+    "h": 44
+   }
+  ],
+  "goals": [
+   {
+    "x": 34.5,
+    "y": 8,
+    "side": "top"
+   },
+   {
+    "x": 57.5,
+    "y": 8,
+    "side": "top"
+   },
+   {
+    "x": 34.5,
+    "y": 52,
+    "side": "bottom"
+   },
+   {
+    "x": 57.5,
+    "y": 52,
+    "side": "bottom"
+   }
+  ],
+  "cones": [],
+  "players": [
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 17,
+    "y": 22,
+    "label": "9"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 46,
+    "y": 55,
+    "label": "5"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 22,
+    "y": 55,
+    "label": "7"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 75,
+    "y": 22,
+    "label": "11"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 17,
+    "y": 38,
+    "label": "2"
+   },
+   {
+    "id": "r4",
+    "team": "b",
+    "x": 46,
+    "y": 5,
+    "label": "4"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 70,
+    "y": 5,
+    "label": "10"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 75,
+    "y": 38,
+    "label": "6"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 84,
+    "y": 30,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 17.6,
+    "y": 22.6
+   },
+   {
+    "id": "b2",
+    "x": 17.6,
+    "y": 38.6
+   },
+   {
+    "id": "b3",
+    "x": 22.6,
+    "y": 55.6
+   },
+   {
+    "id": "b4",
+    "x": 70.6,
+    "y": 5.6
+   },
+   {
+    "id": "b5",
+    "x": 84.6,
+    "y": 30.6
+   },
+   {
+    "id": "s1",
+    "x": 87.6,
+    "y": 33.5
+   },
+   {
+    "id": "s2",
+    "x": 84,
+    "y": 33.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Phase eins: Ball in die Mitte",
+    "say": "Links starten Spieler neun und Spieler zwei gleichzeitig. Beide dribbeln zur Mitte und lassen den Ball dort liegen.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       41.5,
+       27
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "r2",
+      "to": [
+       50.5,
+       33
+      ],
+      "type": "dribbling",
+      "ball": "b2"
+     }
+    ]
+   },
+   {
+    "label": "Verteidiger antippen",
+    "say": "Ohne Ball geht es weiter. Spieler neun sprintet nach oben und tippt Spieler vier an. Spieler zwei läuft nach unten zu Spieler fünf. Damit sind die Verteidiger im Spiel.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       43.5,
+       10.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r2",
+      "to": [
+       48.5,
+       49.5
+      ],
+      "type": "lauf"
+     }
+    ]
+   },
+   {
+    "label": "Zurück zum Ball, eins gegen eins",
+    "say": "Schnell zurück zum Ball, der Verteidiger kommt schon hinterher. Spieler neun nimmt den Ball mit, zieht rechts an Spieler vier vorbei und trifft ins Minitor, und das gibt einen Punkt für Team Neon. Unten trifft Spieler zwei genauso gegen Spieler fünf, das gibt einen Punkt für Team Rot.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       41.5,
+       27
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r4",
+      "to": [
+       45,
+       17
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "n9",
+      "to": [
+       54,
+       22
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       57.5,
+       8.3
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r2",
+      "to": [
+       50.5,
+       33
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n5",
+      "to": [
+       47,
+       43
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "r2",
+      "to": [
+       58,
+       40
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "b2",
+      "to": [
+       57.5,
+       51.7
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Phase zwei: zwei Bälle im Feld",
+    "say": "Sofort kommen die Eckspieler. Spieler sieben dribbelt von links unten ein, Spieler zehn von rechts oben. Jetzt läuft drei gegen drei mit zwei Bällen. Spieler sieben spielt steil auf Spieler neun, und der schließt oben links ab. Auch Team Rot greift mit seinem Ball an.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       30,
+       36
+      ],
+      "type": "dribbling",
+      "ball": "b3"
+     },
+     {
+      "who": "r10",
+      "to": [
+       63,
+       20
+      ],
+      "type": "dribbling",
+      "ball": "b4"
+     },
+     {
+      "who": "n9",
+      "to": [
+       38,
+       22
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n5",
+      "to": [
+       44,
+       34
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "r4",
+      "to": [
+       41,
+       13
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     },
+     {
+      "who": "b3",
+      "to": [
+       38.6,
+       22.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b3",
+      "to": [
+       34.5,
+       8.3
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Phase drei: Ball vom Trainer",
+    "say": "Der Trainer entscheidet, wer den dritten Ball bekommt. Er spielt zu Spieler fünf. Von rechts kommen Spieler elf und Spieler sechs dazu. Jetzt ist es vier gegen vier.",
+    "moves": [
+     {
+      "who": "n5",
+      "to": [
+       66,
+       32
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b5",
+      "to": [
+       44.6,
+       34.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n11",
+      "to": [
+       60,
+       26
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "r6",
+      "to": [
+       66,
+       41
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n9",
+      "to": [
+       50,
+       14
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     }
+    ]
+   },
+   {
+    "label": "Vier gegen vier: Punkt",
+    "say": "Spieler fünf hebt den Kopf und findet Spieler elf. Der spielt sofort steil. Spieler neun trifft oben rechts, und das gibt einen Punkt für Team Neon. Danach gehen alle acht raus, und die zweite Gruppe beginnt wieder mit Phase eins.",
+    "moves": [
+     {
+      "who": "n5",
+      "to": [
+       60,
+       26
+      ],
+      "type": "blick",
+      "von": [
+       66,
+       32
+      ],
+      "dauer": 1.3
+     },
+     {
+      "who": "b5",
+      "to": [
+       60.6,
+       26.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b5",
+      "to": [
+       50.6,
+       14.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b5",
+      "to": [
+       57.5,
+       8.3
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 22,
+    "y1": 58.6,
+    "x2": 70,
+    "y2": 58.6,
+    "text": "14 m"
+   },
+   {
+    "x1": 94,
+    "y1": 8,
+    "x2": 94,
+    "y2": 52,
+    "text": "14 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Antäuschen, dann vorbei.",
+   "title": "Antäuschen, dann vorbei",
+   "text": "Im eins gegen eins geht der Angreifer mit Tempo auf den Verteidiger zu. Eine Körpertäuschung zur einen Seite, dann mit dem ersten schnellen Kontakt zur anderen. Wer wartet, bis der Verteidiger steht, hat es schwer.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 41.5,
+      "y": 27,
+      "label": "9"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 47,
+      "y": 49,
+      "label": "5"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 22,
+      "y": 55,
+      "label": "7"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 75,
+      "y": 22,
+      "label": "11"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 50.5,
+      "y": 33,
+      "label": "2"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 44.5,
+      "y": 11,
+      "label": "4"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 70,
+      "y": 5,
+      "label": "10"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 75,
+      "y": 38,
+      "label": "6"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 84,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 42.1,
+      "y": 27.6
+     },
+     {
+      "id": "b2",
+      "x": 51.1,
+      "y": 33.6
+     },
+     {
+      "id": "b3",
+      "x": 22.6,
+      "y": 55.6
+     },
+     {
+      "id": "b4",
+      "x": 70.6,
+      "y": 5.6
+     },
+     {
+      "id": "b5",
+      "x": 84.6,
+      "y": 30.6
+     },
+     {
+      "id": "s1",
+      "x": 87.6,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 84,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Auf den Verteidiger zu, antäuschen",
+      "say": "Spieler neun dribbelt direkt auf Spieler vier zu. Kurz vor ihm täuscht er mit dem Oberkörper nach links an. Spieler vier macht den Schritt mit.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         41,
+         20
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "r4",
+        "to": [
+         41.5,
+         14.5
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "r4",
+        "to": [
+         37.5,
+         15.5
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Rechts vorbei: Punkt",
+      "say": "Ein schneller Kontakt nach rechts, und Spieler neun ist vorbei. Er schiebt ins rechte Minitor ein, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         49,
+         16
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "r4",
+        "to": [
+         43,
+         14
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "b1",
+        "to": [
+         57.5,
+         8.3
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 22,
+      "y1": 58.6,
+      "x2": 70,
+      "y2": 58.6,
+      "text": "14 m"
+     },
+     {
+      "x1": 94,
+      "y1": 8,
+      "x2": 94,
+      "y2": 52,
+      "text": "14 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Außen wach bleiben.",
+   "title": "Außen wach bleiben",
+   "text": "Die nächste Phase beginnt in dem Moment, in dem die alte endet. Wer außen wartet, schaut zu und startet sofort. Dann sind die Verteidiger noch nicht sortiert, und der Angriff hat Platz.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 54,
+      "y": 22,
+      "label": "9"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 47,
+      "y": 43,
+      "label": "5"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 22,
+      "y": 55,
+      "label": "7"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 75,
+      "y": 22,
+      "label": "11"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 58,
+      "y": 40,
+      "label": "2"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 45,
+      "y": 17,
+      "label": "4"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 70,
+      "y": 5,
+      "label": "10"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 75,
+      "y": 38,
+      "label": "6"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 84,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 57.5,
+      "y": 8.3
+     },
+     {
+      "id": "b2",
+      "x": 57.5,
+      "y": 51.7
+     },
+     {
+      "id": "b3",
+      "x": 22.6,
+      "y": 55.6
+     },
+     {
+      "id": "b4",
+      "x": 70.6,
+      "y": 5.6
+     },
+     {
+      "id": "b5",
+      "x": 84.6,
+      "y": 30.6
+     },
+     {
+      "id": "s1",
+      "x": 87.6,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 84,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Schuss gefallen, sofort rein",
+      "say": "Der Ball aus Phase eins liegt im Tor. Spieler sieben dribbelt schon los, bevor sich Team Rot umgedreht hat. Spieler neun löst sich nach links und bietet sich an.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         30,
+         36
+        ],
+        "type": "dribbling",
+        "ball": "b3"
+       },
+       {
+        "who": "n9",
+        "to": [
+         38,
+         22
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "r10",
+        "to": [
+         63,
+         20
+        ],
+        "type": "dribbling",
+        "delay": 0.5,
+        "ball": "b4"
+       }
+      ]
+     },
+     {
+      "label": "Schnell gespielt: Punkt",
+      "say": "Der Pass kommt steil, Spieler vier ist noch zu weit weg. Spieler neun trifft oben links, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b3",
+        "to": [
+         38.6,
+         22.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r4",
+        "to": [
+         42,
+         18
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "b3",
+        "to": [
+         34.5,
+         8.3
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 22,
+      "y1": 58.6,
+      "x2": 70,
+      "y2": 58.6,
+      "text": "14 m"
+     },
+     {
+      "x1": 94,
+      "y1": 8,
+      "x2": 94,
+      "y2": 52,
+      "text": "14 m"
+     }
+    ]
+   }
+  }
+ ]
+}

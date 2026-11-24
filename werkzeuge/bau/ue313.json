@@ -1,0 +1,987 @@
+{
+ "title": "Nach Ballverlust ins freie Rondo",
+ "code": "UE-313",
+ "kind": "Übungsform",
+ "focuses": [
+  "Umschalten",
+  "Verteidigen",
+  "Passspiel"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 16,
+ "players_max": 18,
+ "field_size": "35 x 25 m",
+ "description": "Drei Rondos liegen nebeneinander. In zwei davon wird vier gegen zwei gespielt, im dritten läuft der Ball ohne Gegner. Wer den Ball an die Jäger verliert, ruft einen Mitspieler und sprintet mit ihm ins freie Rondo, um dort sofort zu pressen. Die Balleroberer bleiben und spielen als Passgeber weiter.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 35 mal 25 Metern mit drei Rondos nebeneinander. Jedes Rondo ist 9 Meter breit, dazwischen bleiben knapp 5 Meter frei.",
+  "Verteilen: In jedem Rondo stehen vier Passgeber mit einem Ball. Im linken und im mittleren Rondo jagen je zwei Spieler von Team Rot. Der Trainer steht mit Ersatzbällen am Rand.",
+  "Ablauf: Links und in der Mitte läuft vier gegen zwei, rechts geht der Ball mit einem Kontakt im Kreis. Erobern die Jäger den Ball, sprinten der Ballverlierer und ein Mitspieler ins freie Rondo und jagen dort.",
+  "Wechsel: Die Balleroberer bleiben und werden Passgeber, ihr Rondo ist jetzt das freie. Gespielt wird zwei bis drei Minuten mit vollem Tempo, dann ist Pause."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Zu zweit eng bleiben, einer presst, einer sichert",
+  "Ball weg? Kopf hoch und sofort rufen",
+  "Im Sprint ins freie Rondo",
+  "Im freien Rondo mit einem Kontakt spielen"
+ ],
+ "materials": [
+  "Hütchen für drei Rondos",
+  "Leibchen in zwei Farben",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Nach Ballverlust ins freie Rondo. Drei Rondos nebeneinander, in zwei wird gejagt. Wer den Ball verliert, sprintet mit einem Mitspieler ins freie Rondo und presst dort.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 12,
+    "y": 5,
+    "w": 74,
+    "h": 50,
+    "dashed": true
+   },
+   {
+    "type": "rect",
+    "x": 12,
+    "y": 5,
+    "w": 18.5,
+    "h": 50
+   },
+   {
+    "type": "rect",
+    "x": 39.75,
+    "y": 5,
+    "w": 18.5,
+    "h": 50
+   },
+   {
+    "type": "rect",
+    "x": 67.5,
+    "y": 5,
+    "w": 18.5,
+    "h": 50
+   }
+  ],
+  "goals": [],
+  "cones": [],
+  "players": [
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 14.5,
+    "y": 9,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 28,
+    "y": 9,
+    "label": "3"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 14.5,
+    "y": 51,
+    "label": "4"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 28,
+    "y": 51,
+    "label": "5"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 42.25,
+    "y": 9,
+    "label": "6"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 55.75,
+    "y": 9,
+    "label": "7"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 42.25,
+    "y": 51,
+    "label": "8"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 55.75,
+    "y": 51,
+    "label": "9"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 70,
+    "y": 9,
+    "label": "10"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 83.5,
+    "y": 9,
+    "label": "11"
+   },
+   {
+    "id": "n12",
+    "team": "a",
+    "x": 70,
+    "y": 51,
+    "label": "12"
+   },
+   {
+    "id": "n13",
+    "team": "a",
+    "x": 83.5,
+    "y": 51,
+    "label": "13"
+   },
+   {
+    "id": "r14",
+    "team": "b",
+    "x": 16,
+    "y": 25,
+    "label": "14"
+   },
+   {
+    "id": "r15",
+    "team": "b",
+    "x": 24.5,
+    "y": 35,
+    "label": "15"
+   },
+   {
+    "id": "r16",
+    "team": "b",
+    "x": 43.75,
+    "y": 25,
+    "label": "16"
+   },
+   {
+    "id": "r17",
+    "team": "b",
+    "x": 52.25,
+    "y": 35,
+    "label": "17"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 5,
+    "y": 30,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "a",
+    "x": 15.1,
+    "y": 9.6
+   },
+   {
+    "id": "b",
+    "x": 42.85,
+    "y": 9.6
+   },
+   {
+    "id": "c",
+    "x": 70.6,
+    "y": 9.6
+   },
+   {
+    "id": "s1",
+    "x": 6.6,
+    "y": 33.5
+   },
+   {
+    "id": "s2",
+    "x": 3,
+    "y": 33.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Zwei Rondos, vier gegen zwei",
+    "say": "Links und in der Mitte läuft vier gegen zwei, beide Rondos gleichzeitig. Rechts jagt keiner. Dort geht der Ball mit einem Kontakt im Kreis.",
+    "moves": [
+     {
+      "who": "a",
+      "to": [
+       28.6,
+       9.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r14",
+      "to": [
+       22,
+       15
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "r15",
+      "to": [
+       24.5,
+       30
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "b",
+      "to": [
+       56.35,
+       9.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b",
+      "to": [
+       56.35,
+       51.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r16",
+      "to": [
+       47,
+       20
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "r17",
+      "to": [
+       53,
+       41
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     },
+     {
+      "who": "c",
+      "to": [
+       84.1,
+       9.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "c",
+      "to": [
+       84.1,
+       51.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "c",
+      "to": [
+       70.6,
+       51.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Ballgewinn in der Mitte",
+    "say": "Spieler siebzehn läuft Spieler neun an. Der will quer durch die Mitte spielen, aber Spieler sechzehn steht genau im Passweg und hat den Ball.",
+    "moves": [
+     {
+      "who": "r17",
+      "to": [
+       58,
+       45
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b",
+      "to": [
+       47.7,
+       24.6
+      ],
+      "type": "pass",
+      "delay": 0.5
+     },
+     {
+      "who": "r16",
+      "to": [
+       47.1,
+       24
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "a",
+      "to": [
+       28.6,
+       51.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r15",
+      "to": [
+       25,
+       42
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "r14",
+      "to": [
+       20,
+       22
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "c",
+      "to": [
+       70.6,
+       9.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "c",
+      "to": [
+       84.1,
+       9.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Rufen und zu zweit rüber",
+    "say": "Ball weg. Spieler neun schaut nach rechts, dort ist das freie Rondo. Er ruft Spieler sieben, und beide sprinten sofort hinüber.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       72,
+       38
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "n9",
+      "to": [
+       74,
+       37
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       79,
+       23
+      ],
+      "type": "lauf",
+      "delay": 0.9
+     },
+     {
+      "who": "a",
+      "to": [
+       15.1,
+       51.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "c",
+      "to": [
+       84.1,
+       51.6
+      ],
+      "type": "pass",
+      "delay": 0.9
+     }
+    ]
+   },
+   {
+    "label": "Die Mitte ist jetzt frei",
+    "say": "Rechts läuft jetzt vier gegen zwei. Spieler sechzehn und Spieler siebzehn bleiben in der Mitte und spielen dort als Passgeber weiter. Damit ist die Mitte das freie Rondo. Wer als Nächster den Ball verliert, ruft einen Mitspieler und sprintet mit ihm dorthin.",
+    "moves": [
+     {
+      "who": "r16",
+      "to": [
+       55.75,
+       9
+      ],
+      "type": "dribbling",
+      "ball": "b"
+     },
+     {
+      "who": "r17",
+      "to": [
+       55.75,
+       51
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b",
+      "to": [
+       42.85,
+       9.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "c",
+      "to": [
+       70.6,
+       51.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n9",
+      "to": [
+       75,
+       45
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n7",
+      "to": [
+       76,
+       16
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "c",
+      "to": [
+       70.6,
+       9.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "a",
+      "to": [
+       15.1,
+       9.6
+      ],
+      "type": "pass"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 12,
+    "y1": 58.6,
+    "x2": 86,
+    "y2": 58.6,
+    "text": "35 m"
+   },
+   {
+    "x1": 94,
+    "y1": 5,
+    "x2": 94,
+    "y2": 55,
+    "text": "25 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Als Paar eng zusammenbleiben.",
+   "title": "Als Paar eng bleiben",
+   "text": "Stehen die beiden Jäger weit auseinander, geht der Pass einfach zwischen ihnen durch. Darum läuft einer den Ball an und macht eine Seite zu. Der zweite bleibt dicht dahinter und lauert auf den Pass durch die Mitte.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 14.5,
+      "y": 9,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 28,
+      "y": 9,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 14.5,
+      "y": 51,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 28,
+      "y": 51,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 42.25,
+      "y": 9,
+      "label": "6"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 55.75,
+      "y": 9,
+      "label": "7"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 42.25,
+      "y": 51,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 55.75,
+      "y": 51,
+      "label": "9"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 70,
+      "y": 9,
+      "label": "10"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 83.5,
+      "y": 9,
+      "label": "11"
+     },
+     {
+      "id": "n12",
+      "team": "a",
+      "x": 70,
+      "y": 51,
+      "label": "12"
+     },
+     {
+      "id": "n13",
+      "team": "a",
+      "x": 83.5,
+      "y": 51,
+      "label": "13"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 16,
+      "y": 25,
+      "label": "14"
+     },
+     {
+      "id": "r15",
+      "team": "b",
+      "x": 24.5,
+      "y": 35,
+      "label": "15"
+     },
+     {
+      "id": "r16",
+      "team": "b",
+      "x": 43.75,
+      "y": 25,
+      "label": "16"
+     },
+     {
+      "id": "r17",
+      "team": "b",
+      "x": 52.25,
+      "y": 35,
+      "label": "17"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 5,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "a",
+      "x": 15.1,
+      "y": 9.6
+     },
+     {
+      "id": "b",
+      "x": 42.85,
+      "y": 9.6
+     },
+     {
+      "id": "c",
+      "x": 70.6,
+      "y": 9.6
+     },
+     {
+      "id": "s1",
+      "x": 6.6,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 3,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zu weit auseinander",
+      "say": "Im mittleren Rondo laufen die beiden Jäger in verschiedene Richtungen. Zwischen ihnen ist alles offen, und Spieler sechs spielt bequem durch zu Spieler neun.",
+      "moves": [
+       {
+        "who": "r16",
+        "to": [
+         43,
+         31
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r17",
+        "to": [
+         55,
+         20
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b",
+        "to": [
+         56.35,
+         51.6
+        ],
+        "type": "pass",
+        "delay": 0.6
+       }
+      ]
+     },
+     {
+      "label": "Eng zusammen, Pass abgefangen",
+      "say": "Jetzt richtig. Spieler siebzehn läuft Spieler neun an und macht die Linie zu. Spieler sechzehn rückt dicht dahinter nach. Der Pass durch die Mitte bleibt bei ihm hängen.",
+      "moves": [
+       {
+        "who": "r17",
+        "to": [
+         57,
+         33
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r17",
+        "to": [
+         57.8,
+         45.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r16",
+        "to": [
+         50.9,
+         36
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "b",
+        "to": [
+         51.5,
+         36.6
+        ],
+        "type": "pass",
+        "delay": 1.2
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Ball weg, Kopf hoch, rufen und sprinten.",
+   "title": "Rufen, schauen, sprinten",
+   "text": "Nach dem Ballverlust bleibt keine Zeit zum Ärgern. Der Ballverlierer hebt den Kopf, findet das freie Rondo und ruft einen Mitspieler. Einer sprintet direkt auf den Ball, der andere macht dahinter die Mitte zu.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 14.5,
+      "y": 9,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 28,
+      "y": 9,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 14.5,
+      "y": 51,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 28,
+      "y": 51,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 42.25,
+      "y": 9,
+      "label": "6"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 55.75,
+      "y": 9,
+      "label": "7"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 42.25,
+      "y": 51,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 55.75,
+      "y": 51,
+      "label": "9"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 70,
+      "y": 9,
+      "label": "10"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 83.5,
+      "y": 9,
+      "label": "11"
+     },
+     {
+      "id": "n12",
+      "team": "a",
+      "x": 70,
+      "y": 51,
+      "label": "12"
+     },
+     {
+      "id": "n13",
+      "team": "a",
+      "x": 83.5,
+      "y": 51,
+      "label": "13"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 16,
+      "y": 25,
+      "label": "14"
+     },
+     {
+      "id": "r15",
+      "team": "b",
+      "x": 24.5,
+      "y": 35,
+      "label": "15"
+     },
+     {
+      "id": "r16",
+      "team": "b",
+      "x": 43.75,
+      "y": 25,
+      "label": "16"
+     },
+     {
+      "id": "r17",
+      "team": "b",
+      "x": 52.25,
+      "y": 35,
+      "label": "17"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 5,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "a",
+      "x": 15.1,
+      "y": 9.6
+     },
+     {
+      "id": "b",
+      "x": 44.35,
+      "y": 25.6
+     },
+     {
+      "id": "c",
+      "x": 84.1,
+      "y": 51.6
+     },
+     {
+      "id": "s1",
+      "x": 6.6,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 3,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Ball weg, Kopf hoch",
+      "say": "Spieler sechzehn hat den Ball erobert. Spieler neun hebt sofort den Kopf. Rechts steht keiner in der Mitte, das ist das freie Rondo. Er ruft Spieler sieben.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         72,
+         38
+        ],
+        "type": "blick"
+       }
+      ]
+     },
+     {
+      "label": "Einer auf den Ball, einer sichert",
+      "say": "Beide sprinten los. Spieler neun geht direkt auf den Ball, Spieler sieben macht dahinter die Mitte zu. Jetzt wird auch rechts vier gegen zwei gespielt.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         67,
+         42
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n9",
+        "to": [
+         79.5,
+         46.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n7",
+        "to": [
+         76,
+         30
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "c",
+        "to": [
+         84.1,
+         9.6
+        ],
+        "type": "pass",
+        "delay": 1.2
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

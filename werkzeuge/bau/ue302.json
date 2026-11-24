@@ -1,0 +1,1057 @@
+{
+ "title": "Viererkette presst und sichert",
+ "code": "UE-302",
+ "kind": "Übungsform",
+ "focuses": [
+  "Verteidigen",
+  "Schnelligkeit",
+  "Kondition"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 14,
+ "players_max": 14,
+ "field_size": "35 x 30 m",
+ "description": "Eine Viererkette mit Torwart steht gegen fünf Angreifer. Der Trainer spielt einen Angreifer an, der nächste Verteidiger rückt raus und stellt ihn, die anderen drei schieben dahinter zusammen. Das wiederholt sich Ball für Ball. Auf Kommando sprintet die Kette um die Hütchen nach draußen, und die zweite Kette übernimmt sofort.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 35 Metern Breite und 30 Metern Tiefe mit großem Tor und Strafraum. In den beiden oberen Ecken und unten an beiden Seitenlinien steht je ein Hütchen.",
+  "Verteilen: Team Neon stellt zwei Viererketten. Die erste steht vor dem Strafraum, die zweite wartet an der Torlinie. Fünf Angreifer von Team Rot verteilen sich davor, im Tor steht ein Torwart. Der Trainer steht mit den Bällen unten im Feld.",
+  "Ablauf: Der Trainer spielt einen Angreifer an. Der nächste Verteidiger rückt raus und stellt ihn, ohne den Ball zu erobern. Die anderen drei schieben zur Ballseite und sichern ab. Der Ball geht zurück zum Trainer, und er spielt den nächsten an.",
+  "Wechsel: Auf Kommando sprintet die Kette um die unteren Hütchen und außen hoch bis zur Torlinie. Die zweite Kette rückt sofort ins Feld und verteidigt weiter. Die Angreifer bleiben einige Durchgänge drin."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Einer geht raus, die anderen drei schieben zusammen",
+  "Laut ansagen, wer presst und wer sichert",
+  "Schnell hin und eng an den Mann, dann spielt er zurück",
+  "Die Linie halten, kurze Abstände zum Nebenmann"
+ ],
+ "materials": [
+  "1 großes Tor",
+  "4 Hütchen",
+  "Leibchen in zwei Farben",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Viererkette presst und sichert. Vier Verteidiger und ein Torwart gegen fünf Angreifer. Der Trainer spielt an, einer rückt raus, drei sichern ab. Auf Kommando wird gesprintet, und die zweite Kette kommt rein.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 20,
+    "y": 5,
+    "w": 60,
+    "h": 50
+   },
+   {
+    "type": "rect",
+    "x": 32,
+    "y": 5,
+    "w": 36,
+    "h": 15
+   },
+   {
+    "type": "rect",
+    "x": 41,
+    "y": 5,
+    "w": 18,
+    "h": 6
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "gross"
+   }
+  ],
+  "cones": [
+   {
+    "x": 20,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 80,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 20,
+    "y": 43,
+    "color": "orange"
+   },
+   {
+    "x": 80,
+    "y": 43,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 31,
+    "y": 22,
+    "label": "2"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 40.5,
+    "y": 20,
+    "label": "6"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 59,
+    "y": 22,
+    "label": "5"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 69,
+    "y": 22,
+    "label": "3"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 22.5,
+    "y": 33,
+    "label": "11"
+   },
+   {
+    "id": "r4",
+    "team": "b",
+    "x": 40.5,
+    "y": 36,
+    "label": "4"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 50,
+    "y": 27,
+    "label": "9"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 59.5,
+    "y": 38.5,
+    "label": "8"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 77.5,
+    "y": 33,
+    "label": "7"
+   },
+   {
+    "id": "n12",
+    "team": "a",
+    "x": 30,
+    "y": 2,
+    "label": "12"
+   },
+   {
+    "id": "n13",
+    "team": "a",
+    "x": 38.5,
+    "y": 2,
+    "label": "13"
+   },
+   {
+    "id": "n14",
+    "team": "a",
+    "x": 61.5,
+    "y": 2,
+    "label": "14"
+   },
+   {
+    "id": "n15",
+    "team": "a",
+    "x": 70,
+    "y": 2,
+    "label": "15"
+   },
+   {
+    "id": "k",
+    "team": "t",
+    "x": 50,
+    "y": 8,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 50,
+    "y": 50,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 50.6,
+    "y": 50.6
+   },
+   {
+    "id": "s1",
+    "x": 53.6,
+    "y": 53.5
+   },
+   {
+    "id": "s2",
+    "x": 50,
+    "y": 53.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Ball zu Spieler vier, einer rückt raus",
+    "say": "Der Trainer spielt Spieler vier an. Spieler sechs steht am nächsten und rückt sofort raus. Er stellt ihn nur, den Ball erobert er nicht. Gleichzeitig schieben die anderen drei nach innen und sichern hinter ihm ab.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       41.1,
+       36.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n6",
+      "to": [
+       42.5,
+       31
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n2",
+      "to": [
+       34.5,
+       24.5
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "n5",
+      "to": [
+       54,
+       21.5
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "n3",
+      "to": [
+       63.5,
+       22.5
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "Ball nach rechts, die Kette schiebt",
+    "say": "Spieler vier kommt nicht vorbei und spielt zurück. Der Trainer legt nach rechts raus auf Spieler sieben. Jetzt ist Spieler drei dran. Spieler sechs fällt zurück in die Linie, und alle rücken ein Stück nach rechts.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       50.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       78.1,
+       33.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n6",
+      "to": [
+       48.5,
+       21.5
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     },
+     {
+      "who": "n3",
+      "to": [
+       73,
+       29
+      ],
+      "type": "lauf",
+      "delay": 1.2
+     },
+     {
+      "who": "n5",
+      "to": [
+       64,
+       24
+      ],
+      "type": "lauf",
+      "delay": 1.2
+     },
+     {
+      "who": "n2",
+      "to": [
+       38.5,
+       23
+      ],
+      "type": "lauf",
+      "delay": 1.2
+     }
+    ]
+   },
+   {
+    "label": "Kommando: Sprint und Wechsel",
+    "say": "Der Ball geht zurück, und der Trainer ruft das Kommando. Die vier sprinten um die Hütchen unten an der Seite und außen hoch bis zur Torlinie. Sofort rücken die Spieler zwölf bis fünfzehn ins Feld und stellen die neue Kette. Der Trainer spielt gleich den nächsten Ball an.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       50.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n2",
+      "to": [
+       27,
+       40
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     },
+     {
+      "who": "n2",
+      "to": [
+       22,
+       47.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       15.5,
+       44.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       16.5,
+       3.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n6",
+      "to": [
+       33,
+       31
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     },
+     {
+      "who": "n6",
+      "to": [
+       25,
+       49
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n6",
+      "to": [
+       12,
+       44
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n6",
+      "to": [
+       8,
+       3.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n3",
+      "to": [
+       71.5,
+       39
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     },
+     {
+      "who": "n3",
+      "to": [
+       78,
+       47.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n3",
+      "to": [
+       84.5,
+       44.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n3",
+      "to": [
+       83.5,
+       3.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n5",
+      "to": [
+       67,
+       31
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     },
+     {
+      "who": "n5",
+      "to": [
+       75,
+       49
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n5",
+      "to": [
+       88,
+       44
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n5",
+      "to": [
+       91.5,
+       3.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n12",
+      "to": [
+       31,
+       22
+      ],
+      "type": "lauf",
+      "delay": 0.9
+     },
+     {
+      "who": "n13",
+      "to": [
+       40.5,
+       20
+      ],
+      "type": "lauf",
+      "delay": 0.9
+     },
+     {
+      "who": "n14",
+      "to": [
+       59,
+       22
+      ],
+      "type": "lauf",
+      "delay": 0.9
+     },
+     {
+      "who": "n15",
+      "to": [
+       69,
+       22
+      ],
+      "type": "lauf",
+      "delay": 0.9
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 20,
+    "y1": 58.6,
+    "x2": 80,
+    "y2": 58.6,
+    "text": "35 m"
+   },
+   {
+    "x1": 96,
+    "y1": 5,
+    "x2": 96,
+    "y2": 55,
+    "text": "30 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Nur einer rückt raus.",
+   "title": "Nur einer rückt raus",
+   "text": "Gehen zwei Verteidiger auf denselben Angreifer, fehlt daneben einer. Darum sagt der Nächste laut an, dass er geht. Sein Nebenmann bleibt schräg dahinter und macht die Lücke zu.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 31,
+      "y": 22,
+      "label": "2"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 40.5,
+      "y": 20,
+      "label": "6"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 59,
+      "y": 22,
+      "label": "5"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 69,
+      "y": 22,
+      "label": "3"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 22.5,
+      "y": 33,
+      "label": "11"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 40.5,
+      "y": 36,
+      "label": "4"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 50,
+      "y": 27,
+      "label": "9"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 59.5,
+      "y": 38.5,
+      "label": "8"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 77.5,
+      "y": 33,
+      "label": "7"
+     },
+     {
+      "id": "n12",
+      "team": "a",
+      "x": 30,
+      "y": 2,
+      "label": "12"
+     },
+     {
+      "id": "n13",
+      "team": "a",
+      "x": 38.5,
+      "y": 2,
+      "label": "13"
+     },
+     {
+      "id": "n14",
+      "team": "a",
+      "x": 61.5,
+      "y": 2,
+      "label": "14"
+     },
+     {
+      "id": "n15",
+      "team": "a",
+      "x": 70,
+      "y": 2,
+      "label": "15"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50,
+      "y": 8,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 50.6
+     },
+     {
+      "id": "s1",
+      "x": 53.6,
+      "y": 53.5
+     },
+     {
+      "id": "s2",
+      "x": 50,
+      "y": 53.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zwei gehen auf denselben Mann",
+      "say": "Der Ball kommt zu Spieler acht. Spieler fünf rückt raus, das passt. Aber Spieler drei läuft auch hin. Rechts ist jetzt alles offen, und Spieler sieben steht frei.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         60.1,
+         39.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n5",
+        "to": [
+         57.5,
+         33
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n3",
+        "to": [
+         66,
+         35
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Einer presst, einer sichert",
+      "say": "Besser so. Spieler fünf ruft: Ich gehe! Spieler drei lässt sich fallen und sichert schräg hinter ihm ab. Links schieben Spieler sechs und Spieler zwei nach, die Abstände bleiben kurz.",
+      "moves": [
+       {
+        "who": "n3",
+        "to": [
+         67,
+         24.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n6",
+        "to": [
+         48.5,
+         21
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n2",
+        "to": [
+         39.5,
+         23
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 20,
+      "y1": 58.6,
+      "x2": 80,
+      "y2": 58.6,
+      "text": "35 m"
+     },
+     {
+      "x1": 96,
+      "y1": 5,
+      "x2": 96,
+      "y2": 55,
+      "text": "30 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Auf Kommando wird frei gespielt.",
+   "title": "Freies Spiel auf Kommando",
+   "text": "Erst läuft alles wie bisher. Ruft der Trainer das Kommando, greifen die fünf Angreifer richtig an und suchen den Abschluss. Die Kette muss sofort umstellen. Die Mitte bleibt zu, außen wird das Duell angenommen, und im Strafraum hat jeder seinen Gegenspieler.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 31,
+      "y": 22,
+      "label": "2"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 40.5,
+      "y": 20,
+      "label": "6"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 59,
+      "y": 22,
+      "label": "5"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 69,
+      "y": 22,
+      "label": "3"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 22.5,
+      "y": 33,
+      "label": "11"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 40.5,
+      "y": 36,
+      "label": "4"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 50,
+      "y": 27,
+      "label": "9"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 59.5,
+      "y": 38.5,
+      "label": "8"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 77.5,
+      "y": 33,
+      "label": "7"
+     },
+     {
+      "id": "n12",
+      "team": "a",
+      "x": 30,
+      "y": 2,
+      "label": "12"
+     },
+     {
+      "id": "n13",
+      "team": "a",
+      "x": 38.5,
+      "y": 2,
+      "label": "13"
+     },
+     {
+      "id": "n14",
+      "team": "a",
+      "x": 61.5,
+      "y": 2,
+      "label": "14"
+     },
+     {
+      "id": "n15",
+      "team": "a",
+      "x": 70,
+      "y": 2,
+      "label": "15"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50,
+      "y": 8,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 50.6
+     },
+     {
+      "id": "s1",
+      "x": 53.6,
+      "y": 53.5
+     },
+     {
+      "id": "s2",
+      "x": 50,
+      "y": 53.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Kommando: Jetzt wird angegriffen",
+      "say": "Der Trainer spielt Spieler vier an und ruft: Frei! Spieler sechs rückt raus. Spieler vier spielt gleich weiter in die Mitte zu Spieler neun.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         41.1,
+         36.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n6",
+        "to": [
+         42.5,
+         31
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         27.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Über außen",
+      "say": "Durch die Mitte geht nichts, Spieler fünf ist sofort bei Spieler neun. Also raus auf den Flügel. Spieler elf geht die Linie runter, Spieler zwei läuft mit. Die anderen fallen in den Strafraum zurück.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         55,
+         23
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r11",
+        "to": [
+         23.5,
+         13
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         24.1,
+         13.6
+        ],
+        "type": "pass",
+        "delay": 0.5
+       },
+       {
+        "who": "n2",
+        "to": [
+         30.5,
+         18
+        ],
+        "type": "lauf",
+        "delay": 0.5
+       },
+       {
+        "who": "n6",
+        "to": [
+         41,
+         12.5
+        ],
+        "type": "lauf",
+        "delay": 0.7
+       },
+       {
+        "who": "n5",
+        "to": [
+         51.5,
+         15.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n3",
+        "to": [
+         62,
+         14
+        ],
+        "type": "lauf",
+        "delay": 0.7
+       },
+       {
+        "who": "r9",
+        "to": [
+         47,
+         18.5
+        ],
+        "type": "lauf",
+        "delay": 1.0
+       },
+       {
+        "who": "r7",
+        "to": [
+         70,
+         20
+        ],
+        "type": "lauf",
+        "delay": 1.0
+       }
+      ]
+     },
+     {
+      "label": "Flanke geklärt",
+      "say": "Spieler elf flankt flach vor das Tor. Spieler sechs steht richtig, ist vor Spieler neun am Ball und klärt nach außen. Die Kette hat das Tor verteidigt, und der Trainer spielt den nächsten Ball an.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         41.6,
+         13.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         30,
+         30
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 20,
+      "y1": 58.6,
+      "x2": 80,
+      "y2": 58.6,
+      "text": "35 m"
+     },
+     {
+      "x1": 96,
+      "y1": 5,
+      "x2": 96,
+      "y2": 55,
+      "text": "30 m"
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,712 @@
+{
+ "title": "Flanken klären im 5 gegen 5",
+ "code": "UE-308",
+ "kind": "Spielform",
+ "focuses": [
+  "Verteidigen",
+  "Umschalten",
+  "Zusammenspiel"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 10,
+ "players_max": 12,
+ "field_size": "30 x 35 m",
+ "description": "Fünf gegen fünf auf ein Tor, links und rechts gibt es eine Außenzone für die Flügelspieler. Team Rot greift an und muss nach fünf Pässen über außen flanken. Team Neon verteidigt mit Torwart, steht ballseitig und torseitig und klärt die Flanke. Geht der Ball danach durch eins der Stangentore unten, gibt das einen Punkt für Team Neon.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 30 mal 35 Metern mit einem Tor oben. Links und rechts ist eine Außenzone abgeteilt. Unten steht in jeder Außenzone ein Tor aus zwei Stangen.",
+  "Verteilen: Team Neon verteidigt mit vier Feldspielern und Torwart. Team Rot greift mit fünf Spielern an, je ein Flügelspieler steht in einer Außenzone. Der Trainer steht mit Bällen am Rand.",
+  "Ablauf: Team Rot spielt fünf Pässe und dann raus auf den Flügel. Ein Verteidiger darf in die Außenzone und den Flankengeber stören. Dann kommt die Flanke, und Team Neon klärt.",
+  "Wertung und Wechsel: Klärt oder passt Team Neon den Ball durch ein Stangentor, gibt das einen Punkt für Team Neon. Trifft Team Rot ins Tor, gibt das einen Punkt für Team Rot. Danach kommt ein neuer Ball vom Trainer, nach ein paar Minuten tauschen die Teams."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Ballseitig und torseitig vom Gegenspieler stehen",
+  "Schulterblick, wo läuft mein Stürmer?",
+  "Laut reden, Torwart und Verteidiger",
+  "Beim Klären auf die Stangentore zielen"
+ ],
+ "materials": [
+  "1 Tor",
+  "4 Stangen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Flanken klären im fünf gegen fünf. Team Rot kommt über außen und flankt. Team Neon verteidigt die Flanke und klärt den Ball durch die Stangentore.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 20,
+    "y": 5,
+    "w": 60,
+    "h": 50
+   },
+   {
+    "type": "line",
+    "x1": 32.5,
+    "y1": 5,
+    "x2": 32.5,
+    "y2": 55,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 67.5,
+    "y1": 5,
+    "x2": 67.5,
+    "y2": 55,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "gross"
+   }
+  ],
+  "cones": [
+   {
+    "x": 21.8,
+    "y": 53.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 31,
+    "y": 53.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 69,
+    "y": 53.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 78.2,
+    "y": 53.5,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 42.5,
+    "y": 18.8,
+    "label": "6"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 53,
+    "y": 23,
+    "label": "9"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 61.5,
+    "y": 18,
+    "label": "5"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 24.2,
+    "y": 28.6,
+    "label": "11"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 75.4,
+    "y": 29.3,
+    "label": "7"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 44.5,
+    "y": 34.5,
+    "label": "4"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 36,
+    "y": 45,
+    "label": "8"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 62.5,
+    "y": 41,
+    "label": "3"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 53,
+    "y": 49,
+    "label": "10"
+   },
+   {
+    "id": "n1",
+    "team": "a",
+    "x": 50.9,
+    "y": 7.3,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 8,
+    "y": 14,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 53.6,
+    "y": 49.6
+   },
+   {
+    "id": "s1",
+    "x": 11.6,
+    "y": 17.5
+   },
+   {
+    "id": "s2",
+    "x": 8,
+    "y": 17.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Fünf Pässe, dann nach außen",
+    "say": "Team Rot hat seine fünf Pässe fast zusammen. Spieler zehn spielt quer zu Spieler acht, und der spielt raus auf den Flügel zu Spieler elf.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       36.6,
+       45.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       24.8,
+       29.2
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Einer raus, die anderen sortieren sich",
+    "say": "Ein Verteidiger darf in die Außenzone. Spieler vier läuft raus und stört. In der Mitte schaut Spieler fünf über die Schulter. Wo läuft Spieler neun? Spieler sechs rückt näher ans Tor, zwischen Ball und Stürmer.",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       33,
+       31
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n5",
+      "to": [
+       53,
+       23
+      ],
+      "type": "blick",
+      "delay": 0.3
+     },
+     {
+      "who": "n6",
+      "to": [
+       42,
+       14.5
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     }
+    ]
+   },
+   {
+    "label": "Flanke, Spieler fünf ist vorher da",
+    "say": "Jetzt kommt die Flanke hoch vors Tor. Spieler neun startet, aber Spieler fünf steht ballseitig und geht vor ihm dazwischen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       56.6,
+       16.6
+      ],
+      "type": "pass",
+      "bend": -0.25
+     },
+     {
+      "who": "r9",
+      "to": [
+       62,
+       18.5
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n5",
+      "to": [
+       56,
+       16
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "r7",
+      "to": [
+       70,
+       22
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Klären durchs Stangentor: Punkt",
+    "say": "Spieler fünf klärt mit dem ersten Kontakt weit nach vorn, genau durch das rechte Stangentor, und das gibt einen Punkt für Team Neon. Der Trainer spielt den nächsten Ball zu Team Rot.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       74,
+       55.5
+      ],
+      "type": "pass"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 20,
+    "y1": 58.6,
+    "x2": 80,
+    "y2": 58.6,
+    "text": "30 m"
+   },
+   {
+    "x1": 92,
+    "y1": 5,
+    "x2": 92,
+    "y2": 55,
+    "text": "35 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Ballseitig und torseitig stehen, bevor die Flanke kommt.",
+   "title": "Ballseitig und torseitig",
+   "text": "Die Position muss stimmen, bevor geflankt wird. Der Innenverteidiger steht zwischen Ball und Stürmer und näher am Tor als er. Steht er auf der falschen Seite, läuft der Stürmer frei ein und trifft.",
+   "board": {
+    "players": [
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 75.5,
+      "y": 27,
+      "label": "7"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 43.5,
+      "y": 21,
+      "label": "9"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 35,
+      "y": 21,
+      "label": "6"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 61,
+      "y": 16,
+      "label": "5"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 26,
+      "y": 22,
+      "label": "11"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 52,
+      "y": 33,
+      "label": "4"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 62.5,
+      "y": 34,
+      "label": "10"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 42,
+      "y": 44,
+      "label": "8"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 58,
+      "y": 50,
+      "label": "3"
+     },
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 52.5,
+      "y": 7.3,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 8,
+      "y": 14,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 76.1,
+      "y": 27.6
+     },
+     {
+      "id": "s1",
+      "x": 11.6,
+      "y": 17.5
+     },
+     {
+      "id": "s2",
+      "x": 8,
+      "y": 17.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Falsche Seite, Blick zum Stürmer",
+      "say": "Der Ball ist rechts außen bei Spieler sieben. Spieler sechs steht noch auf der falschen Seite von Spieler neun. Ein Blick über die Schulter, dann läuft er vor ihm vorbei auf die Ballseite.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         43.5,
+         21
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "n6",
+        "to": [
+         39.5,
+         16
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n6",
+        "to": [
+         48,
+         17
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Vor dem Stürmer am Ball: Punkt",
+      "say": "Spieler sieben flankt. Spieler neun läuft ein, aber Spieler sechs ist vor ihm am Ball und klärt durch das linke Stangentor, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         48.6,
+         17.6
+        ],
+        "type": "pass",
+        "bend": -0.15
+       },
+       {
+        "who": "r9",
+        "to": [
+         46,
+         22.5
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         26.5,
+         55.5
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 20,
+      "y1": 58.6,
+      "x2": 80,
+      "y2": 58.6,
+      "text": "30 m"
+     },
+     {
+      "x1": 92,
+      "y1": 5,
+      "x2": 92,
+      "y2": 55,
+      "text": "35 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Ruhig bleiben, wenn Zeit ist.",
+   "title": "Erst annehmen, dann passen",
+   "text": "Nicht jede Flanke muss blind weg. Hat der Verteidiger Zeit, nimmt er den Ball mit dem ersten Kontakt sauber an. Dann geht der Kopf hoch, und er spielt einem Mitspieler in den Lauf. Der schließt durch das Stangentor ab.",
+   "board": {
+    "players": [
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 75.5,
+      "y": 20,
+      "label": "7"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 38,
+      "y": 18,
+      "label": "4"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 29.5,
+      "y": 16,
+      "label": "11"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 46.5,
+      "y": 13,
+      "label": "6"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 55,
+      "y": 24.5,
+      "label": "9"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 63.5,
+      "y": 14.5,
+      "label": "5"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 46.5,
+      "y": 30,
+      "label": "3"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 38,
+      "y": 36,
+      "label": "8"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 63.5,
+      "y": 31,
+      "label": "10"
+     },
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 55,
+      "y": 7.3,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 8,
+      "y": 14,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 76.1,
+      "y": 20.6
+     },
+     {
+      "id": "s1",
+      "x": 11.6,
+      "y": 17.5
+     },
+     {
+      "id": "s2",
+      "x": 8,
+      "y": 17.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Annehmen statt wegschlagen",
+      "say": "Die Flanke von Spieler sieben fliegt über alle hinweg zu Spieler vier. Niemand ist nah genug bei ihm. Also nimmt er den Ball mit dem ersten Kontakt sauber an.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         38.6,
+         18.6
+        ],
+        "type": "pass",
+        "bend": -0.2
+       },
+       {
+        "who": "r11",
+        "to": [
+         31,
+         17.5
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       }
+      ]
+     },
+     {
+      "label": "Kopf hoch, Pass in den Lauf: Punkt",
+      "say": "Kopf hoch. Spieler drei startet schon nach vorn. Der Pass kommt in seinen Lauf. Spieler drei schiebt den Ball durch das rechte Stangentor, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         46.5,
+         30
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "n3",
+        "to": [
+         54,
+         40
+        ],
+        "type": "lauf",
+        "delay": 0.5
+       },
+       {
+        "who": "b1",
+        "to": [
+         54.6,
+         40.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         76,
+         55.5
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 20,
+      "y1": 58.6,
+      "x2": 80,
+      "y2": 58.6,
+      "text": "30 m"
+     },
+     {
+      "x1": 92,
+      "y1": 5,
+      "x2": 92,
+      "y2": 55,
+      "text": "35 m"
+     }
+    ]
+   }
+  }
+ ]
+}

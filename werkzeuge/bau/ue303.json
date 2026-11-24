@@ -1,0 +1,1442 @@
+{
+ "title": "Direktpässe durch die Stangen",
+ "code": "UE-303",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Dribbling",
+  "Erwärmung"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 10,
+ "players_min": 12,
+ "players_max": 16,
+ "field_size": "25 x 30 m",
+ "description": "Ein Aufwärmen mit Ball an zwei Stangenreihen. Zwei Spieler traben links und rechts an den Stangen entlang und spielen sich den Ball direkt durch die Lücken zu. An der Mitte geht der Ball zum Paar am anderen Ende, und beide laufen zügig durch bis dorthin. Beide Reihen arbeiten gleichzeitig.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 25 mal 30 Metern mit einer Mittellinie. Zwei Reihen mit je acht Stangen laufen von oben nach unten, vier Stangen in jeder Hälfte. An beiden Enden jeder Reihe steht ein Hütchen als Start.",
+  "Verteilen: An jedem der vier Hütchen stehen vier Spieler, immer zu zweit als Paar. Die beiden Paare oben haben je einen Ball. Der Trainer steht mit Ersatzbällen am Rand.",
+  "Ablauf: Das Paar trabt los, einer links und einer rechts der Stangen, und passt direkt durch die Lücken. An der Mitte geht der Ball zum Paar am anderen Ende. Das startet sofort in die Gegenrichtung, das erste Paar läuft außen durch und stellt sich dort hinten an.",
+  "Wechsel: Jedes Paar läuft zweimal durch, dann gibt es eine kurze Pause. Danach kommt die Steigerung mit Dribbling."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Direkt spielen, flach und nicht zu hart",
+  "In den Lauf passen, nie in den Rücken",
+  "Ansagen, wann der Ball kommt",
+  "Nach dem langen Pass zügig durchlaufen und außen bleiben"
+ ],
+ "materials": [
+  "16 Stangen",
+  "4 Hütchen",
+  "Leibchen in zwei Farben",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Direktpässe durch die Stangen. Ein Aufwärmen zu zweit. Im Traben wird direkt durch die Stangen gepasst, an der Mitte geht der Ball ans andere Ende.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   },
+   {
+    "type": "line",
+    "x1": 25,
+    "y1": 30,
+    "x2": 75,
+    "y2": 30,
+    "dashed": true
+   }
+  ],
+  "goals": [],
+  "cones": [
+   {
+    "x": 37,
+    "y": 9.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 37,
+    "y": 15,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 37,
+    "y": 20.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 37,
+    "y": 26,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 37,
+    "y": 34,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 37,
+    "y": 39.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 37,
+    "y": 45,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 37,
+    "y": 50.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 63,
+    "y": 9.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 63,
+    "y": 15,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 63,
+    "y": 20.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 63,
+    "y": 26,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 63,
+    "y": 34,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 63,
+    "y": 39.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 63,
+    "y": 45,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 63,
+    "y": 50.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 37,
+    "y": 5,
+    "color": "neon"
+   },
+   {
+    "x": 63,
+    "y": 5,
+    "color": "neon"
+   },
+   {
+    "x": 37,
+    "y": 55,
+    "color": "neon"
+   },
+   {
+    "x": 63,
+    "y": 55,
+    "color": "neon"
+   }
+  ],
+  "players": [
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 32.5,
+    "y": 10,
+    "label": "7"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 41.5,
+    "y": 10,
+    "label": "10"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 58.5,
+    "y": 10,
+    "label": "4"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 67.5,
+    "y": 10,
+    "label": "11"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 32.5,
+    "y": 50,
+    "label": "5"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 41.5,
+    "y": 50,
+    "label": "6"
+   },
+   {
+    "id": "r12",
+    "team": "b",
+    "x": 58.5,
+    "y": 50,
+    "label": "12"
+   },
+   {
+    "id": "r13",
+    "team": "b",
+    "x": 67.5,
+    "y": 50,
+    "label": "13"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 15.5,
+    "y": 4,
+    "label": "9"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 24,
+    "y": 4,
+    "label": "8"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 76,
+    "y": 4,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 84.5,
+    "y": 4,
+    "label": "3"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 9,
+    "y": 30,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 33.1,
+    "y": 10.6
+   },
+   {
+    "id": "b2",
+    "x": 59.1,
+    "y": 10.6
+   },
+   {
+    "id": "s1",
+    "x": 12.6,
+    "y": 33.5
+   },
+   {
+    "id": "s2",
+    "x": 9,
+    "y": 33.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Direkt durch die Lücken",
+    "say": "Beide Reihen starten gleichzeitig. Spieler sieben und Spieler zehn traben los, einer links und einer rechts der Stangen. Der Ball geht direkt hin und her, immer durch die nächste Lücke. Rechts machen Spieler vier und Spieler elf dasselbe.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       32.5,
+       19.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n10",
+      "to": [
+       41.5,
+       14
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n10",
+      "to": [
+       41.5,
+       25
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       42.1,
+       14.6
+      ],
+      "type": "pass",
+      "delay": 0.5
+     },
+     {
+      "who": "b1",
+      "to": [
+       33.1,
+       20.1
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       42.1,
+       25.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n4",
+      "to": [
+       58.5,
+       19.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n11",
+      "to": [
+       67.5,
+       14
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n11",
+      "to": [
+       67.5,
+       25
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b2",
+      "to": [
+       68.1,
+       14.6
+      ],
+      "type": "pass",
+      "delay": 0.5
+     },
+     {
+      "who": "b2",
+      "to": [
+       59.1,
+       20.1
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b2",
+      "to": [
+       68.1,
+       25.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "An der Mitte: langer Pass",
+    "say": "An der Mittellinie ist Schluss mit den kurzen Pässen. Spieler zehn spielt flach nach unten zu Spieler sechs. Beide ziehen das Tempo an und laufen außen weiter. Oben rückt schon das nächste Paar an den Start.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       42.1,
+       50.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b2",
+      "to": [
+       68.1,
+       50.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n7",
+      "to": [
+       28,
+       38
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n10",
+      "to": [
+       45.5,
+       38
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n4",
+      "to": [
+       54.5,
+       38
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n11",
+      "to": [
+       72,
+       38
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n8",
+      "to": [
+       32.5,
+       10
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     },
+     {
+      "who": "n9",
+      "to": [
+       30,
+       2
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     },
+     {
+      "who": "n9",
+      "to": [
+       41.5,
+       2.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n9",
+      "to": [
+       41.5,
+       10
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       67.5,
+       10
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     },
+     {
+      "who": "n3",
+      "to": [
+       70,
+       2
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     },
+     {
+      "who": "n3",
+      "to": [
+       58.5,
+       2.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n3",
+      "to": [
+       58.5,
+       10
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Das nächste Paar spielt zurück",
+    "say": "Jetzt kommen Spieler fünf und Spieler sechs von unten. Wieder direkt durch die Lücken, bis zur Mitte. Das erste Paar läuft außen an ihnen vorbei und stellt sich unten an. Von der Mitte geht der Ball hoch zu Spieler acht, und das nächste Paar startet. Nach zwei Durchgängen gibt es eine kurze Pause.",
+    "moves": [
+     {
+      "who": "r6",
+      "to": [
+       41.5,
+       40
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r5",
+      "to": [
+       32.5,
+       45.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r5",
+      "to": [
+       32.5,
+       34.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       33.1,
+       46.1
+      ],
+      "type": "pass",
+      "delay": 0.5
+     },
+     {
+      "who": "b1",
+      "to": [
+       42.1,
+       40.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       33.1,
+       35.1
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r13",
+      "to": [
+       67.5,
+       40
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r12",
+      "to": [
+       58.5,
+       45.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r12",
+      "to": [
+       58.5,
+       34.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b2",
+      "to": [
+       59.1,
+       46.1
+      ],
+      "type": "pass",
+      "delay": 0.5
+     },
+     {
+      "who": "b2",
+      "to": [
+       68.1,
+       40.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b2",
+      "to": [
+       59.1,
+       35.1
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       33.1,
+       10.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b2",
+      "to": [
+       59.1,
+       10.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       28,
+       52
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "n10",
+      "to": [
+       45.5,
+       52
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "n4",
+      "to": [
+       54.5,
+       52
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "n11",
+      "to": [
+       72,
+       52
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "25 m"
+   },
+   {
+    "x1": 93,
+    "y1": 5,
+    "x2": 93,
+    "y2": 55,
+    "text": "30 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: In den Lauf, nie in den Rücken.",
+   "title": "In den Lauf passen",
+   "text": "Kommt der Pass hinter dem Mitspieler an, muss er bremsen und das Tempo ist weg. Darum geht der Ball immer ein Stück voraus, vor den vorderen Fuß. So bleiben beide im Traben und können direkt spielen.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 32.5,
+      "y": 10,
+      "label": "7"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 41.5,
+      "y": 10,
+      "label": "10"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 58.5,
+      "y": 10,
+      "label": "4"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 67.5,
+      "y": 10,
+      "label": "11"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 32.5,
+      "y": 50,
+      "label": "5"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 41.5,
+      "y": 50,
+      "label": "6"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 58.5,
+      "y": 50,
+      "label": "12"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 67.5,
+      "y": 50,
+      "label": "13"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 15.5,
+      "y": 4,
+      "label": "9"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 24,
+      "y": 4,
+      "label": "8"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 76,
+      "y": 4,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 84.5,
+      "y": 4,
+      "label": "3"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 9,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 33.1,
+      "y": 10.6
+     },
+     {
+      "id": "b2",
+      "x": 59.1,
+      "y": 10.6
+     },
+     {
+      "id": "s1",
+      "x": 12.6,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 9,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Pass in den Rücken",
+      "say": "Spieler zehn ist schon zwei Stangen weiter. Spieler sieben spielt aber zu kurz, der Ball kommt hinter ihm an. Spieler zehn muss abbremsen und zurück.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         41.5,
+         19.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         42.1,
+         14.1
+        ],
+        "type": "pass",
+        "delay": 0.6
+       },
+       {
+        "who": "n10",
+        "to": [
+         41.5,
+         13.5
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Vor den vorderen Fuß",
+      "say": "So ist es richtig. Der Ball kommt eine Lücke weiter vorn an, genau in den Lauf von Spieler sieben. Der spielt direkt zurück, und beide bleiben in Bewegung.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         32.5,
+         19.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         33.1,
+         20.1
+        ],
+        "type": "pass",
+        "delay": 0.4
+       },
+       {
+        "who": "n10",
+        "to": [
+         41.5,
+         25
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       },
+       {
+        "who": "b1",
+        "to": [
+         42.1,
+         25.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 25,
+      "y1": 58.6,
+      "x2": 75,
+      "y2": 58.6,
+      "text": "25 m"
+     },
+     {
+      "x1": 93,
+      "y1": 5,
+      "x2": 93,
+      "y2": 55,
+      "text": "30 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Jeder dribbelt allein durch die Stangen.",
+   "title": "Allein im Slalom",
+   "text": "An jedem Ende startet nur noch ein Spieler, also vier gleichzeitig. Jeder dribbelt im Slalom durch die Stangen bis zur Mitte und passt dann zum Nächsten am anderen Ende. An der Mitte kommt ihm einer entgegen, also Kopf hoch.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 34,
+      "y": 7,
+      "label": "7"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 25.5,
+      "y": 7,
+      "label": "10"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 60,
+      "y": 7,
+      "label": "4"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 51.5,
+      "y": 7,
+      "label": "11"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 40,
+      "y": 53,
+      "label": "6"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 48.5,
+      "y": 53,
+      "label": "5"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 66,
+      "y": 53,
+      "label": "13"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 74.5,
+      "y": 53,
+      "label": "12"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 9,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 34.6,
+      "y": 7.6
+     },
+     {
+      "id": "b2",
+      "x": 60.6,
+      "y": 7.6
+     },
+     {
+      "id": "b3",
+      "x": 40.6,
+      "y": 53.6
+     },
+     {
+      "id": "b4",
+      "x": 66.6,
+      "y": 53.6
+     },
+     {
+      "id": "s1",
+      "x": 12.6,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 9,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Vier dribbeln gleichzeitig",
+      "say": "Oben starten Spieler sieben und Spieler vier, unten Spieler sechs und Spieler dreizehn. Alle vier dribbeln im Slalom durch die Stangen. Kleine Kontakte, mal mit innen und mal mit außen, mit beiden Füßen.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         34,
+         10
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         40,
+         14.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         40,
+         15.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         34,
+         20
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "n4",
+        "to": [
+         60,
+         10
+        ],
+        "type": "dribbling",
+        "ball": "b2"
+       },
+       {
+        "who": "n4",
+        "to": [
+         66,
+         14.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b2"
+       },
+       {
+        "who": "n4",
+        "to": [
+         66,
+         15.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b2"
+       },
+       {
+        "who": "n4",
+        "to": [
+         60,
+         20
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b2"
+       },
+       {
+        "who": "r6",
+        "to": [
+         40,
+         50
+        ],
+        "type": "dribbling",
+        "ball": "b3"
+       },
+       {
+        "who": "r6",
+        "to": [
+         34,
+         45.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b3"
+       },
+       {
+        "who": "r6",
+        "to": [
+         34,
+         44.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b3"
+       },
+       {
+        "who": "r6",
+        "to": [
+         40,
+         40
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b3"
+       },
+       {
+        "who": "r13",
+        "to": [
+         66,
+         50
+        ],
+        "type": "dribbling",
+        "ball": "b4"
+       },
+       {
+        "who": "r13",
+        "to": [
+         60,
+         45.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b4"
+       },
+       {
+        "who": "r13",
+        "to": [
+         60,
+         44.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b4"
+       },
+       {
+        "who": "r13",
+        "to": [
+         66,
+         40
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b4"
+       }
+      ]
+     },
+     {
+      "label": "Kopf hoch vor der Mitte",
+      "say": "Vor der Mitte geht der Kopf hoch. Spieler sieben sieht Spieler sechs entgegenkommen. Beide bleiben auf ihrer Seite der Stangen, dann stößt keiner zusammen.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         39.5,
+         39
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "n4",
+        "to": [
+         65.5,
+         39
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "n7",
+        "to": [
+         34,
+         21
+        ],
+        "type": "dribbling",
+        "delay": 0.9,
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         40,
+         25.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         40,
+         28
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "n4",
+        "to": [
+         60,
+         21
+        ],
+        "type": "dribbling",
+        "delay": 0.9,
+        "ball": "b2"
+       },
+       {
+        "who": "n4",
+        "to": [
+         66,
+         25.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b2"
+       },
+       {
+        "who": "n4",
+        "to": [
+         66,
+         28
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b2"
+       },
+       {
+        "who": "r6",
+        "to": [
+         40,
+         39
+        ],
+        "type": "dribbling",
+        "delay": 0.9,
+        "ball": "b3"
+       },
+       {
+        "who": "r6",
+        "to": [
+         34,
+         34.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b3"
+       },
+       {
+        "who": "r6",
+        "to": [
+         34,
+         32
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b3"
+       },
+       {
+        "who": "r13",
+        "to": [
+         66,
+         39
+        ],
+        "type": "dribbling",
+        "delay": 0.9,
+        "ball": "b4"
+       },
+       {
+        "who": "r13",
+        "to": [
+         60,
+         34.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b4"
+       },
+       {
+        "who": "r13",
+        "to": [
+         60,
+         32
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b4"
+       }
+      ]
+     },
+     {
+      "label": "Pass ans andere Ende, weiterlaufen",
+      "say": "An der Mitte spielt jeder flach zum Nächsten am anderen Ende. Spieler sieben passt nach unten zu Spieler fünf, Spieler sechs nach oben zu Spieler zehn. Dann laufen alle zügig durch und stellen sich drüben an. Die Nächsten dribbeln schon los.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         49.1,
+         53.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b2",
+        "to": [
+         75.1,
+         53.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b3",
+        "to": [
+         26.1,
+         7.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b4",
+        "to": [
+         52.1,
+         7.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n7",
+        "to": [
+         40,
+         53
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n4",
+        "to": [
+         66,
+         53
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "r6",
+        "to": [
+         34,
+         7
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "r13",
+        "to": [
+         60,
+         7
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 25,
+      "y1": 58.6,
+      "x2": 75,
+      "y2": 58.6,
+      "text": "25 m"
+     },
+     {
+      "x1": 93,
+      "y1": 5,
+      "x2": 93,
+      "y2": 55,
+      "text": "30 m"
+     }
+    ]
+   }
+  }
+ ]
+}

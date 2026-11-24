@@ -1,0 +1,840 @@
+{
+ "title": "Drei Wellen in Überzahl",
+ "code": "UE-304",
+ "kind": "Übungsform",
+ "focuses": [
+  "Torschuss",
+  "Zusammenspiel",
+  "Umschalten"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 8,
+ "players_max": 14,
+ "field_size": "25 x 18 m",
+ "description": "Drei Angriffe folgen direkt aufeinander. Zuerst schießt ein Angreifer nach der Ablage des Trainers direkt aufs große Tor. Sofort danach greifen zwei Gegner ihn im zwei gegen eins auf die Minitore an. Zum Schluss kommen zwei Mitspieler dazu, und es geht drei gegen zwei zurück aufs große Tor.",
+ "organisation": [
+  "Aufbauen: Ein Feld, 25 Meter breit und 18 Meter tief. Oben steht ein großes Tor mit Torwart, unten stehen zwei Minitore nebeneinander.",
+  "Verteilen: Team Neon wartet unten an der Grundlinie, links, rechts und in der Mitte zwischen den Minitoren. Team Rot wartet oben links und rechts neben dem großen Tor. Alle haben Bälle. Der Trainer steht zuerst in der Mitte des Feldes.",
+  "Ablauf: Phase eins, Pass zum Trainer, Ablage, Schuss aufs große Tor. Phase zwei, zwei Spieler von Team Rot greifen den Schützen im zwei gegen eins auf die Minitore an. Phase drei, zwei Spieler von Team Neon kommen dazu und spielen drei gegen zwei aufs große Tor.",
+  "Wertung und Wechsel: Jeder Treffer gibt einen Punkt. Erobern die Verteidiger den Ball, kontern sie sofort auf die andere Seite. Nach Phase drei gehen alle raus, und der Nächste startet wieder mit Phase eins."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Den ersten Schuss voll durchziehen",
+  "Kopf hoch, wo ist der freie Mann",
+  "Mit Tempo auf den Verteidiger zu, dann abspielen",
+  "Ball weg, sofort umschalten"
+ ],
+ "materials": [
+  "1 großes Tor",
+  "2 Minitore",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Drei Wellen in Überzahl. Erst ein Schuss, dann zwei gegen eins, dann drei gegen zwei. Wer gerade noch angegriffen hat, verteidigt im nächsten Moment.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 20,
+    "y": 8,
+    "w": 60,
+    "h": 40
+   },
+   {
+    "type": "rect",
+    "x": 33.5,
+    "y": 8,
+    "w": 33,
+    "h": 9
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 8,
+    "side": "top",
+    "size": "gross"
+   },
+   {
+    "x": 40.5,
+    "y": 48,
+    "side": "bottom"
+   },
+   {
+    "x": 59.5,
+    "y": 48,
+    "side": "bottom"
+   }
+  ],
+  "cones": [],
+  "players": [
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 50,
+    "y": 51,
+    "label": "9"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 24,
+    "y": 51,
+    "label": "8"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 76,
+    "y": 51,
+    "label": "11"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 65.5,
+    "y": 55,
+    "label": "2"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 32,
+    "y": 6,
+    "label": "7"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 68,
+    "y": 6,
+    "label": "10"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 23,
+    "y": 6,
+    "label": "3"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 77,
+    "y": 6,
+    "label": "6"
+   },
+   {
+    "id": "k",
+    "team": "t",
+    "x": 50.9,
+    "y": 10.3,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 48,
+    "y": 28,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 50.6,
+    "y": 51.6
+   },
+   {
+    "id": "b2",
+    "x": 32.6,
+    "y": 6.6
+   },
+   {
+    "id": "b3",
+    "x": 24.6,
+    "y": 51.6
+   },
+   {
+    "id": "b4",
+    "x": 66.1,
+    "y": 55.6
+   },
+   {
+    "id": "s1",
+    "x": 10.4,
+    "y": 33.5
+   },
+   {
+    "id": "s2",
+    "x": 14,
+    "y": 33.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Phase eins: Pass und Ablage",
+    "say": "Spieler neun startet unten in der Mitte. Er spielt flach zum Trainer und läuft sofort nach. Der Trainer legt ihm den Ball zur Seite auf.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       48.6,
+       28.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n9",
+      "to": [
+       55,
+       34
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       55.6,
+       34.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Direkt aufs Tor: Punkt",
+    "say": "Ohne Annahme zieht Spieler neun ab. Der Ball schlägt links unten ein, und das gibt einen Punkt für Team Neon. Mit dem Schuss läuft schon Phase zwei.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       45,
+       8.3
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Phase zwei: zwei gegen eins",
+    "say": "Von oben kommen jetzt Spieler sieben mit Ball und Spieler zehn. Sie greifen die Minitore an. Spieler neun dreht sich um und verteidigt allein. Der Trainer geht raus an den Rand.",
+    "moves": [
+     {
+      "who": "r7",
+      "to": [
+       35.5,
+       20
+      ],
+      "type": "dribbling",
+      "ball": "b2"
+     },
+     {
+      "who": "r10",
+      "to": [
+       64,
+       22
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n9",
+      "to": [
+       45,
+       31
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "T",
+      "to": [
+       12,
+       30
+      ],
+      "type": "lauf"
+     }
+    ]
+   },
+   {
+    "label": "Querpass, Minitor: Punkt",
+    "say": "Spieler neun läuft Spieler sieben an. Genau dann kommt der Querpass. Spieler zehn hat freie Bahn und schiebt ins rechte Minitor ein, und das gibt einen Punkt für Team Rot.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       41,
+       25
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b2",
+      "to": [
+       64.6,
+       22.6
+      ],
+      "type": "pass",
+      "delay": 0.3
+     },
+     {
+      "who": "r10",
+      "to": [
+       61,
+       38
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "b2",
+      "to": [
+       59.5,
+       47.7
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Phase drei: drei gegen zwei",
+    "say": "Sofort geht es zurück. Spieler acht dribbelt von links unten ins Feld, rechts kommt Spieler elf dazu. Spieler neun läuft nach vorn. Team Rot muss jetzt zu zweit verteidigen. Spieler acht hebt den Kopf. Wer ist frei?",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       30,
+       38
+      ],
+      "type": "dribbling",
+      "ball": "b3"
+     },
+     {
+      "who": "n11",
+      "to": [
+       72,
+       36
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n9",
+      "to": [
+       42,
+       22
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "r7",
+      "to": [
+       38.5,
+       38
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "r10",
+      "to": [
+       63,
+       27
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n8",
+      "to": [
+       42,
+       22
+      ],
+      "type": "blick",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Freier Mann, Abschluss: Punkt",
+    "say": "In der Mitte steht Spieler neun frei. Der Pass kommt flach in den Fuß, er schießt, und das gibt einen Punkt für Team Neon. Danach gehen alle raus, und Spieler zwei startet wieder mit Phase eins.",
+    "moves": [
+     {
+      "who": "b3",
+      "to": [
+       42.6,
+       22.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b3",
+      "to": [
+       45,
+       8.3
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 20,
+    "y1": 58.6,
+    "x2": 80,
+    "y2": 58.6,
+    "text": "25 m"
+   },
+   {
+    "x1": 92,
+    "y1": 8,
+    "x2": 92,
+    "y2": 48,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Doppelpass am Verteidiger vorbei.",
+   "title": "Doppelpass am Verteidiger",
+   "text": "Zwei gegen eins heißt, einer ist immer frei. Der Ballführende geht mit Tempo auf den Verteidiger zu und bindet ihn. Dann spielt er ab und läuft sofort weiter. Der Ball kommt direkt in seinen Lauf zurück.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 44,
+      "y": 31,
+      "label": "9"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 24,
+      "y": 51,
+      "label": "8"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 76,
+      "y": 51,
+      "label": "11"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 65.5,
+      "y": 55,
+      "label": "2"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 35.5,
+      "y": 20,
+      "label": "7"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 64,
+      "y": 22,
+      "label": "10"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 23,
+      "y": 6,
+      "label": "3"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 77,
+      "y": 6,
+      "label": "6"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50.9,
+      "y": 10.3,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 12,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 45,
+      "y": 8.3
+     },
+     {
+      "id": "b2",
+      "x": 36.1,
+      "y": 20.6
+     },
+     {
+      "id": "b3",
+      "x": 24.6,
+      "y": 51.6
+     },
+     {
+      "id": "b4",
+      "x": 66.1,
+      "y": 55.6
+     },
+     {
+      "id": "s1",
+      "x": 10.4,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 14,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Verteidiger binden, abspielen",
+      "say": "Spieler sieben dribbelt direkt auf Spieler neun zu. Erst kurz vor ihm spielt er quer zu Spieler zehn und startet links am Verteidiger vorbei.",
+      "moves": [
+       {
+        "who": "r7",
+        "to": [
+         38,
+         25
+        ],
+        "type": "dribbling",
+        "ball": "b2"
+       },
+       {
+        "who": "n9",
+        "to": [
+         42,
+         28.5
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "b2",
+        "to": [
+         64.6,
+         22.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "r7",
+        "to": [
+         34,
+         31
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r7",
+        "to": [
+         36,
+         39
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Direkt in den Lauf: Punkt",
+      "say": "Spieler zehn lässt den Ball nur prallen, genau in den Lauf. Spieler sieben ist durch und trifft ins linke Minitor, und das gibt einen Punkt für Team Rot.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         36.6,
+         39.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n9",
+        "to": [
+         47,
+         33
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "b2",
+        "to": [
+         40.5,
+         47.7
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 20,
+      "y1": 58.6,
+      "x2": 80,
+      "y2": 58.6,
+      "text": "25 m"
+     },
+     {
+      "x1": 92,
+      "y1": 8,
+      "x2": 92,
+      "y2": 48,
+      "text": "18 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Ball erobert, sofort kontern.",
+   "title": "Ball erobert, sofort kontern",
+   "text": "Wer in Unterzahl verteidigt, lauert auf den Fehler. Fängt ein Verteidiger den Pass ab, geht es ohne Pause in die andere Richtung. Die Angreifer müssen dann sofort zurück.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 42,
+      "y": 22,
+      "label": "9"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 30,
+      "y": 38,
+      "label": "8"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 72,
+      "y": 36,
+      "label": "11"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 65.5,
+      "y": 55,
+      "label": "2"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 38.5,
+      "y": 38,
+      "label": "7"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 63,
+      "y": 27,
+      "label": "10"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 23,
+      "y": 6,
+      "label": "3"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 77,
+      "y": 6,
+      "label": "6"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50.9,
+      "y": 10.3,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 12,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 45,
+      "y": 8.3
+     },
+     {
+      "id": "b2",
+      "x": 59.5,
+      "y": 47.7
+     },
+     {
+      "id": "b3",
+      "x": 30.6,
+      "y": 38.6
+     },
+     {
+      "id": "b4",
+      "x": 66.1,
+      "y": 55.6
+     },
+     {
+      "id": "s1",
+      "x": 10.4,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 14,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Pass abgefangen",
+      "say": "Spieler acht will durch die Mitte zu Spieler neun spielen. Spieler sieben ahnt das. Er macht einen Schritt in den Passweg und hat den Ball.",
+      "moves": [
+       {
+        "who": "r7",
+        "to": [
+         36.5,
+         30.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b3",
+        "to": [
+         37.1,
+         31.1
+        ],
+        "type": "pass",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Konter aufs Minitor: Punkt",
+      "say": "Jetzt schaltet Team Rot um. Spieler sieben nimmt den Ball mit und geht an Spieler acht vorbei. Der kommt nicht mehr hin. Schuss ins linke Minitor, und das gibt einen Punkt für Team Rot.",
+      "moves": [
+       {
+        "who": "r7",
+        "to": [
+         39,
+         41
+        ],
+        "type": "dribbling",
+        "ball": "b3"
+       },
+       {
+        "who": "n8",
+        "to": [
+         33,
+         42
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "r10",
+        "to": [
+         58,
+         38
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n9",
+        "to": [
+         44,
+         30
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "b3",
+        "to": [
+         40.5,
+         47.7
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 20,
+      "y1": 58.6,
+      "x2": 80,
+      "y2": 58.6,
+      "text": "25 m"
+     },
+     {
+      "x1": 92,
+      "y1": 8,
+      "x2": 92,
+      "y2": 48,
+      "text": "18 m"
+     }
+    ]
+   }
+  }
+ ]
+}

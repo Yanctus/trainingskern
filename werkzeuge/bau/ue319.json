@@ -1,0 +1,1282 @@
+{
+ "title": "Tiefer Block, steiler Konter",
+ "code": "UE-319",
+ "kind": "Spielform",
+ "focuses": [
+  "Umschalten",
+  "Verteidigen",
+  "Zusammenspiel"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 22,
+ "players_max": 22,
+ "field_size": "65 x 100 m",
+ "description": "Elf gegen elf auf dem ganzen Platz. Team Neon steht im 4-4-2 tief und eng vor dem eigenen Strafraum und lässt nur die beiden Spitzen vorn. Team Rot baut im 4-3-3 von hinten auf und greift an. Erobert Team Neon den Ball, geht er sofort steil auf eine Spitze, und das Mittelfeld rückt im Sprint nach.",
+ "organisation": [
+  "Aufbauen: Das ganze Großfeld mit zwei Toren. Der Trainer steht mit vielen Bällen an der Mittellinie.",
+  "Verteilen: Team Neon im 4-4-2 mit zwei engen Viererketten in der eigenen Hälfte und zwei Spitzen vorn. Team Rot im 4-3-3, die Außenverteidiger schieben beim Angriff hoch.",
+  "Ablauf: Der Trainer spielt den Ball zu einem Verteidiger von Team Rot. Team Rot baut gegen die zwei Spitzen auf und greift an. Team Neon lenkt nach außen und fängt den Pass in die Mitte ab. Dann geht der Ball direkt auf eine Spitze, und der Konter läuft.",
+  "Wertung: Jeder Treffer gibt einen Punkt. Nach jedem Angriff bringt der Trainer den nächsten Ball wieder zu Team Rot."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Eng stehen, die Mitte bleibt zu",
+  "Ball gewonnen? Kopf hoch und steil auf die Spitze",
+  "Spitzen bleiben anspielbar, auch wenn wir verteidigen",
+  "Mittelfeld im Sprint hinterher"
+ ],
+ "materials": [
+  "2 Großfeldtore",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Tiefer Block, steiler Konter. Elf gegen elf auf dem ganzen Platz. Team Neon steht tief und kontert nach dem Ballgewinn direkt über die beiden Spitzen.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 12,
+    "y": 4,
+    "w": 76,
+    "h": 52
+   },
+   {
+    "type": "line",
+    "x1": 12,
+    "y1": 30,
+    "x2": 88,
+    "y2": 30,
+    "dashed": false
+   },
+   {
+    "type": "rect",
+    "x": 26.5,
+    "y": 4,
+    "w": 47,
+    "h": 8.6
+   },
+   {
+    "type": "rect",
+    "x": 26.5,
+    "y": 47.4,
+    "w": 47,
+    "h": 8.6
+   },
+   {
+    "type": "line",
+    "x1": 12,
+    "y1": 21,
+    "x2": 88,
+    "y2": 21,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 12,
+    "y1": 39,
+    "x2": 88,
+    "y2": 39,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 4,
+    "side": "top",
+    "size": "gross"
+   },
+   {
+    "x": 50,
+    "y": 56,
+    "side": "bottom",
+    "size": "gross"
+   }
+  ],
+  "cones": [],
+  "players": [
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 50,
+    "y": 54.5,
+    "label": "TW"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 26,
+    "y": 48.5,
+    "label": "3"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 41.5,
+    "y": 48.5,
+    "label": "4"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 58.5,
+    "y": 48.5,
+    "label": "5"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 74,
+    "y": 48.5,
+    "label": "2"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 23.5,
+    "y": 33,
+    "label": "7"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 41,
+    "y": 33,
+    "label": "6"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 59,
+    "y": 33,
+    "label": "8"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 76.5,
+    "y": 33,
+    "label": "11"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 41,
+    "y": 17.5,
+    "label": "9"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 59,
+    "y": 17.5,
+    "label": "10"
+   },
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 50,
+    "y": 7,
+    "label": "TW"
+   },
+   {
+    "id": "r13",
+    "team": "b",
+    "x": 15,
+    "y": 19,
+    "label": "13"
+   },
+   {
+    "id": "r14",
+    "team": "b",
+    "x": 32.5,
+    "y": 11,
+    "label": "14"
+   },
+   {
+    "id": "r15",
+    "team": "b",
+    "x": 67.5,
+    "y": 11,
+    "label": "15"
+   },
+   {
+    "id": "r12",
+    "team": "b",
+    "x": 85,
+    "y": 19,
+    "label": "12"
+   },
+   {
+    "id": "r18",
+    "team": "b",
+    "x": 32,
+    "y": 27,
+    "label": "18"
+   },
+   {
+    "id": "r16",
+    "team": "b",
+    "x": 50,
+    "y": 23,
+    "label": "16"
+   },
+   {
+    "id": "r20",
+    "team": "b",
+    "x": 68,
+    "y": 27,
+    "label": "20"
+   },
+   {
+    "id": "r21",
+    "team": "b",
+    "x": 15,
+    "y": 42,
+    "label": "21"
+   },
+   {
+    "id": "r19",
+    "team": "b",
+    "x": 50,
+    "y": 39,
+    "label": "19"
+   },
+   {
+    "id": "r17",
+    "team": "b",
+    "x": 85,
+    "y": 42,
+    "label": "17"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 5,
+    "y": 30,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 5.6,
+    "y": 30.6
+   },
+   {
+    "id": "s1",
+    "x": 8.6,
+    "y": 33.5
+   },
+   {
+    "id": "s2",
+    "x": 5,
+    "y": 33.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Trainer spielt ein, Rot baut auf",
+    "say": "Der Trainer spielt den Ball zu Spieler vierzehn. Team Rot baut hinten zu viert gegen unsere zwei Spitzen auf. Der Ball läuft quer zu Spieler fünfzehn, die Spitzen schieben mit.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       33.1,
+       11.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       68.1,
+       11.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n10",
+      "to": [
+       62,
+       16
+      ],
+      "type": "lauf",
+      "delay": 1.0
+     },
+     {
+      "who": "n9",
+      "to": [
+       47,
+       18
+      ],
+      "type": "lauf",
+      "delay": 1.0
+     }
+    ]
+   },
+   {
+    "label": "Nach außen lenken, Block schiebt",
+    "say": "Weiter geht es nach außen zu Spieler zwölf, der hoch aufgerückt ist. Genau da wollen wir den Ball haben. Beide Viererketten schieben eng zusammen auf die Ballseite.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       85.6,
+       19.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n7",
+      "to": [
+       27.5,
+       33
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n6",
+      "to": [
+       45,
+       33
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n8",
+      "to": [
+       63,
+       33
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n11",
+      "to": [
+       80.5,
+       33
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n3",
+      "to": [
+       30,
+       48.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n4",
+      "to": [
+       45.5,
+       48.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n5",
+      "to": [
+       62.5,
+       48.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n2",
+      "to": [
+       78,
+       48.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "r20",
+      "to": [
+       60,
+       26
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "n10",
+      "to": [
+       66,
+       20
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Pass in die Mitte abgefangen",
+    "say": "Spieler zwölf will flach in die Mitte auf Spieler neunzehn spielen. Spieler acht steht richtig, geht in den Passweg und hat den Ball.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       63.6,
+       33.2
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n8",
+      "to": [
+       63,
+       32.6
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Kopf hoch, steil auf die Spitze",
+    "say": "Jetzt muss es schnell gehen. Spieler acht nimmt sofort den Kopf hoch. Spieler zehn startet in den Raum hinter Spieler zwölf, und da kommt der Ball hin.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       76,
+       14
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "n10",
+      "to": [
+       76,
+       14
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     },
+     {
+      "who": "b1",
+      "to": [
+       76.6,
+       14.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Mittelfeld rückt nach",
+    "say": "Spieler fünfzehn stellt Spieler zehn. Kein Problem, von hinten kommt Spieler acht im Sprint und bekommt den Ball zurück. Vorn läuft Spieler neun zwischen die Innenverteidiger.",
+    "moves": [
+     {
+      "who": "r15",
+      "to": [
+       72,
+       12
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n8",
+      "to": [
+       66,
+       24
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n11",
+      "to": [
+       82,
+       25
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n6",
+      "to": [
+       50,
+       28
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n9",
+      "to": [
+       55,
+       13
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "r14",
+      "to": [
+       45,
+       11
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "b1",
+      "to": [
+       66.6,
+       24.6
+      ],
+      "type": "pass",
+      "delay": 1.2
+     }
+    ]
+   },
+   {
+    "label": "Durchgesteckt: Punkt",
+    "say": "Spieler acht steckt durch auf Spieler neun. Der schiebt am Torwart vorbei ein, und das gibt einen Punkt für Team Neon. Danach bringt der Trainer den nächsten Ball wieder zu Team Rot.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       57,
+       9.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       57.6,
+       10.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       54.5,
+       3.7
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 12,
+    "y1": 58.6,
+    "x2": 88,
+    "y2": 58.6,
+    "text": "65 m"
+   },
+   {
+    "x1": 97.5,
+    "y1": 4,
+    "x2": 97.5,
+    "y2": 56,
+    "text": "100 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Nach dem Ballgewinn sofort steil.",
+   "title": "Sofort steil auf die Spitze",
+   "text": "Der erste Pass nach dem Ballgewinn geht nach vorn auf eine Spitze, nicht quer und nicht zurück. Team Rot ist aufgerückt und braucht ein paar Sekunden, um sich zu ordnen. In dieser Zeit muss der Ball vorn sein. Die zweite Spitze startet sofort in die Tiefe.",
+   "board": {
+    "players": [
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 50,
+      "y": 54.5,
+      "label": "TW"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 26,
+      "y": 48.5,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 41.5,
+      "y": 48.5,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 58.5,
+      "y": 48.5,
+      "label": "5"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 74,
+      "y": 48.5,
+      "label": "2"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 23.5,
+      "y": 33,
+      "label": "7"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 41,
+      "y": 33,
+      "label": "6"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 59,
+      "y": 33,
+      "label": "8"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 76.5,
+      "y": 33,
+      "label": "11"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 41,
+      "y": 17.5,
+      "label": "9"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 59,
+      "y": 17.5,
+      "label": "10"
+     },
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 50,
+      "y": 7,
+      "label": "TW"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 15,
+      "y": 19,
+      "label": "13"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 32.5,
+      "y": 11,
+      "label": "14"
+     },
+     {
+      "id": "r15",
+      "team": "b",
+      "x": 67.5,
+      "y": 11,
+      "label": "15"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 85,
+      "y": 19,
+      "label": "12"
+     },
+     {
+      "id": "r18",
+      "team": "b",
+      "x": 32,
+      "y": 27,
+      "label": "18"
+     },
+     {
+      "id": "r16",
+      "team": "b",
+      "x": 50,
+      "y": 23,
+      "label": "16"
+     },
+     {
+      "id": "r20",
+      "team": "b",
+      "x": 68,
+      "y": 27,
+      "label": "20"
+     },
+     {
+      "id": "r21",
+      "team": "b",
+      "x": 15,
+      "y": 42,
+      "label": "21"
+     },
+     {
+      "id": "r19",
+      "team": "b",
+      "x": 50,
+      "y": 39,
+      "label": "19"
+     },
+     {
+      "id": "r17",
+      "team": "b",
+      "x": 85,
+      "y": 42,
+      "label": "17"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 5,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 15.6,
+      "y": 42.6
+     },
+     {
+      "id": "s1",
+      "x": 8.6,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 5,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Tief am Strafraum erobert",
+      "say": "Team Rot ist weit aufgerückt. Spieler einundzwanzig spielt von außen flach in die Mitte. Spieler sechs läuft dazwischen und holt sich den Ball.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         40.6,
+         40.9
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n6",
+        "to": [
+         40,
+         40.3
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Kopf hoch, steil auf Spieler neun",
+      "say": "Kein Querpass, kein Rückpass. Spieler sechs schaut hoch und spielt flach und scharf durch die Mitte auf Spieler neun. Der zeigt sich schon und schaut zum Ball.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         41,
+         17.5
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         41.6,
+         18.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Aufdrehen, durchstecken: Punkt",
+      "say": "Spieler neun nimmt an und dreht auf. Spieler zehn ist schon in die Tiefe gestartet und bekommt den Ball in den Lauf. Er trifft, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         58,
+         11
+        ],
+        "type": "blick",
+        "von": [
+         40,
+         40.3
+        ],
+        "dauer": 1.3
+       },
+       {
+        "who": "n9",
+        "to": [
+         58,
+         11
+        ],
+        "type": "dreh",
+        "delay": 0.4
+       },
+       {
+        "who": "n10",
+        "to": [
+         58,
+         11
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       },
+       {
+        "who": "b1",
+        "to": [
+         58.6,
+         11.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         54.5,
+         3.7
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 12,
+      "y1": 58.6,
+      "x2": 88,
+      "y2": 58.6,
+      "text": "65 m"
+     },
+     {
+      "x1": 97.5,
+      "y1": 4,
+      "x2": 97.5,
+      "y2": 56,
+      "text": "100 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Eng stehen und nach außen lenken.",
+   "title": "Eng stehen, nach außen lenken",
+   "text": "Beide Viererketten stehen eng, durch die Mitte kommt kein Pass. Team Rot muss außen herum spielen. Dort schiebt der ganze Block zum Ball, einer läuft an, die anderen lauern auf den Pass nach innen. Wer ihn abfängt, schaut sofort nach vorn zu den Spitzen.",
+   "board": {
+    "players": [
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 50,
+      "y": 54.5,
+      "label": "TW"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 26,
+      "y": 48.5,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 41.5,
+      "y": 48.5,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 58.5,
+      "y": 48.5,
+      "label": "5"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 74,
+      "y": 48.5,
+      "label": "2"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 23.5,
+      "y": 33,
+      "label": "7"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 41,
+      "y": 33,
+      "label": "6"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 59,
+      "y": 33,
+      "label": "8"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 76.5,
+      "y": 33,
+      "label": "11"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 41,
+      "y": 17.5,
+      "label": "9"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 59,
+      "y": 17.5,
+      "label": "10"
+     },
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 50,
+      "y": 7,
+      "label": "TW"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 15,
+      "y": 19,
+      "label": "13"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 32.5,
+      "y": 11,
+      "label": "14"
+     },
+     {
+      "id": "r15",
+      "team": "b",
+      "x": 67.5,
+      "y": 11,
+      "label": "15"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 85,
+      "y": 19,
+      "label": "12"
+     },
+     {
+      "id": "r18",
+      "team": "b",
+      "x": 32,
+      "y": 27,
+      "label": "18"
+     },
+     {
+      "id": "r16",
+      "team": "b",
+      "x": 50,
+      "y": 23,
+      "label": "16"
+     },
+     {
+      "id": "r20",
+      "team": "b",
+      "x": 68,
+      "y": 27,
+      "label": "20"
+     },
+     {
+      "id": "r21",
+      "team": "b",
+      "x": 15,
+      "y": 42,
+      "label": "21"
+     },
+     {
+      "id": "r19",
+      "team": "b",
+      "x": 50,
+      "y": 39,
+      "label": "19"
+     },
+     {
+      "id": "r17",
+      "team": "b",
+      "x": 85,
+      "y": 42,
+      "label": "17"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 5,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 23.6
+     },
+     {
+      "id": "s1",
+      "x": 8.6,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 5,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Die Mitte ist zu",
+      "say": "Spieler sechzehn hat den Ball im Zentrum. Unsere Mittelfeldkette zieht sich eng zusammen. Durch die Mitte geht nichts, also spielt er raus auf Spieler dreizehn.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         44.5,
+         32
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n8",
+        "to": [
+         55.5,
+         32
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n7",
+        "to": [
+         30,
+         33
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n11",
+        "to": [
+         70,
+         33
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         15.6,
+         19.6
+        ],
+        "type": "pass",
+        "delay": 0.8
+       }
+      ]
+     },
+     {
+      "label": "Außen anlaufen, alle schieben",
+      "say": "Spieler sieben läuft Spieler dreizehn an und macht die Linie zu. Der ganze Block schiebt mit nach links. Spieler sechs stellt sich in den Weg nach innen.",
+      "moves": [
+       {
+        "who": "r13",
+        "to": [
+         15,
+         24.5
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n7",
+        "to": [
+         20.5,
+         29.5
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n6",
+        "to": [
+         26,
+         32.5
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n8",
+        "to": [
+         42,
+         32
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n11",
+        "to": [
+         58,
+         33
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n3",
+        "to": [
+         21,
+         48.5
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "n4",
+        "to": [
+         36.5,
+         48.5
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "n5",
+        "to": [
+         53.5,
+         48.5
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "n2",
+        "to": [
+         69,
+         48.5
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       }
+      ]
+     },
+     {
+      "label": "Pass nach innen abgefangen",
+      "say": "Spieler dreizehn bleibt nur der Pass nach innen auf Spieler achtzehn. Darauf hat Spieler sechs gewartet. Er geht dazwischen, hat den Ball, und der Konter kann starten.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         25.1,
+         26.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n6",
+        "to": [
+         24.5,
+         26
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 12,
+      "y1": 58.6,
+      "x2": 88,
+      "y2": 58.6,
+      "text": "65 m"
+     },
+     {
+      "x1": 97.5,
+      "y1": 4,
+      "x2": 97.5,
+      "y2": 56,
+      "text": "100 m"
+     }
+    ]
+   }
+  }
+ ]
+}
