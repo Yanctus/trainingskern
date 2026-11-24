@@ -94,6 +94,10 @@ hinführen. Muster des Nutzers:
    Satz zum Antworten, unten „trainingskern.de · Link in Bio“.
 3. **Jetzt neu:** Bild aus der Übung (späterer Schritt), darunter Neon-Fläche „JETZT NEU“ und „Ganzes Reel auf dem Profil.“
 
+**Marketing-Videos (die Trainingskern selbst bewerben) bekommen andere drei Bilder** (`"art": "marketing"` im Block `"storys"`), gleicher Stil:
+1. „KENNST DU DAS?“ mit dem Problem, 2. „FRAGE AN DICH“, 3. „DIE LÖSUNG“ mit „HEUTE 18:30 · So geht’s: neues Reel auf dem Profil.“
+Die Storys machen auf das Problem aufmerksam, das Reel am Abend zeigt die Lösung.
+
 **Gehört zu jedem Video dazu, ohne dass der Nutzer danach fragt:** In die Story-Datei kommt der Block `"storys"` (Name, Uhrzeit, zwei
 Zeitpunkte im Video, Frage in zwei Zeilen, ein Satz zum Antworten), nach dem Rendern läuft `node storys.mjs stories/<name>.json`.
 Das erzeugt `out/<name>-story-1.jpg` bis `-3.jpg`. Ein Übersichtsbild der drei ansehen, dann mit dem Video in denselben Drive-Ordner laden.

@@ -2,7 +2,8 @@
 // Die drei Story-Bilder zum Reel des Tages (1080 × 1920): Ankündigung, Frage, "Jetzt neu".
 //   node storys.mjs stories/<name>.json
 // Braucht das fertig gerenderte Video in out/ und in der Story-Datei den Block "storys":
-//   { "name": "Name der Übung", "zeit": "18:30", "bilder": [16, 36], "frage": ["Wie startet", "dein Training?"], "antwort": "Ein Satz zum Antworten." }
+//   Marketing-Videos: { "art": "marketing", "zeit": "18:30", "bilder": [5, 5], "problem": [2 Zeilen], "problemSatz", "frage": [2 Zeilen], "antwort", "loesung": [2 Zeilen], "loesungSatz" }
+//   Übungs-Videos: { "name": "Name der Übung", "zeit": "18:30", "bilder": [16, 36], "frage": ["Wie startet", "dein Training?"], "antwort": "Ein Satz zum Antworten." }
 // "bilder": zwei Zeitpunkte im Video (Sekunden) für Bild 1 und Bild 3. Ergebnis: out/<name>-story-1.jpg bis -3.jpg
 import { createRequire } from "node:module";
 import { execFileSync } from "node:child_process";
@@ -33,9 +34,17 @@ h1{position:absolute;left:72px;top:590px;font-family:Archivo,sans-serif;font-wei
 .fuss{position:absolute;left:72px;top:1562px;font-weight:600;font-size:40px;color:#8d8a80}`;
 const seite = (inhalt) => `<!doctype html><meta charset="utf-8"><style>${css}</style><body>${inhalt}</body>`;
 const mitBild = (url, box, zeile) => seite(`<div class="bg" style="background-image:url('${url}')"></div><div class="band"></div><div class="box">${esc(box)}</div><p class="zeile">${esc(zeile)}</p>`);
-const seiten = [
+const textSeite = (tag, zeilen, sub, unten) => seite(`<div class="marke" style="background-image:url('${b1}')"></div><div class="tag">${esc(tag)}</div><h1>${zeilen.map((z) => `<span>${esc(z)}</span>`).join("")}</h1><i class="strich"></i><p class="sub">${esc(sub)}</p>${unten}`);
+const fuss = `<p class="fuss">trainingskern.de &nbsp;·&nbsp; Link in Bio</p>`;
+// "art": "marketing" (Videos, die Trainingskern selbst bewerben): erst das Problem, dann die Frage, dann die Lösung für den Abend.
+// Sonst (Übungs-Videos): Ankündigung mit Bild aus der Übung, Frage, "Jetzt neu".
+const seiten = st.art === "marketing" ? [
+  textSeite("Kennst du das?", st.problem, st.problemSatz, fuss),
+  textSeite("Frage an dich", st.frage, st.antwort, fuss),
+  textSeite("Die Lösung", st.loesung, st.loesungSatz, `<div class="box">Heute ${esc(st.zeit || "18:30")}</div><p class="zeile">So geht’s: neues Reel auf dem Profil.</p>`),
+] : [
   mitBild(b1, `Heute ${st.zeit || "18:30"}`, `Neues Reel: ${st.name}`),
-  seite(`<div class="marke" style="background-image:url('${b1}')"></div><div class="tag">Frage an dich</div><h1>${st.frage.map((z) => `<span>${esc(z)}</span>`).join("")}</h1><i class="strich"></i><p class="sub">${esc(st.antwort)}</p><p class="fuss">trainingskern.de &nbsp;·&nbsp; Link in Bio</p>`),
+  textSeite("Frage an dich", st.frage, st.antwort, fuss),
   mitBild(b3, "Jetzt neu", "Ganzes Reel auf dem Profil."),
 ];
 const browser = await chromium.launch(), page = await (await browser.newContext({ viewport: { width: 1080, height: 1920 }, deviceScaleFactor: 1 })).newPage();

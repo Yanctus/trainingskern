@@ -83,16 +83,26 @@
     }
   ],
   "storys": {
-    "name": "Was Trainingskern alles kann",
+    "art": "marketing",
     "zeit": "18:30",
     "bilder": [
       7.5,
       13
     ],
+    "problem": [
+      "Für jedes Thema",
+      "woanders suchen?"
+    ],
+    "problemSatz": "Torwart hier, Athletik da, Spielformen irgendwo. Und am Ende fehlt doch die passende Übung.",
     "frage": [
       "Was fehlt in",
       "deinem Training?"
     ],
-    "antwort": "Torwart, Athletik oder Spielformen? Antworte per Nachricht."
+    "antwort": "Torwart, Athletik oder Spielformen? Antworte per Nachricht.",
+    "loesung": [
+      "Ein Ort",
+      "für alles."
+    ],
+    "loesungSatz": "Torwart, Athletik, Taktik: jede Übung animiert, mit Coaching-Punkten und Steigerungen."
   }
 }
