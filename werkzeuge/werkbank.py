@@ -154,6 +154,10 @@ def svg(board, titel):
                 o.append(f'<path d="M{q0[0]:.1f},{q0[1]:.1f} A{R},{R} 0 0 {1 if s > 0 else 0} {q1[0]:.1f},{q1[1]:.1f}" fill="none" stroke="#d4ff00" stroke-width="6"/>'
                          f'<circle cx="{q1[0]:.1f}" cy="{q1[1]:.1f}" r="8" fill="#d4ff00"/>')
                 continue
+            if m.get("type") == "option":
+                # Anspielstation: dünne gestrichelte Linie, niemand bewegt sich
+                o.append(f'<path d="M{f[0]*10},{f[1]*10} L{t[0]*10},{t[1]*10}" fill="none" stroke="#d4ff00" stroke-width="2.5" stroke-dasharray="6 6" opacity=".8"/>')
+                continue
             if m.get("type") == "blick":
                 # Schulterblick: halbtransparenter Kegel, der Spieler bleibt stehen
                 import math

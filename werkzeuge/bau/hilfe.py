@@ -26,6 +26,9 @@ def bl(who, to, weite=None, dauer=None, von=None, **k):
     if weite: m["weite"] = weite
     if dauer: m["dauer"] = dauer
     return m
+# Anspielstation: dünner Pfeil vom Ballführer who zu einem möglichen Passziel to (z. B. einem Mitspieler). Bewegt niemanden.
+# Für Taktik-Erklärungen: zeigt, dass es immer mehrere Möglichkeiten gibt, bevor der eigentliche Pass kommt.
+def opt(who, to, **k): return mv(who, to, "option", **k)
 def S(label, say, *moves): return {"label": label, "say": say, "moves": list(moves)}
 def V(label, say, title, text, players, balls, steps, **extra):
     b = {"players": players, "balls": balls, "steps": steps}

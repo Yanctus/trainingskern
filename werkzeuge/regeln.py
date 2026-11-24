@@ -8,7 +8,7 @@ KINDS = {"Übungsform", "Spielform", "Taktik"}  # Taktik = Erklärung eines Spie
 FOCUSES = {"Dribbling", "Passspiel", "Ballannahme", "Torschuss", "1 gegen 1", "Zusammenspiel", "Umschalten", "Verteidigen",
            "Koordination", "Bewegung", "Schnelligkeit", "Kondition", "Erwärmung"}
 AGES = {"Bambini", "F-Jugend", "E-Jugend", "D-Jugend", "C-Jugend", "B-Jugend", "A-Jugend", "Amateure"}
-MOVES = {"pass", "lauf", "dribbling", "blick", "dreh"}  # blick = Schulterblick (Kegel, bewegt niemanden)
+MOVES = {"pass", "lauf", "dribbling", "blick", "dreh", "option"}  # option = Anspielstation (dünner Pfeil, bewegt niemanden)  # blick = Schulterblick (Kegel, bewegt niemanden)
 SAY_START = re.compile(r"^(Kapitel (zwei|drei|vier):|Jetzt zum Coaching-Punkt|Der zweite Coaching-Punkt|Der dritte Coaching-Punkt|Und jetzt die (zweite |dritte )?Steigerung|Und jetzt das Umschalten)")
 
 
@@ -112,7 +112,7 @@ def board_regeln(b, name, fassung):
         for m in st.get("moves") or []:
             f = m["from"] if m.get("from") and len(m["from"]) == 2 else pos.get(m.get("who"))
             t = m.get("to")
-            if f and t and m.get("type") not in ("blick", "dreh"):  # ein Blick ist kein Weg, der Spieler bleibt stehen
+            if f and t and m.get("type") not in ("blick", "dreh", "option"):  # ein Blick ist kein Weg, der Spieler bleibt stehen
                 paths.append((m.get("who"), lp.pts_of(f, t, m.get("bend") or 0, 40)))
                 pos[m["who"]] = t
     for lb in b.get("labels") or []:
