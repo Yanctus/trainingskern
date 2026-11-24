@@ -1,0 +1,3590 @@
+{
+ "title": "Aufbau im 4-2-3-1",
+ "code": "TA-002",
+ "kind": "Taktik",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel"
+ ],
+ "age_groups": [
+  "D-Jugend",
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U12-U14",
+  "U15-U17"
+ ],
+ "duration_minutes": 5,
+ "players_min": 22,
+ "players_max": 22,
+ "field_size": "65 x 100 m",
+ "description": "Wie baut eine Mannschaft im 4-2-3-1 von hinten auf? Zuerst siehst du die Grundordnung mit der Doppelsechs, dem Zehner zwischen den Linien und den hohen Außenverteidigern, und wie alle mit jedem Pass verschieben. Dann presst ein Gegner im 4-4-2, und die Doppelsechs spielt sich im Rücken der Stürmer frei. Zum Schluss zwei Muster: Verlagern über die Doppelsechs und der Zehner zwischen den Linien, wenn der Flügel nach innen zieht und der Außenverteidiger überläuft.",
+ "organisation": [
+  "Grundordnung: Torwart, Viererkette, Doppelsechs, davor zwei Flügelspieler und der Zehner, vorn ein Stürmer.",
+  "Hinten: Beim Aufbau gehen die Innenverteidiger breit bis an die Ecken vom Strafraum, die Außenverteidiger schieben hoch an die Linie.",
+  "Mittelfeld: Die Doppelsechs steht versetzt im Rücken der gegnerischen Stürmer, der Zehner sucht die Lücke zwischen Mittelfeld und Abwehr.",
+  "Bewegung: Mit jedem Pass schiebt die ganze Mannschaft zum Ball. Einer kommt, einer geht: Zieht der Flügel nach innen, geht der Außenverteidiger die Linie hoch."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Sechser versetzt, nie auf einer Linie",
+  "Zehner, such die Lücke zwischen den Linien",
+  "Einer kommt, einer geht",
+  "Eine Seite zu? Über die Doppelsechs verlagern"
+ ],
+ "materials": [
+  "Großfeld mit zwei Toren",
+  "Leibchen in zwei Farben",
+  "Bälle"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Aufbau im Vier-zwei-drei-eins. Heute schauen wir uns das System an. Was macht die Doppelsechs? Wo steht der Zehner? Und wie kommen wir gegen ein Pressing nach vorn? Schauen wir's uns an.",
+ "board": {
+  "massstab": "gross",
+  "lines": [
+   {
+    "type": "rect",
+    "x": 7,
+    "y": 3,
+    "w": 84,
+    "h": 49
+   },
+   {
+    "type": "line",
+    "x1": 49.0,
+    "y1": 3,
+    "x2": 49.0,
+    "y2": 52,
+    "dashed": false
+   },
+   {
+    "type": "circle",
+    "x": 49.0,
+    "y": 27.5,
+    "r": 6.5
+   },
+   {
+    "type": "rect",
+    "x": 7,
+    "y": 12.0,
+    "w": 14,
+    "h": 31
+   },
+   {
+    "type": "rect",
+    "x": 77,
+    "y": 12.0,
+    "w": 14,
+    "h": 31
+   },
+   {
+    "type": "rect",
+    "x": 7,
+    "y": 20.5,
+    "w": 4.6,
+    "h": 14
+   },
+   {
+    "type": "rect",
+    "x": 86.4,
+    "y": 20.5,
+    "w": 4.6,
+    "h": 14
+   }
+  ],
+  "goals": [
+   {
+    "x": 7,
+    "y": 27.5,
+    "side": "left",
+    "size": "gross"
+   },
+   {
+    "x": 91,
+    "y": 27.5,
+    "side": "right",
+    "size": "gross"
+   }
+  ],
+  "cones": [],
+  "players": [
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 10.5,
+    "y": 27.5,
+    "label": "TW"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 24,
+    "y": 20,
+    "label": "5"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 24,
+    "y": 35,
+    "label": "4"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 30,
+    "y": 8,
+    "label": "3"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 30,
+    "y": 47,
+    "label": "2"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 36,
+    "y": 21.5,
+    "label": "6"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 36,
+    "y": 33.5,
+    "label": "8"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 54,
+    "y": 8,
+    "label": "11"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 52,
+    "y": 27.5,
+    "label": "10"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 54,
+    "y": 47,
+    "label": "7"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 64,
+    "y": 27.5,
+    "label": "9"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 16,
+    "y": 55.3,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 16.6,
+    "y": 55.9
+   },
+   {
+    "id": "s1",
+    "x": 19.5,
+    "y": 55.8
+   },
+   {
+    "id": "s2",
+    "x": 22,
+    "y": 55.8
+   }
+  ],
+  "dims": [
+   {
+    "x1": 7,
+    "y1": 58.6,
+    "x2": 91,
+    "y2": 58.6,
+    "text": "100 m"
+   }
+  ],
+  "steps": [
+   {
+    "label": "Wer steht wo im 4-2-3-1",
+    "say": "Der Trainer spielt den Ball zum Torwart. Wir stehen im Vier-zwei-drei-eins. Hinten die Viererkette. Davor zwei Sechser nebeneinander, das ist die Doppelsechs. Davor drei Spieler: außen die beiden Flügel, in der Mitte der Zehner. Und ganz vorn ein Stürmer.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       11.1,
+       28.1
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Breit und tief",
+    "say": "Hat der Torwart den Ball, machen wir das Feld groß. Die Innenverteidiger gehen raus bis an die Ecken vom Strafraum. Die Außenverteidiger schieben hoch an die Linie. Die Doppelsechs steht versetzt: einer etwas tiefer, einer etwas höher. Und der Zehner geht in den Raum hinter dem gegnerischen Mittelfeld.",
+    "moves": [
+     {
+      "who": "n5",
+      "to": [
+       19,
+       13.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n4",
+      "to": [
+       19,
+       41.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n3",
+      "to": [
+       40,
+       5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n2",
+      "to": [
+       40,
+       50
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n6",
+      "to": [
+       30,
+       24
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n8",
+      "to": [
+       38,
+       32
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n10",
+      "to": [
+       57,
+       27.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n11",
+      "to": [
+       66,
+       6
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n7",
+      "to": [
+       66,
+       49
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n9",
+      "to": [
+       73,
+       27.5
+      ],
+      "type": "lauf"
+     }
+    ]
+   },
+   {
+    "label": "Der Torwart wählt",
+    "say": "Schau auf den Torwart. Er kann zu beiden Innenverteidigern spielen oder zum tieferen Sechser. Er nimmt den rechten Innenverteidiger. Und mit dem Ball rutscht die ganze Mannschaft ein Stück rüber, auch die auf der anderen Seite.",
+    "moves": [
+     {
+      "who": "k1",
+      "to": [
+       19,
+       13.5
+      ],
+      "type": "option"
+     },
+     {
+      "who": "k1",
+      "to": [
+       30,
+       24
+      ],
+      "type": "option",
+      "after": true
+     },
+     {
+      "who": "k1",
+      "to": [
+       19,
+       41.5
+      ],
+      "type": "option",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       19.6,
+       42.1
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n5",
+      "to": [
+       22,
+       19
+      ],
+      "type": "lauf",
+      "delay": 2.0
+     },
+     {
+      "who": "n6",
+      "to": [
+       31,
+       28
+      ],
+      "type": "lauf",
+      "delay": 2.0
+     },
+     {
+      "who": "n8",
+      "to": [
+       38,
+       37
+      ],
+      "type": "lauf",
+      "delay": 2.0
+     },
+     {
+      "who": "n2",
+      "to": [
+       44,
+       50
+      ],
+      "type": "lauf",
+      "delay": 2.0
+     },
+     {
+      "who": "n3",
+      "to": [
+       40,
+       10
+      ],
+      "type": "lauf",
+      "delay": 2.0
+     },
+     {
+      "who": "n10",
+      "to": [
+       57,
+       31
+      ],
+      "type": "lauf",
+      "delay": 2.0
+     },
+     {
+      "who": "n11",
+      "to": [
+       64,
+       11
+      ],
+      "type": "lauf",
+      "delay": 2.0
+     },
+     {
+      "who": "n9",
+      "to": [
+       73,
+       31
+      ],
+      "type": "lauf",
+      "delay": 2.0
+     },
+     {
+      "who": "n7",
+      "to": [
+       66,
+       48
+      ],
+      "type": "lauf",
+      "delay": 2.0
+     }
+    ]
+   },
+   {
+    "label": "Einer kommt, einer geht",
+    "say": "Der Innenverteidiger hat drei Möglichkeiten. Außen, schräg den höheren Sechser oder quer den anderen. Er spielt den Sechser, der offen steht. Und jetzt pass auf: Einer kommt, einer geht. Der rechte Flügel kommt nach innen in die Lücke. Dafür geht der Außenverteidiger die Linie hoch. Der zweite Sechser bleibt hinten und sichert ab.",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       44,
+       50
+      ],
+      "type": "option"
+     },
+     {
+      "who": "n4",
+      "to": [
+       38,
+       37
+      ],
+      "type": "option",
+      "after": true
+     },
+     {
+      "who": "n4",
+      "to": [
+       31,
+       28
+      ],
+      "type": "option",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       38.6,
+       37.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       61,
+       40
+      ],
+      "type": "lauf",
+      "delay": 2.0
+     },
+     {
+      "who": "n2",
+      "to": [
+       52,
+       50
+      ],
+      "type": "lauf",
+      "delay": 2.0
+     },
+     {
+      "who": "n6",
+      "to": [
+       33,
+       31
+      ],
+      "type": "lauf",
+      "delay": 2.0
+     },
+     {
+      "who": "n10",
+      "to": [
+       58,
+       29
+      ],
+      "type": "lauf",
+      "delay": 2.0
+     },
+     {
+      "who": "n9",
+      "to": [
+       74,
+       29
+      ],
+      "type": "lauf",
+      "delay": 2.0
+     },
+     {
+      "who": "n4",
+      "to": [
+       22,
+       44
+      ],
+      "type": "lauf",
+      "delay": 2.0
+     },
+     {
+      "who": "n5",
+      "to": [
+       23,
+       23
+      ],
+      "type": "lauf",
+      "delay": 2.0
+     }
+    ]
+   },
+   {
+    "label": "Der Zehner zwischen den Linien",
+    "say": "Erst nach der Annahme dreht der Sechser auf. Jetzt hat er den Zehner, den Flügel oder den Außenverteidiger. Der Zehner steht in der Mitte, genau zwischen den Linien. Also kriegt er den Ball. Der Stürmer geht dafür weg in die Tiefe und macht ihm Platz.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       58,
+       29
+      ],
+      "type": "blick",
+      "von": [
+       22.6,
+       44.6
+      ],
+      "dauer": 1.3
+     },
+     {
+      "who": "n8",
+      "to": [
+       58,
+       29
+      ],
+      "type": "dreh",
+      "delay": 0.4,
+      "bend": -1
+     },
+     {
+      "who": "n8",
+      "to": [
+       58,
+       29
+      ],
+      "type": "option",
+      "delay": 1.5
+     },
+     {
+      "who": "n8",
+      "to": [
+       61,
+       40
+      ],
+      "type": "option",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       52,
+       50
+      ],
+      "type": "option",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       58.6,
+       29.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n9",
+      "to": [
+       78,
+       33
+      ],
+      "type": "lauf",
+      "delay": 3.0
+     },
+     {
+      "who": "n11",
+      "to": [
+       70,
+       16
+      ],
+      "type": "lauf",
+      "delay": 3.0
+     },
+     {
+      "who": "n7",
+      "to": [
+       66,
+       40
+      ],
+      "type": "lauf",
+      "delay": 3.0
+     },
+     {
+      "who": "n2",
+      "to": [
+       58,
+       50
+      ],
+      "type": "lauf",
+      "delay": 3.0
+     },
+     {
+      "who": "n8",
+      "to": [
+       42,
+       36
+      ],
+      "type": "lauf",
+      "delay": 3.0
+     },
+     {
+      "who": "n6",
+      "to": [
+       36,
+       30
+      ],
+      "type": "lauf",
+      "delay": 3.0
+     }
+    ]
+   },
+   {
+    "label": "Steil auf den Flügel",
+    "say": "Der Zehner dreht auf und hat wieder drei: den Stürmer, den linken Flügel und den rechten. Der linke Flügel startet in die Tiefe, also kommt der Ball genau in seinen Lauf. Die anderen gehen mit in den Strafraum. Und die Doppelsechs rückt nach, bleibt aber hinter dem Ball.",
+    "moves": [
+     {
+      "who": "n10",
+      "to": [
+       70,
+       16
+      ],
+      "type": "dreh",
+      "bend": -1
+     },
+     {
+      "who": "n10",
+      "to": [
+       78,
+       33
+      ],
+      "type": "option",
+      "delay": 0.8
+     },
+     {
+      "who": "n10",
+      "to": [
+       70,
+       16
+      ],
+      "type": "option",
+      "after": true
+     },
+     {
+      "who": "n10",
+      "to": [
+       66,
+       40
+      ],
+      "type": "option",
+      "after": true
+     },
+     {
+      "who": "n11",
+      "to": [
+       82,
+       14
+      ],
+      "type": "lauf",
+      "delay": 2.2
+     },
+     {
+      "who": "b1",
+      "to": [
+       82.6,
+       14.6
+      ],
+      "type": "pass",
+      "delay": 2.2
+     },
+     {
+      "who": "n9",
+      "to": [
+       82,
+       30
+      ],
+      "type": "lauf",
+      "delay": 2.4
+     },
+     {
+      "who": "n7",
+      "to": [
+       76,
+       40
+      ],
+      "type": "lauf",
+      "delay": 2.4
+     },
+     {
+      "who": "n10",
+      "to": [
+       66,
+       28
+      ],
+      "type": "lauf",
+      "delay": 2.4
+     },
+     {
+      "who": "n2",
+      "to": [
+       64,
+       49
+      ],
+      "type": "lauf",
+      "delay": 2.4
+     },
+     {
+      "who": "n8",
+      "to": [
+       48,
+       34
+      ],
+      "type": "lauf",
+      "delay": 2.4
+     },
+     {
+      "who": "n6",
+      "to": [
+       42,
+       27
+      ],
+      "type": "lauf",
+      "delay": 2.4
+     }
+    ]
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Kapitel 2",
+   "say": "Kapitel zwei: Gegen zwei Stürmer.",
+   "title": "Gegen zwei Stürmer",
+   "text": "Der Gegner presst im 4-4-2 und lenkt uns mit den Stürmern nach außen. Die Doppelsechs bleibt im Rücken der Stürmer, der ballferne Sechser kommt zwischen die beiden. Wir spielen gegen die Verschieberichtung auf den anderen Innenverteidiger und dann flach auf den eingerückten Flügel. Der lässt klatschen, und der Außenverteidiger geht die Linie hoch.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 10.5,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 19,
+      "y": 13.5,
+      "label": "5"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 19,
+      "y": 41.5,
+      "label": "4"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 38,
+      "y": 5,
+      "label": "3"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 38,
+      "y": 50,
+      "label": "2"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 30,
+      "y": 22,
+      "label": "6"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 36,
+      "y": 34,
+      "label": "8"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 62,
+      "y": 27.5,
+      "label": "10"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 66,
+      "y": 6,
+      "label": "11"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 66,
+      "y": 49,
+      "label": "7"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 72,
+      "y": 27.5,
+      "label": "9"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 88,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 80,
+      "y": 9,
+      "label": "13"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 80,
+      "y": 21,
+      "label": "14"
+     },
+     {
+      "id": "r15",
+      "team": "b",
+      "x": 80,
+      "y": 34,
+      "label": "15"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 80,
+      "y": 46,
+      "label": "12"
+     },
+     {
+      "id": "r16",
+      "team": "b",
+      "x": 56,
+      "y": 8,
+      "label": "16"
+     },
+     {
+      "id": "r17",
+      "team": "b",
+      "x": 52,
+      "y": 20,
+      "label": "17"
+     },
+     {
+      "id": "r18",
+      "team": "b",
+      "x": 52,
+      "y": 35,
+      "label": "18"
+     },
+     {
+      "id": "r21",
+      "team": "b",
+      "x": 56,
+      "y": 47,
+      "label": "21"
+     },
+     {
+      "id": "r19",
+      "team": "b",
+      "x": 44,
+      "y": 17,
+      "label": "19"
+     },
+     {
+      "id": "r20",
+      "team": "b",
+      "x": 44,
+      "y": 38,
+      "label": "20"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 16,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 11.1,
+      "y": 28.1
+     },
+     {
+      "id": "s1",
+      "x": 19.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 22,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Der Gegner presst",
+      "say": "Jetzt wird's ernst. Der Gegner presst im Vier-vier-zwei. Zwei Stürmer laufen an, dahinter steht eine Viererreihe im Mittelfeld. Unsere Innenverteidiger gehen ganz breit. Und die Doppelsechs bleibt im Rücken der Stürmer. Denn kriegt da ein Sechser den Ball, sind beide Stürmer schon überspielt.",
+      "moves": [
+       {
+        "who": "r19",
+        "to": [
+         27,
+         16
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r20",
+        "to": [
+         27,
+         37
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r16",
+        "to": [
+         47,
+         8
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r17",
+        "to": [
+         45,
+         20
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r18",
+        "to": [
+         45,
+         34
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r21",
+        "to": [
+         47,
+         46
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r13",
+        "to": [
+         70,
+         9
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r14",
+        "to": [
+         68,
+         21
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r15",
+        "to": [
+         68,
+         33
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r12",
+        "to": [
+         70,
+         45
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n5",
+        "to": [
+         16,
+         10
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n4",
+        "to": [
+         16,
+         45
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n3",
+        "to": [
+         44,
+         5
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n2",
+        "to": [
+         44,
+         50
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n6",
+        "to": [
+         35,
+         21
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n8",
+        "to": [
+         37,
+         32
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n10",
+        "to": [
+         57,
+         27.5
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n9",
+        "to": [
+         66,
+         27.5
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Der Gegner lenkt nach außen",
+      "say": "Der Torwart hat drei Möglichkeiten und spielt nach links. Sofort läuft der Stürmer an, und zwar von innen. So macht er den Weg in die Mitte zu und will uns nach außen schicken. Die ganze Mannschaft vom Gegner schiebt mit.",
+      "moves": [
+       {
+        "who": "k1",
+        "to": [
+         16,
+         10
+        ],
+        "type": "option"
+       },
+       {
+        "who": "k1",
+        "to": [
+         35,
+         21
+        ],
+        "type": "option",
+        "after": true
+       },
+       {
+        "who": "k1",
+        "to": [
+         16,
+         45
+        ],
+        "type": "option",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         16.6,
+         10.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "r19",
+        "to": [
+         23,
+         15
+        ],
+        "type": "lauf",
+        "delay": 2.0
+       },
+       {
+        "who": "r20",
+        "to": [
+         24,
+         30
+        ],
+        "type": "lauf",
+        "delay": 2.0
+       },
+       {
+        "who": "r16",
+        "to": [
+         44,
+         9
+        ],
+        "type": "lauf",
+        "delay": 2.0
+       },
+       {
+        "who": "r17",
+        "to": [
+         43,
+         17
+        ],
+        "type": "lauf",
+        "delay": 2.0
+       },
+       {
+        "who": "r18",
+        "to": [
+         44,
+         29
+        ],
+        "type": "lauf",
+        "delay": 2.0
+       },
+       {
+        "who": "r21",
+        "to": [
+         48,
+         40
+        ],
+        "type": "lauf",
+        "delay": 2.0
+       },
+       {
+        "who": "r13",
+        "to": [
+         70,
+         7
+        ],
+        "type": "lauf",
+        "delay": 2.0
+       },
+       {
+        "who": "r14",
+        "to": [
+         68,
+         18
+        ],
+        "type": "lauf",
+        "delay": 2.0
+       },
+       {
+        "who": "r15",
+        "to": [
+         68,
+         29
+        ],
+        "type": "lauf",
+        "delay": 2.0
+       },
+       {
+        "who": "r12",
+        "to": [
+         70,
+         40
+        ],
+        "type": "lauf",
+        "delay": 2.0
+       },
+       {
+        "who": "n6",
+        "to": [
+         34,
+         17
+        ],
+        "type": "lauf",
+        "delay": 2.2
+       },
+       {
+        "who": "n8",
+        "to": [
+         37,
+         29
+        ],
+        "type": "lauf",
+        "delay": 2.2
+       },
+       {
+        "who": "n10",
+        "to": [
+         57,
+         24
+        ],
+        "type": "lauf",
+        "delay": 2.2
+       },
+       {
+        "who": "n9",
+        "to": [
+         66,
+         24
+        ],
+        "type": "lauf",
+        "delay": 2.2
+       },
+       {
+        "who": "n7",
+        "to": [
+         64,
+         46
+        ],
+        "type": "lauf",
+        "delay": 2.2
+       },
+       {
+        "who": "n2",
+        "to": [
+         44,
+         48
+        ],
+        "type": "lauf",
+        "delay": 2.2
+       },
+       {
+        "who": "n4",
+        "to": [
+         17,
+         42
+        ],
+        "type": "lauf",
+        "delay": 2.2
+       }
+      ]
+     },
+     {
+      "label": "Einer kommt, einer geht",
+      "say": "Innen steht der Stürmer im Weg, außen lauert schon der Gegner auf unseren Außenverteidiger. Frei ist nur der Weg zurück zum Torwart. Und jetzt pass auf: Einer kommt, einer geht. Der rechte Sechser kommt zwischen die beiden Stürmer. Der linke geht im selben Moment nach vorn und nimmt seinen Gegenspieler mit.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         44,
+         5
+        ],
+        "type": "option"
+       },
+       {
+        "who": "n5",
+        "to": [
+         34,
+         17
+        ],
+        "type": "option",
+        "after": true
+       },
+       {
+        "who": "n5",
+        "to": [
+         10.5,
+         27.5
+        ],
+        "type": "option",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         11.1,
+         28.1
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n8",
+        "to": [
+         32,
+         24
+        ],
+        "type": "lauf",
+        "delay": 1.8
+       },
+       {
+        "who": "n6",
+        "to": [
+         40,
+         21
+        ],
+        "type": "lauf",
+        "delay": 1.8
+       },
+       {
+        "who": "r19",
+        "to": [
+         20,
+         20
+        ],
+        "type": "lauf",
+        "delay": 2.0
+       },
+       {
+        "who": "r17",
+        "to": [
+         46,
+         19
+        ],
+        "type": "lauf",
+        "delay": 2.0
+       }
+      ]
+     },
+     {
+      "label": "Gegen die Verschieberichtung",
+      "say": "Der Torwart spielt den Sechser zwischen den Stürmern an. Damit sind beide überspielt. Der Gegner hat alles auf unsere linke Seite geschoben. Also spielt der Sechser genau dagegen, rüber zum rechten Innenverteidiger. Der läuft schon in den Ball. Und der Gegner muss wieder quer rüber.",
+      "moves": [
+       {
+        "who": "k1",
+        "to": [
+         32,
+         24
+        ],
+        "type": "option"
+       },
+       {
+        "who": "k1",
+        "to": [
+         17,
+         42
+        ],
+        "type": "option",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         32.6,
+         24.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "r18",
+        "to": [
+         42,
+         28
+        ],
+        "type": "lauf",
+        "delay": 1.6
+       },
+       {
+        "who": "r20",
+        "to": [
+         25,
+         31
+        ],
+        "type": "lauf",
+        "delay": 1.6
+       },
+       {
+        "who": "n4",
+        "to": [
+         30,
+         44
+        ],
+        "type": "lauf",
+        "delay": 1.6
+       },
+       {
+        "who": "n8",
+        "to": [
+         30,
+         44
+        ],
+        "type": "blick",
+        "delay": 2.6,
+        "von": [
+         11.1,
+         28.1
+        ],
+        "dauer": 1.2
+       },
+       {
+        "who": "b1",
+        "to": [
+         30.6,
+         44.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "r20",
+        "to": [
+         28,
+         37
+        ],
+        "type": "lauf",
+        "delay": 1.8
+       },
+       {
+        "who": "r21",
+        "to": [
+         46,
+         44
+        ],
+        "type": "lauf",
+        "delay": 1.8
+       },
+       {
+        "who": "r18",
+        "to": [
+         45,
+         31
+        ],
+        "type": "lauf",
+        "delay": 1.8
+       },
+       {
+        "who": "r17",
+        "to": [
+         44,
+         21
+        ],
+        "type": "lauf",
+        "delay": 1.8
+       },
+       {
+        "who": "r16",
+        "to": [
+         46,
+         10
+        ],
+        "type": "lauf",
+        "delay": 1.8
+       },
+       {
+        "who": "r19",
+        "to": [
+         24,
+         24
+        ],
+        "type": "lauf",
+        "delay": 1.8
+       },
+       {
+        "who": "r12",
+        "to": [
+         68,
+         44
+        ],
+        "type": "lauf",
+        "delay": 1.8
+       },
+       {
+        "who": "r15",
+        "to": [
+         66,
+         33
+        ],
+        "type": "lauf",
+        "delay": 1.8
+       },
+       {
+        "who": "r14",
+        "to": [
+         66,
+         22
+        ],
+        "type": "lauf",
+        "delay": 1.8
+       },
+       {
+        "who": "r13",
+        "to": [
+         68,
+         11
+        ],
+        "type": "lauf",
+        "delay": 1.8
+       },
+       {
+        "who": "n2",
+        "to": [
+         44,
+         50
+        ],
+        "type": "lauf",
+        "delay": 1.8
+       },
+       {
+        "who": "n7",
+        "to": [
+         55,
+         37
+        ],
+        "type": "lauf",
+        "delay": 1.8
+       },
+       {
+        "who": "n9",
+        "to": [
+         64,
+         28
+        ],
+        "type": "lauf",
+        "delay": 1.8
+       },
+       {
+        "who": "n10",
+        "to": [
+         58,
+         27
+        ],
+        "type": "lauf",
+        "delay": 1.8
+       },
+       {
+        "who": "n6",
+        "to": [
+         40,
+         23
+        ],
+        "type": "lauf",
+        "delay": 1.8
+       },
+       {
+        "who": "n3",
+        "to": [
+         44,
+         7
+        ],
+        "type": "lauf",
+        "delay": 1.8
+       },
+       {
+        "who": "n5",
+        "to": [
+         20,
+         16
+        ],
+        "type": "lauf",
+        "delay": 1.8
+       }
+      ]
+     },
+     {
+      "label": "Pass in die Lücke",
+      "say": "Der Innenverteidiger dribbelt an. Jetzt muss sich der gegnerische Flügel entscheiden. Er geht raus zu unserem Außenverteidiger und macht die Linie zu. Dafür ist innen eine Lücke, und genau da steht unser Flügel, nach innen gerückt. Also kommt der Ball scharf und flach in seinen Fuß.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         36,
+         45
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "r21",
+        "to": [
+         46,
+         47
+        ],
+        "type": "lauf",
+        "delay": 0.8
+       },
+       {
+        "who": "r20",
+        "to": [
+         30,
+         39
+        ],
+        "type": "lauf",
+        "delay": 0.8
+       },
+       {
+        "who": "n4",
+        "to": [
+         44,
+         50
+        ],
+        "type": "option",
+        "delay": 1.8
+       },
+       {
+        "who": "n4",
+        "to": [
+         55,
+         37
+        ],
+        "type": "option",
+        "after": true
+       },
+       {
+        "who": "n4",
+        "to": [
+         64,
+         28
+        ],
+        "type": "option",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         55.6,
+         37.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n8",
+        "to": [
+         40,
+         40
+        ],
+        "type": "lauf",
+        "delay": 3.2
+       },
+       {
+        "who": "r18",
+        "to": [
+         50,
+         32
+        ],
+        "type": "lauf",
+        "delay": 3.2
+       },
+       {
+        "who": "r12",
+        "to": [
+         64,
+         41
+        ],
+        "type": "lauf",
+        "delay": 3.2
+       }
+      ]
+     },
+     {
+      "label": "Klatschen und raus",
+      "say": "Der Flügel lässt direkt klatschen, auf den Sechser, der sich offen hingestellt hat. Das ist der dritte Mann. Einer kommt, einer geht: Der Flügel ist nach innen gekommen, also geht der Außenverteidiger die Linie hoch. Und genau da hin spielt der Sechser. Das Pressing ist überspielt.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         40.6,
+         40.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n2",
+        "to": [
+         50,
+         50
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "r18",
+        "to": [
+         48,
+         35
+        ],
+        "type": "lauf",
+        "delay": 1.2
+       },
+       {
+        "who": "r21",
+        "to": [
+         43,
+         50
+        ],
+        "type": "lauf",
+        "delay": 1.2
+       },
+       {
+        "who": "n8",
+        "to": [
+         50,
+         50
+        ],
+        "type": "option",
+        "delay": 1.6
+       },
+       {
+        "who": "n8",
+        "to": [
+         36,
+         45
+        ],
+        "type": "option",
+        "after": true
+       },
+       {
+        "who": "n2",
+        "to": [
+         64,
+         50
+        ],
+        "type": "lauf",
+        "delay": 2.4
+       },
+       {
+        "who": "b1",
+        "to": [
+         64.6,
+         50.6
+        ],
+        "type": "pass",
+        "delay": 2.4
+       },
+       {
+        "who": "n7",
+        "to": [
+         66,
+         38
+        ],
+        "type": "lauf",
+        "delay": 2.4
+       },
+       {
+        "who": "n9",
+        "to": [
+         70,
+         30
+        ],
+        "type": "lauf",
+        "delay": 2.4
+       },
+       {
+        "who": "r12",
+        "to": [
+         68,
+         46
+        ],
+        "type": "lauf",
+        "delay": 2.4
+       },
+       {
+        "who": "n4",
+        "to": [
+         30,
+         42
+        ],
+        "type": "lauf",
+        "delay": 2.4
+       },
+       {
+        "who": "n3",
+        "to": [
+         46,
+         12
+        ],
+        "type": "lauf",
+        "delay": 2.4
+       },
+       {
+        "who": "n11",
+        "to": [
+         68,
+         12
+        ],
+        "type": "lauf",
+        "delay": 2.4
+       },
+       {
+        "who": "n6",
+        "to": [
+         42,
+         28
+        ],
+        "type": "lauf",
+        "delay": 2.4
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Kapitel 3",
+   "say": "Kapitel drei: Verlagern über die Doppelsechs.",
+   "title": "Über die Doppelsechs",
+   "text": "Der Gegner klemmt unseren Außenverteidiger an der Linie ein. Ein Sechser kommt zur Hilfe, der zweite steht versetzt dahinter und ist frei. Über ihn geht der Ball auf die andere Seite, wo der Außenverteidiger Platz hat. Der Gegner kommt beim Verschieben zu spät.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 10.5,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 20,
+      "y": 14,
+      "label": "5"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 20,
+      "y": 40,
+      "label": "4"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 40,
+      "y": 5,
+      "label": "3"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 40,
+      "y": 50,
+      "label": "2"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 32,
+      "y": 20,
+      "label": "6"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 32,
+      "y": 33,
+      "label": "8"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 58,
+      "y": 27.5,
+      "label": "10"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 66,
+      "y": 6,
+      "label": "11"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 66,
+      "y": 49,
+      "label": "7"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 72,
+      "y": 27.5,
+      "label": "9"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 88,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 80,
+      "y": 9,
+      "label": "13"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 80,
+      "y": 21,
+      "label": "14"
+     },
+     {
+      "id": "r15",
+      "team": "b",
+      "x": 80,
+      "y": 34,
+      "label": "15"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 80,
+      "y": 46,
+      "label": "12"
+     },
+     {
+      "id": "r16",
+      "team": "b",
+      "x": 52,
+      "y": 8,
+      "label": "16"
+     },
+     {
+      "id": "r17",
+      "team": "b",
+      "x": 50,
+      "y": 20,
+      "label": "17"
+     },
+     {
+      "id": "r18",
+      "team": "b",
+      "x": 50,
+      "y": 36,
+      "label": "18"
+     },
+     {
+      "id": "r21",
+      "team": "b",
+      "x": 52,
+      "y": 48,
+      "label": "21"
+     },
+     {
+      "id": "r19",
+      "team": "b",
+      "x": 40,
+      "y": 17,
+      "label": "19"
+     },
+     {
+      "id": "r20",
+      "team": "b",
+      "x": 40,
+      "y": 38,
+      "label": "20"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 16,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 40.6,
+      "y": 5.6
+     },
+     {
+      "id": "s1",
+      "x": 19.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 22,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Eingeklemmt an der Linie",
+      "say": "Neue Situation. Unser linker Außenverteidiger hat den Ball, und der Gegner schiebt mit allen rüber. Die Linie runter ist zu, und den Rückpass zum Innenverteidiger stellt der Stürmer zu. Frei ist nur einer: der Sechser, der zur Hilfe kommt.",
+      "moves": [
+       {
+        "who": "r16",
+        "to": [
+         48,
+         7
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r19",
+        "to": [
+         30,
+         9
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r17",
+        "to": [
+         46,
+         16
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r18",
+        "to": [
+         46,
+         27
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r21",
+        "to": [
+         50,
+         37
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r20",
+        "to": [
+         38,
+         28
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r13",
+        "to": [
+         72,
+         6
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r14",
+        "to": [
+         70,
+         16
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r15",
+        "to": [
+         70,
+         27
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r12",
+        "to": [
+         72,
+         38
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n6",
+        "to": [
+         37,
+         15
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n8",
+        "to": [
+         32,
+         30
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n5",
+        "to": [
+         22,
+         13
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n4",
+        "to": [
+         22,
+         36
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n10",
+        "to": [
+         58,
+         22
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n11",
+        "to": [
+         62,
+         6
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n9",
+        "to": [
+         66,
+         22
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n7",
+        "to": [
+         64,
+         46
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n2",
+        "to": [
+         44,
+         48
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n3",
+        "to": [
+         62,
+         6
+        ],
+        "type": "option",
+        "delay": 1.8
+       },
+       {
+        "who": "n3",
+        "to": [
+         22,
+         13
+        ],
+        "type": "option",
+        "after": true
+       },
+       {
+        "who": "n3",
+        "to": [
+         37,
+         15
+        ],
+        "type": "option",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Zwei Sechser, zwei Stationen",
+      "say": "Er kriegt den Ball, aber mit dem Rücken zum Spiel, und der Gegner ist sofort da. Aufdrehen geht nicht. Brauchst du auch nicht, denn es gibt ja zwei Sechser. Einer kommt, einer geht: Der zweite Sechser kommt schräg hinter ihn, und der Zehner geht weg aus der Mitte, rüber auf die freie Seite. Also kurz zurück auf den zweiten Sechser.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         37.6,
+         15.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r17",
+        "to": [
+         42,
+         17
+        ],
+        "type": "lauf",
+        "delay": 0.9
+       },
+       {
+        "who": "r19",
+        "to": [
+         31,
+         14
+        ],
+        "type": "lauf",
+        "delay": 0.9
+       },
+       {
+        "who": "n8",
+        "to": [
+         30,
+         26
+        ],
+        "type": "lauf",
+        "delay": 0.9
+       },
+       {
+        "who": "n10",
+        "to": [
+         60,
+         32
+        ],
+        "type": "lauf",
+        "delay": 0.9
+       },
+       {
+        "who": "n7",
+        "to": [
+         68,
+         48
+        ],
+        "type": "lauf",
+        "delay": 0.9
+       },
+       {
+        "who": "n6",
+        "to": [
+         30,
+         26
+        ],
+        "type": "option",
+        "delay": 1.8
+       },
+       {
+        "who": "n6",
+        "to": [
+         22,
+         13
+        ],
+        "type": "option",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         30.6,
+         26.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Seitenwechsel",
+      "say": "Der zweite Sechser steht offen und sieht das ganze Feld. Er hat den rechten Innenverteidiger und, weiter weg, den Außenverteidiger. Der ist ganz frei, also geht der Ball direkt rüber. Jetzt muss der Gegner quer übers ganze Feld schieben. Und er kommt zu spät.",
+      "moves": [
+       {
+        "who": "r20",
+        "to": [
+         34,
+         24
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "r18",
+        "to": [
+         44,
+         24
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n8",
+        "to": [
+         44,
+         48
+        ],
+        "type": "blick",
+        "delay": 0.3,
+        "von": [
+         37.6,
+         15.6
+        ],
+        "dauer": 1.2
+       },
+       {
+        "who": "n8",
+        "to": [
+         22,
+         36
+        ],
+        "type": "option",
+        "delay": 1.6
+       },
+       {
+        "who": "n8",
+        "to": [
+         44,
+         48
+        ],
+        "type": "option",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         44.6,
+         48.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "r21",
+        "to": [
+         52,
+         44
+        ],
+        "type": "lauf",
+        "delay": 2.6
+       },
+       {
+        "who": "r18",
+        "to": [
+         48,
+         32
+        ],
+        "type": "lauf",
+        "delay": 2.6
+       },
+       {
+        "who": "r12",
+        "to": [
+         70,
+         44
+        ],
+        "type": "lauf",
+        "delay": 2.6
+       },
+       {
+        "who": "r15",
+        "to": [
+         70,
+         33
+        ],
+        "type": "lauf",
+        "delay": 2.6
+       },
+       {
+        "who": "r14",
+        "to": [
+         70,
+         22
+        ],
+        "type": "lauf",
+        "delay": 2.6
+       },
+       {
+        "who": "r13",
+        "to": [
+         72,
+         12
+        ],
+        "type": "lauf",
+        "delay": 2.6
+       },
+       {
+        "who": "r16",
+        "to": [
+         50,
+         12
+        ],
+        "type": "lauf",
+        "delay": 2.6
+       },
+       {
+        "who": "r17",
+        "to": [
+         46,
+         21
+        ],
+        "type": "lauf",
+        "delay": 2.6
+       },
+       {
+        "who": "r20",
+        "to": [
+         36,
+         32
+        ],
+        "type": "lauf",
+        "delay": 2.6
+       },
+       {
+        "who": "r19",
+        "to": [
+         30,
+         20
+        ],
+        "type": "lauf",
+        "delay": 2.6
+       },
+       {
+        "who": "n4",
+        "to": [
+         24,
+         40
+        ],
+        "type": "lauf",
+        "delay": 2.6
+       },
+       {
+        "who": "n6",
+        "to": [
+         36,
+         22
+        ],
+        "type": "lauf",
+        "delay": 2.6
+       },
+       {
+        "who": "n8",
+        "to": [
+         34,
+         30
+        ],
+        "type": "lauf",
+        "delay": 2.6
+       },
+       {
+        "who": "n11",
+        "to": [
+         64,
+         12
+        ],
+        "type": "lauf",
+        "delay": 2.6
+       },
+       {
+        "who": "n9",
+        "to": [
+         68,
+         27
+        ],
+        "type": "lauf",
+        "delay": 2.6
+       },
+       {
+        "who": "n3",
+        "to": [
+         40,
+         14
+        ],
+        "type": "lauf",
+        "delay": 2.6
+       },
+       {
+        "who": "n5",
+        "to": [
+         24,
+         18
+        ],
+        "type": "lauf",
+        "delay": 2.6
+       }
+      ]
+     },
+     {
+      "label": "Mit Tempo rein",
+      "say": "Der Außenverteidiger hat Platz, also nimmt er den Ball mit und dribbelt mit Tempo nach vorn. Der gegnerische Flügel muss raus, und der Verteidiger dahinter klebt an unserem Flügel. Innen aber ist der Zehner frei. Er kriegt den Ball und schaut sofort nach vorn.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         56,
+         48
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "r21",
+        "to": [
+         51,
+         45
+        ],
+        "type": "lauf",
+        "delay": 0.8
+       },
+       {
+        "who": "n2",
+        "to": [
+         68,
+         48
+        ],
+        "type": "option",
+        "delay": 1.6
+       },
+       {
+        "who": "n2",
+        "to": [
+         60,
+         32
+        ],
+        "type": "option",
+        "after": true
+       },
+       {
+        "who": "n2",
+        "to": [
+         68,
+         27
+        ],
+        "type": "option",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         60.6,
+         32.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n7",
+        "to": [
+         70,
+         48
+        ],
+        "type": "lauf",
+        "delay": 2.6
+       },
+       {
+        "who": "n8",
+        "to": [
+         40,
+         32
+        ],
+        "type": "lauf",
+        "delay": 2.6
+       },
+       {
+        "who": "n6",
+        "to": [
+         40,
+         24
+        ],
+        "type": "lauf",
+        "delay": 2.6
+       },
+       {
+        "who": "r15",
+        "to": [
+         71,
+         34
+        ],
+        "type": "lauf",
+        "delay": 2.6
+       },
+       {
+        "who": "r18",
+        "to": [
+         54,
+         32
+        ],
+        "type": "lauf",
+        "delay": 2.6
+       }
+      ]
+     },
+     {
+      "label": "Auf der freien Seite",
+      "say": "Unser Flügel ist zugestellt, der Verteidiger klebt an ihm. Aber der Stürmer startet, genau mit dem Pass, also kein Abseits. Der Zehner steckt durch, in die Lücke zwischen zwei Verteidigern. Erst Druck auf einer Seite, dann über die Doppelsechs verlagern. So kommen wir dahin, wo der Gegner nicht ist.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         70,
+         48
+        ],
+        "type": "option"
+       },
+       {
+        "who": "n10",
+        "to": [
+         68,
+         27
+        ],
+        "type": "option",
+        "after": true
+       },
+       {
+        "who": "n9",
+        "to": [
+         82,
+         24
+        ],
+        "type": "lauf",
+        "delay": 0.9
+       },
+       {
+        "who": "b1",
+        "to": [
+         82.6,
+         24.6
+        ],
+        "type": "pass",
+        "delay": 0.9
+       },
+       {
+        "who": "n7",
+        "to": [
+         78,
+         44
+        ],
+        "type": "lauf",
+        "delay": 0.9
+       },
+       {
+        "who": "n11",
+        "to": [
+         74,
+         14
+        ],
+        "type": "lauf",
+        "delay": 0.9
+       },
+       {
+        "who": "n2",
+        "to": [
+         64,
+         48
+        ],
+        "type": "lauf",
+        "delay": 0.9
+       },
+       {
+        "who": "n10",
+        "to": [
+         68,
+         34
+        ],
+        "type": "lauf",
+        "delay": 0.9
+       },
+       {
+        "who": "r14",
+        "to": [
+         78,
+         22
+        ],
+        "type": "lauf",
+        "delay": 1.5
+       },
+       {
+        "who": "r15",
+        "to": [
+         77,
+         31
+        ],
+        "type": "lauf",
+        "delay": 1.5
+       },
+       {
+        "who": "r12",
+        "to": [
+         76,
+         44
+        ],
+        "type": "lauf",
+        "delay": 1.5
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Kapitel 4",
+   "say": "Kapitel vier: Der Zehner und der Außenverteidiger.",
+   "title": "Zehner und Überlaufen",
+   "text": "Der Zehner holt sich den Ball zwischen den Linien, weil der Stürmer seinen Verteidiger wegzieht. Der Flügel zieht nach innen, der Außenverteidiger überläuft außen. Die Doppelsechs sichert dahinter ab. Am Ende legt der Außenverteidiger in den Rückraum zurück.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 10.5,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 24,
+      "y": 15,
+      "label": "5"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 24,
+      "y": 40,
+      "label": "4"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 42,
+      "y": 19,
+      "label": "6"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 44,
+      "y": 32,
+      "label": "8"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 46,
+      "y": 5,
+      "label": "3"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 48,
+      "y": 50,
+      "label": "2"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 64,
+      "y": 30,
+      "label": "10"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 68,
+      "y": 6,
+      "label": "11"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 68,
+      "y": 49,
+      "label": "7"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 70,
+      "y": 24,
+      "label": "9"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 88,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 76,
+      "y": 9,
+      "label": "13"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 76,
+      "y": 21,
+      "label": "14"
+     },
+     {
+      "id": "r15",
+      "team": "b",
+      "x": 76,
+      "y": 33,
+      "label": "15"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 76,
+      "y": 45,
+      "label": "12"
+     },
+     {
+      "id": "r16",
+      "team": "b",
+      "x": 56,
+      "y": 9,
+      "label": "16"
+     },
+     {
+      "id": "r17",
+      "team": "b",
+      "x": 56,
+      "y": 21,
+      "label": "17"
+     },
+     {
+      "id": "r18",
+      "team": "b",
+      "x": 56,
+      "y": 33,
+      "label": "18"
+     },
+     {
+      "id": "r21",
+      "team": "b",
+      "x": 56,
+      "y": 45,
+      "label": "21"
+     },
+     {
+      "id": "r19",
+      "team": "b",
+      "x": 34,
+      "y": 22,
+      "label": "19"
+     },
+     {
+      "id": "r20",
+      "team": "b",
+      "x": 34,
+      "y": 36,
+      "label": "20"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 16,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 44.6,
+      "y": 32.6
+     },
+     {
+      "id": "s1",
+      "x": 19.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 22,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zwischen den Linien",
+      "say": "Zum Schluss das Muster, für das man ein Vier-zwei-drei-eins spielt. Unser Sechser hat den Ball, die Stürmer sind schon überspielt. Einer kommt, einer geht: Der Stürmer zieht weg und nimmt seinen Verteidiger mit. Dafür kommt der Zehner in die Lücke. Der Pass geht flach durch die Mittelfeldreihe, direkt zu ihm.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         64,
+         25
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n9",
+        "to": [
+         72,
+         33
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r15",
+        "to": [
+         76,
+         35
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       },
+       {
+        "who": "n8",
+        "to": [
+         64,
+         25
+        ],
+        "type": "option",
+        "delay": 1.4
+       },
+       {
+        "who": "n8",
+        "to": [
+         48,
+         50
+        ],
+        "type": "option",
+        "after": true
+       },
+       {
+        "who": "n8",
+        "to": [
+         42,
+         19
+        ],
+        "type": "option",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         64.6,
+         25.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "r17",
+        "to": [
+         60,
+         21
+        ],
+        "type": "lauf",
+        "delay": 2.6
+       },
+       {
+        "who": "r18",
+        "to": [
+         59,
+         31
+        ],
+        "type": "lauf",
+        "delay": 2.6
+       },
+       {
+        "who": "r14",
+        "to": [
+         72,
+         22
+        ],
+        "type": "lauf",
+        "delay": 2.6
+       },
+       {
+        "who": "r19",
+        "to": [
+         40,
+         22
+        ],
+        "type": "lauf",
+        "delay": 2.6
+       },
+       {
+        "who": "r20",
+        "to": [
+         40,
+         34
+        ],
+        "type": "lauf",
+        "delay": 2.6
+       },
+       {
+        "who": "n5",
+        "to": [
+         30,
+         15
+        ],
+        "type": "lauf",
+        "delay": 2.8
+       },
+       {
+        "who": "n4",
+        "to": [
+         30,
+         38
+        ],
+        "type": "lauf",
+        "delay": 2.8
+       },
+       {
+        "who": "n3",
+        "to": [
+         50,
+         8
+        ],
+        "type": "lauf",
+        "delay": 2.8
+       },
+       {
+        "who": "n6",
+        "to": [
+         44,
+         21
+        ],
+        "type": "lauf",
+        "delay": 2.8
+       }
+      ]
+     },
+     {
+      "label": "Flügel rein",
+      "say": "Der Zehner dreht auf. Und schau, was außen passiert. Unser rechter Flügel zieht nach innen. Der Verteidiger geht mit ihm mit. Der Zehner spielt den Flügel an, schräg nach rechts.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         68,
+         49
+        ],
+        "type": "blick",
+        "von": [
+         44.6,
+         32.6
+        ],
+        "dauer": 1.2
+       },
+       {
+        "who": "n10",
+        "to": [
+         68,
+         49
+        ],
+        "type": "dreh",
+        "delay": 0.4
+       },
+       {
+        "who": "n7",
+        "to": [
+         64,
+         40
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       },
+       {
+        "who": "n2",
+        "to": [
+         60,
+         50
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       },
+       {
+        "who": "r12",
+        "to": [
+         72,
+         42
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       },
+       {
+        "who": "n10",
+        "to": [
+         64,
+         40
+        ],
+        "type": "option",
+        "delay": 2.0
+       },
+       {
+        "who": "n10",
+        "to": [
+         72,
+         33
+        ],
+        "type": "option",
+        "after": true
+       },
+       {
+        "who": "n10",
+        "to": [
+         68,
+         6
+        ],
+        "type": "option",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         64.6,
+         40.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "r12",
+        "to": [
+         69,
+         36
+        ],
+        "type": "lauf",
+        "delay": 3.0
+       },
+       {
+        "who": "r21",
+        "to": [
+         58,
+         42
+        ],
+        "type": "lauf",
+        "delay": 3.0
+       },
+       {
+        "who": "r16",
+        "to": [
+         58,
+         14
+        ],
+        "type": "lauf",
+        "delay": 3.0
+       },
+       {
+        "who": "r13",
+        "to": [
+         74,
+         12
+        ],
+        "type": "lauf",
+        "delay": 3.0
+       },
+       {
+        "who": "n8",
+        "to": [
+         50,
+         34
+        ],
+        "type": "lauf",
+        "delay": 3.0
+       },
+       {
+        "who": "n6",
+        "to": [
+         46,
+         22
+        ],
+        "type": "lauf",
+        "delay": 3.0
+       },
+       {
+        "who": "n3",
+        "to": [
+         52,
+         12
+        ],
+        "type": "lauf",
+        "delay": 3.0
+       },
+       {
+        "who": "n4",
+        "to": [
+         34,
+         40
+        ],
+        "type": "lauf",
+        "delay": 3.0
+       },
+       {
+        "who": "n11",
+        "to": [
+         70,
+         10
+        ],
+        "type": "lauf",
+        "delay": 3.0
+       }
+      ]
+     },
+     {
+      "label": "Außenverteidiger überläuft",
+      "say": "Einer kommt, einer geht: Der Flügel ist nach innen gekommen, also geht der Außenverteidiger außen vorbei. Er startet mit dem Pass, also kein Abseits. Hinten bleibt trotzdem keiner allein. Die Doppelsechs sichert ab, deshalb darf der Außenverteidiger mit nach vorn.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         60,
+         50
+        ],
+        "type": "option"
+       },
+       {
+        "who": "n7",
+        "to": [
+         64,
+         25
+        ],
+        "type": "option",
+        "after": true
+       },
+       {
+        "who": "n2",
+        "to": [
+         82,
+         50
+        ],
+        "type": "lauf",
+        "delay": 0.9
+       },
+       {
+        "who": "b1",
+        "to": [
+         82.6,
+         50.6
+        ],
+        "type": "pass",
+        "delay": 0.9
+       },
+       {
+        "who": "n9",
+        "to": [
+         80,
+         30
+        ],
+        "type": "lauf",
+        "delay": 1.0
+       },
+       {
+        "who": "n10",
+        "to": [
+         72,
+         28
+        ],
+        "type": "lauf",
+        "delay": 1.0
+       },
+       {
+        "who": "n11",
+        "to": [
+         74,
+         12
+        ],
+        "type": "lauf",
+        "delay": 1.0
+       },
+       {
+        "who": "n7",
+        "to": [
+         70,
+         38
+        ],
+        "type": "lauf",
+        "delay": 1.0
+       },
+       {
+        "who": "r12",
+        "to": [
+         78,
+         46
+        ],
+        "type": "lauf",
+        "delay": 1.6
+       },
+       {
+        "who": "r15",
+        "to": [
+         80,
+         34
+        ],
+        "type": "lauf",
+        "delay": 1.6
+       },
+       {
+        "who": "r14",
+        "to": [
+         80,
+         24
+        ],
+        "type": "lauf",
+        "delay": 1.6
+       },
+       {
+        "who": "r13",
+        "to": [
+         80,
+         14
+        ],
+        "type": "lauf",
+        "delay": 1.6
+       },
+       {
+        "who": "n8",
+        "to": [
+         52,
+         36
+        ],
+        "type": "lauf",
+        "delay": 1.6
+       },
+       {
+        "who": "n6",
+        "to": [
+         48,
+         26
+        ],
+        "type": "lauf",
+        "delay": 1.6
+       },
+       {
+        "who": "n5",
+        "to": [
+         34,
+         18
+        ],
+        "type": "lauf",
+        "delay": 1.6
+       },
+       {
+        "who": "n4",
+        "to": [
+         38,
+         38
+        ],
+        "type": "lauf",
+        "delay": 1.6
+       },
+       {
+        "who": "k1",
+        "to": [
+         16,
+         27.5
+        ],
+        "type": "lauf",
+        "delay": 1.6
+       },
+       {
+        "who": "r19",
+        "to": [
+         46,
+         22
+        ],
+        "type": "lauf",
+        "delay": 1.6
+       },
+       {
+        "who": "r20",
+        "to": [
+         46,
+         33
+        ],
+        "type": "lauf",
+        "delay": 1.6
+       }
+      ]
+     },
+     {
+      "label": "Zurück in den Rückraum",
+      "say": "Der Außenverteidiger geht bis fast an die Grundlinie. Vor dem Tor steht der Stürmer, aber da ist es eng. Der Zehner ist mitgelaufen und steht im Rückraum frei. Also kriegt er den Ball flach zurückgelegt. Zehner zwischen den Linien, Flügel rein, Außenverteidiger außen vorbei.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         84,
+         46
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "r12",
+        "to": [
+         85,
+         40
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "r15",
+        "to": [
+         83,
+         33
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "r14",
+        "to": [
+         83,
+         24
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "n10",
+        "to": [
+         72,
+         34
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "n9",
+        "to": [
+         82,
+         30
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "n7",
+        "to": [
+         74,
+         42
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "n2",
+        "to": [
+         82,
+         30
+        ],
+        "type": "option",
+        "delay": 1.6
+       },
+       {
+        "who": "n2",
+        "to": [
+         72,
+         34
+        ],
+        "type": "option",
+        "after": true
+       },
+       {
+        "who": "n2",
+        "to": [
+         74,
+         42
+        ],
+        "type": "option",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         72.6,
+         34.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "r18",
+        "to": [
+         70,
+         34
+        ],
+        "type": "lauf",
+        "delay": 2.4
+       },
+       {
+        "who": "r21",
+        "to": [
+         72,
+         42
+        ],
+        "type": "lauf",
+        "delay": 2.4
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

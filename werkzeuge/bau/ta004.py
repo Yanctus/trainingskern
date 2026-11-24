@@ -3,8 +3,8 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # Vier Kapitel: 1 Grundordnung und Aufbau ohne Gegner (Feld groß machen, Halbverteidiger dribbelt an, Schiene gibt die Breite,
 # Stürmer kommt, Achter geht), 2 gegen ein 4-4-2-Pressing mit zwei Stürmern (drei gegen zwei hinten, freier Halbverteidiger,
 # andribbeln und locken, Schiene frei, Lauf in den Raum hinter dem Außenverteidiger), 3 zwei Stürmer im Wechselspiel (einer kommt,
-# einer geht, klatschen lassen, dritter Mann), 4 Seitenverlagerung auf den freien Schienenspieler und Absichern hinten
-# (Raum hinter den Schienenspielern, die Dreierkette schiebt mit).
+# einer geht, klatschen lassen, dritter Mann), 4 Seitenverlagerung auf den freien Schienenspieler, Schiene läuft an, Stürmer
+# über Kreuz an kurzen und langen Pfosten, Achter im Rückraum, flache Flanke; dann Absichern hinten (Raum hinter den Schienen).
 # Recherche (24.11.2026): premierleague.com/en/news/4244123 (3-5-2 erklärt: Dreierkette gibt Überzahl im Aufbau, Torwart macht
 # daraus vier gegen drei, Schienenspieler geben die Breite, schnelle Verlagerung auf die hohen Schienen, Doppelspitze mit
 # Ablagen), learning.coachesvoice.com/cv/back-three-explained-why-conte-moyes-guardiola/ (Halbverteidiger dribbeln ins Mittelfeld,
@@ -139,18 +139,19 @@ c.append(L4.pas("n2", after=True))
 c += L4.schieb({"r12": (69, 47), "r21": (55, 45), "r18": (58, 32), "r15": (74, 34), "r14": (70, 22)}, delay=2.4)
 c += L4.schieb({"n7": (70, 36), "n8": (56, 36), "n5": (34, 44), "n9": (68, 24), "n10": (56, 20)}, delay=2.4)
 k4.append(S("Verlagern auf die freie Schiene", "Jetzt der lange Ball. Den Achter verdeckt der zweite Stürmer, aber die rechte Schiene ist ganz frei. Also geht der Ball diagonal rüber. Der Gegner muss quer übers ganze Feld schieben. Und er kommt zu spät.", *c))
-d = L4.schieb({"n8": (62, 40)})
-d += L4.opts("n8", "n7", delay=1.0, zu=("n7",))
-d.append(L4.pas("n8", after=True))
-d += L4.schieb({"r21": (56, 42), "r18": (58, 34)}, delay=2.6)
-k4.append(S("Einer kommt", "Der Außenverteidiger kommt raus, von innen. So ist der Weg zum Stürmer zu. Aber jetzt kommt der Achter zur Schiene. Der ist frei, also kriegt er ihn.", *d))
-e = L4.opts("n7", "n9", "n2")
-e += L4.steil("n7", (80, 44), delay=1.6)
-e += L4.schieb({"n9": (78, 30), "n10": (66, 24), "n2": (70, 50), "n6": (46, 32)}, delay=1.6)
-e += L4.schieb({"r15": (78, 38), "r14": (76, 28), "r12": (74, 46)}, delay=2.0)
-k4.append(S("Einer geht", "Einer kommt, einer geht. Denn im selben Moment geht der Stürmer in die Tiefe, hinter den Außenverteidiger. Der Achter spielt ihn in den Lauf. Er startet mit dem Pass, also kein Abseits. So greifen wir dort an, wo der Gegner gerade nicht ist.", *e))
-f = L4.schieb({"n5": (44, 46), "n4": (36, 34), "n3": (40, 18), "n11": (68, 9)})
-f += L4.schieb({"r13": (80, 14), "r21": (62, 46), "r18": (64, 34), "r20": (52, 30), "r19": (50, 18)}, delay=0.4)
+d = [L4.dribbel("n2", (80, 49))]
+d += L4.schieb({"r12": (73, 50.5), "r21": (64, 46), "r15": (81, 31), "r14": (79, 24), "r13": (76, 14), "r18": (64, 34),
+                "r17": (62, 20), "r16": (60, 12), "r20": (52, 30), "r19": (48, 20)}, delay=0.3)
+d += L4.schieb({"n9": (74, 26), "n7": (75, 36), "n8": (68, 36), "n10": (64, 22), "n11": (70, 10), "n6": (48, 34),
+                "n5": (44, 44), "n4": (34, 32), "n3": (38, 18)}, delay=0.6)
+k4.append(S("Die Schiene läuft an", "Die Schiene hat Platz, also läuft sie an, die Linie runter. Ihr Gegenspieler kommt nicht mehr hinterher. Die Abwehr läuft zurück in den Strafraum. Vorn warten die zwei Stürmer, beide noch auf Höhe vom letzten Verteidiger. Und der Achter rückt nach.", *d))
+e = L4.opts("n9", "n7", "n8")
+e += L4.steil("n9", (84, 37), delay=1.6)
+e += L4.schieb({"n7": (86, 20), "n8": (73, 31), "n10": (72, 22)}, delay=1.6)
+e += L4.schieb({"r15": (83, 34), "r14": (82, 26), "r13": (80, 18), "r12": (78, 48)}, delay=2.0)
+k4.append(S("Kurzer und langer Pfosten", "Und jetzt pass auf: Einer kommt, einer geht. Der eine Stürmer kommt an den kurzen Pfosten, zum Ball hin. Der andere geht weg an den langen. Die zwei laufen über Kreuz, und der Achter wartet im Rückraum. Beide Stürmer starten erst mit der Flanke, also kein Abseits. Am kurzen Pfosten ist der Weg frei, also kommt der Ball flach dahin. Die Abwehr muss drei Räume auf einmal verteidigen.", *e))
+f = L4.schieb({"n5": (52, 46), "n4": (42, 32), "n3": (46, 18), "n11": (72, 8)})
+f += L4.schieb({"r21": (66, 44), "r20": (56, 30), "r19": (54, 22)}, delay=0.4)
 k4.append(S("Hinten absichern", "Und hinten? Wenn beide Schienen so hoch stehen, ist hinter ihnen viel Platz. Darum schiebt die Dreierkette mit. Der Halbverteidiger rückt nach außen, hinter die Schiene. Der Innenverteidiger bleibt in der Mitte. Verlieren wir den Ball, ist schon einer da.", *f))
 
 u = {"title": "Aufbau im 3-5-2", "code": "TA-004", "kind": "Taktik",
@@ -177,7 +178,7 @@ u = {"title": "Aufbau im 3-5-2", "code": "TA-004", "kind": "Taktik",
     "Der Gegner steht kompakt in der eigenen Hälfte. Ein Stürmer kommt entgegen und nimmt seinen Innenverteidiger mit, der andere läuft in die Lücke. Der Ball geht zum Stürmer, der lässt klatschen, und der Achter spielt den zweiten Stürmer in die Tiefe.",
     Lage(NEON3, ROT3).spieler(), [B("b1", 30.6, 12.6)] + ERSATZ, k3),
   V("Kapitel 4", "Kapitel vier: Verlagern auf die freie Schiene.", "Auf die freie Schiene",
-    "Der Gegner schiebt mit allen auf unsere Ballseite. Über den Halbverteidiger und den Sechser verlagern wir mit einem langen Ball auf die Schiene der anderen Seite. Dort greifen wir an, und die Dreierkette schiebt mit und sichert den Raum hinter den Schienen ab.",
+    "Der Gegner schiebt mit allen auf unsere Ballseite. Über den Halbverteidiger und den Sechser verlagern wir mit einem langen Ball auf die Schiene der anderen Seite. Die Schiene läuft an, die zwei Stürmer gehen über Kreuz an den kurzen und den langen Pfosten, der Achter in den Rückraum, und die Flanke kommt flach. Hinten schiebt die Dreierkette mit und sichert den Raum hinter den Schienen ab.",
     Lage(NEON4, ROT4).spieler(), [B("b1", 60.6, 4.6)] + ERSATZ, k4)]}
 fertig()
 json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)
