@@ -1,0 +1,889 @@
+{
+ "title": "Erster Ball, zweiter Ball",
+ "code": "UE-406",
+ "kind": "Spielform",
+ "focuses": [
+  "Ballannahme",
+  "Umschalten",
+  "Torschuss"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 8,
+ "players_max": 12,
+ "field_size": "18 x 25 m",
+ "description": "Zwei gegen zwei um hohe Bälle. Ein Spieler wirft oder schießt den Ball hoch zu zwei Spielern gegenüber, einer von Team Neon, einer von Team Rot. Die beiden kämpfen um den ersten Ball, der Werfer und sein Gegenspieler kommen sofort dazu und holen sich den zweiten Ball. Wer den Ball hat, kombiniert schnell und schließt auf ein Minitor ab.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 25 Metern. Auf jeder Seite stehen zwei Minitore im Feld, die Öffnung zeigt zur Mitte.",
+  "Verteilen: Zwölf Spieler in Paaren, immer einer von Team Neon und einer von Team Rot. Auf jeder Seite stehen drei Paare, gegenüber vom Werferpaar steht das Paar, das um den Ball kämpft. Die Werfer haben die Bälle, der Trainer steht mit Ersatzbällen am Rand.",
+  "Ablauf: Der Werfer wirft oder schießt den Ball hoch zum Paar gegenüber. Beide kämpfen um den Ball, der Werfer und sein Gegenspieler sprinten sofort zur Unterstützung. Das Team des Werfers spielt auf das Minitor auf seiner Seite, das andere Team auf das Minitor gegenüber. In der Mitte sagt der Trainer vorher, auf welche zwei Minitore gespielt wird.",
+  "Wertung und Wechsel: Jeder Treffer gibt einen Punkt. Danach tauschen die beiden Paare die Plätze, und das nächste Paar ist dran."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Entschlossen zum ersten Ball gehen",
+  "Körper zwischen Ball und Gegner",
+  "Sofort auf den zweiten Ball reagieren",
+  "Ruhig bleiben, kombinieren, dann abschließen"
+ ],
+ "materials": [
+  "4 Minitore",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Erster Ball, zweiter Ball. Ein hoher Ball, zwei Spieler kämpfen darum, und zwei kommen von hinten dazu. Wer den Ball hat, spielt schnell aufs Minitor.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 9,
+    "y": 4,
+    "w": 80,
+    "h": 47
+   }
+  ],
+  "goals": [
+   {
+    "x": 21,
+    "y": 18,
+    "side": "left"
+   },
+   {
+    "x": 21,
+    "y": 39,
+    "side": "left"
+   },
+   {
+    "x": 78,
+    "y": 18,
+    "side": "right"
+   },
+   {
+    "x": 78,
+    "y": 39,
+    "side": "right"
+   }
+  ],
+  "cones": [],
+  "players": [
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 82,
+    "y": 8,
+    "label": "5"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 73.5,
+    "y": 12,
+    "label": "3"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 23.5,
+    "y": 8,
+    "label": "7"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 14.5,
+    "y": 8,
+    "label": "6"
+   },
+   {
+    "id": "r12",
+    "team": "b",
+    "x": 82,
+    "y": 24,
+    "label": "12"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 73.5,
+    "y": 28.4,
+    "label": "11"
+   },
+   {
+    "id": "r13",
+    "team": "b",
+    "x": 23.5,
+    "y": 24,
+    "label": "13"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 14.5,
+    "y": 28.4,
+    "label": "2"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 82,
+    "y": 47,
+    "label": "9"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 73.5,
+    "y": 44,
+    "label": "8"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 23.5,
+    "y": 47,
+    "label": "10"
+   },
+   {
+    "id": "r4",
+    "team": "b",
+    "x": 14.5,
+    "y": 47,
+    "label": "4"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 50,
+    "y": 55.3,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 24.1,
+    "y": 8.6
+   },
+   {
+    "id": "b2",
+    "x": 24.1,
+    "y": 24.6
+   },
+   {
+    "id": "b3",
+    "x": 24.1,
+    "y": 47.6
+   },
+   {
+    "id": "s1",
+    "x": 53.5,
+    "y": 55.8
+   },
+   {
+    "id": "s2",
+    "x": 56,
+    "y": 55.8
+   }
+  ],
+  "steps": [
+   {
+    "label": "Hoher Ball zu Spieler fünf",
+    "say": "Spieler sieben wirft den Ball hoch über das Feld. Drüben gehen Spieler fünf und Spieler drei beide zum Ball.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       79.6,
+       8.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n5",
+      "to": [
+       79,
+       8
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     },
+     {
+      "who": "r3",
+      "to": [
+       70.5,
+       10
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     }
+    ]
+   },
+   {
+    "label": "Ball sichern, zwei kommen dazu",
+    "say": "Spieler fünf setzt sich durch und schirmt den Ball mit dem Körper ab. Jetzt sprinten Spieler sieben und Spieler sechs nach vorn.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       52,
+       14
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r6",
+      "to": [
+       43,
+       6
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Zusammenspiel mit Spieler sieben",
+    "say": "Spieler fünf sucht seinen Mitspieler und spielt zu Spieler sieben. Sofort läuft er los in den freien Raum.",
+    "moves": [
+     {
+      "who": "n5",
+      "to": [
+       59.5,
+       12.3
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b1",
+      "to": [
+       52.6,
+       14.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n5",
+      "to": [
+       62,
+       19
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n5",
+      "to": [
+       43,
+       25
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r3",
+      "to": [
+       60,
+       14
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     }
+    ]
+   },
+   {
+    "label": "Abschluss: Punkt",
+    "say": "Spieler sieben spielt den Ball in den Lauf. Spieler fünf schießt ins Minitor auf der Seite von Spieler sieben, und das gibt einen Punkt für Team Neon. Danach tauschen die Paare die Plätze, und in der Mitte wirft Spieler dreizehn.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       43.6,
+       25.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       21.4,
+       18.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 9,
+    "y1": 58.6,
+    "x2": 89,
+    "y2": 58.6,
+    "text": "25 m"
+   },
+   {
+    "x1": 95,
+    "y1": 4,
+    "x2": 95,
+    "y2": 51,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Schnell auf den zweiten Ball.",
+   "title": "Schnell auf den zweiten Ball",
+   "text": "Der erste Ball wird selten sauber angenommen. Er springt weg, wird verlängert oder weggeköpft. Wer dann zuerst da ist, hat den Ball. Die beiden, die von hinten kommen, laufen deshalb nicht zum Ball, sondern dahin, wo er hinfällt.",
+   "board": {
+    "players": [
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 82,
+      "y": 8,
+      "label": "5"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 73.5,
+      "y": 12,
+      "label": "3"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 23.5,
+      "y": 8,
+      "label": "7"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 14.5,
+      "y": 8,
+      "label": "6"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 82,
+      "y": 24,
+      "label": "12"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 73.5,
+      "y": 28.4,
+      "label": "11"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 23.5,
+      "y": 24,
+      "label": "13"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 14.5,
+      "y": 28.4,
+      "label": "2"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 82,
+      "y": 47,
+      "label": "9"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 73.5,
+      "y": 44,
+      "label": "8"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 23.5,
+      "y": 47,
+      "label": "10"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 14.5,
+      "y": 47,
+      "label": "4"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 24.1,
+      "y": 8.6
+     },
+     {
+      "id": "b2",
+      "x": 24.1,
+      "y": 24.6
+     },
+     {
+      "id": "b3",
+      "x": 24.1,
+      "y": 47.6
+     },
+     {
+      "id": "s1",
+      "x": 53.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 56,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Trainer ruft, hoher Ball",
+      "say": "Der Trainer sagt, auf welche Minitore die Mitte spielt. Spieler dreizehn wirft hoch zu Spieler zwölf und Spieler elf. Spieler zwei und Spieler dreizehn sprinten sofort hinterher.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         79.6,
+         24.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r12",
+        "to": [
+         79,
+         24
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       },
+       {
+        "who": "n2",
+        "to": [
+         50,
+         24
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "r13",
+        "to": [
+         41,
+         32
+        ],
+        "type": "lauf",
+        "delay": 0.5
+       }
+      ]
+     },
+     {
+      "label": "Der zweite Ball",
+      "say": "Spieler zwölf köpft den Ball, aber er springt weg in die Mitte. Spieler zwei ist am schnellsten da und holt ihn sich.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         60.6,
+         24.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n2",
+        "to": [
+         60,
+         24
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "r13",
+        "to": [
+         50,
+         30
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       }
+      ]
+     },
+     {
+      "label": "Gegenüber abschließen: Punkt",
+      "say": "Jetzt hat Team Neon den Ball und spielt auf das Minitor gegenüber. Spieler elf bietet sich an, bekommt den Pass und trifft, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n11",
+        "to": [
+         67,
+         34
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b2",
+        "to": [
+         67.6,
+         34.6
+        ],
+        "type": "pass",
+        "delay": 0.4
+       },
+       {
+        "who": "b2",
+        "to": [
+         77.6,
+         39.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 9,
+      "y1": 58.6,
+      "x2": 89,
+      "y2": 58.6,
+      "text": "25 m"
+     },
+     {
+      "x1": 95,
+      "y1": 4,
+      "x2": 95,
+      "y2": 51,
+      "text": "18 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: In der Mittelzone darf nur ein Verteidiger sein.",
+   "title": "Nur ein Verteidiger mittig",
+   "text": "In der Mitte liegt eine Zone, in die immer nur ein Verteidiger darf. Die Angreifer kommen deshalb früh hinein und spielen dort zwei gegen eins. Zum Abschluss kommen sie nur mit einem Doppelpass oder einem Dribbling am Gegner vorbei.",
+   "board": {
+    "players": [
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 82,
+      "y": 8,
+      "label": "5"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 73.5,
+      "y": 12,
+      "label": "3"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 23.5,
+      "y": 8,
+      "label": "7"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 14.5,
+      "y": 8,
+      "label": "6"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 82,
+      "y": 24,
+      "label": "12"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 73.5,
+      "y": 28.4,
+      "label": "11"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 23.5,
+      "y": 24,
+      "label": "13"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 14.5,
+      "y": 28.4,
+      "label": "2"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 82,
+      "y": 47,
+      "label": "9"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 73.5,
+      "y": 44,
+      "label": "8"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 23.5,
+      "y": 47,
+      "label": "10"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 14.5,
+      "y": 47,
+      "label": "4"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 24.1,
+      "y": 8.6
+     },
+     {
+      "id": "b2",
+      "x": 24.1,
+      "y": 24.6
+     },
+     {
+      "id": "b3",
+      "x": 24.1,
+      "y": 47.6
+     },
+     {
+      "id": "s1",
+      "x": 53.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 56,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Ball hoch, Spieler sieben kommt früh",
+      "say": "Spieler sieben wirft hoch, und Spieler fünf sichert den Ball. Spieler sieben sprintet sofort in die Mittelzone. Spieler sechs muss draußen bleiben, denn Spieler drei geht mit hinein.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         82.6,
+         8.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n7",
+        "to": [
+         50,
+         26
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "r6",
+        "to": [
+         35,
+         6
+        ],
+        "type": "lauf",
+        "delay": 0.5
+       }
+      ]
+     },
+     {
+      "label": "Zwei gegen eins in der Zone",
+      "say": "Spieler fünf dribbelt in die Zone. Spieler drei stellt sich ihm in den Weg, und jetzt steht es zwei gegen eins.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         72,
+         15
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n5",
+        "to": [
+         60,
+         13
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "r3",
+        "to": [
+         51.5,
+         9
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Doppelpass vorbei: Punkt",
+      "say": "Spieler fünf spielt zu Spieler sieben und läuft an Spieler drei vorbei. Der Ball kommt direkt zurück in den Lauf. Spieler fünf trifft, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         26.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n5",
+        "to": [
+         53,
+         15.5
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n5",
+        "to": [
+         42,
+         16
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         42.6,
+         16.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         21.4,
+         18.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "lines": [
+     {
+      "type": "rect",
+      "x": 9,
+      "y": 4,
+      "w": 80,
+      "h": 47
+     },
+     {
+      "type": "line",
+      "x1": 39,
+      "y1": 4,
+      "x2": 39,
+      "y2": 51,
+      "dashed": true
+     },
+     {
+      "type": "line",
+      "x1": 61,
+      "y1": 4,
+      "x2": 61,
+      "y2": 51,
+      "dashed": true
+     }
+    ],
+    "dims": [
+     {
+      "x1": 9,
+      "y1": 58.6,
+      "x2": 89,
+      "y2": 58.6,
+      "text": "25 m"
+     },
+     {
+      "x1": 95,
+      "y1": 4,
+      "x2": 95,
+      "y2": 51,
+      "text": "18 m"
+     }
+    ]
+   }
+  }
+ ]
+}

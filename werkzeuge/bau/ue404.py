@@ -1,6 +1,7 @@
 import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe import *
 # 94-P8 (U15-U17, Woche 37 Phase 1): Playing Through the Thirds (Wave of Play, Possession). 20 x 30 Yards = 18 x 27 m
-# (gerundet 18 x 25 m). Zonen 7 / 5 / 8 / 5 / 7 Yards; die beiden 5-Yard-Streifen (4,6 m) sind die Zonen der Verteidiger.
+# (gerundet 18 x 25 m). Zonen laut PDF 7 / 5 / 8 / 5 / 7 Yards (ergibt 32, nicht 30 Yards; darum im Text nur die Streifen
+# mit knapp fünf Metern, die Zonen anteilig auf das Feld verteilt); die beiden 5-Yard-Streifen (4,6 m) sind die Zonen der Verteidiger.
 # LANGES FELD QUER (Inhaber, 24.11.2026, Vorbild ue317.py): Das Feld liegt quer und füllt die Tafel (x 9-89, y 4-51), die
 # Dreiergruppen spielen von links nach rechts (im PDF von oben nach unten). Koordinaten direkt quer gesetzt (2,67 Einheiten je
 # Yard in der Länge): Verteidigerzonen x 27.7-41 und x 62.3-75.7 als orange Zonen (Team Rot), keine Tore.
@@ -37,7 +38,7 @@ u = {"title": "Zu dritt durch zwei Abwehrpaare", "code": "UE-404", "kind": "Übu
  "altersbereiche": ["U15-U17"], "duration_minutes": 15, "players_min": 13, "players_max": 13,
  "field_size": "18 x 25 m",
  "description": "Drei Angreifer spielen sich durch zwei Paare von Verteidigern. Jedes Paar steht in einem schmalen Streifen quer über das Feld. Mit schnellen Pässen ziehen die drei das erste Paar auseinander, dribbeln durch die Lücke in die Mitte und spielen dann durch das zweite Paar auf die Gruppe am anderen Ende. Die startet sofort in die andere Richtung.",
- "organisation": ["Aufbauen: Ein Feld von 18 mal 25 Metern. Zwei Streifen, gut viereinhalb Meter tief, liegen quer über das Feld, dazwischen ist die Mitte gut sieben Meter tief. An beiden Enden bleibt eine Zone von gut sechs Metern.",
+ "organisation": ["Aufbauen: Ein Feld von 18 mal 25 Metern. Zwei Streifen von knapp fünf Metern liegen quer über das Feld. Dazwischen liegt die Mitte, an beiden Enden bleibt je eine Endzone.",
   "Verteilen: Team Neon in drei Gruppen zu dritt. Eine Gruppe hat den Ball an einem Ende, eine steht am anderen Ende, die dritte wartet hinter der Startlinie. Je zwei Verteidiger von Team Rot stehen in einem Streifen. Der Trainer steht mit Bällen an der Seitenlinie.",
   "Ablauf: Die drei am Ball kombinieren schnell, bis eine Lücke im ersten Paar aufgeht. Durch die Lücke dribbelt einer in die Mitte, die anderen kommen nach. Dann geht der Ball durch das zweite Paar zur Gruppe am anderen Ende.",
   "Wertung und Wechsel: Kommt der Ball bei der Gruppe am anderen Ende an, gibt das einen Punkt für Team Neon. Die Gruppe spielt sofort in die andere Richtung, die Angreifer bleiben dort stehen. Erobert Team Rot den Ball und dribbelt über eine Endlinie, gibt das einen Punkt für Team Rot."],
