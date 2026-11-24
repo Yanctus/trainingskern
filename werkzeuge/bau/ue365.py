@@ -4,7 +4,8 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # LANGES FELD QUER (Vorbild ue317.py; mit 46 m kein Großfeld): Tore links und rechts (im PDF unten und oben), direkt in
 # Querkoordinaten geplant (Feld x 9-89, y 4-51; PDF links -> oben, PDF rechts -> unten). Team Neon greift nach rechts an.
 # Sieben gegen sieben mit Torhütern: Pink -> Team Neon (1, 4, 7, 8, 9, 10, 11 wie im PDF), Navy -> Team Rot, neu nummeriert,
-# weil die Nummern doppelt sind: 4 -> 2, 7 -> 3, 9 -> 12, 11 -> 13 (5 und 6 bleiben). Torhüter je Team n1 / r1 (TW).
+# weil die Nummern doppelt sind: 4 -> 2, 7 -> 3, 9 -> 12, 11 -> 13 (5 und 6 bleiben). Die beiden Torhüter als neutrale
+# Torhüter k1 / k2 (TW) wie in ue317.py (zwei Team-Torhüter mit Label TW meldet pruefen als doppelte Nummer).
 # Positionen für den 3D-Abstand leicht versetzt (z. B. Spieler zwei etwas weiter weg von Spieler neun). Ein Trainer statt zwei,
 # unten an der Seitenlinie nahe dem Kanal (spielt die Neun im Kanal an).
 # Fassungen: Progression 1 (Prallpass aus dem Kanal gibt einen Punkt) und Progression 2 (Zone in der Mitte des Kanals, in der
@@ -14,11 +15,11 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # Annahme schwenkt der Kegel zum Passziel, dazu der Drehpfeil.
 T = P("T", "c", 31, 55.3, "T")  # unten an der Seitenlinie nahe dem Kanal
 ERSATZ = [B("s1", 34.5, 55.8), B("s2", 37, 55.8)]
-POS = {"n1": (13, 28.5), "n4": (25.5, 28.5), "n10": (38.5, 14), "n8": (44.5, 44), "n9": (59, 28), "n11": (69.5, 11), "n7": (69.5, 44),
-       "r1": (86.5, 27.5), "r5": (78, 11), "r6": (78, 44), "r2": (67.5, 27.5), "r3": (47.5, 7), "r12": (35, 30), "r13": (54, 47)}
+POS = {"k1": (13, 28.5), "n4": (25.5, 28.5), "n10": (38.5, 14), "n8": (44.5, 44), "n9": (59, 28), "n11": (69.5, 11), "n7": (69.5, 44),
+       "k2": (86.5, 27.5), "r5": (78, 11), "r6": (78, 44), "r2": (67.5, 27.5), "r3": (47.5, 7), "r12": (35, 30), "r13": (54, 47)}
 def sp(**k):
     d = dict(POS); d.update(k)
-    return [P(i, "a" if i[0] == "n" else "b", x, y, "TW" if i[1:] == "1" else i[1:]) for i, (x, y) in d.items()] + [T]
+    return [P(i, "t", x, y, "TW") if i[0] == "k" else P(i, "a" if i[0] == "n" else "b", x, y, i[1:]) for i, (x, y) in d.items()] + [T]
 KX0, KX1 = 40, 56  # Mittelkanal
 LINES = [rect(9, 4, 80, 47), line(KX0, 4, KX0, 51), line(KX1, 4, KX1, 51)]
 TORE = [{"x": 9, "y": 27.5, "side": "left", "size": "gross"}, {"x": 89, "y": 27.5, "side": "right", "size": "gross"}]
@@ -64,7 +65,7 @@ u = {"title": "Falsche Neun im Mittelkanal", "code": "UE-365", "kind": "Spielfor
     "In der Mitte des Kanals liegt jetzt eine Zone. Ein Verteidiger von Team Rot muss dort bleiben und schirmt sie ab. Für die Spitze wird es eng. Sie sucht sich den Platz neben ihm, an seiner Schulter, und braucht gutes Timing beim Fallenlassen.",
     sp(r2=(48, 27.5)), [B("b1", 39.1, 14.6)] + ERSATZ,
     [S("Platz an der Schulter suchen", "Spieler zwei steht in der Zone und darf nicht raus. Spieler neun kommt neben ihn in den Kanal, an seine Schulter. Er schaut kurz, wo Spieler zwei steht, dann zum Ball. Spieler zehn spielt ihn an.",
-       mv("n9", [52, 13.5]), bl("n9", [38.5, 14], von=[48, 27.5], after=True), ps("b1", [52.6, 14.1], after=True)),
+       mv("n9", [58.5, 17]), mv("n9", [52, 13.5], after=True), bl("n9", [38.5, 14], von=[48, 27.5], after=True), ps("b1", [52.6, 14.1], after=True)),
      S("Aufdrehen, steil auf Spieler elf", "Spieler neun dreht weg von Spieler zwei auf und spielt sofort steil. Spieler elf ist außen hinter Spieler fünf gestartet.",
        bl("n9", [72, 16], von=[38.5, 14], dauer=1.3), drehen("n9", [72, 16], delay=0.4), mv("n11", [79, 17], delay=0.4),
        ps("b1", [79.6, 17.6], after=True)),
