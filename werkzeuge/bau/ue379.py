@@ -63,7 +63,7 @@ u = {"title": "Staffel mit Hütchen und Hürden", "code": "UE-379", "kind": "Üb
        *huerden("n8", Bx), mv("n8", [Bx + 4.5, 30], after=True), *huerden("r10", A, delay=0.15), mv("r10", [A + 4.5, 30], after=True))]),
   V("Coaching-Punkt", "Der zweite Coaching-Punkt: Im richtigen Moment starten und hinten anstellen.", "Übergeben, hinten anstellen",
     "Der Nächste steht an der Linie, streckt die Hand aus und startet genau dann, wenn er das Hütchen hat. Wer zurückkommt, stellt sich ganz hinten in seine Reihe. Erst dann zählt er als fertig.",
-    sp(n8=(Bx + 4, 17.5), r10=(A + 4, 17.5), n6=(Bx + 3, 34), r5=(A + 3, 34)), ERSATZ,
+    sp(n8=(Bx + 2.5, 17), r10=(A + 2.5, 17), n6=(Bx + 3, 34), r5=(A + 3, 34)), ERSATZ,
     [S("Übergabe im Lauf", "Spieler sechs steht an der Linie und streckt die Hand aus. Er startet genau in dem Moment, in dem er das Hütchen hat.",
        mv("n8", [Bx + 4.5, 30]), hoch("n6", Bx, after=True), mv("r10", [A + 4.5, 30], delay=0.15), hoch("r5", A, after=True)),
      S("Hinten anstellen", "Spieler acht läuft nicht einfach aus. Er stellt sich ganz hinten in seine Reihe, erst dann zählt er als fertig. Stehen alle wieder hinten, ist das Rennen vorbei.",
