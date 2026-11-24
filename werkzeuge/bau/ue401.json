@@ -1,0 +1,795 @@
+{
+ "title": "Passfolge mit Seitenwechsel",
+ "code": "UE-401",
+ "kind": "Übungsform",
+ "focuses": [
+  "Erwärmung",
+  "Passspiel",
+  "Zusammenspiel"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 10,
+ "players_min": 6,
+ "players_max": 6,
+ "field_size": "9 x 11 m",
+ "description": "Ein kurzes Aufwärmen für das Mittelfeld auf engem Raum. Oben spielen zwei Außenspieler quer und lassen klatschen, dann folgt ein Doppelpass über den Spieler in der Mitte. Der Außenspieler, der gestartet ist, wechselt mit einem langen Pass auf die andere Seite. Unten läuft dieselbe Folge, und der Ball kommt wieder nach oben.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 9 mal 11 Metern mit sechs Hütchen. Je zwei Hütchen stehen oben und unten in den Ecken, zwei in der Mitte hintereinander.",
+  "Verteilen: Sechs Spieler, einer an jedem Hütchen. Der Spieler oben links hat den Ball. Der Trainer steht mit Ersatzbällen am Rand.",
+  "Ablauf: Pass quer, direkt zurück, Pass in die Mitte. Der Außenspieler startet nach außen und bekommt den Ball in den Lauf. Dann wechselt er diagonal auf die andere Seite, und dort läuft dieselbe Folge.",
+  "Wechsel: Der Ball wandert ohne Pause von oben nach unten und zurück. Nach ein paar Runden tauschen die Spieler die Positionen, jeder spielt mal außen und mal in der Mitte."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Pass in den Lauf, nicht in die Füße",
+  "Erst der Pass in die Mitte, dann der Start",
+  "Kopf hoch, bevor der Ball kommt",
+  "Zwei Kontakte, das Tempo bleibt hoch"
+ ],
+ "materials": [
+  "6 Hütchen",
+  "Mehrere Bälle"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Passfolge mit Seitenwechsel. Ein kurzes Aufwärmen für das Mittelfeld. Quer, zurück, Doppelpass über die Mitte, und dann geht der Ball lang auf die andere Seite.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 29.5,
+    "y": 5,
+    "w": 41,
+    "h": 50
+   }
+  ],
+  "goals": [],
+  "cones": [
+   {
+    "x": 31,
+    "y": 12.5,
+    "color": "orange"
+   },
+   {
+    "x": 69,
+    "y": 12.5,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 18.5,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 42.5,
+    "color": "orange"
+   },
+   {
+    "x": 31,
+    "y": 47.5,
+    "color": "orange"
+   },
+   {
+    "x": 69,
+    "y": 47.5,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 34,
+    "y": 9.5,
+    "label": "6"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 66,
+    "y": 9.5,
+    "label": "8"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 50,
+    "y": 22,
+    "label": "10"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 50,
+    "y": 38,
+    "label": "4"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 34,
+    "y": 50.5,
+    "label": "2"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 66,
+    "y": 50.5,
+    "label": "9"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 20,
+    "y": 30,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 34.6,
+    "y": 10.1
+   },
+   {
+    "id": "s1",
+    "x": 19.5,
+    "y": 35
+   },
+   {
+    "id": "s2",
+    "x": 22.5,
+    "y": 35
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pass quer, direkt zurück",
+    "say": "Spieler sechs spielt flach rüber zu Spieler acht. Der lässt direkt klatschen, mit einem Kontakt.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       66.6,
+       10.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       34.6,
+       10.1
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Doppelpass über die Mitte",
+    "say": "Jetzt geht der Ball in die Mitte zu Spieler zehn. In dem Moment startet Spieler acht nach außen und schaut zu Spieler zehn. Der spielt ihm den Ball in den Lauf.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       22.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n8",
+      "to": [
+       68.5,
+       6.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n8",
+      "to": [
+       50,
+       22
+      ],
+      "type": "blick",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       69.1,
+       7.1
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Kopf hoch, Seitenwechsel",
+    "say": "Spieler acht nimmt den Ball mit, hebt den Kopf und sieht Spieler zwei. Ein langer, flacher Pass diagonal auf die andere Seite.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       54.9,
+       23.8
+      ],
+      "type": "blick",
+      "von": [
+       50,
+       22
+      ],
+      "dauer": 1.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       34.6,
+       51.1
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Unten das Gleiche",
+    "say": "Unten geht es genauso weiter. Spieler zwei spielt quer zu Spieler neun und bekommt den Ball direkt zurück. Oben trabt Spieler acht an sein Hütchen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       66.6,
+       51.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       34.6,
+       51.1
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       66,
+       9.5
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     }
+    ]
+   },
+   {
+    "label": "Doppelpass und zurück nach oben",
+    "say": "Spieler zwei spielt in die Mitte zu Spieler vier, Spieler neun startet nach außen und bekommt den Ball in den Lauf. Er hebt den Kopf und spielt lang zu Spieler sechs. Oben geht es sofort wieder los, und nach ein paar Runden tauschen alle die Positionen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       38.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n9",
+      "to": [
+       68.5,
+       53.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       69.1,
+       54.1
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n9",
+      "to": [
+       54.9,
+       36.2
+      ],
+      "type": "blick",
+      "von": [
+       50,
+       38
+      ],
+      "dauer": 1.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       34.6,
+       10.1
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n9",
+      "to": [
+       66,
+       50.5
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 29.5,
+    "y1": 58.6,
+    "x2": 70.5,
+    "y2": 58.6,
+    "text": "9 m"
+   },
+   {
+    "x1": 80,
+    "y1": 5,
+    "x2": 80,
+    "y2": 55,
+    "text": "11 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Den Ball in den Lauf spielen.",
+   "title": "Pass in den Lauf",
+   "text": "Der Außenspieler startet erst, wenn der Ball in die Mitte geht. Der Mittelspieler spielt nicht in die Füße, sondern dorthin, wo der Läufer hinwill. So nimmt er den Ball im Tempo mit und kann sofort weiterspielen.",
+   "board": {
+    "players": [
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 34,
+      "y": 9.5,
+      "label": "6"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 66,
+      "y": 9.5,
+      "label": "8"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 50,
+      "y": 22,
+      "label": "10"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 50,
+      "y": 38,
+      "label": "4"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 34,
+      "y": 50.5,
+      "label": "2"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 66,
+      "y": 50.5,
+      "label": "9"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 20,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 34.6,
+      "y": 10.1
+     },
+     {
+      "id": "s1",
+      "x": 19.5,
+      "y": 35
+     },
+     {
+      "id": "s2",
+      "x": 22.5,
+      "y": 35
+     }
+    ],
+    "steps": [
+     {
+      "label": "Erst der Pass, dann der Start",
+      "say": "Spieler acht wartet. Erst als Spieler sechs in die Mitte spielt, startet er nach außen. Zu früh los, und er steht schon da, wenn der Ball kommt.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         22.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n8",
+        "to": [
+         68.5,
+         6.5
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       }
+      ]
+     },
+     {
+      "label": "Ball vor den Fuß, nicht in den Rücken",
+      "say": "Spieler zehn spielt den Ball einen Schritt vor Spieler acht. Der läuft drauf, nimmt ihn mit und spielt gleich lang zu Spieler zwei.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         50,
+         22
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         69.1,
+         7.1
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n8",
+        "to": [
+         54.9,
+         23.8
+        ],
+        "type": "blick",
+        "von": [
+         50,
+         22
+        ],
+        "dauer": 1.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         34.6,
+         51.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 29.5,
+      "y1": 58.6,
+      "x2": 70.5,
+      "y2": 58.6,
+      "text": "9 m"
+     },
+     {
+      "x1": 80,
+      "y1": 5,
+      "x2": 80,
+      "y2": 55,
+      "text": "11 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Ein zweiter Ball, beide Seiten spielen gleichzeitig.",
+   "title": "Zwei Bälle gleichzeitig",
+   "text": "Oben und unten startet je ein Ball zur selben Zeit. Beide Seiten spielen ihre Folge und wechseln dann diagonal. Die Pässe kreuzen sich in der Mitte, also muss jeder vorher schauen, wo der andere Ball gerade ist.",
+   "board": {
+    "players": [
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 34,
+      "y": 9.5,
+      "label": "6"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 66,
+      "y": 9.5,
+      "label": "8"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 50,
+      "y": 22,
+      "label": "10"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 50,
+      "y": 38,
+      "label": "4"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 34,
+      "y": 50.5,
+      "label": "2"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 66,
+      "y": 50.5,
+      "label": "9"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 20,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 34.6,
+      "y": 10.1
+     },
+     {
+      "id": "b2",
+      "x": 34.6,
+      "y": 51.1
+     },
+     {
+      "id": "s1",
+      "x": 19.5,
+      "y": 35
+     },
+     {
+      "id": "s2",
+      "x": 22.5,
+      "y": 35
+     }
+    ],
+    "steps": [
+     {
+      "label": "Oben und unten gleichzeitig",
+      "say": "Jetzt hat auch Spieler zwei einen Ball. Beide spielen gleichzeitig quer und bekommen den Ball direkt zurück.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         66.6,
+         10.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         34.6,
+         10.1
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b2",
+        "to": [
+         66.6,
+         51.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b2",
+        "to": [
+         34.6,
+         51.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Zwei Doppelpässe über die Mitte",
+      "say": "Oben läuft der Doppelpass über Spieler zehn, unten über Spieler vier. Spieler acht und Spieler neun starten beide nach außen.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         22.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n8",
+        "to": [
+         68.5,
+         6.5
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         69.1,
+         7.1
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b2",
+        "to": [
+         50.6,
+         38.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n9",
+        "to": [
+         68.5,
+         53.5
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "b2",
+        "to": [
+         69.1,
+         54.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Beide wechseln die Seite",
+      "say": "Kopf hoch. Spieler acht spielt lang zu Spieler zwei, kurz danach spielt Spieler neun lang zu Spieler sechs. Die Bälle kreuzen sich, und sofort geht es von vorn los.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         54.9,
+         23.8
+        ],
+        "type": "blick",
+        "von": [
+         50,
+         22
+        ],
+        "dauer": 1.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         34.6,
+         51.1
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n8",
+        "to": [
+         66,
+         9.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n9",
+        "to": [
+         54.9,
+         36.2
+        ],
+        "type": "blick",
+        "delay": 0.8,
+        "von": [
+         50,
+         38
+        ],
+        "dauer": 1.3
+       },
+       {
+        "who": "b2",
+        "to": [
+         34.6,
+         10.1
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n9",
+        "to": [
+         66,
+         50.5
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 29.5,
+      "y1": 58.6,
+      "x2": 70.5,
+      "y2": 58.6,
+      "text": "9 m"
+     },
+     {
+      "x1": 80,
+      "y1": 5,
+      "x2": 80,
+      "y2": 55,
+      "text": "11 m"
+     }
+    ]
+   }
+  }
+ ]
+}

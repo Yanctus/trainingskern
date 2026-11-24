@@ -1,0 +1,1028 @@
+{
+ "title": "Dreierkette mit zwei Sechsern",
+ "code": "UE-400",
+ "kind": "Spielform",
+ "focuses": [
+  "Verteidigen",
+  "Umschalten",
+  "Zusammenspiel"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 12,
+ "players_max": 13,
+ "field_size": "45 x 35 m",
+ "description": "Fünf Verteidiger und ein Torwart verteidigen das große Tor gegen fünf Angreifer. Team Neon steht mit einer Dreierkette und zwei Sechsern davor und verteidigt als Block. Ein langsamer Rückpass ist das Signal zum Anlaufen. Nach dem Ballgewinn spielt Team Neon den Springer an der Endlinie an und kontert auf zwei Minitore.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 45 mal 35 Metern mit Strafraum und großem Tor. An der anderen Endlinie stehen zwei Minitore, davor ist eine schmale Zone für den Springer abgetrennt.",
+  "Verteilen: Team Neon mit Torwart, drei Verteidigern und zwei Sechsern. Team Rot greift mit fünf Spielern an, zwei davon kommen von hinten. Der Springer steht in seiner Zone. Der Trainer steht mit Bällen an der Seitenlinie.",
+  "Ablauf: Der Trainer spielt zu einem der hinteren Spieler von Team Rot, und Team Rot greift das große Tor an. Team Neon verschiebt als Block und läuft beim Rückpass an. Nach dem Ballgewinn spielt Team Neon den Springer an und kontert auf ein Minitor.",
+  "Wertung: Trifft Team Rot ins große Tor, gibt das einen Punkt für Team Rot. Trifft Team Neon nach dem Ballgewinn ins Minitor, gibt das einen Punkt für Team Neon. Danach spielt der Trainer sofort den nächsten Ball zu Team Rot."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Rückpass heißt anlaufen, alle rücken mit",
+  "Die zwei Sechser bleiben eng zusammen",
+  "Ball verloren? Alle zurück, den Strafraum zumachen",
+  "Ball gewonnen? Sofort den Springer suchen"
+ ],
+ "materials": [
+  "1 Großfeldtor",
+  "2 Minitore",
+  "Viele Bälle",
+  "Leibchen in drei Farben"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Dreierkette mit zwei Sechsern. Fünf Verteidiger und ein Torwart gegen fünf Angreifer vor dem eigenen Strafraum. Team Neon verteidigt als Block und kontert nach dem Ballgewinn über den Springer.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 20,
+    "y": 5,
+    "w": 58,
+    "h": 47
+   },
+   {
+    "type": "rect",
+    "x": 23.5,
+    "y": 5,
+    "w": 51,
+    "h": 21
+   },
+   {
+    "type": "rect",
+    "x": 37.4,
+    "y": 5,
+    "w": 23.2,
+    "h": 7
+   },
+   {
+    "type": "line",
+    "x1": 20,
+    "y1": 47,
+    "x2": 78,
+    "y2": 47,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 49,
+    "y": 5,
+    "side": "top",
+    "size": "gross"
+   },
+   {
+    "x": 31,
+    "y": 52,
+    "side": "bottom"
+   },
+   {
+    "x": 67,
+    "y": 52,
+    "side": "bottom"
+   }
+  ],
+  "cones": [],
+  "players": [
+   {
+    "id": "n1",
+    "team": "a",
+    "x": 49,
+    "y": 8,
+    "label": "TW"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 31,
+    "y": 24.5,
+    "label": "2"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 49,
+    "y": 26,
+    "label": "5"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 67,
+    "y": 24.5,
+    "label": "6"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 40,
+    "y": 34,
+    "label": "4"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 58,
+    "y": 34,
+    "label": "8"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 58,
+    "y": 15,
+    "label": "9"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 40,
+    "y": 17,
+    "label": "10"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 22,
+    "y": 31,
+    "label": "11"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 31,
+    "y": 43,
+    "label": "3"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 67,
+    "y": 44,
+    "label": "7"
+   },
+   {
+    "id": "f",
+    "team": "t",
+    "x": 49,
+    "y": 49.5,
+    "label": "F"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 76,
+    "y": 55.3,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 76.6,
+    "y": 55.9
+   },
+   {
+    "id": "s1",
+    "x": 79.5,
+    "y": 55.8
+   },
+   {
+    "id": "s2",
+    "x": 82,
+    "y": 55.8
+   }
+  ],
+  "steps": [
+   {
+    "label": "Trainer spielt ein",
+    "say": "Der Trainer spielt den Ball zu Spieler sieben. Team Neon steht mit drei Verteidigern hinten und zwei Sechsern davor. Alle fünf bleiben eng beisammen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       67.6,
+       44.6
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Quer und raus, Block schiebt",
+    "say": "Spieler sieben spielt quer zu Spieler drei, und der legt raus zu Spieler elf. Spieler zwei geht drauf, und der ganze Block schiebt mit zur Ballseite.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       31.6,
+       43.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       22.6,
+       31.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       27,
+       28
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n4",
+      "to": [
+       36,
+       34
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n5",
+      "to": [
+       45,
+       26.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n6",
+      "to": [
+       62,
+       25
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n8",
+      "to": [
+       52,
+       34.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Rückpass, jetzt anlaufen",
+    "say": "Spieler elf kommt nicht weiter und spielt langsam zurück zu Spieler drei. Das ist das Signal. Spieler vier sieht den Rückpass und läuft sofort an, und hinten rücken alle ein Stück raus.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       31.6,
+       43.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n4",
+      "to": [
+       31,
+       43
+      ],
+      "type": "blick",
+      "delay": 0.2
+     },
+     {
+      "who": "n4",
+      "to": [
+       34,
+       39.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       46,
+       36
+      ],
+      "type": "lauf",
+      "delay": 0.9
+     },
+     {
+      "who": "n2",
+      "to": [
+       27,
+       31
+      ],
+      "type": "lauf",
+      "delay": 0.9
+     },
+     {
+      "who": "n5",
+      "to": [
+       44,
+       29.5
+      ],
+      "type": "lauf",
+      "delay": 0.9
+     },
+     {
+      "who": "n6",
+      "to": [
+       60,
+       28
+      ],
+      "type": "lauf",
+      "delay": 0.9
+     }
+    ]
+   },
+   {
+    "label": "Nach innen zu, Ball erobert",
+    "say": "Spieler drei will nach innen andribbeln. Spieler vier macht den Weg zu, geht dazwischen und hat den Ball.",
+    "moves": [
+     {
+      "who": "r3",
+      "to": [
+       33,
+       42
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n4",
+      "to": [
+       35.5,
+       40
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "b1",
+      "to": [
+       36.1,
+       40.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Über den Springer ins Minitor: Punkt",
+    "say": "Sofort geht der Ball zum Springer. Spieler acht startet, bekommt ihn zurück und schießt ins Minitor, und das gibt einen Punkt für Team Neon. Danach spielt der Trainer gleich den nächsten Ball zu Team Rot.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       49.6,
+       50.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n8",
+      "to": [
+       58,
+       45
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "b1",
+      "to": [
+       58.6,
+       45.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       66,
+       51.5
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 20,
+    "y1": 58.6,
+    "x2": 78,
+    "y2": 58.6,
+    "text": "45 m"
+   },
+   {
+    "x1": 86,
+    "y1": 5,
+    "x2": 86,
+    "y2": 52,
+    "text": "35 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Nicht auseinanderreißen lassen.",
+   "title": "Eng bleiben, Strafraum zu",
+   "text": "Die beiden Sechser bleiben eng zusammen, damit kein Pass durch die Mitte geht. Reißt die Lücke auf, steht es hinten drei gegen drei. Kommt der Ball doch hinter die Kette, laufen alle sofort zurück und machen den Strafraum zu.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 49,
+      "y": 8,
+      "label": "TW"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 31,
+      "y": 24.5,
+      "label": "2"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 49,
+      "y": 26,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 67,
+      "y": 24.5,
+      "label": "6"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 40,
+      "y": 34,
+      "label": "4"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 58,
+      "y": 34,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 58,
+      "y": 15,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 40,
+      "y": 17,
+      "label": "10"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 22,
+      "y": 31,
+      "label": "11"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 31,
+      "y": 43,
+      "label": "3"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 67,
+      "y": 44,
+      "label": "7"
+     },
+     {
+      "id": "f",
+      "team": "t",
+      "x": 49,
+      "y": 49.5,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 76,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 67.6,
+      "y": 44.6
+     },
+     {
+      "id": "s1",
+      "x": 79.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 82,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Die Sechser rücken zusammen",
+      "say": "Spieler sieben hat den Ball. Spieler zehn lässt sich zwischen unsere beiden Sechser fallen. Spieler vier und Spieler acht rücken zusammen, und Spieler fünf geht von hinten mit.",
+      "moves": [
+       {
+        "who": "r10",
+        "to": [
+         49,
+         30.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n4",
+        "to": [
+         44,
+         35
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n8",
+        "to": [
+         54,
+         35
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n5",
+        "to": [
+         49,
+         27
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       }
+      ]
+     },
+     {
+      "label": "Kein Pass durch die Mitte",
+      "say": "Durch die Mitte geht nichts, also spielt Spieler sieben quer zu Spieler drei. Der Block schiebt mit, und die Abstände bleiben klein.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         31.6,
+         43.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n4",
+        "to": [
+         38,
+         36
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n8",
+        "to": [
+         48,
+         36
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n2",
+        "to": [
+         28,
+         26
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n5",
+        "to": [
+         44,
+         27
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n6",
+        "to": [
+         61,
+         25
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Alle zurück, Strafraum zu",
+      "say": "Spieler drei spielt lang auf Spieler elf, der hinter die Kette startet. Jetzt laufen alle zurück. Spieler zwei bleibt an ihm dran, die anderen machen den Strafraum zu.",
+      "moves": [
+       {
+        "who": "r11",
+        "to": [
+         25,
+         19
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         25.6,
+         19.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       },
+       {
+        "who": "n2",
+        "to": [
+         28,
+         18
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n5",
+        "to": [
+         44,
+         15
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "n6",
+        "to": [
+         58,
+         19
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "n4",
+        "to": [
+         37,
+         26
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "n8",
+        "to": [
+         55,
+         29
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 20,
+      "y1": 58.6,
+      "x2": 78,
+      "y2": 58.6,
+      "text": "45 m"
+     },
+     {
+      "x1": 86,
+      "y1": 5,
+      "x2": 86,
+      "y2": 52,
+      "text": "35 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Der Springer spielt für Team Rot mit.",
+   "title": "Springer spielt mit",
+   "text": "Jetzt darf der Springer ins Feld kommen und für Team Rot mitspielen. Dann steht es sechs gegen fünf. Er verteilt die Bälle und verlagert das Spiel. Team Neon muss schneller verschieben und früher entscheiden, wer drauf geht.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 49,
+      "y": 8,
+      "label": "TW"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 31,
+      "y": 24.5,
+      "label": "2"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 49,
+      "y": 26,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 67,
+      "y": 24.5,
+      "label": "6"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 40,
+      "y": 34,
+      "label": "4"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 58,
+      "y": 34,
+      "label": "8"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 58,
+      "y": 15,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 40,
+      "y": 17,
+      "label": "10"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 22,
+      "y": 31,
+      "label": "11"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 31,
+      "y": 43,
+      "label": "3"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 67,
+      "y": 44,
+      "label": "7"
+     },
+     {
+      "id": "f",
+      "team": "t",
+      "x": 49,
+      "y": 49.5,
+      "label": "F"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 76,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 67.6,
+      "y": 44.6
+     },
+     {
+      "id": "s1",
+      "x": 79.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 82,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Der Springer kommt dazu",
+      "say": "Der Springer kommt aus seiner Zone ins Feld, und Spieler sieben spielt ihn an. Jetzt sind es sechs gegen fünf.",
+      "moves": [
+       {
+        "who": "f",
+        "to": [
+         49,
+         41
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         49.6,
+         41.6
+        ],
+        "type": "pass",
+        "delay": 0.4
+       }
+      ]
+     },
+     {
+      "label": "Weit auf die andere Seite",
+      "say": "Der Springer verlagert weit auf Spieler elf. Spieler zwei geht raus, und alle anderen schieben schnell rüber.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         22.6,
+         31.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n2",
+        "to": [
+         24,
+         27
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n4",
+        "to": [
+         33,
+         33
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n5",
+        "to": [
+         42,
+         24.5
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n6",
+        "to": [
+         57,
+         23
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n8",
+        "to": [
+         47,
+         33
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Flanke in die Mitte geklärt",
+      "say": "Spieler fünf schaut kurz über die Schulter zu Spieler neun. Dann kommt die Flanke, und Spieler fünf ist vor ihm am Ball und köpft ihn weg.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         58,
+         15
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "r9",
+        "to": [
+         52,
+         13
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n5",
+        "to": [
+         50.5,
+         14.5
+        ],
+        "type": "lauf",
+        "delay": 1.1
+       },
+       {
+        "who": "b1",
+        "to": [
+         51.1,
+         15.1
+        ],
+        "type": "pass",
+        "delay": 1.2
+       },
+       {
+        "who": "b1",
+        "to": [
+         76,
+         20
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 20,
+      "y1": 58.6,
+      "x2": 78,
+      "y2": 58.6,
+      "text": "45 m"
+     },
+     {
+      "x1": 86,
+      "y1": 5,
+      "x2": 86,
+      "y2": 52,
+      "text": "35 m"
+     }
+    ]
+   }
+  }
+ ]
+}
