@@ -61,8 +61,10 @@ Du baust die Übungen EINER Woche als neue Einheiten (Entity `Einheit`) und läd
 - Schaut ein Spieler erst hier, dann dort (z. B. erst zum Passgeber, dann dorthin, wohin er weiterspielt): EIN Kegel, der
   mitschwenkt, nie zwei Kegel: `bl(who, to=<wohin er als Nächstes spielt>, von=<worauf er zuerst schaut>)`. Der Kegel steht
   kurz auf `von`, dreht hinüber und bleibt genau mittig auf `to` stehen (`to` = Ziel des nächsten Passes).
-  Typische Folge: `bl(..., von=...)`, dann der Pass zu ihm (`after=True`); im nächsten Schritt `drehen(who, to)` und danach
-  sein Pass (`after=True`).
+  WICHTIG, Reihenfolge beim Annehmen und Aufdrehen: Der Blick wechselt ERST NACH der Ballannahme, nicht vorher.
+  Schritt A: `bl(who, <Passgeber>)`, dann der Pass zu ihm (`ps(..., after=True)`). Er schaut also zum Ball, bis er ihn hat.
+  Schritt B: `bl(who, <Passziel>, von=<Passgeber>, dauer=1.3)` (Kegel schwenkt hinüber), dazu `drehen(who, <Passziel>, delay=0.4)`
+  (er dreht auf der Stelle auf), danach sein Pass (`ps(..., after=True)`).
 - Meterangaben (Inhaber, 24.11.2026): Unter 20 m genau lassen, ab 20 m auf Fünferschritte runden (27 -> 25, 36 -> 35, 41 -> 40).
   Das gilt für `field_size`, die Maßlinien (`dims`) und alle Texte (organisation, description, say). Die App rundet die Anzeige
   von field_size und dims zusätzlich selbst; Texte muss man gleich gerundet schreiben.
