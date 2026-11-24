@@ -89,6 +89,8 @@ Erst prüfen, dann rendern. Ein Fehler, der erst im fertigen Video auffällt, ko
 
 ## Storys zum Reel des Tages (Vorgabe vom 24.11.2026)
 
+Ausführliche Anleitung (auch für den Nutzer): `story-studio/ANLEITUNG-STORYS.md`.
+
 Zu jedem Video, das abends als Reel erscheint, gehören drei Story-Bilder (1080 × 1920, Standbilder, kein Video), die den Tag über darauf
 hinführen. Muster des Nutzers:
 
