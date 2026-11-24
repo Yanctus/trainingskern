@@ -146,7 +146,7 @@ c4 += L4.steil("n2", (82, 50), delay=1.4)
 c4 += L4.schieb({"r12": (80, 44), "r15": (78, 34), "r21": (62, 46)}, delay=1.8)
 c4 += L4.schieb({"n9": (80, 30), "n8": (70, 30), "n11": (76, 5), "n6": (50, 34), "n10": (58, 16), "n3": (54, 5)}, delay=1.8)
 c4 += L4.schieb({"r14": (80, 23), "r13": (80, 12), "r18": (64, 36)}, delay=1.8)
-k4.append(S("Außen ist frei", "Der Außenverteidiger vom Gegner rückt rein zum Flügel. Genau dadurch ist außen frei. Also steckt der Flügel durch, in den Lauf vom Außenverteidiger. Und vorn gehen alle in den Strafraum.", *c4))
+k4.append(S("Außen ist frei", "Der Außenverteidiger vom Gegner ist zum Flügel reingerückt. Genau dadurch ist außen frei. Den Stürmer hat sein Gegenspieler zu, der Achter ginge auch. Aber außen ist am meisten Platz, also steckt der Flügel durch, in den Lauf vom Außenverteidiger. Und vorn gehen alle in den Strafraum.", *c4))
 
 u = {"title": "Aufbau im 4-1-4-1", "code": "TA-006", "kind": "Taktik",
  "focuses": ["Passspiel", "Zusammenspiel"], "age_groups": ["D-Jugend", "C-Jugend", "B-Jugend"],
