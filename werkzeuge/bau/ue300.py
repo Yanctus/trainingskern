@@ -1,4 +1,5 @@
 import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe import *
+# 24.11.2026: Spieler acht scannt erst zum Ball (oben), dann nach links (zwei Blickkegel); das Aufdrehen ist ein Drehpfeil (drehen), kein Kegel.
 # PS-83 (U15-U17, Woche 1 Pre-Season): Passing, Agility and Speed Circuit. 40 x 30 Yards = Feld x 20-76, y 8-50 (36 x 27 m).
 # Ausrichtung wie im PDF (Start unten, Ball läuft gegen den Uhrzeigersinn). Nummern wie im PDF (4-11, nur ein Team).
 # Start, Spieler 9 und die Wartenden 4/5 ein Stück nach links gerückt, damit Spieler 9 in 3D nicht vor den Ringen steht;
@@ -48,9 +49,9 @@ u = {"title": "Passzirkel mit Tempo", "code": "UE-300", "kind": "Übungsform",
    S("Steil nach oben, ab in die Ringe", "Jetzt geht es steil nach oben zu Spieler sieben. Spieler neun springt durch die Ringe und sprintet bis zum Hütchen.",
      ps("b1", [52.1, 11.7]), *ringe()),
    S("Pass in die Mitte, über die Hürden", "Spieler acht in der Mitte schaut kurz nach links, dann kommt der Pass von Spieler sieben. Drüben springt Spieler sechs schon über die Hürden.",
-     bl("n8", [25.5, 23]), ps("b1", [43.5, 30.6], after=True), *huerden(delay=0.6), mv("n11", [64, 32], delay=0.2)),
+     bl("n8", [51.5, 13.5]), bl("n8", [25.5, 23], after=True), ps("b1", [43.5, 30.6], after=True), *huerden(delay=0.6), mv("n11", [64, 32], delay=0.2)),
    S("Aufdrehen, Pass nach links", "Spieler acht dreht auf und spielt nach links raus, genau in den Lauf von Spieler sechs. Oben geht Spieler sieben durch die Leiter, Spieler neun rückt nach.",
-     ps("b1", [25.1, 31.1]), *leiterlauf(delay=0.2), mv("n9", [51.5, 11.1], delay=0.8)),
+     drehen("n8", [25.1, 31.1], gegen=True), ps("b1", [25.1, 31.1], after=True), *leiterlauf(delay=0.2), mv("n9", [51.5, 11.1], delay=0.8)),
    S("Tief und Doppelpass", "Weiter nach unten zu Spieler zehn. Der spielt gleich den Doppelpass mit Spieler acht, der ihm ein paar Schritte entgegenkommt.",
      ps("b1", [27.7, 42.1]), mv("n8", [35.2, 35.7], delay=0.2), ps("b1", [35.8, 36.3], after=True)),
    S("Mit Ball zurück zum Start", "Spieler acht legt in den Lauf ab, und Spieler zehn dribbelt mit Tempo zurück zum Start. Alle sind eine Station weitergerückt, nur Spieler acht bleibt in der Mitte. Jetzt startet Spieler fünf.",
@@ -62,9 +63,9 @@ u = {"title": "Passzirkel mit Tempo", "code": "UE-300", "kind": "Übungsform",
     "Der Spieler in der Mitte steht seitlich zum Ball und sieht so beide Seiten. Vor dem Pass geht der Kopf hoch. Mit dem ersten Kontakt dreht er auf, mit dem zweiten spielt er weiter.",
     sp(), [B("b1", 52.1, 11.7)] + WARTE + ERSATZ,
     [S("Seitlich stehen, Kopf hoch", "Spieler acht steht seitlich und nicht mit dem Rücken zum Feld. Bevor der Ball kommt, schaut er nach links zu den Hürden. Dann spielt Spieler sieben.",
-       bl("n8", [25.5, 23]), ps("b1", [43.5, 30.6], after=True)),
+       bl("n8", [51.5, 13.5]), bl("n8", [25.5, 23], after=True), ps("b1", [43.5, 30.6], after=True)),
      S("Erster Kontakt dreht, zweiter passt", "Der erste Kontakt geht schon in die neue Richtung. Mit dem zweiten spielt er flach in den Lauf von Spieler sechs, der gerade über die letzte Hürde kommt.",
-       *huerden(), ps("b1", [25.1, 31.1], delay=1.2))]),
+       *huerden(), drehen("n8", [25.1, 31.1], gegen=True, delay=0.6), ps("b1", [25.1, 31.1], after=True))]),
   V("Coaching-Punkt", "Der zweite Coaching-Punkt: Sauber durch die Geräte, auch wenn die Beine schwer werden.", "Sauber durch die Geräte",
     "In den Ringen, in der Leiter und über den Hürden bleibt die Bewegung sauber. Kurz auf dem Boden, Arme mitnehmen, Oberkörper aufrecht. Wer müde wird, macht die Schritte trotzdem ordentlich und nimmt kein Tempo raus.",
     sp(), [B("b1", 52.1, 11.7)] + WARTE + ERSATZ,

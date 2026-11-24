@@ -363,10 +363,19 @@
      {
       "who": "n8",
       "to": [
+       51.5,
+       13.5
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "n8",
+      "to": [
        25.5,
        23
       ],
-      "type": "blick"
+      "type": "blick",
+      "after": true
      },
      {
       "who": "b1",
@@ -420,12 +429,22 @@
     "say": "Spieler acht dreht auf und spielt nach links raus, genau in den Lauf von Spieler sechs. Oben geht Spieler sieben durch die Leiter, Spieler neun rückt nach.",
     "moves": [
      {
+      "who": "n8",
+      "to": [
+       25.1,
+       31.1
+      ],
+      "type": "dreh",
+      "bend": -1
+     },
+     {
       "who": "b1",
       "to": [
        25.1,
        31.1
       ],
-      "type": "pass"
+      "type": "pass",
+      "after": true
      },
      {
       "who": "n7",
@@ -673,10 +692,19 @@
        {
         "who": "n8",
         "to": [
+         51.5,
+         13.5
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "n8",
+        "to": [
          25.5,
          23
         ],
-        "type": "blick"
+        "type": "blick",
+        "after": true
        },
        {
         "who": "b1",
@@ -720,13 +748,23 @@
         "after": true
        },
        {
+        "who": "n8",
+        "to": [
+         25.1,
+         31.1
+        ],
+        "type": "dreh",
+        "delay": 0.6,
+        "bend": -1
+       },
+       {
         "who": "b1",
         "to": [
          25.1,
          31.1
         ],
         "type": "pass",
-        "delay": 1.2
+        "after": true
        }
       ]
      }

@@ -104,3 +104,10 @@ Je Einheit: Link `https://trainingskern.de/einheiten/<id>`, was vom Original abw
 - Kostenlos: `lesen`, `pruefen`, `vergleichen`, `patch`, Prüfstand-Lauf (nur das Log lesen).
 - Nicht möglich: direkt per curl in die Datenbank schreiben (das App-Token zu holen ist in dieser Umgebung gesperrt). Schreiben nur mit
   `create_entities` und `update_entities`.
+
+## Anleitung für neue Übungen (Stand 24.11.2026)
+Die vollständige Arbeitsanweisung liegt in `werkzeuge/anleitung/`: `AUFTRAG.md` (Ablauf und alle festen Regeln),
+`ZUSATZ.md` (Torwart- und Einzeltraining), `ZUSATZ_U15.md` (Plan U15-U17: Texte auf der Tafel, Sprechtexte ohne KI-Klang).
+Jeder neue Chat liest diese drei Dateien zuerst. Neue Regeln des Inhabers werden dort eingetragen, nicht nur im Chat.
+Zuletzt dazugekommen: Drehpfeil `drehen()` fürs Aufdrehen (kein Blickkegel), Meterangaben ab 20 m in Fünferschritten,
+Leiter `leiter()` und Ring `ring()`, Tags Vorbereitung/Torwart/Einzeltraining, Plan `TK_PLAN=u15`.

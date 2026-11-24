@@ -145,6 +145,15 @@ def svg(board, titel):
             t = m.get("to")
             if not f or not t:
                 continue
+            if m.get("type") == "dreh":
+                # Aufdrehen: Drehpfeil um den Spieler
+                import math
+                s = -1 if (m.get("bend") or 0) < 0 else 1; th = math.atan2(t[1] - f[1], t[0] - f[0]); R = 40
+                a0, a1 = th - s * math.radians(200), th - s * math.radians(25)
+                q0 = (f[0] * 10 + R * math.cos(a0), f[1] * 10 + R * math.sin(a0)); q1 = (f[0] * 10 + R * math.cos(a1), f[1] * 10 + R * math.sin(a1))
+                o.append(f'<path d="M{q0[0]:.1f},{q0[1]:.1f} A{R},{R} 0 0 {1 if s > 0 else 0} {q1[0]:.1f},{q1[1]:.1f}" fill="none" stroke="#d4ff00" stroke-width="6"/>'
+                         f'<circle cx="{q1[0]:.1f}" cy="{q1[1]:.1f}" r="8" fill="#d4ff00"/>')
+                continue
             if m.get("type") == "blick":
                 # Schulterblick: halbtransparenter Kegel, der Spieler bleibt stehen
                 import math

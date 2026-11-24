@@ -10,6 +10,12 @@ def mv(who, to, typ="lauf", delay=None, after=None, bend=0, ball=None):
     return m
 def dr(who, ball, to, **k): return mv(who, to, "dribbling", ball=ball, **k)
 def ps(ball, to, **k): return mv(ball, to, "pass", **k)
+# Aufdrehen: Drehpfeil im Bogen um den Spieler, endet in der Richtung to, in die er aufdreht. gegen=True dreht gegen den
+# Uhrzeigersinn. NICHT den Blickkegel fürs Aufdrehen nehmen: bl() ist nur fürs Schauen/Scannen.
+def drehen(who, to, gegen=False, **k):
+    m = mv(who, to, "dreh", **k)
+    if gegen: m["bend"] = -1
+    return m
 # Schulterblick: Kegel vom Spieler in Richtung to (Länge = Abstand). Zweimal mit after=True = links und rechts scannen.
 def bl(who, to, weite=None, dauer=None, **k):
     m = mv(who, to, "blick", **k)
