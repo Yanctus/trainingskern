@@ -1,0 +1,906 @@
+{
+ "title": "Viererkette mit hoher Linie",
+ "code": "UE-380",
+ "kind": "Spielform",
+ "focuses": [
+  "Verteidigen",
+  "Zusammenspiel",
+  "Umschalten"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 11,
+ "players_max": 13,
+ "field_size": "55 x 45 m",
+ "description": "Die Viererkette mit Torwart verteidigt das große Tor gegen sechs Angreifer. Erst lassen drei Mittelfeldspieler den Ball laufen, und die Kette schiebt mit dem Ball. Geht der Pass auf einen Flügel, presst der Außenverteidiger, und nach dem Rückpass nach innen ist das Spiel frei. Die Kette rückt gemeinsam raus, stellt die Angreifer ins Abseits und kontert nach dem Ballgewinn auf zwei Minitore.",
+ "organisation": [
+  "Aufbauen: Eine Spielfeldhälfte, etwa 55 mal 45 Meter, mit großem Tor und Strafraum. An der Mittellinie eine Zone von 9 Metern Tiefe mit zwei Minitoren in den Ecken und zwei Stangen davor, außen zwei schmale Flügelzonen.",
+  "Verteilen: Team Neon mit Torwart und Viererkette vor dem eigenen Strafraum. Team Rot mit drei Spielern in der Mittelfeldzone, je einem Flügelspieler in den Flügelzonen und einer Spitze. Der Trainer steht mit Bällen an der Mittellinie.",
+  "Ablauf: Der Trainer spielt ins Mittelfeld, und die drei lassen den Ball laufen. Der Pass auf einen Flügel ist das Signal für den Außenverteidiger. Der Flügelspieler dreht ab und spielt zurück nach innen, ab dann ist das Spiel frei und die Kette rückt gemeinsam raus.",
+  "Wertung: Ein Treffer von Team Rot ins große Tor gibt einen Punkt für Team Rot, ein Treffer von Team Neon in ein Minitor einen Punkt für Team Neon. Danach spielt der Trainer den nächsten Ball ins Mittelfeld."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Die Kette schiebt immer mit dem Ball",
+  "Außen pressen, aber nicht zu weit raus",
+  "Über die Schulter schauen, wo die Läufer sind",
+  "Zusammen raus, laut rufen"
+ ],
+ "materials": [
+  "1 Großfeldtor",
+  "2 Minitore",
+  "2 Stangen",
+  "Hütchen für die Zonen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Viererkette mit hoher Linie. Die Kette verteidigt gegen sechs Angreifer, schiebt mit dem Ball, presst außen und rückt gemeinsam raus.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 22,
+    "y": 4,
+    "w": 56,
+    "h": 47
+   },
+   {
+    "type": "rect",
+    "x": 32.7,
+    "y": 4,
+    "w": 34.8,
+    "h": 12.3
+   },
+   {
+    "type": "rect",
+    "x": 41.2,
+    "y": 4,
+    "w": 17.8,
+    "h": 5.2
+   },
+   {
+    "type": "line",
+    "x1": 22,
+    "y1": 44.3,
+    "x2": 78,
+    "y2": 44.3,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 22,
+    "y1": 28.7,
+    "x2": 78,
+    "y2": 28.7,
+    "dashed": true
+   },
+   {
+    "type": "zone",
+    "x": 22,
+    "y": 28.7,
+    "w": 6,
+    "h": 12.8,
+    "color": "orange"
+   },
+   {
+    "type": "zone",
+    "x": 72,
+    "y": 28.7,
+    "w": 6,
+    "h": 12.8,
+    "color": "orange"
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 4,
+    "side": "top",
+    "size": "gross"
+   },
+   {
+    "x": 27,
+    "y": 51,
+    "side": "bottom"
+   },
+   {
+    "x": 73,
+    "y": 51,
+    "side": "bottom"
+   }
+  ],
+  "cones": [
+   {
+    "x": 44,
+    "y": 44.3,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 56.5,
+    "y": 44.3,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n1",
+    "team": "a",
+    "x": 50,
+    "y": 10.5,
+    "label": "TW"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 31,
+    "y": 22.5,
+    "label": "2"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 41.5,
+    "y": 18.5,
+    "label": "4"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 58.5,
+    "y": 18.5,
+    "label": "5"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 69,
+    "y": 22.5,
+    "label": "3"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 50,
+    "y": 27,
+    "label": "9"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 48,
+    "y": 49.5,
+    "label": "6"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 35,
+    "y": 45.5,
+    "label": "10"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 65,
+    "y": 45.5,
+    "label": "8"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 25.5,
+    "y": 38.5,
+    "label": "11"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 74,
+    "y": 38.5,
+    "label": "7"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 56.5,
+    "y": 55.3,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 57.1,
+    "y": 55.9
+   },
+   {
+    "id": "s1",
+    "x": 60,
+    "y": 55.8
+   },
+   {
+    "id": "s2",
+    "x": 62.5,
+    "y": 55.8
+   }
+  ],
+  "steps": [
+   {
+    "label": "Mittelfeld lässt den Ball laufen",
+    "say": "Der Trainer spielt zu Spieler sechs, und der gibt weiter zu Spieler zehn. Noch greift keiner an. Unsere Kette schiebt mit dem Ball zur Seite, alle vier zusammen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       48.6,
+       50.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       35.6,
+       46.1
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       29,
+       23.5
+      ],
+      "type": "lauf",
+      "delay": 1.0
+     },
+     {
+      "who": "n4",
+      "to": [
+       39,
+       19.5
+      ],
+      "type": "lauf",
+      "delay": 1.0
+     },
+     {
+      "who": "n5",
+      "to": [
+       55,
+       19.5
+      ],
+      "type": "lauf",
+      "delay": 1.0
+     },
+     {
+      "who": "n3",
+      "to": [
+       65,
+       22
+      ],
+      "type": "lauf",
+      "delay": 1.0
+     }
+    ]
+   },
+   {
+    "label": "Pass auf den Flügel, Spieler zwei presst",
+    "say": "Spieler zehn spielt raus auf Spieler elf. Das ist das Signal. Spieler zwei läuft ihn an, die anderen drei rücken nach und schieben zur Ballseite.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       26.1,
+       39.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n2",
+      "to": [
+       27,
+       31
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "n4",
+      "to": [
+       37,
+       24
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     },
+     {
+      "who": "n5",
+      "to": [
+       53,
+       22.5
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     },
+     {
+      "who": "n3",
+      "to": [
+       63,
+       25
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     }
+    ]
+   },
+   {
+    "label": "Rückpass nach innen, die Kette rückt raus",
+    "say": "Spieler elf dreht ab und spielt zurück zu Spieler zehn. Ab jetzt ist das Spiel frei. Spieler vier schaut kurz, wo Spieler neun steht, und ruft. Die ganze Kette rückt zusammen raus, Spieler neun steht im Abseits.",
+    "moves": [
+     {
+      "who": "r11",
+      "to": [
+       35,
+       45.5
+      ],
+      "type": "dreh"
+     },
+     {
+      "who": "b1",
+      "to": [
+       35.6,
+       46.1
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n4",
+      "to": [
+       50,
+       27
+      ],
+      "type": "blick",
+      "delay": 0.4
+     },
+     {
+      "who": "n2",
+      "to": [
+       29,
+       32
+      ],
+      "type": "lauf",
+      "delay": 1.6
+     },
+     {
+      "who": "n4",
+      "to": [
+       41,
+       31.5
+      ],
+      "type": "lauf",
+      "delay": 1.6
+     },
+     {
+      "who": "n5",
+      "to": [
+       55,
+       31
+      ],
+      "type": "lauf",
+      "delay": 1.6
+     },
+     {
+      "who": "n3",
+      "to": [
+       64,
+       31.5
+      ],
+      "type": "lauf",
+      "delay": 1.6
+     }
+    ]
+   },
+   {
+    "label": "Abgefangen, ins Minitor: Punkt",
+    "say": "Spieler zehn spielt trotzdem steil. Spieler fünf ist näher dran, geht dazwischen und hat den Ball. Er dribbelt außen vorbei und trifft ins Minitor, und das gibt einen Punkt für Team Neon. Danach spielt der Trainer den nächsten Ball zu Spieler sechs.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       52.1,
+       35.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n5",
+      "to": [
+       51.5,
+       35
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n5",
+      "to": [
+       68,
+       38
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       73,
+       50.5
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 22,
+    "y1": 58.6,
+    "x2": 78,
+    "y2": 58.6,
+    "text": "55 m"
+   },
+   {
+    "x1": 86,
+    "y1": 4,
+    "x2": 86,
+    "y2": 51,
+    "text": "45 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Außen pressen, aber nicht zu weit.",
+   "title": "Pressen, nicht zu weit",
+   "text": "Kommt der Ball auf den Flügel, läuft der Außenverteidiger an, so nah, dass der Flügelspieler nicht aufdrehen kann. Spielt der Flügelspieler zurück, geht der Außenverteidiger sofort zurück in die Kette. Läuft er weiter hinterher, ist hinter ihm ein großes Loch.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 50,
+      "y": 10.5,
+      "label": "TW"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 31,
+      "y": 22.5,
+      "label": "2"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 41.5,
+      "y": 18.5,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 58.5,
+      "y": 18.5,
+      "label": "5"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 69,
+      "y": 22.5,
+      "label": "3"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 50,
+      "y": 27,
+      "label": "9"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 48,
+      "y": 49.5,
+      "label": "6"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 35,
+      "y": 45.5,
+      "label": "10"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 65,
+      "y": 45.5,
+      "label": "8"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 25.5,
+      "y": 38.5,
+      "label": "11"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 74,
+      "y": 38.5,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 56.5,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 65.6,
+      "y": 46.1
+     },
+     {
+      "id": "s1",
+      "x": 60,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 62.5,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Pass raus, Spieler drei presst",
+      "say": "Spieler acht spielt raus auf Spieler sieben. Spieler drei läuft ihn an, aber nicht blind. Er bleibt so nah, dass Spieler sieben nicht aufdrehen kann. Die anderen schieben rüber.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         74.6,
+         39.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n3",
+        "to": [
+         73,
+         31
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "n5",
+        "to": [
+         60,
+         21
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       },
+       {
+        "who": "n4",
+        "to": [
+         46,
+         20.5
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       },
+       {
+        "who": "n2",
+        "to": [
+         36,
+         21
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       }
+      ]
+     },
+     {
+      "label": "Sofort zurück in die Kette",
+      "say": "Spieler sieben dreht ab und spielt zurück. Jetzt läuft Spieler drei nicht weiter hinterher. Er geht sofort zurück in die Kette, sonst ist hinter ihm ein großes Loch.",
+      "moves": [
+       {
+        "who": "r7",
+        "to": [
+         65,
+         45.5
+        ],
+        "type": "dreh",
+        "bend": -1
+       },
+       {
+        "who": "b1",
+        "to": [
+         65.6,
+         46.1
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n3",
+        "to": [
+         68,
+         24.5
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Zwei aus dem Mittelfeld greifen mit an.",
+   "title": "Fünf gegen vier",
+   "text": "Nach dem Pass auf die Spitze dürfen zwei Mittelfeldspieler mit angreifen, und es steht fünf gegen vier. Die Kette muss jetzt genauer entscheiden, wann sie rausrückt. Weil sie hoch steht, steht auch der Torwart hoch und läuft Bälle hinter der Kette ab.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 50,
+      "y": 10.5,
+      "label": "TW"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 31,
+      "y": 22.5,
+      "label": "2"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 41.5,
+      "y": 18.5,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 58.5,
+      "y": 18.5,
+      "label": "5"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 69,
+      "y": 22.5,
+      "label": "3"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 50,
+      "y": 27,
+      "label": "9"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 48,
+      "y": 49.5,
+      "label": "6"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 35,
+      "y": 45.5,
+      "label": "10"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 65,
+      "y": 45.5,
+      "label": "8"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 25.5,
+      "y": 38.5,
+      "label": "11"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 74,
+      "y": 38.5,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 56.5,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 35.6,
+      "y": 46.1
+     },
+     {
+      "id": "s1",
+      "x": 60,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 62.5,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Steil, prallen lassen, nachrücken",
+      "say": "Spieler zehn spielt steil auf Spieler neun. Der lässt den Ball prallen auf Spieler sechs, der nachrückt. Jetzt greifen Spieler sechs und Spieler zehn mit an. Fünf gegen vier.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         27.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n5",
+        "to": [
+         55,
+         24
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "r6",
+        "to": [
+         48,
+         38
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "b1",
+        "to": [
+         48.6,
+         38.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "r10",
+        "to": [
+         38,
+         33
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       }
+      ]
+     },
+     {
+      "label": "Torwart steht hoch",
+      "say": "Unser Torwart rückt mit der Kette auf und steht vor dem Tor, nicht auf der Linie. Er schaut, was Spieler sechs vorhat.",
+      "moves": [
+       {
+        "who": "n1",
+        "to": [
+         50,
+         17
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n1",
+        "to": [
+         48.6,
+         38.6
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Ball hinter die Kette, Torwart ist da",
+      "say": "Spieler sechs spielt den Ball hinter die Kette, Spieler elf startet. Der Torwart ist zuerst am Ball und fängt ihn. Jetzt geht es schnell auf die Minitore.",
+      "moves": [
+       {
+        "who": "r11",
+        "to": [
+         26,
+         24
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r11",
+        "to": [
+         30,
+         16
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         34,
+         12
+        ],
+        "type": "pass",
+        "delay": 0.3
+       },
+       {
+        "who": "n1",
+        "to": [
+         33.4,
+         11.4
+        ],
+        "type": "lauf",
+        "delay": 0.5
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

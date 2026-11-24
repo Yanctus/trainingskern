@@ -1,0 +1,799 @@
+{
+ "title": "Kombinieren, dann in die Tiefe",
+ "code": "UE-382",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Ballannahme",
+  "Torschuss"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 4,
+ "players_max": 8,
+ "field_size": "14 x 14 m",
+ "description": "Ein festes Passmuster zu dritt um drei Dummys. Der Ball läuft vom Start zum Spieler am mittleren Dummy, zurück und wieder hin, dann quer nach außen und noch einmal zurück. Zum Schluss geht ein Steilpass zwischen zwei Dummys durch, der Läufer nimmt an und schließt ins Minitor ab. Danach rückt jeder eine Position weiter.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 14 mal 14 Metern. Oben in der Ecke steht ein Minitor an der Seitenlinie, im Feld stehen drei Dummys. Unten markieren zwei Hütchen den Start.",
+  "Verteilen: Drei Spieler sind pro Durchgang dabei, einer am Start, einer am mittleren Dummy und einer außen neben den beiden anderen Dummys. Die übrigen warten mit Ball hinter dem Start. Der Trainer steht mit Ersatzbällen an der Ecke.",
+  "Ablauf: Pass zum Spieler am Dummy und Ablage. Er dreht sich um den Dummy, bekommt den Ball noch einmal und spielt quer nach außen. Von dort kommt die Ablage auf den Starter, der zwischen den Dummys durchspielt. Der Läufer nimmt an und schließt ab.",
+  "Wechsel: Nach jedem Durchgang rückt jeder eine Position weiter, der Schütze holt seinen Ball und stellt sich am Start an. Jeder Treffer gibt einen Punkt."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Zweimal bewegen, erst weg, dann zum Ball",
+  "Erster Kontakt vom Fuß weg, der zweite ist der Schuss",
+  "Scharf und genau passen",
+  "Kein Torwart, also in die Ecken zielen"
+ ],
+ "materials": [
+  "1 Minitor",
+  "3 Dummys",
+  "2 Hütchen",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Kombinieren, dann in die Tiefe. Drei Spieler spielen sich um drei Dummys herum, bis einer hinter die Dummys startet und abschließt.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 28,
+    "y": 5,
+    "w": 44,
+    "h": 44
+   },
+   {
+    "type": "line",
+    "x1": 28,
+    "y1": 43,
+    "x2": 72,
+    "y2": 43,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 28,
+    "y": 10.8,
+    "side": "left"
+   }
+  ],
+  "cones": [
+   {
+    "x": 49.1,
+    "y": 29.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 55.7,
+    "y": 21.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 66,
+    "y": 21.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 44,
+    "y": 49,
+    "color": "orange"
+   },
+   {
+    "x": 56.9,
+    "y": 49,
+    "color": "neon"
+   }
+  ],
+  "players": [
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 49.5,
+    "y": 50.3,
+    "label": "11"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 43.4,
+    "y": 29.4,
+    "label": "8"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 69.5,
+    "y": 25,
+    "label": "10"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 37.5,
+    "y": 54,
+    "label": "6"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 59.5,
+    "y": 54,
+    "label": "7"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 68,
+    "y": 54,
+    "label": "9"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 20,
+    "y": 45,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 50.1,
+    "y": 50.9
+   },
+   {
+    "id": "b6",
+    "x": 38.1,
+    "y": 54.6
+   },
+   {
+    "id": "b7",
+    "x": 60.1,
+    "y": 54.6
+   },
+   {
+    "id": "b9",
+    "x": 68.6,
+    "y": 54.6
+   },
+   {
+    "id": "s1",
+    "x": 17.5,
+    "y": 49.5
+   },
+   {
+    "id": "s2",
+    "x": 20.5,
+    "y": 50.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pass und Ablage",
+    "say": "Spieler elf startet und spielt flach zu Spieler acht am Dummy. Dann geht er ein paar Schritte nach. Spieler acht legt mit einem Kontakt zurück.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       44.0,
+       30.0
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n11",
+      "to": [
+       50.1,
+       41.4
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.7,
+       42.0
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Um den Dummy, der zweite Pass",
+    "say": "Spieler acht geht erst einen Schritt weg und dreht sich dann um den Dummy. Er schaut zum Ball. Spieler elf spielt ihn noch einmal an.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       41.5,
+       32.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n8",
+      "to": [
+       44.5,
+       25
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       50.1,
+       41.4
+      ],
+      "type": "blick",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       45.1,
+       25.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Aufdrehen und quer nach außen",
+    "say": "Er nimmt mit dem hinteren Fuß an und dreht auf. Sofort geht der Ball quer zu Spieler zehn. Spieler elf läuft schräg nach.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       69.5,
+       25
+      ],
+      "type": "blick",
+      "von": [
+       50.1,
+       41.4
+      ],
+      "dauer": 1.3
+     },
+     {
+      "who": "n8",
+      "to": [
+       69.5,
+       25
+      ],
+      "type": "dreh",
+      "delay": 0.4,
+      "bend": -1
+     },
+     {
+      "who": "b1",
+      "to": [
+       70.1,
+       25.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n11",
+      "to": [
+       57.7,
+       38.3
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Ablage, dann durch die Dummys",
+    "say": "Spieler zehn legt zurück auf Spieler elf und startet hinter die Dummys. Spieler elf spielt den Ball flach zwischen den beiden Dummys durch, genau in den Lauf.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       58.3,
+       38.9
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n10",
+      "to": [
+       70.5,
+       17.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n10",
+      "to": [
+       62,
+       14
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       62.6,
+       14.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Annehmen und abschließen: Punkt",
+    "say": "Spieler zehn nimmt den Ball Richtung Tor mit und schießt ins Eck, und das gibt einen Punkt für Spieler zehn. Dann rückt jeder weiter. Spieler elf geht an den Dummy, Spieler acht nach außen, und Spieler zehn stellt sich hinten an. Jetzt startet Spieler sechs.",
+    "moves": [
+     {
+      "who": "n10",
+      "to": [
+       55,
+       12
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       28.4,
+       12.5
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n6",
+      "to": [
+       49.5,
+       50.3
+      ],
+      "type": "dribbling",
+      "delay": 1.2,
+      "ball": "b6"
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 28,
+    "y1": 58.6,
+    "x2": 72,
+    "y2": 58.6,
+    "text": "14 m"
+   },
+   {
+    "x1": 80,
+    "y1": 5,
+    "x2": 80,
+    "y2": 49,
+    "text": "14 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Der erste Kontakt geht vom Fuß weg.",
+   "title": "Erster Kontakt vom Fuß weg",
+   "text": "Kommt der Steilpass, nimmt der Läufer den Ball nicht unter den Körper. Der erste Kontakt legt ihn einen Schritt vor, schräg Richtung Tor. Mit dem zweiten Kontakt kommt schon der Schuss. Ohne Torwart zielt jeder in die Ecken, mit links und mit rechts.",
+   "board": {
+    "players": [
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 57.7,
+      "y": 38.3,
+      "label": "11"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 44.5,
+      "y": 25,
+      "label": "8"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 69.5,
+      "y": 25,
+      "label": "10"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 37.5,
+      "y": 54,
+      "label": "6"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 59.5,
+      "y": 54,
+      "label": "7"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 68,
+      "y": 54,
+      "label": "9"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 20,
+      "y": 45,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 58.3,
+      "y": 38.9
+     },
+     {
+      "id": "b6",
+      "x": 38.1,
+      "y": 54.6
+     },
+     {
+      "id": "b7",
+      "x": 60.1,
+      "y": 54.6
+     },
+     {
+      "id": "b9",
+      "x": 68.6,
+      "y": 54.6
+     },
+     {
+      "id": "s1",
+      "x": 17.5,
+      "y": 49.5
+     },
+     {
+      "id": "s2",
+      "x": 20.5,
+      "y": 50.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Starten, dann der Steilpass",
+      "say": "Spieler elf hat den Ball wieder. Spieler zehn startet hinter die Dummys, und der Pass kommt flach zwischen den beiden durch.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         70.5,
+         17.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n10",
+        "to": [
+         62,
+         14
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         62.6,
+         14.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Erster Kontakt raus, zweiter ins Eck",
+      "say": "Der erste Kontakt geht einen Schritt vor Richtung Tor. Mit dem zweiten schießt Spieler zehn flach ins Eck, und das gibt einen Punkt für Spieler zehn.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         55,
+         12
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         28.4,
+         8.8
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 28,
+      "y1": 58.6,
+      "x2": 72,
+      "y2": 58.6,
+      "text": "14 m"
+     },
+     {
+      "x1": 80,
+      "y1": 5,
+      "x2": 80,
+      "y2": 49,
+      "text": "14 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Ein Verteidiger wartet vor dem Tor auf den Läufer.",
+   "title": "Eins gegen eins vor dem Tor",
+   "text": "Ein Spieler von Team Rot wird zum Verteidiger. Der Läufer muss ihn nach dem Steilpass im eins gegen eins schlagen. Geschossen wird erst, wenn er über die gestrichelte Linie in die zweite Zone vor dem Tor gedribbelt ist. Erobert der Verteidiger den Ball, dribbelt er über die Linie gegenüber vom Tor und bekommt den Punkt.",
+   "board": {
+    "players": [
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 57.7,
+      "y": 38.3,
+      "label": "11"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 44.5,
+      "y": 25,
+      "label": "8"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 69.5,
+      "y": 25,
+      "label": "10"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 37.5,
+      "y": 54,
+      "label": "6"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 59.5,
+      "y": 54,
+      "label": "7"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 68,
+      "y": 54,
+      "label": "9"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 52,
+      "y": 9,
+      "label": "5"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 20,
+      "y": 45,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 58.3,
+      "y": 38.9
+     },
+     {
+      "id": "b6",
+      "x": 38.1,
+      "y": 54.6
+     },
+     {
+      "id": "b7",
+      "x": 60.1,
+      "y": 54.6
+     },
+     {
+      "id": "b9",
+      "x": 68.6,
+      "y": 54.6
+     },
+     {
+      "id": "s1",
+      "x": 17.5,
+      "y": 49.5
+     },
+     {
+      "id": "s2",
+      "x": 20.5,
+      "y": 50.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Steilpass, der Verteidiger kommt",
+      "say": "Spieler zehn startet, und Spieler elf spielt durch die Dummys. Spieler fünf kommt sofort raus und stellt sich ihm in den Weg.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         70.5,
+         17.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n10",
+        "to": [
+         62,
+         14
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         62.6,
+         14.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "r5",
+        "to": [
+         56.5,
+         11.5
+        ],
+        "type": "lauf",
+        "delay": 0.8
+       }
+      ]
+     },
+     {
+      "label": "Täuschen und vorbei",
+      "say": "Spieler zehn täuscht nach außen an und zieht dann innen vorbei. Mit Tempo dribbelt er über die Linie in die zweite Zone.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         58.5,
+         17.5
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n10",
+        "to": [
+         44,
+         13
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "r5",
+        "to": [
+         51,
+         9.5
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       }
+      ]
+     },
+     {
+      "label": "In der zweiten Zone: Punkt",
+      "say": "Jetzt darf er schießen. Flach ins lange Eck, und das gibt einen Punkt für Spieler zehn. Holt sich Spieler fünf den Ball, dribbelt er über die Linie gegenüber, und das gibt einen Punkt für Spieler fünf.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         28.4,
+         8.8
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ],
+    "lines": [
+     {
+      "type": "rect",
+      "x": 28,
+      "y": 5,
+      "w": 44,
+      "h": 44
+     },
+     {
+      "type": "line",
+      "x1": 28,
+      "y1": 43,
+      "x2": 72,
+      "y2": 43,
+      "dashed": true
+     },
+     {
+      "type": "line",
+      "x1": 46,
+      "y1": 5,
+      "x2": 46,
+      "y2": 43,
+      "dashed": true
+     }
+    ],
+    "dims": [
+     {
+      "x1": 28,
+      "y1": 58.6,
+      "x2": 72,
+      "y2": 58.6,
+      "text": "14 m"
+     },
+     {
+      "x1": 80,
+      "y1": 5,
+      "x2": 80,
+      "y2": 49,
+      "text": "14 m"
+     }
+    ]
+   }
+  }
+ ]
+}

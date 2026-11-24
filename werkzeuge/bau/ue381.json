@@ -1,0 +1,1012 @@
+{
+ "title": "Sechs gegen vier, dann Konter",
+ "code": "UE-381",
+ "kind": "Spielform",
+ "focuses": [
+  "Umschalten",
+  "Torschuss",
+  "Zusammenspiel"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 18,
+ "players_max": 18,
+ "field_size": "50 x 40 m",
+ "description": "Acht gegen acht plus zwei Torhüter auf einer Platzhälfte mit zwei Bereichen. Vorn greift Team Neon mit sechs Spielern gegen vier Verteidiger an und muss nach spätestens sechs Pässen schießen. Geht der Schuss vorbei oder kommt keiner, spielt der Trainer sofort einen Ball nach hinten, und Team Rot kontert vier gegen zwei auf das andere Tor. So wechseln Abschluss und schnelles Umschalten ständig.",
+ "organisation": [
+  "Aufbauen: Eine Platzhälfte von 50 mal 40 Metern über die volle Breite, ein großes Tor auf der Grundlinie und eins auf der Mittellinie. Eine gestrichelte Linie teilt das Feld in den Bereich für das sechs gegen vier und den Bereich für den Konter.",
+  "Verteilen: Vorn greifen sechs Spieler von Team Neon gegen vier Verteidiger von Team Rot an. Die zwei Flügelspieler von Team Rot dürfen nicht mit verteidigen. Hinten warten zwei Spitzen von Team Rot gegen zwei Verteidiger von Team Neon. In jedem Tor steht ein Torwart, der Trainer steht mit vielen Bällen an der Seitenlinie.",
+  "Ablauf: Der Trainer spielt ins sechs gegen vier, Team Neon hat höchstens sechs Pässe bis zum Abschluss. Geht der Schuss vorbei oder kommt keiner, spielt der Trainer einen neuen Ball nach hinten, und die vier Angreifer von Team Rot kontern gegen zwei. Erobert ein Verteidiger den Ball, spielt er ihn sofort nach vorn zu seinen Angreifern.",
+  "Wertung und Wechsel: Jeder Treffer gibt einen Punkt. Danach spielt der Trainer wieder im sechs gegen vier an. Nach einigen Minuten tauschen die Teams die Aufgaben."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Bewegen, bis einer frei ist",
+  "Spätestens nach sechs Pässen schießen",
+  "Ball erobert? Sofort nach vorn",
+  "Kurze Doppelpässe am Strafraum"
+ ],
+ "materials": [
+  "2 große Tore",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Sechs gegen vier, dann Konter. Vorn greift Team Neon in Überzahl an. Klappt es nicht, kontert Team Rot sofort auf der anderen Seite.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 14,
+    "y": 4,
+    "w": 72,
+    "h": 48
+   },
+   {
+    "type": "rect",
+    "x": 21,
+    "y": 4,
+    "w": 58,
+    "h": 19.3
+   },
+   {
+    "type": "rect",
+    "x": 37,
+    "y": 4,
+    "w": 26,
+    "h": 6.4
+   },
+   {
+    "type": "line",
+    "x1": 14,
+    "y1": 29.5,
+    "x2": 86,
+    "y2": 29.5,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 4,
+    "side": "top",
+    "size": "gross"
+   },
+   {
+    "x": 50,
+    "y": 52,
+    "side": "bottom",
+    "size": "gross"
+   }
+  ],
+  "cones": [],
+  "players": [
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 50,
+    "y": 5,
+    "label": "TW"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 41.5,
+    "y": 10.5,
+    "label": "2"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 58.5,
+    "y": 10.5,
+    "label": "3"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 50,
+    "y": 20.5,
+    "label": "9"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 33,
+    "y": 17,
+    "label": "10"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 67,
+    "y": 17,
+    "label": "6"
+   },
+   {
+    "id": "r12",
+    "team": "b",
+    "x": 41.5,
+    "y": 26.5,
+    "label": "12"
+   },
+   {
+    "id": "r13",
+    "team": "b",
+    "x": 58.5,
+    "y": 26.5,
+    "label": "13"
+   },
+   {
+    "id": "r14",
+    "team": "b",
+    "x": 16,
+    "y": 24,
+    "label": "14"
+   },
+   {
+    "id": "r15",
+    "team": "b",
+    "x": 84,
+    "y": 24,
+    "label": "15"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 24.5,
+    "y": 33,
+    "label": "11"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 75.5,
+    "y": 33,
+    "label": "7"
+   },
+   {
+    "id": "r16",
+    "team": "b",
+    "x": 33,
+    "y": 34,
+    "label": "16"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 67,
+    "y": 34,
+    "label": "8"
+   },
+   {
+    "id": "r17",
+    "team": "b",
+    "x": 50,
+    "y": 36,
+    "label": "17"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 41.5,
+    "y": 43.5,
+    "label": "5"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 58.5,
+    "y": 43.5,
+    "label": "4"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 50,
+    "y": 51.5,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 7.5,
+    "y": 29.5,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 8.1,
+    "y": 30.1
+   },
+   {
+    "id": "s1",
+    "x": 5.5,
+    "y": 34
+   },
+   {
+    "id": "s2",
+    "x": 8,
+    "y": 35.5
+   },
+   {
+    "id": "b2",
+    "x": 5.8,
+    "y": 31
+   }
+  ],
+  "steps": [
+   {
+    "label": "Trainer spielt ins sechs gegen vier",
+    "say": "Der Trainer spielt Spieler elf auf dem Flügel an. Vorn hat Team Neon jetzt sechs gegen vier, denn die Flügelspieler von Team Rot dürfen nicht mit zurück. Nach spätestens sechs Pässen muss der Schuss kommen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       25.1,
+       33.6
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Andribbeln, vier gehen in den Strafraum",
+    "say": "Spieler elf dribbelt die Linie runter. Vier Mitspieler laufen in den Strafraum. Spieler acht bleibt hinter dem Strafraum für den zweiten Ball.",
+    "moves": [
+     {
+      "who": "n11",
+      "to": [
+       24,
+       14
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n10",
+      "to": [
+       37,
+       9
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n9",
+      "to": [
+       50,
+       15
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n6",
+      "to": [
+       60,
+       6.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n7",
+      "to": [
+       70,
+       17
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n8",
+      "to": [
+       52,
+       30
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "r12",
+      "to": [
+       36,
+       23
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     }
+    ]
+   },
+   {
+    "label": "Kopf hoch, Flanke, knapp vorbei",
+    "say": "Spieler elf nimmt den Kopf hoch und sieht Spieler neun in der Mitte. Flanke, Spieler neun schießt direkt, knapp vorbei. Ein Treffer hätte einen Punkt für Team Neon gegeben.",
+    "moves": [
+     {
+      "who": "n11",
+      "to": [
+       44,
+       14.8
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       15.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       58.5,
+       2.5
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Kein Treffer, der Konter läuft",
+    "say": "Kein Treffer, also spielt der Trainer sofort nach hinten zu Spieler sechzehn. Jetzt kontert Team Rot vier gegen zwei. Die beiden Flügelspieler sprinten mit nach vorn.",
+    "moves": [
+     {
+      "who": "b2",
+      "to": [
+       33.6,
+       34.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r16",
+      "to": [
+       37,
+       40
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "r14",
+      "to": [
+       24,
+       44
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "r15",
+      "to": [
+       74,
+       44
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "Vier gegen zwei: Punkt",
+    "say": "Spieler sechzehn spielt in die Mitte zu Spieler siebzehn. Spieler fünf geht drauf, also legt Spieler siebzehn raus auf Spieler fünfzehn. Der schießt aus vollem Lauf, und das gibt einen Punkt für Team Rot. Danach spielt der Trainer wieder im sechs gegen vier an.",
+    "moves": [
+     {
+      "who": "b2",
+      "to": [
+       50.6,
+       36.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n5",
+      "to": [
+       46,
+       39.5
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "b2",
+      "to": [
+       74.6,
+       44.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b2",
+      "to": [
+       54,
+       51.7
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 14,
+    "y1": 58.6,
+    "x2": 86,
+    "y2": 58.6,
+    "text": "50 m"
+   },
+   {
+    "x1": 93,
+    "y1": 4,
+    "x2": 93,
+    "y2": 52,
+    "text": "40 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Den freien Mitspieler finden.",
+   "title": "Den freien Mann finden",
+   "text": "Sechs gegen vier heißt, zwei sind immer frei. Der Ballführer nimmt den Kopf hoch und sucht sie. Die anderen bewegen sich so, dass ein Verteidiger rausmuss und hinter ihm Platz entsteht. Rund um den Strafraum hilft ein schneller Doppelpass.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 50,
+      "y": 5,
+      "label": "TW"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 41.5,
+      "y": 10.5,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 58.5,
+      "y": 10.5,
+      "label": "3"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 50,
+      "y": 20.5,
+      "label": "9"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 33,
+      "y": 17,
+      "label": "10"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 67,
+      "y": 17,
+      "label": "6"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 41.5,
+      "y": 26.5,
+      "label": "12"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 58.5,
+      "y": 26.5,
+      "label": "13"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 16,
+      "y": 24,
+      "label": "14"
+     },
+     {
+      "id": "r15",
+      "team": "b",
+      "x": 84,
+      "y": 24,
+      "label": "15"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 24.5,
+      "y": 33,
+      "label": "11"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 75.5,
+      "y": 33,
+      "label": "7"
+     },
+     {
+      "id": "r16",
+      "team": "b",
+      "x": 33,
+      "y": 34,
+      "label": "16"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 67,
+      "y": 34,
+      "label": "8"
+     },
+     {
+      "id": "r17",
+      "team": "b",
+      "x": 50,
+      "y": 36,
+      "label": "17"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 41.5,
+      "y": 43.5,
+      "label": "5"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 58.5,
+      "y": 43.5,
+      "label": "4"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 50,
+      "y": 51.5,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 7.5,
+      "y": 29.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 67.6,
+      "y": 34.6
+     },
+     {
+      "id": "s1",
+      "x": 5.5,
+      "y": 34
+     },
+     {
+      "id": "s2",
+      "x": 8,
+      "y": 35.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Kopf hoch, wer ist frei?",
+      "say": "Spieler acht dribbelt an. Spieler dreizehn muss raus und geht auf ihn drauf. Damit ist Spieler sechs frei. Spieler acht schaut hoch, sieht ihn und spielt.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         62,
+         31
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "r13",
+        "to": [
+         59.5,
+         28
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n8",
+        "to": [
+         67,
+         17
+        ],
+        "type": "blick",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         67.6,
+         17.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Doppelpass am Strafraum",
+      "say": "Spieler sechs spielt direkt in die Mitte zu Spieler neun und startet sofort in den Strafraum. Spieler neun lässt den Ball mit einem Kontakt in seinen Lauf prallen.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         21.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n6",
+        "to": [
+         64,
+         10
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         64.6,
+         10.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Abschluss: Punkt",
+      "say": "Spieler sechs schießt flach ins kurze Eck, und das gibt einen Punkt für Team Neon. Danach spielt der Trainer den nächsten Ball ins sechs gegen vier.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         55,
+         4.3
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 14,
+      "y1": 58.6,
+      "x2": 86,
+      "y2": 58.6,
+      "text": "50 m"
+     },
+     {
+      "x1": 93,
+      "y1": 4,
+      "x2": 93,
+      "y2": 52,
+      "text": "40 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Die Flügelspieler von Team Rot verteidigen mit.",
+   "title": "Flügel verteidigen jetzt mit",
+   "text": "Die Sperre fällt weg. Die Flügelspieler von Team Rot dürfen zurück, es steht sechs gegen sechs. Jetzt müssen die Angreifer ihre Verteidiger bewegen. Erst kurz zum Ball kommen, dann in die Tiefe starten, und die Lücke ist offen.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 50,
+      "y": 5,
+      "label": "TW"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 41.5,
+      "y": 10.5,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 58.5,
+      "y": 10.5,
+      "label": "3"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 50,
+      "y": 20.5,
+      "label": "9"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 33,
+      "y": 17,
+      "label": "10"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 67,
+      "y": 17,
+      "label": "6"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 41.5,
+      "y": 26.5,
+      "label": "12"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 58.5,
+      "y": 26.5,
+      "label": "13"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 16,
+      "y": 24,
+      "label": "14"
+     },
+     {
+      "id": "r15",
+      "team": "b",
+      "x": 84,
+      "y": 24,
+      "label": "15"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 24.5,
+      "y": 33,
+      "label": "11"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 75.5,
+      "y": 33,
+      "label": "7"
+     },
+     {
+      "id": "r16",
+      "team": "b",
+      "x": 33,
+      "y": 34,
+      "label": "16"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 67,
+      "y": 34,
+      "label": "8"
+     },
+     {
+      "id": "r17",
+      "team": "b",
+      "x": 50,
+      "y": 36,
+      "label": "17"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 41.5,
+      "y": 43.5,
+      "label": "5"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 58.5,
+      "y": 43.5,
+      "label": "4"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 50,
+      "y": 51.5,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 7.5,
+      "y": 29.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 8.1,
+      "y": 30.1
+     },
+     {
+      "id": "s1",
+      "x": 5.5,
+      "y": 34
+     },
+     {
+      "id": "s2",
+      "x": 8,
+      "y": 35.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Die Flügel laufen mit zurück",
+      "say": "Der Trainer spielt Spieler elf an. Sofort laufen beide Flügelspieler von Team Rot mit zurück. Spieler vierzehn stellt Spieler elf.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         25.1,
+         33.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r14",
+        "to": [
+         21,
+         27.5
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "r15",
+        "to": [
+         79.5,
+         20
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Kurz zeigen, dann in die Tiefe",
+      "say": "Spieler neun kommt kurz zum Ball, und Spieler zwölf geht mit. Dann dreht Spieler neun ab und startet in die Tiefe. Spieler elf schaut hoch und spielt in den Lauf.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         46,
+         24.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r12",
+        "to": [
+         43,
+         23.5
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n9",
+        "to": [
+         51,
+         12
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n11",
+        "to": [
+         42,
+         19
+        ],
+        "type": "blick",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         51.6,
+         12.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Allein vor dem Torwart: Punkt",
+      "say": "Spieler neun ist durch und schiebt am Torwart vorbei ins Eck, und das gibt einen Punkt für Team Neon. Danach geht es weiter wie gehabt.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         45.5,
+         4.3
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 14,
+      "y1": 58.6,
+      "x2": 86,
+      "y2": 58.6,
+      "text": "50 m"
+     },
+     {
+      "x1": 93,
+      "y1": 4,
+      "x2": 93,
+      "y2": 52,
+      "text": "40 m"
+     }
+    ]
+   }
+  }
+ ]
+}

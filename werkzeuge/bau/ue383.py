@@ -4,7 +4,7 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # Ausrichtung wie im PDF: großes Tor mit neutralem Torwart oben (Großfeldtor, nur C- und B-Jugend), zwei Minitore unten in den
 # Ecken (im PDF schräg, hier gerade). Feld x 23-77, y 4-52, in beiden Richtungen fast derselbe Maßstab. Kein Großfeld und kein
 # langes Feld (Verhältnis 1,1). Strafraum und Torraum in den Maßen der Skizze.
-# Navy (Angreifer) -> Team Neon mit den Nummern aus dem PDF (9, 11, 7; Wartende 3 und 2 neben der Zone, 4, 10 und 6 nur im Text).
+# Navy (Angreifer) -> Team Neon mit den Nummern aus dem PDF (9, 11, 7; Wartende 3 und 2 außen neben dem Feld, 4, 10 und 6 nur im Text).
 # Pink (Verteidiger) -> Team Rot, neu nummeriert (Nummern doppelt): 4 -> 12, 6 -> 13, 5 bleibt.
 # Ein Trainer statt zwei, unten in der Mitte (PDF: „coach positioned at the base of the pitch initiates play“).
 # 3D-Abstand: Spieler fünf und Spieler neun stehen nicht hintereinander wie im PDF, Spieler neun steht halbrechts.
@@ -18,7 +18,7 @@ T = P("T", "c", 50, 55.5, "T")  # unten in der Mitte hinter der Linie
 ERSATZ = [B("s1", 53.5, 56), B("s2", 56, 56)]
 TW = P("k", "t", 50, 6, "TW")
 POS = {"r5": (50, 21.5), "r12": (35, 22), "r13": (67, 22), "n9": (58.5, 25), "n11": (26.5, 28), "n7": (75.5, 35.5),
-       "n3": (15, 36), "n2": (85, 36)}
+       "n3": (15.5, 47), "n2": (84.5, 47)}
 def sp(extra=(), **k):
     d = dict(POS); d.update(k)
     return [P(i, "a" if i[0] == "n" else "b", x, y, i[1:]) for i, (x, y) in d.items()] + list(extra) + [TW, T]
@@ -36,7 +36,7 @@ u = {"title": "Flügel und Spitze im 3 gegen 3", "code": "UE-383", "kind": "Spie
  "altersbereiche": ["U15-U17"], "duration_minutes": 15, "players_min": 7, "players_max": 12,
  "field_size": "45 x 40 m",
  "description": "Drei Angreifer spielen gegen drei Verteidiger auf ein großes Tor mit Torwart. Der Trainer spielt einen Flügelspieler in einer Zone an, der sofort auf die Abwehr zudribbelt. Mit Läufen der Spitze und Kombinationen über den Flügel spielen sich die Angreifer zum Abschluss. Erobert Team Rot den Ball, kontert es auf zwei Minitore.",
- "organisation": ["Aufbauen: Ein Feld von 45 mal 40 Metern mit einem großen Tor und Torwart. An der Linie gegenüber stehen zwei Minitore in den Ecken. Etwas unterhalb der Mitte markieren gestrichelte Linien und vier Hütchen quer durchs Feld eine Zone von 7 Metern Tiefe.",
+ "organisation": ["Aufbauen: Ein Feld von 45 mal 40 Metern mit einem großen Tor und Torwart. An der Linie gegenüber stehen zwei Minitore in den Ecken. Etwas unterhalb der Mitte markieren vier Hütchen an den Seitenlinien quer durchs Feld eine Zone von 7 Metern Tiefe.",
   "Verteilen: Team Neon mit drei Angreifern, zwei außen und einer in der Mitte, gegen drei Verteidiger von Team Rot. Weitere Flügelspieler warten außen neben der Zone. Der Trainer steht mit den Bällen in der Mitte zwischen den Minitoren.",
   "Ablauf: Der Trainer spielt einen Flügelspieler in der Zone an. Der dribbelt auf die Abwehr zu, und die drei Angreifer spielen sich bis zum Abschluss durch. Erobert Team Rot den Ball, kontert es sofort auf eines der beiden Minitore.",
   "Wertung und Wechsel: Jeder Treffer gibt einen Punkt, für Team Neon im großen Tor, für Team Rot in einem Minitor. Nach jedem Angriff kommen neue Flügelspieler rein, und der Trainer spielt abwechselnd auf beide Seiten an."],

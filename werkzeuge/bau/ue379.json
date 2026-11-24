@@ -1,0 +1,692 @@
+{
+ "title": "Staffel mit Hütchen und Hürden",
+ "code": "UE-379",
+ "kind": "Übungsform",
+ "focuses": [
+  "Schnelligkeit",
+  "Koordination"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "tags": [
+  "Vorbereitung"
+ ],
+ "duration_minutes": 15,
+ "players_min": 9,
+ "players_max": 18,
+ "field_size": "18 x 18 m",
+ "description": "Eine Staffel für die Vorbereitung mit drei Teams. Jeder sprintet mit einem Hütchen zur Stange, steckt es drauf und nimmt das nächste Hütchen mit. Über zwei Minihürden geht es zurück, und das Hütchen wandert an den Nächsten. Das Team, das zuerst wieder komplett hinten steht, gewinnt.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 18 Metern mit drei Bahnen. In jeder Bahn steht oben eine Stange mit Hütchen daneben, darunter zwei Minihürden, unten ein Starthütchen.",
+  "Verteilen: Drei Teams mit je fünf Spielern stehen hintereinander am Start ihrer Bahn. Der Erste jedes Teams hat ein Hütchen in der Hand. Der Trainer steht unten zwischen den Bahnen.",
+  "Ablauf: Auf Pfiff sprinten die Ersten zur Stange und stecken ihr Hütchen drauf. Sie nehmen das nächste Hütchen, gehen mit schnellen Füßen über die Hürden und sprinten zurück. Dort bekommt der Nächste das Hütchen und läuft los.",
+  "Wertung: Das Team, bei dem zuerst alle Spieler wieder hinten in der Reihe stehen, gewinnt, und das gibt einen Punkt. Danach beginnt die nächste Runde."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Losrennen genau dann, wenn du das Hütchen hast",
+  "Kurze, schnelle Schritte über die Hürden",
+  "Schnelle Hände an der Stange",
+  "Laut anfeuern, das ganze Team"
+ ],
+ "materials": [
+  "3 Stangen",
+  "Viele Hütchen",
+  "6 Minihürden"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Staffel mit Hütchen und Hürden. Drei Teams laufen um die Wette, mit Sprints, einem Hütchen in der Hand und schnellen Füßen über die Hürden.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 26,
+    "y": 4,
+    "w": 48,
+    "h": 47
+   }
+  ],
+  "goals": [],
+  "cones": [
+   {
+    "x": 35,
+    "y": 5.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 38.5,
+    "y": 5.5,
+    "color": "neon"
+   },
+   {
+    "x": 40.5,
+    "y": 5.5,
+    "color": "neon"
+   },
+   {
+    "x": 42.5,
+    "y": 5.5,
+    "color": "neon"
+   },
+   {
+    "x": 40,
+    "y": 13,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 38.5,
+    "y": 18.5,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 38,
+    "y": 33.5,
+    "color": "orange"
+   },
+   {
+    "x": 59,
+    "y": 5.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 62.5,
+    "y": 5.5,
+    "color": "neon"
+   },
+   {
+    "x": 64.5,
+    "y": 5.5,
+    "color": "neon"
+   },
+   {
+    "x": 66.5,
+    "y": 5.5,
+    "color": "neon"
+   },
+   {
+    "x": 64,
+    "y": 13,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 62.5,
+    "y": 18.5,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 62,
+    "y": 33.5,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 34,
+    "y": 33,
+    "label": "10"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 34,
+    "y": 49,
+    "label": "5"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 58,
+    "y": 33,
+    "label": "8"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 58,
+    "y": 49,
+    "label": "6"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 46,
+    "y": 55.3,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "s1",
+    "x": 49.5,
+    "y": 55.8
+   },
+   {
+    "id": "s2",
+    "x": 52,
+    "y": 55.8
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pfiff, Sprint zur Stange",
+    "say": "Pfiff, und los. Die Ersten sprinten mit einem Hütchen in der Hand hoch zur Stange. Alle Teams laufen gleichzeitig, wir schauen auf Spieler acht.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       58,
+       9
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r10",
+      "to": [
+       34,
+       9
+      ],
+      "type": "lauf",
+      "delay": 0.15
+     }
+    ]
+   },
+   {
+    "label": "Hütchen drauf, neues holen",
+    "say": "Oben steckt Spieler acht sein Hütchen auf die Stange. Gleich daneben schnappt er sich das nächste.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       62.5,
+       8.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r10",
+      "to": [
+       38.5,
+       8.5
+      ],
+      "type": "lauf",
+      "delay": 0.15
+     }
+    ]
+   },
+   {
+    "label": "Schnelle Füße über die Hürden",
+    "say": "Jetzt über die zwei Hürden, kleine Schritte, jeder Fuß nur kurz am Boden. Unten rückt Spieler sechs schon an die Startlinie.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       64,
+       10.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n8",
+      "to": [
+       64,
+       15.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       62.5,
+       21
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r10",
+      "to": [
+       40,
+       10.5
+      ],
+      "type": "lauf",
+      "delay": 0.15
+     },
+     {
+      "who": "r10",
+      "to": [
+       40,
+       15.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r10",
+      "to": [
+       38.5,
+       21
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n6",
+      "to": [
+       58,
+       34
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "r5",
+      "to": [
+       34,
+       34
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     }
+    ]
+   },
+   {
+    "label": "Übergabe, der Nächste läuft: Punkt",
+    "say": "Spieler acht sprintet zurück und drückt Spieler sechs das Hütchen in die Hand. Der läuft sofort los, Spieler acht stellt sich hinten an. Steht ein Team zuerst wieder komplett hinten, gewinnt es, und das gibt einen Punkt für dieses Team.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       59.5,
+       30
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n6",
+      "to": [
+       58,
+       9
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       58,
+       48.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r10",
+      "to": [
+       35.5,
+       30
+      ],
+      "type": "lauf",
+      "delay": 0.15
+     },
+     {
+      "who": "r5",
+      "to": [
+       34,
+       9
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r10",
+      "to": [
+       34,
+       48.5
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 26,
+    "y1": 58.6,
+    "x2": 74,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 82,
+    "y1": 4,
+    "x2": 82,
+    "y2": 51,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Sofort das nächste Hütchen.",
+   "title": "Sofort das nächste Hütchen",
+   "text": "Wer sein Hütchen auf die Stange gesteckt hat, greift sofort das nächste. Ohne Hütchen zurückzukommen kostet Zeit, dann muss er noch einmal hoch. Das kann das ganze Rennen kosten.",
+   "board": {
+    "players": [
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 34,
+      "y": 9,
+      "label": "10"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 34,
+      "y": 49,
+      "label": "5"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 58,
+      "y": 9,
+      "label": "8"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 58,
+      "y": 49,
+      "label": "6"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 46,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "s1",
+      "x": 49.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 52,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Hütchen drauf, nächstes greifen",
+      "say": "Spieler acht steckt sein Hütchen auf die Stange und greift ohne Pause das nächste. Daneben macht es Spieler zehn genauso.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         62.5,
+         8.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r10",
+        "to": [
+         38.5,
+         8.5
+        ],
+        "type": "lauf",
+        "delay": 0.15
+       }
+      ]
+     },
+     {
+      "label": "Mit Hütchen zurück",
+      "say": "Mit dem neuen Hütchen in der Hand geht es über die Hürden und zurück zum Start. Wer es oben vergisst, muss noch einmal hoch.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         64,
+         10.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n8",
+        "to": [
+         64,
+         15.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n8",
+        "to": [
+         62.5,
+         21
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n8",
+        "to": [
+         59.5,
+         30
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r10",
+        "to": [
+         40,
+         10.5
+        ],
+        "type": "lauf",
+        "delay": 0.15
+       },
+       {
+        "who": "r10",
+        "to": [
+         40,
+         15.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r10",
+        "to": [
+         38.5,
+         21
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r10",
+        "to": [
+         35.5,
+         30
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Im richtigen Moment starten und hinten anstellen.",
+   "title": "Übergeben, hinten anstellen",
+   "text": "Der Nächste steht an der Linie, streckt die Hand aus und startet genau dann, wenn er das Hütchen hat. Wer zurückkommt, stellt sich ganz hinten in seine Reihe. Erst dann zählt er als fertig.",
+   "board": {
+    "players": [
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 33.5,
+      "y": 17,
+      "label": "10"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 34,
+      "y": 34,
+      "label": "5"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 57.5,
+      "y": 17,
+      "label": "8"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 58,
+      "y": 34,
+      "label": "6"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 46,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "s1",
+      "x": 49.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 52,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Übergabe im Lauf",
+      "say": "Spieler sechs steht an der Linie und streckt die Hand aus. Er startet genau in dem Moment, in dem er das Hütchen hat.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         59.5,
+         30
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n6",
+        "to": [
+         58,
+         9
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r10",
+        "to": [
+         35.5,
+         30
+        ],
+        "type": "lauf",
+        "delay": 0.15
+       },
+       {
+        "who": "r5",
+        "to": [
+         34,
+         9
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Hinten anstellen",
+      "say": "Spieler acht läuft nicht einfach aus. Er stellt sich ganz hinten in seine Reihe, erst dann zählt er als fertig. Stehen alle wieder hinten, ist das Rennen vorbei.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         58.5,
+         40
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n8",
+        "to": [
+         58,
+         48.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r10",
+        "to": [
+         34.5,
+         40
+        ],
+        "type": "lauf",
+        "delay": 0.15
+       },
+       {
+        "who": "r10",
+        "to": [
+         34,
+         48.5
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

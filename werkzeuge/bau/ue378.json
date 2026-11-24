@@ -1,0 +1,842 @@
+{
+ "title": "Zentral als Paar verteidigen",
+ "code": "UE-378",
+ "kind": "Spielform",
+ "focuses": [
+  "Verteidigen",
+  "Umschalten",
+  "Zusammenspiel"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 9,
+ "players_max": 12,
+ "field_size": "40 x 45 m",
+ "description": "Zwei Verteidiger und ein Torwart verteidigen das große Tor gegen zwei Angreifer. Die beiden Verteidiger arbeiten als Paar: Einer geht ran, der andere sichert schräg dahinter. Sie drängen den Ballführer nach außen auf seinen schwachen Fuß. Erobern sie den Ball, kontern sie auf zwei Minitore.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 40 mal 45 Metern mit Strafraum und großem Tor oben. Unten an der Grundlinie stehen zwei Minitore, vier Hütchen markieren die Startplätze.",
+  "Verteilen: Team Neon mit Torwart und zwei Verteidigern im Feld, zwei weitere warten mit Ball außen auf Höhe des Tores. Team Rot mit zwei Angreifern im Feld, zwei warten außen. Der Trainer steht mit Bällen zwischen den Minitoren.",
+  "Ablauf: Ein Verteidiger spielt den Ball weit zu einem Angreifer. Zwei gegen zwei aufs große Tor. Erobert Team Neon den Ball, kontert es auf die Minitore. Geht der Ball ins Aus, spielt der Trainer sofort einen neuen ein.",
+  "Wertung und Wechsel: Ein Treffer ins große Tor gibt einen Punkt für Team Rot, ein Treffer ins Minitor einen Punkt für Team Neon. Nach jedem Angriff kommt das nächste Paar, so bekommt jeder seine Pause."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Auf den schwachen Fuß lenken",
+  "Erst ran, wenn der Partner sichert",
+  "Nach außen drängen, weg vom Tor",
+  "Neuer Ball vom Trainer? Sofort wieder bereit"
+ ],
+ "materials": [
+  "1 Großfeldtor",
+  "2 Minitore",
+  "4 Hütchen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Zentral als Paar verteidigen. Zwei Verteidiger und der Torwart gegen zwei Angreifer vor dem großen Tor. Die zwei arbeiten zusammen, und nach dem Ballgewinn geht es sofort auf die Minitore.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 29,
+    "y": 5,
+    "w": 42,
+    "h": 47
+   },
+   {
+    "type": "rect",
+    "x": 34.8,
+    "y": 5,
+    "w": 30.4,
+    "h": 14.3
+   },
+   {
+    "type": "rect",
+    "x": 41.4,
+    "y": 5,
+    "w": 17.2,
+    "h": 5.5
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "gross"
+   },
+   {
+    "x": 40,
+    "y": 52,
+    "side": "bottom"
+   },
+   {
+    "x": 60,
+    "y": 52,
+    "side": "bottom"
+   }
+  ],
+  "cones": [
+   {
+    "x": 36.5,
+    "y": 18,
+    "color": "orange"
+   },
+   {
+    "x": 63.5,
+    "y": 17,
+    "color": "orange"
+   },
+   {
+    "x": 31.5,
+    "y": 41,
+    "color": "orange"
+   },
+   {
+    "x": 68.5,
+    "y": 41,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n1",
+    "team": "a",
+    "x": 50,
+    "y": 8.5,
+    "label": "TW"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 40,
+    "y": 20.5,
+    "label": "4"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 59,
+    "y": 19,
+    "label": "5"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 24,
+    "y": 8,
+    "label": "3"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 76,
+    "y": 8,
+    "label": "2"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 35,
+    "y": 44.5,
+    "label": "9"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 65,
+    "y": 44.5,
+    "label": "10"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 22,
+    "y": 49,
+    "label": "7"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 77.5,
+    "y": 49,
+    "label": "11"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 50,
+    "y": 55.3,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 59.6,
+    "y": 19.6
+   },
+   {
+    "id": "b3",
+    "x": 24.6,
+    "y": 8.6
+   },
+   {
+    "id": "b2",
+    "x": 76.6,
+    "y": 8.6
+   },
+   {
+    "id": "s1",
+    "x": 53.5,
+    "y": 55.8
+   },
+   {
+    "id": "s2",
+    "x": 56,
+    "y": 55.8
+   }
+  ],
+  "steps": [
+   {
+    "label": "Spieler fünf spielt auf",
+    "say": "Spieler fünf spielt den Ball weit zu Spieler neun. Sofort rücken beide Verteidiger raus. Vorn zieht Spieler zehn in die Mitte.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       35.6,
+       45.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n4",
+      "to": [
+       39,
+       30
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     },
+     {
+      "who": "n5",
+      "to": [
+       52,
+       27
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     },
+     {
+      "who": "r10",
+      "to": [
+       58,
+       38
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     }
+    ]
+   },
+   {
+    "label": "Erst sichern, dann ran",
+    "say": "Spieler neun dribbelt an. Spieler vier wartet noch. Erst steht Spieler fünf schräg hinter ihm und hat Spieler zehn im Blick, dann geht Spieler vier ran.",
+    "moves": [
+     {
+      "who": "r9",
+      "to": [
+       38.5,
+       38
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n5",
+      "to": [
+       46,
+       29
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n5",
+      "to": [
+       58,
+       38
+      ],
+      "type": "blick",
+      "after": true
+     },
+     {
+      "who": "n4",
+      "to": [
+       38.5,
+       32.5
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Nach außen drängen",
+    "say": "Spieler vier steht innen und drängt ihn nach außen, auf den schwachen Fuß. Der Winkel zum Tor wird immer kleiner. Spieler zehn sucht eine Lücke in der Mitte.",
+    "moves": [
+     {
+      "who": "r9",
+      "to": [
+       32.5,
+       33.5
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n4",
+      "to": [
+       35.5,
+       29.5
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "r10",
+      "to": [
+       52,
+       33.5
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "Abgefangen, ab ins Minitor: Punkt",
+    "say": "Spieler neun will nach innen zu Spieler zehn. Spieler fünf ahnt das und geht dazwischen. Er dribbelt los und trifft ins Minitor, und das gibt einen Punkt für Team Neon. Danach verteidigen Spieler drei und Spieler zwei, und Spieler sieben und Spieler elf greifen an.",
+    "moves": [
+     {
+      "who": "n5",
+      "to": [
+       44.5,
+       32
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       45.1,
+       32.6
+      ],
+      "type": "pass",
+      "delay": 0.3
+     },
+     {
+      "who": "n5",
+      "to": [
+       42,
+       44
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       40,
+       51.5
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 29,
+    "y1": 58.6,
+    "x2": 71,
+    "y2": 58.6,
+    "text": "40 m"
+   },
+   {
+    "x1": 86,
+    "y1": 5,
+    "x2": 86,
+    "y2": 52,
+    "text": "45 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Ein dritter Angreifer kommt dazu.",
+   "title": "Drei gegen zwei",
+   "text": "Der Trainer spielt einen dritten Angreifer an, der von außen ins Feld dribbelt. Jetzt sind es drei gegen zwei. Die Verteidiger müssen schnell umschalten und den Angriff verzögern, bis der Torwart helfen kann. Wer den Ball erobert, kontert sofort.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 50,
+      "y": 8.5,
+      "label": "TW"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 41,
+      "y": 22,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 58.5,
+      "y": 21,
+      "label": "5"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 24,
+      "y": 8,
+      "label": "3"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 76,
+      "y": 8,
+      "label": "2"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 68,
+      "y": 32,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 50,
+      "y": 37,
+      "label": "10"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 22,
+      "y": 49,
+      "label": "7"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 77.5,
+      "y": 49,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 55.9
+     },
+     {
+      "id": "b3",
+      "x": 24.6,
+      "y": 8.6
+     },
+     {
+      "id": "b2",
+      "x": 76.6,
+      "y": 8.6
+     },
+     {
+      "id": "s1",
+      "x": 53.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 56,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Dritter Angreifer kommt",
+      "say": "Spieler sieben läuft ins Feld. Der Trainer spielt ihn an, und er dribbelt direkt aufs Tor zu. Jetzt sind es drei gegen zwei.",
+      "moves": [
+       {
+        "who": "r7",
+        "to": [
+         34,
+         47
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         34.6,
+         47.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "r7",
+        "to": [
+         36,
+         38
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Umschalten und verzögern",
+      "say": "Spieler vier schaltet sofort um und stellt Spieler sieben. Spieler fünf rückt in die Mitte und hält die anderen zwei hin. Kurz schaut er zu Spieler neun in seinem Rücken.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         37,
+         31
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n5",
+        "to": [
+         54,
+         27
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n5",
+        "to": [
+         68,
+         32
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Torwart fängt, schnell raus: Punkt",
+      "say": "Spieler sieben spielt quer zu Spieler zehn, und der schießt sofort. Der Torwart fängt den Ball und wirft ihn gleich zu Spieler vier. Der dribbelt los und trifft ins Minitor, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         37.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         9.1
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         37.6,
+         31.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n4",
+        "to": [
+         43,
+         40
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         40,
+         51.5
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Nach zehn Sekunden kommt ein dritter Verteidiger.",
+   "title": "Drei gegen drei",
+   "text": "Team Rot greift mit drei Spielern an. Halten die zwei Verteidiger zehn Sekunden lang dicht, sprintet ein dritter Verteidiger ins Feld. Jetzt steht es drei gegen drei, und Team Rot muss schneller entscheiden.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 50,
+      "y": 8.5,
+      "label": "TW"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 40,
+      "y": 22,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 56,
+      "y": 24.5,
+      "label": "5"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 24,
+      "y": 8,
+      "label": "3"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 76,
+      "y": 8,
+      "label": "2"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 65,
+      "y": 33,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 47,
+      "y": 38,
+      "label": "10"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 32,
+      "y": 38,
+      "label": "7"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 77.5,
+      "y": 49,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 65.6,
+      "y": 33.6
+     },
+     {
+      "id": "b3",
+      "x": 24.6,
+      "y": 8.6
+     },
+     {
+      "id": "b2",
+      "x": 76.6,
+      "y": 8.6
+     },
+     {
+      "id": "s1",
+      "x": 53.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 56,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zehn Sekunden dicht halten",
+      "say": "Team Rot lässt den Ball laufen, von Spieler neun zu Spieler zehn und weiter zu Spieler sieben. Spieler vier und Spieler fünf schieben mit und lassen nichts durch. Die zehn Sekunden sind um.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         47.6,
+         38.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n5",
+        "to": [
+         50.5,
+         27.5
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         32.6,
+         38.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n4",
+        "to": [
+         36,
+         30
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Spieler zwei kommt dazu",
+      "say": "Jetzt darf Spieler zwei rein. Er sprintet sofort ins Feld und schaut, wer frei ist. Spieler zehn, den übernimmt er.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         61,
+         13
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n2",
+        "to": [
+         58,
+         22
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n2",
+        "to": [
+         47,
+         38
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Drei gegen drei: Punkt",
+      "say": "Spieler sieben will zu Spieler zehn passen. Spieler zwei ist schon da und fängt den Ball ab. Er dribbelt los und trifft ins Minitor, und das gibt einen Punkt für Team Neon. Danach ist das nächste Paar dran.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         53,
+         31
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         53.6,
+         31.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       },
+       {
+        "who": "n2",
+        "to": [
+         58,
+         43
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         60,
+         51.5
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
