@@ -1,0 +1,87 @@
+{
+  "titel": "Marketing: Für Einsteiger und erfahrene Trainer",
+  "intro": false,
+  "musik": "zufall",
+  "musikLaut": 0.15,
+  "geraeusche": 0.6,
+  "uebergang": "knall",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "comic-tafel",
+      "dauer": 3.6,
+      "sprecher": "Neu als Trainer? Oder alter Hase?",
+      "sprecherAb": 1.4,
+      "text": "Neu als Trainer? *Oder alter Hase?*",
+      "dach": "Für alle"
+    },
+    {
+      "typ": "punkte",
+      "ton": "neon",
+      "titel": [
+        "Passt für",
+        "jeden Trainer"
+      ],
+      "uebergang": "knall",
+      "sprecher": "Einsteiger bekommen jede Übung erklärt, erfahrene Trainer Coaching-Punkte und Steigerungen.",
+      "sprecherAb": 0.6,
+      "punkte": [
+        "Einsteiger: alles erklärt",
+        "Erfahrene: Coaching-Punkte",
+        "Für alle: fertige Pläne"
+      ]
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-121",
+      "schritte": 3,
+      "tempo": 1.9,
+      "dach": "Einfach starten",
+      "uebergang": "pinsel",
+      "sprecher": "Du startest mit der Grundform …",
+      "sprecherAb": 0.8
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-121",
+      "schritte": 2,
+      "tempo": 1.9,
+      "dach": "Steigerung",
+      "uebergang": "panel",
+      "sprecher": "… und steigerst, wenn dein Team so weit ist.",
+      "sprecherAb": 0.8,
+      "fassung": 2
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "blende",
+      "sprecher": "Trainingskern. Jetzt ausprobieren auf trainingskern Punkt D E.",
+      "sprecherAb": 0.4,
+      "dauer": 4.2
+    }
+  ],
+  "storys": {
+    "problem": [
+      "Erstes Training.",
+      "Und jetzt?"
+    ],
+    "problemSatz": "Zwölf Kinder, ein Ballnetz und keiner hat dir gezeigt, wie es geht.",
+    "frage": [
+      "Wie lange bist",
+      "du schon Trainer?"
+    ],
+    "antwort": "Erste Saison oder zwanzigste? Antworte per Nachricht.",
+    "loesung": [
+      "Für Einsteiger.",
+      "Und für Profis."
+    ],
+    "loesungSatz": "Jede Übung erklärt, dazu Coaching-Punkte und Steigerungen.",
+    "art": "marketing",
+    "zeit": "18:30",
+    "bilder": [
+      10,
+      10
+    ]
+  }
+}

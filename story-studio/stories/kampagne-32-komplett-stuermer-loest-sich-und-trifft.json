@@ -1,0 +1,60 @@
+{
+  "titel": "Übung komplett: Stürmer löst sich und trifft",
+  "intro": false,
+  "musik": "zufall",
+  "musikLaut": 0.14,
+  "geraeusche": 0.6,
+  "uebergang": "knall",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "comic-fallrueckzieher",
+      "dauer": 3.6,
+      "sprecher": "Stürmer frei? Dann trifft er!",
+      "sprecherAb": 0.9,
+      "text": "Stürmer frei? *Dann trifft er!*",
+      "dach": "Abschluss"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-113",
+      "stimme": true,
+      "dach": "So läuft’s"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-113",
+      "stimme": true,
+      "fassung": 1,
+      "uebergang": "pinsel"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-113",
+      "stimme": true,
+      "fassung": 2,
+      "uebergang": "raster"
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "blende",
+      "sprecher": "Trainingskern. Jetzt ausprobieren auf trainingskern Punkt D E.",
+      "sprecherAb": 0.4,
+      "dauer": 4.2
+    }
+  ],
+  "storys": {
+    "name": "Stürmer löst sich und trifft",
+    "zeit": "18:30",
+    "bilder": [
+      10,
+      40
+    ],
+    "frage": [
+      "Freilaufen:",
+      "Übst du das extra?"
+    ],
+    "antwort": "Oder hoffst du auf Instinkt? Antworte per Nachricht."
+  }
+}

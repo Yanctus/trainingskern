@@ -1,0 +1,92 @@
+{
+  "titel": "Marketing: Jugend, Dauer, Schwerpunkt",
+  "intro": false,
+  "musik": "zufall",
+  "musikLaut": 0.15,
+  "geraeusche": 0.6,
+  "uebergang": "pinsel",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "comic-panels",
+      "dauer": 3.6,
+      "sprecher": "Drei Angaben. Fertig!",
+      "sprecherAb": 1.2,
+      "text": "Drei Angaben. *Fertig!*",
+      "dach": "So einfach"
+    },
+    {
+      "typ": "app",
+      "seite": "/",
+      "dauer": 5.2,
+      "scroll": [
+        0,
+        800
+      ],
+      "halt": 1.6,
+      "verstecke": ".aw-go,.aw-alt,.aw-hero-foot",
+      "notiz": "Jugend, Dauer, Schwerpunkt ↓",
+      "uebergang": "knall",
+      "sprecher": "Jugend, Dauer, Schwerpunkt: Mehr braucht es nicht.",
+      "sprecherAb": 0.5,
+      "stempel": "Drei Angaben"
+    },
+    {
+      "typ": "punkte",
+      "ton": "dunkel",
+      "titel": [
+        "Du sagst,",
+        "was du brauchst"
+      ],
+      "uebergang": "raster",
+      "sprecher": "Und du bekommst Übungen, die genau dazu passen.",
+      "sprecherAb": 0.6,
+      "punkte": [
+        "Welche Jugend?",
+        "Wie lange?",
+        "Welcher Schwerpunkt?"
+      ]
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-088",
+      "schritte": 3,
+      "tempo": 1.9,
+      "dach": "Passt genau",
+      "uebergang": "pinsel",
+      "sprecher": "Animiert und von mir auf Deutsch erklärt.",
+      "sprecherAb": 0.8
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "blende",
+      "sprecher": "Trainingskern. Jetzt ausprobieren auf trainingskern Punkt D E.",
+      "sprecherAb": 0.4,
+      "dauer": 4.2
+    }
+  ],
+  "storys": {
+    "problem": [
+      "Suchen, scrollen,",
+      "nichts passt?"
+    ],
+    "problemSatz": "Zu alt, zu schwer, falsches Thema. Und die Zeit läuft.",
+    "frage": [
+      "Was ist dein",
+      "Schwerpunkt gerade?"
+    ],
+    "antwort": "Passen, Dribbeln, Abschluss? Antworte per Nachricht.",
+    "loesung": [
+      "Drei Angaben.",
+      "Fertig."
+    ],
+    "loesungSatz": "Jugend, Dauer, Schwerpunkt: Du bekommst Übungen, die passen.",
+    "art": "marketing",
+    "zeit": "18:30",
+    "bilder": [
+      10,
+      10
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "titel": "Übung komplett: Hütchen-Abschuss im Duell",
+  "intro": false,
+  "musik": "zufall",
+  "musikLaut": 0.14,
+  "geraeusche": 0.6,
+  "uebergang": "panel",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "comic-banner",
+      "dauer": 3.6,
+      "sprecher": "Zielen. Treffen. Jubeln!",
+      "sprecherAb": 1.6,
+      "text": "Zielen. Treffen. *Jubeln!*",
+      "dach": "Für die Kleinen"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-002",
+      "stimme": true,
+      "dach": "So läuft’s"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-002",
+      "stimme": true,
+      "fassung": 1,
+      "uebergang": "knall"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-002",
+      "stimme": true,
+      "fassung": 2,
+      "uebergang": "pinsel"
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "blende",
+      "sprecher": "Trainingskern. Jetzt ausprobieren auf trainingskern Punkt D E.",
+      "sprecherAb": 0.4,
+      "dauer": 4.2
+    }
+  ],
+  "storys": {
+    "name": "Hütchen-Abschuss im Duell",
+    "zeit": "18:30",
+    "bilder": [
+      10,
+      40
+    ],
+    "frage": [
+      "Zielschießen:",
+      "Dein Lieblingsspiel?"
+    ],
+    "antwort": "Hütchen, Latte oder Torwand? Antworte per Nachricht."
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "titel": "Übung komplett: Ballhalten gegen mehr Druck",
+  "intro": false,
+  "musik": "zufall",
+  "musikLaut": 0.14,
+  "geraeusche": 0.6,
+  "uebergang": "knall",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "comic-tafel",
+      "dauer": 3.6,
+      "sprecher": "Ruhig bleiben unter Druck!",
+      "sprecherAb": 1.4,
+      "text": "Ruhig bleiben *unter Druck!*",
+      "dach": "Für dein Team"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-151",
+      "stimme": true,
+      "dach": "So läuft’s"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-151",
+      "stimme": true,
+      "fassung": 1,
+      "uebergang": "pinsel"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-151",
+      "stimme": true,
+      "fassung": 2,
+      "uebergang": "raster"
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "blende",
+      "sprecher": "Trainingskern. Jetzt ausprobieren auf trainingskern Punkt D E.",
+      "sprecherAb": 0.4,
+      "dauer": 4.2
+    }
+  ],
+  "storys": {
+    "name": "Ballhalten gegen mehr Druck",
+    "zeit": "18:30",
+    "bilder": [
+      10,
+      40
+    ],
+    "frage": [
+      "Unter Druck:",
+      "Bleibt dein Team ruhig?"
+    ],
+    "antwort": "Oder fliegt der Ball nur noch weg? Antworte per Nachricht."
+  }
+}

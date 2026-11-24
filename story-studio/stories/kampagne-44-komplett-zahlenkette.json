@@ -1,0 +1,63 @@
+{
+  "titel": "Übung komplett: Zahlenkette",
+  "intro": false,
+  "musik": "zufall",
+  "musikLaut": 0.14,
+  "geraeusche": 0.6,
+  "uebergang": "knall",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "comic-karte",
+      "dauer": 3.6,
+      "sprecher": "Passen nach Zahlen!",
+      "sprecherAb": 1.1,
+      "zeilen": [
+        "Passen",
+        "*nach Zahlen!*"
+      ],
+      "dach": "Aufwärmen"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-020",
+      "stimme": true,
+      "dach": "So läuft’s"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-020",
+      "stimme": true,
+      "fassung": 1,
+      "uebergang": "pinsel"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-020",
+      "stimme": true,
+      "fassung": 2,
+      "uebergang": "raster"
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "blende",
+      "sprecher": "Trainingskern. Jetzt ausprobieren auf trainingskern Punkt D E.",
+      "sprecherAb": 0.4,
+      "dauer": 4.2
+    }
+  ],
+  "storys": {
+    "name": "Zahlenkette",
+    "zeit": "18:30",
+    "bilder": [
+      10,
+      40
+    ],
+    "frage": [
+      "Aufwärmen mit Köpfchen:",
+      "Dein Tipp?"
+    ],
+    "antwort": "Was weckt dein Team am schnellsten auf? Antworte per Nachricht."
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "titel": "Übung komplett: Abwehrspieler rückt auf",
+  "intro": false,
+  "musik": "zufall",
+  "musikLaut": 0.14,
+  "geraeusche": 0.6,
+  "uebergang": "panel",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "comic-megafon",
+      "dauer": 3.6,
+      "sprecher": "Verteidiger? Greift mit an!",
+      "sprecherAb": 1.1,
+      "zeilen": [
+        "Verteidiger?",
+        "*Greift mit an!*"
+      ]
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-095",
+      "stimme": true,
+      "dach": "So läuft’s"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-095",
+      "stimme": true,
+      "fassung": 1,
+      "uebergang": "knall"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-095",
+      "stimme": true,
+      "fassung": 2,
+      "uebergang": "pinsel"
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "blende",
+      "sprecher": "Trainingskern. Jetzt ausprobieren auf trainingskern Punkt D E.",
+      "sprecherAb": 0.4,
+      "dauer": 4.2
+    }
+  ],
+  "storys": {
+    "name": "Abwehrspieler rückt auf",
+    "zeit": "18:30",
+    "bilder": [
+      10,
+      40
+    ],
+    "frage": [
+      "Verteidiger im Angriff:",
+      "Erlaubt?"
+    ],
+    "antwort": "Dürfen deine Verteidiger mit nach vorn? Antworte per Nachricht."
+  }
+}

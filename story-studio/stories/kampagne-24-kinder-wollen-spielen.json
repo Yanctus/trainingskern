@@ -1,0 +1,88 @@
+{
+  "titel": "Marketing: Kinderfußball nach der Trainingsphilosophie des DFB",
+  "intro": false,
+  "musik": "zufall",
+  "musikLaut": 0.15,
+  "geraeusche": 0.6,
+  "uebergang": "panel",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "comic-banner",
+      "dauer": 3.6,
+      "sprecher": "Kinder wollen spielen!",
+      "sprecherAb": 1.6,
+      "text": "Kinder wollen *spielen!*",
+      "dach": "Kinderfußball"
+    },
+    {
+      "typ": "hook",
+      "ton": "dunkel",
+      "zeilen": [
+        "Nicht in der",
+        "*Schlange stehen.*"
+      ],
+      "dauer": 2.3,
+      "takt": 0.3,
+      "uebergang": "knall",
+      "sprecher": "Nicht in der Schlange stehen."
+    },
+    {
+      "typ": "app",
+      "seite": "/trainingsplaene",
+      "dauer": 5.2,
+      "scroll": [
+        600,
+        1350
+      ],
+      "halt": 1.6,
+      "verstecke": ".aw-trikot small",
+      "notiz": "So ist jedes Training gebaut ↓",
+      "uebergang": "panel",
+      "sprecher": "Unsere Pläne orientieren sich an der Trainingsphilosophie des DFB: zweimal spielen, dazwischen gezielt üben.",
+      "sprecherAb": 0.5,
+      "stempel": "Viel Spielzeit"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-077",
+      "schritte": 3,
+      "tempo": 1.9,
+      "dach": "Spielform",
+      "uebergang": "pinsel",
+      "sprecher": "Mit Spielformen, in denen alle am Ball sind.",
+      "sprecherAb": 0.8
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "blende",
+      "sprecher": "Trainingskern. Jetzt ausprobieren auf trainingskern Punkt D E.",
+      "sprecherAb": 0.4,
+      "dauer": 4.2
+    }
+  ],
+  "storys": {
+    "problem": [
+      "Zehn Kinder.",
+      "Ein Ball. Eine Schlange."
+    ],
+    "problemSatz": "Einer schießt, neun warten. So lernt keiner Fußball.",
+    "frage": [
+      "Wie viel wird bei",
+      "dir gespielt?"
+    ],
+    "antwort": "Die Hälfte der Zeit oder mehr? Antworte per Nachricht.",
+    "loesung": [
+      "Mehr spielen.",
+      "Gezielt üben."
+    ],
+    "loesungSatz": "Trainingspläne, die sich an der Trainingsphilosophie des DFB orientieren.",
+    "art": "marketing",
+    "zeit": "18:30",
+    "bilder": [
+      10,
+      10
+    ]
+  }
+}

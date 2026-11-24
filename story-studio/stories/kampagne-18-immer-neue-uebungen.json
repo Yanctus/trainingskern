@@ -1,0 +1,96 @@
+{
+  "titel": "Marketing: Laufend neue Übungen",
+  "intro": false,
+  "musik": "zufall",
+  "musikLaut": 0.15,
+  "geraeusche": 0.6,
+  "uebergang": "raster",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "comic-megafon",
+      "dauer": 3.6,
+      "sprecher": "Schon wieder neue Übungen!",
+      "sprecherAb": 1.1,
+      "zeilen": [
+        "Schon wieder",
+        "*neue Übungen!*"
+      ]
+    },
+    {
+      "typ": "hook",
+      "ton": "neon",
+      "zeilen": [
+        "Der Katalog",
+        "*wächst weiter.*"
+      ],
+      "dauer": 2.3,
+      "takt": 0.3,
+      "uebergang": "knall",
+      "sprecher": "Bei Trainingskern kommen laufend neue Übungen dazu."
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-285",
+      "schritte": 3,
+      "tempo": 1.9,
+      "dach": "Neu dabei",
+      "uebergang": "pinsel",
+      "sprecher": "Frische Ideen für dein Training …",
+      "sprecherAb": 0.8
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-293",
+      "schritte": 3,
+      "tempo": 1.9,
+      "dach": "Neu dabei",
+      "uebergang": "knall",
+      "sprecher": "… für Technik, Taktik und Athletik.",
+      "sprecherAb": 0.8
+    },
+    {
+      "typ": "hook",
+      "ton": "dunkel",
+      "zeilen": [
+        "Nie wieder",
+        "*dasselbe Training.*"
+      ],
+      "dauer": 2.3,
+      "takt": 0.3,
+      "uebergang": "raster",
+      "sprecher": "So wird dein Training nie langweilig."
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "blende",
+      "sprecher": "Trainingskern. Jetzt ausprobieren auf trainingskern Punkt D E.",
+      "sprecherAb": 0.4,
+      "dauer": 4.2
+    }
+  ],
+  "storys": {
+    "problem": [
+      "Immer dieselben",
+      "drei Übungen?"
+    ],
+    "problemSatz": "Dein Team kennt jede davon auswendig. Und du auch.",
+    "frage": [
+      "Wie oft suchst",
+      "du neue Übungen?"
+    ],
+    "antwort": "Jede Woche oder nie? Antworte per Nachricht.",
+    "loesung": [
+      "Laufend",
+      "neue Übungen."
+    ],
+    "loesungSatz": "Der Katalog wächst weiter, jede neue Übung animiert und erklärt.",
+    "art": "marketing",
+    "zeit": "18:30",
+    "bilder": [
+      10,
+      10
+    ]
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "titel": "Marketing: Jede Übung wird auf Deutsch erklärt",
+  "intro": false,
+  "musik": "zufall",
+  "musikLaut": 0.15,
+  "geraeusche": 0.6,
+  "uebergang": "raster",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "comic-sprechblase",
+      "dauer": 3.6,
+      "sprecher": "Übung lesen? Lieber hören!",
+      "sprecherAb": 0.7,
+      "text": "Übung lesen? *Lieber hören!*",
+      "dach": "Auf dem Platz"
+    },
+    {
+      "typ": "app",
+      "seite": "/",
+      "dauer": 5.2,
+      "scroll": [
+        0,
+        800
+      ],
+      "halt": 1.6,
+      "verstecke": ".aw-hero-copy,.aw-hero-foot",
+      "notiz": "Erst Tafel, dann Platz ↓",
+      "uebergang": "knall",
+      "sprecher": "Bei Trainingskern erklärt dir eine Stimme jede Übung, Schritt für Schritt.",
+      "sprecherAb": 0.5
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-019",
+      "schritte": 3,
+      "tempo": 1.9,
+      "dach": "Mit Ton",
+      "uebergang": "pinsel",
+      "sprecher": "Du schaust zu, hörst zu und weißt, wie es läuft.",
+      "sprecherAb": 0.8
+    },
+    {
+      "typ": "hook",
+      "ton": "dunkel",
+      "zeilen": [
+        "Handy an.",
+        "*Training läuft.*"
+      ],
+      "dauer": 2.3,
+      "takt": 0.3,
+      "uebergang": "panel",
+      "sprecher": "Handy an, Training läuft."
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "blende",
+      "sprecher": "Trainingskern. Jetzt ausprobieren auf trainingskern Punkt D E.",
+      "sprecherAb": 0.4,
+      "dauer": 4.2
+    }
+  ],
+  "storys": {
+    "problem": [
+      "Zettel im Regen.",
+      "Schrift verlaufen."
+    ],
+    "problemSatz": "Und du stehst da und rätselst, was du gestern aufgeschrieben hast.",
+    "frage": [
+      "Zettel, Handy",
+      "oder Kopf?"
+    ],
+    "antwort": "Womit gehst du auf den Platz? Antworte per Nachricht.",
+    "loesung": [
+      "Lieber hören",
+      "als lesen."
+    ],
+    "loesungSatz": "Eine Stimme erklärt dir jede Übung auf Deutsch, Schritt für Schritt.",
+    "art": "marketing",
+    "zeit": "18:30",
+    "bilder": [
+      10,
+      10
+    ]
+  }
+}

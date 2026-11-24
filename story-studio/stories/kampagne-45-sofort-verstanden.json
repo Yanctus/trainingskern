@@ -1,0 +1,76 @@
+{
+  "titel": "Marketing: Sehen, hören, machen",
+  "intro": false,
+  "musik": "zufall",
+  "musikLaut": 0.15,
+  "geraeusche": 0.6,
+  "uebergang": "panel",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "comic-tafel",
+      "dauer": 3.6,
+      "sprecher": "Übung sofort verstanden?",
+      "sprecherAb": 1.4,
+      "text": "Übung sofort *verstanden?*",
+      "dach": "Geht das?"
+    },
+    {
+      "typ": "punkte",
+      "ton": "neon",
+      "titel": [
+        "So geht",
+        "das"
+      ],
+      "uebergang": "knall",
+      "sprecher": "Du siehst sie laufen, hörst die Erklärung und nimmst sie mit auf den Platz.",
+      "sprecherAb": 0.6,
+      "punkte": [
+        "Sehen: die Animation",
+        "Hören: die Erklärung",
+        "Machen: ab auf den Platz"
+      ]
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-072",
+      "schritte": 3,
+      "tempo": 1.9,
+      "dach": "Sehen und hören",
+      "uebergang": "pinsel",
+      "sprecher": "Jede Übung, von mir auf Deutsch erklärt.",
+      "sprecherAb": 0.8
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "blende",
+      "sprecher": "Trainingskern. Jetzt ausprobieren auf trainingskern Punkt D E.",
+      "sprecherAb": 0.4,
+      "dauer": 4.2
+    }
+  ],
+  "storys": {
+    "problem": [
+      "Skizze gesehen.",
+      "Nichts verstanden?"
+    ],
+    "problemSatz": "Pfeile, Kreise, Kreuze. Und wer läuft jetzt wohin?",
+    "frage": [
+      "Skizze oder Video:",
+      "Was hilft dir?"
+    ],
+    "antwort": "Wie verstehst du eine Übung am schnellsten? Antworte per Nachricht.",
+    "loesung": [
+      "Sehen. Hören.",
+      "Machen."
+    ],
+    "loesungSatz": "Jede Übung läuft als Animation und wird dir auf Deutsch erklärt.",
+    "art": "marketing",
+    "zeit": "18:30",
+    "bilder": [
+      10,
+      10
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "titel": "Marketing: Coaching-Punkte gehören zu jeder Übung",
+  "intro": false,
+  "musik": "zufall",
+  "musikLaut": 0.15,
+  "geraeusche": 0.6,
+  "uebergang": "raster",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "comic-karte",
+      "dauer": 3.6,
+      "sprecher": "Übung läuft. Und was coachst du?",
+      "sprecherAb": 1.1,
+      "zeilen": [
+        "Übung läuft.",
+        "Und was",
+        "*coachst du?*"
+      ],
+      "dach": "Mal ehrlich"
+    },
+    {
+      "typ": "hook",
+      "ton": "neon",
+      "zeilen": [
+        "Coaching-Punkt:",
+        "*schon dabei.*"
+      ],
+      "dauer": 2.3,
+      "takt": 0.3,
+      "uebergang": "knall",
+      "sprecher": "Bei Trainingskern ist der Coaching-Punkt schon dabei."
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-017",
+      "schritte": 3,
+      "tempo": 1.5,
+      "dach": null,
+      "uebergang": "raster",
+      "sprecher": "Zu jeder Übung zeigen wir dir, worauf es ankommt, animiert und von mir auf Deutsch erklärt.",
+      "sprecherAb": 0.8,
+      "fassung": 1
+    },
+    {
+      "typ": "punkte",
+      "ton": "dunkel",
+      "titel": [
+        "Darauf",
+        "achtest du"
+      ],
+      "uebergang": "panel",
+      "sprecher": "Kurz, klar, direkt für den Platz.",
+      "sprecherAb": 0.6,
+      "code": "UE-017",
+      "max": 3
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "blende",
+      "sprecher": "Trainingskern. Jetzt ausprobieren auf trainingskern Punkt D E.",
+      "sprecherAb": 0.4,
+      "dauer": 4.2
+    }
+  ],
+  "storys": {
+    "problem": [
+      "Die Übung läuft.",
+      "Und du schweigst?"
+    ],
+    "problemSatz": "Aufbauen kann jeder. Aber was sagst du deinen Spielern dabei?",
+    "frage": [
+      "Was ist dein",
+      "wichtigster Satz?"
+    ],
+    "antwort": "Was rufst du im Training am häufigsten? Antworte per Nachricht.",
+    "loesung": [
+      "Coaching-Punkt:",
+      "schon dabei."
+    ],
+    "loesungSatz": "Zu jeder Übung zeigen wir dir, worauf es ankommt.",
+    "art": "marketing",
+    "zeit": "18:30",
+    "bilder": [
+      10,
+      10
+    ]
+  }
+}

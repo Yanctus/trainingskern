@@ -1,0 +1,83 @@
+{
+  "titel": "Marketing: Jede Übung hat eine Steigerung",
+  "intro": false,
+  "musik": "zufall",
+  "musikLaut": 0.15,
+  "geraeusche": 0.6,
+  "uebergang": "knall",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "comic-fallrueckzieher",
+      "dauer": 3.6,
+      "sprecher": "Zu leicht? Dann steigern!",
+      "sprecherAb": 0.9,
+      "text": "Zu leicht? *Dann steigern!*",
+      "dach": "Kennst du das?"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-032",
+      "schritte": 3,
+      "tempo": 1.9,
+      "dach": "Grundform",
+      "uebergang": "knall",
+      "sprecher": "Erst läuft die Grundform.",
+      "sprecherAb": 0.8
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-032",
+      "schritte": 2,
+      "tempo": 1.5,
+      "dach": null,
+      "uebergang": "pinsel",
+      "sprecher": "Dann kommt die Steigerung, fertig erklärt.",
+      "sprecherAb": 0.8,
+      "fassung": 2
+    },
+    {
+      "typ": "hook",
+      "ton": "neon",
+      "zeilen": [
+        "Eine Übung.",
+        "*Mehrere Stufen.*"
+      ],
+      "dauer": 2.3,
+      "takt": 0.3,
+      "uebergang": "raster",
+      "sprecher": "So wächst jede Übung mit deinem Team."
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "blende",
+      "sprecher": "Trainingskern. Jetzt ausprobieren auf trainingskern Punkt D E.",
+      "sprecherAb": 0.4,
+      "dauer": 4.2
+    }
+  ],
+  "storys": {
+    "problem": [
+      "Nach fünf Minuten",
+      "ist es zu leicht?"
+    ],
+    "problemSatz": "Die Übung sitzt, die Spannung ist weg. Und was jetzt?",
+    "frage": [
+      "Wie machst du",
+      "Übungen schwerer?"
+    ],
+    "antwort": "Kleineres Feld, weniger Kontakte, mehr Gegner? Antworte per Nachricht.",
+    "loesung": [
+      "Eine Übung.",
+      "Mehrere Stufen."
+    ],
+    "loesungSatz": "Zu jeder Übung gibt es die Steigerung gleich dazu.",
+    "art": "marketing",
+    "zeit": "18:30",
+    "bilder": [
+      10,
+      10
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "titel": "Übung komplett: Knack den Code",
+  "intro": false,
+  "musik": "zufall",
+  "musikLaut": 0.14,
+  "geraeusche": 0.6,
+  "uebergang": "raster",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "comic-karte",
+      "dauer": 3.6,
+      "sprecher": "Wer knackt den Code?",
+      "sprecherAb": 1.1,
+      "zeilen": [
+        "Wer knackt",
+        "*den Code?*"
+      ],
+      "dach": "Für schlaue Köpfe"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-111",
+      "stimme": true,
+      "dach": "So läuft’s"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-111",
+      "stimme": true,
+      "fassung": 1,
+      "uebergang": "panel"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-111",
+      "stimme": true,
+      "fassung": 2,
+      "uebergang": "knall"
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "blende",
+      "sprecher": "Trainingskern. Jetzt ausprobieren auf trainingskern Punkt D E.",
+      "sprecherAb": 0.4,
+      "dauer": 4.2
+    }
+  ],
+  "storys": {
+    "name": "Knack den Code",
+    "zeit": "18:30",
+    "bilder": [
+      10,
+      40
+    ],
+    "frage": [
+      "Rätsel im Training:",
+      "Gute Idee?"
+    ],
+    "antwort": "Denken und kicken gleichzeitig? Antworte per Nachricht."
+  }
+}

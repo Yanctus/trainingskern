@@ -1,0 +1,60 @@
+{
+  "titel": "Übung komplett: Die erste Pressinglinie knacken",
+  "intro": false,
+  "musik": "zufall",
+  "musikLaut": 0.14,
+  "geraeusche": 0.6,
+  "uebergang": "panel",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "comic-panels",
+      "dauer": 3.6,
+      "sprecher": "Pressing? Einfach durchspielen!",
+      "sprecherAb": 1.2,
+      "text": "Pressing? *Einfach durchspielen!*",
+      "dach": "Spielaufbau"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-147",
+      "stimme": true,
+      "dach": "So läuft’s"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-147",
+      "stimme": true,
+      "fassung": 1,
+      "uebergang": "knall"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-147",
+      "stimme": true,
+      "fassung": 2,
+      "uebergang": "pinsel"
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "blende",
+      "sprecher": "Trainingskern. Jetzt ausprobieren auf trainingskern Punkt D E.",
+      "sprecherAb": 0.4,
+      "dauer": 4.2
+    }
+  ],
+  "storys": {
+    "name": "Die erste Pressinglinie knacken",
+    "zeit": "18:30",
+    "bilder": [
+      10,
+      40
+    ],
+    "frage": [
+      "Pressing vom Gegner:",
+      "Was macht ihr?"
+    ],
+    "antwort": "Lang schlagen oder flach lösen? Antworte per Nachricht."
+  }
+}

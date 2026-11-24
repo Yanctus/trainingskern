@@ -1,0 +1,62 @@
+{
+  "titel": "Übung komplett: Abschluss in drei Phasen",
+  "intro": false,
+  "musik": "zufall",
+  "musikLaut": 0.14,
+  "geraeusche": 0.6,
+  "uebergang": "raster",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "comic-megafon",
+      "dauer": 3.6,
+      "sprecher": "Drei Phasen. Ein Abschluss!",
+      "sprecherAb": 1.1,
+      "zeilen": [
+        "Drei Phasen.",
+        "*Ein Abschluss!*"
+      ]
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-010",
+      "stimme": true,
+      "dach": "So läuft’s"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-010",
+      "stimme": true,
+      "fassung": 1,
+      "uebergang": "panel"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-010",
+      "stimme": true,
+      "fassung": 2,
+      "uebergang": "knall"
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "blende",
+      "sprecher": "Trainingskern. Jetzt ausprobieren auf trainingskern Punkt D E.",
+      "sprecherAb": 0.4,
+      "dauer": 4.2
+    }
+  ],
+  "storys": {
+    "name": "Abschluss in drei Phasen",
+    "zeit": "18:30",
+    "bilder": [
+      10,
+      40
+    ],
+    "frage": [
+      "Torschuss:",
+      "Wie viele Wiederholungen?"
+    ],
+    "antwort": "Zählst du mit? Antworte per Nachricht."
+  }
+}

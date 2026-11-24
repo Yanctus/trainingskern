@@ -1,0 +1,60 @@
+{
+  "titel": "Übung komplett: Pendelsprints und Flanke",
+  "intro": false,
+  "musik": "zufall",
+  "musikLaut": 0.14,
+  "geraeusche": 0.6,
+  "uebergang": "pinsel",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "comic-panels",
+      "dauer": 3.6,
+      "sprecher": "Sprinten. Und dann flanken!",
+      "sprecherAb": 1.2,
+      "text": "Sprinten. *Und dann flanken!*",
+      "dach": "Vorbereitung"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-141",
+      "stimme": true,
+      "dach": "So läuft’s"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-141",
+      "stimme": true,
+      "fassung": 1,
+      "uebergang": "raster"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-141",
+      "stimme": true,
+      "fassung": 2,
+      "uebergang": "panel"
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "blende",
+      "sprecher": "Trainingskern. Jetzt ausprobieren auf trainingskern Punkt D E.",
+      "sprecherAb": 0.4,
+      "dauer": 4.2
+    }
+  ],
+  "storys": {
+    "name": "Pendelsprints und Flanke",
+    "zeit": "18:30",
+    "bilder": [
+      10,
+      40
+    ],
+    "frage": [
+      "Kondition:",
+      "Mit oder ohne Ball?"
+    ],
+    "antwort": "Wie hältst du dein Team fit? Antworte per Nachricht."
+  }
+}

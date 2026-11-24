@@ -1,0 +1,60 @@
+{
+  "titel": "Übung komplett: Einwurf-Spiel 4 gegen 4",
+  "intro": false,
+  "musik": "zufall",
+  "musikLaut": 0.14,
+  "geraeusche": 0.6,
+  "uebergang": "panel",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "comic-fallrueckzieher",
+      "dauer": 3.6,
+      "sprecher": "Einwurf? Wird endlich geübt!",
+      "sprecherAb": 0.9,
+      "text": "Einwurf? *Wird endlich geübt!*",
+      "dach": "Mal ehrlich"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-024",
+      "stimme": true,
+      "dach": "So läuft’s"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-024",
+      "stimme": true,
+      "fassung": 1,
+      "uebergang": "knall"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-024",
+      "stimme": true,
+      "fassung": 2,
+      "uebergang": "pinsel"
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "blende",
+      "sprecher": "Trainingskern. Jetzt ausprobieren auf trainingskern Punkt D E.",
+      "sprecherAb": 0.4,
+      "dauer": 4.2
+    }
+  ],
+  "storys": {
+    "name": "Einwurf-Spiel 4 gegen 4",
+    "zeit": "18:30",
+    "bilder": [
+      10,
+      40
+    ],
+    "frage": [
+      "Einwürfe:",
+      "Übt ihr die?"
+    ],
+    "antwort": "Oder wirft einfach, wer gerade da steht? Antworte per Nachricht."
+  }
+}

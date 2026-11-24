@@ -1,0 +1,60 @@
+{
+  "titel": "Übung komplett: Doppelpass um die Dummys",
+  "intro": false,
+  "musik": "zufall",
+  "musikLaut": 0.14,
+  "geraeusche": 0.6,
+  "uebergang": "raster",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "comic-banner",
+      "dauer": 3.6,
+      "sprecher": "Doppelpass, der sitzt!",
+      "sprecherAb": 1.6,
+      "text": "Doppelpass, *der sitzt!*",
+      "dach": "Schon probiert?"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-153",
+      "stimme": true,
+      "dach": "So läuft’s"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-153",
+      "stimme": true,
+      "fassung": 1,
+      "uebergang": "panel"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-153",
+      "stimme": true,
+      "fassung": 2,
+      "uebergang": "knall"
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "blende",
+      "sprecher": "Trainingskern. Jetzt ausprobieren auf trainingskern Punkt D E.",
+      "sprecherAb": 0.4,
+      "dauer": 4.2
+    }
+  ],
+  "storys": {
+    "name": "Doppelpass um die Dummys",
+    "zeit": "18:30",
+    "bilder": [
+      10,
+      40
+    ],
+    "frage": [
+      "Doppelpass:",
+      "Klappt der bei euch?"
+    ],
+    "antwort": "Im Training ja, im Spiel nie? Antworte per Nachricht."
+  }
+}

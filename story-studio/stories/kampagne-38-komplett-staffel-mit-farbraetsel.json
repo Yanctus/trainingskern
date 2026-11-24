@@ -1,0 +1,60 @@
+{
+  "titel": "Übung komplett: Staffel mit Farbrätsel",
+  "intro": false,
+  "musik": "zufall",
+  "musikLaut": 0.14,
+  "geraeusche": 0.6,
+  "uebergang": "raster",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "comic-tafel",
+      "dauer": 3.6,
+      "sprecher": "Erst denken, dann rennen!",
+      "sprecherAb": 1.4,
+      "text": "Erst denken, *dann rennen!*",
+      "dach": "Für die Kleinen"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-068",
+      "stimme": true,
+      "dach": "So läuft’s"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-068",
+      "stimme": true,
+      "fassung": 1,
+      "uebergang": "panel"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-068",
+      "stimme": true,
+      "fassung": 2,
+      "uebergang": "knall"
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "blende",
+      "sprecher": "Trainingskern. Jetzt ausprobieren auf trainingskern Punkt D E.",
+      "sprecherAb": 0.4,
+      "dauer": 4.2
+    }
+  ],
+  "storys": {
+    "name": "Staffel mit Farbrätsel",
+    "zeit": "18:30",
+    "bilder": [
+      10,
+      40
+    ],
+    "frage": [
+      "Staffeln:",
+      "Immer ein Hit?"
+    ],
+    "antwort": "Welche Staffel läuft bei dir am besten? Antworte per Nachricht."
+  }
+}

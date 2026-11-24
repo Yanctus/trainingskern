@@ -1,0 +1,91 @@
+{
+  "titel": "Marketing: Ohne Vorbereitung ins Training",
+  "intro": false,
+  "musik": "zufall",
+  "musikLaut": 0.15,
+  "geraeusche": 0.6,
+  "uebergang": "panel",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "comic-megafon",
+      "dauer": 3.6,
+      "sprecher": "Keine Zeit fürs Planen?",
+      "sprecherAb": 1.1,
+      "zeilen": [
+        "Keine Zeit",
+        "*fürs Planen?*"
+      ]
+    },
+    {
+      "typ": "punkte",
+      "ton": "dunkel",
+      "titel": [
+        "Das fällt",
+        "weg"
+      ],
+      "uebergang": "knall",
+      "sprecher": "Suchen, abmalen, aufschreiben: Das fällt weg.",
+      "sprecherAb": 0.6,
+      "punkte": [
+        "Stundenlang suchen",
+        "Skizzen abmalen",
+        "Abläufe aufschreiben"
+      ],
+      "streichen": true
+    },
+    {
+      "typ": "hook",
+      "ton": "neon",
+      "zeilen": [
+        "Öffnen.",
+        "*Loslegen.*"
+      ],
+      "dauer": 2.3,
+      "takt": 0.3,
+      "uebergang": "pinsel",
+      "sprecher": "Öffnen und loslegen."
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-084",
+      "schritte": 3,
+      "tempo": 1.9,
+      "dach": "Läuft schon",
+      "uebergang": "raster",
+      "sprecher": "Die Übung läuft schon, von mir auf Deutsch erklärt.",
+      "sprecherAb": 0.8
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "blende",
+      "sprecher": "Trainingskern. Jetzt ausprobieren auf trainingskern Punkt D E.",
+      "sprecherAb": 0.4,
+      "dauer": 4.2
+    }
+  ],
+  "storys": {
+    "problem": [
+      "Feierabend um fünf.",
+      "Training um sechs."
+    ],
+    "problemSatz": "Dazwischen: Tasche packen, Kinder abholen. Und planen?",
+    "frage": [
+      "Wann planst du",
+      "dein Training?"
+    ],
+    "antwort": "Am Abend vorher oder auf dem Parkplatz? Antworte per Nachricht.",
+    "loesung": [
+      "Öffnen.",
+      "Loslegen."
+    ],
+    "loesungSatz": "Die Übung ist fertig erklärt. Du musst nur noch aufbauen.",
+    "art": "marketing",
+    "zeit": "18:30",
+    "bilder": [
+      10,
+      10
+    ]
+  }
+}

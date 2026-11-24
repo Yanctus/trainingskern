@@ -1,0 +1,86 @@
+{
+  "titel": "Marketing: Für jede Altersklasse",
+  "intro": false,
+  "musik": "zufall",
+  "musikLaut": 0.15,
+  "geraeusche": 0.6,
+  "uebergang": "knall",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "comic-banner",
+      "dauer": 3.6,
+      "sprecher": "Bambini oder B-Jugend?",
+      "sprecherAb": 1.6,
+      "text": "Bambini oder *B-Jugend?*",
+      "dach": "Egal, wen du trainierst"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-016",
+      "schritte": 3,
+      "tempo": 1.9,
+      "dach": "Für die Kleinen",
+      "uebergang": "knall",
+      "sprecher": "Für die Kleinen gibt es Spiele mit viel Ball …",
+      "sprecherAb": 0.8
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-036",
+      "schritte": 3,
+      "tempo": 1.9,
+      "dach": "Für die Großen",
+      "uebergang": "pinsel",
+      "sprecher": "… für die Großen Taktik mit Anspruch.",
+      "sprecherAb": 0.8
+    },
+    {
+      "typ": "app",
+      "seite": "/trainingsplaene",
+      "dauer": 5.2,
+      "scroll": [
+        0,
+        700
+      ],
+      "halt": 1.6,
+      "verstecke": ".aw-trikot small",
+      "notiz": "Trikot wählen ↓",
+      "uebergang": "raster",
+      "sprecher": "Du wählst einfach das Trikot deiner Mannschaft.",
+      "sprecherAb": 0.5,
+      "stempel": "Jede Jugend"
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "blende",
+      "sprecher": "Trainingskern. Jetzt ausprobieren auf trainingskern Punkt D E.",
+      "sprecherAb": 0.4,
+      "dauer": 4.2
+    }
+  ],
+  "storys": {
+    "problem": [
+      "Die Übung ist gut.",
+      "Aber für wen?"
+    ],
+    "problemSatz": "Für die Kleinen zu schwer, für die Großen zu langweilig.",
+    "frage": [
+      "Welche Jugend",
+      "trainierst du?"
+    ],
+    "antwort": "Von den Bambini bis zu den Großen: Antworte per Nachricht.",
+    "loesung": [
+      "Passend für",
+      "jede Jugend."
+    ],
+    "loesungSatz": "Du wählst das Trikot deiner Mannschaft, wir zeigen, was passt.",
+    "art": "marketing",
+    "zeit": "18:30",
+    "bilder": [
+      10,
+      10
+    ]
+  }
+}
