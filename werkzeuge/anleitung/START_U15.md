@@ -5,11 +5,12 @@ Lies zuerst vollständig, in dieser Reihenfolge, und halte dich genau daran:
 2. /home/user/trainingskern/werkzeuge/anleitung/ZUSATZ_U15.md (geht bei Widerspruch vor; dort steht u. a.: Einheit bleibt
    ausgeblendet mit hidden true + wartet_auf_ton true, Annehmen/Aufdrehen mit bl(von=...) und drehen(), Meter runden,
    Sprechtexte wie ein Trainer am Platz, Texte auf der Tafel sauber)
-3. /home/user/trainingskern/werkzeuge/bau/hilfe.py und als Vorbilder bau/ue298.py, bau/ue299.py, bau/ue300.py
+3. /home/user/trainingskern/werkzeuge/bau/hilfe.py und als Vorbilder bau/ue298.py, bau/ue299.py, bau/ue300.py,
+   bei Großfeld bau/ue319.py, bei langem Feld bau/ue317.py
 
 Wo AUFTRAG.md auf „werkzeuge/anleitung/TITEL.txt“ verweist: Die Titelliste liegt unter
-/tmp/claude-0/-home-user-trainingskern/717b55b0-9383-5e59-8671-45c768bc1d26/scratchpad/TITEL.txt (bis UE-300). Keinen Titel doppelt
-vergeben; parallel bauen andere Agenten UE-301 bis UE-320, also konkrete, unterscheidbare Titel wählen.
+/tmp/claude-0/-home-user-trainingskern/717b55b0-9383-5e59-8671-45c768bc1d26/scratchpad/TITEL.txt (alle Einheiten mit Code). Keinen
+Titel doppelt vergeben; parallel bauen andere Agenten weitere Codes, also konkrete, unterscheidbare Titel wählen.
 
 Rohdaten: /home/user/trainingskern/werkzeuge/import/<Woche>/<Übung>/. In manchen Wochenordnern liegen auch Übungen des
 U12-Plans: nur die dir genannten bearbeiten. ton.txt fehlt: `TK_PLAN=u15 python3 werkbank.py ton "<Ordner>"`.
