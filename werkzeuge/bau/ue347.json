@@ -1,0 +1,852 @@
+{
+ "title": "Zwei gegen eins, dann zurück",
+ "code": "UE-347",
+ "kind": "Spielform",
+ "focuses": [
+  "Umschalten",
+  "Verteidigen",
+  "Torschuss"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 12,
+ "players_max": 16,
+ "field_size": "35 x 35 m",
+ "description": "Eine Welle mit zwei Phasen. In der kleinen Zone greifen zwei Spieler von Team Neon gegen einen Verteidiger aufs Tor an. Sobald die Aktion vorbei ist, spielt der Trainer einen neuen Ball in die große Zone, und Team Rot kontert mit drei Spielern. Die beiden Angreifer von eben sprinten zurück und verteidigen zu zweit gegen drei.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 35 mal 35 Metern, längs geteilt. Links eine kleine Zone mit Tor oben und darunter eine Wartezone, rechts eine große Zone mit Tor unten. In beiden Toren steht ein Torwart.",
+  "Verteilen: Team Neon wartet zu zweit in der Wartezone, die ersten zwei stehen vorn in der kleinen Zone. Ein Verteidiger von Team Rot steht in der kleinen Zone, zwei Angreifer von Team Rot warten oben an der großen Zone. Der Trainer steht mit vielen Bällen oben zwischen den Zonen.",
+  "Ablauf: Der Trainer spielt ein, und es läuft zwei gegen eins aufs obere Tor. Ist die Aktion vorbei, kommt sofort ein neuer Ball zu Team Rot in die große Zone. Der Verteidiger läuft mit nach vorn, die zwei Angreifer von Team Neon sprinten zurück. Drei gegen zwei aufs untere Tor.",
+  "Wertung und Wechsel: Jeder Treffer gibt einen Punkt für das Team, das trifft. Danach rücken die nächsten zwei von Team Neon nach, ein neuer Verteidiger von Team Rot kommt dazu, und es geht ohne Pause weiter."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Ball weg? Sofort zurück zum Tor sprinten",
+  "Verzögern, bis der zweite Mann da ist",
+  "Die Mitte zu, nach außen lenken",
+  "Mit Tempo angreifen, die Überzahl nutzen"
+ ],
+ "materials": [
+  "2 Großfeldtore",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Zwei gegen eins, dann zurück. Erst greift Team Neon zu zweit an. Danach kontert Team Rot zu dritt, und die zwei Angreifer müssen sofort zurück und verteidigen.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   },
+   {
+    "type": "line",
+    "x1": 43.8,
+    "y1": 5,
+    "x2": 43.8,
+    "y2": 55,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 25,
+    "y1": 42.5,
+    "x2": 75,
+    "y2": 42.5,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 25,
+    "y1": 17.5,
+    "x2": 43.8,
+    "y2": 17.5,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 35.3,
+    "y": 5,
+    "side": "top",
+    "size": "gross"
+   },
+   {
+    "x": 60.5,
+    "y": 55,
+    "side": "bottom",
+    "size": "gross"
+   }
+  ],
+  "cones": [],
+  "players": [
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 29,
+    "y": 38.5,
+    "label": "9"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 41.5,
+    "y": 38.5,
+    "label": "11"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 30,
+    "y": 54,
+    "label": "8"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 41,
+    "y": 54,
+    "label": "10"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 35,
+    "y": 22.5,
+    "label": "5"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 59,
+    "y": 7,
+    "label": "2"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 72.5,
+    "y": 7,
+    "label": "3"
+   },
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 35.3,
+    "y": 6.5,
+    "label": "TW"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 60.5,
+    "y": 52.5,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 49,
+    "y": 2.5,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 49.6,
+    "y": 3.1
+   },
+   {
+    "id": "s1",
+    "x": 52.5,
+    "y": 2.2
+   },
+   {
+    "id": "s2",
+    "x": 45.8,
+    "y": 2.2
+   }
+  ],
+  "steps": [
+   {
+    "label": "Trainer spielt ein, zwei gegen eins",
+    "say": "Der Trainer spielt auf Spieler neun. Der nimmt den Ball mit und dribbelt Richtung Tor. Spieler fünf ist allein gegen zwei.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       29.6,
+       39.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n9",
+      "to": [
+       30,
+       29
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n11",
+      "to": [
+       41.5,
+       24
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     }
+    ]
+   },
+   {
+    "label": "Querpass, Spieler elf trifft: Punkt",
+    "say": "Spieler fünf geht auf Spieler neun. Der spielt quer auf Spieler elf, und Spieler elf schließt direkt ab. Das gibt einen Punkt für Team Neon.",
+    "moves": [
+     {
+      "who": "r5",
+      "to": [
+       32.5,
+       26
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       42.1,
+       24.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       38.5,
+       5.3
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Neuer Ball, sofort zurück",
+    "say": "Sofort spielt der Trainer einen neuen Ball rüber zu Spieler zwei. Spieler drei kommt außen mit, Spieler fünf läuft mit nach vorn. Spieler neun und Spieler elf drehen um und sprinten zurück, so schnell es geht.",
+    "moves": [
+     {
+      "who": "r2",
+      "to": [
+       59.5,
+       12.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "s1",
+      "to": [
+       60.1,
+       13.1
+      ],
+      "type": "pass",
+      "delay": 0.3
+     },
+     {
+      "who": "r3",
+      "to": [
+       73,
+       22
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "r5",
+      "to": [
+       50,
+       26
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n11",
+      "to": [
+       53,
+       34
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n9",
+      "to": [
+       61,
+       39
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Verzögern, nach außen lenken",
+    "say": "Spieler elf läuft Spieler zwei von innen an und bremst ihn. Durch die Mitte geht nichts, also spielt Spieler zwei raus auf Spieler drei. Spieler neun schiebt mit nach außen.",
+    "moves": [
+     {
+      "who": "r2",
+      "to": [
+       60,
+       25
+      ],
+      "type": "dribbling",
+      "ball": "s1"
+     },
+     {
+      "who": "n11",
+      "to": [
+       57.5,
+       30.5
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "r3",
+      "to": [
+       73,
+       33
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "s1",
+      "to": [
+       73.6,
+       33.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n9",
+      "to": [
+       68,
+       41.5
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Hereingabe, Spieler fünf trifft: Punkt",
+    "say": "Spieler drei spielt flach in die Mitte, und Spieler fünf ist mitgelaufen. Er trifft, und das gibt einen Punkt für Team Rot. Danach greifen Spieler acht und Spieler zehn in der kleinen Zone an, gegen einen neuen Verteidiger von Team Rot.",
+    "moves": [
+     {
+      "who": "r5",
+      "to": [
+       56,
+       44
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "s1",
+      "to": [
+       56.6,
+       44.6
+      ],
+      "type": "pass",
+      "delay": 0.4
+     },
+     {
+      "who": "s1",
+      "to": [
+       57,
+       54.7
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "35 m"
+   },
+   {
+    "x1": 83,
+    "y1": 5,
+    "x2": 83,
+    "y2": 55,
+    "text": "35 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Ball erobert, sofort drei gegen zwei.",
+   "title": "Ball erobert, sofort los",
+   "text": "Gewinnt der Verteidiger im zwei gegen eins den Ball, wartet niemand auf den Trainer. Er spielt sofort rüber in die große Zone, und das drei gegen zwei läuft. Für Team Neon heißt das: Ball verloren, sofort zurück.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 29,
+      "y": 38.5,
+      "label": "9"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 41.5,
+      "y": 38.5,
+      "label": "11"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 30,
+      "y": 54,
+      "label": "8"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 41,
+      "y": 54,
+      "label": "10"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 35,
+      "y": 22.5,
+      "label": "5"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 59,
+      "y": 7,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 72.5,
+      "y": 7,
+      "label": "3"
+     },
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 35.3,
+      "y": 6.5,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 60.5,
+      "y": 52.5,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 49,
+      "y": 2.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 49.6,
+      "y": 3.1
+     },
+     {
+      "id": "s1",
+      "x": 52.5,
+      "y": 2.2
+     },
+     {
+      "id": "s2",
+      "x": 45.8,
+      "y": 2.2
+     }
+    ],
+    "steps": [
+     {
+      "label": "Querpass abgefangen",
+      "say": "Der Trainer spielt auf Spieler neun, der dribbelt an. Spieler elf startet, und Spieler neun will quer spielen. Spieler fünf ahnt das und geht dazwischen.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         29.6,
+         39.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n9",
+        "to": [
+         30,
+         29
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "n11",
+        "to": [
+         42,
+         21
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       },
+       {
+        "who": "r5",
+        "to": [
+         36,
+         25.5
+        ],
+        "type": "lauf",
+        "delay": 1.6
+       },
+       {
+        "who": "b1",
+        "to": [
+         36.6,
+         26.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Sofort rüber, Neon sprintet zurück",
+      "say": "Spieler drei kommt rein, und Spieler fünf spielt ihn sofort an. Spieler zwei und Spieler fünf laufen mit, drei gegen zwei. Spieler neun und Spieler elf drehen um und sprinten zurück, bevor es zu spät ist.",
+      "moves": [
+       {
+        "who": "r3",
+        "to": [
+         70,
+         20
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         70.6,
+         20.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       },
+       {
+        "who": "r2",
+        "to": [
+         60,
+         18
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "r5",
+        "to": [
+         50,
+         26
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n11",
+        "to": [
+         55,
+         33
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n9",
+        "to": [
+         62,
+         39
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 25,
+      "y1": 58.6,
+      "x2": 75,
+      "y2": 58.6,
+      "text": "35 m"
+     },
+     {
+      "x1": 83,
+      "y1": 5,
+      "x2": 83,
+      "y2": 55,
+      "text": "35 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Zu zweit verzögern und nach außen lenken.",
+   "title": "Zu zweit nach außen lenken",
+   "text": "Die zwei Verteidiger arbeiten zusammen. Einer geht drauf und steht innen, der andere sichert dahinter. So bleibt der Gegner außen, und der Pass nach innen wird schwer. Wer ihn erwartet, fängt ihn ab.",
+   "board": {
+    "players": [
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 64.5,
+      "y": 36.5,
+      "label": "9"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 56,
+      "y": 34,
+      "label": "11"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 30,
+      "y": 54,
+      "label": "8"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 41,
+      "y": 54,
+      "label": "10"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 46,
+      "y": 22,
+      "label": "5"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 55,
+      "y": 18,
+      "label": "2"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 73,
+      "y": 22,
+      "label": "3"
+     },
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 35.3,
+      "y": 6.5,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 60.5,
+      "y": 52.5,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 49,
+      "y": 2.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 55.6,
+      "y": 18.6
+     },
+     {
+      "id": "s1",
+      "x": 52.5,
+      "y": 2.2
+     },
+     {
+      "id": "s2",
+      "x": 45.8,
+      "y": 2.2
+     }
+    ],
+    "steps": [
+     {
+      "label": "Einer geht drauf, einer sichert",
+      "say": "Spieler zwei dribbelt aufs Tor zu. Spieler elf geht drauf und steht innen, nur der Weg nach außen ist frei. Spieler neun sichert hinter ihm.",
+      "moves": [
+       {
+        "who": "r2",
+        "to": [
+         56,
+         25
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n11",
+        "to": [
+         56.5,
+         30
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n9",
+        "to": [
+         62,
+         37
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Nach außen gelenkt",
+      "say": "Spieler zwei muss raus auf Spieler drei. Jetzt schieben beide mit. Spieler neun geht nach außen, Spieler elf lässt sich in die Mitte fallen.",
+      "moves": [
+       {
+        "who": "r3",
+        "to": [
+         73,
+         32
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         73.6,
+         32.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       },
+       {
+        "who": "n9",
+        "to": [
+         69,
+         39
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n11",
+        "to": [
+         57,
+         38
+        ],
+        "type": "lauf",
+        "delay": 1.0
+       }
+      ]
+     },
+     {
+      "label": "Pass nach innen abgefangen",
+      "say": "Spieler drei will flach nach innen auf Spieler fünf spielen. Darauf hat Spieler elf gewartet. Er geht dazwischen, und Team Neon hat den Ball.",
+      "moves": [
+       {
+        "who": "r5",
+        "to": [
+         51,
+         40
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         57.6,
+         38.6
+        ],
+        "type": "pass",
+        "delay": 0.5
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 25,
+      "y1": 58.6,
+      "x2": 75,
+      "y2": 58.6,
+      "text": "35 m"
+     },
+     {
+      "x1": 83,
+      "y1": 5,
+      "x2": 83,
+      "y2": 55,
+      "text": "35 m"
+     }
+    ]
+   }
+  }
+ ]
+}

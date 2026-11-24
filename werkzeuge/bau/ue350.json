@@ -1,0 +1,815 @@
+{
+ "title": "Strafraum schützen im 7 gegen 7",
+ "code": "UE-350",
+ "kind": "Spielform",
+ "focuses": [
+  "Verteidigen",
+  "Umschalten",
+  "Zusammenspiel"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 14,
+ "players_max": 16,
+ "field_size": "45 x 35 m",
+ "description": "Sieben gegen sieben mit Torhütern auf einem kurzen, breiten Feld. Links und rechts gibt es eine Außenzone, damit beide Teams über außen angreifen und flanken. Wir schauen auf Team Neon in der Abwehr, das den Flügelspieler verzögert, die Läufer mitnimmt und zuerst am Ball ist. Weit und breit geklärt gibt einen Punkt, ein ruhiger Ballgewinn mit Pass nach vorn zwei Punkte.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 45 mal 35 Metern mit zwei Toren. Links und rechts ist eine Außenzone von 5 Metern abgeteilt.",
+  "Verteilen: Zwei Teams mit je sechs Feldspielern und Torwart. Die Teams stellen sich frei auf, je ein Spieler geht gern auf jeden Flügel. Der Trainer steht mit Bällen an der Seite.",
+  "Ablauf: Normales Spiel auf zwei Tore, Einwurf und Abstoß wie immer. Beide Teams suchen den Weg über außen und flanken. Nach jeder Flanke ordnet sich die Abwehr schnell neu.",
+  "Wertung: Ein Treffer gibt einen Punkt. Die Verteidiger holen einen Punkt, wenn sie weit und breit klären, und zwei Punkte, wenn sie den Ball ruhig erobern und nach vorn spielen."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Außen verzögern, die Mitte schützen",
+  "Läufer mitnehmen, erster und zweiter Ball gehören uns",
+  "Nach der Flanke kompakt bleiben",
+  "Ball gewonnen? Ruhig bleiben und nach vorn"
+ ],
+ "materials": [
+  "2 Großfeldtore",
+  "8 Hütchen für die Außenzonen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Strafraum schützen im sieben gegen sieben. Ein freies Spiel auf zwei Tore, in dem viele Flanken kommen. Wir schauen auf Team Neon und wie es den Raum vor dem Tor verteidigt.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 10,
+    "y": 5,
+    "w": 78,
+    "h": 50
+   },
+   {
+    "type": "line",
+    "x1": 18,
+    "y1": 5,
+    "x2": 18,
+    "y2": 55,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 80,
+    "y1": 5,
+    "x2": 80,
+    "y2": 55,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 49,
+    "y": 5,
+    "side": "top",
+    "size": "gross"
+   },
+   {
+    "x": 49,
+    "y": 55,
+    "side": "bottom",
+    "size": "gross"
+   }
+  ],
+  "cones": [],
+  "players": [
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 34,
+    "y": 13,
+    "label": "5"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 66,
+    "y": 13,
+    "label": "6"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 45,
+    "y": 27,
+    "label": "4"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 24,
+    "y": 28,
+    "label": "7"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 76,
+    "y": 28,
+    "label": "11"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 39.5,
+    "y": 43,
+    "label": "9"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 57.5,
+    "y": 18.5,
+    "label": "10"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 15,
+    "y": 35,
+    "label": "3"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 85,
+    "y": 35,
+    "label": "2"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 55,
+    "y": 34.2,
+    "label": "8"
+   },
+   {
+    "id": "r12",
+    "team": "b",
+    "x": 29,
+    "y": 46,
+    "label": "12"
+   },
+   {
+    "id": "r14",
+    "team": "b",
+    "x": 66,
+    "y": 44,
+    "label": "14"
+   },
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 49,
+    "y": 7.5,
+    "label": "TW"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 49,
+    "y": 52.5,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 4,
+    "y": 20,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 66.6,
+    "y": 44.6
+   },
+   {
+    "id": "s1",
+    "x": 6.6,
+    "y": 23.5
+   },
+   {
+    "id": "s2",
+    "x": 3,
+    "y": 24.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Über die Mitte nach außen",
+    "say": "Team Rot greift an. Spieler vierzehn spielt in die Mitte zu Spieler acht, und der schickt Spieler zwei die Außenzone entlang.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       55.6,
+       34.8
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r2",
+      "to": [
+       84,
+       18
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     },
+     {
+      "who": "b1",
+      "to": [
+       84.6,
+       18.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Außen verzögern, innen besetzen",
+    "say": "Spieler elf geht raus, läuft aber nicht blind an. Er bleibt vor Spieler zwei und macht ihm die Flanke schwer. Innen starten drei Angreifer, und jeder Verteidiger nimmt seinen Mann.",
+    "moves": [
+     {
+      "who": "n11",
+      "to": [
+       79,
+       24
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r10",
+      "to": [
+       58,
+       10
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n6",
+      "to": [
+       62,
+       8.5
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     },
+     {
+      "who": "r8",
+      "to": [
+       48,
+       21
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n4",
+      "to": [
+       45.5,
+       19
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     },
+     {
+      "who": "r3",
+      "to": [
+       30,
+       17
+      ],
+      "type": "lauf",
+      "bend": -7,
+      "delay": 0.3
+     },
+     {
+      "who": "n5",
+      "to": [
+       34,
+       12
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     }
+    ]
+   },
+   {
+    "label": "Flanke geklärt: Punkt",
+    "say": "Spieler zwei flankt. Spieler vier ist vor Spieler acht am Ball und köpft weit nach außen, und das gibt einen Punkt für Team Neon. Holt Team Neon den Ball ruhig und spielt nach vorn, gibt es zwei Punkte. Danach geht das Spiel einfach weiter.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       46.1,
+       19.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       15,
+       24
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 10,
+    "y1": 58.6,
+    "x2": 88,
+    "y2": 58.6,
+    "text": "45 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Direkt oder nach Rückpass zählt doppelt.",
+   "title": "Rückpass zählt doppelt",
+   "text": "Trifft Team Rot mit dem ersten Kontakt oder nach einem flachen Rückpass von der Grundlinie, zählt der Treffer doppelt. Das belohnt gute Flanken und gute Läufe. Für Team Neon heißt das, früh am Mann sein und den Raum am Elfmeterpunkt zumachen.",
+   "board": {
+    "players": [
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 34,
+      "y": 13,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 66,
+      "y": 13,
+      "label": "6"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 45,
+      "y": 27,
+      "label": "4"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 24,
+      "y": 28,
+      "label": "7"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 75,
+      "y": 27,
+      "label": "11"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 39.5,
+      "y": 43,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 57.5,
+      "y": 18.5,
+      "label": "10"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 15,
+      "y": 35,
+      "label": "3"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 84,
+      "y": 18,
+      "label": "2"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 55,
+      "y": 34.2,
+      "label": "8"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 29,
+      "y": 46,
+      "label": "12"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 66,
+      "y": 44,
+      "label": "14"
+     },
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 49,
+      "y": 7.5,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 49,
+      "y": 52.5,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 4,
+      "y": 20,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 84.6,
+      "y": 18.6
+     },
+     {
+      "id": "s1",
+      "x": 6.6,
+      "y": 23.5
+     },
+     {
+      "id": "s2",
+      "x": 3,
+      "y": 24.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Bis zur Grundlinie",
+      "say": "Spieler zwei geht mit Ball bis an die Grundlinie. Spieler zehn zieht an den kurzen Pfosten, Spieler acht wartet am Elfmeterpunkt. Spieler vier bleibt zu weit weg.",
+      "moves": [
+       {
+        "who": "r2",
+        "to": [
+         84,
+         8.5
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "r10",
+        "to": [
+         60,
+         10
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n6",
+        "to": [
+         63.5,
+         8
+        ],
+        "type": "lauf",
+        "delay": 0.5
+       },
+       {
+        "who": "r8",
+        "to": [
+         52,
+         18
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n4",
+        "to": [
+         43,
+         22
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       }
+      ]
+     },
+     {
+      "label": "Rückpass, direkt: zwei Punkte",
+      "say": "Spieler zwei legt flach zurück. Spieler acht schießt direkt und trifft, und das gibt zwei Punkte für Team Rot. Spieler vier war einen Schritt zu spät.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         52.6,
+         18.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         55,
+         5.3
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Ein später Läufer, dem keiner folgen darf.",
+   "title": "Später Läufer aus der Tiefe",
+   "text": "Vor dem Tor gibt es jetzt eine Zone von 14 Metern. Bei einer Flanke darf der Mittelfeldspieler von Team Neon seinem Gegenspieler nicht in diese Zone folgen. Die Verteidiger müssen den späten Läufer selbst sehen und sich absprechen, wer ihn nimmt und wer den Ball.",
+   "board": {
+    "players": [
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 34,
+      "y": 13,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 66,
+      "y": 13,
+      "label": "6"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 45,
+      "y": 27,
+      "label": "4"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 24,
+      "y": 28,
+      "label": "7"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 75,
+      "y": 27,
+      "label": "11"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 39.5,
+      "y": 43,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 57.5,
+      "y": 18.5,
+      "label": "10"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 15,
+      "y": 35,
+      "label": "3"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 84,
+      "y": 18,
+      "label": "2"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 55,
+      "y": 34.2,
+      "label": "8"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 29,
+      "y": 46,
+      "label": "12"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 66,
+      "y": 44,
+      "label": "14"
+     },
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 49,
+      "y": 7.5,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 49,
+      "y": 52.5,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 4,
+      "y": 20,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 84.6,
+      "y": 18.6
+     },
+     {
+      "id": "s1",
+      "x": 6.6,
+      "y": 23.5
+     },
+     {
+      "id": "s2",
+      "x": 3,
+      "y": 24.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Spieler acht kommt spät",
+      "say": "Spieler zwei hat den Ball außen. Spieler acht startet spät aus der Tiefe. Spieler vier darf nicht mit in die Zone und bleibt an der Linie stehen. Spieler zehn zieht an den kurzen Pfosten.",
+      "moves": [
+       {
+        "who": "r8",
+        "to": [
+         51,
+         18.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n4",
+        "to": [
+         46,
+         26.5
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "r10",
+        "to": [
+         60,
+         10
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n6",
+        "to": [
+         63.5,
+         8
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       }
+      ]
+     },
+     {
+      "label": "Schauen, rufen, rüberschieben",
+      "say": "Jetzt muss Spieler fünf schauen. Er sieht Spieler acht kommen, ruft und schiebt rüber. Spieler sechs bleibt bei Spieler zehn.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         51,
+         18.5
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "n5",
+        "to": [
+         47,
+         13
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Flanke geklärt: Punkt",
+      "say": "Spieler zwei flankt auf Spieler acht. Spieler fünf ist zuerst da und köpft weit nach außen, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         47.6,
+         13.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         15,
+         24
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "lines": [
+     {
+      "type": "rect",
+      "x": 10,
+      "y": 5,
+      "w": 78,
+      "h": 50
+     },
+     {
+      "type": "line",
+      "x1": 18,
+      "y1": 5,
+      "x2": 18,
+      "y2": 55,
+      "dashed": true
+     },
+     {
+      "type": "line",
+      "x1": 80,
+      "y1": 5,
+      "x2": 80,
+      "y2": 55,
+      "dashed": true
+     },
+     {
+      "type": "line",
+      "x1": 10,
+      "y1": 24.6,
+      "x2": 88,
+      "y2": 24.6,
+      "dashed": true
+     }
+    ]
+   }
+  }
+ ]
+}

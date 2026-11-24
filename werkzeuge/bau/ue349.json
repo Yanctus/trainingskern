@@ -1,0 +1,594 @@
+{
+ "title": "Köpfen, dann selbst ins Tor",
+ "code": "UE-349",
+ "kind": "Spielform",
+ "focuses": [
+  "Erwärmung",
+  "Torschuss"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 10,
+ "players_min": 8,
+ "players_max": 14,
+ "field_size": "9 x 9 m",
+ "description": "Ein Kopfballwettkampf zum Aufwärmen. In der Mitte stehen zwei Puppen als Tor, die beiden Teams köpfen von beiden Seiten darauf. Ein Mitspieler wirft von der Seite, der Kopfball muss zwischen den Puppen und am Torwart vorbei. Wer geköpft hat, läuft sofort selbst ins Tor und hält gegen das andere Team.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 9 mal 9 Metern. In der Mitte zwei Puppen oder Stangen als Tor, links und rechts an der Seite je ein Hütchen für den Werfer, oben ein Starthütchen.",
+  "Verteilen: Team Rot steht oben, Team Neon unten, je ein Werfer mit Bällen an der Seite. Ein Spieler von Team Rot steht am Hütchen und geht zuerst ins Tor. Der Trainer steht mit Ersatzbällen am Rand.",
+  "Ablauf: Der Werfer wirft seinem Mitspieler den Ball hoch zu, der köpft zwischen den Puppen durch. Höher als die Puppen zählt nicht. Danach läuft der Kopfballspieler ins Tor, und das andere Team köpft.",
+  "Wertung und Wechsel: Jeder Treffer gibt einen Punkt für das Team. Die Werfer wechseln durch, bis jeder zweimal geköpft hat. Nach zwei Runden gewinnt das Team mit mehr Punkten."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Zum Ball gehen, nicht warten",
+  "Mit der Stirn über den Ball, nach unten köpfen",
+  "Sauber statt fest",
+  "Nach dem Kopfball sofort ins Tor"
+ ],
+ "materials": [
+  "2 Puppen oder Stangen",
+  "3 Hütchen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Köpfen, dann selbst ins Tor. Ein kleiner Kopfballwettkampf zum Aufwärmen, zwei Teams köpfen von beiden Seiten auf ein Tor aus zwei Puppen.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   }
+  ],
+  "goals": [],
+  "cones": [
+   {
+    "x": 39.5,
+    "y": 29.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 60.5,
+    "y": 29.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 50,
+    "y": 17,
+    "color": "orange"
+   },
+   {
+    "x": 25,
+    "y": 31.5,
+    "color": "orange"
+   },
+   {
+    "x": 75,
+    "y": 27.5,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 50,
+    "y": 15,
+    "label": "2"
+   },
+   {
+    "id": "r4",
+    "team": "b",
+    "x": 41,
+    "y": 8,
+    "label": "4"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 59,
+    "y": 8,
+    "label": "5"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 25.5,
+    "y": 27,
+    "label": "3"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 45,
+    "y": 45,
+    "label": "7"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 36,
+    "y": 48,
+    "label": "9"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 54,
+    "y": 48,
+    "label": "10"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 75,
+    "y": 31,
+    "label": "8"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 18,
+    "y": 10,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 75.6,
+    "y": 31.6
+   },
+   {
+    "id": "b2",
+    "x": 78.5,
+    "y": 34.5
+   },
+   {
+    "id": "b3",
+    "x": 26.1,
+    "y": 27.6
+   },
+   {
+    "id": "s1",
+    "x": 20.6,
+    "y": 13.5
+   },
+   {
+    "id": "s2",
+    "x": 17,
+    "y": 14
+   }
+  ],
+  "steps": [
+   {
+    "label": "Einer geht ins Tor",
+    "say": "Spieler zwei von Team Rot läuft zwischen die beiden Puppen. Er ist jetzt der Torwart.",
+    "moves": [
+     {
+      "who": "r2",
+      "to": [
+       50,
+       28.5
+      ],
+      "type": "lauf"
+     }
+    ]
+   },
+   {
+    "label": "Anlauf und Wurf",
+    "say": "Spieler sieben läuft an. Von der Seite wirft ihm Spieler acht den Ball hoch zu.",
+    "moves": [
+     {
+      "who": "n7",
+      "to": [
+       45,
+       38
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       45.6,
+       38.6
+      ],
+      "type": "pass",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "Kopfball: Punkt",
+    "say": "Spieler sieben köpft am Torwart vorbei zwischen den Puppen durch, und das gibt einen Punkt für Team Neon. Sofort läuft er selbst ins Tor, und Spieler zwei geht zurück zu seinem Team. Jetzt köpft Team Rot von der anderen Seite.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       42,
+       17
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r2",
+      "to": [
+       68,
+       10
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       50,
+       28.5
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "9 m"
+   },
+   {
+    "x1": 90,
+    "y1": 5,
+    "x2": 90,
+    "y2": 55,
+    "text": "9 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Den Ball nach unten köpfen.",
+   "title": "Kopfball nach unten",
+   "text": "Ein Kopfball nach unten springt vor dem Torwart auf und ist schwer zu halten. Dafür geht der Spieler mit der Stirn über den Ball und nickt ihn ab. Sauber köpfen, nicht mit aller Kraft. Zu hoch über die Puppen zählt nicht.",
+   "board": {
+    "players": [
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 68,
+      "y": 10,
+      "label": "2"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 41,
+      "y": 8,
+      "label": "4"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 59,
+      "y": 8,
+      "label": "5"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 25.5,
+      "y": 27,
+      "label": "3"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 50,
+      "y": 28.5,
+      "label": "7"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 36,
+      "y": 48,
+      "label": "9"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 54,
+      "y": 48,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 75,
+      "y": 31,
+      "label": "8"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 18,
+      "y": 10,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 75.6,
+      "y": 31.6
+     },
+     {
+      "id": "b2",
+      "x": 78.5,
+      "y": 34.5
+     },
+     {
+      "id": "b3",
+      "x": 26.1,
+      "y": 27.6
+     },
+     {
+      "id": "s1",
+      "x": 20.6,
+      "y": 13.5
+     },
+     {
+      "id": "s2",
+      "x": 17,
+      "y": 14
+     }
+    ],
+    "steps": [
+     {
+      "label": "Anlauf und Wurf",
+      "say": "Jetzt köpft Team Rot. Spieler fünf läuft an, und Spieler drei wirft von der Seite.",
+      "moves": [
+       {
+        "who": "r5",
+        "to": [
+         54,
+         19
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b3",
+        "to": [
+         54.6,
+         19.6
+        ],
+        "type": "pass",
+        "delay": 0.4
+       }
+      ]
+     },
+     {
+      "label": "Über den Ball, nach unten: Punkt",
+      "say": "Spieler fünf geht mit der Stirn über den Ball und nickt ihn nach unten. Der Ball springt vor Spieler sieben auf und geht durch, und das gibt einen Punkt für Team Rot.",
+      "moves": [
+       {
+        "who": "b3",
+        "to": [
+         56,
+         26
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b3",
+        "to": [
+         57.5,
+         40
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Wer trifft, köpft weiter.",
+   "title": "Wer trifft, köpft weiter",
+   "text": "Trifft ein Team, bleibt es dran, und der nächste Spieler köpft sofort. Erst wenn ein Kopfball danebengeht oder gehalten wird, wechseln die Rollen. Nach der Spielzeit gewinnt das Team mit den meisten Kopfballtreffern.",
+   "board": {
+    "players": [
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 50,
+      "y": 28.5,
+      "label": "2"
+     },
+     {
+      "id": "r4",
+      "team": "b",
+      "x": 41,
+      "y": 8,
+      "label": "4"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 59,
+      "y": 8,
+      "label": "5"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 25.5,
+      "y": 27,
+      "label": "3"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 45,
+      "y": 45,
+      "label": "7"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 36,
+      "y": 48,
+      "label": "9"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 54,
+      "y": 48,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 75,
+      "y": 31,
+      "label": "8"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 18,
+      "y": 10,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 75.6,
+      "y": 31.6
+     },
+     {
+      "id": "b2",
+      "x": 78.5,
+      "y": 34.5
+     },
+     {
+      "id": "b3",
+      "x": 26.1,
+      "y": 27.6
+     },
+     {
+      "id": "s1",
+      "x": 20.6,
+      "y": 13.5
+     },
+     {
+      "id": "s2",
+      "x": 17,
+      "y": 14
+     }
+    ],
+    "steps": [
+     {
+      "label": "Getroffen: Punkt",
+      "say": "Spieler sieben läuft an, bekommt den Wurf und köpft am Torwart vorbei. Das gibt einen Punkt für Team Neon, und Team Neon bleibt dran.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         45,
+         38
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         45.6,
+         38.6
+        ],
+        "type": "pass",
+        "delay": 0.4
+       },
+       {
+        "who": "b1",
+        "to": [
+         42,
+         17
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n7",
+        "to": [
+         30,
+         42
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Gehalten, Rollen wechseln",
+      "say": "Gleich kommt Spieler neun. Sein Kopfball geht genau auf den Torwart, und Spieler zwei fängt ihn. Jetzt wechseln die Rollen, und Team Rot köpft.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         47,
+         38
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b2",
+        "to": [
+         47.6,
+         38.6
+        ],
+        "type": "pass",
+        "delay": 0.4
+       },
+       {
+        "who": "b2",
+        "to": [
+         50.6,
+         29.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

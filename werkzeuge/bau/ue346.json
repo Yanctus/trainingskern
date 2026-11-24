@@ -1,0 +1,853 @@
+{
+ "title": "Pass, Ablage, Sprint",
+ "code": "UE-346",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Schnelligkeit",
+  "Erwärmung"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 10,
+ "players_min": 6,
+ "players_max": 12,
+ "field_size": "25 x 25 m",
+ "description": "Ein Aufwärmen für Pass und Antritt in Dreiergruppen. Der Erste spielt rüber, bekommt den Ball abgelegt, nachdem er um die Stange gelaufen ist, und spielt den Dritten an, der um Hütchen und Stange gesprintet ist. Dann geht es von der anderen Seite mit neuen Rollen eine Station höher weiter. Die nächste Gruppe startet, sobald die erste weitergerückt ist.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 25 mal 25 Metern. Zwei Reihen mit je fünf Stangen von unten nach oben, dazwischen in der Mitte vier Hütchen.",
+  "Verteilen: Dreiergruppen mit je einem Ball. Die erste Gruppe steht am Start: zwei unten an der Grundlinie, einer am untersten Hütchen in der Mitte. Die nächsten Gruppen warten dahinter. Der Trainer steht mit Ersatzbällen am Rand.",
+  "Ablauf: Pass rüber, Ablage mit einem Kontakt auf den Passgeber, der um die Stange kommt. Der Dritte sprintet um das Hütchen und außen um die Stange und wird angespielt. Der Passgeber sprintet zum nächsten Hütchen, und von der anderen Seite geht es mit neuen Rollen weiter.",
+  "Wechsel: Nach der letzten Station sprinten alle drei zurück zum Start und beginnen von vorn. Die nächste Gruppe startet, sobald die erste an der zweiten Station ist."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Zwischen den Aktionen immer Vollgas",
+  "Flach und scharf passen, damit es direkt weitergeht",
+  "Ankommen, wenn der Ball kommt",
+  "Auf den Fußballen bleiben, gleich kommt die nächste Rolle"
+ ],
+ "materials": [
+  "10 Stangen",
+  "4 Hütchen",
+  "Ein Ball pro Gruppe"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Pass, Ablage, Sprint. Ein Aufwärmen in Dreiergruppen. Jeder passt, legt ab und sprintet, und an jeder Station tauschen die Rollen.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 29,
+    "y": 4,
+    "w": 42,
+    "h": 50
+   }
+  ],
+  "goals": [],
+  "cones": [
+   {
+    "x": 41,
+    "y": 11,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 60,
+    "y": 11,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 41,
+    "y": 21.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 60,
+    "y": 21.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 41,
+    "y": 32,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 60,
+    "y": 32,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 41,
+    "y": 42.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 60,
+    "y": 42.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 41,
+    "y": 53,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 60,
+    "y": 53,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 50,
+    "y": 4.3,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 14,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 23.2,
+    "color": "orange"
+   },
+   {
+    "x": 50,
+    "y": 36.3,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 41,
+    "y": 55.5,
+    "label": "8"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 60,
+    "y": 55.5,
+    "label": "6"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 53.5,
+    "y": 39,
+    "label": "4"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 78,
+    "y": 47,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 41.6,
+    "y": 56.1
+   },
+   {
+    "id": "s1",
+    "x": 81.5,
+    "y": 50
+   },
+   {
+    "id": "s2",
+    "x": 81.5,
+    "y": 44
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pass rüber, dann um die Stange",
+    "say": "Spieler acht spielt flach rüber zu Spieler sechs. Sofort läuft er links herum um die Stange und kommt in die Mitte.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       60.6,
+       56.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n8",
+      "to": [
+       37,
+       52
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n8",
+      "to": [
+       38.5,
+       48.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       43.5,
+       48
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       49,
+       50.5
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Ablage, Sprint ums Hütchen",
+    "say": "Spieler sechs legt mit einem Kontakt ab, genau in den Lauf. Gleichzeitig sprintet Spieler vier um das Hütchen und außen um die Stange.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       49.6,
+       51.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n4",
+      "to": [
+       49.5,
+       40.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n4",
+      "to": [
+       45.5,
+       37
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n4",
+      "to": [
+       47.5,
+       32.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n4",
+      "to": [
+       53,
+       33
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n4",
+      "to": [
+       63.5,
+       40
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n4",
+      "to": [
+       64,
+       46
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Pass zu vier, Sprint nach vorn",
+    "say": "Spieler acht spielt Spieler vier an. Dann sprintet er zum nächsten Hütchen. Spieler sechs wechselt rüber auf die andere Seite.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       64.6,
+       46.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n8",
+      "to": [
+       46.5,
+       26.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n6",
+      "to": [
+       37,
+       46.5
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     }
+    ]
+   },
+   {
+    "label": "Andere Seite, neue Rollen",
+    "say": "Jetzt kommt alles von der anderen Seite. Spieler vier spielt rüber zu Spieler sechs und läuft um seine Stange in die Mitte.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       37.6,
+       47.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n4",
+      "to": [
+       63.5,
+       41
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n4",
+      "to": [
+       60,
+       38.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n4",
+      "to": [
+       55,
+       39
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n4",
+      "to": [
+       51,
+       41.5
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Ablage und Pass zu acht",
+    "say": "Spieler sechs legt ab auf Spieler vier. Spieler acht sprintet um das Hütchen und außen um die Stange, und Spieler vier spielt ihn an.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       51.6,
+       42.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n8",
+      "to": [
+       53.5,
+       26
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n8",
+      "to": [
+       52.5,
+       20
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       47,
+       20
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       37.5,
+       27.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       36.5,
+       33.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       37.1,
+       34.1
+      ],
+      "type": "pass",
+      "delay": 2.4
+     }
+    ]
+   },
+   {
+    "label": "Station für Station nach oben",
+    "say": "So geht es Station für Station nach oben, jedes Mal mit neuen Rollen. Nach der letzten Station sprinten alle drei zurück zum Start. Die nächste Gruppe ist da schon unterwegs, sie startet, sobald die erste weiterrückt.",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       54.5,
+       36
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n4",
+      "to": [
+       53.5,
+       16.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n6",
+      "to": [
+       64,
+       35.5
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 29,
+    "y1": 58.6,
+    "x2": 71,
+    "y2": 58.6,
+    "text": "25 m"
+   },
+   {
+    "x1": 87,
+    "y1": 4,
+    "x2": 87,
+    "y2": 54,
+    "text": "25 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Vollgas um das Hütchen.",
+   "title": "Vollgas um das Hütchen",
+   "text": "Der Dritte sprintet mit voller Kraft um das Hütchen und außen um die Stange. Er kommt genau dann an, wenn der Ball unterwegs ist. Wer nur trabt, lässt den Passgeber warten, und das Tempo ist weg.",
+   "board": {
+    "players": [
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 45,
+      "y": 51,
+      "label": "8"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 60,
+      "y": 55.5,
+      "label": "6"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 53.5,
+      "y": 39,
+      "label": "4"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 78,
+      "y": 47,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 45.6,
+      "y": 51.6
+     },
+     {
+      "id": "s1",
+      "x": 81.5,
+      "y": 50
+     },
+     {
+      "id": "s2",
+      "x": 81.5,
+      "y": 44
+     }
+    ],
+    "steps": [
+     {
+      "label": "Eng um das Hütchen",
+      "say": "Spieler acht hat die Ablage. Spieler vier geht eng um das Hütchen, mit kurzen Schritten und dem Körper nach innen gelegt.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         49.5,
+         40.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n4",
+        "to": [
+         45.5,
+         37
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n4",
+        "to": [
+         47.5,
+         32.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n4",
+        "to": [
+         53,
+         33
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n4",
+        "to": [
+         63.5,
+         40
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Ankommen, wenn der Ball kommt",
+      "say": "Der Pass ist schon unterwegs, während Spieler vier noch um die Stange biegt. Er läuft in den Ball hinein und nimmt ihn im Lauf mit.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         64,
+         46
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         64.6,
+         46.6
+        ],
+        "type": "pass",
+        "delay": 0.2
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 29,
+      "y1": 58.6,
+      "x2": 71,
+      "y2": 58.6,
+      "text": "25 m"
+     },
+     {
+      "x1": 87,
+      "y1": 4,
+      "x2": 87,
+      "y2": 54,
+      "text": "25 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Passen, um die Stange, und mit einem Kontakt weiter.",
+   "title": "Ablage mit einem Kontakt",
+   "text": "Nach dem Pass geht es sofort los um die Stange. Der Pass kommt flach und so scharf, dass die Ablage mit einem Kontakt klappt. Die Ablage landet genau im Laufweg. So bleibt alles im Fluss.",
+   "board": {
+    "players": [
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 41,
+      "y": 55.5,
+      "label": "8"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 60,
+      "y": 55.5,
+      "label": "6"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 53.5,
+      "y": 39,
+      "label": "4"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 78,
+      "y": 47,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 41.6,
+      "y": 56.1
+     },
+     {
+      "id": "s1",
+      "x": 81.5,
+      "y": 50
+     },
+     {
+      "id": "s2",
+      "x": 81.5,
+      "y": 44
+     }
+    ],
+    "steps": [
+     {
+      "label": "Passen und sofort los",
+      "say": "Spieler acht spielt flach und scharf auf Spieler sechs. Er wartet nicht, er läuft direkt los um die Stange.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         60.6,
+         56.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n8",
+        "to": [
+         37,
+         52
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n8",
+        "to": [
+         38.5,
+         48.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n8",
+        "to": [
+         43.5,
+         48
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n8",
+        "to": [
+         49,
+         50.5
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Ablage in den Lauf",
+      "say": "Spieler sechs legt mit einem Kontakt ab, genau in den Lauf von Spieler acht. Der nimmt den Ball mit und spielt gleich weiter.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         49.6,
+         51.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n4",
+        "to": [
+         49.5,
+         40.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n4",
+        "to": [
+         45.5,
+         37
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n4",
+        "to": [
+         47.5,
+         32.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n4",
+        "to": [
+         53,
+         33
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n4",
+        "to": [
+         63.5,
+         40
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n4",
+        "to": [
+         64,
+         46
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         64.6,
+         46.6
+        ],
+        "type": "pass",
+        "delay": 2.2
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 29,
+      "y1": 58.6,
+      "x2": 71,
+      "y2": 58.6,
+      "text": "25 m"
+     },
+     {
+      "x1": 87,
+      "y1": 4,
+      "x2": 87,
+      "y2": 54,
+      "text": "25 m"
+     }
+    ]
+   }
+  }
+ ]
+}
