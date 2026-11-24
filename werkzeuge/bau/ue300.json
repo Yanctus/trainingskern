@@ -1,0 +1,966 @@
+{
+ "title": "Passzirkel mit Tempo",
+ "code": "UE-300",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Koordination",
+  "Schnelligkeit"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "tags": [
+  "Vorbereitung"
+ ],
+ "duration_minutes": 15,
+ "players_min": 8,
+ "players_max": 12,
+ "field_size": "36 x 27 m",
+ "description": "Ein Rundlauf mit sechs Stationen für die Vorbereitung. Der Ball läuft vom Start über rechts nach oben, durch die Mitte nach links und unten herum zurück zum Start. Nach seinem Pass läuft jeder zur nächsten Station, durch die Ringe, durch die Leiter oder über die Hürden. Das Tempo bleibt hoch, Luft holen die Spieler nur am Start.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 36 mal 27 Metern. Rechts liegen fünf Ringe, oben liegt eine Leiter, links stehen vier Minihürden. Acht Hütchen markieren die Stationen.",
+  "Verteilen: Je ein Spieler steht an den vier Hütchen außen, einer steht in der Mitte. Alle anderen warten mit Ball am Start unten. Der Trainer steht mit Ersatzbällen am Rand.",
+  "Ablauf: Doppelpass am Start, steil nach oben, Pass in die Mitte, raus nach links und tief nach unten. Nach einem zweiten Doppelpass geht es mit Ball zurück zum Start. Wer gepasst hat, läuft durch das Gerät zur nächsten Station.",
+  "Wechsel: Jeder rückt nach seiner Aktion eine Station weiter. Der Spieler in der Mitte bleibt und wird nach einigen Runden getauscht. Ist der Ball zurück am Start, beginnt der Nächste."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Kopf hoch vor dem Pass",
+  "Flach und scharf passen, auch mit müden Beinen",
+  "Seitlich stehen und mit dem ersten Kontakt aufdrehen",
+  "Sauber durch die Geräte, dann Vollgas bis zum Hütchen"
+ ],
+ "materials": [
+  "8 Hütchen",
+  "5 Ringe",
+  "1 Koordinationsleiter",
+  "4 Minihürden",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": false,
+ "say_intro": "Passzirkel mit Tempo. Ein Rundlauf für die Vorbereitung. Der Ball läuft einmal ums Feld, und nach jedem Pass geht es durch Ringe, Leiter oder Hürden zur nächsten Station.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 20,
+    "y": 8,
+    "w": 56,
+    "h": 42
+   }
+  ],
+  "goals": [],
+  "cones": [
+   {
+    "x": 52.8,
+    "y": 42,
+    "color": "orange"
+   },
+   {
+    "x": 66.5,
+    "y": 35.4,
+    "color": "orange"
+   },
+   {
+    "x": 60,
+    "y": 13.5,
+    "color": "orange"
+   },
+   {
+    "x": 55.5,
+    "y": 8.6,
+    "color": "orange"
+   },
+   {
+    "x": 23,
+    "y": 10.5,
+    "color": "orange"
+   },
+   {
+    "x": 40.2,
+    "y": 27.4,
+    "color": "orange"
+   },
+   {
+    "x": 24.3,
+    "y": 43.5,
+    "color": "orange"
+   },
+   {
+    "x": 41,
+    "y": 48.3,
+    "color": "orange"
+   },
+   {
+    "x": 70.4,
+    "y": 26.5,
+    "color": "orange",
+    "shape": "ring"
+   },
+   {
+    "x": 73.6,
+    "y": 22.5,
+    "color": "orange",
+    "shape": "ring"
+   },
+   {
+    "x": 70.4,
+    "y": 18.5,
+    "color": "orange",
+    "shape": "ring"
+   },
+   {
+    "x": 73.6,
+    "y": 14.5,
+    "color": "orange",
+    "shape": "ring"
+   },
+   {
+    "x": 70.4,
+    "y": 10.5,
+    "color": "orange",
+    "shape": "ring"
+   },
+   {
+    "x": 38.5,
+    "y": 11.3,
+    "color": "orange",
+    "shape": "leiter"
+   },
+   {
+    "x": 25.2,
+    "y": 15,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 25.2,
+    "y": 18.5,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 25.2,
+    "y": 22,
+    "color": "orange",
+    "shape": "huerde_ou"
+   },
+   {
+    "x": 25.2,
+    "y": 25.5,
+    "color": "orange",
+    "shape": "huerde_ou"
+   }
+  ],
+  "players": [
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 27.4,
+    "y": 10.9,
+    "label": "6"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 51.5,
+    "y": 11.1,
+    "label": "7"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 64,
+    "y": 32,
+    "label": "9"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 42.9,
+    "y": 30,
+    "label": "8"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 27.1,
+    "y": 41.5,
+    "label": "10"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 55.8,
+    "y": 41.5,
+    "label": "11"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 64,
+    "y": 47.6,
+    "label": "5"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 72.4,
+    "y": 47.6,
+    "label": "4"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 10,
+    "y": 30,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 56.4,
+    "y": 42.1
+   },
+   {
+    "id": "b5",
+    "x": 64.6,
+    "y": 48.2
+   },
+   {
+    "id": "b4",
+    "x": 73,
+    "y": 48.2
+   },
+   {
+    "id": "s1",
+    "x": 13.6,
+    "y": 33.5
+   },
+   {
+    "id": "s2",
+    "x": 10,
+    "y": 33.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Doppelpass am Start",
+    "say": "Spieler elf startet unten. Er spielt zu Spieler neun und läuft sofort nach. Der Ball kommt mit einem Kontakt zurück.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       64.6,
+       32.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n11",
+      "to": [
+       56.3,
+       33
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       56.9,
+       33.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Steil nach oben, ab in die Ringe",
+    "say": "Jetzt geht es steil nach oben zu Spieler sieben. Spieler neun springt durch die Ringe und sprintet bis zum Hütchen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       52.1,
+       11.7
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n9",
+      "to": [
+       70.4,
+       26.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n9",
+      "to": [
+       73.6,
+       22.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n9",
+      "to": [
+       70.4,
+       18.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n9",
+      "to": [
+       73.6,
+       14.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n9",
+      "to": [
+       70.4,
+       10.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n9",
+      "to": [
+       61.5,
+       11
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Pass in die Mitte, über die Hürden",
+    "say": "Spieler acht in der Mitte schaut kurz nach links, dann kommt der Pass von Spieler sieben. Drüben springt Spieler sechs schon über die Hürden.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       25.5,
+       23
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b1",
+      "to": [
+       43.5,
+       30.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n6",
+      "to": [
+       25.2,
+       13
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     },
+     {
+      "who": "n6",
+      "to": [
+       25.2,
+       27.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n6",
+      "to": [
+       24.5,
+       30.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n11",
+      "to": [
+       64,
+       32
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Aufdrehen, Pass nach links",
+    "say": "Spieler acht dreht auf und spielt nach links raus, genau in den Lauf von Spieler sechs. Oben geht Spieler sieben durch die Leiter, Spieler neun rückt nach.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       25.1,
+       31.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n7",
+      "to": [
+       46.5,
+       11.3
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n7",
+      "to": [
+       30.5,
+       11.3
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       28,
+       11.2
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n9",
+      "to": [
+       51.5,
+       11.1
+      ],
+      "type": "lauf",
+      "delay": 0.8
+     }
+    ]
+   },
+   {
+    "label": "Tief und Doppelpass",
+    "say": "Weiter nach unten zu Spieler zehn. Der spielt gleich den Doppelpass mit Spieler acht, der ihm ein paar Schritte entgegenkommt.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       27.7,
+       42.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n8",
+      "to": [
+       35.2,
+       35.7
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "b1",
+      "to": [
+       35.8,
+       36.3
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Mit Ball zurück zum Start",
+    "say": "Spieler acht legt in den Lauf ab, und Spieler zehn dribbelt mit Tempo zurück zum Start. Alle sind eine Station weitergerückt, nur Spieler acht bleibt in der Mitte. Jetzt startet Spieler fünf.",
+    "moves": [
+     {
+      "who": "n10",
+      "to": [
+       43.6,
+       45
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       44.2,
+       45.6
+      ],
+      "type": "pass",
+      "delay": 0.3
+     },
+     {
+      "who": "n10",
+      "to": [
+       55.8,
+       45.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n8",
+      "to": [
+       42.9,
+       30
+      ],
+      "type": "lauf",
+      "delay": 0.8
+     },
+     {
+      "who": "n6",
+      "to": [
+       27.1,
+       41.5
+      ],
+      "type": "lauf",
+      "delay": 1.0
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 20,
+    "y1": 58.6,
+    "x2": 76,
+    "y2": 58.6,
+    "text": "36 m"
+   },
+   {
+    "x1": 88,
+    "y1": 8,
+    "x2": 88,
+    "y2": 50,
+    "text": "27 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Offen stehen und schnell aufdrehen.",
+   "title": "Offen stehen, schnell drehen",
+   "text": "Der Spieler in der Mitte steht seitlich zum Ball und sieht so beide Seiten. Vor dem Pass geht der Kopf hoch. Mit dem ersten Kontakt dreht er auf, mit dem zweiten spielt er weiter.",
+   "board": {
+    "players": [
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 27.4,
+      "y": 10.9,
+      "label": "6"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 51.5,
+      "y": 11.1,
+      "label": "7"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 64,
+      "y": 32,
+      "label": "9"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 42.9,
+      "y": 30,
+      "label": "8"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 27.1,
+      "y": 41.5,
+      "label": "10"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 55.8,
+      "y": 41.5,
+      "label": "11"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 64,
+      "y": 47.6,
+      "label": "5"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 72.4,
+      "y": 47.6,
+      "label": "4"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 10,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 52.1,
+      "y": 11.7
+     },
+     {
+      "id": "b5",
+      "x": 64.6,
+      "y": 48.2
+     },
+     {
+      "id": "b4",
+      "x": 73,
+      "y": 48.2
+     },
+     {
+      "id": "s1",
+      "x": 13.6,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 10,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Seitlich stehen, Kopf hoch",
+      "say": "Spieler acht steht seitlich und nicht mit dem Rücken zum Feld. Bevor der Ball kommt, schaut er nach links zu den Hürden. Dann spielt Spieler sieben.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         25.5,
+         23
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         43.5,
+         30.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Erster Kontakt dreht, zweiter passt",
+      "say": "Der erste Kontakt geht schon in die neue Richtung. Mit dem zweiten spielt er flach in den Lauf von Spieler sechs, der gerade über die letzte Hürde kommt.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         25.2,
+         13
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n6",
+        "to": [
+         25.2,
+         27.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n6",
+        "to": [
+         24.5,
+         30.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         25.1,
+         31.1
+        ],
+        "type": "pass",
+        "delay": 1.2
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Sauber durch die Geräte, auch wenn die Beine schwer werden.",
+   "title": "Sauber durch die Geräte",
+   "text": "In den Ringen, in der Leiter und über den Hürden bleibt die Bewegung sauber. Kurz auf dem Boden, Arme mitnehmen, Oberkörper aufrecht. Wer müde wird, macht die Schritte trotzdem ordentlich und nimmt kein Tempo raus.",
+   "board": {
+    "players": [
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 27.4,
+      "y": 10.9,
+      "label": "6"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 51.5,
+      "y": 11.1,
+      "label": "7"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 64,
+      "y": 32,
+      "label": "9"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 42.9,
+      "y": 30,
+      "label": "8"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 27.1,
+      "y": 41.5,
+      "label": "10"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 55.8,
+      "y": 41.5,
+      "label": "11"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 64,
+      "y": 47.6,
+      "label": "5"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 72.4,
+      "y": 47.6,
+      "label": "4"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 10,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 52.1,
+      "y": 11.7
+     },
+     {
+      "id": "b5",
+      "x": 64.6,
+      "y": 48.2
+     },
+     {
+      "id": "b4",
+      "x": 73,
+      "y": 48.2
+     },
+     {
+      "id": "s1",
+      "x": 13.6,
+      "y": 33.5
+     },
+     {
+      "id": "s2",
+      "x": 10,
+      "y": 33.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Durch die Ringe, dann Sprint",
+      "say": "Spieler neun hat abgelegt und geht in die Ringe. Jeder Fuß trifft einen Ring, die Arme arbeiten mit. Nach dem letzten Ring zieht er den Sprint bis zum Hütchen durch.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         70.4,
+         26.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n9",
+        "to": [
+         73.6,
+         22.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n9",
+        "to": [
+         70.4,
+         18.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n9",
+        "to": [
+         73.6,
+         14.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n9",
+        "to": [
+         70.4,
+         10.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n9",
+        "to": [
+         61.5,
+         11
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Leiter und Hürden",
+      "say": "Spieler sieben spielt in die Mitte und läuft durch die Leiter, in jedes Feld ein Fuß. Gleichzeitig nimmt Spieler sechs die Hürden, Knie hoch und ohne Zwischenschritt.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         43.5,
+         30.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n7",
+        "to": [
+         46.5,
+         11.3
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n7",
+        "to": [
+         30.5,
+         11.3
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n7",
+        "to": [
+         28,
+         11.2
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n6",
+        "to": [
+         25.2,
+         13
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n6",
+        "to": [
+         25.2,
+         27.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n6",
+        "to": [
+         24.5,
+         30.5
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
