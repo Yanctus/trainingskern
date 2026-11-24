@@ -104,12 +104,12 @@ eine kurze Notiz in der orangen Handschrift der Seite (`problemNotiz`, `frageNot
 Die drei Bilder sind die Storys für **Morgen (9:00), Mittag (12:30) und Abend (18:45)**, das Reel kommt um 18:30. Die Mittags-Story ist
 immer das Neon-Bild. Dateinamen: `<name>-story-1-morgen.jpg`, `-2-mittag.jpg`, `-3-abend.jpg`. Im Drive gibt es dazu die Ordner
 **Geplant** (`1f-BCJj6tq3YQU97KBoSLAehnei3qfEFq`, vom Nutzer eingeplante Videos und Storys `tagNN_1_morgen_0900.jpg` usw., nichts darin
-ändern oder löschen), **Storys** (`1xMdIYnE1SNuTaNIYYn8j5CELUvrnvWU1`, überarbeitete Story-Bilder kommen hierhin) und **Bereits geposted**.
+ändern oder löschen), **Storys** (`1xMdIYnE1SNuTaNIYYn8j5CELUvrnvWU1`: **alle Story-Bilder, die Claude erstellt, kommen hierhin**, nicht neben das Video) und **Bereits geposted**.
 Die Mittags-Storys für Tag 1 bis 11 liegen neu im Neon-Stil in „Storys“ (Quelle: `stories/geplant-mittag.json`).
 
 **Gehört zu jedem Video dazu, ohne dass der Nutzer danach fragt:** In die Story-Datei kommt der Block `"storys"` (Name, Uhrzeit, zwei
 Zeitpunkte im Video, Frage in zwei Zeilen, ein Satz zum Antworten), nach dem Rendern läuft `node storys.mjs stories/<name>.json`.
-Das erzeugt die drei Bilder in `out/`. Ein Übersichtsbild der drei ansehen, dann mit dem Video in denselben Drive-Ordner laden.
+Das erzeugt die drei Bilder in `out/`. Ein Übersichtsbild der drei ansehen, dann in den Drive-Ordner „Storys“ laden (das Video kommt nach „Übungen“ oder „Vermarktung“).
 Die Frage passt zum Thema des Videos und ist jedes Mal eine andere. Für die Videos bis kampagne-11 gibt es noch keine Story-Bilder.
 
 ## Ablage der fertigen Videos (Vorgabe vom 23.11.2026)
