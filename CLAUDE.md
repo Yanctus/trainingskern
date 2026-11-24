@@ -107,7 +107,7 @@ Hochladen: über die Drive-Schnittstelle (`POST https://www.googleapis.com/uploa
 Der Drive-Zugang der Sitzung selbst kann keine Videodateien hochladen. Der Nutzer holt dafür einen Zugangsschlüssel im Google OAuth Playground
 (Scope `https://www.googleapis.com/auth/drive`, gilt eine Stunde) und hinterlegt ihn über das sichere Formular für `www.googleapis.com`;
 nie in den Chat oder ins Repo. Für jede Runde braucht es einen neuen Schlüssel (der Drive-Zugang der Sitzung nimmt nur Dateien bis 10 MB).
-Stand 24.11.2026 liegen kampagne-01 (Comic) bis -11 im Drive; -12 bis -14 fehlen dort noch.
+Stand 24.11.2026 liegen kampagne-01 (Comic) bis -14 im Drive (Vermarktung: 01, 07, 08, 14; Übungen: alle anderen).
 
 ## Story-Studio
 
