@@ -37,7 +37,7 @@ TORE = [{"x": GX, "y": FY0, "side": "top"}, {"x": GX, "y": FY1, "side": "bottom"
 CONES = [C(x, round((Y[a] + Y[b]) / 2, 1)) for x in (R1, R2, R3) for a, b in zip(list(Y)[:-1], list(Y)[1:])]
 DIMS = dims(FX0, FX1, FY0, FY1, "40 m", "18 m", rx=95)
 # Sprint in die Spielzone: am eigenen, liegen gebliebenen Ball vorbei (durch die Lücke zwischen den Hütchen)
-def um(i, x, y, **k): return [mv(i, [R3 - 2, Y[i] - 2.2], **k), mv(i, [R3 + 3, Y[i] - 2.2], after=True), mv(i, [x, y], after=True)]
+def um(i, x, y, **k): return [mv(i, [round(R3 - 2, 1), round(Y[i] - 2.2, 1)], **k), mv(i, [round(R3 + 3, 1), round(Y[i] - 2.2, 1)], after=True), mv(i, [x, y], after=True)]
 def alle(f, wer=None, **k): return [m for i in (wer or Y) for m in f(i, Y[i], **k)]
 # Stand in der Spielzone (quer)
 ZONE = {"n6": (61.8, 15.7), "n8": (81, 31.4), "n10": (58.6, 47.2), "r9": (81, 7.8), "r7": (65, 39.3)}
