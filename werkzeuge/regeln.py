@@ -4,12 +4,12 @@
 import math, re
 import linienpruefung as lp
 
-KINDS = {"Übungsform", "Spielform"}
+KINDS = {"Übungsform", "Spielform", "Taktik"}  # Taktik = Erklärung eines Spielsystems (24.11.2026), nie im Trainingsplan
 FOCUSES = {"Dribbling", "Passspiel", "Ballannahme", "Torschuss", "1 gegen 1", "Zusammenspiel", "Umschalten", "Verteidigen",
            "Koordination", "Bewegung", "Schnelligkeit", "Kondition", "Erwärmung"}
 AGES = {"Bambini", "F-Jugend", "E-Jugend", "D-Jugend", "C-Jugend", "B-Jugend", "A-Jugend", "Amateure"}
 MOVES = {"pass", "lauf", "dribbling", "blick", "dreh"}  # blick = Schulterblick (Kegel, bewegt niemanden)
-SAY_START = re.compile(r"^(Jetzt zum Coaching-Punkt|Der zweite Coaching-Punkt|Der dritte Coaching-Punkt|Und jetzt die (zweite |dritte )?Steigerung|Und jetzt das Umschalten)")
+SAY_START = re.compile(r"^(Kapitel (zwei|drei|vier):|Jetzt zum Coaching-Punkt|Der zweite Coaching-Punkt|Der dritte Coaching-Punkt|Und jetzt die (zweite |dritte )?Steigerung|Und jetzt das Umschalten)")
 
 
 def dist_seg(p, a, b):
@@ -160,7 +160,7 @@ def regeln(u):
     if len(u.get("title") or "") > 32:
         out.append(f"{code}: Titel ist zu lang ({len(u['title'])} Zeichen), höchstens 32 wie bei den ersten Übungen")
     if u.get("kind") not in KINDS:
-        out.append(f"{code}: kind muss Übungsform oder Spielform sein")
+        out.append(f"{code}: kind muss Übungsform, Spielform oder Taktik sein")
     if not set(u.get("focuses") or []) <= FOCUSES or not 2 <= len(u.get("focuses") or []) <= 3:
         out.append(f"{code}: 2-3 focuses aus den 13 vorhandenen")
     if not set(u.get("age_groups") or []) <= AGES:
@@ -168,7 +168,10 @@ def regeln(u):
     # Bereich des Trainingsplans, aus dem die Übung stammt (bis UE-141: U9-U11; Plan U12-U14 ab 22.11.2026)
     if not u.get("altersbereiche") or not set(u["altersbereiche"]) <= {"U9-U11", "U12-U14", "U15-U17"}:
         out.append(f"{code}: altersbereiche fehlt (U9-U11 oder U12-U14, je nach Plan, aus dem die Übung stammt)")
-    if not 10 <= (u.get("duration_minutes") or 0) <= 20:
+    if u.get("kind") == "Taktik":
+        if not 3 <= (u.get("duration_minutes") or 0) <= 10:
+            out.append(f"{code}: duration_minutes bei Taktik 3-10 (Dauer zum Anschauen)")
+    elif not 10 <= (u.get("duration_minutes") or 0) <= 20:
         out.append(f"{code}: duration_minutes 10-20")
     if (u.get("players_min") or 0) > (u.get("players_max") or 0):
         out.append(f"{code}: players_min größer als players_max")
@@ -188,8 +191,8 @@ def regeln(u):
     if len(u.get("coaching_points") or []) != 4:
         out.append(f"{code}: genau 4 coaching_points")
     base = u.get("board") or {}
-    if not 3 <= len(base.get("steps") or []) <= 6:
-        out.append(f"{code}: Grundform braucht 3-6 Schritte")
+    if not 3 <= len(base.get("steps") or []) <= (7 if u.get("kind") == "Taktik" else 6):
+        out.append(f"{code}: Grundform braucht 3-6 Schritte (Taktik bis 7)")
     if base.get("sketch_steps") is not None and not base.get("sketch_steps"):
         out.append(f"{code}: sketch_steps = null (Skizze zeigt alle Schritte)")
     vs = u.get("versions") or []

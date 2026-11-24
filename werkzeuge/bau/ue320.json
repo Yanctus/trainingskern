@@ -18,10 +18,10 @@
  "players_min": 8,
  "players_max": 8,
  "field_size": "20 x 25 m",
- "description": "Eine Viererkette steht in der Mittelzone und macht die Wege zu. Oben und unten stehen je zwei Angreifer, die den Ball durch die Kette auf die andere Seite spielen wollen. Jeder Pass durch die Kette gibt einen Punkt für die Angreifer, jeder abgefangene Ball einen Punkt für die Kette. Die vier schieben gemeinsam zum Ball und halten die Abstände eng.",
+ "description": "Eine Viererkette steht in der Mittelzone und macht die Wege zu. Auf beiden Seiten stehen je zwei Angreifer, die den Ball durch die Kette auf die andere Seite spielen wollen. Jeder Pass durch die Kette gibt einen Punkt für die Angreifer, jeder abgefangene Ball einen Punkt für die Kette. Die vier schieben gemeinsam zum Ball und halten die Abstände eng.",
  "organisation": [
-  "Aufbauen: Ein Feld von 20 mal 25 Metern, quer in drei Zonen geteilt. Die Mittelzone ist etwas schmaler als die beiden Außenzonen.",
-  "Verteilen: Team Neon steht als Viererkette in der Mittelzone. Von Team Rot stehen zwei Spieler in der oberen und zwei in der unteren Zone. Der Trainer steht mit Bällen an der Seite.",
+  "Aufbauen: Ein Feld von 20 mal 25 Metern, in drei Zonen geteilt. Die Mittelzone ist etwas schmaler als die beiden Außenzonen.",
+  "Verteilen: Team Neon steht als Viererkette in der Mittelzone. Von Team Rot stehen je zwei Spieler in den beiden äußeren Zonen. Der Trainer steht mit Bällen an der Seite.",
   "Ablauf: Team Rot lässt den Ball in seiner Zone laufen und sucht die Lücke. Der Pass soll durch die Kette zu den Mitspielern auf der anderen Seite. Team Neon bleibt in der Mittelzone, schiebt zum Ball und fängt die Pässe ab.",
   "Wertung und Wechsel: Ein Pass durch die Kette gibt einen Punkt für Team Rot. Ein abgefangener Ball gibt einen Punkt für Team Neon. Nach jeder Runde von zwei bis drei Minuten tauschen die Teams die Aufgaben."
  ],
@@ -46,30 +46,30 @@
  "access": "abo",
  "hidden": true,
  "wartet_auf_ton": true,
- "say_intro": "Viererkette in der Mittelzone. Vier Verteidiger stehen in der Mitte und lassen keinen Ball durch. Die Angreifer oben und unten suchen die Lücke.",
+ "say_intro": "Viererkette in der Mittelzone. Vier Verteidiger stehen in der Mitte und lassen keinen Ball durch. Die Angreifer auf beiden Seiten suchen die Lücke.",
  "board": {
   "lines": [
    {
     "type": "rect",
-    "x": 27,
-    "y": 5,
-    "w": 46,
-    "h": 50
+    "x": 14,
+    "y": 4,
+    "w": 70,
+    "h": 47
    },
    {
     "type": "line",
-    "x1": 27,
-    "y1": 22,
-    "x2": 73,
-    "y2": 22,
+    "x1": 37.8,
+    "y1": 4,
+    "x2": 37.8,
+    "y2": 51,
     "dashed": true
    },
    {
     "type": "line",
-    "x1": 27,
-    "y1": 38,
-    "x2": 73,
-    "y2": 38,
+    "x1": 60.2,
+    "y1": 4,
+    "x2": 60.2,
+    "y2": 51,
     "dashed": true
    }
   ],
@@ -79,102 +79,102 @@
    {
     "id": "n3",
     "team": "a",
-    "x": 35,
-    "y": 29,
+    "x": 53.2,
+    "y": 12.2,
     "label": "3"
    },
    {
     "id": "n4",
     "team": "a",
-    "x": 45,
-    "y": 31,
+    "x": 44.8,
+    "y": 22.4,
     "label": "4"
    },
    {
     "id": "n5",
     "team": "a",
-    "x": 55,
-    "y": 31,
+    "x": 53.2,
+    "y": 32.6,
     "label": "5"
    },
    {
     "id": "n2",
     "team": "a",
-    "x": 65,
-    "y": 29,
+    "x": 44.8,
+    "y": 42.8,
     "label": "2"
    },
    {
     "id": "r7",
     "team": "b",
-    "x": 37,
-    "y": 13,
+    "x": 72.8,
+    "y": 14.2,
     "label": "7"
    },
    {
     "id": "r8",
     "team": "b",
-    "x": 63,
-    "y": 13,
+    "x": 72.8,
+    "y": 40.8,
     "label": "8"
    },
    {
     "id": "r9",
     "team": "b",
-    "x": 40,
-    "y": 47,
+    "x": 25.2,
+    "y": 17.3,
     "label": "9"
    },
    {
     "id": "r10",
     "team": "b",
-    "x": 60,
-    "y": 47,
+    "x": 25.2,
+    "y": 37.7,
     "label": "10"
    },
    {
     "id": "T",
     "team": "c",
-    "x": 15,
-    "y": 40,
+    "x": 60,
+    "y": 55.3,
     "label": "T"
    }
   ],
   "balls": [
    {
     "id": "b1",
-    "x": 63.6,
-    "y": 13.6
+    "x": 73.4,
+    "y": 41.4
    },
    {
     "id": "s1",
-    "x": 18.6,
-    "y": 43.5
+    "x": 63.5,
+    "y": 55.8
    },
    {
     "id": "s2",
-    "x": 15,
-    "y": 43.5
+    "x": 66,
+    "y": 55.8
    }
   ],
   "steps": [
    {
     "label": "Ball läuft quer, Kette schiebt",
-    "say": "Team Rot hat oben den Ball. Spieler acht spielt quer zu Spieler sieben. Die Kette von Team Neon schiebt sofort mit nach links, alle vier zusammen.",
+    "say": "Team Rot hat den Ball. Spieler acht spielt quer zu Spieler sieben. Die Kette von Team Neon schiebt sofort mit zum Ball, alle vier zusammen.",
     "moves": [
      {
       "who": "b1",
       "to": [
-       37.6,
-       13.6
+       73.4,
+       14.8
       ],
       "type": "pass"
      },
      {
       "who": "n3",
       "to": [
-       30,
-       29
+       53.2,
+       7.1
       ],
       "type": "lauf",
       "delay": 0.2
@@ -182,8 +182,8 @@
      {
       "who": "n4",
       "to": [
-       39.5,
-       31
+       44.8,
+       16.8
       ],
       "type": "lauf",
       "delay": 0.2
@@ -191,8 +191,8 @@
      {
       "who": "n5",
       "to": [
-       49,
-       31
+       53.2,
+       26.5
       ],
       "type": "lauf",
       "delay": 0.2
@@ -200,8 +200,8 @@
      {
       "who": "n2",
       "to": [
-       58.5,
-       29
+       44.8,
+       36.2
       ],
       "type": "lauf",
       "delay": 0.2
@@ -209,22 +209,22 @@
     ]
    },
    {
-    "label": "Kein Weg durch, zurück nach rechts",
+    "label": "Kein Weg durch, der Ball geht zurück",
     "say": "Spieler sieben findet keine Lücke. Also geht der Ball zurück zu Spieler acht. Jetzt muss die Kette schnell rüber. Spieler zwei schiebt weit raus, aber Spieler fünf kommt zu spät nach.",
     "moves": [
      {
       "who": "b1",
       "to": [
-       63.6,
-       13.6
+       73.4,
+       41.4
       ],
       "type": "pass"
      },
      {
       "who": "n2",
       "to": [
-       70.5,
-       29
+       44.8,
+       48.4
       ],
       "type": "lauf",
       "delay": 0.2
@@ -232,8 +232,8 @@
      {
       "who": "n5",
       "to": [
-       53.5,
-       31
+       53.2,
+       31.1
       ],
       "type": "lauf",
       "delay": 0.5
@@ -241,8 +241,8 @@
      {
       "who": "n4",
       "to": [
-       44.5,
-       31
+       44.8,
+       21.9
       ],
       "type": "lauf",
       "delay": 0.5
@@ -250,8 +250,8 @@
      {
       "who": "n3",
       "to": [
-       35.5,
-       29
+       53.2,
+       12.7
       ],
       "type": "lauf",
       "delay": 0.5
@@ -265,30 +265,30 @@
      {
       "who": "b1",
       "to": [
-       60.6,
-       47.6
+       25.8,
+       38.3
       ],
       "type": "pass"
      }
     ]
    },
    {
-    "label": "Unten weiter, Kette dreht sich um",
-    "say": "Es geht direkt weiter. Die Kette dreht sich zum Ball. Unten spielt Spieler zehn quer zu Spieler neun, und diesmal schieben alle vier eng zusammen rüber.",
+    "label": "Andere Seite, Kette dreht sich um",
+    "say": "Es geht direkt weiter. Die Kette dreht sich zum Ball. Auf der anderen Seite spielt Spieler zehn quer zu Spieler neun, und diesmal schieben alle vier eng zusammen rüber.",
     "moves": [
      {
       "who": "b1",
       "to": [
-       40.6,
-       47.6
+       25.8,
+       17.9
       ],
       "type": "pass"
      },
      {
       "who": "n3",
       "to": [
-       31,
-       30
+       53.2,
+       8.1
       ],
       "type": "lauf",
       "delay": 0.2
@@ -296,8 +296,8 @@
      {
       "who": "n4",
       "to": [
-       40.5,
-       30
+       44.8,
+       17.8
       ],
       "type": "lauf",
       "delay": 0.2
@@ -305,8 +305,8 @@
      {
       "who": "n5",
       "to": [
-       50,
-       30
+       53.2,
+       27.5
       ],
       "type": "lauf",
       "delay": 0.2
@@ -314,8 +314,8 @@
      {
       "who": "n2",
       "to": [
-       59.5,
-       30
+       44.8,
+       37.2
       ],
       "type": "lauf",
       "delay": 0.2
@@ -329,16 +329,16 @@
      {
       "who": "b1",
       "to": [
-       39.3,
-       32.2
+       45.7,
+       16.6
       ],
       "type": "pass"
      },
      {
       "who": "n4",
       "to": [
-       38.7,
-       31.6
+       45.1,
+       16.0
       ],
       "type": "lauf",
       "delay": 0.2
@@ -348,18 +348,18 @@
   ],
   "dims": [
    {
-    "x1": 27,
+    "x1": 14,
     "y1": 58.6,
-    "x2": 73,
+    "x2": 84,
     "y2": 58.6,
-    "text": "20 m"
+    "text": "25 m"
    },
    {
-    "x1": 83,
-    "y1": 5,
-    "x2": 83,
-    "y2": 55,
-    "text": "25 m"
+    "x1": 92,
+    "y1": 4,
+    "x2": 92,
+    "y2": 51,
+    "text": "20 m"
    }
   ]
  },
@@ -374,102 +374,102 @@
      {
       "id": "n3",
       "team": "a",
-      "x": 30,
-      "y": 29,
+      "x": 53.2,
+      "y": 7.1,
       "label": "3"
      },
      {
       "id": "n4",
       "team": "a",
-      "x": 39.5,
-      "y": 31,
+      "x": 44.8,
+      "y": 16.8,
       "label": "4"
      },
      {
       "id": "n5",
       "team": "a",
-      "x": 49,
-      "y": 31,
+      "x": 53.2,
+      "y": 26.5,
       "label": "5"
      },
      {
       "id": "n2",
       "team": "a",
-      "x": 58.5,
-      "y": 29,
+      "x": 44.8,
+      "y": 36.2,
       "label": "2"
      },
      {
       "id": "r7",
       "team": "b",
-      "x": 37,
-      "y": 13,
+      "x": 72.8,
+      "y": 14.2,
       "label": "7"
      },
      {
       "id": "r8",
       "team": "b",
-      "x": 63,
-      "y": 13,
+      "x": 72.8,
+      "y": 40.8,
       "label": "8"
      },
      {
       "id": "r9",
       "team": "b",
-      "x": 40,
-      "y": 47,
+      "x": 25.2,
+      "y": 17.3,
       "label": "9"
      },
      {
       "id": "r10",
       "team": "b",
-      "x": 60,
-      "y": 47,
+      "x": 25.2,
+      "y": 37.7,
       "label": "10"
      },
      {
       "id": "T",
       "team": "c",
-      "x": 15,
-      "y": 40,
+      "x": 60,
+      "y": 55.3,
       "label": "T"
      }
     ],
     "balls": [
      {
       "id": "b1",
-      "x": 37.6,
-      "y": 13.6
+      "x": 73.4,
+      "y": 14.8
      },
      {
       "id": "s1",
-      "x": 18.6,
-      "y": 43.5
+      "x": 63.5,
+      "y": 55.8
      },
      {
       "id": "s2",
-      "x": 15,
-      "y": 43.5
+      "x": 66,
+      "y": 55.8
      }
     ],
     "steps": [
      {
       "label": "Pass abgefangen",
-      "say": "Spieler sieben hat oben den Ball und will steil durch die Kette spielen. Spieler vier ahnt den Pass und geht dazwischen.",
+      "say": "Spieler sieben hat den Ball und will steil durch die Kette spielen. Spieler vier ahnt den Pass und geht dazwischen.",
       "moves": [
        {
         "who": "b1",
         "to": [
-         39.4,
-         30.1
+         50.3,
+         16.7
         ],
         "type": "pass"
        },
        {
         "who": "n4",
         "to": [
-         38.8,
-         29.5
+         49.7,
+         16.1
         ],
         "type": "lauf",
         "delay": 0.2
@@ -478,13 +478,13 @@
      },
      {
       "label": "Sofort zu viert nach vorn",
-      "say": "Jetzt schaltet Team Neon um. Spieler vier dribbelt nach vorn in die obere Zone, und Spieler sieben muss ihn stellen. Links läuft Spieler drei mit, rechts kommen Spieler fünf und Spieler zwei nach.",
+      "say": "Jetzt schaltet Team Neon um. Spieler vier dribbelt nach vorn in die Zone von Spieler sieben, und der muss ihn stellen. Außen läuft Spieler drei mit, auf der anderen Seite kommen Spieler fünf und Spieler zwei nach.",
       "moves": [
        {
         "who": "n4",
         "to": [
-         43,
-         21
+         61.6,
+         20.3
         ],
         "type": "dribbling",
         "ball": "b1"
@@ -492,8 +492,8 @@
        {
         "who": "r7",
         "to": [
-         40.5,
-         15.5
+         69.3,
+         17.8
         ],
         "type": "lauf",
         "delay": 0.3
@@ -501,8 +501,8 @@
        {
         "who": "n3",
         "to": [
-         30,
-         15
+         70.0,
+         7.1
         ],
         "type": "lauf",
         "delay": 0.2
@@ -510,8 +510,8 @@
        {
         "who": "n5",
         "to": [
-         53,
-         22
+         60.2,
+         30.6
         ],
         "type": "lauf",
         "delay": 0.3
@@ -519,8 +519,8 @@
        {
         "who": "n2",
         "to": [
-         64,
-         20
+         63.0,
+         41.8
         ],
         "type": "lauf",
         "delay": 0.3
@@ -528,8 +528,8 @@
        {
         "who": "r8",
         "to": [
-         58,
-         12
+         74.2,
+         35.7
         ],
         "type": "lauf",
         "delay": 0.4
@@ -538,21 +538,21 @@
      },
      {
       "label": "Querpass, Minitor: zwei Punkte",
-      "say": "Spieler vier legt quer auf Spieler drei. Der schiebt den Ball ins linke Minitor, und das gibt zwei Punkte für Team Neon.",
+      "say": "Spieler vier legt quer auf Spieler drei. Der schiebt den Ball ins Minitor vor ihm, und das gibt zwei Punkte für Team Neon.",
       "moves": [
        {
         "who": "b1",
         "to": [
-         30.6,
-         15.6
+         70.6,
+         7.7
         ],
         "type": "pass"
        },
        {
         "who": "b1",
         "to": [
-         34,
-         4.7
+         84.4,
+         11.2
         ],
         "type": "pass",
         "after": true
@@ -562,39 +562,32 @@
     ],
     "goals": [
      {
-      "x": 35,
-      "y": 5,
-      "side": "top"
+      "x": 84,
+      "y": 12.2,
+      "side": "right"
      },
      {
-      "x": 65,
-      "y": 5,
-      "side": "top"
+      "x": 84,
+      "y": 42.8,
+      "side": "right"
      },
      {
-      "x": 35,
-      "y": 55,
-      "side": "bottom"
+      "x": 14,
+      "y": 12.2,
+      "side": "left"
      },
      {
-      "x": 65,
-      "y": 55,
-      "side": "bottom"
+      "x": 14,
+      "y": 42.8,
+      "side": "left"
      }
     ],
     "dims": [
      {
-      "x1": 27,
+      "x1": 14,
       "y1": 58.6,
-      "x2": 73,
+      "x2": 84,
       "y2": 58.6,
-      "text": "20 m"
-     },
-     {
-      "x1": 83,
-      "y1": 5,
-      "x2": 83,
-      "y2": 55,
       "text": "25 m"
      }
     ]
@@ -610,102 +603,102 @@
      {
       "id": "n3",
       "team": "a",
-      "x": 31,
-      "y": 30,
+      "x": 53.2,
+      "y": 8.1,
       "label": "3"
      },
      {
       "id": "n4",
       "team": "a",
-      "x": 40.5,
-      "y": 30,
+      "x": 44.8,
+      "y": 17.8,
       "label": "4"
      },
      {
       "id": "n5",
       "team": "a",
-      "x": 50,
-      "y": 30,
+      "x": 53.2,
+      "y": 27.5,
       "label": "5"
      },
      {
       "id": "n2",
       "team": "a",
-      "x": 59.5,
-      "y": 30,
+      "x": 44.8,
+      "y": 37.2,
       "label": "2"
      },
      {
       "id": "r7",
       "team": "b",
-      "x": 37,
-      "y": 13,
+      "x": 72.8,
+      "y": 14.2,
       "label": "7"
      },
      {
       "id": "r8",
       "team": "b",
-      "x": 63,
-      "y": 13,
+      "x": 72.8,
+      "y": 40.8,
       "label": "8"
      },
      {
       "id": "r9",
       "team": "b",
-      "x": 40,
-      "y": 47,
+      "x": 25.2,
+      "y": 17.3,
       "label": "9"
      },
      {
       "id": "r10",
       "team": "b",
-      "x": 60,
-      "y": 47,
+      "x": 25.2,
+      "y": 37.7,
       "label": "10"
      },
      {
       "id": "T",
       "team": "c",
-      "x": 15,
-      "y": 40,
+      "x": 60,
+      "y": 55.3,
       "label": "T"
      }
     ],
     "balls": [
      {
       "id": "b1",
-      "x": 40.6,
-      "y": 47.6
+      "x": 25.8,
+      "y": 17.9
      },
      {
       "id": "s1",
-      "x": 18.6,
-      "y": 43.5
+      "x": 63.5,
+      "y": 55.8
      },
      {
       "id": "s2",
-      "x": 15,
-      "y": 43.5
+      "x": 66,
+      "y": 55.8
      }
     ],
     "steps": [
      {
       "label": "Verlagerung erkennen, raus",
-      "say": "Unten hat Spieler neun den Ball, die Kette steht auf seiner Seite. Spieler zwei sieht, dass der Querpass zu Spieler zehn kommt. Der Ball ist noch unterwegs, da läuft er schon los.",
+      "say": "Jetzt hat Spieler neun den Ball, die Kette steht auf seiner Seite. Spieler zwei sieht, dass der Querpass zu Spieler zehn kommt. Der Ball ist noch unterwegs, da läuft er schon los.",
       "moves": [
        {
         "who": "n2",
         "to": [
-         60,
-         47
+         25.2,
+         37.7
         ],
         "type": "blick"
        },
        {
         "who": "b1",
         "to": [
-         60.6,
-         47.6
+         25.8,
+         38.3
         ],
         "type": "pass",
         "after": true
@@ -713,8 +706,8 @@
        {
         "who": "n2",
         "to": [
-         62,
-         41
+         33.6,
+         39.8
         ],
         "type": "lauf",
         "delay": 1.2
@@ -722,8 +715,8 @@
        {
         "who": "n5",
         "to": [
-         56,
-         31
+         53.2,
+         33.6
         ],
         "type": "lauf",
         "delay": 1.4
@@ -731,8 +724,8 @@
        {
         "who": "n4",
         "to": [
-         47,
-         31
+         44.8,
+         24.4
         ],
         "type": "lauf",
         "delay": 1.4
@@ -740,8 +733,8 @@
        {
         "who": "n3",
         "to": [
-         38,
-         30
+         53.2,
+         15.2
         ],
         "type": "lauf",
         "delay": 1.4
@@ -750,13 +743,13 @@
      },
      {
       "label": "Pass geblockt, Ball erobert",
-      "say": "Spieler zehn will sofort nach oben durchspielen. Spieler zwei steht schon vor ihm und blockt den Pass. Der Ball gehört Team Neon.",
+      "say": "Spieler zehn will sofort durch die Kette spielen. Spieler zwei steht schon vor ihm und blockt den Pass. Der Ball gehört Team Neon.",
       "moves": [
        {
         "who": "b1",
         "to": [
-         62.6,
-         41.6
+         34.2,
+         40.4
         ],
         "type": "pass"
        }
@@ -764,13 +757,13 @@
      },
      {
       "label": "Aufs nächste Minitor: zwei Punkte",
-      "say": "Spieler zwei geht mit dem Ball außen an Spieler zehn vorbei und trifft ins rechte Minitor, und das gibt zwei Punkte für Team Neon.",
+      "say": "Spieler zwei geht mit dem Ball außen an Spieler zehn vorbei und trifft ins nähere Minitor, und das gibt zwei Punkte für Team Neon.",
       "moves": [
        {
         "who": "n2",
         "to": [
-         68,
-         49
+         22.4,
+         45.9
         ],
         "type": "dribbling",
         "ball": "b1"
@@ -778,8 +771,8 @@
        {
         "who": "b1",
         "to": [
-         65.5,
-         55.3
+         13.6,
+         43.3
         ],
         "type": "pass",
         "after": true
@@ -787,8 +780,8 @@
        {
         "who": "n5",
         "to": [
-         55,
-         41
+         33.6,
+         32.6
         ],
         "type": "lauf",
         "delay": 0.3
@@ -798,39 +791,32 @@
     ],
     "goals": [
      {
-      "x": 35,
-      "y": 5,
-      "side": "top"
+      "x": 84,
+      "y": 12.2,
+      "side": "right"
      },
      {
-      "x": 65,
-      "y": 5,
-      "side": "top"
+      "x": 84,
+      "y": 42.8,
+      "side": "right"
      },
      {
-      "x": 35,
-      "y": 55,
-      "side": "bottom"
+      "x": 14,
+      "y": 12.2,
+      "side": "left"
      },
      {
-      "x": 65,
-      "y": 55,
-      "side": "bottom"
+      "x": 14,
+      "y": 42.8,
+      "side": "left"
      }
     ],
     "dims": [
      {
-      "x1": 27,
+      "x1": 14,
       "y1": 58.6,
-      "x2": 73,
+      "x2": 84,
       "y2": 58.6,
-      "text": "20 m"
-     },
-     {
-      "x1": 83,
-      "y1": 5,
-      "x2": 83,
-      "y2": 55,
       "text": "25 m"
      }
     ]

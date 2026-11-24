@@ -18,12 +18,12 @@
  "players_min": 6,
  "players_max": 8,
  "field_size": "14 x 18 m",
- "description": "Ein Passzirkel zum Aufwärmen mit einem Dummy in der Mitte und drei Stangen. Der Ball läuft vom Start über den Dummy nach links, mit zwei Doppelpässen um die Stangen nach oben und rechts außen wieder raus. Der Letzte dribbelt mit Tempo zurück zum Start. Nach jeder Aktion rückt jeder eine Station weiter.",
+ "description": "Ein Passzirkel zum Aufwärmen mit einem Dummy in der Mitte und drei Stangen. Der Ball läuft vom Start über den Dummy auf die eine Seite, mit zwei Doppelpässen um die Stangen nach vorn und auf der anderen Seite wieder raus. Der Letzte dribbelt mit Tempo zurück zum Start. Nach jeder Aktion rückt jeder eine Station weiter.",
  "organisation": [
-  "Aufbauen: Ein Feld von 14 mal 18 Metern. In der Mitte steht ein Dummy, links, oben und rechts je eine Stange. Unten markiert ein Hütchen den Start.",
+  "Aufbauen: Ein Feld von 14 mal 18 Metern. In der Mitte steht ein Dummy. An beiden Seiten und vorn am anderen Ende steht je eine Stange. Ein Hütchen markiert den Start.",
   "Verteilen: Je ein Spieler steht am Dummy und an den drei Stangen. Die anderen stehen mit Ball am Start. Der Trainer steht mit Ersatzbällen am Rand.",
-  "Ablauf: Doppelpass mit dem Spieler am Dummy, dann raus nach links. Ablage nach innen und Doppelpass um die linke Stange. Weiter nach oben, Doppelpass um die mittlere Stange, Pass nach rechts außen. Der Spieler rechts dribbelt außen an der Stange vorbei zurück zum Start.",
-  "Wechsel: Jeder rückt nach seiner Aktion eine Station weiter, vom Start zum Dummy, dann nach links, nach oben und nach rechts. Dribbelt der Letzte zurück, startet der Nächste."
+  "Ablauf: Doppelpass mit dem Spieler am Dummy, dann raus auf die erste Seite. Ablage nach innen und Doppelpass um die Stange dort. Weiter nach vorn, Doppelpass um die vordere Stange, Pass auf die andere Seite. Der Spieler dort dribbelt außen an der Stange vorbei zurück zum Start.",
+  "Wechsel: Jeder rückt nach seiner Aktion eine Station weiter, vom Start zum Dummy, dann auf die erste Seite, nach vorn und auf die andere Seite. Dribbelt der Letzte zurück, startet der Nächste."
  ],
  "organisation_show": [
   "lines",
@@ -51,45 +51,45 @@
   "lines": [
    {
     "type": "rect",
-    "x": 28,
-    "y": 5,
-    "w": 44,
-    "h": 50
+    "x": 14,
+    "y": 4,
+    "w": 70,
+    "h": 47
    }
   ],
   "goals": [],
   "cones": [
    {
-    "x": 49.5,
-    "y": 30,
+    "x": 49.0,
+    "y": 27.0,
     "color": "orange",
     "shape": "stange",
     "id": "d"
    },
    {
-    "x": 36,
-    "y": 19,
+    "x": 64.4,
+    "y": 12.5,
     "color": "orange",
     "shape": "stange",
     "id": "p1"
    },
    {
-    "x": 49.5,
-    "y": 11,
+    "x": 75.6,
+    "y": 27.0,
     "color": "orange",
     "shape": "stange",
     "id": "p2"
    },
    {
-    "x": 64,
-    "y": 21,
+    "x": 61.6,
+    "y": 42.5,
     "color": "orange",
     "shape": "stange",
     "id": "p3"
    },
    {
-    "x": 51,
-    "y": 49.5,
+    "x": 21.7,
+    "y": 28.6,
     "color": "orange",
     "id": "h0"
    }
@@ -98,109 +98,109 @@
    {
     "id": "n6",
     "team": "a",
-    "x": 46,
-    "y": 48,
+    "x": 23.8,
+    "y": 23.2,
     "label": "6"
    },
    {
     "id": "n7",
     "team": "a",
-    "x": 57.5,
-    "y": 51,
+    "x": 19.6,
+    "y": 39.2,
     "label": "7"
    },
    {
     "id": "n10",
     "team": "a",
-    "x": 53.5,
-    "y": 31,
+    "x": 47.6,
+    "y": 31.2,
     "label": "10"
    },
    {
     "id": "n8",
     "team": "a",
-    "x": 31.5,
-    "y": 22,
+    "x": 60.2,
+    "y": 7.7,
     "label": "8"
    },
    {
     "id": "n9",
     "team": "a",
-    "x": 46,
-    "y": 8.5,
+    "x": 79.1,
+    "y": 23.2,
     "label": "9"
    },
    {
     "id": "n11",
     "team": "a",
-    "x": 69,
-    "y": 21,
+    "x": 61.6,
+    "y": 47.8,
     "label": "11"
    },
    {
     "id": "T",
     "team": "c",
-    "x": 12,
-    "y": 12,
+    "x": 40,
+    "y": 55.3,
     "label": "T"
    }
   ],
   "balls": [
    {
     "id": "b1",
-    "x": 46.6,
-    "y": 48.6
+    "x": 24.4,
+    "y": 23.8
    },
    {
     "id": "b2",
-    "x": 58.1,
-    "y": 51.6
+    "x": 20.2,
+    "y": 39.8
    },
    {
     "id": "s1",
-    "x": 15.6,
-    "y": 15.5
+    "x": 43.5,
+    "y": 55.8
    },
    {
     "id": "s2",
-    "x": 12,
-    "y": 15.5
+    "x": 46,
+    "y": 55.8
    }
   ],
   "dims": [
    {
-    "x1": 28,
+    "x1": 14,
     "y1": 58.6,
-    "x2": 72,
+    "x2": 84,
     "y2": 58.6,
-    "text": "14 m"
+    "text": "18 m"
    },
    {
-    "x1": 85,
-    "y1": 5,
-    "x2": 85,
-    "y2": 55,
-    "text": "18 m"
+    "x1": 92,
+    "y1": 4,
+    "x2": 92,
+    "y2": 51,
+    "text": "14 m"
    }
   ],
   "steps": [
    {
     "label": "Doppelpass am Dummy",
-    "say": "Spieler sechs startet unten. Er spielt flach zu Spieler zehn am Dummy, und der lässt den Ball direkt zurückprallen.",
+    "say": "Spieler sechs startet am Hütchen. Er spielt flach zu Spieler zehn am Dummy, und der lässt den Ball direkt zurückprallen.",
     "moves": [
      {
       "who": "b1",
       "to": [
-       54.1,
-       31.6
+       48.2,
+       31.8
       ],
       "type": "pass"
      },
      {
       "who": "b1",
       "to": [
-       46.6,
-       48.6
+       24.4,
+       23.8
       ],
       "type": "pass",
       "after": true
@@ -208,22 +208,22 @@
     ]
    },
    {
-    "label": "Raus nach links",
-    "say": "Jetzt geht der Ball nach links außen zu Spieler acht. Spieler zehn löst sich schon vom Dummy und kommt ihm entgegen.",
+    "label": "Raus auf die Seite",
+    "say": "Jetzt geht der Ball raus zu Spieler acht an der Seite. Spieler zehn löst sich schon vom Dummy und kommt ihm entgegen.",
     "moves": [
      {
       "who": "b1",
       "to": [
-       32.1,
-       22.6
+       60.8,
+       8.3
       ],
       "type": "pass"
      },
      {
       "who": "n10",
       "to": [
-       53,
-       26
+       54.6,
+       30.7
       ],
       "type": "lauf",
       "delay": 0.3
@@ -231,8 +231,8 @@
      {
       "who": "n10",
       "to": [
-       46,
-       23
+       58.8,
+       23.2
       ],
       "type": "lauf",
       "after": true
@@ -240,22 +240,22 @@
     ]
    },
    {
-    "label": "Doppelpass um die linke Stange",
-    "say": "Spieler acht legt nach innen ab und läuft außen an der Stange vorbei. Spieler zehn spielt ihm den Ball mit einem Kontakt in den Lauf. Unten rückt Spieler sechs zum Dummy nach.",
+    "label": "Doppelpass um die erste Stange",
+    "say": "Spieler acht legt nach innen ab und läuft außen an der Stange vorbei. Spieler zehn spielt ihm den Ball mit einem Kontakt in den Lauf. Spieler sechs rückt vom Start zum Dummy nach.",
     "moves": [
      {
       "who": "b1",
       "to": [
-       46.6,
-       23.6
+       59.4,
+       23.8
       ],
       "type": "pass"
      },
      {
       "who": "n8",
       "to": [
-       31.5,
-       16
+       68.6,
+       7.7
       ],
       "type": "lauf",
       "delay": 0.2
@@ -263,8 +263,8 @@
      {
       "who": "n8",
       "to": [
-       33.5,
-       13
+       72.8,
+       9.9
       ],
       "type": "lauf",
       "after": true
@@ -272,8 +272,8 @@
      {
       "who": "b1",
       "to": [
-       34.1,
-       13.6
+       73.4,
+       10.5
       ],
       "type": "pass",
       "delay": 0.9
@@ -281,8 +281,8 @@
      {
       "who": "n6",
       "to": [
-       53.5,
-       31
+       47.6,
+       31.2
       ],
       "type": "lauf",
       "delay": 0.4
@@ -290,22 +290,22 @@
     ]
    },
    {
-    "label": "Doppelpass um die mittlere Stange",
-    "say": "Weiter nach oben zu Spieler neun. Der legt kurz zurück und dreht um die Stange nach rechts. Spieler acht ist nachgelaufen und spielt ihm den Ball wieder in den Lauf.",
+    "label": "Doppelpass um die vordere Stange",
+    "say": "Weiter nach vorn zu Spieler neun. Der legt kurz zurück und dreht um die Stange Richtung Spieler elf. Spieler acht ist nachgelaufen und spielt ihm den Ball wieder in den Lauf.",
     "moves": [
      {
       "who": "b1",
       "to": [
-       46.6,
-       9.1
+       79.7,
+       23.8
       ],
       "type": "pass"
      },
      {
       "who": "n8",
       "to": [
-       44,
-       16
+       68.6,
+       19.0
       ],
       "type": "lauf",
       "delay": 0.2
@@ -313,8 +313,8 @@
      {
       "who": "b1",
       "to": [
-       44.6,
-       16.6
+       69.2,
+       19.6
       ],
       "type": "pass",
       "after": true
@@ -322,8 +322,8 @@
      {
       "who": "n9",
       "to": [
-       52,
-       6.5
+       81.9,
+       29.6
       ],
       "type": "lauf",
       "delay": 0.9
@@ -331,8 +331,8 @@
      {
       "who": "n9",
       "to": [
-       57,
-       12.5
+       73.5,
+       35.0
       ],
       "type": "lauf",
       "after": true
@@ -340,8 +340,8 @@
      {
       "who": "b1",
       "to": [
-       57.6,
-       13.1
+       74.1,
+       35.6
       ],
       "type": "pass",
       "delay": 1.7
@@ -349,8 +349,8 @@
      {
       "who": "n10",
       "to": [
-       31.5,
-       22
+       60.2,
+       7.7
       ],
       "type": "lauf",
       "delay": 0.5
@@ -358,22 +358,22 @@
     ]
    },
    {
-    "label": "Rechts raus, mit Ball zurück",
-    "say": "Spieler neun spielt nach rechts außen. Spieler elf nimmt den Ball außen an der Stange mit und dribbelt mit Tempo zurück zum Start.",
+    "label": "Raus zur Seite, mit Ball zurück",
+    "say": "Spieler neun spielt raus zu Spieler elf. Der nimmt den Ball außen an der Stange mit und dribbelt mit Tempo zurück zum Start.",
     "moves": [
      {
       "who": "b1",
       "to": [
-       69.6,
-       21.6
+       62.2,
+       48.4
       ],
       "type": "pass"
      },
      {
       "who": "n11",
       "to": [
-       70.5,
-       28
+       51.8,
+       49.4
       ],
       "type": "dribbling",
       "after": true,
@@ -382,8 +382,8 @@
      {
       "who": "n11",
       "to": [
-       47,
-       47.5
+       24.5,
+       24.3
       ],
       "type": "dribbling",
       "after": true,
@@ -393,29 +393,29 @@
    },
    {
     "label": "Weiterrücken, der Nächste startet",
-    "say": "Der Ball ist wieder am Start, die Runde ist durch. Spieler acht rückt nach oben, Spieler neun nach rechts. Und Spieler sieben ist schon dran. Er startet, sobald Spieler elf losdribbelt.",
+    "say": "Der Ball ist wieder am Start, die Runde ist durch. Spieler acht rückt nach vorn, Spieler neun auf die andere Seite. Und Spieler sieben ist schon dran. Er startet, sobald Spieler elf losdribbelt.",
     "moves": [
      {
       "who": "n8",
       "to": [
-       46,
-       8.5
+       79.1,
+       23.2
       ],
       "type": "lauf"
      },
      {
       "who": "n9",
       "to": [
-       66,
-       15
+       70.0,
+       44.6
       ],
       "type": "lauf"
      },
      {
       "who": "n9",
       "to": [
-       69,
-       21
+       61.6,
+       47.8
       ],
       "type": "lauf",
       "after": true
@@ -423,8 +423,8 @@
      {
       "who": "b2",
       "to": [
-       54.1,
-       31.6
+       48.2,
+       31.8
       ],
       "type": "pass",
       "delay": 0.3
@@ -432,8 +432,8 @@
      {
       "who": "b2",
       "to": [
-       58.1,
-       51.6
+       20.2,
+       39.8
       ],
       "type": "pass",
       "after": true
@@ -447,79 +447,79 @@
    "label": "Coaching-Punkt",
    "say": "Jetzt zum Coaching-Punkt: Außen offen annehmen und mit Tempo raus.",
    "title": "Offen annehmen, Tempo raus",
-   "text": "Der Spieler rechts außen steht seitlich und schaut zum Ball. Er nimmt den Pass mit dem hinteren Fuß an. So dreht er in einer Bewegung auf und geht mit dem ersten Kontakt Richtung Start.",
+   "text": "Der Spieler an der letzten Stange steht seitlich und schaut zum Ball. Er nimmt den Pass mit dem hinteren Fuß an. So dreht er in einer Bewegung auf und geht mit dem ersten Kontakt Richtung Start.",
    "board": {
     "players": [
      {
       "id": "n6",
       "team": "a",
-      "x": 53.5,
-      "y": 31,
+      "x": 47.6,
+      "y": 31.2,
       "label": "6"
      },
      {
       "id": "n7",
       "team": "a",
-      "x": 57.5,
-      "y": 51,
+      "x": 19.6,
+      "y": 39.2,
       "label": "7"
      },
      {
       "id": "n10",
       "team": "a",
-      "x": 31.5,
-      "y": 22,
+      "x": 60.2,
+      "y": 7.7,
       "label": "10"
      },
      {
       "id": "n8",
       "team": "a",
-      "x": 44,
-      "y": 16,
+      "x": 68.6,
+      "y": 19.0,
       "label": "8"
      },
      {
       "id": "n9",
       "team": "a",
-      "x": 57,
-      "y": 12.5,
+      "x": 73.5,
+      "y": 35.0,
       "label": "9"
      },
      {
       "id": "n11",
       "team": "a",
-      "x": 69,
-      "y": 21,
+      "x": 61.6,
+      "y": 47.8,
       "label": "11"
      },
      {
       "id": "T",
       "team": "c",
-      "x": 12,
-      "y": 12,
+      "x": 40,
+      "y": 55.3,
       "label": "T"
      }
     ],
     "balls": [
      {
       "id": "b1",
-      "x": 57.6,
-      "y": 13.1
+      "x": 74.1,
+      "y": 35.6
      },
      {
       "id": "b2",
-      "x": 58.1,
-      "y": 51.6
+      "x": 20.2,
+      "y": 39.8
      },
      {
       "id": "s1",
-      "x": 15.6,
-      "y": 15.5
+      "x": 43.5,
+      "y": 55.8
      },
      {
       "id": "s2",
-      "x": 12,
-      "y": 15.5
+      "x": 46,
+      "y": 55.8
      }
     ],
     "steps": [
@@ -530,16 +530,16 @@
        {
         "who": "n11",
         "to": [
-         57,
-         12.5
+         73.5,
+         35.0
         ],
         "type": "blick"
        },
        {
         "who": "b1",
         "to": [
-         69.6,
-         21.6
+         62.2,
+         48.4
         ],
         "type": "pass",
         "after": true
@@ -553,21 +553,21 @@
        {
         "who": "n11",
         "to": [
-         62,
-         37
+         39.2,
+         40.3
         ],
         "type": "blick",
         "von": [
-         57,
-         12.5
+         73.5,
+         35.0
         ],
         "dauer": 1.3
        },
        {
         "who": "n11",
         "to": [
-         62,
-         37
+         39.2,
+         40.3
         ],
         "type": "dreh",
         "delay": 0.4,
@@ -576,8 +576,8 @@
        {
         "who": "n11",
         "to": [
-         70.5,
-         28
+         51.8,
+         49.4
         ],
         "type": "dribbling",
         "after": true,
@@ -586,8 +586,8 @@
        {
         "who": "n11",
         "to": [
-         47,
-         47.5
+         24.5,
+         24.3
         ],
         "type": "dribbling",
         "after": true,
@@ -602,99 +602,99 @@
    "label": "Steigerung",
    "say": "Und jetzt die Steigerung: Eine neue Passfolge, und am Ende geht der Ball steil durch die Gasse.",
    "title": "Steilpass durch die Gasse",
-   "text": "Der Ball geht vom Start direkt nach links außen. Der Spieler am Dummy täuscht kurz an, löst sich und bekommt die Ablage in der Mitte. Er spielt hoch zur Spitze, und von dort kommt der Steilpass durch die Hütchengasse. Der Spieler rechts läuft in den Ball und dribbelt zum Start.",
+   "text": "Der Ball geht vom Start direkt raus auf die erste Seite. Der Spieler am Dummy täuscht kurz an, löst sich und bekommt die Ablage in der Mitte. Er spielt vor zur Spitze, und von dort kommt der Steilpass durch die Hütchengasse. Der Spieler auf der anderen Seite läuft in den Ball und dribbelt zum Start.",
    "board": {
     "players": [
      {
       "id": "n6",
       "team": "a",
-      "x": 46,
-      "y": 48,
+      "x": 23.8,
+      "y": 23.2,
       "label": "6"
      },
      {
       "id": "n7",
       "team": "a",
-      "x": 57.5,
-      "y": 51,
+      "x": 19.6,
+      "y": 39.2,
       "label": "7"
      },
      {
       "id": "n10",
       "team": "a",
-      "x": 53.5,
-      "y": 31,
+      "x": 47.6,
+      "y": 31.2,
       "label": "10"
      },
      {
       "id": "n8",
       "team": "a",
-      "x": 31.5,
-      "y": 22,
+      "x": 60.2,
+      "y": 7.7,
       "label": "8"
      },
      {
       "id": "n9",
       "team": "a",
-      "x": 46,
-      "y": 8.5,
+      "x": 79.1,
+      "y": 23.2,
       "label": "9"
      },
      {
       "id": "n11",
       "team": "a",
-      "x": 69,
-      "y": 21,
+      "x": 61.6,
+      "y": 47.8,
       "label": "11"
      },
      {
       "id": "T",
       "team": "c",
-      "x": 12,
-      "y": 12,
+      "x": 40,
+      "y": 55.3,
       "label": "T"
      }
     ],
     "balls": [
      {
       "id": "b1",
-      "x": 46.6,
-      "y": 48.6
+      "x": 24.4,
+      "y": 23.8
      },
      {
       "id": "b2",
-      "x": 58.1,
-      "y": 51.6
+      "x": 20.2,
+      "y": 39.8
      },
      {
       "id": "s1",
-      "x": 15.6,
-      "y": 15.5
+      "x": 43.5,
+      "y": 55.8
      },
      {
       "id": "s2",
-      "x": 12,
-      "y": 15.5
+      "x": 46,
+      "y": 55.8
      }
     ],
     "steps": [
      {
       "label": "Nach außen, antäuschen, Ablage",
-      "say": "Spieler sechs spielt direkt nach links außen. Spieler zehn täuscht einen Schritt zum Ball an, geht dann weg vom Dummy nach vorn und bekommt die Ablage von Spieler acht.",
+      "say": "Spieler sechs spielt direkt raus zu Spieler acht. Spieler zehn täuscht einen Schritt zum Ball an, geht dann weg vom Dummy nach vorn und bekommt von ihm die Ablage.",
       "moves": [
        {
         "who": "b1",
         "to": [
-         32.1,
-         22.6
+         60.8,
+         8.3
         ],
         "type": "pass"
        },
        {
         "who": "n10",
         "to": [
-         53.5,
-         36
+         40.6,
+         31.2
         ],
         "type": "lauf",
         "delay": 0.2
@@ -702,8 +702,8 @@
        {
         "who": "n10",
         "to": [
-         55,
-         28
+         51.8,
+         32.8
         ],
         "type": "lauf",
         "after": true
@@ -711,8 +711,8 @@
        {
         "who": "n10",
         "to": [
-         50,
-         22.5
+         59.5,
+         27.5
         ],
         "type": "lauf",
         "after": true
@@ -720,8 +720,8 @@
        {
         "who": "b1",
         "to": [
-         50.6,
-         23.1
+         60.1,
+         28.1
         ],
         "type": "pass",
         "delay": 1.9
@@ -729,22 +729,22 @@
       ]
      },
      {
-      "label": "Hoch zur Spitze",
-      "say": "Oben kommt Spieler neun um die Stange herum und zeigt sich. Spieler zehn spielt ihn flach an.",
+      "label": "Pass zur Spitze",
+      "say": "Vorn kommt Spieler neun um die Stange herum und zeigt sich. Spieler zehn spielt ihn flach an.",
       "moves": [
        {
         "who": "n9",
         "to": [
-         52,
-         6.5
+         81.9,
+         29.6
         ],
         "type": "lauf"
        },
        {
         "who": "n9",
         "to": [
-         56.5,
-         12.5
+         73.5,
+         34.4
         ],
         "type": "lauf",
         "after": true
@@ -752,8 +752,8 @@
        {
         "who": "b1",
         "to": [
-         57.1,
-         13.1
+         74.1,
+         35.0
         ],
         "type": "pass",
         "delay": 0.9
@@ -762,21 +762,21 @@
      },
      {
       "label": "Steil durch die Gasse",
-      "say": "Jetzt kommt der Steilpass genau zwischen den beiden Hütchen durch. Spieler elf startet rechts außen, läuft in den Ball und dribbelt zurück zum Start. Dann beginnt Spieler sieben.",
+      "say": "Jetzt kommt der Steilpass genau zwischen den beiden Hütchen durch. Spieler elf startet außen, läuft in den Ball und dribbelt zurück zum Start. Dann beginnt Spieler sieben.",
       "moves": [
        {
         "who": "n11",
         "to": [
-         71,
-         29
+         50.4,
+         49.9
         ],
         "type": "lauf"
        },
        {
         "who": "n11",
         "to": [
-         66.5,
-         39.5
+         35.7,
+         45.1
         ],
         "type": "lauf",
         "after": true
@@ -784,8 +784,8 @@
        {
         "who": "b1",
         "to": [
-         67.1,
-         40.1
+         36.3,
+         45.7
         ],
         "type": "pass",
         "delay": 0.4
@@ -793,8 +793,8 @@
        {
         "who": "n11",
         "to": [
-         47,
-         47.5
+         24.5,
+         24.3
         ],
         "type": "dribbling",
         "after": true,
@@ -805,48 +805,48 @@
     ],
     "cones": [
      {
-      "x": 49.5,
-      "y": 30,
+      "x": 49.0,
+      "y": 27.0,
       "color": "orange",
       "shape": "stange",
       "id": "d"
      },
      {
-      "x": 36,
-      "y": 19,
+      "x": 64.4,
+      "y": 12.5,
       "color": "orange",
       "shape": "stange",
       "id": "p1"
      },
      {
-      "x": 49.5,
-      "y": 11,
+      "x": 75.6,
+      "y": 27.0,
       "color": "orange",
       "shape": "stange",
       "id": "p2"
      },
      {
-      "x": 64,
-      "y": 21,
+      "x": 61.6,
+      "y": 42.5,
       "color": "orange",
       "shape": "stange",
       "id": "p3"
      },
      {
-      "x": 51,
-      "y": 49.5,
+      "x": 21.7,
+      "y": 28.6,
       "color": "orange",
       "id": "h0"
      },
      {
-      "x": 58.5,
-      "y": 29,
+      "x": 50.4,
+      "y": 36.6,
       "color": "neon",
       "id": "g1"
      },
      {
-      "x": 67,
-      "y": 28,
+      "x": 51.8,
+      "y": 45.7,
       "color": "neon",
       "id": "g2"
      }

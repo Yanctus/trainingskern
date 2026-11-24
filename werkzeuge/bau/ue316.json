@@ -20,8 +20,8 @@
  "field_size": "14 x 25 m",
  "description": "Drei gegen drei in einer Hälfte, dazu helfen drei Springer dem Team am Ball. Nach fünf Pässen in Folge darf der Ball zum vierten Springer am anderen Ende. Die Angreifer laufen sofort nach, bekommen die Ablage und schießen auf die Minitore. Fängt das andere Team einen Pass ab, schießt es gleich auf die Minitore in dieser Hälfte.",
  "organisation": [
-  "Aufbauen: Ein Feld von 14 mal 25 Metern, in der Mitte quer geteilt. Auf jeder Grundlinie stehen zwei Minitore.",
-  "Verteilen: Team Neon und Team Rot spielen zu dritt in der unteren Hälfte. Zwei Springer spielen dort mit, je ein Springer steht zwischen den Minitoren oben und unten. Der Trainer steht mit Bällen am Rand.",
+  "Aufbauen: Ein Feld von 14 mal 25 Metern, in der Mitte in zwei Hälften geteilt. Auf jeder Grundlinie stehen zwei Minitore.",
+  "Verteilen: Team Neon und Team Rot spielen zu dritt in einer Hälfte. Zwei Springer spielen dort mit, an beiden Enden steht je ein Springer zwischen den Minitoren. Der Trainer steht mit Bällen am Rand.",
   "Ablauf: Team Neon hält den Ball mit den drei Springern in der Hälfte. Nach fünf Pässen in Folge geht der Ball zum Springer am anderen Ende. Team Neon läuft nach, bekommt die Ablage und schießt dort auf die Minitore. Team Rot läuft mit zurück und verteidigt.",
   "Wertung und Wechsel: Jeder Treffer gibt einen Punkt. Fängt Team Rot den Ball ab, schießt es sofort auf die Minitore in dieser Hälfte. Weiter geht es in der Hälfte, in der die Aktion endet. Die Rollen wechseln nach festen Zeiten oder nach jedem abgefangenen Ball."
  ],
@@ -51,71 +51,71 @@
   "lines": [
    {
     "type": "rect",
-    "x": 25,
-    "y": 5,
-    "w": 50,
-    "h": 50
+    "x": 9,
+    "y": 4,
+    "w": 80,
+    "h": 47
    },
    {
     "type": "line",
-    "x1": 25,
-    "y1": 30,
-    "x2": 75,
-    "y2": 30,
+    "x1": 49.0,
+    "y1": 4,
+    "x2": 49.0,
+    "y2": 51,
     "dashed": true
    }
   ],
   "goals": [
    {
-    "x": 37.5,
-    "y": 5,
-    "side": "top"
+    "x": 89,
+    "y": 15.8,
+    "side": "right"
    },
    {
-    "x": 62.5,
-    "y": 5,
-    "side": "top"
+    "x": 89,
+    "y": 39.2,
+    "side": "right"
    },
    {
-    "x": 37.5,
-    "y": 55,
-    "side": "bottom"
+    "x": 9,
+    "y": 15.8,
+    "side": "left"
    },
    {
-    "x": 62.5,
-    "y": 55,
-    "side": "bottom"
+    "x": 9,
+    "y": 39.2,
+    "side": "left"
    }
   ],
   "cones": [
    {
-    "x": 25,
-    "y": 5,
+    "x": 9,
+    "y": 4,
     "color": "orange"
    },
    {
-    "x": 75,
-    "y": 5,
+    "x": 89,
+    "y": 4,
     "color": "orange"
    },
    {
-    "x": 25,
-    "y": 55,
+    "x": 9,
+    "y": 51,
     "color": "orange"
    },
    {
-    "x": 75,
-    "y": 55,
+    "x": 89,
+    "y": 51,
     "color": "orange"
    },
    {
-    "x": 25,
-    "y": 30,
+    "x": 49.0,
+    "y": 4,
     "color": "orange"
    },
    {
-    "x": 75,
-    "y": 30,
+    "x": 49.0,
+    "y": 51,
     "color": "orange"
    }
   ],
@@ -123,132 +123,125 @@
    {
     "id": "n6",
     "team": "a",
-    "x": 35.5,
-    "y": 48.5,
+    "x": 19.4,
+    "y": 13.9,
     "label": "6"
    },
    {
     "id": "n8",
     "team": "a",
-    "x": 61,
-    "y": 30,
+    "x": 49.0,
+    "y": 37.8,
     "label": "8"
    },
    {
     "id": "n10",
     "team": "a",
-    "x": 69.5,
-    "y": 42,
+    "x": 29.8,
+    "y": 45.8,
     "label": "10"
    },
    {
     "id": "r3",
     "team": "b",
-    "x": 44,
-    "y": 40,
+    "x": 30.6,
+    "y": 21.9,
     "label": "3"
    },
    {
     "id": "r4",
     "team": "b",
-    "x": 52.5,
-    "y": 38,
+    "x": 39.4,
+    "y": 29.9,
     "label": "4"
    },
    {
     "id": "r5",
     "team": "b",
-    "x": 61,
-    "y": 45.5,
+    "x": 21.0,
+    "y": 34.1,
     "label": "5"
    },
    {
     "id": "f1",
     "team": "t",
-    "x": 50,
-    "y": 6.5,
+    "x": 86.6,
+    "y": 27.5,
     "label": "F"
    },
    {
     "id": "f2",
     "team": "t",
-    "x": 52.5,
-    "y": 54,
+    "x": 10.6,
+    "y": 29.9,
     "label": "F"
    },
    {
     "id": "f3",
     "team": "t",
-    "x": 35.5,
-    "y": 32,
+    "x": 45.8,
+    "y": 13.9,
     "label": "F"
    },
    {
     "id": "f4",
     "team": "t",
-    "x": 27,
-    "y": 44,
+    "x": 28.2,
+    "y": 5.9,
     "label": "F"
    },
    {
     "id": "T",
     "team": "c",
-    "x": 12,
-    "y": 12,
+    "x": 70,
+    "y": 55.3,
     "label": "T"
    }
   ],
   "balls": [
    {
     "id": "b1",
-    "x": 70.1,
-    "y": 42.6
+    "x": 30.4,
+    "y": 46.4
    },
    {
     "id": "s1",
-    "x": 15.6,
-    "y": 15.5
+    "x": 73.5,
+    "y": 55.8
    },
    {
     "id": "s2",
-    "x": 12,
-    "y": 15.5
+    "x": 76,
+    "y": 55.8
    }
   ],
   "dims": [
    {
-    "x1": 25,
+    "x1": 9,
     "y1": 58.6,
-    "x2": 75,
+    "x2": 89,
     "y2": 58.6,
-    "text": "14 m"
-   },
-   {
-    "x1": 88,
-    "y1": 5,
-    "x2": 88,
-    "y2": 55,
     "text": "25 m"
    }
   ],
   "steps": [
    {
     "label": "Pass eins und zwei",
-    "say": "Team Neon hat den Ball in der unteren Hälfte. Spieler zehn spielt zu Spieler acht, und der direkt weiter zum Springer links. Zwei Pässe.",
+    "say": "Team Neon hat den Ball in seiner Hälfte. Spieler zehn spielt zu Spieler acht, und der direkt weiter zum Springer an der Mittellinie. Zwei Pässe.",
     "moves": [
      {
       "who": "b1",
       "to": [
-       61.6,
-       30.6
+       49.6,
+       38.4
       ],
       "type": "pass"
      },
      {
       "who": "r4",
       "to": [
-       54,
-       35.5
+       43.4,
+       31.3
       ],
       "type": "lauf",
       "delay": 0.2
@@ -256,8 +249,8 @@
      {
       "who": "b1",
       "to": [
-       36.1,
-       32.6
+       46.4,
+       14.5
       ],
       "type": "pass",
       "after": true
@@ -265,8 +258,8 @@
      {
       "who": "r3",
       "to": [
-       43,
-       37
+       37.8,
+       20.9
       ],
       "type": "lauf",
       "delay": 0.9
@@ -275,21 +268,21 @@
    },
    {
     "label": "Pass drei und vier",
-    "say": "Team Rot schiebt rüber. Der Springer spielt runter zu Spieler sechs. Der passt gleich weiter zum Springer an der Grundlinie, das ist Pass Nummer vier.",
+    "say": "Team Rot schiebt rüber. Der Springer spielt zurück zu Spieler sechs. Der passt gleich weiter zum Springer an der Grundlinie, das ist Pass Nummer vier.",
     "moves": [
      {
       "who": "b1",
       "to": [
-       36.1,
-       49.1
+       20.0,
+       14.5
       ],
       "type": "pass"
      },
      {
       "who": "r3",
       "to": [
-       42,
-       43
+       28.2,
+       20.0
       ],
       "type": "lauf",
       "delay": 0.2
@@ -297,8 +290,8 @@
      {
       "who": "b1",
       "to": [
-       53.1,
-       54.6
+       11.2,
+       30.5
       ],
       "type": "pass",
       "after": true
@@ -307,21 +300,21 @@
    },
    {
     "label": "Der fünfte Pass, Kopf hoch",
-    "say": "Rechts außen ist Spieler zehn frei. Bevor der Ball kommt, schaut er hoch zum Springer am anderen Ende. Dann kommt der fünfte Pass.",
+    "say": "Auf der anderen Seite ist Spieler zehn frei. Bevor der Ball kommt, schaut er schon zum Springer am anderen Ende. Dann kommt der fünfte Pass.",
     "moves": [
      {
       "who": "n10",
       "to": [
-       58,
-       20
+       50.8,
+       39.1
       ],
       "type": "blick"
      },
      {
       "who": "b1",
       "to": [
-       70.1,
-       42.6
+       30.4,
+       46.4
       ],
       "type": "pass",
       "after": true
@@ -329,22 +322,22 @@
     ]
    },
    {
-    "label": "Ausbruch zum Springer oben",
-    "say": "Fünf Pässe sind voll. Spieler zehn spielt lang zum Springer oben. Spieler acht und Spieler sechs laufen sofort los, Team Rot muss hinterher.",
+    "label": "Ausbruch zum anderen Ende",
+    "say": "Fünf Pässe sind voll. Spieler zehn spielt lang zum Springer am anderen Ende. Spieler acht und Spieler sechs laufen sofort los, Team Rot muss hinterher.",
     "moves": [
      {
       "who": "b1",
       "to": [
-       50.6,
-       7.1
+       87.2,
+       28.1
       ],
       "type": "pass"
      },
      {
       "who": "n8",
       "to": [
-       61,
-       17
+       69.8,
+       37.8
       ],
       "type": "lauf",
       "delay": 0.3
@@ -352,8 +345,8 @@
      {
       "who": "n6",
       "to": [
-       30.5,
-       38
+       36.2,
+       9.2
       ],
       "type": "lauf",
       "delay": 0.3
@@ -361,8 +354,8 @@
      {
       "who": "n6",
       "to": [
-       36,
-       19
+       66.6,
+       14.3
       ],
       "type": "lauf",
       "after": true
@@ -370,8 +363,8 @@
      {
       "who": "r4",
       "to": [
-       51,
-       24
+       58.6,
+       28.4
       ],
       "type": "lauf",
       "delay": 0.7
@@ -379,8 +372,8 @@
      {
       "who": "r3",
       "to": [
-       43,
-       28
+       52.2,
+       20.9
       ],
       "type": "lauf",
       "delay": 0.7
@@ -388,8 +381,8 @@
      {
       "who": "r5",
       "to": [
-       66,
-       31
+       47.4,
+       42.5
       ],
       "type": "lauf",
       "delay": 0.8
@@ -398,21 +391,21 @@
    },
    {
     "label": "Ablage und Abschluss: Punkt",
-    "say": "Der Springer legt ab, Spieler acht schießt ins rechte Minitor, und das gibt einen Punkt für Team Neon. Der Trainer spielt den nächsten Ball oben ein. Dort zählt Team Neon wieder bis fünf.",
+    "say": "Der Springer legt ab, Spieler acht schießt ins Minitor vor ihm, und das gibt einen Punkt für Team Neon. Der Trainer spielt den nächsten Ball in diese Hälfte ein. Dort zählt Team Neon wieder bis fünf.",
     "moves": [
      {
       "who": "b1",
       "to": [
-       61.6,
-       17.6
+       70.4,
+       38.4
       ],
       "type": "pass"
      },
      {
       "who": "b1",
       "to": [
-       62.5,
-       4.7
+       89.5,
+       39.2
       ],
       "type": "pass",
       "after": true
@@ -420,8 +413,8 @@
      {
       "who": "n10",
       "to": [
-       70,
-       26
+       55.4,
+       46.3
       ],
       "type": "lauf",
       "delay": 0.2
@@ -441,96 +434,96 @@
      {
       "id": "n6",
       "team": "a",
-      "x": 35.5,
-      "y": 48.5,
+      "x": 19.4,
+      "y": 13.9,
       "label": "6"
      },
      {
       "id": "n8",
       "team": "a",
-      "x": 61,
-      "y": 30,
+      "x": 49.0,
+      "y": 37.8,
       "label": "8"
      },
      {
       "id": "n10",
       "team": "a",
-      "x": 69.5,
-      "y": 42,
+      "x": 29.8,
+      "y": 45.8,
       "label": "10"
      },
      {
       "id": "r3",
       "team": "b",
-      "x": 44,
-      "y": 40,
+      "x": 30.6,
+      "y": 21.9,
       "label": "3"
      },
      {
       "id": "r4",
       "team": "b",
-      "x": 52.5,
-      "y": 38,
+      "x": 39.4,
+      "y": 29.9,
       "label": "4"
      },
      {
       "id": "r5",
       "team": "b",
-      "x": 61,
-      "y": 45.5,
+      "x": 21.0,
+      "y": 34.1,
       "label": "5"
      },
      {
       "id": "f1",
       "team": "t",
-      "x": 50,
-      "y": 6.5,
+      "x": 86.6,
+      "y": 27.5,
       "label": "F"
      },
      {
       "id": "f2",
       "team": "t",
-      "x": 52.5,
-      "y": 54,
+      "x": 10.6,
+      "y": 29.9,
       "label": "F"
      },
      {
       "id": "f3",
       "team": "t",
-      "x": 35.5,
-      "y": 32,
+      "x": 45.8,
+      "y": 13.9,
       "label": "F"
      },
      {
       "id": "f4",
       "team": "t",
-      "x": 27,
-      "y": 44,
+      "x": 28.2,
+      "y": 5.9,
       "label": "F"
      },
      {
       "id": "T",
       "team": "c",
-      "x": 12,
-      "y": 12,
+      "x": 70,
+      "y": 55.3,
       "label": "T"
      }
     ],
     "balls": [
      {
       "id": "b1",
-      "x": 70.1,
-      "y": 42.6
+      "x": 30.4,
+      "y": 46.4
      },
      {
       "id": "s1",
-      "x": 15.6,
-      "y": 15.5
+      "x": 73.5,
+      "y": 55.8
      },
      {
       "id": "s2",
-      "x": 12,
-      "y": 15.5
+      "x": 76,
+      "y": 55.8
      }
     ],
     "steps": [
@@ -541,16 +534,16 @@
        {
         "who": "b1",
         "to": [
-         61.6,
-         30.6
+         49.6,
+         38.4
         ],
         "type": "pass"
        },
        {
         "who": "r3",
         "to": [
-         45,
-         33
+         44.2,
+         22.8
         ],
         "type": "lauf",
         "delay": 0.5
@@ -558,8 +551,8 @@
        {
         "who": "b1",
         "to": [
-         45.6,
-         33.6
+         44.8,
+         23.4
         ],
         "type": "pass",
         "after": true
@@ -568,21 +561,21 @@
      },
      {
       "label": "Zwei Pässe, Schuss: Punkt",
-      "say": "Jetzt geht es schnell. Spieler drei spielt zu Spieler vier, der steckt durch auf Spieler fünf. Schuss ins linke Minitor, und das gibt einen Punkt für Team Rot.",
+      "say": "Jetzt geht es schnell. Spieler drei spielt zu Spieler vier, der steckt durch auf Spieler fünf. Schuss ins freie Minitor, und das gibt einen Punkt für Team Rot.",
       "moves": [
        {
         "who": "b1",
         "to": [
-         53.1,
-         38.6
+         40.0,
+         30.5
         ],
         "type": "pass"
        },
        {
         "who": "r5",
         "to": [
-         46,
-         47
+         21.8,
+         23.7
         ],
         "type": "lauf",
         "delay": 0.2
@@ -590,8 +583,8 @@
        {
         "who": "b1",
         "to": [
-         46.6,
-         47.6
+         22.4,
+         24.3
         ],
         "type": "pass",
         "after": true
@@ -599,8 +592,8 @@
        {
         "who": "b1",
         "to": [
-         38,
-         55.3
+         8.5,
+         16.2
         ],
         "type": "pass",
         "after": true
@@ -608,8 +601,8 @@
        {
         "who": "n8",
         "to": [
-         56,
-         40
+         33.0,
+         33.1
         ],
         "type": "lauf",
         "delay": 0.6
@@ -621,7 +614,7 @@
   },
   {
    "label": "Coaching-Punkt",
-   "say": "Der zweite Coaching-Punkt: Den Springer oben im Blick haben und früh loslaufen.",
+   "say": "Der zweite Coaching-Punkt: Den Springer am anderen Ende im Blick haben und früh loslaufen.",
    "title": "Früh schauen, früh starten",
    "text": "Wer den fünften Pass bekommt, weiß schon vorher, wo der Springer am anderen Ende steht. Die anderen beiden starten mit dem langen Pass und laufen in zwei verschiedene Bahnen. So hat der Springer zwei Möglichkeiten für die Ablage.",
    "board": {
@@ -629,116 +622,116 @@
      {
       "id": "n6",
       "team": "a",
-      "x": 35.5,
-      "y": 48.5,
+      "x": 19.4,
+      "y": 13.9,
       "label": "6"
      },
      {
       "id": "n8",
       "team": "a",
-      "x": 61,
-      "y": 30,
+      "x": 49.0,
+      "y": 37.8,
       "label": "8"
      },
      {
       "id": "n10",
       "team": "a",
-      "x": 69.5,
-      "y": 42,
+      "x": 29.8,
+      "y": 45.8,
       "label": "10"
      },
      {
       "id": "r3",
       "team": "b",
-      "x": 44,
-      "y": 40,
+      "x": 30.6,
+      "y": 21.9,
       "label": "3"
      },
      {
       "id": "r4",
       "team": "b",
-      "x": 52.5,
-      "y": 38,
+      "x": 39.4,
+      "y": 29.9,
       "label": "4"
      },
      {
       "id": "r5",
       "team": "b",
-      "x": 61,
-      "y": 45.5,
+      "x": 21.0,
+      "y": 34.1,
       "label": "5"
      },
      {
       "id": "f1",
       "team": "t",
-      "x": 50,
-      "y": 6.5,
+      "x": 86.6,
+      "y": 27.5,
       "label": "F"
      },
      {
       "id": "f2",
       "team": "t",
-      "x": 52.5,
-      "y": 54,
+      "x": 10.6,
+      "y": 29.9,
       "label": "F"
      },
      {
       "id": "f3",
       "team": "t",
-      "x": 35.5,
-      "y": 32,
+      "x": 45.8,
+      "y": 13.9,
       "label": "F"
      },
      {
       "id": "f4",
       "team": "t",
-      "x": 27,
-      "y": 44,
+      "x": 28.2,
+      "y": 5.9,
       "label": "F"
      },
      {
       "id": "T",
       "team": "c",
-      "x": 12,
-      "y": 12,
+      "x": 70,
+      "y": 55.3,
       "label": "T"
      }
     ],
     "balls": [
      {
       "id": "b1",
-      "x": 53.1,
-      "y": 54.6
+      "x": 11.2,
+      "y": 30.5
      },
      {
       "id": "s1",
-      "x": 15.6,
-      "y": 15.5
+      "x": 73.5,
+      "y": 55.8
      },
      {
       "id": "s2",
-      "x": 12,
-      "y": 15.5
+      "x": 76,
+      "y": 55.8
      }
     ],
     "steps": [
      {
       "label": "Erst schauen, dann der Ball",
-      "say": "Vier Pässe sind gespielt, der Ball ist beim Springer unten. Spieler zehn schaut hoch und sieht den Springer oben. Jetzt erst kommt der Pass zu ihm.",
+      "say": "Vier Pässe sind gespielt, der Ball ist beim Springer an der Grundlinie. Spieler zehn schaut auf und sieht den Springer am anderen Ende. Jetzt erst kommt der Pass zu ihm.",
       "moves": [
        {
         "who": "n10",
         "to": [
-         58,
-         20
+         50.8,
+         39.1
         ],
         "type": "blick"
        },
        {
         "who": "b1",
         "to": [
-         70.1,
-         42.6
+         30.4,
+         46.4
         ],
         "type": "pass",
         "after": true
@@ -747,21 +740,21 @@
      },
      {
       "label": "Mit dem Pass loslaufen",
-      "say": "Der lange Ball ist unterwegs. Spieler acht startet rechts, Spieler sechs links. Beide sind vor Team Rot in der oberen Hälfte.",
+      "say": "Der lange Ball ist unterwegs. Spieler acht startet auf der einen Seite, Spieler sechs auf der anderen. Beide sind vor Team Rot in der anderen Hälfte.",
       "moves": [
        {
         "who": "b1",
         "to": [
-         50.6,
-         7.1
+         87.2,
+         28.1
         ],
         "type": "pass"
        },
        {
         "who": "n8",
         "to": [
-         61,
-         17
+         69.8,
+         37.8
         ],
         "type": "lauf",
         "delay": 0.1
@@ -769,8 +762,8 @@
        {
         "who": "n6",
         "to": [
-         30.5,
-         38
+         36.2,
+         9.2
         ],
         "type": "lauf",
         "delay": 0.1
@@ -778,8 +771,8 @@
        {
         "who": "n6",
         "to": [
-         36,
-         19
+         66.6,
+         14.3
         ],
         "type": "lauf",
         "after": true
@@ -787,8 +780,8 @@
        {
         "who": "r4",
         "to": [
-         51,
-         24
+         58.6,
+         28.4
         ],
         "type": "lauf",
         "delay": 0.5
@@ -796,8 +789,8 @@
        {
         "who": "r3",
         "to": [
-         43,
-         28
+         52.2,
+         20.9
         ],
         "type": "lauf",
         "delay": 0.5
@@ -805,8 +798,8 @@
        {
         "who": "r5",
         "to": [
-         66,
-         31
+         47.4,
+         42.5
         ],
         "type": "lauf",
         "delay": 0.6
@@ -814,22 +807,22 @@
       ]
      },
      {
-      "label": "Ablage nach links: Punkt",
-      "say": "Diesmal legt der Springer nach links ab. Spieler sechs kommt mit Tempo und schießt ins linke Minitor, und das gibt einen Punkt für Team Neon.",
+      "label": "Ablage zur anderen Seite: Punkt",
+      "say": "Diesmal legt der Springer zur anderen Seite ab. Spieler sechs kommt mit Tempo und schießt ins Minitor vor ihm, und das gibt einen Punkt für Team Neon.",
       "moves": [
        {
         "who": "b1",
         "to": [
-         36.6,
-         19.6
+         67.2,
+         14.9
         ],
         "type": "pass"
        },
        {
         "who": "b1",
         "to": [
-         37.5,
-         4.7
+         89.5,
+         15.8
         ],
         "type": "pass",
         "after": true
