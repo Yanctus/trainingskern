@@ -1,0 +1,822 @@
+{
+ "title": "Sechs Pässe, dann ins Minitor",
+ "code": "UE-359",
+ "kind": "Spielform",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel",
+  "Ballannahme"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 10,
+ "players_max": 10,
+ "field_size": "18 x 18 m",
+ "description": "Ein Rondo sieben gegen drei mit vier Minitoren in der Mitte. Team Neon hält den Ball, alle sechs Pässe gibt es einen Punkt. Nach den ersten sechs Pässen sind die Minitore offen, und ein Pass in eines davon gibt zwei Punkte. Erobert Team Rot den Ball, spielt es ihn aus dem Feld oder zum Trainer.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 18 Metern. In der Mitte stehen vier Minitore Rücken an Rücken, die Öffnungen zeigen nach außen.",
+  "Verteilen: Team Neon spielt mit sieben Spielern, sechs außen an den Linien und einer innen. Team Rot verteidigt zu dritt rund um die Tore. Der Trainer steht mit Bällen am Rand.",
+  "Ablauf: Team Neon lässt den Ball laufen und zählt die Pässe. Nach sechs Pässen sind die Minitore offen. Jetzt entscheidet Team Neon, ob es den Ball weiter hält oder in ein Minitor spielt.",
+  "Wertung und Wechsel: Sechs Pässe geben einen Punkt, ein Pass ins Minitor gibt zwei Punkte. Erobert Team Rot den Ball und spielt ihn aus dem Feld oder zum Trainer, gibt das einen Punkt für Team Rot. Der Trainer bringt sofort einen neuen Ball. Nach ein paar Minuten werden die Verteidiger getauscht."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Breit machen, die Überzahl ausnutzen",
+  "Vor der Annahme schauen, wo die Verteidiger stehen",
+  "Halten oder durchstecken? Erst schauen, dann entscheiden",
+  "Kurze, scharfe Pässe und immer einen Winkel anbieten"
+ ],
+ "materials": [
+  "4 Minitore",
+  "4 Hütchen",
+  "Leibchen in zwei Farben",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Sechs Pässe, dann ins Minitor. Sieben halten den Ball gegen drei. Wer sechs Pässe schafft, darf in die Minitore in der Mitte spielen.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   }
+  ],
+  "goals": [
+   {
+    "x": 57.2,
+    "y": 30,
+    "side": "left"
+   },
+   {
+    "x": 42.8,
+    "y": 30,
+    "side": "right"
+   },
+   {
+    "x": 50,
+    "y": 26.8,
+    "side": "bottom"
+   },
+   {
+    "x": 50,
+    "y": 33.2,
+    "side": "top"
+   }
+  ],
+  "cones": [
+   {
+    "x": 25,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 75,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 25,
+    "y": 55,
+    "color": "orange"
+   },
+   {
+    "x": 75,
+    "y": 55,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 34,
+    "y": 5,
+    "label": "8"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 64,
+    "y": 5,
+    "label": "4"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 25,
+    "y": 28.5,
+    "label": "3"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 75,
+    "y": 26.5,
+    "label": "2"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 57,
+    "y": 21,
+    "label": "10"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 40.5,
+    "y": 54,
+    "label": "6"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 63.5,
+    "y": 54,
+    "label": "5"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 43,
+    "y": 16,
+    "label": "7"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 34,
+    "y": 31,
+    "label": "9"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 52,
+    "y": 44,
+    "label": "11"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 13,
+    "y": 45,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 64.1,
+    "y": 54.6
+   },
+   {
+    "id": "s1",
+    "x": 16.6,
+    "y": 48.5
+   },
+   {
+    "id": "s2",
+    "x": 13,
+    "y": 48.8
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 83,
+    "y1": 5,
+    "x2": 83,
+    "y2": 55,
+    "text": "18 m"
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pass eins und zwei",
+    "say": "Team Neon hält den Ball und zählt mit. Spieler fünf spielt quer zu Spieler sechs, der gleich weiter zu Spieler drei. Das sind zwei.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       41.1,
+       54.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       25.6,
+       29.1
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r9",
+      "to": [
+       31,
+       36
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     },
+     {
+      "who": "r11",
+      "to": [
+       46,
+       46
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Pass drei und vier",
+    "say": "Spieler drei spielt hoch zu Spieler acht, und der Ball geht direkt weiter auf die andere Seite zu Spieler vier. Spieler sieben läuft hinterher.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       34.6,
+       5.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       64.6,
+       5.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r9",
+      "to": [
+       34,
+       31
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "r7",
+      "to": [
+       52,
+       12
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     }
+    ]
+   },
+   {
+    "label": "Kopf hoch vor der Annahme",
+    "say": "Spieler zehn bietet sich innen an. Bevor der Ball kommt, schaut er zum Ball und sieht, wo die Verteidiger stehen. Spieler vier spielt ihn an. Das ist Pass fünf.",
+    "moves": [
+     {
+      "who": "n10",
+      "to": [
+       64.6,
+       5.6
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b1",
+      "to": [
+       57.6,
+       21.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Sechs Pässe: Punkt, Tore offen",
+    "say": "Nach der Annahme dreht er auf und spielt raus zu Spieler zwei. Sechs Pässe, das gibt einen Punkt für Team Neon. Jetzt sind die Minitore offen.",
+    "moves": [
+     {
+      "who": "n10",
+      "to": [
+       75.6,
+       27.1
+      ],
+      "type": "blick",
+      "von": [
+       64.6,
+       5.6
+      ],
+      "dauer": 1.3
+     },
+     {
+      "who": "n10",
+      "to": [
+       75.6,
+       27.1
+      ],
+      "type": "dreh",
+      "delay": 0.4
+     },
+     {
+      "who": "b1",
+      "to": [
+       75.6,
+       27.1
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r7",
+      "to": [
+       58,
+       16
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     }
+    ]
+   },
+   {
+    "label": "Ins Minitor: zwei Punkte",
+    "say": "Spieler zwei sieht, dass vor ihm keiner steht, und spielt flach ins Minitor. Das gibt zwei Punkte für Team Neon. Der Trainer bringt einen neuen Ball, und das Zählen beginnt von vorn.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       56.3,
+       30.3
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r11",
+      "to": [
+       55,
+       40
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Die Minitore sind immer offen.",
+   "title": "Halten oder durchstecken",
+   "text": "Jetzt gibt es keine Passvorgabe mehr, die Minitore sind von Anfang an offen. Team Neon entscheidet selbst, wann es durchsteckt. Die Verteidiger stellen die Wege zu den Toren zu und lauern auf den Fehlpass.",
+   "board": {
+    "players": [
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 34,
+      "y": 5,
+      "label": "8"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 64,
+      "y": 5,
+      "label": "4"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 25,
+      "y": 28.5,
+      "label": "3"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 75,
+      "y": 26.5,
+      "label": "2"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 57,
+      "y": 21,
+      "label": "10"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 40.5,
+      "y": 54,
+      "label": "6"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 63.5,
+      "y": 54,
+      "label": "5"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 43,
+      "y": 16,
+      "label": "7"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 34,
+      "y": 30,
+      "label": "9"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 52,
+      "y": 44,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 13,
+      "y": 45,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 25.6,
+      "y": 29.1
+     },
+     {
+      "id": "s1",
+      "x": 16.6,
+      "y": 48.5
+     },
+     {
+      "id": "s2",
+      "x": 13,
+      "y": 48.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Weg zu, also sichern",
+      "say": "Spieler drei will ins Minitor, aber Spieler neun steht genau im Weg. Also sichert er den Ball und spielt runter zu Spieler sechs.",
+      "moves": [
+       {
+        "who": "r9",
+        "to": [
+         33,
+         29.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         41.1,
+         54.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       },
+       {
+        "who": "r11",
+        "to": [
+         44,
+         46
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       }
+      ]
+     },
+     {
+      "label": "Verteidiger schiebt rüber",
+      "say": "Spieler elf schiebt zum Ball. Spieler sechs spielt sofort weiter zu Spieler fünf. Der schaut kurz, und der Weg zum Minitor unten ist frei.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         64.1,
+         54.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r11",
+        "to": [
+         47,
+         47
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n5",
+        "to": [
+         50,
+         34
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Jetzt durch: zwei Punkte",
+      "say": "Jetzt ist der richtige Moment. Spieler fünf spielt flach ins Minitor, und das gibt zwei Punkte für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.3,
+         32.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r11",
+        "to": [
+         52,
+         44
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 25,
+      "y1": 58.6,
+      "x2": 75,
+      "y2": 58.6,
+      "text": "18 m"
+     },
+     {
+      "x1": 83,
+      "y1": 5,
+      "x2": 83,
+      "y2": 55,
+      "text": "18 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Nach einem Treffer ins Minitor sind die Tore zu.",
+   "title": "Tore zu, fünf Pässe zählen",
+   "text": "Nach einem Treffer ins Minitor sind die Tore zu. Jetzt geben schon fünf Pässe zwei Punkte, und danach sind die Tore wieder offen. Die Verteidiger müssen also hart pressen. Wer das Pressing überspielt, findet wieder Platz.",
+   "board": {
+    "players": [
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 34,
+      "y": 5,
+      "label": "8"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 64,
+      "y": 5,
+      "label": "4"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 25,
+      "y": 28.5,
+      "label": "3"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 75,
+      "y": 26.5,
+      "label": "2"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 57,
+      "y": 21,
+      "label": "10"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 40.5,
+      "y": 54,
+      "label": "6"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 63.5,
+      "y": 54,
+      "label": "5"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 43,
+      "y": 16,
+      "label": "7"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 34,
+      "y": 31,
+      "label": "9"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 52,
+      "y": 44,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 13,
+      "y": 45,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 25.6,
+      "y": 29.1
+     },
+     {
+      "id": "s1",
+      "x": 16.6,
+      "y": 48.5
+     },
+     {
+      "id": "s2",
+      "x": 13,
+      "y": 48.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Rot presst hart",
+      "say": "Die Tore sind zu, also geht Team Rot drauf. Spieler neun läuft Spieler drei an. Der spielt sofort zu Spieler acht, und von dort geht es weiter zu Spieler vier. Zwei Pässe.",
+      "moves": [
+       {
+        "who": "r9",
+        "to": [
+         30,
+         27
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r7",
+        "to": [
+         38,
+         12
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "b1",
+        "to": [
+         34.6,
+         5.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         64.6,
+         5.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Raus aus dem Druck",
+      "say": "Spieler sieben kommt zu spät. Spieler vier spielt in die Mitte auf Spieler zehn, der gleich klatschen lässt zu Spieler zwei. Das sind vier.",
+      "moves": [
+       {
+        "who": "r7",
+        "to": [
+         56,
+         10
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         57.6,
+         21.6
+        ],
+        "type": "pass",
+        "delay": 0.2
+       },
+       {
+        "who": "b1",
+        "to": [
+         75.6,
+         27.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Fünf Pässe: zwei Punkte",
+      "say": "Spieler zwei spielt runter zu Spieler fünf. Fünf Pässe, und das gibt zwei Punkte für Team Neon. Jetzt sind die Minitore wieder offen.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         64.1,
+         54.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r11",
+        "to": [
+         58,
+         47
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 25,
+      "y1": 58.6,
+      "x2": 75,
+      "y2": 58.6,
+      "text": "18 m"
+     },
+     {
+      "x1": 83,
+      "y1": 5,
+      "x2": 83,
+      "y2": 55,
+      "text": "18 m"
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,963 @@
+{
+ "title": "Zu dritt das Zentrum schützen",
+ "code": "UE-361",
+ "kind": "Spielform",
+ "focuses": [
+  "Verteidigen",
+  "Umschalten",
+  "Zusammenspiel"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 12,
+ "players_max": 12,
+ "field_size": "45 x 40 m",
+ "description": "Team Rot baut vom Torwart aus auf und will auf eins der vier Minitore treffen, die für eine tiefe Viererkette stehen. Team Neon verteidigt mit zwei Spitzen und einer Mittelfeld-Drei. Die Drei steht eng, lässt keinen Pass durch die Mitte und lockt Team Rot nach außen in die Falle. Nach dem Ballgewinn kontert Team Neon schnell aufs große Tor.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 45 mal 40 Metern, mit zwei Linien in drei Zonen geteilt. Oben steht ein großes Tor mit Strafraum, unten stehen vier Minitore nebeneinander.",
+  "Verteilen: Team Rot spielt mit Torwart und sechs Feldspielern. Team Neon hat zwei Spitzen und drei Mittelfeldspieler. Team Neon darf nur in den beiden Zonen pressen, die näher an den Minitoren liegen. Der Trainer steht mit Bällen am Rand.",
+  "Ablauf: Der Torwart von Team Rot eröffnet. Team Rot spielt nach vorn und schießt auf die Minitore. Team Neon bleibt kompakt, lenkt nach außen und presst, wenn ein Pass schlecht kommt oder ein Ball verspringt. Nach dem Ballgewinn geht es sofort aufs große Tor.",
+  "Wertung: Ein Treffer in ein Minitor gibt einen Punkt für Team Rot. Ein Treffer aufs große Tor gibt einen Punkt für Team Neon. Nach jedem Treffer oder wenn der Ball ins Aus geht, startet wieder der Torwart."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Die Drei bleibt eng, kein Pass durch die Mitte",
+  "Nach außen lenken, dann zuschnappen",
+  "Reden, reden, reden",
+  "Schlechter Pass oder schlechte Annahme? Drauf!"
+ ],
+ "materials": [
+  "1 großes Tor",
+  "4 Minitore",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Zu dritt das Zentrum schützen. Team Neon verteidigt mit zwei Spitzen und drei Mittelfeldspielern. Die Drei hält die Mitte zu, lockt Team Rot nach außen und kontert nach dem Ballgewinn sofort nach vorn.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 22,
+    "y": 5,
+    "w": 56,
+    "h": 50
+   },
+   {
+    "type": "rect",
+    "x": 32,
+    "y": 5,
+    "w": 36,
+    "h": 13.5
+   },
+   {
+    "type": "rect",
+    "x": 41,
+    "y": 5,
+    "w": 18,
+    "h": 5.4
+   },
+   {
+    "type": "line",
+    "x1": 22,
+    "y1": 26.4,
+    "x2": 78,
+    "y2": 26.4,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 22,
+    "y1": 37.2,
+    "x2": 78,
+    "y2": 37.2,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "gross"
+   },
+   {
+    "x": 24.5,
+    "y": 55,
+    "side": "bottom"
+   },
+   {
+    "x": 40.5,
+    "y": 55,
+    "side": "bottom"
+   },
+   {
+    "x": 59.5,
+    "y": 55,
+    "side": "bottom"
+   },
+   {
+    "x": 75.5,
+    "y": 55,
+    "side": "bottom"
+   }
+  ],
+  "cones": [],
+  "players": [
+   {
+    "id": "r1",
+    "team": "b",
+    "x": 45,
+    "y": 8,
+    "label": "TW"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 56,
+    "y": 16,
+    "label": "3"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 28,
+    "y": 20,
+    "label": "2"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 74,
+    "y": 19,
+    "label": "5"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 47,
+    "y": 28,
+    "label": "7"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 28,
+    "y": 40,
+    "label": "11"
+   },
+   {
+    "id": "r12",
+    "team": "b",
+    "x": 73,
+    "y": 40,
+    "label": "12"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 37,
+    "y": 27,
+    "label": "10"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 64.5,
+    "y": 28,
+    "label": "9"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 42,
+    "y": 44,
+    "label": "6"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 51,
+    "y": 48,
+    "label": "4"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 60,
+    "y": 44,
+    "label": "8"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 13,
+    "y": 12,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 45.6,
+    "y": 8.6
+   },
+   {
+    "id": "s1",
+    "x": 13,
+    "y": 16.5
+   },
+   {
+    "id": "s2",
+    "x": 16,
+    "y": 15
+   }
+  ],
+  "dims": [
+   {
+    "x1": 22,
+    "y1": 58.6,
+    "x2": 78,
+    "y2": 58.6,
+    "text": "45 m"
+   },
+   {
+    "x1": 87,
+    "y1": 5,
+    "x2": 87,
+    "y2": 55,
+    "text": "40 m"
+   }
+  ],
+  "steps": [
+   {
+    "label": "Torwart eröffnet nach außen",
+    "say": "Der Torwart von Team Rot spielt raus zu Spieler fünf. Spieler neun läuft an, aber von innen. So bleibt der Weg zurück in die Mitte zu. Die Drei schiebt ein Stück mit.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       74.6,
+       19.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n9",
+      "to": [
+       68,
+       26
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "n8",
+      "to": [
+       63,
+       43
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     },
+     {
+      "who": "n4",
+      "to": [
+       54,
+       47
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     },
+     {
+      "who": "n6",
+      "to": [
+       45,
+       43
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     }
+    ]
+   },
+   {
+    "label": "Pass in die Mitte, die Drei bleibt eng",
+    "say": "Spieler fünf spielt doch in die Mitte zu Spieler sieben. Spieler zehn drückt von hinten. Die Drei rückt eng zusammen, durch die Mitte geht kein Pass.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       47.6,
+       28.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n10",
+      "to": [
+       42,
+       26
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n6",
+      "to": [
+       44,
+       40
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "n4",
+      "to": [
+       51,
+       42
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "n8",
+      "to": [
+       58,
+       40
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "Raus nach außen, die Falle",
+    "say": "Spieler sieben weicht nach außen aus, zu Spieler elf. Genau da wollen wir ihn haben. Spieler sechs geht sofort drauf, Spieler vier sichert, Spieler acht schiebt nach.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       28.6,
+       40.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n6",
+      "to": [
+       33,
+       42
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n4",
+      "to": [
+       42,
+       45
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "n8",
+      "to": [
+       51,
+       43
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "Annahme verspringt, Ball erobert",
+    "say": "Spieler elf springt der Ball vom Fuß. Das ist das Zeichen. Spieler sechs ist da und hat ihn. Er nimmt sofort den Kopf hoch, und Spieler zehn startet in die Tiefe.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       32,
+       44.5
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n6",
+      "to": [
+       31.4,
+       43.9
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n10",
+      "to": [
+       40,
+       16
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     },
+     {
+      "who": "n6",
+      "to": [
+       37,
+       24
+      ],
+      "type": "blick",
+      "delay": 0.8
+     }
+    ]
+   },
+   {
+    "label": "Schneller Konter: Punkt",
+    "say": "Spieler sechs spielt steil in den Lauf. Spieler zehn schließt ab und trifft, und das gibt einen Punkt für Team Neon. Danach eröffnet wieder der Torwart von Team Rot.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       40.6,
+       16.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       47,
+       5.3
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Die Spitzen pressen bis ganz vorn.",
+   "title": "Spitzen pressen ganz vorn",
+   "text": "Jetzt dürfen die Spitzen auch in der Zone vor dem großen Tor pressen. Sie laufen so an, dass Team Rot auf eine Seite muss. Dort wartet die Drei. Team Rot hat weniger Zeit und muss schneller entscheiden.",
+   "board": {
+    "players": [
+     {
+      "id": "r1",
+      "team": "b",
+      "x": 45,
+      "y": 8,
+      "label": "TW"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 56,
+      "y": 16,
+      "label": "3"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 28,
+      "y": 20,
+      "label": "2"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 74,
+      "y": 19,
+      "label": "5"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 47,
+      "y": 28,
+      "label": "7"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 28,
+      "y": 40,
+      "label": "11"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 73,
+      "y": 40,
+      "label": "12"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 37,
+      "y": 27,
+      "label": "10"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 64.5,
+      "y": 28,
+      "label": "9"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 42,
+      "y": 44,
+      "label": "6"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 51,
+      "y": 48,
+      "label": "4"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 60,
+      "y": 44,
+      "label": "8"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 13,
+      "y": 12,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 45.6,
+      "y": 8.6
+     },
+     {
+      "id": "s1",
+      "x": 13,
+      "y": 16.5
+     },
+     {
+      "id": "s2",
+      "x": 16,
+      "y": 15
+     }
+    ],
+    "steps": [
+     {
+      "label": "Im Bogen anlaufen",
+      "say": "Der Torwart spielt kurz zu Spieler drei. Spieler neun läuft im Bogen an und macht die Seite zu Spieler fünf zu. Es bleibt nur der Weg nach links.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         56.6,
+         16.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n9",
+        "to": [
+         65,
+         21
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n9",
+        "to": [
+         60,
+         19
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Spieler zehn presst ganz vorn",
+      "say": "Spieler drei spielt zu Spieler zwei. Jetzt darf Spieler zehn bis ganz vorn und läuft ihn sofort an. Die Drei schiebt mit nach links.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         28.6,
+         20.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n10",
+        "to": [
+         33,
+         22
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n6",
+        "to": [
+         34,
+         37
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "n4",
+        "to": [
+         43,
+         42
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "n8",
+        "to": [
+         52,
+         41
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       }
+      ]
+     },
+     {
+      "label": "Hektischer Pass, abgefangen",
+      "say": "Unter Druck spielt Spieler zwei hektisch nach vorn zu Spieler elf. Spieler sechs geht dazwischen und hat den Ball. Bis zum großen Tor ist es jetzt nicht mehr weit.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         29.6,
+         33.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n6",
+        "to": [
+         29,
+         33
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 22,
+      "y1": 58.6,
+      "x2": 78,
+      "y2": 58.6,
+      "text": "45 m"
+     },
+     {
+      "x1": 87,
+      "y1": 5,
+      "x2": 87,
+      "y2": 55,
+      "text": "40 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Ein Treffer schließt das Minitor.",
+   "title": "Minitore werden geschlossen",
+   "text": "Trifft Team Rot ein Minitor, ist es für die nächsten Runden zu. Hier ist das Minitor ganz außen links schon zu, das Hütchen davor zeigt es. Team Neon lenkt das Spiel genau dorthin. Schließt Team Rot alle vier Minitore, gewinnt Team Rot.",
+   "board": {
+    "players": [
+     {
+      "id": "r1",
+      "team": "b",
+      "x": 45,
+      "y": 8,
+      "label": "TW"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 56,
+      "y": 16,
+      "label": "3"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 28,
+      "y": 20,
+      "label": "2"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 74,
+      "y": 19,
+      "label": "5"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 47,
+      "y": 28,
+      "label": "7"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 28,
+      "y": 40,
+      "label": "11"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 73,
+      "y": 40,
+      "label": "12"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 37,
+      "y": 27,
+      "label": "10"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 64.5,
+      "y": 28,
+      "label": "9"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 42,
+      "y": 44,
+      "label": "6"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 51,
+      "y": 48,
+      "label": "4"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 60,
+      "y": 44,
+      "label": "8"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 13,
+      "y": 12,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 45.6,
+      "y": 8.6
+     },
+     {
+      "id": "s1",
+      "x": 13,
+      "y": 16.5
+     },
+     {
+      "id": "s2",
+      "x": 16,
+      "y": 15
+     }
+    ],
+    "steps": [
+     {
+      "label": "Hin zum geschlossenen Tor",
+      "say": "Der Torwart spielt zu Spieler drei. Spieler neun läuft von außen an. Der Ball muss nach links, dorthin, wo das Minitor schon zu ist.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         56.6,
+         16.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n9",
+        "to": [
+         65,
+         21
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n9",
+        "to": [
+         60,
+         19
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Alle schieben zum Ball",
+      "say": "Über Spieler zwei kommt der Ball zu Spieler elf. Die Drei schiebt ganz nach links. Spieler zwölf auf der anderen Seite bleibt frei, der Pass dorthin ist zu weit.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         28.6,
+         20.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         28.6,
+         40.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n10",
+        "to": [
+         34,
+         24
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n6",
+        "to": [
+         31,
+         45
+        ],
+        "type": "lauf",
+        "delay": 0.8
+       },
+       {
+        "who": "n4",
+        "to": [
+         39,
+         41
+        ],
+        "type": "lauf",
+        "delay": 0.8
+       },
+       {
+        "who": "n8",
+        "to": [
+         47,
+         43
+        ],
+        "type": "lauf",
+        "delay": 0.8
+       }
+      ]
+     },
+     {
+      "label": "Überzahl am Ball",
+      "say": "Am Ball hat Team Neon jetzt Überzahl. Spieler sechs drückt, Spieler vier kommt dazu und erobert den Ball. Die offenen Minitore sind weit weg.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         29.5,
+         43
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n4",
+        "to": [
+         32,
+         39
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         32.6,
+         39.6
+        ],
+        "type": "pass",
+        "delay": 0.6
+       }
+      ]
+     }
+    ],
+    "cones": [
+     {
+      "x": 28,
+      "y": 51,
+      "color": "neon",
+      "id": "z1"
+     }
+    ],
+    "dims": [
+     {
+      "x1": 22,
+      "y1": 58.6,
+      "x2": 78,
+      "y2": 58.6,
+      "text": "45 m"
+     },
+     {
+      "x1": 87,
+      "y1": 5,
+      "x2": 87,
+      "y2": 55,
+      "text": "40 m"
+     }
+    ]
+   }
+  }
+ ]
+}

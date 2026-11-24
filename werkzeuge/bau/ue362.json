@@ -1,0 +1,768 @@
+{
+ "title": "Rondo 5 gegen 3 mit Minitoren",
+ "code": "UE-362",
+ "kind": "Spielform",
+ "focuses": [
+  "Verteidigen",
+  "Umschalten",
+  "Passspiel"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 8,
+ "players_max": 8,
+ "field_size": "14 x 25 m",
+ "description": "Ein Rondo fünf gegen drei mit einem Minitor an jedem Ende. Die drei Mittelfeldspieler von Team Neon arbeiten zusammen, machen die Passwege zu und pressen, sobald ein Pass zu kurz ist oder die Annahme springt. Nach dem Ballgewinn kontern sie sofort auf eins der beiden Minitore. Schafft Team Rot zehn Pässe am Stück, darf Team Rot auch abschließen.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 14 mal 25 Metern. An jeder kurzen Seite steht ein Minitor. Vier Hütchen an den Seitenlinien teilen die Mitte ab.",
+  "Verteilen: Team Rot hat fünf Spieler und den Ball, Team Neon verteidigt mit drei. Der Trainer steht mit Bällen an der Seite.",
+  "Ablauf: Team Rot lässt den Ball laufen. Team Neon schiebt als Dreierkette mit, stellt die Passwege zu und presst auf ein Zeichen. Nach dem Ballgewinn geht es sofort auf ein Minitor. Nach zehn Pässen am Stück darf Team Rot selbst auf ein Minitor schießen.",
+  "Wertung und Wechsel: Jeder Treffer gibt einen Punkt. Nach jedem Treffer spielt der Trainer einen neuen Ball zu Team Rot. Nach ein paar Minuten tauschen drei andere Spieler in die Mitte, das Team mit weniger Punkten macht zehn Liegestütze."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Zu kurzer Pass oder schlechte Annahme? Drauf!",
+  "Zu dritt die Passwege zumachen",
+  "Ball gewonnen? Sofort aufs Minitor",
+  "Eng bleiben, durch uns geht kein Pass"
+ ],
+ "materials": [
+  "2 Minitore",
+  "4 Hütchen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Rondo fünf gegen drei mit Minitoren. Drei Mittelfeldspieler machen zusammen die Passwege zu, holen sich den Ball und kontern sofort auf ein Minitor.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 9,
+    "y": 4,
+    "w": 80,
+    "h": 47
+   }
+  ],
+  "goals": [
+   {
+    "x": 9,
+    "y": 27.5,
+    "side": "left"
+   },
+   {
+    "x": 89,
+    "y": 27.5,
+    "side": "right"
+   }
+  ],
+  "cones": [
+   {
+    "x": 35.4,
+    "y": 4,
+    "color": "orange"
+   },
+   {
+    "x": 61,
+    "y": 4,
+    "color": "orange"
+   },
+   {
+    "x": 35.4,
+    "y": 51,
+    "color": "orange"
+   },
+   {
+    "x": 61,
+    "y": 51,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 28,
+    "y": 33,
+    "label": "11"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 48,
+    "y": 49,
+    "label": "9"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 48,
+    "y": 6,
+    "label": "7"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 51,
+    "y": 28,
+    "label": "3"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 75,
+    "y": 33,
+    "label": "6"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 60.5,
+    "y": 17,
+    "label": "10"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 61,
+    "y": 38,
+    "label": "8"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 40,
+    "y": 26,
+    "label": "4"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 63,
+    "y": 55.3,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 28.6,
+    "y": 33.6
+   },
+   {
+    "id": "s1",
+    "x": 66.5,
+    "y": 55.8
+   },
+   {
+    "id": "s2",
+    "x": 69,
+    "y": 55.8
+   }
+  ],
+  "dims": [
+   {
+    "x1": 9,
+    "y1": 58.6,
+    "x2": 89,
+    "y2": 58.6,
+    "text": "25 m"
+   }
+  ],
+  "steps": [
+   {
+    "label": "Ball läuft, die Drei schiebt",
+    "say": "Team Rot lässt den Ball laufen. Spieler elf spielt zu Spieler neun an die Seite. Die Drei schiebt sofort mit zum Ball.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       48.6,
+       49.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n4",
+      "to": [
+       44,
+       33
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n8",
+      "to": [
+       58,
+       39
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n10",
+      "to": [
+       57,
+       22
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Weiter auf die andere Seite",
+    "say": "Spieler neun spielt weiter zu Spieler sechs. Wieder schieben alle drei mit, keiner rennt allein los.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       75.6,
+       33.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n8",
+      "to": [
+       66,
+       37
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n10",
+      "to": [
+       64,
+       24
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n4",
+      "to": [
+       46,
+       31
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Kurzer Pass, das Zeichen",
+    "say": "Spieler acht hat den Ball im Blick. Spieler sechs spielt einen kurzen Pass zu Spieler drei. Das ist das Zeichen. Spieler acht und Spieler vier gehen sofort drauf.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       51,
+       28
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b1",
+      "to": [
+       51.6,
+       28.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       57,
+       31
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n4",
+      "to": [
+       45,
+       29
+      ],
+      "type": "lauf",
+      "delay": 1.2
+     }
+    ]
+   },
+   {
+    "label": "Pass abgefangen",
+    "say": "Unter Druck will Spieler drei raus zu Spieler sieben. Spieler zehn hat darauf gewartet. Er geht in den Passweg und hat den Ball.",
+    "moves": [
+     {
+      "who": "n10",
+      "to": [
+       50,
+       16
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       16.6
+      ],
+      "type": "pass",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Konter aufs Minitor: Punkt",
+    "say": "Spieler zehn dreht auf, und Spieler vier startet Richtung Minitor. Der Pass kommt in den Lauf. Spieler vier schiebt ein, und das gibt einen Punkt für Team Neon. Dann spielt der Trainer einen neuen Ball zu Team Rot.",
+    "moves": [
+     {
+      "who": "n10",
+      "to": [
+       31,
+       21.8
+      ],
+      "type": "blick",
+      "von": [
+       51,
+       28
+      ],
+      "dauer": 1.3
+     },
+     {
+      "who": "n10",
+      "to": [
+       24,
+       24
+      ],
+      "type": "dreh",
+      "delay": 0.4
+     },
+     {
+      "who": "n4",
+      "to": [
+       24,
+       24
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       24.6,
+       24.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       9.3,
+       27.5
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Eine Druckzone in der Mitte.",
+   "title": "Druckzone in der Mitte",
+   "text": "Die Drei verteidigt jetzt nur in der Zone in der Mitte. Team Rot spielt gerichtet, von einer Seite auf die andere. Kommt ein Pass durch die Zone, darf Team Rot auf das Minitor am anderen Ende schießen. Erobert die Drei den Ball in der Zone, kontert sie sofort.",
+   "board": {
+    "players": [
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 83,
+      "y": 33,
+      "label": "6"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 64,
+      "y": 27,
+      "label": "3"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 41,
+      "y": 9,
+      "label": "7"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 45.4,
+      "y": 45.8,
+      "label": "11"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 23,
+      "y": 27,
+      "label": "9"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 54,
+      "y": 15,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 54,
+      "y": 38,
+      "label": "8"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 39,
+      "y": 26.4,
+      "label": "4"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 63,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 83.6,
+      "y": 33.6
+     },
+     {
+      "id": "s1",
+      "x": 66.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 69,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Von einer Seite auf die andere",
+      "say": "Spieler sechs startet auf dieser Seite und spielt zu Spieler drei. Die Drei schiebt in der Zone zum Ball.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         64.6,
+         27.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n10",
+        "to": [
+         58,
+         19
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n8",
+        "to": [
+         58,
+         38
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n4",
+        "to": [
+         47,
+         27
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Kein Pass durch die Zone",
+      "say": "Spieler drei sucht Spieler neun hinter der Zone. Spieler vier steht genau im Weg. Also will er zu Spieler elf, und Spieler acht fängt den Ball ab.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         55,
+         37.5
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "b1",
+        "to": [
+         55.6,
+         38.1
+        ],
+        "type": "pass",
+        "delay": 0.6
+       }
+      ]
+     },
+     {
+      "label": "Ballgewinn in der Zone: Punkt",
+      "say": "Sofort geht Spieler zehn in die Tiefe. Spieler acht spielt ihn an, und er trifft ins Minitor. Das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         76,
+         21
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         76.6,
+         21.6
+        ],
+        "type": "pass",
+        "delay": 0.6
+       },
+       {
+        "who": "b1",
+        "to": [
+         88.7,
+         27.5
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "lines": [
+     {
+      "type": "rect",
+      "x": 9,
+      "y": 4,
+      "w": 80,
+      "h": 47
+     },
+     {
+      "type": "zone",
+      "x": 35.4,
+      "y": 4,
+      "w": 25.6,
+      "h": 47
+     }
+    ],
+    "dims": [
+     {
+      "x1": 9,
+      "y1": 58.6,
+      "x2": 89,
+      "y2": 58.6,
+      "text": "25 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Alle Passwege nach vorn sind zu.",
+   "title": "Alle Wege nach vorn zu",
+   "text": "Die Drei steht so eng, dass jeder einen Passweg nach vorn zumacht. Team Rot findet keine Lücke und muss quer oder zurück spielen. Wer es trotzdem versucht, verliert den Ball. Dann geht es sofort nach vorn.",
+   "board": {
+    "players": [
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 75,
+      "y": 27,
+      "label": "6"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 62,
+      "y": 28,
+      "label": "3"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 44,
+      "y": 8,
+      "label": "7"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 44,
+      "y": 47,
+      "label": "11"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 23,
+      "y": 27,
+      "label": "9"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 53,
+      "y": 18,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 53,
+      "y": 37.5,
+      "label": "8"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 44,
+      "y": 27.5,
+      "label": "4"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 63,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 62.6,
+      "y": 28.6
+     },
+     {
+      "id": "s1",
+      "x": 66.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 69,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Drei Wege, alle zu",
+      "say": "Spieler drei hat den Ball und schaut nach vorn. Drei Möglichkeiten hat er. Vor jeder steht ein Spieler von Team Neon.",
+      "moves": [
+       {
+        "who": "r3",
+        "to": [
+         44,
+         8
+        ],
+        "type": "option"
+       },
+       {
+        "who": "r3",
+        "to": [
+         44,
+         47
+        ],
+        "type": "option",
+        "after": true
+       },
+       {
+        "who": "r3",
+        "to": [
+         23,
+         27
+        ],
+        "type": "option",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Trotzdem durch die Mitte",
+      "say": "Spieler drei versucht es trotzdem durch die Mitte zu Spieler neun. Spieler vier steht im Weg und hat den Ball. Jetzt geht es schnell nach vorn.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         44.6,
+         28.1
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ],
+    "lines": [
+     {
+      "type": "rect",
+      "x": 9,
+      "y": 4,
+      "w": 80,
+      "h": 47
+     },
+     {
+      "type": "zone",
+      "x": 35.4,
+      "y": 4,
+      "w": 25.6,
+      "h": 47
+     }
+    ],
+    "dims": [
+     {
+      "x1": 9,
+      "y1": 58.6,
+      "x2": 89,
+      "y2": 58.6,
+      "text": "25 m"
+     }
+    ]
+   }
+  }
+ ]
+}

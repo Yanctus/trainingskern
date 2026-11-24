@@ -1,0 +1,1150 @@
+{
+ "title": "Welle durch die Puppen",
+ "code": "UE-357",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel",
+  "Torschuss"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 14,
+ "players_max": 14,
+ "field_size": "25 x 35 m",
+ "description": "Eine Welle mit drei Angreifergruppen auf zwei Tore. Zehn Puppen stehen als Gegenspieler im Feld, dazwischen helfen drei Springer im Mittelfeld. Der Ball läuft mit ein, zwei Kontakten durch die Puppen bis zum Läufer außen. Die anderen zwei Angreifer sprinten in den Strafraum, und gleich danach kommt die nächste Gruppe aus der anderen Richtung.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 25 mal 35 Metern mit einem großen Tor auf jeder Grundlinie. Zehn Puppen stehen verteilt im Feld, vor dem Tor ist der Strafraum markiert.",
+  "Verteilen: In jedem Tor steht ein Torwart. Team Neon spielt in drei Gruppen zu drei Angreifern, eine im Feld und je eine hinter den Toren. Drei Springer stehen zwischen den Puppen. Der Trainer steht mit Bällen an der Seitenlinie.",
+  "Ablauf: Der Torwart spielt die erste Gruppe an. Über die Springer läuft der Ball mit ein, zwei Kontakten durch die Puppen, bis der Steilpass auf den Läufer außen kommt. Der flankt, die anderen zwei Angreifer sind im Sprint im Strafraum.",
+  "Wertung und Wechsel: Jeder Treffer gibt einen Punkt für Team Neon. Ist der Angriff vorbei, startet sofort die nächste Gruppe in die andere Richtung. Die Springer bleiben im Feld und werden nach ein paar Minuten getauscht."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Nach dem Pass sofort Vollgas in den Strafraum",
+  "Ein, zwei Kontakte, dann ist der Ball weg",
+  "Kurz weg von der Puppe, dann anbieten",
+  "Auch mit müden Beinen ruhig flanken und abschließen"
+ ],
+ "materials": [
+  "2 große Tore",
+  "10 Puppen",
+  "Leibchen in zwei Farben",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Welle durch die Puppen. Drei Angreifer spielen sich mit den Springern durch die Puppen, und nach dem Steilpass geht es im Sprint in den Strafraum. Dann kommt sofort die nächste Gruppe von der anderen Seite.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 9,
+    "y": 4,
+    "w": 80,
+    "h": 47
+   },
+   {
+    "type": "rect",
+    "x": 73.6,
+    "y": 14.3,
+    "w": 15.4,
+    "h": 25.8,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 9,
+    "y": 27.5,
+    "side": "left",
+    "size": "gross"
+   },
+   {
+    "x": 89,
+    "y": 27.5,
+    "side": "right",
+    "size": "gross"
+   }
+  ],
+  "cones": [
+   {
+    "x": 70.8,
+    "y": 21.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 70.8,
+    "y": 33.3,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 55.7,
+    "y": 13.8,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 55.7,
+    "y": 27,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 56.5,
+    "y": 41.6,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 42.1,
+    "y": 14.1,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 42.1,
+    "y": 27.2,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 42.8,
+    "y": 41.7,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 24.7,
+    "y": 21.2,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 24.7,
+    "y": 33.1,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 13.8,
+    "y": 25.6,
+    "label": "TW"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 85,
+    "y": 27.5,
+    "label": "TW"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 25.3,
+    "y": 10.7,
+    "label": "4"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 15,
+    "y": 43,
+    "label": "8"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 24.5,
+    "y": 50.5,
+    "label": "2"
+   },
+   {
+    "id": "f4",
+    "team": "t",
+    "x": 47.7,
+    "y": 45.8,
+    "label": "F"
+   },
+   {
+    "id": "f8",
+    "team": "t",
+    "x": 48.5,
+    "y": 27,
+    "label": "F"
+   },
+   {
+    "id": "f10",
+    "team": "t",
+    "x": 66.4,
+    "y": 29.2,
+    "label": "F"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 94,
+    "y": 9,
+    "label": "9"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 94,
+    "y": 40,
+    "label": "10"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 94,
+    "y": 56,
+    "label": "11"
+   },
+   {
+    "id": "n14",
+    "team": "a",
+    "x": 4,
+    "y": 9,
+    "label": "14"
+   },
+   {
+    "id": "n12",
+    "team": "a",
+    "x": 4,
+    "y": 38,
+    "label": "12"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 4,
+    "y": 54,
+    "label": "7"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 36,
+    "y": 55.3,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 14.4,
+    "y": 26.2
+   },
+   {
+    "id": "b2",
+    "x": 85.6,
+    "y": 28.1
+   },
+   {
+    "id": "s1",
+    "x": 39.5,
+    "y": 55.8
+   },
+   {
+    "id": "s2",
+    "x": 42,
+    "y": 55.8
+   }
+  ],
+  "dims": [
+   {
+    "x1": 9,
+    "y1": 58.6,
+    "x2": 89,
+    "y2": 58.6,
+    "text": "35 m"
+   }
+  ],
+  "steps": [
+   {
+    "label": "Torwart eröffnet auf Spieler acht",
+    "say": "Der Torwart spielt flach zu Spieler acht, damit läuft die erste Gruppe. Gleichzeitig löst sich der Springer außen kurz von seiner Puppe.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       15.6,
+       43.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "f4",
+      "to": [
+       45,
+       48.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Klatschen lassen auf Spieler zwei",
+    "say": "Spieler acht spielt den Springer an. Der lässt den Ball direkt klatschen, und Spieler zwei kommt ihm entgegen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       45.6,
+       49.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n2",
+      "to": [
+       31,
+       51
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       31.6,
+       51.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Steil auf den Springer vorn",
+    "say": "Jetzt kommt der Steilpass. Spieler zwei spielt durch die Puppen auf den Springer vorn. Außen startet schon Spieler vier.",
+    "moves": [
+     {
+      "who": "f10",
+      "to": [
+       63,
+       33.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       63.6,
+       34.1
+      ],
+      "type": "pass",
+      "delay": 0.4
+     },
+     {
+      "who": "n4",
+      "to": [
+       48,
+       8.5
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "Ablage und durch auf Spieler vier",
+    "say": "Der Springer vorn legt zurück auf den Springer in der Mitte. Der spielt sofort durch auf Spieler vier, genau in den Lauf. Spieler acht und Spieler zwei sprinten los.",
+    "moves": [
+     {
+      "who": "f8",
+      "to": [
+       50,
+       31
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       31.6
+      ],
+      "type": "pass",
+      "delay": 0.3
+     },
+     {
+      "who": "n4",
+      "to": [
+       64,
+       7.5
+      ],
+      "type": "lauf",
+      "delay": 0.8
+     },
+     {
+      "who": "b1",
+      "to": [
+       64.6,
+       8.1
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       40,
+       36
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n8",
+      "to": [
+       38,
+       52.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Flanke und Abschluss: Punkt",
+    "say": "Spieler vier flankt in den Strafraum. Spieler zwei kommt an den ersten Pfosten, Spieler acht an den zweiten und schiebt ein. Das gibt einen Punkt für Team Neon. Sofort startet die nächste Gruppe mit Spieler neun, zehn und elf in die andere Richtung.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       64,
+       37
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n2",
+      "to": [
+       78,
+       22
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       64,
+       51
+      ],
+      "type": "lauf",
+      "delay": 0.1
+     },
+     {
+      "who": "n8",
+      "to": [
+       80,
+       35
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n4",
+      "to": [
+       79,
+       8.1
+      ],
+      "type": "dribbling",
+      "delay": 0.2,
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       80.6,
+       35.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       88.4,
+       31
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Die Spieler kombinieren frei.",
+   "title": "Frei kombinieren",
+   "text": "Die Passfolge ist nicht mehr fest. Die Angreifer tauschen die Plätze, die Springer bieten sich immer wieder neu an. Vor jeder Annahme geht der Kopf hoch: Wo läuft mein Mitspieler hin? Und alle reden miteinander.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 13.8,
+      "y": 25.6,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 85,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 25.3,
+      "y": 10.7,
+      "label": "4"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 15,
+      "y": 43,
+      "label": "8"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 24.5,
+      "y": 50.5,
+      "label": "2"
+     },
+     {
+      "id": "f4",
+      "team": "t",
+      "x": 47.7,
+      "y": 45.8,
+      "label": "F"
+     },
+     {
+      "id": "f8",
+      "team": "t",
+      "x": 48.5,
+      "y": 27,
+      "label": "F"
+     },
+     {
+      "id": "f10",
+      "team": "t",
+      "x": 66.4,
+      "y": 29.2,
+      "label": "F"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 94,
+      "y": 9,
+      "label": "9"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 94,
+      "y": 40,
+      "label": "10"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 94,
+      "y": 56,
+      "label": "11"
+     },
+     {
+      "id": "n14",
+      "team": "a",
+      "x": 4,
+      "y": 9,
+      "label": "14"
+     },
+     {
+      "id": "n12",
+      "team": "a",
+      "x": 4,
+      "y": 38,
+      "label": "12"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 4,
+      "y": 54,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 36,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 14.4,
+      "y": 26.2
+     },
+     {
+      "id": "b2",
+      "x": 85.6,
+      "y": 28.1
+     },
+     {
+      "id": "s1",
+      "x": 39.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 42,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Neuer Weg über die Mitte",
+      "say": "Diesmal geht es anders los. Der Torwart spielt raus auf Spieler zwei. Der Springer in der Mitte kommt ihm entgegen und schaut zum Ball. Dann kommt der Pass.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         25.1,
+         51.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "f8",
+        "to": [
+         48.5,
+         34.5
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "f8",
+        "to": [
+         25.1,
+         51.1
+        ],
+        "type": "blick",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         49.1,
+         35.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Annehmen, aufdrehen, Läufer sehen",
+      "say": "Erst nach der Annahme dreht er auf. Der Blick geht nach vorn, und da sieht er Spieler vier, der außen startet. Der Ball kommt in seinen Lauf.",
+      "moves": [
+       {
+        "who": "f8",
+        "to": [
+         62,
+         9
+        ],
+        "type": "blick",
+        "von": [
+         25.1,
+         51.1
+        ],
+        "dauer": 1.3
+       },
+       {
+        "who": "f8",
+        "to": [
+         62,
+         9
+        ],
+        "type": "dreh",
+        "delay": 0.4,
+        "bend": -1
+       },
+       {
+        "who": "n4",
+        "to": [
+         62,
+         8.5
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         62.6,
+         9.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Plätze getauscht: Punkt",
+      "say": "Spieler acht und Spieler zwei haben die Seiten getauscht und sind im Sprint vorn. Spieler vier spielt flach in die Mitte, Spieler zwei trifft. Das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         40,
+         51.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n2",
+        "to": [
+         66,
+         49
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n2",
+        "to": [
+         79,
+         35
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n8",
+        "to": [
+         33,
+         30
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n8",
+        "to": [
+         48,
+         21
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n8",
+        "to": [
+         62,
+         20
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n8",
+        "to": [
+         76,
+         27
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n4",
+        "to": [
+         76,
+         8.6
+        ],
+        "type": "dribbling",
+        "delay": 0.3,
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         79.6,
+         35.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         88.4,
+         30
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 9,
+      "y1": 58.6,
+      "x2": 89,
+      "y2": 58.6,
+      "text": "35 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Ein Springer wird zum Verteidiger.",
+   "title": "Springer wird Verteidiger",
+   "text": "Sobald der Ball nach außen gespielt wird, sprintet der Springer außen zurück in den Strafraum und verteidigt die Flanke. Die Angreifer müssen jetzt noch schneller nachrücken. Wer zu spät kommt, hat gegen ihn keine Chance.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 13.8,
+      "y": 25.6,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 85,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 25.3,
+      "y": 10.7,
+      "label": "4"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 15,
+      "y": 43,
+      "label": "8"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 24.5,
+      "y": 50.5,
+      "label": "2"
+     },
+     {
+      "id": "f4",
+      "team": "t",
+      "x": 47.7,
+      "y": 45.8,
+      "label": "F"
+     },
+     {
+      "id": "f8",
+      "team": "t",
+      "x": 48.5,
+      "y": 27,
+      "label": "F"
+     },
+     {
+      "id": "f10",
+      "team": "t",
+      "x": 66.4,
+      "y": 29.2,
+      "label": "F"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 94,
+      "y": 9,
+      "label": "9"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 94,
+      "y": 40,
+      "label": "10"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 94,
+      "y": 56,
+      "label": "11"
+     },
+     {
+      "id": "n14",
+      "team": "a",
+      "x": 4,
+      "y": 9,
+      "label": "14"
+     },
+     {
+      "id": "n12",
+      "team": "a",
+      "x": 4,
+      "y": 38,
+      "label": "12"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 4,
+      "y": 54,
+      "label": "7"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 36,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 14.4,
+      "y": 26.2
+     },
+     {
+      "id": "b2",
+      "x": 85.6,
+      "y": 28.1
+     },
+     {
+      "id": "s1",
+      "x": 39.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 42,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Aufbau wie gewohnt",
+      "say": "Der Torwart spielt Spieler acht an. Der spielt den Springer in der Mitte an, der kurz entgegenkommt.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         15.6,
+         43.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "f8",
+        "to": [
+         48.5,
+         34.5
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         49.1,
+         35.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Pass nach außen ist das Signal",
+      "say": "Der Springer in der Mitte spielt nach außen auf Spieler zwei, der durchgestartet ist. Genau das ist das Signal. Der Springer außen dreht um und sprintet in den Strafraum.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         44,
+         51.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n2",
+        "to": [
+         61,
+         51
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         61.6,
+         51.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "f4",
+        "to": [
+         60,
+         47.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "f4",
+        "to": [
+         82,
+         36
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n8",
+        "to": [
+         33,
+         30
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "n8",
+        "to": [
+         48,
+         21
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n4",
+        "to": [
+         48,
+         8.5
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       }
+      ]
+     },
+     {
+      "label": "Schneller sein: Punkt",
+      "say": "Spieler zwei flankt. Spieler acht ist vor dem Verteidiger am Ball und schiebt ein. Das gibt einen Punkt für Team Neon. Klärt der Verteidiger, ist der Angriff vorbei.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         62,
+         20
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n8",
+        "to": [
+         76,
+         27
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n4",
+        "to": [
+         76,
+         12
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       },
+       {
+        "who": "n2",
+        "to": [
+         77,
+         49.5
+        ],
+        "type": "dribbling",
+        "delay": 0.2,
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         76.6,
+         27.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         88.4,
+         22
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 9,
+      "y1": 58.6,
+      "x2": 89,
+      "y2": 58.6,
+      "text": "35 m"
+     }
+    ]
+   }
+  }
+ ]
+}
