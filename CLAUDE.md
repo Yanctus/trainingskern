@@ -94,7 +94,10 @@ hinführen. Muster des Nutzers:
    Satz zum Antworten, unten „trainingskern.de · Link in Bio“.
 3. **Jetzt neu:** Bild aus der Übung (späterer Schritt), darunter Neon-Fläche „JETZT NEU“ und „Ganzes Reel auf dem Profil.“
 
-Die Bilder entstehen zusammen mit dem Video und kommen mit in den passenden Drive-Ordner.
+**Gehört zu jedem Video dazu, ohne dass der Nutzer danach fragt:** In die Story-Datei kommt der Block `"storys"` (Name, Uhrzeit, zwei
+Zeitpunkte im Video, Frage in zwei Zeilen, ein Satz zum Antworten), nach dem Rendern läuft `node storys.mjs stories/<name>.json`.
+Das erzeugt `out/<name>-story-1.jpg` bis `-3.jpg`. Ein Übersichtsbild der drei ansehen, dann mit dem Video in denselben Drive-Ordner laden.
+Die Frage passt zum Thema des Videos und ist jedes Mal eine andere. Für die Videos bis kampagne-11 gibt es noch keine Story-Bilder.
 
 ## Ablage der fertigen Videos (Vorgabe vom 23.11.2026)
 

@@ -43,5 +43,18 @@
       "sprecherAb": 0.4,
       "dauer": 4.2
     }
-  ]
+  ],
+  "storys": {
+    "name": "Farbe rufen, Volley fangen",
+    "zeit": "18:30",
+    "bilder": [
+      13,
+      31
+    ],
+    "frage": [
+      "Wer trainiert",
+      "deine Torhüter?"
+    ],
+    "antwort": "Du selbst, ein Torwarttrainer oder niemand? Antworte per Nachricht."
+  }
 }

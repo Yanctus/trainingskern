@@ -81,5 +81,18 @@
       "sprecherAb": 0.4,
       "dauer": 4.2
     }
-  ]
+  ],
+  "storys": {
+    "name": "Was Trainingskern alles kann",
+    "zeit": "18:30",
+    "bilder": [
+      7.5,
+      13
+    ],
+    "frage": [
+      "Was fehlt in",
+      "deinem Training?"
+    ],
+    "antwort": "Torwart, Athletik oder Spielformen? Antworte per Nachricht."
+  }
 }

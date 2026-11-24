@@ -45,5 +45,18 @@
       "sprecherAb": 0.4,
       "dauer": 4.2
     }
-  ]
+  ],
+  "storys": {
+    "name": "Hürde, Leiter, Farbsprint",
+    "zeit": "18:30",
+    "bilder": [
+      14,
+      31
+    ],
+    "frage": [
+      "Athletik:",
+      "mit oder ohne Ball?"
+    ],
+    "antwort": "Wie baust du Schnelligkeit ins Training ein? Antworte per Nachricht."
+  }
 }

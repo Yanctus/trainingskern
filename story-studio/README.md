@@ -126,6 +126,17 @@ misst der Renderer selbst aus, wo das K im letzten Bild sitzt und ab wann es ste
 In `ton/` liegen die Geräusche der gebauten Übergänge (`wusch`, `rumms`, `klick`), geschnitten aus dem Ton der Filme.
 Ein neuer Film: Datei nach `filme/` legen (Name in Kleinbuchstaben mit Bindestrich) und in der Szene mit `"film": "name"` angeben.
 
+## Story-Bilder zum Reel des Tages
+
+```bash
+node storys.mjs stories/kampagne-12-komplett-farbe-rufen.json
+```
+
+Macht aus dem fertigen Video drei Standbilder für die Story (1080 × 1920): die Ankündigung („HEUTE 18:30“, „Neues Reel: …“),
+eine Frage an die Zuschauer und „JETZT NEU“. Die Angaben stehen in der Story-Datei im Block `"storys"`:
+`name`, `zeit`, `bilder` (zwei Zeitpunkte im Video für Bild 1 und 3), `frage` (zwei Zeilen, die zweite wird Neon), `antwort`.
+Zu lange Texte meldet das Werkzeug mit „ACHTUNG“.
+
 ## Ansehen, bevor gerendert wird
 
 ```bash
