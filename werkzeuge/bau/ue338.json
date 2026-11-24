@@ -1,0 +1,1045 @@
+{
+ "title": "Doppelpässe, kreuzen, dribbeln",
+ "code": "UE-338",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel",
+  "Dribbling"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 12,
+ "players_max": 16,
+ "field_size": "25 x 25 m",
+ "description": "Ein Passmuster für zwei Bälle, die gleichzeitig laufen. Nach einem Doppelpass am Start geht der Ball in den Lauf des nächsten Spielers, die beiden Läufer kreuzen sich in der Mitte. In der Ecke folgt der nächste Doppelpass, dann geht es mit Ball die Linie hinunter und um die Puppe. Kurze Pässe, Pässe in den Lauf und Tempo mit Ball wechseln sich ab.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 25 mal 25 Metern. In der Mitte stehen vier Hütchen als Stationen, zwei oben und zwei darunter. Unten links und unten rechts steht je eine Puppe.",
+  "Verteilen: Je ein Spieler an den vier Hütchen und in den beiden oberen Ecken. Unten starten zwei Spieler mit Ball, dahinter warten die Nächsten mit Ball. Neben jeder Puppe steht ein Spieler für den letzten Doppelpass. Der Trainer steht mit Ersatzbällen oben am Rand.",
+  "Ablauf: Beide Starter spielen gleichzeitig einen Doppelpass mit dem Spieler, der sich vom Hütchen löst. Dann geht der Ball in den Lauf des oberen Spielers, die beiden kreuzen sich und dribbeln Richtung Ecke. Doppelpass mit dem Eckspieler, der Ball geht um die Ecke in seinen Lauf, er dribbelt die Linie hinunter und spielt den letzten Doppelpass um die Puppe.",
+  "Wechsel: Jeder rückt nach seiner Aktion eine Station weiter, vom Start ans mittlere Hütchen, dann nach oben, in die Ecke und an die Puppe. Wer an der Puppe war, wartet mit Ball am Start. Ziel: zwei Bälle ohne Fehlpass durch die ganze Runde bringen."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Pass in den Lauf, nicht in die Füße",
+  "Kopf hoch beim Kreuzen",
+  "Mal links, mal rechts passen",
+  "Erst lösen, wenn der Ball kommt"
+ ],
+ "materials": [
+  "8 Hütchen",
+  "2 Puppen",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Doppelpässe, kreuzen, dribbeln. Zwei Bälle laufen gleichzeitig durchs Feld, mit Doppelpässen, Pässen in den Lauf und Tempo die Linie hinunter.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   }
+  ],
+  "goals": [],
+  "cones": [
+   {
+    "x": 25,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 75,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 25,
+    "y": 55,
+    "color": "orange"
+   },
+   {
+    "x": 75,
+    "y": 55,
+    "color": "orange"
+   },
+   {
+    "x": 42,
+    "y": 22.5,
+    "color": "orange"
+   },
+   {
+    "x": 58,
+    "y": 22.5,
+    "color": "orange"
+   },
+   {
+    "x": 42,
+    "y": 38.5,
+    "color": "orange"
+   },
+   {
+    "x": 58,
+    "y": 38.5,
+    "color": "orange"
+   },
+   {
+    "x": 33,
+    "y": 42,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 67,
+    "y": 42,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 26,
+    "y": 6,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 74,
+    "y": 6,
+    "label": "3"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 42,
+    "y": 19,
+    "label": "10"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 58,
+    "y": 19,
+    "label": "9"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 42,
+    "y": 35,
+    "label": "7"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 58,
+    "y": 35,
+    "label": "11"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 45.8,
+    "y": 51,
+    "label": "6"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 54.2,
+    "y": 51,
+    "label": "8"
+   },
+   {
+    "id": "n12",
+    "team": "a",
+    "x": 29,
+    "y": 55,
+    "label": "12"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 37.5,
+    "y": 55,
+    "label": "4"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 62.5,
+    "y": 55,
+    "label": "5"
+   },
+   {
+    "id": "n14",
+    "team": "a",
+    "x": 71,
+    "y": 55,
+    "label": "14"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 50,
+    "y": 2.5,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b8",
+    "x": 54.8,
+    "y": 51.6
+   },
+   {
+    "id": "b6",
+    "x": 46.4,
+    "y": 51.6
+   },
+   {
+    "id": "b4",
+    "x": 38.1,
+    "y": 55.6
+   },
+   {
+    "id": "b5",
+    "x": 63.1,
+    "y": 55.6
+   },
+   {
+    "id": "s1",
+    "x": 53.5,
+    "y": 3
+   },
+   {
+    "id": "s2",
+    "x": 56,
+    "y": 3
+   }
+  ],
+  "steps": [
+   {
+    "label": "Doppelpass am Start",
+    "say": "Beide Starter spielen gleichzeitig. Wir schauen auf Spieler acht. Spieler elf löst sich nach außen vom Hütchen, bekommt den Ball und spielt direkt zurück. Auf der anderen Seite machen Spieler sechs und Spieler sieben dasselbe.",
+    "moves": [
+     {
+      "who": "n11",
+      "to": [
+       66.5,
+       31
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b8",
+      "to": [
+       67.1,
+       31.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b8",
+      "to": [
+       54.8,
+       51.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       33.5,
+       31
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b6",
+      "to": [
+       34.1,
+       31.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b6",
+      "to": [
+       46.4,
+       51.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Der Ball geht in den Lauf",
+    "say": "Jetzt startet Spieler neun schräg nach innen. Spieler acht spielt den Ball ein Stück vor ihn, so nimmt er ihn im Laufen mit. Spieler zehn bekommt den Ball von Spieler sechs genauso.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       53,
+       12
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b8",
+      "to": [
+       53.6,
+       12.6
+      ],
+      "type": "pass",
+      "delay": 0.3
+     },
+     {
+      "who": "n10",
+      "to": [
+       47,
+       15
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     },
+     {
+      "who": "b6",
+      "to": [
+       47.6,
+       15.6
+      ],
+      "type": "pass",
+      "delay": 0.9
+     }
+    ]
+   },
+   {
+    "label": "Die beiden kreuzen sich",
+    "say": "Mit Ball am Fuß kreuzen sich Spieler neun und Spieler zehn. Jeder dribbelt Richtung Ecke auf der anderen Seite.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       36,
+       9
+      ],
+      "type": "dribbling",
+      "ball": "b8"
+     },
+     {
+      "who": "n10",
+      "to": [
+       64,
+       9
+      ],
+      "type": "dribbling",
+      "delay": 0.4,
+      "ball": "b6"
+     }
+    ]
+   },
+   {
+    "label": "Doppelpass in der Ecke",
+    "say": "Spieler neun spielt in die Ecke zu Spieler zwei und bekommt den Ball zurück. Spieler zwei startet die Linie hinunter, und Spieler neun legt ihm den Ball um die Ecke in den Lauf.",
+    "moves": [
+     {
+      "who": "b8",
+      "to": [
+       26.6,
+       6.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b8",
+      "to": [
+       36.6,
+       9.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       23,
+       14
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b8",
+      "to": [
+       23.6,
+       14.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b6",
+      "to": [
+       74.6,
+       6.6
+      ],
+      "type": "pass",
+      "delay": 0.3
+     },
+     {
+      "who": "b6",
+      "to": [
+       64.6,
+       9.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n3",
+      "to": [
+       77,
+       14
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b6",
+      "to": [
+       77.6,
+       14.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Mit Tempo die Linie hinunter",
+    "say": "Spieler zwei nimmt den Ball mit und geht mit Tempo die Linie hinunter. Drüben macht Spieler drei das Gleiche.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       23,
+       26
+      ],
+      "type": "dribbling",
+      "ball": "b8"
+     },
+     {
+      "who": "n2",
+      "to": [
+       30,
+       32
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b8"
+     },
+     {
+      "who": "n3",
+      "to": [
+       77,
+       26
+      ],
+      "type": "dribbling",
+      "delay": 0.2,
+      "ball": "b6"
+     },
+     {
+      "who": "n3",
+      "to": [
+       70,
+       32
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b6"
+     }
+    ]
+   },
+   {
+    "label": "Doppelpass um die Puppe",
+    "say": "Vor der Puppe passt Spieler zwei zu Spieler zwölf und läuft an der Puppe vorbei. Der Ball kommt in seinen Lauf zurück, und beide Bälle sind durch. Jetzt rückt jeder eine Station weiter, und Spieler vier und Spieler fünf starten die nächste Runde.",
+    "moves": [
+     {
+      "who": "b8",
+      "to": [
+       29.6,
+       55.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n2",
+      "to": [
+       37,
+       40
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n2",
+      "to": [
+       37,
+       47
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b8",
+      "to": [
+       37.6,
+       47.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b6",
+      "to": [
+       71.6,
+       55.6
+      ],
+      "type": "pass",
+      "delay": 0.3
+     },
+     {
+      "who": "n3",
+      "to": [
+       63,
+       40
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     },
+     {
+      "who": "n3",
+      "to": [
+       63,
+       47
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b6",
+      "to": [
+       63.6,
+       47.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "25 m"
+   },
+   {
+    "x1": 83,
+    "y1": 5,
+    "x2": 83,
+    "y2": 55,
+    "text": "25 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Kopf hoch beim Kreuzen.",
+   "title": "Kopf hoch beim Kreuzen",
+   "text": "Spieler neun und Spieler zehn laufen mit Ball direkt aufeinander zu. Wer nur auf den Ball schaut, rennt den anderen um. Darum geht der Kopf beim Dribbeln hoch, erst zum Mitspieler, dann in die Ecke.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 26,
+      "y": 6,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 74,
+      "y": 6,
+      "label": "3"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 42,
+      "y": 19,
+      "label": "10"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 58,
+      "y": 19,
+      "label": "9"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 33.5,
+      "y": 31,
+      "label": "7"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 66.5,
+      "y": 31,
+      "label": "11"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 45.8,
+      "y": 51,
+      "label": "6"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 54.2,
+      "y": 51,
+      "label": "8"
+     },
+     {
+      "id": "n12",
+      "team": "a",
+      "x": 29,
+      "y": 55,
+      "label": "12"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 37.5,
+      "y": 55,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 62.5,
+      "y": 55,
+      "label": "5"
+     },
+     {
+      "id": "n14",
+      "team": "a",
+      "x": 71,
+      "y": 55,
+      "label": "14"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 2.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b8",
+      "x": 54.8,
+      "y": 51.6
+     },
+     {
+      "id": "b6",
+      "x": 46.4,
+      "y": 51.6
+     },
+     {
+      "id": "b4",
+      "x": 38.1,
+      "y": 55.6
+     },
+     {
+      "id": "b5",
+      "x": 63.1,
+      "y": 55.6
+     },
+     {
+      "id": "s1",
+      "x": 53.5,
+      "y": 3
+     },
+     {
+      "id": "s2",
+      "x": 56,
+      "y": 3
+     }
+    ],
+    "steps": [
+     {
+      "label": "Beide im Lauf angespielt",
+      "say": "Spieler neun und Spieler zehn starten schräg nach innen und bekommen den Ball in den Lauf.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         53,
+         12
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b8",
+        "to": [
+         53.6,
+         12.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       },
+       {
+        "who": "n10",
+        "to": [
+         47,
+         15
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       },
+       {
+        "who": "b6",
+        "to": [
+         47.6,
+         15.6
+        ],
+        "type": "pass",
+        "delay": 0.9
+       }
+      ]
+     },
+     {
+      "label": "Kopf hoch, dann vorbei",
+      "say": "Spieler neun hebt den Kopf. Er sieht Spieler zehn kommen, dann schaut er in die Ecke zu Spieler zwei. Beide ziehen eng aneinander vorbei.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         31.5,
+         7.2
+        ],
+        "type": "blick",
+        "von": [
+         47,
+         15
+        ],
+        "dauer": 1.3
+       },
+       {
+        "who": "n9",
+        "to": [
+         36,
+         9
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b8"
+       },
+       {
+        "who": "n10",
+        "to": [
+         64,
+         9
+        ],
+        "type": "dribbling",
+        "delay": 0.4,
+        "ball": "b6"
+       }
+      ]
+     },
+     {
+      "label": "Ab in die Ecke",
+      "say": "Ohne Tempo zu verlieren, spielt Spieler neun in die Ecke zu Spieler zwei. Spieler zehn spielt drüben zu Spieler drei.",
+      "moves": [
+       {
+        "who": "b8",
+        "to": [
+         26.6,
+         6.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b6",
+        "to": [
+         74.6,
+         6.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Den Ball in den Lauf spielen.",
+   "title": "Pass in den Lauf",
+   "text": "Der Pass geht nicht in die Füße, sondern ein paar Schritte vor den Mitspieler. Er nimmt den Ball im vollen Lauf mit und muss nicht abbremsen. Dafür muss der Pass genau sein und das richtige Tempo haben.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 26,
+      "y": 6,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 74,
+      "y": 6,
+      "label": "3"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 42,
+      "y": 19,
+      "label": "10"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 58,
+      "y": 19,
+      "label": "9"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 33.5,
+      "y": 31,
+      "label": "7"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 66.5,
+      "y": 31,
+      "label": "11"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 45.8,
+      "y": 51,
+      "label": "6"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 54.2,
+      "y": 51,
+      "label": "8"
+     },
+     {
+      "id": "n12",
+      "team": "a",
+      "x": 29,
+      "y": 55,
+      "label": "12"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 37.5,
+      "y": 55,
+      "label": "4"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 62.5,
+      "y": 55,
+      "label": "5"
+     },
+     {
+      "id": "n14",
+      "team": "a",
+      "x": 71,
+      "y": 55,
+      "label": "14"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 2.5,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b8",
+      "x": 54.8,
+      "y": 51.6
+     },
+     {
+      "id": "b6",
+      "x": 46.4,
+      "y": 51.6
+     },
+     {
+      "id": "b4",
+      "x": 38.1,
+      "y": 55.6
+     },
+     {
+      "id": "b5",
+      "x": 63.1,
+      "y": 55.6
+     },
+     {
+      "id": "s1",
+      "x": 53.5,
+      "y": 3
+     },
+     {
+      "id": "s2",
+      "x": 56,
+      "y": 3
+     }
+    ],
+    "steps": [
+     {
+      "label": "Vor den Mann spielen",
+      "say": "Spieler neun läuft los. Spieler acht spielt nicht dorthin, wo er steht, sondern dorthin, wo er gleich ist.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         53,
+         12
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b8",
+        "to": [
+         53.6,
+         12.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Im Lauf mitnehmen",
+      "say": "Spieler neun muss nicht stoppen. Er nimmt den Ball im Laufen mit und dribbelt weiter Richtung Ecke.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         36,
+         9
+        ],
+        "type": "dribbling",
+        "ball": "b8"
+       }
+      ]
+     },
+     {
+      "label": "Um die Ecke in den Lauf",
+      "say": "Doppelpass mit Spieler zwei. Dann geht der Ball die Linie hinunter, genau in den Lauf von Spieler zwei, und der nimmt ihn mit Tempo mit.",
+      "moves": [
+       {
+        "who": "b8",
+        "to": [
+         26.6,
+         6.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b8",
+        "to": [
+         36.6,
+         9.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n2",
+        "to": [
+         23,
+         14
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b8",
+        "to": [
+         23.6,
+         14.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n2",
+        "to": [
+         23,
+         26
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b8"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,937 @@
+{
+ "title": "Hoch pressen nach dem Signal",
+ "code": "UE-340",
+ "kind": "Spielform",
+ "focuses": [
+  "Verteidigen",
+  "Umschalten",
+  "Zusammenspiel"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 14,
+ "players_max": 18,
+ "field_size": "Volle Breite x 40 m",
+ "description": "Acht gegen acht auf einer Hälfte in voller Breite. Team Rot baut mit dem Torwart auf und will den Ball zu seinem Zehner in der Endzone bringen, der auf zwei Minitore abschließt. Team Neon wartet, bis Team Rot den ersten Pass nach vorn spielt. Dann pressen alle gemeinsam, erobern den Ball und gehen schnell aufs große Tor.",
+ "organisation": [
+  "Aufbauen: Eine Hälfte in voller Breite, etwa 40 Meter lang. Oben steht das große Tor mit Torwart, unten zwei Minitore. Davor ist eine Endzone für den Zehner von Team Rot abgesteckt.",
+  "Verteilen: Team Rot mit Torwart und sieben Feldspielern, einer davon wartet als Zehner in der Endzone. Team Neon presst mit acht Spielern. Der Trainer steht mit Bällen an der Seitenlinie.",
+  "Ablauf: Der Torwart eröffnet. Sobald Team Rot den ersten Pass nach vorn spielt, presst Team Neon gemeinsam. Nach dem Ballgewinn schnell abschließen oder den Ball sichern und ruhig aufbauen. Kommt Team Rot durch, spielt es auf den Zehner, und der schließt auf ein Minitor ab.",
+  "Wertung: Jeder Treffer von Team Neon ins große Tor gibt einen Punkt. Trifft der Zehner ein Minitor, gibt das einen Punkt für Team Rot. Der Trainer startet neu, mal beim Torwart, mal mit einem Ball von der Seite."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Erster Pass nach vorn, jetzt pressen alle",
+  "Zu dritt um den Ball, keiner jagt allein",
+  "Der Sechser stellt den Weg zum Zehner zu",
+  "Kommt Rot durch, sofort zurück und neu ordnen"
+ ],
+ "materials": [
+  "1 großes Tor",
+  "2 Minitore",
+  "Hütchen für die Endzone",
+  "Leibchen in zwei Farben",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Hoch pressen nach dem Signal. Acht gegen acht auf einer Hälfte. Team Rot baut vom Torwart aus auf, und mit dem ersten Pass nach vorn geht bei Team Neon die Jagd los.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 9,
+    "y": 4,
+    "w": 80,
+    "h": 47
+   },
+   {
+    "type": "rect",
+    "x": 24.2,
+    "y": 4,
+    "w": 49.6,
+    "h": 19.3
+   },
+   {
+    "type": "rect",
+    "x": 37.8,
+    "y": 4,
+    "w": 22.5,
+    "h": 6.4
+   },
+   {
+    "type": "line",
+    "x1": 9,
+    "y1": 27.9,
+    "x2": 89,
+    "y2": 27.9,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 9,
+    "y1": 43.8,
+    "x2": 89,
+    "y2": 43.8,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 49,
+    "y": 4,
+    "side": "top",
+    "size": "gross"
+   },
+   {
+    "x": 17.6,
+    "y": 51,
+    "side": "bottom"
+   },
+   {
+    "x": 80.4,
+    "y": 51,
+    "side": "bottom"
+   }
+  ],
+  "cones": [],
+  "players": [
+   {
+    "id": "r1",
+    "team": "b",
+    "x": 48,
+    "y": 6.5,
+    "label": "TW"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 39,
+    "y": 12,
+    "label": "6"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 57,
+    "y": 14,
+    "label": "5"
+   },
+   {
+    "id": "r12",
+    "team": "b",
+    "x": 12,
+    "y": 18,
+    "label": "12"
+   },
+   {
+    "id": "r13",
+    "team": "b",
+    "x": 84,
+    "y": 20,
+    "label": "13"
+   },
+   {
+    "id": "r14",
+    "team": "b",
+    "x": 48,
+    "y": 23,
+    "label": "14"
+   },
+   {
+    "id": "r15",
+    "team": "b",
+    "x": 30,
+    "y": 24,
+    "label": "15"
+   },
+   {
+    "id": "r16",
+    "team": "b",
+    "x": 57,
+    "y": 48,
+    "label": "16"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 21,
+    "y": 28,
+    "label": "11"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 39,
+    "y": 28,
+    "label": "9"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 66,
+    "y": 26,
+    "label": "7"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 48,
+    "y": 39,
+    "label": "10"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 30,
+    "y": 42,
+    "label": "8"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 84,
+    "y": 37,
+    "label": "2"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 39,
+    "y": 45,
+    "label": "4"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 12,
+    "y": 40,
+    "label": "3"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 68,
+    "y": 55.3,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 48.6,
+    "y": 7.1
+   },
+   {
+    "id": "s1",
+    "x": 71.5,
+    "y": 55.8
+   },
+   {
+    "id": "s2",
+    "x": 74,
+    "y": 55.8
+   }
+  ],
+  "steps": [
+   {
+    "label": "Torwart eröffnet kurz",
+    "say": "Der Torwart spielt kurz auf Spieler sechs. Noch presst keiner. Team Neon steht und wartet auf den ersten Pass nach vorn.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       39.6,
+       12.6
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Erster Pass nach vorn: das Signal",
+    "say": "Jetzt spielt Spieler sechs nach vorn auf Spieler fünfzehn. Das ist das Signal. Spieler elf schaut genau hin, wie der Ball ankommt, und läuft an. Von vorn kommt Spieler neun, von hinten Spieler acht.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       30.6,
+       24.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n11",
+      "to": [
+       30,
+       24
+      ],
+      "type": "blick",
+      "delay": 0.4
+     },
+     {
+      "who": "n11",
+      "to": [
+       24.5,
+       23.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n9",
+      "to": [
+       35,
+       20
+      ],
+      "type": "lauf",
+      "delay": 0.8
+     },
+     {
+      "who": "n8",
+      "to": [
+       31,
+       32.5
+      ],
+      "type": "lauf",
+      "delay": 0.8
+     },
+     {
+      "who": "n4",
+      "to": [
+       43,
+       36
+      ],
+      "type": "lauf",
+      "delay": 1.0
+     },
+     {
+      "who": "n10",
+      "to": [
+       51,
+       31
+      ],
+      "type": "lauf",
+      "delay": 1.0
+     }
+    ]
+   },
+   {
+    "label": "Eingekreist, Ball erobert",
+    "say": "Spieler fünfzehn ist eingekreist. Der Weg zum Zehner ist zu, Spieler vier steht im Passweg. Er versucht es trotzdem durch die Mitte, und Spieler acht hat den Ball.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       33.5,
+       31.5
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n8",
+      "to": [
+       33,
+       31
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "r14",
+      "to": [
+       52,
+       27
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Schnell abschließen: Punkt",
+    "say": "Kein langes Spiel jetzt. Spieler acht legt sofort auf Spieler neun, und der schießt aus der Drehung ins lange Eck. Das gibt einen Punkt für Team Neon. Danach startet der Trainer den nächsten Angriff, mal beim Torwart, mal von der Seite.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       35.6,
+       20.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       53,
+       4.3
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r1",
+      "to": [
+       46,
+       6.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 9,
+    "y1": 58.6,
+    "x2": 89,
+    "y2": 58.6,
+    "text": "Volle Breite"
+   },
+   {
+    "x1": 95,
+    "y1": 4,
+    "x2": 95,
+    "y2": 51,
+    "text": "40 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Mehrere Leute um den Ball.",
+   "title": "Mehrere Leute um den Ball",
+   "text": "Einer allein holt den Ball nicht. Der Erste läuft an, der Zweite kommt von der Seite, der Dritte steht dahinter. So hat der Ballführer keinen freien Pass mehr und muss etwas riskieren.",
+   "board": {
+    "players": [
+     {
+      "id": "r1",
+      "team": "b",
+      "x": 48,
+      "y": 6.5,
+      "label": "TW"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 39,
+      "y": 12,
+      "label": "6"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 57,
+      "y": 14,
+      "label": "5"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 12,
+      "y": 18,
+      "label": "12"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 84,
+      "y": 20,
+      "label": "13"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 48,
+      "y": 23,
+      "label": "14"
+     },
+     {
+      "id": "r15",
+      "team": "b",
+      "x": 30,
+      "y": 24,
+      "label": "15"
+     },
+     {
+      "id": "r16",
+      "team": "b",
+      "x": 57,
+      "y": 48,
+      "label": "16"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 21,
+      "y": 28,
+      "label": "11"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 39,
+      "y": 28,
+      "label": "9"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 66,
+      "y": 26,
+      "label": "7"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 48,
+      "y": 39,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 30,
+      "y": 42,
+      "label": "8"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 84,
+      "y": 37,
+      "label": "2"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 39,
+      "y": 45,
+      "label": "4"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 12,
+      "y": 40,
+      "label": "3"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 68,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 39.6,
+      "y": 12.6
+     },
+     {
+      "id": "s1",
+      "x": 71.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 74,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Pass in die Mitte",
+      "say": "Spieler sechs spielt in die Mitte auf Spieler vierzehn. Sofort schiebt Team Neon zusammen. Spieler zehn kommt von vorn, Spieler neun von hinten.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         48.6,
+         23.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n10",
+        "to": [
+         49,
+         30.5
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "n9",
+        "to": [
+         43,
+         21
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "n7",
+        "to": [
+         57,
+         24
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       },
+       {
+        "who": "n8",
+        "to": [
+         36,
+         34
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       }
+      ]
+     },
+     {
+      "label": "Kein Weg frei, abgefangen",
+      "say": "Spieler vierzehn hat keinen freien Pass mehr. Er will raus auf Spieler fünf, aber Spieler sieben ist dazwischen und hat den Ball.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         55.5,
+         18.5
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n7",
+        "to": [
+         55,
+         18
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Direkt zum Tor: Punkt",
+      "say": "Spieler sieben ist schon im Strafraum. Zwei Schritte, Schuss, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n7",
+        "to": [
+         52,
+         12.5
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "r1",
+        "to": [
+         45,
+         6.5
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "b1",
+        "to": [
+         51.5,
+         4.3
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 9,
+      "y1": 58.6,
+      "x2": 89,
+      "y2": 58.6,
+      "text": "Volle Breite"
+     },
+     {
+      "x1": 95,
+      "y1": 4,
+      "x2": 95,
+      "y2": 51,
+      "text": "40 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Schnell nachrücken und die Überzahl nutzen.",
+   "title": "Schnell nachrücken",
+   "text": "Ist der Ball erobert, rücken die Nächsten sofort nach. So entsteht in Ballnähe eine Überzahl. Einer startet in die Tiefe, und der Ball geht schnell nach vorn, bevor Team Rot sich ordnen kann.",
+   "board": {
+    "players": [
+     {
+      "id": "r1",
+      "team": "b",
+      "x": 48,
+      "y": 6.5,
+      "label": "TW"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 39,
+      "y": 12,
+      "label": "6"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 57,
+      "y": 14,
+      "label": "5"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 12,
+      "y": 18,
+      "label": "12"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 84,
+      "y": 20,
+      "label": "13"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 48,
+      "y": 23,
+      "label": "14"
+     },
+     {
+      "id": "r15",
+      "team": "b",
+      "x": 30,
+      "y": 24,
+      "label": "15"
+     },
+     {
+      "id": "r16",
+      "team": "b",
+      "x": 57,
+      "y": 48,
+      "label": "16"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 21,
+      "y": 28,
+      "label": "11"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 39,
+      "y": 28,
+      "label": "9"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 66,
+      "y": 26,
+      "label": "7"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 48,
+      "y": 39,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 30,
+      "y": 42,
+      "label": "8"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 84,
+      "y": 37,
+      "label": "2"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 39,
+      "y": 45,
+      "label": "4"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 12,
+      "y": 40,
+      "label": "3"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 68,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 84.6,
+      "y": 20.6
+     },
+     {
+      "id": "s1",
+      "x": 71.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 74,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Außen erobert",
+      "say": "Spieler dreizehn hat den Ball außen. Spieler zwei läuft ihn von hinten an, nimmt ihm den Ball ab und hat ihn am Fuß.",
+      "moves": [
+       {
+        "who": "n2",
+        "to": [
+         83,
+         26
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n2",
+        "to": [
+         78,
+         29
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Nachrücken, Spieler sieben startet",
+      "say": "Sofort rücken Spieler zehn und Spieler sieben nach. Spieler zwei schaut hoch, Spieler sieben startet in die Tiefe hinter Spieler fünf.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         70,
+         33
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n7",
+        "to": [
+         64,
+         14
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n2",
+        "to": [
+         64,
+         14
+        ],
+        "type": "blick",
+        "delay": 0.3
+       },
+       {
+        "who": "n9",
+        "to": [
+         44,
+         17
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       }
+      ]
+     },
+     {
+      "label": "Steil in den Lauf: Punkt",
+      "say": "Spieler zwei spielt steil in den Lauf. Spieler sieben ist frei vor dem Torwart und trifft, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         64.6,
+         14.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         51,
+         4.3
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 9,
+      "y1": 58.6,
+      "x2": 89,
+      "y2": 58.6,
+      "text": "Volle Breite"
+     },
+     {
+      "x1": 95,
+      "y1": 4,
+      "x2": 95,
+      "y2": 51,
+      "text": "40 m"
+     }
+    ]
+   }
+  }
+ ]
+}

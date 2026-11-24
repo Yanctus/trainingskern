@@ -1,0 +1,976 @@
+{
+ "title": "Rotieren im Spielaufbau",
+ "code": "UE-336",
+ "kind": "Spielform",
+ "focuses": [
+  "Zusammenspiel",
+  "Passspiel",
+  "Bewegung"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 16,
+ "players_max": 16,
+ "field_size": "35 x 45 m",
+ "description": "Acht gegen acht mit zwei großen Toren. Team Neon baut vom Torwart aus auf, mit zwei Innenverteidigern und dem Sechser. Durch Platztausch entstehen Lücken: Wer sich fallen lässt, zieht seinen Gegenspieler mit, und ein anderer läuft in den frei gewordenen Raum. Team Neon sucht so schnell die Überzahl im Mittelfeld und das Eins gegen eins vorn.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 35 mal 45 Metern mit einem großen Tor auf jeder Seite.",
+  "Verteilen: Team Neon spielt mit Torwart, zwei Innenverteidigern, dem Sechser, zwei Außenspielern, einem Zehner und einer Spitze. Team Rot verteidigt mit Dreierkette, drei Mittelfeldspielern und einer Spitze, im Tor steht ein Torwart. Der Trainer steht mit Bällen an der Seitenlinie.",
+  "Ablauf: Der Torwart von Team Neon eröffnet. Die Innenverteidiger gehen breit, der Sechser lässt sich fallen, und der Zehner kommt in den frei gewordenen Raum. Je nachdem, wie Team Rot presst, spielt Team Neon kurz über die Rotation oder direkt auf die Spitze.",
+  "Wertung: Jeder Treffer gibt einen Punkt, für beide Teams. Erobert Team Rot den Ball, greift es sofort an. Nach jedem Treffer oder Aus beginnt wieder der Torwart von Team Neon."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Lass dich fallen und nimm deinen Gegner mit",
+  "Wo ist die Lücke? Rein da!",
+  "Torwart, schau zuerst nach vorn",
+  "Schnell entscheiden, schnell nach vorn"
+ ],
+ "materials": [
+  "2 große Tore",
+  "4 Hütchen",
+  "Leibchen in zwei Farben",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Rotieren im Spielaufbau. Acht gegen acht. Team Neon baut vom Torwart aus auf und schafft sich mit Platztausch freie Räume.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 9,
+    "y": 4,
+    "w": 80,
+    "h": 47
+   }
+  ],
+  "goals": [
+   {
+    "x": 9,
+    "y": 27.5,
+    "side": "left",
+    "size": "gross"
+   },
+   {
+    "x": 89,
+    "y": 27.5,
+    "side": "right",
+    "size": "gross"
+   }
+  ],
+  "cones": [
+   {
+    "x": 9,
+    "y": 4,
+    "color": "orange"
+   },
+   {
+    "x": 89,
+    "y": 4,
+    "color": "orange"
+   },
+   {
+    "x": 9,
+    "y": 51,
+    "color": "orange"
+   },
+   {
+    "x": 89,
+    "y": 51,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n1",
+    "team": "a",
+    "x": 14,
+    "y": 28,
+    "label": "TW"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 24,
+    "y": 14,
+    "label": "5"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 24,
+    "y": 42,
+    "label": "6"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 41,
+    "y": 7,
+    "label": "2"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 41,
+    "y": 25,
+    "label": "4"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 41,
+    "y": 46,
+    "label": "3"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 58,
+    "y": 40,
+    "label": "10"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 66.5,
+    "y": 30,
+    "label": "9"
+   },
+   {
+    "id": "k",
+    "team": "t",
+    "x": 85,
+    "y": 28,
+    "label": "TW"
+   },
+   {
+    "id": "r16",
+    "team": "b",
+    "x": 32.5,
+    "y": 28,
+    "label": "16"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 49.5,
+    "y": 10,
+    "label": "11"
+   },
+   {
+    "id": "r15",
+    "team": "b",
+    "x": 58,
+    "y": 22,
+    "label": "15"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 49.5,
+    "y": 47,
+    "label": "7"
+   },
+   {
+    "id": "r12",
+    "team": "b",
+    "x": 76,
+    "y": 12,
+    "label": "12"
+   },
+   {
+    "id": "r13",
+    "team": "b",
+    "x": 76,
+    "y": 30,
+    "label": "13"
+   },
+   {
+    "id": "r14",
+    "team": "b",
+    "x": 76,
+    "y": 47,
+    "label": "14"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 67.5,
+    "y": 55.3,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 14.6,
+    "y": 28.6
+   },
+   {
+    "id": "s1",
+    "x": 71,
+    "y": 55.8
+   },
+   {
+    "id": "s2",
+    "x": 73.5,
+    "y": 55.8
+   }
+  ],
+  "dims": [
+   {
+    "x1": 9,
+    "y1": 58.6,
+    "x2": 89,
+    "y2": 58.6,
+    "text": "45 m"
+   }
+  ],
+  "steps": [
+   {
+    "label": "Breit machen, der Sechser kommt",
+    "say": "Der Torwart hat den Ball. Die beiden Innenverteidiger gehen weit auseinander. In die Lücke lässt sich Spieler vier fallen, und Spieler fünfzehn läuft mit ihm.",
+    "moves": [
+     {
+      "who": "n5",
+      "to": [
+       24,
+       9
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n6",
+      "to": [
+       24,
+       47
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n4",
+      "to": [
+       33,
+       21
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "r15",
+      "to": [
+       44,
+       20
+      ],
+      "type": "lauf",
+      "delay": 0.7
+     },
+     {
+      "who": "r16",
+      "to": [
+       30,
+       38
+      ],
+      "type": "lauf",
+      "delay": 0.7
+     }
+    ]
+   },
+   {
+    "label": "Der Zehner kommt in den Raum",
+    "say": "Wo Spieler fünfzehn stand, ist jetzt Platz. Spieler zehn lässt sich genau dorthin fallen. Der Torwart schaut nach vorn, sieht ihn und spielt flach durch.",
+    "moves": [
+     {
+      "who": "n10",
+      "to": [
+       55,
+       31
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n1",
+      "to": [
+       36,
+       29.6
+      ],
+      "type": "blick",
+      "delay": 0.5
+     },
+     {
+      "who": "b1",
+      "to": [
+       55.6,
+       31.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Aufdrehen, Pass auf die Spitze",
+    "say": "Spieler zehn dreht mit dem ersten Kontakt auf. Spieler neun steht vorn allein gegen Spieler dreizehn, und der Ball kommt zu ihm.",
+    "moves": [
+     {
+      "who": "n10",
+      "to": [
+       66.5,
+       30
+      ],
+      "type": "blick",
+      "von": [
+       35.5,
+       29.5
+      ],
+      "dauer": 1.3
+     },
+     {
+      "who": "n10",
+      "to": [
+       66.5,
+       30
+      ],
+      "type": "dreh",
+      "delay": 0.4
+     },
+     {
+      "who": "b1",
+      "to": [
+       67.1,
+       30.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r15",
+      "to": [
+       50,
+       26
+      ],
+      "type": "lauf",
+      "delay": 0.8
+     }
+    ]
+   },
+   {
+    "label": "Eins gegen eins: Punkt",
+    "say": "Spieler neun geht ins Duell, zieht an Spieler dreizehn vorbei und trifft, und das gibt einen Punkt für Team Neon. Danach beginnt wieder der Torwart von Team Neon.",
+    "moves": [
+     {
+      "who": "r13",
+      "to": [
+       72,
+       28
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n9",
+      "to": [
+       73,
+       21
+      ],
+      "type": "dribbling",
+      "delay": 0.2,
+      "ball": "b1"
+     },
+     {
+      "who": "n9",
+      "to": [
+       80,
+       19
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "b1",
+      "to": [
+       88.6,
+       24
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Der Sechser macht die Dreierkette.",
+   "title": "Sechser in die Dreierkette",
+   "text": "Spieler vier lässt sich ganz zwischen die Innenverteidiger fallen. Dadurch rücken die beiden nach vorn und die Außenspieler noch höher. Jetzt kann ein Innenverteidiger mit Ball nach vorn gehen, und außen entsteht zwei gegen eins.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 14,
+      "y": 28,
+      "label": "TW"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 24,
+      "y": 14,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 24,
+      "y": 42,
+      "label": "6"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 41,
+      "y": 7,
+      "label": "2"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 41,
+      "y": 25,
+      "label": "4"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 41,
+      "y": 46,
+      "label": "3"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 58,
+      "y": 40,
+      "label": "10"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 66.5,
+      "y": 30,
+      "label": "9"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 85,
+      "y": 28,
+      "label": "TW"
+     },
+     {
+      "id": "r16",
+      "team": "b",
+      "x": 32.5,
+      "y": 36,
+      "label": "16"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 49.5,
+      "y": 10,
+      "label": "11"
+     },
+     {
+      "id": "r15",
+      "team": "b",
+      "x": 58,
+      "y": 22,
+      "label": "15"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 49.5,
+      "y": 43,
+      "label": "7"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 76,
+      "y": 12,
+      "label": "12"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 76,
+      "y": 30,
+      "label": "13"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 76,
+      "y": 47,
+      "label": "14"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 67.5,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 14.6,
+      "y": 28.6
+     },
+     {
+      "id": "s1",
+      "x": 71,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 73.5,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Dreierkette hinten",
+      "say": "Spieler vier geht ganz nach hinten zwischen die Innenverteidiger. Spieler fünf und Spieler sechs schieben nach vorn, die Außenspieler gehen noch höher. Der Torwart spielt Spieler vier an.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         26,
+         28
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n5",
+        "to": [
+         33,
+         10
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n6",
+        "to": [
+         33,
+         46
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n2",
+        "to": [
+         52,
+         5
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n3",
+        "to": [
+         52,
+         50
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         26.6,
+         28.6
+        ],
+        "type": "pass",
+        "delay": 1.0
+       }
+      ]
+     },
+     {
+      "label": "Innenverteidiger rückt ein",
+      "say": "Spieler vier legt auf Spieler sechs. Den läuft keiner an, also geht er mit Ball in den freien Raum.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         33.6,
+         46.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n6",
+        "to": [
+         43,
+         44
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Zwei gegen eins außen",
+      "say": "Spieler sieben muss sich entscheiden. Geht er auf Spieler sechs, ist Spieler drei frei. Genau dorthin geht der Pass, in den Lauf.",
+      "moves": [
+       {
+        "who": "r7",
+        "to": [
+         48,
+         40
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n3",
+        "to": [
+         61,
+         50
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "b1",
+        "to": [
+         61.6,
+         50.6
+        ],
+        "type": "pass",
+        "delay": 0.8
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 9,
+      "y1": 58.6,
+      "x2": 89,
+      "y2": 58.6,
+      "text": "45 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: In die Mittelzone dürfen nur zwei.",
+   "title": "Nur zwei in der Mittelzone",
+   "text": "In der Mitte liegt eine Zone. Von jedem Team dürfen nur zwei Spieler gleichzeitig drin sein. Geht einer raus, darf ein anderer rein. So müssen die Spieler ständig die Plätze tauschen.",
+   "board": {
+    "players": [
+     {
+      "id": "n1",
+      "team": "a",
+      "x": 14,
+      "y": 28,
+      "label": "TW"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 24,
+      "y": 14,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 24,
+      "y": 42,
+      "label": "6"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 41,
+      "y": 7,
+      "label": "2"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 41,
+      "y": 25,
+      "label": "4"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 41,
+      "y": 46,
+      "label": "3"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 58,
+      "y": 40,
+      "label": "10"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 66.5,
+      "y": 30,
+      "label": "9"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 85,
+      "y": 28,
+      "label": "TW"
+     },
+     {
+      "id": "r16",
+      "team": "b",
+      "x": 32.5,
+      "y": 28,
+      "label": "16"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 49.5,
+      "y": 10,
+      "label": "11"
+     },
+     {
+      "id": "r15",
+      "team": "b",
+      "x": 58,
+      "y": 22,
+      "label": "15"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 49.5,
+      "y": 47,
+      "label": "7"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 76,
+      "y": 12,
+      "label": "12"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 76,
+      "y": 30,
+      "label": "13"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 76,
+      "y": 47,
+      "label": "14"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 67.5,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 14.6,
+      "y": 28.6
+     },
+     {
+      "id": "s1",
+      "x": 71,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 73.5,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Einer raus, einer rein",
+      "say": "Spieler vier und Spieler zehn sind in der Zone. Spieler vier geht raus nach hinten, Spieler fünfzehn läuft mit. Dafür kommt Spieler zwei von außen in die Zone.",
+      "moves": [
+       {
+        "who": "n4",
+        "to": [
+         32,
+         20
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r15",
+        "to": [
+         38,
+         15
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n2",
+        "to": [
+         47,
+         22
+        ],
+        "type": "lauf",
+        "delay": 0.5
+       }
+      ]
+     },
+     {
+      "label": "Pass in die Zone",
+      "say": "Der Torwart spielt Spieler vier an. Der spielt sofort weiter zu Spieler zwei, der in der Zone frei steht.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         32.6,
+         20.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         47.6,
+         22.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Steil auf die Spitze: Punkt",
+      "say": "Spieler zwei spielt direkt steil auf Spieler neun. Der hat Platz, geht aufs Tor und trifft, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         67.1,
+         30.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n9",
+        "to": [
+         74,
+         22
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         88.6,
+         24
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "lines": [
+     {
+      "type": "rect",
+      "x": 9,
+      "y": 4,
+      "w": 80,
+      "h": 47
+     },
+     {
+      "type": "line",
+      "x1": 37,
+      "y1": 15,
+      "x2": 61,
+      "y2": 15,
+      "dashed": true
+     },
+     {
+      "type": "line",
+      "x1": 37,
+      "y1": 41,
+      "x2": 61,
+      "y2": 41,
+      "dashed": true
+     },
+     {
+      "type": "line",
+      "x1": 37,
+      "y1": 15,
+      "x2": 37,
+      "y2": 41,
+      "dashed": true
+     },
+     {
+      "type": "line",
+      "x1": 61,
+      "y1": 15,
+      "x2": 61,
+      "y2": 41,
+      "dashed": true
+     }
+    ],
+    "dims": [
+     {
+      "x1": 9,
+      "y1": 58.6,
+      "x2": 89,
+      "y2": 58.6,
+      "text": "45 m"
+     }
+    ]
+   }
+  }
+ ]
+}
