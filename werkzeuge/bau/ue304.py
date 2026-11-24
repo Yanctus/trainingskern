@@ -1,27 +1,62 @@
-import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe import *
+import json, math, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe import *
+import hilfe as h
 # 100-P8 (U15-U17, Woche 11): Exploit the Overload to Finish (Wave). 20 x 30 Yards = 18 m tief, 27 m breit (gerundet 25 m).
 # Um 90 Grad gedreht: das große Tor mit Torwart liegt oben (im PDF rechts), die zwei Minitore unten (im PDF links).
-# Feld x 20-80, y 8-48. PDF pink -> Team Neon (9, 8, 11, wartend 2), blau -> Team Rot. Rot neu nummeriert, weil 9, 4 und 5
+# PDF pink -> Team Neon (9, 8, 11, wartend 2), blau -> Team Rot. Rot neu nummeriert, weil 9, 4 und 5
 # doppelt sind: blau 9 -> 7, blau 10 bleibt, wartend 3 und 6. Von den Wartenden nur drei gezeichnet (3D-Abstand).
 # Ein Trainer statt zwei: Er steht in Phase eins als Wandspieler in der Mitte und geht danach zu den Ersatzbällen am Rand.
 # Fassungen aus Text und Ton: Doppelpass am Verteidiger vorbei ("quick 1-2 combinations to play around defenders") und
 # Konter der Verteidiger nach Ballgewinn ("if the defenders win possession they counter-attack and finish").
 # Sichtkegel: im Video nicht eingezeichnet; aus Text und Ton ("identify and use the overload", "find the free player"):
 # Der Ballführende schaut in Phase drei zum freien Mitspieler, bevor er passt.
+# FELD FÜLLT DIE TAFEL (Inhaber, 24.11.2026): Das Feld lag schon quer, war aber zu klein (x 20-80, y 8-48). Geplant bleibt alles
+# im alten Raster; R() zieht es auf x 13-87, y 7-51 auf (in der Länge 1,23-fach, in der Tiefe 1,1-fach; mehr Tiefe geht nicht,
+# weil Team Rot über und Team Neon unter dem Feld wartet). Spieler zwei rückt dichter an die Grundlinie (Maßlinie unten),
+# der Trainer geht nach Phase eins an den Rand links. Bälle am Fuß und Pässe zum Spieler setzt am_fuss() wieder genau auf +0,6.
+SX, SY = 74 / 60, 1.1
+def R(x, y): return [round(13 + (x - 20) * SX, 1), round(7 + (y - 8) * SY, 1)]
+def P(i, t, x, y, l): return h.P(i, t, *R(x, y), l)
+def B(i, x, y): return h.B(i, *R(x, y))
+def mv(who, to, *a, **k): return h.mv(who, R(*to), *a, **k)
+def dr(who, ball, to, **k): return h.dr(who, ball, R(*to), **k)
+def ps(ball, to, **k): return h.ps(ball, R(*to), **k)
+def bl(who, to, von=None, **k): return h.bl(who, R(*to), von=R(*von) if von else None, **k)
+def rect(x, y, w, hh): return h.rect(*R(x, y), round(w * SX, 1), round(hh * SY, 1))
+def am_fuss(u, r=2.0):
+    # Ball am Fuß und Pass zum Spieler: genau Spieler + 0,6 (nach dem Aufziehen stimmt der Versatz sonst nicht mehr)
+    base = u["board"]
+    def fuss(p): return [round(p[0] + 0.6, 1), round(p[1] + 0.6, 1)]
+    for b in [base] + [v["board"] for v in u.get("versions") or []]:
+        pos = {p["id"]: [p["x"], p["y"]] for p in b.get("players") or base["players"]}
+        for ba in b.get("balls") or []:
+            p = min(pos.values(), key=lambda p: math.dist(p, [ba["x"], ba["y"]]))
+            if math.dist(p, [ba["x"], ba["y"]]) < r:
+                ba["x"], ba["y"] = fuss(p)
+        for st in b.get("steps") or []:
+            ziele = list(pos.values()) + [m["to"] for m in st["moves"] if m["who"] in pos and m["type"] in ("lauf", "dribbling")]
+            for m in st["moves"]:
+                if m["type"] == "pass":
+                    p = min(ziele, key=lambda p: math.dist(p, m["to"]))
+                    if math.dist(p, m["to"]) < r:
+                        m["to"] = fuss(p)
+            for m in st["moves"]:
+                if m["who"] in pos and m["type"] in ("lauf", "dribbling"):
+                    pos[m["who"]] = m["to"]
 TW = P("k", "t", 50.9, 10.3, "TW")
-ERSATZ = [B("s1", 10.4, 33.5), B("s2", 14, 33.5)]
-TR = (12, 30)
-POS = {"n9": (50, 51), "n8": (24, 51), "n11": (76, 51), "n2": (65.5, 55),
+ERSATZ = [h.B("s1", 4.4, 34), h.B("s2", 8, 34)]
+TR = (14.3, 28.9)  # quer (6, 30): links neben dem Feld
+POS = {"n9": (50, 51), "n8": (24, 51), "n11": (76, 51), "n2": (65.5, 51.9),
        "r7": (32, 6), "r10": (68, 6), "r3": (23, 6), "r6": (77, 6)}
 def sp(t=TR, **k):
     d = dict(POS); d.update(k)
     return [P(i, "a" if i[0] == "n" else "b", x, y, i[1:]) for i, (x, y) in d.items()] + [TW, P("T", "c", t[0], t[1], "T")]
 def baelle(**k):
-    d = {"b1": (50.6, 51.6), "b2": (32.6, 6.6), "b3": (24.6, 51.6), "b4": (66.1, 55.6)}; d.update(k)
+    d = {"b1": (50.6, 51.6), "b2": (32.6, 6.6), "b3": (24.6, 51.6), "b4": (66.1, 52.5)}; d.update(k)
     return [B(i, x, y) for i, (x, y) in d.items()] + ERSATZ
 LINES = [rect(20, 8, 60, 40), rect(33.5, 8, 33, 9)]
-TORE = [{"x": 50, "y": 8, "side": "top", "size": "gross"}, {"x": 40.5, "y": 48, "side": "bottom"}, {"x": 59.5, "y": 48, "side": "bottom"}]
-DIMS = dims(20, 80, 8, 48, "25 m", "18 m", rx=92)
+def tor(x, y, side, **k): return {"x": R(x, y)[0], "y": R(x, y)[1], "side": side, **k}
+TORE = [tor(50, 8, "top", size="gross"), tor(40.5, 48, "bottom"), tor(59.5, 48, "bottom")]
+DIMS = dims(13, 87, 7, 51, "25 m", "18 m", rx=93)
 
 u = {"title": "Drei Wellen in Überzahl", "code": "UE-304", "kind": "Übungsform",
  "focuses": ["Torschuss", "Zusammenspiel", "Umschalten"], "age_groups": ["C-Jugend", "B-Jugend"],
@@ -68,4 +103,5 @@ u = {"title": "Drei Wellen in Überzahl", "code": "UE-304", "kind": "Übungsform
        mv("r7", [36.5, 30.5]), ps("b3", [37.1, 31.1], delay=0.3)),
      S("Konter aufs Minitor: Punkt", "Jetzt schaltet Team Rot um. Spieler sieben nimmt den Ball mit und geht an Spieler acht vorbei. Der kommt nicht mehr hin. Schuss ins linke Minitor, und das gibt einen Punkt für Team Rot.",
        dr("r7", "b3", [39, 41]), mv("n8", [33, 42], delay=0.3), mv("r10", [58, 38], delay=0.2), mv("n9", [44, 30], delay=0.4), ps("b3", [40.5, 47.7], after=True))], dims=DIMS)]}
+am_fuss(u)
 json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)
