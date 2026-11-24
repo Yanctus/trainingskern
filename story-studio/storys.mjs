@@ -4,7 +4,7 @@
 // Braucht das fertig gerenderte Video in out/ und in der Story-Datei den Block "storys":
 //   Marketing-Videos: { "art": "marketing", "zeit": "18:30", "bilder": [5, 5], "problem": [2 Zeilen], "problemSatz", "frage": [2 Zeilen], "antwort", "loesung": [2 Zeilen], "loesungSatz" }
 //   Übungs-Videos: { "name": "Name der Übung", "zeit": "18:30", "bilder": [16, 36], "frage": ["Wie startet", "dein Training?"], "antwort": "Ein Satz zum Antworten." }
-// "bilder": zwei Zeitpunkte im Video (Sekunden) für Bild 1 und Bild 3. Ergebnis: out/<name>-story-1.jpg bis -3.jpg
+// "bilder": zwei Zeitpunkte im Video (Sekunden) für Bild 1 und Bild 3. Ergebnis: out/<name>-story-1-morgen.jpg, -2-mittag.jpg, -3-abend.jpg
 import { createRequire } from "node:module";
 import { execFileSync } from "node:child_process";
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
@@ -14,9 +14,11 @@ const { chromium } = createRequire(import.meta.url)("playwright");
 const HIER = path.dirname(fileURLToPath(import.meta.url)), OUT = path.join(HIER, "out");
 const datei = process.argv[2];
 if (!datei) { console.error("Aufruf: node storys.mjs stories/<name>.json"); process.exit(1); }
-const story = JSON.parse(readFileSync(path.join(HIER, datei), "utf8")), kennung = path.basename(datei, ".json"), st = story.storys;
+const story = JSON.parse(readFileSync(path.join(HIER, datei), "utf8")), kennung = path.basename(datei, ".json");
+// Eine Datei mit "mittag": [ { "datei", "marke", "zeilen", "satz", "notiz" } ] erzeugt nur Mittags-Storys (Neon), eine je Eintrag
+const liste = story.mittag, st = story.storys || (liste ? { bilder: [13, 13] } : null);
 if (!st) { console.error(`In ${datei} fehlt der Block "storys".`); process.exit(1); }
-const video = path.join(OUT, kennung + ".mp4");
+const video = path.join(OUT, (story.video || kennung) + ".mp4");
 if (!existsSync(video)) { console.error("Erst das Video rendern: " + video); process.exit(1); }
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const bild = (t, n) => { const p = path.join(OUT, `${kennung}-story-bild${n}.jpg`); execFileSync("ffmpeg", ["-y", "-loglevel", "error", "-ss", String(t), "-i", video, "-frames:v", "1", "-q:v", "2", p]); return pathToFileURL(p).href; };
@@ -43,7 +45,8 @@ const textSeite = (tag, zeilen, sub, unten, notiz = "", klasse = "") => seite(`<
 const fuss = `<p class="fuss">trainingskern.de &nbsp;·&nbsp; Link in Bio</p>`;
 // "art": "marketing" (Videos, die Trainingskern selbst bewerben): erst das Problem, dann die Frage, dann die Lösung für den Abend.
 // Sonst (Übungs-Videos): Ankündigung mit Bild aus der Übung, Frage, "Jetzt neu".
-const seiten = st.art === "marketing" ? [
+const TEIL = ["1-morgen", "2-mittag", "3-abend"];
+const seiten = liste ? liste.map((m) => textSeite(m.marke || "Frage an dich", m.zeilen, m.satz, fuss, m.notiz ?? (/\?\s*$/.test(m.zeilen.join(" ")) ? "Schreib uns ↓" : "Heute Abend im Reel ↓"), "neon")) : st.art === "marketing" ? [
   textSeite("Kennst du das?", st.problem, st.problemSatz, fuss, st.problemNotiz || "Kommt dir bekannt vor?"),
   textSeite("Frage an dich", st.frage, st.antwort, fuss, st.frageNotiz || "Schreib uns ↓", "neon"),
   textSeite("Die Lösung", st.loesung, st.loesungSatz, `<div class="box">Heute ${esc(st.zeit || "18:30")}</div><p class="zeile">So geht’s: neues Reel auf dem Profil.</p>`, st.loesungNotiz || "Heute Abend zeigen wir’s."),
@@ -61,13 +64,15 @@ for (const [i, html] of seiten.entries()) {
   // Einpassen: Fläche und Frage dürfen nicht über den rechten Rand, die Zeilen darunter rücken nach
   const zuBreit = await page.evaluate(() => {
     const passe = (el, max) => { if (!el) return; let px = parseFloat(getComputedStyle(el).fontSize); while (el.scrollWidth > max && px > 40) { px -= 4; el.style.fontSize = px + "px"; } };
-    passe(document.querySelector(".box"), 880); passe(document.querySelector("h1"), 936);
+    const h1 = document.querySelector("h1"), zl = h1 ? h1.children.length : 0;
+    if (zl >= 4) h1.style.fontSize = (zl >= 5 ? 112 : 124) + "px"; // viele Zeilen: kleiner, damit darunter Platz bleibt
+    passe(document.querySelector(".box"), 880); passe(h1, 936);
     const h = document.querySelector("h1"), s = document.querySelector(".strich"), sub = document.querySelector(".sub");
-    if (h) { s.style.top = h.offsetTop + h.offsetHeight + 40 + "px"; sub.style.top = h.offsetTop + h.offsetHeight + 96 + "px"; const n = document.querySelector(".hand"); if (n) n.style.top = sub.offsetTop + sub.offsetHeight + 90 + "px"; }
+    if (h) { s.style.top = h.offsetTop + h.offsetHeight + 40 + "px"; sub.style.top = h.offsetTop + h.offsetHeight + 96 + "px"; const n = document.querySelector(".hand"); if (n) { n.style.top = sub.offsetTop + sub.offsetHeight + 90 + "px"; if (n.offsetTop + n.offsetHeight > 1500 || (document.querySelector(".box") && n.offsetTop + n.offsetHeight > 1420)) n.remove(); } }
     return [...document.querySelectorAll(".box,h1,.zeile,.sub,.tag,.hand")].filter((e) => e.getBoundingClientRect().right > 1010 || e.scrollWidth > e.clientWidth + 2).map((e) => e.textContent.slice(0, 40));
   });
   if (zuBreit.length) console.warn("ACHTUNG, Text zu lang in Bild " + (i + 1) + ": " + zuBreit.join(" | "));
-  const ziel = path.join(OUT, `${kennung}-story-${i + 1}.jpg`);
+  const ziel = path.join(OUT, liste ? liste[i].datei : `${kennung}-story-${TEIL[i]}.jpg`);
   await page.screenshot({ path: ziel, type: "jpeg", quality: 92 });
   execFileSync("rm", ["-f", tmp]);
   console.log(ziel);
