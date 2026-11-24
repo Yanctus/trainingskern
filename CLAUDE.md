@@ -28,7 +28,7 @@ Die App selbst liegt bei Base44 (App „Trainingskern“), dieses Repo enthält 
 - Fertige Muster in `story-studio/stories/`: `kampagne-01-kein-plan-comic.json` (Frage und Antwort), `kampagne-02-aufbau-rondo.json`
   (nur der Aufbau einer Übung, Szene `aufbau`), `kampagne-03` bis `-06` (Übung erklärt, nur Grundform), `kampagne-09` bis `-11`
   (Übung komplett: Grundform, Coaching-Punkt, Steigerung),
-  `kampagne-07-woanders.json`, `kampagne-08-was-neues.json` und `kampagne-14-alles-drin.json` (Marketing: was Trainingskern bietet,
+  `kampagne-07-woanders.json`, `kampagne-08-was-neues.json`, `kampagne-14-alles-drin.json` und `kampagne-17-plan-steht.json` (Marketing: was Trainingskern bietet,
   wo es woanders hakt, wie breit der Katalog ist). Je Runde: ein Marketing-Video und zwei Übungs-Videos, jedes Mal anders aufgebaut.
 - **Je Übung ein Video, und zwar das Erklärvideo mit Coaching-Punkt und Steigerung** (Format `kampagne-11-komplett-pressing-rondo.json`,
   gilt für alle künftigen Übungs-Videos): eines der Comic-Intros mit einem Satz, der hängen bleibt, dann drei Szenen `uebung` mit
@@ -37,8 +37,8 @@ Die App selbst liegt bei Base44 (App „Trainingskern“), dieses Repo enthält 
   Ein Aufbau-Video ist nur auf Wunsch dabei. Die kurzen Fassungen ohne Coaching-Punkt (`kampagne-03` bis `-06`) sind der alte Stand.
 - **Jedes Übungs-Video zeigt eine andere Übung** (Vorgabe vom 23.11.2026): nie eine, die schon ein Video hat, und quer durch den Katalog
   gemischt (Athletik, Koordination, Torhüter, Technik, Spielformen, verschiedene Altersklassen). Es geht darum, die Vielfalt zu zeigen.
-  Schon verfilmt: UE-001, UE-004, UE-005, UE-007, UE-008, UE-011, UE-207 (Athletik), UE-264 (Torwart).
-  Nur kurz angerissen in `kampagne-14-alles-drin.json`: UE-129, UE-265, UE-292 (dürfen noch ein eigenes Video bekommen).
+  Schon verfilmt: UE-001, UE-004, UE-005, UE-007, UE-008, UE-011, UE-207 (Athletik), UE-264 (Torwart), UE-009 (Umschalten), UE-031 (Dribbeln für die Kleinen).
+  Nur kurz angerissen in `kampagne-14-alles-drin.json`: UE-129, UE-265, UE-292 und in `kampagne-17-plan-steht.json` UE-015 (dürfen noch ein eigenes Video bekommen).
   Für das komplette Format Übungen wählen, die Coaching-Punkt und Steigerung haben (manche haben stattdessen zwei Coaching-Punkte).
 - Für erklärte Übungen die vorhandenen Aufnahmen der Seite nehmen (kosten kein ElevenLabs-Kontingent). Der Aufbau hat auf der Seite keine
   Aufnahmen und wird neu eingesprochen.
@@ -110,7 +110,8 @@ Die Mittags-Storys für Tag 1 bis 11 liegen neu im Neon-Stil in „Storys“ (Qu
 **Gehört zu jedem Video dazu, ohne dass der Nutzer danach fragt:** In die Story-Datei kommt der Block `"storys"` (Name, Uhrzeit, zwei
 Zeitpunkte im Video, Frage in zwei Zeilen, ein Satz zum Antworten), nach dem Rendern läuft `node storys.mjs stories/<name>.json`.
 Das erzeugt die drei Bilder in `out/`. Ein Übersichtsbild der drei ansehen, dann in den Drive-Ordner „Storys“ laden (das Video kommt nach „Übungen“ oder „Vermarktung“).
-Die Frage passt zum Thema des Videos und ist jedes Mal eine andere. Für die Videos bis kampagne-11 gibt es noch keine Story-Bilder.
+Die Frage passt zum Thema des Videos und ist jedes Mal eine andere. Die Zeitpunkte in `bilder` so wählen, dass kein Übergang im Bild ist,
+die Beschriftung des Schritts höchstens zwei Zeilen hat und (bei Marketing) das erste Bild aus einer dunklen Szene mit Marke oben links stammt. Für die Videos bis kampagne-11 gibt es noch keine Story-Bilder.
 
 ## Ablage der fertigen Videos (Vorgabe vom 23.11.2026)
 

@@ -1,0 +1,107 @@
+{
+  "titel": "Marketing: Dein Trainingsplan steht schon",
+  "intro": false,
+  "musik": "ton/musik-elektro.mp3",
+  "musikLaut": 0.15,
+  "geraeusche": 0.6,
+  "uebergang": "raster",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "comic-sprechblase",
+      "dach": "Kennst du das?",
+      "text": "Training planen *bis Mitternacht?*",
+      "dauer": 3.4,
+      "sprecher": "Training planen bis Mitternacht?",
+      "sprecherAb": 0.7
+    },
+    {
+      "typ": "hook",
+      "ton": "neon",
+      "zeilen": [
+        "Dein Plan",
+        "*steht schon.*"
+      ],
+      "dauer": 2.3,
+      "takt": 0.3,
+      "uebergang": "knall",
+      "sprecher": "Bei Trainingskern steht dein Plan schon."
+    },
+    {
+      "typ": "app",
+      "seite": "/trainingsplaene",
+      "dauer": 5.0,
+      "scroll": [
+        0,
+        760
+      ],
+      "halt": 1.6,
+      "verstecke": ".aw-trikot small",
+      "notiz": "Jugend wählen ↓",
+      "stempel": "Fertig geplant",
+      "uebergang": "pinsel",
+      "sprecher": "Du wählst deine Jugend, und der Plan ist da.",
+      "sprecherAb": 0.5
+    },
+    {
+      "typ": "punkte",
+      "ton": "dunkel",
+      "max": 4,
+      "titel": [
+        "So ist jedes",
+        "Training gebaut"
+      ],
+      "punkte": [
+        "Aktivierung",
+        "Spielen",
+        "Üben",
+        "Spielen"
+      ],
+      "uebergang": "panel",
+      "sprecher": "Aktivieren, spielen, üben, spielen: Jede Minute ist geplant.",
+      "sprecherAb": 0.6
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-015",
+      "schritte": 3,
+      "tempo": 1.8,
+      "dach": "Jede Übung im Plan",
+      "uebergang": "raster",
+      "sprecher": "Und jede Übung darin ist animiert und von mir auf Deutsch erklärt.",
+      "sprecherAb": 0.9
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "blende",
+      "sprecher": "Trainingskern. Jetzt ausprobieren auf trainingskern Punkt D E.",
+      "sprecherAb": 0.4,
+      "dauer": 4.2
+    }
+  ],
+  "storys": {
+    "art": "marketing",
+    "zeit": "18:30",
+    "bilder": [
+      14,
+      14
+    ],
+    "problem": [
+      "Sonntagabend.",
+      "Und kein Plan?"
+    ],
+    "problemSatz": "Zettel, alte Hefte, drei offene Tabs. Und morgen ist Training.",
+    "problemNotiz": "Schon wieder?",
+    "frage": [
+      "Wie lange planst",
+      "du ein Training?"
+    ],
+    "antwort": "Zehn Minuten oder zwei Stunden? Antworte per Nachricht.",
+    "loesung": [
+      "Dein Plan",
+      "steht schon."
+    ],
+    "loesungSatz": "Jugend wählen, Plan öffnen: Aufbau, Reihenfolge und Minuten sind fertig."
+  }
+}

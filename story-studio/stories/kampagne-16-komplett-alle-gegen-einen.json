@@ -1,0 +1,64 @@
+{
+  "titel": "Übung komplett: Durch die Mitte dribbeln, alle gegen einen",
+  "intro": false,
+  "musik": "ton/musik-elektro-4.mp3",
+  "musikLaut": 0.14,
+  "geraeusche": 0.6,
+  "uebergang": "pinsel",
+  "szenen": [
+    {
+      "typ": "hook",
+      "film": "comic-karte",
+      "dauer": 3.6,
+      "sprecher": "Alle dribbeln – einer jagt!",
+      "sprecherAb": 1.1,
+      "dach": "Für die Kleinen",
+      "zeilen": [
+        "Alle",
+        "dribbeln.",
+        "*Einer jagt!*"
+      ]
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-031",
+      "stimme": true,
+      "dach": "So läuft’s"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-031",
+      "stimme": true,
+      "fassung": 1,
+      "uebergang": "knall"
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-031",
+      "stimme": true,
+      "fassung": 2,
+      "uebergang": "raster"
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "blende",
+      "sprecher": "Trainingskern. Jetzt ausprobieren auf trainingskern Punkt D E.",
+      "sprecherAb": 0.4,
+      "dauer": 4.2
+    }
+  ],
+  "storys": {
+    "name": "Alle gegen einen",
+    "zeit": "18:30",
+    "bilder": [
+      8,
+      38
+    ],
+    "frage": [
+      "Dribbeln üben:",
+      "Slalom oder Spiel?"
+    ],
+    "antwort": "Was macht deinen Kleinen mehr Spaß? Antworte per Nachricht."
+  }
+}
