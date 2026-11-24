@@ -178,7 +178,7 @@ u = {"title": "Aufbau im 4-2-3-1", "code": "TA-002", "kind": "Taktik",
  "organisation_show": ORG,
  "coaching_points": ["Sechser versetzt, nie auf einer Linie", "Zehner, such die Lücke zwischen den Linien", "Einer kommt, einer geht", "Eine Seite zu? Über die Doppelsechs verlagern"],
  "materials": ["Großfeld mit zwei Toren", "Leibchen in zwei Farben", "Bälle"],
- "access": "abo", "hidden": False, "wartet_auf_ton": False,  # eingesprochen (24.11.2026), sichtbar
+ "access": "frei", "hidden": False, "wartet_auf_ton": False,  # eingesprochen (24.11.2026), sichtbar
  "say_intro": "Aufbau im Vier-zwei-drei-eins. Heute schauen wir uns das System an. Was macht die Doppelsechs? Wo steht der Zehner? Und wie kommen wir gegen ein Pressing nach vorn? Schauen wir's uns an.",
  "board": {"massstab": "gross", "lines": LINES, "goals": TORE, "cones": [], "players": Lage(GRUND2).spieler(),
   "balls": [B("b1", 16.6, 55.9)] + ERSATZ, "dims": DIMS, "steps": k1},

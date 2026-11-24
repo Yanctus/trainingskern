@@ -178,6 +178,9 @@ def regeln(u):
     # Nur 5 Übungen sind frei mit Konto, UE-001 offen; alles andere ist Pro (Inhaber, 22.11.2026)
     FREI = {"UE-004", "UE-005", "UE-007", "UE-008", "UE-011"}
     soll = "offen" if code == "UE-001" else "frei" if code in FREI else "abo"
+    # Taktik-Erklärungen sind frei mit Konto (Inhaber, 24.11.2026)
+    if u.get("kind") == "Taktik":
+        soll = "frei"
     # Neue Einheiten bleiben ausgeblendet, bis sie eingesprochen sind: hidden true ist nur zusammen mit wartet_auf_ton true erlaubt
     if u.get("access") != soll or not (u.get("hidden") is False or (u.get("hidden") is True and u.get("wartet_auf_ton") is True)):
         out.append(f"{code}: access muss '{soll}' sein (neue Einheiten sind Pro, nur 5 sind frei) und hidden false")

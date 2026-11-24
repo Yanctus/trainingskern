@@ -235,7 +235,7 @@ u = {"title": "Aufbau im 4-3-3 über den Torwart", "code": "TA-001", "kind": "Ta
  "organisation_show": ORG,
  "coaching_points": ["Feld groß machen: breit und tief stehen", "Einer kommt, einer geht", "Immer zwei Anspielstationen anbieten", "Eine Seite zu? Über den Torwart verlagern"],
  "materials": ["Großfeld mit zwei Toren", "Leibchen in zwei Farben", "Bälle"],
- "access": "abo", "hidden": True, "wartet_auf_ton": True,
+ "access": "frei", "hidden": False, "wartet_auf_ton": False,  # eingesprochen, sichtbar
  "say_intro": "Aufbau im Vier-drei-drei über den Torwart. Heute mal keine Übung, sondern das System dahinter. Wer steht wo? Wie bewegen sich alle mit dem Ball? Und welche Wege gibt's nach vorn? Schauen wir's uns an.",
  "board": {"massstab": "gross", "lines": LINES, "goals": TORE, "cones": [], "players": Lage(GRUND).spieler(),
   "balls": [B("b1", 16.6, 55.9)] + ERSATZ, "dims": DIMS, "steps": k1},

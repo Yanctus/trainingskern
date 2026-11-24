@@ -1,0 +1,886 @@
+{
+ "title": "Zahlen hören, Wettlauf zum Ball",
+ "code": "UE-335",
+ "kind": "Übungsform",
+ "focuses": [
+  "Schnelligkeit",
+  "1 gegen 1",
+  "Torschuss"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "tags": [
+  "Vorbereitung"
+ ],
+ "duration_minutes": 15,
+ "players_min": 9,
+ "players_max": 11,
+ "field_size": "25 x 30 m",
+ "description": "Der Trainer ruft eine Zahlenfolge, zum Beispiel zwei, vier, eins. Je ein Spieler aus jedem Team sprintet los und tippt die Hütchen in genau dieser Reihenfolge mit der Hand an. Danach geht es im Wettlauf zum Ball in der Mitte. Wer zuerst dran ist, schließt aufs Tor ab, der andere wird zum Verteidiger.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 25 mal 30 Metern mit großem Tor und Torwart. Für jedes Team eine Reihe mit vier Hütchen, von eins bis vier gezählt, dazu ein Starthütchen und eine Stange an der Seite. In der Mitte vor dem Tor liegt ein Ball.",
+  "Verteilen: Zwei Teams zu viert. Je einer steht am Starthütchen, die anderen warten neben dem Feld. Der Trainer steht oben am Rand mit Bällen.",
+  "Ablauf: Der Trainer ruft eine Folge aus Zahlen, manchmal auch die Stange. Beide sprinten los und tippen die Hütchen in dieser Reihenfolge mit der Hand an. Dann Wettlauf zum Ball. Der Erste greift an, der Zweite verteidigt.",
+  "Wertung und Wechsel: Jeder Treffer gibt einen Punkt für das Team. Erobert der Verteidiger den Ball, darf er selbst aufs Tor schießen. Danach legt der Trainer einen neuen Ball in die Mitte, und die Nächsten sind dran."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Genau hinhören, dann sofort los",
+  "Hand ans Hütchen, kurz abbremsen und explosiv wieder an",
+  "Als Erster am Ball den Körper zwischen Gegner und Ball",
+  "Mit zwei Kontakten abschließen, flach ins Eck"
+ ],
+ "materials": [
+  "1 großes Tor",
+  "10 Hütchen",
+  "2 Stangen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Zahlen hören, Wettlauf zum Ball. Der Trainer ruft eine Zahlenfolge, zwei Spieler sprinten die Hütchen ab, und wer zuerst am Ball ist, schließt ab.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 29,
+    "y": 5,
+    "w": 42,
+    "h": 50
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "gross"
+   }
+  ],
+  "cones": [
+   {
+    "x": 41.5,
+    "y": 45.5,
+    "color": "orange"
+   },
+   {
+    "x": 41.5,
+    "y": 39.5,
+    "color": "orange"
+   },
+   {
+    "x": 41.5,
+    "y": 33,
+    "color": "orange"
+   },
+   {
+    "x": 41.5,
+    "y": 27.5,
+    "color": "orange"
+   },
+   {
+    "x": 58.5,
+    "y": 45.5,
+    "color": "orange"
+   },
+   {
+    "x": 58.5,
+    "y": 39.5,
+    "color": "orange"
+   },
+   {
+    "x": 58.5,
+    "y": 33,
+    "color": "orange"
+   },
+   {
+    "x": 58.5,
+    "y": 27.5,
+    "color": "orange"
+   },
+   {
+    "x": 42,
+    "y": 55,
+    "color": "orange"
+   },
+   {
+    "x": 58,
+    "y": 55,
+    "color": "orange"
+   },
+   {
+    "x": 31.5,
+    "y": 21,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 68.5,
+    "y": 21,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 44.5,
+    "y": 52.5,
+    "label": "10"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 55.5,
+    "y": 52.5,
+    "label": "6"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 12,
+    "y": 24,
+    "label": "9"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 12,
+    "y": 40,
+    "label": "4"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 12,
+    "y": 55.5,
+    "label": "7"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 88,
+    "y": 24,
+    "label": "8"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 88,
+    "y": 40,
+    "label": "5"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 88,
+    "y": 55.5,
+    "label": "11"
+   },
+   {
+    "id": "k",
+    "team": "t",
+    "x": 50,
+    "y": 8.5,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 21,
+    "y": 8,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 50,
+    "y": 21
+   },
+   {
+    "id": "s1",
+    "x": 24.5,
+    "y": 9
+   },
+   {
+    "id": "s2",
+    "x": 24.5,
+    "y": 11.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Der Trainer ruft: zwei, vier, eins",
+    "say": "Der Trainer ruft: zwei, vier, eins. Spieler zehn und Spieler sechs sprinten gleichzeitig los. Zuerst zum Hütchen zwei, und die Hand geht ans Hütchen.",
+    "moves": [
+     {
+      "who": "n10",
+      "to": [
+       44.5,
+       39.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r6",
+      "to": [
+       55.5,
+       39.5
+      ],
+      "type": "lauf"
+     }
+    ]
+   },
+   {
+    "label": "Hoch zur Vier, runter zur Eins",
+    "say": "Weiter hoch zur Vier, abbremsen, antippen. Dann wieder runter zur Eins. Spieler sechs ist einen Schritt langsamer.",
+    "moves": [
+     {
+      "who": "n10",
+      "to": [
+       44.5,
+       27.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n10",
+      "to": [
+       45.5,
+       45.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r6",
+      "to": [
+       55.5,
+       27.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "r6",
+      "to": [
+       54.5,
+       45.5
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Wettlauf zum Ball",
+    "say": "Jetzt geht es im Sprint zum Ball. Spieler zehn ist als Erster dran, Spieler sechs kommt von der Seite und wird zum Verteidiger.",
+    "moves": [
+     {
+      "who": "n10",
+      "to": [
+       49.4,
+       20.4
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r6",
+      "to": [
+       54,
+       25.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Zwei Kontakte: Punkt",
+    "say": "Spieler zehn schirmt den Ball ab, legt ihn sich mit dem ersten Kontakt vor und schießt mit dem zweiten flach ins Eck. Das gibt einen Punkt für Team Neon. Jetzt sind Spieler neun und Spieler acht dran.",
+    "moves": [
+     {
+      "who": "n10",
+      "to": [
+       48,
+       13
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "r6",
+      "to": [
+       51.5,
+       16.5
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "b1",
+      "to": [
+       45.5,
+       5.3
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 29,
+    "y1": 58.6,
+    "x2": 71,
+    "y2": 58.6,
+    "text": "25 m"
+   },
+   {
+    "x1": 79,
+    "y1": 5,
+    "x2": 79,
+    "y2": 55,
+    "text": "30 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Körper dazwischen.",
+   "title": "Körper dazwischen",
+   "text": "Wer zuerst am Ball ist, stellt sofort den Körper zwischen Gegner und Ball. So läuft der Verteidiger in ihn hinein und kommt nicht vorbei. Erst wenn der Ball sicher ist, geht es zum Abschluss.",
+   "board": {
+    "players": [
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 44.5,
+      "y": 52.5,
+      "label": "10"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 55.5,
+      "y": 52.5,
+      "label": "6"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 12,
+      "y": 24,
+      "label": "9"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 12,
+      "y": 40,
+      "label": "4"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 12,
+      "y": 55.5,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 88,
+      "y": 24,
+      "label": "8"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 88,
+      "y": 40,
+      "label": "5"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 88,
+      "y": 55.5,
+      "label": "11"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50,
+      "y": 8.5,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 21,
+      "y": 8,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50,
+      "y": 21
+     },
+     {
+      "id": "s1",
+      "x": 24.5,
+      "y": 9
+     },
+     {
+      "id": "s2",
+      "x": 24.5,
+      "y": 11.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zwei, eins, drei",
+      "say": "Diesmal ruft der Trainer: zwei, eins, drei. Beide tippen die Hütchen ab, Spieler zehn ist knapp vorn.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         44.5,
+         39.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n10",
+        "to": [
+         45.5,
+         45.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n10",
+        "to": [
+         44.5,
+         33
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r6",
+        "to": [
+         55.5,
+         39.5
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "r6",
+        "to": [
+         54.5,
+         45.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r6",
+        "to": [
+         55.5,
+         33
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Erster am Ball, Körper rein",
+      "say": "Spieler zehn ist zuerst am Ball. Sofort schiebt er den Körper in den Laufweg von Spieler sechs. Der kommt nicht vorbei.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         49.4,
+         20.4
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r6",
+        "to": [
+         54,
+         24
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "n10",
+        "to": [
+         51,
+         21.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "r6",
+        "to": [
+         55,
+         22.5
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Abschluss: Punkt",
+      "say": "Der Ball ist sicher. Spieler zehn nimmt ihn mit und schießt mit dem zweiten Kontakt ins lange Eck. Das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         48.5,
+         13
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "r6",
+        "to": [
+         53,
+         16
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "b1",
+        "to": [
+         45.5,
+         5.3
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 29,
+      "y1": 58.6,
+      "x2": 71,
+      "y2": 58.6,
+      "text": "25 m"
+     },
+     {
+      "x1": 79,
+      "y1": 5,
+      "x2": 79,
+      "y2": 55,
+      "text": "30 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Ball erobert, sofort abschließen.",
+   "title": "Erobern, dann abschließen",
+   "text": "Der Zweite gibt nicht auf. Er setzt den Angreifer sofort unter Druck. Springt der Ball weg und er erobert ihn, wird er selbst zum Stürmer und schließt sofort ab.",
+   "board": {
+    "players": [
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 44.5,
+      "y": 52.5,
+      "label": "10"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 55.5,
+      "y": 52.5,
+      "label": "6"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 12,
+      "y": 24,
+      "label": "9"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 12,
+      "y": 40,
+      "label": "4"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 12,
+      "y": 55.5,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 88,
+      "y": 24,
+      "label": "8"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 88,
+      "y": 40,
+      "label": "5"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 88,
+      "y": 55.5,
+      "label": "11"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 50,
+      "y": 8.5,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 21,
+      "y": 8,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50,
+      "y": 21
+     },
+     {
+      "id": "s1",
+      "x": 24.5,
+      "y": 9
+     },
+     {
+      "id": "s2",
+      "x": 24.5,
+      "y": 11.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Vier, zwei, Stange",
+      "say": "Der Trainer ruft: vier, zwei, Stange. Beide tippen die Hütchen an und laufen dann außen zu ihrer Stange.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         44.5,
+         27.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n10",
+        "to": [
+         45.5,
+         39.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n10",
+        "to": [
+         44.5,
+         24
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n10",
+        "to": [
+         33.5,
+         21.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r6",
+        "to": [
+         55.5,
+         27.5
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       },
+       {
+        "who": "r6",
+        "to": [
+         54.5,
+         39.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r6",
+        "to": [
+         55.5,
+         24
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r6",
+        "to": [
+         66.5,
+         21.5
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Wettlauf, Spieler zehn vorn",
+      "say": "Von der Stange geht es in die Mitte. Spieler zehn ist zuerst am Ball, Spieler sechs geht sofort drauf.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         49.4,
+         20.4
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r6",
+        "to": [
+         55,
+         21.5
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Ball erobert, er wird Stürmer",
+      "say": "Spieler zehn legt sich den Ball zu weit vor. Spieler sechs geht dazwischen, erobert den Ball und zieht sofort Richtung Tor davon.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         48.5,
+         16
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "r6",
+        "to": [
+         51,
+         16
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "r6",
+        "to": [
+         53,
+         11.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "n10",
+        "to": [
+         49,
+         13.5
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Abschluss: Punkt",
+      "say": "Spieler sechs schießt flach ins Eck, und das gibt einen Punkt für Team Rot. Jetzt sind Spieler neun und Spieler acht dran.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         55,
+         5.3
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 29,
+      "y1": 58.6,
+      "x2": 71,
+      "y2": 58.6,
+      "text": "25 m"
+     },
+     {
+      "x1": 79,
+      "y1": 5,
+      "x2": 79,
+      "y2": 55,
+      "text": "30 m"
+     }
+    ]
+   }
+  }
+ ]
+}

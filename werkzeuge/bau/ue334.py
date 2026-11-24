@@ -10,7 +10,7 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # Fassung 2 = PDF Progression (Laufparcours links neben dem Feld: Leiter und Stangenslalom; oben wird jetzt zurückgepasst).
 # Sichtkegel: Text "Stay open, scan early", Ton "identifying and exploiting space ahead"; im Video ist nur der Raum für den ersten
 # Kontakt eingezeichnet. Richtung aus dem Sinn: Spieler neun schaut vor der Annahme über die Schulter zum Verfolger (Spieler fünf),
-# nach der Annahme schwenkt derselbe Kegel zum Passziel (Spieler vier), dazu Drehpfeil (bl mit von, drehen).
+# nach der Annahme schwenkt derselbe Kegel zum Passziel (Spieler vier), dazu Drehpfeil (bl mit von, drehen). Kegel auf ca. 20 gekürzt.
 T = P("T", "c", 82, 55.3, "T")
 ERSATZ = [B("s1", 85.5, 55.8), B("s2", 88, 55.8)]
 POS = {"n5": (47.5, 51), "r9": (23.5, 34), "n4": (74.5, 23), "r10": (49, 6.5), "n7": (59.5, 2.8), "r11": (56, 55.3), "n8": (64.5, 55.3)}
@@ -58,9 +58,9 @@ u = {"title": "Passen, nachsetzen, fangen", "code": "UE-334", "kind": "Übungsfo
     "Wer angespielt wird, schaut vorher über die Schulter, wo der Verfolger kommt. Er nimmt den Ball auf dem hinteren Fuß an, offen zum Feld. Der erste Kontakt geht nach vorn, weg vom Verfolger. So wächst der Abstand, und der nächste Pass kommt ohne Druck.",
     sp(), [B("b1", *fuss(47.5, 51))] + ERSATZ,
     [S("Erst über die Schulter schauen", "Bevor der Ball kommt, schaut Spieler neun über die Schulter. Wo ist Spieler fünf? Dann kommt der Pass, und Spieler fünf sprintet los.",
-       bl("r9", [47.5, 51]), ps("b1", fuss(23.5, 34), after=True), mv("n5", [29, 40], delay=1.2)),
+       bl("r9", [39.8, 45.6]), ps("b1", fuss(23.5, 34), after=True), mv("n5", [29, 40], delay=1.2)),
      S("Annehmen, aufdrehen, weg vom Druck", "Spieler neun nimmt den Ball auf dem hinteren Fuß an und dreht auf. Der erste Kontakt geht nach vorn, weg von Spieler fünf. Jetzt hat er Luft und spielt sauber zu Spieler vier.",
-       bl("r9", [74.5, 23], von=[47.5, 51], dauer=1.3), drehen("r9", [74.5, 23], gegen=True, delay=0.4),
+       bl("r9", [45, 29.4], von=[39.8, 45.6], dauer=1.3), drehen("r9", [74.5, 23], gegen=True, delay=0.4),
        dr("r9", "b1", [27.5, 28.5], after=True), mv("n5", [25, 33.5], delay=0.8), ps("b1", fuss(74.5, 23), after=True))], dims=DIMS),
   V("Steigerung", "Und jetzt die Steigerung: Nach dem letzten Pass geht es durch den Laufparcours.", "Mit Laufparcours",
     "Links neben dem Feld liegen eine Leiter und vier Stangen. Oben dribbelt keiner mehr nach unten. Spieler zehn spielt den Ball zurück zum Start und läuft dann durch die Leiter und im Slalom um die Stangen zurück. Gleichzeitig geht es im Feld schon mit dem nächsten Ball weiter.",

@@ -57,7 +57,7 @@ Weitere Regeln, die immer gelten: `werkzeuge/anleitung/AUFTRAG.md` (Schema, Spre
 `age_groups: ["D-Jugend", "C-Jugend", "B-Jugend"]`, `altersbereiche: ["U12-U14", "U15-U17"]`, `duration_minutes` 4-6,
 `players_min/max: 22`, `field_size: "65 x 100 m"`, `description` (3-4 Sätze), `organisation` (genau 4 „Stichwort: Satz“, z. B.
 Grundordnung/Hinten/Mittelfeld/Bewegung), `organisation_show: ORG`, `coaching_points` (genau 4, kurz, wie zugerufen),
-`materials` (z. B. Großfeld mit zwei Toren, Leibchen in zwei Farben, Bälle), `access: "abo"`, `hidden: True`,
+`materials` (z. B. Großfeld mit zwei Toren, Leibchen in zwei Farben, Bälle), `access: "frei"` (Taktik ist frei mit Konto, Inhaber 24.11.2026), `hidden: True`,
 `wartet_auf_ton: True`, `say_intro`, `board` (Kapitel 1), `versions` (Kapitel 2-4).
 
 ## Sprechstil (so klingt es, als hätte ein Mensch es eingesprochen)
