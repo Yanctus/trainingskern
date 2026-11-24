@@ -162,7 +162,7 @@ def regeln(u):
     if not set(u.get("age_groups") or []) <= AGES:
         out.append(f"{code}: unbekannte age_groups")
     # Bereich des Trainingsplans, aus dem die Übung stammt (bis UE-141: U9-U11; Plan U12-U14 ab 22.11.2026)
-    if not u.get("altersbereiche") or not set(u["altersbereiche"]) <= {"U9-U11", "U12-U14"}:
+    if not u.get("altersbereiche") or not set(u["altersbereiche"]) <= {"U9-U11", "U12-U14", "U15-U17"}:
         out.append(f"{code}: altersbereiche fehlt (U9-U11 oder U12-U14, je nach Plan, aus dem die Übung stammt)")
     if not 10 <= (u.get("duration_minutes") or 0) <= 20:
         out.append(f"{code}: duration_minutes 10-20")
