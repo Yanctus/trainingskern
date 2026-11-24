@@ -28,6 +28,11 @@ POS = {"k1": (12.5, 27.5), "n5": (21, 10), "n4": (22, 27.5), "n6": (21, 45), "n1
 def sp(ohne=(), **k):
     d = dict(POS); d.update(k)
     return [P(i, {"n": "a", "r": "b", "k": "t"}[i[0]], x, y, "TW" if i[0] == "k" else i[1:]) for i, (x, y) in d.items() if i not in ohne] + [T]
+def kurz(a, b, L=22):
+    # Blickkegel nicht zu lang: Punkt in derselben Richtung, höchstens L Einheiten vom Spieler entfernt
+    import math
+    d = math.dist(a, b)
+    return list(b) if d <= L else [round(a[0] + (b[0] - a[0]) * L / d, 1), round(a[1] + (b[1] - a[1]) * L / d, 1)]
 def fuss(p): return [round(p[0] + 0.6, 1), round(p[1] + 0.6, 1)]
 def F(i): return fuss(POS[i])
 FX0, FX1, FY0, FY1 = 9, 89, 4, 51
@@ -60,7 +65,7 @@ u = {"title": "Welle mit vier gegen zwei", "code": "UE-390", "kind": "Spielform"
    S("Vier gegen zwei in der Mitte", "In der Mitte sind es vier gegen zwei. Spieler achtzehn läuft Spieler acht an. Spieler zehn bietet sich in der Lücke an und schaut zum Ball, und Spieler acht spielt ihn an.",
      mv("r18", [55, 38.5]), mv("n10", [45, 26], delay=0.2), bl("n10", POS["n8"], after=True), ps("b1", [45.6, 26.6], after=True)),
    S("Aufdrehen, steil nach vorn", "Spieler zehn dreht auf. Außen ist Spieler sieben schon losgelaufen, hinter die beiden aus der Mitte. Der Pass kommt flach in seinen Lauf. Spieler elf und Spieler zehn rücken nach.",
-     bl("n10", [67, 42], von=POS["n8"], dauer=1.3), drehen("n10", [67, 42], delay=0.4), mv("n7", [67, 42], delay=0.3),
+     bl("n10", kurz((45, 26), (67, 42)), von=POS["n8"], dauer=1.3), drehen("n10", [67, 42], delay=0.4), mv("n7", [67, 42], delay=0.3),
      ps("b1", [67.6, 42.6], after=True), mv("n10", [64, 24], after=True), mv("n11", [67, 11], delay=0.6)),
    S("Drei gegen drei vorn: Punkt", "Vorn spielen jetzt drei gegen drei. Spieler sieben zieht nach innen und schießt flach ins kurze Eck, und das gibt einen Punkt für Team Neon.",
      dr("n7", "b1", [73, 36]), ps("b1", [89, 33.5], after=True)),
@@ -74,9 +79,9 @@ u = {"title": "Welle mit vier gegen zwei", "code": "UE-390", "kind": "Spielform"
     [S("Spieler vierzehn presst vorn", "Spieler vierzehn läuft aus der Mitte nach vorn und stellt Spieler vier zu. Also spielt der Torwart zu Spieler fünf.",
        mv("r14", [29.5, 22]), ps("b1", F("n5"), delay=0.6)),
      S("Ein Verteidiger rückt raus", "Gleichzeitig rückt Spieler sechzehn aus der Abwehr in die Mitte und presst Spieler zehn. Spieler zehn schaut zum Ball, und Spieler fünf spielt ihn trotzdem an.",
-       mv("r16", [50, 19]), bl("n10", POS["n5"], delay=0.3), ps("b1", F("n10"), after=True)),
+       mv("r16", [50, 19]), bl("n10", kurz(POS["n10"], POS["n5"]), delay=0.3), ps("b1", F("n10"), after=True)),
      S("Hinten ist jetzt Platz", "Hinten fehlt jetzt ein Verteidiger. Spieler zehn dreht auf, Spieler acht startet in die Lücke, und genau dahin kommt der Pass.",
-       mv("n8", [70, 27], delay=0.3), bl("n10", [70, 27], von=POS["n5"], dauer=1.3), drehen("n10", [70, 27], delay=0.4),
+       mv("n8", [70, 27], delay=0.3), bl("n10", kurz(POS["n10"], (70, 27)), von=kurz(POS["n10"], POS["n5"]), dauer=1.3), drehen("n10", [70, 27], delay=0.4),
        ps("b1", [70.6, 27.6], after=True)),
      S("Drei gegen zwei: Punkt", "Spieler elf und Spieler sieben rücken nach, vorn sind es drei gegen zwei. Spieler acht schießt flach ins Eck, und das gibt einen Punkt für Team Neon.",
        mv("n11", [68, 12]), mv("n7", [68, 43]), ps("b1", [89, 22], delay=0.6))],

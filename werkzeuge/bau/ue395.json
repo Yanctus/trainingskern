@@ -1,0 +1,699 @@
+{
+ "title": "Positionsrondo zum Minitor",
+ "code": "UE-395",
+ "kind": "Spielform",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel",
+  "Umschalten"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 10,
+ "players_max": 20,
+ "field_size": "25 x 25 m",
+ "description": "Ein Positionsrondo auf einem Feld mit vier Vierteln. Team Neon hat drei Spieler außen an den Linien, zwei im Zentrum und eine Spitze vor dem Minitor, Team Rot hat in jedem Viertel einen Verteidiger. Team Neon lässt den Ball schnell laufen, spielt durch die Linien auf die Spitze und schließt ab. Erobert Team Rot den Ball, braucht es zehn Pässe, bevor es selbst aufs Minitor darf.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 25 mal 25 Metern, mit gestrichelten Linien in vier gleich große Viertel geteilt. In der Mitte einer Linie steht ein Minitor.",
+  "Verteilen: Team Neon mit sechs Spielern. Drei stehen außen an den Linien, zwei im Zentrum auf der Mittellinie, die Spitze vor dem Minitor. Von Team Rot steht in jedem Viertel ein Verteidiger. Der Trainer steht mit Bällen an der Seite. Bei zwanzig Spielern zwei Felder nebeneinander.",
+  "Ablauf: Team Neon spielt mit ein oder zwei Kontakten und sucht den Pass durch die Linien auf die Spitze. Die Spitze dreht auf und schließt ab. Nach jedem Treffer spielt der Trainer sofort den nächsten Ball ins Zentrum.",
+  "Wertung und Wechsel: Jeder Treffer gibt einen Punkt für Team Neon. Erobert Team Rot den Ball, spielt es vier gegen drei gegen die Spieler im Feld und darf nach zehn Pässen aufs Minitor, das gibt einen Punkt für Team Rot. Nach einigen Minuten werden die Verteidiger getauscht."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Ein, zwei Kontakte, dann ist der Druck weg",
+  "Die zwei im Zentrum suchen die Außen",
+  "Durch die Linien auf die Spitze",
+  "Nach dem Ballgewinn breit und tief"
+ ],
+ "materials": [
+  "1 Minitor",
+  "Hütchen für Feld und Viertel",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Positionsrondo zum Minitor. Sechs gegen vier in vier Vierteln. Team Neon spielt durch die Linien auf die Spitze, und Team Rot braucht nach dem Ballgewinn zehn Pässe.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 26,
+    "y": 7,
+    "w": 48,
+    "h": 44
+   },
+   {
+    "type": "line",
+    "x1": 50,
+    "y1": 7,
+    "x2": 50,
+    "y2": 51,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 26,
+    "y1": 29,
+    "x2": 74,
+    "y2": 29,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 7,
+    "side": "top"
+   }
+  ],
+  "cones": [],
+  "players": [
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 49,
+    "y": 53.5,
+    "label": "6"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 77,
+    "y": 30,
+    "label": "2"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 22,
+    "y": 30,
+    "label": "8"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 58,
+    "y": 29,
+    "label": "4"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 40,
+    "y": 29,
+    "label": "10"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 49,
+    "y": 13,
+    "label": "9"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 31,
+    "y": 17,
+    "label": "7"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 31,
+    "y": 39,
+    "label": "5"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 67,
+    "y": 17,
+    "label": "3"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 67,
+    "y": 39,
+    "label": "11"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 8,
+    "y": 44,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 49.6,
+    "y": 54.1
+   },
+   {
+    "id": "b0",
+    "x": 8.6,
+    "y": 44.6
+   },
+   {
+    "id": "s1",
+    "x": 11.5,
+    "y": 47
+   },
+   {
+    "id": "s2",
+    "x": 5,
+    "y": 47
+   }
+  ],
+  "steps": [
+   {
+    "label": "Ins Zentrum zu Spieler vier",
+    "say": "Spieler sechs hat den Ball hinten an der Linie. Flach ins Zentrum zu Spieler vier. Spieler elf schiebt in seinem Viertel zum Ball, raus darf er nicht.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       58.6,
+       29.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r11",
+      "to": [
+       63,
+       35
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Raus zu Spieler zwei",
+    "say": "Spieler vier legt mit einem Kontakt nach außen auf Spieler zwei. Die Verteidiger müssen wieder rüber.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       77.6,
+       30.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r11",
+      "to": [
+       67,
+       39
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Durch die Linien auf die Spitze",
+    "say": "Zwischen Spieler drei und Spieler elf ist eine Lücke. Spieler zwei spielt flach durch, genau auf Spieler neun vor dem Minitor.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       49.6,
+       13.6
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Aufdrehen, Abschluss: Punkt",
+    "say": "Spieler neun dreht mit dem ersten Kontakt auf und schießt ins Minitor, und das gibt einen Punkt für Team Neon. Sofort spielt der Trainer den nächsten Ball rein zu Spieler zehn.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       50,
+       7
+      ],
+      "type": "dreh",
+      "bend": -1
+     },
+     {
+      "who": "b1",
+      "to": [
+       50,
+       7.3
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 26,
+    "y1": 58.6,
+    "x2": 74,
+    "y2": 58.6,
+    "text": "25 m"
+   },
+   {
+    "x1": 87,
+    "y1": 7,
+    "x2": 87,
+    "y2": 51,
+    "text": "25 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Nach dem Treffer kommt sofort der nächste Ball.",
+   "title": "Sofort der nächste Ball",
+   "text": "Ist der Ball im Minitor, spielt der Trainer sofort den nächsten Ball ins Zentrum. Keiner hat Zeit zum Durchatmen. Die Verteidiger müssen sofort wieder stehen, und Team Neon spielt gleich wieder mit ein oder zwei Kontakten.",
+   "board": {
+    "players": [
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 49,
+      "y": 53.5,
+      "label": "6"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 77,
+      "y": 30,
+      "label": "2"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 22,
+      "y": 30,
+      "label": "8"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 58,
+      "y": 29,
+      "label": "4"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 40,
+      "y": 29,
+      "label": "10"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 49,
+      "y": 13,
+      "label": "9"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 31,
+      "y": 17,
+      "label": "7"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 31,
+      "y": 39,
+      "label": "5"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 67,
+      "y": 17,
+      "label": "3"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 67,
+      "y": 39,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 8,
+      "y": 44,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b0",
+      "x": 8.6,
+      "y": 44.6
+     },
+     {
+      "id": "s1",
+      "x": 11.5,
+      "y": 47
+     },
+     {
+      "id": "s2",
+      "x": 5,
+      "y": 47
+     }
+    ],
+    "steps": [
+     {
+      "label": "Der Trainer spielt sofort rein",
+      "say": "Der Ball ist gerade im Minitor, da kommt schon der nächste. Der Trainer spielt zu Spieler acht. Spieler fünf schiebt sofort zum Ball.",
+      "moves": [
+       {
+        "who": "b0",
+        "to": [
+         22.6,
+         30.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r5",
+        "to": [
+         27,
+         36
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       }
+      ]
+     },
+     {
+      "label": "Direkt weiter",
+      "say": "Spieler acht legt direkt ins Zentrum auf Spieler zehn, und der spielt gleich weiter zu Spieler vier. Zwei Kontakte, und der Druck ist weg.",
+      "moves": [
+       {
+        "who": "b0",
+        "to": [
+         40.6,
+         29.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b0",
+        "to": [
+         58.6,
+         29.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 26,
+      "y1": 58.6,
+      "x2": 74,
+      "y2": 58.6,
+      "text": "25 m"
+     },
+     {
+      "x1": 87,
+      "y1": 7,
+      "x2": 87,
+      "y2": 51,
+      "text": "25 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Nach dem Ballgewinn zehn Pässe.",
+   "title": "Abgefangen, zehn Pässe",
+   "text": "Fängt Team Rot den Ball ab, spielt es vier gegen drei gegen die Spieler im Feld. Erst nach zehn Pässen darf es aufs Minitor. Die Verteidiger machen das Feld breit und tief und spielen von Viertel zu Viertel.",
+   "board": {
+    "players": [
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 49,
+      "y": 53.5,
+      "label": "6"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 77,
+      "y": 30,
+      "label": "2"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 22,
+      "y": 30,
+      "label": "8"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 58,
+      "y": 29,
+      "label": "4"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 40,
+      "y": 29,
+      "label": "10"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 49,
+      "y": 13,
+      "label": "9"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 31,
+      "y": 17,
+      "label": "7"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 31,
+      "y": 39,
+      "label": "5"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 67,
+      "y": 17,
+      "label": "3"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 67,
+      "y": 39,
+      "label": "11"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 8,
+      "y": 44,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 58.6,
+      "y": 29.6
+     },
+     {
+      "id": "b0",
+      "x": 8.6,
+      "y": 44.6
+     },
+     {
+      "id": "s1",
+      "x": 11.5,
+      "y": 47
+     },
+     {
+      "id": "s2",
+      "x": 5,
+      "y": 47
+     }
+    ],
+    "steps": [
+     {
+      "label": "Spieler drei fängt ab",
+      "say": "Spieler vier will steil auf Spieler neun spielen. Spieler drei ahnt das, geht dazwischen und hat den Ball.",
+      "moves": [
+       {
+        "who": "r3",
+        "to": [
+         56,
+         20
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         56.6,
+         20.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Breit und tief, Pässe zählen",
+      "say": "Jetzt steht es vier gegen drei. Der Ball läuft von Viertel zu Viertel, über Spieler sieben und Spieler fünf bis zu Spieler elf. Spieler neun, Spieler zehn und Spieler vier jagen ihn.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         31.6,
+         17.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r3",
+        "to": [
+         67,
+         17
+        ],
+        "type": "lauf",
+        "delay": 0.5
+       },
+       {
+        "who": "n9",
+        "to": [
+         42,
+         19
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         31.6,
+         39.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n10",
+        "to": [
+         34,
+         31
+        ],
+        "type": "lauf",
+        "delay": 1.0
+       },
+       {
+        "who": "b1",
+        "to": [
+         67.6,
+         39.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n4",
+        "to": [
+         60,
+         33
+        ],
+        "type": "lauf",
+        "delay": 1.6
+       }
+      ]
+     },
+     {
+      "label": "Zehn Pässe, dann aufs Tor: Punkt",
+      "say": "Der zehnte Pass ist gespielt. Spieler elf spielt steil zu Spieler drei, und der trifft ins Minitor. Das gibt einen Punkt für Team Rot. Danach bringt der Trainer den nächsten Ball zu Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         67.6,
+         17.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.5,
+         7.3
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 26,
+      "y1": 58.6,
+      "x2": 74,
+      "y2": 58.6,
+      "text": "25 m"
+     },
+     {
+      "x1": 87,
+      "y1": 7,
+      "x2": 87,
+      "y2": 51,
+      "text": "25 m"
+     }
+    ]
+   }
+  }
+ ]
+}

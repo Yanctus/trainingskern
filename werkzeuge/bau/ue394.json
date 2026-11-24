@@ -1,0 +1,919 @@
+{
+ "title": "Hohe Linie mit Abseitsfalle",
+ "code": "UE-394",
+ "kind": "Spielform",
+ "focuses": [
+  "Verteidigen",
+  "Zusammenspiel",
+  "Umschalten"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 13,
+ "players_max": 13,
+ "field_size": "30 x 35 m",
+ "description": "Eine hohe Abwehrlinie mit Abseitsfalle. Im Zentrum spielen zwei gegen zwei, ein dritter Angreifer hilft von außen. Nach fünf Pässen geht der Ball auf einen Flügel, und vier Angreifer wollen gegen die Viererkette in die Zone dahinter. Die Kette schiebt als Linie, rückt gemeinsam raus und stellt die Angreifer ins Abseits.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 30 mal 35 Metern, quer in vier Streifen geteilt. Am einen Ende die Zielzone von Team Rot, 9 Meter tief, davor die Zone der Viererkette, ebenfalls 9 Meter. Dann ein Streifen von 14 Metern mit einem Quadrat in der Mitte, am anderen Ende eine schmale Zone von 4,5 Metern.",
+  "Verteilen: Team Neon mit der Viererkette in ihrer Zone und zwei Mittelfeldspielern im Quadrat. Team Rot mit zwei Spielern im Quadrat, einem Helfer in der schmalen Zone, je einem Flügelspieler neben dem Quadrat und zwei Spitzen bei der Kette. Der Trainer steht mit Bällen an der Seite.",
+  "Ablauf: Im Quadrat spielen zwei gegen zwei, der Helfer spielt für Team Rot mit. Nach fünf Pässen, oder wenn Team Rot durch das Paar durchspielt, geht der Ball auf einen Flügel. Dann greifen vier Angreifer die Kette an und wollen mit Pass und Lauf in die Zielzone.",
+  "Wertung: Kommt Team Rot mit Ball in die Zielzone, gibt das einen Punkt für Team Rot. Erobert das Paar den Ball im Quadrat und kommt mit ihm in die schmale Zone, gibt das einen Punkt für Team Neon. Auch ein Ballgewinn der Kette oder ein Angreifer im Abseits gibt einen Punkt für Team Neon."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Das Paar presst, die Kette rückt nach",
+  "Kein Druck auf den Ball, die Kette fällt ab",
+  "Laut sprechen und eine Linie halten",
+  "Schulterblick zu den Spitzen"
+ ],
+ "materials": [
+  "Hütchen für Feld und Zonen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Hohe Linie mit Abseitsfalle. Die Viererkette steht hoch und schiebt als Linie. Im Zentrum spielen zwei gegen zwei, und nach fünf Pässen greifen vier Angreifer die Kette an.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 15,
+    "y": 5,
+    "w": 70,
+    "h": 50
+   },
+   {
+    "type": "zone",
+    "x": 15,
+    "y": 5,
+    "w": 70,
+    "h": 12.5,
+    "color": "orange"
+   },
+   {
+    "type": "zone",
+    "x": 15,
+    "y": 48.75,
+    "w": 70,
+    "h": 6.25
+   },
+   {
+    "type": "line",
+    "x1": 15,
+    "y1": 17.5,
+    "x2": 85,
+    "y2": 17.5,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 15,
+    "y1": 30,
+    "x2": 85,
+    "y2": 30,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 15,
+    "y1": 48.75,
+    "x2": 85,
+    "y2": 48.75,
+    "dashed": true
+   },
+   {
+    "type": "rect",
+    "x": 35,
+    "y": 30,
+    "w": 30,
+    "h": 18.75,
+    "dashed": true
+   }
+  ],
+  "goals": [],
+  "cones": [],
+  "players": [
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 19,
+    "y": 22,
+    "label": "3"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 37.5,
+    "y": 20.5,
+    "label": "5"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 62.5,
+    "y": 20.5,
+    "label": "4"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 81,
+    "y": 22,
+    "label": "2"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 45,
+    "y": 36.5,
+    "label": "8"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 55,
+    "y": 36.5,
+    "label": "6"
+   },
+   {
+    "id": "r12",
+    "team": "b",
+    "x": 28,
+    "y": 25,
+    "label": "12"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 72,
+    "y": 25,
+    "label": "9"
+   },
+   {
+    "id": "r14",
+    "team": "b",
+    "x": 36.5,
+    "y": 47,
+    "label": "14"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 63.5,
+    "y": 47,
+    "label": "10"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 19,
+    "y": 40,
+    "label": "11"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 81,
+    "y": 40,
+    "label": "7"
+   },
+   {
+    "id": "r13",
+    "team": "b",
+    "x": 50,
+    "y": 52.5,
+    "label": "13"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 7.5,
+    "y": 50,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 64.1,
+    "y": 47.6
+   },
+   {
+    "id": "b0",
+    "x": 8.1,
+    "y": 50.6
+   },
+   {
+    "id": "s1",
+    "x": 4.5,
+    "y": 53.5
+   },
+   {
+    "id": "s2",
+    "x": 11,
+    "y": 53.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Zwei gegen zwei im Quadrat",
+    "say": "Spieler zehn spielt zurück zu Spieler dreizehn, der draußen hilft. Weiter zu Spieler vierzehn. Spieler acht läuft ihn an, Spieler sechs bleibt nah bei ihm. Weil das Paar drückt, rückt die Kette ein Stück nach.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       50.6,
+       53.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       37.1,
+       47.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       40,
+       41.5
+      ],
+      "type": "lauf",
+      "delay": 0.8
+     },
+     {
+      "who": "n6",
+      "to": [
+       49,
+       39
+      ],
+      "type": "lauf",
+      "delay": 0.9
+     },
+     {
+      "who": "n3",
+      "to": [
+       19,
+       24
+      ],
+      "type": "lauf",
+      "delay": 1.0
+     },
+     {
+      "who": "n5",
+      "to": [
+       37.5,
+       23
+      ],
+      "type": "lauf",
+      "delay": 1.0
+     },
+     {
+      "who": "n4",
+      "to": [
+       62.5,
+       23
+      ],
+      "type": "lauf",
+      "delay": 1.0
+     },
+     {
+      "who": "n2",
+      "to": [
+       81,
+       24
+      ],
+      "type": "lauf",
+      "delay": 1.0
+     }
+    ]
+   },
+   {
+    "label": "Fünf Pässe, dann auf den Flügel",
+    "say": "Nach dem fünften Pass darf der Ball raus. Spieler vierzehn spielt quer zu Spieler zehn, und der spielt gleich weiter auf Spieler sieben. Die Kette schiebt zusammen zum Ball.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       64.1,
+       47.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       81.6,
+       40.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n3",
+      "to": [
+       26,
+       22
+      ],
+      "type": "lauf",
+      "delay": 1.2
+     },
+     {
+      "who": "n5",
+      "to": [
+       44,
+       23
+      ],
+      "type": "lauf",
+      "delay": 1.2
+     },
+     {
+      "who": "n4",
+      "to": [
+       65,
+       24
+      ],
+      "type": "lauf",
+      "delay": 1.2
+     },
+     {
+      "who": "n2",
+      "to": [
+       79,
+       27
+      ],
+      "type": "lauf",
+      "delay": 1.2
+     }
+    ]
+   },
+   {
+    "label": "Der Flügel bricht durch",
+    "say": "Spieler sieben nimmt den Ball mit nach vorn. Spieler neun kommt ihm entgegen und bekommt den Ball flach in den Fuß.",
+    "moves": [
+     {
+      "who": "r7",
+      "to": [
+       83,
+       33
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "r9",
+      "to": [
+       71,
+       31
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       71.6,
+       31.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Steil in die Zone: Punkt für Rot",
+    "say": "Spieler neun spielt direkt in die Tiefe. Spieler sieben läuft hinter Spieler zwei durch und ist mit dem Ball in der Zone, und das gibt einen Punkt für Team Rot. Danach spielt der Trainer den nächsten Ball ins Quadrat, und es geht wieder zwei gegen zwei los.",
+    "moves": [
+     {
+      "who": "r7",
+      "to": [
+       84,
+       22
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r7",
+      "to": [
+       80,
+       12
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       80.6,
+       12.6
+      ],
+      "type": "pass",
+      "delay": 0.5
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 15,
+    "y1": 58.6,
+    "x2": 85,
+    "y2": 58.6,
+    "text": "30 m"
+   },
+   {
+    "x1": 94,
+    "y1": 5,
+    "x2": 94,
+    "y2": 55,
+    "text": "35 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Das Paar bleibt eng zusammen.",
+   "title": "Das Paar bleibt eng",
+   "text": "Die zwei im Zentrum arbeiten als Paar. Läuft einer an, rückt der andere mit und macht die Lücke zu. Stehen sie weit auseinander, spielt Team Rot einfach durch die Mitte, und die Kette steht allein. Ist der Ball erobert, geht es zu zweit in die schmale Zone.",
+   "board": {
+    "players": [
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 19,
+      "y": 22,
+      "label": "3"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 37.5,
+      "y": 20.5,
+      "label": "5"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 62.5,
+      "y": 20.5,
+      "label": "4"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 81,
+      "y": 22,
+      "label": "2"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 45,
+      "y": 36.5,
+      "label": "8"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 55,
+      "y": 36.5,
+      "label": "6"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 28,
+      "y": 25,
+      "label": "12"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 72,
+      "y": 25,
+      "label": "9"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 36.5,
+      "y": 47,
+      "label": "14"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 63.5,
+      "y": 47,
+      "label": "10"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 19,
+      "y": 40,
+      "label": "11"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 81,
+      "y": 40,
+      "label": "7"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 50,
+      "y": 52.5,
+      "label": "13"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 7.5,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 37.1,
+      "y": 47.6
+     },
+     {
+      "id": "b0",
+      "x": 8.1,
+      "y": 50.6
+     },
+     {
+      "id": "s1",
+      "x": 4.5,
+      "y": 53.5
+     },
+     {
+      "id": "s2",
+      "x": 11,
+      "y": 53.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Einer läuft an, der andere rückt mit",
+      "say": "Spieler vierzehn hat den Ball. Spieler acht läuft ihn an, und Spieler sechs rückt eng neben ihn. Spieler neun lässt sich fallen und will den Ball durch die Mitte.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         37,
+         41.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n6",
+        "to": [
+         47,
+         36
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "r9",
+        "to": [
+         56,
+         31
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Pass durch die Mitte abgefangen",
+      "say": "Spieler vierzehn versucht es trotzdem durch die Mitte. Weil die zwei eng stehen, ist Spieler sechs dran und hat den Ball.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         47.6,
+         36.6
+        ],
+        "type": "pass"
+       }
+      ]
+     },
+     {
+      "label": "Zu zweit in die Zone: Punkt",
+      "say": "Spieler sechs legt ab auf Spieler acht und startet. Spieler acht spielt ihm den Ball in den Lauf. Spieler sechs nimmt ihn in der schmalen Zone an, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         37.6,
+         42.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n6",
+        "to": [
+         57,
+         50.5
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         57.6,
+         51.1
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 15,
+      "y1": 58.6,
+      "x2": 85,
+      "y2": 58.6,
+      "text": "30 m"
+     },
+     {
+      "x1": 94,
+      "y1": 5,
+      "x2": 94,
+      "y2": 55,
+      "text": "35 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Die Kette rückt gemeinsam raus.",
+   "title": "Gemeinsam raus, Abseits",
+   "text": "Die Viererkette bleibt eine Linie. Kommt Druck auf den Ball, rücken alle vier gleichzeitig ein paar Meter raus. Einer schaut, wo die Spitzen stehen, und ruft. Wer dann hinter der Kette stehen bleibt, ist im Abseits.",
+   "board": {
+    "players": [
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 19,
+      "y": 22,
+      "label": "3"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 37.5,
+      "y": 20.5,
+      "label": "5"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 62.5,
+      "y": 20.5,
+      "label": "4"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 81,
+      "y": 22,
+      "label": "2"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 45,
+      "y": 36.5,
+      "label": "8"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 55,
+      "y": 36.5,
+      "label": "6"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 28,
+      "y": 25,
+      "label": "12"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 72,
+      "y": 25,
+      "label": "9"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 36.5,
+      "y": 47,
+      "label": "14"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 63.5,
+      "y": 47,
+      "label": "10"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 19,
+      "y": 40,
+      "label": "11"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 81,
+      "y": 40,
+      "label": "7"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 50,
+      "y": 52.5,
+      "label": "13"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 7.5,
+      "y": 50,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 64.1,
+      "y": 47.6
+     },
+     {
+      "id": "b0",
+      "x": 8.1,
+      "y": 50.6
+     },
+     {
+      "id": "s1",
+      "x": 4.5,
+      "y": 53.5
+     },
+     {
+      "id": "s2",
+      "x": 11,
+      "y": 53.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Druck auf den Ball, Blick zu den Spitzen",
+      "say": "Spieler zehn hat den Ball. Spieler sechs läuft ihn an und setzt ihn unter Druck. Hinten schaut Spieler vier über die Schulter, wo Spieler neun steht.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         60,
+         41.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n4",
+        "to": [
+         72,
+         25
+        ],
+        "type": "blick",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Alle vier rücken raus",
+      "say": "Spieler vier ruft, und alle vier rücken gleichzeitig raus, in einer Linie. Spieler zwölf geht mit zurück. Spieler neun bleibt stehen und steht jetzt hinter der Kette.",
+      "moves": [
+       {
+        "who": "n3",
+        "to": [
+         19,
+         28
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n5",
+        "to": [
+         37.5,
+         28
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n4",
+        "to": [
+         62.5,
+         28
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n2",
+        "to": [
+         81,
+         28
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r12",
+        "to": [
+         28,
+         33
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Steilpass, Abseits: Punkt",
+      "say": "Spieler zehn spielt steil, Spieler neun startet in die Zone. Er stand aber schon hinter der Kette, als der Pass kam. Abseits, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "r9",
+        "to": [
+         74,
+         12
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "b1",
+        "to": [
+         74.6,
+         12.6
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 15,
+      "y1": 58.6,
+      "x2": 85,
+      "y2": 58.6,
+      "text": "30 m"
+     },
+     {
+      "x1": 94,
+      "y1": 5,
+      "x2": 94,
+      "y2": 55,
+      "text": "35 m"
+     }
+    ]
+   }
+  }
+ ]
+}

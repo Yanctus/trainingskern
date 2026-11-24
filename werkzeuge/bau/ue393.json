@@ -1,0 +1,1101 @@
+{
+ "title": "Kompakt stehen, schnell kontern",
+ "code": "UE-393",
+ "kind": "Spielform",
+ "focuses": [
+  "Verteidigen",
+  "Umschalten",
+  "Zusammenspiel"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 17,
+ "players_max": 17,
+ "field_size": "65 x 70 m",
+ "description": "Acht gegen acht auf zwei Dritteln des Platzes. Team Rot hat den Ball und will die Ordnung von Team Neon verschieben und in eins von drei Minitoren treffen. Team Neon steht kompakt, macht außen zu und erobert den Ball innen. Dann geht es schnell ins letzte Drittel, wo drei Angreifer gegen zwei Verteidiger und den Torwart spielen.",
+ "organisation": [
+  "Aufbauen: Ein Feld über zwei Drittel des Platzes, 70 Meter lang und so breit wie der Platz. Rund um die Mittellinie die Spielzone, 35 Meter lang, mit drei Minitoren an der Endlinie. Davor das letzte Drittel mit Strafraum und großem Tor.",
+  "Verteilen: Team Neon mit Viererkette, drei Mittelfeldspielern und einer Spitze in der Spielzone vor den Minitoren. Team Rot mit sechs Spielern in der Spielzone, zwei Verteidigern an der Drittellinie und dem Torwart im großen Tor. Der Trainer steht mit vielen Bällen an der Seitenlinie.",
+  "Ablauf: Der Trainer spielt zu Team Rot. Team Rot lässt den Ball laufen und will durch den Block in ein Minitor. Team Neon schiebt als Block, macht außen zu und erobert den Ball innen. Danach geht es schnell ins letzte Drittel, drei gegen zwei auf das große Tor.",
+  "Wertung: Jeder Treffer gibt einen Punkt für das Team, das trifft. Erobert Team Rot den Ball im letzten Drittel, kontert es sofort auf die Minitore. Nach jedem Abschluss bringt der Trainer den nächsten Ball zu Team Rot."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Als Block schieben, außen zumachen",
+  "Laut ansagen, wann wir schieben und wann eng machen",
+  "Ball erobert? Kopf hoch, wo steht die Spitze",
+  "Im drei gegen zwei schnell abschließen"
+ ],
+ "materials": [
+  "1 Großfeldtor",
+  "3 Minitore",
+  "Hütchen für die Drittellinie",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Kompakt stehen, schnell kontern. Acht gegen acht auf zwei Dritteln des Platzes. Team Neon verteidigt als Block und kontert nach dem Ballgewinn ins drei gegen zwei.",
+ "board": {
+  "massstab": "gross",
+  "lines": [
+   {
+    "type": "rect",
+    "x": 7,
+    "y": 3,
+    "w": 84,
+    "h": 49
+   },
+   {
+    "type": "line",
+    "x1": 70,
+    "y1": 3,
+    "x2": 70,
+    "y2": 52,
+    "dashed": false
+   },
+   {
+    "type": "circle",
+    "x": 70,
+    "y": 27.5,
+    "r": 6.5
+   },
+   {
+    "type": "rect",
+    "x": 7,
+    "y": 12.3,
+    "w": 19.8,
+    "h": 30.4
+   },
+   {
+    "type": "rect",
+    "x": 7,
+    "y": 20.6,
+    "w": 6.6,
+    "h": 13.8
+   },
+   {
+    "type": "line",
+    "x1": 49,
+    "y1": 3,
+    "x2": 49,
+    "y2": 52,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 7,
+    "y": 27.5,
+    "side": "left",
+    "size": "gross"
+   },
+   {
+    "x": 91,
+    "y": 11,
+    "side": "right"
+   },
+   {
+    "x": 91,
+    "y": 27.5,
+    "side": "right"
+   },
+   {
+    "x": 91,
+    "y": 44,
+    "side": "right"
+   }
+  ],
+  "cones": [],
+  "players": [
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 81,
+    "y": 8,
+    "label": "2"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 85,
+    "y": 20,
+    "label": "5"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 85,
+    "y": 35,
+    "label": "6"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 80.5,
+    "y": 47,
+    "label": "3"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 67,
+    "y": 16.5,
+    "label": "8"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 72,
+    "y": 30.5,
+    "label": "4"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 65.5,
+    "y": 39,
+    "label": "10"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 55,
+    "y": 26,
+    "label": "9"
+   },
+   {
+    "id": "r1",
+    "team": "b",
+    "x": 11,
+    "y": 27.5,
+    "label": "TW"
+   },
+   {
+    "id": "r13",
+    "team": "b",
+    "x": 60,
+    "y": 10,
+    "label": "13"
+   },
+   {
+    "id": "r20",
+    "team": "b",
+    "x": 74,
+    "y": 13,
+    "label": "20"
+   },
+   {
+    "id": "r15",
+    "team": "b",
+    "x": 48.5,
+    "y": 19.5,
+    "label": "15"
+   },
+   {
+    "id": "r14",
+    "team": "b",
+    "x": 61,
+    "y": 27.5,
+    "label": "14"
+   },
+   {
+    "id": "r19",
+    "team": "b",
+    "x": 79,
+    "y": 27,
+    "label": "19"
+   },
+   {
+    "id": "r16",
+    "team": "b",
+    "x": 48.5,
+    "y": 38,
+    "label": "16"
+   },
+   {
+    "id": "r18",
+    "team": "b",
+    "x": 74,
+    "y": 42,
+    "label": "18"
+   },
+   {
+    "id": "r12",
+    "team": "b",
+    "x": 59,
+    "y": 50,
+    "label": "12"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 50,
+    "y": 55.3,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 50.6,
+    "y": 55.9
+   },
+   {
+    "id": "s1",
+    "x": 53.5,
+    "y": 55.8
+   },
+   {
+    "id": "s2",
+    "x": 56,
+    "y": 55.8
+   }
+  ],
+  "steps": [
+   {
+    "label": "Trainer spielt ein, Rot baut auf",
+    "say": "Der Trainer spielt zu Spieler sechzehn, und der gibt weiter zu Spieler fünfzehn. Unsere Spitze, Spieler neun, macht den Weg durch die Mitte zu.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       49.1,
+       38.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       49.1,
+       20.1
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n9",
+      "to": [
+       54,
+       24
+      ],
+      "type": "lauf",
+      "delay": 1.2
+     }
+    ]
+   },
+   {
+    "label": "Pass nach außen, der Block schiebt",
+    "say": "Spieler fünfzehn spielt raus zu Spieler dreizehn. Sofort schiebt der ganze Block mit zur Seite. Spieler zwei läuft an und macht den Weg die Linie entlang zu.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       60.6,
+       10.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n2",
+      "to": [
+       67,
+       5
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "n8",
+      "to": [
+       66,
+       17
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "n5",
+      "to": [
+       83,
+       16
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     },
+     {
+      "who": "n6",
+      "to": [
+       83,
+       30
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     },
+     {
+      "who": "n3",
+      "to": [
+       79,
+       41
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     },
+     {
+      "who": "n4",
+      "to": [
+       71,
+       29
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     },
+     {
+      "who": "n10",
+      "to": [
+       66,
+       34
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     },
+     {
+      "who": "r14",
+      "to": [
+       62,
+       33
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     }
+    ]
+   },
+   {
+    "label": "Pass nach innen, abgefangen",
+    "say": "Außen ist zu. Spieler dreizehn spielt nach innen auf Spieler zwanzig zwischen unsere Linien. Der will weiter zu Spieler neunzehn, aber Spieler fünf ist schneller und fängt den Pass ab.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       74.6,
+       13.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n5",
+      "to": [
+       77,
+       21
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     },
+     {
+      "who": "b1",
+      "to": [
+       77.6,
+       21.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Kopf hoch, schnell nach vorn",
+    "say": "Spieler fünf hebt sofort den Kopf und sucht Spieler neun. Flach zu ihm, und los. Spieler acht und Spieler zehn sprinten mit nach vorn. Die zwei Verteidiger von Team Rot laufen zurück.",
+    "moves": [
+     {
+      "who": "n5",
+      "to": [
+       61,
+       23.2
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b1",
+      "to": [
+       54.6,
+       24.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n8",
+      "to": [
+       50,
+       12
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     },
+     {
+      "who": "n8",
+      "to": [
+       36,
+       12
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n10",
+      "to": [
+       55,
+       45
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     },
+     {
+      "who": "n10",
+      "to": [
+       38,
+       40
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r15",
+      "to": [
+       30,
+       22
+      ],
+      "type": "lauf",
+      "delay": 0.7
+     },
+     {
+      "who": "r16",
+      "to": [
+       30,
+       34
+      ],
+      "type": "lauf",
+      "delay": 0.7
+     }
+    ]
+   },
+   {
+    "label": "Drei gegen zwei: Punkt",
+    "say": "Drei gegen zwei im letzten Drittel. Spieler neun dribbelt an, und Spieler fünfzehn muss raus. Der Pass geht zu Spieler acht, der frei ist und trifft, und das gibt einen Punkt für Team Neon. Danach spielt der Trainer den nächsten Ball wieder zu Team Rot.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       40,
+       26
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "r15",
+      "to": [
+       34,
+       24
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     },
+     {
+      "who": "n8",
+      "to": [
+       28,
+       16
+      ],
+      "type": "lauf",
+      "delay": 0.5
+     },
+     {
+      "who": "b1",
+      "to": [
+       28.6,
+       16.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       7.3,
+       24.5
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 7,
+    "y1": 58.6,
+    "x2": 91,
+    "y2": 58.6,
+    "text": "70 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Als Block schieben und nach innen lenken.",
+   "title": "Als Block schieben",
+   "text": "Kommt der Ball nach außen, schiebt der ganze Block mit. Der äußere Spieler läuft so an, dass der Weg die Linie entlang zu ist. Dann bleibt nur der Pass nach innen, und dort stehen wir eng und erobern den Ball.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 81,
+      "y": 8,
+      "label": "2"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 85,
+      "y": 20,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 85,
+      "y": 35,
+      "label": "6"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 80.5,
+      "y": 47,
+      "label": "3"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 67,
+      "y": 16.5,
+      "label": "8"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 72,
+      "y": 30.5,
+      "label": "4"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 65.5,
+      "y": 39,
+      "label": "10"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 55,
+      "y": 26,
+      "label": "9"
+     },
+     {
+      "id": "r1",
+      "team": "b",
+      "x": 11,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 60,
+      "y": 10,
+      "label": "13"
+     },
+     {
+      "id": "r20",
+      "team": "b",
+      "x": 74,
+      "y": 13,
+      "label": "20"
+     },
+     {
+      "id": "r15",
+      "team": "b",
+      "x": 48.5,
+      "y": 19.5,
+      "label": "15"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 61,
+      "y": 27.5,
+      "label": "14"
+     },
+     {
+      "id": "r19",
+      "team": "b",
+      "x": 79,
+      "y": 27,
+      "label": "19"
+     },
+     {
+      "id": "r16",
+      "team": "b",
+      "x": 48.5,
+      "y": 38,
+      "label": "16"
+     },
+     {
+      "id": "r18",
+      "team": "b",
+      "x": 74,
+      "y": 42,
+      "label": "18"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 59,
+      "y": 50,
+      "label": "12"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 49.1,
+      "y": 20.1
+     },
+     {
+      "id": "s1",
+      "x": 53.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 56,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Pass nach außen, alle schieben",
+      "say": "Spieler fünfzehn spielt raus zu Spieler dreizehn. Sofort schiebt der ganze Block zur Seite. Spieler zwei läuft von außen an, damit der Weg die Linie entlang zu ist.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         60.6,
+         10.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n2",
+        "to": [
+         67,
+         5
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "n8",
+        "to": [
+         66,
+         17
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "n5",
+        "to": [
+         82,
+         15
+        ],
+        "type": "lauf",
+        "delay": 0.5
+       },
+       {
+        "who": "n6",
+        "to": [
+         83,
+         29
+        ],
+        "type": "lauf",
+        "delay": 0.5
+       },
+       {
+        "who": "n3",
+        "to": [
+         80,
+         41
+        ],
+        "type": "lauf",
+        "delay": 0.5
+       },
+       {
+        "who": "n4",
+        "to": [
+         68,
+         28
+        ],
+        "type": "lauf",
+        "delay": 0.5
+       },
+       {
+        "who": "n10",
+        "to": [
+         66,
+         35
+        ],
+        "type": "lauf",
+        "delay": 0.5
+       }
+      ]
+     },
+     {
+      "label": "Nach innen gelenkt, Ball erobert",
+      "say": "Außen geht nichts, also spielt Spieler dreizehn nach innen auf Spieler vierzehn. Genau da wollen wir ihn haben. Spieler vier und Spieler neun gehen zu zweit drauf, und Spieler vier erobert den Ball.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         61.6,
+         28.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n4",
+        "to": [
+         63.5,
+         29.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n9",
+        "to": [
+         58.5,
+         27.5
+        ],
+        "type": "lauf",
+        "delay": 0.8
+       },
+       {
+        "who": "n4",
+        "to": [
+         67,
+         33
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 7,
+      "y1": 58.6,
+      "x2": 91,
+      "y2": 58.6,
+      "text": "70 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Im drei gegen zwei den Freien finden.",
+   "title": "Den Freien finden",
+   "text": "Im letzten Drittel ist immer einer frei, wenn alle drei mitlaufen. Wer den Ball hat, bindet einen Verteidiger. Der nächste schaut schon vor der Annahme, wo der Freie steht. Schnell spielen und schnell abschließen, bevor Team Rot zurück ist.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 66.5,
+      "y": 9,
+      "label": "2"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 73.3,
+      "y": 21.2,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 74.5,
+      "y": 32.6,
+      "label": "6"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 63,
+      "y": 50,
+      "label": "3"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 36,
+      "y": 15.5,
+      "label": "8"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 56.4,
+      "y": 26.7,
+      "label": "4"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 32,
+      "y": 40,
+      "label": "10"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 31,
+      "y": 28,
+      "label": "9"
+     },
+     {
+      "id": "r1",
+      "team": "b",
+      "x": 10.6,
+      "y": 27.2,
+      "label": "TW"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 50,
+      "y": 9,
+      "label": "13"
+     },
+     {
+      "id": "r20",
+      "team": "b",
+      "x": 58,
+      "y": 14,
+      "label": "20"
+     },
+     {
+      "id": "r15",
+      "team": "b",
+      "x": 24.7,
+      "y": 24.5,
+      "label": "15"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 42.7,
+      "y": 26.7,
+      "label": "14"
+     },
+     {
+      "id": "r19",
+      "team": "b",
+      "x": 62.8,
+      "y": 26.6,
+      "label": "19"
+     },
+     {
+      "id": "r16",
+      "team": "b",
+      "x": 25,
+      "y": 37,
+      "label": "16"
+     },
+     {
+      "id": "r18",
+      "team": "b",
+      "x": 68,
+      "y": 38,
+      "label": "18"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 48.5,
+      "y": 41.3,
+      "label": "12"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 50,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 32.6,
+      "y": 40.6
+     },
+     {
+      "id": "s1",
+      "x": 53.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 56,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Spieler zehn bindet einen",
+      "say": "Drei gegen zwei im letzten Drittel. Spieler zehn kommt mit Ball, und Spieler sechzehn muss raus zu ihm. Spieler neun zeigt sich und schaut zum Ball. Spieler acht läuft in den freien Raum.",
+      "moves": [
+       {
+        "who": "r16",
+        "to": [
+         28,
+         37.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n9",
+        "to": [
+         32,
+         40
+        ],
+        "type": "blick",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         31.6,
+         28.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n8",
+        "to": [
+         27,
+         17
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       }
+      ]
+     },
+     {
+      "label": "Kopf hoch, der Freie trifft: Punkt",
+      "say": "Spieler fünfzehn geht auf Spieler neun. Der hat Spieler acht schon gesehen, dreht auf und spielt quer. Spieler acht trifft, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "r15",
+        "to": [
+         28,
+         26.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n9",
+        "to": [
+         27,
+         17
+        ],
+        "type": "blick",
+        "von": [
+         32,
+         40
+        ],
+        "dauer": 1.3
+       },
+       {
+        "who": "n9",
+        "to": [
+         27,
+         17
+        ],
+        "type": "dreh",
+        "delay": 0.4
+       },
+       {
+        "who": "b1",
+        "to": [
+         27.6,
+         17.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         7.3,
+         24
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 7,
+      "y1": 58.6,
+      "x2": 91,
+      "y2": 58.6,
+      "text": "70 m"
+     }
+    ]
+   }
+  }
+ ]
+}
