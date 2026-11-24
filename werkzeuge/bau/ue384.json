@@ -1,0 +1,1048 @@
+{
+ "title": "Passdreiecke in vier Feldern",
+ "code": "UE-384",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Zusammenspiel",
+  "Ballannahme"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 8,
+ "players_max": 10,
+ "field_size": "18 x 18 m",
+ "description": "Ein Feld in vier Quadraten, an sechs Stationen stehen Spieler. Der Ball läuft mit einem Kontakt in kleinen Dreiecken: Prallpass mit dem Spieler in der Mitte, steil ins untere Feld, nach außen ablegen und quer durchstecken ins Feld daneben. Über die andere Seite kommt der Ball zurück zum Start. Wer abgespielt hat, läuft seinem Pass hinterher zur nächsten Station.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 18 Metern, in vier gleich große Quadrate geteilt.",
+  "Verteilen: Acht Spieler an sechs Stationen. Zwei stehen mit Ball am Start im oberen Feld, einer in der Mitte am Rand der Teilungslinie, einer unten im selben Feld. Im Feld daneben stehen zwei unten, einer in der Mitte und einer oben. Der Trainer steht mit Bällen am Rand.",
+  "Ablauf: Prallpass mit dem Spieler in der Mitte, der danach nach außen geht. Steilpass ins untere Feld, der Spieler dort kommt entgegen und legt nach außen ab. Von außen geht der Ball quer ins Feld daneben, dann über die Mitte und oben zurück zum Start.",
+  "Wechsel: Jeder läuft seinem Pass hinterher zur nächsten Station. Ist der Ball zurück am Start, beginnt der nächste Durchgang."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Flach und mit der richtigen Härte passen, damit es direkt weitergeht",
+  "Erst loslaufen, wenn der Pass kommt",
+  "Kopf hoch, bevor der Ball da ist",
+  "Laut ansagen und mit beiden Füßen spielen"
+ ],
+ "materials": [
+  "4 Hütchen",
+  "1 Minitor",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Passdreiecke in vier Feldern. Der Ball läuft mit einem Kontakt im Dreieck, und jeder rückt nach seinem Pass eine Station weiter.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 25,
+    "y": 5,
+    "w": 50,
+    "h": 50
+   },
+   {
+    "type": "line",
+    "x1": 50,
+    "y1": 5,
+    "x2": 50,
+    "y2": 55,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 25,
+    "y1": 30,
+    "x2": 75,
+    "y2": 30,
+    "dashed": true
+   }
+  ],
+  "goals": [],
+  "cones": [
+   {
+    "x": 25,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 75,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 25,
+    "y": 55,
+    "color": "orange"
+   },
+   {
+    "x": 75,
+    "y": 55,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 39,
+    "y": 9,
+    "label": "7"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 30,
+    "y": 9,
+    "label": "8"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 37,
+    "y": 30,
+    "label": "9"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 37,
+    "y": 51,
+    "label": "3"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 61,
+    "y": 51,
+    "label": "5"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 69.5,
+    "y": 52,
+    "label": "6"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 62,
+    "y": 30,
+    "label": "4"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 62,
+    "y": 9,
+    "label": "2"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 13,
+    "y": 4,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 39.6,
+    "y": 9.6
+   },
+   {
+    "id": "s1",
+    "x": 13.6,
+    "y": 8.5
+   },
+   {
+    "id": "s2",
+    "x": 10,
+    "y": 7.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Prallpass mit Spieler neun",
+    "say": "Spieler sieben startet. Er spielt zu Spieler neun und bekommt den Ball direkt zurück. Sofort geht Spieler neun ein paar Schritte nach außen.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       37.6,
+       30.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       39.6,
+       9.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n9",
+      "to": [
+       28,
+       27
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Steil ins untere Feld",
+    "say": "Spieler drei kommt dem Ball entgegen und schaut zu Spieler sieben. Der spielt steil ins untere Feld. Gleich danach läuft Spieler sieben in die Mitte, auf den Platz von Spieler neun.",
+    "moves": [
+     {
+      "who": "n3",
+      "to": [
+       46,
+       48.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n3",
+      "to": [
+       42.6,
+       28.8
+      ],
+      "type": "blick",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       46.6,
+       49.1
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "n7",
+      "to": [
+       37,
+       30
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Kopf hoch, ablegen nach außen",
+    "say": "Spieler drei nimmt den Kopf hoch und sieht Spieler neun außen. Mit einem Kontakt legt er ihm den Ball hin.",
+    "moves": [
+     {
+      "who": "n3",
+      "to": [
+       33.1,
+       33.1
+      ],
+      "type": "blick",
+      "von": [
+       42.6,
+       28.8
+      ],
+      "dauer": 1.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       28.6,
+       27.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Durchstecken ins Feld daneben",
+    "say": "Spieler neun steckt den Ball flach durch ins untere Feld daneben, genau zu Spieler fünf. Dann läuft er auf den Platz von Spieler drei.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       61.6,
+       51.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n9",
+      "to": [
+       37,
+       51
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Hoch über Spieler vier",
+    "say": "Jetzt geht es zurück nach oben. Spieler fünf spielt zu Spieler vier, und der spielt direkt weiter zu Spieler zwei.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       62.6,
+       30.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       62.6,
+       9.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Alle rücken weiter",
+    "say": "Spieler acht geht an den Start, und Spieler zwei spielt ihm den Ball. Jeder läuft seinem Pass hinterher zur nächsten Station. Gezählt wird nichts, der Ball soll mit einem Kontakt laufen. Jetzt startet Spieler acht, und Spieler sieben steht in der Mitte.",
+    "moves": [
+     {
+      "who": "n8",
+      "to": [
+       39,
+       9
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       39.6,
+       9.6
+      ],
+      "type": "pass",
+      "delay": 0.4
+     },
+     {
+      "who": "n2",
+      "to": [
+       55,
+       3.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       33,
+       3.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       30,
+       9
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n4",
+      "to": [
+       62,
+       9
+      ],
+      "type": "lauf",
+      "delay": 1.2
+     },
+     {
+      "who": "n5",
+      "to": [
+       62,
+       30
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n6",
+      "to": [
+       61,
+       51
+      ],
+      "type": "lauf",
+      "delay": 0.8
+     },
+     {
+      "who": "n3",
+      "to": [
+       50,
+       56.5
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n3",
+      "to": [
+       66,
+       56.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n3",
+      "to": [
+       69.5,
+       52
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 25,
+    "y1": 58.6,
+    "x2": 75,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 83,
+    "y1": 5,
+    "x2": 83,
+    "y2": 55,
+    "text": "18 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Ein zweiter Ball kommt dazu.",
+   "title": "Zweiter Ball im Spiel",
+   "text": "Unten startet der zweite Ball, während der erste noch im Dreieck läuft. Jetzt muss jeder wissen, wo beide Bälle sind. Ansagen, Kopf hoch und schnell weiterrücken.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 39,
+      "y": 9,
+      "label": "7"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 30,
+      "y": 9,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 37,
+      "y": 30,
+      "label": "9"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 37,
+      "y": 51,
+      "label": "3"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 61,
+      "y": 51,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 69.5,
+      "y": 52,
+      "label": "6"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 62,
+      "y": 30,
+      "label": "4"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 62,
+      "y": 9,
+      "label": "2"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 13,
+      "y": 4,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 39.6,
+      "y": 9.6
+     },
+     {
+      "id": "b2",
+      "x": 61.6,
+      "y": 51.6
+     },
+     {
+      "id": "s1",
+      "x": 13.6,
+      "y": 8.5
+     },
+     {
+      "id": "s2",
+      "x": 10,
+      "y": 7.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Zwei Bälle gleichzeitig",
+      "say": "Spieler sieben spielt den Prallpass mit Spieler neun. Gleichzeitig startet unten Spieler fünf mit dem zweiten Ball. Er spielt hoch zu Spieler vier, und der spielt direkt weiter zu Spieler zwei.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         37.6,
+         30.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         39.6,
+         9.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n9",
+        "to": [
+         28,
+         27
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "b2",
+        "to": [
+         62.6,
+         30.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       },
+       {
+        "who": "b2",
+        "to": [
+         62.6,
+         9.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Steil, ablegen, zum Start",
+      "say": "Oben links geht der erste Ball steil zu Spieler drei, der legt nach außen ab. Spieler zwei spielt den zweiten Ball schon zum Start, wo jetzt Spieler acht steht. Alle anderen rücken eine Station weiter.",
+      "moves": [
+       {
+        "who": "n3",
+        "to": [
+         46,
+         48.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         46.6,
+         49.1
+        ],
+        "type": "pass",
+        "delay": 0.3
+       },
+       {
+        "who": "n3",
+        "to": [
+         33.1,
+         33.1
+        ],
+        "type": "blick",
+        "after": true,
+        "von": [
+         42.6,
+         28.8
+        ],
+        "dauer": 1.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         28.6,
+         27.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n7",
+        "to": [
+         37,
+         30
+        ],
+        "type": "lauf",
+        "delay": 1.2
+       },
+       {
+        "who": "n8",
+        "to": [
+         39,
+         9
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "b2",
+        "to": [
+         39.6,
+         9.6
+        ],
+        "type": "pass",
+        "delay": 1.0
+       },
+       {
+        "who": "n2",
+        "to": [
+         55,
+         3.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n2",
+        "to": [
+         33,
+         3.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n2",
+        "to": [
+         30,
+         9
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n4",
+        "to": [
+         62,
+         9
+        ],
+        "type": "lauf",
+        "delay": 2.0
+       },
+       {
+        "who": "n5",
+        "to": [
+         62,
+         30
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       },
+       {
+        "who": "n6",
+        "to": [
+         61,
+         51
+        ],
+        "type": "lauf",
+        "delay": 1.0
+       }
+      ]
+     },
+     {
+      "label": "Beide Bälle laufen",
+      "say": "Spieler neun steckt durch zu Spieler sechs, der direkt hoch zu Spieler fünf spielt. Oben spielt Spieler acht schon den Prallpass mit Spieler sieben. Keiner steht, beide Bälle bleiben in Bewegung.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         61.6,
+         51.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         62.6,
+         30.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n9",
+        "to": [
+         37,
+         51
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       },
+       {
+        "who": "b2",
+        "to": [
+         37.6,
+         30.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       },
+       {
+        "who": "b2",
+        "to": [
+         39.6,
+         9.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 25,
+      "y1": 58.6,
+      "x2": 75,
+      "y2": 58.6,
+      "text": "18 m"
+     },
+     {
+      "x1": 83,
+      "y1": 5,
+      "x2": 83,
+      "y2": 55,
+      "text": "18 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die zweite Steigerung: Am Ende wartet ein Minitor.",
+   "title": "Abschluss ins Minitor",
+   "text": "Neben dem unteren Feld rechts steht ein Minitor. Spieler drei läuft nach seinem Ablegen weiter, bekommt den Ball noch einmal und schließt ab. Der Trainer spielt sofort den nächsten Ball zum Start.",
+   "board": {
+    "players": [
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 39,
+      "y": 9,
+      "label": "7"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 30,
+      "y": 9,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 37,
+      "y": 30,
+      "label": "9"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 37,
+      "y": 51,
+      "label": "3"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 61,
+      "y": 51,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 69.5,
+      "y": 52,
+      "label": "6"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 62,
+      "y": 30,
+      "label": "4"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 62,
+      "y": 9,
+      "label": "2"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 13,
+      "y": 4,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 39.6,
+      "y": 9.6
+     },
+     {
+      "id": "s1",
+      "x": 13.6,
+      "y": 8.5
+     },
+     {
+      "id": "s2",
+      "x": 10,
+      "y": 7.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Prallpass, steil, ablegen",
+      "say": "Wie gewohnt: Prallpass mit Spieler neun, steil zu Spieler drei, und der legt nach außen ab.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         37.6,
+         30.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         39.6,
+         9.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n9",
+        "to": [
+         28,
+         27
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n3",
+        "to": [
+         46,
+         48.5
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       },
+       {
+        "who": "b1",
+        "to": [
+         46.6,
+         49.1
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "b1",
+        "to": [
+         28.6,
+         27.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n7",
+        "to": [
+         37,
+         30
+        ],
+        "type": "lauf",
+        "delay": 2.2
+       }
+      ]
+     },
+     {
+      "label": "Durchstecken, Spieler drei startet",
+      "say": "Spieler neun steckt durch zu Spieler fünf. Spieler drei läuft sofort weiter Richtung Minitor, und Spieler fünf legt ihm den Ball direkt in den Lauf.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         61.6,
+         51.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n3",
+        "to": [
+         55,
+         45
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "b1",
+        "to": [
+         55.6,
+         45.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "n9",
+        "to": [
+         37,
+         51
+        ],
+        "type": "lauf",
+        "delay": 0.8
+       }
+      ]
+     },
+     {
+      "label": "Abschluss ins Minitor: Punkt",
+      "say": "Spieler drei schießt direkt ins Minitor, und das gibt einen Punkt für Team Neon. Sofort spielt der Trainer den nächsten Ball zu Spieler acht, und der nächste Durchgang läuft.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         74.6,
+         42
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n8",
+        "to": [
+         39,
+         9
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "s1",
+        "to": [
+         39.6,
+         9.6
+        ],
+        "type": "pass",
+        "delay": 1.0
+       }
+      ]
+     }
+    ],
+    "goals": [
+     {
+      "x": 75,
+      "y": 42,
+      "side": "right"
+     }
+    ],
+    "dims": [
+     {
+      "x1": 25,
+      "y1": 58.6,
+      "x2": 75,
+      "y2": 58.6,
+      "text": "18 m"
+     },
+     {
+      "x1": 83,
+      "y1": 5,
+      "x2": 83,
+      "y2": 55,
+      "text": "18 m"
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,1056 @@
+{
+ "title": "Hohes Pressing zählt doppelt",
+ "code": "UE-385",
+ "kind": "Spielform",
+ "focuses": [
+  "Verteidigen",
+  "Umschalten",
+  "Kondition"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "tags": [
+  "Vorbereitung"
+ ],
+ "duration_minutes": 15,
+ "players_min": 12,
+ "players_max": 12,
+ "field_size": "18 x 25 m",
+ "description": "Fünf gegen fünf mit Torwart auf zwei Tore, das Feld ist in zwei Hälften geteilt. Das Team ohne Ball presst sofort hoch in der Hälfte des Gegners. Wer den Ball dort erobert und trifft, bekommt zwei Punkte, ein Treffer nach normalem Aufbau gibt einen Punkt. Wer zuerst fünf Punkte hat, gewinnt, und die Verlierer sprinten eine Runde ums Feld.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 25 Metern mit Mittellinie. Oben und unten ein Tor mit Torwart.",
+  "Verteilen: Zwei Teams mit je fünf Feldspielern und einem Torwart. Der Trainer steht an der Mittellinie mit vielen Bällen.",
+  "Ablauf: Ein Torwart spielt den Ball zu seinem Team. Das andere Team läuft sofort gemeinsam an und presst in der Hälfte des Gegners. Erobert es den Ball, schließt es schnell ab. Kommt der Gegner durch, spielt er normal auf das andere Tor.",
+  "Wertung und Wechsel: Ballgewinn in der Hälfte des Gegners und Treffer gibt zwei Punkte, ein Treffer nach normalem Aufbau gibt einen Punkt. Nach jedem Angriff wechseln die Rollen. Wer zuerst fünf Punkte hat, gewinnt, und die Verlierer sprinten eine Runde ums Feld."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Auf das Signal achten und dann zusammen los",
+  "Als Einheit pressen, keine Lücke lassen",
+  "Ohne Ball freilaufen, damit der Pass durchgeht",
+  "Nach dem Ballgewinn schnell und sauber abschließen"
+ ],
+ "materials": [
+  "2 Großfeldtore",
+  "4 Hütchen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Hohes Pressing zählt doppelt. Fünf gegen fünf mit Torwart. Erobert ein Team den Ball vorn in der Hälfte des Gegners und trifft, gibt das zwei Punkte.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 30,
+    "y": 5,
+    "w": 40,
+    "h": 50
+   },
+   {
+    "type": "line",
+    "x1": 30,
+    "y1": 30,
+    "x2": 70,
+    "y2": 30,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 50,
+    "y": 5,
+    "side": "top",
+    "size": "gross"
+   },
+   {
+    "x": 50,
+    "y": 55,
+    "side": "bottom",
+    "size": "gross"
+   }
+  ],
+  "cones": [
+   {
+    "x": 30,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 70,
+    "y": 5,
+    "color": "orange"
+   },
+   {
+    "x": 30,
+    "y": 55,
+    "color": "orange"
+   },
+   {
+    "x": 70,
+    "y": 55,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 33.3,
+    "y": 26,
+    "label": "10"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 41.6,
+    "y": 18,
+    "label": "9"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 41.6,
+    "y": 37,
+    "label": "6"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 58.4,
+    "y": 20,
+    "label": "8"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 58.4,
+    "y": 39,
+    "label": "4"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 33.3,
+    "y": 10,
+    "label": "2"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 33.3,
+    "y": 42,
+    "label": "7"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 50,
+    "y": 25,
+    "label": "5"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 66.7,
+    "y": 10,
+    "label": "3"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 66.7,
+    "y": 30,
+    "label": "11"
+   },
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 50,
+    "y": 7,
+    "label": "TW"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 50,
+    "y": 52.5,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 20,
+    "y": 30,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 50.6,
+    "y": 7.6
+   },
+   {
+    "id": "s1",
+    "x": 20.6,
+    "y": 34.5
+   },
+   {
+    "id": "s2",
+    "x": 18,
+    "y": 34.5
+   }
+  ],
+  "steps": [
+   {
+    "label": "Abstoß ist das Signal",
+    "say": "Der Torwart oben spielt kurz raus zu Spieler zwei. Spieler zehn sieht den Pass kommen. Das ist das Signal.",
+    "moves": [
+     {
+      "who": "n10",
+      "to": [
+       34,
+       12
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "b1",
+      "to": [
+       33.9,
+       10.6
+      ],
+      "type": "pass",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "Alle laufen zusammen an",
+    "say": "Jetzt läuft Spieler zehn Spieler zwei an. Spieler neun macht den Weg zurück zum Torwart zu, Spieler acht rückt zu Spieler fünf. Von hinten schieben Spieler sechs und Spieler vier bis an die Mittellinie.",
+    "moves": [
+     {
+      "who": "n10",
+      "to": [
+       35,
+       16
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n9",
+      "to": [
+       42,
+       11
+      ],
+      "type": "lauf",
+      "delay": 0.1
+     },
+     {
+      "who": "n8",
+      "to": [
+       55,
+       23
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n6",
+      "to": [
+       43,
+       31
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n4",
+      "to": [
+       57,
+       32
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "r11",
+      "to": [
+       64,
+       37
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     }
+    ]
+   },
+   {
+    "label": "In der Hälfte von Rot erobert",
+    "say": "Spieler zwei steht unter Druck und will in die Mitte zu Spieler fünf spielen. Spieler acht ist schon da und fängt den Ball ab.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       47.6,
+       21.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n8",
+      "to": [
+       47,
+       21
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     }
+    ]
+   },
+   {
+    "label": "Schnell abschließen: zwei Punkte",
+    "say": "Spieler acht spielt sofort zu Spieler neun, und der schießt flach ins Eck. Der Ball wurde in der Hälfte von Team Rot erobert, also gibt das zwei Punkte für Team Neon. Jetzt wechseln die Rollen. Der Torwart unten spielt den nächsten Ball zu Team Neon, und Team Rot presst.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       43,
+       14
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "b1",
+      "to": [
+       43.6,
+       14.6
+      ],
+      "type": "pass",
+      "delay": 0.2
+     },
+     {
+      "who": "b1",
+      "to": [
+       45,
+       5.3
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 30,
+    "y1": 58.6,
+    "x2": 70,
+    "y2": 58.6,
+    "text": "18 m"
+   },
+   {
+    "x1": 78,
+    "y1": 5,
+    "x2": 78,
+    "y2": 55,
+    "text": "25 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Keine Lücke beim Pressing.",
+   "title": "Keine Lücke beim Pressing",
+   "text": "Läuft jeder für sich an, entsteht in der Mitte eine Lücke. Ein einziger Pass hebelt dann drei Spieler aus. Darum laufen alle zusammen an und bleiben eng beieinander.",
+   "board": {
+    "players": [
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 33.3,
+      "y": 26,
+      "label": "10"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 41.6,
+      "y": 18,
+      "label": "9"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 41.6,
+      "y": 37,
+      "label": "6"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 58.4,
+      "y": 20,
+      "label": "8"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 58.4,
+      "y": 39,
+      "label": "4"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 33.3,
+      "y": 10,
+      "label": "2"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 33.3,
+      "y": 42,
+      "label": "7"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 50,
+      "y": 25,
+      "label": "5"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 66.7,
+      "y": 10,
+      "label": "3"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 66.7,
+      "y": 30,
+      "label": "11"
+     },
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 50,
+      "y": 7,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 50,
+      "y": 52.5,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 20,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 50.6,
+      "y": 7.6
+     },
+     {
+      "id": "s1",
+      "x": 20.6,
+      "y": 34.5
+     },
+     {
+      "id": "s2",
+      "x": 18,
+      "y": 34.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Jeder läuft für sich",
+      "say": "Team Neon presst, aber jeder läuft zu seinem eigenen Gegner. Spieler zehn geht nach außen zu Spieler zwei, Spieler acht zu Spieler drei. In der Mitte ist plötzlich viel Platz.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         34,
+         15
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n8",
+        "to": [
+         64,
+         16
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       },
+       {
+        "who": "n9",
+        "to": [
+         38,
+         12
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       }
+      ]
+     },
+     {
+      "label": "Ein Pass durch die Lücke",
+      "say": "Der Torwart oben sieht die Lücke und spielt flach durch die Mitte zu Spieler fünf. Drei Spieler von Team Neon sind mit einem Pass aus dem Spiel.",
+      "moves": [
+       {
+        "who": "r5",
+        "to": [
+         50,
+         9
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         25.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Aufdrehen, ein Punkt für Rot",
+      "say": "Spieler fünf dreht auf und spielt zu Spieler elf. Der zieht aufs Tor und trifft. Das war ein normaler Aufbau, und das gibt einen Punkt für Team Rot.",
+      "moves": [
+       {
+        "who": "r5",
+        "to": [
+         66.7,
+         30
+        ],
+        "type": "blick",
+        "von": [
+         50,
+         9
+        ],
+        "dauer": 1.3
+       },
+       {
+        "who": "r5",
+        "to": [
+         66.7,
+         30
+        ],
+        "type": "dreh",
+        "delay": 0.4
+       },
+       {
+        "who": "b1",
+        "to": [
+         67.3,
+         30.6
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "r11",
+        "to": [
+         63,
+         41
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "b1",
+        "to": [
+         56,
+         54.7
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 30,
+      "y1": 58.6,
+      "x2": 70,
+      "y2": 58.6,
+      "text": "18 m"
+     },
+     {
+      "x1": 78,
+      "y1": 5,
+      "x2": 78,
+      "y2": 55,
+      "text": "25 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Wer verliert, sprintet.",
+   "title": "Wer verliert, sprintet",
+   "text": "Nach einer festen Zeit schaut der Trainer auf den Spielstand, oder ein Team hat fünf Punkte. Das Verliererteam sprintet eine Runde ums Feld, danach geht es sofort weiter. So bleibt das Tempo hoch, und jeder Zweikampf zählt.",
+   "board": {
+    "players": [
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 33.3,
+      "y": 26,
+      "label": "10"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 41.6,
+      "y": 18,
+      "label": "9"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 41.6,
+      "y": 37,
+      "label": "6"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 58.4,
+      "y": 20,
+      "label": "8"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 58.4,
+      "y": 39,
+      "label": "4"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 33.3,
+      "y": 10,
+      "label": "2"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 33.3,
+      "y": 42,
+      "label": "7"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 50,
+      "y": 25,
+      "label": "5"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 66.7,
+      "y": 10,
+      "label": "3"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 66.7,
+      "y": 30,
+      "label": "11"
+     },
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 50,
+      "y": 7,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 50,
+      "y": 52.5,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 20,
+      "y": 30,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 59.0,
+      "y": 20.6
+     },
+     {
+      "id": "s1",
+      "x": 20.6,
+      "y": 34.5
+     },
+     {
+      "id": "s2",
+      "x": 18,
+      "y": 34.5
+     }
+    ],
+    "steps": [
+     {
+      "label": "Der fünfte Punkt",
+      "say": "Team Neon führt vier zu drei. Spieler acht hat den Ball in der Hälfte von Team Rot erobert und spielt zu Spieler neun. Der trifft, und das gibt einen Punkt für Team Neon. Fünf Punkte, Team Neon gewinnt.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         42.2,
+         18.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b1",
+        "to": [
+         44,
+         5.3
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Team Rot sprintet eine Runde",
+      "say": "Alle Feldspieler von Team Rot sprinten jetzt gemeinsam eine Runde außen ums Feld. Team Neon holt sich kurz Luft. Danach bringt der Trainer den nächsten Ball, und das neue Spiel startet.",
+      "moves": [
+       {
+        "who": "r2",
+        "to": [
+         27,
+         10
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "r2",
+        "to": [
+         27,
+         57.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r2",
+        "to": [
+         73,
+         57.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r2",
+        "to": [
+         73,
+         2.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r2",
+        "to": [
+         27,
+         2.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r2",
+        "to": [
+         27,
+         10
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r7",
+        "to": [
+         27,
+         42
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "r7",
+        "to": [
+         27,
+         57.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r7",
+        "to": [
+         73,
+         57.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r7",
+        "to": [
+         73,
+         2.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r7",
+        "to": [
+         27,
+         2.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r7",
+        "to": [
+         27,
+         42
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r5",
+        "to": [
+         73,
+         25
+        ],
+        "type": "lauf",
+        "delay": 0.4
+       },
+       {
+        "who": "r5",
+        "to": [
+         73,
+         2.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r5",
+        "to": [
+         27,
+         2.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r5",
+        "to": [
+         27,
+         57.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r5",
+        "to": [
+         73,
+         57.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r5",
+        "to": [
+         73,
+         25
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r3",
+        "to": [
+         73,
+         10
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       },
+       {
+        "who": "r3",
+        "to": [
+         73,
+         2.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r3",
+        "to": [
+         27,
+         2.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r3",
+        "to": [
+         27,
+         57.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r3",
+        "to": [
+         73,
+         57.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r3",
+        "to": [
+         73,
+         10
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r11",
+        "to": [
+         73,
+         30
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "r11",
+        "to": [
+         73,
+         2.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r11",
+        "to": [
+         27,
+         2.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r11",
+        "to": [
+         27,
+         57.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r11",
+        "to": [
+         73,
+         57.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "r11",
+        "to": [
+         73,
+         30
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 30,
+      "y1": 58.6,
+      "x2": 70,
+      "y2": 58.6,
+      "text": "18 m"
+     },
+     {
+      "x1": 78,
+      "y1": 5,
+      "x2": 78,
+      "y2": 55,
+      "text": "25 m"
+     }
+    ]
+   }
+  }
+ ]
+}
