@@ -1,0 +1,774 @@
+{
+ "title": "Drei Zonen, Überzahl, Rücklauf",
+ "code": "UE-325",
+ "kind": "Spielform",
+ "focuses": [
+  "Umschalten",
+  "Zusammenspiel",
+  "Verteidigen"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "tags": [
+  "Vorbereitung"
+ ],
+ "duration_minutes": 15,
+ "players_min": 10,
+ "players_max": 15,
+ "field_size": "18 x 25 m",
+ "description": "Ein Wellenspiel über drei Zonen mit einem Tor und Torwart an jedem Ende. Der Torwart eröffnet für drei Angreifer, zwei außen und einer vorn. In der Mitte stehen die beiden Außen zu zweit gegen einen Verteidiger, vorn wird daraus ein drei gegen zwei, weil der Verteidiger zurücksprintet. In der Steigerung werden die Angreifer nach ihrer Welle sofort selbst zu Verteidigern.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 18 mal 25 Metern, in drei Zonen geteilt. Die mittlere Zone ist fünfeinhalb Meter breit. An beiden Enden steht ein großes Tor mit Torwart, daneben liegen Ersatzbälle.",
+  "Verteilen: Zehn bis fünfzehn Spieler in zwei Teams. Team Neon greift an, zwei Außen in der mittleren Zone und ein Stürmer vorn. Team Rot hat einen Verteidiger in der Mitte und einen vorn in der letzten Zone. Die anderen warten außen an der mittleren Zone. Der Trainer steht am Rand.",
+  "Ablauf: Der Torwart spielt einen der beiden Außen an. In der Mitte spielen sie zu zweit gegen einen und suchen den freien Mann. Dann geht es in die letzte Zone. Der Verteidiger aus der Mitte sprintet zurück, und vorn wird drei gegen zwei gespielt.",
+  "Wertung und Wechsel: Jeder Treffer gibt einen Punkt. Nach jeder Welle kommen zwei neue Außen und ein neuer Verteidiger in die Mitte, und der Torwart eröffnet die nächste Welle."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Kopf hoch, wo ist der freie Mann?",
+  "Ball weg, sofort zurücksprinten",
+  "Anlaufen und dabei den Passweg zustellen",
+  "Vorn den Verteidiger festhalten und ablegen"
+ ],
+ "materials": [
+  "2 große Tore",
+  "8 Hütchen",
+  "Leibchen in zwei Farben",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Drei Zonen, Überzahl, Rücklauf. Ein Wellenspiel. Erst zwei gegen einen in der Mitte, dann drei gegen zwei vor dem Tor, und der Verteidiger muss zurück.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 9,
+    "y": 4,
+    "w": 80,
+    "h": 47
+   },
+   {
+    "type": "line",
+    "x1": 41,
+    "y1": 4,
+    "x2": 41,
+    "y2": 51,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 57,
+    "y1": 4,
+    "x2": 57,
+    "y2": 51,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 9,
+    "y": 27.5,
+    "side": "left",
+    "size": "gross"
+   },
+   {
+    "x": 89,
+    "y": 27.5,
+    "side": "right",
+    "size": "gross"
+   }
+  ],
+  "cones": [
+   {
+    "x": 9,
+    "y": 4,
+    "color": "orange"
+   },
+   {
+    "x": 89,
+    "y": 4,
+    "color": "orange"
+   },
+   {
+    "x": 9,
+    "y": 51,
+    "color": "orange"
+   },
+   {
+    "x": 89,
+    "y": 51,
+    "color": "orange"
+   },
+   {
+    "x": 41,
+    "y": 4,
+    "color": "orange"
+   },
+   {
+    "x": 57,
+    "y": 4,
+    "color": "orange"
+   },
+   {
+    "x": 41,
+    "y": 51,
+    "color": "orange"
+   },
+   {
+    "x": 57,
+    "y": 51,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 46,
+    "y": 8,
+    "label": "6"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 50,
+    "y": 45,
+    "label": "9"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 69,
+    "y": 29,
+    "label": "10"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 30,
+    "y": 55.3,
+    "label": "3"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 64,
+    "y": 55.3,
+    "label": "7"
+   },
+   {
+    "id": "r5",
+    "team": "b",
+    "x": 49,
+    "y": 27,
+    "label": "5"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 78,
+    "y": 27,
+    "label": "2"
+   },
+   {
+    "id": "r14",
+    "team": "b",
+    "x": 80,
+    "y": 55.3,
+    "label": "14"
+   },
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 86.6,
+    "y": 27.5,
+    "label": "TW"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 12.2,
+    "y": 28,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 14,
+    "y": 55.3,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 12.8,
+    "y": 28.6
+   },
+   {
+    "id": "s1",
+    "x": 17.5,
+    "y": 55.8
+   },
+   {
+    "id": "s2",
+    "x": 20,
+    "y": 55.8
+   }
+  ],
+  "dims": [
+   {
+    "x1": 9,
+    "y1": 58.6,
+    "x2": 89,
+    "y2": 58.6,
+    "text": "25 m"
+   }
+  ],
+  "steps": [
+   {
+    "label": "Der Torwart eröffnet",
+    "say": "Der Torwart links spielt flach zu Spieler sechs in die mittlere Zone. Spieler fünf läuft ihn sofort an.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       46.6,
+       8.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r5",
+      "to": [
+       53,
+       12
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "Zwei gegen einen, Kopf hoch",
+    "say": "Zwei gegen einen in der Mitte. Spieler sechs hebt den Kopf und sieht Spieler neun frei auf der anderen Seite. Der startet nach vorn und bekommt den Ball.",
+    "moves": [
+     {
+      "who": "n6",
+      "to": [
+       52,
+       30
+      ],
+      "type": "blick"
+     },
+     {
+      "who": "n9",
+      "to": [
+       54,
+       43
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       54.6,
+       43.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Rein ins letzte Drittel",
+    "say": "Spieler neun nimmt den Ball mit in die letzte Zone. Spieler fünf dreht um und sprintet zurück. Spieler sechs läuft vorn mit, und Spieler zehn hält Spieler zwei fest.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       64,
+       40
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "r5",
+      "to": [
+       62,
+       26
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n6",
+      "to": [
+       70,
+       10
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "n10",
+      "to": [
+       71,
+       31
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "Drei gegen zwei: Punkt",
+    "say": "Drei gegen zwei. Spieler neun spielt quer auf Spieler sechs, und der schießt ins lange Eck. Das gibt einen Punkt für Team Neon. Jetzt kommen Spieler drei und Spieler sieben als neue Außen rein, Spieler vierzehn verteidigt in der Mitte.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       70.6,
+       10.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       88.7,
+       23
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Anlaufen und den Passweg zustellen.",
+   "title": "Passweg zu, nach außen",
+   "text": "Der Verteidiger in der Mitte läuft nicht gerade auf den Ball. Er kommt im Bogen von innen und stellt den Pass zum anderen Außen zu. So muss der Angreifer an der Linie entlang. Dort wartet der zweite Verteidiger, und die beiden machen die Falle zu.",
+   "board": {
+    "players": [
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 46,
+      "y": 8,
+      "label": "6"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 50,
+      "y": 45,
+      "label": "9"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 69,
+      "y": 29,
+      "label": "10"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 30,
+      "y": 55.3,
+      "label": "3"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 64,
+      "y": 55.3,
+      "label": "7"
+     },
+     {
+      "id": "r5",
+      "team": "b",
+      "x": 49,
+      "y": 27,
+      "label": "5"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 78,
+      "y": 27,
+      "label": "2"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 80,
+      "y": 55.3,
+      "label": "14"
+     },
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 86.6,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 12.2,
+      "y": 28,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 14,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 12.8,
+      "y": 28.6
+     },
+     {
+      "id": "s1",
+      "x": 17.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 20,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Im Bogen anlaufen",
+      "say": "Der Torwart spielt diesmal zu Spieler neun. Spieler fünf läuft im Bogen von innen an. Spieler neun schaut zu Spieler sechs, aber der Passweg ist zu.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         50.6,
+         45.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r5",
+        "to": [
+         54.5,
+         31
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "r5",
+        "to": [
+         51,
+         36.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n9",
+        "to": [
+         47.8,
+         25
+        ],
+        "type": "blick",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "An der Linie entlang",
+      "say": "Spieler neun muss nach außen an der Linie entlang. Spieler fünf bleibt dran. Spieler zwei kommt von vorn dazu.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         62,
+         48.5
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "r5",
+        "to": [
+         59,
+         43
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "r2",
+        "to": [
+         71,
+         41
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Die Falle geht zu",
+      "say": "Jetzt sind zwei Verteidiger am Ball. Spieler zwei spitzelt ihn ins Aus. Die Welle ist vorbei, und die nächsten drei starten.",
+      "moves": [
+       {
+        "who": "r2",
+        "to": [
+         64.5,
+         46
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         68,
+         54
+        ],
+        "type": "pass",
+        "delay": 0.5
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 9,
+      "y1": 58.6,
+      "x2": 89,
+      "y2": 58.6,
+      "text": "25 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Steigerung",
+   "say": "Und jetzt die Steigerung: Drei gegen drei, und die Angreifer werden sofort zu Verteidigern.",
+   "title": "Drei gegen drei im Wechsel",
+   "text": "Ist die Welle von Team Neon vorbei, eröffnet sofort der Torwart rechts für Team Rot. Die beiden Außen von Team Neon sprinten zurück und verteidigen. Vorn steht ein Stürmer von Team Rot, hält seinen Verteidiger fest und legt den Ball ab. So wird es drei gegen drei.",
+   "board": {
+    "players": [
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 62,
+      "y": 10,
+      "label": "6"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 77.5,
+      "y": 44,
+      "label": "9"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 21.3,
+      "y": 28.3,
+      "label": "4"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 49,
+      "y": 5.5,
+      "label": "12"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 50,
+      "y": 50,
+      "label": "14"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 29.8,
+      "y": 27,
+      "label": "8"
+     },
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 86.6,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 12.2,
+      "y": 28,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 14,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 87.2,
+      "y": 28.1
+     },
+     {
+      "id": "s1",
+      "x": 17.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 20,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Sofort in die Gegenrichtung",
+      "say": "Der Angriff ist vorbei, und schon wirft der Torwart rechts den Ball zu Spieler vierzehn. Spieler zwölf kommt von außen dazu. Spieler sechs und Spieler neun sprinten zurück.",
+      "moves": [
+       {
+        "who": "r14",
+        "to": [
+         52,
+         40
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b1",
+        "to": [
+         52.6,
+         40.6
+        ],
+        "type": "pass",
+        "delay": 0.3
+       },
+       {
+        "who": "r12",
+        "to": [
+         50,
+         14
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n6",
+        "to": [
+         45,
+         22
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n9",
+        "to": [
+         40,
+         41
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Stürmer hält fest und legt ab",
+      "say": "Spieler acht steht vorn mit Spieler vier im Rücken. Spieler vierzehn spielt ihn an, und er legt sofort ab auf Spieler zwölf, der in den Raum startet.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         30.4,
+         27.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "r12",
+        "to": [
+         36,
+         17
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         36.6,
+         17.6
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Abschluss: Punkt",
+      "say": "Spieler zwölf schießt direkt, und das gibt einen Punkt für Team Rot. Danach werden die Außen von Team Rot zu Verteidigern, und der Torwart links eröffnet für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         9.3,
+         24
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 9,
+      "y1": 58.6,
+      "x2": 89,
+      "y2": 58.6,
+      "text": "25 m"
+     }
+    ]
+   }
+  }
+ ]
+}

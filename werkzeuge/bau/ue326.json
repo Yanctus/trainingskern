@@ -1,0 +1,887 @@
+{
+ "title": "Doppelpass, Leiter, Direktschuss",
+ "code": "UE-326",
+ "kind": "Übungsform",
+ "focuses": [
+  "Passspiel",
+  "Torschuss",
+  "Koordination"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "tags": [
+  "Vorbereitung"
+ ],
+ "duration_minutes": 15,
+ "players_min": 8,
+ "players_max": 12,
+ "field_size": "25 x 40 m",
+ "description": "Ein Rundlauf mit fünf Stationen vor einem Tor mit Torwart. Der Starter spielt zwei Doppelpässe und dribbelt durch die Stangen. Dann spielt er zum Ableger, und der legt für den Spieler ab, der gerade aus der Leiter kommt. Der schließt direkt ab, und der Ableger läuft durch Hütchen und Hürden zurück an die Leiter.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 25 mal 40 Metern mit einem großen Tor und Torwart. Vor dem Tor liegen zwei Hütchen für die Doppelpässe, daneben vier Stangen für den Slalom. Weiter hinten eine Leiter, außen fünf Hütchen im Zickzack und drei Minihürden.",
+  "Verteilen: Mindestens acht Spieler. Die meisten warten mit Ball am Start neben dem Tor, zwei oder drei an der Leiter. Je ein Spieler steht an den beiden Doppelpass-Hütchen und einer als Ableger in der Mitte. Der Trainer steht mit Ersatzbällen am Rand.",
+  "Ablauf: Doppelpass, zweiter Doppelpass, Slalom durch die Stangen und Pass zum Ableger. Gleichzeitig läuft der Erste an der Leiter durch die Leiter. Der Ableger legt ihm ab, und er schießt direkt.",
+  "Wertung und Wechsel: Jeder Treffer gibt einen Punkt. Der Dribbler wird Ableger, der Ableger läuft durch Hütchen und Hürden an die Leiter, der Schütze holt seinen Ball und stellt sich am Start an. Die Doppelpass-Spieler wechseln nach ein paar Runden."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Doppelpass mit einem Kontakt",
+  "Im Slalom kurze Kontakte, der Ball bleibt nah",
+  "Ablage genau in den Lauf, nicht zu fest",
+  "Direkt abschließen, flach ins Eck"
+ ],
+ "materials": [
+  "1 großes Tor",
+  "9 Hütchen",
+  "4 Stangen",
+  "1 Koordinationsleiter",
+  "3 Minihürden",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Doppelpass, Leiter, Direktschuss. Ein Rundlauf mit fünf Stationen. Zwei Doppelpässe, Slalom, Ablage und Abschluss mit einem Kontakt, dazu Leiter, Hütchen und Hürden.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 9,
+    "y": 4,
+    "w": 80,
+    "h": 47
+   }
+  ],
+  "goals": [
+   {
+    "x": 9,
+    "y": 27.5,
+    "side": "left",
+    "size": "gross"
+   }
+  ],
+  "cones": [
+   {
+    "x": 54,
+    "y": 46,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 59.5,
+    "y": 43,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 65,
+    "y": 40,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 70.5,
+    "y": 37,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 30.3,
+    "y": 8.2,
+    "color": "orange"
+   },
+   {
+    "x": 36.8,
+    "y": 12.5,
+    "color": "orange"
+   },
+   {
+    "x": 43.5,
+    "y": 8.2,
+    "color": "orange"
+   },
+   {
+    "x": 51,
+    "y": 12.5,
+    "color": "orange"
+   },
+   {
+    "x": 56.4,
+    "y": 8.2,
+    "color": "orange"
+   },
+   {
+    "x": 64,
+    "y": 11.5,
+    "color": "orange",
+    "shape": "huerde"
+   },
+   {
+    "x": 70,
+    "y": 11.5,
+    "color": "orange",
+    "shape": "huerde"
+   },
+   {
+    "x": 76,
+    "y": 11.5,
+    "color": "orange",
+    "shape": "huerde"
+   },
+   {
+    "x": 70.4,
+    "y": 26.7,
+    "color": "orange",
+    "shape": "leiter"
+   },
+   {
+    "x": 10.5,
+    "y": 49,
+    "color": "orange"
+   },
+   {
+    "x": 27.5,
+    "y": 36,
+    "color": "orange"
+   },
+   {
+    "x": 46.5,
+    "y": 51.5,
+    "color": "orange"
+   },
+   {
+    "x": 35,
+    "y": 22.5,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 13,
+    "y": 45,
+    "label": "6"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 4.2,
+    "y": 41,
+    "label": "3"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 30.8,
+    "y": 37.7,
+    "label": "8"
+   },
+   {
+    "id": "n7",
+    "team": "a",
+    "x": 42,
+    "y": 49.5,
+    "label": "7"
+   },
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 40,
+    "y": 21.4,
+    "label": "2"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 84,
+    "y": 26.7,
+    "label": "9"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 93,
+    "y": 26.7,
+    "label": "10"
+   },
+   {
+    "id": "k",
+    "team": "t",
+    "x": 13.5,
+    "y": 27,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 24,
+    "y": 55.3,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 13.6,
+    "y": 45.6
+   },
+   {
+    "id": "b3",
+    "x": 4.8,
+    "y": 41.6
+   },
+   {
+    "id": "s1",
+    "x": 27.5,
+    "y": 55.8
+   },
+   {
+    "id": "s2",
+    "x": 30,
+    "y": 55.8
+   }
+  ],
+  "dims": [
+   {
+    "x1": 9,
+    "y1": 58.6,
+    "x2": 89,
+    "y2": 58.6,
+    "text": "40 m"
+   }
+  ],
+  "steps": [
+   {
+    "label": "Erster Doppelpass",
+    "say": "Spieler sechs startet am Tor. Er spielt flach zu Spieler acht und läuft sofort an ihm vorbei. Der Ball kommt mit einem Kontakt zurück.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       31.4,
+       38.3
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n6",
+      "to": [
+       27,
+       46.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       27.6,
+       47.1
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zweiter Doppelpass",
+    "say": "Gleich der nächste. Pass zu Spieler sieben, der legt direkt zurück in den Lauf.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       42.6,
+       50.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n6",
+      "to": [
+       51,
+       43
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       51.6,
+       43.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Slalom, Leiter läuft mit",
+    "say": "Jetzt dribbelt Spieler sechs eng durch die Stangen. Gleichzeitig startet Spieler neun in die Leiter, kleine schnelle Schritte.",
+    "moves": [
+     {
+      "who": "n6",
+      "to": [
+       52.3,
+       42.9
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "n6",
+      "to": [
+       61.2,
+       46.1
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n6",
+      "to": [
+       63.3,
+       36.9
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n6",
+      "to": [
+       72.2,
+       40.1
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n6",
+      "to": [
+       75,
+       35
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b1"
+     },
+     {
+      "who": "n9",
+      "to": [
+       78.4,
+       26.7
+      ],
+      "type": "lauf",
+      "delay": 0.8
+     },
+     {
+      "who": "n9",
+      "to": [
+       62.4,
+       26.7
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Pass zum Ableger, Ablage",
+    "say": "Spieler sechs spielt zu Spieler zwei in die Mitte. Spieler neun kommt aus der Leiter und läuft Richtung Tor. Spieler zwei legt ihm mit einem Kontakt in den Lauf.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       40.6,
+       22.0
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n9",
+      "to": [
+       33,
+       28
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "b1",
+      "to": [
+       33.6,
+       28.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Direktschuss: Punkt",
+    "say": "Spieler neun schießt direkt flach ins Eck, und das gibt einen Punkt für Team Neon. Spieler zwei tippt die Hütchen an, springt über die Hürden und stellt sich an der Leiter an. Spieler sechs wird Ableger, und Spieler drei startet.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       9.3,
+       23
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n2",
+      "to": [
+       30.3,
+       10.6
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "n2",
+      "to": [
+       36.8,
+       10.1
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       43.5,
+       10.6
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       51,
+       10.1
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       56.4,
+       10.6
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       60,
+       11.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       64,
+       11.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       70,
+       11.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       76,
+       11.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       80,
+       14
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       86,
+       22
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n6",
+      "to": [
+       40,
+       21.4
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     }
+    ]
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Die Ablage muss passen.",
+   "title": "Die Ablage muss passen",
+   "text": "Der Ableger spielt den Ball nicht zum Schützen, sondern dorthin, wo er gleich ist. Nicht zu fest und nicht zu weich, damit der Schütze ohne Annahme schießen kann. So bleibt das Tempo der ganzen Runde hoch.",
+   "board": {
+    "players": [
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 75,
+      "y": 35,
+      "label": "6"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 4.2,
+      "y": 41,
+      "label": "3"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 30.8,
+      "y": 37.7,
+      "label": "8"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 42,
+      "y": 49.5,
+      "label": "7"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 40,
+      "y": 21.4,
+      "label": "2"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 84,
+      "y": 26.7,
+      "label": "9"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 93,
+      "y": 26.7,
+      "label": "10"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 13.5,
+      "y": 27,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 24,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 75.6,
+      "y": 35.6
+     },
+     {
+      "id": "b3",
+      "x": 4.8,
+      "y": 41.6
+     },
+     {
+      "id": "s1",
+      "x": 27.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 30,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Ablage in den Lauf",
+      "say": "Spieler sechs spielt zu Spieler zwei. Spieler neun läuft schon Richtung Tor. Spieler zwei legt den Ball weich ein Stück vor ihn, genau in den Lauf.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         40.6,
+         22.0
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n9",
+        "to": [
+         33,
+         28
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "b1",
+        "to": [
+         33.6,
+         28.6
+        ],
+        "type": "pass",
+        "delay": 1.2
+       }
+      ]
+     },
+     {
+      "label": "Ohne Annahme: Punkt",
+      "say": "Der Ball liegt richtig, also schießt Spieler neun ohne Annahme. Flach ins Eck, und das gibt einen Punkt für Team Neon.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         9.3,
+         23
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 9,
+      "y1": 58.6,
+      "x2": 89,
+      "y2": 58.6,
+      "text": "40 m"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Im Slalom bleibt der Ball nah am Fuß.",
+   "title": "Kurze Kontakte im Slalom",
+   "text": "Zwischen den Stangen ist wenig Platz. Darum viele kleine Kontakte mit Innen- und Außenseite. Der Körper bleibt tief, so kann der Spieler schnell die Richtung wechseln. Erst nach der letzten Stange spielt er weiter.",
+   "board": {
+    "players": [
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 51,
+      "y": 43,
+      "label": "6"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 4.2,
+      "y": 41,
+      "label": "3"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 30.8,
+      "y": 37.7,
+      "label": "8"
+     },
+     {
+      "id": "n7",
+      "team": "a",
+      "x": 42,
+      "y": 49.5,
+      "label": "7"
+     },
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 40,
+      "y": 21.4,
+      "label": "2"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 84,
+      "y": 26.7,
+      "label": "9"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 93,
+      "y": 26.7,
+      "label": "10"
+     },
+     {
+      "id": "k",
+      "team": "t",
+      "x": 13.5,
+      "y": 27,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 24,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 51.6,
+      "y": 43.6
+     },
+     {
+      "id": "b3",
+      "x": 4.8,
+      "y": 41.6
+     },
+     {
+      "id": "s1",
+      "x": 27.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 30,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Eng um jede Stange",
+      "say": "Spieler sechs dribbelt in den Slalom. An jeder Stange ein, zwei kurze Kontakte, dann die Richtung wechseln. Der Ball springt nie weiter als einen Schritt weg.",
+      "moves": [
+       {
+        "who": "n6",
+        "to": [
+         52.3,
+         42.9
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "n6",
+        "to": [
+         61.2,
+         46.1
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "n6",
+        "to": [
+         63.3,
+         36.9
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "n6",
+        "to": [
+         72.2,
+         40.1
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       },
+       {
+        "who": "n6",
+        "to": [
+         75,
+         35
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b1"
+       }
+      ]
+     },
+     {
+      "label": "Raus und weiterspielen",
+      "say": "Nach der letzten Stange spielt er sofort flach zu Spieler zwei.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         40.6,
+         22.0
+        ],
+        "type": "pass"
+       }
+      ]
+     }
+    ],
+    "dims": [
+     {
+      "x1": 9,
+      "y1": 58.6,
+      "x2": 89,
+      "y2": 58.6,
+      "text": "40 m"
+     }
+    ]
+   }
+  }
+ ]
+}
