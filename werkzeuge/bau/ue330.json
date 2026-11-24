@@ -1,0 +1,1393 @@
+{
+ "title": "Laufzirkel und 8 gegen 8",
+ "code": "UE-330",
+ "kind": "Spielform",
+ "focuses": [
+  "Schnelligkeit",
+  "Umschalten",
+  "Kondition"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "tags": [
+  "Vorbereitung"
+ ],
+ "duration_minutes": 15,
+ "players_min": 16,
+ "players_max": 23,
+ "field_size": "65 x 100 m",
+ "description": "Der Platz ist zweigeteilt. Auf der einen Hälfte spielen Team Neon und Team Rot acht gegen acht, auf der anderen läuft eine dritte Gruppe einen Zirkel mit drei Bahnen: Slalom mit Ball und Abschluss, Hürden und Stangen, Ringe und Sprint zum Dummy. Sind alle aus dem Zirkel durch, wechselt das Team, das im Spiel hinten liegt, in den Zirkel. Die Zirkelgruppe spielt dann gegen den Sieger.",
+ "organisation": [
+  "Aufbauen: Ein ganzer Platz. In der einen Hälfte drei Bahnen nebeneinander: vier Ringe und dahinter ein Dummy, drei Dummys für den Slalom vor dem großen Tor, vier Minihürden und vier Stangen. In der anderen Hälfte steht ein zweites großes Tor auf der Mittellinie.",
+  "Verteilen: Drei Gruppen zu sieben und zwei Torhüter. Team Neon und Team Rot spielen acht gegen acht, die beiden Torhüter sind neutral und bleiben immer im Tor. Die dritte Gruppe verteilt sich auf die drei Startpunkte des Zirkels. Der Trainer steht mit Bällen an der Mittellinie.",
+  "Ablauf: Auf jeder Bahn läuft immer nur einer. Ist er durch, startet der Nächste, und er selbst trabt zur nächsten Bahn. Gleichzeitig läuft das Spiel. Wer ein Gegentor bekommt, bekommt sofort den Ball vom Torwart und spielt weiter.",
+  "Wertung und Wechsel: Jeder Treffer im Spiel gibt einen Punkt. Sind alle aus dem Zirkel durch, sprintet das Team, das hinten liegt, in den Zirkel. Die Zirkelgruppe spielt gegen den Sieger, der auf dem Platz bleibt."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Vollgas im Zirkel und im Spiel",
+  "Nach der Bahn im Laufen durchatmen, nicht stehen bleiben",
+  "Ball gewonnen? Sofort in den Raum hinter der Abwehr",
+  "Sauber annehmen und passen, auch mit schweren Beinen"
+ ],
+ "materials": [
+  "3 Großfeldtore",
+  "4 Dummys",
+  "4 Stangen",
+  "4 Ringe",
+  "4 Minihürden",
+  "Viele Bälle",
+  "Leibchen in drei Farben"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Laufzirkel und acht gegen acht. Auf der einen Hälfte wird gespielt, auf der anderen gelaufen. Wer verliert, muss in den Zirkel.",
+ "board": {
+  "massstab": "gross",
+  "lines": [
+   {
+    "type": "rect",
+    "x": 7,
+    "y": 3,
+    "w": 84,
+    "h": 49
+   },
+   {
+    "type": "line",
+    "x1": 49.0,
+    "y1": 3,
+    "x2": 49.0,
+    "y2": 52,
+    "dashed": false
+   },
+   {
+    "type": "circle",
+    "x": 49.0,
+    "y": 27.5,
+    "r": 6.5
+   },
+   {
+    "type": "rect",
+    "x": 7,
+    "y": 12.0,
+    "w": 14,
+    "h": 31
+   },
+   {
+    "type": "rect",
+    "x": 77,
+    "y": 12.0,
+    "w": 14,
+    "h": 31
+   },
+   {
+    "type": "rect",
+    "x": 7,
+    "y": 20.5,
+    "w": 4.6,
+    "h": 14
+   },
+   {
+    "type": "rect",
+    "x": 86.4,
+    "y": 20.5,
+    "w": 4.6,
+    "h": 14
+   }
+  ],
+  "goals": [
+   {
+    "x": 7,
+    "y": 27.5,
+    "side": "left",
+    "size": "gross"
+   },
+   {
+    "x": 91,
+    "y": 27.5,
+    "side": "right",
+    "size": "gross"
+   },
+   {
+    "x": 49.0,
+    "y": 27.5,
+    "side": "right",
+    "size": "gross"
+   }
+  ],
+  "cones": [
+   {
+    "x": 58,
+    "y": 8,
+    "color": "orange",
+    "shape": "ring"
+   },
+   {
+    "x": 62.5,
+    "y": 12,
+    "color": "orange",
+    "shape": "ring"
+   },
+   {
+    "x": 67,
+    "y": 8,
+    "color": "orange",
+    "shape": "ring"
+   },
+   {
+    "x": 71.5,
+    "y": 12,
+    "color": "orange",
+    "shape": "ring"
+   },
+   {
+    "x": 84,
+    "y": 9.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 60,
+    "y": 25,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 66,
+    "y": 31,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 72,
+    "y": 25,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 58.5,
+    "y": 45,
+    "color": "orange",
+    "shape": "huerde"
+   },
+   {
+    "x": 61.5,
+    "y": 45,
+    "color": "orange",
+    "shape": "huerde"
+   },
+   {
+    "x": 64.5,
+    "y": 45,
+    "color": "orange",
+    "shape": "huerde"
+   },
+   {
+    "x": 67.5,
+    "y": 45,
+    "color": "orange",
+    "shape": "huerde"
+   },
+   {
+    "x": 72,
+    "y": 42.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 77,
+    "y": 47.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 82,
+    "y": 42.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 87,
+    "y": 47.5,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 9.5,
+    "y": 27.5,
+    "label": "TW"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 15.5,
+    "y": 10,
+    "label": "3"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 15.5,
+    "y": 22,
+    "label": "5"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 15.5,
+    "y": 40,
+    "label": "4"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 21.5,
+    "y": 24,
+    "label": "6"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 27.5,
+    "y": 17,
+    "label": "10"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 27.5,
+    "y": 42,
+    "label": "8"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 33.5,
+    "y": 27,
+    "label": "9"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 46,
+    "y": 27.5,
+    "label": "TW"
+   },
+   {
+    "id": "r16",
+    "team": "b",
+    "x": 21.5,
+    "y": 12,
+    "label": "16"
+   },
+   {
+    "id": "r17",
+    "team": "b",
+    "x": 21.5,
+    "y": 36.5,
+    "label": "17"
+   },
+   {
+    "id": "r13",
+    "team": "b",
+    "x": 27.5,
+    "y": 5,
+    "label": "13"
+   },
+   {
+    "id": "r14",
+    "team": "b",
+    "x": 27.5,
+    "y": 29.5,
+    "label": "14"
+   },
+   {
+    "id": "r15",
+    "team": "b",
+    "x": 33.5,
+    "y": 45,
+    "label": "15"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 39.5,
+    "y": 16,
+    "label": "11"
+   },
+   {
+    "id": "r12",
+    "team": "b",
+    "x": 39.5,
+    "y": 38,
+    "label": "12"
+   },
+   {
+    "id": "t18",
+    "team": "t",
+    "x": 52.5,
+    "y": 9,
+    "label": "18"
+   },
+   {
+    "id": "t19",
+    "team": "t",
+    "x": 46.5,
+    "y": 9,
+    "label": "19"
+   },
+   {
+    "id": "t20",
+    "team": "t",
+    "x": 55,
+    "y": 30,
+    "label": "20"
+   },
+   {
+    "id": "t22",
+    "team": "t",
+    "x": 54,
+    "y": 45,
+    "label": "22"
+   },
+   {
+    "id": "t23",
+    "team": "t",
+    "x": 48,
+    "y": 45,
+    "label": "23"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 42,
+    "y": 55.3,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 10.1,
+    "y": 28.1
+   },
+   {
+    "id": "b2",
+    "x": 55.6,
+    "y": 30.6
+   },
+   {
+    "id": "s1",
+    "x": 45.5,
+    "y": 55.8
+   },
+   {
+    "id": "s2",
+    "x": 48,
+    "y": 55.8
+   }
+  ],
+  "steps": [
+   {
+    "label": "Zirkel: alle drei Bahnen laufen",
+    "say": "Wir fangen im Zirkel an. Spieler zwanzig dribbelt im Slalom um die drei Dummys. Oben hüpft Spieler achtzehn durch die Ringe, und unten springt Spieler zweiundzwanzig über die Hürden.",
+    "moves": [
+     {
+      "who": "t20",
+      "to": [
+       59.5,
+       30
+      ],
+      "type": "dribbling",
+      "ball": "b2"
+     },
+     {
+      "who": "t20",
+      "to": [
+       63,
+       26
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "t20",
+      "to": [
+       66,
+       25.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "t20",
+      "to": [
+       69,
+       30
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "t20",
+      "to": [
+       72,
+       30.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b2"
+     },
+     {
+      "who": "t18",
+      "to": [
+       58,
+       8
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "t18",
+      "to": [
+       62.5,
+       12
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "t18",
+      "to": [
+       67,
+       8
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "t18",
+      "to": [
+       71.5,
+       12
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "t22",
+      "to": [
+       57,
+       45
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "t22",
+      "to": [
+       69,
+       45
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Abschluss, Stangen, Sprint zum Dummy",
+    "say": "Nach dem letzten Dummy zieht Spieler zwanzig ab, flach ins lange Eck. Spieler achtzehn sprintet zum Dummy und tippt ihn an. Spieler zweiundzwanzig geht im Slalom durch die Stangen.",
+    "moves": [
+     {
+      "who": "t20",
+      "to": [
+       75.5,
+       25
+      ],
+      "type": "dribbling",
+      "ball": "b2"
+     },
+     {
+      "who": "b2",
+      "to": [
+       90.7,
+       25.5
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "t18",
+      "to": [
+       81.5,
+       10.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "t22",
+      "to": [
+       72,
+       46.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "t22",
+      "to": [
+       77,
+       43.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "t22",
+      "to": [
+       82,
+       46.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "t22",
+      "to": [
+       87,
+       43.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "t22",
+      "to": [
+       89.5,
+       45
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Weiter zur nächsten Bahn",
+    "say": "Wer durch ist, trabt zur nächsten Bahn und stellt sich an. Spieler zwanzig geht zu den Hürden, Spieler achtzehn zum Slalom, Spieler zweiundzwanzig zu den Ringen. Dort starten schon Spieler neunzehn und Spieler dreiundzwanzig.",
+    "moves": [
+     {
+      "who": "t20",
+      "to": [
+       66,
+       39
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "t20",
+      "to": [
+       52,
+       50
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "t18",
+      "to": [
+       57,
+       19
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "t18",
+      "to": [
+       56,
+       31
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "t22",
+      "to": [
+       88,
+       18
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "t22",
+      "to": [
+       76,
+       4.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "t22",
+      "to": [
+       53,
+       4.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "t19",
+      "to": [
+       52.5,
+       9
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "t19",
+      "to": [
+       58,
+       8
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "t19",
+      "to": [
+       62.5,
+       12
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "t19",
+      "to": [
+       67,
+       8
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "t19",
+      "to": [
+       71.5,
+       12
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "t23",
+      "to": [
+       54,
+       45
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "t23",
+      "to": [
+       57,
+       45
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "t23",
+      "to": [
+       69,
+       45
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Im Spiel: über außen nach vorn",
+    "say": "Jetzt zum Spiel acht gegen acht. Der Torwart links spielt flach zu Spieler vier. Der legt weiter auf Spieler acht, und Spieler acht spielt steil in die Mitte zu Spieler neun.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       16.1,
+       40.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b1",
+      "to": [
+       28.1,
+       42.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       34.1,
+       27.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Abschluss im Spiel: Punkt",
+    "say": "Spieler neun nimmt den Ball mit Richtung Tor und schließt ab. Der Torwart springt in die falsche Ecke, und das gibt einen Punkt für Team Neon. Team Rot bekommt sofort den nächsten Ball vom Torwart. Sind alle aus dem Zirkel durch, sprintet das Team, das hinten liegt, in den Zirkel, und die Zirkelgruppe spielt gegen den Sieger.",
+    "moves": [
+     {
+      "who": "n9",
+      "to": [
+       40,
+       24
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "k2",
+      "to": [
+       46,
+       31
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     },
+     {
+      "who": "b1",
+      "to": [
+       48.6,
+       25.2
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 7,
+    "y1": 58.6,
+    "x2": 91,
+    "y2": 58.6,
+    "text": "100 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Schnell erholen und gleich zur nächsten Bahn.",
+   "title": "Schnell erholen, weiter",
+   "text": "Nach jeder Bahn geht es sofort weiter zur nächsten. Durchgeatmet wird im Laufen, nicht im Stehen. Wer trödelt, lässt die ganze Gruppe warten. Das ist wie im Spiel: Nach einem Sprint kommt sofort die nächste Aktion.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 9.5,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 15.5,
+      "y": 10,
+      "label": "3"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 15.5,
+      "y": 22,
+      "label": "5"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 15.5,
+      "y": 40,
+      "label": "4"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 21.5,
+      "y": 24,
+      "label": "6"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 27.5,
+      "y": 17,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 27.5,
+      "y": 42,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 33.5,
+      "y": 27,
+      "label": "9"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 46,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "r16",
+      "team": "b",
+      "x": 21.5,
+      "y": 12,
+      "label": "16"
+     },
+     {
+      "id": "r17",
+      "team": "b",
+      "x": 21.5,
+      "y": 36.5,
+      "label": "17"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 27.5,
+      "y": 5,
+      "label": "13"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 27.5,
+      "y": 29.5,
+      "label": "14"
+     },
+     {
+      "id": "r15",
+      "team": "b",
+      "x": 33.5,
+      "y": 45,
+      "label": "15"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 39.5,
+      "y": 16,
+      "label": "11"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 39.5,
+      "y": 38,
+      "label": "12"
+     },
+     {
+      "id": "t18",
+      "team": "t",
+      "x": 52.5,
+      "y": 9,
+      "label": "18"
+     },
+     {
+      "id": "t19",
+      "team": "t",
+      "x": 46.5,
+      "y": 9,
+      "label": "19"
+     },
+     {
+      "id": "t20",
+      "team": "t",
+      "x": 69,
+      "y": 30,
+      "label": "20"
+     },
+     {
+      "id": "t22",
+      "team": "t",
+      "x": 54,
+      "y": 45,
+      "label": "22"
+     },
+     {
+      "id": "t23",
+      "team": "t",
+      "x": 48,
+      "y": 45,
+      "label": "23"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 42,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 10.1,
+      "y": 28.1
+     },
+     {
+      "id": "b2",
+      "x": 69.6,
+      "y": 30.6
+     },
+     {
+      "id": "s1",
+      "x": 45.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 48,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Abschluss, dann sofort los",
+      "say": "Spieler zwanzig kommt um den letzten Dummy und schließt ab. Kein Jubeln, kein Stehenbleiben. Er dreht sich um und trabt sofort zu den Hürden.",
+      "moves": [
+       {
+        "who": "t20",
+        "to": [
+         72,
+         30.5
+        ],
+        "type": "dribbling",
+        "ball": "b2"
+       },
+       {
+        "who": "t20",
+        "to": [
+         75.5,
+         25
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b2"
+       },
+       {
+        "who": "b2",
+        "to": [
+         90.7,
+         25.5
+        ],
+        "type": "pass",
+        "after": true
+       },
+       {
+        "who": "t20",
+        "to": [
+         66,
+         39
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "t20",
+        "to": [
+         60,
+         50.5
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Im Laufen durchatmen",
+      "say": "Auf dem Weg atmet er tief durch. Spieler dreiundzwanzig ist schon dran und springt über die Hürden. Spieler zwanzig stellt sich direkt dahinter an und ist als Nächster bereit.",
+      "moves": [
+       {
+        "who": "t22",
+        "to": [
+         57,
+         45
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "t22",
+        "to": [
+         69,
+         45
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "t22",
+        "to": [
+         72,
+         46.5
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "t23",
+        "to": [
+         54,
+         45
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       },
+       {
+        "who": "t23",
+        "to": [
+         57,
+         45
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "t20",
+        "to": [
+         48,
+         45
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Nach dem Ballgewinn sofort in den Raum hinter der Abwehr.",
+   "title": "Ballgewinn, ab in die Tiefe",
+   "text": "Team Rot ist weit aufgerückt. Hinter der Abwehr ist viel Platz bis zum Tor. Wer den Ball erobert, schaut sofort dorthin. Die Mitspieler starten im selben Moment, schnell und genau gespielt ist der Konter durch.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 9.5,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 15.5,
+      "y": 10,
+      "label": "3"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 15.5,
+      "y": 22,
+      "label": "5"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 15.5,
+      "y": 40,
+      "label": "4"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 21.5,
+      "y": 24,
+      "label": "6"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 27.5,
+      "y": 17,
+      "label": "10"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 27.5,
+      "y": 41,
+      "label": "8"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 33.5,
+      "y": 27,
+      "label": "9"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 46,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "r16",
+      "team": "b",
+      "x": 21.5,
+      "y": 12,
+      "label": "16"
+     },
+     {
+      "id": "r17",
+      "team": "b",
+      "x": 21.5,
+      "y": 36.5,
+      "label": "17"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 27.5,
+      "y": 5,
+      "label": "13"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 27.5,
+      "y": 29,
+      "label": "14"
+     },
+     {
+      "id": "r15",
+      "team": "b",
+      "x": 9.5,
+      "y": 44,
+      "label": "15"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 33.5,
+      "y": 12,
+      "label": "11"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 33.5,
+      "y": 42,
+      "label": "12"
+     },
+     {
+      "id": "t18",
+      "team": "t",
+      "x": 52.5,
+      "y": 9,
+      "label": "18"
+     },
+     {
+      "id": "t19",
+      "team": "t",
+      "x": 46.5,
+      "y": 9,
+      "label": "19"
+     },
+     {
+      "id": "t20",
+      "team": "t",
+      "x": 55,
+      "y": 30,
+      "label": "20"
+     },
+     {
+      "id": "t22",
+      "team": "t",
+      "x": 54,
+      "y": 45,
+      "label": "22"
+     },
+     {
+      "id": "t23",
+      "team": "t",
+      "x": 48,
+      "y": 45,
+      "label": "23"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 42,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 28.1,
+      "y": 29.6
+     },
+     {
+      "id": "b2",
+      "x": 55.6,
+      "y": 30.6
+     },
+     {
+      "id": "s1",
+      "x": 45.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 48,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Abgefangen",
+      "say": "Team Rot greift an. Spieler vierzehn will in die Mitte zu Spieler siebzehn spielen. Spieler acht läuft dazwischen und hat den Ball.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         23.8,
+         34.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n8",
+        "to": [
+         23.2,
+         34
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       }
+      ]
+     },
+     {
+      "label": "Kopf hoch, Raum hinter der Kette",
+      "say": "Kopf hoch. Spieler acht sieht den freien Raum hinter der Abwehr. Spieler neun startet genau da hinein, und der Ball kommt flach in seinen Lauf.",
+      "moves": [
+       {
+        "who": "n8",
+        "to": [
+         41,
+         33
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "n9",
+        "to": [
+         41,
+         33
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n10",
+        "to": [
+         38,
+         20
+        ],
+        "type": "lauf",
+        "delay": 0.6
+       },
+       {
+        "who": "b1",
+        "to": [
+         41.6,
+         33.6
+        ],
+        "type": "pass",
+        "delay": 1.2
+       }
+      ]
+     },
+     {
+      "label": "Allein aufs Tor: Punkt",
+      "say": "Spieler neun nimmt den Ball mit und schiebt am Torwart vorbei ein, und das gibt einen Punkt für Team Neon. Team Rot war zu weit weg.",
+      "moves": [
+       {
+        "who": "n9",
+        "to": [
+         43,
+         29
+        ],
+        "type": "dribbling",
+        "ball": "b1"
+       },
+       {
+        "who": "k2",
+        "to": [
+         46,
+         25
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "b1",
+        "to": [
+         48.6,
+         30
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

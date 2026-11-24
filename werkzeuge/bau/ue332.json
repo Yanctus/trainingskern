@@ -1,0 +1,1298 @@
+{
+ "title": "Karussell mit vier Zonen",
+ "code": "UE-332",
+ "kind": "Übungsform",
+ "focuses": [
+  "Koordination",
+  "Dribbling",
+  "Kondition"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "tags": [
+  "Vorbereitung"
+ ],
+ "duration_minutes": 15,
+ "players_min": 12,
+ "players_max": 16,
+ "field_size": "40 x 30 m",
+ "description": "Ein Stationskarussell für die Vorbereitung mit vier Zonen und vier Gruppen. In Zone eins geht es durch Stangen, Leiter und Ringe, in Zone zwei wird eng durch die Hütchen gedribbelt. Zone drei verbindet Hürden und Sprint mit einem Abschluss ins Minitor, Zone vier sind Pendelsprints. Auf Pfiff rückt jede Gruppe im Uhrzeigersinn eine Zone weiter.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 40 mal 30 Metern, in vier Zonen geteilt. Zone eins: fünf Stangen, eine Leiter und Ringe. Zone zwei: zwei Reihen mit je vier Hütchen. Zone drei: vier Minihürden, ein Hütchen und ein Minitor. Zone vier: vier Hütchen als Pendelmarken.",
+  "Verteilen: Vier Gruppen zu viert, jede Gruppe startet in einer Zone. In Zone zwei hat jeder einen Ball. Der Trainer steht mit Bällen an Zone drei und legt dort für den Abschluss ab.",
+  "Ablauf: In jeder Zone läuft einer, die anderen warten am Start. Ist er zurück, übergibt er an den Nächsten. Alle vier Zonen laufen gleichzeitig.",
+  "Wertung und Wechsel: Jeder Treffer in Zone drei gibt einen Punkt für die Gruppe. Auf Pfiff des Trainers wechseln alle Gruppen im Uhrzeigersinn in die nächste Zone."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Vollgas in jeder Zone",
+  "Saubere Schritte an Leiter, Ringen und Hürden",
+  "Ball eng am Fuß, beide Füße benutzen",
+  "Nach dem Pendelsprint im Gehen durchatmen"
+ ],
+ "materials": [
+  "5 Stangen",
+  "1 Koordinationsleiter",
+  "3 Ringe",
+  "4 Minihürden",
+  "1 Minitor",
+  "14 Hütchen",
+  "Viele Bälle"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Karussell mit vier Zonen. Vier Gruppen arbeiten gleichzeitig, und auf Pfiff dreht sich das Karussell eine Zone weiter.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 15,
+    "y": 4,
+    "w": 66,
+    "h": 49
+   },
+   {
+    "type": "line",
+    "x1": 48,
+    "y1": 4,
+    "x2": 48,
+    "y2": 53,
+    "dashed": true
+   },
+   {
+    "type": "line",
+    "x1": 15,
+    "y1": 28.5,
+    "x2": 81,
+    "y2": 28.5,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 77.7,
+    "y": 49,
+    "side": "right"
+   }
+  ],
+  "cones": [
+   {
+    "x": 22,
+    "y": 10,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 27.5,
+    "y": 10,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 33,
+    "y": 10,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 38.5,
+    "y": 10,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 44,
+    "y": 10,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 39.5,
+    "y": 22,
+    "color": "orange",
+    "shape": "leiter"
+   },
+   {
+    "x": 27.5,
+    "y": 23,
+    "color": "orange",
+    "shape": "ring"
+   },
+   {
+    "x": 22.5,
+    "y": 20.5,
+    "color": "orange",
+    "shape": "ring"
+   },
+   {
+    "x": 17.5,
+    "y": 23,
+    "color": "orange",
+    "shape": "ring"
+   },
+   {
+    "x": 54,
+    "y": 9,
+    "color": "orange"
+   },
+   {
+    "x": 61,
+    "y": 9,
+    "color": "orange"
+   },
+   {
+    "x": 68,
+    "y": 9,
+    "color": "orange"
+   },
+   {
+    "x": 75,
+    "y": 9,
+    "color": "orange"
+   },
+   {
+    "x": 54,
+    "y": 24,
+    "color": "orange"
+   },
+   {
+    "x": 61,
+    "y": 24,
+    "color": "orange"
+   },
+   {
+    "x": 68,
+    "y": 24,
+    "color": "orange"
+   },
+   {
+    "x": 75,
+    "y": 24,
+    "color": "orange"
+   },
+   {
+    "x": 69,
+    "y": 35,
+    "color": "orange",
+    "shape": "huerde"
+   },
+   {
+    "x": 65.5,
+    "y": 35,
+    "color": "orange",
+    "shape": "huerde"
+   },
+   {
+    "x": 62,
+    "y": 35,
+    "color": "orange",
+    "shape": "huerde"
+   },
+   {
+    "x": 58.5,
+    "y": 35,
+    "color": "orange",
+    "shape": "huerde"
+   },
+   {
+    "x": 81.5,
+    "y": 32,
+    "color": "neon"
+   },
+   {
+    "x": 51,
+    "y": 47.5,
+    "color": "orange"
+   },
+   {
+    "x": 19,
+    "y": 31.5,
+    "color": "orange"
+   },
+   {
+    "x": 19,
+    "y": 37.5,
+    "color": "orange"
+   },
+   {
+    "x": 19,
+    "y": 43.5,
+    "color": "orange"
+   },
+   {
+    "x": 19,
+    "y": 49.5,
+    "color": "orange"
+   }
+  ],
+  "players": [
+   {
+    "id": "n2",
+    "team": "a",
+    "x": 17,
+    "y": 7.5,
+    "label": "2"
+   },
+   {
+    "id": "n3",
+    "team": "a",
+    "x": 7.5,
+    "y": 6.5,
+    "label": "3"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 7.5,
+    "y": 22,
+    "label": "4"
+   },
+   {
+    "id": "r6",
+    "team": "b",
+    "x": 80,
+    "y": 10,
+    "label": "6"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 88.5,
+    "y": 7,
+    "label": "7"
+   },
+   {
+    "id": "r8",
+    "team": "b",
+    "x": 88.5,
+    "y": 23,
+    "label": "8"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 77,
+    "y": 35.5,
+    "label": "10"
+   },
+   {
+    "id": "n11",
+    "team": "a",
+    "x": 88.5,
+    "y": 38.5,
+    "label": "11"
+   },
+   {
+    "id": "n12",
+    "team": "a",
+    "x": 88.5,
+    "y": 54,
+    "label": "12"
+   },
+   {
+    "id": "r14",
+    "team": "b",
+    "x": 22.5,
+    "y": 51,
+    "label": "14"
+   },
+   {
+    "id": "r15",
+    "team": "b",
+    "x": 31,
+    "y": 51,
+    "label": "15"
+   },
+   {
+    "id": "r16",
+    "team": "b",
+    "x": 39.5,
+    "y": 51,
+    "label": "16"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 64.5,
+    "y": 55.4,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b6",
+    "x": 80.6,
+    "y": 10.6
+   },
+   {
+    "id": "b7",
+    "x": 89.1,
+    "y": 7.6
+   },
+   {
+    "id": "b8",
+    "x": 89.1,
+    "y": 23.6
+   },
+   {
+    "id": "b3",
+    "x": 65.1,
+    "y": 56
+   },
+   {
+    "id": "s1",
+    "x": 68,
+    "y": 56
+   },
+   {
+    "id": "s2",
+    "x": 70.5,
+    "y": 56
+   }
+  ],
+  "steps": [
+   {
+    "label": "Alle vier Zonen starten",
+    "say": "Auf Pfiff geht es in allen vier Zonen gleichzeitig los. Spieler zwei läuft im Zickzack durch die Stangen. Spieler sechs dribbelt durch die obere Hütchenreihe. Spieler zehn springt über die Hürden, und Spieler vierzehn sprintet zur ersten Marke und zurück.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       22,
+       13.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n2",
+      "to": [
+       27.5,
+       6.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       33,
+       13.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       38.5,
+       6.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       44,
+       13.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r6",
+      "to": [
+       75,
+       12.5
+      ],
+      "type": "dribbling",
+      "ball": "b6"
+     },
+     {
+      "who": "r6",
+      "to": [
+       68,
+       5.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b6"
+     },
+     {
+      "who": "r6",
+      "to": [
+       61,
+       12.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b6"
+     },
+     {
+      "who": "r6",
+      "to": [
+       54,
+       5.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b6"
+     },
+     {
+      "who": "r6",
+      "to": [
+       50.5,
+       9
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b6"
+     },
+     {
+      "who": "n10",
+      "to": [
+       72,
+       35
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n10",
+      "to": [
+       55,
+       35
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r14",
+      "to": [
+       22.5,
+       43.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r14",
+      "to": [
+       22.5,
+       51
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Leiter, Ringe, zurück",
+    "say": "Spieler zwei kommt über die Leiter und die Ringe zurück zum Start. Spieler sechs dribbelt die untere Reihe zurück. Spieler vierzehn sprintet jetzt zur zweiten Marke.",
+    "moves": [
+     {
+      "who": "n2",
+      "to": [
+       46.5,
+       22
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n2",
+      "to": [
+       31.5,
+       22
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       27.5,
+       23
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       22.5,
+       20.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       17.5,
+       23
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       16.5,
+       13
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r6",
+      "to": [
+       49.5,
+       22
+      ],
+      "type": "dribbling",
+      "ball": "b6"
+     },
+     {
+      "who": "r6",
+      "to": [
+       54,
+       27
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b6"
+     },
+     {
+      "who": "r6",
+      "to": [
+       61,
+       20.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b6"
+     },
+     {
+      "who": "r6",
+      "to": [
+       68,
+       27
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b6"
+     },
+     {
+      "who": "r6",
+      "to": [
+       75,
+       20.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b6"
+     },
+     {
+      "who": "r6",
+      "to": [
+       80,
+       22
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b6"
+     },
+     {
+      "who": "r6",
+      "to": [
+       80,
+       13
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b6"
+     },
+     {
+      "who": "r14",
+      "to": [
+       22.5,
+       37.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r14",
+      "to": [
+       22.5,
+       51
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Ablage vom Trainer, Abschluss",
+    "say": "Spieler zehn sprintet zum Hütchen und dreht dort ab. Der Trainer legt den Ball flach in seinen Lauf, und er schießt direkt ins Minitor. In Zone vier geht es bis zur dritten Marke.",
+    "moves": [
+     {
+      "who": "n10",
+      "to": [
+       50.5,
+       44.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n10",
+      "to": [
+       59,
+       47.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b3",
+      "to": [
+       59.6,
+       48.1
+      ],
+      "type": "pass",
+      "delay": 1.2
+     },
+     {
+      "who": "b3",
+      "to": [
+       77.4,
+       49
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "r14",
+      "to": [
+       22.5,
+       31.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r14",
+      "to": [
+       22.5,
+       51
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Übergabe: Punkt und Wechsel",
+    "say": "Wer zurück ist, übergibt an den Nächsten in seiner Gruppe. Jetzt starten Spieler drei, Spieler sieben, Spieler elf und Spieler fünfzehn. Der Treffer von Spieler zehn gibt einen Punkt für seine Gruppe. Auf Pfiff wechseln alle Gruppen im Uhrzeigersinn in die nächste Zone.",
+    "moves": [
+     {
+      "who": "n3",
+      "to": [
+       17,
+       7.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n3",
+      "to": [
+       22,
+       13.5
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "n2",
+      "to": [
+       7.5,
+       14
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "r7",
+      "to": [
+       80,
+       10
+      ],
+      "type": "dribbling",
+      "ball": "b7"
+     },
+     {
+      "who": "r7",
+      "to": [
+       75,
+       12.5
+      ],
+      "type": "dribbling",
+      "after": true,
+      "ball": "b7"
+     },
+     {
+      "who": "r6",
+      "to": [
+       88.5,
+       14.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n10",
+      "to": [
+       80,
+       44
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n11",
+      "to": [
+       77,
+       35.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n11",
+      "to": [
+       72,
+       35
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "r15",
+      "to": [
+       31,
+       43.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "r15",
+      "to": [
+       31,
+       51
+      ],
+      "type": "lauf",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 15,
+    "y1": 58.6,
+    "x2": 81,
+    "y2": 58.6,
+    "text": "40 m"
+   },
+   {
+    "x1": 96,
+    "y1": 4,
+    "x2": 96,
+    "y2": 53,
+    "text": "30 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Ball eng am Fuß, mit beiden Füßen.",
+   "title": "Ball eng am Fuß",
+   "text": "Wer den Ball zu weit vorlegt, verliert ihn an den Hütchen und hält die ganze Gruppe auf. Darum viele kleine Kontakte, mit rechts und mit links. Zwischendurch geht der Kopf kurz hoch zur nächsten Hütchenreihe.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 17,
+      "y": 7.5,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 7.5,
+      "y": 6.5,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 7.5,
+      "y": 22,
+      "label": "4"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 80,
+      "y": 10,
+      "label": "6"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 88.5,
+      "y": 7,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 88.5,
+      "y": 23,
+      "label": "8"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 77,
+      "y": 35.5,
+      "label": "10"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 88.5,
+      "y": 38.5,
+      "label": "11"
+     },
+     {
+      "id": "n12",
+      "team": "a",
+      "x": 88.5,
+      "y": 54,
+      "label": "12"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 22.5,
+      "y": 51,
+      "label": "14"
+     },
+     {
+      "id": "r15",
+      "team": "b",
+      "x": 31,
+      "y": 51,
+      "label": "15"
+     },
+     {
+      "id": "r16",
+      "team": "b",
+      "x": 39.5,
+      "y": 51,
+      "label": "16"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 64.5,
+      "y": 55.4,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b6",
+      "x": 80.6,
+      "y": 10.6
+     },
+     {
+      "id": "b7",
+      "x": 89.1,
+      "y": 7.6
+     },
+     {
+      "id": "b8",
+      "x": 89.1,
+      "y": 23.6
+     },
+     {
+      "id": "b3",
+      "x": 65.1,
+      "y": 56
+     },
+     {
+      "id": "s1",
+      "x": 68,
+      "y": 56
+     },
+     {
+      "id": "s2",
+      "x": 70.5,
+      "y": 56
+     }
+    ],
+    "steps": [
+     {
+      "label": "Kleine Kontakte, beide Füße",
+      "say": "Spieler sechs nimmt den Ball mit kleinen Kontakten um jedes Hütchen, mal mit rechts, mal mit links. Der Ball springt nie weiter als einen Schritt weg.",
+      "moves": [
+       {
+        "who": "r6",
+        "to": [
+         75,
+         12.5
+        ],
+        "type": "dribbling",
+        "ball": "b6"
+       },
+       {
+        "who": "r6",
+        "to": [
+         68,
+         5.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b6"
+       },
+       {
+        "who": "r6",
+        "to": [
+         61,
+         12.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b6"
+       },
+       {
+        "who": "r6",
+        "to": [
+         54,
+         5.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b6"
+       },
+       {
+        "who": "r6",
+        "to": [
+         50.5,
+         9
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b6"
+       }
+      ]
+     },
+     {
+      "label": "Kopf hoch, dann zurück",
+      "say": "Am Ende der Reihe geht der Kopf kurz hoch. Spieler sechs sieht die untere Reihe und dribbelt sie genauso eng zurück zum Start.",
+      "moves": [
+       {
+        "who": "r6",
+        "to": [
+         61,
+         22
+        ],
+        "type": "blick"
+       },
+       {
+        "who": "r6",
+        "to": [
+         49.5,
+         22
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b6"
+       },
+       {
+        "who": "r6",
+        "to": [
+         54,
+         27
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b6"
+       },
+       {
+        "who": "r6",
+        "to": [
+         61,
+         20.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b6"
+       },
+       {
+        "who": "r6",
+        "to": [
+         68,
+         27
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b6"
+       },
+       {
+        "who": "r6",
+        "to": [
+         75,
+         20.5
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b6"
+       },
+       {
+        "who": "r6",
+        "to": [
+         80,
+         22
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b6"
+       },
+       {
+        "who": "r6",
+        "to": [
+         80,
+         13
+        ],
+        "type": "dribbling",
+        "after": true,
+        "ball": "b6"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Ruhig abschließen, auch mit schweren Beinen.",
+   "title": "Ruhig abschließen",
+   "text": "Nach Hürden und Sprint ist der Puls oben. Trotzdem bleibt der Abschluss sauber. Kurz vor dem Ball Tempo rausnehmen, Standbein neben den Ball und flach ins Tor schieben. Ein platzierter Schuss bringt mehr als ein harter daneben.",
+   "board": {
+    "players": [
+     {
+      "id": "n2",
+      "team": "a",
+      "x": 17,
+      "y": 7.5,
+      "label": "2"
+     },
+     {
+      "id": "n3",
+      "team": "a",
+      "x": 7.5,
+      "y": 6.5,
+      "label": "3"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 7.5,
+      "y": 22,
+      "label": "4"
+     },
+     {
+      "id": "r6",
+      "team": "b",
+      "x": 80,
+      "y": 10,
+      "label": "6"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 88.5,
+      "y": 7,
+      "label": "7"
+     },
+     {
+      "id": "r8",
+      "team": "b",
+      "x": 88.5,
+      "y": 23,
+      "label": "8"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 77,
+      "y": 35.5,
+      "label": "10"
+     },
+     {
+      "id": "n11",
+      "team": "a",
+      "x": 88.5,
+      "y": 38.5,
+      "label": "11"
+     },
+     {
+      "id": "n12",
+      "team": "a",
+      "x": 88.5,
+      "y": 54,
+      "label": "12"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 22.5,
+      "y": 51,
+      "label": "14"
+     },
+     {
+      "id": "r15",
+      "team": "b",
+      "x": 31,
+      "y": 51,
+      "label": "15"
+     },
+     {
+      "id": "r16",
+      "team": "b",
+      "x": 39.5,
+      "y": 51,
+      "label": "16"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 64.5,
+      "y": 55.4,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b6",
+      "x": 80.6,
+      "y": 10.6
+     },
+     {
+      "id": "b7",
+      "x": 89.1,
+      "y": 7.6
+     },
+     {
+      "id": "b8",
+      "x": 89.1,
+      "y": 23.6
+     },
+     {
+      "id": "b3",
+      "x": 65.1,
+      "y": 56
+     },
+     {
+      "id": "s1",
+      "x": 68,
+      "y": 56
+     },
+     {
+      "id": "s2",
+      "x": 70.5,
+      "y": 56
+     }
+    ],
+    "steps": [
+     {
+      "label": "Hürden und Sprint",
+      "say": "Spieler zehn springt über die Hürden und sprintet zum Hütchen. Die Beine sind jetzt schwer.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         72,
+         35
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n10",
+        "to": [
+         55,
+         35
+        ],
+        "type": "lauf",
+        "after": true
+       },
+       {
+        "who": "n10",
+        "to": [
+         50.5,
+         44.5
+        ],
+        "type": "lauf",
+        "after": true
+       }
+      ]
+     },
+     {
+      "label": "Flach und platziert: Punkt",
+      "say": "Der Trainer legt ab. Spieler zehn nimmt kurz Tempo raus, setzt das Standbein neben den Ball und schiebt flach ins Eck, und das gibt einen Punkt für seine Gruppe.",
+      "moves": [
+       {
+        "who": "n10",
+        "to": [
+         59,
+         47.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "b3",
+        "to": [
+         59.6,
+         48.1
+        ],
+        "type": "pass",
+        "delay": 0.6
+       },
+       {
+        "who": "b3",
+        "to": [
+         77.4,
+         50.2
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
