@@ -40,7 +40,7 @@
       "code": "UE-140",
       "schritte": 5,
       "tempo": 2.2,
-      "dach": "Mit Audio erklärt",
+      "dach": "Mit Audio · trainingskern.de",
       "uebergang": "knall",
       "sprecher": "Jede Übung läuft als Animation, und ich erkläre sie dir mit Ton, auf Deutsch.",
       "sprecherAb": 0.8
@@ -58,14 +58,14 @@
         "Fertige Trainingspläne"
       ],
       "uebergang": "pinsel",
-      "sprecher": "Für jede Jugend, von den Bambini bis zu den Senioren, für Torhüter und Einzeltraining, dazu fertige Trainingspläne.",
+      "sprecher": "Für jede Jugend, von den Bambini bis zu den Senioren, für Torhüter und Einzeltraining, dazu fertige Trainingspläne. Alles auf trainingskern Punkt D E.",
       "sprecherAb": 0.5,
       "punktAb": [
-        1.1,
-        2.9,
-        4.8
+        1.5,
+        3.7,
+        5.7
       ],
-      "dauer": 8.0
+      "dauer": 11.6
     },
     {
       "typ": "punkte",
@@ -76,18 +76,21 @@
       ],
       "punkte": [
         "Über 100 neue Übungen im Monat",
-        "Nach DFB-Philosophie aufgebaut",
-        "Spielen, üben, spielen"
+        "Aufgebaut nach dem DFB",
+        "15 · 30 · 15 · 30 Minuten",
+        "Anpassbar an deine Trainingszeit"
       ],
       "punktAb": [
-        0.7,
-        3.0,
-        6.4
+        0.6,
+        3.4,
+        5.4,
+        8.2
       ],
-      "dauer": 8.6,
+      "dauer": 11.6,
       "uebergang": "knall",
-      "sprecher": "Jeden Monat über hundert neue Übungen, aufgebaut nach der Trainingsphilosophie des DFB: spielen, üben, spielen.",
-      "sprecherAb": 0.5
+      "sprecher": "Jeden Monat über hundert neue Übungen. Aufgebaut nach dem DFB: fünfzehn, dreißig, fünfzehn, dreißig Minuten. Und anpassbar an deine Trainingszeit.",
+      "sprecherAb": 0.5,
+      "max": 4
     },
     {
       "typ": "hook",
