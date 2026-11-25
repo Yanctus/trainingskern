@@ -60,7 +60,12 @@
 | UE-296 | Annehmen und die Linie runter | 14 x 18 m | 5 |
 ## 2. Plan U15-U17
 - Fertig (25.11.2026): Wochen 2 bis 8 = UE-321 bis UE-341, „The Compact Midfield 4 35-P9“ = UE-333, PS-108 = UE-006 (Dublette).
-- In Arbeit: Woche 9 (UE-342 bis 344), Wochen 17 bis 21 (UE-345 bis 359). Offen: Wochen 22 bis 42 (alle Dateien im Drive).
+- Fertig (25.11.2026): Woche 9 und Wochen 17 bis 42 = UE-342 bis UE-418. Der Plan U15-U17 ist damit komplett. Dubletten (nur
+  „U15-U17“ ergänzt): UE-006, UE-098, UE-168, UE-174, UE-206, UE-218, UE-220. Frei: UE-407, UE-413, UE-419.
+- Alle U15-Einheiten (UE-298 bis UE-418) warten aufs Einsprechen (hidden + wartet_auf_ton).
+- Offen beim Plan U15-U17: „Additional Practices“ (Torwart GK-…, Einzeltraining 1 to 1-…) aus dem Drive, falls gewünscht.
+- Frage an den Inhaber: Sollen halbe Plätze (z. B. UE-314, UE-340, UE-352, UE-366, UE-370, UE-381) auch als Großfeld quer
+  gezeichnet werden? Bisher Regel: halbes Feld bleibt normal.
 - Nächster Code: siehe README (Status).
 
 ## 3. Ideen und offene Fragen

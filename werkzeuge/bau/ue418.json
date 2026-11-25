@@ -1,0 +1,977 @@
+{
+ "title": "Seitenwechsel verteidigen",
+ "code": "UE-418",
+ "kind": "Übungsform",
+ "focuses": [
+  "Verteidigen",
+  "Umschalten",
+  "Zusammenspiel"
+ ],
+ "age_groups": [
+  "C-Jugend",
+  "B-Jugend"
+ ],
+ "altersbereiche": [
+  "U15-U17"
+ ],
+ "duration_minutes": 15,
+ "players_min": 14,
+ "players_max": 14,
+ "field_size": "35 x 45 m",
+ "description": "Zwei Abläufe laufen gleichzeitig. Vor dem einen Tor pressen und sichern zwei Innenverteidiger von Team Neon im Wechsel, während Team Rot sich den Ball zuspielt. Auf der anderen Seite baut Team Rot über den Torwart auf und verlagert lang, dann kommt die Flanke, und es heißt vier gegen zwei. Gleichzeitig kontert Team Neon zwei gegen eins auf das andere Tor.",
+ "organisation": [
+  "Aufbauen: Ein Feld von 35 mal 45 Metern mit zwei großen Toren und gestrichelter Mittellinie. In der rechten Hälfte stehen vier Stangen als Gegenspieler. Der Trainer steht mit vielen Bällen an der Seitenlinie.",
+  "Verteilen: Links verteidigen zwei Innenverteidiger von Team Neon vor dem Torwart gegen drei Spieler von Team Rot. Rechts stehen von Team Rot ein Innenverteidiger und zwei Außenverteidiger vor dem anderen Torwart. Zwei Paare von Team Neon warten an der Mittellinie.",
+  "Ablauf: Links spielt sich Team Rot den Ball zu, und die Innenverteidiger pressen und sichern je nach Ballseite. Rechts geht der Ball über den Torwart nach außen, nach innen zu einem Spieler von Team Neon und zurück, dann lang auf die andere Seite zur Flanke. Im selben Moment geht der linke Ball zu diesem Spieler, und er kontert mit seinem Partner zwei gegen eins.",
+  "Wertung und Wechsel: Ein Treffer nach der Flanke gibt einen Punkt für Team Rot, ein Treffer im Konter gibt einen Punkt für Team Neon. Nach jedem Durchgang tauschen die Rollen, und ein wartendes Paar wird zu den neuen Innenverteidigern."
+ ],
+ "organisation_show": [
+  "lines",
+  "cones",
+  "players",
+  "balls,arrows"
+ ],
+ "coaching_points": [
+  "Einer presst, einer sichert, immer als Paar",
+  "Torseitig und ballseitig stehen",
+  "Bei der Flanke gehört der erste Kontakt uns",
+  "Zwei gegen eins: Gegner anlocken, dann querlegen"
+ ],
+ "materials": [
+  "2 Großfeldtore",
+  "4 Stangen",
+  "Viele Bälle",
+  "Leibchen in zwei Farben"
+ ],
+ "access": "abo",
+ "hidden": true,
+ "wartet_auf_ton": true,
+ "say_intro": "Seitenwechsel verteidigen. Zwei Abläufe laufen gleichzeitig. Vor dem einen Tor pressen und sichern die Innenverteidiger, nach dem Seitenwechsel kommt die Flanke, und auf der anderen Seite läuft ein Konter zwei gegen eins.",
+ "board": {
+  "lines": [
+   {
+    "type": "rect",
+    "x": 12,
+    "y": 4,
+    "w": 74,
+    "h": 47
+   },
+   {
+    "type": "line",
+    "x1": 49,
+    "y1": 4,
+    "x2": 49,
+    "y2": 51,
+    "dashed": true
+   }
+  ],
+  "goals": [
+   {
+    "x": 12,
+    "y": 27.5,
+    "side": "left",
+    "size": "gross"
+   },
+   {
+    "x": 86,
+    "y": 27.5,
+    "side": "right",
+    "size": "gross"
+   }
+  ],
+  "cones": [
+   {
+    "x": 70,
+    "y": 10,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 59,
+    "y": 22.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 59,
+    "y": 33.5,
+    "color": "orange",
+    "shape": "stange"
+   },
+   {
+    "x": 69,
+    "y": 41,
+    "color": "orange",
+    "shape": "stange"
+   }
+  ],
+  "players": [
+   {
+    "id": "k1",
+    "team": "t",
+    "x": 13.5,
+    "y": 27.5,
+    "label": "TW"
+   },
+   {
+    "id": "n5",
+    "team": "a",
+    "x": 22,
+    "y": 19.5,
+    "label": "5"
+   },
+   {
+    "id": "n6",
+    "team": "a",
+    "x": 22,
+    "y": 35.5,
+    "label": "6"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 33.5,
+    "y": 21.5,
+    "label": "11"
+   },
+   {
+    "id": "r7",
+    "team": "b",
+    "x": 33.5,
+    "y": 37,
+    "label": "7"
+   },
+   {
+    "id": "r16",
+    "team": "b",
+    "x": 48,
+    "y": 28.5,
+    "label": "16"
+   },
+   {
+    "id": "n8",
+    "team": "a",
+    "x": 43,
+    "y": 12,
+    "label": "8"
+   },
+   {
+    "id": "n4",
+    "team": "a",
+    "x": 51.5,
+    "y": 12,
+    "label": "4"
+   },
+   {
+    "id": "n10",
+    "team": "a",
+    "x": 43,
+    "y": 45,
+    "label": "10"
+   },
+   {
+    "id": "n9",
+    "team": "a",
+    "x": 51.5,
+    "y": 45,
+    "label": "9"
+   },
+   {
+    "id": "r2",
+    "team": "b",
+    "x": 61,
+    "y": 6.5,
+    "label": "2"
+   },
+   {
+    "id": "r14",
+    "team": "b",
+    "x": 66,
+    "y": 26,
+    "label": "14"
+   },
+   {
+    "id": "r3",
+    "team": "b",
+    "x": 60,
+    "y": 48.5,
+    "label": "3"
+   },
+   {
+    "id": "k2",
+    "team": "t",
+    "x": 83,
+    "y": 27.5,
+    "label": "TW"
+   },
+   {
+    "id": "T",
+    "team": "c",
+    "x": 70,
+    "y": 55.3,
+    "label": "T"
+   }
+  ],
+  "balls": [
+   {
+    "id": "b1",
+    "x": 48.6,
+    "y": 29.1
+   },
+   {
+    "id": "b2",
+    "x": 66.6,
+    "y": 26.6
+   },
+   {
+    "id": "s1",
+    "x": 73.5,
+    "y": 55.8
+   },
+   {
+    "id": "s2",
+    "x": 76,
+    "y": 55.8
+   }
+  ],
+  "steps": [
+   {
+    "label": "Links pressen, rechts zum Torwart",
+    "say": "Beide Seiten laufen gleichzeitig. Links spielt Spieler sechzehn auf Spieler elf. Spieler fünf geht drauf, und Spieler sechs sichert schräg hinter ihm ab. Rechts spielt Spieler vierzehn zum Torwart und läuft sich frei.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       34.1,
+       22.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n5",
+      "to": [
+       30.5,
+       21
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n6",
+      "to": [
+       25.5,
+       27.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b2",
+      "to": [
+       83.6,
+       28.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "r14",
+      "to": [
+       76,
+       19
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     }
+    ]
+   },
+   {
+    "label": "Ball rüber, Rollen tauschen",
+    "say": "Links geht der Ball rüber zu Spieler sieben. Jetzt presst Spieler sechs, und Spieler fünf fällt hinter ihn zurück. Rechts kommt der Ball vom Torwart zurück zu Spieler vierzehn.",
+    "moves": [
+     {
+      "who": "b1",
+      "to": [
+       34.1,
+       37.6
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "n6",
+      "to": [
+       30.5,
+       35.5
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "n5",
+      "to": [
+       25.5,
+       27
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b2",
+      "to": [
+       76.6,
+       19.6
+      ],
+      "type": "pass"
+     }
+    ]
+   },
+   {
+    "label": "Raus, nach innen, abgelegt",
+    "say": "Spieler vierzehn spielt raus zu Spieler zwei. Der passt nach innen auf Spieler vier, und Spieler vier legt direkt zurück auf Spieler vierzehn.",
+    "moves": [
+     {
+      "who": "b2",
+      "to": [
+       61.6,
+       7.1
+      ],
+      "type": "pass"
+     },
+     {
+      "who": "b2",
+      "to": [
+       52.1,
+       12.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b2",
+      "to": [
+       76.6,
+       19.6
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Seitenwechsel, der Konter startet",
+    "say": "Jetzt kommt der Seitenwechsel. Spieler drei sprintet außen nach vorn, und Spieler vierzehn spielt ihn lang an. Genau in dem Moment spielt Spieler sieben den linken Ball zu Spieler vier. Spieler neun startet sofort in die Tiefe.",
+    "moves": [
+     {
+      "who": "r3",
+      "to": [
+       44,
+       50.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "r3",
+      "to": [
+       31,
+       47
+      ],
+      "type": "lauf",
+      "after": true
+     },
+     {
+      "who": "b2",
+      "to": [
+       31.6,
+       47.6
+      ],
+      "type": "pass",
+      "delay": 0.8
+     },
+     {
+      "who": "b1",
+      "to": [
+       52.1,
+       12.6
+      ],
+      "type": "pass",
+      "delay": 0.3
+     },
+     {
+      "who": "n9",
+      "to": [
+       67,
+       33
+      ],
+      "type": "lauf",
+      "delay": 0.6
+     }
+    ]
+   },
+   {
+    "label": "Flanke, erster Kontakt klärt",
+    "say": "Spieler drei flankt, drinnen sind es vier gegen zwei. Spieler fünf und Spieler sechs nehmen ihre Läufer mit und bleiben zwischen Gegner und Tor. Spieler sechs ist zuerst am Ball und klärt weit raus. Kein Punkt für Team Rot.",
+    "moves": [
+     {
+      "who": "r11",
+      "to": [
+       20,
+       21
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n5",
+      "to": [
+       17,
+       23.5
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "r7",
+      "to": [
+       22.5,
+       32.5
+      ],
+      "type": "lauf"
+     },
+     {
+      "who": "n6",
+      "to": [
+       17.5,
+       31.5
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "r16",
+      "to": [
+       27,
+       28
+      ],
+      "type": "lauf",
+      "delay": 0.2
+     },
+     {
+      "who": "b2",
+      "to": [
+       18.1,
+       32.1
+      ],
+      "type": "pass",
+      "delay": 1.0
+     },
+     {
+      "who": "b2",
+      "to": [
+       30,
+       16
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   },
+   {
+    "label": "Zwei gegen eins: Punkt",
+    "say": "Auf der anderen Seite dribbelt Spieler vier auf Spieler vierzehn zu und lockt ihn raus. Dann legt er quer auf Spieler neun. Der schiebt ein, und das gibt einen Punkt für Team Neon. Danach tauschen die Rollen, und Spieler acht und Spieler zehn sind die nächsten Innenverteidiger.",
+    "moves": [
+     {
+      "who": "n4",
+      "to": [
+       62,
+       16
+      ],
+      "type": "dribbling",
+      "ball": "b1"
+     },
+     {
+      "who": "r14",
+      "to": [
+       69,
+       21
+      ],
+      "type": "lauf",
+      "delay": 0.3
+     },
+     {
+      "who": "b1",
+      "to": [
+       67.6,
+       33.6
+      ],
+      "type": "pass",
+      "after": true
+     },
+     {
+      "who": "b1",
+      "to": [
+       85.5,
+       31.5
+      ],
+      "type": "pass",
+      "after": true
+     }
+    ]
+   }
+  ],
+  "dims": [
+   {
+    "x1": 12,
+    "y1": 58.6,
+    "x2": 86,
+    "y2": 58.6,
+    "text": "45 m"
+   }
+  ]
+ },
+ "versions": [
+  {
+   "label": "Coaching-Punkt",
+   "say": "Jetzt zum Coaching-Punkt: Einer presst, der andere sichert ab, und das immer als Paar.",
+   "title": "Pressen und sichern zu zweit",
+   "text": "Der Innenverteidiger auf der Ballseite geht drauf, der andere steht schräg hinter ihm und sichert ab. Wechselt der Ball die Seite, tauschen beide die Rollen. Der Abstand zwischen den beiden bleibt klein, damit kein Pass durch die Mitte geht.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 13.5,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 22,
+      "y": 19.5,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 22,
+      "y": 35.5,
+      "label": "6"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 33.5,
+      "y": 21.5,
+      "label": "11"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 33.5,
+      "y": 37,
+      "label": "7"
+     },
+     {
+      "id": "r16",
+      "team": "b",
+      "x": 48,
+      "y": 28.5,
+      "label": "16"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 43,
+      "y": 12,
+      "label": "8"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 51.5,
+      "y": 12,
+      "label": "4"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 43,
+      "y": 45,
+      "label": "10"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 51.5,
+      "y": 45,
+      "label": "9"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 61,
+      "y": 6.5,
+      "label": "2"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 66,
+      "y": 26,
+      "label": "14"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 60,
+      "y": 48.5,
+      "label": "3"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 83,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 70,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b1",
+      "x": 34.1,
+      "y": 22.1
+     },
+     {
+      "id": "b2",
+      "x": 66.6,
+      "y": 26.6
+     },
+     {
+      "id": "s1",
+      "x": 73.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 76,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Einer drauf, einer sichert",
+      "say": "Spieler elf hat den Ball. Spieler fünf geht drauf, bis auf einen Meter. Spieler sechs rückt schräg hinter ihn und sichert ab, nicht neben ihn.",
+      "moves": [
+       {
+        "who": "n5",
+        "to": [
+         30.5,
+         21
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n6",
+        "to": [
+         25.5,
+         27.5
+        ],
+        "type": "lauf",
+        "delay": 0.1
+       }
+      ]
+     },
+     {
+      "label": "Pass rüber, Rollen tauschen",
+      "say": "Der Pass geht rüber zu Spieler sieben. Jetzt drehen sich die Rollen. Spieler sechs geht drauf, und Spieler fünf fällt schräg hinter ihn zurück.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         34.1,
+         37.6
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n6",
+        "to": [
+         30.5,
+         35.5
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n5",
+        "to": [
+         25.5,
+         27
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     },
+     {
+      "label": "Ball zurück, beide rücken raus",
+      "say": "Spieler sieben spielt zurück zu Spieler sechzehn. Beide schieben zusammen raus und bleiben eng beieinander. So geht kein Pass zwischen ihnen durch.",
+      "moves": [
+       {
+        "who": "b1",
+        "to": [
+         48.6,
+         29.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "n5",
+        "to": [
+         28,
+         23
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n6",
+        "to": [
+         28,
+         32
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "Coaching-Punkt",
+   "say": "Der zweite Coaching-Punkt: Gemeinsam das Tor schützen, torseitig und ballseitig.",
+   "title": "Torseitig und ballseitig",
+   "text": "Bei einer Flanke steht jeder Verteidiger zwischen seinem Gegenspieler und dem Tor, etwas zur Ballseite hin. So sieht er den Ball und den Gegner zugleich und kann sich nach dem Flug des Balls richten. Verteidiger und Torwart reden die ganze Zeit miteinander. Der erste Kontakt gehört uns.",
+   "board": {
+    "players": [
+     {
+      "id": "k1",
+      "team": "t",
+      "x": 13.5,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "n5",
+      "team": "a",
+      "x": 22,
+      "y": 19.5,
+      "label": "5"
+     },
+     {
+      "id": "n6",
+      "team": "a",
+      "x": 22,
+      "y": 35.5,
+      "label": "6"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 33.5,
+      "y": 21.5,
+      "label": "11"
+     },
+     {
+      "id": "r7",
+      "team": "b",
+      "x": 33.5,
+      "y": 37,
+      "label": "7"
+     },
+     {
+      "id": "r16",
+      "team": "b",
+      "x": 48,
+      "y": 28.5,
+      "label": "16"
+     },
+     {
+      "id": "n8",
+      "team": "a",
+      "x": 43,
+      "y": 12,
+      "label": "8"
+     },
+     {
+      "id": "n4",
+      "team": "a",
+      "x": 51.5,
+      "y": 12,
+      "label": "4"
+     },
+     {
+      "id": "n10",
+      "team": "a",
+      "x": 43,
+      "y": 45,
+      "label": "10"
+     },
+     {
+      "id": "n9",
+      "team": "a",
+      "x": 51.5,
+      "y": 45,
+      "label": "9"
+     },
+     {
+      "id": "r2",
+      "team": "b",
+      "x": 61,
+      "y": 6.5,
+      "label": "2"
+     },
+     {
+      "id": "r14",
+      "team": "b",
+      "x": 66,
+      "y": 26,
+      "label": "14"
+     },
+     {
+      "id": "r3",
+      "team": "b",
+      "x": 24,
+      "y": 51,
+      "label": "3"
+     },
+     {
+      "id": "k2",
+      "team": "t",
+      "x": 83,
+      "y": 27.5,
+      "label": "TW"
+     },
+     {
+      "id": "T",
+      "team": "c",
+      "x": 70,
+      "y": 55.3,
+      "label": "T"
+     }
+    ],
+    "balls": [
+     {
+      "id": "b2",
+      "x": 24.6,
+      "y": 51.6
+     },
+     {
+      "id": "s1",
+      "x": 73.5,
+      "y": 55.8
+     },
+     {
+      "id": "s2",
+      "x": 76,
+      "y": 55.8
+     }
+    ],
+    "steps": [
+     {
+      "label": "Läufer kommen, wir bleiben dran",
+      "say": "Spieler drei hat den Ball außen. Drinnen laufen drei Spieler von Team Rot aufs Tor. Spieler fünf und Spieler sechs bleiben zwischen Gegner und Tor. Spieler sechs hat seinen Mann und den Ball gleichzeitig im Blick.",
+      "moves": [
+       {
+        "who": "r11",
+        "to": [
+         20,
+         21
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n5",
+        "to": [
+         17,
+         23.5
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "r7",
+        "to": [
+         22.5,
+         32.5
+        ],
+        "type": "lauf"
+       },
+       {
+        "who": "n6",
+        "to": [
+         17.5,
+         31.5
+        ],
+        "type": "lauf",
+        "delay": 0.2
+       },
+       {
+        "who": "r16",
+        "to": [
+         27,
+         28
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
+        "who": "n6",
+        "to": [
+         24.6,
+         51.6
+        ],
+        "type": "blick",
+        "after": true,
+        "von": [
+         22.5,
+         32.5
+        ],
+        "dauer": 1.3
+       }
+      ]
+     },
+     {
+      "label": "Flanke, erster Kontakt klärt",
+      "say": "Die Flanke kommt flach an den ersten Pfosten. Spieler sechs ist vor Spieler sieben am Ball und klärt mit dem ersten Kontakt weit raus. Torwart und Verteidiger reden dabei die ganze Zeit.",
+      "moves": [
+       {
+        "who": "b2",
+        "to": [
+         18.1,
+         32.1
+        ],
+        "type": "pass"
+       },
+       {
+        "who": "b2",
+        "to": [
+         30,
+         16
+        ],
+        "type": "pass",
+        "after": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
