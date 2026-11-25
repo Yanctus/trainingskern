@@ -425,6 +425,12 @@ def _patch(a, b, pfad, out):
             if k in META or k == "audio" or (b[k] is None and a.get(k) in (None, [], "")):
                 continue
             _patch(a.get(k), b.get(k), f"{pfad}.{k}" if pfad else k, out)
+        # Innerhalb einer Einheit (nicht oben): Felder, die in der Datenbank noch einen Wert haben, in der neuen Datei aber fehlen,
+        # auf null setzen. Sonst bleibt z. B. ein altes "delay" an einem Schritt hängen (gefunden bei UE-397, 25.11.2026).
+        if pfad:
+            for k in a:
+                if k not in b and k not in META and a[k] not in (None, [], ""):
+                    out[f"{pfad}.{k}"] = None
     elif isinstance(a, list) and isinstance(b, list) and len(a) == len(b) and a and isinstance(a[0], (dict, list)):
         for i, (x, y) in enumerate(zip(a, b)):
             _patch(x, y, f"{pfad}.{i}", out)
