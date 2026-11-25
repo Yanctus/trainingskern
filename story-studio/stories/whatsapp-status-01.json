@@ -1,7 +1,7 @@
 {
   "titel": "WhatsApp-Status: Trainer? Dann schau her",
   "intro": false,
-  "musik": "ton/musik-elektro.mp3",
+  "musik": "ton/musik-elektro-2.mp3",
   "musikLaut": 0.15,
   "geraeusche": 0.6,
   "uebergang": "pinsel",
@@ -12,11 +12,13 @@
       "dach": "An alle Trainer",
       "zeilen": [
         "Training heute?",
-        "*Und kein Plan?*"
+        "Kein Plan?",
+        "*trainingskern.de*",
+        "*hilft dir!*"
       ],
-      "dauer": 3.8,
-      "sprecher": "Training heute? Und kein Plan?",
-      "sprecherAb": 1.6
+      "dauer": 5.2,
+      "sprecher": "Training heute und kein Plan? Trainingskern Punkt D E hilft dir!",
+      "sprecherAb": 0.5
     },
     {
       "typ": "punkte",
@@ -77,18 +79,18 @@
       "punkte": [
         "Über 100 neue Übungen im Monat",
         "Aufgebaut nach dem DFB",
-        "15 · 30 · 15 · 30 Minuten",
+        "15-30-15-30-System",
         "Anpassbar an deine Trainingszeit"
       ],
       "punktAb": [
         0.6,
-        3.4,
-        5.4,
-        8.2
+        3.7,
+        5.6,
+        9.1
       ],
-      "dauer": 11.6,
+      "dauer": 12.2,
       "uebergang": "knall",
-      "sprecher": "Jeden Monat über hundert neue Übungen. Aufgebaut nach dem DFB: fünfzehn, dreißig, fünfzehn, dreißig Minuten. Und anpassbar an deine Trainingszeit.",
+      "sprecher": "Jeden Monat über hundert neue Übungen. Aufgebaut nach dem DFB, im Fünfzehn-dreißig-fünfzehn-dreißig-System. Und anpassbar an deine Trainingszeit.",
       "sprecherAb": 0.5,
       "max": 4
     },
