@@ -54,3 +54,11 @@ Unter 20 m genau, ab 20 m auf Fünferschritte runden (27 -> 25, 36 -> 35), in fi
 ## Großfeld quer (Inhaber, 24.11.2026, mit UE-319 abgenommen)
 Ganzer Platz oder Dreiviertelfeld: Feld quer wie im Fernsehbild, Tore links/rechts, echte Platzlinien, `"massstab": "gross"` im
 Haupt-board, nur die Längen-Maßlinie. Einzelheiten in AUFTRAG.md („Großfeld QUER“), Vorbild bau/ue319.py.
+
+## Halbes Feld quer (Inhaber, 25.11.2026, Vorbild bau/ue352.py)
+Platzhälfte (oder ein Stück davon mit echtem Strafraum): wie im Fernsehbild, großes Tor rechts, Platzbreite von oben nach unten,
+Mittellinie links, echte Linien der Hälfte (Strafraum, Torraum, Strafraumbogen, halber Mittelkreis), `"massstab": "gross"`.
+Abbildung und Linien nur mit `bau/halbfeld.py` (`F = hf.Halbfeld(tief, breit)`, `F(d, q)` in Metern, `F.linien()`, `F.tor()`,
+`F.minitore(...)`, alte Skripte mit `F.von_hochkant(...)` + `hf.umrechnen(R)`). Richtungswörter in allen Texten anpassen
+(„vorn“, „an der Mittellinie“, „auf der anderen Seite“ statt oben/unten/links/rechts). Einzelheiten in AUFTRAG.md
+(„Halbes Feld QUER“).

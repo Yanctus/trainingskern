@@ -57,7 +57,48 @@ Du baust die Übungen EINER Woche als neue Einheiten (Entity `Einheit`) und läd
   `pruefen` entsprechend kleiner gerechnet). Nur die Längen-Maßlinie unten (rechts neben dem Tor ist kein Platz), die Breite steht
   in field_size. Trainer an der Seitenlinie unten, nahe der Stelle, wo er einspielt (kein Pass quer über den ganzen Platz).
   Spieler einer Kette stehen quer hintereinander: weit genug auseinander (pruefen meldet es sonst). Bequem: im Hochformat planen
-  und mit einer Umrechnung R() quer legen wie in ue319.py. Halbes Feld und kleiner bleibt wie bisher.
+  und mit einer Umrechnung R() quer legen wie in ue319.py. Ein halbes Feld liegt ebenfalls quer, aber nach eigener Regel
+  („Halbes Feld QUER“, gleich darunter). Kleinere Felder ohne echten Strafraum wie bisher (lange Felder: „Langes Feld QUER“).
+- Halbes Feld QUER (Inhaber, 25.11.2026; Vorbild bau/ue352.py, Hilfsfunktion bau/halbfeld.py):
+  WANN: Die Übung spielt auf einer Platzhälfte oder einem Stück davon mit echtem Strafraum und großem Tor (etwa 35-55 m tief,
+  volle oder fast volle Breite), z. B. „full half“, „half pitch“. Gilt für den Umbau von UE-314, 340, 366, 370, 380, 381, 402.
+  LAGE wie im Fernsehbild: großes Tor RECHTS (`"side": "right"`, `"size": "gross"`), die Platzbreite von oben nach unten
+  (y 3-52), die Mittellinie (bzw. das Feldende) am linken Rand, Team Neon greift nach rechts an. Passt das nicht zur Übung
+  (z. B. Team Rot greift an und der Text erzählt aus dessen Sicht), so legen, dass die Laufrichtung zum Text passt;
+  Tor links mit `Halbfeld(tor="links")`. Immer drehen, nie spiegeln (bend und drehen(gegen=...) bleiben).
+  `"massstab": "gross"` im Haupt-board (nicht in den Fassungen), Figuren dadurch kleiner; 3D-Abstand dann |dx| ≥ 5,9 ODER
+  |dy| ≥ 11,2 (regeln.py rechnet 8,2 bzw. 15,5 mal 0,72).
+  ABBILDUNG (nicht von Hand rechnen, `import halbfeld as hf; F = hf.Halbfeld(tief=50, breit=65)`): Eine Hälfte ist etwa 50 m
+  tief und 65 m breit und muss in der Waagerechten gestreckt werden, damit sie die Tafel füllt (x 10-90). Die Streckung wächst
+  ohne Knick vom Tor zur Mittellinie: an der Torlinie 1,39-mal so viel wie in der Breite (Strafraum, Torraum und Bogen wirken
+  fast echt), an der Mittellinie gut 2-mal (dort sind keine Linien, die verraten es). Senkrecht überall 49 Einheiten für die
+  Platzbreite. `F(d, q)` -> Tafelpunkt: d = Meter vor der Torlinie (0 = Torlinie), q = Meter von der OBEREN Seitenlinie
+  (beim Tor rechts = linke Seite des Angreifers). Kürzere Felder (`tief=35`) werden gleich gestreckt und stehen mittig.
+  `F.tiefe(x)` rechnet Tafel-x zurück in Meter.
+  LINIEN: `F.linien()` liefert Außenlinie (ihre linke Kante IST die Mittellinie), Strafraum (16,5 x 40,3 m), Torraum
+  (5,5 x 18,3 m), Strafraumbogen (Linienstücke, die App kennt keine Bögen) und ab 45 m Tiefe den halben Mittelkreis. Der
+  Mittelkreis ist absichtlich RUND im Maßstab der Breite gezeichnet (umgerechnet wäre er ein langes Oval): nur Zierde, niemand
+  danach ausrichten. Ohne Strafraum/Bogen/Kreis: `F.linien(strafraum=False, bogen=False, mittelkreis=False)`. Tore:
+  `[F.tor()] + F.minitore(10, 55)` (Minitore auf der Mittellinie, q in Metern; `d=` für eine andere Linie). Eigene Zonen und
+  Linien in Metern planen und mit F umrechnen (Rechteck aus den Ecken F(d0, q0) und F(d1, q1), gestrichelt), nicht genau auf
+  eine Platzlinie legen (sonst doppelte Linie; in ue352 beginnt die Mittelzone bei 18 m statt 16 m).
+  POSITIONEN: am besten in Metern planen wie ue352.py (POS = {"n9": (13, 33), ...}, Torwart ~2 m, Viererkette 8-12 m vor dem
+  eigenen Tor usw.). Aus einem alten Hochkant-Skript: `R = F.von_hochkant(x0, y0, x1, y1)` (altes Feld, Tor oben bei y0) und
+  `P, B, C, mv, ps, dr, drehen, bl = hf.umrechnen(R)`; das dreht auch Hürden und Leitern (huerde <-> huerde_ou, leiter <->
+  leiter_ou). Achtung: alte Hochkant-Felder waren nicht metergenau (Torwart und Kette standen oft zu nah am Tor) und der
+  Strafraum ist jetzt echt groß; danach jede Position in Metern prüfen (`F.tiefe(x)`) und neu setzen. `hf.am_fuss(p)` = Ball
+  am Fuß / Pass zum Spieler (+0,6), `hf.richt(a, b, 20)` = Blickkegel höchstens 20 Einheiten lang (beides in Tafelpunkten).
+  Wer im Hochformat nebeneinander stand (Ketten), steht jetzt hintereinander: in der Tiefe staffeln (die Verteidiger torseitig
+  versetzt), bis pruefen nichts mehr meldet. In Strafraumnähe ist ein Meter weniger breit (1,05 Einheiten) als im Mittelfeld
+  (über 2 Einheiten): Wer vor dem Tor steht, braucht in Metern mehr Abstand.
+  TRAINER unten an der Seitenlinie (y 55,3) nahe der Stelle, wo er einspielt, Ersatzbälle rechts daneben (y 55,8). Maßlinie nur
+  die Tiefe unten (`F.masslinie("50 m")`), nie rechts (dort steht das Tor); bei field_size „Halbes Spielfeld“ ohne Maßlinie.
+  RICHTUNGSWÖRTER: Alle Texte (say_intro, say, label, title, text, description, organisation, coaching_points) auf oben/unten/
+  links/rechts/Ecke durchsuchen. Aus „oben“ (Tor) wird „vorn“, „Richtung Tor“, „auf der Torlinie“; aus „unten“ (Mittellinie)
+  „hinten“, „an der Mittellinie“; links/rechts im Hochformat werden quer zu oben/unten, darum lieber „auf der Seite“, „außen“,
+  „auf der anderen Seite“, „zur Ballseite“. Steht in der runden.js-Zeile ein Richtungswort, eine neue Zeile melden.
+  PRÜFEN: `pruefen` 0 Treffer und 0 Hinweise, `blatt` ansehen (Strafraum nicht verzerrt, nichts verdeckt sich in 3D, Tor und
+  Minitore ganz auf der Tafel: das Großtor ragt bis x 95,5, Minitore an der Mittellinie bis x 6,8), dann $set wie üblich.
 - Langes Feld QUER (Inhaber, 24.11.2026, mit UE-317 abgenommen; Vorbild: bau/ue317.py): Ist das Feld deutlich länger als breit
   (Verhältnis ab etwa 1,3, z. B. 25 x 40 m), liegt die lange Seite waagrecht und das Feld füllt die Tafel (etwa x 9-89, y 4-51;
   in beiden Richtungen möglichst derselbe Maßstab, so groß wie möglich). Nie mehr ein schmales Hochkant-Feld in der Mitte der Tafel.
