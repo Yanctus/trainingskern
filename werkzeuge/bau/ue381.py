@@ -93,9 +93,9 @@ u = {"title": "Sechs gegen vier, dann Konter", "code": "UE-381", "kind": "Spielf
     "Die Sperre fällt weg. Die Flügelspieler von Team Rot dürfen zurück, es steht sechs gegen sechs. Jetzt müssen die Angreifer ihre Verteidiger bewegen. Erst kurz zum Ball kommen, dann in die Tiefe starten, und die Lücke ist offen.",
     sp(), [h.B("b1", *BT), h.B("b2", *B2)] + ERSATZ,
     [S("Die Flügel laufen mit zurück", "Der Trainer spielt Spieler sieben an. Sofort laufen beide Flügelspieler von Team Rot mit zurück. Spieler fünfzehn stellt Spieler sieben.",
-       zu("b1", POS["n7"]), lauf("r15", (26, 52), delay=0.3), lauf("r14", (18, 8), delay=0.3)),
+       zu("b1", POS["n7"]), lauf("r15", (24, 54), delay=0.3), lauf("r14", (18, 8), delay=0.3)),
      S("Kurz zeigen, dann in die Tiefe", "Spieler neun kommt kurz zum Ball, und Spieler drei geht mit. Dann dreht Spieler neun ab und startet in die Tiefe. Spieler sieben schaut hoch und spielt in den Lauf.",
-       lauf("n9", (16, 38)), lauf("r3", (14, 41), delay=0.3), lauf("n9", (8, 30), after=True), schau("n7", POS["n7"], (8, 30), after=True),
+       lauf("n9", (16, 38)), lauf("r3", (14, 43), delay=0.3), lauf("n9", (8, 30), after=True), schau("n7", POS["n7"], (8, 30), after=True),
        zu("b1", (8, 30), after=True)),
      S("Allein vor dem Torwart: Punkt", "Spieler neun ist durch und schiebt am Torwart vorbei ins Eck, und das gibt einen Punkt für Team Neon. Danach geht es weiter wie gehabt.",
        lauf("k1", (4, 28)), h.ps("b1", [90.3, 29.8], delay=0.3))])]}

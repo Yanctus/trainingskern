@@ -69,7 +69,7 @@ u = {"title": "Vier machen das Zentrum dicht", "code": "UE-333", "kind": "Spielf
        bl("r10", [62, 10], von=[29, 42], dauer=1.3), drehen("r10", [62, 10], delay=0.4), mv("r11", [62, 10], delay=0.3),
        ps("b1", fuss(62, 10), after=True)),
      S("Drei gegen eins: Punkt", "Jetzt ist es drei gegen eins. Spieler sechs muss raus zu Spieler elf, und der legt quer auf Spieler neun. Der schiebt ins Minitor, und das gibt einen Punkt für Team Rot.",
-       mv("n6", [57, 9.5]), mv("r9", [38, 9], delay=0.2), ps("b1", fuss(38, 9), delay=0.5), ps("b1", [48.5, 5.3], after=True))]),
+       mv("n6", [56, 6]), mv("r9", [38, 9], delay=0.2), ps("b1", fuss(38, 9), delay=0.8), ps("b1", [48.5, 5.3], after=True))]),
   V("Steigerung", "Und jetzt die zweite Steigerung: Nach jedem Angriff spielt der Trainer sofort den nächsten Ball ein.", "Trainer spielt sofort ein",
     "Nach einem Ballgewinn greifen zwei von Team Neon das Minitor an, hinten darf nur ein Spieler von Team Rot verteidigen. Ist der Angriff vorbei, spielt der Trainer sofort den nächsten Ball zu Team Rot. Die zwei Angreifer sprinten zurück in die Mittelzone, und der Block ordnet sich, bevor Team Rot durchspielen kann.",
     sp(), [B("b1", 47.1, 30.6)] + ERSATZ,

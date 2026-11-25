@@ -67,7 +67,7 @@ u = {"title": "Kompakt stehen, schnell kontern", "code": "UE-393", "kind": "Spie
      bl("n5", [61, 23.2]), ps("b1", f(54, 24), after=True), mv("n8", [50, 12], delay=0.5), mv("n8", [36, 12], after=True),
      mv("n10", [55, 45], delay=0.5), mv("n10", [38, 40], after=True), mv("r15", [30, 22], delay=0.7), mv("r16", [30, 34], delay=0.7)),
    S("Drei gegen zwei: Punkt", "Drei gegen zwei im letzten Drittel. Spieler neun dribbelt an, und Spieler fünfzehn muss raus. Der Pass geht zu Spieler acht, der frei ist und trifft, und das gibt einen Punkt für Team Neon. Danach spielt der Trainer den nächsten Ball wieder zu Team Rot.",
-     dr("n9", "b1", [40, 26]), mv("r15", [34, 24], delay=0.5), mv("n8", [28, 16], delay=0.5), ps("b1", f(28, 16), after=True), ps("b1", [7.3, 24.5], after=True))],
+     dr("n9", "b1", [40, 26]), mv("r15", [34, 28.5], delay=0.5), mv("n8", [28, 16], delay=0.5), ps("b1", f(28, 16), after=True), ps("b1", [7.3, 24.5], after=True))],
   "dims": DIMS},
  "versions": [
   V("Coaching-Punkt", "Jetzt zum Coaching-Punkt: Als Block schieben und nach innen lenken.", "Als Block schieben",
@@ -85,7 +85,7 @@ u = {"title": "Kompakt stehen, schnell kontern", "code": "UE-393", "kind": "Spie
     [S("Spieler zehn bindet einen", "Drei gegen zwei im letzten Drittel. Spieler zehn kommt mit Ball, und Spieler sechzehn muss raus zu ihm. Spieler neun zeigt sich und schaut zum Ball. Spieler acht läuft in den freien Raum.",
        mv("r16", [28, 37.5]), bl("n9", [32, 40], delay=0.3), ps("b1", f(31, 28), after=True), mv("n8", [27, 17], delay=0.6)),
      S("Kopf hoch, der Freie trifft: Punkt", "Spieler fünfzehn geht auf Spieler neun. Der hat Spieler acht schon gesehen, dreht auf und spielt quer. Spieler acht trifft, und das gibt einen Punkt für Team Neon.",
-       mv("r15", [28, 26.5]), bl("n9", [27, 17], von=[32, 40], dauer=1.3), drehen("n9", [27, 17], delay=0.4),
+       mv("r15", [27.5, 27.5]), bl("n9", [27, 17], von=[32, 40], dauer=1.3), drehen("n9", [27, 17], delay=0.4),
        ps("b1", f(27, 17), after=True), ps("b1", [7.3, 24], after=True))],
     dims=DIMS)]}
 json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)

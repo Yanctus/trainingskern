@@ -39,7 +39,7 @@ R7 = (12, 59)        # dort nimmt Spieler sieben den Abstoß an
 N9 = (11, 50)        # Spieler neun stellt den Rückpass zu
 FREI9 = (16, 46)     # dort löst sich Spieler neun nach dem Ballgewinn
 FANG = (21, 59.5)    # dort fängt Spieler acht den Pass ab
-SCHUSS = [90.4, 25.8]  # langes Eck (oberer Pfosten)
+SCHUSS = [90.4, 25.8]  # langes Eck (oberer Pfosten); Spieler neun zieht dafür bis q 34 nach innen, damit der Schuss nicht durch Spieler vier geht (Passbahn 25.11.)
 
 u = {"title": "Pressingfalle am Flügel", "code": "UE-314", "kind": "Spielform",
  "focuses": ["Verteidigen", "Umschalten", "Zusammenspiel"], "age_groups": ["C-Jugend", "B-Jugend"],
@@ -64,7 +64,7 @@ u = {"title": "Pressingfalle am Flügel", "code": "UE-314", "kind": "Spielform",
    S("Pass die Linie entlang, abgefangen", "Spieler sieben bleibt nur der Pass die Linie entlang. Genau darauf wartet Spieler acht. Er geht dazwischen und hat den Ball.",
      zu("b1", FANG), lauf("n8", FANG, delay=0.2), lauf("r1", (2, 37), delay=0.3)),
    S("Schnell zum Abschluss: Punkt", "Jetzt schnell. Spieler neun löst sich, und Spieler acht spielt flach auf ihn. Er zieht nach innen und schießt ins lange Eck. Das gibt einen Punkt für Team Neon. Der nächste Ball liegt wieder beim Torwart, und los geht es erst auf Kommando des Trainers.",
-     lauf("n9", FREI9), zu("b1", FREI9, after=True), h.dr("n9", "b1", X((12, 38)), after=True), h.ps("b1", SCHUSS, after=True))]},
+     lauf("n9", FREI9), zu("b1", FREI9, after=True), h.dr("n9", "b1", X((12, 34)), after=True), h.ps("b1", SCHUSS, after=True))]},
  "versions": [
   V("Coaching-Punkt", "Jetzt zum Coaching-Punkt: Erst stehen alle, dann pressen alle.", "Erst stehen, dann pressen",
     "Gepresst wird nur, wenn alle bereit stehen. Läuft einer zu früh allein los, ist hinter ihm der Weg frei, und mit zwei Pässen ist das Pressing überspielt. Also erst die Abstände prüfen und dann gemeinsam starten.",

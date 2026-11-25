@@ -83,7 +83,7 @@ u = {"title": "Elf gegen elf, nach außen lenken", "code": "UE-417", "kind": "Sp
     [S("Trainer spielt auf den Flügel", "Der Trainer spielt Spieler siebzehn ganz außen an. Spieler zwei geht raus, kommt aber nicht mehr ganz heran.",
        ps("b1", fu([30.5, 47.5])), mv("n2", [26, 47.5], delay=0.3)),
      S("Läufer mitnehmen", "Spieler neunzehn und Spieler einundzwanzig laufen in den Strafraum, Spieler zwanzig kommt hinterher. Jeder Verteidiger nimmt seinen Mann mit und bleibt zwischen ihm und unserem Tor stehen.",
-       mv("r19", [16, 30]), mv("n5", [13.5, 31], delay=0.2), mv("r21", [17, 21]), mv("n6", [14, 23], delay=0.2),
+       mv("r19", [16.5, 29]), mv("n5", [13.5, 31], delay=0.2), mv("r21", [17, 21]), mv("n6", [14, 23], delay=0.2),
        mv("r20", [26, 31], delay=0.3), mv("n4", [24, 33], delay=0.4)),
      S("Erster Kontakt, zweiter Ball", "Die Flanke kommt an den ersten Pfosten. Spieler fünf ist vor seinem Gegenspieler dran und köpft weit raus. Spieler vier holt sich den zweiten Ball.",
        ps("b1", fu([13.5, 31])), ps("b1", [28, 40], after=True), mv("n4", [27.4, 39.4], delay=0.8))],

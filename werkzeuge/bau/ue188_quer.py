@@ -22,6 +22,9 @@ NEU = {
     (67.5, 28): [44.5, 4.7],    # Spieler sieben etwas weiter von Spieler acht weg
     (53, 33.5): [53.2, 22.7],   # Spieler sechs geht zum Kopfball so nah an den Ball wie im Hochformat (der Abpraller geht nicht durch ihn)
     (30, 23): [39.5, 49.5],     # Blick von Spieler vier genau zum Trainer (der steht quer etwas anders)
+    # Nachtrag Passbahn (25.11.2026): Der hohe Ball kommt bei Spieler sechs runter (nicht bei Spieler acht), sonst fliegt der
+    # Kopfball aus Schritt 2 von Spieler acht aus durch Spieler sechs. Spieler acht steht 2,5 dahinter.
+    (55.6, 31.6): [52.7, 22.0],
 }
 FEST = {"s1": [28.5, 55.8], "s2": [26, 55.8]}
 # Eckhütchen kommen mit der Drehung auf die neuen Ecken.

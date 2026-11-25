@@ -66,7 +66,7 @@ u = {"title": "Viererkette presst und sichert", "code": "UE-302", "kind": "Übun
     [S("Kommando: Jetzt wird angegriffen", "Der Trainer spielt Spieler vier an und ruft: Frei! Spieler sechs rückt raus. Spieler vier spielt gleich weiter in die Mitte zu Spieler neun.",
        ps("b1", [41.1, 36.6]), mv("n6", [42.5, 31], delay=0.2), ps("b1", [50.6, 27.6], after=True)),
      S("Über außen", "Durch die Mitte geht nichts, Spieler fünf ist sofort bei Spieler neun. Also raus auf den Flügel. Spieler elf geht die Linie runter, Spieler zwei läuft mit. Die anderen fallen in den Strafraum zurück.",
-       mv("n5", [55, 23]), mv("r11", [23.5, 13], delay=0.3), ps("b1", [24.1, 13.6], delay=0.5), mv("n2", [30.5, 18], delay=0.5),
+       mv("n5", [55, 23]), mv("r11", [23.5, 13], delay=0.3), ps("b1", [24.1, 13.6], delay=0.5), mv("n2", [28, 19.5], delay=0.5),
        mv("n6", [41, 12.5], delay=0.7), mv("n5", [51.5, 15.5], after=True), mv("n3", [62, 14], delay=0.7), mv("r9", [47, 18.5], delay=1.0), mv("r7", [70, 20], delay=1.0)),
      S("Flanke geklärt", "Spieler elf flankt flach vor das Tor. Spieler sechs steht richtig, ist vor Spieler neun am Ball und klärt nach außen. Die Kette hat das Tor verteidigt, und der Trainer spielt den nächsten Ball an.",
        ps("b1", [41.6, 13.1]), ps("b1", [30, 30], after=True))], dims=DIMS)]}

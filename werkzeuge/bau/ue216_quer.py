@@ -12,7 +12,11 @@ import json, sys
 
 X0, X1, Y0, Y1 = 32, 68, 3, 57          # Feld im Hochformat
 FX0, FX1, FY0, FY1 = 13, 85, 4, 51      # Feld quer
-VERSATZ = {}
+VERSATZ = {
+    # Nachtrag Passbahn (25.11.2026): Gegner neben die Passbahn, Ablauf und Sprechtext unverändert.
+    (44, 32): (40.3, 31.9),   # Spieler sechs geht frontal auf Spieler vier zu (quer [46.5, 14.8]) statt in den Pass zu Spieler acht
+    (56, 17): (53.8, 16.1),   # Spieler drei schiebt zu Spieler neun (quer [67.5, 32.5]) statt in die Ablage zu Spieler acht
+}
 # Trainer und Ersatzbälle unten an der Seitenlinie (vorher rechts neben dem Feld, das wäre quer unter der Tafel).
 FEST = {"T": [40, 55.3], "s1": [43.5, 55.8], "s2": [46, 55.8]}  # id -> Platz quer
 # Nachtrag (Koordinator, 24.11.2026): organisation wird nicht eingesprochen, darum nach dem Drehen angepasst (Tore links und rechts).

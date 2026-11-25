@@ -67,7 +67,7 @@ u = {"title": "Hohes Pressing im Zonenrondo", "code": "UE-354", "kind": "Spielfo
     "Rennen alle drei auf den Ball, ist hinter ihnen alles frei. Ein Pass, und der Gegner hat Platz und Zeit zum Abschluss. Darum läuft einer an, die anderen zwei bleiben eng dahinter und machen die Mitte zu. Kontrolliert pressen, nicht wild.",
     sp(), [B("b1", *fu(86, 15))] + ERSATZ,
     [S("Alle drei in die Ecke", "So nicht. Spieler dreizehn hat den Ball in der Ecke, und alle drei Verteidiger rennen auf ihn drauf. Ein Pass quer durch die Zone, und Spieler sechzehn steht völlig frei und hat alle Zeit zum Schießen.",
-       mv("n2", [80, 12.5]), mv("n10", [78, 19]), mv("n5", [79.5, 25]), ps("b1", fu(60, 48.5), delay=1.0),
+       mv("n2", [80, 12.5]), mv("n10", [78, 19]), mv("n5", [76, 23]), ps("b1", fu(60, 48.5), delay=1.0),
        dr("r16", "b1", [64, 37], after=True)),
      S("Zurück und eng zusammen", "Jetzt schnell zurück. Spieler fünf läuft Spieler sechzehn an, die anderen zwei stellen sich eng zwischen Ball und Tor. So kommt kein freier Schuss mehr.",
        mv("n5", [66, 31.5]), mv("n10", [62, 24], delay=0.2), mv("n2", [71, 22], delay=0.2))]),

@@ -71,7 +71,7 @@ u = {"title": "Drei Zonen, als Block pressen", "code": "UE-356", "kind": "Spielf
    S("Pass nach innen abgefangen", "Spieler siebzehn ist eingeklemmt und spielt quer nach innen. Spieler zehn hat das kommen sehen. Er geht dazwischen, und der Konter läuft.",
      mv("n10", [44, 31.5], delay=0.3), pf("b1", [44, 31.5])),
    S("Vier gegen drei: Punkt", "Spieler zehn treibt den Ball in die vordere Zone, er ist der vierte Mann. Spieler vierzehn muss raus, und Spieler neun ist frei. Er schießt ins lange Eck, und das gibt einen Punkt für Team Neon. Danach spielt der Trainer neu ein, auf die Spitzen oder ins Mittelfeld zu Team Rot.",
-     dr("n10", "b1", [47, 42.5]), mv("r14", [47.5, 46], delay=0.3), pf("b1", [55, 48.5], after=True),
+     dr("n10", "b1", [47, 42.5]), mv("r14", [41.5, 46], delay=0.3), pf("b1", [55, 48.5], after=True),
      mv("k2", [53.5, 54.6], after=True), ps("b1", [46.5, 56], after=True))],
   "dims": DIMS},
  "versions": [

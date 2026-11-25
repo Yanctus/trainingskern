@@ -71,7 +71,7 @@ u = {"title": "Dreierkette mit zwei Sechsern", "code": "UE-400", "kind": "Spielf
        ps("b1", fu(POS["r3"])), mv("n4", [38, 36], delay=0.3), mv("n8", [48, 36], delay=0.3), mv("n2", [28, 26], delay=0.3),
        mv("n5", [44, 27], delay=0.3), mv("n6", [61, 25], delay=0.3)),
      S("Alle zurück, Strafraum zu", "Spieler drei spielt lang auf Spieler elf, der hinter die Kette startet. Jetzt laufen alle zurück. Spieler zwei bleibt an ihm dran, die anderen machen den Strafraum zu.",
-       mv("r11", [25, 19]), ps("b1", [25.6, 19.6], delay=0.3), mv("n2", [28, 18], delay=0.3), mv("n5", [44, 15], delay=0.4),
+       mv("r11", [21, 19]), ps("b1", [21.6, 19.6], delay=0.3), mv("n2", [24.5, 18], delay=0.3), mv("n5", [44, 15], delay=0.4),
        mv("n6", [58, 19], delay=0.4), mv("n4", [37, 26], delay=0.4), mv("n8", [55, 29], delay=0.4))],
     dims=DIMS),
   V("Steigerung", "Und jetzt die Steigerung: Der Springer spielt für Team Rot mit.", "Springer spielt mit",
@@ -83,6 +83,6 @@ u = {"title": "Dreierkette mit zwei Sechsern", "code": "UE-400", "kind": "Spielf
        ps("b1", fu(POS["r11"])), mv("n2", [24, 27], delay=0.3), mv("n4", [33, 33], delay=0.3), mv("n5", [42, 24.5], delay=0.3),
        mv("n6", [57, 23], delay=0.3), mv("n8", [47, 33], delay=0.3)),
      S("Flanke in die Mitte geklärt", "Spieler fünf schaut kurz über die Schulter zu Spieler neun. Dann kommt die Flanke, und Spieler fünf ist vor ihm am Ball und köpft ihn weg.",
-       bl("n5", POS["r9"]), mv("r9", [52, 13], after=True), mv("n5", [50.5, 14.5], delay=1.1), ps("b1", [51.1, 15.1], delay=1.2), ps("b1", [76, 20], after=True))],
+       bl("n5", POS["r9"]), mv("r9", [52.5, 12], after=True), mv("n5", [50.5, 14.5], delay=1.1), ps("b1", [51.1, 15.1], delay=1.2), ps("b1", [76, 20], after=True))],
     dims=DIMS)]}
 json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)

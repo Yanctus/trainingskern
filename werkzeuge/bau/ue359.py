@@ -46,7 +46,7 @@ u = {"title": "Sechs Pässe, dann ins Minitor", "code": "UE-359", "kind": "Spiel
  "board": {"lines": LINES, "goals": TORE, "cones": ecken(25, 5, 50, 50), "players": sp(), "balls": [B("b1", *F("n5"))] + ERSATZ, "dims": DIMS,
   "steps": [
    S("Pass eins und zwei", "Team Neon hält den Ball und zählt mit. Spieler fünf spielt quer zu Spieler sechs, der gleich weiter zu Spieler drei. Das sind zwei.",
-     ps("b1", F("n6")), ps("b1", F("n3"), after=True), mv("r9", [31, 36], delay=0.6), mv("r11", [46, 46], delay=0.2)),
+     ps("b1", F("n6")), ps("b1", F("n3"), after=True), mv("r9", [33, 35], delay=0.6), mv("r11", [46, 46], delay=0.2)),
    S("Pass drei und vier", "Spieler drei spielt hoch zu Spieler acht, und der Ball geht direkt weiter auf die andere Seite zu Spieler vier. Spieler sieben läuft hinterher.",
      ps("b1", F("n8")), ps("b1", F("n4"), after=True), mv("r9", [34, 31], delay=0.3), mv("r7", [52, 12], delay=0.5)),
    S("Kopf hoch vor der Annahme", "Spieler zehn bietet sich innen an. Bevor der Ball kommt, schaut er zum Ball und sieht, wo die Verteidiger stehen. Spieler vier spielt ihn an. Das ist Pass fünf.",

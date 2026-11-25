@@ -55,7 +55,7 @@ u = {"title": "Flanken klären im 5 gegen 5", "code": "UE-308", "kind": "Spielfo
     [S("Falsche Seite, Blick zum Stürmer", "Der Ball ist rechts außen bei Spieler sieben. Spieler sechs steht noch auf der falschen Seite von Spieler neun. Ein Blick über die Schulter, dann läuft er vor ihm vorbei auf die Ballseite.",
        bl("n6", [43.5, 21]), mv("n6", [39.5, 16], after=True), mv("n6", [48, 17], after=True)),
      S("Vor dem Stürmer am Ball: Punkt", "Spieler sieben flankt. Spieler neun läuft ein, aber Spieler sechs ist vor ihm am Ball und klärt durch das linke Stangentor, und das gibt einen Punkt für Team Neon.",
-       ps("b1", [48.6, 17.6], bend=-0.15), mv("r9", [46, 22.5], delay=0.3), ps("b1", [26.5, 55.5], after=True))], dims=DIMS),
+       ps("b1", [48.6, 17.6], bend=-0.15), mv("r9", [50.5, 21.5], delay=0.3), ps("b1", [26.5, 55.5], after=True))], dims=DIMS),
   V("Coaching-Punkt", "Der zweite Coaching-Punkt: Ruhig bleiben, wenn Zeit ist.", "Erst annehmen, dann passen",
     "Nicht jede Flanke muss blind weg. Hat der Verteidiger Zeit, nimmt er den Ball mit dem ersten Kontakt sauber an. Dann geht der Kopf hoch, und er spielt einem Mitspieler in den Lauf. Der schließt durch das Stangentor ab.",
     sp((55, 7.3), **K2), [B("b1", 76.1, 20.6)] + ERSATZ,

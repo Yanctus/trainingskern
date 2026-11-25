@@ -44,7 +44,7 @@ u = {"title": "Direkt, dann zwei Kontakte", "code": "UE-367", "kind": "Spielform
  "board": {"lines": LINES, "cones": CONES, "players": sp(), "balls": [B("b1", 60.1, 12.6)] + ERSATZ,
   "steps": [
    S("Eröffnung, Spieler neun direkt", "Spieler zwei eröffnet zu Spieler neun. Der muss direkt spielen, also schaut er schon vorher, wo Spieler vier steht. Der Ball geht sofort weiter.",
-     bl("n9", [32.5, 32]), ps("b1", fu("n9"), after=True), mv("r10", [42, 13], delay=0.3), ps("b1", fu("n4"), after=True)),
+     bl("n9", [32.5, 32]), ps("b1", fu("n9"), after=True), mv("r10", [40, 9], delay=0.3), ps("b1", fu("n4"), after=True)),
    S("Spieler vier hat zwei Kontakte", "Jetzt darf Spieler vier annehmen. Erster Kontakt zur Seite, mit dem zweiten spielt er zu Spieler acht. Spieler sieben läuft ihn an, kommt aber zu spät.",
      dr("n4", "b1", [35, 44]), mv("r7", [36, 48.5], delay=0.2), ps("b1", fu("n8"), after=True)),
    S("Ein Kontakt zu viel: Ballwechsel", "Spieler acht müsste direkt spielen. Er stoppt den Ball aber erst. Ein Kontakt zu viel, also gehört der Ball jetzt Team Rot. Spieler elf geht dazwischen und nimmt ihn mit. Ab jetzt spielt Team Rot in derselben Reihenfolge.",
