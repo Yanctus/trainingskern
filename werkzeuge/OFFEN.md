@@ -63,9 +63,11 @@
 - Fertig (25.11.2026): Woche 9 und Wochen 17 bis 42 = UE-342 bis UE-418. Der Plan U15-U17 ist damit komplett. Dubletten (nur
   „U15-U17“ ergänzt): UE-006, UE-098, UE-168, UE-174, UE-206, UE-218, UE-220. Frei: UE-407, UE-413, UE-419.
 - Alle U15-Einheiten (UE-298 bis UE-418) warten aufs Einsprechen (hidden + wartet_auf_ton).
-- Offen beim Plan U15-U17: „Additional Practices“ (Torwart GK-…, Einzeltraining 1 to 1-…) aus dem Drive, falls gewünscht.
-- Frage an den Inhaber: Sollen halbe Plätze (z. B. UE-314, UE-340, UE-352, UE-366, UE-370, UE-381) auch als Großfeld quer
-  gezeichnet werden? Bisher Regel: halbes Feld bleibt normal.
+- „Additional Practices“ (17 Torwart, 30 Einzeltraining) des U15-Plans sind byte-gleich mit dem U12-Plan: bei UE-251 bis UE-297
+  nur „U15-U17“ ergänzt (25.11.2026).
+- Halbe Plätze quer (Inhaber, 25.11.2026: ja): UE-314, UE-340, UE-352, UE-366, UE-370, UE-380, UE-381, UE-402 (alle noch nicht
+  eingesprochen) werden umgebaut. Schon eingesprochene halbe Plätze (UE-140, UE-141, UE-234) erst mit dem Neueinsprechen
+  nach dem 22.12. (Richtungswörter in den Sätzen), wie Gruppe 3.
 - Nächster Code: siehe README (Status).
 
 ## 3. Ideen und offene Fragen

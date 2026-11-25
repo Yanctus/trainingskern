@@ -347,6 +347,7 @@ Alle neuen Einheiten: access frei, sichtbar, Regeln 0 Hinweise, Vergleich 0 Abwe
 | UE-174 | Sechs Sekunden Gegenpressing | 70-P6 Win the Ball Back Within 6 Seconds SSG (U15-U17, Woche 38) | (bestehend) | Dublette (Rohdaten byte-gleich mit U12-Woche 14): nur „U15-U17“ ergänzt. Hat weiter Jugendtore. Code UE-407 bleibt frei. |
 | UE-168 | Doppelpass und Eins gegen Eins | Technical Passing 1 v 1 Defending 68-P3 (U15-U17, Woche 40) | (bestehend) | Dublette (Rohdaten byte-gleich mit U12-Woche 12): nur „U15-U17“ ergänzt. Code UE-413 bleibt frei. |
 | UE-206 | Viererkette schiebt zum Ball | Back 4s Positioning Based on Ball Position 10-P7 (U15-U17, Woche 42) | (bestehend) | Dublette (Rohdaten byte-gleich mit U12-Woche 28): nur „U15-U17“ ergänzt. Code UE-419 bleibt frei. |
+| UE-251 bis UE-297 | Torwart- und Einzeltraining | Additional Practices GK-… und 1 to 1-… (U15-U17) | (bestehend) | Alle 47 PDFs byte-gleich mit dem U12-Plan: nur „U15-U17“ ergänzt. |
 
 ## Nachträge
 
