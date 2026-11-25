@@ -1,12 +1,21 @@
 import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe import *
-# 78-P8 (U15-U17, Woche 25 Phase 1): Build from the Back & Defending the Counter (Wave Game). Halbe Spielfeldhälfte, 40 Yards tief
-# (37 m, gerundet 35 m), Breite nach der Skizze etwa 62 Yards (57 m, gerundet 55 m). Kein Großfeld: halbes Feld, 13 Spieler, daher
-# normale Figuren. Das Feld ist breiter als tief und füllt die Tafel quer: x 9-89, Tor oben (y 4), Mittellinie gestrichelt bei y 47,
-# dahinter (bis y 55) der Wartebereich mit Dummys und Trainer wie im PDF. Strafraum und Torraum nach der PDF-Skizze, Halbkreis weggelassen.
-# Um 180 Grad gedreht (im PDF liegt das große Tor unten): Team Neon baut nach unten auf, Team Rot greift nach oben an.
-# Pink (Viererkette) + grüner Torwart -> Team Neon (n1 TW, 2, 4, 5, 3; durch die Drehung steht 2 links, 3 rechts), Blau (erste
-# Angreifergruppe 7, 9, 10, 11) -> Team Rot, Nummern wie im PDF. Die zweite Angreifergruppe (gelb 2, 8, 6, 3) steht nur im Text
-# (an der Mittellinie ist neben Blau und Trainer kein Platz ohne Verdecken in 3D). Ein Trainer statt zwei.
+import hilfe as h
+import halbfeld as hf
+# 78-P8 (U15-U17, Woche 25 Phase 1): Build from the Back & Defending the Counter (Wave Game). „Full half of a field“: Spielfeld bis
+# zur Mittellinie (in der Skizze etwa 53 Yards = 49 m tief, gerundet 50 m) und etwa 61 Yards (56 m, gerundet 55 m) breit.
+# HALBES FELD QUER (Inhaber, 25.11.2026; Vorbild bau/ue352.py, Regel in AUFTRAG.md): Hälfte wie im Fernsehbild, echte Linien
+# (Strafraum, Torraum, Strafraumbogen, halber Mittelkreis), "massstab": "gross". Abbildung mit bau/halbfeld.py, Positionen in
+# Metern geplant (d = Meter vor der Torlinie, q = Meter von der oberen Seitenlinie).
+# Lage: großes Tor LINKS (Halbfeld(tor="links")). Die Übung erzählt aus Sicht der Viererkette (Team Neon), die vom eigenen Tor
+# weg auf die Minitore aufbaut: so spielt Team Neon nach rechts, Team Rot kontert nach links. Gegenüber der PDF-Skizze (Tor
+# unten) im Uhrzeigersinn gedreht, nicht gespiegelt (PDF links = oben).
+# Die gestrichelte Linie liegt wie im PDF 40 Yards (37 m, im Text gerundet 35 m) vor dem Tor, darauf außen zwei Minitore und
+# dazwischen vier Dummys (Stangen). Dahinter bis zur Mittellinie warten die Angreifer: Jetzt ist Platz, darum stehen beide
+# Gruppen auf der Tafel. Ein Trainer statt zwei, unten an der Seitenlinie auf Höhe der Dummys (spielt zum Torwart und den
+# Angreifern den neuen Ball). Großfeldtor (nur C- und B-Jugend).
+# Pink (Viererkette) + grüner Torwart -> Team Neon (n1 TW, 2, 4, 5, 3; Spieler 3 oben, Spieler 2 unten wie nach der Drehung
+# des PDF), Blau (erste Angreifergruppe 7, 9, 10, 11) -> Team Rot, Nummern wie im PDF. Gelb (zweite Gruppe 2, 8, 6, 3) -> Team
+# Rot, wegen doppelter Nummern plus zehn: 2 -> 12, 8 -> 18, 6 -> 16, 3 -> 13.
 # Grundform nach PDF und Video (0:13-0:28): Trainer spielt zum Torwart, Kette macht das Feld breit, Torwart -> 4 -> 5 -> 3, Spieler 3
 # trifft ins Minitor; dann spielt der Trainer den Angreifern einen neuen Ball zu (im PDF nicht gezeigt, wer den Angreifern den Ball
 # gibt: Annahme), vier gegen vier aufs große Tor.
@@ -18,29 +27,39 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # Keine Dublette: UE-166 (03-P3, vier gegen vier mit Konter auf zwei Minitore, ohne Aufbauphase), UE-177 (78-P3), UE-212 (78-P6),
 # UE-242 (78-P7), UE-250 (78-P12, Springer spielen ein, drei Minitore) und UE-320 (78-P4) haben keine Aufbauphase ohne Gegner
 # und keine Wellen.
-T = P("T", "c", 48.5, 51, "T")
-ERSATZ = [B("s1", 52.5, 52.5), B("s2", 45, 52.5)]
-POS = {"n1": (49, 9.5), "n2": (15, 27), "n4": (36, 21), "n5": (61, 21), "n3": (83, 27),
-       "r11": (24, 47), "r10": (36, 47), "r9": (62, 47), "r7": (74, 47)}
+F = hf.Halbfeld(tief=50, breit=55, tor="links")   # Tor links (x 10), Mittellinie rechts (x 90), y 3-52
+def X(p): return F(*p)                 # Meter -> Tafel
+def fu(p): return hf.am_fuss(F(*p))    # Pass zum Spieler / Ball am Fuß
+def zu(ball, p, **k): return h.ps(ball, fu(p), **k)
+def lauf(who, p, **k): return h.mv(who, X(p), **k)
+def schau(who, p, ziel, weit=20, **k): return h.bl(who, hf.richt(X(p), X(ziel), weit), **k)
+LINIE = 37                             # gestrichelte Linie mit Minitoren und Dummys (40 Yards vor dem Tor)
+T = h.P("T", "c", 60, 55.3, "T")       # unten an der Seitenlinie, kurz vor der Linie mit den Dummys
+ERSATZ = [h.B("s1", 63.5, 55.8), h.B("s2", 66, 55.8)]
+POS = {"n1": (3, 26), "n3": (18, 8), "n5": (13, 22), "n4": (12, 40), "n2": (18, 50),
+       "r7": (40, 6), "r9": (40, 19), "r10": (40, 33), "r11": (40, 47),
+       "r12": (47, 6), "r18": (47, 19), "r16": (47, 33), "r13": (47, 47)}
 def sp(**k):
     d = dict(POS); d.update(k)
-    return [P(i, "a", x, y, "TW") if i == "n1" else P(i, "a" if i[0] == "n" else "b", x, y, i[1:]) for i, (x, y) in d.items()] + [T]
-def fu(p): return [round(p[0] + 0.6, 1), round(p[1] + 0.6, 1)]
-LINES = [rect(9, 4, 80, 51), rect(24, 4, 50, 15), rect(36.5, 4, 25, 6), line(9, 47, 89, 47)]
-TORE = [{"x": 49, "y": 4, "side": "top", "size": "gross"}, {"x": 15.6, "y": 47, "side": "bottom"}, {"x": 82.4, "y": 47, "side": "bottom"}]
-CONES = [C(x, 49.5, shape="stange") for x in (28.4, 42, 56.3, 69.4)]
-DIMS = dims(9, 89, 4, 47, "55 m", "35 m", rx=95)
-BREIT = {"n2": [12, 30], "n4": [34, 16], "n5": [63, 16], "n3": [86, 30]}
-ANGRIFF = {"r10": [36, 37], "r9": [51, 34], "r7": [66, 38], "r11": [26, 40]}
-ZURUECK = {"n2": [22, 25], "n4": [38, 22], "n5": [58, 22], "n3": [72, 25]}
+    return [h.P(i, "a" if i[0] == "n" else "b", *X(p), "TW" if i == "n1" else i[1:]) for i, p in d.items()] + [T]
+def li(a, b):
+    p, q = X(a), X(b)
+    return line(p[0], p[1], q[0], q[1])
+LINES = F.linien() + [li((LINIE, 0), (LINIE, 55))]
+TORE = [F.tor()] + F.minitore(4.5, 50.5, d=LINIE)
+CONES = [C(*X((LINIE, q)), shape="stange") for q in (14, 24.5, 30, 40.5)]
+BREIT = {"n3": (21, 2), "n5": (12, 19), "n4": (12, 37), "n2": (21, 53)}
+ANGRIFF = {"r9": (25, 25), "r10": (30, 37), "r7": (31, 11), "r11": (30, 50)}
+ZURUECK = {"n3": (17, 13), "n5": (12, 22), "n4": (12, 36), "n2": (17, 46)}
+MINI_OBEN, MINI_UNTEN = [round(X((LINIE, 4.5))[0] - 0.3, 1), X((LINIE, 4.5))[1]], [round(X((LINIE, 50.5))[0] - 0.3, 1), X((LINIE, 50.5))[1]]
 
 u = {"title": "Erst aufbauen, dann verteidigen", "code": "UE-370", "kind": "Spielform",
  "focuses": ["Verteidigen", "Umschalten", "Passspiel"], "age_groups": ["C-Jugend", "B-Jugend"],
  "altersbereiche": ["U15-U17"], "duration_minutes": 15, "players_min": 13, "players_max": 13,
- "field_size": "55 x 35 m",
- "description": "Ein Wellenspiel für die Viererkette. Sie baut mit dem Torwart ohne Gegner auf und spielt in ein Minitor an der Mittellinie. Sofort kommen vier Angreifer und kontern vier gegen vier aufs große Tor, die Kette muss schnell umschalten und eng zusammenrücken. Zwei Gruppen Angreifer wechseln sich ab, Welle um Welle.",
- "organisation": ["Aufbauen: Eine Spielfeldhälfte, etwa 55 mal 35 Meter, mit großem Tor. An der Mittellinie stehen außen zwei Minitore und dazwischen vier Dummys.",
-  "Verteilen: Team Neon mit Torwart und Viererkette steht im Feld. Zwei Gruppen von Team Rot mit je vier Angreifern warten an den Dummys. Der Trainer steht mit vielen Bällen an der Mittellinie.",
+ "field_size": "55 x 50 m",
+ "description": "Ein Wellenspiel für die Viererkette auf einer Spielfeldhälfte. Sie baut mit dem Torwart ohne Gegner auf und spielt in eines der zwei Minitore, 35 Meter vor dem eigenen Tor. Sofort kommen vier Angreifer und kontern vier gegen vier aufs große Tor, die Kette muss schnell umschalten und eng zusammenrücken. Zwei Gruppen Angreifer wechseln sich ab, Welle um Welle.",
+ "organisation": ["Aufbauen: Eine Spielfeldhälfte, 55 Meter breit, mit großem Tor. 35 Meter vor dem Tor ist eine Linie abgesteckt, außen darauf zwei Minitore, dazwischen vier Dummys. Dahinter bis zur Mittellinie ist Platz zum Warten.",
+  "Verteilen: Team Neon mit Torwart und Viererkette steht im Feld. Zwei Gruppen von Team Rot mit je vier Angreifern warten hinter den Dummys. Der Trainer steht mit vielen Bällen an der Seitenlinie, auf Höhe der Dummys.",
   "Ablauf: Der Trainer spielt zum Torwart. Die Viererkette baut ohne Gegner breit auf und spielt in ein Minitor. Dann kommen die ersten vier Angreifer, bekommen einen neuen Ball vom Trainer und spielen vier gegen vier aufs große Tor. Erobert Team Neon den Ball, kontert es auf die Minitore.",
   "Wertung und Wechsel: Jeder Treffer gibt einen Punkt. Ist der Angriff vorbei, bekommt der Torwart den nächsten Ball, und die zweite Gruppe Angreifer ist dran."],
  "organisation_show": ORG,
@@ -48,38 +67,38 @@ u = {"title": "Erst aufbauen, dann verteidigen", "code": "UE-370", "kind": "Spie
  "materials": ["1 Großfeldtor", "2 Minitore", "4 Dummys", "Viele Bälle", "Leibchen in zwei Farben"],
  "access": "abo", "hidden": True, "wartet_auf_ton": True,
  "say_intro": "Erst aufbauen, dann verteidigen. Die Viererkette spielt sich ohne Gegner heraus, und gleich danach kommt der Konter von vier Angreifern.",
- "board": {"lines": LINES, "goals": TORE, "cones": CONES, "players": sp(), "balls": [B("b1", 49.1, 51.6)] + ERSATZ,
+ "board": {"massstab": "gross", "lines": LINES, "goals": TORE, "cones": CONES, "players": sp(), "balls": [h.B("b1", *hf.am_fuss([T["x"], T["y"]]))] + ERSATZ,
   "steps": [
-   S("Trainer spielt zum Torwart", "Der Trainer spielt den Ball zum Torwart. Sofort macht die Viererkette das Feld breit. Die Außenverteidiger gehen ganz raus an die Linie.",
-     ps("b1", fu(POS["n1"])), *[mv(i, p, delay=0.4) for i, p in BREIT.items()]),
+   S("Trainer spielt zum Torwart", "Der Trainer spielt den Ball zum Torwart. Sofort macht die Viererkette das Feld breit. Die Außenverteidiger gehen ganz raus an die Seitenlinie.",
+     zu("b1", POS["n1"]), *[lauf(i, p, delay=0.4) for i, p in BREIT.items()]),
    S("Aufbau ohne Gegner", "Noch stört keiner. Der Torwart spielt kurz zu Spieler vier, der spielt quer zu Spieler fünf, und weiter geht es raus zu Spieler drei.",
-     ps("b1", fu(BREIT["n4"])), ps("b1", fu(BREIT["n5"]), after=True), ps("b1", fu(BREIT["n3"]), after=True)),
+     zu("b1", BREIT["n4"]), zu("b1", BREIT["n5"], after=True), zu("b1", BREIT["n3"], after=True)),
    S("Ins Minitor, jetzt kommen sie", "Spieler drei dribbelt an und schiebt ins Minitor. Das gibt einen Punkt für Team Neon. Genau das ist das Zeichen für die vier Angreifer.",
-     dr("n3", "b1", [84, 39]), ps("b1", [82.4, 46.7], after=True)),
+     h.dr("n3", "b1", X((31, 4))), h.ps("b1", MINI_OBEN, after=True)),
    S("Umschalten, eng zusammen", "Die Angreifer laufen los, und der Trainer spielt Spieler neun einen neuen Ball zu. Spieler vier schaut sofort, wo die Angreifer sind. Die ganze Kette sprintet zurück und rückt eng zusammen.",
-     *[mv(i, p) for i, p in ANGRIFF.items()], ps("s1", fu(ANGRIFF["r9"]), delay=0.8), bl("n4", ANGRIFF["r9"], delay=0.3),
-     *[mv(i, p, delay=0.7) for i, p in ZURUECK.items()]),
+     *[lauf(i, p) for i, p in ANGRIFF.items()], zu("s1", ANGRIFF["r9"], delay=0.8, bend=2), schau("n4", BREIT["n4"], ANGRIFF["r9"], delay=0.3),
+     *[lauf(i, p, delay=0.7) for i, p in ZURUECK.items()]),
    S("Durch die Lücke: Punkt für Rot", "Zwischen Spieler vier und Spieler fünf ist noch eine Lücke. Spieler neun nimmt den Ball mit und zieht sofort ab. Das gibt einen Punkt für Team Rot. Danach bekommt der Torwart den nächsten Ball, und die zweite Gruppe Angreifer ist dran.",
-     ps("s1", [54, 4.3]))],
-  "dims": DIMS},
+     h.ps("s1", [10.3, 30.4]))],
+  "dims": F.masslinie("50 m")},
  "versions": [
   V("Coaching-Punkt", "Jetzt zum Coaching-Punkt: Einer presst, die anderen sichern ab.", "Einer presst, drei sichern",
     "Geht ein Innenverteidiger raus und presst, rücken die anderen drei sofort ein. Der Nebenmann sichert hinter ihm ab, die Außenverteidiger schieben zur Mitte. So bleibt die Kette eng, der Pass durch die Mitte ist zu, und der Angreifer muss nach außen spielen.",
-    sp(r9=(60, 38), r10=(47, 35), r7=(85, 36), r11=(14, 36), n5=(60, 22), n4=(38, 21), n3=(76, 23), n2=(25, 24), n1=(49, 8)),
-    [B("b1", 60.6, 38.6)] + ERSATZ,
+    sp(n1=(4, 27.5), n3=(18, 7), n5=(14, 20), n4=(13, 34), n2=(18, 46), r9=(29, 20), r10=(26, 34), r7=(27, 5), r11=(27, 51)),
+    [h.B("b1", *fu((29, 20)))] + ERSATZ,
     [S("Spieler fünf presst", "Spieler neun kommt mit Ball. Spieler fünf geht raus und presst. Spieler vier rückt ein, sichert hinter ihm ab und schaut, wo Spieler zehn steht. Die Außenverteidiger schieben mit zur Mitte.",
-       dr("r9", "b1", [59, 33]), mv("n5", [60, 28.5], delay=0.2), mv("n4", [47, 21], delay=0.2), mv("n3", [69, 21], delay=0.2),
-       mv("n2", [32, 22], delay=0.2), bl("n4", [47, 35], after=True)),
+       h.dr("r9", "b1", X((25, 21))), lauf("n5", (20.5, 21), delay=0.2), lauf("n4", (12, 28.5), delay=0.2), lauf("n3", (15, 12.5), delay=0.2),
+       lauf("n2", (16.5, 41.5), delay=0.2), schau("n4", (12, 28.5), (26, 34), after=True)),
      S("Mitte zu, nach außen gelenkt", "Der Pass auf Spieler zehn ist zu, da steht Spieler vier. Spieler neun bleibt nur der Ball nach außen zu Spieler sieben. Genau dahin will die Kette ihn haben.",
-       ps("b1", [85.6, 36.6]))]),
+       zu("b1", (27, 5)))]),
   V("Coaching-Punkt", "Der zweite Coaching-Punkt: Ball gewonnen, sofort kontern.", "Ball gewonnen, sofort kontern",
     "Hält der Torwart den Ball oder fängt die Kette einen Pass ab, geht es sofort nach vorn. Die Angreifer sind dann weit aufgerückt und kommen nicht schnell genug zurück. Ein Außenverteidiger startet hoch und breit, der Torwart spielt ihn direkt an, und der Konter geht auf ein Minitor.",
-    sp(n1=(49, 8), n4=(38, 10), n5=(60, 10), n2=(26, 20), n3=(72, 20), r9=(44, 26), r10=(55, 26), r11=(30, 36), r7=(82, 30)),
-    [B("b1", 55.6, 26.6)] + ERSATZ,
+    sp(n1=(3, 27.5), n5=(8, 20), n4=(8, 39), n3=(14, 10), n2=(14, 46), r9=(18, 30), r10=(23, 19), r11=(28, 42), r7=(25, 5)),
+    [h.B("b1", *fu((23, 19)))] + ERSATZ,
     [S("Der Torwart hält", "Spieler zehn schießt aus der Drehung, aber der Torwart hält den Ball fest. Spieler zwei startet schon nach außen.",
-       ps("b1", [49.6, 8.6]), mv("n2", [20, 33], delay=0.6)),
+       zu("b1", (3, 27.5)), lauf("n2", (22, 51), delay=0.6)),
      S("Kopf hoch, schnell raus", "Der Torwart schaut sofort nach vorn und sieht Spieler zwei frei an der Linie. Er spielt ihn direkt an.",
-       bl("n1", [32, 22.5]), ps("b1", [20.6, 33.6], after=True)),
+       schau("n1", (3, 27.5), (22, 51)), zu("b1", (22, 51), after=True)),
      S("Konter ins Minitor: Punkt", "Spieler zwei nimmt den Ball mit, ist schneller als Spieler elf und schiebt ins Minitor. Das gibt einen Punkt für Team Neon.",
-       dr("n2", "b1", [17, 41]), mv("r11", [24, 40], delay=0.3), ps("b1", [15.6, 46.7], after=True))])]}
+       h.dr("n2", "b1", X((32, 50.5))), lauf("r11", (28, 45), delay=0.3), h.ps("b1", MINI_UNTEN, after=True))])]}
 json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)

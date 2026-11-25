@@ -20,7 +20,7 @@
  "field_size": "Volle Breite x 40 m",
  "description": "Acht gegen acht auf einer Hälfte in voller Breite. Team Rot baut mit dem Torwart auf und will den Ball zu seinem Zehner in der Endzone bringen, der auf zwei Minitore abschließt. Team Neon wartet, bis Team Rot den ersten Pass nach vorn spielt. Dann pressen alle gemeinsam, erobern den Ball und gehen schnell aufs große Tor.",
  "organisation": [
-  "Aufbauen: Eine Hälfte in voller Breite, etwa 40 Meter lang. Oben steht das große Tor mit Torwart, unten zwei Minitore. Davor ist eine Endzone für den Zehner von Team Rot abgesteckt.",
+  "Aufbauen: Eine Hälfte in voller Breite, etwa 40 Meter lang. Auf der Torlinie steht das große Tor mit Torwart, am anderen Ende zwei Minitore. Davor ist eine Endzone für den Zehner von Team Rot abgesteckt.",
   "Verteilen: Team Rot mit Torwart und sieben Feldspielern, einer davon wartet als Zehner in der Endzone. Team Neon presst mit acht Spielern. Der Trainer steht mit Bällen an der Seitenlinie.",
   "Ablauf: Der Torwart eröffnet. Sobald Team Rot den ersten Pass nach vorn spielt, presst Team Neon gemeinsam. Nach dem Ballgewinn schnell abschließen oder den Ball sichern und ruhig aufbauen. Kommt Team Rot durch, spielt es auf den Zehner, und der schließt auf ein Minitor ab.",
   "Wertung: Jeder Treffer von Team Neon ins große Tor gibt einen Punkt. Trifft der Zehner ein Minitor, gibt das einen Punkt für Team Rot. Der Trainer startet neu, mal beim Torwart, mal mit einem Ball von der Seite."
@@ -49,61 +49,110 @@
  "wartet_auf_ton": true,
  "say_intro": "Hoch pressen nach dem Signal. Acht gegen acht auf einer Hälfte. Team Rot baut vom Torwart aus auf, und mit dem ersten Pass nach vorn geht bei Team Neon die Jagd los.",
  "board": {
+  "massstab": "gross",
   "lines": [
    {
     "type": "rect",
-    "x": 9,
-    "y": 4,
-    "w": 80,
-    "h": 47
+    "x": 17.5,
+    "y": 3.0,
+    "w": 65.0,
+    "h": 49.0
    },
    {
     "type": "rect",
-    "x": 24.2,
-    "y": 4,
-    "w": 49.6,
-    "h": 19.3
+    "x": 61.3,
+    "y": 12.3,
+    "w": 21.2,
+    "h": 30.4
    },
    {
     "type": "rect",
-    "x": 37.8,
-    "y": 4,
-    "w": 22.5,
-    "h": 6.4
+    "x": 76.3,
+    "y": 20.6,
+    "w": 6.2,
+    "h": 13.8
    },
    {
     "type": "line",
-    "x1": 9,
-    "y1": 27.9,
-    "x2": 89,
-    "y2": 27.9,
+    "x1": 61.3,
+    "y1": 22.0,
+    "x2": 58.2,
+    "y2": 23.5,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 58.2,
+    "y1": 23.5,
+    "x2": 56.2,
+    "y2": 25.4,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 56.2,
+    "y1": 25.4,
+    "x2": 55.5,
+    "y2": 27.5,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 55.5,
+    "y1": 27.5,
+    "x2": 56.2,
+    "y2": 29.6,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 56.2,
+    "y1": 29.6,
+    "x2": 58.2,
+    "y2": 31.5,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 58.2,
+    "y1": 31.5,
+    "x2": 61.3,
+    "y2": 33.0,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 52.4,
+    "y1": 3.0,
+    "x2": 52.4,
+    "y2": 52.0,
     "dashed": true
    },
    {
     "type": "line",
-    "x1": 9,
-    "y1": 43.8,
-    "x2": 89,
-    "y2": 43.8,
+    "x1": 30.2,
+    "y1": 3.0,
+    "x2": 30.2,
+    "y2": 52.0,
     "dashed": true
    }
   ],
   "goals": [
    {
-    "x": 49,
-    "y": 4,
-    "side": "top",
+    "x": 82.5,
+    "y": 27.5,
+    "side": "right",
     "size": "gross"
    },
    {
-    "x": 17.6,
-    "y": 51,
-    "side": "bottom"
+    "x": 17.5,
+    "y": 8.3,
+    "side": "left"
    },
    {
-    "x": 80.4,
-    "y": 51,
-    "side": "bottom"
+    "x": 17.5,
+    "y": 46.7,
+    "side": "left"
    }
   ],
   "cones": [],
@@ -111,119 +160,119 @@
    {
     "id": "r1",
     "team": "b",
-    "x": 48,
-    "y": 6.5,
+    "x": 80.3,
+    "y": 27.5,
     "label": "TW"
    },
    {
     "id": "r6",
     "team": "b",
-    "x": 39,
-    "y": 12,
+    "x": 73.2,
+    "y": 19.6,
     "label": "6"
    },
    {
     "id": "r5",
     "team": "b",
-    "x": 57,
-    "y": 14,
+    "x": 71.9,
+    "y": 36.2,
     "label": "5"
    },
    {
     "id": "r12",
     "team": "b",
-    "x": 12,
-    "y": 18,
+    "x": 66.4,
+    "y": 5.3,
     "label": "12"
    },
    {
     "id": "r13",
     "team": "b",
-    "x": 84,
-    "y": 20,
+    "x": 65.0,
+    "y": 49.7,
     "label": "13"
    },
    {
     "id": "r14",
     "team": "b",
-    "x": 48,
-    "y": 23,
+    "x": 58.9,
+    "y": 27.9,
     "label": "14"
    },
    {
     "id": "r15",
     "team": "b",
-    "x": 30,
-    "y": 24,
+    "x": 57.4,
+    "y": 13.6,
     "label": "15"
    },
    {
     "id": "r16",
     "team": "b",
-    "x": 57,
-    "y": 48,
+    "x": 24.0,
+    "y": 33.2,
     "label": "16"
    },
    {
     "id": "n11",
     "team": "a",
-    "x": 21,
-    "y": 28,
+    "x": 50.7,
+    "y": 7.5,
     "label": "11"
    },
    {
     "id": "n9",
     "team": "a",
-    "x": 39,
-    "y": 28,
+    "x": 49.0,
+    "y": 21.1,
     "label": "9"
    },
    {
     "id": "n7",
     "team": "a",
-    "x": 66,
-    "y": 26,
+    "x": 54.1,
+    "y": 39.9,
     "label": "7"
    },
    {
     "id": "n10",
     "team": "a",
-    "x": 48,
-    "y": 39,
+    "x": 41.8,
+    "y": 29.0,
     "label": "10"
    },
    {
     "id": "n8",
     "team": "a",
-    "x": 30,
-    "y": 42,
+    "x": 38.1,
+    "y": 17.3,
     "label": "8"
    },
    {
     "id": "n2",
     "team": "a",
-    "x": 84,
-    "y": 37,
+    "x": 43.7,
+    "y": 47.5,
     "label": "2"
    },
    {
     "id": "n4",
     "team": "a",
-    "x": 39,
-    "y": 45,
+    "x": 31.2,
+    "y": 23.4,
     "label": "4"
    },
    {
     "id": "n3",
     "team": "a",
-    "x": 12,
-    "y": 40,
+    "x": 36.1,
+    "y": 5.3,
     "label": "3"
    },
    {
     "id": "T",
     "team": "c",
-    "x": 68,
+    "x": 58,
     "y": 55.3,
     "label": "T"
    }
@@ -231,17 +280,17 @@
   "balls": [
    {
     "id": "b1",
-    "x": 48.6,
-    "y": 7.1
+    "x": 80.9,
+    "y": 28.1
    },
    {
     "id": "s1",
-    "x": 71.5,
+    "x": 61.5,
     "y": 55.8
    },
    {
     "id": "s2",
-    "x": 74,
+    "x": 64,
     "y": 55.8
    }
   ],
@@ -253,8 +302,8 @@
      {
       "who": "b1",
       "to": [
-       39.6,
-       12.6
+       73.8,
+       20.2
       ],
       "type": "pass"
      }
@@ -267,16 +316,16 @@
      {
       "who": "b1",
       "to": [
-       30.6,
-       24.6
+       58.0,
+       14.2
       ],
       "type": "pass"
      },
      {
       "who": "n11",
       "to": [
-       30,
-       24
+       57.4,
+       13.6
       ],
       "type": "blick",
       "delay": 0.4
@@ -284,8 +333,8 @@
      {
       "who": "n11",
       "to": [
-       24.5,
-       23.5
+       54.9,
+       10.5
       ],
       "type": "lauf",
       "after": true
@@ -293,8 +342,8 @@
      {
       "who": "n9",
       "to": [
-       35,
-       20
+       60.5,
+       18.1
       ],
       "type": "lauf",
       "delay": 0.8
@@ -302,8 +351,8 @@
      {
       "who": "n8",
       "to": [
-       31,
-       32.5
+       50.7,
+       14.3
       ],
       "type": "lauf",
       "delay": 0.8
@@ -311,8 +360,8 @@
      {
       "who": "n4",
       "to": [
-       43,
-       36
+       40.0,
+       25.6
       ],
       "type": "lauf",
       "delay": 1.0
@@ -320,8 +369,8 @@
      {
       "who": "n10",
       "to": [
-       51,
-       31
+       52.4,
+       28.6
       ],
       "type": "lauf",
       "delay": 1.0
@@ -335,16 +384,16 @@
      {
       "who": "b1",
       "to": [
-       33.5,
-       31.5
+       54.7,
+       18.7
       ],
       "type": "pass"
      },
      {
       "who": "n8",
       "to": [
-       33,
-       31
+       54.1,
+       18.1
       ],
       "type": "lauf",
       "delay": 0.2
@@ -352,8 +401,8 @@
      {
       "who": "r14",
       "to": [
-       52,
-       27
+       60.5,
+       30.9
       ],
       "type": "lauf",
       "delay": 0.3
@@ -367,16 +416,16 @@
      {
       "who": "b1",
       "to": [
-       35.6,
-       20.6
+       61.1,
+       18.7
       ],
       "type": "pass"
      },
      {
       "who": "b1",
       "to": [
-       53,
-       4.3
+       82.9,
+       29.6
       ],
       "type": "pass",
       "after": true
@@ -384,8 +433,8 @@
      {
       "who": "r1",
       "to": [
-       46,
-       6.5
+       80.3,
+       24.9
       ],
       "type": "lauf",
       "delay": 0.3
@@ -395,17 +444,10 @@
   ],
   "dims": [
    {
-    "x1": 9,
+    "x1": 17.5,
     "y1": 58.6,
-    "x2": 89,
+    "x2": 82.5,
     "y2": 58.6,
-    "text": "Volle Breite"
-   },
-   {
-    "x1": 95,
-    "y1": 4,
-    "x2": 95,
-    "y2": 51,
     "text": "40 m"
    }
   ]
@@ -421,119 +463,119 @@
      {
       "id": "r1",
       "team": "b",
-      "x": 48,
-      "y": 6.5,
+      "x": 80.3,
+      "y": 27.5,
       "label": "TW"
      },
      {
       "id": "r6",
       "team": "b",
-      "x": 39,
-      "y": 12,
+      "x": 73.2,
+      "y": 19.6,
       "label": "6"
      },
      {
       "id": "r5",
       "team": "b",
-      "x": 57,
-      "y": 14,
+      "x": 71.9,
+      "y": 36.2,
       "label": "5"
      },
      {
       "id": "r12",
       "team": "b",
-      "x": 12,
-      "y": 18,
+      "x": 66.4,
+      "y": 5.3,
       "label": "12"
      },
      {
       "id": "r13",
       "team": "b",
-      "x": 84,
-      "y": 20,
+      "x": 65.0,
+      "y": 49.7,
       "label": "13"
      },
      {
       "id": "r14",
       "team": "b",
-      "x": 48,
-      "y": 23,
+      "x": 58.9,
+      "y": 27.9,
       "label": "14"
      },
      {
       "id": "r15",
       "team": "b",
-      "x": 30,
-      "y": 24,
+      "x": 57.4,
+      "y": 13.6,
       "label": "15"
      },
      {
       "id": "r16",
       "team": "b",
-      "x": 57,
-      "y": 48,
+      "x": 24.0,
+      "y": 33.2,
       "label": "16"
      },
      {
       "id": "n11",
       "team": "a",
-      "x": 21,
-      "y": 28,
+      "x": 50.7,
+      "y": 7.5,
       "label": "11"
      },
      {
       "id": "n9",
       "team": "a",
-      "x": 39,
-      "y": 28,
+      "x": 49.0,
+      "y": 21.1,
       "label": "9"
      },
      {
       "id": "n7",
       "team": "a",
-      "x": 66,
-      "y": 26,
+      "x": 54.1,
+      "y": 39.9,
       "label": "7"
      },
      {
       "id": "n10",
       "team": "a",
-      "x": 48,
-      "y": 39,
+      "x": 41.8,
+      "y": 29.0,
       "label": "10"
      },
      {
       "id": "n8",
       "team": "a",
-      "x": 30,
-      "y": 42,
+      "x": 38.1,
+      "y": 17.3,
       "label": "8"
      },
      {
       "id": "n2",
       "team": "a",
-      "x": 84,
-      "y": 37,
+      "x": 43.7,
+      "y": 47.5,
       "label": "2"
      },
      {
       "id": "n4",
       "team": "a",
-      "x": 39,
-      "y": 45,
+      "x": 31.2,
+      "y": 23.4,
       "label": "4"
      },
      {
       "id": "n3",
       "team": "a",
-      "x": 12,
-      "y": 40,
+      "x": 36.1,
+      "y": 5.3,
       "label": "3"
      },
      {
       "id": "T",
       "team": "c",
-      "x": 68,
+      "x": 58,
       "y": 55.3,
       "label": "T"
      }
@@ -541,38 +583,38 @@
     "balls": [
      {
       "id": "b1",
-      "x": 39.6,
-      "y": 12.6
+      "x": 73.8,
+      "y": 20.2
      },
      {
       "id": "s1",
-      "x": 71.5,
+      "x": 61.5,
       "y": 55.8
      },
      {
       "id": "s2",
-      "x": 74,
+      "x": 64,
       "y": 55.8
      }
     ],
     "steps": [
      {
       "label": "Pass in die Mitte",
-      "say": "Spieler sechs spielt in die Mitte auf Spieler vierzehn. Sofort schiebt Team Neon zusammen. Spieler zehn kommt von vorn, Spieler neun von hinten.",
+      "say": "Spieler sechs spielt in die Mitte auf Spieler vierzehn. Sofort schiebt Team Neon zusammen. Spieler neun kommt von vorn, Spieler zehn von hinten.",
       "moves": [
        {
         "who": "b1",
         "to": [
-         48.6,
-         23.6
+         59.5,
+         28.5
         ],
         "type": "pass"
        },
        {
         "who": "n10",
         "to": [
-         49,
-         30.5
+         52.4,
+         28.6
         ],
         "type": "lauf",
         "delay": 0.4
@@ -580,8 +622,8 @@
        {
         "who": "n9",
         "to": [
-         43,
-         21
+         63.5,
+         24.1
         ],
         "type": "lauf",
         "delay": 0.4
@@ -589,8 +631,8 @@
        {
         "who": "n7",
         "to": [
-         57,
-         24
+         63.5,
+         34.7
         ],
         "type": "lauf",
         "delay": 0.6
@@ -598,8 +640,8 @@
        {
         "who": "n8",
         "to": [
-         36,
-         34
+         49.0,
+         22.6
         ],
         "type": "lauf",
         "delay": 0.6
@@ -613,16 +655,16 @@
        {
         "who": "b1",
         "to": [
-         55.5,
-         18.5
+         65.6,
+         34.5
         ],
         "type": "pass"
        },
        {
         "who": "n7",
         "to": [
-         55,
-         18
+         65.0,
+         33.9
         ],
         "type": "lauf",
         "delay": 0.2
@@ -636,8 +678,8 @@
        {
         "who": "n7",
         "to": [
-         52,
-         12.5
+         70.6,
+         30.9
         ],
         "type": "dribbling",
         "ball": "b1"
@@ -645,8 +687,8 @@
        {
         "who": "r1",
         "to": [
-         45,
-         6.5
+         80.3,
+         30.9
         ],
         "type": "lauf",
         "delay": 0.4
@@ -654,8 +696,8 @@
        {
         "who": "b1",
         "to": [
-         51.5,
-         4.3
+         82.9,
+         25.4
         ],
         "type": "pass",
         "after": true
@@ -665,17 +707,10 @@
     ],
     "dims": [
      {
-      "x1": 9,
+      "x1": 17.5,
       "y1": 58.6,
-      "x2": 89,
+      "x2": 82.5,
       "y2": 58.6,
-      "text": "Volle Breite"
-     },
-     {
-      "x1": 95,
-      "y1": 4,
-      "x2": 95,
-      "y2": 51,
       "text": "40 m"
      }
     ]
@@ -691,119 +726,119 @@
      {
       "id": "r1",
       "team": "b",
-      "x": 48,
-      "y": 6.5,
+      "x": 80.3,
+      "y": 27.5,
       "label": "TW"
      },
      {
       "id": "r6",
       "team": "b",
-      "x": 39,
-      "y": 12,
+      "x": 73.2,
+      "y": 19.6,
       "label": "6"
      },
      {
       "id": "r5",
       "team": "b",
-      "x": 57,
-      "y": 14,
+      "x": 71.9,
+      "y": 36.2,
       "label": "5"
      },
      {
       "id": "r12",
       "team": "b",
-      "x": 12,
-      "y": 18,
+      "x": 66.4,
+      "y": 5.3,
       "label": "12"
      },
      {
       "id": "r13",
       "team": "b",
-      "x": 84,
-      "y": 20,
+      "x": 65.0,
+      "y": 49.7,
       "label": "13"
      },
      {
       "id": "r14",
       "team": "b",
-      "x": 48,
-      "y": 23,
+      "x": 58.9,
+      "y": 27.9,
       "label": "14"
      },
      {
       "id": "r15",
       "team": "b",
-      "x": 30,
-      "y": 24,
+      "x": 57.4,
+      "y": 13.6,
       "label": "15"
      },
      {
       "id": "r16",
       "team": "b",
-      "x": 57,
-      "y": 48,
+      "x": 24.0,
+      "y": 33.2,
       "label": "16"
      },
      {
       "id": "n11",
       "team": "a",
-      "x": 21,
-      "y": 28,
+      "x": 50.7,
+      "y": 7.5,
       "label": "11"
      },
      {
       "id": "n9",
       "team": "a",
-      "x": 39,
-      "y": 28,
+      "x": 49.0,
+      "y": 21.1,
       "label": "9"
      },
      {
       "id": "n7",
       "team": "a",
-      "x": 66,
-      "y": 26,
+      "x": 54.1,
+      "y": 39.9,
       "label": "7"
      },
      {
       "id": "n10",
       "team": "a",
-      "x": 48,
-      "y": 39,
+      "x": 41.8,
+      "y": 29.0,
       "label": "10"
      },
      {
       "id": "n8",
       "team": "a",
-      "x": 30,
-      "y": 42,
+      "x": 38.1,
+      "y": 17.3,
       "label": "8"
      },
      {
       "id": "n2",
       "team": "a",
-      "x": 84,
-      "y": 37,
+      "x": 43.7,
+      "y": 47.5,
       "label": "2"
      },
      {
       "id": "n4",
       "team": "a",
-      "x": 39,
-      "y": 45,
+      "x": 31.2,
+      "y": 23.4,
       "label": "4"
      },
      {
       "id": "n3",
       "team": "a",
-      "x": 12,
-      "y": 40,
+      "x": 36.1,
+      "y": 5.3,
       "label": "3"
      },
      {
       "id": "T",
       "team": "c",
-      "x": 68,
+      "x": 58,
       "y": 55.3,
       "label": "T"
      }
@@ -811,17 +846,17 @@
     "balls": [
      {
       "id": "b1",
-      "x": 84.6,
-      "y": 20.6
+      "x": 65.6,
+      "y": 50.3
      },
      {
       "id": "s1",
-      "x": 71.5,
+      "x": 61.5,
       "y": 55.8
      },
      {
       "id": "s2",
-      "x": 74,
+      "x": 64,
       "y": 55.8
      }
     ],
@@ -833,16 +868,16 @@
        {
         "who": "n2",
         "to": [
-         83,
-         26
+         60.5,
+         49.0
         ],
         "type": "lauf"
        },
        {
         "who": "n2",
         "to": [
-         78,
-         29
+         57.4,
+         45.2
         ],
         "type": "dribbling",
         "after": true,
@@ -852,21 +887,21 @@
      },
      {
       "label": "Nachrücken, Spieler sieben startet",
-      "say": "Sofort rücken Spieler zehn und Spieler sieben nach. Spieler zwei schaut hoch, Spieler sieben startet in die Tiefe hinter Spieler fünf.",
+      "say": "Sofort rücken Spieler zehn und Spieler sieben nach. Spieler zwei schaut hoch, Spieler sieben startet in die Tiefe zwischen Spieler fünf und Spieler sechs.",
       "moves": [
        {
         "who": "n10",
         "to": [
-         70,
-         33
+         52.4,
+         39.2
         ],
         "type": "lauf"
        },
        {
         "who": "n7",
         "to": [
-         64,
-         14
+         73.2,
+         27.9
         ],
         "type": "lauf",
         "delay": 0.3
@@ -874,8 +909,8 @@
        {
         "who": "n2",
         "to": [
-         64,
-         14
+         70.9,
+         30.4
         ],
         "type": "blick",
         "delay": 0.3
@@ -883,8 +918,8 @@
        {
         "who": "n9",
         "to": [
-         44,
-         17
+         62.0,
+         24.1
         ],
         "type": "lauf",
         "delay": 0.4
@@ -898,16 +933,25 @@
        {
         "who": "b1",
         "to": [
-         64.6,
-         14.6
+         73.8,
+         28.5
         ],
         "type": "pass"
        },
        {
+        "who": "r1",
+        "to": [
+         79.8,
+         24.1
+        ],
+        "type": "lauf",
+        "delay": 0.3
+       },
+       {
         "who": "b1",
         "to": [
-         51,
-         4.3
+         82.9,
+         30
         ],
         "type": "pass",
         "after": true
@@ -917,17 +961,10 @@
     ],
     "dims": [
      {
-      "x1": 9,
+      "x1": 17.5,
       "y1": 58.6,
-      "x2": 89,
+      "x2": 82.5,
       "y2": 58.6,
-      "text": "Volle Breite"
-     },
-     {
-      "x1": 95,
-      "y1": 4,
-      "x2": 95,
-      "y2": 51,
       "text": "40 m"
      }
     ]

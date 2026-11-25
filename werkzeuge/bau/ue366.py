@@ -1,13 +1,21 @@
 import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe import *
-# 13-P11 (U15-U17, Woche 24 Phase 6): Defending the Overload (Overload Game). Eine Spielfeldhälfte in voller Breite
-# (Feld x 9-89, y 4-51), großes Tor mit Torwart, zwei Minitore an der Mittellinie für den Konter der Verteidiger.
-# Kein Großfeld quer: halbes Feld (AUFTRAG „Halbes Feld und kleiner bleibt wie bisher“, wie UE-314/UE-340). Keine Maßlinien,
-# das PDF nennt keine Maße (field_size „Halbes Spielfeld“).
-# Um 180 Grad gedreht: im PDF liegt das große Tor unten, hier oben, Team Rot greift nach oben an.
+import hilfe as h
+import halbfeld as hf
+# 13-P11 (U15-U17, Woche 24 Phase 6): Defending the Overload (Overload Game). Eine Spielfeldhälfte in voller Breite,
+# großes Tor mit Torwart, zwei Minitore an der Mittellinie für den Konter der Verteidiger. Keine Maßlinien, das PDF nennt
+# keine Maße (field_size „Halbes Spielfeld“).
+# HALBES FELD QUER (Inhaber, 25.11.2026; Vorbild bau/ue352.py, Regel in AUFTRAG.md): umgebaut vom Hochformat (Tor oben) auf
+# die Hälfte wie im Fernsehbild, mit bau/halbfeld.py. Hier greift Team Rot auf das große Tor an und Team Neon verteidigt
+# und kontert auf die Minitore. Damit Team Neon wie überall nach rechts spielt, liegt das große Tor LINKS
+# (F = Halbfeld(tor="links")), die Mittellinie mit den Minitoren rechts, Team Rot greift nach links an. Echte Linien
+# (Strafraum, Torraum, Strafraumbogen, halber Mittelkreis), "massstab": "gross". Gegenüber dem PDF (großes Tor unten) im
+# Uhrzeigersinn gedreht, nicht gespiegelt (PDF links = oben).
+# Positionen neu in Metern geplant (d = Meter vor der Torlinie, q = Meter von der oberen Seitenlinie). Wartende stehen neben
+# dem Feld in Tafelkoordinaten: Verteidiger an der Torlinie und dahinter (in zwei Reihen, 3D-Abstand), Angreifer hinter der
+# Mittellinie in zwei Reihen (nicht vor den Minitoren).
 # Pink/rot (Verteidiger, wird trainiert) -> Team Neon mit den Nummern aus PDF und Video (2, 3, 4, 5, 6, 8), Torwart n1 „TW“.
 # Blau/gelb (Angreifer) -> Team Rot, Nummern aus dem Video (7, 9, 10, 11), doppelte neu: 2 -> 12, 3 -> 13, 4 -> 14, 8 -> 15.
-# Strafraum und Torraum durchgezogen, Teilkreise und Mittelkreis weggelassen. Ein Trainer statt zwei (rechts neben dem Feld).
-# Wartende Verteidiger auf der Torlinie neben dem Tor, wartende Angreifer hinter der Mittellinie (3D-Abstand).
+# Ein Trainer statt zwei (unten an der Seitenlinie, mit Pfeife).
 # Ablauf nach PDF und Video: zwei gegen eins, Pfiff -> vier gegen zwei (Grundform), Pfiff -> sechs gegen vier (Steigerung 1),
 # Pfiff -> acht gegen sechs (Steigerung 2, mit Überlaufen außen wie im Video). Reihenfolge, wer bei welchem Pfiff dazukommt,
 # angenommen. Wertung: Laut PDF spielen die Verteidiger nach Ballgewinn ins Minitor (im Text erst beim acht gegen sechs, im
@@ -15,27 +23,39 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # für Team Neon, Treffer ins große Tor = Punkt für Team Rot (ergänzt).
 # Sichtkegel aus Text und Ton („Awareness to recognise the overload situation“): Beim Pfiff schaut Spieler fünf, wer von der
 # Mittellinie dazukommt (Richtung aus dem Sinn, im Video kein Kegel eingezeichnet).
-T = P("T", "c", 94.5, 28, "T")  # rechts neben dem Feld
-ERSATZ = [B("s1", 95.1, 31.6), B("s2", 97.6, 31.6)]
-LINES = [rect(9, 4, 80, 47), rect(24.2, 4, 49.6, 15.5), rect(37.8, 4, 22.5, 5.2)]
-TORE = [{"x": 49, "y": 4, "side": "top", "size": "gross"}, {"x": 17, "y": 51, "side": "bottom"}, {"x": 81, "y": 51, "side": "bottom"}]
-# Startplätze: wartende Verteidiger auf der Torlinie, wartende Angreifer hinter der Mittellinie
-WARTE = {"n8": (16, 4), "n3": (25, 4), "n4": (34, 4), "n6": (64, 4), "n2": (73, 4),
-         "r14": (25, 55.5), "r12": (33.5, 55.5), "r7": (42, 55.5), "r11": (56, 55.5), "r15": (64.5, 55.5), "r13": (73, 55.5)}
-START = {"n1": (49, 8.5), "n5": (49, 24.5), "r10": (40, 37), "r9": (58, 37)}
+F = hf.Halbfeld(tor="links")           # 50 x 65 m, Tor links (x 10), Mittellinie rechts (x 90), y 3-52
+def X(p): return F(*p)                 # Meter -> Tafel
+def fu(p): return hf.am_fuss(F(*p))    # Pass zum Spieler / Ball am Fuß
+def zu(ball, p, **k): return h.ps(ball, fu(p), **k)
+def lauf(who, p, **k): return h.mv(who, X(p), **k)
+T = h.P("T", "c", 44, 55.3, "T")       # unten an der Seitenlinie
+ERSATZ = [h.B("s1", 47.5, 55.8), h.B("s2", 50, 55.8)]
+# Wartende in Tafelkoordinaten: Verteidiger an der Torlinie (x 10) und dahinter (x 3,5), wer zuerst reinkommt, steht vorn, Angreifer hinter der Mittellinie
+WARTE = {"n6": (10, 4), "n2": (3.5, 10), "n4": (10, 41), "n3": (3.5, 46.5), "n8": (10, 52.5),
+         "r13": (98, 4), "r15": (98, 15.2), "r11": (92, 16.5), "r7": (92, 38.9), "r12": (98, 37.6), "r14": (98, 48.8)}
+START = {"n1": (2.5, 32.5), "n5": (18, 32.5), "r10": (34, 40), "r9": (34, 24)}   # in Metern
 def sp(**k):
-    d = dict(WARTE); d.update(START); d.update(k)
-    return [P(i, "a" if i[0] == "n" else "b", x, y, "TW" if i == "n1" else i[1:]) for i, (x, y) in d.items()] + [T]
-def fu(p): return [round(p[0] + 0.6, 1), round(p[1] + 0.6, 1)]
-MT_L, MT_R = [17, 50.5], [81, 50.5]
+    d = {i: tuple(p) for i, p in WARTE.items()}
+    d.update({i: tuple(X(p)) for i, p in START.items()})
+    d.update({i: tuple(X(p)) for i, p in k.items()})
+    return [h.P(i, "a" if i[0] == "n" else "b", x, y, "TW" if i == "n1" else i[1:]) for i, (x, y) in d.items()] + [T]
+LINES = F.linien()
+MT = (6.5, 58.5)                       # Minitore an der Mittellinie (q in Metern)
+TORE = [F.tor()] + F.minitore(*MT)
+MT_OBEN, MT_UNTEN = X((50.6, MT[0])), X((50.6, MT[1]))   # Ball im Minitor
+V1 = dict(n4=(17, 41), n5=(17, 24), r7=(34, 55), r10=(34, 40), r9=(39, 26), r11=(34, 11))
+V2 = dict(n3=(17, 53), n4=(17, 38), n5=(17, 23), n6=(17, 8),
+          r7=(32, 62), r10=(32, 42), r11=(32, 8), r12=(37, 52), r9=(37, 32), r15=(37, 16))
+FANG1 = (26, 41)     # dort fängt Spieler fünf den Pass ab
+FANG2 = (33.9, 17)   # dort fängt Spieler zwei den Pass ab
 
 u = {"title": "Überzahl wächst mit jedem Pfiff", "code": "UE-366", "kind": "Spielform",
  "focuses": ["Verteidigen", "Zusammenspiel", "Umschalten"], "age_groups": ["C-Jugend", "B-Jugend"],
  "altersbereiche": ["U15-U17"], "duration_minutes": 15, "players_min": 15, "players_max": 15,
  "field_size": "Halbes Spielfeld",
  "description": "Auf einer Spielfeldhälfte greift Team Rot immer in Überzahl auf das große Tor an. Es beginnt mit zwei gegen eins, und mit jedem Pfiff kommen Angreifer und Verteidiger dazu, bis acht gegen sechs gespielt wird. Team Neon verteidigt das Tor, verschiebt als Einheit und lenkt die Angreifer nach außen. Erobert Team Neon den Ball, spielt es schnell in eines der beiden Minitore an der Mittellinie.",
- "organisation": ["Aufbauen: Eine Spielfeldhälfte in voller Breite mit dem großen Tor. An der Mittellinie stehen links und rechts zwei Minitore.",
-  "Verteilen: Team Neon mit Torwart und sechs Verteidigern, einer steht schon vor dem Strafraum, die anderen warten auf der Torlinie. Team Rot mit acht Angreifern an der Mittellinie, zwei davon mit Ball. Der Trainer steht mit einer Pfeife und Bällen an der Seitenlinie.",
+ "organisation": ["Aufbauen: Eine Spielfeldhälfte in voller Breite mit dem großen Tor. An der Mittellinie stehen zwei Minitore, jeweils nahe an der Seitenlinie.",
+  "Verteilen: Team Neon mit Torwart und sechs Verteidigern, einer steht schon vor dem Strafraum, die anderen warten an der Torlinie. Team Rot mit acht Angreifern an der Mittellinie, zwei davon mit Ball. Der Trainer steht mit einer Pfeife und Bällen an der Seitenlinie.",
   "Ablauf: Zwei Angreifer starten gegen einen Verteidiger. Auf Pfiff kommen zwei Angreifer und ein Verteidiger dazu, also vier gegen zwei. Beim nächsten Pfiff kommen je zwei dazu, sechs gegen vier, und beim letzten Pfiff acht gegen sechs.",
   "Wertung: Ein Treffer ins große Tor gibt einen Punkt für Team Rot. Erobert Team Neon den Ball und trifft ein Minitor, gibt das einen Punkt für Team Neon. Danach gehen alle zurück, und die nächsten zwei Angreifer starten."],
  "organisation_show": ORG,
@@ -43,37 +63,36 @@ u = {"title": "Überzahl wächst mit jedem Pfiff", "code": "UE-366", "kind": "Sp
  "materials": ["1 großes Tor", "2 Minitore", "Leibchen in zwei Farben", "Viele Bälle", "1 Pfeife"],
  "access": "abo", "hidden": True, "wartet_auf_ton": True,
  "say_intro": "Überzahl wächst mit jedem Pfiff. Team Rot greift immer mit mehr Spielern an, als Team Neon hinten hat. Mit jedem Pfiff kommen welche dazu, bis acht gegen sechs gespielt wird.",
- "board": {"lines": LINES, "goals": TORE, "cones": [], "players": sp(), "balls": [B("b1", 40.6, 37.6)] + ERSATZ,
+ "board": {"massstab": "gross", "lines": LINES, "goals": TORE, "cones": [], "players": sp(), "balls": [h.B("b1", *fu(START["r10"]))] + ERSATZ,
   "steps": [
    S("Zwei gegen eins, Spieler fünf wartet", "Spieler zehn und Spieler neun laufen mit Ball auf Spieler fünf zu. Der geht nicht rein. Er bleibt zwischen den beiden, macht kleine Schritte zurück und wartet, bis er den Ballführer zur Seite drücken kann.",
-     dr("r10", "b1", [43, 30]), mv("r9", [60, 28], delay=0.2), mv("n5", [47.5, 18], delay=0.4)),
+     h.dr("r10", "b1", X((27, 38))), lauf("r9", (26, 25), delay=0.2), lauf("n5", (15, 34), delay=0.4)),
    S("Pfiff: vier gegen zwei", "Pfiff vom Trainer. Von der Mittellinie kommen Spieler sieben und Spieler elf dazu, von der Torlinie sprintet Spieler vier ins Feld. Spieler fünf schaut sofort, wer da kommt.",
-     mv("r7", [28, 34]), mv("r11", [72, 33]), mv("n4", [37, 19], delay=0.2), bl("n5", [30, 30], delay=0.5)),
+     lauf("r7", (31, 50)), lauf("r11", (31, 14)), lauf("n4", (16, 43), delay=0.2), h.bl("n5", hf.richt(X((15, 34)), X((31, 50)), 20), delay=0.5)),
    S("Einer drückt, einer sichert", "Spieler zehn spielt raus zu Spieler sieben. Spieler vier läuft ihn an und stellt den Weg nach innen zu. Spieler fünf rückt schräg dahinter und sichert ab.",
-     ps("b1", [28.6, 34.6]), mv("n4", [31, 28], delay=0.3), mv("n5", [40, 22], delay=0.4)),
+     zu("b1", (31, 50)), lauf("n4", (25, 46), delay=0.3), lauf("n5", (19, 40), delay=0.4)),
    S("Abgefangen, ins Minitor: Punkt", "Spieler sieben will zurück in die Mitte spielen. Darauf hat Spieler fünf gewartet. Er geht dazwischen und spielt den Ball sofort ins Minitor, und das gibt einen Punkt für Team Neon. Dann starten die nächsten zwei Angreifer.",
-     ps("b1", [36.6, 32.6]), mv("n5", [36, 32], delay=0.1), ps("b1", MT_L, after=True))]},
+     zu("b1", FANG1), lauf("n5", FANG1, delay=0.1), h.ps("b1", MT_UNTEN, after=True))]},
  "versions": [
   V("Steigerung", "Und jetzt die Steigerung: Sechs gegen vier.", "Sechs gegen vier",
     "Beim zweiten Pfiff kommen zwei Angreifer und zwei Verteidiger dazu. Hinten steht jetzt eine Viererkette. Die schiebt immer gemeinsam zum Ball, einer läuft an, die anderen rücken eng zusammen. Verlagert Team Rot, schiebt die ganze Kette mit rüber.",
-    sp(n4=(37, 20), n5=(58, 20), r7=(22, 36), r10=(40, 36), r9=(56, 41), r11=(76, 36)), [B("b1", 40.6, 36.6)] + ERSATZ,
+    sp(**V1), [h.B("b1", *fu(V1["r10"]))] + ERSATZ,
     [S("Pfiff: sechs gegen vier", "Wieder ein Pfiff. Spieler zwölf und Spieler fünfzehn kommen von der Mittellinie. Hinten sprinten Spieler drei und Spieler sechs rein, jetzt steht eine Viererkette.",
-       mv("r12", [31, 45]), mv("r15", [67, 45]), mv("n3", [24, 18], delay=0.2), mv("n6", [70, 18], delay=0.2),
-       mv("n4", [42, 19], delay=0.4), mv("n5", [55, 19], delay=0.4)),
+       lauf("r12", (43, 47)), lauf("r15", (43, 18)), lauf("n3", (14, 52), delay=0.2), lauf("n6", (14, 13), delay=0.2),
+       lauf("n4", (16, 39), delay=0.4), lauf("n5", (16, 26), delay=0.4)),
      S("Ball nach außen, Kette schiebt", "Spieler zehn spielt raus zu Spieler sieben. Die ganze Kette schiebt mit. Spieler drei läuft an, die anderen rücken zusammen und machen die Mitte eng.",
-       ps("b1", [22.6, 36.6]), mv("n3", [21, 28], delay=0.3), mv("n4", [32, 21], delay=0.3), mv("n5", [43, 20], delay=0.3), mv("n6", [55, 19], delay=0.3)),
+       zu("b1", V1["r7"]), lauf("n3", (28, 54), delay=0.3), lauf("n4", (18, 45), delay=0.3), lauf("n5", (17, 36), delay=0.3), lauf("n6", (16, 27), delay=0.3)),
      S("Verlagerung, Kette schiebt rüber", "Team Rot spielt über Spieler zehn auf die andere Seite zu Spieler elf. Jetzt schiebt die Kette genauso schnell rüber. Spieler sechs läuft an, und die Abstände bleiben klein.",
-       ps("b1", [40.6, 36.6]), ps("b1", [76.6, 36.6], after=True),
-       mv("n6", [73, 28], delay=0.8), mv("n5", [62, 20], delay=0.8), mv("n4", [51, 20], delay=0.8), mv("n3", [40, 21], delay=0.8))]),
+       zu("b1", V1["r10"]), zu("b1", V1["r11"], after=True),
+       lauf("n6", (25, 13), delay=0.8), lauf("n5", (17, 22), delay=0.8), lauf("n4", (17, 31), delay=0.8), lauf("n3", (18, 40), delay=0.8))]),
   V("Steigerung", "Und jetzt die zweite Steigerung: Acht gegen sechs.", "Acht gegen sechs",
     "Beim letzten Pfiff spielen alle mit. Zwei Verteidiger sichern jetzt vor der Kette. Team Rot sucht außen die Überzahl und läuft hinterher. Team Neon bleibt eng, übergibt die Läufer und wartet auf den Pass nach innen. Nach dem Ballgewinn geht es mit wenigen Kontakten ins Minitor.",
-    sp(n4=(40, 20), n5=(58, 20), n3=(24, 20), n6=(74, 20), r7=(14, 36), r12=(30, 36), r10=(44, 36), r9=(57, 36), r15=(70, 36), r11=(84, 36)),
-    [B("b1", 70.6, 36.6)] + ERSATZ,
+    sp(**V2), [h.B("b1", *fu(V2["r15"]))] + ERSATZ,
     [S("Letzter Pfiff: acht gegen sechs", "Letzter Pfiff, jetzt sind alle drin. Spieler vierzehn und Spieler dreizehn kommen nach vorn. Von der Torlinie sprinten Spieler acht und Spieler zwei rein und sichern vor der Kette.",
-       mv("r14", [36, 46]), mv("r13", [63, 46]), mv("n8", [38, 29], delay=0.2), mv("n2", [60, 29], delay=0.2)),
+       lauf("r14", (44, 44)), lauf("r13", (44, 21)), lauf("n8", (24, 40), delay=0.2), lauf("n2", (24, 21), delay=0.2)),
      S("Außen überlaufen", "Spieler fünfzehn spielt raus zu Spieler elf und läuft außen hinterher. Spieler sechs übernimmt den Läufer. Spieler zwei kommt aus der Mitte und läuft Spieler elf an, die Kette schiebt nach.",
-       ps("b1", [84.6, 36.6]), mv("r15", [80, 31], delay=0.2), mv("r15", [87, 25], after=True),
-       mv("n6", [82, 23], delay=0.3), mv("n2", [78, 32], delay=0.3), mv("n5", [67, 21], delay=0.4), mv("n4", [55, 21], delay=0.4), mv("n3", [42, 21], delay=0.4)),
+       zu("b1", V2["r11"]), lauf("r15", (35, 2), delay=0.2), lauf("r15", (22, 2), after=True),
+       lauf("n6", (19, 6), delay=0.3), lauf("n2", (28, 10), delay=0.3), lauf("n5", (18, 16), delay=0.4), lauf("n4", (18, 28), delay=0.4), lauf("n3", (18, 40), delay=0.4)),
      S("Ballgewinn, ins Minitor: Punkt", "Spieler elf will nach innen zu Spieler neun spielen. Spieler zwei ist schneller, fängt den Pass ab und spielt sofort ins Minitor. Das gibt einen Punkt für Team Neon.",
-       mv("n2", [72, 36]), ps("b1", [72.6, 36.6], delay=0.2), ps("b1", MT_R, after=True))])]}
+       lauf("n2", FANG2), zu("b1", FANG2, delay=0.2), h.ps("b1", MT_OBEN, after=True))])]}
 json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)
