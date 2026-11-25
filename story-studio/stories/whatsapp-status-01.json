@@ -6,17 +6,87 @@
   "geraeusche": 0.6,
   "uebergang": "pinsel",
   "szenen": [
-    { "typ": "hook", "film": "comic-banner", "dach": "An alle Trainer", "zeilen": ["Training heute?", "*Und kein Plan?*"], "dauer": 3.8,
-      "sprecher": "Training heute? Und kein Plan?", "sprecherAb": 1.6 },
-    { "typ": "punkte", "ton": "dunkel", "streichen": true, "titel": ["Kennst", "du das?"],
-      "punkte": ["Ewig Übungen suchen", "Skizzen zum Rätseln", "Alles selbst erklären"], "uebergang": "pinsel",
-      "sprecher": "Ewig suchen, Skizzen enträtseln, und erklären musst du alles selbst.", "sprecherAb": 0.5 },
-    { "typ": "uebung", "code": "UE-025", "schritte": 3, "tempo": 1.6, "dach": "So geht’s einfacher", "uebergang": "knall",
-      "sprecher": "Bei Trainingskern läuft jede Übung als Animation, von mir auf Deutsch erklärt.", "sprecherAb": 0.8 },
-    { "typ": "hook", "ton": "neon", "zeilen": ["Kostenlos", "registrieren:", "*trainingskern.de*"], "dauer": 3.0, "takt": 0.3, "uebergang": "raster",
-      "sprecher": "Registrier dich kostenlos auf trainingskern Punkt D E." },
-    { "typ": "hook", "ton": "dunkel", "zeilen": ["Kennst du Trainer?", "*Schick’s weiter!*"], "dauer": 2.6, "takt": 0.3, "uebergang": "panel",
-      "sprecher": "Und schick das an deine Trainerkollegen." },
-    { "typ": "outro", "film": "outro-comic", "uebergang": "blende", "dauer": 4.2 }
+    {
+      "typ": "hook",
+      "film": "comic-banner",
+      "dach": "An alle Trainer",
+      "zeilen": [
+        "Training heute?",
+        "*Und kein Plan?*"
+      ],
+      "dauer": 3.8,
+      "sprecher": "Training heute? Und kein Plan?",
+      "sprecherAb": 1.6
+    },
+    {
+      "typ": "punkte",
+      "ton": "dunkel",
+      "streichen": true,
+      "titel": [
+        "Kennst",
+        "du das?"
+      ],
+      "punkte": [
+        "Ewig Übungen suchen",
+        "Skizzen zum Rätseln",
+        "Alles selbst erklären"
+      ],
+      "uebergang": "pinsel",
+      "sprecher": "Ewig suchen, Skizzen enträtseln, und erklären musst du alles selbst.",
+      "sprecherAb": 0.5
+    },
+    {
+      "typ": "uebung",
+      "code": "UE-270",
+      "schritte": 3,
+      "tempo": 1.6,
+      "dach": "So geht’s einfacher",
+      "uebergang": "knall",
+      "sprecher": "Bei Trainingskern läuft jede Übung als Animation, von mir auf Deutsch erklärt.",
+      "sprecherAb": 0.8
+    },
+    {
+      "typ": "hook",
+      "ton": "dunkel",
+      "zeilen": [
+        "Von Bambini",
+        "*bis Senioren.*"
+      ],
+      "dauer": 3.0,
+      "takt": 0.3,
+      "uebergang": "pinsel",
+      "sprecher": "Übungen für jede Jugend, von den Bambini bis zu den Senioren."
+    },
+    {
+      "typ": "hook",
+      "ton": "neon",
+      "zeilen": [
+        "Kostenlos",
+        "registrieren:",
+        "*trainingskern.de*"
+      ],
+      "dauer": 3.0,
+      "takt": 0.3,
+      "uebergang": "raster",
+      "sprecher": "Registrier dich kostenlos auf trainingskern Punkt D E."
+    },
+    {
+      "typ": "hook",
+      "ton": "dunkel",
+      "zeilen": [
+        "Kennst du Trainer?",
+        "*Schick’s weiter!*"
+      ],
+      "dauer": 2.6,
+      "takt": 0.3,
+      "uebergang": "panel",
+      "sprecher": "Und schick das an deine Trainerkollegen."
+    },
+    {
+      "typ": "outro",
+      "film": "outro-comic",
+      "uebergang": "blende",
+      "dauer": 4.2
+    }
   ]
 }
