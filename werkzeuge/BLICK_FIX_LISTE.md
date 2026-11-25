@@ -1,0 +1,140 @@
+# Sichtkegel korrigieren: Arbeitsliste (25.11.2026)
+
+Erzeugt aus blickpruefung.mjs. Je Einheit die Kegel, die nach der neuen Regel falsch sind. „Ton“: eingesprochen oder offen.
+
+## Paket 1
+- **UE-149**: Coaching-Punkt Schritt 1 r7 (Verteidiger (schaut zum Gegner), schaut auf n6, eingesprochen)
+- **UE-214**: Grundform Schritt 1 n7 (ohne Ballaktion danach, schaut auf Raum, eingesprochen); Grundform Schritt 1 n7 (ohne Ballaktion danach, schaut auf Raum, eingesprochen); Grundform Schritt 1 r9 (ohne Ballaktion danach, schaut auf Raum, eingesprochen); Grundform Schritt 1 r9 (Verteidiger (schaut zum Gegner), schaut auf n7, eingesprochen)
+- **UE-255**: Coaching-Punkt Schritt 1 k2 (ohne Ballaktion danach, schaut auf T, eingesprochen)
+- **UE-267**: Grundform Schritt 4 k1 (ohne Ballaktion danach, schaut auf T, eingesprochen); Coaching-Punkt Schritt 1 k1 (ohne Ballaktion danach, schaut auf T, eingesprochen)
+- **UE-283**: Steigerung Schritt 1 n9 (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum, eingesprochen)
+- **UE-306**: Grundform Schritt 5 n5 (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum)
+- **UE-315**: Coaching-Punkt Schritt 1 n11 (Verteidiger (schaut zum Gegner), schaut auf r4)
+- **UE-323**: Coaching-Punkt Schritt 1 n9 (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum)
+- **UE-334**: Coaching-Punkt Schritt 1 r9 (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum)
+- **UE-344**: Steigerung Schritt 3 n8 (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum)
+- **UE-353**: Grundform Schritt 3 n10 (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum); Coaching-Punkt Schritt 2 n10 (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum)
+- **UE-360**: Steigerung Schritt 2 n8 (Verteidiger (schaut zum Gegner), schaut auf r7)
+- **UE-364**: Grundform Schritt 1 n9 (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum); Steigerung Schritt 1 n9 (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum)
+- **UE-371**: Steigerung Schritt 2 n8 (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum)
+- **UE-378**: Grundform Schritt 2 n5 (ohne Ballaktion danach, schaut auf r10); Steigerung Schritt 2 n5 (Verteidiger (schaut zum Gegner), schaut auf r9)
+- **UE-386**: Grundform Schritt 3 n6 (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum); Steigerung Schritt 1 n6 (ohne Ballaktion danach, schaut auf Raum); Steigerung Schritt 1 n6 (Verteidiger (schaut zum Gegner), schaut auf r10)
+- **UE-394**: Coaching-Punkt Schritt 1 n4 (Verteidiger (schaut zum Gegner), schaut auf r9)
+- **UE-404**: Grundform Schritt 2 n4 (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum); Steigerung Schritt 1 n6 (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum)
+
+## Paket 2
+- **UE-173**: Coaching-Punkt Schritt 1 n4 (ohne Ballaktion danach, schaut auf Raum, eingesprochen)
+- **UE-221**: Coaching-Punkt Schritt 1 r2 (Verteidiger (schaut zum Gegner), schaut auf n5, eingesprochen)
+- **UE-256**: Grundform Schritt 4 k1 (ohne Ballaktion danach, schaut auf Raum, eingesprochen); Coaching-Punkt Schritt 1 k1 (ohne Ballaktion danach, schaut auf Raum, eingesprochen); Coaching-Punkt Schritt 1 k1 (ohne Ballaktion danach, schaut auf n13, eingesprochen)
+- **UE-273**: Grundform Schritt 4 n7 (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum, eingesprochen); Steigerung Schritt 2 n7 (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum, eingesprochen)
+- **UE-293**: Grundform Schritt 2 n6 (ohne Ballaktion danach, schaut auf Raum, eingesprochen); Coaching-Punkt Schritt 1 n6 (ohne Ballaktion danach, schaut auf Raum, eingesprochen); Steigerung Schritt 1 n6 (ohne Ballaktion danach, schaut auf Raum, eingesprochen)
+- **UE-307**: Steigerung Schritt 1 n5 (ohne Ballaktion danach, schaut auf Raum); Steigerung Schritt 2 f2 (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum)
+- **UE-320**: Steigerung Schritt 1 n2 (ohne Ballaktion danach, schaut auf r10)
+- **UE-324**: Grundform Schritt 1 n10 (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum)
+- **UE-340**: Grundform Schritt 2 n11 (Verteidiger (schaut zum Gegner), schaut auf r15)
+- **UE-345**: Coaching-Punkt Schritt 1 n9 (ohne Ballaktion danach, schaut auf Raum)
+- **UE-355**: Coaching-Punkt Schritt 1 n10 (ohne Ballaktion danach, schaut auf n4); Steigerung Schritt 2 n11 (ohne Ballaktion danach, schaut auf n4)
+- **UE-361**: Grundform Schritt 4 n6 (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum)
+- **UE-366**: Grundform Schritt 2 n5 (ohne Ballaktion danach, schaut auf Raum)
+- **UE-373**: Steigerung Schritt 1 n7 (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum)
+- **UE-380**: Grundform Schritt 3 n4 (Verteidiger (schaut zum Gegner), schaut auf r9); Steigerung Schritt 2 n1 (Verteidiger (schaut zum Gegner), schaut auf r9)
+- **UE-387**: Grundform Schritt 2 n6 (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum); Steigerung Schritt 2 n5 (ohne Ballaktion danach, schaut auf Raum); Steigerung Schritt 2 n3 (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum)
+- **UE-400**: Grundform Schritt 3 n4 (ohne Ballaktion danach, schaut auf r3)
+- **UE-405**: Grundform Schritt 4 n10 (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum); Grundform Schritt 5 n4 (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum); Steigerung Schritt 2 n10 (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum)
+
+## Paket 3
+- **UE-185**: Steigerung Schritt 1 n5 (ohne Ballaktion danach, schaut auf Raum, eingesprochen)
+- **UE-222**: Steigerung Schritt 1 r9 (Verteidiger (schaut zum Gegner), schaut auf Raum, eingesprochen)
+- **UE-262**: Grundform Schritt 5 k1 (ohne Ballaktion danach, schaut auf Raum, eingesprochen); Grundform Schritt 5 k2 (ohne Ballaktion danach, schaut auf Raum, eingesprochen); Coaching-Punkt Schritt 1 k1 (ohne Ballaktion danach, schaut auf Raum, eingesprochen); Coaching-Punkt Schritt 1 k2 (ohne Ballaktion danach, schaut auf Raum, eingesprochen)
+- **UE-274**: Grundform Schritt 3 n8 (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum, eingesprochen); Steigerung Schritt 2 n8 (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum, eingesprochen)
+- **UE-297**: Grundform Schritt 1 n4 (ohne Ballaktion danach, schaut auf Raum, eingesprochen); Steigerung Schritt 3 n4 (ohne Ballaktion danach, schaut auf T, eingesprochen)
+- **UE-308**: Grundform Schritt 2 n5 (ohne Ballaktion danach, schaut auf r9)
+- **UE-321**: Grundform Schritt 1 n8 (ohne Ballaktion danach, schaut auf Raum); Coaching-Punkt Schritt 1 n8 (ohne Ballaktion danach, schaut auf Raum); Coaching-Punkt Schritt 1 r11 (Verteidiger (schaut zum Gegner), schaut auf Raum); Steigerung Schritt 1 n8 (ohne Ballaktion danach, schaut auf Raum); Steigerung Schritt 1 r11 (ohne Ballaktion danach, schaut auf T)
+- **UE-325**: Coaching-Punkt Schritt 1 n9 (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum)
+- **UE-341**: Grundform Schritt 2 n8 (ohne Ballaktion danach, schaut auf Raum)
+- **UE-351**: Coaching-Punkt Schritt 2 f (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum)
+- **UE-356**: Coaching-Punkt Schritt 1 n10 (Verteidiger (schaut zum Gegner), schaut auf Raum)
+- **UE-362**: Grundform Schritt 3 n8 (Verteidiger (schaut zum Gegner), schaut auf r3)
+- **UE-367**: Grundform Schritt 1 n9 (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum)
+- **UE-376**: Steigerung Schritt 2 n7 (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum)
+- **UE-384**: Grundform Schritt 2 n3 (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum); Steigerung Schritt 2 n3 (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum)
+- **UE-389**: Grundform Schritt 2 n10 (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum)
+- **UE-402**: Grundform Schritt 2 n8 (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum); Grundform Schritt 4 n9 (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum); Steigerung Schritt 1 n4 (ohne Ballaktion danach, schaut auf Raum)
+- **UE-411**: Coaching-Punkt Schritt 2 n2 (Verteidiger (schaut zum Gegner), schaut auf r13)
+
+## Paket 4
+- **UE-188**: Grundform Schritt 1 n4 (ohne Ballaktion danach, schaut auf r11, eingesprochen)
+- **UE-252**: Coaching-Punkt Schritt 2 r2 (ohne Ballaktion danach, schaut auf Raum, eingesprochen)
+- **UE-263**: Coaching-Punkt Schritt 2 k1 (ohne Ballaktion danach, schaut auf Raum, eingesprochen)
+- **UE-277**: Coaching-Punkt Schritt 1 n7 (ohne Ballaktion danach, schaut auf Raum, eingesprochen)
+- **UE-298**: Steigerung Schritt 1 n11 (ohne Ballaktion danach, schaut auf r5)
+- **UE-313**: Grundform Schritt 3 n9 (ohne Ballaktion danach, schaut auf Raum); Coaching-Punkt Schritt 1 n9 (ohne Ballaktion danach, schaut auf Raum)
+- **UE-322**: Grundform Schritt 2 n6 (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum)
+- **UE-327**: Grundform Schritt 5 r2 (ohne Ballaktion danach, schaut auf Raum)
+- **UE-342**: Steigerung Schritt 3 n6 (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum)
+- **UE-352**: Steigerung Schritt 2 n10 (ohne Ballaktion danach, schaut auf Raum); Steigerung Schritt 2 n11 (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum)
+- **UE-359**: Steigerung Schritt 2 n5 (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum)
+- **UE-363**: Grundform Schritt 1 n9 (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum); Coaching-Punkt Schritt 1 n9 (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum)
+- **UE-370**: Grundform Schritt 4 n4 (ohne Ballaktion danach, schaut auf r9); Coaching-Punkt Schritt 1 n4 (Verteidiger (schaut zum Gegner), schaut auf r10)
+- **UE-377**: Steigerung Schritt 1 n10 (ohne Ballaktion danach, schaut auf Raum)
+- **UE-385**: Grundform Schritt 1 n10 (Verteidiger (schaut zum Gegner), schaut auf r2)
+- **UE-391**: Grundform Schritt 1 n10 (ohne Ballaktion danach, schaut auf n8); Steigerung Schritt 1 n10 (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum); Steigerung Schritt 3 n10 (ohne Ballaktion danach, schaut auf n3); Steigerung Schritt 2 n10 (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum)
+- **UE-403**: Grundform Schritt 3 f (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum); Coaching-Punkt Schritt 2 n9 (Kegel beim Passempfänger (schaut nicht zum Passgeber), schaut auf Raum)
+- **UE-412**: Coaching-Punkt Schritt 1 n6 (ohne Ballaktion danach, schaut auf r9)
+
+## Später (eingesprochen, die Stimme nennt den Blick: erst mit dem Neueinsprechen nach dem 22.12. ändern)
+- **UE-133**: Grundform Schritt 2 n6; Grundform Schritt 2 n6; Coaching-Punkt Schritt 1 n6; Coaching-Punkt Schritt 1 n6
+- **UE-153**: Steigerung Schritt 1 n7
+- **UE-165**: Grundform Schritt 3 n10
+- **UE-166**: Grundform Schritt 2 n4
+- **UE-167**: Grundform Schritt 1 r10
+- **UE-172**: Grundform Schritt 2 r9
+- **UE-175**: Grundform Schritt 1 n6; Grundform Schritt 3 n6; Coaching-Punkt Schritt 1 n6
+- **UE-177**: Grundform Schritt 2 n4
+- **UE-180**: Grundform Schritt 1 n10; Steigerung Schritt 1 n8
+- **UE-183**: Coaching-Punkt Schritt 1 r7
+- **UE-185**: Grundform Schritt 4 n5
+- **UE-187**: Steigerung Schritt 1 n2
+- **UE-189**: Grundform Schritt 1 n2
+- **UE-190**: Grundform Schritt 1 n7; Grundform Schritt 1 r5; Grundform Schritt 1 f1
+- **UE-192**: Grundform Schritt 2 n4; Coaching-Punkt Schritt 1 n3
+- **UE-193**: Grundform Schritt 1 n4
+- **UE-200**: Grundform Schritt 1 n4
+- **UE-203**: Coaching-Punkt Schritt 1 n8
+- **UE-204**: Coaching-Punkt Schritt 1 n11
+- **UE-205**: Grundform Schritt 2 n8
+- **UE-206**: Grundform Schritt 1 n2
+- **UE-211**: Steigerung Schritt 1 r2
+- **UE-212**: Grundform Schritt 2 n5
+- **UE-214**: Coaching-Punkt Schritt 1 n7; Coaching-Punkt Schritt 1 n7
+- **UE-216**: Grundform Schritt 2 n4
+- **UE-218**: Grundform Schritt 2 r17
+- **UE-219**: Coaching-Punkt Schritt 2 r7
+- **UE-220**: Coaching-Punkt Schritt 1 r9
+- **UE-223**: Grundform Schritt 2 n4; Coaching-Punkt Schritt 1 n4; Steigerung Schritt 2 n4
+- **UE-224**: Coaching-Punkt Schritt 1 r11
+- **UE-225**: Coaching-Punkt Schritt 1 n5
+- **UE-229**: Coaching-Punkt Schritt 1 n3
+- **UE-236**: Steigerung Schritt 1 n7
+- **UE-237**: Grundform Schritt 2 n8; Coaching-Punkt Schritt 1 n8
+- **UE-238**: Grundform Schritt 4 n9
+- **UE-241**: Coaching-Punkt Schritt 1 n6
+- **UE-242**: Grundform Schritt 2 n5
+- **UE-243**: Grundform Schritt 2 n2; Coaching-Punkt Schritt 2 n6
+- **UE-246**: Steigerung Schritt 2 r6
+- **UE-251**: Grundform Schritt 2 k1; Steigerung Schritt 2 k1
+- **UE-252**: Grundform Schritt 3 r2
+- **UE-254**: Coaching-Punkt Schritt 2 k1
+- **UE-256**: Grundform Schritt 2 k1
+- **UE-258**: Grundform Schritt 1 k1
+- **UE-259**: Grundform Schritt 2 k4; Coaching-Punkt Schritt 1 k4
+- **UE-263**: Grundform Schritt 5 k1
+- **UE-267**: Steigerung Schritt 3 k1
+- **UE-268**: Grundform Schritt 1 n7; Grundform Schritt 3 n7; Steigerung Schritt 1 n7; Steigerung Schritt 1 n7
+- **UE-274**: Steigerung Schritt 1 n8
+- **UE-283**: Grundform Schritt 2 n9; Grundform Schritt 4 n9; Coaching-Punkt Schritt 1 n9
+- **UE-285**: Steigerung Schritt 3 n2
+- **UE-286**: Coaching-Punkt Schritt 1 n8
+- **UE-287**: Steigerung Schritt 3 n4; Steigerung Schritt 3 n4
+- **UE-294**: Grundform Schritt 1 n6; Grundform Schritt 5 n6
+- **UE-297**: Steigerung Schritt 2 n4

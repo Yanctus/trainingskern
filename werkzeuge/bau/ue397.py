@@ -11,8 +11,9 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # (Pass zu einem Anspieler = Punkt), Ablauf im Video ab 0:30.
 # Fassung 1 = PDF Key Coaching Point (Scannen, Raum erkennen) mit der Doppelbewegung aus dem Ton (erst entgegen, dann in den Raum).
 # Fassung 2 = PDF Progression (Verteidiger schießen nach Ballgewinn selbst aufs Tor, sechs Bälle, Sieger nach sechs Bällen).
-# Sichtkegel: Text „Constant scanning to recognise the space“, im Video eingezeichnet (Kegel von Pink 9 in den Raum vor dem Tor):
-# Spieler neun schaut vor seinem Lauf in den Raum vor dem Tor.
+# Sichtkegel: Text „Constant scanning to recognise the space“. Regel des Inhabers (25.11.2026): Der Kegel gehört zu dem Spieler,
+# der schaut und DANN passt, also zu Spieler elf (Passgeber), nie zu Spieler neun (Empfänger). Coaching-Punkt Schritt 1 nach
+# „Annehmen und Aufdrehen“ (ZUSATZ_U15.md): ein Kegel, erst zum Passgeber sechs, nach der Annahme Schwenk in den Raum vor dem Tor.
 T = P("T", "c", 17, 53, "T")
 ERSATZ = [B("s1", 20.5, 54.5), B("s2", 18, 56.8)]
 POS = {"k1": (50, 7.5), "k2": (50, 52.5), "t5": (30, 2.5), "t6": (21.5, 30), "t12": (78.5, 32), "t13": (77, 54),
@@ -45,8 +46,8 @@ u = {"title": "Abschlussspiel mit Anspielern", "code": "UE-397", "kind": "Spielf
   "steps": [
    S("Trainer ruft, Spieler fünf spielt ein", "Der Trainer ruft fünf. Spieler fünf steht oben außen und spielt seinen Ball sofort ins Feld. Spieler elf kommt ihm entgegen und nimmt an.",
      mv("n11", [33.5, 21]), ps("b5", [34.1, 21.6], delay=0.4)),
-   S("Schauen, dann Pass in den Lauf", "Spieler neun schaut über die Schulter, wo vor dem Tor Platz ist. Dann startet er genau dorthin, und Spieler elf spielt ihm den Ball in den Lauf.",
-     bl("n9", [46, 8]), mv("n9", [56, 13], after=True), ps("b5", [56.6, 13.6], delay=1.3)),
+   S("Schauen, dann Pass in den Lauf", "Spieler elf hebt den Kopf und schaut, wo vor dem Tor Platz ist. Spieler neun startet genau dorthin, und Spieler elf spielt ihm den Ball in den Lauf.",
+     bl("n11", [54, 11]), mv("n9", [56, 13], after=True), ps("b5", [56.6, 13.6], delay=1.3)),
    S("Direkt abgeschlossen: Punkt", "Spieler neun schießt mit dem ersten Kontakt, und das gibt einen Punkt für Team Neon.",
      ps("b5", [54, 5.3])),
    S("Trainer ruft zwölf, Rot fängt ab", "Jetzt ruft der Trainer zwölf. Spieler zwölf spielt in Richtung Spieler sieben. Aber Spieler vier läuft dazwischen und fängt den Ball ab.",
@@ -56,10 +57,10 @@ u = {"title": "Abschlussspiel mit Anspielern", "code": "UE-397", "kind": "Spielf
   "dims": DIMS},
  "versions": [
   V("Coaching-Punkt", "Jetzt zum Coaching-Punkt: Schauen und den Raum finden.", "Schauen, dann in den Raum",
-    "Wer auf den Ball wartet, schaut immer wieder, wo Platz ist. Die Stürmer laufen nicht sofort weg. Erst ein paar Schritte zum Ball, dann scharf in den freien Raum. So hängen sie den Verteidiger ab und schließen mit wenigen Kontakten ab.",
+    "Wer den Ball hat, hebt den Kopf und schaut, wo Platz ist, und spielt erst dann. Die Stürmer laufen nicht sofort weg. Erst ein paar Schritte zum Ball, dann scharf in den freien Raum. So hängen sie den Verteidiger ab und schließen mit wenigen Kontakten ab.",
     sp(), baelle(),
-    [S("Anspiel von außen", "Der Trainer ruft sechs. Spieler sechs spielt flach zu Spieler elf. Spieler neun schaut schon, wo Platz ist.",
-       ps("b6", [31.6, 28.6]), bl("n9", [62, 8], delay=0.4)),
+    [S("Anspiel von außen", "Der Trainer ruft sechs. Spieler sechs spielt flach zu Spieler elf. Der nimmt an, dreht auf und schaut sofort, wo vor dem Tor Platz ist.",
+       ps("b6", [31.6, 28.6]), bl("n11", [58, 13], von=POS["t6"], dauer=1.3, delay=0.45), drehen("n11", [58, 13], delay=0.85)),
      S("Erst entgegen, dann in den Raum", "Spieler neun kommt zwei Schritte entgegen. Dann zieht er an und sprintet in den Raum vor dem Tor. Genau dahin spielt Spieler elf.",
        mv("n9", [54, 24]), mv("n9", [61, 12.5], after=True), ps("b6", [61.6, 13.1], delay=1.2)),
      S("Mit einem Kontakt: Punkt", "Spieler neun nimmt den Ball direkt und trifft, und das gibt einen Punkt für Team Neon.",

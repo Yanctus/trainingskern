@@ -15,6 +15,11 @@ Du baust die Übungen EINER Woche als neue Einheiten (Entity `Einheit`) und läd
 4. `bau/ueNNN.py` schreiben, `python3 bau/ueNNN.py ueNNN.json && python3 werkbank.py pruefen ueNNN.json` bis „0 Treffer“ und
    nur noch der Hinweis „access … hidden false“ übrig ist. Dann `python3 werkbank.py blatt ueNNN.json` und das Bild
    `ueNNN-blatt.png` ansehen (2D-Laufwege und 3D): Laufwege sinnvoll? Verdeckt sich etwas in 3D? Ggf. korrigieren.
+   **Sichtkegel (Inhaber, 25.11.2026):** Ein Kegel gehört nur zu dem Spieler, der schaut und danach selbst passt oder schießt
+   (Passgeber vor seinem Pass; beim Annehmen und Aufdrehen schaut der Empfänger zum Passgeber und schwenkt nach der Annahme zum
+   Ziel). Nie beim Empfänger, der in den Raum schaut, nie bei Läufern, beobachtenden Verteidigern oder in Reaktionsspielen. Sagt das
+   Original „scanning“ eines Läufers, bekommt der Passgeber den Kegel. Prüfen: `node blickpruefung.mjs /tmp/claude-0/pb.mjs ueNNN.json
+   /tmp/b-ueNNN.json` muss „Funde: 0“ zeigen. Einzelheiten anleitung/BLICK_FIX.md.
    **Passbahn (Inhaber, 25.11.2026):** Kein Pass geht durch einen Gegenspieler. Prüfen mit
    `node passbahn.mjs /tmp/claude-0/pb.mjs ueNNN.json /tmp/pb-ueNNN.json` (Abspielcode der App, gebündelt; fehlt die Datei, in
    der Base44-Sandbox neu bündeln, Befehl im Kopf von passbahn.mjs). Erwartet: „Treffer: 0“. Ausnahmen nur, wenn der Pass

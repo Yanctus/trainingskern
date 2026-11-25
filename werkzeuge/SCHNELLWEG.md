@@ -19,7 +19,7 @@ README der App (Abschnitte „Übungen aus Video nachbauen“, „Laufweg-Abglei
    Dann gezielt `szene <Ordner> <von> <bis>` nur für die Abschnitte mit Laufwegen (Grundform, jede Fassung). Abschnitte aus der
    Übersicht ablesen: Bild n (ab 0) liegt bei n × Dauer/25 Sekunden.
 3. Pro Schritt notieren: wer, von wo, über welche Zwischenpunkte, welche Seite, wann (vor/nach dem Pass), wohin der Pass.
-   **Sichtkegel suchen (Pflicht, Inhaber 22.11.2026):** Nicht nur „Schulterblick“: jede Wahrnehmung vor der Aktion zählt,
+   **Sichtkegel suchen (Pflicht, Inhaber 22.11.2026; ab 25.11.2026 gilt: Kegel nur beim Spieler, der danach selbst passt oder schießt, siehe anleitung/BLICK_FIX.md):** Nicht nur „Schulterblick“: jede Wahrnehmung vor der Aktion zählt,
    z. B. scan, scanning, check your shoulder, look over the shoulder, head up, lift your head, look up, awareness, open your
    body to see, see the picture, know where …, identify the GK's position, spot the free player, before receiving.
    Suchen: `grep -iE "scan|shoulder|head up|look|aware|check|picture|identify|spot|see the|vision" text.txt ton.txt`.

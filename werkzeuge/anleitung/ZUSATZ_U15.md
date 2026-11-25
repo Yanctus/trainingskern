@@ -62,3 +62,6 @@ Abbildung und Linien nur mit `bau/halbfeld.py` (`F = hf.Halbfeld(tief, breit)`, 
 `F.minitore(...)`, alte Skripte mit `F.von_hochkant(...)` + `hf.umrechnen(R)`). Richtungswörter in allen Texten anpassen
 („vorn“, „an der Mittellinie“, „auf der anderen Seite“ statt oben/unten/links/rechts). Einzelheiten in AUFTRAG.md
 („Halbes Feld QUER“).
+
+## Sichtkegel nur beim Spieler, der danach passt (Inhaber, 25.11.2026)
+Siehe AUFTRAG.md („Sichtkegel“) und anleitung/BLICK_FIX.md. Prüfen mit blickpruefung.mjs (Funde: 0).

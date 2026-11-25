@@ -52,7 +52,7 @@ u = {"title": "Passfolge mit Seitenwechsel", "code": "UE-401", "kind": "Übungsf
      ps("b1", fu("n9")), ps("b1", fu("n2"), after=True), mv("n8", POS["n8"], delay=0.5)),
    S("Doppelpass und zurück nach oben", "Spieler zwei spielt in die Mitte zu Spieler vier, Spieler neun startet nach außen und bekommt den Ball in den Lauf. Er hebt den Kopf und spielt lang zu Spieler sechs. Oben geht es sofort wieder los, und nach ein paar Runden tauschen alle die Positionen.",
      ps("b1", fu("n4")), mv("n9", UNTEN, delay=0.3), ps("b1", fo(UNTEN), after=True),
-     bl("n9", ri(UNTEN, POS["n6"]), von=POS["n4"], dauer=1.3), ps("b1", fu("n6"), after=True), mv("n9", POS["n9"], after=True))],
+     bl("n9", ri(UNTEN, POS["n6"]), von=POS["n4"], dauer=1.3, after=True), ps("b1", fu("n6"), after=True), mv("n9", POS["n9"], after=True))],
   "dims": DIMS},
  "versions": [
   V("Coaching-Punkt", "Jetzt zum Coaching-Punkt: Den Ball in den Lauf spielen.", "Pass in den Lauf",
