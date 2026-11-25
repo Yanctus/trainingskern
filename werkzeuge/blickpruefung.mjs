@@ -51,6 +51,7 @@ for (const e of alle) {
         if (von && dist(von, wo) > 2.5) out.push({ ...row, fehler: "Kegel nicht am Spieler", abstand: +dist(von, wo).toFixed(1) });
         if (pass_an_ihn && dz >= 4 && eigene.length) out.push({ ...row, fehler: "Kegel beim Passempfänger (schaut nicht zum Passgeber)" });
         else if (pass_an_ihn && dz < 4) { /* Annehmen: schaut zum Passgeber, erlaubt */ }
+        if (pass_an_ihn && dz < 4) return; // bereit zur Annahme: schaut zum Ball/Passgeber, immer erlaubt
         if (!eigene.length) out.push({ ...row, fehler: hatBall ? "ohne Ballaktion danach" : (zielGegner ? "Verteidiger (schaut zum Gegner)" : "ohne Ballaktion danach") });
       });
     });
