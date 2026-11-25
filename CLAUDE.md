@@ -66,6 +66,7 @@ Die App selbst liegt bei Base44 (App „Trainingskern“), dieses Repo enthält 
   `ton/musik-elektro-2.mp3` 61 s, `ton/musik-elektro-3.mp3` 66 s, `ton/musik-elektro-4.mp3` 110 s). `"musik": "zufall"` wählt einen,
   der bis zum Ende reicht (je Story immer denselben). Ist ein Video länger als jeder Titel, setzt die Musik an einem Szenenwechsel
   neu an. Fertige Storys nennen ihren Titel fest, damit ein neues Rendern gleich klingt. Kein Funk-Beat, kein Swing.
+- Die Adresse im Sprechertext als „Trainingskern.de“ schreiben (Wunsch vom 25.11.2026): „Trainingskern Punkt D E“ spricht die Stimme mit Pausen zwischen den Buchstaben.
 - Im Sprechertext sagt die Stimme „von mir auf Deutsch erklärt“, damit klar ist, dass es Ton zur Übung gibt.
 - Keine Spielminute, kein Fortschrittsbalken im Bild. Der Bildschirm der Seite zeigt nur Titel und Tafel (`"verstecke"` blendet den Rest aus).
 - Vorlage: `story-studio/stories/vorlage-kampagne.json`.

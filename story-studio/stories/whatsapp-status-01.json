@@ -17,7 +17,7 @@
         "*hilft dir!*"
       ],
       "dauer": 5.2,
-      "sprecher": "Training heute und kein Plan? Trainingskern Punkt D E hilft dir!",
+      "sprecher": "Training heute und kein Plan? Trainingskern.de hilft dir!",
       "sprecherAb": 0.5
     },
     {
@@ -60,7 +60,7 @@
         "Fertige Trainingspläne"
       ],
       "uebergang": "pinsel",
-      "sprecher": "Für jede Jugend, von den Bambini bis zu den Senioren, für Torhüter und Einzeltraining, dazu fertige Trainingspläne. Alles auf trainingskern Punkt D E.",
+      "sprecher": "Für jede Jugend, von den Bambini bis zu den Senioren, für Torhüter und Einzeltraining, dazu fertige Trainingspläne. Alles auf Trainingskern.de.",
       "sprecherAb": 0.5,
       "punktAb": [
         1.5,
@@ -105,7 +105,7 @@
       "dauer": 3.0,
       "takt": 0.3,
       "uebergang": "raster",
-      "sprecher": "Registrier dich kostenlos auf trainingskern Punkt D E."
+      "sprecher": "Registrier dich kostenlos auf Trainingskern.de."
     },
     {
       "typ": "hook",
