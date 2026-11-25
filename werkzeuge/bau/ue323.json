@@ -856,7 +856,7 @@
     "steps": [
      {
       "label": "Ruhig aufbauen, Gegner locken",
-      "say": "Spieler neun und Spieler elf spielen sich den Ball ruhig zu. Spieler fünf und Spieler sieben rücken heraus und pressen. Spieler neun schaut schon in den Raum hinter Spieler fünf.",
+      "say": "Spieler neun und Spieler elf spielen sich den Ball ruhig zu. Spieler fünf und Spieler sieben rücken heraus und pressen. Hinter Spieler fünf wird Platz frei.",
       "moves": [
        {
         "who": "b0",
@@ -892,21 +892,12 @@
         ],
         "type": "lauf",
         "delay": 1.0
-       },
-       {
-        "who": "n9",
-        "to": [
-         44,
-         18
-        ],
-        "type": "blick",
-        "after": true
        }
       ]
      },
      {
       "label": "Doppelpass hinter die Abwehr",
-      "say": "Jetzt schnell. Pass zu Spieler elf, und Spieler neun startet an Spieler fünf vorbei. Spieler elf spielt direkt zurück in den Lauf.",
+      "say": "Jetzt schnell. Pass zu Spieler elf, und Spieler neun startet an Spieler fünf vorbei. Spieler elf schaut in den Lauf und spielt direkt zurück.",
       "moves": [
        {
         "who": "b0",
@@ -933,6 +924,15 @@
         ],
         "type": "lauf",
         "after": true
+       },
+       {
+        "who": "n11",
+        "to": [
+         47,
+         23
+        ],
+        "type": "blick",
+        "delay": 0.75
        },
        {
         "who": "b0",

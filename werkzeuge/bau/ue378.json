@@ -255,7 +255,7 @@
    },
    {
     "label": "Erst sichern, dann ran",
-    "say": "Spieler neun dribbelt an. Spieler vier wartet noch. Erst steht Spieler fünf schräg hinter ihm und hat Spieler zehn im Blick, dann geht Spieler vier ran.",
+    "say": "Spieler neun dribbelt an. Spieler vier wartet noch. Erst steht Spieler fünf schräg hinter ihm und sichert gegen Spieler zehn, dann geht Spieler vier ran.",
     "moves": [
      {
       "who": "r9",
@@ -274,15 +274,6 @@
       ],
       "type": "lauf",
       "delay": 0.2
-     },
-     {
-      "who": "n5",
-      "to": [
-       58,
-       38
-      ],
-      "type": "blick",
-      "after": true
      },
      {
       "who": "n4",
@@ -530,7 +521,7 @@
      },
      {
       "label": "Umschalten und verzögern",
-      "say": "Spieler vier schaltet sofort um und stellt Spieler sieben. Spieler fünf rückt in die Mitte und hält die anderen zwei hin. Kurz schaut er zu Spieler neun in seinem Rücken.",
+      "say": "Spieler vier schaltet sofort um und stellt Spieler sieben. Spieler fünf rückt in die Mitte und hält die anderen zwei hin, auch Spieler neun in seinem Rücken.",
       "moves": [
        {
         "who": "n4",
@@ -548,15 +539,6 @@
         ],
         "type": "lauf",
         "delay": 0.2
-       },
-       {
-        "who": "n5",
-        "to": [
-         68,
-         32
-        ],
-        "type": "blick",
-        "after": true
        }
       ]
      },

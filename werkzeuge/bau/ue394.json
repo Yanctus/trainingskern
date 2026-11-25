@@ -804,8 +804,8 @@
     ],
     "steps": [
      {
-      "label": "Druck auf den Ball, Blick zu den Spitzen",
-      "say": "Spieler zehn hat den Ball. Spieler sechs läuft ihn an und setzt ihn unter Druck. Hinten schaut Spieler vier über die Schulter, wo Spieler neun steht.",
+      "label": "Druck auf den Ball",
+      "say": "Spieler zehn hat den Ball. Spieler sechs läuft ihn an und setzt ihn unter Druck. Hinten achtet Spieler vier darauf, wo Spieler neun steht.",
       "moves": [
        {
         "who": "n6",
@@ -814,15 +814,6 @@
          41.5
         ],
         "type": "lauf"
-       },
-       {
-        "who": "n4",
-        "to": [
-         72,
-         25
-        ],
-        "type": "blick",
-        "delay": 0.3
        }
       ]
      },

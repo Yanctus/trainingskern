@@ -273,13 +273,13 @@
    },
    {
     "label": "Lücke sehen, Pass rüber",
-    "say": "Jetzt ist auf der anderen Seite die Lücke. Spieler vier schaut schon hin, und Spieler drei spielt direkt zu ihm.",
+    "say": "Jetzt ist auf der anderen Seite die Lücke. Spieler drei sieht sie und schaut zu Spieler vier, dann spielt er direkt zu ihm.",
     "moves": [
      {
-      "who": "n4",
+      "who": "n3",
       "to": [
-       32,
-       47
+       14,
+       45
       ],
       "type": "blick"
      },

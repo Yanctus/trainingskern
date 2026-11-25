@@ -744,17 +744,9 @@
       ]
      },
      {
-      "label": "Schulterblick, wer ist frei?",
-      "say": "Spieler acht schaut über die Schulter. Spieler sieben steht jetzt außen frei. Spieler acht ruft laut, und Spieler neun übernimmt den Springer.",
+      "label": "Wer ist frei?",
+      "say": "Spieler sieben steht jetzt außen frei. Spieler acht merkt es und ruft laut, und Spieler neun übernimmt den Springer.",
       "moves": [
-       {
-        "who": "n8",
-        "to": [
-         81,
-         42
-        ],
-        "type": "blick"
-       },
        {
         "who": "n9",
         "to": [

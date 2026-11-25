@@ -16,6 +16,7 @@ import hilfe as h
 # lässt sich fallen, 4-2-Block, innen stehen, Ton 0:52-1:12). Das Video zeigt noch „Force play wide“ (in der Grundform enthalten).
 # Sichtkegel: PDF „Defenders must always be aware of the free player“: im ersten Coaching-Punkt schaut Spieler zwei über die
 # Schulter zum freien Spieler dreizehn im weiten Drittel (im Video markiert, Richtung aus dem Sinn).
+# Neue Kegel-Regel (25.11.2026): Spieler zwei passt danach nicht selbst, der Kegel ist gestrichen (kein passender Passgeber).
 # Positionen für den 3D-Abstand gestaffelt: Außenverteidiger etwas höher als die Innenverteidiger, Spitze von Team Rot
 # zwischen den Außenverteidigern.
 # Keine Dublette: UE-166, 177, 204, 206, 208 (78-P5), 212 (78-P6), 242 (78-P7), 250 (78-P12), 302, 320 (78-P4), 368, 370 (78-P8),
@@ -98,8 +99,7 @@ u = {"title": "Viererkette in drei Dritteln", "code": "UE-411", "kind": "Spielfo
     [S("Ball auf den Flügel, Kette schiebt", "Der Ball geht raus zu Spieler zwölf. Die ganze Kette schiebt mit. Spieler drei geht drauf, und Spieler zwei rückt bis ins mittlere Drittel ein.",
        ps("b1", [29, 35]), mv("n3", [30.5, 39.5], delay=0.3), mv("n4", [39, 46], delay=0.4), mv("n5", [49, 47], delay=0.4),
        mv("n2", [58, 44.5], delay=0.4), mv("n8", [38, 37], delay=0.3)),
-     S("Das weite Drittel bleibt frei", "Ganz drüben steht Spieler dreizehn jetzt frei. Das lassen wir zu. Spieler zwei bleibt eng bei der Kette und schaut über die Schulter, wo Spieler dreizehn steht.",
-       bl("n2", [71, 35])),
+     S("Das weite Drittel bleibt frei", "Ganz drüben steht Spieler dreizehn jetzt frei. Das lassen wir zu. Spieler zwei bleibt eng bei der Kette. Kommt doch der lange Ball, ist er schnell drüben."),
      S("Zu zweit drauf, Ball erobert", "Spieler zwölf will an der Linie vorbei. Spieler drei lässt ihn nicht nach innen, und Spieler acht kommt dazu. Zu zweit holen sie den Ball, bevor der lange Ball rüber kommt.",
        dr("r12", "b1", [27, 38]), mv("n8", [33, 37.5], delay=0.2), ps("b1", [30.5, 39.5], after=True))],
     dims=DIMS),

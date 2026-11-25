@@ -24,6 +24,8 @@ import halbfeld as hf
 # nicht eingezeichnet. Richtung aus dem Sinn: Spieler acht schaut zum Passgeber, nimmt an und schwenkt den Blick beim Aufdrehen
 # nach außen (bl mit von + drehen, Vorbild ue300); Spieler neun genauso vor dem Abschluss; in den Steigerungen schaut Spieler vier
 # (Kegel auf etwa 20 Einheiten gekürzt) vor dem Andribbeln bzw. vor dem Nachrücken nach vorn.
+# Neue Kegel-Regel (25.11.2026): in Steigerung 2 schaut statt Spieler vier (rückt nur nach) der Passgeber Spieler drei vor dem
+# Steilpass nach vorn. Kegel von Spieler neun in Schritt 4 reicht jetzt bis kurz vor Spieler elf (Blick zum Passgeber).
 # Kein Dublette: UE-234 (43-P11) ist auch ein halbes Feld mit drei Zonen und Konter auf Minitore, aber 8 gegen 8 mit 2 gegen 1
 # hinten und anderer Regel (Dribbling in die Mitte öffnet das Spiel); hier 3 gegen 3, 3 gegen 2, Anspiel in jeder Zone Pflicht.
 F = hf.Halbfeld()                      # 50 x 65 m, Tor rechts (x 90), Mittellinie links (x 10), y 3-52
@@ -71,7 +73,7 @@ u = {"title": "Sieben gegen sieben in Dritteln", "code": "UE-402", "kind": "Spie
      schau("n8", POS["n8"], POS["n11"], von=POS["n3"], dauer=1.3), h.drehen("n8", X(POS["n11"]), delay=0.4),
      lauf("r13", (26, 28), delay=0.6), zu("b1", POS["n11"], after=True)),
    S("Pass in die Endzone", "Spieler neun kommt kurz und schaut zum Ball. Spieler elf spielt ihn in der Endzone an und läuft sofort hinterher. Auf der anderen Seite startet Spieler sieben. Die beiden Verteidiger gehen mit.",
-     lauf("n9", N9), schau("n9", N9, POS["n11"], delay=0.5), zu("b1", N9, after=True),
+     lauf("n9", N9), schau("n9", N9, POS["n11"], weit=21.5, delay=0.5), zu("b1", N9, after=True),
      lauf("n11", (10, 12), after=True), lauf("r2", (7, 17), after=True), lauf("n7", (10, 52), delay=1.2), lauf("r5", (7, 47), delay=1.5)),
    S("Aufdrehen, Abschluss: Punkt", "Spieler neun dreht auf und hat freie Bahn. Er schießt flach ins Eck, und das gibt einen Punkt für Team Neon. Danach spielt der Trainer den nächsten Ball zu den drei Spielern hinten.",
      h.bl("n9", SCHUSS, von=hf.richt(X(N9), X(POS["n11"])), dauer=1.3), h.drehen("n9", SCHUSS, delay=0.4), h.ps("b1", SCHUSS, after=True))]},
@@ -86,8 +88,8 @@ u = {"title": "Sieben gegen sieben in Dritteln", "code": "UE-402", "kind": "Spie
   V("Steigerung", "Und jetzt die zweite Steigerung: In jeder Zone stehen immer mindestens zwei Spieler von jedem Team.", "Zwei Spieler in jeder Zone",
     "Jedes Team hat in jeder Zone immer mindestens zwei Spieler. Geht einer nach vorn, rückt ein anderer nach. So muss jeder wissen, wo seine Mitspieler stehen. Die Abstände bleiben gut, und hinten ist immer einer zum Absichern da.",
     sp(n7=(12, 57)), [h.B("b1", *fu(POS["n3"]))] + ERSATZ,
-    [S("Einer geht vor, einer rückt nach", "Spieler drei spielt steil auf Spieler elf. Gleichzeitig startet Spieler acht in die Endzone. Jetzt fehlt in der Mitte einer. Spieler vier schaut nach vorn, sieht das und rückt sofort nach.",
-       zu("b1", POS["n11"]), lauf("n8", (16, 38), delay=0.3), schau("n4", POS["n4"], (30, 33), delay=0.8), lauf("n4", (31, 27), after=True)),
+    [S("Einer geht vor, einer rückt nach", "Spieler drei schaut nach vorn und spielt steil auf Spieler elf. Gleichzeitig startet Spieler acht in die Endzone. Jetzt fehlt in der Mitte einer, also rückt Spieler vier sofort nach.",
+       schau("n3", POS["n3"], POS["n11"]), zu("b1", POS["n11"], after=True), lauf("n8", (16, 38), delay=1.2), lauf("n4", (31, 27), delay=1.7)),
      S("In die Endzone: Punkt", "Spieler elf spielt in die Endzone auf Spieler acht. Der legt quer zu Spieler neun, und Spieler neun schießt. Das gibt einen Punkt für Team Neon.",
        zu("b1", (16, 38)), zu("b1", POS["n9"], after=True), h.ps("b1", SCHUSS, after=True))])]}
 json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)

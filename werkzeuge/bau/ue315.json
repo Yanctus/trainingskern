@@ -514,7 +514,7 @@
     "steps": [
      {
       "label": "Elf stellt zu und lauert",
-      "say": "Der Ball geht zu Spieler vier. Spieler elf steht so, dass der Pass auf Spieler zwei schwer wird. Dabei schaut er genau auf den ersten Kontakt von Spieler vier.",
+      "say": "Der Ball geht zu Spieler vier. Spieler elf steht so, dass der Pass auf Spieler zwei schwer wird. Dabei lauert er auf den ersten Kontakt von Spieler vier.",
       "moves": [
        {
         "who": "b1",
@@ -532,15 +532,6 @@
         ],
         "type": "lauf",
         "delay": 0.2
-       },
-       {
-        "who": "n11",
-        "to": [
-         31,
-         36
-        ],
-        "type": "blick",
-        "after": true
        }
       ]
      },

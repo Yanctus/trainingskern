@@ -46,7 +46,7 @@ u = {"title": "Erster Kontakt und Antritt", "code": "UE-324", "kind": "Übungsfo
   "balls": [B("b1", *f(POS["n8"])), B("b2", *f(POS["r4"]))] + WARTE + ERSATZ, "dims": DIMS,
   "steps": [
    S("Pass in die Mitte", "Beide Runden starten gleichzeitig. Oben spielt Spieler acht flach zu Spieler zehn in die Mitte, unten spielt Spieler vier zu Spieler neun. Spieler zehn schaut zum Ball, bis er ihn hat.",
-     bl("n10", ZU8), ps("b1", f(POS["n10"]), after=True), ps("b2", f(POS["r9"]))),
+     bl("n10", ZU8, weite=40), ps("b1", f(POS["n10"]), after=True), ps("b2", f(POS["r9"]))),
    S("Nach innen mitnehmen, diagonal spielen", "Jetzt dreht Spieler zehn auf. Sein erster Kontakt geht nach innen, und schon kommt der Pass diagonal in die Ecke zu Spieler sieben. Spieler neun macht dasselbe nach unten zu Spieler elf. Die beiden Passgeber laufen in die Mitte nach.",
      bl("n10", ZU7, von=ZU8, dauer=1.3), drehen("n10", ZU7, gegen=True, delay=0.4),
      dr("n10", "b1", M10, after=True), ps("b1", f(POS["n7"]), after=True),

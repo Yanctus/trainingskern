@@ -437,13 +437,13 @@
      },
      {
       "label": "Kopf hoch: Wo ist Ball zwei?",
-      "say": "Bevor der Ball von Spieler drei kommt, schaut Spieler acht rüber zu Spieler zwei. Er muss wissen, wo der zweite Ball gerade ist. Dann kommt der Pass zu ihm.",
+      "say": "Bevor Spieler drei passt, hebt er den Kopf und schaut zu Spieler acht. Wo ist der zweite Ball gerade? Ist der Weg frei, kommt der Pass.",
       "moves": [
        {
-        "who": "n8",
+        "who": "n3",
         "to": [
-         70,
-         19
+         49.5,
+         19.4
         ],
         "type": "blick"
        },

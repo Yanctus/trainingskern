@@ -52,6 +52,13 @@ for (const e of alle) {
         if (pass_an_ihn && dz >= 4 && eigene.length) out.push({ ...row, fehler: "Kegel beim Passempfänger (schaut nicht zum Passgeber)" });
         else if (pass_an_ihn && dz < 4) { /* Annehmen: schaut zum Passgeber, erlaubt */ }
         if (pass_an_ihn && dz < 4) return; // bereit zur Annahme: schaut zum Ball/Passgeber, immer erlaubt
+        // Bereit zur Annahme nach der Richtung: Ein Pass an ihn kommt im selben oder nächsten Schritt, und der Kegel zeigt (±20°)
+        // zum Passgeber bzw. Ball. Kurze Kegel enden vor dem Passgeber, darum zählt die Richtung, nicht der Endpunkt.
+        const winkel = (u, v) => { const w = Math.abs(Math.atan2(u[1], u[0]) - Math.atan2(v[1], v[0])) * 180 / Math.PI; return Math.min(w, 360 - w); };
+        const tEnde = play.steps[si + 1] ? play.steps[si + 1].t1 : play.total;
+        const zuMir = Object.entries(play.tracks).filter(([bid]) => ids.balls.includes(bid)).flatMap(([, tr]) => tr.segs)
+          .filter((sg) => sg.ez?.name === "out" && sg.t0 >= play.steps[si].t0 - 0.05 && sg.t0 <= tEnde + 0.05 && near(sg.to, sg.t1)[1] === m.who);
+        if (zuMir.some((sg) => winkel([m.to[0] - wo[0], m.to[1] - wo[1]], [sg.from[0] - wo[0], sg.from[1] - wo[1]]) < 20)) return;
         if (!eigene.length) out.push({ ...row, fehler: hatBall ? "ohne Ballaktion danach" : (zielGegner ? "Verteidiger (schaut zum Gegner)" : "ohne Ballaktion danach") });
       });
     });

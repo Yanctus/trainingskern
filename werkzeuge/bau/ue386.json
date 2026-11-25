@@ -271,7 +271,7 @@
    "label": "Steigerung",
    "say": "Und jetzt die Steigerung: Ein Stürmer wartet vor dem Tor auf die Flanke.",
    "title": "Mit Stürmer vor dem Tor",
-   "text": "Ohne Sprint zur Puppe, dafür steht ein Stürmer von Team Rot vor dem Tor und will die Flanke verwerten. Der Verteidiger schaut, wo der Stürmer hinläuft, und geht eng an ihn heran. Mit dem Körper nimmt er ihm den Schwung und ist vor ihm am Ball.",
+   "text": "Ohne Sprint zur Puppe, dafür steht ein Stürmer von Team Rot vor dem Tor und will die Flanke verwerten. Der Verteidiger achtet darauf, wo der Stürmer hinläuft, und geht eng an ihn heran. Mit dem Körper nimmt er ihm den Schwung und ist vor ihm am Ball.",
    "board": {
     "players": [
      {
@@ -350,8 +350,8 @@
     ],
     "steps": [
      {
-      "label": "Erst der Stürmer, dann der Flügel",
-      "say": "Der Trainer spielt durch die Stangen auf Spieler sieben. Spieler sechs schaut zuerst, wo Spieler neun steht, dann rüber zum Flügel.",
+      "label": "Ball auf den Flügel",
+      "say": "Der Trainer spielt durch die Stangen auf Spieler sieben. Spieler sechs wartet vorn bei Spieler neun.",
       "moves": [
        {
         "who": "b1",
@@ -369,20 +369,6 @@
         ],
         "type": "lauf",
         "delay": 0.2
-       },
-       {
-        "who": "n6",
-        "to": [
-         59.5,
-         19
-        ],
-        "type": "blick",
-        "delay": 0.3,
-        "von": [
-         24,
-         30
-        ],
-        "dauer": 1.3
        }
       ]
      },
@@ -536,7 +522,7 @@
     "steps": [
      {
       "label": "Kurz und lang",
-      "say": "Der Trainer spielt auf Spieler sieben. Vorn laufen beide Stürmer los, Spieler neun zum kurzen Pfosten, Spieler zehn zum langen. Spieler sechs bleibt am kurzen Pfosten und schaut, wo Spieler zehn hinläuft.",
+      "say": "Der Trainer spielt auf Spieler sieben. Vorn laufen beide Stürmer los, Spieler neun zum kurzen Pfosten, Spieler zehn zum langen. Spieler sechs bleibt am kurzen Pfosten bei Spieler neun.",
       "moves": [
        {
         "who": "b1",
@@ -581,15 +567,6 @@
         ],
         "type": "lauf",
         "delay": 0.4
-       },
-       {
-        "who": "n6",
-        "to": [
-         18,
-         15
-        ],
-        "type": "blick",
-        "after": true
        }
       ]
      },
