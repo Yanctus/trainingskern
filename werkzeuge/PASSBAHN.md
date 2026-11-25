@@ -1,4 +1,12 @@
-# Pässe durch einen Gegenspieler (Stand 25.11.2026, Prüfung mit passbahn.mjs)
+# Pässe durch einen Gegenspieler (Prüfung mit passbahn.mjs)
+
+**Erledigt (25.11.2026):** Alle unten gelisteten Pässe sind korrigiert (nur Koordinaten, `bend`, `delay`; Sprechtexte und Schritte
+unverändert, Aufnahmen bleiben gültig). Kontrolllauf über alle 437 Einheiten danach: 1 Treffer, UE-412 Steigerung 2 Schritt 3, gewollt
+(laut Text fängt Spieler sechs den Ball ab). Beim Korrigieren mitbehoben: weitere Treffer aus `pruefen` in UE-006, 011, 036, 045.
+Hinweis: bau/ue099.py weicht jetzt von der Datenbank ab (Datenbank maßgeblich). Bei UE-188 wirft der Trainer im Coaching-Punkt 1 bewusst
+zwischen Spieler zwei und Spieler elf (Duell um den Ball).
+
+## Liste vor der Korrektur (Stand 25.11.2026)
 
 Gefunden: 45 Pässe in 35 Einheiten. „eingesprochen“ = schon vertont und sichtbar.
 
