@@ -25,9 +25,9 @@ import halbfeld as hf
 # Fassungen: Coaching-Punkt aus dem Video („Full back must press winger …, but drop to cover“, „Over press leaves space in
 # behind“) und Steigerung aus Ton/Video (zwei Mittelfeldspieler greifen mit an, fünf gegen vier; Torwart steht hoch und läuft
 # den Ball hinter der Kette ab).
-# Sichtkegel: Video-Schlussfolie „Awareness of runners moving in behind - checks“: Spieler vier schaut vor dem Herausrücken
-# zu Spieler neun (aus dem Sinn). In der Steigerung ist im Video beim Torwart ein Kegel eingezeichnet („GK plays as a sweeper
-# with high line“): Der Torwart schaut nach vorn zum Ball.
+# Sichtkegel: Video-Schlussfolie „Awareness of runners moving in behind - checks“ (Spieler vier) und in der Steigerung ein Kegel
+# beim Torwart im Video („GK plays as a sweeper with high line“). Beide nach der Regel des Inhabers (25.11.2026) gestrichen:
+# Verteidiger bzw. Torwart beobachten nur und spielen danach nicht selbst.
 # Keine Dublette: UE-166 (03-P3), UE-177 (78-P3), UE-204, UE-206 (10-P7), UE-208 (78-P5), UE-212 (78-P6), UE-242 (78-P7),
 # UE-250 (78-P12), UE-302, UE-320 (78-P4), UE-368, UE-370 (78-P8) haben kein Mittelfeld-Dreieck mit Schattenphase, keine
 # Flügelzonen und keinen Start „live nach dem Rückpass nach innen“.
@@ -78,8 +78,8 @@ u = {"title": "Viererkette mit hoher Linie", "code": "UE-380", "kind": "Spielfor
      lauf("n2", (21.5, 50), delay=1.0), lauf("n4", (17.5, 38), delay=1.0), lauf("n5", (17.5, 23), delay=1.0), lauf("n3", (21.5, 11), delay=1.0)),
    S("Pass auf den Flügel, Spieler zwei presst", "Spieler zehn spielt raus auf Spieler elf. Das ist das Signal. Spieler zwei läuft ihn an, die anderen drei rücken nach und schieben zur Ballseite.",
      zu("b1", POS["r11"]), lauf("n2", (30, 50), delay=0.4), lauf("n4", (20.5, 38), delay=0.6), lauf("n5", (19, 24), delay=0.6), lauf("n3", (23, 13), delay=0.6)),
-   S("Rückpass nach innen, die Kette rückt raus", "Spieler elf dreht ab und spielt zurück zu Spieler zehn. Ab jetzt ist das Spiel frei. Spieler vier schaut kurz, wo Spieler neun steht, und ruft. Die ganze Kette rückt zusammen raus, Spieler neun steht im Abseits.",
-     h.drehen("r11", X(POS["r10"])), zu("b1", POS["r10"], after=True), schau("n4", (20.5, 38), POS["r9"], delay=0.4),
+   S("Rückpass nach innen, die Kette rückt raus", "Spieler elf dreht ab und spielt zurück zu Spieler zehn. Ab jetzt ist das Spiel frei. Spieler vier ruft, und die ganze Kette rückt zusammen raus. Spieler neun steht im Abseits.",
+     h.drehen("r11", X(POS["r10"])), zu("b1", POS["r10"], after=True),
      lauf("n2", (31, 47), delay=1.6), lauf("n4", (27.5, 36), delay=1.6), lauf("n5", (27.5, 22), delay=1.6), lauf("n3", (31, 12), delay=1.6)),
    S("Abgefangen, ins Minitor: Punkt", "Spieler zehn spielt trotzdem steil. Spieler fünf ist näher dran, geht dazwischen und hat den Ball. Er dribbelt außen vorbei und trifft ins Minitor, und das gibt einen Punkt für Team Neon. Danach spielt der Trainer den nächsten Ball zu Spieler sechs.",
      zu("b1", ABFANG), lauf("n5", ABFANG, delay=0.2), h.dr("n5", "b1", X((33, 12)), after=True), h.ps("b1", MINI_OBEN, after=True))],
@@ -97,8 +97,8 @@ u = {"title": "Viererkette mit hoher Linie", "code": "UE-380", "kind": "Spielfor
     sp(), [h.B("b1", *fu(POS["r10"]))] + ERSATZ,
     [S("Steil, prallen lassen, nachrücken", "Spieler zehn spielt steil auf Spieler neun. Der lässt den Ball prallen auf Spieler sechs, der nachrückt. Jetzt greifen Spieler sechs und Spieler zehn mit an. Fünf gegen vier.",
        zu("b1", POS["r9"]), lauf("n5", (20, 24), delay=0.4), lauf("r6", (33, 30), delay=0.2), zu("b1", (33, 30), after=True), lauf("r10", (29, 40), delay=0.6)),
-     S("Torwart steht hoch", "Unser Torwart rückt mit der Kette auf und steht vor dem Tor, nicht auf der Linie. Er schaut, was Spieler sechs vorhat.",
-       lauf("n1", (12, 27.5)), schau("n1", (12, 27.5), (33, 30), after=True)),
+     S("Torwart steht hoch", "Unser Torwart rückt mit der Kette auf und steht vor dem Tor, nicht auf der Linie. So läuft er Bälle hinter der Kette ab.",
+       lauf("n1", (12, 27.5))),
      S("Ball hinter die Kette, Torwart ist da", "Spieler sechs spielt den Ball hinter die Kette, Spieler elf startet. Der Torwart ist zuerst am Ball und fängt ihn. Jetzt geht es schnell auf die Minitore.",
        lauf("r11", (20, 53)), lauf("r11", (11, 45), after=True), h.ps("b1", X((9, 42)), delay=0.3),
        h.mv("n1", [round(X((9, 42))[0] - 0.6, 1), round(X((9, 42))[1] - 0.6, 1)], delay=0.5))])]}

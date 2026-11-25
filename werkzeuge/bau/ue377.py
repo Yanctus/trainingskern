@@ -11,8 +11,9 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # Fassungen wie die PDF-Progressionen: 1 die zwei aus der Mittelfeldzone dürfen zurückarbeiten, 2 ein Verteidiger darf auf den
 # Pass zum Zehner springen; dann zieht der Zehner weg, der Ball geht direkt auf die Spitze, die ablegt (Ton und Video 1:37-1:54).
 # Sichtkegel aus PDF und Ton („Scanning before receiving“, „scanning consistently for oncoming pressure“): Annehmen und Aufdrehen
-# mit bl(von=...) und drehen() in Grundform und erster Steigerung; in der zweiten Steigerung Schulterblick zum springenden
-# Verteidiger. Im Video kein Kegel eingezeichnet, Richtung aus dem Sinn.
+# mit bl(von=...) und drehen() in Grundform und erster Steigerung. In der zweiten Steigerung bekommt nach der Sichtkegel-Regel
+# (Inhaber, 25.11.2026) der Passgeber hinten den Kegel (er sieht den freien Weg auf die Spitze), nicht der wegziehende Zehner.
+# Im Video kein Kegel eingezeichnet, Richtung aus dem Sinn.
 # Kein Dubletten-Fall: UE-290 (1-P24) ist Einzeltraining eins gegen eins ohne Zonen und Aufbauspieler.
 T = P("T", "c", 14, 44, "T")
 ERSATZ = [B("s1", 10.6, 47.5), B("s2", 13.4, 48.6)]
@@ -67,12 +68,12 @@ u = {"title": "Linie überspielen, aufdrehen", "code": "UE-377", "kind": "Spielf
        ps("b1", [38.6, 12.6]), ps("b1", [46, 5.3], after=True))],
     dims=DIMS),
   V("Steigerung", "Und jetzt die zweite Steigerung: Ein Verteidiger darf rausspringen.", "Verteidiger springt raus",
-    "Jetzt darf einer der beiden Verteidiger auf den Pass zum Zehner springen. Der Zehner schaut früh über die Schulter. Springt der Verteidiger, zieht er weg, und der Pass geht direkt auf Spieler neun. Der legt ab, und der Zehner kommt mit Blick nach vorn an den Ball.",
+    "Jetzt darf einer der beiden Verteidiger auf den Pass zum Zehner springen. Springt er, zieht der Zehner weg. Hinten sieht der Passgeber den freien Weg und spielt direkt auf Spieler neun. Der legt ab, und der Zehner kommt mit Blick nach vorn an den Ball.",
     sp(), [B("b1", *f("n4"))] + ERSATZ,
-    [S("Schulterblick, er springt", "Spieler zehn schaut über die Schulter und sieht, Spieler fünf kommt raus. Also zieht er weg in den freien Raum. Spieler neun kommt dem Ball entgegen.",
-       bl("n10", [62, 18]), mv("r5", [52, 27], delay=0.8), mv("n10", [60, 31], delay=1.0), mv("n9", [57, 22], delay=0.8)),
-     S("Direkt auf die Spitze, ablegen", "Der Weg zu Spieler neun ist jetzt frei. Spieler vier spielt ihn direkt an, und Spieler neun legt ab auf Spieler zehn. Der hat das Spiel jetzt vor sich.",
-       ps("b1", [57.6, 22.6]), ps("b1", [60.6, 31.6], after=True)),
+    [S("Er springt, der Zehner zieht weg", "Spieler fünf springt raus auf den Zehner. Also zieht Spieler zehn weg in den freien Raum, und Spieler neun kommt dem Ball entgegen.",
+       mv("r5", [52, 27]), mv("n10", [60, 31], delay=0.2), mv("n9", [57, 22])),
+     S("Direkt auf die Spitze, ablegen", "Spieler vier schaut nach vorn. Der Weg zu Spieler neun ist jetzt frei, also spielt er ihn direkt an. Spieler neun legt ab auf Spieler zehn, und der hat das Spiel jetzt vor sich.",
+       bl("n4", [54.5, 32.5]), ps("b1", [57.6, 22.6], after=True), ps("b1", [60.6, 31.6], after=True)),
      S("Nur noch einer hinten: Punkt", "Spieler fünf ist raus, hinten steht nur noch Spieler drei. Spieler zehn dribbelt an, und Spieler neun dreht ab in die Tiefe. Er bekommt den Ball und trifft, und das gibt einen Punkt für Team Neon.",
        mv("n9", [66, 14]), mv("n11", [33, 15], delay=0.2), dr("n10", "b1", [61, 25], delay=0.3), ps("b1", [66.6, 14.6], after=True), ps("b1", [54, 5.3], after=True))],
     dims=DIMS)]}

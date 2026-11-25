@@ -11,6 +11,7 @@ import json, math, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hil
 # Punkt für den Schnelleren ergänzt (Original: wer zuerst greift, gewinnt).
 # Sichtkegel: Text „Eyes Forward, Head Up – Maintain vision and awareness“, im Video beim Coaching-Punkt eingezeichnet (Blick
 # nach vorn zur Stange) und in der Steigerung (Blick von der Stange weg). Umdrehen in der Steigerung mit drehen().
+# Neue Kegel-Regel (25.11.2026): Reaktionsspiel ohne Ball, niemand passt danach, daher alle Kegel gestrichen (Blick nur im Text).
 T = P("T", "c", 50, 30, "T")
 ERSATZ = [B("s1", 52.6, 33.5), B("s2", 47.4, 33.5)]
 WIN = [0, 45, 135, 180, 225, 315]
@@ -76,8 +77,7 @@ u = {"title": "Farbe hören, schneller greifen", "code": "UE-321", "kind": "Übu
  "say_intro": "Farbe hören, schneller greifen. Ein Reaktionsspiel zu zweit. Der Trainer ruft eine Farbe, und wer zuerst das richtige Teil an der Stange hat, gewinnt das Duell.",
  "board": {"lines": LINES, "goals": [], "cones": CONES, "players": sp(), "balls": ERSATZ,
   "steps": [
-   S("Tief stehen, Augen nach vorn", "Je zwei Spieler stehen sich gegenüber, dazwischen die Stange. Team Neon außen, Team Rot innen. Alle stehen tief, die Knie gebeugt, und schauen nach vorn zur Stange.",
-     bl("n8", [58, 30])),
+   S("Tief stehen, Augen nach vorn", "Je zwei Spieler stehen sich gegenüber, dazwischen die Stange. Team Neon außen, Team Rot innen. Alle stehen tief, die Knie gebeugt, und schauen nach vorn zur Stange."),
    S("Ruf links: eine Station weiter", "Der Trainer ruft links. Alle gehen seitlich zur nächsten Stange, ohne die Füße zu kreuzen. Außen und innen laufen gegeneinander, und jeder hat einen neuen Gegner.",
      *links()),
    S("Ruf orange: alle greifen zu", "Jetzt ruft er orange. Sofort sprinten alle los zum orangen Hütchen an ihrer Stange. Schauen wir auf Spieler zehn und Spieler sieben.",
@@ -89,15 +89,13 @@ u = {"title": "Farbe hören, schneller greifen", "code": "UE-321", "kind": "Übu
   V("Coaching-Punkt", "Jetzt zum Coaching-Punkt: Tief und mittig stehen.", "Tief und mittig stehen",
     "Wer aufrecht steht, verliert den ersten Schritt. Die Knie sind gebeugt, das Gewicht liegt auf den Fußballen, der Körper steht mittig zwischen beiden Hütchen. Der Blick geht nach vorn, nicht zum Trainer.",
     sp(), ERSATZ,
-    [S("Tief, mittig, Blick nach vorn", "Spieler acht steht tief und genau mittig vor seiner Stange. Er schaut nach vorn, nicht zum Trainer. Gegenüber steht Spieler elf noch zu aufrecht.",
-       bl("n8", [58, 30]), bl("r11", [80, 30])),
+    [S("Tief, mittig, Blick nach vorn", "Spieler acht steht tief und genau mittig vor seiner Stange. Er schaut nach vorn, nicht zum Trainer. Gegenüber steht Spieler elf noch zu aufrecht."),
      S("Ruf gelb: Punkt", "Der Trainer ruft gelb. Spieler acht ist mit dem ersten Schritt sofort weg und greift das gelbe Hütchen vor Spieler elf, und das gibt einen Punkt für Team Neon.",
        *rennen("neon", AUSSEN, INNEN, {"n8", "r9", "n2", "r13", "n6", "r7"}))]),
   V("Steigerung", "Und jetzt die Steigerung: Mit dem Rücken zur Stange.", "Mit dem Rücken zur Stange",
     "Jetzt stehen alle mit dem Rücken zur Stange, Team Neon schaut nach außen, Team Rot zum Trainer. Auf den Ruf drehen sie sich um, finden ihre Stange und greifen zu. Ruft der Trainer Leibchen, geht es nach oben zum Leibchen auf der Stange.",
     sp(), ERSATZ,
-    [S("Rücken zur Stange", "Alle drehen der Stange den Rücken zu. Spieler acht schaut nach außen, Spieler elf schaut in die Mitte. Sehen können sie die Stange jetzt nicht mehr.",
-       bl("n8", [90, 30]), bl("r11", [50, 30])),
+    [S("Rücken zur Stange", "Alle drehen der Stange den Rücken zu. Spieler acht schaut nach außen, Spieler elf schaut in die Mitte. Sehen können sie die Stange jetzt nicht mehr."),
      S("Ruf Leibchen: umdrehen", "Der Trainer ruft Leibchen. Alle drehen sich blitzschnell um und suchen ihre Stange.",
        *[drehen(i, stange(a)) for a, i in AUSSEN.items()], *[drehen(i, stange(a), gegen=True) for a, i in INNEN.items()]),
      S("Wer das Leibchen hat: Punkt", "Dann hoch zum Leibchen. Spieler elf reißt es vor Spieler acht von der Stange, und das gibt einen Punkt für Team Rot.",

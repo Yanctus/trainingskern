@@ -11,7 +11,8 @@ import hilfe as h
 # Steigerung und PDF Key Coaching Point (alle Passwege nach vorn zu) als Coaching-Punkt, mit Anspielstationen (opt).
 # Sichtkegel aus Text und Ton ("Recognise the right trigger to press", "quick break"); im Video nicht eingezeichnet, Richtung
 # aus dem Sinn: Spieler acht schaut auf den kurzen Pass (Auslöser), Spieler zehn schaut nach dem Abfangen zu Spieler vier
-# (Kegel mit von, Drehpfeil).
+# (Kegel mit von, Drehpfeil). Neue Kegel-Regel (25.11.2026): statt Spieler acht schaut der Passgeber (Spieler sechs) vor dem
+# kurzen Pass zu Spieler drei.
 FX0, FX1, FY0, FY1 = 9, 89, 4, 51
 T = P("T", "c", 63, 55.3, "T")
 ERSATZ = [B("s1", 66.5, 55.8), B("s2", 69, 55.8)]
@@ -52,8 +53,8 @@ u = {"title": "Rondo 5 gegen 3 mit Minitoren", "code": "UE-362", "kind": "Spielf
      ps("b1", [48.6, 49.6]), mv("n4", [44, 33], delay=0.3), mv("n8", [58, 39], delay=0.3), mv("n10", [57, 22], delay=0.3)),
    S("Weiter auf die andere Seite", "Spieler neun spielt weiter zu Spieler sechs. Wieder schieben alle drei mit, keiner rennt allein los.",
      ps("b1", [75.6, 33.6]), mv("n8", [66, 37], delay=0.3), mv("n10", [64, 24], delay=0.3), mv("n4", [46, 31], delay=0.3)),
-   S("Kurzer Pass, das Zeichen", "Spieler acht hat den Ball im Blick. Spieler sechs spielt einen kurzen Pass zu Spieler drei. Das ist das Zeichen. Spieler acht und Spieler vier gehen sofort drauf.",
-     bl("n8", [51, 28]), ps("b1", [51.6, 28.6], after=True), mv("n8", [57, 31], after=True), mv("n4", [45, 29], delay=1.2)),
+   S("Kurzer Pass, das Zeichen", "Spieler sechs schaut zu Spieler drei und spielt ihm einen kurzen Pass. Das ist das Zeichen. Spieler acht und Spieler vier gehen sofort drauf.",
+     bl("r6", [51, 28]), ps("b1", [51.6, 28.6], after=True), mv("n8", [57, 31], after=True), mv("n4", [45, 29], delay=1.2)),
    S("Pass abgefangen", "Unter Druck will Spieler drei raus zu Spieler sieben. Spieler zehn hat darauf gewartet. Er geht in den Passweg und hat den Ball.",
      mv("n10", [50, 16]), ps("b1", [50.6, 16.6], delay=0.3)),
    S("Konter aufs Minitor: Punkt", "Spieler zehn dreht auf, und Spieler vier startet Richtung Minitor. Der Pass kommt in den Lauf. Spieler vier schiebt ein, und das gibt einen Punkt für Team Neon. Dann spielt der Trainer einen neuen Ball zu Team Rot.",

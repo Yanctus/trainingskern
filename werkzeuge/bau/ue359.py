@@ -12,7 +12,7 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # sind die Tore zu, fünf Pässe geben zwei Punkte, die Verteidiger pressen).
 # Sichtkegel: Text KCP „Scan to recognise defenders positions - play through/around“, Ton „scan early to recognise defender
 # positions“: Spieler zehn schaut zum Passgeber, nach der Annahme schwenkt der Kegel zu Spieler zwei (mit Drehpfeil);
-# in Steigerung eins schaut Spieler fünf vor dem Pass zum Minitor. Im Video kein Kegel eingezeichnet.
+# in Steigerung eins schaut Spieler fünf vor seinem Pass ins Minitor dorthin (Kegel im Schritt des Abschlusses, nicht bei der Annahme). Im Video kein Kegel eingezeichnet.
 T = P("T", "c", 13, 45, "T")
 ERSATZ = [B("s1", 16.6, 48.5), B("s2", 13, 48.8)]
 POS = {"n8": (34, 5), "n4": (64, 5), "n3": (25, 28.5), "n2": (75, 26.5), "n10": (57, 21), "n6": (40.5, 54), "n5": (63.5, 54),
@@ -61,10 +61,10 @@ u = {"title": "Sechs Pässe, dann ins Minitor", "code": "UE-359", "kind": "Spiel
     sp(r9=(34, 30)), [B("b1", *F("n3"))] + ERSATZ,
     [S("Weg zu, also sichern", "Spieler drei will ins Minitor, aber Spieler neun steht genau im Weg. Also sichert er den Ball und spielt runter zu Spieler sechs.",
        mv("r9", [33, 29.5]), ps("b1", F("n6"), delay=0.3), mv("r11", [44, 46], delay=0.6)),
-     S("Verteidiger schiebt rüber", "Spieler elf schiebt zum Ball. Spieler sechs spielt sofort weiter zu Spieler fünf. Der schaut kurz, und der Weg zum Minitor unten ist frei.",
-       ps("b1", F("n5")), mv("r11", [47, 47], delay=0.2), bl("n5", [50, 34], after=True)),
-     S("Jetzt durch: zwei Punkte", "Jetzt ist der richtige Moment. Spieler fünf spielt flach ins Minitor, und das gibt zwei Punkte für Team Neon.",
-       ps("b1", [50.3, 32.6]), mv("r11", [52, 44], delay=0.2))], dims=DIMS),
+     S("Verteidiger schiebt rüber", "Spieler elf schiebt zum Ball. Spieler sechs spielt sofort weiter zu Spieler fünf.",
+       ps("b1", F("n5")), mv("r11", [47, 47], delay=0.2)),
+     S("Jetzt durch: zwei Punkte", "Spieler fünf schaut kurz hoch. Der Weg zum Minitor unten ist frei, jetzt ist der richtige Moment. Er spielt flach ins Minitor, und das gibt zwei Punkte für Team Neon.",
+       bl("n5", [50, 34]), ps("b1", [50.3, 32.6], after=True), mv("r11", [52, 44], delay=0.2))], dims=DIMS),
   V("Steigerung", "Und jetzt die zweite Steigerung: Nach einem Treffer ins Minitor sind die Tore zu.", "Tore zu, fünf Pässe zählen",
     "Nach einem Treffer ins Minitor sind die Tore zu. Jetzt geben schon fünf Pässe zwei Punkte, und danach sind die Tore wieder offen. Die Verteidiger müssen also hart pressen. Wer das Pressing überspielt, findet wieder Platz.",
     sp(), [B("b1", *F("n3"))] + ERSATZ,

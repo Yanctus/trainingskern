@@ -13,6 +13,7 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # fest und legt ab). Spieler 10, 2 und 5 sind in der Steigerung draußen.
 # Sichtkegel: Text/Ton „Find the spare player quickly“, „find the free player“; im Video nicht eingezeichnet. Richtung aus dem
 # Sinn: Spieler sechs schaut vor dem Pass zum freien Spieler neun; im Coaching-Punkt schaut Spieler neun zu Spieler sechs, der Weg ist zu.
+# Neue Kegel-Regel (25.11.2026): Spieler neun passt im Coaching-Punkt danach nicht selbst, sein Kegel ist gestrichen.
 T = P("T", "c", 14, 55.3, "T")
 ERSATZ = [B("s1", 17.5, 55.8), B("s2", 20, 55.8)]
 K1, K2 = P("k1", "t", 86.6, 27.5, "TW"), P("k2", "t", 12.2, 28, "TW")
@@ -55,8 +56,8 @@ u = {"title": "Drei Zonen, Überzahl, Rücklauf", "code": "UE-325", "kind": "Spi
   V("Coaching-Punkt", "Jetzt zum Coaching-Punkt: Anlaufen und den Passweg zustellen.", "Passweg zu, nach außen",
     "Der Verteidiger in der Mitte läuft nicht gerade auf den Ball. Er kommt im Bogen von innen und stellt den Pass zum anderen Außen zu. So muss der Angreifer an der Linie entlang. Dort wartet der zweite Verteidiger, und die beiden machen die Falle zu.",
     sp(), [B("b1", 12.8, 28.6)] + ERSATZ,
-    [S("Im Bogen anlaufen", "Der Torwart spielt diesmal zu Spieler neun. Spieler fünf läuft im Bogen von innen an. Spieler neun schaut zu Spieler sechs, aber der Passweg ist zu.",
-       ps("b1", f(POS["n9"])), mv("r5", [54.5, 31], delay=0.3), mv("r5", [51, 36.5], after=True), bl("n9", [47.8, 25], after=True)),
+    [S("Im Bogen anlaufen", "Der Torwart spielt diesmal zu Spieler neun. Spieler fünf läuft im Bogen von innen an und stellt den Passweg zu Spieler sechs zu.",
+       ps("b1", f(POS["n9"])), mv("r5", [54.5, 31], delay=0.3), mv("r5", [51, 36.5], after=True)),
      S("An der Linie entlang", "Spieler neun muss nach außen an der Linie entlang. Spieler fünf bleibt dran. Spieler zwei kommt von vorn dazu.",
        dr("n9", "b1", [62, 48.5]), mv("r5", [59, 43], delay=0.2), mv("r2", [71, 41], delay=0.3)),
      S("Die Falle geht zu", "Jetzt sind zwei Verteidiger am Ball. Spieler zwei spitzelt ihn ins Aus. Die Welle ist vorbei, und die nächsten drei starten.",

@@ -13,7 +13,8 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # angles“, Team Rot nach dem Ballwechsel), Steigerung aus PDF Key Coaching Point 2 (Reihenfolge ändern: zwei, zwei, eins).
 # Sichtkegel aus dem Text („Constant scanning for options and available space“), im Video nicht eingezeichnet, Richtung aus dem
 # Sinn: Spieler neun schaut vor dem Direktpass zu Spieler vier (Grundform); Spieler sechs schaut vor dem Pass zum freien
-# Spieler elf (Coaching-Punkt).
+# Spieler elf (Coaching-Punkt). Neue Kegel-Regel (25.11.2026): in der Grundform schaut Spieler neun erst zum Passgeber, nach dem
+# Ballkontakt schwenkt der Kegel (von) zu Spieler vier, dann spielt er direkt.
 T = P("T", "c", 16, 20, "T")  # links neben dem Feld
 ERSATZ = [B("s1", 16.6, 23.6), B("s2", 19.1, 23.6)]
 POS = {"n9": (33, 12), "r10": (49, 7), "n2": (59.5, 12), "r3": (69, 12),
@@ -43,8 +44,9 @@ u = {"title": "Direkt, dann zwei Kontakte", "code": "UE-367", "kind": "Spielform
  "say_intro": "Direkt, dann zwei Kontakte. Fünf gegen fünf auf Ballbesitz. Das Team am Ball spielt eine feste Reihenfolge, und wer sich verzählt, gibt den Ball ab.",
  "board": {"lines": LINES, "cones": CONES, "players": sp(), "balls": [B("b1", 60.1, 12.6)] + ERSATZ,
   "steps": [
-   S("Eröffnung, Spieler neun direkt", "Spieler zwei eröffnet zu Spieler neun. Der muss direkt spielen, also schaut er schon vorher, wo Spieler vier steht. Der Ball geht sofort weiter.",
-     bl("n9", [32.5, 32]), ps("b1", fu("n9"), after=True), mv("r10", [40, 9], delay=0.3), ps("b1", fu("n4"), after=True)),
+   S("Eröffnung, Spieler neun direkt", "Spieler zwei eröffnet zu Spieler neun. Spieler neun schaut zum Ball und dann sofort zu Spieler vier. Er muss direkt spielen, also geht der Ball gleich weiter.",
+     bl("n9", [56, 12]), ps("b1", fu("n9"), after=True), bl("n9", [32.2, 40.6], von=[56, 12], dauer=1.0, after=True),
+     ps("b1", fu("n4"), after=True), mv("r10", [40, 9], delay=0.3)),
    S("Spieler vier hat zwei Kontakte", "Jetzt darf Spieler vier annehmen. Erster Kontakt zur Seite, mit dem zweiten spielt er zu Spieler acht. Spieler sieben läuft ihn an, kommt aber zu spät.",
      dr("n4", "b1", [35, 44]), mv("r7", [36, 48.5], delay=0.2), ps("b1", fu("n8"), after=True)),
    S("Ein Kontakt zu viel: Ballwechsel", "Spieler acht müsste direkt spielen. Er stoppt den Ball aber erst. Ein Kontakt zu viel, also gehört der Ball jetzt Team Rot. Spieler elf geht dazwischen und nimmt ihn mit. Ab jetzt spielt Team Rot in derselben Reihenfolge.",

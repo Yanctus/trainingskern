@@ -17,7 +17,8 @@ import hilfe as h
 # die richtige Lösung, der Fehler steht im Text) und Key Coaching Point 2 (Konter gemeinsam unterstützen).
 # Sichtkegel aus Text („Check shoulders to cover all defensive angles“) und Video (Kreis um die Mittelfeldspieler): Spieler zehn
 # schaut über die Schulter zum einrückenden Spieler einundzwanzig (Fassung 1). In Fassung 2 schaut der Balleroberer vor dem
-# Steilpass nach vorn (Ton: Konter einleiten).
+# Steilpass nach vorn (Ton: Konter einleiten). Neue Kegel-Regel (25.11.2026): Spieler zehn passt danach nicht selbst, sein
+# Kegel ist gestrichen; stattdessen schaut in Fassung 1 der Ballführer (Spieler zwanzig) zum einrückenden Spieler, dann spielt er quer.
 FX0, FX1, FY0, FY1 = 7, 91, 3, 52
 def R(x, y): return [round(FX0 + (y - 4) / 52 * (FX1 - FX0), 1), round(FY1 - (x - 12) / 76 * (FY1 - FY0), 1)]
 def RF(x, y): return [round(v + 0.6, 1) for v in R(x, y)]  # Ball am Fuß / Pass zum Spieler
@@ -78,11 +79,11 @@ u = {"title": "Drei Zonen, als Block pressen", "code": "UE-356", "kind": "Spielf
   V("Coaching-Punkt", "Jetzt zum Coaching-Punkt: Schulterblick im Mittelfeld.", "Schulterblick im Mittelfeld",
     "Der Flügelspieler von Team Rot zieht nach innen, genau in den Rücken unseres Mittelfelds. Schaut dort keiner über die Schulter, kommt der Pass durch die Mitte, und unser Innenverteidiger muss raus. Dann ist hinten ein Loch. Wer früh schaut, stellt den Passweg zu, und Team Rot muss quer spielen.",
     sp(r21=(18, 28.5)), [B("b1", *ROT["r20"])] + ERSATZ,
-    [S("Flügel rückt ein, Schulterblick", "Spieler einundzwanzig zieht von außen nach innen, in den Rücken von Spieler zehn. Spieler zehn schaut über die Schulter und sieht ihn. Sofort schiebt er sich in den Passweg.",
-       mv("r21", [42, 28]), bl("n10", [44, 21], delay=0.4), mv("n10", [47.5, 30.5], after=True)),
-     S("Der Ball muss quer", "Durch die Mitte geht nichts mehr. Spieler zwanzig spielt quer zu Spieler zwölf. Der Torwart ruft rüber, und der ganze Block schiebt mit. Spieler drei läuft an.",
-       pf("b1", ROT["r12"]), mv("n3", [84.5, 31], delay=0.5), mv("n8", [68, 30.5], delay=0.6), mv("n6", [57, 26.5], delay=0.6),
-       mv("n5", [70, 21], delay=0.6))],
+    [S("Flügel rückt ein, Passweg zu", "Spieler einundzwanzig zieht von außen nach innen, in den Rücken von Spieler zehn. Spieler zehn bemerkt ihn früh und schiebt sich sofort in den Passweg.",
+       mv("r21", [42, 28]), mv("n10", [47.5, 30.5], delay=0.6)),
+     S("Der Ball muss quer", "Spieler zwanzig schaut zu Spieler einundzwanzig. Durch die Mitte geht nichts mehr, also spielt er quer zu Spieler zwölf. Der Torwart ruft rüber, und der ganze Block schiebt mit. Spieler drei läuft an.",
+       bl("r20", [42, 28]), pf("b1", ROT["r12"], after=True), mv("n3", [84.5, 31], delay=1.4), mv("n8", [68, 30.5], delay=1.5),
+       mv("n6", [57, 26.5], delay=1.5), mv("n5", [70, 21], delay=1.5))],
     dims=DIMS),
   V("Coaching-Punkt", "Der zweite Coaching-Punkt: Den Konter gemeinsam tragen.", "Den Konter gemeinsam tragen",
     "Nach dem Ballgewinn schalten Mittelfeld und Spitzen zusammen um. Der erste Pass geht nach vorn, die Spitze legt ab, und von hinten kommt einer im Sprint. Kurze, scharfe Pässe, und immer ist einer anspielbar. So wird aus vier gegen drei ein Treffer.",

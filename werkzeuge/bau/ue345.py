@@ -9,8 +9,8 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # Mittelzone (im PDF-Text "opposite side"). Jeder Springer hat einen eigenen Ball (wer den Pass bekommt, hat keinen am Fuß).
 # Wechsel der Springer nach einigen Minuten ist ergänzt (im Original nicht genannt).
 # Fassungen: PDF Key Coaching Point (Verteidiger schauen weg vom Ball und verfolgen den Läufer) und Progression (drei Sekunden).
-# Sichtkegel: im Video eingezeichnet beim Verteidiger ("Defender looks away from the ball to move to intercept"): Spieler neun
-# schaut zum Läufer Spieler vier. In der Steigerung aus dem Ton ("constantly be aware of the ball's position"): Spieler acht
+# Sichtkegel: im Video beim Verteidiger eingezeichnet ("Defender looks away from the ball to move to intercept"), nach der Regel
+# des Inhabers (25.11.2026) gestrichen (Verteidiger, spielt danach nicht selbst); der Text sagt es weiter. In der Steigerung aus dem Ton ("constantly be aware of the ball's position"): Spieler acht
 # schaut zum Springer, nimmt an, dann schwenkt der Kegel zum Läufer (bl mit von).
 T = P("T", "c", 16, 56, "T")
 ERSATZ = [B("s1", 12, 57.5), B("s2", 11, 53.5)]
@@ -56,8 +56,8 @@ u = {"title": "Pass raus, neuer Ball rein", "code": "UE-345", "kind": "Spielform
   V("Coaching-Punkt", "Jetzt zum Coaching-Punkt: Weg vom Ball schauen und den Läufer verfolgen.", "Läufer im Blick behalten",
     "Zuerst verhindern die Verteidiger den Pass nach außen. Kommt er trotzdem an, schauen sie weg vom Ball und suchen den Läufer. Wer ihn findet und mitgeht, fängt den Pass nach innen ab. Dann greift das eigene Team sofort an.",
     sp(n8=(66, 27.5), n9=(66, 43)), [B("b1", 57.6, 23.1)] + fb("f1", "f2", "f4") + ERSATZ,
-    [S("Rot spielt raus zum Springer", "Jetzt hat Team Rot den Ball. Spieler zwei spielt raus zum Springer. Sofort schaut Spieler neun weg vom Ball und sucht Spieler vier.",
-       ps("b1", [77.6, 22.6]), bl("n9", [50, 41], after=True)),
+    [S("Rot spielt raus zum Springer", "Jetzt hat Team Rot den Ball. Spieler zwei spielt raus zum Springer. Spieler neun kümmert sich jetzt nicht um den Ball, er sucht Spieler vier.",
+       ps("b1", [77.6, 22.6])),
      S("Mitgehen und abfangen", "Spieler vier startet in die Endzone, und Spieler neun geht mit. Der andere Springer spielt seinen Ball nach innen. Spieler neun ist zuerst dran.",
        mv("r4", [51, 47]), mv("n9", [58, 46.5], delay=0.2), ps("bf4", [58.6, 47.1], after=True)),
      S("Ball erobert, Neon greift an", "Ball erobert. Jetzt ist Team Neon dran. Spieler neun dribbelt raus aus der Endzone und spielt zu Spieler sechs, und das Spiel über die Springer beginnt von vorn.",

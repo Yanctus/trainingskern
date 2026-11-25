@@ -14,7 +14,8 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # Fassungen: PDF Key Coaching Point 1 (Paar bleibt eng, nicht auseinanderziehen lassen; hier der richtige Ablauf mit Ballgewinn
 # und Punkt in der schmalen Zone) und 2 (Kette rückt gemeinsam raus, Spitze im Abseits).
 # Sichtkegel: Text „Checks to see attackers positioning“ und „Awareness of long balls … in behind“, im Video kein Kegel
-# eingezeichnet: Spieler vier schaut vor dem Rausrücken zu Spieler neun (Richtung aus dem Sinn).
+# eingezeichnet: Spieler vier achtet vor dem Rausrücken auf Spieler neun (nur im Text, kein Kegel beim Verteidiger nach der
+# Regel vom 25.11.2026).
 # Keine Dublette: UE-162 (65-P6, fünf gegen fünf mit Endzonen und Minitoren), UE-380 (78-P13, halbes Feld mit großem Tor)
 # und UE-320 (78-P4) haben andere Zonen und Abläufe.
 T = P("T", "c", 7.5, 50, "T")
@@ -70,8 +71,8 @@ u = {"title": "Hohe Linie mit Abseitsfalle", "code": "UE-394", "kind": "Spielfor
   V("Coaching-Punkt", "Der zweite Coaching-Punkt: Die Kette rückt gemeinsam raus.", "Gemeinsam raus, Abseits",
     "Die Viererkette bleibt eine Linie. Kommt Druck auf den Ball, rücken alle vier gleichzeitig ein paar Meter raus. Einer schaut, wo die Spitzen stehen, und ruft. Wer dann hinter der Kette stehen bleibt, ist im Abseits.",
     sp(), [B("b1", *f(63.5, 47)), B("b0", 8.1, 50.6)] + ERSATZ,
-    [S("Druck auf den Ball, Blick zu den Spitzen", "Spieler zehn hat den Ball. Spieler sechs läuft ihn an und setzt ihn unter Druck. Hinten schaut Spieler vier über die Schulter, wo Spieler neun steht.",
-       mv("n6", [60, 41.5]), bl("n4", [72, 25], delay=0.3)),
+    [S("Druck auf den Ball", "Spieler zehn hat den Ball. Spieler sechs läuft ihn an und setzt ihn unter Druck. Hinten achtet Spieler vier darauf, wo Spieler neun steht.",
+       mv("n6", [60, 41.5])),
      S("Alle vier rücken raus", "Spieler vier ruft, und alle vier rücken gleichzeitig raus, in einer Linie. Spieler zwölf geht mit zurück. Spieler neun bleibt stehen und steht jetzt hinter der Kette.",
        mv("n3", [19, 28]), mv("n5", [37.5, 28]), mv("n4", [62.5, 28]), mv("n2", [81, 28]), mv("r12", [28, 33], delay=0.3)),
      S("Steilpass, Abseits: Punkt", "Spieler zehn spielt steil, Spieler neun startet in die Zone. Er stand aber schon hinter der Kette, als der Pass kam. Abseits, und das gibt einen Punkt für Team Neon.",

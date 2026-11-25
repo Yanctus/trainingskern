@@ -15,7 +15,8 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # Fassungen: PDF Progression 1 (zwei Minitore an den Seiten für Team Rot nach Ballgewinn im drei gegen drei) und
 # Progression 2 (ein Spieler des dritten Teams läuft mit zurück, Team Neon kontert drei gegen vier).
 # Sichtkegel aus dem Ton („reading the play, anticipating passes“): Spieler acht beobachtet den Ballführer, bevor er in den
-# Passweg geht. Im Video kein Kegel eingezeichnet.
+# Passweg geht. Im Video kein Kegel eingezeichnet. Neue Kegel-Regel (25.11.2026): Kegel gestrichen (Spieler acht passt danach
+# nicht selbst, er fängt ab), das Lesen steht nur noch im Text.
 # Keine Dublette: UE-096 (zwei Hälften mit Minitoren), UE-238 (drei Stürmer gegen vier, Konter auf Torwart und Minitore),
 # UE-187 (Dreiecke mit Springern) haben keine drei Teams mit Zehn-Pässe-Wertung und Konter des pressenden Teams.
 T = P("T", "c", 17, 55.3, "T")  # unten an der Seitenlinie neben der Zone
@@ -50,8 +51,8 @@ u = {"title": "Als Einheit pressen und kontern", "code": "UE-341", "kind": "Spie
   "steps": [
    S("Sechs gegen drei in der Zone", "Team Rot und das dritte Team halten zusammen den Ball. Zehn Pässe in Folge, und das gibt einen Punkt für sie. Spieler elf spielt zu Spieler fünf.",
      ps("b1", fu(POS["r5"]))),
-   S("Zu dritt pressen", "Jetzt geht Spieler neun von der Seite drauf. Spieler vier stellt den Rückpass zu. Spieler acht schaut genau, wohin der Ball als Nächstes will.",
-     mv("n9", [19, 15]), mv("n4", [26, 16.5], delay=0.2), bl("n8", [23, 24], delay=0.2), mv("n8", [27.5, 33], after=True)),
+   S("Zu dritt pressen", "Jetzt geht Spieler neun von der Seite drauf. Spieler vier stellt den Rückpass zu. Spieler acht ahnt, wohin der Ball als Nächstes will, und schiebt in den Passweg.",
+     mv("n9", [19, 15]), mv("n4", [26, 16.5], delay=0.2), mv("n8", [27.5, 33], delay=0.6)),
    S("Abgefangen, alle umschalten", "Spieler fünf bleibt nur der Pass quer zu Spieler sechs. Spieler acht ist dazwischen. Ab jetzt kontert Team Neon, und Team Rot sprintet zurück und verteidigt.",
      ps("b1", [23.5, 33]), mv("n8", [23, 32.4], delay=0.2), mv("r7", [64, 33], delay=0.6), mv("r6", [60, 44], delay=0.6),
      mv("r5", [24, 23], delay=0.6), mv("r5", [42, 26], after=True), mv("r5", [60, 14], after=True)),

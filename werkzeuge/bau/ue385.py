@@ -13,8 +13,9 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # jedem Angriff wie im Ton ("If the defending team is unable to win possession, or the attackers score, the roles switch").
 # Fassungen = Key Coaching Point 1 (schlechtes Pressing, ein Pass durch die Lücke, Team Rot trifft nach normalem Aufbau: ein Punkt)
 # und Key Coaching Point 2 (Spielstand, Verlierer sprinten eine Runde).
-# Sichtkegel aus Text ("Recognise pressing triggers to press high") und Ton ("works together to press"): Spieler zehn beobachtet den
-# Abstoß des Torwarts zu Spieler zwei, das ist das Signal zum Anlaufen. Im Video kein Kegel eingezeichnet, Richtung aus dem Sinn.
+# Sichtkegel: Text ("Recognise pressing triggers to press high") und Ton ("works together to press") meinen den Presser, der danach
+# nicht selbst passt: nach der Sichtkegel-Regel (Inhaber, 25.11.2026) dafür kein Kegel. Im ersten Coaching-Punkt schaut Spieler fünf
+# beim Annehmen zum Torwart und nach der Annahme zu Spieler elf (bl mit von, drehen). Im Video kein Kegel eingezeichnet.
 # Keine Dublette (UE-174 Gegenpressing in sechs Sekunden, UE-204 Kette erobert, UE-236 Wellenspiel, UE-340 Endzone/Minitore).
 T = P("T", "c", 20, 30, "T")
 ERSATZ = [B("s1", 20.6, 34.5), B("s2", 18, 34.5)]
@@ -53,8 +54,8 @@ u = {"title": "Hohes Pressing zählt doppelt", "code": "UE-385", "kind": "Spielf
  "say_intro": "Hohes Pressing zählt doppelt. Fünf gegen fünf mit Torwart. Erobert ein Team den Ball vorn in der Hälfte des Gegners und trifft, gibt das zwei Punkte.",
  "board": {"lines": LINES, "goals": TORE, "cones": CONES, "players": sp(), "balls": [B("b1", *f(TW["k1"]))] + ERSATZ,
   "steps": [
-   S("Abstoß ist das Signal", "Der Torwart oben spielt kurz raus zu Spieler zwei. Spieler zehn sieht den Pass kommen. Das ist das Signal.",
-     bl("n10", [34, 12]), ps("b1", f(ROT["r2"]), delay=0.3)),
+   S("Abstoß ist das Signal", "Der Torwart oben spielt kurz raus zu Spieler zwei. Genau dieser kurze Abstoß ist das Signal für Team Neon.",
+     ps("b1", f(ROT["r2"]))),
    S("Alle laufen zusammen an", "Jetzt läuft Spieler zehn Spieler zwei an. Spieler neun macht den Weg zurück zum Torwart zu, Spieler acht rückt zu Spieler fünf. Von hinten schieben Spieler sechs und Spieler vier bis an die Mittellinie.",
      mv("n10", [35, 16]), mv("n9", [42, 11], delay=0.1), mv("n8", [55, 23], delay=0.2),
      mv("n6", [43, 31], delay=0.3), mv("n4", [57, 32], delay=0.3), mv("r11", [64, 37], delay=0.3)),

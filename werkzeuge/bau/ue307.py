@@ -15,9 +15,9 @@ import hilfe as h
 # Steigerung eins nach PDF Progression 1 (Ballverlust = sofort den Weg zum Minitor zustellen), Steigerung zwei nach Progression 2
 # (ein Springer in der Mittelzone verlagert auf die andere Seite). Im Original werden die Minitore dort entfernt; eine Fassung
 # kann Tore nicht ausblenden (leere goals-Liste zeigt die der Grundform), darum bleiben sie stehen und der Text sagt, dass sie nicht zählen.
-# Sichtkegel: Text Progression 1 „maintaining defensive awareness“; im Video nicht eingezeichnet, Richtung aus dem Sinn:
-# Spieler fünf schaut nach dem Ballverlust zum Minitor, das er zustellen muss. In Steigerung zwei nimmt der Springer in der
-# Mittelzone an und dreht auf (Kegel mit von + Drehpfeil).
+# Sichtkegel: In Steigerung zwei schaut der Springer in der Mittelzone zum Springer mit dem Ball, nimmt an und dreht auf
+# (Kegel mit von + Drehpfeil). Der frühere Kegel von Spieler fünf nach dem Ballverlust (Progression 1 „defensive awareness“)
+# ist gestrichen: Er spielt danach nicht selbst (Regel des Inhabers, 25.11.2026).
 FX0, FX1, FY0, FY1 = 9, 89, 5, 50
 def R(x, y): return [round(FX0 + (55 - y) / 50 * (FX1 - FX0), 1), round(FY0 + (x - 20) / 60 * (FY1 - FY0), 1)]
 def Q(x, y): return [round(20 + (y - FY0) / (FY1 - FY0) * 60, 2), round(55 - (x - FX0) / (FX1 - FX0) * 50, 2)]  # quer -> hochkant
@@ -83,8 +83,8 @@ u = {"title": "Zu dritt den Steilpass zustellen", "code": "UE-307", "kind": "Spi
   V("Steigerung", "Und jetzt die Steigerung: Wer den Ball verliert, setzt sofort nach.", "Nach Ballverlust nachsetzen",
     "Die Dreierkette darf nach dem Ballgewinn jetzt auch in ein Minitor ihrer Hälfte treffen. Die Außenspieler laufen sofort nach innen und stellen den Weg zum Minitor zu. Holen sie den Ball zurück, greifen sie weiter an. Trifft die Kette, gibt das einen Punkt, und innen und außen tauschen.",
     sp(**LINKS), [B("b1", *b("n5")), B("b2", *b("r9"))] + ERSATZ,
-    [S("Ball weg, Blick zum Minitor", "Spieler fünf will zum Springer spielen, aber Spieler zwölf geht dazwischen und hat den Ball. Sofort schaut Spieler fünf zum nahen Minitor. Dorthin will Spieler zwölf jetzt.",
-       mv("r12", q(22, 14)), ps("b1", q(22.6, 14.6)), bl("n5", q(40, 13), after=True)),
+    [S("Ball weg, sofort umschalten", "Spieler fünf will zum Springer spielen, aber Spieler zwölf geht dazwischen und hat den Ball. Jetzt will Spieler zwölf ins nahe Minitor.",
+       mv("r12", q(22, 14)), ps("b1", q(22.6, 14.6))),
      S("Weg zum Minitor zustellen", "Spieler fünf sprintet nach innen und stellt sich vor das Minitor. Von hinten kommt Spieler drei dazu und nimmt Spieler zwölf den Ball wieder ab. Team Neon bleibt außen und greift weiter an.",
        mv("n5", q(30, 9.5)), mv("n5", q(35, 16.5), after=True), dr("r12", "b1", q(28, 15.5), delay=0.3), mv("n3", q(19, 28.5), delay=0.4), mv("n3", q(26.5, 18.5), after=True))], dims=DIMS),
   V("Steigerung", "Und jetzt die zweite Steigerung: Die Minitore zählen nicht mehr, dafür wird verlagert.", "Verlagern über die Mitte",
@@ -93,8 +93,8 @@ u = {"title": "Zu dritt den Steilpass zustellen", "code": "UE-307", "kind": "Spi
     [S("Erst zur Seite locken", "Team Neon spielt wieder zur Seite zu Spieler fünf, und die Kette von Team Rot schiebt mit. Der Springer in dieser Hälfte bietet sich an und bekommt den Ball.",
        ps("b1", b("n5")), *[mv(i, list(p), delay=0.2) for i, p in LINKS.items()], mv("f1", q(19, 30), delay=0.6), ps("b1", q(19.6, 30.6), after=True)),
      S("Durch die Lücke in die Mitte", "Zwischen Spieler zwölf und Spieler dreizehn ist die Lücke zu groß. Der Springer in der Mittelzone schaut zum Ball, und der Pass kommt flach durch.",
-       bl("f2", q(29, 29)), ps("b1", q(49.6, 28.1), after=True)),
+       bl("f2", q(19, 30)), ps("b1", q(49.6, 28.1), after=True)),
      S("Aufdrehen und verlagern", "Der Springer dreht auf und spielt in die andere Hälfte zu Spieler sieben. Dort läuft das Spiel jetzt weiter, und Team Neon muss verschieben.",
-       bl("f2", q(64, 14.3), von=q(29, 29), dauer=1.3), drehen("f2", q(74.5, 5), delay=0.4), ps("b1", b("r7"), after=True),
+       bl("f2", q(64, 14.3), von=q(19, 30), dauer=1.3), drehen("f2", q(74.5, 5), delay=0.4), ps("b1", b("r7"), after=True),
        mv("n6", q(66, 8), delay=1.6), mv("n10", q(71, 18), delay=1.6), mv("n8", q(63, 32), delay=1.6))], dims=DIMS)]}
 json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)

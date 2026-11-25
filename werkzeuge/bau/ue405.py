@@ -37,8 +37,9 @@ VOR = (27, 17)        # dorthin startet Spieler drei nach seinem Pass für den D
 ABLAGE = (43.4, 33)   # dort bekommt Spieler vier die Ablage von Spieler zehn
 UM_PUPPE = (38, 32)   # Zwischenpunkt, damit Spieler vier nicht durch seine Puppe läuft
 def vier_kommt(**k): return [mv("n4", list(UM_PUPPE), **k), mv("n4", list(ABLAGE), after=True)]
-ZUM_ACHTER = richt(POS["n10"], POS["n8"])
-ZUM_ZEHNER, ZUM_ELFER = richt(ABLAGE, POS["n10"]), richt(ABLAGE, POS["n11"])
+def bis(a, b, rest): return richt(a, b, ((b[0] - a[0]) ** 2 + (b[1] - a[1]) ** 2) ** 0.5 - rest)  # Kegel endet knapp vor b
+ZUM_ACHTER = bis(POS["n10"], POS["n8"], 3.3)   # Kegel reicht bis zum Passgeber (Regel des Inhabers, 25.11.2026)
+ZUM_ZEHNER, ZUM_ELFER = bis(ABLAGE, POS["n10"], 2), richt(ABLAGE, POS["n11"])
 
 u = {"title": "Kombinieren zum Seitenwechsel", "code": "UE-405", "kind": "Übungsform",
  "focuses": ["Passspiel", "Zusammenspiel", "Bewegung"], "age_groups": ["C-Jugend", "B-Jugend"],

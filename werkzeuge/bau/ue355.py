@@ -11,7 +11,8 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # Fassungen: PDF Key Coaching Point (auf den Zehen, ständig scannen, in jede Richtung bereit) und Progression (Passseite
 # selbst wählen und in die andere Richtung laufen).
 # Sichtkegel aus dem Text (Key Coaching Point „scanning constantly“, Summary „Recognise quickly which side pass is played“) und
-# Video (Kegel beim Anläufer eingezeichnet): Der nächste Anläufer schaut auf den Ball, bevor der Pass kommt.
+# Video (Kegel beim Anläufer eingezeichnet). Regel des Inhabers (25.11.2026): Kegel nur beim Passgeber. Darum schaut jetzt
+# Spieler vier zum Passziel, bevor er spielt; der wartende Anläufer hat keinen Kegel mehr.
 T = P("T", "c", 80, 12, "T")  # außerhalb oben rechts
 ERSATZ = [B("s1", 83.5, 12.6), B("s2", 86, 12.6)]
 POS = {"n4": (37.5, 33), "n3": (26.5, 37), "n11": (53, 17.5), "n9": (62, 7),
@@ -54,8 +55,8 @@ u = {"title": "Anlaufen an vier Puppen", "code": "UE-355", "kind": "Übungsform"
   V("Coaching-Punkt", "Jetzt zum Coaching-Punkt: Wach bleiben, auf den Zehen und den Ball im Blick.", "Auf den Zehen, Ball im Blick",
     "Wer an der Puppe wartet, steht nicht einfach herum. Er bleibt auf den Zehen und schaut auf den Ball. So sieht er früh, wohin der Pass geht, und ist sofort weg. Kurz vor dem Gegner bremst er ab, beugt die Knie und stellt sich seitlich.",
     sp(), [B("b1", *fuss("n4"))] + ERSATZ,
-    [S("Auf den Zehen, Blick zum Ball", "Spieler zehn wartet unten. Er steht auf den Zehen und schaut auf Spieler vier mit dem Ball. Der spielt nach oben zu Spieler elf, und Spieler zehn ist sofort weg.",
-       bl("n10", [37.5, 33]), ps("b1", [53.6, 18.1], after=True), mv("n10", [53.5, 27.5], after=True)),
+    [S("Auf den Zehen, sofort weg", "Spieler zehn wartet unten auf den Zehen, den Ball immer vor Augen. Spieler vier schaut nach oben zu Spieler elf und spielt. Spieler zehn ist sofort weg.",
+       bl("n4", list(POS["n11"])), ps("b1", [53.6, 18.1], after=True), mv("n10", [53.5, 27.5], after=True)),
      S("Abbremsen und seitlich stellen", "Die letzten Schritte werden kurz. Spieler zehn beugt die Knie und stellt sich seitlich. Spieler elf nimmt den Ball zur Seite mit, und Spieler zehn geht den Schritt mit.",
        dr("n11", "b1", [58, 19]), mv("n10", [55.5, 25.5], delay=0.3))]),
   V("Steigerung", "Und jetzt die Steigerung: Der Annehmende sucht sich die Passseite selbst aus.", "Passseite selbst wählen",
@@ -63,8 +64,8 @@ u = {"title": "Anlaufen an vier Puppen", "code": "UE-355", "kind": "Übungsform"
     sp(), [B("b1", 80.6, 12.6)] + ERSATZ,
     [S("Trainer spielt an, Spieler fünf läuft an", "Wie vorher spielt der Trainer zu Spieler vier, und Spieler fünf läuft von gegenüber an.",
        ps("b1", fuss("n4")), mv("n5", [45.5, 32], delay=0.3)),
-     S("Andere Seite, andere Richtung", "Spieler vier spielt diesmal nach unten zu Spieler zehn. Danach läuft er in die andere Richtung, zur Puppe oben. Spieler elf schaut genau hin, denn jetzt ist er gefragt.",
-       bl("n11", [38, 34]), dr("n4", "b1", [40, 36], delay=0.3), ps("b1", fuss("n10"), after=True), mv("n4", [40, 12], after=True)),
+     S("Andere Seite, andere Richtung", "Spieler vier schaut diesmal nach unten zu Spieler zehn und spielt ihn an. Danach läuft er in die andere Richtung, zur Puppe oben. Spieler elf muss jetzt aufpassen, denn er ist gefragt.",
+       bl("n4", list(POS["n10"])), dr("n4", "b1", [40, 36], after=True), ps("b1", fuss("n10"), after=True), mv("n4", [40, 12], after=True)),
      S("Spieler elf reagiert", "Der Ball ist unten, also sprintet Spieler elf von oben los und läuft Spieler zehn an. Wer zu spät schaut, kommt zu spät.",
        mv("n11", [54, 37]))])]}
 json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)

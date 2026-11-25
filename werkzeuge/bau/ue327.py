@@ -13,6 +13,7 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # (Steigerung: wer den Ball verliert, verteidigt; Auslöser schlechte Annahme wie im Ton "pressing triggers").
 # Sichtkegel aus Text ("Identify wide gaps", "Recognise when to play through") und Video ("furthest player"): Spieler vier schaut vor
 # dem Pass durch die Lücke zum Springer, der Balleroberer schaut zum am weitesten entfernten freien Spieler. Im Video kein Kegel.
+# 25.11.2026 (Sichtkegel-Regel): Der Balleroberer nimmt den Ball erst mit (Dribbling weg vom Springer), dann schaut er und passt.
 FX0, FX1, FY0, FY1 = 9, 87, 5, 51
 T = P("T", "c", 31, 55.5, "T")
 ERSATZ = [B("s1", 34.5, 56), B("s2", 37, 56)]
@@ -53,8 +54,8 @@ u = {"title": "Acht Pässe, dann verlagern", "code": "UE-327", "kind": "Spielfor
      ps("b1", [50.4, 7.1])),
    S("Die Hürdenspieler pressen", "Sofort tauschen die Rollen. Spieler zwei und Spieler fünf kommen von den Hürden und pressen die Springer. Spieler sieben und Spieler neun gehen an die Hürden. Drüben läuft der Ball schon weiter.",
      mv("r2", [31, 17]), mv("r5", [58, 18]), mv("r7", [19, 48]), mv("r7", [14.5, 35], after=True), mv("r9", [81, 31.5]), ps("b1", [21.4, 15.9], delay=0.4)),
-   S("Ball erobert, weit spielen", "Spieler zwei erobert den Ball. Er schaut sofort, wer am weitesten weg und frei ist, das ist Spieler vier, und spielt ihn an. Jetzt pressen Spieler sieben und Spieler neun wieder in der Hälfte von Team Neon. Nach fünf Minuten wird ein anderes Team Verteidiger.",
-     mv("r2", [22.8, 17.2]), bl("r2", [32, 33], after=True), ps("b1", [48.6, 49.1], after=True),
+   S("Ball erobert, weit spielen", "Spieler zwei erobert den Ball und nimmt ihn mit. Er schaut sofort, wer am weitesten weg und frei ist, das ist Spieler vier, und spielt ihn an. Jetzt pressen Spieler sieben und Spieler neun wieder in der Hälfte von Team Neon. Nach fünf Minuten wird ein anderes Team Verteidiger.",
+     mv("r2", [22.8, 17.2]), dr("r2", "b1", [25.5, 20.5], after=True), bl("r2", [36.5, 34.5], after=True), ps("b1", [48.6, 49.1], after=True),
      mv("r7", [38, 40], after=True), mv("r9", [62, 42], delay=0.3))],
   "dims": DIMS},
  "versions": [

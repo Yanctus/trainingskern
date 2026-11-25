@@ -9,8 +9,8 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # Ein Dummy (Mitte unten) etwas versetzt, damit der letzte Pass von 8 zu 6 nicht durch ihn läuft. Ein Trainer statt zwei, links.
 # Fassungen wie die PDF-Progressionen: 1 zweiter Ball, 2 kreativ kombinieren (Klatschen, Doppelpass, Pass um die Ecke; Folge nach
 # der Skizze der Progression 2: 3 -> 10 -> 8 -> 10 -> 2 -> 8 -> 5).
-# Sichtkegel: nur in Progression 1 ("maintain awareness of both balls", Ton "aware of both"): Spieler 8 schaut vor der Annahme,
-# wo der zweite Ball ist (bei Spieler 2). Grundform und Progression 2 ohne Sichtkegel (Text, Ton und Video geprüft).
+# Sichtkegel: nur in Progression 1 ("maintain awareness of both balls", Ton "aware of both"): Spieler 3 schaut vor seinem Pass
+# zu Spieler 8 (dahinter der zweite Ball bei Spieler 2), Kegel beim Passgeber nach der Regel vom 25.11.2026. Grundform und Progression 2 ohne Sichtkegel (Text, Ton und Video geprüft).
 # Keine Dublette: UE-161 (94-P4, Viererkette und vier Mittelfeldspieler, Stangen), UE-235 (28-P12, acht Stationen, Spieler laufen
 # nach) und UE-309 (WU-10) haben andere Organisation und andere Passfolgen.
 T = P("T", "c", 17, 38, "T")
@@ -59,8 +59,8 @@ u = {"title": "Passfolge um vier Dummys", "code": "UE-371", "kind": "Übungsform
     sp(), [B("b1", *f("n6")), B("b2", *f("n10"))] + ERSATZ,
     [S("Zwei Bälle laufen los", "Spieler sechs eröffnet zu Spieler drei. Im selben Moment schickt Spieler zehn den zweiten Ball tief auf Spieler zwei, der dafür nach vorn startet.",
        ps("b1", f("n3")), mv("n2", N2V, delay=0.2), ps("b2", fu(N2V), delay=0.6, bend=3)),
-     S("Kopf hoch: Wo ist Ball zwei?", "Bevor der Ball von Spieler drei kommt, schaut Spieler acht rüber zu Spieler zwei. Er muss wissen, wo der zweite Ball gerade ist. Dann kommt der Pass zu ihm.",
-       bl("n8", N2V), ps("b1", f("n8"), after=True), dr("n2", "b2", N2I, delay=0.4)),
+     S("Kopf hoch: Wo ist Ball zwei?", "Bevor Spieler drei passt, hebt er den Kopf und schaut zu Spieler acht. Wo ist der zweite Ball gerade? Ist der Weg frei, kommt der Pass.",
+       bl("n3", [49.5, 19.4]), ps("b1", f("n8"), after=True), dr("n2", "b2", N2I, delay=0.4)),
      S("Beide Bälle laufen weiter", "Spieler zehn kommt entgegen und bekommt den Ball von Spieler acht. Gleichzeitig geht Ball zwei rüber zu Spieler fünf. Spieler acht läuft sofort in die Mitte, denn gleich will Spieler fünf zu ihm spielen.",
        mv("n10", N10K), ps("b1", fu(N10K), delay=0.4), ps("b2", f("n5"), delay=0.4), mv("n8", N8M, after=True))]),
   V("Steigerung", "Und jetzt die zweite Steigerung: Die Spieler kombinieren frei.", "Frei und kreativ kombinieren",

@@ -17,8 +17,9 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # Fassungen: Coaching-Punkt aus Video/Ton („Effective positioning - blocking multiple lines of forward passes“) und Steigerung =
 # PDF Progression 1 (Sechser läuft mit zurück, drei gegen drei; Ballgewinn hinten zurück zum Trainer, Ton 1:09). Progression 2
 # (Konter auf das nahe Tor) nicht gebaut.
-# Sichtkegel: Text „Constant Scanning - continuously check surroundings“, im Video nicht eingezeichnet: im Coaching-Punkt schaut
-# Spieler sechs über die Schulter erst zu Spieler elf, dann zu Spieler neun (ein Kegel mit von, Richtung aus dem Sinn).
+# Sichtkegel: Text „Constant Scanning - continuously check surroundings“, im Video nicht eingezeichnet. Der Sechser passt danach nicht
+# gleich selbst: nach der Sichtkegel-Regel (Inhaber, 25.11.2026) bekommt im Coaching-Punkt der Passgeber den Kegel (Spieler sechzehn
+# schaut vor seinem Pass nach vorn zu Spieler neun). Der frühere erste Schritt (nur der Schulterblick) ist im zweiten aufgegangen.
 # Keine Dublette: UE-167 (89-P5, Hütchentor), UE-173 (89-P1, zwei Rondos vier gegen eins), UE-193 (89-P2, Dummys),
 # UE-293 (Sechser blockt Pässe zum Minitor) haben andere Organisation und Abläufe.
 FX0, FX1, FY0, FY1 = 9, 89, 4, 51
@@ -71,12 +72,10 @@ u = {"title": "Sechser schützt die Abwehr", "code": "UE-412", "kind": "Spielfor
   V("Coaching-Punkt", "Jetzt zum Coaching-Punkt: Zwei Passwege auf einmal zustellen.", "Zwei Passwege zustellen",
     "Spieler sechs schaut immer wieder über die Schulter, wo die Spitzen stehen. Dann stellt er sich auf der Mittellinie so hin, dass er zwei Passwege auf einmal zumacht. Wer trotzdem spielt, spielt ihm den Ball in die Füße. Den Ball gibt er sofort ins Rondo, und dort wird hinausgedribbelt.",
     sp(), [B("b1", *fuss("r16"))] + ERSATZ,
-    [S("Kopf hoch, wo stehen die Spitzen?", "Spieler sechzehn hat den Ball vorn im Rondo. Bevor er spielt, schaut Spieler sechs über die Schulter. Wo steht Spieler elf, wo Spieler neun?",
-       bl("n6", [73, 27.5], von=[56, 8], dauer=1.3)),
-     S("Zwischen zwei Passwegen stehen", "Spieler sechzehn hat zwei Möglichkeiten nach vorn. Spieler sechs schiebt auf der Mittellinie rüber und stellt sich genau dazwischen. Jetzt sind beide Wege zu.",
+    [S("Zwischen zwei Passwegen stehen", "Spieler sechzehn hat den Ball vorn im Rondo und zwei Möglichkeiten nach vorn, Spieler elf und Spieler neun. Spieler sechs weiß, wo die beiden stehen. Er schiebt auf der Mittellinie rüber und stellt sich genau dazwischen. Jetzt sind beide Wege zu.",
        opt("r16", [56, 8]), opt("r16", [73, 27.5]), mv("n6", [51, 17.5], delay=0.8)),
-     S("Abgefangen, ab ins Rondo", "Spieler sechzehn spielt trotzdem auf Spieler neun. Spieler sechs macht einen Schritt und hat den Ball. Er spielt sofort ins Rondo zu Spieler sieben. Der dribbelt hinaus, und das gibt einen Punkt für Team Neon.",
-       mv("n6", [51, 20.8]), ps("b1", [51.6, 21.4], delay=0.3), ps("b1", fuss("n7"), after=True), dr("n7", "b1", [40, 44], after=True))],
+     S("Abgefangen, ab ins Rondo", "Spieler sechzehn schaut nach vorn und spielt trotzdem auf Spieler neun. Spieler sechs macht einen Schritt und hat den Ball. Er spielt sofort ins Rondo zu Spieler sieben. Der dribbelt hinaus, und das gibt einen Punkt für Team Neon.",
+       bl("r16", [61, 24.2]), mv("n6", [51, 20.8], delay=0.3), ps("b1", [51.6, 21.4], after=True), ps("b1", fuss("n7"), after=True), dr("n7", "b1", [40, 44], after=True))],
     dims=DIMS),
   V("Steigerung", "Und jetzt die Steigerung: Der Sechser läuft mit zurück.", "Sechser läuft mit zurück",
     "Kommt der Pass auf eine Spitze durch, darf Spieler sechs die Mittellinie verlassen und hinterher sprinten. Vorn heißt es dann drei gegen drei. Erobert Team Neon dort den Ball, geht er zurück zum Trainer, und das Rondo beginnt neu.",

@@ -10,7 +10,8 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # Grundform = Szene aus PDF und Video (Pass auf den Innenverteidiger, weiter nach außen, Elf presst, Ballgewinn, Abschluss).
 # Fassung 1 = Ton/Video "screening and preparing the jump press". Fassung 2 = Progression (Seitentore zwei Punkte).
 # Sichtkegel: im Video keiner eingezeichnet; aus dem Text ("identify pressing triggers", "recognise where attackers can
-# switch"): Spieler elf beobachtet den ersten Kontakt des Innenverteidigers (Fassung 1).
+# switch"): Spieler elf beobachtet den ersten Kontakt des Innenverteidigers (Fassung 1, nur im Text: kein Kegel beim
+# Verteidiger, Regel vom 25.11.2026).
 # Kein Dubletten-Fall: UE-155 (59-P4) ist ein 3 gegen 2 auf 14 x 18 m mit einem Minitor und zwei Hütchentoren.
 T = P("T", "c", 6, 45, "T")
 ERSATZ = [B("s1", 7.6, 48.5), B("s2", 4, 48.5)]
@@ -56,8 +57,8 @@ u = {"title": "Pressen und die Seite zumachen", "code": "UE-315", "kind": "Spiel
   V("Coaching-Punkt", "Jetzt zum Coaching-Punkt: Zustellen und bereit sein zum Herausspringen.", "Zustellen und rausspringen",
     "Ein Spieler hat oft zwei Aufgaben. Er stellt einen Passweg zu und ist gleichzeitig bereit, nach vorn herauszuspringen. Das Signal ist ein schlechter Pass oder ein unsauberer erster Kontakt. Springt einer, rücken alle hinter ihm nach.",
     sp(), START,
-    [S("Elf stellt zu und lauert", "Der Ball geht zu Spieler vier. Spieler elf steht so, dass der Pass auf Spieler zwei schwer wird. Dabei schaut er genau auf den ersten Kontakt von Spieler vier.",
-       ps("b1", [29.6, 34.2]), mv("n11", [42, 47.5], delay=0.2), bl("n11", [31, 36], after=True)),
+    [S("Elf stellt zu und lauert", "Der Ball geht zu Spieler vier. Spieler elf steht so, dass der Pass auf Spieler zwei schwer wird. Dabei lauert er auf den ersten Kontakt von Spieler vier.",
+       ps("b1", [29.6, 34.2]), mv("n11", [42, 47.5], delay=0.2)),
      S("Schlechter Kontakt, Elf springt", "Der Ball springt Spieler vier vom Fuß. Darauf hat Spieler elf gewartet. Er geht sofort drauf, Spieler neun kommt von der anderen Seite, und dahinter rücken alle mit.",
        ps("b1", [33, 37.5]), mv("n11", [35.5, 39.5], delay=0.2), mv("n9", [33.5, 31], delay=0.3), mv("n8", [57, 40], delay=0.5), mv("n10", [55, 20], delay=0.5))]),
   V("Steigerung", "Und jetzt die Steigerung: Die Seitentore zählen doppelt.", "Seitentore zählen doppelt",

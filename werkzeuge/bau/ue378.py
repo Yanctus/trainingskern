@@ -11,9 +11,9 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # Angreifer nach außen drängen, Ballgewinn und Konter aufs Minitor. Wertung für Team Rot (Treffer ins große Tor) ergänzt.
 # Fassungen = PDF Progression 1 (drei gegen zwei, dritter Angreifer kommt mit Ball von außen) und Progression 2 (Spieler zwei
 # kommt nach zehn Sekunden dazu, drei gegen drei). Die Wechsel-Reihenfolge (nächstes Paar) aus „rotation“ abgeleitet.
-# Sichtkegel: Text „Awareness from defenders …“, im Video kein Kegel eingezeichnet; Richtung aus dem Sinn: Spieler fünf schaut
-# als Sichernder zu Spieler zehn (Grundform) bzw. zu Spieler neun im Rücken (Steigerung 1), Spieler zwei schaut beim
-# Reinkommen zum freien Spieler zehn (Steigerung 2).
+# Sichtkegel: Text „Awareness from defenders …“, im Video kein Kegel eingezeichnet; Richtung aus dem Sinn: Spieler zwei schaut
+# beim Reinkommen zum freien Spieler zehn (Steigerung 2), fängt dann ab und dribbelt. Die Kegel beim sichernden Spieler fünf
+# (Grundform, Steigerung 1) sind gestrichen (Regel vom 25.11.2026: kein Kegel bei Verteidigern, die nur beobachten).
 # Keine Dublette: UE-098 (03-P6, vier gegen vier auf zwei Tore), UE-166 (03-P3, Viererkette), UE-115 (19-P2, Hütchentore).
 T = P("T", "c", 50, 55.3, "T")
 ERSATZ = [B("s1", 53.5, 55.8), B("s2", 56, 55.8)]
@@ -46,8 +46,8 @@ u = {"title": "Zentral als Paar verteidigen", "code": "UE-378", "kind": "Spielfo
   "steps": [
    S("Spieler fünf spielt auf", "Spieler fünf spielt den Ball weit zu Spieler neun. Sofort rücken beide Verteidiger raus. Vorn zieht Spieler zehn in die Mitte.",
      ps("b1", [35.6, 45.1]), mv("n4", [39, 30], delay=0.6), mv("n5", [52, 27], delay=0.6), mv("r10", [58, 38], delay=0.6)),
-   S("Erst sichern, dann ran", "Spieler neun dribbelt an. Spieler vier wartet noch. Erst steht Spieler fünf schräg hinter ihm und hat Spieler zehn im Blick, dann geht Spieler vier ran.",
-     dr("r9", "b1", [38.5, 38]), mv("n5", [46, 29], delay=0.2), bl("n5", [58, 38], after=True), mv("n4", [38.5, 32.5], after=True)),
+   S("Erst sichern, dann ran", "Spieler neun dribbelt an. Spieler vier wartet noch. Erst steht Spieler fünf schräg hinter ihm und sichert gegen Spieler zehn, dann geht Spieler vier ran.",
+     dr("r9", "b1", [38.5, 38]), mv("n5", [46, 29], delay=0.2), mv("n4", [38.5, 32.5], after=True)),
    S("Nach außen drängen", "Spieler vier steht innen und drängt ihn nach außen, auf den schwachen Fuß. Der Winkel zum Tor wird immer kleiner. Spieler zehn sucht eine Lücke in der Mitte.",
      dr("r9", "b1", [32.5, 33.5]), mv("n4", [35.5, 29.5], delay=0.2), mv("r10", [52, 33.5], delay=0.4)),
    S("Abgefangen, ab ins Minitor: Punkt", "Spieler neun will nach innen zu Spieler zehn. Spieler fünf ahnt das und geht dazwischen. Er dribbelt los und trifft ins Minitor, und das gibt einen Punkt für Team Neon. Danach verteidigen Spieler drei und Spieler zwei, und Spieler sieben und Spieler elf greifen an.",
@@ -59,8 +59,8 @@ u = {"title": "Zentral als Paar verteidigen", "code": "UE-378", "kind": "Spielfo
     sp(n4=(41, 22), n5=(58.5, 21), r9=(68, 32), r10=(50, 37)), [B("b1", 50.6, 55.9)] + WARTE + ERSATZ,
     [S("Dritter Angreifer kommt", "Spieler sieben läuft ins Feld. Der Trainer spielt ihn an, und er dribbelt direkt aufs Tor zu. Jetzt sind es drei gegen zwei.",
        mv("r7", [34, 47]), ps("b1", [34.6, 47.6], after=True), dr("r7", "b1", [36, 38], after=True)),
-     S("Umschalten und verzögern", "Spieler vier schaltet sofort um und stellt Spieler sieben. Spieler fünf rückt in die Mitte und hält die anderen zwei hin. Kurz schaut er zu Spieler neun in seinem Rücken.",
-       mv("n4", [37, 31]), mv("n5", [54, 27], delay=0.2), bl("n5", [68, 32], after=True)),
+     S("Umschalten und verzögern", "Spieler vier schaltet sofort um und stellt Spieler sieben. Spieler fünf rückt in die Mitte und hält die anderen zwei hin, auch Spieler neun in seinem Rücken.",
+       mv("n4", [37, 31]), mv("n5", [54, 27], delay=0.2)),
      S("Torwart fängt, schnell raus: Punkt", "Spieler sieben spielt quer zu Spieler zehn, und der schießt sofort. Der Torwart fängt den Ball und wirft ihn gleich zu Spieler vier. Der dribbelt los und trifft ins Minitor, und das gibt einen Punkt für Team Neon.",
        ps("b1", [50.6, 37.6]), ps("b1", [50.6, 9.1], after=True), ps("b1", [37.6, 31.6], after=True),
        dr("n4", "b1", [43, 40], after=True), ps("b1", [40, 51.5], after=True))]),

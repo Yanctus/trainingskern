@@ -14,7 +14,8 @@ import hilfe as h
 # Fassungen wie im PDF: Progression 1 (Minitore, Konter vier gegen zwei, laut Ton zwei Punkte) und Progression 2
 # (Außenverteidiger darf bei der Verlagerung aus der Zone pressen).
 # Sichtkegel: im Video keiner eingezeichnet. Aus Video-Einblendung "Recognise the switch to press, FB awareness to press"
-# und Ton "improving their ability to read the game": Spieler zwei schaut in der zweiten Steigerung zum Passempfänger.
+# und Ton "improving their ability to read the game": in der zweiten Steigerung schaut Spieler neun vor dem Querpass zu Spieler zehn
+# (Regel des Inhabers, 25.11.2026: Kegel nur beim Passgeber; früher bei Spieler zwei, der die Verlagerung liest).
 # Kein Dubletten-Fall: UE-166, UE-177, UE-250 (Tor mit Torwart), UE-212 (drei Minitore, vier gegen vier), UE-242 (vier gegen
 # vier zwischen zwei Springern), UE-203 und UE-208 geprüft, überall andere Organisation.
 FX0, FX1, FY0, FY1 = 14, 84, 4, 51
@@ -86,8 +87,8 @@ u = {"title": "Viererkette in der Mittelzone", "code": "UE-320", "kind": "Spielf
   V("Steigerung", "Und jetzt die zweite Steigerung: Der Außenverteidiger darf raus.", "Außenverteidiger rückt raus",
     "Verlagern die Angreifer den Ball auf die andere Seite, darf der Außenverteidiger dort die Mittelzone verlassen und pressen. Er muss erkennen, wann er rechtzeitig ankommt. Kommt er zu spät, ist hinter ihm die Lücke offen. Die drei anderen schieben deshalb sofort nach.",
     sp(n3=(31, KA), n4=(40.5, KB), n5=(50, KA), n2=(59.5, KB)), [B("b1", 40.6, 47.6)] + ERSATZ,
-    [S("Verlagerung erkennen, raus", "Jetzt hat Spieler neun den Ball, die Kette steht auf seiner Seite. Spieler zwei sieht, dass der Querpass zu Spieler zehn kommt. Der Ball ist noch unterwegs, da läuft er schon los.",
-       bl("n2", [60, 47]), ps("b1", [60.6, 47.6], after=True), mv("n2", [62, 41], delay=1.2),
+    [S("Verlagerung erkennen, raus", "Jetzt hat Spieler neun den Ball, die Kette steht auf seiner Seite. Er schaut zu Spieler zehn und spielt quer. Spieler zwei erkennt die Verlagerung. Der Ball ist noch unterwegs, da läuft er schon los.",
+       bl("r9", [60, 47]), ps("b1", [60.6, 47.6], after=True), mv("n2", [62, 41], delay=1.2),
        mv("n5", [56, KA], delay=1.4), mv("n4", [47, KB], delay=1.4), mv("n3", [38, KA], delay=1.4)),
      S("Pass geblockt, Ball erobert", "Spieler zehn will sofort durch die Kette spielen. Spieler zwei steht schon vor ihm und blockt den Pass. Der Ball gehört Team Neon.",
        ps("b1", [62.6, 41.6])),

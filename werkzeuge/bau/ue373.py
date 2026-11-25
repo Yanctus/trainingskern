@@ -61,7 +61,7 @@ u = {"title": "Passrunde über die Hürde", "code": "UE-373", "kind": "Übungsfo
     "Spieler sieben kommt vom Dummy nach innen und legt den Ball in den Lauf des Starters. Der spielt direkt nach oben und muss danach noch schneller über die Hürde in die Zone. Mehr Pässe, mehr Tempo, beide Füße benutzen.",
     sp(), [B("b1", 47.6, 52.2)] + ERSATZ,
     [S("Doppelpass mit Spieler sieben", "Spieler sechs spielt zu Spieler sieben und läuft gleich schräg nach vorn. Spieler sieben legt mit einem Kontakt in seinen Lauf.",
-       bl("n7", START), ps("b1", [29.9, 32.3], after=True), mv("n6", [37, 43], delay=0.3), ps("b1", [37.6, 43.6], after=True)),
+       bl("n7", START), ps("b1", [29.9, 32.3], after=True), mv("n6", [37, 43], delay=1.1), ps("b1", [37.6, 43.6], after=True)),
      S("Direkt nach oben, dann über die Hürde", "Spieler sechs spielt direkt nach oben zu Spieler neun. Dann Vollgas über die Hürde und rein in die Zone. Ab hier läuft die Runde weiter wie bisher.",
        ps("b1", [45.1, 7.6]), *huerde(delay=0.3, von=[47.5, 46]))]),
   V("Steigerung", "Und jetzt die zweite Steigerung: Am Ende kommt der Abschluss aufs Minitor.", "Abschluss aufs Minitor",

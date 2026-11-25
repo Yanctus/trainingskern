@@ -12,8 +12,8 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # Fassungen: PDF Progression 1 (Stürmer vor dem Tor, eng ran) und Progression 2 (zwei gegen einen, ein Stürmer wechselt raus).
 # In den Steigerungen fällt wie im Video der Sprint zur Puppe weg (Puppe bleibt stehen).
 # Sichtkegel: kein Kegel im Video eingezeichnet; aus dem Ton („read the flight early“, „read ball flight and opposition
-# movement early“, „positional awareness“): Grundform Spieler sechs schaut zum Flankengeber; Steigerung 1 erst zum Stürmer,
-# dann schwenkt der Kegel zum Flankengeber (bl mit von); Steigerung 2 schaut er zum zweiten Stürmer am langen Pfosten.
+# movement early“, „positional awareness“): Grundform Spieler sechs schaut zum Flankengeber (bereit zur Annahme der Flanke).
+# Die Kegel in Steigerung 1 und 2 (Verteidiger beobachtet die Stürmer) sind gestrichen (Regel vom 25.11.2026).
 # Kegel auf etwa 20 Einheiten gekürzt (Richtung Flankengeber).
 # Kein Dubletten-Fall: UE-185 (58-P4, köpfen und blocken an Minitoren), UE-225 (58-P3, Leiter und flache Flanke aufs Minitor),
 # UE-248 (58-P7, zwei Verteidiger, Flanken im Wechsel), UE-308 (58-P6, 5 gegen 5), UE-348 (58-P8, Wellen), UE-350 (58-P11,
@@ -59,10 +59,10 @@ u = {"title": "Puppe antippen, Flanke klären", "code": "UE-386", "kind": "Übun
   "dims": dims(9, 87, 4, 51, "35 m", "25 m", rx=93)},
  "versions": [
   V("Steigerung", "Und jetzt die Steigerung: Ein Stürmer wartet vor dem Tor auf die Flanke.", "Mit Stürmer vor dem Tor",
-    "Ohne Sprint zur Puppe, dafür steht ein Stürmer von Team Rot vor dem Tor und will die Flanke verwerten. Der Verteidiger schaut, wo der Stürmer hinläuft, und geht eng an ihn heran. Mit dem Körper nimmt er ihm den Schwung und ist vor ihm am Ball.",
+    "Ohne Sprint zur Puppe, dafür steht ein Stürmer von Team Rot vor dem Tor und will die Flanke verwerten. Der Verteidiger achtet darauf, wo der Stürmer hinläuft, und geht eng an ihn heran. Mit dem Körper nimmt er ihm den Schwung und ist vor ihm am Ball.",
     sp(r9=(24, 30)), list(BALL),
-    [S("Erst der Stürmer, dann der Flügel", "Der Trainer spielt durch die Stangen auf Spieler sieben. Spieler sechs schaut zuerst, wo Spieler neun steht, dann rüber zum Flügel.",
-       *einspielen(), bl("n6", [59.5, 19], von=[24, 30], dauer=1.3, delay=0.3)),
+    [S("Ball auf den Flügel", "Der Trainer spielt durch die Stangen auf Spieler sieben. Spieler sechs wartet vorn bei Spieler neun.",
+       *einspielen()),
      S("Eng ran an den Stürmer", "Spieler neun startet zum kurzen Pfosten. Spieler sechs geht sofort mit und bleibt eng an ihm dran, zwischen Stürmer und Tor. Außen nimmt Spieler sieben den Ball mit.",
        dr("r7", "b1", [77, 10.5]), mv("r9", [30, 17], delay=0.2), mv("n6", [33.5, 13], delay=0.3)),
      S("Vorn am Ball: Punkt", "Die Flanke kommt an den kurzen Pfosten. Spieler sechs ist vor Spieler neun am Ball und köpft weit raus, und das gibt einen Punkt für Team Neon. Trifft Spieler neun, gibt das einen Punkt für Team Rot. Danach ist Spieler vier mit dem nächsten Stürmer dran.",
@@ -70,9 +70,8 @@ u = {"title": "Puppe antippen, Flanke klären", "code": "UE-386", "kind": "Übun
   V("Steigerung", "Und jetzt die zweite Steigerung: Zwei Stürmer gegen einen Verteidiger.", "Zwei gegen einen vor dem Tor",
     "Zwei Stürmer von Team Rot gegen einen Verteidiger, dazu der Torwart. Einer läuft zum kurzen, einer zum langen Pfosten. Der Flügelspieler flankt mal kurz, mal lang. Verteidiger und Torwart sprechen ab, wer welchen Ball nimmt. Nach jedem Angriff wechselt ein Stürmer raus.",
     sp(r9=(29, 31), r10=(16, 26)), list(BALL),
-    [S("Kurz und lang", "Der Trainer spielt auf Spieler sieben. Vorn laufen beide Stürmer los, Spieler neun zum kurzen Pfosten, Spieler zehn zum langen. Spieler sechs bleibt am kurzen Pfosten und schaut, wo Spieler zehn hinläuft.",
-       *einspielen(), mv("r9", [32, 19], delay=0.3), mv("r10", [18, 15], delay=0.4), mv("n6", [36, 18], delay=0.4),
-       bl("n6", [18, 15], after=True)),
+    [S("Kurz und lang", "Der Trainer spielt auf Spieler sieben. Vorn laufen beide Stürmer los, Spieler neun zum kurzen Pfosten, Spieler zehn zum langen. Spieler sechs bleibt am kurzen Pfosten bei Spieler neun.",
+       *einspielen(), mv("r9", [32, 19], delay=0.3), mv("r10", [18, 15], delay=0.4), mv("n6", [36, 18], delay=0.4)),
      S("Torwart fängt: Punkt", "Spieler sieben nimmt mit und flankt lang an den zweiten Pfosten. Der Torwart ruft laut, kommt raus und fängt den Ball vor Spieler zehn. Das gibt einen Punkt für Team Neon. Trifft ein Stürmer, gibt das einen Punkt für Team Rot. Danach wechselt ein Stürmer raus, und Spieler elf bekommt den nächsten Pass.",
        dr("r7", "b1", [77, 10.5]), mv("n1", [21, 12], delay=0.9), ps("b1", [21.6, 12.6], after=True))])]}
 json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)

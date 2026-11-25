@@ -25,7 +25,7 @@ DIMS = dims(9, 89, 4, 51, "25 m", "18 m")[:1]
 M10, M9 = [43, 22.5], [43, 30]          # wohin die beiden mit dem ersten Kontakt nach innen mitnehmen
 V10 = [[32, 33], [14, 11]]           # Spieler zehn: scharf unter der Puppe weg, dann Sprint zum Hütchen links oben
 V9 = [[32, 18], [14, 43.5]]            # Spieler neun spiegelbildlich über der Puppe
-ZU8, ZU7 = [71.5, 19.5], [39, 24]   # Blickziele in Richtung Spieler acht / Spieler sieben (Kegel nicht zu lang)
+ZU8, ZU7 = [80.2, 9.2], [39, 24]   # Blickziele: Spieler acht (Passgeber, knapp vor ihm, damit der Kegel bei ihm ankommt) / Richtung Spieler sieben
 def weg(who, pkt, **k): return [mv(who, pkt[0], **k)] + [mv(who, p, after=True) for p in pkt[1:]]
 
 u = {"title": "Erster Kontakt und Antritt", "code": "UE-324", "kind": "Übungsform",

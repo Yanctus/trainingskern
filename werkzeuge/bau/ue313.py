@@ -4,8 +4,9 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # Spieler in 3D voreinander. Drei Rondos je 10 Yards (9 m), dazwischen 5 Yards. Links und Mitte 4 gegen 2, rechts frei.
 # Im PDF drei Farben für die Passgeber und Gelb für die Jäger; hier alle Passgeber Team Neon (2-13), die vier Jäger
 # Team Rot (14-17). Nach jedem Ballgewinn mischen sich die Farben, das ist im Original genauso.
-# Ein Trainer statt zwei. Sichtkegel: im Video keiner eingezeichnet; aus Text und Ton ("find the free rondo",
-# "react quickly to find the free Rondo"): Der Ballverlierer schaut zum freien Rondo, bevor er lossprintet.
+# Ein Trainer statt zwei. Sichtkegel: im Video keiner eingezeichnet; Text und Ton ("find the free rondo", "react quickly to find
+# the free Rondo") meinen den Ballverlierer, der danach nicht selbst passt: nach der Sichtkegel-Regel (Inhaber, 25.11.2026) kein
+# Kegel (es gibt keinen Passgeber, der ihn anspielt).
 # Kein Dubletten-Fall: UE-150 (88-P5) ist ein Rondo durch drei Zonen mit Zielspieler, UE-154 ein einzelnes Rondo.
 T = P("T", "c", 5, 30, "T")
 ERSATZ = [B("s1", 6.6, 33.5), B("s2", 3, 33.5)]
@@ -45,8 +46,8 @@ u = {"title": "Nach Ballverlust ins freie Rondo", "code": "UE-313", "kind": "Üb
      mv("r17", [58, 45]), ps("b", [47.7, 24.6], delay=0.5), mv("r16", [47.1, 24], delay=0.4),
      ps("a", fuss("n5")), mv("r15", [25, 42], delay=0.3), mv("r14", [20, 22], delay=0.3),
      ps("c", fuss("n10")), ps("c", fuss("n11"), after=True)),
-   S("Rufen und zu zweit rüber", "Ball weg. Spieler neun schaut nach rechts, dort ist das freie Rondo. Er ruft Spieler sieben, und beide sprinten sofort hinüber.",
-     bl("n9", [72, 38]), mv("n9", [74, 37], after=True), mv("n7", [79, 23], delay=0.9),
+   S("Rufen und zu zweit rüber", "Ball weg. Rechts ist das freie Rondo. Spieler neun ruft Spieler sieben, und beide sprinten sofort hinüber.",
+     mv("n9", [74, 37]), mv("n7", [79, 23], delay=0.3),
      ps("a", fuss("n4")), ps("c", fuss("n13"), delay=0.9)),
    S("Die Mitte ist jetzt frei", "Rechts läuft jetzt vier gegen zwei. Spieler sechzehn und Spieler siebzehn bleiben in der Mitte und spielen dort als Passgeber weiter. Damit ist die Mitte das freie Rondo. Wer als Nächster den Ball verliert, ruft einen Mitspieler und sprintet mit ihm dorthin.",
      dr("r16", "b", [55.75, 9]), mv("r17", [55.75, 51]), ps("b", fuss("n6"), after=True),
@@ -64,8 +65,8 @@ u = {"title": "Nach Ballverlust ins freie Rondo", "code": "UE-313", "kind": "Üb
   V("Coaching-Punkt", "Der zweite Coaching-Punkt: Ball weg, Kopf hoch, rufen und sprinten.", "Rufen, schauen, sprinten",
     "Nach dem Ballverlust bleibt keine Zeit zum Ärgern. Der Ballverlierer hebt den Kopf, findet das freie Rondo und ruft einen Mitspieler. Einer sprintet direkt auf den Ball, der andere macht dahinter die Mitte zu.",
     sp(), [B("a", *fuss("n2")), B("b", 44.35, 25.6), B("c", *fuss("n13"))] + ERSATZ,
-    [S("Ball weg, Kopf hoch", "Spieler sechzehn hat den Ball erobert. Spieler neun hebt sofort den Kopf. Rechts steht keiner in der Mitte, das ist das freie Rondo. Er ruft Spieler sieben.",
-       bl("n9", [72, 38])),
+    [S("Ball weg, Kopf hoch", "Spieler sechzehn hat den Ball erobert und spielt gleich zu Spieler sechs. Spieler neun ärgert sich nicht. Rechts steht keiner in der Mitte, das ist das freie Rondo. Er ruft Spieler sieben.",
+       ps("b", fuss("n6"))),
      S("Einer auf den Ball, einer sichert", "Beide sprinten los. Spieler neun geht direkt auf den Ball, Spieler sieben macht dahinter die Mitte zu. Jetzt wird auch rechts vier gegen zwei gespielt.",
        mv("n9", [67, 42]), mv("n9", [79.5, 46.5], after=True), mv("n7", [76, 30], delay=0.2), ps("c", fuss("n11"), delay=1.2))])]}
 json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)

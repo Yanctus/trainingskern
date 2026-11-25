@@ -49,7 +49,7 @@ u = {"title": "Zu dritt das Zentrum schützen", "code": "UE-361", "kind": "Spiel
    S("Raus nach außen, die Falle", "Spieler sieben weicht nach außen aus, zu Spieler elf. Genau da wollen wir ihn haben. Spieler sechs geht sofort drauf, Spieler vier sichert, Spieler acht schiebt nach.",
      ps("b1", [28.6, 40.6]), mv("n6", [33, 42], delay=0.3), mv("n4", [42, 45], delay=0.4), mv("n8", [51, 43], delay=0.4)),
    S("Annahme verspringt, Ball erobert", "Spieler elf springt der Ball vom Fuß. Das ist das Zeichen. Spieler sechs ist da und hat ihn. Er nimmt sofort den Kopf hoch, und Spieler zehn startet in die Tiefe.",
-     ps("b1", [32, 44.5]), mv("n6", [31.4, 43.9], delay=0.2), mv("n10", [40, 16], delay=0.6), bl("n6", [37, 24], delay=0.8)),
+     ps("b1", [32, 44.5]), mv("n6", [31.4, 43.9], delay=0.2), mv("n10", [40, 16], delay=0.6), bl("n6", [39.5, 18.5], delay=0.8)),
    S("Schneller Konter: Punkt", "Spieler sechs spielt steil in den Lauf. Spieler zehn schließt ab und trifft, und das gibt einen Punkt für Team Neon. Danach eröffnet wieder der Torwart von Team Rot.",
      ps("b1", [40.6, 16.6]), ps("b1", [47, 5.3], after=True))]},
  "versions": [

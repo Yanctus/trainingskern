@@ -11,7 +11,8 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # Fassungen: PDF Key Coaching Point 1 (Einzelaktion schafft das 2 gegen 1) und 2 (ruhig aufbauen, locken, Doppelpass hinter
 # die Verteidiger). Konter nach Ballgewinn aus dem Ton übernommen (nur im Text).
 # Sichtkegel: Text KCP 2 „This develops awareness“, Ton „recognize when to slow down and speed up attacks“; im Video nicht
-# eingezeichnet, Richtung aus dem Sinn: Spieler neun schaut vor dem Doppelpass in den Raum hinter dem Verteidiger.
+# eingezeichnet, Richtung aus dem Sinn: Spieler elf schaut beim Doppelpass in den Lauf von Spieler neun hinter den Verteidiger,
+# dann spielt er zurück (Kegel beim Passgeber, Regel vom 25.11.2026).
 T = P("T", "c", 40.5, 55.5, "T")
 GB = B("b0", 41.1, 56.1)
 ERSATZ = [B("s1", 44, 56), B("s2", 46.5, 56)]
@@ -75,11 +76,10 @@ u = {"title": "Leiter, Hürden, 2 gegen 2", "code": "UE-323", "kind": "Spielform
   V("Coaching-Punkt", "Der zweite Coaching-Punkt: Locken, dann Doppelpass.", "Locken, dann Doppelpass",
     "Nicht jeder Angriff muss sofort schnell sein. Team Neon spielt sich den Ball ruhig zu, bis die Verteidiger herauskommen und pressen. Dann geht es schnell, mit einem Doppelpass in den Raum hinter ihnen.",
     sp(**FELD), [B("b0", *fuss(FELD["n9"]))] + WARTE + ERSATZ,
-    [S("Ruhig aufbauen, Gegner locken", "Spieler neun und Spieler elf spielen sich den Ball ruhig zu. Spieler fünf und Spieler sieben rücken heraus und pressen. Spieler neun schaut schon in den Raum hinter Spieler fünf.",
-       ps("b0", fuss(FELD["n11"])), mv("r7", [59, 27], delay=0.3), ps("b0", fuss(FELD["n9"]), after=True), mv("r5", [41, 28.5], delay=1.0),
-       bl("n9", [44, 18], after=True)),
-     S("Doppelpass hinter die Abwehr", "Jetzt schnell. Pass zu Spieler elf, und Spieler neun startet an Spieler fünf vorbei. Spieler elf spielt direkt zurück in den Lauf.",
-       ps("b0", fuss(FELD["n11"])), mv("n9", [45, 32], delay=0.2), mv("n9", [47, 23], after=True), ps("b0", [47.6, 23.6], after=True)),
+    [S("Ruhig aufbauen, Gegner locken", "Spieler neun und Spieler elf spielen sich den Ball ruhig zu. Spieler fünf und Spieler sieben rücken heraus und pressen. Hinter Spieler fünf wird Platz frei.",
+       ps("b0", fuss(FELD["n11"])), mv("r7", [59, 27], delay=0.3), ps("b0", fuss(FELD["n9"]), after=True), mv("r5", [41, 28.5], delay=1.0)),
+     S("Doppelpass hinter die Abwehr", "Jetzt schnell. Pass zu Spieler elf, und Spieler neun startet an Spieler fünf vorbei. Spieler elf schaut in den Lauf und spielt direkt zurück.",
+       ps("b0", fuss(FELD["n11"])), mv("n9", [45, 32], delay=0.2), mv("n9", [47, 23], after=True), bl("n11", [47, 23], delay=0.75), ps("b0", [47.6, 23.6], after=True)),
      S("Hinter der Abwehr: Punkt", "Spieler neun ist durch und schließt sofort ab, und das gibt einen Punkt für Team Neon.",
        ps("b0", [45, 14.3]))], dims=DIMS)]}
 json.dump(u, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)

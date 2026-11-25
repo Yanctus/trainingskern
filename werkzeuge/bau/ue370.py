@@ -21,9 +21,9 @@ import halbfeld as hf
 # gibt: Annahme), vier gegen vier aufs große Tor.
 # Fassungen wie die PDF-Coaching-Punkte: 1 Innenverteidiger presst, die anderen sichern ab und lenken nach außen; 2 Torwart hält und
 # leitet sofort den Konter auf ein Minitor ein (Außenverteidiger startet hoch und breit, Ton 0:35).
-# Sichtkegel: Text "Quick scans to check the oppositions positioning": in der Grundform schaut Spieler 4 beim Umschalten zu den
-# Angreifern, im ersten Coaching-Punkt sichert Spieler 4 ab und schaut zu Spieler 10; im zweiten Coaching-Punkt schaut der Torwart
-# nach dem Fangen zum startenden Außenverteidiger (aus dem Sinn, im Video kein Kegel eingezeichnet).
+# Sichtkegel: Text "Quick scans to check the oppositions positioning" meint die Verteidiger, die danach nicht selbst passen: nach der
+# Sichtkegel-Regel (Inhaber, 25.11.2026) dafür kein Kegel (Grundform und erster Coaching-Punkt). Im zweiten Coaching-Punkt schaut
+# der Torwart nach dem Fangen zum startenden Außenverteidiger und spielt ihn an (aus dem Sinn, im Video kein Kegel eingezeichnet).
 # Keine Dublette: UE-166 (03-P3, vier gegen vier mit Konter auf zwei Minitore, ohne Aufbauphase), UE-177 (78-P3), UE-212 (78-P6),
 # UE-242 (78-P7), UE-250 (78-P12, Springer spielen ein, drei Minitore) und UE-320 (78-P4) haben keine Aufbauphase ohne Gegner
 # und keine Wellen.
@@ -75,8 +75,8 @@ u = {"title": "Erst aufbauen, dann verteidigen", "code": "UE-370", "kind": "Spie
      zu("b1", BREIT["n4"]), zu("b1", BREIT["n5"], after=True), zu("b1", BREIT["n3"], after=True)),
    S("Ins Minitor, jetzt kommen sie", "Spieler drei dribbelt an und schiebt ins Minitor. Das gibt einen Punkt für Team Neon. Genau das ist das Zeichen für die vier Angreifer.",
      h.dr("n3", "b1", X((31, 4))), h.ps("b1", MINI_OBEN, after=True)),
-   S("Umschalten, eng zusammen", "Die Angreifer laufen los, und der Trainer spielt Spieler neun einen neuen Ball zu. Spieler vier schaut sofort, wo die Angreifer sind. Die ganze Kette sprintet zurück und rückt eng zusammen.",
-     *[lauf(i, p) for i, p in ANGRIFF.items()], zu("s1", ANGRIFF["r9"], delay=0.8, bend=2), schau("n4", BREIT["n4"], ANGRIFF["r9"], delay=0.3),
+   S("Umschalten, eng zusammen", "Die Angreifer laufen los, und der Trainer spielt Spieler neun einen neuen Ball zu. Sofort sprintet die ganze Kette zurück und rückt eng zusammen.",
+     *[lauf(i, p) for i, p in ANGRIFF.items()], zu("s1", ANGRIFF["r9"], delay=0.8, bend=2),
      *[lauf(i, p, delay=0.7) for i, p in ZURUECK.items()]),
    S("Durch die Lücke: Punkt für Rot", "Zwischen Spieler vier und Spieler fünf ist noch eine Lücke. Spieler neun nimmt den Ball mit und zieht sofort ab. Das gibt einen Punkt für Team Rot. Danach bekommt der Torwart den nächsten Ball, und die zweite Gruppe Angreifer ist dran.",
      h.ps("s1", [10.3, 30.4]))],
@@ -86,9 +86,9 @@ u = {"title": "Erst aufbauen, dann verteidigen", "code": "UE-370", "kind": "Spie
     "Geht ein Innenverteidiger raus und presst, rücken die anderen drei sofort ein. Der Nebenmann sichert hinter ihm ab, die Außenverteidiger schieben zur Mitte. So bleibt die Kette eng, der Pass durch die Mitte ist zu, und der Angreifer muss nach außen spielen.",
     sp(n1=(4, 27.5), n3=(18, 7), n5=(14, 20), n4=(13, 34), n2=(18, 46), r9=(29, 20), r10=(26, 34), r7=(27, 5), r11=(27, 51)),
     [h.B("b1", *fu((29, 20)))] + ERSATZ,
-    [S("Spieler fünf presst", "Spieler neun kommt mit Ball. Spieler fünf geht raus und presst. Spieler vier rückt ein, sichert hinter ihm ab und schaut, wo Spieler zehn steht. Die Außenverteidiger schieben mit zur Mitte.",
+    [S("Spieler fünf presst", "Spieler neun kommt mit Ball. Spieler fünf geht raus und presst. Spieler vier rückt ein und sichert hinter ihm ab. Die Außenverteidiger schieben mit zur Mitte.",
        h.dr("r9", "b1", X((25, 21))), lauf("n5", (20.5, 21), delay=0.2), lauf("n4", (12, 28.5), delay=0.2), lauf("n3", (15, 12.5), delay=0.2),
-       lauf("n2", (16.5, 41.5), delay=0.2), schau("n4", (12, 28.5), (26, 34), after=True)),
+       lauf("n2", (16.5, 41.5), delay=0.2)),
      S("Mitte zu, nach außen gelenkt", "Der Pass auf Spieler zehn ist zu, da steht Spieler vier. Spieler neun bleibt nur der Ball nach außen zu Spieler sieben. Genau dahin will die Kette ihn haben.",
        zu("b1", (27, 5)))]),
   V("Coaching-Punkt", "Der zweite Coaching-Punkt: Ball gewonnen, sofort kontern.", "Ball gewonnen, sofort kontern",

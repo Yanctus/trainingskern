@@ -138,3 +138,4 @@ Erzeugt aus blickpruefung.mjs. Je Einheit die Kegel, die nach der neuen Regel fa
 - **UE-287**: Steigerung Schritt 3 n4; Steigerung Schritt 3 n4
 - **UE-294**: Grundform Schritt 1 n6; Grundform Schritt 5 n6
 - **UE-297**: Steigerung Schritt 2 n4
+- Nachgemeldet (Stimme nennt den Blick): UE-188 Grundform Schritt 1; UE-252 Coaching-Punkt Schritt 2; UE-263 Coaching-Punkt 2 Schritt 2; UE-277 Coaching-Punkt 2 Schritt 1

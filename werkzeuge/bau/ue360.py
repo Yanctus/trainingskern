@@ -10,8 +10,8 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # Progression 2 (Springer drehen nach innen, der Passgeber geht raus).
 # Sichtkegel aus Text und Ton ("Recognise opportunities to press", "watch for rotations - awareness", "defenders must
 # recognise this early"); im Video nicht eingezeichnet, Richtung aus dem Sinn: Spieler sechs liest den Pass des Springers und
-# schaut nach dem Abfangen zu Spieler zehn (Kegel mit von, Drehpfeil); in Steigerung 2 schaut Spieler acht über die Schulter
-# zum Spieler, der außen rotiert ist.
+# schaut nach dem Abfangen zu Spieler zehn (Kegel mit von, Drehpfeil). Steigerung 2: kein Kegel mehr beim Verteidiger
+# Spieler acht (Regel vom 25.11.2026), er merkt die Rotation nur im Text.
 T = P("T", "c", 12, 52, "T")
 ERSATZ = [B("s1", 15.5, 54.5), B("s2", 9, 55.5)]
 POS = {"n6": (41, 13), "n8": (67, 30), "n10": (34, 33), "n9": (54, 46),
@@ -67,8 +67,8 @@ u = {"title": "Zu viert kompakt, vier Ecktore", "code": "UE-360", "kind": "Spiel
     sp(), BALL,
     [S("Pass raus, Platz tauschen", "Spieler sieben spielt raus zum Springer. Der nimmt den Ball mit ins Feld, und Spieler sieben läuft raus an die Seite.",
        ps("b1", [81.6, 25.6]), dr("fr", "b1", [70, 40], after=True), mv("r7", [81, 42], delay=0.6)),
-     S("Schulterblick, wer ist frei?", "Spieler acht schaut über die Schulter. Spieler sieben steht jetzt außen frei. Spieler acht ruft laut, und Spieler neun übernimmt den Springer.",
-       bl("n8", [81, 42]), mv("n9", [62, 44], delay=0.3), mv("n8", [73, 34], after=True)),
+     S("Wer ist frei?", "Spieler sieben steht jetzt außen frei. Spieler acht merkt es und ruft laut, und Spieler neun übernimmt den Springer.",
+       mv("n9", [62, 44], delay=0.3), mv("n8", [73, 34], after=True)),
      S("Pass nach außen abgefangen", "Der Springer will raus zu Spieler sieben. Spieler acht steht im Passweg und fängt den Ball ab. Jetzt kontert Team Neon.",
        ps("b1", [73.6, 37.6]), mv("n8", [73, 37], delay=0.2))],
     dims=DIMS)]}

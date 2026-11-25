@@ -12,7 +12,8 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # den Springer aufs Minitor. Fassungen: PDF Key Coaching Point 1 (nicht auseinanderreißen lassen, zurück und den Strafraum
 # schützen) und Progression (der Springer spielt für Team Rot mit, sechs gegen fünf).
 # Sichtkegel: Ton „players must recognize when and how to force direction … on selected triggers“, Video „pressing triggers e.g.
-# slow backwards pass“: In der Grundform sieht Spieler vier den langsamen Rückpass, bevor er anläuft. In der Steigerung schaut
+# slow backwards pass“: Der frühere Kegel in der Grundform (Spieler vier sieht den Rückpass, bevor er anläuft) ist
+# nach der Regel des Inhabers (25.11.2026) gestrichen, er spielt danach nicht selbst. In der Steigerung schaut
 # Spieler fünf vor der Flanke zu Spieler neun (aus dem Sinn, im Video kein Kegel eingezeichnet).
 # Keine Dublette: UE-166 (03-P3, vier gegen vier), UE-098 (03-P6, kleines Spiel vier gegen vier), UE-378 (03-P5, zwei gegen zwei),
 # UE-399 (03-P10, zwei Viererketten gegen sieben auf dem Großfeld).
@@ -53,8 +54,8 @@ u = {"title": "Dreierkette mit zwei Sechsern", "code": "UE-400", "kind": "Spielf
    S("Quer und raus, Block schiebt", "Spieler sieben spielt quer zu Spieler drei, und der legt raus zu Spieler elf. Spieler zwei geht drauf, und der ganze Block schiebt mit zur Ballseite.",
      ps("b1", fu(POS["r3"])), ps("b1", fu(POS["r11"]), after=True), mv("n2", [27, 28], delay=0.3), mv("n4", [36, 34], delay=0.3), mv("n5", [45, 26.5], delay=0.3),
      mv("n6", [62, 25], delay=0.3), mv("n8", [52, 34.5], delay=0.3)),
-   S("Rückpass, jetzt anlaufen", "Spieler elf kommt nicht weiter und spielt langsam zurück zu Spieler drei. Das ist das Signal. Spieler vier sieht den Rückpass und läuft sofort an, und hinten rücken alle ein Stück raus.",
-     ps("b1", fu(POS["r3"])), bl("n4", POS["r3"], delay=0.2), mv("n4", [34, 39.5], after=True),
+   S("Rückpass, jetzt anlaufen", "Spieler elf kommt nicht weiter und spielt langsam zurück zu Spieler drei. Das ist das Signal. Spieler vier läuft sofort an, und hinten rücken alle ein Stück raus.",
+     ps("b1", fu(POS["r3"])), mv("n4", [34, 39.5], delay=0.5),
      mv("n8", [46, 36], delay=0.9), mv("n2", [27, 31], delay=0.9), mv("n5", [44, 29.5], delay=0.9), mv("n6", [60, 28], delay=0.9)),
    S("Nach innen zu, Ball erobert", "Spieler drei will nach innen andribbeln. Spieler vier macht den Weg zu, geht dazwischen und hat den Ball.",
      dr("r3", "b1", [33, 42]), mv("n4", [35.5, 40], delay=0.2), ps("b1", fu([35.5, 40]), after=True)),

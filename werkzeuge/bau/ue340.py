@@ -17,8 +17,8 @@ import halbfeld as hf
 # Grundform nach PDF und Video: Torwart kurz auf Gold 6, erster Pass nach vorn auf Gold 8 = Signal, drei Pinke kreisen ein.
 # Ballgewinn und Abschluss ergänzt (Text: „attack quickly to finish“). Fassungen: PDF Key Coaching Point 1 (mehrere Linien Druck
 # um den Ball) und 2 (schnell unterstützen, Überzahl, Läufe in die Tiefe).
-# Sichtkegel aus dem Ton („identify key triggers, like a poor pass or a heavy touch“): Spieler elf beobachtet die Annahme von
-# Spieler fünfzehn, bevor er anläuft. Im Video kein Kegel eingezeichnet. Zweiter Kegel in Fassung 2 aus dem Text („forward runs“):
+# Ton „identify key triggers, like a poor pass or a heavy touch“: früher Kegel bei Spieler elf (beobachtet die Annahme), nach der
+# Regel des Inhabers (25.11.2026) gestrichen, er spielt danach nicht selbst; im Video kein Kegel eingezeichnet. Kegel in Fassung 2 aus dem Text („forward runs“):
 # Spieler zwei schaut nach dem Ballgewinn zum startenden Spieler sieben.
 # Keine Dublette von UE-314 (10-P11: kein Zehner in einer Endzone, Pressing nach kurzem Abstoß) oder UE-148/UE-236.
 F = hf.Halbfeld(tief=40, breit=65)     # 40 x 65 m, Tor rechts (x 82,5), Feldende links (x 17,5), y 3-52
@@ -59,8 +59,8 @@ u = {"title": "Hoch pressen nach dem Signal", "code": "UE-340", "kind": "Spielfo
   "steps": [
    S("Torwart eröffnet kurz", "Der Torwart spielt kurz auf Spieler sechs. Noch presst keiner. Team Neon steht und wartet auf den ersten Pass nach vorn.",
      zu("b1", POS["r6"])),
-   S("Erster Pass nach vorn: das Signal", "Jetzt spielt Spieler sechs nach vorn auf Spieler fünfzehn. Das ist das Signal. Spieler elf schaut genau hin, wie der Ball ankommt, und läuft an. Von vorn kommt Spieler neun, von hinten Spieler acht.",
-     zu("b1", POS["r15"]), h.bl("n11", X(POS["r15"]), delay=0.4), lauf("n11", (20.5, 10), after=True), lauf("n9", N9, delay=0.8),
+   S("Erster Pass nach vorn: das Signal", "Jetzt spielt Spieler sechs nach vorn auf Spieler fünfzehn. Das ist das Signal. Spieler elf läuft sofort an. Von vorn kommt Spieler neun, von hinten Spieler acht.",
+     zu("b1", POS["r15"]), lauf("n11", (20.5, 10), delay=0.6), lauf("n9", N9, delay=0.8),
      lauf("n8", (23, 15), delay=0.8), lauf("n4", (29, 30), delay=1.0), lauf("n10", (22, 34), delay=1.0)),
    S("Eingekreist, Ball erobert", "Spieler fünfzehn ist eingekreist. Der Weg zum Zehner ist zu, Spieler vier steht im Passweg. Er versucht es trotzdem durch die Mitte, und Spieler acht hat den Ball.",
      zu("b1", FANG), lauf("n8", FANG, delay=0.2), lauf("r14", (17, 37), delay=0.3)),

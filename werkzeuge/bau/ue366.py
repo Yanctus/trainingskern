@@ -21,8 +21,8 @@ import halbfeld as hf
 # angenommen. Wertung: Laut PDF spielen die Verteidiger nach Ballgewinn ins Minitor (im Text erst beim acht gegen sechs, im
 # Coaching-Punkt „Quick combos to play out into mini-goals after turnover“ allgemein): hier in jeder Stufe, Minitor = Punkt
 # für Team Neon, Treffer ins große Tor = Punkt für Team Rot (ergänzt).
-# Sichtkegel aus Text und Ton („Awareness to recognise the overload situation“): Beim Pfiff schaut Spieler fünf, wer von der
-# Mittellinie dazukommt (Richtung aus dem Sinn, im Video kein Kegel eingezeichnet).
+# Text und Ton „Awareness to recognise the overload situation“: Der frühere Kegel bei Spieler fünf (schaut beim Pfiff, wer dazukommt)
+# ist nach der Regel des Inhabers (25.11.2026) gestrichen: Er spielt danach nicht selbst. Im Video kein Kegel eingezeichnet.
 F = hf.Halbfeld(tor="links")           # 50 x 65 m, Tor links (x 10), Mittellinie rechts (x 90), y 3-52
 def X(p): return F(*p)                 # Meter -> Tafel
 def fu(p): return hf.am_fuss(F(*p))    # Pass zum Spieler / Ball am Fuß
@@ -67,8 +67,8 @@ u = {"title": "Überzahl wächst mit jedem Pfiff", "code": "UE-366", "kind": "Sp
   "steps": [
    S("Zwei gegen eins, Spieler fünf wartet", "Spieler zehn und Spieler neun laufen mit Ball auf Spieler fünf zu. Der geht nicht rein. Er bleibt zwischen den beiden, macht kleine Schritte zurück und wartet, bis er den Ballführer zur Seite drücken kann.",
      h.dr("r10", "b1", X((27, 38))), lauf("r9", (26, 25), delay=0.2), lauf("n5", (15, 34), delay=0.4)),
-   S("Pfiff: vier gegen zwei", "Pfiff vom Trainer. Von der Mittellinie kommen Spieler sieben und Spieler elf dazu, von der Torlinie sprintet Spieler vier ins Feld. Spieler fünf schaut sofort, wer da kommt.",
-     lauf("r7", (31, 50)), lauf("r11", (31, 14)), lauf("n4", (16, 43), delay=0.2), h.bl("n5", hf.richt(X((15, 34)), X((31, 50)), 20), delay=0.5)),
+   S("Pfiff: vier gegen zwei", "Pfiff vom Trainer. Von der Mittellinie kommen Spieler sieben und Spieler elf dazu, von der Torlinie sprintet Spieler vier ins Feld. Jetzt sind es vier gegen zwei.",
+     lauf("r7", (31, 50)), lauf("r11", (31, 14)), lauf("n4", (16, 43), delay=0.2)),
    S("Einer drückt, einer sichert", "Spieler zehn spielt raus zu Spieler sieben. Spieler vier läuft ihn an und stellt den Weg nach innen zu. Spieler fünf rückt schräg dahinter und sichert ab.",
      zu("b1", (31, 50)), lauf("n4", (25, 46), delay=0.3), lauf("n5", (19, 40), delay=0.4)),
    S("Abgefangen, ins Minitor: Punkt", "Spieler sieben will zurück in die Mitte spielen. Darauf hat Spieler fünf gewartet. Er geht dazwischen und spielt den Ball sofort ins Minitor, und das gibt einen Punkt für Team Neon. Dann starten die nächsten zwei Angreifer.",

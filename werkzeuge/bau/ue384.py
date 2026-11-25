@@ -16,7 +16,7 @@ T = P("T", "c", 13, 4, "T")
 ERSATZ = [B("s1", 13.6, 8.5), B("s2", 10, 7.5)]
 A, Aq, Bp, C_, D, Dq, E, F = (39, 9), (30, 9), (37, 30), (37, 51), (61, 51), (69.5, 52), (62, 30), (62, 9)
 W, R3 = [28, 27], [46, 48.5]
-BLA, BLW = [42.6, 28.8], [33.1, 33.1]  # Blickziele von Spieler drei (Richtung Start bzw. Spieler neun, ca. 20 Einheiten lang)
+BLA, BLW = [42.6, 28.8], [30.3, 29.7]  # Blickziele von Spieler drei (Richtung Start ca. 20 bzw. bis kurz vor Spieler neun, ca. 25 Einheiten lang)
 def f(p): return [round(p[0] + 0.6, 1), round(p[1] + 0.6, 1)]
 POS = {"n7": A, "n8": Aq, "n9": Bp, "n3": C_, "n5": D, "n6": Dq, "n4": E, "n2": F}
 def sp(**k):

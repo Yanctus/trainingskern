@@ -14,7 +14,7 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # Fassungen: PDF Progression 1 (Pass in den freien Raum, Lauf mit Timing; im Video zusätzlich "allow dropping into half space")
 # und Progression 2 (Zielgruppe steht verteilt auf zweiter und dritter Linie).
 # Sichtkegel: Text "Awareness of spaces to drive through / play penetrating passes", "Awareness of teammates positions"; im Video
-# nicht eingezeichnet. Richtung aus dem Sinn: Spieler vier schaut vor dem Andribbeln auf die Lücke, Spieler drei vor dem Pass
+# nicht eingezeichnet. Richtung aus dem Sinn: Spieler drei schaut vor dem Pass zu Spieler vier an der Lücke und vor dem Pass
 # durch das zweite Paar auf die Zielgruppe; in Fassung 2 nimmt Spieler sechs an und dreht auf (bl mit von + drehen, Vorbild ue300).
 # Kein Dublette: UE-310 (Aufbauwelle drei gegen drei, eine Kette aus drei Verteidigern, Passgeber verteidigen danach) und
 # UE-121 (24-P5, zwei gegen eins durch drei Zonen auf Tor) haben andere Organisation und Abläufe.
@@ -51,8 +51,8 @@ u = {"title": "Zu dritt durch zwei Abwehrpaare", "code": "UE-404", "kind": "Übu
   "steps": [
    S("Ball laufen lassen", "Spieler drei hat den Ball und spielt zu Spieler zwei. Das erste Paar schiebt mit zum Ball. Sofort geht der Ball zurück zu Spieler drei.",
      ps("b1", fuss("n2")), mv("r12", [33.5, 12], delay=0.3), mv("r13", [34.5, 31], delay=0.3), ps("b1", fuss("n3"), after=True)),
-   S("Lücke sehen, Pass rüber", "Jetzt ist auf der anderen Seite die Lücke. Spieler vier schaut schon hin, und Spieler drei spielt direkt zu ihm.",
-     bl("n4", [32, 47]), ps("b1", fuss("n4"), after=True)),
+   S("Lücke sehen, Pass rüber", "Jetzt ist auf der anderen Seite die Lücke. Spieler drei sieht sie und schaut zu Spieler vier, dann spielt er direkt zu ihm.",
+     bl("n3", [14, 45]), ps("b1", fuss("n4"), after=True)),
    S("Rein in die Mitte", "Spieler vier dribbelt durch die Lücke in die Mitte. Spieler drei und Spieler zwei laufen sofort nach.",
      dr("n4", "b1", [31, 46.5]), dr("n4", "b1", [50, 44], after=True),
      mv("n3", [36, 23], delay=0.4), mv("n3", [52, 25.5], after=True), mv("n2", [26, 21], delay=0.6), mv("n2", [49, 10], after=True)),
