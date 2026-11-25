@@ -18,10 +18,10 @@
  "players_min": 15,
  "players_max": 15,
  "field_size": "Halbes Spielfeld",
- "description": "Sieben gegen sieben plus Torwart auf einer ganzen Platzhälfte, geteilt in drei Zonen. Team Neon spielt sich von hinten Zone für Zone nach vorn und greift das große Tor an. In die nächste Zone darf der Ball nur, wenn ein Mitspieler in seiner Zone angespielt wurde. Erobert Team Rot den Ball, kontert es auf zwei Minitore an der Mittellinie.",
+ "description": "Sieben gegen sieben plus Torwart auf einer ganzen Platzhälfte, geteilt in drei Zonen. Team Neon spielt sich von der Mittellinie Zone für Zone nach vorn und greift das große Tor an. In die nächste Zone darf der Ball nur, wenn ein Mitspieler in seiner Zone angespielt wurde. Erobert Team Rot den Ball, kontert es auf zwei Minitore an der Mittellinie.",
  "organisation": [
-  "Aufbauen: Eine Platzhälfte in voller Breite mit großem Tor und Torwart. Zwei gestrichelte Linien teilen sie in drei Zonen: hinten, Mitte und die Endzone vor dem Tor. An der Mittellinie stehen zwei Minitore.",
-  "Verteilen: Team Neon mit drei Spielern hinten, drei in der Mitte und einem Stürmer vorn. Team Rot mit Torwart, zwei Verteidigern vorn, zwei Spielern in der Mitte und drei Spielern hinten. Hinten ist es drei gegen drei, in der Mitte drei gegen zwei, vorn einer gegen zwei. Der Trainer steht mit Bällen an der Ecke.",
+  "Aufbauen: Eine Platzhälfte in voller Breite mit großem Tor und Torwart. Zwei gestrichelte Linien quer über das Feld teilen sie in drei Zonen: hinten an der Mittellinie, Mitte und die Endzone vor dem Tor. Auf der Mittellinie stehen zwei Minitore.",
+  "Verteilen: Team Neon mit drei Spielern hinten, drei in der Mitte und einem Stürmer vorn. Team Rot mit Torwart, zwei Verteidigern vorn, zwei Spielern in der Mitte und drei Spielern hinten. Hinten ist es drei gegen drei, in der Mitte drei gegen zwei, vorn einer gegen zwei. Der Trainer steht mit Bällen an der Mittellinie.",
   "Ablauf: Team Neon baut hinten auf. Der Ball geht erst in die nächste Zone, wenn dort ein Mitspieler angespielt wurde. Wer angespielt ist, darf nach vorn nachrücken. Vorn laufen die Mittelfeldspieler mit in die Endzone und helfen dem Stürmer.",
   "Wertung: Ein Treffer ins große Tor gibt einen Punkt für Team Neon. Erobert Team Rot den Ball und trifft in ein Minitor, gibt das einen Punkt für Team Rot. Danach spielt der Trainer einen neuen Ball zu den drei Spielern hinten."
  ],
@@ -47,236 +47,365 @@
  "access": "abo",
  "hidden": true,
  "wartet_auf_ton": true,
- "say_intro": "Sieben gegen sieben in Dritteln. Team Neon spielt sich auf einer Platzhälfte von hinten durch drei Zonen bis vor das große Tor. Team Rot verteidigt und kontert auf zwei Minitore.",
+ "say_intro": "Sieben gegen sieben in Dritteln. Team Neon spielt sich auf einer Platzhälfte von der Mittellinie durch drei Zonen bis vor das große Tor. Team Rot verteidigt und kontert auf zwei Minitore.",
  "board": {
+  "massstab": "gross",
   "lines": [
    {
     "type": "rect",
-    "x": 15,
-    "y": 4,
-    "w": 70,
-    "h": 53
+    "x": 10.0,
+    "y": 3.0,
+    "w": 80.0,
+    "h": 49.0
    },
    {
     "type": "rect",
-    "x": 29.5,
-    "y": 4,
-    "w": 41,
-    "h": 16.5
+    "x": 69.7,
+    "y": 12.3,
+    "w": 20.3,
+    "h": 30.4
    },
    {
     "type": "rect",
-    "x": 40.6,
-    "y": 4,
-    "w": 18.8,
-    "h": 5.6
+    "x": 83.9,
+    "y": 20.6,
+    "w": 6.1,
+    "h": 13.8
    },
    {
     "type": "line",
-    "x1": 15,
-    "y1": 22,
-    "x2": 85,
-    "y2": 22,
+    "x1": 69.7,
+    "y1": 22.0,
+    "x2": 66.9,
+    "y2": 23.5,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 66.9,
+    "y1": 23.5,
+    "x2": 65.0,
+    "y2": 25.4,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 65.0,
+    "y1": 25.4,
+    "x2": 64.4,
+    "y2": 27.5,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 64.4,
+    "y1": 27.5,
+    "x2": 65.0,
+    "y2": 29.6,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 65.0,
+    "y1": 29.6,
+    "x2": 66.9,
+    "y2": 31.5,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 66.9,
+    "y1": 31.5,
+    "x2": 69.7,
+    "y2": 33.0,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 10.0,
+    "y1": 20.6,
+    "x2": 12.1,
+    "y2": 20.9,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 12.1,
+    "y1": 20.9,
+    "x2": 14.1,
+    "y2": 21.9,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 14.1,
+    "y1": 21.9,
+    "x2": 15.6,
+    "y2": 23.4,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 15.6,
+    "y1": 23.4,
+    "x2": 16.6,
+    "y2": 25.4,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 16.6,
+    "y1": 25.4,
+    "x2": 16.9,
+    "y2": 27.5,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 16.9,
+    "y1": 27.5,
+    "x2": 16.6,
+    "y2": 29.6,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 16.6,
+    "y1": 29.6,
+    "x2": 15.6,
+    "y2": 31.6,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 15.6,
+    "y1": 31.6,
+    "x2": 14.1,
+    "y2": 33.1,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 14.1,
+    "y1": 33.1,
+    "x2": 12.1,
+    "y2": 34.1,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 12.1,
+    "y1": 34.1,
+    "x2": 10.0,
+    "y2": 34.4,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 67.5,
+    "y1": 3.0,
+    "x2": 67.5,
+    "y2": 52.0,
     "dashed": true
    },
    {
     "type": "line",
-    "x1": 15,
-    "y1": 40.5,
-    "x2": 85,
-    "y2": 40.5,
+    "x1": 41.6,
+    "y1": 3.0,
+    "x2": 41.6,
+    "y2": 52.0,
     "dashed": true
    }
   ],
   "cones": [
    {
-    "x": 15,
-    "y": 22,
+    "x": 67.5,
+    "y": 3.0,
     "color": "orange"
    },
    {
-    "x": 85,
-    "y": 22,
+    "x": 67.5,
+    "y": 52.0,
     "color": "orange"
    },
    {
-    "x": 15,
-    "y": 40.5,
+    "x": 41.6,
+    "y": 3.0,
     "color": "orange"
    },
    {
-    "x": 85,
-    "y": 40.5,
+    "x": 41.6,
+    "y": 52.0,
     "color": "orange"
    }
   ],
   "goals": [
    {
-    "x": 50,
-    "y": 4,
-    "side": "top",
+    "x": 90,
+    "y": 27.5,
+    "side": "right",
     "size": "gross"
    },
    {
-    "x": 28,
-    "y": 57,
-    "side": "bottom"
+    "x": 10.0,
+    "y": 12.0,
+    "side": "left"
    },
    {
-    "x": 72,
-    "y": 57,
-    "side": "bottom"
+    "x": 10.0,
+    "y": 43.0,
+    "side": "left"
    }
   ],
   "players": [
    {
     "id": "r1",
     "team": "b",
-    "x": 48,
-    "y": 6,
+    "x": 87.3,
+    "y": 29.0,
     "label": "TW"
    },
    {
     "id": "r2",
     "team": "b",
-    "x": 39.5,
-    "y": 14,
+    "x": 79.7,
+    "y": 21.1,
     "label": "2"
    },
    {
     "id": "r5",
     "team": "b",
-    "x": 68,
-    "y": 13,
+    "x": 79.7,
+    "y": 33.9,
     "label": "5"
    },
    {
     "id": "n9",
     "team": "a",
-    "x": 59.5,
-    "y": 16,
+    "x": 73.1,
+    "y": 27.9,
     "label": "9"
    },
    {
     "id": "n11",
     "team": "a",
-    "x": 17,
-    "y": 31,
+    "x": 53.6,
+    "y": 7.5,
     "label": "11"
    },
    {
     "id": "r13",
     "team": "b",
-    "x": 42.5,
-    "y": 30,
+    "x": 59.3,
+    "y": 21.1,
     "label": "13"
    },
    {
     "id": "n8",
     "team": "a",
-    "x": 51,
-    "y": 36,
+    "x": 48.6,
+    "y": 27.9,
     "label": "8"
    },
    {
     "id": "r12",
     "team": "b",
-    "x": 68,
-    "y": 29,
+    "x": 58.5,
+    "y": 36.2,
     "label": "12"
    },
    {
     "id": "n7",
     "team": "a",
-    "x": 77,
-    "y": 30,
+    "x": 50.3,
+    "y": 46.0,
     "label": "7"
    },
    {
     "id": "r10",
     "team": "b",
-    "x": 25.5,
-    "y": 45,
+    "x": 30.4,
+    "y": 12.8,
     "label": "10"
    },
    {
     "id": "r14",
     "team": "b",
-    "x": 59.5,
-    "y": 45,
+    "x": 33.3,
+    "y": 30.9,
     "label": "14"
    },
    {
     "id": "r15",
     "team": "b",
-    "x": 77,
-    "y": 46,
+    "x": 26.5,
+    "y": 46.0,
     "label": "15"
    },
    {
     "id": "n3",
     "team": "a",
-    "x": 17,
-    "y": 54,
+    "x": 15.3,
+    "y": 9.0,
     "label": "3"
    },
    {
     "id": "n4",
     "team": "a",
-    "x": 51,
-    "y": 52,
+    "x": 23.5,
+    "y": 27.9,
     "label": "4"
    },
    {
     "id": "n6",
     "team": "a",
-    "x": 68,
-    "y": 53,
+    "x": 16.4,
+    "y": 43.7,
     "label": "6"
    },
    {
     "id": "T",
     "team": "c",
-    "x": 8,
-    "y": 50,
+    "x": 12,
+    "y": 55.3,
     "label": "T"
    }
   ],
   "balls": [
    {
     "id": "b1",
-    "x": 68.6,
-    "y": 53.6
+    "x": 17.0,
+    "y": 44.3
    },
    {
     "id": "s1",
-    "x": 9.6,
-    "y": 46.5
+    "x": 15.5,
+    "y": 55.8
    },
    {
     "id": "s2",
-    "x": 6,
-    "y": 46.5
+    "x": 18,
+    "y": 55.8
    }
   ],
   "steps": [
    {
     "label": "Hinten drei gegen drei",
-    "say": "Spieler sechs eröffnet hinten. Über Spieler vier geht der Ball weiter zu Spieler drei. Hier hinten hat jeder einen Gegenspieler, also schnell spielen.",
+    "say": "Spieler sechs eröffnet hinten an der Mittellinie. Über Spieler vier geht der Ball weiter zu Spieler drei. Hier hinten hat jeder einen Gegenspieler, also schnell spielen.",
     "moves": [
      {
       "who": "b1",
       "to": [
-       51.6,
-       52.6
+       24.1,
+       28.5
       ],
       "type": "pass"
      },
      {
       "who": "r14",
       "to": [
-       55,
-       48
+       28.5,
+       29.4
       ],
       "type": "lauf",
       "delay": 0.3
@@ -284,8 +413,8 @@
      {
       "who": "b1",
       "to": [
-       17.6,
-       54.6
+       15.9,
+       9.6
       ],
       "type": "pass",
       "after": true
@@ -299,16 +428,16 @@
      {
       "who": "n8",
       "to": [
-       33.3,
-       45.4
+       31.2,
+       18.0
       ],
       "type": "blick"
      },
      {
       "who": "b1",
       "to": [
-       51.6,
-       36.6
+       49.2,
+       28.5
       ],
       "type": "pass",
       "after": true
@@ -322,21 +451,21 @@
      {
       "who": "n8",
       "to": [
-       31.2,
-       33.1
+       53.4,
+       8.5
       ],
       "type": "blick",
       "von": [
-       33.3,
-       45.4
+       31.2,
+       18.0
       ],
       "dauer": 1.3
      },
      {
       "who": "n8",
       "to": [
-       17,
-       31
+       53.6,
+       7.5
       ],
       "type": "dreh",
       "delay": 0.4
@@ -344,8 +473,8 @@
      {
       "who": "r13",
       "to": [
-       45,
-       33
+       55.3,
+       24.1
       ],
       "type": "lauf",
       "delay": 0.6
@@ -353,8 +482,8 @@
      {
       "who": "b1",
       "to": [
-       17.6,
-       31.6
+       54.2,
+       8.1
       ],
       "type": "pass",
       "after": true
@@ -368,16 +497,16 @@
      {
       "who": "n9",
       "to": [
-       52,
-       17
+       70.4,
+       25.6
       ],
       "type": "lauf"
      },
      {
       "who": "n9",
       "to": [
-       33.4,
-       24.4
+       56.8,
+       10.9
       ],
       "type": "blick",
       "delay": 0.5
@@ -385,8 +514,8 @@
      {
       "who": "b1",
       "to": [
-       52.6,
-       17.6
+       71.0,
+       26.2
       ],
       "type": "pass",
       "after": true
@@ -394,8 +523,8 @@
      {
       "who": "n11",
       "to": [
-       29,
-       11
+       78.4,
+       12.0
       ],
       "type": "lauf",
       "after": true
@@ -403,8 +532,8 @@
      {
       "who": "r2",
       "to": [
-       34,
-       12
+       82.1,
+       15.8
       ],
       "type": "lauf",
       "after": true
@@ -412,8 +541,8 @@
      {
       "who": "n7",
       "to": [
-       78,
-       12
+       78.4,
+       42.2
       ],
       "type": "lauf",
       "delay": 1.2
@@ -421,8 +550,8 @@
      {
       "who": "r5",
       "to": [
-       72,
-       11
+       82.1,
+       38.4
       ],
       "type": "lauf",
       "delay": 1.5
@@ -436,21 +565,21 @@
      {
       "who": "n9",
       "to": [
-       52.5,
-       4.3
+       90.4,
+       25.3
       ],
       "type": "blick",
       "von": [
-       33.4,
-       24.4
+       56.8,
+       10.9
       ],
       "dauer": 1.3
      },
      {
       "who": "n9",
       "to": [
-       52.5,
-       4.3
+       90.4,
+       25.3
       ],
       "type": "dreh",
       "delay": 0.4
@@ -458,8 +587,8 @@
      {
       "who": "b1",
       "to": [
-       52.5,
-       4.3
+       90.4,
+       25.3
       ],
       "type": "pass",
       "after": true
@@ -479,131 +608,131 @@
      {
       "id": "r1",
       "team": "b",
-      "x": 48,
-      "y": 6,
+      "x": 87.3,
+      "y": 29.0,
       "label": "TW"
      },
      {
       "id": "r2",
       "team": "b",
-      "x": 39.5,
-      "y": 14,
+      "x": 79.7,
+      "y": 21.1,
       "label": "2"
      },
      {
       "id": "r5",
       "team": "b",
-      "x": 68,
-      "y": 13,
+      "x": 79.7,
+      "y": 33.9,
       "label": "5"
      },
      {
       "id": "n9",
       "team": "a",
-      "x": 59.5,
-      "y": 16,
+      "x": 73.1,
+      "y": 27.9,
       "label": "9"
      },
      {
       "id": "n11",
       "team": "a",
-      "x": 17,
-      "y": 31,
+      "x": 53.6,
+      "y": 7.5,
       "label": "11"
      },
      {
       "id": "r13",
       "team": "b",
-      "x": 42.5,
-      "y": 30,
+      "x": 59.3,
+      "y": 21.1,
       "label": "13"
      },
      {
       "id": "n8",
       "team": "a",
-      "x": 51,
-      "y": 36,
+      "x": 48.6,
+      "y": 27.9,
       "label": "8"
      },
      {
       "id": "r12",
       "team": "b",
-      "x": 68,
-      "y": 29,
+      "x": 58.5,
+      "y": 36.2,
       "label": "12"
      },
      {
       "id": "n7",
       "team": "a",
-      "x": 77,
-      "y": 30,
+      "x": 50.3,
+      "y": 46.0,
       "label": "7"
      },
      {
       "id": "r10",
       "team": "b",
-      "x": 25.5,
-      "y": 45,
+      "x": 30.4,
+      "y": 12.8,
       "label": "10"
      },
      {
       "id": "r14",
       "team": "b",
-      "x": 59.5,
-      "y": 45,
+      "x": 33.3,
+      "y": 30.9,
       "label": "14"
      },
      {
       "id": "r15",
       "team": "b",
-      "x": 77,
-      "y": 46,
+      "x": 26.5,
+      "y": 46.0,
       "label": "15"
      },
      {
       "id": "n3",
       "team": "a",
-      "x": 17,
-      "y": 54,
+      "x": 15.3,
+      "y": 9.0,
       "label": "3"
      },
      {
       "id": "n4",
       "team": "a",
-      "x": 51,
-      "y": 52,
+      "x": 23.5,
+      "y": 27.9,
       "label": "4"
      },
      {
       "id": "n6",
       "team": "a",
-      "x": 68,
-      "y": 53,
+      "x": 16.4,
+      "y": 43.7,
       "label": "6"
      },
      {
       "id": "T",
       "team": "c",
-      "x": 8,
-      "y": 50,
+      "x": 12,
+      "y": 55.3,
       "label": "T"
      }
     ],
     "balls": [
      {
       "id": "b1",
-      "x": 51.6,
-      "y": 52.6
+      "x": 24.1,
+      "y": 28.5
      },
      {
       "id": "s1",
-      "x": 9.6,
-      "y": 46.5
+      "x": 15.5,
+      "y": 55.8
      },
      {
       "id": "s2",
-      "x": 6,
-      "y": 46.5
+      "x": 18,
+      "y": 55.8
      }
     ],
     "steps": [
@@ -614,16 +743,16 @@
        {
         "who": "n4",
         "to": [
-         46,
-         38
+         42.6,
+         21.9
         ],
         "type": "blick"
        },
        {
         "who": "n4",
         "to": [
-         44,
-         39
+         45.1,
+         21.1
         ],
         "type": "dribbling",
         "after": true,
@@ -632,8 +761,8 @@
        {
         "who": "n8",
         "to": [
-         58,
-         33
+         53.6,
+         33.2
         ],
         "type": "lauf",
         "delay": 0.8
@@ -647,24 +776,24 @@
        {
         "who": "r13",
         "to": [
-         42.5,
-         25
+         64.6,
+         21.1
         ],
         "type": "lauf"
        },
        {
         "who": "r12",
         "to": [
-         66,
-         24
+         63.9,
+         35.4
         ],
         "type": "lauf"
        },
        {
         "who": "b1",
         "to": [
-         58.6,
-         33.6
+         54.2,
+         33.8
         ],
         "type": "pass",
         "delay": 0.6
@@ -672,8 +801,8 @@
        {
         "who": "b1",
         "to": [
-         60.1,
-         16.6
+         73.7,
+         28.5
         ],
         "type": "pass",
         "after": true
@@ -693,151 +822,151 @@
      {
       "id": "r1",
       "team": "b",
-      "x": 48,
-      "y": 6,
+      "x": 87.3,
+      "y": 29.0,
       "label": "TW"
      },
      {
       "id": "r2",
       "team": "b",
-      "x": 39.5,
-      "y": 14,
+      "x": 79.7,
+      "y": 21.1,
       "label": "2"
      },
      {
       "id": "r5",
       "team": "b",
-      "x": 68,
-      "y": 13,
+      "x": 79.7,
+      "y": 33.9,
       "label": "5"
      },
      {
       "id": "n9",
       "team": "a",
-      "x": 59.5,
-      "y": 16,
+      "x": 73.1,
+      "y": 27.9,
       "label": "9"
      },
      {
       "id": "n11",
       "team": "a",
-      "x": 17,
-      "y": 31,
+      "x": 53.6,
+      "y": 7.5,
       "label": "11"
      },
      {
       "id": "r13",
       "team": "b",
-      "x": 42.5,
-      "y": 30,
+      "x": 59.3,
+      "y": 21.1,
       "label": "13"
      },
      {
       "id": "n8",
       "team": "a",
-      "x": 51,
-      "y": 36,
+      "x": 48.6,
+      "y": 27.9,
       "label": "8"
      },
      {
       "id": "r12",
       "team": "b",
-      "x": 68,
-      "y": 29,
+      "x": 58.5,
+      "y": 36.2,
       "label": "12"
      },
      {
       "id": "n7",
       "team": "a",
-      "x": 77,
-      "y": 17,
+      "x": 75.8,
+      "y": 46.0,
       "label": "7"
      },
      {
       "id": "r10",
       "team": "b",
-      "x": 25.5,
-      "y": 45,
+      "x": 30.4,
+      "y": 12.8,
       "label": "10"
      },
      {
       "id": "r14",
       "team": "b",
-      "x": 59.5,
-      "y": 45,
+      "x": 33.3,
+      "y": 30.9,
       "label": "14"
      },
      {
       "id": "r15",
       "team": "b",
-      "x": 77,
-      "y": 46,
+      "x": 26.5,
+      "y": 46.0,
       "label": "15"
      },
      {
       "id": "n3",
       "team": "a",
-      "x": 17,
-      "y": 54,
+      "x": 15.3,
+      "y": 9.0,
       "label": "3"
      },
      {
       "id": "n4",
       "team": "a",
-      "x": 51,
-      "y": 52,
+      "x": 23.5,
+      "y": 27.9,
       "label": "4"
      },
      {
       "id": "n6",
       "team": "a",
-      "x": 68,
-      "y": 53,
+      "x": 16.4,
+      "y": 43.7,
       "label": "6"
      },
      {
       "id": "T",
       "team": "c",
-      "x": 8,
-      "y": 50,
+      "x": 12,
+      "y": 55.3,
       "label": "T"
      }
     ],
     "balls": [
      {
       "id": "b1",
-      "x": 17.6,
-      "y": 54.6
+      "x": 15.9,
+      "y": 9.6
      },
      {
       "id": "s1",
-      "x": 9.6,
-      "y": 46.5
+      "x": 15.5,
+      "y": 55.8
      },
      {
       "id": "s2",
-      "x": 6,
-      "y": 46.5
+      "x": 18,
+      "y": 55.8
      }
     ],
     "steps": [
      {
       "label": "Einer geht vor, einer rückt nach",
-      "say": "Spieler drei spielt hoch zu Spieler elf. Gleichzeitig startet Spieler acht in die Endzone. Jetzt fehlt in der Mitte einer. Spieler vier schaut nach vorn, sieht das und rückt sofort nach.",
+      "say": "Spieler drei spielt steil auf Spieler elf. Gleichzeitig startet Spieler acht in die Endzone. Jetzt fehlt in der Mitte einer. Spieler vier schaut nach vorn, sieht das und rückt sofort nach.",
       "moves": [
        {
         "who": "b1",
         "to": [
-         17.6,
-         31.6
+         54.2,
+         8.1
         ],
         "type": "pass"
        },
        {
         "who": "n8",
         "to": [
-         50,
-         19
+         70.4,
+         31.6
         ],
         "type": "lauf",
         "delay": 0.3
@@ -845,8 +974,8 @@
        {
         "who": "n4",
         "to": [
-         50,
-         36
+         43.5,
+         27.9
         ],
         "type": "blick",
         "delay": 0.8
@@ -854,8 +983,8 @@
        {
         "who": "n4",
         "to": [
-         44,
-         39
+         46.9,
+         23.4
         ],
         "type": "lauf",
         "after": true
@@ -869,16 +998,16 @@
        {
         "who": "b1",
         "to": [
-         50.6,
-         19.6
+         71.0,
+         32.2
         ],
         "type": "pass"
        },
        {
         "who": "b1",
         "to": [
-         60.1,
-         16.6
+         73.7,
+         28.5
         ],
         "type": "pass",
         "after": true
@@ -886,8 +1015,8 @@
        {
         "who": "b1",
         "to": [
-         52.5,
-         4.3
+         90.4,
+         25.3
         ],
         "type": "pass",
         "after": true
