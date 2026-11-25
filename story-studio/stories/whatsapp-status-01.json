@@ -37,25 +37,42 @@
     },
     {
       "typ": "uebung",
-      "code": "UE-270",
-      "schritte": 3,
-      "tempo": 1.6,
+      "code": "UE-140",
+      "schritte": 5,
+      "tempo": 2.2,
       "dach": "So geht’s einfacher",
       "uebergang": "knall",
       "sprecher": "Bei Trainingskern läuft jede Übung als Animation, von mir auf Deutsch erklärt.",
       "sprecherAb": 0.8
     },
     {
+      "typ": "punkte",
+      "ton": "neon",
+      "titel": [
+        "Alles",
+        "drin"
+      ],
+      "punkte": [
+        "Bambini bis Senioren",
+        "Torhüter und Einzeltraining",
+        "Fertige Trainingspläne"
+      ],
+      "uebergang": "pinsel",
+      "sprecher": "Für jede Jugend, von den Bambini bis zu den Senioren, für Torhüter und Einzeltraining, dazu fertige Trainingspläne.",
+      "sprecherAb": 0.5
+    },
+    {
       "typ": "hook",
       "ton": "dunkel",
       "zeilen": [
-        "Von Bambini",
-        "*bis Senioren.*"
+        "Über 100 neue",
+        "Übungen im Monat.",
+        "*Nach DFB-Philosophie.*"
       ],
-      "dauer": 3.0,
+      "dauer": 3.4,
       "takt": 0.3,
-      "uebergang": "pinsel",
-      "sprecher": "Übungen für jede Jugend, von den Bambini bis zu den Senioren."
+      "uebergang": "knall",
+      "sprecher": "Jeden Monat über hundert neue Übungen, aufgebaut nach der Trainingsphilosophie des DFB."
     },
     {
       "typ": "hook",
