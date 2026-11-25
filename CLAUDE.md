@@ -80,16 +80,12 @@ Die App selbst liegt bei Base44 (App „Trainingskern“), dieses Repo enthält 
   In die Beitragsbeschreibung kommt offen: „Kostenlos anmelden und alle Spielsysteme ansehen“.
 - Posten: jeden Abend eines, zusätzlich zum Reel um 18:30 (Vorschlag 20:30 bis 21:00, der Nutzer dachte an 22 Uhr). Keine eigenen Storys dazu.
 
-## Geplante Runde (24.11.2026, wartet auf das Go des Nutzers)
+## Runde vom 25.11.2026 (fertig gerendert)
 
-- Spielsysteme (Reihe, Videos liefert der Nutzer; auf der Seite: TA-002 „Aufbau im 4-2-3-1“, TA-001 „Aufbau im 4-3-3 über den Torwart“,
-  beide stehen noch auf `abo`, sollen frei nach Registrierung werden; TA-002 hat 4 Aufnahmen, die nicht zum Text passen):
-  4-2-3-1 Intro „4-2-3-1 / Wer macht was?“, 4-3-3 Intro „4-3-3 / Aufbau über den Torwart“, je Ausschnitt 20–40 s, dann Hinweis, Outro.
-- Acht Übungs-Videos fürs Profil (alle mit Coaching-Punkt und Steigerung, Ton geprüft, kein „Springer“):
-  UE-267 Erst parieren, dann um die Puppe (Torwart) · UE-206 Viererkette schiebt zum Ball (Taktik/Verteidigen) ·
-  UE-025 Balljäger: Einer gegen alle (Kleine, frei) · UE-034 Aufdrehen und verlagern (Passspiel, frei) ·
-  UE-104 Slalom und Doppelpass (Bambini) · UE-269 Drei Puppen, drei Abschlüsse (Einzeltraining, Torschuss) ·
-  UE-006 4 gegen 4 mit Strafrunde (Kondition, bis Amateure) · UE-043 Verteidiger-Aktivierung: Farbe, Stellen, Sprint (Athletik).
+- kampagne-48 bis -55 (UE-025, UE-267, UE-206, UE-104, UE-043, UE-269, UE-034, UE-006) mit Story-Bildern; Storys liegen im Drive.
+- Spielsysteme: `stories/spielsystem-01-4-3-3.json` (TA-001) und `spielsystem-02-4-2-3-1.json` (TA-002): Intro `comic-tafel`, die ersten zwei
+  Schritte der Grundordnung, Hinweis „Das ganze System: kostenlos auf trainingskern.de“, Outro. Drive-Ordner **Spielsysteme**: `1NrOtcLDP6ixXSlpTuyB7GY0CKoi_4BvT`.
+- Die Videos selbst warten noch auf den Upload (`story-studio/hochladen-runde3.sh`, braucht einen neuen Google-Schlüssel).
 
 ## Sprache
 
@@ -156,7 +152,7 @@ Hochladen: über die Drive-Schnittstelle (`POST https://www.googleapis.com/uploa
 Der Drive-Zugang der Sitzung selbst kann keine Videodateien hochladen. Der Nutzer holt dafür einen Zugangsschlüssel im Google OAuth Playground
 (Scope `https://www.googleapis.com/auth/drive`, gilt eine Stunde) und hinterlegt ihn über das sichere Formular für `www.googleapis.com`;
 nie in den Chat oder ins Repo. Für jede Runde braucht es einen neuen Schlüssel (der Drive-Zugang der Sitzung nimmt nur Dateien bis 10 MB).
-Stand 24.11.2026 liegen kampagne-01 (Comic) bis -47 im Drive, die Story-Bilder ab kampagne-12 im Ordner „Storys“.
+Stand 25.11.2026 liegen kampagne-01 (Comic) bis -47 im Drive (48 bis 55 und die Spielsysteme: nur die Story-Bilder, Videos folgen), die Story-Bilder ab kampagne-12 im Ordner „Storys“.
 Marketing-Videos (Vermarktung): 01, 07, 08, 14, 17 und ab 18 jedes dritte (18, 21, 24 … 45); alle anderen sind Übungs-Videos.
 
 ## Story-Studio
