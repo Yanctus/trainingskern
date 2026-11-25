@@ -13,11 +13,11 @@
       "zeilen": [
         "Training heute?",
         "Kein Plan?",
-        "*trainingskern.de*",
-        "*hilft dir!*"
+        "*Dann hilft dir*",
+        "*trainingskern.de!*"
       ],
       "dauer": 5.2,
-      "sprecher": "Training heute und kein Plan? Trainingskern.de hilft dir!",
+      "sprecher": "Training heute und kein Plan? Dann hilft dir Trainingskern.de!",
       "sprecherAb": 0.5
     },
     {
@@ -34,14 +34,19 @@
         "Alles selbst erklären"
       ],
       "uebergang": "pinsel",
-      "sprecher": "Ewig suchen, Skizzen enträtseln, und erklären musst du alles selbst.",
-      "sprecherAb": 0.5
+      "sprecher": "Kennst du diese Themen? Ewig Übungen suchen, Skizzen zum Rätseln, und alles musst du selbst erklären.",
+      "sprecherAb": 0.5,
+      "punktAb": [
+        1.8,
+        3.2,
+        4.6
+      ]
     },
     {
       "typ": "uebung",
       "code": "UE-140",
       "schritte": 5,
-      "tempo": 2.2,
+      "tempo": 2.9,
       "dach": "Mit Audio · trainingskern.de",
       "uebergang": "knall",
       "sprecher": "Jede Übung läuft als Animation, und ich erkläre sie dir mit Ton, auf Deutsch.",
@@ -111,19 +116,20 @@
       "typ": "hook",
       "ton": "dunkel",
       "zeilen": [
-        "Kennst du Trainer?",
-        "*Schick’s weiter!*"
+        "Schick’s weiter!",
+        "Insta:",
+        "*@trainings.kern*"
       ],
       "dauer": 2.6,
       "takt": 0.3,
       "uebergang": "panel",
-      "sprecher": "Und schick das an deine Trainerkollegen."
+      "sprecher": "Schick das an deine Trainerkollegen, und folge uns auf Instagram: Trainings Punkt Kern."
     },
     {
       "typ": "outro",
       "film": "outro-comic",
       "uebergang": "blende",
-      "dauer": 4.2
+      "dauer": 3.6
     }
   ]
 }
