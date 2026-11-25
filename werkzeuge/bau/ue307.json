@@ -646,8 +646,8 @@
     ],
     "steps": [
      {
-      "label": "Ball weg, Blick zum Minitor",
-      "say": "Spieler fünf will zum Springer spielen, aber Spieler zwölf geht dazwischen und hat den Ball. Sofort schaut Spieler fünf zum nahen Minitor. Dorthin will Spieler zwölf jetzt.",
+      "label": "Ball weg, sofort umschalten",
+      "say": "Spieler fünf will zum Springer spielen, aber Spieler zwölf geht dazwischen und hat den Ball. Jetzt will Spieler zwölf ins nahe Minitor.",
       "moves": [
        {
         "who": "r12",
@@ -664,15 +664,6 @@
          14.6
         ],
         "type": "pass"
-       },
-       {
-        "who": "n5",
-        "to": [
-         40.0,
-         13.0
-        ],
-        "type": "blick",
-        "after": true
        }
       ]
      },
@@ -943,8 +934,8 @@
        {
         "who": "f2",
         "to": [
-         29.0,
-         29.0
+         19.0,
+         30.0
         ],
         "type": "blick"
        },
@@ -971,8 +962,8 @@
         ],
         "type": "blick",
         "von": [
-         29.0,
-         29.0
+         19.0,
+         30.0
         ],
         "dauer": 1.3
        },

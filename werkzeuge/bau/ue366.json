@@ -387,7 +387,7 @@
    },
    {
     "label": "Pfiff: vier gegen zwei",
-    "say": "Pfiff vom Trainer. Von der Mittellinie kommen Spieler sieben und Spieler elf dazu, von der Torlinie sprintet Spieler vier ins Feld. Spieler fünf schaut sofort, wer da kommt.",
+    "say": "Pfiff vom Trainer. Von der Mittellinie kommen Spieler sieben und Spieler elf dazu, von der Torlinie sprintet Spieler vier ins Feld. Jetzt sind es vier gegen zwei.",
     "moves": [
      {
       "who": "r7",
@@ -413,15 +413,6 @@
       ],
       "type": "lauf",
       "delay": 0.2
-     },
-     {
-      "who": "n5",
-      "to": [
-       46.2,
-       37.3
-      ],
-      "type": "blick",
-      "delay": 0.5
      }
     ]
    },

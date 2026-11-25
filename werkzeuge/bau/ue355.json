@@ -413,14 +413,14 @@
     ],
     "steps": [
      {
-      "label": "Auf den Zehen, Blick zum Ball",
-      "say": "Spieler zehn wartet unten. Er steht auf den Zehen und schaut auf Spieler vier mit dem Ball. Der spielt nach oben zu Spieler elf, und Spieler zehn ist sofort weg.",
+      "label": "Auf den Zehen, sofort weg",
+      "say": "Spieler zehn wartet unten auf den Zehen, den Ball immer vor Augen. Spieler vier schaut nach oben zu Spieler elf und spielt. Spieler zehn ist sofort weg.",
       "moves": [
        {
-        "who": "n10",
+        "who": "n4",
         "to": [
-         37.5,
-         33
+         53,
+         17.5
         ],
         "type": "blick"
        },
@@ -585,13 +585,13 @@
      },
      {
       "label": "Andere Seite, andere Richtung",
-      "say": "Spieler vier spielt diesmal nach unten zu Spieler zehn. Danach läuft er in die andere Richtung, zur Puppe oben. Spieler elf schaut genau hin, denn jetzt ist er gefragt.",
+      "say": "Spieler vier schaut diesmal nach unten zu Spieler zehn und spielt ihn an. Danach läuft er in die andere Richtung, zur Puppe oben. Spieler elf muss jetzt aufpassen, denn er ist gefragt.",
       "moves": [
        {
-        "who": "n11",
+        "who": "n4",
         "to": [
-         38,
-         34
+         54.5,
+         44.5
         ],
         "type": "blick"
        },
@@ -602,7 +602,7 @@
          36
         ],
         "type": "dribbling",
-        "delay": 0.3,
+        "after": true,
         "ball": "b1"
        },
        {

@@ -311,7 +311,7 @@
    },
    {
     "label": "Erster Pass nach vorn: das Signal",
-    "say": "Jetzt spielt Spieler sechs nach vorn auf Spieler fünfzehn. Das ist das Signal. Spieler elf schaut genau hin, wie der Ball ankommt, und läuft an. Von vorn kommt Spieler neun, von hinten Spieler acht.",
+    "say": "Jetzt spielt Spieler sechs nach vorn auf Spieler fünfzehn. Das ist das Signal. Spieler elf läuft sofort an. Von vorn kommt Spieler neun, von hinten Spieler acht.",
     "moves": [
      {
       "who": "b1",
@@ -324,20 +324,11 @@
      {
       "who": "n11",
       "to": [
-       57.4,
-       13.6
-      ],
-      "type": "blick",
-      "delay": 0.4
-     },
-     {
-      "who": "n11",
-      "to": [
        54.9,
        10.5
       ],
       "type": "lauf",
-      "after": true
+      "delay": 0.6
      },
      {
       "who": "n9",

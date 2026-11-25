@@ -481,7 +481,7 @@
    },
    {
     "label": "Rückpass nach innen, die Kette rückt raus",
-    "say": "Spieler elf dreht ab und spielt zurück zu Spieler zehn. Ab jetzt ist das Spiel frei. Spieler vier schaut kurz, wo Spieler neun steht, und ruft. Die ganze Kette rückt zusammen raus, Spieler neun steht im Abseits.",
+    "say": "Spieler elf dreht ab und spielt zurück zu Spieler zehn. Ab jetzt ist das Spiel frei. Spieler vier ruft, und die ganze Kette rückt zusammen raus. Spieler neun steht im Abseits.",
     "moves": [
      {
       "who": "r11",
@@ -499,15 +499,6 @@
       ],
       "type": "pass",
       "after": true
-     },
-     {
-      "who": "n4",
-      "to": [
-       46.6,
-       27.5
-      ],
-      "type": "blick",
-      "delay": 0.4
      },
      {
       "who": "n2",
@@ -959,7 +950,7 @@
      },
      {
       "label": "Torwart steht hoch",
-      "say": "Unser Torwart rückt mit der Kette auf und steht vor dem Tor, nicht auf der Linie. Er schaut, was Spieler sechs vorhat.",
+      "say": "Unser Torwart rückt mit der Kette auf und steht vor dem Tor, nicht auf der Linie. So läuft er Bälle hinter der Kette ab.",
       "moves": [
        {
         "who": "n1",
@@ -968,15 +959,6 @@
          27.5
         ],
         "type": "lauf"
-       },
-       {
-        "who": "n1",
-        "to": [
-         46.6,
-         28.7
-        ],
-        "type": "blick",
-        "after": true
        }
       ]
      },

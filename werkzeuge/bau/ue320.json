@@ -684,10 +684,10 @@
     "steps": [
      {
       "label": "Verlagerung erkennen, raus",
-      "say": "Jetzt hat Spieler neun den Ball, die Kette steht auf seiner Seite. Spieler zwei sieht, dass der Querpass zu Spieler zehn kommt. Der Ball ist noch unterwegs, da läuft er schon los.",
+      "say": "Jetzt hat Spieler neun den Ball, die Kette steht auf seiner Seite. Er schaut zu Spieler zehn und spielt quer. Spieler zwei erkennt die Verlagerung. Der Ball ist noch unterwegs, da läuft er schon los.",
       "moves": [
        {
-        "who": "n2",
+        "who": "r9",
         "to": [
          25.2,
          37.7

@@ -293,7 +293,7 @@
    },
    {
     "label": "Rückpass, jetzt anlaufen",
-    "say": "Spieler elf kommt nicht weiter und spielt langsam zurück zu Spieler drei. Das ist das Signal. Spieler vier sieht den Rückpass und läuft sofort an, und hinten rücken alle ein Stück raus.",
+    "say": "Spieler elf kommt nicht weiter und spielt langsam zurück zu Spieler drei. Das ist das Signal. Spieler vier läuft sofort an, und hinten rücken alle ein Stück raus.",
     "moves": [
      {
       "who": "b1",
@@ -306,20 +306,11 @@
      {
       "who": "n4",
       "to": [
-       31,
-       43
-      ],
-      "type": "blick",
-      "delay": 0.2
-     },
-     {
-      "who": "n4",
-      "to": [
        34,
        39.5
       ],
       "type": "lauf",
-      "after": true
+      "delay": 0.5
      },
      {
       "who": "n8",
