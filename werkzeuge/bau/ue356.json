@@ -709,8 +709,8 @@
     ],
     "steps": [
      {
-      "label": "Flügel rückt ein, Schulterblick",
-      "say": "Spieler einundzwanzig zieht von außen nach innen, in den Rücken von Spieler zehn. Spieler zehn schaut über die Schulter und sieht ihn. Sofort schiebt er sich in den Passweg.",
+      "label": "Flügel rückt ein, Passweg zu",
+      "say": "Spieler einundzwanzig zieht von außen nach innen, in den Rücken von Spieler zehn. Spieler zehn bemerkt ihn früh und schiebt sich sofort in den Passweg.",
       "moves": [
        {
         "who": "r21",
@@ -723,34 +723,34 @@
        {
         "who": "n10",
         "to": [
-         34.5,
-         31.4
-        ],
-        "type": "blick",
-        "delay": 0.4
-       },
-       {
-        "who": "n10",
-        "to": [
          49.8,
          29.1
         ],
         "type": "lauf",
-        "after": true
+        "delay": 0.6
        }
       ]
      },
      {
       "label": "Der Ball muss quer",
-      "say": "Durch die Mitte geht nichts mehr. Spieler zwanzig spielt quer zu Spieler zwölf. Der Torwart ruft rüber, und der ganze Block schiebt mit. Spieler drei läuft an.",
+      "say": "Spieler zwanzig schaut zu Spieler einundzwanzig. Durch die Mitte geht nichts mehr, also spielt er quer zu Spieler zwölf. Der Torwart ruft rüber, und der ganze Block schiebt mit. Spieler drei läuft an.",
       "moves": [
+       {
+        "who": "r20",
+        "to": [
+         45.8,
+         32.7
+        ],
+        "type": "blick"
+       },
        {
         "who": "b1",
         "to": [
          57.7,
          6.2
         ],
-        "type": "pass"
+        "type": "pass",
+        "after": true
        },
        {
         "who": "n3",
@@ -759,7 +759,7 @@
          5.3
         ],
         "type": "lauf",
-        "delay": 0.5
+        "delay": 1.4
        },
        {
         "who": "n8",
@@ -768,7 +768,7 @@
          15.9
         ],
         "type": "lauf",
-        "delay": 0.6
+        "delay": 1.5
        },
        {
         "who": "n6",
@@ -777,7 +777,7 @@
          23.0
         ],
         "type": "lauf",
-        "delay": 0.6
+        "delay": 1.5
        },
        {
         "who": "n5",
@@ -786,7 +786,7 @@
          14.6
         ],
         "type": "lauf",
-        "delay": 0.6
+        "delay": 1.5
        }
       ]
      }

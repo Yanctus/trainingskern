@@ -58,7 +58,7 @@
 | UE-288 | Ansage hören, dribbeln, treffen | 18 x 32 m | 5 |
 | UE-289 | Aufdrehen, Stange, drei Minitore | 14 x 23 m | 6 |
 | UE-296 | Annehmen und die Linie runter | 14 x 18 m | 5 |
-- **Sichtkegel in eingesprochenen Übungen, deren Stimme den Blick nennt** (78 Kegel in 55 Einheiten, Liste in BLICK_FIX_LISTE.md
+- **Sichtkegel in eingesprochenen Übungen, deren Stimme den Blick nennt** (nach der Korrektur 73 Kegel in 48 Einheiten, Liste in BLICK_FIX_LISTE.md
   unter „Später“): nach der neuen Regel (Kegel nur beim Spieler, der danach passt) umbauen und die betroffenen Sätze im selben Zug neu
   einsprechen.
 

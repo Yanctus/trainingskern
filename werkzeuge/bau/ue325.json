@@ -466,7 +466,7 @@
     "steps": [
      {
       "label": "Im Bogen anlaufen",
-      "say": "Der Torwart spielt diesmal zu Spieler neun. Spieler fünf läuft im Bogen von innen an. Spieler neun schaut zu Spieler sechs, aber der Passweg ist zu.",
+      "say": "Der Torwart spielt diesmal zu Spieler neun. Spieler fünf läuft im Bogen von innen an und stellt den Passweg zu Spieler sechs zu.",
       "moves": [
        {
         "who": "b1",
@@ -492,15 +492,6 @@
          36.5
         ],
         "type": "lauf",
-        "after": true
-       },
-       {
-        "who": "n9",
-        "to": [
-         47.8,
-         25
-        ],
-        "type": "blick",
         "after": true
        }
       ]

@@ -267,10 +267,10 @@
    },
    {
     "label": "Kurzer Pass, das Zeichen",
-    "say": "Spieler acht hat den Ball im Blick. Spieler sechs spielt einen kurzen Pass zu Spieler drei. Das ist das Zeichen. Spieler acht und Spieler vier gehen sofort drauf.",
+    "say": "Spieler sechs schaut zu Spieler drei und spielt ihm einen kurzen Pass. Das ist das Zeichen. Spieler acht und Spieler vier gehen sofort drauf.",
     "moves": [
      {
-      "who": "n8",
+      "who": "r6",
       "to": [
        51,
        28

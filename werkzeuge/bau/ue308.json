@@ -229,7 +229,7 @@
    },
    {
     "label": "Einer raus, die anderen sortieren sich",
-    "say": "Ein Verteidiger darf in die Außenzone. Spieler vier läuft raus und stört. In der Mitte schaut Spieler fünf über die Schulter. Wo läuft Spieler neun? Spieler sechs rückt näher ans Tor, zwischen Ball und Stürmer.",
+    "say": "Ein Verteidiger darf in die Außenzone. Spieler vier läuft raus und stört. Spieler elf schaut vors Tor, wohin er flanken kann. In der Mitte sortieren sich die Verteidiger, Spieler sechs rückt näher ans Tor, zwischen Ball und Stürmer.",
     "moves": [
      {
       "who": "n4",
@@ -240,10 +240,10 @@
       "type": "lauf"
      },
      {
-      "who": "n5",
+      "who": "r11",
       "to": [
-       53,
-       23
+       47,
+       20
       ],
       "type": "blick",
       "delay": 0.3
@@ -485,8 +485,8 @@
        {
         "who": "r9",
         "to": [
-         46,
-         22.5
+         50.5,
+         21.5
         ],
         "type": "lauf",
         "delay": 0.3

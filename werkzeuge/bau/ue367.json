@@ -177,13 +177,13 @@
   "steps": [
    {
     "label": "Eröffnung, Spieler neun direkt",
-    "say": "Spieler zwei eröffnet zu Spieler neun. Der muss direkt spielen, also schaut er schon vorher, wo Spieler vier steht. Der Ball geht sofort weiter.",
+    "say": "Spieler zwei eröffnet zu Spieler neun. Spieler neun schaut zum Ball und dann sofort zu Spieler vier. Er muss direkt spielen, also geht der Ball gleich weiter.",
     "moves": [
      {
       "who": "n9",
       "to": [
-       32.5,
-       32
+       56,
+       12
       ],
       "type": "blick"
      },
@@ -197,13 +197,18 @@
       "after": true
      },
      {
-      "who": "r10",
+      "who": "n9",
       "to": [
-       40,
-       9
+       32.2,
+       40.6
       ],
-      "type": "lauf",
-      "delay": 0.3
+      "type": "blick",
+      "after": true,
+      "von": [
+       56,
+       12
+      ],
+      "dauer": 1.0
      },
      {
       "who": "b1",
@@ -213,6 +218,15 @@
       ],
       "type": "pass",
       "after": true
+     },
+     {
+      "who": "r10",
+      "to": [
+       40,
+       9
+      ],
+      "type": "lauf",
+      "delay": 0.3
      }
     ]
    },

@@ -201,7 +201,7 @@
    },
    {
     "label": "Zu dritt pressen",
-    "say": "Jetzt geht Spieler neun von der Seite drauf. Spieler vier stellt den Rückpass zu. Spieler acht schaut genau, wohin der Ball als Nächstes will.",
+    "say": "Jetzt geht Spieler neun von der Seite drauf. Spieler vier stellt den Rückpass zu. Spieler acht ahnt, wohin der Ball als Nächstes will, und schiebt in den Passweg.",
     "moves": [
      {
       "who": "n9",
@@ -223,20 +223,11 @@
      {
       "who": "n8",
       "to": [
-       23,
-       24
-      ],
-      "type": "blick",
-      "delay": 0.2
-     },
-     {
-      "who": "n8",
-      "to": [
        27.5,
        33
       ],
       "type": "lauf",
-      "after": true
+      "delay": 0.6
      }
     ]
    },

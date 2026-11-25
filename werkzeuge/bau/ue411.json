@@ -595,17 +595,8 @@
      },
      {
       "label": "Das weite Drittel bleibt frei",
-      "say": "Ganz drüben steht Spieler dreizehn jetzt frei. Das lassen wir zu. Spieler zwei bleibt eng bei der Kette und schaut über die Schulter, wo Spieler dreizehn steht.",
-      "moves": [
-       {
-        "who": "n2",
-        "to": [
-         41.0,
-         47.2
-        ],
-        "type": "blick"
-       }
-      ]
+      "say": "Ganz drüben steht Spieler dreizehn jetzt frei. Das lassen wir zu. Spieler zwei bleibt eng bei der Kette. Kommt doch der lange Ball, ist er schnell drüben.",
+      "moves": []
      },
      {
       "label": "Zu zweit drauf, Ball erobert",

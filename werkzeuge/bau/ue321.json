@@ -268,16 +268,7 @@
    {
     "label": "Tief stehen, Augen nach vorn",
     "say": "Je zwei Spieler stehen sich gegenüber, dazwischen die Stange. Team Neon außen, Team Rot innen. Alle stehen tief, die Knie gebeugt, und schauen nach vorn zur Stange.",
-    "moves": [
-     {
-      "who": "n8",
-      "to": [
-       58,
-       30
-      ],
-      "type": "blick"
-     }
-    ]
+    "moves": []
    },
    {
     "label": "Ruf links: eine Station weiter",
@@ -868,24 +859,7 @@
      {
       "label": "Tief, mittig, Blick nach vorn",
       "say": "Spieler acht steht tief und genau mittig vor seiner Stange. Er schaut nach vorn, nicht zum Trainer. Gegenüber steht Spieler elf noch zu aufrecht.",
-      "moves": [
-       {
-        "who": "n8",
-        "to": [
-         58,
-         30
-        ],
-        "type": "blick"
-       },
-       {
-        "who": "r11",
-        "to": [
-         80,
-         30
-        ],
-        "type": "blick"
-       }
-      ]
+      "moves": []
      },
      {
       "label": "Ruf gelb: Punkt",
@@ -1119,24 +1093,7 @@
      {
       "label": "Rücken zur Stange",
       "say": "Alle drehen der Stange den Rücken zu. Spieler acht schaut nach außen, Spieler elf schaut in die Mitte. Sehen können sie die Stange jetzt nicht mehr.",
-      "moves": [
-       {
-        "who": "n8",
-        "to": [
-         90,
-         30
-        ],
-        "type": "blick"
-       },
-       {
-        "who": "r11",
-        "to": [
-         50,
-         30
-        ],
-        "type": "blick"
-       }
-      ]
+      "moves": []
      },
      {
       "label": "Ruf Leibchen: umdrehen",

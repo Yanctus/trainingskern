@@ -49,8 +49,6 @@ for (const e of alle) {
         const row0 = { schautAuf: dz < 4 ? ziel : "Raum", passAnIhnImSchritt: pass_an_ihn, handeltSpaeter: spaeter };
         const row = { code: e.code, titel: e.title, ton: !e.hidden, fassung: ch.label, schritt: si + 1, wer: m.who, team: team[m.who], label: s.label || "", ...row0 };
         if (von && dist(von, wo) > 2.5) out.push({ ...row, fehler: "Kegel nicht am Spieler", abstand: +dist(von, wo).toFixed(1) });
-        if (pass_an_ihn && dz >= 4 && eigene.length) out.push({ ...row, fehler: "Kegel beim Passempfänger (schaut nicht zum Passgeber)" });
-        else if (pass_an_ihn && dz < 4) { /* Annehmen: schaut zum Passgeber, erlaubt */ }
         if (pass_an_ihn && dz < 4) return; // bereit zur Annahme: schaut zum Ball/Passgeber, immer erlaubt
         // Bereit zur Annahme nach der Richtung: Ein Pass an ihn kommt im selben oder nächsten Schritt, und der Kegel zeigt (±20°)
         // zum Passgeber bzw. Ball. Kurze Kegel enden vor dem Passgeber, darum zählt die Richtung, nicht der Endpunkt.
@@ -59,6 +57,10 @@ for (const e of alle) {
         const zuMir = Object.entries(play.tracks).filter(([bid]) => ids.balls.includes(bid)).flatMap(([, tr]) => tr.segs)
           .filter((sg) => sg.ez?.name === "out" && sg.t0 >= play.steps[si].t0 - 0.05 && sg.t0 <= tEnde + 0.05 && near(sg.to, sg.t1)[1] === m.who);
         if (zuMir.some((sg) => winkel([m.to[0] - wo[0], m.to[1] - wo[1]], [sg.from[0] - wo[0], sg.from[1] - wo[1]]) < 20)) return;
+        // Annehmen und Aufdrehen: Der Kegel beginnt beim Passgeber (von) und schwenkt danach zum Ziel (Muster UE-300)
+        if (m.von?.length === 2 && zuMir.some((sg) => winkel([m.von[0] - wo[0], m.von[1] - wo[1]], [sg.from[0] - wo[0], sg.from[1] - wo[1]]) < 20)) return;
+        if (pass_an_ihn && dz >= 4 && eigene.length) out.push({ ...row, fehler: "Kegel beim Passempfänger (schaut nicht zum Passgeber)" });
+        else if (pass_an_ihn && dz < 4) { /* Annehmen: schaut zum Passgeber, erlaubt */ }
         if (!eigene.length) out.push({ ...row, fehler: hatBall ? "ohne Ballaktion danach" : (zielGegner ? "Verteidiger (schaut zum Gegner)" : "ohne Ballaktion danach") });
       });
     });

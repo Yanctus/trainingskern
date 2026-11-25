@@ -1,4 +1,9 @@
-# Sichtkegel-Prüfung (Stand 25.11.2026, blickpruefung.mjs)
+# Sichtkegel-Prüfung (blickpruefung.mjs)
+
+**Stand nach der Korrektur (25.11.2026):** Alle noch nicht eingesprochenen Einheiten haben 0 Funde. Übrig sind 73 Kegel in 48
+eingesprochenen Einheiten, bei denen die Stimme den Blick nennt; sie werden mit dem Neueinsprechen nach dem 22.12. umgebaut
+(BLICK_FIX_LISTE.md, „Später“). Die Liste unten ist der Stand VOR der Korrektur.
+
 
 Kategorien: „Kegel beim Passempfänger“ = der Spieler, der im selben Schritt angespielt wird, schaut in den Raum statt zum Passgeber.
 „ohne Ballaktion danach“ = wer schaut, spielt im selben und nächsten Schritt nicht selbst den Ball. „Verteidiger“ = schaut zu einem Gegner.
