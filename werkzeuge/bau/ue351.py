@@ -68,7 +68,7 @@ u = {"title": "Aufbau gegen zwei Spitzen", "code": "UE-351", "kind": "Spielform"
      bl("f", richt(POS["f"], LAUF3), von=richt(POS["f"], POS["n2"]), dauer=1.3), drehen("f", list(LAUF3), delay=0.4),
      ps("b1", fu(LAUF3), after=True)),
    S("Doppelpass in der Außenzone", "Zwei gegen zwei in der Außenzone. Spieler drei spielt auf Spieler elf und startet an Spieler vierzehn vorbei. Spieler elf legt in den Lauf.",
-     ps("b1", fu(POS["n11"])), mv("r14", [61, 13], delay=0.3), mv("n3", [55, 5], delay=0.2), mv("n3", [68, 6], after=True),
+     ps("b1", fu(POS["n11"])), mv("r14", [62, 14.5], delay=0.3), mv("n3", [55, 5], delay=0.2), mv("n3", [68, 6], after=True),
      ps("b1", [68.6, 6.6], after=True)),
    S("Abschluss: Punkt", "Spieler drei schiebt ins Minitor, und das gibt einen Punkt für Team Neon. Danach beginnt der Torwart mit dem nächsten Ball.",
      mv("r12", [76, 12], delay=0.1), ps("b1", [80.4, 9.4]))],
