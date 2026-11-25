@@ -139,3 +139,5 @@ Erzeugt aus blickpruefung.mjs. Je Einheit die Kegel, die nach der neuen Regel fa
 - **UE-294**: Grundform Schritt 1 n6; Grundform Schritt 5 n6
 - **UE-297**: Steigerung Schritt 2 n4
 - Nachgemeldet (Stimme nennt den Blick): UE-188 Grundform Schritt 1; UE-252 Coaching-Punkt Schritt 2; UE-263 Coaching-Punkt 2 Schritt 2; UE-277 Coaching-Punkt 2 Schritt 1
+- Nachgemeldet (Stimme nennt den Blick): UE-173 Coaching-Punkt Schritt 1; UE-221 Coaching-Punkt Schritt 1; UE-293 alle drei Kegel; UE-149 Coaching-Punkt Schritt 1; UE-214 Grundform Schritt 1
+- Erlaubt (Fehlalarm der Prüfung): UE-255, UE-256, UE-267 (Torwart schaut vor dem Schuss zum Schützen), UE-273 (Spieler sieben schaut zur Täuschung und spielt selbst)
