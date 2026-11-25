@@ -58,6 +58,10 @@
 | UE-288 | Ansage hören, dribbeln, treffen | 18 x 32 m | 5 |
 | UE-289 | Aufdrehen, Stange, drei Minitore | 14 x 23 m | 6 |
 | UE-296 | Annehmen und die Linie runter | 14 x 18 m | 5 |
+- **Sichtkegel in eingesprochenen Übungen, deren Stimme den Blick nennt** (78 Kegel in 55 Einheiten, Liste in BLICK_FIX_LISTE.md
+  unter „Später“): nach der neuen Regel (Kegel nur beim Spieler, der danach passt) umbauen und die betroffenen Sätze im selben Zug neu
+  einsprechen.
+
 ## 2. Plan U15-U17
 - Fertig (25.11.2026): Wochen 2 bis 8 = UE-321 bis UE-341, „The Compact Midfield 4 35-P9“ = UE-333, PS-108 = UE-006 (Dublette).
 - Fertig (25.11.2026): Woche 9 und Wochen 17 bis 42 = UE-342 bis UE-418. Der Plan U15-U17 ist damit komplett. Dubletten (nur
