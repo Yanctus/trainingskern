@@ -589,10 +589,12 @@ ${e?.kind || s.stempel ? `<div class="stempel am-stempel" style="right:58px;top:
     return { el: node, ton: tonart, dauer: s.dauer || 1.5 + punkte.length * (takt + 0.25) + 0.6, start(T) {
       t.querySelectorAll("b").forEach((b, i) => steig(b, T + 0.3 + i * 0.1, 0.5));
       an(strich, [{ scale: "0 1" }, { scale: "1 1" }], T + 0.6, 0.4, E.rein);
+      // punktAb: Sekunden ab Szenenbeginn, zu denen die Karten kommen (passend zur Aufzählung der Stimme)
+      const ab = (i) => (s.punktAb && s.punktAb[i] != null ? s.punktAb[i] : 0.85 + i * takt);
       node.querySelectorAll(".pk-karte").forEach((c, i) => {
-        an(c, [{ translate: "140px 0", opacity: 0, rotate: "3deg" }, { translate: "0 0", opacity: 1, rotate: [-1.2, 0.9, -0.7, 1][i % 4] + "deg" }], T + 0.85 + i * takt, 0.5);
-        an(c.querySelector(".nr"), [{ scale: "0" }, { scale: "1" }], T + 1.05 + i * takt, 0.4, E.stark);
-        if (s.streichen) an(c.querySelector(".pk-linie"), [{ scale: "0 1" }, { scale: "1 1" }], T + 1.2 + i * takt, 0.28, E.rein);
+        an(c, [{ translate: "140px 0", opacity: 0, rotate: "3deg" }, { translate: "0 0", opacity: 1, rotate: [-1.2, 0.9, -0.7, 1][i % 4] + "deg" }], T + ab(i), 0.5);
+        an(c.querySelector(".nr"), [{ scale: "0" }, { scale: "1" }], T + ab(i) + 0.2, 0.4, E.stark);
+        if (s.streichen) an(c.querySelector(".pk-linie"), [{ scale: "0 1" }, { scale: "1 1" }], T + ab(i) + 0.35, 0.28, E.rein);
       });
     } };
   },

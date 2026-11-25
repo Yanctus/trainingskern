@@ -40,9 +40,9 @@
       "code": "UE-140",
       "schritte": 5,
       "tempo": 2.2,
-      "dach": "So geht’s einfacher",
+      "dach": "Mit Audio erklärt",
       "uebergang": "knall",
-      "sprecher": "Bei Trainingskern läuft jede Übung als Animation, von mir auf Deutsch erklärt.",
+      "sprecher": "Jede Übung läuft als Animation, und ich erkläre sie dir mit Ton, auf Deutsch.",
       "sprecherAb": 0.8
     },
     {
@@ -59,20 +59,35 @@
       ],
       "uebergang": "pinsel",
       "sprecher": "Für jede Jugend, von den Bambini bis zu den Senioren, für Torhüter und Einzeltraining, dazu fertige Trainingspläne.",
-      "sprecherAb": 0.5
+      "sprecherAb": 0.5,
+      "punktAb": [
+        1.1,
+        2.9,
+        4.8
+      ],
+      "dauer": 8.0
     },
     {
-      "typ": "hook",
+      "typ": "punkte",
       "ton": "dunkel",
-      "zeilen": [
-        "Über 100 neue",
-        "Übungen im Monat.",
-        "*Nach DFB-Philosophie.*"
+      "titel": [
+        "Immer",
+        "neu"
       ],
-      "dauer": 3.4,
-      "takt": 0.3,
+      "punkte": [
+        "Über 100 neue Übungen im Monat",
+        "Nach DFB-Philosophie aufgebaut",
+        "Spielen, üben, spielen"
+      ],
+      "punktAb": [
+        0.7,
+        3.0,
+        6.4
+      ],
+      "dauer": 8.6,
       "uebergang": "knall",
-      "sprecher": "Jeden Monat über hundert neue Übungen, aufgebaut nach der Trainingsphilosophie des DFB."
+      "sprecher": "Jeden Monat über hundert neue Übungen, aufgebaut nach der Trainingsphilosophie des DFB: spielen, üben, spielen.",
+      "sprecherAb": 0.5
     },
     {
       "typ": "hook",
