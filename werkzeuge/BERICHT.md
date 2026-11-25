@@ -348,6 +348,7 @@ Alle neuen Einheiten: access frei, sichtbar, Regeln 0 Hinweise, Vergleich 0 Abwe
 | UE-168 | Doppelpass und Eins gegen Eins | Technical Passing 1 v 1 Defending 68-P3 (U15-U17, Woche 40) | (bestehend) | Dublette (Rohdaten byte-gleich mit U12-Woche 12): nur „U15-U17“ ergänzt. Code UE-413 bleibt frei. |
 | UE-206 | Viererkette schiebt zum Ball | Back 4s Positioning Based on Ball Position 10-P7 (U15-U17, Woche 42) | (bestehend) | Dublette (Rohdaten byte-gleich mit U12-Woche 28): nur „U15-U17“ ergänzt. Code UE-419 bleibt frei. |
 | UE-251 bis UE-297 | Torwart- und Einzeltraining | Additional Practices GK-… und 1 to 1-… (U15-U17) | (bestehend) | Alle 47 PDFs byte-gleich mit dem U12-Plan: nur „U15-U17“ ergänzt. |
+| UE-314, 340, 352, 366, 370, 380, 381, 402 | Halbes Feld quer | (Umbau, 25.11.2026) | (bestehend) | Auf „Halbes Feld QUER“ umgebaut (Tor an der Seite, echte Linien der Platzhälfte, massstab gross); Richtungswörter in den Texten angepasst. Tor links bei UE-366, UE-370, UE-380 (dort greift Neon vom eigenen Tor weg an bzw. Rot aufs große Tor), sonst rechts. UE-381: zweites Tor auf der Mittellinie. |
 
 ## Nachträge
 

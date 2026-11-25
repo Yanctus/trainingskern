@@ -17,11 +17,11 @@
  "duration_minutes": 15,
  "players_min": 13,
  "players_max": 13,
- "field_size": "55 x 35 m",
- "description": "Ein Wellenspiel für die Viererkette. Sie baut mit dem Torwart ohne Gegner auf und spielt in ein Minitor an der Mittellinie. Sofort kommen vier Angreifer und kontern vier gegen vier aufs große Tor, die Kette muss schnell umschalten und eng zusammenrücken. Zwei Gruppen Angreifer wechseln sich ab, Welle um Welle.",
+ "field_size": "55 x 50 m",
+ "description": "Ein Wellenspiel für die Viererkette auf einer Spielfeldhälfte. Sie baut mit dem Torwart ohne Gegner auf und spielt in eines der zwei Minitore, 35 Meter vor dem eigenen Tor. Sofort kommen vier Angreifer und kontern vier gegen vier aufs große Tor, die Kette muss schnell umschalten und eng zusammenrücken. Zwei Gruppen Angreifer wechseln sich ab, Welle um Welle.",
  "organisation": [
-  "Aufbauen: Eine Spielfeldhälfte, etwa 55 mal 35 Meter, mit großem Tor. An der Mittellinie stehen außen zwei Minitore und dazwischen vier Dummys.",
-  "Verteilen: Team Neon mit Torwart und Viererkette steht im Feld. Zwei Gruppen von Team Rot mit je vier Angreifern warten an den Dummys. Der Trainer steht mit vielen Bällen an der Mittellinie.",
+  "Aufbauen: Eine Spielfeldhälfte, 55 Meter breit, mit großem Tor. 35 Meter vor dem Tor ist eine Linie abgesteckt, außen darauf zwei Minitore, dazwischen vier Dummys. Dahinter bis zur Mittellinie ist Platz zum Warten.",
+  "Verteilen: Team Neon mit Torwart und Viererkette steht im Feld. Zwei Gruppen von Team Rot mit je vier Angreifern warten hinter den Dummys. Der Trainer steht mit vielen Bällen an der Seitenlinie, auf Höhe der Dummys.",
   "Ablauf: Der Trainer spielt zum Torwart. Die Viererkette baut ohne Gegner breit auf und spielt in ein Minitor. Dann kommen die ersten vier Angreifer, bekommen einen neuen Ball vom Trainer und spielen vier gegen vier aufs große Tor. Erobert Team Neon den Ball, kontert es auf die Minitore.",
   "Wertung und Wechsel: Jeder Treffer gibt einen Punkt. Ist der Angriff vorbei, bekommt der Torwart den nächsten Ball, und die zweite Gruppe Angreifer ist dran."
  ],
@@ -49,77 +49,206 @@
  "wartet_auf_ton": true,
  "say_intro": "Erst aufbauen, dann verteidigen. Die Viererkette spielt sich ohne Gegner heraus, und gleich danach kommt der Konter von vier Angreifern.",
  "board": {
+  "massstab": "gross",
   "lines": [
    {
     "type": "rect",
-    "x": 9,
-    "y": 4,
-    "w": 80,
-    "h": 51
+    "x": 10.0,
+    "y": 3.0,
+    "w": 80.0,
+    "h": 49.0
    },
    {
     "type": "rect",
-    "x": 24,
-    "y": 4,
-    "w": 50,
-    "h": 15
+    "x": 10.0,
+    "y": 9.5,
+    "w": 22.4,
+    "h": 36.0
    },
    {
     "type": "rect",
-    "x": 36.5,
-    "y": 4,
-    "w": 25,
-    "h": 6
+    "x": 10.0,
+    "y": 19.3,
+    "w": 7.0,
+    "h": 16.4
    },
    {
     "type": "line",
-    "x1": 9,
-    "y1": 47,
-    "x2": 89,
-    "y2": 47,
+    "x1": 32.4,
+    "y1": 21.0,
+    "x2": 35.3,
+    "y2": 22.8,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 35.3,
+    "y1": 22.8,
+    "x2": 37.2,
+    "y2": 25.0,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 37.2,
+    "y1": 25.0,
+    "x2": 37.9,
+    "y2": 27.5,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 37.9,
+    "y1": 27.5,
+    "x2": 37.2,
+    "y2": 30.0,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 37.2,
+    "y1": 30.0,
+    "x2": 35.3,
+    "y2": 32.2,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 35.3,
+    "y1": 32.2,
+    "x2": 32.4,
+    "y2": 34.0,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 90.0,
+    "y1": 19.3,
+    "x2": 87.5,
+    "y2": 19.7,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 87.5,
+    "y1": 19.7,
+    "x2": 85.2,
+    "y2": 20.9,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 85.2,
+    "y1": 20.9,
+    "x2": 83.4,
+    "y2": 22.7,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 83.4,
+    "y1": 22.7,
+    "x2": 82.2,
+    "y2": 25.0,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 82.2,
+    "y1": 25.0,
+    "x2": 81.8,
+    "y2": 27.5,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 81.8,
+    "y1": 27.5,
+    "x2": 82.2,
+    "y2": 30.0,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 82.2,
+    "y1": 30.0,
+    "x2": 83.4,
+    "y2": 32.3,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 83.4,
+    "y1": 32.3,
+    "x2": 85.2,
+    "y2": 34.1,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 85.2,
+    "y1": 34.1,
+    "x2": 87.5,
+    "y2": 35.3,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 87.5,
+    "y1": 35.3,
+    "x2": 90.0,
+    "y2": 35.7,
+    "dashed": false
+   },
+   {
+    "type": "line",
+    "x1": 65.7,
+    "y1": 3.0,
+    "x2": 65.7,
+    "y2": 52.0,
     "dashed": true
    }
   ],
   "goals": [
    {
-    "x": 49,
-    "y": 4,
-    "side": "top",
+    "x": 10,
+    "y": 27.5,
+    "side": "left",
     "size": "gross"
    },
    {
-    "x": 15.6,
-    "y": 47,
-    "side": "bottom"
+    "x": 65.7,
+    "y": 7.0,
+    "side": "right"
    },
    {
-    "x": 82.4,
-    "y": 47,
-    "side": "bottom"
+    "x": 65.7,
+    "y": 48.0,
+    "side": "right"
    }
   ],
   "cones": [
    {
-    "x": 28.4,
-    "y": 49.5,
+    "x": 65.7,
+    "y": 15.5,
     "color": "orange",
     "shape": "stange"
    },
    {
-    "x": 42,
-    "y": 49.5,
+    "x": 65.7,
+    "y": 24.8,
     "color": "orange",
     "shape": "stange"
    },
    {
-    "x": 56.3,
-    "y": 49.5,
+    "x": 65.7,
+    "y": 29.7,
     "color": "orange",
     "shape": "stange"
    },
    {
-    "x": 69.4,
-    "y": 49.5,
+    "x": 65.7,
+    "y": 39.1,
     "color": "orange",
     "shape": "stange"
    }
@@ -128,118 +257,137 @@
    {
     "id": "n1",
     "team": "a",
-    "x": 49,
-    "y": 9.5,
+    "x": 13.8,
+    "y": 26.2,
     "label": "TW"
-   },
-   {
-    "id": "n2",
-    "team": "a",
-    "x": 15,
-    "y": 27,
-    "label": "2"
-   },
-   {
-    "id": "n4",
-    "team": "a",
-    "x": 36,
-    "y": 21,
-    "label": "4"
-   },
-   {
-    "id": "n5",
-    "team": "a",
-    "x": 61,
-    "y": 21,
-    "label": "5"
    },
    {
     "id": "n3",
     "team": "a",
-    "x": 83,
-    "y": 27,
+    "x": 34.7,
+    "y": 10.1,
     "label": "3"
    },
    {
-    "id": "r11",
-    "team": "b",
-    "x": 24,
-    "y": 47,
-    "label": "11"
+    "id": "n5",
+    "team": "a",
+    "x": 27.3,
+    "y": 22.6,
+    "label": "5"
    },
    {
-    "id": "r10",
-    "team": "b",
-    "x": 36,
-    "y": 47,
-    "label": "10"
+    "id": "n4",
+    "team": "a",
+    "x": 25.9,
+    "y": 38.6,
+    "label": "4"
    },
    {
-    "id": "r9",
-    "team": "b",
-    "x": 62,
-    "y": 47,
-    "label": "9"
+    "id": "n2",
+    "team": "a",
+    "x": 34.7,
+    "y": 47.5,
+    "label": "2"
    },
    {
     "id": "r7",
     "team": "b",
-    "x": 74,
-    "y": 47,
+    "x": 71.1,
+    "y": 8.3,
     "label": "7"
+   },
+   {
+    "id": "r9",
+    "team": "b",
+    "x": 71.1,
+    "y": 19.9,
+    "label": "9"
+   },
+   {
+    "id": "r10",
+    "team": "b",
+    "x": 71.1,
+    "y": 32.4,
+    "label": "10"
+   },
+   {
+    "id": "r11",
+    "team": "b",
+    "x": 71.1,
+    "y": 44.9,
+    "label": "11"
+   },
+   {
+    "id": "r12",
+    "team": "b",
+    "x": 84.2,
+    "y": 8.3,
+    "label": "12"
+   },
+   {
+    "id": "r18",
+    "team": "b",
+    "x": 84.2,
+    "y": 19.9,
+    "label": "18"
+   },
+   {
+    "id": "r16",
+    "team": "b",
+    "x": 84.2,
+    "y": 32.4,
+    "label": "16"
+   },
+   {
+    "id": "r13",
+    "team": "b",
+    "x": 84.2,
+    "y": 44.9,
+    "label": "13"
    },
    {
     "id": "T",
     "team": "c",
-    "x": 48.5,
-    "y": 51,
+    "x": 60,
+    "y": 55.3,
     "label": "T"
    }
   ],
   "balls": [
    {
     "id": "b1",
-    "x": 49.1,
-    "y": 51.6
+    "x": 60.6,
+    "y": 55.9
    },
    {
     "id": "s1",
-    "x": 52.5,
-    "y": 52.5
+    "x": 63.5,
+    "y": 55.8
    },
    {
     "id": "s2",
-    "x": 45,
-    "y": 52.5
+    "x": 66,
+    "y": 55.8
    }
   ],
   "steps": [
    {
     "label": "Trainer spielt zum Torwart",
-    "say": "Der Trainer spielt den Ball zum Torwart. Sofort macht die Viererkette das Feld breit. Die Außenverteidiger gehen ganz raus an die Linie.",
+    "say": "Der Trainer spielt den Ball zum Torwart. Sofort macht die Viererkette das Feld breit. Die Außenverteidiger gehen ganz raus an die Seitenlinie.",
     "moves": [
      {
       "who": "b1",
       "to": [
-       49.6,
-       10.1
+       14.4,
+       26.8
       ],
       "type": "pass"
      },
      {
-      "who": "n2",
+      "who": "n3",
       "to": [
-       12,
-       30
-      ],
-      "type": "lauf",
-      "delay": 0.4
-     },
-     {
-      "who": "n4",
-      "to": [
-       34,
-       16
+       39.2,
+       4.8
       ],
       "type": "lauf",
       "delay": 0.4
@@ -247,17 +395,26 @@
      {
       "who": "n5",
       "to": [
-       63,
-       16
+       25.9,
+       19.9
       ],
       "type": "lauf",
       "delay": 0.4
      },
      {
-      "who": "n3",
+      "who": "n4",
       "to": [
-       86,
-       30
+       25.9,
+       36.0
+      ],
+      "type": "lauf",
+      "delay": 0.4
+     },
+     {
+      "who": "n2",
+      "to": [
+       39.2,
+       50.2
       ],
       "type": "lauf",
       "delay": 0.4
@@ -271,16 +428,16 @@
      {
       "who": "b1",
       "to": [
-       34.6,
-       16.6
+       26.5,
+       36.6
       ],
       "type": "pass"
      },
      {
       "who": "b1",
       "to": [
-       63.6,
-       16.6
+       26.5,
+       20.5
       ],
       "type": "pass",
       "after": true
@@ -288,8 +445,8 @@
      {
       "who": "b1",
       "to": [
-       86.6,
-       30.6
+       39.8,
+       5.4
       ],
       "type": "pass",
       "after": true
@@ -303,8 +460,8 @@
      {
       "who": "n3",
       "to": [
-       84,
-       39
+       55.4,
+       6.6
       ],
       "type": "dribbling",
       "ball": "b1"
@@ -312,8 +469,8 @@
      {
       "who": "b1",
       "to": [
-       82.4,
-       46.7
+       65.4,
+       7.0
       ],
       "type": "pass",
       "after": true
@@ -325,69 +482,61 @@
     "say": "Die Angreifer laufen los, und der Trainer spielt Spieler neun einen neuen Ball zu. Spieler vier schaut sofort, wo die Angreifer sind. Die ganze Kette sprintet zurück und rückt eng zusammen.",
     "moves": [
      {
-      "who": "r10",
+      "who": "r9",
       "to": [
-       36,
-       37
+       45.5,
+       25.3
       ],
       "type": "lauf"
      },
      {
-      "who": "r9",
+      "who": "r10",
       "to": [
-       51,
-       34
+       53.7,
+       36.0
       ],
       "type": "lauf"
      },
      {
       "who": "r7",
       "to": [
-       66,
-       38
+       55.4,
+       12.8
       ],
       "type": "lauf"
      },
      {
       "who": "r11",
       "to": [
-       26,
-       40
+       53.7,
+       47.5
       ],
       "type": "lauf"
      },
      {
       "who": "s1",
       "to": [
-       51.6,
-       34.6
+       46.1,
+       25.9
       ],
       "type": "pass",
+      "bend": 2,
       "delay": 0.8
      },
      {
       "who": "n4",
       "to": [
-       51,
-       34
+       43.5,
+       26.4
       ],
       "type": "blick",
       "delay": 0.3
      },
      {
-      "who": "n2",
+      "who": "n3",
       "to": [
-       22,
-       25
-      ],
-      "type": "lauf",
-      "delay": 0.7
-     },
-     {
-      "who": "n4",
-      "to": [
-       38,
-       22
+       33.2,
+       14.6
       ],
       "type": "lauf",
       "delay": 0.7
@@ -395,17 +544,26 @@
      {
       "who": "n5",
       "to": [
-       58,
-       22
+       25.9,
+       22.6
       ],
       "type": "lauf",
       "delay": 0.7
      },
      {
-      "who": "n3",
+      "who": "n4",
       "to": [
-       72,
-       25
+       25.9,
+       35.1
+      ],
+      "type": "lauf",
+      "delay": 0.7
+     },
+     {
+      "who": "n2",
+      "to": [
+       33.2,
+       44.0
       ],
       "type": "lauf",
       "delay": 0.7
@@ -419,8 +577,8 @@
      {
       "who": "s1",
       "to": [
-       54,
-       4.3
+       10.3,
+       30.4
       ],
       "type": "pass"
      }
@@ -429,18 +587,11 @@
   ],
   "dims": [
    {
-    "x1": 9,
+    "x1": 10,
     "y1": 58.6,
-    "x2": 89,
+    "x2": 90.0,
     "y2": 58.6,
-    "text": "55 m"
-   },
-   {
-    "x1": 95,
-    "y1": 4,
-    "x2": 95,
-    "y2": 47,
-    "text": "35 m"
+    "text": "50 m"
    }
   ]
  },
@@ -455,89 +606,117 @@
      {
       "id": "n1",
       "team": "a",
-      "x": 49,
-      "y": 8,
+      "x": 15.1,
+      "y": 27.5,
       "label": "TW"
-     },
-     {
-      "id": "n2",
-      "team": "a",
-      "x": 25,
-      "y": 24,
-      "label": "2"
-     },
-     {
-      "id": "n4",
-      "team": "a",
-      "x": 38,
-      "y": 21,
-      "label": "4"
-     },
-     {
-      "id": "n5",
-      "team": "a",
-      "x": 60,
-      "y": 22,
-      "label": "5"
      },
      {
       "id": "n3",
       "team": "a",
-      "x": 76,
-      "y": 23,
+      "x": 34.7,
+      "y": 9.2,
       "label": "3"
      },
      {
-      "id": "r11",
-      "team": "b",
-      "x": 14,
-      "y": 36,
-      "label": "11"
+      "id": "n5",
+      "team": "a",
+      "x": 28.8,
+      "y": 20.8,
+      "label": "5"
      },
      {
-      "id": "r10",
-      "team": "b",
-      "x": 47,
-      "y": 35,
-      "label": "10"
+      "id": "n4",
+      "team": "a",
+      "x": 27.3,
+      "y": 33.3,
+      "label": "4"
      },
      {
-      "id": "r9",
-      "team": "b",
-      "x": 60,
-      "y": 38,
-      "label": "9"
+      "id": "n2",
+      "team": "a",
+      "x": 34.7,
+      "y": 44.0,
+      "label": "2"
      },
      {
       "id": "r7",
       "team": "b",
-      "x": 85,
-      "y": 36,
+      "x": 48.7,
+      "y": 7.5,
       "label": "7"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 52.0,
+      "y": 20.8,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 47.1,
+      "y": 33.3,
+      "label": "10"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 48.7,
+      "y": 48.4,
+      "label": "11"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 84.2,
+      "y": 8.3,
+      "label": "12"
+     },
+     {
+      "id": "r18",
+      "team": "b",
+      "x": 84.2,
+      "y": 19.9,
+      "label": "18"
+     },
+     {
+      "id": "r16",
+      "team": "b",
+      "x": 84.2,
+      "y": 32.4,
+      "label": "16"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 84.2,
+      "y": 44.9,
+      "label": "13"
      },
      {
       "id": "T",
       "team": "c",
-      "x": 48.5,
-      "y": 51,
+      "x": 60,
+      "y": 55.3,
       "label": "T"
      }
     ],
     "balls": [
      {
       "id": "b1",
-      "x": 60.6,
-      "y": 38.6
+      "x": 52.6,
+      "y": 21.4
      },
      {
       "id": "s1",
-      "x": 52.5,
-      "y": 52.5
+      "x": 63.5,
+      "y": 55.8
      },
      {
       "id": "s2",
-      "x": 45,
-      "y": 52.5
+      "x": 66,
+      "y": 55.8
      }
     ],
     "steps": [
@@ -548,8 +727,8 @@
        {
         "who": "r9",
         "to": [
-         59,
-         33
+         45.5,
+         21.7
         ],
         "type": "dribbling",
         "ball": "b1"
@@ -557,8 +736,8 @@
        {
         "who": "n5",
         "to": [
-         60,
-         28.5
+         38.4,
+         21.7
         ],
         "type": "lauf",
         "delay": 0.2
@@ -566,8 +745,8 @@
        {
         "who": "n4",
         "to": [
-         47,
-         21
+         25.9,
+         28.4
         ],
         "type": "lauf",
         "delay": 0.2
@@ -575,8 +754,8 @@
        {
         "who": "n3",
         "to": [
-         69,
-         21
+         30.2,
+         14.1
         ],
         "type": "lauf",
         "delay": 0.2
@@ -584,8 +763,8 @@
        {
         "who": "n2",
         "to": [
-         32,
-         22
+         32.4,
+         40.0
         ],
         "type": "lauf",
         "delay": 0.2
@@ -593,8 +772,8 @@
        {
         "who": "n4",
         "to": [
-         47,
-         35
+         45.4,
+         32.9
         ],
         "type": "blick",
         "after": true
@@ -608,8 +787,8 @@
        {
         "who": "b1",
         "to": [
-         85.6,
-         36.6
+         49.3,
+         8.1
         ],
         "type": "pass"
        }
@@ -628,89 +807,117 @@
      {
       "id": "n1",
       "team": "a",
-      "x": 49,
-      "y": 8,
+      "x": 13.8,
+      "y": 27.5,
       "label": "TW"
-     },
-     {
-      "id": "n2",
-      "team": "a",
-      "x": 26,
-      "y": 20,
-      "label": "2"
-     },
-     {
-      "id": "n4",
-      "team": "a",
-      "x": 38,
-      "y": 10,
-      "label": "4"
-     },
-     {
-      "id": "n5",
-      "team": "a",
-      "x": 60,
-      "y": 10,
-      "label": "5"
      },
      {
       "id": "n3",
       "team": "a",
-      "x": 72,
-      "y": 20,
+      "x": 28.8,
+      "y": 11.9,
       "label": "3"
      },
      {
-      "id": "r11",
-      "team": "b",
-      "x": 30,
-      "y": 36,
-      "label": "11"
+      "id": "n5",
+      "team": "a",
+      "x": 20.4,
+      "y": 20.8,
+      "label": "5"
      },
      {
-      "id": "r10",
-      "team": "b",
-      "x": 55,
-      "y": 26,
-      "label": "10"
+      "id": "n4",
+      "team": "a",
+      "x": 20.4,
+      "y": 37.7,
+      "label": "4"
      },
      {
-      "id": "r9",
-      "team": "b",
-      "x": 44,
-      "y": 26,
-      "label": "9"
+      "id": "n2",
+      "team": "a",
+      "x": 28.8,
+      "y": 44.0,
+      "label": "2"
      },
      {
       "id": "r7",
       "team": "b",
-      "x": 82,
-      "y": 30,
+      "x": 45.5,
+      "y": 7.5,
       "label": "7"
+     },
+     {
+      "id": "r9",
+      "team": "b",
+      "x": 34.7,
+      "y": 29.7,
+      "label": "9"
+     },
+     {
+      "id": "r10",
+      "team": "b",
+      "x": 42.3,
+      "y": 19.9,
+      "label": "10"
+     },
+     {
+      "id": "r11",
+      "team": "b",
+      "x": 50.4,
+      "y": 40.4,
+      "label": "11"
+     },
+     {
+      "id": "r12",
+      "team": "b",
+      "x": 84.2,
+      "y": 8.3,
+      "label": "12"
+     },
+     {
+      "id": "r18",
+      "team": "b",
+      "x": 84.2,
+      "y": 19.9,
+      "label": "18"
+     },
+     {
+      "id": "r16",
+      "team": "b",
+      "x": 84.2,
+      "y": 32.4,
+      "label": "16"
+     },
+     {
+      "id": "r13",
+      "team": "b",
+      "x": 84.2,
+      "y": 44.9,
+      "label": "13"
      },
      {
       "id": "T",
       "team": "c",
-      "x": 48.5,
-      "y": 51,
+      "x": 60,
+      "y": 55.3,
       "label": "T"
      }
     ],
     "balls": [
      {
       "id": "b1",
-      "x": 55.6,
-      "y": 26.6
+      "x": 42.9,
+      "y": 20.5
      },
      {
       "id": "s1",
-      "x": 52.5,
-      "y": 52.5
+      "x": 63.5,
+      "y": 55.8
      },
      {
       "id": "s2",
-      "x": 45,
-      "y": 52.5
+      "x": 66,
+      "y": 55.8
      }
     ],
     "steps": [
@@ -721,16 +928,16 @@
        {
         "who": "b1",
         "to": [
-         49.6,
-         8.6
+         14.4,
+         28.1
         ],
         "type": "pass"
        },
        {
         "who": "n2",
         "to": [
-         20,
-         33
+         40.8,
+         48.4
         ],
         "type": "lauf",
         "delay": 0.6
@@ -744,16 +951,16 @@
        {
         "who": "n1",
         "to": [
-         32,
-         22.5
+         29.6,
+         39.7
         ],
         "type": "blick"
        },
        {
         "who": "b1",
         "to": [
-         20.6,
-         33.6
+         41.4,
+         49.0
         ],
         "type": "pass",
         "after": true
@@ -767,8 +974,8 @@
        {
         "who": "n2",
         "to": [
-         17,
-         41
+         57.1,
+         48.0
         ],
         "type": "dribbling",
         "ball": "b1"
@@ -776,8 +983,8 @@
        {
         "who": "r11",
         "to": [
-         24,
-         40
+         50.4,
+         43.1
         ],
         "type": "lauf",
         "delay": 0.3
@@ -785,8 +992,8 @@
        {
         "who": "b1",
         "to": [
-         15.6,
-         46.7
+         65.4,
+         48.0
         ],
         "type": "pass",
         "after": true

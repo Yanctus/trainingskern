@@ -65,8 +65,8 @@
 - Alle U15-Einheiten (UE-298 bis UE-418) warten aufs Einsprechen (hidden + wartet_auf_ton).
 - „Additional Practices“ (17 Torwart, 30 Einzeltraining) des U15-Plans sind byte-gleich mit dem U12-Plan: bei UE-251 bis UE-297
   nur „U15-U17“ ergänzt (25.11.2026).
-- Halbe Plätze quer (Inhaber, 25.11.2026: ja): UE-314, UE-340, UE-352, UE-366, UE-370, UE-380, UE-381, UE-402 (alle noch nicht
-  eingesprochen) werden umgebaut. Schon eingesprochene halbe Plätze (UE-140, UE-141, UE-234) erst mit dem Neueinsprechen
+- Halbe Plätze quer (Inhaber, 25.11.2026: ja): UE-314, UE-340, UE-352, UE-366, UE-370, UE-380, UE-381, UE-402 umgebaut
+  (Regel „Halbes Feld QUER“ in AUFTRAG.md, Hilfsfunktion bau/halbfeld.py, Muster bau/ue352.py). Schon eingesprochene halbe Plätze (UE-140, UE-141, UE-234) erst mit dem Neueinsprechen
   nach dem 22.12. (Richtungswörter in den Sätzen), wie Gruppe 3.
 - Nächster Code: siehe README (Status).
 
