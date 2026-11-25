@@ -7,7 +7,9 @@ import json, sys; sys.path.insert(0, __file__.rsplit("/", 1)[0]); from hilfe imp
 # Ein Trainer statt zwei. Fassungen: PDF Key Coaching Point 1 (richtig gezeigt: Innenverteidiger ballseitig und torseitig)
 # und Key Coaching Point 2 (erster Kontakt, dann Pass in den Lauf, Abschluss durchs Stangentor).
 # Sichtkegel: Text „Checks to see attackers positioning/runs“; im Video nicht eingezeichnet, Richtung aus dem Sinn:
-# der Innenverteidiger schaut vor der Flanke über die Schulter zum Stürmer.
+# der Innenverteidiger schaut vor der Flanke über die Schulter zum Stürmer. Neue Kegel-Regel (25.11.2026): in der Grundform
+# schaut statt Spieler fünf der Flankengeber (Spieler elf) vors Tor, dann flankt er; im Coaching-Punkt 1 bleibt der Schulterblick
+# von Spieler sechs (er klärt danach selbst).
 # Kein Dubletten-Fall: UE-225 (Leiter, Doppelpass, flache Flanke aufs Minitor) und UE-248 (zwei Verteidiger, Flanken im Wechsel,
 # Kopfball) sind Übungsformen mit anderem Aufbau; das hier ist ein freies fünf gegen fünf mit Außenzonen.
 T = P("T", "c", 8, 14, "T")
@@ -41,8 +43,8 @@ u = {"title": "Flanken klären im 5 gegen 5", "code": "UE-308", "kind": "Spielfo
   "steps": [
    S("Fünf Pässe, dann nach außen", "Team Rot hat seine fünf Pässe fast zusammen. Spieler zehn spielt quer zu Spieler acht, und der spielt raus auf den Flügel zu Spieler elf.",
      ps("b1", [36.6, 45.6]), ps("b1", [24.8, 29.2], after=True)),
-   S("Einer raus, die anderen sortieren sich", "Ein Verteidiger darf in die Außenzone. Spieler vier läuft raus und stört. In der Mitte schaut Spieler fünf über die Schulter. Wo läuft Spieler neun? Spieler sechs rückt näher ans Tor, zwischen Ball und Stürmer.",
-     mv("n4", [33, 31]), bl("n5", [53, 23], delay=0.3), mv("n6", [42, 14.5], delay=0.6)),
+   S("Einer raus, die anderen sortieren sich", "Ein Verteidiger darf in die Außenzone. Spieler vier läuft raus und stört. Spieler elf schaut vors Tor, wohin er flanken kann. In der Mitte sortieren sich die Verteidiger, Spieler sechs rückt näher ans Tor, zwischen Ball und Stürmer.",
+     mv("n4", [33, 31]), bl("r11", [47, 20], delay=0.3), mv("n6", [42, 14.5], delay=0.6)),
    S("Flanke, Spieler fünf ist vorher da", "Jetzt kommt die Flanke hoch vors Tor. Spieler neun startet, aber Spieler fünf steht ballseitig und geht vor ihm dazwischen.",
      ps("b1", [56.6, 16.6], bend=-0.25), mv("r9", [62, 18.5], delay=0.2), mv("n5", [56, 16], delay=0.2), mv("r7", [70, 22], delay=0.2)),
    S("Klären durchs Stangentor: Punkt", "Spieler fünf klärt mit dem ersten Kontakt weit nach vorn, genau durch das rechte Stangentor, und das gibt einen Punkt für Team Neon. Der Trainer spielt den nächsten Ball zu Team Rot.",
