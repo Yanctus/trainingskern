@@ -4,7 +4,8 @@
 // Sucht Pässe, bei denen ein Gegenspieler in der Passbahn steht (Abspielcode der App: buildStory/buildPlay/positionAt)
 import fs from "node:fs";
 const pb = await import(process.argv[2]);
-const alle = JSON.parse(fs.readFileSync(process.argv[3], "utf8"));
+const roh = JSON.parse(fs.readFileSync(process.argv[3], "utf8"));
+const alle = Array.isArray(roh) ? roh : [roh];
 const out = [];
 const at = (seg, s) => { const u = 1 - s; return [u*u*seg.from[0] + 2*u*s*seg.c[0] + s*s*seg.to[0], u*u*seg.from[1] + 2*u*s*seg.c[1] + s*s*seg.to[1]]; };
 const dist = (p, q) => Math.hypot(p[0]-q[0], p[1]-q[1]);

@@ -15,6 +15,10 @@ Du baust die Übungen EINER Woche als neue Einheiten (Entity `Einheit`) und läd
 4. `bau/ueNNN.py` schreiben, `python3 bau/ueNNN.py ueNNN.json && python3 werkbank.py pruefen ueNNN.json` bis „0 Treffer“ und
    nur noch der Hinweis „access … hidden false“ übrig ist. Dann `python3 werkbank.py blatt ueNNN.json` und das Bild
    `ueNNN-blatt.png` ansehen (2D-Laufwege und 3D): Laufwege sinnvoll? Verdeckt sich etwas in 3D? Ggf. korrigieren.
+   **Passbahn (Inhaber, 25.11.2026):** Kein Pass geht durch einen Gegenspieler. Prüfen mit
+   `node passbahn.mjs /tmp/claude-0/pb.mjs ueNNN.json /tmp/pb-ueNNN.json` (Abspielcode der App, gebündelt; fehlt die Datei, in
+   der Base44-Sandbox neu bündeln, Befehl im Kopf von passbahn.mjs). Erwartet: „Treffer: 0“. Ausnahmen nur, wenn der Pass
+   absichtlich zugestellt ist oder abgefangen werden soll (dann sagt es der Text). Korrigieren wie in anleitung/PASSBAHN_FIX.md.
 5. Hochladen (genau so):
    a) `create_entities` (entityName `Einheit`) mit nur `{"code","title","kind","duration_minutes","hidden":true,"access":"abo"}`.
    b) Payload erzeugen: `python3 -c "import json;u=json.load(open('ueNNN.json'));[u.pop(k) for k in ['code','title','kind','duration_minutes','hidden','access']];print(json.dumps({'\$set':u},ensure_ascii=False,separators=(',',':')))"`
