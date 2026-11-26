@@ -229,3 +229,10 @@ Paket 3 (fertig 26.11.2026, 25 Einheiten):
 - UE-031 Grundform Schritt 4 „… holt einen Punkt.“: Hinweis „Ergebnis als Satz sprechen“ (wohl Fehlalarm).
 - UE-039 Grundform Schritt 4 „… zieht Richtung Tor.“: gleicher Hinweis (wohl Fehlalarm).
 - Hinweis: UE-015 organisation „18 mal 25 Meter“ mit drei Zonen je 9 m (wie UE-150/UE-243).
+Paket 2 (fertig 26.11.2026, 25 Einheiten):
+- UE-018 Coaching-Punkt „… dann zählt der Punkt.“: Hinweis „Ergebnis als Satz sprechen“.
+- UE-038 Steigerung Schritt 3 „Vier Pässe in Folge zählen dabei als Tor.“: gleicher Hinweis.
+- UE-042 Coaching-Punkt 2 Schritt 3 „… mit dem Abschluss aufs andere Tor.“: gleicher Hinweis.
+- UE-046 Grundform und Coaching-Punkt: doppelte Rückennummern 7/8/9 (Ton: „die drei Neunen brechen aus“), bleibt so.
+- Hinweis: UE-014 und UE-034 access frei → abo. UE-006 Rot neu nummeriert (vorher gleiche Nummer = Gegenspieler-Paar).
+- Werkzeug: `werkbank.py patch` übergeht Felder namens „id“ (META); Hütchen-ids bei UE-002 von Hand gesetzt.
