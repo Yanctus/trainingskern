@@ -1,4 +1,6 @@
-# Was noch zu tun ist (Stand 24.11.2026)
+# Was noch zu tun ist (Stand 26.11.2026)
+
+**Alles zur Vertonung (was jetzt, was nach dem 22.12., wie, Regeln) steht gesammelt in VERTONUNG.md.**
 
 ## 1. Nach dem 22.12.2026 (neues ElevenLabs-Guthaben)
 - **„Neon sieben“ neu einsprechen:** 119 Einheiten, 941 Sätze, siehe NEU_EINSPRECHEN.md.
