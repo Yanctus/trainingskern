@@ -62,6 +62,10 @@
   unter „Später“): nach der neuen Regel (Kegel nur beim Spieler, der danach passt) umbauen und die betroffenen Sätze im selben Zug neu
   einsprechen.
 
+- **UE-229** (65 x 52 m, Dreiviertelfeld, eingesprochen): auf „Großfeld QUER“ umbauen, Richtungswörter mit dem Neueinsprechen.
+- **Darstellung mit Tonbezug:** Was die Helfer am 26.11.2026 wegen Ton nicht ändern konnten (gesprochene Labels/Titel, Meterzahlen
+  im Sprechtext), steht nach Abschluss in DARSTELLUNG_LISTE.md unter „Später“.
+
 ## 2. Plan U15-U17
 - Fertig (25.11.2026): Wochen 2 bis 8 = UE-321 bis UE-341, „The Compact Midfield 4 35-P9“ = UE-333, PS-108 = UE-006 (Dublette).
 - Fertig (25.11.2026): Woche 9 und Wochen 17 bis 42 = UE-342 bis UE-418. Der Plan U15-U17 ist damit komplett. Dubletten (nur
