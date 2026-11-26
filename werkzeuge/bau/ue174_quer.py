@@ -24,7 +24,7 @@ NEU = {
 }
 # Trainer und Ersatzbälle unten an der Seitenlinie (vorher rechts neben dem Feld, auf Höhe von Spieler vier).
 FEST = {"T": [74, 55.3], "s1": [77.5, 55.8], "s2": [80, 55.8]}
-DIMS = [{"x1": FX0, "y1": 58.6, "x2": FX1, "y2": 58.6, "text": "32 m"}]  # nur die Länge (links und rechts stehen Tore)
+DIMS = [{"x1": FX0, "y1": 58.6, "x2": FX1, "y2": 58.6, "text": "30 m"}]  # nur die Länge (links und rechts stehen Tore)
 
 SEITE = {"A": {"top": "right", "right": "bottom", "bottom": "left", "left": "top"},
          "B": {"top": "left", "left": "bottom", "bottom": "right", "right": "top"}}[DREH]

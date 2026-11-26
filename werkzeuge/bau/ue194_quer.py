@@ -18,13 +18,13 @@ VERSATZ = {(46, 25.5): (47.5, 25.5), (36, 25): (35, 25)}
 # Spieler sechs wartet mit Bällen hinten neben dem Feld (vorher rechts unten außen, quer wäre das unter der Maßlinie).
 FEST = {"T": [30, 55.3], "s1": [33.5, 55.8], "s2": [36, 55.8], "n6": [8, 55.5]}  # id -> Platz quer
 # Nachtrag (Koordinator, 24.11.2026): organisation wird nicht eingesprochen, darum nach dem Drehen angepasst (Tor rechts usw.).
-ORGANISATION = ["Aufbauen: Ein Feld von 18 mal 27 Metern mit einem Jugendtor rechts. Drei Stangen als Gegenspieler in der Mitte und links oben vor Spieler acht, zwei Hütchen für die Flügel.",
+ORGANISATION = ["Aufbauen: Ein Feld von 18 mal 25 Metern mit einem Jugendtor rechts. Drei Stangen als Gegenspieler in der Mitte und links oben vor Spieler acht, zwei Hütchen für die Flügel.",
  "Verteilen: Ein Torwart steht im Tor. Team Neon besetzt sieben Positionen: vier und acht hinten, zehn in der Mitte, neun vorn, elf und sieben außen. Spieler sechs wartet links unten neben dem Feld mit Bällen, der Trainer steht unten an der Seitenlinie.",
  "Ablauf: Spieler vier spielt zu Spieler zehn, der lässt zu Spieler acht abprallen. Spieler acht spielt in die Spitze zu Spieler neun, der spielt direkt nach außen zu Spieler elf. Spieler elf flankt, Spieler neun und Spieler sieben laufen in den Strafraum.",
  "Wertung und Wechsel: Jeder Treffer gibt einen Punkt für Team Neon. Danach rücken alle eine Position weiter, und der nächste Angriff startet. Ab und zu auf der anderen Seite beginnen."]
 SEITE = {"top": "right", "right": "bottom", "bottom": "left", "left": "top"}
 FORM = {"leiter": "leiter_ou", "leiter_ou": "leiter", "huerde": "huerde_ou", "huerde_ou": "huerde"}
-DIMS = [{"x1": FX0, "y1": 58.6, "x2": FX1, "y2": 58.6, "text": "27 m"}]  # nur die Länge (rechts steht das Tor)
+DIMS = [{"x1": FX0, "y1": 58.6, "x2": FX1, "y2": 58.6, "text": "25 m"}]  # nur die Länge (rechts steht das Tor)
 
 
 def R(x, y):
@@ -107,4 +107,6 @@ for b in [u["board"]] + [v["board"] for v in u.get("versions") or []]:
 u["board"] = sauber(u["board"])
 u["versions"] = sauber(u["versions"])
 u["organisation"] = ORGANISATION
+# Meterangaben gerundet (Darstellung, 26.11.2026): ab 20 m auf Fünfer, unter 20 m genau.
+u["field_size"] = "18 x 25 m"
 json.dump(u, open(sys.argv[2], "w"), ensure_ascii=False, indent=1)

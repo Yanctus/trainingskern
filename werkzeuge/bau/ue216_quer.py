@@ -20,13 +20,13 @@ VERSATZ = {
 # Trainer und Ersatzbälle unten an der Seitenlinie (vorher rechts neben dem Feld, das wäre quer unter der Tafel).
 FEST = {"T": [40, 55.3], "s1": [43.5, 55.8], "s2": [46, 55.8]}  # id -> Platz quer
 # Nachtrag (Koordinator, 24.11.2026): organisation wird nicht eingesprochen, darum nach dem Drehen angepasst (Tore links und rechts).
-ORGANISATION = ["Aufbauen: Ein Feld von 18 mal 27 Metern in drei gleich große Zonen geteilt. Links und rechts steht je ein Jugendtor.",
+ORGANISATION = ["Aufbauen: Ein Feld von 18 mal 25 Metern in drei gleich große Zonen geteilt. Links und rechts steht je ein Jugendtor.",
  "Verteilen: Team Neon mit Torwart und zwei Innenverteidigern hinten, einem in der Mitte und einem Stürmer vorn. Team Rot mit einem Stürmer hinten, einem in der Mitte und zwei Verteidigern vorn. Rechts steht ein zweiter Torwart im Tor. Der Trainer steht unten an der Seitenlinie mit Bällen.",
  "Ablauf: Alle bleiben in ihren Zonen. Ein Innenverteidiger verlagert, rückt mit Ball in die Mitte auf und schafft so zwei gegen einen. Kommt der Ball nach vorn, darf der Mittelfeldspieler mit, dann ist es zwei gegen zwei.",
  "Wertung und Wechsel: Ein Treffer im rechten Tor gibt einen Punkt für Team Neon. Erobert Team Rot den Ball, kontert es auf das linke Tor, und ein Treffer gibt einen Punkt für Team Rot. Danach startet der Torwart von Team Neon mit einem neuen Ball."]
 SEITE = {"top": "right", "right": "bottom", "bottom": "left", "left": "top"}
 FORM = {"leiter": "leiter_ou", "leiter_ou": "leiter", "huerde": "huerde_ou", "huerde_ou": "huerde"}
-DIMS = [{"x1": FX0, "y1": 58.6, "x2": FX1, "y2": 58.6, "text": "27 m"}]  # nur die Länge (rechts steht das Tor)
+DIMS = [{"x1": FX0, "y1": 58.6, "x2": FX1, "y2": 58.6, "text": "25 m"}]  # nur die Länge (rechts steht das Tor)
 
 
 def R(x, y):

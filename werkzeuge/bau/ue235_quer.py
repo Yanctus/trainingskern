@@ -19,7 +19,7 @@ VERSATZ = {(33, 47): (42, 56.2)}
 FEST = {"T": [40, 55.3], "s1": [43.5, 55.8], "s2": [46, 55.8]}  # id -> Platz quer
 SEITE = {"top": "right", "right": "bottom", "bottom": "left", "left": "top"}
 FORM = {"leiter": "leiter_ou", "leiter_ou": "leiter", "huerde": "huerde_ou", "huerde_ou": "huerde"}
-DIMS = [{"x1": FX0, "y1": 58.6, "x2": FX1, "y2": 58.6, "text": "32 m"}, {"x1": FX1 + 8, "y1": FY0, "x2": FX1 + 8, "y2": FY1, "text": "23 m"}]
+DIMS = [{"x1": FX0, "y1": 58.6, "x2": FX1, "y2": 58.6, "text": "30 m"}, {"x1": FX1 + 8, "y1": FY0, "x2": FX1 + 8, "y2": FY1, "text": "25 m"}]
 
 
 def R(x, y):

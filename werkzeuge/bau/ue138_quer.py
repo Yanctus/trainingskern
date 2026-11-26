@@ -33,7 +33,7 @@ NEU = {
     (42.5, 30.5): [53.9, 15.4],
 }
 FEST = {"s1": [51.5, 55.8], "s2": [54, 55.8]}
-DIMS = [{"x1": FX0, "y1": 58.6, "x2": FX1, "y2": 58.6, "text": "23 m"}]  # nur die Länge (rechts steht das Tor)
+DIMS = [{"x1": FX0, "y1": 58.6, "x2": FX1, "y2": 58.6, "text": "25 m"}]  # nur die Länge (rechts steht das Tor)
 
 SEITE = {"A": {"top": "right", "right": "bottom", "bottom": "left", "left": "top"},
          "B": {"top": "left", "left": "bottom", "bottom": "right", "right": "top"}}[DREH]
@@ -111,7 +111,7 @@ def anker_von(b, grund):
 
 
 # organisation wird nicht eingesprochen (Koordinator, 24.11.2026): Sätze mit oben/unten/links/rechts an die Querlage angepasst.
-ORGANISATION = {0: 'Aufbauen: Ein Feld von 14 mal 23 Metern, an einer kurzen Seite ein Jugendtor mit Torwart. Weiter vom Tor weg steht auf jeder Seite eine Stange, nah am Tor zwei Hütchen als Start.', 1: 'Verteilen: Team Neon greift an, Team Rot verteidigt. Je ein Angreifer und ein Verteidiger starten auf beiden Seiten am Tor, die anderen warten hinter der Torlinie neben dem Tor. Der Trainer steht am Rand mit Bällen.', 2: 'Ablauf: Ein Angreifer passt quer zum anderen, der nimmt an und lässt den Ball liegen. Beide Angreifer sprinten um ihre Stange, holen den Ball und kombinieren zum Abschluss. Die Verteidiger sprinten gleichzeitig hinterher und stören.'}
+ORGANISATION = {0: 'Aufbauen: Ein Feld von 14 mal 25 Metern, an einer kurzen Seite ein Jugendtor mit Torwart. Weiter vom Tor weg steht auf jeder Seite eine Stange, nah am Tor zwei Hütchen als Start.', 1: 'Verteilen: Team Neon greift an, Team Rot verteidigt. Je ein Angreifer und ein Verteidiger starten auf beiden Seiten am Tor, die anderen warten hinter der Torlinie neben dem Tor. Der Trainer steht am Rand mit Bällen.', 2: 'Ablauf: Ein Angreifer passt quer zum anderen, der nimmt an und lässt den Ball liegen. Beide Angreifer sprinten um ihre Stange, holen den Ball und kombinieren zum Abschluss. Die Verteidiger sprinten gleichzeitig hinterher und stören.'}
 
 u = json.load(open(sys.argv[1]))
 u = u[0] if isinstance(u, list) else u
@@ -120,4 +120,6 @@ for b in [u["board"]] + [v["board"] for v in u.get("versions") or []]:
     drehe_board(b, anker_von(b, grund) + anker_von(grund, grund), FEST)
 for i, t in ORGANISATION.items():
     u["organisation"][i] = t
+# Meterangaben gerundet (Darstellung, 26.11.2026): ab 20 m auf Fünfer, unter 20 m genau.
+u["field_size"] = "14 x 25 m"
 json.dump(u, open(sys.argv[2], "w"), ensure_ascii=False, indent=1)

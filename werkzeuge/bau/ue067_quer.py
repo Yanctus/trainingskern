@@ -44,7 +44,7 @@ NEU = {
 # Biegung gegen Stangen im Weg (Schritt-Label, wer) -> bend: Spieler zwei dribbelt außen an seiner Stange vorbei
 BIEGUNG = {("Ablage auf die Zehn", "n2"): 5}
 FEST = {}
-DIMS = [{"x1": FX0, "y1": 58.6, "x2": FX1, "y2": 58.6, "text": "37 m"}, {"x1": FX1 + 8, "y1": FY0, "x2": FX1 + 8, "y2": FY1, "text": "27 m"}]
+DIMS = [{"x1": FX0, "y1": 58.6, "x2": FX1, "y2": 58.6, "text": "35 m"}, {"x1": FX1 + 8, "y1": FY0, "x2": FX1 + 8, "y2": FY1, "text": "25 m"}]
 
 SEITE = {"A": {"top": "right", "right": "bottom", "bottom": "left", "left": "top"},
          "B": {"top": "left", "left": "bottom", "bottom": "right", "right": "top"}}[DREH]

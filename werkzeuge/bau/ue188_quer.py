@@ -28,7 +28,7 @@ NEU = {
 }
 FEST = {"s1": [28.5, 55.8], "s2": [26, 55.8]}
 # Eckhütchen kommen mit der Drehung auf die neuen Ecken.
-DIMS = [{"x1": FX0, "y1": 58.6, "x2": FX1, "y2": 58.6, "text": "32 m"}]  # nur die Länge (links und rechts stehen Tore)
+DIMS = [{"x1": FX0, "y1": 58.6, "x2": FX1, "y2": 58.6, "text": "30 m"}]  # nur die Länge (links und rechts stehen Tore)
 
 SEITE = {"A": {"top": "right", "right": "bottom", "bottom": "left", "left": "top"},
          "B": {"top": "left", "left": "bottom", "bottom": "right", "right": "top"}}[DREH]
@@ -110,4 +110,7 @@ u = u[0] if isinstance(u, list) else u
 grund = json.loads(json.dumps(u["board"]))
 for b in [u["board"]] + [v["board"] for v in u.get("versions") or []]:
     drehe_board(b, anker_von(b, grund) + anker_von(grund, grund), FEST)
+# Meterangaben gerundet (Darstellung, 26.11.2026): ab 20 m auf Fünfer, unter 20 m genau.
+u["field_size"] = "25 x 30 m"
+u["organisation"][0] = u["organisation"][0].replace("23 mal 32 Metern", "25 mal 30 Metern")
 json.dump(u, open(sys.argv[2], "w"), ensure_ascii=False, indent=1)
