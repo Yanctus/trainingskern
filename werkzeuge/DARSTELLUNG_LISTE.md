@@ -217,3 +217,10 @@ Erzeugt aus PRUEFUNG_ALLE.txt und der Meterprüfung. „M“ = Meterangabe nicht
 - UE-295 M: 
 - UE-298 M: 
 
+
+## Später (wegen Ton nicht geändert, für das Neueinsprechen nach dem 22.12.)
+Paket 1 (fertig 26.11.2026, 25 Einheiten):
+- UE-001 Grundform: 9 Schritte statt 3-6 (Schrittzahl ist eingesprochen).
+- UE-005 say_intro „… kommt der dritte Mann frei vors Tor.“: Regelhinweis „Ergebnis als Satz sprechen“ (wohl Fehlalarm).
+- UE-029 Coaching-Punkt 2, Schritt 1 „Schon im Dribbling schaut er kurz zum Tor.“: gleicher Hinweis (wohl Fehlalarm).
+- Hinweis: UE-025 und UE-029 access von „frei“ auf „abo“ gesetzt (regeln.py, Festlegung 22.11.); bei Bedarf zurück.
