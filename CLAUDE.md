@@ -66,6 +66,10 @@ Die App selbst liegt bei Base44 (App „Trainingskern“), dieses Repo enthält 
   `ton/musik-elektro-2.mp3` 61 s, `ton/musik-elektro-3.mp3` 66 s, `ton/musik-elektro-4.mp3` 110 s). `"musik": "zufall"` wählt einen,
   der bis zum Ende reicht (je Story immer denselben). Ist ein Video länger als jeder Titel, setzt die Musik an einem Szenenwechsel
   neu an. Fertige Storys nennen ihren Titel fest, damit ein neues Rendern gleich klingt. Kein Funk-Beat, kein Swing.
+- **Übung nie „fertig“ wirken lassen** (Vorgabe vom 26.11.2026, gilt für alle künftigen Videos, die eine Übung zeigen, auch Marketing-Videos,
+  Spielsysteme und Status-Videos): Die Stimme sagt am Ende (Outro-`sprecher`), dass es auf der Seite weitergeht, z. B.
+  „Coaching-Punkte und Steigerung zu dieser Übung findest du auf Trainingskern.de.“ Bei Videos, die beides schon zeigen:
+  „Alle Coaching-Punkte und weitere Übungen findest du auf Trainingskern.de.“ Bei Spielsystemen: „Das ganze System findest du auf Trainingskern.de.“
 - Die Adresse im Sprechertext als „Trainingskern.de“ schreiben (Wunsch vom 25.11.2026): „Trainingskern Punkt D E“ spricht die Stimme mit Pausen zwischen den Buchstaben.
 - Im Sprechertext sagt die Stimme „von mir auf Deutsch erklärt“, damit klar ist, dass es Ton zur Übung gibt.
 - Keine Spielminute, kein Fortschrittsbalken im Bild. Der Bildschirm der Seite zeigt nur Titel und Tafel (`"verstecke"` blendet den Rest aus).
