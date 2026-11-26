@@ -236,3 +236,10 @@ Paket 2 (fertig 26.11.2026, 25 Einheiten):
 - UE-046 Grundform und Coaching-Punkt: doppelte Rückennummern 7/8/9 (Ton: „die drei Neunen brechen aus“), bleibt so.
 - Hinweis: UE-014 und UE-034 access frei → abo. UE-006 Rot neu nummeriert (vorher gleiche Nummer = Gegenspieler-Paar).
 - Werkzeug: `werkbank.py patch` übergeht Felder namens „id“ (META); Hütchen-ids bei UE-002 von Hand gesetzt.
+Paket 4 (fertig 26.11.2026, 25 Einheiten):
+- UE-012 Grundform Schritt 4 „Spieler vier zieht mit dem Ball Richtung Tor.“: Hinweis „Ergebnis als Satz sprechen“ (Fehlalarm).
+- UE-020 doppelte Rückennummern 1-8 in beiden Teams: Idee der Übung, gesprochen, bleibt so.
+- Hinweis: UE-016 access frei → abo. UE-028 nur noch ein Trainer (Organisation angepasst).
+- Werkzeug: `patch` übergeht innere ids nicht mehr (seit 26.11.2026 nur oben META).
+Nachtrag Gesamtprüfung: UE-046 Coaching-Punkt Schritt 2 „… schiebt den Ball gezielt …“ (Floskel, gesprochen).
+Paket 5: UE-247 bis UE-289 (11 Einheiten) vom Helfer ausgelassen, am 26.11.2026 nachgeholt (nur field_size/organisation).
