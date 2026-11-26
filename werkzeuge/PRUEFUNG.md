@@ -17,6 +17,7 @@ sichtbar ohne Tonspur). Vollständige Ausgabe: PRUEFUNG_ALLE.txt.
 - Floskeln im Ton: nur UE-046 „gezielt“ (eingesprochen, Liste „Später“).
 
 ## Offen (Fragen an den Inhaber)
-- UE-015, UE-150, UE-243: Zonen unter 20 m genau, Feld gerundet, Summe passt nicht genau.
-- Freigabe: UE-014, 016, 025, 029, 034 von „frei“ auf „abo“ gesetzt (Regel: nur fünf frei).
+- Erledigt 26.11.2026: Zonen an die Feldgröße angeglichen (UE-015 8+9+8, UE-150 13+9+13, UE-243 8+14+8).
+- Erledigt 26.11.2026: 9 Übungen frei mit Konto, nur solche ohne offene Tonpunkte: UE-004, 007, 008, 011, 021, 230,
+  235, 240, 290 (UE-005 wieder Pro wegen Tonpunkt; UE-001 bleibt offen).
 - 15 alte Entwürfe löschen oder liegen lassen.
