@@ -224,3 +224,8 @@ Paket 1 (fertig 26.11.2026, 25 Einheiten):
 - UE-005 say_intro „… kommt der dritte Mann frei vors Tor.“: Regelhinweis „Ergebnis als Satz sprechen“ (wohl Fehlalarm).
 - UE-029 Coaching-Punkt 2, Schritt 1 „Schon im Dribbling schaut er kurz zum Tor.“: gleicher Hinweis (wohl Fehlalarm).
 - Hinweis: UE-025 und UE-029 access von „frei“ auf „abo“ gesetzt (regeln.py, Festlegung 22.11.); bei Bedarf zurück.
+Paket 3 (fertig 26.11.2026, 25 Einheiten):
+- UE-027 Grundform Schritt 1 „Team Rot spielt außen herum …“: Hinweis „gebogene Laufwege“ (meint die Pässe, wohl Fehlalarm).
+- UE-031 Grundform Schritt 4 „… holt einen Punkt.“: Hinweis „Ergebnis als Satz sprechen“ (wohl Fehlalarm).
+- UE-039 Grundform Schritt 4 „… zieht Richtung Tor.“: gleicher Hinweis (wohl Fehlalarm).
+- Hinweis: UE-015 organisation „18 mal 25 Meter“ mit drei Zonen je 9 m (wie UE-150/UE-243).
