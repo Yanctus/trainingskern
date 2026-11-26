@@ -1,0 +1,219 @@
+# Arbeitsliste Darstellung (26.11.2026)
+
+Erzeugt aus PRUEFUNG_ALLE.txt und der Meterprüfung. „M“ = Meterangabe nicht gerundet.
+
+## Paket 1
+- UE-001: Grundform: ×4; Steigerung: ×4; Coaching-Punkt: ×2; Kollision: Schritt ×1; : genau ×1; : Grundform braucht ×1; Coaching-Punkt: Beschriftung 'OFFENE STE ×1
+- UE-005 M: Grundform: ×2; Coaching-Punkt: ×2; : description soll ×1; : organisation_show = [lines, cones, pla ×1; Coaching-Punkt: Beschriftung 'WARTEN' li ×1; say_intro: Ergebnis als Satz sprechen ×1
+- UE-009: Coaching-Punkt: ×5; Steigerung: ×3; Coaching-Punkt: Beschriftung 'DREIECK' l ×2; : genau ×1; Grundform: ×1; Coaching-Punkt: Schritt ×1
+- UE-013: Grundform: ×15; Coaching-Punkt: ×5; Steigerung: ×5; : Titel ist zu lang ×1; : ×1; : genau ×1; Grundform: Schritt ×1; Steigerung: Schritt ×1
+- UE-017: Coaching-Punkt: Schritt ×3; Grundform: Schritt ×2; Grundform: ×2; Steigerung: ×2; : genau ×1; Grundform: doppelte Rückennummern [' ×1; Coaching-Punkt: doppelte Rückennummern [ ×1; Coaching-Punkt: ×1; Steigerung: doppelte Rückennummern [' ×1
+- UE-021 M: Coaching-Punkt: ×6; Grundform: ×5; Coaching-Punkt ×5; Grundform: Schritt ×2; : genau ×1
+- UE-025: Grundform: Schritt ×2; Coaching-Punkt: ×2; Coaching-Punkt: Beschriftung 'ANSPIELER' ×2; : access muss 'abo' sein ×1; Coaching-Punkt: Schritt ×1
+- UE-029 M: Grundform: ×15; Coaching-Punkt ×13; Coaching-Punkt: ×12; : Titel ist zu lang ×1; : access muss 'abo' sein ×1; : genau ×1; Grundform: Schritt ×1; Coaching-Punkt: Beschriftung ' ×1
+- UE-033 M: Coaching-Punkt ×8; Coaching-Punkt: ×6; Grundform: ×5; Coaching-Punkt: Beschriftung 'DOPPELPASS ×4; : genau ×1; Grundform: Schritt ×1; Coaching-Punkt: Schritt ×1
+- UE-037 M: Kollision: Schritt ×2; Grundform: ×2; Coaching-Punkt: ×2; Coaching-Punkt: Beschriftung 'VOR DEN FU ×2; Steigerung: ×2; : genau ×1; Grundform: Schritt ×1; Coaching-Punkt: Schritt ×1; Steigerung: Schritt ×1
+- UE-041 M: Grundform: ×5; Coaching-Punkt: ×5; Steigerung: ×5; Grundform: Schritt ×2; Coaching-Punkt: Beschriftung 'FREIER RAU ×2; : genau ×1; Grundform: Maßlinie ' ×1; Coaching-Punkt: Maßlinie ' ×1; Steigerung: Schritt ×1; Steigerung: Maßlinie ' ×1
+- UE-045: Coaching-Punkt ×14; Grundform: ×11; Coaching-Punkt: ×11; : Titel ist zu lang ×1; Grundform: Schritt ×1; Grundform: doppelte Rückennummern [' ×1; Coaching-Punkt: Schritt ×1; Coaching-Punkt: doppelte Rückennummern [ ×1; Coaching-Punkt: Beschriftung 'JETZT TIEF ×1
+- UE-049: Grundform: ×18; Coaching-Punkt: ×18; Steigerung: ×14; Kollision: Schritt ×3; : genau ×1; Steigerung: Schritt ×1
+- UE-053: Kollision: Schritt ×4
+- UE-062 M: 
+- UE-069 M: 
+- UE-076 M: 
+- UE-081 M: 
+- UE-087 M: 
+- UE-095 M: 
+- UE-099 M: 
+- UE-103 M: 
+- UE-110 M: 
+- UE-117 M: 
+- UE-121 M: 
+
+## Paket 2
+- UE-002: Steigerung: cones leer lassen ×1; Steigerung: Beschriftung 'EXTRAPUNKTE' l ×1
+- UE-006: Coaching-Punkt: ×7; Steigerung: ×5; Grundform: ×4; : genau ×1; Grundform: Schritt ×1; Grundform: doppelte Rückennummern [' ×1; Coaching-Punkt: doppelte Rückennummern [ ×1; Coaching-Punkt: Beschriftung 'FREI' lieg ×1; Steigerung: doppelte Rückennummern [' ×1
+- UE-010 M: Grundform: Schritt ×3; Grundform: ×2; Coaching-Punkt: ×2; Kollision: Schritt ×1; : genau ×1; Coaching-Punkt: Beschriftung 'FLACH' lie ×1; Steigerung: ×1
+- UE-014: Grundform: Schritt ×2; : access muss 'abo' sein ×1; : genau ×1; Coaching-Punkt: Schritt ×1; Coaching-Punkt ×1
+- UE-018 M: Coaching-Punkt ×8; Coaching-Punkt: ×7; Grundform: ×3; : genau ×1; Grundform: Schritt ×1; Coaching-Punkt: Schritt ×1; Coaching-Punkt say: Ergebnis als Satz sp ×1
+- UE-022: Grundform: ×5; Coaching-Punkt: ×2; Steigerung: ×2; : genau ×1; Grundform: Schritt ×1; Steigerung: Beschriftung 'INNEN' liegt a ×1
+- UE-026: Grundform: ×3; Coaching-Punkt: ×3; Steigerung: ×3; Grundform: Schritt ×2; : genau ×1; Grundform: doppelte Rückennummern [' ×1; Coaching-Punkt: Schritt ×1; Coaching-Punkt: doppelte Rückennummern [ ×1; Steigerung: Schritt ×1; Steigerung: doppelte Rückennummern [' ×1
+- UE-030: Grundform: ×4; Steigerung: ×3; Grundform: Schritt ×2; Coaching-Punkt: Schritt ×2; Coaching-Punkt: ×2; Umschalten: ×2; : genau ×1; Umschalten: Schritt ×1
+- UE-034: Grundform: Schritt ×2; : access muss 'abo' sein ×1; : genau ×1; Grundform: ×1; Grundform: Maßlinie ' ×1; Coaching-Punkt: Schritt ×1; Coaching-Punkt: ×1; Coaching-Punkt: Maßlinie ' ×1; Steigerung: ×1; Steigerung: Maßlinie ' ×1
+- UE-038: Grundform: ×9; Coaching-Punkt: ×9; Steigerung: ×9; Coaching-Punkt: Beschriftung 'ANSPIELBAR ×3; Kollision: Schritt ×1; : genau ×1; Coaching-Punkt: Schritt ×1; Steigerung Schritt 'Vier Pässe in Folge ×1
+- UE-042 M: Coaching-Punkt ×6; Grundform: ×5; Coaching-Punkt: ×5; Grundform: Schritt ×2; : Titel ist zu lang ×1; Coaching-Punkt: Schritt ×1; Coaching-Punkt: Beschriftung 'FREI' lieg ×1
+- UE-046 M: Grundform: ×9; Coaching-Punkt: ×7; Coaching-Punkt ×2; : Titel ist zu lang ×1; : genau ×1; Grundform: Schritt ×1; Grundform: doppelte Rückennummern [' ×1; Coaching-Punkt: doppelte Rückennummern [ ×1
+- UE-050: Coaching-Punkt ×3; Coaching-Punkt: Beschriftung 'MITGEHEN' ×2; Grundform: Schritt ×1; Grundform: ×1; Coaching-Punkt: ×1
+- UE-056 M: 
+- UE-065 M: 
+- UE-071 M: 
+- UE-077 M: 
+- UE-082 M: 
+- UE-088 M: 
+- UE-096 M: 
+- UE-100 M: 
+- UE-106 M: 
+- UE-113 M: 
+- UE-118 M: 
+- UE-122 M: 
+
+## Paket 3
+- UE-003: Coaching-Punkt ×7; Coaching-Punkt: ×6; Grundform: ×2; : organisation_show = [lines, cones, pla ×1
+- UE-007: Grundform: ×7; Steigerung: ×7; Coaching-Punkt: ×4; Steigerung: Beschriftung ' ×2; : ×1; : organisation_show = [lines, cones, pla ×1; Grundform: Beschriftung ' ×1; Coaching-Punkt: Schritt ×1; Steigerung: Schritt ×1
+- UE-011 M: Grundform: ×5; : genau ×1; Grundform: Schritt ×1; Coaching-Punkt: Schritt ×1; Coaching-Punkt: ×1; Steigerung: ×1
+- UE-015 M: Grundform: Beschriftung 'ENDZONE' liegt ×4; Coaching-Punkt: Beschriftung 'ENDZONE' l ×4; Steigerung: Beschriftung 'ENDZONE' liegt ×4; : organisation_show = [lines, cones, pla ×1; : genau ×1; Grundform: doppelte Rückennummern [' ×1; Grundform: ×1; Coaching-Punkt: Schritt ×1; Coaching-Punkt: doppelte Rückennummern [ ×1; Coaching-Punkt: ×1; Coaching-Punkt: Beschriftung 'FREI' lieg ×1; Steigerung: Schritt ×1; Steigerung: doppelte Rückennummern [' ×1; Steigerung: ×1
+- UE-019: Grundform: Schritt ×2; : genau ×1
+- UE-023: Grundform: Schritt ×2; : Titel ist zu lang ×1; : genau ×1; Grundform: ×1; Coaching-Punkt: ×1; Coaching-Punkt: Beschriftung 'ANTÄUSCHEN ×1; Steigerung: ×1
+- UE-027: Coaching-Punkt ×12; Grundform: ×8; Coaching-Punkt: ×8; Grundform: Schritt ×2; : genau ×1; Coaching-Punkt: Beschriftung 'ENG BLEIBE ×1
+- UE-031 M: Grundform: ×3; Coaching-Punkt: ×2; : Titel ist zu lang ×1; : genau ×1; Grundform: Schritt ×1; Grundform: Maßlinie ' ×1; Coaching-Punkt: Schritt ×1; Coaching-Punkt: Maßlinie ' ×1; Steigerung: Maßlinie ' ×1; Schritt 'Im letzten Drittel angekommen: ×1
+- UE-035 M: Grundform: ×2; Coaching-Punkt: ×2; Coaching-Punkt: Beschriftung 'ABSTAND' l ×2; Steigerung: ×2; : Titel ist zu lang ×1; : genau ×1; Grundform: Schritt ×1; Steigerung: Schritt ×1
+- UE-039 M: Coaching-Punkt ×6; Grundform: ×5; Coaching-Punkt: ×5; Coaching-Punkt: Beschriftung 'LÜCKE' lie ×3; : genau ×1; Grundform: Schritt ×1; Schritt 'Alle vier Zonen bespielt: Jetzt ×1
+- UE-043 M: Grundform: ×11; Coaching-Punkt: ×6; Steigerung: ×6; Coaching-Punkt: Beschriftung 'TIEF BLEIB ×4; Steigerung: T und D stehen zu dicht ×3; Grundform: Schritt ×2; Grundform: D und D stehen zu dicht ×2; Coaching-Punkt: D und D stehen zu dicht ×2; Steigerung: D und D stehen zu dicht ×2; : Titel ist zu lang ×1; : genau ×1; Coaching-Punkt: Schritt ×1
+- UE-047: Coaching-Punkt ×11; Grundform: ×5; Coaching-Punkt: ×5; : Titel ist zu lang ×1; : genau ×1; Grundform: Maßlinie ' ×1; Coaching-Punkt: Maßlinie ' ×1; Coaching-Punkt: Beschriftung 'PLATZ' lie ×1
+- UE-051 M: Grundform: ×4; Coaching-Punkt ×4; Coaching-Punkt: ×3; Coaching-Punkt: Beschriftung 'KURZE SCHR ×2; : genau ×1; Grundform: Schritt ×1; Grundform: Maßlinie ' ×1; Coaching-Punkt: Maßlinie ' ×1
+- UE-057 M: 
+- UE-067 M: 
+- UE-074 M: 
+- UE-078 M: 
+- UE-084 M: 
+- UE-089 M: 
+- UE-097 M: 
+- UE-101 M: 
+- UE-108 M: 
+- UE-115 M: 
+- UE-119 M: 
+- UE-123 M: 
+
+## Paket 4
+- UE-004: Grundform: ×12; Coaching-Punkt: ×12; Steigerung: ×12; Kollision: Schritt ×3; Grundform: Schritt ×1; Steigerung: cones leer lassen ×1; Steigerung: Schritt ×1
+- UE-008: : organisation_show = [lines, cones, pla ×1; : genau ×1; Coaching-Punkt: Schritt ×1; Steigerung: Schritt ×1
+- UE-012 M: Coaching-Punkt: ×12; Steigerung: ×12; Grundform: ×8; Steigerung: Beschriftung 'AUSSENZONE' li ×3; : organisation_show = [lines, cones, pla ×1; : genau ×1; Coaching-Punkt: Schritt ×1; Steigerung: Schritt ×1; Schritt ' ×1
+- UE-016 M: Grundform: ×12; Steigerung: ×12; Coaching-Punkt: ×10; Grundform: Schritt ×2; Steigerung: Schritt ×2; Steigerung: Beschriftung 'LINKS / RECHTS ×2; : access muss 'abo' sein ×1; : genau ×1; Coaching-Punkt: Schritt ×1
+- UE-020 M: Grundform: ×8; Coaching-Punkt: ×8; Steigerung: ×8; Grundform: Schritt ×2; Coaching-Punkt: Beschriftung 'OFFEN STEH ×2; Grundform: doppelte Rückennummern [' ×1; Coaching-Punkt: doppelte Rückennummern [ ×1; Steigerung: Schritt ×1; Steigerung: doppelte Rückennummern [' ×1
+- UE-024 M: Grundform: ×7; Coaching-Punkt: ×7; Steigerung: ×7; Coaching-Punkt: Beschriftung 'LÜCKE' lie ×2; : genau ×1; Grundform: doppelte Rückennummern [' ×1; Grundform: Maßlinie ' ×1; Coaching-Punkt: Schritt ×1; Coaching-Punkt: doppelte Rückennummern [ ×1; Coaching-Punkt: Maßlinie ' ×1; Steigerung: Schritt ×1; Steigerung: doppelte Rückennummern [' ×1; Steigerung: Maßlinie ' ×1
+- UE-028 M: Grundform: ×16; Coaching-Punkt: ×16; Steigerung: ×14; Coaching-Punkt: Schritt ×2; Steigerung: Schritt ×2; : ×1; : genau ×1; Grundform: genau ein Trainer ×1; Coaching-Punkt: genau ein Trainer ×1; Steigerung: genau ein Trainer ×1
+- UE-032: Grundform: ×6; Coaching-Punkt: ×3; Steigerung: ×3; Steigerung: Schritt ×2; Kollision: Schritt ×1; : genau ×1; Grundform: Schritt ×1
+- UE-036 M: Grundform: ×3; Coaching-Punkt: ×3; Coaching-Punkt: Beschriftung 'LÜCKE' lie ×3; Steigerung: ×3; Grundform: Schritt ×2; : genau ×1; Coaching-Punkt: Schritt ×1; Steigerung: Beschriftung 'PRESSINGZONE' ×1
+- UE-040: Grundform: ×2; Grundform: D und D stehen zu dicht ×2; Coaching-Punkt: ×2; Coaching-Punkt: D und D stehen zu dicht ×2; Coaching-Punkt: Beschriftung 'ENG FÜHREN ×2; Steigerung: ×2; Steigerung: D und D stehen zu dicht ×2; : Titel ist zu lang ×1
+- UE-044 M: Steigerung: ×7; Grundform: ×6; Coaching-Punkt: ×6; : Titel ist zu lang ×1; Grundform: Schritt ×1; Grundform: doppelte Rückennummern [' ×1; Grundform: Maßlinie ' ×1; Coaching-Punkt: doppelte Rückennummern [ ×1; Coaching-Punkt: Maßlinie ' ×1; Coaching-Punkt: Schritt ×1; Steigerung: doppelte Rückennummern [' ×1; Steigerung: Maßlinie ' ×1
+- UE-048: Grundform: ×4; Coaching-Punkt: ×2; Coaching-Punkt: Beschriftung 'DIREKT' li ×2; Coaching-Punkt ×2; : Titel ist zu lang ×1; : genau ×1; Grundform: Beschriftung ' ×1
+- UE-052: Coaching-Punkt: ×2; Umschalten: ×2; Grundform: ×1; Coaching-Punkt: Beschriftung 'BREITE' li ×1
+- UE-060 M: 
+- UE-068 M: 
+- UE-075 M: 
+- UE-080 M: 
+- UE-086 M: 
+- UE-092 M: 
+- UE-098 M: 
+- UE-102 M: 
+- UE-109 M: 
+- UE-116 M: 
+- UE-120 M: 
+- UE-126 M: 
+
+## Paket 5
+- UE-127 M: 
+- UE-129 M: 
+- UE-132 M: 
+- UE-135 M: 
+- UE-139 M: 
+- UE-143 M: 
+- UE-146 M: 
+- UE-148 M: 
+- UE-150 M: 
+- UE-156 M: 
+- UE-160 M: 
+- UE-162 M: 
+- UE-164 M: 
+- UE-166 M: 
+- UE-168 M: 
+- UE-170 M: 
+- UE-174 M: 
+- UE-179 M: 
+- UE-184 M: 
+- UE-186 M: 
+- UE-189 M: 
+- UE-192 M: 
+- UE-195 M: 
+- UE-198 M: 
+- UE-201 M: 
+- UE-205 M: 
+- UE-208 M: 
+- UE-210 M: 
+- UE-212 M: 
+- UE-216 M: 
+- UE-220 M: 
+- UE-222 M: 
+- UE-225 M: 
+- UE-227 M: 
+- UE-229 M: 
+- UE-231 M: 
+- UE-235 M: 
+- UE-238 M: 
+- UE-241 M: 
+- UE-245 M: 
+- UE-247 M: 
+- UE-249 M: 
+- UE-251 M: 
+- UE-253 M: 
+- UE-255 M: 
+- UE-257 M: 
+- UE-262 M: 
+- UE-265 M: 
+- UE-267 M: 
+- UE-282 M: 
+- UE-289 M: 
+
+## Paket 6
+- UE-128 M: 
+- UE-130 M: 
+- UE-134 M: 
+- UE-138 M: 
+- UE-142 M: 
+- UE-144 M: 
+- UE-147 M: 
+- UE-149 M: 
+- UE-153 M: 
+- UE-159 M: 
+- UE-161 M: 
+- UE-163 M: 
+- UE-165 M: 
+- UE-167 M: 
+- UE-169 M: 
+- UE-171 M: 
+- UE-177 M: 
+- UE-183 M: 
+- UE-185 M: 
+- UE-188 M: 
+- UE-191 M: 
+- UE-194 M: 
+- UE-196 M: 
+- UE-199 M: 
+- UE-204 M: 
+- UE-206 M: 
+- UE-209 M: 
+- UE-211 M: 
+- UE-214 M: 
+- UE-218 M: 
+- UE-221 M: 
+- UE-224 M: 
+- UE-226 M: 
+- UE-228 M: 
+- UE-230 M: 
+- UE-232 M: 
+- UE-236 M: 
+- UE-239 M: 
+- UE-243 M: 
+- UE-246 M: 
+- UE-248 M: 
+- UE-250 M: 
+- UE-252 M: 
+- UE-254 M: 
+- UE-256 M: 
+- UE-258 M: 
+- UE-263 M: 
+- UE-266 M: 
+- UE-274 M: 
+- UE-288 M: 
+- UE-295 M: 
+- UE-298 M: 
+
