@@ -27,6 +27,8 @@ Trainerkollegen am Spielfeldrand.
 - Die festen Regeln bleiben: „Spieler sieben“ (nie Farbe + Zahl), „das gibt einen Punkt für Team Neon“, fangen statt
   abschlagen, letzter Grundform-Schritt sagt Ergebnis und wer dran ist, feste say-Anfänge der Fassungen.
 - Laut lesen (im Kopf): Stolpert man, umschreiben.
+- Grundsatz (Inhaber, 27.11.2026): so menschlich wie möglich, wie frei eingesprochen, und immer passend zu dem, was man im
+  Schritt sieht (Timing-Regel und Beispiele in werkzeuge/VERTONUNG.md, Teil C).
 
 ## Niveau
 U15-U17 ist älter als bisher: Sprache nicht kindlich („die Kinder“ vermeiden, stattdessen „die Spieler“), aber weiter einfach.

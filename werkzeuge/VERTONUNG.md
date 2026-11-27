@@ -37,6 +37,25 @@ dran ist.
 Grob zusammen für B: etwa 165.000 Zeichen, A und B zusammen etwa 400.000 Zeichen.
 
 ## C. Regeln für alles, was gesprochen wird
+
+**Grundsatz (Inhaber, 27.11.2026): Es soll so menschlich wie möglich klingen, wie frei eingesprochen, und immer zu dem
+passen, was man gerade sieht.**
+- **Wie frei erklärt, nicht vorgelesen:** So, als stünde der Trainer am Spielfeldrand und erklärt es den Kollegen spontan.
+  Gesprochene Formen („gibt's“, „geht's los“, „übers Feld“), direkte Ansprache („Jetzt schau auf Spieler sieben.“), kleine
+  Übergänge („Und dann?“, „Neue Situation.“, „Pass auf:“), Satzlängen mischen, nicht jeden Satz gleich bauen. Nicht den
+  Bildschirmtext ablesen, nicht wie ein Lehrbuch oder eine KI. Laut lesen: Wo man stolpert oder es steif klingt, umschreiben.
+- **Immer passend zum Bild (Timing):** Der Satz eines Schritts erzählt nur, was in genau diesem Schritt auf dem Feld passiert,
+  in derselben Reihenfolge. Nichts vorwegnehmen, was erst im nächsten Schritt kommt, und nichts nacherzählen, was schon vorbei ist.
+  Wird ein Lauf oder Pass genannt, läuft er in diesem Schritt. Die App wartet am Schrittende, bis der Satz fertig ist
+  (etwa 17 Zeichen pro Sekunde). Ist der Satz viel länger als die Bewegung, steht das Bild still: dann den Schritt teilen oder
+  die Bewegung mit `delay` passend zum Satz starten.
+- **Was man sieht, muss man nicht dauernd sagen:** Wiederkehrende Formeln (z. B. „Einer kommt, einer geht“) nur ein- oder
+  zweimal pro Video. Sonst kurz beschreiben, wer was macht, und die Bewegung für sich sprechen lassen.
+- Wird eine schon vertonte Einheit ohnehin neu eingesprochen (Teil B), ihre Sätze vorher noch einmal nach diesem Grundsatz lesen.
+  Steife Sätze lassen sich dann gleich mit verbessern. Jeder zusätzlich geänderte Satz kostet aber Zeichen, also nur dort ändern,
+  wo es hörbar besser wird.
+
+Weitere feste Regeln:
 - Ein einzelner Spieler heißt „Spieler sieben“, nie „Neon sieben“. Mannschaften heißen „Team Neon“ und „Team Rot“.
   Ergebnisse sprechen wir als ganzen Satz: „das gibt einen Punkt für Team Neon“. Beim Fangspiel heißt es „fangen“, nicht „abschlagen“.
 - Sprechen wie ein Trainer am Platz: kurze Sätze, keine Floskeln, keine Gedankenstriche, Zahlen ausgeschrieben

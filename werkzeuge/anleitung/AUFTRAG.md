@@ -36,6 +36,8 @@ Du baust die Übungen EINER Woche als neue Einheiten (Entity `Einheit`) und läd
 6. Danach `ueNNN.json` nach `bau/` verschieben, `e2_NNN.json` und `ueNNN*.html`, `ueNNN-3d.js`, `ueNNN*.html.js` löschen.
 
 ## Feste Inhalts-Regeln (vom Inhaber, unbedingt)
+- Alles Gesprochene (`say_intro`, `say`) klingt so menschlich wie möglich, wie frei eingesprochen, und passt immer zu dem, was
+  man im Schritt sieht: nur erzählen, was in diesem Schritt passiert, in dieser Reihenfolge (werkzeuge/VERTONUNG.md, Teil C).
 - Deutsch, kurze Sätze, kindgerecht. Team Neon (team "a", ids n…) und Team Rot (team "b", ids r…). Trainer genau einer:
   `P("T","c",x,y,"T")` mit zwei Ersatzbällen daneben. Springer/neutrale Spieler: team "t", Label "F". Neutraler Torwart:
   `P("k","t",x,y,"TW")`. Torwart eines Teams: id n1 bzw. r1 mit Label "TW".
